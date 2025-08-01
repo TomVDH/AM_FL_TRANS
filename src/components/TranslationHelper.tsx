@@ -369,8 +369,8 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
               <div 
                 className="shadow-lg"
                 style={{
-                  width: '300px',
-                  height: '75px',
+                  width: '250px',
+                  height: '50px',
                   background: gradientColors.length > 0 
                     ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})` 
                     : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
@@ -566,45 +566,19 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           </div>
 
           {/* Footer */}
-          <div className="mt-16 mb-8 text-center">
-            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-4">
+          <div className="mt-20 mb-8 text-center">
+            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-6">
               Onnozelaer Marketing Works © 2025 - made with Generative AI
             </p>
             
-            {/* Creative Squiggly Animation */}
-            <div className="flex justify-center items-center space-x-1">
-              <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-              <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-              <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-              <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-green-400 rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></div>
-              <div className="w-2 h-2 bg-gradient-to-r from-red-400 to-yellow-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-              <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-red-400 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
-            </div>
-            
-            {/* Mystery Squiggly Line */}
-            <div className="mt-4 flex justify-center">
-              <svg className="w-32 h-8" viewBox="0 0 128 32" fill="none">
-                <path 
-                  d="M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16" 
-                  stroke="url(#squigglyGradient)" 
-                  strokeWidth="2" 
-                  fill="none"
-                  className="animate-pulse"
-                  style={{
-                    filter: 'drop-shadow(0 0 4px rgba(139, 92, 246, 0.3))',
-                    animation: 'squigglyWave 3s ease-in-out infinite'
-                  }}
-                />
-                <defs>
-                  <linearGradient id="squigglyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#8B5CF6" />
-                    <stop offset="25%" stopColor="#EC4899" />
-                    <stop offset="50%" stopColor="#3B82F6" />
-                    <stop offset="75%" stopColor="#10B981" />
-                    <stop offset="100%" stopColor="#F59E0B" />
-                  </linearGradient>
-                </defs>
-              </svg>
+            {/* Floating Pips Animation */}
+            <div className="flex justify-center items-center space-x-2 group">
+              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0s', animationDuration: '2s' }}></div>
+              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.2s', animationDuration: '2s' }}></div>
+              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.4s', animationDuration: '2s' }}></div>
+              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.6s', animationDuration: '2s' }}></div>
+              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.8s', animationDuration: '2s' }}></div>
+              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '1s', animationDuration: '2s' }}></div>
             </div>
           </div>
         </div>
@@ -613,26 +587,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
-          }
-          
-                  @keyframes squigglyWave {
-          0%, 100% { 
-            d: path("M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16");
-            opacity: 0.7;
-          }
-          25% { 
-            d: path("M8 16 Q24 28, 40 16 T72 16 T104 16 T128 16");
-            opacity: 1;
-          }
-          50% { 
-            d: path("M8 16 Q24 4, 40 16 T72 28 T104 16 T128 16");
-            opacity: 0.8;
-          }
-          75% { 
-            d: path("M8 16 Q24 28, 40 16 T72 4 T104 28 T128 16");
-            opacity: 0.9;
-          }
-        }
+                  }
         
         .glow-text {
           background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
@@ -698,20 +653,27 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           />
         </div>
         {/* Header */}
-        <div className="flex justify-between items-start mb-12">
-          <div className="flex-1 text-center">
+        <div className="relative mb-12">
+          <div className="absolute top-0 right-0">
+            <button
+              onClick={handleBackToSetup}
+              className="px-4 py-2 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
+              style={{ borderRadius: '3px' }}
+            >
+              ← Back to Setup
+            </button>
+          </div>
+          <div className="text-center">
             <h1 className="text-4xl font-black mb-3 tracking-tighter bg-gradient-to-r from-black to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">Translation Helper</h1>
+            {selectedSheet && (
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                Sheet: {selectedSheet}
+              </p>
+            )}
             <p className="text-gray-600 dark:text-gray-400 text-lg">
               {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
             </p>
           </div>
-          <button
-            onClick={handleBackToSetup}
-            className="px-4 py-2 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
-            style={{ borderRadius: '3px' }}
-          >
-            ← Back to Setup
-          </button>
         </div>
 
         {/* Progress Bar */}
@@ -951,45 +913,19 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-16 mb-8 text-center">
-          <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-4">
+        <div className="mt-20 mb-8 text-center">
+          <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-6">
             Onnozelaer Marketing Works © 2025 - made with Generative AI
           </p>
           
-          {/* Creative Squiggly Animation */}
-          <div className="flex justify-center items-center space-x-1">
-            <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
-            <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
-            <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
-            <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-green-400 rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></div>
-            <div className="w-2 h-2 bg-gradient-to-r from-red-400 to-yellow-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
-            <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-red-400 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
-          </div>
-          
-          {/* Mystery Squiggly Line */}
-          <div className="mt-4 flex justify-center">
-            <svg className="w-32 h-8" viewBox="0 0 128 32" fill="none">
-              <path 
-                d="M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16" 
-                stroke="url(#squigglyGradient)" 
-                strokeWidth="2" 
-                fill="none"
-                className="animate-pulse"
-                style={{
-                  filter: 'drop-shadow(0 0 4px rgba(139, 92, 246, 0.3))',
-                  animation: 'squigglyWave 3s ease-in-out infinite'
-                }}
-              />
-              <defs>
-                <linearGradient id="squigglyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" stopColor="#8B5CF6" />
-                  <stop offset="25%" stopColor="#EC4899" />
-                  <stop offset="50%" stopColor="#3B82F6" />
-                  <stop offset="75%" stopColor="#10B981" />
-                  <stop offset="100%" stopColor="#F59E0B" />
-                </linearGradient>
-              </defs>
-            </svg>
+          {/* Floating Pips Animation */}
+          <div className="flex justify-center items-center space-x-2 group">
+            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0s', animationDuration: '2s' }}></div>
+            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.2s', animationDuration: '2s' }}></div>
+            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.4s', animationDuration: '2s' }}></div>
+            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.6s', animationDuration: '2s' }}></div>
+            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.8s', animationDuration: '2s' }}></div>
+            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '1s', animationDuration: '2s' }}></div>
           </div>
         </div>
       </div>
@@ -998,25 +934,6 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
-        }
-        
-        @keyframes squigglyWave {
-          0%, 100% { 
-            d: path("M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16");
-            opacity: 0.7;
-          }
-          25% { 
-            d: path("M8 16 Q24 28, 40 16 T72 16 T104 16 T128 16");
-            opacity: 1;
-          }
-          50% { 
-            d: path("M8 16 Q24 4, 40 16 T72 28 T104 16 T128 16");
-            opacity: 0.8;
-          }
-          75% { 
-            d: path("M8 16 Q24 28, 40 16 T72 4 T104 28 T128 16");
-            opacity: 0.9;
-          }
         }
       `}</style>
 
