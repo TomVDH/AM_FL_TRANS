@@ -87,17 +87,45 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
     return matches;
   };
 
-  // Function to highlight matching text
+  // Function to detect **Ass characters in text
+  const detectAssCharacters = (text: string) => {
+    const assPattern = /\b\w+\s+Ass\b/gi;
+    const matches = text.match(assPattern);
+    return matches ? Array.from(new Set(matches)) : [];
+  };
+
+  // Function to insert character name in parentheses
+  const insertCharacterName = (characterName: string) => {
+    const parenthesesName = `(${characterName})`;
+    setCurrentTranslation(prev => {
+      const cursorPos = (document.activeElement as HTMLTextAreaElement)?.selectionStart || 0;
+      const before = prev.slice(0, cursorPos);
+      const after = prev.slice(cursorPos);
+      return before + parenthesesName + after;
+    });
+  };
+
+  // Function to highlight matching text and add clickable character names
   const highlightMatchingText = (text: string) => {
     if (!codexData) return text;
     
     const matches = getMatchingCodexEntries(text);
-    if (matches.length === 0) return text;
+    const assCharacters = detectAssCharacters(text);
     
     let highlightedText = text;
+    
+    // Highlight codex matches
     matches.forEach(match => {
       const regex = new RegExp(`(${match.title})`, 'gi');
       highlightedText = highlightedText.replace(regex, '<span class="glow-text">$1</span>');
+    });
+    
+    // Make **Ass characters clickable
+    assCharacters.forEach(character => {
+      const regex = new RegExp(`(${character})`, 'gi');
+      highlightedText = highlightedText.replace(regex, 
+        '<span class="clickable-character" data-character="$1" style="text-decoration: underline; cursor: pointer; color: #3B82F6; font-weight: 500;">$1</span>'
+      );
     });
     
     return highlightedText;
@@ -704,7 +732,39 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                 dangerouslySetInnerHTML={{ 
                   __html: highlightMatchingText(sourceTexts[currentIndex]) 
                 }}
+                onClick={(e) => {
+                  const target = e.target as HTMLElement;
+                  if (target.classList.contains('clickable-character')) {
+                    const characterName = target.getAttribute('data-character');
+                    if (characterName) {
+                      insertCharacterName(characterName);
+                    }
+                  }
+                }}
               />
+              
+              {/* Character Insertion Panel */}
+              {detectAssCharacters(sourceTexts[currentIndex]).length > 0 && (
+                <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded">
+                  <div className="flex items-center gap-2 mb-2">
+                    <svg className="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                    <span className="text-sm font-medium text-blue-700 dark:text-blue-300">Insert Characters:</span>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {detectAssCharacters(sourceTexts[currentIndex]).map((character, index) => (
+                      <button
+                        key={index}
+                        onClick={() => insertCharacterName(character)}
+                        className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 rounded hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors duration-200 font-medium"
+                      >
+                        Insert ({character})
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
 
