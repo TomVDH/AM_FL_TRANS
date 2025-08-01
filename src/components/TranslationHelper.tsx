@@ -36,7 +36,117 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
   const [themesOpen, setThemesOpen] = useState(false);
   const [worldOpen, setWorldOpen] = useState(false);
   
+  // Codex data and expanded items
+  const [codexData, setCodexData] = useState<any>(null);
+  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
+  const [isLoadingCodex, setIsLoadingCodex] = useState(false);
+  
   const progress = sourceTexts.length > 0 ? ((currentIndex) / sourceTexts.length) * 100 : 0;
+
+  // Fetch codex data on component mount
+  useEffect(() => {
+    const fetchCodexData = async () => {
+      setIsLoadingCodex(true);
+      try {
+        const response = await fetch('/api/codex');
+        if (response.ok) {
+          const data = await response.json();
+          setCodexData(data);
+        }
+      } catch (error) {
+        console.error('Error fetching codex data:', error);
+      } finally {
+        setIsLoadingCodex(false);
+      }
+    };
+
+    fetchCodexData();
+  }, []);
+
+  // Function to check if text matches any codex entries
+  const getMatchingCodexEntries = (text: string) => {
+    if (!codexData || !text) return [];
+    
+    const matches: Array<{title: string, content: string, category: string}> = [];
+    const textLower = text.toLowerCase();
+    
+    Object.entries(codexData).forEach(([category, entries]: [string, any]) => {
+      if (Array.isArray(entries)) {
+        entries.forEach((entry: any) => {
+          if (entry.name && textLower.includes(entry.name.toLowerCase())) {
+            matches.push({
+              title: entry.name,
+              content: entry.content || '',
+              category: category
+            });
+          }
+        });
+      }
+    });
+    
+    return matches;
+  };
+
+  // Function to highlight matching text
+  const highlightMatchingText = (text: string) => {
+    if (!codexData) return text;
+    
+    const matches = getMatchingCodexEntries(text);
+    if (matches.length === 0) return text;
+    
+    let highlightedText = text;
+    matches.forEach(match => {
+      const regex = new RegExp(`(${match.title})`, 'gi');
+      highlightedText = highlightedText.replace(regex, '<span class="glow-text">$1</span>');
+    });
+    
+    return highlightedText;
+  };
+
+  // Function to toggle expanded items
+  const toggleExpandedItem = (itemId: string) => {
+    const newExpanded = new Set(expandedItems);
+    if (newExpanded.has(itemId)) {
+      newExpanded.delete(itemId);
+    } else {
+      newExpanded.add(itemId);
+    }
+    setExpandedItems(newExpanded);
+  };
+
+  // Helper function to render expandable codex items
+  const renderCodexItems = (category: string, categoryKey: string) => {
+    if (isLoadingCodex) {
+      return <div className="text-center py-4 text-gray-500">Loading codex data...</div>;
+    }
+    
+    if (!codexData || !codexData[categoryKey]) {
+      return <div className="text-gray-500">No codex data available</div>;
+    }
+    
+    return codexData[categoryKey].map((entry: any, index: number) => (
+      <div key={`${categoryKey}-${index}`} className="border border-gray-200 dark:border-gray-600 rounded">
+        <button
+          onClick={() => toggleExpandedItem(`${categoryKey}-${index}`)}
+          className="w-full p-3 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+        >
+          <span className={`font-medium ${getMatchingCodexEntries(sourceTexts[currentIndex] || '').some(m => m.title === entry.name) ? 'glow-text' : ''}`}>
+            {entry.name}
+          </span>
+          <svg className={`w-4 h-4 transform transition-transform duration-200 ${expandedItems.has(`${categoryKey}-${index}`) ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        {expandedItems.has(`${categoryKey}-${index}`) && (
+          <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800">
+            <div className="prose prose-sm max-w-none text-gray-700 dark:text-gray-300">
+              <pre className="whitespace-pre-wrap text-sm leading-relaxed">{entry.content}</pre>
+            </div>
+          </div>
+        )}
+      </div>
+    ));
+  };
 
   // Generate random gradient colors
   const generateGradientColors = (): string[] => {
@@ -505,24 +615,46 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             to { opacity: 1; transform: translateY(0); }
           }
           
-          @keyframes squigglyWave {
-            0%, 100% { 
-              d: path("M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16");
-              opacity: 0.7;
-            }
-            25% { 
-              d: path("M8 16 Q24 28, 40 16 T72 16 T104 16 T128 16");
-              opacity: 1;
-            }
-            50% { 
-              d: path("M8 16 Q24 4, 40 16 T72 28 T104 16 T128 16");
-              opacity: 0.8;
-            }
-            75% { 
-              d: path("M8 16 Q24 28, 40 16 T72 4 T104 28 T128 16");
-              opacity: 0.9;
-            }
+                  @keyframes squigglyWave {
+          0%, 100% { 
+            d: path("M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16");
+            opacity: 0.7;
           }
+          25% { 
+            d: path("M8 16 Q24 28, 40 16 T72 16 T104 16 T128 16");
+            opacity: 1;
+          }
+          50% { 
+            d: path("M8 16 Q24 4, 40 16 T72 28 T104 16 T128 16");
+            opacity: 0.8;
+          }
+          75% { 
+            d: path("M8 16 Q24 28, 40 16 T72 4 T104 28 T128 16");
+            opacity: 0.9;
+          }
+        }
+        
+        .glow-text {
+          background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
+          background-size: 300% 300%;
+          animation: glowPulse 2s ease-in-out infinite;
+          padding: 2px 4px;
+          border-radius: 3px;
+          color: white;
+          text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+          font-weight: bold;
+        }
+        
+        @keyframes glowPulse {
+          0%, 100% {
+            background-position: 0% 50%;
+            box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+          }
+          50% {
+            background-position: 100% 50%;
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+          }
+        }
         `}</style>
       </div>
     );
@@ -605,7 +737,12 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             )}
             <label className="text-base font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">English</label>
             <div className="p-6 bg-gray-50 dark:bg-gray-700 border border-black shadow-sm">
-              <p className="text-lg leading-relaxed">{sourceTexts[currentIndex]}</p>
+              <div 
+                className="text-lg leading-relaxed"
+                dangerouslySetInnerHTML={{ 
+                  __html: highlightMatchingText(sourceTexts[currentIndex]) 
+                }}
+              />
             </div>
           </div>
 
@@ -726,11 +863,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             {mainAssesOpen && (
               <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
                 <div className="space-y-2 text-sm">
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Old Ass - Revolutionary leader; Marxist-Leninist father figure</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Sturdy Ass - Conservative-turned-militant matriarch</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Trusty Ass - Silent protagonist turned second-in-command</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Nice Ass - Pure-hearted worker, moral compass</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Big Ass - Big-picture thinker; visionary strategist</div>
+                  {renderCodexItems('Main Asses', 'Main Asses')}
                 </div>
               </div>
             )}
@@ -750,10 +883,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             {placesOpen && (
               <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
                 <div className="space-y-2 text-sm">
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Fannyside Farm - Donkey homeland and false pastoral dream</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Butte Mines - Industrial ruin and origin of the mine collapse</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">The Commons - Meeting place, ritual space, contested unity</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Red Fields - Ground soaked with protest, death, or rebirth</div>
+                  {renderCodexItems('Places', 'Places')}
                 </div>
               </div>
             )}
@@ -773,11 +903,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             {supportingAssesOpen && (
               <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
                 <div className="space-y-2 text-sm">
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Hard Ass - Stoic, strong, revolutionary force</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Kick Ass - Impulsive and angry; action-first</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Smart Ass - Arrogant strategist; brilliant and difficult</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Sad Ass - Grieving partner; emotionally devastated</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Thirsty Ass - Flirty, bar-dreaming comic relief</div>
+                  {renderCodexItems('Supporting Asses', 'Supporting Asses')}
                 </div>
               </div>
             )}
@@ -797,10 +923,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             {themesOpen && (
               <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
                 <div className="space-y-2 text-sm">
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Brayed Statement - Core revolutionary manifesto</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Emotional Register - Character emotional states</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Thematic Glossary - Key terms and phrases</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Tone Library - Character voice samples</div>
+                  {renderCodexItems('Themes', 'Themes')}
                 </div>
               </div>
             )}
@@ -820,10 +943,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             {worldOpen && (
               <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
                 <div className="space-y-2 text-sm">
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Donkey History - Timeline & revolutions</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Language & Naming - Speech patterns and conventions</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Religion & Gods - Myths and spiritual frameworks</div>
-                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">World Setting - Physical world and geography</div>
+                  {renderCodexItems('World', 'World')}
                 </div>
               </div>
             )}
