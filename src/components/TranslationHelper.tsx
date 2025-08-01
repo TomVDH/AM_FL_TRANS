@@ -902,21 +902,21 @@ const TranslationHelper: React.FC = () => {
             {utterers.length > 0 && utterers[currentIndex] && (
               <div className="mb-4">
                 <label className="text-sm font-black text-gray-600 dark:text-gray-400 uppercase tracking-wide block mb-2">Speaker</label>
-                <p className={`text-lg font-medium ${eyeMode || gamepadMode ? 'text-gray-400 dark:text-gray-500' : 'text-blue-500 dark:text-blue-400'}`}>{utterers[currentIndex]}</p>
+                <p className="text-lg font-medium text-gray-500 dark:text-gray-400">{utterers[currentIndex]}</p>
               </div>
             )}
             <div className="space-y-2">
               {gamepadMode ? (
                 <div 
-                  className="mx-auto gamepad-box relative"
+                  className="mx-auto gamepad-box relative pixelify-sans-500"
                   style={{ 
                     width: '600px',     // GAMEPAD BOX WIDTH - Adjust here
-                    height: '300px',    // GAMEPAD BOX HEIGHT - Adjust here (reduced from 400px)
-                    fontFamily: 'VT323, monospace',
-                    fontSize: '18px',   // GAMEPAD BOX FONT SIZE - Adjust here
-                    lineHeight: '1.3',
+                    height: '200px',    // GAMEPAD BOX HEIGHT - Reduced by 100px (was 300px)
+                    fontFamily: '"Pixelify Sans", sans-serif',
+                    fontSize: '16px',   // GAMEPAD BOX FONT SIZE - Slightly smaller for Pixelify
+                    lineHeight: '1.4',
                     overflow: 'hidden',
-                    letterSpacing: '0.02em',
+                    letterSpacing: '0.01em',
                     backgroundColor: '#ffffff',
                     color: '#000000',
                     border: '2px dashed #000000',
@@ -925,20 +925,20 @@ const TranslationHelper: React.FC = () => {
                 >
                   {/* Speaker bar */}
                   <div 
-                    className="bg-black text-white px-4 py-2 border-b-2 border-black"
-                    style={{ fontSize: '16px', fontFamily: 'VT323, monospace' }}
+                    className="bg-black text-white px-4 py-2 border-b-2 border-black text-left pixelify-sans-600"
+                    style={{ fontSize: '14px', fontFamily: '"Pixelify Sans", sans-serif' }}
                   >
                     {extractSpeakerName(utterers[currentIndex])}
                   </div>
                   
                   {/* Main dialogue area */}
                   <div 
-                    className="p-6 text-black relative text-left"
+                    className="p-4 text-black relative text-left pixelify-sans-500"
                     style={{ 
-                      height: 'calc(100% - 60px)',
-                      fontFamily: 'VT323, monospace',
-                      fontSize: '18px',
-                      lineHeight: '1.4'
+                      height: 'calc(100% - 50px)',
+                      fontFamily: '"Pixelify Sans", sans-serif',
+                      fontSize: '16px',
+                      lineHeight: '1.5'
                     }}
                   >
                     <div 
@@ -968,7 +968,8 @@ const TranslationHelper: React.FC = () => {
                 </div>
               ) : (
                 <div 
-                  className="text-2xl font-bold leading-relaxed px-6 text-gray-900 dark:text-gray-100"
+                  className="text-2xl font-bold leading-relaxed px-6 py-4 text-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 rounded"
+                  style={{ borderRadius: '3px' }}
                   dangerouslySetInnerHTML={{ 
                     __html: eyeMode && currentTranslation 
                       ? highlightMatchingText(currentTranslation)
@@ -1129,18 +1130,18 @@ const TranslationHelper: React.FC = () => {
             </pre>
           </div>
           
-          <div className="grid grid-cols-3 gap-4 text-sm">
-            <div className="text-center p-4 bg-gray-50 dark:bg-gray-700 border border-black shadow-sm">
-              <p className="font-bold text-lg">{currentIndex + 1}</p>
-              <p className="text-gray-600 dark:text-gray-400 font-bold">Current</p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+            <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
+              <p className="font-bold text-base sm:text-lg">{currentIndex + 1}</p>
+              <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Current</p>
             </div>
-            <div className="text-center p-4 bg-gray-50 dark:bg-gray-700 border border-black shadow-sm">
-              <p className="font-bold text-lg">{translations.filter(t => t).length}</p>
-              <p className="text-gray-600 dark:text-gray-400 font-bold">Completed</p>
+            <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
+              <p className="font-bold text-base sm:text-lg">{translations.filter(t => t).length}</p>
+              <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Completed</p>
             </div>
-            <div className="text-center p-4 bg-gray-50 dark:bg-gray-700 border border-black shadow-sm">
-              <p className="font-bold text-lg">{Math.round(progress)}%</p>
-              <p className="text-gray-600 dark:text-gray-400 font-bold">Progress</p>
+            <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
+              <p className="font-bold text-base sm:text-lg">{Math.round(progress)}%</p>
+              <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Progress</p>
             </div>
           </div>
         </div>
@@ -1228,8 +1229,9 @@ const TranslationHelper: React.FC = () => {
         /* GAMEPAD BOX CUSTOMIZATION GUIDE:
          * To adjust the gamepad box size and styling, modify these values in the inline style:
          * - width: 600px (box width)
-         * - height: 300px (box height) 
-         * - fontSize: 18px (text size)
+         * - height: 200px (box height) 
+         * - fontSize: 16px (text size)
+         * - fontFamily: "Pixelify Sans", sans-serif (pixel font)
          * - border: 2px dashed #000000 (border style)
          * - backgroundColor: #ffffff (background color)
          * - color: #000000 (text color)
