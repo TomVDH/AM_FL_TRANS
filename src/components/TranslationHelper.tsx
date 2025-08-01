@@ -456,7 +456,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                   />
                   <button
                     onClick={() => fileInputRef.current?.click()}
-                    className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
+                    className="px-6 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
                     style={{ borderRadius: '3px' }}
                   >
                     Choose Excel File
