@@ -24,7 +24,7 @@ This application embodies a **minimalist, professional aesthetic** with:
 - **🔄 Reference Column Support** - Verify or correct existing translations
 - **📋 One-Click Copy** - Export all translations with proper formatting
 - **🎯 Step-by-Step Workflow** - Focus on one translation at a time
-- **📚 Codex Consultation** - Browse lore and background information in a fly-out panel
+- **📚 Codex Reference** - Browse lore and background information in expandable accordions
 
 ### UI/UX Enhancements
 - **🌓 Dark Mode** - Full dark theme with system preference detection
@@ -80,13 +80,10 @@ src/
 ├── app/
 │   ├── layout.tsx      # Root layout with metadata
 │   ├── page.tsx        # Main page component
-│   ├── globals.css     # Global styles and animations
-│   └── api/
-│       └── codex/
-│           └── route.ts # API endpoint for codex content
+│   └── globals.css     # Global styles and animations
 └── components/
     ├── TranslationHelper.tsx  # Core application component
-    └── CodexPanel.tsx        # Codex consultation panel
+
 ```
 
 ## 🎯 Feature Implementation Details
@@ -169,13 +166,12 @@ Enhanced productivity features:
 - Full keyboard navigation support
 - Auto-focus on translation textarea
 
-### 9. **Codex Consultation System**
+### 9. **Codex Reference System**
 Integrated lore and background reference system:
-- **Fly-out Panel** - Accessible from both setup and translation screens
-- **Category Navigation** - Browse by Main Asses, Places, Supporting Asses, Themes, World
-- **Markdown Rendering** - Displays actual content from codex files
-- **API Integration** - Dynamic loading of codex structure and content
-- **Fallback Support** - Graceful degradation if API is unavailable
+- **Expandable Accordions** - Accessible below the main translation interface
+- **Category Organization** - Browse by Main Asses, Places, Supporting Asses, Themes, World
+- **Quick Reference** - Character descriptions and key information
+- **Dark Mode Support** - Seamless integration with the app's theme
 
 ## 🎨 Design Decisions
 

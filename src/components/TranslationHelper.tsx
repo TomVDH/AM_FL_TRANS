@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import * as XLSX from 'xlsx';
-import CodexPanel from './CodexPanel';
 
 interface TranslationHelperProps {}
 
@@ -28,8 +27,14 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
   const [gradientColors, setGradientColors] = useState<string[]>([]);
   const [isTranslating, setIsTranslating] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  const [isCodexOpen, setIsCodexOpen] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  
+  // Accordion states
+  const [mainAssesOpen, setMainAssesOpen] = useState(false);
+  const [placesOpen, setPlacesOpen] = useState(false);
+  const [supportingAssesOpen, setSupportingAssesOpen] = useState(false);
+  const [themesOpen, setThemesOpen] = useState(false);
+  const [worldOpen, setWorldOpen] = useState(false);
   
   const progress = sourceTexts.length > 0 ? ((currentIndex) / sourceTexts.length) * 100 : 0;
 
@@ -246,17 +251,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           )}
         </button>
 
-        {/* Codex Button */}
-        <button
-          onClick={() => setIsCodexOpen(true)}
-          className="fixed top-4 right-16 p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200"
-          style={{ borderRadius: '3px' }}
-          aria-label="Open Codex"
-        >
-          <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-          </svg>
-        </button>
+
         <div className="max-w-2xl w-full space-y-8" style={{ animation: 'fadeIn 0.5s ease-out' }}>
           <div className="text-center mb-12">
             {/* Gradient Accent Block */}
@@ -491,17 +486,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
         )}
       </button>
 
-      {/* Codex Button */}
-      <button
-        onClick={() => setIsCodexOpen(true)}
-        className="fixed top-4 right-16 p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200"
-        style={{ borderRadius: '3px' }}
-        aria-label="Open Codex"
-      >
-        <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-        </svg>
-      </button>
+
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Gradient Accent Block */}
         <div className="flex justify-center mb-6">
@@ -660,6 +645,128 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             </div>
           </div>
         </div>
+
+        {/* Codex Accordions */}
+        <div className="space-y-4">
+          <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Codex Reference</h3>
+          
+          {/* Main Asses Accordion */}
+          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
+            <button
+              onClick={() => setMainAssesOpen(!mainAssesOpen)}
+              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+            >
+              <span className="font-bold text-gray-900 dark:text-gray-100">Main Asses</span>
+              <svg className={`w-5 h-5 transform transition-transform duration-200 ${mainAssesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {mainAssesOpen && (
+              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
+                <div className="space-y-2 text-sm">
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Old Ass - Revolutionary leader; Marxist-Leninist father figure</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Sturdy Ass - Conservative-turned-militant matriarch</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Trusty Ass - Silent protagonist turned second-in-command</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Nice Ass - Pure-hearted worker, moral compass</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Big Ass - Big-picture thinker; visionary strategist</div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Places Accordion */}
+          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
+            <button
+              onClick={() => setPlacesOpen(!placesOpen)}
+              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+            >
+              <span className="font-bold text-gray-900 dark:text-gray-100">Places</span>
+              <svg className={`w-5 h-5 transform transition-transform duration-200 ${placesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {placesOpen && (
+              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
+                <div className="space-y-2 text-sm">
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Fannyside Farm - Donkey homeland and false pastoral dream</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Butte Mines - Industrial ruin and origin of the mine collapse</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">The Commons - Meeting place, ritual space, contested unity</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Red Fields - Ground soaked with protest, death, or rebirth</div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Supporting Asses Accordion */}
+          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
+            <button
+              onClick={() => setSupportingAssesOpen(!supportingAssesOpen)}
+              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+            >
+              <span className="font-bold text-gray-900 dark:text-gray-100">Supporting Asses</span>
+              <svg className={`w-5 h-5 transform transition-transform duration-200 ${supportingAssesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {supportingAssesOpen && (
+              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
+                <div className="space-y-2 text-sm">
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Hard Ass - Stoic, strong, revolutionary force</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Kick Ass - Impulsive and angry; action-first</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Smart Ass - Arrogant strategist; brilliant and difficult</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Sad Ass - Grieving partner; emotionally devastated</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Thirsty Ass - Flirty, bar-dreaming comic relief</div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Themes Accordion */}
+          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
+            <button
+              onClick={() => setThemesOpen(!themesOpen)}
+              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+            >
+              <span className="font-bold text-gray-900 dark:text-gray-100">Themes</span>
+              <svg className={`w-5 h-5 transform transition-transform duration-200 ${themesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {themesOpen && (
+              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
+                <div className="space-y-2 text-sm">
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Brayed Statement - Core revolutionary manifesto</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Emotional Register - Character emotional states</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Thematic Glossary - Key terms and phrases</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Tone Library - Character voice samples</div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* World Accordion */}
+          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
+            <button
+              onClick={() => setWorldOpen(!worldOpen)}
+              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+            >
+              <span className="font-bold text-gray-900 dark:text-gray-100">World</span>
+              <svg className={`w-5 h-5 transform transition-transform duration-200 ${worldOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {worldOpen && (
+              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
+                <div className="space-y-2 text-sm">
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Donkey History - Timeline & revolutions</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Language & Naming - Speech patterns and conventions</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">Religion & Gods - Myths and spiritual frameworks</div>
+                  <div className="p-2 hover:bg-gray-100 dark:hover:bg-gray-600 cursor-pointer rounded">World Setting - Physical world and geography</div>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
       
       <style jsx>{`
@@ -669,11 +776,6 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
         }
       `}</style>
 
-      {/* Codex Panel */}
-      <CodexPanel 
-        isOpen={isCodexOpen} 
-        onClose={() => setIsCodexOpen(false)} 
-      />
     </div>
   );
 };
