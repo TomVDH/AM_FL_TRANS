@@ -1,34 +1,56 @@
+/**
+ * Global CSS Styles
+ * 
+ * This file contains all global styles for the AM Translations Helper application.
+ * It uses Tailwind CSS as the base framework with custom extensions for
+ * specific design requirements.
+ */
+
+/* ========== Tailwind CSS Base Imports ========== */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* ========== Google Fonts Import ========== */
+/* Pixelify Sans: Used for the gamepad/dialogue box mode pixel art aesthetic */
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap');
 
+/**
+ * Base Layer Customizations
+ * 
+ * These styles override Tailwind's base styles to establish
+ * consistent typography and spacing throughout the application.
+ */
 @layer base {
+  /* System font stack for optimal performance and native feel */
   html {
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   
+  /* Base body typography settings */
   body {
     font-size: 16px;
     line-height: 1.6;
-    letter-spacing: -0.011em;
+    letter-spacing: -0.011em;  /* Subtle tightening for better readability */
   }
   
+  /* Heading styles with tighter letter spacing */
   h1, h2, h3, h4, h5, h6 {
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     font-weight: 700;
-    letter-spacing: -0.025em;
+    letter-spacing: -0.025em;  /* Tighter spacing for headings */
     line-height: 1.2;
   }
   
+  /* Paragraph line height for optimal reading */
   p {
     line-height: 1.7;
     letter-spacing: -0.011em;
   }
   
+  /* Consistent letter spacing for UI elements */
   label {
     letter-spacing: -0.011em;
   }
@@ -37,13 +59,20 @@
     letter-spacing: -0.011em;
   }
   
+  /* Form elements inherit font family */
   input, select, textarea:not(.font-mono) {
     font-family: inherit;
     letter-spacing: -0.011em;
   }
 }
 
+/**
+ * Component Layer
+ * 
+ * Reusable component styles and animations
+ */
 @layer components {
+  /* Fade-in animation class */
   .fade-in {
     animation: fadeIn 0.5s ease-out;
   }
@@ -52,42 +81,47 @@
     animation: fadeIn 0.3s ease-out;
   }
   
-  /* Custom scrollbar for webkit browsers */
+  /* Custom scrollbar styling for better visual consistency */
   .custom-scrollbar::-webkit-scrollbar {
     width: 8px;
   }
   
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: #f1f5f9;
+    background: #f1f5f9;      /* Light gray track */
     border-radius: 4px;
   }
   
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
+    background: #cbd5e1;      /* Medium gray thumb */
     border-radius: 4px;
   }
   
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8;
+    background: #94a3b8;      /* Darker gray on hover */
   }
 }
 
+/**
+ * Utility Layer
+ * 
+ * Custom utility classes for specific use cases
+ */
 @layer utilities {
-  /* Custom focus ring for better accessibility */
+  /* Enhanced focus ring for accessibility */
   .focus-ring {
     @apply focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-50 focus:border-gray-500;
   }
   
-  /* Text rendering optimization */
+  /* Modern text wrapping utilities */
   .text-balance {
-    text-wrap: balance;
+    text-wrap: balance;       /* Balanced text wrapping */
   }
   
   .text-pretty {
-    text-wrap: pretty;
+    text-wrap: pretty;        /* Pretty text wrapping */
   }
 
-  /* Pixelify Sans font utilities */
+  /* Pixelify Sans font weight utilities for gamepad mode */
   .pixelify-sans-400 {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
@@ -117,6 +151,11 @@
   }
 }
 
+/**
+ * Keyframe Animations
+ */
+
+/* Fade in animation with slight upward movement */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -128,6 +167,7 @@
   }
 }
 
+/* Gradient shift animation for dynamic backgrounds */
 @keyframes gradientShift {
   0%, 100% {
     background-position: 0% 50%;
@@ -137,6 +177,7 @@
   }
 }
 
+/* Fast gradient shift with opacity variation */
 @keyframes gradientShiftFast {
   0%, 100% {
     background-position: 0% 50%;
@@ -148,19 +189,25 @@
   }
 }
 
+/**
+ * Special Effects
+ */
+
 /* Glow effect for matching codex entries */
 .glow-text {
-  color: #3b82f6;
+  color: #3b82f6;             /* Blue color in light mode */
   font-weight: 600;
   text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
   animation: textGlow 3s ease-in-out infinite;
 }
 
+/* Dark mode variant of glow effect */
 .dark .glow-text {
-  color: #60a5fa;
+  color: #60a5fa;             /* Lighter blue in dark mode */
   text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
 }
 
+/* Text glow animation */
 @keyframes textGlow {
   0%, 100% {
     text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);

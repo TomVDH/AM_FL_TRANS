@@ -3,49 +3,77 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as XLSX from 'xlsx';
 
+/**
+ * TranslationHelper Component
+ * 
+ * A comprehensive translation assistance tool designed for the AM Translations project.
+ * Features include:
+ * - Excel file upload and parsing for bulk translation workflows
+ * - Manual text input mode for individual translations
+ * - Dark mode support with full UI responsiveness
+ * - Gamepad/dialogue box mode with pixel art styling
+ * - Codex integration for character and lore reference
+ * - Real-time character name detection and insertion
+ * - Progress tracking and navigation controls
+ * 
+ * @component
+ */
 const TranslationHelper: React.FC = () => {
-  const [sourceTexts, setSourceTexts] = useState<string[]>([]);
-  const [utterers, setUtterers] = useState<string[]>([]);
-  const [translations, setTranslations] = useState<string[]>([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentTranslation, setCurrentTranslation] = useState('');
-  const [cellStart, setCellStart] = useState('A1');
-  const [isStarted, setIsStarted] = useState(false);
-  const [isAnimating, setIsAnimating] = useState(false);
-  const [showCopied, setShowCopied] = useState(false);
-  const [excelSheets, setExcelSheets] = useState<string[]>([]);
-  const [selectedSheet, setSelectedSheet] = useState('');
-  const [sourceColumn, setSourceColumn] = useState('C');
-  const [uttererColumn, setUttererColumn] = useState('A');
-  const [referenceColumn, setReferenceColumn] = useState('D');
-  const [useReferenceColumn, setUseReferenceColumn] = useState(false);
-  const [startRow, setStartRow] = useState(3);
-  const [inputMode, setInputMode] = useState<'excel' | 'manual'>('excel');
-  const [workbookData, setWorkbookData] = useState<XLSX.WorkBook | null>(null);
-  const [gradientColors, setGradientColors] = useState<string[]>([]);
-  const [isTranslating, setIsTranslating] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
-  const [eyeMode, setEyeMode] = useState(false);
-  const [gamepadMode, setGamepadMode] = useState(false);
-  const [showJumpInput, setShowJumpInput] = useState(false);
-  const [jumpValue, setJumpValue] = useState('');
-  const [showVersionHash, setShowVersionHash] = useState(false);
-  const fileInputRef = useRef<HTMLInputElement>(null);
+  // ========== Core Translation State ==========
+  const [sourceTexts, setSourceTexts] = useState<string[]>([]);        // Array of source texts to translate
+  const [utterers, setUtterers] = useState<string[]>([]);              // Speaker/character names for each text
+  const [translations, setTranslations] = useState<string[]>([]);      // User's translations
+  const [currentIndex, setCurrentIndex] = useState(0);                 // Current position in translation array
+  const [currentTranslation, setCurrentTranslation] = useState('');    // Active translation being edited
   
-  // Version hash
-  const VERSION_HASH = 'v1.1.0-clean';
+  // ========== Excel Configuration State ==========
+  const [cellStart, setCellStart] = useState('A1');                    // Starting cell for export
+  const [excelSheets, setExcelSheets] = useState<string[]>([]);        // Available sheets in uploaded Excel
+  const [selectedSheet, setSelectedSheet] = useState('');              // Currently selected sheet
+  const [sourceColumn, setSourceColumn] = useState('C');               // Column containing source text
+  const [uttererColumn, setUttererColumn] = useState('A');             // Column containing speaker names
+  const [referenceColumn, setReferenceColumn] = useState('D');         // Optional reference translation column
+  const [useReferenceColumn, setUseReferenceColumn] = useState(false); // Toggle for reference column
+  const [startRow, setStartRow] = useState(3);                         // Starting row for data extraction
+  const [workbookData, setWorkbookData] = useState<XLSX.WorkBook | null>(null); // Parsed Excel workbook
   
-  // Dynamic accordion states
-  const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({});
+  // ========== UI State Management ==========
+  const [isStarted, setIsStarted] = useState(false);                   // Translation session active flag
+  const [isAnimating, setIsAnimating] = useState(false);               // Animation state for transitions
+  const [showCopied, setShowCopied] = useState(false);                 // Copy confirmation indicator
+  const [inputMode, setInputMode] = useState<'excel' | 'manual'>('excel'); // Input mode selection
+  const [gradientColors, setGradientColors] = useState<string[]>([]);  // Dynamic gradient colors
+  const [isTranslating, setIsTranslating] = useState(false);           // Translation in progress flag
   
-  // Codex data and expanded items
-  const [codexData, setCodexData] = useState<any>(null);
-  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
-  const [isLoadingCodex, setIsLoadingCodex] = useState(false);
+  // ========== Display Mode State ==========
+  const [darkMode, setDarkMode] = useState(false);                     // Dark mode toggle
+  const [eyeMode, setEyeMode] = useState(false);                       // Show translation instead of source
+  const [gamepadMode, setGamepadMode] = useState(false);               // Pixel dialogue box mode
   
+  // ========== Navigation State ==========
+  const [showJumpInput, setShowJumpInput] = useState(false);           // Show jump-to navigation
+  const [jumpValue, setJumpValue] = useState('');                      // Jump input value
+  const [showVersionHash, setShowVersionHash] = useState(false);       // Display version info
+  
+  // ========== Component References ==========
+  const fileInputRef = useRef<HTMLInputElement>(null);                 // File input element reference
+  
+  // ========== Version Control ==========
+  const VERSION_HASH = 'v1.1.0-clean';                                 // Application version identifier
+  
+  // ========== Codex Integration State ==========
+  const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({}); // Accordion UI states
+  const [codexData, setCodexData] = useState<any>(null);               // Loaded codex reference data
+  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set()); // Expanded codex items
+  const [isLoadingCodex, setIsLoadingCodex] = useState(false);         // Codex loading state
+  
+  // ========== Computed Values ==========
   const progress = sourceTexts.length > 0 ? ((currentIndex) / sourceTexts.length) * 100 : 0;
 
-  // Fetch codex data on component mount
+  /**
+   * Fetch codex data on component mount
+   * Loads character and lore reference data from the API
+   */
   useEffect(() => {
     const fetchCodexData = async () => {
       setIsLoadingCodex(true);
@@ -65,7 +93,17 @@ const TranslationHelper: React.FC = () => {
     fetchCodexData();
   }, []);
 
-  // Function to check if text matches any codex entries
+  /**
+   * Check if text matches any codex entries using flexible matching
+   * 
+   * This function implements two matching strategies:
+   * 1. Direct substring matching - for exact name matches
+   * 2. Regex-based flexible matching - for hyphenated entries like "butte-mines"
+   *    matching text like "Butte Industry Coal Mines"
+   * 
+   * @param text - The source text to search for codex matches
+   * @returns Array of matching codex entries with title, content, and category
+   */
   const getMatchingCodexEntries = (text: string) => {
     if (!codexData || !text) return [];
     
@@ -75,12 +113,56 @@ const TranslationHelper: React.FC = () => {
     Object.entries(codexData).forEach(([category, entries]: [string, any]) => {
       if (Array.isArray(entries)) {
         entries.forEach((entry: any) => {
-          if (entry.name && textLower.includes(entry.name.toLowerCase())) {
-            matches.push({
-              title: entry.name,
-              content: entry.content || '',
-              category: category
+          if (entry.name) {
+            const entryNameLower = entry.name.toLowerCase();
+            
+            // Direct match (original behavior)
+            if (textLower.includes(entryNameLower)) {
+              matches.push({
+                title: entry.name,
+                content: entry.content || '',
+                category: category
+              });
+              return;
+            }
+            
+            // Reverse match: check if any word in the entry name appears in the text
+            // This handles cases like "Butte" matching "Butte Mines"
+            const entryWords = entryNameLower.split(' ').filter((word: string) => word.length > 0);
+            const anyWordMatches = entryWords.some((word: string) => {
+              // Create regex to match the word as a whole word
+              const regex = new RegExp(`\\b${word}\\b`, 'i');
+              return regex.test(text);
             });
+            
+            if (anyWordMatches) {
+              matches.push({
+                title: entry.name,
+                content: entry.content || '',
+                category: category
+              });
+              return;
+            }
+            
+            // Flexible matching for hyphenated names like "butte-mines"
+            // Convert "butte-mines" to match "Butte Industry Coal Mines", "Butte Mines", etc.
+            if (entryNameLower.includes('-')) {
+              // Split hyphenated words and check if all parts exist in the text
+              const parts = entryNameLower.split('-').filter((part: string) => part.length > 0);
+              const allPartsMatch = parts.every((part: string) => {
+                // Create regex to match the part as a whole word
+                const regex = new RegExp(`\\b${part}\\b`, 'i');
+                return regex.test(text);
+              });
+              
+              if (allPartsMatch) {
+                matches.push({
+                  title: entry.name,
+                  content: entry.content || '',
+                  category: category
+                });
+              }
+            }
           }
         });
       }
@@ -95,14 +177,35 @@ const TranslationHelper: React.FC = () => {
     return matches.some(match => match.category === category);
   };
 
-  // Function to detect **Ass characters in text
+  /**
+   * Detect "Ass" characters in text
+   * 
+   * Special pattern matching for the AM Translations project's character naming
+   * convention where many characters have names ending in "Ass" (e.g., "Big Ass", "Smart Ass").
+   * This is project-specific functionality for the donkey-themed translation work.
+   * 
+   * @param text - Source text to search for character names
+   * @returns Array of unique character names matching the pattern
+   */
   const detectAssCharacters = (text: string) => {
-    const assPattern = /\b\w+\s+Ass\b/gi;
+    const assPattern = /\b\w+\s+Ass\b/gi;  // Matches "[Word] Ass" pattern
     const matches = text.match(assPattern);
     return matches ? Array.from(new Set(matches)) : [];
   };
 
-  // Function to extract clean speaker name from utterer string
+  /**
+   * Extract clean speaker name from utterer string
+   * 
+   * Parses complex utterer strings from the game data format to extract
+   * human-readable speaker names for the dialogue box display.
+   * 
+   * @param utterer - Raw utterer string (e.g., "SAY.Sign_TheMines_Dirty.1.Dirty Sign")
+   * @returns Extracted speaker name (e.g., "Dirty Sign") or fallback "Speaker"
+   * 
+   * @example
+   * extractSpeakerName("SAY.Sign_TheMines_Dirty.1.Dirty Sign") // returns "Dirty Sign"
+   * extractSpeakerName("SAY.NPC_Miner.2.Old Miner") // returns "Old Miner"
+   */
   const extractSpeakerName = (utterer: string): string => {
     if (!utterer) return 'Speaker';
     
@@ -908,36 +1011,33 @@ const TranslationHelper: React.FC = () => {
             <div className="space-y-2">
               {gamepadMode ? (
                 <div 
-                  className="mx-auto gamepad-box relative pixelify-sans-500"
+                  className="mx-auto gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-black dark:border-gray-400"
                   style={{ 
                     width: '600px',     // GAMEPAD BOX WIDTH - Adjust here
                     height: '200px',    // GAMEPAD BOX HEIGHT - Reduced by 100px (was 300px)
                     fontFamily: '"Pixelify Sans", sans-serif',
-                    fontSize: '16px',   // GAMEPAD BOX FONT SIZE - Slightly smaller for Pixelify
+                    fontSize: '1.7em', // GAMEPAD BOX FONT SIZE - CONTROL HERE (was 2.5rem, now 1.7em)
                     lineHeight: '1.4',
                     overflow: 'hidden',
                     letterSpacing: '0.01em',
-                    backgroundColor: '#ffffff',
-                    color: '#000000',
-                    border: '2px dashed #000000',
                     borderRadius: '3px'
                   }}
                 >
                   {/* Speaker bar */}
                   <div 
-                    className="bg-black text-white px-4 py-2 border-b-2 border-black text-left pixelify-sans-600"
-                    style={{ fontSize: '14px', fontFamily: '"Pixelify Sans", sans-serif' }}
+                    className="bg-black dark:bg-gray-800 text-white dark:text-gray-100 px-4 py-2 border-b-2 border-black dark:border-gray-700 text-left pixelify-sans-600"
+                    style={{ fontSize: '2rem', fontFamily: '"Pixelify Sans", sans-serif' }} // Speaker font size
                   >
                     {extractSpeakerName(utterers[currentIndex])}
                   </div>
                   
                   {/* Main dialogue area */}
                   <div 
-                    className="p-4 text-black relative text-left pixelify-sans-500"
+                    className="p-4 relative text-left pixelify-sans-500"
                     style={{ 
                       height: 'calc(100% - 50px)',
                       fontFamily: '"Pixelify Sans", sans-serif',
-                      fontSize: '16px',
+                      fontSize: '2.5rem', // Main dialogue font size - matches box font size
                       lineHeight: '1.5'
                     }}
                   >
@@ -1230,11 +1330,11 @@ const TranslationHelper: React.FC = () => {
          * To adjust the gamepad box size and styling, modify these values in the inline style:
          * - width: 600px (box width)
          * - height: 200px (box height) 
-         * - fontSize: 16px (text size)
+         * - fontSize: 2.5rem (MAIN TEXT SIZE - CONTROL HERE)
+         * - Speaker fontSize: 2rem (in speaker bar style)
          * - fontFamily: "Pixelify Sans", sans-serif (pixel font)
-         * - border: 2px dashed #000000 (border style)
-         * - backgroundColor: #ffffff (background color)
-         * - color: #000000 (text color)
+         * - Dark mode: Handled via Tailwind classes (bg-white dark:bg-gray-900, etc.)
+         * - Border: 2px dashed with dark mode support
          */
       `}</style>
 
