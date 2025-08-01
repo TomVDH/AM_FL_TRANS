@@ -428,7 +428,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                   />
                   <button
                     onClick={() => fileInputRef.current?.click()}
-                    className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm"
+                    className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
                     style={{ borderRadius: '3px' }}
                   >
                     Choose Excel File
@@ -557,7 +557,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
               <button
                 onClick={handleStart}
                 disabled={sourceTexts.length === 0}
-                className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm"
+                className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
                 style={{ borderRadius: '3px' }}
               >
                 Start Translation →
@@ -707,7 +707,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           </div>
           <button
             onClick={handleBackToSetup}
-            className="px-4 py-2 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm"
+            className="px-4 py-2 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
             style={{ borderRadius: '3px' }}
           >
             ← Back to Setup
@@ -778,14 +778,14 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             <button
               onClick={handlePrevious}
               disabled={currentIndex === 0}
-              className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm"
+              className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
               style={{ borderRadius: '3px' }}
             >
               ← Previous
             </button>
             <button
               onClick={handleSubmit}
-              className="flex-1 px-6 py-3 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+              className="flex-1 px-6 py-3 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide"
               style={{ borderRadius: '3px' }}
             >
                               {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Next →'}
@@ -805,7 +805,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             <div className="relative">
               <button
                 onClick={copyToClipboard}
-                className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+                className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide"
                 style={{ borderRadius: '3px' }}
                 title="Copy translations only (for pasting back to spreadsheet)"
               >
