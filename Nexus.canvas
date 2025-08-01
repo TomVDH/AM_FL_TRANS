@@ -1,0 +1,37 @@
+{
+	"nodes":[
+		{"id":"0673bddce61329d3","type":"file","file":"Portfolio/asses.masses/The Asses.md","x":-520,"y":-520,"width":1280,"height":400},
+		{"id":"ee9569e6c203ff1f","type":"file","file":"Portfolio/asses.masses/Main Asses/Main Character Index.md","x":-520,"y":120,"width":600,"height":400},
+		{"id":"2f76609721e01720","type":"file","file":"Portfolio/asses.masses/Supporting Asses/Supporting Character Index.md","x":160,"y":120,"width":600,"height":400},
+		{"id":"a01280651de48a23","type":"file","file":"Portfolio/asses.masses/Supporting Asses/bad-ass.md","x":160,"y":760,"width":315,"height":440},
+		{"id":"e4f87df90fdd0cf4","type":"file","file":"Portfolio/asses.masses/Main Asses/big-ass.md","x":-240,"y":760,"width":320,"height":440},
+		{"id":"759757e335abb9a2","type":"file","file":"Portfolio/asses.masses/Main Asses/nice-ass.md","x":-600,"y":800,"width":320,"height":440},
+		{"id":"ee720298530c9fbe","type":"file","file":"Portfolio/asses.masses/Main Asses/old-ass.md","x":-960,"y":840,"width":320,"height":440},
+		{"id":"ccccfac13526085f","type":"file","file":"Portfolio/asses.masses/Main Asses/sturdy-ass.md","x":-1320,"y":880,"width":320,"height":440},
+		{"id":"d1ee9a3a5e6465e6","type":"file","file":"Portfolio/asses.masses/Main Asses/trusty-ass.md","x":-1680,"y":940,"width":320,"height":440},
+		{"id":"d72a1c6da515e1e9","type":"file","file":"Portfolio/asses.masses/Supporting Asses/hard-ass.md","x":520,"y":800,"width":320,"height":440},
+		{"id":"a0237e5f58680371","type":"file","file":"Portfolio/asses.masses/Supporting Asses/kick-ass.md","x":880,"y":840,"width":320,"height":440},
+		{"id":"a366913e6c403a63","type":"file","file":"Portfolio/asses.masses/Supporting Asses/lazy-ass.md","x":1240,"y":880,"width":320,"height":437},
+		{"id":"d4e968cd308525c0","type":"file","file":"Portfolio/asses.masses/Supporting Asses/sad-ass.md","x":1605,"y":917,"width":315,"height":463},
+		{"id":"6438c56f604a5adc","type":"file","file":"Portfolio/asses.masses/Supporting Asses/slow-ass.md","x":1960,"y":980,"width":320,"height":460},
+		{"id":"0ccb1f81ce99d02c","type":"file","file":"Portfolio/asses.masses/Supporting Asses/smart-ass.md","x":2329,"y":1040,"width":311,"height":480},
+		{"id":"e5a1ff136d5f1b6d","x":2690,"y":1092,"width":310,"height":465,"type":"file","file":"Portfolio/asses.masses/Supporting Asses/thirsty-ass.md"}
+	],
+	"edges":[
+		{"id":"1ee1fe00fba75c91","fromNode":"759757e335abb9a2","fromSide":"top","toNode":"ee9569e6c203ff1f","toSide":"bottom"},
+		{"id":"ab7c48b60ec95bef","fromNode":"ee720298530c9fbe","fromSide":"top","toNode":"ee9569e6c203ff1f","toSide":"bottom"},
+		{"id":"e3d6f8318e588745","fromNode":"0673bddce61329d3","fromSide":"bottom","toNode":"2f76609721e01720","toSide":"top"},
+		{"id":"911d3f015b91754c","fromNode":"0673bddce61329d3","fromSide":"bottom","toNode":"ee9569e6c203ff1f","toSide":"top"},
+		{"id":"8f320c1595590946","fromNode":"e4f87df90fdd0cf4","fromSide":"top","toNode":"ee9569e6c203ff1f","toSide":"bottom"},
+		{"id":"ce7297bb633d8aee","fromNode":"ccccfac13526085f","fromSide":"top","toNode":"ee9569e6c203ff1f","toSide":"bottom"},
+		{"id":"8b088abee63f9afb","fromNode":"d1ee9a3a5e6465e6","fromSide":"top","toNode":"ee9569e6c203ff1f","toSide":"bottom"},
+		{"id":"c2009487a57603bd","fromNode":"a01280651de48a23","fromSide":"top","toNode":"2f76609721e01720","toSide":"bottom"},
+		{"id":"ebf01e6876111993","fromNode":"d72a1c6da515e1e9","fromSide":"top","toNode":"2f76609721e01720","toSide":"bottom"},
+		{"id":"d15105221f862ff3","fromNode":"a0237e5f58680371","fromSide":"top","toNode":"2f76609721e01720","toSide":"bottom"},
+		{"id":"d9003dcda5c346d8","fromNode":"a366913e6c403a63","fromSide":"top","toNode":"2f76609721e01720","toSide":"bottom"},
+		{"id":"fc928a0766acd872","fromNode":"d4e968cd308525c0","fromSide":"top","toNode":"2f76609721e01720","toSide":"bottom"},
+		{"id":"4078daa4dc6ee775","fromNode":"6438c56f604a5adc","fromSide":"top","toNode":"2f76609721e01720","toSide":"bottom"},
+		{"id":"4ab96629e731026a","fromNode":"0ccb1f81ce99d02c","fromSide":"top","toNode":"2f76609721e01720","toSide":"bottom"},
+		{"id":"550f8ec98dd6f795","fromNode":"e5a1ff136d5f1b6d","fromSide":"top","toNode":"2f76609721e01720","toSide":"bottom"}
+	]
+}
