@@ -29,12 +29,8 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
   const [darkMode, setDarkMode] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   
-  // Accordion states
-  const [mainAssesOpen, setMainAssesOpen] = useState(false);
-  const [placesOpen, setPlacesOpen] = useState(false);
-  const [supportingAssesOpen, setSupportingAssesOpen] = useState(false);
-  const [themesOpen, setThemesOpen] = useState(false);
-  const [worldOpen, setWorldOpen] = useState(false);
+  // Dynamic accordion states
+  const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({});
   
   // Codex data and expanded items
   const [codexData, setCodexData] = useState<any>(null);
@@ -140,6 +136,14 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
       newExpanded.add(itemId);
     }
     setExpandedItems(newExpanded);
+  };
+
+  // Function to toggle accordion states
+  const toggleAccordion = (category: string) => {
+    setAccordionStates(prev => ({
+      ...prev,
+      [category]: !prev[category]
+    }));
   };
 
   // Helper function to render expandable codex items
@@ -868,109 +872,39 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           </div>
         </div>
 
-        {/* Codex Accordions */}
+        {/* Dynamic Codex Accordions */}
         <div className="space-y-4">
           <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Codex Reference</h3>
           
-          {/* Main Asses Accordion */}
-          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
-            <button
-              onClick={() => setMainAssesOpen(!mainAssesOpen)}
-              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
-            >
-              <span className="font-bold text-gray-900 dark:text-gray-100">Main Asses</span>
-              <svg className={`w-5 h-5 transform transition-transform duration-200 ${mainAssesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {mainAssesOpen && (
-              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
-                <div className="space-y-2 text-sm">
-                  {renderCodexItems('Main Asses', 'Main Asses')}
-                </div>
+          {/* Render accordions dynamically based on codex data */}
+          {codexData && Object.keys(codexData).length > 0 ? (
+            Object.keys(codexData).map((category) => (
+              <div key={category} className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
+                <button
+                  onClick={() => toggleAccordion(category)}
+                  className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                >
+                  <span className="font-bold text-gray-900 dark:text-gray-100">
+                    {category.replace(/-/g, ' ').replace(/_/g, ' ')}
+                  </span>
+                  <svg className={`w-5 h-5 transform transition-transform duration-200 ${accordionStates[category] ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {accordionStates[category] && (
+                  <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
+                    <div className="space-y-2 text-sm">
+                      {renderCodexItems(category, category)}
+                    </div>
+                  </div>
+                )}
               </div>
-            )}
-          </div>
-
-          {/* Places Accordion */}
-          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
-            <button
-              onClick={() => setPlacesOpen(!placesOpen)}
-              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
-            >
-              <span className="font-bold text-gray-900 dark:text-gray-100">Places</span>
-              <svg className={`w-5 h-5 transform transition-transform duration-200 ${placesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {placesOpen && (
-              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
-                <div className="space-y-2 text-sm">
-                  {renderCodexItems('Places', 'Places')}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Supporting Asses Accordion */}
-          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
-            <button
-              onClick={() => setSupportingAssesOpen(!supportingAssesOpen)}
-              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
-            >
-              <span className="font-bold text-gray-900 dark:text-gray-100">Supporting Asses</span>
-              <svg className={`w-5 h-5 transform transition-transform duration-200 ${supportingAssesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {supportingAssesOpen && (
-              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
-                <div className="space-y-2 text-sm">
-                  {renderCodexItems('Supporting Asses', 'Supporting Asses')}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* Themes Accordion */}
-          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
-            <button
-              onClick={() => setThemesOpen(!themesOpen)}
-              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
-            >
-              <span className="font-bold text-gray-900 dark:text-gray-100">Themes</span>
-              <svg className={`w-5 h-5 transform transition-transform duration-200 ${themesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {themesOpen && (
-              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
-                <div className="space-y-2 text-sm">
-                  {renderCodexItems('Themes', 'Themes')}
-                </div>
-              </div>
-            )}
-          </div>
-
-          {/* World Accordion */}
-          <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
-            <button
-              onClick={() => setWorldOpen(!worldOpen)}
-              className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
-            >
-              <span className="font-bold text-gray-900 dark:text-gray-100">World</span>
-              <svg className={`w-5 h-5 transform transition-transform duration-200 ${worldOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {worldOpen && (
-              <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
-                <div className="space-y-2 text-sm">
-                  {renderCodexItems('World', 'World')}
-                </div>
-              </div>
-            )}
-          </div>
+            ))
+          ) : (
+            <div className="text-center py-4 text-gray-500">
+              {isLoadingCodex ? 'Loading codex data...' : 'No codex data available'}
+            </div>
+          )}
         </div>
 
         {/* Footer */}
