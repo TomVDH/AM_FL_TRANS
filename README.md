@@ -1,37 +1,46 @@
 # AM Translations Helper
 
-A modern, elegant React TypeScript application for streamlining translation workflows. Features a minimalist black-and-white design with sophisticated UI elements and comprehensive functionality for both Excel-based and manual translation processes.
+A sophisticated, professional React TypeScript application designed for streamlining translation workflows. Features an elegant minimalist design with comprehensive functionality for both Excel-based and manual translation processes.
 
-![Next.js](https://img.shields.io/badge/Next.js-14.0.0-black)
+![Next.js](https://img.shields.io/badge/Next.js-14.2.31-black)
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0.0-blue)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3.0-teal)
 
-## 🎨 Design Philosophy
+## 🎯 Overview
 
-This application embodies a **minimalist, professional aesthetic** with:
-- Clean black-and-white color scheme
-- Thin borders throughout (no rounded corners except 3px on buttons)
-- Bold, modern typography with refined letter-spacing
-- Subtle animations and transitions
-- Fully functional dark mode with elegant transitions
+AM Translations Helper is a modern web application built for professional translators working on content with rich world-building and character development. It provides an intuitive interface for managing translation workflows while offering contextual reference materials through an integrated codex system.
 
 ## ✨ Key Features
 
-### Core Functionality
-- **📊 Excel File Support** - Import translations from `.xlsx` or `.xls` files
-- **✍️ Manual Input Mode** - Paste text directly for quick translations
-- **🔄 Reference Column Support** - Verify or correct existing translations
-- **📋 One-Click Copy** - Export all translations with proper formatting
-- **🎯 Step-by-Step Workflow** - Focus on one translation at a time
-- **📚 Codex Reference** - Browse lore and background information in expandable accordions
+### 🔄 Dual Input Modes
+- **📊 Excel Integration** - Import from `.xlsx` or `.xls` files with flexible column mapping
+- **✍️ Manual Input** - Direct text input for quick translation tasks
 
-### UI/UX Enhancements
-- **🌓 Dark Mode** - Full dark theme with system preference detection
-- **🎨 Animated Gradient Accent** - Dynamic 300x75px gradient block that changes on reload
-- **✨ Smooth Transitions** - Elegant animations between UI states
-- **📱 Responsive Design** - Works beautifully on all screen sizes
-- **✓ ASCII Status Indicators** - Green checkmarks for successful operations
+### 🎯 Advanced Translation Features
+- **Reference Column Support** - Load and verify existing translations
+- **Progress Tracking** - Visual progress indicators and completion statistics
+- **One-Click Export** - Copy all translations with proper formatting
+- **Keyboard Shortcuts** - `Shift + Enter` to submit translations
+- **Jump Navigation** - Quick navigation to any translation item
+
+### 🎮 Display Modes
+- **Standard Mode** - Clean, professional interface
+- **Pixel Dialog Mode** - Retro RPG-style dialog box with VT323 font
+- **Eye Mode** - Preview translations in context
+
+### 📚 Integrated Codex System
+- **Dynamic Reference** - Contextual character and lore information
+- **Smart Detection** - Automatic character name highlighting
+- **Quick Insert** - Character name insertion with pill buttons
+- **Expandable Content** - Detailed background information in accordion format
+
+### 🎨 Design Excellence
+- **Minimalist Aesthetic** - Clean black-and-white design with thin borders
+- **Dark Mode** - Complete dark theme with smooth transitions
+- **Responsive Design** - Perfect on all screen sizes
+- **Animated Gradients** - Dynamic visual accents that respond to activity
+- **Accessibility First** - Proper focus states and keyboard navigation
 
 ## 🚀 Getting Started
 
@@ -43,7 +52,7 @@ This application embodies a **minimalist, professional aesthetic** with:
 
 ```bash
 # Clone the repository
-git clone [repository-url]
+git clone <repository-url>
 
 # Navigate to project directory
 cd am-translations-helper
@@ -55,6 +64,8 @@ npm install
 npm run dev
 ```
 
+Visit `http://localhost:3000` to access the application.
+
 ### Available Scripts
 
 ```bash
@@ -65,198 +76,118 @@ npm run lint       # Run ESLint
 npm run type-check # Run TypeScript type checking
 ```
 
-## 🏗️ Technical Architecture
+## 📁 Project Structure
 
-### Tech Stack
-- **Framework**: Next.js 14 (App Router)
-- **Language**: TypeScript
-- **Styling**: TailwindCSS with custom configurations
-- **Excel Processing**: XLSX library
-- **State Management**: React Hooks (useState, useEffect, useRef)
-
-### Project Structure
 ```
 src/
 ├── app/
-│   ├── layout.tsx      # Root layout with metadata
-│   ├── page.tsx        # Main page component
-│   └── globals.css     # Global styles and animations
-└── components/
-    ├── TranslationHelper.tsx  # Core application component
-
+│   ├── api/codex/           # Codex data API endpoint
+│   ├── layout.tsx           # Root layout with metadata
+│   ├── page.tsx             # Main page component
+│   └── globals.css          # Global styles and animations
+├── components/
+│   ├── ui/                  # Reusable UI component library
+│   │   ├── Button.tsx       # Button component with variants
+│   │   ├── Card.tsx         # Card component
+│   │   ├── Badge.tsx        # Badge/pill components
+│   │   ├── Input.tsx        # Form input components
+│   │   ├── Typography.tsx   # Text components
+│   │   ├── DesignSystem.tsx # Component showcase
+│   │   └── index.ts         # Component exports
+│   └── TranslationHelper.tsx # Main application component
+├── styles/
+│   └── design-system.css    # Design system styles
+codex/                       # Reference materials (markdown files)
+├── Main Asses/             # Main character information
+├── Supporting Asses/       # Supporting character details
+├── Places/                 # Location descriptions
+├── Themes/                 # Thematic content
+└── World/                  # World-building materials
 ```
 
-## 🎯 Feature Implementation Details
+## 🎨 Design System
 
-### 1. **Input Mode Toggle**
-Seamlessly switch between Excel upload and manual input modes with a sleek toggle interface:
-- Smooth fade-in animations when switching modes
-- Maintains minimum container height to prevent jarring transitions
-- Each mode optimized for its specific use case
+The application includes a comprehensive design system with reusable components:
 
-### 2. **Excel Processing**
-Advanced Excel file handling with flexible configuration:
-```typescript
-// Column mapping options
-- Utterer Column (Speaker names)
-- Source Column (Text to translate)
-- Reference Column (Existing translations)
-- Start Row (Skip headers)
-```
+- **Typography** - 7 semantic text components
+- **Buttons** - 4 variants with 3 sizes
+- **Cards** - 3 elevation variants
+- **Badges** - 5 color variants
+- **Forms** - Input, TextArea, Select with validation
 
-### 3. **Reference Translation Mode**
-Unique verification workflow for existing translations:
-- Pre-loads reference translations into the text area
-- Visual indicator showing "Verification Mode"
-- Allows editing and correction of existing translations
+See [README-Design-System.md](./README-Design-System.md) for detailed documentation.
 
-### 4. **Gradient Accent System**
-Dynamic visual element that adds personality:
-```javascript
-// Random gradient generation from curated palettes
-const palettes = [
-  ['#FF6B6B', '#4ECDC4', '#45B7D1'],
-  ['#F7DC6F', '#76D7C4', '#85C1E2'],
-  // ... more beautiful combinations
-];
-```
-- Changes color palette on each page reload
-- Accelerates animation during active translation
-- Positioned as a focal point above the main title
+## 🔧 Configuration
 
-### 5. **Dark Mode Implementation**
-Comprehensive dark theme with attention to detail:
-- LocalStorage persistence
-- System preference detection
-- Smooth color transitions (300ms)
-- Custom colors for every UI element:
-  - Backgrounds: `dark:bg-gray-900`, `dark:bg-gray-800`
-  - Borders: `dark:border-gray-600`
-  - Text: `dark:text-gray-100`, `dark:text-gray-400`
-  - Interactive elements properly styled
+### Excel Import Settings
+- **Source Column** - Column containing text to translate
+- **Speaker Column** - Column with character/speaker names
+- **Reference Column** - Optional existing translations
+- **Start Row** - Row to begin processing (skip headers)
 
-### 6. **Typography System**
-Refined text rendering throughout:
-```css
-/* Global typography settings */
-body {
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: -0.011em;
-}
+### Codex Integration
+The application automatically scans the `codex/` directory for markdown files and creates:
+- Category-based organization
+- Character name detection
+- Contextual highlighting
+- Quick-access reference panels
 
-/* Headers use tight tracking */
-h1, h2, h3 {
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  line-height: 1.2;
-}
-```
+## 💡 Usage Examples
 
-### 7. **Progress Tracking**
-Visual feedback for translation progress:
-- Linear progress bar with smooth animations
-- Real-time percentage calculation
-- Current/Total item counter
-- Per-item location tracking (Excel row or manual cell reference)
+### Excel Workflow
+1. Upload `.xlsx` file using "Choose Excel File"
+2. Configure column mappings if needed
+3. Set start row to skip headers
+4. Click "Start Translation →"
+5. Translate items one by one
+6. Export completed translations
 
-### 8. **Keyboard Shortcuts**
-Enhanced productivity features:
-- `Shift + Enter` - Submit current translation
-- Full keyboard navigation support
-- Auto-focus on translation textarea
+### Manual Workflow  
+1. Switch to "Manual Input" mode
+2. Paste source text in the text area
+3. Start translating
+4. Use character quick-insert buttons
+5. Copy final translations
 
-### 9. **Codex Reference System**
-Integrated lore and background reference system:
-- **Expandable Accordions** - Accessible below the main translation interface
-- **Category Organization** - Browse by Main Asses, Places, Supporting Asses, Themes, World
-- **Quick Reference** - Character descriptions and key information
-- **Dark Mode Support** - Seamless integration with the app's theme
+### Advanced Features
+- **Reference Mode** - Enable reference column to verify existing translations
+- **Gamepad Mode** - Toggle pixel dialog box for immersive experience
+- **Dark Mode** - Switch themes with the moon/sun icon
+- **Character Detection** - Names are automatically highlighted and clickable
 
-## 🎨 Design Decisions
+## 🎯 Key Technologies
 
-### Visual Hierarchy
-1. **Headers** - `font-black` with gradient text effect
-2. **Labels** - Uppercase with wide letter-spacing
-3. **Body Text** - Natural weight with optimized line-height
-4. **Monospace** - Reserved for code-like content (output box, manual input)
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first styling
+- **XLSX** - Excel file processing
+- **Google Fonts** - VT323 pixel font for retro mode
 
-### Color Palette
-- **Light Mode**: Pure black (#000) on white (#FFF)
-- **Dark Mode**: Carefully chosen grays for optimal contrast
-- **Accent Colors**: 
-  - Blue for speaker information
-  - Green for success states
-  - Dynamic gradients for visual interest
+## 🔒 Privacy & Security
 
-### Animation Timing
-- **Fast**: 200-300ms for UI interactions
-- **Medium**: 500ms for state transitions
-- **Slow**: 3s for ambient gradient animation
-
-## 🔧 Customization
-
-### Modifying Gradient Colors
-Edit the color palettes in `TranslationHelper.tsx`:
-```typescript
-const palettes = [
-  ['#YourColor1', '#YourColor2', '#YourColor3'],
-  // Add more combinations
-];
-```
-
-### Adjusting Dark Mode Colors
-Modify Tailwind classes throughout the component:
-- Replace `dark:bg-gray-900` with your preferred dark background
-- Adjust `dark:text-gray-100` for text colors
-- Update border colors with `dark:border-gray-600`
-
-## 📝 Usage Examples
-
-### Excel Upload Workflow
-1. Click "Excel Upload" mode
-2. Select your Excel file
-3. Configure column mappings:
-   - Set speaker column (e.g., "A")
-   - Set source text column (e.g., "C")
-   - Optionally set reference column for verification
-4. Click "Start Translation"
-5. Translate each item step-by-step
-6. Copy all translations when complete
-
-### Codex Consultation Workflow
-1. Click the book icon (📚) in the top-right corner
-2. Browse categories in the sidebar (Main Asses, Places, etc.)
-3. Select an entry to view its content
-4. Reference lore and background information while translating
-5. Close the panel when finished consulting
-
-### Manual Input Workflow
-1. Click "Manual Input" mode
-2. Paste your text (one item per line)
-3. Set starting cell reference
-4. Begin translating
-5. Use Shift+Enter for quick submission
-
-## 🚀 Performance Optimizations
-
-- **Lazy Loading**: Excel processing only when needed
-- **Memoization**: Gradient colors generated once per session
-- **Efficient Re-renders**: Targeted state updates
-- **CSS Animations**: Hardware-accelerated transforms
+- **Client-side Processing** - Excel files processed locally in browser
+- **No Data Transmission** - Translation content never leaves your device
+- **Local Storage** - Preferences saved locally only
 
 ## 🤝 Contributing
 
-This project follows best practices:
-- **DRY Principle** - No code repetition
-- **Type Safety** - Full TypeScript coverage
-- **Accessibility** - ARIA labels and keyboard support
-- **Clean Code** - Self-documenting with clear naming
+1. Fork the repository
+2. Create a feature branch
+3. Follow TypeScript and accessibility best practices
+4. Ensure all components are responsive and support dark mode
+5. Submit a pull request
 
 ## 📄 License
 
-[Your License Here]
+Copyright © 2025 Onnozelaer Marketing Works - Made with Generative AI
+
+## 🆘 Support
+
+For support or questions about using the AM Translations Helper:
+1. Check the design system documentation
+2. Review the component showcase at `/design-system`
+3. Ensure your Excel files follow the expected format
 
 ---
 
-Built with ❤️ using modern web technologies. Designed for translators who appreciate beautiful, functional tools. 
+**Built with ❤️ for professional translators working on rich, narrative content.** 

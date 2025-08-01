@@ -33,4 +33,15 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts 
+next-env.d.ts
+
+# temporary files
+*.tmp
+*.temp
+excels/
+test-*.csv
+example-*.md
+
+# IDE
+.vscode/
+.idea/ 

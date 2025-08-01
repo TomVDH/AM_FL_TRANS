@@ -3,9 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as XLSX from 'xlsx';
 
-interface TranslationHelperProps {}
-
-const TranslationHelper: React.FC<TranslationHelperProps> = () => {
+const TranslationHelper: React.FC = () => {
   const [sourceTexts, setSourceTexts] = useState<string[]>([]);
   const [utterers, setUtterers] = useState<string[]>([]);
   const [translations, setTranslations] = useState<string[]>([]);
@@ -34,8 +32,8 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
   const [showVersionHash, setShowVersionHash] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   
-  // Version hash - update this with each significant commit
-  const VERSION_HASH = 'v1.0.0-2a4f8b';
+  // Version hash
+  const VERSION_HASH = 'v1.1.0-clean';
   
   // Dynamic accordion states
   const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({});
@@ -58,7 +56,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           setCodexData(data);
         }
       } catch (error) {
-        console.error('Error fetching codex data:', error);
+        // Silently handle codex loading errors
       } finally {
         setIsLoadingCodex(false);
       }
@@ -104,6 +102,20 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
     return matches ? Array.from(new Set(matches)) : [];
   };
 
+  // Function to extract clean speaker name from utterer string
+  const extractSpeakerName = (utterer: string): string => {
+    if (!utterer) return 'Speaker';
+    
+    // Pattern: "SAY.Sign_TheMines_Dirty.1.Dirty Sign" -> "Dirty Sign"
+    const parts = utterer.split('.');
+    if (parts.length >= 4) {
+      return parts[3]; // Return the last part after the last dot
+    }
+    
+    // Fallback: return the original utterer if pattern doesn't match
+    return utterer;
+  };
+
   // Function to insert character name in parentheses
   const insertCharacterName = (characterName: string) => {
     const parenthesesName = `(${characterName})`;
@@ -130,11 +142,11 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
       highlightedText = highlightedText.replace(regex, '<span class="glow-text">$1</span>');
     });
     
-    // Make **Ass characters clickable
+    // Make **Ass characters clickable (removed underline since we have pill buttons)
     assCharacters.forEach(character => {
       const regex = new RegExp(`(${character})`, 'gi');
       highlightedText = highlightedText.replace(regex, 
-        '<span class="clickable-character" data-character="$1" style="text-decoration: underline; cursor: pointer; color: #3B82F6; font-weight: 500;">$1</span>'
+        '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #3B82F6; font-weight: 500;">$1</span>'
       );
     });
     
@@ -171,10 +183,10 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
     }
     
     return codexData[categoryKey].map((entry: any, index: number) => (
-      <div key={`${categoryKey}-${index}`} className="border border-gray-200 dark:border-gray-600 rounded">
+      <div key={`${categoryKey}-${index}`} className="border border-gray-200 dark:border-gray-600 rounded" style={{ borderRadius: '3px' }}>
         <button
           onClick={() => toggleExpandedItem(`${categoryKey}-${index}`)}
-          className="w-full p-3 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200"
+          className="w-full p-3 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 text-gray-900 dark:text-gray-100"
         >
           <span className={`font-medium ${getMatchingCodexEntries(sourceTexts[currentIndex] || '').some(m => m.title === entry.name) ? 'glow-text' : ''}`}>
             {entry.name}
@@ -186,7 +198,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
         {expandedItems.has(`${categoryKey}-${index}`) && (
           <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800">
             <div className="prose prose-sm max-w-none text-gray-700 dark:text-gray-300">
-              <pre className="whitespace-pre-wrap text-sm leading-relaxed">{entry.content}</pre>
+              <pre className="whitespace-pre-wrap text-sm leading-relaxed text-gray-900 dark:text-gray-100">{entry.content}</pre>
             </div>
           </div>
         )}
@@ -311,10 +323,9 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
         if (workbook.SheetNames.length > 0) {
           setSelectedSheet(workbook.SheetNames[0]);
         }
-      } catch (error) {
-        console.error('Error reading Excel file:', error);
-        alert('Error reading Excel file. Please ensure it\'s a valid Excel file.');
-      }
+          } catch (error) {
+      alert('Error reading Excel file. Please ensure it\'s a valid Excel file.');
+    }
     };
     reader.readAsArrayBuffer(file);
   };
@@ -711,6 +722,16 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           color: #60a5fa;
           text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
         }
+
+        .clickable-character {
+          cursor: pointer;
+          color: #3b82f6;
+          font-weight: 500;
+        }
+
+        .dark .clickable-character {
+          color: #60a5fa;
+        }
         
         @keyframes textGlow {
           0%, 100% {
@@ -887,30 +908,32 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             <div className="space-y-2">
               {gamepadMode ? (
                 <div 
-                  className="mx-auto border-2 border-gray-800 dark:border-gray-300 gamepad-box relative"
+                  className="mx-auto gamepad-box relative"
                   style={{ 
-                    width: '600px',     // Adjust box width here
-                    height: '400px',    // Adjust box height here
+                    width: '600px',     // GAMEPAD BOX WIDTH - Adjust here
+                    height: '300px',    // GAMEPAD BOX HEIGHT - Adjust here (reduced from 400px)
                     fontFamily: 'VT323, monospace',
-                    fontSize: '18px',   // Adjust font size here
+                    fontSize: '18px',   // GAMEPAD BOX FONT SIZE - Adjust here
                     lineHeight: '1.3',
                     overflow: 'hidden',
                     letterSpacing: '0.02em',
-                    backgroundColor: '#1e3a8a',
-                    color: '#ffffff'
+                    backgroundColor: '#ffffff',
+                    color: '#000000',
+                    border: '2px dashed #000000',
+                    borderRadius: '3px'
                   }}
                 >
                   {/* Speaker bar */}
                   <div 
-                    className="bg-blue-700 text-white px-4 py-2 border-b-2 border-gray-600"
+                    className="bg-black text-white px-4 py-2 border-b-2 border-black"
                     style={{ fontSize: '16px', fontFamily: 'VT323, monospace' }}
                   >
-                    {utterers[currentIndex] || 'Speaker'}
+                    {extractSpeakerName(utterers[currentIndex])}
                   </div>
                   
                   {/* Main dialogue area */}
                   <div 
-                    className="p-6 text-white relative"
+                    className="p-6 text-black relative text-left"
                     style={{ 
                       height: 'calc(100% - 60px)',
                       fontFamily: 'VT323, monospace',
@@ -924,10 +947,19 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                           ? highlightMatchingText(currentTranslation)
                           : highlightMatchingText(sourceTexts[currentIndex]) 
                       }}
+                      onClick={(e) => {
+                        const target = e.target as HTMLElement;
+                        if (target.classList.contains('clickable-character')) {
+                          const characterName = target.getAttribute('data-character');
+                          if (characterName) {
+                            insertCharacterName(characterName);
+                          }
+                        }
+                      }}
                     />
                     
                     {/* Continue dialogue chevron */}
-                    <div className="absolute bottom-4 right-4 text-gray-300 animate-pulse">
+                    <div className="absolute bottom-4 right-4 text-gray-600 animate-pulse">
                       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M7 10l5 5 5-5z"/>
                       </svg>
@@ -936,7 +968,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                 </div>
               ) : (
                 <div 
-                  className="text-2xl font-bold leading-relaxed px-6"
+                  className="text-2xl font-bold leading-relaxed px-6 text-gray-900 dark:text-gray-100"
                   dangerouslySetInnerHTML={{ 
                     __html: eyeMode && currentTranslation 
                       ? highlightMatchingText(currentTranslation)
@@ -961,7 +993,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
               <label className="text-base font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translation</label>
               <div className="flex items-center gap-3">
                 {useReferenceColumn && (
-                  <span className="text-xs bg-blue-100 text-blue-900 px-3 py-1 font-bold shadow-sm border border-blue-600">
+                  <span className="text-xs bg-blue-100 dark:bg-blue-800 text-blue-900 dark:text-blue-300 px-3 py-1 font-bold shadow-sm border border-blue-600 dark:border-blue-600" style={{ borderRadius: '3px' }}>
                     Verification Mode
                   </span>
                 )}
@@ -1018,7 +1050,8 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                       <button
                         key={`char-${index}`}
                         onClick={() => insertCharacterName(character)}
-                        className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 rounded-full hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                        className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                        style={{ borderRadius: '3px' }}
                       >
                         {character}
                       </button>
@@ -1028,7 +1061,8 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                       <button
                         key={`codex-${index}`}
                         onClick={() => insertCharacterName(entry.title)}
-                        className="px-3 py-1 text-xs bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-600 rounded-full hover:bg-purple-200 dark:hover:bg-purple-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                        className="px-3 py-1 text-xs bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-600 hover:bg-purple-200 dark:hover:bg-purple-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                        style={{ borderRadius: '3px' }}
                         title={`From ${entry.category}`}
                       >
                         {entry.title}
@@ -1085,8 +1119,8 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             </div>
           </div>
           
-          <div className="bg-gray-50 p-5 border border-black max-h-48 overflow-y-auto shadow-inner custom-scrollbar">
-            <pre className="text-sm font-mono whitespace-pre-wrap leading-relaxed">
+          <div className="bg-gray-50 dark:bg-gray-700 p-5 border border-black dark:border-gray-600 max-h-48 overflow-y-auto shadow-inner custom-scrollbar">
+            <pre className="text-sm font-mono whitespace-pre-wrap leading-relaxed text-gray-900 dark:text-gray-100">
               {translations.map((trans, idx) => {
                 if (!trans) return '';
                 const utterer = (utterers && utterers.length > 0 && utterers[idx]) ? `[${utterers[idx]}] ` : '';
@@ -1188,30 +1222,18 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           font-family: 'VT323', 'Courier New', Courier, monospace;
           letter-spacing: 0.02em;
           text-rendering: optimizeLegibility;
-          box-shadow: 0 0 0 2px #000000;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         
-        .gamepad-box::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          background: repeating-linear-gradient(
-            0deg,
-            transparent,
-            transparent 1px,
-            rgba(255, 255, 255, 0.03) 1px,
-            rgba(255, 255, 255, 0.03) 2px
-          );
-          pointer-events: none;
-        }
-        
-        /* To easily adjust the gamepad box size, modify these values: */
-        /* width: 600px in the inline style */
-        /* height: 400px in the inline style */
-        /* fontSize: 18px in the inline style */
+        /* GAMEPAD BOX CUSTOMIZATION GUIDE:
+         * To adjust the gamepad box size and styling, modify these values in the inline style:
+         * - width: 600px (box width)
+         * - height: 300px (box height) 
+         * - fontSize: 18px (text size)
+         * - border: 2px dashed #000000 (border style)
+         * - backgroundColor: #ffffff (background color)
+         * - color: #000000 (text color)
+         */
       `}</style>
 
     </div>
