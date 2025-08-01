@@ -663,6 +663,18 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
         )}
       </button>
 
+      {/* Back to Setup Floating Button */}
+      <button
+        onClick={handleBackToSetup}
+        className="fixed top-4 left-4 p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200"
+        style={{ borderRadius: '3px' }}
+        aria-label="Back to setup"
+      >
+        <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+
 
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Gradient Accent Block */}
@@ -681,27 +693,16 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           />
         </div>
         {/* Header */}
-        <div className="relative mb-12">
-          <div className="absolute top-0 right-0">
-            <button
-              onClick={handleBackToSetup}
-              className="px-4 py-2 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
-              style={{ borderRadius: '3px' }}
-            >
-              ← Back to Setup
-            </button>
-          </div>
-          <div className="text-center">
-            <h1 className="text-4xl font-black mb-3 tracking-tighter bg-gradient-to-r from-black to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">Translation Helper</h1>
-            {selectedSheet && (
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-                Sheet: {selectedSheet}
-              </p>
-            )}
-            <p className="text-gray-600 dark:text-gray-400 text-lg">
-              {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-black mb-3 tracking-tighter bg-gradient-to-r from-black to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">Translation Helper</h1>
+          {selectedSheet && (
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+              Sheet: {selectedSheet}
             </p>
-          </div>
+          )}
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
+            {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
+          </p>
         </div>
 
         {/* Progress Bar */}
