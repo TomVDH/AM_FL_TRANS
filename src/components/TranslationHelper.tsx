@@ -318,7 +318,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                   />
                   <button
                     onClick={() => fileInputRef.current?.click()}
-                    className="px-6 py-3 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 dark:text-gray-100 transition-all duration-200 shadow-sm"
+                    className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm"
                     style={{ borderRadius: '3px' }}
                   >
                     Choose Excel File
@@ -454,12 +454,74 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
               </button>
             </div>
           </div>
+
+          {/* Footer */}
+          <div className="mt-16 mb-8 text-center">
+            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-4">
+              Onnozelaer Marketing Works © 2025 - made with Generative AI
+            </p>
+            
+            {/* Creative Squiggly Animation */}
+            <div className="flex justify-center items-center space-x-1">
+              <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+              <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+              <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+              <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-green-400 rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></div>
+              <div className="w-2 h-2 bg-gradient-to-r from-red-400 to-yellow-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+              <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-red-400 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+            </div>
+            
+            {/* Mystery Squiggly Line */}
+            <div className="mt-4 flex justify-center">
+              <svg className="w-32 h-8" viewBox="0 0 128 32" fill="none">
+                <path 
+                  d="M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16" 
+                  stroke="url(#squigglyGradient)" 
+                  strokeWidth="2" 
+                  fill="none"
+                  className="animate-pulse"
+                  style={{
+                    filter: 'drop-shadow(0 0 4px rgba(139, 92, 246, 0.3))',
+                    animation: 'squigglyWave 3s ease-in-out infinite'
+                  }}
+                />
+                <defs>
+                  <linearGradient id="squigglyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#8B5CF6" />
+                    <stop offset="25%" stopColor="#EC4899" />
+                    <stop offset="50%" stopColor="#3B82F6" />
+                    <stop offset="75%" stopColor="#10B981" />
+                    <stop offset="100%" stopColor="#F59E0B" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
         </div>
         
         <style jsx>{`
           @keyframes fadeIn {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
+          }
+          
+          @keyframes squigglyWave {
+            0%, 100% { 
+              d: path("M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16");
+              opacity: 0.7;
+            }
+            25% { 
+              d: path("M8 16 Q24 28, 40 16 T72 16 T104 16 T128 16");
+              opacity: 1;
+            }
+            50% { 
+              d: path("M8 16 Q24 4, 40 16 T72 28 T104 16 T128 16");
+              opacity: 0.8;
+            }
+            75% { 
+              d: path("M8 16 Q24 28, 40 16 T72 4 T104 28 T128 16");
+              opacity: 0.9;
+            }
           }
         `}</style>
       </div>
@@ -513,7 +575,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           </div>
           <button
             onClick={handleBackToSetup}
-            className="px-4 py-2 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 dark:text-gray-100 transition-all duration-200 shadow-sm"
+            className="px-4 py-2 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm"
             style={{ borderRadius: '3px' }}
           >
             ← Back to Setup
@@ -579,7 +641,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             <button
               onClick={handlePrevious}
               disabled={currentIndex === 0}
-              className="px-6 py-3 border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 dark:text-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm"
+              className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm"
               style={{ borderRadius: '3px' }}
             >
               ← Previous
@@ -767,12 +829,74 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             )}
           </div>
         </div>
+
+        {/* Footer */}
+        <div className="mt-16 mb-8 text-center">
+          <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-4">
+            Onnozelaer Marketing Works © 2025 - made with Generative AI
+          </p>
+          
+          {/* Creative Squiggly Animation */}
+          <div className="flex justify-center items-center space-x-1">
+            <div className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full animate-bounce" style={{ animationDelay: '0s' }}></div>
+            <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
+            <div className="w-2 h-2 bg-gradient-to-r from-green-400 to-blue-400 rounded-full animate-bounce" style={{ animationDelay: '0.2s' }}></div>
+            <div className="w-2 h-2 bg-gradient-to-r from-yellow-400 to-green-400 rounded-full animate-bounce" style={{ animationDelay: '0.3s' }}></div>
+            <div className="w-2 h-2 bg-gradient-to-r from-red-400 to-yellow-400 rounded-full animate-bounce" style={{ animationDelay: '0.4s' }}></div>
+            <div className="w-2 h-2 bg-gradient-to-r from-pink-400 to-red-400 rounded-full animate-bounce" style={{ animationDelay: '0.5s' }}></div>
+          </div>
+          
+          {/* Mystery Squiggly Line */}
+          <div className="mt-4 flex justify-center">
+            <svg className="w-32 h-8" viewBox="0 0 128 32" fill="none">
+              <path 
+                d="M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16" 
+                stroke="url(#squigglyGradient)" 
+                strokeWidth="2" 
+                fill="none"
+                className="animate-pulse"
+                style={{
+                  filter: 'drop-shadow(0 0 4px rgba(139, 92, 246, 0.3))',
+                  animation: 'squigglyWave 3s ease-in-out infinite'
+                }}
+              />
+              <defs>
+                <linearGradient id="squigglyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#8B5CF6" />
+                  <stop offset="25%" stopColor="#EC4899" />
+                  <stop offset="50%" stopColor="#3B82F6" />
+                  <stop offset="75%" stopColor="#10B981" />
+                  <stop offset="100%" stopColor="#F59E0B" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
       </div>
       
       <style jsx>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes squigglyWave {
+          0%, 100% { 
+            d: path("M8 16 Q24 4, 40 16 T72 16 T104 16 T128 16");
+            opacity: 0.7;
+          }
+          25% { 
+            d: path("M8 16 Q24 28, 40 16 T72 16 T104 16 T128 16");
+            opacity: 1;
+          }
+          50% { 
+            d: path("M8 16 Q24 4, 40 16 T72 28 T104 16 T128 16");
+            opacity: 0.8;
+          }
+          75% { 
+            d: path("M8 16 Q24 28, 40 16 T72 4 T104 28 T128 16");
+            opacity: 0.9;
+          }
         }
       `}</style>
 
