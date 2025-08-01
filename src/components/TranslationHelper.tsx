@@ -403,7 +403,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                     ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})` 
                     : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
                   backgroundSize: '200% 200%',
-                  animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 3s ease-in-out infinite'
+                  animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 6s ease-in-out infinite'
                 }}
               />
             </div>
@@ -676,7 +676,7 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                 ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})` 
                 : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
               backgroundSize: '200% 200%',
-              animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 3s ease-in-out infinite'
+              animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 2.5s ease-in-out infinite'
             }}
           />
         </div>
