@@ -27,7 +27,15 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
   const [gradientColors, setGradientColors] = useState<string[]>([]);
   const [isTranslating, setIsTranslating] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [eyeMode, setEyeMode] = useState(false);
+  const [gamepadMode, setGamepadMode] = useState(false);
+  const [showJumpInput, setShowJumpInput] = useState(false);
+  const [jumpValue, setJumpValue] = useState('');
+  const [showVersionHash, setShowVersionHash] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  
+  // Version hash - update this with each significant commit
+  const VERSION_HASH = 'v1.0.0-2a4f8b';
   
   // Dynamic accordion states
   const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({});
@@ -81,6 +89,12 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
     });
     
     return matches;
+  };
+
+  // Function to check if a category has matching entries
+  const categoryHasMatches = (category: string) => {
+    const matches = getMatchingCodexEntries(sourceTexts[currentIndex] || '');
+    return matches.some(match => match.category === category);
   };
 
   // Function to detect **Ass characters in text
@@ -180,9 +194,10 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
     ));
   };
 
-  // Generate random gradient colors
+  // Generate random gradient colors - expanded palette
   const generateGradientColors = (): string[] => {
     const colorPalettes = [
+      // Original palettes
       ['#FF6B6B', '#4ECDC4', '#45B7D1'], // Coral to Teal
       ['#9B59B6', '#3498DB', '#E74C3C'], // Purple to Blue to Red
       ['#F39C12', '#E67E22', '#E74C3C'], // Orange gradient
@@ -191,6 +206,60 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
       ['#2ECC71', '#27AE60', '#16A085'], // Green gradient
       ['#3498DB', '#2980B9', '#8E44AD'], // Blue to Purple
       ['#E67E22', '#D35400', '#C0392B'], // Orange to Red
+      
+      // New vibrant palettes
+      ['#FF006E', '#8338EC', '#3A86FF'], // Hot Pink to Blue
+      ['#06FFA5', '#FFBE0B', '#FB5607'], // Mint to Orange
+      ['#7209B7', '#560BAD', '#480CA8'], // Deep Purple Spectrum
+      ['#F72585', '#B5179E', '#7209B7'], // Magenta to Purple
+      ['#4361EE', '#4895EF', '#4CC9F0'], // Blue Gradient
+      ['#F94144', '#F3722C', '#F8961E'], // Warm Red Orange
+      ['#90BE6D', '#43AA8B', '#277DA1'], // Forest to Ocean
+      ['#003049', '#D62828', '#F77F00'], // Navy to Orange
+      
+      // Pastel palettes
+      ['#FFB5E8', '#FF9CEE', '#FFB5E8'], // Pink Pastel
+      ['#B5DEFF', '#CAB8FF', '#FFA3CF'], // Sky to Pink Pastel
+      ['#FCC8D1', '#FFC8A2', '#FFFAE3'], // Peach Cream
+      ['#D0F4DE', '#A9F1DF', '#BBEDD9'], // Mint Pastel
+      ['#C589E8', '#F0B7D8', '#FFCCE7'], // Lavender Pink
+      
+      // Neon palettes
+      ['#08F7FE', '#09FBD3', '#FE53BB'], // Cyan to Pink Neon
+      ['#F5D300', '#F201B1', '#6A00F5'], // Yellow to Purple Neon
+      ['#00FFFF', '#00FF00', '#FFFF00'], // Cyan Lime Yellow
+      ['#FF1744', '#FF6D00', '#FFD600'], // Red Orange Yellow Neon
+      ['#D500F9', '#651FFF', '#00E5FF'], // Purple to Cyan Neon
+      
+      // Earth tones
+      ['#8B4513', '#CD853F', '#DEB887'], // Brown to Tan
+      ['#556B2F', '#6B8E23', '#8FBC8F'], // Olive Green
+      ['#704214', '#A0522D', '#D2691E'], // Deep Brown to Chocolate
+      ['#2F4F4F', '#696969', '#778899'], // Dark Slate Gray
+      
+      // Monochromatic variations
+      ['#000428', '#004E92', '#007CC7'], // Deep Blue Mono
+      ['#0F0C29', '#302B63', '#24243E'], // Midnight Purple
+      ['#232526', '#414345', '#5C5C5C'], // Charcoal Gray
+      ['#1C1C1C', '#383838', '#545454'], // Black to Gray
+      
+      // Sunset/Sunrise palettes
+      ['#FF5E5B', '#FF8C42', '#FFD23F'], // Sunset Orange
+      ['#540D6E', '#EE4266', '#FFD23F'], // Purple to Yellow Sunset
+      ['#1A0033', '#7B2869', '#EFC3E6'], // Night to Dawn
+      ['#FF4E50', '#FC913A', '#F9D62E'], // Warm Sunset
+      
+      // Ocean palettes
+      ['#005F73', '#0A9396', '#94D2BD'], // Deep Ocean
+      ['#03045E', '#023E8A', '#0077B6'], // Navy Blues
+      ['#002855', '#0353A4', '#006DAA'], // Ocean Depths
+      ['#1E6091', '#168AAD', '#52B69A'], // Sea Foam
+      
+      // Metallic palettes
+      ['#B7B7A4', '#A5A58D', '#6B705C'], // Silver Tones
+      ['#FFD700', '#FFA500', '#FF8C00'], // Gold Gradient
+      ['#C0C0C0', '#808080', '#696969'], // Silver to Gray
+      ['#B87333', '#CD7F32', '#DAA520'], // Copper Bronze
     ];
     return colorPalettes[Math.floor(Math.random() * colorPalettes.length)];
   };
@@ -397,9 +466,13 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
         <div className="max-w-2xl w-full space-y-8" style={{ animation: 'fadeIn 0.5s ease-out' }}>
           <div className="text-center mb-12">
             {/* Gradient Accent Block */}
-            <div className="flex justify-center mb-8">
+            <div className="flex justify-center mb-8 relative">
               <div 
-                className="shadow-lg"
+                className="shadow-lg relative cursor-pointer"
+                onMouseEnter={() => setShowVersionHash(true)}
+                onMouseLeave={() => setShowVersionHash(false)}
+                onClick={() => setGradientColors(generateGradientColors())}
+                title="Click to change gradient"
                 style={{
                   width: '250px',
                   height: '50px',
@@ -407,9 +480,15 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                     ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})` 
                     : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
                   backgroundSize: '200% 200%',
-                  animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 6s ease-in-out infinite'
+                  animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 5s ease-in-out infinite'
                 }}
-              />
+              >
+                {showVersionHash && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xs font-mono">
+                    {VERSION_HASH}
+                  </div>
+                )}
+              </div>
             </div>
             <h1 className="text-6xl font-black mb-4 tracking-tighter bg-gradient-to-r from-black to-gray-700 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">Translation Helper</h1>
             <p className="text-gray-600 dark:text-gray-400 text-lg">Choose your input method below</p>
@@ -622,24 +701,23 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                   }
         
         .glow-text {
-          background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #feca57, #ff9ff3);
-          background-size: 300% 300%;
-          animation: glowPulse 2s ease-in-out infinite;
-          padding: 2px 4px;
-          border-radius: 3px;
-          color: white;
-          text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-          font-weight: bold;
+          color: #3b82f6;
+          font-weight: 600;
+          text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
+          animation: textGlow 3s ease-in-out infinite;
         }
         
-        @keyframes glowPulse {
+        .dark .glow-text {
+          color: #60a5fa;
+          text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
+        }
+        
+        @keyframes textGlow {
           0%, 100% {
-            background-position: 0% 50%;
-            box-shadow: 0 0 5px rgba(255, 107, 107, 0.5);
+            text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
           }
           50% {
-            background-position: 100% 50%;
-            box-shadow: 0 0 20px rgba(255, 107, 107, 0.8);
+            text-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
           }
         }
         `}</style>
@@ -682,9 +760,13 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
 
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Gradient Accent Block */}
-        <div className="flex justify-center mb-6">
+        <div className="flex justify-center mb-6 relative">
           <div 
-            className="shadow-lg"
+            className="shadow-lg relative cursor-pointer"
+            onMouseEnter={() => setShowVersionHash(true)}
+            onMouseLeave={() => setShowVersionHash(false)}
+            onClick={() => setGradientColors(generateGradientColors())}
+            title="Click to change gradient"
             style={{
               width: '300px',
               height: '75px',
@@ -692,9 +774,15 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                 ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})` 
                 : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
               backgroundSize: '200% 200%',
-              animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 2.5s ease-in-out infinite'
+              animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 2s ease-in-out infinite'
             }}
-          />
+          >
+            {showVersionHash && (
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-sm font-mono">
+                {VERSION_HASH}
+              </div>
+            )}
+          </div>
         </div>
         {/* Header */}
         <div className="text-center mb-12">
@@ -704,16 +792,82 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
               Sheet: {selectedSheet}
             </p>
           )}
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
-            {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
+          <p className="text-gray-600 dark:text-gray-400 text-lg relative inline-block">
+            <span 
+              className="cursor-pointer hover:text-gray-800 dark:hover:text-gray-200 transition-colors duration-200 relative"
+              onMouseEnter={() => setShowJumpInput(true)}
+              onMouseLeave={() => {
+                if (!document.activeElement?.classList.contains('jump-input')) {
+                  setShowJumpInput(false);
+                }
+              }}
+            >
+              {getCellLocation(currentIndex)}
+            </span>
+            {showJumpInput && (
+              <div 
+                className="absolute top-full left-0 mt-2 p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded shadow-lg z-50"
+                onMouseEnter={() => setShowJumpInput(true)}
+                onMouseLeave={() => setShowJumpInput(false)}
+              >
+                <input
+                  type="number"
+                  value={jumpValue}
+                  onChange={(e) => setJumpValue(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      const newIndex = parseInt(jumpValue) - 1;
+                      if (newIndex >= 0 && newIndex < sourceTexts.length) {
+                        setCurrentIndex(newIndex);
+                        setCurrentTranslation(translations[newIndex] || '');
+                        setShowJumpInput(false);
+                        setJumpValue('');
+                      }
+                    } else if (e.key === 'Escape') {
+                      setShowJumpInput(false);
+                      setJumpValue('');
+                    }
+                  }}
+                  onBlur={() => {
+                    setTimeout(() => {
+                      setShowJumpInput(false);
+                      setJumpValue('');
+                    }, 200);
+                  }}
+                  placeholder="Go to..."
+                  className="jump-input px-2 py-1 w-24 text-sm border border-gray-300 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-gray-300 dark:bg-gray-700 dark:text-white"
+                  autoFocus
+                  min="1"
+                  max={sourceTexts.length}
+                />
+              </div>
+            )}
+            {' '}• Item {currentIndex + 1} of {sourceTexts.length}
           </p>
         </div>
 
         {/* Progress Bar */}
         <div className="relative h-3 bg-gray-200 dark:bg-gray-700 border border-black dark:border-gray-600 overflow-hidden shadow-inner">
           <div
-            className="absolute h-full bg-black dark:bg-white transition-all duration-500 ease-out"
-            style={{ width: `${progress}%` }}
+            className="absolute h-full transition-all duration-500 ease-out diagonal-stripes"
+            style={{ 
+              width: `${progress}%`,
+              backgroundImage: darkMode 
+                ? `repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 5px,
+                    rgba(255, 255, 255, 0.3) 5px,
+                    rgba(255, 255, 255, 0.3) 10px
+                  )`
+                : `repeating-linear-gradient(
+                    45deg,
+                    transparent,
+                    transparent 5px,
+                    rgba(0, 0, 0, 0.8) 5px,
+                    rgba(0, 0, 0, 0.8) 10px
+                  )`
+            }}
           />
         </div>
 
@@ -723,52 +877,81 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
             isAnimating ? 'opacity-0 transform -translate-x-4' : 'opacity-100 transform translate-x-0'
           }`}
         >
-          <div className="space-y-2">
+          <div className="space-y-6 text-center">
             {utterers.length > 0 && utterers[currentIndex] && (
-              <div className="mb-6 p-4 bg-blue-50 border border-blue-600 shadow-sm">
-                <label className="text-sm font-black text-blue-900 uppercase tracking-wide letter-spacing-wide">Speaker</label>
-                <p className="text-lg font-semibold text-blue-900 mt-2">{utterers[currentIndex]}</p>
+              <div className="mb-4">
+                <label className="text-sm font-black text-gray-600 dark:text-gray-400 uppercase tracking-wide block mb-2">Speaker</label>
+                <p className={`text-lg font-medium ${eyeMode || gamepadMode ? 'text-gray-400 dark:text-gray-500' : 'text-blue-500 dark:text-blue-400'}`}>{utterers[currentIndex]}</p>
               </div>
             )}
-            <label className="text-base font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">English</label>
-            <div className="p-6 bg-gray-50 dark:bg-gray-700 border border-black shadow-sm">
-              <div 
-                className="text-lg leading-relaxed"
-                dangerouslySetInnerHTML={{ 
-                  __html: highlightMatchingText(sourceTexts[currentIndex]) 
-                }}
-                onClick={(e) => {
-                  const target = e.target as HTMLElement;
-                  if (target.classList.contains('clickable-character')) {
-                    const characterName = target.getAttribute('data-character');
-                    if (characterName) {
-                      insertCharacterName(characterName);
-                    }
-                  }
-                }}
-              />
-              
-              {/* Character Insertion Panel */}
-              {detectAssCharacters(sourceTexts[currentIndex]).length > 0 && (
-                <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded">
-                  <div className="flex items-center gap-2 mb-2">
-                    <svg className="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                    <span className="text-sm font-medium text-blue-700 dark:text-blue-300">Insert Characters:</span>
+            <div className="space-y-2">
+              {gamepadMode ? (
+                <div 
+                  className="mx-auto border-2 border-gray-800 dark:border-gray-300 gamepad-box relative"
+                  style={{ 
+                    width: '600px',     // Adjust box width here
+                    height: '400px',    // Adjust box height here
+                    fontFamily: 'VT323, monospace',
+                    fontSize: '18px',   // Adjust font size here
+                    lineHeight: '1.3',
+                    overflow: 'hidden',
+                    letterSpacing: '0.02em',
+                    backgroundColor: '#1e3a8a',
+                    color: '#ffffff'
+                  }}
+                >
+                  {/* Speaker bar */}
+                  <div 
+                    className="bg-blue-700 text-white px-4 py-2 border-b-2 border-gray-600"
+                    style={{ fontSize: '16px', fontFamily: 'VT323, monospace' }}
+                  >
+                    {utterers[currentIndex] || 'Speaker'}
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {detectAssCharacters(sourceTexts[currentIndex]).map((character, index) => (
-                      <button
-                        key={index}
-                        onClick={() => insertCharacterName(character)}
-                        className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 rounded hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors duration-200 font-medium"
-                      >
-                        Insert ({character})
-                      </button>
-                    ))}
+                  
+                  {/* Main dialogue area */}
+                  <div 
+                    className="p-6 text-white relative"
+                    style={{ 
+                      height: 'calc(100% - 60px)',
+                      fontFamily: 'VT323, monospace',
+                      fontSize: '18px',
+                      lineHeight: '1.4'
+                    }}
+                  >
+                    <div 
+                      dangerouslySetInnerHTML={{ 
+                        __html: eyeMode && currentTranslation 
+                          ? highlightMatchingText(currentTranslation)
+                          : highlightMatchingText(sourceTexts[currentIndex]) 
+                      }}
+                    />
+                    
+                    {/* Continue dialogue chevron */}
+                    <div className="absolute bottom-4 right-4 text-gray-300 animate-pulse">
+                      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7 10l5 5 5-5z"/>
+                      </svg>
+                    </div>
                   </div>
                 </div>
+              ) : (
+                <div 
+                  className="text-2xl font-bold leading-relaxed px-6"
+                  dangerouslySetInnerHTML={{ 
+                    __html: eyeMode && currentTranslation 
+                      ? highlightMatchingText(currentTranslation)
+                      : highlightMatchingText(sourceTexts[currentIndex]) 
+                  }}
+                  onClick={(e) => {
+                    const target = e.target as HTMLElement;
+                    if (target.classList.contains('clickable-character')) {
+                      const characterName = target.getAttribute('data-character');
+                      if (characterName) {
+                        insertCharacterName(characterName);
+                      }
+                    }
+                  }}
+                />
               )}
             </div>
           </div>
@@ -776,11 +959,38 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           <div className="space-y-4">
             <div className="flex items-center justify-between">
               <label className="text-base font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translation</label>
-              {useReferenceColumn && (
-                <span className="text-xs bg-blue-100 text-blue-900 px-3 py-1 font-bold shadow-sm border border-blue-600">
-                  Verification Mode
-                </span>
-              )}
+              <div className="flex items-center gap-3">
+                {useReferenceColumn && (
+                  <span className="text-xs bg-blue-100 text-blue-900 px-3 py-1 font-bold shadow-sm border border-blue-600">
+                    Verification Mode
+                  </span>
+                )}
+                <button
+                  onClick={() => setEyeMode(!eyeMode)}
+                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
+                  title={eyeMode ? "Hide preview" : "Show preview"}
+                >
+                  {eyeMode ? (
+                    <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                    </svg>
+                  ) : (
+                    <svg className="w-5 h-5 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                    </svg>
+                  )}
+                </button>
+                <button
+                  onClick={() => setGamepadMode(!gamepadMode)}
+                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
+                  title={gamepadMode ? "Exit game mode" : "Enter game mode"}
+                >
+                  <svg className={`w-5 h-5 ${gamepadMode ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-500'}`} fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM11 7a1 1 0 100 2 1 1 0 000-2zm2 1a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zM8 10a1 1 0 100 2 1 1 0 000-2zm-2 1a1 1 0 01-1 1H4a1 1 0 110-2h1a1 1 0 011 1zm3.293 2.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM15 13a1 1 0 100 2 1 1 0 000-2z"/>
+                  </svg>
+                </button>
+              </div>
             </div>
             <textarea
               value={currentTranslation}
@@ -791,14 +1001,43 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                   handleSubmit();
                 }
               }}
-              className="w-full p-4 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-2 focus:ring-gray-500 focus:ring-opacity-20 transition-all duration-200 text-lg leading-relaxed bg-white dark:bg-gray-700 shadow-sm dark:text-white resize-none"
+              className="w-full p-5 border border-gray-300 dark:border-gray-600 rounded-md focus:border-gray-500 dark:focus:border-gray-400 focus:ring-2 focus:ring-gray-300 focus:ring-opacity-30 transition-all duration-200 text-lg leading-relaxed bg-gray-50 dark:bg-gray-700 shadow-inner dark:text-white resize-none"
               placeholder={useReferenceColumn ? "Review and edit the reference translation..." : "Enter your translation..."}
               rows={3}
               autoFocus
             />
-                          <p className="text-xs text-gray-500">
-              {useReferenceColumn ? "Reference loaded - modify as needed • " : ""}Press Shift+Enter to submit
-            </p>
+            <div className="mt-2">
+              <div className="flex items-start justify-between">
+                <p className="text-xs text-gray-500">
+                  {useReferenceColumn ? "Reference loaded - modify as needed • " : ""}Press Shift+Enter to submit
+                </p>
+                {(detectAssCharacters(sourceTexts[currentIndex]).length > 0 || getMatchingCodexEntries(sourceTexts[currentIndex]).length > 0) && (
+                  <div className="flex flex-wrap gap-2 justify-end ml-4" style={{ maxWidth: '50%' }}>
+                    {/* Character buttons */}
+                    {detectAssCharacters(sourceTexts[currentIndex]).map((character, index) => (
+                      <button
+                        key={`char-${index}`}
+                        onClick={() => insertCharacterName(character)}
+                        className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 rounded-full hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                      >
+                        {character}
+                      </button>
+                    ))}
+                    {/* Codex entry buttons */}
+                    {getMatchingCodexEntries(sourceTexts[currentIndex]).map((entry, index) => (
+                      <button
+                        key={`codex-${index}`}
+                        onClick={() => insertCharacterName(entry.title)}
+                        className="px-3 py-1 text-xs bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-600 rounded-full hover:bg-purple-200 dark:hover:bg-purple-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                        title={`From ${entry.category}`}
+                      >
+                        {entry.title}
+                      </button>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
 
           <div className="flex gap-4">
@@ -808,14 +1047,14 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
               className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
               style={{ borderRadius: '3px' }}
             >
-              ← Previous
+              ‹ Previous
             </button>
             <button
               onClick={handleSubmit}
               className="flex-1 px-6 py-3 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide"
               style={{ borderRadius: '3px' }}
             >
-                              {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Next →'}
+              {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Submit & Next ›'}
             </button>
           </div>
         </div>
@@ -878,19 +1117,29 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           
           {/* Render accordions dynamically based on codex data */}
           {codexData && Object.keys(codexData).length > 0 ? (
-            Object.keys(codexData).map((category) => (
-              <div key={category} className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm">
-                <button
-                  onClick={() => toggleAccordion(category)}
-                  className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
-                >
-                  <span className="font-bold text-gray-900 dark:text-gray-100">
-                    {category.replace(/-/g, ' ').replace(/_/g, ' ')}
-                  </span>
-                  <svg className={`w-5 h-5 transform transition-transform duration-200 ${accordionStates[category] ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                  </svg>
-                </button>
+            Object.keys(codexData).map((category) => {
+              const hasMatches = categoryHasMatches(category);
+              return (
+                <div key={category} className={`bg-white dark:bg-gray-800 border shadow-sm transition-all duration-300 ${
+                  hasMatches 
+                    ? 'border-blue-400 dark:border-blue-600 bg-blue-50 dark:bg-blue-900/10' 
+                    : 'border-black dark:border-gray-600'
+                }`}>
+                  <button
+                    onClick={() => toggleAccordion(category)}
+                    className="w-full p-4 text-left flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200"
+                  >
+                    <span className={`font-bold ${
+                      hasMatches 
+                        ? 'text-blue-600 dark:text-blue-400' 
+                        : 'text-gray-900 dark:text-gray-100'
+                    }`}>
+                      {category.replace(/-/g, ' ').replace(/_/g, ' ')}
+                    </span>
+                    <svg className={`w-5 h-5 transform transition-transform duration-200 ${accordionStates[category] ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </button>
                 {accordionStates[category] && (
                   <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700">
                     <div className="space-y-2 text-sm">
@@ -898,8 +1147,9 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
                     </div>
                   </div>
                 )}
-              </div>
-            ))
+                </div>
+              );
+            })
           ) : (
             <div className="text-center py-4 text-gray-500">
               {isLoadingCodex ? 'Loading codex data...' : 'No codex data available'}
@@ -930,6 +1180,38 @@ const TranslationHelper: React.FC<TranslationHelperProps> = () => {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
         }
+        
+        .gamepad-box {
+          image-rendering: pixelated;
+          image-rendering: -moz-crisp-edges;
+          image-rendering: crisp-edges;
+          font-family: 'VT323', 'Courier New', Courier, monospace;
+          letter-spacing: 0.02em;
+          text-rendering: optimizeLegibility;
+          box-shadow: 0 0 0 2px #000000;
+        }
+        
+        .gamepad-box::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 1px,
+            rgba(255, 255, 255, 0.03) 1px,
+            rgba(255, 255, 255, 0.03) 2px
+          );
+          pointer-events: none;
+        }
+        
+        /* To easily adjust the gamepad box size, modify these values: */
+        /* width: 600px in the inline style */
+        /* height: 400px in the inline style */
+        /* fontSize: 18px in the inline style */
       `}</style>
 
     </div>
