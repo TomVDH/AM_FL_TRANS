@@ -201,9 +201,15 @@ const TranslationHelper: React.FC = () => {
     
     let highlightedText = text;
     
+    // Track what's already been highlighted to avoid duplicates
+    const highlightedRanges: Array<{start: number, end: number}> = [];
+    
     // Only highlight the exact matched phrases from codex entries if highlighting is enabled
     if (highlightMode) {
-      matches.forEach(match => {
+      // Sort matches by length (longest first) to handle overlapping matches properly
+      const sortedMatches = [...matches].sort((a, b) => b.title.length - a.title.length);
+      
+      sortedMatches.forEach(match => {
         // Escape special regex characters in the title
         const escapedTitle = match.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`\\b(${escapedTitle})\\b`, 'gi');
@@ -211,12 +217,20 @@ const TranslationHelper: React.FC = () => {
       });
     }
     
-    // Make **Ass characters clickable (removed underline since we have pill buttons)
+    // Make **Ass characters clickable
     assCharacters.forEach(character => {
       const regex = new RegExp(`(${character})`, 'gi');
-      highlightedText = highlightedText.replace(regex, 
-        '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #3B82F6; font-weight: 500;">$1</span>'
-      );
+      // Only apply clickable style if highlighting is enabled
+      if (highlightMode) {
+        highlightedText = highlightedText.replace(regex, 
+          '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #3B82F6; font-weight: 500;">$1</span>'
+        );
+      } else {
+        // When highlighting is off, still make clickable but without blue color
+        highlightedText = highlightedText.replace(regex, 
+          '<span class="clickable-character" data-character="$1" style="cursor: pointer;">$1</span>'
+        );
+      }
     });
     
     return highlightedText;
