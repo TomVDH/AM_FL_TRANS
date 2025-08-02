@@ -3,13 +3,9 @@
 /**
  * Excel to JSON Converter Script
  * 
- * This script processes all .xlsx files in the excels folder and converts them
- * to JSON format with the following structure:
- * - Column A: Utterer
- * - Column B: Context  
- * - Column C: Source English
- * - Row number for each entry
- * - Tab/Sheet name
+ * This script processes the READ_ME_LocalizationManual.xlsx file and extracts
+ * character data from the "Names and World Overview" tab, grouping English
+ * and Dutch translations together in unified objects.
  * 
  * Usage: node scripts/excel-to-json.js
  */
@@ -18,15 +14,9 @@ const fs = require('fs');
 const path = require('path');
 const XLSX = require('xlsx');
 
-  // Configuration
-  const EXCELS_FOLDER = path.join(__dirname, '..', 'excels');
-  const OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'json');
-  const REQUIRED_COLUMNS = {
-    A: 'Utterer',
-    B: 'Context', 
-    C: 'Source English',
-    J: 'Translated Dutch'
-  };
+// Configuration
+const EXCELS_FOLDER = path.join(__dirname, '..', 'excels');
+const OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'json');
 
 /**
  * Ensure output directory exists
@@ -39,11 +29,31 @@ function ensureOutputDirectory() {
 }
 
 /**
- * Process a single Excel file and convert to JSON
+ * Extract data from a specific row starting from Column B until empty
+ * @param {Array} row - The row data
+ * @returns {Array} Array of values from Column B onwards until empty
+ */
+function extractRowValues(row) {
+  const values = [];
+  
+  // Start from Column B (index 1) and go until empty
+  for (let i = 1; i < row.length; i++) {
+    const cellValue = row[i] ? row[i].toString().trim() : '';
+    if (cellValue === '') {
+      break; // Stop at first empty cell
+    }
+    values.push(cellValue);
+  }
+  
+  return values;
+}
+
+/**
+ * Process the README file and extract character data with unified structure
  * @param {string} filePath - Path to the Excel file
  * @returns {Object} Processed data object
  */
-function processExcelFile(filePath) {
+function processReadmeFile(filePath) {
   const fileName = path.basename(filePath, '.xlsx');
   console.log(`📖 Processing: ${fileName}`);
   
@@ -56,82 +66,96 @@ function processExcelFile(filePath) {
       sheets: []
     };
     
-    // Check if this is the README file (special handling)
-    const isReadmeFile = fileName.toLowerCase().includes('read_me_localizationmanual');
+    // Only process the "Names and World Overview" sheet
+    const targetSheetName = "Names and World Overview";
+    const worksheet = workbook.Sheets[targetSheetName];
     
-    // Process each sheet/tab
-    workbook.SheetNames.forEach(sheetName => {
-      console.log(`  📋 Processing sheet: ${sheetName}`);
-      
-      const worksheet = workbook.Sheets[sheetName];
-      const jsonData = XLSX.utils.sheet_to_json(worksheet, { 
-        header: 1,  // Use array format to preserve row numbers
-        defval: ''  // Default value for empty cells
-      });
-      
-      const sheetData = {
-        sheetName: sheetName,
-        entries: []
-      };
-      
-      if (isReadmeFile && sheetName === "Names and World Overview") {
-        // Special handling for README Names and World Overview sheet
-        console.log(`    🔧 Special processing for README Names and World Overview`);
-        
-        // Process horizontal structure for specific rows
-        const targetRows = [4, 16, 38, 47, 67, 74, 116, 124];
-        
-        targetRows.forEach(rowNumber => {
-          const rowIndex = rowNumber - 1; // Convert to 0-based index
-          const row = jsonData[rowIndex];
-          
-          if (row && row.length > 0) {
-            // Create an entry with the entire row data for horizontal processing
-            const rowEntry = {
-              rowNumber: rowNumber,
-              data: row.map((cell, colIndex) => ({
-                column: String.fromCharCode(65 + colIndex), // Convert to A, B, C, etc.
-                value: cell ? cell.toString().trim() : ''
-              }))
-            };
-            
-            sheetData.entries.push(rowEntry);
-            console.log(`    ✅ Processed row ${rowNumber} with ${row.length} columns`);
-          }
-        });
-      } else {
-        // Standard vertical processing for other files/sheets
-        jsonData.forEach((row, rowIndex) => {
-          // Skip empty rows
-          if (!row || row.length === 0) return;
-          
-          // Extract data from columns A, B, C, J (indices 0, 1, 2, 9)
-          const utterer = row[0] || '';
-          const context = row[1] || '';
-          const sourceEnglish = row[2] || '';
-          const translatedDutch = row[9] || ''; // Column J (index 9)
-          
-          // Only include rows that have at least some data
-          if (utterer || context || sourceEnglish) {
-            sheetData.entries.push({
-              rowNumber: rowIndex + 1, // Excel rows are 1-indexed
-              utterer: utterer.toString().trim(),
-              context: context.toString().trim(),
-              sourceEnglish: sourceEnglish.toString().trim(),
-              translatedDutch: translatedDutch.toString().trim()
-            });
-          }
-        });
-      }
-      
-      // Only include sheets that have data
-      if (sheetData.entries.length > 0) {
-        result.sheets.push(sheetData);
-        console.log(`    ✅ Found ${sheetData.entries.length} entries`);
-      } else {
-        console.log(`    ⚠️  No data found in sheet: ${sheetName}`);
-      }
+    if (!worksheet) {
+      console.log(`❌ Sheet "${targetSheetName}" not found in ${fileName}`);
+      return result;
+    }
+    
+    console.log(`  📋 Processing sheet: ${targetSheetName}`);
+    
+    const jsonData = XLSX.utils.sheet_to_json(worksheet, { 
+      header: 1,  // Use array format to preserve row numbers
+      defval: ''  // Default value for empty cells
     });
+    
+    const sheetData = {
+      sheetName: targetSheetName,
+      entries: []
+    };
+    
+    // Extract data from specific rows
+    const characterEnglish = extractRowValues(jsonData[3]); // Row 4
+    const characterDutch = extractRowValues(jsonData[15]); // Row 16
+    const humanEnglish = extractRowValues(jsonData[37]); // Row 38
+    const humanDutch = extractRowValues(jsonData[46]); // Row 47
+    const machineEnglish = extractRowValues(jsonData[66]); // Row 67
+    const machineDutch = extractRowValues(jsonData[73]); // Row 74
+    const locationEnglish = extractRowValues(jsonData[115]); // Row 116
+    const locationDutch = extractRowValues(jsonData[123]); // Row 124
+    
+    // Create unified character entries
+    if (characterEnglish.length > 0) {
+      characterEnglish.forEach((englishName, index) => {
+        const dutchName = characterDutch[index] || '';
+        sheetData.entries.push({
+          rowNumber: 4,
+          context: "Character",
+          sourceEnglish: englishName,
+          translatedDutch: dutchName
+        });
+      });
+    }
+    
+    // Create unified human character entries
+    if (humanEnglish.length > 0) {
+      humanEnglish.forEach((englishName, index) => {
+        const dutchName = humanDutch[index] || '';
+        sheetData.entries.push({
+          rowNumber: 38,
+          context: "Human Character",
+          sourceEnglish: englishName,
+          translatedDutch: dutchName
+        });
+      });
+    }
+    
+    // Create unified machine entries
+    if (machineEnglish.length > 0) {
+      machineEnglish.forEach((englishName, index) => {
+        const dutchName = machineDutch[index] || '';
+        sheetData.entries.push({
+          rowNumber: 67,
+          context: "Machine",
+          sourceEnglish: englishName,
+          translatedDutch: dutchName
+        });
+      });
+    }
+    
+    // Create unified location entries
+    if (locationEnglish.length > 0) {
+      locationEnglish.forEach((englishName, index) => {
+        const dutchName = locationDutch[index] || '';
+        sheetData.entries.push({
+          rowNumber: 116,
+          context: "Location",
+          sourceEnglish: englishName,
+          translatedDutch: dutchName
+        });
+      });
+    }
+    
+    // Only include sheets that have data
+    if (sheetData.entries.length > 0) {
+      result.sheets.push(sheetData);
+      console.log(`    ✅ Found ${sheetData.entries.length} unified entries`);
+    } else {
+      console.log(`    ⚠️  No data found in sheet: ${targetSheetName}`);
+    }
     
     return result;
     
@@ -198,55 +222,45 @@ function generateSummary(results) {
  * Main processing function
  */
 function main() {
-  console.log('🚀 Starting Excel to JSON conversion...\n');
+  console.log('🚀 Starting README Names and World Overview processing...');
   
-  // Ensure output directory exists
   ensureOutputDirectory();
   
-  // Get all Excel files
-  const excelFiles = fs.readdirSync(EXCELS_FOLDER)
-    .filter(file => file.endsWith('.xlsx'))
-    .map(file => path.join(EXCELS_FOLDER, file));
+  // Only process the README file
+  const readmeFile = path.join(EXCELS_FOLDER, 'READ_ME_LocalizationManual.xlsx');
   
-  if (excelFiles.length === 0) {
-    console.log('❌ No Excel files found in excels folder');
+  if (!fs.existsSync(readmeFile)) {
+    console.error(`❌ README file not found: ${readmeFile}`);
     return;
   }
   
-  console.log(`📁 Found ${excelFiles.length} Excel files to process\n`);
-  
-  // Process each file
   const results = [];
-  excelFiles.forEach((filePath, index) => {
-    console.log(`[${index + 1}/${excelFiles.length}]`);
-    const result = processExcelFile(filePath);
-    results.push(result);
-    
-    if (!result.error) {
-      saveToJson(result);
-    }
-    console.log(''); // Empty line for readability
-  });
+  
+  // Process the README file
+  const result = processReadmeFile(readmeFile);
+  results.push(result);
+  
+  if (!result.error) {
+    saveToJson(result);
+  }
   
   // Generate summary
   const summary = generateSummary(results);
   
-  // Print final summary
-  console.log('🎉 Processing complete!');
-  console.log(`📊 Summary:`);
-  console.log(`   Files processed: ${summary.totalFiles}`);
-  console.log(`   Successful: ${summary.successfulFiles}`);
-  console.log(`   Failed: ${summary.failedFiles}`);
-  console.log(`   Total sheets: ${summary.totalSheets}`);
-  console.log(`   Total entries: ${summary.totalEntries}`);
-  console.log(`\n📁 Output location: ${OUTPUT_FOLDER}`);
+  console.log('\n📋 Processing Summary:');
+  console.log(`✅ Total files processed: ${summary.totalFiles}`);
+  console.log(`✅ Successful: ${summary.successfulFiles}`);
+  console.log(`❌ Failed: ${summary.failedFiles}`);
+  console.log(`📊 Total unified entries: ${summary.totalEntries}`);
   
   if (summary.failedFiles > 0) {
     console.log('\n❌ Failed files:');
-    summary.files.filter(f => !f.success).forEach(f => {
-      console.log(`   - ${f.fileName}: ${f.error}`);
+    results.filter(r => r.error).forEach(r => {
+      console.log(`  - ${r.fileName}: ${r.error}`);
     });
   }
+  
+  console.log('\n🎉 Processing complete!');
 }
 
 // Run the script
@@ -255,7 +269,7 @@ if (require.main === module) {
 }
 
 module.exports = {
-  processExcelFile,
+  processReadmeFile,
   saveToJson,
   generateSummary
 }; 

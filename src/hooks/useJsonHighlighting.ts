@@ -56,6 +56,16 @@ export const useJsonHighlighting = (jsonData: any) => {
     if (characterRow && characterDutchRow) {
       console.log('🔍 README Parser Debug: Character row data:', characterRow);
       console.log('🔍 README Parser Debug: Character Dutch row data:', characterDutchRow);
+      console.log('🔍 README Parser Debug: Character row has data field:', !!characterRow.data);
+      console.log('🔍 README Parser Debug: Character Dutch row has data field:', !!characterDutchRow.data);
+      if (characterRow.data) {
+        console.log('🔍 README Parser Debug: Character row data length:', characterRow.data.length);
+        console.log('🔍 README Parser Debug: Character row data sample:', characterRow.data.slice(0, 3));
+      }
+      if (characterDutchRow.data) {
+        console.log('🔍 README Parser Debug: Character Dutch row data length:', characterDutchRow.data.length);
+        console.log('🔍 README Parser Debug: Character Dutch row data sample:', characterDutchRow.data.slice(0, 3));
+      }
       
       // Process horizontal data structure
       if (characterRow.data && characterDutchRow.data) {
