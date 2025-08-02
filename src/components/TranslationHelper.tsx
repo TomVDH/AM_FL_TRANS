@@ -5,7 +5,7 @@ import * as XLSX from 'xlsx';
 import { useDisplayModes } from '../hooks/useDisplayModes';
 import { useJsonMode } from '../hooks/useJsonMode';
 import { useReferenceColumn as useReferenceColumnHook } from '../hooks/useReferenceColumn';
-import { useTextHighlighting } from '../hooks/useTextHighlighting';
+import { useJsonHighlighting } from '../hooks/useJsonHighlighting';
 import SetupWizard from './SetupWizard';
 import CodexPanel from './CodexPanel';
 import TextHighlighter from './TextHighlighter';
@@ -191,14 +191,15 @@ const TranslationHelper: React.FC = () => {
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set()); // Expanded codex items
   const [isLoadingCodex, setIsLoadingCodex] = useState(false);         // Codex loading state
 
-  // ========== Text Highlighting State ==========
-  // ✅ REFACTORED: Extracted to useTextHighlighting hook
-  const { getMatchingCodexEntries, detectAssCharacters } = useTextHighlighting(codexData);
+  // ========== JSON Highlighting State ==========
+  // ✅ REFACTORED: Extracted to useJsonHighlighting hook
+  const { findJsonMatches, getHoverText } = useJsonHighlighting(jsonData);
 
-  // Function to check if a category has matching entries
+  // Function to check if a category has matching entries (for codex)
   const categoryHasMatches = (category: string) => {
-    const matches = getMatchingCodexEntries(sourceTexts[currentIndex] || '');
-    return matches.some(match => match.category === category);
+    // This function is still used by CodexPanel, so we'll keep it
+    // but it won't be used for highlighting anymore
+    return false;
   };
 
 
@@ -334,7 +335,7 @@ const TranslationHelper: React.FC = () => {
           onClick={() => toggleExpandedItem(`${categoryKey}-${index}`)}
           className="w-full p-3 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 text-gray-900 dark:text-gray-100"
         >
-          <span className={`font-medium ${getMatchingCodexEntries(sourceTexts[currentIndex] || '').some(m => m.title === entry.name) ? 'glow-text' : ''}`}>
+          <span className="font-medium">
             {entry.name}
           </span>
           <svg className={`w-4 h-4 transform transition-transform duration-200 ${expandedItems.has(`${categoryKey}-${index}`) ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -783,7 +784,7 @@ const TranslationHelper: React.FC = () => {
                     )}
                     <TextHighlighter
                       text={sourceTexts[currentIndex]}
-                      codexData={codexData}
+                      jsonData={jsonData}
                       highlightMode={highlightMode}
                       eyeMode={eyeMode}
                       currentTranslation={currentTranslation}
@@ -833,7 +834,7 @@ const TranslationHelper: React.FC = () => {
                   )}
                   <TextHighlighter
                     text={sourceTexts[currentIndex]}
-                    codexData={codexData}
+                    jsonData={jsonData}
                     highlightMode={highlightMode}
                     eyeMode={eyeMode}
                     currentTranslation={currentTranslation}
@@ -948,37 +949,7 @@ const TranslationHelper: React.FC = () => {
                 <p className="text-xs text-gray-500">
                   Press Shift+Enter to submit
                 </p>
-                {(detectAssCharacters(sourceTexts[currentIndex]).length > 0 || getMatchingCodexEntries(sourceTexts[currentIndex]).length > 0) && (
-                  <div className="flex flex-wrap gap-2 justify-end ml-4" style={{ maxWidth: '50%' }}>
-                    {/* Character buttons */}
-                    {detectAssCharacters(sourceTexts[currentIndex]).map((character, index) => (
-                      <button
-                        key={`char-${index}`}
-                        onClick={() => insertCharacterName(character)}
-                        className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors duration-200 font-medium whitespace-nowrap"
-                        style={{ 
-                          borderRadius: '3px'
-                        }}
-                      >
-                        {character}
-                      </button>
-                    ))}
-                    {/* Codex entry buttons */}
-                    {getMatchingCodexEntries(sourceTexts[currentIndex]).map((entry, index) => (
-                      <button
-                        key={`codex-${index}`}
-                        onClick={() => insertCharacterName(entry.title)}
-                        className="px-3 py-1 text-xs bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-600 hover:bg-purple-200 dark:hover:bg-purple-700 transition-colors duration-200 font-medium whitespace-nowrap"
-                        style={{ 
-                          borderRadius: '3px'
-                        }}
-                        title={`From ${entry.category}`}
-                      >
-                        {entry.title}
-                      </button>
-                    ))}
-                  </div>
-                )}
+
               </div>
             </div>
           </div>
