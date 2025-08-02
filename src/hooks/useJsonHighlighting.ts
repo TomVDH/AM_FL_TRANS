@@ -12,13 +12,15 @@ import { useMemo } from 'react';
  */
 export const useJsonHighlighting = (jsonData: any) => {
     /**
-   * Parse README JSON data with specific row/column structure
+   * Parse README JSON data with horizontal row structure
    * 
-   * The README JSON has a specific layout:
-   * - Character Names: Row 4 (English), Row 16 (Dutch), starting from Column B
-   * - Human Character Names: Row 38 (English), Row 47 (Dutch), starting from Column B
-   * - Machine Names: Row 67 (English), Row 74 (Dutch), starting from Column B
-   * - Location Names: Row 116 (English), Row 124 (Dutch), starting from Column B
+   * The README JSON has a unique horizontal layout:
+   * - Character Names: Row 4 (English), Row 16 (Dutch), entries go horizontally across columns
+   * - Human Character Names: Row 38 (English), Row 47 (Dutch), entries go horizontally across columns
+   * - Machine Names: Row 67 (English), Row 74 (Dutch), entries go horizontally across columns
+   * - Location Names: Row 116 (English), Row 124 (Dutch), entries go horizontally across columns
+   * 
+   * Each row contains multiple entries horizontally, not vertically like other JSON files.
    * 
    * @param rawData - The raw JSON data from the README file
    * @returns Parsed entries with sourceEnglish and translatedDutch
@@ -52,12 +54,21 @@ export const useJsonHighlighting = (jsonData: any) => {
     const characterDutchRow = namesSheet.entries.find((entry: any) => entry.rowNumber === 16);
     
     if (characterRow && characterDutchRow) {
-      // Start from column B (index 1) and go right
+      console.log('🔍 README Parser Debug: Character row data:', characterRow);
+      console.log('🔍 README Parser Debug: Character Dutch row data:', characterDutchRow);
+      
+      // Process each column horizontally (starting from B, index 1)
       for (let colIndex = 1; colIndex < Math.max(characterRow.length || 0, characterDutchRow.length || 0); colIndex++) {
         const englishName = characterRow[colIndex];
         const dutchName = characterDutchRow[colIndex];
         
         if (englishName && englishName.toString().trim()) {
+          console.log('🔍 README Parser Debug: Character entry:', {
+            colIndex,
+            englishName: englishName.toString().trim(),
+            dutchName: dutchName ? dutchName.toString().trim() : ''
+          });
+          
           entries.push({
             sourceEnglish: englishName.toString().trim(),
             translatedDutch: dutchName ? dutchName.toString().trim() : '',
@@ -73,11 +84,20 @@ export const useJsonHighlighting = (jsonData: any) => {
     const humanDutchRow = namesSheet.entries.find((entry: any) => entry.rowNumber === 47);
     
     if (humanRow && humanDutchRow) {
+      console.log('🔍 README Parser Debug: Human row data:', humanRow);
+      console.log('🔍 README Parser Debug: Human Dutch row data:', humanDutchRow);
+      
       for (let colIndex = 1; colIndex < Math.max(humanRow.length || 0, humanDutchRow.length || 0); colIndex++) {
         const englishName = humanRow[colIndex];
         const dutchName = humanDutchRow[colIndex];
         
         if (englishName && englishName.toString().trim()) {
+          console.log('🔍 README Parser Debug: Human entry:', {
+            colIndex,
+            englishName: englishName.toString().trim(),
+            dutchName: dutchName ? dutchName.toString().trim() : ''
+          });
+          
           entries.push({
             sourceEnglish: englishName.toString().trim(),
             translatedDutch: dutchName ? dutchName.toString().trim() : '',
@@ -93,11 +113,20 @@ export const useJsonHighlighting = (jsonData: any) => {
     const machineDutchRow = namesSheet.entries.find((entry: any) => entry.rowNumber === 74);
     
     if (machineRow && machineDutchRow) {
+      console.log('🔍 README Parser Debug: Machine row data:', machineRow);
+      console.log('🔍 README Parser Debug: Machine Dutch row data:', machineDutchRow);
+      
       for (let colIndex = 1; colIndex < Math.max(machineRow.length || 0, machineDutchRow.length || 0); colIndex++) {
         const englishName = machineRow[colIndex];
         const dutchName = machineDutchRow[colIndex];
         
         if (englishName && englishName.toString().trim()) {
+          console.log('🔍 README Parser Debug: Machine entry:', {
+            colIndex,
+            englishName: englishName.toString().trim(),
+            dutchName: dutchName ? dutchName.toString().trim() : ''
+          });
+          
           entries.push({
             sourceEnglish: englishName.toString().trim(),
             translatedDutch: dutchName ? dutchName.toString().trim() : '',
@@ -113,11 +142,20 @@ export const useJsonHighlighting = (jsonData: any) => {
     const locationDutchRow = namesSheet.entries.find((entry: any) => entry.rowNumber === 124);
     
     if (locationRow && locationDutchRow) {
+      console.log('🔍 README Parser Debug: Location row data:', locationRow);
+      console.log('🔍 README Parser Debug: Location Dutch row data:', locationDutchRow);
+      
       for (let colIndex = 1; colIndex < Math.max(locationRow.length || 0, locationDutchRow.length || 0); colIndex++) {
         const englishName = locationRow[colIndex];
         const dutchName = locationDutchRow[colIndex];
         
         if (englishName && englishName.toString().trim()) {
+          console.log('🔍 README Parser Debug: Location entry:', {
+            colIndex,
+            englishName: englishName.toString().trim(),
+            dutchName: dutchName ? dutchName.toString().trim() : ''
+          });
+          
           entries.push({
             sourceEnglish: englishName.toString().trim(),
             translatedDutch: dutchName ? dutchName.toString().trim() : '',
@@ -129,6 +167,7 @@ export const useJsonHighlighting = (jsonData: any) => {
     }
     
     console.log('🔍 README Parser Debug: Parsed', entries.length, 'entries');
+    console.log('🔍 README Parser Debug: Sample entries:', entries.slice(0, 5));
     return entries;
   };
 
