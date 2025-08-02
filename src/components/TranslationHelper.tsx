@@ -194,6 +194,7 @@ const TranslationHelper: React.FC = () => {
 
   // ========== JSON Highlighting State ==========
   // ✅ REFACTORED: Extracted to useJsonHighlighting hook
+  // Using Localization Manual for world entities highlighting
   const { findJsonMatches, getHoverText } = useJsonHighlighting(jsonData);
 
   // Function to check if a category has matching entries (for codex)

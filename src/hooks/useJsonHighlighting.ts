@@ -14,7 +14,7 @@ export const useJsonHighlighting = (jsonData: any) => {
   /**
    * Find matching entries in JSON data
    * 
-   * Searches through all sheets and entries to find matches
+   * Searches through the "Names and World Overview" sheet specifically
    * for the given text in sourceEnglish field
    * 
    * @param text - The text to search for
@@ -30,28 +30,30 @@ export const useJsonHighlighting = (jsonData: any) => {
       rowNumber: number;
     }> = [];
     
-    // Search through all sheets
+    // Search specifically in the "Names and World Overview" sheet
     if (jsonData.sheets && Array.isArray(jsonData.sheets)) {
-      jsonData.sheets.forEach((sheet: any) => {
-        if (sheet.entries && Array.isArray(sheet.entries)) {
-          sheet.entries.forEach((entry: any) => {
-            if (entry.sourceEnglish && typeof entry.sourceEnglish === 'string') {
-              const sourceText = entry.sourceEnglish.toLowerCase();
-              const searchText = text.toLowerCase();
-              
-              // Check if the source text contains the search term or vice versa
-              if (sourceText.includes(searchText) || searchText.includes(sourceText)) {
-                matches.push({
-                  sourceEnglish: entry.sourceEnglish,
-                  translatedDutch: entry.translatedDutch || '',
-                  sheetName: sheet.sheetName,
-                  rowNumber: entry.rowNumber
-                });
-              }
+      const namesSheet = jsonData.sheets.find((sheet: any) => 
+        sheet.sheetName === "Names and World Overview"
+      );
+      
+      if (namesSheet && namesSheet.entries && Array.isArray(namesSheet.entries)) {
+        namesSheet.entries.forEach((entry: any) => {
+          if (entry.sourceEnglish && typeof entry.sourceEnglish === 'string') {
+            const sourceText = entry.sourceEnglish.toLowerCase();
+            const searchText = text.toLowerCase();
+            
+            // Check if the source text contains the search term or vice versa
+            if (sourceText.includes(searchText) || searchText.includes(sourceText)) {
+              matches.push({
+                sourceEnglish: entry.sourceEnglish,
+                translatedDutch: entry.translatedDutch || '',
+                sheetName: namesSheet.sheetName,
+                rowNumber: entry.rowNumber
+              });
             }
-          });
-        }
-      });
+          }
+        });
+      }
     }
     
     return matches;
@@ -60,7 +62,7 @@ export const useJsonHighlighting = (jsonData: any) => {
   /**
    * Get hover text for a matched entry
    * 
-   * Returns the translatedDutch value if available, otherwise "Not found in E0"
+   * Returns the translatedDutch value if available, otherwise "Not found in Localization Manual"
    * 
    * @param entry - The matched entry
    * @returns Hover text to display
@@ -69,7 +71,7 @@ export const useJsonHighlighting = (jsonData: any) => {
     if (entry.translatedDutch && entry.translatedDutch.trim() !== '') {
       return entry.translatedDutch;
     }
-    return "Not found in E0";
+    return "Not found in Localization Manual";
   }, []);
 
   return {
