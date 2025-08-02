@@ -186,6 +186,7 @@ const TranslationHelper: React.FC = () => {
   // This state block should be extracted to useCodexIntegration hook
   // Components to create: CodexPanel, CodexAccordion, CodexDataProvider
   // State management: accordionStates, codexData, expandedItems, isLoadingCodex
+  // HIDDEN FOR NOW - Codex functionality disabled
   const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({}); // Accordion UI states
   const [codexData, setCodexData] = useState<any>(null);               // Loaded codex reference data
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set()); // Expanded codex items
@@ -215,7 +216,10 @@ const TranslationHelper: React.FC = () => {
    * This useEffect should be extracted to useCodexIntegration hook
    * Function to extract: fetchCodexData
    * Dependencies: codexData, isLoadingCodex state
+   * 
+   * HIDDEN FOR NOW - Codex functionality disabled
    */
+  /*
   useEffect(() => {
     const fetchCodexData = async () => {
       setIsLoadingCodex(true);
@@ -234,6 +238,7 @@ const TranslationHelper: React.FC = () => {
 
     fetchCodexData();
   }, []);
+  */
 
 
 
@@ -293,6 +298,8 @@ const TranslationHelper: React.FC = () => {
   // This function should be extracted to useCodexIntegration hook
   // Components to create: CodexAccordion, CodexItemExpander
   // Dependencies: expandedItems state
+  // HIDDEN FOR NOW - Codex functionality disabled
+  /*
   const toggleExpandedItem = (itemId: string) => {
     const newExpanded = new Set(expandedItems);
     if (newExpanded.has(itemId)) {
@@ -352,6 +359,7 @@ const TranslationHelper: React.FC = () => {
       </div>
     ));
   };
+  */
 
   // Generate random gradient colors - expanded palette
   // FUTURE SPLIT: ANIMATION MODULE
@@ -1225,7 +1233,8 @@ const TranslationHelper: React.FC = () => {
 
 
 
-        {/* Codex Reference Panel */}
+        {/* Codex Reference Panel - HIDDEN FOR NOW */}
+        {/* 
         <CodexPanel
           codexData={codexData}
           accordionStates={accordionStates}
@@ -1234,6 +1243,7 @@ const TranslationHelper: React.FC = () => {
           toggleAccordion={toggleAccordion}
           renderCodexItems={renderCodexItems}
         />
+        */}
 
         {/* Footer */}
         <div className="mt-20 mb-8 text-center">
