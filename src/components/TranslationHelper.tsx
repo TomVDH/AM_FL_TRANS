@@ -812,22 +812,24 @@ const TranslationHelper: React.FC = () => {
             )}
             <div className="space-y-2">
               {gamepadMode ? (
-                <div 
-                  className="mx-auto gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-black dark:border-gray-400"
-                  style={{ 
-                    width: '450px',     // Increased from 400px
-                    height: '180px',    // Increased from 150px
-                    fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
-                    fontSize: '1.5rem', // Slightly larger font for better readability
-                    lineHeight: '1.4',
-                    overflow: 'hidden',
-                    letterSpacing: '0.02em',
-                    borderRadius: '4px',
-                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
-                    background: darkMode ? '#1a1a1a' : '#ffffff',
-                    position: 'relative'
-                  }}
-                >
+                <div className="flex gap-8 justify-center">
+                  {/* Main Dialogue Box */}
+                  <div 
+                    className="gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-black dark:border-gray-400"
+                    style={{ 
+                      width: '450px',
+                      height: '180px',
+                      fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                      fontSize: '1.5rem',
+                      lineHeight: '1.4',
+                      overflow: 'hidden',
+                      letterSpacing: '0.02em',
+                      borderRadius: '4px',
+                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+                      background: darkMode ? '#1a1a1a' : '#ffffff',
+                      position: 'relative'
+                    }}
+                  >
                   {/* Speaker bar with reduced height */}
                   <div 
                     className="bg-black dark:bg-gray-800 text-white dark:text-gray-100 px-4 py-2 border-b-2 border-black dark:border-gray-700 text-left pixelify-sans-600 relative"
@@ -907,42 +909,176 @@ const TranslationHelper: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              ) : (
-                <div 
-                  className="text-2xl font-bold leading-relaxed px-6 py-4 text-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 rounded relative"
-                  style={{ borderRadius: '3px' }}
-                >
-                  {/* Copy button for source text */}
-                  <button
-                    onClick={copySourceText}
-                    className="absolute top-2 right-2 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                    title="Copy source text"
+
+                {/* Second Dialogue Box (Source) - Only show when eye mode is active */}
+                {eyeMode && (
+                  <div 
+                    className="gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-black dark:border-gray-400 opacity-70"
+                    style={{ 
+                      width: '450px',
+                      height: '180px',
+                      fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                      fontSize: '1.5rem',
+                      lineHeight: '1.4',
+                      overflow: 'hidden',
+                      letterSpacing: '0.02em',
+                      borderRadius: '4px',
+                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+                      background: darkMode ? '#1a1a1a' : '#ffffff',
+                      position: 'relative'
+                    }}
                   >
-                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                    </svg>
-                  </button>
-                  {/* JSON button - only show when JSON mode is active */}
-                  {jsonMode && (
+                    {/* Speaker bar with reduced height */}
+                    <div 
+                      className="bg-black dark:bg-gray-800 text-white dark:text-gray-100 px-4 py-2 border-b-2 border-black dark:border-gray-700 text-left pixelify-sans-600 relative"
+                      style={{ 
+                        fontSize: '1.8rem', 
+                        fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                        background: '#000000'
+                      }}
+                    >
+                      <div className="flex justify-between items-center">
+                        <span className="text-shadow-pixel opacity-70">Source</span>
+                        <div className="flex items-center gap-2">
+                          {/* Copy button for source text */}
+                          <button
+                            onClick={copySourceText}
+                            className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200"
+                            title="Copy source text"
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                          </button>
+                          {/* JSON button - only show when JSON mode is active */}
+                          {jsonMode && (
+                            <button
+                              onClick={copySourceToJsonSearch}
+                              className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200"
+                              title="Search this text in JSON viewer"
+                            >
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
+                              </svg>
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* Main dialogue area with enhanced styling */}
+                    <div 
+                      className="p-3 relative text-left pixelify-sans-500 overflow-y-auto custom-scrollbar"
+                      style={{ 
+                        height: 'calc(100% - 50px)',
+                        fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                        fontSize: '1.2rem',
+                        lineHeight: '1.6',
+                        background: darkMode ? '#1a1a1a' : '#ffffff'
+                      }}
+                    >
+                      <TextHighlighter
+                        text={sourceTexts[currentIndex]}
+                        jsonData={highlightingJsonData}
+                        highlightMode={highlightMode}
+                        eyeMode={false}
+                        currentTranslation=""
+                        onCharacterClick={insertCharacterName}
+                        className="dialogue-content opacity-70"
+                        style={{
+                          textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
+                          wordSpacing: '0.05em'
+                        }}
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+                          ) : (
+                <div className="space-y-4">
+                  {/* Main Translation Display */}
+                  <div 
+                    className="text-2xl font-bold leading-relaxed px-6 py-4 text-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 rounded relative"
+                    style={{ borderRadius: '3px' }}
+                  >
+                    {/* Copy button for source text */}
                     <button
-                      onClick={copySourceToJsonSearch}
-                      className="absolute top-2 right-8 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                      title="Search this text in JSON viewer"
+                      onClick={copySourceText}
+                      className="absolute top-2 right-2 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                      title="Copy source text"
                     >
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                       </svg>
                     </button>
+                    {/* JSON button - only show when JSON mode is active */}
+                    {jsonMode && (
+                      <button
+                        onClick={copySourceToJsonSearch}
+                        className="absolute top-2 right-8 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                        title="Search this text in JSON viewer"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
+                        </svg>
+                      </button>
+                    )}
+                    <TextHighlighter
+                      text={sourceTexts[currentIndex]}
+                      jsonData={highlightingJsonData}
+                      highlightMode={highlightMode}
+                      eyeMode={eyeMode}
+                      currentTranslation={currentTranslation}
+                      onCharacterClick={insertCharacterName}
+                    />
+                  </div>
+
+                  {/* Source Display - Only show when eye mode is active */}
+                  {eyeMode && (
+                    <div 
+                      className="text-xl font-medium leading-relaxed px-6 py-4 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 rounded relative opacity-70"
+                      style={{ borderRadius: '3px' }}
+                    >
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Source Text</span>
+                        <div className="flex items-center gap-2">
+                          {/* Copy button for source text */}
+                          <button
+                            onClick={copySourceText}
+                            className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                            title="Copy source text"
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                          </button>
+                          {/* JSON button - only show when JSON mode is active */}
+                          {jsonMode && (
+                            <button
+                              onClick={copySourceToJsonSearch}
+                              className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                              title="Search this text in JSON viewer"
+                            >
+                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
+                              </svg>
+                            </button>
+                          )}
+                        </div>
+                      </div>
+                      <TextHighlighter
+                        text={sourceTexts[currentIndex]}
+                        jsonData={highlightingJsonData}
+                        highlightMode={highlightMode}
+                        eyeMode={false}
+                        currentTranslation=""
+                        onCharacterClick={insertCharacterName}
+                      />
+                    </div>
                   )}
-                  <TextHighlighter
-                    text={sourceTexts[currentIndex]}
-                    jsonData={highlightingJsonData}
-                    highlightMode={highlightMode}
-                    eyeMode={eyeMode}
-                    currentTranslation={currentTranslation}
-                    onCharacterClick={insertCharacterName}
-                  />
                 </div>
               )}
             </div>

@@ -164,12 +164,12 @@
   
   /* Dark mode gamepad box styling */
   .dark .gamepad-box {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    background: #1a1a1a !important;
     border-color: #4a4a4a !important;
   }
   
   .dark .gamepad-box .dialogue-content {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    background: #1a1a1a !important;
   }
   
   /* Dialogue content styling for gamepad mode */
