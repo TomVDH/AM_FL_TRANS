@@ -166,7 +166,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       />
       
       {/* Suggestion buttons - only show for main dialogue box, not source text */}
-      {suggestions.length > 0 && onSuggestionClick && !className.includes('opacity-70') && (
+      {suggestions.length > 0 && onSuggestionClick && !className.includes('opacity-70') && !className.includes('no-suggestions') && (
         <div className="mt-2 flex flex-wrap gap-2">
           {suggestions.map((suggestion, index) => (
             <button

@@ -1,6 +1,6 @@
 {
   "fileName": "READ_ME_LocalizationManual",
-  "processedAt": "2025-08-02T06:18:55.262Z",
+  "processedAt": "2025-08-02T07:28:07.089Z",
   "sheets": [
     {
       "sheetName": "Names and World Overview",
@@ -99,133 +99,133 @@
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Cole Butte / Cole-Machine",
-          "translatedDutch": ""
+          "translatedDutch": "Cédric Vanscheetvelde"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Hugh G. Butte",
-          "translatedDutch": ""
+          "translatedDutch": "Herman K. Vanscheetvelde"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Sandy Butte",
-          "translatedDutch": ""
+          "translatedDutch": "Imelda Vanscheetvelde"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Miner Jenny",
-          "translatedDutch": ""
+          "translatedDutch": "Mijnwerker Jenny"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Child Joey",
-          "translatedDutch": ""
+          "translatedDutch": "Klein Luukske Vermeulen"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Grandma Kulan",
-          "translatedDutch": ""
+          "translatedDutch": "Groetmoe Vermeulen"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Mme. Derriere",
-          "translatedDutch": ""
+          "translatedDutch": "Mevr. Derrière"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Asshandler Melvin",
-          "translatedDutch": ""
+          "translatedDutch": "Zakkenzeuler Zeno"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Asshandler Wedgie",
-          "translatedDutch": ""
+          "translatedDutch": "Zakkenzeulster Zita"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Ringmaster Rico",
-          "translatedDutch": ""
+          "translatedDutch": "Baptiste, de Circusdirecteur"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Zookeeper Rose",
-          "translatedDutch": ""
+          "translatedDutch": "Dierenverzorger Dina"
         },
         {
           "rowNumber": 38,
           "context": "Human Character",
           "sourceEnglish": "Radio Host Marcos",
-          "translatedDutch": ""
+          "translatedDutch": "DJ Günther"
         },
         {
           "rowNumber": 67,
           "context": "Machine",
           "sourceEnglish": "Prophet-Machine (M)",
-          "translatedDutch": ""
+          "translatedDutch": "Profetische Machine"
         },
         {
           "rowNumber": 67,
           "context": "Machine",
           "sourceEnglish": "Prophet-Machine (F)",
-          "translatedDutch": ""
+          "translatedDutch": "Profetische Machine"
         },
         {
           "rowNumber": 67,
           "context": "Machine",
           "sourceEnglish": "Tractor-Machine",
-          "translatedDutch": ""
+          "translatedDutch": "Traktor Machine"
         },
         {
           "rowNumber": 67,
           "context": "Machine",
           "sourceEnglish": "Death-Machine",
-          "translatedDutch": ""
+          "translatedDutch": "Machine des Doods"
         },
         {
           "rowNumber": 67,
           "context": "Machine",
           "sourceEnglish": "Tank-Machine",
-          "translatedDutch": ""
+          "translatedDutch": "Tank Machine"
         },
         {
           "rowNumber": 67,
           "context": "Machine",
           "sourceEnglish": "Flying-Machine",
-          "translatedDutch": ""
+          "translatedDutch": "Vlieg Machine"
         },
         {
           "rowNumber": 67,
           "context": "Machine",
           "sourceEnglish": "Truck-Machine",
-          "translatedDutch": ""
+          "translatedDutch": "Camion Machine"
         },
         {
           "rowNumber": 67,
           "context": "Machine",
           "sourceEnglish": "Car-Machine",
-          "translatedDutch": ""
+          "translatedDutch": "Auto Machine"
         },
         {
           "rowNumber": 116,
           "context": "Location",
           "sourceEnglish": "Fannyside",
-          "translatedDutch": "De Hoge Tenen"
+          "translatedDutch": "Muilegem"
         },
         {
           "rowNumber": 116,
           "context": "Location",
           "sourceEnglish": "Fannyside Farm",
-          "translatedDutch": "-hoeve"
+          "translatedDutch": "De Boerderij van Muilegem"
         },
         {
           "rowNumber": 116,
@@ -237,7 +237,7 @@
           "rowNumber": 116,
           "context": "Location",
           "sourceEnglish": "Mecha City",
-          "translatedDutch": "Technopolis"
+          "translatedDutch": "Mechalen"
         },
         {
           "rowNumber": 116,
@@ -249,13 +249,13 @@
           "rowNumber": 116,
           "context": "Location",
           "sourceEnglish": "Reassignment",
-          "translatedDutch": ""
+          "translatedDutch": "Heraanstelling"
         },
         {
           "rowNumber": 116,
           "context": "Location",
           "sourceEnglish": "Astral Plane",
-          "translatedDutch": ""
+          "translatedDutch": "het Astrale Hiernamaals"
         }
       ]
     }

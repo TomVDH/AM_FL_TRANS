@@ -74,6 +74,8 @@ export const useJsonMode = () => {
     setJsonData(null);
   };
 
+
+
   /**
    * Get filtered JSON entries based on search term
    */

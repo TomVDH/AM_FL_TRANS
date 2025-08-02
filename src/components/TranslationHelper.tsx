@@ -672,6 +672,33 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
+  const persistTranslation = async (rowNumber: number, newTranslation: string) => {
+    try {
+      const response = await fetch('/api/persist-translation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fileName: 'READ_ME_LocalizationManual',
+          rowNumber: rowNumber,
+          newTranslation: newTranslation
+        }),
+      });
+
+      if (response.ok) {
+        // Reload JSON data to reflect changes
+        await loadLocalizationManual();
+        setShowCopied(true);
+        setTimeout(() => setShowCopied(false), 2000);
+      } else {
+        console.error('Failed to persist translation');
+      }
+    } catch (error) {
+      console.error('Error persisting translation:', error);
+    }
+  };
+
   // FUTURE SPLIT: EXPORT FUNCTIONALITY MODULE
   // This function should be extracted to useExportFunctionality hook
   // Components to create: ExportControls, CellLocationCalculator
@@ -817,8 +844,8 @@ const TranslationHelper: React.FC = () => {
                   <div 
                     className="gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-black dark:border-gray-400"
                     style={{ 
-                      width: '450px',
-                      height: '180px',
+                      width: '480px',
+                      height: '200px',
                       fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
                       fontSize: '1.5rem',
                       lineHeight: '1.4',
@@ -848,32 +875,7 @@ const TranslationHelper: React.FC = () => {
                           const utterer = utterers[currentIndex];
                           if (!utterer) return 'Speaker';
                           const parts = utterer.split('.');
-                          const speakerName = parts.length >= 4 ? parts[3] : utterer;
-                          
-                          // Check if the speaker name matches any JSON entries
-                          if (highlightingJsonData) {
-                            const matches = findJsonMatches(speakerName);
-                            if (matches.length > 0) {
-                              // Sort matches by relevance (exact matches first)
-                              const sortedMatches = matches.sort((a, b) => {
-                                const aIsExact = a.sourceEnglish.toLowerCase() === speakerName.toLowerCase();
-                                const bIsExact = b.sourceEnglish.toLowerCase() === speakerName.toLowerCase();
-                                
-                                if (aIsExact && !bIsExact) return -1;
-                                if (!aIsExact && bIsExact) return 1;
-                                
-                                return b.sourceEnglish.length - a.sourceEnglish.length;
-                              });
-                              
-                              const bestMatch = sortedMatches[0];
-                              if (bestMatch.translatedDutch && bestMatch.translatedDutch.trim() !== '') {
-                                console.log('🎭 Dialogue Box Debug: Translated speaker name:', speakerName, '→', bestMatch.translatedDutch);
-                                return bestMatch.translatedDutch;
-                              }
-                            }
-                          }
-                          
-                          return speakerName;
+                          return parts.length >= 4 ? parts[3] : utterer;
                         })()}
                       </span>
                       <div className="flex items-center gap-2">
@@ -925,7 +927,7 @@ const TranslationHelper: React.FC = () => {
                       currentTranslation={currentTranslation}
                       onCharacterClick={insertCharacterName}
                       onSuggestionClick={insertTranslatedSuggestion}
-                      className="dialogue-content"
+                      className="dialogue-content no-suggestions"
                       style={{
                         textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
                         wordSpacing: '0.05em'
@@ -1065,6 +1067,7 @@ const TranslationHelper: React.FC = () => {
                       currentTranslation={currentTranslation}
                       onCharacterClick={insertCharacterName}
                       onSuggestionClick={insertTranslatedSuggestion}
+                      className="no-suggestions"
                     />
                   </div>
 
@@ -1109,6 +1112,7 @@ const TranslationHelper: React.FC = () => {
                         eyeMode={false}
                         currentTranslation=""
                         onCharacterClick={insertCharacterName}
+                        className="no-suggestions"
                       />
                     </div>
                   )}
@@ -1482,6 +1486,16 @@ const TranslationHelper: React.FC = () => {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                                   </svg>
                                 </button>
+                                {/* Persist button temporarily hidden */}
+                                {/* 
+                                <button
+                                  onClick={() => persistTranslation(entry.rowNumber, entry.translatedDutch)}
+                                  className="px-2 py-1 text-xs bg-green-600 hover:bg-green-700 text-white font-medium rounded transition-colors duration-200"
+                                  title="Persist current translation to JSON file"
+                                >
+                                  Persist
+                                </button>
+                                */}
                               </div>
                             </div>
                           </div>
