@@ -5,8 +5,10 @@ import * as XLSX from 'xlsx';
 import { useDisplayModes } from '../hooks/useDisplayModes';
 import { useJsonMode } from '../hooks/useJsonMode';
 import { useReferenceColumn as useReferenceColumnHook } from '../hooks/useReferenceColumn';
+import { useTextHighlighting } from '../hooks/useTextHighlighting';
 import SetupWizard from './SetupWizard';
 import CodexPanel from './CodexPanel';
+import TextHighlighter from './TextHighlighter';
 
 /**
  * TranslationHelper Component
@@ -169,6 +171,8 @@ const TranslationHelper: React.FC = () => {
     getFilteredEntries,
     getAvailableSheets,
   } = useJsonMode();
+
+
   
   // ========== Component References ==========
   const fileInputRef = useRef<HTMLInputElement>(null);                 // File input element reference
@@ -186,6 +190,16 @@ const TranslationHelper: React.FC = () => {
   const [codexData, setCodexData] = useState<any>(null);               // Loaded codex reference data
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set()); // Expanded codex items
   const [isLoadingCodex, setIsLoadingCodex] = useState(false);         // Codex loading state
+
+  // ========== Text Highlighting State ==========
+  // ✅ REFACTORED: Extracted to useTextHighlighting hook
+  const { getMatchingCodexEntries, detectAssCharacters } = useTextHighlighting(codexData);
+
+  // Function to check if a category has matching entries
+  const categoryHasMatches = (category: string) => {
+    const matches = getMatchingCodexEntries(sourceTexts[currentIndex] || '');
+    return matches.some(match => match.category === category);
+  };
   
   // ========== Computed Values ==========
   const progress = sourceTexts.length > 0 ? ((currentIndex) / sourceTexts.length) * 100 : 0;
@@ -220,71 +234,7 @@ const TranslationHelper: React.FC = () => {
 
 
 
-  /**
-   * Check if text matches any codex entries using flexible matching
-   * 
-   * This function implements two matching strategies:
-   * 1. Direct substring matching - for exact name matches
-   * 2. Regex-based flexible matching - for hyphenated entries like "butte-mines"
-   *    matching text like "Butte Industry Coal Mines"
-   * 
-   * @param text - The source text to search for codex matches
-   * @returns Array of matching codex entries with title, content, and category
-   * 
-   * FUTURE SPLIT: CODEX INTEGRATION MODULE
-   * This function should be extracted to useCodexIntegration hook
-   * Related functions: categoryHasMatches, renderCodexItems
-   * Dependencies: codexData state
-   */
-  const getMatchingCodexEntries = (text: string) => {
-    if (!codexData || !text) return [];
-    
-    const matches: Array<{title: string, content: string, category: string}> = [];
-    const textLower = text.toLowerCase();
-    
-    Object.entries(codexData).forEach(([category, entries]: [string, any]) => {
-      if (Array.isArray(entries)) {
-        entries.forEach((entry: any) => {
-          if (entry.name) {
-            const entryNameLower = entry.name.toLowerCase();
-            
-            // Direct match - full phrase must appear
-            if (textLower.includes(entryNameLower)) {
-              matches.push({
-                title: entry.name,
-                content: entry.content || '',
-                category: category
-              });
-            }
-          }
-        });
-      }
-    });
-    
-    return matches;
-  };
 
-  // Function to check if a category has matching entries
-  const categoryHasMatches = (category: string) => {
-    const matches = getMatchingCodexEntries(sourceTexts[currentIndex] || '');
-    return matches.some(match => match.category === category);
-  };
-
-  /**
-   * Detect "Ass" characters in text
-   * 
-   * Special pattern matching for the AM Translations project's character naming
-   * convention where many characters have names ending in "Ass" (e.g., "Big Ass", "Smart Ass").
-   * This is project-specific functionality for the donkey-themed translation work.
-   * 
-   * @param text - Source text to search for character names
-   * @returns Array of unique character names matching the pattern
-   */
-  const detectAssCharacters = (text: string) => {
-    const assPattern = /\b\w+\s+Ass\b/gi;  // Matches "[Word] Ass" pattern
-    const matches = text.match(assPattern);
-    return matches ? Array.from(new Set(matches)) : [];
-  };
 
   /**
    * Extract clean speaker name from utterer string
@@ -333,54 +283,7 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
-  // Function to highlight matching text and add clickable character names
-  // FUTURE SPLIT: CHARACTER DETECTION MODULE + CODEX INTEGRATION MODULE
-  // This function combines character detection and codex highlighting
-  // Should be split between useCharacterDetection and useCodexIntegration hooks
-  // Components to create: TextHighlighter, CharacterHighlighter, CodexHighlighter
-  // Dependencies: codexData, highlightMode state, getMatchingCodexEntries, detectAssCharacters
-  const highlightMatchingText = (text: string) => {
-    if (!codexData) return text;
-    
-    const matches = getMatchingCodexEntries(text);
-    const assCharacters = detectAssCharacters(text);
-    
-    let highlightedText = text;
-    
-    // Track what's already been highlighted to avoid duplicates
-    const highlightedRanges: Array<{start: number, end: number}> = [];
-    
-    // Only highlight the exact matched phrases from codex entries if highlighting is enabled
-    if (highlightMode) {
-      // Sort matches by length (longest first) to handle overlapping matches properly
-      const sortedMatches = [...matches].sort((a, b) => b.title.length - a.title.length);
-      
-      sortedMatches.forEach(match => {
-        // Escape special regex characters in the title
-        const escapedTitle = match.title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`\\b(${escapedTitle})\\b`, 'gi');
-        highlightedText = highlightedText.replace(regex, '<span class="glow-text">$1</span>');
-      });
-    }
-    
-    // Make **Ass characters clickable
-    assCharacters.forEach(character => {
-      const regex = new RegExp(`(${character})`, 'gi');
-      // Only apply clickable style if highlighting is enabled
-      if (highlightMode) {
-        highlightedText = highlightedText.replace(regex, 
-          '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #3B82F6; font-weight: 500;">$1</span>'
-        );
-      } else {
-        // When highlighting is off, still make clickable but without blue color
-        highlightedText = highlightedText.replace(regex, 
-          '<span class="clickable-character" data-character="$1" style="cursor: pointer;">$1</span>'
-        );
-      }
-    });
-    
-    return highlightedText;
-  };
+
 
   // Function to toggle expanded items
   // FUTURE SPLIT: CODEX INTEGRATION MODULE
@@ -854,22 +757,14 @@ const TranslationHelper: React.FC = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                       </svg>
                     </button>
-                    <div 
+                    <TextHighlighter
+                      text={sourceTexts[currentIndex]}
+                      codexData={codexData}
+                      highlightMode={highlightMode}
+                      eyeMode={eyeMode}
+                      currentTranslation={currentTranslation}
+                      onCharacterClick={insertCharacterName}
                       className="dialogue-content"
-                      dangerouslySetInnerHTML={{ 
-                        __html: eyeMode && currentTranslation 
-                          ? highlightMatchingText(currentTranslation)
-                          : highlightMatchingText(sourceTexts[currentIndex]) 
-                      }}
-                      onClick={(e) => {
-                        const target = e.target as HTMLElement;
-                        if (target.classList.contains('clickable-character')) {
-                          const characterName = target.getAttribute('data-character');
-                          if (characterName) {
-                            insertCharacterName(characterName);
-                          }
-                        }
-                      }}
                       style={{
                         textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
                         wordSpacing: '0.05em'
@@ -899,21 +794,13 @@ const TranslationHelper: React.FC = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                     </svg>
                   </button>
-                  <div
-                    dangerouslySetInnerHTML={{ 
-                      __html: eyeMode && currentTranslation 
-                        ? highlightMatchingText(currentTranslation)
-                        : highlightMatchingText(sourceTexts[currentIndex]) 
-                    }}
-                    onClick={(e) => {
-                      const target = e.target as HTMLElement;
-                      if (target.classList.contains('clickable-character')) {
-                        const characterName = target.getAttribute('data-character');
-                        if (characterName) {
-                          insertCharacterName(characterName);
-                        }
-                      }
-                    }}
+                  <TextHighlighter
+                    text={sourceTexts[currentIndex]}
+                    codexData={codexData}
+                    highlightMode={highlightMode}
+                    eyeMode={eyeMode}
+                    currentTranslation={currentTranslation}
+                    onCharacterClick={insertCharacterName}
                   />
                 </div>
               )}
