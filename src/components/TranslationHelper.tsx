@@ -200,6 +200,8 @@ const TranslationHelper: React.FC = () => {
     const matches = getMatchingCodexEntries(sourceTexts[currentIndex] || '');
     return matches.some(match => match.category === category);
   };
+
+
   
   // ========== Computed Values ==========
   const progress = sourceTexts.length > 0 ? ((currentIndex) / sourceTexts.length) * 100 : 0;
