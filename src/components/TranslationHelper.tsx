@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import * as XLSX from 'xlsx';
 import { useDisplayModes } from '../hooks/useDisplayModes';
+import { useJsonMode } from '../hooks/useJsonMode';
 
 /**
  * TranslationHelper Component
@@ -137,12 +138,22 @@ const TranslationHelper: React.FC = () => {
   const [showVersionHash, setShowVersionHash] = useState(false);       // Display version info
   
   // ========== JSON Mode State ==========
-  const [jsonMode, setJsonMode] = useState(false);                     // JSON data viewing mode
-  const [selectedJsonFile, setSelectedJsonFile] = useState('');        // Selected JSON file
-  const [selectedJsonSheet, setSelectedJsonSheet] = useState('');      // Selected sheet in JSON
-  const [jsonSearchTerm, setJsonSearchTerm] = useState('');            // Search term for JSON data
-  const [jsonData, setJsonData] = useState<any>(null);                // Loaded JSON data
-  const [availableJsonFiles, setAvailableJsonFiles] = useState<string[]>([]); // Available JSON files
+  // ✅ REFACTORED: Extracted to useJsonMode hook
+  const {
+    jsonMode,
+    selectedJsonFile,
+    selectedJsonSheet,
+    jsonSearchTerm,
+    jsonData,
+    availableJsonFiles,
+    setSelectedJsonSheet,
+    setJsonSearchTerm,
+    loadJsonData,
+    toggleJsonMode,
+    clearJsonMode,
+    getFilteredEntries,
+    getAvailableSheets,
+  } = useJsonMode();
   
   // ========== Component References ==========
   const fileInputRef = useRef<HTMLInputElement>(null);                 // File input element reference
@@ -192,40 +203,7 @@ const TranslationHelper: React.FC = () => {
     fetchCodexData();
   }, []);
 
-  /**
-   * Load available JSON files on component mount
-   */
-  useEffect(() => {
-    const loadAvailableJsonFiles = async () => {
-      try {
-        const response = await fetch('/api/json-files');
-        if (response.ok) {
-          const files = await response.json();
-          setAvailableJsonFiles(files);
-        }
-      } catch (error) {
-        // Silently handle JSON files loading errors
-      }
-    };
 
-    loadAvailableJsonFiles();
-  }, []);
-
-  /**
-   * Load JSON data when file is selected
-   */
-  const loadJsonData = async (fileName: string) => {
-    try {
-      const response = await fetch(`/api/json-data?file=${encodeURIComponent(fileName)}`);
-      if (response.ok) {
-        const data = await response.json();
-        setJsonData(data);
-        setSelectedJsonFile(fileName);
-      }
-    } catch (error) {
-      console.error('Error loading JSON data:', error);
-    }
-  };
 
   /**
    * Check if text matches any codex entries using flexible matching
@@ -1362,7 +1340,7 @@ const TranslationHelper: React.FC = () => {
                 </button>
                 {/* JSON Mode Toggle */}
                 <button
-                  onClick={() => setJsonMode(!jsonMode)}
+                  onClick={toggleJsonMode}
                   className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
                   title="JSON Data View"
                 >
@@ -1532,8 +1510,8 @@ const TranslationHelper: React.FC = () => {
                   className="px-3 py-1 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100"
                 >
                   <option value="">Select a sheet</option>
-                  {jsonData.sheets?.map((sheet: any) => (
-                    <option key={sheet.sheetName} value={sheet.sheetName}>{sheet.sheetName}</option>
+                  {getAvailableSheets().map((sheetName: string) => (
+                    <option key={sheetName} value={sheetName}>{sheetName}</option>
                   ))}
                 </select>
               </div>
@@ -1555,27 +1533,17 @@ const TranslationHelper: React.FC = () => {
             {jsonData && selectedJsonSheet && (
               <div className="max-h-96 overflow-y-auto border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 p-4">
                 <div className="space-y-2">
-                  {jsonData.sheets
-                    .find((sheet: any) => sheet.sheetName === selectedJsonSheet)
-                    ?.entries
-                    .filter((entry: any) => 
-                      !jsonSearchTerm || 
-                      entry.utterer.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-                      entry.context.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-                      entry.sourceEnglish.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-                      entry.translatedDutch.toLowerCase().includes(jsonSearchTerm.toLowerCase())
-                    )
-                    .map((entry: any, index: number) => (
-                      <div key={index} className="p-3 border border-gray-200 dark:border-gray-600 rounded bg-gray-50 dark:bg-gray-800">
-                        <div className="grid grid-cols-1 gap-2 text-sm">
-                          <div><strong>Row:</strong> {entry.rowNumber}</div>
-                          <div><strong>Utterer:</strong> {entry.utterer}</div>
-                          <div><strong>Context:</strong> {entry.context}</div>
-                          <div><strong>Source English:</strong> {entry.sourceEnglish}</div>
-                          <div><strong>Translated Dutch:</strong> {entry.translatedDutch}</div>
-                        </div>
+                  {getFilteredEntries().map((entry: any, index: number) => (
+                    <div key={index} className="p-3 border border-gray-200 dark:border-gray-600 rounded bg-gray-50 dark:bg-gray-800">
+                      <div className="grid grid-cols-1 gap-2 text-sm">
+                        <div><strong>Row:</strong> {entry.rowNumber}</div>
+                        <div><strong>Utterer:</strong> {entry.utterer}</div>
+                        <div><strong>Context:</strong> {entry.context}</div>
+                        <div><strong>Source English:</strong> {entry.sourceEnglish}</div>
+                        <div><strong>Translated Dutch:</strong> {entry.translatedDutch}</div>
                       </div>
-                    ))}
+                    </div>
+                  ))}
                 </div>
               </div>
             )}
