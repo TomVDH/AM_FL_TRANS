@@ -1167,21 +1167,15 @@ const TranslationHelper: React.FC = () => {
                     <label htmlFor="globalSearch" className="text-sm font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
                       Global Search
                     </label>
-                  </div>
-                  
-                  {/* Global Search Notice */}
-                  {globalSearch && (
-                    <div className="mt-3 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-md shadow-sm transition-all duration-300 animate-fade-in" style={{ borderRadius: '3px' }}>
-                      <div className="flex items-start gap-2">
-                        <svg className="w-4 h-4 text-amber-600 dark:text-amber-400 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    {globalSearch && (
+                      <span className="inline-flex items-center gap-1 px-2 py-1 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded text-xs text-amber-800 dark:text-amber-200 font-medium transition-all duration-300 animate-fade-in" style={{ borderRadius: '2px' }}>
+                        <svg className="w-3 h-3 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                         </svg>
-                        <p className="text-sm text-amber-800 dark:text-amber-200 font-medium">
-                          Global Search is slow. Keep that in mind.
-                        </p>
-                      </div>
-                    </div>
-                  )}
+                        Slow
+                      </span>
+                    )}
+                  </div>
                 </div>
               </div>
 
