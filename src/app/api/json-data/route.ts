@@ -11,7 +11,7 @@ export async function GET(request: Request) {
       return NextResponse.json({ error: 'File parameter is required' }, { status: 400 });
     }
     
-    const jsonPath = path.join(process.cwd(), 'data', 'json', `${file}.json`);
+    const jsonPath = path.join(process.cwd(), 'data', 'json', file);
     
     // Check if file exists
     if (!fs.existsSync(jsonPath)) {

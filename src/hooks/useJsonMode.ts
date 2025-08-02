@@ -19,6 +19,7 @@ export const useJsonMode = () => {
   const [jsonSearchTerm, setJsonSearchTerm] = useState('');            // Search term for JSON data
   const [jsonData, setJsonData] = useState<any>(null);                // Loaded JSON data
   const [availableJsonFiles, setAvailableJsonFiles] = useState<string[]>([]); // Available JSON files
+  const [globalSearch, setGlobalSearch] = useState(false);             // Global search across all sheets
 
   /**
    * Load available JSON files on component mount
@@ -49,6 +50,8 @@ export const useJsonMode = () => {
         const data = await response.json();
         setJsonData(data);
         setSelectedJsonFile(fileName);
+      } else {
+        console.error('Error loading JSON data:', response.status, response.statusText);
       }
     } catch (error) {
       console.error('Error loading JSON data:', error);
@@ -75,18 +78,44 @@ export const useJsonMode = () => {
    * Get filtered JSON entries based on search term
    */
   const getFilteredEntries = () => {
-    if (!jsonData || !selectedJsonSheet) return [];
+    if (!jsonData) return [];
     
-    const sheet = jsonData.sheets.find((sheet: any) => sheet.sheetName === selectedJsonSheet);
-    if (!sheet) return [];
-    
-    return sheet.entries.filter((entry: any) => 
-      !jsonSearchTerm || 
-      entry.utterer.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-      entry.context.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-      entry.sourceEnglish.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-      entry.translatedDutch.toLowerCase().includes(jsonSearchTerm.toLowerCase())
-    );
+    if (globalSearch) {
+      // Search across all sheets
+      const allEntries: any[] = [];
+      jsonData.sheets.forEach((sheet: any) => {
+        sheet.entries.forEach((entry: any) => {
+          allEntries.push({
+            ...entry,
+            sheetName: sheet.sheetName
+          });
+        });
+      });
+      
+      return allEntries.filter((entry: any) => 
+        !jsonSearchTerm || 
+        entry.rowNumber.toString().includes(jsonSearchTerm) ||
+        entry.utterer.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
+        entry.context.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
+        entry.sourceEnglish.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
+        entry.translatedDutch.toLowerCase().includes(jsonSearchTerm.toLowerCase())
+      );
+    } else {
+      // Search in selected sheet only
+      if (!selectedJsonSheet) return [];
+      
+      const sheet = jsonData.sheets.find((sheet: any) => sheet.sheetName === selectedJsonSheet);
+      if (!sheet) return [];
+      
+      return sheet.entries.filter((entry: any) => 
+        !jsonSearchTerm || 
+        entry.rowNumber.toString().includes(jsonSearchTerm) ||
+        entry.utterer.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
+        entry.context.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
+        entry.sourceEnglish.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
+        entry.translatedDutch.toLowerCase().includes(jsonSearchTerm.toLowerCase())
+      );
+    }
   };
 
   /**
@@ -94,7 +123,7 @@ export const useJsonMode = () => {
    */
   const getAvailableSheets = () => {
     if (!jsonData) return [];
-    return jsonData.sheets?.map((sheet: any) => sheet.sheetName) || [];
+    return jsonData.sheets?.map((sheet: any) => sheet.sheetName).sort() || [];
   };
 
   return {
@@ -105,6 +134,7 @@ export const useJsonMode = () => {
     jsonSearchTerm,
     jsonData,
     availableJsonFiles,
+    globalSearch,
     
     // Setters
     setJsonMode,
@@ -113,6 +143,7 @@ export const useJsonMode = () => {
     setJsonSearchTerm,
     setJsonData,
     setAvailableJsonFiles,
+    setGlobalSearch,
     
     // Functions
     loadJsonData,
