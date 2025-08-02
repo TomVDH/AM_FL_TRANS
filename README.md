@@ -36,10 +36,11 @@ npm run excel-to-json
 
 ## 📚 Documentation
 
-- **[Comprehensive Documentation](docs/README.md)** - Complete project overview and guides
+- **[Project Guide](docs/README.md)** - Complete project overview and guides
 - **[Design System](docs/README-Design-System.md)** - UI components and styling guidelines
 - **[Refactor Plan](docs/REFACTOR_PLAN.md)** - Component modularization strategy
 - **[Setup Guide](docs/SETUP.md)** - Detailed setup and deployment instructions
+- **[Changelog](docs/CHANGELOG.md)** - Version history and changes
 - **[Script Documentation](scripts/README.md)** - Excel to JSON conversion details
 
 ## 🔧 Development
