@@ -1,6 +1,6 @@
 {
   "name": "am-translations-helper",
-  "version": "2.4.0",
+  "version": "1.0.0",
   "description": "A React TypeScript application for assisting with translation workflows, supporting Excel file uploads and manual text input.",
   "private": true,
   "scripts": {

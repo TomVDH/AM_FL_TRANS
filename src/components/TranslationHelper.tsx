@@ -824,10 +824,11 @@ const TranslationHelper: React.FC = () => {
                       lineHeight: '1.4',
                       overflow: 'hidden',
                       letterSpacing: '0.02em',
-                      borderRadius: '4px',
-                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+                      borderRadius: '6px',
+                      boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15), 0 2px 4px rgba(0, 0, 0, 0.1)',
                       background: darkMode ? '#1a1a1a' : '#ffffff',
-                      position: 'relative'
+                      position: 'relative',
+                      backdropFilter: 'blur(1px)'
                     }}
                   >
                   {/* Speaker bar with reduced height */}
@@ -836,7 +837,9 @@ const TranslationHelper: React.FC = () => {
                     style={{ 
                       fontSize: '1.8rem', 
                       fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
-                      background: '#000000'
+                      background: '#000000',
+                      borderTopLeftRadius: '4px',
+                      borderTopRightRadius: '4px'
                     }}
                   >
                     <div className="flex justify-between items-center">
@@ -909,7 +912,9 @@ const TranslationHelper: React.FC = () => {
                       fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
                       fontSize: '1.2rem',
                       lineHeight: '1.6',
-                      background: darkMode ? '#1a1a1a' : '#ffffff'
+                      background: darkMode ? '#1a1a1a' : '#ffffff',
+                      borderBottomLeftRadius: '4px',
+                      borderBottomRightRadius: '4px'
                     }}
                   >
                     <TextHighlighter
@@ -919,6 +924,7 @@ const TranslationHelper: React.FC = () => {
                       eyeMode={eyeMode}
                       currentTranslation={currentTranslation}
                       onCharacterClick={insertCharacterName}
+                      onSuggestionClick={insertTranslatedSuggestion}
                       className="dialogue-content"
                       style={{
                         textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
@@ -1010,6 +1016,7 @@ const TranslationHelper: React.FC = () => {
                         eyeMode={false}
                         currentTranslation=""
                         onCharacterClick={insertCharacterName}
+                        onSuggestionClick={insertTranslatedSuggestion}
                         className="dialogue-content opacity-70"
                         style={{
                           textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
@@ -1057,6 +1064,7 @@ const TranslationHelper: React.FC = () => {
                       eyeMode={eyeMode}
                       currentTranslation={currentTranslation}
                       onCharacterClick={insertCharacterName}
+                      onSuggestionClick={insertTranslatedSuggestion}
                     />
                   </div>
 

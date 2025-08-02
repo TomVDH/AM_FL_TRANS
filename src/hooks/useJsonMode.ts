@@ -95,10 +95,10 @@ export const useJsonMode = () => {
       return allEntries.filter((entry: any) => 
         !jsonSearchTerm || 
         entry.rowNumber.toString().includes(jsonSearchTerm) ||
-        entry.utterer.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-        entry.context.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-        entry.sourceEnglish.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-        entry.translatedDutch.toLowerCase().includes(jsonSearchTerm.toLowerCase())
+        (entry.utterer && entry.utterer.toLowerCase().includes(jsonSearchTerm.toLowerCase())) ||
+        (entry.context && entry.context.toLowerCase().includes(jsonSearchTerm.toLowerCase())) ||
+        (entry.sourceEnglish && entry.sourceEnglish.toLowerCase().includes(jsonSearchTerm.toLowerCase())) ||
+        (entry.translatedDutch && entry.translatedDutch.toLowerCase().includes(jsonSearchTerm.toLowerCase()))
       );
     } else {
       // Search in selected sheet only
@@ -110,10 +110,10 @@ export const useJsonMode = () => {
       return sheet.entries.filter((entry: any) => 
         !jsonSearchTerm || 
         entry.rowNumber.toString().includes(jsonSearchTerm) ||
-        entry.utterer.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-        entry.context.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-        entry.sourceEnglish.toLowerCase().includes(jsonSearchTerm.toLowerCase()) ||
-        entry.translatedDutch.toLowerCase().includes(jsonSearchTerm.toLowerCase())
+        (entry.utterer && entry.utterer.toLowerCase().includes(jsonSearchTerm.toLowerCase())) ||
+        (entry.context && entry.context.toLowerCase().includes(jsonSearchTerm.toLowerCase())) ||
+        (entry.sourceEnglish && entry.sourceEnglish.toLowerCase().includes(jsonSearchTerm.toLowerCase())) ||
+        (entry.translatedDutch && entry.translatedDutch.toLowerCase().includes(jsonSearchTerm.toLowerCase()))
       );
     }
   };

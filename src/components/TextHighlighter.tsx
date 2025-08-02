@@ -19,6 +19,7 @@ interface TextHighlighterProps {
   eyeMode: boolean;
   currentTranslation: string;
   onCharacterClick: (characterName: string) => void;
+  onSuggestionClick?: (suggestion: string) => void;
   className?: string;
   style?: React.CSSProperties;
 }
@@ -30,6 +31,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   eyeMode,
   currentTranslation,
   onCharacterClick,
+  onSuggestionClick,
   className = '',
   style = {}
 }) => {
@@ -104,7 +106,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
         
         // Replace with highlighted span that has hover functionality
         highlightedText = highlightedText.replace(regex, 
-          `<span class="json-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #3B82F6; font-weight: 500;" title="${hoverText}">$1</span>`
+          `<span class="json-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #2563EB; font-weight: 600; text-shadow: 0 0 4px rgba(37, 99, 235, 0.3);" title="${hoverText}">$1</span>`
         );
       });
     } else {
@@ -117,7 +119,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       // Only apply clickable style if highlighting is enabled
       if (highlightMode) {
         highlightedText = highlightedText.replace(regex, 
-          '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #3B82F6; font-weight: 500;">$1</span>'
+          '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #2563EB; font-weight: 600; text-shadow: 0 0 4px rgba(37, 99, 235, 0.3);">$1</span>'
         );
       } else {
         // When highlighting is off, still make clickable but without blue color
@@ -152,14 +154,33 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   // Determine which text to display and highlight
   const displayText = eyeMode && currentTranslation ? currentTranslation : text;
   const highlightedText = highlightMatchingText(displayText);
+  
+  // Get suggestions for the current text
+  const suggestions = highlightMode && jsonData ? findJsonMatches(displayText) : [];
 
   return (
-    <div
-      className={className}
-      style={style}
-      dangerouslySetInnerHTML={{ __html: highlightedText }}
-      onClick={handleTextClick}
-    />
+    <div className={className} style={style}>
+      <div
+        dangerouslySetInnerHTML={{ __html: highlightedText }}
+        onClick={handleTextClick}
+      />
+      
+      {/* Suggestion buttons - only show for main dialogue box, not source text */}
+      {suggestions.length > 0 && onSuggestionClick && !className.includes('opacity-70') && (
+        <div className="mt-2 flex flex-wrap gap-2">
+          {suggestions.map((suggestion, index) => (
+            <button
+              key={index}
+              onClick={() => onSuggestionClick(suggestion.translatedDutch)}
+              className="px-3 py-1 text-sm bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 border border-blue-300 dark:border-blue-700 rounded-md hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors duration-200"
+              title={`Insert: ${suggestion.translatedDutch}`}
+            >
+              {suggestion.translatedDutch || suggestion.sourceEnglish}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
   );
 };
 
