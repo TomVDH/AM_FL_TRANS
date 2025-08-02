@@ -639,6 +639,25 @@ const TranslationHelper: React.FC = () => {
     setTimeout(() => setShowCopied(false), 2000);
   };
 
+  // Copy source text to clipboard
+  const copySourceText = () => {
+    const sourceText = sourceTexts[currentIndex];
+    if (sourceText) {
+      navigator.clipboard.writeText(sourceText);
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    }
+  };
+
+  // Copy JSON field to clipboard
+  const copyJsonField = (text: string, fieldName: string) => {
+    if (text) {
+      navigator.clipboard.writeText(text);
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    }
+  };
+
   // FUTURE SPLIT: EXPORT FUNCTIONALITY MODULE
   // This function should be extracted to useExportFunctionality hook
   // Components to create: ExportControls, CellLocationCalculator
@@ -825,6 +844,16 @@ const TranslationHelper: React.FC = () => {
                       background: darkMode ? '#1a1a1a' : '#ffffff'
                     }}
                   >
+                    {/* Copy button for source text */}
+                    <button
+                      onClick={copySourceText}
+                      className="absolute top-2 right-2 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                      title="Copy source text"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      </svg>
+                    </button>
                     <div 
                       className="dialogue-content"
                       dangerouslySetInnerHTML={{ 
@@ -857,23 +886,36 @@ const TranslationHelper: React.FC = () => {
                 </div>
               ) : (
                 <div 
-                  className="text-2xl font-bold leading-relaxed px-6 py-4 text-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 rounded"
+                  className="text-2xl font-bold leading-relaxed px-6 py-4 text-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 rounded relative"
                   style={{ borderRadius: '3px' }}
-                  dangerouslySetInnerHTML={{ 
-                    __html: eyeMode && currentTranslation 
-                      ? highlightMatchingText(currentTranslation)
-                      : highlightMatchingText(sourceTexts[currentIndex]) 
-                  }}
-                  onClick={(e) => {
-                    const target = e.target as HTMLElement;
-                    if (target.classList.contains('clickable-character')) {
-                      const characterName = target.getAttribute('data-character');
-                      if (characterName) {
-                        insertCharacterName(characterName);
+                >
+                  {/* Copy button for source text */}
+                  <button
+                    onClick={copySourceText}
+                    className="absolute top-2 right-2 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                    title="Copy source text"
+                  >
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    </svg>
+                  </button>
+                  <div
+                    dangerouslySetInnerHTML={{ 
+                      __html: eyeMode && currentTranslation 
+                        ? highlightMatchingText(currentTranslation)
+                        : highlightMatchingText(sourceTexts[currentIndex]) 
+                    }}
+                    onClick={(e) => {
+                      const target = e.target as HTMLElement;
+                      if (target.classList.contains('clickable-character')) {
+                        const characterName = target.getAttribute('data-character');
+                        if (characterName) {
+                          insertCharacterName(characterName);
+                        }
                       }
-                    }
-                  }}
-                />
+                    }}
+                  />
+                </div>
               )}
             </div>
           </div>
@@ -1152,19 +1194,63 @@ const TranslationHelper: React.FC = () => {
                           <div className="grid grid-cols-1 gap-2 text-sm">
                             <div className="flex items-start gap-2">
                               <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Utterer:</span>
-                              <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.utterer}</span>
+                              <div className="flex items-center gap-2 flex-1">
+                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.utterer}</span>
+                                <button
+                                  onClick={() => copyJsonField(entry.utterer, 'utterer')}
+                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                  title="Copy utterer"
+                                >
+                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                </button>
+                              </div>
                             </div>
                             <div className="flex items-start gap-2">
                               <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Context:</span>
-                              <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.context}</span>
+                              <div className="flex items-center gap-2 flex-1">
+                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.context}</span>
+                                <button
+                                  onClick={() => copyJsonField(entry.context, 'context')}
+                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                  title="Copy context"
+                                >
+                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                </button>
+                              </div>
                             </div>
                             <div className="flex items-start gap-2">
                               <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Source:</span>
-                              <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.sourceEnglish}</span>
+                              <div className="flex items-center gap-2 flex-1">
+                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.sourceEnglish}</span>
+                                <button
+                                  onClick={() => copyJsonField(entry.sourceEnglish, 'source')}
+                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                  title="Copy source text"
+                                >
+                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                </button>
+                              </div>
                             </div>
                             <div className="flex items-start gap-2">
                               <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
-                              <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.translatedDutch}</span>
+                              <div className="flex items-center gap-2 flex-1">
+                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.translatedDutch}</span>
+                                <button
+                                  onClick={() => copyJsonField(entry.translatedDutch, 'dutch')}
+                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                  title="Copy Dutch translation"
+                                >
+                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                </button>
+                              </div>
                             </div>
                           </div>
                         </div>
