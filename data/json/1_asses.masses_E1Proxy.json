@@ -1,6 +1,6 @@
 {
   "fileName": "1_asses.masses_E1Proxy",
-  "processedAt": "2025-08-02T03:35:25.754Z",
+  "processedAt": "2025-08-02T03:53:53.236Z",
   "sheets": [
     {
       "sheetName": "E1_EpisodeTitle_localization",
@@ -9,25 +9,29 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Title screen UI.",
-          "sourceEnglish": "EPISODE ONE"
+          "sourceEnglish": "EPISODE ONE",
+          "translatedDutch": "AFLEVERING ÉÉN"
         },
         {
           "rowNumber": 4,
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Title screen UI.",
-          "sourceEnglish": "THE PROTEST"
+          "sourceEnglish": "THE PROTEST",
+          "translatedDutch": "HET PROTEST"
         }
       ]
     },
@@ -38,187 +42,218 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.4.Old Ass",
           "context": "The scene fades up from black to see Old Ass giving a lecture to Trusty Ass.",
-          "sourceEnglish": "...  ...  Trusty Ass? Comrade, are you listening?"
+          "sourceEnglish": "...  ...  Trusty Ass? Comrade, are you listening?",
+          "translatedDutch": "Hè (Trusty Ass)? Kameraad, hoor je me?"
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.5.Old Ass",
           "context": "",
-          "sourceEnglish": "Now where was I...  Right...  I was lamenting the struggles of our existence."
+          "sourceEnglish": "Now where was I...  Right...  I was lamenting the struggles of our existence.",
+          "translatedDutch": "Waar was ik... Juist, ik was bezig me de realiteit van ons bestaan te beklagen."
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.7.Old Ass",
           "context": "",
-          "sourceEnglish": "Despite thousands of years of service to Humans, our Herd has lost our work."
+          "sourceEnglish": "Despite thousands of years of service to Humans, our Herd has lost our work.",
+          "translatedDutch": "Ondanks duizenden jaren dienst aan de Mens, heeft onze Kudde ons werk verloren."
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.8.Old Ass",
           "context": "",
-          "sourceEnglish": "We have been reduced to spectators, while wretched Machines do OUR jobs in OUR beloved fields."
+          "sourceEnglish": "We have been reduced to spectators, while wretched Machines do OUR jobs in OUR beloved fields.",
+          "translatedDutch": "We staan te gapen terwijl vervloekte Machines ONS werk in ONZE velden, van ons afpakken."
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.10.Old Ass",
           "context": "",
-          "sourceEnglish": "No longer will we suffer these INJUSTICES!"
+          "sourceEnglish": "No longer will we suffer these INJUSTICES!",
+          "translatedDutch": "Wij pikken die onrechtvaardigheid voor geen seconde langer."
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.16.Old Ass",
           "context": "",
-          "sourceEnglish": "It is high time the Humans remember how useful we've always been."
+          "sourceEnglish": "It is high time the Humans remember how useful we've always been.",
+          "translatedDutch": "Het is tijd om de Mensen er aan te herinneren hoe belangrijk en nuttig wij Ezels voor hun zijn geweest."
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.11.Old Ass",
           "context": "",
-          "sourceEnglish": "To return to us the recognition and respect we deserve!"
+          "sourceEnglish": "To return to us the recognition and respect we deserve!",
+          "translatedDutch": "Het is tijd om het respect en aanzien, dat we verdienen, terug te vorderen."
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.22.Old Ass",
           "context": "",
-          "sourceEnglish": "Tomorrow we will make history with our very first PROTEST."
+          "sourceEnglish": "Tomorrow we will make history with our very first PROTEST.",
+          "translatedDutch": "Morgen schrijven we geschiedenis met onze allereerste PROTEST."
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.13.Old Ass",
           "context": "",
-          "sourceEnglish": "Now young Comrade, good group morale is instrumental to a Protest."
+          "sourceEnglish": "Now young Comrade, good group morale is instrumental to a Protest.",
+          "translatedDutch": "Jonge Kameraad, een goede sfeer binnen onze ploeg is cruciaal voor ons Protest."
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.17.Old Ass",
           "context": "",
-          "sourceEnglish": "Use your skills and go check in with the Herd."
+          "sourceEnglish": "Use your skills and go check in with the Herd.",
+          "translatedDutch": "Maak gebruik van uw vaardigheden en ga even polsen met de Kudde."
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.18.Old Ass",
           "context": "End of dialogue. \nTrusty is assigned the task of raising the Herd's morale.\nSturdy can run around and explore again.",
-          "sourceEnglish": "Come find me when you're done."
+          "sourceEnglish": "Come find me when you're done.",
+          "translatedDutch": "Kom terug wanneer ge klaar bent."
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog: 2_OldAss_MoraleRepeater.4.Old Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "Come back after you've talked to everyone!"
+          "sourceEnglish": "Come back after you've talked to everyone!",
+          "translatedDutch": "Kom terug wanneer ge met iedereen eens een klapke gedaan hebt."
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.1.Sturdy Ass",
           "context": "Dialogue: Boosting Sturdy's Morale",
-          "sourceEnglish": "Hi Comrade Trusty."
+          "sourceEnglish": "Hi Comrade Trusty.",
+          "translatedDutch": "Dag (Trusty Ass)."
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.2.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I pray the Gods will make sure my Foal is born with the Soul of a strong worker."
+          "sourceEnglish": "I pray the Gods will make sure my Foal is born with the Soul of a strong worker.",
+          "translatedDutch": "Ik bid tot de Goden voor een gezond Veulen met de Ziel van een staalharde werker."
         },
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.4.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I can't bear to think about them growing up in a world cut off from our Herd's traditions."
+          "sourceEnglish": "I can't bear to think about them growing up in a world cut off from our Herd's traditions.",
+          "translatedDutch": "Het kan me niet over 't hart dat onze veulens in een wereld zonder waarden en normen zullen opgroeien."
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.25.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "But you're right."
+          "sourceEnglish": "But you're right.",
+          "translatedDutch": "Maar je hebt gelijk."
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.3.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "If we follow Old Ass, we can restore balance to the Farm."
+          "sourceEnglish": "If we follow Old Ass, we can restore balance to the Farm.",
+          "translatedDutch": "Als we (Old Ass) volgen kunnen we ervoor zorgen dat vrede naar onze Hoeve wederkeert."
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.5.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Asses and Humans will work together again, without a Machine in sight!"
+          "sourceEnglish": "Asses and Humans will work together again, without a Machine in sight!",
+          "translatedDutch": "Ezels en Mensen kunnen weer samenwerken, zonder dat daar een Machine bij aan de pas komt."
         },
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.10.Sturdy Ass",
           "context": "End of dialogue. \nSturdy can run around and explore again.",
-          "sourceEnglish": "We can do it!"
+          "sourceEnglish": "We can do it!",
+          "translatedDutch": "We kunnen dat!"
         },
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.21.Sturdy Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "We can do it!"
+          "sourceEnglish": "We can do it!",
+          "translatedDutch": "We kunnen dat!"
         },
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.4.Old Ass",
           "context": "Dialogue with Old Ass.\nAfter having talked to all the Asses in the Herd (completing the Morale task).",
-          "sourceEnglish": "Exemplary work, Comrade Trusty. Keeping up a group's morale is no easy task."
+          "sourceEnglish": "Exemplary work, Comrade Trusty. Keeping up a group's morale is no easy task.",
+          "translatedDutch": "Puike prestatie, Kameraad (Trusty Ass). De sfeer in orde houden is geen sinecure."
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.22.Old Ass",
           "context": "",
-          "sourceEnglish": "Tomorrow, our waiting will come to an end and we will restore our Herd to its rightful purpose."
+          "sourceEnglish": "Tomorrow, our waiting will come to an end and we will restore our Herd to its rightful purpose.",
+          "translatedDutch": "Morgen is het wachten voorbij en zullen we onze Kudde weer op hun rechtmatige pad brengen."
         },
         {
           "rowNumber": 25,
           "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.7.Old Ass",
           "context": "",
-          "sourceEnglish": "Now hit the hay, Comrade."
+          "sourceEnglish": "Now hit the hay, Comrade.",
+          "translatedDutch": "Nu is 't bedtijd, Kameraad."
         },
         {
           "rowNumber": 26,
           "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.23.Old Ass",
           "context": "End of dialogue. \nSturdy can run around and explore again.",
-          "sourceEnglish": "A well earned rest awaits you in the other room."
+          "sourceEnglish": "A well earned rest awaits you in the other room.",
+          "translatedDutch": "Geniet van je welverdiende rust."
         },
         {
           "rowNumber": 27,
           "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.21.Old Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "I said hit the hay in the other room! One cannot protest short on sleep."
+          "sourceEnglish": "I said hit the hay in the other room! One cannot protest short on sleep.",
+          "translatedDutch": "Ik zei dat 't bedtijd was! Betogen is moeilijk wanneer je een slaapkop hebt."
         },
         {
           "rowNumber": 28,
           "utterer": "SAY.Dialog: STURDY_Night.1.Sturdy Ass",
           "context": "Dialogue with Sturdy.\nAfter completing the Morale task.",
-          "sourceEnglish": "Goodnight Trusty! You really care about the Herd and it shows."
+          "sourceEnglish": "Goodnight Trusty! You really care about the Herd and it shows.",
+          "translatedDutch": "Goeie nacht, (Trusty Ass). Je zit met onze Kudde in en dat zien we."
         },
         {
           "rowNumber": 29,
           "utterer": "SAY.Dialog: STURDY_Night.19.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "*Oof!* Looks like my Foal wishes they could join the Protest tomorrow too."
+          "sourceEnglish": "*Oof!* Looks like my Foal wishes they could join the Protest tomorrow too.",
+          "translatedDutch": "*Oef* Mijn Veulentje zou graag willen meedoen morgen."
         },
         {
           "rowNumber": 30,
           "utterer": "SAY.Dialog: STURDY_Night.20.Sturdy Ass",
           "context": "End of dialogue. \nSturdy can run around and explore again.",
-          "sourceEnglish": "Even my labour pains are in solidarity with the Herd!"
+          "sourceEnglish": "Even my labour pains are in solidarity with the Herd!",
+          "translatedDutch": "Zelfs mijn weeën zijn in solidariteit met onze Kudde."
         },
         {
           "rowNumber": 31,
           "utterer": "SAY.Dialog: STURDY_Night.9.Sturdy Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "Goodnight!"
+          "sourceEnglish": "Goodnight!",
+          "translatedDutch": "Slaapwel."
         }
       ]
     },
@@ -229,751 +264,876 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Sign_TheMines_Dirty.1.Dirty Sign",
           "context": "Interactable Object. Sign.",
-          "sourceEnglish": "Butte Industry Coal Mines"
+          "sourceEnglish": "Butte Industry Coal Mines",
+          "translatedDutch": "Vanscheetvelde Industrie en Kolen"
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign",
           "context": "Interactable Object. Sign.",
-          "sourceEnglish": "364 DAYS SINCE LAST MINING ACCIDENT"
+          "sourceEnglish": "364 DAYS SINCE LAST MINING ACCIDENT",
+          "translatedDutch": "364 DAGEN SINDS LAATSTE INCIDENT"
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
           "context": "Interactable Object. Sign.",
-          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+          "translatedDutch": "Welkom op de Boerderij van Muilegem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden."
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign",
           "context": "Interactable Object. Sign.",
-          "sourceEnglish": "To the south, our state of the art Mill and Granary."
+          "sourceEnglish": "To the south, our state of the art Mill and Granary.",
+          "translatedDutch": "Naar 't zuiden: onze hoogmoderne Molen en Graanschuur."
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Sign_Highway_Official.1.Official Sign",
           "context": "Interactable Object. Sign.",
-          "sourceEnglish": "NEW Government Sponsored Highway: Connecting Urban and Rural Communities"
+          "sourceEnglish": "NEW Government Sponsored Highway: Connecting Urban and Rural Communities",
+          "translatedDutch": "NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding."
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign",
           "context": "Interactable Object. Sign.",
-          "sourceEnglish": "The Long Way to the Forest Shrine"
+          "sourceEnglish": "The Long Way to the Forest Shrine",
+          "translatedDutch": "De Lange Weg Naar 't Schrijn in 't Bos."
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign",
           "context": "Interactable Object. Sign.",
-          "sourceEnglish": "CLOSED FOR REPAIRS"
+          "sourceEnglish": "CLOSED FOR REPAIRS",
+          "translatedDutch": "GESLOTEN WEGENS ONDERHOUD"
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Sign_Mill_Fancy.1.Fancy Sign",
           "context": "Interactable Object.",
-          "sourceEnglish": "The State of the Art Mill and Granary"
+          "sourceEnglish": "The State of the Art Mill and Granary",
+          "translatedDutch": "De hoogmoderne Molen en Graanschuur."
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Sign_Outhouse_Shitty.1.Shitty Sign",
           "context": "Interactable Object. Sign. Toilet",
-          "sourceEnglish": "The Outhouse"
+          "sourceEnglish": "The Outhouse",
+          "translatedDutch": "De Hudo."
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Sign_TheStable_Old.1.Old Sign",
           "context": "Interactable Object. Sign.",
-          "sourceEnglish": "The Heritage Stable"
+          "sourceEnglish": "The Heritage Stable",
+          "translatedDutch": "De Erfgoedshoeve"
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Sign_TheWell_Historic.1.Historic Sign",
           "context": "Interactable Object. Sign.",
-          "sourceEnglish": "Ya'fur's Well"
+          "sourceEnglish": "Ya'fur's Well",
+          "translatedDutch": "De Bron van Ya'Fur"
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:Scarecrow.1.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "Ahh!"
+          "sourceEnglish": "Ahh!",
+          "translatedDutch": "Ahh!"
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:Scarecrow.2.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "It's just a scarecrow."
+          "sourceEnglish": "It's just a scarecrow.",
+          "translatedDutch": "Het is maar een vogelverschrikker."
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog: Farmer'sHouse.1.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "It's the Farmer's house..."
+          "sourceEnglish": "It's the Farmer's house...",
+          "translatedDutch": "Dat is het huis van de Boer."
         },
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog: Farmer'sHouse.7.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "The Truck-Machine is gone. The Humans must be in the Village."
+          "sourceEnglish": "The Truck-Machine is gone. The Humans must be in the Village.",
+          "translatedDutch": "De Camion-Machine is weg. De mensen moeten ergens in het dorp zijn."
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:Tractor.1.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "It's the Tractor-Machine..."
+          "sourceEnglish": "It's the Tractor-Machine...",
+          "translatedDutch": "Dat is de Tractor-Machine."
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:PreQuest_Convo.1.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "A rusty bucket..."
+          "sourceEnglish": "A rusty bucket...",
+          "translatedDutch": "Een roestige emmer.."
         },
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.1.Thirsty Ass",
           "context": "Thirsty (male) Bucket Quest",
-          "sourceEnglish": "This here empty trough is a damn sorry sight, Comrade."
+          "sourceEnglish": "This here empty trough is a damn sorry sight, Comrade.",
+          "translatedDutch": "Die'n lege drinkbak hier, kameraad. Wa' voor iets triestig is me da'!"
         },
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.3.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "It's been mighty dry these days..."
+          "sourceEnglish": "It's been mighty dry these days...",
+          "translatedDutch": "'t Is kurk—maar dan ook kurkdroog héé,  de laatst'en tijd."
         },
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.4.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Hell, everything from work to water's just gone and dried up!"
+          "sourceEnglish": "Hell, everything from work to water's just gone and dried up!",
+          "translatedDutch": "Van 't werk tot 't water — alles is godverdomme opgedroogd!"
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.5.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Can you fetch me some water with that ol' bucket, from that ol' river up there?"
+          "sourceEnglish": "Can you fetch me some water with that ol' bucket, from that ol' river up there?",
+          "translatedDutch": "Zou’j mij wat water kunnen scheppen mè' dienen ouden emmer, van da' stukske rivier da' ginder ligt?"
         },
         {
           "rowNumber": 25,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.12.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "This ol' bucket ain't gonna fill itself!"
+          "sourceEnglish": "This ol' bucket ain't gonna fill itself!",
+          "translatedDutch": "Dien'n emmer gaat zen eigen nie' volscheppen, héé."
         },
         {
           "rowNumber": 26,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.16.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Yeehaw! Use that bucket to get some water from that there river."
+          "sourceEnglish": "Yeehaw! Use that bucket to get some water from that there river.",
+          "translatedDutch": "Hupse! Pakt dienen emmer en gaat scheppen in da' rivierke daar!"
         },
         {
           "rowNumber": 27,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.20.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Git that tasty water in the trough, Comrade!"
+          "sourceEnglish": "Git that tasty water in the trough, Comrade!",
+          "translatedDutch": "Giet da' lekker water maar in den bak, Kameraad!"
         },
         {
           "rowNumber": 28,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.24.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Yeehaw! I don't know what we'd do without you, Trusty."
+          "sourceEnglish": "Yeehaw! I don't know what we'd do without you, Trusty.",
+          "translatedDutch": "Hupse! Wa' zouden we zonder'ulle doen hè, (Trusty Ass)."
         },
         {
           "rowNumber": 29,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.25.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "To be honest, I'd have gon' done it myself, but I wanna be right here when Nice Ass takes a break from her plowin'."
+          "sourceEnglish": "To be honest, I'd have gon' done it myself, but I wanna be right here when Nice Ass takes a break from her plowin'.",
+          "translatedDutch": "Eerlijk gezegd had'k 'tl zelf wel willen doen, maar 'k zou graag hier zijn wanneer (Nice Ass) haar pauzeke pakt."
         },
         {
           "rowNumber": 30,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.26.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Ever since she got laid off, and replaced by that dang Tractor-Machine, it's like she's forgotten all about me."
+          "sourceEnglish": "Ever since she got laid off, and replaced by that dang Tractor-Machine, it's like she's forgotten all about me.",
+          "translatedDutch": "Sinds da' z'ontslagen is en door die Traktor-Machine vervangen is, herkent ze me precies niet meer."
         },
         {
           "rowNumber": 31,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.27.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "We never get to have casual sex anymore."
+          "sourceEnglish": "We never get to have casual sex anymore.",
+          "translatedDutch": "We poepen verdomme ni' meer!"
         },
         {
           "rowNumber": 32,
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.32.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "What's the point in being castrated if you can't have casual sex!"
+          "sourceEnglish": "What's the point in being castrated if you can't have casual sex!",
+          "translatedDutch": "Waarom laat ik mezelf castreren om d'rna niet meer te kunnen poepen!"
         },
         {
           "rowNumber": 33,
           "utterer": "SAY.Dialog: wood-PreQuest-Convo.1.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "It's a pile of wood..."
+          "sourceEnglish": "It's a pile of wood...",
+          "translatedDutch": "Een hoop hout."
         },
         {
           "rowNumber": 34,
           "utterer": "SAY.Dialog:SlowWoodQuest.1.Slow Ass",
           "context": "Slow (male) Wood Quest",
-          "sourceEnglish": "Trusty! I'm so p-pleased to see you!"
+          "sourceEnglish": "Trusty! I'm so p-pleased to see you!",
+          "translatedDutch": "(Trusty Ass)! Ik b-ben zo blij je te z-zien!"
         },
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:SlowWoodQuest.3.Slow Ass",
           "context": "Note: In English, Slow Ass stutters happen on the same letters throughout the game: b, p\n\nFor some languages, a wider range or more case-by-case approach is used",
-          "sourceEnglish": "Thanks for convincing Old Ass to p-p-put me on b-bridge duty."
+          "sourceEnglish": "Thanks for convincing Old Ass to p-p-put me on b-bridge duty.",
+          "translatedDutch": "B-bedankt om (Old Ass) te overtuigen van het b-bruggetje aan mij over te laten."
         },
         {
           "rowNumber": 36,
           "utterer": "SAY.Dialog:SlowWoodQuest.10.Slow Ass",
           "context": "",
-          "sourceEnglish": "I think you're the only one who b-believes in me."
+          "sourceEnglish": "I think you're the only one who b-believes in me.",
+          "translatedDutch": "Ik d-denk dat jij de e-enige bent die i-in me gelooft."
         },
         {
           "rowNumber": 37,
           "utterer": "SAY.Dialog:SlowWoodQuest.9.Slow Ass",
           "context": "",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": "..."
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:SlowWoodQuest.8.Slow Ass",
           "context": "",
-          "sourceEnglish": "I have a b-bit of a p-problem though."
+          "sourceEnglish": "I have a b-bit of a p-problem though.",
+          "translatedDutch": "Ik zit wel m-met een p-probleempje..."
         },
         {
           "rowNumber": 39,
           "utterer": "SAY.Dialog:SlowWoodQuest.4.Slow Ass",
           "context": "",
-          "sourceEnglish": "I've run out of wood and need more to finish fixing the b-bridge b-before the P-Protest."
+          "sourceEnglish": "I've run out of wood and need more to finish fixing the b-bridge b-before the P-Protest.",
+          "translatedDutch": "Ik z-zit zonder hout en ik heb meer nodig om het b-bruggetje te repareren voor het p-p-protest."
         },
         {
           "rowNumber": 40,
           "utterer": "SAY.Dialog:SlowWoodQuest.11.Slow Ass",
           "context": "",
-          "sourceEnglish": "If Smart Ass finds out I'm b-behind schedule,  she'll tear me a new one."
+          "sourceEnglish": "If Smart Ass finds out I'm b-behind schedule,  she'll tear me a new one.",
+          "translatedDutch": "Als (Smart Ass) te horen krijgt dat ik te laat k-klaar zal zijn, geeft z-ze me vast onder mijn hoeven."
         },
         {
           "rowNumber": 41,
           "utterer": "SAY.Dialog:SlowWoodQuest.5.Slow Ass",
           "context": "",
-          "sourceEnglish": "Can you b-bring me some more wood p-please?"
+          "sourceEnglish": "Can you b-bring me some more wood p-please?",
+          "translatedDutch": "K-kan jij alsjeblieft wat meer hout gaan h-halen?"
         },
         {
           "rowNumber": 42,
           "utterer": "SAY.Dialog:SlowWoodQuest.6.Slow Ass",
           "context": "",
-          "sourceEnglish": "Our p-panniers from the old days should still b-be in the Mill."
+          "sourceEnglish": "Our p-panniers from the old days should still b-be in the Mill.",
+          "translatedDutch": "O-onze oude z-z-zadel z-z-zakken moeten in de Molen liggen."
         },
         {
           "rowNumber": 43,
           "utterer": "SAY.Dialog:SlowWoodQuest.19.Slow Ass",
           "context": "",
-          "sourceEnglish": "I'm p-pretty sure the old p-panniers are still in the Mill."
+          "sourceEnglish": "I'm p-pretty sure the old p-panniers are still in the Mill.",
+          "translatedDutch": "Ik b-ben er z-z-zeker van dat de z-z-zakken in de Molen liggen."
         },
         {
           "rowNumber": 44,
           "utterer": "SAY.Dialog:SlowWoodQuest.23.Slow Ass",
           "context": "",
-          "sourceEnglish": "You found the p-panniers! The wood I need is at the end of the road to the west."
+          "sourceEnglish": "You found the p-panniers! The wood I need is at the end of the road to the west.",
+          "translatedDutch": "Je h-hebt de z-z-zakken gevonden! H-het h-h-hout ligt wat v-verderop de weg, naar het w-w-westen."
         },
         {
           "rowNumber": 45,
           "utterer": "SAY.Dialog:SlowWoodQuest.28.Slow Ass",
           "context": "",
-          "sourceEnglish": "Thanks Trusty. I don't know what I'd do without you."
+          "sourceEnglish": "Thanks Trusty. I don't know what I'd do without you.",
+          "translatedDutch": "Bedankt TrAss, ik w-w-weet niet wat z-z-zonder je te doen."
         },
         {
           "rowNumber": 46,
           "utterer": "SAY.Dialog:SlowWoodQuest.29.Slow Ass",
           "context": "",
-          "sourceEnglish": "P-Please don't tell Smart Ass I'm b-behind schedule!"
+          "sourceEnglish": "P-Please don't tell Smart Ass I'm b-behind schedule!",
+          "translatedDutch": "Z-zeg a-a-alsjeblieft niet tegen SmrAss d-dat ik niet z-z-zo op schema zit."
         },
         {
           "rowNumber": 47,
           "utterer": "SAY.Dialog:BIG_BoostMorale.1.Big Ass",
           "context": "Boosting Big (male) Morale",
-          "sourceEnglish": "Good afternoon, Comrade."
+          "sourceEnglish": "Good afternoon, Comrade.",
+          "translatedDutch": "Goeiemiddag, Kameraad."
         },
         {
           "rowNumber": 48,
           "utterer": "SAY.Dialog:BIG_BoostMorale.2.Big Ass",
           "context": "",
-          "sourceEnglish": "I'm fuelling up so that I can make tomorrow's Protest a huge success."
+          "sourceEnglish": "I'm fuelling up so that I can make tomorrow's Protest a huge success.",
+          "translatedDutch": "Ik ben aan het bijtanken zodat ik het Protest van morgen een waar succes kan maken."
         },
         {
           "rowNumber": 49,
           "utterer": "SAY.Dialog:BIG_BoostMorale.3.Big Ass",
           "context": "PB: It's not exactly clear why the donkeys are not eating, but we can assume it is that they are perhaps fasting in honour of Lazy's death.",
-          "sourceEnglish": "Though, I feel guilty eating all this hay when the Miners are in Mourning."
+          "sourceEnglish": "Though, I feel guilty eating all this hay when the Miners are in Mourning.",
+          "translatedDutch": "Maar zoveel hooi eten doet me wat schuldig voelen, zeker nu de Mijn-Ezels middenin hun rouwprocess zitten."
         },
         {
           "rowNumber": 50,
           "utterer": "SAY.Dialog:BIG_BoostMorale.4.Big Ass",
           "context": "",
-          "sourceEnglish": "It must be pretty bad down in the Mines if it can stop an Ass from eating."
+          "sourceEnglish": "It must be pretty bad down in the Mines if it can stop an Ass from eating.",
+          "translatedDutch": "Het moet er slecht uitzien in de mijnen als een ezel daarvan geen honger meer krijgt."
         },
         {
           "rowNumber": 51,
           "utterer": "SAY.Dialog:BIG_BoostMorale.5.Big Ass",
           "context": "",
-          "sourceEnglish": "Glad I don't fit down there."
+          "sourceEnglish": "Glad I don't fit down there.",
+          "translatedDutch": "Misschien best zo, ik geraak toch niet door de mijnschacht"
         },
         {
           "rowNumber": 52,
           "utterer": "SAY.Dialog:BIG_BoostMorale.9.Big Ass",
           "context": "",
-          "sourceEnglish": "*munch munch munch*"
+          "sourceEnglish": "*munch munch munch*",
+          "translatedDutch": "*njam njam njam*"
         },
         {
           "rowNumber": 53,
           "utterer": "SAY.Dialog:Nice1_TriggerPlow.3.Nice Ass",
           "context": "Boosting Nice (female) Morale",
-          "sourceEnglish": "Hiya Comrade! Haha I'm just too excited about tomorrow!"
+          "sourceEnglish": "Hiya Comrade! Haha I'm just too excited about tomorrow!",
+          "translatedDutch": "Hela, Kameraad! Hehe, ik kan niet wachten tot morgen."
         },
         {
           "rowNumber": 54,
           "utterer": "SAY.Dialog:Nice1_TriggerPlow.1.Nice Ass",
           "context": "",
-          "sourceEnglish": "And there's nothing like a good plow to settle the nerves. Come on and do a line!"
+          "sourceEnglish": "And there's nothing like a good plow to settle the nerves. Come on and do a line!",
+          "translatedDutch": "En niets zoals een goeie ploegbeurt om de zenuwen tegen te gaan! Voila zie, doe't een lijntje!"
         },
         {
           "rowNumber": 55,
           "utterer": "SAY.Dialog:Nice1_TriggerPlow.19.Nice Ass",
           "context": "",
-          "sourceEnglish": "Let's plow again!"
+          "sourceEnglish": "Let's plow again!",
+          "translatedDutch": "Komaan, nog een keertje ploegen!"
         },
         {
           "rowNumber": 56,
           "utterer": "SAY.Dialog:Nice2_NoPlowIfPannier.3.Nice Ass",
           "context": "Nice says this if the player is busy completing Slow's Wood quest and unable to plow",
-          "sourceEnglish": "Those panniers look great on you!"
+          "sourceEnglish": "Those panniers look great on you!",
+          "translatedDutch": "Je ziet er wel goed uit met die zadelzakken, hè!"
         },
         {
           "rowNumber": 57,
           "utterer": "SAY.Dialog:Nice2_NoPlowIfPannier.4.Nice Ass",
           "context": "",
-          "sourceEnglish": "I'd totally invite you to plow with me, but you'll have to come back when you're not so busy."
+          "sourceEnglish": "I'd totally invite you to plow with me, but you'll have to come back when you're not so busy.",
+          "translatedDutch": "Ik zou je vragen om nog even verder mee te ploegen maar dat is misschien beter voor de volgende keer, wanneer je niet zo bezig bent."
         },
         {
           "rowNumber": 58,
           "utterer": "SAY.Dialog:HARD_BoostMorale.4.Hard Ass",
           "context": "Boosting Hard (male) Morale",
-          "sourceEnglish": "At ease, Comrade Trusty."
+          "sourceEnglish": "At ease, Comrade Trusty.",
+          "translatedDutch": "Ingerukt, Kameraad TrAss."
         },
         {
           "rowNumber": 59,
           "utterer": "SAY.Dialog:HARD_BoostMorale.6.Hard Ass",
           "context": "",
-          "sourceEnglish": "We Miners have decided to join Old Ass's Protest."
+          "sourceEnglish": "We Miners have decided to join Old Ass's Protest.",
+          "translatedDutch": "De mijn-ezels hebben beslist om ons bij het protest van OldAss te vervoegen."
         },
         {
           "rowNumber": 60,
           "utterer": "SAY.Dialog:HARD_BoostMorale.5.Hard Ass",
           "context": "",
-          "sourceEnglish": "Nothing we do tomorrow will send Comrade Lazy's Soul to the Astral Plane."
+          "sourceEnglish": "Nothing we do tomorrow will send Comrade Lazy's Soul to the Astral Plane.",
+          "translatedDutch": "We kunnen misschien niets doen om te garanderen dat de ziel van LazAss het astrale hiernamaals bereikt."
         },
         {
           "rowNumber": 61,
           "utterer": "SAY.Dialog:HARD_BoostMorale.7.Hard Ass",
           "context": "",
-          "sourceEnglish": "But, we owe it to her to abolish the Machines that killed her and to get our jobs back."
+          "sourceEnglish": "But, we owe it to her to abolish the Machines that killed her and to get our jobs back.",
+          "translatedDutch": "Maar we zijn het haar verschuldigd om die Machines, die haar het leven en onze jobs hebben gekost, voor altijd af te schaffen."
         },
         {
           "rowNumber": 62,
           "utterer": "SAY.Dialog:HARD_BoostMorale.14.Hard Ass",
           "context": "",
-          "sourceEnglish": "We'll stick to the plan and meet the Herd at the bridge."
+          "sourceEnglish": "We'll stick to the plan and meet the Herd at the bridge.",
+          "translatedDutch": "We houden ons aan het plan en zien de Kudde bij de brug."
         },
         {
           "rowNumber": 63,
           "utterer": "SAY.Dialog:HARD_BoostMorale.11.Hard Ass",
           "context": "",
-          "sourceEnglish": "Give my best to Sad Ass."
+          "sourceEnglish": "Give my best to Sad Ass.",
+          "translatedDutch": "t Beste aan SadAss."
         },
         {
           "rowNumber": 64,
           "utterer": "SAY.Dialog:SMART_BoostMorale.2.Smart Ass",
           "context": "Boosting Smart (female) Morale",
-          "sourceEnglish": "Trusty! I have a new one!"
+          "sourceEnglish": "Trusty! I have a new one!",
+          "translatedDutch": "Trusty! Ik heb nog eentje!"
         },
         {
           "rowNumber": 65,
           "utterer": "SAY.Dialog:SMART_BoostMorale.21.Smart Ass",
           "context": "",
-          "sourceEnglish": "Why did Slow Ass cross the road?"
+          "sourceEnglish": "Why did Slow Ass cross the road?",
+          "translatedDutch": "Waarom steekt SlowAss de straat over?"
         },
         {
           "rowNumber": 66,
           "utterer": "SAY.Dialog:SMART_BoostMorale.22.Smart Ass",
           "context": "",
-          "sourceEnglish": "We don't know, he's still trying to get to the other side!"
+          "sourceEnglish": "We don't know, he's still trying to get to the other side!",
+          "translatedDutch": "Weten we niet! Hij is nog altijd bezig met over te steken!"
         },
         {
           "rowNumber": 67,
           "utterer": "SAY.Dialog:SMART_BoostMorale.27.Smart Ass",
           "context": "",
-          "sourceEnglish": "Ha!"
+          "sourceEnglish": "Ha!",
+          "translatedDutch": "Ha!"
         },
         {
           "rowNumber": 68,
           "utterer": "SAY.Dialog:SMART_BoostMorale.4.Smart Ass",
           "context": "",
-          "sourceEnglish": "Oh shut it, can't two Jennets joke around?"
+          "sourceEnglish": "Oh shut it, can't two Jennets joke around?",
+          "translatedDutch": "Och, mogen twee ezelinnekes al niet meer eens lachen?"
         },
         {
           "rowNumber": 69,
           "utterer": "SAY.Dialog:SMART_BoostMorale.5.Smart Ass",
           "context": "",
-          "sourceEnglish": "I've spent all day going over the plans for the Protest:"
+          "sourceEnglish": "I've spent all day going over the plans for the Protest:",
+          "translatedDutch": "Ik heb me vandaag beziggehouden met het nakijken van de plannen voor 't protest morgen."
         },
         {
           "rowNumber": 70,
           "utterer": "SAY.Dialog:SMART_BoostMorale.18.Smart Ass",
           "context": "",
-          "sourceEnglish": "ONE, we run through the gate."
+          "sourceEnglish": "ONE, we run through the gate.",
+          "translatedDutch": "ÉÉN: we lopen door de poort."
         },
         {
           "rowNumber": 71,
           "utterer": "SAY.Dialog:SMART_BoostMorale.17.Smart Ass",
           "context": "",
-          "sourceEnglish": "TWO, we meet up with the Miners and cross the bridge."
+          "sourceEnglish": "TWO, we meet up with the Miners and cross the bridge.",
+          "translatedDutch": "TWEE: we komen samen met de Mijn-ezels en steken de brug over."
         },
         {
           "rowNumber": 72,
           "utterer": "SAY.Dialog:SMART_BoostMorale.16.Smart Ass",
           "context": "",
-          "sourceEnglish": "THREE, we march through the Village of Bumpkin, convince the Humans to give up their Machines."
+          "sourceEnglish": "THREE, we march through the Village of Bumpkin, convince the Humans to give up their Machines.",
+          "translatedDutch": "DRIE: we marcheren door het dorp van Muilegem, en we proberen de mensen te overtuigen de Machines achter te laten."
         },
         {
           "rowNumber": 73,
           "utterer": "SAY.Dialog:SMART_BoostMorale.23.Smart Ass",
           "context": "",
-          "sourceEnglish": "AND GET OUR JOBS BACK!"
+          "sourceEnglish": "AND GET OUR JOBS BACK!",
+          "translatedDutch": "EN ONZE JOBS TERUG TE GEVEN!"
         },
         {
           "rowNumber": 74,
           "utterer": "SAY.Dialog:SMART_BoostMorale.20.Smart Ass",
           "context": "",
-          "sourceEnglish": "Easy."
+          "sourceEnglish": "Easy.",
+          "translatedDutch": "Poepsimpel."
         },
         {
           "rowNumber": 75,
           "utterer": "SAY.Dialog:SMART_BoostMorale.7.Smart Ass",
           "context": "",
-          "sourceEnglish": "Even a Foal could pull this off."
+          "sourceEnglish": "Even a Foal could pull this off.",
+          "translatedDutch": "Zelfs een veulen kan dit flikken."
         },
         {
           "rowNumber": 76,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.3.Sad Ass",
           "context": "Sad (male) Matches Quest",
-          "sourceEnglish": "Oh hullo Trusty...  thanks for noticing me..."
+          "sourceEnglish": "Oh hullo Trusty...  thanks for noticing me...",
+          "translatedDutch": "Ohh hallo'kes Trusty... fijn dat je me opmerkt.."
         },
         {
           "rowNumber": 77,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.5.Sad Ass",
           "context": "",
-          "sourceEnglish": "Wish I could say 'good' afternoon...  but it's not..."
+          "sourceEnglish": "Wish I could say 'good' afternoon...  but it's not...",
+          "translatedDutch": "Wou dat ik 'goeie' middag kon zeggen.. maar het is helemaal niet zo goed."
         },
         {
           "rowNumber": 78,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.6.Sad Ass",
           "context": "",
-          "sourceEnglish": "You probably forgot, but today's the anniversary of the tragic cave-in..."
+          "sourceEnglish": "You probably forgot, but today's the anniversary of the tragic cave-in...",
+          "translatedDutch": "Misschien was je 't vergeten, maar, vandaag is het de gedenkdag van de instorting in de grotten..."
         },
         {
           "rowNumber": 79,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.7.Sad Ass",
           "context": "",
-          "sourceEnglish": "The love of my life was crushed in the Mines one year ago..."
+          "sourceEnglish": "The love of my life was crushed in the Mines one year ago...",
+          "translatedDutch": "Een jaar geleden werd de liefde van mijn leven verpletterd in de mijnen..."
         },
         {
           "rowNumber": 80,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.48.Sad Ass",
           "context": "",
-          "sourceEnglish": "And now her Soul is stuck down there forever..."
+          "sourceEnglish": "And now her Soul is stuck down there forever...",
+          "translatedDutch": "En haar ziel zit daar vast... voor altijd..."
         },
         {
           "rowNumber": 81,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.8.Sad Ass",
           "context": "",
-          "sourceEnglish": "I still see Lazy Ass's beautiful dark grey eyes in my dreams..."
+          "sourceEnglish": "I still see Lazy Ass's beautiful dark grey eyes in my dreams...",
+          "translatedDutch": "Ik zie haar mooie donkergrijze ogen nog altijd in mijn dromen..."
         },
         {
           "rowNumber": 82,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.9.Sad Ass",
           "context": "",
-          "sourceEnglish": "*whimper*"
+          "sourceEnglish": "*whimper*",
+          "translatedDutch": "*boehoehoehoe*"
         },
         {
           "rowNumber": 83,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.14.Sad Ass",
           "context": "",
-          "sourceEnglish": "I'm holding a Vigil in her memory..."
+          "sourceEnglish": "I'm holding a Vigil in her memory...",
+          "translatedDutch": "Ik hou een korte wake in haar nagedachtenis..."
         },
         {
           "rowNumber": 84,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.47.Sad Ass",
           "context": "",
-          "sourceEnglish": "Bad Ass gave me this candle..."
+          "sourceEnglish": "Bad Ass gave me this candle...",
+          "translatedDutch": "BadAss gaf me deze kaars..."
         },
         {
           "rowNumber": 85,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.10.Sad Ass",
           "context": "",
-          "sourceEnglish": "Could you bring me some matches for my candle...?"
+          "sourceEnglish": "Could you bring me some matches for my candle...?",
+          "translatedDutch": "Kan je misschien wat lucifers halen voor mijn kaars?"
         },
         {
           "rowNumber": 86,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.19.Sad Ass",
           "context": "",
-          "sourceEnglish": "Did you find the matches? They might be in the Stable..."
+          "sourceEnglish": "Did you find the matches? They might be in the Stable...",
+          "translatedDutch": "Heb je de lucifers gevonden? Ze liggen misschien in de Stal..."
         },
         {
           "rowNumber": 87,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.24.Sad Ass",
           "context": "",
-          "sourceEnglish": "Thanks for the matches...  hope I don't burn myself..."
+          "sourceEnglish": "Thanks for the matches...  hope I don't burn myself...",
+          "translatedDutch": "Bedankt voor de lucifers... zien dat ik mezelf niet verbrand..."
         },
         {
           "rowNumber": 88,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.29.Sad Ass",
           "context": "",
-          "sourceEnglish": "*whimper*"
+          "sourceEnglish": "*whimper*",
+          "translatedDutch": "*Boehoehoehoe*"
         },
         {
           "rowNumber": 89,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.51.Sad Ass",
           "context": "After having spoken to Hard Ass, if the player speaks to Sad again",
-          "sourceEnglish": "Condolences from Hard Ass...?"
+          "sourceEnglish": "Condolences from Hard Ass...?",
+          "translatedDutch": "Innige deelneming van HardAss?"
         },
         {
           "rowNumber": 90,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.62.Sad Ass",
           "context": "",
-          "sourceEnglish": "Sometimes I wish he hadn't switched shifts with Lazy Ass that day..."
+          "sourceEnglish": "Sometimes I wish he hadn't switched shifts with Lazy Ass that day...",
+          "translatedDutch": "Soms wou ik dat hij nooit zijn shift met LzyAss gewisseld had die dag..."
         },
         {
           "rowNumber": 91,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.60.Sad Ass",
           "context": "",
-          "sourceEnglish": "*whimper*"
+          "sourceEnglish": "*whimper*",
+          "translatedDutch": "*boehoehoehoe*"
         },
         {
           "rowNumber": 92,
           "utterer": "SAY.Dialog:Bad_Aft.6.Bad Ass",
           "context": "Attempting to Boost Bad (male) Morale",
-          "sourceEnglish": "Protest? Fuck that."
+          "sourceEnglish": "Protest? Fuck that.",
+          "translatedDutch": "Een protest? Dat zie je van hier."
         },
         {
           "rowNumber": 93,
           "utterer": "SAY.Dialog:Bad_Aft.8.Bad Ass",
           "context": "",
-          "sourceEnglish": "Don't get me wrong, I support addressing the systemic issues pertaining to the Ass species."
+          "sourceEnglish": "Don't get me wrong, I support addressing the systemic issues pertaining to the Ass species.",
+          "translatedDutch": "Begrijp me niet verkeerd, ik ben tegen de systematische problemen die ons, Ezels, benadelen."
         },
         {
           "rowNumber": 94,
           "utterer": "SAY.Dialog:Bad_Aft.9.Bad Ass",
           "context": "",
-          "sourceEnglish": "But you can't just demand your fucking jobs back."
+          "sourceEnglish": "But you can't just demand your fucking jobs back.",
+          "translatedDutch": "Maar je kan toch niet zomaar u jobs terugeisen."
         },
         {
           "rowNumber": 95,
           "utterer": "SAY.Dialog:Bad_Aft.10.Bad Ass",
           "context": "",
-          "sourceEnglish": "It's technological PROGRESS, stupid."
+          "sourceEnglish": "It's technological PROGRESS, stupid.",
+          "translatedDutch": "Het is technologische VOORUITGANG, dommerik."
         },
         {
           "rowNumber": 96,
           "utterer": "SAY.Dialog:Bad_Aft.11.Bad Ass",
           "context": "",
-          "sourceEnglish": "What's the brilliant plan?"
+          "sourceEnglish": "What's the brilliant plan?",
+          "translatedDutch": "Wat is het geniale plan hier?"
         },
         {
           "rowNumber": 97,
           "utterer": "SAY.Dialog:Bad_Aft.12.Bad Ass",
           "context": "",
-          "sourceEnglish": "Gallop around the Village? Bray loudly? Hope for change?"
+          "sourceEnglish": "Gallop around the Village? Bray loudly? Hope for change?",
+          "translatedDutch": "Beetje rond het dorp galloperen? Luid balken? Hopen voor verandering?"
         },
         {
           "rowNumber": 98,
           "utterer": "SAY.Dialog:Bad_Aft.13.Bad Ass",
           "context": "",
-          "sourceEnglish": "Pathetic."
+          "sourceEnglish": "Pathetic.",
+          "translatedDutch": "Zielig."
         },
         {
           "rowNumber": 99,
           "utterer": "SAY.Dialog:Bad_Aft.15.Bad Ass",
           "context": "",
-          "sourceEnglish": "There's no going back to how things used to be."
+          "sourceEnglish": "There's no going back to how things used to be.",
+          "translatedDutch": "We kunnen niet terug naar hoe het vroeger was."
         },
         {
           "rowNumber": 100,
           "utterer": "SAY.Dialog:Bad_Aft.16.Bad Ass",
           "context": "",
-          "sourceEnglish": "Technologies and Machines are transforming the social order."
+          "sourceEnglish": "Technologies and Machines are transforming the social order.",
+          "translatedDutch": "Technologie en Machines hebben onherroepelijk de sociale orde herschikt."
         },
         {
           "rowNumber": 101,
           "utterer": "SAY.Dialog:Bad_Aft.17.Bad Ass",
           "context": "",
-          "sourceEnglish": "You need more than political protest—you need philosophical transformation."
+          "sourceEnglish": "You need more than political protest—you need philosophical transformation.",
+          "translatedDutch": "Er is meer nodig dan een politiek protest; de filosofie moet verder transformeren."
         },
         {
           "rowNumber": 102,
           "utterer": "SAY.Dialog:Bad_Aft.18.Bad Ass",
           "context": "",
-          "sourceEnglish": "Your concept of value and self-worth cannot and should not be defined by backward Humans from Bumpkin Village."
+          "sourceEnglish": "Your concept of value and self-worth cannot and should not be defined by backward Humans from Bumpkin Village.",
+          "translatedDutch": "Jullie idee van richting en eigenwaarde zou niet, en moet niet, worden bepaald door de averechtse Mensen van Muilegem."
         },
         {
           "rowNumber": 103,
           "utterer": "SAY.Dialog:Bad_Aft.36.Bad Ass",
           "context": "",
-          "sourceEnglish": "There's gotta be another way out of this ridiculous situation..."
+          "sourceEnglish": "There's gotta be another way out of this ridiculous situation...",
+          "translatedDutch": "Er moet een andere manier bestaan om uit deze belachelijke situatie te geraken..."
         },
         {
           "rowNumber": 104,
           "utterer": "SAY.Dialog:Bad_Aft.21.Bad Ass",
           "context": "",
-          "sourceEnglish": "Now leave me alone."
+          "sourceEnglish": "Now leave me alone.",
+          "translatedDutch": "D'r uit nu, laat me gerust."
         },
         {
           "rowNumber": 105,
           "utterer": "SAY.Dialog:Bad_Aft.23.Bad Ass",
           "context": "",
-          "sourceEnglish": "I said ALONE."
+          "sourceEnglish": "I said ALONE.",
+          "translatedDutch": "Kom jong, WEG!"
         },
         {
           "rowNumber": 106,
           "utterer": "SAY.Dialog:JoeyFeeding.1.Child Joey",
           "context": "After finishing the Slow's wood quest, Grandma and Joey appear at the fence",
-          "sourceEnglish": "Grandmother! Can I feed the cute donkey?"
+          "sourceEnglish": "Grandmother! Can I feed the cute donkey?",
+          "translatedDutch": "Groetmoe! Mag ik het ezeltje eten geven?"
         },
         {
           "rowNumber": 107,
           "utterer": "SAY.Dialog:JoeyFeeding.2.Grandma Kulan",
           "context": "",
-          "sourceEnglish": "Of course! Offer it some oats."
+          "sourceEnglish": "Of course! Offer it some oats.",
+          "translatedDutch": "Natuurlijk! Geef het wat haver."
         },
         {
           "rowNumber": 108,
           "utterer": "SAY.Dialog:JoeyFeeding.15.Child Joey",
           "context": "",
-          "sourceEnglish": "Here donkey!"
+          "sourceEnglish": "Here donkey!",
+          "translatedDutch": "Hier, ezeltje!"
         },
         {
           "rowNumber": 109,
           "utterer": "MENU.Dialog:JoeyFeeding.3",
           "context": "",
-          "sourceEnglish": "Eat the oats."
+          "sourceEnglish": "Eat the oats.",
+          "translatedDutch": "Eet de haver."
         },
         {
           "rowNumber": 110,
           "utterer": "MENU.Dialog:JoeyFeeding.4",
           "context": "",
-          "sourceEnglish": "Refuse the oats."
+          "sourceEnglish": "Refuse the oats.",
+          "translatedDutch": "Weiger de haver."
         },
         {
           "rowNumber": 111,
           "utterer": "SAY.Dialog:JoeyFeeding.16.Child Joey",
           "context": "",
-          "sourceEnglish": "He he he! That tickles."
+          "sourceEnglish": "He he he! That tickles.",
+          "translatedDutch": "Hi-hi-hi, dat kietelt!"
         },
         {
           "rowNumber": 112,
           "utterer": "SAY.Dialog:JoeyFeeding.17.Child Joey",
           "context": "If the player refuses to eat oats",
-          "sourceEnglish": "Why won't it do what I want?"
+          "sourceEnglish": "Why won't it do what I want?",
+          "translatedDutch": "Waarom doet hij niet wat ik wil?"
         },
         {
           "rowNumber": 113,
           "utterer": "SAY.Dialog:JoeyFeeding.18.Grandma Kulan",
           "context": "",
-          "sourceEnglish": "Donkeys aren't very smart, honey. Come on, let's go home."
+          "sourceEnglish": "Donkeys aren't very smart, honey. Come on, let's go home.",
+          "translatedDutch": "Ezeltjes zijn niet zo slim, schat. Kom, we gaan naar huis."
         },
         {
           "rowNumber": 114,
           "utterer": "SAY.Dialog:JoeyFeeding.24.Child Joey",
           "context": "",
-          "sourceEnglish": "Want more, donkey?"
+          "sourceEnglish": "Want more, donkey?",
+          "translatedDutch": "Wil je meer, ezeltje?"
         },
         {
           "rowNumber": 115,
           "utterer": "MENU.Dialog:JoeyFeeding.25",
           "context": "",
-          "sourceEnglish": "Eat the oats."
+          "sourceEnglish": "Eat the oats.",
+          "translatedDutch": "Eet de haver."
         },
         {
           "rowNumber": 116,
           "utterer": "MENU.Dialog:JoeyFeeding.26",
           "context": "",
-          "sourceEnglish": "Refuse the oats."
+          "sourceEnglish": "Refuse the oats.",
+          "translatedDutch": "Weiger de haver."
         },
         {
           "rowNumber": 117,
           "utterer": "SAY.Dialog:JoeyFeeding.35.Child Joey",
           "context": "",
-          "sourceEnglish": "Want more, donkey?"
+          "sourceEnglish": "Want more, donkey?",
+          "translatedDutch": "Wil je nog meer, ezeltje?"
         },
         {
           "rowNumber": 118,
           "utterer": "MENU.Dialog:JoeyFeeding.36",
           "context": "",
-          "sourceEnglish": "Eat the oats."
+          "sourceEnglish": "Eat the oats.",
+          "translatedDutch": "Eet de haver."
         },
         {
           "rowNumber": 119,
           "utterer": "MENU.Dialog:JoeyFeeding.37",
           "context": "",
-          "sourceEnglish": "Refuse the oats."
+          "sourceEnglish": "Refuse the oats.",
+          "translatedDutch": "Weiger de haver."
         },
         {
           "rowNumber": 120,
           "utterer": "SAY.Dialog:JoeyFeeding.51.Grandma Kulan",
           "context": "",
-          "sourceEnglish": "Come along, darling. This donkey seems greedy."
+          "sourceEnglish": "Come along, darling. This donkey seems greedy.",
+          "translatedDutch": "Kom, we gaan, schatje. Dit ezeltje is wat gierig."
         },
         {
           "rowNumber": 121,
           "utterer": "SAY.Dialog:Thirsty7_Night.4.Thirsty Ass",
           "context": "Night dialogues, after the Morale quest is complete and the player returns outside to find the donkeys all sleeping",
-          "sourceEnglish": "... zzz... zzz..."
+          "sourceEnglish": "... zzz... zzz...",
+          "translatedDutch": "...zzz... zzz..."
         },
         {
           "rowNumber": 122,
           "utterer": "SAY.Dialog:BIG_Night.5.Big Ass",
           "context": "",
-          "sourceEnglish": "... .ZZZZZZ... ... ."
+          "sourceEnglish": "... .ZZZZZZ... ... .",
+          "translatedDutch": "...ZZZZZZZ..."
         },
         {
           "rowNumber": 123,
           "utterer": "SAY.Dialog:Bad_Night.21.Bad Ass",
           "context": "",
-          "sourceEnglish": "... zzz..."
+          "sourceEnglish": "... zzz...",
+          "translatedDutch": "...zzz..."
         },
         {
           "rowNumber": 124,
           "utterer": "SAY.Dialog:SMART_Night.5.Smart Ass",
           "context": "",
-          "sourceEnglish": "... zzz... .zzz... ."
+          "sourceEnglish": "... zzz... .zzz... .",
+          "translatedDutch": "...zzz... zzz..."
         },
         {
           "rowNumber": 125,
           "utterer": "SAY.Dialog:Nice3_NoPlowIfNight_Night.4.Nice Ass",
           "context": "",
-          "sourceEnglish": "I'm usually up for a little extra night plowing, but we should get some rest before tomorrow's Protest."
+          "sourceEnglish": "I'm usually up for a little extra night plowing, but we should get some rest before tomorrow's Protest.",
+          "translatedDutch": "Ik heb meestal wel zin in wat ploegen onder de sterren, maar we moeten rusten voor het protest van morgen."
         },
         {
           "rowNumber": 126,
           "utterer": "SAY.Dialog: Truck.1.Trusty Ass",
           "context": "",
-          "sourceEnglish": "The Truck-Machine is back..."
+          "sourceEnglish": "The Truck-Machine is back...",
+          "translatedDutch": "De camion-machine is terug..."
         }
       ]
     },
@@ -984,31 +1144,36 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog: PreQuest_Convo.1.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "A pair of panniers..."
+          "sourceEnglish": "A pair of panniers...",
+          "translatedDutch": "Een paar zadelzakken..."
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:NoisyMillMachine.1.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "The noisy Mill-Machine..."
+          "sourceEnglish": "The noisy Mill-Machine...",
+          "translatedDutch": "De luide Molen-Machine..."
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:FreshFlour.1.Trusty Ass",
           "context": "Interactable Object.",
-          "sourceEnglish": "Bags of fresh flour..."
+          "sourceEnglish": "Bags of fresh flour...",
+          "translatedDutch": "Zakken met verse bloem..."
         }
       ]
     },
@@ -1019,109 +1184,127 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog: FirstOrSecondPlow.2.Nice Ass",
           "context": "Nice Ass and Trusty are at the starting line.",
-          "sourceEnglish": "Plowing's the easiest thing in the world, isn't it?"
+          "sourceEnglish": "Plowing's the easiest thing in the world, isn't it?",
+          "translatedDutch": "Ploegen is 't gemakkelijkste ding ter wereld, niet?"
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog: FirstOrSecondPlow.12.Nice Ass",
           "context": "Trusty begins to plow.",
-          "sourceEnglish": "You know what to do!"
+          "sourceEnglish": "You know what to do!",
+          "translatedDutch": "Je weet wat te doen!"
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:FinishLines.2.Nice Ass",
           "context": "Win variation 1.1.A.",
-          "sourceEnglish": "Gosh! You're amazing Trusty!"
+          "sourceEnglish": "Gosh! You're amazing Trusty!",
+          "translatedDutch": "Wow, jij kan er wat van, TA!"
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:FinishLines.8.Nice Ass",
           "context": "",
-          "sourceEnglish": "Heck, we could totally team up and show that nasty Tractor-Machine a thing or two!"
+          "sourceEnglish": "Heck, we could totally team up and show that nasty Tractor-Machine a thing or two!",
+          "translatedDutch": "Zouden we een team oprichten, gaat die lelijke Tractor-machine zien wie hier echt te baas is."
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:FinishLines.9.Nice Ass",
           "context": "",
-          "sourceEnglish": "We gotta stay in peak shape for when things go back to normal!"
+          "sourceEnglish": "We gotta stay in peak shape for when things go back to normal!",
+          "translatedDutch": "We moeten in topform blijven voor wanneer we terug naar de normale dagen gaan."
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Dialog:FinishLines.33.Nice Ass",
           "context": "Jump to lines 15 and 16.",
-          "sourceEnglish": "So, want to do another line?"
+          "sourceEnglish": "So, want to do another line?",
+          "translatedDutch": "Nog een lijntje leggen?"
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog:FinishLines.16.Nice Ass",
           "context": "Win variation 1.1.B.",
-          "sourceEnglish": "Yippee!"
+          "sourceEnglish": "Yippee!",
+          "translatedDutch": "Yippie!"
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:FinishLines.17.Nice Ass",
           "context": "",
-          "sourceEnglish": "That Tractor-Machine has nothing on you!"
+          "sourceEnglish": "That Tractor-Machine has nothing on you!",
+          "translatedDutch": "Die tractor-machine kan niets tegen jou!"
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Dialog:FinishLines.20.Nice Ass",
           "context": "Jump to lines 15 and 16.",
-          "sourceEnglish": "Again?"
+          "sourceEnglish": "Again?",
+          "translatedDutch": "Nog eens?"
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:FinishLines.36.Nice Ass",
           "context": "Lose variation 1.2.",
-          "sourceEnglish": "Don't worry. I believe in you. Let's try again!"
+          "sourceEnglish": "Don't worry. I believe in you. Let's try again!",
+          "translatedDutch": "Geen zorgen, ik geloof in jou. Laten we opnieuw proberen!"
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:FinishLines.52.Nice Ass",
           "context": "",
-          "sourceEnglish": "So close, Comrade!"
+          "sourceEnglish": "So close, Comrade!",
+          "translatedDutch": "Bijna, kameraad!"
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:FinishLines.53.Nice Ass",
           "context": "Jump to lines 15 and 16.",
-          "sourceEnglish": "Again?"
+          "sourceEnglish": "Again?",
+          "translatedDutch": "Nog eens?"
         },
         {
           "rowNumber": 15,
           "utterer": "MENU.Dialog:FinishLines.57",
           "context": "Option 1.1. (Play again)",
-          "sourceEnglish": "Plow again!"
+          "sourceEnglish": "Plow again!",
+          "translatedDutch": "Nog eens ploegen!"
         },
         {
           "rowNumber": 16,
           "utterer": "MENU.Dialog:FinishLines.58",
           "context": "Option 1.2. (Leave game)",
-          "sourceEnglish": "I've got other things to do."
+          "sourceEnglish": "I've got other things to do.",
+          "translatedDutch": "Ik heb andere zaken te doen."
         },
         {
           "rowNumber": 17,
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Plow game UI.",
-          "sourceEnglish": "YOUR PLOW"
+          "sourceEnglish": "YOUR PLOW",
+          "translatedDutch": "JOUW PLOEGBEURT"
         },
         {
           "rowNumber": 18,
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Plow game UI.",
-          "sourceEnglish": "BEST PLOW"
+          "sourceEnglish": "BEST PLOW",
+          "translatedDutch": "BESTE PLOEGBEURT"
         }
       ]
     },
@@ -1132,19 +1315,22 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:Wake up!.1.???",
           "context": "Trusty's dream is interrupted by a voice.",
-          "sourceEnglish": "Trusty Ass! Wake up! WAKE UP!"
+          "sourceEnglish": "Trusty Ass! Wake up! WAKE UP!",
+          "translatedDutch": "TrAss! Opstaan! OPSTAAN!"
         }
       ]
     },
@@ -1155,355 +1341,414 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog: PreQuest_Matches.1.Trusty Ass",
           "context": "For Sad's Match quest",
-          "sourceEnglish": "Matches..."
+          "sourceEnglish": "Matches...",
+          "translatedDutch": "Lucifers..."
         },
         {
           "rowNumber": 4,
           "utterer": "MENU.Dialog:RestHere.2",
           "context": "After completing the Morale quest",
-          "sourceEnglish": "Go to sleep."
+          "sourceEnglish": "Go to sleep.",
+          "translatedDutch": "Gaan slapen."
         },
         {
           "rowNumber": 5,
           "utterer": "MENU.Dialog:RestHere.3",
           "context": "",
-          "sourceEnglish": "Not yet, there's still more to do."
+          "sourceEnglish": "Not yet, there's still more to do.",
+          "translatedDutch": "Nog niet, er is nog meer te doen."
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:STURDY_NightNameSelect.8.Sturdy Ass",
           "context": "Sturdy asks for help",
-          "sourceEnglish": "Comrade Trusty, wait!"
+          "sourceEnglish": "Comrade Trusty, wait!",
+          "translatedDutch": "Kameraad TrAss, wacht!"
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:STURDY_NightNameSelect.17.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Before you sleep, could you help me with something?"
+          "sourceEnglish": "Before you sleep, could you help me with something?",
+          "translatedDutch": "Voor dat je gaat slapen, kan je me met iets helpen?"
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Dialog:STURDY_NightNameSelect.18.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I'm struggling to come up with a name for my Foal."
+          "sourceEnglish": "I'm struggling to come up with a name for my Foal.",
+          "translatedDutch": "Ik heb moeite met het vinden van een goede naam voor mijn veulentje."
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog:STURDY_NightNameSelect.19.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "If I give birth tonight, I'm worried I won't have one."
+          "sourceEnglish": "If I give birth tonight, I'm worried I won't have one.",
+          "translatedDutch": "Ik vrees dat ik geen goede naam heb, zeker moest ik vannacht bevallen."
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:STURDY_NightNameSelect.20.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "What should I name them?"
+          "sourceEnglish": "What should I name them?",
+          "translatedDutch": "Hoe zou ik het veulentje noemen?"
         },
         {
           "rowNumber": 11,
           "utterer": "WRITE.DialogLocalizer.1",
           "context": "The player name's the Foal",
-          "sourceEnglish": "NAME STURDY'S FOAL"
+          "sourceEnglish": "NAME STURDY'S FOAL",
+          "translatedDutch": "GEEF EEN NAAM AAN StrAss' VEULEN"
         },
         {
           "rowNumber": 12,
           "utterer": "WRITE.DialogLocalizer.8",
           "context": "",
-          "sourceEnglish": "[name]"
+          "sourceEnglish": "[name]",
+          "translatedDutch": "[Naam]"
         },
         {
           "rowNumber": 13,
           "utterer": "WRITE.DialogLocalizer.2",
           "context": "English includes space before the word",
-          "sourceEnglish": "ASS"
+          "sourceEnglish": "ASS",
+          "translatedDutch": "EZEL"
         },
         {
           "rowNumber": 14,
           "utterer": "WRITE.DialogLocalizer.3",
           "context": "",
-          "sourceEnglish": "Good thinking, but that name is taken!"
+          "sourceEnglish": "Good thinking, but that name is taken!",
+          "translatedDutch": "Goed gevonden! Deze naam is echter reeds bezet."
         },
         {
           "rowNumber": 15,
           "utterer": "WRITE.DialogLocalizer.4",
           "context": "",
-          "sourceEnglish": "Two in a row! That name is taken too!"
+          "sourceEnglish": "Two in a row! That name is taken too!",
+          "translatedDutch": "Twee op een rij! Deze naam is ook bezet."
         },
         {
           "rowNumber": 16,
           "utterer": "WRITE.DialogLocalizer.5",
           "context": "",
-          "sourceEnglish": "Taken! You might need to get creative."
+          "sourceEnglish": "Taken! You might need to get creative.",
+          "translatedDutch": "Bezet! Misschien wat creatiever denken..."
         },
         {
           "rowNumber": 17,
           "utterer": "WRITE.DialogLocalizer.6",
           "context": "",
-          "sourceEnglish": "Not available! How about... 'Baby' Ass?"
+          "sourceEnglish": "Not available! How about... 'Baby' Ass?",
+          "translatedDutch": "Niet beschikbaar! Waarom niet.. 'Baby Ezel'?"
         },
         {
           "rowNumber": 18,
           "utterer": "WRITE.DialogLocalizer.7",
           "context": "",
-          "sourceEnglish": "Try a different name!"
+          "sourceEnglish": "Try a different name!",
+          "translatedDutch": "Probeer een andere naam!"
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog:STURDY_NightNameSelect.24.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "{$NewName}! That's a wonderful name!"
+          "sourceEnglish": "{$NewName}! That's a wonderful name!",
+          "translatedDutch": "{$NewName}! Wat een geweldige naam!"
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:STURDY_NightNameSelect.25.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Thanks Comrade. Goodnight!"
+          "sourceEnglish": "Thanks Comrade. Goodnight!",
+          "translatedDutch": "Bedankt, kameraad. Slaapwel."
         },
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog:Dawn.4.Old Ass",
           "context": "Trusty wakes up to find Old Ass dying",
-          "sourceEnglish": "Comrade!"
+          "sourceEnglish": "Comrade!",
+          "translatedDutch": "Kameraad!"
         },
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog:Dawn.18.Old Ass",
           "context": "",
-          "sourceEnglish": "The Humans... they came to get me in the night."
+          "sourceEnglish": "The Humans... they came to get me in the night.",
+          "translatedDutch": "De mensen... ze hebben geprobeerd om me te pakken in het donker..."
         },
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog:Dawn.17.Old Ass",
           "context": "",
-          "sourceEnglish": "Put me in their wretched Truck-Machine..."
+          "sourceEnglish": "Put me in their wretched Truck-Machine...",
+          "translatedDutch": "Ze hebben me in hun vervloekte camion-machine gestoken..."
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog:Dawn.16.Old Ass",
           "context": "",
-          "sourceEnglish": "They gave me the Needle!"
+          "sourceEnglish": "They gave me the Needle!",
+          "translatedDutch": "Ze hebben me de Spuit gegeven..."
         },
         {
           "rowNumber": 25,
           "utterer": "SAY.Dialog:Dawn.15.Old Ass",
           "context": "",
-          "sourceEnglish": "But they underestimated this old Ass."
+          "sourceEnglish": "But they underestimated this old Ass.",
+          "translatedDutch": "Maar ze hebben deze oude Ezel onderschat..."
         },
         {
           "rowNumber": 26,
           "utterer": "SAY.Dialog:Dawn.14.Old Ass",
           "context": "",
-          "sourceEnglish": "And I... I..."
+          "sourceEnglish": "And I... I...",
+          "translatedDutch": "En... ik... ik..."
         },
         {
           "rowNumber": 27,
           "utterer": "SAY.Dialog:Dawn.13.Old Ass",
           "context": "",
-          "sourceEnglish": "I don't feel so good. Everything's getting cold..."
+          "sourceEnglish": "I don't feel so good. Everything's getting cold...",
+          "translatedDutch": "Ik voel me niet zo lekker... alles is koud..."
         },
         {
           "rowNumber": 28,
           "utterer": "SAY.Dialog:Dawn.11.Old Ass",
           "context": "",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": "..."
         },
         {
           "rowNumber": 29,
           "utterer": "SAY.Dialog:Dawn.10.Old Ass",
           "context": "",
-          "sourceEnglish": "... I wish I could lead the Protest today, Trusty."
+          "sourceEnglish": "... I wish I could lead the Protest today, Trusty.",
+          "translatedDutch": "...Ik wou dat ik voorop aan het Protest kon staan, TrAss..."
         },
         {
           "rowNumber": 30,
           "utterer": "SAY.Dialog:Dawn.9.Old Ass",
           "context": "",
-          "sourceEnglish": "I wish I could see the faces of the Humans when they wake up to us chanting ASS POWER!"
+          "sourceEnglish": "I wish I could see the faces of the Humans when they wake up to us chanting ASS POWER!",
+          "translatedDutch": "...Ik wou dat ik de gezichten van de Mensen kon zien wanneer onze EZEL POWER hun wakkerschrikt!"
         },
         {
           "rowNumber": 31,
           "utterer": "SAY.Dialog:Dawn.8.Old Ass",
           "context": "",
-          "sourceEnglish": "Never again will they forget how useful we Asses are!"
+          "sourceEnglish": "Never again will they forget how useful we Asses are!",
+          "translatedDutch": "Nooit meer zullen ze vergeten wat ze aan ons Ezels hebben."
         },
         {
           "rowNumber": 32,
           "utterer": "SAY.Dialog:Dawn.7.Old Ass",
           "context": "",
-          "sourceEnglish": "Please young Comrade, you have to play my role now!"
+          "sourceEnglish": "Please young Comrade, you have to play my role now!",
+          "translatedDutch": "Jonge Kameraad, nu is het aan jou. Jij moet van me overnemen."
         },
         {
           "rowNumber": 33,
           "utterer": "SAY.Dialog:Dawn.30.Old Ass",
           "context": "",
-          "sourceEnglish": "Gather the Herd! Lead the Protest! Maintain the Morale!"
+          "sourceEnglish": "Gather the Herd! Lead the Protest! Maintain the Morale!",
+          "translatedDutch": "Verzamel de Kudde! Start het protest! Hou het moraal hoog!"
         },
         {
           "rowNumber": 34,
           "utterer": "SAY.Dialog:Dawn.25.Old Ass",
           "context": "",
-          "sourceEnglish": "SHOW THE WORLD THE POWER OF THE ASS!"
+          "sourceEnglish": "SHOW THE WORLD THE POWER OF THE ASS!",
+          "translatedDutch": "LAAT DE WERELD HET LICHT VAN DE EZELSKRACHT ZIEN!"
         },
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:Dawn.24.Old Ass",
           "context": "",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": "..."
         },
         {
           "rowNumber": 36,
           "utterer": "SAY.Dialog:Dawn.23.Old Ass",
           "context": "",
-          "sourceEnglish": "Comrade..."
+          "sourceEnglish": "Comrade...",
+          "translatedDutch": "Kameraad..."
         },
         {
           "rowNumber": 37,
           "utterer": "SAY.Dialog:Dawn.22.Old Ass",
           "context": "",
-          "sourceEnglish": "Trusty? Are you there?"
+          "sourceEnglish": "Trusty? Are you there?",
+          "translatedDutch": "TrAss? Ben je daar?"
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:Dawn.21.Old Ass",
           "context": "Old Ass dies",
-          "sourceEnglish": "... I'm scared."
+          "sourceEnglish": "... I'm scared.",
+          "translatedDutch": "...Ik ben bang."
         },
         {
           "rowNumber": 39,
           "utterer": "SAY.Dialog:Dawn.47.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "OLD ASS! NOOO!!"
+          "sourceEnglish": "OLD ASS! NOOO!!",
+          "translatedDutch": "OldAss!! NEEEEEEEEEEEE!"
         },
         {
           "rowNumber": 40,
           "utterer": "SAY.Dialog:Dawn.48.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "HEEEHAAAAAAAAAAAAW!!!"
+          "sourceEnglish": "HEEEHAAAAAAAAAAAAW!!!",
+          "translatedDutch": "HIEEEEEEHAAAAAAAAAA!!!"
         },
         {
           "rowNumber": 41,
           "utterer": "SAY.Dialog:Dawn.50.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Our fearless Old Ass..."
+          "sourceEnglish": "Our fearless Old Ass...",
+          "translatedDutch": "Onze OldAss zonder vrees.."
         },
         {
           "rowNumber": 42,
           "utterer": "SAY.Dialog:Dawn.51.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "He taught us everything we know."
+          "sourceEnglish": "He taught us everything we know.",
+          "translatedDutch": "Hij heeft ons alles wat we weten geleerd."
         },
         {
           "rowNumber": 43,
           "utterer": "SAY.Dialog:Dawn.52.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "How could the Gods let this happen? What are we going to do without him...?!"
+          "sourceEnglish": "How could the Gods let this happen? What are we going to do without him...?!",
+          "translatedDutch": "Hoe konnen de Goden dit laten gebeuren? Wat gaan we nu zonder hem doen?!"
         },
         {
           "rowNumber": 44,
           "utterer": "SAY.Dialog:Dawn.53.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "And the Protest! It's supposed to start any moment now..."
+          "sourceEnglish": "And the Protest! It's supposed to start any moment now...",
+          "translatedDutch": "En het Protest! Het Protest moet elk moment gaan beginnen..."
         },
         {
           "rowNumber": 45,
           "utterer": "SAY.Dialog:Dawn.55.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Trusty. I know I said earlier that WE can do it, but..."
+          "sourceEnglish": "Trusty. I know I said earlier that WE can do it, but...",
+          "translatedDutch": "TrAss, ik zei eerder dat WIJ het samen konden doen, maar..."
         },
         {
           "rowNumber": 46,
           "utterer": "SAY.Dialog:Dawn.56.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I can't leave Old Ass's body alone."
+          "sourceEnglish": "I can't leave Old Ass's body alone.",
+          "translatedDutch": "Ik kan OldAss niet alleen achterlaten."
         },
         {
           "rowNumber": 47,
           "utterer": "SAY.Dialog:Dawn.79.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Someone has to sing the Song of Ascension to make sure his Ass Soul can reach the Astral Plane and be reassigned."
+          "sourceEnglish": "Someone has to sing the Song of Ascension to make sure his Ass Soul can reach the Astral Plane and be reassigned.",
+          "translatedDutch": "Iemand moet het Verezelingslied zingen zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer herverkozen zou kunnen worden.."
         },
         {
           "rowNumber": 48,
           "utterer": "SAY.Dialog:Dawn.57.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I'll stay with him. You lead the Herd, Comrade."
+          "sourceEnglish": "I'll stay with him. You lead the Herd, Comrade.",
+          "translatedDutch": "Ik blijf bij hem. Jij moet de kudde leiden, Kameraad."
         },
         {
           "rowNumber": 49,
           "utterer": "SAY.Dialog:Dawn.58.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Go. Rally the others."
+          "sourceEnglish": "Go. Rally the others.",
+          "translatedDutch": "Ga. Roep de anderen samen."
         },
         {
           "rowNumber": 50,
           "utterer": "SAY.Dialog:STURDY_DawnRepeater.8.Sturdy Ass",
           "context": "Trusty leaves the room",
-          "sourceEnglish": "Hurry, Trusty!"
+          "sourceEnglish": "Hurry, Trusty!",
+          "translatedDutch": "Snel, TrAss!"
         },
         {
           "rowNumber": 51,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.8.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Oh Old Ass..."
+          "sourceEnglish": "Oh Old Ass...",
+          "translatedDutch": "Oh OldAss..."
         },
         {
           "rowNumber": 52,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.29.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Not a day goes by that I don't think of Lazy Ass, the beautiful child we lost."
+          "sourceEnglish": "Not a day goes by that I don't think of Lazy Ass, the beautiful child we lost.",
+          "translatedDutch": "Geen dag gaat voorbij dat ik niet aan LzAss denk, het prachtige kind dat we samen verloren zijn."
         },
         {
           "rowNumber": 53,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.23.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I know the Gods didn't give her a Worker’s Spirit, but she was our child."
+          "sourceEnglish": "I know the Gods didn't give her a Worker’s Spirit, but she was our child.",
+          "translatedDutch": "Ik weet dat de Goden haar misschien niet de kracht van een werker gegeven hebben, maar ze was ons kind, ze was ons meisje..."
         },
         {
           "rowNumber": 54,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.32.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "The Foal inside me won't replace Lazy Ass."
+          "sourceEnglish": "The Foal inside me won't replace Lazy Ass.",
+          "translatedDutch": "Mijn veulentje vervangt LazyAss niet... Nooit."
         },
         {
           "rowNumber": 55,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.24.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "But maybe it'll be able to live the life we dreamed of..."
+          "sourceEnglish": "But maybe it'll be able to live the life we dreamed of...",
+          "translatedDutch": "Maar misschien kan dat leventje uitdraaien zoals we het hebben gedroomd."
         },
         {
           "rowNumber": 56,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.28.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "A life free of evil, soulless, job-taking, child-killing Machines."
+          "sourceEnglish": "A life free of evil, soulless, job-taking, child-killing Machines.",
+          "translatedDutch": "Een leven zonder kwaad, zonder zielloze, werk-stelende en moordende Machines."
         },
         {
           "rowNumber": 57,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.27.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "May you pass on in power to the Astral Plane, my dear Comrade."
+          "sourceEnglish": "May you pass on in power to the Astral Plane, my dear Comrade.",
+          "translatedDutch": "Dat je mag oversteken met kracht en liefde naar het Astrale Hiernamaals, Kameraad."
         },
         {
           "rowNumber": 58,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.33.Sturdy Ass",
           "context": "Sturdy sings for Old Ass",
-          "sourceEnglish": "\"{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}\""
+          "sourceEnglish": "\"{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}\"",
+          "translatedDutch": "\"{color=yellow}{s=5}♪  hie haa hi hon 'ee ah he a'w ♪{/s}{/color}\""
         },
         {
           "rowNumber": 59,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.37.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "\"{color=yellow}♪  HEE HAW HI HON 'EE AH HE A'W! ♪{/color}\""
+          "sourceEnglish": "\"{color=yellow}♪  HEE HAW HI HON 'EE AH HE A'W! ♪{/color}\"",
+          "translatedDutch": "\"{color=yellow}♪  HIE HAA HI HON 'EE AH HE A'W! ♪{/color}\""
         }
       ]
     },
@@ -1514,145 +1759,169 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:Radio.2.Radio Host Marcos",
           "context": "Trusty enters the Farm House and finds the radio playing an interiew with Mme. Derriere.",
-          "sourceEnglish": "*ksh* Welcome back listeners to Mecha in the Morning!"
+          "sourceEnglish": "*ksh* Welcome back listeners to Mecha in the Morning!",
+          "translatedDutch": "*tsj* Beste luisteraars, welkom terug bij Mechanische Morgen—where you can hear the best music from Mechalen Stad."
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:Radio.3.Radio Host Marcos",
           "context": "",
-          "sourceEnglish": "We're here with Mecha City's most philanthropic and generous employer Mme. Derriere."
+          "sourceEnglish": "We're here with Mecha City's most philanthropic and generous employer Mme. Derriere.",
+          "translatedDutch": "We zijn hier met de grootste en meest filantropische werkgever in Mechalen: Mevrouw Derrière."
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:Radio.7.Radio Host Marcos",
           "context": "",
-          "sourceEnglish": "Tell us... what is the secret to your success?"
+          "sourceEnglish": "Tell us... what is the secret to your success?",
+          "translatedDutch": "Vertel ons eens... wat is het het geheim van je succes?"
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:Radio.6.Mme. Derriere",
           "context": "",
-          "sourceEnglish": "Good morning! It's simple... success in business is all about the bottom line."
+          "sourceEnglish": "Good morning! It's simple... success in business is all about the bottom line.",
+          "translatedDutch": "Goeiemorgen! Simpel. Succes in de business begint bij de winst die je maakt."
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:Radio.5.Mme. Derriere",
           "context": "",
-          "sourceEnglish": "One must embrace the hustle and bustle, but also have a product that changes lives."
+          "sourceEnglish": "One must embrace the hustle and bustle, but also have a product that changes lives.",
+          "translatedDutch": "We moeten bereid zijn hard te werken,"
         },
         {
           "rowNumber": 8,
           "utterer": "MENU.Dialog:Radio.9",
           "context": "",
-          "sourceEnglish": "Stop listening"
+          "sourceEnglish": "Stop listening",
+          "translatedDutch": "Stoppen met luisteren."
         },
         {
           "rowNumber": 9,
           "utterer": "MENU.Dialog:Radio.11",
           "context": "",
-          "sourceEnglish": "Keep listening"
+          "sourceEnglish": "Keep listening",
+          "translatedDutch": "Verder luisteren."
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:Radio.32.Radio Host Marcos",
           "context": "",
-          "sourceEnglish": "*ksh* My wife uses your products every morning, and I gotta say I like it too."
+          "sourceEnglish": "*ksh* My wife uses your products every morning, and I gotta say I like it too.",
+          "translatedDutch": "*tsj* Mijn vrouw gebruikt elke ochtend jullie producten! En ik moet zeggen dat ik ze zelf ook apprecieer."
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Dialog:Radio.34.Radio Host Marcos",
           "context": "",
-          "sourceEnglish": "We're over the moon! My glutes have never felt so smooth."
+          "sourceEnglish": "We're over the moon! My glutes have never felt so smooth.",
+          "translatedDutch": "We zijn superblij! Mijn billen hebben nog nooit zo zacht gevoeld."
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:Radio.35.Radio Host Marcos",
           "context": "",
-          "sourceEnglish": "I'm brimming with vitality and stamina."
+          "sourceEnglish": "I'm brimming with vitality and stamina.",
+          "translatedDutch": "Ik zit vol vitaliteit en uithouding."
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:Radio.36.Radio Host Marcos",
           "context": "Note: try to make a pun within the flavour :)",
-          "sourceEnglish": "And it comes in three flavours! My favourite is the Polar Mint."
+          "sourceEnglish": "And it comes in three flavours! My favourite is the Polar Mint.",
+          "translatedDutch": "En drie smaken! Mijn favoriet is de Muntige Muil."
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:Radio.33.Mme. Derriere",
           "context": "",
-          "sourceEnglish": "Yes that's our bestseller! I believe that EVERYONE can use this product and reap the benefits."
+          "sourceEnglish": "Yes that's our bestseller! I believe that EVERYONE can use this product and reap the benefits.",
+          "translatedDutch": "Onze best-seller! Ik denk dat iedereen de voordelen uit deze producten zullen halen."
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:Radio.37.Mme. Derriere",
           "context": "",
-          "sourceEnglish": "We feed it to our dog, and our children too!"
+          "sourceEnglish": "We feed it to our dog, and our children too!",
+          "translatedDutch": "We geven het aan de hond, zelfs onze kinderen!"
         },
         {
           "rowNumber": 16,
           "utterer": "MENU.Dialog:Radio.15",
           "context": "",
-          "sourceEnglish": "Stop listening"
+          "sourceEnglish": "Stop listening",
+          "translatedDutch": "Stoppen met luisteren."
         },
         {
           "rowNumber": 17,
           "utterer": "MENU.Dialog:Radio.16",
           "context": "",
-          "sourceEnglish": "Keep listening"
+          "sourceEnglish": "Keep listening",
+          "translatedDutch": "Verder luisteren."
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:Radio.39.Radio Host Marcos",
           "context": "",
-          "sourceEnglish": "And now it's time for the weather update..."
+          "sourceEnglish": "And now it's time for the weather update...",
+          "translatedDutch": "En nu tijd voor het weerbericht..."
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog:Radio.41.Radio Host Marcos",
           "context": "",
-          "sourceEnglish": "It's a scorcher! It's looking dry as a bone out there in the Greater Fannyside Region as the drought continues."
+          "sourceEnglish": "It's a scorcher! It's looking dry as a bone out there in the Greater Fannyside Region as the drought continues.",
+          "translatedDutch": "Bakken en braden vandaag! Het is kurkdroog in de regio van Muilegem en deze droogte blijft duren."
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:Radio.42.Radio Host Marcos",
           "context": "",
-          "sourceEnglish": "If you need a place to take the kids, get your butts to the Mecha City Zoo, or see the new show at the Big City Circus!"
+          "sourceEnglish": "If you need a place to take the kids, get your butts to the Mecha City Zoo, or see the new show at the Big City Circus!",
+          "translatedDutch": "Mocht je een plek zoeken om met je familie heen te gaan, rep je achterwerk naar de zoo van Technopolis, met het nieuwe Circus!"
         },
         {
           "rowNumber": 21,
           "utterer": "MENU.Dialog:Radio.19",
           "context": "",
-          "sourceEnglish": "Stop listening"
+          "sourceEnglish": "Stop listening",
+          "translatedDutch": "Stoppen met luisteren."
         },
         {
           "rowNumber": 22,
           "utterer": "MENU.Dialog:Radio.20",
           "context": "",
-          "sourceEnglish": "Keep listening"
+          "sourceEnglish": "Keep listening",
+          "translatedDutch": "Verder luisteren."
         },
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog:Radio.18.Smart Ass",
           "context": "",
-          "sourceEnglish": "Hey Trusty!"
+          "sourceEnglish": "Hey Trusty!",
+          "translatedDutch": "Hey TrAss!"
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog:Radio.22.Smart Ass",
           "context": "",
-          "sourceEnglish": "What's going on in there?! You didn't forget about the Protest, did you?!"
+          "sourceEnglish": "What's going on in there?! You didn't forget about the Protest, did you?!",
+          "translatedDutch": "Hoe zit het hier? Je bent het Protest toch niet vergeten?"
         }
       ]
     },
@@ -1663,19 +1932,22 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog: Theatre.1.Trusty Ass",
           "context": "Trusty stands on stage.",
-          "sourceEnglish": "These seats are all facing one direction."
+          "sourceEnglish": "These seats are all facing one direction.",
+          "translatedDutch": "De zitjes staan in dezelfde richting opgesteld."
         }
       ]
     },
@@ -1686,907 +1958,1058 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Sign_TheMines_Dirty.1.Dirty Sign",
           "context": "",
-          "sourceEnglish": "Butte Industry Coal Mines"
+          "sourceEnglish": "Butte Industry Coal Mines",
+          "translatedDutch": "Vanscheetvelde Koolmijnen"
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign",
           "context": "",
-          "sourceEnglish": "364 DAYS SINCE LAST MINING ACCIDENT"
+          "sourceEnglish": "364 DAYS SINCE LAST MINING ACCIDENT",
+          "translatedDutch": "364 DAGEN SINDS LAATSTE MIJNONGEVAL"
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
           "context": "",
-          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+          "translatedDutch": "Welkom op de hoeve van Muilegem. Ten westen, onze prachtige originele stallen en korenvelden."
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign",
           "context": "",
-          "sourceEnglish": "To the south, our state of the art Mill and Granary."
+          "sourceEnglish": "To the south, our state of the art Mill and Granary.",
+          "translatedDutch": "Ten zuiden, onze piekfijne Molen en"
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Sign_Highway_Official.1.Official Sign",
           "context": "",
-          "sourceEnglish": "NEW Derriere Highway: Connecting Urban and Rural Communities"
+          "sourceEnglish": "NEW Derriere Highway: Connecting Urban and Rural Communities",
+          "translatedDutch": "NIEUW Derrière-snelweg: brengt verbinding tussen stedelijke en landelijke gemeenschappen."
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign",
           "context": "",
-          "sourceEnglish": "The Long Way to the Forest Shrine"
+          "sourceEnglish": "The Long Way to the Forest Shrine",
+          "translatedDutch": "De Lange Weg naar het Schrijn in het Bos."
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign",
           "context": "",
-          "sourceEnglish": "CLOSED FOR REPAIRS"
+          "sourceEnglish": "CLOSED FOR REPAIRS",
+          "translatedDutch": "GESLOTEN WEGENS ONDERHOUD"
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Sign_Mill_Fancy.1.Fancy Sign",
           "context": "",
-          "sourceEnglish": "The State of the Art Mill and Granary"
+          "sourceEnglish": "The State of the Art Mill and Granary",
+          "translatedDutch": "De piekfijne Molen met Graanopslag."
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Sign_Outhouse_Shitty.1.Shitty Sign",
           "context": "",
-          "sourceEnglish": "The Outhouse"
+          "sourceEnglish": "The Outhouse",
+          "translatedDutch": "De Hudo."
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Sign_TheStable_Old.1.Old Sign",
           "context": "",
-          "sourceEnglish": "The Heritage Stable"
+          "sourceEnglish": "The Heritage Stable",
+          "translatedDutch": "De originele stallen."
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Sign_TheWell_Historic.1.Historic Sign",
           "context": "",
-          "sourceEnglish": "Ya'fur's Well"
+          "sourceEnglish": "Ya'fur's Well",
+          "translatedDutch": "De put van Ya'Fur."
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:Scarecrow.1.Trusty Ass",
           "context": "",
-          "sourceEnglish": "Ahh!"
+          "sourceEnglish": "Ahh!",
+          "translatedDutch": "Ahh!"
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:Scarecrow.2.Trusty Ass",
           "context": "",
-          "sourceEnglish": "It's just a scarecrow."
+          "sourceEnglish": "It's just a scarecrow.",
+          "translatedDutch": "Het is maar een vogelverschrikker."
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog:Tractor.1.Trusty Ass",
           "context": "",
-          "sourceEnglish": "It's the Tractor-Machine..."
+          "sourceEnglish": "It's the Tractor-Machine...",
+          "translatedDutch": "Dat is de Traktor-Machine..."
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:PickUpNice.3.Nice Ass",
           "context": "Recruit Nice Ass",
-          "sourceEnglish": "Hiya Comrade! I'm ready to go!"
+          "sourceEnglish": "Hiya Comrade! I'm ready to go!",
+          "translatedDutch": "Hela kameraad! Ik ben klaar om te vertrekken!"
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog:PickUpNice.5.Nice Ass",
           "context": "",
-          "sourceEnglish": "Wait, really? But Old Ass has been here forever!"
+          "sourceEnglish": "Wait, really? But Old Ass has been here forever!",
+          "translatedDutch": "Wacht, echt? Maar OAss is hier al sinds jaar en dag!"
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:PickUpNice.6.Nice Ass",
           "context": "",
-          "sourceEnglish": "Gosh, the Humans wouldn't do that, would they?"
+          "sourceEnglish": "Gosh, the Humans wouldn't do that, would they?",
+          "translatedDutch": "Goh, zouden de mensen dat echt doen?"
         },
         {
           "rowNumber": 21,
           "utterer": "MENU.Dialog:PickUpNice.7",
           "context": "",
-          "sourceEnglish": "Assure Nice Ass that the Humans must have made a mistake."
+          "sourceEnglish": "Assure Nice Ass that the Humans must have made a mistake.",
+          "translatedDutch": "Verzeker NicAss dat de mensen wellicht een fout hebben begaan."
         },
         {
           "rowNumber": 22,
           "utterer": "MENU.Dialog:PickUpNice.21",
           "context": "",
-          "sourceEnglish": "Tell Nice Ass that the Humans have been corrupted by the Machines."
+          "sourceEnglish": "Tell Nice Ass that the Humans have been corrupted by the Machines.",
+          "translatedDutch": "Zeg aan NicAss dat de mensen zijn verdorven door de Machines."
         },
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog:PickUpNice.11.Nice Ass",
           "context": "",
-          "sourceEnglish": "You're right Trusty! Accidents happen all the time!"
+          "sourceEnglish": "You're right Trusty! Accidents happen all the time!",
+          "translatedDutch": "Je hebt gelijk, TrAss! Ongelukken gebeuren nu eenmaal."
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog:PickUpNice.15.Nice Ass",
           "context": "",
-          "sourceEnglish": "Yikes!"
+          "sourceEnglish": "Yikes!",
+          "translatedDutch": "Jakkes!"
         },
         {
           "rowNumber": 25,
           "utterer": "SAY.Dialog:PickUpBig.28.Big Ass",
           "context": "",
-          "sourceEnglish": "Poor Old Ass."
+          "sourceEnglish": "Poor Old Ass.",
+          "translatedDutch": "Arme OlAss."
         },
         {
           "rowNumber": 26,
           "utterer": "SAY.Dialog:PickUpBig.29.Big Ass",
           "context": "Recruit Big Ass",
-          "sourceEnglish": "What a massive loss. Will the Protest continue?"
+          "sourceEnglish": "What a massive loss. Will the Protest continue?",
+          "translatedDutch": "Wat een verlies. Gaat het protest nog door?"
         },
         {
           "rowNumber": 27,
           "utterer": "MENU.Dialog:PickUpBig.30",
           "context": "",
-          "sourceEnglish": "Emphasize to Big Ass that he has a huge part to play in the movement."
+          "sourceEnglish": "Emphasize to Big Ass that he has a huge part to play in the movement.",
+          "translatedDutch": "Benadruk aan BigAss dat hij een bijzonder grote rol in het Protest heeft."
         },
         {
           "rowNumber": 28,
           "utterer": "MENU.Dialog:PickUpBig.31",
           "context": "",
-          "sourceEnglish": "Point out to Big Ass that a good leader is dispensable."
+          "sourceEnglish": "Point out to Big Ass that a good leader is dispensable.",
+          "translatedDutch": "Wijs aan BigAss uit dat een goede leider vervangbaar is."
         },
         {
           "rowNumber": 29,
           "utterer": "SAY.Dialog:PickUpBig.19.Big Ass",
           "context": "",
-          "sourceEnglish": "Don't say that, Trusty. What would we do without you?"
+          "sourceEnglish": "Don't say that, Trusty. What would we do without you?",
+          "translatedDutch": "Laat dat, TrAss. Wat zouden we zonder jou doen?"
         },
         {
           "rowNumber": 30,
           "utterer": "SAY.Dialog:PickUpBig.23.Big Ass",
           "context": "",
-          "sourceEnglish": "Well then I'm hungry to get started!"
+          "sourceEnglish": "Well then I'm hungry to get started!",
+          "translatedDutch": "Ik ben klaar om te beginnen. Ik krijg er zelfs honger van."
         },
         {
           "rowNumber": 31,
           "utterer": "SAY.Dialog:PickUpThirsty.28.Thirsty Ass",
           "context": "Recruit Thirsty Ass",
-          "sourceEnglish": "It's a damn sour swallow, but yer right. We can't let Old Ass's death be in vain."
+          "sourceEnglish": "It's a damn sour swallow, but yer right. We can't let Old Ass's death be in vain.",
+          "translatedDutch": "T'is nen zure dobber maar g'hebt gelijk. We kunnen OldAss niet voor niks laten sterven."
         },
         {
           "rowNumber": 32,
           "utterer": "MENU.Dialog:PickUpThirsty.34",
           "context": "",
-          "sourceEnglish": "Inform Thirsty Ass that Old Ass wants the Herd to continue the Protest."
+          "sourceEnglish": "Inform Thirsty Ass that Old Ass wants the Herd to continue the Protest.",
+          "translatedDutch": "Vertel aan ThAss dat OlAss wou dat de kudde het protest verderzet."
         },
         {
           "rowNumber": 33,
           "utterer": "MENU.Dialog:PickUpThirsty.35",
           "context": "",
-          "sourceEnglish": "Promise Thirsty Ass that Nice Ass will be there."
+          "sourceEnglish": "Promise Thirsty Ass that Nice Ass will be there.",
+          "translatedDutch": "Beloof aan ThAss dat NiAss aan het protest meedoet."
         },
         {
           "rowNumber": 34,
           "utterer": "SAY.Dialog:PickUpThirsty.33.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "*gulp*"
+          "sourceEnglish": "*gulp*",
+          "translatedDutch": "*gulp*"
         },
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:PickUpThirsty.20.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "...but I don't see Nice Ass nowhere...?"
+          "sourceEnglish": "...but I don't see Nice Ass nowhere...?",
+          "translatedDutch": "...ik kan NiAss nergens zien...?"
         },
         {
           "rowNumber": 36,
           "utterer": "SAY.Dialog:PickUpThirsty.24.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "YEEEHAAWWW I'M IN!"
+          "sourceEnglish": "YEEEHAAWWW I'M IN!",
+          "translatedDutch": "JIE-HAAA! IK ZEN ER!"
         },
         {
           "rowNumber": 37,
           "utterer": "SAY.Dialog:PickUpSmart.28.Smart Ass",
           "context": "Recruit Smart Ass",
-          "sourceEnglish": "Whaa? Old Ass is dead!? And YOU'RE in charge?"
+          "sourceEnglish": "Whaa? Old Ass is dead!? And YOU'RE in charge?",
+          "translatedDutch": "Waaa? OlAss is dood?! En JIJ bent de baas nu?"
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:PickUpSmart.29.Smart Ass",
           "context": "",
-          "sourceEnglish": "No offence Trusty, but you're a listener not a leader!"
+          "sourceEnglish": "No offence Trusty, but you're a listener not a leader!",
+          "translatedDutch": "Begrijp me niet verkeerd, TrAss, maar jij bent een luisteraar, niet een leider."
         },
         {
           "rowNumber": 39,
           "utterer": "MENU.Dialog:PickUpSmart.30",
           "context": "",
-          "sourceEnglish": "Admit to Smart Ass the Herd is lucky to have such an Ace Strategist."
+          "sourceEnglish": "Admit to Smart Ass the Herd is lucky to have such an Ace Strategist.",
+          "translatedDutch": "Geef toe aan SmAss dat de kudde gezegend is met zo'n top-strategist."
         },
         {
           "rowNumber": 40,
           "utterer": "MENU.Dialog:PickUpSmart.31",
           "context": "",
-          "sourceEnglish": "Confide in Smart Ass that you really need her support right now."
+          "sourceEnglish": "Confide in Smart Ass that you really need her support right now.",
+          "translatedDutch": "Neem SmAss in vertrouwen en zeg dat haar steun momenteel onmisbaar is."
         },
         {
           "rowNumber": 41,
           "utterer": "SAY.Dialog:PickUpSmart.19.Smart Ass",
           "context": "",
-          "sourceEnglish": "You could have at least admitted how lucky you are to have such an Ace Strategist."
+          "sourceEnglish": "You could have at least admitted how lucky you are to have such an Ace Strategist.",
+          "translatedDutch": "Je kon tenminste toegeven hoe veel geluk je hebt met zo'n top-strategist."
         },
         {
           "rowNumber": 42,
           "utterer": "SAY.Dialog:PickUpSmart.23.Smart Ass",
           "context": "",
-          "sourceEnglish": "Ha! You're damn right."
+          "sourceEnglish": "Ha! You're damn right.",
+          "translatedDutch": "Ha! Je hebt godverdomme gelijk."
         },
         {
           "rowNumber": 43,
           "utterer": "SAY.Dialog: SAD_Dawn.1.Sad Ass",
           "context": "Attempt to recruit Sad Ass",
-          "sourceEnglish": "Not Old Ass... I’m sorry Trusty. Things have gone from bad to worse..."
+          "sourceEnglish": "Not Old Ass... I’m sorry Trusty. Things have gone from bad to worse...",
+          "translatedDutch": "Oh nee, niet OlAss.. Het spijt me TrAss. De zaken zijn van kwaad naar erger gegaan..."
         },
         {
           "rowNumber": 44,
           "utterer": "SAY.Dialog: SAD_Dawn.3.Sad Ass",
           "context": "",
-          "sourceEnglish": "I think you should postpone the Protest..."
+          "sourceEnglish": "I think you should postpone the Protest...",
+          "translatedDutch": "Ik denk dat je het protest moet uitstellen."
         },
         {
           "rowNumber": 45,
           "utterer": "SAY.Dialog: SAD_Dawn.4.Sad Ass",
           "context": "",
-          "sourceEnglish": "I wouldn't go if I were you..."
+          "sourceEnglish": "I wouldn't go if I were you...",
+          "translatedDutch": "Ik zou niet gaan als ik jou was."
         },
         {
           "rowNumber": 46,
           "utterer": "MENU.Dialog: SAD_Dawn.20",
           "context": "",
-          "sourceEnglish": "Politely suggest that Sad Ass should suck it up."
+          "sourceEnglish": "Politely suggest that Sad Ass should suck it up.",
+          "translatedDutch": "Stel tactvol voor dat SadAss op haar tanden bijt."
         },
         {
           "rowNumber": 47,
           "utterer": "MENU.Dialog: SAD_Dawn.21",
           "context": "",
-          "sourceEnglish": "Commiserate with Sad Ass over all that has been lost."
+          "sourceEnglish": "Commiserate with Sad Ass over all that has been lost.",
+          "translatedDutch": "Herdenk met SadAss al wat er verloren is gegaan."
         },
         {
           "rowNumber": 48,
           "utterer": "SAY.Dialog: SAD_Dawn.7.Sad Ass",
           "context": "",
-          "sourceEnglish": "*whimper*"
+          "sourceEnglish": "*whimper*",
+          "translatedDutch": "*boehoehoehoe*"
         },
         {
           "rowNumber": 49,
           "utterer": "SAY.Dialog: SAD_Dawn.26.Sad Ass",
           "context": "",
-          "sourceEnglish": "*whimper*"
+          "sourceEnglish": "*whimper*",
+          "translatedDutch": "*boehoehoehoe*"
         },
         {
           "rowNumber": 50,
           "utterer": "SAY.Dialog: BAD_Dawn.4.Bad Ass",
           "context": "Attempt to recruit Bad Ass",
-          "sourceEnglish": "Fuck no."
+          "sourceEnglish": "Fuck no.",
+          "translatedDutch": "Absoluut niet."
         },
         {
           "rowNumber": 51,
           "utterer": "SAY.Dialog: BAD_Dawn.13.Bad Ass",
           "context": "",
-          "sourceEnglish": "Get out of my face."
+          "sourceEnglish": "Get out of my face.",
+          "translatedDutch": "Maak dat je weg bent."
         },
         {
           "rowNumber": 52,
           "utterer": "SAY.Dialog:2_Dialog: FarmComradesRecruited.1.Big Ass",
           "context": "After recruiting Nice, Big, Thirsty, Smart",
-          "sourceEnglish": "That's everyone. Now to the gate!"
+          "sourceEnglish": "That's everyone. Now to the gate!",
+          "translatedDutch": "We zijn compleet. Naar de poorten!"
         },
         {
           "rowNumber": 53,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.8.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "They need to be reminded of how darn useful our labour truly is!"
+          "sourceEnglish": "They need to be reminded of how darn useful our labour truly is!",
+          "translatedDutch": "Ze moeten er aan herinnerd worden hoe handig en nodig onze arbeid is!"
         },
         {
           "rowNumber": 54,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.9.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "They've been takin' away our livelihood, and giving us the ding dang Needle!"
+          "sourceEnglish": "They've been takin' away our livelihood, and giving us the ding dang Needle!",
+          "translatedDutch": "Ze nemen ons brood af, en in de plaats, krijgen we spuiten!"
         },
         {
           "rowNumber": 55,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.10.Big Ass",
           "context": "",
-          "sourceEnglish": "Asses have always been the backbone of this Farm since time immemorial."
+          "sourceEnglish": "Asses have always been the backbone of this Farm since time immemorial.",
+          "translatedDutch": "Ezels zijn altijd al de ruggegraat van deze Hoeve geweest. Sinds de oertijd en daarvoor."
         },
         {
           "rowNumber": 56,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.11.Big Ass",
           "context": "",
-          "sourceEnglish": "The weight of history is on our shoulders..."
+          "sourceEnglish": "The weight of history is on our shoulders...",
+          "translatedDutch": "Het gewicht van onze geschiedenis drukt ons op de schouders."
         },
         {
           "rowNumber": 57,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.13.Smart Ass",
           "context": "",
-          "sourceEnglish": "Here's the Plan!"
+          "sourceEnglish": "Here's the Plan!",
+          "translatedDutch": "Dit is het plan!"
         },
         {
           "rowNumber": 58,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.21.Smart Ass",
           "context": "",
-          "sourceEnglish": "ONE, we run through this gate."
+          "sourceEnglish": "ONE, we run through this gate.",
+          "translatedDutch": "ÉÉN: we lopen door de poort."
         },
         {
           "rowNumber": 59,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.20.Smart Ass",
           "context": "",
-          "sourceEnglish": "TWO, we cross the bridge with the Miners."
+          "sourceEnglish": "TWO, we cross the bridge with the Miners.",
+          "translatedDutch": "TWEE: we komen samen met de Mijn-ezels en steken de brug over."
         },
         {
           "rowNumber": 60,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.19.Smart Ass",
           "context": "",
-          "sourceEnglish": "THREE, we march through the Village, convince the Humans to give up their Machines..."
+          "sourceEnglish": "THREE, we march through the Village, convince the Humans to give up their Machines...",
+          "translatedDutch": "DRIE: we marcheren door het dorp van Muilegem en overtuigen de Mensen de Machines achter te laten."
         },
         {
           "rowNumber": 61,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.52.Smart Ass",
           "context": "",
-          "sourceEnglish": "AND GET OUR JOBS BACK!"
+          "sourceEnglish": "AND GET OUR JOBS BACK!",
+          "translatedDutch": "EN ONZE JOBS TERUG TE GEVEN!"
         },
         {
           "rowNumber": 62,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.18.Smart Ass",
           "context": "",
-          "sourceEnglish": "Easy."
+          "sourceEnglish": "Easy.",
+          "translatedDutch": "Poepsimpel."
         },
         {
           "rowNumber": 63,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.22.Nice Ass",
           "context": "",
-          "sourceEnglish": "Trusty?"
+          "sourceEnglish": "Trusty?",
+          "translatedDutch": "TrAss?"
         },
         {
           "rowNumber": 64,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.26.Nice Ass",
           "context": "",
-          "sourceEnglish": "What were Old Ass's last words? Perhaps they will inspire us!"
+          "sourceEnglish": "What were Old Ass's last words? Perhaps they will inspire us!",
+          "translatedDutch": "Wat waren de laatste woorden van OlAss? Misschien kunnen ze ons inspireren!"
         },
         {
           "rowNumber": 65,
           "utterer": "MENU.Dialog:3_Dialog: HesitationAtGate.30",
           "context": "",
-          "sourceEnglish": "Old Ass died saying: \"I'm scared.\""
+          "sourceEnglish": "Old Ass died saying: \"I'm scared.\"",
+          "translatedDutch": "OlAss stierf met \"Ik ben bang.\" als laatste woorden."
         },
         {
           "rowNumber": 66,
           "utterer": "MENU.Dialog:3_Dialog: HesitationAtGate.29",
           "context": "",
-          "sourceEnglish": "Old Ass died saying: \"Show the world the power of the Ass!\""
+          "sourceEnglish": "Old Ass died saying: \"Show the world the power of the Ass!\"",
+          "translatedDutch": "OlAss stierf met \"Laat de wereld het licht van EZEL POWER zien!\"."
         },
         {
           "rowNumber": 67,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.36.Nice Ass",
           "context": "",
-          "sourceEnglish": "Thanks Trusty, that's exactly what we needed to hear!"
+          "sourceEnglish": "Thanks Trusty, that's exactly what we needed to hear!",
+          "translatedDutch": "Merci, TrAss. Dat was net hetgene we moesten horen."
         },
         {
           "rowNumber": 68,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.35.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Spoken like a true Ass. YEEHAW!"
+          "sourceEnglish": "Spoken like a true Ass. YEEHAW!",
+          "translatedDutch": "Gelijk 'nen echte ezel gesproken!"
         },
         {
           "rowNumber": 69,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.34.Big Ass",
           "context": "",
-          "sourceEnglish": "A grand idea."
+          "sourceEnglish": "A grand idea.",
+          "translatedDutch": "Een groots idee."
         },
         {
           "rowNumber": 70,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.33.Smart Ass",
           "context": "",
-          "sourceEnglish": "That's catchy."
+          "sourceEnglish": "That's catchy.",
+          "translatedDutch": "Da's catchy."
         },
         {
           "rowNumber": 71,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.44.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Dang."
+          "sourceEnglish": "Dang.",
+          "translatedDutch": "Amai."
         },
         {
           "rowNumber": 72,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.43.Big Ass",
           "context": "",
-          "sourceEnglish": "What an empty feeling..."
+          "sourceEnglish": "What an empty feeling...",
+          "translatedDutch": "Wat een leeg gevoel..."
         },
         {
           "rowNumber": 73,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.42.Nice Ass",
           "context": "",
-          "sourceEnglish": "Yikes!"
+          "sourceEnglish": "Yikes!",
+          "translatedDutch": "Jakkes!"
         },
         {
           "rowNumber": 74,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.41.Trusty Ass",
           "context": "",
-          "sourceEnglish": "Old Ass died saying: \"I'm scared.\""
+          "sourceEnglish": "Old Ass died saying: \"I'm scared.\"",
+          "translatedDutch": "OlAss stierf met \"Ik ben bang.\" als laatste woorden."
         },
         {
           "rowNumber": 75,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.129.Smart Ass",
           "context": "",
-          "sourceEnglish": "Sheesh..."
+          "sourceEnglish": "Sheesh...",
+          "translatedDutch": "Jemig.."
         },
         {
           "rowNumber": 76,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.130.Trusty Ass",
           "context": "",
-          "sourceEnglish": "Old Ass died saying: \"Show the world the power of the Ass!\""
+          "sourceEnglish": "Old Ass died saying: \"Show the world the power of the Ass!\"",
+          "translatedDutch": "OlAss stierf met \"Laat de wereld het licht van EZEL POWER zien!\"."
         },
         {
           "rowNumber": 77,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.128.Big Ass",
           "context": "",
-          "sourceEnglish": "But the Humans have belittled us."
+          "sourceEnglish": "But the Humans have belittled us.",
+          "translatedDutch": "Maar de mensen hebben ons gekleineerd."
         },
         {
           "rowNumber": 78,
           "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.137.Nice Ass",
           "context": "",
-          "sourceEnglish": "Let's break through this gate and cross the bridge!"
+          "sourceEnglish": "Let's break through this gate and cross the bridge!",
+          "translatedDutch": "Laat ons door de poort breken en de brug oversteken!"
         },
         {
           "rowNumber": 79,
           "utterer": "SAY.Dialog:PickUpSlow.3.Slow Ass",
           "context": "Recruit Slow Ass",
-          "sourceEnglish": "Sorry Comrades. I've been doing my b-best."
+          "sourceEnglish": "Sorry Comrades. I've been doing my b-best.",
+          "translatedDutch": "S-sorry, k-k-kameraden. Ik p-p-probeer m-mijn best te d-doen."
         },
         {
           "rowNumber": 80,
           "utterer": "SAY.Dialog:PickUpSlow.4.Slow Ass",
           "context": "",
-          "sourceEnglish": "I stayed up all night b-but haven't finished fixing the b-bridge yet."
+          "sourceEnglish": "I stayed up all night b-but haven't finished fixing the b-bridge yet.",
+          "translatedDutch": "Ik b-b-ben de h-hele nacht opgebleven m-maar de b-b-brug is nog niet klaar."
         },
         {
           "rowNumber": 81,
           "utterer": "SAY.Dialog:PickUpSlow.6.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "DAMN! The Protest is ruined!"
+          "sourceEnglish": "DAMN! The Protest is ruined!",
+          "translatedDutch": "Godverdomme! Het protest is naar de kloten!"
         },
         {
           "rowNumber": 82,
           "utterer": "SAY.Dialog:PickUpSlow.9.Smart Ass",
           "context": "",
-          "sourceEnglish": "Shut up and calm down."
+          "sourceEnglish": "Shut up and calm down.",
+          "translatedDutch": "Hou je bek en kalmeer."
         },
         {
           "rowNumber": 83,
           "utterer": "SAY.Dialog:PickUpSlow.10.Smart Ass",
           "context": "",
-          "sourceEnglish": "No offence Slow Ass, but I knew this would happen when Old Ass put you on bridge duty."
+          "sourceEnglish": "No offence Slow Ass, but I knew this would happen when Old Ass put you on bridge duty.",
+          "translatedDutch": "No offence, SlAss, maar ik wist dat dit ging gebeuren wanneer OlAss je op brugdienst zette."
         },
         {
           "rowNumber": 84,
           "utterer": "SAY.Dialog:PickUpSlow.11.Smart Ass",
           "context": "",
-          "sourceEnglish": "So I made a Plan B:"
+          "sourceEnglish": "So I made a Plan B:",
+          "translatedDutch": "Daarom heb ik een Plan B:"
         },
         {
           "rowNumber": 85,
           "utterer": "SAY.Dialog:PickUpSlow.13.Slow Ass",
           "context": "",
-          "sourceEnglish": "*p-phew*"
+          "sourceEnglish": "*p-phew*",
+          "translatedDutch": "*oef*"
         },
         {
           "rowNumber": 86,
           "utterer": "SAY.Dialog:PickUpSlow.15.Smart Ass",
           "context": "",
-          "sourceEnglish": "ONE, we take the LONG way around to the NORTH."
+          "sourceEnglish": "ONE, we take the LONG way around to the NORTH.",
+          "translatedDutch": "ÉÉN: we nemen de LANGE weg rond, langs het Noorden."
         },
         {
           "rowNumber": 87,
           "utterer": "SAY.Dialog:PickUpSlow.16.Smart Ass",
           "context": "",
-          "sourceEnglish": "TWO, we meet up with the Miners and enter the Village from the EAST."
+          "sourceEnglish": "TWO, we meet up with the Miners and enter the Village from the EAST.",
+          "translatedDutch": "TWEE: we vervoegen de Mijn-Ezels en gaan het dorp binnen via het Oosten."
         },
         {
           "rowNumber": 88,
           "utterer": "SAY.Dialog:PickUpSlow.17.Smart Ass",
           "context": "",
-          "sourceEnglish": "THREE, we march through the Village, convince the Humans to give up their Machines..."
+          "sourceEnglish": "THREE, we march through the Village, convince the Humans to give up their Machines...",
+          "translatedDutch": "DRIE: we marcheren door het dorp van Muilegem, en overtuigen de Mensen de Machines achter te laten."
         },
         {
           "rowNumber": 89,
           "utterer": "SAY.Dialog:PickUpSlow.18.Smart Ass",
           "context": "",
-          "sourceEnglish": "AND GET OUR JOBS BACK!"
+          "sourceEnglish": "AND GET OUR JOBS BACK!",
+          "translatedDutch": "EN ONZE JOBS TERUG TE GEVEN!"
         },
         {
           "rowNumber": 90,
           "utterer": "SAY.Dialog:PickUpSlow.19.Smart Ass",
           "context": "",
-          "sourceEnglish": "Easy."
+          "sourceEnglish": "Easy.",
+          "translatedDutch": "Poepsimpel."
         },
         {
           "rowNumber": 91,
           "utterer": "SAY.Dialog:PickUpSlow.21.Slow Ass",
           "context": "",
-          "sourceEnglish": "The long way? Okay... b-but I won't b-be able to move as fast as everyone else due to my p-painful arthritis..."
+          "sourceEnglish": "The long way? Okay... b-but I won't b-be able to move as fast as everyone else due to my p-painful arthritis...",
+          "translatedDutch": "De l-l-lange weg? Oké m-m-maar vergeet niet dat ik z-z-zo snel niet kan met m-m-mijn pijnlijke artrose."
         },
         {
           "rowNumber": 92,
           "utterer": "SAY.Dialog:PickUpSlow.22.Slow Ass",
           "context": "",
-          "sourceEnglish": "B-but I p-promise I'll do my b-b-best!"
+          "sourceEnglish": "B-but I p-promise I'll do my b-b-best!",
+          "translatedDutch": "M-m-maar ik beloof d-d-dat ik mijn b-b-best zal d-d-d-d-doen!"
         },
         {
           "rowNumber": 93,
           "utterer": "SAY.Dialog:PickUpKick.4.Kick Ass",
           "context": "Recruit Kick Ass and Sick Ass",
-          "sourceEnglish": "You must be TRUSTY!"
+          "sourceEnglish": "You must be TRUSTY!",
+          "translatedDutch": "Jij moet TrAss zijn!"
         },
         {
           "rowNumber": 94,
           "utterer": "SAY.Dialog:PickUpKick.16.Kick Ass",
           "context": "",
-          "sourceEnglish": "I'm KICK ASS and this is my Sister SICK ASS!"
+          "sourceEnglish": "I'm KICK ASS and this is my Sister SICK ASS!",
+          "translatedDutch": "Ik ben KNALEZEL en dit is mijn zuster, DIARRHEEZEL"
         },
         {
           "rowNumber": 95,
           "utterer": "SAY.Dialog:PickUpKick.3.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": "*kuch kuch*"
         },
         {
           "rowNumber": 96,
           "utterer": "SAY.Dialog:PickUpKick.5.Kick Ass",
           "context": "",
-          "sourceEnglish": "What happened to meeting AT THE BRIDGE?!"
+          "sourceEnglish": "What happened to meeting AT THE BRIDGE?!",
+          "translatedDutch": "Waar is de bijeenkomst op DE BRUG?!"
         },
         {
           "rowNumber": 97,
           "utterer": "SAY.Dialog:PickUpKick.6.Kick Ass",
           "context": "",
-          "sourceEnglish": "Wait—where's OLD ASS?!"
+          "sourceEnglish": "Wait—where's OLD ASS?!",
+          "translatedDutch": "Wacht — WAAR IS OLASS?"
         },
         {
           "rowNumber": 98,
           "utterer": "SAY.Dialog:PickUpKick.17.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "They gave him the ding dang Needle!"
+          "sourceEnglish": "They gave him the ding dang Needle!",
+          "translatedDutch": "Ze hebbe'n hem 't Spuitje geven!"
         },
         {
           "rowNumber": 99,
           "utterer": "SAY.Dialog:PickUpKick.7.Kick Ass",
           "context": "",
-          "sourceEnglish": "@#$%&! That makes me SO ANGRY!"
+          "sourceEnglish": "@#$%&! That makes me SO ANGRY!",
+          "translatedDutch": "@#$%&! Daar wordt ik nu eens KWAAD VAN!"
         },
         {
           "rowNumber": 100,
           "utterer": "SAY.Dialog:PickUpKick.8.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": "*KUCH*"
         },
         {
           "rowNumber": 101,
           "utterer": "SAY.Dialog:PickUpKick.28.Kick Ass",
           "context": "",
-          "sourceEnglish": "LET'S PROTEST!"
+          "sourceEnglish": "LET'S PROTEST!",
+          "translatedDutch": "KOM, WE PROTESTEREN!"
         },
         {
           "rowNumber": 102,
           "utterer": "SAY.Dialog:PickUpHard.3.Hard Ass",
           "context": "Recruit Hard Ass",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": "..."
         },
         {
           "rowNumber": 103,
           "utterer": "SAY.Dialog:PickUpHard.4.Hard Ass",
           "context": "",
-          "sourceEnglish": "Old Ass got the Needle?"
+          "sourceEnglish": "Old Ass got the Needle?",
+          "translatedDutch": "OlAss heeft de Spuit gekregen?"
         },
         {
           "rowNumber": 104,
           "utterer": "SAY.Dialog:PickUpHard.5.Hard Ass",
           "context": "",
-          "sourceEnglish": "I know how difficult it is to watch a Comrade die, even if they will one day be reborn."
+          "sourceEnglish": "I know how difficult it is to watch a Comrade die, even if they will one day be reborn.",
+          "translatedDutch": "Ik weet hoe moeilijk het is om een Kameraad tenonder te zien gaan, zelfs al komen ze op een dag terug."
         },
         {
           "rowNumber": 105,
           "utterer": "SAY.Dialog:PickUpHard.6.Hard Ass",
           "context": "",
-          "sourceEnglish": "We Miners have a saying:"
+          "sourceEnglish": "We Miners have a saying:",
+          "translatedDutch": "Wij, Mijn-Ezels hebben een gezegde:"
         },
         {
           "rowNumber": 106,
           "utterer": "SAY.Dialog:PickUpHard.7.Hard Ass",
           "context": "",
-          "sourceEnglish": "\"You only hit rock bottom when you quit.\""
+          "sourceEnglish": "\"You only hit rock bottom when you quit.\"",
+          "translatedDutch": "\"Pas als je 't opgeeft, is 't gedaan.\""
         },
         {
           "rowNumber": 107,
           "utterer": "SAY.Dialog:PickUpHard.9.Hard Ass",
           "context": "",
-          "sourceEnglish": "Let's go."
+          "sourceEnglish": "Let's go.",
+          "translatedDutch": "Kom."
         },
         {
           "rowNumber": 108,
           "utterer": "SAY.Dialog:1_Dialog: MoreComradesRequired.1.Nice Ass",
           "context": "Said if the player tries to go ahead before recruiting everyone",
-          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind."
+          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind.",
+          "translatedDutch": "OlAss zou niet willen dat we iemand achterlaten."
         },
         {
           "rowNumber": 109,
           "utterer": "SAY.Dialog:NoComradesLeftBehind_Slow.1.Nice Ass",
           "context": "",
-          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind."
+          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind.",
+          "translatedDutch": "OlAss zou niet willen dat we iemand achterlaten."
         },
         {
           "rowNumber": 110,
           "utterer": "SAY.Dialog:NoComradesLeftBehind_Kick.1.Nice Ass",
           "context": "",
-          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind."
+          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind.",
+          "translatedDutch": "OlAss zou niet willen dat we iemand achterlaten."
         },
         {
           "rowNumber": 111,
           "utterer": "SAY.Dialog:NoComradesLeftBehind_Hard.1.Nice Ass",
           "context": "",
-          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind."
+          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind.",
+          "translatedDutch": "OlAss zou niet willen dat we iemand achterlaten."
         },
         {
           "rowNumber": 112,
           "utterer": "SAY.Dialog:AssPowerChant.56.Trusty Ass",
           "context": "Protest Chant based on whether Trusty tells the truth of Old's last words or lies",
-          "sourceEnglish": "The Herd's Morale is low, now is the time to SAY something..."
+          "sourceEnglish": "The Herd's Morale is low, now is the time to SAY something...",
+          "translatedDutch": "Het moraal van de kudde is niet best, nu is het de moment om iets te ZEGGEN..."
         },
         {
           "rowNumber": 113,
           "utterer": "SAY.Dialog:AssPowerChant.57.Trusty Ass",
           "context": "",
-          "sourceEnglish": "REMEMBER OLD ASS'S PARTING WORDS:"
+          "sourceEnglish": "REMEMBER OLD ASS'S PARTING WORDS:",
+          "translatedDutch": "ONTHOUD OLDASS' LAATSTE WOORDEN:"
         },
         {
           "rowNumber": 114,
           "utterer": "SAY.Dialog:AssPowerChant.22.Trusty Ass",
           "context": "If lies",
-          "sourceEnglish": "SHOW THE WORLD THE POWER OF THE ASS!"
+          "sourceEnglish": "SHOW THE WORLD THE POWER OF THE ASS!",
+          "translatedDutch": "LAAT DE WERELD HET LICHT VAN DE ASS POWER ZIEN!"
         },
         {
           "rowNumber": 115,
           "utterer": "SAY.Dialog:AssPowerChant.23.Trusty Ass",
           "context": "",
-          "sourceEnglish": "WHEN I SAY ASS, YOU SAY POWER!"
+          "sourceEnglish": "WHEN I SAY ASS, YOU SAY POWER!",
+          "translatedDutch": "IK ZEG ASS, JIJ ZEGT POWER!"
         },
         {
           "rowNumber": 116,
           "utterer": "SAY.Dialog:AssPowerChant.24.Trusty Ass",
           "context": "",
-          "sourceEnglish": "ASS!"
+          "sourceEnglish": "ASS!",
+          "translatedDutch": "ASS!"
         },
         {
           "rowNumber": 117,
           "utterer": "SAY.Dialog:AssPowerChant.25.The Masses",
           "context": "",
-          "sourceEnglish": "POWER!"
+          "sourceEnglish": "POWER!",
+          "translatedDutch": "POWER!"
         },
         {
           "rowNumber": 118,
           "utterer": "SAY.Dialog:AssPowerChant.60.Trusty Ass",
           "context": "",
-          "sourceEnglish": "ASS!"
+          "sourceEnglish": "ASS!",
+          "translatedDutch": "ASS!"
         },
         {
           "rowNumber": 119,
           "utterer": "SAY.Dialog:AssPowerChant.61.The Masses",
           "context": "",
-          "sourceEnglish": "POWER!"
+          "sourceEnglish": "POWER!",
+          "translatedDutch": "POWER!"
         },
         {
           "rowNumber": 120,
           "utterer": "SAY.Dialog:AssPowerChant.44.Trusty Ass",
           "context": "If tells the truth",
-          "sourceEnglish": "Let me hear you say... DON'T BE SCARED!"
+          "sourceEnglish": "Let me hear you say... DON'T BE SCARED!",
+          "translatedDutch": "Laat me jullie het horen zeggen..WEES NIET BANG!"
         },
         {
           "rowNumber": 121,
           "utterer": "SAY.Dialog:AssPowerChant.45.The Masses",
           "context": "",
-          "sourceEnglish": "DON'T BE SCARED!"
+          "sourceEnglish": "DON'T BE SCARED!",
+          "translatedDutch": "WEEST NIET BANG!"
         },
         {
           "rowNumber": 122,
           "utterer": "SAY.Dialog: Highway.1.The Masses",
           "context": "",
-          "sourceEnglish": "Trusty Ass? Where are you going? The Village isn't that way."
+          "sourceEnglish": "Trusty Ass? Where are you going? The Village isn't that way.",
+          "translatedDutch": "TrAss? Waar loop jij naartoe? Het dorp is niet die kant uit."
         },
         {
           "rowNumber": 123,
           "utterer": "SAY.Dialog: This is a Revolution!.3.The Masses",
           "context": "The Herd arrives at the Village",
-          "sourceEnglish": "THIS IS A PROTEST!"
+          "sourceEnglish": "THIS IS A PROTEST!",
+          "translatedDutch": "DIT IS EEN PROTEST!"
         },
         {
           "rowNumber": 124,
           "utterer": "SAY.Dialog: This is a Revolution!.5.The Masses",
           "context": "",
-          "sourceEnglish": "RESPECT OUR HISTORY!"
+          "sourceEnglish": "RESPECT OUR HISTORY!",
+          "translatedDutch": "RESPECTEER ONZE GESCHIEDENIS!"
         },
         {
           "rowNumber": 125,
           "utterer": "SAY.Dialog: This is a Revolution!.1.The Masses",
           "context": "",
-          "sourceEnglish": "RESPECT ASS CULTURE!"
+          "sourceEnglish": "RESPECT ASS CULTURE!",
+          "translatedDutch": "RESPECTEER ASS CULTURE"
         },
         {
           "rowNumber": 126,
           "utterer": "SAY.Dialog: This is a Revolution!.6.The Masses",
           "context": "",
-          "sourceEnglish": "GIVE US OUR JOBS BACK!"
+          "sourceEnglish": "GIVE US OUR JOBS BACK!",
+          "translatedDutch": "GEEF ONZE JOBS TERUG!"
         },
         {
           "rowNumber": 127,
           "utterer": "SAY.Dialog:AttemptToExitVillage.1.The Masses",
           "context": "",
-          "sourceEnglish": "Trusty Ass! Where are you going?"
+          "sourceEnglish": "Trusty Ass! Where are you going?",
+          "translatedDutch": "TrAss! Waar ga jij heen?"
         },
         {
           "rowNumber": 128,
           "utterer": "SAY.Dialog: FindTheWellConvo.3.Nice Ass",
           "context": "They realize the village is on fire and the Humans are burning alive",
-          "sourceEnglish": "Gosh, did the Protest start without us?!"
+          "sourceEnglish": "Gosh, did the Protest start without us?!",
+          "translatedDutch": "Oei, is het protest zonder ons gestart?"
         },
         {
           "rowNumber": 129,
           "utterer": "SAY.Dialog: FindTheWellConvo.1.Hard Ass",
           "context": "",
-          "sourceEnglish": "That smell, those screams—who did this?"
+          "sourceEnglish": "That smell, those screams—who did this?",
+          "translatedDutch": "Die geur, die schreeuwen — wie heeft dit gedaan?"
         },
         {
           "rowNumber": 130,
           "utterer": "SAY.Dialog: FindTheWellConvo.2.Smart Ass",
           "context": "",
-          "sourceEnglish": "This wasn't the Plan! We're here to get work, not burn the employers!"
+          "sourceEnglish": "This wasn't the Plan! We're here to get work, not burn the employers!",
+          "translatedDutch": "Dit was niet de afspraak! We zijn hier om werk te verzekeren, niet de werkgevers af te branden!"
         },
         {
           "rowNumber": 131,
           "utterer": "SAY.Dialog: FindTheWellConvo.12.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "I used to work 'round here in the ol' days! There's a WELL nearby!"
+          "sourceEnglish": "I used to work 'round here in the ol' days! There's a WELL nearby!",
+          "translatedDutch": "Ik weet da' nog heel goe', d'ouwe dagen. D'er is ne PUT vlakbij!"
         },
         {
           "rowNumber": 132,
           "utterer": "SAY.Dialog: FindTheWellConvo.16.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "YEEHAW! I can taste it! Let's git some water and put out these dang fires!"
+          "sourceEnglish": "YEEHAW! I can taste it! Let's git some water and put out these dang fires!",
+          "translatedDutch": "JIE-HAAA! Ik kan het bijna proeven, sie. Kom, we gaan water halen en da'dier blussen!"
         },
         {
           "rowNumber": 133,
           "utterer": "SAY.Dialog: FindTheWellConvo.15.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "C'mon, git CRACKIN'!"
+          "sourceEnglish": "C'mon, git CRACKIN'!",
+          "translatedDutch": "Kom! Begin't eraan!"
         },
         {
           "rowNumber": 134,
           "utterer": "SAY.Dialog:VillageWaterDialogWest.2.Trusty Ass",
           "context": "",
-          "sourceEnglish": "Thirsty thinks it'd be easier to get water from the Well."
+          "sourceEnglish": "Thirsty thinks it'd be easier to get water from the Well.",
+          "translatedDutch": "ThAss denkt dat het beter is om water uit de put te halen."
         },
         {
           "rowNumber": 135,
           "utterer": "SAY.Dialog:VillageWaterDialogSouth.2.Trusty Ass",
           "context": "",
-          "sourceEnglish": "Thirsty thinks it'd be easier to get water from the Well!"
+          "sourceEnglish": "Thirsty thinks it'd be easier to get water from the Well!",
+          "translatedDutch": "ThAss denkt dat het beter is om water uit de put te halen."
         },
         {
           "rowNumber": 136,
           "utterer": "SAY.Dialog: WellScene.50.Smart Ass",
           "context": "The Herd finds the Well",
-          "sourceEnglish": "Come on everyone, put out the fire with the Well water!"
+          "sourceEnglish": "Come on everyone, put out the fire with the Well water!",
+          "translatedDutch": "ThAss denkt dat het beter is om water uit de put te halen."
         },
         {
           "rowNumber": 137,
           "utterer": "SAY.Dialog: WellScene.86.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Aw shucks. There's no dang water in the damn Well!"
+          "sourceEnglish": "Aw shucks. There's no dang water in the damn Well!",
+          "translatedDutch": "Ai verdorie, er is geen water in die'ne put!"
         },
         {
           "rowNumber": 138,
           "utterer": "SAY.Dialog: WellScene.55.Big Ass",
           "context": "",
-          "sourceEnglish": "{vpunch=100,0.75}UH OH!"
+          "sourceEnglish": "{vpunch=100,0.75}UH OH!",
+          "translatedDutch": "{vpunch=100,0.75}OH OH!"
         },
         {
           "rowNumber": 139,
           "utterer": "SAY.Dialog: WellScene.10.Nice Ass",
           "context": "",
-          "sourceEnglish": "How are we gonna rescue the Humans?"
+          "sourceEnglish": "How are we gonna rescue the Humans?",
+          "translatedDutch": "Hoe gaan we de mensen nu redden?"
         },
         {
           "rowNumber": 140,
           "utterer": "SAY.Dialog: WellScene.63.Hard Ass",
           "context": "",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 141,
           "utterer": "SAY.Dialog: WellScene.66.Kick Ass",
           "context": "",
-          "sourceEnglish": "@#$%&! What do we DO?!"
+          "sourceEnglish": "@#$%&! What do we DO?!",
+          "translatedDutch": "@#$%&! en WAT NU?"
         },
         {
           "rowNumber": 142,
           "utterer": "SAY.Dialog: WellScene.58.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": "*KUCH KUCH*"
         },
         {
           "rowNumber": 143,
           "utterer": "SAY.Dialog: WellScene.92.Slow Ass",
           "context": "",
-          "sourceEnglish": "P-please everyone! Trusty will know what to do!"
+          "sourceEnglish": "P-please everyone! Trusty will know what to do!",
+          "translatedDutch": "K-k-kalmeer, iedereen! TrAss w-w-weet wel wat te doen."
         },
         {
           "rowNumber": 144,
           "utterer": "SAY.Dialog: WellScene.91.Slow Ass",
           "context": "",
-          "sourceEnglish": "Right Trusty?"
+          "sourceEnglish": "Right Trusty?",
+          "translatedDutch": "T-t-toch, TrAss?"
         },
         {
           "rowNumber": 145,
           "utterer": "MENU.Dialog: WellScene.83",
           "context": "Trusty chooses how to respond",
-          "sourceEnglish": "Be transparent and admit to the Masses that you don't know what to do."
+          "sourceEnglish": "Be transparent and admit to the Masses that you don't know what to do.",
+          "translatedDutch": "Wees eerlijk en geef aan de kudde toe dat je geen idee hebt wat je nu moet doen."
         },
         {
           "rowNumber": 146,
           "utterer": "MENU.Dialog: WellScene.84",
           "context": "",
-          "sourceEnglish": "Rise to the occasion, open your mouth, and deliver a stirring speech."
+          "sourceEnglish": "Rise to the occasion, open your mouth, and deliver a stirring speech.",
+          "translatedDutch": "Vat de ezel bij de oren, trek je muil open en geef een daverende speech."
         },
         {
           "rowNumber": 147,
           "utterer": "MENU.Dialog: WellScene.85",
           "context": "",
-          "sourceEnglish": "Solemnly assume the Traditional Ass Posture that has inspired Herds for generations."
+          "sourceEnglish": "Solemnly assume the Traditional Ass Posture that has inspired Herds for generations.",
+          "translatedDutch": "Neem plechtig de traditionele ezelshouding aan, die generaties aan Kuddes heeft gëinspireerd."
         },
         {
           "rowNumber": 148,
           "utterer": "SAY.Dialog: WellScene.104.Trusty Ass",
           "context": "",
-          "sourceEnglish": "I've analyzed the situation and—"
+          "sourceEnglish": "I've analyzed the situation and—",
+          "translatedDutch": "Ik heb de situatie bekeken en—"
         },
         {
           "rowNumber": 149,
           "utterer": "SAY.Dialog: WellScene.105.Trusty Ass",
           "context": "",
-          "sourceEnglish": "In the beginning there was Ass. Now there is..."
+          "sourceEnglish": "In the beginning there was Ass. Now there is...",
+          "translatedDutch": "In den beginne, was er ezel... En nu..."
         },
         {
           "rowNumber": 150,
           "utterer": "SAY.Dialog: WellScene.106.Trusty Ass",
           "context": "",
-          "sourceEnglish": "Ahem—"
+          "sourceEnglish": "Ahem—",
+          "translatedDutch": "Ahum—"
         },
         {
           "rowNumber": 151,
           "utterer": "SAY.Dialog: WellScene.93.Trusty Ass",
           "context": "Trusty falls into the well and dies",
-          "sourceEnglish": "Whoops!"
+          "sourceEnglish": "Whoops!",
+          "translatedDutch": "Ooeeeeps!"
         },
         {
           "rowNumber": 152,
           "utterer": "SAY.Dialog: WellScene.81.Slow Ass",
           "context": "",
-          "sourceEnglish": "{s}{s=5}COMRADE!!! {/s}"
+          "sourceEnglish": "{s}{s=5}COMRADE!!! {/s}",
+          "translatedDutch": "{s}{s=5}KAMERAAD! {/s}"
         }
       ]
     },
@@ -2597,79 +3020,92 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "3D Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed tempus metus nec neque ullam corper pulvinar. Pellen tesque dignissim, sapien eget pretium euismod qu.",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:PreMateChosen.1.Happy Ass",
           "context": "Dialogue with the Asses on the Astral Plane.",
-          "sourceEnglish": "Hello Newbie!"
+          "sourceEnglish": "Hello Newbie!",
+          "translatedDutch": "Hoi, nieuweling."
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:PreMateChosen.7.Happy Ass",
           "context": "",
-          "sourceEnglish": "We're here to help with your welcome ritual."
+          "sourceEnglish": "We're here to help with your welcome ritual.",
+          "translatedDutch": "We zijn hier om te helpen met je welkomstritueel."
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:PreMateChosen.4.Happy Ass",
           "context": "",
-          "sourceEnglish": "Which one of us will you choose?"
+          "sourceEnglish": "Which one of us will you choose?",
+          "translatedDutch": "Welke van ons wil je kiezen?"
         },
         {
           "rowNumber": 6,
           "utterer": "MENU.Dialog:PreMateChosen.14",
           "context": "Option 1.1.",
-          "sourceEnglish": "Spicy Ass"
+          "sourceEnglish": "Spicy Ass",
+          "translatedDutch": "Spicy Ass"
         },
         {
           "rowNumber": 7,
           "utterer": "MENU.Dialog:PreMateChosen.19",
           "context": "Option 1.2.",
-          "sourceEnglish": "Happy Ass"
+          "sourceEnglish": "Happy Ass",
+          "translatedDutch": "Happy Ass"
         },
         {
           "rowNumber": 8,
           "utterer": "MENU.Dialog:PreMateChosen.18",
           "context": "Option 1.3.",
-          "sourceEnglish": "Dirty Ass"
+          "sourceEnglish": "Dirty Ass",
+          "translatedDutch": "Dirty Ass"
         },
         {
           "rowNumber": 9,
           "utterer": "MENU.Dialog:PreMateChosen.17",
           "context": "Option 1.4.",
-          "sourceEnglish": "Hairy Ass"
+          "sourceEnglish": "Hairy Ass",
+          "translatedDutch": "Hairy Ass"
         },
         {
           "rowNumber": 10,
           "utterer": "MENU.Dialog:PreMateChosen.16",
           "context": "Option 1.5.",
-          "sourceEnglish": "Ugly Ass"
+          "sourceEnglish": "Ugly Ass",
+          "translatedDutch": "Ugly Ass"
         },
         {
           "rowNumber": 11,
           "utterer": "MENU.Dialog:PreMateChosen.15",
           "context": "Option 1.6.",
-          "sourceEnglish": "**** Ass"
+          "sourceEnglish": "**** Ass",
+          "translatedDutch": "**** Ass"
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:PreMateChosen.10.Happy Ass",
           "context": "After the player has chosen their partner for the welcome ritual.",
-          "sourceEnglish": "Great choice, Newbie."
+          "sourceEnglish": "Great choice, Newbie.",
+          "translatedDutch": "Mooie keuze, nieweling."
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:PreMateChosen.11.Happy Ass",
           "context": "End of dialogue and into the sex rhythm game.",
-          "sourceEnglish": "Follow your instincts and feel the love!"
+          "sourceEnglish": "Follow your instincts and feel the love!",
+          "translatedDutch": "Volg je instinct en Feel The Love!"
         }
       ]
     },
@@ -2680,25 +3116,29 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "WRITE.DialogLocalizer.1",
           "context": "Sex rhythm game UI.",
-          "sourceEnglish": "PLEASURE:"
+          "sourceEnglish": "PLEASURE:",
+          "translatedDutch": "PLEZIER:"
         },
         {
           "rowNumber": 4,
           "utterer": "WRITE.DialogLocalizer.2",
           "context": "Sex rhythm game UI.",
-          "sourceEnglish": "CHAIN"
+          "sourceEnglish": "CHAIN",
+          "translatedDutch": "COMBO"
         }
       ]
     }

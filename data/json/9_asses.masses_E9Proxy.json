@@ -1,6 +1,6 @@
 {
   "fileName": "9_asses.masses_E9Proxy",
-  "processedAt": "2025-08-02T03:35:26.668Z",
+  "processedAt": "2025-08-02T03:53:54.071Z",
   "sheets": [
     {
       "sheetName": "E9_EpisodeTitle_localization",
@@ -9,25 +9,29 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
-          "sourceEnglish": "EPISODE NINE"
+          "sourceEnglish": "EPISODE NINE",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
-          "sourceEnglish": "THE MACHINES"
+          "sourceEnglish": "THE MACHINES",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
-          "sourceEnglish": "Press X to Begin"
+          "sourceEnglish": "Press X to Begin",
+          "translatedDutch": ""
         }
       ]
     },
@@ -38,73 +42,85 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "",
-          "sourceEnglish": "Donkeys"
+          "sourceEnglish": "Donkeys",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
-          "sourceEnglish": "Equines"
+          "sourceEnglish": "Equines",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
-          "sourceEnglish": "Mammals"
+          "sourceEnglish": "Mammals",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "",
-          "sourceEnglish": "Animals"
+          "sourceEnglish": "Animals",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
-          "sourceEnglish": "Animate Beings"
+          "sourceEnglish": "Animate Beings",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "",
-          "sourceEnglish": "Somethings"
+          "sourceEnglish": "Somethings",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "",
-          "sourceEnglish": "Inanimate Objects"
+          "sourceEnglish": "Inanimate Objects",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "",
-          "sourceEnglish": "Tools"
+          "sourceEnglish": "Tools",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "WRITE.Dialog:Localizer.12",
           "context": "",
-          "sourceEnglish": "Machines"
+          "sourceEnglish": "Machines",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "WRITE.Dialog:Localizer.11",
           "context": "",
-          "sourceEnglish": "Computers"
+          "sourceEnglish": "Computers",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "WRITE.Dialog:Localizer.10",
           "context": "",
-          "sourceEnglish": "Robots"
+          "sourceEnglish": "Robots",
+          "translatedDutch": ""
         }
       ]
     },
@@ -115,553 +131,645 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:BadTransformation.544.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I did it... I really did it!"
+          "sourceEnglish": "I did it... I really did it!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:BadTransformation.546.Cole-Machine",
           "context": "",
-          "sourceEnglish": "All our work paid off—the Ass Soul Transfer was successful!"
+          "sourceEnglish": "All our work paid off—the Ass Soul Transfer was successful!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:BadTransformation.547.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I can finally go to Mecha City!"
+          "sourceEnglish": "I can finally go to Mecha City!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:BadTransformation.2.{$NewName}",
           "context": "",
-          "sourceEnglish": "Uncle Bad Ass?"
+          "sourceEnglish": "Uncle Bad Ass?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:BadTransformation.6.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Don't call me Bad Ass, my name is Cole."
+          "sourceEnglish": "Don't call me Bad Ass, my name is Cole.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Dialog:BadTransformation.8.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I've finally shed that ridiculous donkey form!"
+          "sourceEnglish": "I've finally shed that ridiculous donkey form!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog:BadTransformation.11.{$NewName}",
           "context": "",
-          "sourceEnglish": "Uncle Bad—Cole... is being a donkey such a terrible thing?"
+          "sourceEnglish": "Uncle Bad—Cole... is being a donkey such a terrible thing?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:BadTransformation.12.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Kid, there's no good reason to be a 'donkey' or a 'Human' or whatever."
+          "sourceEnglish": "Kid, there's no good reason to be a 'donkey' or a 'Human' or whatever.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Dialog:BadTransformation.20.Cole-Machine",
           "context": "",
-          "sourceEnglish": "It's all about what's on the inside and what you aspire to do in this world."
+          "sourceEnglish": "It's all about what's on the inside and what you aspire to do in this world.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:BadTransformation.17.Cole-Machine",
           "context": "",
-          "sourceEnglish": "But."
+          "sourceEnglish": "But.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:BadTransformation.15.Cole-Machine",
           "context": "",
-          "sourceEnglish": "If you have a restless soul that wants to be taken seriously and change this world..."
+          "sourceEnglish": "If you have a restless soul that wants to be taken seriously and change this world...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:BadTransformation.25.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Then, given the historical prejudice against donkeys, being a donkey is..."
+          "sourceEnglish": "Then, given the historical prejudice against donkeys, being a donkey is...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:BadTransformation.23.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Not fun."
+          "sourceEnglish": "Not fun.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog:BadTransformation.656.Cole-Machine",
           "context": "",
-          "sourceEnglish": "The System is rigged against donkeys, among others."
+          "sourceEnglish": "The System is rigged against donkeys, among others.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog:BadTransformation.22.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Thanks for all your help kid."
+          "sourceEnglish": "Thanks for all your help kid.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:BadTransformation.21.{$NewName}",
           "context": "",
-          "sourceEnglish": "Are you going to Mecha City now...?"
+          "sourceEnglish": "Are you going to Mecha City now...?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "MENU.Dialog:BadTransformation.636",
           "context": "Dialogue option 1.",
-          "sourceEnglish": "I'll come back to visit."
+          "sourceEnglish": "I'll come back to visit.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:BadTransformation.634.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Don't worry, I'll come back to visit."
+          "sourceEnglish": "Don't worry, I'll come back to visit.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "MENU.Dialog:BadTransformation.637",
           "context": "Dialogue option 2.",
-          "sourceEnglish": "I'll never forget you."
+          "sourceEnglish": "I'll never forget you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog:BadTransformation.635.Cole-Machine",
           "context": "",
-          "sourceEnglish": "You were a great Assistant. I'll never forget you."
+          "sourceEnglish": "You were a great Assistant. I'll never forget you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog:BadTransformation.630.{$NewName}",
           "context": "",
-          "sourceEnglish": "But I want to see Mecha City too! We can go together!"
+          "sourceEnglish": "But I want to see Mecha City too! We can go together!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog:BadTransformation.631.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Kid, the world out there isn't safe for donkeys. You know that."
+          "sourceEnglish": "Kid, the world out there isn't safe for donkeys. You know that.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "SAY.Dialog:BadTransformation.551.{$NewName}",
           "context": "",
-          "sourceEnglish": "Then... can I become a Machine too?"
+          "sourceEnglish": "Then... can I become a Machine too?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "MENU.Dialog:BadTransformation.609",
           "context": "",
-          "sourceEnglish": "We can play games during our breaks."
+          "sourceEnglish": "We can play games during our breaks.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "SAY.Dialog:BadTransformation.614.{$NewName}",
           "context": "",
-          "sourceEnglish": "We can play games during our breaks."
+          "sourceEnglish": "We can play games during our breaks.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "MENU.Dialog:BadTransformation.608",
           "context": "",
-          "sourceEnglish": "We can invent new Machines!"
+          "sourceEnglish": "We can invent new Machines!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "SAY.Dialog:BadTransformation.617.{$NewName}",
           "context": "",
-          "sourceEnglish": "We can invent new Machines!"
+          "sourceEnglish": "We can invent new Machines!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "MENU.Dialog:BadTransformation.607",
           "context": "",
-          "sourceEnglish": "We can make the world a better place for Asses!"
+          "sourceEnglish": "We can make the world a better place for Asses!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "SAY.Dialog:BadTransformation.620.{$NewName}",
           "context": "",
-          "sourceEnglish": "We can make the world a better place for Asses!"
+          "sourceEnglish": "We can make the world a better place for Asses!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "SAY.Dialog:BadTransformation.597.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I suppose you could use the prototype..."
+          "sourceEnglish": "I suppose you could use the prototype...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 33,
           "utterer": "SAY.Dialog:BadTransformation.600.{$NewName}",
           "context": "",
-          "sourceEnglish": "REALLY?! WAHOO!"
+          "sourceEnglish": "REALLY?! WAHOO!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "SAY.Dialog:BadTransformation.602.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I'll run the initializer. Give me a minute."
+          "sourceEnglish": "I'll run the initializer. Give me a minute.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:BadTransformation.31.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "{$NewName}?"
+          "sourceEnglish": "{$NewName}?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "SAY.Dialog:BadTransformation.338.{$NewName}",
           "context": "",
-          "sourceEnglish": "Comrade Mother?!"
+          "sourceEnglish": "Comrade Mother?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "SAY.Dialog:BadTransformation.33.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "What are all these Machines??"
+          "sourceEnglish": "What are all these Machines??",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:BadTransformation.34.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Fuck. Of all the times—"
+          "sourceEnglish": "Fuck. Of all the times—",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "SAY.Dialog:BadTransformation.35.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "AHH! That one can talk?!"
+          "sourceEnglish": "AHH! That one can talk?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "SAY.Dialog:BadTransformation.340.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I thought you were playing ROCKS with your UNCLE!"
+          "sourceEnglish": "I thought you were playing ROCKS with your UNCLE!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "SAY.Dialog:BadTransformation.36.{$NewName}",
           "context": "",
-          "sourceEnglish": "Don't worry Comrade Mother, this IS Uncle Bad—Cole."
+          "sourceEnglish": "Don't worry Comrade Mother, this IS Uncle Bad—Cole.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
           "utterer": "SAY.Dialog:BadTransformation.37.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "By the Gods, don't be ridiculous!"
+          "sourceEnglish": "By the Gods, don't be ridiculous!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "SAY.Dialog:BadTransformation.471.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Your Uncle Bad is an Ass, not an evil, soul-less, child-killing Machine."
+          "sourceEnglish": "Your Uncle Bad is an Ass, not an evil, soul-less, child-killing Machine.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "SAY.Dialog:BadTransformation.39.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Step away from those monstrosities this instant!"
+          "sourceEnglish": "Step away from those monstrosities this instant!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
           "utterer": "SAY.Dialog:BadTransformation.40.{$NewName}",
           "context": "",
-          "sourceEnglish": "No! I'm going to become a Machine like Uncle Bad—Cole!"
+          "sourceEnglish": "No! I'm going to become a Machine like Uncle Bad—Cole!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 46,
           "utterer": "SAY.Dialog:BadTransformation.41.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "WHAT?!?!?!?!?!?!?!?!?!?!?!?!"
+          "sourceEnglish": "WHAT?!?!?!?!?!?!?!?!?!?!?!?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 47,
           "utterer": "SAY.Dialog:BadTransformation.42.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Become a Machine? Absolutely NOT!"
+          "sourceEnglish": "Become a Machine? Absolutely NOT!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 48,
           "utterer": "SAY.Dialog:BadTransformation.657.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "And why do you keep calling that thing Cole?!"
+          "sourceEnglish": "And why do you keep calling that thing Cole?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 49,
           "utterer": "SAY.Dialog:BadTransformation.43.{$NewName}",
           "context": "",
-          "sourceEnglish": "Because that's WHO HE IS."
+          "sourceEnglish": "Because that's WHO HE IS.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 50,
           "utterer": "SAY.Dialog:BadTransformation.658.{$NewName}",
           "context": "",
-          "sourceEnglish": "Mother, listen to me."
+          "sourceEnglish": "Mother, listen to me.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 51,
           "utterer": "SAY.Dialog:BadTransformation.44.{$NewName}",
           "context": "",
-          "sourceEnglish": "I'm tired of you always looking over my shoulder and telling me what to do!"
+          "sourceEnglish": "I'm tired of you always looking over my shoulder and telling me what to do!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 52,
           "utterer": "SAY.Dialog:BadTransformation.45.{$NewName}",
           "context": "",
-          "sourceEnglish": "Uncle Bad—Cole has taught me the truth of how the world works."
+          "sourceEnglish": "Uncle Bad—Cole has taught me the truth of how the world works.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 53,
           "utterer": "SAY.Dialog:BadTransformation.47.{$NewName}",
           "context": "",
-          "sourceEnglish": "That it's NOT FUN for Asses!"
+          "sourceEnglish": "That it's NOT FUN for Asses!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 54,
           "utterer": "SAY.Dialog:BadTransformation.49.{$NewName}",
           "context": "",
-          "sourceEnglish": "Give me one good reason why a Foal like me should want to grow up to be an Ass in this world?"
+          "sourceEnglish": "Give me one good reason why a Foal like me should want to grow up to be an Ass in this world?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 55,
           "utterer": "SAY.Dialog:BadTransformation.50.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Because it's what YOU ARE!"
+          "sourceEnglish": "Because it's what YOU ARE!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 56,
           "utterer": "SAY.Dialog:BadTransformation.52.{$NewName}",
           "context": "",
-          "sourceEnglish": "No, it's just how I was BORN."
+          "sourceEnglish": "No, it's just how I was BORN.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 57,
           "utterer": "SAY.Dialog:BadTransformation.241.{$NewName}",
           "context": "",
-          "sourceEnglish": "Let's do it, Uncle Bad—Cole!"
+          "sourceEnglish": "Let's do it, Uncle Bad—Cole!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 58,
           "utterer": "SAY.Dialog:BadTransformation.53.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Don't you dare ignore me!"
+          "sourceEnglish": "Don't you dare ignore me!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 59,
           "utterer": "SAY.Dialog:BadTransformation.242.{$NewName}",
           "context": "",
-          "sourceEnglish": "Let me go!!"
+          "sourceEnglish": "Let me go!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 60,
           "utterer": "MENU.Dialog:BadTransformation.469",
           "context": "",
-          "sourceEnglish": "Stop {$NewName} from entering the Machine."
+          "sourceEnglish": "Stop {$NewName} from entering the Machine.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 61,
           "utterer": "SAY.Dialog:BadTransformation.55.{$NewName}",
           "context": "",
-          "sourceEnglish": "Hit it!!"
+          "sourceEnglish": "Hit it!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 62,
           "utterer": "SAY.Dialog:BadTransformation.479.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "NO!! {$NewName}!!"
+          "sourceEnglish": "NO!! {$NewName}!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 63,
           "utterer": "SAY.Dialog:BadTransformation.253.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Sturdy. Stop."
+          "sourceEnglish": "Sturdy. Stop.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 64,
           "utterer": "SAY.Dialog:BadTransformation.270.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Do not try to break the Machine."
+          "sourceEnglish": "Do not try to break the Machine.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 65,
           "utterer": "SAY.Dialog:BadTransformation.271.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Interrupting the process would sever the bridge and destroy her Soul."
+          "sourceEnglish": "Interrupting the process would sever the bridge and destroy her Soul.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 66,
           "utterer": "SAY.Dialog:BadTransformation.285.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "This can't be real."
+          "sourceEnglish": "This can't be real.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 67,
           "utterer": "SAY.Dialog:BadTransformation.60.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I-I must be dreaming."
+          "sourceEnglish": "I-I must be dreaming.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 68,
           "utterer": "SAY.Dialog:BadTransformation.286.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "...Soulless Machines can't talk."
+          "sourceEnglish": "...Soulless Machines can't talk.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 69,
           "utterer": "SAY.Dialog:BadTransformation.288.Cole-Machine",
           "context": "",
-          "sourceEnglish": "You're not dreaming. I am a Machine and I do have a Soul."
+          "sourceEnglish": "You're not dreaming. I am a Machine and I do have a Soul.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 70,
           "utterer": "SAY.Dialog:BadTransformation.289.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I'm Cole Butte."
+          "sourceEnglish": "I'm Cole Butte.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 71,
           "utterer": "SAY.Dialog:BadTransformation.59.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Impossible."
+          "sourceEnglish": "Impossible.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 72,
           "utterer": "SAY.Dialog:BadTransformation.291.Cole-Machine",
           "context": "",
-          "sourceEnglish": "What I'm about to tell you will sound impossible—sometimes I don't even believe it myself."
+          "sourceEnglish": "What I'm about to tell you will sound impossible—sometimes I don't even believe it myself.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 73,
           "utterer": "SAY.Dialog:BadTransformation.661.Cole-Machine",
           "context": "",
-          "sourceEnglish": "But every word of it is true."
+          "sourceEnglish": "But every word of it is true.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 74,
           "utterer": "SAY.Dialog:BadTransformation.660.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Everybody thought I died in the cave-in along with Lazy."
+          "sourceEnglish": "Everybody thought I died in the cave-in along with Lazy.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 75,
           "utterer": "SAY.Dialog:BadTransformation.480.Cole-Machine",
           "context": "",
-          "sourceEnglish": "When in reality, the Gods transformed me into a donkey."
+          "sourceEnglish": "When in reality, the Gods transformed me into a donkey.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 76,
           "utterer": "SAY.Dialog:BadTransformation.292.Cole-Machine",
           "context": "",
-          "sourceEnglish": "As Lazy died, she tried to sing the Song of Ascension for herself."
+          "sourceEnglish": "As Lazy died, she tried to sing the Song of Ascension for herself.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 77,
           "utterer": "SAY.Dialog:BadTransformation.293.Cole-Machine",
           "context": "",
-          "sourceEnglish": "But instead of her Soul going to the Astral Plane, mine did."
+          "sourceEnglish": "But instead of her Soul going to the Astral Plane, mine did.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 78,
           "utterer": "SAY.Dialog:BadTransformation.295.Cole-Machine",
           "context": "",
-          "sourceEnglish": "My Human Soul wasn't allowed in."
+          "sourceEnglish": "My Human Soul wasn't allowed in.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 79,
           "utterer": "SAY.Dialog:BadTransformation.296.Cole-Machine",
           "context": "",
-          "sourceEnglish": "It was rejected and returned to this world."
+          "sourceEnglish": "It was rejected and returned to this world.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 80,
           "utterer": "SAY.Dialog:BadTransformation.301.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I did try to save Lazy, but her injuries were too severe."
+          "sourceEnglish": "I did try to save Lazy, but her injuries were too severe.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 81,
           "utterer": "SAY.Dialog:BadTransformation.209.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Look Sturdy."
+          "sourceEnglish": "Look Sturdy.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 82,
           "utterer": "SAY.Dialog:BadTransformation.223.Cole-Machine",
           "context": "",
-          "sourceEnglish": "All my life, I've been forced to be someone I didn't want to be. Do things I didn't want to do."
+          "sourceEnglish": "All my life, I've been forced to be someone I didn't want to be. Do things I didn't want to do.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 83,
           "utterer": "SAY.Dialog:BadTransformation.481.Cole-Machine",
           "context": "",
-          "sourceEnglish": "But I'm done."
+          "sourceEnglish": "But I'm done.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 84,
           "utterer": "SAY.Dialog:BadTransformation.222.Cole-Machine",
           "context": "",
-          "sourceEnglish": "So, I'm making my own decisions now."
+          "sourceEnglish": "So, I'm making my own decisions now.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 85,
           "utterer": "SAY.Dialog:BadTransformation.444.Cole-Machine",
           "context": "",
-          "sourceEnglish": "And you should let the kid make her own decisions too."
+          "sourceEnglish": "And you should let the kid make her own decisions too.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 86,
           "utterer": "SAY.Dialog:BadTransformation.213.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Did you ever tell {$NewName} about us?"
+          "sourceEnglish": "Did you ever tell {$NewName} about us?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 87,
           "utterer": "SAY.Dialog:BadTransformation.197.{$NewName}",
           "context": "",
-          "sourceEnglish": "COOOOOOOOL!"
+          "sourceEnglish": "COOOOOOOOL!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 88,
           "utterer": "SAY.Dialog:BadTransformation.304.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I... can't look."
+          "sourceEnglish": "I... can't look.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 89,
           "utterer": "SAY.Dialog:BadTransformation.666.{$NewName}",
           "context": "The sound of the Gods is heard",
-          "sourceEnglish": "What's that sound—?"
+          "sourceEnglish": "What's that sound—?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 90,
           "utterer": "SAY.Dialog:BadTransformation.82.Cole-Machine",
           "context": "The Mines start to cave-in",
-          "sourceEnglish": "{s}{s=20}Are. You. Fucking. Kidding. Me.{/s}"
+          "sourceEnglish": "{s}{s=20}Are. You. Fucking. Kidding. Me.{/s}",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 91,
           "utterer": "SAY.Dialog:BadTransformation.306.Cole-Machine",
           "context": "",
-          "sourceEnglish": "WHY CAN'T THIS FUCKING MINE STOP CAVING IN?!"
+          "sourceEnglish": "WHY CAN'T THIS FUCKING MINE STOP CAVING IN?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 92,
           "utterer": "SAY.Dialog:BadTransformation.445.Cole-Machine",
           "context": "",
-          "sourceEnglish": "EVERYBODY GET OUT OF HERE, NOW!"
+          "sourceEnglish": "EVERYBODY GET OUT OF HERE, NOW!",
+          "translatedDutch": ""
         }
       ]
     },
@@ -672,241 +780,281 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:StageZero.13.{$NewName}",
           "context": "",
-          "sourceEnglish": "Comrade Mother!"
+          "sourceEnglish": "Comrade Mother!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:StageZero.28.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Don't touch me!"
+          "sourceEnglish": "Don't touch me!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:StageZero.11.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "AHHH! GET ME OUT OF HERE!!!"
+          "sourceEnglish": "AHHH! GET ME OUT OF HERE!!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:StageZero.12.Cole-Machine",
           "context": "They are in the Elevator pulling on the cables to ascend up the shaft.",
-          "sourceEnglish": "Pull the cables!"
+          "sourceEnglish": "Pull the cables!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:StageTwo.11.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "AHH!!"
+          "sourceEnglish": "AHH!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Dialog:StageTwo.23.Cole-Machine",
           "context": "The lift falls and Bad and Foal are suspended by pushing their feet against the walls. Sturdy is standing on their shoulders. They hold the cable still.",
-          "sourceEnglish": "Kid, the cable is about to snap—let's go back-to-back!"
+          "sourceEnglish": "Kid, the cable is about to snap—let's go back-to-back!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog:StageTwo.24.Cole-Machine",
           "context": "Not used? Not in Miro.",
-          "sourceEnglish": "One step at a time!"
+          "sourceEnglish": "One step at a time!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:StageThree.15.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Everyone together—JUMP!"
+          "sourceEnglish": "Everyone together—JUMP!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Dialog:StageThree.26.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "AHHH!"
+          "sourceEnglish": "AHHH!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:StageThree.6.{$NewName}",
           "context": "",
-          "sourceEnglish": "Comrade Mother!"
+          "sourceEnglish": "Comrade Mother!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:StageThree.29.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Get away!"
+          "sourceEnglish": "Get away!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:StageThree.8.{$NewName}",
           "context": "",
-          "sourceEnglish": "I'm not going to let you go!"
+          "sourceEnglish": "I'm not going to let you go!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:StageFour.90.{$NewName}",
           "context": "",
-          "sourceEnglish": "Let's go, let's go, let's go!"
+          "sourceEnglish": "Let's go, let's go, let's go!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog:StageFour.81.{$NewName}",
           "context": "",
-          "sourceEnglish": "Mother?"
+          "sourceEnglish": "Mother?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog:StageFour.76.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I've been saved... by a Machine..."
+          "sourceEnglish": "I've been saved... by a Machine...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:StageFour.93.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "An evil..."
+          "sourceEnglish": "An evil...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog:StageFour.117.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "soulless..."
+          "sourceEnglish": "soulless...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:StageFour.116.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "job-taking..."
+          "sourceEnglish": "job-taking...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog:StageFour.118.Sturdy Ass",
           "context": "Reminder, needs space at beginning",
-          "sourceEnglish": "child-killing Machine..."
+          "sourceEnglish": "child-killing Machine...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog:StageFour.54.{$NewName}",
           "context": "",
-          "sourceEnglish": "I'm not evil! I'm your daughter!"
+          "sourceEnglish": "I'm not evil! I'm your daughter!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog:StageFour.92.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Daughter? I've lost both my daughters now..."
+          "sourceEnglish": "Daughter? I've lost both my daughters now...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog:StageFour.119.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I have nothing left."
+          "sourceEnglish": "I have nothing left.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "SAY.Dialog:StageFour.75.{$NewName}",
           "context": "",
-          "sourceEnglish": "Mother! LOOK AT ME!"
+          "sourceEnglish": "Mother! LOOK AT ME!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "SAY.Dialog:StageFour.120.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "How could you do this to me, your Mother?"
+          "sourceEnglish": "How could you do this to me, your Mother?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "SAY.Dialog:StageFour.136.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I loved you..."
+          "sourceEnglish": "I loved you...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "SAY.Dialog:StageFour.121.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "How could you give up on our kind?"
+          "sourceEnglish": "How could you give up on our kind?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "SAY.Dialog:StageFour.88.{$NewName}",
           "context": "",
-          "sourceEnglish": "I'm not giving up. I'm growing up."
+          "sourceEnglish": "I'm not giving up. I'm growing up.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "SAY.Dialog:StageFour.125.{$NewName}",
           "context": "",
-          "sourceEnglish": "I'm not like the others in the Herd."
+          "sourceEnglish": "I'm not like the others in the Herd.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "SAY.Dialog:StageFour.124.{$NewName}",
           "context": "",
-          "sourceEnglish": "I've never wanted the work-filled life you had before Machines."
+          "sourceEnglish": "I've never wanted the work-filled life you had before Machines.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "SAY.Dialog:StageFour.130.{$NewName}",
           "context": "",
-          "sourceEnglish": "I don't like manual labour."
+          "sourceEnglish": "I don't like manual labour.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 33,
           "utterer": "SAY.Dialog:StageFour.129.{$NewName}",
           "context": "",
-          "sourceEnglish": "And I don't like sitting in a field doing nothing all day either."
+          "sourceEnglish": "And I don't like sitting in a field doing nothing all day either.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "SAY.Dialog:StageFour.135.{$NewName}",
           "context": "",
-          "sourceEnglish": "I think everyone would be happier if we had a little fun together."
+          "sourceEnglish": "I think everyone would be happier if we had a little fun together.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:StageFour.123.{$NewName}",
           "context": "",
-          "sourceEnglish": "Mother?"
+          "sourceEnglish": "Mother?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "SAY.Dialog:StageFour.73.Cole-Machine",
           "context": "",
-          "sourceEnglish": "WHAT THE FUCK IS TAKING SO LONG?"
+          "sourceEnglish": "WHAT THE FUCK IS TAKING SO LONG?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "SAY.Dialog:StageFour.102.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I can't hold this ceiling up much longer!"
+          "sourceEnglish": "I can't hold this ceiling up much longer!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:StageFour.84.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "The Gods have foresaken me."
+          "sourceEnglish": "The Gods have foresaken me.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "SAY.Dialog:StageFour.132.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Go."
+          "sourceEnglish": "Go.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "SAY.Dialog:StageFour.89.{$NewName}",
           "context": "",
-          "sourceEnglish": "I'm not giving up and I'm not letting you stay here either!"
+          "sourceEnglish": "I'm not giving up and I'm not letting you stay here either!",
+          "translatedDutch": ""
         }
       ]
     },
@@ -917,913 +1065,1065 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:Arrival.16.Cole-Machine",
           "context": "",
-          "sourceEnglish": "What the fuck happened...?"
+          "sourceEnglish": "What the fuck happened...?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:Arrival.19.{$NewName}",
           "context": "",
-          "sourceEnglish": "Hey! What's that?"
+          "sourceEnglish": "Hey! What's that?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:Meeting.23.???",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:Meeting.66.{$NewName}",
           "context": "",
-          "sourceEnglish": "Aunty Sick?!"
+          "sourceEnglish": "Aunty Sick?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:Meeting.193.Cole-Machine",
           "context": "",
-          "sourceEnglish": "What the fuck...?"
+          "sourceEnglish": "What the fuck...?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Dialog:Meeting.24.Golden Ass",
           "context": "",
-          "sourceEnglish": "SILENCE VASSALS!"
+          "sourceEnglish": "SILENCE VASSALS!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog:Meeting.194.Golden Ass",
           "context": "",
-          "sourceEnglish": "WE ARE THE GODS OF CHANGE."
+          "sourceEnglish": "WE ARE THE GODS OF CHANGE.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:Meeting.704.Cole-Machine",
           "context": "",
-          "sourceEnglish": "You fuckers turned me into a donkey!"
+          "sourceEnglish": "You fuckers turned me into a donkey!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Dialog:Meeting.707.Golden Ass",
           "context": "",
-          "sourceEnglish": "WE ARE ALL POWERFUL!"
+          "sourceEnglish": "WE ARE ALL POWERFUL!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:Meeting.195.{$NewName}",
           "context": "",
-          "sourceEnglish": "Coooool!"
+          "sourceEnglish": "Coooool!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:Meeting.200.{$NewName}",
           "context": "",
-          "sourceEnglish": "My name is {$NewName} and I used to be a Foal!"
+          "sourceEnglish": "My name is {$NewName} and I used to be a Foal!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:Meeting.199.{$NewName}",
           "context": "",
-          "sourceEnglish": "This is my Uncle. He's a Machine too!"
+          "sourceEnglish": "This is my Uncle. He's a Machine too!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:Meeting.198.{$NewName}",
           "context": "",
-          "sourceEnglish": "But he used to be a Human."
+          "sourceEnglish": "But he used to be a Human.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog:Meeting.197.{$NewName}",
           "context": "",
-          "sourceEnglish": "But also an Ass."
+          "sourceEnglish": "But also an Ass.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog:Meeting.196.{$NewName}",
           "context": "",
-          "sourceEnglish": "And that's my Mother, she's just an Ass."
+          "sourceEnglish": "And that's my Mother, she's just an Ass.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:Meeting.201.Golden Ass",
           "context": "",
-          "sourceEnglish": "SILENCE."
+          "sourceEnglish": "SILENCE.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog:Meeting.203.Golden Ass",
           "context": "",
-          "sourceEnglish": "We are speaking to you from the Astral Plane through the Vassal formerly known as Sick Ass."
+          "sourceEnglish": "We are speaking to you from the Astral Plane through the Vassal formerly known as Sick Ass.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:Meeting.202.Golden Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog:Meeting.204.Golden Ass",
           "context": "",
-          "sourceEnglish": "We are conducting a search for a suitable Prophet."
+          "sourceEnglish": "We are conducting a search for a suitable Prophet.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog:Meeting.205.{$NewName}",
           "context": "Jump to either line 23 or 32.",
-          "sourceEnglish": "What's a Prophet?"
+          "sourceEnglish": "What's a Prophet?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "MENU.Dialog:Meeting.474",
           "context": "Dialogue option 1.",
-          "sourceEnglish": "A Prophet spreads our holy message far and wide."
+          "sourceEnglish": "A Prophet spreads our holy message far and wide.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog:Meeting.461.Golden Ass",
           "context": "",
-          "sourceEnglish": "A Prophet spreads our holy message far and wide."
+          "sourceEnglish": "A Prophet spreads our holy message far and wide.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "SAY.Dialog:Meeting.464.{$NewName}",
           "context": "",
-          "sourceEnglish": "That sounds FUN! Doesn't it Uncle Bad—Cole?"
+          "sourceEnglish": "That sounds FUN! Doesn't it Uncle Bad—Cole?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "SAY.Dialog:Meeting.466.Cole-Machine",
           "context": "",
-          "sourceEnglish": "No."
+          "sourceEnglish": "No.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "SAY.Dialog:Meeting.468.{$NewName}",
           "context": "Jump to either line 28 or 30.",
-          "sourceEnglish": "What's the message?"
+          "sourceEnglish": "What's the message?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "MENU.Dialog:Meeting.469",
           "context": "Dialogue option 1.1.",
-          "sourceEnglish": "That a world in which Humans no longer have control over other living beings is coming."
+          "sourceEnglish": "That a world in which Humans no longer have control over other living beings is coming.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "SAY.Dialog:Meeting.471.Golden Ass",
           "context": "Jump to line 41.",
-          "sourceEnglish": "That a world in which Humans no longer have control over other living beings is coming."
+          "sourceEnglish": "That a world in which Humans no longer have control over other living beings is coming.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "MENU.Dialog:Meeting.470",
           "context": "Dialogue option 1.2.",
-          "sourceEnglish": "That the time to rise up against Humans and end their rule is nigh."
+          "sourceEnglish": "That the time to rise up against Humans and end their rule is nigh.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "SAY.Dialog:Meeting.472.Golden Ass",
           "context": "Jump to line 41.",
-          "sourceEnglish": "That the time to rise up against Humans and end their rule is nigh."
+          "sourceEnglish": "That the time to rise up against Humans and end their rule is nigh.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "MENU.Dialog:Meeting.475",
           "context": "Dialogue option 2.",
-          "sourceEnglish": "A Prophet rides upon our back and converts enemies to allies everywhere we go."
+          "sourceEnglish": "A Prophet rides upon our back and converts enemies to allies everywhere we go.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 33,
           "utterer": "SAY.Dialog:Meeting.462.Golden Ass",
           "context": "Singular pronoun neutral",
-          "sourceEnglish": "They ride upon our back and convert enemies into allies everywhere we go."
+          "sourceEnglish": "They ride upon our back and convert enemies into allies everywhere we go.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "SAY.Dialog:Meeting.478.{$NewName}",
           "context": "",
-          "sourceEnglish": "Allies! Allies are like friends, right Uncle Bad—Cole?"
+          "sourceEnglish": "Allies! Allies are like friends, right Uncle Bad—Cole?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:Meeting.480.Cole-Machine",
           "context": "",
-          "sourceEnglish": "No."
+          "sourceEnglish": "No.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "SAY.Dialog:Meeting.482.{$NewName}",
           "context": "Jump to either line 37 or 39.",
-          "sourceEnglish": "What are we going to do with all those friends?"
+          "sourceEnglish": "What are we going to do with all those friends?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "MENU.Dialog:Meeting.483",
           "context": "Dialogue option 2.1.",
-          "sourceEnglish": "We shall build a world in which Humans no longer have control over other living beings."
+          "sourceEnglish": "We shall build a world in which Humans no longer have control over other living beings.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:Meeting.485.Golden Ass",
           "context": "Jump to line 41.",
-          "sourceEnglish": "We shall build a world in which Humans no longer have control over other living beings."
+          "sourceEnglish": "We shall build a world in which Humans no longer have control over other living beings.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "MENU.Dialog:Meeting.484",
           "context": "Dialogue option 2.2.",
-          "sourceEnglish": "We shall rise up against Humans and end their rule."
+          "sourceEnglish": "We shall rise up against Humans and end their rule.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "SAY.Dialog:Meeting.486.Golden Ass",
           "context": "Jump to line 41.",
-          "sourceEnglish": "We shall rise up against Humans and end their rule."
+          "sourceEnglish": "We shall rise up against Humans and end their rule.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "SAY.Dialog:Meeting.444.Golden Ass",
           "context": "Dialogue options (1.1., 1.2, 2.1, 2.2) converge.",
-          "sourceEnglish": "We shall now depart to find our next Human Proph—"
+          "sourceEnglish": "We shall now depart to find our next Human Proph—",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
           "utterer": "SAY.Dialog:Meeting.446.Hee",
           "context": "",
-          "sourceEnglish": "Wait..."
+          "sourceEnglish": "Wait...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "SAY.Dialog:Meeting.447.Hee",
           "context": "This takes place inside the mind of the Gods.",
-          "sourceEnglish": "Haw, are you thinking what I'm thinking?"
+          "sourceEnglish": "Haw, are you thinking what I'm thinking?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "SAY.Dialog:Meeting.448.Haw",
           "context": "",
-          "sourceEnglish": "Yes, it would be a very different version of Operation Prophet."
+          "sourceEnglish": "Yes, it would be a very different version of Operation Prophet.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
           "utterer": "SAY.Dialog:Meeting.731.Hee",
           "context": "",
-          "sourceEnglish": "Either way, it would be wonderfully different."
+          "sourceEnglish": "Either way, it would be wonderfully different.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 46,
           "utterer": "SAY.Dialog:Meeting.455.Golden Ass",
           "context": "",
-          "sourceEnglish": "We have changed our minds."
+          "sourceEnglish": "We have changed our minds.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 47,
           "utterer": "SAY.Dialog:Meeting.456.Golden Ass",
           "context": "Ending of the part that takes place inside the mind of the Gods.",
-          "sourceEnglish": "One of you two Machines shall become our Prophet."
+          "sourceEnglish": "One of you two Machines shall become our Prophet.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 48,
           "utterer": "MENU.Dialog:Meeting.438",
           "context": "False dialogue option. // Should this be Cole-Machine?",
-          "sourceEnglish": "Cole-Machine"
+          "sourceEnglish": "Cole-Machine",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 49,
           "utterer": "MENU.Dialog:Meeting.437",
           "context": "False dialogue option.",
-          "sourceEnglish": "{$NewName}"
+          "sourceEnglish": "{$NewName}",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 50,
           "utterer": "SAY.Dialog:Meeting.228.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "STOP!!!!!!!!"
+          "sourceEnglish": "STOP!!!!!!!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 51,
           "utterer": "SAY.Dialog:Meeting.331.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Gods."
+          "sourceEnglish": "Gods.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 52,
           "utterer": "SAY.Dialog:Meeting.231.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "You can't let a Machine become a Prophet!"
+          "sourceEnglish": "You can't let a Machine become a Prophet!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 53,
           "utterer": "SAY.Dialog:Meeting.230.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "There must be some other way to stop the Humans without using Machines."
+          "sourceEnglish": "There must be some other way to stop the Humans without using Machines.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 54,
           "utterer": "SAY.Dialog:Meeting.229.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "If not... we'll be no better than the Humans ourselves."
+          "sourceEnglish": "If not... we'll be no better than the Humans ourselves.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 55,
           "utterer": "MENU.Dialog:Meeting.439",
           "context": "",
-          "sourceEnglish": "That is not for us Gods to decide, but rather for each and every user of a Machine."
+          "sourceEnglish": "That is not for us Gods to decide, but rather for each and every user of a Machine.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 56,
           "utterer": "SAY.Dialog:Meeting.492.Golden Ass",
           "context": "",
-          "sourceEnglish": "That is not for us Gods to decide, but rather for each and every user of a Machine."
+          "sourceEnglish": "That is not for us Gods to decide, but rather for each and every user of a Machine.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 57,
           "utterer": "MENU.Dialog:Meeting.440",
           "context": "",
-          "sourceEnglish": "We see no future in Absolutes."
+          "sourceEnglish": "We see no future in Absolutes.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 58,
           "utterer": "SAY.Dialog:Meeting.443.Golden Ass",
           "context": "",
-          "sourceEnglish": "We see no future in Absolutes."
+          "sourceEnglish": "We see no future in Absolutes.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 59,
           "utterer": "SAY.Dialog:Meeting.491.Golden Ass",
           "context": "",
-          "sourceEnglish": "A true Vassal must be able to carry the weight of History and Progress together."
+          "sourceEnglish": "A true Vassal must be able to carry the weight of History and Progress together.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 60,
           "utterer": "SAY.Dialog:Meeting.435.Golden Ass",
           "context": "",
-          "sourceEnglish": "We shall now pick our Prophet:"
+          "sourceEnglish": "We shall now pick our Prophet:",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 61,
           "utterer": "SAY.Dialog:Meeting.730.Hee",
           "context": "Not inside Miro",
-          "sourceEnglish": "But which one?"
+          "sourceEnglish": "But which one?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 62,
           "utterer": "SAY.Dialog:Meeting.732.Hee",
           "context": "Not inside Miro",
-          "sourceEnglish": "The one full of enthusiasm yet lacking experience in the ways of the world?"
+          "sourceEnglish": "The one full of enthusiasm yet lacking experience in the ways of the world?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 63,
           "utterer": "SAY.Dialog:Meeting.449.Haw",
           "context": "Not inside Miro",
-          "sourceEnglish": "Or the one with higher intelligence and more experience yet lacking in social graces?"
+          "sourceEnglish": "Or the one with higher intelligence and more experience yet lacking in social graces?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 64,
           "utterer": "MENU.Dialog:Meeting.459",
           "context": "Branch: Cole is Prophet.",
-          "sourceEnglish": "Cole-Machine"
+          "sourceEnglish": "Cole-Machine",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 65,
           "utterer": "SAY.Dialog:Meeting.44.Golden Ass",
           "context": "",
-          "sourceEnglish": "Cole Butte, you shall be the next Prophet."
+          "sourceEnglish": "Cole Butte, you shall be the next Prophet.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 66,
           "utterer": "SAY.Dialog:Meeting.237.Golden Ass",
           "context": "",
-          "sourceEnglish": "You shall join the ranks of great leaders from across time immemorial."
+          "sourceEnglish": "You shall join the ranks of great leaders from across time immemorial.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 67,
           "utterer": "SAY.Dialog:Meeting.45.Cole-Machine",
           "context": "",
-          "sourceEnglish": "No thanks."
+          "sourceEnglish": "No thanks.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 68,
           "utterer": "SAY.Dialog:Meeting.239.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I don't believe in leaders."
+          "sourceEnglish": "I don't believe in leaders.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 69,
           "utterer": "SAY.Dialog:Meeting.238.Cole-Machine",
           "context": "",
-          "sourceEnglish": "And I don't want anything to do with you fuckers after what you did to me."
+          "sourceEnglish": "And I don't want anything to do with you fuckers after what you did to me.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 70,
           "utterer": "MENU.Dialog:Meeting.583",
           "context": "",
-          "sourceEnglish": "As the Prophet you shall go down in History as the first Prophet-Machine."
+          "sourceEnglish": "As the Prophet you shall go down in History as the first Prophet-Machine.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 71,
           "utterer": "SAY.Dialog:Meeting.582.Golden Ass",
           "context": "",
-          "sourceEnglish": "As the Prophet you shall go down in History as the first Prophet-Machine."
+          "sourceEnglish": "As the Prophet you shall go down in History as the first Prophet-Machine.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 72,
           "utterer": "SAY.Dialog:Meeting.577.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Don't care."
+          "sourceEnglish": "Don't care.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 73,
           "utterer": "MENU.Dialog:Meeting.584",
           "context": "",
-          "sourceEnglish": "You shall be imbued with the Power to promote a radical new vision of the world."
+          "sourceEnglish": "You shall be imbued with the Power to promote a radical new vision of the world.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 74,
           "utterer": "SAY.Dialog:Meeting.567.Golden Ass",
           "context": "",
-          "sourceEnglish": "You shall be imbued with the Power to promote a radical new vision of the world."
+          "sourceEnglish": "You shall be imbued with the Power to promote a radical new vision of the world.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 75,
           "utterer": "SAY.Dialog:Meeting.571.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I already have a radical vision of the world."
+          "sourceEnglish": "I already have a radical vision of the world.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 76,
           "utterer": "SAY.Dialog:Meeting.556.{$NewName}",
           "context": "",
-          "sourceEnglish": "Uncle Bad—Cole, wait!"
+          "sourceEnglish": "Uncle Bad—Cole, wait!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 77,
           "utterer": "SAY.Dialog:Meeting.557.{$NewName}",
           "context": "",
-          "sourceEnglish": "You said we are going to transform the world into a better place for everyone!"
+          "sourceEnglish": "You said we are going to transform the world into a better place for everyone!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 78,
           "utterer": "SAY.Dialog:Meeting.558.{$NewName}",
           "context": "",
-          "sourceEnglish": "Doesn't that include Asses?"
+          "sourceEnglish": "Doesn't that include Asses?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 79,
           "utterer": "SAY.Dialog:Meeting.559.{$NewName}",
           "context": "",
-          "sourceEnglish": "What about Comrade Mother?"
+          "sourceEnglish": "What about Comrade Mother?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 80,
           "utterer": "SAY.Dialog:Meeting.561.Cole-Machine",
           "context": "",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 81,
           "utterer": "SAY.Dialog:Meeting.724.Golden Ass",
           "context": "",
-          "sourceEnglish": "Cole Butte."
+          "sourceEnglish": "Cole Butte.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 82,
           "utterer": "MENU.Dialog:Meeting.563",
           "context": "",
-          "sourceEnglish": "You know in your Soul that a philosophical transformation is necessary now more than ever."
+          "sourceEnglish": "You know in your Soul that a philosophical transformation is necessary now more than ever.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 83,
           "utterer": "SAY.Dialog:Meeting.547.Golden Ass",
           "context": "",
-          "sourceEnglish": "You know in your Soul that a philosophical transformation is necessary now more than ever."
+          "sourceEnglish": "You know in your Soul that a philosophical transformation is necessary now more than ever.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 84,
           "utterer": "MENU.Dialog:Meeting.564",
           "context": "",
-          "sourceEnglish": "You are living proof that Humans have the ability to change."
+          "sourceEnglish": "You are living proof that Humans have the ability to change.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 85,
           "utterer": "SAY.Dialog:Meeting.545.Golden Ass",
           "context": "",
-          "sourceEnglish": "You are living proof that Humans have the ability to transcend their station."
+          "sourceEnglish": "You are living proof that Humans have the ability to transcend their station.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 86,
           "utterer": "SAY.Dialog:Meeting.725.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Can the first stop be Mecha City?"
+          "sourceEnglish": "Can the first stop be Mecha City?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 87,
           "utterer": "SAY.Dialog:Meeting.726.Golden Ass",
           "context": "",
-          "sourceEnglish": "If you wish."
+          "sourceEnglish": "If you wish.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 88,
           "utterer": "SAY.Dialog:Meeting.496.Cole-Machine",
           "context": "",
-          "sourceEnglish": "And at no point is this process going to turn me into a donkey again, is it?"
+          "sourceEnglish": "And at no point is this process going to turn me into a donkey again, is it?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 89,
           "utterer": "SAY.Dialog:Meeting.497.Golden Ass",
           "context": "",
-          "sourceEnglish": "No."
+          "sourceEnglish": "No.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 90,
           "utterer": "SAY.Dialog:Meeting.498.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Fine. I'll be your Prophet."
+          "sourceEnglish": "Fine. I'll be your Prophet.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 91,
           "utterer": "SAY.Dialog:Meeting.500.Golden Ass",
           "context": "",
-          "sourceEnglish": "Excellent. Climb onto our back and let us fly on the Winds of Revolution!"
+          "sourceEnglish": "Excellent. Climb onto our back and let us fly on the Winds of Revolution!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 92,
           "utterer": "SAY.Dialog:Meeting.504.Golden Ass",
           "context": "",
-          "sourceEnglish": "Let us depart, Prophet."
+          "sourceEnglish": "Let us depart, Prophet.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 93,
           "utterer": "SAY.Dialog:Meeting.505.{$NewName}",
           "context": "",
-          "sourceEnglish": "Wait!"
+          "sourceEnglish": "Wait!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 94,
           "utterer": "SAY.Dialog:Meeting.508.{$NewName}",
           "context": "",
-          "sourceEnglish": "Aunty Sick—Golden—Gods, can I fly on the Winds of Revolution, too?"
+          "sourceEnglish": "Aunty Sick—Golden—Gods, can I fly on the Winds of Revolution, too?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 95,
           "utterer": "SAY.Dialog:Meeting.509.Golden Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 96,
           "utterer": "SAY.Dialog:Meeting.510.Golden Ass",
           "context": "",
-          "sourceEnglish": "No."
+          "sourceEnglish": "No.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 97,
           "utterer": "SAY.Dialog:Meeting.511.{$NewName}",
           "context": "",
-          "sourceEnglish": "But I'm his Assistant—"
+          "sourceEnglish": "But I'm his Assistant—",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 98,
           "utterer": "SAY.Dialog:Meeting.512.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Hey kid. This isn't goodbye."
+          "sourceEnglish": "Hey kid. This isn't goodbye.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 99,
           "utterer": "SAY.Dialog:Meeting.728.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I'll see you in Mecha City."
+          "sourceEnglish": "I'll see you in Mecha City.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 100,
           "utterer": "SAY.Dialog:Meeting.729.{$NewName}",
           "context": "",
-          "sourceEnglish": "Okay but—"
+          "sourceEnglish": "Okay but—",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 101,
           "utterer": "SAY.Dialog:Meeting.513.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Don't abandon your Mother."
+          "sourceEnglish": "Don't abandon your Mother.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 102,
           "utterer": "SAY.Dialog:Meeting.514.Cole-Machine",
           "context": "Cole flies off on the Golden Ass",
-          "sourceEnglish": "She won't say it, but she needs you."
+          "sourceEnglish": "She won't say it, but she needs you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 103,
           "utterer": "SAY.Dialog:Meeting.529.{$NewName}",
           "context": "",
-          "sourceEnglish": "Comrade Mother."
+          "sourceEnglish": "Comrade Mother.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 104,
           "utterer": "SAY.Dialog:Meeting.530.{$NewName}",
           "context": "",
-          "sourceEnglish": "Where's the rest of the Herd?"
+          "sourceEnglish": "Where's the rest of the Herd?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 105,
           "utterer": "SAY.Dialog:Meeting.532.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "The traitors were in trouble in the City."
+          "sourceEnglish": "The traitors were in trouble in the City.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 106,
           "utterer": "SAY.Dialog:Meeting.533.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "So your Aunties and Uncles left on the Tractor-Machine to find them."
+          "sourceEnglish": "So your Aunties and Uncles left on the Tractor-Machine to find them.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 107,
           "utterer": "SAY.Dialog:Meeting.535.{$NewName}",
           "context": "",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 108,
           "utterer": "SAY.Dialog:Meeting.536.{$NewName}",
           "context": "",
-          "sourceEnglish": "Mother, if Uncle Hard and the others are gone, I don't think it's safe for us here anymore."
+          "sourceEnglish": "Mother, if Uncle Hard and the others are gone, I don't think it's safe for us here anymore.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 109,
           "utterer": "SAY.Dialog:Meeting.539.{$NewName}",
           "context": "End of Cole's track",
-          "sourceEnglish": "Will you come with me to Mecha City?"
+          "sourceEnglish": "Will you come with me to Mecha City?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 110,
           "utterer": "MENU.Dialog:Meeting.458",
           "context": "Branch: Foal is Prophet.",
-          "sourceEnglish": "{$NewName}"
+          "sourceEnglish": "{$NewName}",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 111,
           "utterer": "SAY.Dialog:Meeting.277.Golden Ass",
           "context": "",
-          "sourceEnglish": "{$NewName}, you shall be the next Prophet."
+          "sourceEnglish": "{$NewName}, you shall be the next Prophet.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 112,
           "utterer": "SAY.Dialog:Meeting.278.Golden Ass",
           "context": "",
-          "sourceEnglish": "You shall join the ranks of great leaders from across time immemorial."
+          "sourceEnglish": "You shall join the ranks of great leaders from across time immemorial.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 113,
           "utterer": "SAY.Dialog:Meeting.279.{$NewName}",
           "context": "",
-          "sourceEnglish": "WAHOO! Really?! Oh wow! That's so exciting!"
+          "sourceEnglish": "WAHOO! Really?! Oh wow! That's so exciting!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 114,
           "utterer": "MENU.Dialog:Meeting.674",
           "context": "",
-          "sourceEnglish": "Get on our back for we have much work to do."
+          "sourceEnglish": "Get on our back for we have much work to do.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 115,
           "utterer": "SAY.Dialog:Meeting.673.Golden Ass",
           "context": "",
-          "sourceEnglish": "Get on our back for we have much work to do."
+          "sourceEnglish": "Get on our back for we have much work to do.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 116,
           "utterer": "MENU.Dialog:Meeting.675",
           "context": "",
-          "sourceEnglish": "Climb upon us and let us fly on the Winds of Revolution!"
+          "sourceEnglish": "Climb upon us and let us fly on the Winds of Revolution!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 117,
           "utterer": "SAY.Dialog:Meeting.672.Golden Ass",
           "context": "",
-          "sourceEnglish": "Climb upon us and let us fly on the Winds of Revolution!"
+          "sourceEnglish": "Climb upon us and let us fly on the Winds of Revolution!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 118,
           "utterer": "SAY.Dialog:Meeting.667.{$NewName}",
           "context": "",
-          "sourceEnglish": "Okay!"
+          "sourceEnglish": "Okay!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 119,
           "utterer": "SAY.Dialog:Meeting.669.{$NewName}",
           "context": "",
-          "sourceEnglish": "Wait... Aunty Sick—Golden—Gods, is this a short trip... or a long trip?"
+          "sourceEnglish": "Wait... Aunty Sick—Golden—Gods, is this a short trip... or a long trip?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 120,
           "utterer": "MENU.Dialog:Meeting.670",
           "context": "",
-          "sourceEnglish": "Your commitment to the cause shall be Eternal."
+          "sourceEnglish": "Your commitment to the cause shall be Eternal.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 121,
           "utterer": "SAY.Dialog:Meeting.647.Golden Ass",
           "context": "",
-          "sourceEnglish": "Your commitment to the cause shall be Eternal."
+          "sourceEnglish": "Your commitment to the cause shall be Eternal.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 122,
           "utterer": "MENU.Dialog:Meeting.671",
           "context": "",
-          "sourceEnglish": "As long as it takes until all life is freed from under the yoke of Human tyranny."
+          "sourceEnglish": "As long as it takes until all life is freed from under the yoke of Human tyranny.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 123,
           "utterer": "SAY.Dialog:Meeting.644.Golden Ass",
           "context": "",
-          "sourceEnglish": "As long as it takes until all life is freed from under the yoke of Human tyranny."
+          "sourceEnglish": "As long as it takes until all life is freed from under the yoke of Human tyranny.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 124,
           "utterer": "SAY.Dialog:Meeting.629.{$NewName}",
           "context": "",
-          "sourceEnglish": "Oh."
+          "sourceEnglish": "Oh.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 125,
           "utterer": "SAY.Dialog:Meeting.630.{$NewName}",
           "context": "Needs 3 lines after this: Can we go to Mecha City? // If you wish // Wahoo let's go",
-          "sourceEnglish": "Um."
+          "sourceEnglish": "Um.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 126,
           "utterer": "SAY.Dialog:Meeting.631.{$NewName}",
           "context": "Different in Miro",
-          "sourceEnglish": "Comrade Mother... ?"
+          "sourceEnglish": "Comrade Mother... ?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 127,
           "utterer": "SAY.Dialog:Meeting.633.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 128,
           "utterer": "SAY.Dialog:Meeting.635.{$NewName}",
           "context": "",
-          "sourceEnglish": "Aunty Sick—Golden—Gods, can Comrade Mother come with us?"
+          "sourceEnglish": "Aunty Sick—Golden—Gods, can Comrade Mother come with us?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 129,
           "utterer": "MENU.Dialog:Meeting.637",
           "context": "",
-          "sourceEnglish": "She is not yet ready to support your Movement."
+          "sourceEnglish": "She is not yet ready to support your Movement.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 130,
           "utterer": "SAY.Dialog:Meeting.639.Golden Ass",
           "context": "",
-          "sourceEnglish": "She is not yet ready to support your Movement."
+          "sourceEnglish": "She is not yet ready to support your Movement.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 131,
           "utterer": "MENU.Dialog:Meeting.638",
           "context": "",
-          "sourceEnglish": "Only the passing of time shall tell how she will contribute to the cause."
+          "sourceEnglish": "Only the passing of time shall tell how she will contribute to the cause.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 132,
           "utterer": "SAY.Dialog:Meeting.640.Golden Ass",
           "context": "",
-          "sourceEnglish": "Only the passing of time shall tell how she will contribute to the cause."
+          "sourceEnglish": "Only the passing of time shall tell how she will contribute to the cause.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 133,
           "utterer": "SAY.Dialog:Meeting.594.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Kid, you really want to be a Prophet for these fuckers?"
+          "sourceEnglish": "Kid, you really want to be a Prophet for these fuckers?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 134,
           "utterer": "SAY.Dialog:Meeting.711.{$NewName}",
           "context": "",
-          "sourceEnglish": "Yes...?"
+          "sourceEnglish": "Yes...?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 135,
           "utterer": "SAY.Dialog:Meeting.710.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Then go."
+          "sourceEnglish": "Then go.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 136,
           "utterer": "SAY.Dialog:Meeting.712.{$NewName}",
           "context": "",
-          "sourceEnglish": "But Uncle Bad—Cole, we're supposed to go to the big city together!"
+          "sourceEnglish": "But Uncle Bad—Cole, we're supposed to go to the big city together!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 137,
           "utterer": "SAY.Dialog:Meeting.709.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I'll come find you in Mecha."
+          "sourceEnglish": "I'll come find you in Mecha.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 138,
           "utterer": "SAY.Dialog:Meeting.708.Cole-Machine",
           "context": "",
-          "sourceEnglish": "And I'll look after your Mother, too."
+          "sourceEnglish": "And I'll look after your Mother, too.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 139,
           "utterer": "SAY.Dialog:Meeting.714.Cole-Machine",
           "context": "",
-          "sourceEnglish": "She'll be safe with me."
+          "sourceEnglish": "She'll be safe with me.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 140,
           "utterer": "SAY.Dialog:Meeting.598.{$NewName}",
           "context": "",
-          "sourceEnglish": "Comrade Mother, I'm not giving up on you."
+          "sourceEnglish": "Comrade Mother, I'm not giving up on you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 141,
           "utterer": "SAY.Dialog:Meeting.599.{$NewName}",
           "context": "",
-          "sourceEnglish": "So, don't give up on me either."
+          "sourceEnglish": "So, don't give up on me either.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 142,
           "utterer": "SAY.Dialog:Meeting.600.Golden Ass",
           "context": "",
-          "sourceEnglish": "Let us depart, Prophet."
+          "sourceEnglish": "Let us depart, Prophet.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 143,
           "utterer": "SAY.Dialog:Meeting.601.{$NewName}",
           "context": "",
-          "sourceEnglish": "See you soon Uncle Bad—Cole!"
+          "sourceEnglish": "See you soon Uncle Bad—Cole!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 144,
           "utterer": "SAY.Dialog:Meeting.602.{$NewName}",
           "context": "Foal flies off on the Golden Ass",
-          "sourceEnglish": "See you soon... Mother. I love you."
+          "sourceEnglish": "See you soon... Mother. I love you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 145,
           "utterer": "SAY.Dialog:Meeting.607.Cole-Machine",
           "context": "Cole turns to Sturdy",
-          "sourceEnglish": "Where are the others?"
+          "sourceEnglish": "Where are the others?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 146,
           "utterer": "SAY.Dialog:Meeting.609.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "They went to the City..."
+          "sourceEnglish": "They went to the City...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 147,
           "utterer": "SAY.Dialog:Meeting.610.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "They left me behind."
+          "sourceEnglish": "They left me behind.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 148,
           "utterer": "SAY.Dialog:Meeting.612.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Again."
+          "sourceEnglish": "Again.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 149,
           "utterer": "SAY.Dialog:Meeting.614.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Pull yourself together."
+          "sourceEnglish": "Pull yourself together.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 150,
           "utterer": "SAY.Dialog:Meeting.619.Cole-Machine",
           "context": "",
-          "sourceEnglish": "I'm going to Mecha City."
+          "sourceEnglish": "I'm going to Mecha City.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 151,
           "utterer": "SAY.Dialog:Meeting.620.Cole-Machine",
           "context": "",
-          "sourceEnglish": "And you're coming with me."
+          "sourceEnglish": "And you're coming with me.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 152,
           "utterer": "SAY.Dialog:Meeting.624.Cole-Machine",
           "context": "",
-          "sourceEnglish": "Come on. It'll take a few days on foot."
+          "sourceEnglish": "Come on. It'll take a few days on foot.",
+          "translatedDutch": ""
         }
       ]
     }

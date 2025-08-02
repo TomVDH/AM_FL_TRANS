@@ -1,6 +1,6 @@
 {
   "fileName": "Translation Checklist",
-  "processedAt": "2025-08-02T03:35:26.768Z",
+  "processedAt": "2025-08-02T03:53:54.152Z",
   "sheets": [
     {
       "sheetName": "Schedule",
@@ -9,343 +9,400 @@
           "rowNumber": 1,
           "utterer": "WEEK OF",
           "context": "Monday",
-          "sourceEnglish": "Tuesday"
+          "sourceEnglish": "Tuesday",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "45789",
           "context": "PT-Final Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "45796",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "45803",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "45810",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "45817",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "45824",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "45831",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "45838",
           "context": "CA-E1 [ML] - 11am PST",
-          "sourceEnglish": "TR-E3 [ML] - 10am PST"
+          "sourceEnglish": "TR-E3 [ML] - 10am PST",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "45845",
           "context": "JP-WB2",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "45852",
           "context": "KO/JP font updates",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "",
           "context": "NL-E1",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "45859",
           "context": "KO/JP font updates",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "45866",
           "context": "KO/JP font updates",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "",
           "context": "NL-E2",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "45873",
           "context": "KO/JP font updates",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "45880",
           "context": "KO/JP font updates",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "45887",
           "context": "KO/JP font updates",
-          "sourceEnglish": "KO-E4"
+          "sourceEnglish": "KO-E4",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "45894",
           "context": "KO/JP font updates",
-          "sourceEnglish": "KO-E5"
+          "sourceEnglish": "KO-E5",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "45901",
           "context": "KO/JP font updates",
-          "sourceEnglish": "CA-E6"
+          "sourceEnglish": "CA-E6",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "",
           "context": "Create Show Ready vs. In-Development branches\n\nShow Ready:\nPT playthrough\nTR playthrough\nEN playthrough\n\nIn-Dev:\nNL, CA, KO, JP",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "45908",
           "context": "KO/JP font updates",
-          "sourceEnglish": "CA-E7 + E8"
+          "sourceEnglish": "CA-E7 + E8",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "45915",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 33,
           "utterer": "45922",
           "context": "",
-          "sourceEnglish": "PT-Stability Playthrough"
+          "sourceEnglish": "PT-Stability Playthrough",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "45929",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "45936",
           "context": "",
-          "sourceEnglish": "CA-E9 + E10"
+          "sourceEnglish": "CA-E9 + E10",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "45943",
           "context": "",
-          "sourceEnglish": "CA-E0 and animation checks"
+          "sourceEnglish": "CA-E0 and animation checks",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "45950",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "45957",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "45964",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "45971",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "45978",
           "context": "MERGE CA AND KO TO MAIN BRANCH\n\nLeave NL + JP",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
           "utterer": "45985",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "45992",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "45999",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
           "utterer": "46006",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 46,
           "utterer": "46013",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 47,
           "utterer": "46020",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 48,
           "utterer": "46027",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 49,
           "utterer": "46034",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 50,
           "utterer": "46041",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 51,
           "utterer": "46048",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 52,
           "utterer": "46055",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 53,
           "utterer": "46062",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 54,
           "utterer": "46069",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 55,
           "utterer": "46076",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 56,
           "utterer": "46083",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 57,
           "utterer": "46090",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 58,
           "utterer": "46097",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 59,
           "utterer": "46104",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 60,
           "utterer": "46111",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 61,
           "utterer": "46118",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 62,
           "utterer": "46125",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 63,
           "utterer": "46132",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 64,
           "utterer": "46139",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 65,
           "utterer": "46146",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 66,
           "utterer": "46153",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         }
       ]
     },
@@ -356,355 +413,414 @@
           "rowNumber": 1,
           "utterer": "EMRE",
           "context": "Action",
-          "sourceEnglish": "Translated"
+          "sourceEnglish": "Translated",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "All",
           "context": "World Building Meeting 2: Make Decisions on Names, etc. (They can change!)",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "Translator",
           "context": "Test translation of E1 Stable 1F + E1 Farm",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "All",
           "context": "Review Test Translation",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "Translator",
           "context": "E0",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "Translator",
           "context": "E1",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "Translator",
           "context": "E2",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "Translator",
           "context": "E3",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "Translator",
           "context": "E4",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "Translator",
           "context": "E5 (both)",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "Translator",
           "context": "E6",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "Translator",
           "context": "E7",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "Translator",
           "context": "E8",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "Translator",
           "context": "E9",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "Translator",
           "context": "E10",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "Patrick",
           "context": "Redraw/Animate all NonCSV elements",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "Patrick",
           "context": "E10 Words; Manual input, add all targeted GameObject, reposition all respawn colliders",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "Patrick",
           "context": "Add new Sprites/Animations to GameObjects",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "Milton",
           "context": "Export Well video",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "Patrick + Milton",
           "context": "Final full playthrough with all translated elements before premiere",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "PLAYTHROUGH NOTES",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "Hyphens for Smart list",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "Revisit names to discuss meanings: particularly Bad Ass, Sick Ass, and Human names",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "Set up Foal name to have Esek",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "Return to song of ascension phonemes: AA II, AH IH, AAH, IIH, A'H, 'IIH — update video after",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "Add S-with cedilla to YOLDAS -- Dos font",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "Revisit Farm House Radio (milton broke it early)",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "Make all ÖHÖ captials and ensure that single vs. double is correct",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
           "utterer": "Bumpkin Sign",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "Fannyside Flour sign",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "Check alignment Pleasure:",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
           "utterer": "Did not test Bad Ass Rescue",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 46,
           "utterer": "Update song of ascension text in E2 B1",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 47,
           "utterer": "Need to Translate E2 ButteHouse",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 48,
           "utterer": "EY - Change name of attacks in Butte Battle",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 49,
           "utterer": "Review attacks to be more like Pokemon in E2 battles",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 50,
           "utterer": "Capitalize the attacks in E2 battles",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 51,
           "utterer": "Can we make a really long word for the song of ascension?",
           "context": "",
-          "sourceEnglish": "Eşekleştiremeyeceklerimizdenmişçesine"
+          "sourceEnglish": "Eşekleştiremeyeceklerimizdenmişçesine",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 52,
           "utterer": "What is the Machine ending?",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 53,
           "utterer": "Update e1 and e2 names for characters in dialogues",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 54,
           "utterer": "Update to Uncle Kaba to Maternal uncle: Kaba Dayı",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 55,
           "utterer": "PB Localize Zoo in Newspaper: hayvanat bahçesi",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 56,
           "utterer": "ömür / kömür renaming Cole Butte?",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 57,
           "utterer": "Be an Esek not a Ezik",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 58,
           "utterer": "Can we think of a better acronym for Humans Are the Worst",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 59,
           "utterer": "Acımasız İnsanlara Acıma",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 60,
           "utterer": "Think about where Tesekkuler (?) fits at the very end of the game in the Epilogue, because it's a very beautiful word within donkey in",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         }
       ]
     },
@@ -715,343 +831,400 @@
           "rowNumber": 1,
           "utterer": "MARC",
           "context": "Action",
-          "sourceEnglish": "Translated"
+          "sourceEnglish": "Translated",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "All",
           "context": "World Building Meeting 2: Make Decisions on Names, etc. (They can change!)",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "Translator",
           "context": "Test translation of E1 Stable 1F + E1 Farm",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "All",
           "context": "Review Test Translation",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "Translator",
           "context": "E0",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "Translator",
           "context": "E1",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "Translator",
           "context": "E2",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "Translator",
           "context": "E3",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "Translator",
           "context": "E4",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "Translator",
           "context": "E5 (both)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "Translator",
           "context": "E6",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "Translator",
           "context": "E7",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "Translator",
           "context": "E8",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "Translator",
           "context": "E9",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "Translator",
           "context": "E10",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "Patrick",
           "context": "Redraw/Animate all NonCSV elements",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "Patrick",
           "context": "E10 Words; Manual input, add all targeted GameObject, reposition all respawn colliders",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "Patrick",
           "context": "Add new Sprites/Animations to GameObjects",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "Milton",
           "context": "Export Well video",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "Patrick + Milton",
           "context": "Final full playthrough with all translated elements before premiere",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "PLAYTHROUGH NOTES",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "Will meet on June 30",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "Need to add Punt Volat to all fonts",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "Create Unicode address for it in foal name select script; What other letters are required? ç?",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "Morale check capitalization",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "Other versions of \"cartell\" for sign?",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "c, p, t for stuttering",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "Check for bad ass to be complete before night called (more complicated)",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
           "utterer": "Rucorn",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "Radio in E1 Farm House not checked",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "Look at English battle text to standardize",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
           "utterer": "Utilisa + CAPS",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 47,
           "utterer": "THIRSTY: Changed Thirsty's region from Northern to Southern with richer vocabulary, losing some age, but accent is strong so it sounds countryside and out of touch with the world",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 48,
           "utterer": "NICE ASS: Nice Ass is still not present, but playing with Gen Z (maybe uses a lot of English language), trying to stay away from caricature",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 49,
           "utterer": "PRONOUNS: L'Expertase vs La Expertase and it depends on where the stress of the vowels; Marc suggests that we keep La even if it's wrong.",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 50,
           "utterer": "Asses' Well: Flagged // Sant Hilasi",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 51,
           "utterer": "Normal for rocks",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 52,
           "utterer": "Paner = butt and bread",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 53,
           "utterer": "Big City Circus sprite is not updated in the newspaper",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 54,
           "utterer": "- Missing UI sprite for current language for Newspaper_CircusTitle",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 55,
           "utterer": "* Image_MECHA",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 56,
           "utterer": "* Image_RECEIPT",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 57,
           "utterer": "Why are some things struck through on the sheet 11?",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 59,
           "utterer": "Fix Prophet sign and change it to -453 for Ase",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 60,
           "utterer": "Pick font for rhythm game 3D language",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         }
       ]
     },
@@ -1062,265 +1235,309 @@
           "rowNumber": 1,
           "utterer": "JOON",
           "context": "Action",
-          "sourceEnglish": "Translated"
+          "sourceEnglish": "Translated",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "All",
           "context": "World Building Meeting 2: Make Decisions on Names, etc. (They can change!)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "Translator",
           "context": "Test translation of E1 Stable 1F + E1 Farm",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "All",
           "context": "Review Test Translation",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "Translator",
           "context": "E0",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "Translator",
           "context": "E1",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "Translator",
           "context": "E2",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "Translator",
           "context": "E3",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "Translator",
           "context": "E4",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "Translator",
           "context": "E5 (both)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "Translator",
           "context": "E6",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "Translator",
           "context": "E7",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "Translator",
           "context": "E8",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "Translator",
           "context": "E9",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "Translator",
           "context": "E10",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "Patrick",
           "context": "Redraw/Animate all NonCSV elements",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "Patrick",
           "context": "E10 Words; Manual input, add all targeted GameObject, reposition all respawn colliders",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "Patrick",
           "context": "Add new Sprites/Animations to GameObjects",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "Milton",
           "context": "Export Well video",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "Patrick + Milton",
           "context": "Final full playthrough with all translated elements before premiere",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "PLAYTHROUGH NOTES",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "Priority:",
           "context": "Check with Joon about input standards for korean (manual commit etc.)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "",
           "context": "Remember to add the not allowed name check:                     if (player.text + \"Korean Donkey\" == notAllowedNamesKO[i])",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "",
           "context": "https://www.loc.gov/marc/specifications/specchareacc/KoreanHangul.html",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "",
           "context": "https://jrgraphix.net/research/unicode_blocks.php",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "",
           "context": "Very low tolerance on drug use",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "",
           "context": "Is there a legal consequence of representing drug use in media?",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
           "utterer": "",
           "context": "Should all character names be four syllables?",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 46,
           "utterer": "",
           "context": "Watch for missing periods",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 47,
           "utterer": "",
           "context": "Vertical letter with notch is a bit hard to read",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 48,
           "utterer": "",
           "context": "Size 50 with line weight of 1pt; 3 lines per block (redo the sizing reference)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 49,
           "utterer": "",
           "context": "Signage in E1 was JP not KO—is the error in the signage sprite order or in the PSD?",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         }
       ]
     },
@@ -1331,253 +1548,295 @@
           "rowNumber": 1,
           "utterer": "TOM",
           "context": "Action",
-          "sourceEnglish": "Translated"
+          "sourceEnglish": "Translated",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "All",
           "context": "World Building Meeting 2: Make Decisions on Names, etc. (They can change!)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "Translator",
           "context": "Test translation of E1 Stable 1F + E1 Farm",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "All",
           "context": "Review Test Translation",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "Translator",
           "context": "E0",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "Translator",
           "context": "E1",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "Translator",
           "context": "E2",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "Translator",
           "context": "E3",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "Translator",
           "context": "E4",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "Translator",
           "context": "E5 (both)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "Translator",
           "context": "E6",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "Translator",
           "context": "E7",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "Translator",
           "context": "E8",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "Translator",
           "context": "E9",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "Translator",
           "context": "E10",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "Patrick",
           "context": "Redraw/Animate all NonCSV elements",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "Patrick",
           "context": "E10 Words; Manual input, add all targeted GameObject, reposition all respawn colliders",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "Patrick",
           "context": "Add new Sprites/Animations to GameObjects",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "Milton",
           "context": "Export Well video",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "Patrick + Milton",
           "context": "Final full playthrough with all translated elements before premiere",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "PLAYTHROUGH NOTES",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "Fix apostraphe at start of sentence",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "Full pass on capitalization of core concepts (See Localization Manual)",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "Pass on dialect of Thirsty aim for 80%?",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "Poep jokes -- Poepsimpel",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "Quite few bodily reference puns/wordplays coming: ears, hoofs, teeth, shit, maw\nSome additional to consider: tails, hoef, hides",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "Return to the Ass Power slogan:",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
           "utterer": "Mecha City >> Mechalen || explore words around mechanization, technology, machines, etc. to appear near it in the text",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "Stront (shit) / Strontium (chemical element)",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "Achterwerk >> let's see how far we can make Werk go",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         }
       ]
     },
@@ -1588,199 +1847,232 @@
           "rowNumber": 1,
           "utterer": "KYLE",
           "context": "Action",
-          "sourceEnglish": "Translated"
+          "sourceEnglish": "Translated",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "All",
           "context": "World Building Meeting 2: Make Decisions on Names, etc. (They can change!)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "Translator",
           "context": "Test translation of E1 Stable 1F + E1 Farm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "All",
           "context": "Review Test Translation",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "Translator",
           "context": "E0",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "Translator",
           "context": "E1",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "Translator",
           "context": "E2",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "Translator",
           "context": "E3",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "Translator",
           "context": "E4",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "Translator",
           "context": "E5 (both)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "Translator",
           "context": "E6",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "Translator",
           "context": "E7",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "Translator",
           "context": "E8",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "Translator",
           "context": "E9",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "Translator",
           "context": "E10",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "Patrick",
           "context": "Redraw/Animate all NonCSV elements",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "Patrick",
           "context": "E10 Words; Manual input, add all targeted GameObject, reposition all respawn colliders",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "Patrick",
           "context": "Add new Sprites/Animations to GameObjects",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "Milton",
           "context": "Export Well video",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "Patrick + Milton",
           "context": "Final full playthrough with all translated elements before premiere",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "PLAYTHROUGH NOTES",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         }
       ]
     },
@@ -1791,199 +2083,232 @@
           "rowNumber": 1,
           "utterer": "Translator: ####",
           "context": "Action",
-          "sourceEnglish": "Translated"
+          "sourceEnglish": "Translated",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "All",
           "context": "World Building Meeting 2: Make Decisions on Names, etc. (They can change!)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "Translator",
           "context": "Test translation of E1 Stable 1F + E1 Farm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "All",
           "context": "Review Test Translation",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "Translator",
           "context": "E0",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "Translator",
           "context": "E1",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "Translator",
           "context": "E2",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "Translator",
           "context": "E3",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "Translator",
           "context": "E4",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "Translator",
           "context": "E5 (both)",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "Translator",
           "context": "E6",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "Translator",
           "context": "E7",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "Translator",
           "context": "E8",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "Translator",
           "context": "E9",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "Translator",
           "context": "E10",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "All",
           "context": "Review",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "Patrick",
           "context": "Redraw/Animate all NonCSV elements",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "Patrick",
           "context": "E10 Words; Manual input, add all targeted GameObject, reposition all respawn colliders",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "Patrick",
           "context": "Add new Sprites/Animations to GameObjects",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "Milton",
           "context": "Export Well video",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "Patrick + Milton",
           "context": "Final full playthrough with all translated elements before premiere",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "PLAYTHROUGH NOTES",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         }
       ]
     }

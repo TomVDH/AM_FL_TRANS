@@ -1,6 +1,6 @@
 {
   "fileName": "11_asses.masses_NonCSVBasedTranslations",
-  "processedAt": "2025-08-02T03:35:25.595Z",
+  "processedAt": "2025-08-02T03:53:53.100Z",
   "sheets": [
     {
       "sheetName": "Other Translations",
@@ -9,313 +9,365 @@
           "rowNumber": 1,
           "utterer": "Mu",
           "context": "Scene",
-          "sourceEnglish": "Item"
+          "sourceEnglish": "Item",
+          "translatedDutch": "IT"
         },
         {
           "rowNumber": 2,
           "utterer": "na",
           "context": "",
-          "sourceEnglish": "Foal Name Controller"
+          "sourceEnglish": "Foal Name Controller",
+          "translatedDutch": "asina"
         },
         {
           "rowNumber": 3,
           "utterer": "1",
           "context": "Farm",
-          "sourceEnglish": "Sign_FannysideFlour"
+          "sourceEnglish": "Sign_FannysideFlour",
+          "translatedDutch": "Farine Culonia"
         },
         {
           "rowNumber": 4,
           "utterer": "1",
           "context": "Farm",
-          "sourceEnglish": "Sign_FannysideFlourBurned"
+          "sourceEnglish": "Sign_FannysideFlourBurned",
+          "translatedDutch": "Farine Culonia"
         },
         {
           "rowNumber": 5,
           "utterer": "1",
           "context": "Stable2f",
-          "sourceEnglish": "Inelligble Foal Names"
+          "sourceEnglish": "Inelligble Foal Names",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "1",
           "context": "TheProtest",
-          "sourceEnglish": "Sign_BumpkinVillage"
+          "sourceEnglish": "Sign_BumpkinVillage",
+          "translatedDutch": "Borgo Bifolco"
         },
         {
           "rowNumber": 7,
           "utterer": "1",
           "context": "Fannyside",
-          "sourceEnglish": "Sign_MineName"
+          "sourceEnglish": "Sign_MineName",
+          "translatedDutch": "Latrivella"
         },
         {
           "rowNumber": 8,
           "utterer": "1",
           "context": "TheWell",
-          "sourceEnglish": "Loading"
+          "sourceEnglish": "Loading",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "1",
           "context": "TheWell",
-          "sourceEnglish": "Flashing text"
+          "sourceEnglish": "Flashing text",
+          "translatedDutch": "IIH"
         },
         {
           "rowNumber": 55,
           "utterer": "1",
           "context": "TheSex",
-          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+          "sourceEnglish": "Sex Accuracy PopUp: Meh",
+          "translatedDutch": "Mancato"
         },
         {
           "rowNumber": 56,
           "utterer": "1",
           "context": "TheSex",
-          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+          "sourceEnglish": "Sex Accuracy PopUp: Meh",
+          "translatedDutch": "Bah"
         },
         {
           "rowNumber": 57,
           "utterer": "1",
           "context": "TheSex",
-          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+          "sourceEnglish": "Sex Accuracy PopUp: Meh",
+          "translatedDutch": "Buono"
         },
         {
           "rowNumber": 58,
           "utterer": "1",
           "context": "TheSex",
-          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+          "sourceEnglish": "Sex Accuracy PopUp: Meh",
+          "translatedDutch": "Grande"
         },
         {
           "rowNumber": 59,
           "utterer": "1",
           "context": "TheSex",
-          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+          "sourceEnglish": "Sex Accuracy PopUp: Meh",
+          "translatedDutch": "Perfetto"
         },
         {
           "rowNumber": 60,
           "utterer": "1",
           "context": "TheFarm",
-          "sourceEnglish": "Stable Sign"
+          "sourceEnglish": "Stable Sign",
+          "translatedDutch": "Stalla"
         },
         {
           "rowNumber": 61,
           "utterer": "1",
           "context": "TheFarm",
-          "sourceEnglish": "Mill Sign"
+          "sourceEnglish": "Mill Sign",
+          "translatedDutch": "Mulino"
         },
         {
           "rowNumber": 62,
           "utterer": "1",
           "context": "The Protest",
-          "sourceEnglish": "Theatre Sign"
+          "sourceEnglish": "Theatre Sign",
+          "translatedDutch": "Teatro"
         },
         {
           "rowNumber": 63,
           "utterer": "3",
           "context": "E3_100",
-          "sourceEnglish": "CircusAds in newspaper"
+          "sourceEnglish": "CircusAds in newspaper",
+          "translatedDutch": "Circo di Mirco"
         },
         {
           "rowNumber": 64,
           "utterer": "",
           "context": "",
-          "sourceEnglish": "Zoo Name"
+          "sourceEnglish": "Zoo Name",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 65,
           "utterer": "3",
           "context": "E3_100",
-          "sourceEnglish": "Job Ad Derriere Name"
+          "sourceEnglish": "Job Ad Derriere Name",
+          "translatedDutch": "De Ricchis"
         },
         {
           "rowNumber": 66,
           "utterer": "3",
           "context": "E3_LazysGrave",
-          "sourceEnglish": "Wallet"
+          "sourceEnglish": "Wallet",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 67,
           "utterer": "3",
           "context": "E3_LazysGrave",
-          "sourceEnglish": "Wallet"
+          "sourceEnglish": "Wallet",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 68,
           "utterer": "4",
           "context": "Goodbye",
-          "sourceEnglish": "Song of Ascension phonemes"
+          "sourceEnglish": "Song of Ascension phonemes",
+          "translatedDutch": "iih ooh hi hon 'ee oh he o'w"
         },
         {
           "rowNumber": 69,
           "utterer": "5",
           "context": "Hwy",
-          "sourceEnglish": "Derriere Truck Sign"
+          "sourceEnglish": "Derriere Truck Sign",
+          "translatedDutch": "De Ricchis"
         },
         {
           "rowNumber": 70,
           "utterer": "5",
           "context": "Hwy",
-          "sourceEnglish": "Boredom is Freedom"
+          "sourceEnglish": "Boredom is Freedom",
+          "translatedDutch": "La Noia è Libertà"
         },
         {
           "rowNumber": 71,
           "utterer": "5",
           "context": "Hwy",
-          "sourceEnglish": "Prophet Sign"
+          "sourceEnglish": "Prophet Sign",
+          "translatedDutch": "Il Profeta Tornerà\nchiama\n1-455-credici"
         },
         {
           "rowNumber": 72,
           "utterer": "5",
           "context": "Hwy",
-          "sourceEnglish": "Jack's Diner"
+          "sourceEnglish": "Jack's Diner",
+          "translatedDutch": "Al Covo"
         },
         {
           "rowNumber": 73,
           "utterer": "5",
           "context": "Hwy",
-          "sourceEnglish": "Gas sign"
+          "sourceEnglish": "Gas sign",
+          "translatedDutch": "Benzina\nself-service"
         },
         {
           "rowNumber": 74,
           "utterer": "6",
           "context": "World",
-          "sourceEnglish": "Slow Story Derriere Name"
+          "sourceEnglish": "Slow Story Derriere Name",
+          "translatedDutch": "De Ricchis"
         },
         {
           "rowNumber": 75,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Derriere Assorted Meats Sign"
+          "sourceEnglish": "Derriere Assorted Meats Sign",
+          "translatedDutch": "De Ricchis – Carni assortite e Prodotti di bellezza"
         },
         {
           "rowNumber": 76,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Enlightenment Solutions"
+          "sourceEnglish": "Enlightenment Solutions",
+          "translatedDutch": "Soluzioni Illuminazione"
         },
         {
           "rowNumber": 77,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "ProgressLabs"
+          "sourceEnglish": "ProgressLabs",
+          "translatedDutch": "Laboratori e-Splodo"
         },
         {
           "rowNumber": 78,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Mecha City Art Gallery"
+          "sourceEnglish": "Mecha City Art Gallery",
+          "translatedDutch": "Galleria d'Arte di Meccanopoli"
         },
         {
           "rowNumber": 79,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Centre for Social Justice"
+          "sourceEnglish": "Centre for Social Justice",
+          "translatedDutch": "Centro per la Giustizia Sociale De Ricchis"
         },
         {
           "rowNumber": 80,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Aspire"
+          "sourceEnglish": "Aspire",
+          "translatedDutch": "Aspira a di più"
         },
         {
           "rowNumber": 81,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Green Future"
+          "sourceEnglish": "Green Future",
+          "translatedDutch": "Futuro Green"
         },
         {
           "rowNumber": 82,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Mecha City Research Centre"
+          "sourceEnglish": "Mecha City Research Centre",
+          "translatedDutch": "Centro di Ricerca di Meccanopoli"
         },
         {
           "rowNumber": 83,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Mecha U Aspire to Excellence"
+          "sourceEnglish": "Mecha U Aspire to Excellence",
+          "translatedDutch": "UniMecca – Aspirare all'eccellenza"
         },
         {
           "rowNumber": 84,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Institute for Progress"
+          "sourceEnglish": "Institute for Progress",
+          "translatedDutch": "Istituto per il Progresso"
         },
         {
           "rowNumber": 85,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Derriere Law Firm and Associates"
+          "sourceEnglish": "Derriere Law Firm and Associates",
+          "translatedDutch": "Studio Legale De Ricchis & Associati"
         },
         {
           "rowNumber": 86,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Derriere Innovation Hub"
+          "sourceEnglish": "Derriere Innovation Hub",
+          "translatedDutch": "Polo d'Innovazione De Ricchis"
         },
         {
           "rowNumber": 87,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Ms. Fission"
+          "sourceEnglish": "Ms. Fission",
+          "translatedDutch": "DR"
         },
         {
           "rowNumber": 88,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Red D"
+          "sourceEnglish": "Red D",
+          "translatedDutch": "DR"
         },
         {
           "rowNumber": 89,
           "utterer": "7",
           "context": "Opening",
-          "sourceEnglish": "Gold D"
+          "sourceEnglish": "Gold D",
+          "translatedDutch": "DR"
         },
         {
           "rowNumber": 90,
           "utterer": "7",
           "context": "BigBattle",
-          "sourceEnglish": "Robotics"
+          "sourceEnglish": "Robotics",
+          "translatedDutch": "Robotica"
         },
         {
           "rowNumber": 91,
           "utterer": "9",
           "context": "Ripping",
-          "sourceEnglish": "Jack's dinner background"
+          "sourceEnglish": "Jack's dinner background",
+          "translatedDutch": "Al Covo"
         },
         {
           "rowNumber": 92,
           "utterer": "9",
           "context": "Ripping",
-          "sourceEnglish": "MIT letter acceptance letter"
+          "sourceEnglish": "MIT letter acceptance letter",
+          "translatedDutch": "UniMecca / Pietro Latrivella"
         },
         {
           "rowNumber": 93,
           "utterer": "9",
           "context": "Ripping",
-          "sourceEnglish": "MIT letter being burned"
+          "sourceEnglish": "MIT letter being burned",
+          "translatedDutch": "UniMecca / Pietro Latrivella"
         },
         {
           "rowNumber": 94,
           "utterer": "9",
           "context": "Ripping",
-          "sourceEnglish": "Song of Ascension"
+          "sourceEnglish": "Song of Ascension",
+          "translatedDutch": "iih ooh hi hon 'ee oh he o'w"
         },
         {
           "rowNumber": 96,
           "utterer": "9",
           "context": "Ripping",
-          "sourceEnglish": "Flashing text"
+          "sourceEnglish": "Flashing text",
+          "translatedDutch": "BENVENUTO"
         },
         {
           "rowNumber": 103,
           "utterer": "10",
           "context": "ProphetSpeech",
-          "sourceEnglish": "Manual backups for Manifesto"
+          "sourceEnglish": "Manual backups for Manifesto",
+          "translatedDutch": "Cedete del territorio agli Asini."
         },
         {
           "rowNumber": 104,
           "utterer": "",
           "context": "",
-          "sourceEnglish": "NOTE: These are for if something happens and the game crashes between the Government Manifesto and the Prophet Speech, these will be used for the Manifesto speech at the end."
+          "sourceEnglish": "NOTE: These are for if something happens and the game crashes between the Government Manifesto and the Prophet Speech, these will be used for the Manifesto speech at the end.",
+          "translatedDutch": "Supportate e apprezza le imprese creative degli Asini."
         }
       ]
     },
@@ -326,19 +378,22 @@
           "rowNumber": 3,
           "utterer": "",
           "context": "massace",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "the spark",
           "context": "",
-          "sourceEnglish": "the inevitable"
+          "sourceEnglish": "the inevitable",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "",
           "context": "the Machine Prophet",
-          "sourceEnglish": "and the asses from Fannyside"
+          "sourceEnglish": "and the asses from Fannyside",
+          "translatedDutch": ""
         }
       ]
     },
@@ -349,19 +404,22 @@
           "rowNumber": 3,
           "utterer": "",
           "context": "マス",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "火花",
           "context": "",
-          "sourceEnglish": "必然"
+          "sourceEnglish": "必然",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "",
           "context": "機械預言者",
-          "sourceEnglish": "そしてファニーサイドのロバたち"
+          "sourceEnglish": "そしてファニーサイドのロバたち",
+          "translatedDutch": ""
         }
       ]
     },
@@ -372,19 +430,22 @@
           "rowNumber": 3,
           "utterer": "",
           "context": "una masacre",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "la chispa",
           "context": "",
-          "sourceEnglish": "lo inevitable"
+          "sourceEnglish": "lo inevitable",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "",
           "context": "la Máquina-Profeta",
-          "sourceEnglish": "y los asnos de Las Posaderas"
+          "sourceEnglish": "y los asnos de Las Posaderas",
+          "translatedDutch": ""
         }
       ]
     },
@@ -395,19 +456,22 @@
           "rowNumber": 3,
           "utterer": "",
           "context": "massacre",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "l'étincelle",
           "context": "",
-          "sourceEnglish": "l'inévitable"
+          "sourceEnglish": "l'inévitable",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "",
           "context": "la Machine-Prophète",
-          "sourceEnglish": "et les ânes de Niquedouille"
+          "sourceEnglish": "et les ânes de Niquedouille",
+          "translatedDutch": ""
         }
       ]
     },
@@ -418,19 +482,22 @@
           "rowNumber": 3,
           "utterer": "",
           "context": "massacre",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "a faísca",
           "context": "",
-          "sourceEnglish": "o invitável"
+          "sourceEnglish": "o invitável",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "",
           "context": "a Profeta-Máquina",
-          "sourceEnglish": "e os Asnos de Santa Caipira"
+          "sourceEnglish": "e os Asnos de Santa Caipira",
+          "translatedDutch": ""
         }
       ]
     },
@@ -441,19 +508,22 @@
           "rowNumber": 3,
           "utterer": "",
           "context": "massacro",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "la scintilla",
           "context": "",
-          "sourceEnglish": "l'inevitabile"
+          "sourceEnglish": "l'inevitabile",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "",
           "context": "la Macchina-Profeta",
-          "sourceEnglish": "e gli Asini di Culonia"
+          "sourceEnglish": "e gli Asini di Culonia",
+          "translatedDutch": ""
         }
       ]
     },
@@ -464,19 +534,22 @@
           "rowNumber": 3,
           "utterer": "",
           "context": "Massaker",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "der Funke",
           "context": "",
-          "sourceEnglish": "das Unvermeidliche"
+          "sourceEnglish": "das Unvermeidliche",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "",
           "context": "die Prophet-Maschine",
-          "sourceEnglish": "und die Esel von Po-der-Welt"
+          "sourceEnglish": "und die Esel von Po-der-Welt",
+          "translatedDutch": ""
         }
       ]
     },
@@ -487,19 +560,22 @@
           "rowNumber": 3,
           "utterer": "",
           "context": "massace",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "the spark",
           "context": "",
-          "sourceEnglish": "the inevitable"
+          "sourceEnglish": "the inevitable",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "",
           "context": "the Machine Prophet",
-          "sourceEnglish": "and the asses from Fannyside"
+          "sourceEnglish": "and the asses from Fannyside",
+          "translatedDutch": ""
         }
       ]
     },
@@ -510,19 +586,22 @@
           "rowNumber": 3,
           "utterer": "",
           "context": "massacre",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "la guspira",
           "context": "",
-          "sourceEnglish": "l'inevitable"
+          "sourceEnglish": "l'inevitable",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "",
           "context": "la Màquina Profeta",
-          "sourceEnglish": "i els ases de Talldevall"
+          "sourceEnglish": "i els ases de Talldevall",
+          "translatedDutch": ""
         }
       ]
     },
@@ -533,55 +612,64 @@
           "rowNumber": 1,
           "utterer": "UTF CODES (VERY IMPORTANT!)",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 2,
           "utterer": "20-7E,A0-BB,BF-C4,C6-DD,DF-EF,F1-FD,FF,11E-11F,130-131,15E-15F,2010-2015,2018-2027,2030,2038-203E,2043,2047,204B,204E-204F,2056,20AC,2122,25A1",
           "context": "",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "Fonts",
           "context": "Status",
-          "sourceEnglish": "S-sedilla"
+          "sourceEnglish": "S-sedilla",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "Reactor7",
           "context": "Done",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "Beth Ellen",
           "context": "Done",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "GreenwichMean",
           "context": "Done",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "Philosopher",
           "context": "Done",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "DOS",
           "context": "Done",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "VT323",
           "context": "Done",
-          "sourceEnglish": "x"
+          "sourceEnglish": "x",
+          "translatedDutch": ""
         }
       ]
     }

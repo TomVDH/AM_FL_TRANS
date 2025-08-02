@@ -18,14 +18,15 @@ const fs = require('fs');
 const path = require('path');
 const XLSX = require('xlsx');
 
-// Configuration
-const EXCELS_FOLDER = path.join(__dirname, '..', 'excels');
-const OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'json');
-const REQUIRED_COLUMNS = {
-  A: 'Utterer',
-  B: 'Context', 
-  C: 'Source English'
-};
+  // Configuration
+  const EXCELS_FOLDER = path.join(__dirname, '..', 'excels');
+  const OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'json');
+  const REQUIRED_COLUMNS = {
+    A: 'Utterer',
+    B: 'Context', 
+    C: 'Source English',
+    J: 'Translated Dutch'
+  };
 
 /**
  * Ensure output directory exists
@@ -75,10 +76,11 @@ function processExcelFile(filePath) {
         // Skip empty rows
         if (!row || row.length === 0) return;
         
-        // Extract data from columns A, B, C (indices 0, 1, 2)
+        // Extract data from columns A, B, C, J (indices 0, 1, 2, 9)
         const utterer = row[0] || '';
         const context = row[1] || '';
         const sourceEnglish = row[2] || '';
+        const translatedDutch = row[9] || ''; // Column J (index 9)
         
         // Only include rows that have at least some data
         if (utterer || context || sourceEnglish) {
@@ -86,7 +88,8 @@ function processExcelFile(filePath) {
             rowNumber: rowIndex + 1, // Excel rows are 1-indexed
             utterer: utterer.toString().trim(),
             context: context.toString().trim(),
-            sourceEnglish: sourceEnglish.toString().trim()
+            sourceEnglish: sourceEnglish.toString().trim(),
+            translatedDutch: translatedDutch.toString().trim()
           });
         }
       });

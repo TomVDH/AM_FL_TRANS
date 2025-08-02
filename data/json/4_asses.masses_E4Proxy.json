@@ -1,6 +1,6 @@
 {
   "fileName": "4_asses.masses_E4Proxy",
-  "processedAt": "2025-08-02T03:35:26.240Z",
+  "processedAt": "2025-08-02T03:53:53.660Z",
   "sheets": [
     {
       "sheetName": "E4_EpisodeTitle_localization",
@@ -9,25 +9,29 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
-          "sourceEnglish": "EPISODE FOUR"
+          "sourceEnglish": "EPISODE FOUR",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
-          "sourceEnglish": "THE PATH"
+          "sourceEnglish": "THE PATH",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
-          "sourceEnglish": "Press X to Begin"
+          "sourceEnglish": "Press X to Begin",
+          "translatedDutch": ""
         }
       ]
     },
@@ -38,133 +42,155 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:Introduction.3.Kick Ass",
           "context": "Black screen. Echoes of dialogue from back inside the Mine.",
-          "sourceEnglish": "Sick Ass? Are you with me?"
+          "sourceEnglish": "Sick Ass? Are you with me?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:Introduction.25.Kick Ass",
           "context": "",
-          "sourceEnglish": "@#$%&! SICK?!"
+          "sourceEnglish": "@#$%&! SICK?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:Introduction.16.Sick Ass",
           "context": "Work whistle. Fade up to Sick Ass outside of the Mines.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:Introduction.56.Kick Ass",
           "context": "Kick Ass enters frame.",
-          "sourceEnglish": "Hey sis'—it's BREAK TIME!"
+          "sourceEnglish": "Hey sis'—it's BREAK TIME!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:Introduction.58.Kick Ass",
           "context": "",
-          "sourceEnglish": "Wanna play HIDE AND SEEK?"
+          "sourceEnglish": "Wanna play HIDE AND SEEK?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "MENU.Dialog:Introduction.60",
           "context": "Dialogue 1.1.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog:Introduction.72.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:Introduction.21.Kick Ass",
           "context": "Jump to line 14.",
-          "sourceEnglish": "Yes? GREAT!"
+          "sourceEnglish": "Yes? GREAT!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "MENU.Dialog:Introduction.61",
           "context": "Dialogue 1.2.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:Introduction.12.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:Introduction.17.Kick Ass",
           "context": "Jump to line 14.",
-          "sourceEnglish": "No? Ha ha. Don't worry, I'll go easy on you."
+          "sourceEnglish": "No? Ha ha. Don't worry, I'll go easy on you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:Introduction.22.Kick Ass",
           "context": "Dialogues (1.1 and 1.2) converge.",
-          "sourceEnglish": "I'll start COUNTING!"
+          "sourceEnglish": "I'll start COUNTING!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:ReadyOrNot.1.Kick Ass",
           "context": "",
-          "sourceEnglish": "30 SECONDS!"
+          "sourceEnglish": "30 SECONDS!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog:ReadyOrNot.16.Kick Ass",
           "context": "Mini-game begins.",
-          "sourceEnglish": "Ready or not—HERE I COME!"
+          "sourceEnglish": "Ready or not—HERE I COME!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog:FoundYou.1.Kick Ass",
           "context": "Kick Ass always finds Sick Ass.",
-          "sourceEnglish": "FOUND YOU!"
+          "sourceEnglish": "FOUND YOU!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:FoundYou.2.Kick Ass",
           "context": "Mini-game begins, round 2.",
-          "sourceEnglish": "That was awesome, WASN'T IT? Let's play AGAIN!"
+          "sourceEnglish": "That was awesome, WASN'T IT? Let's play AGAIN!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog:FoundYou.16.Kick Ass",
           "context": "Kick Ass always finds Sick Ass.",
-          "sourceEnglish": "You're my sister and I'll always FIND YOU."
+          "sourceEnglish": "You're my sister and I'll always FIND YOU.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:FoundYou.12.Kick Ass",
           "context": "",
-          "sourceEnglish": "Even if you're down in the deepest corner of the Mine!"
+          "sourceEnglish": "Even if you're down in the deepest corner of the Mine!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog:FoundYou.13.Kick Ass",
           "context": "",
-          "sourceEnglish": "Or in the FARTHEST CITY!"
+          "sourceEnglish": "Or in the FARTHEST CITY!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog:FoundYou.15.Kick Ass",
           "context": "Fade out.",
-          "sourceEnglish": "Or somewhere ELSE ENTIRELY!!"
+          "sourceEnglish": "Or somewhere ELSE ENTIRELY!!",
+          "translatedDutch": ""
         }
       ]
     },
@@ -175,427 +201,498 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:SickCough.2.Sick Ass",
           "context": "Dialogue for when Sick Ass coughs.\n// Sick Ass wanders around the first floor of the Mine. She is slowly dying.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:SickAttemptToExitToMine.2.Sick Ass",
           "context": "Dialogue for when Sick Ass tries to exit.",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:SickAttemptToExitOutside.2.Sick Ass",
           "context": "Dialogue for when Sick Ass tries to exit.",
-          "sourceEnglish": "..."
+          "sourceEnglish": "...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:SickKick.10.Kick Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Hey Sick, you're supposed to be MELLOWING out!"
+          "sourceEnglish": "Hey Sick, you're supposed to be MELLOWING out!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:SickKick.12.Kick Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "Don't go too FAR!"
+          "sourceEnglish": "Don't go too FAR!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Dialog:SickHard.10.Hard Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Lie down. We need your strength."
+          "sourceEnglish": "Lie down. We need your strength.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog:SickHard.23.Hard Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "Rest, Comrade."
+          "sourceEnglish": "Rest, Comrade.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:SickSlow.10.Slow Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Oh Sick, I wish you would get b-b-b..."
+          "sourceEnglish": "Oh Sick, I wish you would get b-b-b...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Dialog:SickSlow.23.Slow Ass",
           "context": "",
-          "sourceEnglish": "b-b-b-b..."
+          "sourceEnglish": "b-b-b-b...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:SickSlow.22.Slow Ass",
           "context": "",
-          "sourceEnglish": "b-b-b-b-b..."
+          "sourceEnglish": "b-b-b-b-b...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:SickSlow.24.Slow Ass",
           "context": "",
-          "sourceEnglish": "...better."
+          "sourceEnglish": "...better.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:SickSlow.12.Slow Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "If Trusty were around, she'd by right b-b-by your side."
+          "sourceEnglish": "If Trusty were around, she'd by right b-b-by your side.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:SickSad.10.Sad Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Oh Sick... you don't look like you have much time left..."
+          "sourceEnglish": "Oh Sick... you don't look like you have much time left...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog:SickSad.12.Sad Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "*whimper*"
+          "sourceEnglish": "*whimper*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog:SickSmart.10.Smart Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Why did Hard Ass cross the road?"
+          "sourceEnglish": "Why did Hard Ass cross the road?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:SickSmart.22.Smart Ass",
           "context": "",
-          "sourceEnglish": "Oh, oops. I guess now's not the time..."
+          "sourceEnglish": "Oh, oops. I guess now's not the time...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog:SickSmart.12.Smart Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "You know, Sick, you're the only here who can take a joke."
+          "sourceEnglish": "You know, Sick, you're the only here who can take a joke.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:SickThirsty.10.Thirsty Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Can I git ya some water, Comrade?"
+          "sourceEnglish": "Can I git ya some water, Comrade?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog:SickThirsty.12.Thirsty Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "Heck, yer not lookin' so hot."
+          "sourceEnglish": "Heck, yer not lookin' so hot.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog:SickSturdy.10.Sturdy Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Fear not Comrade, I'm confident that the Gods are watching over you."
+          "sourceEnglish": "Fear not Comrade, I'm confident that the Gods are watching over you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog:SickSturdy.27.Sturdy Ass",
           "context": "Repeater line. Depending on what Old Ass said in Episode 1.",
-          "sourceEnglish": "Remember what Old Ass said: Ass Power!"
+          "sourceEnglish": "Remember what Old Ass said: Ass Power!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog:SickSturdy.28.Sturdy Ass",
           "context": "Repeater line. Depending on what Old Ass said in Episode 1.",
-          "sourceEnglish": "Remember what Old Ass said: Don't be scared!"
+          "sourceEnglish": "Remember what Old Ass said: Don't be scared!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "SAY.Dialog:SickBig.10.Big Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "If I had any of my rations left I'd share them with you."
+          "sourceEnglish": "If I had any of my rations left I'd share them with you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "SAY.Dialog:SickBig.22.Big Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "I'm sorry, there's nothing left."
+          "sourceEnglish": "I'm sorry, there's nothing left.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "SAY.Dialog:SickNice.10.Nice Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Golly! You must be feeling better already!"
+          "sourceEnglish": "Golly! You must be feeling better already!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "SAY.Dialog:SickNice.12.Nice Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "You look ready to hop back to work!"
+          "sourceEnglish": "You look ready to hop back to work!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "MENU.Dialog:KickHard.66",
           "context": "Dialogue option 1.1. // After Sick dies, the Player takes over as Kick Ass who needs to find his sister in the Mine.",
-          "sourceEnglish": "@#$%&! You're to blame for all of our SUFFERING, Hard Ass!"
+          "sourceEnglish": "@#$%&! You're to blame for all of our SUFFERING, Hard Ass!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "SAY.Dialog:KickHard.70.Kick Ass",
           "context": "Jump to line 33.",
-          "sourceEnglish": "@#$%&! You're to blame for all of our SUFFERING, Hard Ass!"
+          "sourceEnglish": "@#$%&! You're to blame for all of our SUFFERING, Hard Ass!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "MENU.Dialog:KickHard.65",
           "context": "Dialogue option 1.2. // After Sick dies, the Player takes over as Kick Ass who needs to find his sister in the Mine.",
-          "sourceEnglish": "@#$%&! We can't keep going out in the RAIN on these MISSIONS."
+          "sourceEnglish": "@#$%&! We can't keep going out in the RAIN on these MISSIONS.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "SAY.Dialog:KickHard.69.Kick Ass",
           "context": "Jump to line 33.",
-          "sourceEnglish": "@#$%&! We can't keep going out in the RAIN on these MISSIONS."
+          "sourceEnglish": "@#$%&! We can't keep going out in the RAIN on these MISSIONS.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 33,
           "utterer": "SAY.Dialog:KickHard.10.Kick Ass",
           "context": "Dialogue options (1.1 and 1.2) converge.",
-          "sourceEnglish": "Sick's getting WORSE."
+          "sourceEnglish": "Sick's getting WORSE.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "SAY.Dialog:KickHard.26.Hard Ass",
           "context": "",
-          "sourceEnglish": "Comrade, she will be fine. We leave at dawn for the next mission."
+          "sourceEnglish": "Comrade, she will be fine. We leave at dawn for the next mission.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:KickHard.25.Kick Ass",
           "context": "",
-          "sourceEnglish": "WHAT?! She needs REST!"
+          "sourceEnglish": "WHAT?! She needs REST!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "SAY.Dialog:KickHard.34.Hard Ass",
           "context": "",
-          "sourceEnglish": "We need all three of us."
+          "sourceEnglish": "We need all three of us.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "SAY.Dialog:KickHard.57.Hard Ass",
           "context": "",
-          "sourceEnglish": "We have not finished what we started."
+          "sourceEnglish": "We have not finished what we started.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:KickHard.27.Kick Ass",
           "context": "",
-          "sourceEnglish": "We've had ENOUGH!"
+          "sourceEnglish": "We've had ENOUGH!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "SAY.Dialog:KickHard.56.Kick Ass",
           "context": "",
-          "sourceEnglish": "We don't want to play your GAME ANYMORE!"
+          "sourceEnglish": "We don't want to play your GAME ANYMORE!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "SAY.Dialog:KickHard.24.Hard Ass",
           "context": "",
-          "sourceEnglish": "There is no going back after what we have done."
+          "sourceEnglish": "There is no going back after what we have done.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "SAY.Dialog:KickHard.55.Hard Ass",
           "context": "",
-          "sourceEnglish": "The truth will tear the Herd in two."
+          "sourceEnglish": "The truth will tear the Herd in two.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
           "utterer": "SAY.Dialog:KickHard.28.Kick Ass",
           "context": "",
-          "sourceEnglish": "I DON'T CARE about the Herd!"
+          "sourceEnglish": "I DON'T CARE about the Herd!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "SAY.Dialog:KickHard.38.Kick Ass",
           "context": "",
-          "sourceEnglish": "All I care about is—"
+          "sourceEnglish": "All I care about is—",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "SAY.Dialog:KickHard.54.Kick Ass",
           "context": "",
-          "sourceEnglish": "Sick?"
+          "sourceEnglish": "Sick?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
           "utterer": "SAY.Dialog:KickHard.37.Kick Ass",
           "context": "",
-          "sourceEnglish": "SICK?!"
+          "sourceEnglish": "SICK?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 46,
           "utterer": "SAY.Dialog:KickHard.40.Kick Ass",
           "context": "Kick Ass goes to find Sick Ass.",
-          "sourceEnglish": "Sick—where are you?!"
+          "sourceEnglish": "Sick—where are you?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 47,
           "utterer": "SAY.Dialog:HardRepeater.12.Hard Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.",
-          "sourceEnglish": "\"You only hit rock bottom when you quit.\""
+          "sourceEnglish": "\"You only hit rock bottom when you quit.\"",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 48,
           "utterer": "SAY.Dialog:KickNice.10.Nice Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they talked with Sick.",
-          "sourceEnglish": "Sick looks like she's feeling better! I think everything's going to be alright!"
+          "sourceEnglish": "Sick looks like she's feeling better! I think everything's going to be alright!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 49,
           "utterer": "SAY.Dialog:KickNice.12.Nice Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they did NOT talk with Sick.",
-          "sourceEnglish": "How's Sick feeling today? You two make such a good pair!"
+          "sourceEnglish": "How's Sick feeling today? You two make such a good pair!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 50,
           "utterer": "SAY.Dialog:KickSad.10.Sad Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they talked with Sick.",
-          "sourceEnglish": "You and I can sit Vigil together. I don't have my candle though..."
+          "sourceEnglish": "You and I can sit Vigil together. I don't have my candle though...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 51,
           "utterer": "SAY.Dialog:KickSad.12.Sad Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they did NOT talk with Sick.",
-          "sourceEnglish": "Today is just as dark as yesterday and will be just as dark as tomorrow."
+          "sourceEnglish": "Today is just as dark as yesterday and will be just as dark as tomorrow.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 52,
           "utterer": "SAY.Dialog:KickThirsty.10.Thirsty Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they talked with Sick.",
-          "sourceEnglish": "You look like you could use some water too!"
+          "sourceEnglish": "You look like you could use some water too!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 53,
           "utterer": "SAY.Dialog:KickThirsty.12.Thirsty Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they did NOT talk with Sick.",
-          "sourceEnglish": "Dangnabbit! I'm goin' stir crazy down here!"
+          "sourceEnglish": "Dangnabbit! I'm goin' stir crazy down here!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 54,
           "utterer": "SAY.Dialog:KickBig.10.Big Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they talked with Sick.",
-          "sourceEnglish": "I hope Sick found some extra rations."
+          "sourceEnglish": "I hope Sick found some extra rations.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 55,
           "utterer": "SAY.Dialog:KickBig.12.Big Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they did NOT talk with Sick.",
-          "sourceEnglish": "This is a difficult time, Comrade. I'm here for you."
+          "sourceEnglish": "This is a difficult time, Comrade. I'm here for you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 56,
           "utterer": "SAY.Dialog:KickSlow.10.Slow Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.",
-          "sourceEnglish": "I hope Sick is feeling b-b-b..."
+          "sourceEnglish": "I hope Sick is feeling b-b-b...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 57,
           "utterer": "SAY.Dialog:KickSlow.24.Slow Ass",
           "context": "",
-          "sourceEnglish": "b-b-b-b..."
+          "sourceEnglish": "b-b-b-b...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 58,
           "utterer": "SAY.Dialog:KickSlow.23.Slow Ass",
           "context": "",
-          "sourceEnglish": "b-b-b-b-b..."
+          "sourceEnglish": "b-b-b-b-b...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 59,
           "utterer": "SAY.Dialog:KickSlow.22.Slow Ass",
           "context": "",
-          "sourceEnglish": "...better."
+          "sourceEnglish": "...better.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 60,
           "utterer": "SAY.Dialog:KickSturdy.10.Sturdy Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they talked with Sick.",
-          "sourceEnglish": "Hold tight, Comrade. I trust the Gods will see how special Sick Ass is when they meet her."
+          "sourceEnglish": "Hold tight, Comrade. I trust the Gods will see how special Sick Ass is when they meet her.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 61,
           "utterer": "SAY.Dialog:KickSturdy.23.Sturdy Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they did NOT talk with Sick.",
-          "sourceEnglish": "Have you seen {$NewName}? I can't find her anywhere."
+          "sourceEnglish": "Have you seen {$NewName}? I can't find her anywhere.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 62,
           "utterer": "SAY.Dialog:KickSmart.10.Smart Ass",
           "context": "NPC dialogue repeater option. No particular order for when you talk to someone.",
-          "sourceEnglish": "If we had some Human medicine maybe Sick would get better."
+          "sourceEnglish": "If we had some Human medicine maybe Sick would get better.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 63,
           "utterer": "SAY.Dialog:KickAttemptToExitToMine.2.Kick Ass",
           "context": "Dialogue for when Kick Ass tries to exit.",
-          "sourceEnglish": "Sick?!—@#$%&!—I don't think she'd have gone this way..."
+          "sourceEnglish": "Sick?!—@#$%&!—I don't think she'd have gone this way...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 64,
           "utterer": "SAY.Dialog:KickAttemptToExitOutside.2.Kick Ass",
           "context": "Dialogue for when Kick Ass tries to exit.",
-          "sourceEnglish": "I don't think Sick would have gone back out into the rain..."
+          "sourceEnglish": "I don't think Sick would have gone back out into the rain...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 65,
           "utterer": "SAY.Dialog:KickFindsSick.1.Kick Ass",
           "context": "Kick finds Sick Ass's lifeless body.",
-          "sourceEnglish": "I FOUND YOU!"
+          "sourceEnglish": "I FOUND YOU!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 66,
           "utterer": "SAY.Dialog:KickFindsSick.2.Kick Ass",
           "context": "",
-          "sourceEnglish": "Sick...? SICK?!"
+          "sourceEnglish": "Sick...? SICK?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 67,
           "utterer": "SAY.Dialog:KickFindsSick.6.Kick Ass",
           "context": "Kick wails.",
-          "sourceEnglish": "HEEEEEHAWWWW!"
+          "sourceEnglish": "HEEEEEHAWWWW!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 68,
           "utterer": "SAY.Dialog:KickSturdy.12.",
           "context": "",
-          "sourceEnglish": "REPEATER"
+          "sourceEnglish": "REPEATER",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 69,
           "utterer": "SAY.Dialog:KickSlow.12.",
           "context": "",
-          "sourceEnglish": "REPEATER"
+          "sourceEnglish": "REPEATER",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 70,
           "utterer": "SAY.Dialog:KickHard.12.",
           "context": "",
-          "sourceEnglish": "REPEATER"
+          "sourceEnglish": "REPEATER",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 71,
           "utterer": "SAY.Dialog:KickSmart.12.",
           "context": "",
-          "sourceEnglish": "REPEATER"
+          "sourceEnglish": "REPEATER",
+          "translatedDutch": ""
         }
       ]
     },
@@ -606,505 +703,589 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:Debate.39.Kick Ass",
           "context": "The Herd gathers to see the commotion.\nKick Ass, standing over his sister's body, is incensed and rageful.",
-          "sourceEnglish": "HEEEE—@#$%&!—HAWWW!!"
+          "sourceEnglish": "HEEEE—@#$%&!—HAWWW!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:Debate.42.Kick Ass",
           "context": "",
-          "sourceEnglish": "THIS IS YOUR FAULT HARD ASS!"
+          "sourceEnglish": "THIS IS YOUR FAULT HARD ASS!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:Debate.59.Kick Ass",
           "context": "",
-          "sourceEnglish": "EVERYONE deserves to know why Sick is DEAD."
+          "sourceEnglish": "EVERYONE deserves to know why Sick is DEAD.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:Debate.60.Kick Ass",
           "context": "",
-          "sourceEnglish": "What REALLY happened on our \"scavenging\" missions..."
+          "sourceEnglish": "What REALLY happened on our \"scavenging\" missions...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:Debate.61.Kick Ass",
           "context": "",
-          "sourceEnglish": "What Hard Ass FORCED us to do..."
+          "sourceEnglish": "What Hard Ass FORCED us to do...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Dialog:Debate.301.Kick Ass",
           "context": "",
-          "sourceEnglish": "...to the Humans."
+          "sourceEnglish": "...to the Humans.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog:Debate.62.Smart Ass",
           "context": "",
-          "sourceEnglish": "Humans?! Are you joking?!"
+          "sourceEnglish": "Humans?! Are you joking?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:Debate.64.Kick Ass",
           "context": "Fade to flashback (next scene).",
-          "sourceEnglish": "They've been—TRYING TO RETURN—to Fannyside ever since the Fire."
+          "sourceEnglish": "They've been—TRYING TO RETURN—to Fannyside ever since the Fire.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Dialog:Debate.76.Kick Ass",
           "context": "Fade back from flashback.",
-          "sourceEnglish": "Hard Ass forced us to keep it a SECRET."
+          "sourceEnglish": "Hard Ass forced us to keep it a SECRET.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:Debate.78.Kick Ass",
           "context": "",
-          "sourceEnglish": "Because you'd CRAWL BACK to the Humans just to stay alive."
+          "sourceEnglish": "Because you'd CRAWL BACK to the Humans just to stay alive.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:Debate.79.Kick Ass",
           "context": "",
-          "sourceEnglish": "But LOOK AT US NOW—dying anyway!"
+          "sourceEnglish": "But LOOK AT US NOW—dying anyway!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:Debate.123.Smart Ass",
           "context": "",
-          "sourceEnglish": "Is this some kind of twisted joke, Hard Ass?!"
+          "sourceEnglish": "Is this some kind of twisted joke, Hard Ass?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:Debate.88.Hard Ass",
           "context": "",
-          "sourceEnglish": "You begged me to rescue the Humans."
+          "sourceEnglish": "You begged me to rescue the Humans.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog:Debate.89.Hard Ass",
           "context": "",
-          "sourceEnglish": "But when I went to save them from the Fire, the Humans were ready to kill me to save themselves."
+          "sourceEnglish": "But when I went to save them from the Fire, the Humans were ready to kill me to save themselves.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog:Debate.90.Hard Ass",
           "context": "",
-          "sourceEnglish": "They revealed their true nature."
+          "sourceEnglish": "They revealed their true nature.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:Debate.94.Hard Ass",
           "context": "",
-          "sourceEnglish": "That day, I learned what it will take for us to survive."
+          "sourceEnglish": "That day, I learned what it will take for us to survive.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog:Debate.344.Hard Ass",
           "context": "",
-          "sourceEnglish": "The only option left for us is Revolution."
+          "sourceEnglish": "The only option left for us is Revolution.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "SAY.Dialog:Debate.346.Hard Ass",
           "context": "",
-          "sourceEnglish": "We must become our own Masters."
+          "sourceEnglish": "We must become our own Masters.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog:Debate.83.Smart Ass",
           "context": "",
-          "sourceEnglish": "Without Humans, we'll never work again!"
+          "sourceEnglish": "Without Humans, we'll never work again!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog:Debate.124.Smart Ass",
           "context": "",
-          "sourceEnglish": "We're all gonna die because of you, Hard Ass!"
+          "sourceEnglish": "We're all gonna die because of you, Hard Ass!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog:Debate.126.Hard Ass",
           "context": "",
-          "sourceEnglish": "Wrong."
+          "sourceEnglish": "Wrong.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "SAY.Dialog:Debate.127.Hard Ass",
           "context": "",
-          "sourceEnglish": "Asses don't require Humans to work."
+          "sourceEnglish": "Asses don't require Humans to work.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "SAY.Dialog:Debate.128.Hard Ass",
           "context": "",
-          "sourceEnglish": "Living is work enough."
+          "sourceEnglish": "Living is work enough.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "SAY.Dialog:Debate.129.Hard Ass",
           "context": "",
-          "sourceEnglish": "We're free."
+          "sourceEnglish": "We're free.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "SAY.Dialog:Debate.131.Smart Ass",
           "context": "",
-          "sourceEnglish": "Ha! Free to suffer and starve!"
+          "sourceEnglish": "Ha! Free to suffer and starve!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "SAY.Dialog:Debate.132.Smart Ass",
           "context": "",
-          "sourceEnglish": "You'd have us work to live—but I'd rather LIVE to WORK."
+          "sourceEnglish": "You'd have us work to live—but I'd rather LIVE to WORK.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "SAY.Dialog:Debate.133.Smart Ass",
           "context": "",
-          "sourceEnglish": "That's right—I'm DONE! Time for a new Plan!"
+          "sourceEnglish": "That's right—I'm DONE! Time for a new Plan!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "SAY.Dialog:Debate.282.Smart Ass",
           "context": "",
-          "sourceEnglish": "ONE. We leave to find more Humans."
+          "sourceEnglish": "ONE. We leave to find more Humans.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "SAY.Dialog:Debate.281.Smart Ass",
           "context": "",
-          "sourceEnglish": "TWO. We DON'T KILL the Humans.\\n"
+          "sourceEnglish": "TWO. We DON'T KILL the Humans.\\n",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "SAY.Dialog:Debate.134.Smart Ass",
           "context": "",
-          "sourceEnglish": "THREE. We convince the Humans to give up their Machines, we don't die in this Hellhole, and we get our JOBS BACK."
+          "sourceEnglish": "THREE. We convince the Humans to give up their Machines, we don't die in this Hellhole, and we get our JOBS BACK.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 33,
           "utterer": "SAY.Dialog:Debate.284.Smart Ass",
           "context": "",
-          "sourceEnglish": "EASY."
+          "sourceEnglish": "EASY.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "SAY.Dialog:Debate.283.Smart Ass",
           "context": "",
-          "sourceEnglish": "Who's coming with me?!"
+          "sourceEnglish": "Who's coming with me?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:Debate.172.Sturdy Ass",
           "context": "Silence. Sturdy speaks.",
-          "sourceEnglish": "Comrades, I'm staying here with my Foal where we belong."
+          "sourceEnglish": "Comrades, I'm staying here with my Foal where we belong.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "SAY.Dialog:Debate.317.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "I know Old Ass dreamed of a world where Asses and Humans worked together again..."
+          "sourceEnglish": "I know Old Ass dreamed of a world where Asses and Humans worked together again...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "SAY.Dialog:Debate.173.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "But if what Hard Ass says is true, then it's too late."
+          "sourceEnglish": "But if what Hard Ass says is true, then it's too late.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:Debate.355.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Old Ass's dream is dead."
+          "sourceEnglish": "Old Ass's dream is dead.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "SAY.Dialog:Debate.356.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "The only thing we have left is each other and our faith that the Gods have a plan."
+          "sourceEnglish": "The only thing we have left is each other and our faith that the Gods have a plan.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "SAY.Dialog:Debate.174.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "Any Ass who leaves, betrays the Herd."
+          "sourceEnglish": "Any Ass who leaves, betrays the Herd.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "SAY.Dialog:Debate.171.Smart Ass",
           "context": "",
-          "sourceEnglish": "Any Ass who STAYS is a MURDERER!"
+          "sourceEnglish": "Any Ass who STAYS is a MURDERER!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
           "utterer": "SAY.Dialog:Debate.321.Smart Ass",
           "context": "",
-          "sourceEnglish": "WHO'S WITH ME?!"
+          "sourceEnglish": "WHO'S WITH ME?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "SAY.Dialog:Debate.323.Smart Ass",
           "context": "",
-          "sourceEnglish": "Come on..."
+          "sourceEnglish": "Come on...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "SAY.Dialog:Debate.324.Smart Ass",
           "context": "Silence.",
-          "sourceEnglish": "Someone—?"
+          "sourceEnglish": "Someone—?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
           "utterer": "SAY.Dialog:Debate.325.Smart Ass",
           "context": "More silence.",
-          "sourceEnglish": "Anyone—?"
+          "sourceEnglish": "Anyone—?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 46,
           "utterer": "SAY.Dialog:Debate.326.Smart Ass",
           "context": "",
-          "sourceEnglish": "—won't any Ass step forward?!"
+          "sourceEnglish": "—won't any Ass step forward?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 47,
           "utterer": "SAY.Dialog:Debate.285.Slow Ass",
           "context": "Slow Ass sheepishly speaks.",
-          "sourceEnglish": "If Trusty were here, none of this would have hap-p-p-p-pened."
+          "sourceEnglish": "If Trusty were here, none of this would have hap-p-p-p-pened.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 48,
           "utterer": "SAY.Dialog:Debate.178.Slow Ass",
           "context": "",
-          "sourceEnglish": "...I'll come..."
+          "sourceEnglish": "...I'll come...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 49,
           "utterer": "SAY.Dialog:Debate.179.Smart Ass",
           "context": "",
-          "sourceEnglish": "Fine...ONE. Anyone else?"
+          "sourceEnglish": "Fine...ONE. Anyone else?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 50,
           "utterer": "SAY.Dialog:Debate.176.Big Ass",
           "context": "",
-          "sourceEnglish": "The Humans may have belittled us, but that's no reason for such heavy violence."
+          "sourceEnglish": "The Humans may have belittled us, but that's no reason for such heavy violence.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 51,
           "utterer": "SAY.Dialog:Debate.299.Big Ass",
           "context": "",
-          "sourceEnglish": "{vpunch=100,0.75}I'm leaving with Smart Ass too."
+          "sourceEnglish": "{vpunch=100,0.75}I'm leaving with Smart Ass too.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 52,
           "utterer": "SAY.Dialog:Debate.320.Smart Ass",
           "context": "",
-          "sourceEnglish": "TWO!"
+          "sourceEnglish": "TWO!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 53,
           "utterer": "SAY.Dialog:Debate.357.Smart Ass",
           "context": "start line witjh a space",
-          "sourceEnglish": "AND A HALF!"
+          "sourceEnglish": "AND A HALF!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 54,
           "utterer": "SAY.Dialog:Debate.170.Kick Ass",
           "context": "",
-          "sourceEnglish": "...I have blood on my hooves."
+          "sourceEnglish": "...I have blood on my hooves.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 55,
           "utterer": "SAY.Dialog:Debate.303.Kick Ass",
           "context": "",
-          "sourceEnglish": "You're right, Smart Ass—this place will be THE DEATH of us."
+          "sourceEnglish": "You're right, Smart Ass—this place will be THE DEATH of us.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 56,
           "utterer": "SAY.Dialog:Debate.358.Kick Ass",
           "context": "",
-          "sourceEnglish": "I'll come with you... IF YOU'LL HAVE ME."
+          "sourceEnglish": "I'll come with you... IF YOU'LL HAVE ME.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 57,
           "utterer": "SAY.Dialog:Debate.177.Smart Ass",
           "context": "",
-          "sourceEnglish": "I suppose it could be strategic to bring you with us..."
+          "sourceEnglish": "I suppose it could be strategic to bring you with us...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 58,
           "utterer": "SAY.Dialog:Debate.349.Smart Ass",
           "context": "",
-          "sourceEnglish": "But you have to swear that you won't hurt another Human ever again."
+          "sourceEnglish": "But you have to swear that you won't hurt another Human ever again.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 59,
           "utterer": "SAY.Dialog:Debate.350.Kick Ass",
           "context": "",
-          "sourceEnglish": "I SWEAR on the body of my SISTER—I will never hurt another Human again."
+          "sourceEnglish": "I SWEAR on the body of my SISTER—I will never hurt another Human again.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 60,
           "utterer": "SAY.Dialog:Debate.351.Smart Ass",
           "context": "",
-          "sourceEnglish": "That's THREE and a half. Who else?"
+          "sourceEnglish": "That's THREE and a half. Who else?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 61,
           "utterer": "SAY.Dialog:Debate.180.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Ah heck..."
+          "sourceEnglish": "Ah heck...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 62,
           "utterer": "SAY.Dialog:Debate.191.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Nice Ass what are you going to do?"
+          "sourceEnglish": "Nice Ass what are you going to do?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 63,
           "utterer": "SAY.Dialog:Debate.181.Nice Ass",
           "context": "",
-          "sourceEnglish": "Golly. Leave Fannyside? But this is our home. I can't just leave!"
+          "sourceEnglish": "Golly. Leave Fannyside? But this is our home. I can't just leave!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 64,
           "utterer": "SAY.Dialog:Debate.192.Thirsty Ass",
           "context": "",
-          "sourceEnglish": "Then heck, I’m staying too!"
+          "sourceEnglish": "Then heck, I’m staying too!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 65,
           "utterer": "SAY.Dialog:Debate.193.Smart Ass",
           "context": "",
-          "sourceEnglish": "Sad Ass? Comrade? What's your decision?"
+          "sourceEnglish": "Sad Ass? Comrade? What's your decision?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 66,
           "utterer": "SAY.Dialog:Debate.194.Sad Ass",
           "context": "Jump to line 66 or 73.",
-          "sourceEnglish": "I..."
+          "sourceEnglish": "I...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 67,
           "utterer": "SAY.Dialog:Debate.200.Sad Ass",
           "context": "Branch 2.1. Sad Ass is going to STAY on the Farm.",
-          "sourceEnglish": "Someone once said to me, we have to honour the legacy of those who came before us."
+          "sourceEnglish": "Someone once said to me, we have to honour the legacy of those who came before us.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 68,
           "utterer": "SAY.Dialog:Debate.201.Sad Ass",
           "context": "",
-          "sourceEnglish": "So I think it's about time I pick myself up and try to live the life that Lazy wanted."
+          "sourceEnglish": "So I think it's about time I pick myself up and try to live the life that Lazy wanted.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 69,
           "utterer": "SAY.Dialog:Debate.204.Sad Ass",
           "context": "",
-          "sourceEnglish": "I'm staying here."
+          "sourceEnglish": "I'm staying here.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 70,
           "utterer": "SAY.Dialog:Debate.205.Smart Ass",
           "context": "",
-          "sourceEnglish": "Whatever. Let's go!"
+          "sourceEnglish": "Whatever. Let's go!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 71,
           "utterer": "SAY.Dialog:Debate.211.Hard Ass",
           "context": "",
-          "sourceEnglish": "Comrades, if you go I can't protect you—"
+          "sourceEnglish": "Comrades, if you go I can't protect you—",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 72,
           "utterer": "SAY.Dialog:Debate.212.Smart Ass",
           "context": "",
-          "sourceEnglish": "Shut it, Hard Ass!"
+          "sourceEnglish": "Shut it, Hard Ass!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 73,
           "utterer": "SAY.Dialog:Debate.208.Smart Ass",
           "context": "Some of the Herd head towards the door.\nWe're left with Kick over Sick's body.",
-          "sourceEnglish": "Come on Kick and Big.... and Slow—we're outta this Hellhole! EASY."
+          "sourceEnglish": "Come on Kick and Big.... and Slow—we're outta this Hellhole! EASY.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 74,
           "utterer": "SAY.Dialog:Debate.209.Sad Ass",
           "context": "Branch 2.2. Sad Ass is going to LEAVE the Farm.",
-          "sourceEnglish": "Someone once said to me, that if you aren't doing something that brings you joy, you should do something different."
+          "sourceEnglish": "Someone once said to me, that if you aren't doing something that brings you joy, you should do something different.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 75,
           "utterer": "SAY.Dialog:Debate.215.Sad Ass",
           "context": "",
-          "sourceEnglish": "So I think it’s time for me to get a fresh start."
+          "sourceEnglish": "So I think it’s time for me to get a fresh start.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 76,
           "utterer": "SAY.Dialog:Debate.214.Sad Ass",
           "context": "",
-          "sourceEnglish": "I'll come with you Smart Ass."
+          "sourceEnglish": "I'll come with you Smart Ass.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 77,
           "utterer": "SAY.Dialog:Debate.210.Smart Ass",
           "context": "",
-          "sourceEnglish": "FOUR! Let's go!"
+          "sourceEnglish": "FOUR! Let's go!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 78,
           "utterer": "SAY.Dialog:Debate.206.Hard Ass",
           "context": "",
-          "sourceEnglish": "Comrades, if you go I can't protect you—"
+          "sourceEnglish": "Comrades, if you go I can't protect you—",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 79,
           "utterer": "SAY.Dialog:Debate.207.Smart Ass",
           "context": "",
-          "sourceEnglish": "Shut it, Hard Ass!"
+          "sourceEnglish": "Shut it, Hard Ass!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 80,
           "utterer": "SAY.Dialog:Debate.213.Smart Ass",
           "context": "Some of the Herd head towards the door.\nWe're left with Kick over Sick's body.",
-          "sourceEnglish": "Come on Kick, Big, Sad... and Slow—we're outta this Hellhole! EASY."
+          "sourceEnglish": "Come on Kick, Big, Sad... and Slow—we're outta this Hellhole! EASY.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 81,
           "utterer": "SAY.Dialog:Debate.50.Hard Ass",
           "context": "Old, can likely be deleted.",
-          "sourceEnglish": "Revolution requires sacrifice."
+          "sourceEnglish": "Revolution requires sacrifice.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 82,
           "utterer": "SAY.Dialog:Debate.53.Kick Ass",
           "context": "Old, can likely be deleted.",
-          "sourceEnglish": "Fuck your sacrifices!"
+          "sourceEnglish": "Fuck your sacrifices!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 83,
           "utterer": "SAY.Dialog:Debate.48.Hard Ass",
           "context": "Old, can likely be deleted.",
-          "sourceEnglish": "Sick has been ill a long time, Comrade."
+          "sourceEnglish": "Sick has been ill a long time, Comrade.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 84,
           "utterer": "SAY.Dialog:Debate.51.Kick Ass",
           "context": "Old, can likely be deleted.",
-          "sourceEnglish": "And now she's dead because of your stupid Revolution!"
+          "sourceEnglish": "And now she's dead because of your stupid Revolution!",
+          "translatedDutch": ""
         }
       ]
     },
@@ -1115,43 +1296,50 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:KickConfession.23.Kick Ass",
           "context": "In the flashback, we see a violent scene play out.",
-          "sourceEnglish": "We would hide along the Highway and wait for a Car-Machine..."
+          "sourceEnglish": "We would hide along the Highway and wait for a Car-Machine...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:Sick.10.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:KickConfession.1.Kick Ass",
           "context": "Hard Ass viciously beats the Farmer.",
-          "sourceEnglish": "When the Humans arrived..."
+          "sourceEnglish": "When the Humans arrived...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:FinalLines.1.Kick Ass",
           "context": "Kick Ass helps deliver the finishing blow. There is blood everywhere.",
-          "sourceEnglish": "He made me HELP while Sick Ass kept watch."
+          "sourceEnglish": "He made me HELP while Sick Ass kept watch.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:FinalLines.5.Kick Ass",
           "context": "Fade out of the flashback.",
-          "sourceEnglish": "It would take forever for the rain to wash the BLOOD off."
+          "sourceEnglish": "It would take forever for the rain to wash the BLOOD off.",
+          "translatedDutch": ""
         }
       ]
     },
@@ -1162,31 +1350,36 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "SAY.Dialog:KicksGoodbye.11.Kick Ass",
           "context": "Kick Ass performs the Song of Ascension for Sick Ass's soul to be sent to the Astral Plane.",
-          "sourceEnglish": "Goodbye, my Comrade, my SISTER."
+          "sourceEnglish": "Goodbye, my Comrade, my SISTER.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog:KicksGoodbye.1.Kick Ass",
           "context": "",
-          "sourceEnglish": "I hope you make it to the Astral Plane."
+          "sourceEnglish": "I hope you make it to the Astral Plane.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:KicksGoodbye.13.Kick Ass",
           "context": "",
-          "sourceEnglish": "And when your Soul gets reassigned—I'LL FIND YOU."
+          "sourceEnglish": "And when your Soul gets reassigned—I'LL FIND YOU.",
+          "translatedDutch": ""
         }
       ]
     },
@@ -1197,115 +1390,134 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
         },
         {
           "rowNumber": 3,
           "utterer": "WRITE.Dialog:BulletinLocalizer.1",
           "context": "Interactable object dialogue: Bulletin.",
-          "sourceEnglish": "IN CASE OF EMERGENCY, PLEASE CALL"
+          "sourceEnglish": "IN CASE OF EMERGENCY, PLEASE CALL",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "WRITE.Dialog:BulletinLocalizer.2",
           "context": "Interactable object dialogue: Bulletin.",
-          "sourceEnglish": "COAL OR NOT COAL?"
+          "sourceEnglish": "COAL OR NOT COAL?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "WRITE.Dialog:BulletinLocalizer.3",
           "context": "Interactable object dialogue: Bulletin.",
-          "sourceEnglish": "MISSING"
+          "sourceEnglish": "MISSING",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "SAY.Dialog:HardPostSplit.10.Hard Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "You're being emotional. The Humans will toss you aside the first chance they get."
+          "sourceEnglish": "You're being emotional. The Humans will toss you aside the first chance they get.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "SAY.Dialog:HardPostSplit.12.Hard Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "Just go."
+          "sourceEnglish": "Just go.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "SAY.Dialog:SturdyPostSplit.10.Sturdy Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Comrade, is this what Sick would have wanted?"
+          "sourceEnglish": "Comrade, is this what Sick would have wanted?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "SAY.Dialog:SturdyPostSplit.24.Sturdy Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "It's going to break {$NewName}'s heart to know you're all gone."
+          "sourceEnglish": "It's going to break {$NewName}'s heart to know you're all gone.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:NicePostSplit.10.Nice Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "If you ever change your mind, we'll welcome you back!"
+          "sourceEnglish": "If you ever change your mind, we'll welcome you back!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "SAY.Dialog:NicePostSplit.12.Nice Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "I hope you find what you're looking for!"
+          "sourceEnglish": "I hope you find what you're looking for!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "SAY.Dialog:SadPostSplit.10.Sad Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.\n// This is only if Sad Ass is STAYING on the Farm.",
-          "sourceEnglish": "*whimper* Take care, Comrade."
+          "sourceEnglish": "*whimper* Take care, Comrade.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog:SadPostSplit.12.Sad Ass",
           "context": "Repeater line.\n// This is only if Sad Ass is STAYING on the Farm.",
-          "sourceEnglish": "*whimper*"
+          "sourceEnglish": "*whimper*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "SAY.Dialog:ThristyPostSplit.10.Thirsty Ass",
           "context": "NPC dialogue option. No particular order for when you talk to someone.",
-          "sourceEnglish": "Heck, I know we ain't seein' eye to eye, but I'm gonna miss y'all..."
+          "sourceEnglish": "Heck, I know we ain't seein' eye to eye, but I'm gonna miss y'all...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "SAY.Dialog:ThristyPostSplit.12.Thirsty Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "You just standin' there to make me cry more are ya? Git goin'!"
+          "sourceEnglish": "You just standin' there to make me cry more are ya? Git goin'!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "SAY.Dialog:SlowPostSplit.10.Slow Ass",
           "context": "At the exit, Slow Ass waits for Kick Ass so they can leave together.",
-          "sourceEnglish": "That was a b-beautiful sending."
+          "sourceEnglish": "That was a b-beautiful sending.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog:SlowPostSplit.15.Slow Ass",
           "context": "",
-          "sourceEnglish": "She's in a b-better p-place now."
+          "sourceEnglish": "She's in a b-better p-place now.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:SlowPostSplit.13.Slow Ass",
           "context": "",
-          "sourceEnglish": "Come on, let's b-bring up the rear together."
+          "sourceEnglish": "Come on, let's b-bring up the rear together.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "SAY.Dialog:Kick_ExitDialog.3.Kick Ass",
           "context": "They leave and the camera heads over to Sick Ass's body where we zoom into her eye.",
-          "sourceEnglish": "Hey... It's stopped RAINING..."
+          "sourceEnglish": "Hey... It's stopped RAINING...",
+          "translatedDutch": ""
         }
       ]
     },
@@ -1316,1417 +1528,1653 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "SPACER",
           "context": "3D Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed tempus metus nec neque ullam corper pulvinar. Pellen tesque dignissim, sapien eget pretium euismod qu.",
-          "sourceEnglish": ""
+          "sourceEnglish": "",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "MENU.Dialog:BluntSex.26",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "MENU.Dialog:BluntSex.27",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "MENU.Dialog:BluntSex.33",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "MENU.Dialog:BluntSex.34",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "MENU.Dialog:BluntSex.39",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "MENU.Dialog:BluntSex.40",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "MENU.Dialog:DJDopePreConcert.93",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "MENU.Dialog:DJDopePreConcert.94",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "MENU.Dialog:DustySex.26",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "MENU.Dialog:DustySex.27",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 13,
           "utterer": "MENU.Dialog:DustySex.33",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
           "utterer": "MENU.Dialog:DustySex.34",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
           "utterer": "MENU.Dialog:DustySex.37",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
           "utterer": "MENU.Dialog:DustySex.38",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 17,
           "utterer": "MENU.Dialog:FurrySex.26",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "MENU.Dialog:FurrySex.27",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
           "utterer": "MENU.Dialog:FurrySex.33",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 20,
           "utterer": "MENU.Dialog:FurrySex.34",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "MENU.Dialog:FurrySex.37",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
           "utterer": "MENU.Dialog:FurrySex.38",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
           "utterer": "MENU.Dialog:Gamblers.10",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 24,
           "utterer": "MENU.Dialog:Gamblers.11",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 25,
           "utterer": "MENU.Dialog:RaceHasty.23",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 26,
           "utterer": "MENU.Dialog:RaceHasty.25",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
           "utterer": "MENU.Dialog:RaceHasty.26",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 28,
           "utterer": "MENU.Dialog:RaceHasty.39",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 29,
           "utterer": "MENU.Dialog:RaceHasty.40",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 30,
           "utterer": "MENU.Dialog:RaceHasty.76",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 31,
           "utterer": "MENU.Dialog:RaceHasty.77",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 32,
           "utterer": "MENU.Dialog:RaceHasty.78",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 33,
           "utterer": "MENU.Dialog:Smelly.26",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 34,
           "utterer": "MENU.Dialog:Smelly.27",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 35,
           "utterer": "MENU.Dialog:Sulky.22",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 36,
           "utterer": "MENU.Dialog:Sulky.23",
           "context": "Yes/No menu options.",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "SAY.Dialog:TrustysMate.30.Happy Ass",
           "context": "Back in the Astral Plane, Sick Ass runs into Happy Ass.",
-          "sourceEnglish": "Oh boy. Another one. I almost didn't see you."
+          "sourceEnglish": "Oh boy. Another one. I almost didn't see you.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:TrustysMate.124.Happy Ass",
           "context": "",
-          "sourceEnglish": "I'm doing the welcome ritual for Newbies today."
+          "sourceEnglish": "I'm doing the welcome ritual for Newbies today.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 39,
           "utterer": "SAY.Dialog:TrustysMate.123.Happy Ass",
           "context": "",
-          "sourceEnglish": "But there's been over 400 of you already... so I'm a bit... sore."
+          "sourceEnglish": "But there's been over 400 of you already... so I'm a bit... sore.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 40,
           "utterer": "SAY.Dialog:TrustysMate.146.Happy Ass",
           "context": "",
-          "sourceEnglish": "But it's really great that you're here. You're going to love it."
+          "sourceEnglish": "But it's really great that you're here. You're going to love it.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 41,
           "utterer": "SAY.Dialog:TrustysMate.147.Happy Ass",
           "context": "",
-          "sourceEnglish": "Make sure to check out the Concert tonight in the Pond of Hehehehe!"
+          "sourceEnglish": "Make sure to check out the Concert tonight in the Pond of Hehehehe!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
           "utterer": "SAY.Dialog:TrustysMate.148.Happy Ass",
           "context": "",
-          "sourceEnglish": "It's going to be 7 and a half hours of AWESOME."
+          "sourceEnglish": "It's going to be 7 and a half hours of AWESOME.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 43,
           "utterer": "SAY.Dialog:TrustysMate.84.Happy Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "Head on up over the hill!"
+          "sourceEnglish": "Head on up over the hill!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 44,
           "utterer": "SAY.Dialog:Gamblers.1.Risky Ass",
           "context": "Sick Ass finds the Gamblers atop the hill.",
-          "sourceEnglish": "401! I win! I told you we'd break 400 today."
+          "sourceEnglish": "401! I win! I told you we'd break 400 today.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
           "utterer": "SAY.Dialog:Gamblers.5.Greedy Ass",
           "context": "oof Jobs = Hoof Jobs = Hand Jobs?",
-          "sourceEnglish": "Ah shaddup, let's make another wager! Double or nothin'—Winner gets two 'oof Jobs!"
+          "sourceEnglish": "Ah shaddup, let's make another wager! Double or nothin'—Winner gets two 'oof Jobs!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 46,
           "utterer": "SAY.Dialog:Gamblers.6.Shifty Ass",
           "context": "",
-          "sourceEnglish": "Hey Newbies, we're betting on how many Asses are gonna fall from the sky tonight. You want in?"
+          "sourceEnglish": "Hey Newbies, we're betting on how many Asses are gonna fall from the sky tonight. You want in?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 47,
           "utterer": "SAY.Dialog:Gamblers.110.Fresh Ass",
           "context": "",
-          "sourceEnglish": "Sure! How about... 455?"
+          "sourceEnglish": "Sure! How about... 455?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 48,
           "utterer": "SAY.Dialog:Gamblers.111.Greedy Ass",
           "context": "",
-          "sourceEnglish": "You kiddin' me? Only fifty more? Fuggetaboutit!"
+          "sourceEnglish": "You kiddin' me? Only fifty more? Fuggetaboutit!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 49,
           "utterer": "SAY.Dialog:Gamblers.112.Greedy Ass",
           "context": "Jump to line 50 or 52.",
-          "sourceEnglish": "What about you? You wanna bet?"
+          "sourceEnglish": "What about you? You wanna bet?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 50,
           "utterer": "SAY.Dialog:Gamblers.76.Sick Ass",
           "context": "If Player chooses COUGH (YES).",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 51,
           "utterer": "SAY.Dialog:Gamblers.137.Greedy Ass",
           "context": "Jump to line 55.",
-          "sourceEnglish": "I knew she was the gambling type!"
+          "sourceEnglish": "I knew she was the gambling type!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 52,
           "utterer": "SAY.Dialog:Gamblers.138.Sick Ass",
           "context": "If Player chooses COUGH COUGH (NO).",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 53,
           "utterer": "SAY.Dialog:Gamblers.115.Greedy Ass",
           "context": "",
-          "sourceEnglish": "No? Don't be a Loser! It's just a little bit of fun!"
+          "sourceEnglish": "No? Don't be a Loser! It's just a little bit of fun!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 54,
           "utterer": "SAY.Dialog:Gamblers.125.Greedy Ass",
           "context": "Jump to line 55.",
-          "sourceEnglish": "You like fun don't you?"
+          "sourceEnglish": "You like fun don't you?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 55,
           "utterer": "SAY.Dialog:Gamblers.121.Shifty Ass",
           "context": "Players guess how many new Ass Souls will drop from the sky:",
-          "sourceEnglish": "So what's your bet? How many Newbies will drop?"
+          "sourceEnglish": "So what's your bet? How many Newbies will drop?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 56,
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "",
-          "sourceEnglish": "WAGER"
+          "sourceEnglish": "WAGER",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 57,
           "utterer": "SAY.Dialog:Gamblers.78.Greedy Ass",
           "context": "If guessed 5000+.",
-          "sourceEnglish": "{$Number}? Are things that bad in the land of the livin'? Fuggetaboutit! Yeesh!"
+          "sourceEnglish": "{$Number}? Are things that bad in the land of the livin'? Fuggetaboutit! Yeesh!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 58,
           "utterer": "SAY.Dialog:Gamblers.103.Greedy Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "{$Number}, don't worry—a number that high? We won't forget."
+          "sourceEnglish": "{$Number}, don't worry—a number that high? We won't forget.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 59,
           "utterer": "SAY.Dialog:Gamblers.80.Greedy Ass",
           "context": "If guessed 1000-5000.",
-          "sourceEnglish": "{$Number}. Pretty reasonable."
+          "sourceEnglish": "{$Number}. Pretty reasonable.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 60,
           "utterer": "SAY.Dialog:Gamblers.126.Greedy Ass",
           "context": "",
-          "sourceEnglish": "For a Loser!"
+          "sourceEnglish": "For a Loser!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 61,
           "utterer": "SAY.Dialog:Gamblers.48.Greedy Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "{$Number}? You gotta play big to win big!"
+          "sourceEnglish": "{$Number}? You gotta play big to win big!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 62,
           "utterer": "SAY.Dialog:Gamblers.87.Greedy Ass",
           "context": "If guessed 300-1000.",
-          "sourceEnglish": "{$Number}... Modest. Playing it safe, are ya?"
+          "sourceEnglish": "{$Number}... Modest. Playing it safe, are ya?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 63,
           "utterer": "SAY.Dialog:Gamblers.127.Greedy Ass",
           "context": "",
-          "sourceEnglish": "Like a Loser!"
+          "sourceEnglish": "Like a Loser!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 64,
           "utterer": "SAY.Dialog:Gamblers.51.Greedy Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "{$Number}... Let's see if the numbers work in your favour!"
+          "sourceEnglish": "{$Number}... Let's see if the numbers work in your favour!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 65,
           "utterer": "SAY.Dialog:Gamblers.85.Greedy Ass",
           "context": "If guessed 0-300.",
-          "sourceEnglish": "{$Number}? Not in your life! We ain't had a night that low in weeks!"
+          "sourceEnglish": "{$Number}? Not in your life! We ain't had a night that low in weeks!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 66,
           "utterer": "SAY.Dialog:Gamblers.54.Greedy Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "{$Number}. Sheesh. How low can you go?"
+          "sourceEnglish": "{$Number}. Sheesh. How low can you go?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 67,
           "utterer": "SAY.Dialog:Gamblers.132.Greedy Ass",
           "context": "If guessed 69.",
-          "sourceEnglish": "Why do the Newbies always guess 69? Fuggetaboutit!"
+          "sourceEnglish": "Why do the Newbies always guess 69? Fuggetaboutit!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 68,
           "utterer": "SAY.Dialog:Gamblers.105.Risky Ass",
           "context": "",
-          "sourceEnglish": "Head on down the hill!"
+          "sourceEnglish": "Head on down the hill!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 69,
           "utterer": "SAY.Dialog:Gamblers.106.Risky Ass",
           "context": "",
-          "sourceEnglish": "Chances are—you'll see a familiar face or two!"
+          "sourceEnglish": "Chances are—you'll see a familiar face or two!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 70,
           "utterer": "SAY.Dialog:Gamblers.64.Risky Ass",
           "context": "",
-          "sourceEnglish": "We'll know the final tally after tonight's Concert."
+          "sourceEnglish": "We'll know the final tally after tonight's Concert.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 71,
           "utterer": "SAY.Dialog:OldAss.10.Old Ass",
           "context": "Sick Ass finds Old Ass regaling some Newbies with his stories.",
-          "sourceEnglish": "...And my last words, after being given the Needle, were \"Show the World the Power of the Ass!\""
+          "sourceEnglish": "...And my last words, after being given the Needle, were \"Show the World the Power of the Ass!\"",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 72,
           "utterer": "SAY.Dialog:OldAss.113.Gullible Ass",
           "context": "",
-          "sourceEnglish": "Wow. You are an inspiration, sir."
+          "sourceEnglish": "Wow. You are an inspiration, sir.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 73,
           "utterer": "SAY.Dialog:OldAss.112.Old Ass",
           "context": "",
-          "sourceEnglish": "What can I say?"
+          "sourceEnglish": "What can I say?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 74,
           "utterer": "SAY.Dialog:OldAss.108.Old Ass",
           "context": "",
-          "sourceEnglish": "Hold on—Sick Ass? I would recognize that heavy breathing anywhere!"
+          "sourceEnglish": "Hold on—Sick Ass? I would recognize that heavy breathing anywhere!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 75,
           "utterer": "SAY.Dialog:OldAss.109.Old Ass",
           "context": "",
-          "sourceEnglish": "I was just about to introduce these Newbies to our beloved Astral Plane."
+          "sourceEnglish": "I was just about to introduce these Newbies to our beloved Astral Plane.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 76,
           "utterer": "SAY.Dialog:OldAss.66.Old Ass",
           "context": "",
-          "sourceEnglish": "An open world where we Asses no longer have to suffer injustices or lament the struggles of our own existence!"
+          "sourceEnglish": "An open world where we Asses no longer have to suffer injustices or lament the struggles of our own existence!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 77,
           "utterer": "SAY.Dialog:OldAss.65.Gullible Ass",
           "context": "",
-          "sourceEnglish": "Nice to meet you, Comrade Sick!"
+          "sourceEnglish": "Nice to meet you, Comrade Sick!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 78,
           "utterer": "SAY.Dialog:OldAss.62.Old Ass",
           "context": "",
-          "sourceEnglish": "Not so fast, Newbie. In this marvellous place, we don't address our fellow Asses as 'Comrades'."
+          "sourceEnglish": "Not so fast, Newbie. In this marvellous place, we don't address our fellow Asses as 'Comrades'.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 79,
           "utterer": "SAY.Dialog:OldAss.47.Old Ass",
           "context": "",
-          "sourceEnglish": "And Protests? We don't concern ourselves with 'Politics'!"
+          "sourceEnglish": "And Protests? We don't concern ourselves with 'Politics'!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 80,
           "utterer": "SAY.Dialog:OldAss.67.Old Ass",
           "context": "",
-          "sourceEnglish": "Those are mere distractions from days gone by."
+          "sourceEnglish": "Those are mere distractions from days gone by.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 81,
           "utterer": "SAY.Dialog:OldAss.68.Old Ass",
           "context": "",
-          "sourceEnglish": "Allow me to provide all of you with the lay of the land:"
+          "sourceEnglish": "Allow me to provide all of you with the lay of the land:",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 82,
           "utterer": "SAY.Dialog:OldAss.46.Old Ass",
           "context": "The camera zooms around to show the Astral Plane.",
-          "sourceEnglish": "To the East—the sensual orgiastic Flats of Hawweeeheaww."
+          "sourceEnglish": "To the East—the sensual orgiastic Flats of Hawweeeheaww.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 83,
           "utterer": "SAY.Dialog:OldAss.50.Old Ass",
           "context": "",
-          "sourceEnglish": "To the West—the misty Hills of Hahiah."
+          "sourceEnglish": "To the West—the misty Hills of Hahiah.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 84,
           "utterer": "SAY.Dialog:OldAss.49.Old Ass",
           "context": "",
-          "sourceEnglish": "Surrounding these lands are the Steppes of Hawawaw—the stomping grounds for the many Asses who love to race."
+          "sourceEnglish": "Surrounding these lands are the Steppes of Hawawaw—the stomping grounds for the many Asses who love to race.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 85,
           "utterer": "SAY.Dialog:OldAss.99.Old Ass",
           "context": "",
-          "sourceEnglish": "This is the Shithole. But we don't talk about that."
+          "sourceEnglish": "This is the Shithole. But we don't talk about that.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 86,
           "utterer": "SAY.Dialog:OldAss.53.Old Ass",
           "context": "",
-          "sourceEnglish": "And this is the Pond of Hehehehe, where tonight we will make history with our very first TRAP MUSIC CONCERT. Be sure to attend!"
+          "sourceEnglish": "And this is the Pond of Hehehehe, where tonight we will make history with our very first TRAP MUSIC CONCERT. Be sure to attend!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 87,
           "utterer": "SAY.Dialog:OldAss.97.Old Ass",
           "context": "",
-          "sourceEnglish": "There's a welcome rally happening at the moment."
+          "sourceEnglish": "There's a welcome rally happening at the moment.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 88,
           "utterer": "SAY.Dialog:OldAss.89.Tight Ass",
           "context": "Camera cuts to a rally: Tight Ass addressing a group of newly arrived donkeys",
-          "sourceEnglish": "And that's why no Ass leaves the Astral Plane!"
+          "sourceEnglish": "And that's why no Ass leaves the Astral Plane!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 89,
           "utterer": "SAY.Dialog:OldAss.100.Tight Ass",
           "context": "",
-          "sourceEnglish": "If you try to leave to get reassigned, what are you??"
+          "sourceEnglish": "If you try to leave to get reassigned, what are you??",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 90,
           "utterer": "SAY.Dialog:OldAss.101.The Masses",
           "context": "",
-          "sourceEnglish": "A LOSER!"
+          "sourceEnglish": "A LOSER!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 91,
           "utterer": "SAY.Dialog:OldAss.102.Tight Ass",
           "context": "Needs a space at end",
-          "sourceEnglish": "Say it again! If you leave, you are a—"
+          "sourceEnglish": "Say it again! If you leave, you are a—",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 92,
           "utterer": "SAY.Dialog:OldAss.103.The Masses",
           "context": "",
-          "sourceEnglish": "LOSER!"
+          "sourceEnglish": "LOSER!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 93,
           "utterer": "SAY.Dialog:OldAss.71.Tight Ass",
           "context": "",
-          "sourceEnglish": "That's right!"
+          "sourceEnglish": "That's right!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 94,
           "utterer": "SAY.Dialog:OldAss.118.Old Ass",
           "context": "Camera runs to dialog between Old, Sick, Gulible, and another donkey",
-          "sourceEnglish": "I wish Trusty had been more patient when she arrived."
+          "sourceEnglish": "I wish Trusty had been more patient when she arrived.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 95,
           "utterer": "SAY.Dialog:OldAss.70.Old Ass",
           "context": "",
-          "sourceEnglish": "She could not adapt to the new life we have here..."
+          "sourceEnglish": "She could not adapt to the new life we have here...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 96,
           "utterer": "SAY.Dialog:OldAss.69.Old Ass",
           "context": "",
-          "sourceEnglish": "But don't be scared, I know you will all fit right in."
+          "sourceEnglish": "But don't be scared, I know you will all fit right in.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 97,
           "utterer": "SAY.Dialog:OldAss.74.Old Ass",
           "context": "The other two donkeys run off",
-          "sourceEnglish": "Go explore and make some new friends before DJ Dope Ass's Concert tonight!"
+          "sourceEnglish": "Go explore and make some new friends before DJ Dope Ass's Concert tonight!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 98,
           "utterer": "SAY.Dialog:OldAss.73.Old Ass",
           "context": "",
-          "sourceEnglish": "Actually, DJ Dope Ass was looking quite nervous when I last saw him down by the Pond."
+          "sourceEnglish": "Actually, DJ Dope Ass was looking quite nervous when I last saw him down by the Pond.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 99,
           "utterer": "SAY.Dialog:OldAss.138.Old Ass",
           "context": "",
-          "sourceEnglish": "Sick Ass, maybe you can help raise his Morale?"
+          "sourceEnglish": "Sick Ass, maybe you can help raise his Morale?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 100,
           "utterer": "SAY.Dialog:OldAss.55.Old Ass",
           "context": "Repeater",
-          "sourceEnglish": "DJ Dope Ass is probably preparing his instruments down by the Pond. You can't miss him!"
+          "sourceEnglish": "DJ Dope Ass is probably preparing his instruments down by the Pond. You can't miss him!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 101,
           "utterer": "SAY.Dialog:RaceHasty.59.Hasty Ass",
           "context": "Sick Ass finds an energetic Ass who wants to race.",
-          "sourceEnglish": "You're new! Wanna race? I'm pretty fast! You'll see!"
+          "sourceEnglish": "You're new! Wanna race? I'm pretty fast! You'll see!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 102,
           "utterer": "SAY.Dialog:RaceHasty.10.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Come on! You down? Let's go? Let's go!!"
+          "sourceEnglish": "Come on! You down? Let's go? Let's go!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 103,
           "utterer": "SAY.Dialog:RaceHasty.60.Sick Ass",
           "context": "Dialogue option 1.1. COUGH (YES)",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 104,
           "utterer": "SAY.Dialog:RaceHasty.64.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Hell yeah new friendo!"
+          "sourceEnglish": "Hell yeah new friendo!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 105,
           "utterer": "SAY.Dialog:RaceHasty.63.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Let's take the scenic route.\\n"
+          "sourceEnglish": "Let's take the scenic route.\\n",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 106,
           "utterer": "SAY.Dialog:RaceHasty.62.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Let's go let's go let's go!"
+          "sourceEnglish": "Let's go let's go let's go!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 107,
           "utterer": "SAY.Dialog:RaceHasty.61.Hasty Ass",
           "context": "",
-          "sourceEnglish": "FUN!"
+          "sourceEnglish": "FUN!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 108,
           "utterer": "SAY.Dialog:RaceHasty.65.Sick Ass",
           "context": "Dialogue option 1.2. COUGH COUGH (NO)",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 109,
           "utterer": "SAY.Dialog:RaceHasty.66.Hasty Ass",
           "context": "",
-          "sourceEnglish": "No? Shame! Ah well. I'll be here. Ready to race. Always ready!"
+          "sourceEnglish": "No? Shame! Ah well. I'll be here. Ready to race. Always ready!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 110,
           "utterer": "SAY.Dialog:RaceHasty.12.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Wanna race now?"
+          "sourceEnglish": "Wanna race now?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 111,
           "utterer": "SAY.Dialog:RaceHasty.33.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Not even close! Hah! Maybe next time."
+          "sourceEnglish": "Not even close! Hah! Maybe next time.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 112,
           "utterer": "SAY.Dialog:RaceHasty.70.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Or not! Who knows?"
+          "sourceEnglish": "Or not! Who knows?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 113,
           "utterer": "SAY.Dialog:RaceHasty.69.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Wait. Practice is practice."
+          "sourceEnglish": "Wait. Practice is practice.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 114,
           "utterer": "SAY.Dialog:RaceHasty.38.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Wanna race again?"
+          "sourceEnglish": "Wanna race again?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 115,
           "utterer": "SAY.Dialog:RaceHasty.68.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Wanna race again?"
+          "sourceEnglish": "Wanna race again?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 116,
           "utterer": "SAY.Dialog:RaceHasty.71.Sick Ass",
           "context": "Dialogue option 2.1. COUGH (YES)",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 117,
           "utterer": "SAY.Dialog:RaceHasty.74.Hasty Ass",
           "context": "",
-          "sourceEnglish": "Let's go!"
+          "sourceEnglish": "Let's go!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 118,
           "utterer": "SAY.Dialog:RaceHasty.72.Sick Ass",
           "context": "Dialogue option 2.2. COUGH COUGH (NO)",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 119,
           "utterer": "SAY.Dialog:RaceHasty.73.Hasty Ass",
           "context": "",
-          "sourceEnglish": "No? Shame! Ah well. I'll be here. Ready to race. Always ready!"
+          "sourceEnglish": "No? Shame! Ah well. I'll be here. Ready to race. Always ready!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 120,
           "utterer": "SAY.Dialog_WinnerHasty.10.Hasty Ass",
           "context": "x",
-          "sourceEnglish": "WHEW. You're FAST! I like that. I really like that!"
+          "sourceEnglish": "WHEW. You're FAST! I like that. I really like that!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 121,
           "utterer": "SAY.Dialog_WinnerHasty.20.Hasty Ass",
           "context": "Repeater line.",
-          "sourceEnglish": "You're breathtaking! As in, I can't breathe! Whew!"
+          "sourceEnglish": "You're breathtaking! As in, I can't breathe! Whew!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 122,
           "utterer": "SAY.Dialog:Angry.10.Angry Ass",
           "context": "",
-          "sourceEnglish": "UGH! I hate Humans because they never gave us the representation in their media we deserved."
+          "sourceEnglish": "UGH! I hate Humans because they never gave us the representation in their media we deserved.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 123,
           "utterer": "SAY.Dialog:Angry.12.Angry Ass",
           "context": "",
-          "sourceEnglish": "Most of us are complex individuals with rich inner lives."
+          "sourceEnglish": "Most of us are complex individuals with rich inner lives.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 124,
           "utterer": "SAY.Dialog:Angry.18.Angry Ass",
           "context": "",
-          "sourceEnglish": "Like, we're not all stubborn and stupid, you know?"
+          "sourceEnglish": "Like, we're not all stubborn and stupid, you know?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 125,
           "utterer": "SAY.Dialog:Bitter.10.Bitter Ass",
           "context": "",
-          "sourceEnglish": "Hey Newbie. You look like you might be interested in joining our group."
+          "sourceEnglish": "Hey Newbie. You look like you might be interested in joining our group.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 126,
           "utterer": "SAY.Dialog:Bitter.12.Bitter Ass",
           "context": "",
-          "sourceEnglish": "Feel free to meet the membership!"
+          "sourceEnglish": "Feel free to meet the membership!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 127,
           "utterer": "SAY.Dialog:Bitter.18.Bitter Ass",
           "context": "",
-          "sourceEnglish": "I hate Humans because they beat me with a steel pipe!"
+          "sourceEnglish": "I hate Humans because they beat me with a steel pipe!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 128,
           "utterer": "SAY.Dialog:Bitter.19.Bitter Ass",
           "context": "",
-          "sourceEnglish": "We like to gather and share stories about how much we hate Humans."
+          "sourceEnglish": "We like to gather and share stories about how much we hate Humans.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 129,
           "utterer": "SAY.Dialog:Bitter.20.Bitter Ass",
           "context": "",
-          "sourceEnglish": "We're HAW. It stands for \"Humans Are the Worst.\""
+          "sourceEnglish": "We're HAW. It stands for \"Humans Are the Worst.\"",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 130,
           "utterer": "SAY.Dialog:BluntSex.10.Blunt Ass",
           "context": "",
-          "sourceEnglish": "Hey Newbie, you DTF? I like the way you smell."
+          "sourceEnglish": "Hey Newbie, you DTF? I like the way you smell.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 131,
           "utterer": "SAY.Dialog:BluntSex.12.Blunt Ass",
           "context": "",
-          "sourceEnglish": "How about now?"
+          "sourceEnglish": "How about now?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 132,
           "utterer": "SAY.Dialog:BluntSex.19.Blunt Ass",
           "context": "",
-          "sourceEnglish": "Again?"
+          "sourceEnglish": "Again?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 133,
           "utterer": "SAY.Dialog:BluntSex.41.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 134,
           "utterer": "SAY.Dialog:BluntSex.42.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 135,
           "utterer": "SAY.Dialog:Broken.10.Broken Ass",
           "context": "",
-          "sourceEnglish": "Geia sou, Newbie. I used to give tours to Humans around my beautiful home islands."
+          "sourceEnglish": "Geia sou, Newbie. I used to give tours to Humans around my beautiful home islands.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 136,
           "utterer": "SAY.Dialog:Broken.12.Broken Ass",
           "context": "",
-          "sourceEnglish": "There was a very clear sign that said the weight limit was 100 kilos!"
+          "sourceEnglish": "There was a very clear sign that said the weight limit was 100 kilos!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 137,
           "utterer": "SAY.Dialog:Broken.18.Broken Ass",
           "context": "",
-          "sourceEnglish": "My boss shot me in the head because he didn't think I could work again."
+          "sourceEnglish": "My boss shot me in the head because he didn't think I could work again.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 138,
           "utterer": "SAY.Dialog:Broken.19.Broken Ass",
           "context": "",
-          "sourceEnglish": "One day my boss let a big Human sit on me and he broke my back."
+          "sourceEnglish": "One day my boss let a big Human sit on me and he broke my back.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 139,
           "utterer": "SAY.Dialog:Chafed.10.Chafed Ass",
           "context": "",
-          "sourceEnglish": "Nihao. I hate Humans because I worked for them my whole life only to be killed with a sledgehammer, skinned, and turned into some 'delicacy'."
+          "sourceEnglish": "Nihao. I hate Humans because I worked for them my whole life only to be killed with a sledgehammer, skinned, and turned into some 'delicacy'.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 140,
           "utterer": "SAY.Dialog:Chafed.12.Chafed Ass",
           "context": "",
-          "sourceEnglish": "My death had no dignity."
+          "sourceEnglish": "My death had no dignity.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 141,
           "utterer": "SAY.Dialog:ConcertStart.100.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "LET'S DO THIS!"
+          "sourceEnglish": "LET'S DO THIS!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 142,
           "utterer": "SAY.Dialog:ConcertStart.39.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "Booyah! I love that PURPLE STUFF!"
+          "sourceEnglish": "Booyah! I love that PURPLE STUFF!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 143,
           "utterer": "SAY.Dialog:ConcertStart.71.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "What's good my fellow ASSES!!"
+          "sourceEnglish": "What's good my fellow ASSES!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 144,
           "utterer": "SAY.Dialog:ConcertStart.72.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "Thanks for coming out tonight to my SET!!"
+          "sourceEnglish": "Thanks for coming out tonight to my SET!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 145,
           "utterer": "SAY.Dialog:ConcertStart.73.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "Whether you're a freakin' Newbie or you've been here for a thousand years, get ready to let LOOSE!!!"
+          "sourceEnglish": "Whether you're a freakin' Newbie or you've been here for a thousand years, get ready to let LOOSE!!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 146,
           "utterer": "SAY.Dialog:ConcertStart.75.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "Let me hear you say: Fuck Reassignment! I'm never going back!"
+          "sourceEnglish": "Let me hear you say: Fuck Reassignment! I'm never going back!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 147,
           "utterer": "SAY.Dialog:ConcertStart.79.The Masses",
           "context": "",
-          "sourceEnglish": "FUCK REASSIGNMENT! I'M NEVER GOING BACK!"
+          "sourceEnglish": "FUCK REASSIGNMENT! I'M NEVER GOING BACK!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 148,
           "utterer": "SAY.Dialog:ConcertStart.82.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "BOOYAAAHH!!"
+          "sourceEnglish": "BOOYAAAHH!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 149,
           "utterer": "SAY.Dialog:ConcertStart.94.Tight Ass",
           "context": "",
-          "sourceEnglish": "It's starting! It's starting!"
+          "sourceEnglish": "It's starting! It's starting!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 150,
           "utterer": "SAY.Dialog:DJDopePreConcert.78.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "Hey—Hey—Hey..."
+          "sourceEnglish": "Hey—Hey—Hey...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 151,
           "utterer": "SAY.Dialog:DJDopePreConcert.79.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "Where's that Purple Stuff? I thought you were gonna get me that Purple Stuff?"
+          "sourceEnglish": "Where's that Purple Stuff? I thought you were gonna get me that Purple Stuff?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 152,
           "utterer": "SAY.Dialog:DJDopePreConcert.84.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "You know what I'm what I'm talking about, right?"
+          "sourceEnglish": "You know what I'm what I'm talking about, right?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 153,
           "utterer": "SAY.Dialog:DJDopePreConcert.85.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "Any chance you've got some of that Purple Stuff...?"
+          "sourceEnglish": "Any chance you've got some of that Purple Stuff...?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 154,
           "utterer": "SAY.Dialog:DJDopePreConcert.87.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 155,
           "utterer": "SAY.Dialog:DJDopePreConcert.89.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "Ya you do! The best damn drug we got in the Astral Plane..."
+          "sourceEnglish": "Ya you do! The best damn drug we got in the Astral Plane...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 156,
           "utterer": "SAY.Dialog:DJDopePreConcert.91.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "I'm supposed to start my set soon and I REALLY can't play without that Purple Stuff."
+          "sourceEnglish": "I'm supposed to start my set soon and I REALLY can't play without that Purple Stuff.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 157,
           "utterer": "SAY.Dialog:DJDopePreConcert.92.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "Help me out and bring me some will you?"
+          "sourceEnglish": "Help me out and bring me some will you?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 158,
           "utterer": "SAY.Dialog:DJDopePreConcert.95.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 159,
           "utterer": "SAY.Dialog:DJDopePreConcert.96.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "No? Oh my friend, it's best drug we got in the Astral Plane..."
+          "sourceEnglish": "No? Oh my friend, it's best drug we got in the Astral Plane...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 160,
           "utterer": "SAY.Dialog:DJDopePreConcert.98.DJ Dope Ass",
           "context": "",
-          "sourceEnglish": "I REALLY need that Purple Stuff or I can't start my Concert!"
+          "sourceEnglish": "I REALLY need that Purple Stuff or I can't start my Concert!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 161,
           "utterer": "SAY.Dialog:DustySex.10.Dusty Ass",
           "context": "",
-          "sourceEnglish": "I perished in the 1400s, so others hath at times described my methods as traditional."
+          "sourceEnglish": "I perished in the 1400s, so others hath at times described my methods as traditional.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 162,
           "utterer": "SAY.Dialog:DustySex.12.Dusty Ass",
           "context": "",
-          "sourceEnglish": "Fancy a roll in my hay?"
+          "sourceEnglish": "Fancy a roll in my hay?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 163,
           "utterer": "SAY.Dialog:DustySex.19.Dusty Ass",
           "context": "",
-          "sourceEnglish": "Hath thou still a dash of appetite?"
+          "sourceEnglish": "Hath thou still a dash of appetite?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 164,
           "utterer": "SAY.Dialog:DustySex.39.Dusty Ass",
           "context": "",
-          "sourceEnglish": "But lo! You look ready for a History lesson!"
+          "sourceEnglish": "But lo! You look ready for a History lesson!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 165,
           "utterer": "SAY.Dialog:DustySex.40.Dusty Ass",
           "context": "",
-          "sourceEnglish": "What say thee?"
+          "sourceEnglish": "What say thee?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 166,
           "utterer": "SAY.Dialog:DustySex.41.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 167,
           "utterer": "SAY.Dialog:DustySex.42.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 168,
           "utterer": "SAY.Dialog:Firm.10.Firm Ass",
           "context": "",
-          "sourceEnglish": "If you want to talk to Wise Ass, just remember she's been here longer than anyone can remember."
+          "sourceEnglish": "If you want to talk to Wise Ass, just remember she's been here longer than anyone can remember.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 169,
           "utterer": "SAY.Dialog:Firm.12.Firm Ass",
           "context": "",
-          "sourceEnglish": "Be respectful. Wise Ass knows the answer to everything."
+          "sourceEnglish": "Be respectful. Wise Ass knows the answer to everything.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 170,
           "utterer": "SAY.Dialog:Firm.18.Firm Ass",
           "context": "",
-          "sourceEnglish": "You should be respectful."
+          "sourceEnglish": "You should be respectful.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 171,
           "utterer": "SAY.Dialog:FurrySex.10.Furry Ass",
           "context": "",
-          "sourceEnglish": "Don't you love this place? We can really embrace our instincts."
+          "sourceEnglish": "Don't you love this place? We can really embrace our instincts.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 172,
           "utterer": "SAY.Dialog:FurrySex.12.Furry Ass",
           "context": "",
-          "sourceEnglish": "How about now?"
+          "sourceEnglish": "How about now?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 173,
           "utterer": "SAY.Dialog:FurrySex.19.Furry Ass",
           "context": "",
-          "sourceEnglish": "Want some more Furry?"
+          "sourceEnglish": "Want some more Furry?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 174,
           "utterer": "SAY.Dialog:FurrySex.45.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 175,
           "utterer": "SAY.Dialog:FurrySex.46.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 176,
           "utterer": "SAY.Dialog:FurrySex.47.Furry Ass",
           "context": "",
-          "sourceEnglish": "I promise I'll be really gentle—if you want me to."
+          "sourceEnglish": "I promise I'll be really gentle—if you want me to.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 177,
           "utterer": "SAY.Dialog:Janky.10.Janky Ass",
           "context": "",
-          "sourceEnglish": "ACH! Protests! They're all for show."
+          "sourceEnglish": "ACH! Protests! They're all for show.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 178,
           "utterer": "SAY.Dialog:Janky.12.Janky Ass",
           "context": "",
-          "sourceEnglish": "It didn't take much to get those Peasants to Revolt."
+          "sourceEnglish": "It didn't take much to get those Peasants to Revolt.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 179,
           "utterer": "SAY.Dialog:Janky.18.Janky Ass",
           "context": "",
-          "sourceEnglish": "I led a few impromptu insurrections in the 1300s. We nearly toppled the government."
+          "sourceEnglish": "I led a few impromptu insurrections in the 1300s. We nearly toppled the government.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 180,
           "utterer": "SAY.Dialog:Lofty.10.Lofty Ass",
           "context": "",
-          "sourceEnglish": "We were simple village donkeys when the Humans recruited my herd to do supply drops in their wars."
+          "sourceEnglish": "We were simple village donkeys when the Humans recruited my herd to do supply drops in their wars.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 181,
           "utterer": "SAY.Dialog:Lofty.12.Lofty Ass",
           "context": "",
-          "sourceEnglish": "They didn't take kindly to our pacifism..."
+          "sourceEnglish": "They didn't take kindly to our pacifism...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 182,
           "utterer": "SAY.Dialog:Lofty.18.Lofty Ass",
           "context": "",
-          "sourceEnglish": "But we held our ground and refused to be co-opted into the military industrial complex."
+          "sourceEnglish": "But we held our ground and refused to be co-opted into the military industrial complex.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 183,
           "utterer": "SAY.Dialog:Mad.10.Mad Ass",
           "context": "",
-          "sourceEnglish": "Merhaba. I hate Humans because during one of their wars they loaded my panniers with explosives without telling me."
+          "sourceEnglish": "Merhaba. I hate Humans because during one of their wars they loaded my panniers with explosives without telling me.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 184,
           "utterer": "SAY.Dialog:Mad.12.Mad Ass",
           "context": "",
-          "sourceEnglish": "I thought I was carrying water..."
+          "sourceEnglish": "I thought I was carrying water...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 185,
           "utterer": "SAY.Dialog:Mad.18.Mad Ass",
           "context": "",
-          "sourceEnglish": "I thought I was carrying water..."
+          "sourceEnglish": "I thought I was carrying water...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 186,
           "utterer": "SAY.Dialog:Mean.10.Mean Ass",
           "context": "",
-          "sourceEnglish": "Bonjour. I hate ze Humans because zey set my tail on fire just for one of zeir art movies."
+          "sourceEnglish": "Bonjour. I hate ze Humans because zey set my tail on fire just for one of zeir art movies.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 187,
           "utterer": "SAY.Dialog:Mean.12.Mean Ass",
           "context": "",
-          "sourceEnglish": "Zey always valued zeir art above our lives."
+          "sourceEnglish": "Zey always valued zeir art above our lives.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 188,
           "utterer": "SAY.Dialog:Mellow.10.Mellow Ass",
           "context": "",
-          "sourceEnglish": "Where are you going in such a hurry?"
+          "sourceEnglish": "Where are you going in such a hurry?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 189,
           "utterer": "SAY.Dialog:Mellow.12.Mellow Ass",
           "context": "",
-          "sourceEnglish": "Time to chillax' dude."
+          "sourceEnglish": "Time to chillax' dude.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 190,
           "utterer": "SAY.Dialog:Mellow.18.Mellow Ass",
           "context": "",
-          "sourceEnglish": "And some killer drugs. Help yourself."
+          "sourceEnglish": "And some killer drugs. Help yourself.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 191,
           "utterer": "SAY.Dialog:Mellow.19.Mellow Ass",
           "context": "",
-          "sourceEnglish": "Only good vibes around here."
+          "sourceEnglish": "Only good vibes around here.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 192,
           "utterer": "SAY.Dialog:NostalgicRadicalsIntro.31.Total Ass",
           "context": "",
-          "sourceEnglish": "Hey, Newbie! You're from Trusty's old Herd aren't you.\\n"
+          "sourceEnglish": "Hey, Newbie! You're from Trusty's old Herd aren't you.\\n",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 193,
           "utterer": "SAY.Dialog:NostalgicRadicalsIntro.32.Total Ass",
           "context": "",
-          "sourceEnglish": "She told us all about your Protest."
+          "sourceEnglish": "She told us all about your Protest.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 194,
           "utterer": "SAY.Dialog:NostalgicRadicalsIntro.35.Janky Ass",
           "context": "",
-          "sourceEnglish": "ACHH! Protests... they seem like great ideas but they DON'T WORK."
+          "sourceEnglish": "ACHH! Protests... they seem like great ideas but they DON'T WORK.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 195,
           "utterer": "SAY.Dialog:NostalgicRadicalsIntro.36.Lofty Ass",
           "context": "",
-          "sourceEnglish": "Every Ass here has had their share of Protests,"
+          "sourceEnglish": "Every Ass here has had their share of Protests,",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 196,
           "utterer": "SAY.Dialog:NostalgicRadicalsIntro.37.Lofty Ass",
           "context": "There is a needed extra space before \"Strikes\"",
-          "sourceEnglish": "Strikes, Marches, Boycotts..."
+          "sourceEnglish": "Strikes, Marches, Boycotts...",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 197,
           "utterer": "SAY.Dialog:NostalgicRadicalsIntro.38.Ugly Ass",
           "context": "",
-          "sourceEnglish": "Some wanted better living conditions."
+          "sourceEnglish": "Some wanted better living conditions.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 198,
           "utterer": "SAY.Dialog:NostalgicRadicalsIntro.39.Total Ass",
           "context": "",
-          "sourceEnglish": "Those were the days, my friends. Those. Were. The. Days."
+          "sourceEnglish": "Those were the days, my friends. Those. Were. The. Days.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 199,
           "utterer": "SAY.Dialog:PeekAss.10.Peek Ass",
           "context": "",
-          "sourceEnglish": "We don't ALL have to participate, right?"
+          "sourceEnglish": "We don't ALL have to participate, right?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 200,
           "utterer": "SAY.Dialog:PeekAss.12.Peek Ass",
           "context": "",
-          "sourceEnglish": "Oh that's a hard position to be in, I'm glad it's not me!"
+          "sourceEnglish": "Oh that's a hard position to be in, I'm glad it's not me!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 201,
           "utterer": "SAY.Dialog:PeekAss.18.Peek Ass",
           "context": "",
-          "sourceEnglish": "Some of us can just sit back and watch."
+          "sourceEnglish": "Some of us can just sit back and watch.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 202,
           "utterer": "SAY.Dialog:Shakey.10.Shaky Ass",
           "context": "",
-          "sourceEnglish": "I'M HAVING AN OUT-OF-BODY EXPERIENCE!"
+          "sourceEnglish": "I'M HAVING AN OUT-OF-BODY EXPERIENCE!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 203,
           "utterer": "SAY.Dialog:Shakey.12.Shaky Ass",
           "context": "",
-          "sourceEnglish": "NOW I CAN FEEL IT IN MY BONES!"
+          "sourceEnglish": "NOW I CAN FEEL IT IN MY BONES!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 204,
           "utterer": "SAY.Dialog:Shakey.19.Shaky Ass",
           "context": "",
-          "sourceEnglish": "WHAT THE FUCK, I'M WATCHING MY OWN BODY."
+          "sourceEnglish": "WHAT THE FUCK, I'M WATCHING MY OWN BODY.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 205,
           "utterer": "SAY.Dialog:Ugly.10.Ugly Ass",
           "context": "",
-          "sourceEnglish": "I led a Hunger Strike in the 1800s against my landowners."
+          "sourceEnglish": "I led a Hunger Strike in the 1800s against my landowners.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 206,
           "utterer": "SAY.Dialog:Ugly.12.Ugly Ass",
           "context": "",
-          "sourceEnglish": "Others here have said my Hunger Strike inspired generations."
+          "sourceEnglish": "Others here have said my Hunger Strike inspired generations.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 207,
           "utterer": "SAY.Dialog:Ugly.18.Ugly Ass",
           "context": "",
-          "sourceEnglish": "...It killed me, but you have to stand up for what you believe in, you know?"
+          "sourceEnglish": "...It killed me, but you have to stand up for what you believe in, you know?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 208,
           "utterer": "SAY.Dialog:Smelly.10.Smelly Ass",
           "context": "",
-          "sourceEnglish": "Hey, you, Newbie! Are you on Shit Duty too?"
+          "sourceEnglish": "Hey, you, Newbie! Are you on Shit Duty too?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 209,
           "utterer": "SAY.Dialog:Smelly.12.Smelly Ass",
           "context": "",
-          "sourceEnglish": "*sigh* Nobody knows how much it takes to keep this place looking good."
+          "sourceEnglish": "*sigh* Nobody knows how much it takes to keep this place looking good.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 210,
           "utterer": "SAY.Dialog:Smelly.20.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 211,
           "utterer": "SAY.Dialog:Smelly.21.Smelly Ass",
           "context": "",
-          "sourceEnglish": "Looks like we're both missing tonight's Concert then!"
+          "sourceEnglish": "Looks like we're both missing tonight's Concert then!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 212,
           "utterer": "SAY.Dialog:Smelly.22.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 213,
           "utterer": "SAY.Dialog:Smelly.23.Smelly Ass",
           "context": "",
-          "sourceEnglish": "Then what are you doing here?? What about DJ Dope Ass's Concert?!"
+          "sourceEnglish": "Then what are you doing here?? What about DJ Dope Ass's Concert?!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 214,
           "utterer": "SAY.Dialog:Smelly.28.Smelly Ass",
           "context": "",
-          "sourceEnglish": "It's a shame—I would love to see DJ Dope Ass perform live!"
+          "sourceEnglish": "It's a shame—I would love to see DJ Dope Ass perform live!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 215,
           "utterer": "SAY.Dialog:Sulky.10.Sulky Ass",
           "context": "",
-          "sourceEnglish": "I hear the Humans have some new ways of killing that don’t hurt."
+          "sourceEnglish": "I hear the Humans have some new ways of killing that don’t hurt.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 216,
           "utterer": "SAY.Dialog:Sulky.12.Sulky Ass",
           "context": "",
-          "sourceEnglish": "Even if it doesn't hurt, you're still dead."
+          "sourceEnglish": "Even if it doesn't hurt, you're still dead.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 217,
           "utterer": "SAY.Dialog:Sulky.18.Sulky Ass",
           "context": "",
-          "sourceEnglish": "Well in my day, it was just the good old throat slit."
+          "sourceEnglish": "Well in my day, it was just the good old throat slit.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 218,
           "utterer": "SAY.Dialog:Sulky.19.Sulky Ass",
           "context": "",
-          "sourceEnglish": "You ever have your throat slit in front of your loved ones?"
+          "sourceEnglish": "You ever have your throat slit in front of your loved ones?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 219,
           "utterer": "SAY.Dialog:Sulky.26.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH*"
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 220,
           "utterer": "SAY.Dialog:Sulky.27.Sulky Ass",
           "context": "",
-          "sourceEnglish": "Liar."
+          "sourceEnglish": "Liar.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 221,
           "utterer": "SAY.Dialog:Sulky.28.Sick Ass",
           "context": "",
-          "sourceEnglish": "*COUGH COUGH*"
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 222,
           "utterer": "SAY.Dialog:Sulky.29.Sulky Ass",
           "context": "",
-          "sourceEnglish": "Didn't think so."
+          "sourceEnglish": "Didn't think so.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 223,
           "utterer": "SAY.Dialog:TightAss.190.Tight Ass",
           "context": "",
-          "sourceEnglish": "Whoa whoa whoa! Where do you think you're going?"
+          "sourceEnglish": "Whoa whoa whoa! Where do you think you're going?",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 224,
           "utterer": "SAY.Dialog:TightAss.199.Tight Ass",
           "context": "",
-          "sourceEnglish": "You're not a Loser, are you? No one leaves the Astral Plane on my watch!"
+          "sourceEnglish": "You're not a Loser, are you? No one leaves the Astral Plane on my watch!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 225,
           "utterer": "SAY.Dialog:TightAss.191.Tight Ass",
           "context": "",
-          "sourceEnglish": "And I don't leave this tunnel for anything!"
+          "sourceEnglish": "And I don't leave this tunnel for anything!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 226,
           "utterer": "SAY.Dialog:TightAss.202.Tight Ass",
           "context": "",
-          "sourceEnglish": "Except, of course, for DJ Dope Ass's Astral Trap Concert."
+          "sourceEnglish": "Except, of course, for DJ Dope Ass's Astral Trap Concert.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 227,
           "utterer": "SAY.Dialog:TightAss.198.Tight Ass",
           "context": "",
-          "sourceEnglish": "The Gods aren't gonna miss you. Haha."
+          "sourceEnglish": "The Gods aren't gonna miss you. Haha.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 228,
           "utterer": "SAY.Dialog:Total.10.Total Ass",
           "context": "",
-          "sourceEnglish": "My herd did a Boycott against long travels on the Silk Road."
+          "sourceEnglish": "My herd did a Boycott against long travels on the Silk Road.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 229,
           "utterer": "SAY.Dialog:Total.12.Total Ass",
           "context": "",
-          "sourceEnglish": "Those were the days."
+          "sourceEnglish": "Those were the days.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 230,
           "utterer": "SAY.Dialog:Total.18.Total Ass",
           "context": "",
-          "sourceEnglish": "We even made a Barricade once and almost shut down the spice trade."
+          "sourceEnglish": "We even made a Barricade once and almost shut down the spice trade.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 231,
           "utterer": "SAY.Dialog:Trippy.10.Trippy Ass",
           "context": "",
-          "sourceEnglish": "WHOA."
+          "sourceEnglish": "WHOA.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 232,
           "utterer": "SAY.Dialog:Trippy.12.Trippy Ass",
           "context": "",
-          "sourceEnglish": "I can see how this all ends! You're glowing!"
+          "sourceEnglish": "I can see how this all ends! You're glowing!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 233,
           "utterer": "SAY.Dialog:Trippy.19.Trippy Ass",
           "context": "",
-          "sourceEnglish": "I can see four dimensions!!"
+          "sourceEnglish": "I can see four dimensions!!",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 234,
           "utterer": "SAY.Dialog:Hairy.10.Hairy Ass",
           "context": "",
-          "sourceEnglish": "G'day mate! Crikey, I hayte Humans cuz they shot me and family from thehr helicoptahs."
+          "sourceEnglish": "G'day mate! Crikey, I hayte Humans cuz they shot me and family from thehr helicoptahs.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 235,
           "utterer": "SAY.Dialog:Hairy.12.Hairy Ass",
           "context": "",
-          "sourceEnglish": "It wuz a real bugga, lemme tell ya."
+          "sourceEnglish": "It wuz a real bugga, lemme tell ya.",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 236,
           "utterer": "SAY.Dialog:Gamblers_End.11.Risky Ass",
           "context": "x",
-          "sourceEnglish": "We gonna have one helluva night—Look at all dem fresh Ass Souls!"
+          "sourceEnglish": "We gonna have one helluva night—Look at all dem fresh Ass Souls!",
+          "translatedDutch": ""
         }
       ]
     },
@@ -2737,19 +3185,22 @@
           "rowNumber": 1,
           "utterer": "Key",
           "context": "Description",
-          "sourceEnglish": "Standard"
+          "sourceEnglish": "Standard",
+          "translatedDutch": "NL"
         },
         {
           "rowNumber": 2,
           "utterer": "WRITE.DialogLocalizer.1",
           "context": "",
-          "sourceEnglish": "PLEASURE:"
+          "sourceEnglish": "PLEASURE:",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "WRITE.DialogLocalizer.2",
           "context": "",
-          "sourceEnglish": "CHAIN"
+          "sourceEnglish": "CHAIN",
+          "translatedDutch": ""
         }
       ]
     }
