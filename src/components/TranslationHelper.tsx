@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import * as XLSX from 'xlsx';
 import { useDisplayModes } from '../hooks/useDisplayModes';
 import { useJsonMode } from '../hooks/useJsonMode';
+import { useReferenceColumn as useReferenceColumnHook } from '../hooks/useReferenceColumn';
 import SetupWizard from './SetupWizard';
 import CodexPanel from './CodexPanel';
 
@@ -97,8 +98,20 @@ const TranslationHelper: React.FC = () => {
   const [selectedSheet, setSelectedSheet] = useState('');              // Currently selected sheet
   const [sourceColumn, setSourceColumn] = useState('C');               // Column containing source text
   const [uttererColumn, setUttererColumn] = useState('A');             // Column containing speaker names
-  const [referenceColumn, setReferenceColumn] = useState('D');         // Optional reference translation column
-  const [useReferenceColumn, setUseReferenceColumn] = useState(false); // Toggle for reference column
+  // ========== Reference Column State ==========
+  // FUTURE SPLIT: REFERENCE PROCESSING MODULE
+  // This state block has been extracted to useReferenceColumn hook
+  // Components to create: ReferenceProcessor, ReferenceConfiguration, ReferenceValidator
+  // State management: referenceColumn, useReferenceColumn, referenceData, referenceValidation
+  const {
+    referenceColumn,
+    useReferenceColumn,
+    setReferenceColumn,
+    setUseReferenceColumn,
+    resetReferenceColumn,
+    processReferenceData,
+    initializeTranslationsWithReference,
+  } = useReferenceColumnHook();
   const [startRow, setStartRow] = useState(3);                         // Starting row for data extraction
   const [workbookData, setWorkbookData] = useState<XLSX.WorkBook | null>(null); // Parsed Excel workbook
   
@@ -583,7 +596,7 @@ const TranslationHelper: React.FC = () => {
           const utterer = dataRow[uttererColIndex] ? dataRow[uttererColIndex].toString().trim() : '';
           extractedUtterers.push(utterer);
           // Get reference translation if using reference column
-          const reference = (useReferenceColumn && dataRow[referenceColIndex]) ? dataRow[referenceColIndex].toString().trim() : '';
+          const reference = processReferenceData(dataRow, referenceColIndex);
           extractedReferences.push(reference);
         }
       }
@@ -591,7 +604,7 @@ const TranslationHelper: React.FC = () => {
       setSourceTexts(extractedTexts);
       setUtterers(extractedUtterers);
       // If using reference column, populate translations with reference data, otherwise empty
-      setTranslations(useReferenceColumn ? [...extractedReferences] : new Array(extractedTexts.length).fill(''));
+      setTranslations(initializeTranslationsWithReference(extractedReferences, extractedTexts.length));
     }
       }, [workbookData, selectedSheet, sourceColumn, uttererColumn, referenceColumn, useReferenceColumn, startRow]);
 
@@ -610,7 +623,7 @@ const TranslationHelper: React.FC = () => {
     setWorkbookData(null);
     setExcelSheets([]);
     setSelectedSheet('');
-    setUseReferenceColumn(false);
+    resetReferenceColumn();
     setInputMode('manual');
   };
 
@@ -621,13 +634,8 @@ const TranslationHelper: React.FC = () => {
       const handleStart = () => {
       if (sourceTexts.length > 0) {
         setIsStarted(true);
-        // If not using reference column, ensure current translation starts empty
-        if (!useReferenceColumn) {
-          setCurrentTranslation('');
-        } else {
-          // If using reference column, start with the reference translation
-          setCurrentTranslation(translations[0] || '');
-        }
+        // Reference column functionality disabled for MVP
+        setCurrentTranslation('');
       }
     };
 
@@ -665,7 +673,7 @@ const TranslationHelper: React.FC = () => {
       setIsAnimating(true);
       setTimeout(() => {
         setCurrentIndex(currentIndex + 1);
-        setCurrentTranslation(useReferenceColumn ? translations[currentIndex + 1] || '' : '');
+        setCurrentTranslation('');
         setIsAnimating(false);
       }, 200);
     }
@@ -985,11 +993,13 @@ const TranslationHelper: React.FC = () => {
             <div className="flex items-center justify-between">
               <label className="text-base font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translation</label>
               <div className="flex items-center gap-3">
+                {/* Reference Column UI - DISABLED FOR MVP
                 {useReferenceColumn && (
                   <span className="text-xs bg-blue-100 dark:bg-blue-800 text-blue-900 dark:text-blue-300 px-3 py-1 font-bold shadow-sm border border-blue-600 dark:border-blue-600" style={{ borderRadius: '3px' }}>
                     Verification Mode
                   </span>
                 )}
+                */}
                 {/* Gamepad Mode - UI View */}
                 <button
                   onClick={toggleGamepadMode}
@@ -1072,14 +1082,14 @@ const TranslationHelper: React.FC = () => {
                 }
               }}
               className="w-full p-5 border border-gray-300 dark:border-gray-600 rounded-md focus:border-gray-500 dark:focus:border-gray-400 focus:ring-2 focus:ring-gray-300 focus:ring-opacity-30 transition-all duration-200 text-lg leading-relaxed bg-gray-50 dark:bg-gray-700 shadow-inner dark:text-white resize-none"
-              placeholder={useReferenceColumn ? "Review and edit the reference translation..." : "Enter your translation..."}
+              placeholder="Enter your translation..."
               rows={3}
               autoFocus
             />
             <div className="mt-2">
               <div className="flex items-start justify-between">
                 <p className="text-xs text-gray-500">
-                  {useReferenceColumn ? "Reference loaded - modify as needed • " : ""}Press Shift+Enter to submit
+                  Press Shift+Enter to submit
                 </p>
                 {(detectAssCharacters(sourceTexts[currentIndex]).length > 0 || getMatchingCodexEntries(sourceTexts[currentIndex]).length > 0) && (
                   <div className="flex flex-wrap gap-2 justify-end ml-4" style={{ maxWidth: '50%' }}>

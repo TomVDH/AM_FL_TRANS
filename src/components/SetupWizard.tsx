@@ -200,6 +200,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                         ))}
                       </select>
                     </div>
+                    {/* Reference Column UI - DISABLED FOR MVP
                     <div className="col-span-2">
                       <div className="flex items-center space-x-3 mb-3">
                         <input
@@ -224,6 +225,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                         />
                       )}
                     </div>
+                    */}
                     <div>
                       <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100">Utterer Column</label>
                       <input
@@ -259,8 +261,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                   </div>
                   {sourceTexts.length > 0 && (
                     <p className="text-sm text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 p-3 border border-green-600 dark:border-green-700">
-                      ✓ Found {sourceTexts.length} items (speakers from column {uttererColumn}, text from column {sourceColumn}
-                      {useReferenceColumn ? `, references from column ${referenceColumn}` : ''})
+                      ✓ Found {sourceTexts.length} items (speakers from column {uttererColumn}, text from column {sourceColumn})
                     </p>
                   )}
                 </div>
