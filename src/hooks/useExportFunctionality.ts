@@ -41,21 +41,27 @@ export const useExportFunctionality = (
       ? editableTranslations.join('\n')
       : translations.join('\n');
     
-    navigator.clipboard.writeText(textToCopy);
+    // Remove whitespace and clean the text before copying
+    const cleanText = textToCopy.trim().replace(/\s+/g, ' ');
+    navigator.clipboard.writeText(cleanText);
     setShowCopied(true);
     setTimeout(() => setShowCopied(false), 2000);
   }, [translations, editableTranslations, showTranslationsOutput]);
   
   const copySourceText = useCallback(() => {
     const currentSourceText = sourceTexts[currentIndex] || '';
-    navigator.clipboard.writeText(currentSourceText);
+    // Remove whitespace and clean the text before copying
+    const cleanText = currentSourceText.trim().replace(/\s+/g, ' ');
+    navigator.clipboard.writeText(cleanText);
     setShowCopied(true);
     setTimeout(() => setShowCopied(false), 2000);
   }, [sourceTexts, currentIndex]);
   
   const copySourceToJsonSearch = useCallback(() => {
     const currentSourceText = sourceTexts[currentIndex] || '';
-    navigator.clipboard.writeText(currentSourceText);
+    // Remove whitespace and clean the text before copying
+    const cleanText = currentSourceText.trim().replace(/\s+/g, ' ');
+    navigator.clipboard.writeText(cleanText);
     setShowCopied(true);
     setTimeout(() => setShowCopied(false), 2000);
   }, [sourceTexts, currentIndex]);

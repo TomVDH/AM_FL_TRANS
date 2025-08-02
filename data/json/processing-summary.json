@@ -1,0 +1,108 @@
+{
+  "processedAt": "2025-08-02T22:33:14.714Z",
+  "totalFiles": 14,
+  "successfulFiles": 14,
+  "failedFiles": 0,
+  "totalSheets": 124,
+  "totalEntries": 4538,
+  "files": [
+    {
+      "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy",
+      "success": true,
+      "sheets": 9,
+      "entries": 249,
+      "error": null
+    },
+    {
+      "fileName": "10_asses.masses_E10Proxy",
+      "success": true,
+      "sheets": 11,
+      "entries": 660,
+      "error": null
+    },
+    {
+      "fileName": "11_asses.masses_NonCSVBasedTranslations",
+      "success": true,
+      "sheets": 11,
+      "entries": 76,
+      "error": null
+    },
+    {
+      "fileName": "1_asses.masses_E1Proxy",
+      "success": true,
+      "sheets": 12,
+      "entries": 416,
+      "error": null
+    },
+    {
+      "fileName": "2_asses.masses_E2Proxy",
+      "success": true,
+      "sheets": 15,
+      "entries": 398,
+      "error": null
+    },
+    {
+      "fileName": "3_asses.masses_E3Proxy",
+      "success": true,
+      "sheets": 10,
+      "entries": 380,
+      "error": null
+    },
+    {
+      "fileName": "4_asses.masses_E4Proxy",
+      "success": true,
+      "sheets": 9,
+      "entries": 435,
+      "error": null
+    },
+    {
+      "fileName": "5_asses.masses_E5Proxy",
+      "success": true,
+      "sheets": 7,
+      "entries": 592,
+      "error": null
+    },
+    {
+      "fileName": "6_asses.masses_E6Proxy",
+      "success": true,
+      "sheets": 8,
+      "entries": 535,
+      "error": null
+    },
+    {
+      "fileName": "7_asses.masses_E7Proxy",
+      "success": true,
+      "sheets": 17,
+      "entries": 363,
+      "error": null
+    },
+    {
+      "fileName": "8_asses.masses_E8Proxy",
+      "success": true,
+      "sheets": 3,
+      "entries": 96,
+      "error": null
+    },
+    {
+      "fileName": "9_asses.masses_E9Proxy",
+      "success": true,
+      "sheets": 5,
+      "entries": 292,
+      "error": null
+    },
+    {
+      "fileName": "READ_ME_LocalizationManual",
+      "success": true,
+      "sheets": 1,
+      "entries": 7,
+      "error": null
+    },
+    {
+      "fileName": "Translation Checklist",
+      "success": true,
+      "sheets": 6,
+      "entries": 39,
+      "error": null
+    }
+  ]
+}

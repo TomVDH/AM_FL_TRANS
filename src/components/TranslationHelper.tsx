@@ -148,6 +148,17 @@ const TranslationHelper: React.FC = () => {
   const handleCopySourceToJsonSearch = () => {
     const sourceText = sourceTexts[currentIndex];
     if (sourceText) {
+      // Enable JSON mode if not already enabled
+      if (!jsonMode) {
+        toggleJsonMode();
+      }
+      
+      // Load JSON data if not already loaded
+      if (!jsonData && availableJsonFiles.length > 0) {
+        loadJsonData(availableJsonFiles[0]);
+      }
+      
+      // Set the search term
       setJsonSearchTerm(sourceText);
       console.log('Set JSON search term to:', sourceText);
     }

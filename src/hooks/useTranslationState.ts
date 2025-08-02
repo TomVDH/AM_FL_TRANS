@@ -318,7 +318,9 @@ export const useTranslationState = (): TranslationState => {
   const copySourceText = useCallback(() => {
     const sourceText = sourceTexts[currentIndex];
     if (sourceText) {
-      navigator.clipboard.writeText(sourceText);
+      // Remove whitespace and clean the text before copying
+      const cleanText = sourceText.trim().replace(/\s+/g, ' ');
+      navigator.clipboard.writeText(cleanText);
       setShowCopied(true);
       setTimeout(() => setShowCopied(false), 2000);
     }

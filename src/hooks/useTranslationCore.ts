@@ -195,7 +195,9 @@ export const useTranslationCore = (): TranslationCoreState => {
   const copySourceText = useCallback(() => {
     const sourceText = sourceTexts[currentIndex];
     if (sourceText) {
-      navigator.clipboard.writeText(sourceText);
+      // Remove whitespace and clean the text before copying
+      const cleanText = sourceText.trim().replace(/\s+/g, ' ');
+      navigator.clipboard.writeText(cleanText);
     }
   }, [currentIndex, sourceTexts]);
   

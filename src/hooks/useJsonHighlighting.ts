@@ -54,19 +54,41 @@ export const useJsonHighlighting = (initialJsonData?: any): JsonHighlightingStat
     const matches: any[] = [];
     const searchText = text.toLowerCase();
     
+    console.log('🔧 JSON Highlighting Debug: Searching for:', searchText);
+    console.log('🔧 JSON Highlighting Debug: JSON data structure:', highlightingJsonData);
+    
     // Search through JSON data structure
     if (highlightingJsonData.sheets) {
       highlightingJsonData.sheets.forEach((sheet: any) => {
         if (sheet.entries) {
           sheet.entries.forEach((entry: any) => {
-            if (entry.name && entry.name.toLowerCase().includes(searchText)) {
-              matches.push(entry);
+            // Check multiple fields for matches
+            const fieldsToCheck = ['utterer', 'sourceEnglish', 'translatedDutch', 'context'];
+            let found = false;
+            
+            fieldsToCheck.forEach(field => {
+              if (entry[field] && entry[field].toLowerCase().includes(searchText)) {
+                matches.push(entry);
+                found = true;
+                console.log('🔧 JSON Highlighting Debug: Found match in', field, ':', entry[field]);
+              }
+            });
+            
+            // Also check if the search text contains any of the entry values
+            if (!found) {
+              fieldsToCheck.forEach(field => {
+                if (entry[field] && searchText.includes(entry[field].toLowerCase())) {
+                  matches.push(entry);
+                  console.log('🔧 JSON Highlighting Debug: Found reverse match:', entry[field]);
+                }
+              });
             }
           });
         }
       });
     }
     
+    console.log('🔧 JSON Highlighting Debug: Total matches found:', matches.length);
     return matches;
   }, [highlightingJsonData]);
   
@@ -76,16 +98,19 @@ export const useJsonHighlighting = (initialJsonData?: any): JsonHighlightingStat
    * Generates hover text for JSON-matched elements.
    * Shows additional context or information about the matched item.
    * 
-   * @param text - Text to generate hover text for
+   * @param match - The matched JSON entry
    * @returns Hover text string
    */
-  const getHoverText = useCallback((text: string): string => {
-    const matches = findJsonMatches(text);
-    if (matches.length > 0) {
-      return matches.map(match => match.name).join(', ');
-    }
-    return '';
-  }, [findJsonMatches]);
+  const getHoverText = useCallback((match: any): string => {
+    if (!match) return '';
+    
+    const parts = [];
+    if (match.translatedDutch) parts.push(`Translated: ${match.translatedDutch}`);
+    if (match.context) parts.push(`Context: ${match.context}`);
+    if (match.sourceEnglish) parts.push(`Source: ${match.sourceEnglish}`);
+    
+    return parts.join(' | ');
+  }, []);
   
   /**
    * Load localization manual for highlighting

@@ -1,0 +1,3791 @@
+{
+  "fileName": "6_asses.masses_E6Proxy",
+  "processedAt": "2025-08-02T22:33:14.450Z",
+  "sheets": [
+    {
+      "sheetName": "E6_EpisodeTitle_localization",
+      "entries": [
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "",
+          "sourceEnglish": "EPISODE SIX",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "",
+          "sourceEnglish": "THE DREAM",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.8",
+          "context": "",
+          "sourceEnglish": "Press X to Begin",
+          "translatedDutch": ""
+        }
+      ]
+    },
+    {
+      "sheetName": "E6_Nightmare_localization",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:Jenny_Intro.20.Miner Jenny",
+          "context": "Hard Ass wakes up to a hit on the head via Jenny.",
+          "sourceEnglish": "No sleeping on the job you useless donkey!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:Jenny_Intro.37.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "I'm working overtime too—you don't see ME nodding off.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:Jenny_Intro.43.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "You're with me on Level 300 today!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:Jenny_Intro.48.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "At least I don't have to be with that lazy donkey.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:Jenny_Intro.49.Miner Jenny",
+          "context": "Jenny leaves and Hard Ass is free to roam around the Mines and talk to the others.",
+          "sourceEnglish": "I'm done wasting my time on slackers!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:Kick_Normal.20.Kick Ass",
+          "context": "Start NPC dialogue.",
+          "sourceEnglish": "COMRADE!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:Kick_Normal.34.Kick Ass",
+          "context": "",
+          "sourceEnglish": "Thanks for working with Jenny today.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:Kick_Normal.33.Kick Ass",
+          "context": "",
+          "sourceEnglish": "Lazy could NOT handle another shift with HER.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:Kick_Normal.35.Kick Ass",
+          "context": "End NPC dialogue.",
+          "sourceEnglish": "Sick and I just finished moving the last piece of that new Boring-Machine—and @#$%&! it's HEAVY.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:Kick_Normal.21.Kick Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "No way that Boring-Machine can BLAST through a day of work LIKE WE CAN.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:Sick_Normal.20.Sick Ass",
+          "context": "NPC Dialogue (single line). Repeater line.",
+          "sourceEnglish": "*COUGH*",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:Butte_Normal.20.Mr. Butte",
+          "context": "Start NPC dialogue.",
+          "sourceEnglish": "My favourite donkey!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:Butte_Normal.36.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "Are you ready for the big day?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:Butte_Normal.35.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "We're going to get the Boring Machine up and running, and it'll save our Mine from going under.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:Butte_Normal.34.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "Once I recoup the money I spent on the Machine, I'll send my son, Cole, to that fancy university he got into...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:Butte_Normal.33.Mr. Butte",
+          "context": "End NPC dialogue.",
+          "sourceEnglish": "And all of my workers will be taken care of too!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:Butte_Normal.21.Mr. Butte",
+          "context": "Repeater line.",
+          "sourceEnglish": "This Machine will fix everything... I know it!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:Lazy.1.Lazy Ass",
+          "context": "Start NPC dialogue.",
+          "sourceEnglish": "Heyyyy Hard! Thanks for switching shifts with me.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:Lazy.8.Lazy Ass",
+          "context": "",
+          "sourceEnglish": "I love 'working' with Cole Butte.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:Lazy.9.Lazy Ass",
+          "context": "",
+          "sourceEnglish": "We sit together on Level 300 while he talks about Robots and smokes.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:Lazy.10.Lazy Ass",
+          "context": "End NPC dialogue. Lazy and Cole leave.",
+          "sourceEnglish": "Boredom is freedom, ya know?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:Sad_Normal.36.Sad Ass",
+          "context": "Start NPC dialogue.",
+          "sourceEnglish": "Hullo Comrade...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:Sad_Normal.20.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Thanks again for taking Lazy's shift today.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:Sad_Normal.35.Sad Ass",
+          "context": "End NPC dialogue.",
+          "sourceEnglish": "I love seeing her when she is happy.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:Sad_Normal.21.Sad Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "Who could say no to Lazy's beautiful grey eyes?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Jenny_Normal.20.Miner Jenny",
+          "context": "Start NPC dialogue.",
+          "sourceEnglish": "WHAT TOOK YOU SO LONG YOU PIECE OF SHIT?!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Jenny_Normal.37.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "I apologize donkey... I'm emotional.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:Jenny_Normal.40.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "I dumped Cole yesterday.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:Jenny_Normal.35.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "*SOB*",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:Jenny_Normal.41.Miner Jenny",
+          "context": "End NPC dialogue.",
+          "sourceEnglish": "After all these years, I needed a break.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:Jenny_Normal.21.Miner Jenny",
+          "context": "Repeater line.",
+          "sourceEnglish": "Maybe I should leave and get a job in Mecha City...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:LazyCole.2.Lazy Ass",
+          "context": "Start NPC dialogue when getting to the furtherst right end of the map.\nCave in starts to happen.",
+          "sourceEnglish": "Heyyyy Hard Ass, what's shakin'? Haha.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:LazyCole.5.Lazy Ass",
+          "context": "",
+          "sourceEnglish": "These rocks are really coming down, eh?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:LazyCole.23.Lazy Ass",
+          "context": "",
+          "sourceEnglish": "You better get outta here.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:LazyCole.15.Lazy Ass",
+          "context": "End NPC dialogue. Lazy leaves and it becomes clear this is Hard Ass's nightmare.",
+          "sourceEnglish": "Tell Sad Ass not to worry—Cole's going to find us a way out.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:Worker.1.Miner With No Legs",
+          "context": "NPC Dialogue (single line). Nightmare sequence.\nNon-repeater line.",
+          "sourceEnglish": "{s}{s=7}My... legs...{/s}",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:Jenny_Horror.1.Miner Jenny",
+          "context": "NPC Dialogue. Nightmare sequence.",
+          "sourceEnglish": "I never made it to Mecha City...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:Jenny_Horror.9.Miner Jenny",
+          "context": "Jenny kills herself with her shovel.",
+          "sourceEnglish": "BECAUSE YOU KILLED ME!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:Sad_Horror.1.Sad Ass",
+          "context": "NPC Dialogue (single line). Nightmare sequence.\nSad explodes.",
+          "sourceEnglish": "HAHAHAHAHAHAHAHAHAHA...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:Butte_Horror.1.Mr. Butte",
+          "context": "NPC Dialogue. Nightmare sequence.",
+          "sourceEnglish": "*glug glug*",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:Butte_Horror.6.Mr. Butte",
+          "context": "Mr. Butte gets ripped apart by a mini-boring machine emerging from inside of him.",
+          "sourceEnglish": "...I don't feel so good—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:Kick_Horror.1.Kick Ass",
+          "context": "NPC Dialogue. Nightmare sequence.",
+          "sourceEnglish": "—this is all YOUR FAULT!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:Kick_Horror.11.Kick Ass",
+          "context": "",
+          "sourceEnglish": "You tore Sick AWAY FROM ME!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:Kick_Horror.9.Kick Ass",
+          "context": "Kick Ass vomits himself to death.",
+          "sourceEnglish": "And you made me into a KILLER.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:Sick_Horror.1.Sick Ass",
+          "context": "NPC Dialogue. Nightmare sequence.",
+          "sourceEnglish": "*COUGH COUGH*",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:Sick_Horror.14.Sick Ass",
+          "context": "Sick Ass falls over dead and an Indiana Jones boulder appears behind her.",
+          "sourceEnglish": "{s}{s=10}Turn around.{/s}",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:FoundLazy.24.Hard Ass",
+          "context": "A dialogue between Good Hard Ass and Evil Hard Ass ensues.\nGood Hard Ass.",
+          "sourceEnglish": "We failed to save Lazy.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:FoundLazy.1.Hard Ass",
+          "context": "",
+          "sourceEnglish": "You can't keep running from the truth.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:FoundLazy.8.Hard Ass",
+          "context": "Evil Hard Ass (Player).",
+          "sourceEnglish": "I have made up for our mistake.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:FoundLazy.25.Hard Ass",
+          "context": "",
+          "sourceEnglish": "I am protecting the Herd.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:FoundLazy.7.Hard Ass",
+          "context": "Good Hard Ass.",
+          "sourceEnglish": "You're miserable.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:FoundLazy.12.Hard Ass",
+          "context": "Evil Hard Ass (Player).",
+          "sourceEnglish": "Revolutions have no room for emotions.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:FoundLazy.11.Hard Ass",
+          "context": "Good Hard Ass.",
+          "sourceEnglish": "Revolutions can't be won alone.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:FoundLazy.27.Hard Ass",
+          "context": "",
+          "sourceEnglish": "You underestimated our friends and let the Herd split apart.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "SAY.Dialog:FoundLazy.30.Hard Ass",
+          "context": "Evil Hard Ass (Player).",
+          "sourceEnglish": "They weren't ready.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "SAY.Dialog:FoundLazy.10.Hard Ass",
+          "context": "Good Hard Ass.",
+          "sourceEnglish": "You never gave them a chance.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "SAY.Dialog:FoundLazy.9.Hard Ass",
+          "context": "",
+          "sourceEnglish": "I'm not going to sit back and watch you destroy us.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "SAY.Dialog:FoundLazy.31.Hard Ass",
+          "context": "A showdown (fight) between Evil Hard Ass and the Nightmare version of the Herd occurs.",
+          "sourceEnglish": "I'm taking back control now whether you like it or not.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "SAY.Dialog_Thirsty.38.",
+          "context": "x",
+          "sourceEnglish": "Comrade Sturdy! Hell, you look parched!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "SAY.Dialog_Thirsty.41.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "The Bar needs something beautiful...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "SAY.Dialog_Thirsty.43.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "Mosey on over and take a sip of my new drink special: The Pail Ale!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "SAY.Dialog_Thirsty.44.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "Tonight, The Bottoms Up Bar is finally openin'!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "SAY.Dialog_Thirsty.45.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "I think this here bar is missin' the somethin' special that makes it worth comin' to.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "SAY.Dialog_Thirsty.46.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "Say, if yer lookin' for a distraction...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "SAY.Dialog_Thirsty.47.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "But hey at least she's keepin' outta trouble.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "SAY.Dialog_Thirsty.48.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "Lemme guess—{$NewName} still spending all her time inside playin' Rocks with Bad Ass?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "SAY.Dialog_Thirsty.49.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "It's looking good, Comrade.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "SAY.Dialog_Thirsty.50.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "Always been my darn DREAM to have a place for us Asses to take a break and share some good 'ol water.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "SAY.Dialog_Thirsty.51.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "I could definitely use a drink and an ear to bend.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "SAY.Dialog_Thirsty.54.",
+          "context": "This dialogue is in the wrong scene. CUT.",
+          "sourceEnglish": "What do ya think it needs?",
+          "translatedDutch": ""
+        }
+      ]
+    },
+    {
+      "sheetName": "E6_BattleHard_localization",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.DialogMaster.1.Hard Ass",
+          "context": "Good Hard Ass.",
+          "sourceEnglish": "You are weak.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.DialogMaster.71.Hard Ass",
+          "context": "Evil Hard Ass (Player).",
+          "sourceEnglish": "You cannot beat me one-on-one.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.DialogMaster.72.Hard Ass",
+          "context": "Good Hard Ass. The fight begins. \nThe other Asses enter the fight one by one.",
+          "sourceEnglish": "Who says I'm alone?\\n",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.DialogMaster.19.Thirsty Ass",
+          "context": "NPC Dialogue on entrance to the fight. (Spoken by Thirsty)",
+          "sourceEnglish": "Heck, I don't have a drop of respect left for you.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.DialogMaster.74.Hard Ass",
+          "context": "NPC Dialogue on entrance to the fight.",
+          "sourceEnglish": "Prepare to become obsolete.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.DialogMaster.29.Sad Ass",
+          "context": "NPC Dialogue on entrance to the fight.",
+          "sourceEnglish": "Time to put you out of YOUR misery...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.DialogMaster.34.Sturdy Ass",
+          "context": "NPC Dialogue on entrance to the fight.",
+          "sourceEnglish": "Comrade, you've gotten weak. It's only a matter of time until you crack.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.DialogMaster.39.Nice Ass",
+          "context": "NPC Dialogue on entrance to the fight.",
+          "sourceEnglish": "Golly, you're about to get pounded, in less than two minutes!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.DialogMaster.44.{$NewName}",
+          "context": "NPC Dialogue on entrance to the fight.",
+          "sourceEnglish": "Uncle Hard, everyone says you're a two-faced liar!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "WRITE.DialogLocalizer.45",
+          "context": "Player Attack.",
+          "sourceEnglish": "Vengence",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "WRITE.DialogLocalizer.40",
+          "context": "UI.",
+          "sourceEnglish": "Strike one target",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "WRITE.DialogLocalizer.47",
+          "context": "Player Attack.",
+          "sourceEnglish": "Torment",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "WRITE.DialogLocalizer.39",
+          "context": "UI.",
+          "sourceEnglish": "Strike one target",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "WRITE.DialogLocalizer.48",
+          "context": "Player Attack.",
+          "sourceEnglish": "Trauma",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "WRITE.DialogLocalizer.41",
+          "context": "UI.",
+          "sourceEnglish": "Strike multiple targets",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "WRITE.DialogLocalizer.49",
+          "context": "Player Attack.",
+          "sourceEnglish": "Endure",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "WRITE.DialogLocalizer.42",
+          "context": "UI.",
+          "sourceEnglish": "Raise your defence",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "WRITE.DialogLocalizer.50",
+          "context": "Player Attack.",
+          "sourceEnglish": "Lick Wounds",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "WRITE.DialogLocalizer.43",
+          "context": "UI.",
+          "sourceEnglish": "Recover your health",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "WRITE.DialogLocalizer.46",
+          "context": "Player Attack.",
+          "sourceEnglish": "Annihilation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "WRITE.DialogLocalizer.44",
+          "context": "UI.",
+          "sourceEnglish": "Critically strike multiple targets",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "WRITE.DialogLocalizer.1",
+          "context": "Attack.",
+          "sourceEnglish": "Acceleration",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "WRITE.DialogLocalizer.2",
+          "context": "Attack.",
+          "sourceEnglish": "Annihilation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "WRITE.DialogLocalizer.3",
+          "context": "Attack.",
+          "sourceEnglish": "Bleeding Heart",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "WRITE.DialogLocalizer.4",
+          "context": "Attack.",
+          "sourceEnglish": "Breach",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "WRITE.DialogLocalizer.5",
+          "context": "Attack.",
+          "sourceEnglish": "Bum Rush",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "WRITE.DialogLocalizer.6",
+          "context": "Attack.",
+          "sourceEnglish": "Catastrophe",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "WRITE.DialogLocalizer.7",
+          "context": "Attack.",
+          "sourceEnglish": "Courage",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "WRITE.DialogLocalizer.8",
+          "context": "Attack.",
+          "sourceEnglish": "Dominate",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "WRITE.DialogLocalizer.9",
+          "context": "Attack.",
+          "sourceEnglish": "Drain",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "WRITE.DialogLocalizer.10",
+          "context": "Attack.",
+          "sourceEnglish": "Endure",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "WRITE.DialogLocalizer.11",
+          "context": "Attack.",
+          "sourceEnglish": "Gaslighting",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "WRITE.DialogLocalizer.12",
+          "context": "Attack.",
+          "sourceEnglish": "Helmet Headbutt",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "WRITE.DialogLocalizer.13",
+          "context": "Attack.",
+          "sourceEnglish": "High Noon",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "WRITE.DialogLocalizer.14",
+          "context": "Attack.",
+          "sourceEnglish": "Impenetrable",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "WRITE.DialogLocalizer.15",
+          "context": "Attack.",
+          "sourceEnglish": "Lick Wounds",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "WRITE.DialogLocalizer.16",
+          "context": "Attack.",
+          "sourceEnglish": "Plow",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "WRITE.DialogLocalizer.17",
+          "context": "Attack.",
+          "sourceEnglish": "Quench",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "WRITE.DialogLocalizer.18",
+          "context": "Attack.",
+          "sourceEnglish": "Rock Bottom",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "WRITE.DialogLocalizer.19",
+          "context": "Attack.",
+          "sourceEnglish": "Rocks",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "WRITE.DialogLocalizer.20",
+          "context": "Attack.",
+          "sourceEnglish": "Scrap",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "WRITE.DialogLocalizer.21",
+          "context": "Attack.",
+          "sourceEnglish": "Stomping Ground",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "WRITE.DialogLocalizer.22",
+          "context": "Attack.",
+          "sourceEnglish": "Trauma",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "WRITE.DialogLocalizer.23",
+          "context": "Attack.",
+          "sourceEnglish": "Torment",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "WRITE.DialogLocalizer.24",
+          "context": "Attack.",
+          "sourceEnglish": "Vengence",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "WRITE.DialogLocalizer.26",
+          "context": "UI. Target.",
+          "sourceEnglish": "Hard Ass",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "WRITE.DialogLocalizer.30",
+          "context": "UI. Target.",
+          "sourceEnglish": "Hard Ass",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "WRITE.DialogLocalizer.31",
+          "context": "UI. Target.",
+          "sourceEnglish": "Nice Ass",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "WRITE.DialogLocalizer.32",
+          "context": "UI. Target.",
+          "sourceEnglish": "Thirsty Ass",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "WRITE.DialogLocalizer.33",
+          "context": "UI. Target.",
+          "sourceEnglish": "Sturdy Ass",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "WRITE.DialogLocalizer.36",
+          "context": "UI. Target.",
+          "sourceEnglish": "Sad Ass",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "WRITE.DialogLocalizer.53",
+          "context": "UI. example: \"Sad Ass uses:",
+          "sourceEnglish": "uses",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.DialogMaster.4.Hard Ass",
+          "context": "Evil Hard Ass (Player) WINS.",
+          "sourceEnglish": "No compromises.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.DialogMaster.6.Hard Ass",
+          "context": "Evil Hard Ass (Player) LOSES.",
+          "sourceEnglish": "We're just trying to help.",
+          "translatedDutch": ""
+        }
+      ]
+    },
+    {
+      "sheetName": "E6_World_localization",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:PostNightmare.15.Hard Ass",
+          "context": "1.1 Evil Hard Ass Wins",
+          "sourceEnglish": "I'll kill ANYONE in my way!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:PostNightmare.134.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Revolutions have no room for emotions.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:PostNightmare.7.Sturdy Ass",
+          "context": "Branch (1.1, and 1.2) converge. \nThe scene fades in to Sturdy Ass and the Foal standing in front of Hard Ass.",
+          "sourceEnglish": "Comrade?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:PostNightmare.23.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "It's not like you to nod off at your post.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:PostNightmare.19.Hard Ass",
+          "context": "",
+          "sourceEnglish": "I'm... fine Comrade.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:PostNightmare.22.Hard Ass",
+          "context": "",
+          "sourceEnglish": "It was a momentary lapse.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:PostNightmare.20.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Hi Uncle Hard! How many Humans have you killed today?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:PostNightmare.24.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "{$NewName}!!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:PostNightmare.25.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Ugh! It's just a QUESTION.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:PostNightmare.26.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Yeesh.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:PostNightmare.27.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Uncle Hard, Comrade Mother and I are spending 'quality time' together, wanna come?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:PostNightmare.28.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Uncle Hard can't abandon his post.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:PostNightmare.29.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "The Humans are still trying to breach the Barricades and our Territory must be protected.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:PostNightmare.16.Hard Ass",
+          "context": "1.2 Good Hard Ass wins",
+          "sourceEnglish": "It all stops now.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:PostNightmare.133.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Revolutions can't be won alone.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:PostNightmare.91.Hard Ass",
+          "context": "Branch 2.1. EVIL version of Hard Ass WON.",
+          "sourceEnglish": "I must keep the Humans out.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:PostNightmare.92.Hard Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "They are a threat to our autonomy.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:PostNightmare.93.Hard Ass",
+          "context": "Branch 2.2. GOOD version of Hard Ass WON. Jump to line x.",
+          "sourceEnglish": "We need to protect each other.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:PostNightmare.67.{$NewName}",
+          "context": "",
+          "sourceEnglish": "When will Aunty Smart and the others decide to come home?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:PostNightmare.70.Hard Ass",
+          "context": "The sound of a vehicle approaching. Hard Ass leaves to take care of the intruders.",
+          "sourceEnglish": "Duty calls.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:PostNightmare.73.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "{$NewName}! I won't tell you again: the others have gone against the Gods.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:PostNightmare.75.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "And if they ever come back, this isn't their home anymore.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:PostNightmare.76.{$NewName}",
+          "context": "",
+          "sourceEnglish": "...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:PostNightmare.77.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Can we head back to the Old Village now?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:PostNightmare.78.{$NewName}",
+          "context": "After this line, the Foal and Sturdy expore the map in search of the Theatre.",
+          "sourceEnglish": "You promised to show me where the Old Theatre is.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:FoalFollow.26.{$NewName}",
+          "context": "Randomized dialogue for when Sturdy tries to talk to the Foal.",
+          "sourceEnglish": "Let's go, let's go, let's go!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:FoalFollow.27.{$NewName}",
+          "context": "Randomized dialogue for when Sturdy tries to talk to the Foal.",
+          "sourceEnglish": "Is this what it was like on the day of the protest?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:FoalFollow.28.{$NewName}",
+          "context": "Randomized dialogue for when Sturdy tries to talk to the Foal.",
+          "sourceEnglish": "The sun is so bright!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:FoalFollow.30.{$NewName}",
+          "context": "",
+          "sourceEnglish": "It's a good thing I have my helmet.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:FoalFollow.29.{$NewName}",
+          "context": "Randomized dialogue for when Sturdy tries to talk to the Foal.",
+          "sourceEnglish": "WAHOO! There are so many cool rocks out here!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:ShortWayLongWay.45.Sturdy Ass",
+          "context": "A fork in the road. Sturdy and the Foal discuss which way to go to get to the Theatre.",
+          "sourceEnglish": "Which way should we go?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:ShortWayLongWay.62.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "The Short Way to the South or the Long Way to the North East?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:ShortWayLongWay.57.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Ugh. Whatever, Comrade Mother.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:ShortWayLongWay.58.{$NewName}",
+          "context": "After this, Sturdy chooses which way to go.",
+          "sourceEnglish": "I don't care which way we go, as long we get to the Old Village!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:Shrine.10.Sturdy Ass",
+          "context": "In the long way, Sturdy reminisces at an old shrine.\nThis version occurs if The Foal is present.",
+          "sourceEnglish": "Something about this place makes me feel closer to the Gods.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:Shrine.36.Sturdy Ass",
+          "context": "In the long way, Sturdy reminisces at an old shrine.\nThis version occurs if The Foal is NOT present.",
+          "sourceEnglish": "I'll have to bring {$NewName} here next time we have quality time together.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:Shrine.38.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Something about this place makes me feel closer to the Gods.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.396.Sturdy Ass",
+          "context": "Dialogue for when Sturdy and the Foal arrive from the South entrance of Bumpkin Village.\n\nNote for translators: this is the same dialogue as entering from the East entrance.",
+          "sourceEnglish": "It's a shame you never saw this place as it was, before the Fire, before the Machines.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.397.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I used to bring deliveries here from the Farm every day—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.398.{$NewName}",
+          "context": "",
+          "sourceEnglish": "—which one's the 'Theatre'?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.399.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "The 'Theatre'? Since when were you so interested in Theatre?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.400.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Everyone is interested in Theatre!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.402.Sturdy Ass",
+          "context": "Sturdy and the Foal enter the village and look for the Theatre.",
+          "sourceEnglish": "Follow me then. I'll tell you a story when we get there.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.418.Sturdy Ass",
+          "context": "Dialogue for when Sturdy and the Foal arrive from the East entrance of Bumpkin Village.\n\nNote for translators: this is the same dialogue as entering from the South entrance.",
+          "sourceEnglish": "It's a shame you never saw this place as it was, before the Fire, before the Machines.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.419.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I used to bring deliveries here from the Farm every day—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.420.{$NewName}",
+          "context": "",
+          "sourceEnglish": "—which one's the 'Theatre'?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.421.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "The 'Theatre'? Since when were you so interested in Theatre?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.422.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Everyone is interested in Theatre!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:SturdyArrivesAtVillage.424.Sturdy Ass",
+          "context": "Sturdy and the Foal enter the village and look for the Theatre.",
+          "sourceEnglish": "Follow me then. I'll tell you a story when we get there.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:AttemptToBacktrack_STARTOFF.4.{$NewName}",
+          "context": "Dialogue that plays when Sturdy tries to backtrack / leave Bumpkin too early.",
+          "sourceEnglish": "Mother! Where are you going?!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:AttemptToBacktrack_STARTOFF.5.{$NewName}",
+          "context": "",
+          "sourceEnglish": "You promised to show me the Theatre!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:EnterTheTheatre.7.Sturdy Ass",
+          "context": "Dialogue that plays when Sturdy and the Foal arrive at the Theatre.",
+          "sourceEnglish": "This building is a remnant of another time.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:EnterTheTheatre.109.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Before the Humans betrayed us, I used to perform with them here.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:EnterTheTheatre.6.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Huh? You never told me that.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "SAY.Dialog:EnterTheTheatre.43.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Well, you never asked...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "SAY.Dialog:EnterTheTheatre.111.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Once a year, I used to carry a Human child on my back and stand very still under bright lights.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "SAY.Dialog:EnterTheTheatre.110.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "It was an elaborate spectacle.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "SAY.Dialog:EnterTheTheatre.112.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I was the star.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "SAY.Dialog:EnterTheTheatre.50.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Can I go inside?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "SAY.Dialog:EnterTheTheatre.115.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "It's not safe. The Theatre might collapse at any moment.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "SAY.Dialog:EnterTheTheatre.116.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "The structure lacks integrity and we can't fit through the door.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "SAY.Dialog:EnterTheTheatre.113.{$NewName}",
+          "context": "",
+          "sourceEnglish": "I can totally fit and I'll be super safe.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "SAY.Dialog:EnterTheTheatre.117.{$NewName}",
+          "context": "",
+          "sourceEnglish": "I just want to look inside.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "SAY.Dialog:EnterTheTheatre.121.{$NewName}",
+          "context": "Jump to line x or y.",
+          "sourceEnglish": "Please?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "MENU.Dialog:EnterTheTheatre.51",
+          "context": "Dialogue option 1.1.",
+          "sourceEnglish": "FINE...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "SAY.Dialog:EnterTheTheatre.80.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Fine... I suppose you're getting old enough to make your own decisions—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "SAY.Dialog:EnterTheTheatre.81.{$NewName}",
+          "context": "Jump to line x or y.",
+          "sourceEnglish": "—WAHOO! You're the best!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "MENU.Dialog:EnterTheTheatre.52",
+          "context": "Dialogue option 1.2.",
+          "sourceEnglish": "No.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "SAY.Dialog:EnterTheTheatre.55.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "No. It's not safe.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "SAY.Dialog:EnterTheTheatre.56.{$NewName}",
+          "context": "Jump to line y.",
+          "sourceEnglish": "Pleeeeeaaaaaaaaase?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 73,
+          "utterer": "MENU.Dialog:EnterTheTheatre.98",
+          "context": "Dialogue option 2.1.",
+          "sourceEnglish": "Call out nervously and ask if she needs any help.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 74,
+          "utterer": "SAY.Dialog:EnterTheTheatre.102.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Is everything all right in there? Do you need any help?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 75,
+          "utterer": "SAY.Dialog:EnterTheTheatre.103.{$NewName}",
+          "context": "Jump to line x.",
+          "sourceEnglish": "I'm FINE MOTHER!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 76,
+          "utterer": "MENU.Dialog:EnterTheTheatre.99",
+          "context": "Dialogue option 2.2. Jump to line x.",
+          "sourceEnglish": "Stay silent and be patient.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 77,
+          "utterer": "SAY.Dialog:EnterTheTheatre.78.{$NewName}",
+          "context": "Dialogue options (2.1 and 2.2) converge. \nThe Foal exits the Theatre.",
+          "sourceEnglish": "Told ya I'd be safe!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 78,
+          "utterer": "SAY.Dialog:EnterTheTheatre.89.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Would you like me to show you the Old Church next?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 79,
+          "utterer": "SAY.Dialog:EnterTheTheatre.79.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Ohh... I just remembered I promised Uncle Bad Ass we'd play Rocks!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 80,
+          "utterer": "SAY.Dialog:EnterTheTheatre.118.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "But, what about our quality time?!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 81,
+          "utterer": "SAY.Dialog:EnterTheTheatre.90.{$NewName}",
+          "context": "",
+          "sourceEnglish": "I gotta go.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 82,
+          "utterer": "SAY.Dialog:EnterTheTheatre.91.{$NewName}",
+          "context": "The Foal runs away and exits the scene.",
+          "sourceEnglish": "Love you, bye!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 83,
+          "utterer": "SAY.Dialog:EnterTheTheatre.389.Sturdy Ass",
+          "context": "Sturdy turns to go explore the area.",
+          "sourceEnglish": "...I love you too.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 84,
+          "utterer": "MENU.Dialog:EnterTheTheatre.63",
+          "context": "Dialogue option 3.1. Jump back to line x.",
+          "sourceEnglish": "FINE...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 85,
+          "utterer": "MENU.Dialog:EnterTheTheatre.64",
+          "context": "Dialogue option 3.2.",
+          "sourceEnglish": "No.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 86,
+          "utterer": "SAY.Dialog:EnterTheTheatre.58.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "You can make your own decisions when you're older!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 87,
+          "utterer": "SAY.Dialog:EnterTheTheatre.59.{$NewName}",
+          "context": "Jump to line x or y.",
+          "sourceEnglish": "COME ON!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 88,
+          "utterer": "MENU.Dialog:EnterTheTheatre.65",
+          "context": "Dialogue option 4.1. Jump back to line x.",
+          "sourceEnglish": "FINE...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 89,
+          "utterer": "MENU.Dialog:EnterTheTheatre.66",
+          "context": "Dialogue option 4.2.",
+          "sourceEnglish": "No.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 90,
+          "utterer": "SAY.Dialog:EnterTheTheatre.61.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "No means NO!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 91,
+          "utterer": "SAY.Dialog:EnterTheTheatre.62.{$NewName}",
+          "context": "",
+          "sourceEnglish": "UGH YOU NEVER LET ME DO ANYTHING FUN!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 92,
+          "utterer": "SAY.Dialog:EnterTheTheatre.123.{$NewName}",
+          "context": "The Foal runs away and exits the scene. Jump back to line z.",
+          "sourceEnglish": "I'M OUTTA HERE.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 93,
+          "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.334.Sturdy Ass",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "sourceEnglish": "This place was so beautiful...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 94,
+          "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.336.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "And now it's just a pile of junk left behind and forgotten.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 95,
+          "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.337.Sturdy Ass",
+          "context": "Art making mini game.",
+          "sourceEnglish": "Maybe I could make something special here?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 96,
+          "utterer": "SAY.Dialog_Sculpture1_VillageWest.340.Sturdy Ass",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "sourceEnglish": "This place was so beautiful...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 97,
+          "utterer": "SAY.Dialog_Sculpture1_VillageWest.341.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "And now it's just a pile of junk left behind and forgotten.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 98,
+          "utterer": "SAY.Dialog_Sculpture1_VillageWest.343.Sturdy Ass",
+          "context": "Art making mini game.",
+          "sourceEnglish": "Maybe I could make something special here?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 99,
+          "utterer": "SAY.Dialog_Sculpture2_VillageNorth.341.Sturdy Ass",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "sourceEnglish": "This place was so beautiful...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 100,
+          "utterer": "SAY.Dialog_Sculpture2_VillageNorth.342.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "And now it's just a pile of junk left behind and forgotten.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 101,
+          "utterer": "SAY.Dialog_Sculpture2_VillageNorth.344.Sturdy Ass",
+          "context": "Art making mini game.",
+          "sourceEnglish": "Maybe I could make something special here?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 102,
+          "utterer": "SAY.Dialog_Sculpture3_VillageSouth.347.Sturdy Ass",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "sourceEnglish": "This place was so beautiful...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 103,
+          "utterer": "SAY.Dialog_Sculpture3_VillageSouth.348.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "And now it's just a pile of junk left behind and forgotten.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 104,
+          "utterer": "SAY.Dialog_Sculpture3_VillageSouth.350.Sturdy Ass",
+          "context": "Art making mini game.",
+          "sourceEnglish": "Maybe I could make something special here?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 105,
+          "utterer": "SAY.Dialog_Sculpture4_VillageEast.348.Sturdy Ass",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "sourceEnglish": "This place was so beautiful...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 106,
+          "utterer": "SAY.Dialog_Sculpture4_VillageEast.349.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "And now it's just a pile of junk left behind and forgotten.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 107,
+          "utterer": "SAY.Dialog_Sculpture4_VillageEast.351.Sturdy Ass",
+          "context": "Art making mini game.",
+          "sourceEnglish": "Maybe I could make something special here?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 108,
+          "utterer": "SAY.Dialog_Sculpture5_FannysideEast.348.Sturdy Ass",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "sourceEnglish": "This place was so beautiful...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 109,
+          "utterer": "SAY.Dialog_Sculpture5_FannysideEast.349.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "And now it's just a pile of junk left behind and forgotten.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 110,
+          "utterer": "SAY.Dialog_Sculpture5_FannysideEast.351.Sturdy Ass",
+          "context": "Art making mini game.",
+          "sourceEnglish": "Maybe I could make something special here?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 111,
+          "utterer": "SAY.Dialog_Sculpture6_Mine.349.Sturdy Ass",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "sourceEnglish": "This place was so beautiful...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 112,
+          "utterer": "SAY.Dialog_Sculpture6_Mine.350.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "And now it's just a pile of junk left behind and forgotten.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 113,
+          "utterer": "SAY.Dialog_Sculpture6_Mine.352.Sturdy Ass",
+          "context": "Art making mini game.",
+          "sourceEnglish": "Maybe I could make something special here?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 114,
+          "utterer": "SAY.Dialog:Well.10.Sturdy Ass",
+          "context": "Dialogue for when Sturdy is at the Well.",
+          "sourceEnglish": "Oh Comrade Trusty...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 115,
+          "utterer": "SAY.Dialog:Well.12.Sturdy Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "Rest in power my dear Comrade.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 116,
+          "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.315.Sturdy Ass",
+          "context": "Sturdy approaches a sculpture.",
+          "sourceEnglish": "This sculpture reminds me of how difficult it was to come up with a name for the Foal.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 117,
+          "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.316.Sturdy Ass",
+          "context": "Jump to line x, y, or z.",
+          "sourceEnglish": "It needs a title:",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 118,
+          "utterer": "MENU.Dialog_Sculpture0_VillageFarWestExit.312",
+          "context": "Dialogue option 1.",
+          "sourceEnglish": "\"Enfant Terrible\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 119,
+          "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.16.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Enfant Terrible\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 120,
+          "utterer": "MENU.Dialog_Sculpture0_VillageFarWestExit.314",
+          "context": "Dialogue option 2.",
+          "sourceEnglish": "\"Kin Aesthetic Response\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 121,
+          "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.17.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Kin Aesthetic Response\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 122,
+          "utterer": "MENU.Dialog_Sculpture0_VillageFarWestExit.313",
+          "context": "Dialogue option 3.",
+          "sourceEnglish": "\"Growing Pains\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 123,
+          "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.18.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Growing Pains\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 124,
+          "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.310.Sturdy Ass",
+          "context": "Dialogue (1, 2, 3) converges.",
+          "sourceEnglish": "The Foal can be a real hoof-full sometimes.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 125,
+          "utterer": "SAY.Dialog_Sculpture1_VillageWest.15.Sturdy Ass",
+          "context": "Sturdy approaches a sculpture.",
+          "sourceEnglish": "Making art is finally giving me an outlet to express myself.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 126,
+          "utterer": "SAY.Dialog_Sculpture1_VillageWest.311.Sturdy Ass",
+          "context": "Jump to line x, y, or z.",
+          "sourceEnglish": "But who am I?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 127,
+          "utterer": "MENU.Dialog_Sculpture1_VillageWest.16",
+          "context": "Dialogue option 1.",
+          "sourceEnglish": "\"My Womb, My Self\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 128,
+          "utterer": "SAY.Dialog_Sculpture1_VillageWest.20.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"My Womb, My Self\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 129,
+          "utterer": "MENU.Dialog_Sculpture1_VillageWest.17",
+          "context": "Dialogue option 2.",
+          "sourceEnglish": "\"Mother Courage\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 130,
+          "utterer": "SAY.Dialog_Sculpture1_VillageWest.23.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Mother Courage\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 131,
+          "utterer": "MENU.Dialog_Sculpture1_VillageWest.18",
+          "context": "Dialogue option 3.",
+          "sourceEnglish": "\"Ecstasy of a Mother\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 132,
+          "utterer": "SAY.Dialog_Sculpture1_VillageWest.26.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Ecstasy of a Mother\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 133,
+          "utterer": "SAY.Dialog_Sculpture1_VillageWest.303.Sturdy Ass",
+          "context": "Dialogue (1, 2, 3) converges.",
+          "sourceEnglish": "Does being a mother define me?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 134,
+          "utterer": "SAY.Dialog_Sculpture2_VillageNorth.17.Sturdy Ass",
+          "context": "Sturdy approaches a sculpture.",
+          "sourceEnglish": "Machines could never make a sculpture like this one!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 135,
+          "utterer": "SAY.Dialog_Sculpture2_VillageNorth.311.Sturdy Ass",
+          "context": "Jump to line x, y, or z.",
+          "sourceEnglish": "What should I call this?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 136,
+          "utterer": "MENU.Dialog_Sculpture2_VillageNorth.18",
+          "context": "Dialogue option 1.",
+          "sourceEnglish": "\"If The Machines Never Were\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 137,
+          "utterer": "SAY.Dialog_Sculpture2_VillageNorth.22.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"If The Machines Never Were\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 138,
+          "utterer": "MENU.Dialog_Sculpture2_VillageNorth.19",
+          "context": "Dialogue option 2.",
+          "sourceEnglish": "\"The Protest in My Heart\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 139,
+          "utterer": "SAY.Dialog_Sculpture2_VillageNorth.25.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"The Protest in My Heart\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 140,
+          "utterer": "MENU.Dialog_Sculpture2_VillageNorth.20",
+          "context": "Dialogue option 3.",
+          "sourceEnglish": "\"The Tyranny of Machinery\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 141,
+          "utterer": "SAY.Dialog_Sculpture2_VillageNorth.28.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"The Tyranny of Machinery\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 142,
+          "utterer": "SAY.Dialog_Sculpture2_VillageNorth.303.Sturdy Ass",
+          "context": "Dialogue (1, 2, 3) converges.",
+          "sourceEnglish": "Damn those evil, soulless, job-taking, child-killing Machines.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 143,
+          "utterer": "SAY.Dialog_Sculpture3_VillageSouth.17.Sturdy Ass",
+          "context": "Sturdy approaches a sculpture.\nJump to line x, y, or z.",
+          "sourceEnglish": "Trusty was always better at coming up with names...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 144,
+          "utterer": "MENU.Dialog_Sculpture3_VillageSouth.19",
+          "context": "Dialogue option 1.",
+          "sourceEnglish": "\"Trusty, All is Well\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 145,
+          "utterer": "SAY.Dialog_Sculpture3_VillageSouth.340.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Trusty, All is Well\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 146,
+          "utterer": "MENU.Dialog_Sculpture3_VillageSouth.20",
+          "context": "Dialogue option 2.",
+          "sourceEnglish": "\"hee haw hi hon 'ee ah he a'w\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 147,
+          "utterer": "SAY.Dialog_Sculpture3_VillageSouth.338.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"hee haw hi hon 'ee ah he a'w\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 148,
+          "utterer": "MENU.Dialog_Sculpture3_VillageSouth.18",
+          "context": "Dialogue option 3. \nThis variation appears if Old Ass's last words were 'Ass Power'.",
+          "sourceEnglish": "\"Ass Power!\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 149,
+          "utterer": "SAY.Dialog_Sculpture3_VillageSouth.333.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Ass Power!\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 150,
+          "utterer": "MENU.Dialog_Sculpture3_VillageSouth.327",
+          "context": "Dialogue option 3.\nThis variation appears if Old Ass's last words were 'I'm scared'.",
+          "sourceEnglish": "\"I'm Scared\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 151,
+          "utterer": "SAY.Dialog_Sculpture3_VillageSouth.336.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"I'm Scared\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 152,
+          "utterer": "SAY.Dialog_Sculpture3_VillageSouth.303.Sturdy Ass",
+          "context": "Dialogue (1, 2, 3) converges.",
+          "sourceEnglish": "Our Herd has lost so much.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 153,
+          "utterer": "SAY.Dialog_Sculpture4_VillageEast.17.Sturdy Ass",
+          "context": "Sturdy approaches a sculpture.\nJump to line x, y, or z.",
+          "sourceEnglish": "Being an artist is one of the most spiritual things I've done with my life.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 154,
+          "utterer": "MENU.Dialog_Sculpture4_VillageEast.18",
+          "context": "Dialogue option 1.",
+          "sourceEnglish": "\"The Gods Leadeth Me\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 155,
+          "utterer": "SAY.Dialog_Sculpture4_VillageEast.22.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"The Gods Leadeth Me\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 156,
+          "utterer": "MENU.Dialog_Sculpture4_VillageEast.19",
+          "context": "Dialogue option 2.",
+          "sourceEnglish": "\"Golden Showers for All\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 157,
+          "utterer": "SAY.Dialog_Sculpture4_VillageEast.25.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Golden Showers for All\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 158,
+          "utterer": "MENU.Dialog_Sculpture4_VillageEast.20",
+          "context": "Dialogue option 3.",
+          "sourceEnglish": "\"Our Souls Will Meet in the Next Life\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 159,
+          "utterer": "SAY.Dialog_Sculpture4_VillageEast.28.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Our Souls Will Meet in the Next Life\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 160,
+          "utterer": "SAY.Dialog_Sculpture4_VillageEast.303.Sturdy Ass",
+          "context": "Dialogue (1, 2, 3) converges.",
+          "sourceEnglish": "Praise be to the Gods.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 161,
+          "utterer": "SAY.Dialog_Sculpture5_FannysideEast.17.Sturdy Ass",
+          "context": "Sturdy approaches a sculpture.\nJump to line x, y, or z.",
+          "sourceEnglish": "This sculpture will remind everyone of Fannyside's golden days.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 162,
+          "utterer": "MENU.Dialog_Sculpture5_FannysideEast.18",
+          "context": "Dialogue option 1.",
+          "sourceEnglish": "\"The Pleasures of Entering Fannyside\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 163,
+          "utterer": "SAY.Dialog_Sculpture5_FannysideEast.22.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"The Pleasures of Entering Fannyside\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 164,
+          "utterer": "MENU.Dialog_Sculpture5_FannysideEast.19",
+          "context": "Dialogue option 2.",
+          "sourceEnglish": "\"Farm and Content\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 165,
+          "utterer": "SAY.Dialog_Sculpture5_FannysideEast.25.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Farm and Content\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 166,
+          "utterer": "MENU.Dialog_Sculpture5_FannysideEast.20",
+          "context": "Dialogue option 3.",
+          "sourceEnglish": "\"The Fields Weep with the Blood of our Ancestors\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 167,
+          "utterer": "SAY.Dialog_Sculpture5_FannysideEast.28.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"The Fields Weep with the Blood of our Ancestors\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 168,
+          "utterer": "SAY.Dialog_Sculpture5_FannysideEast.303.Sturdy Ass",
+          "context": "Dialogue (1, 2, 3) converges.",
+          "sourceEnglish": "There's nothing quite like home.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 169,
+          "utterer": "SAY.Dialog_Sculpture6_Mine.17.Sturdy Ass",
+          "context": "Sturdy approaches a sculpture.",
+          "sourceEnglish": "Those months we spent in the Mine were a constant reminder of how I lost my beloved daughter, Lazy.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 170,
+          "utterer": "SAY.Dialog_Sculpture6_Mine.311.Sturdy Ass",
+          "context": "Jump to line x, y, or z.",
+          "sourceEnglish": "I'll name this sculpture in tribute to her:",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 171,
+          "utterer": "MENU.Dialog_Sculpture6_Mine.18",
+          "context": "Dialogue option 1.",
+          "sourceEnglish": "\"First Born, First Lost\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 172,
+          "utterer": "SAY.Dialog_Sculpture6_Mine.22.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"First Born, First Lost\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 173,
+          "utterer": "MENU.Dialog_Sculpture6_Mine.19",
+          "context": "Dialogue option 2.",
+          "sourceEnglish": "\"A Study in Laziness\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 174,
+          "utterer": "SAY.Dialog_Sculpture6_Mine.25.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"A Study in Laziness\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 175,
+          "utterer": "MENU.Dialog_Sculpture6_Mine.20",
+          "context": "Dialogue option 3.",
+          "sourceEnglish": "\"Boredom is Freedom, is Eternity\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 176,
+          "utterer": "SAY.Dialog_Sculpture6_Mine.28.Sturdy Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "\"Boredom is Freedom, is Eternity\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 177,
+          "utterer": "SAY.Dialog_Sculpture6_Mine.303.Sturdy Ass",
+          "context": "Dialogue (1, 2, 3) converges.",
+          "sourceEnglish": "I will never forget you, Lazy.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 178,
+          "utterer": "SAY.Dialog:NiceLoop.10.Nice Ass",
+          "context": "Sequence of one-off dialogues from Nice Ass when Sturdy tries to talk to her as she's plowing.",
+          "sourceEnglish": "Hi Sturdy! Bye Sturdy!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 179,
+          "utterer": "SAY.Dialog:NiceLoop.12.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Isn't it a beautiful day?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 180,
+          "utterer": "SAY.Dialog:NiceLoop.24.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Let's catch up later!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 181,
+          "utterer": "SAY.Dialog:NiceLoop.21.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Golly, you're looking well!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 182,
+          "utterer": "SAY.Dialog:Sad.10.Sad Ass",
+          "context": "Dialogue when Sturdy comes across Sad at his Memorial Garden.\nThis dialogue only happens when Sad is still on the Farm.",
+          "sourceEnglish": "Hullo Sturdy!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 183,
+          "utterer": "SAY.Dialog:Sad.22.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Sad, this Memorial Garden is coming along beautifully.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 184,
+          "utterer": "SAY.Dialog:Sad.23.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Turns out that tending to the memories of our lost loved ones is something I'm really good at...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 185,
+          "utterer": "SAY.Dialog:Sad.29.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Lazy's memorial is particularly beautiful.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 186,
+          "utterer": "SAY.Dialog:Sad.32.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "The Gods would be so impressed by your work.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 187,
+          "utterer": "SAY.Dialog:Sad.30.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I'm glad you found what you're good at Comrade.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 188,
+          "utterer": "SAY.Dialog:Sad.26.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I'm trying to spend quality time with {$NewName}, but she's growing up too fast.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 189,
+          "utterer": "SAY.Dialog:Sad.67.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Soon she'll leave me on my own.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 190,
+          "utterer": "SAY.Dialog:Sad.33.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Sometimes, being on your own isn't so lonely...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 191,
+          "utterer": "SAY.Dialog:Sad.68.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Take care, Comrade.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 192,
+          "utterer": "SAY.Dialog:Sad.12.Sad Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "Time to get back to work...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 193,
+          "utterer": "SAY.Dialog:Tractor.10.Sturdy Ass",
+          "context": "Repeater line when interacting with the Tractor.",
+          "sourceEnglish": "Stupid Tractor-Machine.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 194,
+          "utterer": "SAY.Dialog_Thirsty.38.Thirsty Ass",
+          "context": "Sturdy approaches Thirsty, who is surrounded by containers filled with water.",
+          "sourceEnglish": "Comrade Sturdy! Hell, you look parched!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 195,
+          "utterer": "SAY.Dialog_Thirsty.43.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Mosey on over and take a sip of my new drink special: The Pail Ale!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 196,
+          "utterer": "SAY.Dialog_Thirsty.44.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Tonight, The Bottoms Up Bar is finally openin'!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 197,
+          "utterer": "SAY.Dialog_Thirsty.50.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Always been my darn DREAM to have a place for us Asses to take a break and share some good 'ol water.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 198,
+          "utterer": "SAY.Dialog_Thirsty.49.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "It's looking good, Comrade.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 199,
+          "utterer": "SAY.Dialog_Thirsty.51.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I could definitely use a drink and an ear to bend.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 200,
+          "utterer": "SAY.Dialog_Thirsty.66.Thirsty Ass",
+          "context": "Jump to line x or y.",
+          "sourceEnglish": "What's gettin' ya down, Comrade?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 201,
+          "utterer": "MENU.Dialog_Thirsty.67",
+          "context": "Dialogue option 1.1. (Spoken by Sturdy)",
+          "sourceEnglish": "{$NewName} isn't interested in our Traditions.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 202,
+          "utterer": "SAY.Dialog_Thirsty.87.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "{$NewName} spends all her time inside playin' Rocks with Bad Ass, and isn't interested in learning about our Traditions.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 203,
+          "utterer": "SAY.Dialog_Thirsty.88.Thirsty Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "But hey at least she's keepin' outta trouble.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 204,
+          "utterer": "MENU.Dialog_Thirsty.68",
+          "context": "Dialogue option 1.2. (Spoken by Sturdy)",
+          "sourceEnglish": "The Herd rarely spends time together.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 205,
+          "utterer": "SAY.Dialog_Thirsty.89.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "We're all working on our own thing these days. We rarely spend time together.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 206,
+          "utterer": "SAY.Dialog_Thirsty.90.Thirsty Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "Well heck Comrade, that's exactly why I'm openin' my BAR!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 207,
+          "utterer": "SAY.Dialog_Thirsty.71.Thirsty Ass",
+          "context": "Dialogue options (1.1, 1.2) converge.",
+          "sourceEnglish": "Say, if yer lookin' for a distraction...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 208,
+          "utterer": "SAY.Dialog_Thirsty.72.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "I think this here bar is missin' the somethin' special that makes it worth comin' to.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 209,
+          "utterer": "SAY.Dialog_Thirsty.73.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Maybe you can do somethin' with this ol' bucket... It's got a hole in it.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 210,
+          "utterer": "SAY.Dialog_Thirsty.92.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Come on back after you figure out what to do with it!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 211,
+          "utterer": "SAY.Dialog_Thirsty.41.Thirsty Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "The Bar needs something beautiful...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 212,
+          "utterer": "SAY.Dialog:Pail_1.10.Thirsty Ass",
+          "context": "Dialogue option that pops up when you interact with any of Thirsty's containers of water.",
+          "sourceEnglish": "Aint it delicious! I call it the Wellini!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 213,
+          "utterer": "SAY.Dialog:Pail_2.10.Thirsty Ass",
+          "context": "Dialogue option that pops up when you interact with any of Thirsty's containers of water.",
+          "sourceEnglish": "You have mighty good taste, that's Trough-Aged River Water!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 214,
+          "utterer": "SAY.Dialog:Pail_3.10.Thirsty Ass",
+          "context": "Dialogue option that pops up when you interact with any of Thirsty's containers of water.",
+          "sourceEnglish": "That there drink is the farm famous Pail Ale!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 215,
+          "utterer": "SAY.Dialog:Pail_4.10.Thirsty Ass",
+          "context": "Dialogue option that pops up when you interact with any of Thirsty's containers of water.",
+          "sourceEnglish": "Lap it up—the Spit Spritz! Refreshin'!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 216,
+          "utterer": "SAY.Dialog:Trough_1.10.Thirsty Ass",
+          "context": "Dialogue option that pops up when you interact with any of Thirsty's containers of water.",
+          "sourceEnglish": "Straight from the pond to the back of yer mouth, the Dark and Stormy!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 217,
+          "utterer": "SAY.Dialog:Trough_2.10.Thirsty Ass",
+          "context": "Dialogue option that pops up when you interact with any of Thirsty's containers of water.",
+          "sourceEnglish": "Ah, a classic drink, Mineral Water, on the rocks!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 218,
+          "utterer": "SAY.Dialog:Sculpture7Dummy.10.Sturdy Ass",
+          "context": "Dialogue for when Sturdy approaches the final sculpture, but has not talked to Thirsty.\nRepeater line.",
+          "sourceEnglish": "This pile isn't very inspiring...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 219,
+          "utterer": "SAY.Dialog_Sculpture7_FarmBar.23.Sturdy Ass",
+          "context": "Dialogue for when Sturdy approaches the final sculpture and has already talked to Thirsty.\nJump to line x, y, or z.",
+          "sourceEnglish": "What's the perfect title to commemorate the opening of Bottoms Up?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 220,
+          "utterer": "MENU.Dialog_Sculpture7_FarmBar.24",
+          "context": "Dialogue option 1.",
+          "sourceEnglish": "\"Home is where the Herd is\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 221,
+          "utterer": "SAY.Dialog_Sculpture7_FarmBar.28.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "\"Home is where the Herd is\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 222,
+          "utterer": "WRITE.Dialog_Sculpture7_FarmBar.328",
+          "context": "Jump to line x.",
+          "sourceEnglish": "Home is where the Herd is",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 223,
+          "utterer": "MENU.Dialog_Sculpture7_FarmBar.25",
+          "context": "Dialogue option 2.",
+          "sourceEnglish": "\"Happy Watering Hole Opening\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 224,
+          "utterer": "SAY.Dialog_Sculpture7_FarmBar.31.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "\"Happy Watering Hole Opening\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 225,
+          "utterer": "WRITE.Dialog_Sculpture7_FarmBar.330",
+          "context": "Jump to line x.",
+          "sourceEnglish": "Happy Watering Hole Opening",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 226,
+          "utterer": "MENU.Dialog_Sculpture7_FarmBar.26",
+          "context": "Dialogue option 3.",
+          "sourceEnglish": "\"Untitled No. 8\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 227,
+          "utterer": "SAY.Dialog_Sculpture7_FarmBar.34.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "\"Untitled No. 8\"",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 228,
+          "utterer": "WRITE.Dialog_Sculpture7_FarmBar.329",
+          "context": "Jump to line x.",
+          "sourceEnglish": "Untitled No. 8",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 229,
+          "utterer": "SAY.Dialog_Sculpture7_FarmBar.303.Sturdy Ass",
+          "context": "Dialogue (1, 2, 3) converges.",
+          "sourceEnglish": "I think Thirsty will jump for joy when he sees this!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 230,
+          "utterer": "SAY.Dialog:BottomsUpOpening.60.Thirsty Ass",
+          "context": "After finishing the sculpture, Sturdy returns to talk to Thirsty at the Bottom's Up Bar.",
+          "sourceEnglish": "What's that there contraption called?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 231,
+          "utterer": "SAY.Dialog:BottomsUpOpening.121.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "It's called... {$SculptureName}!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 232,
+          "utterer": "SAY.Dialog:BottomsUpOpening.120.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "YEEHAW! What a BEAUT!!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 233,
+          "utterer": "SAY.Dialog:BottomsUpOpening.125.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "I'm sure that'll attract everyone to my bar!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 234,
+          "utterer": "SAY.Dialog:BottomsUpOpening.123.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Your success is everyone's success, Comrade.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 235,
+          "utterer": "SAY.Dialog:BottomsUpOpening.122.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Now alls we gots to do is wait for customers!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 236,
+          "utterer": "SAY.Dialog:BottomsUpOpening.69.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Any moment now, they'll be linin' up.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 237,
+          "utterer": "SAY.Dialog:BottomsUpOpening.127.Thirsty Ass",
+          "context": "It's quiet. Thirsty is hopeful.",
+          "sourceEnglish": "Oh!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 238,
+          "utterer": "SAY.Dialog:BottomsUpOpening.126.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Nevermind, I thought I saw somethin' or someone...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 239,
+          "utterer": "SAY.Dialog:BottomsUpOpening.128.Thirsty Ass",
+          "context": "No one is around.",
+          "sourceEnglish": "Dang, where is everyone?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 240,
+          "utterer": "SAY.Dialog:BottomsUpOpening.72.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Golly, what a beautiful artwork! I was drawn to it.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 241,
+          "utterer": "SAY.Dialog:BottomsUpOpening.130.Nice Ass",
+          "context": "Nice Ass enters.",
+          "sourceEnglish": "Oh Thirsty, you finally opened your bar!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 242,
+          "utterer": "SAY.Dialog:BottomsUpOpening.131.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Look at those fine legs that just walked into my bar and all over my heart—it's NICE ASS!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 243,
+          "utterer": "SAY.Dialog:BottomsUpOpening.132.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Aw shucks! Hey, can I have a drink? Gosh, I'm in need of some water.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 244,
+          "utterer": "SAY.Dialog:BottomsUpOpening.133.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "WELL WE'VE GOT SEVEN KINDS!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 245,
+          "utterer": "SAY.Dialog:BottomsUpOpening.40.Sad Ass",
+          "context": "Sad Ass enters; these are said if Sad Ass is on the Farm.",
+          "sourceEnglish": "... seven kinds of what?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 246,
+          "utterer": "SAY.Dialog:BottomsUpOpening.134.Thirsty Ass",
+          "context": "Sad Ass enters; these are said if Sad Ass is on the Farm.",
+          "sourceEnglish": "SAD ASS! I got a pail with yer name on it!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 247,
+          "utterer": "SAY.Dialog:BottomsUpOpening.135.Sad Ass",
+          "context": "Sad Ass enters; these are said if Sad Ass is on the Farm.",
+          "sourceEnglish": "... but wait, seven kinds of wh—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 248,
+          "utterer": "SAY.Dialog:BottomsUpOpening.44.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "YEEHAW! We got ourselves a party!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 249,
+          "utterer": "SAY.Dialog:BottomsUpOpening.137.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "It's a damn shame the others aren't here.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 250,
+          "utterer": "SAY.Dialog:BottomsUpOpening.138.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Good afternoon, Comrades.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 251,
+          "utterer": "SAY.Dialog:BottomsUpOpening.139.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "A GODDAMN PARTY!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 252,
+          "utterer": "SAY.Dialog:BottomsUpOpening.140.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Party's over.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 253,
+          "utterer": "SAY.Dialog:BottomsUpOpening.46.Hard Ass",
+          "context": "",
+          "sourceEnglish": "We have a visitor.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 254,
+          "utterer": "SAY.Dialog:BottomsUpOpening.141.???",
+          "context": "",
+          "sourceEnglish": "*huff p-puff*",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 255,
+          "utterer": "SAY.Dialog:BottomsUpOpening.51.Slow Ass",
+          "context": "Jump to line x or y.",
+          "sourceEnglish": "Hello everyb-b-body...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 256,
+          "utterer": "SAY.Dialog:BottomsUpOpening.96.Thirsty Ass",
+          "context": "Branch 1.1. Slow Ass went to the Circus.",
+          "sourceEnglish": "Slow Ass?! What the heck are you wearin'?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 257,
+          "utterer": "SAY.Dialog:BottomsUpOpening.145.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I'm supposed to b-b-be a Lion!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 258,
+          "utterer": "SAY.Dialog:BottomsUpOpening.147.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Golly! I think you look great!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 259,
+          "utterer": "SAY.Dialog:BottomsUpOpening.146.Slow Ass",
+          "context": "Jump to line z.",
+          "sourceEnglish": "Thanks, b-b-but I'm here b-b-because I need your help-p-p!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 260,
+          "utterer": "SAY.Dialog:BottomsUpOpening.239.Sturdy Ass",
+          "context": "Branch 1.2. Slow Ass went to the Zoo.",
+          "sourceEnglish": "Slow Ass? Why have you come crawling back here?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 261,
+          "utterer": "SAY.Dialog:BottomsUpOpening.95.Slow Ass",
+          "context": "Jump to line z.",
+          "sourceEnglish": "Something terrib-b-ble has hap-p-p-ened and I need your help-p-p!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 262,
+          "utterer": "SAY.Dialog:BottomsUpOpening.227.Sturdy Ass",
+          "context": "Branches (1.1, 1.2) converge.",
+          "sourceEnglish": "Help? We don't help traitors.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 263,
+          "utterer": "SAY.Dialog:BottomsUpOpening.228.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Hard, why have you let him into the Territory?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 264,
+          "utterer": "SAY.Dialog:BottomsUpOpening.229.Hard Ass",
+          "context": "",
+          "sourceEnglish": "You need to hear what Slow Ass has to say.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 265,
+          "utterer": "SAY.Dialog:BottomsUpOpening.85.Slow Ass",
+          "context": "Jump to line x or y.",
+          "sourceEnglish": "Oh b-b-boy... do you want the short version or the long version?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 266,
+          "utterer": "MENU.Dialog:BottomsUpOpening.249",
+          "context": "Dialogue option 1.",
+          "sourceEnglish": "Short",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 267,
+          "utterer": "SAY.Dialog:BottomsUpOpening.392.Hard Ass",
+          "context": "",
+          "sourceEnglish": "The short version.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 268,
+          "utterer": "SAY.Dialog:BottomsUpOpening.390.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I'll do my b-b-best.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 269,
+          "utterer": "MENU.Dialog:BottomsUpOpening.250",
+          "context": "Dialogue option 2.",
+          "sourceEnglish": "Long",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 270,
+          "utterer": "SAY.Dialog:BottomsUpOpening.241.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Spit it out and don't omit nothin'!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 271,
+          "utterer": "SAY.Dialog:BottomsUpOpening.391.Slow Ass",
+          "context": "",
+          "sourceEnglish": "It's a b-b-bit of story...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 272,
+          "utterer": "SAY.Dialog:BottomsUpOpening.247.Slow Ass",
+          "context": "Branch 2.1. The Asses went to the Circus.",
+          "sourceEnglish": "We found job-bs as p-performers in a Circus show.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 273,
+          "utterer": "SAY.Dialog:BottomsUpOpening.277.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Humans travelled from far away to watch us p-pretend to be other animals!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 274,
+          "utterer": "SAY.Dialog:BottomsUpOpening.313.Slow Ass",
+          "context": "",
+          "sourceEnglish": "We took to the stage one at a time, b-but we worked as a team.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 275,
+          "utterer": "SAY.Dialog:BottomsUpOpening.314.Slow Ass",
+          "context": "Jump to either line x or y.",
+          "sourceEnglish": "You wouldn't have b-believed your eyes!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 276,
+          "utterer": "SAY.Dialog:BottomsUpOpening.278.Slow Ass",
+          "context": "Branch 3.1. If Sad left the Farm.",
+          "sourceEnglish": "Smart was a dancing Gorilla, Kick did acrob-b-batics as a Zeb-bra,",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 277,
+          "utterer": "SAY.Dialog:BottomsUpOpening.393.Slow Ass",
+          "context": "Jump to line y.",
+          "sourceEnglish": "Sad had a b-bear routine on a b-bicycle, and B-Big was a b-ball catching elephant—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 278,
+          "utterer": "SAY.Dialog:BottomsUpOpening.284.Slow Ass",
+          "context": "Branch 3.1. If Sad stayed on the Farm.",
+          "sourceEnglish": "Smart was a dancing Gorilla, Kick did acrob-b-batics as a Zeb-bra,",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 279,
+          "utterer": "SAY.Dialog:BottomsUpOpening.394.Slow Ass",
+          "context": "Jump to line y.",
+          "sourceEnglish": "and B-B-Big was a b-b-ball catching Elep-phant—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 280,
+          "utterer": "SAY.Dialog:BottomsUpOpening.287.Slow Ass",
+          "context": "Branches (3.1, 3.2) converge.",
+          "sourceEnglish": "And for the closing act, I b-bravely jump-ped through fire in my lion costume!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 281,
+          "utterer": "SAY.Dialog:BottomsUpOpening.316.Slow Ass",
+          "context": "",
+          "sourceEnglish": "B-but we ran into a terrib-ble p-problem.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 282,
+          "utterer": "SAY.Dialog:BottomsUpOpening.315.Slow Ass",
+          "context": "Jump to line z.",
+          "sourceEnglish": "Just when we thought we were going on tour, our B-Boss, Ringmaster Rico, B-BETRAYED US!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 283,
+          "utterer": "SAY.Dialog:BottomsUpOpening.244.Slow Ass",
+          "context": "Branch 2.2. The Asses went to the Zoo.",
+          "sourceEnglish": "After months of searching, we finally found job-bs at a Zoo.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 284,
+          "utterer": "SAY.Dialog:BottomsUpOpening.259.Slow Ass",
+          "context": "",
+          "sourceEnglish": "The long hours were b-brutal on my b-bones, so the nice Zookeep-per gave me Ointment to help-p my joint p-pain!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 285,
+          "utterer": "SAY.Dialog:BottomsUpOpening.318.Slow Ass",
+          "context": "",
+          "sourceEnglish": "The Ointment help-ped me in the weekly comp-petition to see who was b-best at their job-b.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 286,
+          "utterer": "SAY.Dialog:BottomsUpOpening.317.Slow Ass",
+          "context": "Jump to either line x or y or z.",
+          "sourceEnglish": "Unfortunately, the race to the top-p made us comp-petitive.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 287,
+          "utterer": "SAY.Dialog:BottomsUpOpening.264.Slow Ass",
+          "context": "Branch 4.1. If Sad left the Farm.",
+          "sourceEnglish": "One night after a long shift, Sad Ass said he had enough.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 288,
+          "utterer": "SAY.Dialog:BottomsUpOpening.319.Slow Ass",
+          "context": "Jump to line y.",
+          "sourceEnglish": "He ran away from us and left us all b-behind.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 289,
+          "utterer": "SAY.Dialog:BottomsUpOpening.405.Slow Ass",
+          "context": "Branch 4.2. If Sad stayed on the Farm and Slow Ass WON Ass of the Week.",
+          "sourceEnglish": "If you can b-believe it—I, surp-prisingly, won Ass of the Week!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 290,
+          "utterer": "SAY.Dialog:BottomsUpOpening.406.Slow Ass",
+          "context": "Branch 4.3. If Sad stayed on the Farm and another Ass WON Ass of the Week.",
+          "sourceEnglish": "I tried my b-b-best, but {$String} won Ass of the Week!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 291,
+          "utterer": "SAY.Dialog:BottomsUpOpening.301.Slow Ass",
+          "context": "Branches (4.1, 4.2, 4.3) converge.",
+          "sourceEnglish": "Right after the announcement, we ran into a terrib-ble p-problem!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 292,
+          "utterer": "SAY.Dialog:BottomsUpOpening.397.Slow Ass",
+          "context": "Jump to line y.",
+          "sourceEnglish": "Our B-Boss, Zookeep-per Rose, B-BETRAYED US!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 293,
+          "utterer": "SAY.Dialog:BottomsUpOpening.100.Slow Ass",
+          "context": "Branches (2.1 and 2.2) converge.",
+          "sourceEnglish": "Two Humans in b-black p-put our Comrades in a Truck-Machine.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 294,
+          "utterer": "SAY.Dialog:BottomsUpOpening.223.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I followed it all the way to the City.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 295,
+          "utterer": "SAY.Dialog:BottomsUpOpening.224.Slow Ass",
+          "context": "",
+          "sourceEnglish": "There were tall b-buildings, and a b-big Factory that smelled so b-bad...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 296,
+          "utterer": "SAY.Dialog:BottomsUpOpening.225.Slow Ass",
+          "context": "",
+          "sourceEnglish": "That's where the Truck-Machine stop-ped.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 297,
+          "utterer": "SAY.Dialog:BottomsUpOpening.226.Slow Ass",
+          "context": "",
+          "sourceEnglish": "...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 298,
+          "utterer": "SAY.Dialog:BottomsUpOpening.311.Slow Ass",
+          "context": "",
+          "sourceEnglish": "The others are in deep-p troub-b-b-b-b-ble!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 299,
+          "utterer": "SAY.Dialog:BottomsUpOpening.539.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I'm b-begging you! P-please help-p!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 300,
+          "utterer": "SAY.Dialog:BottomsUpOpening.218.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Not a hope in—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 301,
+          "utterer": "SAY.Dialog:BottomsUpOpening.220.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Yikes! We have to save them!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 302,
+          "utterer": "SAY.Dialog:BottomsUpOpening.101.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "But it'll take forever to git there... we don't all have well-toned legs.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 303,
+          "utterer": "SAY.Dialog:BottomsUpOpening.221.Nice Ass",
+          "context": "Nice Ass exits.",
+          "sourceEnglish": "I have an idea!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 304,
+          "utterer": "SAY.Dialog:BottomsUpOpening.222.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Comrades, I think we need to remember that—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 305,
+          "utterer": "SAY.Dialog:BottomsUpOpening.219.Nice Ass",
+          "context": "Nice Ass returns, driving the Tractor.",
+          "sourceEnglish": "Hop on everyone!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 306,
+          "utterer": "SAY.Dialog:BottomsUpOpening.109.Nice Ass",
+          "context": "",
+          "sourceEnglish": "We can ride the Tractor-Machine to the City!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 307,
+          "utterer": "SAY.Dialog:BottomsUpOpening.212.Nice Ass",
+          "context": "",
+          "sourceEnglish": "It has been my sworn enemy for years...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 308,
+          "utterer": "SAY.Dialog:BottomsUpOpening.214.Nice Ass",
+          "context": "",
+          "sourceEnglish": "I've spent countless hours analyzing its every move, training to out-plow it.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 309,
+          "utterer": "SAY.Dialog:BottomsUpOpening.213.Nice Ass",
+          "context": "",
+          "sourceEnglish": "But the truth is... even in my peak condition, this Machine will always be faster than me.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 310,
+          "utterer": "SAY.Dialog:BottomsUpOpening.215.Nice Ass",
+          "context": "",
+          "sourceEnglish": "It's our only hope to rescue the others!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 311,
+          "utterer": "SAY.Dialog:BottomsUpOpening.207.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "But Machines are EVIL!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 312,
+          "utterer": "SAY.Dialog:BottomsUpOpening.208.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "They caused the cave-in that killed my Lazy!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 313,
+          "utterer": "SAY.Dialog:BottomsUpOpening.209.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "They set fire to the Village and ruined Old Ass's Protest!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 314,
+          "utterer": "SAY.Dialog:BottomsUpOpening.210.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Golly, I don't know how to say this, but the Machines aren't responsible for the Fire.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 315,
+          "utterer": "SAY.Dialog:BottomsUpOpening.321.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Then who is to blame?!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 316,
+          "utterer": "SAY.Dialog:BottomsUpOpening.322.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Gosh, I...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 317,
+          "utterer": "SAY.Dialog:BottomsUpOpening.329.Nice Ass",
+          "context": "",
+          "sourceEnglish": "...promised I wouldn't say.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 318,
+          "utterer": "SAY.Dialog:BottomsUpOpening.330.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Are you a traitor too?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 319,
+          "utterer": "SAY.Dialog:BottomsUpOpening.332.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Who else has been keeping dirty secrets?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 320,
+          "utterer": "SAY.Dialog:BottomsUpOpening.333.Sturdy Ass",
+          "context": "Jump to either line x or y.",
+          "sourceEnglish": "Who else has chosen to side with Machines over Asses?!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 321,
+          "utterer": "SAY.Dialog:BottomsUpOpening.203.Slow Ass",
+          "context": "Branch 5.1. If Slow went to the Circus.",
+          "sourceEnglish": "If I learned anything at the Circus, it's that the b-best show is an ensemble effort.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 322,
+          "utterer": "SAY.Dialog:BottomsUpOpening.204.Slow Ass",
+          "context": "Jump to line z.",
+          "sourceEnglish": "We're a team, even when it ap-p-pears like we're not.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 323,
+          "utterer": "SAY.Dialog:BottomsUpOpening.200.Slow Ass",
+          "context": "Branch 5.2. If Slow went to the Zoo.",
+          "sourceEnglish": "If I learned anything at the Zoo, it's that nothing good comes out of comp-p-peting with each other.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 324,
+          "utterer": "SAY.Dialog:BottomsUpOpening.201.Slow Ass",
+          "context": "Jump to line z.",
+          "sourceEnglish": "We're stronger as one Herd.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 325,
+          "utterer": "SAY.Dialog:BottomsUpOpening.191.Sturdy Ass",
+          "context": "Branches (5.1 and 5.2) converge.",
+          "sourceEnglish": "But you all BETRAYED us!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 326,
+          "utterer": "SAY.Dialog:BottomsUpOpening.192.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Isn't that right, Comrade Hard?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 327,
+          "utterer": "SAY.Dialog:BottomsUpOpening.194.Hard Ass",
+          "context": "",
+          "sourceEnglish": "... No.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 328,
+          "utterer": "SAY.Dialog:BottomsUpOpening.195.Hard Ass",
+          "context": "Jump to either line x or y.",
+          "sourceEnglish": "I will join the rescue mission.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 329,
+          "utterer": "SAY.Dialog:BottomsUpOpening.181.Hard Ass",
+          "context": "Branch 6.1. Evil Hard Ass WON the E6 Nightmare battle.",
+          "sourceEnglish": "The Humans are still a threat to us and our sovereignty.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 330,
+          "utterer": "SAY.Dialog:BottomsUpOpening.187.Hard Ass",
+          "context": "",
+          "sourceEnglish": "There's no point protecting this territory day in and day out if our own kind are in danger elsewhere.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 331,
+          "utterer": "SAY.Dialog:BottomsUpOpening.188.Hard Ass",
+          "context": "Jump to line z.",
+          "sourceEnglish": "We must go and stop the Humans for good.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 332,
+          "utterer": "SAY.Dialog:BottomsUpOpening.184.Hard Ass",
+          "context": "Branch 6.2. Good Hard Ass WON the E6 Nightmare battle.",
+          "sourceEnglish": "I've been killing Humans at any cost.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 333,
+          "utterer": "SAY.Dialog:BottomsUpOpening.185.Hard Ass",
+          "context": "",
+          "sourceEnglish": "And I've pushed everyone away thinking I was helping the Herd.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 334,
+          "utterer": "SAY.Dialog:BottomsUpOpening.186.Hard Ass",
+          "context": "",
+          "sourceEnglish": "I lost sight of the reason I was fighting in the first place.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 335,
+          "utterer": "SAY.Dialog:BottomsUpOpening.312.Hard Ass",
+          "context": "Jump to line z.",
+          "sourceEnglish": "Let's bring the others home.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 336,
+          "utterer": "SAY.Dialog:BottomsUpOpening.174.Thirsty Ass",
+          "context": "Branches (6.1 and 6.2) converge.",
+          "sourceEnglish": "And there's no point runnin' a bar if we ain't all here to drink from it! I'm a-comin'!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 337,
+          "utterer": "SAY.Dialog:BottomsUpOpening.479.Nice Ass",
+          "context": "The Asses start to get into the Tractor one-by-one.",
+          "sourceEnglish": "YUPPERS, we're off to save the others!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 338,
+          "utterer": "SAY.Dialog:BottomsUpOpening.164.Sad Ass",
+          "context": "This is said if Sad Ass is present.",
+          "sourceEnglish": "I'm coming too, Comrades...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 339,
+          "utterer": "SAY.Dialog:BottomsUpOpening.171.Slow Ass",
+          "context": "Jump to either line x or y.",
+          "sourceEnglish": "Sturdy, will you come with us? P-p-please?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 340,
+          "utterer": "MENU.Dialog:BottomsUpOpening.694",
+          "context": "Dialogue option 1.1.",
+          "sourceEnglish": "I refuse to leave my Foal and our Territory unprotected.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 341,
+          "utterer": "SAY.Dialog:BottomsUpOpening.697.Sturdy Ass",
+          "context": "Jump to line z.",
+          "sourceEnglish": "I refuse to leave my Foal and our Territory unprotected.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 342,
+          "utterer": "MENU.Dialog:BottomsUpOpening.695",
+          "context": "Dialogue option 1.2.",
+          "sourceEnglish": "I will NEVER trust Machines.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 343,
+          "utterer": "SAY.Dialog:BottomsUpOpening.698.Sturdy Ass",
+          "context": "Jump to line z.",
+          "sourceEnglish": "I will NEVER trust Machines.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 344,
+          "utterer": "SAY.Dialog:BottomsUpOpening.156.Sturdy Ass",
+          "context": "Previous dialogue options converge.",
+          "sourceEnglish": "Go without me—I'm sure the Gods have already given up on you.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 345,
+          "utterer": "SAY.Dialog:BottomsUpOpening.150.Nice Ass",
+          "context": "The tractor speeds off, leaving Sturdy behind. End of scene.",
+          "sourceEnglish": "Slow Ass, we gotta go!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 346,
+          "utterer": "WRITE.Dialog:Localizer.1",
+          "context": "Set the ZooWinner's name to be used in Slow's story",
+          "sourceEnglish": "Big Ass",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 347,
+          "utterer": "WRITE.Dialog:Localizer.2",
+          "context": "Set the ZooWinner's name to be used in Slow's story",
+          "sourceEnglish": "Smart Ass",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 348,
+          "utterer": "WRITE.Dialog:Localizer.3",
+          "context": "Set the ZooWinner's name to be used in Slow's story",
+          "sourceEnglish": "Slow Ass",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 349,
+          "utterer": "WRITE.Dialog:Localizer.4",
+          "context": "Set the ZooWinner's name to be used in Slow's story",
+          "sourceEnglish": "Kick Ass",
+          "translatedDutch": ""
+        }
+      ]
+    },
+    {
+      "sheetName": "E6_Church_localization",
+      "entries": [
+        {
+          "rowNumber": 2,
+          "utterer": "SAY.Dialog:Church.1.Sturdy Ass",
+          "context": "Sturdy looks at the mural on the wall of the church.",
+          "sourceEnglish": "I wonder if they ever got to where they were going...",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
+        }
+      ]
+    },
+    {
+      "sheetName": "E6_Stable2F_localization",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:OldBody.23.Sturdy Ass",
+          "context": "Sturdy over Old Ass's bones. Talking aloud.",
+          "sourceEnglish": "I hope your Soul has already been reassigned and you're leading a new Herd somewhere in the world towards a life free of suffering.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:OldBody.12.Sturdy Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "I wonder what you'd think of all that's happened...",
+          "translatedDutch": ""
+        }
+      ]
+    },
+    {
+      "sheetName": "E6_MineLift_localization",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:MineMonologue.1.{$NewName}",
+          "context": "This is said if Sturdy didn't let the Foal go into the Theatre and she didn't get the light.",
+          "sourceEnglish": "Stupid Comrade Mother not letting me go in the stupid Theatre.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:MineMonologue.5.{$NewName}",
+          "context": "This is said if Sturdy didn't let the Foal go into the Theatre and she didn't get the light.",
+          "sourceEnglish": "Uncle Bad Ass is going to be so disappointed in me that I didn't get the super important light he wanted.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:GottaFindTheThingy.2.{$NewName}",
+          "context": "This is said if Sturdy didn't let the Foal go into the Theatre and she didn't get the light.",
+          "sourceEnglish": "I gotta find something to replace that super important light he needs...",
+          "translatedDutch": ""
+        }
+      ]
+    },
+    {
+      "sheetName": "E6_BadCave_localization",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:PreComputer.2.Bad Ass",
+          "context": "The Foal enters the Bad Cave and sees Bad Ass.",
+          "sourceEnglish": "Took you long enough, kid.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:PreComputer.7.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Comrade Mother wouldn't leave...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:PreComputer.34.{$NewName}",
+          "context": "",
+          "sourceEnglish": "She kept talking about how she used to be a star.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:PreComputer.9.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I knew she'd bring up those terrible amateur productions they used to subject us to.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:PreComputer.8.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Was everything where I said it would be?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:PreComputer.10.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Yessir! I had to crawl through the broken doorway and climb through the rubble—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:PreComputer.11.Bad Ass",
+          "context": "Jump to line 10 or 12.",
+          "sourceEnglish": "Do you have the light from the Theatre?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:PreComputer.14.{$NewName}",
+          "context": "Dialogue 1.1. The Foal went into the Theatre and has the Light.",
+          "sourceEnglish": "You bet!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:PreComputer.21.Bad Ass",
+          "context": "Jump to line 32.",
+          "sourceEnglish": "Good. Screw it into the Machine.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:PreComputer.23.{$NewName}",
+          "context": "Dialogue 1.2. The Foal didn't go into the Theatre and doesn't have the Light.",
+          "sourceEnglish": "OF COURSE I DO...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:PreComputer.22.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Hm. It looks different.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:PreComputer.32.Bad Ass",
+          "context": "Jump to line 17.",
+          "sourceEnglish": "Whatever. Screw it into the Machine.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:ExitAttempt.7.Bad Ass",
+          "context": "If the Foal goes to Bad Ass before screwing in the Light.",
+          "sourceEnglish": "Be a good Assistant and do something useful.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:ExitAttempt.13.Bad Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "Leave me alone.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:Dongle.32.{$NewName}",
+          "context": "The Foal screws the Light into the Machine.",
+          "sourceEnglish": "Phew! It works!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:Dongle.18.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Why does the Mystery-Machine need this super important light from the Theatre??",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:Dongle.10.Bad Ass",
+          "context": "",
+          "sourceEnglish": "It makes the Machine look cool.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:Dongle.72.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Hey Uncle Bad Ass...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:Dongle.112.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Are you going to tell me what the Mystery-Machine is for?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:Dongle.113.Bad Ass",
+          "context": "",
+          "sourceEnglish": "No.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:Dongle.97.{$NewName}",
+          "context": "",
+          "sourceEnglish": "...I feel weird lying to Comrade Mother.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:Dongle.114.{$NewName}",
+          "context": "",
+          "sourceEnglish": "She still thinks we are playing 'Rocks' down here everyday...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:Dongle.36.Bad Ass",
+          "context": "",
+          "sourceEnglish": "She wouldn't understand.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:Dongle.39.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Hey Uncle Bad Ass...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:Dongle.100.{$NewName}",
+          "context": "",
+          "sourceEnglish": "...what were your parents like?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Dongle.38.Bad Ass",
+          "context": "",
+          "sourceEnglish": "My mother left when I was a kid and my father was a greedy capitalist asshole who worked all the time.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Dongle.42.{$NewName}",
+          "context": "",
+          "sourceEnglish": "...woah.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:Dongle.46.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I detested my father. I wish he had abandoned me instead of mum.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:Dongle.75.{$NewName}",
+          "context": "",
+          "sourceEnglish": "...your Mother abandoned you?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:Dongle.48.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I don't blame her. I'm happy she got out of this backward village.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:Dongle.47.Bad Ass",
+          "context": "",
+          "sourceEnglish": "All I've ever wanted was to get as far away from here as I could.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:Dongle.118.{$NewName}",
+          "context": "",
+          "sourceEnglish": "Where would you go?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:Dongle.86.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Mecha City.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:Dongle.77.Bad Ass",
+          "context": "",
+          "sourceEnglish": "A place that believes in science and creativity.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:Dongle.78.Bad Ass",
+          "context": "",
+          "sourceEnglish": "A place where there are no bosses or leaders.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:Dongle.79.Bad Ass",
+          "context": "",
+          "sourceEnglish": "A place for the people.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:Dongle.85.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Intelligent people.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:Dongle.80.Bad Ass",
+          "context": "",
+          "sourceEnglish": "People collectively dedicated to inventing beautiful things that will make the world a better place for everyone...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:Dongle.123.Bad Ass",
+          "context": "",
+          "sourceEnglish": "... And this Machine is going to get me there. At last.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:Dongle.126.{$NewName}",
+          "context": "",
+          "sourceEnglish": "What's wrong with here?",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:Dongle.51.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Literally everything.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:Dongle.131.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Multigenerational poverty.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:Dongle.130.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Rampant religious dogmas.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:Dongle.129.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Extreme political conservatism.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:Dongle.128.Bad Ass",
+          "context": "",
+          "sourceEnglish": "All predicated on an extractionist economy.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:Dongle.132.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Fuck.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:Dongle.134.Bad Ass",
+          "context": "",
+          "sourceEnglish": "This.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:Dongle.133.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Place.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:Dongle.135.Bad Ass",
+          "context": "Bad Ass leaves the Foal and exits the room.\nThe Foal searches for a way to power the Machine.",
+          "sourceEnglish": "Charge the machine. I'll be back.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:PostComputer.2.Bad Ass",
+          "context": "The Foal starts the Machine up. Bad Ass returns.",
+          "sourceEnglish": "Hey, what I said back there—",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:PostComputer.12.Bad Ass",
+          "context": "",
+          "sourceEnglish": "It's working...? It's really working!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:PostComputer.5.Bad Ass",
+          "context": "",
+          "sourceEnglish": "At last!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:PostComputer.13.Bad Ass",
+          "context": "Bad Ass goes into the Machine.",
+          "sourceEnglish": "Kid, if anything goes wrong, I don't want to be remembered as a fucking donkey.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:PostComputer.24.Bad Ass",
+          "context": "",
+          "sourceEnglish": "My real name is...",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "SAY.Dialog:PostComputer.11.Bad Ass",
+          "context": "The doors close on Bad Ass.",
+          "sourceEnglish": "...Cole Butte.",
+          "translatedDutch": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "fileName": "READ_ME_LocalizationManual",
+  "processedAt": "2025-08-02T22:33:14.685Z",
+  "sheets": [
+    {
+      "sheetName": "Names and World Overview",
+      "entries": [
+        {
+          "rowNumber": 2,
+          "utterer": "",
+          "context": "**Ezel",
+          "sourceEnglish": "**Slechte Ezel",
+          "translatedDutch": "**Dorstige Ezel"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "Farmer",
+          "sourceEnglish": "Merchant",
+          "translatedDutch": "Doctor"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "",
+          "context": "Boer",
+          "sourceEnglish": "Koopman",
+          "translatedDutch": "Dokter"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "",
+          "context": "Tractor",
+          "sourceEnglish": "Mill",
+          "translatedDutch": "Refrigerator"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "",
+          "context": "Tractor",
+          "sourceEnglish": "Molen",
+          "translatedDutch": "Koelkast"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "",
+          "context": "Farm",
+          "sourceEnglish": "Market",
+          "translatedDutch": "Field"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "Boerderij",
+          "sourceEnglish": "Markt",
+          "translatedDutch": "Veld"
+        }
+      ]
+    }
+  ]
+}
