@@ -845,7 +845,32 @@ const TranslationHelper: React.FC = () => {
                           const utterer = utterers[currentIndex];
                           if (!utterer) return 'Speaker';
                           const parts = utterer.split('.');
-                          return parts.length >= 4 ? parts[3] : utterer;
+                          const speakerName = parts.length >= 4 ? parts[3] : utterer;
+                          
+                          // Check if the speaker name matches any JSON entries
+                          if (highlightingJsonData) {
+                            const matches = findJsonMatches(speakerName);
+                            if (matches.length > 0) {
+                              // Sort matches by relevance (exact matches first)
+                              const sortedMatches = matches.sort((a, b) => {
+                                const aIsExact = a.sourceEnglish.toLowerCase() === speakerName.toLowerCase();
+                                const bIsExact = b.sourceEnglish.toLowerCase() === speakerName.toLowerCase();
+                                
+                                if (aIsExact && !bIsExact) return -1;
+                                if (!aIsExact && bIsExact) return 1;
+                                
+                                return b.sourceEnglish.length - a.sourceEnglish.length;
+                              });
+                              
+                              const bestMatch = sortedMatches[0];
+                              if (bestMatch.translatedDutch && bestMatch.translatedDutch.trim() !== '') {
+                                console.log('🎭 Dialogue Box Debug: Translated speaker name:', speakerName, '→', bestMatch.translatedDutch);
+                                return bestMatch.translatedDutch;
+                              }
+                            }
+                          }
+                          
+                          return speakerName;
                         })()}
                       </span>
                       <div className="flex items-center gap-2">
@@ -1205,6 +1230,12 @@ const TranslationHelper: React.FC = () => {
                       // If both are exact or both are partial, sort by length (longest first)
                       return b.sourceEnglish.length - a.sourceEnglish.length;
                     });
+                    
+                    console.log('🔧 TranslationHelper Debug: Sorted matches:', sortedMatches.map(m => ({
+                      sourceEnglish: m.sourceEnglish,
+                      translatedDutch: m.translatedDutch,
+                      category: m.category
+                    })));
                     
                     const firstMatch = sortedMatches[0];
                     console.log('🔧 TranslationHelper Debug: Using match:', firstMatch.sourceEnglish, 'for text:', sourceTexts[currentIndex]);
