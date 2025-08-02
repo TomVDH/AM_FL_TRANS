@@ -573,6 +573,59 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
+  // Function to insert translated Dutch suggestion
+  const insertTranslatedSuggestion = (translatedText: string) => {
+    const textarea = textareaRef.current;
+    
+    if (textarea) {
+      const cursorPos = textarea.selectionStart;
+      const before = currentTranslation.slice(0, cursorPos);
+      const after = currentTranslation.slice(cursorPos);
+      const newText = before + translatedText + after;
+      
+      setCurrentTranslation(newText);
+      
+      // Set cursor position after the inserted text
+      setTimeout(() => {
+        if (textarea) {
+          const newCursorPos = cursorPos + translatedText.length;
+          textarea.setSelectionRange(newCursorPos, newCursorPos);
+          textarea.focus();
+        }
+      }, 0);
+    } else {
+      // Fallback: append to the end if textarea ref is not available
+      setCurrentTranslation(prev => prev + translatedText);
+    }
+  };
+
+  // Function to insert placeholder with original English source
+  const insertPlaceholder = (originalSource: string) => {
+    const placeholderText = `(${originalSource})`;
+    const textarea = textareaRef.current;
+    
+    if (textarea) {
+      const cursorPos = textarea.selectionStart;
+      const before = currentTranslation.slice(0, cursorPos);
+      const after = currentTranslation.slice(cursorPos);
+      const newText = before + placeholderText + after;
+      
+      setCurrentTranslation(newText);
+      
+      // Set cursor position after the inserted text
+      setTimeout(() => {
+        if (textarea) {
+          const newCursorPos = cursorPos + placeholderText.length;
+          textarea.setSelectionRange(newCursorPos, newCursorPos);
+          textarea.focus();
+        }
+      }, 0);
+    } else {
+      // Fallback: append to the end if textarea ref is not available
+      setCurrentTranslation(prev => prev + placeholderText);
+    }
+  };
+
   // Copy JSON field to clipboard
   const copyJsonField = (text: string, fieldName: string) => {
     if (text) {
@@ -958,7 +1011,44 @@ const TranslationHelper: React.FC = () => {
                 <p className="text-xs text-gray-500">
                   Press Shift+Enter to submit
                 </p>
-
+                
+                {/* JSON Translation Suggestions */}
+                {jsonData && (() => {
+                  const matches = findJsonMatches(sourceTexts[currentIndex] || '');
+                  if (matches.length > 0) {
+                    const firstMatch = matches[0];
+                    return (
+                      <div className="flex flex-wrap gap-2 justify-end ml-4" style={{ maxWidth: '50%' }}>
+                        {/* Translated Dutch Suggestion */}
+                        {firstMatch.translatedDutch && firstMatch.translatedDutch.trim() !== '' && (
+                          <button
+                            onClick={() => insertTranslatedSuggestion(firstMatch.translatedDutch)}
+                            className="px-3 py-1 text-xs bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-600 hover:bg-green-200 dark:hover:bg-green-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                            style={{ 
+                              borderRadius: '3px'
+                            }}
+                            title={`Use Dutch translation: ${firstMatch.translatedDutch}`}
+                          >
+                            {firstMatch.translatedDutch}
+                          </button>
+                        )}
+                        
+                        {/* Placeholder Button */}
+                        <button
+                          onClick={() => insertPlaceholder(firstMatch.sourceEnglish)}
+                          className="px-3 py-1 text-xs bg-orange-100 dark:bg-orange-800 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-600 hover:bg-orange-200 dark:hover:bg-orange-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                          style={{ 
+                            borderRadius: '3px'
+                          }}
+                          title={`Use placeholder: (${firstMatch.sourceEnglish})`}
+                        >
+                          Placeholder
+                        </button>
+                      </div>
+                    );
+                  }
+                  return null;
+                })()}
               </div>
             </div>
           </div>
