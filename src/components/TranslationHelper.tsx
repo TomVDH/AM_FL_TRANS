@@ -837,14 +837,41 @@ const TranslationHelper: React.FC = () => {
                       background: '#000000'
                     }}
                   >
-                    <span className="text-shadow-pixel">
-                  {(() => {
-                    const utterer = utterers[currentIndex];
-                    if (!utterer) return 'Speaker';
-                    const parts = utterer.split('.');
-                    return parts.length >= 4 ? parts[3] : utterer;
-                  })()}
-                </span>
+                    <div className="flex justify-between items-center">
+                      <span className="text-shadow-pixel">
+                        {(() => {
+                          const utterer = utterers[currentIndex];
+                          if (!utterer) return 'Speaker';
+                          const parts = utterer.split('.');
+                          return parts.length >= 4 ? parts[3] : utterer;
+                        })()}
+                      </span>
+                      <div className="flex items-center gap-2">
+                        {/* Copy button for source text */}
+                        <button
+                          onClick={copySourceText}
+                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200"
+                          title="Copy source text"
+                        >
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                          </svg>
+                        </button>
+                        {/* JSON button - only show when JSON mode is active */}
+                        {jsonMode && (
+                          <button
+                            onClick={copySourceToJsonSearch}
+                            className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200"
+                            title="Search this text in JSON viewer"
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
+                            </svg>
+                          </button>
+                        )}
+                      </div>
+                    </div>
                   </div>
                   
                   {/* Main dialogue area with enhanced styling */}
@@ -858,29 +885,6 @@ const TranslationHelper: React.FC = () => {
                       background: darkMode ? '#1a1a1a' : '#ffffff'
                     }}
                   >
-                    {/* Copy button for source text */}
-                    <button
-                      onClick={copySourceText}
-                      className="absolute top-2 right-2 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                      title="Copy source text"
-                    >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                      </svg>
-                    </button>
-                    {/* JSON button - only show when JSON mode is active */}
-                    {jsonMode && (
-                      <button
-                        onClick={copySourceToJsonSearch}
-                        className="absolute top-2 right-8 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                        title="Search this text in JSON viewer"
-                      >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
-                        </svg>
-                      </button>
-                    )}
                     <TextHighlighter
                       text={sourceTexts[currentIndex]}
                       jsonData={highlightingJsonData}
