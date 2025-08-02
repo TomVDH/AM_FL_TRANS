@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import * as XLSX from 'xlsx';
+import { useDisplayModes } from '../hooks/useDisplayModes';
 
 /**
  * TranslationHelper Component
@@ -112,14 +113,19 @@ const TranslationHelper: React.FC = () => {
   const [isTranslating, setIsTranslating] = useState(false);           // Translation in progress flag
   
   // ========== Display Mode State ==========
-  // FUTURE SPLIT: DISPLAY MODES MODULE
-  // This state block should be extracted to useDisplayModes hook
-  // Components to create: DisplayModeControls, ThemeProvider, VisualModeSelector
-  // State management: darkMode, eyeMode, highlightMode, gamepadMode
-  const [darkMode, setDarkMode] = useState(false);                     // Dark mode toggle
-  const [eyeMode, setEyeMode] = useState(false);                       // Show translation instead of source
-  const [highlightMode, setHighlightMode] = useState(true);            // Toggle highlighting of codex matches
-  const [gamepadMode, setGamepadMode] = useState(false);               // Pixel dialogue box mode
+  // ✅ REFACTORED: Successfully extracted to useDisplayModes hook
+  // This demonstrates the first step of component modularization
+  // Benefits: Centralized state management, reusable across components
+  const {
+    darkMode,
+    eyeMode,
+    highlightMode,
+    gamepadMode,
+    toggleDarkMode,
+    toggleEyeMode,
+    toggleHighlightMode,
+    toggleGamepadMode,
+  } = useDisplayModes();
   
   // ========== Navigation State ==========
   // FUTURE SPLIT: PROGRESS TRACKING MODULE
@@ -495,37 +501,7 @@ const TranslationHelper: React.FC = () => {
     setGradientColors(generateGradientColors());
   }, []);
 
-  // Initialize and persist dark mode
-  // FUTURE SPLIT: DISPLAY MODES MODULE
-  // This useEffect should be extracted to useDisplayModes hook
-  // Components to create: ThemeProvider, DarkModeInitializer
-  // Dependencies: darkMode state
-  useEffect(() => {
-    // Check localStorage and system preference
-    const savedMode = localStorage.getItem('darkMode');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedMode !== null) {
-      setDarkMode(savedMode === 'true');
-    } else {
-      setDarkMode(systemPrefersDark);
-    }
-  }, []);
 
-  // Update document class and localStorage when dark mode changes
-  // FUTURE SPLIT: DISPLAY MODES MODULE
-  // This useEffect should be extracted to useDisplayModes hook
-  // Components to create: ThemeProvider, DarkModeSync
-  // Dependencies: darkMode state
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('darkMode', 'true');
-    } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('darkMode', 'false');
-    }
-  }, [darkMode]);
 
   // FUTURE SPLIT: EXCEL PROCESSING MODULE
   // This function should be extracted to useExcelProcessor hook
@@ -715,7 +691,7 @@ const TranslationHelper: React.FC = () => {
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-8 flex items-center justify-center transition-colors duration-300">
         {/* Dark Mode Toggle */}
         <button
-          onClick={() => setDarkMode(!darkMode)}
+          onClick={toggleDarkMode}
           className="fixed top-4 right-4 p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200"
           style={{ borderRadius: '3px' }}
           aria-label="Toggle dark mode"
@@ -1008,7 +984,7 @@ const TranslationHelper: React.FC = () => {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-8 transition-colors duration-300" style={{ animation: 'fadeIn 0.5s ease-out' }}>
       {/* Dark Mode Toggle */}
       <button
-        onClick={() => setDarkMode(!darkMode)}
+        onClick={toggleDarkMode}
         className="fixed top-4 right-4 p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200"
         style={{ borderRadius: '3px' }}
         aria-label="Toggle dark mode"
@@ -1267,7 +1243,7 @@ const TranslationHelper: React.FC = () => {
                   </span>
                 )}
                 <button
-                  onClick={() => setEyeMode(!eyeMode)}
+                  onClick={toggleEyeMode}
                   className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
                   title={eyeMode ? "Hide preview" : "Show preview"}
                 >
@@ -1283,7 +1259,7 @@ const TranslationHelper: React.FC = () => {
                   )}
                 </button>
                 <button
-                  onClick={() => setHighlightMode(!highlightMode)}
+                  onClick={toggleHighlightMode}
                   className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
                   title={highlightMode ? "Disable highlighting" : "Enable highlighting"}
                 >
@@ -1314,7 +1290,7 @@ const TranslationHelper: React.FC = () => {
                   )}
                 </button>
                 <button
-                  onClick={() => setGamepadMode(!gamepadMode)}
+                  onClick={toggleGamepadMode}
                   className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
                   title={gamepadMode ? "Exit game mode" : "Enter game mode"}
                 >
