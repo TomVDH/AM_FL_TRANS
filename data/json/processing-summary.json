@@ -1,0 +1,108 @@
+{
+  "processedAt": "2025-08-02T03:35:26.771Z",
+  "totalFiles": 14,
+  "successfulFiles": 14,
+  "failedFiles": 0,
+  "totalSheets": 136,
+  "totalEntries": 6265,
+  "files": [
+    {
+      "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy",
+      "success": true,
+      "sheets": 9,
+      "entries": 258,
+      "error": null
+    },
+    {
+      "fileName": "10_asses.masses_E10Proxy",
+      "success": true,
+      "sheets": 11,
+      "entries": 682,
+      "error": null
+    },
+    {
+      "fileName": "11_asses.masses_NonCSVBasedTranslations",
+      "success": true,
+      "sheets": 11,
+      "entries": 88,
+      "error": null
+    },
+    {
+      "fileName": "1_asses.masses_E1Proxy",
+      "success": true,
+      "sheets": 12,
+      "entries": 440,
+      "error": null
+    },
+    {
+      "fileName": "2_asses.masses_E2Proxy",
+      "success": true,
+      "sheets": 15,
+      "entries": 425,
+      "error": null
+    },
+    {
+      "fileName": "3_asses.masses_E3Proxy",
+      "success": true,
+      "sheets": 10,
+      "entries": 399,
+      "error": null
+    },
+    {
+      "fileName": "4_asses.masses_E4Proxy",
+      "success": true,
+      "sheets": 9,
+      "entries": 451,
+      "error": null
+    },
+    {
+      "fileName": "5_asses.masses_E5Proxy",
+      "success": true,
+      "sheets": 7,
+      "entries": 604,
+      "error": null
+    },
+    {
+      "fileName": "6_asses.masses_E6Proxy",
+      "success": true,
+      "sheets": 8,
+      "entries": 550,
+      "error": null
+    },
+    {
+      "fileName": "7_asses.masses_E7Proxy",
+      "success": true,
+      "sheets": 17,
+      "entries": 397,
+      "error": null
+    },
+    {
+      "fileName": "8_asses.masses_E8Proxy",
+      "success": true,
+      "sheets": 3,
+      "entries": 102,
+      "error": null
+    },
+    {
+      "fileName": "9_asses.masses_E9Proxy",
+      "success": true,
+      "sheets": 5,
+      "entries": 300,
+      "error": null
+    },
+    {
+      "fileName": "READ_ME_LocalizationManual",
+      "success": true,
+      "sheets": 12,
+      "entries": 1244,
+      "error": null
+    },
+    {
+      "fileName": "Translation Checklist",
+      "success": true,
+      "sheets": 7,
+      "entries": 325,
+      "error": null
+    }
+  ]
+}

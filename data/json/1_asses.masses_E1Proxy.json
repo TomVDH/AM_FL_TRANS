@@ -1,0 +1,2706 @@
+{
+  "fileName": "1_asses.masses_E1Proxy",
+  "processedAt": "2025-08-02T03:35:25.754Z",
+  "sheets": [
+    {
+      "sheetName": "E1_EpisodeTitle_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "Title screen UI.",
+          "sourceEnglish": "EPISODE ONE"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "Title screen UI.",
+          "sourceEnglish": "THE PROTEST"
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_Stable1F_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.4.Old Ass",
+          "context": "The scene fades up from black to see Old Ass giving a lecture to Trusty Ass.",
+          "sourceEnglish": "...  ...  Trusty Ass? Comrade, are you listening?"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.5.Old Ass",
+          "context": "",
+          "sourceEnglish": "Now where was I...  Right...  I was lamenting the struggles of our existence."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.7.Old Ass",
+          "context": "",
+          "sourceEnglish": "Despite thousands of years of service to Humans, our Herd has lost our work."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.8.Old Ass",
+          "context": "",
+          "sourceEnglish": "We have been reduced to spectators, while wretched Machines do OUR jobs in OUR beloved fields."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.10.Old Ass",
+          "context": "",
+          "sourceEnglish": "No longer will we suffer these INJUSTICES!"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.16.Old Ass",
+          "context": "",
+          "sourceEnglish": "It is high time the Humans remember how useful we've always been."
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.11.Old Ass",
+          "context": "",
+          "sourceEnglish": "To return to us the recognition and respect we deserve!"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.22.Old Ass",
+          "context": "",
+          "sourceEnglish": "Tomorrow we will make history with our very first PROTEST."
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.13.Old Ass",
+          "context": "",
+          "sourceEnglish": "Now young Comrade, good group morale is instrumental to a Protest."
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.17.Old Ass",
+          "context": "",
+          "sourceEnglish": "Use your skills and go check in with the Herd."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog: 1_OldAss_StartGame.18.Old Ass",
+          "context": "End of dialogue. \nTrusty is assigned the task of raising the Herd's morale.\nSturdy can run around and explore again.",
+          "sourceEnglish": "Come find me when you're done."
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog: 2_OldAss_MoraleRepeater.4.Old Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "Come back after you've talked to everyone!"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.1.Sturdy Ass",
+          "context": "Dialogue: Boosting Sturdy's Morale",
+          "sourceEnglish": "Hi Comrade Trusty."
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.2.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I pray the Gods will make sure my Foal is born with the Soul of a strong worker."
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.4.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I can't bear to think about them growing up in a world cut off from our Herd's traditions."
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.25.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "But you're right."
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.3.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "If we follow Old Ass, we can restore balance to the Farm."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.5.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Asses and Humans will work together again, without a Machine in sight!"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.10.Sturdy Ass",
+          "context": "End of dialogue. \nSturdy can run around and explore again.",
+          "sourceEnglish": "We can do it!"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.21.Sturdy Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "We can do it!"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.4.Old Ass",
+          "context": "Dialogue with Old Ass.\nAfter having talked to all the Asses in the Herd (completing the Morale task).",
+          "sourceEnglish": "Exemplary work, Comrade Trusty. Keeping up a group's morale is no easy task."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.22.Old Ass",
+          "context": "",
+          "sourceEnglish": "Tomorrow, our waiting will come to an end and we will restore our Herd to its rightful purpose."
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.7.Old Ass",
+          "context": "",
+          "sourceEnglish": "Now hit the hay, Comrade."
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.23.Old Ass",
+          "context": "End of dialogue. \nSturdy can run around and explore again.",
+          "sourceEnglish": "A well earned rest awaits you in the other room."
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.21.Old Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "I said hit the hay in the other room! One cannot protest short on sleep."
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog: STURDY_Night.1.Sturdy Ass",
+          "context": "Dialogue with Sturdy.\nAfter completing the Morale task.",
+          "sourceEnglish": "Goodnight Trusty! You really care about the Herd and it shows."
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog: STURDY_Night.19.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "*Oof!* Looks like my Foal wishes they could join the Protest tomorrow too."
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog: STURDY_Night.20.Sturdy Ass",
+          "context": "End of dialogue. \nSturdy can run around and explore again.",
+          "sourceEnglish": "Even my labour pains are in solidarity with the Herd!"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog: STURDY_Night.9.Sturdy Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "Goodnight!"
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_Farm_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Sign_TheMines_Dirty.1.Dirty Sign",
+          "context": "Interactable Object. Sign.",
+          "sourceEnglish": "Butte Industry Coal Mines"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign",
+          "context": "Interactable Object. Sign.",
+          "sourceEnglish": "364 DAYS SINCE LAST MINING ACCIDENT"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
+          "context": "Interactable Object. Sign.",
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign",
+          "context": "Interactable Object. Sign.",
+          "sourceEnglish": "To the south, our state of the art Mill and Granary."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Sign_Highway_Official.1.Official Sign",
+          "context": "Interactable Object. Sign.",
+          "sourceEnglish": "NEW Government Sponsored Highway: Connecting Urban and Rural Communities"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign",
+          "context": "Interactable Object. Sign.",
+          "sourceEnglish": "The Long Way to the Forest Shrine"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign",
+          "context": "Interactable Object. Sign.",
+          "sourceEnglish": "CLOSED FOR REPAIRS"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Sign_Mill_Fancy.1.Fancy Sign",
+          "context": "Interactable Object.",
+          "sourceEnglish": "The State of the Art Mill and Granary"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Sign_Outhouse_Shitty.1.Shitty Sign",
+          "context": "Interactable Object. Sign. Toilet",
+          "sourceEnglish": "The Outhouse"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Sign_TheStable_Old.1.Old Sign",
+          "context": "Interactable Object. Sign.",
+          "sourceEnglish": "The Heritage Stable"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Sign_TheWell_Historic.1.Historic Sign",
+          "context": "Interactable Object. Sign.",
+          "sourceEnglish": "Ya'fur's Well"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:Scarecrow.1.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "Ahh!"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:Scarecrow.2.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "It's just a scarecrow."
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog: Farmer'sHouse.1.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "It's the Farmer's house..."
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog: Farmer'sHouse.7.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "The Truck-Machine is gone. The Humans must be in the Village."
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:Tractor.1.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "It's the Tractor-Machine..."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:PreQuest_Convo.1.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "A rusty bucket..."
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.1.Thirsty Ass",
+          "context": "Thirsty (male) Bucket Quest",
+          "sourceEnglish": "This here empty trough is a damn sorry sight, Comrade."
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.3.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "It's been mighty dry these days..."
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.4.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Hell, everything from work to water's just gone and dried up!"
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.5.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Can you fetch me some water with that ol' bucket, from that ol' river up there?"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.12.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "This ol' bucket ain't gonna fill itself!"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.16.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Yeehaw! Use that bucket to get some water from that there river."
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.20.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Git that tasty water in the trough, Comrade!"
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.24.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Yeehaw! I don't know what we'd do without you, Trusty."
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.25.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "To be honest, I'd have gon' done it myself, but I wanna be right here when Nice Ass takes a break from her plowin'."
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.26.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Ever since she got laid off, and replaced by that dang Tractor-Machine, it's like she's forgotten all about me."
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.27.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "We never get to have casual sex anymore."
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.32.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "What's the point in being castrated if you can't have casual sex!"
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog: wood-PreQuest-Convo.1.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "It's a pile of wood..."
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:SlowWoodQuest.1.Slow Ass",
+          "context": "Slow (male) Wood Quest",
+          "sourceEnglish": "Trusty! I'm so p-pleased to see you!"
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:SlowWoodQuest.3.Slow Ass",
+          "context": "Note: In English, Slow Ass stutters happen on the same letters throughout the game: b, p\n\nFor some languages, a wider range or more case-by-case approach is used",
+          "sourceEnglish": "Thanks for convincing Old Ass to p-p-put me on b-bridge duty."
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:SlowWoodQuest.10.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I think you're the only one who b-believes in me."
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:SlowWoodQuest.9.Slow Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:SlowWoodQuest.8.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I have a b-bit of a p-problem though."
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:SlowWoodQuest.4.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I've run out of wood and need more to finish fixing the b-bridge b-before the P-Protest."
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:SlowWoodQuest.11.Slow Ass",
+          "context": "",
+          "sourceEnglish": "If Smart Ass finds out I'm b-behind schedule,  she'll tear me a new one."
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:SlowWoodQuest.5.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Can you b-bring me some more wood p-please?"
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:SlowWoodQuest.6.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Our p-panniers from the old days should still b-be in the Mill."
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:SlowWoodQuest.19.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I'm p-pretty sure the old p-panniers are still in the Mill."
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:SlowWoodQuest.23.Slow Ass",
+          "context": "",
+          "sourceEnglish": "You found the p-panniers! The wood I need is at the end of the road to the west."
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:SlowWoodQuest.28.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Thanks Trusty. I don't know what I'd do without you."
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:SlowWoodQuest.29.Slow Ass",
+          "context": "",
+          "sourceEnglish": "P-Please don't tell Smart Ass I'm b-behind schedule!"
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:BIG_BoostMorale.1.Big Ass",
+          "context": "Boosting Big (male) Morale",
+          "sourceEnglish": "Good afternoon, Comrade."
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:BIG_BoostMorale.2.Big Ass",
+          "context": "",
+          "sourceEnglish": "I'm fuelling up so that I can make tomorrow's Protest a huge success."
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:BIG_BoostMorale.3.Big Ass",
+          "context": "PB: It's not exactly clear why the donkeys are not eating, but we can assume it is that they are perhaps fasting in honour of Lazy's death.",
+          "sourceEnglish": "Though, I feel guilty eating all this hay when the Miners are in Mourning."
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:BIG_BoostMorale.4.Big Ass",
+          "context": "",
+          "sourceEnglish": "It must be pretty bad down in the Mines if it can stop an Ass from eating."
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:BIG_BoostMorale.5.Big Ass",
+          "context": "",
+          "sourceEnglish": "Glad I don't fit down there."
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:BIG_BoostMorale.9.Big Ass",
+          "context": "",
+          "sourceEnglish": "*munch munch munch*"
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:Nice1_TriggerPlow.3.Nice Ass",
+          "context": "Boosting Nice (female) Morale",
+          "sourceEnglish": "Hiya Comrade! Haha I'm just too excited about tomorrow!"
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:Nice1_TriggerPlow.1.Nice Ass",
+          "context": "",
+          "sourceEnglish": "And there's nothing like a good plow to settle the nerves. Come on and do a line!"
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:Nice1_TriggerPlow.19.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Let's plow again!"
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:Nice2_NoPlowIfPannier.3.Nice Ass",
+          "context": "Nice says this if the player is busy completing Slow's Wood quest and unable to plow",
+          "sourceEnglish": "Those panniers look great on you!"
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "SAY.Dialog:Nice2_NoPlowIfPannier.4.Nice Ass",
+          "context": "",
+          "sourceEnglish": "I'd totally invite you to plow with me, but you'll have to come back when you're not so busy."
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "SAY.Dialog:HARD_BoostMorale.4.Hard Ass",
+          "context": "Boosting Hard (male) Morale",
+          "sourceEnglish": "At ease, Comrade Trusty."
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "SAY.Dialog:HARD_BoostMorale.6.Hard Ass",
+          "context": "",
+          "sourceEnglish": "We Miners have decided to join Old Ass's Protest."
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "SAY.Dialog:HARD_BoostMorale.5.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Nothing we do tomorrow will send Comrade Lazy's Soul to the Astral Plane."
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "SAY.Dialog:HARD_BoostMorale.7.Hard Ass",
+          "context": "",
+          "sourceEnglish": "But, we owe it to her to abolish the Machines that killed her and to get our jobs back."
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "SAY.Dialog:HARD_BoostMorale.14.Hard Ass",
+          "context": "",
+          "sourceEnglish": "We'll stick to the plan and meet the Herd at the bridge."
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "SAY.Dialog:HARD_BoostMorale.11.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Give my best to Sad Ass."
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.2.Smart Ass",
+          "context": "Boosting Smart (female) Morale",
+          "sourceEnglish": "Trusty! I have a new one!"
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.21.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Why did Slow Ass cross the road?"
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.22.Smart Ass",
+          "context": "",
+          "sourceEnglish": "We don't know, he's still trying to get to the other side!"
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.27.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Ha!"
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.4.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Oh shut it, can't two Jennets joke around?"
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.5.Smart Ass",
+          "context": "",
+          "sourceEnglish": "I've spent all day going over the plans for the Protest:"
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.18.Smart Ass",
+          "context": "",
+          "sourceEnglish": "ONE, we run through the gate."
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.17.Smart Ass",
+          "context": "",
+          "sourceEnglish": "TWO, we meet up with the Miners and cross the bridge."
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.16.Smart Ass",
+          "context": "",
+          "sourceEnglish": "THREE, we march through the Village of Bumpkin, convince the Humans to give up their Machines."
+        },
+        {
+          "rowNumber": 73,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.23.Smart Ass",
+          "context": "",
+          "sourceEnglish": "AND GET OUR JOBS BACK!"
+        },
+        {
+          "rowNumber": 74,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.20.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Easy."
+        },
+        {
+          "rowNumber": 75,
+          "utterer": "SAY.Dialog:SMART_BoostMorale.7.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Even a Foal could pull this off."
+        },
+        {
+          "rowNumber": 76,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.3.Sad Ass",
+          "context": "Sad (male) Matches Quest",
+          "sourceEnglish": "Oh hullo Trusty...  thanks for noticing me..."
+        },
+        {
+          "rowNumber": 77,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.5.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Wish I could say 'good' afternoon...  but it's not..."
+        },
+        {
+          "rowNumber": 78,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.6.Sad Ass",
+          "context": "",
+          "sourceEnglish": "You probably forgot, but today's the anniversary of the tragic cave-in..."
+        },
+        {
+          "rowNumber": 79,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.7.Sad Ass",
+          "context": "",
+          "sourceEnglish": "The love of my life was crushed in the Mines one year ago..."
+        },
+        {
+          "rowNumber": 80,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.48.Sad Ass",
+          "context": "",
+          "sourceEnglish": "And now her Soul is stuck down there forever..."
+        },
+        {
+          "rowNumber": 81,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.8.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I still see Lazy Ass's beautiful dark grey eyes in my dreams..."
+        },
+        {
+          "rowNumber": 82,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.9.Sad Ass",
+          "context": "",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 83,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.14.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I'm holding a Vigil in her memory..."
+        },
+        {
+          "rowNumber": 84,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.47.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Bad Ass gave me this candle..."
+        },
+        {
+          "rowNumber": 85,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.10.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Could you bring me some matches for my candle...?"
+        },
+        {
+          "rowNumber": 86,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.19.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Did you find the matches? They might be in the Stable..."
+        },
+        {
+          "rowNumber": 87,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.24.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Thanks for the matches...  hope I don't burn myself..."
+        },
+        {
+          "rowNumber": 88,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.29.Sad Ass",
+          "context": "",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 89,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.51.Sad Ass",
+          "context": "After having spoken to Hard Ass, if the player speaks to Sad again",
+          "sourceEnglish": "Condolences from Hard Ass...?"
+        },
+        {
+          "rowNumber": 90,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.62.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Sometimes I wish he hadn't switched shifts with Lazy Ass that day..."
+        },
+        {
+          "rowNumber": 91,
+          "utterer": "SAY.Dialog:Sad_Quest_Matches.60.Sad Ass",
+          "context": "",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 92,
+          "utterer": "SAY.Dialog:Bad_Aft.6.Bad Ass",
+          "context": "Attempting to Boost Bad (male) Morale",
+          "sourceEnglish": "Protest? Fuck that."
+        },
+        {
+          "rowNumber": 93,
+          "utterer": "SAY.Dialog:Bad_Aft.8.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Don't get me wrong, I support addressing the systemic issues pertaining to the Ass species."
+        },
+        {
+          "rowNumber": 94,
+          "utterer": "SAY.Dialog:Bad_Aft.9.Bad Ass",
+          "context": "",
+          "sourceEnglish": "But you can't just demand your fucking jobs back."
+        },
+        {
+          "rowNumber": 95,
+          "utterer": "SAY.Dialog:Bad_Aft.10.Bad Ass",
+          "context": "",
+          "sourceEnglish": "It's technological PROGRESS, stupid."
+        },
+        {
+          "rowNumber": 96,
+          "utterer": "SAY.Dialog:Bad_Aft.11.Bad Ass",
+          "context": "",
+          "sourceEnglish": "What's the brilliant plan?"
+        },
+        {
+          "rowNumber": 97,
+          "utterer": "SAY.Dialog:Bad_Aft.12.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Gallop around the Village? Bray loudly? Hope for change?"
+        },
+        {
+          "rowNumber": 98,
+          "utterer": "SAY.Dialog:Bad_Aft.13.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Pathetic."
+        },
+        {
+          "rowNumber": 99,
+          "utterer": "SAY.Dialog:Bad_Aft.15.Bad Ass",
+          "context": "",
+          "sourceEnglish": "There's no going back to how things used to be."
+        },
+        {
+          "rowNumber": 100,
+          "utterer": "SAY.Dialog:Bad_Aft.16.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Technologies and Machines are transforming the social order."
+        },
+        {
+          "rowNumber": 101,
+          "utterer": "SAY.Dialog:Bad_Aft.17.Bad Ass",
+          "context": "",
+          "sourceEnglish": "You need more than political protest—you need philosophical transformation."
+        },
+        {
+          "rowNumber": 102,
+          "utterer": "SAY.Dialog:Bad_Aft.18.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Your concept of value and self-worth cannot and should not be defined by backward Humans from Bumpkin Village."
+        },
+        {
+          "rowNumber": 103,
+          "utterer": "SAY.Dialog:Bad_Aft.36.Bad Ass",
+          "context": "",
+          "sourceEnglish": "There's gotta be another way out of this ridiculous situation..."
+        },
+        {
+          "rowNumber": 104,
+          "utterer": "SAY.Dialog:Bad_Aft.21.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Now leave me alone."
+        },
+        {
+          "rowNumber": 105,
+          "utterer": "SAY.Dialog:Bad_Aft.23.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I said ALONE."
+        },
+        {
+          "rowNumber": 106,
+          "utterer": "SAY.Dialog:JoeyFeeding.1.Child Joey",
+          "context": "After finishing the Slow's wood quest, Grandma and Joey appear at the fence",
+          "sourceEnglish": "Grandmother! Can I feed the cute donkey?"
+        },
+        {
+          "rowNumber": 107,
+          "utterer": "SAY.Dialog:JoeyFeeding.2.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "Of course! Offer it some oats."
+        },
+        {
+          "rowNumber": 108,
+          "utterer": "SAY.Dialog:JoeyFeeding.15.Child Joey",
+          "context": "",
+          "sourceEnglish": "Here donkey!"
+        },
+        {
+          "rowNumber": 109,
+          "utterer": "MENU.Dialog:JoeyFeeding.3",
+          "context": "",
+          "sourceEnglish": "Eat the oats."
+        },
+        {
+          "rowNumber": 110,
+          "utterer": "MENU.Dialog:JoeyFeeding.4",
+          "context": "",
+          "sourceEnglish": "Refuse the oats."
+        },
+        {
+          "rowNumber": 111,
+          "utterer": "SAY.Dialog:JoeyFeeding.16.Child Joey",
+          "context": "",
+          "sourceEnglish": "He he he! That tickles."
+        },
+        {
+          "rowNumber": 112,
+          "utterer": "SAY.Dialog:JoeyFeeding.17.Child Joey",
+          "context": "If the player refuses to eat oats",
+          "sourceEnglish": "Why won't it do what I want?"
+        },
+        {
+          "rowNumber": 113,
+          "utterer": "SAY.Dialog:JoeyFeeding.18.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "Donkeys aren't very smart, honey. Come on, let's go home."
+        },
+        {
+          "rowNumber": 114,
+          "utterer": "SAY.Dialog:JoeyFeeding.24.Child Joey",
+          "context": "",
+          "sourceEnglish": "Want more, donkey?"
+        },
+        {
+          "rowNumber": 115,
+          "utterer": "MENU.Dialog:JoeyFeeding.25",
+          "context": "",
+          "sourceEnglish": "Eat the oats."
+        },
+        {
+          "rowNumber": 116,
+          "utterer": "MENU.Dialog:JoeyFeeding.26",
+          "context": "",
+          "sourceEnglish": "Refuse the oats."
+        },
+        {
+          "rowNumber": 117,
+          "utterer": "SAY.Dialog:JoeyFeeding.35.Child Joey",
+          "context": "",
+          "sourceEnglish": "Want more, donkey?"
+        },
+        {
+          "rowNumber": 118,
+          "utterer": "MENU.Dialog:JoeyFeeding.36",
+          "context": "",
+          "sourceEnglish": "Eat the oats."
+        },
+        {
+          "rowNumber": 119,
+          "utterer": "MENU.Dialog:JoeyFeeding.37",
+          "context": "",
+          "sourceEnglish": "Refuse the oats."
+        },
+        {
+          "rowNumber": 120,
+          "utterer": "SAY.Dialog:JoeyFeeding.51.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "Come along, darling. This donkey seems greedy."
+        },
+        {
+          "rowNumber": 121,
+          "utterer": "SAY.Dialog:Thirsty7_Night.4.Thirsty Ass",
+          "context": "Night dialogues, after the Morale quest is complete and the player returns outside to find the donkeys all sleeping",
+          "sourceEnglish": "... zzz... zzz..."
+        },
+        {
+          "rowNumber": 122,
+          "utterer": "SAY.Dialog:BIG_Night.5.Big Ass",
+          "context": "",
+          "sourceEnglish": "... .ZZZZZZ... ... ."
+        },
+        {
+          "rowNumber": 123,
+          "utterer": "SAY.Dialog:Bad_Night.21.Bad Ass",
+          "context": "",
+          "sourceEnglish": "... zzz..."
+        },
+        {
+          "rowNumber": 124,
+          "utterer": "SAY.Dialog:SMART_Night.5.Smart Ass",
+          "context": "",
+          "sourceEnglish": "... zzz... .zzz... ."
+        },
+        {
+          "rowNumber": 125,
+          "utterer": "SAY.Dialog:Nice3_NoPlowIfNight_Night.4.Nice Ass",
+          "context": "",
+          "sourceEnglish": "I'm usually up for a little extra night plowing, but we should get some rest before tomorrow's Protest."
+        },
+        {
+          "rowNumber": 126,
+          "utterer": "SAY.Dialog: Truck.1.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "The Truck-Machine is back..."
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_Mill_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog: PreQuest_Convo.1.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "A pair of panniers..."
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:NoisyMillMachine.1.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "The noisy Mill-Machine..."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:FreshFlour.1.Trusty Ass",
+          "context": "Interactable Object.",
+          "sourceEnglish": "Bags of fresh flour..."
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_Plowing_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog: FirstOrSecondPlow.2.Nice Ass",
+          "context": "Nice Ass and Trusty are at the starting line.",
+          "sourceEnglish": "Plowing's the easiest thing in the world, isn't it?"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog: FirstOrSecondPlow.12.Nice Ass",
+          "context": "Trusty begins to plow.",
+          "sourceEnglish": "You know what to do!"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:FinishLines.2.Nice Ass",
+          "context": "Win variation 1.1.A.",
+          "sourceEnglish": "Gosh! You're amazing Trusty!"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:FinishLines.8.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Heck, we could totally team up and show that nasty Tractor-Machine a thing or two!"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:FinishLines.9.Nice Ass",
+          "context": "",
+          "sourceEnglish": "We gotta stay in peak shape for when things go back to normal!"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:FinishLines.33.Nice Ass",
+          "context": "Jump to lines 15 and 16.",
+          "sourceEnglish": "So, want to do another line?"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:FinishLines.16.Nice Ass",
+          "context": "Win variation 1.1.B.",
+          "sourceEnglish": "Yippee!"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:FinishLines.17.Nice Ass",
+          "context": "",
+          "sourceEnglish": "That Tractor-Machine has nothing on you!"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:FinishLines.20.Nice Ass",
+          "context": "Jump to lines 15 and 16.",
+          "sourceEnglish": "Again?"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:FinishLines.36.Nice Ass",
+          "context": "Lose variation 1.2.",
+          "sourceEnglish": "Don't worry. I believe in you. Let's try again!"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:FinishLines.52.Nice Ass",
+          "context": "",
+          "sourceEnglish": "So close, Comrade!"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:FinishLines.53.Nice Ass",
+          "context": "Jump to lines 15 and 16.",
+          "sourceEnglish": "Again?"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "MENU.Dialog:FinishLines.57",
+          "context": "Option 1.1. (Play again)",
+          "sourceEnglish": "Plow again!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "MENU.Dialog:FinishLines.58",
+          "context": "Option 1.2. (Leave game)",
+          "sourceEnglish": "I've got other things to do."
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "WRITE.Dialog:Localizer.3",
+          "context": "Plow game UI.",
+          "sourceEnglish": "YOUR PLOW"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "WRITE.Dialog:Localizer.4",
+          "context": "Plow game UI.",
+          "sourceEnglish": "BEST PLOW"
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_TrustysDream_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:Wake up!.1.???",
+          "context": "Trusty's dream is interrupted by a voice.",
+          "sourceEnglish": "Trusty Ass! Wake up! WAKE UP!"
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_Stable2F_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog: PreQuest_Matches.1.Trusty Ass",
+          "context": "For Sad's Match quest",
+          "sourceEnglish": "Matches..."
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "MENU.Dialog:RestHere.2",
+          "context": "After completing the Morale quest",
+          "sourceEnglish": "Go to sleep."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "MENU.Dialog:RestHere.3",
+          "context": "",
+          "sourceEnglish": "Not yet, there's still more to do."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:STURDY_NightNameSelect.8.Sturdy Ass",
+          "context": "Sturdy asks for help",
+          "sourceEnglish": "Comrade Trusty, wait!"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:STURDY_NightNameSelect.17.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Before you sleep, could you help me with something?"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:STURDY_NightNameSelect.18.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I'm struggling to come up with a name for my Foal."
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:STURDY_NightNameSelect.19.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "If I give birth tonight, I'm worried I won't have one."
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:STURDY_NightNameSelect.20.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "What should I name them?"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "WRITE.DialogLocalizer.1",
+          "context": "The player name's the Foal",
+          "sourceEnglish": "NAME STURDY'S FOAL"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "WRITE.DialogLocalizer.8",
+          "context": "",
+          "sourceEnglish": "[name]"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "WRITE.DialogLocalizer.2",
+          "context": "English includes space before the word",
+          "sourceEnglish": "ASS"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "WRITE.DialogLocalizer.3",
+          "context": "",
+          "sourceEnglish": "Good thinking, but that name is taken!"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "WRITE.DialogLocalizer.4",
+          "context": "",
+          "sourceEnglish": "Two in a row! That name is taken too!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "WRITE.DialogLocalizer.5",
+          "context": "",
+          "sourceEnglish": "Taken! You might need to get creative."
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "WRITE.DialogLocalizer.6",
+          "context": "",
+          "sourceEnglish": "Not available! How about... 'Baby' Ass?"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "WRITE.DialogLocalizer.7",
+          "context": "",
+          "sourceEnglish": "Try a different name!"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:STURDY_NightNameSelect.24.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "{$NewName}! That's a wonderful name!"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:STURDY_NightNameSelect.25.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Thanks Comrade. Goodnight!"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:Dawn.4.Old Ass",
+          "context": "Trusty wakes up to find Old Ass dying",
+          "sourceEnglish": "Comrade!"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:Dawn.18.Old Ass",
+          "context": "",
+          "sourceEnglish": "The Humans... they came to get me in the night."
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:Dawn.17.Old Ass",
+          "context": "",
+          "sourceEnglish": "Put me in their wretched Truck-Machine..."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:Dawn.16.Old Ass",
+          "context": "",
+          "sourceEnglish": "They gave me the Needle!"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:Dawn.15.Old Ass",
+          "context": "",
+          "sourceEnglish": "But they underestimated this old Ass."
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:Dawn.14.Old Ass",
+          "context": "",
+          "sourceEnglish": "And I... I..."
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:Dawn.13.Old Ass",
+          "context": "",
+          "sourceEnglish": "I don't feel so good. Everything's getting cold..."
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Dawn.11.Old Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Dawn.10.Old Ass",
+          "context": "",
+          "sourceEnglish": "... I wish I could lead the Protest today, Trusty."
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:Dawn.9.Old Ass",
+          "context": "",
+          "sourceEnglish": "I wish I could see the faces of the Humans when they wake up to us chanting ASS POWER!"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:Dawn.8.Old Ass",
+          "context": "",
+          "sourceEnglish": "Never again will they forget how useful we Asses are!"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:Dawn.7.Old Ass",
+          "context": "",
+          "sourceEnglish": "Please young Comrade, you have to play my role now!"
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:Dawn.30.Old Ass",
+          "context": "",
+          "sourceEnglish": "Gather the Herd! Lead the Protest! Maintain the Morale!"
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:Dawn.25.Old Ass",
+          "context": "",
+          "sourceEnglish": "SHOW THE WORLD THE POWER OF THE ASS!"
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:Dawn.24.Old Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:Dawn.23.Old Ass",
+          "context": "",
+          "sourceEnglish": "Comrade..."
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:Dawn.22.Old Ass",
+          "context": "",
+          "sourceEnglish": "Trusty? Are you there?"
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:Dawn.21.Old Ass",
+          "context": "Old Ass dies",
+          "sourceEnglish": "... I'm scared."
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:Dawn.47.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "OLD ASS! NOOO!!"
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:Dawn.48.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "HEEEHAAAAAAAAAAAAW!!!"
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:Dawn.50.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Our fearless Old Ass..."
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:Dawn.51.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "He taught us everything we know."
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:Dawn.52.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "How could the Gods let this happen? What are we going to do without him...?!"
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:Dawn.53.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "And the Protest! It's supposed to start any moment now..."
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:Dawn.55.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Trusty. I know I said earlier that WE can do it, but..."
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:Dawn.56.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I can't leave Old Ass's body alone."
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:Dawn.79.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Someone has to sing the Song of Ascension to make sure his Ass Soul can reach the Astral Plane and be reassigned."
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:Dawn.57.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I'll stay with him. You lead the Herd, Comrade."
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:Dawn.58.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Go. Rally the others."
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:STURDY_DawnRepeater.8.Sturdy Ass",
+          "context": "Trusty leaves the room",
+          "sourceEnglish": "Hurry, Trusty!"
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:SturdyAloneWithOld.8.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Oh Old Ass..."
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:SturdyAloneWithOld.29.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Not a day goes by that I don't think of Lazy Ass, the beautiful child we lost."
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:SturdyAloneWithOld.23.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "I know the Gods didn't give her a Worker’s Spirit, but she was our child."
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:SturdyAloneWithOld.32.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "The Foal inside me won't replace Lazy Ass."
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:SturdyAloneWithOld.24.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "But maybe it'll be able to live the life we dreamed of..."
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:SturdyAloneWithOld.28.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "A life free of evil, soulless, job-taking, child-killing Machines."
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "SAY.Dialog:SturdyAloneWithOld.27.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "May you pass on in power to the Astral Plane, my dear Comrade."
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "SAY.Dialog:SturdyAloneWithOld.33.Sturdy Ass",
+          "context": "Sturdy sings for Old Ass",
+          "sourceEnglish": "\"{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}\""
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "SAY.Dialog:SturdyAloneWithOld.37.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "\"{color=yellow}♪  HEE HAW HI HON 'EE AH HE A'W! ♪{/color}\""
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_FarmHouseInt_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:Radio.2.Radio Host Marcos",
+          "context": "Trusty enters the Farm House and finds the radio playing an interiew with Mme. Derriere.",
+          "sourceEnglish": "*ksh* Welcome back listeners to Mecha in the Morning!"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:Radio.3.Radio Host Marcos",
+          "context": "",
+          "sourceEnglish": "We're here with Mecha City's most philanthropic and generous employer Mme. Derriere."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:Radio.7.Radio Host Marcos",
+          "context": "",
+          "sourceEnglish": "Tell us... what is the secret to your success?"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:Radio.6.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "Good morning! It's simple... success in business is all about the bottom line."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:Radio.5.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "One must embrace the hustle and bustle, but also have a product that changes lives."
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "MENU.Dialog:Radio.9",
+          "context": "",
+          "sourceEnglish": "Stop listening"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "MENU.Dialog:Radio.11",
+          "context": "",
+          "sourceEnglish": "Keep listening"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:Radio.32.Radio Host Marcos",
+          "context": "",
+          "sourceEnglish": "*ksh* My wife uses your products every morning, and I gotta say I like it too."
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:Radio.34.Radio Host Marcos",
+          "context": "",
+          "sourceEnglish": "We're over the moon! My glutes have never felt so smooth."
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:Radio.35.Radio Host Marcos",
+          "context": "",
+          "sourceEnglish": "I'm brimming with vitality and stamina."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:Radio.36.Radio Host Marcos",
+          "context": "Note: try to make a pun within the flavour :)",
+          "sourceEnglish": "And it comes in three flavours! My favourite is the Polar Mint."
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:Radio.33.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "Yes that's our bestseller! I believe that EVERYONE can use this product and reap the benefits."
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:Radio.37.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "We feed it to our dog, and our children too!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "MENU.Dialog:Radio.15",
+          "context": "",
+          "sourceEnglish": "Stop listening"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "MENU.Dialog:Radio.16",
+          "context": "",
+          "sourceEnglish": "Keep listening"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:Radio.39.Radio Host Marcos",
+          "context": "",
+          "sourceEnglish": "And now it's time for the weather update..."
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:Radio.41.Radio Host Marcos",
+          "context": "",
+          "sourceEnglish": "It's a scorcher! It's looking dry as a bone out there in the Greater Fannyside Region as the drought continues."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:Radio.42.Radio Host Marcos",
+          "context": "",
+          "sourceEnglish": "If you need a place to take the kids, get your butts to the Mecha City Zoo, or see the new show at the Big City Circus!"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "MENU.Dialog:Radio.19",
+          "context": "",
+          "sourceEnglish": "Stop listening"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "MENU.Dialog:Radio.20",
+          "context": "",
+          "sourceEnglish": "Keep listening"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:Radio.18.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Hey Trusty!"
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:Radio.22.Smart Ass",
+          "context": "",
+          "sourceEnglish": "What's going on in there?! You didn't forget about the Protest, did you?!"
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_TheatreInt_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog: Theatre.1.Trusty Ass",
+          "context": "Trusty stands on stage.",
+          "sourceEnglish": "These seats are all facing one direction."
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_TheProtest_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Sign_TheMines_Dirty.1.Dirty Sign",
+          "context": "",
+          "sourceEnglish": "Butte Industry Coal Mines"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign",
+          "context": "",
+          "sourceEnglish": "364 DAYS SINCE LAST MINING ACCIDENT"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
+          "context": "",
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign",
+          "context": "",
+          "sourceEnglish": "To the south, our state of the art Mill and Granary."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Sign_Highway_Official.1.Official Sign",
+          "context": "",
+          "sourceEnglish": "NEW Derriere Highway: Connecting Urban and Rural Communities"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign",
+          "context": "",
+          "sourceEnglish": "The Long Way to the Forest Shrine"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign",
+          "context": "",
+          "sourceEnglish": "CLOSED FOR REPAIRS"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Sign_Mill_Fancy.1.Fancy Sign",
+          "context": "",
+          "sourceEnglish": "The State of the Art Mill and Granary"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Sign_Outhouse_Shitty.1.Shitty Sign",
+          "context": "",
+          "sourceEnglish": "The Outhouse"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Sign_TheStable_Old.1.Old Sign",
+          "context": "",
+          "sourceEnglish": "The Heritage Stable"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Sign_TheWell_Historic.1.Historic Sign",
+          "context": "",
+          "sourceEnglish": "Ya'fur's Well"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:Scarecrow.1.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "Ahh!"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:Scarecrow.2.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "It's just a scarecrow."
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:Tractor.1.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "It's the Tractor-Machine..."
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:PickUpNice.3.Nice Ass",
+          "context": "Recruit Nice Ass",
+          "sourceEnglish": "Hiya Comrade! I'm ready to go!"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:PickUpNice.5.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Wait, really? But Old Ass has been here forever!"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:PickUpNice.6.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Gosh, the Humans wouldn't do that, would they?"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "MENU.Dialog:PickUpNice.7",
+          "context": "",
+          "sourceEnglish": "Assure Nice Ass that the Humans must have made a mistake."
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "MENU.Dialog:PickUpNice.21",
+          "context": "",
+          "sourceEnglish": "Tell Nice Ass that the Humans have been corrupted by the Machines."
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:PickUpNice.11.Nice Ass",
+          "context": "",
+          "sourceEnglish": "You're right Trusty! Accidents happen all the time!"
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:PickUpNice.15.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Yikes!"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:PickUpBig.28.Big Ass",
+          "context": "",
+          "sourceEnglish": "Poor Old Ass."
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:PickUpBig.29.Big Ass",
+          "context": "Recruit Big Ass",
+          "sourceEnglish": "What a massive loss. Will the Protest continue?"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "MENU.Dialog:PickUpBig.30",
+          "context": "",
+          "sourceEnglish": "Emphasize to Big Ass that he has a huge part to play in the movement."
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "MENU.Dialog:PickUpBig.31",
+          "context": "",
+          "sourceEnglish": "Point out to Big Ass that a good leader is dispensable."
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:PickUpBig.19.Big Ass",
+          "context": "",
+          "sourceEnglish": "Don't say that, Trusty. What would we do without you?"
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:PickUpBig.23.Big Ass",
+          "context": "",
+          "sourceEnglish": "Well then I'm hungry to get started!"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:PickUpThirsty.28.Thirsty Ass",
+          "context": "Recruit Thirsty Ass",
+          "sourceEnglish": "It's a damn sour swallow, but yer right. We can't let Old Ass's death be in vain."
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "MENU.Dialog:PickUpThirsty.34",
+          "context": "",
+          "sourceEnglish": "Inform Thirsty Ass that Old Ass wants the Herd to continue the Protest."
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "MENU.Dialog:PickUpThirsty.35",
+          "context": "",
+          "sourceEnglish": "Promise Thirsty Ass that Nice Ass will be there."
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:PickUpThirsty.33.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "*gulp*"
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:PickUpThirsty.20.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "...but I don't see Nice Ass nowhere...?"
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:PickUpThirsty.24.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "YEEEHAAWWW I'M IN!"
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:PickUpSmart.28.Smart Ass",
+          "context": "Recruit Smart Ass",
+          "sourceEnglish": "Whaa? Old Ass is dead!? And YOU'RE in charge?"
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:PickUpSmart.29.Smart Ass",
+          "context": "",
+          "sourceEnglish": "No offence Trusty, but you're a listener not a leader!"
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "MENU.Dialog:PickUpSmart.30",
+          "context": "",
+          "sourceEnglish": "Admit to Smart Ass the Herd is lucky to have such an Ace Strategist."
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "MENU.Dialog:PickUpSmart.31",
+          "context": "",
+          "sourceEnglish": "Confide in Smart Ass that you really need her support right now."
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:PickUpSmart.19.Smart Ass",
+          "context": "",
+          "sourceEnglish": "You could have at least admitted how lucky you are to have such an Ace Strategist."
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:PickUpSmart.23.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Ha! You're damn right."
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog: SAD_Dawn.1.Sad Ass",
+          "context": "Attempt to recruit Sad Ass",
+          "sourceEnglish": "Not Old Ass... I’m sorry Trusty. Things have gone from bad to worse..."
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog: SAD_Dawn.3.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I think you should postpone the Protest..."
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog: SAD_Dawn.4.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I wouldn't go if I were you..."
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "MENU.Dialog: SAD_Dawn.20",
+          "context": "",
+          "sourceEnglish": "Politely suggest that Sad Ass should suck it up."
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "MENU.Dialog: SAD_Dawn.21",
+          "context": "",
+          "sourceEnglish": "Commiserate with Sad Ass over all that has been lost."
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog: SAD_Dawn.7.Sad Ass",
+          "context": "",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog: SAD_Dawn.26.Sad Ass",
+          "context": "",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog: BAD_Dawn.4.Bad Ass",
+          "context": "Attempt to recruit Bad Ass",
+          "sourceEnglish": "Fuck no."
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog: BAD_Dawn.13.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Get out of my face."
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:2_Dialog: FarmComradesRecruited.1.Big Ass",
+          "context": "After recruiting Nice, Big, Thirsty, Smart",
+          "sourceEnglish": "That's everyone. Now to the gate!"
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.8.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "They need to be reminded of how darn useful our labour truly is!"
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.9.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "They've been takin' away our livelihood, and giving us the ding dang Needle!"
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.10.Big Ass",
+          "context": "",
+          "sourceEnglish": "Asses have always been the backbone of this Farm since time immemorial."
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.11.Big Ass",
+          "context": "",
+          "sourceEnglish": "The weight of history is on our shoulders..."
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.13.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Here's the Plan!"
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.21.Smart Ass",
+          "context": "",
+          "sourceEnglish": "ONE, we run through this gate."
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.20.Smart Ass",
+          "context": "",
+          "sourceEnglish": "TWO, we cross the bridge with the Miners."
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.19.Smart Ass",
+          "context": "",
+          "sourceEnglish": "THREE, we march through the Village, convince the Humans to give up their Machines..."
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.52.Smart Ass",
+          "context": "",
+          "sourceEnglish": "AND GET OUR JOBS BACK!"
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.18.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Easy."
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.22.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Trusty?"
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.26.Nice Ass",
+          "context": "",
+          "sourceEnglish": "What were Old Ass's last words? Perhaps they will inspire us!"
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "MENU.Dialog:3_Dialog: HesitationAtGate.30",
+          "context": "",
+          "sourceEnglish": "Old Ass died saying: \"I'm scared.\""
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "MENU.Dialog:3_Dialog: HesitationAtGate.29",
+          "context": "",
+          "sourceEnglish": "Old Ass died saying: \"Show the world the power of the Ass!\""
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.36.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Thanks Trusty, that's exactly what we needed to hear!"
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.35.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Spoken like a true Ass. YEEHAW!"
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.34.Big Ass",
+          "context": "",
+          "sourceEnglish": "A grand idea."
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.33.Smart Ass",
+          "context": "",
+          "sourceEnglish": "That's catchy."
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.44.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Dang."
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.43.Big Ass",
+          "context": "",
+          "sourceEnglish": "What an empty feeling..."
+        },
+        {
+          "rowNumber": 73,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.42.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Yikes!"
+        },
+        {
+          "rowNumber": 74,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.41.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "Old Ass died saying: \"I'm scared.\""
+        },
+        {
+          "rowNumber": 75,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.129.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Sheesh..."
+        },
+        {
+          "rowNumber": 76,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.130.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "Old Ass died saying: \"Show the world the power of the Ass!\""
+        },
+        {
+          "rowNumber": 77,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.128.Big Ass",
+          "context": "",
+          "sourceEnglish": "But the Humans have belittled us."
+        },
+        {
+          "rowNumber": 78,
+          "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.137.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Let's break through this gate and cross the bridge!"
+        },
+        {
+          "rowNumber": 79,
+          "utterer": "SAY.Dialog:PickUpSlow.3.Slow Ass",
+          "context": "Recruit Slow Ass",
+          "sourceEnglish": "Sorry Comrades. I've been doing my b-best."
+        },
+        {
+          "rowNumber": 80,
+          "utterer": "SAY.Dialog:PickUpSlow.4.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I stayed up all night b-but haven't finished fixing the b-bridge yet."
+        },
+        {
+          "rowNumber": 81,
+          "utterer": "SAY.Dialog:PickUpSlow.6.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "DAMN! The Protest is ruined!"
+        },
+        {
+          "rowNumber": 82,
+          "utterer": "SAY.Dialog:PickUpSlow.9.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Shut up and calm down."
+        },
+        {
+          "rowNumber": 83,
+          "utterer": "SAY.Dialog:PickUpSlow.10.Smart Ass",
+          "context": "",
+          "sourceEnglish": "No offence Slow Ass, but I knew this would happen when Old Ass put you on bridge duty."
+        },
+        {
+          "rowNumber": 84,
+          "utterer": "SAY.Dialog:PickUpSlow.11.Smart Ass",
+          "context": "",
+          "sourceEnglish": "So I made a Plan B:"
+        },
+        {
+          "rowNumber": 85,
+          "utterer": "SAY.Dialog:PickUpSlow.13.Slow Ass",
+          "context": "",
+          "sourceEnglish": "*p-phew*"
+        },
+        {
+          "rowNumber": 86,
+          "utterer": "SAY.Dialog:PickUpSlow.15.Smart Ass",
+          "context": "",
+          "sourceEnglish": "ONE, we take the LONG way around to the NORTH."
+        },
+        {
+          "rowNumber": 87,
+          "utterer": "SAY.Dialog:PickUpSlow.16.Smart Ass",
+          "context": "",
+          "sourceEnglish": "TWO, we meet up with the Miners and enter the Village from the EAST."
+        },
+        {
+          "rowNumber": 88,
+          "utterer": "SAY.Dialog:PickUpSlow.17.Smart Ass",
+          "context": "",
+          "sourceEnglish": "THREE, we march through the Village, convince the Humans to give up their Machines..."
+        },
+        {
+          "rowNumber": 89,
+          "utterer": "SAY.Dialog:PickUpSlow.18.Smart Ass",
+          "context": "",
+          "sourceEnglish": "AND GET OUR JOBS BACK!"
+        },
+        {
+          "rowNumber": 90,
+          "utterer": "SAY.Dialog:PickUpSlow.19.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Easy."
+        },
+        {
+          "rowNumber": 91,
+          "utterer": "SAY.Dialog:PickUpSlow.21.Slow Ass",
+          "context": "",
+          "sourceEnglish": "The long way? Okay... b-but I won't b-be able to move as fast as everyone else due to my p-painful arthritis..."
+        },
+        {
+          "rowNumber": 92,
+          "utterer": "SAY.Dialog:PickUpSlow.22.Slow Ass",
+          "context": "",
+          "sourceEnglish": "B-but I p-promise I'll do my b-b-best!"
+        },
+        {
+          "rowNumber": 93,
+          "utterer": "SAY.Dialog:PickUpKick.4.Kick Ass",
+          "context": "Recruit Kick Ass and Sick Ass",
+          "sourceEnglish": "You must be TRUSTY!"
+        },
+        {
+          "rowNumber": 94,
+          "utterer": "SAY.Dialog:PickUpKick.16.Kick Ass",
+          "context": "",
+          "sourceEnglish": "I'm KICK ASS and this is my Sister SICK ASS!"
+        },
+        {
+          "rowNumber": 95,
+          "utterer": "SAY.Dialog:PickUpKick.3.Sick Ass",
+          "context": "",
+          "sourceEnglish": "*COUGH*"
+        },
+        {
+          "rowNumber": 96,
+          "utterer": "SAY.Dialog:PickUpKick.5.Kick Ass",
+          "context": "",
+          "sourceEnglish": "What happened to meeting AT THE BRIDGE?!"
+        },
+        {
+          "rowNumber": 97,
+          "utterer": "SAY.Dialog:PickUpKick.6.Kick Ass",
+          "context": "",
+          "sourceEnglish": "Wait—where's OLD ASS?!"
+        },
+        {
+          "rowNumber": 98,
+          "utterer": "SAY.Dialog:PickUpKick.17.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "They gave him the ding dang Needle!"
+        },
+        {
+          "rowNumber": 99,
+          "utterer": "SAY.Dialog:PickUpKick.7.Kick Ass",
+          "context": "",
+          "sourceEnglish": "@#$%&! That makes me SO ANGRY!"
+        },
+        {
+          "rowNumber": 100,
+          "utterer": "SAY.Dialog:PickUpKick.8.Sick Ass",
+          "context": "",
+          "sourceEnglish": "*COUGH*"
+        },
+        {
+          "rowNumber": 101,
+          "utterer": "SAY.Dialog:PickUpKick.28.Kick Ass",
+          "context": "",
+          "sourceEnglish": "LET'S PROTEST!"
+        },
+        {
+          "rowNumber": 102,
+          "utterer": "SAY.Dialog:PickUpHard.3.Hard Ass",
+          "context": "Recruit Hard Ass",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 103,
+          "utterer": "SAY.Dialog:PickUpHard.4.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Old Ass got the Needle?"
+        },
+        {
+          "rowNumber": 104,
+          "utterer": "SAY.Dialog:PickUpHard.5.Hard Ass",
+          "context": "",
+          "sourceEnglish": "I know how difficult it is to watch a Comrade die, even if they will one day be reborn."
+        },
+        {
+          "rowNumber": 105,
+          "utterer": "SAY.Dialog:PickUpHard.6.Hard Ass",
+          "context": "",
+          "sourceEnglish": "We Miners have a saying:"
+        },
+        {
+          "rowNumber": 106,
+          "utterer": "SAY.Dialog:PickUpHard.7.Hard Ass",
+          "context": "",
+          "sourceEnglish": "\"You only hit rock bottom when you quit.\""
+        },
+        {
+          "rowNumber": 107,
+          "utterer": "SAY.Dialog:PickUpHard.9.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Let's go."
+        },
+        {
+          "rowNumber": 108,
+          "utterer": "SAY.Dialog:1_Dialog: MoreComradesRequired.1.Nice Ass",
+          "context": "Said if the player tries to go ahead before recruiting everyone",
+          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind."
+        },
+        {
+          "rowNumber": 109,
+          "utterer": "SAY.Dialog:NoComradesLeftBehind_Slow.1.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind."
+        },
+        {
+          "rowNumber": 110,
+          "utterer": "SAY.Dialog:NoComradesLeftBehind_Kick.1.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind."
+        },
+        {
+          "rowNumber": 111,
+          "utterer": "SAY.Dialog:NoComradesLeftBehind_Hard.1.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Old Ass wouldn’t want us to leave anyone behind."
+        },
+        {
+          "rowNumber": 112,
+          "utterer": "SAY.Dialog:AssPowerChant.56.Trusty Ass",
+          "context": "Protest Chant based on whether Trusty tells the truth of Old's last words or lies",
+          "sourceEnglish": "The Herd's Morale is low, now is the time to SAY something..."
+        },
+        {
+          "rowNumber": 113,
+          "utterer": "SAY.Dialog:AssPowerChant.57.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "REMEMBER OLD ASS'S PARTING WORDS:"
+        },
+        {
+          "rowNumber": 114,
+          "utterer": "SAY.Dialog:AssPowerChant.22.Trusty Ass",
+          "context": "If lies",
+          "sourceEnglish": "SHOW THE WORLD THE POWER OF THE ASS!"
+        },
+        {
+          "rowNumber": 115,
+          "utterer": "SAY.Dialog:AssPowerChant.23.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "WHEN I SAY ASS, YOU SAY POWER!"
+        },
+        {
+          "rowNumber": 116,
+          "utterer": "SAY.Dialog:AssPowerChant.24.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "ASS!"
+        },
+        {
+          "rowNumber": 117,
+          "utterer": "SAY.Dialog:AssPowerChant.25.The Masses",
+          "context": "",
+          "sourceEnglish": "POWER!"
+        },
+        {
+          "rowNumber": 118,
+          "utterer": "SAY.Dialog:AssPowerChant.60.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "ASS!"
+        },
+        {
+          "rowNumber": 119,
+          "utterer": "SAY.Dialog:AssPowerChant.61.The Masses",
+          "context": "",
+          "sourceEnglish": "POWER!"
+        },
+        {
+          "rowNumber": 120,
+          "utterer": "SAY.Dialog:AssPowerChant.44.Trusty Ass",
+          "context": "If tells the truth",
+          "sourceEnglish": "Let me hear you say... DON'T BE SCARED!"
+        },
+        {
+          "rowNumber": 121,
+          "utterer": "SAY.Dialog:AssPowerChant.45.The Masses",
+          "context": "",
+          "sourceEnglish": "DON'T BE SCARED!"
+        },
+        {
+          "rowNumber": 122,
+          "utterer": "SAY.Dialog: Highway.1.The Masses",
+          "context": "",
+          "sourceEnglish": "Trusty Ass? Where are you going? The Village isn't that way."
+        },
+        {
+          "rowNumber": 123,
+          "utterer": "SAY.Dialog: This is a Revolution!.3.The Masses",
+          "context": "The Herd arrives at the Village",
+          "sourceEnglish": "THIS IS A PROTEST!"
+        },
+        {
+          "rowNumber": 124,
+          "utterer": "SAY.Dialog: This is a Revolution!.5.The Masses",
+          "context": "",
+          "sourceEnglish": "RESPECT OUR HISTORY!"
+        },
+        {
+          "rowNumber": 125,
+          "utterer": "SAY.Dialog: This is a Revolution!.1.The Masses",
+          "context": "",
+          "sourceEnglish": "RESPECT ASS CULTURE!"
+        },
+        {
+          "rowNumber": 126,
+          "utterer": "SAY.Dialog: This is a Revolution!.6.The Masses",
+          "context": "",
+          "sourceEnglish": "GIVE US OUR JOBS BACK!"
+        },
+        {
+          "rowNumber": 127,
+          "utterer": "SAY.Dialog:AttemptToExitVillage.1.The Masses",
+          "context": "",
+          "sourceEnglish": "Trusty Ass! Where are you going?"
+        },
+        {
+          "rowNumber": 128,
+          "utterer": "SAY.Dialog: FindTheWellConvo.3.Nice Ass",
+          "context": "They realize the village is on fire and the Humans are burning alive",
+          "sourceEnglish": "Gosh, did the Protest start without us?!"
+        },
+        {
+          "rowNumber": 129,
+          "utterer": "SAY.Dialog: FindTheWellConvo.1.Hard Ass",
+          "context": "",
+          "sourceEnglish": "That smell, those screams—who did this?"
+        },
+        {
+          "rowNumber": 130,
+          "utterer": "SAY.Dialog: FindTheWellConvo.2.Smart Ass",
+          "context": "",
+          "sourceEnglish": "This wasn't the Plan! We're here to get work, not burn the employers!"
+        },
+        {
+          "rowNumber": 131,
+          "utterer": "SAY.Dialog: FindTheWellConvo.12.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "I used to work 'round here in the ol' days! There's a WELL nearby!"
+        },
+        {
+          "rowNumber": 132,
+          "utterer": "SAY.Dialog: FindTheWellConvo.16.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "YEEHAW! I can taste it! Let's git some water and put out these dang fires!"
+        },
+        {
+          "rowNumber": 133,
+          "utterer": "SAY.Dialog: FindTheWellConvo.15.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "C'mon, git CRACKIN'!"
+        },
+        {
+          "rowNumber": 134,
+          "utterer": "SAY.Dialog:VillageWaterDialogWest.2.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "Thirsty thinks it'd be easier to get water from the Well."
+        },
+        {
+          "rowNumber": 135,
+          "utterer": "SAY.Dialog:VillageWaterDialogSouth.2.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "Thirsty thinks it'd be easier to get water from the Well!"
+        },
+        {
+          "rowNumber": 136,
+          "utterer": "SAY.Dialog: WellScene.50.Smart Ass",
+          "context": "The Herd finds the Well",
+          "sourceEnglish": "Come on everyone, put out the fire with the Well water!"
+        },
+        {
+          "rowNumber": 137,
+          "utterer": "SAY.Dialog: WellScene.86.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Aw shucks. There's no dang water in the damn Well!"
+        },
+        {
+          "rowNumber": 138,
+          "utterer": "SAY.Dialog: WellScene.55.Big Ass",
+          "context": "",
+          "sourceEnglish": "{vpunch=100,0.75}UH OH!"
+        },
+        {
+          "rowNumber": 139,
+          "utterer": "SAY.Dialog: WellScene.10.Nice Ass",
+          "context": "",
+          "sourceEnglish": "How are we gonna rescue the Humans?"
+        },
+        {
+          "rowNumber": 140,
+          "utterer": "SAY.Dialog: WellScene.63.Hard Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 141,
+          "utterer": "SAY.Dialog: WellScene.66.Kick Ass",
+          "context": "",
+          "sourceEnglish": "@#$%&! What do we DO?!"
+        },
+        {
+          "rowNumber": 142,
+          "utterer": "SAY.Dialog: WellScene.58.Sick Ass",
+          "context": "",
+          "sourceEnglish": "*COUGH COUGH*"
+        },
+        {
+          "rowNumber": 143,
+          "utterer": "SAY.Dialog: WellScene.92.Slow Ass",
+          "context": "",
+          "sourceEnglish": "P-please everyone! Trusty will know what to do!"
+        },
+        {
+          "rowNumber": 144,
+          "utterer": "SAY.Dialog: WellScene.91.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Right Trusty?"
+        },
+        {
+          "rowNumber": 145,
+          "utterer": "MENU.Dialog: WellScene.83",
+          "context": "Trusty chooses how to respond",
+          "sourceEnglish": "Be transparent and admit to the Masses that you don't know what to do."
+        },
+        {
+          "rowNumber": 146,
+          "utterer": "MENU.Dialog: WellScene.84",
+          "context": "",
+          "sourceEnglish": "Rise to the occasion, open your mouth, and deliver a stirring speech."
+        },
+        {
+          "rowNumber": 147,
+          "utterer": "MENU.Dialog: WellScene.85",
+          "context": "",
+          "sourceEnglish": "Solemnly assume the Traditional Ass Posture that has inspired Herds for generations."
+        },
+        {
+          "rowNumber": 148,
+          "utterer": "SAY.Dialog: WellScene.104.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "I've analyzed the situation and—"
+        },
+        {
+          "rowNumber": 149,
+          "utterer": "SAY.Dialog: WellScene.105.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "In the beginning there was Ass. Now there is..."
+        },
+        {
+          "rowNumber": 150,
+          "utterer": "SAY.Dialog: WellScene.106.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "Ahem—"
+        },
+        {
+          "rowNumber": 151,
+          "utterer": "SAY.Dialog: WellScene.93.Trusty Ass",
+          "context": "Trusty falls into the well and dies",
+          "sourceEnglish": "Whoops!"
+        },
+        {
+          "rowNumber": 152,
+          "utterer": "SAY.Dialog: WellScene.81.Slow Ass",
+          "context": "",
+          "sourceEnglish": "{s}{s=5}COMRADE!!! {/s}"
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_RedFields_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "3D Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed tempus metus nec neque ullam corper pulvinar. Pellen tesque dignissim, sapien eget pretium euismod qu.",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:PreMateChosen.1.Happy Ass",
+          "context": "Dialogue with the Asses on the Astral Plane.",
+          "sourceEnglish": "Hello Newbie!"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:PreMateChosen.7.Happy Ass",
+          "context": "",
+          "sourceEnglish": "We're here to help with your welcome ritual."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:PreMateChosen.4.Happy Ass",
+          "context": "",
+          "sourceEnglish": "Which one of us will you choose?"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "MENU.Dialog:PreMateChosen.14",
+          "context": "Option 1.1.",
+          "sourceEnglish": "Spicy Ass"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "MENU.Dialog:PreMateChosen.19",
+          "context": "Option 1.2.",
+          "sourceEnglish": "Happy Ass"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "MENU.Dialog:PreMateChosen.18",
+          "context": "Option 1.3.",
+          "sourceEnglish": "Dirty Ass"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "MENU.Dialog:PreMateChosen.17",
+          "context": "Option 1.4.",
+          "sourceEnglish": "Hairy Ass"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "MENU.Dialog:PreMateChosen.16",
+          "context": "Option 1.5.",
+          "sourceEnglish": "Ugly Ass"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "MENU.Dialog:PreMateChosen.15",
+          "context": "Option 1.6.",
+          "sourceEnglish": "**** Ass"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:PreMateChosen.10.Happy Ass",
+          "context": "After the player has chosen their partner for the welcome ritual.",
+          "sourceEnglish": "Great choice, Newbie."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:PreMateChosen.11.Happy Ass",
+          "context": "End of dialogue and into the sex rhythm game.",
+          "sourceEnglish": "Follow your instincts and feel the love!"
+        }
+      ]
+    },
+    {
+      "sheetName": "E1_TheSex_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.DialogLocalizer.1",
+          "context": "Sex rhythm game UI.",
+          "sourceEnglish": "PLEASURE:"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.DialogLocalizer.2",
+          "context": "Sex rhythm game UI.",
+          "sourceEnglish": "CHAIN"
+        }
+      ]
+    }
+  ]
+}

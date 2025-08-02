@@ -1,0 +1,589 @@
+{
+  "fileName": "11_asses.masses_NonCSVBasedTranslations",
+  "processedAt": "2025-08-02T03:35:25.595Z",
+  "sheets": [
+    {
+      "sheetName": "Other Translations",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Mu",
+          "context": "Scene",
+          "sourceEnglish": "Item"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "na",
+          "context": "",
+          "sourceEnglish": "Foal Name Controller"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "1",
+          "context": "Farm",
+          "sourceEnglish": "Sign_FannysideFlour"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "1",
+          "context": "Farm",
+          "sourceEnglish": "Sign_FannysideFlourBurned"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "1",
+          "context": "Stable2f",
+          "sourceEnglish": "Inelligble Foal Names"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "1",
+          "context": "TheProtest",
+          "sourceEnglish": "Sign_BumpkinVillage"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "1",
+          "context": "Fannyside",
+          "sourceEnglish": "Sign_MineName"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "1",
+          "context": "TheWell",
+          "sourceEnglish": "Loading"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "1",
+          "context": "TheWell",
+          "sourceEnglish": "Flashing text"
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "1",
+          "context": "TheSex",
+          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "1",
+          "context": "TheSex",
+          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "1",
+          "context": "TheSex",
+          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "1",
+          "context": "TheSex",
+          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "1",
+          "context": "TheSex",
+          "sourceEnglish": "Sex Accuracy PopUp: Meh"
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "1",
+          "context": "TheFarm",
+          "sourceEnglish": "Stable Sign"
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "1",
+          "context": "TheFarm",
+          "sourceEnglish": "Mill Sign"
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "1",
+          "context": "The Protest",
+          "sourceEnglish": "Theatre Sign"
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "3",
+          "context": "E3_100",
+          "sourceEnglish": "CircusAds in newspaper"
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "",
+          "context": "",
+          "sourceEnglish": "Zoo Name"
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "3",
+          "context": "E3_100",
+          "sourceEnglish": "Job Ad Derriere Name"
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "3",
+          "context": "E3_LazysGrave",
+          "sourceEnglish": "Wallet"
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "3",
+          "context": "E3_LazysGrave",
+          "sourceEnglish": "Wallet"
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "4",
+          "context": "Goodbye",
+          "sourceEnglish": "Song of Ascension phonemes"
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "5",
+          "context": "Hwy",
+          "sourceEnglish": "Derriere Truck Sign"
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "5",
+          "context": "Hwy",
+          "sourceEnglish": "Boredom is Freedom"
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "5",
+          "context": "Hwy",
+          "sourceEnglish": "Prophet Sign"
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "5",
+          "context": "Hwy",
+          "sourceEnglish": "Jack's Diner"
+        },
+        {
+          "rowNumber": 73,
+          "utterer": "5",
+          "context": "Hwy",
+          "sourceEnglish": "Gas sign"
+        },
+        {
+          "rowNumber": 74,
+          "utterer": "6",
+          "context": "World",
+          "sourceEnglish": "Slow Story Derriere Name"
+        },
+        {
+          "rowNumber": 75,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Derriere Assorted Meats Sign"
+        },
+        {
+          "rowNumber": 76,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Enlightenment Solutions"
+        },
+        {
+          "rowNumber": 77,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "ProgressLabs"
+        },
+        {
+          "rowNumber": 78,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Mecha City Art Gallery"
+        },
+        {
+          "rowNumber": 79,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Centre for Social Justice"
+        },
+        {
+          "rowNumber": 80,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Aspire"
+        },
+        {
+          "rowNumber": 81,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Green Future"
+        },
+        {
+          "rowNumber": 82,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Mecha City Research Centre"
+        },
+        {
+          "rowNumber": 83,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Mecha U Aspire to Excellence"
+        },
+        {
+          "rowNumber": 84,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Institute for Progress"
+        },
+        {
+          "rowNumber": 85,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Derriere Law Firm and Associates"
+        },
+        {
+          "rowNumber": 86,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Derriere Innovation Hub"
+        },
+        {
+          "rowNumber": 87,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Ms. Fission"
+        },
+        {
+          "rowNumber": 88,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Red D"
+        },
+        {
+          "rowNumber": 89,
+          "utterer": "7",
+          "context": "Opening",
+          "sourceEnglish": "Gold D"
+        },
+        {
+          "rowNumber": 90,
+          "utterer": "7",
+          "context": "BigBattle",
+          "sourceEnglish": "Robotics"
+        },
+        {
+          "rowNumber": 91,
+          "utterer": "9",
+          "context": "Ripping",
+          "sourceEnglish": "Jack's dinner background"
+        },
+        {
+          "rowNumber": 92,
+          "utterer": "9",
+          "context": "Ripping",
+          "sourceEnglish": "MIT letter acceptance letter"
+        },
+        {
+          "rowNumber": 93,
+          "utterer": "9",
+          "context": "Ripping",
+          "sourceEnglish": "MIT letter being burned"
+        },
+        {
+          "rowNumber": 94,
+          "utterer": "9",
+          "context": "Ripping",
+          "sourceEnglish": "Song of Ascension"
+        },
+        {
+          "rowNumber": 96,
+          "utterer": "9",
+          "context": "Ripping",
+          "sourceEnglish": "Flashing text"
+        },
+        {
+          "rowNumber": 103,
+          "utterer": "10",
+          "context": "ProphetSpeech",
+          "sourceEnglish": "Manual backups for Manifesto"
+        },
+        {
+          "rowNumber": 104,
+          "utterer": "",
+          "context": "",
+          "sourceEnglish": "NOTE: These are for if something happens and the game crashes between the Government Manifesto and the Prophet Speech, these will be used for the Manifesto speech at the end."
+        }
+      ]
+    },
+    {
+      "sheetName": "E10_Words_English",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "massace",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "the spark",
+          "context": "",
+          "sourceEnglish": "the inevitable"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "the Machine Prophet",
+          "sourceEnglish": "and the asses from Fannyside"
+        }
+      ]
+    },
+    {
+      "sheetName": "E10_Words_Japanese",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "マス",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "火花",
+          "context": "",
+          "sourceEnglish": "必然"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "機械預言者",
+          "sourceEnglish": "そしてファニーサイドのロバたち"
+        }
+      ]
+    },
+    {
+      "sheetName": "E10_Words_Espanol",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "una masacre",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "la chispa",
+          "context": "",
+          "sourceEnglish": "lo inevitable"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "la Máquina-Profeta",
+          "sourceEnglish": "y los asnos de Las Posaderas"
+        }
+      ]
+    },
+    {
+      "sheetName": "E10_Words_French",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "massacre",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "l'étincelle",
+          "context": "",
+          "sourceEnglish": "l'inévitable"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "la Machine-Prophète",
+          "sourceEnglish": "et les ânes de Niquedouille"
+        }
+      ]
+    },
+    {
+      "sheetName": "E10_Words_Portuguese",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "massacre",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "a faísca",
+          "context": "",
+          "sourceEnglish": "o invitável"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "a Profeta-Máquina",
+          "sourceEnglish": "e os Asnos de Santa Caipira"
+        }
+      ]
+    },
+    {
+      "sheetName": "E10_Words_Italian",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "massacro",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "la scintilla",
+          "context": "",
+          "sourceEnglish": "l'inevitabile"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "la Macchina-Profeta",
+          "sourceEnglish": "e gli Asini di Culonia"
+        }
+      ]
+    },
+    {
+      "sheetName": "E10_Words_German",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "Massaker",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "der Funke",
+          "context": "",
+          "sourceEnglish": "das Unvermeidliche"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "die Prophet-Maschine",
+          "sourceEnglish": "und die Esel von Po-der-Welt"
+        }
+      ]
+    },
+    {
+      "sheetName": "E10_Words_Turkish",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "massace",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "the spark",
+          "context": "",
+          "sourceEnglish": "the inevitable"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "the Machine Prophet",
+          "sourceEnglish": "and the asses from Fannyside"
+        }
+      ]
+    },
+    {
+      "sheetName": "E10_Words_Catalan",
+      "entries": [
+        {
+          "rowNumber": 3,
+          "utterer": "",
+          "context": "massacre",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "la guspira",
+          "context": "",
+          "sourceEnglish": "l'inevitable"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "",
+          "context": "la Màquina Profeta",
+          "sourceEnglish": "i els ases de Talldevall"
+        }
+      ]
+    },
+    {
+      "sheetName": "FONT Tracker",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "UTF CODES (VERY IMPORTANT!)",
+          "context": "",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "20-7E,A0-BB,BF-C4,C6-DD,DF-EF,F1-FD,FF,11E-11F,130-131,15E-15F,2010-2015,2018-2027,2030,2038-203E,2043,2047,204B,204E-204F,2056,20AC,2122,25A1",
+          "context": "",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "Fonts",
+          "context": "Status",
+          "sourceEnglish": "S-sedilla"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "Reactor7",
+          "context": "Done",
+          "sourceEnglish": "x"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "Beth Ellen",
+          "context": "Done",
+          "sourceEnglish": "x"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "GreenwichMean",
+          "context": "Done",
+          "sourceEnglish": "x"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "Philosopher",
+          "context": "Done",
+          "sourceEnglish": "x"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "DOS",
+          "context": "Done",
+          "sourceEnglish": "x"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "VT323",
+          "context": "Done",
+          "sourceEnglish": "x"
+        }
+      ]
+    }
+  ]
+}

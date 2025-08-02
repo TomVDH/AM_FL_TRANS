@@ -1,0 +1,2631 @@
+{
+  "fileName": "2_asses.masses_E2Proxy",
+  "processedAt": "2025-08-02T03:35:25.954Z",
+  "sheets": [
+    {
+      "sheetName": "E2_EpisodeTitle_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "Title screen UI.",
+          "sourceEnglish": "EPISODE TWO"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "Title screen UI.",
+          "sourceEnglish": "THE FIRE"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.8",
+          "context": "Title screen UI.",
+          "sourceEnglish": "Press X to Begin"
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_World_A1_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Sign_TheMines_Dirty.1.Dirty Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Butte Industry Coal Mines"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "364 DAYS SINCE LAST MINING ACCIDENT"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "To the south, our state of the art Mill and Granary."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Sign_Highway_Official.1.Official Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "NEW Government Sponsored Highway: Connecting Urban and Rural Communities"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Long Way to the Forest Shrine"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "CLOSED FOR REPAIRS"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Sign_Mill_Fancy.1.Fancy Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The State of the Art Mill and Granary"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Sign_Outhouse_Shitty.1.Shitty Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Outhouse"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Sign_TheStable_Old.1.Old Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Heritage Stable"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Sign_TheWell_Historic.1.Historic Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Ya'fur's Well"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:Opening.2.Slow Ass",
+          "context": "The camera zooms out from inside the well. \nWe are back at Bumpkin Village with the Herd.\nThe Herd has just watched Trusty fall down the well.",
+          "sourceEnglish": "COMRADE!!!!!!!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:Opening.80.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Trusty? Trusty!? P-p-please don't leave us!"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:Opening.8.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "DAMN! The Protest is broken!"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:Opening.17.Sick Ass",
+          "context": "",
+          "sourceEnglish": "*COUGH*"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:Opening.7.Big Ass",
+          "context": "",
+          "sourceEnglish": "The Herd keeps shrinking!"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:Opening.11.Hard Ass",
+          "context": "Soft should be opposite of Hard's name if possible",
+          "sourceEnglish": "Old Ass and Trusty Ass were not cut out for the role of leader. They were too soft."
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:Opening.12.Smart Ass",
+          "context": "",
+          "sourceEnglish": "You're insulting our Comrades! Only I get to insult our Comrades!"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:Opening.13.Big Ass",
+          "context": "(Desire to interject. Not an apology.)",
+          "sourceEnglish": "Excuse me."
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:Opening.21.Slow Ass",
+          "context": "",
+          "sourceEnglish": "*sniff* Is there a P-Plan C?"
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:Opening.84.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Of course there's a Plan C!"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:Opening.92.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Stop. Who made YOU the leader?"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:Opening.15.Big Ass",
+          "context": "",
+          "sourceEnglish": "I have something to say."
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:Opening.86.Smart Ass",
+          "context": "",
+          "sourceEnglish": "It's time for action, not debate, Hard Ass."
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Opening.88.Hard Ass",
+          "context": "",
+          "sourceEnglish": "I do not take orders from you."
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Opening.83.Sick Ass",
+          "context": "",
+          "sourceEnglish": "*COUGH COUGH*"
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:Opening.16.Kick Ass",
+          "context": "\"Let'er RIP\" means \"Go for it\" or \"Kick her Ass Hard Ass\", or \"Don't hold back, Hard Ass\"",
+          "sourceEnglish": "Let'er RIP, Hard Ass!"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:Opening.18.Big Ass",
+          "context": "",
+          "sourceEnglish": "{vpunch=100,0.75}HEY! LISTEN!!"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:Opening.19.Big Ass",
+          "context": "",
+          "sourceEnglish": "The fire's accelerating on the dry ground."
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:Opening.90.Big Ass",
+          "context": "",
+          "sourceEnglish": "The enormous flames are spreading west! They'll reach the Farm in no time—"
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:Opening.20.Nice Ass",
+          "context": "",
+          "sourceEnglish": "JEEPERS! Not the Farm!"
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:Opening.94.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "And the others! They'll be in a mighty pickle if we don't git there in time!"
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:Opening.91.Smart Ass",
+          "context": "",
+          "sourceEnglish": "PLAN C!"
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:Opening.23.Smart Ass",
+          "context": "",
+          "sourceEnglish": "ONE, someone races back to the Farm to warn the others."
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:Opening.67.Smart Ass",
+          "context": "",
+          "sourceEnglish": "TWO, someone else pulls the Humans out of the burning buildings."
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:Opening.24.Smart Ass",
+          "context": "",
+          "sourceEnglish": "THREE, the rest of us get water from the river, put out the fire, convince the Humans to give up their Machines..."
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:Opening.96.Smart Ass",
+          "context": "",
+          "sourceEnglish": "AND GET OUR JOBS BACK!"
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:Opening.93.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Easy."
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:Opening.159.Slow Ass",
+          "context": "",
+          "sourceEnglish": "B-but what about Trusty?"
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:Opening.165.Big Ass",
+          "context": "",
+          "sourceEnglish": "Slow Ass should stay behind and sing the Song of Ascension for Trusty."
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:Opening.164.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Fine. Slow Ass is dead weight anyways."
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:Opening.166.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Who's going to run back to the Farm?"
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:Opening.28.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Nice Ass's fine legs can do that run in less than two minutes! Yeehaw!"
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:Opening.25.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Heck, I'd do anything to save our Farm!"
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:Opening.97.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Any objections, Hard Ass?"
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:Opening.14.Hard Ass",
+          "context": "",
+          "sourceEnglish": "...no."
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:Opening.26.Smart Ass",
+          "context": "Nice starts running back to the Farm",
+          "sourceEnglish": "Good. Run like the wind Nice Ass! And don't ruin my Plan."
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:Don'tTouchTheFire.1.The Masses",
+          "context": "If Nice Ass touches fire in the village.",
+          "sourceEnglish": "Don't touch the fire!"
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:Hurry.1.The Masses",
+          "context": "If Nice Ass tries to talk to the Herd.",
+          "sourceEnglish": "Hurry!"
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:SmokeMustBeGettingToMe_STARTOFF.1.Nice Ass",
+          "context": "If Nice Ass goes the wrong way.",
+          "sourceEnglish": "Golly, the smoke must be getting to me. This isn't the way to the Farm at all."
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:FarmHouse.1.Nice Ass",
+          "context": "If Nice Ass goes the wrong way.",
+          "sourceEnglish": "Golly, the smoke must be getting to me. This isn't the way to the Farm at all."
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:NorthBridge.1.Nice Ass",
+          "context": "Nice arrives at the bridge over the river.",
+          "sourceEnglish": "Golly, looks like the bridge is slowing the fire down."
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:NorthBridge.2.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Sad Ass! Sturdy Ass! Bad Ass! I'm coming for you!"
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "SAY.Dialog:BadAtFarmGate.2.Bad Ass",
+          "context": "Nice arrives at the Farm (ie. does not burn out from hitting too much fire) and is met by Bad Ass",
+          "sourceEnglish": "What the fuck did you all do?"
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "SAY.Dialog:BadAtFarmGate.5.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I thought you were trying to get your jobs back, not burn everything to the ground."
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "SAY.Dialog:BadAtFarmGate.4.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I'll find Sad Ass and Sturdy Ass and take them to the river."
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "SAY.Dialog:BadAtFarmGate.3.Bad Ass",
+          "context": "End of A1.",
+          "sourceEnglish": "You find a way to stop the fire and save the Farm."
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_BadAssRescue_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:BadRescue.2.Bad Ass",
+          "context": "If Nice hits too much fire in A1, she blacks out and is awakened by Bad Ass.",
+          "sourceEnglish": "Get up!"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:BadRescue.5.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I found you passed out on the road and had to drag you back here."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:BadRescue.4.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I thought you were trying to get your jobs back, not burn everything to the ground."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:BadRescue.6.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I can't keep the fire back any longer."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:BadRescue.3.Bad Ass",
+          "context": "",
+          "sourceEnglish": "The bridge is completely lost."
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:BadRescue.9.Bad Ass",
+          "context": "",
+          "sourceEnglish": "I'll find Sad Ass and Sturdy Ass and take them to the river."
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:BadRescue.8.Bad Ass",
+          "context": "",
+          "sourceEnglish": "You find a way to stop the fire and save the Farm."
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_World_B1_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Sign_TheMines_Dirty.1.Dirty Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Butte Industry Coal Mines"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "364 DAYS SINCE LAST MINING ACCIDENT"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "To the south, our state of the art Mill and Granary."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Sign_Highway_Official.1.Official Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "NEW Government Sponsored Highway: Connecting Urban and Rural Communities"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Long Way to the Forest Shrine"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "CLOSED FOR REPAIRS"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Sign_Mill_Fancy.1.Fancy Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The State of the Art Mill and Granary"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Sign_Outhouse_Shitty.1.Shitty Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Outhouse"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Sign_TheStable_Old.1.Old Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Heritage Stable"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Sign_TheWell_Historic.1.Historic Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Ya'fur's Well"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:B1_MainDialog.1.Smart Ass",
+          "context": "Continuing from the moment after Nice Ass ran to the Farm.\nThe Herd negotiates how to save the Humans.",
+          "sourceEnglish": "Plan C Part TWO!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:B1_MainDialog.48.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Who's going to run into the burning houses to save the Humans?"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:B1_MainDialog.52.Smart Ass",
+          "context": "",
+          "sourceEnglish": "...anyone but Slow Ass."
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:B1_MainDialog.68.Slow Ass",
+          "context": "",
+          "sourceEnglish": "*p-phew*"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:B1_MainDialog.54.Sick Ass",
+          "context": "",
+          "sourceEnglish": "*COUGH COUGH*"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:B1_MainDialog.55.Kick Ass",
+          "context": "",
+          "sourceEnglish": "Send Big Ass!"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:B1_MainDialog.13.Big Ass",
+          "context": "",
+          "sourceEnglish": "I won't fit."
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:B1_MainDialog.56.Big Ass",
+          "context": "",
+          "sourceEnglish": "How about Thirsty?"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:B1_MainDialog.16.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "It's too DAMN DRY, I'd never make it."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:B1_MainDialog.57.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "How about you, Smart?"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:B1_MainDialog.3.Smart Ass",
+          "context": "",
+          "sourceEnglish": "You want to send your ACE STRATEGIST into a FIRE?! You gotta be joking!"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:B1_MainDialog.59.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Sick Ass? Kick Ass? Anyone?"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:B1_MainDialog.58.Smart Ass",
+          "context": "Smart Ass looks in all directions.",
+          "sourceEnglish": "Listen. If we don't save the Humans, who will bring us our Hay?"
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:B1_MainDialog.5.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Who will trim our Hooves?"
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:B1_MainDialog.69.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Who will scratch the inside of our ears?"
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:B1_MainDialog.6.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Who will give us medicine when we're ill?"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:B1_MainDialog.7.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Who will clean the shit out of our beds?"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:B1_MainDialog.8.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Who will GIVE US OUR JOBS BACK?"
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:B1_MainDialog.9.Hard Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:B1_MainDialog.10.Hard Ass",
+          "context": "",
+          "sourceEnglish": "I'll do it."
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:B1_MainDialog.47.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Better you than me!"
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:B1_MainDialog.11.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Okay, we're all set for Plan C!"
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:B1_MainDialog.63.Smart Ass",
+          "context": "",
+          "sourceEnglish": "ONE, Nice Ass saves the Farm."
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:B1_MainDialog.62.Smart Ass",
+          "context": "",
+          "sourceEnglish": "TWO, Hard Ass saves the Humans."
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:B1_MainDialog.61.Smart Ass",
+          "context": "",
+          "sourceEnglish": "THREE, the rest of us get water from the river, put out the fire, convince the Humans to give up their Machines..."
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:B1_MainDialog.67.Smart Ass",
+          "context": "",
+          "sourceEnglish": "AND GET OUR JOBS BACK!"
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:B1_MainDialog.64.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Easy."
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:B1_MainDialog.17.Slow Ass",
+          "context": "",
+          "sourceEnglish": "And I'll sing the Song of Ascension for Trusty."
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:B1_MainDialog.170.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Ass P-Power?"
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:B1_MainDialog.65.The Masses",
+          "context": "The other donkeys run off to fetch water",
+          "sourceEnglish": "ASS P-POWER!"
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:B1_MainDialog.29.Hard Ass",
+          "context": "",
+          "sourceEnglish": "I've been through worse than a burning building."
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:B1_MainDialog.30.Hard Ass",
+          "context": "Hard looks for houses to enter",
+          "sourceEnglish": "Time to get to work."
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:HardAssVillageLimitB1.3.Hard Ass",
+          "context": "If Hard Ass goes in the wrong direction.",
+          "sourceEnglish": "Don't get soft."
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:SlowB1.28.Slow Ass",
+          "context": "Slow Ass stays behind to sing for Trusty.",
+          "sourceEnglish": "Goodb-bye Trusty..."
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:SlowB1.35.Slow Ass",
+          "context": "",
+          "sourceEnglish": "{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}"
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:SlowB1.12.Slow Ass",
+          "context": "Repeater line, Slow Ass.",
+          "sourceEnglish": "Goodb-bye..."
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_ChildsHouse_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:Child.7.???",
+          "context": "Hard enters a house to find a child trapped under a bookcase.",
+          "sourceEnglish": "*WAHHH*!"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:Child.1.Child Joey",
+          "context": "",
+          "sourceEnglish": "Hey! Over here! Under the bookcase!"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:Child.41.Child Joey",
+          "context": "",
+          "sourceEnglish": "It's me! Joey!"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:Child.34.Child Joey",
+          "context": "",
+          "sourceEnglish": "Please donkey!"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:Child.42.Child Joey",
+          "context": "",
+          "sourceEnglish": "Get that bucket of water over there and stop this fire from burning me!"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:Child.16.Child Joey",
+          "context": "Hard Ass has a traumatic flash back of seeing a Miner be crushed during a cave in.",
+          "sourceEnglish": "Hey! Don't just stand there!"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:Child.43.Child Joey",
+          "context": "",
+          "sourceEnglish": "Why aren't you doing anything?"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:Child.44.Child Joey",
+          "context": "",
+          "sourceEnglish": "Animals are supposed to do what Humans say!"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:Child.15.Child Joey",
+          "context": "",
+          "sourceEnglish": "OWIIIEEEEE! It hurts."
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:Child.13.Child Joey",
+          "context": "",
+          "sourceEnglish": "Grandma always said donkeys were WORTHLESS!"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:Child.37.Child Joey",
+          "context": "",
+          "sourceEnglish": "And STUPID too!"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:Child.45.Child Joey",
+          "context": "",
+          "sourceEnglish": "I bet you don't even have a SOUL!"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:Child.14.Child Joey",
+          "context": "",
+          "sourceEnglish": "*WAHHH* The bookcase has caught FIRE!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:Child.47.Child Joey",
+          "context": "The child dies.",
+          "sourceEnglish": "Please! SAVE ME!"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:Child.46.Hard Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_World_A2_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Sign_TheMines.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Butte Industry Coal Mines"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Sign_TheMinesEntrance.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "0 DAYS SINCE LAST ACCIDENT"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Sign_WelcomeToFarm.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Sign_WelcomeToFarm.2.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "To the southwest, our state of the art Mill and Granary."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Sign_Highway.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "NEW Government Sponsored Highway—Connecting Urban and Rural Communities"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Sign_MountainPath.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Old Mountain Trail to the City"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Sign_Mill.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The State of the Art Mill and Granary"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Sign_Outhouse.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Outhouse"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Sign_TheStable.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Heritage Stable"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Sign_TheWell.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Ya'fur's Well"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Sign_MountainPath.6.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "CLOSED FOR REPAIRS"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:A_Dialog.1.Nice Ass",
+          "context": "The camera fades up from black and we see Nice Ass with her plow, just outside the Fannyside Farm.",
+          "sourceEnglish": "The Herd is counting on me! Yuppers, this is what I've been training for!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:A_Dialog.6.Nice Ass",
+          "context": "Nice Ass begins to plow a fire line, cutting off the fire.",
+          "sourceEnglish": "If I plow like I've never plowed before, I can cut the fire off and save our beautiful Farm!"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:B_Dialog.1.Nice Ass",
+          "context": "Nice Ass succeeds with the first line of defense.",
+          "sourceEnglish": "Hooray!"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:B_Dialog.7.Nice Ass",
+          "context": "A fire ball flies on the wind and ignites a tree.",
+          "sourceEnglish": "Yikes!"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:C_Dialog.11.Nice Ass",
+          "context": "The fire spreads.",
+          "sourceEnglish": "Gosh! Not the Mill!"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:C_Dialog.19.Nice Ass",
+          "context": "The fire spreads.",
+          "sourceEnglish": "Gosh! Not the Granary!"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:C_Dialog.1.Nice Ass",
+          "context": "The fire spreads.",
+          "sourceEnglish": "Jeepers! It's spreading across the Forest!"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:C_Dialog.25.Nice Ass",
+          "context": "The fire spreads.",
+          "sourceEnglish": "Yikes! We're going to lose the whole field!"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:C_Dialog.23.Nice Ass",
+          "context": "Nice Ass plows west to attempt saving the Farm.",
+          "sourceEnglish": "If I cut the fire off at the centre, I can still save the North Half of the Farm."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:D_Dialog.32.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Not the Stable too!—"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:D_Dialog.1.Sad Ass",
+          "context": "Nice Ass makes it close to the Outhouse on the Farm and hears something.",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:D_Dialog.9.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Sad Ass?"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:D_Dialog.12.Nice Ass",
+          "context": "",
+          "sourceEnglish": "I've got to make it to the Outhouse before it's too late!"
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Burnout.1.Nice Ass",
+          "context": "If Nice Ass hits too much fire.",
+          "sourceEnglish": "Yikes..."
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Burnout.5.Sad Ass",
+          "context": "The scene fades to black.",
+          "sourceEnglish": "*whimper*"
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_World_B2_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "dd",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Sign_TheMines_Dirty.1.Dirty Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Butte Industry Coal Mines"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "364 DAYS SINCE LAST MINING ACCIDENT"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "To the south, our state of the art Mill and Granary."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Sign_Highway_Official.1.Official Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "NEW Government Sponsored Highway: Connecting Urban and Rural Communities"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Long Way to the Forest Shrine"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "CLOSED FOR REPAIRS"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Sign_Mill_Fancy.1.Fancy Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The State of the Art Mill and Granary"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Sign_Outhouse_Shitty.1.Shitty Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Outhouse"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Sign_TheStable_Old.1.Old Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Heritage Stable"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Sign_TheWell_Historic.1.Historic Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Ya'fur's Well"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:HardAssAside2.1.Hard Ass",
+          "context": "After Hard Ass exits the Child's house.",
+          "sourceEnglish": "What happened in there?"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:HardAssAside2.4.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Did I let that little Human die?"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:HardAssAside2.3.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Impossible."
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:HardAssAside2.12.Hard Ass",
+          "context": "",
+          "sourceEnglish": "But what if I did...?"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:HardAssAside2.7.Hard Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:HardAssAside2.2.Hard Ass",
+          "context": "Note to future Patrick/Milton: solve the quotation issue in the CSV",
+          "sourceEnglish": "\"You only hit rock bottom when you quit.\""
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:HardAssAside2.8.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Let's go."
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:HardAssVillageLimitB2.1.Hard Ass",
+          "context": "If Hard Ass goes in the wrong direction.",
+          "sourceEnglish": "Don't get soft..."
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:SlowB2.28.Slow Ass",
+          "context": "Slow Ass is still singing for Trusty",
+          "sourceEnglish": "Goodbye Trusty..."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:SlowB2.36.Slow Ass",
+          "context": "",
+          "sourceEnglish": "{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:SlowB2.12.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Goodbye..."
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:ToTheBossHouse.1.Hard Ass",
+          "context": "After Hard Ass exits the Miner's House, and as he is looking for the Boss's house.",
+          "sourceEnglish": "The Boss's house must be around here somewhere."
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_MinersHouse_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:Miner.1.???",
+          "context": "Hard Ass enters the house of Miner Jenny.",
+          "sourceEnglish": "A donkey? How'd you get here from the Mines?"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:Miner.4.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "It's me! Jenny. From the night shift."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:Miner.12.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "Quick, I need your help!"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:Miner.13.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "Run into the flames and grab my Computer!"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:Miner.14.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "I NEED IT!"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:Miner.11.Miner Jenny",
+          "context": "Hard Ass doesn't move.",
+          "sourceEnglish": "What, you can't hear me with those big dumb donkey ears?"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:Miner.7.Miner Jenny",
+          "context": "A screen wipe (transition), Hard Ass has to fight Miner Jenny.",
+          "sourceEnglish": "Fine, I'll MAKE YOU DO IT!"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:PostBattle.1.Hard Ass",
+          "context": "After killing Miner Jenny in battle.",
+          "sourceEnglish": "She attacked... me."
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:PostBattle.2.Hard Ass",
+          "context": "",
+          "sourceEnglish": "The Humans don't deserve our labour."
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:PostBattle.3.Hard Ass",
+          "context": "",
+          "sourceEnglish": "So, it has come to this."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:PostBattle.4.Hard Ass",
+          "context": "",
+          "sourceEnglish": "That Machine is more valuable to her than my life?"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:PostBattle.5.Hard Ass",
+          "context": "",
+          "sourceEnglish": "After all those years working side by side in the Mine..."
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:PostBattle.6.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Because I wouldn't save her Computer-Machine."
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:PostBattle.8.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Not when they don't see us as equals."
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:PostBattle.10.Hard Ass",
+          "context": "Hard Ass can now leave the house.",
+          "sourceEnglish": "No more Protests—it's time for Revolution."
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_BattleMiner_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.DialogContainer.73",
+          "context": "Battle UI.",
+          "sourceEnglish": "Hard Ass"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.DialogContainer.77",
+          "context": "Battle UI.",
+          "sourceEnglish": "Miner Jenny"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "WRITE.DialogContainer.71",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "Ugh. I always knew you were a dumb beast."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "WRITE.DialogContainer.32",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "You useless fucking animal! Move!!!"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "WRITE.DialogContainer.69",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "My Computer is worth a THOUSAND DONKEYS!"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "WRITE.DialogContainer.48",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "So help me God, I will END YOU!!"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "WRITE.DialogContainer.50",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "EAT SHOVEL ASSHOLE!!"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "WRITE.DialogContainer.30",
+          "context": "Enemy dialogue. Jenny is close to death.",
+          "sourceEnglish": "Is this... game over for me?"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "WRITE.DialogContainer.36",
+          "context": "Battle text.",
+          "sourceEnglish": "Miner Jenny responds."
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "WRITE.DialogContainer.1",
+          "context": "Enemy move.",
+          "sourceEnglish": "Miner Jenny uses reflection!"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "WRITE.DialogContainer.34",
+          "context": "Enemy move.",
+          "sourceEnglish": "Miner Jenny uses CURSE."
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "WRITE.DialogContainer.42",
+          "context": "Enemy move.",
+          "sourceEnglish": "Miner Jenny uses COAL THROW."
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "WRITE.DialogContainer.44",
+          "context": "Enemy move.",
+          "sourceEnglish": "Miner Jenny uses SHOVEL."
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "WRITE.DialogContainer.46",
+          "context": "Enemy move.",
+          "sourceEnglish": "Miner Jenny uses HELMET SMASH."
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "WRITE.DialogContainer.9",
+          "context": "Battle text.",
+          "sourceEnglish": "How will you respond?"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "WRITE.DialogContainer.76",
+          "context": "Player move.",
+          "sourceEnglish": "Grunt"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "WRITE.DialogContainer.12",
+          "context": "",
+          "sourceEnglish": "You Grunt. Miner Jenny becomes angry."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "WRITE.DialogContainer.79",
+          "context": "Player move.",
+          "sourceEnglish": "Bray"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "WRITE.DialogContainer.14",
+          "context": "",
+          "sourceEnglish": "You Bray. Miner Jenny is confused."
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "WRITE.DialogContainer.78",
+          "context": "Player move.",
+          "sourceEnglish": "Tackle"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "WRITE.DialogContainer.20",
+          "context": "",
+          "sourceEnglish": "You Tackle!"
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "WRITE.DialogContainer.75",
+          "context": "Player move.",
+          "sourceEnglish": "Double Kick"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "WRITE.DialogContainer.22",
+          "context": "",
+          "sourceEnglish": "You Double Kick!"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "WRITE.DialogContainer.74",
+          "context": "Player move.",
+          "sourceEnglish": "Stomp"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "WRITE.DialogContainer.18",
+          "context": "",
+          "sourceEnglish": "You Stomp. It's very effective!"
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "WRITE.DialogContainer.80",
+          "context": "Player move.",
+          "sourceEnglish": "Headbutt"
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "WRITE.DialogContainer.24",
+          "context": "",
+          "sourceEnglish": "You Headbutt! It's very effective!"
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "WRITE.DialogContainer.57",
+          "context": "Battle text.",
+          "sourceEnglish": "It has no effect."
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "WRITE.DialogContainer.59",
+          "context": "Battle text.",
+          "sourceEnglish": "It's not very effective..."
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "WRITE.DialogContainer.61",
+          "context": "Battle text.",
+          "sourceEnglish": "It's effective!"
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "WRITE.DialogContainer.63",
+          "context": "Battle text.",
+          "sourceEnglish": "It's super effective!"
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_ChurchInt_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SAY.Dialog:Church.1.Hard Ass",
+          "context": "Hard stands in front of a painting of a donkey and a prophet.",
+          "sourceEnglish": "Hmm."
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_TheatreInt_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SAY.Dialog:Theatre.1.Hard Ass",
+          "context": "Hard Ass stands on stage.",
+          "sourceEnglish": "This place stinks."
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_ButtesHouse_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:ExitAttempt.1.Hard Ass",
+          "context": "Hard Ass enters Mr. Butte's house from the bottom floor.",
+          "sourceEnglish": "I hear something upstairs."
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:Butte.1.???",
+          "context": "Upon heading upstairs, Hard Ass finds Mr. Butte, who is drunk.",
+          "sourceEnglish": "*glug glug* Is someone there?"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:Butte.8.???",
+          "context": "",
+          "sourceEnglish": "Is that a donkey?"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:Butte.5.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "It's me, Mr. Butte. The Boss."
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:Butte.10.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "*glug glug*"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:Butte.13.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "The Mine's gone bankrupt."
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:Butte.9.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "I lost... everything."
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:Butte.12.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "*sigh* I guess replacing you donkeys made no difference."
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:Butte.14.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "But business is business, you know?"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:Butte.18.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "New Machines for a new era."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:Butte.17.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "You can't run a Coal Mine with just donkeys—it's the 21st century!"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:Butte.16.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "*glug glug*"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:Butte.15.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "The world is burning and God sends me an Ass instead of an Angel."
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:Butte.21.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "Maybe it's a sign?"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:Butte.20.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "Ah, what the hell. Look at me. Talking to a donkey again..."
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:Butte.54.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "No wonder Sandy left me..."
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:Butte.19.Hard Ass",
+          "context": "Screen wipe (transition) to a battle between Mr. Butte and Hard Ass.",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog: ExitAttempt2F.1.Hard Ass",
+          "context": "If Hard Ass attempts to leave.",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:PostBattleNewConviction.1.Hard Ass",
+          "context": "After killing Mr. Butte in the battle. Hard Ass stands in Mr. Butte's house, everything is on fire.",
+          "sourceEnglish": "A world without Humans..."
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:PostBattleNewConviction.14.Hard Ass",
+          "context": "Hard Ass can try to leave now.",
+          "sourceEnglish": "A world where Asses are their own Masters..."
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog: PostBattleExitAttempt.8.Hard Ass",
+          "context": "As Hard Ass attempts to leave, the door caves in.",
+          "sourceEnglish": "The way out is blocked."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog: PostBattleExitAttempt.15.Hard Ass",
+          "context": "",
+          "sourceEnglish": "I have to get back to the Herd."
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog: PostBattleExitAttempt.5.Hard Ass",
+          "context": "The roof collapses on Hard Ass.",
+          "sourceEnglish": "AHHHH!! MY EAR!"
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_BattleButte_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.DialogContainer.75",
+          "context": "Battle UI.",
+          "sourceEnglish": "Hard Ass"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.DialogContainer.76",
+          "context": "Battle UI.",
+          "sourceEnglish": "Mr. Butte"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "WRITE.DialogContainer.1",
+          "context": "Battle text.",
+          "sourceEnglish": "Mr. Butte stares at you confused."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "WRITE.DialogContainer.71",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "What's with that look?"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "WRITE.DialogContainer.30",
+          "context": "Enemy dialogue. If Butte's health is less than 40%.",
+          "sourceEnglish": "Why are you hurting me?\\nI don't understand!"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "WRITE.DialogContainer.73",
+          "context": "Enemy dialogue. Butte is about to die.",
+          "sourceEnglish": "I have so many regrets..."
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "WRITE.DialogContainer.36",
+          "context": "Battle text.",
+          "sourceEnglish": "Mr. Butte makes a move."
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "WRITE.DialogContainer.34",
+          "context": "Enemy move.",
+          "sourceEnglish": "Mr. Butte uses Drink."
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "WRITE.DialogContainer.32",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "WAHHH! *glug*"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "WRITE.DialogContainer.57",
+          "context": "",
+          "sourceEnglish": "Mr. Butte increases Intoxication."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "WRITE.DialogContainer.42",
+          "context": "Enemy move.",
+          "sourceEnglish": "Mr. Butte uses Equivocate."
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "WRITE.DialogContainer.69",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "I was just trying to make money!\\nYou gotta understand!"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "WRITE.DialogContainer.59",
+          "context": "",
+          "sourceEnglish": "Equivocate fails."
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "WRITE.DialogContainer.46",
+          "context": "Enemy move.",
+          "sourceEnglish": "Mr. Butte uses Plead."
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "WRITE.DialogContainer.48",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "Haven't I lost enough already?"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "WRITE.DialogContainer.61",
+          "context": "",
+          "sourceEnglish": "Plead fails."
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "WRITE.DialogContainer.44",
+          "context": "Enemy move.",
+          "sourceEnglish": "Mr. Butte uses Flee."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "WRITE.DialogContainer.63",
+          "context": "",
+          "sourceEnglish": "Flee fails."
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "WRITE.DialogContainer.50",
+          "context": "Enemy dialogue.",
+          "sourceEnglish": "Ow, my ankle!"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "WRITE.DialogContainer.9",
+          "context": "Battle text.",
+          "sourceEnglish": "How will you respond?"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "WRITE.DialogContainer.12",
+          "context": "Player move.",
+          "sourceEnglish": "You Grunt."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "WRITE.DialogContainer.14",
+          "context": "",
+          "sourceEnglish": "You Bray."
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "WRITE.DialogContainer.79",
+          "context": "Player move.",
+          "sourceEnglish": "Stomp"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "WRITE.DialogContainer.18",
+          "context": "",
+          "sourceEnglish": "You Stomp. It's very effective!"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "WRITE.DialogContainer.77",
+          "context": "Player move.",
+          "sourceEnglish": "Tackle"
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "WRITE.DialogContainer.20",
+          "context": "",
+          "sourceEnglish": "You Tackle!"
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "WRITE.DialogContainer.78",
+          "context": "Player move.",
+          "sourceEnglish": "Double Kick"
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "WRITE.DialogContainer.22",
+          "context": "",
+          "sourceEnglish": "You Double Kick!"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "WRITE.DialogContainer.80",
+          "context": "Player move.",
+          "sourceEnglish": "Headbutt"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "WRITE.DialogContainer.24",
+          "context": "",
+          "sourceEnglish": "You Headbutt! It's very effective!"
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_Confession_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:Confession.18.Sad Ass",
+          "context": "Nice Ass arrives at the Outhouse.",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:Confession.19.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Sad Ass! Quit hiding in the outhouse!"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:Confession.40.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Nice Ass?"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "MENU.Dialog:Confession.20",
+          "context": "Dialogue option 1.1.",
+          "sourceEnglish": "Why are you in there?"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:Confession.35.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Why are you in there?"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:Confession.36.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I don't have it in me to move... I'm all alone..."
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:Confession.37.Nice Ass",
+          "context": "Jump to line 14.",
+          "sourceEnglish": "Gee Comrade, that's not true! All of us care about you. We're here for ya!"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "MENU.Dialog:Confession.21",
+          "context": "Dialogue option 1.2.",
+          "sourceEnglish": "C'mon Comrade, we have to go now!"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:Confession.31.Nice Ass",
+          "context": "",
+          "sourceEnglish": "C'mon Comrade, we have to go now!"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:Confession.32.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I'm staying put..."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:Confession.216.Nice Ass",
+          "context": "Jump to line 14.",
+          "sourceEnglish": "Sad Ass, now is not the time for this, please!"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:Confession.240.Sad Ass",
+          "context": "Dialogue branches converge here.",
+          "sourceEnglish": "Just go away..."
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "MENU.Dialog:Confession.47",
+          "context": "Dialogue option 2.1.",
+          "sourceEnglish": "Bray loudly."
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:Confession.58.Sad Ass",
+          "context": "Jump to line 19.",
+          "sourceEnglish": "Please stop..."
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "MENU.Dialog:Confession.48",
+          "context": "Dialogue option 2.2.",
+          "sourceEnglish": "Kick the door."
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:Confession.52.Sad Ass",
+          "context": "Jump to line 19.",
+          "sourceEnglish": "Don't come in!"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:Confession.62.Sad Ass",
+          "context": "Dialogue branches converge here.",
+          "sourceEnglish": "I'm a monster... A worthless beast..."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "MENU.Dialog:Confession.64",
+          "context": "Dialogue option 3.1.",
+          "sourceEnglish": "You're not worthless!"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:Confession.68.Nice Ass",
+          "context": "",
+          "sourceEnglish": "You're not worthless!"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:Confession.241.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I AM!"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:Confession.69.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I spend my days doing nothing..."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:Confession.70.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Just wallowing in my grief..."
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:Confession.79.Sad Ass",
+          "context": "Jump to line 30.",
+          "sourceEnglish": "I-I didn't mean for things to get this out of control..."
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "MENU.Dialog:Confession.65",
+          "context": "Dialogue option 3.2.",
+          "sourceEnglish": "You're beautiful, Sad Ass."
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:Confession.74.Nice Ass",
+          "context": "",
+          "sourceEnglish": "You're beautiful, Sad Ass."
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Confession.75.Sad Ass",
+          "context": "",
+          "sourceEnglish": "You're lying... I'm so skinny you can see my ribs through my fur..."
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Confession.76.Sad Ass",
+          "context": "Jump to line 30.",
+          "sourceEnglish": "I'm so tired... I barely made it back..."
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:Confession.82.Nice Ass",
+          "context": "Dialogue branches converge here.",
+          "sourceEnglish": "Listen, I don't know what you're talking about—"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:Confession.83.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Nice Ass...?"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:Confession.84.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Has anyone been hurt in the fire...?"
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "MENU.Dialog:Confession.85",
+          "context": "Dialogue option 4.1.",
+          "sourceEnglish": "Tell him Trusty Ass died falling down the well."
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:Confession.89.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Trusty Ass fell down the well trying to get water...and died."
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:Confession.90.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Not Trusty Ass..."
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:Confession.91.Sad Ass",
+          "context": "",
+          "sourceEnglish": "HEEEEHAWWWWW!"
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:Confession.115.Sad Ass",
+          "context": "",
+          "sourceEnglish": "HEEEEHAWWWWW!!"
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:Confession.114.Sad Ass",
+          "context": "",
+          "sourceEnglish": "HEEEEHAWWWWW!!!"
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:Confession.113.Sad Ass",
+          "context": "Jump to line 51.",
+          "sourceEnglish": "IT'S ALL MY FAULT."
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "MENU.Dialog:Confession.86",
+          "context": "Dialogue option 4.2.",
+          "sourceEnglish": "Tell him everyone is fine."
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:Confession.95.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Everyone is fine!"
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:Confession.96.Sad Ass",
+          "context": "Jump to line 43 or 50.",
+          "sourceEnglish": "And the Humans?"
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "MENU.Dialog:Confession.98",
+          "context": "Dialogue option 4.2.A.",
+          "sourceEnglish": "They're trapped inside their homes burning alive."
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:Confession.107.Nice Ass",
+          "context": "",
+          "sourceEnglish": "They're trapped inside their homes burning alive."
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:Confession.109.Sad Ass",
+          "context": "",
+          "sourceEnglish": "OH NO!!!"
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:Confession.138.Sad Ass",
+          "context": "",
+          "sourceEnglish": "HEEEEHAWWWWW"
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:Confession.139.Sad Ass",
+          "context": "",
+          "sourceEnglish": "HEEEEHAWWWWW"
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:Confession.140.Sad Ass",
+          "context": "",
+          "sourceEnglish": "HEEEEHAWWWWW"
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:Confession.141.Sad Ass",
+          "context": "Jump to line 51.",
+          "sourceEnglish": "IT'S ALL MY FAULT."
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "MENU.Dialog:Confession.99",
+          "context": "Dialogue option 4.2.B.\nJump to line 51.",
+          "sourceEnglish": "The others are rescuing the Humans as we speak."
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:Confession.101.Nice Ass",
+          "context": "Dialogue branches converge here.",
+          "sourceEnglish": "I'm sure the others are rescuing the Humans as we speak."
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:Confession.119.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I was just trying to help..."
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:Confession.120.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Golly, what do you mean?"
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:Confession.123.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I only meant to destroy one of the Humans' ugly Car-Machines, not set everything ablaze!!"
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:Confession.124.Sad Ass",
+          "context": "",
+          "sourceEnglish": "You gotta believe me!"
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "MENU.Dialog:Confession.121",
+          "context": "Dialogue option 5.1.",
+          "sourceEnglish": "Accidents happen all the time, we can fix this!"
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "SAY.Dialog:Confession.126.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Accidents happen all the time, we can fix this!"
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "SAY.Dialog:Confession.127.Sad Ass",
+          "context": "",
+          "sourceEnglish": "There's no going back..."
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "SAY.Dialog:Confession.143.Nice Ass",
+          "context": "Jump to line 64.",
+          "sourceEnglish": "I promise we can! But by golly you have to come with me now!"
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "MENU.Dialog:Confession.122",
+          "context": "Dialogue option 5.2.",
+          "sourceEnglish": "You set the fire...?"
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "SAY.Dialog:Confession.132.Nice Ass",
+          "context": "",
+          "sourceEnglish": "You set the fire?"
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "SAY.Dialog:Confession.133.Sad Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "SAY.Dialog:Confession.134.Nice Ass",
+          "context": "Jump to line 64.",
+          "sourceEnglish": "The Farm—our home! Sad Ass, how could you?!"
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "SAY.Dialog:Confession.147.Sad Ass",
+          "context": "Dialogue branches converge here.",
+          "sourceEnglish": "I don't belong on this Farm..."
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "SAY.Dialog:Confession.239.Sad Ass",
+          "context": "",
+          "sourceEnglish": "My heart is buried under layers of coal..."
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "SAY.Dialog:Confession.237.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Is life supposed to be so full of pain?"
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "MENU.Dialog:Confession.149",
+          "context": "Dialogue option 6.1.",
+          "sourceEnglish": "Lean your head against the door in silence."
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "SAY.Dialog:Confession.304.Sad Ass",
+          "context": "Jump to line 71.",
+          "sourceEnglish": "...Are you still there?"
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "MENU.Dialog:Confession.150",
+          "context": "Dialogue option 6.2.",
+          "sourceEnglish": "Look back at the Farm as it burns."
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "SAY.Dialog:Confession.305.Sad Ass",
+          "context": "Jump to line 71.",
+          "sourceEnglish": "...Are you still there?"
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "SAY.Dialog:Confession.167.Sad Ass",
+          "context": "Dialogue branches converge here.",
+          "sourceEnglish": "Tell me the truth... Do you remember the colour of Lazy's beautiful eyes?"
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "MENU.Dialog:Confession.168",
+          "context": "Dialogue option 7.1.\nJump to line 75.",
+          "sourceEnglish": "Dark Brown"
+        },
+        {
+          "rowNumber": 73,
+          "utterer": "MENU.Dialog:Confession.185",
+          "context": "Dialogue option 7.2. \nJump to Line 88.",
+          "sourceEnglish": "Dark Grey"
+        },
+        {
+          "rowNumber": 74,
+          "utterer": "MENU.Dialog:Confession.184",
+          "context": "Dialogue option 7.3.\nJump to line 75.",
+          "sourceEnglish": "Dark Blue"
+        },
+        {
+          "rowNumber": 75,
+          "utterer": "SAY.Dialog:Confession.180.Sad Ass",
+          "context": "If the Player chooses the wrong eye colour.",
+          "sourceEnglish": "You don't..."
+        },
+        {
+          "rowNumber": 76,
+          "utterer": "SAY.Dialog:Confession.181.Nice Ass",
+          "context": "",
+          "sourceEnglish": "No wait! I remember! They were:"
+        },
+        {
+          "rowNumber": 77,
+          "utterer": "MENU.Dialog:Confession.187",
+          "context": "Dialogue option 8.1.\nJump to line 75.",
+          "sourceEnglish": "Dark Brown"
+        },
+        {
+          "rowNumber": 78,
+          "utterer": "MENU.Dialog:Confession.190",
+          "context": "Dialogue option 8.2. \nJump to Line 81.",
+          "sourceEnglish": "Dark Grey"
+        },
+        {
+          "rowNumber": 79,
+          "utterer": "MENU.Dialog:Confession.189",
+          "context": "Dialogue option 8.3.\nJump to line 75.",
+          "sourceEnglish": "Dark Blue"
+        },
+        {
+          "rowNumber": 80,
+          "utterer": "SAY.Dialog:Confession.192.Nice Ass",
+          "context": "If the Player chooses the correct eye colour.",
+          "sourceEnglish": "Dark Grey!"
+        },
+        {
+          "rowNumber": 81,
+          "utterer": "SAY.Dialog:Confession.193.Sad Ass",
+          "context": "",
+          "sourceEnglish": "You do remember...?"
+        },
+        {
+          "rowNumber": 82,
+          "utterer": "SAY.Dialog:Confession.242.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Gosh, of course I do!"
+        },
+        {
+          "rowNumber": 83,
+          "utterer": "SAY.Dialog:Confession.194.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Nice Ass, I never meant for this to happen..."
+        },
+        {
+          "rowNumber": 84,
+          "utterer": "SAY.Dialog:Confession.197.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Please, promise me you'll keep this secret between you and me...?"
+        },
+        {
+          "rowNumber": 85,
+          "utterer": "SAY.Dialog:Confession.199.Nice Ass",
+          "context": "",
+          "sourceEnglish": "The Farm is lost..."
+        },
+        {
+          "rowNumber": 86,
+          "utterer": "SAY.Dialog:Confession.198.Nice Ass",
+          "context": "",
+          "sourceEnglish": "I'll keep your secret for the rest of my life."
+        },
+        {
+          "rowNumber": 87,
+          "utterer": "SAY.Dialog:Confession.208.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I'm sorry, you won't be able to plow these fields anymore..."
+        },
+        {
+          "rowNumber": 88,
+          "utterer": "SAY.Dialog:Confession.210.Sad Ass",
+          "context": "Transition to A3 World.",
+          "sourceEnglish": "Huh? It's raining..."
+        }
+      ]
+    },
+    {
+      "sheetName": "E2_World_A3_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Sign_TheMines.1.Dirty Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Butte Industry Coal Mines"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Sign_TheMines.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Butte Industry Coal Mines"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Sign_TheMinesEntrance.1.Warning Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "0 DAYS SINCE LAST ACCIDENT"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Sign_TheMinesEntrance.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "0 DAYS SINCE LAST ACCIDENT"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Sign_WelcomeToFarm.1.Welcome Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Sign_WelcomeToFarm.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields."
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Sign_WelcomeToFarm.2.Welcome Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "To the southwest, our state of the art Mill and Granary."
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Sign_WelcomeToFarm.2.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "To the southwest, our state of the art Mill and Granary."
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Sign_Highway.1.Official Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "NEW Government Sponsored Highway—Connecting Urban and Rural Communities"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Sign_Highway.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "NEW Government Sponsored Highway—Connecting Urban and Rural Communities"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Sign_MountainPath.1.Decrepit Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Old Mountain Trail to the City"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Sign_MountainPath.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Old Mountain Trail to the City"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Sign_Mill.1.Fancy Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The State of the Art Mill and Granary"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Sign_Mill.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The State of the Art Mill and Granary"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Sign_Outhouse.1.Shitty Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Outhouse"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Sign_Outhouse.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Outhouse"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Sign_TheStable.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Heritage Stable"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Sign_TheStable.1.Old Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "The Heritage Stable"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Sign_TheWell.1.Historic Sign",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Ya'fur's Well"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Sign_TheWell.1.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "Ya'fur's Well"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Sign_MountainPath.6.",
+          "context": "Interactable Object, Sign.",
+          "sourceEnglish": "CLOSED FOR REPAIRS"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:Finale.2.Nice Ass",
+          "context": "Nice Ass consoles Sad Ass as the rain starts to put out the fire.",
+          "sourceEnglish": "Sad Ass, this rain is a sign that we can start again!"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:Finale.45.Nice Ass",
+          "context": "",
+          "sourceEnglish": "We'll do what we do best—move forward one little step at a time."
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:Finale.71.Nice Ass",
+          "context": "",
+          "sourceEnglish": "No matter how uneven the ground."
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Finale.97.Nice Ass",
+          "context": "",
+          "sourceEnglish": "I'm sure our Comrades have saved the Humans."
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Finale.123.Nice Ass",
+          "context": "",
+          "sourceEnglish": "And the Humans are in the streets cheering."
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:Finale.149.Nice Ass",
+          "context": "",
+          "sourceEnglish": "They are singing their hearts out and dancing their butts off!"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:Finale.175.Nice Ass",
+          "context": "",
+          "sourceEnglish": "They will make today one of their annual holidays."
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:Finale.189.Nice Ass",
+          "context": "",
+          "sourceEnglish": "They will erect golden statues of heroic Asses and gather to commemorate us."
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:Finale.201.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Gosh, even one for Lazy Ass!"
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:Finale.211.Nice Ass",
+          "context": "",
+          "sourceEnglish": "They will break down their Machines and throw them away."
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:Finale.219.Nice Ass",
+          "context": "",
+          "sourceEnglish": "And Humans will never call us worthless again."
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:Finale.225.Nice Ass",
+          "context": "End of Episode 3.",
+          "sourceEnglish": "YUPPERS, WE'RE GOING BACK TO WORK!"
+        }
+      ]
+    }
+  ]
+}

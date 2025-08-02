@@ -1,0 +1,1599 @@
+{
+  "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy",
+  "processedAt": "2025-08-02T03:35:25.401Z",
+  "sheets": [
+    {
+      "sheetName": "ManagerScene_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.1",
+          "context": "",
+          "sourceEnglish": "COMRADES"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.2",
+          "context": "",
+          "sourceEnglish": "MORALE"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.5",
+          "context": "",
+          "sourceEnglish": "Trusty Ass"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.15",
+          "context": "",
+          "sourceEnglish": "Nice Ass"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.14",
+          "context": "",
+          "sourceEnglish": "Big Ass"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.12",
+          "context": "",
+          "sourceEnglish": "Thirsty Ass"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.13",
+          "context": "",
+          "sourceEnglish": "Smart Ass"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.11",
+          "context": "",
+          "sourceEnglish": "Slow Ass"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.10",
+          "context": "",
+          "sourceEnglish": "Kick Ass"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.9",
+          "context": "",
+          "sourceEnglish": "Sick Ass"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.8",
+          "context": "",
+          "sourceEnglish": "Hard Ass"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.7",
+          "context": "",
+          "sourceEnglish": "Sturdy Ass"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.6",
+          "context": "",
+          "sourceEnglish": "Sad Ass"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "WRITE.ManagerCanvasUiTextFlowchart.16",
+          "context": "",
+          "sourceEnglish": "Cole-Machine"
+        }
+      ]
+    },
+    {
+      "sheetName": "CharacterProfiles_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "CHARACTER.Character Name",
+          "context": "",
+          "sourceEnglish": "Character Name"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "CHARACTER.{$NewName}",
+          "context": "Main Donkeys",
+          "sourceEnglish": "{$NewName}"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "CHARACTER.Old Ass",
+          "context": "",
+          "sourceEnglish": "Old Ass"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "CHARACTER.Trusty Ass",
+          "context": "",
+          "sourceEnglish": "Trusty Ass"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "CHARACTER.Nice Ass",
+          "context": "",
+          "sourceEnglish": "Nice Ass"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "CHARACTER.Big Ass",
+          "context": "",
+          "sourceEnglish": "Big Ass"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "CHARACTER.Thirsty Ass",
+          "context": "",
+          "sourceEnglish": "Thirsty Ass"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "CHARACTER.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Smart Ass"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "CHARACTER.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Slow Ass"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "CHARACTER.Kick Ass",
+          "context": "",
+          "sourceEnglish": "Kick Ass"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "CHARACTER.Sick Ass",
+          "context": "",
+          "sourceEnglish": "Sick Ass"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "CHARACTER.Hard Ass",
+          "context": "",
+          "sourceEnglish": "Hard Ass"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "CHARACTER.Sturdy Ass",
+          "context": "",
+          "sourceEnglish": "Sturdy Ass"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "CHARACTER.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Sad Ass"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "CHARACTER.Lazy Ass",
+          "context": "",
+          "sourceEnglish": "Lazy Ass"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "CHARACTER.Bad Ass",
+          "context": "",
+          "sourceEnglish": "Bad Ass"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "CHARACTER.Cole-Machine",
+          "context": "",
+          "sourceEnglish": "Cole-Machine"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "CHARACTER.Golden Ass",
+          "context": "",
+          "sourceEnglish": "Golden Ass"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "CHARACTER.The Masses",
+          "context": "",
+          "sourceEnglish": "The Masses"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "CHARACTER.Hee",
+          "context": "The Gods",
+          "sourceEnglish": "Hee"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "CHARACTER.Haw",
+          "context": "",
+          "sourceEnglish": "Haw"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "CHARACTER.THE GODS",
+          "context": "",
+          "sourceEnglish": "THE GODS"
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "CHARACTER.Sheep",
+          "context": "Circus/Farm Animals",
+          "sourceEnglish": "Sheep"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "CHARACTER.Elephant",
+          "context": "",
+          "sourceEnglish": "Eli the Elephant"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "CHARACTER.Pig",
+          "context": "",
+          "sourceEnglish": "Pig"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "CHARACTER.Cow",
+          "context": "",
+          "sourceEnglish": "Cow"
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "CHARACTER.Human",
+          "context": "Humans",
+          "sourceEnglish": "Human"
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "CHARACTER.Melvin",
+          "context": "",
+          "sourceEnglish": "Ass Handler Melvin"
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "CHARACTER.Wedgie",
+          "context": "",
+          "sourceEnglish": "Ass Handler Wedgie"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "CHARACTER.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "Mme. Derriere"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "CHARACTER.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Ringmaster Rico"
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "CHARACTER.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Zookeeper Rose"
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "CHARACTER.Factory PA",
+          "context": "",
+          "sourceEnglish": "Factory PA"
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "CHARACTER.Miner With No Legs",
+          "context": "",
+          "sourceEnglish": "Miner With No Legs"
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "CHARACTER.Audience Members Patrick & Milton",
+          "context": "",
+          "sourceEnglish": "Audience Members Patrick & Milton"
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "CHARACTER.Audience Member Laurel",
+          "context": "",
+          "sourceEnglish": "Audience Member Laurel"
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "CHARACTER.Audience Member David",
+          "context": "",
+          "sourceEnglish": "Audience Member David"
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "CHARACTER.Radio Host Marcos",
+          "context": "",
+          "sourceEnglish": "DJ Marcos"
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "CHARACTER.???",
+          "context": "",
+          "sourceEnglish": "???"
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "CHARACTER.Child Joey",
+          "context": "",
+          "sourceEnglish": "Child Joey"
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "CHARACTER.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "Grandma Kulan"
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "CHARACTER.Miner Jenny",
+          "context": "",
+          "sourceEnglish": "Miner Jenny"
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "CHARACTER.Mr. Butte",
+          "context": "",
+          "sourceEnglish": "Mr. Butte"
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "CHARACTER.Sign",
+          "context": "Signs",
+          "sourceEnglish": "Sign"
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "CHARACTER.Shitty Sign",
+          "context": "",
+          "sourceEnglish": "Shitty Sign"
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "CHARACTER.Old Sign",
+          "context": "",
+          "sourceEnglish": "Old Sign"
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "CHARACTER.Welcome Sign",
+          "context": "",
+          "sourceEnglish": "Welcome Sign"
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "CHARACTER.Fancy Sign",
+          "context": "",
+          "sourceEnglish": "Fancy Sign"
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "CHARACTER.Official Sign",
+          "context": "",
+          "sourceEnglish": "Official Sign"
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "CHARACTER.Dirty Sign",
+          "context": "",
+          "sourceEnglish": "Dirty Sign"
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "CHARACTER.Decrepit Sign",
+          "context": "",
+          "sourceEnglish": "Decrepit Sign"
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "CHARACTER.Historic Sign",
+          "context": "",
+          "sourceEnglish": "Historic Sign"
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "CHARACTER.Warning Sign",
+          "context": "",
+          "sourceEnglish": "Warning Sign"
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "CHARACTER.Proper Ass",
+          "context": "Factory Donkeys (be sure to make a balance of gender between the ones marked with X)",
+          "sourceEnglish": "Proper Ass"
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "CHARACTER.Skinny Ass",
+          "context": "x",
+          "sourceEnglish": "Skinny Ass"
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "CHARACTER.Tender Ass",
+          "context": "",
+          "sourceEnglish": "Tender Ass"
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "CHARACTER.Tragic Ass",
+          "context": "x",
+          "sourceEnglish": "Tragic Ass"
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "CHARACTER.Wild Ass",
+          "context": "",
+          "sourceEnglish": "Wild Ass"
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "CHARACTER.Anxious Ass",
+          "context": "",
+          "sourceEnglish": "Anxious Ass"
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "CHARACTER.Resentful Ass",
+          "context": "x",
+          "sourceEnglish": "Resentful Ass"
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "CHARACTER.Distressed Ass",
+          "context": "",
+          "sourceEnglish": "Distressed Ass"
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "CHARACTER.Gloomy Ass",
+          "context": "",
+          "sourceEnglish": "Gloomy Ass"
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "CHARACTER.Feeble Ass",
+          "context": "",
+          "sourceEnglish": "Feeble Ass"
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "CHARACTER.Helpful Ass",
+          "context": "x",
+          "sourceEnglish": "Helpful Ass"
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "CHARACTER.Gaunt Ass",
+          "context": "x",
+          "sourceEnglish": "Gaunt Ass"
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "CHARACTER.Sleepy Ass",
+          "context": "",
+          "sourceEnglish": "Sleepy Ass"
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "CHARACTER.Weepy Ass",
+          "context": "",
+          "sourceEnglish": "Weepy Ass"
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "CHARACTER.Edgy Ass",
+          "context": "x",
+          "sourceEnglish": "Edgy Ass"
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "CHARACTER.Bleak Ass",
+          "context": "x",
+          "sourceEnglish": "Bleak Ass"
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "CHARACTER.Busted Ass",
+          "context": "",
+          "sourceEnglish": "Busted Ass"
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "CHARACTER.Right Ass",
+          "context": "(Always male)",
+          "sourceEnglish": "Right Ass"
+        },
+        {
+          "rowNumber": 73,
+          "utterer": "CHARACTER.Left Ass",
+          "context": "(Always male)",
+          "sourceEnglish": "Left Ass"
+        },
+        {
+          "rowNumber": 74,
+          "utterer": "CHARACTER.Mad Ass",
+          "context": "Astral Plane Donkeys",
+          "sourceEnglish": "Mad Ass"
+        },
+        {
+          "rowNumber": 75,
+          "utterer": "CHARACTER.Smelly Ass",
+          "context": "",
+          "sourceEnglish": "Smelly Ass"
+        },
+        {
+          "rowNumber": 76,
+          "utterer": "CHARACTER.Greedy Ass",
+          "context": "",
+          "sourceEnglish": "Greedy Ass"
+        },
+        {
+          "rowNumber": 77,
+          "utterer": "CHARACTER.Shifty Ass",
+          "context": "",
+          "sourceEnglish": "Shifty Ass"
+        },
+        {
+          "rowNumber": 78,
+          "utterer": "CHARACTER.Risky Ass",
+          "context": "",
+          "sourceEnglish": "Risky Ass"
+        },
+        {
+          "rowNumber": 79,
+          "utterer": "CHARACTER.Furry Ass",
+          "context": "",
+          "sourceEnglish": "Furry Ass"
+        },
+        {
+          "rowNumber": 80,
+          "utterer": "CHARACTER.Dusty Ass",
+          "context": "",
+          "sourceEnglish": "Dusty Ass"
+        },
+        {
+          "rowNumber": 81,
+          "utterer": "CHARACTER.Blunt Ass",
+          "context": "",
+          "sourceEnglish": "Blunt Ass"
+        },
+        {
+          "rowNumber": 82,
+          "utterer": "CHARACTER.Peek Ass",
+          "context": "",
+          "sourceEnglish": "Peek Ass"
+        },
+        {
+          "rowNumber": 83,
+          "utterer": "CHARACTER.Cool Ass",
+          "context": "",
+          "sourceEnglish": "Cool Ass"
+        },
+        {
+          "rowNumber": 84,
+          "utterer": "CHARACTER.Mean Ass",
+          "context": "",
+          "sourceEnglish": "Mean Ass"
+        },
+        {
+          "rowNumber": 85,
+          "utterer": "CHARACTER.Cranky Ass",
+          "context": "",
+          "sourceEnglish": "Cranky Ass"
+        },
+        {
+          "rowNumber": 86,
+          "utterer": "CHARACTER.Hasty Ass",
+          "context": "",
+          "sourceEnglish": "Hasty Ass"
+        },
+        {
+          "rowNumber": 87,
+          "utterer": "CHARACTER.Haul Ass",
+          "context": "",
+          "sourceEnglish": "Haul Ass"
+        },
+        {
+          "rowNumber": 88,
+          "utterer": "CHARACTER.Healthy Ass",
+          "context": "",
+          "sourceEnglish": "Healthy Ass"
+        },
+        {
+          "rowNumber": 89,
+          "utterer": "CHARACTER.Mellow Ass",
+          "context": "",
+          "sourceEnglish": "Mellow Ass"
+        },
+        {
+          "rowNumber": 90,
+          "utterer": "CHARACTER.Shaky Ass",
+          "context": "",
+          "sourceEnglish": "Shaky Ass"
+        },
+        {
+          "rowNumber": 91,
+          "utterer": "CHARACTER.Trippy Ass",
+          "context": "",
+          "sourceEnglish": "Trippy Ass"
+        },
+        {
+          "rowNumber": 92,
+          "utterer": "CHARACTER.DJ Dope Ass",
+          "context": "",
+          "sourceEnglish": "DJ Dope Ass"
+        },
+        {
+          "rowNumber": 93,
+          "utterer": "CHARACTER.Angry Ass",
+          "context": "",
+          "sourceEnglish": "Angry Ass"
+        },
+        {
+          "rowNumber": 94,
+          "utterer": "CHARACTER.Sulky Ass",
+          "context": "",
+          "sourceEnglish": "Sulky Ass"
+        },
+        {
+          "rowNumber": 95,
+          "utterer": "CHARACTER.Chafed Ass",
+          "context": "",
+          "sourceEnglish": "Chafed Ass"
+        },
+        {
+          "rowNumber": 96,
+          "utterer": "CHARACTER.Broken Ass",
+          "context": "",
+          "sourceEnglish": "Broken Ass"
+        },
+        {
+          "rowNumber": 97,
+          "utterer": "CHARACTER.Bitter Ass",
+          "context": "",
+          "sourceEnglish": "Bitter Ass"
+        },
+        {
+          "rowNumber": 98,
+          "utterer": "CHARACTER.Lofty Ass",
+          "context": "",
+          "sourceEnglish": "Lofty Ass"
+        },
+        {
+          "rowNumber": 99,
+          "utterer": "CHARACTER.Total Ass",
+          "context": "",
+          "sourceEnglish": "Total Ass"
+        },
+        {
+          "rowNumber": 100,
+          "utterer": "CHARACTER.Happy Ass",
+          "context": "",
+          "sourceEnglish": "Happy Ass"
+        },
+        {
+          "rowNumber": 101,
+          "utterer": "CHARACTER.Hairy Ass",
+          "context": "",
+          "sourceEnglish": "Hairy Ass"
+        },
+        {
+          "rowNumber": 102,
+          "utterer": "CHARACTER.Dirty Ass",
+          "context": "",
+          "sourceEnglish": "Dirty Ass"
+        },
+        {
+          "rowNumber": 103,
+          "utterer": "CHARACTER.Janky Ass",
+          "context": "",
+          "sourceEnglish": "Janky Ass"
+        },
+        {
+          "rowNumber": 104,
+          "utterer": "CHARACTER.Tight Ass",
+          "context": "",
+          "sourceEnglish": "Tight Ass"
+        },
+        {
+          "rowNumber": 105,
+          "utterer": "CHARACTER.Fresh Ass",
+          "context": "",
+          "sourceEnglish": "Fresh Ass"
+        },
+        {
+          "rowNumber": 106,
+          "utterer": "CHARACTER.Gullible Ass",
+          "context": "",
+          "sourceEnglish": "Gullible Ass"
+        },
+        {
+          "rowNumber": 107,
+          "utterer": "CHARACTER.Ugly Ass",
+          "context": "",
+          "sourceEnglish": "Ugly Ass"
+        }
+      ]
+    },
+    {
+      "sheetName": "E0_Instructions_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.Dialog:Localizer.1",
+          "context": "",
+          "sourceEnglish": "Instructions for Operators [EN]"
+        }
+      ]
+    },
+    {
+      "sheetName": "E0_Questions_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.DialogLocalizer.17",
+          "context": "",
+          "sourceEnglish": "AVATAR REQUIRED"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.DialogLocalizer.18",
+          "context": "",
+          "sourceEnglish": "AWAITING INPUT"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.DialogLocalizer.187",
+          "context": "",
+          "sourceEnglish": "PRESS X"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "WRITE.DialogLocalizer.12",
+          "context": "",
+          "sourceEnglish": "Which does your society value more?"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "WRITE.DialogLocalizer.13",
+          "context": "",
+          "sourceEnglish": "Those who stay with the herd"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "WRITE.DialogLocalizer.14",
+          "context": "",
+          "sourceEnglish": "Those who step away from the herd"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "WRITE.DialogLocalizer.53",
+          "context": "",
+          "sourceEnglish": "Do you think of yourself as an intelligent animal?"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "WRITE.DialogLocalizer.55",
+          "context": "",
+          "sourceEnglish": "Yes"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "WRITE.DialogLocalizer.54",
+          "context": "",
+          "sourceEnglish": "No"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "WRITE.DialogLocalizer.56",
+          "context": "",
+          "sourceEnglish": "Do you think of yourself as a political animal?"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "WRITE.DialogLocalizer.57",
+          "context": "",
+          "sourceEnglish": "Yes"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "WRITE.DialogLocalizer.58",
+          "context": "",
+          "sourceEnglish": "No"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "WRITE.DialogLocalizer.59",
+          "context": "",
+          "sourceEnglish": "Do you have urges to copulate and reproduce?"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "WRITE.DialogLocalizer.60",
+          "context": "",
+          "sourceEnglish": "Yes"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "WRITE.DialogLocalizer.61",
+          "context": "",
+          "sourceEnglish": "No"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "WRITE.DialogLocalizer.62",
+          "context": "",
+          "sourceEnglish": "What is your natural habitat?"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "WRITE.DialogLocalizer.63",
+          "context": "",
+          "sourceEnglish": "Grassy plains"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "WRITE.DialogLocalizer.140",
+          "context": "",
+          "sourceEnglish": "Rocky desert"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "WRITE.DialogLocalizer.64",
+          "context": "",
+          "sourceEnglish": "Concrete jungle"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "WRITE.DialogLocalizer.65",
+          "context": "",
+          "sourceEnglish": "Do you have experience doing manual labour every day for an extended period of time?"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "WRITE.DialogLocalizer.66",
+          "context": "",
+          "sourceEnglish": "Yes"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "WRITE.DialogLocalizer.67",
+          "context": "",
+          "sourceEnglish": "No"
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "WRITE.DialogLocalizer.68",
+          "context": "",
+          "sourceEnglish": "Have you ever gone on a labour strike due to unfair or dangerous working conditions?"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "WRITE.DialogLocalizer.69",
+          "context": "",
+          "sourceEnglish": "Yes"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "WRITE.DialogLocalizer.70",
+          "context": "",
+          "sourceEnglish": "No"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "WRITE.DialogLocalizer.71",
+          "context": "",
+          "sourceEnglish": "Have you ever lost your job because your role became redundant at your place of work?"
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "WRITE.DialogLocalizer.72",
+          "context": "",
+          "sourceEnglish": "Yes"
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "WRITE.DialogLocalizer.73",
+          "context": "",
+          "sourceEnglish": "No"
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "WRITE.DialogLocalizer.74",
+          "context": "",
+          "sourceEnglish": "What kind of job was it?"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "WRITE.DialogLocalizer.75",
+          "context": "",
+          "sourceEnglish": "Agriculture, fishery"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "WRITE.DialogLocalizer.76",
+          "context": "",
+          "sourceEnglish": "Mining, oil, forestry"
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "WRITE.DialogLocalizer.170",
+          "context": "",
+          "sourceEnglish": "Administration or clerical support"
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "WRITE.DialogLocalizer.171",
+          "context": "",
+          "sourceEnglish": "Hospitality or service"
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "WRITE.DialogLocalizer.172",
+          "context": "",
+          "sourceEnglish": "Arts and culture"
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "WRITE.DialogLocalizer.173",
+          "context": "",
+          "sourceEnglish": "Other"
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "WRITE.DialogLocalizer.77",
+          "context": "",
+          "sourceEnglish": "How were the job conditions?"
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "WRITE.DialogLocalizer.78",
+          "context": "",
+          "sourceEnglish": "Amazing"
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "WRITE.DialogLocalizer.79",
+          "context": "",
+          "sourceEnglish": "Good"
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "WRITE.DialogLocalizer.174",
+          "context": "",
+          "sourceEnglish": "Fair"
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "WRITE.DialogLocalizer.175",
+          "context": "",
+          "sourceEnglish": "Bad"
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "WRITE.DialogLocalizer.176",
+          "context": "",
+          "sourceEnglish": "Terrible"
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "WRITE.DialogLocalizer.80",
+          "context": "",
+          "sourceEnglish": "Do you miss the job?"
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "WRITE.DialogLocalizer.81",
+          "context": "",
+          "sourceEnglish": "Yes"
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "WRITE.DialogLocalizer.82",
+          "context": "",
+          "sourceEnglish": "No"
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "WRITE.DialogLocalizer.177",
+          "context": "",
+          "sourceEnglish": "I miss aspects of it"
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "WRITE.DialogLocalizer.83",
+          "context": "",
+          "sourceEnglish": "Do you think you would still have the job if you did things differently?"
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "WRITE.DialogLocalizer.84",
+          "context": "",
+          "sourceEnglish": "Yes"
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "WRITE.DialogLocalizer.85",
+          "context": "",
+          "sourceEnglish": "No"
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "WRITE.DialogLocalizer.178",
+          "context": "",
+          "sourceEnglish": "I don't know"
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "WRITE.DialogLocalizer.86",
+          "context": "",
+          "sourceEnglish": "Would you consider yourself to be the best representative of your species to lead a Revolution?"
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "WRITE.DialogLocalizer.87",
+          "context": "",
+          "sourceEnglish": "Yes"
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "WRITE.DialogLocalizer.88",
+          "context": "",
+          "sourceEnglish": "No"
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "WRITE.DialogLocalizer.89",
+          "context": "",
+          "sourceEnglish": "Which of these mythic and literary heroes do you identify with the most?"
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "WRITE.DialogLocalizer.90",
+          "context": "",
+          "sourceEnglish": "Bottom from A Midsummer Night's Dream"
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "WRITE.DialogLocalizer.91",
+          "context": "",
+          "sourceEnglish": "Lucius from The Golden Ass by Apuleius"
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "WRITE.DialogLocalizer.180",
+          "context": "",
+          "sourceEnglish": "Midas from Greek Mythology"
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "WRITE.DialogLocalizer.179",
+          "context": "",
+          "sourceEnglish": "Pinocchio from Pinocchio"
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "WRITE.DialogLocalizer.19",
+          "context": "",
+          "sourceEnglish": "PHASE ONE\\nCOMPLETE"
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "WRITE.DialogLocalizer.20",
+          "context": "",
+          "sourceEnglish": "CALIBRATING INTELLIGENCE"
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "WRITE.DialogLocalizer.21",
+          "context": "",
+          "sourceEnglish": "AVATAR READY"
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "WRITE.DialogLocalizer.22",
+          "context": "",
+          "sourceEnglish": "MATERIALIZING..."
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "WRITE.DialogLocalizer.92",
+          "context": "",
+          "sourceEnglish": "In English, when one human says to another human, \"You ass,\" they are comparing a human to:"
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "WRITE.DialogLocalizer.93",
+          "context": "",
+          "sourceEnglish": "Equus asinus"
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "WRITE.DialogLocalizer.94",
+          "context": "",
+          "sourceEnglish": "A buttocks"
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "WRITE.DialogLocalizer.95",
+          "context": "",
+          "sourceEnglish": "In English, when one human says to another human, \"I'd hit that ass\" they mean:"
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "WRITE.DialogLocalizer.96",
+          "context": "",
+          "sourceEnglish": "They would forcibly beat an Equus asinus if they could"
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "WRITE.DialogLocalizer.97",
+          "context": "",
+          "sourceEnglish": "They would have sexual intercourse with another human if they could"
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "WRITE.DialogLocalizer.98",
+          "context": "",
+          "sourceEnglish": "In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:"
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "WRITE.DialogLocalizer.99",
+          "context": "",
+          "sourceEnglish": "Balaam beats the ass to death and has to find another one to do his work for him"
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "WRITE.DialogLocalizer.100",
+          "context": "",
+          "sourceEnglish": "God gives the ass the ability to speak and the ass begs Balaam to spare them"
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "WRITE.DialogLocalizer.101",
+          "context": "",
+          "sourceEnglish": "In Aesop's Fables, one reads: \"An ass put on the skin of a lion and went around frightening all the animals. The ass saw a fox and tried to frighten her too, but she had heard his voice first, so she said to the ass, 'You can be sure that I too would have been afraid, if I had not already heard the sound of your bray'.\" The moral is:"
+        },
+        {
+          "rowNumber": 73,
+          "utterer": "WRITE.DialogLocalizer.102",
+          "context": "",
+          "sourceEnglish": "The disenfranchised are forced to imitate those in power without ever attaining more power"
+        },
+        {
+          "rowNumber": 74,
+          "utterer": "WRITE.DialogLocalizer.103",
+          "context": "",
+          "sourceEnglish": "A fool is still a fool regardless of how they are dressed"
+        },
+        {
+          "rowNumber": 75,
+          "utterer": "WRITE.DialogLocalizer.104",
+          "context": "",
+          "sourceEnglish": "In Ancient Greece, asses symbolized fertility because:"
+        },
+        {
+          "rowNumber": 76,
+          "utterer": "WRITE.DialogLocalizer.105",
+          "context": "",
+          "sourceEnglish": "Male donkeys have very large penises"
+        },
+        {
+          "rowNumber": 77,
+          "utterer": "WRITE.DialogLocalizer.106",
+          "context": "",
+          "sourceEnglish": "Female donkeys frequently give birth to twins"
+        },
+        {
+          "rowNumber": 78,
+          "utterer": "WRITE.DialogLocalizer.107",
+          "context": "",
+          "sourceEnglish": "A 'mare' is the general term for a female equine. What is the specific term for a female donkey?"
+        },
+        {
+          "rowNumber": 79,
+          "utterer": "WRITE.DialogLocalizer.108",
+          "context": "",
+          "sourceEnglish": "Jack"
+        },
+        {
+          "rowNumber": 80,
+          "utterer": "WRITE.DialogLocalizer.109",
+          "context": "",
+          "sourceEnglish": "Gelding"
+        },
+        {
+          "rowNumber": 81,
+          "utterer": "WRITE.DialogLocalizer.182",
+          "context": "",
+          "sourceEnglish": "Jennet"
+        },
+        {
+          "rowNumber": 82,
+          "utterer": "WRITE.DialogLocalizer.181",
+          "context": "",
+          "sourceEnglish": "Molly"
+        },
+        {
+          "rowNumber": 83,
+          "utterer": "WRITE.DialogLocalizer.110",
+          "context": "",
+          "sourceEnglish": "A famous piece of anti-Christian graffiti from ancient Rome depicts:"
+        },
+        {
+          "rowNumber": 84,
+          "utterer": "WRITE.DialogLocalizer.111",
+          "context": "",
+          "sourceEnglish": "Jesus with an ass's head"
+        },
+        {
+          "rowNumber": 85,
+          "utterer": "WRITE.DialogLocalizer.112",
+          "context": "",
+          "sourceEnglish": "Jesus riding an ass backwards"
+        },
+        {
+          "rowNumber": 86,
+          "utterer": "WRITE.DialogLocalizer.113",
+          "context": "",
+          "sourceEnglish": "What does tradition say Mohammed's ass, Ya'fur, did after the Prophet died?"
+        },
+        {
+          "rowNumber": 87,
+          "utterer": "WRITE.DialogLocalizer.114",
+          "context": "",
+          "sourceEnglish": "Committed suicide by throwing itself down a well"
+        },
+        {
+          "rowNumber": 88,
+          "utterer": "WRITE.DialogLocalizer.115",
+          "context": "",
+          "sourceEnglish": "Rode away from Mecca weeping never to return"
+        },
+        {
+          "rowNumber": 89,
+          "utterer": "WRITE.DialogLocalizer.116",
+          "context": "",
+          "sourceEnglish": "In the philosophical paradox called Buridan's Ass, an ass placed between a bucket of water and a bale of hay will:"
+        },
+        {
+          "rowNumber": 90,
+          "utterer": "WRITE.DialogLocalizer.117",
+          "context": "",
+          "sourceEnglish": "Always choose the hay first"
+        },
+        {
+          "rowNumber": 91,
+          "utterer": "WRITE.DialogLocalizer.118",
+          "context": "",
+          "sourceEnglish": "Always choose the water first"
+        },
+        {
+          "rowNumber": 92,
+          "utterer": "WRITE.DialogLocalizer.183",
+          "context": "",
+          "sourceEnglish": "Die from indecision"
+        },
+        {
+          "rowNumber": 93,
+          "utterer": "WRITE.DialogLocalizer.119",
+          "context": "",
+          "sourceEnglish": "Was ist die Bedeutung der Ausdruck \"sich eine Eselsbrücke bauen\" auf Deutsch?"
+        },
+        {
+          "rowNumber": 94,
+          "utterer": "WRITE.DialogLocalizer.120",
+          "context": "",
+          "sourceEnglish": "Ein Kurzwort finden, um sich etwas besser merken zu können"
+        },
+        {
+          "rowNumber": 95,
+          "utterer": "WRITE.DialogLocalizer.121",
+          "context": "",
+          "sourceEnglish": "Vertrauen Sie niemals einem langsamen Esel, um eine Brücke zu bauen"
+        },
+        {
+          "rowNumber": 96,
+          "utterer": "WRITE.DialogLocalizer.122",
+          "context": "",
+          "sourceEnglish": "In 1981, the video game DONKEY.BAS was distributed on all original IBM computers. In that game, players must:"
+        },
+        {
+          "rowNumber": 97,
+          "utterer": "WRITE.DialogLocalizer.123",
+          "context": "",
+          "sourceEnglish": "Play as a donkey pulling wagons of hay from one town to another"
+        },
+        {
+          "rowNumber": 98,
+          "utterer": "WRITE.DialogLocalizer.124",
+          "context": "",
+          "sourceEnglish": "Drive a car down a road while avoiding donkeys"
+        },
+        {
+          "rowNumber": 99,
+          "utterer": "WRITE.DialogLocalizer.184",
+          "context": "",
+          "sourceEnglish": "Play a rhythm game that simulates donkeys mating"
+        },
+        {
+          "rowNumber": 100,
+          "utterer": "WRITE.DialogLocalizer.125",
+          "context": "",
+          "sourceEnglish": "En La Gloria, Colombia, el servicio de biblioteca móvil que usa los burros para transportar libros a los pueblos pequeños se llama:"
+        },
+        {
+          "rowNumber": 101,
+          "utterer": "WRITE.DialogLocalizer.126",
+          "context": "",
+          "sourceEnglish": "Biblioburro"
+        },
+        {
+          "rowNumber": 102,
+          "utterer": "WRITE.DialogLocalizer.127",
+          "context": "",
+          "sourceEnglish": "Libraría Asinia"
+        },
+        {
+          "rowNumber": 103,
+          "utterer": "WRITE.DialogLocalizer.128",
+          "context": "",
+          "sourceEnglish": "In China, the rise in demand for a luxury Traditional Chinese Medicine product called 'ejiao' has resulted in how many asses being slaughtered ever year?"
+        },
+        {
+          "rowNumber": 104,
+          "utterer": "WRITE.DialogLocalizer.129",
+          "context": "",
+          "sourceEnglish": "5 million"
+        },
+        {
+          "rowNumber": 105,
+          "utterer": "WRITE.DialogLocalizer.130",
+          "context": "",
+          "sourceEnglish": "3 million"
+        },
+        {
+          "rowNumber": 106,
+          "utterer": "WRITE.DialogLocalizer.185",
+          "context": "",
+          "sourceEnglish": "2 million"
+        },
+        {
+          "rowNumber": 107,
+          "utterer": "WRITE.DialogLocalizer.131",
+          "context": "",
+          "sourceEnglish": "As of 2018, how heavy must a tourist be to be too heavy to ride an ass on the island of Santorini, Greece?"
+        },
+        {
+          "rowNumber": 108,
+          "utterer": "WRITE.DialogLocalizer.132",
+          "context": "",
+          "sourceEnglish": "75kg (165lbs)"
+        },
+        {
+          "rowNumber": 109,
+          "utterer": "WRITE.DialogLocalizer.133",
+          "context": "",
+          "sourceEnglish": "100kg (220lbs)"
+        },
+        {
+          "rowNumber": 110,
+          "utterer": "WRITE.DialogLocalizer.134",
+          "context": "",
+          "sourceEnglish": "In northwestern Australia, wild asses are shot from government helicopters because:"
+        },
+        {
+          "rowNumber": 111,
+          "utterer": "WRITE.DialogLocalizer.135",
+          "context": "",
+          "sourceEnglish": "They are considered an invasive species left behind from British colonization"
+        },
+        {
+          "rowNumber": 112,
+          "utterer": "WRITE.DialogLocalizer.136",
+          "context": "",
+          "sourceEnglish": "They are destroying the natural landscape of the Kimberley"
+        },
+        {
+          "rowNumber": 113,
+          "utterer": "WRITE.DialogLocalizer.186",
+          "context": "",
+          "sourceEnglish": "All of the above"
+        },
+        {
+          "rowNumber": 114,
+          "utterer": "WRITE.DialogLocalizer.137",
+          "context": "",
+          "sourceEnglish": "Equus asinus has been in the service of human beings as a manual labourer for how many years?"
+        },
+        {
+          "rowNumber": 115,
+          "utterer": "WRITE.DialogLocalizer.138",
+          "context": "",
+          "sourceEnglish": "5000 years"
+        },
+        {
+          "rowNumber": 116,
+          "utterer": "WRITE.DialogLocalizer.139",
+          "context": "",
+          "sourceEnglish": "7000 years"
+        }
+      ]
+    },
+    {
+      "sheetName": "E0_GameTitle_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.DialogLocalizer.1",
+          "context": "",
+          "sourceEnglish": "PRESS X TO BEGIN"
+        }
+      ]
+    },
+    {
+      "sheetName": "2x_Intermission_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "",
+          "sourceEnglish": "INTERMISSION"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "",
+          "sourceEnglish": "in which there is a PAUSE of no fixed duration"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.8",
+          "context": "",
+          "sourceEnglish": "PRESS X TO BEGIN WHENEVER"
+        }
+      ]
+    },
+    {
+      "sheetName": "4x_Intermission_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "",
+          "sourceEnglish": "INTERMISSION"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "",
+          "sourceEnglish": "in which there is a PAUSE of no fixed duration"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.8",
+          "context": "",
+          "sourceEnglish": "PRESS X TO BEGIN WHENEVER"
+        }
+      ]
+    },
+    {
+      "sheetName": "6x_Intermission_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "",
+          "sourceEnglish": "INTERMISSION"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "",
+          "sourceEnglish": "in which there is a PAUSE of no fixed duration"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.8",
+          "context": "",
+          "sourceEnglish": "PRESS X TO BEGIN WHENEVER"
+        }
+      ]
+    },
+    {
+      "sheetName": "8x_Intermission_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "",
+          "sourceEnglish": "INTERMISSION"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "",
+          "sourceEnglish": "in which there is a PAUSE of no fixed duration"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.8",
+          "context": "",
+          "sourceEnglish": "PRESS X TO BEGIN WHENEVER"
+        }
+      ]
+    }
+  ]
+}

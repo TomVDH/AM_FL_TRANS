@@ -1,0 +1,3665 @@
+{
+  "fileName": "5_asses.masses_E5Proxy",
+  "processedAt": "2025-08-02T03:35:26.326Z",
+  "sheets": [
+    {
+      "sheetName": "E5_Highway_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:HurryUp.1.Smart Ass",
+          "context": "Shouted from off-screen at the top of the scene. The Player then gets control of Slow Ass.",
+          "sourceEnglish": "Hurry up Slow Ass!"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:OwMyKnees.1.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "Ow... my knees."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:OwMyKnees.48.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "Oof..."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:OwMyKnees.49.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "Ah... my arthritis!"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:OwMyKnees.50.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "*grunt*"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:OwMyKnees.52.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "C'mon knees, don't fail me now!"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:OwMyKnees.57.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "I'm too old for jumping..."
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:OwMyKnees.54.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "One step at a time..."
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:OwMyKnees.55.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "*heavy breathing*"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:OwMyKnees.56.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "My poor joints."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:OwMyKnees.51.Slow Ass",
+          "context": "Random efforts from when Slow Ass is walking/jumping.",
+          "sourceEnglish": "Ooo the pain!"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:ZooOrCircus.21.Smart Ass",
+          "context": "Slow Ass catches up with the rest of the group.",
+          "sourceEnglish": "Hey! What's taking you so long?"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:ZooOrCircus.20.Smart Ass",
+          "context": "Jump to line 16 or 18.",
+          "sourceEnglish": "What did I tell you! Jobs!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "MENU.Dialog:ZooOrCircus.2",
+          "context": "Branch 1.1. To the Zoo.",
+          "sourceEnglish": "Zoo"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:ZooOrCircus.11.Smart Ass",
+          "context": "The Herd runs off. End of scene.",
+          "sourceEnglish": "To the left!"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "MENU.Dialog:ZooOrCircus.3",
+          "context": "Branch 1.2. To the Circus.",
+          "sourceEnglish": "Circus"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:ZooOrCircus.10.Smart Ass",
+          "context": "The Herd runs off. End of scene.",
+          "sourceEnglish": "To the right!"
+        }
+      ]
+    },
+    {
+      "sheetName": "E5_EpisodeTitle_Circus_localiza",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "",
+          "sourceEnglish": "EPISODE FIVE"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "",
+          "sourceEnglish": "THE CIRCUS"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.8",
+          "context": "",
+          "sourceEnglish": "Press X to Begin"
+        }
+      ]
+    },
+    {
+      "sheetName": "E5_CircusMain_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key\ne",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.1",
+          "context": "",
+          "sourceEnglish": "6 months later"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.2",
+          "context": "",
+          "sourceEnglish": "ACT ONE"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "WRITE.Dialog:Localizer.3",
+          "context": "",
+          "sourceEnglish": "ACT TWO"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "WRITE.Dialog:Localizer.4",
+          "context": "",
+          "sourceEnglish": "ACT THREE"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "",
+          "sourceEnglish": "ACT FOUR"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "WRITE.Dialog:Localizer.6",
+          "context": "",
+          "sourceEnglish": "ACT FIVE"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:RingmasterOpening.1.Ringmaster Rico",
+          "context": "Rico introduces the Circus show",
+          "sourceEnglish": "Welcome one and all to THE BIG CITY CIRCUS!"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:RingmasterOpening.38.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Where entertainment meets exotic animals... exotic animals meet art..."
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:RingmasterOpening.37.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "...and art meets..."
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:RingmasterOpening.104.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "FIRE!"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:RingmasterOpening.41.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Boy-oh-boy do we have a show for you TONIGHT!"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:RingmasterOpening.40.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Will it be participatory?"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:RingmasterOpening.57.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Yes!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:RingmasterOpening.56.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Will it be dangerous?"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:RingmasterOpening.58.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Yes!"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:RingmasterOpening.54.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Will there be an intermission?"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:RingmasterOpening.130.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Not on your LIFE!"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:RingmasterOpening.131.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "But we are selling popcorn in the lobby!"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:RingmasterOpening.60.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "The acts you'll see tonight will each be more visually spectacular, more death-defying, more baffling than the last!"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:RingmasterOpening.67.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Performing for you is a cast of exotic animals who were BORN for the stage."
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:RingmasterOpening.66.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "They want, NAY, they LIVE to entertain you!"
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:RingmasterOpening.65.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "They're HUNGRY for your applause!"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:RingmasterOpening.64.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "HELL, their jobs depend on it!"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:RingmasterOpening.70.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "And speaking of jobs, none of us would be here tonight if it weren't for our sponsor..."
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:RingmasterOpening.159.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Mecha City's most benevolent benefactor, Mme. Derriere!"
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:RingmasterOpening.158.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Let's give her a round of applause!"
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:RingmasterOpening.135.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "ALSO! I have a very big announcement at the end of tonight's show..."
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:RingmasterOpening.136.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "So stay tuned!"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:RingmasterOpening.69.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Our FIRST ACT comes to you from the grassy plains of the Savannah!"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:RingmasterOpening.74.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Please give a big round of applause for..."
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:RingmasterOpening.29.Ringmaster Rico",
+          "context": "The Player gains control of the Elephant.\nAfter the mini-game, the dialogue jumps to either line 35 or 47.",
+          "sourceEnglish": "...ELI THE AFRICAN ELEPHANT!"
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:ElephantWrongWay.1.Elephant",
+          "context": "This dialogue is said if the Elephant tries to the go the wrong way",
+          "sourceEnglish": "This isn't the way to the stage..."
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.35.Ringmaster Rico",
+          "context": "After the Elephant's section, Rico reviews the performance.\nThis is if the Elephant gave a BAD show.",
+          "sourceEnglish": "Give a polite round of applause for Eli the Elephant who..."
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.199.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "...tried their best to roll with it, but didn't quite fill the stage."
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.198.Audience Member Laurel",
+          "context": "",
+          "sourceEnglish": "That elephant seemed kind of small..."
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.197.Ringmaster Rico",
+          "context": "Formerly: That's what you get when you pay your performers peanuts!",
+          "sourceEnglish": "What do you expect when your performer only wants to be paid peanuts?"
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.196.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "But seriously folks, these animals have traveled a long way to get here."
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.195.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "They've been rehearsing non-stop for months to bring you a great show...so be KIND."
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.194.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "It's tough being the one in the spotlight."
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:BackstageElephant.104.Smart Ass",
+          "context": "The Elephant goes back stage.\nThis is the version of dialogue following a BAD performance.",
+          "sourceEnglish": "What kind of lead-in was that?!"
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:BackstageElephant.117.Big Ass",
+          "context": "",
+          "sourceEnglish": "Even after all that rehearsing, the audience sure knows how to make you feel small."
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:BackstageElephant.116.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Ha! Let me show you how it's done..."
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:BackstageElephant.111.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Once the crowd sees my routine, the Ringmaster is sure to announce a World Tour!"
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:BackstageElephant.114.Big Ass",
+          "context": "Player gains control of the Gorilla.",
+          "sourceEnglish": "Don't keep them waiting!"
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.188.Ringmaster Rico",
+          "context": "After the Elephant's section, Rico reviews the performance.\nThis is if the Elephant gave a GOOD show.",
+          "sourceEnglish": "Wow—what a COLOSSAL feat!"
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.290.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "A JUMBO serving of entertainment!"
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.186.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "That was one helluva SHOW."
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.291.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Am I RIGHT?!"
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.192.Audience Member Laurel",
+          "context": "",
+          "sourceEnglish": "You're RIGHT!"
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.185.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "These animals have traveled a long way to get here."
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.191.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "They've been rehearsing non-stop for months—and it shows!"
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.34.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "They deserve to be in the spotlight."
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.190.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "And so do I!"
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:BackstageElephant.113.Smart Ass",
+          "context": "The Elephant goes back stage.\nThis is the version of dialogue following a GOOD performance.",
+          "sourceEnglish": "Tonight's crowd is easy!"
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "SAY.Dialog:BackstageElephant.112.Big Ass",
+          "context": "",
+          "sourceEnglish": "It's thanks to all the rehearsing we've been doing."
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "SAY.Dialog:BackstageElephant.115.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Once the crowd sees my routine, the Ringmaster is sure to announce a World Tour!"
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "SAY.Dialog:BackstageElephant.118.Big Ass",
+          "context": "Player gains control of the Gorilla.",
+          "sourceEnglish": "Don't keep them waiting!"
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "SAY.Dialog:BackstageElephant.94.Big Ass",
+          "context": "Elephant repeater.",
+          "sourceEnglish": "Now is not the time to get stage fright!"
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "SAY.Dialog:RicoIntroductions.44.Ringmaster Rico",
+          "context": "Back on stage: Rico introduces the Gorilla",
+          "sourceEnglish": "Alright... enough monkeying around..."
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "SAY.Dialog:RicoIntroductions.49.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Let's bring out the next act!"
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "SAY.Dialog:RicoIntroductions.48.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "You'll be astounded at how intelligent she is."
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "SAY.Dialog:RicoIntroductions.51.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Her DNA is 95% HUMAN and 5% MAGIC... and she takes direction like a champ!"
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "SAY.Dialog:RicoIntroductions.50.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "From deep in the misty rainforests of the Congo—"
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "SAY.Dialog:RicoIntroductions.45.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Give me two opposable thumbs up for..."
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "SAY.Dialog:RicoIntroductions.55.Ringmaster Rico",
+          "context": "The Player gains control of the Gorilla again.\nAfter the mini-game, the dialogue jumps to either line 68 or 81.",
+          "sourceEnglish": "QUEENIE THE GORILLA!"
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.55.Ringmaster Rico",
+          "context": "After the Gorilla's section, Rico reviews the performance.\nThis is if the Gorilla gave a BAD show.",
+          "sourceEnglish": "Okay, okay, sometimes live acts can get a little hairy."
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.218.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Not everyone has the ape-titude to be a star!"
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.216.Audience Member David",
+          "context": "",
+          "sourceEnglish": "I want my money back!"
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.222.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "No refunds! You won't be getting your silver back!"
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.221.Audience Member David",
+          "context": "",
+          "sourceEnglish": "Then we're leaving!"
+        },
+        {
+          "rowNumber": 73,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.220.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Don't leave! I guarantee our next few acts will be more bearable!"
+        },
+        {
+          "rowNumber": 74,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.215.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "...and I'm not lyin' about the big finale!"
+        },
+        {
+          "rowNumber": 75,
+          "utterer": "SAY.Dialog:BackstageGorilla.108.Kick Ass",
+          "context": "The Gorilla goes back stage.\nThis is the version of dialogue following a BAD performance.",
+          "sourceEnglish": "What HAPPENED out there?!"
+        },
+        {
+          "rowNumber": 76,
+          "utterer": "SAY.Dialog:BackstageGorilla.131.Smart Ass",
+          "context": "",
+          "sourceEnglish": "The stupid audience just doesn't appreciate my talents!"
+        },
+        {
+          "rowNumber": 77,
+          "utterer": "SAY.Dialog:BackstageGorilla.130.Kick Ass",
+          "context": "",
+          "sourceEnglish": "Were there any presenters in the audience?"
+        },
+        {
+          "rowNumber": 78,
+          "utterer": "SAY.Dialog:BackstageGorilla.129.Kick Ass",
+          "context": "",
+          "sourceEnglish": "You know, for THE TOUR?"
+        },
+        {
+          "rowNumber": 79,
+          "utterer": "SAY.Dialog:BackstageGorilla.128.Smart Ass",
+          "context": "",
+          "sourceEnglish": "New plan!"
+        },
+        {
+          "rowNumber": 80,
+          "utterer": "SAY.Dialog:BackstageGorilla.133.Smart Ass",
+          "context": "Player gains control of the Zebra.",
+          "sourceEnglish": "Just get out there and dazzle them!"
+        },
+        {
+          "rowNumber": 81,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.52.Ringmaster Rico",
+          "context": "After the Gorilla's section, Rico reviews the performance.\nThis is if the Gorilla gave a GOOD show.",
+          "sourceEnglish": "What APE-TITUDE under such HAIRY circumstances!"
+        },
+        {
+          "rowNumber": 82,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.210.Audience Member David",
+          "context": "",
+          "sourceEnglish": "QUEENIE is a star!"
+        },
+        {
+          "rowNumber": 83,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.206.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "What am I, chopped liver?"
+        },
+        {
+          "rowNumber": 84,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.213.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "But it's true, these animals are something special."
+        },
+        {
+          "rowNumber": 85,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.212.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "...and they make me look good!"
+        },
+        {
+          "rowNumber": 86,
+          "utterer": "SAY.Dialog:BackstageGorilla.115.Kick Ass",
+          "context": "",
+          "sourceEnglish": "You hear that?! They LOVED YOU!"
+        },
+        {
+          "rowNumber": 87,
+          "utterer": "SAY.Dialog:BackstageGorilla.123.Smart Ass",
+          "context": "",
+          "sourceEnglish": "You can say that again!"
+        },
+        {
+          "rowNumber": 88,
+          "utterer": "SAY.Dialog:BackstageGorilla.121.Kick Ass",
+          "context": "",
+          "sourceEnglish": "Do you think there were any presenters in the audience?"
+        },
+        {
+          "rowNumber": 89,
+          "utterer": "SAY.Dialog:BackstageGorilla.126.Smart Ass",
+          "context": "",
+          "sourceEnglish": "I think so!"
+        },
+        {
+          "rowNumber": 90,
+          "utterer": "SAY.Dialog:BackstageGorilla.125.Smart Ass",
+          "context": "",
+          "sourceEnglish": "There were two Humans in the front row with dark hats who couldn't take their eyes off me!"
+        },
+        {
+          "rowNumber": 91,
+          "utterer": "SAY.Dialog:BackstageGorilla.124.Smart Ass",
+          "context": "Player gains control of the Zebra.",
+          "sourceEnglish": "Ha ha! Good luck following my act!"
+        },
+        {
+          "rowNumber": 92,
+          "utterer": "SAY.Dialog:BackstageGorilla.101.Smart Ass",
+          "context": "Gorilla repeater.",
+          "sourceEnglish": "We need that applause!"
+        },
+        {
+          "rowNumber": 93,
+          "utterer": "SAY.Dialog:RicoIntroductions.62.Ringmaster Rico",
+          "context": "Back on stage: Rico introduces the Zebra.",
+          "sourceEnglish": "This next act is a majestic beast from the Far East."
+        },
+        {
+          "rowNumber": 94,
+          "utterer": "SAY.Dialog:RicoIntroductions.65.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Let there be no Kung-Fu-sion, no one balances skill and speed quite like him!"
+        },
+        {
+          "rowNumber": 95,
+          "utterer": "SAY.Dialog:RicoIntroductions.56.Ringmaster Rico",
+          "context": "The Player gains control of the Zebra again.\nAfter the mini-game, the dialogue jumps to either line 95 or 113.",
+          "sourceEnglish": "Welcome to the stage YINYANG THE CHINESE ZEBRA!!"
+        },
+        {
+          "rowNumber": 96,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.70.Ringmaster Rico",
+          "context": "After the Zebra's section, Rico reviews the performance.\nThis is if the Zebra gave a BAD show.",
+          "sourceEnglish": "*Oof*"
+        },
+        {
+          "rowNumber": 97,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.227.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "We weren't in balance today..."
+        },
+        {
+          "rowNumber": 98,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.293.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "But sometimes, disasters turn out to be blessings!"
+        },
+        {
+          "rowNumber": 99,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.226.Audience Members Patrick & Milton",
+          "context": "",
+          "sourceEnglish": "We're confused!"
+        },
+        {
+          "rowNumber": 100,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.225.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Come on folks! That's the risk of live performance: you never know what will happen..."
+        },
+        {
+          "rowNumber": 101,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.224.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "... and it could have been worse!"
+        },
+        {
+          "rowNumber": 102,
+          "utterer": "SAY.Dialog:BackstageZebra.165.Kick Ass",
+          "context": "The Gorilla goes back stage.\nThis is the version of dialogue following a BAD performance.",
+          "sourceEnglish": "Some of my paint RUBBED OFF!"
+        },
+        {
+          "rowNumber": 103,
+          "utterer": "SAY.Dialog:BackstageZebra.156.Kick Ass",
+          "context": "",
+          "sourceEnglish": "@#$%&!"
+        },
+        {
+          "rowNumber": 104,
+          "utterer": "SAY.Dialog:BackstageZebra.129.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Are you joking?!"
+        },
+        {
+          "rowNumber": 105,
+          "utterer": "SAY.Dialog:BackstageZebra.163.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Did you forget that keeping up this act means keeping ourselves employed?"
+        },
+        {
+          "rowNumber": 106,
+          "utterer": "SAY.Dialog:BackstageZebra.169.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Finding another job with no Machines isn't going to be easy."
+        },
+        {
+          "rowNumber": 107,
+          "utterer": "SAY.Dialog:BackstageZebra.168.Kick Ass",
+          "context": "",
+          "sourceEnglish": "The Humans would like us JUST THE SAME if we performed as ourselves."
+        },
+        {
+          "rowNumber": 108,
+          "utterer": "SAY.Dialog:BackstageZebra.167.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Ha! Not a chance!"
+        },
+        {
+          "rowNumber": 109,
+          "utterer": "SAY.Dialog:BackstageZebra.170.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Our job is to create magic and illusion, not authenticity!"
+        },
+        {
+          "rowNumber": 110,
+          "utterer": "SAY.Dialog:BackstageZebra.162.Big Ass",
+          "context": "",
+          "sourceEnglish": "Is it problematic that Kick is appropriating a Zebra's stripes? Isn't it a little bit rac—?"
+        },
+        {
+          "rowNumber": 111,
+          "utterer": "SAY.Dialog:BackstageZebra.171.Smart Ass",
+          "context": "",
+          "sourceEnglish": "—Does it look like there's a real Zebra around here anywhere?"
+        },
+        {
+          "rowNumber": 112,
+          "utterer": "SAY.Dialog:BackstageZebra.174.Smart Ass",
+          "context": "",
+          "sourceEnglish": "No."
+        },
+        {
+          "rowNumber": 113,
+          "utterer": "SAY.Dialog:BackstageZebra.173.Smart Ass",
+          "context": "Jump to either line 113 or x (skipping Bear).",
+          "sourceEnglish": "And if there was, Kick Ass wouldn't have a role in the ensemble."
+        },
+        {
+          "rowNumber": 114,
+          "utterer": "SAY.Dialog:BackstageZebra.185.Sad Ass",
+          "context": "Branch (BAD Performance Version): \nIf Sad left the Farm, Sad Ass enters.",
+          "sourceEnglish": "...I'm not sure real Bears ride bicycles though..."
+        },
+        {
+          "rowNumber": 115,
+          "utterer": "SAY.Dialog:BackstageZebra.198.Smart Ass",
+          "context": "Player gains control of the Bear.",
+          "sourceEnglish": "Ha! Of course they do! Now get out there!"
+        },
+        {
+          "rowNumber": 116,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.67.Ringmaster Rico",
+          "context": "After the Zebra's section, Rico reviews the performance.\nThis is if the Zebra gave a GOOD show.",
+          "sourceEnglish": "What a RUSH! What a HIGH!"
+        },
+        {
+          "rowNumber": 117,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.292.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "You saw it here tonight folks!"
+        },
+        {
+          "rowNumber": 118,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.231.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "We're blurring the lines between theatre, dance, and circus!"
+        },
+        {
+          "rowNumber": 119,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.233.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "We are INTERDISCIPLINARY!"
+        },
+        {
+          "rowNumber": 120,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.240.Ringmaster Rico",
+          "context": "Player gains control of the Zebra.",
+          "sourceEnglish": "...and it only gets better!"
+        },
+        {
+          "rowNumber": 121,
+          "utterer": "SAY.Dialog:BackstageZebra.128.Big Ass",
+          "context": "The Zebra goes back stage.\nThis is the version of dialogue following a GOOD performance.",
+          "sourceEnglish": "Your duet with the Ringmaster brought tears to my eyes!"
+        },
+        {
+          "rowNumber": 122,
+          "utterer": "SAY.Dialog:BackstageZebra.153.Kick Ass",
+          "context": "",
+          "sourceEnglish": "WE NAILED IT!"
+        },
+        {
+          "rowNumber": 123,
+          "utterer": "SAY.Dialog:BackstageZebra.152.Big Ass",
+          "context": "",
+          "sourceEnglish": "Oooooo I can't wait to go on tour! Bigger crowds, cushier dressing rooms..."
+        },
+        {
+          "rowNumber": 124,
+          "utterer": "SAY.Dialog:BackstageZebra.151.Kick Ass",
+          "context": "",
+          "sourceEnglish": "—and better costumes!"
+        },
+        {
+          "rowNumber": 125,
+          "utterer": "SAY.Dialog:BackstageZebra.194.Kick Ass",
+          "context": "",
+          "sourceEnglish": "This paint is making me so DAMN ITCHY!"
+        },
+        {
+          "rowNumber": 126,
+          "utterer": "SAY.Dialog:BackstageZebra.196.Kick Ass",
+          "context": "",
+          "sourceEnglish": "@#$%&!"
+        },
+        {
+          "rowNumber": 127,
+          "utterer": "SAY.Dialog:BackstageZebra.155.Big Ass",
+          "context": "",
+          "sourceEnglish": "And I'm outgrowing my Elephant suit..."
+        },
+        {
+          "rowNumber": 128,
+          "utterer": "SAY.Dialog:BackstageZebra.154.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Then stop eating so much!"
+        },
+        {
+          "rowNumber": 129,
+          "utterer": "SAY.Dialog:BackstageZebra.159.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Keeping up this act means keeping ourselves employed!"
+        },
+        {
+          "rowNumber": 130,
+          "utterer": "SAY.Dialog:BackstageZebra.195.Smart Ass",
+          "context": "",
+          "sourceEnglish": "We have it good here!"
+        },
+        {
+          "rowNumber": 131,
+          "utterer": "SAY.Dialog:BackstageZebra.241.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Finding another job with no Machines isn't going to be easy."
+        },
+        {
+          "rowNumber": 132,
+          "utterer": "SAY.Dialog:BackstageZebra.160.Kick Ass",
+          "context": "",
+          "sourceEnglish": "You're right—this is the BEST job—we've EVER had!"
+        },
+        {
+          "rowNumber": 133,
+          "utterer": "SAY.Dialog:BackstageZebra.158.Big Ass",
+          "context": "Jump to either line 133 or x (skipping Bear).",
+          "sourceEnglish": "We've finally found a place to work where we all fit in."
+        },
+        {
+          "rowNumber": 134,
+          "utterer": "SAY.Dialog:BackstageZebra.183.Sad Ass",
+          "context": "Branch (Good Performance Version): \nIf Sad left the Farm, Sad Ass enters.",
+          "sourceEnglish": "Says all of you who don't have to ride a bicycle..."
+        },
+        {
+          "rowNumber": 135,
+          "utterer": "SAY.Dialog:BackstageZebra.136.Kick Ass",
+          "context": "",
+          "sourceEnglish": "We believe IN YOU!"
+        },
+        {
+          "rowNumber": 136,
+          "utterer": "SAY.Dialog:BackstageZebra.137.Big Ass",
+          "context": "Player gains control of the Bear.",
+          "sourceEnglish": "Go show the crowd your cool moves Sad!"
+        },
+        {
+          "rowNumber": 137,
+          "utterer": "SAY.Dialog:BackstageZebra.102.Kick Ass",
+          "context": "Zebra repeater.",
+          "sourceEnglish": "You can DO IT!"
+        },
+        {
+          "rowNumber": 138,
+          "utterer": "SAY.Dialog:RicoIntroductions.72.Ringmaster Rico",
+          "context": "Back on stage: Rico introduces the Bear.",
+          "sourceEnglish": "Our next performer is done with hibernating backstage and ready to spring into action!"
+        },
+        {
+          "rowNumber": 139,
+          "utterer": "SAY.Dialog:RicoIntroductions.17.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "All the way from the Russian Tundra, give a globally warm welcome to my bike-riding Bolshevik—"
+        },
+        {
+          "rowNumber": 140,
+          "utterer": "SAY.Dialog:RicoIntroductions.97.Ringmaster Rico",
+          "context": "The Player gains control of the Bear again.\nAfter the mini-game, the dialogue jumps to either line s or d.",
+          "sourceEnglish": "CHEKHOV THE KAMCHATKA BROWN BEAR!"
+        },
+        {
+          "rowNumber": 141,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.86.Ringmaster Rico",
+          "context": "After the Bear's section, Rico reviews the performance.\nThis is if the Bear gave a BAD show.",
+          "sourceEnglish": "Let's take a moment to pause and reflect on that act before we shift gears..."
+        },
+        {
+          "rowNumber": 142,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.261.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Let me be real with you—the next animal is not what it seems..."
+        },
+        {
+          "rowNumber": 143,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.260.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "It's even BETTER!"
+        },
+        {
+          "rowNumber": 144,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.259.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "And after our next and final act, you'll get my big announcement!\\n"
+        },
+        {
+          "rowNumber": 145,
+          "utterer": "SAY.Dialog:BackstageBear.114.Big Ass",
+          "context": "The Bear goes back stage.\nThis is the version of dialogue following a BAD performance.",
+          "sourceEnglish": "Don't beat yourself up Sad, the bike was a late addition, you haven't had a lot of time to practice."
+        },
+        {
+          "rowNumber": 146,
+          "utterer": "SAY.Dialog:BackstageBear.122.Sad Ass",
+          "context": "",
+          "sourceEnglish": "... I'm not made to ride a bike..."
+        },
+        {
+          "rowNumber": 147,
+          "utterer": "SAY.Dialog:BackstageBear.125.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I don't want to derail the show, but it troubles me that I haven't found my talent yet..."
+        },
+        {
+          "rowNumber": 148,
+          "utterer": "SAY.Dialog:BackstageBear.124.Sad Ass",
+          "context": "",
+          "sourceEnglish": "... maybe tomorrow I can try the Seal act again..."
+        },
+        {
+          "rowNumber": 149,
+          "utterer": "SAY.Dialog:BackstageBear.123.Kick Ass",
+          "context": "",
+          "sourceEnglish": "You know Sad, you can't keep trying to be a different animal EVERY night."
+        },
+        {
+          "rowNumber": 150,
+          "utterer": "SAY.Dialog:BackstageBear.121.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Where the hell is Slow?!"
+        },
+        {
+          "rowNumber": 151,
+          "utterer": "SAY.Dialog:BackstageBear.188.Smart Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "It's time for the Finale!! If he screws this up for me, I'm going to—"
+        },
+        {
+          "rowNumber": 152,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.83.Ringmaster Rico",
+          "context": "After the Bear's section, Rico reviews the performance.\nThis is if the Bear gave a GOOD show.",
+          "sourceEnglish": "My head is spinning—with how great that act was!"
+        },
+        {
+          "rowNumber": 153,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.294.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "I can barely hear you—give me another round of applause for CHEKHOV!"
+        },
+        {
+          "rowNumber": 154,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.244.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Even though every animal is different, under the spotlight they are all the same..."
+        },
+        {
+          "rowNumber": 155,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.243.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "—STARS!"
+        },
+        {
+          "rowNumber": 156,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.250.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Bear with us folks! After the next and final act, you'll get my big announcement!"
+        },
+        {
+          "rowNumber": 157,
+          "utterer": "SAY.Dialog:BackstageBear.113.Kick Ass",
+          "context": "The Bear goes back stage.\nThis is the version of dialogue following a GOOD performance.",
+          "sourceEnglish": "Sad!! Your bike routine is OFF THE CHAIN!"
+        },
+        {
+          "rowNumber": 158,
+          "utterer": "SAY.Dialog:BackstageBear.128.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Thanks... I've really got a handle on it now."
+        },
+        {
+          "rowNumber": 159,
+          "utterer": "SAY.Dialog:BackstageBear.131.Sad Ass",
+          "context": "",
+          "sourceEnglish": "...you know, I'm really glad I came with you, Comrades..."
+        },
+        {
+          "rowNumber": 160,
+          "utterer": "SAY.Dialog:BackstageBear.130.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Ha! 'Comrade'?"
+        },
+        {
+          "rowNumber": 161,
+          "utterer": "SAY.Dialog:BackstageBear.187.Kick Ass",
+          "context": "",
+          "sourceEnglish": "I think we're MORE than Comrades now!"
+        },
+        {
+          "rowNumber": 162,
+          "utterer": "SAY.Dialog:BackstageBear.129.Big Ass",
+          "context": "",
+          "sourceEnglish": "We're closer than ever. We're an ENSEMBLE!"
+        },
+        {
+          "rowNumber": 163,
+          "utterer": "SAY.Dialog:BackstageBear.127.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Is this what it feels like..."
+        },
+        {
+          "rowNumber": 164,
+          "utterer": "SAY.Dialog:BackstageBear.132.Sad Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "...to be happy?"
+        },
+        {
+          "rowNumber": 165,
+          "utterer": "SAY.Dialog:BackstageBear.137.Slow Ass",
+          "context": "Slow Ass arrives dressed as a Lion.",
+          "sourceEnglish": "Sorry I'm late."
+        },
+        {
+          "rowNumber": 166,
+          "utterer": "SAY.Dialog:BackstageBear.149.Slow Ass",
+          "context": "",
+          "sourceEnglish": "This costume takes forever to p-p-put on..."
+        },
+        {
+          "rowNumber": 167,
+          "utterer": "SAY.Dialog:BackstageBear.150.Slow Ass",
+          "context": "",
+          "sourceEnglish": "*huff p-p-puff* I'm p-p-pouring sweat from the adrenaline already..."
+        },
+        {
+          "rowNumber": 168,
+          "utterer": "SAY.Dialog:BackstageBear.180.Smart Ass",
+          "context": "",
+          "sourceEnglish": "The Ringmaster can't afford to keep buying you new costumes before we go on Tour."
+        },
+        {
+          "rowNumber": 169,
+          "utterer": "SAY.Dialog:BackstageZebra.178.Smart Ass",
+          "context": "",
+          "sourceEnglish": "SO DON'T TOUCH THE FIRE!"
+        },
+        {
+          "rowNumber": 170,
+          "utterer": "SAY.Dialog:BackstageBear.183.Slow Ass",
+          "context": "",
+          "sourceEnglish": "*inhale*"
+        },
+        {
+          "rowNumber": 171,
+          "utterer": "SAY.Dialog:BackstageBear.184.Slow Ass",
+          "context": "",
+          "sourceEnglish": "*exhale*"
+        },
+        {
+          "rowNumber": 172,
+          "utterer": "SAY.Dialog:BackstageBear.189.Smart Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "Slow Ass! Get out there or I'll rip you a new one!"
+        },
+        {
+          "rowNumber": 173,
+          "utterer": "SAY.Dialog:BackstageBear.103.Smart Ass",
+          "context": "If Bear was played, final line: Said to Slow Ass.",
+          "sourceEnglish": "Get your butt out there or I'll rip you a new one!!"
+        },
+        {
+          "rowNumber": 174,
+          "utterer": "SAY.Dialog:BackstageZebra.110.Slow Ass",
+          "context": "If Sad Ass is not present, a copy of the above dialog plays out.",
+          "sourceEnglish": "Sorry I'm late."
+        },
+        {
+          "rowNumber": 175,
+          "utterer": "SAY.Dialog:BackstageZebra.148.Slow Ass",
+          "context": "",
+          "sourceEnglish": "This costume takes forever to p-p-put on..."
+        },
+        {
+          "rowNumber": 176,
+          "utterer": "SAY.Dialog:BackstageZebra.147.Slow Ass",
+          "context": "",
+          "sourceEnglish": "*huff p-p-puff* I'm p-p-pouring sweat from the adrenaline already..."
+        },
+        {
+          "rowNumber": 177,
+          "utterer": "SAY.Dialog:BackstageZebra.199.Smart Ass",
+          "context": "",
+          "sourceEnglish": "The Ringmaster can't afford to keep buying you new costumes before we go on Tour."
+        },
+        {
+          "rowNumber": 178,
+          "utterer": "SAY.Dialog:BackstageBear.182.Smart Ass",
+          "context": "",
+          "sourceEnglish": "SO DON'T TOUCH THE FIRE!"
+        },
+        {
+          "rowNumber": 179,
+          "utterer": "SAY.Dialog:BackstageZebra.182.Slow Ass",
+          "context": "",
+          "sourceEnglish": "*inhale*"
+        },
+        {
+          "rowNumber": 180,
+          "utterer": "SAY.Dialog:BackstageZebra.181.Slow Ass",
+          "context": "",
+          "sourceEnglish": "*exhale*"
+        },
+        {
+          "rowNumber": 181,
+          "utterer": "SAY.Dialog:BackstageZebra.179.Smart Ass",
+          "context": "Jump to line x.",
+          "sourceEnglish": "Slow Ass! Get out there or I'll rip you a new one!"
+        },
+        {
+          "rowNumber": 182,
+          "utterer": "SAY.Dialog:RicoIntroductions.86.Ringmaster Rico",
+          "context": "Back on stage: Rico introduces the Lion.",
+          "sourceEnglish": "Thanks for not staying home and watching TV."
+        },
+        {
+          "rowNumber": 183,
+          "utterer": "SAY.Dialog:RicoIntroductions.85.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "A live performer and a live audience—"
+        },
+        {
+          "rowNumber": 184,
+          "utterer": "SAY.Dialog:RicoIntroductions.84.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "There's just no substitute for the energy of an"
+        },
+        {
+          "rowNumber": 185,
+          "utterer": "SAY.Dialog:RicoIntroductions.79.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "IN"
+        },
+        {
+          "rowNumber": 186,
+          "utterer": "SAY.Dialog:RicoIntroductions.88.Ringmaster Rico",
+          "context": "Needs space or hyphen at start",
+          "sourceEnglish": "-PERSON"
+        },
+        {
+          "rowNumber": 187,
+          "utterer": "SAY.Dialog:RicoIntroductions.87.Ringmaster Rico",
+          "context": "Needs space or hyphen at start",
+          "sourceEnglish": "-CROWD!"
+        },
+        {
+          "rowNumber": 188,
+          "utterer": "SAY.Dialog:RicoIntroductions.94.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "I hope you're all ready for the LAST and FINAL act of this evening."
+        },
+        {
+          "rowNumber": 189,
+          "utterer": "SAY.Dialog:RicoIntroductions.93.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "There's nothing tame about it."
+        },
+        {
+          "rowNumber": 190,
+          "utterer": "SAY.Dialog:RicoIntroductions.92.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "In fact, it's on..."
+        },
+        {
+          "rowNumber": 191,
+          "utterer": "SAY.Dialog:RicoIntroductions.162.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "FIRE!"
+        },
+        {
+          "rowNumber": 192,
+          "utterer": "SAY.Dialog:RicoIntroductions.91.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "All the way from India—my pride and joy:"
+        },
+        {
+          "rowNumber": 193,
+          "utterer": "SAY.Dialog:RicoIntroductions.90.Ringmaster Rico",
+          "context": "The Player gains control of the Lion again.\nAfter the mini-game, the dialogue jumps to either line s or d.",
+          "sourceEnglish": "BHUT JOLOKIA THE SPICY ASIATIC LION!"
+        },
+        {
+          "rowNumber": 195,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.284.Ringmaster Rico",
+          "context": "After the Lion's section, Rico makes his big announcement!",
+          "sourceEnglish": "I'm not lyin' folks... that could have been better."
+        },
+        {
+          "rowNumber": 196,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.298.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "On the whole, I'd say tonight's show was a WILD success!"
+        },
+        {
+          "rowNumber": 197,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.299.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "On the whole, I guess tonight was a bit off."
+        },
+        {
+          "rowNumber": 198,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.300.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "For those of you who have stayed—thank you for not walking out!"
+        },
+        {
+          "rowNumber": 199,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.310.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Let me hear you ROAR!"
+        },
+        {
+          "rowNumber": 200,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.312.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "But don't worry!"
+        },
+        {
+          "rowNumber": 201,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.311.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Now it's time for my BIG ANNOUNCEMENT."
+        },
+        {
+          "rowNumber": 202,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.314.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "This hard-working cast of animals is being retired."
+        },
+        {
+          "rowNumber": 203,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.313.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Tonight was their LAST SHOW."
+        },
+        {
+          "rowNumber": 204,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.316.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Get ready for consistently perfect performances every night by the world's most exotic and endangered creatures!"
+        },
+        {
+          "rowNumber": 205,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.418.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Thanks to our new sponsor, the benevolent Mme. Derriere, we can finally afford our DREAM CAST..."
+        },
+        {
+          "rowNumber": 206,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.317.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "of ROBOTS!"
+        },
+        {
+          "rowNumber": 207,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.408.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "We're going to be the NOAH'S ARK of ENTERTAINMENT."
+        },
+        {
+          "rowNumber": 208,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.315.Ringmaster Rico",
+          "context": "The Player gains control of the Lion again.",
+          "sourceEnglish": "GOODNIGHT EVERYBODY!"
+        },
+        {
+          "rowNumber": 209,
+          "utterer": "SAY.Dialog:Ending.33.Slow Ass",
+          "context": "The Lion goes backstage to find the others.",
+          "sourceEnglish": "Hey everyb-b-body! Did you hear the announcement!?"
+        },
+        {
+          "rowNumber": 210,
+          "utterer": "SAY.Dialog:Ending.259.Ringmaster Rico",
+          "context": "Rico is selling the donkeys to mysterious assknappers.",
+          "sourceEnglish": "Thanks for doing business folks!"
+        },
+        {
+          "rowNumber": 211,
+          "utterer": "SAY.Dialog:Ending.260.Big Ass",
+          "context": "",
+          "sourceEnglish": "{vpunch=100,0.75}UH OH! We're in huge trouble!"
+        },
+        {
+          "rowNumber": 212,
+          "utterer": "SAY.Dialog:Ending.261.Smart Ass",
+          "context": "",
+          "sourceEnglish": "I've got a Plan! Slow Ass will save us..."
+        },
+        {
+          "rowNumber": 213,
+          "utterer": "SAY.Dialog:Ending.262.Kick Ass",
+          "context": "",
+          "sourceEnglish": "@#$%&! We're doomed!"
+        },
+        {
+          "rowNumber": 214,
+          "utterer": "SAY.Dialog:Ending.267.Sad Ass",
+          "context": "",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 215,
+          "utterer": "SAY.Dialog:Ending.157.Wedgie",
+          "context": "",
+          "sourceEnglish": "Where's the last donkey?"
+        },
+        {
+          "rowNumber": 216,
+          "utterer": "SAY.Dialog:Ending.162.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Right over there."
+        },
+        {
+          "rowNumber": 217,
+          "utterer": "SAY.Dialog:Ending.158.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "My show needs Robots more than donkeys in cheap costumes if I'm gonna get bums in seats."
+        },
+        {
+          "rowNumber": 218,
+          "utterer": "SAY.Dialog:Ending.161.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "No hard feelings, donkey."
+        },
+        {
+          "rowNumber": 219,
+          "utterer": "SAY.Dialog:Ending.243.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "Art dies when you stop innovating!"
+        },
+        {
+          "rowNumber": 220,
+          "utterer": "SAY.Dialog:Ending.140.Wedgie",
+          "context": "",
+          "sourceEnglish": "All right donkey. Get in the truck."
+        },
+        {
+          "rowNumber": 221,
+          "utterer": "SAY.Dialog:Ending.141.Melvin",
+          "context": "",
+          "sourceEnglish": "Wait... what if that sleazy Ringmaster is playing a trick on us?"
+        },
+        {
+          "rowNumber": 222,
+          "utterer": "SAY.Dialog:Ending.143.Melvin",
+          "context": "",
+          "sourceEnglish": "What if this one is ACTUALLY a lion and it's going to eat us."
+        },
+        {
+          "rowNumber": 223,
+          "utterer": "SAY.Dialog:Ending.144.Melvin",
+          "context": "",
+          "sourceEnglish": "Then Rico can keep his animals AND our money."
+        },
+        {
+          "rowNumber": 224,
+          "utterer": "SAY.Dialog:Ending.158.Ringmaster Rico",
+          "context": "",
+          "sourceEnglish": "I'll just never make it to the big stage with fakes."
+        },
+        {
+          "rowNumber": 225,
+          "utterer": "SAY.Dialog:Ending.171.Wedgie",
+          "context": "",
+          "sourceEnglish": "Let's catch it quick, we're not being paid for overtime."
+        },
+        {
+          "rowNumber": 226,
+          "utterer": "SAY.Dialog:Ending.172.Wedgie",
+          "context": "Dialogue options. Jump to either line x or y.",
+          "sourceEnglish": "He's a circus hack, not an evil genius, you idiot."
+        },
+        {
+          "rowNumber": 227,
+          "utterer": "MENU.Dialog:Ending.40",
+          "context": "Dialogue option 1.1. Slow Ass runs and hides.",
+          "sourceEnglish": "Run"
+        },
+        {
+          "rowNumber": 228,
+          "utterer": "SAY.Dialog:Ending.217.Melvin",
+          "context": "",
+          "sourceEnglish": "Where did it go?"
+        },
+        {
+          "rowNumber": 229,
+          "utterer": "SAY.Dialog:Ending.220.Wedgie",
+          "context": "",
+          "sourceEnglish": "*wheeze* Screw it. Let's leave it and take the others."
+        },
+        {
+          "rowNumber": 230,
+          "utterer": "SAY.Dialog:Ending.226.Slow Ass",
+          "context": "",
+          "sourceEnglish": "P-p-phew, they didn't find me!"
+        },
+        {
+          "rowNumber": 231,
+          "utterer": "SAY.Dialog:Ending.228.Slow Ass",
+          "context": "Jump to line x. Slow Ass exits.",
+          "sourceEnglish": "Time to b-b-be b-b-brave..."
+        },
+        {
+          "rowNumber": 232,
+          "utterer": "MENU.Dialog:Ending.39",
+          "context": "Dialogue option 1.2. Slow Ass does a convincing roar.",
+          "sourceEnglish": "Roar"
+        },
+        {
+          "rowNumber": 233,
+          "utterer": "SAY.Dialog:Ending.43.Melvin",
+          "context": "",
+          "sourceEnglish": "EEEEE!!!! IT IS A LION!!!"
+        },
+        {
+          "rowNumber": 234,
+          "utterer": "SAY.Dialog:Ending.56.Wedgie",
+          "context": "",
+          "sourceEnglish": "I'm outta here!!"
+        },
+        {
+          "rowNumber": 235,
+          "utterer": "SAY.Dialog:Ending.73.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I've b-b-been p-p-practicing!"
+        },
+        {
+          "rowNumber": 236,
+          "utterer": "SAY.Dialog:Ending.227.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I'm the only one left—I've got to rescue the others!"
+        },
+        {
+          "rowNumber": 237,
+          "utterer": "SAY.Dialog:Ending.72.Slow Ass",
+          "context": "Jump to line x. Slow Ass exits.",
+          "sourceEnglish": "Time to b-b-be b-b-brave and rescue the others."
+        },
+        {
+          "rowNumber": 238,
+          "utterer": "SAY.Dialog:Ending.280.Grandma Kulan",
+          "context": "The camera moves over to Mme. Derriere and Grandma Kulan, who is just on her way out.",
+          "sourceEnglish": "Mme. Derriere, may I have moment of your time?"
+        },
+        {
+          "rowNumber": 239,
+          "utterer": "SAY.Dialog:Ending.281.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "Oh my! Really?"
+        },
+        {
+          "rowNumber": 240,
+          "utterer": "SAY.Dialog:Ending.282.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "My dear, the deaths of your precious grandson and those poor helpless villagers who burned alive—it breaks my heart."
+        },
+        {
+          "rowNumber": 241,
+          "utterer": "SAY.Dialog:Ending.283.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "All that matters is that we don't look back."
+        },
+        {
+          "rowNumber": 242,
+          "utterer": "SAY.Dialog:Ending.284.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "But his life was cut short during the tragic fires of Bumpkin Village exactly 6 months and 3 weeks ago."
+        },
+        {
+          "rowNumber": 243,
+          "utterer": "SAY.Dialog:Ending.285.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "My darling Joey would have loved this show."
+        },
+        {
+          "rowNumber": 244,
+          "utterer": "SAY.Dialog:Ending.286.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "With all your power and resources, will you prevent explosions like Bumpkin's from ever happening again?"
+        },
+        {
+          "rowNumber": 245,
+          "utterer": "SAY.Dialog:Ending.287.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "I can promise you that the research I'm funding right now will transform the face of the world."
+        },
+        {
+          "rowNumber": 246,
+          "utterer": "SAY.Dialog:Ending.288.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "They deserved Progress!"
+        },
+        {
+          "rowNumber": 247,
+          "utterer": "SAY.Dialog:Ending.289.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "They deserved purposeful jobs!"
+        },
+        {
+          "rowNumber": 248,
+          "utterer": "SAY.Dialog:Ending.290.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "Bumpkinites deserved more than dangerously out-of-date and accident-prone equipment."
+        },
+        {
+          "rowNumber": 249,
+          "utterer": "SAY.Dialog:Ending.291.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "Walk with me."
+        },
+        {
+          "rowNumber": 250,
+          "utterer": "SAY.Dialog:Ending.292.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "But I don't even have the strength to go back and visit Bumpkin..."
+        },
+        {
+          "rowNumber": 251,
+          "utterer": "SAY.Dialog:Ending.293.Mme. Derriere",
+          "context": "End of Circus.",
+          "sourceEnglish": "And even you can play a part in it!"
+        }
+      ]
+    },
+    {
+      "sheetName": "E5_EpisodeTitle_Zoo_localizatio",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "",
+          "sourceEnglish": "EPISODE FIVE"
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "",
+          "sourceEnglish": "THE ZOO"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.8",
+          "context": "",
+          "sourceEnglish": "Press X to Begin"
+        }
+      ]
+    },
+    {
+      "sheetName": "E5_Zoo_Introduction_localizatio",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Localizer.1",
+          "context": "",
+          "sourceEnglish": "6 months later"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:Day1.2.Zookeeper Rose",
+          "context": "Zookeeper Rose speaks to the Slow Ass.",
+          "sourceEnglish": "Your poor swollen joints are looking so much better."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:Day1.24.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "As long as we keep using this Ointment for your arthritis, you should be able to keep up with the others."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:Day1.30.Zookeeper Rose",
+          "context": "Rose blows whistle and the other donkeys enter.",
+          "sourceEnglish": "Now let's get to work!"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:Day1.29.Zookeeper Rose",
+          "context": "Rose speaks to the group of Asses.",
+          "sourceEnglish": "Oh Good Morning my beautiful Asses!"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:Day1.34.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "I'm so glad you're all here, because I have an important announcement!"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:Day1.65.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "The Zoo's Board of Directors wants me to choose an Ass to be the face of a new advertising campaign."
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:Day1.64.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "They know that Asses sell tickets!"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:Day1.61.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "So I've made up a game to decide who it will be."
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:Day1.60.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "I call it ASS OF THE WEEK."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:Day1.59.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Every day, you'll compete to see who can capture the attention of the most visitors by giving them what they came here to see."
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:Day1.74.Zookeeper Rose",
+          "context": "Big = Hulk (Can be renamed for more culturally appropriate name)",
+          "sourceEnglish": "Will it be you The Hulk?"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:Day1.73.Zookeeper Rose",
+          "context": "Kick = Littlefoot (Can be renamed for more culturally appropriate name)",
+          "sourceEnglish": "Is it you Littlefoot?"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:Day1.154.Zookeeper Rose",
+          "context": "Sad = Eeyore (Can be renamed for more culturally appropriate name)",
+          "sourceEnglish": "Or maybe, you, Eeyore?"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:Day1.136.Zookeeper Rose",
+          "context": "Smart = Sophie (Can be renamed for more culturally appropriate name)",
+          "sourceEnglish": "Or Sophie?"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:Day1.138.Zookeeper Rose",
+          "context": "Slow = Achilles",
+          "sourceEnglish": "Or, Achilles? Now that your joints aren't swollen anymore!"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:Day1.140.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "We'll add up your scores at the end of the week, to find out who wins."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:Day1.141.Zookeeper Rose",
+          "context": "Rose exits.",
+          "sourceEnglish": "I'll go open the gate and then we'll get started."
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:Day1.78.Sad Ass",
+          "context": "This dialogue is said if Sad Ass is present.",
+          "sourceEnglish": "*sigh*"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:Day1.44.Smart Ass",
+          "context": "",
+          "sourceEnglish": "I've got a Plan!"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:Day1.84.Smart Ass",
+          "context": "",
+          "sourceEnglish": "ONE, I'm going to run into the pen."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:Day1.83.Smart Ass",
+          "context": "",
+          "sourceEnglish": "TWO, I'm going to capture the attention of the visiting Humans."
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:Day1.82.Smart Ass",
+          "context": "",
+          "sourceEnglish": "THREE, I'm going to have the highest score."
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:Day1.81.Smart Ass",
+          "context": "",
+          "sourceEnglish": "AND WIN ASS OF THE WEEK!"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:Day1.80.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Easy."
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Day1.79.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Have fun fighting over second place suckers!"
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Day1.45.Zookeeper Rose",
+          "context": "Rose returns.",
+          "sourceEnglish": "Get ready to meet the visitors."
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:Day1.85.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Those TOURISTS with the colourful Hawaiian shirts love it when you turn Left and Right to give them a good look at you."
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:Day1.91.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "THE TEACHERS with clip boards like it when you demonstrate a classic donkey Kick!\\n"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:Day1.90.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Those lab-coat wearing RESEARCHERS are fascinated with animal behaviour, so show them a Dust Bath!"
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:Day1.89.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "And of course that OLD LADY who is always here just wants to be Listened to."
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:Day1.88.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "You got that memorized, right?"
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:Day1.210.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Attention spans aren't what they used to be!"
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:Day1.87.Zookeeper Rose",
+          "context": "The other Asses run off.",
+          "sourceEnglish": "So you have to be quick to catch the visitors before they get bored."
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:Day1.35.Zookeeper Rose",
+          "context": "Zookeeper Rose addresses Slow Ass.",
+          "sourceEnglish": "Oh, Achilles!"
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:Day1.37.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "I want you to have an equal chance of winning."
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:Day1.36.Zookeeper Rose",
+          "context": "The Player is given control of Slow Ass. Mini-game begins.",
+          "sourceEnglish": "If you need any extra Ointment for your joints to keep up with the others, just come find me."
+        }
+      ]
+    },
+    {
+      "sheetName": "E5_ZooMain_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "WRITE.Dialog:Day1.1",
+          "context": "",
+          "sourceEnglish": "MONDAY"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "WRITE.Dialog:Localizer.1",
+          "context": "Read on the Info Sign of the Zoo.",
+          "sourceEnglish": "Fun facts about Equus Asinus: \\n\\n- Originally from Africa\\n- Can live into their 50s\\n- Are extremely nimble on rocky terrain\\n- Used as working animals for at least 7,000 years\\n- Don't like being in the rain"
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:Ointment.10.Zookeeper Rose",
+          "context": "Said by Zookeeper Rose when the Player presses 'x' near her and your Ointment bar is empty.",
+          "sourceEnglish": "Get your Ointment!"
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:Ointment.12.Zookeeper Rose",
+          "context": "Said by Zookeeper Rose when the Player presses 'x' near her and the Ointment bar is NOT empty.",
+          "sourceEnglish": "Your joints look good!"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:Grandma.8.Grandma Kulan",
+          "context": "Said by Grandma Kulan when the Player presses 'x' close to her.",
+          "sourceEnglish": "Sigh... Joey would have loved this..."
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.Dialog:EndOfDay.6.Slow Ass",
+          "context": "Said by Slow Ass upon exiting the map at the end of Day 1, after the mini-game.",
+          "sourceEnglish": "I'm b-b-beat... time for b-b-bed..."
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "WRITE.Dialog:Day2.144",
+          "context": "",
+          "sourceEnglish": "TUESDAY"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:Day2.2.Zookeeper Rose",
+          "context": "Beginning of the next day.",
+          "sourceEnglish": "GOOOODDDD MORNING ASSSSSSES!"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "SAY.Dialog:Day2.81.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Superb work yesterday!"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:Day2.85.Zookeeper Rose",
+          "context": "Jump to line 13, 14, 15, 16, or 17.",
+          "sourceEnglish": "The current leader is..."
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:Day2.49.Zookeeper Rose",
+          "context": "Dialogue 1.1. If SMART Ass is winning",
+          "sourceEnglish": "Sophie! Everyone can tell how smart she is!"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:Day2.50.Zookeeper Rose",
+          "context": "Dialogue 1.2. If BIG Ass is winning.",
+          "sourceEnglish": "The Hulk! Who doesn't love a big donkey?"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "SAY.Dialog:Day2.51.Zookeeper Rose",
+          "context": "Dialogue 1.3. If KICK Ass is winning.",
+          "sourceEnglish": "Littlefoot, you are kick-starting the race for Ass of the Week!"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:Day2.52.Zookeeper Rose",
+          "context": "Dialogue 1.4. If SAD Ass is winning.",
+          "sourceEnglish": "Eeyore! Everyone wants to cheer you on!"
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:Day2.48.Zookeeper Rose",
+          "context": "Dialogue 1.5. If SLOW Ass is winning.",
+          "sourceEnglish": "Achilles! That ointment is really making a difference!"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "SAY.Dialog:Day2.70.Zookeeper Rose",
+          "context": "Dialogue options (1.1-1.5) converge.",
+          "sourceEnglish": "The crowd is arriving and it'll be just as busy as yesterday!"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:Day2.73.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "You know what to do..."
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:Day2.72.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "TOURISTS love it when you turn Left and Right to give them a good look at you."
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:Day2.71.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "TEACHERS like it when you do a donkey Kick!"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:Day2.75.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "RESEARCHERS want to see a Dust Bath!"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:Day2.74.Zookeeper Rose",
+          "context": "Jump to line 24, 26, or 28.",
+          "sourceEnglish": "And of course that OLD LADY who is always here just wants to be Listened to."
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:Day2.76.Kick Ass",
+          "context": "Dialogue 2.1. If SMART is winning.",
+          "sourceEnglish": "@#$%&! These Humans ALL LOOK THE SAME!"
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:Day2.77.Smart Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "Out of the way, my adoring fans are waiting!"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:Day2.78.Kick Ass",
+          "context": "Dialogue 2.2. If SLOW is winning.",
+          "sourceEnglish": "@#$%&!—Slow Ass?!—it's gotta be that magic OINTMENT!"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:Day2.150.Smart Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "Ha! Without that ointment, you're nothing Slow Ass."
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:Day2.79.Smart Ass",
+          "context": "Dialogue 2.3. If SMART is not winning.",
+          "sourceEnglish": "Someone is cheating. I know it!"
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:Day2.146.Slow Ass",
+          "context": "",
+          "sourceEnglish": "We can't b-b-be good at everything, Smar—"
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:Day2.80.Smart Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "Keep your mouth shut, Slow Ass!"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:EndOfDay.11.Slow Ass",
+          "context": "Said by Slow Ass upon exiting the map at the end of Day 2, after the mini-game.",
+          "sourceEnglish": "P-p-phew! I'm p-p-parched!"
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "WRITE.Dialog:Day3.151",
+          "context": "",
+          "sourceEnglish": "WEDNESDAY"
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:Day3.86.Zookeeper Rose",
+          "context": "Beginning of the next day.",
+          "sourceEnglish": "GOOOODDDD MORNING ASSSSSSES!"
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:Day3.122.Zookeeper Rose",
+          "context": "In MIRO: 'Who's in the lead?' // Jump to line 35, 36, 37, 38, or 39.",
+          "sourceEnglish": "The current leader is..."
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:Day3.73.Zookeeper Rose",
+          "context": "Dialogue 3.1. If SMART Ass is winning",
+          "sourceEnglish": "Sophie, your guts and guile make you a star!"
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:Day3.76.Zookeeper Rose",
+          "context": "Dialogue 3.2. If BIG Ass is winning.",
+          "sourceEnglish": "The Hulk has a massive advantage!"
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:Day3.79.Zookeeper Rose",
+          "context": "Dialogue 3.3. If KICK Ass is winning.",
+          "sourceEnglish": "Littlefoot, people are hooked on you!"
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:Day3.82.Zookeeper Rose",
+          "context": "Dialogue 3.4. If SAD Ass is winning.",
+          "sourceEnglish": "Eeyore, even YOU have to smile at how well you're doing."
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:Day3.70.Zookeeper Rose",
+          "context": "Dialogue 3.5. If SLOW Ass is winning.",
+          "sourceEnglish": "Achilles, keep up the hard work!"
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:Day3.103.Zookeeper Rose",
+          "context": "Dialogue options (3.1-3.5) converge.",
+          "sourceEnglish": "Wowzer! There's a long line outside the main gates."
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:Day3.106.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "I met some SUPER FRIENDLY PEOPLE who told me they LOVE it when donkeys Lie Down and look cute."
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:Day3.105.Zookeeper Rose",
+          "context": "Jump to line 42, 46, or 48.",
+          "sourceEnglish": "Now get out there and show those Visitors how adorable you can be."
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:Day3.107.Kick Ass",
+          "context": "Dialogue 4.1. If SMART is winning.",
+          "sourceEnglish": "STOP STEPPING on my hoofs out there Big Ass!"
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:Day3.154.Kick Ass",
+          "context": "",
+          "sourceEnglish": "You're holding me BACK!"
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:Day3.108.Big Ass",
+          "context": "",
+          "sourceEnglish": "It's not my fault your score is so low."
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:Day3.156.Smart Ass",
+          "context": "Jump to line 52 or 53.",
+          "sourceEnglish": "Ha! It's both your faults that you suck!"
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:Day3.109.Smart Ass",
+          "context": "Dialogue 4.2. If SLOW is winning.",
+          "sourceEnglish": "Don't get full of yourself Slow. Your luck is about to run out!"
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:Day3.158.Slow Ass",
+          "context": "Jump to line 52 or 53.",
+          "sourceEnglish": "Oh b-b-boy."
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:Day3.110.Big Ass",
+          "context": "Dialogue 4.3. If SMART is not winning.",
+          "sourceEnglish": "Massive gains!"
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:Day3.112.Kick Ass",
+          "context": "",
+          "sourceEnglish": "Ass of the Week is ANYBODY'S GAME!"
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:Day3.111.Smart Ass",
+          "context": "Jump to line 52 or 53.",
+          "sourceEnglish": "Shut it!"
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:Day3.114.Sad Ass",
+          "context": "Dialogue options (4.1-4.3) converge. // Said if Sad Ass is present.",
+          "sourceEnglish": "*sigh* All this fuss for a lousy title."
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:Day3.115.Slow Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "I have to p-pick up the p-pace!"
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:TeamRocketEasterEgg.3.???",
+          "context": "Optional dialogue. Mme. Derriere appears at the fence at the end of the day.",
+          "sourceEnglish": "Hello beautiful, don't you look soft!"
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:EndOfDay.14.Slow Ass",
+          "context": "Said by Slow Ass upon exiting the map at the end of Day 3, after the mini-game.",
+          "sourceEnglish": "B-b-better rest up for tomorrow!"
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:TeamRocketEasterEgg.3.",
+          "context": "",
+          "sourceEnglish": "Mmm... so soft."
+        },
+        {
+          "rowNumber": 57,
+          "utterer": "WRITE.Dialog:Day4.147",
+          "context": "",
+          "sourceEnglish": "THURSDAY"
+        },
+        {
+          "rowNumber": 58,
+          "utterer": "SAY.Dialog:Day4.74.Zookeeper Rose",
+          "context": "Beginning of the next day.",
+          "sourceEnglish": "GOOOODDDD MORNING ASSSSSSES!"
+        },
+        {
+          "rowNumber": 59,
+          "utterer": "SAY.Dialog:Day4.91.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Visitor attendance is rising... and so is my enthusiasm about who will be Ass of the Week!"
+        },
+        {
+          "rowNumber": 60,
+          "utterer": "SAY.Dialog:Day4.116.Zookeeper Rose",
+          "context": "Jump to line 61, 62, 63, 64, or 65.",
+          "sourceEnglish": "The current leader is..."
+        },
+        {
+          "rowNumber": 61,
+          "utterer": "SAY.Dialog:Day4.25.Zookeeper Rose",
+          "context": "Dialogue 5.1. If SMART Ass is winning",
+          "sourceEnglish": "Sophie! You think you're pretty clever, don't you?"
+        },
+        {
+          "rowNumber": 62,
+          "utterer": "SAY.Dialog:Day4.69.Zookeeper Rose",
+          "context": "Dialogue 5.2. If BIG Ass is winning.",
+          "sourceEnglish": "Hulk, my respect for you is growing!"
+        },
+        {
+          "rowNumber": 63,
+          "utterer": "SAY.Dialog:Day4.40.Zookeeper Rose",
+          "context": "Dialogue 5.3. If KICK Ass is winning.",
+          "sourceEnglish": "Littlefoot, you are running away with the competition!"
+        },
+        {
+          "rowNumber": 64,
+          "utterer": "SAY.Dialog:Day4.43.Zookeeper Rose",
+          "context": "Dialogue 5.4. If SAD Ass is winning.",
+          "sourceEnglish": "Eeyore, I want to give you a hug."
+        },
+        {
+          "rowNumber": 65,
+          "utterer": "SAY.Dialog:Day4.22.Zookeeper Rose",
+          "context": "Dialogue 5.5. If SLOW Ass is winning.",
+          "sourceEnglish": "Achilles, people are spinning on their heels to come see you!"
+        },
+        {
+          "rowNumber": 66,
+          "utterer": "SAY.Dialog:Day4.92.Zookeeper Rose",
+          "context": "Dialogue options (5.1-5.5) converge.",
+          "sourceEnglish": "Guess what?"
+        },
+        {
+          "rowNumber": 67,
+          "utterer": "SAY.Dialog:Day4.94.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "There are CHILDREN coming today and they love it when you Bray!"
+        },
+        {
+          "rowNumber": 68,
+          "utterer": "SAY.Dialog:Day4.93.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "So be loud!"
+        },
+        {
+          "rowNumber": 69,
+          "utterer": "SAY.Dialog:Day4.95.Zookeeper Rose",
+          "context": "Jump to line 70, 74, or 78.",
+          "sourceEnglish": "And don't bite anyone..."
+        },
+        {
+          "rowNumber": 70,
+          "utterer": "SAY.Dialog:Day4.96.Smart Ass",
+          "context": "Dialogue 6.1. If SMART is winning.",
+          "sourceEnglish": "Ha! You fools will never catch up to me!"
+        },
+        {
+          "rowNumber": 71,
+          "utterer": "SAY.Dialog:Day4.99.Kick Ass",
+          "context": "",
+          "sourceEnglish": "@#$%&! Smart Ass—SCREW YOU!"
+        },
+        {
+          "rowNumber": 72,
+          "utterer": "SAY.Dialog:Day4.98.Big Ass",
+          "context": "",
+          "sourceEnglish": "I won't be distracted by your puny squabbles!"
+        },
+        {
+          "rowNumber": 73,
+          "utterer": "SAY.Dialog:Day4.97.Slow Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "I hop-p-pe I'll do b-b-better today."
+        },
+        {
+          "rowNumber": 74,
+          "utterer": "SAY.Dialog:Day4.104.Kick Ass",
+          "context": "Dialogue 6.2. If SLOW is winning.",
+          "sourceEnglish": "@#%&! Slow Ass?!—HOW?!"
+        },
+        {
+          "rowNumber": 75,
+          "utterer": "SAY.Dialog:Day4.150.Big Ass",
+          "context": "",
+          "sourceEnglish": "At this rate, we'll have to call you Speedy..."
+        },
+        {
+          "rowNumber": 76,
+          "utterer": "SAY.Dialog:Day4.106.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Stop it, I'm b-b-blushing."
+        },
+        {
+          "rowNumber": 77,
+          "utterer": "SAY.Dialog:Day4.111.Smart Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "Slow Ass? Winning? Ha! What a joke."
+        },
+        {
+          "rowNumber": 78,
+          "utterer": "SAY.Dialog:Day4.108.Kick Ass",
+          "context": "Dialogue 6.3. If SMART is not winning.",
+          "sourceEnglish": "Big is CHEATING!"
+        },
+        {
+          "rowNumber": 79,
+          "utterer": "SAY.Dialog:Day4.109.Big Ass",
+          "context": "",
+          "sourceEnglish": "No. I'm going to win fair and square!"
+        },
+        {
+          "rowNumber": 80,
+          "utterer": "SAY.Dialog:Day4.110.Smart Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "Not a chance! This is all my \"Come from behind\" Plan!"
+        },
+        {
+          "rowNumber": 81,
+          "utterer": "SAY.Dialog:EndOfDay.17.Slow Ass",
+          "context": "Said by Slow Ass upon exiting the map at the end of Day 4, after the mini-game.",
+          "sourceEnglish": "Oh b-b-boy. Today was p-p-particularly p-p-punishing..."
+        },
+        {
+          "rowNumber": 82,
+          "utterer": "WRITE.Dialog:Day5.140",
+          "context": "",
+          "sourceEnglish": "FRIDAY"
+        },
+        {
+          "rowNumber": 83,
+          "utterer": "SAY.Dialog:Day5.74.Zookeeper Rose",
+          "context": "Beginning of the next day.",
+          "sourceEnglish": "GOOOODDDD MORNING ASSSSSSES!"
+        },
+        {
+          "rowNumber": 84,
+          "utterer": "SAY.Dialog:Day5.75.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Wow, you all look tired!"
+        },
+        {
+          "rowNumber": 85,
+          "utterer": "SAY.Dialog:Day5.112.Zookeeper Rose",
+          "context": "Jump to line 86, 87, 88, 89 or 90.",
+          "sourceEnglish": "Let's see whose in LAST place..."
+        },
+        {
+          "rowNumber": 86,
+          "utterer": "SAY.Dialog:Day5.25.Zookeeper Rose",
+          "context": "Dialogue 7.1. If SMART Ass is winning",
+          "sourceEnglish": "Sophie! You're not as popular this week—though knowing you, I'm sure you'll come from behind and steal the win!"
+        },
+        {
+          "rowNumber": 87,
+          "utterer": "SAY.Dialog:Day5.69.Zookeeper Rose",
+          "context": "Dialogue 7.2. If BIG Ass is winning.",
+          "sourceEnglish": "You're not green anymore The Hulk, you should have more control out there!"
+        },
+        {
+          "rowNumber": 88,
+          "utterer": "SAY.Dialog:Day5.40.Zookeeper Rose",
+          "context": "Dialogue 7.3. If KICK Ass is winning.",
+          "sourceEnglish": "You're tripping all over yourself out there Littlefoot!"
+        },
+        {
+          "rowNumber": 89,
+          "utterer": "SAY.Dialog:Day5.43.Zookeeper Rose",
+          "context": "Dialogue 7.4. If SAD Ass is winning.",
+          "sourceEnglish": "Oh Eeyore, don't feel too badly, this could happen to any Ass!"
+        },
+        {
+          "rowNumber": 90,
+          "utterer": "SAY.Dialog:Day5.22.Zookeeper Rose",
+          "context": "Dialogue 7.5. If SLOW Ass is winning.",
+          "sourceEnglish": "Achilles! I guess everyone has a weakness..."
+        },
+        {
+          "rowNumber": 91,
+          "utterer": "SAY.Dialog:Day5.93.Zookeeper Rose",
+          "context": "Dialogue options (7.1-7.5) converge.",
+          "sourceEnglish": "I have some more good news to give you a boost!\\n"
+        },
+        {
+          "rowNumber": 92,
+          "utterer": "SAY.Dialog:Day5.98.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "I added some new elements to make the paddock feel more like your rugged natural habitat."
+        },
+        {
+          "rowNumber": 93,
+          "utterer": "SAY.Dialog:Day5.99.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "And just in time! Today we've got some INFLUENCERS coming to help boost the social media for the Zoo."
+        },
+        {
+          "rowNumber": 94,
+          "utterer": "SAY.Dialog:Day5.97.Zookeeper Rose",
+          "context": "Jump to line 95, 97, or 99.",
+          "sourceEnglish": "When you see them with their phones, be sure to pull off some Dance moves!"
+        },
+        {
+          "rowNumber": 95,
+          "utterer": "SAY.Dialog:Day5.105.Smart Ass",
+          "context": "Dialogue 8.1. If SMART is winning.",
+          "sourceEnglish": "I got a new one! What do you call undesirable Asses with low scores?"
+        },
+        {
+          "rowNumber": 96,
+          "utterer": "SAY.Dialog:Day5.147.Smart Ass",
+          "context": "Jump to line 101.",
+          "sourceEnglish": "Losers! Ha!"
+        },
+        {
+          "rowNumber": 97,
+          "utterer": "SAY.Dialog:Day5.107.Slow Ass",
+          "context": "Dialogue 8.2. If SLOW is winning.",
+          "sourceEnglish": "P-p-please don't hate me..."
+        },
+        {
+          "rowNumber": 98,
+          "utterer": "SAY.Dialog:Day5.144.Smart Ass",
+          "context": "Jump to line 101.",
+          "sourceEnglish": "Too late!"
+        },
+        {
+          "rowNumber": 99,
+          "utterer": "SAY.Dialog:Day5.106.Kick Ass",
+          "context": "Dialogue 8.3. If SMART is not winning.",
+          "sourceEnglish": "GREAT! Smart is NOT WINNING!"
+        },
+        {
+          "rowNumber": 100,
+          "utterer": "SAY.Dialog:Day5.108.Big Ass",
+          "context": "Jump to line 101.",
+          "sourceEnglish": "We don't have to deal with her oversized ego!"
+        },
+        {
+          "rowNumber": 101,
+          "utterer": "SAY.Dialog:Day5.101.Slow Ass",
+          "context": "Dialogue options (8.1-8.3) converge. // Mini-game begins.",
+          "sourceEnglish": "I gotta keep p-p-pushing myself!"
+        },
+        {
+          "rowNumber": 102,
+          "utterer": "SAY.Dialog:EndOfDay.20.Slow Ass",
+          "context": "Said by Slow Ass upon exiting the map at the end of Day 5, after the mini-game.",
+          "sourceEnglish": "What a b-b-backb-b-breaker. I can feel it in my b-b-bones..."
+        },
+        {
+          "rowNumber": 103,
+          "utterer": "WRITE.Dialog:Day6.176",
+          "context": "",
+          "sourceEnglish": "SATURDAY"
+        },
+        {
+          "rowNumber": 104,
+          "utterer": "SAY.Dialog:Day6.74.Zookeeper Rose",
+          "context": "Beginning of the next day.",
+          "sourceEnglish": "GOOOODDDD MORNING ASSSSSSES!"
+        },
+        {
+          "rowNumber": 105,
+          "utterer": "SAY.Dialog:Day6.94.Zookeeper Rose",
+          "context": "Jump to line 106, 107, 109, 110, or 112.",
+          "sourceEnglish": "The Ass in SECOND place is..."
+        },
+        {
+          "rowNumber": 106,
+          "utterer": "SAY.Dialog:Day6.25.Zookeeper Rose",
+          "context": "Dialogue 9.1. If SMART Ass is winning",
+          "sourceEnglish": "Sophie! I know that's going to make you even more competitive..."
+        },
+        {
+          "rowNumber": 107,
+          "utterer": "SAY.Dialog:Day6.69.Zookeeper Rose",
+          "context": "Dialogue 9.2. If BIG Ass is winning.",
+          "sourceEnglish": "The Hulk! But don't get angry—"
+        },
+        {
+          "rowNumber": 108,
+          "utterer": "SAY.Dialog:Day6.95.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "I have a feeling you're gonna smash through second place and come out on top!"
+        },
+        {
+          "rowNumber": 109,
+          "utterer": "SAY.Dialog:Day6.40.Zookeeper Rose",
+          "context": "Dialogue 9.3. If KICK Ass is winning.",
+          "sourceEnglish": "Littlefoot! You're one small step from first place! Get it!"
+        },
+        {
+          "rowNumber": 110,
+          "utterer": "SAY.Dialog:Day6.43.Zookeeper Rose",
+          "context": "Dialogue 9.4. If SAD Ass is winning.",
+          "sourceEnglish": "Eeyore! It really feels like you're holding back..."
+        },
+        {
+          "rowNumber": 111,
+          "utterer": "SAY.Dialog:Day6.96.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "You gotta let loose and show the world who you really are!"
+        },
+        {
+          "rowNumber": 112,
+          "utterer": "SAY.Dialog:Day6.22.Zookeeper Rose",
+          "context": "Dialogue 9.5. If SLOW Ass is winning.",
+          "sourceEnglish": "Achilles! But don't be distressed, there's still time to win."
+        },
+        {
+          "rowNumber": 113,
+          "utterer": "SAY.Dialog:Day6.97.Zookeeper Rose",
+          "context": "Dialogue options (9.1-9.5) converge.",
+          "sourceEnglish": "With all this attention, the Official Zoo PHOTOGRAPHERS are coming today!"
+        },
+        {
+          "rowNumber": 114,
+          "utterer": "SAY.Dialog:Day6.99.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "They love getting action shots so don't forget to Jump three times when you see them!"
+        },
+        {
+          "rowNumber": 115,
+          "utterer": "SAY.Dialog:Day6.98.Zookeeper Rose",
+          "context": "Jump to line 116 or 131.",
+          "sourceEnglish": "Show them what JOY looks like."
+        },
+        {
+          "rowNumber": 116,
+          "utterer": "SAY.Dialog:Day6.102.Sad Ass",
+          "context": "Branch 1.1. Sad Ass is present.",
+          "sourceEnglish": "*sigh* What joy?"
+        },
+        {
+          "rowNumber": 117,
+          "utterer": "SAY.Dialog:Day6.108.Sad Ass",
+          "context": "",
+          "sourceEnglish": "We used to be Comrades... but here... we're just competition..."
+        },
+        {
+          "rowNumber": 118,
+          "utterer": "SAY.Dialog:Day6.107.Sad Ass",
+          "context": "",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 119,
+          "utterer": "SAY.Dialog:Day6.106.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I thought that leaving the Farm and Mine behind would finally give my broken heart a chance to heal..."
+        },
+        {
+          "rowNumber": 120,
+          "utterer": "SAY.Dialog:Day6.105.Sad Ass",
+          "context": "",
+          "sourceEnglish": "That I could get a fresh start in a new job... in a new place."
+        },
+        {
+          "rowNumber": 121,
+          "utterer": "SAY.Dialog:Day6.104.Sad Ass",
+          "context": "",
+          "sourceEnglish": "But... now I just feel like I'm carrying the past alone."
+        },
+        {
+          "rowNumber": 122,
+          "utterer": "SAY.Dialog:Day6.103.Sad Ass",
+          "context": "",
+          "sourceEnglish": "And you have all moved on without me."
+        },
+        {
+          "rowNumber": 123,
+          "utterer": "SAY.Dialog:Day6.109.Sad Ass",
+          "context": "",
+          "sourceEnglish": "*whimper*"
+        },
+        {
+          "rowNumber": 124,
+          "utterer": "SAY.Dialog:Day6.110.Smart Ass",
+          "context": "",
+          "sourceEnglish": "You gotta be kidding!"
+        },
+        {
+          "rowNumber": 125,
+          "utterer": "SAY.Dialog:Day6.115.Smart Ass",
+          "context": "",
+          "sourceEnglish": "This Zoo has fresh hay, nice Humans, no ugly Machines, and rigorous daily labour!"
+        },
+        {
+          "rowNumber": 126,
+          "utterer": "SAY.Dialog:Day6.112.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Think about it! We made the right choice to leave that dirty countryside."
+        },
+        {
+          "rowNumber": 127,
+          "utterer": "SAY.Dialog:Day6.111.Smart Ass",
+          "context": "They all leave, except for Sad and Slow.",
+          "sourceEnglish": "And we aren't here to talk about the past—we're here to WORK, so get outta my way!\\n"
+        },
+        {
+          "rowNumber": 128,
+          "utterer": "SAY.Dialog:Day6.118.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Sad Ass, I'm hap-p-p-py here."
+        },
+        {
+          "rowNumber": 129,
+          "utterer": "SAY.Dialog:Day6.120.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I'm finally achieving my full p-p-potential!"
+        },
+        {
+          "rowNumber": 130,
+          "utterer": "SAY.Dialog:Day6.119.Slow Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "B-b-buck up-p-p."
+        },
+        {
+          "rowNumber": 131,
+          "utterer": "SAY.Dialog:Day6.131.Big Ass",
+          "context": "Branch 1.2. Sad Ass is NOT present.",
+          "sourceEnglish": "Joy. Do you think the rest of the Herd is as happy as we are?"
+        },
+        {
+          "rowNumber": 132,
+          "utterer": "SAY.Dialog:Day6.130.Kick Ass",
+          "context": "",
+          "sourceEnglish": "Not a CHANCE!"
+        },
+        {
+          "rowNumber": 133,
+          "utterer": "SAY.Dialog:Day6.139.Slow Ass",
+          "context": "",
+          "sourceEnglish": "They are p-p-prob-b-b-bly still freezing their tails off in the Mine."
+        },
+        {
+          "rowNumber": 134,
+          "utterer": "SAY.Dialog:Day6.141.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Honestly I forgot all about them."
+        },
+        {
+          "rowNumber": 135,
+          "utterer": "SAY.Dialog:Day6.145.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Now, we're not here to talk about the past."
+        },
+        {
+          "rowNumber": 136,
+          "utterer": "SAY.Dialog:Day6.144.Smart Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "We're here to WORK!"
+        },
+        {
+          "rowNumber": 137,
+          "utterer": "SAY.Dialog:SadGoodbye.10.Slow Ass",
+          "context": "After the work day, if Sad Ass is at the Zoo, he stays behind. \nThe Player (Slow Ass) can go talk to him.",
+          "sourceEnglish": "Sad Ass?"
+        },
+        {
+          "rowNumber": 138,
+          "utterer": "SAY.Dialog:SadGoodbye.25.Sad Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 139,
+          "utterer": "SAY.Dialog:SadGoodbye.33.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Someone once said to me that if you aren't doing something that brings you joy..."
+        },
+        {
+          "rowNumber": 140,
+          "utterer": "SAY.Dialog:SadGoodbye.32.Sad Ass",
+          "context": "",
+          "sourceEnglish": "You should do something different."
+        },
+        {
+          "rowNumber": 141,
+          "utterer": "SAY.Dialog:SadGoodbye.31.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Slow Ass... I'm really glad you all found something you that brings you joy everyday..."
+        },
+        {
+          "rowNumber": 142,
+          "utterer": "SAY.Dialog:SadGoodbye.30.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I guess... I'm still searching."
+        },
+        {
+          "rowNumber": 143,
+          "utterer": "SAY.Dialog:SadGoodbye.29.Sad Ass",
+          "context": "",
+          "sourceEnglish": "So..."
+        },
+        {
+          "rowNumber": 144,
+          "utterer": "SAY.Dialog:SadGoodbye.28.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Today's my final day."
+        },
+        {
+          "rowNumber": 145,
+          "utterer": "SAY.Dialog:SadGoodbye.27.Sad Ass",
+          "context": "Jump to line 146, 148, or 150.",
+          "sourceEnglish": "I'm leaving."
+        },
+        {
+          "rowNumber": 146,
+          "utterer": "MENU.Dialog:SadGoodbye.52",
+          "context": "Dialogue option 9.1.",
+          "sourceEnglish": "We can change our workp-p-place dynamic!"
+        },
+        {
+          "rowNumber": 147,
+          "utterer": "SAY.Dialog:SadGoodbye.35.Slow Ass",
+          "context": "",
+          "sourceEnglish": "We can change our workp-p-place dynamic!"
+        },
+        {
+          "rowNumber": 148,
+          "utterer": "MENU.Dialog:SadGoodbye.54",
+          "context": "Dialogue option 9.2.",
+          "sourceEnglish": "B-b-but you can't ab-b-bandon the Herd!"
+        },
+        {
+          "rowNumber": 149,
+          "utterer": "SAY.Dialog:SadGoodbye.37.Slow Ass",
+          "context": "",
+          "sourceEnglish": "B-b-but you can't ab-b-bandon the Herd!"
+        },
+        {
+          "rowNumber": 150,
+          "utterer": "MENU.Dialog:SadGoodbye.53",
+          "context": "Dialogue option 9.3.",
+          "sourceEnglish": "I can give you some of my Ass of the Week p-points!"
+        },
+        {
+          "rowNumber": 151,
+          "utterer": "SAY.Dialog:SadGoodbye.39.Slow Ass",
+          "context": "",
+          "sourceEnglish": "I can give you some of my Ass of the Week p-points!"
+        },
+        {
+          "rowNumber": 152,
+          "utterer": "SAY.Dialog:SadGoodbye.41.Sad Ass",
+          "context": "Dialogue options (9.1-9.3) converge.",
+          "sourceEnglish": "There's nothing you can say that will make me stay."
+        },
+        {
+          "rowNumber": 153,
+          "utterer": "SAY.Dialog:SadGoodbye.42.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I've made up my mind."
+        },
+        {
+          "rowNumber": 154,
+          "utterer": "SAY.Dialog:SadGoodbye.43.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I don't know what'll bring me joy..."
+        },
+        {
+          "rowNumber": 155,
+          "utterer": "SAY.Dialog:SadGoodbye.44.Sad Ass",
+          "context": "",
+          "sourceEnglish": "But I know I won't find it here with you all."
+        },
+        {
+          "rowNumber": 156,
+          "utterer": "SAY.Dialog:SadGoodbye.45.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Let's not make a big thing out of this."
+        },
+        {
+          "rowNumber": 157,
+          "utterer": "SAY.Dialog:SadGoodbye.46.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I'll be gone by morning."
+        },
+        {
+          "rowNumber": 158,
+          "utterer": "SAY.Dialog:SadGoodbye.47.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Tell the others for me."
+        },
+        {
+          "rowNumber": 159,
+          "utterer": "SAY.Dialog:SadGoodbye.48.Sad Ass",
+          "context": "",
+          "sourceEnglish": "..."
+        },
+        {
+          "rowNumber": 160,
+          "utterer": "SAY.Dialog:SadGoodbye.49.Sad Ass",
+          "context": "",
+          "sourceEnglish": "I always thought we were a lot alike."
+        },
+        {
+          "rowNumber": 161,
+          "utterer": "SAY.Dialog:SadGoodbye.50.Sad Ass",
+          "context": "",
+          "sourceEnglish": "Goodbye Slow Ass."
+        },
+        {
+          "rowNumber": 162,
+          "utterer": "SAY.Dialog:SadGoodbye.12.Sad Ass",
+          "context": "Repeater line.",
+          "sourceEnglish": "Goodbye."
+        },
+        {
+          "rowNumber": 163,
+          "utterer": "WRITE.Dialog:Day7.231",
+          "context": "",
+          "sourceEnglish": "SUNDAY"
+        },
+        {
+          "rowNumber": 164,
+          "utterer": "SAY.Dialog:Day7.103.Zookeeper Rose",
+          "context": "Branch 2.1. Sad Ass is GONE.",
+          "sourceEnglish": "EVERYONE STAY CALM."
+        },
+        {
+          "rowNumber": 165,
+          "utterer": "SAY.Dialog:Day7.111.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "It seems that one of our own, dearest Eeyore, has ESCAPED from the Zoo..."
+        },
+        {
+          "rowNumber": 166,
+          "utterer": "SAY.Dialog:Day7.110.Zookeeper Rose",
+          "context": "Zookeepers Rose gets a phone call.",
+          "sourceEnglish": "WHAT NOW?!"
+        },
+        {
+          "rowNumber": 167,
+          "utterer": "SAY.Dialog:Day7.109.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "...Oh."
+        },
+        {
+          "rowNumber": 168,
+          "utterer": "SAY.Dialog:Day7.108.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Yes, this is Zookeeper Rose."
+        },
+        {
+          "rowNumber": 169,
+          "utterer": "SAY.Dialog:Day7.107.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "...The Zoo's Board of Directors are coming to meet the Ass of the Week?"
+        },
+        {
+          "rowNumber": 170,
+          "utterer": "SAY.Dialog:Day7.106.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "...NOW?"
+        },
+        {
+          "rowNumber": 171,
+          "utterer": "SAY.Dialog:Day7.105.Zookeeper Rose",
+          "context": "Zookeeper Rose hangs up.",
+          "sourceEnglish": "Oh no..."
+        },
+        {
+          "rowNumber": 172,
+          "utterer": "SAY.Dialog:Day7.119.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "They're gonna find out Eeyore's gone..."
+        },
+        {
+          "rowNumber": 173,
+          "utterer": "SAY.Dialog:Day7.118.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "We'll lose everything we've worked for..."
+        },
+        {
+          "rowNumber": 174,
+          "utterer": "SAY.Dialog:Day7.117.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "And I'll get FIRED!"
+        },
+        {
+          "rowNumber": 175,
+          "utterer": "SAY.Dialog:Day7.116.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Unless..."
+        },
+        {
+          "rowNumber": 176,
+          "utterer": "SAY.Dialog:Day7.104.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "The BOARD OF DIRECTORS love it when you get intimate and Nuzzle them!"
+        },
+        {
+          "rowNumber": 177,
+          "utterer": "SAY.Dialog:Day7.122.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Don't worry about getting their suits messy, they're the ones to impress today."
+        },
+        {
+          "rowNumber": 178,
+          "utterer": "SAY.Dialog:Day7.121.Zookeeper Rose",
+          "context": "Jump to line 192 or 201.",
+          "sourceEnglish": "If you move fast, maybe they won't notice there's only four of you!"
+        },
+        {
+          "rowNumber": 179,
+          "utterer": "SAY.Dialog:Day7.160.Zookeeper Rose",
+          "context": "Branch 2.1. Sad Ass is was never at the Zoo.",
+          "sourceEnglish": "GOOOOD MORNING ASSES!"
+        },
+        {
+          "rowNumber": 180,
+          "utterer": "SAY.Dialog:Day7.167.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "You've all been working so hard and finally today we'll find out who's going to be Ass of the Week."
+        },
+        {
+          "rowNumber": 181,
+          "utterer": "SAY.Dialog:Day7.166.Zookeeper Rose",
+          "context": "Zookeepers Rose gets a phone call.",
+          "sourceEnglish": "Hi there, Zookeeper Rose speaking!"
+        },
+        {
+          "rowNumber": 182,
+          "utterer": "SAY.Dialog:Day7.165.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "What's that?"
+        },
+        {
+          "rowNumber": 183,
+          "utterer": "SAY.Dialog:Day7.164.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "The Zoo's Board of Directors are doing a site visit to meet the Ass of the Week?"
+        },
+        {
+          "rowNumber": 184,
+          "utterer": "SAY.Dialog:Day7.163.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "And they're interested in reallocating more resources to our corner of the Zoo?"
+        },
+        {
+          "rowNumber": 185,
+          "utterer": "SAY.Dialog:Day7.162.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "More hay?"
+        },
+        {
+          "rowNumber": 186,
+          "utterer": "SAY.Dialog:Day7.171.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "More ointment?"
+        },
+        {
+          "rowNumber": 187,
+          "utterer": "SAY.Dialog:Day7.170.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "That's PERFECT!"
+        },
+        {
+          "rowNumber": 188,
+          "utterer": "SAY.Dialog:Day7.161.Zookeeper Rose",
+          "context": "Zookeeper Rose hangs up.",
+          "sourceEnglish": "Thanks!"
+        },
+        {
+          "rowNumber": 189,
+          "utterer": "SAY.Dialog:Day7.176.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Listen up!"
+        },
+        {
+          "rowNumber": 190,
+          "utterer": "SAY.Dialog:Day7.175.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "The BOARD OF DIRECTORS love it when you get intimate and Nuzzle them!"
+        },
+        {
+          "rowNumber": 191,
+          "utterer": "SAY.Dialog:Day7.173.Zookeeper Rose",
+          "context": "Jump to line 212.",
+          "sourceEnglish": "Get out there and make sure they leave here with full hearts and empty wallets!"
+        },
+        {
+          "rowNumber": 192,
+          "utterer": "SAY.Dialog:Day7.127.Smart Ass",
+          "context": "Branch 3.1. If Slow talked to Sad.",
+          "sourceEnglish": "Sad has ruined everything!"
+        },
+        {
+          "rowNumber": 193,
+          "utterer": "SAY.Dialog:Day7.131.Big Ass",
+          "context": "",
+          "sourceEnglish": "Was it something that we did?"
+        },
+        {
+          "rowNumber": 194,
+          "utterer": "SAY.Dialog:Day7.128.Slow Ass",
+          "context": "",
+          "sourceEnglish": "He said that he just wasn't hap-p-py here..."
+        },
+        {
+          "rowNumber": 195,
+          "utterer": "SAY.Dialog:Day7.130.Kick Ass",
+          "context": "",
+          "sourceEnglish": "@#$%&!—I DON'T UNDERSTAND—did he say where he was GOING?"
+        },
+        {
+          "rowNumber": 196,
+          "utterer": "SAY.Dialog:Day7.129.Slow Ass",
+          "context": "",
+          "sourceEnglish": "Nop-p-pe. He's just... \"gone\"."
+        },
+        {
+          "rowNumber": 197,
+          "utterer": "SAY.Dialog:Day7.133.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Forget him! He's a quitter."
+        },
+        {
+          "rowNumber": 198,
+          "utterer": "SAY.Dialog:Day7.135.Smart Ass",
+          "context": "",
+          "sourceEnglish": "And a sore loser!"
+        },
+        {
+          "rowNumber": 199,
+          "utterer": "SAY.Dialog:Day7.235.Smart Ass",
+          "context": "Smart exits.",
+          "sourceEnglish": "And good luck to him finding another job without Machines!"
+        },
+        {
+          "rowNumber": 200,
+          "utterer": "SAY.Dialog:Day7.134.Slow Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "P-p-perhaps that's true."
+        },
+        {
+          "rowNumber": 201,
+          "utterer": "SAY.Dialog:Day7.149.Smart Ass",
+          "context": "Branch 3.2. If Slow did NOT talk to Sad.",
+          "sourceEnglish": "Sad has ruined everything!"
+        },
+        {
+          "rowNumber": 202,
+          "utterer": "SAY.Dialog:Day7.236.Smart Ass",
+          "context": "",
+          "sourceEnglish": "If I ever see him again, I'm going to rip him a new one!"
+        },
+        {
+          "rowNumber": 203,
+          "utterer": "SAY.Dialog:Day7.141.Kick Ass",
+          "context": "",
+          "sourceEnglish": "@#$%&!—he just walked out on us without saying ANYTHING?!"
+        },
+        {
+          "rowNumber": 204,
+          "utterer": "SAY.Dialog:Day7.148.Slow Ass",
+          "context": "",
+          "sourceEnglish": "...not even a goodb-b-bye!"
+        },
+        {
+          "rowNumber": 205,
+          "utterer": "SAY.Dialog:Day7.147.Big Ass",
+          "context": "",
+          "sourceEnglish": "I guess we just keep working without him."
+        },
+        {
+          "rowNumber": 206,
+          "utterer": "SAY.Dialog:Day7.146.Slow Ass",
+          "context": "",
+          "sourceEnglish": "B-b-but shouldn't we look for him?"
+        },
+        {
+          "rowNumber": 207,
+          "utterer": "SAY.Dialog:Day7.145.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Hell no!"
+        },
+        {
+          "rowNumber": 208,
+          "utterer": "SAY.Dialog:Day7.144.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Good luck to him finding another job without Machines!"
+        },
+        {
+          "rowNumber": 209,
+          "utterer": "SAY.Dialog:Day7.237.Smart Ass",
+          "context": "",
+          "sourceEnglish": "I've changed my mind: Sad leaving is good news for the rest of us."
+        },
+        {
+          "rowNumber": 210,
+          "utterer": "SAY.Dialog:Day7.143.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Less competition for Ass of the Week!"
+        },
+        {
+          "rowNumber": 211,
+          "utterer": "SAY.Dialog:Day7.233.Slow Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "I guess it is one less Ass to comp-p-pete with."
+        },
+        {
+          "rowNumber": 212,
+          "utterer": "SAY.Dialog:Day7.154.Slow Ass",
+          "context": "Branch 3.3. If Sad was not in the Zoo.",
+          "sourceEnglish": "May the b-b-est Ass win!"
+        },
+        {
+          "rowNumber": 213,
+          "utterer": "SAY.Dialog:Day7.239.Big Ass",
+          "context": "",
+          "sourceEnglish": "You've surprised us all with how quickly you've grown your score."
+        },
+        {
+          "rowNumber": 214,
+          "utterer": "SAY.Dialog:Day7.241.Kick Ass",
+          "context": "",
+          "sourceEnglish": "@#$%&! How can we be losing to SLOW ASS?!?!"
+        },
+        {
+          "rowNumber": 215,
+          "utterer": "SAY.Dialog:Day7.158.Big Ass",
+          "context": "",
+          "sourceEnglish": "We wouldn't have this problem if you'd stop getting in my way."
+        },
+        {
+          "rowNumber": 216,
+          "utterer": "SAY.Dialog:Day7.157.Kick Ass",
+          "context": "",
+          "sourceEnglish": "WHAT?! You're as clunky as a MACHINE."
+        },
+        {
+          "rowNumber": 217,
+          "utterer": "SAY.Dialog:Day7.156.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Shut it! It's his ointment that's giving him an advantage!"
+        },
+        {
+          "rowNumber": 218,
+          "utterer": "SAY.Dialog:Day7.155.Slow Ass",
+          "context": "Mini-game begins.",
+          "sourceEnglish": "B-b-bring it on!"
+        },
+        {
+          "rowNumber": 219,
+          "utterer": "SAY.Dialog:Day7.178.Smart Ass",
+          "context": "Likely removed.",
+          "sourceEnglish": "It's unfair!"
+        },
+        {
+          "rowNumber": 220,
+          "utterer": "SAY.Dialog:Day7.234.Smart Ass",
+          "context": "Likely removed.",
+          "sourceEnglish": "If I ever see him again, I'm going to rip him a new one!"
+        },
+        {
+          "rowNumber": 221,
+          "utterer": "SAY.Dialog:Grandma.23.Grandma Kulan",
+          "context": "The final dialogue said by Grandma Kulan when the Player presses 'x' close to her, if the Player has visited her every day.",
+          "sourceEnglish": "Thank you for coming to visit me everyday."
+        },
+        {
+          "rowNumber": 222,
+          "utterer": "SAY.Dialog:Grandma.27.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "Maybe donkeys do have souls after all...?"
+        },
+        {
+          "rowNumber": 223,
+          "utterer": "SAY.Dialog:Grandma.28.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "I think I'm going to donate all my money to this Zoo."
+        },
+        {
+          "rowNumber": 224,
+          "utterer": "SAY.Dialog:Grandma.29.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "Thank you donkey!"
+        },
+        {
+          "rowNumber": 225,
+          "utterer": "SAY.Dialog:Grandma.29.",
+          "context": "",
+          "sourceEnglish": "Thank you Donkey!"
+        },
+        {
+          "rowNumber": 226,
+          "utterer": "SAY.Dialog:Grandma.8.",
+          "context": "",
+          "sourceEnglish": "Sigh... Joey would have loved this..."
+        },
+        {
+          "rowNumber": 227,
+          "utterer": "SAY.Dialog:Grandma.23.",
+          "context": "",
+          "sourceEnglish": "Thank you for coming to visit me everyday."
+        },
+        {
+          "rowNumber": 228,
+          "utterer": "SAY.Dialog:Grandma.27.",
+          "context": "",
+          "sourceEnglish": "Maybe Donkeys do have souls after all...?"
+        },
+        {
+          "rowNumber": 229,
+          "utterer": "SAY.Dialog:Grandma.28.",
+          "context": "",
+          "sourceEnglish": "I think I'm going to donate all my money to this Zoo."
+        },
+        {
+          "rowNumber": 230,
+          "utterer": "WRITE.Dialog:Localizer.5",
+          "context": "",
+          "sourceEnglish": "Episode Number"
+        },
+        {
+          "rowNumber": 231,
+          "utterer": "WRITE.Dialog:Localizer.7",
+          "context": "",
+          "sourceEnglish": "in which the asses"
+        },
+        {
+          "rowNumber": 232,
+          "utterer": "WRITE.Dialog:Localizer.8",
+          "context": "",
+          "sourceEnglish": "Press X"
+        }
+      ]
+    },
+    {
+      "sheetName": "E5_ZooCapture_localization",
+      "entries": [
+        {
+          "rowNumber": 1,
+          "utterer": "Key",
+          "context": "Description",
+          "sourceEnglish": "Standard"
+        },
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": ""
+        },
+        {
+          "rowNumber": 3,
+          "utterer": "SAY.Dialog:AssOfTheMonth.2.Zookeeper Rose",
+          "context": "The Asses assemble around Zookeeper Rose.",
+          "sourceEnglish": "Times up! The results are in!\\n"
+        },
+        {
+          "rowNumber": 4,
+          "utterer": "SAY.Dialog:AssOfTheMonth.10.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "You know if it were up to me you would all be Ass of the Week, but..."
+        },
+        {
+          "rowNumber": 5,
+          "utterer": "SAY.Dialog:AssOfTheMonth.34.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "We only had one plaque made."
+        },
+        {
+          "rowNumber": 6,
+          "utterer": "SAY.Dialog:AssOfTheMonth.33.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "So the winner is:"
+        },
+        {
+          "rowNumber": 7,
+          "utterer": "SAY.Dialog:AssOfTheMonth.40.Zookeeper Rose",
+          "context": "Jump to line 8, 11, 15, or 18.",
+          "sourceEnglish": "{$String}!"
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "WRITE.Dialog:Localizer.4",
+          "context": "Smart = Sophie",
+          "sourceEnglish": "Sophie"
+        },
+        {
+          "rowNumber": 9,
+          "utterer": "SAY.Dialog:AssOfTheMonth.186.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "She's the fan favourite!"
+        },
+        {
+          "rowNumber": 10,
+          "utterer": "SAY.Dialog:AssOfTheMonth.185.Smart Ass",
+          "context": "Jump to line 22 or 28.",
+          "sourceEnglish": "Ha! EASY! Take that suckers!"
+        },
+        {
+          "rowNumber": 11,
+          "utterer": "WRITE.Dialog:Localizer.3",
+          "context": "Big = The Hulk",
+          "sourceEnglish": "The Hulk"
+        },
+        {
+          "rowNumber": 12,
+          "utterer": "SAY.Dialog:AssOfTheMonth.187.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "What a monumental achievement!"
+        },
+        {
+          "rowNumber": 13,
+          "utterer": "SAY.Dialog:AssOfTheMonth.138.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Congratulations on a banner week!"
+        },
+        {
+          "rowNumber": 14,
+          "utterer": "SAY.Dialog:AssOfTheMonth.141.Big Ass",
+          "context": "Jump to line 22 or 28.",
+          "sourceEnglish": "This is a tremendous honour. Thank you!"
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "WRITE.Dialog:Localizer.2",
+          "context": "Kick = Littlefoot",
+          "sourceEnglish": "Littlefoot"
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "SAY.Dialog:AssOfTheMonth.188.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "You kicked Ass! Now you can step into the role of a winner, and walk with pride."
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "SAY.Dialog:AssOfTheMonth.142.Kick Ass",
+          "context": "Jump to line 22 or 28.",
+          "sourceEnglish": "YES! @#$%&! YES!!"
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "WRITE.Dialog:Localizer.1",
+          "context": "Slow = Achilles",
+          "sourceEnglish": "Achilles"
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "SAY.Dialog:AssOfTheMonth.189.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Your vulnerability turned out to be your greatest strength!"
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "SAY.Dialog:AssOfTheMonth.143.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "You're a real warrior!"
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "SAY.Dialog:AssOfTheMonth.146.Slow Ass",
+          "context": "Jump to line 22 or 28.",
+          "sourceEnglish": "I still can't b-b-believe that my p-p-poor b-b-bones didn't let me down!"
+        },
+        {
+          "rowNumber": 22,
+          "utterer": "SAY.Dialog:AssOfTheMonth.73.Zookeeper Rose",
+          "context": "A Truck arrives and two figures step out of the truck.\nBranch 1.1. Sad was at the Zoo and left.",
+          "sourceEnglish": "You're late!"
+        },
+        {
+          "rowNumber": 23,
+          "utterer": "SAY.Dialog:AssOfTheMonth.109.Melvin",
+          "context": "",
+          "sourceEnglish": "I thought you said there were going to be five?"
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "SAY.Dialog:AssOfTheMonth.101.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "One of them escaped last night."
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "SAY.Dialog:AssOfTheMonth.100.Wedgie",
+          "context": "",
+          "sourceEnglish": "We had a deal!"
+        },
+        {
+          "rowNumber": 26,
+          "utterer": "SAY.Dialog:AssOfTheMonth.99.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Please? Isn't four enough?"
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "SAY.Dialog:AssOfTheMonth.102.Wedgie",
+          "context": "Jump to line 33.",
+          "sourceEnglish": "Fine... here's your money."
+        },
+        {
+          "rowNumber": 28,
+          "utterer": "SAY.Dialog:AssOfTheMonth.74.Zookeeper Rose",
+          "context": "A Truck arrives and two figures step out of the truck.\nBranch 1.2. Sad was never at the Zoo.",
+          "sourceEnglish": "You're late!"
+        },
+        {
+          "rowNumber": 29,
+          "utterer": "SAY.Dialog:AssOfTheMonth.106.Melvin",
+          "context": "",
+          "sourceEnglish": "There was traffic."
+        },
+        {
+          "rowNumber": 30,
+          "utterer": "SAY.Dialog:AssOfTheMonth.105.Wedgie",
+          "context": "",
+          "sourceEnglish": "These the donkeys?"
+        },
+        {
+          "rowNumber": 31,
+          "utterer": "SAY.Dialog:AssOfTheMonth.104.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "Yes."
+        },
+        {
+          "rowNumber": 32,
+          "utterer": "SAY.Dialog:AssOfTheMonth.103.Wedgie",
+          "context": "Jump to line 33.",
+          "sourceEnglish": "Here's your money."
+        },
+        {
+          "rowNumber": 33,
+          "utterer": "SAY.Dialog:AssOfTheMonth.121.Zookeeper Rose",
+          "context": "Branches (1.1 and 1.2) converge.",
+          "sourceEnglish": "I'm sorry donkeys."
+        },
+        {
+          "rowNumber": 34,
+          "utterer": "SAY.Dialog:AssOfTheMonth.126.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "I love you all so much, but I need the cash..."
+        },
+        {
+          "rowNumber": 35,
+          "utterer": "SAY.Dialog:AssOfTheMonth.125.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "I need to buy a new phone..."
+        },
+        {
+          "rowNumber": 36,
+          "utterer": "SAY.Dialog:AssOfTheMonth.123.Zookeeper Rose",
+          "context": "",
+          "sourceEnglish": "They told me they are going to take really good care of you!"
+        },
+        {
+          "rowNumber": 37,
+          "utterer": "SAY.Dialog:AssOfTheMonth.122.Zookeeper Rose",
+          "context": "Rose runs off.",
+          "sourceEnglish": "*sniff*"
+        },
+        {
+          "rowNumber": 38,
+          "utterer": "SAY.Dialog:AssOfTheMonth.82.Wedgie",
+          "context": "",
+          "sourceEnglish": "Come on! Let's catch 'em all!"
+        },
+        {
+          "rowNumber": 39,
+          "utterer": "SAY.Dialog:AssOfTheMonth.83.Melvin",
+          "context": "",
+          "sourceEnglish": "Hold on! I need 15 seconds to load my tranquilizer gun!"
+        },
+        {
+          "rowNumber": 40,
+          "utterer": "SAY.Dialog:AssOfTheMonth.85.Smart Ass",
+          "context": "",
+          "sourceEnglish": "RUN!"
+        },
+        {
+          "rowNumber": 41,
+          "utterer": "SAY.Dialog:AssOfTheMonth.96.Kick Ass",
+          "context": "",
+          "sourceEnglish": "HIDE!"
+        },
+        {
+          "rowNumber": 42,
+          "utterer": "SAY.Dialog:AssOfTheMonth.89.Big Ass",
+          "context": "The donkeys run into the pen and hide.",
+          "sourceEnglish": "SLOW ASS COME ON!"
+        },
+        {
+          "rowNumber": 43,
+          "utterer": "SAY.Dialog:CaptureInterjections.1.Kick Ass",
+          "context": "Inside the pen, the Asses attempt to hide.",
+          "sourceEnglish": "Everyone! DON'T MOVE and DON'T MAKE A SOUND!"
+        },
+        {
+          "rowNumber": 44,
+          "utterer": "SAY.Dialog:CaptureInterjections.2.Melvin",
+          "context": "",
+          "sourceEnglish": "What's that sound?"
+        },
+        {
+          "rowNumber": 45,
+          "utterer": "SAY.Dialog:CaptureInterjections.5.Smart Ass",
+          "context": "",
+          "sourceEnglish": "Idiots! Hiding behind trees and rocks! They'll never find me! Ha!"
+        },
+        {
+          "rowNumber": 46,
+          "utterer": "SAY.Dialog:PostKnockOut.2.Slow Ass",
+          "context": "Branch 2.1. If Slow Ass is knocked out.",
+          "sourceEnglish": "Huh?"
+        },
+        {
+          "rowNumber": 47,
+          "utterer": "SAY.Dialog:PostKnockOut.18.Slow Ass",
+          "context": "",
+          "sourceEnglish": "What hap-p-p—?"
+        },
+        {
+          "rowNumber": 48,
+          "utterer": "SAY.Dialog:PostKnockOut.19.Slow Ass",
+          "context": "",
+          "sourceEnglish": "OH NO!"
+        },
+        {
+          "rowNumber": 49,
+          "utterer": "SAY.Dialog:PostKnockOut.21.Slow Ass",
+          "context": "",
+          "sourceEnglish": "It's u-p-p-p to ME to rescue them?!"
+        },
+        {
+          "rowNumber": 50,
+          "utterer": "SAY.Dialog:PostKnockOut.20.Slow Ass",
+          "context": "End of Episode.",
+          "sourceEnglish": "Oh b-b-boy...."
+        },
+        {
+          "rowNumber": 51,
+          "utterer": "SAY.Dialog:TeamRocketEnd.2.Melvin",
+          "context": "Branch 2.2. All the Asses are captured, except for Slow Ass.",
+          "sourceEnglish": "The Truck's full! Let's get back to the Factory and get paid."
+        },
+        {
+          "rowNumber": 52,
+          "utterer": "SAY.Dialog:TeamRocketEnd.5.Wedgie",
+          "context": "",
+          "sourceEnglish": "Wasn't there another one?"
+        },
+        {
+          "rowNumber": 53,
+          "utterer": "SAY.Dialog:TeamRocketEnd.11.Melvin",
+          "context": "",
+          "sourceEnglish": "Who cares. The big one is worth at least two. Now hurry!"
+        },
+        {
+          "rowNumber": 54,
+          "utterer": "SAY.Dialog:PostHiding.19.Slow Ass",
+          "context": "Slow Ass successfully stays hidden.",
+          "sourceEnglish": "OH NO!"
+        },
+        {
+          "rowNumber": 55,
+          "utterer": "SAY.Dialog:PostHiding.21.Slow Ass",
+          "context": "",
+          "sourceEnglish": "It's u-p-p-p to ME to rescue the others?!"
+        },
+        {
+          "rowNumber": 56,
+          "utterer": "SAY.Dialog:PostHiding.22.Slow Ass",
+          "context": "End of Episode.",
+          "sourceEnglish": "But I'll run out of ointment..."
+        }
+      ]
+    }
+  ]
+}

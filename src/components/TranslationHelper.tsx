@@ -16,10 +16,67 @@ import * as XLSX from 'xlsx';
  * - Real-time character name detection and insertion
  * - Progress tracking and navigation controls
  * 
+ * FUTURE REFACTORING OPPORTUNITIES:
+ * ====================================
+ * 
+ * 1. EXCEL PROCESSING MODULE
+ *    - Extract Excel file handling, parsing, and data extraction logic
+ *    - Create: useExcelProcessor hook + ExcelProcessor component
+ *    - State to extract: excelSheets, selectedSheet, workbookData, sourceColumn, etc.
+ * 
+ * 2. TRANSLATION WORKFLOW MODULE
+ *    - Extract translation session management and navigation
+ *    - Create: useTranslationWorkflow hook + TranslationWorkflow component
+ *    - State to extract: sourceTexts, translations, currentIndex, currentTranslation
+ * 
+ * 3. CODEX INTEGRATION MODULE
+ *    - Extract codex data fetching, matching, and UI rendering
+ *    - Create: useCodexIntegration hook + CodexPanel component
+ *    - State to extract: codexData, accordionStates, expandedItems, isLoadingCodex
+ * 
+ * 4. CHARACTER DETECTION MODULE
+ *    - Extract character name detection and insertion logic
+ *    - Create: useCharacterDetection hook + CharacterButtons component
+ *    - Functions to extract: detectAssCharacters, insertCharacterName, highlightMatchingText
+ * 
+ * 5. DISPLAY MODES MODULE
+ *    - Extract dark mode, gamepad mode, and visual state management
+ *    - Create: useDisplayModes hook + DisplayModeControls component
+ *    - State to extract: darkMode, gamepadMode, eyeMode, highlightMode
+ * 
+ * 6. DIALOGUE BOX MODULE
+ *    - Extract pixel art dialogue box rendering and styling
+ *    - Create: DialogueBox component with gamepad mode styling
+ *    - Functions to extract: dialogue rendering logic, pixel font styling
+ * 
+ * 7. PROGRESS TRACKING MODULE
+ *    - Extract progress calculation and navigation controls
+ *    - Create: useProgressTracking hook + ProgressControls component
+ *    - State to extract: progress calculation, jump navigation
+ * 
+ * 8. EXPORT FUNCTIONALITY MODULE
+ *    - Extract clipboard copying and export logic
+ *    - Create: useExportFunctionality hook + ExportControls component
+ *    - Functions to extract: copyToClipboard, getCellLocation
+ * 
+ * 9. SETUP WIZARD MODULE
+ *    - Extract initial setup and configuration UI
+ *    - Create: SetupWizard component with step-by-step configuration
+ *    - State to extract: inputMode, Excel configuration, manual input setup
+ * 
+ * 10. ANIMATION MODULE
+ *     - Extract transition animations and visual effects
+ *     - Create: useAnimations hook + AnimationProvider component
+ *     - State to extract: isAnimating, gradientColors, showCopied
+ * 
  * @component
  */
 const TranslationHelper: React.FC = () => {
   // ========== Core Translation State ==========
+  // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
+  // This state block should be extracted to useTranslationWorkflow hook
+  // Components to create: TranslationWorkflow, TranslationSession
+  // State management: sourceTexts, utterers, translations, currentIndex, currentTranslation
   const [sourceTexts, setSourceTexts] = useState<string[]>([]);        // Array of source texts to translate
   const [utterers, setUtterers] = useState<string[]>([]);              // Speaker/character names for each text
   const [translations, setTranslations] = useState<string[]>([]);      // User's translations
@@ -27,6 +84,10 @@ const TranslationHelper: React.FC = () => {
   const [currentTranslation, setCurrentTranslation] = useState('');    // Active translation being edited
   
   // ========== Excel Configuration State ==========
+  // FUTURE SPLIT: EXCEL PROCESSING MODULE
+  // This state block should be extracted to useExcelProcessor hook
+  // Components to create: ExcelProcessor, ExcelConfiguration, ExcelUploader
+  // State management: cellStart, excelSheets, selectedSheet, sourceColumn, uttererColumn, referenceColumn, useReferenceColumn, startRow, workbookData
   const [cellStart, setCellStart] = useState('A1');                    // Starting cell for export
   const [excelSheets, setExcelSheets] = useState<string[]>([]);        // Available sheets in uploaded Excel
   const [selectedSheet, setSelectedSheet] = useState('');              // Currently selected sheet
@@ -38,6 +99,11 @@ const TranslationHelper: React.FC = () => {
   const [workbookData, setWorkbookData] = useState<XLSX.WorkBook | null>(null); // Parsed Excel workbook
   
   // ========== UI State Management ==========
+  // FUTURE SPLIT: ANIMATION MODULE + SETUP WIZARD MODULE
+  // Animation state should be extracted to useAnimations hook
+  // Setup state should be extracted to useSetupWizard hook
+  // Components to create: AnimationProvider, SetupWizard, SessionManager
+  // State management: isStarted, isAnimating, showCopied, inputMode, gradientColors, isTranslating
   const [isStarted, setIsStarted] = useState(false);                   // Translation session active flag
   const [isAnimating, setIsAnimating] = useState(false);               // Animation state for transitions
   const [showCopied, setShowCopied] = useState(false);                 // Copy confirmation indicator
@@ -46,23 +112,36 @@ const TranslationHelper: React.FC = () => {
   const [isTranslating, setIsTranslating] = useState(false);           // Translation in progress flag
   
   // ========== Display Mode State ==========
+  // FUTURE SPLIT: DISPLAY MODES MODULE
+  // This state block should be extracted to useDisplayModes hook
+  // Components to create: DisplayModeControls, ThemeProvider, VisualModeSelector
+  // State management: darkMode, eyeMode, highlightMode, gamepadMode
   const [darkMode, setDarkMode] = useState(false);                     // Dark mode toggle
   const [eyeMode, setEyeMode] = useState(false);                       // Show translation instead of source
   const [highlightMode, setHighlightMode] = useState(true);            // Toggle highlighting of codex matches
   const [gamepadMode, setGamepadMode] = useState(false);               // Pixel dialogue box mode
   
   // ========== Navigation State ==========
+  // FUTURE SPLIT: PROGRESS TRACKING MODULE
+  // This state block should be extracted to useProgressTracking hook
+  // Components to create: ProgressControls, NavigationPanel, JumpToInput
+  // State management: showJumpInput, jumpValue, showVersionHash
   const [showJumpInput, setShowJumpInput] = useState(false);           // Show jump-to navigation
   const [jumpValue, setJumpValue] = useState('');                      // Jump input value
   const [showVersionHash, setShowVersionHash] = useState(false);       // Display version info
   
   // ========== Component References ==========
   const fileInputRef = useRef<HTMLInputElement>(null);                 // File input element reference
+  const textareaRef = useRef<HTMLTextAreaElement>(null);              // Textarea element reference
   
   // ========== Version Control ==========
   const VERSION_HASH = 'v1.1.0-clean';                                 // Application version identifier
   
   // ========== Codex Integration State ==========
+  // FUTURE SPLIT: CODEX INTEGRATION MODULE
+  // This state block should be extracted to useCodexIntegration hook
+  // Components to create: CodexPanel, CodexAccordion, CodexDataProvider
+  // State management: accordionStates, codexData, expandedItems, isLoadingCodex
   const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({}); // Accordion UI states
   const [codexData, setCodexData] = useState<any>(null);               // Loaded codex reference data
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set()); // Expanded codex items
@@ -74,6 +153,11 @@ const TranslationHelper: React.FC = () => {
   /**
    * Fetch codex data on component mount
    * Loads character and lore reference data from the API
+   * 
+   * FUTURE SPLIT: CODEX INTEGRATION MODULE
+   * This useEffect should be extracted to useCodexIntegration hook
+   * Function to extract: fetchCodexData
+   * Dependencies: codexData, isLoadingCodex state
    */
   useEffect(() => {
     const fetchCodexData = async () => {
@@ -104,6 +188,11 @@ const TranslationHelper: React.FC = () => {
    * 
    * @param text - The source text to search for codex matches
    * @returns Array of matching codex entries with title, content, and category
+   * 
+   * FUTURE SPLIT: CODEX INTEGRATION MODULE
+   * This function should be extracted to useCodexIntegration hook
+   * Related functions: categoryHasMatches, renderCodexItems
+   * Dependencies: codexData state
    */
   const getMatchingCodexEntries = (text: string) => {
     if (!codexData || !text) return [];
@@ -182,17 +271,43 @@ const TranslationHelper: React.FC = () => {
   };
 
   // Function to insert character name in parentheses
+  // FUTURE SPLIT: CHARACTER DETECTION MODULE
+  // This function should be extracted to useCharacterDetection hook
+  // Related functions: detectAssCharacters, highlightMatchingText
+  // Components to create: CharacterButtons, CharacterInsertion
+  // Dependencies: currentTranslation state, textareaRef
   const insertCharacterName = (characterName: string) => {
     const parenthesesName = `(${characterName})`;
-    setCurrentTranslation(prev => {
-      const cursorPos = (document.activeElement as HTMLTextAreaElement)?.selectionStart || 0;
-      const before = prev.slice(0, cursorPos);
-      const after = prev.slice(cursorPos);
-      return before + parenthesesName + after;
-    });
+    const textarea = textareaRef.current;
+    
+    if (textarea) {
+      const cursorPos = textarea.selectionStart;
+      const before = currentTranslation.slice(0, cursorPos);
+      const after = currentTranslation.slice(cursorPos);
+      const newText = before + parenthesesName + after;
+      
+      setCurrentTranslation(newText);
+      
+      // Set cursor position after the inserted text
+      setTimeout(() => {
+        if (textarea) {
+          const newCursorPos = cursorPos + parenthesesName.length;
+          textarea.setSelectionRange(newCursorPos, newCursorPos);
+          textarea.focus();
+        }
+      }, 0);
+    } else {
+      // Fallback: append to the end if textarea ref is not available
+      setCurrentTranslation(prev => prev + parenthesesName);
+    }
   };
 
   // Function to highlight matching text and add clickable character names
+  // FUTURE SPLIT: CHARACTER DETECTION MODULE + CODEX INTEGRATION MODULE
+  // This function combines character detection and codex highlighting
+  // Should be split between useCharacterDetection and useCodexIntegration hooks
+  // Components to create: TextHighlighter, CharacterHighlighter, CodexHighlighter
+  // Dependencies: codexData, highlightMode state, getMatchingCodexEntries, detectAssCharacters
   const highlightMatchingText = (text: string) => {
     if (!codexData) return text;
     
@@ -237,6 +352,10 @@ const TranslationHelper: React.FC = () => {
   };
 
   // Function to toggle expanded items
+  // FUTURE SPLIT: CODEX INTEGRATION MODULE
+  // This function should be extracted to useCodexIntegration hook
+  // Components to create: CodexAccordion, CodexItemExpander
+  // Dependencies: expandedItems state
   const toggleExpandedItem = (itemId: string) => {
     const newExpanded = new Set(expandedItems);
     if (newExpanded.has(itemId)) {
@@ -248,6 +367,10 @@ const TranslationHelper: React.FC = () => {
   };
 
   // Function to toggle accordion states
+  // FUTURE SPLIT: CODEX INTEGRATION MODULE
+  // This function should be extracted to useCodexIntegration hook
+  // Components to create: CodexAccordion, CodexCategoryToggler
+  // Dependencies: accordionStates state
   const toggleAccordion = (category: string) => {
     setAccordionStates(prev => ({
       ...prev,
@@ -256,6 +379,10 @@ const TranslationHelper: React.FC = () => {
   };
 
   // Helper function to render expandable codex items
+  // FUTURE SPLIT: CODEX INTEGRATION MODULE
+  // This function should be extracted to useCodexIntegration hook
+  // Components to create: CodexItemRenderer, CodexCategoryRenderer
+  // Dependencies: codexData, accordionStates, expandedItems state
   const renderCodexItems = (category: string, categoryKey: string) => {
     if (isLoadingCodex) {
       return <div className="text-center py-4 text-gray-500">Loading codex data...</div>;
@@ -290,6 +417,10 @@ const TranslationHelper: React.FC = () => {
   };
 
   // Generate random gradient colors - expanded palette
+  // FUTURE SPLIT: ANIMATION MODULE
+  // This function should be extracted to useAnimations hook
+  // Components to create: AnimationProvider, GradientGenerator
+  // Dependencies: gradientColors state
   const generateGradientColors = (): string[] => {
     const colorPalettes = [
       // Original palettes
@@ -365,6 +496,10 @@ const TranslationHelper: React.FC = () => {
   }, []);
 
   // Initialize and persist dark mode
+  // FUTURE SPLIT: DISPLAY MODES MODULE
+  // This useEffect should be extracted to useDisplayModes hook
+  // Components to create: ThemeProvider, DarkModeInitializer
+  // Dependencies: darkMode state
   useEffect(() => {
     // Check localStorage and system preference
     const savedMode = localStorage.getItem('darkMode');
@@ -378,6 +513,10 @@ const TranslationHelper: React.FC = () => {
   }, []);
 
   // Update document class and localStorage when dark mode changes
+  // FUTURE SPLIT: DISPLAY MODES MODULE
+  // This useEffect should be extracted to useDisplayModes hook
+  // Components to create: ThemeProvider, DarkModeSync
+  // Dependencies: darkMode state
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add('dark');
@@ -388,6 +527,10 @@ const TranslationHelper: React.FC = () => {
     }
   }, [darkMode]);
 
+  // FUTURE SPLIT: EXCEL PROCESSING MODULE
+  // This function should be extracted to useExcelProcessor hook
+  // Components to create: ExcelUploader, ExcelFileProcessor
+  // Dependencies: workbookData, excelSheets, selectedSheet state
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
@@ -414,6 +557,10 @@ const TranslationHelper: React.FC = () => {
   };
 
   // Effect to reprocess when settings change
+  // FUTURE SPLIT: EXCEL PROCESSING MODULE
+  // This useEffect should be extracted to useExcelProcessor hook
+  // Function to extract: processExcelData
+  // Dependencies: workbookData, selectedSheet, sourceColumn, uttererColumn, referenceColumn, useReferenceColumn, startRow
   useEffect(() => {
     if (workbookData && selectedSheet) {
       const worksheet = workbookData.Sheets[selectedSheet];
@@ -447,6 +594,10 @@ const TranslationHelper: React.FC = () => {
     }
       }, [workbookData, selectedSheet, sourceColumn, uttererColumn, referenceColumn, useReferenceColumn, startRow]);
 
+  // FUTURE SPLIT: SETUP WIZARD MODULE
+  // This function should be extracted to useSetupWizard hook
+  // Components to create: ManualInputSetup, InputModeSelector
+  // Dependencies: sourceTexts, utterers, translations, currentIndex, isStarted state
   const handleSourceInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const lines = e.target.value.split('\n').filter(line => line.trim() !== '');
     setSourceTexts(lines);
@@ -462,6 +613,10 @@ const TranslationHelper: React.FC = () => {
     setInputMode('manual');
   };
 
+      // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
+      // This function should be extracted to useTranslationWorkflow hook
+      // Components to create: TranslationSession, WorkflowController
+      // Dependencies: sourceTexts, translations, currentIndex, currentTranslation, isStarted, useReferenceColumn state
       const handleStart = () => {
       if (sourceTexts.length > 0) {
         setIsStarted(true);
@@ -475,6 +630,10 @@ const TranslationHelper: React.FC = () => {
       }
     };
 
+  // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
+  // This function should be extracted to useTranslationWorkflow hook
+  // Components to create: WorkflowNavigation, SessionControls
+  // Dependencies: isStarted state
   const handleBackToSetup = () => {
     setIsStarted(false);
     setCurrentIndex(0);
@@ -482,6 +641,10 @@ const TranslationHelper: React.FC = () => {
     // Preserve utterers and translations when going back
   };
 
+  // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
+  // This function should be extracted to useTranslationWorkflow hook
+  // Components to create: TranslationSubmitter, WorkflowNavigation
+  // Dependencies: currentIndex, currentTranslation, translations, sourceTexts state
   const handleSubmit = () => {
     const newTranslations = [...translations];
     newTranslations[currentIndex] = currentTranslation;
@@ -501,6 +664,10 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
+  // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
+  // This function should be extracted to useTranslationWorkflow hook
+  // Components to create: WorkflowNavigation, NavigationControls
+  // Dependencies: currentIndex, currentTranslation, translations state
   const handlePrevious = () => {
     if (currentIndex > 0) {
       setIsAnimating(true);
@@ -512,6 +679,10 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
+  // FUTURE SPLIT: EXPORT FUNCTIONALITY MODULE
+  // This function should be extracted to useExportFunctionality hook
+  // Components to create: ExportControls, ClipboardManager
+  // Dependencies: translations, showCopied state
   const copyToClipboard = () => {
     // Copy just the translations, without row numbers or utterers
     const text = translations.join('\n');
@@ -520,6 +691,10 @@ const TranslationHelper: React.FC = () => {
     setTimeout(() => setShowCopied(false), 2000);
   };
 
+  // FUTURE SPLIT: EXPORT FUNCTIONALITY MODULE
+  // This function should be extracted to useExportFunctionality hook
+  // Components to create: ExportControls, CellLocationCalculator
+  // Dependencies: excelSheets, cellStart state
   const getCellLocation = (index: number) => {
     if (excelSheets.length > 0) {
       // For Excel files, use row numbers
@@ -993,35 +1168,44 @@ const TranslationHelper: React.FC = () => {
                 <div 
                   className="mx-auto gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-black dark:border-gray-400"
                   style={{ 
-                    width: '600px',     // GAMEPAD BOX WIDTH - Adjust here
-                    height: '200px',    // GAMEPAD BOX HEIGHT - Reduced by 100px (was 300px)
-                    fontFamily: '"Pixelify Sans", sans-serif',
-                    fontSize: '1.4rem', // GAMEPAD BOX FONT SIZE - CONTROL HERE (was 1.7em, now 1.4rem)
+                    width: '325px',     // Half the original width
+                    height: '125px',    // Half the original height
+                    fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                    fontSize: '1.5rem', // Slightly larger font for better readability
                     lineHeight: '1.4',
                     overflow: 'hidden',
-                    letterSpacing: '0.01em',
-                    borderRadius: '3px'
+                    letterSpacing: '0.02em',
+                    borderRadius: '4px',
+                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+                    background: darkMode ? 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)' : 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
+                    position: 'relative'
                   }}
                 >
-                  {/* Speaker bar */}
+                  {/* Speaker bar with reduced height */}
                   <div 
-                    className="bg-black dark:bg-gray-800 text-white dark:text-gray-100 px-4 py-2 border-b-2 border-black dark:border-gray-700 text-left pixelify-sans-600"
-                    style={{ fontSize: '2rem', fontFamily: '"Pixelify Sans", sans-serif' }} // Speaker font size
+                    className="bg-black dark:bg-gray-800 text-white dark:text-gray-100 px-4 py-2 border-b-2 border-black dark:border-gray-700 text-left pixelify-sans-600 relative"
+                    style={{ 
+                      fontSize: '1.8rem', 
+                      fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                      background: 'linear-gradient(90deg, #000000 0%, #1a1a1a 100%)'
+                    }}
                   >
-                    {extractSpeakerName(utterers[currentIndex])}
+                    <span className="text-shadow-pixel">{extractSpeakerName(utterers[currentIndex])}</span>
                   </div>
                   
-                  {/* Main dialogue area */}
+                  {/* Main dialogue area with enhanced styling */}
                   <div 
-                    className="p-4 relative text-left pixelify-sans-500"
+                    className="p-3 relative text-left pixelify-sans-500 overflow-y-auto custom-scrollbar"
                     style={{ 
                       height: 'calc(100% - 50px)',
-                      fontFamily: '"Pixelify Sans", sans-serif',
-                      fontSize: '1.4rem', // Main dialogue font size - matches box font size
-                      lineHeight: '1.5'
+                      fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                      fontSize: '1.2rem',
+                      lineHeight: '1.6',
+                      background: darkMode ? 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)' : 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)'
                     }}
                   >
                     <div 
+                      className="dialogue-content"
                       dangerouslySetInnerHTML={{ 
                         __html: eyeMode && currentTranslation 
                           ? highlightMatchingText(currentTranslation)
@@ -1036,10 +1220,14 @@ const TranslationHelper: React.FC = () => {
                           }
                         }
                       }}
+                      style={{
+                        textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
+                        wordSpacing: '0.05em'
+                      }}
                     />
                     
-                    {/* Continue dialogue chevron */}
-                    <div className="absolute bottom-4 right-4 text-gray-600 animate-pulse">
+                    {/* Simplified continue dialogue indicator */}
+                    <div className="absolute bottom-2 right-2 text-gray-600 animate-bounce">
                       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M7 10l5 5 5-5z"/>
                       </svg>
@@ -1137,6 +1325,7 @@ const TranslationHelper: React.FC = () => {
               </div>
             </div>
             <textarea
+              ref={textareaRef}
               value={currentTranslation}
               onChange={(e) => setCurrentTranslation(e.target.value)}
               onKeyDown={(e) => {
@@ -1163,7 +1352,9 @@ const TranslationHelper: React.FC = () => {
                         key={`char-${index}`}
                         onClick={() => insertCharacterName(character)}
                         className="px-3 py-1 text-xs bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 hover:bg-blue-200 dark:hover:bg-blue-700 transition-colors duration-200 font-medium whitespace-nowrap"
-                        style={{ borderRadius: '3px' }}
+                        style={{ 
+                          borderRadius: '3px'
+                        }}
                       >
                         {character}
                       </button>
@@ -1174,7 +1365,9 @@ const TranslationHelper: React.FC = () => {
                         key={`codex-${index}`}
                         onClick={() => insertCharacterName(entry.title)}
                         className="px-3 py-1 text-xs bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-600 hover:bg-purple-200 dark:hover:bg-purple-700 transition-colors duration-200 font-medium whitespace-nowrap"
-                        style={{ borderRadius: '3px' }}
+                        style={{ 
+                          borderRadius: '3px'
+                        }}
                         title={`From ${entry.category}`}
                       >
                         {entry.title}
@@ -1191,14 +1384,18 @@ const TranslationHelper: React.FC = () => {
               onClick={handlePrevious}
               disabled={currentIndex === 0}
               className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
-              style={{ borderRadius: '3px' }}
+              style={{ 
+                borderRadius: '3px'
+              }}
             >
               ‹ Previous
             </button>
             <button
               onClick={handleSubmit}
               className="flex-1 px-6 py-3 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide"
-              style={{ borderRadius: '3px' }}
+              style={{ 
+                borderRadius: '3px'
+              }}
             >
               {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Submit & Next ›'}
             </button>
@@ -1353,4 +1550,102 @@ const TranslationHelper: React.FC = () => {
   );
 };
 
+/**
+ * COMPREHENSIVE REFACTORING STRATEGY SUMMARY
+ * ============================================
+ * 
+ * This monolithic component has been thoroughly annotated for future splitting.
+ * The refactoring should follow this priority order:
+ * 
+ * PHASE 1: CORE FUNCTIONALITY EXTRACTION
+ * --------------------------------------
+ * 1. Excel Processing Module (useExcelProcessor + ExcelProcessor)
+ *    - State: workbookData, excelSheets, selectedSheet, sourceColumn, etc.
+ *    - Functions: handleFileUpload, processExcelData
+ *    - Components: ExcelUploader, ExcelConfiguration, ExcelFileProcessor
+ * 
+ * 2. Translation Workflow Module (useTranslationWorkflow + TranslationWorkflow)
+ *    - State: sourceTexts, translations, currentIndex, currentTranslation
+ *    - Functions: handleStart, handleSubmit, handlePrevious, handleBackToSetup
+ *    - Components: TranslationSession, WorkflowController, NavigationControls
+ * 
+ * 3. Codex Integration Module (useCodexIntegration + CodexPanel)
+ *    - State: codexData, accordionStates, expandedItems, isLoadingCodex
+ *    - Functions: fetchCodexData, getMatchingCodexEntries, renderCodexItems
+ *    - Components: CodexAccordion, CodexItemRenderer, CodexDataProvider
+ * 
+ * PHASE 2: UI/UX MODULES
+ * -----------------------
+ * 4. Character Detection Module (useCharacterDetection + CharacterButtons)
+ *    - Functions: detectAssCharacters, insertCharacterName, highlightMatchingText
+ *    - Components: CharacterDetector, CharacterInsertion, TextHighlighter
+ * 
+ * 5. Display Modes Module (useDisplayModes + DisplayModeControls)
+ *    - State: darkMode, gamepadMode, eyeMode, highlightMode
+ *    - Functions: dark mode management, theme switching
+ *    - Components: ThemeProvider, VisualModeSelector, DarkModeSync
+ * 
+ * 6. Dialogue Box Module (DialogueBox component)
+ *    - Extract pixel art dialogue box rendering
+ *    - Components: DialogueBox, SpeakerBar, DialogueContent
+ * 
+ * PHASE 3: UTILITY MODULES
+ * -------------------------
+ * 7. Progress Tracking Module (useProgressTracking + ProgressControls)
+ *    - State: showJumpInput, jumpValue, showVersionHash
+ *    - Functions: progress calculation, navigation
+ *    - Components: ProgressBar, JumpToInput, NavigationPanel
+ * 
+ * 8. Export Functionality Module (useExportFunctionality + ExportControls)
+ *    - Functions: copyToClipboard, getCellLocation
+ *    - Components: ExportControls, ClipboardManager, CellLocationCalculator
+ * 
+ * 9. Setup Wizard Module (useSetupWizard + SetupWizard)
+ *    - State: inputMode, Excel configuration
+ *    - Functions: handleSourceInput, setup management
+ *    - Components: SetupWizard, ManualInputSetup, InputModeSelector
+ * 
+ * 10. Animation Module (useAnimations + AnimationProvider)
+ *     - State: isAnimating, gradientColors, showCopied
+ *     - Functions: generateGradientColors, animation management
+ *     - Components: AnimationProvider, GradientGenerator
+ * 
+ * IMPLEMENTATION NOTES:
+ * - Each module should have its own hook for state management
+ * - Components should be co-located with their hooks
+ * - Use React Context for cross-module communication
+ * - Maintain TypeScript interfaces for all extracted functions
+ * - Preserve existing functionality during extraction
+ * - Test each module independently after extraction
+ * 
+ * FILE STRUCTURE AFTER REFACTORING:
+ * src/
+ * ├── hooks/
+ * │   ├── useExcelProcessor.ts
+ * │   ├── useTranslationWorkflow.ts
+ * │   ├── useCodexIntegration.ts
+ * │   ├── useCharacterDetection.ts
+ * │   ├── useDisplayModes.ts
+ * │   ├── useProgressTracking.ts
+ * │   ├── useExportFunctionality.ts
+ * │   ├── useSetupWizard.ts
+ * │   └── useAnimations.ts
+ * ├── components/
+ * │   ├── modules/
+ * │   │   ├── ExcelProcessor/
+ * │   │   ├── TranslationWorkflow/
+ * │   │   ├── CodexPanel/
+ * │   │   ├── CharacterDetection/
+ * │   │   ├── DisplayModes/
+ * │   │   ├── DialogueBox/
+ * │   │   ├── ProgressTracking/
+ * │   │   ├── ExportFunctionality/
+ * │   │   ├── SetupWizard/
+ * │   │   └── Animations/
+ * │   └── TranslationHelper.tsx (simplified main component)
+ * 
+ * This refactoring will transform the 1553-line monolithic component into
+ * a modular, maintainable, and testable architecture while preserving
+ * all existing functionality.
+ */
 export default TranslationHelper; 

@@ -1,17 +1,18 @@
 import type { Metadata } from 'next'
-import { Inter, VT323, Pixelify_Sans } from 'next/font/google'
+import { Pixelify_Sans } from 'next/font/google'
 import './globals.css'
 
 /**
  * Font Configuration
  * 
- * Inter: Main UI font for clean, modern interface
- * VT323: Retro terminal font (kept for backward compatibility)
- * Pixelify_Sans: Pixel art font for gamepad/dialogue box mode
+ * Pixelify Sans: Pixel art font for gamepad/dialogue box mode
  */
-const inter = Inter({ subsets: ['latin'] })
-const pixelFont = VT323({ weight: '400', subsets: ['latin'] })
-const pixelifySans = Pixelify_Sans({ weight: ['400', '500', '600', '700'], subsets: ['latin'] })
+const pixelifySans = Pixelify_Sans({ 
+  weight: ['400', '500', '600', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-pixelify-sans'
+})
 
 /**
  * Application Metadata
@@ -39,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="">
-      <body className={`${inter.className} antialiased`}>
+    <html lang="en" className={pixelifySans.variable}>
+      <body className="antialiased">
         {children}
       </body>
     </html>

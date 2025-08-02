@@ -123,31 +123,66 @@
 
   /* Pixelify Sans font weight utilities for gamepad mode */
   .pixelify-sans-400 {
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: var(--font-pixelify-sans), "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
   }
   
   .pixelify-sans-500 {
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: var(--font-pixelify-sans), "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
   }
   
   .pixelify-sans-600 {
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: var(--font-pixelify-sans), "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
   }
   
   .pixelify-sans-700 {
-    font-family: "Pixelify Sans", sans-serif;
+    font-family: var(--font-pixelify-sans), "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
+  }
+  
+  /* Pixel art text shadow for enhanced retro feel */
+  .text-shadow-pixel {
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Gamepad mode specific styles */
+  .gamepad-box {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+  }
+  
+  /* Dark mode gamepad box styling */
+  .dark .gamepad-box {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+    border-color: #4a4a4a !important;
+  }
+  
+  .dark .gamepad-box .dialogue-content {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%) !important;
+  }
+  
+  /* Dialogue content styling for gamepad mode */
+  .dialogue-content {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "liga" 1, "kern" 1;
+  }
+  
+  /* Pixel art border effect */
+  .pixel-border {
+    border-style: solid;
+    border-width: 4px;
+    border-image: linear-gradient(45deg, #000000, #333333) 1;
   }
 }
 
