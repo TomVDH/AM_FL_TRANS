@@ -195,7 +195,44 @@ const TranslationHelper: React.FC = () => {
   // ========== JSON Highlighting State ==========
   // ✅ REFACTORED: Extracted to useJsonHighlighting hook
   // Using Localization Manual for world entities highlighting
-  const { findJsonMatches, getHoverText } = useJsonHighlighting(jsonData);
+  const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
+  const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
+
+  // Auto-load Localization Manual for highlighting
+  useEffect(() => {
+    const loadLocalizationManual = async () => {
+      console.log('🔧 TranslationHelper Debug: Loading Localization Manual for highlighting');
+      try {
+        const response = await fetch('/api/json-data?file=READ_ME_LocalizationManual.json');
+        if (response.ok) {
+          const data = await response.json();
+          setHighlightingJsonData(data);
+          console.log('🔧 TranslationHelper Debug: Localization Manual loaded for highlighting');
+        } else {
+          console.log('🔧 TranslationHelper Debug: Failed to load Localization Manual');
+        }
+      } catch (error) {
+        console.log('🔧 TranslationHelper Debug: Error loading Localization Manual:', error);
+      }
+    };
+
+    loadLocalizationManual();
+  }, []);
+
+  // Debug: Check what JSON data is available for highlighting
+  useEffect(() => {
+    console.log('🔧 TranslationHelper Debug: highlightingJsonData:', highlightingJsonData);
+    console.log('🔧 TranslationHelper Debug: highlightingJsonData sheets:', highlightingJsonData?.sheets?.length);
+    if (highlightingJsonData?.sheets) {
+      const namesSheet = highlightingJsonData.sheets.find((sheet: any) => 
+        sheet.sheetName === "Names and World Overview"
+      );
+      console.log('🔧 TranslationHelper Debug: Names sheet found:', !!namesSheet);
+      if (namesSheet) {
+        console.log('🔧 TranslationHelper Debug: Names sheet entries:', namesSheet.entries?.length);
+      }
+    }
+  }, [highlightingJsonData]);
 
   // Function to check if a category has matching entries (for codex)
   const categoryHasMatches = (category: string) => {
@@ -846,7 +883,7 @@ const TranslationHelper: React.FC = () => {
                     )}
                     <TextHighlighter
                       text={sourceTexts[currentIndex]}
-                      jsonData={jsonData}
+                      jsonData={highlightingJsonData}
                       highlightMode={highlightMode}
                       eyeMode={eyeMode}
                       currentTranslation={currentTranslation}
@@ -896,7 +933,7 @@ const TranslationHelper: React.FC = () => {
                   )}
                   <TextHighlighter
                     text={sourceTexts[currentIndex]}
-                    jsonData={jsonData}
+                    jsonData={highlightingJsonData}
                     highlightMode={highlightMode}
                     eyeMode={eyeMode}
                     currentTranslation={currentTranslation}
@@ -1013,7 +1050,7 @@ const TranslationHelper: React.FC = () => {
                 </p>
                 
                 {/* JSON Translation Suggestions */}
-                {jsonData && (() => {
+                {highlightingJsonData && (() => {
                   const matches = findJsonMatches(sourceTexts[currentIndex] || '');
                   if (matches.length > 0) {
                     const firstMatch = matches[0];

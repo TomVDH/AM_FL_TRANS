@@ -66,19 +66,33 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
    * @returns HTML string with highlighted elements
    */
   const highlightMatchingText = (text: string) => {
-    if (!jsonData) return text;
+    console.log('🎨 TextHighlighter Debug: Starting highlight for text:', text);
+    console.log('🎨 TextHighlighter Debug: jsonData available:', !!jsonData);
+    console.log('🎨 TextHighlighter Debug: highlightMode:', highlightMode);
+    
+    if (!jsonData) {
+      console.log('🎨 TextHighlighter Debug: No jsonData, returning original text');
+      return text;
+    }
     
     const matches = findJsonMatches(text);
     const assCharacters = detectAssCharacters(text);
+    
+    console.log('🎨 TextHighlighter Debug: Found JSON matches:', matches.length);
+    console.log('🎨 TextHighlighter Debug: Found Ass characters:', assCharacters.length);
     
     let highlightedText = text;
     
     // Only highlight if highlighting is enabled
     if (highlightMode) {
+      console.log('🎨 TextHighlighter Debug: Highlight mode is ON');
+      
       // Sort matches by length (longest first) to handle overlapping matches properly
       const sortedMatches = [...matches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
       
       sortedMatches.forEach(match => {
+        console.log('🎨 TextHighlighter Debug: Processing match:', match.sourceEnglish);
+        
         // Escape special regex characters in the sourceEnglish
         const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
@@ -86,11 +100,15 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
         // Create hover text
         const hoverText = getHoverText(match);
         
+        console.log('🎨 TextHighlighter Debug: Replacing with hover text:', hoverText);
+        
         // Replace with highlighted span that has hover functionality
         highlightedText = highlightedText.replace(regex, 
           `<span class="json-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #3B82F6; font-weight: 500;" title="${hoverText}">$1</span>`
         );
       });
+    } else {
+      console.log('🎨 TextHighlighter Debug: Highlight mode is OFF');
     }
     
     // Make **Ass characters clickable
@@ -109,6 +127,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       }
     });
     
+    console.log('🎨 TextHighlighter Debug: Final highlighted text length:', highlightedText.length);
     return highlightedText;
   };
 
