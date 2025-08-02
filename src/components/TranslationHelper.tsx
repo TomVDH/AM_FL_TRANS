@@ -1203,15 +1203,15 @@ const TranslationHelper: React.FC = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
             <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
-              <p className="font-bold text-base sm:text-lg">{currentIndex + 1}</p>
+              <p className="font-bold text-base sm:text-lg text-gray-900 dark:text-gray-100">{currentIndex + 1}</p>
               <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Current</p>
             </div>
             <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
-              <p className="font-bold text-base sm:text-lg">{translations.filter(t => t).length}</p>
+              <p className="font-bold text-base sm:text-lg text-gray-900 dark:text-gray-100">{translations.filter(t => t).length}</p>
               <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Completed</p>
             </div>
             <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
-              <p className="font-bold text-base sm:text-lg">{Math.round(progress)}%</p>
+              <p className="font-bold text-base sm:text-lg text-gray-900 dark:text-gray-100">{Math.round(progress)}%</p>
               <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Progress</p>
             </div>
           </div>
