@@ -1,6 +1,6 @@
 {
   "fileName": "READ_ME_LocalizationManual",
-  "processedAt": "2025-08-02T05:53:20.265Z",
+  "processedAt": "2025-08-02T06:03:19.286Z",
   "sheets": [
     {
       "sheetName": "Localization Manual",
@@ -354,781 +354,556 @@
       "sheetName": "Names and World Overview",
       "entries": [
         {
-          "rowNumber": 2,
-          "utterer": "",
-          "context": "MAIN DONKEYS",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 3,
-          "utterer": "",
-          "context": "FARM DONKEYS",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
           "rowNumber": 4,
-          "utterer": "Character Name",
-          "context": "Trusty Ass",
-          "sourceEnglish": "Old Ass",
-          "translatedDutch": "Bad Ass"
-        },
-        {
-          "rowNumber": 5,
-          "utterer": "Sex",
-          "context": "Female",
-          "sourceEnglish": "Male",
-          "translatedDutch": "Male"
-        },
-        {
-          "rowNumber": 6,
-          "utterer": "Description",
-          "context": "First met as more of a listener than a leader, she is accepted as Old Ass's second in command. When she dies, she longs to be reassigned so that she can become a better leader.",
-          "sourceEnglish": "Classic Marxist/Leninist leader. Inspires the heard in his lofty speeches.",
-          "translatedDutch": "A radical that wants to be left alone\n\nPessimistic Edgy Philosophical and Political\n\nIs actually a Human who was turned into a donkey by the Gods by accident. (see Cole Butte below)"
-        },
-        {
-          "rowNumber": 7,
-          "utterer": "Dialog convention",
-          "context": "Never speaks until Ep 8.",
-          "sourceEnglish": "\"Now where was I... Right... I was lamenting the struggles of our existence.\"\n\nInjustice\nProtest\nPolitics",
-          "translatedDutch": "Critical theory, philosophical, generally contemporary jaded leftist"
-        },
-        {
-          "rowNumber": 9,
-          "utterer": "Spanish",
-          "context": "Confianzurra",
-          "sourceEnglish": "Viejurro",
-          "translatedDutch": "Cinicurro"
-        },
-        {
-          "rowNumber": 10,
-          "utterer": "French",
-          "context": "Const-ânne",
-          "sourceEnglish": "Âne-cien",
-          "translatedDutch": "Dissid-âne"
-        },
-        {
-          "rowNumber": 11,
-          "utterer": "Portuguese",
-          "context": "Confiasna",
-          "sourceEnglish": "Anciasno",
-          "translatedDutch": "Burrebelde"
-        },
-        {
-          "rowNumber": 12,
-          "utterer": "Italian",
-          "context": "Fedelasina",
-          "sourceEnglish": "Anziasino",
-          "translatedDutch": "Criticasino"
-        },
-        {
-          "rowNumber": 13,
-          "utterer": "German",
-          "context": "Treu-Eselin",
-          "sourceEnglish": "Alt-Esel",
-          "translatedDutch": "Radikal-Esel"
-        },
-        {
-          "rowNumber": 14,
-          "utterer": "Turkish",
-          "context": "Dost Eşek",
-          "sourceEnglish": "Kart Eşek",
-          "translatedDutch": "Ters Eşek"
+          "data": [
+            {
+              "column": "A",
+              "value": "Character Name"
+            },
+            {
+              "column": "B",
+              "value": "Trusty Ass"
+            },
+            {
+              "column": "C",
+              "value": "Old Ass"
+            },
+            {
+              "column": "D",
+              "value": "Nice Ass"
+            },
+            {
+              "column": "E",
+              "value": "Big Ass"
+            },
+            {
+              "column": "F",
+              "value": "Thirsty Ass"
+            },
+            {
+              "column": "G",
+              "value": "Smart Ass"
+            },
+            {
+              "column": "H",
+              "value": "Slow Ass"
+            },
+            {
+              "column": "I",
+              "value": "Sturdy Ass"
+            },
+            {
+              "column": "J",
+              "value": "Bad Ass"
+            },
+            {
+              "column": "K",
+              "value": "Foal (named by audience)"
+            },
+            {
+              "column": "L",
+              "value": "Sad Ass"
+            },
+            {
+              "column": "M",
+              "value": "Hard Ass"
+            },
+            {
+              "column": "N",
+              "value": "Kick Ass"
+            },
+            {
+              "column": "O",
+              "value": "Sick Ass"
+            },
+            {
+              "column": "P",
+              "value": "Lazy Ass"
+            }
+          ]
         },
         {
           "rowNumber": 16,
-          "utterer": "Dutch",
-          "context": "Biechtezel",
-          "sourceEnglish": "Roste Rakker, Oude Smok",
-          "translatedDutch": "Strafbeest, Felle Gast"
-        },
-        {
-          "rowNumber": 17,
-          "utterer": "",
-          "context": "",
-          "sourceEnglish": "Ezeltje",
-          "translatedDutch": "Keetschopper"
-        },
-        {
-          "rowNumber": 18,
-          "utterer": "Catalan",
-          "context": "Honradase",
-          "sourceEnglish": "Saviase/ Vellase",
-          "translatedDutch": "Rudase"
-        },
-        {
-          "rowNumber": 20,
-          "utterer": "Japanese",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 21,
-          "utterer": "Japanese romanization",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 22,
-          "utterer": "Korean",
-          "context": "믿음 나귀/ 든든한 나귀/믿음직한 나귀/ 충직한 나귀",
-          "sourceEnglish": "노장 나귀/노땅나귀/ 나귀 어르신/어르신 나귀/원로 나귀/시니어 나귀/리더 나귀/대장 나귀/나귀 (노조)위원장/멘토 나귀",
-          "translatedDutch": "불량 나귀/까칠한 나귀/문제 나귀/쎈 나귀/드센 나귀/존재감 나귀/꼬인 나귀"
-        },
-        {
-          "rowNumber": 23,
-          "utterer": "Korean romanization",
-          "context": "믿음나귀 - Meeduhm nagwi \n\n든든한 나귀 – Deundeunhan nagwi\n믿음직한 나귀 – Mideumjikhan nagwi\n충직한 나귀 – Chungjikhan nagwi",
-          "sourceEnglish": "노장 나귀 – Nohjang nagwi\n\n\n나귀 어르신 – Nagwi eoreusin\n어르신 나귀 – Eoreusin nagwi\n원로 나귀 – Wollo nagwi\n시니어 나귀 – Sinieo nagwi\n리더 나귀 – Rideo nagwi\n대장 나귀 – Daejang nagwi\n나귀 (노조)위원장 – Nagwi (nojo) wiwonjang\n멘토 나귀 – Mentor nagwi",
-          "translatedDutch": "불량 나귀 – Bullyang nagwi\n까칠한 나귀 – Kkachilhan nagwi\n문제 나귀 – Munje nagwi\n쎈 나귀 – Ssen nagwi\n드센 나귀 – Deusen nagwi\n존재감 나귀 – Jonjaegam nagwi\n꼬인 나귀 – Kkoin nagwi"
-        },
-        {
-          "rowNumber": 24,
-          "utterer": "KO-EN translation",
-          "context": "Faithful Donkey - Meeduhm nagwi\n\nSolid Donkey - Deundeunhan nagwi\nTrustworthy Donkey - Mideumjikhan nagwi\nFaithful Donkey - Chungjikhan nagwi",
-          "sourceEnglish": "Old Donkey – Nohjang nagwi\n\nElder Donkey – Nagwi eoreusin\nElder Donkey – Eoreusin nagwi\nElder Donkey – Wollo nagwi\nSenior Donkey – Sinieo nagwi\nLeader Donkey – Rideo nagwi\nCaptain Donkey – Daejang nagwi\nDonkey (Union) Chairman – Nagwi (nojo) wiwonjang\nMentor Donkey – Mentor nagwi",
-          "translatedDutch": "Bad donkey – Bullyang nagwi\nRough donkey – Kkachilhan nagwi\nProblem donkey – Munje nagwi\nStrong donkey – Ssen nagwi\nStrong donkey – Deusen nagwi\nPresence donkey – Jonjaegam nagwi\nTwisted donkey – Kkoin nagwi"
-        },
-        {
-          "rowNumber": 25,
-          "utterer": "Korean accent",
-          "context": "당나귀 봉기\n당나귀 궐기",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 37,
-          "utterer": "",
-          "context": "MAIN HUMANS",
-          "sourceEnglish": "",
-          "translatedDutch": ""
+          "data": [
+            {
+              "column": "A",
+              "value": "Dutch"
+            },
+            {
+              "column": "B",
+              "value": "Biechtezel"
+            },
+            {
+              "column": "C",
+              "value": "Roste Rakker, Oude Smok"
+            },
+            {
+              "column": "D",
+              "value": "Zaligezel, Schoonbeest"
+            },
+            {
+              "column": "E",
+              "value": "Grote Moker, Logzak"
+            },
+            {
+              "column": "F",
+              "value": "Dorstklak, Zuipkeutel"
+            },
+            {
+              "column": "G",
+              "value": "Slimmerik, Wijsnezel"
+            },
+            {
+              "column": "H",
+              "value": "Traage Gast, Sloefezel"
+            },
+            {
+              "column": "I",
+              "value": "Baksteen, Betonbeest"
+            },
+            {
+              "column": "J",
+              "value": "Strafbeest, Felle Gast"
+            },
+            {
+              "column": "K",
+              "value": "-tje"
+            },
+            {
+              "column": "L",
+              "value": "Bleitsmoel, Zieligezel"
+            },
+            {
+              "column": "M",
+              "value": "Bokvast, Koppige Klak"
+            },
+            {
+              "column": "N",
+              "value": "Stampgast, Trapmuil"
+            },
+            {
+              "column": "O",
+              "value": "Pekelneus, Snotezel"
+            },
+            {
+              "column": "P",
+              "value": "Chillpatat, Luilam, Tamzak"
+            }
+          ]
         },
         {
           "rowNumber": 38,
-          "utterer": "Character Name",
-          "context": "Cole Butte / Cole-Machine",
-          "sourceEnglish": "Hugh G. Butte",
-          "translatedDutch": "Asshandler Wedgie"
-        },
-        {
-          "rowNumber": 39,
-          "utterer": "Description",
-          "context": "Always a rebel and a bit jaded by being left behind by his mother at a young age. A robotics-wiz, he dreamed of going to Mecha City to make a difference in the world through science. He was forced to work in the mine after graduating. Became depressed after his father wasted his scholarship money. In the cave-in, he tries to save Lazy and when Lazy tries to 'send' herself, Cole's soul is sent to the Astral Plane, only to be rejected and return to his body, ultimately and mysteriously, transforming his body into that of a donkey.",
-          "sourceEnglish": "Alcoholic Mine boss. His diaries in Ep3 reveal his struggle to keep the Mine alive and his poor management skills. He used Cole's university scholarship money to buy a Boring Machine in an attempt to save the business. He is killed in Ep2 by Hard Ass.",
-          "translatedDutch": "Longterm worker at Derrerie's Factory. Smokes. Thinks most people are 'idiots'. Does the bare minimum. Female."
-        },
-        {
-          "rowNumber": 40,
-          "utterer": "Spanish",
-          "context": "Pedro Polino de las Cachas",
-          "sourceEnglish": "Señor G. F. Polino de las Cachas",
-          "translatedDutch": "Cuidadora Nicola"
-        },
-        {
-          "rowNumber": 41,
-          "utterer": "French",
-          "context": "Roch Labette",
-          "sourceEnglish": "Pierre Labette",
-          "translatedDutch": "Laquais Jessie"
-        },
-        {
-          "rowNumber": 42,
-          "utterer": "Portuguese",
-          "context": "Pedro Grande do Rego",
-          "sourceEnglish": "Sr. Uochinton Grande do Rego",
-          "translatedDutch": "Tratadora Carçola"
-        },
-        {
-          "rowNumber": 43,
-          "utterer": "Italian",
-          "context": "Pietro Latrivella",
-          "sourceEnglish": "Guido Latrivella",
-          "translatedDutch": "Raccattasino Velia"
-        },
-        {
-          "rowNumber": 44,
-          "utterer": "German",
-          "context": "Rocky Grubengräber",
-          "sourceEnglish": "Peter Grubengräber",
-          "translatedDutch": "Stalllburschin Sarah"
-        },
-        {
-          "rowNumber": 45,
-          "utterer": "Turkish",
-          "context": "Behlül Kuyukazan",
-          "sourceEnglish": "Adnan Kuyukazan / Adnan Bey",
-          "translatedDutch": "Cemile Götür"
-        },
-        {
-          "rowNumber": 46,
-          "utterer": "TEST",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
+          "data": [
+            {
+              "column": "A",
+              "value": "Character Name"
+            },
+            {
+              "column": "B",
+              "value": "Cole Butte / Cole-Machine"
+            },
+            {
+              "column": "C",
+              "value": "Hugh G. Butte"
+            },
+            {
+              "column": "D",
+              "value": "Sandy Butte"
+            },
+            {
+              "column": "E",
+              "value": "Miner Jenny"
+            },
+            {
+              "column": "F",
+              "value": "Child Joey"
+            },
+            {
+              "column": "G",
+              "value": "Grandma Kulan"
+            },
+            {
+              "column": "H",
+              "value": "Mme. Derriere"
+            },
+            {
+              "column": "I",
+              "value": "Asshandler Melvin"
+            },
+            {
+              "column": "J",
+              "value": "Asshandler Wedgie"
+            },
+            {
+              "column": "K",
+              "value": "Ringmaster Rico"
+            },
+            {
+              "column": "L",
+              "value": "Zookeeper Rose"
+            },
+            {
+              "column": "M",
+              "value": "Radio Host Marcos"
+            },
+            {
+              "column": "N",
+              "value": ""
+            },
+            {
+              "column": "O",
+              "value": ""
+            },
+            {
+              "column": "P",
+              "value": ""
+            }
+          ]
         },
         {
           "rowNumber": 47,
-          "utterer": "Dutch",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 48,
-          "utterer": "Catalan",
-          "context": "Jofre Roca/ Màquina Roca",
-          "sourceEnglish": "Pere Roca",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 49,
-          "utterer": "Japanese",
-          "context": "田尻 炉波亜都",
-          "sourceEnglish": "田尻　小尻　水尻　川尻",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 50,
-          "utterer": "Japanese romanization",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 51,
-          "utterer": "Korean",
-          "context": "김광석",
-          "sourceEnglish": "김",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 52,
-          "utterer": "Korean romanization",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 53,
-          "utterer": "KO-EN translation",
-          "context": "#VALUE!",
-          "sourceEnglish": "#VALUE!",
-          "translatedDutch": "#VALUE!"
-        },
-        {
-          "rowNumber": 54,
-          "utterer": "",
-          "context": "石炭",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 58,
-          "utterer": "",
-          "context": "Pedro-Machina",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 59,
-          "utterer": "",
-          "context": "Borrico",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 60,
-          "utterer": "",
-          "context": "Pedro Iglesias de la Cruz",
-          "sourceEnglish": "",
-          "translatedDutch": "Take it away"
-        },
-        {
-          "rowNumber": 61,
-          "utterer": "",
-          "context": "Francisco de Assisi",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 62,
-          "utterer": "",
-          "context": "Pedro X Fracisco de Asís",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 63,
-          "utterer": "",
-          "context": "Pedro Paramo",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 65,
-          "utterer": "",
-          "context": "",
-          "sourceEnglish": "Cengiz Kuyukazan",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 66,
-          "utterer": "",
-          "context": "MACHINES",
-          "sourceEnglish": "",
-          "translatedDutch": ""
+          "data": [
+            {
+              "column": "A",
+              "value": "Dutch"
+            },
+            {
+              "column": "B",
+              "value": ""
+            },
+            {
+              "column": "C",
+              "value": ""
+            },
+            {
+              "column": "D",
+              "value": ""
+            },
+            {
+              "column": "E",
+              "value": ""
+            },
+            {
+              "column": "F",
+              "value": ""
+            },
+            {
+              "column": "G",
+              "value": ""
+            },
+            {
+              "column": "H",
+              "value": ""
+            },
+            {
+              "column": "I",
+              "value": ""
+            },
+            {
+              "column": "J",
+              "value": ""
+            },
+            {
+              "column": "K",
+              "value": ""
+            },
+            {
+              "column": "L",
+              "value": ""
+            },
+            {
+              "column": "M",
+              "value": "DJ Tom"
+            },
+            {
+              "column": "N",
+              "value": ""
+            },
+            {
+              "column": "O",
+              "value": ""
+            },
+            {
+              "column": "P",
+              "value": ""
+            }
+          ]
         },
         {
           "rowNumber": 67,
-          "utterer": "English",
-          "context": "Prophet-Machine (M)",
-          "sourceEnglish": "Prophet-Machine (F)",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 68,
-          "utterer": "Spanish",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 69,
-          "utterer": "French",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 70,
-          "utterer": "Portuguese",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 71,
-          "utterer": "Italian",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 72,
-          "utterer": "German",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 73,
-          "utterer": "Turkish",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
+          "data": [
+            {
+              "column": "A",
+              "value": "English"
+            },
+            {
+              "column": "B",
+              "value": "Prophet-Machine (M)"
+            },
+            {
+              "column": "C",
+              "value": "Prophet-Machine (F)"
+            },
+            {
+              "column": "D",
+              "value": "Tractor-Machine"
+            },
+            {
+              "column": "E",
+              "value": "Death-Machine"
+            },
+            {
+              "column": "F",
+              "value": "Tank-Machine"
+            },
+            {
+              "column": "G",
+              "value": "Flying-Machine"
+            },
+            {
+              "column": "H",
+              "value": "Truck-Machine"
+            },
+            {
+              "column": "I",
+              "value": "Car-Machine"
+            },
+            {
+              "column": "J",
+              "value": ""
+            },
+            {
+              "column": "K",
+              "value": ""
+            },
+            {
+              "column": "L",
+              "value": ""
+            },
+            {
+              "column": "M",
+              "value": ""
+            },
+            {
+              "column": "N",
+              "value": ""
+            },
+            {
+              "column": "O",
+              "value": ""
+            },
+            {
+              "column": "P",
+              "value": ""
+            }
+          ]
         },
         {
           "rowNumber": 74,
-          "utterer": "Dutch",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 75,
-          "utterer": "Catalan",
-          "context": "Màquina Profeta",
-          "sourceEnglish": "Màquina Profeta",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 76,
-          "utterer": "Japanese",
-          "context": "機械 / キカイ",
-          "sourceEnglish": "マシン",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 77,
-          "utterer": "",
-          "context": "Kikai",
-          "sourceEnglish": "mashin",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 78,
-          "utterer": "",
-          "context": "ロバート – マシン",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 79,
-          "utterer": "",
-          "context": "Robert",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 80,
-          "utterer": "Korean",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 81,
-          "utterer": "Korean romanization",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 82,
-          "utterer": "KO-EN translation",
-          "context": "#VALUE!",
-          "sourceEnglish": "#VALUE!",
-          "translatedDutch": "#VALUE!"
-        },
-        {
-          "rowNumber": 84,
-          "utterer": "",
-          "context": "ASS vs. DONKEY",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 85,
-          "utterer": "English",
-          "context": "Ass",
-          "sourceEnglish": "Donkey",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 86,
-          "utterer": "Spanish",
-          "context": "Asnos / Asnas",
-          "sourceEnglish": "Burros",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 87,
-          "utterer": "French",
-          "context": "Âne / Ânne",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 88,
-          "utterer": "Portuguese",
-          "context": "Asno / Burro / Jegue / Jumente",
-          "sourceEnglish": "Burro / Jegue",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 89,
-          "utterer": "Italian",
-          "context": "Asino",
-          "sourceEnglish": "Somari",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 90,
-          "utterer": "German",
-          "context": "Esel",
-          "sourceEnglish": "Esel / Longohr / Dummkopf",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 91,
-          "utterer": "Turkish",
-          "context": "Eşek",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 92,
-          "utterer": "Dutch",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 93,
-          "utterer": "Catalan",
-          "context": "Ase",
-          "sourceEnglish": "Burro/a",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 94,
-          "utterer": "Japanese",
-          "context": "ロバ",
-          "sourceEnglish": "驢馬",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 95,
-          "utterer": "Japanese romanization",
-          "context": "roba",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 96,
-          "utterer": "Korean",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 97,
-          "utterer": "Korean romanization",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 99,
-          "utterer": "",
-          "context": "Bray / Song of Ascension",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 100,
-          "utterer": "English",
-          "context": "hee haw",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 101,
-          "utterer": "Spanish",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 102,
-          "utterer": "French",
-          "context": "hi hon",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 103,
-          "utterer": "Portuguese",
-          "context": "iih nhó",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 104,
-          "utterer": "Italian",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 105,
-          "utterer": "German",
-          "context": "iih-ahh",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 106,
-          "utterer": "Turkish",
-          "context": "aa ii",
-          "sourceEnglish": "aa ii ah hi aah ih a'h h'ii",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 107,
-          "utterer": "Dutch",
-          "context": "iaën / iii aaa ia ia",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 108,
-          "utterer": "Catalan",
-          "context": "ihà/ ihò",
-          "sourceEnglish": "i'h hà hi hò 'i à iii ò'h",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 109,
-          "utterer": "Japanese",
-          "context": "ヒーホー",
-          "sourceEnglish": "ヒィ　ホォ",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 110,
-          "utterer": "Japanese romanization",
-          "context": "hi ho",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 111,
-          "utterer": "Korean",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 112,
-          "utterer": "Korean romanization",
-          "context": "",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 113,
-          "utterer": "KO-EN translation",
-          "context": "#VALUE!",
-          "sourceEnglish": "#VALUE!",
-          "translatedDutch": "#VALUE!"
-        },
-        {
-          "rowNumber": 115,
-          "utterer": "",
-          "context": "WORLD",
-          "sourceEnglish": "",
-          "translatedDutch": ""
+          "data": [
+            {
+              "column": "A",
+              "value": "Dutch"
+            },
+            {
+              "column": "B",
+              "value": ""
+            },
+            {
+              "column": "C",
+              "value": ""
+            },
+            {
+              "column": "D",
+              "value": ""
+            },
+            {
+              "column": "E",
+              "value": ""
+            },
+            {
+              "column": "F",
+              "value": ""
+            },
+            {
+              "column": "G",
+              "value": ""
+            },
+            {
+              "column": "H",
+              "value": ""
+            },
+            {
+              "column": "I",
+              "value": ""
+            },
+            {
+              "column": "J",
+              "value": ""
+            },
+            {
+              "column": "K",
+              "value": ""
+            },
+            {
+              "column": "L",
+              "value": ""
+            },
+            {
+              "column": "M",
+              "value": ""
+            },
+            {
+              "column": "N",
+              "value": ""
+            },
+            {
+              "column": "O",
+              "value": ""
+            },
+            {
+              "column": "P",
+              "value": ""
+            }
+          ]
         },
         {
           "rowNumber": 116,
-          "utterer": "Place name/Core Concepts",
-          "context": "Fannyside",
-          "sourceEnglish": "Fannyside Farm",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 117,
-          "utterer": "Description",
-          "context": "The region in which the farm and mines are located. Like a province or area of a country.",
-          "sourceEnglish": "The Farm that the game starts on.",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 118,
-          "utterer": "Spanish",
-          "context": "Las Posaderas",
-          "sourceEnglish": "Granja de Las Posaderas",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 119,
-          "utterer": "French",
-          "context": "Niquedouille",
-          "sourceEnglish": "La ferme Niquedouille",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 120,
-          "utterer": "Portuguese",
-          "context": "Vale do Furo Fundo",
-          "sourceEnglish": "Fazenda do Furo Fundo",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 121,
-          "utterer": "Italian",
-          "context": "Culonia",
-          "sourceEnglish": "Cascina Culonia",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 122,
-          "utterer": "German",
-          "context": "Arsch-der-Welt",
-          "sourceEnglish": "Arsch-der-Welt-Farm",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 123,
-          "utterer": "Turkish",
-          "context": "Anırtan",
-          "sourceEnglish": "Anırtan Çiftliği",
-          "translatedDutch": ""
+          "data": [
+            {
+              "column": "A",
+              "value": "Place name/Core Concepts"
+            },
+            {
+              "column": "B",
+              "value": "Fannyside"
+            },
+            {
+              "column": "C",
+              "value": "Fannyside Farm"
+            },
+            {
+              "column": "D",
+              "value": "Bumpkin Village"
+            },
+            {
+              "column": "E",
+              "value": "Mecha City"
+            },
+            {
+              "column": "F",
+              "value": "Song of Ascension"
+            },
+            {
+              "column": "G",
+              "value": "Reassignment"
+            },
+            {
+              "column": "H",
+              "value": "Astral Plane"
+            },
+            {
+              "column": "I",
+              "value": ""
+            },
+            {
+              "column": "J",
+              "value": ""
+            },
+            {
+              "column": "K",
+              "value": ""
+            },
+            {
+              "column": "L",
+              "value": ""
+            },
+            {
+              "column": "M",
+              "value": ""
+            },
+            {
+              "column": "N",
+              "value": ""
+            },
+            {
+              "column": "O",
+              "value": ""
+            },
+            {
+              "column": "P",
+              "value": ""
+            }
+          ]
         },
         {
           "rowNumber": 124,
-          "utterer": "Dutch",
-          "context": "De Hoge Tenen",
-          "sourceEnglish": "-hoeve",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 126,
-          "utterer": "Catalan",
-          "context": "Talldevall",
-          "sourceEnglish": "Granja de Talldevall",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 127,
-          "utterer": "Japanese",
-          "context": "ど田舎",
-          "sourceEnglish": "ど田舎農場",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 128,
-          "utterer": "Japanese romanization",
-          "context": "doinaka",
-          "sourceEnglish": "doinaka-nojo",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 129,
-          "utterer": "",
-          "context": "ウシロガワ",
-          "sourceEnglish": "ウシロガワ農場",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 130,
-          "utterer": "",
-          "context": "ushirogawa",
-          "sourceEnglish": "ushirogawa - nojo",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 131,
-          "utterer": "",
-          "context": "(gawa means river)",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 132,
-          "utterer": "Korean",
-          "context": "엉덩면\n\n\n궁둥면\n학문리\n대변리\n방광리",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 133,
-          "utterer": "Korean romanization",
-          "context": "eongdeongmyeon\n\ngungdungmyeon\nhagmunli\ndaebyeonli\nbang-gwangli\"",
-          "sourceEnglish": "",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 134,
-          "utterer": "KO-EN translation",
-          "context": "Ass - Township - It sounds like Ass side. Myeon is an administrative unit but also side. Different chinese character but same korean sound. It sticks well to your tongue. Easiest most rounded pick. \nButt - Township\nAsshole - Township (it's written \"Academia town, but it sounds the same as asshole. It is the funniest,\n\nStool village - This actually exists in Korea. From the list of the funniest names of locations.\nKidney village - This actually exists in Korea. From the list of the funniest names of locations.",
-          "sourceEnglish": "#VALUE!",
-          "translatedDutch": ""
+          "data": [
+            {
+              "column": "A",
+              "value": "Dutch"
+            },
+            {
+              "column": "B",
+              "value": "De Hoge Tenen"
+            },
+            {
+              "column": "C",
+              "value": "-hoeve"
+            },
+            {
+              "column": "D",
+              "value": "Klotegem"
+            },
+            {
+              "column": "E",
+              "value": "Technopolis"
+            },
+            {
+              "column": "F",
+              "value": "ezelenhemelvaartszangderzielen"
+            },
+            {
+              "column": "G",
+              "value": ""
+            },
+            {
+              "column": "H",
+              "value": ""
+            },
+            {
+              "column": "I",
+              "value": ""
+            },
+            {
+              "column": "J",
+              "value": ""
+            },
+            {
+              "column": "K",
+              "value": ""
+            },
+            {
+              "column": "L",
+              "value": ""
+            },
+            {
+              "column": "M",
+              "value": ""
+            },
+            {
+              "column": "N",
+              "value": ""
+            },
+            {
+              "column": "O",
+              "value": ""
+            },
+            {
+              "column": "P",
+              "value": ""
+            }
+          ]
         }
       ]
     },

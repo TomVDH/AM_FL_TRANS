@@ -56,6 +56,9 @@ function processExcelFile(filePath) {
       sheets: []
     };
     
+    // Check if this is the README file (special handling)
+    const isReadmeFile = fileName.toLowerCase().includes('read_me_localizationmanual');
+    
     // Process each sheet/tab
     workbook.SheetNames.forEach(sheetName => {
       console.log(`  📋 Processing sheet: ${sheetName}`);
@@ -71,28 +74,55 @@ function processExcelFile(filePath) {
         entries: []
       };
       
-      // Process each row (skip header row if it exists)
-      jsonData.forEach((row, rowIndex) => {
-        // Skip empty rows
-        if (!row || row.length === 0) return;
+      if (isReadmeFile && sheetName === "Names and World Overview") {
+        // Special handling for README Names and World Overview sheet
+        console.log(`    🔧 Special processing for README Names and World Overview`);
         
-        // Extract data from columns A, B, C, J (indices 0, 1, 2, 9)
-        const utterer = row[0] || '';
-        const context = row[1] || '';
-        const sourceEnglish = row[2] || '';
-        const translatedDutch = row[9] || ''; // Column J (index 9)
+        // Process horizontal structure for specific rows
+        const targetRows = [4, 16, 38, 47, 67, 74, 116, 124];
         
-        // Only include rows that have at least some data
-        if (utterer || context || sourceEnglish) {
-          sheetData.entries.push({
-            rowNumber: rowIndex + 1, // Excel rows are 1-indexed
-            utterer: utterer.toString().trim(),
-            context: context.toString().trim(),
-            sourceEnglish: sourceEnglish.toString().trim(),
-            translatedDutch: translatedDutch.toString().trim()
-          });
-        }
-      });
+        targetRows.forEach(rowNumber => {
+          const rowIndex = rowNumber - 1; // Convert to 0-based index
+          const row = jsonData[rowIndex];
+          
+          if (row && row.length > 0) {
+            // Create an entry with the entire row data for horizontal processing
+            const rowEntry = {
+              rowNumber: rowNumber,
+              data: row.map((cell, colIndex) => ({
+                column: String.fromCharCode(65 + colIndex), // Convert to A, B, C, etc.
+                value: cell ? cell.toString().trim() : ''
+              }))
+            };
+            
+            sheetData.entries.push(rowEntry);
+            console.log(`    ✅ Processed row ${rowNumber} with ${row.length} columns`);
+          }
+        });
+      } else {
+        // Standard vertical processing for other files/sheets
+        jsonData.forEach((row, rowIndex) => {
+          // Skip empty rows
+          if (!row || row.length === 0) return;
+          
+          // Extract data from columns A, B, C, J (indices 0, 1, 2, 9)
+          const utterer = row[0] || '';
+          const context = row[1] || '';
+          const sourceEnglish = row[2] || '';
+          const translatedDutch = row[9] || ''; // Column J (index 9)
+          
+          // Only include rows that have at least some data
+          if (utterer || context || sourceEnglish) {
+            sheetData.entries.push({
+              rowNumber: rowIndex + 1, // Excel rows are 1-indexed
+              utterer: utterer.toString().trim(),
+              context: context.toString().trim(),
+              sourceEnglish: sourceEnglish.toString().trim(),
+              translatedDutch: translatedDutch.toString().trim()
+            });
+          }
+        });
+      }
       
       // Only include sheets that have data
       if (sheetData.entries.length > 0) {

@@ -57,24 +57,47 @@ export const useJsonHighlighting = (jsonData: any) => {
       console.log('🔍 README Parser Debug: Character row data:', characterRow);
       console.log('🔍 README Parser Debug: Character Dutch row data:', characterDutchRow);
       
-      // Process each column horizontally (starting from B, index 1)
-      for (let colIndex = 1; colIndex < Math.max(characterRow.length || 0, characterDutchRow.length || 0); colIndex++) {
-        const englishName = characterRow[colIndex];
-        const dutchName = characterDutchRow[colIndex];
-        
-        if (englishName && englishName.toString().trim()) {
-          console.log('🔍 README Parser Debug: Character entry:', {
-            colIndex,
-            englishName: englishName.toString().trim(),
-            dutchName: dutchName ? dutchName.toString().trim() : ''
-          });
+      // Process horizontal data structure
+      if (characterRow.data && characterDutchRow.data) {
+        // Process each column horizontally (starting from B, index 1)
+        for (let colIndex = 1; colIndex < Math.max(characterRow.data.length, characterDutchRow.data.length); colIndex++) {
+          const englishCell = characterRow.data[colIndex];
+          const dutchCell = characterDutchRow.data[colIndex];
           
-          entries.push({
-            sourceEnglish: englishName.toString().trim(),
-            translatedDutch: dutchName ? dutchName.toString().trim() : '',
-            category: 'Character Names',
-            rowNumber: 4
-          });
+          const englishName = englishCell ? englishCell.value : '';
+          const dutchName = dutchCell ? dutchCell.value : '';
+          
+          if (englishName && englishName.trim()) {
+            console.log('🔍 README Parser Debug: Character entry:', {
+              colIndex,
+              column: englishCell ? englishCell.column : '',
+              englishName: englishName.trim(),
+              dutchName: dutchName.trim()
+            });
+            
+            entries.push({
+              sourceEnglish: englishName.trim(),
+              translatedDutch: dutchName.trim(),
+              category: 'Character Names',
+              rowNumber: 4
+            });
+          }
+        }
+      } else {
+        // Fallback to old structure if data field doesn't exist
+        console.log('🔍 README Parser Debug: Using fallback structure');
+        for (let colIndex = 1; colIndex < Math.max(characterRow.length || 0, characterDutchRow.length || 0); colIndex++) {
+          const englishName = characterRow[colIndex];
+          const dutchName = characterDutchRow[colIndex];
+          
+          if (englishName && englishName.toString().trim()) {
+            entries.push({
+              sourceEnglish: englishName.toString().trim(),
+              translatedDutch: dutchName ? dutchName.toString().trim() : '',
+              category: 'Character Names',
+              rowNumber: 4
+            });
+          }
         }
       }
     }
@@ -87,23 +110,44 @@ export const useJsonHighlighting = (jsonData: any) => {
       console.log('🔍 README Parser Debug: Human row data:', humanRow);
       console.log('🔍 README Parser Debug: Human Dutch row data:', humanDutchRow);
       
-      for (let colIndex = 1; colIndex < Math.max(humanRow.length || 0, humanDutchRow.length || 0); colIndex++) {
-        const englishName = humanRow[colIndex];
-        const dutchName = humanDutchRow[colIndex];
-        
-        if (englishName && englishName.toString().trim()) {
-          console.log('🔍 README Parser Debug: Human entry:', {
-            colIndex,
-            englishName: englishName.toString().trim(),
-            dutchName: dutchName ? dutchName.toString().trim() : ''
-          });
+      if (humanRow.data && humanDutchRow.data) {
+        for (let colIndex = 1; colIndex < Math.max(humanRow.data.length, humanDutchRow.data.length); colIndex++) {
+          const englishCell = humanRow.data[colIndex];
+          const dutchCell = humanDutchRow.data[colIndex];
           
-          entries.push({
-            sourceEnglish: englishName.toString().trim(),
-            translatedDutch: dutchName ? dutchName.toString().trim() : '',
-            category: 'Human Character Names',
-            rowNumber: 38
-          });
+          const englishName = englishCell ? englishCell.value : '';
+          const dutchName = dutchCell ? dutchCell.value : '';
+          
+          if (englishName && englishName.trim()) {
+            console.log('🔍 README Parser Debug: Human entry:', {
+              colIndex,
+              column: englishCell ? englishCell.column : '',
+              englishName: englishName.trim(),
+              dutchName: dutchName.trim()
+            });
+            
+            entries.push({
+              sourceEnglish: englishName.trim(),
+              translatedDutch: dutchName.trim(),
+              category: 'Human Character Names',
+              rowNumber: 38
+            });
+          }
+        }
+      } else {
+        // Fallback to old structure
+        for (let colIndex = 1; colIndex < Math.max(humanRow.length || 0, humanDutchRow.length || 0); colIndex++) {
+          const englishName = humanRow[colIndex];
+          const dutchName = humanDutchRow[colIndex];
+          
+          if (englishName && englishName.toString().trim()) {
+            entries.push({
+              sourceEnglish: englishName.toString().trim(),
+              translatedDutch: dutchName ? dutchName.toString().trim() : '',
+              category: 'Human Character Names',
+              rowNumber: 38
+            });
+          }
         }
       }
     }
@@ -116,23 +160,44 @@ export const useJsonHighlighting = (jsonData: any) => {
       console.log('🔍 README Parser Debug: Machine row data:', machineRow);
       console.log('🔍 README Parser Debug: Machine Dutch row data:', machineDutchRow);
       
-      for (let colIndex = 1; colIndex < Math.max(machineRow.length || 0, machineDutchRow.length || 0); colIndex++) {
-        const englishName = machineRow[colIndex];
-        const dutchName = machineDutchRow[colIndex];
-        
-        if (englishName && englishName.toString().trim()) {
-          console.log('🔍 README Parser Debug: Machine entry:', {
-            colIndex,
-            englishName: englishName.toString().trim(),
-            dutchName: dutchName ? dutchName.toString().trim() : ''
-          });
+      if (machineRow.data && machineDutchRow.data) {
+        for (let colIndex = 1; colIndex < Math.max(machineRow.data.length, machineDutchRow.data.length); colIndex++) {
+          const englishCell = machineRow.data[colIndex];
+          const dutchCell = machineDutchRow.data[colIndex];
           
-          entries.push({
-            sourceEnglish: englishName.toString().trim(),
-            translatedDutch: dutchName ? dutchName.toString().trim() : '',
-            category: 'Machine Names',
-            rowNumber: 67
-          });
+          const englishName = englishCell ? englishCell.value : '';
+          const dutchName = dutchCell ? dutchCell.value : '';
+          
+          if (englishName && englishName.trim()) {
+            console.log('🔍 README Parser Debug: Machine entry:', {
+              colIndex,
+              column: englishCell ? englishCell.column : '',
+              englishName: englishName.trim(),
+              dutchName: dutchName.trim()
+            });
+            
+            entries.push({
+              sourceEnglish: englishName.trim(),
+              translatedDutch: dutchName.trim(),
+              category: 'Machine Names',
+              rowNumber: 67
+            });
+          }
+        }
+      } else {
+        // Fallback to old structure
+        for (let colIndex = 1; colIndex < Math.max(machineRow.length || 0, machineDutchRow.length || 0); colIndex++) {
+          const englishName = machineRow[colIndex];
+          const dutchName = machineDutchRow[colIndex];
+          
+          if (englishName && englishName.toString().trim()) {
+            entries.push({
+              sourceEnglish: englishName.toString().trim(),
+              translatedDutch: dutchName ? dutchName.toString().trim() : '',
+              category: 'Machine Names',
+              rowNumber: 67
+            });
+          }
         }
       }
     }
@@ -145,23 +210,44 @@ export const useJsonHighlighting = (jsonData: any) => {
       console.log('🔍 README Parser Debug: Location row data:', locationRow);
       console.log('🔍 README Parser Debug: Location Dutch row data:', locationDutchRow);
       
-      for (let colIndex = 1; colIndex < Math.max(locationRow.length || 0, locationDutchRow.length || 0); colIndex++) {
-        const englishName = locationRow[colIndex];
-        const dutchName = locationDutchRow[colIndex];
-        
-        if (englishName && englishName.toString().trim()) {
-          console.log('🔍 README Parser Debug: Location entry:', {
-            colIndex,
-            englishName: englishName.toString().trim(),
-            dutchName: dutchName ? dutchName.toString().trim() : ''
-          });
+      if (locationRow.data && locationDutchRow.data) {
+        for (let colIndex = 1; colIndex < Math.max(locationRow.data.length, locationDutchRow.data.length); colIndex++) {
+          const englishCell = locationRow.data[colIndex];
+          const dutchCell = locationDutchRow.data[colIndex];
           
-          entries.push({
-            sourceEnglish: englishName.toString().trim(),
-            translatedDutch: dutchName ? dutchName.toString().trim() : '',
-            category: 'Location Names',
-            rowNumber: 116
-          });
+          const englishName = englishCell ? englishCell.value : '';
+          const dutchName = dutchCell ? dutchCell.value : '';
+          
+          if (englishName && englishName.trim()) {
+            console.log('🔍 README Parser Debug: Location entry:', {
+              colIndex,
+              column: englishCell ? englishCell.column : '',
+              englishName: englishName.trim(),
+              dutchName: dutchName.trim()
+            });
+            
+            entries.push({
+              sourceEnglish: englishName.trim(),
+              translatedDutch: dutchName.trim(),
+              category: 'Location Names',
+              rowNumber: 116
+            });
+          }
+        }
+      } else {
+        // Fallback to old structure
+        for (let colIndex = 1; colIndex < Math.max(locationRow.length || 0, locationDutchRow.length || 0); colIndex++) {
+          const englishName = locationRow[colIndex];
+          const dutchName = locationDutchRow[colIndex];
+          
+          if (englishName && englishName.toString().trim()) {
+            entries.push({
+              sourceEnglish: englishName.toString().trim(),
+              translatedDutch: dutchName ? dutchName.toString().trim() : '',
+              category: 'Location Names',
+              rowNumber: 116
+            });
+          }
         }
       }
     }
