@@ -970,14 +970,30 @@ const TranslationHelper: React.FC = () => {
               Onnozelaer Marketing Works © 2025 - made with Generative AI
             </p>
             
-            {/* Floating Pips Animation */}
-            <div className="flex justify-center items-center space-x-2 group">
-              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0s', animationDuration: '2s' }}></div>
-              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.2s', animationDuration: '2s' }}></div>
-              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.4s', animationDuration: '2s' }}></div>
-              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.6s', animationDuration: '2s' }}></div>
-              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.8s', animationDuration: '2s' }}></div>
-              <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '1s', animationDuration: '2s' }}></div>
+            {/* Gradient Accent Block (Halved) */}
+            <div className="flex justify-center items-center">
+              <div 
+                className="shadow-lg relative cursor-pointer"
+                onMouseEnter={() => setShowVersionHash(true)}
+                onMouseLeave={() => setShowVersionHash(false)}
+                onClick={() => setGradientColors(generateGradientColors())}
+                title="Click to change gradient"
+                style={{
+                  width: '125px',  // Half of 250px
+                  height: '25px',   // Half of 50px
+                  backgroundImage: gradientColors.length > 0 
+                    ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})` 
+                    : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
+                  backgroundSize: '200% 200%',
+                  animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 5s ease-in-out infinite'
+                }}
+              >
+                {showVersionHash && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xs font-mono">
+                    {VERSION_HASH}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>
@@ -1618,14 +1634,30 @@ const TranslationHelper: React.FC = () => {
             Onnozelaer Marketing Works © 2025 - made with Generative AI
           </p>
           
-          {/* Floating Pips Animation */}
-          <div className="flex justify-center items-center space-x-2 group">
-            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0s', animationDuration: '2s' }}></div>
-            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.2s', animationDuration: '2s' }}></div>
-            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.4s', animationDuration: '2s' }}></div>
-            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.6s', animationDuration: '2s' }}></div>
-            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '0.8s', animationDuration: '2s' }}></div>
-            <div className="w-2 h-2 bg-gray-400 rounded-full group-hover:animate-bounce" style={{ animationDelay: '1s', animationDuration: '2s' }}></div>
+          {/* Gradient Accent Block (Halved) */}
+          <div className="flex justify-center items-center">
+            <div 
+              className="shadow-lg relative cursor-pointer"
+              onMouseEnter={() => setShowVersionHash(true)}
+              onMouseLeave={() => setShowVersionHash(false)}
+              onClick={() => setGradientColors(generateGradientColors())}
+              title="Click to change gradient"
+              style={{
+                width: '150px',  // Half of 300px (from screen 2)
+                height: '37.5px', // Half of 75px (from screen 2)
+                backgroundImage: gradientColors.length > 0 
+                  ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})` 
+                  : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
+                backgroundSize: '200% 200%',
+                animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 2s ease-in-out infinite'
+              }}
+            >
+              {showVersionHash && (
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xs font-mono">
+                  {VERSION_HASH}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
