@@ -1193,7 +1193,21 @@ const TranslationHelper: React.FC = () => {
                 {highlightingJsonData && (() => {
                   const matches = findJsonMatches(sourceTexts[currentIndex] || '');
                   if (matches.length > 0) {
-                    const firstMatch = matches[0];
+                    // Sort matches by relevance: exact phrase matches first, then by length (longest first)
+                    const sortedMatches = matches.sort((a, b) => {
+                      const text = sourceTexts[currentIndex] || '';
+                      const aIsExact = a.sourceEnglish.toLowerCase() === text.toLowerCase();
+                      const bIsExact = b.sourceEnglish.toLowerCase() === text.toLowerCase();
+                      
+                      if (aIsExact && !bIsExact) return -1;
+                      if (!aIsExact && bIsExact) return 1;
+                      
+                      // If both are exact or both are partial, sort by length (longest first)
+                      return b.sourceEnglish.length - a.sourceEnglish.length;
+                    });
+                    
+                    const firstMatch = sortedMatches[0];
+                    console.log('🔧 TranslationHelper Debug: Using match:', firstMatch.sourceEnglish, 'for text:', sourceTexts[currentIndex]);
                     return (
                       <div className="flex flex-wrap gap-2 justify-end ml-4" style={{ maxWidth: '50%' }}>
                         {/* Translated Dutch Suggestion */}

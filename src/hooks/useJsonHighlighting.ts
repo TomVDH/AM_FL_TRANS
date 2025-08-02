@@ -52,13 +52,35 @@ export const useJsonHighlighting = (jsonData: any) => {
             const sourceText = entry.sourceEnglish.toLowerCase();
             const searchText = text.toLowerCase();
             
-            // Check if the source text contains the search term or vice versa
-            if (sourceText.includes(searchText) || searchText.includes(sourceText)) {
-              console.log('🔍 JSON Highlighting Debug: Found match!', {
-                sourceEnglish: entry.sourceEnglish,
-                translatedDutch: entry.translatedDutch,
-                rowNumber: entry.rowNumber
-              });
+            // Check for exact phrase match first (most precise)
+            const hasExactPhrase = sourceText === searchText;
+            
+            // Check for word boundary matches (more precise than substring)
+            const sourceWords = sourceText.split(/\s+/);
+            const searchWords = searchText.split(/\s+/);
+            
+            // Check if all search words are found in source words (exact word match)
+            const hasExactWordMatch = searchWords.every(searchWord => 
+              sourceWords.some(sourceWord => sourceWord === searchWord)
+            );
+            
+            // Also check for substring match but only for single words
+            const hasSubstringMatch = searchWords.length === 1 && 
+              (sourceText.includes(searchText) || searchText.includes(sourceText));
+            
+                          if (hasExactPhrase || hasExactWordMatch || hasSubstringMatch) {
+                let matchType = 'unknown';
+                if (hasExactPhrase) matchType = 'exact phrase';
+                else if (hasExactWordMatch) matchType = 'exact word match';
+                else if (hasSubstringMatch) matchType = 'substring match';
+                
+                console.log('🔍 JSON Highlighting Debug: Found match!', {
+                  sourceEnglish: entry.sourceEnglish,
+                  translatedDutch: entry.translatedDutch,
+                  rowNumber: entry.rowNumber,
+                  matchType: matchType,
+                  searchText: searchText
+                });
               
               matches.push({
                 sourceEnglish: entry.sourceEnglish,
