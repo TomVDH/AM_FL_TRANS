@@ -337,8 +337,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               }}
             >
               {showVersionHash && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xs font-mono">
-                  {VERSION_HASH}
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                  <div className="text-white text-lg font-black tracking-tight uppercase letter-spacing-wide">
+                    {VERSION_HASH}
+                  </div>
                 </div>
               )}
             </div>

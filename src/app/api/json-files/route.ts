@@ -13,8 +13,7 @@ export async function GET() {
     
     // Read all JSON files
     const files = fs.readdirSync(jsonDir)
-      .filter(file => file.endsWith('.json'))
-      .map(file => file.replace('.json', ''));
+      .filter(file => file.endsWith('.json'));
     
     return NextResponse.json(files);
   } catch (error) {

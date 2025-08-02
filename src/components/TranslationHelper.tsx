@@ -164,7 +164,7 @@ const TranslationHelper: React.FC = () => {
   const textareaRef = useRef<HTMLTextAreaElement>(null);              // Textarea element reference
   
   // ========== Version Control ==========
-  const VERSION_HASH = 'v1.1.0-clean';                                 // Application version identifier
+  const VERSION_HASH = 'v2.3.0';                                       // Application version identifier
   
   // ========== Codex Integration State ==========
   // FUTURE SPLIT: CODEX INTEGRATION MODULE
@@ -1370,8 +1370,10 @@ const TranslationHelper: React.FC = () => {
               }}
             >
               {showVersionHash && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xs font-mono">
-                  {VERSION_HASH}
+                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                  <div className="text-white text-lg font-black tracking-tight uppercase letter-spacing-wide">
+                    {VERSION_HASH}
+                  </div>
                 </div>
               )}
             </div>
