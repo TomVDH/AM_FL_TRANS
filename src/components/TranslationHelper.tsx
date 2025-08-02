@@ -647,6 +647,12 @@ const TranslationHelper: React.FC = () => {
     newTranslations[currentIndex] = currentTranslation;
     setTranslations(newTranslations);
     
+    // Auto-copy translations to clipboard for safety
+    const text = newTranslations.join('\n');
+    navigator.clipboard.writeText(text);
+    setShowCopied(true);
+    setTimeout(() => setShowCopied(false), 2000);
+    
     // Trigger translation animation
     setIsTranslating(true);
     setTimeout(() => setIsTranslating(false), 800);
