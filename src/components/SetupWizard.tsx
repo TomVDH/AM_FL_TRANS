@@ -165,7 +165,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               <label className="block text-base font-black mb-4 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
                 Upload Excel File
               </label>
-              <div className="flex gap-4">
+              <div className="relative">
                 <input
                   ref={fileInputRef}
                   type="file"
@@ -173,15 +173,51 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                   onChange={handleFileUpload}
                   className="hidden"
                 />
-                <button
+                <div
                   onClick={() => fileInputRef.current?.click()}
-                  className="px-6 py-3 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
+                  onDragOver={(e) => {
+                    e.preventDefault();
+                    e.currentTarget.classList.add('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900/20');
+                  }}
+                  onDragLeave={(e) => {
+                    e.preventDefault();
+                    e.currentTarget.classList.remove('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900/20');
+                  }}
+                  onDrop={(e) => {
+                    e.preventDefault();
+                    e.currentTarget.classList.remove('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900/20');
+                    const files = e.dataTransfer.files;
+                    if (files.length > 0) {
+                      const file = files[0];
+                      if (file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' || 
+                          file.type === 'application/vnd.ms-excel') {
+                        // Create a synthetic event for the file upload handler
+                        const syntheticEvent = {
+                          target: { files: [file] }
+                        } as unknown as React.ChangeEvent<HTMLInputElement>;
+                        handleFileUpload(syntheticEvent);
+                      }
+                    }
+                  }}
+                  className="w-full p-8 border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-gray-50 dark:bg-gray-800 transition-all duration-200 cursor-pointer text-center"
                   style={{ borderRadius: '3px' }}
                 >
-                  Choose Excel File
-                </button>
+                  <div className="space-y-4">
+                    <svg className="mx-auto h-12 w-12 text-gray-400 dark:text-gray-500" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                      <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    <div>
+                      <p className="text-lg font-bold text-gray-900 dark:text-gray-100">
+                        Drop Excel file here or click to browse
+                      </p>
+                      <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                        Supports .xlsx and .xls files
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 {excelSheets.length > 0 && (
-                  <p className="self-center text-sm text-green-600">✓ File loaded</p>
+                  <p className="mt-3 text-sm text-green-600 dark:text-green-400 text-center">✓ File loaded successfully</p>
                 )}
               </div>
               
@@ -296,16 +332,16 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             </div>
           )}
           
-          <div className="flex justify-between items-center pt-4 border-t border-black">
+          <div className="space-y-4 pt-4 border-t border-black">
             {sourceTexts.length > 0 && (
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
                 ✓ {sourceTexts.length} items ready to translate
               </p>
             )}
             <button
               onClick={handleStart}
               disabled={sourceTexts.length === 0}
-              className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
+              className="w-full px-8 py-3 bg-black dark:bg-white text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
               style={{ borderRadius: '3px' }}
             >
               Start Translation →

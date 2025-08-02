@@ -22,6 +22,7 @@ interface TextHighlighterProps {
   onSuggestionClick?: (suggestion: string) => void;
   className?: string;
   style?: React.CSSProperties;
+  showSuggestions?: boolean;
 }
 
 const TextHighlighter: React.FC<TextHighlighterProps> = ({
@@ -33,7 +34,8 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   onCharacterClick,
   onSuggestionClick,
   className = '',
-  style = {}
+  style = {},
+  showSuggestions = true
 }) => {
   // Use JSON highlighting hook
   const { findJsonMatches, getHoverText } = useJsonHighlighting(jsonData);
@@ -85,48 +87,36 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
     
     let highlightedText = text;
     
-    // Only highlight if highlighting is enabled
-    if (highlightMode) {
-      console.log('🎨 TextHighlighter Debug: Highlight mode is ON');
-      
-      // Sort matches by length (longest first) to handle overlapping matches properly
-      const sortedMatches = [...matches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
-      
-      sortedMatches.forEach(match => {
-        console.log('🎨 TextHighlighter Debug: Processing match:', match.sourceEnglish);
-        
-        // Escape special regex characters in the sourceEnglish
-        const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
-        
-        // Create hover text
-        const hoverText = getHoverText(match);
-        
-        console.log('🎨 TextHighlighter Debug: Replacing with hover text:', hoverText);
-        
-        // Replace with highlighted span that has hover functionality
-        highlightedText = highlightedText.replace(regex, 
-          `<span class="json-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #2563EB; font-weight: 600; text-shadow: 0 0 4px rgba(37, 99, 235, 0.3);" title="${hoverText}">$1</span>`
-        );
-      });
-    } else {
-      console.log('🎨 TextHighlighter Debug: Highlight mode is OFF');
-    }
+    // Always highlight (blue highlights always on)
+    console.log('🎨 TextHighlighter Debug: Highlight mode is ON');
     
-    // Make **Ass characters clickable
+    // Sort matches by length (longest first) to handle overlapping matches properly
+    const sortedMatches = [...matches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
+    
+    sortedMatches.forEach(match => {
+      console.log('🎨 TextHighlighter Debug: Processing match:', match.sourceEnglish);
+      
+      // Escape special regex characters in the sourceEnglish
+      const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
+      
+      // Create hover text
+      const hoverText = getHoverText(match);
+      
+      console.log('🎨 TextHighlighter Debug: Replacing with hover text:', hoverText);
+      
+      // Replace with highlighted span that has hover functionality
+      highlightedText = highlightedText.replace(regex, 
+        `<span class="json-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #2563EB; font-weight: 600; text-shadow: 0 0 4px rgba(37, 99, 235, 0.3);" title="${hoverText}">$1</span>`
+      );
+    });
+    
+    // Make **Ass characters clickable (always blue)
     assCharacters.forEach(character => {
       const regex = new RegExp(`(${character})`, 'gi');
-      // Only apply clickable style if highlighting is enabled
-      if (highlightMode) {
-        highlightedText = highlightedText.replace(regex, 
-          '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #2563EB; font-weight: 600; text-shadow: 0 0 4px rgba(37, 99, 235, 0.3);">$1</span>'
-        );
-      } else {
-        // When highlighting is off, still make clickable but without blue color
-        highlightedText = highlightedText.replace(regex, 
-          '<span class="clickable-character" data-character="$1" style="cursor: pointer;">$1</span>'
-        );
-      }
+      highlightedText = highlightedText.replace(regex, 
+        '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #2563EB; font-weight: 600; text-shadow: 0 0 4px rgba(37, 99, 235, 0.3);">$1</span>'
+      );
     });
     
     console.log('🎨 TextHighlighter Debug: Final highlighted text length:', highlightedText.length);
@@ -155,8 +145,8 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   const displayText = eyeMode && currentTranslation ? currentTranslation : text;
   const highlightedText = highlightMatchingText(displayText);
   
-  // Get suggestions for the current text
-  const suggestions = highlightMode && jsonData ? findJsonMatches(displayText) : [];
+  // Get suggestions for the current text (always available, controlled by showSuggestions prop)
+  const suggestions = jsonData ? findJsonMatches(displayText) : [];
 
   return (
     <div className={className} style={style}>
@@ -165,8 +155,8 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
         onClick={handleTextClick}
       />
       
-      {/* Suggestion buttons - only show for main dialogue box, not source text */}
-      {suggestions.length > 0 && onSuggestionClick && !className.includes('opacity-70') && !className.includes('no-suggestions') && (
+      {/* Suggestion buttons - controlled by showSuggestions prop */}
+      {showSuggestions && suggestions.length > 0 && onSuggestionClick && !className.includes('opacity-70') && !className.includes('no-suggestions') && (
         <div className="mt-2 flex flex-wrap gap-2">
           {suggestions.map((suggestion, index) => (
             <button
@@ -180,6 +170,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
           ))}
         </div>
       )}
+
     </div>
   );
 };

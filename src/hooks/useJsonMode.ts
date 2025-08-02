@@ -20,6 +20,7 @@ export const useJsonMode = () => {
   const [jsonData, setJsonData] = useState<any>(null);                // Loaded JSON data
   const [availableJsonFiles, setAvailableJsonFiles] = useState<string[]>([]); // Available JSON files
   const [globalSearch, setGlobalSearch] = useState(false);             // Global search across all sheets
+  const [isLoadingJson, setIsLoadingJson] = useState(false);          // JSON loading state
 
   /**
    * Load available JSON files on component mount
@@ -44,6 +45,7 @@ export const useJsonMode = () => {
    * Load JSON data when file is selected
    */
   const loadJsonData = async (fileName: string) => {
+    setIsLoadingJson(true);
     try {
       const response = await fetch(`/api/json-data?file=${encodeURIComponent(fileName)}`);
       if (response.ok) {
@@ -55,6 +57,8 @@ export const useJsonMode = () => {
       }
     } catch (error) {
       console.error('Error loading JSON data:', error);
+    } finally {
+      setIsLoadingJson(false);
     }
   };
 
@@ -137,6 +141,7 @@ export const useJsonMode = () => {
     jsonData,
     availableJsonFiles,
     globalSearch,
+    isLoadingJson,
     
     // Setters
     setJsonMode,

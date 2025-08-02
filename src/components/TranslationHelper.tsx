@@ -6,105 +6,91 @@ import { useDisplayModes } from '../hooks/useDisplayModes';
 import { useJsonMode } from '../hooks/useJsonMode';
 import { useReferenceColumn as useReferenceColumnHook } from '../hooks/useReferenceColumn';
 import { useJsonHighlighting } from '../hooks/useJsonHighlighting';
+import { useCharacterDetection } from '../hooks/useCharacterDetection';
+import { useUIComponents } from '../hooks/useUIComponents';
+import { useExcelProcessing } from '../hooks/useExcelProcessing';
+import { useTranslationState } from '../hooks/useTranslationState';
 import SetupWizard from './SetupWizard';
 import CodexPanel from './CodexPanel';
 import TextHighlighter from './TextHighlighter';
 
-/**
- * TranslationHelper Component
- * 
- * A comprehensive translation assistance tool designed for the AM Translations project.
- * Features include:
- * - Excel file upload and parsing for bulk translation workflows
- * - Manual text input mode for individual translations
- * - Dark mode support with full UI responsiveness
- * - Gamepad/dialogue box mode with pixel art styling
- * - Codex integration for character and lore reference
- * - Real-time character name detection and insertion
- * - Progress tracking and navigation controls
- * 
- * FUTURE REFACTORING OPPORTUNITIES:
- * ====================================
- * 
- * 1. EXCEL PROCESSING MODULE
- *    - Extract Excel file handling, parsing, and data extraction logic
- *    - Create: useExcelProcessor hook + ExcelProcessor component
- *    - State to extract: excelSheets, selectedSheet, workbookData, sourceColumn, etc.
- * 
- * 2. TRANSLATION WORKFLOW MODULE
- *    - Extract translation session management and navigation
- *    - Create: useTranslationWorkflow hook + TranslationWorkflow component
- *    - State to extract: sourceTexts, translations, currentIndex, currentTranslation
- * 
- * 3. CODEX INTEGRATION MODULE
- *    - Extract codex data fetching, matching, and UI rendering
- *    - Create: useCodexIntegration hook + CodexPanel component
- *    - State to extract: codexData, accordionStates, expandedItems, isLoadingCodex
- * 
- * 4. CHARACTER DETECTION MODULE
- *    - Extract character name detection and insertion logic
- *    - Create: useCharacterDetection hook + CharacterButtons component
- *    - Functions to extract: detectAssCharacters, insertCharacterName, highlightMatchingText
- * 
- * 5. DISPLAY MODES MODULE
- *    - Extract dark mode, gamepad mode, and visual state management
- *    - Create: useDisplayModes hook + DisplayModeControls component
- *    - State to extract: darkMode, gamepadMode, eyeMode, highlightMode
- * 
- * 6. DIALOGUE BOX MODULE
- *    - Extract pixel art dialogue box rendering and styling
- *    - Create: DialogueBox component with gamepad mode styling
- *    - Functions to extract: dialogue rendering logic, pixel font styling
- * 
- * 7. PROGRESS TRACKING MODULE
- *    - Extract progress calculation and navigation controls
- *    - Create: useProgressTracking hook + ProgressControls component
- *    - State to extract: progress calculation, jump navigation
- * 
- * 8. EXPORT FUNCTIONALITY MODULE
- *    - Extract clipboard copying and export logic
- *    - Create: useExportFunctionality hook + ExportControls component
- *    - Functions to extract: copyToClipboard, getCellLocation
- * 
- * 9. SETUP WIZARD MODULE
- *    - Extract initial setup and configuration UI
- *    - Create: SetupWizard component with step-by-step configuration
- *    - State to extract: inputMode, Excel configuration, manual input setup
- * 
- * 10. ANIMATION MODULE
- *     - Extract transition animations and visual effects
- *     - Create: useAnimations hook + AnimationProvider component
- *     - State to extract: isAnimating, gradientColors, showCopied
- * 
- * @component
- */
+
 const TranslationHelper: React.FC = () => {
-  // ========== Core Translation State ==========
-  // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
-  // This state block should be extracted to useTranslationWorkflow hook
-  // Components to create: TranslationWorkflow, TranslationSession
-  // State management: sourceTexts, utterers, translations, currentIndex, currentTranslation
-  const [sourceTexts, setSourceTexts] = useState<string[]>([]);        // Array of source texts to translate
-  const [utterers, setUtterers] = useState<string[]>([]);              // Speaker/character names for each text
-  const [translations, setTranslations] = useState<string[]>([]);      // User's translations
-  const [currentIndex, setCurrentIndex] = useState(0);                 // Current position in translation array
-  const [currentTranslation, setCurrentTranslation] = useState('');    // Active translation being edited
-  
-  // ========== Excel Configuration State ==========
-  // FUTURE SPLIT: EXCEL PROCESSING MODULE
-  // This state block should be extracted to useExcelProcessor hook
-  // Components to create: ExcelProcessor, ExcelConfiguration, ExcelUploader
-  // State management: cellStart, excelSheets, selectedSheet, sourceColumn, uttererColumn, referenceColumn, useReferenceColumn, startRow, workbookData
-  const [cellStart, setCellStart] = useState('A1');                    // Starting cell for export
-  const [excelSheets, setExcelSheets] = useState<string[]>([]);        // Available sheets in uploaded Excel
-  const [selectedSheet, setSelectedSheet] = useState('');              // Currently selected sheet
-  const [sourceColumn, setSourceColumn] = useState('C');               // Column containing source text
-  const [uttererColumn, setUttererColumn] = useState('A');             // Column containing speaker names
-  // ========== Reference Column State ==========
-  // FUTURE SPLIT: REFERENCE PROCESSING MODULE
-  // This state block has been extracted to useReferenceColumn hook
-  // Components to create: ReferenceProcessor, ReferenceConfiguration, ReferenceValidator
-  // State management: referenceColumn, useReferenceColumn, referenceData, referenceValidation
+  const {
+    sourceTexts,
+    utterers,
+    translations,
+    currentIndex,
+    currentTranslation,
+    isStarted,
+    cellStart,
+    excelSheets,
+    selectedSheet,
+    workbookData,
+    isLoadingExcel,
+    isAnimating,
+    showCopied,
+    gradientColors,
+    showVersionHash,
+    inputMode,
+    sourceColumn,
+    uttererColumn,
+    startRow,
+    fileInputRef,
+    textareaRef,
+    setSourceTexts,
+    setUtterers,
+    setTranslations,
+    setCurrentIndex,
+    setCurrentTranslation,
+    setIsStarted,
+    setCellStart,
+    setExcelSheets,
+    setSelectedSheet,
+    setWorkbookData,
+    setIsAnimating,
+    setShowCopied,
+    setGradientColors,
+    setShowVersionHash,
+    setInputMode,
+    setSourceColumn,
+    setUttererColumn,
+    setStartRow,
+    handleStart,
+    handleBackToSetup,
+    handleSubmit,
+    handlePrevious,
+    handleSourceInput,
+    handleFileUpload,
+    handleSheetChange,
+    insertTranslatedSuggestion,
+    insertPlaceholder,
+    copySourceText,
+    copySourceToJsonSearch,
+    persistTranslation,
+    getCellLocation,
+    generateGradientColors,
+    extractSpeakerName,
+    categoryHasMatches,
+    trimCurrentTranslation,
+    exportTranslations,
+    jumpToRow,
+  } = useTranslationState();
+
+  const copyJsonField = (text: string, fieldName: string) => {
+    if (text) {
+      navigator.clipboard.writeText(text);
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    }
+  };
+
+  const copyToClipboard = () => {
+    const text = translations.join('\n');
+    navigator.clipboard.writeText(text);
+    setShowCopied(true);
+    setTimeout(() => setShowCopied(false), 2000);
+  };
   const {
     referenceColumn,
     useReferenceColumn,
@@ -114,26 +100,7 @@ const TranslationHelper: React.FC = () => {
     processReferenceData,
     initializeTranslationsWithReference,
   } = useReferenceColumnHook();
-  const [startRow, setStartRow] = useState(3);                         // Starting row for data extraction
-  const [workbookData, setWorkbookData] = useState<XLSX.WorkBook | null>(null); // Parsed Excel workbook
   
-  // ========== UI State Management ==========
-  // FUTURE SPLIT: ANIMATION MODULE + SETUP WIZARD MODULE
-  // Animation state should be extracted to useAnimations hook
-  // Setup state should be extracted to useSetupWizard hook
-  // Components to create: AnimationProvider, SetupWizard, SessionManager
-  // State management: isStarted, isAnimating, showCopied, inputMode, gradientColors, isTranslating
-  const [isStarted, setIsStarted] = useState(false);                   // Translation session active flag
-  const [isAnimating, setIsAnimating] = useState(false);               // Animation state for transitions
-  const [showCopied, setShowCopied] = useState(false);                 // Copy confirmation indicator
-  const [inputMode, setInputMode] = useState<'excel' | 'manual'>('excel'); // Input mode selection
-  const [gradientColors, setGradientColors] = useState<string[]>([]);  // Dynamic gradient colors
-
-  
-  // ========== Display Mode State ==========
-  // ✅ REFACTORED: Successfully extracted to useDisplayModes hook
-  // This demonstrates the first step of component modularization
-  // Benefits: Centralized state management, reusable across components
   const {
     darkMode,
     eyeMode,
@@ -145,15 +112,6 @@ const TranslationHelper: React.FC = () => {
     toggleGamepadMode,
   } = useDisplayModes();
   
-  // ========== Navigation State ==========
-  // FUTURE SPLIT: PROGRESS TRACKING MODULE
-  // This state block should be extracted to useProgressTracking hook
-  // Components to create: ProgressControls, NavigationPanel
-  // State management: showVersionHash
-  const [showVersionHash, setShowVersionHash] = useState(false);       // Display version info
-  
-  // ========== JSON Mode State ==========
-  // ✅ REFACTORED: Extracted to useJsonMode hook
   const {
     jsonMode,
     selectedJsonFile,
@@ -172,551 +130,61 @@ const TranslationHelper: React.FC = () => {
     getAvailableSheets,
   } = useJsonMode();
 
+  const {
+    detectedCharacters,
+    showCharacterButtons,
+    setDetectedCharacters,
+    setShowCharacterButtons,
+    detectAssCharacters,
+    insertCharacterName: insertCharacterNameHook,
+    highlightMatchingText,
+  } = useCharacterDetection();
 
-  
-  // ========== Component References ==========
-  const fileInputRef = useRef<HTMLInputElement>(null);                 // File input element reference
-  const textareaRef = useRef<HTMLTextAreaElement>(null);              // Textarea element reference
-  
-  // ========== Version Control ==========
-  const VERSION_HASH = 'v2.3.0';                                       // Application version identifier
-  
-  // ========== Codex Integration State ==========
-  // FUTURE SPLIT: CODEX INTEGRATION MODULE
-  // This state block should be extracted to useCodexIntegration hook
-  // Components to create: CodexPanel, CodexAccordion, CodexDataProvider
-  // State management: accordionStates, codexData, expandedItems, isLoadingCodex
-  // HIDDEN FOR NOW - Codex functionality disabled
-  const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({}); // Accordion UI states
-  const [codexData, setCodexData] = useState<any>(null);               // Loaded codex reference data
-  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set()); // Expanded codex items
-  const [isLoadingCodex, setIsLoadingCodex] = useState(false);         // Codex loading state
+  const insertCharacterName = (characterName: string) => {
+    insertCharacterNameHook(characterName, currentTranslation, setCurrentTranslation, textareaRef);
+  };
 
-  // ========== JSON Highlighting State ==========
-  // ✅ REFACTORED: Extracted to useJsonHighlighting hook
-  // Using Localization Manual for world entities highlighting
+  // Wrapper function to copy source text to JSON search
+  const handleCopySourceToJsonSearch = () => {
+    const sourceText = sourceTexts[currentIndex];
+    if (sourceText) {
+      setJsonSearchTerm(sourceText);
+      console.log('Set JSON search term to:', sourceText);
+    }
+  };
+  
+  const VERSION_HASH = 'v2.3.0';
+  
+  const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({});
+  const [codexData, setCodexData] = useState<any>(null);
+  const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
+  const [isLoadingCodex, setIsLoadingCodex] = useState(false);
+
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
 
-  // Auto-load Localization Manual for highlighting
   useEffect(() => {
     const loadLocalizationManual = async () => {
-      console.log('🔧 TranslationHelper Debug: Loading Localization Manual for highlighting');
       try {
         const response = await fetch('/api/json-data?file=READ_ME_LocalizationManual.json');
         if (response.ok) {
           const data = await response.json();
           setHighlightingJsonData(data);
-          console.log('🔧 TranslationHelper Debug: Localization Manual loaded for highlighting');
-        } else {
-          console.log('🔧 TranslationHelper Debug: Failed to load Localization Manual');
         }
       } catch (error) {
-        console.log('🔧 TranslationHelper Debug: Error loading Localization Manual:', error);
+        console.error('Error loading Localization Manual:', error);
       }
     };
 
     loadLocalizationManual();
   }, []);
 
-  // Debug: Check what JSON data is available for highlighting
-  useEffect(() => {
-    console.log('🔧 TranslationHelper Debug: highlightingJsonData:', highlightingJsonData);
-    console.log('🔧 TranslationHelper Debug: highlightingJsonData sheets:', highlightingJsonData?.sheets?.length);
-    if (highlightingJsonData?.sheets) {
-      const namesSheet = highlightingJsonData.sheets.find((sheet: any) => 
-        sheet.sheetName === "Names and World Overview"
-      );
-      console.log('🔧 TranslationHelper Debug: Names sheet found:', !!namesSheet);
-      if (namesSheet) {
-        console.log('🔧 TranslationHelper Debug: Names sheet entries:', namesSheet.entries?.length);
-      }
-    }
-  }, [highlightingJsonData]);
 
-  // Function to check if a category has matching entries (for codex)
-  const categoryHasMatches = (category: string) => {
-    // This function is still used by CodexPanel, so we'll keep it
-    // but it won't be used for highlighting anymore
-    return false;
-  };
 
 
   
-  // ========== Computed Values ==========
   const progress = sourceTexts.length > 0 ? ((currentIndex) / sourceTexts.length) * 100 : 0;
 
-  /**
-   * Fetch codex data on component mount
-   * Loads character and lore reference data from the API
-   * 
-   * FUTURE SPLIT: CODEX INTEGRATION MODULE
-   * This useEffect should be extracted to useCodexIntegration hook
-   * Function to extract: fetchCodexData
-   * Dependencies: codexData, isLoadingCodex state
-   * 
-   * HIDDEN FOR NOW - Codex functionality disabled
-   */
-  /*
-  useEffect(() => {
-    const fetchCodexData = async () => {
-      setIsLoadingCodex(true);
-      try {
-        const response = await fetch('/api/codex');
-        if (response.ok) {
-          const data = await response.json();
-          setCodexData(data);
-        }
-      } catch (error) {
-        // Silently handle codex loading errors
-      } finally {
-        setIsLoadingCodex(false);
-      }
-    };
-
-    fetchCodexData();
-  }, []);
-  */
-
-
-
-
-
-  /**
-   * Extract clean speaker name from utterer string
-   * 
-   * Parses complex utterer strings from the game data format to extract
-   * human-readable speaker names for the dialogue box display.
-   * 
-   * @param utterer - Raw utterer string (e.g., "SAY.Sign_TheMines_Dirty.1.Dirty Sign")
-   * @returns Extracted speaker name (e.g., "Dirty Sign") or fallback "Speaker"
-   * 
-   * @example
-   * extractSpeakerName("SAY.Sign_TheMines_Dirty.1.Dirty Sign") // returns "Dirty Sign"
-   * extractSpeakerName("SAY.NPC_Miner.2.Old Miner") // returns "Old Miner"
-   */
-
-
-  // Function to insert character name in parentheses
-  // FUTURE SPLIT: CHARACTER DETECTION MODULE
-  // This function should be extracted to useCharacterDetection hook
-  // Related functions: detectAssCharacters, highlightMatchingText
-  // Components to create: CharacterButtons, CharacterInsertion
-  // Dependencies: currentTranslation state, textareaRef
-  const insertCharacterName = (characterName: string) => {
-    const parenthesesName = `(${characterName})`;
-    const textarea = textareaRef.current;
-    
-    if (textarea) {
-      const cursorPos = textarea.selectionStart;
-      const before = currentTranslation.slice(0, cursorPos);
-      const after = currentTranslation.slice(cursorPos);
-      const newText = before + parenthesesName + after;
-      
-      setCurrentTranslation(newText);
-      
-      // Set cursor position after the inserted text
-      setTimeout(() => {
-        if (textarea) {
-          const newCursorPos = cursorPos + parenthesesName.length;
-          textarea.setSelectionRange(newCursorPos, newCursorPos);
-          textarea.focus();
-        }
-      }, 0);
-    } else {
-      // Fallback: append to the end if textarea ref is not available
-      setCurrentTranslation(prev => prev + parenthesesName);
-    }
-  };
-
-
-
-  // Function to toggle expanded items
-  // FUTURE SPLIT: CODEX INTEGRATION MODULE
-  // This function should be extracted to useCodexIntegration hook
-  // Components to create: CodexAccordion, CodexItemExpander
-  // Dependencies: expandedItems state
-  // HIDDEN FOR NOW - Codex functionality disabled
-  /*
-  const toggleExpandedItem = (itemId: string) => {
-    const newExpanded = new Set(expandedItems);
-    if (newExpanded.has(itemId)) {
-      newExpanded.delete(itemId);
-    } else {
-      newExpanded.add(itemId);
-    }
-    setExpandedItems(newExpanded);
-  };
-
-  // Function to toggle accordion states
-  // FUTURE SPLIT: CODEX INTEGRATION MODULE
-  // This function should be extracted to useCodexIntegration hook
-  // Components to create: CodexAccordion, CodexCategoryToggler
-  // Dependencies: accordionStates state
-  const toggleAccordion = (category: string) => {
-    setAccordionStates(prev => ({
-      ...prev,
-      [category]: !prev[category]
-    }));
-  };
-
-  // Helper function to render expandable codex items
-  // FUTURE SPLIT: CODEX INTEGRATION MODULE
-  // This function should be extracted to useCodexIntegration hook
-  // Components to create: CodexItemRenderer, CodexCategoryRenderer
-  // Dependencies: codexData, accordionStates, expandedItems state
-  const renderCodexItems = (category: string, categoryKey: string) => {
-    if (isLoadingCodex) {
-      return <div className="text-center py-4 text-gray-500">Loading codex data...</div>;
-    }
-    
-    if (!codexData || !codexData[categoryKey]) {
-      return <div className="text-gray-500">No codex data available</div>;
-    }
-    
-    return codexData[categoryKey].map((entry: any, index: number) => (
-      <div key={`${categoryKey}-${index}`} className="border border-gray-200 dark:border-gray-600 rounded" style={{ borderRadius: '3px' }}>
-        <button
-          onClick={() => toggleExpandedItem(`${categoryKey}-${index}`)}
-          className="w-full p-3 text-left flex justify-between items-center hover:bg-gray-100 dark:hover:bg-gray-600 transition-colors duration-200 text-gray-900 dark:text-gray-100"
-        >
-          <span className="font-medium">
-            {entry.name}
-          </span>
-          <svg className={`w-4 h-4 transform transition-transform duration-200 ${expandedItems.has(`${categoryKey}-${index}`) ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </button>
-        {expandedItems.has(`${categoryKey}-${index}`) && (
-          <div className="p-4 border-t border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800">
-            <div className="prose prose-sm max-w-none text-gray-700 dark:text-gray-300">
-              <pre className="whitespace-pre-wrap text-sm leading-relaxed text-gray-900 dark:text-gray-100">{entry.content}</pre>
-            </div>
-          </div>
-        )}
-      </div>
-    ));
-  };
-  */
-
-  // Generate random gradient colors - expanded palette
-  // FUTURE SPLIT: ANIMATION MODULE
-  // This function should be extracted to useAnimations hook
-  // Components to create: AnimationProvider, GradientGenerator
-  // Dependencies: gradientColors state
-  const generateGradientColors = (): string[] => {
-    const colorPalettes = [
-      ['#667eea', '#764ba2'], // Purple to Blue
-      ['#f093fb', '#f5576c'], // Pink to Red
-      ['#4facfe', '#00f2fe'], // Blue to Cyan
-      ['#43e97b', '#38f9d7'], // Green to Teal
-      ['#fa709a', '#fee140'], // Pink to Yellow
-      ['#a8edea', '#fed6e3'], // Mint to Pink
-      ['#ffecd2', '#fcb69f'], // Cream to Peach
-      ['#ff9a9e', '#fecfef'], // Pink to Light Pink
-      ['#a8caba', '#5d4e75'], // Mint to Purple
-      ['#d299c2', '#fef9d7'], // Pink to Cream
-    ];
-    return colorPalettes[Math.floor(Math.random() * colorPalettes.length)];
-  };
-
-  // Initialize gradient colors on mount
-  useEffect(() => {
-    setGradientColors(generateGradientColors());
-  }, []);
-
-
-
-  // FUTURE SPLIT: EXCEL PROCESSING MODULE
-  // This function should be extracted to useExcelProcessor hook
-  // Components to create: ExcelUploader, ExcelFileProcessor
-  // Dependencies: workbookData, excelSheets, selectedSheet state
-  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = (e) => {
-      try {
-        const result = e.target?.result;
-        if (!result) return;
-        
-        const data = new Uint8Array(result as ArrayBuffer);
-        const workbook = XLSX.read(data, { type: 'array' });
-        
-        setWorkbookData(workbook);
-        setExcelSheets(workbook.SheetNames);
-        if (workbook.SheetNames.length > 0) {
-          setSelectedSheet(workbook.SheetNames[0]);
-        }
-          } catch (error) {
-      alert('Error reading Excel file. Please ensure it\'s a valid Excel file.');
-    }
-    };
-    reader.readAsArrayBuffer(file);
-  };
-
-  // Effect to reprocess when settings change
-  // FUTURE SPLIT: EXCEL PROCESSING MODULE
-  // This useEffect should be extracted to useExcelProcessor hook
-  // Function to extract: processExcelData
-  // Dependencies: workbookData, selectedSheet, sourceColumn, uttererColumn, referenceColumn, useReferenceColumn, startRow
-  useEffect(() => {
-    if (workbookData && selectedSheet) {
-      const worksheet = workbookData.Sheets[selectedSheet];
-      const jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1 }) as any[][];
-      
-      // Extract column data
-      const sourceColIndex = sourceColumn.charCodeAt(0) - 65;
-      const uttererColIndex = uttererColumn.charCodeAt(0) - 65;
-      const referenceColIndex = referenceColumn.charCodeAt(0) - 65;
-      const extractedTexts: string[] = [];
-      const extractedUtterers: string[] = [];
-      const extractedReferences: string[] = [];
-      
-      for (let i = startRow - 1; i < jsonData.length; i++) {
-        const dataRow = jsonData[i];
-        if (dataRow && dataRow[sourceColIndex] && dataRow[sourceColIndex].toString().trim()) {
-          extractedTexts.push(dataRow[sourceColIndex].toString().trim());
-          // Get utterer from specified column, or empty string if not found
-          const utterer = dataRow[uttererColIndex] ? dataRow[uttererColIndex].toString().trim() : '';
-          extractedUtterers.push(utterer);
-          // Get reference translation if using reference column
-          const reference = processReferenceData(dataRow, referenceColIndex);
-          extractedReferences.push(reference);
-        }
-      }
-      
-      setSourceTexts(extractedTexts);
-      setUtterers(extractedUtterers);
-      // If using reference column, populate translations with reference data, otherwise empty
-      setTranslations(initializeTranslationsWithReference(extractedReferences, extractedTexts.length));
-    }
-      }, [workbookData, selectedSheet, sourceColumn, uttererColumn, referenceColumn, useReferenceColumn, startRow]);
-
-  // FUTURE SPLIT: SETUP WIZARD MODULE
-  // This function should be extracted to useSetupWizard hook
-  // Components to create: ManualInputSetup, InputModeSelector
-  // Dependencies: sourceTexts, utterers, translations, currentIndex, isStarted state
-  const handleSourceInput = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-    const lines = e.target.value.split('\n').filter(line => line.trim() !== '');
-    setSourceTexts(lines);
-    setUtterers(new Array(lines.length).fill(''));
-    setTranslations(new Array(lines.length).fill(''));
-    setCurrentIndex(0);
-    setIsStarted(false);
-    // Clear Excel data when using manual input
-    setWorkbookData(null);
-    setExcelSheets([]);
-    setSelectedSheet('');
-    resetReferenceColumn();
-    setInputMode('manual');
-  };
-
-      // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
-      // This function should be extracted to useTranslationWorkflow hook
-      // Components to create: TranslationSession, WorkflowController
-      // Dependencies: sourceTexts, translations, currentIndex, currentTranslation, isStarted, useReferenceColumn state
-      const handleStart = () => {
-      if (sourceTexts.length > 0) {
-        setIsStarted(true);
-        // Reference column functionality disabled for MVP
-        setCurrentTranslation('');
-      }
-    };
-
-  // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
-  // This function should be extracted to useTranslationWorkflow hook
-  // Components to create: WorkflowNavigation, SessionControls
-  // Dependencies: isStarted state
-  const handleBackToSetup = () => {
-    setIsStarted(false);
-    setCurrentIndex(0);
-    setCurrentTranslation('');
-    // Preserve utterers and translations when going back
-  };
-
-  // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
-  // This function should be extracted to useTranslationWorkflow hook
-  // Components to create: TranslationSubmitter, WorkflowNavigation
-  // Dependencies: currentIndex, currentTranslation, translations, sourceTexts state
-  const handleSubmit = () => {
-    const newTranslations = [...translations];
-    newTranslations[currentIndex] = currentTranslation;
-    setTranslations(newTranslations);
-    
-    // Auto-copy translations to clipboard for safety
-    const text = newTranslations.join('\n');
-    navigator.clipboard.writeText(text);
-    setShowCopied(true);
-    setTimeout(() => setShowCopied(false), 2000);
-    
-    // Trigger translation animation
-
-    
-    if (currentIndex < sourceTexts.length - 1) {
-      setIsAnimating(true);
-      setTimeout(() => {
-        setCurrentIndex(currentIndex + 1);
-        setCurrentTranslation('');
-        setIsAnimating(false);
-      }, 200);
-    }
-  };
-
-  // FUTURE SPLIT: TRANSLATION WORKFLOW MODULE
-  // This function should be extracted to useTranslationWorkflow hook
-  // Components to create: WorkflowNavigation, NavigationControls
-  // Dependencies: currentIndex, currentTranslation, translations state
-  const handlePrevious = () => {
-    if (currentIndex > 0) {
-      setIsAnimating(true);
-      setTimeout(() => {
-        setCurrentIndex(currentIndex - 1);
-        setCurrentTranslation(translations[currentIndex - 1] || '');
-        setIsAnimating(false);
-      }, 200);
-    }
-  };
-
-  // FUTURE SPLIT: EXPORT FUNCTIONALITY MODULE
-  // This function should be extracted to useExportFunctionality hook
-  // Components to create: ExportControls, ClipboardManager
-  // Dependencies: translations, showCopied state
-  const copyToClipboard = () => {
-    // Copy just the translations, without row numbers or utterers
-    const text = translations.join('\n');
-    navigator.clipboard.writeText(text);
-    setShowCopied(true);
-    setTimeout(() => setShowCopied(false), 2000);
-  };
-
-  // Copy source text to clipboard
-  const copySourceText = () => {
-    const sourceText = sourceTexts[currentIndex];
-    if (sourceText) {
-      navigator.clipboard.writeText(sourceText);
-      setShowCopied(true);
-      setTimeout(() => setShowCopied(false), 2000);
-    }
-  };
-
-  const copySourceToJsonSearch = () => {
-    const sourceText = sourceTexts[currentIndex];
-    if (sourceText) {
-      setJsonSearchTerm(sourceText);
-      setShowCopied(true);
-      setTimeout(() => setShowCopied(false), 2000);
-    }
-  };
-
-  // Function to insert translated Dutch suggestion
-  const insertTranslatedSuggestion = (translatedText: string) => {
-    const textarea = textareaRef.current;
-    
-    if (textarea) {
-      const cursorPos = textarea.selectionStart;
-      const before = currentTranslation.slice(0, cursorPos);
-      const after = currentTranslation.slice(cursorPos);
-      const newText = before + translatedText + after;
-      
-      setCurrentTranslation(newText);
-      
-      // Set cursor position after the inserted text
-      setTimeout(() => {
-        if (textarea) {
-          const newCursorPos = cursorPos + translatedText.length;
-          textarea.setSelectionRange(newCursorPos, newCursorPos);
-          textarea.focus();
-        }
-      }, 0);
-    } else {
-      // Fallback: append to the end if textarea ref is not available
-      setCurrentTranslation(prev => prev + translatedText);
-    }
-  };
-
-  // Function to insert placeholder with original English source
-  const insertPlaceholder = (originalSource: string) => {
-    const placeholderText = `(${originalSource})`;
-    const textarea = textareaRef.current;
-    
-    if (textarea) {
-      const cursorPos = textarea.selectionStart;
-      const before = currentTranslation.slice(0, cursorPos);
-      const after = currentTranslation.slice(cursorPos);
-      const newText = before + placeholderText + after;
-      
-      setCurrentTranslation(newText);
-      
-      // Set cursor position after the inserted text
-      setTimeout(() => {
-        if (textarea) {
-          const newCursorPos = cursorPos + placeholderText.length;
-          textarea.setSelectionRange(newCursorPos, newCursorPos);
-          textarea.focus();
-        }
-      }, 0);
-    } else {
-      // Fallback: append to the end if textarea ref is not available
-      setCurrentTranslation(prev => prev + placeholderText);
-    }
-  };
-
-  // Copy JSON field to clipboard
-  const copyJsonField = (text: string, fieldName: string) => {
-    if (text) {
-      navigator.clipboard.writeText(text);
-      setShowCopied(true);
-      setTimeout(() => setShowCopied(false), 2000);
-    }
-  };
-
-  const persistTranslation = async (rowNumber: number, newTranslation: string) => {
-    try {
-      const response = await fetch('/api/persist-translation', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          fileName: 'READ_ME_LocalizationManual',
-          rowNumber: rowNumber,
-          newTranslation: newTranslation
-        }),
-      });
-
-      if (response.ok) {
-        // Reload JSON data to reflect changes
-        await loadLocalizationManual();
-        setShowCopied(true);
-        setTimeout(() => setShowCopied(false), 2000);
-      } else {
-        console.error('Failed to persist translation');
-      }
-    } catch (error) {
-      console.error('Error persisting translation:', error);
-    }
-  };
-
-  // FUTURE SPLIT: EXPORT FUNCTIONALITY MODULE
-  // This function should be extracted to useExportFunctionality hook
-  // Components to create: ExportControls, CellLocationCalculator
-  // Dependencies: excelSheets, cellStart state
-  const getCellLocation = (index: number) => {
-    if (excelSheets.length > 0) {
-      // For Excel files, use row numbers
-      return `Row ${startRow + index}`;
-    }
-    // For manual input, use cell notation
-    const match = cellStart.match(/([A-Z]+)(\d+)/);
-    if (match) {
-      const col = match[1];
-      const row = parseInt(match[2]);
-      return `${col}${row + index}`;
-    }
-    return cellStart;
-  };
 
   if (!isStarted) {
     return (
@@ -797,6 +265,48 @@ const TranslationHelper: React.FC = () => {
           <p className="text-gray-600 dark:text-gray-400 text-lg">
             {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
           </p>
+          
+          {/* Jump to Row and Sheet Change */}
+          <div className="flex items-center justify-center gap-4 mt-4">
+            {/* Jump to Row */}
+            <div className="flex items-center gap-2">
+              <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Jump to:</label>
+              <input
+                type="number"
+                min={startRow}
+                max={startRow + sourceTexts.length - 1}
+                placeholder={`${startRow}-${startRow + sourceTexts.length - 1}`}
+                className="w-20 p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
+                style={{ borderRadius: '3px' }}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    const rowNumber = parseInt(e.currentTarget.value);
+                    if (rowNumber >= startRow && rowNumber < startRow + sourceTexts.length) {
+                      jumpToRow(rowNumber);
+                      e.currentTarget.value = '';
+                    }
+                  }
+                }}
+              />
+            </div>
+            
+            {/* Sheet Change - Only show if Excel sheets are available */}
+            {excelSheets.length > 1 && (
+              <div className="flex items-center gap-2">
+                <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Sheet:</label>
+                <select
+                  value={selectedSheet}
+                  onChange={(e) => handleSheetChange(e.target.value)}
+                  className="p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
+                  style={{ borderRadius: '3px' }}
+                >
+                  {excelSheets.map(sheet => (
+                    <option key={sheet} value={sheet}>{sheet}</option>
+                  ))}
+                </select>
+              </div>
+            )}
+          </div>
         </div>
 
         {/* Progress Bar */}
@@ -862,14 +372,14 @@ const TranslationHelper: React.FC = () => {
                   <div 
                     className="bg-black dark:bg-gray-800 text-white dark:text-gray-100 px-4 py-2 border-b-2 border-black dark:border-gray-700 text-left pixelify-sans-600 relative"
                     style={{ 
-                      fontSize: '1.8rem', 
+                      fontSize: '1.4rem', 
                       fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
                       background: '#000000',
                       borderTopLeftRadius: '4px',
                       borderTopRightRadius: '4px'
                     }}
                   >
-                    <div className="flex justify-between items-center">
+                    <div className="flex justify-center items-center">
                       <span className="text-shadow-pixel">
                         {(() => {
                           const utterer = utterers[currentIndex];
@@ -878,31 +388,6 @@ const TranslationHelper: React.FC = () => {
                           return parts.length >= 4 ? parts[3] : utterer;
                         })()}
                       </span>
-                      <div className="flex items-center gap-2">
-                        {/* Copy button for source text */}
-                        <button
-                          onClick={copySourceText}
-                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200"
-                          title="Copy source text"
-                        >
-                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                          </svg>
-                        </button>
-                        {/* JSON button - only show when JSON mode is active */}
-                        {jsonMode && (
-                          <button
-                            onClick={copySourceToJsonSearch}
-                            className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200"
-                            title="Search this text in JSON viewer"
-                          >
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
-                            </svg>
-                          </button>
-                        )}
-                      </div>
                     </div>
                   </div>
                   
@@ -934,6 +419,33 @@ const TranslationHelper: React.FC = () => {
                       }}
                     />
                     
+                    {/* Action buttons in bottom left corner */}
+                    <div className="absolute bottom-2 left-2 flex items-center gap-2">
+                      {/* Copy button for source text */}
+                      <button
+                        onClick={copySourceText}
+                        className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
+                        title="Copy source text"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      </button>
+                      {/* JSON button - only show when JSON mode is active */}
+                      {jsonMode && (
+                        <button
+                          onClick={copySourceToJsonSearch}
+                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
+                          title="Search this text in JSON viewer"
+                        >
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
+                          </svg>
+                        </button>
+                      )}
+                    </div>
+                    
                     {/* Simplified continue dialogue indicator */}
                     <div className="absolute bottom-2 right-2 text-gray-600 animate-bounce">
                       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -949,7 +461,7 @@ const TranslationHelper: React.FC = () => {
                     className="gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-black dark:border-gray-400 opacity-70"
                     style={{ 
                       width: '450px',
-                      height: '180px',
+                      height: '200px',
                       fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
                       fontSize: '1.5rem',
                       lineHeight: '1.4',
@@ -965,38 +477,13 @@ const TranslationHelper: React.FC = () => {
                     <div 
                       className="bg-black dark:bg-gray-800 text-white dark:text-gray-100 px-4 py-2 border-b-2 border-black dark:border-gray-700 text-left pixelify-sans-600 relative"
                       style={{ 
-                        fontSize: '1.8rem', 
+                        fontSize: '1.4rem', 
                         fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
                         background: '#000000'
                       }}
                     >
-                      <div className="flex justify-between items-center">
+                      <div className="flex justify-center items-center">
                         <span className="text-shadow-pixel opacity-70">Source</span>
-                        <div className="flex items-center gap-2">
-                          {/* Copy button for source text */}
-                          <button
-                            onClick={copySourceText}
-                            className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200"
-                            title="Copy source text"
-                          >
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                          </button>
-                          {/* JSON button - only show when JSON mode is active */}
-                          {jsonMode && (
-                            <button
-                              onClick={copySourceToJsonSearch}
-                              className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200"
-                              title="Search this text in JSON viewer"
-                            >
-                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
-                              </svg>
-                            </button>
-                          )}
-                        </div>
                       </div>
                     </div>
                     
@@ -1025,6 +512,33 @@ const TranslationHelper: React.FC = () => {
                           wordSpacing: '0.05em'
                         }}
                       />
+                      
+                      {/* Action buttons in bottom left corner */}
+                      <div className="absolute bottom-2 left-2 flex items-center gap-2">
+                        {/* Copy button for source text */}
+                        <button
+                          onClick={copySourceText}
+                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
+                          title="Copy source text"
+                        >
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                          </svg>
+                        </button>
+                        {/* JSON button - only show when JSON mode is active */}
+                        {jsonMode && (
+                          <button
+                            onClick={handleCopySourceToJsonSearch}
+                            className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
+                            title="Search this text in JSON viewer"
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
+                            </svg>
+                          </button>
+                        )}
+                      </div>
                     </div>
                   </div>
                 )}
@@ -1049,7 +563,7 @@ const TranslationHelper: React.FC = () => {
                     {/* JSON button - only show when JSON mode is active */}
                     {jsonMode && (
                       <button
-                        onClick={copySourceToJsonSearch}
+                        onClick={handleCopySourceToJsonSearch}
                         className="absolute top-2 right-8 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
                         title="Search this text in JSON viewer"
                       >
@@ -1093,14 +607,14 @@ const TranslationHelper: React.FC = () => {
                           {/* JSON button - only show when JSON mode is active */}
                           {jsonMode && (
                             <button
-                              onClick={copySourceToJsonSearch}
+                              onClick={handleCopySourceToJsonSearch}
                               className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
                               title="Search this text in JSON viewer"
                             >
                               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
-                              </svg>
+                        </svg>
                             </button>
                           )}
                         </div>
@@ -1287,11 +801,11 @@ const TranslationHelper: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-3">
             <button
               onClick={handlePrevious}
               disabled={currentIndex === 0}
-              className="px-6 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
+              className="px-4 py-2 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
               style={{ 
                 borderRadius: '3px'
               }}
@@ -1300,7 +814,7 @@ const TranslationHelper: React.FC = () => {
             </button>
             <button
               onClick={handleSubmit}
-              className="flex-1 px-6 py-3 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide"
+              className="flex-1 px-4 py-2 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
               style={{ 
                 borderRadius: '3px'
               }}
@@ -1523,20 +1037,43 @@ const TranslationHelper: React.FC = () => {
               <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translated Output</h3>
               <p className="text-xs text-gray-500 mt-1">Shows row info, but copies translations only</p>
             </div>
-            <div className="relative">
+            <div className="flex items-center gap-2">
+              {/* Trim Current Button */}
               <button
-                onClick={copyToClipboard}
-                className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide"
+                onClick={trimCurrentTranslation}
+                className="px-3 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
                 style={{ borderRadius: '3px' }}
-                title="Copy translations only (for pasting back to spreadsheet)"
+                title="Trim whitespace from current translation"
               >
-                Copy All
+                Trim
               </button>
-              {showCopied && (
-                <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-600 dark:bg-green-700 text-white px-3 py-2 text-sm whitespace-nowrap shadow-lg border border-green-800 dark:border-green-900" style={{ borderRadius: '3px' }}>
-                  ✓ Copied!
-                </div>
-              )}
+              
+              {/* Export Button */}
+              <button
+                onClick={exportTranslations}
+                className="px-3 py-2 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 hover:bg-blue-200 dark:hover:bg-blue-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
+                style={{ borderRadius: '3px' }}
+                title="Export all translations to file"
+              >
+                Export
+              </button>
+              
+              {/* Copy All Button */}
+              <div className="relative">
+                <button
+                  onClick={copyToClipboard}
+                  className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide"
+                  style={{ borderRadius: '3px' }}
+                  title="Copy translations only (for pasting back to spreadsheet)"
+                >
+                  Copy All
+                </button>
+                {showCopied && (
+                  <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-600 dark:bg-green-700 text-white px-3 py-2 text-sm whitespace-nowrap shadow-lg border border-green-800 dark:border-green-900" style={{ borderRadius: '3px' }}>
+                    ✓ Copied!
+                  </div>
+                )}
+              </div>
             </div>
           </div>
           
@@ -1648,102 +1185,5 @@ const TranslationHelper: React.FC = () => {
   );
 };
 
-/**
- * COMPREHENSIVE REFACTORING STRATEGY SUMMARY
- * ============================================
- * 
- * This monolithic component has been thoroughly annotated for future splitting.
- * The refactoring should follow this priority order:
- * 
- * PHASE 1: CORE FUNCTIONALITY EXTRACTION
- * --------------------------------------
- * 1. Excel Processing Module (useExcelProcessor + ExcelProcessor)
- *    - State: workbookData, excelSheets, selectedSheet, sourceColumn, etc.
- *    - Functions: handleFileUpload, processExcelData
- *    - Components: ExcelUploader, ExcelConfiguration, ExcelFileProcessor
- * 
- * 2. Translation Workflow Module (useTranslationWorkflow + TranslationWorkflow)
- *    - State: sourceTexts, translations, currentIndex, currentTranslation
- *    - Functions: handleStart, handleSubmit, handlePrevious, handleBackToSetup
- *    - Components: TranslationSession, WorkflowController, NavigationControls
- * 
- * 3. Codex Integration Module (useCodexIntegration + CodexPanel)
- *    - State: codexData, accordionStates, expandedItems, isLoadingCodex
- *    - Functions: fetchCodexData, getMatchingCodexEntries, renderCodexItems
- *    - Components: CodexAccordion, CodexItemRenderer, CodexDataProvider
- * 
- * PHASE 2: UI/UX MODULES
- * -----------------------
- * 4. Character Detection Module (useCharacterDetection + CharacterButtons)
- *    - Functions: detectAssCharacters, insertCharacterName, highlightMatchingText
- *    - Components: CharacterDetector, CharacterInsertion, TextHighlighter
- * 
- * 5. Display Modes Module (useDisplayModes + DisplayModeControls)
- *    - State: darkMode, gamepadMode, eyeMode, highlightMode
- *    - Functions: dark mode management, theme switching
- *    - Components: ThemeProvider, VisualModeSelector, DarkModeSync
- * 
- * 6. Dialogue Box Module (DialogueBox component)
- *    - Extract pixel art dialogue box rendering
- *    - Components: DialogueBox, SpeakerBar, DialogueContent
- * 
- * PHASE 3: UTILITY MODULES
- * -------------------------
- * 7. Progress Tracking Module (useProgressTracking + ProgressControls)
- *    - State: showJumpInput, jumpValue, showVersionHash
- *    - Functions: progress calculation, navigation
- *    - Components: ProgressBar, JumpToInput, NavigationPanel
- * 
- * 8. Export Functionality Module (useExportFunctionality + ExportControls)
- *    - Functions: copyToClipboard, getCellLocation
- *    - Components: ExportControls, ClipboardManager, CellLocationCalculator
- * 
- * 9. Setup Wizard Module (useSetupWizard + SetupWizard)
- *    - State: inputMode, Excel configuration
- *    - Functions: handleSourceInput, setup management
- *    - Components: SetupWizard, ManualInputSetup, InputModeSelector
- * 
- * 10. Animation Module (useAnimations + AnimationProvider)
- *     - State: isAnimating, gradientColors, showCopied
- *     - Functions: generateGradientColors, animation management
- *     - Components: AnimationProvider, GradientGenerator
- * 
- * IMPLEMENTATION NOTES:
- * - Each module should have its own hook for state management
- * - Components should be co-located with their hooks
- * - Use React Context for cross-module communication
- * - Maintain TypeScript interfaces for all extracted functions
- * - Preserve existing functionality during extraction
- * - Test each module independently after extraction
- * 
- * FILE STRUCTURE AFTER REFACTORING:
- * src/
- * ├── hooks/
- * │   ├── useExcelProcessor.ts
- * │   ├── useTranslationWorkflow.ts
- * │   ├── useCodexIntegration.ts
- * │   ├── useCharacterDetection.ts
- * │   ├── useDisplayModes.ts
- * │   ├── useProgressTracking.ts
- * │   ├── useExportFunctionality.ts
- * │   ├── useSetupWizard.ts
- * │   └── useAnimations.ts
- * ├── components/
- * │   ├── modules/
- * │   │   ├── ExcelProcessor/
- * │   │   ├── TranslationWorkflow/
- * │   │   ├── CodexPanel/
- * │   │   ├── CharacterDetection/
- * │   │   ├── DisplayModes/
- * │   │   ├── DialogueBox/
- * │   │   ├── ProgressTracking/
- * │   │   ├── ExportFunctionality/
- * │   │   ├── SetupWizard/
- * │   │   └── Animations/
- * │   └── TranslationHelper.tsx (simplified main component)
- * 
- * This refactoring will transform the 1553-line monolithic component into
- * a modular, maintainable, and testable architecture while preserving
- * all existing functionality.
- */
+
 export default TranslationHelper; 

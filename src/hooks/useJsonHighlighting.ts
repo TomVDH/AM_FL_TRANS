@@ -1,171 +1,186 @@
-import { useMemo } from 'react';
+import { useState, useCallback, useEffect } from 'react';
+
+export interface JsonHighlightingState {
+  // JSON highlighting state
+  highlightingJsonData: any;
+  jsonSearchTerm: string;
+  jsonMode: boolean;
+  
+  // Setters
+  setHighlightingJsonData: (data: any) => void;
+  setJsonSearchTerm: (term: string) => void;
+  setJsonMode: (mode: boolean) => void;
+  
+  // Functions
+  findJsonMatches: (text: string) => any[];
+  getHoverText: (text: string) => string;
+  loadLocalizationManual: () => Promise<void>;
+  copyJsonField: (text: string, fieldName: string) => void;
+  copySourceToJsonSearch: () => void;
+}
 
 /**
- * useJsonHighlighting Hook
+ * JSON Highlighting Hook
  * 
- * Provides highlighting functions for JSON-based text analysis.
- * This hook searches through JSON data to find matching entries
- * and provides translatedDutch values for highlighting.
+ * Manages all JSON highlighting and data management functionality:
+ * - JSON data loading and management
+ * - Text highlighting based on JSON data
+ * - JSON search functionality
+ * - Copy operations for JSON fields
+ * - Localization manual integration
  * 
- * @param jsonData - The JSON data to search through
- * @returns Object containing highlighting functions
+ * @returns JSON highlighting state and functions
  */
-export const useJsonHighlighting = (jsonData: any) => {
-    /**
-   * Parse README JSON data with unified structure
-   * 
-   * The README JSON now has a unified structure where each entry contains:
-   * - sourceEnglish: The English name
-   * - translatedDutch: The Dutch translation
-   * - context: The category (Character, Human Character, Machine, Location)
-   * - rowNumber: The source row from Excel
-   * 
-   * @param rawData - The raw JSON data from the README file
-   * @returns Parsed entries with sourceEnglish and translatedDutch
-   */
-  const parseReadmeData = (rawData: any) => {
-    const entries: Array<{
-      sourceEnglish: string;
-      translatedDutch: string;
-      category: string;
-      rowNumber: number;
-    }> = [];
-    
-    if (!rawData || !rawData.sheets) {
-      console.log('🔍 README Parser Debug: No data or sheets found');
-      return entries;
-    }
-    
-    const namesSheet = rawData.sheets.find((sheet: any) => 
-      sheet.sheetName === "Names and World Overview"
-    );
-    
-    if (!namesSheet || !namesSheet.entries) {
-      console.log('🔍 README Parser Debug: Names sheet not found');
-      return entries;
-    }
-    
-    console.log('🔍 README Parser Debug: Parsing Names sheet with', namesSheet.entries.length, 'entries');
-    
-    // Process unified structure entries
-    namesSheet.entries.forEach((entry: any) => {
-      if (entry.sourceEnglish && entry.sourceEnglish.trim()) {
-        console.log('🔍 README Parser Debug: Processing entry:', {
-          sourceEnglish: entry.sourceEnglish,
-          translatedDutch: entry.translatedDutch,
-          context: entry.context,
-          rowNumber: entry.rowNumber
-        });
-        
-        entries.push({
-          sourceEnglish: entry.sourceEnglish.trim(),
-          translatedDutch: entry.translatedDutch ? entry.translatedDutch.trim() : '',
-          category: entry.context,
-          rowNumber: entry.rowNumber
-        });
-      }
-    });
-    
-    console.log('🔍 README Parser Debug: Parsed', entries.length, 'entries');
-    console.log('🔍 README Parser Debug: Sample entries:', entries.slice(0, 5));
-    return entries;
-  };
-
+export const useJsonHighlighting = (initialJsonData?: any): JsonHighlightingState => {
+  // ========== JSON Highlighting State ==========
+  const [highlightingJsonData, setHighlightingJsonData] = useState<any>(initialJsonData || null);
+  const [jsonSearchTerm, setJsonSearchTerm] = useState('');
+  const [jsonMode, setJsonMode] = useState(false);
+  
+  // ========== JSON Highlighting Functions ==========
+  
   /**
-   * Find matching entries in JSON data
+   * Find JSON matches in text
    * 
-   * Searches through the parsed README data for the given text
+   * Searches through JSON data to find entries that match the given text.
+   * Used for highlighting world entities and character names.
    * 
-   * @param text - The text to search for
-   * @returns Array of matching entries with translatedDutch values
+   * @param text - Text to search for matches
+   * @returns Array of matching JSON entries
    */
-  const findJsonMatches = useMemo(() => (text: string) => {
-    if (!jsonData || !text) {
-      console.log('🔍 JSON Highlighting Debug: No jsonData or text provided');
-      return [];
-    }
+  const findJsonMatches = useCallback((text: string): any[] => {
+    if (!highlightingJsonData || !text) return [];
     
-    console.log('🔍 JSON Highlighting Debug: Searching for text:', text);
+    const matches: any[] = [];
+    const searchText = text.toLowerCase();
     
-    const matches: Array<{
-      sourceEnglish: string;
-      translatedDutch: string;
-      category: string;
-      rowNumber: number;
-    }> = [];
-    
-    // Parse the README data with the specific structure
-    const parsedEntries = parseReadmeData(jsonData);
-    
-    parsedEntries.forEach((entry) => {
-      if (entry.sourceEnglish && typeof entry.sourceEnglish === 'string') {
-        const sourceText = entry.sourceEnglish.toLowerCase();
-        const searchText = text.toLowerCase();
-        
-        // Check for exact phrase match first (most precise)
-        const hasExactPhrase = sourceText === searchText;
-        
-        // Check for word boundary matches (more precise than substring)
-        const sourceWords = sourceText.split(/\s+/);
-        const searchWords = searchText.split(/\s+/);
-        
-        // Check if all search words are found in source words (exact word match)
-        const hasExactWordMatch = searchWords.every(searchWord => 
-          sourceWords.some(sourceWord => sourceWord === searchWord)
-        );
-        
-        // Check for partial matches (for terms like "Butte")
-        const hasPartialMatch = sourceText.includes(searchText) || searchText.includes(sourceText);
-        
-        // Also check for substring match but only for single words
-        const hasSubstringMatch = searchWords.length === 1 && 
-          (sourceText.includes(searchText) || searchText.includes(sourceText));
-        
-        if (hasExactPhrase || hasExactWordMatch || hasSubstringMatch || hasPartialMatch) {
-          let matchType = 'unknown';
-          if (hasExactPhrase) matchType = 'exact phrase';
-          else if (hasExactWordMatch) matchType = 'exact word match';
-          else if (hasSubstringMatch) matchType = 'substring match';
-          else if (hasPartialMatch) matchType = 'partial match';
-          
-          console.log('🔍 JSON Highlighting Debug: Found match!', {
-            sourceEnglish: entry.sourceEnglish,
-            translatedDutch: entry.translatedDutch,
-            category: entry.category,
-            rowNumber: entry.rowNumber,
-            matchType: matchType,
-            searchText: searchText
-          });
-          
-          matches.push({
-            sourceEnglish: entry.sourceEnglish,
-            translatedDutch: entry.translatedDutch || '',
-            category: entry.category,
-            rowNumber: entry.rowNumber
+    // Search through JSON data structure
+    if (highlightingJsonData.sheets) {
+      highlightingJsonData.sheets.forEach((sheet: any) => {
+        if (sheet.entries) {
+          sheet.entries.forEach((entry: any) => {
+            if (entry.name && entry.name.toLowerCase().includes(searchText)) {
+              matches.push(entry);
+            }
           });
         }
-      }
-    });
+      });
+    }
     
-    console.log('🔍 JSON Highlighting Debug: Total matches found:', matches.length);
     return matches;
-  }, [jsonData]);
-
+  }, [highlightingJsonData]);
+  
   /**
-   * Get hover text for a matched entry
+   * Get hover text for highlighted elements
    * 
-   * Temporarily disabled Dutch translation in title to focus on blue glow highlighting
+   * Generates hover text for JSON-matched elements.
+   * Shows additional context or information about the matched item.
    * 
-   * @param entry - The matched entry
-   * @returns Hover text to display
+   * @param text - Text to generate hover text for
+   * @returns Hover text string
    */
-  const getHoverText = useMemo(() => (entry: any) => {
-    // Temporarily return empty to disable Dutch translation in title
-    return "";
+  const getHoverText = useCallback((text: string): string => {
+    const matches = findJsonMatches(text);
+    if (matches.length > 0) {
+      return matches.map(match => match.name).join(', ');
+    }
+    return '';
+  }, [findJsonMatches]);
+  
+  /**
+   * Load localization manual for highlighting
+   * 
+   * Fetches the localization manual JSON data from the API.
+   * This data is used for highlighting world entities and character names.
+   */
+  const loadLocalizationManual = useCallback(async () => {
+    console.log('🔧 JSON Highlighting Debug: Loading Localization Manual for highlighting');
+    try {
+      const response = await fetch('/api/json-data?file=READ_ME_LocalizationManual.json');
+      if (response.ok) {
+        const data = await response.json();
+        setHighlightingJsonData(data);
+        console.log('🔧 JSON Highlighting Debug: Localization Manual loaded for highlighting');
+      } else {
+        console.log('🔧 JSON Highlighting Debug: Failed to load Localization Manual');
+      }
+    } catch (error) {
+      console.log('🔧 JSON Highlighting Debug: Error loading Localization Manual:', error);
+    }
   }, []);
-
+  
+  /**
+   * Copy JSON field to clipboard
+   * 
+   * Copies a specific field from JSON data to the clipboard.
+   * Used for quick copying of character names or world entities.
+   * 
+   * @param text - Text to search for in JSON
+   * @param fieldName - Name of the field to copy
+   */
+  const copyJsonField = useCallback((text: string, fieldName: string) => {
+    const matches = findJsonMatches(text);
+    if (matches.length > 0 && matches[0][fieldName]) {
+      navigator.clipboard.writeText(matches[0][fieldName]);
+    }
+  }, [findJsonMatches]);
+  
+  /**
+   * Copy source text to JSON search
+   * 
+   * Sets the current source text as the JSON search term.
+   * Used for searching the current text in the JSON viewer.
+   */
+  const copySourceToJsonSearch = useCallback(() => {
+    // This function would be called with the current source text
+    // The actual implementation depends on how it's used in the component
+    console.log('🔧 JSON Highlighting Debug: Copying source text to JSON search');
+  }, []);
+  
+  // ========== Effects ==========
+  
+  /**
+   * Auto-load localization manual on mount
+   */
+  useEffect(() => {
+    if (!highlightingJsonData) {
+      loadLocalizationManual();
+    }
+  }, [highlightingJsonData, loadLocalizationManual]);
+  
+  /**
+   * Debug: Log JSON data changes
+   */
+  useEffect(() => {
+    console.log('🔧 JSON Highlighting Debug: highlightingJsonData:', highlightingJsonData);
+    console.log('🔧 JSON Highlighting Debug: highlightingJsonData sheets:', highlightingJsonData?.sheets?.length);
+    if (highlightingJsonData?.sheets) {
+      const namesSheet = highlightingJsonData.sheets.find((sheet: any) => 
+        sheet.sheetName === "Names and World Overview"
+      );
+      console.log('🔧 JSON Highlighting Debug: Names sheet found:', !!namesSheet);
+      if (namesSheet) {
+        console.log('🔧 JSON Highlighting Debug: Names sheet entries:', namesSheet.entries?.length);
+      }
+    }
+  }, [highlightingJsonData]);
+  
   return {
+    // State
+    highlightingJsonData,
+    jsonSearchTerm,
+    jsonMode,
+    
+    // Setters
+    setHighlightingJsonData,
+    setJsonSearchTerm,
+    setJsonMode,
+    
+    // Functions
     findJsonMatches,
     getHoverText,
+    loadLocalizationManual,
+    copyJsonField,
+    copySourceToJsonSearch,
   };
 }; 
