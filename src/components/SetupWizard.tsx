@@ -36,7 +36,7 @@ interface SetupWizardProps {
   
   // Animation state
   gradientColors: string[];
-  isTranslating: boolean;
+  isTranslating?: boolean;
   showVersionHash: boolean;
   VERSION_HASH: string;
   
@@ -334,7 +334,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                   ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})`
                   : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
                 backgroundSize: '200% 200%',
-                animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 5s ease-in-out infinite'
+                animation: 'gradientShift 5s ease-in-out infinite'
               }}
             >
               {showVersionHash && (

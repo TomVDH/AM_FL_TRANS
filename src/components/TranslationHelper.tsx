@@ -126,7 +126,7 @@ const TranslationHelper: React.FC = () => {
   const [showCopied, setShowCopied] = useState(false);                 // Copy confirmation indicator
   const [inputMode, setInputMode] = useState<'excel' | 'manual'>('excel'); // Input mode selection
   const [gradientColors, setGradientColors] = useState<string[]>([]);  // Dynamic gradient colors
-  const [isTranslating, setIsTranslating] = useState(false);           // Translation in progress flag
+
   
   // ========== Display Mode State ==========
   // ✅ REFACTORED: Successfully extracted to useDisplayModes hook
@@ -146,10 +146,8 @@ const TranslationHelper: React.FC = () => {
   // ========== Navigation State ==========
   // FUTURE SPLIT: PROGRESS TRACKING MODULE
   // This state block should be extracted to useProgressTracking hook
-  // Components to create: ProgressControls, NavigationPanel, JumpToInput
-  // State management: showJumpInput, jumpValue, showVersionHash
-  const [showJumpInput, setShowJumpInput] = useState(false);           // Show jump-to navigation
-  const [jumpValue, setJumpValue] = useState('');                      // Jump input value
+  // Components to create: ProgressControls, NavigationPanel
+  // State management: showVersionHash
   const [showVersionHash, setShowVersionHash] = useState(false);       // Display version info
   
   // ========== JSON Mode State ==========
@@ -301,18 +299,7 @@ const TranslationHelper: React.FC = () => {
    * extractSpeakerName("SAY.Sign_TheMines_Dirty.1.Dirty Sign") // returns "Dirty Sign"
    * extractSpeakerName("SAY.NPC_Miner.2.Old Miner") // returns "Old Miner"
    */
-  const extractSpeakerName = (utterer: string): string => {
-    if (!utterer) return 'Speaker';
-    
-    // Pattern: "SAY.Sign_TheMines_Dirty.1.Dirty Sign" -> "Dirty Sign"
-    const parts = utterer.split('.');
-    if (parts.length >= 4) {
-      return parts[3]; // Return the last part after the last dot
-    }
-    
-    // Fallback: return the original utterer if pattern doesn't match
-    return utterer;
-  };
+
 
   // Function to insert character name in parentheses
   // FUTURE SPLIT: CHARACTER DETECTION MODULE
@@ -467,69 +454,16 @@ const TranslationHelper: React.FC = () => {
   // Dependencies: gradientColors state
   const generateGradientColors = (): string[] => {
     const colorPalettes = [
-      // Original palettes
-      ['#FF6B6B', '#4ECDC4', '#45B7D1'], // Coral to Teal
-      ['#9B59B6', '#3498DB', '#E74C3C'], // Purple to Blue to Red
-      ['#F39C12', '#E67E22', '#E74C3C'], // Orange gradient
-      ['#1ABC9C', '#3498DB', '#9B59B6'], // Teal to Blue to Purple
-      ['#E74C3C', '#F39C12', '#F1C40F'], // Red to Orange to Yellow
-      ['#2ECC71', '#27AE60', '#16A085'], // Green gradient
-      ['#3498DB', '#2980B9', '#8E44AD'], // Blue to Purple
-      ['#E67E22', '#D35400', '#C0392B'], // Orange to Red
-      
-      // New vibrant palettes
-      ['#FF006E', '#8338EC', '#3A86FF'], // Hot Pink to Blue
-      ['#06FFA5', '#FFBE0B', '#FB5607'], // Mint to Orange
-      ['#7209B7', '#560BAD', '#480CA8'], // Deep Purple Spectrum
-      ['#F72585', '#B5179E', '#7209B7'], // Magenta to Purple
-      ['#4361EE', '#4895EF', '#4CC9F0'], // Blue Gradient
-      ['#F94144', '#F3722C', '#F8961E'], // Warm Red Orange
-      ['#90BE6D', '#43AA8B', '#277DA1'], // Forest to Ocean
-      ['#003049', '#D62828', '#F77F00'], // Navy to Orange
-      
-      // Pastel palettes
-      ['#FFB5E8', '#FF9CEE', '#FFB5E8'], // Pink Pastel
-      ['#B5DEFF', '#CAB8FF', '#FFA3CF'], // Sky to Pink Pastel
-      ['#FCC8D1', '#FFC8A2', '#FFFAE3'], // Peach Cream
-      ['#D0F4DE', '#A9F1DF', '#BBEDD9'], // Mint Pastel
-      ['#C589E8', '#F0B7D8', '#FFCCE7'], // Lavender Pink
-      
-      // Neon palettes
-      ['#08F7FE', '#09FBD3', '#FE53BB'], // Cyan to Pink Neon
-      ['#F5D300', '#F201B1', '#6A00F5'], // Yellow to Purple Neon
-      ['#00FFFF', '#00FF00', '#FFFF00'], // Cyan Lime Yellow
-      ['#FF1744', '#FF6D00', '#FFD600'], // Red Orange Yellow Neon
-      ['#D500F9', '#651FFF', '#00E5FF'], // Purple to Cyan Neon
-      
-      // Earth tones
-      ['#8B4513', '#CD853F', '#DEB887'], // Brown to Tan
-      ['#556B2F', '#6B8E23', '#8FBC8F'], // Olive Green
-      ['#704214', '#A0522D', '#D2691E'], // Deep Brown to Chocolate
-      ['#2F4F4F', '#696969', '#778899'], // Dark Slate Gray
-      
-      // Monochromatic variations
-      ['#000428', '#004E92', '#007CC7'], // Deep Blue Mono
-      ['#0F0C29', '#302B63', '#24243E'], // Midnight Purple
-      ['#232526', '#414345', '#5C5C5C'], // Charcoal Gray
-      ['#1C1C1C', '#383838', '#545454'], // Black to Gray
-      
-      // Sunset/Sunrise palettes
-      ['#FF5E5B', '#FF8C42', '#FFD23F'], // Sunset Orange
-      ['#540D6E', '#EE4266', '#FFD23F'], // Purple to Yellow Sunset
-      ['#1A0033', '#7B2869', '#EFC3E6'], // Night to Dawn
-      ['#FF4E50', '#FC913A', '#F9D62E'], // Warm Sunset
-      
-      // Ocean palettes
-      ['#005F73', '#0A9396', '#94D2BD'], // Deep Ocean
-      ['#03045E', '#023E8A', '#0077B6'], // Navy Blues
-      ['#002855', '#0353A4', '#006DAA'], // Ocean Depths
-      ['#1E6091', '#168AAD', '#52B69A'], // Sea Foam
-      
-      // Metallic palettes
-      ['#B7B7A4', '#A5A58D', '#6B705C'], // Silver Tones
-      ['#FFD700', '#FFA500', '#FF8C00'], // Gold Gradient
-      ['#C0C0C0', '#808080', '#696969'], // Silver to Gray
-      ['#B87333', '#CD7F32', '#DAA520'], // Copper Bronze
+      ['#667eea', '#764ba2'], // Purple to Blue
+      ['#f093fb', '#f5576c'], // Pink to Red
+      ['#4facfe', '#00f2fe'], // Blue to Cyan
+      ['#43e97b', '#38f9d7'], // Green to Teal
+      ['#fa709a', '#fee140'], // Pink to Yellow
+      ['#a8edea', '#fed6e3'], // Mint to Pink
+      ['#ffecd2', '#fcb69f'], // Cream to Peach
+      ['#ff9a9e', '#fecfef'], // Pink to Light Pink
+      ['#a8caba', '#5d4e75'], // Mint to Purple
+      ['#d299c2', '#fef9d7'], // Pink to Cream
     ];
     return colorPalettes[Math.floor(Math.random() * colorPalettes.length)];
   };
@@ -666,8 +600,7 @@ const TranslationHelper: React.FC = () => {
     setTimeout(() => setShowCopied(false), 2000);
     
     // Trigger translation animation
-    setIsTranslating(true);
-    setTimeout(() => setIsTranslating(false), 800);
+
     
     if (currentIndex < sourceTexts.length - 1) {
       setIsAnimating(true);
@@ -750,7 +683,7 @@ const TranslationHelper: React.FC = () => {
         handleSourceInput={handleSourceInput}
         handleStart={handleStart}
         gradientColors={gradientColors}
-        isTranslating={isTranslating}
+
         showVersionHash={showVersionHash}
         VERSION_HASH={VERSION_HASH}
         darkMode={darkMode}
@@ -801,57 +734,8 @@ const TranslationHelper: React.FC = () => {
               Sheet: {selectedSheet}
             </p>
           )}
-          <p className="text-gray-600 dark:text-gray-400 text-lg relative inline-block">
-            <span 
-              className="cursor-pointer hover:text-gray-800 dark:hover:text-gray-200 transition-colors duration-200 relative"
-              onMouseEnter={() => setShowJumpInput(true)}
-              onMouseLeave={() => {
-                if (!document.activeElement?.classList.contains('jump-input')) {
-                  setShowJumpInput(false);
-                }
-              }}
-            >
-              {getCellLocation(currentIndex)}
-            </span>
-            {showJumpInput && (
-              <div 
-                className="absolute top-full left-0 mt-2 p-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded shadow-lg z-50"
-                onMouseEnter={() => setShowJumpInput(true)}
-                onMouseLeave={() => setShowJumpInput(false)}
-              >
-                <input
-                  type="number"
-                  value={jumpValue}
-                  onChange={(e) => setJumpValue(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter') {
-                      const newIndex = parseInt(jumpValue) - 1;
-                      if (newIndex >= 0 && newIndex < sourceTexts.length) {
-                        setCurrentIndex(newIndex);
-                        setCurrentTranslation(translations[newIndex] || '');
-                        setShowJumpInput(false);
-                        setJumpValue('');
-                      }
-                    } else if (e.key === 'Escape') {
-                      setShowJumpInput(false);
-                      setJumpValue('');
-                    }
-                  }}
-                  onBlur={() => {
-                    setTimeout(() => {
-                      setShowJumpInput(false);
-                      setJumpValue('');
-                    }, 200);
-                  }}
-                  placeholder="Go to..."
-                  className="jump-input px-2 py-1 w-24 text-sm border border-gray-300 dark:border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-gray-300 dark:bg-gray-700 dark:text-white"
-                  autoFocus
-                  min="1"
-                  max={sourceTexts.length}
-                />
-              </div>
-            )}
-            {' '}• Item {currentIndex + 1} of {sourceTexts.length}
+          <p className="text-gray-600 dark:text-gray-400 text-lg">
+            {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
           </p>
         </div>
 
@@ -920,7 +804,14 @@ const TranslationHelper: React.FC = () => {
                       background: '#000000'
                     }}
                   >
-                    <span className="text-shadow-pixel">{extractSpeakerName(utterers[currentIndex])}</span>
+                    <span className="text-shadow-pixel">
+                  {(() => {
+                    const utterer = utterers[currentIndex];
+                    if (!utterer) return 'Speaker';
+                    const parts = utterer.split('.');
+                    return parts.length >= 4 ? parts[3] : utterer;
+                  })()}
+                </span>
                   </div>
                   
                   {/* Main dialogue area with enhanced styling */}
@@ -1376,7 +1267,7 @@ const TranslationHelper: React.FC = () => {
                   ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})` 
                   : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
                 backgroundSize: '200% 200%',
-                animation: isTranslating ? 'gradientShiftFast 1.5s ease-in-out infinite' : 'gradientShift 2s ease-in-out infinite'
+                animation: 'gradientShift 2s ease-in-out infinite'
               }}
             >
               {showVersionHash && (
