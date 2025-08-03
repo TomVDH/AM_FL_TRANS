@@ -1,0 +1,305 @@
+{
+  "fileName": "READ_ME_Localization",
+  "processedAt": "2025-08-03T15:55:23.056Z",
+  "sheets": [
+    {
+      "sheetName": "Names and World Overview",
+      "entries": [
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Trusty Ass",
+          "translatedDutch": "Biechtezel"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Old Ass",
+          "translatedDutch": "Roste Rakker, Oude Smok"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Nice Ass",
+          "translatedDutch": "Zaligezel, Schoonbeest"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Big Ass",
+          "translatedDutch": "Grote Moker, Logzak"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Thirsty Ass",
+          "translatedDutch": "Dorstklak, Zuipkeutel"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Smart Ass",
+          "translatedDutch": "Slimmerik, Wijsnezel"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Slow Ass",
+          "translatedDutch": "Traage Gast, Sloefezel"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Sturdy Ass",
+          "translatedDutch": "Baksteen, Betonbeest"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Bad Ass",
+          "translatedDutch": "Strafbeest, Felle Gast"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Foal (named by audience)",
+          "translatedDutch": "-tje"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Sad Ass",
+          "translatedDutch": "Bleitsmoel, Zieligezel"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Hard Ass",
+          "translatedDutch": "Bokvast, Koppige Klak"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Kick Ass",
+          "translatedDutch": "Stampgast, Trapmuil"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Sick Ass",
+          "translatedDutch": "Pekelneus, Snotezel"
+        },
+        {
+          "rowNumber": 4,
+          "context": "Character",
+          "key": "Character Name",
+          "sourceEnglish": "Lazy Ass",
+          "translatedDutch": "Chillpatat, Luilam, Tamzak"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Cole Butte / Cole-Machine",
+          "translatedDutch": "Cédric Vanscheetvelde"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Hugh G. Butte",
+          "translatedDutch": "Herman K. Vanscheetvelde"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Sandy Butte",
+          "translatedDutch": "Imelda Vanscheetvelde"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Miner Jenny",
+          "translatedDutch": "Mijnwerker Jenny"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Child Joey",
+          "translatedDutch": "Klein Luukske Vermeulen"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Grandma Kulan",
+          "translatedDutch": "Groetmoe Vermeulen"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Mme. Derriere",
+          "translatedDutch": "Mevr. Derrière"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Asshandler Melvin",
+          "translatedDutch": "Zakkenzeuler Zeno"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Asshandler Wedgie",
+          "translatedDutch": "Zakkenzeulster Zita"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Ringmaster Rico",
+          "translatedDutch": "Baptiste, de Circusdirecteur"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Zookeeper Rose",
+          "translatedDutch": "Dierenverzorger Dina"
+        },
+        {
+          "rowNumber": 38,
+          "context": "Human Character",
+          "key": "Character Name",
+          "sourceEnglish": "Radio Host Marcos",
+          "translatedDutch": "DJ Günther"
+        },
+        {
+          "rowNumber": 67,
+          "context": "Machine",
+          "key": "English",
+          "sourceEnglish": "Prophet-Machine (M)",
+          "translatedDutch": "Profetische Machine"
+        },
+        {
+          "rowNumber": 67,
+          "context": "Machine",
+          "key": "English",
+          "sourceEnglish": "Prophet-Machine (F)",
+          "translatedDutch": "Profetische Machine"
+        },
+        {
+          "rowNumber": 67,
+          "context": "Machine",
+          "key": "English",
+          "sourceEnglish": "Tractor-Machine",
+          "translatedDutch": "Traktor Machine"
+        },
+        {
+          "rowNumber": 67,
+          "context": "Machine",
+          "key": "English",
+          "sourceEnglish": "Death-Machine",
+          "translatedDutch": "Machine des Doods"
+        },
+        {
+          "rowNumber": 67,
+          "context": "Machine",
+          "key": "English",
+          "sourceEnglish": "Tank-Machine",
+          "translatedDutch": "Tank Machine"
+        },
+        {
+          "rowNumber": 67,
+          "context": "Machine",
+          "key": "English",
+          "sourceEnglish": "Flying-Machine",
+          "translatedDutch": "Vlieg Machine"
+        },
+        {
+          "rowNumber": 67,
+          "context": "Machine",
+          "key": "English",
+          "sourceEnglish": "Truck-Machine",
+          "translatedDutch": "Camion Machine"
+        },
+        {
+          "rowNumber": 67,
+          "context": "Machine",
+          "key": "English",
+          "sourceEnglish": "Car-Machine",
+          "translatedDutch": "Auto Machine"
+        },
+        {
+          "rowNumber": 116,
+          "context": "Location",
+          "key": "Place name/Core Concepts",
+          "sourceEnglish": "Fannyside",
+          "translatedDutch": "Muilegem"
+        },
+        {
+          "rowNumber": 116,
+          "context": "Location",
+          "key": "Place name/Core Concepts",
+          "sourceEnglish": "Fannyside Farm",
+          "translatedDutch": "De Boerderij van Muilegem"
+        },
+        {
+          "rowNumber": 116,
+          "context": "Location",
+          "key": "Place name/Core Concepts",
+          "sourceEnglish": "Bumpkin Village",
+          "translatedDutch": "Klotegem"
+        },
+        {
+          "rowNumber": 116,
+          "context": "Location",
+          "key": "Place name/Core Concepts",
+          "sourceEnglish": "Mecha City",
+          "translatedDutch": "Mechalen"
+        },
+        {
+          "rowNumber": 116,
+          "context": "Location",
+          "key": "Place name/Core Concepts",
+          "sourceEnglish": "Song of Ascension",
+          "translatedDutch": "ezelenhemelvaartszangderzielen"
+        },
+        {
+          "rowNumber": 116,
+          "context": "Location",
+          "key": "Place name/Core Concepts",
+          "sourceEnglish": "Reassignment",
+          "translatedDutch": "Heraanstelling"
+        },
+        {
+          "rowNumber": 116,
+          "context": "Location",
+          "key": "Place name/Core Concepts",
+          "sourceEnglish": "Astral Plane",
+          "translatedDutch": "het Astrale Hiernamaals"
+        }
+      ]
+    }
+  ]
+}

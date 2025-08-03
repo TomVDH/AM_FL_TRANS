@@ -145,6 +145,8 @@ function processReadmeFile(filePath) {
       sheets: []
     };
     
+
+    
     // Only process the "Names and World Overview" sheet
     const targetSheetName = "Names and World Overview";
     const worksheet = workbook.Sheets[targetSheetName];
@@ -161,12 +163,20 @@ function processReadmeFile(filePath) {
       defval: ''  // Default value for empty cells
     });
     
+
+    
     const sheetData = {
       sheetName: targetSheetName,
       entries: []
     };
     
     // Extract data from specific rows (with safety checks)
+    // Get the A column keys for each row
+    const characterKeys = jsonData[3] ? (jsonData[3][0] || '') : '';
+    const humanKeys = jsonData[37] ? (jsonData[37][0] || '') : '';
+    const machineKeys = jsonData[66] ? (jsonData[66][0] || '') : '';
+    const locationKeys = jsonData[115] ? (jsonData[115][0] || '') : '';
+    
     const characterEnglish = jsonData[3] ? extractRowValues(jsonData[3]) : []; // Row 4
     const characterDutch = jsonData[15] ? extractRowValues(jsonData[15]) : []; // Row 16
     const humanEnglish = jsonData[37] ? extractRowValues(jsonData[37]) : []; // Row 38
@@ -183,6 +193,7 @@ function processReadmeFile(filePath) {
         sheetData.entries.push({
           rowNumber: 4,
           context: "Character",
+          key: characterKeys, // A column key/label
           sourceEnglish: englishName,
           translatedDutch: dutchName
         });
@@ -196,6 +207,7 @@ function processReadmeFile(filePath) {
         sheetData.entries.push({
           rowNumber: 38,
           context: "Human Character",
+          key: humanKeys, // A column key/label
           sourceEnglish: englishName,
           translatedDutch: dutchName
         });
@@ -209,6 +221,7 @@ function processReadmeFile(filePath) {
         sheetData.entries.push({
           rowNumber: 67,
           context: "Machine",
+          key: machineKeys, // A column key/label
           sourceEnglish: englishName,
           translatedDutch: dutchName
         });
@@ -222,6 +235,7 @@ function processReadmeFile(filePath) {
         sheetData.entries.push({
           rowNumber: 116,
           context: "Location",
+          key: locationKeys, // A column key/label
           sourceEnglish: englishName,
           translatedDutch: dutchName
         });
@@ -324,7 +338,7 @@ function main() {
     const fileName = path.basename(filePath, '.xlsx');
     
     // Use special processing for README file
-    if (fileName.includes('README')) {
+    if (fileName.includes('README') || fileName.includes('READ_ME')) {
       const result = processReadmeFile(filePath);
       results.push(result);
       if (!result.error) {

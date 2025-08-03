@@ -1,10 +1,10 @@
 {
-  "processedAt": "2025-08-02T22:33:14.714Z",
+  "processedAt": "2025-08-03T15:55:23.097Z",
   "totalFiles": 14,
   "successfulFiles": 14,
   "failedFiles": 0,
   "totalSheets": 124,
-  "totalEntries": 4538,
+  "totalEntries": 4573,
   "files": [
     {
       "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy",
@@ -91,10 +91,10 @@
       "error": null
     },
     {
-      "fileName": "READ_ME_LocalizationManual",
+      "fileName": "READ_ME_Localization",
       "success": true,
       "sheets": 1,
-      "entries": 7,
+      "entries": 42,
       "error": null
     },
     {

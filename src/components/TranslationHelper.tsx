@@ -8,11 +8,15 @@ import { useReferenceColumn as useReferenceColumnHook } from '../hooks/useRefere
 import { useJsonHighlighting } from '../hooks/useJsonHighlighting';
 import { useCharacterDetection } from '../hooks/useCharacterDetection';
 import { useUIComponents } from '../hooks/useUIComponents';
+import { useGradientBarAnimation } from '../hooks/useGradientBarAnimation';
+import { useFooterGradientAnimation } from '../hooks/useFooterGradientAnimation';
+import { useInterfaceAnimations } from '../hooks/useInterfaceAnimations';
 import { useExcelProcessing } from '../hooks/useExcelProcessing';
 import { useTranslationState } from '../hooks/useTranslationState';
 import SetupWizard from './SetupWizard';
 import CodexPanel from './CodexPanel';
 import TextHighlighter from './TextHighlighter';
+import VideoButton from './VideoButton';
 
 
 const TranslationHelper: React.FC = () => {
@@ -173,6 +177,9 @@ const TranslationHelper: React.FC = () => {
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
+  const { progressBarRef, progressFillRef, animateProgress } = useGradientBarAnimation();
+  const { gradientBarRef } = useFooterGradientAnimation();
+  const { cardRef, buttonsRef, dialogueBoxRef, animateCardTransition, animateButtonHover } = useInterfaceAnimations();
 
   useEffect(() => {
     const loadLocalizationManual = async () => {
@@ -195,6 +202,18 @@ const TranslationHelper: React.FC = () => {
 
   
   const progress = sourceTexts.length > 0 ? ((currentIndex) / sourceTexts.length) * 100 : 0;
+
+  // Animate progress changes
+  useEffect(() => {
+    animateProgress(progress);
+  }, [progress, animateProgress]);
+
+  // Animate card transitions when current index changes
+  useEffect(() => {
+    if (isStarted && currentIndex > 0) {
+      animateCardTransition();
+    }
+  }, [currentIndex, isStarted, animateCardTransition]);
 
 
   if (!isStarted) {
@@ -321,8 +340,12 @@ const TranslationHelper: React.FC = () => {
         </div>
 
         {/* Progress Bar */}
-        <div className="relative h-3 bg-gray-200 dark:bg-gray-700 border border-black dark:border-gray-600 overflow-hidden shadow-inner">
+        <div 
+          ref={progressBarRef}
+          className="relative h-3 bg-gray-200 dark:bg-gray-700 border border-black dark:border-gray-600 overflow-hidden shadow-inner cursor-pointer transition-all duration-300"
+        >
           <div
+            ref={progressFillRef}
             className="absolute h-full transition-all duration-500 ease-out diagonal-stripes"
             style={{ 
               width: `${progress}%`,
@@ -347,6 +370,7 @@ const TranslationHelper: React.FC = () => {
 
         {/* Translation Card */}
         <div 
+          ref={cardRef}
           className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-8 space-y-8 shadow-md transition-all duration-300 ${
             isAnimating ? 'opacity-0 transform -translate-x-4' : 'opacity-100 transform translate-x-0'
           }`}
@@ -363,6 +387,7 @@ const TranslationHelper: React.FC = () => {
                 <div className="flex gap-8 justify-center">
                   {/* Main Dialogue Box */}
                   <div 
+                    ref={dialogueBoxRef}
                     className="gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-black dark:border-gray-400"
                     style={{ 
                       width: '480px',
@@ -812,9 +837,11 @@ const TranslationHelper: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex gap-3">
+          <div ref={buttonsRef} className="flex gap-3">
             <button
               onClick={handlePrevious}
+              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
+              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
               disabled={currentIndex === 0}
               className="px-4 py-2 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
               style={{ 
@@ -825,6 +852,8 @@ const TranslationHelper: React.FC = () => {
             </button>
             <button
               onClick={handleSubmit}
+              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
+              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
               className="flex-1 px-4 py-2 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
               style={{ 
                 borderRadius: '3px'
@@ -1128,8 +1157,13 @@ const TranslationHelper: React.FC = () => {
         />
         */}
 
+        {/* Video Button */}
+        <div className="mt-20 mb-6 text-center">
+          <VideoButton className="mb-4" />
+        </div>
+
         {/* Footer */}
-        <div className="mt-20 mb-8 text-center">
+        <div className="mb-8 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-6">
             Onnozelaer Marketing Works © 2025 - made with Generative AI
           </p>
@@ -1137,6 +1171,7 @@ const TranslationHelper: React.FC = () => {
           {/* Gradient Accent Block (Halved) */}
           <div className="flex justify-center items-center">
             <div 
+              ref={gradientBarRef}
               className="shadow-lg relative cursor-pointer"
               onMouseEnter={() => setShowVersionHash(true)}
               onMouseLeave={() => setShowVersionHash(false)}
@@ -1149,7 +1184,7 @@ const TranslationHelper: React.FC = () => {
                   ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})` 
                   : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
                 backgroundSize: '200% 200%',
-                animation: 'gradientShift 2s ease-in-out infinite'
+                backgroundPosition: '0% 0%'
               }}
             >
               {showVersionHash && (

@@ -10,12 +10,14 @@
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "excel-to-json": "node scripts/excel-to-json.js",
+    "test-readme": "node scripts/test-readme-processing.js",
     "clean": "rm -rf .next node_modules/.cache",
     "clean-build": "npm run clean && npm run build",
     "fresh-start": "rm -rf .next node_modules package-lock.json && npm install && npm run dev",
     "build-and-launch": "npm run clean && npm run build && npm run start"
   },
   "dependencies": {
+    "gsap": "^3.13.0",
     "next": "^15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

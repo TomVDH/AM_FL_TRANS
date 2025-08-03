@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useRef } from 'react';
+import VideoButton from './VideoButton';
 
 interface SetupWizardProps {
   // Input mode state
@@ -349,8 +350,13 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           </div>
         </div>
 
+        {/* Video Button */}
+        <div className="mt-20 mb-6 text-center">
+          <VideoButton className="mb-4" />
+        </div>
+
         {/* Footer */}
-        <div className="mt-20 mb-8 text-center">
+        <div className="mb-8 text-center">
           <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-6">
             Onnozelaer Marketing Works © 2025 - made with Generative AI
           </p>
