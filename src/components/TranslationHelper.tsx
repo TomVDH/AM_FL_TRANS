@@ -487,6 +487,7 @@ const TranslationHelper: React.FC = () => {
                     <TextHighlighter
                       text={sourceTexts[currentIndex]}
                       jsonData={highlightingJsonData}
+                      xlsxData={xlsxData}
                       highlightMode={highlightMode}
                       eyeMode={eyeMode}
                       currentTranslation={currentTranslation}
@@ -582,6 +583,7 @@ const TranslationHelper: React.FC = () => {
                       <TextHighlighter
                         text={sourceTexts[currentIndex]}
                         jsonData={highlightingJsonData}
+                        xlsxData={xlsxData}
                         highlightMode={highlightMode}
                         eyeMode={false}
                         currentTranslation=""
@@ -658,6 +660,7 @@ const TranslationHelper: React.FC = () => {
                     <TextHighlighter
                       text={sourceTexts[currentIndex]}
                       jsonData={highlightingJsonData}
+                      xlsxData={xlsxData}
                       highlightMode={highlightMode}
                       eyeMode={eyeMode}
                       currentTranslation={currentTranslation}
@@ -705,6 +708,7 @@ const TranslationHelper: React.FC = () => {
                       <TextHighlighter
                         text={sourceTexts[currentIndex]}
                         jsonData={highlightingJsonData}
+                        xlsxData={xlsxData}
                         highlightMode={highlightMode}
                         eyeMode={false}
                         currentTranslation=""
@@ -1250,8 +1254,27 @@ const TranslationHelper: React.FC = () => {
                     if (matches.length > 0 || charMatches.length > 0) {
                       return (
                         <>
+                          {/* Show highlighted text with suggestions */}
+                          <div className="mb-4 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded" style={{ borderRadius: '3px' }}>
+                            <div className="text-sm font-semibold mb-2 text-gray-700 dark:text-gray-300">Current Text with Highlights:</div>
+                            <TextHighlighter
+                              text={sourceTexts[currentIndex]}
+                              jsonData={highlightingJsonData}
+                              xlsxData={xlsxData}
+                              highlightMode={true}
+                              eyeMode={false}
+                              currentTranslation=""
+                              onCharacterClick={insertCharacterName}
+                              onSuggestionClick={insertTranslatedSuggestion}
+                              onCharacterNameClick={handleCharacterNameClick}
+                              className=""
+                              showSuggestions={true}
+                            />
+                          </div>
+                          
+                          {/* Historical matches */}
                           {matches.map((match, idx) => (
-                            <div key={`xlsx-${idx}`} className="mb-3 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded">
+                            <div key={`xlsx-${idx}`} className="mb-3 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded" style={{ borderRadius: '3px' }}>
                               <div className="text-sm">
                                 <span className="font-semibold">Sheet:</span> {match.sheetName || 'Unknown'}
                               </div>
@@ -1265,7 +1288,20 @@ const TranslationHelper: React.FC = () => {
                                 <span className="font-semibold">Context:</span> {match.context}
                               </div>
                               <div className="text-sm mt-1">
-                                <span className="font-semibold">English:</span> {match.sourceEnglish}
+                                <span className="font-semibold">English:</span> 
+                                <TextHighlighter
+                                  text={match.sourceEnglish}
+                                  jsonData={highlightingJsonData}
+                                  xlsxData={xlsxData}
+                                  highlightMode={true}
+                                  eyeMode={false}
+                                  currentTranslation=""
+                                  onCharacterClick={insertCharacterName}
+                                  onSuggestionClick={insertTranslatedSuggestion}
+                                  onCharacterNameClick={handleCharacterNameClick}
+                                  className="inline"
+                                  showSuggestions={false}
+                                />
                               </div>
                               <div className="text-sm mt-1">
                                 <span className="font-semibold">Dutch:</span> {match.translatedDutch || '(no translation)'}
@@ -1273,7 +1309,7 @@ const TranslationHelper: React.FC = () => {
                             </div>
                           ))}
                           {charMatches.map((char, idx) => (
-                            <div key={`char-${idx}`} className="mb-3 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-600 rounded">
+                            <div key={`char-${idx}`} className="mb-3 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-600 rounded" style={{ borderRadius: '3px' }}>
                               <div className="text-sm">
                                 <span className="font-semibold text-green-800 dark:text-green-300">Character:</span> {char.name}
                               </div>
