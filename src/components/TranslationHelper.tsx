@@ -1,9 +1,9 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import * as XLSX from 'xlsx';
 import { useDisplayModes } from '../hooks/useDisplayModes';
-import { useJsonMode } from '../hooks/useJsonMode';
+import { useXlsxMode } from '../hooks/useXlsxMode';
 import { useReferenceColumn as useReferenceColumnHook } from '../hooks/useReferenceColumn';
 import { useJsonHighlighting } from '../hooks/useJsonHighlighting';
 import { useCharacterDetection } from '../hooks/useCharacterDetection';
@@ -17,6 +17,8 @@ import SetupWizard from './SetupWizard';
 import CodexPanel from './CodexPanel';
 import TextHighlighter from './TextHighlighter';
 import VideoButton from './VideoButton';
+import CodexButton from './CodexButton';
+import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
 
 
 const TranslationHelper: React.FC = () => {
@@ -117,22 +119,24 @@ const TranslationHelper: React.FC = () => {
   } = useDisplayModes();
   
   const {
-    jsonMode,
-    selectedJsonFile,
-    selectedJsonSheet,
-    jsonSearchTerm,
-    jsonData,
-    availableJsonFiles,
+    xlsxMode,
+    selectedXlsxFile,
+    selectedXlsxSheet,
+    xlsxSearchTerm,
+    xlsxData,
+    availableXlsxFiles,
     globalSearch,
-    setSelectedJsonSheet,
-    setJsonSearchTerm,
+    isLoadingXlsx,
+    setSelectedXlsxSheet,
+    setXlsxSearchTerm,
     setGlobalSearch,
-    loadJsonData,
-    toggleJsonMode,
-    clearJsonMode,
+    loadXlsxData,
+    toggleXlsxMode,
+    clearXlsxMode,
     getFilteredEntries,
     getAvailableSheets,
-  } = useJsonMode();
+    findXlsxMatches,
+  } = useXlsxMode();
 
   const {
     detectedCharacters,
@@ -148,23 +152,23 @@ const TranslationHelper: React.FC = () => {
     insertCharacterNameHook(characterName, currentTranslation, setCurrentTranslation, textareaRef);
   };
 
-  // Wrapper function to copy source text to JSON search
-  const handleCopySourceToJsonSearch = () => {
+  // Wrapper function to copy source text to XLSX search
+  const handleCopySourceToXlsxSearch = () => {
     const sourceText = sourceTexts[currentIndex];
     if (sourceText) {
-      // Enable JSON mode if not already enabled
-      if (!jsonMode) {
-        toggleJsonMode();
+      // Enable XLSX mode if not already enabled
+      if (!xlsxMode) {
+        toggleXlsxMode();
       }
       
-      // Load JSON data if not already loaded
-      if (!jsonData && availableJsonFiles.length > 0) {
-        loadJsonData(availableJsonFiles[0]);
+      // Load XLSX data if not already loaded
+      if (!xlsxData && availableXlsxFiles.length > 0) {
+        loadXlsxData(availableXlsxFiles[0].fileName);
       }
       
       // Set the search term
-      setJsonSearchTerm(sourceText);
-      console.log('Set JSON search term to:', sourceText);
+      setXlsxSearchTerm(sourceText);
+      console.log('Set XLSX search term to:', sourceText);
     }
   };
   
@@ -174,12 +178,47 @@ const TranslationHelper: React.FC = () => {
   const [codexData, setCodexData] = useState<any>(null);
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
   const [isLoadingCodex, setIsLoadingCodex] = useState(false);
+  const [xlsxViewerTab, setXlsxViewerTab] = useState<'browse' | 'context'>('browse');
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
   const { progressBarRef, progressFillRef, animateProgress } = useGradientBarAnimation();
   const { gradientBarRef } = useFooterGradientAnimation();
   const { cardRef, buttonsRef, dialogueBoxRef, animateCardTransition, animateButtonHover } = useInterfaceAnimations();
+  const { characterData, findCharacterMatches } = useCharacterHighlighting();
+
+  // Create wrapper function for XLSX matches that returns compatible format
+  const findXlsxMatchesWrapper = useCallback((text: string) => {
+    const matches = findXlsxMatches(text);
+    return matches.map(match => ({
+      sourceEnglish: match.sourceEnglish,
+      translatedDutch: match.translatedDutch,
+      category: match.sheetName || 'Unknown Sheet',
+      sheetName: match.sheetName,
+      rowNumber: match.row,
+      utterer: match.utterer,
+      context: match.context
+    }));
+  }, [findXlsxMatches]);
+
+  // Handle character name click for scrolling to context search
+  const handleCharacterNameClick = (characterName: string) => {
+    // Enable XLSX mode if not already enabled
+    if (!xlsxMode) {
+      toggleXlsxMode();
+    }
+    
+    // Switch to context search tab
+    setXlsxViewerTab('context');
+    
+    // Scroll to the XLSX viewer section after a brief delay
+    setTimeout(() => {
+      const xlsxViewer = document.querySelector('.xlsx-viewer-section');
+      if (xlsxViewer) {
+        xlsxViewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
 
   useEffect(() => {
     const loadLocalizationManual = async () => {
@@ -241,7 +280,6 @@ const TranslationHelper: React.FC = () => {
         handleSourceInput={handleSourceInput}
         handleStart={handleStart}
         gradientColors={gradientColors}
-
         showVersionHash={showVersionHash}
         VERSION_HASH={VERSION_HASH}
         darkMode={darkMode}
@@ -283,8 +321,8 @@ const TranslationHelper: React.FC = () => {
       </button>
 
 
-      <div className="max-w-4xl mx-auto space-y-8">
-        {/* Header */}
+      <div className="max-w-7xl mx-auto">
+        {/* Header - Centered above grid */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-black mb-3 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
           {selectedSheet && (
@@ -339,10 +377,10 @@ const TranslationHelper: React.FC = () => {
           </div>
         </div>
 
-        {/* Progress Bar */}
+        {/* Progress Bar - Centered above grid */}
         <div 
           ref={progressBarRef}
-          className="relative h-3 bg-gray-200 dark:bg-gray-700 border border-black dark:border-gray-600 overflow-hidden shadow-inner cursor-pointer transition-all duration-300"
+          className="relative h-3 bg-gray-200 dark:bg-gray-700 border border-black dark:border-gray-600 overflow-hidden shadow-inner cursor-pointer transition-all duration-300 mb-8"
         >
           <div
             ref={progressFillRef}
@@ -368,13 +406,19 @@ const TranslationHelper: React.FC = () => {
           />
         </div>
 
-        {/* Translation Card */}
-        <div 
-          ref={cardRef}
-          className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-8 space-y-8 shadow-md transition-all duration-300 ${
-            isAnimating ? 'opacity-0 transform -translate-x-4' : 'opacity-100 transform translate-x-0'
-          }`}
-        >
+        {/* Main 2-Column Grid Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          {/* Left Column - Translation Card + JSON Settings */}
+          <div className="space-y-8">
+
+            {/* Translation Card */}
+            <div 
+              ref={cardRef}
+              className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-8 space-y-8 shadow-md transition-all duration-300 ${
+                isAnimating ? 'opacity-0 transform -translate-x-4' : 'opacity-100 transform translate-x-0'
+              }`}
+              style={{ borderRadius: '3px' }}
+            >
           <div className="space-y-6 text-center">
             {utterers.length > 0 && utterers[currentIndex] && (
               <div className="mb-4">
@@ -448,6 +492,7 @@ const TranslationHelper: React.FC = () => {
                       currentTranslation={currentTranslation}
                       onCharacterClick={insertCharacterName}
                       onSuggestionClick={insertTranslatedSuggestion}
+                      onCharacterNameClick={handleCharacterNameClick}
                       className="dialogue-content no-suggestions"
                       style={{
                         textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
@@ -467,12 +512,12 @@ const TranslationHelper: React.FC = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                         </svg>
                       </button>
-                      {/* JSON button - only show when JSON mode is active */}
-                      {jsonMode && (
+                      {/* XLSX button - only show when XLSX mode is active */}
+                      {xlsxMode && (
                         <button
-                          onClick={copySourceToJsonSearch}
+                          onClick={handleCopySourceToXlsxSearch}
                           className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
-                          title="Search this text in JSON viewer"
+                          title="Search this text in XLSX viewer"
                         >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -542,6 +587,7 @@ const TranslationHelper: React.FC = () => {
                         currentTranslation=""
                         onCharacterClick={insertCharacterName}
                         onSuggestionClick={insertTranslatedSuggestion}
+                        onCharacterNameClick={handleCharacterNameClick}
                         className="dialogue-content opacity-70"
                         style={{
                           textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
@@ -561,12 +607,12 @@ const TranslationHelper: React.FC = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                           </svg>
                         </button>
-                        {/* JSON button - only show when JSON mode is active */}
-                        {jsonMode && (
+                        {/* XLSX button - only show when XLSX mode is active */}
+                        {xlsxMode && (
                           <button
-                            onClick={handleCopySourceToJsonSearch}
+                            onClick={handleCopySourceToXlsxSearch}
                             className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
-                            title="Search this text in JSON viewer"
+                            title="Search this text in XLSX viewer"
                           >
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -596,12 +642,12 @@ const TranslationHelper: React.FC = () => {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                       </svg>
                     </button>
-                    {/* JSON button - only show when JSON mode is active */}
-                    {jsonMode && (
+                    {/* XLSX button - only show when XLSX mode is active */}
+                    {xlsxMode && (
                       <button
-                        onClick={handleCopySourceToJsonSearch}
+                        onClick={handleCopySourceToXlsxSearch}
                         className="absolute top-2 right-8 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                        title="Search this text in JSON viewer"
+                        title="Search this text in XLSX viewer"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -617,6 +663,7 @@ const TranslationHelper: React.FC = () => {
                       currentTranslation={currentTranslation}
                       onCharacterClick={insertCharacterName}
                       onSuggestionClick={insertTranslatedSuggestion}
+                      onCharacterNameClick={handleCharacterNameClick}
                       className="no-suggestions"
                     />
                   </div>
@@ -640,12 +687,12 @@ const TranslationHelper: React.FC = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                             </svg>
                           </button>
-                          {/* JSON button - only show when JSON mode is active */}
-                          {jsonMode && (
+                          {/* XLSX button - only show when XLSX mode is active */}
+                          {xlsxMode && (
                             <button
-                              onClick={handleCopySourceToJsonSearch}
+                              onClick={handleCopySourceToXlsxSearch}
                               className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                              title="Search this text in JSON viewer"
+                              title="Search this text in XLSX viewer"
                             >
                               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -662,6 +709,7 @@ const TranslationHelper: React.FC = () => {
                         eyeMode={false}
                         currentTranslation=""
                         onCharacterClick={insertCharacterName}
+                        onCharacterNameClick={handleCharacterNameClick}
                         className="no-suggestions"
                       />
                     </div>
@@ -743,14 +791,14 @@ const TranslationHelper: React.FC = () => {
                     </svg>
                   )}
                 </button>
-                {/* JSON Mode Toggle */}
+                {/* XLSX Mode Toggle */}
                 <button
-                  onClick={toggleJsonMode}
+                  onClick={toggleXlsxMode}
                   className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
-                  title="JSON Data View"
+                  title="XLSX Data View"
                 >
-                  <svg className={`w-5 h-5 ${jsonMode ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-500'}`} fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M4 5a3 3 0 013-3h10a3 3 0 013 3v14a3 3 0 01-3 3H7a3 3 0 01-3-3V5zm3 1a1 1 0 000 2h8a1 1 0 100-2H7zm0 4a1 1 0 000 2h8a1 1 0 100-2H7zm0 4a1 1 0 000 2h8a1 1 0 100-2H7z"/>
+                  <svg className={`w-5 h-5 ${xlsxMode ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-500'}`} fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
                   </svg>
                 </button>
               </div>
@@ -776,9 +824,9 @@ const TranslationHelper: React.FC = () => {
                   Press Shift+Enter to submit
                 </p>
                 
-                {/* JSON Translation Suggestions */}
-                {highlightingJsonData && (() => {
-                  const matches = findJsonMatches(sourceTexts[currentIndex] || '');
+                {/* XLSX Translation Suggestions */}
+                {xlsxData && (() => {
+                  const matches = findXlsxMatchesWrapper(sourceTexts[currentIndex] || '');
                   if (matches.length > 0) {
                     // Sort matches by relevance: exact phrase matches first, then by length (longest first)
                     const sortedMatches = matches.sort((a, b) => {
@@ -793,14 +841,14 @@ const TranslationHelper: React.FC = () => {
                       return b.sourceEnglish.length - a.sourceEnglish.length;
                     });
                     
-                    console.log('🔧 TranslationHelper Debug: Sorted matches:', sortedMatches.map(m => ({
+                    console.log('🔧 TranslationHelper Debug: Sorted XLSX matches:', sortedMatches.map(m => ({
                       sourceEnglish: m.sourceEnglish,
                       translatedDutch: m.translatedDutch,
                       category: m.category
                     })));
                     
                     const firstMatch = sortedMatches[0];
-                    console.log('🔧 TranslationHelper Debug: Using match:', firstMatch.sourceEnglish, 'for text:', sourceTexts[currentIndex]);
+                    console.log('🔧 TranslationHelper Debug: Using XLSX match:', firstMatch.sourceEnglish, 'for text:', sourceTexts[currentIndex]);
                     return (
                       <div className="flex flex-wrap gap-2 justify-end ml-4" style={{ maxWidth: '50%' }}>
                         {/* Translated Dutch Suggestion */}
@@ -863,215 +911,15 @@ const TranslationHelper: React.FC = () => {
             </button>
           </div>
 
-          {/* JSON Mode Interface - Inside Translation Card */}
-          {jsonMode && (
-            <div className="mt-6 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 shadow-md transition-all duration-300" style={{ borderRadius: '3px' }}>
-              {/* Header */}
-              <div className="flex items-center justify-between mb-6">
-                <div>
-                  <h4 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">JSON Data Viewer</h4>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Browse and search translation data</p>
-                </div>
-                <button
-                  onClick={toggleJsonMode}
-                  className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-                  style={{ borderRadius: '3px' }}
-                  title="Close JSON Viewer"
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  </svg>
-                </button>
-              </div>
-              
-              {/* Controls Section */}
-              <div className="space-y-4">
-                {/* File and Sheet Selection */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">File</label>
-                    <select
-                      value={selectedJsonFile}
-                      onChange={(e) => loadJsonData(e.target.value)}
-                      className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
-                      style={{ borderRadius: '3px' }}
-                    >
-                      <option value="">Select a JSON file</option>
-                      {availableJsonFiles.map(file => (
-                        <option key={file} value={file}>{file}</option>
-                      ))}
-                    </select>
-                  </div>
-
-                  {/* Sheet Selection */}
-                  {jsonData && !globalSearch && (
-                    <div className="space-y-2">
-                      <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Sheet</label>
-                      <select
-                        value={selectedJsonSheet}
-                        onChange={(e) => setSelectedJsonSheet(e.target.value)}
-                        className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
-                        style={{ borderRadius: '3px' }}
-                      >
-                        <option value="">Select a sheet</option>
-                        {getAvailableSheets().map((sheetName: string) => (
-                          <option key={sheetName} value={sheetName}>{sheetName}</option>
-                        ))}
-                      </select>
-                    </div>
-                  )}
-                </div>
-
-                {/* Search and Global Toggle */}
-                <div className="space-y-4">
-                  <div className="space-y-2">
-                    <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Search</label>
-                    <input
-                      type="text"
-                      value={jsonSearchTerm}
-                      onChange={(e) => setJsonSearchTerm(e.target.value)}
-                      placeholder="Search by row number, utterer, context, or text..."
-                      className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
-                      style={{ borderRadius: '3px' }}
-                    />
-                  </div>
-                  
-                  {/* Global Search Toggle */}
-                  <div className="flex items-center gap-3">
-                    <input
-                      type="checkbox"
-                      id="globalSearch"
-                      checked={globalSearch}
-                      onChange={(e) => setGlobalSearch(e.target.checked)}
-                      className="w-4 h-4 text-black border border-black dark:border-gray-600 rounded focus:ring-2 focus:ring-gray-500 focus:ring-offset-0 dark:bg-gray-700"
-                      style={{ borderRadius: '2px' }}
-                    />
-                    <label htmlFor="globalSearch" className="text-sm font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                      Global Search
-                    </label>
-                    {globalSearch && (
-                      <span className="inline-flex items-center gap-1 px-2 py-1 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded text-xs text-amber-800 dark:text-amber-200 font-medium transition-all duration-300 animate-fade-in" style={{ borderRadius: '2px' }}>
-                        <svg className="w-3 h-3 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                        </svg>
-                        Global Search is slow! Use at your own risk.
-                      </span>
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              {/* JSON Data Display */}
-              {jsonData && (globalSearch || selectedJsonSheet) && (
-                <div className="mt-6 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 max-h-64 overflow-y-auto shadow-inner custom-scrollbar" style={{ borderRadius: '3px' }}>
-                  <div className="p-4 space-y-3">
-                    {getFilteredEntries().map((entry: any, index: number) => (
-                      <div key={index} className="p-4 border border-gray-200 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
-                        <div className="space-y-2">
-                          {/* Header with Row and Sheet */}
-                          <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-3">
-                              <span className="font-bold text-blue-600 dark:text-blue-400 text-sm">Row {entry.rowNumber}</span>
-                              {globalSearch && entry.sheetName && (
-                                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-1 rounded font-medium tracking-tight uppercase letter-spacing-wide">
-                                  {entry.sheetName}
-                                </span>
-                              )}
-                            </div>
-                          </div>
-                          
-                          {/* Data Grid */}
-                          <div className="grid grid-cols-1 gap-2 text-sm">
-                            <div className="flex items-start gap-2">
-                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Utterer:</span>
-                              <div className="flex items-center gap-2 flex-1">
-                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.utterer}</span>
-                                <button
-                                  onClick={() => copyJsonField(entry.utterer, 'utterer')}
-                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                  title="Copy utterer"
-                                >
-                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                  </svg>
-                                </button>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-2">
-                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Context:</span>
-                              <div className="flex items-center gap-2 flex-1">
-                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.context}</span>
-                                <button
-                                  onClick={() => copyJsonField(entry.context, 'context')}
-                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                  title="Copy context"
-                                >
-                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                  </svg>
-                                </button>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-2">
-                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Source:</span>
-                              <div className="flex items-center gap-2 flex-1">
-                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.sourceEnglish}</span>
-                                <button
-                                  onClick={() => copyJsonField(entry.sourceEnglish, 'source')}
-                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                  title="Copy source text"
-                                >
-                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                  </svg>
-                                </button>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-2">
-                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
-                              <div className="flex items-center gap-2 flex-1">
-                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.translatedDutch}</span>
-                                <button
-                                  onClick={() => copyJsonField(entry.translatedDutch, 'dutch')}
-                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                  title="Copy Dutch translation"
-                                >
-                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                  </svg>
-                                </button>
-                                {/* Persist button temporarily hidden */}
-                                {/* 
-                                <button
-                                  onClick={() => persistTranslation(entry.rowNumber, entry.translatedDutch)}
-                                  className="px-2 py-1 text-xs bg-green-600 hover:bg-green-700 text-white font-medium rounded transition-colors duration-200"
-                                  title="Persist current translation to JSON file"
-                                >
-                                  Persist
-                                </button>
-                                */}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                    {getFilteredEntries().length === 0 && (
-                      <div className="text-center text-gray-500 dark:text-gray-400 py-8 text-sm">
-                        No entries found matching your search criteria.
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )}
             </div>
-          )}
-        </div>
+          </div>
 
-        {/* Output Section */}
-        <div className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 space-y-6 shadow-md transition-transform duration-200 ${
-          showCopied ? 'transform scale-95' : 'transform scale-100'
-        }`}>
+          {/* Right Column - Translated Output */}
+          <div className="h-full">
+            {/* Output Section */}
+            <div className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 space-y-6 shadow-md transition-transform duration-200 h-full ${
+              showCopied ? 'transform scale-95' : 'transform scale-100'
+            }`} style={{ borderRadius: '3px' }}>
           <div className="flex justify-between items-center">
             <div>
               <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translated Output</h3>
@@ -1141,9 +989,316 @@ const TranslationHelper: React.FC = () => {
               <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Progress</p>
             </div>
           </div>
+            </div>
+          </div>
         </div>
 
+        {/* XLSX Mode Interface - Full Width Below Grid */}
+        {xlsxMode && (
+          <div className="xlsx-viewer-section mt-8 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 shadow-md transition-all duration-300" style={{ borderRadius: '3px' }}>
+            {/* Header */}
+            <div className="flex items-center justify-between mb-6">
+              <div>
+                <h4 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">XLSX Data Viewer</h4>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Browse and search Excel translation files</p>
+              </div>
+              <button
+                onClick={toggleXlsxMode}
+                className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                style={{ borderRadius: '3px' }}
+                title="Close XLSX Viewer"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            
+            {/* Tab Navigation */}
+            <div className="border-b border-gray-200 dark:border-gray-600 mb-6">
+              <div className="flex gap-1">
+                <button
+                  onClick={() => setXlsxViewerTab('browse')}
+                  className={`px-4 py-2 text-sm font-medium transition-colors ${
+                    xlsxViewerTab === 'browse'
+                      ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
+                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                  }`}
+                >
+                  Browse Data
+                </button>
+                <button
+                  onClick={() => setXlsxViewerTab('context')}
+                  className={`px-4 py-2 text-sm font-medium transition-colors ${
+                    xlsxViewerTab === 'context'
+                      ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
+                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
+                  }`}
+                >
+                  Context Search (beta)
+                </button>
+              </div>
+            </div>
+            
+            {/* Tab Content */}
+            {xlsxViewerTab === 'browse' ? (
+            <div className="space-y-4">
+              {/* File and Sheet Selection */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="space-y-2">
+                  <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">File</label>
+                  <select
+                    value={selectedXlsxFile}
+                    onChange={(e) => loadXlsxData(e.target.value)}
+                    className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
+                    style={{ borderRadius: '3px' }}
+                    disabled={isLoadingXlsx}
+                  >
+                    <option value="">Select an XLSX file</option>
+                    {availableXlsxFiles.map(file => (
+                      <option key={file.fileName} value={file.fileName}>{file.fileName}</option>
+                    ))}
+                  </select>
+                </div>
 
+                {/* Sheet Selection */}
+                {xlsxData && !globalSearch && (
+                  <div className="space-y-2">
+                    <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Sheet</label>
+                    <select
+                      value={selectedXlsxSheet}
+                      onChange={(e) => setSelectedXlsxSheet(e.target.value)}
+                      className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
+                      style={{ borderRadius: '3px' }}
+                      disabled={isLoadingXlsx}
+                    >
+                      <option value="">Select a sheet</option>
+                      {getAvailableSheets().map((sheetName: string) => (
+                        <option key={sheetName} value={sheetName}>{sheetName}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
+              </div>
+
+              {/* Search and Global Toggle */}
+              <div className="space-y-4">
+                <div className="space-y-2">
+                  <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Search</label>
+                  <input
+                    type="text"
+                    value={xlsxSearchTerm}
+                    onChange={(e) => setXlsxSearchTerm(e.target.value)}
+                    placeholder="Search by row number, utterer, context, or text..."
+                    className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
+                    style={{ borderRadius: '3px' }}
+                    disabled={isLoadingXlsx}
+                  />
+                </div>
+                
+                {/* Global Search Toggle */}
+                <div className="flex items-center gap-3">
+                  <input
+                    type="checkbox"
+                    id="globalSearch"
+                    checked={globalSearch}
+                    onChange={(e) => setGlobalSearch(e.target.checked)}
+                    className="w-4 h-4 text-black border border-black dark:border-gray-600 rounded focus:ring-2 focus:ring-gray-500 focus:ring-offset-0 dark:bg-gray-700"
+                    style={{ borderRadius: '2px' }}
+                    disabled={isLoadingXlsx}
+                  />
+                  <label htmlFor="globalSearch" className="text-sm font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
+                    Global Search
+                  </label>
+                  {globalSearch && (
+                    <span className="inline-flex items-center gap-1 px-2 py-1 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded text-xs text-amber-800 dark:text-amber-200 font-medium transition-all duration-300 animate-fade-in" style={{ borderRadius: '2px' }}>
+                      <svg className="w-3 h-3 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                      </svg>
+                      Global Search is slow! Use at your own risk.
+                    </span>
+                  )}
+                </div>
+              </div>
+              
+              {/* XLSX Data Display */}
+              {xlsxData && (globalSearch || selectedXlsxSheet) && (
+              <div className="mt-6 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 max-h-64 overflow-y-auto shadow-inner custom-scrollbar" style={{ borderRadius: '3px' }}>
+                {isLoadingXlsx ? (
+                  <div className="p-8 text-center">
+                    <div className="text-gray-500 dark:text-gray-400">Loading XLSX data...</div>
+                  </div>
+                ) : (
+                  <div className="p-4 space-y-3">
+                    {getFilteredEntries().map((entry: any, index: number) => (
+                      <div key={index} className="p-4 border border-gray-200 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
+                        <div className="space-y-2">
+                          {/* Header with Row and Sheet */}
+                          <div className="flex items-center justify-between">
+                            <div className="flex items-center gap-3">
+                              <span className="font-bold text-blue-600 dark:text-blue-400 text-sm">Row {entry.row}</span>
+                              {globalSearch && entry.sheetName && (
+                                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-1 rounded font-medium tracking-tight uppercase letter-spacing-wide">
+                                  {entry.sheetName}
+                                </span>
+                              )}
+                              {entry.fileName && (
+                                <span className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 px-2 py-1 rounded font-medium">
+                                  {entry.fileName}
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                          
+                          {/* Data Grid */}
+                          <div className="grid grid-cols-1 gap-2 text-sm">
+                            <div className="flex items-start gap-2">
+                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Utterer:</span>
+                              <div className="flex items-center gap-2 flex-1">
+                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.utterer}</span>
+                                <button
+                                  onClick={() => copyJsonField(entry.utterer, 'utterer')}
+                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                  title="Copy utterer"
+                                >
+                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <div className="flex items-start gap-2">
+                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Context:</span>
+                              <div className="flex items-center gap-2 flex-1">
+                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.context}</span>
+                                <button
+                                  onClick={() => copyJsonField(entry.context, 'context')}
+                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                  title="Copy context"
+                                >
+                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <div className="flex items-start gap-2">
+                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Source:</span>
+                              <div className="flex items-center gap-2 flex-1">
+                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.sourceEnglish}</span>
+                                <button
+                                  onClick={() => copyJsonField(entry.sourceEnglish, 'source')}
+                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                  title="Copy source text"
+                                >
+                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                            <div className="flex items-start gap-2">
+                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
+                              <div className="flex items-center gap-2 flex-1">
+                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.translatedDutch}</span>
+                                <button
+                                  onClick={() => copyJsonField(entry.translatedDutch, 'dutch')}
+                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                  title="Copy Dutch translation"
+                                >
+                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                  </svg>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                    {getFilteredEntries().length === 0 && (
+                      <div className="text-center text-gray-500 dark:text-gray-400 py-8 text-sm">
+                        No entries found matching your search criteria.
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+            )}
+            </div>
+          ) : (
+            /* Context Search Tab */
+            <div className="space-y-4">
+              <div className="p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded">
+                <h5 className="font-semibold text-blue-900 dark:text-blue-300 mb-2">Context Search (Beta)</h5>
+                <p className="text-sm text-blue-700 dark:text-blue-400">
+                  This feature automatically searches for the current source text in previous XLSX translations,
+                  highlighting historical references and providing context from past sheets.
+                </p>
+              </div>
+              
+              {/* Auto-search results based on current source text */}
+              <div className="space-y-2">
+                <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
+                  Searching for: &quot;{sourceTexts[currentIndex]}&quot;
+                </label>
+                <div className="bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 p-4 max-h-64 overflow-y-auto shadow-inner custom-scrollbar" style={{ borderRadius: '3px' }}>
+                  {(() => {
+                    const matches = findXlsxMatchesWrapper(sourceTexts[currentIndex] || '');
+                    const charMatches = findCharacterMatches(sourceTexts[currentIndex] || '');
+                    
+                    if (matches.length > 0 || charMatches.length > 0) {
+                      return (
+                        <>
+                          {matches.map((match, idx) => (
+                            <div key={`xlsx-${idx}`} className="mb-3 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded">
+                              <div className="text-sm">
+                                <span className="font-semibold">Sheet:</span> {match.sheetName || 'Unknown'}
+                              </div>
+                              <div className="text-sm mt-1">
+                                <span className="font-semibold">Row:</span> {match.rowNumber}
+                              </div>
+                              <div className="text-sm mt-1">
+                                <span className="font-semibold">Utterer:</span> {match.utterer}
+                              </div>
+                              <div className="text-sm mt-1">
+                                <span className="font-semibold">Context:</span> {match.context}
+                              </div>
+                              <div className="text-sm mt-1">
+                                <span className="font-semibold">English:</span> {match.sourceEnglish}
+                              </div>
+                              <div className="text-sm mt-1">
+                                <span className="font-semibold">Dutch:</span> {match.translatedDutch || '(no translation)'}
+                              </div>
+                            </div>
+                          ))}
+                          {charMatches.map((char, idx) => (
+                            <div key={`char-${idx}`} className="mb-3 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-600 rounded">
+                              <div className="text-sm">
+                                <span className="font-semibold text-green-800 dark:text-green-300">Character:</span> {char.name}
+                              </div>
+                              <div className="text-sm mt-1">
+                                <span className="font-semibold">English:</span> {char.english}
+                              </div>
+                              <div className="text-sm mt-1">
+                                <span className="font-semibold">Dutch:</span> {char.dutch}
+                              </div>
+                              <div className="text-sm mt-1 text-gray-600 dark:text-gray-400">
+                                {char.description}
+                              </div>
+                            </div>
+                          ))}
+                        </>
+                      );
+                    }
+                    return <p className="text-gray-500 dark:text-gray-400 text-sm">No historical matches found for current text.</p>;
+                  })()}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+        )}
 
         {/* Codex Reference Panel - HIDDEN FOR NOW */}
         {/* 
@@ -1157,9 +1312,12 @@ const TranslationHelper: React.FC = () => {
         />
         */}
 
-        {/* Video Button */}
+        {/* Video and Codex Buttons */}
         <div className="mt-20 mb-6 text-center">
-          <VideoButton className="mb-4" />
+          <div className="flex justify-center gap-4">
+            <VideoButton className="mb-4" />
+            <CodexButton className="mb-4" />
+          </div>
         </div>
 
         {/* Footer */}
