@@ -1272,55 +1272,156 @@ const TranslationHelper: React.FC = () => {
                             />
                           </div>
                           
-                          {/* Historical matches */}
+                          {/* Historical matches - styled like reference viewer */}
                           {matches.map((match, idx) => (
-                            <div key={`xlsx-${idx}`} className="mb-3 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded" style={{ borderRadius: '3px' }}>
-                              <div className="text-sm">
-                                <span className="font-semibold">Sheet:</span> {match.sheetName || 'Unknown'}
-                              </div>
-                              <div className="text-sm mt-1">
-                                <span className="font-semibold">Row:</span> {match.rowNumber}
-                              </div>
-                              <div className="text-sm mt-1">
-                                <span className="font-semibold">Utterer:</span> {match.utterer}
-                              </div>
-                              <div className="text-sm mt-1">
-                                <span className="font-semibold">Context:</span> {match.context}
-                              </div>
-                              <div className="text-sm mt-1">
-                                <span className="font-semibold">English:</span> 
-                                <TextHighlighter
-                                  text={match.sourceEnglish}
-                                  jsonData={highlightingJsonData}
-                                  xlsxData={xlsxData}
-                                  highlightMode={true}
-                                  eyeMode={false}
-                                  currentTranslation=""
-                                  onCharacterClick={insertCharacterName}
-                                  onSuggestionClick={insertTranslatedSuggestion}
-                                  onCharacterNameClick={handleCharacterNameClick}
-                                  className="inline"
-                                  showSuggestions={false}
-                                />
-                              </div>
-                              <div className="text-sm mt-1">
-                                <span className="font-semibold">Dutch:</span> {match.translatedDutch || '(no translation)'}
+                            <div key={`xlsx-${idx}`} className="mb-3 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
+                              <div className="space-y-2">
+                                {/* Header with Row and Sheet */}
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-3">
+                                    <span className="font-bold text-blue-600 dark:text-blue-400 text-sm">Row {match.rowNumber}</span>
+                                    {match.sheetName && (
+                                      <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-1 rounded font-medium tracking-tight uppercase letter-spacing-wide">
+                                        {match.sheetName}
+                                      </span>
+                                    )}
+                                  </div>
+                                </div>
+                                
+                                {/* Data Grid */}
+                                <div className="grid grid-cols-1 gap-2 text-sm">
+                                  <div className="flex items-start gap-2">
+                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Utterer:</span>
+                                    <div className="flex items-center gap-2 flex-1">
+                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{match.utterer}</span>
+                                      <button
+                                        onClick={() => navigator.clipboard.writeText(match.utterer)}
+                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                        title="Copy utterer"
+                                      >
+                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div className="flex items-start gap-2">
+                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Context:</span>
+                                    <div className="flex items-center gap-2 flex-1">
+                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{match.context}</span>
+                                      <button
+                                        onClick={() => navigator.clipboard.writeText(match.context)}
+                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                        title="Copy context"
+                                      >
+                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div className="flex items-start gap-2">
+                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Source:</span>
+                                    <div className="flex items-center gap-2 flex-1">
+                                      <div className="text-gray-700 dark:text-gray-300 flex-1">
+                                        <TextHighlighter
+                                          text={match.sourceEnglish}
+                                          jsonData={highlightingJsonData}
+                                          xlsxData={xlsxData}
+                                          highlightMode={true}
+                                          eyeMode={false}
+                                          currentTranslation=""
+                                          onCharacterClick={insertCharacterName}
+                                          onSuggestionClick={insertTranslatedSuggestion}
+                                          onCharacterNameClick={handleCharacterNameClick}
+                                          className="inline"
+                                          showSuggestions={false}
+                                        />
+                                      </div>
+                                      <button
+                                        onClick={() => navigator.clipboard.writeText(match.sourceEnglish)}
+                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                        title="Copy source text"
+                                      >
+                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div className="flex items-start gap-2">
+                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
+                                    <div className="flex items-center gap-2 flex-1">
+                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{match.translatedDutch || '(no translation)'}</span>
+                                      {match.translatedDutch && (
+                                        <button
+                                          onClick={() => navigator.clipboard.writeText(match.translatedDutch)}
+                                          className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                          title="Copy Dutch translation"
+                                        >
+                                          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                          </svg>
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
                               </div>
                             </div>
                           ))}
                           {charMatches.map((char, idx) => (
-                            <div key={`char-${idx}`} className="mb-3 p-3 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-600 rounded" style={{ borderRadius: '3px' }}>
-                              <div className="text-sm">
-                                <span className="font-semibold text-green-800 dark:text-green-300">Character:</span> {char.name}
-                              </div>
-                              <div className="text-sm mt-1">
-                                <span className="font-semibold">English:</span> {char.english}
-                              </div>
-                              <div className="text-sm mt-1">
-                                <span className="font-semibold">Dutch:</span> {char.dutch}
-                              </div>
-                              <div className="text-sm mt-1 text-gray-600 dark:text-gray-400">
-                                {char.description}
+                            <div key={`char-${idx}`} className="mb-3 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-600 rounded-md hover:bg-green-100 dark:hover:bg-green-900/30 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
+                              <div className="space-y-2">
+                                {/* Header */}
+                                <div className="flex items-center justify-between">
+                                  <div className="flex items-center gap-3">
+                                    <span className="font-bold text-green-800 dark:text-green-300 text-sm">Character</span>
+                                    <span className="text-xs bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200 px-2 py-1 rounded font-medium">
+                                      {char.name}
+                                    </span>
+                                  </div>
+                                </div>
+                                
+                                {/* Data Grid */}
+                                <div className="grid grid-cols-1 gap-2 text-sm">
+                                  <div className="flex items-start gap-2">
+                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">English:</span>
+                                    <div className="flex items-center gap-2 flex-1">
+                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{char.english}</span>
+                                      <button
+                                        onClick={() => navigator.clipboard.writeText(char.english)}
+                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                        title="Copy English name"
+                                      >
+                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  <div className="flex items-start gap-2">
+                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
+                                    <div className="flex items-center gap-2 flex-1">
+                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{char.dutch}</span>
+                                      <button
+                                        onClick={() => navigator.clipboard.writeText(char.dutch)}
+                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
+                                        title="Copy Dutch translation"
+                                      >
+                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                        </svg>
+                                      </button>
+                                    </div>
+                                  </div>
+                                  {char.description && (
+                                    <div className="flex items-start gap-2">
+                                      <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Description:</span>
+                                      <span className="text-gray-600 dark:text-gray-400 flex-1 text-xs">{char.description}</span>
+                                    </div>
+                                  )}
+                                </div>
                               </div>
                             </div>
                           ))}

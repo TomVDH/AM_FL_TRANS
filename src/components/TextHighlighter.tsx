@@ -122,16 +122,14 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
     console.log('🎨 TextHighlighter Debug: xlsxData available:', !!xlsxData);
     console.log('🎨 TextHighlighter Debug: highlightMode:', highlightMode);
     
-    if (!jsonData && !xlsxData) {
-      console.log('🎨 TextHighlighter Debug: No data available, returning original text');
-      return text;
-    }
+    // Character highlighting is always available, even without JSON/XLSX data
+    const hasAnyData = jsonData || xlsxData || true; // Character data is always available
     
-    // Get matches from both JSON and XLSX data
+    // Get matches from all data sources (character data is always active)
     const jsonMatches = jsonData ? findJsonMatches(text) : [];
     const xlsxMatches = xlsxData ? findXlsxMatches(text) : [];
     const assCharacters = detectAssCharacters(text);
-    const characterMatches = findCharacterMatches(text);
+    const characterMatches = findCharacterMatches(text); // Always enabled
     
     console.log('🎨 TextHighlighter Debug: Found JSON matches:', jsonMatches.length);
     console.log('🎨 TextHighlighter Debug: Found XLSX matches:', xlsxMatches.length);
@@ -189,7 +187,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       });
     }
     
-    // Highlight character names from CSV (subtle blue highlighting)
+    // Always highlight character names from CSV (always active - blue highlighting)
     characterMatches.forEach(charMatch => {
       console.log('🎨 TextHighlighter Debug: Processing character match:', charMatch.english);
       
@@ -248,22 +246,97 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   /**
    * Extract character names from text for placeholder suggestions
    * Detects patterns like "Slow Ass", "Trusty Ass", etc.
+   * Also detects shortened names like "Trusty", "Thirsty"
    */
   const extractCharacterNames = (text: string): string[] => {
     if (!text) return [];
     
-    // Pattern to match "Word Ass" character names
-    const characterPattern = /\b(\w+\s+Ass)\b/gi;
-    const matches = text.match(characterPattern) || [];
+    const names = new Set<string>();
     
-    // Remove duplicates and return
-    return [...new Set(matches.map(match => match.trim()))];
+    // Pattern to match "Word Ass" character names
+    const fullNamePattern = /\b(\w+\s+Ass)\b/gi;
+    const fullMatches = text.match(fullNamePattern) || [];
+    fullMatches.forEach(match => names.add(match.trim()));
+    
+    // Pattern to match potential shortened character names
+    // Look for capitalized words that could be character names
+    const shortNamePattern = /\b([A-Z][a-z]+(?:'s)?)\b/g;
+    const shortMatches = text.match(shortNamePattern) || [];
+    
+    // Check if these shortened names have corresponding character data
+    shortMatches.forEach(match => {
+      const cleanMatch = match.replace(/'s$/, ''); // Remove possessive 's
+      const characterMatches = findCharacterMatches(cleanMatch);
+      
+      // If we find character data for this name, include it
+      if (characterMatches.length > 0) {
+        names.add(cleanMatch);
+      }
+      
+      // Also check if it could be a shortened version of a "Word Ass" name
+      const possibleFullName = `${cleanMatch} Ass`;
+      if (text.toLowerCase().includes(possibleFullName.toLowerCase()) || 
+          findCharacterMatches(possibleFullName).length > 0) {
+        names.add(possibleFullName);
+      }
+    });
+    
+    return Array.from(names);
+  };
+
+  /**
+   * Extract individual words/phrases that have translations
+   * Creates specific suggestions for each highlighted element
+   */
+  const extractTranslationSuggestions = (text: string) => {
+    const suggestions = new Map<string, any>();
+    
+    // Get all matches from different sources
+    const jsonMatches = jsonData ? findJsonMatches(text) : [];
+    const xlsxMatches = xlsxData ? findXlsxMatches(text) : [];
+    const charMatches = findCharacterMatches(text);
+    
+    // Process JSON matches
+    jsonMatches.forEach(match => {
+      if (match.translatedDutch && match.translatedDutch.trim()) {
+        suggestions.set(match.sourceEnglish, {
+          source: match.sourceEnglish,
+          translation: match.translatedDutch,
+          type: 'json'
+        });
+      }
+    });
+    
+    // Process XLSX matches
+    xlsxMatches.forEach(match => {
+      if (match.translatedDutch && match.translatedDutch.trim()) {
+        suggestions.set(match.sourceEnglish, {
+          source: match.sourceEnglish,
+          translation: match.translatedDutch,
+          type: 'xlsx'
+        });
+      }
+    });
+    
+    // Process character matches
+    charMatches.forEach(match => {
+      if (match.dutch && match.dutch.trim()) {
+        suggestions.set(match.english, {
+          source: match.english,
+          translation: match.dutch,
+          type: 'character'
+        });
+      }
+    });
+    
+    return Array.from(suggestions.values());
   };
 
   // Get suggestions for the current text (always available, controlled by showSuggestions prop)
   const jsonSuggestions = jsonData ? findJsonMatches(displayText) : [];
   const xlsxSuggestions = xlsxData ? findXlsxMatches(displayText) : [];
   const characterNames = extractCharacterNames(displayText);
+  const translationSuggestions = extractTranslationSuggestions(displayText);
   
   // Combine all suggestions
   const allSuggestions = [...jsonSuggestions, ...xlsxSuggestions];
@@ -276,7 +349,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       />
       
       {/* Suggestion buttons - controlled by showSuggestions prop */}
-      {showSuggestions && (allSuggestions.length > 0 || characterNames.length > 0) && onSuggestionClick && !className.includes('opacity-70') && !className.includes('no-suggestions') && (
+      {showSuggestions && (translationSuggestions.length > 0 || characterNames.length > 0) && onSuggestionClick && !className.includes('opacity-70') && !className.includes('no-suggestions') && (
         <div className="mt-2 flex flex-wrap gap-2">
           {/* Character placeholder buttons (orange/wire color) */}
           {characterNames.map((characterName, index) => (
@@ -291,21 +364,22 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
             </button>
           ))}
           
-          {/* Translation suggestion buttons (green for available translations) */}
-          {allSuggestions.map((suggestion, index) => {
-            const hasTranslation = suggestion.translatedDutch && suggestion.translatedDutch.trim() !== '';
-            return hasTranslation ? (
-              <button
-                key={`translation-${index}`}
-                onClick={() => onSuggestionClick(suggestion.translatedDutch)}
-                className="px-3 py-1 text-sm bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-600 hover:bg-green-200 dark:hover:bg-green-700 transition-colors duration-200 font-medium"
-                title={`Use translation: ${suggestion.translatedDutch}`}
-                style={{ borderRadius: '3px' }}
-              >
-                {suggestion.translatedDutch}
-              </button>
-            ) : null;
-          })}
+          {/* Individual word/phrase translation buttons (green for available translations) */}
+          {translationSuggestions.map((suggestion, index) => (
+            <button
+              key={`word-translation-${index}`}
+              onClick={() => onSuggestionClick(suggestion.translation)}
+              className={`px-3 py-1 text-sm transition-colors duration-200 font-medium ${
+                suggestion.type === 'character' 
+                  ? 'bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 hover:bg-blue-200 dark:hover:bg-blue-700'
+                  : 'bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-600 hover:bg-green-200 dark:hover:bg-green-700'
+              }`}
+              title={`"${suggestion.source}" → "${suggestion.translation}"`}
+              style={{ borderRadius: '3px' }}
+            >
+              {suggestion.translation}
+            </button>
+          ))}
         </div>
       )}
 
