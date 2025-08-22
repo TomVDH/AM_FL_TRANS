@@ -181,7 +181,7 @@ const TranslationHelper: React.FC = () => {
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
   const [isLoadingCodex, setIsLoadingCodex] = useState(false);
   const [xlsxViewerTab, setXlsxViewerTab] = useState<'browse' | 'context'>('browse');
-  const [showFullBlankText, setShowFullBlankText] = useState(false);
+  const [showAllEntries, setShowAllEntries] = useState(false);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
@@ -214,11 +214,11 @@ const TranslationHelper: React.FC = () => {
     // Switch to context search tab
     setXlsxViewerTab('context');
     
-    // Scroll to the XLSX viewer section after a brief delay
+    // Scroll to the Reference Tools section after a brief delay
     setTimeout(() => {
-      const xlsxViewer = document.querySelector('.xlsx-viewer-section');
-      if (xlsxViewer) {
-        xlsxViewer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const referenceTools = document.querySelector('.reference-tools-section');
+      if (referenceTools) {
+        referenceTools.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }, 100);
   };
@@ -561,7 +561,7 @@ const TranslationHelper: React.FC = () => {
                         <button
                           onClick={handleCopySourceToXlsxSearch}
                           className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
-                          title="Search this text in XLSX viewer"
+                          title="Search this text in Reference Tools"
                         >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -657,7 +657,7 @@ const TranslationHelper: React.FC = () => {
                           <button
                             onClick={handleCopySourceToXlsxSearch}
                             className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
-                            title="Search this text in XLSX viewer"
+                            title="Search this text in Reference Tools"
                           >
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -692,7 +692,7 @@ const TranslationHelper: React.FC = () => {
                       <button
                         onClick={handleCopySourceToXlsxSearch}
                         className="absolute top-2 right-8 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                        title="Search this text in XLSX viewer"
+                        title="Search this text in Reference Tools"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -738,7 +738,7 @@ const TranslationHelper: React.FC = () => {
                             <button
                               onClick={handleCopySourceToXlsxSearch}
                               className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                              title="Search this text in XLSX viewer"
+                              title="Search this text in Reference Tools"
                             >
                               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -1011,11 +1011,11 @@ const TranslationHelper: React.FC = () => {
             <div className="absolute top-2 right-2 flex items-center gap-2">
               {/* Eye Icon Button - Toggle Display Mode */}
               <button
-                onClick={() => setShowFullBlankText(!showFullBlankText)}
+                onClick={() => setShowAllEntries(!showAllEntries)}
                 className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
-                title={showFullBlankText ? "Hide full blank text (show as ---)" : "Show full blank text"}
+                title={showAllEntries ? "Show only completed entries" : "Show all entries including blanks"}
               >
-                {showFullBlankText ? (
+                {showAllEntries ? (
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -1045,10 +1045,14 @@ const TranslationHelper: React.FC = () => {
             <pre className="text-sm font-mono whitespace-pre-wrap leading-relaxed text-gray-900 dark:text-gray-100">
               {translations.map((trans, idx) => {
                 if (!trans) return '';
+                
+                // When eye is disabled, hide blank entries entirely
+                if (!showAllEntries && trans === '[BLANK, REMOVE LATER]') {
+                  return '';
+                }
+                
                 const utterer = (utterers && utterers.length > 0 && utterers[idx]) ? `[${utterers[idx]}] ` : '';
-                // Display logic: show "---" for blanks when eye is disabled, full text when enabled
-                const displayText = trans === '[BLANK, REMOVE LATER]' && !showFullBlankText ? '---' : trans;
-                return `${getCellLocation(idx)}: ${utterer}${displayText}`;
+                return `${getCellLocation(idx)}: ${utterer}${trans}`;
               }).filter(Boolean).join('\n') || 'Translations will appear here...'}
             </pre>
           </div>
@@ -1073,18 +1077,18 @@ const TranslationHelper: React.FC = () => {
 
         {/* XLSX Mode Interface - Full Width Below Grid */}
         {xlsxMode && (
-          <div className="xlsx-viewer-section mt-8 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 shadow-md transition-all duration-300" style={{ borderRadius: '3px' }}>
+          <div className="reference-tools-section mt-8 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 shadow-md transition-all duration-300" style={{ borderRadius: '3px' }}>
             {/* Header */}
             <div className="flex items-center justify-between mb-6">
               <div>
-                <h4 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">XLSX Data Viewer</h4>
+                <h4 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Reference Tools</h4>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Browse and search Excel translation files</p>
               </div>
               <button
                 onClick={toggleXlsxMode}
                 className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
                 style={{ borderRadius: '3px' }}
-                title="Close XLSX Viewer"
+                title="Close Reference Tools"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
