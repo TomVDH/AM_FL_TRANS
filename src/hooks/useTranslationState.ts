@@ -22,7 +22,7 @@ export interface TranslationState {
   showCopied: boolean;
   gradientColors: string[];
   showVersionHash: boolean;
-  inputMode: 'excel' | 'manual';
+  inputMode: 'excel' | 'embedded-json' | 'manual';
   
   // Setup state
   sourceColumn: string;
@@ -48,7 +48,7 @@ export interface TranslationState {
   setShowCopied: (show: boolean) => void;
   setGradientColors: (colors: string[]) => void;
   setShowVersionHash: (show: boolean) => void;
-  setInputMode: (mode: 'excel' | 'manual') => void;
+  setInputMode: (mode: 'excel' | 'embedded-json' | 'manual') => void;
   setSourceColumn: (column: string) => void;
   setUttererColumn: (column: string) => void;
   setStartRow: (row: number) => void;
@@ -74,6 +74,8 @@ export interface TranslationState {
   trimCurrentTranslation: () => void;
   exportTranslations: () => void;
   jumpToRow: (rowNumber: number) => void;
+  resetOutputDisplay: () => void;
+  outputKey: number;
 }
 
 /**
@@ -97,6 +99,9 @@ export const useTranslationState = (): TranslationState => {
   const [translations, setTranslations] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentTranslation, setCurrentTranslation] = useState('');
+  
+  // ========== Output Display State ==========
+  const [outputKey, setOutputKey] = useState(0); // Key to force re-render of output
   const [isStarted, setIsStarted] = useState(false);
   
   // ========== Excel Processing State ==========
@@ -111,7 +116,7 @@ export const useTranslationState = (): TranslationState => {
   const [showCopied, setShowCopied] = useState(false);
   const [gradientColors, setGradientColors] = useState<string[]>([]);
   const [showVersionHash, setShowVersionHash] = useState(false);
-  const [inputMode, setInputMode] = useState<'excel' | 'manual'>('excel');
+  const [inputMode, setInputMode] = useState<'excel' | 'embedded-json' | 'manual'>('excel');
   
   // ========== Setup State ==========
   const [sourceColumn, setSourceColumn] = useState('C');
@@ -144,10 +149,10 @@ export const useTranslationState = (): TranslationState => {
   const handleSubmit = useCallback(() => {
     if (currentIndex < sourceTexts.length - 1) {
       const newTranslations = [...translations];
-      newTranslations[currentIndex] = currentTranslation;
+      newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
       setTranslations(newTranslations);
       setCurrentIndex(currentIndex + 1);
-      setCurrentTranslation(translations[currentIndex + 1] || '');
+      setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
     }
   }, [currentIndex, currentTranslation, sourceTexts.length, translations]);
   
@@ -157,10 +162,10 @@ export const useTranslationState = (): TranslationState => {
   const handlePrevious = useCallback(() => {
     if (currentIndex > 0) {
       const newTranslations = [...translations];
-      newTranslations[currentIndex] = currentTranslation;
+      newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
       setTranslations(newTranslations);
       setCurrentIndex(currentIndex - 1);
-      setCurrentTranslation(translations[currentIndex - 1] || '');
+      setCurrentTranslation(translations[currentIndex - 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex - 1] || '');
     }
   }, [currentIndex, currentTranslation, translations]);
   
@@ -172,7 +177,7 @@ export const useTranslationState = (): TranslationState => {
     const lines = text.split('\n').filter(line => line.trim());
     setSourceTexts(lines);
     setUtterers(new Array(lines.length).fill(''));
-    setTranslations(new Array(lines.length).fill(''));
+    setTranslations(new Array(lines.length).fill('[BLANK, REMOVE LATER]'));
     setCurrentIndex(0);
     setCurrentTranslation('');
   }, []);
@@ -244,7 +249,7 @@ export const useTranslationState = (): TranslationState => {
       
       setSourceTexts(sourceTexts);
       setUtterers(utterers);
-      setTranslations(new Array(sourceTexts.length).fill(''));
+      setTranslations(new Array(sourceTexts.length).fill('[BLANK, REMOVE LATER]'));
       setCurrentIndex(0);
       setCurrentTranslation('');
     } catch (error) {
@@ -488,9 +493,20 @@ export const useTranslationState = (): TranslationState => {
     const index = rowNumber - startRow;
     if (index >= 0 && index < sourceTexts.length) {
       setCurrentIndex(index);
-      setCurrentTranslation(translations[index] || '');
+      setCurrentTranslation(translations[index] === '[BLANK, REMOVE LATER]' ? '' : translations[index] || '');
     }
   }, [startRow, sourceTexts.length, translations]);
+
+  /**
+   * Reset output display only - clears translations and re-initializes the output component
+   */
+  const resetOutputDisplay = useCallback(() => {
+    // Clear all translations and reset to blank placeholders
+    setTranslations(new Array(sourceTexts.length).fill('[BLANK, REMOVE LATER]'));
+    setCurrentTranslation('');
+    // Force a complete re-render of the output component
+    setOutputKey(prev => prev + 1);
+  }, [sourceTexts.length]);
   
   // Process Excel data when sheet, columns, or start row changes
   useEffect(() => {
@@ -571,5 +587,7 @@ export const useTranslationState = (): TranslationState => {
     trimCurrentTranslation,
     exportTranslations,
     jumpToRow,
+    resetOutputDisplay,
+    outputKey,
   };
 }; 

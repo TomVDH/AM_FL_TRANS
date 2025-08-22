@@ -79,8 +79,10 @@ const TranslationHelper: React.FC = () => {
     extractSpeakerName,
     categoryHasMatches,
     trimCurrentTranslation,
+    resetOutputDisplay,
     exportTranslations,
     jumpToRow,
+    outputKey,
   } = useTranslationState();
 
   const copyJsonField = (text: string, fieldName: string) => {
@@ -276,6 +278,7 @@ const TranslationHelper: React.FC = () => {
         cellStart={cellStart}
         setCellStart={setCellStart}
         sourceTexts={sourceTexts}
+        workbookData={workbookData}
         handleFileUpload={handleFileUpload}
         handleSourceInput={handleSourceInput}
         handleStart={handleStart}
@@ -377,33 +380,72 @@ const TranslationHelper: React.FC = () => {
           </div>
         </div>
 
-        {/* Progress Bar - Centered above grid */}
+        {/* Enhanced Progress Bar - Dynamic fill with gaps for blank entries */}
         <div 
           ref={progressBarRef}
           className="relative h-3 bg-gray-200 dark:bg-gray-700 border border-black dark:border-gray-600 overflow-hidden shadow-inner cursor-pointer transition-all duration-300 mb-8"
         >
-          <div
-            ref={progressFillRef}
-            className="absolute h-full transition-all duration-500 ease-out diagonal-stripes"
-            style={{ 
-              width: `${progress}%`,
-              backgroundImage: darkMode 
-                ? `repeating-linear-gradient(
-                    45deg,
-                    transparent,
-                    transparent 5px,
-                    rgba(255, 255, 255, 0.3) 5px,
-                    rgba(255, 255, 255, 0.3) 10px
-                  )`
-                : `repeating-linear-gradient(
-                    45deg,
-                    transparent,
-                    transparent 5px,
-                    rgba(0, 0, 0, 0.8) 5px,
-                    rgba(0, 0, 0, 0.8) 10px
-                  )`
-            }}
-          />
+          <div className="absolute inset-0 flex">
+            {sourceTexts.map((_, index) => {
+              const isCompleted = index < currentIndex; // Only completed when we've moved past it
+              const isBlank = translations[index] === '' || translations[index] === '[BLANK, REMOVE LATER]';
+              const isCurrent = index === currentIndex;
+              const isJustCompleted = index === currentIndex - 1; // The pip that was just submitted
+              const segmentWidth = (100 / sourceTexts.length);
+              
+              return (
+                <div
+                  key={index}
+                  className="relative h-full transition-all duration-300"
+                  style={{ 
+                    width: `${segmentWidth}%`,
+                    borderRight: index < sourceTexts.length - 1 ? '1px solid rgba(0,0,0,0.1)' : 'none'
+                  }}
+                >
+                  {isCompleted && (
+                    <div
+                      className={`absolute inset-0 transition-all duration-500 ${
+                        isBlank 
+                          ? 'bg-red-800 dark:bg-red-900' // Dark red for blank entries
+                          : 'bg-green-500 dark:bg-green-400' // Green for completed translations
+                      }`}
+                      style={{
+                        backgroundImage: (darkMode 
+                          ? `repeating-linear-gradient(
+                              45deg,
+                              transparent,
+                              transparent 2px,
+                              rgba(255, 255, 255, 0.35) 2px,
+                              rgba(255, 255, 255, 0.35) 4px
+                            )`
+                          : `repeating-linear-gradient(
+                              45deg,
+                              transparent,
+                              transparent 2px,
+                              rgba(0, 0, 0, 0.2) 2px,
+                              rgba(0, 0, 0, 0.2) 4px
+                            )`),
+                        animation: (!isBlank && isJustCompleted) ? 'pipGlow 1s ease-out' : undefined,
+                        boxShadow: isBlank 
+                          ? '0 0 6px rgba(127, 29, 29, 0.5)' // Dark red glow for blank
+                          : (!isBlank && isJustCompleted) 
+                            ? '0 0 8px rgba(34, 197, 94, 0.6)' // Green glow for successful
+                            : undefined
+                      }}
+                    />
+                  )}
+                  {isCurrent && !isCompleted && (
+                    <div 
+                      className="absolute inset-0 bg-gray-400 dark:bg-gray-500 opacity-50" 
+                      style={{
+                        boxShadow: '0 0 8px rgba(156, 163, 175, 0.6)' // Gray glow for active/current
+                      }}
+                    />
+                  )}
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         {/* Main 2-Column Grid Layout */}
@@ -419,7 +461,7 @@ const TranslationHelper: React.FC = () => {
               }`}
               style={{ borderRadius: '3px' }}
             >
-          <div className="space-y-6 text-center">
+          <div className="space-y-6">
             {utterers.length > 0 && utterers[currentIndex] && (
               <div className="mb-4">
                 <label className="text-sm font-black text-gray-600 dark:text-gray-400 uppercase tracking-wide block mb-2">Speaker</label>
@@ -487,7 +529,7 @@ const TranslationHelper: React.FC = () => {
                     <TextHighlighter
                       text={sourceTexts[currentIndex]}
                       jsonData={highlightingJsonData}
-                      xlsxData={xlsxData}
+                      xlsxData={xlsxData || []}
                       highlightMode={highlightMode}
                       eyeMode={eyeMode}
                       currentTranslation={currentTranslation}
@@ -506,7 +548,7 @@ const TranslationHelper: React.FC = () => {
                       {/* Copy button for source text */}
                       <button
                         onClick={copySourceText}
-                        className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
+                        className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
                         title="Copy source text"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -517,7 +559,7 @@ const TranslationHelper: React.FC = () => {
                       {xlsxMode && (
                         <button
                           onClick={handleCopySourceToXlsxSearch}
-                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
+                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
                           title="Search this text in XLSX viewer"
                         >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -583,7 +625,7 @@ const TranslationHelper: React.FC = () => {
                       <TextHighlighter
                         text={sourceTexts[currentIndex]}
                         jsonData={highlightingJsonData}
-                        xlsxData={xlsxData}
+                        xlsxData={xlsxData || []}
                         highlightMode={highlightMode}
                         eyeMode={false}
                         currentTranslation=""
@@ -602,7 +644,7 @@ const TranslationHelper: React.FC = () => {
                         {/* Copy button for source text */}
                         <button
                           onClick={copySourceText}
-                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
+                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
                           title="Copy source text"
                         >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -613,7 +655,7 @@ const TranslationHelper: React.FC = () => {
                         {xlsxMode && (
                           <button
                             onClick={handleCopySourceToXlsxSearch}
-                            className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black bg-opacity-50 rounded"
+                            className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
                             title="Search this text in XLSX viewer"
                           >
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -660,7 +702,7 @@ const TranslationHelper: React.FC = () => {
                     <TextHighlighter
                       text={sourceTexts[currentIndex]}
                       jsonData={highlightingJsonData}
-                      xlsxData={xlsxData}
+                      xlsxData={xlsxData || []}
                       highlightMode={highlightMode}
                       eyeMode={eyeMode}
                       currentTranslation={currentTranslation}
@@ -708,7 +750,7 @@ const TranslationHelper: React.FC = () => {
                       <TextHighlighter
                         text={sourceTexts[currentIndex]}
                         jsonData={highlightingJsonData}
-                        xlsxData={xlsxData}
+                        xlsxData={xlsxData || []}
                         highlightMode={highlightMode}
                         eyeMode={false}
                         currentTranslation=""
@@ -921,10 +963,10 @@ const TranslationHelper: React.FC = () => {
           {/* Right Column - Translated Output */}
           <div className="h-full">
             {/* Output Section */}
-            <div className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 space-y-6 shadow-md transition-transform duration-200 h-full ${
+            <div className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 shadow-md transition-transform duration-200 h-full flex flex-col ${
               showCopied ? 'transform scale-95' : 'transform scale-100'
             }`} style={{ borderRadius: '3px' }}>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center mb-6">
             <div>
               <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translated Output</h3>
               <p className="text-xs text-gray-500 mt-1">Shows row info, but copies translations only</p>
@@ -950,26 +992,37 @@ const TranslationHelper: React.FC = () => {
                 Export
               </button>
               
-              {/* Copy All Button */}
-              <div className="relative">
-                <button
-                  onClick={copyToClipboard}
-                  className="px-4 py-2 bg-black dark:bg-white text-white dark:text-black text-sm hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide"
-                  style={{ borderRadius: '3px' }}
-                  title="Copy translations only (for pasting back to spreadsheet)"
-                >
-                  Copy All
-                </button>
-                {showCopied && (
-                  <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-green-600 dark:bg-green-700 text-white px-3 py-2 text-sm whitespace-nowrap shadow-lg border border-green-800 dark:border-green-900" style={{ borderRadius: '3px' }}>
-                    ✓ Copied!
-                  </div>
-                )}
-              </div>
+              {/* Reset Output Button */}
+              <button
+                onClick={resetOutputDisplay}
+                className="px-3 py-2 bg-orange-100 dark:bg-orange-800 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-600 hover:bg-orange-200 dark:hover:bg-orange-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
+                style={{ borderRadius: '3px' }}
+                title="Clear and refresh translation output display"
+              >
+                Refresh
+              </button>
+              
             </div>
           </div>
           
-          <div className="bg-gray-50 dark:bg-gray-700 p-5 border border-black dark:border-gray-600 max-h-48 overflow-y-auto shadow-inner custom-scrollbar">
+          <div key={outputKey} className="bg-gray-50 dark:bg-gray-700 p-5 border border-black dark:border-gray-600 flex-1 overflow-y-auto shadow-inner custom-scrollbar relative mb-6">
+            {/* Copy Icon Button */}
+            <div className="absolute top-2 right-2 flex items-center gap-2">
+              <button
+                onClick={copyToClipboard}
+                className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
+                title="Copy translations only (for pasting back to spreadsheet)"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                </svg>
+              </button>
+              {showCopied && (
+                <div className="absolute -top-8 right-0 bg-green-600 dark:bg-green-700 text-white px-2 py-1 text-xs whitespace-nowrap shadow-lg border border-green-800 dark:border-green-900" style={{ borderRadius: '3px' }}>
+                  ✓ Copied!
+                </div>
+              )}
+            </div>
             <pre className="text-sm font-mono whitespace-pre-wrap leading-relaxed text-gray-900 dark:text-gray-100">
               {translations.map((trans, idx) => {
                 if (!trans) return '';
@@ -1233,13 +1286,6 @@ const TranslationHelper: React.FC = () => {
           ) : (
             /* Context Search Tab */
             <div className="space-y-4">
-              <div className="p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded">
-                <h5 className="font-semibold text-blue-900 dark:text-blue-300 mb-2">Context Search (Beta)</h5>
-                <p className="text-sm text-blue-700 dark:text-blue-400">
-                  This feature automatically searches for the current source text in previous XLSX translations,
-                  highlighting historical references and providing context from past sheets.
-                </p>
-              </div>
               
               {/* Auto-search results based on current source text */}
               <div className="space-y-2">
@@ -1255,12 +1301,23 @@ const TranslationHelper: React.FC = () => {
                       return (
                         <>
                           {/* Show highlighted text with suggestions */}
-                          <div className="mb-4 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded" style={{ borderRadius: '3px' }}>
-                            <div className="text-sm font-semibold mb-2 text-gray-700 dark:text-gray-300">Current Text with Highlights:</div>
+                          <div className="mb-4 p-4 bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded shadow-sm" style={{ 
+                            borderRadius: '6px',
+                            boxShadow: darkMode 
+                              ? '0 0 0 1px rgba(59, 130, 246, 0.2), 0 2px 4px rgba(59, 130, 246, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.05)'
+                              : '0 0 0 1px rgba(59, 130, 246, 0.1), 0 2px 4px rgba(59, 130, 246, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
+                            background: darkMode 
+                              ? 'linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(147, 197, 253, 0.12) 100%)'
+                              : 'linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(147, 197, 253, 0.08) 100%)'
+                          }}>
+                            <div className="text-sm font-semibold mb-3 text-blue-700 dark:text-blue-300 flex items-center gap-2">
+                              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                              Currently Highlighted Text:
+                            </div>
                             <TextHighlighter
                               text={sourceTexts[currentIndex]}
                               jsonData={highlightingJsonData}
-                              xlsxData={xlsxData}
+                              xlsxData={xlsxData || []}
                               highlightMode={true}
                               eyeMode={false}
                               currentTranslation=""
@@ -1327,7 +1384,7 @@ const TranslationHelper: React.FC = () => {
                                         <TextHighlighter
                                           text={match.sourceEnglish}
                                           jsonData={highlightingJsonData}
-                                          xlsxData={xlsxData}
+                                          xlsxData={xlsxData || []}
                                           highlightMode={true}
                                           eyeMode={false}
                                           currentTranslation=""
@@ -1483,7 +1540,7 @@ const TranslationHelper: React.FC = () => {
               }}
             >
               {showVersionHash && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                <div className="absolute inset-0 flex items-center justify-center bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20">
                   <div className="text-white text-lg font-black tracking-tight uppercase letter-spacing-wide">
                     {VERSION_HASH}
                   </div>
