@@ -147,12 +147,15 @@ export const useTranslationState = (): TranslationState => {
    * Handle submit button click
    */
   const handleSubmit = useCallback(() => {
+    // Always save the current translation
+    const newTranslations = [...translations];
+    newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
+    setTranslations(newTranslations);
+    
+    // Only move to next if not on last row
     if (currentIndex < sourceTexts.length - 1) {
-      const newTranslations = [...translations];
-      newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
-      setTranslations(newTranslations);
       setCurrentIndex(currentIndex + 1);
-      setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
+      setCurrentTranslation(newTranslations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : newTranslations[currentIndex + 1] || '');
     }
   }, [currentIndex, currentTranslation, sourceTexts.length, translations]);
   

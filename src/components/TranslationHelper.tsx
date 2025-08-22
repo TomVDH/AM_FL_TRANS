@@ -1005,7 +1005,7 @@ const TranslationHelper: React.FC = () => {
             </div>
           </div>
           
-          <div key={outputKey} className="bg-gray-50 dark:bg-gray-700 p-5 border border-black dark:border-gray-600 flex-1 overflow-y-auto shadow-inner custom-scrollbar relative mb-6">
+          <div key={outputKey} className="bg-gray-50 dark:bg-gray-700 p-5 border border-black dark:border-gray-600 max-h-48 overflow-y-auto shadow-inner custom-scrollbar relative mb-6">
             {/* Copy Icon Button */}
             <div className="absolute top-2 right-2 flex items-center gap-2">
               <button
