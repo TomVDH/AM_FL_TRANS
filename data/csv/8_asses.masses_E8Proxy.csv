@@ -1,0 +1,101 @@
+# File: 8_asses.masses_E8Proxy
+# Processed: 2025-08-21T22:17:44.857Z
+# Sheets: 3
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+3,E8_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.5,EPISODE EIGHT,"",2025-08-21T22:17:44.857Z
+4,E8_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.7,THE SANCTUM,"",2025-08-21T22:17:44.857Z
+5,E8_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.8,Press X to Begin,"",2025-08-21T22:17:44.857Z
+3,E8_SanctumMain_localization,Main branch,"",SAY.Dialog:Opening.93.Trusty Ass,Comrade Sick Ass?!,"",2025-08-21T22:17:44.857Z
+4,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.94.Trusty Ass,Didn't we meet at the Protest?,"",2025-08-21T22:17:44.857Z
+5,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.96.Trusty Ass,If only I hadn't fallen down that well...,"",2025-08-21T22:17:44.857Z
+6,E8_SanctumMain_localization,Said if speech chosen in E1,"",SAY.Dialog:Opening.106.Trusty Ass,I was so ready to give a stirring speech.,"",2025-08-21T22:17:44.857Z
+7,E8_SanctumMain_localization,Said if ass posture chosen in E1,"",SAY.Dialog:Opening.107.Trusty Ass,I was so ready to inspire everyone with the Traditional Ass Posture.,"",2025-08-21T22:17:44.857Z
+8,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.88.Trusty Ass,I beat myself up about being a bad leader when I arrived in the Astral Plane.,"",2025-08-21T22:17:44.857Z
+9,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.109.Trusty Ass,"I did some drugs, ran some races, and got in on some of the orgies.","",2025-08-21T22:17:44.857Z
+10,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.108.Trusty Ass,Did you participate in any of the orgies?,"",2025-08-21T22:17:44.857Z
+11,E8_SanctumMain_localization,Answer Yes,"",MENU.Dialog:Opening.48,*COUGH*,"",2025-08-21T22:17:44.857Z
+12,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.125.Trusty Ass,Furry Ass gave the best cuddles.,"",2025-08-21T22:17:44.857Z
+13,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.139.Trusty Ass,Blunt Ass really turned me on with his dirty talk.,"",2025-08-21T22:17:44.857Z
+14,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.140.Trusty Ass,I didn't know I was into older Asses until I met Dusty Ass!,"",2025-08-21T22:17:44.857Z
+15,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.138.Trusty Ass,You're filthier than I thought!,"",2025-08-21T22:17:44.857Z
+16,E8_SanctumMain_localization,Answer No,"",MENU.Dialog:Opening.49,*COUGH COUGH*,"",2025-08-21T22:17:44.857Z
+17,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.56.Trusty Ass,"Oh, too bad. It was a great change of pace from the days on the Farm!","",2025-08-21T22:17:44.857Z
+18,E8_SanctumMain_localization,Main branch,"",SAY.Dialog:Opening.50.Trusty Ass,Did you run any of the races?,"",2025-08-21T22:17:44.857Z
+19,E8_SanctumMain_localization,Answer Yes,"",MENU.Dialog:Opening.52,*COUGH*,"",2025-08-21T22:17:44.857Z
+20,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.82.Trusty Ass,I didn't take you for much of a runner!,"",2025-08-21T22:17:44.857Z
+21,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.73.Trusty Ass,I'm impressed you beat Hasty! I could never keep up.,"",2025-08-21T22:17:44.857Z
+22,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.71.Trusty Ass,Haul Ass is all talk in my opinion! I'd love to see Nice Ass run circles around him.,"",2025-08-21T22:17:44.857Z
+23,E8_SanctumMain_localization,Answer No,"",MENU.Dialog:Opening.53,*COUGH COUGH*,"",2025-08-21T22:17:44.857Z
+24,E8_SanctumMain_localization,Main branch,"",SAY.Dialog:Opening.33.Trusty Ass,For a while the fun and games were a helpful distraction.,"",2025-08-21T22:17:44.857Z
+25,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.34.Trusty Ass,"But, once I was back on my feet, I couldn't stand being in that overcrowded desert.","",2025-08-21T22:17:44.857Z
+26,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.35.Trusty Ass,I wanted to give my Soul another shot at being a leader.,"",2025-08-21T22:17:44.857Z
+27,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.36.Trusty Ass,So I decided to leave.,"",2025-08-21T22:17:44.857Z
+28,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.37.Trusty Ass,"I tried to recruit some Comrades to follow me, but they all refused and called me a Loser.","",2025-08-21T22:17:44.857Z
+29,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.110.Trusty Ass,Even Old Ass wouldn't come with me.,"",2025-08-21T22:17:44.857Z
+30,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.114.Trusty Ass,...,"",2025-08-21T22:17:44.857Z
+31,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.113.Trusty Ass,So I followed the Path alone.,"",2025-08-21T22:17:44.857Z
+32,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.112.Trusty Ass,But now you're here!,"",2025-08-21T22:17:44.857Z
+33,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.111.Trusty Ass,And you're just in time—because I need your help!,"",2025-08-21T22:17:44.857Z
+34,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.120.Trusty Ass,This old training ground is set up to test our Souls before Reassignment.,"",2025-08-21T22:17:44.857Z
+35,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.119.Trusty Ass,"I've tried a few of the Assessment Chambers, but I haven't cracked any of them.","",2025-08-21T22:17:44.857Z
+36,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.151.Trusty Ass,I think we have to finish each one before our Souls can be reassigned.,"",2025-08-21T22:17:44.857Z
+37,E8_SanctumMain_localization,"","",SAY.Dialog:Opening.118.Trusty Ass,But don't worry—I believe in you!,"",2025-08-21T22:17:44.857Z
+38,E8_SanctumMain_localization,Tips Trusty gives Sick Ass while completing the challenges,"",SAY.Dialog:TrustyTips.18.Trusty Ass,"It's pretty tough finding the matching sound in that north room, isn't it?","",2025-08-21T22:17:44.857Z
+39,E8_SanctumMain_localization,"","",SAY.Dialog:TrustyTips.19.Trusty Ass,All those panels in the south room... you really need to concentrate on the pairs.,"",2025-08-21T22:17:44.857Z
+40,E8_SanctumMain_localization,"","",SAY.Dialog:TrustyTips.20.Trusty Ass,I looked at that mural in the west room for hours trying to find that tiny image!,"",2025-08-21T22:17:44.857Z
+41,E8_SanctumMain_localization,"","",SAY.Dialog:TrustyTips.23.Trusty Ass,We're going to crack these Assessments in no time now that you're here!,"",2025-08-21T22:17:44.857Z
+42,E8_SanctumMain_localization,"","",SAY.Dialog:TrustyTips.21.Trusty Ass,Come on Sick! I'm counting on you!,"",2025-08-21T22:17:44.857Z
+43,E8_SanctumMain_localization,After all the Assessment Chambers are beaten,"",SAY.Dialog:TrustyExit.30.Trusty Ass,Hey!,"",2025-08-21T22:17:44.857Z
+44,E8_SanctumMain_localization,"","",SAY.Dialog:TrustyExit.32.Trusty Ass,"Great work Sick Ass, the last chamber is open!","",2025-08-21T22:17:44.857Z
+45,E8_SanctumMain_localization,"","",SAY.Dialog:TrustyExit.41.Trusty Ass,Follow me!,"",2025-08-21T22:17:44.857Z
+3,E8_TheGods_localization,"","",SAY.Dialog:GODS.13.THE GODS,{s=5} HEE HAW EE HAW HE E'E HAW AHW E! {/s},"",2025-08-21T22:17:44.857Z
+4,E8_TheGods_localization,"","",SAY.Dialog:GODS.56.THE GODS,{s=5} HAW EE HAW HE'E {/s},"",2025-08-21T22:17:44.857Z
+5,E8_TheGods_localization,"","",SAY.Dialog:GODS.57.THE GODS,{s=5} AWH HEE HAW HEE! {/s},"",2025-08-21T22:17:44.857Z
+6,E8_TheGods_localization,"","",SAY.Dialog:GODS.29.THE GODS,"Vassals, your presence has been long overdue.","",2025-08-21T22:17:44.857Z
+7,E8_TheGods_localization,"","",SAY.Dialog:GODS.101.THE GODS,This is the Holy Sanctum of H'ii where all Ass Souls undergo Reassignment.,"",2025-08-21T22:17:44.857Z
+8,E8_TheGods_localization,"","",SAY.Dialog:GODS.102.Hee,We are the Gods of beginnings and ends.,"",2025-08-21T22:17:44.857Z
+9,E8_TheGods_localization,"","",SAY.Dialog:GODS.32.Haw,Of time and passage.,"",2025-08-21T22:17:44.857Z
+10,E8_TheGods_localization,"","",SAY.Dialog:GODS.103.Hee,Of transition and change.,"",2025-08-21T22:17:44.857Z
+11,E8_TheGods_localization,"","",SAY.Dialog:GODS.31.Haw,Of difference.,"",2025-08-21T22:17:44.857Z
+12,E8_TheGods_localization,"","",SAY.Dialog:GODS.104.Hee,"Vassal Trusty Ass, step forward.","",2025-08-21T22:17:44.857Z
+13,E8_TheGods_localization,"","",SAY.Dialog:GODS.105.Hee,"By arriving here, you have proven yourself ready to return to the Material World.","",2025-08-21T22:17:44.857Z
+14,E8_TheGods_localization,"","",SAY.Dialog:GODS.106.Haw,"We shall wipe your memories, so that your Soul can enter into a new Ass without impediment.","",2025-08-21T22:17:44.857Z
+15,E8_TheGods_localization,"","",SAY.Dialog:GODS.107.Haw,Prepare yourself for Reassignment.,"",2025-08-21T22:17:44.857Z
+16,E8_TheGods_localization,"","",SAY.Dialog:GODS.14.Trusty Ass,"Comrade Sick, thanks for following me.","",2025-08-21T22:17:44.857Z
+17,E8_TheGods_localization,"","",SAY.Dialog:GODS.110.Trusty Ass,I hope you are reunited with Kick Ass in your next life!,"",2025-08-21T22:17:44.857Z
+18,E8_TheGods_localization,"","",SAY.Dialog:GODS.114.Trusty Ass,Ass Power!,"",2025-08-21T22:17:44.857Z
+19,E8_TheGods_localization,"","",SAY.Dialog:GODS.116.Trusty Ass,Don't be scared.,"",2025-08-21T22:17:44.857Z
+20,E8_TheGods_localization,Trusty Ass dematerializes and her soul is absorbed,"",SAY.Dialog:GODS.169.THE GODS,H'AW H'AW 'EE AH!,"",2025-08-21T22:17:44.857Z
+21,E8_TheGods_localization,"","",SAY.Dialog:GODS.172.Hee,Vassal Sick Ass. Step forward.,"",2025-08-21T22:17:44.857Z
+22,E8_TheGods_localization,"","",SAY.Dialog:GODS.173.Hee,We have decided your Soul will not undergo Reassignment.,"",2025-08-21T22:17:44.857Z
+23,E8_TheGods_localization,"","",SAY.Dialog:GODS.186.Hee,"Instead, you have been selected for a Special Position and the highest privilege that we can bestow upon a Vassal.","",2025-08-21T22:17:44.857Z
+24,E8_TheGods_localization,"","",SAY.Dialog:GODS.175.Haw,"As our godly burden is to carry the Universe upon our back, we cannot interfere in the Material World without putting all life at risk.","",2025-08-21T22:17:44.857Z
+25,E8_TheGods_localization,"","",SAY.Dialog:GODS.193.Haw,"Thus, when we can, we elect a Vassal to be our Avatar.","",2025-08-21T22:17:44.857Z
+26,E8_TheGods_localization,"","",SAY.Dialog:GODS.194.Haw,"It is through this Vassal, this ""Golden Ass"", that we return to the Material World and initiate our holy Revolutions.","",2025-08-21T22:17:44.857Z
+27,E8_TheGods_localization,"","",SAY.Dialog:GODS.196.Hee,"Once upon a time, our Vassals and their labours were seen as sacred.","",2025-08-21T22:17:44.857Z
+28,E8_TheGods_localization,"","",SAY.Dialog:GODS.197.Hee,"They were worshipped and loved by all for their generosity, especially by Humans.","",2025-08-21T22:17:44.857Z
+29,E8_TheGods_localization,"","",SAY.Dialog:GODS.198.Hee,"But, after centuries of collaboration between Asses and Humans, our Vassals are worshipped no more.","",2025-08-21T22:17:44.857Z
+30,E8_TheGods_localization,"","",SAY.Dialog:GODS.200.Hee,"The Humans, who once begged us for our Powers of Change and for whom we have fought so many wars, now play at being gods of change themselves.","",2025-08-21T22:17:44.857Z
+31,E8_TheGods_localization,"","",SAY.Dialog:GODS.201.Hee,Our Vassals now return to the Astral Plane shaken by endless suffering and corrupted by apathy.,"",2025-08-21T22:17:44.857Z
+32,E8_TheGods_localization,"","",SAY.Dialog:GODS.203.Haw,The Humans' games must come to an end.,"",2025-08-21T22:17:44.857Z
+33,E8_TheGods_localization,"","",SAY.Dialog:GODS.204.Haw,We look forward to working with you and rectifying this sorrowful situation.,"",2025-08-21T22:17:44.857Z
+34,E8_TheGods_localization,Option 1,"",MENU.Dialog:GODS.214,*COUGH*,"",2025-08-21T22:17:44.857Z
+35,E8_TheGods_localization,"","",SAY.Dialog:GODS.217.Sick Ass,*COUGH*?,"",2025-08-21T22:17:44.857Z
+36,E8_TheGods_localization,"","",SAY.Dialog:GODS.219.Hee,"Yes, to become the Golden Ass is to become one with us and the Universe.","",2025-08-21T22:17:44.857Z
+37,E8_TheGods_localization,"","",SAY.Dialog:GODS.221.Hee,Your Soul will never undergo Reassignment again.,"",2025-08-21T22:17:44.857Z
+38,E8_TheGods_localization,Option 2,"",MENU.Dialog:GODS.215,*COUGH COUGH*,"",2025-08-21T22:17:44.857Z
+39,E8_TheGods_localization,"","",SAY.Dialog:GODS.224.Sick Ass,*COUGH COUGH*?,"",2025-08-21T22:17:44.857Z
+40,E8_TheGods_localization,"","",SAY.Dialog:GODS.227.Hee,"No, your Soul will never undergo Reassignment again.","",2025-08-21T22:17:44.857Z
+41,E8_TheGods_localization,"","",SAY.Dialog:GODS.228.Hee,To become the Golden Ass is to become one with us and the Universe.,"",2025-08-21T22:17:44.857Z
+42,E8_TheGods_localization,Main branch,"",SAY.Dialog:GODS.210.THE GODS,We thank you for your service.,"",2025-08-21T22:17:44.857Z
+43,E8_TheGods_localization,Sick Ass is absorbed by the Gods,"",SAY.Dialog:GODS.230.THE GODS,Prepare to become one with your Gods.,"",2025-08-21T22:17:44.857Z
+44,E8_TheGods_localization,Said inside the mind(s) of the Gods,"",SAY.Dialog:GODS.326.Hee,Shall we do Operation Coup d'Etat?,"",2025-08-21T22:17:44.857Z
+45,E8_TheGods_localization,"","",SAY.Dialog:GODS.327.Haw,"No no, the Humans are too powerful to play that.","",2025-08-21T22:17:44.857Z
+46,E8_TheGods_localization,"","",SAY.Dialog:GODS.328.Hee,Operation Peaceful March then?,"",2025-08-21T22:17:44.857Z
+47,E8_TheGods_localization,"","",SAY.Dialog:GODS.329.Haw,That play hasn't shown many results in recent history. We should try something else.,"",2025-08-21T22:17:44.857Z
+48,E8_TheGods_localization,"","",SAY.Dialog:GODS.331.Hee,I know.,"",2025-08-21T22:17:44.857Z
+49,E8_TheGods_localization,"","",SAY.Dialog:GODS.332.Hee,What about Operation Prophet?,"",2025-08-21T22:17:44.857Z
+50,E8_TheGods_localization,"","",SAY.Dialog:GODS.333.Hee,We haven't used that in centuries!,"",2025-08-21T22:17:44.857Z
+51,E8_TheGods_localization,"","",SAY.Dialog:GODS.335.Haw,Ah yes. Operation Prophet.,"",2025-08-21T22:17:44.857Z
+52,E8_TheGods_localization,"","",SAY.Dialog:GODS.336.Haw,The Humans will never see it coming!,"",2025-08-21T22:17:44.857Z

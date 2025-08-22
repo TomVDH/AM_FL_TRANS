@@ -1,0 +1,576 @@
+# File: 6_asses.masses_E6Proxy
+# Processed: 2025-08-21T22:17:44.729Z
+# Sheets: 8
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+2,E6_EpisodeTitle_localization,"","Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",WRITE.Dialog:Localizer.5,EPISODE SIX,"Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",2025-08-21T22:17:44.729Z
+3,E6_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.7,THE DREAM,"",2025-08-21T22:17:44.729Z
+4,E6_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.8,Press X to Begin,"",2025-08-21T22:17:44.729Z
+3,E6_Nightmare_localization,Hard Ass wakes up to a hit on the head via Jenny.,"",SAY.Dialog:Jenny_Intro.20.Miner Jenny,No sleeping on the job you useless donkey!,"",2025-08-21T22:17:44.729Z
+4,E6_Nightmare_localization,"","",SAY.Dialog:Jenny_Intro.37.Miner Jenny,I'm working overtime too—you don't see ME nodding off.,"",2025-08-21T22:17:44.729Z
+5,E6_Nightmare_localization,"","",SAY.Dialog:Jenny_Intro.43.Miner Jenny,You're with me on Level 300 today!,"",2025-08-21T22:17:44.729Z
+6,E6_Nightmare_localization,"","",SAY.Dialog:Jenny_Intro.48.Miner Jenny,At least I don't have to be with that lazy donkey.,"",2025-08-21T22:17:44.729Z
+7,E6_Nightmare_localization,Jenny leaves and Hard Ass is free to roam around the Mines and talk to the others.,"",SAY.Dialog:Jenny_Intro.49.Miner Jenny,I'm done wasting my time on slackers!,"",2025-08-21T22:17:44.729Z
+8,E6_Nightmare_localization,Start NPC dialogue.,"",SAY.Dialog:Kick_Normal.20.Kick Ass,COMRADE!,"",2025-08-21T22:17:44.729Z
+9,E6_Nightmare_localization,"","",SAY.Dialog:Kick_Normal.34.Kick Ass,Thanks for working with Jenny today.,"",2025-08-21T22:17:44.729Z
+10,E6_Nightmare_localization,"","",SAY.Dialog:Kick_Normal.33.Kick Ass,Lazy could NOT handle another shift with HER.,"",2025-08-21T22:17:44.729Z
+11,E6_Nightmare_localization,End NPC dialogue.,"",SAY.Dialog:Kick_Normal.35.Kick Ass,Sick and I just finished moving the last piece of that new Boring-Machine—and @#$%&! it's HEAVY.,"",2025-08-21T22:17:44.729Z
+12,E6_Nightmare_localization,Repeater line.,"",SAY.Dialog:Kick_Normal.21.Kick Ass,No way that Boring-Machine can BLAST through a day of work LIKE WE CAN.,"",2025-08-21T22:17:44.729Z
+13,E6_Nightmare_localization,NPC Dialogue (single line). Repeater line.,"",SAY.Dialog:Sick_Normal.20.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.729Z
+14,E6_Nightmare_localization,Start NPC dialogue.,"",SAY.Dialog:Butte_Normal.20.Mr. Butte,My favourite donkey!,"",2025-08-21T22:17:44.729Z
+15,E6_Nightmare_localization,"","",SAY.Dialog:Butte_Normal.36.Mr. Butte,Are you ready for the big day?,"",2025-08-21T22:17:44.729Z
+16,E6_Nightmare_localization,"","",SAY.Dialog:Butte_Normal.35.Mr. Butte,"We're going to get the Boring Machine up and running, and it'll save our Mine from going under.","",2025-08-21T22:17:44.729Z
+17,E6_Nightmare_localization,"","",SAY.Dialog:Butte_Normal.34.Mr. Butte,"Once I recoup the money I spent on the Machine, I'll send my son, Cole, to that fancy university he got into...","",2025-08-21T22:17:44.729Z
+18,E6_Nightmare_localization,End NPC dialogue.,"",SAY.Dialog:Butte_Normal.33.Mr. Butte,And all of my workers will be taken care of too!,"",2025-08-21T22:17:44.729Z
+19,E6_Nightmare_localization,Repeater line.,"",SAY.Dialog:Butte_Normal.21.Mr. Butte,This Machine will fix everything... I know it!,"",2025-08-21T22:17:44.729Z
+20,E6_Nightmare_localization,Start NPC dialogue.,"",SAY.Dialog:Lazy.1.Lazy Ass,Heyyyy Hard! Thanks for switching shifts with me.,"",2025-08-21T22:17:44.729Z
+21,E6_Nightmare_localization,"","",SAY.Dialog:Lazy.8.Lazy Ass,I love 'working' with Cole Butte.,"",2025-08-21T22:17:44.729Z
+22,E6_Nightmare_localization,"","",SAY.Dialog:Lazy.9.Lazy Ass,We sit together on Level 300 while he talks about Robots and smokes.,"",2025-08-21T22:17:44.729Z
+23,E6_Nightmare_localization,End NPC dialogue. Lazy and Cole leave.,"",SAY.Dialog:Lazy.10.Lazy Ass,"Boredom is freedom, ya know?","",2025-08-21T22:17:44.729Z
+24,E6_Nightmare_localization,Start NPC dialogue.,"",SAY.Dialog:Sad_Normal.36.Sad Ass,Hullo Comrade...,"",2025-08-21T22:17:44.729Z
+25,E6_Nightmare_localization,"","",SAY.Dialog:Sad_Normal.20.Sad Ass,Thanks again for taking Lazy's shift today.,"",2025-08-21T22:17:44.729Z
+26,E6_Nightmare_localization,End NPC dialogue.,"",SAY.Dialog:Sad_Normal.35.Sad Ass,I love seeing her when she is happy.,"",2025-08-21T22:17:44.729Z
+27,E6_Nightmare_localization,Repeater line.,"",SAY.Dialog:Sad_Normal.21.Sad Ass,Who could say no to Lazy's beautiful grey eyes?,"",2025-08-21T22:17:44.729Z
+28,E6_Nightmare_localization,Start NPC dialogue.,"",SAY.Dialog:Jenny_Normal.20.Miner Jenny,WHAT TOOK YOU SO LONG YOU PIECE OF SHIT?!,"",2025-08-21T22:17:44.729Z
+29,E6_Nightmare_localization,"","",SAY.Dialog:Jenny_Normal.37.Miner Jenny,I apologize donkey... I'm emotional.,"",2025-08-21T22:17:44.729Z
+30,E6_Nightmare_localization,"","",SAY.Dialog:Jenny_Normal.40.Miner Jenny,I dumped Cole yesterday.,"",2025-08-21T22:17:44.729Z
+31,E6_Nightmare_localization,"","",SAY.Dialog:Jenny_Normal.35.Miner Jenny,*SOB*,"",2025-08-21T22:17:44.729Z
+32,E6_Nightmare_localization,End NPC dialogue.,"",SAY.Dialog:Jenny_Normal.41.Miner Jenny,"After all these years, I needed a break.","",2025-08-21T22:17:44.729Z
+33,E6_Nightmare_localization,Repeater line.,"",SAY.Dialog:Jenny_Normal.21.Miner Jenny,Maybe I should leave and get a job in Mecha City...,"",2025-08-21T22:17:44.729Z
+34,E6_Nightmare_localization,"Start NPC dialogue when getting to the furtherst right end of the map.
+Cave in starts to happen.","",SAY.Dialog:LazyCole.2.Lazy Ass,"Heyyyy Hard Ass, what's shakin'? Haha.","",2025-08-21T22:17:44.729Z
+35,E6_Nightmare_localization,"","",SAY.Dialog:LazyCole.5.Lazy Ass,"These rocks are really coming down, eh?","",2025-08-21T22:17:44.729Z
+36,E6_Nightmare_localization,"","",SAY.Dialog:LazyCole.23.Lazy Ass,You better get outta here.,"",2025-08-21T22:17:44.729Z
+37,E6_Nightmare_localization,End NPC dialogue. Lazy leaves and it becomes clear this is Hard Ass's nightmare.,"",SAY.Dialog:LazyCole.15.Lazy Ass,Tell Sad Ass not to worry—Cole's going to find us a way out.,"",2025-08-21T22:17:44.729Z
+38,E6_Nightmare_localization,"NPC Dialogue (single line). Nightmare sequence.
+Non-repeater line.","",SAY.Dialog:Worker.1.Miner With No Legs,{s}{s=7}My... legs...{/s},"",2025-08-21T22:17:44.729Z
+39,E6_Nightmare_localization,NPC Dialogue. Nightmare sequence.,"",SAY.Dialog:Jenny_Horror.1.Miner Jenny,I never made it to Mecha City...,"",2025-08-21T22:17:44.729Z
+40,E6_Nightmare_localization,Jenny kills herself with her shovel.,"",SAY.Dialog:Jenny_Horror.9.Miner Jenny,BECAUSE YOU KILLED ME!,"",2025-08-21T22:17:44.729Z
+41,E6_Nightmare_localization,"NPC Dialogue (single line). Nightmare sequence.
+Sad explodes.","",SAY.Dialog:Sad_Horror.1.Sad Ass,HAHAHAHAHAHAHAHAHAHA...,"",2025-08-21T22:17:44.729Z
+42,E6_Nightmare_localization,NPC Dialogue. Nightmare sequence.,"",SAY.Dialog:Butte_Horror.1.Mr. Butte,*glug glug*,"",2025-08-21T22:17:44.729Z
+43,E6_Nightmare_localization,Mr. Butte gets ripped apart by a mini-boring machine emerging from inside of him.,"",SAY.Dialog:Butte_Horror.6.Mr. Butte,...I don't feel so good—,"",2025-08-21T22:17:44.729Z
+44,E6_Nightmare_localization,NPC Dialogue. Nightmare sequence.,"",SAY.Dialog:Kick_Horror.1.Kick Ass,—this is all YOUR FAULT!,"",2025-08-21T22:17:44.729Z
+45,E6_Nightmare_localization,"","",SAY.Dialog:Kick_Horror.11.Kick Ass,You tore Sick AWAY FROM ME!,"",2025-08-21T22:17:44.729Z
+46,E6_Nightmare_localization,Kick Ass vomits himself to death.,"",SAY.Dialog:Kick_Horror.9.Kick Ass,And you made me into a KILLER.,"",2025-08-21T22:17:44.729Z
+47,E6_Nightmare_localization,NPC Dialogue. Nightmare sequence.,"",SAY.Dialog:Sick_Horror.1.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.729Z
+48,E6_Nightmare_localization,Sick Ass falls over dead and an Indiana Jones boulder appears behind her.,"",SAY.Dialog:Sick_Horror.14.Sick Ass,{s}{s=10}Turn around.{/s},"",2025-08-21T22:17:44.729Z
+49,E6_Nightmare_localization,"A dialogue between Good Hard Ass and Evil Hard Ass ensues.
+Good Hard Ass.","",SAY.Dialog:FoundLazy.24.Hard Ass,We failed to save Lazy.,"",2025-08-21T22:17:44.729Z
+50,E6_Nightmare_localization,"","",SAY.Dialog:FoundLazy.1.Hard Ass,You can't keep running from the truth.,"",2025-08-21T22:17:44.729Z
+51,E6_Nightmare_localization,Evil Hard Ass (Player).,"",SAY.Dialog:FoundLazy.8.Hard Ass,I have made up for our mistake.,"",2025-08-21T22:17:44.729Z
+52,E6_Nightmare_localization,"","",SAY.Dialog:FoundLazy.25.Hard Ass,I am protecting the Herd.,"",2025-08-21T22:17:44.729Z
+53,E6_Nightmare_localization,Good Hard Ass.,"",SAY.Dialog:FoundLazy.7.Hard Ass,You're miserable.,"",2025-08-21T22:17:44.729Z
+54,E6_Nightmare_localization,Evil Hard Ass (Player).,"",SAY.Dialog:FoundLazy.12.Hard Ass,Revolutions have no room for emotions.,"",2025-08-21T22:17:44.729Z
+55,E6_Nightmare_localization,Good Hard Ass.,"",SAY.Dialog:FoundLazy.11.Hard Ass,Revolutions can't be won alone.,"",2025-08-21T22:17:44.729Z
+56,E6_Nightmare_localization,"","",SAY.Dialog:FoundLazy.27.Hard Ass,You underestimated our friends and let the Herd split apart.,"",2025-08-21T22:17:44.729Z
+57,E6_Nightmare_localization,Evil Hard Ass (Player).,"",SAY.Dialog:FoundLazy.30.Hard Ass,They weren't ready.,"",2025-08-21T22:17:44.729Z
+58,E6_Nightmare_localization,Good Hard Ass.,"",SAY.Dialog:FoundLazy.10.Hard Ass,You never gave them a chance.,"",2025-08-21T22:17:44.729Z
+59,E6_Nightmare_localization,"","",SAY.Dialog:FoundLazy.9.Hard Ass,I'm not going to sit back and watch you destroy us.,"",2025-08-21T22:17:44.729Z
+60,E6_Nightmare_localization,A showdown (fight) between Evil Hard Ass and the Nightmare version of the Herd occurs.,"",SAY.Dialog:FoundLazy.31.Hard Ass,I'm taking back control now whether you like it or not.,"",2025-08-21T22:17:44.729Z
+61,E6_Nightmare_localization,x,"",SAY.Dialog_Thirsty.38.,"Comrade Sturdy! Hell, you look parched!","",2025-08-21T22:17:44.729Z
+62,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.41.,The Bar needs something beautiful...,"",2025-08-21T22:17:44.729Z
+63,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.43.,Mosey on over and take a sip of my new drink special: The Pail Ale!,"",2025-08-21T22:17:44.729Z
+64,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.44.,"Tonight, The Bottoms Up Bar is finally openin'!","",2025-08-21T22:17:44.729Z
+65,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.45.,I think this here bar is missin' the somethin' special that makes it worth comin' to.,"",2025-08-21T22:17:44.729Z
+66,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.46.,"Say, if yer lookin' for a distraction...","",2025-08-21T22:17:44.729Z
+67,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.47.,But hey at least she's keepin' outta trouble.,"",2025-08-21T22:17:44.729Z
+68,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.48.,Lemme guess—{$NewName} still spending all her time inside playin' Rocks with Bad Ass?,"",2025-08-21T22:17:44.729Z
+69,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.49.,"It's looking good, Comrade.","",2025-08-21T22:17:44.729Z
+70,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.50.,Always been my darn DREAM to have a place for us Asses to take a break and share some good 'ol water.,"",2025-08-21T22:17:44.729Z
+71,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.51.,I could definitely use a drink and an ear to bend.,"",2025-08-21T22:17:44.729Z
+72,E6_Nightmare_localization,This dialogue is in the wrong scene. CUT.,"",SAY.Dialog_Thirsty.54.,What do ya think it needs?,"",2025-08-21T22:17:44.729Z
+3,E6_BattleHard_localization,Good Hard Ass.,"",SAY.DialogMaster.1.Hard Ass,You are weak.,"",2025-08-21T22:17:44.729Z
+4,E6_BattleHard_localization,Evil Hard Ass (Player).,"",SAY.DialogMaster.71.Hard Ass,You cannot beat me one-on-one.,"",2025-08-21T22:17:44.729Z
+5,E6_BattleHard_localization,"Good Hard Ass. The fight begins. 
+The other Asses enter the fight one by one.","",SAY.DialogMaster.72.Hard Ass,Who says I'm alone?\n,"",2025-08-21T22:17:44.729Z
+6,E6_BattleHard_localization,NPC Dialogue on entrance to the fight. (Spoken by Thirsty),"",SAY.DialogMaster.19.Thirsty Ass,"Heck, I don't have a drop of respect left for you.","",2025-08-21T22:17:44.729Z
+7,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,"",SAY.DialogMaster.74.Hard Ass,Prepare to become obsolete.,"",2025-08-21T22:17:44.729Z
+8,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,"",SAY.DialogMaster.29.Sad Ass,Time to put you out of YOUR misery...,"",2025-08-21T22:17:44.729Z
+9,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,"",SAY.DialogMaster.34.Sturdy Ass,"Comrade, you've gotten weak. It's only a matter of time until you crack.","",2025-08-21T22:17:44.729Z
+10,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,"",SAY.DialogMaster.39.Nice Ass,"Golly, you're about to get pounded, in less than two minutes!","",2025-08-21T22:17:44.729Z
+11,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,"",SAY.DialogMaster.44.{$NewName},"Uncle Hard, everyone says you're a two-faced liar!","",2025-08-21T22:17:44.729Z
+12,E6_BattleHard_localization,Player Attack.,"",WRITE.DialogLocalizer.45,Vengence,"",2025-08-21T22:17:44.729Z
+13,E6_BattleHard_localization,UI.,"",WRITE.DialogLocalizer.40,Strike one target,"",2025-08-21T22:17:44.729Z
+14,E6_BattleHard_localization,Player Attack.,"",WRITE.DialogLocalizer.47,Torment,"",2025-08-21T22:17:44.729Z
+15,E6_BattleHard_localization,UI.,"",WRITE.DialogLocalizer.39,Strike one target,"",2025-08-21T22:17:44.729Z
+16,E6_BattleHard_localization,Player Attack.,"",WRITE.DialogLocalizer.48,Trauma,"",2025-08-21T22:17:44.729Z
+17,E6_BattleHard_localization,UI.,"",WRITE.DialogLocalizer.41,Strike multiple targets,"",2025-08-21T22:17:44.729Z
+18,E6_BattleHard_localization,Player Attack.,"",WRITE.DialogLocalizer.49,Endure,"",2025-08-21T22:17:44.729Z
+19,E6_BattleHard_localization,UI.,"",WRITE.DialogLocalizer.42,Raise your defence,"",2025-08-21T22:17:44.729Z
+20,E6_BattleHard_localization,Player Attack.,"",WRITE.DialogLocalizer.50,Lick Wounds,"",2025-08-21T22:17:44.729Z
+21,E6_BattleHard_localization,UI.,"",WRITE.DialogLocalizer.43,Recover your health,"",2025-08-21T22:17:44.729Z
+22,E6_BattleHard_localization,Player Attack.,"",WRITE.DialogLocalizer.46,Annihilation,"",2025-08-21T22:17:44.729Z
+23,E6_BattleHard_localization,UI.,"",WRITE.DialogLocalizer.44,Critically strike multiple targets,"",2025-08-21T22:17:44.729Z
+24,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.1,Acceleration,"",2025-08-21T22:17:44.729Z
+25,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.2,Annihilation,"",2025-08-21T22:17:44.729Z
+26,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.3,Bleeding Heart,"",2025-08-21T22:17:44.729Z
+27,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.4,Breach,"",2025-08-21T22:17:44.729Z
+28,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.5,Bum Rush,"",2025-08-21T22:17:44.729Z
+29,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.6,Catastrophe,"",2025-08-21T22:17:44.729Z
+30,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.7,Courage,"",2025-08-21T22:17:44.729Z
+31,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.8,Dominate,"",2025-08-21T22:17:44.729Z
+32,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.9,Drain,"",2025-08-21T22:17:44.729Z
+33,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.10,Endure,"",2025-08-21T22:17:44.729Z
+34,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.11,Gaslighting,"",2025-08-21T22:17:44.729Z
+35,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.12,Helmet Headbutt,"",2025-08-21T22:17:44.729Z
+36,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.13,High Noon,"",2025-08-21T22:17:44.729Z
+37,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.14,Impenetrable,"",2025-08-21T22:17:44.729Z
+38,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.15,Lick Wounds,"",2025-08-21T22:17:44.729Z
+39,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.16,Plow,"",2025-08-21T22:17:44.729Z
+40,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.17,Quench,"",2025-08-21T22:17:44.729Z
+41,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.18,Rock Bottom,"",2025-08-21T22:17:44.729Z
+42,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.19,Rocks,"",2025-08-21T22:17:44.729Z
+43,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.20,Scrap,"",2025-08-21T22:17:44.729Z
+44,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.21,Stomping Ground,"",2025-08-21T22:17:44.729Z
+45,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.22,Trauma,"",2025-08-21T22:17:44.729Z
+46,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.23,Torment,"",2025-08-21T22:17:44.729Z
+47,E6_BattleHard_localization,Attack.,"",WRITE.DialogLocalizer.24,Vengence,"",2025-08-21T22:17:44.729Z
+48,E6_BattleHard_localization,UI. Target.,"",WRITE.DialogLocalizer.26,Hard Ass,"",2025-08-21T22:17:44.729Z
+49,E6_BattleHard_localization,UI. Target.,"",WRITE.DialogLocalizer.30,Hard Ass,"",2025-08-21T22:17:44.729Z
+50,E6_BattleHard_localization,UI. Target.,"",WRITE.DialogLocalizer.31,Nice Ass,"",2025-08-21T22:17:44.729Z
+51,E6_BattleHard_localization,UI. Target.,"",WRITE.DialogLocalizer.32,Thirsty Ass,"",2025-08-21T22:17:44.729Z
+52,E6_BattleHard_localization,UI. Target.,"",WRITE.DialogLocalizer.33,Sturdy Ass,"",2025-08-21T22:17:44.729Z
+53,E6_BattleHard_localization,UI. Target.,"",WRITE.DialogLocalizer.36,Sad Ass,"",2025-08-21T22:17:44.729Z
+54,E6_BattleHard_localization,"UI. example: ""Sad Ass uses:","",WRITE.DialogLocalizer.53,uses,"",2025-08-21T22:17:44.729Z
+55,E6_BattleHard_localization,Evil Hard Ass (Player) WINS.,"",SAY.DialogMaster.4.Hard Ass,No compromises.,"",2025-08-21T22:17:44.729Z
+56,E6_BattleHard_localization,Evil Hard Ass (Player) LOSES.,"",SAY.DialogMaster.6.Hard Ass,We're just trying to help.,"",2025-08-21T22:17:44.729Z
+3,E6_World_localization,1.1 Evil Hard Ass Wins,"",SAY.Dialog:PostNightmare.15.Hard Ass,I'll kill ANYONE in my way!,"",2025-08-21T22:17:44.729Z
+4,E6_World_localization,"","",SAY.Dialog:PostNightmare.134.Hard Ass,Revolutions have no room for emotions.,"",2025-08-21T22:17:44.729Z
+5,E6_World_localization,"Branch (1.1, and 1.2) converge. 
+The scene fades in to Sturdy Ass and the Foal standing in front of Hard Ass.","",SAY.Dialog:PostNightmare.7.Sturdy Ass,Comrade?,"",2025-08-21T22:17:44.729Z
+6,E6_World_localization,"","",SAY.Dialog:PostNightmare.23.Sturdy Ass,It's not like you to nod off at your post.,"",2025-08-21T22:17:44.729Z
+7,E6_World_localization,"","",SAY.Dialog:PostNightmare.19.Hard Ass,I'm... fine Comrade.,"",2025-08-21T22:17:44.729Z
+8,E6_World_localization,"","",SAY.Dialog:PostNightmare.22.Hard Ass,It was a momentary lapse.,"",2025-08-21T22:17:44.729Z
+9,E6_World_localization,"","",SAY.Dialog:PostNightmare.20.{$NewName},Hi Uncle Hard! How many Humans have you killed today?,"",2025-08-21T22:17:44.729Z
+10,E6_World_localization,"","",SAY.Dialog:PostNightmare.24.Sturdy Ass,{$NewName}!!,"",2025-08-21T22:17:44.729Z
+11,E6_World_localization,"","",SAY.Dialog:PostNightmare.25.{$NewName},Ugh! It's just a QUESTION.,"",2025-08-21T22:17:44.729Z
+12,E6_World_localization,"","",SAY.Dialog:PostNightmare.26.{$NewName},Yeesh.,"",2025-08-21T22:17:44.729Z
+13,E6_World_localization,"","",SAY.Dialog:PostNightmare.27.{$NewName},"Uncle Hard, Comrade Mother and I are spending 'quality time' together, wanna come?","",2025-08-21T22:17:44.729Z
+14,E6_World_localization,"","",SAY.Dialog:PostNightmare.28.Sturdy Ass,Uncle Hard can't abandon his post.,"",2025-08-21T22:17:44.729Z
+15,E6_World_localization,"","",SAY.Dialog:PostNightmare.29.Sturdy Ass,The Humans are still trying to breach the Barricades and our Territory must be protected.,"",2025-08-21T22:17:44.729Z
+16,E6_World_localization,1.2 Good Hard Ass wins,"",SAY.Dialog:PostNightmare.16.Hard Ass,It all stops now.,"",2025-08-21T22:17:44.729Z
+17,E6_World_localization,"","",SAY.Dialog:PostNightmare.133.Hard Ass,Revolutions can't be won alone.,"",2025-08-21T22:17:44.729Z
+18,E6_World_localization,Branch 2.1. EVIL version of Hard Ass WON.,"",SAY.Dialog:PostNightmare.91.Hard Ass,I must keep the Humans out.,"",2025-08-21T22:17:44.729Z
+19,E6_World_localization,Jump to line x.,"",SAY.Dialog:PostNightmare.92.Hard Ass,They are a threat to our autonomy.,"",2025-08-21T22:17:44.729Z
+20,E6_World_localization,Branch 2.2. GOOD version of Hard Ass WON. Jump to line x.,"",SAY.Dialog:PostNightmare.93.Hard Ass,We need to protect each other.,"",2025-08-21T22:17:44.729Z
+21,E6_World_localization,"","",SAY.Dialog:PostNightmare.67.{$NewName},When will Aunty Smart and the others decide to come home?,"",2025-08-21T22:17:44.729Z
+22,E6_World_localization,The sound of a vehicle approaching. Hard Ass leaves to take care of the intruders.,"",SAY.Dialog:PostNightmare.70.Hard Ass,Duty calls.,"",2025-08-21T22:17:44.729Z
+23,E6_World_localization,"","",SAY.Dialog:PostNightmare.73.Sturdy Ass,{$NewName}! I won't tell you again: the others have gone against the Gods.,"",2025-08-21T22:17:44.729Z
+24,E6_World_localization,"","",SAY.Dialog:PostNightmare.75.Sturdy Ass,"And if they ever come back, this isn't their home anymore.","",2025-08-21T22:17:44.729Z
+25,E6_World_localization,"","",SAY.Dialog:PostNightmare.76.{$NewName},...,"",2025-08-21T22:17:44.729Z
+26,E6_World_localization,"","",SAY.Dialog:PostNightmare.77.{$NewName},Can we head back to the Old Village now?,"",2025-08-21T22:17:44.729Z
+27,E6_World_localization,"After this line, the Foal and Sturdy expore the map in search of the Theatre.","",SAY.Dialog:PostNightmare.78.{$NewName},You promised to show me where the Old Theatre is.,"",2025-08-21T22:17:44.729Z
+28,E6_World_localization,Randomized dialogue for when Sturdy tries to talk to the Foal.,"",SAY.Dialog:FoalFollow.26.{$NewName},"Let's go, let's go, let's go!","",2025-08-21T22:17:44.729Z
+29,E6_World_localization,Randomized dialogue for when Sturdy tries to talk to the Foal.,"",SAY.Dialog:FoalFollow.27.{$NewName},Is this what it was like on the day of the protest?,"",2025-08-21T22:17:44.729Z
+30,E6_World_localization,Randomized dialogue for when Sturdy tries to talk to the Foal.,"",SAY.Dialog:FoalFollow.28.{$NewName},The sun is so bright!,"",2025-08-21T22:17:44.729Z
+31,E6_World_localization,"","",SAY.Dialog:FoalFollow.30.{$NewName},It's a good thing I have my helmet.,"",2025-08-21T22:17:44.729Z
+32,E6_World_localization,Randomized dialogue for when Sturdy tries to talk to the Foal.,"",SAY.Dialog:FoalFollow.29.{$NewName},WAHOO! There are so many cool rocks out here!,"",2025-08-21T22:17:44.729Z
+33,E6_World_localization,A fork in the road. Sturdy and the Foal discuss which way to go to get to the Theatre.,"",SAY.Dialog:ShortWayLongWay.45.Sturdy Ass,Which way should we go?,"",2025-08-21T22:17:44.729Z
+34,E6_World_localization,"","",SAY.Dialog:ShortWayLongWay.62.Sturdy Ass,The Short Way to the South or the Long Way to the North East?,"",2025-08-21T22:17:44.729Z
+35,E6_World_localization,"","",SAY.Dialog:ShortWayLongWay.57.{$NewName},"Ugh. Whatever, Comrade Mother.","",2025-08-21T22:17:44.729Z
+36,E6_World_localization,"After this, Sturdy chooses which way to go.","",SAY.Dialog:ShortWayLongWay.58.{$NewName},"I don't care which way we go, as long we get to the Old Village!","",2025-08-21T22:17:44.729Z
+37,E6_World_localization,"In the long way, Sturdy reminisces at an old shrine.
+This version occurs if The Foal is present.","",SAY.Dialog:Shrine.10.Sturdy Ass,Something about this place makes me feel closer to the Gods.,"",2025-08-21T22:17:44.729Z
+38,E6_World_localization,"In the long way, Sturdy reminisces at an old shrine.
+This version occurs if The Foal is NOT present.","",SAY.Dialog:Shrine.36.Sturdy Ass,I'll have to bring {$NewName} here next time we have quality time together.,"",2025-08-21T22:17:44.729Z
+39,E6_World_localization,"","",SAY.Dialog:Shrine.38.Sturdy Ass,Something about this place makes me feel closer to the Gods.,"",2025-08-21T22:17:44.729Z
+40,E6_World_localization,"Dialogue for when Sturdy and the Foal arrive from the South entrance of Bumpkin Village.
+
+Note for translators: this is the same dialogue as entering from the East entrance.","",SAY.Dialog:SturdyArrivesAtVillage.396.Sturdy Ass,"It's a shame you never saw this place as it was, before the Fire, before the Machines.","",2025-08-21T22:17:44.729Z
+41,E6_World_localization,"","",SAY.Dialog:SturdyArrivesAtVillage.397.Sturdy Ass,I used to bring deliveries here from the Farm every day—,"",2025-08-21T22:17:44.729Z
+42,E6_World_localization,"","",SAY.Dialog:SturdyArrivesAtVillage.398.{$NewName},—which one's the 'Theatre'?,"",2025-08-21T22:17:44.729Z
+43,E6_World_localization,"","",SAY.Dialog:SturdyArrivesAtVillage.399.Sturdy Ass,The 'Theatre'? Since when were you so interested in Theatre?,"",2025-08-21T22:17:44.729Z
+44,E6_World_localization,"","",SAY.Dialog:SturdyArrivesAtVillage.400.{$NewName},Everyone is interested in Theatre!,"",2025-08-21T22:17:44.729Z
+45,E6_World_localization,Sturdy and the Foal enter the village and look for the Theatre.,"",SAY.Dialog:SturdyArrivesAtVillage.402.Sturdy Ass,Follow me then. I'll tell you a story when we get there.,"",2025-08-21T22:17:44.729Z
+46,E6_World_localization,"Dialogue for when Sturdy and the Foal arrive from the East entrance of Bumpkin Village.
+
+Note for translators: this is the same dialogue as entering from the South entrance.","",SAY.Dialog:SturdyArrivesAtVillage.418.Sturdy Ass,"It's a shame you never saw this place as it was, before the Fire, before the Machines.","",2025-08-21T22:17:44.729Z
+47,E6_World_localization,"","",SAY.Dialog:SturdyArrivesAtVillage.419.Sturdy Ass,I used to bring deliveries here from the Farm every day—,"",2025-08-21T22:17:44.729Z
+48,E6_World_localization,"","",SAY.Dialog:SturdyArrivesAtVillage.420.{$NewName},—which one's the 'Theatre'?,"",2025-08-21T22:17:44.729Z
+49,E6_World_localization,"","",SAY.Dialog:SturdyArrivesAtVillage.421.Sturdy Ass,The 'Theatre'? Since when were you so interested in Theatre?,"",2025-08-21T22:17:44.729Z
+50,E6_World_localization,"","",SAY.Dialog:SturdyArrivesAtVillage.422.{$NewName},Everyone is interested in Theatre!,"",2025-08-21T22:17:44.729Z
+51,E6_World_localization,Sturdy and the Foal enter the village and look for the Theatre.,"",SAY.Dialog:SturdyArrivesAtVillage.424.Sturdy Ass,Follow me then. I'll tell you a story when we get there.,"",2025-08-21T22:17:44.729Z
+52,E6_World_localization,Dialogue that plays when Sturdy tries to backtrack / leave Bumpkin too early.,"",SAY.Dialog:AttemptToBacktrack_STARTOFF.4.{$NewName},Mother! Where are you going?!,"",2025-08-21T22:17:44.729Z
+53,E6_World_localization,"","",SAY.Dialog:AttemptToBacktrack_STARTOFF.5.{$NewName},You promised to show me the Theatre!,"",2025-08-21T22:17:44.729Z
+54,E6_World_localization,Dialogue that plays when Sturdy and the Foal arrive at the Theatre.,"",SAY.Dialog:EnterTheTheatre.7.Sturdy Ass,This building is a remnant of another time.,"",2025-08-21T22:17:44.729Z
+55,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.109.Sturdy Ass,"Before the Humans betrayed us, I used to perform with them here.","",2025-08-21T22:17:44.729Z
+56,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.6.{$NewName},Huh? You never told me that.,"",2025-08-21T22:17:44.729Z
+57,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.43.Sturdy Ass,"Well, you never asked...","",2025-08-21T22:17:44.729Z
+58,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.111.Sturdy Ass,"Once a year, I used to carry a Human child on my back and stand very still under bright lights.","",2025-08-21T22:17:44.729Z
+59,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.110.Sturdy Ass,It was an elaborate spectacle.,"",2025-08-21T22:17:44.729Z
+60,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.112.Sturdy Ass,I was the star.,"",2025-08-21T22:17:44.729Z
+61,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.50.{$NewName},Can I go inside?,"",2025-08-21T22:17:44.729Z
+62,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.115.Sturdy Ass,It's not safe. The Theatre might collapse at any moment.,"",2025-08-21T22:17:44.729Z
+63,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.116.Sturdy Ass,The structure lacks integrity and we can't fit through the door.,"",2025-08-21T22:17:44.729Z
+64,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.113.{$NewName},I can totally fit and I'll be super safe.,"",2025-08-21T22:17:44.729Z
+65,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.117.{$NewName},I just want to look inside.,"",2025-08-21T22:17:44.729Z
+66,E6_World_localization,Jump to line x or y.,"",SAY.Dialog:EnterTheTheatre.121.{$NewName},Please?,"",2025-08-21T22:17:44.729Z
+67,E6_World_localization,Dialogue option 1.1.,"",MENU.Dialog:EnterTheTheatre.51,FINE...,"",2025-08-21T22:17:44.729Z
+68,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.80.Sturdy Ass,Fine... I suppose you're getting old enough to make your own decisions—,"",2025-08-21T22:17:44.729Z
+69,E6_World_localization,Jump to line x or y.,"",SAY.Dialog:EnterTheTheatre.81.{$NewName},—WAHOO! You're the best!,"",2025-08-21T22:17:44.729Z
+70,E6_World_localization,Dialogue option 1.2.,"",MENU.Dialog:EnterTheTheatre.52,No.,"",2025-08-21T22:17:44.729Z
+71,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.55.Sturdy Ass,No. It's not safe.,"",2025-08-21T22:17:44.729Z
+72,E6_World_localization,Jump to line y.,"",SAY.Dialog:EnterTheTheatre.56.{$NewName},Pleeeeeaaaaaaaaase?,"",2025-08-21T22:17:44.729Z
+73,E6_World_localization,Dialogue option 2.1.,"",MENU.Dialog:EnterTheTheatre.98,Call out nervously and ask if she needs any help.,"",2025-08-21T22:17:44.729Z
+74,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.102.Sturdy Ass,Is everything all right in there? Do you need any help?,"",2025-08-21T22:17:44.729Z
+75,E6_World_localization,Jump to line x.,"",SAY.Dialog:EnterTheTheatre.103.{$NewName},I'm FINE MOTHER!,"",2025-08-21T22:17:44.729Z
+76,E6_World_localization,Dialogue option 2.2. Jump to line x.,"",MENU.Dialog:EnterTheTheatre.99,Stay silent and be patient.,"",2025-08-21T22:17:44.729Z
+77,E6_World_localization,"Dialogue options (2.1 and 2.2) converge. 
+The Foal exits the Theatre.","",SAY.Dialog:EnterTheTheatre.78.{$NewName},Told ya I'd be safe!,"",2025-08-21T22:17:44.729Z
+78,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.89.Sturdy Ass,Would you like me to show you the Old Church next?,"",2025-08-21T22:17:44.729Z
+79,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.79.{$NewName},Ohh... I just remembered I promised Uncle Bad Ass we'd play Rocks!,"",2025-08-21T22:17:44.729Z
+80,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.118.Sturdy Ass,"But, what about our quality time?!","",2025-08-21T22:17:44.729Z
+81,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.90.{$NewName},I gotta go.,"",2025-08-21T22:17:44.729Z
+82,E6_World_localization,The Foal runs away and exits the scene.,"",SAY.Dialog:EnterTheTheatre.91.{$NewName},"Love you, bye!","",2025-08-21T22:17:44.729Z
+83,E6_World_localization,Sturdy turns to go explore the area.,"",SAY.Dialog:EnterTheTheatre.389.Sturdy Ass,...I love you too.,"",2025-08-21T22:17:44.729Z
+84,E6_World_localization,Dialogue option 3.1. Jump back to line x.,"",MENU.Dialog:EnterTheTheatre.63,FINE...,"",2025-08-21T22:17:44.729Z
+85,E6_World_localization,Dialogue option 3.2.,"",MENU.Dialog:EnterTheTheatre.64,No.,"",2025-08-21T22:17:44.729Z
+86,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.58.Sturdy Ass,You can make your own decisions when you're older!,"",2025-08-21T22:17:44.729Z
+87,E6_World_localization,Jump to line x or y.,"",SAY.Dialog:EnterTheTheatre.59.{$NewName},COME ON!,"",2025-08-21T22:17:44.729Z
+88,E6_World_localization,Dialogue option 4.1. Jump back to line x.,"",MENU.Dialog:EnterTheTheatre.65,FINE...,"",2025-08-21T22:17:44.729Z
+89,E6_World_localization,Dialogue option 4.2.,"",MENU.Dialog:EnterTheTheatre.66,No.,"",2025-08-21T22:17:44.729Z
+90,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.61.Sturdy Ass,No means NO!,"",2025-08-21T22:17:44.729Z
+91,E6_World_localization,"","",SAY.Dialog:EnterTheTheatre.62.{$NewName},UGH YOU NEVER LET ME DO ANYTHING FUN!,"",2025-08-21T22:17:44.729Z
+92,E6_World_localization,The Foal runs away and exits the scene. Jump back to line z.,"",SAY.Dialog:EnterTheTheatre.123.{$NewName},I'M OUTTA HERE.,"",2025-08-21T22:17:44.729Z
+93,E6_World_localization,"Dialogue for when Sturdy first approaches detritus and wants to make art. 
+
+Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.","",SAY.Dialog_Sculpture0_VillageFarWestExit.334.Sturdy Ass,This place was so beautiful...,"",2025-08-21T22:17:44.729Z
+94,E6_World_localization,"","",SAY.Dialog_Sculpture0_VillageFarWestExit.336.Sturdy Ass,And now it's just a pile of junk left behind and forgotten.,"",2025-08-21T22:17:44.729Z
+95,E6_World_localization,Art making mini game.,"",SAY.Dialog_Sculpture0_VillageFarWestExit.337.Sturdy Ass,Maybe I could make something special here?,"",2025-08-21T22:17:44.729Z
+96,E6_World_localization,"Dialogue for when Sturdy first approaches detritus and wants to make art. 
+
+Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.","",SAY.Dialog_Sculpture1_VillageWest.340.Sturdy Ass,This place was so beautiful...,"",2025-08-21T22:17:44.729Z
+97,E6_World_localization,"","",SAY.Dialog_Sculpture1_VillageWest.341.Sturdy Ass,And now it's just a pile of junk left behind and forgotten.,"",2025-08-21T22:17:44.729Z
+98,E6_World_localization,Art making mini game.,"",SAY.Dialog_Sculpture1_VillageWest.343.Sturdy Ass,Maybe I could make something special here?,"",2025-08-21T22:17:44.729Z
+99,E6_World_localization,"Dialogue for when Sturdy first approaches detritus and wants to make art. 
+
+Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.","",SAY.Dialog_Sculpture2_VillageNorth.341.Sturdy Ass,This place was so beautiful...,"",2025-08-21T22:17:44.729Z
+100,E6_World_localization,"","",SAY.Dialog_Sculpture2_VillageNorth.342.Sturdy Ass,And now it's just a pile of junk left behind and forgotten.,"",2025-08-21T22:17:44.729Z
+101,E6_World_localization,Art making mini game.,"",SAY.Dialog_Sculpture2_VillageNorth.344.Sturdy Ass,Maybe I could make something special here?,"",2025-08-21T22:17:44.729Z
+102,E6_World_localization,"Dialogue for when Sturdy first approaches detritus and wants to make art. 
+
+Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.","",SAY.Dialog_Sculpture3_VillageSouth.347.Sturdy Ass,This place was so beautiful...,"",2025-08-21T22:17:44.729Z
+103,E6_World_localization,"","",SAY.Dialog_Sculpture3_VillageSouth.348.Sturdy Ass,And now it's just a pile of junk left behind and forgotten.,"",2025-08-21T22:17:44.729Z
+104,E6_World_localization,Art making mini game.,"",SAY.Dialog_Sculpture3_VillageSouth.350.Sturdy Ass,Maybe I could make something special here?,"",2025-08-21T22:17:44.729Z
+105,E6_World_localization,"Dialogue for when Sturdy first approaches detritus and wants to make art. 
+
+Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.","",SAY.Dialog_Sculpture4_VillageEast.348.Sturdy Ass,This place was so beautiful...,"",2025-08-21T22:17:44.729Z
+106,E6_World_localization,"","",SAY.Dialog_Sculpture4_VillageEast.349.Sturdy Ass,And now it's just a pile of junk left behind and forgotten.,"",2025-08-21T22:17:44.729Z
+107,E6_World_localization,Art making mini game.,"",SAY.Dialog_Sculpture4_VillageEast.351.Sturdy Ass,Maybe I could make something special here?,"",2025-08-21T22:17:44.729Z
+108,E6_World_localization,"Dialogue for when Sturdy first approaches detritus and wants to make art. 
+
+Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.","",SAY.Dialog_Sculpture5_FannysideEast.348.Sturdy Ass,This place was so beautiful...,"",2025-08-21T22:17:44.729Z
+109,E6_World_localization,"","",SAY.Dialog_Sculpture5_FannysideEast.349.Sturdy Ass,And now it's just a pile of junk left behind and forgotten.,"",2025-08-21T22:17:44.729Z
+110,E6_World_localization,Art making mini game.,"",SAY.Dialog_Sculpture5_FannysideEast.351.Sturdy Ass,Maybe I could make something special here?,"",2025-08-21T22:17:44.729Z
+111,E6_World_localization,"Dialogue for when Sturdy first approaches detritus and wants to make art. 
+
+Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.","",SAY.Dialog_Sculpture6_Mine.349.Sturdy Ass,This place was so beautiful...,"",2025-08-21T22:17:44.729Z
+112,E6_World_localization,"","",SAY.Dialog_Sculpture6_Mine.350.Sturdy Ass,And now it's just a pile of junk left behind and forgotten.,"",2025-08-21T22:17:44.729Z
+113,E6_World_localization,Art making mini game.,"",SAY.Dialog_Sculpture6_Mine.352.Sturdy Ass,Maybe I could make something special here?,"",2025-08-21T22:17:44.729Z
+114,E6_World_localization,Dialogue for when Sturdy is at the Well.,"",SAY.Dialog:Well.10.Sturdy Ass,Oh Comrade Trusty...,"",2025-08-21T22:17:44.729Z
+115,E6_World_localization,Repeater line.,"",SAY.Dialog:Well.12.Sturdy Ass,Rest in power my dear Comrade.,"",2025-08-21T22:17:44.729Z
+116,E6_World_localization,Sturdy approaches a sculpture.,"",SAY.Dialog_Sculpture0_VillageFarWestExit.315.Sturdy Ass,This sculpture reminds me of how difficult it was to come up with a name for the Foal.,"",2025-08-21T22:17:44.729Z
+117,E6_World_localization,"Jump to line x, y, or z.","",SAY.Dialog_Sculpture0_VillageFarWestExit.316.Sturdy Ass,It needs a title:,"",2025-08-21T22:17:44.729Z
+118,E6_World_localization,Dialogue option 1.,"",MENU.Dialog_Sculpture0_VillageFarWestExit.312,"""Enfant Terrible""","",2025-08-21T22:17:44.729Z
+119,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture0_VillageFarWestExit.16.Sturdy Ass,"""Enfant Terrible""","",2025-08-21T22:17:44.729Z
+120,E6_World_localization,Dialogue option 2.,"",MENU.Dialog_Sculpture0_VillageFarWestExit.314,"""Kin Aesthetic Response""","",2025-08-21T22:17:44.729Z
+121,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture0_VillageFarWestExit.17.Sturdy Ass,"""Kin Aesthetic Response""","",2025-08-21T22:17:44.729Z
+122,E6_World_localization,Dialogue option 3.,"",MENU.Dialog_Sculpture0_VillageFarWestExit.313,"""Growing Pains""","",2025-08-21T22:17:44.729Z
+123,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture0_VillageFarWestExit.18.Sturdy Ass,"""Growing Pains""","",2025-08-21T22:17:44.729Z
+124,E6_World_localization,"Dialogue (1, 2, 3) converges.","",SAY.Dialog_Sculpture0_VillageFarWestExit.310.Sturdy Ass,The Foal can be a real hoof-full sometimes.,"",2025-08-21T22:17:44.729Z
+125,E6_World_localization,Sturdy approaches a sculpture.,"",SAY.Dialog_Sculpture1_VillageWest.15.Sturdy Ass,Making art is finally giving me an outlet to express myself.,"",2025-08-21T22:17:44.729Z
+126,E6_World_localization,"Jump to line x, y, or z.","",SAY.Dialog_Sculpture1_VillageWest.311.Sturdy Ass,But who am I?,"",2025-08-21T22:17:44.729Z
+127,E6_World_localization,Dialogue option 1.,"",MENU.Dialog_Sculpture1_VillageWest.16,"""My Womb, My Self""","",2025-08-21T22:17:44.729Z
+128,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture1_VillageWest.20.Sturdy Ass,"""My Womb, My Self""","",2025-08-21T22:17:44.729Z
+129,E6_World_localization,Dialogue option 2.,"",MENU.Dialog_Sculpture1_VillageWest.17,"""Mother Courage""","",2025-08-21T22:17:44.729Z
+130,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture1_VillageWest.23.Sturdy Ass,"""Mother Courage""","",2025-08-21T22:17:44.729Z
+131,E6_World_localization,Dialogue option 3.,"",MENU.Dialog_Sculpture1_VillageWest.18,"""Ecstasy of a Mother""","",2025-08-21T22:17:44.729Z
+132,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture1_VillageWest.26.Sturdy Ass,"""Ecstasy of a Mother""","",2025-08-21T22:17:44.729Z
+133,E6_World_localization,"Dialogue (1, 2, 3) converges.","",SAY.Dialog_Sculpture1_VillageWest.303.Sturdy Ass,Does being a mother define me?,"",2025-08-21T22:17:44.729Z
+134,E6_World_localization,Sturdy approaches a sculpture.,"",SAY.Dialog_Sculpture2_VillageNorth.17.Sturdy Ass,Machines could never make a sculpture like this one!,"",2025-08-21T22:17:44.729Z
+135,E6_World_localization,"Jump to line x, y, or z.","",SAY.Dialog_Sculpture2_VillageNorth.311.Sturdy Ass,What should I call this?,"",2025-08-21T22:17:44.729Z
+136,E6_World_localization,Dialogue option 1.,"",MENU.Dialog_Sculpture2_VillageNorth.18,"""If The Machines Never Were""","",2025-08-21T22:17:44.729Z
+137,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture2_VillageNorth.22.Sturdy Ass,"""If The Machines Never Were""","",2025-08-21T22:17:44.729Z
+138,E6_World_localization,Dialogue option 2.,"",MENU.Dialog_Sculpture2_VillageNorth.19,"""The Protest in My Heart""","",2025-08-21T22:17:44.729Z
+139,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture2_VillageNorth.25.Sturdy Ass,"""The Protest in My Heart""","",2025-08-21T22:17:44.729Z
+140,E6_World_localization,Dialogue option 3.,"",MENU.Dialog_Sculpture2_VillageNorth.20,"""The Tyranny of Machinery""","",2025-08-21T22:17:44.729Z
+141,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture2_VillageNorth.28.Sturdy Ass,"""The Tyranny of Machinery""","",2025-08-21T22:17:44.729Z
+142,E6_World_localization,"Dialogue (1, 2, 3) converges.","",SAY.Dialog_Sculpture2_VillageNorth.303.Sturdy Ass,"Damn those evil, soulless, job-taking, child-killing Machines.","",2025-08-21T22:17:44.729Z
+143,E6_World_localization,"Sturdy approaches a sculpture.
+Jump to line x, y, or z.","",SAY.Dialog_Sculpture3_VillageSouth.17.Sturdy Ass,Trusty was always better at coming up with names...,"",2025-08-21T22:17:44.729Z
+144,E6_World_localization,Dialogue option 1.,"",MENU.Dialog_Sculpture3_VillageSouth.19,"""Trusty, All is Well""","",2025-08-21T22:17:44.729Z
+145,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture3_VillageSouth.340.Sturdy Ass,"""Trusty, All is Well""","",2025-08-21T22:17:44.729Z
+146,E6_World_localization,Dialogue option 2.,"",MENU.Dialog_Sculpture3_VillageSouth.20,"""hee haw hi hon 'ee ah he a'w""","",2025-08-21T22:17:44.729Z
+147,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture3_VillageSouth.338.Sturdy Ass,"""hee haw hi hon 'ee ah he a'w""","",2025-08-21T22:17:44.729Z
+148,E6_World_localization,"Dialogue option 3. 
+This variation appears if Old Ass's last words were 'Ass Power'.","",MENU.Dialog_Sculpture3_VillageSouth.18,"""Ass Power!""","",2025-08-21T22:17:44.729Z
+149,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture3_VillageSouth.333.Sturdy Ass,"""Ass Power!""","",2025-08-21T22:17:44.729Z
+150,E6_World_localization,"Dialogue option 3.
+This variation appears if Old Ass's last words were 'I'm scared'.","",MENU.Dialog_Sculpture3_VillageSouth.327,"""I'm Scared""","",2025-08-21T22:17:44.729Z
+151,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture3_VillageSouth.336.Sturdy Ass,"""I'm Scared""","",2025-08-21T22:17:44.729Z
+152,E6_World_localization,"Dialogue (1, 2, 3) converges.","",SAY.Dialog_Sculpture3_VillageSouth.303.Sturdy Ass,Our Herd has lost so much.,"",2025-08-21T22:17:44.729Z
+153,E6_World_localization,"Sturdy approaches a sculpture.
+Jump to line x, y, or z.","",SAY.Dialog_Sculpture4_VillageEast.17.Sturdy Ass,Being an artist is one of the most spiritual things I've done with my life.,"",2025-08-21T22:17:44.729Z
+154,E6_World_localization,Dialogue option 1.,"",MENU.Dialog_Sculpture4_VillageEast.18,"""The Gods Leadeth Me""","",2025-08-21T22:17:44.729Z
+155,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture4_VillageEast.22.Sturdy Ass,"""The Gods Leadeth Me""","",2025-08-21T22:17:44.729Z
+156,E6_World_localization,Dialogue option 2.,"",MENU.Dialog_Sculpture4_VillageEast.19,"""Golden Showers for All""","",2025-08-21T22:17:44.729Z
+157,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture4_VillageEast.25.Sturdy Ass,"""Golden Showers for All""","",2025-08-21T22:17:44.729Z
+158,E6_World_localization,Dialogue option 3.,"",MENU.Dialog_Sculpture4_VillageEast.20,"""Our Souls Will Meet in the Next Life""","",2025-08-21T22:17:44.729Z
+159,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture4_VillageEast.28.Sturdy Ass,"""Our Souls Will Meet in the Next Life""","",2025-08-21T22:17:44.729Z
+160,E6_World_localization,"Dialogue (1, 2, 3) converges.","",SAY.Dialog_Sculpture4_VillageEast.303.Sturdy Ass,Praise be to the Gods.,"",2025-08-21T22:17:44.729Z
+161,E6_World_localization,"Sturdy approaches a sculpture.
+Jump to line x, y, or z.","",SAY.Dialog_Sculpture5_FannysideEast.17.Sturdy Ass,This sculpture will remind everyone of Fannyside's golden days.,"",2025-08-21T22:17:44.729Z
+162,E6_World_localization,Dialogue option 1.,"",MENU.Dialog_Sculpture5_FannysideEast.18,"""The Pleasures of Entering Fannyside""","",2025-08-21T22:17:44.729Z
+163,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture5_FannysideEast.22.Sturdy Ass,"""The Pleasures of Entering Fannyside""","",2025-08-21T22:17:44.729Z
+164,E6_World_localization,Dialogue option 2.,"",MENU.Dialog_Sculpture5_FannysideEast.19,"""Farm and Content""","",2025-08-21T22:17:44.729Z
+165,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture5_FannysideEast.25.Sturdy Ass,"""Farm and Content""","",2025-08-21T22:17:44.729Z
+166,E6_World_localization,Dialogue option 3.,"",MENU.Dialog_Sculpture5_FannysideEast.20,"""The Fields Weep with the Blood of our Ancestors""","",2025-08-21T22:17:44.729Z
+167,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture5_FannysideEast.28.Sturdy Ass,"""The Fields Weep with the Blood of our Ancestors""","",2025-08-21T22:17:44.729Z
+168,E6_World_localization,"Dialogue (1, 2, 3) converges.","",SAY.Dialog_Sculpture5_FannysideEast.303.Sturdy Ass,There's nothing quite like home.,"",2025-08-21T22:17:44.729Z
+169,E6_World_localization,Sturdy approaches a sculpture.,"",SAY.Dialog_Sculpture6_Mine.17.Sturdy Ass,"Those months we spent in the Mine were a constant reminder of how I lost my beloved daughter, Lazy.","",2025-08-21T22:17:44.729Z
+170,E6_World_localization,"Jump to line x, y, or z.","",SAY.Dialog_Sculpture6_Mine.311.Sturdy Ass,I'll name this sculpture in tribute to her:,"",2025-08-21T22:17:44.729Z
+171,E6_World_localization,Dialogue option 1.,"",MENU.Dialog_Sculpture6_Mine.18,"""First Born, First Lost""","",2025-08-21T22:17:44.729Z
+172,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture6_Mine.22.Sturdy Ass,"""First Born, First Lost""","",2025-08-21T22:17:44.729Z
+173,E6_World_localization,Dialogue option 2.,"",MENU.Dialog_Sculpture6_Mine.19,"""A Study in Laziness""","",2025-08-21T22:17:44.729Z
+174,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture6_Mine.25.Sturdy Ass,"""A Study in Laziness""","",2025-08-21T22:17:44.729Z
+175,E6_World_localization,Dialogue option 3.,"",MENU.Dialog_Sculpture6_Mine.20,"""Boredom is Freedom, is Eternity""","",2025-08-21T22:17:44.729Z
+176,E6_World_localization,Jump to line x.,"",SAY.Dialog_Sculpture6_Mine.28.Sturdy Ass,"""Boredom is Freedom, is Eternity""","",2025-08-21T22:17:44.729Z
+177,E6_World_localization,"Dialogue (1, 2, 3) converges.","",SAY.Dialog_Sculpture6_Mine.303.Sturdy Ass,"I will never forget you, Lazy.","",2025-08-21T22:17:44.729Z
+178,E6_World_localization,Sequence of one-off dialogues from Nice Ass when Sturdy tries to talk to her as she's plowing.,"",SAY.Dialog:NiceLoop.10.Nice Ass,Hi Sturdy! Bye Sturdy!,"",2025-08-21T22:17:44.729Z
+179,E6_World_localization,"","",SAY.Dialog:NiceLoop.12.Nice Ass,Isn't it a beautiful day?,"",2025-08-21T22:17:44.729Z
+180,E6_World_localization,"","",SAY.Dialog:NiceLoop.24.Nice Ass,Let's catch up later!,"",2025-08-21T22:17:44.729Z
+181,E6_World_localization,"","",SAY.Dialog:NiceLoop.21.Nice Ass,"Golly, you're looking well!","",2025-08-21T22:17:44.729Z
+182,E6_World_localization,"Dialogue when Sturdy comes across Sad at his Memorial Garden.
+This dialogue only happens when Sad is still on the Farm.","",SAY.Dialog:Sad.10.Sad Ass,Hullo Sturdy!,"",2025-08-21T22:17:44.729Z
+183,E6_World_localization,"","",SAY.Dialog:Sad.22.Sturdy Ass,"Sad, this Memorial Garden is coming along beautifully.","",2025-08-21T22:17:44.729Z
+184,E6_World_localization,"","",SAY.Dialog:Sad.23.Sad Ass,Turns out that tending to the memories of our lost loved ones is something I'm really good at...,"",2025-08-21T22:17:44.729Z
+185,E6_World_localization,"","",SAY.Dialog:Sad.29.Sturdy Ass,Lazy's memorial is particularly beautiful.,"",2025-08-21T22:17:44.729Z
+186,E6_World_localization,"","",SAY.Dialog:Sad.32.Sturdy Ass,The Gods would be so impressed by your work.,"",2025-08-21T22:17:44.729Z
+187,E6_World_localization,"","",SAY.Dialog:Sad.30.Sturdy Ass,I'm glad you found what you're good at Comrade.,"",2025-08-21T22:17:44.729Z
+188,E6_World_localization,"","",SAY.Dialog:Sad.26.Sturdy Ass,"I'm trying to spend quality time with {$NewName}, but she's growing up too fast.","",2025-08-21T22:17:44.729Z
+189,E6_World_localization,"","",SAY.Dialog:Sad.67.Sturdy Ass,Soon she'll leave me on my own.,"",2025-08-21T22:17:44.729Z
+190,E6_World_localization,"","",SAY.Dialog:Sad.33.Sad Ass,"Sometimes, being on your own isn't so lonely...","",2025-08-21T22:17:44.729Z
+191,E6_World_localization,"","",SAY.Dialog:Sad.68.Sad Ass,"Take care, Comrade.","",2025-08-21T22:17:44.729Z
+192,E6_World_localization,Repeater line.,"",SAY.Dialog:Sad.12.Sad Ass,Time to get back to work...,"",2025-08-21T22:17:44.729Z
+193,E6_World_localization,Repeater line when interacting with the Tractor.,"",SAY.Dialog:Tractor.10.Sturdy Ass,Stupid Tractor-Machine.,"",2025-08-21T22:17:44.729Z
+194,E6_World_localization,"Sturdy approaches Thirsty, who is surrounded by containers filled with water.","",SAY.Dialog_Thirsty.38.Thirsty Ass,"Comrade Sturdy! Hell, you look parched!","",2025-08-21T22:17:44.729Z
+195,E6_World_localization,"","",SAY.Dialog_Thirsty.43.Thirsty Ass,Mosey on over and take a sip of my new drink special: The Pail Ale!,"",2025-08-21T22:17:44.729Z
+196,E6_World_localization,"","",SAY.Dialog_Thirsty.44.Thirsty Ass,"Tonight, The Bottoms Up Bar is finally openin'!","",2025-08-21T22:17:44.729Z
+197,E6_World_localization,"","",SAY.Dialog_Thirsty.50.Thirsty Ass,Always been my darn DREAM to have a place for us Asses to take a break and share some good 'ol water.,"",2025-08-21T22:17:44.729Z
+198,E6_World_localization,"","",SAY.Dialog_Thirsty.49.Sturdy Ass,"It's looking good, Comrade.","",2025-08-21T22:17:44.729Z
+199,E6_World_localization,"","",SAY.Dialog_Thirsty.51.Sturdy Ass,I could definitely use a drink and an ear to bend.,"",2025-08-21T22:17:44.729Z
+200,E6_World_localization,Jump to line x or y.,"",SAY.Dialog_Thirsty.66.Thirsty Ass,"What's gettin' ya down, Comrade?","",2025-08-21T22:17:44.729Z
+201,E6_World_localization,Dialogue option 1.1. (Spoken by Sturdy),"",MENU.Dialog_Thirsty.67,{$NewName} isn't interested in our Traditions.,"",2025-08-21T22:17:44.729Z
+202,E6_World_localization,"","",SAY.Dialog_Thirsty.87.Sturdy Ass,"{$NewName} spends all her time inside playin' Rocks with Bad Ass, and isn't interested in learning about our Traditions.","",2025-08-21T22:17:44.729Z
+203,E6_World_localization,Jump to line x.,"",SAY.Dialog_Thirsty.88.Thirsty Ass,But hey at least she's keepin' outta trouble.,"",2025-08-21T22:17:44.729Z
+204,E6_World_localization,Dialogue option 1.2. (Spoken by Sturdy),"",MENU.Dialog_Thirsty.68,The Herd rarely spends time together.,"",2025-08-21T22:17:44.729Z
+205,E6_World_localization,"","",SAY.Dialog_Thirsty.89.Sturdy Ass,We're all working on our own thing these days. We rarely spend time together.,"",2025-08-21T22:17:44.729Z
+206,E6_World_localization,Jump to line x.,"",SAY.Dialog_Thirsty.90.Thirsty Ass,"Well heck Comrade, that's exactly why I'm openin' my BAR!","",2025-08-21T22:17:44.729Z
+207,E6_World_localization,"Dialogue options (1.1, 1.2) converge.","",SAY.Dialog_Thirsty.71.Thirsty Ass,"Say, if yer lookin' for a distraction...","",2025-08-21T22:17:44.729Z
+208,E6_World_localization,"","",SAY.Dialog_Thirsty.72.Thirsty Ass,I think this here bar is missin' the somethin' special that makes it worth comin' to.,"",2025-08-21T22:17:44.729Z
+209,E6_World_localization,"","",SAY.Dialog_Thirsty.73.Thirsty Ass,Maybe you can do somethin' with this ol' bucket... It's got a hole in it.,"",2025-08-21T22:17:44.729Z
+210,E6_World_localization,"","",SAY.Dialog_Thirsty.92.Thirsty Ass,Come on back after you figure out what to do with it!,"",2025-08-21T22:17:44.729Z
+211,E6_World_localization,Repeater line.,"",SAY.Dialog_Thirsty.41.Thirsty Ass,The Bar needs something beautiful...,"",2025-08-21T22:17:44.729Z
+212,E6_World_localization,Dialogue option that pops up when you interact with any of Thirsty's containers of water.,"",SAY.Dialog:Pail_1.10.Thirsty Ass,Aint it delicious! I call it the Wellini!,"",2025-08-21T22:17:44.729Z
+213,E6_World_localization,Dialogue option that pops up when you interact with any of Thirsty's containers of water.,"",SAY.Dialog:Pail_2.10.Thirsty Ass,"You have mighty good taste, that's Trough-Aged River Water!","",2025-08-21T22:17:44.729Z
+214,E6_World_localization,Dialogue option that pops up when you interact with any of Thirsty's containers of water.,"",SAY.Dialog:Pail_3.10.Thirsty Ass,That there drink is the farm famous Pail Ale!,"",2025-08-21T22:17:44.729Z
+215,E6_World_localization,Dialogue option that pops up when you interact with any of Thirsty's containers of water.,"",SAY.Dialog:Pail_4.10.Thirsty Ass,Lap it up—the Spit Spritz! Refreshin'!,"",2025-08-21T22:17:44.729Z
+216,E6_World_localization,Dialogue option that pops up when you interact with any of Thirsty's containers of water.,"",SAY.Dialog:Trough_1.10.Thirsty Ass,"Straight from the pond to the back of yer mouth, the Dark and Stormy!","",2025-08-21T22:17:44.729Z
+217,E6_World_localization,Dialogue option that pops up when you interact with any of Thirsty's containers of water.,"",SAY.Dialog:Trough_2.10.Thirsty Ass,"Ah, a classic drink, Mineral Water, on the rocks!","",2025-08-21T22:17:44.729Z
+218,E6_World_localization,"Dialogue for when Sturdy approaches the final sculpture, but has not talked to Thirsty.
+Repeater line.","",SAY.Dialog:Sculpture7Dummy.10.Sturdy Ass,This pile isn't very inspiring...,"",2025-08-21T22:17:44.729Z
+219,E6_World_localization,"Dialogue for when Sturdy approaches the final sculpture and has already talked to Thirsty.
+Jump to line x, y, or z.","",SAY.Dialog_Sculpture7_FarmBar.23.Sturdy Ass,What's the perfect title to commemorate the opening of Bottoms Up?,"",2025-08-21T22:17:44.729Z
+220,E6_World_localization,Dialogue option 1.,"",MENU.Dialog_Sculpture7_FarmBar.24,"""Home is where the Herd is""","",2025-08-21T22:17:44.729Z
+221,E6_World_localization,"","",SAY.Dialog_Sculpture7_FarmBar.28.Sturdy Ass,"""Home is where the Herd is""","",2025-08-21T22:17:44.729Z
+222,E6_World_localization,Jump to line x.,"",WRITE.Dialog_Sculpture7_FarmBar.328,Home is where the Herd is,"",2025-08-21T22:17:44.729Z
+223,E6_World_localization,Dialogue option 2.,"",MENU.Dialog_Sculpture7_FarmBar.25,"""Happy Watering Hole Opening""","",2025-08-21T22:17:44.729Z
+224,E6_World_localization,"","",SAY.Dialog_Sculpture7_FarmBar.31.Sturdy Ass,"""Happy Watering Hole Opening""","",2025-08-21T22:17:44.729Z
+225,E6_World_localization,Jump to line x.,"",WRITE.Dialog_Sculpture7_FarmBar.330,Happy Watering Hole Opening,"",2025-08-21T22:17:44.729Z
+226,E6_World_localization,Dialogue option 3.,"",MENU.Dialog_Sculpture7_FarmBar.26,"""Untitled No. 8""","",2025-08-21T22:17:44.729Z
+227,E6_World_localization,"","",SAY.Dialog_Sculpture7_FarmBar.34.Sturdy Ass,"""Untitled No. 8""","",2025-08-21T22:17:44.729Z
+228,E6_World_localization,Jump to line x.,"",WRITE.Dialog_Sculpture7_FarmBar.329,Untitled No. 8,"",2025-08-21T22:17:44.729Z
+229,E6_World_localization,"Dialogue (1, 2, 3) converges.","",SAY.Dialog_Sculpture7_FarmBar.303.Sturdy Ass,I think Thirsty will jump for joy when he sees this!,"",2025-08-21T22:17:44.729Z
+230,E6_World_localization,"After finishing the sculpture, Sturdy returns to talk to Thirsty at the Bottom's Up Bar.","",SAY.Dialog:BottomsUpOpening.60.Thirsty Ass,What's that there contraption called?,"",2025-08-21T22:17:44.729Z
+231,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.121.Sturdy Ass,It's called... {$SculptureName}!,"",2025-08-21T22:17:44.729Z
+232,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.120.Thirsty Ass,YEEHAW! What a BEAUT!!,"",2025-08-21T22:17:44.729Z
+233,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.125.Thirsty Ass,I'm sure that'll attract everyone to my bar!,"",2025-08-21T22:17:44.729Z
+234,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.123.Sturdy Ass,"Your success is everyone's success, Comrade.","",2025-08-21T22:17:44.729Z
+235,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.122.Thirsty Ass,Now alls we gots to do is wait for customers!,"",2025-08-21T22:17:44.729Z
+236,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.69.Thirsty Ass,"Any moment now, they'll be linin' up.","",2025-08-21T22:17:44.729Z
+237,E6_World_localization,It's quiet. Thirsty is hopeful.,"",SAY.Dialog:BottomsUpOpening.127.Thirsty Ass,Oh!,"",2025-08-21T22:17:44.729Z
+238,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.126.Thirsty Ass,"Nevermind, I thought I saw somethin' or someone...","",2025-08-21T22:17:44.729Z
+239,E6_World_localization,No one is around.,"",SAY.Dialog:BottomsUpOpening.128.Thirsty Ass,"Dang, where is everyone?","",2025-08-21T22:17:44.729Z
+240,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.72.Nice Ass,"Golly, what a beautiful artwork! I was drawn to it.","",2025-08-21T22:17:44.729Z
+241,E6_World_localization,Nice Ass enters.,"",SAY.Dialog:BottomsUpOpening.130.Nice Ass,"Oh Thirsty, you finally opened your bar!","",2025-08-21T22:17:44.729Z
+242,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.131.Thirsty Ass,Look at those fine legs that just walked into my bar and all over my heart—it's NICE ASS!,"",2025-08-21T22:17:44.729Z
+243,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.132.Nice Ass,"Aw shucks! Hey, can I have a drink? Gosh, I'm in need of some water.","",2025-08-21T22:17:44.729Z
+244,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.133.Thirsty Ass,WELL WE'VE GOT SEVEN KINDS!,"",2025-08-21T22:17:44.729Z
+245,E6_World_localization,Sad Ass enters; these are said if Sad Ass is on the Farm.,"",SAY.Dialog:BottomsUpOpening.40.Sad Ass,... seven kinds of what?,"",2025-08-21T22:17:44.729Z
+246,E6_World_localization,Sad Ass enters; these are said if Sad Ass is on the Farm.,"",SAY.Dialog:BottomsUpOpening.134.Thirsty Ass,SAD ASS! I got a pail with yer name on it!,"",2025-08-21T22:17:44.729Z
+247,E6_World_localization,Sad Ass enters; these are said if Sad Ass is on the Farm.,"",SAY.Dialog:BottomsUpOpening.135.Sad Ass,"... but wait, seven kinds of wh—","",2025-08-21T22:17:44.729Z
+248,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.44.Thirsty Ass,YEEHAW! We got ourselves a party!,"",2025-08-21T22:17:44.729Z
+249,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.137.Thirsty Ass,It's a damn shame the others aren't here.,"",2025-08-21T22:17:44.729Z
+250,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.138.Hard Ass,"Good afternoon, Comrades.","",2025-08-21T22:17:44.729Z
+251,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.139.Thirsty Ass,A GODDAMN PARTY!,"",2025-08-21T22:17:44.729Z
+252,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.140.Hard Ass,Party's over.,"",2025-08-21T22:17:44.729Z
+253,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.46.Hard Ass,We have a visitor.,"",2025-08-21T22:17:44.729Z
+254,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.141.???,*huff p-puff*,"",2025-08-21T22:17:44.729Z
+255,E6_World_localization,Jump to line x or y.,"",SAY.Dialog:BottomsUpOpening.51.Slow Ass,Hello everyb-b-body...,"",2025-08-21T22:17:44.729Z
+256,E6_World_localization,Branch 1.1. Slow Ass went to the Circus.,"",SAY.Dialog:BottomsUpOpening.96.Thirsty Ass,Slow Ass?! What the heck are you wearin'?,"",2025-08-21T22:17:44.729Z
+257,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.145.Slow Ass,I'm supposed to b-b-be a Lion!,"",2025-08-21T22:17:44.729Z
+258,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.147.Nice Ass,Golly! I think you look great!,"",2025-08-21T22:17:44.729Z
+259,E6_World_localization,Jump to line z.,"",SAY.Dialog:BottomsUpOpening.146.Slow Ass,"Thanks, b-b-but I'm here b-b-because I need your help-p-p!","",2025-08-21T22:17:44.729Z
+260,E6_World_localization,Branch 1.2. Slow Ass went to the Zoo.,"",SAY.Dialog:BottomsUpOpening.239.Sturdy Ass,Slow Ass? Why have you come crawling back here?,"",2025-08-21T22:17:44.729Z
+261,E6_World_localization,Jump to line z.,"",SAY.Dialog:BottomsUpOpening.95.Slow Ass,Something terrib-b-ble has hap-p-p-ened and I need your help-p-p!,"",2025-08-21T22:17:44.729Z
+262,E6_World_localization,"Branches (1.1, 1.2) converge.","",SAY.Dialog:BottomsUpOpening.227.Sturdy Ass,Help? We don't help traitors.,"",2025-08-21T22:17:44.729Z
+263,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.228.Sturdy Ass,"Hard, why have you let him into the Territory?","",2025-08-21T22:17:44.729Z
+264,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.229.Hard Ass,You need to hear what Slow Ass has to say.,"",2025-08-21T22:17:44.729Z
+265,E6_World_localization,Jump to line x or y.,"",SAY.Dialog:BottomsUpOpening.85.Slow Ass,Oh b-b-boy... do you want the short version or the long version?,"",2025-08-21T22:17:44.729Z
+266,E6_World_localization,Dialogue option 1.,"",MENU.Dialog:BottomsUpOpening.249,Short,"",2025-08-21T22:17:44.729Z
+267,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.392.Hard Ass,The short version.,"",2025-08-21T22:17:44.729Z
+268,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.390.Slow Ass,I'll do my b-b-best.,"",2025-08-21T22:17:44.729Z
+269,E6_World_localization,Dialogue option 2.,"",MENU.Dialog:BottomsUpOpening.250,Long,"",2025-08-21T22:17:44.729Z
+270,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.241.Thirsty Ass,Spit it out and don't omit nothin'!,"",2025-08-21T22:17:44.729Z
+271,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.391.Slow Ass,It's a b-b-bit of story...,"",2025-08-21T22:17:44.729Z
+272,E6_World_localization,Branch 2.1. The Asses went to the Circus.,"",SAY.Dialog:BottomsUpOpening.247.Slow Ass,We found job-bs as p-performers in a Circus show.,"",2025-08-21T22:17:44.729Z
+273,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.277.Slow Ass,Humans travelled from far away to watch us p-pretend to be other animals!,"",2025-08-21T22:17:44.729Z
+274,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.313.Slow Ass,"We took to the stage one at a time, b-but we worked as a team.","",2025-08-21T22:17:44.729Z
+275,E6_World_localization,Jump to either line x or y.,"",SAY.Dialog:BottomsUpOpening.314.Slow Ass,You wouldn't have b-believed your eyes!,"",2025-08-21T22:17:44.729Z
+276,E6_World_localization,Branch 3.1. If Sad left the Farm.,"",SAY.Dialog:BottomsUpOpening.278.Slow Ass,"Smart was a dancing Gorilla, Kick did acrob-b-batics as a Zeb-bra,","",2025-08-21T22:17:44.729Z
+277,E6_World_localization,Jump to line y.,"",SAY.Dialog:BottomsUpOpening.393.Slow Ass,"Sad had a b-bear routine on a b-bicycle, and B-Big was a b-ball catching elephant—","",2025-08-21T22:17:44.729Z
+278,E6_World_localization,Branch 3.1. If Sad stayed on the Farm.,"",SAY.Dialog:BottomsUpOpening.284.Slow Ass,"Smart was a dancing Gorilla, Kick did acrob-b-batics as a Zeb-bra,","",2025-08-21T22:17:44.729Z
+279,E6_World_localization,Jump to line y.,"",SAY.Dialog:BottomsUpOpening.394.Slow Ass,and B-B-Big was a b-b-ball catching Elep-phant—,"",2025-08-21T22:17:44.729Z
+280,E6_World_localization,"Branches (3.1, 3.2) converge.","",SAY.Dialog:BottomsUpOpening.287.Slow Ass,"And for the closing act, I b-bravely jump-ped through fire in my lion costume!","",2025-08-21T22:17:44.729Z
+281,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.316.Slow Ass,B-but we ran into a terrib-ble p-problem.,"",2025-08-21T22:17:44.729Z
+282,E6_World_localization,Jump to line z.,"",SAY.Dialog:BottomsUpOpening.315.Slow Ass,"Just when we thought we were going on tour, our B-Boss, Ringmaster Rico, B-BETRAYED US!","",2025-08-21T22:17:44.729Z
+283,E6_World_localization,Branch 2.2. The Asses went to the Zoo.,"",SAY.Dialog:BottomsUpOpening.244.Slow Ass,"After months of searching, we finally found job-bs at a Zoo.","",2025-08-21T22:17:44.729Z
+284,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.259.Slow Ass,"The long hours were b-brutal on my b-bones, so the nice Zookeep-per gave me Ointment to help-p my joint p-pain!","",2025-08-21T22:17:44.729Z
+285,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.318.Slow Ass,The Ointment help-ped me in the weekly comp-petition to see who was b-best at their job-b.,"",2025-08-21T22:17:44.729Z
+286,E6_World_localization,Jump to either line x or y or z.,"",SAY.Dialog:BottomsUpOpening.317.Slow Ass,"Unfortunately, the race to the top-p made us comp-petitive.","",2025-08-21T22:17:44.729Z
+287,E6_World_localization,Branch 4.1. If Sad left the Farm.,"",SAY.Dialog:BottomsUpOpening.264.Slow Ass,"One night after a long shift, Sad Ass said he had enough.","",2025-08-21T22:17:44.729Z
+288,E6_World_localization,Jump to line y.,"",SAY.Dialog:BottomsUpOpening.319.Slow Ass,He ran away from us and left us all b-behind.,"",2025-08-21T22:17:44.729Z
+289,E6_World_localization,Branch 4.2. If Sad stayed on the Farm and Slow Ass WON Ass of the Week.,"",SAY.Dialog:BottomsUpOpening.405.Slow Ass,"If you can b-believe it—I, surp-prisingly, won Ass of the Week!","",2025-08-21T22:17:44.729Z
+290,E6_World_localization,Branch 4.3. If Sad stayed on the Farm and another Ass WON Ass of the Week.,"",SAY.Dialog:BottomsUpOpening.406.Slow Ass,"I tried my b-b-best, but {$String} won Ass of the Week!","",2025-08-21T22:17:44.729Z
+291,E6_World_localization,"Branches (4.1, 4.2, 4.3) converge.","",SAY.Dialog:BottomsUpOpening.301.Slow Ass,"Right after the announcement, we ran into a terrib-ble p-problem!","",2025-08-21T22:17:44.729Z
+292,E6_World_localization,Jump to line y.,"",SAY.Dialog:BottomsUpOpening.397.Slow Ass,"Our B-Boss, Zookeep-per Rose, B-BETRAYED US!","",2025-08-21T22:17:44.729Z
+293,E6_World_localization,Branches (2.1 and 2.2) converge.,"",SAY.Dialog:BottomsUpOpening.100.Slow Ass,Two Humans in b-black p-put our Comrades in a Truck-Machine.,"",2025-08-21T22:17:44.729Z
+294,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.223.Slow Ass,I followed it all the way to the City.,"",2025-08-21T22:17:44.729Z
+295,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.224.Slow Ass,"There were tall b-buildings, and a b-big Factory that smelled so b-bad...","",2025-08-21T22:17:44.729Z
+296,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.225.Slow Ass,That's where the Truck-Machine stop-ped.,"",2025-08-21T22:17:44.729Z
+297,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.226.Slow Ass,...,"",2025-08-21T22:17:44.729Z
+298,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.311.Slow Ass,The others are in deep-p troub-b-b-b-b-ble!,"",2025-08-21T22:17:44.729Z
+299,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.539.Slow Ass,I'm b-begging you! P-please help-p!,"",2025-08-21T22:17:44.729Z
+300,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.218.Sturdy Ass,Not a hope in—,"",2025-08-21T22:17:44.729Z
+301,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.220.Nice Ass,Yikes! We have to save them!,"",2025-08-21T22:17:44.729Z
+302,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.101.Thirsty Ass,But it'll take forever to git there... we don't all have well-toned legs.,"",2025-08-21T22:17:44.729Z
+303,E6_World_localization,Nice Ass exits.,"",SAY.Dialog:BottomsUpOpening.221.Nice Ass,I have an idea!,"",2025-08-21T22:17:44.729Z
+304,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.222.Sturdy Ass,"Comrades, I think we need to remember that—","",2025-08-21T22:17:44.729Z
+305,E6_World_localization,"Nice Ass returns, driving the Tractor.","",SAY.Dialog:BottomsUpOpening.219.Nice Ass,Hop on everyone!,"",2025-08-21T22:17:44.729Z
+306,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.109.Nice Ass,We can ride the Tractor-Machine to the City!,"",2025-08-21T22:17:44.729Z
+307,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.212.Nice Ass,It has been my sworn enemy for years...,"",2025-08-21T22:17:44.729Z
+308,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.214.Nice Ass,"I've spent countless hours analyzing its every move, training to out-plow it.","",2025-08-21T22:17:44.729Z
+309,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.213.Nice Ass,"But the truth is... even in my peak condition, this Machine will always be faster than me.","",2025-08-21T22:17:44.729Z
+310,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.215.Nice Ass,It's our only hope to rescue the others!,"",2025-08-21T22:17:44.729Z
+311,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.207.Sturdy Ass,But Machines are EVIL!,"",2025-08-21T22:17:44.729Z
+312,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.208.Sturdy Ass,They caused the cave-in that killed my Lazy!,"",2025-08-21T22:17:44.729Z
+313,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.209.Sturdy Ass,They set fire to the Village and ruined Old Ass's Protest!,"",2025-08-21T22:17:44.729Z
+314,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.210.Nice Ass,"Golly, I don't know how to say this, but the Machines aren't responsible for the Fire.","",2025-08-21T22:17:44.729Z
+315,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.321.Sturdy Ass,Then who is to blame?!,"",2025-08-21T22:17:44.729Z
+316,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.322.Nice Ass,"Gosh, I...","",2025-08-21T22:17:44.729Z
+317,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.329.Nice Ass,...promised I wouldn't say.,"",2025-08-21T22:17:44.729Z
+318,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.330.Sturdy Ass,Are you a traitor too?,"",2025-08-21T22:17:44.729Z
+319,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.332.Sturdy Ass,Who else has been keeping dirty secrets?,"",2025-08-21T22:17:44.729Z
+320,E6_World_localization,Jump to either line x or y.,"",SAY.Dialog:BottomsUpOpening.333.Sturdy Ass,Who else has chosen to side with Machines over Asses?!,"",2025-08-21T22:17:44.729Z
+321,E6_World_localization,Branch 5.1. If Slow went to the Circus.,"",SAY.Dialog:BottomsUpOpening.203.Slow Ass,"If I learned anything at the Circus, it's that the b-best show is an ensemble effort.","",2025-08-21T22:17:44.729Z
+322,E6_World_localization,Jump to line z.,"",SAY.Dialog:BottomsUpOpening.204.Slow Ass,"We're a team, even when it ap-p-pears like we're not.","",2025-08-21T22:17:44.729Z
+323,E6_World_localization,Branch 5.2. If Slow went to the Zoo.,"",SAY.Dialog:BottomsUpOpening.200.Slow Ass,"If I learned anything at the Zoo, it's that nothing good comes out of comp-p-peting with each other.","",2025-08-21T22:17:44.729Z
+324,E6_World_localization,Jump to line z.,"",SAY.Dialog:BottomsUpOpening.201.Slow Ass,We're stronger as one Herd.,"",2025-08-21T22:17:44.729Z
+325,E6_World_localization,Branches (5.1 and 5.2) converge.,"",SAY.Dialog:BottomsUpOpening.191.Sturdy Ass,But you all BETRAYED us!,"",2025-08-21T22:17:44.729Z
+326,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.192.Sturdy Ass,"Isn't that right, Comrade Hard?","",2025-08-21T22:17:44.729Z
+327,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.194.Hard Ass,... No.,"",2025-08-21T22:17:44.729Z
+328,E6_World_localization,Jump to either line x or y.,"",SAY.Dialog:BottomsUpOpening.195.Hard Ass,I will join the rescue mission.,"",2025-08-21T22:17:44.729Z
+329,E6_World_localization,Branch 6.1. Evil Hard Ass WON the E6 Nightmare battle.,"",SAY.Dialog:BottomsUpOpening.181.Hard Ass,The Humans are still a threat to us and our sovereignty.,"",2025-08-21T22:17:44.729Z
+330,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.187.Hard Ass,There's no point protecting this territory day in and day out if our own kind are in danger elsewhere.,"",2025-08-21T22:17:44.729Z
+331,E6_World_localization,Jump to line z.,"",SAY.Dialog:BottomsUpOpening.188.Hard Ass,We must go and stop the Humans for good.,"",2025-08-21T22:17:44.729Z
+332,E6_World_localization,Branch 6.2. Good Hard Ass WON the E6 Nightmare battle.,"",SAY.Dialog:BottomsUpOpening.184.Hard Ass,I've been killing Humans at any cost.,"",2025-08-21T22:17:44.729Z
+333,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.185.Hard Ass,And I've pushed everyone away thinking I was helping the Herd.,"",2025-08-21T22:17:44.729Z
+334,E6_World_localization,"","",SAY.Dialog:BottomsUpOpening.186.Hard Ass,I lost sight of the reason I was fighting in the first place.,"",2025-08-21T22:17:44.729Z
+335,E6_World_localization,Jump to line z.,"",SAY.Dialog:BottomsUpOpening.312.Hard Ass,Let's bring the others home.,"",2025-08-21T22:17:44.729Z
+336,E6_World_localization,Branches (6.1 and 6.2) converge.,"",SAY.Dialog:BottomsUpOpening.174.Thirsty Ass,And there's no point runnin' a bar if we ain't all here to drink from it! I'm a-comin'!,"",2025-08-21T22:17:44.729Z
+337,E6_World_localization,The Asses start to get into the Tractor one-by-one.,"",SAY.Dialog:BottomsUpOpening.479.Nice Ass,"YUPPERS, we're off to save the others!","",2025-08-21T22:17:44.729Z
+338,E6_World_localization,This is said if Sad Ass is present.,"",SAY.Dialog:BottomsUpOpening.164.Sad Ass,"I'm coming too, Comrades...","",2025-08-21T22:17:44.729Z
+339,E6_World_localization,Jump to either line x or y.,"",SAY.Dialog:BottomsUpOpening.171.Slow Ass,"Sturdy, will you come with us? P-p-please?","",2025-08-21T22:17:44.729Z
+340,E6_World_localization,Dialogue option 1.1.,"",MENU.Dialog:BottomsUpOpening.694,I refuse to leave my Foal and our Territory unprotected.,"",2025-08-21T22:17:44.729Z
+341,E6_World_localization,Jump to line z.,"",SAY.Dialog:BottomsUpOpening.697.Sturdy Ass,I refuse to leave my Foal and our Territory unprotected.,"",2025-08-21T22:17:44.729Z
+342,E6_World_localization,Dialogue option 1.2.,"",MENU.Dialog:BottomsUpOpening.695,I will NEVER trust Machines.,"",2025-08-21T22:17:44.729Z
+343,E6_World_localization,Jump to line z.,"",SAY.Dialog:BottomsUpOpening.698.Sturdy Ass,I will NEVER trust Machines.,"",2025-08-21T22:17:44.729Z
+344,E6_World_localization,Previous dialogue options converge.,"",SAY.Dialog:BottomsUpOpening.156.Sturdy Ass,Go without me—I'm sure the Gods have already given up on you.,"",2025-08-21T22:17:44.729Z
+345,E6_World_localization,"The tractor speeds off, leaving Sturdy behind. End of scene.","",SAY.Dialog:BottomsUpOpening.150.Nice Ass,"Slow Ass, we gotta go!","",2025-08-21T22:17:44.729Z
+346,E6_World_localization,Set the ZooWinner's name to be used in Slow's story,"",WRITE.Dialog:Localizer.1,Big Ass,"",2025-08-21T22:17:44.729Z
+347,E6_World_localization,Set the ZooWinner's name to be used in Slow's story,"",WRITE.Dialog:Localizer.2,Smart Ass,"",2025-08-21T22:17:44.729Z
+348,E6_World_localization,Set the ZooWinner's name to be used in Slow's story,"",WRITE.Dialog:Localizer.3,Slow Ass,"",2025-08-21T22:17:44.729Z
+349,E6_World_localization,Set the ZooWinner's name to be used in Slow's story,"",WRITE.Dialog:Localizer.4,Kick Ass,"",2025-08-21T22:17:44.729Z
+2,E6_Church_localization,Sturdy looks at the mural on the wall of the church.,"Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",SAY.Dialog:Church.1.Sturdy Ass,I wonder if they ever got to where they were going...,"Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",2025-08-21T22:17:44.729Z
+3,E6_Stable2F_localization,Sturdy over Old Ass's bones. Talking aloud.,"",SAY.Dialog:OldBody.23.Sturdy Ass,I hope your Soul has already been reassigned and you're leading a new Herd somewhere in the world towards a life free of suffering.,"",2025-08-21T22:17:44.729Z
+4,E6_Stable2F_localization,Repeater line.,"",SAY.Dialog:OldBody.12.Sturdy Ass,I wonder what you'd think of all that's happened...,"",2025-08-21T22:17:44.729Z
+3,E6_MineLift_localization,This is said if Sturdy didn't let the Foal go into the Theatre and she didn't get the light.,"",SAY.Dialog:MineMonologue.1.{$NewName},Stupid Comrade Mother not letting me go in the stupid Theatre.,"",2025-08-21T22:17:44.729Z
+4,E6_MineLift_localization,This is said if Sturdy didn't let the Foal go into the Theatre and she didn't get the light.,"",SAY.Dialog:MineMonologue.5.{$NewName},Uncle Bad Ass is going to be so disappointed in me that I didn't get the super important light he wanted.,"",2025-08-21T22:17:44.729Z
+5,E6_MineLift_localization,This is said if Sturdy didn't let the Foal go into the Theatre and she didn't get the light.,"",SAY.Dialog:GottaFindTheThingy.2.{$NewName},I gotta find something to replace that super important light he needs...,"",2025-08-21T22:17:44.729Z
+3,E6_BadCave_localization,The Foal enters the Bad Cave and sees Bad Ass.,"",SAY.Dialog:PreComputer.2.Bad Ass,"Took you long enough, kid.","",2025-08-21T22:17:44.729Z
+4,E6_BadCave_localization,"","",SAY.Dialog:PreComputer.7.{$NewName},Comrade Mother wouldn't leave...,"",2025-08-21T22:17:44.729Z
+5,E6_BadCave_localization,"","",SAY.Dialog:PreComputer.34.{$NewName},She kept talking about how she used to be a star.,"",2025-08-21T22:17:44.729Z
+6,E6_BadCave_localization,"","",SAY.Dialog:PreComputer.9.Bad Ass,I knew she'd bring up those terrible amateur productions they used to subject us to.,"",2025-08-21T22:17:44.729Z
+7,E6_BadCave_localization,"","",SAY.Dialog:PreComputer.8.Bad Ass,Was everything where I said it would be?,"",2025-08-21T22:17:44.729Z
+8,E6_BadCave_localization,"","",SAY.Dialog:PreComputer.10.{$NewName},Yessir! I had to crawl through the broken doorway and climb through the rubble—,"",2025-08-21T22:17:44.729Z
+9,E6_BadCave_localization,Jump to line 10 or 12.,"",SAY.Dialog:PreComputer.11.Bad Ass,Do you have the light from the Theatre?,"",2025-08-21T22:17:44.729Z
+10,E6_BadCave_localization,Dialogue 1.1. The Foal went into the Theatre and has the Light.,"",SAY.Dialog:PreComputer.14.{$NewName},You bet!,"",2025-08-21T22:17:44.729Z
+11,E6_BadCave_localization,Jump to line 32.,"",SAY.Dialog:PreComputer.21.Bad Ass,Good. Screw it into the Machine.,"",2025-08-21T22:17:44.729Z
+12,E6_BadCave_localization,Dialogue 1.2. The Foal didn't go into the Theatre and doesn't have the Light.,"",SAY.Dialog:PreComputer.23.{$NewName},OF COURSE I DO...,"",2025-08-21T22:17:44.729Z
+13,E6_BadCave_localization,"","",SAY.Dialog:PreComputer.22.Bad Ass,Hm. It looks different.,"",2025-08-21T22:17:44.729Z
+14,E6_BadCave_localization,Jump to line 17.,"",SAY.Dialog:PreComputer.32.Bad Ass,Whatever. Screw it into the Machine.,"",2025-08-21T22:17:44.729Z
+15,E6_BadCave_localization,If the Foal goes to Bad Ass before screwing in the Light.,"",SAY.Dialog:ExitAttempt.7.Bad Ass,Be a good Assistant and do something useful.,"",2025-08-21T22:17:44.729Z
+16,E6_BadCave_localization,Repeater line.,"",SAY.Dialog:ExitAttempt.13.Bad Ass,Leave me alone.,"",2025-08-21T22:17:44.729Z
+17,E6_BadCave_localization,The Foal screws the Light into the Machine.,"",SAY.Dialog:Dongle.32.{$NewName},Phew! It works!,"",2025-08-21T22:17:44.729Z
+18,E6_BadCave_localization,"","",SAY.Dialog:Dongle.18.{$NewName},Why does the Mystery-Machine need this super important light from the Theatre??,"",2025-08-21T22:17:44.729Z
+19,E6_BadCave_localization,"","",SAY.Dialog:Dongle.10.Bad Ass,It makes the Machine look cool.,"",2025-08-21T22:17:44.729Z
+20,E6_BadCave_localization,"","",SAY.Dialog:Dongle.72.{$NewName},Hey Uncle Bad Ass...,"",2025-08-21T22:17:44.729Z
+21,E6_BadCave_localization,"","",SAY.Dialog:Dongle.112.{$NewName},Are you going to tell me what the Mystery-Machine is for?,"",2025-08-21T22:17:44.729Z
+22,E6_BadCave_localization,"","",SAY.Dialog:Dongle.113.Bad Ass,No.,"",2025-08-21T22:17:44.729Z
+23,E6_BadCave_localization,"","",SAY.Dialog:Dongle.97.{$NewName},...I feel weird lying to Comrade Mother.,"",2025-08-21T22:17:44.729Z
+24,E6_BadCave_localization,"","",SAY.Dialog:Dongle.114.{$NewName},She still thinks we are playing 'Rocks' down here everyday...,"",2025-08-21T22:17:44.729Z
+25,E6_BadCave_localization,"","",SAY.Dialog:Dongle.36.Bad Ass,She wouldn't understand.,"",2025-08-21T22:17:44.729Z
+26,E6_BadCave_localization,"","",SAY.Dialog:Dongle.39.{$NewName},Hey Uncle Bad Ass...,"",2025-08-21T22:17:44.729Z
+27,E6_BadCave_localization,"","",SAY.Dialog:Dongle.100.{$NewName},...what were your parents like?,"",2025-08-21T22:17:44.729Z
+28,E6_BadCave_localization,"","",SAY.Dialog:Dongle.38.Bad Ass,My mother left when I was a kid and my father was a greedy capitalist asshole who worked all the time.,"",2025-08-21T22:17:44.729Z
+29,E6_BadCave_localization,"","",SAY.Dialog:Dongle.42.{$NewName},...woah.,"",2025-08-21T22:17:44.729Z
+30,E6_BadCave_localization,"","",SAY.Dialog:Dongle.46.Bad Ass,I detested my father. I wish he had abandoned me instead of mum.,"",2025-08-21T22:17:44.729Z
+31,E6_BadCave_localization,"","",SAY.Dialog:Dongle.75.{$NewName},...your Mother abandoned you?,"",2025-08-21T22:17:44.729Z
+32,E6_BadCave_localization,"","",SAY.Dialog:Dongle.48.Bad Ass,I don't blame her. I'm happy she got out of this backward village.,"",2025-08-21T22:17:44.729Z
+33,E6_BadCave_localization,"","",SAY.Dialog:Dongle.47.Bad Ass,All I've ever wanted was to get as far away from here as I could.,"",2025-08-21T22:17:44.729Z
+34,E6_BadCave_localization,"","",SAY.Dialog:Dongle.118.{$NewName},Where would you go?,"",2025-08-21T22:17:44.729Z
+35,E6_BadCave_localization,"","",SAY.Dialog:Dongle.86.Bad Ass,Mecha City.,"",2025-08-21T22:17:44.729Z
+36,E6_BadCave_localization,"","",SAY.Dialog:Dongle.77.Bad Ass,A place that believes in science and creativity.,"",2025-08-21T22:17:44.729Z
+37,E6_BadCave_localization,"","",SAY.Dialog:Dongle.78.Bad Ass,A place where there are no bosses or leaders.,"",2025-08-21T22:17:44.729Z
+38,E6_BadCave_localization,"","",SAY.Dialog:Dongle.79.Bad Ass,A place for the people.,"",2025-08-21T22:17:44.729Z
+39,E6_BadCave_localization,"","",SAY.Dialog:Dongle.85.Bad Ass,Intelligent people.,"",2025-08-21T22:17:44.729Z
+40,E6_BadCave_localization,"","",SAY.Dialog:Dongle.80.Bad Ass,People collectively dedicated to inventing beautiful things that will make the world a better place for everyone...,"",2025-08-21T22:17:44.729Z
+41,E6_BadCave_localization,"","",SAY.Dialog:Dongle.123.Bad Ass,... And this Machine is going to get me there. At last.,"",2025-08-21T22:17:44.729Z
+42,E6_BadCave_localization,"","",SAY.Dialog:Dongle.126.{$NewName},What's wrong with here?,"",2025-08-21T22:17:44.729Z
+43,E6_BadCave_localization,"","",SAY.Dialog:Dongle.51.Bad Ass,Literally everything.,"",2025-08-21T22:17:44.729Z
+44,E6_BadCave_localization,"","",SAY.Dialog:Dongle.131.Bad Ass,Multigenerational poverty.,"",2025-08-21T22:17:44.729Z
+45,E6_BadCave_localization,"","",SAY.Dialog:Dongle.130.Bad Ass,Rampant religious dogmas.,"",2025-08-21T22:17:44.729Z
+46,E6_BadCave_localization,"","",SAY.Dialog:Dongle.129.Bad Ass,Extreme political conservatism.,"",2025-08-21T22:17:44.729Z
+47,E6_BadCave_localization,"","",SAY.Dialog:Dongle.128.Bad Ass,All predicated on an extractionist economy.,"",2025-08-21T22:17:44.729Z
+48,E6_BadCave_localization,"","",SAY.Dialog:Dongle.132.Bad Ass,Fuck.,"",2025-08-21T22:17:44.729Z
+49,E6_BadCave_localization,"","",SAY.Dialog:Dongle.134.Bad Ass,This.,"",2025-08-21T22:17:44.729Z
+50,E6_BadCave_localization,"","",SAY.Dialog:Dongle.133.Bad Ass,Place.,"",2025-08-21T22:17:44.729Z
+51,E6_BadCave_localization,"Bad Ass leaves the Foal and exits the room.
+The Foal searches for a way to power the Machine.","",SAY.Dialog:Dongle.135.Bad Ass,Charge the machine. I'll be back.,"",2025-08-21T22:17:44.729Z
+52,E6_BadCave_localization,The Foal starts the Machine up. Bad Ass returns.,"",SAY.Dialog:PostComputer.2.Bad Ass,"Hey, what I said back there—","",2025-08-21T22:17:44.729Z
+53,E6_BadCave_localization,"","",SAY.Dialog:PostComputer.12.Bad Ass,It's working...? It's really working!,"",2025-08-21T22:17:44.729Z
+54,E6_BadCave_localization,"","",SAY.Dialog:PostComputer.5.Bad Ass,At last!,"",2025-08-21T22:17:44.729Z
+55,E6_BadCave_localization,Bad Ass goes into the Machine.,"",SAY.Dialog:PostComputer.13.Bad Ass,"Kid, if anything goes wrong, I don't want to be remembered as a fucking donkey.","",2025-08-21T22:17:44.729Z
+56,E6_BadCave_localization,"","",SAY.Dialog:PostComputer.24.Bad Ass,My real name is...,"",2025-08-21T22:17:44.729Z
+57,E6_BadCave_localization,The doors close on Bad Ass.,"",SAY.Dialog:PostComputer.11.Bad Ass,...Cole Butte.,"",2025-08-21T22:17:44.729Z

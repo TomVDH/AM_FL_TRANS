@@ -138,11 +138,12 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
     
     let highlightedText = text;
     
-    // Always highlight (blue highlights always on)
-    console.log('🎨 TextHighlighter Debug: Highlight mode is ON');
+    console.log('🎨 TextHighlighter Debug: Highlight mode is:', highlightMode);
     
-    // Process JSON matches
-    if (jsonMatches.length > 0) {
+    // Only highlight if highlight mode is enabled
+    if (highlightMode) {
+      // Process JSON matches
+      if (jsonMatches.length > 0) {
       const sortedMatches = [...jsonMatches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
       
       sortedMatches.forEach(match => {
@@ -159,7 +160,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
         
         // Replace with highlighted span that has hover functionality
         highlightedText = highlightedText.replace(regex, 
-          `<span class="json-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #2563EB; font-weight: 600; text-shadow: 0 0 4px rgba(37, 99, 235, 0.3);" title="${hoverText}">$1</span>`
+          `<span class="json-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #3b82f6; font-weight: 500; background: rgba(59, 130, 246, 0.08); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(59, 130, 246, 0.3); box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.1), 0 0 6px rgba(59, 130, 246, 0.15); transition: all 0.2s ease;" title="${hoverText}" onmouseover="this.style.background='rgba(59, 130, 246, 0.12)'; this.style.boxShadow='0 0 0 1px rgba(59, 130, 246, 0.2), 0 0 8px rgba(59, 130, 246, 0.25)'; this.style.borderColor='rgba(59, 130, 246, 0.4)'" onmouseout="this.style.background='rgba(59, 130, 246, 0.08)'; this.style.boxShadow='0 0 0 1px rgba(59, 130, 246, 0.1), 0 0 6px rgba(59, 130, 246, 0.15)'; this.style.borderColor='rgba(59, 130, 246, 0.3)'">$1</span>`
         );
       });
     }
@@ -182,7 +183,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
         
         // Replace with highlighted span that has hover functionality
         highlightedText = highlightedText.replace(regex, 
-          `<span class="xlsx-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #2563EB; font-weight: 600; text-shadow: 0 0 4px rgba(37, 99, 235, 0.3);" title="${hoverText}">$1</span>`
+          `<span class="xlsx-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #10b981; font-weight: 500; background: rgba(16, 185, 129, 0.08); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(16, 185, 129, 0.3); box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.1), 0 0 6px rgba(16, 185, 129, 0.15); transition: all 0.2s ease;" title="${hoverText}" onmouseover="this.style.background='rgba(16, 185, 129, 0.12)'; this.style.boxShadow='0 0 0 1px rgba(16, 185, 129, 0.2), 0 0 8px rgba(16, 185, 129, 0.25)'; this.style.borderColor='rgba(16, 185, 129, 0.4)'" onmouseout="this.style.background='rgba(16, 185, 129, 0.08)'; this.style.boxShadow='0 0 0 1px rgba(16, 185, 129, 0.1), 0 0 6px rgba(16, 185, 129, 0.15)'; this.style.borderColor='rgba(16, 185, 129, 0.3)'">$1</span>`
         );
       });
     }
@@ -200,7 +201,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       
       // Replace with highlighted span that's clickable and has hover
       highlightedText = highlightedText.replace(regex, 
-        `<span class="character-highlight" data-character="$1" data-hover="${hoverText}" style="cursor: pointer; color: #2563EB; font-weight: 500; background-color: rgba(37, 99, 235, 0.1); padding: 1px 2px; border-radius: 2px;" title="${hoverText}">$1</span>`
+        `<span class="character-highlight" data-character="$1" data-hover="${hoverText}" style="cursor: pointer; color: #8b5cf6; font-weight: 500; background: rgba(139, 92, 246, 0.08); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(139, 92, 246, 0.3); box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.1), 0 0 6px rgba(139, 92, 246, 0.15); transition: all 0.2s ease;" title="${hoverText}" onmouseover="this.style.background='rgba(139, 92, 246, 0.12)'; this.style.boxShadow='0 0 0 1px rgba(139, 92, 246, 0.2), 0 0 8px rgba(139, 92, 246, 0.25)'; this.style.borderColor='rgba(139, 92, 246, 0.4)'" onmouseout="this.style.background='rgba(139, 92, 246, 0.08)'; this.style.boxShadow='0 0 0 1px rgba(139, 92, 246, 0.1), 0 0 6px rgba(139, 92, 246, 0.15)'; this.style.borderColor='rgba(139, 92, 246, 0.3)'">$1</span>`
       );
     });
     
@@ -208,9 +209,10 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
     assCharacters.forEach(character => {
       const regex = new RegExp(`(${character})`, 'gi');
       highlightedText = highlightedText.replace(regex, 
-        '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #2563EB; font-weight: 600; text-shadow: 0 0 4px rgba(37, 99, 235, 0.3);">$1</span>'
+        '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #ef4444; font-weight: 500; background: rgba(239, 68, 68, 0.08); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(239, 68, 68, 0.3); box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.1), 0 0 6px rgba(239, 68, 68, 0.15); transition: all 0.2s ease;" onmouseover="this.style.background=\'rgba(239, 68, 68, 0.12)\'; this.style.boxShadow=\'0 0 0 1px rgba(239, 68, 68, 0.2), 0 0 8px rgba(239, 68, 68, 0.25)\'; this.style.borderColor=\'rgba(239, 68, 68, 0.4)\'" onmouseout="this.style.background=\'rgba(239, 68, 68, 0.08)\'; this.style.boxShadow=\'0 0 0 1px rgba(239, 68, 68, 0.1), 0 0 6px rgba(239, 68, 68, 0.15)\'; this.style.borderColor=\'rgba(239, 68, 68, 0.3)\'">$1</span>'
       );
     });
+    }
     
     console.log('🎨 TextHighlighter Debug: Final highlighted text length:', highlightedText.length);
     return highlightedText;

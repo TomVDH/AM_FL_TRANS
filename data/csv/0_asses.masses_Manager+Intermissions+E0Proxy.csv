@@ -1,0 +1,254 @@
+# File: 0_asses.masses_Manager+Intermissions+E0Proxy
+# Processed: 2025-08-21T22:17:44.106Z
+# Sheets: 9
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+2,ManagerScene_localization,"",CAMARADES,WRITE.ManagerCanvasUiTextFlowchart.1,COMRADES,"",2025-08-21T22:17:44.106Z
+3,ManagerScene_localization,"",MORAL,WRITE.ManagerCanvasUiTextFlowchart.2,MORALE,"",2025-08-21T22:17:44.106Z
+4,ManagerScene_localization,"",Honradase,WRITE.ManagerCanvasUiTextFlowchart.5,Trusty Ass,"",2025-08-21T22:17:44.106Z
+5,ManagerScene_localization,"",Bellase,WRITE.ManagerCanvasUiTextFlowchart.15,Nice Ass,"",2025-08-21T22:17:44.106Z
+6,ManagerScene_localization,"",Grandase,WRITE.ManagerCanvasUiTextFlowchart.14,Big Ass,"",2025-08-21T22:17:44.106Z
+7,ManagerScene_localization,"",Eixutase,WRITE.ManagerCanvasUiTextFlowchart.12,Thirsty Ass,"",2025-08-21T22:17:44.106Z
+8,ManagerScene_localization,"",Llestase,WRITE.ManagerCanvasUiTextFlowchart.13,Smart Ass,"",2025-08-21T22:17:44.106Z
+9,ManagerScene_localization,"",Coixase,WRITE.ManagerCanvasUiTextFlowchart.11,Slow Ass,"",2025-08-21T22:17:44.106Z
+10,ManagerScene_localization,"",Ferase,WRITE.ManagerCanvasUiTextFlowchart.10,Kick Ass,"",2025-08-21T22:17:44.106Z
+11,ManagerScene_localization,"",Feblase,WRITE.ManagerCanvasUiTextFlowchart.9,Sick Ass,"",2025-08-21T22:17:44.106Z
+12,ManagerScene_localization,"",Fortalase,WRITE.ManagerCanvasUiTextFlowchart.8,Hard Ass,"",2025-08-21T22:17:44.106Z
+13,ManagerScene_localization,"",Tossudase,WRITE.ManagerCanvasUiTextFlowchart.7,Sturdy Ass,"",2025-08-21T22:17:44.106Z
+14,ManagerScene_localization,"",Tristase,WRITE.ManagerCanvasUiTextFlowchart.6,Sad Ass,"",2025-08-21T22:17:44.106Z
+15,ManagerScene_localization,"",Màquina Roca,WRITE.ManagerCanvasUiTextFlowchart.16,Cole-Machine,"",2025-08-21T22:17:44.106Z
+2,CharacterProfiles_localization,"","",CHARACTER.Character Name,Character Name,"",2025-08-21T22:17:44.106Z
+3,CharacterProfiles_localization,Main Donkeys,{$NewName},CHARACTER.{$NewName},{$NewName},{$NewName},2025-08-21T22:17:44.106Z
+4,CharacterProfiles_localization,"",Vellase,CHARACTER.Old Ass,Old Ass,"",2025-08-21T22:17:44.106Z
+5,CharacterProfiles_localization,"",Honradase,CHARACTER.Trusty Ass,Trusty Ass,"",2025-08-21T22:17:44.106Z
+6,CharacterProfiles_localization,"",Bellase,CHARACTER.Nice Ass,Nice Ass,"",2025-08-21T22:17:44.106Z
+7,CharacterProfiles_localization,"",Grandase,CHARACTER.Big Ass,Big Ass,"",2025-08-21T22:17:44.106Z
+8,CharacterProfiles_localization,"",Eixutase,CHARACTER.Thirsty Ass,Thirsty Ass,"",2025-08-21T22:17:44.106Z
+9,CharacterProfiles_localization,"",Llestase,CHARACTER.Smart Ass,Smart Ass,"",2025-08-21T22:17:44.106Z
+10,CharacterProfiles_localization,"",Coixase,CHARACTER.Slow Ass,Slow Ass,"",2025-08-21T22:17:44.106Z
+11,CharacterProfiles_localization,"",Ferase,CHARACTER.Kick Ass,Kick Ass,"",2025-08-21T22:17:44.106Z
+12,CharacterProfiles_localization,"",Feblase,CHARACTER.Sick Ass,Sick Ass,"",2025-08-21T22:17:44.106Z
+13,CharacterProfiles_localization,"",Fortalase,CHARACTER.Hard Ass,Hard Ass,"",2025-08-21T22:17:44.106Z
+14,CharacterProfiles_localization,"",Tossudase,CHARACTER.Sturdy Ass,Sturdy Ass,"",2025-08-21T22:17:44.106Z
+15,CharacterProfiles_localization,"",Tristase,CHARACTER.Sad Ass,Sad Ass,"",2025-08-21T22:17:44.106Z
+16,CharacterProfiles_localization,"",Perase,CHARACTER.Lazy Ass,Lazy Ass,"",2025-08-21T22:17:44.106Z
+17,CharacterProfiles_localization,"",Rudase,CHARACTER.Bad Ass,Bad Ass,"",2025-08-21T22:17:44.106Z
+18,CharacterProfiles_localization,"",Màquina Roca,CHARACTER.Cole-Machine,Cole-Machine,"",2025-08-21T22:17:44.106Z
+19,CharacterProfiles_localization,"",Ase d'Or,CHARACTER.Golden Ass,Golden Ass,"",2025-08-21T22:17:44.106Z
+20,CharacterProfiles_localization,"",El Ramat,CHARACTER.The Masses,The Masses,"",2025-08-21T22:17:44.106Z
+21,CharacterProfiles_localization,The Gods,IHH,CHARACTER.Hee,Hee,"",2025-08-21T22:17:44.106Z
+22,CharacterProfiles_localization,"",AHH,CHARACTER.Haw,Haw,"",2025-08-21T22:17:44.106Z
+23,CharacterProfiles_localization,"",ELS DÉUS,CHARACTER.THE GODS,THE GODS,"",2025-08-21T22:17:44.106Z
+24,CharacterProfiles_localization,Circus/Farm Animals,Ovella,CHARACTER.Sheep,Sheep,"",2025-08-21T22:17:44.106Z
+25,CharacterProfiles_localization,"",Elefant Eli,CHARACTER.Elephant,Eli the Elephant,"",2025-08-21T22:17:44.106Z
+26,CharacterProfiles_localization,"",Porc,CHARACTER.Pig,Pig,"",2025-08-21T22:17:44.106Z
+27,CharacterProfiles_localization,"",Corb,CHARACTER.Cow,Cow,"",2025-08-21T22:17:44.106Z
+28,CharacterProfiles_localization,Humans,Humà,CHARACTER.Human,Human,"",2025-08-21T22:17:44.106Z
+29,CharacterProfiles_localization,"","",CHARACTER.Melvin,Ass Handler Melvin,"",2025-08-21T22:17:44.106Z
+30,CharacterProfiles_localization,"","",CHARACTER.Wedgie,Ass Handler Wedgie,"",2025-08-21T22:17:44.106Z
+31,CharacterProfiles_localization,"",Madame Paner,CHARACTER.Mme. Derriere,Mme. Derriere,"",2025-08-21T22:17:44.106Z
+32,CharacterProfiles_localization,"","",CHARACTER.Ringmaster Rico,Ringmaster Rico,"",2025-08-21T22:17:44.106Z
+33,CharacterProfiles_localization,"","",CHARACTER.Zookeeper Rose,Zookeeper Rose,"",2025-08-21T22:17:44.106Z
+34,CharacterProfiles_localization,"",Megafonia de la Fàbrica,CHARACTER.Factory PA,Factory PA,"",2025-08-21T22:17:44.106Z
+35,CharacterProfiles_localization,"",Miner Sense Cames,CHARACTER.Miner With No Legs,Miner With No Legs,"",2025-08-21T22:17:44.106Z
+36,CharacterProfiles_localization,"",Espectadors Patrick i Milton,CHARACTER.Audience Members Patrick & Milton,Audience Members Patrick & Milton,"",2025-08-21T22:17:44.106Z
+37,CharacterProfiles_localization,"",Espectadora Laurel,CHARACTER.Audience Member Laurel,Audience Member Laurel,"",2025-08-21T22:17:44.106Z
+38,CharacterProfiles_localization,"",Espectador David,CHARACTER.Audience Member David,Audience Member David,"",2025-08-21T22:17:44.106Z
+39,CharacterProfiles_localization,"",DJ Marc,CHARACTER.Radio Host Marcos,DJ Marcos,"",2025-08-21T22:17:44.106Z
+40,CharacterProfiles_localization,"",???,CHARACTER.???,???,"",2025-08-21T22:17:44.106Z
+41,CharacterProfiles_localization,"",Joanet,CHARACTER.Child Joey,Child Joey,"",2025-08-21T22:17:44.106Z
+42,CharacterProfiles_localization,"",Àvia Maria,CHARACTER.Grandma Kulan,Grandma Kulan,"",2025-08-21T22:17:44.106Z
+43,CharacterProfiles_localization,"",La Minera Jennifer,CHARACTER.Miner Jenny,Miner Jenny,"",2025-08-21T22:17:44.106Z
+44,CharacterProfiles_localization,"",Sr. Roca,CHARACTER.Mr. Butte,Mr. Butte,"",2025-08-21T22:17:44.106Z
+45,CharacterProfiles_localization,Signs,Rètol,CHARACTER.Sign,Sign,"",2025-08-21T22:17:44.106Z
+46,CharacterProfiles_localization,"",Rètol pudent,CHARACTER.Shitty Sign,Shitty Sign,"",2025-08-21T22:17:44.106Z
+47,CharacterProfiles_localization,"",Rètol pintoresc,CHARACTER.Old Sign,Old Sign,"",2025-08-21T22:17:44.106Z
+48,CharacterProfiles_localization,"",Rètol de benvinguda,CHARACTER.Welcome Sign,Welcome Sign,"",2025-08-21T22:17:44.106Z
+49,CharacterProfiles_localization,"",Rètol exclusiu,CHARACTER.Fancy Sign,Fancy Sign,"",2025-08-21T22:17:44.106Z
+50,CharacterProfiles_localization,"",Rètol oficial,CHARACTER.Official Sign,Official Sign,"",2025-08-21T22:17:44.106Z
+51,CharacterProfiles_localization,"",Rètol brut,CHARACTER.Dirty Sign,Dirty Sign,"",2025-08-21T22:17:44.106Z
+52,CharacterProfiles_localization,"",Rètol decrèpit,CHARACTER.Decrepit Sign,Decrepit Sign,"",2025-08-21T22:17:44.106Z
+53,CharacterProfiles_localization,"",Rètol històric,CHARACTER.Historic Sign,Historic Sign,"",2025-08-21T22:17:44.106Z
+54,CharacterProfiles_localization,"",Rètol de perill,CHARACTER.Warning Sign,Warning Sign,"",2025-08-21T22:17:44.106Z
+55,CharacterProfiles_localization,Factory Donkeys (be sure to make a balance of gender between the ones marked with X),Correctase,CHARACTER.Proper Ass,Proper Ass,"",2025-08-21T22:17:44.106Z
+56,CharacterProfiles_localization,x,Magrase,CHARACTER.Skinny Ass,Skinny Ass,"",2025-08-21T22:17:44.106Z
+57,CharacterProfiles_localization,"",Tendrase,CHARACTER.Tender Ass,Tender Ass,"",2025-08-21T22:17:44.106Z
+58,CharacterProfiles_localization,x,Pobrase,CHARACTER.Tragic Ass,Tragic Ass,"",2025-08-21T22:17:44.106Z
+59,CharacterProfiles_localization,"",Salvatjase,CHARACTER.Wild Ass,Wild Ass,"",2025-08-21T22:17:44.106Z
+60,CharacterProfiles_localization,"",Escassase,CHARACTER.Anxious Ass,Anxious Ass,"",2025-08-21T22:17:44.106Z
+61,CharacterProfiles_localization,x,Esquifidase,CHARACTER.Resentful Ass,Resentful Ass,"",2025-08-21T22:17:44.106Z
+62,CharacterProfiles_localization,"",Amargase,CHARACTER.Distressed Ass,Distressed Ass,"",2025-08-21T22:17:44.106Z
+63,CharacterProfiles_localization,"",Fluixase,CHARACTER.Gloomy Ass,Gloomy Ass,"",2025-08-21T22:17:44.106Z
+64,CharacterProfiles_localization,"",Primase,CHARACTER.Feeble Ass,Feeble Ass,"",2025-08-21T22:17:44.106Z
+65,CharacterProfiles_localization,x,Prestase,CHARACTER.Helpful Ass,Helpful Ass,"",2025-08-21T22:17:44.106Z
+66,CharacterProfiles_localization,x,Debilase,CHARACTER.Gaunt Ass,Gaunt Ass,"",2025-08-21T22:17:44.106Z
+67,CharacterProfiles_localization,"",Flonjase,CHARACTER.Sleepy Ass,Sleepy Ass,"",2025-08-21T22:17:44.106Z
+68,CharacterProfiles_localization,"",Mustiase,CHARACTER.Weepy Ass,Weepy Ass,"",2025-08-21T22:17:44.106Z
+69,CharacterProfiles_localization,x,Rarase,CHARACTER.Edgy Ass,Edgy Ass,"",2025-08-21T22:17:44.106Z
+70,CharacterProfiles_localization,x,Lividase,CHARACTER.Bleak Ass,Bleak Ass,"",2025-08-21T22:17:44.106Z
+71,CharacterProfiles_localization,"",Deixadase,CHARACTER.Busted Ass,Busted Ass,"",2025-08-21T22:17:44.106Z
+72,CharacterProfiles_localization,(Always male),Dretase,CHARACTER.Right Ass,Right Ass,"",2025-08-21T22:17:44.106Z
+73,CharacterProfiles_localization,(Always male),Esquerrase,CHARACTER.Left Ass,Left Ass,"",2025-08-21T22:17:44.106Z
+74,CharacterProfiles_localization,Astral Plane Donkeys,Insensatase,CHARACTER.Mad Ass,Mad Ass,"",2025-08-21T22:17:44.106Z
+75,CharacterProfiles_localization,"",Fetidase,CHARACTER.Smelly Ass,Smelly Ass,"",2025-08-21T22:17:44.106Z
+76,CharacterProfiles_localization,"",Coquinase,CHARACTER.Greedy Ass,Greedy Ass,"",2025-08-21T22:17:44.106Z
+77,CharacterProfiles_localization,"",Estranyase,CHARACTER.Shifty Ass,Shifty Ass,"",2025-08-21T22:17:44.106Z
+78,CharacterProfiles_localization,"",Jugase,CHARACTER.Risky Ass,Risky Ass,"",2025-08-21T22:17:44.106Z
+79,CharacterProfiles_localization,"",Lluïdase,CHARACTER.Furry Ass,Furry Ass,"",2025-08-21T22:17:44.106Z
+80,CharacterProfiles_localization,"",Altase,CHARACTER.Dusty Ass,Dusty Ass,"",2025-08-21T22:17:44.106Z
+81,CharacterProfiles_localization,"",Explicitase,CHARACTER.Blunt Ass,Blunt Ass,"",2025-08-21T22:17:44.106Z
+82,CharacterProfiles_localization,"",Frevolase,CHARACTER.Peek Ass,Peek Ass,"",2025-08-21T22:17:44.106Z
+83,CharacterProfiles_localization,"",Vivase,CHARACTER.Cool Ass,Cool Ass,"",2025-08-21T22:17:44.106Z
+84,CharacterProfiles_localization,"",Malase,CHARACTER.Mean Ass,Mean Ass,"",2025-08-21T22:17:44.106Z
+85,CharacterProfiles_localization,"",Ranciase,CHARACTER.Cranky Ass,Cranky Ass,"",2025-08-21T22:17:44.106Z
+86,CharacterProfiles_localization,"",Lleugerase,CHARACTER.Hasty Ass,Hasty Ass,"",2025-08-21T22:17:44.106Z
+87,CharacterProfiles_localization,"",Escomase,CHARACTER.Haul Ass,Haul Ass,"",2025-08-21T22:17:44.106Z
+88,CharacterProfiles_localization,"",Fermase,CHARACTER.Healthy Ass,Healthy Ass,"",2025-08-21T22:17:44.106Z
+89,CharacterProfiles_localization,"",Delicadase,CHARACTER.Mellow Ass,Mellow Ass,"",2025-08-21T22:17:44.106Z
+90,CharacterProfiles_localization,"",Estolidase,CHARACTER.Shaky Ass,Shaky Ass,"",2025-08-21T22:17:44.106Z
+91,CharacterProfiles_localization,"",Embriagase,CHARACTER.Trippy Ass,Trippy Ass,"",2025-08-21T22:17:44.106Z
+92,CharacterProfiles_localization,"",DJ Dopaminase,CHARACTER.DJ Dope Ass,DJ Dope Ass,"",2025-08-21T22:17:44.106Z
+93,CharacterProfiles_localization,"",Abruptase,CHARACTER.Angry Ass,Angry Ass,"",2025-08-21T22:17:44.106Z
+94,CharacterProfiles_localization,"",Mesquinase,CHARACTER.Sulky Ass,Sulky Ass,"",2025-08-21T22:17:44.106Z
+95,CharacterProfiles_localization,"",Hamburgase,CHARACTER.Chafed Ass,Chafed Ass,"",2025-08-21T22:17:44.106Z
+96,CharacterProfiles_localization,"",Asprase,CHARACTER.Broken Ass,Broken Ass,"",2025-08-21T22:17:44.106Z
+97,CharacterProfiles_localization,"",Amargase,CHARACTER.Bitter Ass,Bitter Ass,"",2025-08-21T22:17:44.106Z
+98,CharacterProfiles_localization,"",Noblase,CHARACTER.Lofty Ass,Lofty Ass,"",2025-08-21T22:17:44.106Z
+99,CharacterProfiles_localization,"",Absolutase,CHARACTER.Total Ass,Total Ass,"",2025-08-21T22:17:44.106Z
+100,CharacterProfiles_localization,"",Candidase,CHARACTER.Happy Ass,Happy Ass,"",2025-08-21T22:17:44.106Z
+101,CharacterProfiles_localization,"",Peludase,CHARACTER.Hairy Ass,Hairy Ass,"",2025-08-21T22:17:44.106Z
+102,CharacterProfiles_localization,"",Llordase,CHARACTER.Dirty Ass,Dirty Ass,"",2025-08-21T22:17:44.106Z
+103,CharacterProfiles_localization,"",Ranciase,CHARACTER.Janky Ass,Janky Ass,"",2025-08-21T22:17:44.106Z
+104,CharacterProfiles_localization,"",Estretase,CHARACTER.Tight Ass,Tight Ass,"",2025-08-21T22:17:44.106Z
+105,CharacterProfiles_localization,"",Purase,CHARACTER.Fresh Ass,Fresh Ass,"",2025-08-21T22:17:44.106Z
+106,CharacterProfiles_localization,"",Ximplase,CHARACTER.Gullible Ass,Gullible Ass,"",2025-08-21T22:17:44.106Z
+107,CharacterProfiles_localization,"",Lletjase,CHARACTER.Ugly Ass,Ugly Ass,"",2025-08-21T22:17:44.106Z
+2,E0_Instructions_localization,"",Instruccions per als operadors [CAT],WRITE.Dialog:Localizer.1,Instructions for Operators [EN],"",2025-08-21T22:17:44.106Z
+2,E0_Questions_localization,"","",WRITE.DialogLocalizer.17,AVATAR REQUIRED,"",2025-08-21T22:17:44.106Z
+3,E0_Questions_localization,"","",WRITE.DialogLocalizer.18,AWAITING INPUT,"",2025-08-21T22:17:44.106Z
+4,E0_Questions_localization,"",PREM X,WRITE.DialogLocalizer.187,PRESS X,"",2025-08-21T22:17:44.106Z
+5,E0_Questions_localization,"","",WRITE.DialogLocalizer.12,Which does your society value more?,"",2025-08-21T22:17:44.106Z
+6,E0_Questions_localization,"","",WRITE.DialogLocalizer.13,Those who stay with the herd,"",2025-08-21T22:17:44.106Z
+7,E0_Questions_localization,"","",WRITE.DialogLocalizer.14,Those who step away from the herd,"",2025-08-21T22:17:44.106Z
+8,E0_Questions_localization,"","",WRITE.DialogLocalizer.53,Do you think of yourself as an intelligent animal?,"",2025-08-21T22:17:44.106Z
+9,E0_Questions_localization,"","",WRITE.DialogLocalizer.55,Yes,"",2025-08-21T22:17:44.106Z
+10,E0_Questions_localization,"","",WRITE.DialogLocalizer.54,No,"",2025-08-21T22:17:44.106Z
+11,E0_Questions_localization,"","",WRITE.DialogLocalizer.56,Do you think of yourself as a political animal?,"",2025-08-21T22:17:44.106Z
+12,E0_Questions_localization,"","",WRITE.DialogLocalizer.57,Yes,"",2025-08-21T22:17:44.106Z
+13,E0_Questions_localization,"","",WRITE.DialogLocalizer.58,No,"",2025-08-21T22:17:44.106Z
+14,E0_Questions_localization,"","",WRITE.DialogLocalizer.59,Do you have urges to copulate and reproduce?,"",2025-08-21T22:17:44.106Z
+15,E0_Questions_localization,"","",WRITE.DialogLocalizer.60,Yes,"",2025-08-21T22:17:44.106Z
+16,E0_Questions_localization,"","",WRITE.DialogLocalizer.61,No,"",2025-08-21T22:17:44.106Z
+17,E0_Questions_localization,"","",WRITE.DialogLocalizer.62,What is your natural habitat?,"",2025-08-21T22:17:44.106Z
+18,E0_Questions_localization,"","",WRITE.DialogLocalizer.63,Grassy plains,"",2025-08-21T22:17:44.106Z
+19,E0_Questions_localization,"","",WRITE.DialogLocalizer.140,Rocky desert,"",2025-08-21T22:17:44.106Z
+20,E0_Questions_localization,"","",WRITE.DialogLocalizer.64,Concrete jungle,"",2025-08-21T22:17:44.106Z
+21,E0_Questions_localization,"","",WRITE.DialogLocalizer.65,Do you have experience doing manual labour every day for an extended period of time?,"",2025-08-21T22:17:44.106Z
+22,E0_Questions_localization,"","",WRITE.DialogLocalizer.66,Yes,"",2025-08-21T22:17:44.106Z
+23,E0_Questions_localization,"","",WRITE.DialogLocalizer.67,No,"",2025-08-21T22:17:44.106Z
+24,E0_Questions_localization,"","",WRITE.DialogLocalizer.68,Have you ever gone on a labour strike due to unfair or dangerous working conditions?,"",2025-08-21T22:17:44.106Z
+25,E0_Questions_localization,"","",WRITE.DialogLocalizer.69,Yes,"",2025-08-21T22:17:44.106Z
+26,E0_Questions_localization,"","",WRITE.DialogLocalizer.70,No,"",2025-08-21T22:17:44.106Z
+27,E0_Questions_localization,"","",WRITE.DialogLocalizer.71,Have you ever lost your job because your role became redundant at your place of work?,"",2025-08-21T22:17:44.106Z
+28,E0_Questions_localization,"","",WRITE.DialogLocalizer.72,Yes,"",2025-08-21T22:17:44.106Z
+29,E0_Questions_localization,"","",WRITE.DialogLocalizer.73,No,"",2025-08-21T22:17:44.106Z
+30,E0_Questions_localization,"","",WRITE.DialogLocalizer.74,What kind of job was it?,"",2025-08-21T22:17:44.106Z
+31,E0_Questions_localization,"","",WRITE.DialogLocalizer.75,"Agriculture, fishery","",2025-08-21T22:17:44.106Z
+32,E0_Questions_localization,"","",WRITE.DialogLocalizer.76,"Mining, oil, forestry","",2025-08-21T22:17:44.106Z
+33,E0_Questions_localization,"","",WRITE.DialogLocalizer.170,Administration or clerical support,"",2025-08-21T22:17:44.106Z
+34,E0_Questions_localization,"","",WRITE.DialogLocalizer.171,Hospitality or service,"",2025-08-21T22:17:44.106Z
+35,E0_Questions_localization,"","",WRITE.DialogLocalizer.172,Arts and culture,"",2025-08-21T22:17:44.106Z
+36,E0_Questions_localization,"","",WRITE.DialogLocalizer.173,Other,"",2025-08-21T22:17:44.106Z
+37,E0_Questions_localization,"","",WRITE.DialogLocalizer.77,How were the job conditions?,"",2025-08-21T22:17:44.106Z
+38,E0_Questions_localization,"","",WRITE.DialogLocalizer.78,Amazing,"",2025-08-21T22:17:44.106Z
+39,E0_Questions_localization,"","",WRITE.DialogLocalizer.79,Good,"",2025-08-21T22:17:44.106Z
+40,E0_Questions_localization,"","",WRITE.DialogLocalizer.174,Fair,"",2025-08-21T22:17:44.106Z
+41,E0_Questions_localization,"","",WRITE.DialogLocalizer.175,Bad,"",2025-08-21T22:17:44.106Z
+42,E0_Questions_localization,"","",WRITE.DialogLocalizer.176,Terrible,"",2025-08-21T22:17:44.106Z
+43,E0_Questions_localization,"","",WRITE.DialogLocalizer.80,Do you miss the job?,"",2025-08-21T22:17:44.106Z
+44,E0_Questions_localization,"","",WRITE.DialogLocalizer.81,Yes,"",2025-08-21T22:17:44.106Z
+45,E0_Questions_localization,"","",WRITE.DialogLocalizer.82,No,"",2025-08-21T22:17:44.106Z
+46,E0_Questions_localization,"","",WRITE.DialogLocalizer.177,I miss aspects of it,"",2025-08-21T22:17:44.106Z
+47,E0_Questions_localization,"","",WRITE.DialogLocalizer.83,Do you think you would still have the job if you did things differently?,"",2025-08-21T22:17:44.106Z
+48,E0_Questions_localization,"",Sí,WRITE.DialogLocalizer.84,Yes,"",2025-08-21T22:17:44.106Z
+49,E0_Questions_localization,"",No,WRITE.DialogLocalizer.85,No,"",2025-08-21T22:17:44.106Z
+50,E0_Questions_localization,"","",WRITE.DialogLocalizer.178,I don't know,"",2025-08-21T22:17:44.106Z
+51,E0_Questions_localization,"","",WRITE.DialogLocalizer.86,Would you consider yourself to be the best representative of your species to lead a Revolution?,"",2025-08-21T22:17:44.106Z
+52,E0_Questions_localization,"","",WRITE.DialogLocalizer.87,Yes,"",2025-08-21T22:17:44.106Z
+53,E0_Questions_localization,"","",WRITE.DialogLocalizer.88,No,"",2025-08-21T22:17:44.106Z
+54,E0_Questions_localization,"","",WRITE.DialogLocalizer.89,Which of these mythic and literary heroes do you identify with the most?,"",2025-08-21T22:17:44.106Z
+55,E0_Questions_localization,"","",WRITE.DialogLocalizer.90,Bottom from A Midsummer Night's Dream,"",2025-08-21T22:17:44.106Z
+56,E0_Questions_localization,"","",WRITE.DialogLocalizer.91,Lucius from The Golden Ass by Apuleius,"",2025-08-21T22:17:44.106Z
+57,E0_Questions_localization,"","",WRITE.DialogLocalizer.180,Midas from Greek Mythology,"",2025-08-21T22:17:44.106Z
+58,E0_Questions_localization,"","",WRITE.DialogLocalizer.179,Pinocchio from Pinocchio,"",2025-08-21T22:17:44.106Z
+59,E0_Questions_localization,"","",WRITE.DialogLocalizer.19,PHASE ONE\nCOMPLETE,"",2025-08-21T22:17:44.106Z
+60,E0_Questions_localization,"","",WRITE.DialogLocalizer.20,CALIBRATING INTELLIGENCE,"",2025-08-21T22:17:44.106Z
+61,E0_Questions_localization,"","",WRITE.DialogLocalizer.21,AVATAR READY,"",2025-08-21T22:17:44.106Z
+62,E0_Questions_localization,"","",WRITE.DialogLocalizer.22,MATERIALIZING...,"",2025-08-21T22:17:44.106Z
+63,E0_Questions_localization,"","",WRITE.DialogLocalizer.92,"In English, when one human says to another human, ""You ass,"" they are comparing a human to:","",2025-08-21T22:17:44.106Z
+64,E0_Questions_localization,"","",WRITE.DialogLocalizer.93,Equus asinus,"",2025-08-21T22:17:44.106Z
+65,E0_Questions_localization,"","",WRITE.DialogLocalizer.94,A buttocks,"",2025-08-21T22:17:44.106Z
+66,E0_Questions_localization,"","",WRITE.DialogLocalizer.95,"In English, when one human says to another human, ""I'd hit that ass"" they mean:","",2025-08-21T22:17:44.106Z
+67,E0_Questions_localization,"","",WRITE.DialogLocalizer.96,They would forcibly beat an Equus asinus if they could,"",2025-08-21T22:17:44.106Z
+68,E0_Questions_localization,"","",WRITE.DialogLocalizer.97,They would have sexual intercourse with another human if they could,"",2025-08-21T22:17:44.106Z
+69,E0_Questions_localization,"","",WRITE.DialogLocalizer.98,"In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:","",2025-08-21T22:17:44.106Z
+70,E0_Questions_localization,"","",WRITE.DialogLocalizer.99,Balaam beats the ass to death and has to find another one to do his work for him,"",2025-08-21T22:17:44.106Z
+71,E0_Questions_localization,"","",WRITE.DialogLocalizer.100,God gives the ass the ability to speak and the ass begs Balaam to spare them,"",2025-08-21T22:17:44.106Z
+72,E0_Questions_localization,"","",WRITE.DialogLocalizer.101,"In Aesop's Fables, one reads: ""An ass put on the skin of a lion and went around frightening all the animals. The ass saw a fox and tried to frighten her too, but she had heard his voice first, so she said to the ass, 'You can be sure that I too would have been afraid, if I had not already heard the sound of your bray'."" The moral is:","",2025-08-21T22:17:44.106Z
+73,E0_Questions_localization,"","",WRITE.DialogLocalizer.102,The disenfranchised are forced to imitate those in power without ever attaining more power,"",2025-08-21T22:17:44.106Z
+74,E0_Questions_localization,"","",WRITE.DialogLocalizer.103,A fool is still a fool regardless of how they are dressed,"",2025-08-21T22:17:44.106Z
+75,E0_Questions_localization,"","",WRITE.DialogLocalizer.104,"In Ancient Greece, asses symbolized fertility because:","",2025-08-21T22:17:44.106Z
+76,E0_Questions_localization,"","",WRITE.DialogLocalizer.105,Male donkeys have very large penises,"",2025-08-21T22:17:44.106Z
+77,E0_Questions_localization,"","",WRITE.DialogLocalizer.106,Female donkeys frequently give birth to twins,"",2025-08-21T22:17:44.106Z
+78,E0_Questions_localization,"","",WRITE.DialogLocalizer.107,A 'mare' is the general term for a female equine. What is the specific term for a female donkey?,"",2025-08-21T22:17:44.106Z
+79,E0_Questions_localization,"","",WRITE.DialogLocalizer.108,Jack,"",2025-08-21T22:17:44.106Z
+80,E0_Questions_localization,"","",WRITE.DialogLocalizer.109,Gelding,"",2025-08-21T22:17:44.106Z
+81,E0_Questions_localization,"","",WRITE.DialogLocalizer.182,Jennet,"",2025-08-21T22:17:44.106Z
+82,E0_Questions_localization,"","",WRITE.DialogLocalizer.181,Molly,"",2025-08-21T22:17:44.106Z
+83,E0_Questions_localization,"","",WRITE.DialogLocalizer.110,A famous piece of anti-Christian graffiti from ancient Rome depicts:,"",2025-08-21T22:17:44.106Z
+84,E0_Questions_localization,"","",WRITE.DialogLocalizer.111,Jesus with an ass's head,"",2025-08-21T22:17:44.106Z
+85,E0_Questions_localization,"","",WRITE.DialogLocalizer.112,Jesus riding an ass backwards,"",2025-08-21T22:17:44.106Z
+86,E0_Questions_localization,"","",WRITE.DialogLocalizer.113,"What does tradition say Mohammed's ass, Ya'fur, did after the Prophet died?","",2025-08-21T22:17:44.106Z
+87,E0_Questions_localization,"","",WRITE.DialogLocalizer.114,Committed suicide by throwing itself down a well,"",2025-08-21T22:17:44.106Z
+88,E0_Questions_localization,"","",WRITE.DialogLocalizer.115,Rode away from Mecca weeping never to return,"",2025-08-21T22:17:44.106Z
+89,E0_Questions_localization,"","",WRITE.DialogLocalizer.116,"In the philosophical paradox called Buridan's Ass, an ass placed between a bucket of water and a bale of hay will:","",2025-08-21T22:17:44.106Z
+90,E0_Questions_localization,"","",WRITE.DialogLocalizer.117,Always choose the hay first,"",2025-08-21T22:17:44.106Z
+91,E0_Questions_localization,"","",WRITE.DialogLocalizer.118,Always choose the water first,"",2025-08-21T22:17:44.106Z
+92,E0_Questions_localization,"","",WRITE.DialogLocalizer.183,Die from indecision,"",2025-08-21T22:17:44.106Z
+93,E0_Questions_localization,"","",WRITE.DialogLocalizer.119,"Was ist die Bedeutung der Ausdruck ""sich eine Eselsbrücke bauen"" auf Deutsch?","",2025-08-21T22:17:44.106Z
+94,E0_Questions_localization,"","",WRITE.DialogLocalizer.120,"Ein Kurzwort finden, um sich etwas besser merken zu können","",2025-08-21T22:17:44.106Z
+95,E0_Questions_localization,"","",WRITE.DialogLocalizer.121,"Vertrauen Sie niemals einem langsamen Esel, um eine Brücke zu bauen","",2025-08-21T22:17:44.106Z
+96,E0_Questions_localization,"","",WRITE.DialogLocalizer.122,"In 1981, the video game DONKEY.BAS was distributed on all original IBM computers. In that game, players must:","",2025-08-21T22:17:44.106Z
+97,E0_Questions_localization,"","",WRITE.DialogLocalizer.123,Play as a donkey pulling wagons of hay from one town to another,"",2025-08-21T22:17:44.106Z
+98,E0_Questions_localization,"","",WRITE.DialogLocalizer.124,Drive a car down a road while avoiding donkeys,"",2025-08-21T22:17:44.106Z
+99,E0_Questions_localization,"","",WRITE.DialogLocalizer.184,Play a rhythm game that simulates donkeys mating,"",2025-08-21T22:17:44.106Z
+100,E0_Questions_localization,"","",WRITE.DialogLocalizer.125,"En La Gloria, Colombia, el servicio de biblioteca móvil que usa los burros para transportar libros a los pueblos pequeños se llama:","",2025-08-21T22:17:44.106Z
+101,E0_Questions_localization,"","",WRITE.DialogLocalizer.126,Biblioburro,"",2025-08-21T22:17:44.106Z
+102,E0_Questions_localization,"","",WRITE.DialogLocalizer.127,Libraría Asinia,"",2025-08-21T22:17:44.106Z
+103,E0_Questions_localization,"","",WRITE.DialogLocalizer.128,"In China, the rise in demand for a luxury Traditional Chinese Medicine product called 'ejiao' has resulted in how many asses being slaughtered ever year?","",2025-08-21T22:17:44.106Z
+104,E0_Questions_localization,"","",WRITE.DialogLocalizer.129,5 million,"",2025-08-21T22:17:44.106Z
+105,E0_Questions_localization,"","",WRITE.DialogLocalizer.130,3 million,"",2025-08-21T22:17:44.106Z
+106,E0_Questions_localization,"","",WRITE.DialogLocalizer.185,2 million,"",2025-08-21T22:17:44.106Z
+107,E0_Questions_localization,"","",WRITE.DialogLocalizer.131,"As of 2018, how heavy must a tourist be to be too heavy to ride an ass on the island of Santorini, Greece?","",2025-08-21T22:17:44.106Z
+108,E0_Questions_localization,"","",WRITE.DialogLocalizer.132,75kg (165lbs),"",2025-08-21T22:17:44.106Z
+109,E0_Questions_localization,"","",WRITE.DialogLocalizer.133,100kg (220lbs),"",2025-08-21T22:17:44.106Z
+110,E0_Questions_localization,"","",WRITE.DialogLocalizer.134,"In northwestern Australia, wild asses are shot from government helicopters because:","",2025-08-21T22:17:44.106Z
+111,E0_Questions_localization,"","",WRITE.DialogLocalizer.135,They are considered an invasive species left behind from British colonization,"",2025-08-21T22:17:44.106Z
+112,E0_Questions_localization,"","",WRITE.DialogLocalizer.136,They are destroying the natural landscape of the Kimberley,"",2025-08-21T22:17:44.106Z
+113,E0_Questions_localization,"","",WRITE.DialogLocalizer.186,All of the above,"",2025-08-21T22:17:44.106Z
+114,E0_Questions_localization,"","",WRITE.DialogLocalizer.137,Equus asinus has been in the service of human beings as a manual labourer for how many years?,"",2025-08-21T22:17:44.106Z
+115,E0_Questions_localization,"","",WRITE.DialogLocalizer.138,5000 years,"",2025-08-21T22:17:44.106Z
+116,E0_Questions_localization,"","",WRITE.DialogLocalizer.139,7000 years,"",2025-08-21T22:17:44.106Z
+2,E0_GameTitle_localization,"",PREM X PER COMENÇAR,WRITE.DialogLocalizer.1,PRESS X TO BEGIN,"",2025-08-21T22:17:44.106Z
+2,2x_Intermission_localization,"",ENTREACTE,WRITE.Dialog:Localizer.5,INTERMISSION,"",2025-08-21T22:17:44.106Z
+3,2x_Intermission_localization,"",durant el qual hi ha una PAUSA de durada interminada,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,"",2025-08-21T22:17:44.106Z
+4,2x_Intermission_localization,"",PREM X PER COMENÇAR QUAN VULGUIS,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,"",2025-08-21T22:17:44.106Z
+2,4x_Intermission_localization,"",ENTREACTE,WRITE.Dialog:Localizer.5,INTERMISSION,"",2025-08-21T22:17:44.106Z
+3,4x_Intermission_localization,"",durant el qual hi ha una PAUSA de durada interminada,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,"",2025-08-21T22:17:44.106Z
+4,4x_Intermission_localization,"",PREM X PER COMENÇAR QUAN VULGUIS,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,"",2025-08-21T22:17:44.106Z
+2,6x_Intermission_localization,"",ENTREACTE,WRITE.Dialog:Localizer.5,INTERMISSION,"",2025-08-21T22:17:44.106Z
+3,6x_Intermission_localization,"",durant el qual hi ha una PAUSA de durada interminada,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,"",2025-08-21T22:17:44.106Z
+4,6x_Intermission_localization,"",PREM X PER COMENÇAR QUAN VULGUIS,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,"",2025-08-21T22:17:44.106Z
+2,8x_Intermission_localization,"",ENTREACTE,WRITE.Dialog:Localizer.5,INTERMISSION,"",2025-08-21T22:17:44.106Z
+3,8x_Intermission_localization,"",durant el qual hi ha una PAUSA de durada interminada,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,"",2025-08-21T22:17:44.106Z
+4,8x_Intermission_localization,"",PREM X PER COMENÇAR QUAN VULGUIS,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,"",2025-08-21T22:17:44.106Z

@@ -1,0 +1,370 @@
+# File: 7_asses.masses_E7Proxy
+# Processed: 2025-08-21T22:17:44.818Z
+# Sheets: 17
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+3,E7_Opening_localization,Two Factory workers stand outside during a smoke break.,"",SAY.Dialog:Opening.2.Melvin,Maybe we should get back to work now?,"",2025-08-21T22:17:44.818Z
+4,E7_Opening_localization,"","",SAY.Dialog:Opening.7.Wedgie,Settle down—we're on break!,"",2025-08-21T22:17:44.818Z
+5,E7_Opening_localization,"","",SAY.Dialog:Opening.6.Melvin,I can't afford to lose this job...,"",2025-08-21T22:17:44.818Z
+6,E7_Opening_localization,"","",SAY.Dialog:Opening.29.Melvin,Mme. Derriere has been hinting that she's going to automate every department!,"",2025-08-21T22:17:44.818Z
+7,E7_Opening_localization,"","",SAY.Dialog:Opening.30.Melvin,She's obsessed with efficiency—so can we go now?!,"",2025-08-21T22:17:44.818Z
+8,E7_Opening_localization,"","",SAY.Dialog:Opening.5.Wedgie,Cool it.,"",2025-08-21T22:17:44.818Z
+9,E7_Opening_localization,"","",SAY.Dialog:Opening.10.Wedgie,"If we worked in Slaughter or Shipping, sure, maybe we could be replaced.","",2025-08-21T22:17:44.818Z
+10,E7_Opening_localization,"","",SAY.Dialog:Opening.31.Wedgie,But us? No way.,"",2025-08-21T22:17:44.818Z
+11,E7_Opening_localization,"","",SAY.Dialog:Opening.32.Wedgie,You can't replace Animal Handling. It's an ART.,"",2025-08-21T22:17:44.818Z
+12,E7_Opening_localization,"","",SAY.Dialog:Opening.9.Melvin,"You say that, but I bet Mme. Derriere's already building Robots to go pick up donkeys instead of us.","",2025-08-21T22:17:44.818Z
+13,E7_Opening_localization,"","",SAY.Dialog:Opening.8.Wedgie,Robots?!,"",2025-08-21T22:17:44.818Z
+14,E7_Opening_localization,"","",SAY.Dialog:Opening.33.Wedgie,When was the last time you saw a Robot?,"",2025-08-21T22:17:44.818Z
+15,E7_Opening_localization,"","",SAY.Dialog:Opening.13.Melvin,"Uh... I dunno. The Forklift's automated now, doesn't that count?","",2025-08-21T22:17:44.818Z
+16,E7_Opening_localization,"","",SAY.Dialog:Opening.19.Wedgie,"There's a difference between a Machine and a Robot, idiot.","",2025-08-21T22:17:44.818Z
+17,E7_Opening_localization,"","",SAY.Dialog:Opening.18.Melvin,What about the self-locking cages in the Holding Facilities?,"",2025-08-21T22:17:44.818Z
+18,E7_Opening_localization,"","",SAY.Dialog:Opening.17.Wedgie,What are you talking about? We don't have self-locking cages.,"",2025-08-21T22:17:44.818Z
+3,E7_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.5,EPISODE SEVEN,"",2025-08-21T22:17:44.818Z
+4,E7_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.7,THE FACTORY,"",2025-08-21T22:17:44.818Z
+5,E7_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.8,Press X to Begin,"",2025-08-21T22:17:44.818Z
+3,E7_Holding1_localization,"","",SAY.Dialog:Opening.62.Kick Ass,WAKE UP! WAKE UP!,"",2025-08-21T22:17:44.818Z
+4,E7_Holding1_localization,"","",SAY.Dialog:Opening.63.Smart Ass,Oof... my head hurts...,"",2025-08-21T22:17:44.818Z
+5,E7_Holding1_localization,Branch 1.1. The group went to the Circus and Sad Ass stayed on the Farm.,"",SAY.Dialog:Opening.64.Smart Ass,Where's my Gorilla costume?,"",2025-08-21T22:17:44.818Z
+6,E7_Holding1_localization,Jump to line 11.,"",SAY.Dialog:Opening.14.Kick Ass,@#$%&! We're NOT AT THE CIRCUS ANYMORE!,"",2025-08-21T22:17:44.818Z
+7,E7_Holding1_localization,Branch 1.2. The group went to the Circus with Sad Ass.,"",SAY.Dialog:Opening.188.Smart Ass,Where's my Gorilla costume?,"",2025-08-21T22:17:44.818Z
+8,E7_Holding1_localization,Jump to line 11.,"",SAY.Dialog:Opening.76.Sad Ass,We're not at the Circus anymore...,"",2025-08-21T22:17:44.818Z
+9,E7_Holding1_localization,Branch 1.3. The group went to the Zoo.,"",SAY.Dialog:Opening.89.Smart Ass,Is it Monday? Are we starting Ass of the Week?!,"",2025-08-21T22:17:44.818Z
+10,E7_Holding1_localization,Jump to line 11.,"",SAY.Dialog:Opening.90.Kick Ass,@#$%&! We're NOT AT THE ZOO ANYMORE!,"",2025-08-21T22:17:44.818Z
+11,E7_Holding1_localization,"Branches (1.1, 1.2, 1.3) converge.","",SAY.Dialog:Opening.156.Kick Ass,We're in trouble—REAL TROUBLE.,"",2025-08-21T22:17:44.818Z
+12,E7_Holding1_localization,"","",SAY.Dialog:Opening.160.Smart Ass,What?! Where are the others?,"",2025-08-21T22:17:44.818Z
+13,E7_Holding1_localization,"","",SAY.Dialog:Opening.164.Kick Ass,Slow Ass wasn't in the Truck-Machine when we got here—,"",2025-08-21T22:17:44.818Z
+14,E7_Holding1_localization,"","",SAY.Dialog:Opening.170.Kick Ass,And Big Ass is MISSING.,"",2025-08-21T22:17:44.818Z
+15,E7_Holding1_localization,"","",SAY.Dialog:Opening.183.Smart Ass,Big Ass has gotta be around here somewhere.,"",2025-08-21T22:17:44.818Z
+16,E7_Holding1_localization,Dialogue option 1. Jump to line 19.,"",MENU.Dialog:Opening.173,Maybe he's still stuck in the Truck-Machine.,"",2025-08-21T22:17:44.818Z
+17,E7_Holding1_localization,Dialogue option 2. Jump to line 19.,"",MENU.Dialog:Opening.175,Maybe he couldn't fit in this cage.,"",2025-08-21T22:17:44.818Z
+18,E7_Holding1_localization,Dialogue option 3. Jump to line 19.,"",MENU.Dialog:Opening.174,Maybe the Humans mistook him for a Horse.,"",2025-08-21T22:17:44.818Z
+19,E7_Holding1_localization,All dialogue options from 3 previous lines converge.,"",SAY.Dialog:Opening.184.Smart Ass,Maybe—,"",2025-08-21T22:17:44.818Z
+20,E7_Holding1_localization,"","",SAY.Dialog:Opening.36.???,Don't bother looking for your friend.,"",2025-08-21T22:17:44.818Z
+21,E7_Holding1_localization,"","",SAY.Dialog:Opening.102.???,It's too late for him.,"",2025-08-21T22:17:44.818Z
+22,E7_Holding1_localization,"","",SAY.Dialog:Opening.99.Kick Ass,@#$%&! Who are YOU?,"",2025-08-21T22:17:44.818Z
+23,E7_Holding1_localization,"","",SAY.Dialog:Opening.100.Bleak Ass,The name is Bleak Ass.,"",2025-08-21T22:17:44.818Z
+24,E7_Holding1_localization,"","",SAY.Dialog:Opening.103.Bleak Ass,I came here with my Herd.,"",2025-08-21T22:17:44.818Z
+25,E7_Holding1_localization,"","",SAY.Dialog:Opening.104.Bleak Ass,We used to work in the mountains carrying books to school children.,"",2025-08-21T22:17:44.818Z
+26,E7_Holding1_localization,"","",SAY.Dialog:Opening.168.Bleak Ass,Now I'm the only one of us left.,"",2025-08-21T22:17:44.818Z
+27,E7_Holding1_localization,"","",SAY.Dialog:Opening.106.Smart Ass,What is this place?,"",2025-08-21T22:17:44.818Z
+28,E7_Holding1_localization,"","",SAY.Dialog:Opening.107.Bleak Ass,It's called a Factory...,"",2025-08-21T22:17:44.818Z
+29,E7_Holding1_localization,"","",SAY.Dialog:Opening.108.Bleak Ass,But I call it Hell.,"",2025-08-21T22:17:44.818Z
+30,E7_Holding1_localization,"","",SAY.Dialog:Opening.109.Kick Ass,"@#$%&!—Smart Ass, what's the PLAN?!","",2025-08-21T22:17:44.818Z
+31,E7_Holding1_localization,"","",SAY.Dialog:Opening.111.Smart Ass,The Plan is:,"",2025-08-21T22:17:44.818Z
+32,E7_Holding1_localization,"","",SAY.Dialog:Opening.114.Smart Ass,ONE. We break out of this cage.,"",2025-08-21T22:17:44.818Z
+33,E7_Holding1_localization,"","",SAY.Dialog:Opening.113.Smart Ass,TWO. We go find Big Ass.,"",2025-08-21T22:17:44.818Z
+34,E7_Holding1_localization,"","",SAY.Dialog:Opening.112.Smart Ass,THREE. We get out of this Factory alive and—I'll tell you the rest later!,"",2025-08-21T22:17:44.818Z
+35,E7_Holding1_localization,"","",SAY.Dialog:Opening.115.Smart Ass,Easy.,"",2025-08-21T22:17:44.818Z
+36,E7_Holding1_localization,"","",SAY.Dialog:Gate.11.Smart Ass,"Hey, it was unlocked—Step ONE complete!","",2025-08-21T22:17:44.818Z
+37,E7_Holding1_localization,Said to either ONE donkey or TWO donkeys. If necessary adapt sentence to avoid Singular / Plural variations in target language.,"",SAY.Dialog:Gate.5.Smart Ass,Stay here while I find us a way out.,"",2025-08-21T22:17:44.818Z
+38,E7_Holding1_localization,Once reaching the final gate and leaving the room.,"",SAY.Dialog:Ending.8.Smart Ass,Easy!,"",2025-08-21T22:17:44.818Z
+39,E7_Holding1_localization,"","",SAY.Dialog:Ending.10.Bleak Ass,Good luck.,"",2025-08-21T22:17:44.818Z
+40,E7_Holding1_localization,"","",SAY.Dialog:Ending.15.Bleak Ass,No one who goes through that door ever comes back....,"",2025-08-21T22:17:44.818Z
+41,E7_Holding1_localization,Random NPC lines.,"",SAY.Dialog:Edgy.2.Edgy Ass,What was THAT?!,"",2025-08-21T22:17:44.818Z
+42,E7_Holding1_localization,Random NPC lines.,"",SAY.Dialog:Helpful.13.Helpful Ass,It sure helps to have other people looking out for you... will you do the same for me?,"",2025-08-21T22:17:44.818Z
+43,E7_Holding1_localization,Random NPC lines.,"",SAY.Dialog:Helpful.19.Helpful Ass,I saw a Human come in and fiddle with that thing on the wall over there.,"",2025-08-21T22:17:44.818Z
+44,E7_Holding1_localization,Random NPC lines.,"",SAY.Dialog:Helpful.20.Helpful Ass,Maybe you should touch it?,"",2025-08-21T22:17:44.818Z
+45,E7_Holding1_localization,Random NPC lines.,"",SAY.Dialog:Gaunt.2.Gaunt Ass,"Please, do you have any food?","",2025-08-21T22:17:44.818Z
+46,E7_Holding1_localization,Random NPC lines.,"",SAY.Dialog:Weepy.2.Weepy Ass,WAAAHH!! I... just want to go home!,"",2025-08-21T22:17:44.818Z
+47,E7_Holding1_localization,Random NPC lines.,"",SAY.Dialog:Bleak.2.Bleak Ass,There's only one way out of this place... in a box.,"",2025-08-21T22:17:44.818Z
+48,E7_Holding1_localization,Random NPC lines.,"",SAY.Dialog:Busted.2.Busted Ass,I tried to run from the Humans... but they tracked me down and locked me up.,"",2025-08-21T22:17:44.818Z
+49,E7_Holding1_localization,Random NPC lines.,"",SAY.Dialog:Sleepy.2.Sleepy Ass,Zzzz... —AHH!— Zzzz...,"",2025-08-21T22:17:44.818Z
+50,E7_Holding1_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+51,E7_Holding1_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+52,E7_Holding1_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+53,E7_Holding1_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+54,E7_Holding1_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+55,E7_Holding1_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+56,E7_Holding1_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_Holding2_localization,"","",SAY.Dialog:Opening.9.Skinny Ass,Psst! How did you get out? Are you here to save us?!,"",2025-08-21T22:17:44.818Z
+4,E7_Holding2_localization,"","",SAY.Dialog:Opening.11.Smart Ass,We're looking for someone named Big Ass—you seen him?,"",2025-08-21T22:17:44.818Z
+5,E7_Holding2_localization,"","",SAY.Dialog:Opening.6.Skinny Ass,Big Ass?,"",2025-08-21T22:17:44.818Z
+6,E7_Holding2_localization,"","",SAY.Dialog:Opening.13.Skinny Ass,"No, but I did see a hefty fellow being taken to the next room.","",2025-08-21T22:17:44.818Z
+7,E7_Holding2_localization,"","",SAY.Dialog:Opening.12.Skinny Ass,You should hurry...,"",2025-08-21T22:17:44.818Z
+8,E7_Holding2_localization,"","",SAY.Dialog:Opening.47.Skinny Ass,"But, whatever you do, don't let those cameras see you.","",2025-08-21T22:17:44.818Z
+9,E7_Holding2_localization,"","",SAY.Dialog:Opening.15.Smart Ass,"I got us out of the last room, it's your turn Kick Ass.","",2025-08-21T22:17:44.818Z
+10,E7_Holding2_localization,"","",SAY.Dialog:Opening.18.Kick Ass,@#$%&! What do I DO?,"",2025-08-21T22:17:44.818Z
+11,E7_Holding2_localization,"","",SAY.Dialog:Opening.17.Smart Ass,Let me think...,"",2025-08-21T22:17:44.818Z
+12,E7_Holding2_localization,Camera zoom into Smart Ass's mind.,"",SAY.Dialog:Opening.19.Smart Ass,"First, Kick Ass will...","",2025-08-21T22:17:44.818Z
+13,E7_Holding2_localization,Upon completion of the map.,"",SAY.Dialog:Ending.3.Smart Ass,Easy!,"",2025-08-21T22:17:44.818Z
+14,E7_Holding2_localization,Random NPC lines.,"",SAY.Dialog:Gloomy.2.Gloomy Ass,You and your friends aren't going to make it out of here alive.,"",2025-08-21T22:17:44.818Z
+15,E7_Holding2_localization,Random NPC lines.,"",SAY.Dialog:Feeble.2.Feeble Ass,...will anybody help me?,"",2025-08-21T22:17:44.818Z
+16,E7_Holding2_localization,Random NPC lines.,"",SAY.Dialog:Left.2.Left Ass,I can't find my partner!! Where is he?!,"",2025-08-21T22:17:44.818Z
+17,E7_Holding2_localization,Random NPC lines.,"",SAY.Dialog:Distressed.2.Distressed Ass,What did I do to deserve this?!,"",2025-08-21T22:17:44.818Z
+18,E7_Holding2_localization,Random NPC lines.,"",SAY.Dialog:Resentful.2.Resentful Ass,"You're lucky, you still have some of your Herd. For now.","",2025-08-21T22:17:44.818Z
+19,E7_Holding2_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+20,E7_Holding2_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+21,E7_Holding2_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+22,E7_Holding2_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+23,E7_Holding2_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+24,E7_Holding2_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+25,E7_Holding2_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_Holding3_localization,"","",SAY.Dialog:Opening.26.Proper Ass,Pardon me! Is this a jailbreak?,"",2025-08-21T22:17:44.818Z
+4,E7_Holding3_localization,"","",SAY.Dialog:Opening.3.Smart Ass,We're looking for someone named Big—you seen him?\n,"",2025-08-21T22:17:44.818Z
+5,E7_Holding3_localization,"","",SAY.Dialog:Opening.8.Proper Ass,"Big? Oh dear, perhaps that was the Ass of impressive mass that was just taken into the Slaughterhouse chamber.","",2025-08-21T22:17:44.818Z
+6,E7_Holding3_localization,"","",SAY.Dialog:Opening.20.Proper Ass,"Never fear, we have a provision of shared responsibility for singing the Song of Ascension for the Asses who go before us.","",2025-08-21T22:17:44.818Z
+7,E7_Holding3_localization,"","",SAY.Dialog:Opening.19.Proper Ass,You just don't want to be the final Ass of the night...,"",2025-08-21T22:17:44.818Z
+8,E7_Holding3_localization,"","",SAY.Dialog:Opening.17.Kick Ass,We gotta find Big Ass QUICK!,"",2025-08-21T22:17:44.818Z
+9,E7_Holding3_localization,"","",SAY.Dialog:Opening.15.Proper Ass,"Of course, if you come across any Humans, you might be wise to give them a right good knock on the skull.","",2025-08-21T22:17:44.818Z
+10,E7_Holding3_localization,"","",SAY.Dialog:Opening.13.Proper Ass,It's your life or theirs after all.,"",2025-08-21T22:17:44.818Z
+11,E7_Holding3_localization,"","",SAY.Dialog:Opening.12.Smart Ass,You hear that Kick?,"",2025-08-21T22:17:44.818Z
+12,E7_Holding3_localization,"","",SAY.Dialog:Opening.41.Smart Ass,"A good knock, just like old times.","",2025-08-21T22:17:44.818Z
+13,E7_Holding3_localization,"","",SAY.Dialog:Opening.22.Kick Ass,WHAT?!—I don't DO that anymore!,"",2025-08-21T22:17:44.818Z
+14,E7_Holding3_localization,"","",SAY.Dialog:Opening.21.Kick Ass,You made me promise to never HURT HUMANS AGAIN!,"",2025-08-21T22:17:44.818Z
+15,E7_Holding3_localization,"","",SAY.Dialog:Opening.40.Smart Ass,Plans change!,"",2025-08-21T22:17:44.818Z
+16,E7_Holding3_localization,"","",SAY.Dialog:Opening.46.Smart Ass,It's time for a new strategy...,"",2025-08-21T22:17:44.818Z
+17,E7_Holding3_localization,Camera zoom into Smart Ass's mind.,"",SAY.Dialog:Opening.47.Smart Ass,"First, Kick Ass will avoid...","",2025-08-21T22:17:44.818Z
+18,E7_Holding3_localization,Upon completion of the map.,"",SAY.Dialog:Ending.3.Smart Ass,See that wasn't so bad!,"",2025-08-21T22:17:44.818Z
+19,E7_Holding3_localization,"","",SAY.Dialog:Ending.8.Kick Ass,JUST that once—NEVER AGAIN!,"",2025-08-21T22:17:44.818Z
+20,E7_Holding3_localization,Random NPC lines.,"",SAY.Dialog:Tragic.2.Tragic Ass,Death will take us all.,"",2025-08-21T22:17:44.818Z
+21,E7_Holding3_localization,Random NPC lines.,"",SAY.Dialog:AndThenKickWill.3.Smart Ass,And then Kick will knock out...,"",2025-08-21T22:17:44.818Z
+22,E7_Holding3_localization,Random NPC lines.,"",SAY.Dialog:Wild_1.2.Wild Ass,"If I see a Human, I'll beat them down!","",2025-08-21T22:17:44.818Z
+23,E7_Holding3_localization,Random NPC lines.,"",SAY.Dialog:Anxious_1.2.Anxious Ass,What's going to happen to me?!,"",2025-08-21T22:17:44.818Z
+24,E7_Holding3_localization,Random NPC lines.,"",SAY.Dialog:Right.2.Right Ass,"If you see my partner Left, tell him I have always loved him dearly.","",2025-08-21T22:17:44.818Z
+25,E7_Holding3_localization,Random NPC lines.,"",SAY.Dialog:Tender.2.Tender Ass,Will you sing for me when I'm gone?,"",2025-08-21T22:17:44.818Z
+26,E7_Holding3_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+27,E7_Holding3_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+28,E7_Holding3_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+29,E7_Holding3_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+30,E7_Holding3_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+31,E7_Holding3_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+32,E7_Holding3_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_SlaughterWaitingRoom_localiz,"","",SAY.Dialog:Opening.3.Big Ass,Comrades?! Is that you?! Help me!,"",2025-08-21T22:17:44.818Z
+4,E7_SlaughterWaitingRoom_localiz,"","",SAY.Dialog:Opening.16.Wedgie,"Quit your braying, you idiot!","",2025-08-21T22:17:44.818Z
+5,E7_SlaughterWaitingRoom_localiz,"","",SAY.Dialog:Opening.15.Kick Ass,Smart Ass! What do we DO NOW?!,"",2025-08-21T22:17:44.818Z
+6,E7_SlaughterWaitingRoom_localiz,"","",SAY.Dialog:Opening.14.Smart Ass,I'm on it!,"",2025-08-21T22:17:44.818Z
+7,E7_SlaughterWaitingRoom_localiz,Camera zoom into Smart Ass's mind.,"",SAY.Dialog:Opening.13.Smart Ass,"First, Kick Ass will knock out...","",2025-08-21T22:17:44.818Z
+8,E7_SlaughterWaitingRoom_localiz,Upon completion of the map.,"",SAY.Dialog:Ending.3.Smart Ass,Ha! Big Ass is as good as saved! EASY!,"",2025-08-21T22:17:44.818Z
+9,E7_SlaughterWaitingRoom_localiz,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+10,E7_SlaughterWaitingRoom_localiz,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+11,E7_SlaughterWaitingRoom_localiz,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+12,E7_SlaughterWaitingRoom_localiz,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+13,E7_SlaughterWaitingRoom_localiz,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+14,E7_SlaughterWaitingRoom_localiz,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+15,E7_SlaughterWaitingRoom_localiz,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_Slaughtering_localization,Big Ass is on a conveyor belt headed towards a worker with a gun.,"",SAY.Dialog:Opening.3.Big Ass,Help me!,"",2025-08-21T22:17:44.818Z
+4,E7_Slaughtering_localization,"","",SAY.Dialog:Opening.22.Kick Ass,@#$%&!,"",2025-08-21T22:17:44.818Z
+5,E7_Slaughtering_localization,Camera zoom into Smart Ass's mind.,"",SAY.Dialog:Opening.21.Smart Ass,SHUT IT! I gotta strategize!,"",2025-08-21T22:17:44.818Z
+6,E7_Slaughtering_localization,Upon zooming of the map.,"",SAY.Dialog:Opening.20.Smart Ass,"First, Kick Ass will run...","",2025-08-21T22:17:44.818Z
+7,E7_Slaughtering_localization,"Kick, Smart, and (possibly) Sad, have hit a button which took the Factory worker away on a hook.","",SAY.Dialog:PostWorkerDies.7.Big Ass,Get me outta here!,"",2025-08-21T22:17:44.818Z
+8,E7_Slaughtering_localization,"","",SAY.Dialog:PostWorkerDies.28.Smart Ass,HOW?!,"",2025-08-21T22:17:44.818Z
+9,E7_Slaughtering_localization,"","",SAY.Dialog:PostWorkerDies.30.Big Ass,Try a button!,"",2025-08-21T22:17:44.818Z
+10,E7_Slaughtering_localization,"","",SAY.Dialog:PostWorkerDies.49.Big Ass,Try another!,"",2025-08-21T22:17:44.818Z
+11,E7_Slaughtering_localization,"","",SAY.Dialog:PostWorkerDies.17.Kick Ass,&%@$! Big Ass WATCH OUT!,"",2025-08-21T22:17:44.818Z
+12,E7_Slaughtering_localization,Big Ass is picked up by the same hook as the worker and taken into the next room.,"",SAY.Dialog:PostWorkerDies.21.Big Ass,AAAAAAHHHHHHH!,"",2025-08-21T22:17:44.818Z
+13,E7_Slaughtering_localization,"","",SAY.Dialog:PostWorkerDies.22.Smart Ass,Hang on!,"",2025-08-21T22:17:44.818Z
+14,E7_Slaughtering_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+15,E7_Slaughtering_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+16,E7_Slaughtering_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+17,E7_Slaughtering_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+18,E7_Slaughtering_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+19,E7_Slaughtering_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+20,E7_Slaughtering_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_Skinning_localization,A loud sound from the machine—the worker is being sliced and diced. Big is next.,"",SAY.Dialog:Opening.36.Smart Ass,What's that sound?,"",2025-08-21T22:17:44.818Z
+4,E7_Skinning_localization,"","",SAY.Dialog:Opening.26.Kick Ass,@#$%&!,"",2025-08-21T22:17:44.818Z
+5,E7_Skinning_localization,"","",SAY.Dialog:Opening.41.Big Ass,HELP!,"",2025-08-21T22:17:44.818Z
+6,E7_Skinning_localization,"","",SAY.Dialog:Opening.43.Smart Ass,We've got to turn off this Death-Machine.,"",2025-08-21T22:17:44.818Z
+7,E7_Skinning_localization,This is said if Sad is not present.,"",SAY.Dialog:Opening.3.Smart Ass,Kick—cut the power!,"",2025-08-21T22:17:44.818Z
+8,E7_Skinning_localization,"Alternately, this is said if Sad is present.","",SAY.Dialog:Opening.11.Smart Ass,Kick and Sad—cut the power!,"",2025-08-21T22:17:44.818Z
+9,E7_Skinning_localization,"","",SAY.Dialog:Opening.58.Smart Ass,I'll jam the controls.,"",2025-08-21T22:17:44.818Z
+10,E7_Skinning_localization,The machine is stopped now.,"",SAY.Dialog:BigIsSaved.12.Smart Ass,STEP TWO COMPLETE!,"",2025-08-21T22:17:44.818Z
+11,E7_Skinning_localization,"","",SAY.Dialog:GateOpened.20.Big Ass,I truly thought that was the end for me.,"",2025-08-21T22:17:44.818Z
+12,E7_Skinning_localization,"","",SAY.Dialog:GateOpened.13.Big Ass,You're all heroes!,"",2025-08-21T22:17:44.818Z
+13,E7_Skinning_localization,Dialogue option 1.1.,"",MENU.Dialog:GateOpened.47,Hey! It was MY plan!,"",2025-08-21T22:17:44.818Z
+14,E7_Skinning_localization,"","",SAY.Dialog:GateOpened.49.Smart Ass,Hey! It was MY plan.,"",2025-08-21T22:17:44.818Z
+15,E7_Skinning_localization,"","",SAY.Dialog:GateOpened.58.Kick Ass,I'm happy you're SAFE!,"",2025-08-21T22:17:44.818Z
+16,E7_Skinning_localization,This is said if Sad is present. Jump to line 21.,"",SAY.Dialog:GateOpened.52.Sad Ass,...me too.,"",2025-08-21T22:17:44.818Z
+17,E7_Skinning_localization,Dialogue option 1.2.,"",MENU.Dialog:GateOpened.48,I'm happy you're safe.,"",2025-08-21T22:17:44.818Z
+18,E7_Skinning_localization,"","",SAY.Dialog:GateOpened.50.Smart Ass,I'm happy you're safe.,"",2025-08-21T22:17:44.818Z
+19,E7_Skinning_localization,This is said if Sad is present.,"",SAY.Dialog:GateOpened.82.Sad Ass,...me too.,"",2025-08-21T22:17:44.818Z
+20,E7_Skinning_localization,Jump to line 21.,"",SAY.Dialog:GateOpened.64.Smart Ass,It was MY great plan!,"",2025-08-21T22:17:44.818Z
+21,E7_Skinning_localization,"","",SAY.Dialog:GateOpened.69.Kick Ass,What's NEXT?!,"",2025-08-21T22:17:44.818Z
+22,E7_Skinning_localization,The Asses can now head towards the exit for this level.,"",SAY.Dialog:GateOpened.39.Smart Ass,Step THREE! We all get out alive!,"",2025-08-21T22:17:44.818Z
+23,E7_Skinning_localization,Optional dialogue when interacting with the radio.,"",SAY.Dialog:Radio.10.Factory PA,*ksh*—Greetings employees.,"",2025-08-21T22:17:44.818Z
+24,E7_Skinning_localization,"","",SAY.Dialog:Radio.24.Factory PA,"Congratulations, the new automated Forklifts have been increasing efficiency by 15%.","",2025-08-21T22:17:44.818Z
+25,E7_Skinning_localization,"","",SAY.Dialog:Radio.25.Factory PA,Retirement parties for Forklift Operators will be held in the Break Room from 13h00-13h05.,"",2025-08-21T22:17:44.818Z
+26,E7_Skinning_localization,"","",SAY.Dialog:Radio.26.Factory PA,There will be cake.*ksh*,"",2025-08-21T22:17:44.818Z
+27,E7_Skinning_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+28,E7_Skinning_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+29,E7_Skinning_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+30,E7_Skinning_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+31,E7_Skinning_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+32,E7_Skinning_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+33,E7_Skinning_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_Chilling_localization,The Asses find themselves in a big freezer with countless carcasses.,"",SAY.Dialog:Opening.73.Big Ass,...,"",2025-08-21T22:17:44.818Z
+4,E7_Chilling_localization,This dialogue happens if Sad is present.,"",SAY.Dialog:Opening.21.Sad Ass,*whimper*,"",2025-08-21T22:17:44.818Z
+5,E7_Chilling_localization,"","",SAY.Dialog:Ending.92.Big Ass,Wait. We should sing the Song of Ascension for our Comrades before we leave.,"",2025-08-21T22:17:44.818Z
+6,E7_Chilling_localization,"","",SAY.Dialog:Ending.93.Kick Ass,Big—from the look of these carcasses... We're too late.,"",2025-08-21T22:17:44.818Z
+7,E7_Chilling_localization,"","",SAY.Dialog:Ending.168.Big Ass,"Back on that hook, my life flashed before my eyes.","",2025-08-21T22:17:44.818Z
+8,E7_Chilling_localization,"","",SAY.Dialog:Ending.169.Big Ass,"I've never fit in anywhere, or made much of an impact.","",2025-08-21T22:17:44.818Z
+9,E7_Chilling_localization,"","",SAY.Dialog:Ending.170.Big Ass,"But, I want to make a difference now.","",2025-08-21T22:17:44.818Z
+10,E7_Chilling_localization,"","",SAY.Dialog:Ending.171.Big Ass,"Even if we're too late, we should try.","",2025-08-21T22:17:44.818Z
+11,E7_Chilling_localization,"","",SAY.Dialog:Ending.172.Big Ass,"If it means one more Soul makes it to the Astral Plane, it's worth it.","",2025-08-21T22:17:44.818Z
+12,E7_Chilling_localization,Branch 1.1. If came from Circus without Sad.,"",MENU.Dialog:Ending.347,Fine.,"",2025-08-21T22:17:44.818Z
+13,E7_Chilling_localization,Jump to line 18.,"",SAY.Dialog:Ending.359.Smart Ass,Fine.,"",2025-08-21T22:17:44.818Z
+14,E7_Chilling_localization,Branch 1.2. If came from Circus with Sad.,"",MENU.Dialog:Ending.349,Let's make it quick.,"",2025-08-21T22:17:44.818Z
+15,E7_Chilling_localization,Jump to line 18.,"",SAY.Dialog:Ending.358.Smart Ass,Let's make it quick.,"",2025-08-21T22:17:44.818Z
+16,E7_Chilling_localization,Branch 1.3. If came from Zoo without Sad.,"",MENU.Dialog:Ending.348,We have to keep moving.,"",2025-08-21T22:17:44.818Z
+17,E7_Chilling_localization,Jump to line 18.,"",SAY.Dialog:Ending.360.Smart Ass,We have to keep moving.,"",2025-08-21T22:17:44.818Z
+18,E7_Chilling_localization,"The branch options (1.1, 1.2, 1.3) converge. 
+The Asses sing the Song of Ascension.","",SAY.Dialog:Ending.327.The Masses,{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/color},"",2025-08-21T22:17:44.818Z
+19,E7_Chilling_localization,The Asses head off towards one of two rooms: Meat Processing or Boiling.,"",SAY.Dialog:Ending.364.Smart Ass,Come on.,"",2025-08-21T22:17:44.818Z
+20,E7_Chilling_localization,Check the miro! These are still in the game,"",SAY.Dialog:Ending.25.Smart Ass,"Come on, we should keep going.","",2025-08-21T22:17:44.818Z
+21,E7_Chilling_localization,Check the miro! These are still in the game,"",SAY.Dialog:Ending.175.Smart Ass,These Asses aren't our Comrades.,"",2025-08-21T22:17:44.818Z
+22,E7_Chilling_localization,Check the miro! These are still in the game,"",SAY.Dialog:Ending.362.Smart Ass,Everyone spread out.,"",2025-08-21T22:17:44.818Z
+23,E7_Chilling_localization,Check the miro! These are still in the game,"",SAY.Dialog:Ending.120.Sad Ass,You know... it wouldn't hurt to try...,"",2025-08-21T22:17:44.818Z
+24,E7_Chilling_localization,Check the miro! These are still in the game,"",SAY.Dialog:Ending.121.Sad Ass,It'd be nice to sing it together.,"",2025-08-21T22:17:44.818Z
+3,E7_MeatProcessing_localization,A room with many Humans.,"",SAY.Dialog:Opening.3.Kick Ass,There are so many Humans!,"",2025-08-21T22:17:44.818Z
+4,E7_MeatProcessing_localization,"","",SAY.Dialog:Opening.8.Big Ass,We should go one at—,"",2025-08-21T22:17:44.818Z
+5,E7_MeatProcessing_localization,"","",SAY.Dialog:Opening.7.Smart Ass,—one at a time!,"",2025-08-21T22:17:44.818Z
+6,E7_MeatProcessing_localization,Camera zoom into Smart's mind.,"",SAY.Dialog:Opening.6.Smart Ass,Let me think...,"",2025-08-21T22:17:44.818Z
+7,E7_MeatProcessing_localization,"The Asses take turns navigating the room, one-at-a-time.","",SAY.Dialog:Opening.18.Smart Ass,First Kick will go...,"",2025-08-21T22:17:44.818Z
+8,E7_MeatProcessing_localization,Once Kick Ass makes it to the exit.,"",SAY.Dialog:FirstPassComplete.9.Smart Ass,Big Ass is next...,"",2025-08-21T22:17:44.818Z
+9,E7_MeatProcessing_localization,This is said after Big Ass makes it to the exit and if Sad Ass is not in the group.,"",SAY.Dialog:SecondPassComplete.23.Smart Ass,Time for the Ace Strategist to show everyone how it's done!,"",2025-08-21T22:17:44.818Z
+10,E7_MeatProcessing_localization,This is said after Big Ass makes it to the exit and if Sad Ass is in the group.,"",SAY.Dialog:SecondPassComplete.28.Smart Ass,Sad Ass is next...,"",2025-08-21T22:17:44.818Z
+11,E7_MeatProcessing_localization,This is said after Sad Ass makes it to the exit.,"",SAY.Dialog:ThirdPassComplete.8.Smart Ass,Time for the Ace Strategist to show everyone how it's done!,"",2025-08-21T22:17:44.818Z
+12,E7_MeatProcessing_localization,Once Smart Ass makes it to the exit.,"",SAY.Dialog:Ending.3.Smart Ass,EASY!,"",2025-08-21T22:17:44.818Z
+13,E7_MeatProcessing_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+14,E7_MeatProcessing_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+15,E7_MeatProcessing_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+16,E7_MeatProcessing_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+17,E7_MeatProcessing_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+18,E7_MeatProcessing_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+19,E7_MeatProcessing_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_Boiling_localization,"","",SAY.Dialog:Opening.3.Big Ass,Are they melting the skin of the deceased in here?,"",2025-08-21T22:17:44.818Z
+4,E7_Boiling_localization,"","",SAY.Dialog:Opening.11.Kick Ass,@$#%!,"",2025-08-21T22:17:44.818Z
+5,E7_Boiling_localization,"","",SAY.Dialog:Opening.10.Smart Ass,Shut it you two!,"",2025-08-21T22:17:44.818Z
+6,E7_Boiling_localization,Camera zoom into Smart's mind.,"",SAY.Dialog:Opening.9.Smart Ass,I've got a new strategy.,"",2025-08-21T22:17:44.818Z
+7,E7_Boiling_localization,"","",SAY.Dialog:Opening.8.Smart Ass,There are switches and Humans in front of the gates.,"",2025-08-21T22:17:44.818Z
+8,E7_Boiling_localization,"","",SAY.Dialog:Opening.14.Smart Ass,We'll go in pairs. Kick and Big will work together...,"",2025-08-21T22:17:44.818Z
+9,E7_Boiling_localization,This triggers if Big is at the exit and Kick is not in range.,"",SAY.Dialog:FirstPassComplete.103.Big Ass,"Don't fall behind, Kick Ass!","",2025-08-21T22:17:44.818Z
+10,E7_Boiling_localization,This triggers if Kick is at the exit and Big is not in range.,"",SAY.Dialog:FirstPassComplete.102.Kick Ass,"HURRY UP, Big Ass!","",2025-08-21T22:17:44.818Z
+11,E7_Boiling_localization,x,"",SAY.Dialog:FirstPassComplete.14.Kick Ass,WE MADE IT!,"",2025-08-21T22:17:44.818Z
+12,E7_Boiling_localization,"","",SAY.Dialog:FirstPassComplete.16.Big Ass,"{vpunch=100,0.75}HURRAH!","",2025-08-21T22:17:44.818Z
+13,E7_Boiling_localization,"","",SAY.Dialog:FirstPassComplete.55.Smart Ass,Morons.,"",2025-08-21T22:17:44.818Z
+14,E7_Boiling_localization,Branch 1.1. If Sad is present in the group.,"",SAY.Dialog:FirstPassComplete.71.Sad Ass,Are we a pair too...?,"",2025-08-21T22:17:44.818Z
+15,E7_Boiling_localization,"","",SAY.Dialog:FirstPassComplete.99.Smart Ass,"Don't hold me back, Sad Ass.","",2025-08-21T22:17:44.818Z
+16,E7_Boiling_localization,Jump to line 20 once the Player reaches the end.,"",SAY.Dialog:FirstPassComplete.72.Smart Ass,Sad and I will work together...,"",2025-08-21T22:17:44.818Z
+17,E7_Boiling_localization,"Branch 1.2. If Sad is absent from the group.
+Jump to line 20 once the Player reaches the end.","",SAY.Dialog:FirstPassComplete.68.Smart Ass,It's just me now...,"",2025-08-21T22:17:44.818Z
+18,E7_Boiling_localization,Not in the Miro.,"",SAY.Dialog:Ending.18.Sad Ass,Hurry up!,"",2025-08-21T22:17:44.818Z
+19,E7_Boiling_localization,Not in the Miro.,"",SAY.Dialog:Ending.44.Smart Ass,Hurry up!,"",2025-08-21T22:17:44.818Z
+20,E7_Boiling_localization,All Asses reach the exit.,"",SAY.Dialog:Ending.50.Smart Ass,Easy!,"",2025-08-21T22:17:44.818Z
+21,E7_Boiling_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+22,E7_Boiling_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+23,E7_Boiling_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+24,E7_Boiling_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+25,E7_Boiling_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+26,E7_Boiling_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+27,E7_Boiling_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_Ejiao_localization,"","",SAY.Dialog:Opening.48.Smart Ass,Come on. We have to be getting close to an exit!,"",2025-08-21T22:17:44.818Z
+4,E7_Ejiao_localization,"","",SAY.Dialog:Opening.50.Big Ass,Wait.,"",2025-08-21T22:17:44.818Z
+5,E7_Ejiao_localization,"","",SAY.Dialog:Opening.24.Big Ass,We'll never get by unnoticed.,"",2025-08-21T22:17:44.818Z
+6,E7_Ejiao_localization,"","",SAY.Dialog:Opening.27.Smart Ass,Hmmm...,"",2025-08-21T22:17:44.818Z
+7,E7_Ejiao_localization,"","",SAY.Dialog:Opening.26.Smart Ass,We're going to need to think outside the box.,"",2025-08-21T22:17:44.818Z
+8,E7_Ejiao_localization,Camera zoom into Smart's mind. The Asses get into boxes and sneak past.,"",SAY.Dialog:Opening.28.Smart Ass,Got it!,"",2025-08-21T22:17:44.818Z
+9,E7_Ejiao_localization,All Asses reach the exit and hop onto a conveyor belt to leave the room.,"",SAY.Dialog:Ending.3.Smart Ass,Easy!,"",2025-08-21T22:17:44.818Z
+10,E7_Ejiao_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+11,E7_Ejiao_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+12,E7_Ejiao_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+13,E7_Ejiao_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+14,E7_Ejiao_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+15,E7_Ejiao_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+16,E7_Ejiao_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_Shipping_localization,One of the final levels in the Factory. The Asses jump off the conveyor belt and are on opposite sides of a big wall.,"",SAY.Dialog:Opening.9.Smart Ass,JUMP!,"",2025-08-21T22:17:44.818Z
+4,E7_Shipping_localization,"","",SAY.Dialog:Opening.23.Smart Ass,What are you doing over there?!,"",2025-08-21T22:17:44.818Z
+5,E7_Shipping_localization,"","",SAY.Dialog:Opening.3.Kick Ass,We JUMPED! Just like YOU SAID!,"",2025-08-21T22:17:44.818Z
+6,E7_Shipping_localization,"","",SAY.Dialog:Opening.25.Big Ass,What'll we do?,"",2025-08-21T22:17:44.818Z
+7,E7_Shipping_localization,"","",SAY.Dialog:Opening.21.Smart Ass,We're going to have to work like a Team...,"",2025-08-21T22:17:44.818Z
+8,E7_Shipping_localization,Camera zoom into Smart's mind.,"",SAY.Dialog:Opening.8.Smart Ass,Time to strategize!,"",2025-08-21T22:17:44.818Z
+9,E7_Shipping_localization,The Asses leave the stage one-at-a-time.,"",SAY.Dialog:Opening.32.Smart Ass,Who should go first?,"",2025-08-21T22:17:44.818Z
+10,E7_Shipping_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.1,That's not it.,"",2025-08-21T22:17:44.818Z
+11,E7_Shipping_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.2,There has to be another way.,"",2025-08-21T22:17:44.818Z
+12,E7_Shipping_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.3,Terrible plan.,"",2025-08-21T22:17:44.818Z
+13,E7_Shipping_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.4,"Come on Smart, you can do better.","",2025-08-21T22:17:44.818Z
+14,E7_Shipping_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.5,Nope.,"",2025-08-21T22:17:44.818Z
+15,E7_Shipping_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.6,Let's try that again...,"",2025-08-21T22:17:44.818Z
+16,E7_Shipping_localization,Randomized text that pops up on screen when the player dies.,"",WRITE.Dialog:Localizer.7,You can do this.,"",2025-08-21T22:17:44.818Z
+3,E7_BigJob_localization,The Asses are in a hallway close to the exit.,"",SAY.Dialog:BigJob.4.Smart Ass,Haha! STEP THREE (ALMOST) COMPLETE!,"",2025-08-21T22:17:44.818Z
+4,E7_BigJob_localization,"","",SAY.Dialog:BigJob.233.Smart Ass,I'm getting all of us out of here alive!,"",2025-08-21T22:17:44.818Z
+5,E7_BigJob_localization,"","",SAY.Dialog:BigJob.7.Big Ass,What about freeing the other Asses?,"",2025-08-21T22:17:44.818Z
+6,E7_BigJob_localization,"","",SAY.Dialog:BigJob.6.Big Ass,Aren't they part of your Plan?,"",2025-08-21T22:17:44.818Z
+7,E7_BigJob_localization,"","",SAY.Dialog:BigJob.10.Smart Ass,Fuck the others.,"",2025-08-21T22:17:44.818Z
+8,E7_BigJob_localization,"","",SAY.Dialog:BigJob.11.Smart Ass,A Plan that includes trying to save us AND free hundreds of other Asses is impossible.,"",2025-08-21T22:17:44.818Z
+9,E7_BigJob_localization,"","",SAY.Dialog:BigJob.143.Smart Ass,So let's go.,"",2025-08-21T22:17:44.818Z
+10,E7_BigJob_localization,"","",SAY.Dialog:BigJob.9.Big Ass,And what will we do after that?,"",2025-08-21T22:17:44.818Z
+11,E7_BigJob_localization,"","",SAY.Dialog:BigJob.14.Smart Ass,I'll tell you later.,"",2025-08-21T22:17:44.818Z
+12,E7_BigJob_localization,"","",SAY.Dialog:BigJob.8.Big Ass,"{vpunch=100,1}I want to know NOW, Smart Ass.","",2025-08-21T22:17:44.818Z
+13,E7_BigJob_localization,"","",SAY.Dialog:BigJob.18.Smart Ass,FINE. Fine.,"",2025-08-21T22:17:44.818Z
+14,E7_BigJob_localization,Jump to line 15 or line 17.,"",SAY.Dialog:BigJob.22.Smart Ass,"After we get out of here, we will:","",2025-08-21T22:17:44.818Z
+15,E7_BigJob_localization,Dialogue option 1.1,"",MENU.Dialog:BigJob.234,Forget everything that's happened.,"",2025-08-21T22:17:44.818Z
+16,E7_BigJob_localization,Jump to line 20.,"",SAY.Dialog:BigJob.240.Smart Ass,We forget everything that's happened in this Factory Hell and go find kind Humans who will care for us.,"",2025-08-21T22:17:44.818Z
+17,E7_BigJob_localization,Dialogue option 1.2,"",MENU.Dialog:BigJob.235,Never forget what we've seen.,"",2025-08-21T22:17:44.818Z
+18,E7_BigJob_localization,"","",SAY.Dialog:BigJob.237.Smart Ass,We never forget what we've seen in this Factory Hell.,"",2025-08-21T22:17:44.818Z
+19,E7_BigJob_localization,Jump to line 20.,"",SAY.Dialog:BigJob.238.Smart Ass,And we find kind Humans to take care of us.,"",2025-08-21T22:17:44.818Z
+20,E7_BigJob_localization,"Dialogues (1.1, 1.2) converge.","",SAY.Dialog:BigJob.242.Kick Ass,WHAT?!,"",2025-08-21T22:17:44.818Z
+21,E7_BigJob_localization,"","",SAY.Dialog:BigJob.243.Kick Ass,How can you believe there are still KIND Humans in this world?,"",2025-08-21T22:17:44.818Z
+22,E7_BigJob_localization,This is said if Sad Ass is not present.,"",SAY.Dialog:BigJob.258.Kick Ass,After everything Humans have DONE TO US?,"",2025-08-21T22:17:44.818Z
+23,E7_BigJob_localization,This is said if Sad Ass is present.,"",SAY.Dialog:BigJob.260.Sad Ass,After everything Humans have done to us Asses?,"",2025-08-21T22:17:44.818Z
+24,E7_BigJob_localization,"","",SAY.Dialog:BigJob.182.Smart Ass,We all left the Mine because we wanted a comfortable life of fresh hay and good work.,"",2025-08-21T22:17:44.818Z
+25,E7_BigJob_localization,"","",SAY.Dialog:BigJob.183.Smart Ass,A life with no Machines and no violence.,"",2025-08-21T22:17:44.818Z
+26,E7_BigJob_localization,"","",SAY.Dialog:BigJob.184.Smart Ass,Believing in the existence of kind Humans is the only way to get what we want.,"",2025-08-21T22:17:44.818Z
+27,E7_BigJob_localization,"","",SAY.Dialog:BigJob.188.Big Ass,"I'm not leaving the other Asses here to die, just so we can try to live in comfort.","",2025-08-21T22:17:44.818Z
+28,E7_BigJob_localization,"","",SAY.Dialog:BigJob.190.Smart Ass,Listen you oaf! That's not the PLAN!,"",2025-08-21T22:17:44.818Z
+29,E7_BigJob_localization,"","",SAY.Dialog:BigJob.191.Smart Ass,I've run through every single possibility and there's NO VERSION where we get out of here alive by going backwards.,"",2025-08-21T22:17:44.818Z
+30,E7_BigJob_localization,Jump to line 31 or line 34.,"",SAY.Dialog:BigJob.193.Big Ass,"Then I'll go back, alone.","",2025-08-21T22:17:44.818Z
+31,E7_BigJob_localization,Branch 2.1. This is said if Sad is not present.,"",SAY.Dialog:BigJob.174.Kick Ass,@#$%&! If you go back—the Humans will KILL you!,"",2025-08-21T22:17:44.818Z
+32,E7_BigJob_localization,"","",SAY.Dialog:BigJob.175.Kick Ass,And your Soul will be STUCK here!,"",2025-08-21T22:17:44.818Z
+33,E7_BigJob_localization,Jump to line 37.,"",SAY.Dialog:BigJob.177.Kick Ass,"Comrade, what if Smart is RIGHT?","",2025-08-21T22:17:44.818Z
+34,E7_BigJob_localization,Branch 2.2. This is said if Sad is present.,"",SAY.Dialog:BigJob.170.Sad Ass,But... if you go back—the Humans'll kill you.,"",2025-08-21T22:17:44.818Z
+35,E7_BigJob_localization,"","",SAY.Dialog:BigJob.172.Sad Ass,And your Soul will be stuck here... *whimper*,"",2025-08-21T22:17:44.818Z
+36,E7_BigJob_localization,Jump to line 37.,"",SAY.Dialog:BigJob.173.Kick Ass,"Comrade, what if Smart is RIGHT?","",2025-08-21T22:17:44.818Z
+37,E7_BigJob_localization,"Branches (2.1, 2.2) converge.","",SAY.Dialog:BigJob.158.Big Ass,You don't have to join me.,"",2025-08-21T22:17:44.818Z
+38,E7_BigJob_localization,"","",SAY.Dialog:BigJob.159.Big Ass,But this is something I must do.,"",2025-08-21T22:17:44.818Z
+39,E7_BigJob_localization,"","",SAY.Dialog:BigJob.160.Big Ass,"Before I die, I need to make an impact.","",2025-08-21T22:17:44.818Z
+40,E7_BigJob_localization,Jump to line 41 or line 43.,"",SAY.Dialog:BigJob.163.Smart Ass,We're not responsible for the others! You hear me?!?,"",2025-08-21T22:17:44.818Z
+41,E7_BigJob_localization,Dialogue option 3.1.,"",MENU.Dialog:BigJob.264,I know... but I choose to be.,"",2025-08-21T22:17:44.818Z
+42,E7_BigJob_localization,End of scene.,"",SAY.Dialog:BigJob.267.Big Ass,I know... but I choose to be.,"",2025-08-21T22:17:44.818Z
+43,E7_BigJob_localization,Dialogue option 3.2.,"",MENU.Dialog:BigJob.265,"Goodbye, Comrades.","",2025-08-21T22:17:44.818Z
+44,E7_BigJob_localization,End of scene.,"",SAY.Dialog:BigJob.271.Big Ass,"Goodbye, Comrades.","",2025-08-21T22:17:44.818Z
+3,E7_ShippingTwo_localization,"Big Ass goes into the control room, alone.","",SAY.Dialog:EnterControlRoom.1.Big Ass,There must be a way to free the other Asses in here.,"",2025-08-21T22:17:44.818Z
+4,E7_ShippingTwo_localization,Zoom into the Factory intercom speaker.,"",SAY.Dialog:EnterControlRoom.6.Factory PA,*ksch*—Attention all workers. We have a Code 455.,"",2025-08-21T22:17:44.818Z
+5,E7_ShippingTwo_localization,"","",SAY.Dialog:EnterControlRoom.7.Factory PA,All personnel should be on the lookout for runaway donkeys within the Factory.,"",2025-08-21T22:17:44.818Z
+6,E7_ShippingTwo_localization,Zoom out from the Factory intercom speaker.,"",SAY.Dialog:EnterControlRoom.8.Factory PA,"If found, use of force is permitted—*ksh*","",2025-08-21T22:17:44.818Z
+7,E7_ShippingTwo_localization,A security guard comes in and readies a gun.,"",SAY.Dialog:Ending.3.Security Guard Andy,There's one of those runaway donkeys!,"",2025-08-21T22:17:44.818Z
+8,E7_ShippingTwo_localization,"","",SAY.Dialog:Ending.7.Security Guard Andy,Ready?!,"",2025-08-21T22:17:44.818Z
+9,E7_ShippingTwo_localization,Zoom into the Factory intercom speaker.,"",SAY.Dialog:Ending.43.Factory PA,*ksch*—Help! The donkeys are free! THEY ARE ESCAPING!,"",2025-08-21T22:17:44.818Z
+10,E7_ShippingTwo_localization,"","",SAY.Dialog:Ending.44.Proper Ass,Jailbreak!!!!,"",2025-08-21T22:17:44.818Z
+11,E7_ShippingTwo_localization,Zoom out from the Factory intercom speaker.,"",SAY.Dialog:Ending.45.Factory PA,Ayyyyyyyy—*ksh*,"",2025-08-21T22:17:44.818Z
+12,E7_ShippingTwo_localization,Zoom into the Factory intercom speaker upon exiting.,"",SAY.Dialog:Ending.60.Mme. Derriere,"Whichever group of Activists has broken into my beloved Factory and let my donkeys out, hear me:","",2025-08-21T22:17:44.818Z
+13,E7_ShippingTwo_localization,"","",SAY.Dialog:Ending.61.Mme. Derriere,You can't stop Progress.,"",2025-08-21T22:17:44.818Z
+14,E7_ShippingTwo_localization,"","",SAY.Dialog:Ending.62.Mme. Derriere,But if you'd like to try...,"",2025-08-21T22:17:44.818Z
+15,E7_ShippingTwo_localization,Zoom out from the Factory intercom speaker.,"",SAY.Dialog:Ending.63.Mme. Derriere,Come find me in my Robotics Lab.,"",2025-08-21T22:17:44.818Z
+3,E7_BigBattle_localization,A reflection by Big Ass when trying to leave the Factory for the first time.,"",SAY.Dialog:Container.51.Big Ass,Am I making a massive mistake?,"",2025-08-21T22:17:44.818Z
+4,E7_BigBattle_localization,"","",SAY.Dialog:Container.58.Big Ass,Shouldn't I try to stop the one in charge?,"",2025-08-21T22:17:44.818Z
+5,E7_BigBattle_localization,A reflection by Big Ass when trying to leave the Factory for a second time.,"",SAY.Dialog:Container.61.Big Ass,"No, I've already done what I came to do.","",2025-08-21T22:17:44.818Z
+6,E7_BigBattle_localization,A reflection by Big Ass when trying to go into the Robotics Lab the first time.,"",SAY.Dialog:Container.23.Big Ass,This way looks much more dangerous...,"",2025-08-21T22:17:44.818Z
+7,E7_BigBattle_localization,"","",SAY.Dialog:Container.20.Big Ass,I shouldn't bite off more than I can chew...,"",2025-08-21T22:17:44.818Z
+8,E7_BigBattle_localization,A reflection by Big Ass when trying to go into the Robotics Lab the second time.,"",SAY.Dialog:Container.39.Big Ass,What am I saying... I can do this!,"",2025-08-21T22:17:44.818Z
+9,E7_BigBattle_localization,Doors close behind Big Ass.,"",SAY.Dialog:Container.44.Big Ass,UH OH.,"",2025-08-21T22:17:44.818Z
+10,E7_BigBattle_localization,Mme. Derriere stands behind a pane of glass in her Robotics Laboratory.,"",SAY.Dialog:Container.12.Mme. Derriere,Hello donkey...,"",2025-08-21T22:17:44.818Z
+11,E7_BigBattle_localization,"","",SAY.Dialog:Container.64.Mme. Derriere,I don't know how those pesky Activists broke into my factory and let you all out.,"",2025-08-21T22:17:44.818Z
+12,E7_BigBattle_localization,"","",SAY.Dialog:Container.68.Mme. Derriere,But let me tell you something...,"",2025-08-21T22:17:44.818Z
+13,E7_BigBattle_localization,"","",SAY.Dialog:Container.67.Mme. Derriere,I have a Masters in Business Administration from Mecha University.,"",2025-08-21T22:17:44.818Z
+14,E7_BigBattle_localization,"","",SAY.Dialog:Container.66.Mme. Derriere,I know how to make ends meet.,"",2025-08-21T22:17:44.818Z
+15,E7_BigBattle_localization,"","",SAY.Dialog:Container.76.Mme. Derriere,And you're about to meet your end.,"",2025-08-21T22:17:44.818Z
+16,E7_BigBattle_localization,"Fight begins. After fight, jump to line 17 or 19.","",SAY.Dialog:Container.65.Mme. Derriere,PREPARE TO DIE!,"",2025-08-21T22:17:44.818Z
+17,E7_BigBattle_localization,This dialogue occurs if Big Ass WINS the fight against Mme. Derriere.,"",SAY.Dialog:Container.9.Mme. Derriere,My beautiful and expensive Robots!,"",2025-08-21T22:17:44.818Z
+18,E7_BigBattle_localization,Explosions. Big leaves after this.,"",SAY.Dialog:Container.69.Mme. Derriere,You'll PAY FOR THIS!,"",2025-08-21T22:17:44.818Z
+19,E7_BigBattle_localization,This dialogue occurs if Big Ass LOSES the fight against Mme. Derriere.,"",SAY.Dialog:Container.4.Mme. Derriere,HA HA HA HA!,"",2025-08-21T22:17:44.818Z
+20,E7_BigBattle_localization,Screen fades to black.,"",SAY.Dialog:Container.70.Mme. Derriere,Look who's in the red now.,"",2025-08-21T22:17:44.818Z
+3,E7_CityStreet_localization,Branch 3.1. Big LOST the fight against Mme. Derriere.,"",SAY.Dialog:Opening.62.Kick Ass,Big Ass really did it... he set them ALL free.,"",2025-08-21T22:17:44.818Z
+4,E7_CityStreet_localization,"","",SAY.Dialog:Opening.78.Smart Ass,I thought I had the perfect Plan...,"",2025-08-21T22:17:44.818Z
+5,E7_CityStreet_localization,This is said if Sad Ass is present.,"",SAY.Dialog:Opening.2.Sad Ass,*whimper*,"",2025-08-21T22:17:44.818Z
+6,E7_CityStreet_localization,End of scene. The Asses leave.,"",SAY.Dialog:Opening.63.Kick Ass,"Goodbye, Comrade Big Ass.","",2025-08-21T22:17:44.818Z
+7,E7_CityStreet_localization,Branch 3.2. Big ESCAPED the Factory without fighting Mme. Derriere.,"",SAY.Dialog:Opening.159.Big Ass,I made it out... I'm FREE!,"",2025-08-21T22:17:44.818Z
+8,E7_CityStreet_localization,"","",SAY.Dialog:Opening.148.Big Ass,And I saved all those Asses—,"",2025-08-21T22:17:44.818Z
+9,E7_CityStreet_localization,End of scene. Big leaves.,"",SAY.Dialog:Opening.155.Big Ass,But I guess I'm on my own now...,"",2025-08-21T22:17:44.818Z
+10,E7_CityStreet_localization,Branch 3.3. Big WON the fight against Mme. Derriere.,"",SAY.Dialog:Opening.165.Big Ass,IT'S GONNA BLOW!,"",2025-08-21T22:17:44.818Z
+11,E7_CityStreet_localization,"","",SAY.Dialog:Opening.167.Big Ass,HEE HAW! I DID IT!,"",2025-08-21T22:17:44.818Z
+12,E7_CityStreet_localization,End of scene. Big leaves.,"",SAY.Dialog:Opening.173.Big Ass,Who'd have thought I could save all those Asses and blow up a Factory all on my own?,"",2025-08-21T22:17:44.818Z

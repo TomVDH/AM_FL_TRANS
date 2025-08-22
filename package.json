@@ -1,6 +1,6 @@
 {
   "name": "am-translations-helper",
-  "version": "1.25.0",
+  "version": "2.0.0",
   "description": "A React TypeScript application for assisting with translation workflows, supporting Excel file uploads and manual text input.",
   "private": true,
   "scripts": {
@@ -10,6 +10,8 @@
     "lint": "next lint",
     "type-check": "tsc --noEmit",
     "excel-to-json": "node scripts/excel-to-json.js",
+    "excel-to-csv": "node scripts/excel-to-csv.js",
+    "csv-only": "node scripts/excel-to-csv.js",
     "test-readme": "node scripts/test-readme-processing.js",
     "clean": "rm -rf .next node_modules/.cache",
     "clean-build": "npm run clean && npm run build",

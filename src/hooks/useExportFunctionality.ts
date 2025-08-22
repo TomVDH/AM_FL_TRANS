@@ -38,8 +38,8 @@ export const useExportFunctionality = (
   // ========== Clipboard Functions ==========
   const copyToClipboard = useCallback(() => {
     const textToCopy = showTranslationsOutput && editableTranslations.length > 0
-      ? editableTranslations.join('\n')
-      : translations.join('\n');
+      ? editableTranslations.map(t => t || '[BLANK, REMOVE LATER]').join('\n')
+      : translations.map(t => t || '[BLANK, REMOVE LATER]').join('\n');
     
     // Remove whitespace and clean the text before copying
     const cleanText = textToCopy.trim().replace(/\s+/g, ' ');
@@ -77,7 +77,7 @@ export const useExportFunctionality = (
     const csvContent = [
       'Row No,Key,Value',
       ...translations.map((translation, index) => 
-        `${startRow + index},"${(sourceTexts[index] || '((blank))').replace(/"/g, '""')}","${(translation || '').replace(/"/g, '""')}"`
+        `${startRow + index},"${(sourceTexts[index] || '[BLANK, REMOVE LATER]').replace(/"/g, '""')}","${(translation || '[BLANK, REMOVE LATER]').replace(/"/g, '""')}"`
       )
     ].join('\n');
     

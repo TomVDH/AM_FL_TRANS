@@ -1,0 +1,420 @@
+# File: 3_asses.masses_E3Proxy
+# Processed: 2025-08-21T22:17:44.528Z
+# Sheets: 10
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+3,E3_EpisodeTitle_localization,Title text on screen,EPISODI TRES,WRITE.Dialog:Localizer.5,EPISODE THREE,"",2025-08-21T22:17:44.528Z
+4,E3_EpisodeTitle_localization,"",LA MINA,WRITE.Dialog:Localizer.7,THE MINE,"",2025-08-21T22:17:44.528Z
+5,E3_EpisodeTitle_localization,"",Prem X per començar,WRITE.Dialog:Localizer.8,Press X to Begin,"",2025-08-21T22:17:44.528Z
+6,E3_EpisodeTitle_localization,"",3 setmanes després,WRITE.Dialog:Localizer.12,3 weeks later,"",2025-08-21T22:17:44.528Z
+7,E3_EpisodeTitle_localization,"Hard Ass, Kick Ass, and Sick Ass are running back to the Mine in the heavy rain.","Afanya't, Feblase!",SAY.Dialog:WaitUp.21.Hard Ass,"Hurry up, Sick Ass!","",2025-08-21T22:17:44.528Z
+8,E3_EpisodeTitle_localization,"",Està corrent TANT COM POT!,SAY.Dialog:WaitUp.26.Kick Ass,She's doing HER BEST!,"",2025-08-21T22:17:44.528Z
+9,E3_EpisodeTitle_localization,"",*TUS*,SAY.Dialog:WaitUp.24.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.528Z
+10,E3_EpisodeTitle_localization,"",@#$%&!,SAY.Dialog:WaitUp.27.Kick Ass,@#$%&!,"",2025-08-21T22:17:44.528Z
+3,E3_Mine1FOpening_localization,The screen fades up from black to reveal Sturdy listening to the Foal (her now-born daughter).,"Camarada Mare, canviarà mai aquest temps horrorós?",SAY.Dialog:ScavengersReturn.116.{$NewName},"Comrade Mother, will this crappy weather ever end?","",2025-08-21T22:17:44.528Z
+4,E3_Mine1FOpening_localization,"",Tinc fred.,SAY.Dialog:ScavengersReturn.1.{$NewName},I'm cold.,"",2025-08-21T22:17:44.528Z
+5,E3_Mine1FOpening_localization,"",Tinc gana.,SAY.Dialog:ScavengersReturn.118.{$NewName},I'm hungry.,"",2025-08-21T22:17:44.528Z
+6,E3_Mine1FOpening_localization,"",Estic xopa.,SAY.Dialog:ScavengersReturn.117.{$NewName},I'm damp.,"",2025-08-21T22:17:44.528Z
+7,E3_Mine1FOpening_localization,"",I el pitjor de tot...,SAY.Dialog:ScavengersReturn.115.{$NewName},And worst of all...,"",2025-08-21T22:17:44.528Z
+8,E3_Mine1FOpening_localization,"",M'AVORREIXO.,SAY.Dialog:ScavengersReturn.114.{$NewName},I'M BORED.,"",2025-08-21T22:17:44.528Z
+9,E3_Mine1FOpening_localization,"","Ai, el meu Pollí, em sap greu que no puguis tenir la infantesa que jo vaig tenir, trotant pels camps.",SAY.Dialog:ScavengersReturn.392.Sturdy Ass,"My Foal, I'm sorry you can't have the childhood I had toiling in the fields.","",2025-08-21T22:17:44.528Z
+10,E3_Mine1FOpening_localization,"",Però els Déus no trigaran a destruir les maleïdes Màquines i els Humans tornaran amb nosaltres.,SAY.Dialog:ScavengersReturn.96.Sturdy Ass,But soon the Gods will destroy the evil Machines and the Humans will return to us.,"",2025-08-21T22:17:44.528Z
+11,E3_Mine1FOpening_localization,"",Aleshores podràs tenir una vida plena de treball honest i veritable.,SAY.Dialog:ScavengersReturn.452.Sturdy Ass,Then you will grow up to have a life full of true and honest work.,"",2025-08-21T22:17:44.528Z
+12,E3_Mine1FOpening_localization,"",¿És veritat que treballar...és taaaaan guai?,SAY.Dialog:ScavengersReturn.99.{$NewName},Is work...really thaaaaaaat great?,"",2025-08-21T22:17:44.528Z
+13,E3_Mine1FOpening_localization,"",Com pots preguntar això?!,SAY.Dialog:ScavengersReturn.98.Sturdy Ass,How can you ask that?!,"",2025-08-21T22:17:44.528Z
+14,E3_Mine1FOpening_localization,"",Els Déus van obsequiar els nostres Ancestres amb la capacitat de treballar.,SAY.Dialog:ScavengersReturn.101.Sturdy Ass,The Gods gave our Ancestors the power to work.,"",2025-08-21T22:17:44.528Z
+15,E3_Mine1FOpening_localization,"",Vivien per treballar. I morien treballant.,SAY.Dialog:ScavengersReturn.394.Sturdy Ass,They lived at work. And they died at work.,"",2025-08-21T22:17:44.528Z
+16,E3_Mine1FOpening_localization,"",Portes el Treball a l'Ànima.,SAY.Dialog:ScavengersReturn.393.Sturdy Ass,Work is in your Soul.,"",2025-08-21T22:17:44.528Z
+17,E3_Mine1FOpening_localization,"",Però Camarada Mare...,SAY.Dialog:ScavengersReturn.103.{$NewName},But Comrade Mother...,"",2025-08-21T22:17:44.528Z
+18,E3_Mine1FOpening_localization,"",I si jo no vull treballar...?,SAY.Dialog:ScavengersReturn.105.{$NewName},What if I don't want to work...?,"",2025-08-21T22:17:44.528Z
+19,E3_Mine1FOpening_localization,"",¿I si vull córrer amunt i avall i explorar el món?,SAY.Dialog:ScavengersReturn.107.{$NewName},What if I want to jump around and explore?,"",2025-08-21T22:17:44.528Z
+20,E3_Mine1FOpening_localization,"",I si només vull...jugar?,SAY.Dialog:ScavengersReturn.106.{$NewName},What if I just want... to play?,"",2025-08-21T22:17:44.528Z
+21,E3_Mine1FOpening_localization,Big Ass enters frame with an announcement.,"{vpunch=100,0.75}Porto una notícia immensa, Camarada Tossudase! En Fortalase, en Ferase i la Feblase han tornat!",SAY.Dialog:ScavengersReturn.13.Big Ass,"{vpunch=100,0.75}I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!","",2025-08-21T22:17:44.528Z
+22,E3_Mine1FOpening_localization,"",Iupiii!,SAY.Dialog:ScavengersReturn.15.{$NewName},Wahoo!,"",2025-08-21T22:17:44.528Z
+23,E3_Mine1FOpening_localization,"Sturdy, The Foal, and Big Ass all go to meet the others.",Tant de bo hagin trobat prou menjar per a tothom...,SAY.Dialog:ScavengersReturn.121.Sturdy Ass,"If we're lucky, the scavengers will have found enough food tonight for everyone...","",2025-08-21T22:17:44.528Z
+24,E3_Mine1FOpening_localization,"The Herd convenes at the mouth of the cave to greet the Scavengers (Hard, Sick, and Kick).",Ja som aquí.,SAY.Dialog:ScavengersReturn.26.Hard Ass,We're back.,"",2025-08-21T22:17:44.528Z
+25,E3_Mine1FOpening_localization,"",*TUS*,SAY.Dialog:ScavengersReturn.395.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.528Z
+26,E3_Mine1FOpening_localization,"","Bona feina, Camarades—",SAY.Dialog:ScavengersReturn.27.Sturdy Ass,"Well done, Comrades—","",2025-08-21T22:17:44.528Z
+27,E3_Mine1FOpening_localization,"","Explica'm les teves aventures, Oncle Ferase!",SAY.Dialog:ScavengersReturn.30.{$NewName},"Tell me about your adventures, Uncle Kick!","",2025-08-21T22:17:44.528Z
+28,E3_Mine1FOpening_localization,"","Ara no, criatura. Deixa que descarreguin el carro i s'eixuguin.",SAY.Dialog:ScavengersReturn.109.Sturdy Ass,"Not now, child. Let them set down the cart and dry off.","",2025-08-21T22:17:44.528Z
+29,E3_Mine1FOpening_localization,"",Això és tot el que heu trobat?,SAY.Dialog:ScavengersReturn.31.Big Ass,Is that all the food you managed to find?,"",2025-08-21T22:17:44.528Z
+30,E3_Mine1FOpening_localization,"",El riu s'ha desbordat.,SAY.Dialog:ScavengersReturn.29.Hard Ass,The river was flooded.,"",2025-08-21T22:17:44.528Z
+31,E3_Mine1FOpening_localization,"",Ens hauríem d'oblidar d'ells.,SAY.Dialog:ScavengersReturn.208.Hard Ass,We should forget about them.,"",2025-08-21T22:17:44.528Z
+32,E3_Mine1FOpening_localization,"",No hem pogut arribar als punts on solem trobar menjar.,SAY.Dialog:ScavengersReturn.345.Hard Ass,We couldn’t forage in the usual spots.,"",2025-08-21T22:17:44.528Z
+33,E3_Mine1FOpening_localization,"","No és suficient, però farem que duri.",SAY.Dialog:ScavengersReturn.411.Sturdy Ass,"It's not enough food, but we’ll make it last.","",2025-08-21T22:17:44.528Z
+34,E3_Mine1FOpening_localization,"","Llestase, fes les racions.",SAY.Dialog:ScavengersReturn.347.Sturdy Ass,"Smart Ass, divide the rations.","",2025-08-21T22:17:44.528Z
+35,E3_Mine1FOpening_localization,"","Iguals, no?",SAY.Dialog:ScavengersReturn.349.Smart Ass,"Equally this time, right?","",2025-08-21T22:17:44.528Z
+36,E3_Mine1FOpening_localization,"","Què passa, que un Ase no pot fer broma amb la panxa buida?",SAY.Dialog:ScavengersReturn.350.Smart Ass,"Oh come on, an Ass can’t joke on an empty stomach?","",2025-08-21T22:17:44.528Z
+37,E3_Mine1FOpening_localization,"",Heu vist algun signe dels Humans?,SAY.Dialog:ScavengersReturn.397.Big Ass,Were there any noticeable signs of Humans?,"",2025-08-21T22:17:44.528Z
+38,E3_Mine1FOpening_localization,"",Tots els Humans han desaparegut.,SAY.Dialog:ScavengersReturn.355.Hard Ass,The Humans are all gone.,"",2025-08-21T22:17:44.528Z
+39,E3_Mine1FOpening_localization,"",Podem ser els nostres propis Amos.,SAY.Dialog:ScavengersReturn.399.Hard Ass,We can be our own Masters.,"",2025-08-21T22:17:44.528Z
+40,E3_Mine1FOpening_localization,"",ELS NOSTRES PROPIS AMOS?!,SAY.Dialog:ScavengersReturn.164.Smart Ass,OUR OWN MASTERS?!,"",2025-08-21T22:17:44.528Z
+41,E3_Mine1FOpening_localization,"",Sense Humans estem tots—,SAY.Dialog:ScavengersReturn.401.Smart Ass,Without Humans we'll all—,"",2025-08-21T22:17:44.528Z
+42,E3_Mine1FOpening_localization,"","En Ferase, la Feblase i jo ens estem posant en risc i sacrificant-nos pel Ramat.",SAY.Dialog:ScavengersReturn.402.Hard Ass,"Kick, Sick, and I are risking our health and making sacrifices for the Herd.","",2025-08-21T22:17:44.528Z
+43,E3_Mine1FOpening_localization,"",Tu què fas per salvar el Ramat?,SAY.Dialog:ScavengersReturn.403.Hard Ass,What are you doing to help to save the Herd?,"",2025-08-21T22:17:44.528Z
+44,E3_Mine1FOpening_localization,"",*TUS*,SAY.Dialog:ScavengersReturn.173.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.528Z
+45,E3_Mine1FOpening_localization,"","TU ets l'expert en supervivència, no?!",SAY.Dialog:ScavengersReturn.405.Smart Ass,YOU'RE the expert on saving are you?!,"",2025-08-21T22:17:44.528Z
+46,E3_Mine1FOpening_localization,"",*TUS TUS*,SAY.Dialog:ScavengersReturn.353.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.528Z
+47,E3_Mine1FOpening_localization,"",Però no vas poder salvar la Perase i no vas poder salvar ni un sol Humà—,SAY.Dialog:ScavengersReturn.407.Smart Ass,You couldn't save Lazy Ass and you couldn't save a single Human—,"",2025-08-21T22:17:44.528Z
+48,E3_Mine1FOpening_localization,"",*TUS TUS*—,SAY.Dialog:ScavengersReturn.406.Sick Ass,*COUGH COUGH*—,"",2025-08-21T22:17:44.528Z
+49,E3_Mine1FOpening_localization,"",...,SAY.Dialog:ScavengersReturn.383.Sick Ass,...,"",2025-08-21T22:17:44.528Z
+50,E3_Mine1FOpening_localization,"",FEBLASE! @#$%&!,SAY.Dialog:ScavengersReturn.381.Kick Ass,SICK ASS! @#$%&!,"",2025-08-21T22:17:44.528Z
+51,E3_Mine1FOpening_localization,"","Si no anem a buscar els Humans ara mateix, acabarem tots com la Feblase.",SAY.Dialog:ScavengersReturn.170.Smart Ass,"If we don't leave and find the Humans now, we'll all end up like Sick Ass.","",2025-08-21T22:17:44.528Z
+52,E3_Mine1FOpening_localization,"",Hem de sortir d'aquí!,SAY.Dialog:ScavengersReturn.447.Smart Ass,We need to get out of here!,"",2025-08-21T22:17:44.528Z
+53,E3_Mine1FOpening_localization,These appear on screen as a cacophony of brays.,I anar on?,WRITE.Dialog:ScavengersReturn.438,Go where?,"",2025-08-21T22:17:44.528Z
+54,E3_Mine1FOpening_localization,These appear on screen as a cacophony of brays.,Com de lluny?,WRITE.Dialog:ScavengersReturn.446,How far?,"",2025-08-21T22:17:44.528Z
+55,E3_Mine1FOpening_localization,These appear on screen as a cacophony of brays. (Spoken by Thirsty),"Vaiga, jo què sé.",WRITE.Dialog:ScavengersReturn.445,"Ah heck, I dunno.","",2025-08-21T22:17:44.528Z
+56,E3_Mine1FOpening_localization,These appear on screen as a cacophony of brays.,Tinc gana.,WRITE.Dialog:ScavengersReturn.444,I'm hungry.,"",2025-08-21T22:17:44.528Z
+57,E3_Mine1FOpening_localization,These appear on screen as a cacophony of brays.,"Però cari, aquí estem calents i a aixopluc.",WRITE.Dialog:ScavengersReturn.443,"Golly, but it's warm and dry in here!","",2025-08-21T22:17:44.528Z
+58,E3_Mine1FOpening_localization,These appear on screen as a cacophony of brays.,@#$%&! No podem ABANDONAR la Feblase!,WRITE.Dialog:ScavengersReturn.442,@#$%&! We can't leave Sick BEHIND!,"",2025-08-21T22:17:44.528Z
+59,E3_Mine1FOpening_localization,These appear on screen as a cacophony of brays.,Que no soc la Gran Estratega?!,WRITE.Dialog:ScavengersReturn.441,Aren't I the Ace Strategist?!,"",2025-08-21T22:17:44.528Z
+60,E3_Mine1FOpening_localization,Sturdy Ass shouts for everyone to calm down.,CAMARADES. No perdem temps ni energia barallant-nos.,SAY.Dialog:ScavengersReturn.176.Sturdy Ass,COMRADES. Let's not waste our time and energy fighting amongst ourselves.,"",2025-08-21T22:17:44.528Z
+61,E3_Mine1FOpening_localization,"",Hem d'estar units.,SAY.Dialog:ScavengersReturn.177.Sturdy Ass,We have to stick together.,"",2025-08-21T22:17:44.528Z
+62,E3_Mine1FOpening_localization,"","Llestase, fes les racions i que mengi tothom.",SAY.Dialog:ScavengersReturn.387.Sturdy Ass,"Smart Ass, let's divide the rations and get everyone fed.","",2025-08-21T22:17:44.528Z
+63,E3_Mine1FOpening_localization,"","{$NewName}, ves a jugar amb les teves roques.",SAY.Dialog:ScavengersReturn.448.Sturdy Ass,"{$NewName}, go play with your rocks.","",2025-08-21T22:17:44.528Z
+64,E3_Mine1FOpening_localization,"",Puc? Iupiii!,SAY.Dialog:ScavengersReturn.80.{$NewName},Really? Wahoo!,"",2025-08-21T22:17:44.528Z
+65,E3_Mine1FOpening_localization,Fade out from this scene and into Mine1F.,"Sí, mentre no t'acostis a les Màquines malvades, inanimades, usurpadores, infanticides.",SAY.Dialog:ScavengersReturn.111.Sturdy Ass,"Yes, just stay away from the evil, soulless, job-taking, child-killing Machines.","",2025-08-21T22:17:44.528Z
+66,E3_Mine1FOpening_localization,"",Coixase,WRITE.Dialog:Localizer.6,Slow Ass,"",2025-08-21T22:17:44.528Z
+67,E3_Mine1FOpening_localization,"",Eixutase,WRITE.Dialog:Localizer.5,Thirsty Ass,"",2025-08-21T22:17:44.528Z
+68,E3_Mine1FOpening_localization,"",Grandase,WRITE.Dialog:Localizer.4,Big Ass,"",2025-08-21T22:17:44.528Z
+69,E3_Mine1FOpening_localization,"",Bellase,WRITE.Dialog:Localizer.3,Nice Ass,"",2025-08-21T22:17:44.528Z
+70,E3_Mine1FOpening_localization,"",Ferase,WRITE.Dialog:Localizer.2,Kick Ass,"",2025-08-21T22:17:44.528Z
+71,E3_Mine1FOpening_localization,"",Llestase,WRITE.Dialog:Localizer.7,Smart Ass,"",2025-08-21T22:17:44.528Z
+3,E3_Mine1F_localization,Surdy says this to prevent The Foal from going outside into the rain.,EI! Es pot saber on vas?,SAY.Dialog:AttemptToExitToOutside.1.Sturdy Ass,HEY! Where do you think you are going?,"",2025-08-21T22:17:44.528Z
+4,E3_Mine1F_localization,Said after playing Rocks.,Jugar a Roques és tan tan TAN guai!,SAY.Dialog:PostRocks.1.{$NewName},I love love LOVE Rocks!,"",2025-08-21T22:17:44.528Z
+5,E3_Mine1F_localization,"Variation 1. 
+If the Foal hasn't talked to Nice and Sad.",Potser la Tia Bellase em vol veure jugar!,SAY.Dialog:PostRocks.8.{$NewName},Maybe Aunty Nice wants to watch me play!,"",2025-08-21T22:17:44.528Z
+6,E3_Mine1F_localization,"Variation 2.
+If the Foal has talked to Nice and Sad.",Potser l'Oncle Eixutase em vol veure jugar!,SAY.Dialog:PostRocks.16.{$NewName},Maybe Uncle Thirsty wants to watch me play!,"",2025-08-21T22:17:44.528Z
+7,E3_Mine1F_localization,"Interactable object (wall), the scoreboard.",El meu rècord d'avui a Roques és {$Number}.,SAY.Dialog:PongHighScore.1.{$NewName},My high score for Rocks today is {$Number}.,"",2025-08-21T22:17:44.528Z
+8,E3_Mine1F_localization,The Foal says this to herself when finding one of the Rocks that allow her to play a variation of Rocks.,Que guai. Aquesta roca és diferent! Me la guardo!,SAY.Dialog:AlternativeRock.1.{$NewName},Cool. This rock looks different! I'm gonna keep it!,"",2025-08-21T22:17:44.528Z
+9,E3_Mine1F_localization,The Foal says this to herself when finding one of the Rocks that allow her to play a variation of Rocks.,"Guau, quina roca més dura! Me la guardo.",SAY.Dialog:HardRock.1.{$NewName},"Wow, what a hard rock! I'm gonna keep it.","",2025-08-21T22:17:44.528Z
+10,E3_Mine1F_localization,The Foal says this to herself when finding one of the Rocks that allow her to play a variation of Rocks.,"Guau, quina roca més clàssica! Potser és la meva preferida!",SAY.Dialog:ClassicRock.1.{$NewName},"Wow, what a classic rock! This one might be my favourite!","",2025-08-21T22:17:44.528Z
+11,E3_Mine1F_localization,"The Foal says this to herself when finding one of the Rocks that allow her to play a variation of Rocks.
+
+This object is also the wheel for the minecart, needed to break the wall to the next area.",Aquesta roca és ben estranya...,SAY.Dialog:MineCartWheel.1.{$NewName},This is a weird looking rock...,"",2025-08-21T22:17:44.528Z
+12,E3_Mine1F_localization,"The Foal says this to herself if she interacts with the wall and she doesn't have the wheel,",Està segellat.,SAY.Dialog:TooDarkExit.9.{$NewName},It's all boarded up.,"",2025-08-21T22:17:44.528Z
+13,E3_Mine1F_localization,"The Foal says this to herself if she interacts with the mine cart and she doesn't have the wheel,",Li falta una d'aquestes peces rodones...,SAY.Dialog:Wheel-NoWheel.4.{$NewName},It's missing one of those round things...,"",2025-08-21T22:17:44.528Z
+14,E3_Mine1F_localization,The Foal says this to herself when she successfully brings the wheel object to the cart. It can now be pushed into the wall.,Que guai! Encaixa perfecte!,SAY.Dialog:Wheel-NoWheel.21.{$NewName},Cool! It fits perfectly!,"",2025-08-21T22:17:44.528Z
+15,E3_Mine1F_localization,Public conversation with Sad (and Nice).,*ploriqueja*,SAY.Dialog:NiceSad_Public.23.Sad Ass,*whimper*,"",2025-08-21T22:17:44.528Z
+16,E3_Mine1F_localization,"","Vols veure com jugo a Roques, Oncle Tristase?",SAY.Dialog:NiceSad_Public.79.{$NewName},"Do you want to watch me play Rocks, Uncle Sad?","",2025-08-21T22:17:44.528Z
+17,E3_Mine1F_localization,"",Ho sento...No tinc ànims per jugar.,SAY.Dialog:NiceSad_Public.21.Sad Ass,Sorry... I’m not really in the mood to play.,"",2025-08-21T22:17:44.528Z
+18,E3_Mine1F_localization,"",Per què no?,SAY.Dialog:NiceSad_Public.13.{$NewName},Why not?,"",2025-08-21T22:17:44.528Z
+19,E3_Mine1F_localization,Jump to either line 20 or 23.,*suspira* Perquè hi ha dies que el teu Oncle Tristase no sap ni per què viu...,SAY.Dialog:NiceSad_Public.59.Sad Ass,*sigh* Because some days your Uncle Sad Ass just doesn't know why he's alive...,"",2025-08-21T22:17:44.528Z
+20,E3_Mine1F_localization,Dialogue option 1.1.,Digues a l'Oncle Tristase per què creus que viviu.,MENU.Dialog:NiceSad_Public.105,Tell Uncle Sad Ass why you think you're alive.,"",2025-08-21T22:17:44.528Z
+21,E3_Mine1F_localization,"",Crec que vivim per gaudir del present i fer el que ens fa feliços.,SAY.Dialog:NiceSad_Public.82.{$NewName},I think we're alive to live in the present and do what brings us joy.,"",2025-08-21T22:17:44.528Z
+22,E3_Mine1F_localization,Jump to line 25.,"Si el que fem no ens fa feliços, potser hauríem de fer una altra cosa!",SAY.Dialog:NiceSad_Public.107.{$NewName},"If what we're doing doesn't bring us joy, maybe we should do something different!","",2025-08-21T22:17:44.528Z
+23,E3_Mine1F_localization,Dialogue option 1.2.,Digues a l'Oncle Tristase per què diu la Camarada Mare que viviu.,MENU.Dialog:NiceSad_Public.106,Tell Uncle Sad Ass why Comrade Mother says you're alive.,"",2025-08-21T22:17:44.528Z
+24,E3_Mine1F_localization,Jump to line 25.,La Camarada Mare diu que vivim per honrar el llegat dels nostres Ancestres amb el Treball dur.,SAY.Dialog:NiceSad_Public.83.{$NewName},Comrade Mother says we're alive to honour the legacy of our Ancestors through hard Work.,"",2025-08-21T22:17:44.528Z
+25,E3_Mine1F_localization,Nice Ass enters the frame.,"¿La {$NewName} t'està donant bons consells, Oncle Tristase?",SAY.Dialog:NiceSad_Public.90.Nice Ass,"Is {$NewName} giving you some good advice, Uncle Sad?","",2025-08-21T22:17:44.528Z
+26,E3_Mine1F_localization,"",Sí... És ben igual a la seva germana Perase.,SAY.Dialog:NiceSad_Public.91.Sad Ass,Yes... She's just like her sister Lazy used to be.,"",2025-08-21T22:17:44.528Z
+27,E3_Mine1F_localization,"",Plena de saviesa.,SAY.Dialog:NiceSad_Public.92.Sad Ass,Full of wisdom.,"",2025-08-21T22:17:44.528Z
+28,E3_Mine1F_localization,"","La Perase sempre deia, ""L'avorriment és...""",SAY.Dialog:NiceSad_Public.93.Sad Ass,"Lazy always said, ""Boredom is...""","",2025-08-21T22:17:44.528Z
+29,E3_Mine1F_localization,"","""és..."" *ploriqueja*",SAY.Dialog:NiceSad_Public.94.Sad Ass,"""is..."" *whimper*","",2025-08-21T22:17:44.528Z
+30,E3_Mine1F_localization,"","Ho sento, jove Camarada, donem una mica d'espai al teu Oncle.",SAY.Dialog:NiceSad_Public.100.Nice Ass,"Sorry little Comrade, let's give your Uncle some space.","",2025-08-21T22:17:44.528Z
+31,E3_Mine1F_localization,"End of conversation.
+Player can move around again.",No és fàcil per a ell tornar a ser dins la Mina.,SAY.Dialog:NiceSad_Public.108.Nice Ass,It's not easy for him being back inside the Mine.,"",2025-08-21T22:17:44.528Z
+32,E3_Mine1F_localization,Repeater for Sad Ass.,*suspira*,SAY.Dialog:SadPostPublic.3.Sad Ass,*sigh*,"",2025-08-21T22:17:44.528Z
+33,E3_Mine1F_localization,Repeater 1 for Nice Ass.,"No et preocupis, no té res a veure amb tu.",SAY.Dialog:NicePostPublic.10.Nice Ass,"Don't worry, it's not your fault.","",2025-08-21T22:17:44.528Z
+34,E3_Mine1F_localization,"",Només és que li recordes molt a la teva germana.,SAY.Dialog:NicePostPublic.22.Nice Ass,You just remind him so much of your sister.,"",2025-08-21T22:17:44.528Z
+35,E3_Mine1F_localization,Repeater 2 for Nice Ass.,Deixem-li una mica d'espai.,SAY.Dialog:NicePostPublic.12.Nice Ass,Just give him some space.,"",2025-08-21T22:17:44.528Z
+36,E3_Mine1F_localization,"Private conversation with Sad and Nice, while Foal is inside the tunnels.",Hi ha algú que xiuxiueja...,SAY.Dialog:TunnelNiceSadPrivate.22.{$NewName},Someone's whispering...,"",2025-08-21T22:17:44.528Z
+37,E3_Mine1F_localization,The camera moves over to Nice Ass.,Camarada—,SAY.Dialog:TunnelNiceSadPrivate.26.Nice Ass,Comrade—,"",2025-08-21T22:17:44.528Z
+38,E3_Mine1F_localization,"","¿Diràs als altres que jo vaig provocar l'Incendi, oi...?",SAY.Dialog:TunnelNiceSadPrivate.21.Sad Ass,"You're going to tell the others I set the Fire, aren't you...","",2025-08-21T22:17:44.528Z
+39,E3_Mine1F_localization,"","Ni de conya, cari. Et vaig fer una promesa i no la penso trencar!",SAY.Dialog:TunnelNiceSadPrivate.70.Nice Ass,Not a chance. I made a gosh darn promise and I intend on keeping it!,"",2025-08-21T22:17:44.528Z
+40,E3_Mine1F_localization,"",Això vas dir...però no tot el que dius és veritat.,SAY.Dialog:TunnelNiceSadPrivate.37.Sad Ass,You say that... but not everything you say is true.,"",2025-08-21T22:17:44.528Z
+41,E3_Mine1F_localization,"",Aquell dia a la Comuna...Em vaig creure que les coses millorarien.,SAY.Dialog:TunnelNiceSadPrivate.36.Sad Ass,That day in the Outhouse... I really thought that things would get better.,"",2025-08-21T22:17:44.528Z
+42,E3_Mine1F_localization,"",Però no ho han fet.,SAY.Dialog:TunnelNiceSadPrivate.35.Sad Ass,But they haven't.,"",2025-08-21T22:17:44.528Z
+43,E3_Mine1F_localization,"",Tothom es pot equivocar!,SAY.Dialog:TunnelNiceSadPrivate.34.Nice Ass,We all make mistakes!,"",2025-08-21T22:17:44.528Z
+44,E3_Mine1F_localization,Jump to either line 45 or 46.,En Fortalase no va poder salvar els Humans.,SAY.Dialog:TunnelNiceSadPrivate.38.Nice Ass,Hard Ass couldn't save the Humans.,"",2025-08-21T22:17:44.528Z
+45,E3_Mine1F_localization,"Branch 2.1.
+If the stable was set on fire in Ep2.
+Jump to line 47.",Jo no vaig ser prou ràpida per salvar l'Estable.,SAY.Dialog:TunnelNiceSadPrivate.43.Nice Ass,I wasn't fast enough to save the Stable.,"",2025-08-21T22:17:44.528Z
+46,E3_Mine1F_localization,"Branch 2.2.
+If the stable was saved in Ep2.
+Jump to line 47.",Jo amb prou feines vaig poder salvar l'Estable.,SAY.Dialog:TunnelNiceSadPrivate.48.Nice Ass,I only barely saved the Stable.,"",2025-08-21T22:17:44.528Z
+47,E3_Mine1F_localization,"",I l'Honradase...pobra Honradase.,SAY.Dialog:TunnelNiceSadPrivate.49.Nice Ass,And Trusty Ass... poor Trusty Ass.,"",2025-08-21T22:17:44.528Z
+48,E3_Mine1F_localization,"",*ploriqueja*,SAY.Dialog:TunnelNiceSadPrivate.52.Sad Ass,*whimper*,"",2025-08-21T22:17:44.528Z
+49,E3_Mine1F_localization,its Job capital?,Potser no hi ha estàtues d'or ni balls ni recuperem les Feines.,SAY.Dialog:TunnelNiceSadPrivate.51.Nice Ass,Maybe there won't be golden statues or dancing or our old Jobs.,"",2025-08-21T22:17:44.528Z
+50,E3_Mine1F_localization,"End of conversation.
+Player can move around again.","Però cari, pensa que ens tenim els uns als altres!",SAY.Dialog:TunnelNiceSadPrivate.50.Nice Ass,"But golly, at least we have each other!","",2025-08-21T22:17:44.528Z
+51,E3_Mine1F_localization,Public conversation with Big and Thirsty.,*uf*—m'apareix que això és una idea de locos!,SAY.Dialog:ThirstyBig_Public.40.Thirsty Ass,*oof*—Just sayin' it's a crazy idea!,"",2025-08-21T22:17:44.528Z
+52,E3_Mine1F_localization,"","Oh! Hola, petita Camarada.",SAY.Dialog:ThirstyBig_Public.42.Big Ass,Oh! Hello little Comrade.,"",2025-08-21T22:17:44.528Z
+53,E3_Mine1F_localization,"Jump to dialogue options, lines 55, 59, or 62.",Estem movent aquesta pedrota per si l'aigua torna a arribar fins aquí.,SAY.Dialog:ThirstyBig_Public.73.Big Ass,We're just moving this boulder in case the flood starts to come any closer.,"",2025-08-21T22:17:44.528Z
+54,E3_Mine1F_localization,Dialogue option 3.1.,Vols veure com jugo a Roques?,MENU.Dialog:ThirstyBig_Public.92,Do you want to watch me play Rocks?,"",2025-08-21T22:17:44.528Z
+55,E3_Mine1F_localization,"",Vols veure com jugo a Roques?,SAY.Dialog:ThirstyBig_Public.81.{$NewName},Do you want to watch me play Rocks?,"",2025-08-21T22:17:44.528Z
+56,E3_Mine1F_localization,"","Ho sento, petita Camarada, estem carregats de tasques.",SAY.Dialog:ThirstyBig_Public.83.Big Ass,"Sorry little Comrade, we are weighed down with tasks.","",2025-08-21T22:17:44.528Z
+57,E3_Mine1F_localization,"End of conversation.
+Player can move around again.",Enga xiqueta! Ham de tornar a la faena!,SAY.Dialog:ThirstyBig_Public.82.Thirsty Ass,Now skidaddle! We gotta git rockin'!,"",2025-08-21T22:17:44.528Z
+58,E3_Mine1F_localization,Dialogue option 3.2.,"Les pedres no aturen l'aigua, no?",MENU.Dialog:ThirstyBig_Public.94,"Boulders can't stop water, can they?","",2025-08-21T22:17:44.528Z
+59,E3_Mine1F_localization,"","Les pedres no aturen l'aigua, no?",SAY.Dialog:ThirstyBig_Public.84.{$NewName},"Boulders can't stop water, can they?","",2025-08-21T22:17:44.528Z
+60,E3_Mine1F_localization,"","Tu coneixes bé les teves roques, petita Camarada, però aquesta és d'una altra lliga.",SAY.Dialog:ThirstyBig_Public.85.Big Ass,"You know your rocks little Comrade, but this one's out of your league.","",2025-08-21T22:17:44.528Z
+61,E3_Mine1F_localization,"End of conversation.
+Player can move around again.",Enga xiqueta! Ham de tornar a la faena!,SAY.Dialog:ThirstyBig_Public.86.Thirsty Ass,Now skidaddle! We gotta git rockin'!,"",2025-08-21T22:17:44.528Z
+62,E3_Mine1F_localization,Dialogue option 3.3.,No hi ha una manera millor de moure una pedra?,MENU.Dialog:ThirstyBig_Public.93,Isn't there a better way to move a boulder?,"",2025-08-21T22:17:44.528Z
+63,E3_Mine1F_localization,"",No hi ha una manera millor de moure una pedra?,SAY.Dialog:ThirstyBig_Public.87.{$NewName},Isn't there a better way to move a boulder?,"",2025-08-21T22:17:44.528Z
+64,E3_Mine1F_localization,"",El múscul és la millor manera.,SAY.Dialog:ThirstyBig_Public.88.Big Ass,Muscle is the greatest method there is.,"",2025-08-21T22:17:44.528Z
+65,E3_Mine1F_localization,"",I per què no feu un sistema que aixequi un costat quan poseu prou pes a l'altre costat?,SAY.Dialog:ThirstyBig_Public.95.{$NewName},But why don't you make a system that would lift one side up when you put enough weight on the other side?,"",2025-08-21T22:17:44.528Z
+66,E3_Mine1F_localization,"",Podria ser divertit!,SAY.Dialog:ThirstyBig_Public.96.{$NewName},You could make it fun too!,"",2025-08-21T22:17:44.528Z
+67,E3_Mine1F_localization,"","Buay! Mos estàs dient que no sabem lo que fem, xica Camarada?",SAY.Dialog:ThirstyBig_Public.89.Thirsty Ass,"Heck, you tryin' to tell us that we don't know what we're ding dang doin' lil' Comrade?","",2025-08-21T22:17:44.528Z
+68,E3_Mine1F_localization,"End of conversation.
+Player can move around again.",Au! Acamina que no et banyes!,SAY.Dialog:ThirstyBig_Public.97.Thirsty Ass,Now git goin'!,"",2025-08-21T22:17:44.528Z
+69,E3_Mine1F_localization,Repeater for Thirsty Ass.,Au ves!,SAY.Dialog:ThirstyBig_Public.15.Thirsty Ass,"Go on, git!","",2025-08-21T22:17:44.528Z
+70,E3_Mine1F_localization,"Private conversation with Big and Thirsty, while Foal is inside the tunnels.",Què són aquests panteixos?,SAY.Dialog:TunnelBigThirstyPrivate.1.{$NewName},What's that heavy breathing?,"",2025-08-21T22:17:44.528Z
+71,E3_Mine1F_localization,The camera moves over to Thirsty Ass.,"*uf!*—Tu que volies aigua, aquí la tens, Eixutase!",SAY.Dialog:TunnelBigThirstyPrivate.23.Big Ass,"*oof!*—You wanted water and you got it, Thirsty!","",2025-08-21T22:17:44.528Z
+72,E3_Mine1F_localization,"",Això no és—*uf!*—lo que jo volia!,SAY.Dialog:TunnelBigThirstyPrivate.19.Thirsty Ass,This ain't—*oof!*—what I wanted!,"",2025-08-21T22:17:44.528Z
+73,E3_Mine1F_localization,"",*uf*—Quin és l'últim cop que cap de nosaltres ha aconseguit el que volia?,SAY.Dialog:TunnelBigThirstyPrivate.18.Big Ass,*oof*—When was the last time any of us got what we wanted?,"",2025-08-21T22:17:44.528Z
+74,E3_Mine1F_localization,"",Si la pluja no s'atura o no tornen els Humans—*uf!*—ens morirem de fam.,SAY.Dialog:TunnelBigThirstyPrivate.28.Big Ass,If the rain doesn't stop or the Humans don't come back—*oof!*—we're going to starve.,"",2025-08-21T22:17:44.528Z
+75,E3_Mine1F_localization,"",Quina me'n dius! Estàs pensant en—*uf!*—anar-te'n?,SAY.Dialog:TunnelBigThirstyPrivate.17.Thirsty Ass,Don't tell me yer—*oof!*—thinking about leavin'?,"",2025-08-21T22:17:44.528Z
+76,E3_Mine1F_localization,"",...,SAY.Dialog:TunnelBigThirstyPrivate.32.Big Ass,...,"",2025-08-21T22:17:44.528Z
+77,E3_Mine1F_localization,"","Camarada, vull més de la vida.",SAY.Dialog:TunnelBigThirstyPrivate.31.Big Ass,"Comrade, I want more in life.","",2025-08-21T22:17:44.528Z
+78,E3_Mine1F_localization,"",Que vuigues més de la vida no vol dir que haigues d'abandonar ca teva!,SAY.Dialog:TunnelBigThirstyPrivate.30.Thirsty Ass,Just because yer wantin' more in life don't mean you got to abandon yer home!,"",2025-08-21T22:17:44.528Z
+79,E3_Mine1F_localization,"","Lo meu somni és muntar un raser ben especial aquí a Talldevall, on els Ases puiguen xalar amb un bon beure.",SAY.Dialog:TunnelBigThirstyPrivate.29.Thirsty Ass,I'm dreaming of setting up a darn special place right here in Fannyside where Asses can get a drink and let loose.,"",2025-08-21T22:17:44.528Z
+80,E3_Mine1F_localization,"",Tindria tota mena d'aigua exquisida.,SAY.Dialog:TunnelBigThirstyPrivate.33.Thirsty Ass,It'd have all kinds of tasty water.,"",2025-08-21T22:17:44.528Z
+81,E3_Mine1F_localization,"",Aigua de pluja. Aigua de riu. Aigua de bassa.,SAY.Dialog:TunnelBigThirstyPrivate.16.Thirsty Ass,Rain water. River water. Pond water.,"",2025-08-21T22:17:44.528Z
+82,E3_Mine1F_localization,"",Es diria... Sant Hilasi!,SAY.Dialog:TunnelBigThirstyPrivate.15.Thirsty Ass,I’d call it... Bottoms Up!,"",2025-08-21T22:17:44.528Z
+83,E3_Mine1F_localization,"",*uf!*—Sense Humans?,SAY.Dialog:TunnelBigThirstyPrivate.14.Big Ass,*oof!*—No Humans?,"",2025-08-21T22:17:44.528Z
+84,E3_Mine1F_localization,"End of conversation.
+Player can move around again.",No...*uf!*—Suposo que no.,SAY.Dialog:TunnelBigThirstyPrivate.21.Thirsty Ass,No... *oof!*—I guess not.,"",2025-08-21T22:17:44.528Z
+85,E3_Mine1F_localization,"Public conversation with Sick, Kick, and Hard.","¿Oncle Ferase, Oncle Fortalase, voleu veure com jugo a Roques?",SAY.Dialog:HardKick_Public.13.{$NewName},"Uncle Kick, Uncle Hard, do you want to watch me play Rocks?","",2025-08-21T22:17:44.528Z
+86,E3_Mine1F_localization,"",Et sembla que ÉS HORA DE JUGAR?!,SAY.Dialog:HardKick_Public.76.Kick Ass,Does this LOOK LIKE A TIME FOR GAMES?!,"",2025-08-21T22:17:44.528Z
+87,E3_Mine1F_localization,"",Perdona—@#$%&!—La Tia Feblase... no es troba gaire bé.,SAY.Dialog:HardKick_Public.139.Kick Ass,Sorry—@#$%&!—Aunty Sick is... pretty messed up right now.,"",2025-08-21T22:17:44.528Z
+88,E3_Mine1F_localization,"",Què li passa?,SAY.Dialog:HardKick_Public.75.{$NewName},What's wrong with her?,"",2025-08-21T22:17:44.528Z
+89,E3_Mine1F_localization,"",El nostre cos no està fet per aquest temps tan humit.,SAY.Dialog:HardKick_Public.101.Hard Ass,Our bodies break down in rainy weather.,"",2025-08-21T22:17:44.528Z
+90,E3_Mine1F_localization,"",És per això que et falta una orella?,SAY.Dialog:HardKick_Public.100.{$NewName},Is that what happened to your ear?,"",2025-08-21T22:17:44.528Z
+91,E3_Mine1F_localization,"",No.,SAY.Dialog:HardKick_Public.21.Hard Ass,No.,"",2025-08-21T22:17:44.528Z
+92,E3_Mine1F_localization,"","El dia de la Manifestació, vaig haver de salvar els Humans de l'Incendi.",SAY.Dialog:HardKick_Public.103.Hard Ass,"On the day of the Protest, I was in charge of saving the Humans from the Fire.","",2025-08-21T22:17:44.528Z
+93,E3_Mine1F_localization,Jump to dialogue options. Line 94 or 96.,Em vaig quedar atrapat en un dels edificis.,SAY.Dialog:HardKick_Public.102.Hard Ass,I became trapped inside of a burning house.,"",2025-08-21T22:17:44.528Z
+94,E3_Mine1F_localization,Dialogue option 1.1.,I què va passar?,MENU.Dialog:HardKick_Public.23,What happened next?,"",2025-08-21T22:17:44.528Z
+95,E3_Mine1F_localization,"Jump to line 99, 101, or 103.",I què va passar?,SAY.Dialog:HardKick_Public.33.{$NewName},What happened next?,"",2025-08-21T22:17:44.528Z
+96,E3_Mine1F_localization,Dialogue option 1.2.,"Ah, sí. Ja he sentit aquesta història.",MENU.Dialog:HardKick_Public.26,Oh right. I've heard this story before.,"",2025-08-21T22:17:44.528Z
+97,E3_Mine1F_localization,"Jump to line 99, 101, or 103.","Ah, sí. Ja he sentit aquesta història.",SAY.Dialog:HardKick_Public.62.{$NewName},Oh right. I've heard this story before.,"",2025-08-21T22:17:44.528Z
+98,E3_Mine1F_localization,Dialogue option 2.1.,El foc em va fondre la pell i se'm va perforar el timpà.,MENU.Dialog:HardKick_Public.104,The flames melted my skin and punctured my ear drum.,"",2025-08-21T22:17:44.528Z
+99,E3_Mine1F_localization,Jump to 105.,El foc em va fondre la pell i se'm va perforar el timpà.,SAY.Dialog:HardKick_Public.110.Hard Ass,The flames melted my skin and punctured my ear drum.,"",2025-08-21T22:17:44.528Z
+100,E3_Mine1F_localization,Dialogue option 2.2.,L'orella em va quedar enganxada en una tros de fusta. Vaig haver d'arrencar-me-la.,MENU.Dialog:HardKick_Public.106,My ear was caught on a wooden spike. I had to tear it off.,"",2025-08-21T22:17:44.528Z
+101,E3_Mine1F_localization,Jump to 105.,L'orella em va quedar enganxada en una tros de fusta. Vaig haver d'arrencar-me-la.,SAY.Dialog:HardKick_Public.114.Hard Ass,My ear was caught on a wooden spike. I had to tear it off.,"",2025-08-21T22:17:44.528Z
+102,E3_Mine1F_localization,Dialogue option 2.3.,"Se'm va esclafar l'orella, es va gangrenar i va caure quatre dies després.",MENU.Dialog:HardKick_Public.105,"My ear was crushed, became gangrenous, and fell off four days later.","",2025-08-21T22:17:44.528Z
+103,E3_Mine1F_localization,Jump to 105.,"Se'm va esclafar l'orella, es va gangrenar i va caure quatre dies després.",SAY.Dialog:HardKick_Public.112.Hard Ass,"My ear was crushed, became gangrenous, and fell off four days later.","",2025-08-21T22:17:44.528Z
+104,E3_Mine1F_localization,All dialogue options lead here.,*TUS TUS TUS*,SAY.Dialog:HardKick_Public.28.Sick Ass,*COUGH COUGH COUGH*,"",2025-08-21T22:17:44.528Z
+105,E3_Mine1F_localization,"",RESISTEIX-TE!—RESISTEIX-TE!,SAY.Dialog:HardKick_Public.29.Kick Ass,FIGHT IT!—FIGHT IT!,"",2025-08-21T22:17:44.528Z
+106,E3_Mine1F_localization,"",*TUS TUS TUS TUS TUS*,SAY.Dialog:HardKick_Public.30.Sick Ass,*COUGH COUGH COUGH COUGH COUGH*,"",2025-08-21T22:17:44.528Z
+107,E3_Mine1F_localization,"End of conversation.
+Player can move around again.",Ja n'hi ha prou. Ves-te'n.,SAY.Dialog:HardKick_Public.31.Hard Ass,That's enough. Run along.,"",2025-08-21T22:17:44.528Z
+108,E3_Mine1F_localization,Repeater line for Hard Ass.,T'he dit que te'n vagis.,SAY.Dialog:HardKick_Public.11.Hard Ass,I said leave us.,"",2025-08-21T22:17:44.528Z
+109,E3_Mine1F_localization,Repeater line for Sick Ass.,*TUS*,SAY.Dialog:SickMoans.1.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.528Z
+110,E3_Mine1F_localization,"Private conversation between Hard and Kick, while Foal is inside the tunnels.",Sona com si algú estigués patint...,SAY.Dialog:TunnelHardKickPrivate.1.{$NewName},It sounds like someone's in pain...,"",2025-08-21T22:17:44.528Z
+111,E3_Mine1F_localization,The camera moves over to Sick Ass.,*TUS TUS*,SAY.Dialog:TunnelHardKickPrivate.11.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.528Z
+112,E3_Mine1F_localization,"","Feblase! Camarada! VINGA, GERMANA!",SAY.Dialog:TunnelHardKickPrivate.21.Kick Ass,Sick! Comrade! COME ON GIRL!,"",2025-08-21T22:17:44.528Z
+113,E3_Mine1F_localization,"",Ni se t'acudeixi PENSAR a anar allà on NO PUGUI TROBAR-TE!,SAY.Dialog:TunnelHardKickPrivate.13.Kick Ass,Don't even THINK about going where I CAN'T FIND YOU!,"",2025-08-21T22:17:44.528Z
+114,E3_Mine1F_localization,"","Descansi, Camarada.",SAY.Dialog:TunnelHardKickPrivate.12.Hard Ass,"At ease, Comrade.","",2025-08-21T22:17:44.528Z
+115,E3_Mine1F_localization,"",DESCANSI? @#$%&!!!!,SAY.Dialog:TunnelHardKickPrivate.16.Kick Ass,AT EASE? @#$%&!!!!,"",2025-08-21T22:17:44.528Z
+116,E3_Mine1F_localization,"",Sortir sota la pluja cada dia va ser la TEVA IDEA DE MERDA!,SAY.Dialog:TunnelHardKickPrivate.15.Kick Ass,Staying out in the rain every day was YOUR STUPID idea!,"",2025-08-21T22:17:44.528Z
+117,E3_Mine1F_localization,"","I per a què, EH?",SAY.Dialog:TunnelHardKickPrivate.10.Kick Ass,"And for what, HUH?","",2025-08-21T22:17:44.528Z
+118,E3_Mine1F_localization,"",PER A QUÈ?!,SAY.Dialog:TunnelHardKickPrivate.33.Kick Ass,FOR WHAT?!,"",2025-08-21T22:17:44.528Z
+119,E3_Mine1F_localization,"End of conversation.
+Player can move around again.",Per al nostre futur.,SAY.Dialog:TunnelHardKickPrivate.24.Hard Ass,For our future.,"",2025-08-21T22:17:44.528Z
+120,E3_Mine1F_localization,Conversation with Slow Ass.,"Vols veure com jugo a Roques, Oncle Coixase?",SAY.Dialog:Slow.10.{$NewName},"Will you watch me play Rocks, Uncle Slow?","",2025-08-21T22:17:44.528Z
+121,E3_Mine1F_localization,"","M'encantaria, p-p-però... no c-c-crec que p-p-pugui jugar al t-t-teu joc.",SAY.Dialog:Slow.22.Slow Ass,I'd love to b-but... I don’t think I can p-play that game of yours.,"",2025-08-21T22:17:44.528Z
+122,E3_Mine1F_localization,"",Les roques van massa ràpid p-p-per a mi.,SAY.Dialog:Slow.24.Slow Ass,The rocks go too fast for me.,"",2025-08-21T22:17:44.528Z
+123,E3_Mine1F_localization,"",Segur q-que la meva vella amiga Honradase ho hauria fet molt bé.,SAY.Dialog:Slow.23.Slow Ass,I b-bet my old friend Trusty would have b-been great at it...,"",2025-08-21T22:17:44.528Z
+124,E3_Mine1F_localization,"End of conversation.
+Player can move around again.",Ella ho feia t-t-tot bé.,SAY.Dialog:Slow.25.Slow Ass,She could do anything.,"",2025-08-21T22:17:44.528Z
+125,E3_Mine1F_localization,Repeater line for Slow Ass.,L'Honradase era d'aquells líders que et fan c-c-creure en t-t-tu mateix.,SAY.Dialog:Slow.12.Slow Ass,Trusty was the kind of leader who made you b-believe in yourself.,"",2025-08-21T22:17:44.528Z
+126,E3_Mine1F_localization,Public conversation with Sturdy and Smart.,"Ei, petita Camarada, en Rudase està deixant perdre la seva ració un cop més. Te l'hauries de menjar tu.",SAY.Dialog:SturdySmart_Public.19.Smart Ass,"Hey little Comrade, Bad Ass is letting his ration go to waste again. You should take it.","",2025-08-21T22:17:44.528Z
+127,E3_Mine1F_localization,"",De veritat?,SAY.Dialog:SturdySmart_Public.18.{$NewName},Really?,"",2025-08-21T22:17:44.528Z
+128,E3_Mine1F_localization,"","Pels Déus! Llestase, ja saps que la {$NewName} encara no pot digerir aquesta mena de menjar.",SAY.Dialog:SturdySmart_Public.23.Sturdy Ass,"By the Gods! Smart Ass, you know {$NewName} can't digest that kind of food yet.","",2025-08-21T22:17:44.528Z
+129,E3_Mine1F_localization,"",Doncs m'ho menjo jo.,SAY.Dialog:SturdySmart_Public.68.Smart Ass,Then I'll eat it.,"",2025-08-21T22:17:44.528Z
+130,E3_Mine1F_localization,"",Ni pensar-ho. És per a en Rudase.,SAY.Dialog:SturdySmart_Public.15.Sturdy Ass,No you won't. It's Bad Ass's.,"",2025-08-21T22:17:44.528Z
+131,E3_Mine1F_localization,"",Això és malbaratar!,SAY.Dialog:SturdySmart_Public.61.Smart Ass,What a waste!,"",2025-08-21T22:17:44.528Z
+132,E3_Mine1F_localization,"","En Rudase no hi és mai, i totes les seves racions s'acaben florint!",SAY.Dialog:SturdySmart_Public.69.Smart Ass,He's never around and his rations just go mouldy!,"",2025-08-21T22:17:44.528Z
+133,E3_Mine1F_localization,"End of conversation.
+Player can move around again.","Ves-te'n, criatura. He de parlar d'una cosa important amb la Tia Llestase.",SAY.Dialog:SturdySmart_Public.20.Sturdy Ass,Run along child. I need to speak with Aunty Smart about something important.,"",2025-08-21T22:17:44.528Z
+134,E3_Mine1F_localization,Repeater line for Sturdy Ass.,Ves a jugar amb les teves roques.,SAY.Dialog:SturdySmart_Public.11.Sturdy Ass,Go play with your rocks.,"",2025-08-21T22:17:44.528Z
+135,E3_Mine1F_localization,"Private conversation between Sturdy and Smart, while Foal is inside the tunnels.",¿S'estan barallant la Camarada Mare i la Tia Llestase?,SAY.Dialog:TunnelSturdySmartPrivate.23.{$NewName},Are Comrade Mother and Aunty Smart arguing?,"",2025-08-21T22:17:44.528Z
+136,E3_Mine1F_localization,The camera moves over to Smart Ass.,"Si els Humans no tornen a Talldevall, mai recuperarem la nostra Feina...",SAY.Dialog:TunnelSturdySmartPrivate.110.Smart Ass,"If the Humans don't return to Fannyside, we'll never get our Jobs back...","",2025-08-21T22:17:44.528Z
+137,E3_Mine1F_localization,"","Ho entenc, Camarada.",SAY.Dialog:TunnelSturdySmartPrivate.18.Sturdy Ass,"I understand, Comrade.","",2025-08-21T22:17:44.528Z
+138,E3_Mine1F_localization,"",Però en Fortalase diu que fa setmanes que no veu cap Humà.,SAY.Dialog:TunnelSturdySmartPrivate.109.Sturdy Ass,But Hard Ass says he hasn't seen any Humans for weeks.,"",2025-08-21T22:17:44.528Z
+139,E3_Mine1F_localization,"",Doncs hauríem de sortir a buscar-los!,SAY.Dialog:TunnelSturdySmartPrivate.14.Smart Ass,Then we should go and find them!,"",2025-08-21T22:17:44.528Z
+140,E3_Mine1F_localization,"","Camarada, no és segur allà fora.",SAY.Dialog:TunnelSturdySmartPrivate.21.Sturdy Ass,"Comrade, it's not safe outside.","",2025-08-21T22:17:44.528Z
+141,E3_Mine1F_localization,"",No ens podem arriscar a pedre la nostra Gran Estratega en una crescuda del riu o en una patinada.,SAY.Dialog:TunnelSturdySmartPrivate.25.Sturdy Ass,We can't go losing our Ace Strategist in a flood or a mudslide.,"",2025-08-21T22:17:44.528Z
+142,E3_Mine1F_localization,"","Tens tota la raó, no podeu...",SAY.Dialog:TunnelSturdySmartPrivate.1.Smart Ass,You're damn right you can't...,"",2025-08-21T22:17:44.528Z
+143,E3_Mine1F_localization,"End of conversation.
+Player can move around again.",Els Déus no ens abandonaran.,SAY.Dialog:TunnelSturdySmartPrivate.111.Sturdy Ass,The Gods won't leave us behind.,"",2025-08-21T22:17:44.528Z
+144,E3_Mine1F_localization,On the Mine's Bulletin Board,"EN CAS D'EMERGÈNCIA, TRUQUEU AL",WRITE.Dialog:BulletinLocalizer.1,"IN CASE OF EMERGENCY, PLEASE CALL","",2025-08-21T22:17:44.528Z
+145,E3_Mine1F_localization,On the Mine's Bulletin Board,CARBÓ O NO CARBÓ?,WRITE.Dialog:BulletinLocalizer.2,COAL OR NOT COAL?,"",2025-08-21T22:17:44.528Z
+146,E3_Mine1F_localization,On the Mine's Bulletin Board,DESAPAREGUT,WRITE.Dialog:BulletinLocalizer.3,MISSING,"",2025-08-21T22:17:44.528Z
+147,E3_Mine1F_localization,Dialogue at end of scene.,Guau.,SAY.Dialog:MineCartRunsAway.9.{$NewName},Whoa.,"",2025-08-21T22:17:44.528Z
+148,E3_Mine1F_localization,"",Eh?,SAY.Dialog:EnableLight.1.{$NewName},Huh?,"",2025-08-21T22:17:44.528Z
+149,E3_Mine1F_localization,Player can now exit to the next area.,Com? Un llum? Això no havia passat mai...,SAY.Dialog:EnableLight.7.{$NewName},Hey a light? That's never happened before...,"",2025-08-21T22:17:44.528Z
+2,E3_Rocks_localization,"Game Version 1: 
+Pong with rocks in the middle.",Normal,WRITE.DialogLocalizer.1,Soft,"",2025-08-21T22:17:44.528Z
+3,E3_Rocks_localization,"Game Version 2: 
+Pong with rocks in the middle + the rocks are differently placed.",Alternatiu,WRITE.DialogLocalizer.5,Alternative,"",2025-08-21T22:17:44.528Z
+4,E3_Rocks_localization,"Game Version 3: 
+Pong with rocks in the middle + the game moves very fast.",Dur,WRITE.DialogLocalizer.4,Hard,"",2025-08-21T22:17:44.528Z
+5,E3_Rocks_localization,"Game Version 4: 
+Pong without the rocks in the middle.",Clàssic,WRITE.DialogLocalizer.2,Classic,"",2025-08-21T22:17:44.528Z
+6,E3_Rocks_localization,"Game Version 5: 
+Pong but slow and with no music.",Roda,WRITE.DialogLocalizer.3,Wheel,"",2025-08-21T22:17:44.528Z
+3,E3_100_localization,The Foal attempts to touch the Elevator.,La Camarada Mare m'ha dit que no toqui les Màquines...,SAY.Dialog:Lift100.1.{$NewName},Comrade Mother told me not to touch the Machines...,"",2025-08-21T22:17:44.528Z
+4,E3_100_localization,The Foal attempts to touch the Elevator.,No hauria de tocar les Màquines...però què deu fer aquesta?,SAY.Dialog:Lift200.1.{$NewName},I shouldn't touch the Machines... but what does it do?,"",2025-08-21T22:17:44.528Z
+5,E3_100_localization,The Foal attempts to walk back to the Mine 1F.,No tinc ganes de tornar.,SAY.Dialog:I don't want to go back yet.1.{$NewName},"Nah, I don't want to go back yet.","",2025-08-21T22:17:44.528Z
+6,E3_100_localization,Butte's Log (Journal Entry),"Pere Roca\nIndústries Roca\nMina de Carbó\n(Fund. 1867)\n\nEn cas de pèrdua, tornar a\nEsmasses 455\nMina Roca #2",WRITE.Dialog:LogLocalizer.1,"Hugh G. Butte\nButte Industry\nCoal Mines\n(Est. 1867)\n\nIf found, please return to\n455 Esmasses,\nButte Mines #2","",2025-08-21T22:17:44.528Z
+7,E3_100_localization,Butte's Log (Journal Entry),"27 de juny\nSón dies difícils per a la Mina. Avui he hagut d'acomiadar més treballadors i se'ns acaben els fons. Madame Paner m'ha fet una altra oferta per comprar-me els rucs, però soc incapaç de desfer-me'n. Els rucs són l'únic que em queda!\n\nTothom està obsessionat per l'Energia Verda avui en dia. Ningú vol sentir parlar de carbó.\n\n28 de juny\nEncara que tingués més diners, no podria contractar ningú. Tot el jovent se n'ha anat a Tecnolona a treballar amb millors condicions a la Fàbrica de Madame Paner. S'acosta un altre hivern difícil.",WRITE.Dialog:LogLocalizer.2,"June 27th\nThese are dire times for the mining business. I had to lay off more workers today and we're running out of money. Mme. Derriere made another offer to buy my donkeys, but I just can't bring myself to sell them. The only thing I can depend on are my donkeys!\n\nEverybody is crazy for Green Energy these days. Nobody cares for coal anymore.\n\nJune 28th\nEven if I had more money, there's no one to hire. All the youth are leaving for Mecha City to find better paid work at Mme. Derriere's Factory. It's going to be another difficult winter.","",2025-08-21T22:17:44.528Z
+8,E3_100_localization,Butte's Log (Journal Entry),"3 de juliol\nGairebé no podem fer front a les despeses. Avui també ens han tombat la subvenció estatal. Ni tan sols ens han dit per què! Si els fem nosa, no sé per què el Govern no actua humanitàriament i ens exigeix que tanquem.\n\n13 de juliol\nLa Jennifer diu que hauríem de transformar la Mina en una atracció turística. Quan la nova autopista estigui acabada, la gent podria venir de la ciutat a passar-hi el dia.\nPotser no és tan mala idea? Però és desoladora.",WRITE.Dialog:LogLocalizer.3,"July 3rd\nWe can barely afford new equipment. Our government grant was rejected today too. They're not even offering feedback! If they don't want us around, I don't know why the government doesn't just do the humane thing and order us to close down.\n\nJuly 13th\nJenny joked that we should turn the Mine into a tourist attraction. Once the new highway is finished more people from the city could come and make a day of it.\n\nMaybe she has a point? But it would break my heart.","",2025-08-21T22:17:44.528Z
+9,E3_100_localization,Butte's Log (Journal Entry),"15 de juliol\n\nFACTURA\nEBZ75 Màquina Tuneladora — 52.000 €\n\nHe Bei Zhong Xuan Construction Machinery Co., Ltd.\nRoom.2809, Building2, East international Plaza, No.98\nThe Yellow river Rd, Hi-Tech Zone\nShijiazhuang, Hebei, China",WRITE.Dialog:LogLocalizer.4,"July 15th\n\nINVOICE\nEBZ75 Tunnel Boring Machine — $56,000 USD\n\nHe Bei Zhong Xuan Construction Machinery Co., Ltd.\nRoom.2809, Building2, East international Plaza, No.98\nThe Yellow river Rd, Hi-Tech Zone\nShijiazhuang, Hebei, China","",2025-08-21T22:17:44.528Z
+10,E3_100_localization,Butte's Log (Journal Entry),17 d'agost\nEl Banc de la Ciutat m'ha aprovat el préstec i he adquirit immediatament maquinària nova de trinca. Això comença a millorar!\n\nEixamplaré els túnels i hi posaré raïls. Tot seguit em vendré els rucs i compraré vagonetes.\n\nAquesta nit encetaré l'ampolla de vi que em guardava per un dia com avui!\n\nPer fi podré recuperar la Gemma. Potser per fi tornarà a respectar-me i tornarà a casa.,WRITE.Dialog:LogLocalizer.6,"August 17th\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\n\nI'm going to widen the tunnels and put tracks down. Then I'll sell my donkeys and buy mine carts.\n\nTonight, I'm going to celebrate with that bottle of wine I've been saving for an occasion just like this!\n\nI'm finally ready to win Sandy back. Maybe now she will respect me, and come home again.","",2025-08-21T22:17:44.528Z
+11,E3_100_localization,Butte's Log (Journal Entry),17 d'agost\nEl Banc de la Ciutat m'ha aprovat el préstec i he adquirit immediatament maquinària nova de trinca. Això comença a millorar!\n\nEixamplaré els túnels i hi posaré raïls. Tot seguit em vendré els rucs i compraré vagonetes.\n\nAquesta nit encetaré l'ampolla de vi que em guardava per un dia com avui!\n\nPer fi podré recuperar la Gemma. Potser ara em mereixo el seu respecte i decideix tornar a casa.,WRITE.Dialog:LogLocalizer.5,"August 17th\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\n\nI'm going to widen the tunnels and put tracks down. Then I'll sell my donkeys and buy mine carts.\n\nTonight, I'm going to celebrate with that bottle of wine I've been saving for an occasion just like this!\n\nI'm finally ready to win Sandy back. Maybe now she will respect me, and come home again.","",2025-08-21T22:17:44.528Z
+12,E3_100_localization,Fannyside Times (Newspaper Entry),DIARI DE TALLDEVALL,WRITE.Dialog:Localizer.1,FANNYSIDE TIMES,"",2025-08-21T22:17:44.528Z
+13,E3_100_localization,Fannyside Times (Newspaper Entry),Un terrible accident amb una Màquina Tuneladora enfonsa el Senyor Roca,WRITE.Dialog:Localizer.2,Boring Machine Blunder Begets Backlash for Big Boss Butte,"",2025-08-21T22:17:44.528Z
+14,E3_100_localization,Fannyside Times (Newspaper Entry),"El poble encara es recupera de la tragèdia de dimarts passat a la Mina Roca. Després de múltiples intents fallits de rescat, el catastròfic esfondrament provocat per una Màquina Tuneladora va provocar la mort de Jofre Roca (21 anys), un treballador local de la mina, nen prodigi de la robòtica, i únic fill de l'Amo de la Mina, Enric Roca. Tres miners van poder ser evacuats amb helicòpter i traslladats a l'Hospital General Edèn, ferits de molta gravetat. Un ruc va morir, atrapat a l'esfondrament. El cos del jove Roca no s'ha pogut localitzar.",WRITE.Dialog:Localizer.3,"The town is still reeling from the tragedy at Butte Mines on Thursday. After several failed rescue operations, a catastrophic cave-in caused by a Boring Machine claimed the life of Cole Butte (21), a local mine worker, robotics wunderkind, and the darling son of the Mine Boss, Hugh G. Butte. Three miners were air-lifted to the nearby Eden General Hospital with life threatening injuries. One donkey died and remains stuck in the cave. Cole's body was never found.","",2025-08-21T22:17:44.528Z
+15,E3_100_localization,Fannyside Times (Newspaper Entry),Una entrevista amb un extreballador revela que l'empresa era conscient dels riscos estructurals d'excavar en aquell tram de la mina. La cerca del benefici va fer que l'empresa ignorés els avisos i engegués la nova maquinària sense adoptar les precaucions adequades. Però el que ara ens hem de preguntar és: ¿el Senyor Roca ha tocat fons?\n\nContinua a la pàgina 14.,WRITE.Dialog:Localizer.4,"An interview with a former worker reveals the company knew about the compounding danger of digging in that section of the mine, but the pursuits of profits pushed the company to ignore early warnings and take shortcuts with their new machinery. But one has to ask, has Boss Butte finally hit rock bottom?\n\nThis story is continued on Page 14.","",2025-08-21T22:17:44.528Z
+16,E3_100_localization,Fannyside Times (Newspaper Entry),"""TANT DE BO EL MEU ART FACI LA GENT FELIÇ""",WRITE.Dialog:Localizer.5,"""I HOPE MY ART MAKES PEOPLE HAPPY""","",2025-08-21T22:17:44.528Z
+17,E3_100_localization,Fannyside Times (Newspaper Entry),El jove artista Joanet Kulan conquereix el cor del jurat i guanya el concurs regional de dibuix per a menors de 12 anys de Viladeculs. La seva obra estarà exposada al Museu de Tecnolona fins a finals de mes. La seva Àvia n'està molt orgullosa.,WRITE.Dialog:Localizer.6,Child artist Joey Kulan charms the pants off the judges and wins the Bumpkin regional drawing competition for youth 12 and under. His work will be on display at the Mecha City Gallery until the end of the month. His Grandmother is so proud.,"",2025-08-21T22:17:44.528Z
+18,E3_100_localization,Fannyside Times (Newspaper Entry),LA TEVA BELLESA\nÉS LA NOSTRA EMPRESA,WRITE.Dialog:Localizer.7,YOUR BEAUTY\nIS OUR DUTY,"",2025-08-21T22:17:44.528Z
+19,E3_100_localization,Fannyside Times (Newspaper Entry),ASPIRA A MÉS,WRITE.Dialog:Localizer.11,ASPIRE TO MORE,"",2025-08-21T22:17:44.528Z
+20,E3_100_localization,"Fannyside Times (Newspaper Entry)
+Cirus Advertisement",Reserveu ARA el vostre Descompte Familiar!,WRITE.Dialog:Localizer.8,Family discounts  available NOW!,"",2025-08-21T22:17:44.528Z
+21,E3_100_localization,Fannyside Times (Newspaper Entry),OFERTES DE FEINA,WRITE.Dialog:Localizer.9,JOB POSTINGS,"",2025-08-21T22:17:44.528Z
+22,E3_100_localization,Fannyside Times (Newspaper Entry),Feina per a tothom amb Paner!,WRITE.Dialog:Localizer.12,Jobs for everyone at Derriere's!,"",2025-08-21T22:17:44.528Z
+23,E3_100_localization,Fannyside Times (Newspaper Entry),***BUSQUEM CONDUCTORS***\nDe confiança i amb bona orientació\nDiscreció\nDisponible cap de setmana\nPoder aixecar més de 20kgs\nFacilitat per tractar amb animals,WRITE.Dialog:Localizer.10,***DRIVERS NEEDED***\nReliable and good sense of direction\nCan be discrete\nCan work weekends\nCan lift 50+ lbs\nComfortable with animals,"",2025-08-21T22:17:44.528Z
+24,E3_100_localization,The Foal says this after closing the newpaper.,M'avorreeeeeeeeeeeixo!,SAY.Dialog:Boring.1.{$NewName},Booooorrrrrring!,"",2025-08-21T22:17:44.528Z
+25,E3_100_localization,The floor collapses and the Foal falls through to Lazy's Grave.,AH!,SAY.Dialog:Boring.6.{$NewName},AH!,"",2025-08-21T22:17:44.528Z
+3,E3_LazysGrave_localization,The Foal finds herself in a new area of the Mine. A mysterious voice calls out.,Ei.,SAY.Dialog:MeetingLazy.1.???,Hi.,"",2025-08-21T22:17:44.528Z
+4,E3_LazysGrave_localization,"",Qui hi ha aquí?,SAY.Dialog:MeetingLazy.30.{$NewName},Who's there?,"",2025-08-21T22:17:44.528Z
+5,E3_LazysGrave_localization,"",Soc la Perase.,SAY.Dialog:MeetingLazy.32.Lazy Ass,I'm Lazy.,"",2025-08-21T22:17:44.528Z
+6,E3_LazysGrave_localization,"",PERASE?! He sentit a parlar tant de tu!\n,SAY.Dialog:MeetingLazy.33.{$NewName},LAZY?! I've heard so much about you!\n,"",2025-08-21T22:17:44.528Z
+7,E3_LazysGrave_localization,"",Soc la teva... espera...,SAY.Dialog:MeetingLazy.55.{$NewName},I’m your... wait...,"",2025-08-21T22:17:44.528Z
+8,E3_LazysGrave_localization,"",No ets...?,SAY.Dialog:MeetingLazy.56.{$NewName},Aren't you...,"",2025-08-21T22:17:44.528Z
+9,E3_LazysGrave_localization,"",No soc de menjar-me l'olla.,SAY.Dialog:MeetingLazy.36.Lazy Ass,Just hanging out.,"",2025-08-21T22:17:44.528Z
+10,E3_LazysGrave_localization,"",Fes una volta si vols. Pren-t'ho amb calma.,SAY.Dialog:MeetingLazy.57.Lazy Ass,Look around if you want. Knock yourself out.,"",2025-08-21T22:17:44.528Z
+11,E3_LazysGrave_localization,"",Espera!,SAY.Dialog:MeetingLazy.35.{$NewName},Wait up!,"",2025-08-21T22:17:44.528Z
+12,E3_LazysGrave_localization,Lazy floats away and the Foal chases after her.,Soc la teva germana!,SAY.Dialog:MeetingLazy.58.{$NewName},I’m your sister!,"",2025-08-21T22:17:44.528Z
+13,E3_LazysGrave_localization,The Foal comes across a pile of bones.,Això són...ossos?,SAY.Dialog:ExamineBones.1.{$NewName},Are these... bones?,"",2025-08-21T22:17:44.528Z
+14,E3_LazysGrave_localization,Lazy floats back into frame.,"Ah, has trobat la roca que em va esclafar el cap.",SAY.Dialog:ExamineBones.30.Lazy Ass,Oh you've found the rock that crushed my head.,"",2025-08-21T22:17:44.528Z
+15,E3_LazysGrave_localization,"",Guau. Et va fer mal?,SAY.Dialog:ExamineBones.38.{$NewName},Woah. Did it hurt?,"",2025-08-21T22:17:44.528Z
+16,E3_LazysGrave_localization,"",Suposo. No recordo gaires coses d'abans.,SAY.Dialog:ExamineBones.53.Lazy Ass,I guess so. Don't really remember much from before that.,"",2025-08-21T22:17:44.528Z
+17,E3_LazysGrave_localization,"",¿Per què la teva Ànima no va anar al Pla Astral?,SAY.Dialog:ExamineBones.51.{$NewName},Why didn't your Ass Soul go to the Astral Plane?,"",2025-08-21T22:17:44.528Z
+18,E3_LazysGrave_localization,"",La Camarada Mare diu que és on anem quan morim.,SAY.Dialog:ExamineBones.88.{$NewName},Comrade Mother told me that's where we all go when we die.,"",2025-08-21T22:17:44.528Z
+19,E3_LazysGrave_localization,"",No hi havia cap Ase a prop per cantar per mi. Només el fill de l'Amo.,SAY.Dialog:ExamineBones.77.Lazy Ass,There was no Ass around to sing for me. There was only the Boss's son.,"",2025-08-21T22:17:44.528Z
+20,E3_LazysGrave_localization,"",Crec que vaig intentar ascendir tota sola... però es veu que no me'n vaig sortir.,SAY.Dialog:ExamineBones.52.Lazy Ass,I think I tried to ascend myself... but I guess that failed.,"",2025-08-21T22:17:44.528Z
+21,E3_LazysGrave_localization,"",Et podria cantar la Cançó de l'Ascensió ara!,SAY.Dialog:ExamineBones.87.{$NewName},I could try to sing the Song of Ascension for you now!,"",2025-08-21T22:17:44.528Z
+22,E3_LazysGrave_localization,"","Bah, massa tard.",SAY.Dialog:ExamineBones.44.Lazy Ass,"Nah, it's too late.","",2025-08-21T22:17:44.528Z
+23,E3_LazysGrave_localization,"",Però ei! La bona notícia és que aquí no hi ha feina!,SAY.Dialog:ExamineBones.43.Lazy Ass,But hey! Good news is: there's no work here.,"",2025-08-21T22:17:44.528Z
+24,E3_LazysGrave_localization,"",Clar que la mala notícia és que tampoc hi ha sortida.,SAY.Dialog:ExamineBones.42.Lazy Ass,"Of course, bad news is there's also no way out.","",2025-08-21T22:17:44.528Z
+25,E3_LazysGrave_localization,"",No hi ha sortida?! Jo no vull morir aquí!,SAY.Dialog:ExamineBones.41.{$NewName},There's no way out?! I don't want to die alone!,"",2025-08-21T22:17:44.528Z
+26,E3_LazysGrave_localization,Lazy floats away again.,"Tu posa't còmode. ""L'avorriment és la nova llibertat"", saps què vull dir?",SAY.Dialog:ExamineBones.57.Lazy Ass,"Just get comfortable. ""Boredom is Freedom"", ya know?","",2025-08-21T22:17:44.528Z
+27,E3_LazysGrave_localization,The Foal chases after her.,"Ei, espera! Torna!!",SAY.Dialog:ExamineBones.82.{$NewName},Wha-wait! Come back!!,"",2025-08-21T22:17:44.528Z
+28,E3_LazysGrave_localization,The Foal finds a hard helmet on a rock.,"Ei, et queda genial.",SAY.Dialog:Hat.1.Lazy Ass,"Hey, nice look.","",2025-08-21T22:17:44.528Z
+29,E3_LazysGrave_localization,"Lazy floats by and says this before flying off again.
+The Foal can now headbutt and break rocks.","Saps què vull dir, si hagués portat aquest casc, potser hauria esclatat la roca en comptes del meu cap.",SAY.Dialog:Hat.30.Lazy Ass,"Ya know, if I had worn that helmet, maybe the rock would've exploded instead of my skull.","",2025-08-21T22:17:44.528Z
+30,E3_LazysGrave_localization,"The Foal breaks the boulder to the exit of Lazy's Grave.
+Lazy's floats into frame.",Ei! Has trobat una sortida. Que guai.,SAY.Dialog:Leaving.1.Lazy Ass,Hey! You found a way out. Cool.,"",2025-08-21T22:17:44.528Z
+31,E3_LazysGrave_localization,"",T'aviso que no em recordaré de tu si tornes algun dia.,SAY.Dialog:Leaving.82.Lazy Ass,"Heads up, I won't remember you, if you come back.","",2025-08-21T22:17:44.528Z
+32,E3_LazysGrave_localization,"",La meva memòria ja no és el que era.,SAY.Dialog:Leaving.81.Lazy Ass,My memory doesn't store stuff like it used to.,"",2025-08-21T22:17:44.528Z
+33,E3_LazysGrave_localization,"",Ja ni recordo com et dius.,SAY.Dialog:Leaving.80.Lazy Ass,I don't even remember your name.,"",2025-08-21T22:17:44.528Z
+34,E3_LazysGrave_localization,"To dialogue options (line 35, 38, or 41)",Hem passat una bona estona juntes?,SAY.Dialog:Leaving.84.Lazy Ass,Did we have a good time hanging out?,"",2025-08-21T22:17:44.528Z
+35,E3_LazysGrave_localization,Dialogue 1.1.,"M'ha encantat conèixe't per fi, germana.",MENU.Dialog:Leaving.37,"It was really nice to finally meet you, sister.","",2025-08-21T22:17:44.528Z
+36,E3_LazysGrave_localization,"","M'ha encantat conèixe't per fi, germana.",SAY.Dialog:Leaving.91.{$NewName},"It was really nice to finally meet you, sister.","",2025-08-21T22:17:44.528Z
+37,E3_LazysGrave_localization,Lazy Ass floats away.,"Germana? Haha, segur. Pau i amor.",SAY.Dialog:Leaving.94.Lazy Ass,"Sister? Ha, sure. Peace out.","",2025-08-21T22:17:44.528Z
+38,E3_LazysGrave_localization,Dialogue 1.2.,"Què vols dir amb ""L'avorriment és la nova llibertat""?",MENU.Dialog:Leaving.39,"What do you mean ""Boredom is Freedom""?","",2025-08-21T22:17:44.528Z
+39,E3_LazysGrave_localization,"","Què vols dir amb ""L'avorriment és la nova llibertat""?",SAY.Dialog:Leaving.96.{$NewName},"What do you mean "" Boredom is Freedom""?","",2025-08-21T22:17:44.528Z
+40,E3_LazysGrave_localization,Lazy Ass floats away.,Jo què sé. Ho vaig veure un cop en un cartell.,SAY.Dialog:Leaving.92.Lazy Ass,I dunno. I saw it on a sign once.,"",2025-08-21T22:17:44.528Z
+41,E3_LazysGrave_localization,Dialogue 1.3.,No. Han estat {$Number} segons de la meva vida que no recuperaré mai.,MENU.Dialog:Leaving.38,No. It was {$Number} seconds of my life I'll never get back.,"",2025-08-21T22:17:44.528Z
+42,E3_LazysGrave_localization,"",No. Han estat {$Number} segons de la meva vida que no recuperaré mai.,SAY.Dialog:Leaving.95.{$NewName},No. It was {$Number} seconds of my life I'll never get back.,"",2025-08-21T22:17:44.528Z
+43,E3_LazysGrave_localization,Lazy Ass floats away.,Això ha estat dur.,SAY.Dialog:Leaving.93.Lazy Ass,That's cold.,"",2025-08-21T22:17:44.528Z
+44,E3_LazysGrave_localization,Repeater line.,"Ei, soc la Perase! Quin barret més guai.",SAY.Dialog:LazyRepeater.1.Lazy Ass,"Hi, I'm Lazy! Cool hat.","",2025-08-21T22:17:44.528Z
+45,E3_LazysGrave_localization,"","Gràcies, petita.",SAY.SecretThing.9.Lazy Ass,Thank you little one.,"",2025-08-21T22:17:44.528Z
+46,E3_LazysGrave_localization,"",El meu estimat Tristase...,SAY.SecretThing.8.Lazy Ass,My dear Sad Ass...,"",2025-08-21T22:17:44.528Z
+47,E3_LazysGrave_localization,"",Ara em torna tot.,SAY.SecretThing.7.Lazy Ass,It's all coming back to me now.,"",2025-08-21T22:17:44.528Z
+48,E3_LazysGrave_localization,"",Però aquesta olor... em recorda a ell.,SAY.SecretThing.6.Lazy Ass,But that smell... it reminds me of him.,"",2025-08-21T22:17:44.528Z
+49,E3_LazysGrave_localization,"","Saps, la meva memòria no va gaire bé.",SAY.SecretThing.3.Lazy Ass,"You see, my memory hasn't been working very well.","",2025-08-21T22:17:44.528Z
+50,E3_LazysGrave_localization,"",Crec que he estat buscant això molt de temps.,SAY.SecretThing.2.Lazy Ass,I think I've been looking for that for a long time.,"",2025-08-21T22:17:44.528Z
+51,E3_LazysGrave_localization,"","Si et dic la veritat, ja ni recordo com et dius.",SAY.SecretThing.14.Lazy Ass,"To be honest, I don't even remember  your name.","",2025-08-21T22:17:44.528Z
+3,E3_200_localization,Butte's Log (Journal Entry),"15 de maig\nEstic anant a les reunions d'Alcohòlics Anònims. M'estan ajudant molt. Saps?, va molt bé estar acompanyat, que et donin consells. Crec que ho necessitava.\n\n27 de maig\nPorto una setmana sencera sobri. Puc prescindir de la cervesa, però una copa de vi un cop a la setmana no m'hauria de fer cap mal, no?\n\nAvui m'he venut el ruc depressiu a la Granja de Talldevall. Des que la seva companya va morir a l'ensorrament no val per a res.",WRITE.Dialog:LogLocalizer.1,"May 15th\nI've started attending an AA group. They're helping me. It's really nice to have a lot of people behind you, giving you advice, you know? I think I've needed this.\n\nMay 27th\nA whole week sober. I think I can give up beer, but a little bit of wine once a week shouldn't hurt, right?\n\nToday I sold my depressed donkey to Fannyside Farm. It's been useless ever since its mate died in the cave in.","",2025-08-21T22:17:44.528Z
+4,E3_200_localization,Butte's Log (Journal Entry),"24 de juliol\nLa Mina Roca està oficialment en venda. Tant de bo algú de Tecnolona s'animi a comprar-la. Jo que sempre havia pensat que en Jofre m'agafaria el relleu...\n\nD'alguna manera la Mina ha de sobreviure, però no és fàcil deixar anar el que t'estimes.",WRITE.Dialog:LogLocalizer.2,"July 24th\nButte Mine is officially for sale. I'm praying that someone from Mecha City will step up and buy it. I always imagined that Cole would take my place, but...\n\nThis place has to survive, somehow, but it's hard to let go of what you love.","",2025-08-21T22:17:44.528Z
+5,E3_200_localization,This dialogue is said as the Foal looks at a picture of the Mine Asses.,Que seriosos que estan tots.,SAY.Dialog:FamilyPhoto.1.{$NewName},Everyone looks so serious.,"",2025-08-21T22:17:44.528Z
+6,E3_200_localization,The Foal headbutts and turns the Boring Machine on.,Que guai!,SAY.Dialog:StartMachine.3.{$NewName},Cool!,"",2025-08-21T22:17:44.528Z
+7,E3_200_localization,The Boring Machine starts moving and drilling through walls.,Oh oh!,SAY.Dialog:StartMachine.5.{$NewName},Uh oh!,"",2025-08-21T22:17:44.528Z
+3,E3_300_localization,Butte's Log (Journal Entry),9 d'agost\nTotes les operacions de la Mina estan encallades.\n\nI la sequera comença a fer estralls.\n\nEls meus últims treballadors s'estan amotinant. Saben que no els puc pagar.\n\nNingú vol comprar la Mina.\n\nNingú m'ajuda. Estic sol.\n\nJa ningú necessita carbó... ¿Pot ser que algú em vulgui comprar els rucs?,WRITE.Dialog:LogLocalizer.1,August 9th\nThe whole mining operation is stalled.\n\nAnd the drought is starting to take a toll on all of us.\n\nThe last of my workers are revolting against me. They know I can't pay them.\n\nThere are no buyers for the Mine.\n\nHelp is not coming. I'm all alone.\n\nNo one has any use for coal anymore... Maybe someone out there will buy my donkeys?,"",2025-08-21T22:17:44.528Z
+4,E3_300_localization,The Foal spots the Elevator from across a chasm.,Ei! Això sembla una drecera!,SAY.Dialog:ElevatorSpotted.2.{$NewName},Hey! That looks like a shortcut!,"",2025-08-21T22:17:44.528Z
+5,E3_300_localization,The Foal stands in front of the Elevator and considers using it.,"Bé, les altres dues Màquines no m'han fet res...",SAY.Dialog:CantBeThatBad.2.{$NewName},Well the other two Machines weren't that bad...,"",2025-08-21T22:17:44.528Z
+6,E3_300_localization,"Dialogue option 1.1.
+If the Foal uses the Elevator to get to the bottom of the Mine.
+The Foal can now go through the entrance to the Bad Cave at the bottom of the Mine.","Buàh, quina passada!",SAY.Dialog:ThatWasFun.1.{$NewName},That was fun!,"",2025-08-21T22:17:44.528Z
+7,E3_300_localization,"Dialogue option 1.2.
+If the Foal does NOT use the Elevator to get to the bottom of the Mine.
+The Foal can now go through the entrance to the Bad Cave at the bottom of the Mine.",En fi... Aniré pel camí llarg!,SAY.Dialog:LongWay.3.{$NewName},Oh well. I'll just take the long way!,"",2025-08-21T22:17:44.528Z
+3,E3_DonkeyBas_localization,Title screen text.,IBM\nPersonal Computer,WRITE.Dialog:Localizer.1,IBM\nPersonal Computer,"",2025-08-21T22:17:44.528Z
+4,E3_DonkeyBas_localization,"",BURRO\nVersió 1.10,WRITE.Dialog:Localizer.4,DONKEY\nVersion 1.10,"",2025-08-21T22:17:44.528Z
+5,E3_DonkeyBas_localization,"","(C) Copyright IBM Corp 1981, 1982",WRITE.Dialog:Localizer.3,"(C) Copyright IBM Corp 1981, 1982","",2025-08-21T22:17:44.528Z
+6,E3_DonkeyBas_localization,"",Prem X per continuar,WRITE.Dialog:Localizer.2,Press X to continue,"",2025-08-21T22:17:44.528Z
+7,E3_DonkeyBas_localization,User Interface (UI) text during gameplay.,Conductor:,WRITE.Dialog:Localizer.7,Driver:,"",2025-08-21T22:17:44.528Z
+8,E3_DonkeyBas_localization,"",Burro:,WRITE.Dialog:Localizer.8,Donkey:,"",2025-08-21T22:17:44.528Z
+9,E3_DonkeyBas_localization,"",Has guanyat!,WRITE.Dialog:Localizer.9,You Win!,"",2025-08-21T22:17:44.528Z
+10,E3_DonkeyBas_localization,"",Has guanyat!,WRITE.Dialog:Localizer.16,You Win!,"",2025-08-21T22:17:44.528Z
+11,E3_DonkeyBas_localization,"",El Conductor ha guanyat!\n\nT'odio!,WRITE.Dialog:Localizer.15,Driver wins!\n\nI hate you!,"",2025-08-21T22:17:44.528Z
+12,E3_DonkeyBas_localization,"",Has guanyat!,WRITE.Dialog:Localizer.14,You Win!,"",2025-08-21T22:17:44.528Z
+13,E3_DonkeyBas_localization,"",Has guanyat!,WRITE.Dialog:Localizer.13,You Win!,"",2025-08-21T22:17:44.528Z
+14,E3_DonkeyBas_localization,"",El Burro ha perdut!,WRITE.Dialog:Localizer.12,Donkey loses!,"",2025-08-21T22:17:44.528Z
+15,E3_DonkeyBas_localization,"",BUM!,WRITE.Dialog:Localizer.11,BOOM!,"",2025-08-21T22:17:44.528Z
+16,E3_DonkeyBas_localization,"",Prem QUADRAT\nper canviar de carril,WRITE.Dialog:Localizer.10,Press SQUARE\nto switch lanes,"",2025-08-21T22:17:44.528Z
+17,E3_DonkeyBas_localization,This is said at the beginning of gameplay of DonkeyBas.,Esquiva 5 Ramats de burros per guanyar.,SAY.Dialog:Don't hit the donkeys.3.Bad Ass,You have to avoid 5 Herds of donkeys to win.,"",2025-08-21T22:17:44.528Z
+18,E3_DonkeyBas_localization,This dialogue is said if the Player is doing well.,Te'n surts prou bé per ser el primer cop.,SAY.Dialog:Commentary.1.Bad Ass,You're pretty good with the controls for a first timer.,"",2025-08-21T22:17:44.528Z
+19,E3_DonkeyBas_localization,"Player WINS DonkeyBas. 
+Fade out of DonkeyBas and back into Bad Cave.","Molt bé, ara em toca a mi.",SAY.Dialog:Ten Donkeys.1.Bad Ass,"All right, it's my turn now.","",2025-08-21T22:17:44.528Z
+20,E3_DonkeyBas_localization,This dialogue is said if the Player is doing poorly.,He dit que NO atropellis els burros.,SAY.Dialog:Don't hit the donkeys.1.Bad Ass,"I said, DON'T hit the donkeys.","",2025-08-21T22:17:44.528Z
+21,E3_DonkeyBas_localization,Player LOSES DonkeyBas.,Ho vols deixar estar?,SAY.Dialog:Give up.1.Bad Ass,Are you going to quit?,"",2025-08-21T22:17:44.528Z
+22,E3_DonkeyBas_localization,"Dialogue option 1.1.
+Fade out of DonkeyBas and back into Bad Cave.",Sí,MENU.Dialog:Give up.2,Yes,"",2025-08-21T22:17:44.528Z
+23,E3_DonkeyBas_localization,"Dialogue option 1.2.
+Player continues to play DonkeyBas.",No,MENU.Dialog:Give up.3,No,"",2025-08-21T22:17:44.528Z
+3,E3_BadCave_localization,Dialogue option 1.1.,Qui hi ha aquí? No t'amaguis!,MENU.Dialog:PreDonkeyBas.13,Who's there? Quit hiding!,"",2025-08-21T22:17:44.528Z
+4,E3_BadCave_localization,Go to line 7,Qui hi ha aquí? No t'amaguis!,SAY.Dialog:PreDonkeyBas.126.{$NewName},Who's there? Quit hiding!,"",2025-08-21T22:17:44.528Z
+5,E3_BadCave_localization,Dialogue option 1.2.,Perase? Ets tu?,MENU.Dialog:PreDonkeyBas.23,Lazy? Is that you?,"",2025-08-21T22:17:44.528Z
+6,E3_BadCave_localization,Go to line 7,Perase? Ets tu?,SAY.Dialog:PreDonkeyBas.127.{$NewName},Lazy? Is that you?,"",2025-08-21T22:17:44.528Z
+7,E3_BadCave_localization,The camera moves to reveal the mysterious voice. It's Bad Ass.,Merda. Fot el camp!,SAY.Dialog:PreDonkeyBas.25.???,Fuck. Go away!,"",2025-08-21T22:17:44.528Z
+8,E3_BadCave_localization,"","Deixa'm sol, criatura. No vull haver de discutir amb ta Mare.",SAY.Dialog:PreDonkeyBas.123.Bad Ass,"Leave me alone, kid. I don't want to have to deal with your Mother.","",2025-08-21T22:17:44.528Z
+9,E3_BadCave_localization,"",Oncle Rudase?!,SAY.Dialog:PreDonkeyBas.26.{$NewName},Uncle Bad Ass?!,"",2025-08-21T22:17:44.528Z
+10,E3_BadCave_localization,"",Eres aquí?,SAY.Dialog:PreDonkeyBas.28.{$NewName},Is this where you've been?,"",2025-08-21T22:17:44.528Z
+11,E3_BadCave_localization,"","Un moment, ¿què són totes aquestes Màquines?",SAY.Dialog:PreDonkeyBas.27.{$NewName},"Wait, what are all these Machines?","",2025-08-21T22:17:44.528Z
+12,E3_BadCave_localization,"",UN MOMENT!,SAY.Dialog:PreDonkeyBas.83.{$NewName},WAIT!!,"",2025-08-21T22:17:44.528Z
+13,E3_BadCave_localization,"",T'ESTÀS CREMANT?,SAY.Dialog:PreDonkeyBas.84.{$NewName},ARE YOU ON FIRE?,"",2025-08-21T22:17:44.528Z
+14,E3_BadCave_localization,"",...,SAY.Dialog:PreDonkeyBas.20.Bad Ass,...,"",2025-08-21T22:17:44.528Z
+15,E3_BadCave_localization,"",...aquestes Màquines es diuen Ordinadors.,SAY.Dialog:PreDonkeyBas.85.Bad Ass,...these Machines are called Computers.,"",2025-08-21T22:17:44.528Z
+16,E3_BadCave_localization,"",D'on han sortit?,SAY.Dialog:PreDonkeyBas.30.{$NewName},Where did they come from?,"",2025-08-21T22:17:44.528Z
+17,E3_BadCave_localization,"",Els vaig treure de les runes de les cases dels Humans.,SAY.Dialog:PreDonkeyBas.31.Bad Ass,I took them from the rubble of the Humans' houses.,"",2025-08-21T22:17:44.528Z
+18,E3_BadCave_localization,"","La majoria no funcionen, però n'he reparat un. Els altres em serveixen per tenir peces de recanvi.",SAY.Dialog:PreDonkeyBas.86.Bad Ass,"Most are broken, but I rebuilt this one. I'm using the rest for spare parts.","",2025-08-21T22:17:44.528Z
+19,E3_BadCave_localization,"",La Camarada Mare sempre diu que les Màquines són malvades...,SAY.Dialog:PreDonkeyBas.33.{$NewName},Comrade Mother always says Machines are evil...,"",2025-08-21T22:17:44.528Z
+20,E3_BadCave_localization,"",Però jo no n'estic tan segur.,SAY.Dialog:PreDonkeyBas.87.{$NewName},But I'm not so sure.,"",2025-08-21T22:17:44.528Z
+21,E3_BadCave_localization,"",No comencis amb el discurs maquinofòbic de la Camarada Mare.,SAY.Dialog:PreDonkeyBas.88.Bad Ass,Don't give me that anti-Machine Comrade Mother-bullshit.,"",2025-08-21T22:17:44.528Z
+22,E3_BadCave_localization,"",Les Màquines no són malvades si saps com utilitzar-les.,SAY.Dialog:PreDonkeyBas.42.Bad Ass,Machines aren't evil if you know how to use them.,"",2025-08-21T22:17:44.528Z
+23,E3_BadCave_localization,"",Guau...,SAY.Dialog:PreDonkeyBas.41.{$NewName},Woah...,"",2025-08-21T22:17:44.528Z
+24,E3_BadCave_localization,"",¿I què poden fer els Ordinadors... si saps com utilitzar-los?,SAY.Dialog:PreDonkeyBas.57.{$NewName},"So what can Computers do, if you... know how to use them?","",2025-08-21T22:17:44.528Z
+25,E3_BadCave_localization,"","Poden servir per moltes coses: poder, plaer, vigilància, control.",SAY.Dialog:PreDonkeyBas.58.Bad Ass,"They can be used for a lot of things: power, pleasure, surveillance, control.","",2025-08-21T22:17:44.528Z
+26,E3_BadCave_localization,"",Són lògics i no es deixen endur per les emocions. Poden resoldre qualsevol problema.,SAY.Dialog:PreDonkeyBas.140.Bad Ass,They're logical and they don't get emotional. They can solve anything.,"",2025-08-21T22:17:44.528Z
+27,E3_BadCave_localization,"",Però ara mateix estic jugant—així que deixa'm en pau.,SAY.Dialog:PreDonkeyBas.59.Bad Ass,"But right now, I'm playing games—so leave me alone.","",2025-08-21T22:17:44.528Z
+28,E3_BadCave_localization,"",JUGAR!,SAY.Dialog:PreDonkeyBas.60.{$NewName},GAMES!,"",2025-08-21T22:17:44.528Z
+29,E3_BadCave_localization,"",M'encanta m'encanta M'ENCANTA jugar!,SAY.Dialog:PreDonkeyBas.93.{$NewName},I love love LOVE games!,"",2025-08-21T22:17:44.528Z
+30,E3_BadCave_localization,"",Podem jugar junts?,SAY.Dialog:PreDonkeyBas.61.{$NewName},Can we play together?,"",2025-08-21T22:17:44.528Z
+31,E3_BadCave_localization,"",No.,SAY.Dialog:PreDonkeyBas.62.Bad Ass,No.,"",2025-08-21T22:17:44.528Z
+32,E3_BadCave_localization,"",Aquest joc és per a un sol jugador.,SAY.Dialog:PreDonkeyBas.137.Bad Ass,This is a one player game.,"",2025-08-21T22:17:44.528Z
+33,E3_BadCave_localization,"",Però...,SAY.Dialog:PreDonkeyBas.94.Bad Ass,But...,"",2025-08-21T22:17:44.528Z
+34,E3_BadCave_localization,"",Suposo que tothom té dret a jugar.,SAY.Dialog:PreDonkeyBas.141.Bad Ass,I suppose everyone should have a chance to play.,"",2025-08-21T22:17:44.528Z
+35,E3_BadCave_localization,A screen wipe (transition) happens and we find ourselves playing DonkeyBas.,Només procura no atropellar els burros.,SAY.Dialog:PreDonkeyBas.95.Bad Ass,Just don't hit the donkeys.,"",2025-08-21T22:17:44.528Z
+36,E3_BadCave_localization,"This dialogue happens if the Player won DonkeyBas.
+If the Player loses, pass over this and jump to line 37.",Ets millor del que em pensava.,SAY.Dialog:PostDonkeyBas.7.Bad Ass,You're better than expected.,"",2025-08-21T22:17:44.528Z
+37,E3_BadCave_localization,We are back in the Bad Caves and the Foal and Bad Ass are talking.,Això és MOLT MILLOR QUE JUGAR A ROQUES!,SAY.Dialog:PostDonkeyBas.25.{$NewName},That was WAY BETTER THAN ROCKS!,"",2025-08-21T22:17:44.528Z
+38,E3_BadCave_localization,"",Les Màquines són GENIALS!,SAY.Dialog:PostDonkeyBas.88.{$NewName},Machines are FUN!,"",2025-08-21T22:17:44.528Z
+39,E3_BadCave_localization,"","De fet, aquest joc és de fa mil anys.",SAY.Dialog:PostDonkeyBas.23.Bad Ass,This game is actually really old.,"",2025-08-21T22:17:44.528Z
+40,E3_BadCave_localization,"",Avui en dia n'hi ha de molt millors.,SAY.Dialog:PostDonkeyBas.24.Bad Ass,There are even better ones out there now.,"",2025-08-21T22:17:44.528Z
+41,E3_BadCave_localization,"",A quins altres JOCS PODEM JUGAR?!,SAY.Dialog:PostDonkeyBas.87.{$NewName},What other GAMES CAN WE PLAY?!,"",2025-08-21T22:17:44.528Z
+42,E3_BadCave_localization,"",A cap. S'ha acabat l'hora del pati. M'he de tornar a concentrar en el meu projecte.,SAY.Dialog:PostDonkeyBas.26.Bad Ass,None. Break time is over. I have to get back to my project.,"",2025-08-21T22:17:44.528Z
+43,E3_BadCave_localization,"",¿Per què el Ramat té tanta por de les Màquines?,SAY.Dialog:PostDonkeyBas.38.{$NewName},Why is the Herd afraid of Machines?,"",2025-08-21T22:17:44.528Z
+44,E3_BadCave_localization,"",Perquè el seu intel·lecte està constrenyit per la fidelitat a ideals del passat.,SAY.Dialog:PostDonkeyBas.37.Bad Ass,Because they are intellectually compromised by their commitment to past ideals.,"",2025-08-21T22:17:44.528Z
+45,E3_BadCave_localization,"","Així... ¿És per això que no estàs amb la resta del Ramat, Oncle Rudase?",SAY.Dialog:PostDonkeyBas.92.{$NewName},"So... Is that why you don't spend more time with the Herd, Uncle Bad Ass?","",2025-08-21T22:17:44.528Z
+46,E3_BadCave_localization,"",No m'agraden els Ases.,SAY.Dialog:PostDonkeyBas.90.Bad Ass,I don't like Asses.,"",2025-08-21T22:17:44.528Z
+47,E3_BadCave_localization,"","Bé, jo no soc cap Ase, soc un Pollí!",SAY.Dialog:PostDonkeyBas.36.{$NewName},"Well, I'm not an Ass, I'm a Foal!","",2025-08-21T22:17:44.528Z
+48,E3_BadCave_localization,"",Per ara.,SAY.Dialog:PostDonkeyBas.91.Bad Ass,For now.,"",2025-08-21T22:17:44.528Z
+49,E3_BadCave_localization,"",¿Puc... quedar-me aquí sota amb tu?,SAY.Dialog:PostDonkeyBas.93.{$NewName},Can I... stay down here with you?,"",2025-08-21T22:17:44.528Z
+50,E3_BadCave_localization,End of Episode,... No m'aniria malament un Ajudant.,SAY.Dialog:PostDonkeyBas.35.Bad Ass,... I suppose I could use an Assistant.,"",2025-08-21T22:17:44.528Z

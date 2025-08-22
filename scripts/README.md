@@ -23,24 +23,58 @@ scripts\setup.bat
 
 ## 📊 **Excel Processing**
 
-### **Excel to JSON Conversion**
-- **`excel-to-json.js`** - Converts Excel files to structured JSON format
+### **Excel to JSON/CSV Conversion**
+- **`excel-to-json.js`** - Converts Excel files to both JSON and CSV formats
 
 ### **Usage**
 ```bash
-# Using npm script (recommended)
+# Using npm script (recommended) - processes to both JSON and CSV
 npm run excel-to-json
+npm run excel-to-csv  # Same as above, for clarity
 
 # Direct execution
 node scripts/excel-to-json.js
 ```
 
 ### **Features**
-- Batch processing of all Excel files in `excels/` folder
-- Multi-sheet support with data extraction
-- Structured JSON output with metadata
-- Error handling and comprehensive logging
-- Processing summary with statistics
+- **Dual Output**: Both JSON and CSV formats generated simultaneously
+- **Batch Processing**: All Excel files in `excels/` folder processed
+- **Multi-sheet Support**: Each sheet becomes a section in CSV
+- **CSV Structure**: Headers, proper escaping, sheet separation
+- **Dynamic Consultation**: CSV files served via API for translation assistance
+- **Error Handling**: Comprehensive logging and error recovery
+- **Processing Summary**: Detailed statistics and success rates
+
+### **Output Formats**
+
+#### **JSON Output** (for auto-highlighter)
+```json
+{
+  "fileName": "1_asses.masses_E1Proxy",
+  "sheets": [
+    {
+      "sheetName": "Episode1", 
+      "entries": [
+        {
+          "rowNumber": 2,
+          "utterer": "Big Ass",
+          "context": "Dialogue",
+          "sourceEnglish": "Hello there!",
+          "translatedDutch": "Hallo daar!"
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### **CSV Output** (for dynamic consultation)
+```csv
+# Sheet: Episode1
+Row,Context,Key,English,Dutch,Utterer
+2,Dialogue,"","Hello there!","Hallo daar!","Big Ass"
+3,Dialogue,"","How are you?","Hoe gaat het?","Nice Ass"
+```
 
 ### **Processing Results**
 - **Total Files**: 14 Excel files
@@ -68,8 +102,37 @@ The Excel to JSON script:
 ## 📁 **Output Locations**
 
 - **JSON Files**: `data/json/[filename].json`
+- **CSV Files**: `data/csv/[filename].csv`
 - **Processing Summary**: `data/json/processing-summary.json`
 - **Error Logs**: Console output with detailed information
+
+## 🔌 **API Integration**
+
+### **Dynamic CSV Consultation**
+The CSV files are automatically served via API endpoints for real-time translation assistance:
+
+#### **Load Specific CSV File**
+```bash
+GET /api/csv-data?file=1_asses.masses_E1Proxy.csv&format=json
+```
+
+#### **Search Across Multiple Files**
+```bash
+POST /api/csv-data
+{
+  "files": ["1_asses.masses_E1Proxy.csv", "2_asses.masses_E2Proxy.csv"],
+  "searchTerm": "Big Ass", 
+  "context": "Character",
+  "maxResults": 50
+}
+```
+
+#### **Quick Translation Suggestions**
+The `useCSVConsultation` hook provides:
+- **Real-time suggestions** based on current text
+- **Cross-file searching** across all EPx files
+- **Caching** for improved performance
+- **Translation consultation** for source text matching
 
 ## 🛠️ **Customization**
 

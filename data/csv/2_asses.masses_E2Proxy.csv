@@ -1,0 +1,413 @@
+# File: 2_asses.masses_E2Proxy
+# Processed: 2025-08-21T22:17:44.441Z
+# Sheets: 15
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+2,E2_EpisodeTitle_localization,Title screen UI.,EPISODI DOS,WRITE.Dialog:Localizer.5,EPISODE TWO,AFLEVERING TWEE,2025-08-21T22:17:44.441Z
+3,E2_EpisodeTitle_localization,Title screen UI.,L'INCENDI,WRITE.Dialog:Localizer.7,THE FIRE,DE BRAND,2025-08-21T22:17:44.441Z
+4,E2_EpisodeTitle_localization,Title screen UI.,Prem X per començar,WRITE.Dialog:Localizer.8,Press X to Begin,Druk X om te beginnen,2025-08-21T22:17:44.441Z
+3,E2_World_A1_localization,"Interactable Object, Sign.",Mina de Carbó Roca,SAY.Sign_TheMines_Dirty.1.Dirty Sign,Butte Industry Coal Mines,Vanscheetvelde Industrie en Kolen,2025-08-21T22:17:44.441Z
+4,E2_World_A1_localization,"Interactable Object, Sign.",364 DIES DES DEL DARRER ACCIDENT,SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign,364 DAYS SINCE LAST MINING ACCIDENT,364 DAGEN SINDS LAATSTE INCIDENT,2025-08-21T22:17:44.441Z
+5,E2_World_A1_localization,"Interactable Object, Sign.","Benvinguts a la Granja de Talldevall. A l'oest, el remarcable Estable Històric i els nostres camps de blat.",SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign,"Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.","Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",2025-08-21T22:17:44.441Z
+6,E2_World_A1_localization,"Interactable Object, Sign.","Al sud, el Molí i el Graner d'Última Generació.",SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign,"To the south, our state of the art Mill and Granary.","Naar 't zuiden, onze hoogmoderne Molen en Graanschuur.",2025-08-21T22:17:44.441Z
+7,E2_World_A1_localization,"Interactable Object, Sign.",NOVA Autopista Boncul: Connectant els Nuclis Rurals i la Ciutat,SAY.Sign_Highway_Official.1.Official Sign,NEW Government Sponsored Highway: Connecting Urban and Rural Communities,NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.,2025-08-21T22:17:44.441Z
+8,E2_World_A1_localization,"Interactable Object, Sign.",GR a l'Ermita del Bosc,SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign,The Long Way to the Forest Shrine,De Lange Weg Naar 't Schrijn in 't Bos.,2025-08-21T22:17:44.441Z
+9,E2_World_A1_localization,"Interactable Object, Sign.",TANCAT PER OBRES,SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign,CLOSED FOR REPAIRS,GESLOTEN WEGENS ONDERHOUD,2025-08-21T22:17:44.441Z
+10,E2_World_A1_localization,"Interactable Object, Sign.",Molí i Graner d'Última Generació,SAY.Sign_Mill_Fancy.1.Fancy Sign,The State of the Art Mill and Granary,De hoogmoderne Molen en Graanschuur.,2025-08-21T22:17:44.441Z
+11,E2_World_A1_localization,"Interactable Object, Sign.",La Comuna,SAY.Sign_Outhouse_Shitty.1.Shitty Sign,The Outhouse,De Hudo,2025-08-21T22:17:44.441Z
+12,E2_World_A1_localization,"Interactable Object, Sign.",L'Estable Històric,SAY.Sign_TheStable_Old.1.Old Sign,The Heritage Stable,De Erfgoedshoeve,2025-08-21T22:17:44.441Z
+13,E2_World_A1_localization,"Interactable Object, Sign.",El Pou de Yafur,SAY.Sign_TheWell_Historic.1.Historic Sign,Ya'fur's Well,De Bron van Ya'Fur,2025-08-21T22:17:44.441Z
+15,E2_World_A1_localization,"The camera zooms out from inside the well. 
+We are back at Bumpkin Village with the Herd.
+The Herd has just watched Trusty fall down the well.",CAMARADA!!!!!!!,SAY.Dialog:Opening.2.Slow Ass,COMRADE!!!!!!!,KAMERAAD!!!!,2025-08-21T22:17:44.441Z
+16,E2_World_A1_localization,"",Honradase? Honradase? Si us p-p-plau no ens abandonis!,SAY.Dialog:Opening.80.Slow Ass,Trusty? Trusty!? P-p-please don't leave us!,(Trusty Ass)? (Trusty Ass)? L-laat ons nu n-niet achter!,2025-08-21T22:17:44.441Z
+17,E2_World_A1_localization,"",MERDA! La Manifestació està acabada!,SAY.Dialog:Opening.8.Thirsty Ass,DAMN! The Protest is broken!,GODVER! Het Protest valt uiteen!,2025-08-21T22:17:44.441Z
+18,E2_World_A1_localization,"",*TUS*,SAY.Dialog:Opening.17.Sick Ass,*COUGH*,*KUCH*,2025-08-21T22:17:44.441Z
+19,E2_World_A1_localization,"",El Ramat cada cop és més petit!,SAY.Dialog:Opening.7.Big Ass,The Herd keeps shrinking!,De Kudde blijft krimpen!,2025-08-21T22:17:44.441Z
+20,E2_World_A1_localization,Soft should be opposite of Hard's name if possible,En Vellase i l'Honradase no tenien fusta de líder. Eren massa tous.,SAY.Dialog:Opening.11.Hard Ass,Old Ass and Trusty Ass were not cut out for the role of leader. They were too soft.,(Old Ass) en (Trusty Ass) waren niet uitgeknipt voor het leiderschap. Ze zijn te zacht.,2025-08-21T22:17:44.441Z
+21,E2_World_A1_localization,"",Estàs insultant els nostres Camarades! Només jo puc insultar els nostres Camarades!,SAY.Dialog:Opening.12.Smart Ass,You're insulting our Comrades! Only I get to insult our Comrades!,Je beledigt onze Kameraden! Enkel ik beledig onze Kameraden!,2025-08-21T22:17:44.441Z
+22,E2_World_A1_localization,(Desire to interject. Not an apology.),Perdoneu...,SAY.Dialog:Opening.13.Big Ass,Excuse me.,Pardon.,2025-08-21T22:17:44.441Z
+23,E2_World_A1_localization,"",*snif* T-t-tenim un P-P-Pla C?,SAY.Dialog:Opening.21.Slow Ass,*sniff* Is there a P-Plan C?,*snuf snuf* Is er d-dan een p-plan B?,2025-08-21T22:17:44.441Z
+24,E2_World_A1_localization,"",És clar que tenim un Pla C!,SAY.Dialog:Opening.84.Smart Ass,Of course there's a Plan C!,Natuurlijk is er een Plan B!,2025-08-21T22:17:44.441Z
+25,E2_World_A1_localization,"",Alto. Qui ha dit que siguis el LÍDER?,SAY.Dialog:Opening.92.Hard Ass,Stop. Who made YOU the leader?,Stop. Sinds wanneer ben JIJ de baas?,2025-08-21T22:17:44.441Z
+26,E2_World_A1_localization,"",Us he de dir una cosa.,SAY.Dialog:Opening.15.Big Ass,I have something to say.,Ik heb wat te zeggen.,2025-08-21T22:17:44.441Z
+27,E2_World_A1_localization,"","Fortalase, ara és hora d'actuar, no de debatre.",SAY.Dialog:Opening.86.Smart Ass,"It's time for action, not debate, Hard Ass.","Het is tijd voor daden, geen woorden, (Hard Ass).",2025-08-21T22:17:44.441Z
+28,E2_World_A1_localization,"",Tu no pots donar-me ordres.,SAY.Dialog:Opening.88.Hard Ass,I do not take orders from you.,Ik pak van jou geen bevelen aan.,2025-08-21T22:17:44.441Z
+29,E2_World_A1_localization,"",*TUS TUS*,SAY.Dialog:Opening.83.Sick Ass,*COUGH COUGH*,*KUCH KUCH*,2025-08-21T22:17:44.441Z
+30,E2_World_A1_localization,"""Let'er RIP"" means ""Go for it"" or ""Kick her Ass Hard Ass"", or ""Don't hold back, Hard Ass""","Fot-li CANYA, Fortalase!",SAY.Dialog:Opening.16.Kick Ass,"Let'er RIP, Hard Ass!","Laat u gaan, hè, (Hard Ass)!",2025-08-21T22:17:44.441Z
+31,E2_World_A1_localization,"","{vpunch=100,0.75}EI! ESCOLTEU!!",SAY.Dialog:Opening.18.Big Ass,"{vpunch=100,0.75}HEY! LISTEN!!","{vpunch=100,0.75}HEY! LUISTEREN!!!",2025-08-21T22:17:44.441Z
+32,E2_World_A1_localization,"",Està tot tan sec que el foc es propaga cada cop més ràpid.,SAY.Dialog:Opening.19.Big Ass,The fire's accelerating on the dry ground.,Het vuur verspreidt zich over de droge grond.,2025-08-21T22:17:44.441Z
+33,E2_World_A1_localization,"",El vent empeny les flames colossals cap a l'oest! Arribaran a la Granja d'aquí a no res—,SAY.Dialog:Opening.90.Big Ass,The enormous flames are spreading west! They'll reach the Farm in no time—,De gigantische vlammen bewegen zich naar het westen! Niet lang meer tot ze bij de Boerderij-,2025-08-21T22:17:44.441Z
+34,E2_World_A1_localization,"",QUINA CALAMITAT! La Granja no!,SAY.Dialog:Opening.20.Nice Ass,JEEPERS! Not the Farm!,OESJE! Toch niet de Boerderij!,2025-08-21T22:17:44.441Z
+35,E2_World_A1_localization,"",I els altres! No quedarà dingú si no arribem a temps!,SAY.Dialog:Opening.94.Thirsty Ass,And the others! They'll be in a mighty pickle if we don't git there in time!,"En d'anderen! Ze zullen ze schoon gesjareld zijn als we daar niet op tijd zijn, héé!",2025-08-21T22:17:44.441Z
+36,E2_World_A1_localization,"",PLA C!,SAY.Dialog:Opening.91.Smart Ass,PLAN C!,PLAN C!,2025-08-21T22:17:44.441Z
+37,E2_World_A1_localization,"","U, algú torna corrents a la Granja per avisar els altres.",SAY.Dialog:Opening.23.Smart Ass,"ONE, someone races back to the Farm to warn the others.","ÉÉN, iemand moet naar de Boerderij crossen om de rest te waarschuwen.",2025-08-21T22:17:44.441Z
+38,E2_World_A1_localization,"","DOS, algú altre treu els Humans dels edificis en flames.",SAY.Dialog:Opening.67.Smart Ass,"TWO, someone else pulls the Humans out of the burning buildings.","TWEE, iemand anders moet de Mensen uit de brandhaard sleuren.",2025-08-21T22:17:44.441Z
+39,E2_World_A1_localization,"","TRES, la resta anem a buscar aigua al riu, apaguem el foc, convencem els Humans perquè abandonin les Màquines...",SAY.Dialog:Opening.24.Smart Ass,"THREE, the rest of us get water from the river, put out the fire, convince the Humans to give up their Machines...","DRIE, de rest  moet water uit de rivier scheppen, het vuur blussen en de Mensen overtuigen om de Machines te laten...",2025-08-21T22:17:44.441Z
+40,E2_World_A1_localization,"",I RECUPEREM LA NOSTRA FEINA!,SAY.Dialog:Opening.96.Smart Ass,AND GET OUR JOBS BACK!,EN ONZE JOBS TERUG TE GEVEN!,2025-08-21T22:17:44.441Z
+41,E2_World_A1_localization,"",Fàcil.,SAY.Dialog:Opening.93.Smart Ass,Easy.,Poepsimpel.,2025-08-21T22:17:44.441Z
+42,E2_World_A1_localization,"",P-p-però... i l'Honradase?,SAY.Dialog:Opening.159.Slow Ass,B-but what about Trusty?,M-maar wat d-dan met (Trusty Ass)?,2025-08-21T22:17:44.441Z
+43,E2_World_A1_localization,"",En Coixase s'hauria de quedar aquí i cantar la Cançó de l'Ascensió per a l'Honradase.,SAY.Dialog:Opening.165.Big Ass,Slow Ass should stay behind and sing the Song of Ascension for Trusty.,(Slow AsS) moet achterblijven en het ezelenhemelvaartszangderzielen aan Trusty voorbrengen.,2025-08-21T22:17:44.441Z
+44,E2_World_A1_localization,"","Està bé. De totes maneres, en Coixase és un pes mort.",SAY.Dialog:Opening.164.Smart Ass,Fine. Slow Ass is dead weight anyways.,Oké dan. (Slow Ass) is toch maar oponthoud.,2025-08-21T22:17:44.441Z
+45,E2_World_A1_localization,"",Qui tornarà corrents a la Granja?,SAY.Dialog:Opening.166.Smart Ass,Who's going to run back to the Farm?,Wie loopt er terug naar de Boerderij?,2025-08-21T22:17:44.441Z
+46,E2_World_A1_localization,"",Les cuixes de la Bellase poden fer aquest ricorregut en menys de dos minuts. Iiihà!,SAY.Dialog:Opening.28.Thirsty Ass,Nice Ass's fine legs can do that run in less than two minutes! Yeehaw!,(Nice Ass) d'r lange benen kunnen da' in minder dan twee minuten! Da'k ik het ge'zeid 'hee.,2025-08-21T22:17:44.441Z
+47,E2_World_A1_localization,"",Total! Faria el que fos per salvar la Granja!,SAY.Dialog:Opening.25.Nice Ass,"Heck, I'd do anything to save our Farm!",Shit. Ik zou alles doen om onze Boerderij te redden!,2025-08-21T22:17:44.441Z
+48,E2_World_A1_localization,"","Res a dir, Fortalase?",SAY.Dialog:Opening.97.Smart Ass,"Any objections, Hard Ass?","Is er bezwaar, (Hard Ass)?",2025-08-21T22:17:44.441Z
+49,E2_World_A1_localization,"",...no.,SAY.Dialog:Opening.14.Hard Ass,...no.,...neen.,2025-08-21T22:17:44.441Z
+50,E2_World_A1_localization,Nice starts running back to the Farm,"Molt bé. Galopa ràpid com el vent, Bellase! I no m'esguerris el Pla.",SAY.Dialog:Opening.26.Smart Ass,Good. Run like the wind Nice Ass! And don't ruin my Plan.,"Mooi. Je moest er al zijn, (Nice Ass)! En verbrod mijn Plan niet.",2025-08-21T22:17:44.441Z
+51,E2_World_A1_localization,If Nice Ass touches fire in the village.,No toquis el foc!,SAY.Dialog:Don'tTouchTheFire.1.The Masses,Don't touch the fire!,Blijf van het vuur weg!,2025-08-21T22:17:44.441Z
+52,E2_World_A1_localization,If Nice Ass tries to talk to the Herd.,Afanya't!,SAY.Dialog:Hurry.1.The Masses,Hurry!,Snel!,2025-08-21T22:17:44.441Z
+53,E2_World_A1_localization,If Nice Ass goes the wrong way.,"Jesús, el fum em deu estar afectant. Per aquí no es va a la Granja.",SAY.Dialog:SmokeMustBeGettingToMe_STARTOFF.1.Nice Ass,"Golly, the smoke must be getting to me. This isn't the way to the Farm at all.","Jongens toch, de rook moet in mijn systeem zitten. Er is geen enkele weg naar de Boerderij.",2025-08-21T22:17:44.441Z
+54,E2_World_A1_localization,If Nice Ass goes the wrong way.,"Jesús, el fum em deu estar afectant. Per aquí no es va a la Granja.",SAY.Dialog:FarmHouse.1.Nice Ass,"Golly, the smoke must be getting to me. This isn't the way to the Farm at all.","Oesje, de rook is te dik. Er is geen enkele weg naar de Boerderij.",2025-08-21T22:17:44.441Z
+55,E2_World_A1_localization,Nice arrives at the bridge over the river.,"Jesús, sembla que el pont està frenant el foc.",SAY.Dialog:NorthBridge.1.Nice Ass,"Golly, looks like the bridge is slowing the fire down.","Oesje, de rook is te dik. Er is geen enkele weg naar de Boerderij.",2025-08-21T22:17:44.441Z
+56,E2_World_A1_localization,"",Tristase! Tossudase! Rudase! He vingut a buscar-vos!,SAY.Dialog:NorthBridge.2.Nice Ass,Sad Ass! Sturdy Ass! Bad Ass! I'm coming for you!,"Oesje, de brug lijkt het vuur tegen te houden.",2025-08-21T22:17:44.441Z
+57,E2_World_A1_localization,Nice arrives at the Farm (ie. does not burn out from hitting too much fire) and is met by Bad Ass,Què collons heu fet?,SAY.Dialog:BadAtFarmGate.2.Bad Ass,What the fuck did you all do?,(Sad Ass)! (Sturdy Ass)! (Bad Ass)! Ik kom eraan!,2025-08-21T22:17:44.441Z
+58,E2_World_A1_localization,"","Pensava que volíeu recuperar la feina, no rostir-ho tot.",SAY.Dialog:BadAtFarmGate.5.Bad Ass,"I thought you were trying to get your jobs back, not burn everything to the ground.",Wat hebben jullie hier godverdomme liggen doen?,2025-08-21T22:17:44.441Z
+59,E2_World_A1_localization,"",Vaig a buscar en Tristase i la Tossudase i els porto al riu.,SAY.Dialog:BadAtFarmGate.4.Bad Ass,I'll find Sad Ass and Sturdy Ass and take them to the river.,Ik dacht dat jullie jullie jobs terug wouden pakken in plaats van alles plat te branden.,2025-08-21T22:17:44.441Z
+60,E2_World_A1_localization,End of A1.,Tu troba la manera d'aturar el foc i salva la Granja.,SAY.Dialog:BadAtFarmGate.3.Bad Ass,You find a way to stop the fire and save the Farm.,Ik zal (Sad Ass) en (Sturdy Ass) naar de rivier brengen.,2025-08-21T22:17:44.441Z
+3,E2_BadAssRescue_localization,"If Nice hits too much fire in A1, she blacks out and is awakened by Bad Ass.",Desperta!,SAY.Dialog:BadRescue.2.Bad Ass,Get up!,Opstaan!,2025-08-21T22:17:44.441Z
+4,E2_BadAssRescue_localization,"",T'havies desmaiat al mig del camí. T'he hagut d'arrossegar fins aquí.,SAY.Dialog:BadRescue.5.Bad Ass,I found you passed out on the road and had to drag you back here.,Ik vond u buitenwesten naast de weg en moest u naar hier sleuren.,2025-08-21T22:17:44.441Z
+5,E2_BadAssRescue_localization,"","Pensava que volíeu recuperar la feina, no rostir-ho tot.",SAY.Dialog:BadRescue.4.Bad Ass,"I thought you were trying to get your jobs back, not burn everything to the ground.","Ik dacht dat jullie probeerden jullie jobs terug te pakken, niet de boel platbranden.",2025-08-21T22:17:44.441Z
+6,E2_BadAssRescue_localization,"",No puc contenir més el foc.,SAY.Dialog:BadRescue.6.Bad Ass,I can't keep the fire back any longer.,Ik kon het vuur niet langer tegenhouden.,2025-08-21T22:17:44.441Z
+7,E2_BadAssRescue_localization,"",El pont ha desaparegut.,SAY.Dialog:BadRescue.3.Bad Ass,The bridge is completely lost.,De brug is compleet verloren,2025-08-21T22:17:44.441Z
+8,E2_BadAssRescue_localization,"",Vaig a buscar en Tristase i la Tossudase i els porto al riu.,SAY.Dialog:BadRescue.9.Bad Ass,I'll find Sad Ass and Sturdy Ass and take them to the river.,Ik zoek (Sad Ass) en (Sturdy Ass) en breng ze naar de rivier.,2025-08-21T22:17:44.441Z
+9,E2_BadAssRescue_localization,"",Tu troba la manera d'aturar el foc i salva la Granja.,SAY.Dialog:BadRescue.8.Bad Ass,You find a way to stop the fire and save the Farm.,Zoek een manier om dat vuur te blussen en de Boerderij te redden.,2025-08-21T22:17:44.441Z
+3,E2_World_B1_localization,"Interactable Object, Sign.",Mina de Carbó Roca,SAY.Sign_TheMines_Dirty.1.Dirty Sign,Butte Industry Coal Mines,"",2025-08-21T22:17:44.441Z
+4,E2_World_B1_localization,"Interactable Object, Sign.",364 DIES DES DEL DARRER ACCIDENT,SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign,364 DAYS SINCE LAST MINING ACCIDENT,"",2025-08-21T22:17:44.441Z
+5,E2_World_B1_localization,"Interactable Object, Sign.","Benvinguts a la Granja de Talldevall. A l'oest, el remarcable Estable Històric i els nostres camps de blat.",SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign,"Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.","",2025-08-21T22:17:44.441Z
+6,E2_World_B1_localization,"Interactable Object, Sign.","Al sud, el Molí i el Graner d'última generació.",SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign,"To the south, our state of the art Mill and Granary.","",2025-08-21T22:17:44.441Z
+7,E2_World_B1_localization,"Interactable Object, Sign.",NOVA Autopista Boncul: Connectant els Nuclis Rurals i la Ciutat,SAY.Sign_Highway_Official.1.Official Sign,NEW Government Sponsored Highway: Connecting Urban and Rural Communities,"",2025-08-21T22:17:44.441Z
+8,E2_World_B1_localization,"Interactable Object, Sign.",GR a l'Ermita del Bosc,SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign,The Long Way to the Forest Shrine,"",2025-08-21T22:17:44.441Z
+9,E2_World_B1_localization,"Interactable Object, Sign.",TANCAT PER OBRES,SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign,CLOSED FOR REPAIRS,"",2025-08-21T22:17:44.441Z
+10,E2_World_B1_localization,"Interactable Object, Sign.",Molí i Graner d'Última Generació,SAY.Sign_Mill_Fancy.1.Fancy Sign,The State of the Art Mill and Granary,"",2025-08-21T22:17:44.441Z
+11,E2_World_B1_localization,"Interactable Object, Sign.",La Comuna,SAY.Sign_Outhouse_Shitty.1.Shitty Sign,The Outhouse,"",2025-08-21T22:17:44.441Z
+12,E2_World_B1_localization,"Interactable Object, Sign.",L'Estable Històric,SAY.Sign_TheStable_Old.1.Old Sign,The Heritage Stable,"",2025-08-21T22:17:44.441Z
+13,E2_World_B1_localization,"Interactable Object, Sign.",El Pou de Yafur,SAY.Sign_TheWell_Historic.1.Historic Sign,Ya'fur's Well,"",2025-08-21T22:17:44.441Z
+15,E2_World_B1_localization,"Continuing from the moment after Nice Ass ran to the Farm.
+The Herd negotiates how to save the Humans.","Pla C, part DOS!",SAY.Dialog:B1_MainDialog.1.Smart Ass,Plan C Part TWO!,"",2025-08-21T22:17:44.441Z
+16,E2_World_B1_localization,"",Qui entrarà a les cases en flames per salvar els Humans?,SAY.Dialog:B1_MainDialog.48.Smart Ass,Who's going to run into the burning houses to save the Humans?,"",2025-08-21T22:17:44.441Z
+17,E2_World_B1_localization,"",...qualsevol menys en Coixase.,SAY.Dialog:B1_MainDialog.52.Smart Ass,...anyone but Slow Ass.,"",2025-08-21T22:17:44.441Z
+18,E2_World_B1_localization,"",*fiu*,SAY.Dialog:B1_MainDialog.68.Slow Ass,*p-phew*,"",2025-08-21T22:17:44.441Z
+19,E2_World_B1_localization,"",*TUS TUS*,SAY.Dialog:B1_MainDialog.54.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.441Z
+20,E2_World_B1_localization,"",Que ho faci en Grandase!,SAY.Dialog:B1_MainDialog.55.Kick Ass,Send Big Ass!,"",2025-08-21T22:17:44.441Z
+21,E2_World_B1_localization,"",No passo per la porta.,SAY.Dialog:B1_MainDialog.13.Big Ass,I won't fit.,"",2025-08-21T22:17:44.441Z
+22,E2_World_B1_localization,"",I l'Eixutase?,SAY.Dialog:B1_MainDialog.56.Big Ass,How about Thirsty?,"",2025-08-21T22:17:44.441Z
+23,E2_World_B1_localization,"","No cardis, està tot massa EIXUT, no me'n sortiria.",SAY.Dialog:B1_MainDialog.16.Thirsty Ass,"It's too DAMN DRY, I'd never make it.","",2025-08-21T22:17:44.441Z
+24,E2_World_B1_localization,"","I tu què, Llestase?",SAY.Dialog:B1_MainDialog.57.Thirsty Ass,"How about you, Smart?","",2025-08-21T22:17:44.441Z
+25,E2_World_B1_localization,"",Vols ficar la vostra única GRAN ESTRATEGA en un INCENDI?! Estàs de conya?,SAY.Dialog:B1_MainDialog.3.Smart Ass,You want to send your ACE STRATEGIST into a FIRE?! You gotta be joking!,"",2025-08-21T22:17:44.441Z
+26,E2_World_B1_localization,"",Feblase? Ferase? Algú?,SAY.Dialog:B1_MainDialog.59.Smart Ass,Sick Ass? Kick Ass? Anyone?,"",2025-08-21T22:17:44.441Z
+27,E2_World_B1_localization,Smart Ass looks in all directions.,"Escolteu bé. Si no salvem els humans, qui ens portarà el Fenc?",SAY.Dialog:B1_MainDialog.58.Smart Ass,"Listen. If we don't save the Humans, who will bring us our Hay?","",2025-08-21T22:17:44.441Z
+28,E2_World_B1_localization,"",Qui ens retallarà les peülles?,SAY.Dialog:B1_MainDialog.5.Smart Ass,Who will trim our Hooves?,"",2025-08-21T22:17:44.441Z
+29,E2_World_B1_localization,"",Qui ens rascarà l'interior de les orelles?,SAY.Dialog:B1_MainDialog.69.Smart Ass,Who will scratch the inside of our ears?,"",2025-08-21T22:17:44.441Z
+30,E2_World_B1_localization,"",Qui ens donarà medicaments quan estiguem malalts?,SAY.Dialog:B1_MainDialog.6.Smart Ass,Who will give us medicine when we're ill?,"",2025-08-21T22:17:44.441Z
+31,E2_World_B1_localization,"",Qui ens traurà la merda del jaç?,SAY.Dialog:B1_MainDialog.7.Smart Ass,Who will clean the shit out of our beds?,"",2025-08-21T22:17:44.441Z
+32,E2_World_B1_localization,"",Qui ENS TORNARÀ LA FEINA?,SAY.Dialog:B1_MainDialog.8.Smart Ass,Who will GIVE US OUR JOBS BACK?,"",2025-08-21T22:17:44.441Z
+33,E2_World_B1_localization,"",...,SAY.Dialog:B1_MainDialog.9.Hard Ass,...,"",2025-08-21T22:17:44.441Z
+34,E2_World_B1_localization,"",Jo ho faig.,SAY.Dialog:B1_MainDialog.10.Hard Ass,I'll do it.,"",2025-08-21T22:17:44.441Z
+35,E2_World_B1_localization,"",Millor tu que jo!,SAY.Dialog:B1_MainDialog.47.Smart Ass,Better you than me!,"",2025-08-21T22:17:44.441Z
+36,E2_World_B1_localization,"","Genial, estem llestos per seguir el PLA C!",SAY.Dialog:B1_MainDialog.11.Smart Ass,"Okay, we're all set for Plan C!","",2025-08-21T22:17:44.441Z
+37,E2_World_B1_localization,"","U, la Bellase salva la Granja.",SAY.Dialog:B1_MainDialog.63.Smart Ass,"ONE, Nice Ass saves the Farm.","",2025-08-21T22:17:44.441Z
+38,E2_World_B1_localization,"","DOS, en Fortalase salva els Humans.",SAY.Dialog:B1_MainDialog.62.Smart Ass,"TWO, Hard Ass saves the Humans.","",2025-08-21T22:17:44.441Z
+39,E2_World_B1_localization,"","TRES, la resta porta aigua del riu, apaga el foc, convenç els Humans perquè abandonin les Màquines...",SAY.Dialog:B1_MainDialog.61.Smart Ass,"THREE, the rest of us get water from the river, put out the fire, convince the Humans to give up their Machines...","",2025-08-21T22:17:44.441Z
+40,E2_World_B1_localization,"",I RECUPEREM LES NOSTRES FEINES!,SAY.Dialog:B1_MainDialog.67.Smart Ass,AND GET OUR JOBS BACK!,"",2025-08-21T22:17:44.441Z
+41,E2_World_B1_localization,"",Fàcil.,SAY.Dialog:B1_MainDialog.64.Smart Ass,Easy.,"",2025-08-21T22:17:44.441Z
+42,E2_World_B1_localization,"",I jo c-c-cantaré la C-c-cançó de l'Ascensió p-per a l'Honradase.,SAY.Dialog:B1_MainDialog.17.Slow Ass,And I'll sing the Song of Ascension for Trusty.,"",2025-08-21T22:17:44.441Z
+43,E2_World_B1_localization,"",P-p-per la Força dels Ases?,SAY.Dialog:B1_MainDialog.170.Slow Ass,Ass P-Power?,"",2025-08-21T22:17:44.441Z
+44,E2_World_B1_localization,The other donkeys run off to fetch water,P-P-PER LA FORÇA DELS ASES!,SAY.Dialog:B1_MainDialog.65.The Masses,ASS P-POWER!,"",2025-08-21T22:17:44.441Z
+45,E2_World_B1_localization,"",He passat per coses pitjors que un edifici en flames.,SAY.Dialog:B1_MainDialog.29.Hard Ass,I've been through worse than a burning building.,"",2025-08-21T22:17:44.441Z
+46,E2_World_B1_localization,Hard looks for houses to enter,Tothom a treballar.,SAY.Dialog:B1_MainDialog.30.Hard Ass,Time to get to work.,"",2025-08-21T22:17:44.441Z
+47,E2_World_B1_localization,If Hard Ass goes in the wrong direction.,Ara no t'estovis.,SAY.Dialog:HardAssVillageLimitB1.3.Hard Ass,Don't get soft.,"",2025-08-21T22:17:44.441Z
+48,E2_World_B1_localization,Slow Ass stays behind to sing for Trusty.,"Adeu, Honradase...",SAY.Dialog:SlowB1.28.Slow Ass,Goodb-bye Trusty...,"",2025-08-21T22:17:44.441Z
+49,E2_World_B1_localization,"","""{color=yellow}{s=5}♪  i'h hà hi hò 'i à iii ò'h ♪{/s}{/color}""",SAY.Dialog:SlowB1.35.Slow Ass,{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color},"",2025-08-21T22:17:44.441Z
+50,E2_World_B1_localization,"Repeater line, Slow Ass.",Adeu...,SAY.Dialog:SlowB1.12.Slow Ass,Goodb-bye...,"",2025-08-21T22:17:44.441Z
+3,E2_ChildsHouse_localization,Hard enters a house to find a child trapped under a bookcase.,*AHHH*!,SAY.Dialog:Child.7.???,*WAHHH*!,"",2025-08-21T22:17:44.441Z
+4,E2_ChildsHouse_localization,"",Ei! Aquí! Sota la prestatgeria!,SAY.Dialog:Child.1.Child Joey,Hey! Over here! Under the bookcase!,"",2025-08-21T22:17:44.441Z
+5,E2_ChildsHouse_localization,"",Soc jo! En Joanet!,SAY.Dialog:Child.41.Child Joey,It's me! Joey!,"",2025-08-21T22:17:44.441Z
+6,E2_ChildsHouse_localization,"","Burro, si us plau!",SAY.Dialog:Child.34.Child Joey,Please donkey!,"",2025-08-21T22:17:44.441Z
+7,E2_ChildsHouse_localization,"",Agafa la galleda i apaga el foc abans que em cremi!,SAY.Dialog:Child.42.Child Joey,Get that bucket of water over there and stop this fire from burning me!,"",2025-08-21T22:17:44.441Z
+8,E2_ChildsHouse_localization,Hard Ass has a traumatic flash back of seeing a Miner be crushed during a cave in.,Ei! Mou-te!,SAY.Dialog:Child.16.Child Joey,Hey! Don't just stand there!,"",2025-08-21T22:17:44.441Z
+9,E2_ChildsHouse_localization,"",Per què no et mous?,SAY.Dialog:Child.43.Child Joey,Why aren't you doing anything?,"",2025-08-21T22:17:44.441Z
+10,E2_ChildsHouse_localization,"",Se suposa que els Animals heu de fer el que diem els Humans!,SAY.Dialog:Child.44.Child Joey,Animals are supposed to do what Humans say!,"",2025-08-21T22:17:44.441Z
+11,E2_ChildsHouse_localization,"",AAAAAAAAH! Fa mal.,SAY.Dialog:Child.15.Child Joey,OWIIIEEEEE! It hurts.,"",2025-08-21T22:17:44.441Z
+12,E2_ChildsHouse_localization,"",L'Àvia sempre ha dit que els burros sou INÚTILS!,SAY.Dialog:Child.13.Child Joey,Grandma always said donkeys were WORTHLESS!,"",2025-08-21T22:17:44.441Z
+13,E2_ChildsHouse_localization,"",I ESTÚPIDS!,SAY.Dialog:Child.37.Child Joey,And STUPID too!,"",2025-08-21T22:17:44.441Z
+14,E2_ChildsHouse_localization,"",Segur que ni tan sols teniu ÀNIMA!,SAY.Dialog:Child.45.Child Joey,I bet you don't even have a SOUL!,"",2025-08-21T22:17:44.441Z
+15,E2_ChildsHouse_localization,"",*AHHH*! Els prestatges es CREMEN!,SAY.Dialog:Child.14.Child Joey,*WAHHH* The bookcase has caught FIRE!,"",2025-08-21T22:17:44.441Z
+16,E2_ChildsHouse_localization,The child dies.,Si us plau! SALVA'M!,SAY.Dialog:Child.47.Child Joey,Please! SAVE ME!,"",2025-08-21T22:17:44.441Z
+17,E2_ChildsHouse_localization,"",...,SAY.Dialog:Child.46.Hard Ass,...,"",2025-08-21T22:17:44.441Z
+3,E2_World_A2_localization,"Interactable Object, Sign.",Mina de Carbó Roca,SAY.Sign_TheMines.1.,Butte Industry Coal Mines,"",2025-08-21T22:17:44.441Z
+4,E2_World_A2_localization,"Interactable Object, Sign.",0 DIES DES DEL DARRER ACCIDENT,SAY.Sign_TheMinesEntrance.1.,0 DAYS SINCE LAST ACCIDENT,"",2025-08-21T22:17:44.441Z
+5,E2_World_A2_localization,"Interactable Object, Sign.","Benvinguts a la Granja de Talldevall. A l'oest, el remarcable Estable Històric i els nostres camps de blat.",SAY.Sign_WelcomeToFarm.1.,"Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.","",2025-08-21T22:17:44.441Z
+6,E2_World_A2_localization,"Interactable Object, Sign.","Al sud, el Molí i el Graner d'Última Generació.",SAY.Sign_WelcomeToFarm.2.,"To the southwest, our state of the art Mill and Granary.","",2025-08-21T22:17:44.441Z
+7,E2_World_A2_localization,"Interactable Object, Sign.",NOVA Autopista Boncul: Connectant els Nuclis Rurals i la Ciutat,SAY.Sign_Highway.1.,NEW Government Sponsored Highway—Connecting Urban and Rural Communities,"",2025-08-21T22:17:44.441Z
+8,E2_World_A2_localization,"Interactable Object, Sign.",Camí Vell a la Ciutat,SAY.Sign_MountainPath.1.,Old Mountain Trail to the City,"",2025-08-21T22:17:44.441Z
+9,E2_World_A2_localization,"Interactable Object, Sign.",Molí i Graner d'Última Generació,SAY.Sign_Mill.1.,The State of the Art Mill and Granary,"",2025-08-21T22:17:44.441Z
+10,E2_World_A2_localization,"Interactable Object, Sign.",La Comuna,SAY.Sign_Outhouse.1.,The Outhouse,"",2025-08-21T22:17:44.441Z
+11,E2_World_A2_localization,"Interactable Object, Sign.",L'Estable Històric,SAY.Sign_TheStable.1.,The Heritage Stable,"",2025-08-21T22:17:44.441Z
+12,E2_World_A2_localization,"Interactable Object, Sign.",El Pou de Yafur,SAY.Sign_TheWell.1.,Ya'fur's Well,"",2025-08-21T22:17:44.441Z
+13,E2_World_A2_localization,"Interactable Object, Sign.",TANCAT PER OBRES,SAY.Sign_MountainPath.6.,CLOSED FOR REPAIRS,"",2025-08-21T22:17:44.441Z
+15,E2_World_A2_localization,"The camera fades up from black and we see Nice Ass with her plow, just outside the Fannyside Farm.","El Ramat compta amb mi! Vatua l'olla, si això és pel que m'he estat preparant!",SAY.Dialog:A_Dialog.1.Nice Ass,"The Herd is counting on me! Yuppers, this is what I've been training for!","",2025-08-21T22:17:44.441Z
+16,E2_World_A2_localization,"Nice Ass begins to plow a fire line, cutting off the fire.",Si llauro el camp com si m'hi anés la vida podré tallar el foc i salvar la nostra estimada Granja!,SAY.Dialog:A_Dialog.6.Nice Ass,"If I plow like I've never plowed before, I can cut the fire off and save our beautiful Farm!","",2025-08-21T22:17:44.441Z
+17,E2_World_A2_localization,Nice Ass succeeds with the first line of defense.,Hurra!,SAY.Dialog:B_Dialog.1.Nice Ass,Hooray!,"",2025-08-21T22:17:44.441Z
+18,E2_World_A2_localization,A fire ball flies on the wind and ignites a tree.,Ai las!,SAY.Dialog:B_Dialog.7.Nice Ass,Yikes!,"",2025-08-21T22:17:44.441Z
+19,E2_World_A2_localization,The fire spreads.,Jesús! El Molí no!,SAY.Dialog:C_Dialog.11.Nice Ass,Gosh! Not the Mill!,"",2025-08-21T22:17:44.441Z
+20,E2_World_A2_localization,The fire spreads.,Jesús! El Graner no!,SAY.Dialog:C_Dialog.19.Nice Ass,Gosh! Not the Granary!,"",2025-08-21T22:17:44.441Z
+21,E2_World_A2_localization,The fire spreads.,Me càsum! S'està propagant al bosc!,SAY.Dialog:C_Dialog.1.Nice Ass,Jeepers! It's spreading across the Forest!,"",2025-08-21T22:17:44.441Z
+22,E2_World_A2_localization,The fire spreads.,Ai las! Perdrem el camp sencer!,SAY.Dialog:C_Dialog.25.Nice Ass,Yikes! We're going to lose the whole field!,"",2025-08-21T22:17:44.441Z
+23,E2_World_A2_localization,Nice Ass plows west to attempt saving the Farm.,"Si evito que el foc passi del centre, encara podré salvar la Meitat Nord de la Granja.",SAY.Dialog:C_Dialog.23.Nice Ass,"If I cut the fire off at the centre, I can still save the North Half of the Farm.","",2025-08-21T22:17:44.441Z
+24,E2_World_A2_localization,"",No! L'Estable també!—,SAY.Dialog:D_Dialog.32.Nice Ass,Not the Stable too!—,"",2025-08-21T22:17:44.441Z
+25,E2_World_A2_localization,Nice Ass makes it close to the Outhouse on the Farm and hears something.,Ai...,SAY.Dialog:D_Dialog.1.Sad Ass,*whimper*,"",2025-08-21T22:17:44.441Z
+26,E2_World_A2_localization,"",Tristase?,SAY.Dialog:D_Dialog.9.Nice Ass,Sad Ass?,"",2025-08-21T22:17:44.441Z
+27,E2_World_A2_localization,"",He d'arribar a la Comuna abans que sigui massa tard!,SAY.Dialog:D_Dialog.12.Nice Ass,I've got to make it to the Outhouse before it's too late!,"",2025-08-21T22:17:44.441Z
+28,E2_World_A2_localization,If Nice Ass hits too much fire.,Ai las...,SAY.Dialog:Burnout.1.Nice Ass,Yikes...,"",2025-08-21T22:17:44.441Z
+29,E2_World_A2_localization,The scene fades to black.,Ai...,SAY.Dialog:Burnout.5.Sad Ass,*whimper*,"",2025-08-21T22:17:44.441Z
+3,E2_World_B2_localization,"Interactable Object, Sign.",Mina de Carbó Roca,SAY.Sign_TheMines_Dirty.1.Dirty Sign,Butte Industry Coal Mines,"",2025-08-21T22:17:44.441Z
+4,E2_World_B2_localization,"Interactable Object, Sign.",364 DIES DES DEL DARRER ACCIDENT,SAY.Sign_TheMinesEntrance_Warning.1.Warning Sign,364 DAYS SINCE LAST MINING ACCIDENT,"",2025-08-21T22:17:44.441Z
+5,E2_World_B2_localization,"Interactable Object, Sign.","Benvinguts a la Granja de Talldevall. A l'oest, el remarcable Estable Històric i els nostres camps de blat.",SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign,"Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.","",2025-08-21T22:17:44.441Z
+6,E2_World_B2_localization,"Interactable Object, Sign.","Al sud, el Molí i el Graner d'última generació.",SAY.Sign_WelcomeToFarm_Welcome.2.Welcome Sign,"To the south, our state of the art Mill and Granary.","",2025-08-21T22:17:44.441Z
+7,E2_World_B2_localization,"Interactable Object, Sign.",NOVA Autopista Boncul: Connectant els Nuclis Rurals i la Ciutat,SAY.Sign_Highway_Official.1.Official Sign,NEW Government Sponsored Highway: Connecting Urban and Rural Communities,"",2025-08-21T22:17:44.441Z
+8,E2_World_B2_localization,"Interactable Object, Sign.",GR a l'Ermita del Bosc,SAY.Sign_MountainPath_Decrepit.1.Decrepit Sign,The Long Way to the Forest Shrine,"",2025-08-21T22:17:44.441Z
+9,E2_World_B2_localization,"Interactable Object, Sign.",TANCAT PER OBRES,SAY.Sign_MountainPath_Decrepit.6.Decrepit Sign,CLOSED FOR REPAIRS,"",2025-08-21T22:17:44.441Z
+10,E2_World_B2_localization,"Interactable Object, Sign.",Molí i Graner d'Última Generació,SAY.Sign_Mill_Fancy.1.Fancy Sign,The State of the Art Mill and Granary,"",2025-08-21T22:17:44.441Z
+11,E2_World_B2_localization,"Interactable Object, Sign.",La Comuna,SAY.Sign_Outhouse_Shitty.1.Shitty Sign,The Outhouse,"",2025-08-21T22:17:44.441Z
+12,E2_World_B2_localization,"Interactable Object, Sign.",L'Estable Històric,SAY.Sign_TheStable_Old.1.Old Sign,The Heritage Stable,"",2025-08-21T22:17:44.441Z
+13,E2_World_B2_localization,"Interactable Object, Sign.",El Pou de Yafur,SAY.Sign_TheWell_Historic.1.Historic Sign,Ya'fur's Well,"",2025-08-21T22:17:44.441Z
+15,E2_World_B2_localization,After Hard Ass exits the Child's house.,Què acaba de passar?,SAY.Dialog:HardAssAside2.1.Hard Ass,What happened in there?,"",2025-08-21T22:17:44.441Z
+16,E2_World_B2_localization,"",He deixat morir aquell petit Humà?,SAY.Dialog:HardAssAside2.4.Hard Ass,Did I let that little Human die?,"",2025-08-21T22:17:44.441Z
+17,E2_World_B2_localization,"",Impossible.,SAY.Dialog:HardAssAside2.3.Hard Ass,Impossible.,"",2025-08-21T22:17:44.441Z
+18,E2_World_B2_localization,"",Però i si ho he fet...?,SAY.Dialog:HardAssAside2.12.Hard Ass,But what if I did...?,"",2025-08-21T22:17:44.441Z
+19,E2_World_B2_localization,"",...,SAY.Dialog:HardAssAside2.7.Hard Ass,...,"",2025-08-21T22:17:44.441Z
+20,E2_World_B2_localization,Note to future Patrick/Milton: solve the quotation issue in the CSV,"""Només toca fons qui perd l'esperança.""",SAY.Dialog:HardAssAside2.2.Hard Ass,"""You only hit rock bottom when you quit.""","",2025-08-21T22:17:44.441Z
+21,E2_World_B2_localization,"",Som-hi.,SAY.Dialog:HardAssAside2.8.Hard Ass,Let's go.,"",2025-08-21T22:17:44.441Z
+22,E2_World_B2_localization,If Hard Ass goes in the wrong direction.,Ara no t'estovis...,SAY.Dialog:HardAssVillageLimitB2.1.Hard Ass,Don't get soft...,"",2025-08-21T22:17:44.441Z
+23,E2_World_B2_localization,Slow Ass is still singing for Trusty,"Adeu, Honradase...",SAY.Dialog:SlowB2.28.Slow Ass,Goodbye Trusty...,"",2025-08-21T22:17:44.441Z
+24,E2_World_B2_localization,"","""{color=yellow}{s=5}♪  i'h hà hi hò 'i à iii ò'h ♪{/s}{/color}""",SAY.Dialog:SlowB2.36.Slow Ass,{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color},"",2025-08-21T22:17:44.441Z
+25,E2_World_B2_localization,"",Adeu...,SAY.Dialog:SlowB2.12.Slow Ass,Goodbye...,"",2025-08-21T22:17:44.441Z
+26,E2_World_B2_localization,"After Hard Ass exits the Miner's House, and as he is looking for the Boss's house.",La casa de l'Amo no deu ser gaire lluny.,SAY.Dialog:ToTheBossHouse.1.Hard Ass,The Boss's house must be around here somewhere.,"",2025-08-21T22:17:44.441Z
+3,E2_MinersHouse_localization,Hard Ass enters the house of Miner Jenny.,Un ruc? Com has arribat fins aquí des de la Mina?,SAY.Dialog:Miner.1.???,A donkey? How'd you get here from the Mines?,"",2025-08-21T22:17:44.441Z
+4,E2_MinersHouse_localization,"",Soc jo! La Jennifer. Del torn de nit.,SAY.Dialog:Miner.4.Miner Jenny,It's me! Jenny. From the night shift.,"",2025-08-21T22:17:44.441Z
+5,E2_MinersHouse_localization,"","Afanya't, m'has d'ajudar!",SAY.Dialog:Miner.12.Miner Jenny,"Quick, I need your help!","",2025-08-21T22:17:44.441Z
+6,E2_MinersHouse_localization,"",Salta les flames i agafa el meu Ordinador!,SAY.Dialog:Miner.13.Miner Jenny,Run into the flames and grab my Computer!,"",2025-08-21T22:17:44.441Z
+7,E2_MinersHouse_localization,"",EL NECESSITO!,SAY.Dialog:Miner.14.Miner Jenny,I NEED IT!,"",2025-08-21T22:17:44.441Z
+8,E2_MinersHouse_localization,Hard Ass doesn't move.,Què passa? Que les teves orellotes de burro no et deixen sentir-me?,SAY.Dialog:Miner.11.Miner Jenny,"What, you can't hear me with those big dumb donkey ears?","",2025-08-21T22:17:44.441Z
+9,E2_MinersHouse_localization,"A screen wipe (transition), Hard Ass has to fight Miner Jenny.","Molt bé, T'OBLIGARË A FER-HO!",SAY.Dialog:Miner.7.Miner Jenny,"Fine, I'll MAKE YOU DO IT!","",2025-08-21T22:17:44.441Z
+10,E2_MinersHouse_localization,After killing Miner Jenny in battle.,M'ha... atacat.,SAY.Dialog:PostBattle.1.Hard Ass,She attacked... me.,"",2025-08-21T22:17:44.441Z
+11,E2_MinersHouse_localization,"",Els Humans no es mereixen la nostra feina.,SAY.Dialog:PostBattle.2.Hard Ass,The Humans don't deserve our labour.,"",2025-08-21T22:17:44.441Z
+12,E2_MinersHouse_localization,"",Així que hem arribat fins aquí.,SAY.Dialog:PostBattle.3.Hard Ass,"So, it has come to this.","",2025-08-21T22:17:44.441Z
+13,E2_MinersHouse_localization,"",Aquesta Màquina tenia més valor per a ella que la meva vida?,SAY.Dialog:PostBattle.4.Hard Ass,That Machine is more valuable to her than my life?,"",2025-08-21T22:17:44.441Z
+14,E2_MinersHouse_localization,"",Després de tants anys treballant colze a colze a la Mina...,SAY.Dialog:PostBattle.5.Hard Ass,After all those years working side by side in the Mine...,"",2025-08-21T22:17:44.441Z
+15,E2_MinersHouse_localization,"",Perquè no he volgut salvar la seva Màquina Computadora.,SAY.Dialog:PostBattle.6.Hard Ass,Because I wouldn't save her Computer-Machine.,"",2025-08-21T22:17:44.441Z
+16,E2_MinersHouse_localization,"","De cap manera, si no ens tracten com a iguals.",SAY.Dialog:PostBattle.8.Hard Ass,Not when they don't see us as equals.,"",2025-08-21T22:17:44.441Z
+17,E2_MinersHouse_localization,Hard Ass can now leave the house.,S'ha acabat la Manifestació—és hora de començar la Revolució.,SAY.Dialog:PostBattle.10.Hard Ass,No more Protests—it's time for Revolution.,"",2025-08-21T22:17:44.441Z
+3,E2_BattleMiner_localization,Battle UI.,Fortalase,WRITE.DialogContainer.73,Hard Ass,"",2025-08-21T22:17:44.441Z
+4,E2_BattleMiner_localization,Battle UI.,Minera Jennifer,WRITE.DialogContainer.77,Miner Jenny,"",2025-08-21T22:17:44.441Z
+5,E2_BattleMiner_localization,Enemy dialogue.,Uix. Sempre he sabut que eres una bèstia estúpida.,WRITE.DialogContainer.71,Ugh. I always knew you were a dumb beast.,"",2025-08-21T22:17:44.441Z
+6,E2_BattleMiner_localization,Enemy dialogue.,Tros d'animal inútil! Mou-te!!!,WRITE.DialogContainer.32,You useless fucking animal! Move!!!,"",2025-08-21T22:17:44.441Z
+7,E2_BattleMiner_localization,Enemy dialogue.,El meu Ordinador val per MIL RUCS!,WRITE.DialogContainer.69,My Computer is worth a THOUSAND DONKEYS!,"",2025-08-21T22:17:44.441Z
+8,E2_BattleMiner_localization,Enemy dialogue.,Et juro per Déu que ET FARÉ MIQUES!!,WRITE.DialogContainer.48,"So help me God, I will END YOU!!","",2025-08-21T22:17:44.441Z
+9,E2_BattleMiner_localization,Enemy dialogue.,"MENJA PALA, BURRO DE MERDA!!",WRITE.DialogContainer.50,EAT SHOVEL ASSHOLE!!,"",2025-08-21T22:17:44.441Z
+10,E2_BattleMiner_localization,Enemy dialogue. Jenny is close to death.,Això és...el meu final?,WRITE.DialogContainer.30,Is this... game over for me?,"",2025-08-21T22:17:44.441Z
+11,E2_BattleMiner_localization,Battle text.,La Minera Jennifer respon.,WRITE.DialogContainer.36,Miner Jenny responds.,"",2025-08-21T22:17:44.441Z
+12,E2_BattleMiner_localization,Enemy move.,La Minera Jennifer utilitza ESQUIVAR!,WRITE.DialogContainer.1,Miner Jenny uses reflection!,"",2025-08-21T22:17:44.441Z
+13,E2_BattleMiner_localization,Enemy move.,La Minera Jennifer utilitza INSULT.,WRITE.DialogContainer.34,Miner Jenny uses CURSE.,"",2025-08-21T22:17:44.441Z
+14,E2_BattleMiner_localization,Enemy move.,La Minera Jennifer utilitza LLANÇAMENT DE CARBÓ.,WRITE.DialogContainer.42,Miner Jenny uses COAL THROW.,"",2025-08-21T22:17:44.441Z
+15,E2_BattleMiner_localization,Enemy move.,La Minera Jennifer utilitza PALA.,WRITE.DialogContainer.44,Miner Jenny uses SHOVEL.,"",2025-08-21T22:17:44.441Z
+16,E2_BattleMiner_localization,Enemy move.,La Minera Jennifer utilitza COP DE CASC.,WRITE.DialogContainer.46,Miner Jenny uses HELMET SMASH.,"",2025-08-21T22:17:44.441Z
+17,E2_BattleMiner_localization,Battle text.,Com respondràs?,WRITE.DialogContainer.9,How will you respond?,"",2025-08-21T22:17:44.441Z
+18,E2_BattleMiner_localization,Player move.,Grunyit,WRITE.DialogContainer.76,Grunt,"",2025-08-21T22:17:44.441Z
+19,E2_BattleMiner_localization,"",Utilitzes Grunyit. La Minera Jennifer s'enfada.,WRITE.DialogContainer.12,You Grunt. Miner Jenny becomes angry.,"",2025-08-21T22:17:44.441Z
+20,E2_BattleMiner_localization,Player move.,Bram,WRITE.DialogContainer.79,Bray,"",2025-08-21T22:17:44.441Z
+21,E2_BattleMiner_localization,"",Utilitzes Bram. La Minera Jennifer fa cara de confusa.,WRITE.DialogContainer.14,You Bray. Miner Jenny is confused.,"",2025-08-21T22:17:44.441Z
+22,E2_BattleMiner_localization,Player move.,Placatge,WRITE.DialogContainer.78,Tackle,"",2025-08-21T22:17:44.441Z
+23,E2_BattleMiner_localization,"",Utilitzes Placatge!,WRITE.DialogContainer.20,You Tackle!,"",2025-08-21T22:17:44.441Z
+24,E2_BattleMiner_localization,Player move.,Coça Doble,WRITE.DialogContainer.75,Double Kick,"",2025-08-21T22:17:44.441Z
+25,E2_BattleMiner_localization,"",Utilitzes Coça Doble!,WRITE.DialogContainer.22,You Double Kick!,"",2025-08-21T22:17:44.441Z
+26,E2_BattleMiner_localization,Player move.,Envestida,WRITE.DialogContainer.74,Stomp,"",2025-08-21T22:17:44.441Z
+27,E2_BattleMiner_localization,"",Utilitzes Envestida. És molt efectiva!,WRITE.DialogContainer.18,You Stomp. It's very effective!,"",2025-08-21T22:17:44.441Z
+28,E2_BattleMiner_localization,Player move.,Caparrada,WRITE.DialogContainer.80,Headbutt,"",2025-08-21T22:17:44.441Z
+29,E2_BattleMiner_localization,"",Utilitzes Caparrada! És molt efectiva!,WRITE.DialogContainer.24,You Headbutt! It's very effective!,"",2025-08-21T22:17:44.441Z
+30,E2_BattleMiner_localization,Battle text.,No té efecte.,WRITE.DialogContainer.57,It has no effect.,"",2025-08-21T22:17:44.441Z
+31,E2_BattleMiner_localization,Battle text.,No té gaire efecte...,WRITE.DialogContainer.59,It's not very effective...,"",2025-08-21T22:17:44.441Z
+32,E2_BattleMiner_localization,Battle text.,Això té efecte!,WRITE.DialogContainer.61,It's effective!,"",2025-08-21T22:17:44.441Z
+33,E2_BattleMiner_localization,Battle text.,Això té un súper efecte!,WRITE.DialogContainer.63,It's super effective!,"",2025-08-21T22:17:44.441Z
+2,E2_ChurchInt_localization,Hard stands in front of a painting of a donkey and a prophet.,Hmm.,SAY.Dialog:Church.1.Hard Ass,Hmm.,"",2025-08-21T22:17:44.441Z
+2,E2_TheatreInt_localization,Hard Ass stands on stage.,Aquest lloc put.,SAY.Dialog:Theatre.1.Hard Ass,This place stinks.,"",2025-08-21T22:17:44.441Z
+3,E2_ButtesHouse_localization,Hard Ass enters Mr. Butte's house from the bottom floor.,Sento alguna cosa al pis de dalt.,SAY.Dialog:ExitAttempt.1.Hard Ass,I hear something upstairs.,"",2025-08-21T22:17:44.441Z
+4,E2_ButtesHouse_localization,"Upon heading upstairs, Hard Ass finds Mr. Butte, who is drunk.",*glup glup* Qui hi ha?,SAY.Dialog:Butte.1.???,*glug glug* Is someone there?,"",2025-08-21T22:17:44.441Z
+5,E2_ButtesHouse_localization,"","Què és això, un ruc?",SAY.Dialog:Butte.8.???,Is that a donkey?,"",2025-08-21T22:17:44.441Z
+6,E2_ButtesHouse_localization,"","Soc jo, el Sr. Roca. L'Amo.",SAY.Dialog:Butte.5.Mr. Butte,"It's me, Mr. Butte. The Boss.","",2025-08-21T22:17:44.441Z
+7,E2_ButtesHouse_localization,"",*glup glup*,SAY.Dialog:Butte.10.Mr. Butte,*glug glug*,"",2025-08-21T22:17:44.441Z
+8,E2_ButtesHouse_localization,"",La Mina ha fet fallida.,SAY.Dialog:Butte.13.Mr. Butte,The Mine's gone bankrupt.,"",2025-08-21T22:17:44.441Z
+9,E2_ButtesHouse_localization,"",Ho he perdut... tot.,SAY.Dialog:Butte.9.Mr. Butte,I lost... everything.,"",2025-08-21T22:17:44.441Z
+10,E2_ButtesHouse_localization,"",Ai... Suposo que reemplaçar-vos per Màquines no va servir de res.,SAY.Dialog:Butte.12.Mr. Butte,*sigh* I guess replacing you donkeys made no difference.,"",2025-08-21T22:17:44.441Z
+11,E2_ButtesHouse_localization,"","Però els negocis són els negocis, saps?",SAY.Dialog:Butte.14.Mr. Butte,"But business is business, you know?","",2025-08-21T22:17:44.441Z
+12,E2_ButtesHouse_localization,"",Noves Màquines per una nova era.,SAY.Dialog:Butte.18.Mr. Butte,New Machines for a new era.,"",2025-08-21T22:17:44.441Z
+13,E2_ButtesHouse_localization,"",No pots explotar una Mina de Carbó només amb rucs—som al segle XXI!,SAY.Dialog:Butte.17.Mr. Butte,You can't run a Coal Mine with just donkeys—it's the 21st century!,"",2025-08-21T22:17:44.441Z
+14,E2_ButtesHouse_localization,"",*glup glup*,SAY.Dialog:Butte.16.Mr. Butte,*glug glug*,"",2025-08-21T22:17:44.441Z
+15,E2_ButtesHouse_localization,"",El món crema i Déu m'envia un Ase enlloc d'un Àngel.,SAY.Dialog:Butte.15.Mr. Butte,The world is burning and God sends me an Ass instead of an Angel.,"",2025-08-21T22:17:44.441Z
+16,E2_ButtesHouse_localization,"",Potser és un senyal?,SAY.Dialog:Butte.21.Mr. Butte,Maybe it's a sign?,"",2025-08-21T22:17:44.441Z
+17,E2_ButtesHouse_localization,"","Ah, què collons. Mira'm. Ja torno a parlar amb un ruc...",SAY.Dialog:Butte.20.Mr. Butte,"Ah, what the hell. Look at me. Talking to a donkey again...","",2025-08-21T22:17:44.441Z
+18,E2_ButtesHouse_localization,"",No m'estranya que la Gemma em deixés...,SAY.Dialog:Butte.54.Mr. Butte,No wonder Sandy left me...,"",2025-08-21T22:17:44.441Z
+19,E2_ButtesHouse_localization,Screen wipe (transition) to a battle between Mr. Butte and Hard Ass.,...,SAY.Dialog:Butte.19.Hard Ass,...,"",2025-08-21T22:17:44.441Z
+20,E2_ButtesHouse_localization,If Hard Ass attempts to leave.,...,SAY.Dialog: ExitAttempt2F.1.Hard Ass,...,"",2025-08-21T22:17:44.441Z
+21,E2_ButtesHouse_localization,"After killing Mr. Butte in the battle. Hard Ass stands in Mr. Butte's house, everything is on fire.",Un món sense Humans...,SAY.Dialog:PostBattleNewConviction.1.Hard Ass,A world without Humans...,"",2025-08-21T22:17:44.441Z
+22,E2_ButtesHouse_localization,Hard Ass can try to leave now.,Un món on els Ases són el seu propi Amo...,SAY.Dialog:PostBattleNewConviction.14.Hard Ass,A world where Asses are their own Masters...,"",2025-08-21T22:17:44.441Z
+23,E2_ButtesHouse_localization,"As Hard Ass attempts to leave, the door caves in.",La sortida està bloquejada.,SAY.Dialog: PostBattleExitAttempt.8.Hard Ass,The way out is blocked.,"",2025-08-21T22:17:44.441Z
+24,E2_ButtesHouse_localization,"",He de tornar amb el Ramat.,SAY.Dialog: PostBattleExitAttempt.15.Hard Ass,I have to get back to the Herd.,"",2025-08-21T22:17:44.441Z
+25,E2_ButtesHouse_localization,The roof collapses on Hard Ass.,AHHHH!! L'ORELLA!,SAY.Dialog: PostBattleExitAttempt.5.Hard Ass,AHHHH!! MY EAR!,"",2025-08-21T22:17:44.441Z
+3,E2_BattleButte_localization,Battle UI.,Fortalase,WRITE.DialogContainer.75,Hard Ass,"",2025-08-21T22:17:44.441Z
+4,E2_BattleButte_localization,Battle UI.,Sr. Roca,WRITE.DialogContainer.76,Mr. Butte,"",2025-08-21T22:17:44.441Z
+5,E2_BattleButte_localization,Battle text.,El Sr. Roca t'observa confús.,WRITE.DialogContainer.1,Mr. Butte stares at you confused.,"",2025-08-21T22:17:44.441Z
+6,E2_BattleButte_localization,Enemy dialogue.,Per què em mires així?,WRITE.DialogContainer.71,What's with that look?,"",2025-08-21T22:17:44.441Z
+7,E2_BattleButte_localization,Enemy dialogue. If Butte's health is less than 40%.,Per què m'ataques?\nNo ho entenc!,WRITE.DialogContainer.30,Why are you hurting me?\nI don't understand!,"",2025-08-21T22:17:44.441Z
+8,E2_BattleButte_localization,Enemy dialogue. Butte is about to die.,Em penedeixo de tantes coses...,WRITE.DialogContainer.73,I have so many regrets...,"",2025-08-21T22:17:44.441Z
+9,E2_BattleButte_localization,Battle text.,El Sr. Roca respon.,WRITE.DialogContainer.36,Mr. Butte makes a move.,"",2025-08-21T22:17:44.441Z
+10,E2_BattleButte_localization,Enemy move.,El Sr. Roca utilitza BEGUDA.,WRITE.DialogContainer.34,Mr. Butte uses Drink.,"",2025-08-21T22:17:44.441Z
+11,E2_BattleButte_localization,Enemy dialogue.,UÀAA! *glup*,WRITE.DialogContainer.32,WAHHH! *glug*,"",2025-08-21T22:17:44.441Z
+12,E2_BattleButte_localization,"",El Sr. Roca augmenta Embriaguesa.,WRITE.DialogContainer.57,Mr. Butte increases Intoxication.,"",2025-08-21T22:17:44.441Z
+13,E2_BattleButte_localization,Enemy move.,El Sr. Roca utilitza EXCUSES.,WRITE.DialogContainer.42,Mr. Butte uses Equivocate.,"",2025-08-21T22:17:44.441Z
+14,E2_BattleButte_localization,Enemy dialogue.,Només mirava de guanyar diners!\nHo has d'entendre!,WRITE.DialogContainer.69,I was just trying to make money!\nYou gotta understand!,"",2025-08-21T22:17:44.441Z
+15,E2_BattleButte_localization,"",EXCUSES fracassa.,WRITE.DialogContainer.59,Equivocate fails.,"",2025-08-21T22:17:44.441Z
+16,E2_BattleButte_localization,Enemy move.,El Sr. Roca utilitza SÚPLICA.,WRITE.DialogContainer.46,Mr. Butte uses Plead.,"",2025-08-21T22:17:44.441Z
+17,E2_BattleButte_localization,Enemy dialogue.,Que no he patit prou?,WRITE.DialogContainer.48,Haven't I lost enough already?,"",2025-08-21T22:17:44.441Z
+18,E2_BattleButte_localization,"",SÚPLICA fracassa.,WRITE.DialogContainer.61,Plead fails.,"",2025-08-21T22:17:44.441Z
+19,E2_BattleButte_localization,Enemy move.,El Sr. Roca utilitza ESCAPATÒRIA.,WRITE.DialogContainer.44,Mr. Butte uses Flee.,"",2025-08-21T22:17:44.441Z
+20,E2_BattleButte_localization,"",ESCAPATÒRIA fracassa.,WRITE.DialogContainer.63,Flee fails.,"",2025-08-21T22:17:44.441Z
+21,E2_BattleButte_localization,Enemy dialogue.,Au! El turmell!,WRITE.DialogContainer.50,"Ow, my ankle!","",2025-08-21T22:17:44.441Z
+22,E2_BattleButte_localization,Battle text.,Com respondràs?,WRITE.DialogContainer.9,How will you respond?,"",2025-08-21T22:17:44.441Z
+23,E2_BattleButte_localization,Player move.,Utilitzes GRUNYIT.,WRITE.DialogContainer.12,You Grunt.,"",2025-08-21T22:17:44.441Z
+24,E2_BattleButte_localization,"",Utilitzes BRAM.,WRITE.DialogContainer.14,You Bray.,"",2025-08-21T22:17:44.441Z
+25,E2_BattleButte_localization,Player move.,Envestida,WRITE.DialogContainer.79,Stomp,"",2025-08-21T22:17:44.441Z
+26,E2_BattleButte_localization,"",Utilitzes ENVESTIDA. És molt efectiva!,WRITE.DialogContainer.18,You Stomp. It's very effective!,"",2025-08-21T22:17:44.441Z
+27,E2_BattleButte_localization,Player move.,Placatge,WRITE.DialogContainer.77,Tackle,"",2025-08-21T22:17:44.441Z
+28,E2_BattleButte_localization,"",Utilitzes PLACATGE!,WRITE.DialogContainer.20,You Tackle!,"",2025-08-21T22:17:44.441Z
+29,E2_BattleButte_localization,Player move.,Coça Doble,WRITE.DialogContainer.78,Double Kick,"",2025-08-21T22:17:44.441Z
+30,E2_BattleButte_localization,"",Utilitzes COÇA DOBLE!,WRITE.DialogContainer.22,You Double Kick!,"",2025-08-21T22:17:44.441Z
+31,E2_BattleButte_localization,Player move.,Caparrada,WRITE.DialogContainer.80,Headbutt,"",2025-08-21T22:17:44.441Z
+32,E2_BattleButte_localization,"",Utilitzes CAPARRADA! És molt efectiva!,WRITE.DialogContainer.24,You Headbutt! It's very effective!,"",2025-08-21T22:17:44.441Z
+3,E2_Confession_localization,Nice Ass arrives at the Outhouse.,*ploriqueja*,SAY.Dialog:Confession.18.Sad Ass,*whimper*,"",2025-08-21T22:17:44.441Z
+4,E2_Confession_localization,"",Tristase! Deixa d'amagar-te a la Comuna!,SAY.Dialog:Confession.19.Nice Ass,Sad Ass! Quit hiding in the outhouse!,"",2025-08-21T22:17:44.441Z
+5,E2_Confession_localization,"",Bellase?,SAY.Dialog:Confession.40.Sad Ass,Nice Ass?,"",2025-08-21T22:17:44.441Z
+6,E2_Confession_localization,Dialogue option 1.1.,Què fas aquí dins?,MENU.Dialog:Confession.20,Why are you in there?,"",2025-08-21T22:17:44.441Z
+7,E2_Confession_localization,"",Què fas aquí dins?,SAY.Dialog:Confession.35.Nice Ass,Why are you in there?,"",2025-08-21T22:17:44.441Z
+8,E2_Confession_localization,"",No tinc forces per moure'm... Estic tan sol...,SAY.Dialog:Confession.36.Sad Ass,I don't have it in me to move... I'm all alone...,"",2025-08-21T22:17:44.441Z
+9,E2_Confession_localization,Jump to line 14.,"Aix, Camarada, no és veritat! Estem tots amb tu. No estàs sol!",SAY.Dialog:Confession.37.Nice Ass,"Gee Comrade, that's not true! All of us care about you. We're here for ya!","",2025-08-21T22:17:44.441Z
+10,E2_Confession_localization,Dialogue option 1.2.,"Va, Camarada, hem de sortir d'aquí!",MENU.Dialog:Confession.21,"C'mon Comrade, we have to go now!","",2025-08-21T22:17:44.441Z
+11,E2_Confession_localization,"","Va, Camarada, hem de sortir d'aquí!",SAY.Dialog:Confession.31.Nice Ass,"C'mon Comrade, we have to go now!","",2025-08-21T22:17:44.441Z
+12,E2_Confession_localization,"",Jo em quedo aquí...,SAY.Dialog:Confession.32.Sad Ass,I'm staying put...,"",2025-08-21T22:17:44.441Z
+13,E2_Confession_localization,Jump to line 14.,"No tenim temps per a això, Tristase! Pel que més vulguis!",SAY.Dialog:Confession.216.Nice Ass,"Sad Ass, now is not the time for this, please!","",2025-08-21T22:17:44.441Z
+14,E2_Confession_localization,Dialogue branches converge here.,"Si us plau, ves-te'n...",SAY.Dialog:Confession.240.Sad Ass,Just go away...,"",2025-08-21T22:17:44.441Z
+15,E2_Confession_localization,Dialogue option 2.1.,Brama fort,MENU.Dialog:Confession.47,Bray loudly.,"",2025-08-21T22:17:44.441Z
+16,E2_Confession_localization,Jump to line 19.,"Prou, si us plau...",SAY.Dialog:Confession.58.Sad Ass,Please stop...,"",2025-08-21T22:17:44.441Z
+17,E2_Confession_localization,Dialogue option 2.2.,Etziba una coça a la porta,MENU.Dialog:Confession.48,Kick the door.,"",2025-08-21T22:17:44.441Z
+18,E2_Confession_localization,Jump to line 19.,No entris!,SAY.Dialog:Confession.52.Sad Ass,Don't come in!,"",2025-08-21T22:17:44.441Z
+19,E2_Confession_localization,Dialogue branches converge here.,Soc un monstre... Una bèstia inútil...,SAY.Dialog:Confession.62.Sad Ass,I'm a monster... A worthless beast...,"",2025-08-21T22:17:44.441Z
+20,E2_Confession_localization,Dialogue option 3.1.,No ets inútil!,MENU.Dialog:Confession.64,You're not worthless!,"",2025-08-21T22:17:44.441Z
+21,E2_Confession_localization,"",No ets inútil!,SAY.Dialog:Confession.68.Nice Ass,You're not worthless!,"",2025-08-21T22:17:44.441Z
+22,E2_Confession_localization,"",HO SOC!,SAY.Dialog:Confession.241.Sad Ass,I AM!,"",2025-08-21T22:17:44.441Z
+23,E2_Confession_localization,"",Em passo el dia sense fer res...,SAY.Dialog:Confession.69.Sad Ass,I spend my days doing nothing...,"",2025-08-21T22:17:44.441Z
+24,E2_Confession_localization,"",Només recreant-me en el meu dolor...,SAY.Dialog:Confession.70.Sad Ass,Just wallowing in my grief...,"",2025-08-21T22:17:44.441Z
+25,E2_Confession_localization,Jump to line 30.,Jo... Jo no volia que se n'anés tot de mare...,SAY.Dialog:Confession.79.Sad Ass,I-I didn't mean for things to get this out of control...,"",2025-08-21T22:17:44.441Z
+26,E2_Confession_localization,Dialogue option 3.2.,"Ets bonic, Tristase.",MENU.Dialog:Confession.65,"You're beautiful, Sad Ass.","",2025-08-21T22:17:44.441Z
+27,E2_Confession_localization,"","Ets bonic, Tristase.",SAY.Dialog:Confession.74.Nice Ass,"You're beautiful, Sad Ass.","",2025-08-21T22:17:44.441Z
+28,E2_Confession_localization,"",No és veritat... Estic tan prim que se'm veuen les costelles sota el pelatge.,SAY.Dialog:Confession.75.Sad Ass,You're lying... I'm so skinny you can see my ribs through my fur...,"",2025-08-21T22:17:44.441Z
+29,E2_Confession_localization,Jump to line 30.,Estic exhaust... Amb prou feines he pogut tornar...,SAY.Dialog:Confession.76.Sad Ass,I'm so tired... I barely made it back...,"",2025-08-21T22:17:44.441Z
+30,E2_Confession_localization,Dialogue branches converge here.,"Mira, no sé de què parles—",SAY.Dialog:Confession.82.Nice Ass,"Listen, I don't know what you're talking about—","",2025-08-21T22:17:44.441Z
+31,E2_Confession_localization,"",Bellase...?,SAY.Dialog:Confession.83.Sad Ass,Nice Ass...?,"",2025-08-21T22:17:44.441Z
+32,E2_Confession_localization,"",Algú ha pres mal a l'incendi...?,SAY.Dialog:Confession.84.Sad Ass,Has anyone been hurt in the fire...?,"",2025-08-21T22:17:44.441Z
+33,E2_Confession_localization,Dialogue option 4.1.,Digue-li que l'Honradase ha mort en caure dins del pou.,MENU.Dialog:Confession.85,Tell him Trusty Ass died falling down the well.,"",2025-08-21T22:17:44.441Z
+34,E2_Confession_localization,"",L'Honradase ha caigut dins del pou mirant de treure'n aigua... i ha mort.,SAY.Dialog:Confession.89.Nice Ass,Trusty Ass fell down the well trying to get water...and died.,"",2025-08-21T22:17:44.441Z
+35,E2_Confession_localization,"",L'Honradase no...,SAY.Dialog:Confession.90.Sad Ass,Not Trusty Ass...,"",2025-08-21T22:17:44.441Z
+36,E2_Confession_localization,"",HIIIIIII HÒOOOOO!,SAY.Dialog:Confession.91.Sad Ass,HEEEEHAWWWWW!,"",2025-08-21T22:17:44.441Z
+37,E2_Confession_localization,"",HIIIIIII HÒOOOOO!!,SAY.Dialog:Confession.115.Sad Ass,HEEEEHAWWWWW!!,"",2025-08-21T22:17:44.441Z
+38,E2_Confession_localization,"",HIIIIIII HÒOOOOO!!!,SAY.Dialog:Confession.114.Sad Ass,HEEEEHAWWWWW!!!,"",2025-08-21T22:17:44.441Z
+39,E2_Confession_localization,Jump to line 51.,ÉS TOT CULPA MEVA.,SAY.Dialog:Confession.113.Sad Ass,IT'S ALL MY FAULT.,"",2025-08-21T22:17:44.441Z
+40,E2_Confession_localization,Dialogue option 4.2.,Digue-li que tots estan bé.,MENU.Dialog:Confession.86,Tell him everyone is fine.,"",2025-08-21T22:17:44.441Z
+41,E2_Confession_localization,"",Tots estan bé!,SAY.Dialog:Confession.95.Nice Ass,Everyone is fine!,"",2025-08-21T22:17:44.441Z
+42,E2_Confession_localization,Jump to line 43 or 50.,I els Humans?,SAY.Dialog:Confession.96.Sad Ass,And the Humans?,"",2025-08-21T22:17:44.441Z
+43,E2_Confession_localization,Dialogue option 4.2.A.,"Estan atrapats a casa seva, cremant vius.",MENU.Dialog:Confession.98,They're trapped inside their homes burning alive.,"",2025-08-21T22:17:44.441Z
+44,E2_Confession_localization,"","Estan atrapats a casa seva, cremant vius.",SAY.Dialog:Confession.107.Nice Ass,They're trapped inside their homes burning alive.,"",2025-08-21T22:17:44.441Z
+45,E2_Confession_localization,"",OH NO!!!,SAY.Dialog:Confession.109.Sad Ass,OH NO!!!,"",2025-08-21T22:17:44.441Z
+46,E2_Confession_localization,"",HIIIIIII HÒOOOOO,SAY.Dialog:Confession.138.Sad Ass,HEEEEHAWWWWW,"",2025-08-21T22:17:44.441Z
+47,E2_Confession_localization,"",HIIIIIII HÒOOOOO,SAY.Dialog:Confession.139.Sad Ass,HEEEEHAWWWWW,"",2025-08-21T22:17:44.441Z
+48,E2_Confession_localization,"",HIIIIIII HÒOOOOO,SAY.Dialog:Confession.140.Sad Ass,HEEEEHAWWWWW,"",2025-08-21T22:17:44.441Z
+49,E2_Confession_localization,Jump to line 51.,ÉS TOT CULPA MEVA.,SAY.Dialog:Confession.141.Sad Ass,IT'S ALL MY FAULT.,"",2025-08-21T22:17:44.441Z
+50,E2_Confession_localization,"Dialogue option 4.2.B.
+Jump to line 51.",Els altres estan rescatant els Humans ara mateix.,MENU.Dialog:Confession.99,The others are rescuing the Humans as we speak.,"",2025-08-21T22:17:44.441Z
+51,E2_Confession_localization,Dialogue branches converge here.,Estic segura que els altres estan rescatant els Humans ara mateix.,SAY.Dialog:Confession.101.Nice Ass,I'm sure the others are rescuing the Humans as we speak.,"",2025-08-21T22:17:44.441Z
+52,E2_Confession_localization,"",Jo només volia ajudar...,SAY.Dialog:Confession.119.Sad Ass,I was just trying to help...,"",2025-08-21T22:17:44.441Z
+53,E2_Confession_localization,"","Càsum, què vols dir?",SAY.Dialog:Confession.120.Nice Ass,"Golly, what do you mean?","",2025-08-21T22:17:44.441Z
+54,E2_Confession_localization,"","Només volia destruir una de les Màquines Rodadores dels Humans, no calar-li foc a tot!",SAY.Dialog:Confession.123.Sad Ass,"I only meant to destroy one of the Humans' ugly Car-Machines, not set everything ablaze!!","",2025-08-21T22:17:44.441Z
+55,E2_Confession_localization,"",M'has de creure!,SAY.Dialog:Confession.124.Sad Ass,You gotta believe me!,"",2025-08-21T22:17:44.441Z
+56,E2_Confession_localization,Dialogue option 5.1.,"Qualsevol pot tenir un accident, podem solucionar-ho!",MENU.Dialog:Confession.121,"Accidents happen all the time, we can fix this!","",2025-08-21T22:17:44.441Z
+57,E2_Confession_localization,"","Qualsevol pot tenir un accident, podem solucionar-ho!",SAY.Dialog:Confession.126.Nice Ass,"Accidents happen all the time, we can fix this!","",2025-08-21T22:17:44.441Z
+58,E2_Confession_localization,"",No hi ha marxa enrere...,SAY.Dialog:Confession.127.Sad Ass,There's no going back...,"",2025-08-21T22:17:44.441Z
+59,E2_Confession_localization,Jump to line 64.,"Et prometo que podem! Però càsum dena, vine amb mi ara mateix!",SAY.Dialog:Confession.143.Nice Ass,I promise we can! But by golly you have to come with me now!,"",2025-08-21T22:17:44.441Z
+60,E2_Confession_localization,Dialogue option 5.2.,Tu has provocat l'incendi...?,MENU.Dialog:Confession.122,You set the fire...?,"",2025-08-21T22:17:44.441Z
+61,E2_Confession_localization,"",Tu has provocat l'incendi?,SAY.Dialog:Confession.132.Nice Ass,You set the fire?,"",2025-08-21T22:17:44.441Z
+62,E2_Confession_localization,"",...,SAY.Dialog:Confession.133.Sad Ass,...,"",2025-08-21T22:17:44.441Z
+63,E2_Confession_localization,Jump to line 64.,"La Granja—casa nostra! Tristase, com has pogut?!",SAY.Dialog:Confession.134.Nice Ass,"The Farm—our home! Sad Ass, how could you?!","",2025-08-21T22:17:44.441Z
+64,E2_Confession_localization,Dialogue branches converge here.,No formo part de la Granja...,SAY.Dialog:Confession.147.Sad Ass,I don't belong on this Farm...,"",2025-08-21T22:17:44.441Z
+65,E2_Confession_localization,"",Tinc el cor enterrat sota tones de carbó...,SAY.Dialog:Confession.239.Sad Ass,My heart is buried under layers of coal...,"",2025-08-21T22:17:44.441Z
+66,E2_Confession_localization,"",Per què la vida és tan dolorosa?,SAY.Dialog:Confession.237.Sad Ass,Is life supposed to be so full of pain?,"",2025-08-21T22:17:44.441Z
+67,E2_Confession_localization,Dialogue option 6.1.,Reposa el cap a la porta en silenci.,MENU.Dialog:Confession.149,Lean your head against the door in silence.,"",2025-08-21T22:17:44.441Z
+68,E2_Confession_localization,Jump to line 71.,...Ets aquí encara?,SAY.Dialog:Confession.304.Sad Ass,...Are you still there?,"",2025-08-21T22:17:44.441Z
+69,E2_Confession_localization,Dialogue option 6.2.,Contempla com es crema la Granja.,MENU.Dialog:Confession.150,Look back at the Farm as it burns.,"",2025-08-21T22:17:44.441Z
+70,E2_Confession_localization,Jump to line 71.,...Ets aquí encara?,SAY.Dialog:Confession.305.Sad Ass,...Are you still there?,"",2025-08-21T22:17:44.441Z
+71,E2_Confession_localization,Dialogue branches converge here.,Digue'm la veritat... Recordes de quin color eren els ulls de la Perase?,SAY.Dialog:Confession.167.Sad Ass,Tell me the truth... Do you remember the colour of Lazy's beautiful eyes?,"",2025-08-21T22:17:44.441Z
+72,E2_Confession_localization,"Dialogue option 7.1.
+Jump to line 75.",Marró fosc,MENU.Dialog:Confession.168,Dark Brown,"",2025-08-21T22:17:44.441Z
+73,E2_Confession_localization,"Dialogue option 7.2. 
+Jump to Line 88.",Gris fosc,MENU.Dialog:Confession.185,Dark Grey,"",2025-08-21T22:17:44.441Z
+74,E2_Confession_localization,"Dialogue option 7.3.
+Jump to line 75.",Blau fosc,MENU.Dialog:Confession.184,Dark Blue,"",2025-08-21T22:17:44.441Z
+75,E2_Confession_localization,If the Player chooses the wrong eye colour.,Ja no te'n recordes...,SAY.Dialog:Confession.180.Sad Ass,You don't...,"",2025-08-21T22:17:44.441Z
+76,E2_Confession_localization,"","No, espera! Sí que me'n recordo!\nEren:",SAY.Dialog:Confession.181.Nice Ass,No wait! I remember! They were:,"",2025-08-21T22:17:44.441Z
+77,E2_Confession_localization,"Dialogue option 8.1.
+Jump to line 75.",Marró fosc,MENU.Dialog:Confession.187,Dark Brown,"",2025-08-21T22:17:44.441Z
+78,E2_Confession_localization,"Dialogue option 8.2. 
+Jump to Line 81.",Gris fosc,MENU.Dialog:Confession.190,Dark Grey,"",2025-08-21T22:17:44.441Z
+79,E2_Confession_localization,"Dialogue option 8.3.
+Jump to line 75.",Blau fosc,MENU.Dialog:Confession.189,Dark Blue,"",2025-08-21T22:17:44.441Z
+80,E2_Confession_localization,If the Player chooses the correct eye colour.,Gris fosc!,SAY.Dialog:Confession.192.Nice Ass,Dark Grey!,"",2025-08-21T22:17:44.441Z
+81,E2_Confession_localization,"",Te'n recordes...?,SAY.Dialog:Confession.193.Sad Ass,You do remember...?,"",2025-08-21T22:17:44.441Z
+82,E2_Confession_localization,"","Vatua l'olla, és clar que sí!",SAY.Dialog:Confession.242.Nice Ass,"Gosh, of course I do!","",2025-08-21T22:17:44.441Z
+83,E2_Confession_localization,"","Bellase, jo no volia que passés això...",SAY.Dialog:Confession.194.Sad Ass,"Nice Ass, I never meant for this to happen...","",2025-08-21T22:17:44.441Z
+84,E2_Confession_localization,"","Si us plau, em promets mantenir el secret entre tu i jo...?",SAY.Dialog:Confession.197.Sad Ass,"Please, promise me you'll keep this secret between you and me...?","",2025-08-21T22:17:44.441Z
+85,E2_Confession_localization,"",La Granja ja no existeix...,SAY.Dialog:Confession.199.Nice Ass,The Farm is lost...,"",2025-08-21T22:17:44.441Z
+86,E2_Confession_localization,"",Guardaré el secret fins al dia que em mori.,SAY.Dialog:Confession.198.Nice Ass,I'll keep your secret for the rest of my life.,"",2025-08-21T22:17:44.441Z
+87,E2_Confession_localization,"","Ho sento molt, ja no podràs llaurar aquests camps...",SAY.Dialog:Confession.208.Sad Ass,"I'm sorry, you won't be able to plow these fields anymore...","",2025-08-21T22:17:44.441Z
+88,E2_Confession_localization,Transition to A3 World.,Eh? Està plovent...,SAY.Dialog:Confession.210.Sad Ass,Huh? It's raining...,"",2025-08-21T22:17:44.441Z
+3,E2_World_A3_localization,"Interactable Object, Sign.",Mina de Carbó Roca,SAY.Sign_TheMines.1.Dirty Sign,Butte Industry Coal Mines,"",2025-08-21T22:17:44.441Z
+4,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_TheMines.1.,Butte Industry Coal Mines,"",2025-08-21T22:17:44.441Z
+5,E2_World_A3_localization,"Interactable Object, Sign.",0 DIES DES DEL DARRER ACCIDENT,SAY.Sign_TheMinesEntrance.1.Warning Sign,0 DAYS SINCE LAST ACCIDENT,"",2025-08-21T22:17:44.441Z
+6,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_TheMinesEntrance.1.,0 DAYS SINCE LAST ACCIDENT,"",2025-08-21T22:17:44.441Z
+7,E2_World_A3_localization,"Interactable Object, Sign.","Benvinguts a la Granja de Talldevall. A l'oest, el remarcable Estable Històric i els nostres camps de blat.",SAY.Sign_WelcomeToFarm.1.Welcome Sign,"Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.","",2025-08-21T22:17:44.441Z
+8,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_WelcomeToFarm.1.,"Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.","",2025-08-21T22:17:44.441Z
+9,E2_World_A3_localization,"Interactable Object, Sign.","Al sud-oest, el Molí i el Graner d'Última Generació.",SAY.Sign_WelcomeToFarm.2.Welcome Sign,"To the southwest, our state of the art Mill and Granary.","",2025-08-21T22:17:44.441Z
+10,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_WelcomeToFarm.2.,"To the southwest, our state of the art Mill and Granary.","",2025-08-21T22:17:44.441Z
+11,E2_World_A3_localization,"Interactable Object, Sign.",NOVA Autopista Boncul: Connectant els Nuclis Rurals i la Ciutat,SAY.Sign_Highway.1.Official Sign,NEW Government Sponsored Highway—Connecting Urban and Rural Communities,"",2025-08-21T22:17:44.441Z
+12,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_Highway.1.,NEW Government Sponsored Highway—Connecting Urban and Rural Communities,"",2025-08-21T22:17:44.441Z
+13,E2_World_A3_localization,"Interactable Object, Sign.",Camí Vell a la Ciutat,SAY.Sign_MountainPath.1.Decrepit Sign,Old Mountain Trail to the City,"",2025-08-21T22:17:44.441Z
+14,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_MountainPath.1.,Old Mountain Trail to the City,"",2025-08-21T22:17:44.441Z
+15,E2_World_A3_localization,"Interactable Object, Sign.",Molí i Graner d'Última Generació,SAY.Sign_Mill.1.Fancy Sign,The State of the Art Mill and Granary,"",2025-08-21T22:17:44.441Z
+16,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_Mill.1.,The State of the Art Mill and Granary,"",2025-08-21T22:17:44.441Z
+17,E2_World_A3_localization,"Interactable Object, Sign.",La Comuna,SAY.Sign_Outhouse.1.Shitty Sign,The Outhouse,"",2025-08-21T22:17:44.441Z
+18,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_Outhouse.1.,The Outhouse,"",2025-08-21T22:17:44.441Z
+19,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_TheStable.1.,The Heritage Stable,"",2025-08-21T22:17:44.441Z
+20,E2_World_A3_localization,"Interactable Object, Sign.",L'Estable Històric,SAY.Sign_TheStable.1.Old Sign,The Heritage Stable,"",2025-08-21T22:17:44.441Z
+21,E2_World_A3_localization,"Interactable Object, Sign.",El Pou de Yafur,SAY.Sign_TheWell.1.Historic Sign,Ya'fur's Well,"",2025-08-21T22:17:44.441Z
+22,E2_World_A3_localization,"Interactable Object, Sign.","",SAY.Sign_TheWell.1.,Ya'fur's Well,"",2025-08-21T22:17:44.441Z
+23,E2_World_A3_localization,"Interactable Object, Sign.",TANCAT PER OBRES,SAY.Sign_MountainPath.6.,CLOSED FOR REPAIRS,"",2025-08-21T22:17:44.441Z
+25,E2_World_A3_localization,Nice Ass consoles Sad Ass as the rain starts to put out the fire.,"Tristase, la pluja és un senyal que podem tornar a començar!",SAY.Dialog:Finale.2.Nice Ass,"Sad Ass, this rain is a sign that we can start again!","",2025-08-21T22:17:44.441Z
+26,E2_World_A3_localization,"","Farem el que sabem fer millor—avançarem pas a pas, a poc a poc.",SAY.Dialog:Finale.45.Nice Ass,We'll do what we do best—move forward one little step at a time.,"",2025-08-21T22:17:44.441Z
+27,E2_World_A3_localization,"",Per més pedregós que sigui el camí.,SAY.Dialog:Finale.71.Nice Ass,No matter how uneven the ground.,"",2025-08-21T22:17:44.441Z
+28,E2_World_A3_localization,"",Estic convençuda que els nostres Camarades han pogut salvar els Humans.,SAY.Dialog:Finale.97.Nice Ass,I'm sure our Comrades have saved the Humans.,"",2025-08-21T22:17:44.441Z
+29,E2_World_A3_localization,"",I que els Humans han sortit al carrer a celebrar-ho.,SAY.Dialog:Finale.123.Nice Ass,And the Humans are in the streets cheering.,"",2025-08-21T22:17:44.441Z
+30,E2_World_A3_localization,"","Canten amb totes les seves forces i ballen, bojos d'alegria!",SAY.Dialog:Finale.149.Nice Ass,They are singing their hearts out and dancing their butts off!,"",2025-08-21T22:17:44.441Z
+31,E2_World_A3_localization,"",Cada any faran una de les seves festes per commemorar aquest dia!,SAY.Dialog:Finale.175.Nice Ass,They will make today one of their annual holidays.,"",2025-08-21T22:17:44.441Z
+32,E2_World_A3_localization,"",Erigiran estàtues d'or als heroics Ases i s'hi aplegaran per homenatjar-nos!,SAY.Dialog:Finale.189.Nice Ass,They will erect golden statues of heroic Asses and gather to commemorate us.,"",2025-08-21T22:17:44.441Z
+33,E2_World_A3_localization,"","Redena, n'hi haurà una fins i tot per a la Perase!",SAY.Dialog:Finale.201.Nice Ass,"Gosh, even one for Lazy Ass!","",2025-08-21T22:17:44.441Z
+34,E2_World_A3_localization,"",Desballestaran totes les Mâquines i se'n desfaran per sempre.,SAY.Dialog:Finale.211.Nice Ass,They will break down their Machines and throw them away.,"",2025-08-21T22:17:44.441Z
+35,E2_World_A3_localization,"",I els Humans mai més pensaran que som inútils.,SAY.Dialog:Finale.219.Nice Ass,And Humans will never call us worthless again.,"",2025-08-21T22:17:44.441Z
+36,E2_World_A3_localization,End of Episode 3.,"RENOI, TORNEM A TREBALLAR!",SAY.Dialog:Finale.225.Nice Ass,"YUPPERS, WE'RE GOING BACK TO WORK!","",2025-08-21T22:17:44.441Z

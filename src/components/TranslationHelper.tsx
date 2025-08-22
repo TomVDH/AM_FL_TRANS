@@ -174,7 +174,7 @@ const TranslationHelper: React.FC = () => {
     }
   };
   
-  const VERSION_HASH = 'v2.3.0';
+  const VERSION_HASH = 'v2.0.0';
   
   const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({});
   const [codexData, setCodexData] = useState<any>(null);

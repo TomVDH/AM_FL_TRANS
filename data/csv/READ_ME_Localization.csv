@@ -1,0 +1,573 @@
+# File: READ_ME_Localization
+# Processed: 2025-08-21T22:17:44.948Z
+# Sheets: 14
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+5,Export Summary,Numbers Table Name,"",Numbers Sheet Name,Excel Worksheet Name,"",2025-08-21T22:17:44.948Z
+8,Export Summary,Table 1,"","",Localization Manual,"",2025-08-21T22:17:44.948Z
+10,Export Summary,Table 1,"","",Names and World Overview,"",2025-08-21T22:17:44.948Z
+12,Export Summary,Table 1,"","",KO Wordplay,"",2025-08-21T22:17:44.948Z
+14,Export Summary,Table 1,"","",JP Wordplay,"",2025-08-21T22:17:44.948Z
+16,Export Summary,Table 1,"","",CA Wordplay,"",2025-08-21T22:17:44.948Z
+18,Export Summary,Table 1,"","",NL Wordplay,"",2025-08-21T22:17:44.948Z
+20,Export Summary,Table 1,"","",Spanish Wordplay,"",2025-08-21T22:17:44.948Z
+22,Export Summary,Table 1,"","",Turkish Wordplay,"",2025-08-21T22:17:44.948Z
+24,Export Summary,Table 1,"","",Characters,"",2025-08-21T22:17:44.948Z
+26,Export Summary,Table 1,"","",German,"",2025-08-21T22:17:44.948Z
+28,Export Summary,Table 1,"","",Timeline,"",2025-08-21T22:17:44.948Z
+30,Export Summary,Table 1,"","",Testing,"",2025-08-21T22:17:44.948Z
+32,Export Summary,Table 1,"","",French word play,"",2025-08-21T22:17:44.948Z
+19,Localization Manual,Female,"","",Trusty,"",2025-08-21T22:17:44.948Z
+20,Localization Manual,Female,"","",Nice,"",2025-08-21T22:17:44.948Z
+21,Localization Manual,Female,"","",Sturdy,"",2025-08-21T22:17:44.948Z
+22,Localization Manual,Female,"","",Sick,"",2025-08-21T22:17:44.948Z
+23,Localization Manual,Female,"","",Lazy,"",2025-08-21T22:17:44.948Z
+24,Localization Manual,Female,"","",Foal,"",2025-08-21T22:17:44.948Z
+25,Localization Manual,Female,"","",Smart,"",2025-08-21T22:17:44.948Z
+26,Localization Manual,Male,"","",Kick,"",2025-08-21T22:17:44.948Z
+27,Localization Manual,Male,"","",Big,"",2025-08-21T22:17:44.948Z
+28,Localization Manual,Male,"","",Thirsty,"",2025-08-21T22:17:44.948Z
+29,Localization Manual,Male,"","",Hard,"",2025-08-21T22:17:44.948Z
+30,Localization Manual,Male,"","",Sad,"",2025-08-21T22:17:44.948Z
+31,Localization Manual,Male,"","",Old,"",2025-08-21T22:17:44.948Z
+32,Localization Manual,Male,"","",Bad,"",2025-08-21T22:17:44.948Z
+33,Localization Manual,Male,"","",Slow,"",2025-08-21T22:17:44.948Z
+4,Names and World Overview,Trusty Ass,Foal (named by audience),Character Name,Old Ass,Bad Ass,2025-08-21T22:17:44.948Z
+5,Names and World Overview,Female,female,Sex,Male,Male,2025-08-21T22:17:44.948Z
+6,Names and World Overview,"First met as more of a listener than a leader, she is accepted as Old Ass's second in command. When she dies, she longs to be reassigned so that she can become a better leader.","Born after the fire in Episode 2, she has never known a world of Humans. She just wants to play. She's very naive.",Description,Classic Marxist/Leninist leader. Inspires the heard in his lofty speeches.,"A radical that wants to be left alone
+
+Pessimistic Edgy Philosophical and Political
+
+Is actually a Human who was turned into a donkey by the Gods by accident. (see Cole Butte below)",2025-08-21T22:17:44.948Z
+7,Names and World Overview,Never speaks until Ep 8.,"""Whoppee!"" ""WHOA"" ""UGH""  
+
+What if I want to play?",Dialog convention,"""Now where was I... Right... I was lamenting the struggles of our existence.""
+
+Injustice
+Protest
+Politics","Critical theory, philosophical, generally contemporary jaded leftist",2025-08-21T22:17:44.948Z
+9,Names and World Overview,Confianzurra,urra,Spanish,Viejurro,Cinicurro,2025-08-21T22:17:44.948Z
+10,Names and World Overview,Const-ânne,-anne,French,Âne-cien,Dissid-âne,2025-08-21T22:17:44.948Z
+11,Names and World Overview,Confiasna,urra,Portuguese,Anciasno,Burrebelde,2025-08-21T22:17:44.948Z
+12,Names and World Overview,Fedelasina,asina,Italian,Anziasino,Criticasino,2025-08-21T22:17:44.948Z
+13,Names and World Overview,Treu-Eselin,-Eselina,German,Alt-Esel,Radikal-Esel,2025-08-21T22:17:44.948Z
+14,Names and World Overview,Dost Eşek,Sıpa,Turkish,Kart Eşek,Ters Eşek,2025-08-21T22:17:44.948Z
+16,Names and World Overview,Biechtezel,-tje,Dutch,"Roste Rakker, Oude Smok","Strafbeest, Felle Gast",2025-08-21T22:17:44.948Z
+17,Names and World Overview,"","","",Ezeltje,Keetschopper,2025-08-21T22:17:44.948Z
+18,Names and World Overview,Honradase,-ase,Catalan,Saviase/ Vellase,Rudase,2025-08-21T22:17:44.948Z
+22,Names and World Overview,믿음 나귀/ 든든한 나귀/믿음직한 나귀/ 충직한 나귀,낭아지/나귀욤이,Korean,노장 나귀/노땅나귀/ 나귀 어르신/어르신 나귀/원로 나귀/시니어 나귀/리더 나귀/대장 나귀/나귀 (노조)위원장/멘토 나귀,불량 나귀/까칠한 나귀/문제 나귀/쎈 나귀/드센 나귀/존재감 나귀/꼬인 나귀,2025-08-21T22:17:44.948Z
+23,Names and World Overview,"믿음나귀 - Meeduhm nagwi 
+
+든든한 나귀 – Deundeunhan nagwi
+믿음직한 나귀 – Mideumjikhan nagwi
+충직한 나귀 – Chungjikhan nagwi","낭아지 — nang-Ah-Ji
+나귀욤이 — Nagwiyomi",Korean romanization,"노장 나귀 – Nohjang nagwi
+
+
+나귀 어르신 – Nagwi eoreusin
+어르신 나귀 – Eoreusin nagwi
+원로 나귀 – Wollo nagwi
+시니어 나귀 – Sinieo nagwi
+리더 나귀 – Rideo nagwi
+대장 나귀 – Daejang nagwi
+나귀 (노조)위원장 – Nagwi (nojo) wiwonjang
+멘토 나귀 – Mentor nagwi","불량 나귀 – Bullyang nagwi
+까칠한 나귀 – Kkachilhan nagwi
+문제 나귀 – Munje nagwi
+쎈 나귀 – Ssen nagwi
+드센 나귀 – Deusen nagwi
+존재감 나귀 – Jonjaegam nagwi
+꼬인 나귀 – Kkoin nagwi",2025-08-21T22:17:44.948Z
+24,Names and World Overview,"Faithful Donkey - Meeduhm nagwi
+
+Solid Donkey - Deundeunhan nagwi
+Trustworthy Donkey - Mideumjikhan nagwi
+Faithful Donkey - Chungjikhan nagwi","Nang-Ah-Ji — nang-Ah-Ji
+Nagwiyomi — Nagwiyomi",KO-EN translation,"Old Donkey – Nohjang nagwi
+
+Elder Donkey – Nagwi eoreusin
+Elder Donkey – Eoreusin nagwi
+Elder Donkey – Wollo nagwi
+Senior Donkey – Sinieo nagwi
+Leader Donkey – Rideo nagwi
+Captain Donkey – Daejang nagwi
+Donkey (Union) Chairman – Nagwi (nojo) wiwonjang
+Mentor Donkey – Mentor nagwi","Bad donkey – Bullyang nagwi
+Rough donkey – Kkachilhan nagwi
+Problem donkey – Munje nagwi
+Strong donkey – Ssen nagwi
+Strong donkey – Deusen nagwi
+Presence donkey – Jonjaegam nagwi
+Twisted donkey – Kkoin nagwi",2025-08-21T22:17:44.948Z
+38,Names and World Overview,Cole Butte / Cole-Machine,Ringmaster Rico,Character Name,Hugh G. Butte,Asshandler Wedgie,2025-08-21T22:17:44.948Z
+39,Names and World Overview,"Always a rebel and a bit jaded by being left behind by his mother at a young age. A robotics-wiz, he dreamed of going to Mecha City to make a difference in the world through science. He was forced to work in the mine after graduating. Became depressed after his father wasted his scholarship money. In the cave-in, he tries to save Lazy and when Lazy tries to 'send' herself, Cole's soul is sent to the Astral Plane, only to be rejected and return to his body, ultimately and mysteriously, transforming his body into that of a donkey.",The Ringmaster of the Big City Circus. He's all about bums in seats. He speaks like Job from Arrested Development.,Description,Alcoholic Mine boss. His diaries in Ep3 reveal his struggle to keep the Mine alive and his poor management skills. He used Cole's university scholarship money to buy a Boring Machine in an attempt to save the business. He is killed in Ep2 by Hard Ass.,Longterm worker at Derrerie's Factory. Smokes. Thinks most people are 'idiots'. Does the bare minimum. Female.,2025-08-21T22:17:44.948Z
+40,Names and World Overview,Pedro Polino de las Cachas,"Rico, el Maestro de Ceremonias",Spanish,Señor G. F. Polino de las Cachas,Cuidadora Nicola,2025-08-21T22:17:44.948Z
+41,Names and World Overview,Roch Labette,"Baptiste, le maitre de piste",French,Pierre Labette,Laquais Jessie,2025-08-21T22:17:44.948Z
+42,Names and World Overview,Pedro Grande do Rego,Mestre de picadeiro Celso,Portuguese,Sr. Uochinton Grande do Rego,Tratadora Carçola,2025-08-21T22:17:44.948Z
+43,Names and World Overview,Pietro Latrivella,"Mirco, Direttore del Circo",Italian,Guido Latrivella,Raccattasino Velia,2025-08-21T22:17:44.948Z
+44,Names and World Overview,Rocky Grubengräber,Zirkusdirektor Richie,German,Peter Grubengräber,Stalllburschin Sarah,2025-08-21T22:17:44.948Z
+45,Names and World Overview,Behlül Kuyukazan,Sirkçi Hilmi,Turkish,Adnan Kuyukazan / Adnan Bey,Cemile Götür,2025-08-21T22:17:44.948Z
+47,Names and World Overview,Cédric Vanscheetvelde,"Baptiste, de Circusdirecteur",Dutch,Herman K. Vanscheetvelde,Zakkenzeulster Zita,2025-08-21T22:17:44.948Z
+48,Names and World Overview,Jofre Roca/ Màquina Roca,El Gran Fregoli,Catalan,Pere Roca,"",2025-08-21T22:17:44.948Z
+49,Names and World Overview,田尻 炉波亜都,"",Japanese,田尻　小尻　水尻　川尻,"",2025-08-21T22:17:44.948Z
+51,Names and World Overview,김광석,"",Korean,김,"",2025-08-21T22:17:44.948Z
+53,Names and World Overview,#VALUE!,#VALUE!,KO-EN translation,#VALUE!,#VALUE!,2025-08-21T22:17:44.948Z
+65,Names and World Overview,"","","",Cengiz Kuyukazan,"",2025-08-21T22:17:44.948Z
+67,Names and World Overview,Prophet-Machine (M),"",English,Prophet-Machine (F),"",2025-08-21T22:17:44.948Z
+74,Names and World Overview,Profetische Machine,"",Dutch,Profetische Machine,"",2025-08-21T22:17:44.948Z
+75,Names and World Overview,Màquina Profeta,"",Catalan,Màquina Profeta,"",2025-08-21T22:17:44.948Z
+76,Names and World Overview,機械 / キカイ,"",Japanese,マシン,"",2025-08-21T22:17:44.948Z
+77,Names and World Overview,Kikai,"","",mashin,"",2025-08-21T22:17:44.948Z
+82,Names and World Overview,#VALUE!,#VALUE!,KO-EN translation,#VALUE!,#VALUE!,2025-08-21T22:17:44.948Z
+85,Names and World Overview,Ass,"",English,Donkey,"",2025-08-21T22:17:44.948Z
+86,Names and World Overview,Asnos / Asnas,"",Spanish,Burros,"",2025-08-21T22:17:44.948Z
+88,Names and World Overview,Asno / Burro / Jegue / Jumente,"",Portuguese,Burro / Jegue,"",2025-08-21T22:17:44.948Z
+89,Names and World Overview,Asino,"",Italian,Somari,"",2025-08-21T22:17:44.948Z
+90,Names and World Overview,Esel,"",German,Esel / Longohr / Dummkopf,"",2025-08-21T22:17:44.948Z
+92,Names and World Overview,kont / gat / aars / bips / achterwerk / achterste / reet / derrière / zitvlak,"",Dutch,Ezel / Muildier / Muilbeest,"",2025-08-21T22:17:44.948Z
+93,Names and World Overview,Ase,"",Catalan,Burro/a,"",2025-08-21T22:17:44.948Z
+94,Names and World Overview,ロバ,"",Japanese,驢馬,"",2025-08-21T22:17:44.948Z
+106,Names and World Overview,aa ii,"",Turkish,aa ii ah hi aah ih a'h h'ii,"",2025-08-21T22:17:44.948Z
+108,Names and World Overview,ihà/ ihò,"",Catalan,i'h hà hi hò 'i à iii ò'h,"",2025-08-21T22:17:44.948Z
+109,Names and World Overview,ヒーホー,"",Japanese,ヒィ　ホォ,"",2025-08-21T22:17:44.948Z
+113,Names and World Overview,#VALUE!,#VALUE!,KO-EN translation,#VALUE!,#VALUE!,2025-08-21T22:17:44.948Z
+116,Names and World Overview,Fannyside,"",Place name/Core Concepts,Fannyside Farm,"",2025-08-21T22:17:44.948Z
+117,Names and World Overview,The region in which the farm and mines are located. Like a province or area of a country.,"",Description,The Farm that the game starts on.,"",2025-08-21T22:17:44.948Z
+118,Names and World Overview,Las Posaderas,"",Spanish,Granja de Las Posaderas,"",2025-08-21T22:17:44.948Z
+119,Names and World Overview,Niquedouille,"",French,La ferme Niquedouille,"",2025-08-21T22:17:44.948Z
+120,Names and World Overview,Vale do Furo Fundo,"",Portuguese,Fazenda do Furo Fundo,"",2025-08-21T22:17:44.948Z
+121,Names and World Overview,Culonia,"",Italian,Cascina Culonia,"",2025-08-21T22:17:44.948Z
+122,Names and World Overview,Arsch-der-Welt,"",German,Arsch-der-Welt-Farm,"",2025-08-21T22:17:44.948Z
+123,Names and World Overview,Anırtan,"",Turkish,Anırtan Çiftliği,"",2025-08-21T22:17:44.948Z
+124,Names and World Overview,Muilegem,"",Dutch,De Boerderij van Muilegem,"",2025-08-21T22:17:44.948Z
+126,Names and World Overview,Talldevall,"",Catalan,Granja de Talldevall,"",2025-08-21T22:17:44.948Z
+127,Names and World Overview,ど田舎,"",Japanese,ど田舎農場,"",2025-08-21T22:17:44.948Z
+128,Names and World Overview,doinaka,"",Japanese romanization,doinaka-nojo,"",2025-08-21T22:17:44.948Z
+129,Names and World Overview,ウシロガワ,"","",ウシロガワ農場,"",2025-08-21T22:17:44.948Z
+130,Names and World Overview,ushirogawa,"","",ushirogawa - nojo,"",2025-08-21T22:17:44.948Z
+134,Names and World Overview,"Ass - Township - It sounds like Ass side. Myeon is an administrative unit but also side. Different chinese character but same korean sound. It sticks well to your tongue. Easiest most rounded pick. 
+Butt - Township
+Asshole - Township (it's written ""Academia town, but it sounds the same as asshole. It is the funniest,
+
+Stool village - This actually exists in Korea. From the list of the funniest names of locations.
+Kidney village - This actually exists in Korea. From the list of the funniest names of locations.","",KO-EN translation,#VALUE!,"",2025-08-21T22:17:44.948Z
+4,JP Wordplay,バカ,"",Stupid,馬鹿,"",2025-08-21T22:17:44.948Z
+5,JP Wordplay,おろか,"",Dumb,oroka,"",2025-08-21T22:17:44.948Z
+6,JP Wordplay,ケツ,"",Butt,けつ,"",2025-08-21T22:17:44.948Z
+8,JP Wordplay,くそ,"",Shit,クソ,"",2025-08-21T22:17:44.948Z
+9,JP Wordplay,うんこ,"",Poop,ウンコ,"",2025-08-21T22:17:44.948Z
+12,JP Wordplay,korobanai,"",転ばない,to not fall over,"",2025-08-21T22:17:44.948Z
+30,JP Wordplay,bakarashii,"",ばからしい／馬鹿らしい,na‑adj,"",2025-08-21T22:17:44.948Z
+31,JP Wordplay,bakappoi,"",ばかっぽい／馬鹿っぽい,i‑adj,"",2025-08-21T22:17:44.948Z
+32,JP Wordplay,bakageta,"",ばかげた／馬鹿げた,i‑adj,"",2025-08-21T22:17:44.948Z
+33,JP Wordplay,bakakusai,"",ばかくさい／馬鹿臭い,i‑adj,"",2025-08-21T22:17:44.948Z
+34,JP Wordplay,bakatakai,"",ばかたかい／馬鹿高い,i‑adj,"",2025-08-21T22:17:44.948Z
+35,JP Wordplay,bakadekai,"",ばかでかい／馬鹿でかい,i‑adj,"",2025-08-21T22:17:44.948Z
+36,JP Wordplay,bakashoujiki,"",ばかしょうじき／馬鹿正直,na‑adj,"",2025-08-21T22:17:44.948Z
+37,JP Wordplay,bakateinei,"",ばかていねい／馬鹿丁寧,na‑adj,"",2025-08-21T22:17:44.948Z
+38,JP Wordplay,bakayasui,"",ばかやすい／馬鹿安い,i‑adj,"",2025-08-21T22:17:44.948Z
+41,JP Wordplay,reba,"",〜（れ）ば,if --,"",2025-08-21T22:17:44.948Z
+44,JP Wordplay,osoi-roba,"",遅いロバ,おそロバ,"",2025-08-21T22:17:44.948Z
+46,JP Wordplay,oi,"",老い,老人,"",2025-08-21T22:17:44.948Z
+49,JP Wordplay,takai,"",高い,"high, expensive","",2025-08-21T22:17:44.948Z
+50,JP Wordplay,yasui,"",安い,cheap,"",2025-08-21T22:17:44.948Z
+51,JP Wordplay,hayai,"",早い,early,"",2025-08-21T22:17:44.948Z
+52,JP Wordplay,osoi,"",遅い,"late, slow","",2025-08-21T22:17:44.948Z
+53,JP Wordplay,ii / yoi,"",良い（いい）,good,"",2025-08-21T22:17:44.948Z
+54,JP Wordplay,warui,"",悪い,bad,"",2025-08-21T22:17:44.948Z
+55,JP Wordplay,atarashii,"",新しい,new,"",2025-08-21T22:17:44.948Z
+56,JP Wordplay,furui,"",古い,old,"",2025-08-21T22:17:44.948Z
+57,JP Wordplay,ookii,"",大きい,big,"",2025-08-21T22:17:44.948Z
+58,JP Wordplay,chiisai,"",小さい,small,"",2025-08-21T22:17:44.948Z
+59,JP Wordplay,omoi,"",重い,heavy,"",2025-08-21T22:17:44.948Z
+60,JP Wordplay,karui,"",軽い,light (weight),"",2025-08-21T22:17:44.948Z
+61,JP Wordplay,tsuyoi,"",強い,strong,"",2025-08-21T22:17:44.948Z
+62,JP Wordplay,yowai,"",弱い,weak,"",2025-08-21T22:17:44.948Z
+63,JP Wordplay,omoshiroi,"",面白い,interesting,"",2025-08-21T22:17:44.948Z
+64,JP Wordplay,tsumaranai,"",つまらない,boring,"",2025-08-21T22:17:44.948Z
+65,JP Wordplay,isogashii,"",忙しい,busy,"",2025-08-21T22:17:44.948Z
+66,JP Wordplay,samui,"",寒い,cold (weather),"",2025-08-21T22:17:44.948Z
+67,JP Wordplay,atsui,"",暑い,hot (weather),"",2025-08-21T22:17:44.948Z
+70,JP Wordplay,Romaji,"",Verb (Katakana),Meaning,"",2025-08-21T22:17:44.948Z
+71,JP Wordplay,roguin suru,"",ログインする,to log in,"",2025-08-21T22:17:44.948Z
+72,JP Wordplay,roguauto suru,"",ログアウトする,to log out,"",2025-08-21T22:17:44.948Z
+73,JP Wordplay,rōdo suru,"",ロードする,to load (data),"",2025-08-21T22:17:44.948Z
+74,JP Wordplay,rokku suru,"",ロックする,to lock,"",2025-08-21T22:17:44.948Z
+75,JP Wordplay,rōtēto suru,"",ローテートする,to rotate,"",2025-08-21T22:17:44.948Z
+76,JP Wordplay,rōkaraizu suru,"",ローカライズする,to localize,"",2025-08-21T22:17:44.948Z
+77,JP Wordplay,roguru,"",ログる,"to log (slang, informal)","",2025-08-21T22:17:44.948Z
+78,JP Wordplay,baguru,"",バグる,"to bug out, to crash","",2025-08-21T22:17:44.948Z
+79,JP Wordplay,baito suru,"",バイトする,to work a part-time job,"",2025-08-21T22:17:44.948Z
+80,JP Wordplay,baka ni suru,"",バカにする,"to make fun of, to ridicule","",2025-08-21T22:17:44.948Z
+81,JP Wordplay,bareru,"",バレる,"to be found out, to leak (a secret)","",2025-08-21T22:17:44.948Z
+82,JP Wordplay,bagu chekku suru,"",バグチェックする,to bug-check,"",2025-08-21T22:17:44.948Z
+83,JP Wordplay,bazuru,"",バズる,to go viral,"",2025-08-21T22:17:44.948Z
+84,JP Wordplay,baindo suru,"",バインドする,to bind (e.g. in programming),"",2025-08-21T22:17:44.948Z
+85,JP Wordplay,rōrubakku suru,"",ロールバックする,to roll back (data),"",2025-08-21T22:17:44.948Z
+86,JP Wordplay,bakkuappu suru,"",バックアップする,to back up,"",2025-08-21T22:17:44.948Z
+87,JP Wordplay,anrokku suru,"",アンロックする,to unlock,"",2025-08-21T22:17:44.948Z
+99,JP Wordplay,hiho,"",裨補,to supplement,"",2025-08-21T22:17:44.948Z
+102,JP Wordplay,kintama,"",金玉　きんたま　キンタマ,balls (as in testicles),"",2025-08-21T22:17:44.948Z
+103,JP Wordplay,ougon no roba,"",黄金の驢馬,golden ass (book title),"",2025-08-21T22:17:44.948Z
+106,JP Wordplay,nureta,"",濡れた,wet,"",2025-08-21T22:17:44.948Z
+107,JP Wordplay,shimetta,"",湿った,damp,"",2025-08-21T22:17:44.948Z
+110,JP Wordplay,hizume,"",蹄　ひづめ,hoof,"",2025-08-21T22:17:44.948Z
+111,JP Wordplay,Mimi,"",耳,ear,"",2025-08-21T22:17:44.948Z
+112,JP Wordplay,Nagai mimi,"",長い耳,long ears,"",2025-08-21T22:17:44.948Z
+114,JP Wordplay,Shippo,"",しっぽ　尻尾,tail,"",2025-08-21T22:17:44.948Z
+115,JP Wordplay,o,"",尾,tail,"",2025-08-21T22:17:44.948Z
+2,CA Wordplay,-as-,"",Ase,https://dlc.iec.cat/Results?DecEntradaText=ase&AllInfoMorf=False&OperEntrada=3&OperDef=0&OperEx=0&OperSubEntrada=0&OperAreaTematica=0&InfoMorfType=0&OperCatGram=False&AccentSen=False&CurrentPage=0&refineSearch=0&Actualitzacions=False,"",2025-08-21T22:17:44.948Z
+3,CA Wordplay,-ruc-,"",Ruc/a,https://dlc.iec.cat/Results?DecEntradaText=ruc&AllInfoMorf=False&OperEntrada=3&OperDef=0&OperEx=0&OperSubEntrada=0&OperAreaTematica=0&InfoMorfType=0&OperCatGram=False&AccentSen=False&CurrentPage=0&refineSearch=0&Actualitzacions=False,"",2025-08-21T22:17:44.948Z
+4,CA Wordplay,-burr-,"",Burro/a,https://dlc.iec.cat/Results?DecEntradaText=burr&AllInfoMorf=False&OperEntrada=3&OperDef=0&OperEx=0&OperSubEntrada=0&OperAreaTematica=0&InfoMorfType=0&OperCatGram=False&AccentSen=False&CurrentPage=0&refineSearch=0&Actualitzacions=False,"",2025-08-21T22:17:44.948Z
+46,CA Wordplay,"","",Borriquito como tú,popular sorting song,"",2025-08-21T22:17:44.948Z
+50,CA Wordplay,abruptesa,"",abruptesa,abruptness,"",2025-08-21T22:17:44.948Z
+51,CA Wordplay,absolutesa,"",absolutesa,absoluteness,"",2025-08-21T22:17:44.948Z
+52,CA Wordplay,abstractesa,"",abstractesa,abstractness,"",2025-08-21T22:17:44.948Z
+53,CA Wordplay,acidesa,"",acidesa,acidity,"",2025-08-21T22:17:44.948Z
+54,CA Wordplay,adultesa,"",adultesa,adulthood,"",2025-08-21T22:17:44.948Z
+55,CA Wordplay,adustesa,"",adustesa,"sternness, austerity","",2025-08-21T22:17:44.948Z
+56,CA Wordplay,agramuntesa,"",agramuntesa,from Agramunt (proper noun / demonym),"",2025-08-21T22:17:44.948Z
+57,CA Wordplay,agresa,"",agresa,aggressiveness,"",2025-08-21T22:17:44.948Z
+58,CA Wordplay,agudesa,"",agudesa,"sharpness, acuity","",2025-08-21T22:17:44.948Z
+59,CA Wordplay,algidesa,"",algidesa,"coldness (figurative, e.g. “algid moment”)","",2025-08-21T22:17:44.948Z
+60,CA Wordplay,altesa,"",altesa,"height, altitude","",2025-08-21T22:17:44.948Z
+61,CA Wordplay,altivesa,"",altivesa,"haughtiness, pride","",2025-08-21T22:17:44.948Z
+62,CA Wordplay,amarguesa,"",amarguesa,bitterness,"",2025-08-21T22:17:44.948Z
+63,CA Wordplay,animalesa,"",animalesa,"animal nature, brutishness","",2025-08-21T22:17:44.948Z
+64,CA Wordplay,aptesa,"",aptesa,"aptitude, fitness","",2025-08-21T22:17:44.948Z
+65,CA Wordplay,ardidesa,"",ardidesa,"daringness, boldness","",2025-08-21T22:17:44.948Z
+66,CA Wordplay,aridesa,"",aridesa,"dryness, aridity","",2025-08-21T22:17:44.948Z
+67,CA Wordplay,arquimesa,"",arquimesa,(rare/unknown; possibly local/dialect),"",2025-08-21T22:17:44.948Z
+68,CA Wordplay,arremesa,"",arremesa,"assault, charge (noun from verb “arremetre”)","",2025-08-21T22:17:44.948Z
+69,CA Wordplay,arriesa,"",arriesa,"riskiness, danger","",2025-08-21T22:17:44.948Z
+70,CA Wordplay,aspresa,"",aspresa,"harshness, roughness","",2025-08-21T22:17:44.948Z
+71,CA Wordplay,asprivesa,"",asprivesa,roughness,"",2025-08-21T22:17:44.948Z
+72,CA Wordplay,atesa,"",atesa,"waiting (rare noun form of ""wait"")","",2025-08-21T22:17:44.948Z
+73,CA Wordplay,avidesa,"",avidesa,"greediness, avidity","",2025-08-21T22:17:44.948Z
+74,CA Wordplay,avinentesa,"",avinentesa,"willingness, agreement","",2025-08-21T22:17:44.948Z
+75,CA Wordplay,baixesa,"",baixesa,"lowness, baseness","",2025-08-21T22:17:44.948Z
+76,CA Wordplay,bellesa,"",bellesa,beauty,"",2025-08-21T22:17:44.948Z
+77,CA Wordplay,bestiesa,"",bestiesa,"beastliness, stupidity","",2025-08-21T22:17:44.948Z
+78,CA Wordplay,blanesa,"",blanesa,"whiteness, pallor","",2025-08-21T22:17:44.948Z
+79,CA Wordplay,bonesa,"",bonesa,goodness,"",2025-08-21T22:17:44.948Z
+80,CA Wordplay,boniquesa,"",boniquesa,"prettiness, cuteness","",2025-08-21T22:17:44.948Z
+81,CA Wordplay,bravesa,"",bravesa,bravery,"",2025-08-21T22:17:44.948Z
+82,CA Wordplay,brutesa,"",brutesa,"filthiness, dirtiness","",2025-08-21T22:17:44.948Z
+83,CA Wordplay,buidesa,"",buidesa,emptiness,"",2025-08-21T22:17:44.948Z
+84,CA Wordplay,calbesa,"",calbesa,baldness,"",2025-08-21T22:17:44.948Z
+85,CA Wordplay,calidesa,"",calidesa,"warmth, mildness","",2025-08-21T22:17:44.948Z
+86,CA Wordplay,candidesa,"",candidesa,"candor, innocence","",2025-08-21T22:17:44.948Z
+87,CA Wordplay,caparrudesa,"",caparrudesa,stubbornness (from “caparrut” – stubborn),"",2025-08-21T22:17:44.948Z
+88,CA Wordplay,ceguesa,"",ceguesa,blindness,"",2025-08-21T22:17:44.948Z
+89,CA Wordplay,certesa,"",certesa,certainty,"",2025-08-21T22:17:44.948Z
+90,CA Wordplay,cervesa,"",cervesa,beer,"",2025-08-21T22:17:44.948Z
+91,CA Wordplay,coixesa,"",coixesa,"limpness, lameness","",2025-08-21T22:17:44.948Z
+92,CA Wordplay,comesa,"",comesa,"eating (noun from verb ""comer"")","",2025-08-21T22:17:44.948Z
+93,CA Wordplay,completesa,"",completesa,completeness,"",2025-08-21T22:17:44.948Z
+94,CA Wordplay,compresa,"",compresa,"understanding, compress (noun form)","",2025-08-21T22:17:44.948Z
+95,CA Wordplay,concretesa,"",concretesa,concreteness,"",2025-08-21T22:17:44.948Z
+96,CA Wordplay,contesa,"",contesa,"contest, dispute","",2025-08-21T22:17:44.948Z
+97,CA Wordplay,contrapresa,"",contrapresa,"counter-attack, counter-hold","",2025-08-21T22:17:44.948Z
+98,CA Wordplay,coquinesa,"",coquinesa,"naughtiness, mischievousness","",2025-08-21T22:17:44.948Z
+99,CA Wordplay,corbesa,"",corbesa,crookedness,"",2025-08-21T22:17:44.948Z
+100,CA Wordplay,cortesà,"",cortesà,courteous (adj/noun) or courtier (noun),"",2025-08-21T22:17:44.948Z
+101,CA Wordplay,criquesa,"",criquesa,"criticism, nagging","",2025-08-21T22:17:44.948Z
+102,CA Wordplay,cruesa,"",cruesa,cruelty,"",2025-08-21T22:17:44.948Z
+103,CA Wordplay,curtesa,"",curtesa,shortness,"",2025-08-21T22:17:44.948Z
+104,CA Wordplay,debilesa,"",debilesa,weakness,"",2025-08-21T22:17:44.948Z
+105,CA Wordplay,deixadesa,"",deixadesa,"neglect, carelessness","",2025-08-21T22:17:44.948Z
+106,CA Wordplay,delicadesa,"",delicadesa,"delicacy, gentleness","",2025-08-21T22:17:44.948Z
+107,CA Wordplay,desavinentesa,"",desavinentesa,"disagreement, discord","",2025-08-21T22:17:44.948Z
+108,CA Wordplay,despeceguesa,"",despeceguesa,"(rare, possibly a corruption or dialect)","",2025-08-21T22:17:44.948Z
+109,CA Wordplay,despesa,"",despesa,"expense, expenditure","",2025-08-21T22:17:44.948Z
+110,CA Wordplay,despresa,"",despresa,"disdain, neglect","",2025-08-21T22:17:44.948Z
+111,CA Wordplay,destresa,"",destresa,"dexterity, skill","",2025-08-21T22:17:44.948Z
+112,CA Wordplay,devesa,"",devesa,"meadow, pasture","",2025-08-21T22:17:44.948Z
+113,CA Wordplay,diocesà,"",diocesà,diocesan (adj/noun),"",2025-08-21T22:17:44.948Z
+114,CA Wordplay,dispesa,"",dispesa,(rare; possibly variant of “despesa” - expense),"",2025-08-21T22:17:44.948Z
+115,CA Wordplay,dolcesa,"",dolcesa,sweetness,"",2025-08-21T22:17:44.948Z
+116,CA Wordplay,duresa,"",duresa,hardness,"",2025-08-21T22:17:44.948Z
+117,CA Wordplay,eixutesa,"",eixutesa,"dryness, sparseness","",2025-08-21T22:17:44.948Z
+118,CA Wordplay,embriaguesa,"",embriaguesa,"drunkenness, intoxication","",2025-08-21T22:17:44.948Z
+119,CA Wordplay,empesa,"",empesa,"push, thrust","",2025-08-21T22:17:44.948Z
+120,CA Wordplay,empresa,"",empresa,"company, enterprise","",2025-08-21T22:17:44.948Z
+121,CA Wordplay,encesa,"",encesa,"lighting, ignition","",2025-08-21T22:17:44.948Z
+122,CA Wordplay,endemesa,"",endemesa,"(rare; possibly related to ""endemà"" - next day)","",2025-08-21T22:17:44.948Z
+123,CA Wordplay,enteresa,"",enteresa,"earnestness, seriousness","",2025-08-21T22:17:44.948Z
+124,CA Wordplay,entesa,"",entesa,"understanding, agreement","",2025-08-21T22:17:44.948Z
+125,CA Wordplay,entremesa,"",entremesa,"appetizer, interlude","",2025-08-21T22:17:44.948Z
+126,CA Wordplay,escassesa,"",escassesa,scarcity,"",2025-08-21T22:17:44.948Z
+127,CA Wordplay,escomesa,"",escomesa,"attack, onset","",2025-08-21T22:17:44.948Z
+128,CA Wordplay,esplendidesa,"",esplendidesa,"splendor, brilliance","",2025-08-21T22:17:44.948Z
+129,CA Wordplay,esquifidesa,"",esquifidesa,"meanness, pettiness","",2025-08-21T22:17:44.948Z
+130,CA Wordplay,esquivesa,"",esquivesa,"shyness, evasiveness","",2025-08-21T22:17:44.948Z
+131,CA Wordplay,estesa,"",estesa,"stretch, spread","",2025-08-21T22:17:44.948Z
+132,CA Wordplay,estolidesa,"",estolidesa,foolishness,"",2025-08-21T22:17:44.948Z
+133,CA Wordplay,estranyesa,"",estranyesa,strangeness,"",2025-08-21T22:17:44.948Z
+134,CA Wordplay,estretesa,"",estretesa,"narrowness, tightness","",2025-08-21T22:17:44.948Z
+135,CA Wordplay,estupidesa,"",estupidesa,stupidity,"",2025-08-21T22:17:44.948Z
+136,CA Wordplay,esveltesa,"",esveltesa,"slenderness, slimness","",2025-08-21T22:17:44.948Z
+137,CA Wordplay,etiquesa,"",etiquesa,"ethics (rare; normally ""ètica"")","",2025-08-21T22:17:44.948Z
+138,CA Wordplay,expeditesa,"",expeditesa,"promptness, expediency","",2025-08-21T22:17:44.948Z
+139,CA Wordplay,expertesa,"",expertesa,expertise,"",2025-08-21T22:17:44.948Z
+140,CA Wordplay,exquisidesa,"",exquisidesa,exquisiteness,"",2025-08-21T22:17:44.948Z
+141,CA Wordplay,fadesa,"",fadesa,"fairyland quality (from ""fada"" = fairy)","",2025-08-21T22:17:44.948Z
+142,CA Wordplay,fadrinesa,"",fadrinesa,"maidenhood (from ""fadrina"" = young woman)","",2025-08-21T22:17:44.948Z
+143,CA Wordplay,feblesa,"",feblesa,weakness,"",2025-08-21T22:17:44.948Z
+144,CA Wordplay,feixuguesa,"",feixuguesa,"heaviness, burdensomeness","",2025-08-21T22:17:44.948Z
+145,CA Wordplay,feresa,"",feresa,"fierceness, wildness","",2025-08-21T22:17:44.948Z
+146,CA Wordplay,fermesa,"",fermesa,firmness,"",2025-08-21T22:17:44.948Z
+147,CA Wordplay,fesa,"",fesa,"dregs, sediment","",2025-08-21T22:17:44.948Z
+148,CA Wordplay,fetidesa,"",fetidesa,"foul smell, stench","",2025-08-21T22:17:44.948Z
+149,CA Wordplay,finesa,"",finesa,"fineness, delicacy","",2025-08-21T22:17:44.948Z
+150,CA Wordplay,fixesa,"",fixesa,"fixity, steadiness","",2025-08-21T22:17:44.948Z
+151,CA Wordplay,flaquesa,"",flaquesa,"weakness, frailty","",2025-08-21T22:17:44.948Z
+152,CA Wordplay,flongesa,"",flongesa,(rare; possibly dialect),"",2025-08-21T22:17:44.948Z
+153,CA Wordplay,floridesa,"",floridesa,flourishing,"",2025-08-21T22:17:44.948Z
+154,CA Wordplay,fluïdesa,"",fluïdesa,fluidity,"",2025-08-21T22:17:44.948Z
+155,CA Wordplay,fluixesa,"",fluixesa,"weakness, flimsiness","",2025-08-21T22:17:44.948Z
+156,CA Wordplay,fortalesa,"",fortalesa,"fortress, strength","",2025-08-21T22:17:44.948Z
+157,CA Wordplay,fortesa,"",fortesa,strength,"",2025-08-21T22:17:44.948Z
+158,CA Wordplay,fotesa,"",fotesa,(rare; unknown),"",2025-08-21T22:17:44.948Z
+159,CA Wordplay,franquesa,"",franquesa,"frankness, honesty","",2025-08-21T22:17:44.948Z
+160,CA Wordplay,frevolesa,"",frevolesa,fickleness,"",2025-08-21T22:17:44.948Z
+161,CA Wordplay,frigidesa,"",frigidesa,"frigidity, coldness","",2025-08-21T22:17:44.948Z
+162,CA Wordplay,fulgidesa,"",fulgidesa,"brightness, brilliance","",2025-08-21T22:17:44.948Z
+163,CA Wordplay,futilesa,"",futilesa,futility,"",2025-08-21T22:17:44.948Z
+164,CA Wordplay,galanesa,"",galanesa,gallantry,"",2025-08-21T22:17:44.948Z
+165,CA Wordplay,gandesà,"",gandesà,from Gandesa (place/demonym),"",2025-08-21T22:17:44.948Z
+166,CA Wordplay,garridesa,"",garridesa,cheerfulness,"",2025-08-21T22:17:44.948Z
+167,CA Wordplay,gentilesa,"",gentilesa,"kindness, gentleness","",2025-08-21T22:17:44.948Z
+168,CA Wordplay,grandesa,"",grandesa,"greatness, grandeur","",2025-08-21T22:17:44.948Z
+169,CA Wordplay,grapialtesa,"",grapialtesa,(rare/unknown),"",2025-08-21T22:17:44.948Z
+170,CA Wordplay,grassesa,"",grassesa,"fatness, grease","",2025-08-21T22:17:44.948Z
+171,CA Wordplay,gravidesa,"",gravidesa,pregnancy,"",2025-08-21T22:17:44.948Z
+172,CA Wordplay,greixesa,"",greixesa,"grease, fatness","",2025-08-21T22:17:44.948Z
+173,CA Wordplay,greugesa,"",greugesa,"grievance, injury","",2025-08-21T22:17:44.948Z
+174,CA Wordplay,groguesa,"",groguesa,yellowness,"",2025-08-21T22:17:44.948Z
+175,CA Wordplay,grossesa,"",grossesa,"largeness, coarseness","",2025-08-21T22:17:44.948Z
+176,CA Wordplay,guerxesa,"",guerxesa,(rare; possibly dialect),"",2025-08-21T22:17:44.948Z
+177,CA Wordplay,hamburguesa,"",hamburguesa,hamburger,"",2025-08-21T22:17:44.948Z
+178,CA Wordplay,honradesa,"",honradesa,"honesty, integrity","",2025-08-21T22:17:44.948Z
+179,CA Wordplay,idiotesa,"",idiotesa,"idiocy, foolishness","",2025-08-21T22:17:44.948Z
+180,CA Wordplay,immaduresa,"",immaduresa,immaturity,"",2025-08-21T22:17:44.948Z
+181,CA Wordplay,immediatesa,"",immediatesa,immediacy,"",2025-08-21T22:17:44.948Z
+182,CA Wordplay,impavidesa,"",impavidesa,fearlessness,"",2025-08-21T22:17:44.948Z
+183,CA Wordplay,impuresa,"",impuresa,impurity,"",2025-08-21T22:17:44.948Z
+184,CA Wordplay,incertesa,"",incertesa,uncertainty,"",2025-08-21T22:17:44.948Z
+185,CA Wordplay,indelicadesa,"",indelicadesa,"tactlessness, indelicacy","",2025-08-21T22:17:44.948Z
+186,CA Wordplay,infantesa,"",infantesa,infancy,"",2025-08-21T22:17:44.948Z
+187,CA Wordplay,ingravidesa,"",ingravidesa,weightlessness,"",2025-08-21T22:17:44.948Z
+188,CA Wordplay,innocentesa,"",innocentesa,innocence,"",2025-08-21T22:17:44.948Z
+189,CA Wordplay,insensatesa,"",insensatesa,senselessness,"",2025-08-21T22:17:44.948Z
+190,CA Wordplay,insipidesa,"",insipidesa,"insipidity, blandness","",2025-08-21T22:17:44.948Z
+191,CA Wordplay,interdiocesà,"",interdiocesà,interdiocesan,"",2025-08-21T22:17:44.948Z
+192,CA Wordplay,intrepidesa,"",intrepidesa,intrepidity,"",2025-08-21T22:17:44.948Z
+193,CA Wordplay,invalidesa,"",invalidesa,invalidity,"",2025-08-21T22:17:44.948Z
+194,CA Wordplay,jovenesa,"",jovenesa,youthfulness,"",2025-08-21T22:17:44.948Z
+195,CA Wordplay,justesa,"",justesa,"justice, fairness","",2025-08-21T22:17:44.948Z
+196,CA Wordplay,languidesa,"",languidesa,languidness,"",2025-08-21T22:17:44.948Z
+197,CA Wordplay,limpidesa,"",limpidesa,"limpidity, clearness","",2025-08-21T22:17:44.948Z
+198,CA Wordplay,lividesa,"",lividesa,lividness,"",2025-08-21T22:17:44.948Z
+199,CA Wordplay,llampresa,"",llampresa,lightning strike (rare),"",2025-08-21T22:17:44.948Z
+200,CA Wordplay,llarguesa,"",llarguesa,lengthiness,"",2025-08-21T22:17:44.948Z
+201,CA Wordplay,llestesa,"",llestesa,"cleverness, readiness","",2025-08-21T22:17:44.948Z
+202,CA Wordplay,lleteresa,"",lleteresa,milkiness,"",2025-08-21T22:17:44.948Z
+203,CA Wordplay,lletgesa,"",lletgesa,ugliness,"",2025-08-21T22:17:44.948Z
+204,CA Wordplay,lleugeresa,"",lleugeresa,lightness,"",2025-08-21T22:17:44.948Z
+205,CA Wordplay,llordesa,"",llordesa,(rare; unknown),"",2025-08-21T22:17:44.948Z
+206,CA Wordplay,lluïdesa,"",lluïdesa,brightness,"",2025-08-21T22:17:44.948Z
+207,CA Wordplay,lucidesa,"",lucidesa,lucidity,"",2025-08-21T22:17:44.948Z
+208,CA Wordplay,maduresa,"",maduresa,maturity,"",2025-08-21T22:17:44.948Z
+209,CA Wordplay,magresa,"",magresa,thinness,"",2025-08-21T22:17:44.948Z
+210,CA Wordplay,maionesa,"",maionesa,mayonnaise,"",2025-08-21T22:17:44.948Z
+211,CA Wordplay,malaptesa,"",malaptesa,clumsiness,"",2025-08-21T22:17:44.948Z
+212,CA Wordplay,malastruguesa,"",malastruguesa,bad luck,"",2025-08-21T22:17:44.948Z
+213,CA Wordplay,malcriadesa,"",malcriadesa,"spoiling, bad upbringing","",2025-08-21T22:17:44.948Z
+214,CA Wordplay,malesa,"",malesa,"harm, badness","",2025-08-21T22:17:44.948Z
+215,CA Wordplay,mampresa,"",mampresa,(rare; unknown),"",2025-08-21T22:17:44.948Z
+216,CA Wordplay,manganesa,"",manganesa,manganese (chemical),"",2025-08-21T22:17:44.948Z
+217,CA Wordplay,manquesa,"",manquesa,deficiency,"",2025-08-21T22:17:44.948Z
+218,CA Wordplay,mansesa,"",mansesa,gentleness,"",2025-08-21T22:17:44.948Z
+219,CA Wordplay,menudesa,"",menudesa,smallness,"",2025-08-21T22:17:44.948Z
+220,CA Wordplay,mesa,"",mesa,table (also “meal”),"",2025-08-21T22:17:44.948Z
+221,CA Wordplay,mesquinesa,"",mesquinesa,meanness,"",2025-08-21T22:17:44.948Z
+222,CA Wordplay,migradesa,"",migradesa,(rare; unknown),"",2025-08-21T22:17:44.948Z
+223,CA Wordplay,minusvalidesa,"",minusvalidesa,disability,"",2025-08-21T22:17:44.948Z
+224,CA Wordplay,minyonesa,"",minyonesa,"young woman, maid","",2025-08-21T22:17:44.948Z
+225,CA Wordplay,mollesa,"",mollesa,softness,"",2025-08-21T22:17:44.948Z
+226,CA Wordplay,morbidesa,"",morbidesa,morbidity,"",2025-08-21T22:17:44.948Z
+227,CA Wordplay,mudesa,"",mudesa,muteness,"",2025-08-21T22:17:44.948Z
+228,CA Wordplay,mustiesa,"",mustiesa,mustiness (smell),"",2025-08-21T22:17:44.948Z
+229,CA Wordplay,mustiguesa,"",mustiguesa,(rare; unknown),"",2025-08-21T22:17:44.948Z
+230,CA Wordplay,naturalesa,"",naturalesa,nature,"",2025-08-21T22:17:44.948Z
+231,CA Wordplay,neciesa,"",neciesa,foolishness,"",2025-08-21T22:17:44.948Z
+232,CA Wordplay,niciesa,"",niciesa,niceness,"",2025-08-21T22:17:44.948Z
+233,CA Wordplay,ninesa,"",ninesa,"from ""nina"" (girl/doll)","",2025-08-21T22:17:44.948Z
+234,CA Wordplay,nitidesa,"",nitidesa,clearness,"",2025-08-21T22:17:44.948Z
+235,CA Wordplay,noblesa,"",noblesa,nobility,"",2025-08-21T22:17:44.948Z
+236,CA Wordplay,noiesa,"",noiesa,boredom,"",2025-08-21T22:17:44.948Z
+237,CA Wordplay,nuesa,"",nuesa,nudity,"",2025-08-21T22:17:44.948Z
+238,CA Wordplay,orfenesa,"",orfenesa,orphanhood,"",2025-08-21T22:17:44.948Z
+239,CA Wordplay,orpesa,"",orpesa,(rare; possibly place name),"",2025-08-21T22:17:44.948Z
+240,CA Wordplay,pageresa,"",pageresa,laziness,"",2025-08-21T22:17:44.948Z
+241,CA Wordplay,pal·lidesa,"",pal·lidesa,pallor,"",2025-08-21T22:17:44.948Z
+242,CA Wordplay,peguesa,"",peguesa,stinginess,"",2025-08-21T22:17:44.948Z
+243,CA Wordplay,peresa,"",peresa,laziness,"",2025-08-21T22:17:44.948Z
+244,CA Wordplay,pesadesa,"",pesadesa,heaviness,"",2025-08-21T22:17:44.948Z
+245,CA Wordplay,petitesa,"",petitesa,smallness,"",2025-08-21T22:17:44.948Z
+246,CA Wordplay,placidesa,"",placidesa,calmness,"",2025-08-21T22:17:44.948Z
+247,CA Wordplay,pobresa,"",pobresa,poverty,"",2025-08-21T22:17:44.948Z
+248,CA Wordplay,polidesa,"",polidesa,"polish, refinement","",2025-08-21T22:17:44.948Z
+249,CA Wordplay,poquesa,"",poquesa,scarcity,"",2025-08-21T22:17:44.948Z
+250,CA Wordplay,pregonesa,"",pregonesa,thickness,"",2025-08-21T22:17:44.948Z
+251,CA Wordplay,presa,"",presa,"capture, catch","",2025-08-21T22:17:44.948Z
+252,CA Wordplay,prestesa,"",prestesa,promptness,"",2025-08-21T22:17:44.948Z
+253,CA Wordplay,primesa,"",primesa,slenderness,"",2025-08-21T22:17:44.948Z
+254,CA Wordplay,privadesa,"",privadesa,privacy,"",2025-08-21T22:17:44.948Z
+255,CA Wordplay,proesa,"",proesa,"feat, exploit","",2025-08-21T22:17:44.948Z
+256,CA Wordplay,promptesa,"",promptesa,promptness,"",2025-08-21T22:17:44.948Z
+257,CA Wordplay,pugesa,"",pugesa,pugilism (boxing),"",2025-08-21T22:17:44.948Z
+258,CA Wordplay,puresa,"",puresa,purity,"",2025-08-21T22:17:44.948Z
+259,CA Wordplay,putridesa,"",putridesa,rottenness,"",2025-08-21T22:17:44.948Z
+260,CA Wordplay,quequesa,"",quequesa,(rare; unknown),"",2025-08-21T22:17:44.948Z
+261,CA Wordplay,ranciesa,"",ranciesa,rancidity,"",2025-08-21T22:17:44.948Z
+262,CA Wordplay,rapidesa,"",rapidesa,speed,"",2025-08-21T22:17:44.948Z
+263,CA Wordplay,raresa,"",raresa,rarity,"",2025-08-21T22:17:44.948Z
+264,CA Wordplay,reialesa,"",reialesa,royalty,"",2025-08-21T22:17:44.948Z
+265,CA Wordplay,remesa,"",remesa,remittance,"",2025-08-21T22:17:44.948Z
+266,CA Wordplay,represa,"",represa,"resumption, reprise","",2025-08-21T22:17:44.948Z
+267,CA Wordplay,repropiesa,"",repropiesa,reproach,"",2025-08-21T22:17:44.948Z
+268,CA Wordplay,ridiculesa,"",ridiculesa,ridiculousness,"",2025-08-21T22:17:44.948Z
+269,CA Wordplay,rigidesa,"",rigidesa,rigidity,"",2025-08-21T22:17:44.948Z
+270,CA Wordplay,riquesa,"",riquesa,wealth,"",2025-08-21T22:17:44.948Z
+271,CA Wordplay,robustesa,"",robustesa,robustness,"",2025-08-21T22:17:44.948Z
+272,CA Wordplay,rodesa,"",rodesa,(rare; unknown),"",2025-08-21T22:17:44.948Z
+273,CA Wordplay,rodonesa,"",rodonesa,roundness,"",2025-08-21T22:17:44.948Z
+274,CA Wordplay,roïnesa,"",roïnesa,"meanness, villainy","",2025-08-21T22:17:44.948Z
+275,CA Wordplay,rubicundesa,"",rubicundesa,ruddy complexion,"",2025-08-21T22:17:44.948Z
+276,CA Wordplay,rudesa,"",rudesa,roughness,"",2025-08-21T22:17:44.948Z
+277,CA Wordplay,rustiquesa,"",rustiquesa,rusticity,"",2025-08-21T22:17:44.948Z
+278,CA Wordplay,sapidesa,"",sapidesa,savoriness,"",2025-08-21T22:17:44.948Z
+279,CA Wordplay,saviesa,"",saviesa,wisdom,"",2025-08-21T22:17:44.948Z
+280,CA Wordplay,sensatesa,"",sensatesa,"sensibleness, prudence","",2025-08-21T22:17:44.948Z
+281,CA Wordplay,senzillesa,"",senzillesa,simplicity,"",2025-08-21T22:17:44.948Z
+282,CA Wordplay,sobtadesa,"",sobtadesa,suddenness,"",2025-08-21T22:17:44.948Z
+283,CA Wordplay,solidesa,"",solidesa,solidity,"",2025-08-21T22:17:44.948Z
+284,CA Wordplay,soltesa,"",soltesa,looseness,"",2025-08-21T22:17:44.948Z
+285,CA Wordplay,sopitesa,"",sopitesa,drowsiness,"",2025-08-21T22:17:44.948Z
+286,CA Wordplay,sordceguesa,"",sordceguesa,deafblindness,"",2025-08-21T22:17:44.948Z
+287,CA Wordplay,sordesa,"",sordesa,deafness,"",2025-08-21T22:17:44.948Z
+288,CA Wordplay,sordidesa,"",sordidesa,sordidness,"",2025-08-21T22:17:44.948Z
+289,CA Wordplay,sordmudesa,"",sordmudesa,deaf-muteness,"",2025-08-21T22:17:44.948Z
+290,CA Wordplay,sorpresa,"",sorpresa,surprise,"",2025-08-21T22:17:44.948Z
+291,CA Wordplay,sotilesa,"",sotilesa,subtlety,"",2025-08-21T22:17:44.948Z
+292,CA Wordplay,subtilesa,"",subtilesa,subtlety,"",2025-08-21T22:17:44.948Z
+293,CA Wordplay,superfluïdesa,"",superfluïdesa,superfluity,"",2025-08-21T22:17:44.948Z
+294,CA Wordplay,sutzesa,"",sutzesa,dirtiness,"",2025-08-21T22:17:44.948Z
+295,CA Wordplay,tartamudesa,"",tartamudesa,stammering,"",2025-08-21T22:17:44.948Z
+296,CA Wordplay,tebiesa,"",tebiesa,lukewarmness,"",2025-08-21T22:17:44.948Z
+297,CA Wordplay,tendresa,"",tendresa,tenderness,"",2025-08-21T22:17:44.948Z
+298,CA Wordplay,terbolesa,"",terbolesa,"cloudiness, muddiness","",2025-08-21T22:17:44.948Z
+299,CA Wordplay,testarrudesa,"",testarrudesa,stubbornness,"",2025-08-21T22:17:44.948Z
+300,CA Wordplay,timidesa,"",timidesa,shyness,"",2025-08-21T22:17:44.948Z
+301,CA Wordplay,toixarrudesa,"",toixarrudesa,stubbornness (regional),"",2025-08-21T22:17:44.948Z
+302,CA Wordplay,tossudesa,"",tossudesa,stubbornness,"",2025-08-21T22:17:44.948Z
+303,CA Wordplay,totxesa,"",totxesa,(rare; unknown),"",2025-08-21T22:17:44.948Z
+304,CA Wordplay,tramesa,"",tramesa,"shipment, sending","",2025-08-21T22:17:44.948Z
+305,CA Wordplay,translucidesa,"",translucidesa,translucency,"",2025-08-21T22:17:44.948Z
+306,CA Wordplay,tristesa,"",tristesa,sadness,"",2025-08-21T22:17:44.948Z
+307,CA Wordplay,turquesa,"",turquesa,turquoise (color or stone),"",2025-08-21T22:17:44.948Z
+308,CA Wordplay,validesa,"",validesa,validity,"",2025-08-21T22:17:44.948Z
+309,CA Wordplay,vallesà,"",vallesà,from Vallès (place/demonym),"",2025-08-21T22:17:44.948Z
+310,CA Wordplay,vellesa,"",vellesa,old age,"",2025-08-21T22:17:44.948Z
+311,CA Wordplay,vilesa,"",vilesa,vileness,"",2025-08-21T22:17:44.948Z
+312,CA Wordplay,vivesa,"",vivesa,"liveliness, quickness","",2025-08-21T22:17:44.948Z
+313,CA Wordplay,ximplesa,"",ximplesa,silliness,"",2025-08-21T22:17:44.948Z
+314,CA Wordplay,xiquesa,"",xiquesa,(rare; unknown),"",2025-08-21T22:17:44.948Z
+68,NL Wordplay,"","",je ne peux pas,Ik kan het niet doen,"",2025-08-21T22:17:44.948Z
+69,NL Wordplay,Main Donkeys,"",je peux pas,Ik kan 't niet,"",2025-08-21T22:17:44.948Z
+70,NL Wordplay,Thirsty,"",j'peux pas,k doe 't ni'.,"",2025-08-21T22:17:44.948Z
+72,NL Wordplay,beest,"",ezel,zak,"",2025-08-21T22:17:44.948Z
+75,NL Wordplay,-ezel,"","",alliterative,"",2025-08-21T22:17:44.948Z
+77,NL Wordplay,"","",Old Ass,"Rustig, Moedig, Reusachtig, Nukkig,   --ge",Gelukezel,2025-08-21T22:17:44.948Z
+78,NL Wordplay,"","",Nice Ass,"Rustige, Moedige, Reusachtige, Nukkige, Gelukkige, Triestige, Gierige,",Triestezel,2025-08-21T22:17:44.948Z
+80,NL Wordplay,"","",Thirsty Ass,Groot,"",2025-08-21T22:17:44.948Z
+81,NL Wordplay,"","",Smart Ass,Klein,"",2025-08-21T22:17:44.948Z
+4,Turkish Wordplay,"",ABJ + Ass,"",Katır,Az Eşek,2025-08-21T22:17:44.948Z
+2,German,Alt-Esel,"",Old Ass,N/A,"",2025-08-21T22:17:44.948Z
+3,German,Treu-Eselin,"",Trusty Ass,Treuseele,"",2025-08-21T22:17:44.948Z
+4,German,Schön-und-Nett-Eselin,"",Nice Ass,Netti,"",2025-08-21T22:17:44.948Z
+5,German,Mega-Esel,"",Big Ass,Mega,"",2025-08-21T22:17:44.948Z
+6,German,Durschti-Esel,"",Thirsty Ass,Durschti,"",2025-08-21T22:17:44.948Z
+7,German,Klug-Eselin,"",Smart Ass,Klugi,"",2025-08-21T22:17:44.948Z
+8,German,Lahm-Esel,"",Slow Ass,N/A,"",2025-08-21T22:17:44.948Z
+9,German,Schlag-Esel,"",Kick Ass,Schlagi,"",2025-08-21T22:17:44.948Z
+10,German,Schlapp-Eselin,"",Sick Ass,Schlappi,"",2025-08-21T22:17:44.948Z
+11,German,Hardcore-Esel,"",Hard Ass,Hardcore,"",2025-08-21T22:17:44.948Z
+12,German,Stur-Eselin,"",Sturdy Ass,Sturi,"",2025-08-21T22:17:44.948Z
+13,German,Deprimiert-Esel,"",Sad Ass,Depri,"",2025-08-21T22:17:44.948Z
+14,German,Faul-Eselin,"",Lazy Ass,Fauly,"",2025-08-21T22:17:44.948Z
+15,German,Radikal-Esel,"",Bad Ass,Radi,"",2025-08-21T22:17:44.948Z
+27,German,Stallbursche Till,"",Ass Handler Melvin,Named after Pumpenhaus programmer Till Wyler von Ballmoos,"",2025-08-21T22:17:44.948Z
+28,German,Stalllburschin Sarah,"",Ass Handler Wedgie,Named after HAU programmer Sarah Reimann,"",2025-08-21T22:17:44.948Z
+51,German,"","",Gesellschaft,"E0 (first question), E1 done, find more (Sturdy in E4), E6 (Sturdy and bar and sculpture names), E10 Words","",2025-08-21T22:17:44.948Z
+52,German,Neubeseelt,"",Beseelung,"E1 video, E4 AP Main, E8 Gods, ... E10 Words","",2025-08-21T22:17:44.948Z
+53,German,"","",selig,done,"",2025-08-21T22:17:44.948Z
+54,German,"","",Eselsbrücke,done,"",2025-08-21T22:17:44.948Z
+55,German,"","",Fessel — Shackles,done,"",2025-08-21T22:17:44.948Z
+56,German,"","",gesellen / gesellt — final lines of the show,done,"",2025-08-21T22:17:44.948Z
+57,German,"","",Kieseln - pebbles (Go play with your Rocks!),done,"",2025-08-21T22:17:44.948Z
+58,German,"","",nieseln - nieselt - to drizzle,done,"",2025-08-21T22:17:44.948Z
+59,German,"","",berieseln - sprink over / wash over,done,"",2025-08-21T22:17:44.948Z
+60,German,"","",Diesel — gas station in E5 Hwy,done,"",2025-08-21T22:17:44.948Z
+61,German,"","",Sessel – Armchair.,done,"",2025-08-21T22:17:44.948Z
+62,German,"","",Kessel – Boiler or cauldron.,done,"",2025-08-21T22:17:44.948Z
+4,Timeline,45355,"","",45360,"",2025-08-21T22:17:44.948Z
+5,Timeline,45362,"","",45367,"",2025-08-21T22:17:44.948Z
+6,Timeline,45369,"","",45374,"",2025-08-21T22:17:44.948Z
+7,Timeline,45376,"","",45381,"",2025-08-21T22:17:44.948Z
+8,Timeline,45383,"","",45388,"",2025-08-21T22:17:44.948Z
+9,Timeline,45390,"","",45395,"",2025-08-21T22:17:44.948Z
+10,Timeline,45397,"","",45402,"",2025-08-21T22:17:44.948Z
+11,Timeline,45404,"","",45409,"",2025-08-21T22:17:44.948Z
+12,Timeline,45411,"","",45416,"",2025-08-21T22:17:44.948Z
+13,Timeline,45418,"","",45423,"",2025-08-21T22:17:44.948Z
+14,Timeline,45425,"","",45430,"",2025-08-21T22:17:44.948Z
+15,Timeline,45432,"","",45437,"",2025-08-21T22:17:44.948Z
+19,Timeline,45383,"","",45388,"",2025-08-21T22:17:44.948Z
+20,Timeline,45390,"","",45395,"",2025-08-21T22:17:44.948Z
+21,Timeline,45397,"","",45402,"",2025-08-21T22:17:44.948Z
+22,Timeline,45404,"","",45409,"",2025-08-21T22:17:44.948Z
+23,Timeline,45411,"","",45416,"",2025-08-21T22:17:44.948Z
+24,Timeline,45418,"","",45423,"",2025-08-21T22:17:44.948Z
+25,Timeline,45425,"","",45430,"",2025-08-21T22:17:44.948Z
+26,Timeline,45432,"","",45437,"",2025-08-21T22:17:44.948Z
+27,Timeline,45439,"","",45444,"",2025-08-21T22:17:44.948Z
+28,Timeline,45446,"","",45451,"",2025-08-21T22:17:44.948Z
+29,Timeline,45453,"","",45458,"",2025-08-21T22:17:44.948Z
+30,Timeline,45460,"","",45465,"",2025-08-21T22:17:44.948Z
+33,Timeline,45411,"","",45416,"",2025-08-21T22:17:44.948Z
+34,Timeline,45418,"","",45423,"",2025-08-21T22:17:44.948Z
+35,Timeline,45425,"","",45430,"",2025-08-21T22:17:44.948Z
+36,Timeline,45432,"","",45437,"",2025-08-21T22:17:44.948Z
+37,Timeline,45439,"","",45444,"",2025-08-21T22:17:44.948Z
+38,Timeline,45446,"","",45451,"",2025-08-21T22:17:44.948Z
+39,Timeline,45453,"","",45458,"",2025-08-21T22:17:44.948Z
+41,Timeline,45480,"","",45485,"",2025-08-21T22:17:44.948Z
+42,Timeline,45487,"","",45492,"",2025-08-21T22:17:44.948Z
+43,Timeline,45494,"","",45499,"",2025-08-21T22:17:44.948Z
+45,Timeline,45523,"","",45528,"",2025-08-21T22:17:44.948Z
+46,Timeline,45530,"","",45535,"",2025-08-21T22:17:44.948Z
+49,Timeline,45689,"","",45694,"",2025-08-21T22:17:44.948Z
+50,Timeline,45696,"","",45701,"",2025-08-21T22:17:44.948Z
+51,Timeline,45703,"","",45708,"",2025-08-21T22:17:44.948Z
+52,Timeline,45710,"","",45715,"",2025-08-21T22:17:44.948Z
+53,Timeline,45717,"","",45722,"",2025-08-21T22:17:44.948Z
+54,Timeline,45724,"","",45729,"",2025-08-21T22:17:44.948Z
+55,Timeline,45731,"","",45736,"",2025-08-21T22:17:44.948Z
+56,Timeline,45738,"","",45743,"",2025-08-21T22:17:44.948Z
+57,Timeline,45745,"","",45750,"",2025-08-21T22:17:44.948Z
+58,Timeline,45752,"","",45757,"",2025-08-21T22:17:44.948Z
+59,Timeline,45759,"","",45764,"",2025-08-21T22:17:44.948Z
+60,Timeline,45766,"","",45771,"",2025-08-21T22:17:44.948Z

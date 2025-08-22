@@ -17,6 +17,7 @@ export interface ExcelProcessingState {
   
   // Functions
   handleFileUpload: (e: React.ChangeEvent<HTMLInputElement>) => Promise<void>;
+  handleExistingFileLoad: (fileName: string) => Promise<void>;
   handleSheetChange: (sheetName: string) => void;
   resetExcelData: () => void;
   getCellLocation: (index: number) => string;
@@ -86,6 +87,40 @@ export const useExcelProcessing = (): ExcelProcessingState => {
   }, []);
   
   /**
+   * Handle loading existing Excel file from server
+   * 
+   * Loads and processes Excel files that are already on the server.
+   * 
+   * @param fileName - Name of the existing file to load
+   */
+  const handleExistingFileLoad = useCallback(async (fileName: string) => {
+    if (!fileName) return;
+
+    setIsLoadingExcel(true);
+    try {
+      // Fetch the file buffer from the server
+      const response = await fetch(`/api/xlsx-files/load?fileName=${encodeURIComponent(fileName)}`);
+      if (!response.ok) {
+        throw new Error('Failed to load existing file');
+      }
+      
+      const arrayBuffer = await response.arrayBuffer();
+      const workbook = XLSX.read(arrayBuffer, { type: 'array' });
+      
+      setWorkbookData(workbook);
+      setExcelSheets(workbook.SheetNames);
+      if (workbook.SheetNames.length > 0) {
+        setSelectedSheet(workbook.SheetNames[0]);
+      }
+    } catch (error) {
+      console.error('Error loading existing Excel file:', error);
+      alert('Error loading existing Excel file. Please try again.');
+    } finally {
+      setIsLoadingExcel(false);
+    }
+  }, []);
+  
+  /**
    * Handle sheet change
    * 
    * Updates the selected sheet and processes the new sheet data.
@@ -148,6 +183,7 @@ export const useExcelProcessing = (): ExcelProcessingState => {
     
     // Functions
     handleFileUpload,
+    handleExistingFileLoad,
     handleSheetChange,
     resetExcelData,
     getCellLocation,

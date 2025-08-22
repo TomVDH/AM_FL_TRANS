@@ -1,11 +1,16 @@
 #!/usr/bin/env node
 
 /**
- * Excel to JSON Converter Script
+ * Excel to JSON/CSV Converter Script
  * 
- * This script processes the READ_ME_LocalizationManual.xlsx file and extracts
- * character data from the "Names and World Overview" tab, grouping English
- * and Dutch translations together in unified objects.
+ * This script processes Excel files and converts them to both JSON and CSV formats.
+ * Supports special processing for READ_ME files and standard processing for EPx files.
+ * 
+ * Features:
+ * - JSON output for auto-highlighter system
+ * - CSV output for dynamic consultation during translation
+ * - Batch processing of all Excel files
+ * - Special handling for different file types
  * 
  * Usage: node scripts/excel-to-json.js
  */
@@ -16,15 +21,20 @@ const XLSX = require('xlsx');
 
 // Configuration
 const EXCELS_FOLDER = path.join(__dirname, '..', 'excels');
-const OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'json');
+const JSON_OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'json');
+const CSV_OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'csv');
 
 /**
- * Ensure output directory exists
+ * Ensure output directories exist
  */
-function ensureOutputDirectory() {
-  if (!fs.existsSync(OUTPUT_FOLDER)) {
-    fs.mkdirSync(OUTPUT_FOLDER, { recursive: true });
-    console.log(`✅ Created output directory: ${OUTPUT_FOLDER}`);
+function ensureOutputDirectories() {
+  if (!fs.existsSync(JSON_OUTPUT_FOLDER)) {
+    fs.mkdirSync(JSON_OUTPUT_FOLDER, { recursive: true });
+    console.log(`✅ Created JSON output directory: ${JSON_OUTPUT_FOLDER}`);
+  }
+  if (!fs.existsSync(CSV_OUTPUT_FOLDER)) {
+    fs.mkdirSync(CSV_OUTPUT_FOLDER, { recursive: true });
+    console.log(`✅ Created CSV output directory: ${CSV_OUTPUT_FOLDER}`);
   }
 }
 
@@ -263,18 +273,80 @@ function processReadmeFile(filePath) {
 }
 
 /**
+ * Convert JSON data to CSV format using modular CSV processor
+ * @param {Object} data - Processed data object
+ * @returns {string} CSV formatted string
+ */
+function convertToCSV(data) {
+  if (!data.sheets || data.sheets.length === 0) {
+    return '';
+  }
+  
+  // Use the dedicated CSV processing script for consistency
+  const csvProcessor = require('./excel-to-csv');
+  
+  // Create CSV content using the dedicated processor's format
+  let csvContent = '';
+  const processedAt = data.processedAt || new Date().toISOString();
+  
+  // Add metadata header
+  csvContent += `# File: ${data.fileName}\n`;
+  csvContent += `# Processed: ${processedAt}\n`;
+  csvContent += `# Sheets: ${data.sheets.length}\n\n`;
+  
+  // Add CSV header
+  csvContent += 'RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt\n';
+  
+  // Add data rows
+  data.sheets.forEach(sheet => {
+    sheet.entries.forEach(entry => {
+      const row = [
+        entry.rowNumber || '',
+        sheet.sheetName || '',
+        entry.context || '',
+        entry.key || '',
+        entry.utterer || '',
+        csvProcessor.escapeCSVValue(entry.sourceEnglish || ''),
+        csvProcessor.escapeCSVValue(entry.translatedDutch || ''),
+        processedAt
+      ];
+      csvContent += row.join(',') + '\n';
+    });
+  });
+  
+  return csvContent;
+}
+
+/**
  * Save processed data to JSON file
  * @param {Object} data - Processed data object
  */
 function saveToJson(data) {
   const fileName = data.fileName;
-  const outputPath = path.join(OUTPUT_FOLDER, `${fileName}.json`);
+  const outputPath = path.join(JSON_OUTPUT_FOLDER, `${fileName}.json`);
   
   try {
     fs.writeFileSync(outputPath, JSON.stringify(data, null, 2));
-    console.log(`💾 Saved: ${outputPath}`);
+    console.log(`💾 JSON saved: ${outputPath}`);
   } catch (error) {
     console.error(`❌ Error saving ${fileName}.json:`, error.message);
+  }
+}
+
+/**
+ * Save processed data to CSV file
+ * @param {Object} data - Processed data object
+ */
+function saveToCSV(data) {
+  const fileName = data.fileName;
+  const outputPath = path.join(CSV_OUTPUT_FOLDER, `${fileName}.csv`);
+  
+  try {
+    const csvContent = convertToCSV(data);
+    fs.writeFileSync(outputPath, csvContent, 'utf8');
+    console.log(`📊 CSV saved: ${outputPath}`);
+  } catch (error) {
+    console.error(`❌ Error saving ${fileName}.csv:`, error.message);
   }
 }
 
@@ -304,7 +376,7 @@ function generateSummary(results) {
     }))
   };
   
-  const summaryPath = path.join(OUTPUT_FOLDER, 'processing-summary.json');
+  const summaryPath = path.join(JSON_OUTPUT_FOLDER, 'processing-summary.json');
   fs.writeFileSync(summaryPath, JSON.stringify(summary, null, 2));
   console.log(`📊 Summary saved: ${summaryPath}`);
   
@@ -315,9 +387,9 @@ function generateSummary(results) {
  * Main processing function
  */
 function main() {
-  console.log('🚀 Starting Excel to JSON processing...');
+  console.log('🚀 Starting Excel to JSON/CSV processing...');
   
-  ensureOutputDirectory();
+  ensureOutputDirectories();
   
   // Get all Excel files
   const excelFiles = fs.readdirSync(EXCELS_FOLDER)
@@ -343,13 +415,15 @@ function main() {
       results.push(result);
       if (!result.error) {
         saveToJson(result);
+        saveToCSV(result);
       }
     } else {
-      // Use standard processing for all other files
+      // Use standard processing for all other files (EPx files, etc.)
       const result = processStandardExcelFile(filePath);
       results.push(result);
       if (!result.error) {
         saveToJson(result);
+        saveToCSV(result);
       }
     }
   });
@@ -383,5 +457,7 @@ module.exports = {
   processReadmeFile,
   processStandardExcelFile,
   saveToJson,
+  saveToCSV,
+  convertToCSV,
   generateSummary
 }; 

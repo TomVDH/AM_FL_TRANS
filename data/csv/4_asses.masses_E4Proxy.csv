@@ -1,0 +1,456 @@
+# File: 4_asses.masses_E4Proxy
+# Processed: 2025-08-21T22:17:44.617Z
+# Sheets: 9
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+2,E4_EpisodeTitle_localization,"",EPISODI QUATRE,WRITE.Dialog:Localizer.5,EPISODE FOUR,"",2025-08-21T22:17:44.617Z
+3,E4_EpisodeTitle_localization,"",EL CAMÍ,WRITE.Dialog:Localizer.7,THE PATH,"",2025-08-21T22:17:44.617Z
+4,E4_EpisodeTitle_localization,"",Prem X per començar,WRITE.Dialog:Localizer.8,Press X to Begin,"",2025-08-21T22:17:44.617Z
+3,E4_HideAndSeek_localization,Black screen. Echoes of dialogue from back inside the Mine.,Feblase? Ets amb mi?,SAY.Dialog:Introduction.3.Kick Ass,Sick Ass? Are you with me?,"",2025-08-21T22:17:44.617Z
+4,E4_HideAndSeek_localization,"",@#$%&! FEBLASE?!,SAY.Dialog:Introduction.25.Kick Ass,@#$%&! SICK?!,"",2025-08-21T22:17:44.617Z
+5,E4_HideAndSeek_localization,Work whistle. Fade up to Sick Ass outside of the Mines.,*TUS*,SAY.Dialog:Introduction.16.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+6,E4_HideAndSeek_localization,Kick Ass enters frame.,"Eh, germana!—És l'HORA DEL PATI!",SAY.Dialog:Introduction.56.Kick Ass,Hey sis'—it's BREAK TIME!,"",2025-08-21T22:17:44.617Z
+7,E4_HideAndSeek_localization,"",Juguem a FET I AMAGAR?,SAY.Dialog:Introduction.58.Kick Ass,Wanna play HIDE AND SEEK?,"",2025-08-21T22:17:44.617Z
+8,E4_HideAndSeek_localization,Dialogue 1.1.,*TUS*,MENU.Dialog:Introduction.60,*COUGH*,"",2025-08-21T22:17:44.617Z
+9,E4_HideAndSeek_localization,"",*TUS*,SAY.Dialog:Introduction.72.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+10,E4_HideAndSeek_localization,Jump to line 14.,Sí? BRUTAL!,SAY.Dialog:Introduction.21.Kick Ass,Yes? GREAT!,"",2025-08-21T22:17:44.617Z
+11,E4_HideAndSeek_localization,Dialogue 1.2.,*TUS TUS*,MENU.Dialog:Introduction.61,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+12,E4_HideAndSeek_localization,"",*TUS TUS*,SAY.Dialog:Introduction.12.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+13,E4_HideAndSeek_localization,Jump to line 14.,"No? Haha. No pateixis, no t'ho posaré difícil.",SAY.Dialog:Introduction.17.Kick Ass,"No? Ha ha. Don't worry, I'll go easy on you.","",2025-08-21T22:17:44.617Z
+14,E4_HideAndSeek_localization,Dialogues (1.1 and 1.2) converge.,Començo a COMPTAR!,SAY.Dialog:Introduction.22.Kick Ass,I'll start COUNTING!,"",2025-08-21T22:17:44.617Z
+15,E4_HideAndSeek_localization,"",30 SEGONS!,SAY.Dialog:ReadyOrNot.1.Kick Ass,30 SECONDS!,"",2025-08-21T22:17:44.617Z
+16,E4_HideAndSeek_localization,Mini-game begins.,Preparada?—VINC!,SAY.Dialog:ReadyOrNot.16.Kick Ass,Ready or not—HERE I COME!,"",2025-08-21T22:17:44.617Z
+17,E4_HideAndSeek_localization,Kick Ass always finds Sick Ass.,T'HE TROBAT!,SAY.Dialog:FoundYou.1.Kick Ass,FOUND YOU!,"",2025-08-21T22:17:44.617Z
+18,E4_HideAndSeek_localization,"Mini-game begins, round 2.","Quin riure, NO? Juguem UN ALTRE COP!",SAY.Dialog:FoundYou.2.Kick Ass,"That was awesome, WASN'T IT? Let's play AGAIN!","",2025-08-21T22:17:44.617Z
+19,E4_HideAndSeek_localization,Kick Ass always finds Sick Ass.,Ets ma germana i sempre ET TROBARÉ.,SAY.Dialog:FoundYou.16.Kick Ass,You're my sister and I'll always FIND YOU.,"",2025-08-21T22:17:44.617Z
+20,E4_HideAndSeek_localization,"",Encara que t'amaguis al replec més fondo de la Mina!,SAY.Dialog:FoundYou.12.Kick Ass,Even if you're down in the deepest corner of the Mine!,"",2025-08-21T22:17:44.617Z
+21,E4_HideAndSeek_localization,"",O a la CIUTAT MÉS LLUNYANA!,SAY.Dialog:FoundYou.13.Kick Ass,Or in the FARTHEST CITY!,"",2025-08-21T22:17:44.617Z
+22,E4_HideAndSeek_localization,Fade out.,O A QUALSEVOL ALTRE LLOC!,SAY.Dialog:FoundYou.15.Kick Ass,Or somewhere ELSE ENTIRELY!!,"",2025-08-21T22:17:44.617Z
+3,E4_Mine1F_localization,"Dialogue for when Sick Ass coughs.
+// Sick Ass wanders around the first floor of the Mine. She is slowly dying.",*TUS TUS*,SAY.Dialog:SickCough.2.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+4,E4_Mine1F_localization,Dialogue for when Sick Ass tries to exit.,...,SAY.Dialog:SickAttemptToExitToMine.2.Sick Ass,...,"",2025-08-21T22:17:44.617Z
+5,E4_Mine1F_localization,Dialogue for when Sick Ass tries to exit.,...,SAY.Dialog:SickAttemptToExitOutside.2.Sick Ass,...,"",2025-08-21T22:17:44.617Z
+6,E4_Mine1F_localization,NPC dialogue option. No particular order for when you talk to someone.,"On vas, Feblase? Hauries d'estar DESCANSANT!",SAY.Dialog:SickKick.10.Kick Ass,"Hey Sick, you're supposed to be MELLOWING out!","",2025-08-21T22:17:44.617Z
+7,E4_Mine1F_localization,Repeater line.,No vagis gaire LLUNY!,SAY.Dialog:SickKick.12.Kick Ass,Don't go too FAR!,"",2025-08-21T22:17:44.617Z
+8,E4_Mine1F_localization,NPC dialogue option. No particular order for when you talk to someone.,Jeu. Necessitem la teva força.,SAY.Dialog:SickHard.10.Hard Ass,Lie down. We need your strength.,"",2025-08-21T22:17:44.617Z
+9,E4_Mine1F_localization,Repeater line.,"Descansa, Camarada.",SAY.Dialog:SickHard.23.Hard Ass,"Rest, Comrade.","",2025-08-21T22:17:44.617Z
+10,E4_Mine1F_localization,NPC dialogue option. No particular order for when you talk to someone.,"Ai Feblase, espero que et t-t-t...",SAY.Dialog:SickSlow.10.Slow Ass,"Oh Sick, I wish you would get b-b-b...","",2025-08-21T22:17:44.617Z
+11,E4_Mine1F_localization,"",t-t-t-t...,SAY.Dialog:SickSlow.23.Slow Ass,b-b-b-b...,"",2025-08-21T22:17:44.617Z
+12,E4_Mine1F_localization,"",t-t-t-t-t...,SAY.Dialog:SickSlow.22.Slow Ass,b-b-b-b-b...,"",2025-08-21T22:17:44.617Z
+13,E4_Mine1F_localization,"",... trobis millor.,SAY.Dialog:SickSlow.24.Slow Ass,...better.,"",2025-08-21T22:17:44.617Z
+14,E4_Mine1F_localization,Repeater line.,"Si hi hagués l'Honradase, no se separaria de t-t-tu.",SAY.Dialog:SickSlow.12.Slow Ass,"If Trusty were around, she'd by right b-b-by your side.","",2025-08-21T22:17:44.617Z
+15,E4_Mine1F_localization,NPC dialogue option. No particular order for when you talk to someone.,Ai Feblase... no fas cara de viure gaire més...,SAY.Dialog:SickSad.10.Sad Ass,Oh Sick... you don't look like you have much time left...,"",2025-08-21T22:17:44.617Z
+16,E4_Mine1F_localization,Repeater line.,*ploriqueja*,SAY.Dialog:SickSad.12.Sad Ass,*whimper*,"",2025-08-21T22:17:44.617Z
+17,E4_Mine1F_localization,NPC dialogue option. No particular order for when you talk to someone.,Per què en Fortalase va travessar el camí?,SAY.Dialog:SickSmart.10.Smart Ass,Why did Hard Ass cross the road?,"",2025-08-21T22:17:44.617Z
+18,E4_Mine1F_localization,"",Ups. Suposo que ara no és el moment...,SAY.Dialog:SickSmart.22.Smart Ass,"Oh, oops. I guess now's not the time...","",2025-08-21T22:17:44.617Z
+19,E4_Mine1F_localization,Repeater line.,"Saps, Feblase, ets l'única que sap encaixar una broma.",SAY.Dialog:SickSmart.12.Smart Ass,"You know, Sick, you're the only here who can take a joke.","",2025-08-21T22:17:44.617Z
+20,E4_Mine1F_localization,NPC dialogue option. No particular order for when you talk to someone.,"Vols que et vage a buscar una mica d'aigua, Camarada?",SAY.Dialog:SickThirsty.10.Thirsty Ass,"Can I git ya some water, Comrade?","",2025-08-21T22:17:44.617Z
+21,E4_Mine1F_localization,Repeater line.,"Vaiga, no fas bona cara.",SAY.Dialog:SickThirsty.12.Thirsty Ass,"Heck, yer not lookin' so hot.","",2025-08-21T22:17:44.617Z
+22,E4_Mine1F_localization,NPC dialogue option. No particular order for when you talk to someone.,"No t'amoïnis, Camarada. No tinc cap dubte que els Déus procuren per tu.",SAY.Dialog:SickSturdy.10.Sturdy Ass,"Fear not Comrade, I'm confident that the Gods are watching over you.","",2025-08-21T22:17:44.617Z
+23,E4_Mine1F_localization,Repeater line. Depending on what Old Ass said in Episode 1.,Recorda què va dir en Vellase: La Força dels Ases!,SAY.Dialog:SickSturdy.27.Sturdy Ass,Remember what Old Ass said: Ass Power!,"",2025-08-21T22:17:44.617Z
+24,E4_Mine1F_localization,Repeater line. Depending on what Old Ass said in Episode 1.,Recorda què va dir en Vellase: No tinguis por!,SAY.Dialog:SickSturdy.28.Sturdy Ass,Remember what Old Ass said: Don't be scared!,"",2025-08-21T22:17:44.617Z
+25,E4_Mine1F_localization,NPC dialogue option. No particular order for when you talk to someone.,Si em sobrés alguna ració la compartiria amb tu.,SAY.Dialog:SickBig.10.Big Ass,If I had any of my rations left I'd share them with you.,"",2025-08-21T22:17:44.617Z
+26,E4_Mine1F_localization,Repeater line.,No em sobra res.,SAY.Dialog:SickBig.22.Big Ass,"I'm sorry, there's nothing left.","",2025-08-21T22:17:44.617Z
+27,E4_Mine1F_localization,NPC dialogue option. No particular order for when you talk to someone.,Aix! Segur que ja et trobes millor!,SAY.Dialog:SickNice.10.Nice Ass,Golly! You must be feeling better already!,"",2025-08-21T22:17:44.617Z
+28,E4_Mine1F_localization,Repeater line.,Sembles a punt per tornar a treballar!,SAY.Dialog:SickNice.12.Nice Ass,You look ready to hop back to work!,"",2025-08-21T22:17:44.617Z
+29,E4_Mine1F_localization,"Dialogue option 1.1. // After Sick dies, the Player takes over as Kick Ass who needs to find his sister in the Mine.","@#$%&! Tot el que estem PATINT és culpa teva, Fortalase!",MENU.Dialog:KickHard.66,"@#$%&! You're to blame for all of our SUFFERING, Hard Ass!","",2025-08-21T22:17:44.617Z
+30,E4_Mine1F_localization,Jump to line 33.,"@#$%&! Tot el que estem PATINT és culpa teva, Fortalase!",SAY.Dialog:KickHard.70.Kick Ass,"@#$%&! You're to blame for all of our SUFFERING, Hard Ass!","",2025-08-21T22:17:44.617Z
+31,E4_Mine1F_localization,"Dialogue option 1.2. // After Sick dies, the Player takes over as Kick Ass who needs to find his sister in the Mine.",@#$%&! No podem seguir sortint sota la PLUJA a fer MISSIONS.,MENU.Dialog:KickHard.65,@#$%&! We can't keep going out in the RAIN on these MISSIONS.,"",2025-08-21T22:17:44.617Z
+32,E4_Mine1F_localization,Jump to line 33.,@#$%&! No podem seguir sortint sota la PLUJA a fer MISSIONS.,SAY.Dialog:KickHard.69.Kick Ass,@#$%&! We can't keep going out in the RAIN on these MISSIONS.,"",2025-08-21T22:17:44.617Z
+33,E4_Mine1F_localization,Dialogue options (1.1 and 1.2) converge.,La Feblase està cada cop PITJOR.,SAY.Dialog:KickHard.10.Kick Ass,Sick's getting WORSE.,"",2025-08-21T22:17:44.617Z
+34,E4_Mine1F_localization,"","Ja millorarà, Camarada. Demà a trenc d'alba partim amb la propera missió.",SAY.Dialog:KickHard.26.Hard Ass,"Comrade, she will be fine. We leave at dawn for the next mission.","",2025-08-21T22:17:44.617Z
+35,E4_Mine1F_localization,"",QUÊ?! Necessita DESCANSAR!,SAY.Dialog:KickHard.25.Kick Ass,WHAT?! She needs REST!,"",2025-08-21T22:17:44.617Z
+36,E4_Mine1F_localization,"",Hi hem de ser tots tres.,SAY.Dialog:KickHard.34.Hard Ass,We need all three of us.,"",2025-08-21T22:17:44.617Z
+37,E4_Mine1F_localization,"",Encara no hem acabat el que vam començar.,SAY.Dialog:KickHard.57.Hard Ass,We have not finished what we started.,"",2025-08-21T22:17:44.617Z
+38,E4_Mine1F_localization,"",Ja n'hi ha PROU!,SAY.Dialog:KickHard.27.Kick Ass,We've had ENOUGH!,"",2025-08-21T22:17:44.617Z
+39,E4_Mine1F_localization,"",No seguirem jugant AL TEU JOC!,SAY.Dialog:KickHard.56.Kick Ass,We don't want to play your GAME ANYMORE!,"",2025-08-21T22:17:44.617Z
+40,E4_Mine1F_localization,"","Després del que hem fet, no hi ha marxa enrere.",SAY.Dialog:KickHard.24.Hard Ass,There is no going back after what we have done.,"",2025-08-21T22:17:44.617Z
+41,E4_Mine1F_localization,"",La veritat partirà el Ramat en dos.,SAY.Dialog:KickHard.55.Hard Ass,The truth will tear the Herd in two.,"",2025-08-21T22:17:44.617Z
+42,E4_Mine1F_localization,"",TANT ME FA el Ramat!,SAY.Dialog:KickHard.28.Kick Ass,I DON'T CARE about the Herd!,"",2025-08-21T22:17:44.617Z
+43,E4_Mine1F_localization,"",L'única que m'importa és—,SAY.Dialog:KickHard.38.Kick Ass,All I care about is—,"",2025-08-21T22:17:44.617Z
+44,E4_Mine1F_localization,"",Feblase?,SAY.Dialog:KickHard.54.Kick Ass,Sick?,"",2025-08-21T22:17:44.617Z
+45,E4_Mine1F_localization,"",FEBLASE?!,SAY.Dialog:KickHard.37.Kick Ass,SICK?!,"",2025-08-21T22:17:44.617Z
+46,E4_Mine1F_localization,Kick Ass goes to find Sick Ass.,Feblase—on ets?!,SAY.Dialog:KickHard.40.Kick Ass,Sick—where are you?!,"",2025-08-21T22:17:44.617Z
+47,E4_Mine1F_localization,NPC dialogue repeater option. No particular order for when you talk to someone.,"""Només toca fons qui perd l'esperança.""",SAY.Dialog:HardRepeater.12.Hard Ass,"""You only hit rock bottom when you quit.""","",2025-08-21T22:17:44.617Z
+48,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they talked with Sick.",La Feblase fa més bona cara! Em sembla que tot anirà bé!,SAY.Dialog:KickNice.10.Nice Ass,Sick looks like she's feeling better! I think everything's going to be alright!,"",2025-08-21T22:17:44.617Z
+49,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they did NOT talk with Sick.",Com està avui la Feblase? Feu tan bona parella vosaltres dos!,SAY.Dialog:KickNice.12.Nice Ass,How's Sick feeling today? You two make such a good pair!,"",2025-08-21T22:17:44.617Z
+50,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they talked with Sick.",Tu i jo podem fer junts la Vetlla. Tot i que no tinc l'espelma...,SAY.Dialog:KickSad.10.Sad Ass,You and I can sit Vigil together. I don't have my candle though...,"",2025-08-21T22:17:44.617Z
+51,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they did NOT talk with Sick.",Avui és un dia tan fosc com ahir i serà tan fosc com demà.,SAY.Dialog:KickSad.12.Sad Ass,Today is just as dark as yesterday and will be just as dark as tomorrow.,"",2025-08-21T22:17:44.617Z
+52,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they talked with Sick.",A tu també t'aniria bé una mica d'aigua!,SAY.Dialog:KickThirsty.10.Thirsty Ass,You look like you could use some water too!,"",2025-08-21T22:17:44.617Z
+53,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they did NOT talk with Sick.",Mecagon tot! Acabaré perdent lo cap aquí sota!,SAY.Dialog:KickThirsty.12.Thirsty Ass,Dangnabbit! I'm goin' stir crazy down here!,"",2025-08-21T22:17:44.617Z
+54,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they talked with Sick.",Tant de bo la Feblase hagi trobat alguna ració extra.,SAY.Dialog:KickBig.10.Big Ass,I hope Sick found some extra rations.,"",2025-08-21T22:17:44.617Z
+55,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they did NOT talk with Sick.","És un moment difícil, Camarada. Soc aquí amb tu.",SAY.Dialog:KickBig.12.Big Ass,"This is a difficult time, Comrade. I'm here for you.","",2025-08-21T22:17:44.617Z
+56,E4_Mine1F_localization,NPC dialogue repeater option. No particular order for when you talk to someone.,Espero que la Feblase es t-t-t...,SAY.Dialog:KickSlow.10.Slow Ass,I hope Sick is feeling b-b-b...,"",2025-08-21T22:17:44.617Z
+57,E4_Mine1F_localization,"",t-t-t-t...,SAY.Dialog:KickSlow.24.Slow Ass,b-b-b-b...,"",2025-08-21T22:17:44.617Z
+58,E4_Mine1F_localization,"",t-t-t-t-t...,SAY.Dialog:KickSlow.23.Slow Ass,b-b-b-b-b...,"",2025-08-21T22:17:44.617Z
+59,E4_Mine1F_localization,"",... trobi millor.,SAY.Dialog:KickSlow.22.Slow Ass,...better.,"",2025-08-21T22:17:44.617Z
+60,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they talked with Sick.","Aguanta, Camarada. Els Déus veuran com d'especial és la Feblase quan es trobin amb ella.",SAY.Dialog:KickSturdy.10.Sturdy Ass,"Hold tight, Comrade. I trust the Gods will see how special Sick Ass is when they meet her.","",2025-08-21T22:17:44.617Z
+61,E4_Mine1F_localization,"NPC dialogue repeater option. No particular order for when you talk to someone.
+// This option is if they did NOT talk with Sick.",Heu vist la {$NewName}? No la trobo enlloc.,SAY.Dialog:KickSturdy.23.Sturdy Ass,Have you seen {$NewName}? I can't find her anywhere.,"",2025-08-21T22:17:44.617Z
+62,E4_Mine1F_localization,NPC dialogue repeater option. No particular order for when you talk to someone.,"Si tinguéssim medicina Humana, potser la Feblase milloraria.",SAY.Dialog:KickSmart.10.Smart Ass,If we had some Human medicine maybe Sick would get better.,"",2025-08-21T22:17:44.617Z
+63,E4_Mine1F_localization,Dialogue for when Kick Ass tries to exit.,Feblase?!—@#$%&!—No crec que s'hagi ficat per aquí...,SAY.Dialog:KickAttemptToExitToMine.2.Kick Ass,Sick?!—@#$%&!—I don't think she'd have gone this way...,"",2025-08-21T22:17:44.617Z
+64,E4_Mine1F_localization,Dialogue for when Kick Ass tries to exit.,No crec que la Feblase hagi sortit sota la pluja...,SAY.Dialog:KickAttemptToExitOutside.2.Kick Ass,I don't think Sick would have gone back out into the rain...,"",2025-08-21T22:17:44.617Z
+65,E4_Mine1F_localization,Kick finds Sick Ass's lifeless body.,T'HE TROBAT!,SAY.Dialog:KickFindsSick.1.Kick Ass,I FOUND YOU!,"",2025-08-21T22:17:44.617Z
+66,E4_Mine1F_localization,"",Feblase...? FEBLASE?!,SAY.Dialog:KickFindsSick.2.Kick Ass,Sick...? SICK?!,"",2025-08-21T22:17:44.617Z
+67,E4_Mine1F_localization,Kick wails.,HIIIIIII HÒOOOOO!,SAY.Dialog:KickFindsSick.6.Kick Ass,HEEEEEHAWWWW!,"",2025-08-21T22:17:44.617Z
+68,E4_Mine1F_localization,"","",SAY.Dialog:KickSturdy.12.,REPEATER,"",2025-08-21T22:17:44.617Z
+69,E4_Mine1F_localization,"","",SAY.Dialog:KickSlow.12.,REPEATER,"",2025-08-21T22:17:44.617Z
+70,E4_Mine1F_localization,"","",SAY.Dialog:KickHard.12.,REPEATER,"",2025-08-21T22:17:44.617Z
+71,E4_Mine1F_localization,"","",SAY.Dialog:KickSmart.12.,REPEATER,"",2025-08-21T22:17:44.617Z
+3,E4_HerdSplits_localization,"The Herd gathers to see the commotion.
+Kick Ass, standing over his sister's body, is incensed and rageful.",HIIIIIII—@#$%&!—HÒOOOOO!!,SAY.Dialog:Debate.39.Kick Ass,HEEEE—@#$%&!—HAWWW!!,"",2025-08-21T22:17:44.617Z
+4,E4_HerdSplits_localization,"","ÉS TOT CULPA TEVA, FORTALASE!",SAY.Dialog:Debate.42.Kick Ass,THIS IS YOUR FAULT HARD ASS!,"",2025-08-21T22:17:44.617Z
+5,E4_HerdSplits_localization,"",TOTHOM ha de saber per què la Feblase és MORTA.,SAY.Dialog:Debate.59.Kick Ass,EVERYONE deserves to know why Sick is DEAD.,"",2025-08-21T22:17:44.617Z
+6,E4_HerdSplits_localization,"","Què va passar de debò a les nostres missions de ""recol·lecció""...",SAY.Dialog:Debate.60.Kick Ass,"What REALLY happened on our ""scavenging"" missions...","",2025-08-21T22:17:44.617Z
+7,E4_HerdSplits_localization,"",El que en Fortalase ens va obligar a fer...,SAY.Dialog:Debate.61.Kick Ass,What Hard Ass FORCED us to do...,"",2025-08-21T22:17:44.617Z
+8,E4_HerdSplits_localization,"",...als Humans.,SAY.Dialog:Debate.301.Kick Ass,...to the Humans.,"",2025-08-21T22:17:44.617Z
+9,E4_HerdSplits_localization,"",Als Humans?! Fas broma?!,SAY.Dialog:Debate.62.Smart Ass,Humans?! Are you joking?!,"",2025-08-21T22:17:44.617Z
+10,E4_HerdSplits_localization,Fade to flashback (next scene).,"Des que hi va haver l'Incendi, han estat—INTENTANT DE TORNAR—a Talldevall.",SAY.Dialog:Debate.64.Kick Ass,They've been—TRYING TO RETURN—to Fannyside ever since the Fire.,"",2025-08-21T22:17:44.617Z
+11,E4_HerdSplits_localization,Fade back from flashback.,En Fortalase ens va obligar a guardar-ho en SECRET.,SAY.Dialog:Debate.76.Kick Ass,Hard Ass forced us to keep it a SECRET.,"",2025-08-21T22:17:44.617Z
+12,E4_HerdSplits_localization,"",Perquè us hauríeu ARROSEGAT cap als Humans només per sobreviure.,SAY.Dialog:Debate.78.Kick Ass,Because you'd CRAWL BACK to the Humans just to stay alive.,"",2025-08-21T22:17:44.617Z
+13,E4_HerdSplits_localization,"",Però MIREU COM ESTEM—morint de totes maneres!,SAY.Dialog:Debate.79.Kick Ass,But LOOK AT US NOW—dying anyway!,"",2025-08-21T22:17:44.617Z
+14,E4_HerdSplits_localization,"","Què vol dir això, Fortalase?! És una broma de mal gust?",SAY.Dialog:Debate.123.Smart Ass,"Is this some kind of twisted joke, Hard Ass?!","",2025-08-21T22:17:44.617Z
+15,E4_HerdSplits_localization,"",Em vau implorar que salvés els Humans.,SAY.Dialog:Debate.88.Hard Ass,You begged me to rescue the Humans.,"",2025-08-21T22:17:44.617Z
+16,E4_HerdSplits_localization,"","Però quan els vaig voler salvar de l'Incendi, els Humans estaven disposats a matar-me per salvar-se a si mateixos.",SAY.Dialog:Debate.89.Hard Ass,"But when I went to save them from the Fire, the Humans were ready to kill me to save themselves.","",2025-08-21T22:17:44.617Z
+17,E4_HerdSplits_localization,"",Van revelar la seva autèntica natura.,SAY.Dialog:Debate.90.Hard Ass,They revealed their true nature.,"",2025-08-21T22:17:44.617Z
+18,E4_HerdSplits_localization,"","Aquell dia, vaig entendre què havíem de fer per sobreviure.",SAY.Dialog:Debate.94.Hard Ass,"That day, I learned what it will take for us to survive.","",2025-08-21T22:17:44.617Z
+19,E4_HerdSplits_localization,"",La nostra única opció és la Revolució.,SAY.Dialog:Debate.344.Hard Ass,The only option left for us is Revolution.,"",2025-08-21T22:17:44.617Z
+20,E4_HerdSplits_localization,"",Hem de ser els nostres propis Amos.,SAY.Dialog:Debate.346.Hard Ass,We must become our own Masters.,"",2025-08-21T22:17:44.617Z
+21,E4_HerdSplits_localization,"","Sense Humans, mai més tornarem a treballar!",SAY.Dialog:Debate.83.Smart Ass,"Without Humans, we'll never work again!","",2025-08-21T22:17:44.617Z
+22,E4_HerdSplits_localization,"","Ens morirem tots per culpa teva, Fortalase!",SAY.Dialog:Debate.124.Smart Ass,"We're all gonna die because of you, Hard Ass!","",2025-08-21T22:17:44.617Z
+23,E4_HerdSplits_localization,"",Error.,SAY.Dialog:Debate.126.Hard Ass,Wrong.,"",2025-08-21T22:17:44.617Z
+24,E4_HerdSplits_localization,"",Els Ases no necessiten Humans per treballar.,SAY.Dialog:Debate.127.Hard Ass,Asses don't require Humans to work.,"",2025-08-21T22:17:44.617Z
+25,E4_HerdSplits_localization,"",Viure ja duu prou feina.,SAY.Dialog:Debate.128.Hard Ass,Living is work enough.,"",2025-08-21T22:17:44.617Z
+26,E4_HerdSplits_localization,"",Som lliures.,SAY.Dialog:Debate.129.Hard Ass,We're free.,"",2025-08-21T22:17:44.617Z
+27,E4_HerdSplits_localization,"",Ha! Lliures per patir i morir de gana!,SAY.Dialog:Debate.131.Smart Ass,Ha! Free to suffer and starve!,"",2025-08-21T22:17:44.617Z
+28,E4_HerdSplits_localization,"",Tu pretens que treballem per viure—jo prefereixo VIURE per TREBALLAR.,SAY.Dialog:Debate.132.Smart Ass,You'd have us work to live—but I'd rather LIVE to WORK.,"",2025-08-21T22:17:44.617Z
+29,E4_HerdSplits_localization,"",Doncs sí—ja n'estic FARTA! És hora de tenir un nou Pla!,SAY.Dialog:Debate.133.Smart Ass,That's right—I'm DONE! Time for a new Plan!,"",2025-08-21T22:17:44.617Z
+30,E4_HerdSplits_localization,"",U. Sortim a buscar més Humans.,SAY.Dialog:Debate.282.Smart Ass,ONE. We leave to find more Humans.,"",2025-08-21T22:17:44.617Z
+31,E4_HerdSplits_localization,"",DOS. NO MATEM els Huamans.\n,SAY.Dialog:Debate.281.Smart Ass,TWO. We DON'T KILL the Humans.\n,"",2025-08-21T22:17:44.617Z
+32,E4_HerdSplits_localization,"","TRES. Convencem els HUMANS perquè abandonin les Màquines, no ens morim en aquest coi de Forat, i recuperem la NOSTRA FEINA.",SAY.Dialog:Debate.134.Smart Ass,"THREE. We convince the Humans to give up their Machines, we don't die in this Hellhole, and we get our JOBS BACK.","",2025-08-21T22:17:44.617Z
+33,E4_HerdSplits_localization,"",FÀCIL.,SAY.Dialog:Debate.284.Smart Ass,EASY.,"",2025-08-21T22:17:44.617Z
+34,E4_HerdSplits_localization,"",Qui ve amb mi?!,SAY.Dialog:Debate.283.Smart Ass,Who's coming with me?!,"",2025-08-21T22:17:44.617Z
+35,E4_HerdSplits_localization,Silence. Sturdy speaks.,"Camarades, jo em quedo aquí amb el meu Pollí, on hem d'estar.",SAY.Dialog:Debate.172.Sturdy Ass,"Comrades, I'm staying here with my Foal where we belong.","",2025-08-21T22:17:44.617Z
+36,E4_HerdSplits_localization,"",Ja sé que en Vellase somiava en un món on Ases i Humans tornessin a treballar plegats...,SAY.Dialog:Debate.317.Sturdy Ass,I know Old Ass dreamed of a world where Asses and Humans worked together again...,"",2025-08-21T22:17:44.617Z
+37,E4_HerdSplits_localization,"","Però en Fortalase té raó, ja és massa tard.",SAY.Dialog:Debate.173.Sturdy Ass,"But if what Hard Ass says is true, then it's too late.","",2025-08-21T22:17:44.617Z
+38,E4_HerdSplits_localization,"",El somni d'en Vellase és aigua passada.,SAY.Dialog:Debate.355.Sturdy Ass,Old Ass's dream is dead.,"",2025-08-21T22:17:44.617Z
+39,E4_HerdSplits_localization,"","Ja només ens tenim els uns als altres, i la nostra fe que els Déus tenen un pla.",SAY.Dialog:Debate.356.Sturdy Ass,The only thing we have left is each other and our faith that the Gods have a plan.,"",2025-08-21T22:17:44.617Z
+40,E4_HerdSplits_localization,"",Tot Ase que marxi estarà traint el Ramat.,SAY.Dialog:Debate.174.Sturdy Ass,"Any Ass who leaves, betrays the Herd.","",2025-08-21T22:17:44.617Z
+41,E4_HerdSplits_localization,"",Tot Ase que ES QUEDI és un ASSASSÍ!,SAY.Dialog:Debate.171.Smart Ass,Any Ass who STAYS is a MURDERER!,"",2025-08-21T22:17:44.617Z
+42,E4_HerdSplits_localization,"",QUI ESTÀ AMB MI?!,SAY.Dialog:Debate.321.Smart Ass,WHO'S WITH ME?!,"",2025-08-21T22:17:44.617Z
+43,E4_HerdSplits_localization,"",Vinga...,SAY.Dialog:Debate.323.Smart Ass,Come on...,"",2025-08-21T22:17:44.617Z
+44,E4_HerdSplits_localization,Silence.,Algú—?,SAY.Dialog:Debate.324.Smart Ass,Someone—?,"",2025-08-21T22:17:44.617Z
+45,E4_HerdSplits_localization,More silence.,Ningú—?,SAY.Dialog:Debate.325.Smart Ass,Anyone—?,"",2025-08-21T22:17:44.617Z
+46,E4_HerdSplits_localization,"",—cap Ase farà un pas endavant?!,SAY.Dialog:Debate.326.Smart Ass,—won't any Ass step forward?!,"",2025-08-21T22:17:44.617Z
+47,E4_HerdSplits_localization,Slow Ass sheepishly speaks.,"Si l'Honradase fos aquí, no hauria p-p-passat res d'això.",SAY.Dialog:Debate.285.Slow Ass,"If Trusty were here, none of this would have hap-p-p-p-pened.","",2025-08-21T22:17:44.617Z
+48,E4_HerdSplits_localization,"",...Jo vinc...,SAY.Dialog:Debate.178.Slow Ass,...I'll come...,"",2025-08-21T22:17:44.617Z
+49,E4_HerdSplits_localization,"",Perfecte... UN. Algú més?,SAY.Dialog:Debate.179.Smart Ass,Fine...ONE. Anyone else?,"",2025-08-21T22:17:44.617Z
+50,E4_HerdSplits_localization,"","Pot ser que els Humans ens hagin menystingut, però això no justifica tota aquesta violència.",SAY.Dialog:Debate.176.Big Ass,"The Humans may have belittled us, but that's no reason for such heavy violence.","",2025-08-21T22:17:44.617Z
+51,E4_HerdSplits_localization,"","{vpunch=100,0.75}Jo també vaig amb la Llestase.",SAY.Dialog:Debate.299.Big Ass,"{vpunch=100,0.75}I'm leaving with Smart Ass too.","",2025-08-21T22:17:44.617Z
+52,E4_HerdSplits_localization,"",DOS!,SAY.Dialog:Debate.320.Smart Ass,TWO!,"",2025-08-21T22:17:44.617Z
+53,E4_HerdSplits_localization,start line witjh a space,I MIG!,SAY.Dialog:Debate.357.Smart Ass,AND A HALF!,"",2025-08-21T22:17:44.617Z
+54,E4_HerdSplits_localization,"",...Tinc les peülles tacades de sang.,SAY.Dialog:Debate.170.Kick Ass,...I have blood on my hooves.,"",2025-08-21T22:17:44.617Z
+55,E4_HerdSplits_localization,"","Tens raó, Llestase—aquí hi acabarem MORINT tots.",SAY.Dialog:Debate.303.Kick Ass,"You're right, Smart Ass—this place will be THE DEATH of us.","",2025-08-21T22:17:44.617Z
+56,E4_HerdSplits_localization,"",Vindré amb vosaltres... SI VOLEU QUE VINGUI.,SAY.Dialog:Debate.358.Kick Ass,I'll come with you... IF YOU'LL HAVE ME.,"",2025-08-21T22:17:44.617Z
+57,E4_HerdSplits_localization,"",Suposo que seria estratègic tenir-te amb nosaltres...,SAY.Dialog:Debate.177.Smart Ass,I suppose it could be strategic to bring you with us...,"",2025-08-21T22:17:44.617Z
+58,E4_HerdSplits_localization,"",Però has de prometre que mai més faràs mal a cap altre Humà.,SAY.Dialog:Debate.349.Smart Ass,But you have to swear that you won't hurt another Human ever again.,"",2025-08-21T22:17:44.617Z
+59,E4_HerdSplits_localization,"",Ho PROMETO pel cos de la meva GERMANA—mai més faré mal a cap altre Humà.,SAY.Dialog:Debate.350.Kick Ass,I SWEAR on the body of my SISTER—I will never hurt another Human again.,"",2025-08-21T22:17:44.617Z
+60,E4_HerdSplits_localization,"",Doncs ja som TRES i mig. Qui més?,SAY.Dialog:Debate.351.Smart Ass,That's THREE and a half. Who else?,"",2025-08-21T22:17:44.617Z
+61,E4_HerdSplits_localization,"",Ai mare meua...,SAY.Dialog:Debate.180.Thirsty Ass,Ah heck...,"",2025-08-21T22:17:44.617Z
+62,E4_HerdSplits_localization,"","Tu què faràss, Bellase?",SAY.Dialog:Debate.191.Thirsty Ass,Nice Ass what are you going to do?,"",2025-08-21T22:17:44.617Z
+63,E4_HerdSplits_localization,"","Aix. Abandonar Talldevall? Això és casa nostra, no me'n puc anar sense més ni més!",SAY.Dialog:Debate.181.Nice Ass,Golly. Leave Fannyside? But this is our home. I can't just leave!,"",2025-08-21T22:17:44.617Z
+64,E4_HerdSplits_localization,"",Pos jo també em quedo!,SAY.Dialog:Debate.192.Thirsty Ass,"Then heck, I’m staying too!","",2025-08-21T22:17:44.617Z
+65,E4_HerdSplits_localization,"",Tristase? Camarada? Què has decidit?,SAY.Dialog:Debate.193.Smart Ass,Sad Ass? Comrade? What's your decision?,"",2025-08-21T22:17:44.617Z
+66,E4_HerdSplits_localization,Jump to line 66 or 73.,Jo...,SAY.Dialog:Debate.194.Sad Ass,I...,"",2025-08-21T22:17:44.617Z
+67,E4_HerdSplits_localization,Branch 2.1. Sad Ass is going to STAY on the Farm.,Algú em va dir un dia que havíem d'honrar el llegat dels que ens havien precedit.,SAY.Dialog:Debate.200.Sad Ass,"Someone once said to me, we have to honour the legacy of those who came before us.","",2025-08-21T22:17:44.617Z
+68,E4_HerdSplits_localization,"",Així que crec que és hora de començar a refer-me i viure la vida que la Perase hauria volgut.,SAY.Dialog:Debate.201.Sad Ass,So I think it's about time I pick myself up and try to live the life that Lazy wanted.,"",2025-08-21T22:17:44.617Z
+69,E4_HerdSplits_localization,"",Em quedo aquí.,SAY.Dialog:Debate.204.Sad Ass,I'm staying here.,"",2025-08-21T22:17:44.617Z
+70,E4_HerdSplits_localization,"",Com vulguis. Som-hi!,SAY.Dialog:Debate.205.Smart Ass,Whatever. Let's go!,"",2025-08-21T22:17:44.617Z
+71,E4_HerdSplits_localization,"","Camarades, si marxeu no podré protegir-vos—",SAY.Dialog:Debate.211.Hard Ass,"Comrades, if you go I can't protect you—","",2025-08-21T22:17:44.617Z
+72,E4_HerdSplits_localization,"","Tanca els morros, Fortalase!",SAY.Dialog:Debate.212.Smart Ass,"Shut it, Hard Ass!","",2025-08-21T22:17:44.617Z
+73,E4_HerdSplits_localization,"Some of the Herd head towards the door.
+We're left with Kick over Sick's body.","Ferase i Grandase... i Coixase—vinga, deixem enrere aquest coi de Forat! FÀCIL.",SAY.Dialog:Debate.208.Smart Ass,Come on Kick and Big.... and Slow—we're outta this Hellhole! EASY.,"",2025-08-21T22:17:44.617Z
+74,E4_HerdSplits_localization,Branch 2.2. Sad Ass is going to LEAVE the Farm.,"Algú em va dir un dia que, si el que fem no ens fa feliços, hauríem de fer una altra cosa.",SAY.Dialog:Debate.209.Sad Ass,"Someone once said to me, that if you aren't doing something that brings you joy, you should do something different.","",2025-08-21T22:17:44.617Z
+75,E4_HerdSplits_localization,"",Així que crec que és hora de tornar a començar.,SAY.Dialog:Debate.215.Sad Ass,So I think it’s time for me to get a fresh start.,"",2025-08-21T22:17:44.617Z
+76,E4_HerdSplits_localization,"","Vinc amb tu, Llestase.",SAY.Dialog:Debate.214.Sad Ass,I'll come with you Smart Ass.,"",2025-08-21T22:17:44.617Z
+77,E4_HerdSplits_localization,"",QUATRE! Som-hi!,SAY.Dialog:Debate.210.Smart Ass,FOUR! Let's go!,"",2025-08-21T22:17:44.617Z
+78,E4_HerdSplits_localization,"","Camarades, si marxeu no podré protegir-vos—",SAY.Dialog:Debate.206.Hard Ass,"Comrades, if you go I can't protect you—","",2025-08-21T22:17:44.617Z
+79,E4_HerdSplits_localization,"","Tanca els morros, Fortalase!",SAY.Dialog:Debate.207.Smart Ass,"Shut it, Hard Ass!","",2025-08-21T22:17:44.617Z
+80,E4_HerdSplits_localization,"Some of the Herd head towards the door.
+We're left with Kick over Sick's body.","Ferase, Grandase, Tristase... i Coixase—vinga, deixem enrere aquest coi de Forat! FÀCIL.",SAY.Dialog:Debate.213.Smart Ass,"Come on Kick, Big, Sad... and Slow—we're outta this Hellhole! EASY.","",2025-08-21T22:17:44.617Z
+81,E4_HerdSplits_localization,"Old, can likely be deleted.",La Revolució demana sacrifici.,SAY.Dialog:Debate.50.Hard Ass,Revolution requires sacrifice.,"",2025-08-21T22:17:44.617Z
+82,E4_HerdSplits_localization,"Old, can likely be deleted.",A la merda els teus sacrificis!,SAY.Dialog:Debate.53.Kick Ass,Fuck your sacrifices!,"",2025-08-21T22:17:44.617Z
+83,E4_HerdSplits_localization,"Old, can likely be deleted.","Feia temps que la Feblase estava malalta, Camarada.",SAY.Dialog:Debate.48.Hard Ass,"Sick has been ill a long time, Comrade.","",2025-08-21T22:17:44.617Z
+84,E4_HerdSplits_localization,"Old, can likely be deleted.",I ara és morta per culpa de la teva maleïda Revolució!,SAY.Dialog:Debate.51.Kick Ass,And now she's dead because of your stupid Revolution!,"",2025-08-21T22:17:44.617Z
+3,E4_KicksConfession_localization,"In the flashback, we see a violent scene play out.",Ens vam amagar al costat de l'Autopista a esperar una Màquina Rodadora...,SAY.Dialog:KickConfession.23.Kick Ass,We would hide along the Highway and wait for a Car-Machine...,"",2025-08-21T22:17:44.617Z
+4,E4_KicksConfession_localization,"",*TUS TUS*,SAY.Dialog:Sick.10.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+5,E4_KicksConfession_localization,Hard Ass viciously beats the Farmer.,Quan van arribar els Humans...,SAY.Dialog:KickConfession.1.Kick Ass,When the Humans arrived...,"",2025-08-21T22:17:44.617Z
+6,E4_KicksConfession_localization,Kick Ass helps deliver the finishing blow. There is blood everywhere.,En Fortalase em va obligar a AJUDAR-LO mentre la Feblase vigilava.,SAY.Dialog:FinalLines.1.Kick Ass,He made me HELP while Sick Ass kept watch.,"",2025-08-21T22:17:44.617Z
+7,E4_KicksConfession_localization,Fade out of the flashback.,Ni tota la pluja del món podrà netejar tanta SANG.,SAY.Dialog:FinalLines.5.Kick Ass,It would take forever for the rain to wash the BLOOD off.,"",2025-08-21T22:17:44.617Z
+3,E4_KicksGoodbye_localization,Kick Ass performs the Song of Ascension for Sick Ass's soul to be sent to the Astral Plane.,"Adeu, Camarada, GERMANA.",SAY.Dialog:KicksGoodbye.11.Kick Ass,"Goodbye, my Comrade, my SISTER.","",2025-08-21T22:17:44.617Z
+4,E4_KicksGoodbye_localization,"",Espero que trobis el camí cap al Pla Astral.,SAY.Dialog:KicksGoodbye.1.Kick Ass,I hope you make it to the Astral Plane.,"",2025-08-21T22:17:44.617Z
+5,E4_KicksGoodbye_localization,"",I quan la teva ÀNIMA emprengui el Rucorn—ET TROBARÉ.,SAY.Dialog:KicksGoodbye.13.Kick Ass,And when your Soul gets reassigned—I'LL FIND YOU.,"",2025-08-21T22:17:44.617Z
+3,E4_Mine1F_Exit_localization,Interactable object dialogue: Bulletin.,"EN CAS D'EMERGÈNCIA, TRUQUEU AL",WRITE.Dialog:BulletinLocalizer.1,"IN CASE OF EMERGENCY, PLEASE CALL","",2025-08-21T22:17:44.617Z
+4,E4_Mine1F_Exit_localization,Interactable object dialogue: Bulletin.,CARBÓ O NO CARBÓ?,WRITE.Dialog:BulletinLocalizer.2,COAL OR NOT COAL?,"",2025-08-21T22:17:44.617Z
+5,E4_Mine1F_Exit_localization,Interactable object dialogue: Bulletin.,DESAPAREGUT,WRITE.Dialog:BulletinLocalizer.3,MISSING,"",2025-08-21T22:17:44.617Z
+6,E4_Mine1F_Exit_localization,NPC dialogue option. No particular order for when you talk to someone.,T'estàs deixant endur per les emocions. Els Humans es desfaran de tu a la primera ocasió.,SAY.Dialog:HardPostSplit.10.Hard Ass,You're being emotional. The Humans will toss you aside the first chance they get.,"",2025-08-21T22:17:44.617Z
+7,E4_Mine1F_Exit_localization,Repeater line.,Ves-te'n d'una vegada.,SAY.Dialog:HardPostSplit.12.Hard Ass,Just go.,"",2025-08-21T22:17:44.617Z
+8,E4_Mine1F_Exit_localization,NPC dialogue option. No particular order for when you talk to someone.,"Camarada, ¿això és el que hauria volgut la Feblase?",SAY.Dialog:SturdyPostSplit.10.Sturdy Ass,"Comrade, is this what Sick would have wanted?","",2025-08-21T22:17:44.617Z
+9,E4_Mine1F_Exit_localization,Repeater line.,A la {$NewName} se li trencarà el cor quan sàpiga que heu marxat.,SAY.Dialog:SturdyPostSplit.24.Sturdy Ass,It's going to break {$NewName}'s heart to know you're all gone.,"",2025-08-21T22:17:44.617Z
+10,E4_Mine1F_Exit_localization,NPC dialogue option. No particular order for when you talk to someone.,"Si canvieu de parer, serem aquí per rebre-us!",SAY.Dialog:NicePostSplit.10.Nice Ass,"If you ever change your mind, we'll welcome you back!","",2025-08-21T22:17:44.617Z
+11,E4_Mine1F_Exit_localization,Repeater line.,Espero que trobeu el que busqueu!,SAY.Dialog:NicePostSplit.12.Nice Ass,I hope you find what you're looking for!,"",2025-08-21T22:17:44.617Z
+12,E4_Mine1F_Exit_localization,"NPC dialogue option. No particular order for when you talk to someone.
+// This is only if Sad Ass is STAYING on the Farm.","*ploriquea* Cuida't, Camarada.",SAY.Dialog:SadPostSplit.10.Sad Ass,"*whimper* Take care, Comrade.","",2025-08-21T22:17:44.617Z
+13,E4_Mine1F_Exit_localization,"Repeater line.
+// This is only if Sad Ass is STAYING on the Farm.",*ploriqueja*,SAY.Dialog:SadPostSplit.12.Sad Ass,*whimper*,"",2025-08-21T22:17:44.617Z
+14,E4_Mine1F_Exit_localization,NPC dialogue option. No particular order for when you talk to someone.,"Xeic, no sempre estem d'acord, però us trobaré a faltar a tots...",SAY.Dialog:ThristyPostSplit.10.Thirsty Ass,"Heck, I know we ain't seein' eye to eye, but I'm gonna miss y'all...","",2025-08-21T22:17:44.617Z
+15,E4_Mine1F_Exit_localization,Repeater line.,"Vols vore'm plorar encara més? Au, aspavil!",SAY.Dialog:ThristyPostSplit.12.Thirsty Ass,You just standin' there to make me cry more are ya? Git goin'!,"",2025-08-21T22:17:44.617Z
+16,E4_Mine1F_Exit_localization,"At the exit, Slow Ass waits for Kick Ass so they can leave together.",Ha estat un c-c-comiat molt bonic.,SAY.Dialog:SlowPostSplit.10.Slow Ass,That was a b-beautiful sending.,"",2025-08-21T22:17:44.617Z
+17,E4_Mine1F_Exit_localization,"",La Feblase és a un lloc millor.,SAY.Dialog:SlowPostSplit.15.Slow Ass,She's in a b-better p-place now.,"",2025-08-21T22:17:44.617Z
+18,E4_Mine1F_Exit_localization,"","Anem, t-t-tu i jo serem la reraguarda.",SAY.Dialog:SlowPostSplit.13.Slow Ass,"Come on, let's b-bring up the rear together.","",2025-08-21T22:17:44.617Z
+19,E4_Mine1F_Exit_localization,They leave and the camera heads over to Sick Ass's body where we zoom into her eye.,Ei... Ha deixat de PLOURE...,SAY.Dialog:Kick_ExitDialog.3.Kick Ass,Hey... It's stopped RAINING...,"",2025-08-21T22:17:44.617Z
+3,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:BluntSex.26,*COUGH*,"",2025-08-21T22:17:44.617Z
+4,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:BluntSex.27,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+5,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:BluntSex.33,*COUGH*,"",2025-08-21T22:17:44.617Z
+6,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:BluntSex.34,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+7,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:BluntSex.39,*COUGH*,"",2025-08-21T22:17:44.617Z
+8,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:BluntSex.40,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+9,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:DJDopePreConcert.93,*COUGH*,"",2025-08-21T22:17:44.617Z
+10,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:DJDopePreConcert.94,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+11,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:DustySex.26,*COUGH*,"",2025-08-21T22:17:44.617Z
+12,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:DustySex.27,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+13,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:DustySex.33,*COUGH*,"",2025-08-21T22:17:44.617Z
+14,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:DustySex.34,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+15,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:DustySex.37,*COUGH*,"",2025-08-21T22:17:44.617Z
+16,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:DustySex.38,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+17,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:FurrySex.26,*COUGH*,"",2025-08-21T22:17:44.617Z
+18,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:FurrySex.27,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+19,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:FurrySex.33,*COUGH*,"",2025-08-21T22:17:44.617Z
+20,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:FurrySex.34,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+21,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:FurrySex.37,*COUGH*,"",2025-08-21T22:17:44.617Z
+22,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:FurrySex.38,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+23,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:Gamblers.10,*COUGH*,"",2025-08-21T22:17:44.617Z
+24,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:Gamblers.11,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+25,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:RaceHasty.23,*COUGH*,"",2025-08-21T22:17:44.617Z
+26,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:RaceHasty.25,*COUGH*,"",2025-08-21T22:17:44.617Z
+27,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:RaceHasty.26,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+28,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:RaceHasty.39,*COUGH*,"",2025-08-21T22:17:44.617Z
+29,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:RaceHasty.40,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+30,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:RaceHasty.76,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+31,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:RaceHasty.77,*COUGH*,"",2025-08-21T22:17:44.617Z
+32,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:RaceHasty.78,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+33,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:Smelly.26,*COUGH*,"",2025-08-21T22:17:44.617Z
+34,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:Smelly.27,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+35,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS*,MENU.Dialog:Sulky.22,*COUGH*,"",2025-08-21T22:17:44.617Z
+36,E4_AstralPlaneMain_localization,Yes/No menu options.,*TUS TUS*,MENU.Dialog:Sulky.23,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+37,E4_AstralPlaneMain_localization,"Back in the Astral Plane, Sick Ass runs into Happy Ass.",Mira! Un altre. Una mica més i ni et veig.,SAY.Dialog:TrustysMate.30.Happy Ass,Oh boy. Another one. I almost didn't see you.,"",2025-08-21T22:17:44.617Z
+38,E4_AstralPlaneMain_localization,"",Estic fent el ritual de benvinguda per als Novicis.,SAY.Dialog:TrustysMate.124.Happy Ass,I'm doing the welcome ritual for Newbies today.,"",2025-08-21T22:17:44.617Z
+39,E4_AstralPlaneMain_localization,"",Però ja en porto més de 400 avui... així que ja estic una mica... sensible.,SAY.Dialog:TrustysMate.123.Happy Ass,But there's been over 400 of you already... so I'm a bit... sore.,"",2025-08-21T22:17:44.617Z
+40,E4_AstralPlaneMain_localization,"",Però és genial que siguis aquí. T'encantarà.,SAY.Dialog:TrustysMate.146.Happy Ass,But it's really great that you're here. You're going to love it.,"",2025-08-21T22:17:44.617Z
+41,E4_AstralPlaneMain_localization,"",Sobretot no et perdis el Concert d'aquesta nit a l'Estany de Hihihihi!,SAY.Dialog:TrustysMate.147.Happy Ass,Make sure to check out the Concert tonight in the Pond of Hehehehe!,"",2025-08-21T22:17:44.617Z
+42,E4_AstralPlaneMain_localization,"",Seran 7 hores i mitja per FLIPAR.,SAY.Dialog:TrustysMate.148.Happy Ass,It's going to be 7 and a half hours of AWESOME.,"",2025-08-21T22:17:44.617Z
+43,E4_AstralPlaneMain_localization,Repeater line.,Ves cap a dalt del turó!,SAY.Dialog:TrustysMate.84.Happy Ass,Head on up over the hill!,"",2025-08-21T22:17:44.617Z
+44,E4_AstralPlaneMain_localization,Sick Ass finds the Gamblers atop the hill.,401! He guanyat! ¿Has vist com avui superàvem els 400?,SAY.Dialog:Gamblers.1.Risky Ass,401! I win! I told you we'd break 400 today.,"",2025-08-21T22:17:44.617Z
+45,E4_AstralPlaneMain_localization,oof Jobs = Hoof Jobs = Hand Jobs?,"Au, calla, fem una altra porra! O doble o res—qui guanyi s'endú la Palla!",SAY.Dialog:Gamblers.5.Greedy Ass,"Ah shaddup, let's make another wager! Double or nothin'—Winner gets two 'oof Jobs!","",2025-08-21T22:17:44.617Z
+46,E4_AstralPlaneMain_localization,"","Ei Novicis, estem fent una juguesca sobre quants Ases cauran del cel aquesta nit. Hi voleu participar?",SAY.Dialog:Gamblers.6.Shifty Ass,"Hey Newbies, we're betting on how many Asses are gonna fall from the sky tonight. You want in?","",2025-08-21T22:17:44.617Z
+47,E4_AstralPlaneMain_localization,"",Clar! Jo dic... 455!,SAY.Dialog:Gamblers.110.Fresh Ass,Sure! How about... 455?,"",2025-08-21T22:17:44.617Z
+48,E4_AstralPlaneMain_localization,"",Estàs tarat? Només cinquanta més? Ni de conya!,SAY.Dialog:Gamblers.111.Greedy Ass,You kiddin' me? Only fifty more? Fuggetaboutit!,"",2025-08-21T22:17:44.617Z
+49,E4_AstralPlaneMain_localization,Jump to line 50 or 52.,I tu? Vols apostar?,SAY.Dialog:Gamblers.112.Greedy Ass,What about you? You wanna bet?,"",2025-08-21T22:17:44.617Z
+50,E4_AstralPlaneMain_localization,If Player chooses COUGH (YES).,*TUS*,SAY.Dialog:Gamblers.76.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+51,E4_AstralPlaneMain_localization,Jump to line 55.,Sabia que tenia fusta de jugadora!,SAY.Dialog:Gamblers.137.Greedy Ass,I knew she was the gambling type!,"",2025-08-21T22:17:44.617Z
+52,E4_AstralPlaneMain_localization,If Player chooses COUGH COUGH (NO).,*TUS TUS*,SAY.Dialog:Gamblers.138.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+53,E4_AstralPlaneMain_localization,"",No? No siguis Pipioli! Només és una mica de diversió!,SAY.Dialog:Gamblers.115.Greedy Ass,No? Don't be a Loser! It's just a little bit of fun!,"",2025-08-21T22:17:44.617Z
+54,E4_AstralPlaneMain_localization,Jump to line 55.,"T'agrada divertir-te, no?",SAY.Dialog:Gamblers.125.Greedy Ass,You like fun don't you?,"",2025-08-21T22:17:44.617Z
+55,E4_AstralPlaneMain_localization,Players guess how many new Ass Souls will drop from the sky:,Quants en dius? Quants Novicis cauran?,SAY.Dialog:Gamblers.121.Shifty Ass,So what's your bet? How many Newbies will drop?,"",2025-08-21T22:17:44.617Z
+56,E4_AstralPlaneMain_localization,"",APOSTA,WRITE.Dialog:Localizer.1,WAGER,"",2025-08-21T22:17:44.617Z
+57,E4_AstralPlaneMain_localization,If guessed 5000+.,{$Number}? Tan malament va la cosa allà baix? Ni de conya! Bècs!,SAY.Dialog:Gamblers.78.Greedy Ass,{$Number}? Are things that bad in the land of the livin'? Fuggetaboutit! Yeesh!,"",2025-08-21T22:17:44.617Z
+58,E4_AstralPlaneMain_localization,Repeater line.,"{$Number}, no et preocupis—amb un número tan alt? No ens n'oblidarem.",SAY.Dialog:Gamblers.103.Greedy Ass,"{$Number}, don't worry—a number that high? We won't forget.","",2025-08-21T22:17:44.617Z
+59,E4_AstralPlaneMain_localization,If guessed 1000-5000.,{$Number}. Una xifra raonable.,SAY.Dialog:Gamblers.80.Greedy Ass,{$Number}. Pretty reasonable.,"",2025-08-21T22:17:44.617Z
+60,E4_AstralPlaneMain_localization,"",Per una Pipioli!,SAY.Dialog:Gamblers.126.Greedy Ass,For a Loser!,"",2025-08-21T22:17:44.617Z
+61,E4_AstralPlaneMain_localization,Repeater line.,{$Number}? S'ha de jugar fort per guanyar fort!,SAY.Dialog:Gamblers.48.Greedy Ass,{$Number}? You gotta play big to win big!,"",2025-08-21T22:17:44.617Z
+62,E4_AstralPlaneMain_localization,If guessed 300-1000.,"{$Number}... Una xifra modesta. Jugant sobre segur, no?",SAY.Dialog:Gamblers.87.Greedy Ass,"{$Number}... Modest. Playing it safe, are ya?","",2025-08-21T22:17:44.617Z
+63,E4_AstralPlaneMain_localization,"",Com una Pipioli!,SAY.Dialog:Gamblers.127.Greedy Ass,Like a Loser!,"",2025-08-21T22:17:44.617Z
+64,E4_AstralPlaneMain_localization,Repeater line.,{$Number}... A veure si els números t'afavoreixen!,SAY.Dialog:Gamblers.51.Greedy Ass,{$Number}... Let's see if the numbers work in your favour!,"",2025-08-21T22:17:44.617Z
+65,E4_AstralPlaneMain_localization,If guessed 0-300.,{$Number}? Al·lucines! Fa setmanes que no tenim una nit tan baixa!,SAY.Dialog:Gamblers.85.Greedy Ass,{$Number}? Not in your life! We ain't had a night that low in weeks!,"",2025-08-21T22:17:44.617Z
+66,E4_AstralPlaneMain_localization,Repeater line.,{$Number}. Increïble. ¿Es pot caure encara més baix?,SAY.Dialog:Gamblers.54.Greedy Ass,{$Number}. Sheesh. How low can you go?,"",2025-08-21T22:17:44.617Z
+67,E4_AstralPlaneMain_localization,If guessed 69.,Per què tots els Novicis dieu 69? Ni de conya!,SAY.Dialog:Gamblers.132.Greedy Ass,Why do the Newbies always guess 69? Fuggetaboutit!,"",2025-08-21T22:17:44.617Z
+68,E4_AstralPlaneMain_localization,"",Segueix turó avall!,SAY.Dialog:Gamblers.105.Risky Ass,Head on down the hill!,"",2025-08-21T22:17:44.617Z
+69,E4_AstralPlaneMain_localization,"",Amb una mica de sort—veuràs un parell de cares conegudes!,SAY.Dialog:Gamblers.106.Risky Ass,Chances are—you'll see a familiar face or two!,"",2025-08-21T22:17:44.617Z
+70,E4_AstralPlaneMain_localization,"",Sabrem el resultat final després del Concert d'aquesta nit.,SAY.Dialog:Gamblers.64.Risky Ass,We'll know the final tally after tonight's Concert.,"",2025-08-21T22:17:44.617Z
+71,E4_AstralPlaneMain_localization,Sick Ass finds Old Ass regaling some Newbies with his stories.,"...I les meves últimes paraules, després de rebre la Injecció, van ser ""Demostreu al món la Força dels Ases!""",SAY.Dialog:OldAss.10.Old Ass,"...And my last words, after being given the Needle, were ""Show the World the Power of the Ass!""","",2025-08-21T22:17:44.617Z
+72,E4_AstralPlaneMain_localization,"",Guau. Sou una autèntica inspiració.,SAY.Dialog:OldAss.113.Gullible Ass,"Wow. You are an inspiration, sir.","",2025-08-21T22:17:44.617Z
+73,E4_AstralPlaneMain_localization,"",Què voleu que us digui?,SAY.Dialog:OldAss.112.Old Ass,What can I say?,"",2025-08-21T22:17:44.617Z
+74,E4_AstralPlaneMain_localization,"",Un moment—Feblase? Podria reconèixer aquest panteix a qualsevol lloc!,SAY.Dialog:OldAss.108.Old Ass,Hold on—Sick Ass? I would recognize that heavy breathing anywhere!,"",2025-08-21T22:17:44.617Z
+75,E4_AstralPlaneMain_localization,"",Estava a punt d'il·lustrar aquests Novicis sobre el nostre adorat Pla Astral.,SAY.Dialog:OldAss.109.Old Ass,I was just about to introduce these Newbies to our beloved Astral Plane.,"",2025-08-21T22:17:44.617Z
+76,E4_AstralPlaneMain_localization,"","Un món obert on els Ases no hem de patir cap altra injustícia, ni lamentar la duresa de la nostra existència!",SAY.Dialog:OldAss.66.Old Ass,An open world where we Asses no longer have to suffer injustices or lament the struggles of our own existence!,"",2025-08-21T22:17:44.617Z
+77,E4_AstralPlaneMain_localization,"","Encantada de conèixe-la, Camarada Feblase!",SAY.Dialog:OldAss.65.Gullible Ass,"Nice to meet you, Comrade Sick!","",2025-08-21T22:17:44.617Z
+78,E4_AstralPlaneMain_localization,"","No t'embalis, Novici. En aquesta terra de meravelles, no ens adrecem als altres Ases com a 'Camarades'.",SAY.Dialog:OldAss.62.Old Ass,"Not so fast, Newbie. In this marvellous place, we don't address our fellow Asses as 'Comrades'.","",2025-08-21T22:17:44.617Z
+79,E4_AstralPlaneMain_localization,"",I les Manifestacions? Aquí no ens preocupem per la 'Política'!,SAY.Dialog:OldAss.47.Old Ass,And Protests? We don't concern ourselves with 'Politics'!,"",2025-08-21T22:17:44.617Z
+80,E4_AstralPlaneMain_localization,"",Tot plegat són maldecaps remots de dies passats.,SAY.Dialog:OldAss.67.Old Ass,Those are mere distractions from days gone by.,"",2025-08-21T22:17:44.617Z
+81,E4_AstralPlaneMain_localization,"",Permeteu que us situï en aquesta nova terra:,SAY.Dialog:OldAss.68.Old Ass,Allow me to provide all of you with the lay of the land:,"",2025-08-21T22:17:44.617Z
+82,E4_AstralPlaneMain_localization,The camera zooms around to show the Astral Plane.,A l'Est—el sensual i orgiàstic Pla de Hòooihà.,SAY.Dialog:OldAss.46.Old Ass,To the East—the sensual orgiastic Flats of Hawweeeheaww.,"",2025-08-21T22:17:44.617Z
+83,E4_AstralPlaneMain_localization,"",A l'Oest—els emboirats Turons de Hàhihà.,SAY.Dialog:OldAss.50.Old Ass,To the West—the misty Hills of Hahiah.,"",2025-08-21T22:17:44.617Z
+84,E4_AstralPlaneMain_localization,"",Envoltant aquesta terra hi ha l'Estepa de Hàoaoaoa—les millors pistes de galop per als Ases més devots de les carreres.,SAY.Dialog:OldAss.49.Old Ass,Surrounding these lands are the Steppes of Hawawaw—the stomping grounds for the many Asses who love to race.,"",2025-08-21T22:17:44.617Z
+85,E4_AstralPlaneMain_localization,"",Aquest és l'Antre. Però no en parlem.,SAY.Dialog:OldAss.99.Old Ass,This is the Shithole. But we don't talk about that.,"",2025-08-21T22:17:44.617Z
+86,E4_AstralPlaneMain_localization,"","I aquest és l'Estany de Hihihihi, on avui farem història amb el nostre primer CONCERT DE TRAP. No hi falteu!",SAY.Dialog:OldAss.53.Old Ass,"And this is the Pond of Hehehehe, where tonight we will make history with our very first TRAP MUSIC CONCERT. Be sure to attend!","",2025-08-21T22:17:44.617Z
+87,E4_AstralPlaneMain_localization,"",Ara hi estan fent un discurs de benvinguda.,SAY.Dialog:OldAss.97.Old Ass,There's a welcome rally happening at the moment.,"",2025-08-21T22:17:44.617Z
+88,E4_AstralPlaneMain_localization,Camera cuts to a rally: Tight Ass addressing a group of newly arrived donkeys,I és per això que cap Ase abandona el Pla Astral!,SAY.Dialog:OldAss.89.Tight Ass,And that's why no Ass leaves the Astral Plane!,"",2025-08-21T22:17:44.617Z
+89,E4_AstralPlaneMain_localization,"","Si intenteu marxar pe emprendre el Rucorn, què sou?",SAY.Dialog:OldAss.100.Tight Ass,"If you try to leave to get reassigned, what are you??","",2025-08-21T22:17:44.617Z
+90,E4_AstralPlaneMain_localization,"",PIPIOLIS!,SAY.Dialog:OldAss.101.The Masses,A LOSER!,"",2025-08-21T22:17:44.617Z
+91,E4_AstralPlaneMain_localization,Needs a space at end,"Que ens senti tothom! Si marxeu, sou—",SAY.Dialog:OldAss.102.Tight Ass,"Say it again! If you leave, you are a—","",2025-08-21T22:17:44.617Z
+92,E4_AstralPlaneMain_localization,"",PIPIOLIS!,SAY.Dialog:OldAss.103.The Masses,LOSER!,"",2025-08-21T22:17:44.617Z
+93,E4_AstralPlaneMain_localization,"",És així!,SAY.Dialog:OldAss.71.Tight Ass,That's right!,"",2025-08-21T22:17:44.617Z
+94,E4_AstralPlaneMain_localization,"Camera runs to dialog between Old, Sick, Gulible, and another donkey",Tant de bo l'Honradase hagués estat més pacient quan va arribar.,SAY.Dialog:OldAss.118.Old Ass,I wish Trusty had been more patient when she arrived.,"",2025-08-21T22:17:44.617Z
+95,E4_AstralPlaneMain_localization,"",No es va saber adaptar a aquesta nova vida...,SAY.Dialog:OldAss.70.Old Ass,She could not adapt to the new life we have here...,"",2025-08-21T22:17:44.617Z
+96,E4_AstralPlaneMain_localization,"","Però no us preocupeu, sé que tots hi encaixareu la mar de bé.",SAY.Dialog:OldAss.69.Old Ass,"But don't be scared, I know you will all fit right in.","",2025-08-21T22:17:44.617Z
+97,E4_AstralPlaneMain_localization,The other two donkeys run off,Aneu a explorar i a fer nous amics abans que comenci el Concert del DJ Dopaminase!,SAY.Dialog:OldAss.74.Old Ass,Go explore and make some new friends before DJ Dope Ass's Concert tonight!,"",2025-08-21T22:17:44.617Z
+98,E4_AstralPlaneMain_localization,"","De fet, el DJ Dopaminase semblava força nerviosa l'últim cop que l'he vist a l'Estany.",SAY.Dialog:OldAss.73.Old Ass,"Actually, DJ Dope Ass was looking quite nervous when I last saw him down by the Pond.","",2025-08-21T22:17:44.617Z
+99,E4_AstralPlaneMain_localization,"","Feblase, potser em pots ajudar a pujar-li la Moral?",SAY.Dialog:OldAss.138.Old Ass,"Sick Ass, maybe you can help raise his Morale?","",2025-08-21T22:17:44.617Z
+100,E4_AstralPlaneMain_localization,Repeater,El DJ Dopaminase deu estar preparant el seu equip de so a l'Estany. Segur que el veus!,SAY.Dialog:OldAss.55.Old Ass,DJ Dope Ass is probably preparing his instruments down by the Pond. You can't miss him!,"",2025-08-21T22:17:44.617Z
+101,E4_AstralPlaneMain_localization,Sick Ass finds an energetic Ass who wants to race.,Ets nova! Vols córrer amb mi? Soc ben lleuger! Ja ho veuràs!,SAY.Dialog:RaceHasty.59.Hasty Ass,You're new! Wanna race? I'm pretty fast! You'll see!,"",2025-08-21T22:17:44.617Z
+102,E4_AstralPlaneMain_localization,"","Vinga! Vens? Un, dos, tres? Un, dos, tres!",SAY.Dialog:RaceHasty.10.Hasty Ass,Come on! You down? Let's go? Let's go!!,"",2025-08-21T22:17:44.617Z
+103,E4_AstralPlaneMain_localization,Dialogue option 1.1. COUGH (YES),*TUS*,SAY.Dialog:RaceHasty.60.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+104,E4_AstralPlaneMain_localization,"","Així m'agrada, amigueta!",SAY.Dialog:RaceHasty.64.Hasty Ass,Hell yeah new friendo!,"",2025-08-21T22:17:44.617Z
+105,E4_AstralPlaneMain_localization,"",Agafem el camí amb vistes.\n,SAY.Dialog:RaceHasty.63.Hasty Ass,Let's take the scenic route.\n,"",2025-08-21T22:17:44.617Z
+106,E4_AstralPlaneMain_localization,"",Vinga vinga vinga!,SAY.Dialog:RaceHasty.62.Hasty Ass,Let's go let's go let's go!,"",2025-08-21T22:17:44.617Z
+107,E4_AstralPlaneMain_localization,"",DIVERSIÓ!,SAY.Dialog:RaceHasty.61.Hasty Ass,FUN!,"",2025-08-21T22:17:44.617Z
+108,E4_AstralPlaneMain_localization,Dialogue option 1.2. COUGH COUGH (NO),*TUS TUS*,SAY.Dialog:RaceHasty.65.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+109,E4_AstralPlaneMain_localization,"",No? Llàstima. Però bé. Seré aquí. A punt per córrer. Sempre a punt!,SAY.Dialog:RaceHasty.66.Hasty Ass,No? Shame! Ah well. I'll be here. Ready to race. Always ready!,"",2025-08-21T22:17:44.617Z
+110,E4_AstralPlaneMain_localization,"",Vols que correm?,SAY.Dialog:RaceHasty.12.Hasty Ass,Wanna race now?,"",2025-08-21T22:17:44.617Z
+111,E4_AstralPlaneMain_localization,"",Això sí que és quedar-se enrere! Ha! Potser a la propera.,SAY.Dialog:RaceHasty.33.Hasty Ass,Not even close! Hah! Maybe next time.,"",2025-08-21T22:17:44.617Z
+112,E4_AstralPlaneMain_localization,"",O no! Qui sap?,SAY.Dialog:RaceHasty.70.Hasty Ass,Or not! Who knows?,"",2025-08-21T22:17:44.617Z
+113,E4_AstralPlaneMain_localization,"",Espera. La pràctica és la pràctica.,SAY.Dialog:RaceHasty.69.Hasty Ass,Wait. Practice is practice.,"",2025-08-21T22:17:44.617Z
+114,E4_AstralPlaneMain_localization,"",Tornem a córrer?,SAY.Dialog:RaceHasty.38.Hasty Ass,Wanna race again?,"",2025-08-21T22:17:44.617Z
+115,E4_AstralPlaneMain_localization,"",Tornem a córrer?,SAY.Dialog:RaceHasty.68.Hasty Ass,Wanna race again?,"",2025-08-21T22:17:44.617Z
+116,E4_AstralPlaneMain_localization,Dialogue option 2.1. COUGH (YES),*TUS*,SAY.Dialog:RaceHasty.71.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+117,E4_AstralPlaneMain_localization,"",Som-hi!,SAY.Dialog:RaceHasty.74.Hasty Ass,Let's go!,"",2025-08-21T22:17:44.617Z
+118,E4_AstralPlaneMain_localization,Dialogue option 2.2. COUGH COUGH (NO),*TUS TUS*,SAY.Dialog:RaceHasty.72.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+119,E4_AstralPlaneMain_localization,"",No? Llàstima. Però bé. Seré aquí. A punt per córrer. Sempre a punt!,SAY.Dialog:RaceHasty.73.Hasty Ass,No? Shame! Ah well. I'll be here. Ready to race. Always ready!,"",2025-08-21T22:17:44.617Z
+120,E4_AstralPlaneMain_localization,x,FUÀ. Ets RÀPIDA. Això m'agrada. Això m'agrada molt!,SAY.Dialog_WinnerHasty.10.Hasty Ass,WHEW. You're FAST! I like that. I really like that!,"",2025-08-21T22:17:44.617Z
+121,E4_AstralPlaneMain_localization,Repeater line.,"Talles la respiració! Vull dir, no puc ni respirar! Fuà!",SAY.Dialog_WinnerHasty.20.Hasty Ass,"You're breathtaking! As in, I can't breathe! Whew!","",2025-08-21T22:17:44.617Z
+122,E4_AstralPlaneMain_localization,"",GRR...! Odio els Humans perquè els seus mitjans no ens representen mai com ens mereixem.,SAY.Dialog:Angry.10.Angry Ass,UGH! I hate Humans because they never gave us the representation in their media we deserved.,"",2025-08-21T22:17:44.617Z
+123,E4_AstralPlaneMain_localization,"",La major part de nosaltres som individus complexos amb una gran vida interior.,SAY.Dialog:Angry.12.Angry Ass,Most of us are complex individuals with rich inner lives.,"",2025-08-21T22:17:44.617Z
+124,E4_AstralPlaneMain_localization,"","Vull dir que no tots som caparruts i estúpids, sabeu?",SAY.Dialog:Angry.18.Angry Ass,"Like, we're not all stubborn and stupid, you know?","",2025-08-21T22:17:44.617Z
+125,E4_AstralPlaneMain_localization,"",Hola Novícia. Fas cara de poder-te unir al nostre grup.,SAY.Dialog:Bitter.10.Bitter Ass,Hey Newbie. You look like you might be interested in joining our group.,"",2025-08-21T22:17:44.617Z
+126,E4_AstralPlaneMain_localization,"",Queda't una estona a conèixer els membres!,SAY.Dialog:Bitter.12.Bitter Ass,Feel free to meet the membership!,"",2025-08-21T22:17:44.617Z
+127,E4_AstralPlaneMain_localization,"",Jo odio els Humans perquè em pegaven amb una barra d'acer!,SAY.Dialog:Bitter.18.Bitter Ass,I hate Humans because they beat me with a steel pipe!,"",2025-08-21T22:17:44.617Z
+128,E4_AstralPlaneMain_localization,"",Ens agrada reunir-nos per compartir històries i posar en comú per què odiem tant els Humans.,SAY.Dialog:Bitter.19.Bitter Ass,We like to gather and share stories about how much we hate Humans.,"",2025-08-21T22:17:44.617Z
+129,E4_AstralPlaneMain_localization,"","Som HIÒ. Vol dir ""Els Humans Inspiren Odi"".",SAY.Dialog:Bitter.20.Bitter Ass,"We're HAW. It stands for ""Humans Are the Worst.""","",2025-08-21T22:17:44.617Z
+130,E4_AstralPlaneMain_localization,"","Ei Novícia, estàs DTF? M'agrada la teva olor.",SAY.Dialog:BluntSex.10.Blunt Ass,"Hey Newbie, you DTF? I like the way you smell.","",2025-08-21T22:17:44.617Z
+131,E4_AstralPlaneMain_localization,"",I ara?,SAY.Dialog:BluntSex.12.Blunt Ass,How about now?,"",2025-08-21T22:17:44.617Z
+132,E4_AstralPlaneMain_localization,"",Hi tornem?,SAY.Dialog:BluntSex.19.Blunt Ass,Again?,"",2025-08-21T22:17:44.617Z
+133,E4_AstralPlaneMain_localization,"",*TUS*,SAY.Dialog:BluntSex.41.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+134,E4_AstralPlaneMain_localization,"",*TUS TUS*,SAY.Dialog:BluntSex.42.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+135,E4_AstralPlaneMain_localization,"","Kalispera, Novícia. Jo em dedicava a fer rutes turístiques per als Humans a les meves precioses illes natals.",SAY.Dialog:Broken.10.Broken Ass,"Geia sou, Newbie. I used to give tours to Humans around my beautiful home islands.","",2025-08-21T22:17:44.617Z
+136,E4_AstralPlaneMain_localization,"",Hi havia un cartell que deia ben clar que el límit de pes eren 100 kilos!,SAY.Dialog:Broken.12.Broken Ass,There was a very clear sign that said the weight limit was 100 kilos!,"",2025-08-21T22:17:44.617Z
+137,E4_AstralPlaneMain_localization,"",El meu amo em va disparar un tret al cap perquè es va pensar que ja no podria treballar més.,SAY.Dialog:Broken.18.Broken Ass,My boss shot me in the head because he didn't think I could work again.,"",2025-08-21T22:17:44.617Z
+138,E4_AstralPlaneMain_localization,"",Un dia el meu amo va deixar que un Humà immens se m'assegués al damunt i em va trencar l'esquena.,SAY.Dialog:Broken.19.Broken Ass,One day my boss let a big Human sit on me and he broke my back.,"",2025-08-21T22:17:44.617Z
+139,E4_AstralPlaneMain_localization,"","Nihao. Jo odio els Humans perquè vaig treballar tota la vida per ells, només perquè em matessin, m'escorxessin i em venessin com una mena de 'delicatessen'.",SAY.Dialog:Chafed.10.Chafed Ass,"Nihao. I hate Humans because I worked for them my whole life only to be killed with a sledgehammer, skinned, and turned into some 'delicacy'.","",2025-08-21T22:17:44.617Z
+140,E4_AstralPlaneMain_localization,"",La meva mort va ser totalment indigna.,SAY.Dialog:Chafed.12.Chafed Ass,My death had no dignity.,"",2025-08-21T22:17:44.617Z
+141,E4_AstralPlaneMain_localization,"","VINGA, SOM-HI!",SAY.Dialog:ConcertStart.100.DJ Dope Ass,LET'S DO THIS!,"",2025-08-21T22:17:44.617Z
+142,E4_AstralPlaneMain_localization,"",Uièeeee! Adoro la Pols Morada!,SAY.Dialog:ConcertStart.39.DJ Dope Ass,Booyah! I love that PURPLE STUFF!,"",2025-08-21T22:17:44.617Z
+143,E4_AstralPlaneMain_localization,"","Què passa, ASES!!",SAY.Dialog:ConcertStart.71.DJ Dope Ass,What's good my fellow ASSES!!,"",2025-08-21T22:17:44.617Z
+144,E4_AstralPlaneMain_localization,"",Gràcies per venir al meu SET!!,SAY.Dialog:ConcertStart.72.DJ Dope Ass,Thanks for coming out tonight to my SET!!,"",2025-08-21T22:17:44.617Z
+145,E4_AstralPlaneMain_localization,"","Pots ser una puta Novícia o portar aquí un miler d'anys, però aquesta nit prepara't PER PERDRE EL CAP!!!",SAY.Dialog:ConcertStart.73.DJ Dope Ass,"Whether you're a freakin' Newbie or you've been here for a thousand years, get ready to let LOOSE!!!","",2025-08-21T22:17:44.617Z
+146,E4_AstralPlaneMain_localization,"","Brameu ben fort, us vull sentir: A la merda el Rucorn! No penso tornar!",SAY.Dialog:ConcertStart.75.DJ Dope Ass,Let me hear you say: Fuck Reassignment! I'm never going back!,"",2025-08-21T22:17:44.617Z
+147,E4_AstralPlaneMain_localization,"",A LA MERDA EL RUCORN! NO PENSO TORNAR!,SAY.Dialog:ConcertStart.79.The Masses,FUCK REASSIGNMENT! I'M NEVER GOING BACK!,"",2025-08-21T22:17:44.617Z
+148,E4_AstralPlaneMain_localization,"",UIÈEEEE!!,SAY.Dialog:ConcertStart.82.DJ Dope Ass,BOOYAAAHH!!,"",2025-08-21T22:17:44.617Z
+149,E4_AstralPlaneMain_localization,"",Ja comença! Ja comença!,SAY.Dialog:ConcertStart.94.Tight Ass,It's starting! It's starting!,"",2025-08-21T22:17:44.617Z
+150,E4_AstralPlaneMain_localization,"",Ei—Ei—Ei...,SAY.Dialog:DJDopePreConcert.78.DJ Dope Ass,Hey—Hey—Hey...,"",2025-08-21T22:17:44.617Z
+151,E4_AstralPlaneMain_localization,"",On és la Pols Morada? Em pensava que em portaves una mica de Pols Morada!,SAY.Dialog:DJDopePreConcert.79.DJ Dope Ass,Where's that Purple Stuff? I thought you were gonna get me that Purple Stuff?,"",2025-08-21T22:17:44.617Z
+152,E4_AstralPlaneMain_localization,"","Saps què vull dir, no?",SAY.Dialog:DJDopePreConcert.84.DJ Dope Ass,"You know what I'm what I'm talking about, right?","",2025-08-21T22:17:44.617Z
+153,E4_AstralPlaneMain_localization,"",Per casualitat no deus tenir una mica de Pols Morada...?,SAY.Dialog:DJDopePreConcert.85.DJ Dope Ass,Any chance you've got some of that Purple Stuff...?,"",2025-08-21T22:17:44.617Z
+154,E4_AstralPlaneMain_localization,"",*TUS*,SAY.Dialog:DJDopePreConcert.87.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+155,E4_AstralPlaneMain_localization,"","Sè, en tens! La millor puta droga de tot el Pla Astral...",SAY.Dialog:DJDopePreConcert.89.DJ Dope Ass,Ya you do! The best damn drug we got in the Astral Plane...,"",2025-08-21T22:17:44.617Z
+156,E4_AstralPlaneMain_localization,"",He de començar a tocar d'aquí poc i DE VERITAT que no puc sense Pols Morada.,SAY.Dialog:DJDopePreConcert.91.DJ Dope Ass,I'm supposed to start my set soon and I REALLY can't play without that Purple Stuff.,"",2025-08-21T22:17:44.617Z
+157,E4_AstralPlaneMain_localization,"","Fes-me un favor i ves-me'n a buscar una mica, vols?",SAY.Dialog:DJDopePreConcert.92.DJ Dope Ass,Help me out and bring me some will you?,"",2025-08-21T22:17:44.617Z
+158,E4_AstralPlaneMain_localization,"",*TUS TUS*,SAY.Dialog:DJDopePreConcert.95.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+159,E4_AstralPlaneMain_localization,"","No? Ai, amiga, si és la millor droga de tot el Pla Astral...",SAY.Dialog:DJDopePreConcert.96.DJ Dope Ass,"No? Oh my friend, it's best drug we got in the Astral Plane...","",2025-08-21T22:17:44.617Z
+160,E4_AstralPlaneMain_localization,"",DE VERITAT que necessito una mica de Pols Morada abans de començar el Concert!,SAY.Dialog:DJDopePreConcert.98.DJ Dope Ass,I REALLY need that Purple Stuff or I can't start my Concert!,"",2025-08-21T22:17:44.617Z
+161,E4_AstralPlaneMain_localization,"","Jo trobí ma fi lo any 1400, é alguns diuen que les meues maneres són tradicionals.",SAY.Dialog:DustySex.10.Dusty Ass,"I perished in the 1400s, so others hath at times described my methods as traditional.","",2025-08-21T22:17:44.617Z
+162,E4_AstralPlaneMain_localization,"","No volríeu, aimia, jaure en mon jaç?",SAY.Dialog:DustySex.12.Dusty Ass,Fancy a roll in my hay?,"",2025-08-21T22:17:44.617Z
+163,E4_AstralPlaneMain_localization,"",No tinríeu per ventura un poc pus d'apetit?,SAY.Dialog:DustySex.19.Dusty Ass,Hath thou still a dash of appetite?,"",2025-08-21T22:17:44.617Z
+164,E4_AstralPlaneMain_localization,"",Mes vós feu semblança de voler una classe d'Història!,SAY.Dialog:DustySex.39.Dusty Ass,But lo! You look ready for a History lesson!,"",2025-08-21T22:17:44.617Z
+165,E4_AstralPlaneMain_localization,"",Què en dieu?,SAY.Dialog:DustySex.40.Dusty Ass,What say thee?,"",2025-08-21T22:17:44.617Z
+166,E4_AstralPlaneMain_localization,"",*TUS*,SAY.Dialog:DustySex.41.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+167,E4_AstralPlaneMain_localization,"",*TUS TUS*,SAY.Dialog:DustySex.42.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+168,E4_AstralPlaneMain_localization,"","Si parles amb la Saviase, no t'oblidis que duu més temps aquí del que ningú pot recordar.",SAY.Dialog:Firm.10.Firm Ass,"If you want to talk to Wise Ass, just remember she's been here longer than anyone can remember.","",2025-08-21T22:17:44.617Z
+169,E4_AstralPlaneMain_localization,"",Sigues respectuosa. La Saviase té la resposta de tot.,SAY.Dialog:Firm.12.Firm Ass,Be respectful. Wise Ass knows the answer to everything.,"",2025-08-21T22:17:44.617Z
+170,E4_AstralPlaneMain_localization,"",Has de ser respectuosa.,SAY.Dialog:Firm.18.Firm Ass,You should be respectful.,"",2025-08-21T22:17:44.617Z
+171,E4_AstralPlaneMain_localization,"",No estàs flipant de ser aquí? Aquí sí que donar via lliure als nostres instints.,SAY.Dialog:FurrySex.10.Furry Ass,Don't you love this place? We can really embrace our instincts.,"",2025-08-21T22:17:44.617Z
+172,E4_AstralPlaneMain_localization,"",I ara?,SAY.Dialog:FurrySex.12.Furry Ass,How about now?,"",2025-08-21T22:17:44.617Z
+173,E4_AstralPlaneMain_localization,"",Vols una mica més de pèl?,SAY.Dialog:FurrySex.19.Furry Ass,Want some more Furry?,"",2025-08-21T22:17:44.617Z
+174,E4_AstralPlaneMain_localization,"",*TUS*,SAY.Dialog:FurrySex.45.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+175,E4_AstralPlaneMain_localization,"",*TUS TUS*,SAY.Dialog:FurrySex.46.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+176,E4_AstralPlaneMain_localization,"",Et prometo que aniré amb molta cura—si vols.,SAY.Dialog:FurrySex.47.Furry Ass,I promise I'll be really gentle—if you want me to.,"",2025-08-21T22:17:44.617Z
+177,E4_AstralPlaneMain_localization,"",AGH! Manifestacions! Només són per quedar bé.,SAY.Dialog:Janky.10.Janky Ass,ACH! Protests! They're all for show.,"",2025-08-21T22:17:44.617Z
+178,E4_AstralPlaneMain_localization,"",No va costar gaire que aquells Pagesos es Rebel·lessin.,SAY.Dialog:Janky.12.Janky Ass,It didn't take much to get those Peasants to Revolt.,"",2025-08-21T22:17:44.617Z
+179,E4_AstralPlaneMain_localization,"",Vaig liderar un parell d'insurreccions espontànies cap al 1300. Va anar de poc que no caigués el govern.,SAY.Dialog:Janky.18.Janky Ass,I led a few impromptu insurrections in the 1300s. We nearly toppled the government.,"",2025-08-21T22:17:44.617Z
+180,E4_AstralPlaneMain_localization,"",Nosaltres només érem simples rucs de poble quan els Humans ens van reclutar per transportar provisions per a les seves guerres.,SAY.Dialog:Lofty.10.Lofty Ass,We were simple village donkeys when the Humans recruited my herd to do supply drops in their wars.,"",2025-08-21T22:17:44.617Z
+181,E4_AstralPlaneMain_localization,"",No es van prendre gens bé el nostre pacifisme...,SAY.Dialog:Lofty.12.Lofty Ass,They didn't take kindly to our pacifism...,"",2025-08-21T22:17:44.617Z
+182,E4_AstralPlaneMain_localization,"",Però ens vam mantenir ferms i ens vam negar rotundament a alimentar el complex militar-industrial.,SAY.Dialog:Lofty.18.Lofty Ass,But we held our ground and refused to be co-opted into the military industrial complex.,"",2025-08-21T22:17:44.617Z
+183,E4_AstralPlaneMain_localization,"",Merhaba. Odio els Humans perquè durant una de les seves guerres em van omplir les alforges d'explosius sense dir-m'ho.,SAY.Dialog:Mad.10.Mad Ass,Merhaba. I hate Humans because during one of their wars they loaded my panniers with explosives without telling me.,"",2025-08-21T22:17:44.617Z
+184,E4_AstralPlaneMain_localization,"",Pensava que portava aigua...,SAY.Dialog:Mad.12.Mad Ass,I thought I was carrying water...,"",2025-08-21T22:17:44.617Z
+185,E4_AstralPlaneMain_localization,"",Pensava que portava aigua...,SAY.Dialog:Mad.18.Mad Ass,I thought I was carrying water...,"",2025-08-21T22:17:44.617Z
+186,E4_AstralPlaneMain_localization,"",Bonjour. Odio els Humans peg'què em van encendg'e la cua només peg' fer una pel·lícula ag'tística.,SAY.Dialog:Mean.10.Mean Ass,Bonjour. I hate ze Humans because zey set my tail on fire just for one of zeir art movies.,"",2025-08-21T22:17:44.617Z
+187,E4_AstralPlaneMain_localization,"",Sempg'e valorat més el seu ag't que a la nostg'a vida.,SAY.Dialog:Mean.12.Mean Ass,Zey always valued zeir art above our lives.,"",2025-08-21T22:17:44.617Z
+188,E4_AstralPlaneMain_localization,"",On vas amb tanta pressa?,SAY.Dialog:Mellow.10.Mellow Ass,Where are you going in such a hurry?,"",2025-08-21T22:17:44.617Z
+189,E4_AstralPlaneMain_localization,"","Aquí només tenim ganes de relaxar-nos, col·lega.",SAY.Dialog:Mellow.12.Mellow Ass,Time to chillax' dude.,"",2025-08-21T22:17:44.617Z
+190,E4_AstralPlaneMain_localization,"",I fato del bo. Prova el que vulguis.,SAY.Dialog:Mellow.18.Mellow Ass,And some killer drugs. Help yourself.,"",2025-08-21T22:17:44.617Z
+191,E4_AstralPlaneMain_localization,"",No volem mals rotllos.,SAY.Dialog:Mellow.19.Mellow Ass,Only good vibes around here.,"",2025-08-21T22:17:44.617Z
+192,E4_AstralPlaneMain_localization,"","Ei, Novícia! ¿Tu eres del Ramat de l'Honradase, no?\n",SAY.Dialog:NostalgicRadicalsIntro.31.Total Ass,"Hey, Newbie! You're from Trusty's old Herd aren't you.\n","",2025-08-21T22:17:44.617Z
+193,E4_AstralPlaneMain_localization,"",L'Honradase parlava molt de la vostra Manifestació.,SAY.Dialog:NostalgicRadicalsIntro.32.Total Ass,She told us all about your Protest.,"",2025-08-21T22:17:44.617Z
+194,E4_AstralPlaneMain_localization,"","AGH! Manifestacions... sempre semblen una bona idea, però NO SERVEIXEN DE RES.",SAY.Dialog:NostalgicRadicalsIntro.35.Janky Ass,ACHH! Protests... they seem like great ideas but they DON'T WORK.,"",2025-08-21T22:17:44.617Z
+195,E4_AstralPlaneMain_localization,"","Tots els Ases que veus han participat en Manifestacions,",SAY.Dialog:NostalgicRadicalsIntro.36.Lofty Ass,"Every Ass here has had their share of Protests,","",2025-08-21T22:17:44.617Z
+196,E4_AstralPlaneMain_localization,"There is a needed extra space before ""Strikes""","Vagues, Boicots, Insurreccions...",SAY.Dialog:NostalgicRadicalsIntro.37.Lofty Ass,"Strikes, Marches, Boycotts...","",2025-08-21T22:17:44.617Z
+197,E4_AstralPlaneMain_localization,"",Alguns volien millorar les seves condicions de vida.,SAY.Dialog:NostalgicRadicalsIntro.38.Ugly Ass,Some wanted better living conditions.,"",2025-08-21T22:17:44.617Z
+198,E4_AstralPlaneMain_localization,"","Allò sí que eren bons temps, amics meus. Els. Vells. Bons. Temps.",SAY.Dialog:NostalgicRadicalsIntro.39.Total Ass,"Those were the days, my friends. Those. Were. The. Days.","",2025-08-21T22:17:44.617Z
+199,E4_AstralPlaneMain_localization,"","No TOTS hem de participar, no?",SAY.Dialog:PeekAss.10.Peek Ass,"We don't ALL have to participate, right?","",2025-08-21T22:17:44.617Z
+200,E4_AstralPlaneMain_localization,"","Oh, quina posició més incòmoda. Estic content de no ser jo!",SAY.Dialog:PeekAss.12.Peek Ass,"Oh that's a hard position to be in, I'm glad it's not me!","",2025-08-21T22:17:44.617Z
+201,E4_AstralPlaneMain_localization,"",Alguns podem observar des de la distància.,SAY.Dialog:PeekAss.18.Peek Ass,Some of us can just sit back and watch.,"",2025-08-21T22:17:44.617Z
+202,E4_AstralPlaneMain_localization,"",ESTIC TENINT UNA EXPERIÈNCIA EXTRACORPORAL!,SAY.Dialog:Shakey.10.Shaky Ass,I'M HAVING AN OUT-OF-BODY EXPERIENCE!,"",2025-08-21T22:17:44.617Z
+203,E4_AstralPlaneMain_localization,"",ARA LA SENTO ALS OSSOS!,SAY.Dialog:Shakey.12.Shaky Ass,NOW I CAN FEEL IT IN MY BONES!,"",2025-08-21T22:17:44.617Z
+204,E4_AstralPlaneMain_localization,"","QUÈ CONY, VEIG EL MEU PROPI COS.",SAY.Dialog:Shakey.19.Shaky Ass,"WHAT THE FUCK, I'M WATCHING MY OWN BODY.","",2025-08-21T22:17:44.617Z
+205,E4_AstralPlaneMain_localization,"",L'any 1800 vaig encapçalar una Vaga de Fam contra els meus terratinents.,SAY.Dialog:Ugly.10.Ugly Ass,I led a Hunger Strike in the 1800s against my landowners.,"",2025-08-21T22:17:44.617Z
+206,E4_AstralPlaneMain_localization,"",Alguns Ases de per aquí m'han dit que la meva Vaga de Fam va inspirar diverses generacions.,SAY.Dialog:Ugly.12.Ugly Ass,Others here have said my Hunger Strike inspired generations.,"",2025-08-21T22:17:44.617Z
+207,E4_AstralPlaneMain_localization,"","...Em vaig acabar morint, però t'has de comprometre amb la lluita, saps?",SAY.Dialog:Ugly.18.Ugly Ass,"...It killed me, but you have to stand up for what you believe in, you know?","",2025-08-21T22:17:44.617Z
+208,E4_AstralPlaneMain_localization,"","Ei, què passa, Novícia! ¿També ets aquí per treure merda?",SAY.Dialog:Smelly.10.Smelly Ass,"Hey, you, Newbie! Are you on Shit Duty too?","",2025-08-21T22:17:44.617Z
+209,E4_AstralPlaneMain_localization,"",*suspira* Ningú és conscient del que costa mentenir tot això net.,SAY.Dialog:Smelly.12.Smelly Ass,*sigh* Nobody knows how much it takes to keep this place looking good.,"",2025-08-21T22:17:44.617Z
+210,E4_AstralPlaneMain_localization,"",*TUS*,SAY.Dialog:Smelly.20.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+211,E4_AstralPlaneMain_localization,"",Doncs sembla que ja som dues que ens perdrem el Concert d'aquesta nit!,SAY.Dialog:Smelly.21.Smelly Ass,Looks like we're both missing tonight's Concert then!,"",2025-08-21T22:17:44.617Z
+212,E4_AstralPlaneMain_localization,"",*TUS TUS*,SAY.Dialog:Smelly.22.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+213,E4_AstralPlaneMain_localization,"",Doncs què fas aquí? ¿Per què no ets al Concert del DJ Dopaminase?!,SAY.Dialog:Smelly.23.Smelly Ass,Then what are you doing here?? What about DJ Dope Ass's Concert?!,"",2025-08-21T22:17:44.617Z
+214,E4_AstralPlaneMain_localization,"",Quina desgràcia—Donaria el que fos per veure el DJ Dopaminase en directe!,SAY.Dialog:Smelly.28.Smelly Ass,It's a shame—I would love to see DJ Dope Ass perform live!,"",2025-08-21T22:17:44.617Z
+215,E4_AstralPlaneMain_localization,"",He sentit que els Humans tenen maneres de matar que no fan mal.,SAY.Dialog:Sulky.10.Sulky Ass,I hear the Humans have some new ways of killing that don’t hurt.,"",2025-08-21T22:17:44.617Z
+216,E4_AstralPlaneMain_localization,"","Però tot i que no faci mal, ets mort.",SAY.Dialog:Sulky.12.Sulky Ass,"Even if it doesn't hurt, you're still dead.","",2025-08-21T22:17:44.617Z
+217,E4_AstralPlaneMain_localization,"",A la meva època encara es duia tallar el coll en rodó.,SAY.Dialog:Sulky.18.Sulky Ass,"Well in my day, it was just the good old throat slit.","",2025-08-21T22:17:44.617Z
+218,E4_AstralPlaneMain_localization,"",¿T'han tallat mai el coll en rodó davant de la teva gent estimada?,SAY.Dialog:Sulky.19.Sulky Ass,You ever have your throat slit in front of your loved ones?,"",2025-08-21T22:17:44.617Z
+219,E4_AstralPlaneMain_localization,"",*TUS*,SAY.Dialog:Sulky.26.Sick Ass,*COUGH*,"",2025-08-21T22:17:44.617Z
+220,E4_AstralPlaneMain_localization,"",Mentida.,SAY.Dialog:Sulky.27.Sulky Ass,Liar.,"",2025-08-21T22:17:44.617Z
+221,E4_AstralPlaneMain_localization,"",*TUS TUS*,SAY.Dialog:Sulky.28.Sick Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.617Z
+222,E4_AstralPlaneMain_localization,"",Ja m'ho pensava.,SAY.Dialog:Sulky.29.Sulky Ass,Didn't think so.,"",2025-08-21T22:17:44.617Z
+223,E4_AstralPlaneMain_localization,"","Ep, ep, ep! On penses que vas?",SAY.Dialog:TightAss.190.Tight Ass,Whoa whoa whoa! Where do you think you're going?,"",2025-08-21T22:17:44.617Z
+224,E4_AstralPlaneMain_localization,"","No deus ser una Pipioli, no? Ningú s'escapa del Pla Astral davant meu!",SAY.Dialog:TightAss.199.Tight Ass,"You're not a Loser, are you? No one leaves the Astral Plane on my watch!","",2025-08-21T22:17:44.617Z
+225,E4_AstralPlaneMain_localization,"",I no em mouré d'aquest túnel per res del món!,SAY.Dialog:TightAss.191.Tight Ass,And I don't leave this tunnel for anything!,"",2025-08-21T22:17:44.617Z
+226,E4_AstralPlaneMain_localization,"","Excepte, per descomptat, pel Concert de Trap Astral del DJ Dopaminase.",SAY.Dialog:TightAss.202.Tight Ass,"Except, of course, for DJ Dope Ass's Astral Trap Concert.","",2025-08-21T22:17:44.617Z
+227,E4_AstralPlaneMain_localization,"",Els Déus no et trobaran a faltar. Haha.,SAY.Dialog:TightAss.198.Tight Ass,The Gods aren't gonna miss you. Haha.,"",2025-08-21T22:17:44.617Z
+228,E4_AstralPlaneMain_localization,"",El meu ramat va organitzar un Boicot contra els llargs viatges de la Ruta de la Seda.,SAY.Dialog:Total.10.Total Ass,My herd did a Boycott against long travels on the Silk Road.,"",2025-08-21T22:17:44.617Z
+229,E4_AstralPlaneMain_localization,"",Allò sí que eren bons temps.,SAY.Dialog:Total.12.Total Ass,Those were the days.,"",2025-08-21T22:17:44.617Z
+230,E4_AstralPlaneMain_localization,"",Fins i tot vam fer una barricada i gairebé enfonsem el comerç d'espècies.,SAY.Dialog:Total.18.Total Ass,We even made a Barricade once and almost shut down the spice trade.,"",2025-08-21T22:17:44.617Z
+231,E4_AstralPlaneMain_localization,"",GUAU.,SAY.Dialog:Trippy.10.Trippy Ass,WHOA.,"",2025-08-21T22:17:44.617Z
+232,E4_AstralPlaneMain_localization,"",Puc veure com s'acaba tot! Estàs brillant!,SAY.Dialog:Trippy.12.Trippy Ass,I can see how this all ends! You're glowing!,"",2025-08-21T22:17:44.617Z
+233,E4_AstralPlaneMain_localization,"",Hi veig en quatre dimensions!!,SAY.Dialog:Trippy.19.Trippy Ass,I can see four dimensions!!,"",2025-08-21T22:17:44.617Z
+234,E4_AstralPlaneMain_localization,"","",SAY.Dialog:Hairy.10.Hairy Ass,"G'day mate! Crikey, I hayte Humans cuz they shot me and family from thehr helicoptahs.","",2025-08-21T22:17:44.617Z
+235,E4_AstralPlaneMain_localization,"","",SAY.Dialog:Hairy.12.Hairy Ass,"It wuz a real bugga, lemme tell ya.","",2025-08-21T22:17:44.617Z
+236,E4_AstralPlaneMain_localization,x,"",SAY.Dialog:Gamblers_End.11.Risky Ass,We gonna have one helluva night—Look at all dem fresh Ass Souls!,"",2025-08-21T22:17:44.617Z
+2,E4_Sex_localization,"",PLAER:,WRITE.DialogLocalizer.1,PLEASURE:,"",2025-08-21T22:17:44.617Z
+3,E4_Sex_localization,"",COMBO,WRITE.DialogLocalizer.2,CHAIN,"",2025-08-21T22:17:44.617Z

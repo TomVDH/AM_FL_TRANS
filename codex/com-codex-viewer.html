@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asses.masses Universe Elements - Localization Reference</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2d3436 0%, #000000 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        
+        .controls {
+            padding: 20px 30px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+            position: relative;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 10px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .export-btn {
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(58, 71, 213, 0.4);
+        }
+        
+        .stats {
+            padding: 15px 30px;
+            background: #f0f3ff;
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .stat-label {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        
+        .stat-value {
+            font-weight: bold;
+            color: #495057;
+            font-size: 18px;
+        }
+        
+        .table-container {
+            padding: 20px;
+            overflow-x: auto;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        
+        thead {
+            position: sticky;
+            top: 0;
+            background: #2d3436;
+            color: white;
+            z-index: 10;
+        }
+        
+        th {
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-bottom: 2px solid #667eea;
+            white-space: nowrap;
+        }
+        
+        tbody tr {
+            border-bottom: 1px solid #e9ecef;
+            transition: all 0.2s;
+        }
+        
+        tbody tr:hover {
+            background: #f8f9ff;
+        }
+        
+        td {
+            padding: 10px 12px;
+            vertical-align: top;
+        }
+        
+        .key-cell {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .description-cell {
+            color: #6c757d;
+            font-size: 13px;
+            min-width: 200px;
+        }
+        
+        .standard-cell {
+            font-weight: 600;
+            color: #2d3436;
+        }
+        
+        .translation-cell {
+            color: #495057;
+            font-style: italic;
+        }
+        
+        .translation-cell:empty::after {
+            content: "—";
+            color: #dee2e6;
+            font-style: normal;
+        }
+        
+        .category-header {
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+        
+        .category-header td {
+            padding: 8px 12px;
+        }
+        
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #6c757d;
+            font-size: 18px;
+        }
+        
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+            
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .table-container {
+                padding: 10px;
+            }
+            
+            th, td {
+                padding: 8px 6px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🐴 asses.masses Universe Elements</h1>
+            <p>Complete Localization Reference - All Languages</p>
+        </div>
+        
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Search characters, locations, names, or descriptions...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="main">Main Donkeys</button>
+                <button class="filter-btn" data-filter="supporting">Supporting</button>
+                <button class="filter-btn" data-filter="factory">Factory</button>
+                <button class="filter-btn" data-filter="humans">Humans</button>
+                <button class="filter-btn" data-filter="signs">Signs</button>
+                <button class="filter-btn" data-filter="locations">Locations</button>
+                <button class="filter-btn" data-filter="concepts">Concepts</button>
+            </div>
+            <button class="export-btn" onclick="exportCSV()">📥 Export CSV</button>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Total Entries:</span>
+                <span class="stat-value" id="totalCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Characters:</span>
+                <span class="stat-value" id="charCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Locations:</span>
+                <span class="stat-value" id="locationCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Concepts:</span>
+                <span class="stat-value" id="conceptCount">0</span>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Name/Key</th>
+                        <th>Description</th>
+                        <th>English</th>
+                        <th>Spanish</th>
+                        <th>French</th>
+                        <th>German</th>
+                        <th>Dutch (NL)</th>
+                        <th>Turkish</th>
+                        <th>Catalan</th>
+                        <th>Japanese</th>
+                        <th>Korean</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+        // Complete universe data from the provided sources
+        const universeData = [
+            // MAIN DONKEYS
+            {category: "main", key: "Old Ass", description: "Male Marxist/Leninist leader", standard: "Old Ass", es: "Viejurro", fr: "Âne-cien", de: "Alt-Esel", nl: "Ouwe Zak", tr: "Kart Eşek", ca: "Vellase", jp: "信頼できるロバ", ko: "노장 나귀"},
+            {category: "main", key: "Trusty Ass", description: "Female protagonist, silent until Episode 8", standard: "Trusty Ass", es: "Confianzurra", fr: "Const-ânne", de: "Treu-Eselin", nl: "Trouwe Zak", tr: "Dost Eşek", ca: "Honradase", jp: "ナイスドンキー", ko: "믿음 나귀"},
+            {category: "main", key: "Nice Ass", description: "Female energetic worker", standard: "Nice Ass", es: "Buenurra", fr: "Charm-ânne", de: "Schön-und-Nett-Eselin", nl: "Schoon Beest", tr: "Hoş Eşek", ca: "Bellase", jp: "ビッグドンキー", ko: "착한 나귀"},
+            {category: "main", key: "Big Ass", description: "Male visionary", standard: "Big Ass", es: "Giganturro", fr: "Corpul-âne", de: "Mega-Esel", nl: "Mega Ezel", tr: "Koca Eşek", ca: "Grandase", jp: "のどが渇いたロバ", ko: "큰 나귀"},
+            {category: "main", key: "Thirsty Ass", description: "Male, dreams of bar 'Bottom's Up'", standard: "Thirsty Ass", es: "Sedienturro", fr: "Desséch-âne", de: "Durschti-Esel", nl: "Dorstlap", tr: "Gevşek", ca: "Eixutase", jp: "賢いロバ", ko: "갈증 나귀"},
+            {category: "main", key: "Smart Ass", description: "Female strategist", standard: "Smart Ass", es: "Asturra", fr: "Intellig-ânne", de: "Klug-Eselin", nl: "Betweter", tr: "Bilmiş Eşek", ca: "Llestase", jp: "スローなロバ", ko: "잘난 나귀"},
+            {category: "main", key: "Slow Ass", description: "Male with arthritis", standard: "Slow Ass", es: "Lenturro", fr: "Âne-retard", de: "Lahm-Esel", nl: "Slome Ezel", tr: "Ağır Eşek", ca: "Coixase", jp: "スローなロバ", ko: "굼뜬 나귀"},
+            {category: "main", key: "Sturdy Ass", description: "Female maternal figure, religious", standard: "Sturdy Ass", es: "Fuerturra", fr: "Resist-ânne", de: "Stur-Eselin", nl: "Stoere Ezel", tr: "Ana Eşek", ca: "Tossudase", jp: "頑丈なロバ", ko: "굳센 나귀"},
+            {category: "main", key: "Bad Ass", description: "Human turned donkey", standard: "Bad Ass", es: "Cínicurro", fr: "Dissid-âne", de: "Radikal-Esel", nl: "Waaghalske", tr: "Ters Eşek", ca: "Rudase", jp: "", ko: "불량 나귀"},
+            
+            // SUPPORTING CHARACTERS
+            {category: "supporting", key: "Kick Ass", description: "Male angry and impulsive", standard: "Kick Ass", es: "Golpurro", fr: "Combatt-âne", de: "Schlag-Esel", nl: "Stampgast", tr: "Kaba Eşek", ca: "Ferase", jp: "病気のロバ", ko: "박살 나귀"},
+            {category: "supporting", key: "Sick Ass", description: "Female becomes Golden Ass", standard: "Sick Ass", es: "Enfermurra", fr: "Souffr-ânne", de: "Schlapp-Eselin", nl: "Snotezel", tr: "Hasta Eşek", ca: "Feblase", jp: "硬いロバ", ko: "몸살 나귀"},
+            {category: "supporting", key: "Hard Ass", description: "Male strong and stoic", standard: "Hard Ass", es: "Durro", fr: "Vigil-âne", de: "Hardcore-Esel", nl: "Felle Gast", tr: "Sert Eşek", ca: "Fortalase", jp: "悲しいロバ", ko: "뚝심 나귀"},
+            {category: "supporting", key: "Sad Ass", description: "Male mourning lost love", standard: "Sad Ass", es: "Tristurro", fr: "Trist-âne", de: "Deprimiert-Esel", nl: "Triestigaard", tr: "Üzgün Eşek", ca: "Tristase", jp: "怠惰なロバ", ko: "눈물 나귀"},
+            {category: "supporting", key: "Lazy Ass", description: "Female deceased", standard: "Lazy Ass", es: "Perezurra", fr: "Fainé-ânne", de: "Faul-Eselin", nl: "Luie Zak", tr: "Tembel Eşek", ca: "Perase", jp: "悪いロバ", ko: "게으른 나귀"},
+            {category: "supporting", key: "Golden Ass", description: "Sacred transformation", standard: "Golden Ass", es: "Doradurre", fr: "L'Âne d'Or", de: "Goldene Eselin", nl: "Gouden Ezel", tr: "Altın Eşek", ca: "Ase d'Or", jp: "", ko: "황금 당나귀"},
+            
+            // FACTORY DONKEYS (sampling)
+            {category: "factory", key: "Proper Ass", description: "Factory donkey", standard: "Proper Ass", es: "Cortesurra", fr: "Biensé-âne", de: "Korrekt-Eselin", nl: "Keurige Ezel", tr: "Düzgün Eşek", ca: "Correctase", jp: "", ko: ""},
+            {category: "factory", key: "Wild Ass", description: "Factory donkey", standard: "Wild Ass", es: "Salvajurra", fr: "Farouchem-âne", de: "Wild-Eselin", nl: "Wilde Ezel", tr: "Yaban Eşek", ca: "Salvatjase", jp: "", ko: ""},
+            {category: "factory", key: "Anxious Ass", description: "Factory donkey", standard: "Anxious Ass", es: "Ansiosurro", fr: "Inquiét-ânne", de: "Angst-Esel", nl: "Angstige Ezel", tr: "Panik Eşek", ca: "Escassase", jp: "", ko: ""},
+            {category: "factory", key: "Right Ass", description: "Always male", standard: "Right Ass", es: "Derechurro", fr: "Âne-droite", de: "Rechter Esel", nl: "Rechter Ezel", tr: "Sağcı Eşek", ca: "Dretase", jp: "", ko: ""},
+            {category: "factory", key: "Left Ass", description: "Always male", standard: "Left Ass", es: "Izquierdurro", fr: "Âne-gauche", de: "Linker Esel", nl: "Linker Ezel", tr: "Solcu Eşek", ca: "Esquerrase", jp: "", ko: ""},
+            
+            // HUMAN CHARACTERS
+            {category: "humans", key: "Cole-Machine", description: "Machine character", standard: "Cole-Machine", es: "Pedro-Máquina", fr: "Roch-Machine", de: "Rocky-Maschine", nl: "Piet-Machine", tr: "Behlül-Makine", ca: "Màquina Roca", jp: "", ko: ""},
+            {category: "humans", key: "Melvin", description: "Ass Handler", standard: "Ass Handler Melvin", es: "Cuidador Toto", fr: "Laquais Martin", de: "Stallbursche Till", nl: "Zakkenzeuler Zeno", tr: "Beşir Getir", ca: "Milo, el Ruquer", jp: "", ko: "조련사 석규"},
+            {category: "humans", key: "Wedgie", description: "Ass Handler", standard: "Ass Handler Wedgie", es: "Cuidadora Nicola", fr: "Laquais Jessie", de: "Stallburschin Sarah", nl: "Zakkenzeulster Zita", tr: "Cemile Götür", ca: "Camila, la Ruquera", jp: "", ko: "조련사 주디"},
+            {category: "humans", key: "Miner Jenny", description: "Mine worker", standard: "Miner Jenny", es: "Minera Yeni", fr: "Mineure Anne-Marie", de: "Bine von der Mine", nl: "Mijnwerker Jenny", tr: "Bihter Madenci", ca: "La Minera Jennifer", jp: "", ko: ""},
+            {category: "humans", key: "Mr. Butte", description: "Mine owner family", standard: "Mr. Butte", es: "Señor Polino de las Cachas", fr: "M. Labette", de: "Herr Grubengräber", nl: "Mr. Vanscheetvelde", tr: "Adnan Bey", ca: "Sr. Roca", jp: "", ko: ""},
+            
+            // SIGNS
+            {category: "signs", key: "Sign", description: "Basic sign", standard: "Sign", es: "Cartel", fr: "Panneau", de: "Schild", nl: "Bord", tr: "Levha", ca: "Rètol", jp: "", ko: ""},
+            {category: "signs", key: "Welcome Sign", description: "Greeting sign", standard: "Welcome Sign", es: "Cartel de bienvenida", fr: "Panneau d'accueil", de: "Willkommensschild", nl: "Welkomsbord", tr: "Hoşgeldin Levhası", ca: "Rètol de benvinguda", jp: "", ko: "환영합니다"},
+            {category: "signs", key: "Warning Sign", description: "Danger sign", standard: "Warning Sign", es: "Cartel de advertencia", fr: "Panneau d'avertissement", de: "Warnschild", nl: "Waarschuwingsbord", tr: "Uyarı Levhası", ca: "Rètol de perill", jp: "", ko: ""},
+            {category: "signs", key: "Shitty Sign", description: "Poor quality sign", standard: "Shitty Sign", es: "Cartel de mierda", fr: "Panneau de merde", de: "Beschissenes Schild", nl: "Bord met stront eraan", tr: "Boktan Levha", ca: "Rètol pudent", jp: "", ko: ""},
+            
+            // LOCATIONS
+            {category: "locations", key: "Fannyside", description: "The region where farm and mines are located", standard: "Fannyside", es: "Las Posaderas", fr: "Niquedouille", de: "Arsch-der-Welt", nl: "Muilegem", tr: "Anırtan", ca: "Talldevall", jp: "ど田舎", ko: "엉덩면"},
+            {category: "locations", key: "Fannyside Farm", description: "The farm where the game starts", standard: "Fannyside Farm", es: "Granja de Las Posaderas", fr: "La ferme Niquedouille", de: "Arsch-der-Welt-Farm", nl: "De Boerderij van Muilegem", tr: "Anırtan Çiftliği", ca: "Granja de Talldevall", jp: "ど田舎農場", ko: ""},
+            {category: "locations", key: "Bumpkin Village", description: "The town near the farm and mine", standard: "Bumpkin Village", es: "Villa de las Cachas", fr: "Ste-Anne-des-Ploucs", de: "Hinterndorf", nl: "Klotegem", tr: "Vuruşan Köyü", ca: "Viladeculs", jp: "", ko: "뒷골촌"},
+            {category: "locations", key: "Mecha City", description: "Progressive science-driven metropolis", standard: "Mecha City", es: "La Mecha", fr: "Mechapolis", de: "Maschinopolis", nl: "Mechalen", tr: "Teknopol Büyükşehir", ca: "Tecnolona", jp: "メカシティ", ko: "메카 시티"},
+            {category: "locations", key: "Butte Mines", description: "Mine collapse site where Lazy Ass died", standard: "Butte Mines", es: "", fr: "", de: "", nl: "", tr: "", ca: "", jp: "", ko: ""},
+            {category: "locations", key: "The Commons", description: "Herd gathering and voting place", standard: "The Commons", es: "", fr: "", de: "", nl: "", tr: "", ca: "", jp: "", ko: ""},
+            {category: "locations", key: "The Mill", description: "State of the art Mill and Granary", standard: "The Mill", es: "", fr: "", de: "", nl: "", tr: "", ca: "", jp: "", ko: ""},
+            {category: "locations", key: "The Theatre", description: "Performance and spectacle venue", standard: "The Theatre", es: "", fr: "", de: "", nl: "", tr: "", ca: "", jp: "", ko: ""},
+            
+            // CONCEPTS & TERMS
+            {category: "concepts", key: "Song of Ascension", description: "Song to send souls to Astral Plane", standard: "Song of Ascension", es: "el Canto de Ascensión", fr: "le Chant de l'Ascension", de: "die Eselsseelenhimmelfahrtshymne", nl: "ezelenhemelvaartszangderzielen", tr: "Eşek İlahisi", ca: "", jp: "", ko: "승천곡"},
+            {category: "concepts", key: "Reassignment", description: "Reincarnation process for donkeys", standard: "Reassignment", es: "Reasignación", fr: "Reassignement", de: "Neubeseelung", nl: "Heraanstelling", tr: "Reeşekkarnasyon", ca: "", jp: "", ko: "환생"},
+            {category: "concepts", key: "Astral Plane", description: "Spiritual realm of donkey souls", standard: "Astral Plane", es: "Plano Astral", fr: "Plan d'Astral", de: "Astralebene", nl: "het Astrale Hiernamaals", tr: "Eşek Cenneti", ca: "", jp: "まほろば", ko: "나귀 낙원"},
+            {category: "concepts", key: "The Gods", description: "Divine forces", standard: "The Gods", es: "LES DIOSES", fr: "LES DIEUX", de: "DIE GÖTTER", nl: "DE GODEN", tr: "TANRILAR", ca: "ELS DÉUS", jp: "", ko: "신"},
+            {category: "concepts", key: "The Masses", description: "Collective body", standard: "The Masses", es: "Las Masas", fr: "Les Masses", de: "Die Massen", nl: "De Massa", tr: "Sürüler", ca: "El Ramat", jp: "", ko: ""}
+        ];
+        
+        let currentFilter = 'all';
+        let searchTerm = '';
+        
+        // Initialize
+        function init() {
+            renderTable();
+            updateStats();
+            setupEventListeners();
+        }
+        
+        // Setup event listeners
+        function setupEventListeners() {
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                searchTerm = e.target.value.toLowerCase();
+                renderTable();
+            });
+            
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    currentFilter = e.target.dataset.filter;
+                    renderTable();
+                });
+            });
+        }
+        
+        // Render table
+        function renderTable() {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            let filteredData = universeData;
+            
+            if (currentFilter !== 'all') {
+                filteredData = filteredData.filter(item => item.category === currentFilter);
+            }
+            
+            if (searchTerm) {
+                filteredData = filteredData.filter(item => 
+                    item.key.toLowerCase().includes(searchTerm) ||
+                    item.description.toLowerCase().includes(searchTerm) ||
+                    item.standard.toLowerCase().includes(searchTerm) ||
+                    (item.nl && item.nl.toLowerCase().includes(searchTerm))
+                );
+            }
+            
+            if (filteredData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="11" class="no-results">No results found</td></tr>';
+                return;
+            }
+            
+            const grouped = {};
+            filteredData.forEach(item => {
+                if (!grouped[item.category]) grouped[item.category] = [];
+                grouped[item.category].push(item);
+            });
+            
+            const categoryNames = {
+                'main': '🐴 MAIN DONKEY CHARACTERS',
+                'supporting': '🐴 SUPPORTING CHARACTERS',
+                'factory': '⚙️ FACTORY DONKEYS',
+                'humans': '👤 HUMAN CHARACTERS',
+                'signs': '🪧 SIGN TYPES',
+                'locations': '📍 LOCATIONS',
+                'concepts': '💫 CONCEPTS & TERMS'
+            };
+            
+            Object.entries(grouped).forEach(([category, items]) => {
+                const headerRow = document.createElement('tr');
+                headerRow.className = 'category-header';
+                headerRow.innerHTML = `<td colspan="11">${categoryNames[category] || category.toUpperCase()}</td>`;
+                tbody.appendChild(headerRow);
+                
+                items.forEach(item => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td class="key-cell">${item.key}</td>
+                        <td class="description-cell">${item.description}</td>
+                        <td class="standard-cell">${item.standard}</td>
+                        <td class="translation-cell">${item.es || ''}</td>
+                        <td class="translation-cell">${item.fr || ''}</td>
+                        <td class="translation-cell">${item.de || ''}</td>
+                        <td class="translation-cell">${item.nl || ''}</td>
+                        <td class="translation-cell">${item.tr || ''}</td>
+                        <td class="translation-cell">${item.ca || ''}</td>
+                        <td class="translation-cell">${item.jp || ''}</td>
+                        <td class="translation-cell">${item.ko || ''}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            });
+        }
+        
+        // Update statistics
+        function updateStats() {
+            const charCount = universeData.filter(d => ['main', 'supporting', 'factory'].includes(d.category)).length;
+            document.getElementById('totalCount').textContent = universeData.length;
+            document.getElementById('charCount').textContent = charCount;
+            document.getElementById('locationCount').textContent = universeData.filter(d => d.category === 'locations').length;
+            document.getElementById('conceptCount').textContent = universeData.filter(d => d.category === 'concepts').length;
+        }
+        
+        // Export to CSV
+        function exportCSV() {
+            const headers = ['Name/Key', 'Description', 'English', 'Spanish', 'French', 'German', 'Dutch', 'Turkish', 'Catalan', 'Japanese', 'Korean'];
+            const rows = [headers];
+            
+            universeData.forEach(item => {
+                rows.push([
+                    item.key,
+                    item.description,
+                    item.standard,
+                    item.es || '',
+                    item.fr || '',
+                    item.de || '',
+                    item.nl || '',
+                    item.tr || '',
+                    item.ca || '',
+                    item.jp || '',
+                    item.ko || ''
+                ]);
+            });
+            
+            const csvContent = rows.map(row => 
+                row.map(cell => {
+                    const escaped = String(cell).replace(/"/g, '""');
+                    return /[,\n"]/.test(escaped) ? `"${escaped}"` : escaped;
+                }).join(',')
+            ).join('\n');
+            
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'asses_masses_universe_complete.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Show confirmation
+            const exportBtn = document.querySelector('.export-btn');
+            const originalText = exportBtn.textContent;
+            exportBtn.textContent = '✅ Downloaded!';
+            exportBtn.style.background = 'linear-gradient(135deg, #00d984 0%, #00a651 100%)';
+            setTimeout(() => {
+                exportBtn.textContent = originalText;
+                exportBtn.style.background = 'linear-gradient(135deg, #00d2ff 0%, #3a47d5 100%)';
+            }, 2000);
+        }
+        
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>

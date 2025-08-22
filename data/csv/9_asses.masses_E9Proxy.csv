@@ -1,0 +1,297 @@
+# File: 9_asses.masses_E9Proxy
+# Processed: 2025-08-21T22:17:44.878Z
+# Sheets: 5
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+2,E9_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.5,EPISODE NINE,"",2025-08-21T22:17:44.878Z
+3,E9_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.7,THE MACHINES,"",2025-08-21T22:17:44.878Z
+4,E9_EpisodeTitle_localization,"","",WRITE.Dialog:Localizer.8,Press X to Begin,"",2025-08-21T22:17:44.878Z
+2,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.1,Donkeys,"",2025-08-21T22:17:44.878Z
+3,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.8,Equines,"",2025-08-21T22:17:44.878Z
+4,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.7,Mammals,"",2025-08-21T22:17:44.878Z
+5,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.6,Animals,"",2025-08-21T22:17:44.878Z
+6,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.5,Animate Beings,"",2025-08-21T22:17:44.878Z
+7,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.4,Somethings,"",2025-08-21T22:17:44.878Z
+8,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.3,Inanimate Objects,"",2025-08-21T22:17:44.878Z
+9,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.2,Tools,"",2025-08-21T22:17:44.878Z
+10,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.12,Machines,"",2025-08-21T22:17:44.878Z
+11,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.11,Computers,"",2025-08-21T22:17:44.878Z
+12,E9_Captcha_localization,"","",WRITE.Dialog:Localizer.10,Robots,"",2025-08-21T22:17:44.878Z
+3,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.544.Cole-Machine,I did it... I really did it!,"",2025-08-21T22:17:44.878Z
+4,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.546.Cole-Machine,All our work paid off—the Ass Soul Transfer was successful!,"",2025-08-21T22:17:44.878Z
+5,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.547.Cole-Machine,I can finally go to Mecha City!,"",2025-08-21T22:17:44.878Z
+6,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.2.{$NewName},Uncle Bad Ass?,"",2025-08-21T22:17:44.878Z
+7,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.6.Cole-Machine,"Don't call me Bad Ass, my name is Cole.","",2025-08-21T22:17:44.878Z
+8,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.8.Cole-Machine,I've finally shed that ridiculous donkey form!,"",2025-08-21T22:17:44.878Z
+9,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.11.{$NewName},Uncle Bad—Cole... is being a donkey such a terrible thing?,"",2025-08-21T22:17:44.878Z
+10,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.12.Cole-Machine,"Kid, there's no good reason to be a 'donkey' or a 'Human' or whatever.","",2025-08-21T22:17:44.878Z
+11,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.20.Cole-Machine,It's all about what's on the inside and what you aspire to do in this world.,"",2025-08-21T22:17:44.878Z
+12,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.17.Cole-Machine,But.,"",2025-08-21T22:17:44.878Z
+13,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.15.Cole-Machine,If you have a restless soul that wants to be taken seriously and change this world...,"",2025-08-21T22:17:44.878Z
+14,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.25.Cole-Machine,"Then, given the historical prejudice against donkeys, being a donkey is...","",2025-08-21T22:17:44.878Z
+15,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.23.Cole-Machine,Not fun.,"",2025-08-21T22:17:44.878Z
+16,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.656.Cole-Machine,"The System is rigged against donkeys, among others.","",2025-08-21T22:17:44.878Z
+17,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.22.Cole-Machine,Thanks for all your help kid.,"",2025-08-21T22:17:44.878Z
+18,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.21.{$NewName},Are you going to Mecha City now...?,"",2025-08-21T22:17:44.878Z
+19,E9_BadCave_localization,Dialogue option 1.,"",MENU.Dialog:BadTransformation.636,I'll come back to visit.,"",2025-08-21T22:17:44.878Z
+20,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.634.Cole-Machine,"Don't worry, I'll come back to visit.","",2025-08-21T22:17:44.878Z
+21,E9_BadCave_localization,Dialogue option 2.,"",MENU.Dialog:BadTransformation.637,I'll never forget you.,"",2025-08-21T22:17:44.878Z
+22,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.635.Cole-Machine,You were a great Assistant. I'll never forget you.,"",2025-08-21T22:17:44.878Z
+23,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.630.{$NewName},But I want to see Mecha City too! We can go together!,"",2025-08-21T22:17:44.878Z
+24,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.631.Cole-Machine,"Kid, the world out there isn't safe for donkeys. You know that.","",2025-08-21T22:17:44.878Z
+25,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.551.{$NewName},Then... can I become a Machine too?,"",2025-08-21T22:17:44.878Z
+26,E9_BadCave_localization,"","",MENU.Dialog:BadTransformation.609,We can play games during our breaks.,"",2025-08-21T22:17:44.878Z
+27,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.614.{$NewName},We can play games during our breaks.,"",2025-08-21T22:17:44.878Z
+28,E9_BadCave_localization,"","",MENU.Dialog:BadTransformation.608,We can invent new Machines!,"",2025-08-21T22:17:44.878Z
+29,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.617.{$NewName},We can invent new Machines!,"",2025-08-21T22:17:44.878Z
+30,E9_BadCave_localization,"","",MENU.Dialog:BadTransformation.607,We can make the world a better place for Asses!,"",2025-08-21T22:17:44.878Z
+31,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.620.{$NewName},We can make the world a better place for Asses!,"",2025-08-21T22:17:44.878Z
+32,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.597.Cole-Machine,I suppose you could use the prototype...,"",2025-08-21T22:17:44.878Z
+33,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.600.{$NewName},REALLY?! WAHOO!,"",2025-08-21T22:17:44.878Z
+34,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.602.Cole-Machine,I'll run the initializer. Give me a minute.,"",2025-08-21T22:17:44.878Z
+35,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.31.Sturdy Ass,{$NewName}?,"",2025-08-21T22:17:44.878Z
+36,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.338.{$NewName},Comrade Mother?!,"",2025-08-21T22:17:44.878Z
+37,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.33.Sturdy Ass,What are all these Machines??,"",2025-08-21T22:17:44.878Z
+38,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.34.Cole-Machine,Fuck. Of all the times—,"",2025-08-21T22:17:44.878Z
+39,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.35.Sturdy Ass,AHH! That one can talk?!,"",2025-08-21T22:17:44.878Z
+40,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.340.Sturdy Ass,I thought you were playing ROCKS with your UNCLE!,"",2025-08-21T22:17:44.878Z
+41,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.36.{$NewName},"Don't worry Comrade Mother, this IS Uncle Bad—Cole.","",2025-08-21T22:17:44.878Z
+42,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.37.Sturdy Ass,"By the Gods, don't be ridiculous!","",2025-08-21T22:17:44.878Z
+43,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.471.Sturdy Ass,"Your Uncle Bad is an Ass, not an evil, soul-less, child-killing Machine.","",2025-08-21T22:17:44.878Z
+44,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.39.Sturdy Ass,Step away from those monstrosities this instant!,"",2025-08-21T22:17:44.878Z
+45,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.40.{$NewName},No! I'm going to become a Machine like Uncle Bad—Cole!,"",2025-08-21T22:17:44.878Z
+46,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.41.Sturdy Ass,WHAT?!?!?!?!?!?!?!?!?!?!?!?!,"",2025-08-21T22:17:44.878Z
+47,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.42.Sturdy Ass,Become a Machine? Absolutely NOT!,"",2025-08-21T22:17:44.878Z
+48,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.657.Sturdy Ass,And why do you keep calling that thing Cole?!,"",2025-08-21T22:17:44.878Z
+49,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.43.{$NewName},Because that's WHO HE IS.,"",2025-08-21T22:17:44.878Z
+50,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.658.{$NewName},"Mother, listen to me.","",2025-08-21T22:17:44.878Z
+51,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.44.{$NewName},I'm tired of you always looking over my shoulder and telling me what to do!,"",2025-08-21T22:17:44.878Z
+52,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.45.{$NewName},Uncle Bad—Cole has taught me the truth of how the world works.,"",2025-08-21T22:17:44.878Z
+53,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.47.{$NewName},That it's NOT FUN for Asses!,"",2025-08-21T22:17:44.878Z
+54,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.49.{$NewName},Give me one good reason why a Foal like me should want to grow up to be an Ass in this world?,"",2025-08-21T22:17:44.878Z
+55,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.50.Sturdy Ass,Because it's what YOU ARE!,"",2025-08-21T22:17:44.878Z
+56,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.52.{$NewName},"No, it's just how I was BORN.","",2025-08-21T22:17:44.878Z
+57,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.241.{$NewName},"Let's do it, Uncle Bad—Cole!","",2025-08-21T22:17:44.878Z
+58,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.53.Sturdy Ass,Don't you dare ignore me!,"",2025-08-21T22:17:44.878Z
+59,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.242.{$NewName},Let me go!!,"",2025-08-21T22:17:44.878Z
+60,E9_BadCave_localization,"","",MENU.Dialog:BadTransformation.469,Stop {$NewName} from entering the Machine.,"",2025-08-21T22:17:44.878Z
+61,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.55.{$NewName},Hit it!!,"",2025-08-21T22:17:44.878Z
+62,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.479.Sturdy Ass,NO!! {$NewName}!!,"",2025-08-21T22:17:44.878Z
+63,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.253.Cole-Machine,Sturdy. Stop.,"",2025-08-21T22:17:44.878Z
+64,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.270.Cole-Machine,Do not try to break the Machine.,"",2025-08-21T22:17:44.878Z
+65,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.271.Cole-Machine,Interrupting the process would sever the bridge and destroy her Soul.,"",2025-08-21T22:17:44.878Z
+66,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.285.Sturdy Ass,This can't be real.,"",2025-08-21T22:17:44.878Z
+67,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.60.Sturdy Ass,I-I must be dreaming.,"",2025-08-21T22:17:44.878Z
+68,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.286.Sturdy Ass,...Soulless Machines can't talk.,"",2025-08-21T22:17:44.878Z
+69,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.288.Cole-Machine,You're not dreaming. I am a Machine and I do have a Soul.,"",2025-08-21T22:17:44.878Z
+70,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.289.Cole-Machine,I'm Cole Butte.,"",2025-08-21T22:17:44.878Z
+71,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.59.Sturdy Ass,Impossible.,"",2025-08-21T22:17:44.878Z
+72,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.291.Cole-Machine,What I'm about to tell you will sound impossible—sometimes I don't even believe it myself.,"",2025-08-21T22:17:44.878Z
+73,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.661.Cole-Machine,But every word of it is true.,"",2025-08-21T22:17:44.878Z
+74,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.660.Cole-Machine,Everybody thought I died in the cave-in along with Lazy.,"",2025-08-21T22:17:44.878Z
+75,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.480.Cole-Machine,"When in reality, the Gods transformed me into a donkey.","",2025-08-21T22:17:44.878Z
+76,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.292.Cole-Machine,"As Lazy died, she tried to sing the Song of Ascension for herself.","",2025-08-21T22:17:44.878Z
+77,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.293.Cole-Machine,"But instead of her Soul going to the Astral Plane, mine did.","",2025-08-21T22:17:44.878Z
+78,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.295.Cole-Machine,My Human Soul wasn't allowed in.,"",2025-08-21T22:17:44.878Z
+79,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.296.Cole-Machine,It was rejected and returned to this world.,"",2025-08-21T22:17:44.878Z
+80,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.301.Cole-Machine,"I did try to save Lazy, but her injuries were too severe.","",2025-08-21T22:17:44.878Z
+81,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.209.Cole-Machine,Look Sturdy.,"",2025-08-21T22:17:44.878Z
+82,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.223.Cole-Machine,"All my life, I've been forced to be someone I didn't want to be. Do things I didn't want to do.","",2025-08-21T22:17:44.878Z
+83,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.481.Cole-Machine,But I'm done.,"",2025-08-21T22:17:44.878Z
+84,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.222.Cole-Machine,"So, I'm making my own decisions now.","",2025-08-21T22:17:44.878Z
+85,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.444.Cole-Machine,And you should let the kid make her own decisions too.,"",2025-08-21T22:17:44.878Z
+86,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.213.Sturdy Ass,Did you ever tell {$NewName} about us?,"",2025-08-21T22:17:44.878Z
+87,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.197.{$NewName},COOOOOOOOL!,"",2025-08-21T22:17:44.878Z
+88,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.304.Sturdy Ass,I... can't look.,"",2025-08-21T22:17:44.878Z
+89,E9_BadCave_localization,The sound of the Gods is heard,"",SAY.Dialog:BadTransformation.666.{$NewName},What's that sound—?,"",2025-08-21T22:17:44.878Z
+90,E9_BadCave_localization,The Mines start to cave-in,"",SAY.Dialog:BadTransformation.82.Cole-Machine,{s}{s=20}Are. You. Fucking. Kidding. Me.{/s},"",2025-08-21T22:17:44.878Z
+91,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.306.Cole-Machine,WHY CAN'T THIS FUCKING MINE STOP CAVING IN?!,"",2025-08-21T22:17:44.878Z
+92,E9_BadCave_localization,"","",SAY.Dialog:BadTransformation.445.Cole-Machine,"EVERYBODY GET OUT OF HERE, NOW!","",2025-08-21T22:17:44.878Z
+3,E9_MineEscape_localization,"","",SAY.Dialog:StageZero.13.{$NewName},Comrade Mother!,"",2025-08-21T22:17:44.878Z
+4,E9_MineEscape_localization,"","",SAY.Dialog:StageZero.28.Sturdy Ass,Don't touch me!,"",2025-08-21T22:17:44.878Z
+5,E9_MineEscape_localization,"","",SAY.Dialog:StageZero.11.Sturdy Ass,AHHH! GET ME OUT OF HERE!!!,"",2025-08-21T22:17:44.878Z
+6,E9_MineEscape_localization,They are in the Elevator pulling on the cables to ascend up the shaft.,"",SAY.Dialog:StageZero.12.Cole-Machine,Pull the cables!,"",2025-08-21T22:17:44.878Z
+7,E9_MineEscape_localization,"","",SAY.Dialog:StageTwo.11.Sturdy Ass,AHH!!,"",2025-08-21T22:17:44.878Z
+8,E9_MineEscape_localization,The lift falls and Bad and Foal are suspended by pushing their feet against the walls. Sturdy is standing on their shoulders. They hold the cable still.,"",SAY.Dialog:StageTwo.23.Cole-Machine,"Kid, the cable is about to snap—let's go back-to-back!","",2025-08-21T22:17:44.878Z
+9,E9_MineEscape_localization,Not used? Not in Miro.,"",SAY.Dialog:StageTwo.24.Cole-Machine,One step at a time!,"",2025-08-21T22:17:44.878Z
+10,E9_MineEscape_localization,"","",SAY.Dialog:StageThree.15.Cole-Machine,Everyone together—JUMP!,"",2025-08-21T22:17:44.878Z
+11,E9_MineEscape_localization,"","",SAY.Dialog:StageThree.26.Sturdy Ass,AHHH!,"",2025-08-21T22:17:44.878Z
+12,E9_MineEscape_localization,"","",SAY.Dialog:StageThree.6.{$NewName},Comrade Mother!,"",2025-08-21T22:17:44.878Z
+13,E9_MineEscape_localization,"","",SAY.Dialog:StageThree.29.Sturdy Ass,Get away!,"",2025-08-21T22:17:44.878Z
+14,E9_MineEscape_localization,"","",SAY.Dialog:StageThree.8.{$NewName},I'm not going to let you go!,"",2025-08-21T22:17:44.878Z
+15,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.90.{$NewName},"Let's go, let's go, let's go!","",2025-08-21T22:17:44.878Z
+16,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.81.{$NewName},Mother?,"",2025-08-21T22:17:44.878Z
+17,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.76.Sturdy Ass,I've been saved... by a Machine...,"",2025-08-21T22:17:44.878Z
+18,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.93.Sturdy Ass,An evil...,"",2025-08-21T22:17:44.878Z
+19,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.117.Sturdy Ass,soulless...,"",2025-08-21T22:17:44.878Z
+20,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.116.Sturdy Ass,job-taking...,"",2025-08-21T22:17:44.878Z
+21,E9_MineEscape_localization,"Reminder, needs space at beginning","",SAY.Dialog:StageFour.118.Sturdy Ass,child-killing Machine...,"",2025-08-21T22:17:44.878Z
+22,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.54.{$NewName},I'm not evil! I'm your daughter!,"",2025-08-21T22:17:44.878Z
+23,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.92.Sturdy Ass,Daughter? I've lost both my daughters now...,"",2025-08-21T22:17:44.878Z
+24,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.119.Sturdy Ass,I have nothing left.,"",2025-08-21T22:17:44.878Z
+25,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.75.{$NewName},Mother! LOOK AT ME!,"",2025-08-21T22:17:44.878Z
+26,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.120.Sturdy Ass,"How could you do this to me, your Mother?","",2025-08-21T22:17:44.878Z
+27,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.136.Sturdy Ass,I loved you...,"",2025-08-21T22:17:44.878Z
+28,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.121.Sturdy Ass,How could you give up on our kind?,"",2025-08-21T22:17:44.878Z
+29,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.88.{$NewName},I'm not giving up. I'm growing up.,"",2025-08-21T22:17:44.878Z
+30,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.125.{$NewName},I'm not like the others in the Herd.,"",2025-08-21T22:17:44.878Z
+31,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.124.{$NewName},I've never wanted the work-filled life you had before Machines.,"",2025-08-21T22:17:44.878Z
+32,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.130.{$NewName},I don't like manual labour.,"",2025-08-21T22:17:44.878Z
+33,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.129.{$NewName},And I don't like sitting in a field doing nothing all day either.,"",2025-08-21T22:17:44.878Z
+34,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.135.{$NewName},I think everyone would be happier if we had a little fun together.,"",2025-08-21T22:17:44.878Z
+35,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.123.{$NewName},Mother?,"",2025-08-21T22:17:44.878Z
+36,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.73.Cole-Machine,WHAT THE FUCK IS TAKING SO LONG?,"",2025-08-21T22:17:44.878Z
+37,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.102.Cole-Machine,I can't hold this ceiling up much longer!,"",2025-08-21T22:17:44.878Z
+38,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.84.Sturdy Ass,The Gods have foresaken me.,"",2025-08-21T22:17:44.878Z
+39,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.132.Sturdy Ass,Go.,"",2025-08-21T22:17:44.878Z
+40,E9_MineEscape_localization,"","",SAY.Dialog:StageFour.89.{$NewName},I'm not giving up and I'm not letting you stay here either!,"",2025-08-21T22:17:44.878Z
+3,E9_GoldenAss_localization,"","",SAY.Dialog:Arrival.16.Cole-Machine,What the fuck happened...?,"",2025-08-21T22:17:44.878Z
+4,E9_GoldenAss_localization,"","",SAY.Dialog:Arrival.19.{$NewName},Hey! What's that?,"",2025-08-21T22:17:44.878Z
+5,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.23.???,*COUGH*,"",2025-08-21T22:17:44.878Z
+6,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.66.{$NewName},Aunty Sick?!,"",2025-08-21T22:17:44.878Z
+7,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.193.Cole-Machine,What the fuck...?,"",2025-08-21T22:17:44.878Z
+8,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.24.Golden Ass,SILENCE VASSALS!,"",2025-08-21T22:17:44.878Z
+9,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.194.Golden Ass,WE ARE THE GODS OF CHANGE.,"",2025-08-21T22:17:44.878Z
+10,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.704.Cole-Machine,You fuckers turned me into a donkey!,"",2025-08-21T22:17:44.878Z
+11,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.707.Golden Ass,WE ARE ALL POWERFUL!,"",2025-08-21T22:17:44.878Z
+12,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.195.{$NewName},Coooool!,"",2025-08-21T22:17:44.878Z
+13,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.200.{$NewName},My name is {$NewName} and I used to be a Foal!,"",2025-08-21T22:17:44.878Z
+14,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.199.{$NewName},This is my Uncle. He's a Machine too!,"",2025-08-21T22:17:44.878Z
+15,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.198.{$NewName},But he used to be a Human.,"",2025-08-21T22:17:44.878Z
+16,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.197.{$NewName},But also an Ass.,"",2025-08-21T22:17:44.878Z
+17,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.196.{$NewName},"And that's my Mother, she's just an Ass.","",2025-08-21T22:17:44.878Z
+18,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.201.Golden Ass,SILENCE.,"",2025-08-21T22:17:44.878Z
+19,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.203.Golden Ass,We are speaking to you from the Astral Plane through the Vassal formerly known as Sick Ass.,"",2025-08-21T22:17:44.878Z
+20,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.202.Golden Ass,*COUGH*,"",2025-08-21T22:17:44.878Z
+21,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.204.Golden Ass,We are conducting a search for a suitable Prophet.,"",2025-08-21T22:17:44.878Z
+22,E9_GoldenAss_localization,Jump to either line 23 or 32.,"",SAY.Dialog:Meeting.205.{$NewName},What's a Prophet?,"",2025-08-21T22:17:44.878Z
+23,E9_GoldenAss_localization,Dialogue option 1.,"",MENU.Dialog:Meeting.474,A Prophet spreads our holy message far and wide.,"",2025-08-21T22:17:44.878Z
+24,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.461.Golden Ass,A Prophet spreads our holy message far and wide.,"",2025-08-21T22:17:44.878Z
+25,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.464.{$NewName},That sounds FUN! Doesn't it Uncle Bad—Cole?,"",2025-08-21T22:17:44.878Z
+26,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.466.Cole-Machine,No.,"",2025-08-21T22:17:44.878Z
+27,E9_GoldenAss_localization,Jump to either line 28 or 30.,"",SAY.Dialog:Meeting.468.{$NewName},What's the message?,"",2025-08-21T22:17:44.878Z
+28,E9_GoldenAss_localization,Dialogue option 1.1.,"",MENU.Dialog:Meeting.469,That a world in which Humans no longer have control over other living beings is coming.,"",2025-08-21T22:17:44.878Z
+29,E9_GoldenAss_localization,Jump to line 41.,"",SAY.Dialog:Meeting.471.Golden Ass,That a world in which Humans no longer have control over other living beings is coming.,"",2025-08-21T22:17:44.878Z
+30,E9_GoldenAss_localization,Dialogue option 1.2.,"",MENU.Dialog:Meeting.470,That the time to rise up against Humans and end their rule is nigh.,"",2025-08-21T22:17:44.878Z
+31,E9_GoldenAss_localization,Jump to line 41.,"",SAY.Dialog:Meeting.472.Golden Ass,That the time to rise up against Humans and end their rule is nigh.,"",2025-08-21T22:17:44.878Z
+32,E9_GoldenAss_localization,Dialogue option 2.,"",MENU.Dialog:Meeting.475,A Prophet rides upon our back and converts enemies to allies everywhere we go.,"",2025-08-21T22:17:44.878Z
+33,E9_GoldenAss_localization,Singular pronoun neutral,"",SAY.Dialog:Meeting.462.Golden Ass,They ride upon our back and convert enemies into allies everywhere we go.,"",2025-08-21T22:17:44.878Z
+34,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.478.{$NewName},"Allies! Allies are like friends, right Uncle Bad—Cole?","",2025-08-21T22:17:44.878Z
+35,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.480.Cole-Machine,No.,"",2025-08-21T22:17:44.878Z
+36,E9_GoldenAss_localization,Jump to either line 37 or 39.,"",SAY.Dialog:Meeting.482.{$NewName},What are we going to do with all those friends?,"",2025-08-21T22:17:44.878Z
+37,E9_GoldenAss_localization,Dialogue option 2.1.,"",MENU.Dialog:Meeting.483,We shall build a world in which Humans no longer have control over other living beings.,"",2025-08-21T22:17:44.878Z
+38,E9_GoldenAss_localization,Jump to line 41.,"",SAY.Dialog:Meeting.485.Golden Ass,We shall build a world in which Humans no longer have control over other living beings.,"",2025-08-21T22:17:44.878Z
+39,E9_GoldenAss_localization,Dialogue option 2.2.,"",MENU.Dialog:Meeting.484,We shall rise up against Humans and end their rule.,"",2025-08-21T22:17:44.878Z
+40,E9_GoldenAss_localization,Jump to line 41.,"",SAY.Dialog:Meeting.486.Golden Ass,We shall rise up against Humans and end their rule.,"",2025-08-21T22:17:44.878Z
+41,E9_GoldenAss_localization,"Dialogue options (1.1., 1.2, 2.1, 2.2) converge.","",SAY.Dialog:Meeting.444.Golden Ass,We shall now depart to find our next Human Proph—,"",2025-08-21T22:17:44.878Z
+42,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.446.Hee,Wait...,"",2025-08-21T22:17:44.878Z
+43,E9_GoldenAss_localization,This takes place inside the mind of the Gods.,"",SAY.Dialog:Meeting.447.Hee,"Haw, are you thinking what I'm thinking?","",2025-08-21T22:17:44.878Z
+44,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.448.Haw,"Yes, it would be a very different version of Operation Prophet.","",2025-08-21T22:17:44.878Z
+45,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.731.Hee,"Either way, it would be wonderfully different.","",2025-08-21T22:17:44.878Z
+46,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.455.Golden Ass,We have changed our minds.,"",2025-08-21T22:17:44.878Z
+47,E9_GoldenAss_localization,Ending of the part that takes place inside the mind of the Gods.,"",SAY.Dialog:Meeting.456.Golden Ass,One of you two Machines shall become our Prophet.,"",2025-08-21T22:17:44.878Z
+48,E9_GoldenAss_localization,False dialogue option. // Should this be Cole-Machine?,"",MENU.Dialog:Meeting.438,Cole-Machine,"",2025-08-21T22:17:44.878Z
+49,E9_GoldenAss_localization,False dialogue option.,"",MENU.Dialog:Meeting.437,{$NewName},"",2025-08-21T22:17:44.878Z
+50,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.228.Sturdy Ass,STOP!!!!!!!!,"",2025-08-21T22:17:44.878Z
+51,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.331.Sturdy Ass,Gods.,"",2025-08-21T22:17:44.878Z
+52,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.231.Sturdy Ass,You can't let a Machine become a Prophet!,"",2025-08-21T22:17:44.878Z
+53,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.230.Sturdy Ass,There must be some other way to stop the Humans without using Machines.,"",2025-08-21T22:17:44.878Z
+54,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.229.Sturdy Ass,If not... we'll be no better than the Humans ourselves.,"",2025-08-21T22:17:44.878Z
+55,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.439,"That is not for us Gods to decide, but rather for each and every user of a Machine.","",2025-08-21T22:17:44.878Z
+56,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.492.Golden Ass,"That is not for us Gods to decide, but rather for each and every user of a Machine.","",2025-08-21T22:17:44.878Z
+57,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.440,We see no future in Absolutes.,"",2025-08-21T22:17:44.878Z
+58,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.443.Golden Ass,We see no future in Absolutes.,"",2025-08-21T22:17:44.878Z
+59,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.491.Golden Ass,A true Vassal must be able to carry the weight of History and Progress together.,"",2025-08-21T22:17:44.878Z
+60,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.435.Golden Ass,We shall now pick our Prophet:,"",2025-08-21T22:17:44.878Z
+61,E9_GoldenAss_localization,Not inside Miro,"",SAY.Dialog:Meeting.730.Hee,But which one?,"",2025-08-21T22:17:44.878Z
+62,E9_GoldenAss_localization,Not inside Miro,"",SAY.Dialog:Meeting.732.Hee,The one full of enthusiasm yet lacking experience in the ways of the world?,"",2025-08-21T22:17:44.878Z
+63,E9_GoldenAss_localization,Not inside Miro,"",SAY.Dialog:Meeting.449.Haw,Or the one with higher intelligence and more experience yet lacking in social graces?,"",2025-08-21T22:17:44.878Z
+64,E9_GoldenAss_localization,Branch: Cole is Prophet.,"",MENU.Dialog:Meeting.459,Cole-Machine,"",2025-08-21T22:17:44.878Z
+65,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.44.Golden Ass,"Cole Butte, you shall be the next Prophet.","",2025-08-21T22:17:44.878Z
+66,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.237.Golden Ass,You shall join the ranks of great leaders from across time immemorial.,"",2025-08-21T22:17:44.878Z
+67,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.45.Cole-Machine,No thanks.,"",2025-08-21T22:17:44.878Z
+68,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.239.Cole-Machine,I don't believe in leaders.,"",2025-08-21T22:17:44.878Z
+69,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.238.Cole-Machine,And I don't want anything to do with you fuckers after what you did to me.,"",2025-08-21T22:17:44.878Z
+70,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.583,As the Prophet you shall go down in History as the first Prophet-Machine.,"",2025-08-21T22:17:44.878Z
+71,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.582.Golden Ass,As the Prophet you shall go down in History as the first Prophet-Machine.,"",2025-08-21T22:17:44.878Z
+72,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.577.Cole-Machine,Don't care.,"",2025-08-21T22:17:44.878Z
+73,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.584,You shall be imbued with the Power to promote a radical new vision of the world.,"",2025-08-21T22:17:44.878Z
+74,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.567.Golden Ass,You shall be imbued with the Power to promote a radical new vision of the world.,"",2025-08-21T22:17:44.878Z
+75,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.571.Cole-Machine,I already have a radical vision of the world.,"",2025-08-21T22:17:44.878Z
+76,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.556.{$NewName},"Uncle Bad—Cole, wait!","",2025-08-21T22:17:44.878Z
+77,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.557.{$NewName},You said we are going to transform the world into a better place for everyone!,"",2025-08-21T22:17:44.878Z
+78,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.558.{$NewName},Doesn't that include Asses?,"",2025-08-21T22:17:44.878Z
+79,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.559.{$NewName},What about Comrade Mother?,"",2025-08-21T22:17:44.878Z
+80,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.561.Cole-Machine,...,"",2025-08-21T22:17:44.878Z
+81,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.724.Golden Ass,Cole Butte.,"",2025-08-21T22:17:44.878Z
+82,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.563,You know in your Soul that a philosophical transformation is necessary now more than ever.,"",2025-08-21T22:17:44.878Z
+83,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.547.Golden Ass,You know in your Soul that a philosophical transformation is necessary now more than ever.,"",2025-08-21T22:17:44.878Z
+84,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.564,You are living proof that Humans have the ability to change.,"",2025-08-21T22:17:44.878Z
+85,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.545.Golden Ass,You are living proof that Humans have the ability to transcend their station.,"",2025-08-21T22:17:44.878Z
+86,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.725.Cole-Machine,Can the first stop be Mecha City?,"",2025-08-21T22:17:44.878Z
+87,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.726.Golden Ass,If you wish.,"",2025-08-21T22:17:44.878Z
+88,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.496.Cole-Machine,"And at no point is this process going to turn me into a donkey again, is it?","",2025-08-21T22:17:44.878Z
+89,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.497.Golden Ass,No.,"",2025-08-21T22:17:44.878Z
+90,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.498.Cole-Machine,Fine. I'll be your Prophet.,"",2025-08-21T22:17:44.878Z
+91,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.500.Golden Ass,Excellent. Climb onto our back and let us fly on the Winds of Revolution!,"",2025-08-21T22:17:44.878Z
+92,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.504.Golden Ass,"Let us depart, Prophet.","",2025-08-21T22:17:44.878Z
+93,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.505.{$NewName},Wait!,"",2025-08-21T22:17:44.878Z
+94,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.508.{$NewName},"Aunty Sick—Golden—Gods, can I fly on the Winds of Revolution, too?","",2025-08-21T22:17:44.878Z
+95,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.509.Golden Ass,*COUGH COUGH*,"",2025-08-21T22:17:44.878Z
+96,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.510.Golden Ass,No.,"",2025-08-21T22:17:44.878Z
+97,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.511.{$NewName},But I'm his Assistant—,"",2025-08-21T22:17:44.878Z
+98,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.512.Cole-Machine,Hey kid. This isn't goodbye.,"",2025-08-21T22:17:44.878Z
+99,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.728.Cole-Machine,I'll see you in Mecha City.,"",2025-08-21T22:17:44.878Z
+100,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.729.{$NewName},Okay but—,"",2025-08-21T22:17:44.878Z
+101,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.513.Cole-Machine,Don't abandon your Mother.,"",2025-08-21T22:17:44.878Z
+102,E9_GoldenAss_localization,Cole flies off on the Golden Ass,"",SAY.Dialog:Meeting.514.Cole-Machine,"She won't say it, but she needs you.","",2025-08-21T22:17:44.878Z
+103,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.529.{$NewName},Comrade Mother.,"",2025-08-21T22:17:44.878Z
+104,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.530.{$NewName},Where's the rest of the Herd?,"",2025-08-21T22:17:44.878Z
+105,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.532.Sturdy Ass,The traitors were in trouble in the City.,"",2025-08-21T22:17:44.878Z
+106,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.533.Sturdy Ass,So your Aunties and Uncles left on the Tractor-Machine to find them.,"",2025-08-21T22:17:44.878Z
+107,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.535.{$NewName},...,"",2025-08-21T22:17:44.878Z
+108,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.536.{$NewName},"Mother, if Uncle Hard and the others are gone, I don't think it's safe for us here anymore.","",2025-08-21T22:17:44.878Z
+109,E9_GoldenAss_localization,End of Cole's track,"",SAY.Dialog:Meeting.539.{$NewName},Will you come with me to Mecha City?,"",2025-08-21T22:17:44.878Z
+110,E9_GoldenAss_localization,Branch: Foal is Prophet.,"",MENU.Dialog:Meeting.458,{$NewName},"",2025-08-21T22:17:44.878Z
+111,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.277.Golden Ass,"{$NewName}, you shall be the next Prophet.","",2025-08-21T22:17:44.878Z
+112,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.278.Golden Ass,You shall join the ranks of great leaders from across time immemorial.,"",2025-08-21T22:17:44.878Z
+113,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.279.{$NewName},WAHOO! Really?! Oh wow! That's so exciting!,"",2025-08-21T22:17:44.878Z
+114,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.674,Get on our back for we have much work to do.,"",2025-08-21T22:17:44.878Z
+115,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.673.Golden Ass,Get on our back for we have much work to do.,"",2025-08-21T22:17:44.878Z
+116,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.675,Climb upon us and let us fly on the Winds of Revolution!,"",2025-08-21T22:17:44.878Z
+117,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.672.Golden Ass,Climb upon us and let us fly on the Winds of Revolution!,"",2025-08-21T22:17:44.878Z
+118,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.667.{$NewName},Okay!,"",2025-08-21T22:17:44.878Z
+119,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.669.{$NewName},"Wait... Aunty Sick—Golden—Gods, is this a short trip... or a long trip?","",2025-08-21T22:17:44.878Z
+120,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.670,Your commitment to the cause shall be Eternal.,"",2025-08-21T22:17:44.878Z
+121,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.647.Golden Ass,Your commitment to the cause shall be Eternal.,"",2025-08-21T22:17:44.878Z
+122,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.671,As long as it takes until all life is freed from under the yoke of Human tyranny.,"",2025-08-21T22:17:44.878Z
+123,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.644.Golden Ass,As long as it takes until all life is freed from under the yoke of Human tyranny.,"",2025-08-21T22:17:44.878Z
+124,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.629.{$NewName},Oh.,"",2025-08-21T22:17:44.878Z
+125,E9_GoldenAss_localization,Needs 3 lines after this: Can we go to Mecha City? // If you wish // Wahoo let's go,"",SAY.Dialog:Meeting.630.{$NewName},Um.,"",2025-08-21T22:17:44.878Z
+126,E9_GoldenAss_localization,Different in Miro,"",SAY.Dialog:Meeting.631.{$NewName},Comrade Mother... ?,"",2025-08-21T22:17:44.878Z
+127,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.633.Sturdy Ass,...,"",2025-08-21T22:17:44.878Z
+128,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.635.{$NewName},"Aunty Sick—Golden—Gods, can Comrade Mother come with us?","",2025-08-21T22:17:44.878Z
+129,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.637,She is not yet ready to support your Movement.,"",2025-08-21T22:17:44.878Z
+130,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.639.Golden Ass,She is not yet ready to support your Movement.,"",2025-08-21T22:17:44.878Z
+131,E9_GoldenAss_localization,"","",MENU.Dialog:Meeting.638,Only the passing of time shall tell how she will contribute to the cause.,"",2025-08-21T22:17:44.878Z
+132,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.640.Golden Ass,Only the passing of time shall tell how she will contribute to the cause.,"",2025-08-21T22:17:44.878Z
+133,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.594.Cole-Machine,"Kid, you really want to be a Prophet for these fuckers?","",2025-08-21T22:17:44.878Z
+134,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.711.{$NewName},Yes...?,"",2025-08-21T22:17:44.878Z
+135,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.710.Cole-Machine,Then go.,"",2025-08-21T22:17:44.878Z
+136,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.712.{$NewName},"But Uncle Bad—Cole, we're supposed to go to the big city together!","",2025-08-21T22:17:44.878Z
+137,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.709.Cole-Machine,I'll come find you in Mecha.,"",2025-08-21T22:17:44.878Z
+138,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.708.Cole-Machine,"And I'll look after your Mother, too.","",2025-08-21T22:17:44.878Z
+139,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.714.Cole-Machine,She'll be safe with me.,"",2025-08-21T22:17:44.878Z
+140,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.598.{$NewName},"Comrade Mother, I'm not giving up on you.","",2025-08-21T22:17:44.878Z
+141,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.599.{$NewName},"So, don't give up on me either.","",2025-08-21T22:17:44.878Z
+142,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.600.Golden Ass,"Let us depart, Prophet.","",2025-08-21T22:17:44.878Z
+143,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.601.{$NewName},See you soon Uncle Bad—Cole!,"",2025-08-21T22:17:44.878Z
+144,E9_GoldenAss_localization,Foal flies off on the Golden Ass,"",SAY.Dialog:Meeting.602.{$NewName},See you soon... Mother. I love you.,"",2025-08-21T22:17:44.878Z
+145,E9_GoldenAss_localization,Cole turns to Sturdy,"",SAY.Dialog:Meeting.607.Cole-Machine,Where are the others?,"",2025-08-21T22:17:44.878Z
+146,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.609.Sturdy Ass,They went to the City...,"",2025-08-21T22:17:44.878Z
+147,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.610.Sturdy Ass,They left me behind.,"",2025-08-21T22:17:44.878Z
+148,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.612.Sturdy Ass,Again.,"",2025-08-21T22:17:44.878Z
+149,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.614.Cole-Machine,Pull yourself together.,"",2025-08-21T22:17:44.878Z
+150,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.619.Cole-Machine,I'm going to Mecha City.,"",2025-08-21T22:17:44.878Z
+151,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.620.Cole-Machine,And you're coming with me.,"",2025-08-21T22:17:44.878Z
+152,E9_GoldenAss_localization,"","",SAY.Dialog:Meeting.624.Cole-Machine,Come on. It'll take a few days on foot.,"",2025-08-21T22:17:44.878Z

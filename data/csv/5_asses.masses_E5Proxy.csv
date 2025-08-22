@@ -1,0 +1,622 @@
+# File: 5_asses.masses_E5Proxy
+# Processed: 2025-08-21T22:17:44.671Z
+# Sheets: 7
+
+RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
+3,E5_Highway_localization,Shouted from off-screen at the top of the scene. The Player then gets control of Slow Ass.,"Afanya't, Coixase!",SAY.Dialog:HurryUp.1.Smart Ass,Hurry up Slow Ass!,"",2025-08-21T22:17:44.671Z
+4,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,Ai... els genolls.,SAY.Dialog:OwMyKnees.1.Slow Ass,Ow... my knees.,"",2025-08-21T22:17:44.671Z
+5,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,Uf...,SAY.Dialog:OwMyKnees.48.Slow Ass,Oof...,"",2025-08-21T22:17:44.671Z
+6,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,Ah... l'artritis!,SAY.Dialog:OwMyKnees.49.Slow Ass,Ah... my arthritis!,"",2025-08-21T22:17:44.671Z
+7,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,*gruny*,SAY.Dialog:OwMyKnees.50.Slow Ass,*grunt*,"",2025-08-21T22:17:44.671Z
+8,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,"Som-hi genolls, ara no em podeu fallar!",SAY.Dialog:OwMyKnees.52.Slow Ass,"C'mon knees, don't fail me now!","",2025-08-21T22:17:44.671Z
+9,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,Soc massa vell per galopar...,SAY.Dialog:OwMyKnees.57.Slow Ass,I'm too old for jumping...,"",2025-08-21T22:17:44.671Z
+10,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,Un pas rere l'altre...,SAY.Dialog:OwMyKnees.54.Slow Ass,One step at a time...,"",2025-08-21T22:17:44.671Z
+11,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,*panteixa*,SAY.Dialog:OwMyKnees.55.Slow Ass,*heavy breathing*,"",2025-08-21T22:17:44.671Z
+12,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,Pobres articulacions.,SAY.Dialog:OwMyKnees.56.Slow Ass,My poor joints.,"",2025-08-21T22:17:44.671Z
+13,E5_Highway_localization,Random efforts from when Slow Ass is walking/jumping.,Ai!!! Quin mal!,SAY.Dialog:OwMyKnees.51.Slow Ass,Ooo the pain!,"",2025-08-21T22:17:44.671Z
+14,E5_Highway_localization,Slow Ass catches up with the rest of the group.,Ei! Per què trigues tant?,SAY.Dialog:ZooOrCircus.21.Smart Ass,Hey! What's taking you so long?,"",2025-08-21T22:17:44.671Z
+15,E5_Highway_localization,Jump to line 16 or 18.,Què us havia dit? Feines!,SAY.Dialog:ZooOrCircus.20.Smart Ass,What did I tell you! Jobs!,"",2025-08-21T22:17:44.671Z
+16,E5_Highway_localization,Branch 1.1. To the Zoo.,Zoo,MENU.Dialog:ZooOrCircus.2,Zoo,"",2025-08-21T22:17:44.671Z
+17,E5_Highway_localization,The Herd runs off. End of scene.,A l'esquerra!,SAY.Dialog:ZooOrCircus.11.Smart Ass,To the left!,"",2025-08-21T22:17:44.671Z
+18,E5_Highway_localization,Branch 1.2. To the Circus.,Circ,MENU.Dialog:ZooOrCircus.3,Circus,"",2025-08-21T22:17:44.671Z
+19,E5_Highway_localization,The Herd runs off. End of scene.,A la dreta!,SAY.Dialog:ZooOrCircus.10.Smart Ass,To the right!,"",2025-08-21T22:17:44.671Z
+2,E5_EpisodeTitle_Circus_localiza,"",EPISODI CINC,WRITE.Dialog:Localizer.5,EPISODE FIVE,"",2025-08-21T22:17:44.671Z
+3,E5_EpisodeTitle_Circus_localiza,"",EL CIRC,WRITE.Dialog:Localizer.7,THE CIRCUS,"",2025-08-21T22:17:44.671Z
+4,E5_EpisodeTitle_Circus_localiza,"",Prem X per començar,WRITE.Dialog:Localizer.8,Press X to Begin,"",2025-08-21T22:17:44.671Z
+3,E5_CircusMain_localization,"",6 mesos després,WRITE.Dialog:Localizer.1,6 months later,"",2025-08-21T22:17:44.671Z
+4,E5_CircusMain_localization,"",ACTE U,WRITE.Dialog:Localizer.2,ACT ONE,"",2025-08-21T22:17:44.671Z
+5,E5_CircusMain_localization,"",ACTE DOS,WRITE.Dialog:Localizer.3,ACT TWO,"",2025-08-21T22:17:44.671Z
+6,E5_CircusMain_localization,"",ACTE TRES,WRITE.Dialog:Localizer.4,ACT THREE,"",2025-08-21T22:17:44.671Z
+7,E5_CircusMain_localization,"",ACTE QUATRE,WRITE.Dialog:Localizer.5,ACT FOUR,"",2025-08-21T22:17:44.671Z
+8,E5_CircusMain_localization,"",ACTE CINC,WRITE.Dialog:Localizer.6,ACT FIVE,"",2025-08-21T22:17:44.671Z
+9,E5_CircusMain_localization,Rico introduces the Circus show,"Benvinguts, senyores i senyors, al GRAN CIRC DE LA CIUTAT!",SAY.Dialog:RingmasterOpening.1.Ringmaster Rico,Welcome one and all to THE BIG CITY CIRCUS!,"",2025-08-21T22:17:44.671Z
+10,E5_CircusMain_localization,"",On l'entreteniment es torna animal... els animals es tornen art...,SAY.Dialog:RingmasterOpening.38.Ringmaster Rico,Where entertainment meets exotic animals... exotic animals meet art...,"",2025-08-21T22:17:44.671Z
+11,E5_CircusMain_localization,"",...i l'art es torna...,SAY.Dialog:RingmasterOpening.37.Ringmaster Rico,...and art meets...,"",2025-08-21T22:17:44.671Z
+12,E5_CircusMain_localization,"",FOC!,SAY.Dialog:RingmasterOpening.104.Ringmaster Rico,FIRE!,"",2025-08-21T22:17:44.671Z
+13,E5_CircusMain_localization,"","Quina nit, quina nit que us espera amb l'ESPECTACLE que us hem preparat!",SAY.Dialog:RingmasterOpening.41.Ringmaster Rico,Boy-oh-boy do we have a show for you TONIGHT!,"",2025-08-21T22:17:44.671Z
+14,E5_CircusMain_localization,"",Serà participatiu?,SAY.Dialog:RingmasterOpening.40.Ringmaster Rico,Will it be participatory?,"",2025-08-21T22:17:44.671Z
+15,E5_CircusMain_localization,"",Sí!,SAY.Dialog:RingmasterOpening.57.Ringmaster Rico,Yes!,"",2025-08-21T22:17:44.671Z
+16,E5_CircusMain_localization,"",Serà perillós?,SAY.Dialog:RingmasterOpening.56.Ringmaster Rico,Will it be dangerous?,"",2025-08-21T22:17:44.671Z
+17,E5_CircusMain_localization,"",Sí!,SAY.Dialog:RingmasterOpening.58.Ringmaster Rico,Yes!,"",2025-08-21T22:17:44.671Z
+18,E5_CircusMain_localization,"",Hi haurà un descans?,SAY.Dialog:RingmasterOpening.54.Ringmaster Rico,Will there be an intermission?,"",2025-08-21T22:17:44.671Z
+19,E5_CircusMain_localization,"",NI PENSAR-HO!,SAY.Dialog:RingmasterOpening.130.Ringmaster Rico,Not on your LIFE!,"",2025-08-21T22:17:44.671Z
+20,E5_CircusMain_localization,"",Però podeu comprar crispetes a l'entrada!,SAY.Dialog:RingmasterOpening.131.Ringmaster Rico,But we are selling popcorn in the lobby!,"",2025-08-21T22:17:44.671Z
+21,E5_CircusMain_localization,"","Els actes que esteu a punt de present seran cada cop més espectaculars, més arriscats, més esfereïdors!",SAY.Dialog:RingmasterOpening.60.Ringmaster Rico,"The acts you'll see tonight will each be more visually spectacular, more death-defying, more baffling than the last!","",2025-08-21T22:17:44.671Z
+22,E5_CircusMain_localization,"","Amb tots vostès, aquesta nit tenim un elenc d'animals exòtics que han NASCUT per a la pista.",SAY.Dialog:RingmasterOpening.67.Ringmaster Rico,Performing for you is a cast of exotic animals who were BORN for the stage.,"",2025-08-21T22:17:44.671Z
+23,E5_CircusMain_localization,"","Estan preparats, NO, estan DESESPERATS per entretenir-vos!",SAY.Dialog:RingmasterOpening.66.Ringmaster Rico,"They want, NAY, they LIVE to entertain you!","",2025-08-21T22:17:44.671Z
+24,E5_CircusMain_localization,"",Estan FAMÈLICS dels vostres aplaudiments!,SAY.Dialog:RingmasterOpening.65.Ringmaster Rico,They're HUNGRY for your applause!,"",2025-08-21T22:17:44.671Z
+25,E5_CircusMain_localization,"","MALEÏT SIA, els hi va la feina!",SAY.Dialog:RingmasterOpening.64.Ringmaster Rico,"HELL, their jobs depend on it!","",2025-08-21T22:17:44.671Z
+26,E5_CircusMain_localization,"","I parlant de feines, ningú seria aquí aquesta nit si no fos per la nostra patrocinadora...",SAY.Dialog:RingmasterOpening.70.Ringmaster Rico,"And speaking of jobs, none of us would be here tonight if it weren't for our sponsor...","",2025-08-21T22:17:44.671Z
+27,E5_CircusMain_localization,"","La benefactora més altruista de Tecnolona, Madame Paner!",SAY.Dialog:RingmasterOpening.159.Ringmaster Rico,"Mecha City's most benevolent benefactor, Mme. Derriere!","",2025-08-21T22:17:44.671Z
+28,E5_CircusMain_localization,"",Que senti els nostres aplaudiments!,SAY.Dialog:RingmasterOpening.158.Ringmaster Rico,Let's give her a round of applause!,"",2025-08-21T22:17:44.671Z
+29,E5_CircusMain_localization,"",I A MÉS! Al final de l'espectacle d'avui us podré donar una gran notícia...,SAY.Dialog:RingmasterOpening.135.Ringmaster Rico,ALSO! I have a very big announcement at the end of tonight's show...,"",2025-08-21T22:17:44.671Z
+30,E5_CircusMain_localization,"",Així que no us despisteu!,SAY.Dialog:RingmasterOpening.136.Ringmaster Rico,So stay tuned!,"",2025-08-21T22:17:44.671Z
+31,E5_CircusMain_localization,"",El nostre PRIMER NÚMERO ve directament de la Sabana!,SAY.Dialog:RingmasterOpening.69.Ringmaster Rico,Our FIRST ACT comes to you from the grassy plains of the Savannah!,"",2025-08-21T22:17:44.671Z
+32,E5_CircusMain_localization,"",Us demano un fort aplaudiment per...,SAY.Dialog:RingmasterOpening.74.Ringmaster Rico,Please give a big round of applause for...,"",2025-08-21T22:17:44.671Z
+33,E5_CircusMain_localization,"The Player gains control of the Elephant.
+After the mini-game, the dialogue jumps to either line 35 or 47.","...ELI, L'ELEFANT L'AFRICÀ!",SAY.Dialog:RingmasterOpening.29.Ringmaster Rico,...ELI THE AFRICAN ELEPHANT!,"",2025-08-21T22:17:44.671Z
+34,E5_CircusMain_localization,This dialogue is said if the Elephant tries to the go the wrong way,La pista no és cap aquí...,SAY.Dialog:ElephantWrongWay.1.Elephant,This isn't the way to the stage...,"",2025-08-21T22:17:44.671Z
+35,E5_CircusMain_localization,"After the Elephant's section, Rico reviews the performance.
+This is if the Elephant gave a BAD show.","",SAY.Dialog:RicoGoodOrPoor.35.Ringmaster Rico,Give a polite round of applause for Eli the Elephant who...,"",2025-08-21T22:17:44.671Z
+36,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.199.Ringmaster Rico,"...tried their best to roll with it, but didn't quite fill the stage.","",2025-08-21T22:17:44.671Z
+37,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.198.Audience Member Laurel,That elephant seemed kind of small...,"",2025-08-21T22:17:44.671Z
+38,E5_CircusMain_localization,Formerly: That's what you get when you pay your performers peanuts!,"",SAY.Dialog:RicoGoodOrPoor.197.Ringmaster Rico,What do you expect when your performer only wants to be paid peanuts?,"",2025-08-21T22:17:44.671Z
+39,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.196.Ringmaster Rico,"But seriously folks, these animals have traveled a long way to get here.","",2025-08-21T22:17:44.671Z
+40,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.195.Ringmaster Rico,They've been rehearsing non-stop for months to bring you a great show...so be KIND.,"",2025-08-21T22:17:44.671Z
+41,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.194.Ringmaster Rico,It's tough being the one in the spotlight.,"",2025-08-21T22:17:44.671Z
+42,E5_CircusMain_localization,"The Elephant goes back stage.
+This is the version of dialogue following a BAD performance.","",SAY.Dialog:BackstageElephant.104.Smart Ass,What kind of lead-in was that?!,"",2025-08-21T22:17:44.671Z
+43,E5_CircusMain_localization,"","",SAY.Dialog:BackstageElephant.117.Big Ass,"Even after all that rehearsing, the audience sure knows how to make you feel small.","",2025-08-21T22:17:44.671Z
+44,E5_CircusMain_localization,"","",SAY.Dialog:BackstageElephant.116.Smart Ass,Ha! Let me show you how it's done...,"",2025-08-21T22:17:44.671Z
+45,E5_CircusMain_localization,"","",SAY.Dialog:BackstageElephant.111.Smart Ass,"Once the crowd sees my routine, the Ringmaster is sure to announce a World Tour!","",2025-08-21T22:17:44.671Z
+46,E5_CircusMain_localization,Player gains control of the Gorilla.,"",SAY.Dialog:BackstageElephant.114.Big Ass,Don't keep them waiting!,"",2025-08-21T22:17:44.671Z
+47,E5_CircusMain_localization,"After the Elephant's section, Rico reviews the performance.
+This is if the Elephant gave a GOOD show.","",SAY.Dialog:RicoGoodOrPoor.188.Ringmaster Rico,Wow—what a COLOSSAL feat!,"",2025-08-21T22:17:44.671Z
+48,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.290.Ringmaster Rico,A JUMBO serving of entertainment!,"",2025-08-21T22:17:44.671Z
+49,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.186.Ringmaster Rico,That was one helluva SHOW.,"",2025-08-21T22:17:44.671Z
+50,E5_CircusMain_localization,"",És VERITAT O NO?!,SAY.Dialog:RicoGoodOrPoor.291.Ringmaster Rico,Am I RIGHT?!,"",2025-08-21T22:17:44.671Z
+51,E5_CircusMain_localization,"",És VERITAT!,SAY.Dialog:RicoGoodOrPoor.192.Audience Member Laurel,You're RIGHT!,"",2025-08-21T22:17:44.671Z
+52,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.185.Ringmaster Rico,These animals have traveled a long way to get here.,"",2025-08-21T22:17:44.671Z
+53,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.191.Ringmaster Rico,They've been rehearsing non-stop for months—and it shows!,"",2025-08-21T22:17:44.671Z
+54,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.34.Ringmaster Rico,They deserve to be in the spotlight.,"",2025-08-21T22:17:44.671Z
+55,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.190.Ringmaster Rico,And so do I!,"",2025-08-21T22:17:44.671Z
+56,E5_CircusMain_localization,"The Elephant goes back stage.
+This is the version of dialogue following a GOOD performance.","",SAY.Dialog:BackstageElephant.113.Smart Ass,Tonight's crowd is easy!,"",2025-08-21T22:17:44.671Z
+57,E5_CircusMain_localization,"","",SAY.Dialog:BackstageElephant.112.Big Ass,It's thanks to all the rehearsing we've been doing.,"",2025-08-21T22:17:44.671Z
+58,E5_CircusMain_localization,"","",SAY.Dialog:BackstageElephant.115.Smart Ass,"Once the crowd sees my routine, the Ringmaster is sure to announce a World Tour!","",2025-08-21T22:17:44.671Z
+59,E5_CircusMain_localization,Player gains control of the Gorilla.,"",SAY.Dialog:BackstageElephant.118.Big Ass,Don't keep them waiting!,"",2025-08-21T22:17:44.671Z
+60,E5_CircusMain_localization,Elephant repeater.,"",SAY.Dialog:BackstageElephant.94.Big Ass,Now is not the time to get stage fright!,"",2025-08-21T22:17:44.671Z
+61,E5_CircusMain_localization,Back on stage: Rico introduces the Gorilla,"",SAY.Dialog:RicoIntroductions.44.Ringmaster Rico,Alright... enough monkeying around...,"",2025-08-21T22:17:44.671Z
+62,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.49.Ringmaster Rico,Let's bring out the next act!,"",2025-08-21T22:17:44.671Z
+63,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.48.Ringmaster Rico,You'll be astounded at how intelligent she is.,"",2025-08-21T22:17:44.671Z
+64,E5_CircusMain_localization,"",El seu DNA és 95% HUMÀ i 5% PURA MÀGIA... i obeeix les ordres com una professional!,SAY.Dialog:RicoIntroductions.51.Ringmaster Rico,Her DNA is 95% HUMAN and 5% MAGIC... and she takes direction like a champ!,"",2025-08-21T22:17:44.671Z
+65,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.50.Ringmaster Rico,From deep in the misty rainforests of the Congo—,"",2025-08-21T22:17:44.671Z
+66,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.45.Ringmaster Rico,Give me two opposable thumbs up for...,"",2025-08-21T22:17:44.671Z
+67,E5_CircusMain_localization,"The Player gains control of the Gorilla again.
+After the mini-game, the dialogue jumps to either line 68 or 81.","GLÒRIA, LA GORIL·LA!",SAY.Dialog:RicoIntroductions.55.Ringmaster Rico,QUEENIE THE GORILLA!,"",2025-08-21T22:17:44.671Z
+68,E5_CircusMain_localization,"After the Gorilla's section, Rico reviews the performance.
+This is if the Gorilla gave a BAD show.","",SAY.Dialog:RicoGoodOrPoor.55.Ringmaster Rico,"Okay, okay, sometimes live acts can get a little hairy.","",2025-08-21T22:17:44.671Z
+69,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.218.Ringmaster Rico,Not everyone has the ape-titude to be a star!,"",2025-08-21T22:17:44.671Z
+70,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.216.Audience Member David,I want my money back!,"",2025-08-21T22:17:44.671Z
+71,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.222.Ringmaster Rico,No refunds! You won't be getting your silver back!,"",2025-08-21T22:17:44.671Z
+72,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.221.Audience Member David,Then we're leaving!,"",2025-08-21T22:17:44.671Z
+73,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.220.Ringmaster Rico,Don't leave! I guarantee our next few acts will be more bearable!,"",2025-08-21T22:17:44.671Z
+74,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.215.Ringmaster Rico,...and I'm not lyin' about the big finale!,"",2025-08-21T22:17:44.671Z
+75,E5_CircusMain_localization,"The Gorilla goes back stage.
+This is the version of dialogue following a BAD performance.","",SAY.Dialog:BackstageGorilla.108.Kick Ass,What HAPPENED out there?!,"",2025-08-21T22:17:44.671Z
+76,E5_CircusMain_localization,"","",SAY.Dialog:BackstageGorilla.131.Smart Ass,The stupid audience just doesn't appreciate my talents!,"",2025-08-21T22:17:44.671Z
+77,E5_CircusMain_localization,"","",SAY.Dialog:BackstageGorilla.130.Kick Ass,Were there any presenters in the audience?,"",2025-08-21T22:17:44.671Z
+78,E5_CircusMain_localization,"","",SAY.Dialog:BackstageGorilla.129.Kick Ass,"You know, for THE TOUR?","",2025-08-21T22:17:44.671Z
+79,E5_CircusMain_localization,"","",SAY.Dialog:BackstageGorilla.128.Smart Ass,New plan!,"",2025-08-21T22:17:44.671Z
+80,E5_CircusMain_localization,Player gains control of the Zebra.,"",SAY.Dialog:BackstageGorilla.133.Smart Ass,Just get out there and dazzle them!,"",2025-08-21T22:17:44.671Z
+81,E5_CircusMain_localization,"After the Gorilla's section, Rico reviews the performance.
+This is if the Gorilla gave a GOOD show.","",SAY.Dialog:RicoGoodOrPoor.52.Ringmaster Rico,What APE-TITUDE under such HAIRY circumstances!,"",2025-08-21T22:17:44.671Z
+82,E5_CircusMain_localization,"",La GLÒRIA és una estrella!,SAY.Dialog:RicoGoodOrPoor.210.Audience Member David,QUEENIE is a star!,"",2025-08-21T22:17:44.671Z
+83,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.206.Ringmaster Rico,"What am I, chopped liver?","",2025-08-21T22:17:44.671Z
+84,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.213.Ringmaster Rico,"But it's true, these animals are something special.","",2025-08-21T22:17:44.671Z
+85,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.212.Ringmaster Rico,...and they make me look good!,"",2025-08-21T22:17:44.671Z
+86,E5_CircusMain_localization,"",Ho has sentit?! El públic T'ADORA!,SAY.Dialog:BackstageGorilla.115.Kick Ass,You hear that?! They LOVED YOU!,"",2025-08-21T22:17:44.671Z
+87,E5_CircusMain_localization,"","",SAY.Dialog:BackstageGorilla.123.Smart Ass,You can say that again!,"",2025-08-21T22:17:44.671Z
+88,E5_CircusMain_localization,"",Hi deu haver algun programador a la sala?,SAY.Dialog:BackstageGorilla.121.Kick Ass,Do you think there were any presenters in the audience?,"",2025-08-21T22:17:44.671Z
+89,E5_CircusMain_localization,"",Crec que sí!,SAY.Dialog:BackstageGorilla.126.Smart Ass,I think so!,"",2025-08-21T22:17:44.671Z
+90,E5_CircusMain_localization,"",A la primera fila hi havia dos Humans amb barrets negres que no m'han tret l'ull de sobre!,SAY.Dialog:BackstageGorilla.125.Smart Ass,There were two Humans in the front row with dark hats who couldn't take their eyes off me!,"",2025-08-21T22:17:44.671Z
+91,E5_CircusMain_localization,Player gains control of the Zebra.,Ha ha! Bona sort després del meu número!,SAY.Dialog:BackstageGorilla.124.Smart Ass,Ha ha! Good luck following my act!,"",2025-08-21T22:17:44.671Z
+92,E5_CircusMain_localization,Gorilla repeater.,Necessitem que aplaudeixin!,SAY.Dialog:BackstageGorilla.101.Smart Ass,We need that applause!,"",2025-08-21T22:17:44.671Z
+93,E5_CircusMain_localization,Back on stage: Rico introduces the Zebra.,El que veuran a continuació és una bèstia magnífica de l'Orient Llunyà.,SAY.Dialog:RicoIntroductions.62.Ringmaster Rico,This next act is a majestic beast from the Far East.,"",2025-08-21T22:17:44.671Z
+94,E5_CircusMain_localization,"","Que no hi hagi Kung-fu-sions, ningú té un equilibri millor entre habilitat i velocitat!",SAY.Dialog:RicoIntroductions.65.Ringmaster Rico,"Let there be no Kung-Fu-sion, no one balances skill and speed quite like him!","",2025-08-21T22:17:44.671Z
+95,E5_CircusMain_localization,"The Player gains control of the Zebra again.
+After the mini-game, the dialogue jumps to either line 95 or 113.","Que entri a la pista YINYANG, la ZEBRA XINESA!!",SAY.Dialog:RicoIntroductions.56.Ringmaster Rico,Welcome to the stage YINYANG THE CHINESE ZEBRA!!,"",2025-08-21T22:17:44.671Z
+96,E5_CircusMain_localization,"After the Zebra's section, Rico reviews the performance.
+This is if the Zebra gave a BAD show.",*Uf*,SAY.Dialog:RicoGoodOrPoor.70.Ringmaster Rico,*Oof*,"",2025-08-21T22:17:44.671Z
+97,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.227.Ringmaster Rico,We weren't in balance today...,"",2025-08-21T22:17:44.671Z
+98,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.293.Ringmaster Rico,"But sometimes, disasters turn out to be blessings!","",2025-08-21T22:17:44.671Z
+99,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.226.Audience Members Patrick & Milton,We're confused!,"",2025-08-21T22:17:44.671Z
+100,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.225.Ringmaster Rico,Come on folks! That's the risk of live performance: you never know what will happen...,"",2025-08-21T22:17:44.671Z
+101,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.224.Ringmaster Rico,... and it could have been worse!,"",2025-08-21T22:17:44.671Z
+102,E5_CircusMain_localization,"The Gorilla goes back stage.
+This is the version of dialogue following a BAD performance.","",SAY.Dialog:BackstageZebra.165.Kick Ass,Some of my paint RUBBED OFF!,"",2025-08-21T22:17:44.671Z
+103,E5_CircusMain_localization,"",@#$%&!,SAY.Dialog:BackstageZebra.156.Kick Ass,@#$%&!,"",2025-08-21T22:17:44.671Z
+104,E5_CircusMain_localization,"",Estàs de conya?!,SAY.Dialog:BackstageZebra.129.Smart Ass,Are you joking?!,"",2025-08-21T22:17:44.671Z
+105,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.163.Smart Ass,Did you forget that keeping up this act means keeping ourselves employed?,"",2025-08-21T22:17:44.671Z
+106,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.169.Smart Ass,Finding another job with no Machines isn't going to be easy.,"",2025-08-21T22:17:44.671Z
+107,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.168.Kick Ass,The Humans would like us JUST THE SAME if we performed as ourselves.,"",2025-08-21T22:17:44.671Z
+108,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.167.Smart Ass,Ha! Not a chance!,"",2025-08-21T22:17:44.671Z
+109,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.170.Smart Ass,"Our job is to create magic and illusion, not authenticity!","",2025-08-21T22:17:44.671Z
+110,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.162.Big Ass,Is it problematic that Kick is appropriating a Zebra's stripes? Isn't it a little bit rac—?,"",2025-08-21T22:17:44.671Z
+111,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.171.Smart Ass,—Does it look like there's a real Zebra around here anywhere?,"",2025-08-21T22:17:44.671Z
+112,E5_CircusMain_localization,"",No.,SAY.Dialog:BackstageZebra.174.Smart Ass,No.,"",2025-08-21T22:17:44.671Z
+113,E5_CircusMain_localization,Jump to either line 113 or x (skipping Bear).,"",SAY.Dialog:BackstageZebra.173.Smart Ass,"And if there was, Kick Ass wouldn't have a role in the ensemble.","",2025-08-21T22:17:44.671Z
+114,E5_CircusMain_localization,"Branch (BAD Performance Version): 
+If Sad left the Farm, Sad Ass enters.","",SAY.Dialog:BackstageZebra.185.Sad Ass,...I'm not sure real Bears ride bicycles though...,"",2025-08-21T22:17:44.671Z
+115,E5_CircusMain_localization,Player gains control of the Bear.,"",SAY.Dialog:BackstageZebra.198.Smart Ass,Ha! Of course they do! Now get out there!,"",2025-08-21T22:17:44.671Z
+116,E5_CircusMain_localization,"After the Zebra's section, Rico reviews the performance.
+This is if the Zebra gave a GOOD show.","",SAY.Dialog:RicoGoodOrPoor.67.Ringmaster Rico,What a RUSH! What a HIGH!,"",2025-08-21T22:17:44.671Z
+117,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.292.Ringmaster Rico,You saw it here tonight folks!,"",2025-08-21T22:17:44.671Z
+118,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.231.Ringmaster Rico,"We're blurring the lines between theatre, dance, and circus!","",2025-08-21T22:17:44.671Z
+119,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.233.Ringmaster Rico,We are INTERDISCIPLINARY!,"",2025-08-21T22:17:44.671Z
+120,E5_CircusMain_localization,Player gains control of the Zebra.,"",SAY.Dialog:RicoGoodOrPoor.240.Ringmaster Rico,...and it only gets better!,"",2025-08-21T22:17:44.671Z
+121,E5_CircusMain_localization,"The Zebra goes back stage.
+This is the version of dialogue following a GOOD performance.","",SAY.Dialog:BackstageZebra.128.Big Ass,Your duet with the Ringmaster brought tears to my eyes!,"",2025-08-21T22:17:44.671Z
+122,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.153.Kick Ass,WE NAILED IT!,"",2025-08-21T22:17:44.671Z
+123,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.152.Big Ass,"Oooooo I can't wait to go on tour! Bigger crowds, cushier dressing rooms...","",2025-08-21T22:17:44.671Z
+124,E5_CircusMain_localization,"",—i millor vestuari!,SAY.Dialog:BackstageZebra.151.Kick Ass,—and better costumes!,"",2025-08-21T22:17:44.671Z
+125,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.194.Kick Ass,This paint is making me so DAMN ITCHY!,"",2025-08-21T22:17:44.671Z
+126,E5_CircusMain_localization,"",@#$%&!,SAY.Dialog:BackstageZebra.196.Kick Ass,@#$%&!,"",2025-08-21T22:17:44.671Z
+127,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.155.Big Ass,And I'm outgrowing my Elephant suit...,"",2025-08-21T22:17:44.671Z
+128,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.154.Smart Ass,Then stop eating so much!,"",2025-08-21T22:17:44.671Z
+129,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.159.Smart Ass,Keeping up this act means keeping ourselves employed!,"",2025-08-21T22:17:44.671Z
+130,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.195.Smart Ass,We have it good here!,"",2025-08-21T22:17:44.671Z
+131,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.241.Smart Ass,Finding another job with no Machines isn't going to be easy.,"",2025-08-21T22:17:44.671Z
+132,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.160.Kick Ass,You're right—this is the BEST job—we've EVER had!,"",2025-08-21T22:17:44.671Z
+133,E5_CircusMain_localization,Jump to either line 133 or x (skipping Bear).,"",SAY.Dialog:BackstageZebra.158.Big Ass,We've finally found a place to work where we all fit in.,"",2025-08-21T22:17:44.671Z
+134,E5_CircusMain_localization,"Branch (Good Performance Version): 
+If Sad left the Farm, Sad Ass enters.","",SAY.Dialog:BackstageZebra.183.Sad Ass,Says all of you who don't have to ride a bicycle...,"",2025-08-21T22:17:44.671Z
+135,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.136.Kick Ass,We believe IN YOU!,"",2025-08-21T22:17:44.671Z
+136,E5_CircusMain_localization,Player gains control of the Bear.,"",SAY.Dialog:BackstageZebra.137.Big Ass,Go show the crowd your cool moves Sad!,"",2025-08-21T22:17:44.671Z
+137,E5_CircusMain_localization,Zebra repeater.,Tu POTS!,SAY.Dialog:BackstageZebra.102.Kick Ass,You can DO IT!,"",2025-08-21T22:17:44.671Z
+138,E5_CircusMain_localization,Back on stage: Rico introduces the Bear.,"",SAY.Dialog:RicoIntroductions.72.Ringmaster Rico,Our next performer is done with hibernating backstage and ready to spring into action!,"",2025-08-21T22:17:44.671Z
+139,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.17.Ringmaster Rico,"All the way from the Russian Tundra, give a globally warm welcome to my bike-riding Bolshevik—","",2025-08-21T22:17:44.671Z
+140,E5_CircusMain_localization,"The Player gains control of the Bear again.
+After the mini-game, the dialogue jumps to either line s or d.","TXÉKHOV, L'OS BRU DE KAMTXATKA!",SAY.Dialog:RicoIntroductions.97.Ringmaster Rico,CHEKHOV THE KAMCHATKA BROWN BEAR!,"",2025-08-21T22:17:44.671Z
+141,E5_CircusMain_localization,"After the Bear's section, Rico reviews the performance.
+This is if the Bear gave a BAD show.","",SAY.Dialog:RicoGoodOrPoor.86.Ringmaster Rico,Let's take a moment to pause and reflect on that act before we shift gears...,"",2025-08-21T22:17:44.671Z
+142,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.261.Ringmaster Rico,Let me be real with you—the next animal is not what it seems...,"",2025-08-21T22:17:44.671Z
+143,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.260.Ringmaster Rico,It's even BETTER!,"",2025-08-21T22:17:44.671Z
+144,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.259.Ringmaster Rico,"And after our next and final act, you'll get my big announcement!\n","",2025-08-21T22:17:44.671Z
+145,E5_CircusMain_localization,"The Bear goes back stage.
+This is the version of dialogue following a BAD performance.","",SAY.Dialog:BackstageBear.114.Big Ass,"Don't beat yourself up Sad, the bike was a late addition, you haven't had a lot of time to practice.","",2025-08-21T22:17:44.671Z
+146,E5_CircusMain_localization,"","",SAY.Dialog:BackstageBear.122.Sad Ass,... I'm not made to ride a bike...,"",2025-08-21T22:17:44.671Z
+147,E5_CircusMain_localization,"","",SAY.Dialog:BackstageBear.125.Sad Ass,"I don't want to derail the show, but it troubles me that I haven't found my talent yet...","",2025-08-21T22:17:44.671Z
+148,E5_CircusMain_localization,"","",SAY.Dialog:BackstageBear.124.Sad Ass,... maybe tomorrow I can try the Seal act again...,"",2025-08-21T22:17:44.671Z
+149,E5_CircusMain_localization,"","",SAY.Dialog:BackstageBear.123.Kick Ass,"You know Sad, you can't keep trying to be a different animal EVERY night.","",2025-08-21T22:17:44.671Z
+150,E5_CircusMain_localization,"","",SAY.Dialog:BackstageBear.121.Smart Ass,Where the hell is Slow?!,"",2025-08-21T22:17:44.671Z
+151,E5_CircusMain_localization,Jump to line x.,"",SAY.Dialog:BackstageBear.188.Smart Ass,"It's time for the Finale!! If he screws this up for me, I'm going to—","",2025-08-21T22:17:44.671Z
+152,E5_CircusMain_localization,"After the Bear's section, Rico reviews the performance.
+This is if the Bear gave a GOOD show.","",SAY.Dialog:RicoGoodOrPoor.83.Ringmaster Rico,My head is spinning—with how great that act was!,"",2025-08-21T22:17:44.671Z
+153,E5_CircusMain_localization,"",Gairebé no puc sentir-vos—us demano un nou aplaudiment per TXÉKHOV!,SAY.Dialog:RicoGoodOrPoor.294.Ringmaster Rico,I can barely hear you—give me another round of applause for CHEKHOV!,"",2025-08-21T22:17:44.671Z
+154,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.244.Ringmaster Rico,"Even though every animal is different, under the spotlight they are all the same...","",2025-08-21T22:17:44.671Z
+155,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.243.Ringmaster Rico,—STARS!,"",2025-08-21T22:17:44.671Z
+156,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.250.Ringmaster Rico,"Bear with us folks! After the next and final act, you'll get my big announcement!","",2025-08-21T22:17:44.671Z
+157,E5_CircusMain_localization,"The Bear goes back stage.
+This is the version of dialogue following a GOOD performance.","",SAY.Dialog:BackstageBear.113.Kick Ass,Sad!! Your bike routine is OFF THE CHAIN!,"",2025-08-21T22:17:44.671Z
+158,E5_CircusMain_localization,"","",SAY.Dialog:BackstageBear.128.Sad Ass,Thanks... I've really got a handle on it now.,"",2025-08-21T22:17:44.671Z
+159,E5_CircusMain_localization,"","...sabeu, estic molt content d'haver vingut amb vosaltres, Camarades...",SAY.Dialog:BackstageBear.131.Sad Ass,"...you know, I'm really glad I came with you, Comrades...","",2025-08-21T22:17:44.671Z
+160,E5_CircusMain_localization,"",Ha! 'Camarada'?,SAY.Dialog:BackstageBear.130.Smart Ass,Ha! 'Comrade'?,"",2025-08-21T22:17:44.671Z
+161,E5_CircusMain_localization,"",Crec que ara mateix som MÉS que Camarades!,SAY.Dialog:BackstageBear.187.Kick Ass,I think we're MORE than Comrades now!,"",2025-08-21T22:17:44.671Z
+162,E5_CircusMain_localization,"",Estem més units que mai. Som una COMPANYIA!,SAY.Dialog:BackstageBear.129.Big Ass,We're closer than ever. We're an ENSEMBLE!,"",2025-08-21T22:17:44.671Z
+163,E5_CircusMain_localization,"",¿Això que sento és...,SAY.Dialog:BackstageBear.127.Sad Ass,Is this what it feels like...,"",2025-08-21T22:17:44.671Z
+164,E5_CircusMain_localization,Jump to line x.,...felicitat?,SAY.Dialog:BackstageBear.132.Sad Ass,...to be happy?,"",2025-08-21T22:17:44.671Z
+165,E5_CircusMain_localization,Slow Ass arrives dressed as a Lion.,"P-p-perdó, arribo t-tard.",SAY.Dialog:BackstageBear.137.Slow Ass,Sorry I'm late.,"",2025-08-21T22:17:44.671Z
+166,E5_CircusMain_localization,"",He t-t-trigat hores a p-p-posar-me la disfressa...,SAY.Dialog:BackstageBear.149.Slow Ass,This costume takes forever to p-p-put on...,"",2025-08-21T22:17:44.671Z
+167,E5_CircusMain_localization,"","",SAY.Dialog:BackstageBear.150.Slow Ass,*huff p-p-puff* I'm p-p-pouring sweat from the adrenaline already...,"",2025-08-21T22:17:44.671Z
+168,E5_CircusMain_localization,"","",SAY.Dialog:BackstageBear.180.Smart Ass,The Ringmaster can't afford to keep buying you new costumes before we go on Tour.,"",2025-08-21T22:17:44.671Z
+169,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.178.Smart Ass,SO DON'T TOUCH THE FIRE!,"",2025-08-21T22:17:44.671Z
+170,E5_CircusMain_localization,"",*inhala*,SAY.Dialog:BackstageBear.183.Slow Ass,*inhale*,"",2025-08-21T22:17:44.671Z
+171,E5_CircusMain_localization,"",*exhala*,SAY.Dialog:BackstageBear.184.Slow Ass,*exhale*,"",2025-08-21T22:17:44.671Z
+172,E5_CircusMain_localization,Jump to line x.,"",SAY.Dialog:BackstageBear.189.Smart Ass,Slow Ass! Get out there or I'll rip you a new one!,"",2025-08-21T22:17:44.671Z
+173,E5_CircusMain_localization,"If Bear was played, final line: Said to Slow Ass.","",SAY.Dialog:BackstageBear.103.Smart Ass,Get your butt out there or I'll rip you a new one!!,"",2025-08-21T22:17:44.671Z
+174,E5_CircusMain_localization,"If Sad Ass is not present, a copy of the above dialog plays out.","P-p-perdó, arribo t-tard.",SAY.Dialog:BackstageZebra.110.Slow Ass,Sorry I'm late.,"",2025-08-21T22:17:44.671Z
+175,E5_CircusMain_localization,"",He t-t-trigat hores a p-p-posar-me la disfressa...,SAY.Dialog:BackstageZebra.148.Slow Ass,This costume takes forever to p-p-put on...,"",2025-08-21T22:17:44.671Z
+176,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.147.Slow Ass,*huff p-p-puff* I'm p-p-pouring sweat from the adrenaline already...,"",2025-08-21T22:17:44.671Z
+177,E5_CircusMain_localization,"","",SAY.Dialog:BackstageZebra.199.Smart Ass,The Ringmaster can't afford to keep buying you new costumes before we go on Tour.,"",2025-08-21T22:17:44.671Z
+178,E5_CircusMain_localization,"","",SAY.Dialog:BackstageBear.182.Smart Ass,SO DON'T TOUCH THE FIRE!,"",2025-08-21T22:17:44.671Z
+179,E5_CircusMain_localization,"",*inhala*,SAY.Dialog:BackstageZebra.182.Slow Ass,*inhale*,"",2025-08-21T22:17:44.671Z
+180,E5_CircusMain_localization,"",*exhala*,SAY.Dialog:BackstageZebra.181.Slow Ass,*exhale*,"",2025-08-21T22:17:44.671Z
+181,E5_CircusMain_localization,Jump to line x.,"",SAY.Dialog:BackstageZebra.179.Smart Ass,Slow Ass! Get out there or I'll rip you a new one!,"",2025-08-21T22:17:44.671Z
+182,E5_CircusMain_localization,Back on stage: Rico introduces the Lion.,"",SAY.Dialog:RicoIntroductions.86.Ringmaster Rico,Thanks for not staying home and watching TV.,"",2025-08-21T22:17:44.671Z
+183,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.85.Ringmaster Rico,A live performer and a live audience—,"",2025-08-21T22:17:44.671Z
+184,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.84.Ringmaster Rico,There's just no substitute for the energy of an,"",2025-08-21T22:17:44.671Z
+185,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.79.Ringmaster Rico,IN,"",2025-08-21T22:17:44.671Z
+186,E5_CircusMain_localization,Needs space or hyphen at start,"",SAY.Dialog:RicoIntroductions.88.Ringmaster Rico,-PERSON,"",2025-08-21T22:17:44.671Z
+187,E5_CircusMain_localization,Needs space or hyphen at start,"",SAY.Dialog:RicoIntroductions.87.Ringmaster Rico,-CROWD!,"",2025-08-21T22:17:44.671Z
+188,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.94.Ringmaster Rico,I hope you're all ready for the LAST and FINAL act of this evening.,"",2025-08-21T22:17:44.671Z
+189,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.93.Ringmaster Rico,There's nothing tame about it.,"",2025-08-21T22:17:44.671Z
+190,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.92.Ringmaster Rico,"In fact, it's on...","",2025-08-21T22:17:44.671Z
+191,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.162.Ringmaster Rico,FIRE!,"",2025-08-21T22:17:44.671Z
+192,E5_CircusMain_localization,"","",SAY.Dialog:RicoIntroductions.91.Ringmaster Rico,All the way from India—my pride and joy:,"",2025-08-21T22:17:44.671Z
+193,E5_CircusMain_localization,"The Player gains control of the Lion again.
+After the mini-game, the dialogue jumps to either line s or d.","",SAY.Dialog:RicoIntroductions.90.Ringmaster Rico,BHUT JOLOKIA THE SPICY ASIATIC LION!,"",2025-08-21T22:17:44.671Z
+195,E5_CircusMain_localization,"After the Lion's section, Rico makes his big announcement!","",SAY.Dialog:RicoGoodOrPoor.284.Ringmaster Rico,I'm not lyin' folks... that could have been better.,"",2025-08-21T22:17:44.671Z
+196,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.298.Ringmaster Rico,"On the whole, I'd say tonight's show was a WILD success!","",2025-08-21T22:17:44.671Z
+197,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.299.Ringmaster Rico,"On the whole, I guess tonight was a bit off.","",2025-08-21T22:17:44.671Z
+198,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.300.Ringmaster Rico,For those of you who have stayed—thank you for not walking out!,"",2025-08-21T22:17:44.671Z
+199,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.310.Ringmaster Rico,Let me hear you ROAR!,"",2025-08-21T22:17:44.671Z
+200,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.312.Ringmaster Rico,But don't worry!,"",2025-08-21T22:17:44.671Z
+201,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.311.Ringmaster Rico,Now it's time for my BIG ANNOUNCEMENT.,"",2025-08-21T22:17:44.671Z
+202,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.314.Ringmaster Rico,This hard-working cast of animals is being retired.,"",2025-08-21T22:17:44.671Z
+203,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.313.Ringmaster Rico,Tonight was their LAST SHOW.,"",2025-08-21T22:17:44.671Z
+204,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.316.Ringmaster Rico,Get ready for consistently perfect performances every night by the world's most exotic and endangered creatures!,"",2025-08-21T22:17:44.671Z
+205,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.418.Ringmaster Rico,"Thanks to our new sponsor, the benevolent Mme. Derriere, we can finally afford our DREAM CAST...","",2025-08-21T22:17:44.671Z
+206,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.317.Ringmaster Rico,of ROBOTS!,"",2025-08-21T22:17:44.671Z
+207,E5_CircusMain_localization,"","",SAY.Dialog:RicoGoodOrPoor.408.Ringmaster Rico,We're going to be the NOAH'S ARK of ENTERTAINMENT.,"",2025-08-21T22:17:44.671Z
+208,E5_CircusMain_localization,The Player gains control of the Lion again.,BONA NIT A TOTHOM!,SAY.Dialog:RicoGoodOrPoor.315.Ringmaster Rico,GOODNIGHT EVERYBODY!,"",2025-08-21T22:17:44.671Z
+209,E5_CircusMain_localization,The Lion goes backstage to find the others.,"",SAY.Dialog:Ending.33.Slow Ass,Hey everyb-b-body! Did you hear the announcement!?,"",2025-08-21T22:17:44.671Z
+210,E5_CircusMain_localization,Rico is selling the donkeys to mysterious assknappers.,"",SAY.Dialog:Ending.259.Ringmaster Rico,Thanks for doing business folks!,"",2025-08-21T22:17:44.671Z
+211,E5_CircusMain_localization,"","",SAY.Dialog:Ending.260.Big Ass,"{vpunch=100,0.75}UH OH! We're in huge trouble!","",2025-08-21T22:17:44.671Z
+212,E5_CircusMain_localization,"","",SAY.Dialog:Ending.261.Smart Ass,I've got a Plan! Slow Ass will save us...,"",2025-08-21T22:17:44.671Z
+213,E5_CircusMain_localization,"",@#$%&! Estem acabats!,SAY.Dialog:Ending.262.Kick Ass,@#$%&! We're doomed!,"",2025-08-21T22:17:44.671Z
+214,E5_CircusMain_localization,"",*ploriqueja*,SAY.Dialog:Ending.267.Sad Ass,*whimper*,"",2025-08-21T22:17:44.671Z
+215,E5_CircusMain_localization,"","",SAY.Dialog:Ending.157.Wedgie,Where's the last donkey?,"",2025-08-21T22:17:44.671Z
+216,E5_CircusMain_localization,"","",SAY.Dialog:Ending.162.Ringmaster Rico,Right over there.,"",2025-08-21T22:17:44.671Z
+217,E5_CircusMain_localization,"","",SAY.Dialog:Ending.158.Ringmaster Rico,My show needs Robots more than donkeys in cheap costumes if I'm gonna get bums in seats.,"",2025-08-21T22:17:44.671Z
+218,E5_CircusMain_localization,"","",SAY.Dialog:Ending.161.Ringmaster Rico,"No hard feelings, donkey.","",2025-08-21T22:17:44.671Z
+219,E5_CircusMain_localization,"","",SAY.Dialog:Ending.243.Ringmaster Rico,Art dies when you stop innovating!,"",2025-08-21T22:17:44.671Z
+220,E5_CircusMain_localization,"","",SAY.Dialog:Ending.140.Wedgie,All right donkey. Get in the truck.,"",2025-08-21T22:17:44.671Z
+221,E5_CircusMain_localization,"","",SAY.Dialog:Ending.141.Melvin,Wait... what if that sleazy Ringmaster is playing a trick on us?,"",2025-08-21T22:17:44.671Z
+222,E5_CircusMain_localization,"","",SAY.Dialog:Ending.143.Melvin,What if this one is ACTUALLY a lion and it's going to eat us.,"",2025-08-21T22:17:44.671Z
+223,E5_CircusMain_localization,"","",SAY.Dialog:Ending.144.Melvin,Then Rico can keep his animals AND our money.,"",2025-08-21T22:17:44.671Z
+224,E5_CircusMain_localization,"","",SAY.Dialog:Ending.158.Ringmaster Rico,I'll just never make it to the big stage with fakes.,"",2025-08-21T22:17:44.671Z
+225,E5_CircusMain_localization,"","",SAY.Dialog:Ending.171.Wedgie,"Let's catch it quick, we're not being paid for overtime.","",2025-08-21T22:17:44.671Z
+226,E5_CircusMain_localization,Dialogue options. Jump to either line x or y.,"",SAY.Dialog:Ending.172.Wedgie,"He's a circus hack, not an evil genius, you idiot.","",2025-08-21T22:17:44.671Z
+227,E5_CircusMain_localization,Dialogue option 1.1. Slow Ass runs and hides.,Córrer,MENU.Dialog:Ending.40,Run,"",2025-08-21T22:17:44.671Z
+228,E5_CircusMain_localization,"","",SAY.Dialog:Ending.217.Melvin,Where did it go?,"",2025-08-21T22:17:44.671Z
+229,E5_CircusMain_localization,"","",SAY.Dialog:Ending.220.Wedgie,*wheeze* Screw it. Let's leave it and take the others.,"",2025-08-21T22:17:44.671Z
+230,E5_CircusMain_localization,"","",SAY.Dialog:Ending.226.Slow Ass,"P-p-phew, they didn't find me!","",2025-08-21T22:17:44.671Z
+231,E5_CircusMain_localization,Jump to line x. Slow Ass exits.,"",SAY.Dialog:Ending.228.Slow Ass,Time to b-b-be b-b-brave...,"",2025-08-21T22:17:44.671Z
+232,E5_CircusMain_localization,Dialogue option 1.2. Slow Ass does a convincing roar.,Rugir,MENU.Dialog:Ending.39,Roar,"",2025-08-21T22:17:44.671Z
+233,E5_CircusMain_localization,"","",SAY.Dialog:Ending.43.Melvin,EEEEE!!!! IT IS A LION!!!,"",2025-08-21T22:17:44.671Z
+234,E5_CircusMain_localization,"","",SAY.Dialog:Ending.56.Wedgie,I'm outta here!!,"",2025-08-21T22:17:44.671Z
+235,E5_CircusMain_localization,"","",SAY.Dialog:Ending.73.Slow Ass,I've b-b-been p-p-practicing!,"",2025-08-21T22:17:44.671Z
+236,E5_CircusMain_localization,"","",SAY.Dialog:Ending.227.Slow Ass,I'm the only one left—I've got to rescue the others!,"",2025-08-21T22:17:44.671Z
+237,E5_CircusMain_localization,Jump to line x. Slow Ass exits.,"",SAY.Dialog:Ending.72.Slow Ass,Time to b-b-be b-b-brave and rescue the others.,"",2025-08-21T22:17:44.671Z
+238,E5_CircusMain_localization,"The camera moves over to Mme. Derriere and Grandma Kulan, who is just on her way out.","",SAY.Dialog:Ending.280.Grandma Kulan,"Mme. Derriere, may I have moment of your time?","",2025-08-21T22:17:44.671Z
+239,E5_CircusMain_localization,"","",SAY.Dialog:Ending.281.Grandma Kulan,Oh my! Really?,"",2025-08-21T22:17:44.671Z
+240,E5_CircusMain_localization,"","",SAY.Dialog:Ending.282.Mme. Derriere,"My dear, the deaths of your precious grandson and those poor helpless villagers who burned alive—it breaks my heart.","",2025-08-21T22:17:44.671Z
+241,E5_CircusMain_localization,"","",SAY.Dialog:Ending.283.Mme. Derriere,All that matters is that we don't look back.,"",2025-08-21T22:17:44.671Z
+242,E5_CircusMain_localization,"","",SAY.Dialog:Ending.284.Grandma Kulan,But his life was cut short during the tragic fires of Bumpkin Village exactly 6 months and 3 weeks ago.,"",2025-08-21T22:17:44.671Z
+243,E5_CircusMain_localization,"","",SAY.Dialog:Ending.285.Grandma Kulan,My darling Joey would have loved this show.,"",2025-08-21T22:17:44.671Z
+244,E5_CircusMain_localization,"","",SAY.Dialog:Ending.286.Grandma Kulan,"With all your power and resources, will you prevent explosions like Bumpkin's from ever happening again?","",2025-08-21T22:17:44.671Z
+245,E5_CircusMain_localization,"","",SAY.Dialog:Ending.287.Mme. Derriere,I can promise you that the research I'm funding right now will transform the face of the world.,"",2025-08-21T22:17:44.671Z
+246,E5_CircusMain_localization,"","",SAY.Dialog:Ending.288.Mme. Derriere,They deserved Progress!,"",2025-08-21T22:17:44.671Z
+247,E5_CircusMain_localization,"","",SAY.Dialog:Ending.289.Mme. Derriere,They deserved purposeful jobs!,"",2025-08-21T22:17:44.671Z
+248,E5_CircusMain_localization,"","",SAY.Dialog:Ending.290.Mme. Derriere,Bumpkinites deserved more than dangerously out-of-date and accident-prone equipment.,"",2025-08-21T22:17:44.671Z
+249,E5_CircusMain_localization,"","",SAY.Dialog:Ending.291.Mme. Derriere,Walk with me.,"",2025-08-21T22:17:44.671Z
+250,E5_CircusMain_localization,"","",SAY.Dialog:Ending.292.Grandma Kulan,But I don't even have the strength to go back and visit Bumpkin...,"",2025-08-21T22:17:44.671Z
+251,E5_CircusMain_localization,End of Circus.,"",SAY.Dialog:Ending.293.Mme. Derriere,And even you can play a part in it!,"",2025-08-21T22:17:44.671Z
+2,E5_EpisodeTitle_Zoo_localizatio,"",EPISODI CINC,WRITE.Dialog:Localizer.5,EPISODE FIVE,"",2025-08-21T22:17:44.671Z
+3,E5_EpisodeTitle_Zoo_localizatio,"",EL ZOO,WRITE.Dialog:Localizer.7,THE ZOO,"",2025-08-21T22:17:44.671Z
+4,E5_EpisodeTitle_Zoo_localizatio,"",Prem X per començar,WRITE.Dialog:Localizer.8,Press X to Begin,"",2025-08-21T22:17:44.671Z
+3,E5_Zoo_Introduction_localizatio,"","",WRITE.Dialog:Localizer.1,6 months later,"",2025-08-21T22:17:44.671Z
+4,E5_Zoo_Introduction_localizatio,Zookeeper Rose speaks to the Slow Ass.,"",SAY.Dialog:Day1.2.Zookeeper Rose,Your poor swollen joints are looking so much better.,"",2025-08-21T22:17:44.671Z
+5,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.24.Zookeeper Rose,"As long as we keep using this Ointment for your arthritis, you should be able to keep up with the others.","",2025-08-21T22:17:44.671Z
+6,E5_Zoo_Introduction_localizatio,Rose blows whistle and the other donkeys enter.,"",SAY.Dialog:Day1.30.Zookeeper Rose,Now let's get to work!,"",2025-08-21T22:17:44.671Z
+7,E5_Zoo_Introduction_localizatio,Rose speaks to the group of Asses.,"",SAY.Dialog:Day1.29.Zookeeper Rose,Oh Good Morning my beautiful Asses!,"",2025-08-21T22:17:44.671Z
+8,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.34.Zookeeper Rose,"I'm so glad you're all here, because I have an important announcement!","",2025-08-21T22:17:44.671Z
+9,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.65.Zookeeper Rose,The Zoo's Board of Directors wants me to choose an Ass to be the face of a new advertising campaign.,"",2025-08-21T22:17:44.671Z
+10,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.64.Zookeeper Rose,They know that Asses sell tickets!,"",2025-08-21T22:17:44.671Z
+11,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.61.Zookeeper Rose,So I've made up a game to decide who it will be.,"",2025-08-21T22:17:44.671Z
+12,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.60.Zookeeper Rose,I call it ASS OF THE WEEK.,"",2025-08-21T22:17:44.671Z
+13,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.59.Zookeeper Rose,"Every day, you'll compete to see who can capture the attention of the most visitors by giving them what they came here to see.","",2025-08-21T22:17:44.671Z
+14,E5_Zoo_Introduction_localizatio,Big = Hulk (Can be renamed for more culturally appropriate name),"",SAY.Dialog:Day1.74.Zookeeper Rose,Will it be you The Hulk?,"",2025-08-21T22:17:44.671Z
+15,E5_Zoo_Introduction_localizatio,Kick = Littlefoot (Can be renamed for more culturally appropriate name),"",SAY.Dialog:Day1.73.Zookeeper Rose,Is it you Littlefoot?,"",2025-08-21T22:17:44.671Z
+16,E5_Zoo_Introduction_localizatio,Sad = Eeyore (Can be renamed for more culturally appropriate name),"",SAY.Dialog:Day1.154.Zookeeper Rose,"Or maybe, you, Eeyore?","",2025-08-21T22:17:44.671Z
+17,E5_Zoo_Introduction_localizatio,Smart = Sophie (Can be renamed for more culturally appropriate name),"",SAY.Dialog:Day1.136.Zookeeper Rose,Or Sophie?,"",2025-08-21T22:17:44.671Z
+18,E5_Zoo_Introduction_localizatio,Slow = Achilles,"",SAY.Dialog:Day1.138.Zookeeper Rose,"Or, Achilles? Now that your joints aren't swollen anymore!","",2025-08-21T22:17:44.671Z
+19,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.140.Zookeeper Rose,"We'll add up your scores at the end of the week, to find out who wins.","",2025-08-21T22:17:44.671Z
+20,E5_Zoo_Introduction_localizatio,Rose exits.,"",SAY.Dialog:Day1.141.Zookeeper Rose,I'll go open the gate and then we'll get started.,"",2025-08-21T22:17:44.671Z
+21,E5_Zoo_Introduction_localizatio,This dialogue is said if Sad Ass is present.,"",SAY.Dialog:Day1.78.Sad Ass,*sigh*,"",2025-08-21T22:17:44.671Z
+22,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.44.Smart Ass,I've got a Plan!,"",2025-08-21T22:17:44.671Z
+23,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.84.Smart Ass,"ONE, I'm going to run into the pen.","",2025-08-21T22:17:44.671Z
+24,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.83.Smart Ass,"TWO, I'm going to capture the attention of the visiting Humans.","",2025-08-21T22:17:44.671Z
+25,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.82.Smart Ass,"THREE, I'm going to have the highest score.","",2025-08-21T22:17:44.671Z
+26,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.81.Smart Ass,AND WIN ASS OF THE WEEK!,"",2025-08-21T22:17:44.671Z
+27,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.80.Smart Ass,Easy.,"",2025-08-21T22:17:44.671Z
+28,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.79.Smart Ass,Have fun fighting over second place suckers!,"",2025-08-21T22:17:44.671Z
+29,E5_Zoo_Introduction_localizatio,Rose returns.,"",SAY.Dialog:Day1.45.Zookeeper Rose,Get ready to meet the visitors.,"",2025-08-21T22:17:44.671Z
+30,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.85.Zookeeper Rose,Those TOURISTS with the colourful Hawaiian shirts love it when you turn Left and Right to give them a good look at you.,"",2025-08-21T22:17:44.671Z
+31,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.91.Zookeeper Rose,THE TEACHERS with clip boards like it when you demonstrate a classic donkey Kick!\n,"",2025-08-21T22:17:44.671Z
+32,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.90.Zookeeper Rose,"Those lab-coat wearing RESEARCHERS are fascinated with animal behaviour, so show them a Dust Bath!","",2025-08-21T22:17:44.671Z
+33,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.89.Zookeeper Rose,And of course that OLD LADY who is always here just wants to be Listened to.,"",2025-08-21T22:17:44.671Z
+34,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.88.Zookeeper Rose,"You got that memorized, right?","",2025-08-21T22:17:44.671Z
+35,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.210.Zookeeper Rose,Attention spans aren't what they used to be!,"",2025-08-21T22:17:44.671Z
+36,E5_Zoo_Introduction_localizatio,The other Asses run off.,"",SAY.Dialog:Day1.87.Zookeeper Rose,So you have to be quick to catch the visitors before they get bored.,"",2025-08-21T22:17:44.671Z
+37,E5_Zoo_Introduction_localizatio,Zookeeper Rose addresses Slow Ass.,"",SAY.Dialog:Day1.35.Zookeeper Rose,"Oh, Achilles!","",2025-08-21T22:17:44.671Z
+38,E5_Zoo_Introduction_localizatio,"","",SAY.Dialog:Day1.37.Zookeeper Rose,I want you to have an equal chance of winning.,"",2025-08-21T22:17:44.671Z
+39,E5_Zoo_Introduction_localizatio,The Player is given control of Slow Ass. Mini-game begins.,"",SAY.Dialog:Day1.36.Zookeeper Rose,"If you need any extra Ointment for your joints to keep up with the others, just come find me.","",2025-08-21T22:17:44.671Z
+3,E5_ZooMain_localization,"",DILLUNS,WRITE.Dialog:Day1.1,MONDAY,"",2025-08-21T22:17:44.671Z
+4,E5_ZooMain_localization,Read on the Info Sign of the Zoo.,"",WRITE.Dialog:Localizer.1,"Fun facts about Equus Asinus: \n\n- Originally from Africa\n- Can live into their 50s\n- Are extremely nimble on rocky terrain\n- Used as working animals for at least 7,000 years\n- Don't like being in the rain","",2025-08-21T22:17:44.671Z
+5,E5_ZooMain_localization,Said by Zookeeper Rose when the Player presses 'x' near her and your Ointment bar is empty.,"",SAY.Dialog:Ointment.10.Zookeeper Rose,Get your Ointment!,"",2025-08-21T22:17:44.671Z
+6,E5_ZooMain_localization,Said by Zookeeper Rose when the Player presses 'x' near her and the Ointment bar is NOT empty.,"",SAY.Dialog:Ointment.12.Zookeeper Rose,Your joints look good!,"",2025-08-21T22:17:44.671Z
+7,E5_ZooMain_localization,Said by Grandma Kulan when the Player presses 'x' close to her.,"",SAY.Dialog:Grandma.8.Grandma Kulan,Sigh... Joey would have loved this...,"",2025-08-21T22:17:44.671Z
+8,E5_ZooMain_localization,"Said by Slow Ass upon exiting the map at the end of Day 1, after the mini-game.","",SAY.Dialog:EndOfDay.6.Slow Ass,I'm b-b-beat... time for b-b-bed...,"",2025-08-21T22:17:44.671Z
+9,E5_ZooMain_localization,"",DIMARTS,WRITE.Dialog:Day2.144,TUESDAY,"",2025-08-21T22:17:44.671Z
+10,E5_ZooMain_localization,Beginning of the next day.,"",SAY.Dialog:Day2.2.Zookeeper Rose,GOOOODDDD MORNING ASSSSSSES!,"",2025-08-21T22:17:44.671Z
+11,E5_ZooMain_localization,"","",SAY.Dialog:Day2.81.Zookeeper Rose,Superb work yesterday!,"",2025-08-21T22:17:44.671Z
+12,E5_ZooMain_localization,"Jump to line 13, 14, 15, 16, or 17.","",SAY.Dialog:Day2.85.Zookeeper Rose,The current leader is...,"",2025-08-21T22:17:44.671Z
+13,E5_ZooMain_localization,Dialogue 1.1. If SMART Ass is winning,"",SAY.Dialog:Day2.49.Zookeeper Rose,Sophie! Everyone can tell how smart she is!,"",2025-08-21T22:17:44.671Z
+14,E5_ZooMain_localization,Dialogue 1.2. If BIG Ass is winning.,"",SAY.Dialog:Day2.50.Zookeeper Rose,The Hulk! Who doesn't love a big donkey?,"",2025-08-21T22:17:44.671Z
+15,E5_ZooMain_localization,Dialogue 1.3. If KICK Ass is winning.,"",SAY.Dialog:Day2.51.Zookeeper Rose,"Littlefoot, you are kick-starting the race for Ass of the Week!","",2025-08-21T22:17:44.671Z
+16,E5_ZooMain_localization,Dialogue 1.4. If SAD Ass is winning.,"",SAY.Dialog:Day2.52.Zookeeper Rose,Eeyore! Everyone wants to cheer you on!,"",2025-08-21T22:17:44.671Z
+17,E5_ZooMain_localization,Dialogue 1.5. If SLOW Ass is winning.,"",SAY.Dialog:Day2.48.Zookeeper Rose,Achilles! That ointment is really making a difference!,"",2025-08-21T22:17:44.671Z
+18,E5_ZooMain_localization,Dialogue options (1.1-1.5) converge.,"",SAY.Dialog:Day2.70.Zookeeper Rose,The crowd is arriving and it'll be just as busy as yesterday!,"",2025-08-21T22:17:44.671Z
+19,E5_ZooMain_localization,"","",SAY.Dialog:Day2.73.Zookeeper Rose,You know what to do...,"",2025-08-21T22:17:44.671Z
+20,E5_ZooMain_localization,"","",SAY.Dialog:Day2.72.Zookeeper Rose,TOURISTS love it when you turn Left and Right to give them a good look at you.,"",2025-08-21T22:17:44.671Z
+21,E5_ZooMain_localization,"","",SAY.Dialog:Day2.71.Zookeeper Rose,TEACHERS like it when you do a donkey Kick!,"",2025-08-21T22:17:44.671Z
+22,E5_ZooMain_localization,"","",SAY.Dialog:Day2.75.Zookeeper Rose,RESEARCHERS want to see a Dust Bath!,"",2025-08-21T22:17:44.671Z
+23,E5_ZooMain_localization,"Jump to line 24, 26, or 28.","",SAY.Dialog:Day2.74.Zookeeper Rose,And of course that OLD LADY who is always here just wants to be Listened to.,"",2025-08-21T22:17:44.671Z
+24,E5_ZooMain_localization,Dialogue 2.1. If SMART is winning.,"",SAY.Dialog:Day2.76.Kick Ass,@#$%&! These Humans ALL LOOK THE SAME!,"",2025-08-21T22:17:44.671Z
+25,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day2.77.Smart Ass,"Out of the way, my adoring fans are waiting!","",2025-08-21T22:17:44.671Z
+26,E5_ZooMain_localization,Dialogue 2.2. If SLOW is winning.,"",SAY.Dialog:Day2.78.Kick Ass,@#$%&!—Slow Ass?!—it's gotta be that magic OINTMENT!,"",2025-08-21T22:17:44.671Z
+27,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day2.150.Smart Ass,"Ha! Without that ointment, you're nothing Slow Ass.","",2025-08-21T22:17:44.671Z
+28,E5_ZooMain_localization,Dialogue 2.3. If SMART is not winning.,"",SAY.Dialog:Day2.79.Smart Ass,Someone is cheating. I know it!,"",2025-08-21T22:17:44.671Z
+29,E5_ZooMain_localization,"","",SAY.Dialog:Day2.146.Slow Ass,"We can't b-b-be good at everything, Smar—","",2025-08-21T22:17:44.671Z
+30,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day2.80.Smart Ass,"Keep your mouth shut, Slow Ass!","",2025-08-21T22:17:44.671Z
+31,E5_ZooMain_localization,"Said by Slow Ass upon exiting the map at the end of Day 2, after the mini-game.","",SAY.Dialog:EndOfDay.11.Slow Ass,P-p-phew! I'm p-p-parched!,"",2025-08-21T22:17:44.671Z
+32,E5_ZooMain_localization,"",DIMECRES,WRITE.Dialog:Day3.151,WEDNESDAY,"",2025-08-21T22:17:44.671Z
+33,E5_ZooMain_localization,Beginning of the next day.,"",SAY.Dialog:Day3.86.Zookeeper Rose,GOOOODDDD MORNING ASSSSSSES!,"",2025-08-21T22:17:44.671Z
+34,E5_ZooMain_localization,"In MIRO: 'Who's in the lead?' // Jump to line 35, 36, 37, 38, or 39.","",SAY.Dialog:Day3.122.Zookeeper Rose,The current leader is...,"",2025-08-21T22:17:44.671Z
+35,E5_ZooMain_localization,Dialogue 3.1. If SMART Ass is winning,"",SAY.Dialog:Day3.73.Zookeeper Rose,"Sophie, your guts and guile make you a star!","",2025-08-21T22:17:44.671Z
+36,E5_ZooMain_localization,Dialogue 3.2. If BIG Ass is winning.,"",SAY.Dialog:Day3.76.Zookeeper Rose,The Hulk has a massive advantage!,"",2025-08-21T22:17:44.671Z
+37,E5_ZooMain_localization,Dialogue 3.3. If KICK Ass is winning.,"",SAY.Dialog:Day3.79.Zookeeper Rose,"Littlefoot, people are hooked on you!","",2025-08-21T22:17:44.671Z
+38,E5_ZooMain_localization,Dialogue 3.4. If SAD Ass is winning.,"",SAY.Dialog:Day3.82.Zookeeper Rose,"Eeyore, even YOU have to smile at how well you're doing.","",2025-08-21T22:17:44.671Z
+39,E5_ZooMain_localization,Dialogue 3.5. If SLOW Ass is winning.,"",SAY.Dialog:Day3.70.Zookeeper Rose,"Achilles, keep up the hard work!","",2025-08-21T22:17:44.671Z
+40,E5_ZooMain_localization,Dialogue options (3.1-3.5) converge.,"",SAY.Dialog:Day3.103.Zookeeper Rose,Wowzer! There's a long line outside the main gates.,"",2025-08-21T22:17:44.671Z
+41,E5_ZooMain_localization,"","",SAY.Dialog:Day3.106.Zookeeper Rose,I met some SUPER FRIENDLY PEOPLE who told me they LOVE it when donkeys Lie Down and look cute.,"",2025-08-21T22:17:44.671Z
+42,E5_ZooMain_localization,"Jump to line 42, 46, or 48.","",SAY.Dialog:Day3.105.Zookeeper Rose,Now get out there and show those Visitors how adorable you can be.,"",2025-08-21T22:17:44.671Z
+43,E5_ZooMain_localization,Dialogue 4.1. If SMART is winning.,"",SAY.Dialog:Day3.107.Kick Ass,STOP STEPPING on my hoofs out there Big Ass!,"",2025-08-21T22:17:44.671Z
+44,E5_ZooMain_localization,"","",SAY.Dialog:Day3.154.Kick Ass,You're holding me BACK!,"",2025-08-21T22:17:44.671Z
+45,E5_ZooMain_localization,"","",SAY.Dialog:Day3.108.Big Ass,It's not my fault your score is so low.,"",2025-08-21T22:17:44.671Z
+46,E5_ZooMain_localization,Jump to line 52 or 53.,"",SAY.Dialog:Day3.156.Smart Ass,Ha! It's both your faults that you suck!,"",2025-08-21T22:17:44.671Z
+47,E5_ZooMain_localization,Dialogue 4.2. If SLOW is winning.,"",SAY.Dialog:Day3.109.Smart Ass,Don't get full of yourself Slow. Your luck is about to run out!,"",2025-08-21T22:17:44.671Z
+48,E5_ZooMain_localization,Jump to line 52 or 53.,"",SAY.Dialog:Day3.158.Slow Ass,Oh b-b-boy.,"",2025-08-21T22:17:44.671Z
+49,E5_ZooMain_localization,Dialogue 4.3. If SMART is not winning.,"",SAY.Dialog:Day3.110.Big Ass,Massive gains!,"",2025-08-21T22:17:44.671Z
+50,E5_ZooMain_localization,"","",SAY.Dialog:Day3.112.Kick Ass,Ass of the Week is ANYBODY'S GAME!,"",2025-08-21T22:17:44.671Z
+51,E5_ZooMain_localization,Jump to line 52 or 53.,"",SAY.Dialog:Day3.111.Smart Ass,Shut it!,"",2025-08-21T22:17:44.671Z
+52,E5_ZooMain_localization,Dialogue options (4.1-4.3) converge. // Said if Sad Ass is present.,"",SAY.Dialog:Day3.114.Sad Ass,*sigh* All this fuss for a lousy title.,"",2025-08-21T22:17:44.671Z
+53,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day3.115.Slow Ass,I have to p-pick up the p-pace!,"",2025-08-21T22:17:44.671Z
+54,E5_ZooMain_localization,Optional dialogue. Mme. Derriere appears at the fence at the end of the day.,"",SAY.Dialog:TeamRocketEasterEgg.3.???,"Hello beautiful, don't you look soft!","",2025-08-21T22:17:44.671Z
+55,E5_ZooMain_localization,"Said by Slow Ass upon exiting the map at the end of Day 3, after the mini-game.","",SAY.Dialog:EndOfDay.14.Slow Ass,B-b-better rest up for tomorrow!,"",2025-08-21T22:17:44.671Z
+56,E5_ZooMain_localization,"","",SAY.Dialog:TeamRocketEasterEgg.3.,Mmm... so soft.,"",2025-08-21T22:17:44.671Z
+57,E5_ZooMain_localization,"",DIJOUS,WRITE.Dialog:Day4.147,THURSDAY,"",2025-08-21T22:17:44.671Z
+58,E5_ZooMain_localization,Beginning of the next day.,"",SAY.Dialog:Day4.74.Zookeeper Rose,GOOOODDDD MORNING ASSSSSSES!,"",2025-08-21T22:17:44.671Z
+59,E5_ZooMain_localization,"","",SAY.Dialog:Day4.91.Zookeeper Rose,Visitor attendance is rising... and so is my enthusiasm about who will be Ass of the Week!,"",2025-08-21T22:17:44.671Z
+60,E5_ZooMain_localization,"Jump to line 61, 62, 63, 64, or 65.","",SAY.Dialog:Day4.116.Zookeeper Rose,The current leader is...,"",2025-08-21T22:17:44.671Z
+61,E5_ZooMain_localization,Dialogue 5.1. If SMART Ass is winning,"",SAY.Dialog:Day4.25.Zookeeper Rose,"Sophie! You think you're pretty clever, don't you?","",2025-08-21T22:17:44.671Z
+62,E5_ZooMain_localization,Dialogue 5.2. If BIG Ass is winning.,"",SAY.Dialog:Day4.69.Zookeeper Rose,"Hulk, my respect for you is growing!","",2025-08-21T22:17:44.671Z
+63,E5_ZooMain_localization,Dialogue 5.3. If KICK Ass is winning.,"",SAY.Dialog:Day4.40.Zookeeper Rose,"Littlefoot, you are running away with the competition!","",2025-08-21T22:17:44.671Z
+64,E5_ZooMain_localization,Dialogue 5.4. If SAD Ass is winning.,"",SAY.Dialog:Day4.43.Zookeeper Rose,"Eeyore, I want to give you a hug.","",2025-08-21T22:17:44.671Z
+65,E5_ZooMain_localization,Dialogue 5.5. If SLOW Ass is winning.,"",SAY.Dialog:Day4.22.Zookeeper Rose,"Achilles, people are spinning on their heels to come see you!","",2025-08-21T22:17:44.671Z
+66,E5_ZooMain_localization,Dialogue options (5.1-5.5) converge.,"",SAY.Dialog:Day4.92.Zookeeper Rose,Guess what?,"",2025-08-21T22:17:44.671Z
+67,E5_ZooMain_localization,"","",SAY.Dialog:Day4.94.Zookeeper Rose,There are CHILDREN coming today and they love it when you Bray!,"",2025-08-21T22:17:44.671Z
+68,E5_ZooMain_localization,"","",SAY.Dialog:Day4.93.Zookeeper Rose,So be loud!,"",2025-08-21T22:17:44.671Z
+69,E5_ZooMain_localization,"Jump to line 70, 74, or 78.","",SAY.Dialog:Day4.95.Zookeeper Rose,And don't bite anyone...,"",2025-08-21T22:17:44.671Z
+70,E5_ZooMain_localization,Dialogue 6.1. If SMART is winning.,"",SAY.Dialog:Day4.96.Smart Ass,Ha! You fools will never catch up to me!,"",2025-08-21T22:17:44.671Z
+71,E5_ZooMain_localization,"","",SAY.Dialog:Day4.99.Kick Ass,@#$%&! Smart Ass—SCREW YOU!,"",2025-08-21T22:17:44.671Z
+72,E5_ZooMain_localization,"","",SAY.Dialog:Day4.98.Big Ass,I won't be distracted by your puny squabbles!,"",2025-08-21T22:17:44.671Z
+73,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day4.97.Slow Ass,I hop-p-pe I'll do b-b-better today.,"",2025-08-21T22:17:44.671Z
+74,E5_ZooMain_localization,Dialogue 6.2. If SLOW is winning.,"",SAY.Dialog:Day4.104.Kick Ass,@#%&! Slow Ass?!—HOW?!,"",2025-08-21T22:17:44.671Z
+75,E5_ZooMain_localization,"","",SAY.Dialog:Day4.150.Big Ass,"At this rate, we'll have to call you Speedy...","",2025-08-21T22:17:44.671Z
+76,E5_ZooMain_localization,"","",SAY.Dialog:Day4.106.Slow Ass,"Stop it, I'm b-b-blushing.","",2025-08-21T22:17:44.671Z
+77,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day4.111.Smart Ass,Slow Ass? Winning? Ha! What a joke.,"",2025-08-21T22:17:44.671Z
+78,E5_ZooMain_localization,Dialogue 6.3. If SMART is not winning.,"",SAY.Dialog:Day4.108.Kick Ass,Big is CHEATING!,"",2025-08-21T22:17:44.671Z
+79,E5_ZooMain_localization,"","",SAY.Dialog:Day4.109.Big Ass,No. I'm going to win fair and square!,"",2025-08-21T22:17:44.671Z
+80,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day4.110.Smart Ass,"Not a chance! This is all my ""Come from behind"" Plan!","",2025-08-21T22:17:44.671Z
+81,E5_ZooMain_localization,"Said by Slow Ass upon exiting the map at the end of Day 4, after the mini-game.","",SAY.Dialog:EndOfDay.17.Slow Ass,Oh b-b-boy. Today was p-p-particularly p-p-punishing...,"",2025-08-21T22:17:44.671Z
+82,E5_ZooMain_localization,"",DIVENDRES,WRITE.Dialog:Day5.140,FRIDAY,"",2025-08-21T22:17:44.671Z
+83,E5_ZooMain_localization,Beginning of the next day.,"",SAY.Dialog:Day5.74.Zookeeper Rose,GOOOODDDD MORNING ASSSSSSES!,"",2025-08-21T22:17:44.671Z
+84,E5_ZooMain_localization,"","",SAY.Dialog:Day5.75.Zookeeper Rose,"Wow, you all look tired!","",2025-08-21T22:17:44.671Z
+85,E5_ZooMain_localization,"Jump to line 86, 87, 88, 89 or 90.","",SAY.Dialog:Day5.112.Zookeeper Rose,Let's see whose in LAST place...,"",2025-08-21T22:17:44.671Z
+86,E5_ZooMain_localization,Dialogue 7.1. If SMART Ass is winning,"",SAY.Dialog:Day5.25.Zookeeper Rose,"Sophie! You're not as popular this week—though knowing you, I'm sure you'll come from behind and steal the win!","",2025-08-21T22:17:44.671Z
+87,E5_ZooMain_localization,Dialogue 7.2. If BIG Ass is winning.,"",SAY.Dialog:Day5.69.Zookeeper Rose,"You're not green anymore The Hulk, you should have more control out there!","",2025-08-21T22:17:44.671Z
+88,E5_ZooMain_localization,Dialogue 7.3. If KICK Ass is winning.,"",SAY.Dialog:Day5.40.Zookeeper Rose,You're tripping all over yourself out there Littlefoot!,"",2025-08-21T22:17:44.671Z
+89,E5_ZooMain_localization,Dialogue 7.4. If SAD Ass is winning.,"",SAY.Dialog:Day5.43.Zookeeper Rose,"Oh Eeyore, don't feel too badly, this could happen to any Ass!","",2025-08-21T22:17:44.671Z
+90,E5_ZooMain_localization,Dialogue 7.5. If SLOW Ass is winning.,"",SAY.Dialog:Day5.22.Zookeeper Rose,Achilles! I guess everyone has a weakness...,"",2025-08-21T22:17:44.671Z
+91,E5_ZooMain_localization,Dialogue options (7.1-7.5) converge.,"",SAY.Dialog:Day5.93.Zookeeper Rose,I have some more good news to give you a boost!\n,"",2025-08-21T22:17:44.671Z
+92,E5_ZooMain_localization,"","",SAY.Dialog:Day5.98.Zookeeper Rose,I added some new elements to make the paddock feel more like your rugged natural habitat.,"",2025-08-21T22:17:44.671Z
+93,E5_ZooMain_localization,"","",SAY.Dialog:Day5.99.Zookeeper Rose,And just in time! Today we've got some INFLUENCERS coming to help boost the social media for the Zoo.,"",2025-08-21T22:17:44.671Z
+94,E5_ZooMain_localization,"Jump to line 95, 97, or 99.","",SAY.Dialog:Day5.97.Zookeeper Rose,"When you see them with their phones, be sure to pull off some Dance moves!","",2025-08-21T22:17:44.671Z
+95,E5_ZooMain_localization,Dialogue 8.1. If SMART is winning.,"",SAY.Dialog:Day5.105.Smart Ass,I got a new one! What do you call undesirable Asses with low scores?,"",2025-08-21T22:17:44.671Z
+96,E5_ZooMain_localization,Jump to line 101.,"",SAY.Dialog:Day5.147.Smart Ass,Losers! Ha!,"",2025-08-21T22:17:44.671Z
+97,E5_ZooMain_localization,Dialogue 8.2. If SLOW is winning.,"",SAY.Dialog:Day5.107.Slow Ass,P-p-please don't hate me...,"",2025-08-21T22:17:44.671Z
+98,E5_ZooMain_localization,Jump to line 101.,"",SAY.Dialog:Day5.144.Smart Ass,Too late!,"",2025-08-21T22:17:44.671Z
+99,E5_ZooMain_localization,Dialogue 8.3. If SMART is not winning.,"",SAY.Dialog:Day5.106.Kick Ass,GREAT! Smart is NOT WINNING!,"",2025-08-21T22:17:44.671Z
+100,E5_ZooMain_localization,Jump to line 101.,"",SAY.Dialog:Day5.108.Big Ass,We don't have to deal with her oversized ego!,"",2025-08-21T22:17:44.671Z
+101,E5_ZooMain_localization,Dialogue options (8.1-8.3) converge. // Mini-game begins.,"",SAY.Dialog:Day5.101.Slow Ass,I gotta keep p-p-pushing myself!,"",2025-08-21T22:17:44.671Z
+102,E5_ZooMain_localization,"Said by Slow Ass upon exiting the map at the end of Day 5, after the mini-game.","",SAY.Dialog:EndOfDay.20.Slow Ass,What a b-b-backb-b-breaker. I can feel it in my b-b-bones...,"",2025-08-21T22:17:44.671Z
+103,E5_ZooMain_localization,"",DISSABTE,WRITE.Dialog:Day6.176,SATURDAY,"",2025-08-21T22:17:44.671Z
+104,E5_ZooMain_localization,Beginning of the next day.,"",SAY.Dialog:Day6.74.Zookeeper Rose,GOOOODDDD MORNING ASSSSSSES!,"",2025-08-21T22:17:44.671Z
+105,E5_ZooMain_localization,"Jump to line 106, 107, 109, 110, or 112.","",SAY.Dialog:Day6.94.Zookeeper Rose,The Ass in SECOND place is...,"",2025-08-21T22:17:44.671Z
+106,E5_ZooMain_localization,Dialogue 9.1. If SMART Ass is winning,"",SAY.Dialog:Day6.25.Zookeeper Rose,Sophie! I know that's going to make you even more competitive...,"",2025-08-21T22:17:44.671Z
+107,E5_ZooMain_localization,Dialogue 9.2. If BIG Ass is winning.,"",SAY.Dialog:Day6.69.Zookeeper Rose,The Hulk! But don't get angry—,"",2025-08-21T22:17:44.671Z
+108,E5_ZooMain_localization,"","",SAY.Dialog:Day6.95.Zookeeper Rose,I have a feeling you're gonna smash through second place and come out on top!,"",2025-08-21T22:17:44.671Z
+109,E5_ZooMain_localization,Dialogue 9.3. If KICK Ass is winning.,"",SAY.Dialog:Day6.40.Zookeeper Rose,Littlefoot! You're one small step from first place! Get it!,"",2025-08-21T22:17:44.671Z
+110,E5_ZooMain_localization,Dialogue 9.4. If SAD Ass is winning.,"",SAY.Dialog:Day6.43.Zookeeper Rose,Eeyore! It really feels like you're holding back...,"",2025-08-21T22:17:44.671Z
+111,E5_ZooMain_localization,"","",SAY.Dialog:Day6.96.Zookeeper Rose,You gotta let loose and show the world who you really are!,"",2025-08-21T22:17:44.671Z
+112,E5_ZooMain_localization,Dialogue 9.5. If SLOW Ass is winning.,"",SAY.Dialog:Day6.22.Zookeeper Rose,"Achilles! But don't be distressed, there's still time to win.","",2025-08-21T22:17:44.671Z
+113,E5_ZooMain_localization,Dialogue options (9.1-9.5) converge.,"",SAY.Dialog:Day6.97.Zookeeper Rose,"With all this attention, the Official Zoo PHOTOGRAPHERS are coming today!","",2025-08-21T22:17:44.671Z
+114,E5_ZooMain_localization,"","",SAY.Dialog:Day6.99.Zookeeper Rose,They love getting action shots so don't forget to Jump three times when you see them!,"",2025-08-21T22:17:44.671Z
+115,E5_ZooMain_localization,Jump to line 116 or 131.,"",SAY.Dialog:Day6.98.Zookeeper Rose,Show them what JOY looks like.,"",2025-08-21T22:17:44.671Z
+116,E5_ZooMain_localization,Branch 1.1. Sad Ass is present.,"",SAY.Dialog:Day6.102.Sad Ass,*sigh* What joy?,"",2025-08-21T22:17:44.671Z
+117,E5_ZooMain_localization,"","",SAY.Dialog:Day6.108.Sad Ass,We used to be Comrades... but here... we're just competition...,"",2025-08-21T22:17:44.671Z
+118,E5_ZooMain_localization,"","",SAY.Dialog:Day6.107.Sad Ass,*whimper*,"",2025-08-21T22:17:44.671Z
+119,E5_ZooMain_localization,"","",SAY.Dialog:Day6.106.Sad Ass,I thought that leaving the Farm and Mine behind would finally give my broken heart a chance to heal...,"",2025-08-21T22:17:44.671Z
+120,E5_ZooMain_localization,"","",SAY.Dialog:Day6.105.Sad Ass,That I could get a fresh start in a new job... in a new place.,"",2025-08-21T22:17:44.671Z
+121,E5_ZooMain_localization,"","",SAY.Dialog:Day6.104.Sad Ass,But... now I just feel like I'm carrying the past alone.,"",2025-08-21T22:17:44.671Z
+122,E5_ZooMain_localization,"","",SAY.Dialog:Day6.103.Sad Ass,And you have all moved on without me.,"",2025-08-21T22:17:44.671Z
+123,E5_ZooMain_localization,"","",SAY.Dialog:Day6.109.Sad Ass,*whimper*,"",2025-08-21T22:17:44.671Z
+124,E5_ZooMain_localization,"","",SAY.Dialog:Day6.110.Smart Ass,You gotta be kidding!,"",2025-08-21T22:17:44.671Z
+125,E5_ZooMain_localization,"","",SAY.Dialog:Day6.115.Smart Ass,"This Zoo has fresh hay, nice Humans, no ugly Machines, and rigorous daily labour!","",2025-08-21T22:17:44.671Z
+126,E5_ZooMain_localization,"","",SAY.Dialog:Day6.112.Smart Ass,Think about it! We made the right choice to leave that dirty countryside.,"",2025-08-21T22:17:44.671Z
+127,E5_ZooMain_localization,"They all leave, except for Sad and Slow.","",SAY.Dialog:Day6.111.Smart Ass,"And we aren't here to talk about the past—we're here to WORK, so get outta my way!\n","",2025-08-21T22:17:44.671Z
+128,E5_ZooMain_localization,"","",SAY.Dialog:Day6.118.Slow Ass,"Sad Ass, I'm hap-p-p-py here.","",2025-08-21T22:17:44.671Z
+129,E5_ZooMain_localization,"","",SAY.Dialog:Day6.120.Slow Ass,I'm finally achieving my full p-p-potential!,"",2025-08-21T22:17:44.671Z
+130,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day6.119.Slow Ass,B-b-buck up-p-p.,"",2025-08-21T22:17:44.671Z
+131,E5_ZooMain_localization,Branch 1.2. Sad Ass is NOT present.,"",SAY.Dialog:Day6.131.Big Ass,Joy. Do you think the rest of the Herd is as happy as we are?,"",2025-08-21T22:17:44.671Z
+132,E5_ZooMain_localization,"","",SAY.Dialog:Day6.130.Kick Ass,Not a CHANCE!,"",2025-08-21T22:17:44.671Z
+133,E5_ZooMain_localization,"","",SAY.Dialog:Day6.139.Slow Ass,They are p-p-prob-b-b-bly still freezing their tails off in the Mine.,"",2025-08-21T22:17:44.671Z
+134,E5_ZooMain_localization,"","",SAY.Dialog:Day6.141.Smart Ass,Honestly I forgot all about them.,"",2025-08-21T22:17:44.671Z
+135,E5_ZooMain_localization,"","",SAY.Dialog:Day6.145.Smart Ass,"Now, we're not here to talk about the past.","",2025-08-21T22:17:44.671Z
+136,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day6.144.Smart Ass,We're here to WORK!,"",2025-08-21T22:17:44.671Z
+137,E5_ZooMain_localization,"After the work day, if Sad Ass is at the Zoo, he stays behind. 
+The Player (Slow Ass) can go talk to him.","",SAY.Dialog:SadGoodbye.10.Slow Ass,Sad Ass?,"",2025-08-21T22:17:44.671Z
+138,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.25.Sad Ass,...,"",2025-08-21T22:17:44.671Z
+139,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.33.Sad Ass,Someone once said to me that if you aren't doing something that brings you joy...,"",2025-08-21T22:17:44.671Z
+140,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.32.Sad Ass,You should do something different.,"",2025-08-21T22:17:44.671Z
+141,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.31.Sad Ass,Slow Ass... I'm really glad you all found something you that brings you joy everyday...,"",2025-08-21T22:17:44.671Z
+142,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.30.Sad Ass,I guess... I'm still searching.,"",2025-08-21T22:17:44.671Z
+143,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.29.Sad Ass,So...,"",2025-08-21T22:17:44.671Z
+144,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.28.Sad Ass,Today's my final day.,"",2025-08-21T22:17:44.671Z
+145,E5_ZooMain_localization,"Jump to line 146, 148, or 150.","",SAY.Dialog:SadGoodbye.27.Sad Ass,I'm leaving.,"",2025-08-21T22:17:44.671Z
+146,E5_ZooMain_localization,Dialogue option 9.1.,"",MENU.Dialog:SadGoodbye.52,We can change our workp-p-place dynamic!,"",2025-08-21T22:17:44.671Z
+147,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.35.Slow Ass,We can change our workp-p-place dynamic!,"",2025-08-21T22:17:44.671Z
+148,E5_ZooMain_localization,Dialogue option 9.2.,"",MENU.Dialog:SadGoodbye.54,B-b-but you can't ab-b-bandon the Herd!,"",2025-08-21T22:17:44.671Z
+149,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.37.Slow Ass,B-b-but you can't ab-b-bandon the Herd!,"",2025-08-21T22:17:44.671Z
+150,E5_ZooMain_localization,Dialogue option 9.3.,"",MENU.Dialog:SadGoodbye.53,I can give you some of my Ass of the Week p-points!,"",2025-08-21T22:17:44.671Z
+151,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.39.Slow Ass,I can give you some of my Ass of the Week p-points!,"",2025-08-21T22:17:44.671Z
+152,E5_ZooMain_localization,Dialogue options (9.1-9.3) converge.,"",SAY.Dialog:SadGoodbye.41.Sad Ass,There's nothing you can say that will make me stay.,"",2025-08-21T22:17:44.671Z
+153,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.42.Sad Ass,I've made up my mind.,"",2025-08-21T22:17:44.671Z
+154,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.43.Sad Ass,I don't know what'll bring me joy...,"",2025-08-21T22:17:44.671Z
+155,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.44.Sad Ass,But I know I won't find it here with you all.,"",2025-08-21T22:17:44.671Z
+156,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.45.Sad Ass,Let's not make a big thing out of this.,"",2025-08-21T22:17:44.671Z
+157,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.46.Sad Ass,I'll be gone by morning.,"",2025-08-21T22:17:44.671Z
+158,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.47.Sad Ass,Tell the others for me.,"",2025-08-21T22:17:44.671Z
+159,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.48.Sad Ass,...,"",2025-08-21T22:17:44.671Z
+160,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.49.Sad Ass,I always thought we were a lot alike.,"",2025-08-21T22:17:44.671Z
+161,E5_ZooMain_localization,"","",SAY.Dialog:SadGoodbye.50.Sad Ass,Goodbye Slow Ass.,"",2025-08-21T22:17:44.671Z
+162,E5_ZooMain_localization,Repeater line.,"",SAY.Dialog:SadGoodbye.12.Sad Ass,Goodbye.,"",2025-08-21T22:17:44.671Z
+163,E5_ZooMain_localization,"",DIUMENGE,WRITE.Dialog:Day7.231,SUNDAY,"",2025-08-21T22:17:44.671Z
+164,E5_ZooMain_localization,Branch 2.1. Sad Ass is GONE.,"",SAY.Dialog:Day7.103.Zookeeper Rose,EVERYONE STAY CALM.,"",2025-08-21T22:17:44.671Z
+165,E5_ZooMain_localization,"","",SAY.Dialog:Day7.111.Zookeeper Rose,"It seems that one of our own, dearest Eeyore, has ESCAPED from the Zoo...","",2025-08-21T22:17:44.671Z
+166,E5_ZooMain_localization,Zookeepers Rose gets a phone call.,"",SAY.Dialog:Day7.110.Zookeeper Rose,WHAT NOW?!,"",2025-08-21T22:17:44.671Z
+167,E5_ZooMain_localization,"","",SAY.Dialog:Day7.109.Zookeeper Rose,...Oh.,"",2025-08-21T22:17:44.671Z
+168,E5_ZooMain_localization,"","",SAY.Dialog:Day7.108.Zookeeper Rose,"Yes, this is Zookeeper Rose.","",2025-08-21T22:17:44.671Z
+169,E5_ZooMain_localization,"","",SAY.Dialog:Day7.107.Zookeeper Rose,...The Zoo's Board of Directors are coming to meet the Ass of the Week?,"",2025-08-21T22:17:44.671Z
+170,E5_ZooMain_localization,"","",SAY.Dialog:Day7.106.Zookeeper Rose,...NOW?,"",2025-08-21T22:17:44.671Z
+171,E5_ZooMain_localization,Zookeeper Rose hangs up.,"",SAY.Dialog:Day7.105.Zookeeper Rose,Oh no...,"",2025-08-21T22:17:44.671Z
+172,E5_ZooMain_localization,"","",SAY.Dialog:Day7.119.Zookeeper Rose,They're gonna find out Eeyore's gone...,"",2025-08-21T22:17:44.671Z
+173,E5_ZooMain_localization,"","",SAY.Dialog:Day7.118.Zookeeper Rose,We'll lose everything we've worked for...,"",2025-08-21T22:17:44.671Z
+174,E5_ZooMain_localization,"","",SAY.Dialog:Day7.117.Zookeeper Rose,And I'll get FIRED!,"",2025-08-21T22:17:44.671Z
+175,E5_ZooMain_localization,"","",SAY.Dialog:Day7.116.Zookeeper Rose,Unless...,"",2025-08-21T22:17:44.671Z
+176,E5_ZooMain_localization,"","",SAY.Dialog:Day7.104.Zookeeper Rose,The BOARD OF DIRECTORS love it when you get intimate and Nuzzle them!,"",2025-08-21T22:17:44.671Z
+177,E5_ZooMain_localization,"","",SAY.Dialog:Day7.122.Zookeeper Rose,"Don't worry about getting their suits messy, they're the ones to impress today.","",2025-08-21T22:17:44.671Z
+178,E5_ZooMain_localization,Jump to line 192 or 201.,"",SAY.Dialog:Day7.121.Zookeeper Rose,"If you move fast, maybe they won't notice there's only four of you!","",2025-08-21T22:17:44.671Z
+179,E5_ZooMain_localization,Branch 2.1. Sad Ass is was never at the Zoo.,"",SAY.Dialog:Day7.160.Zookeeper Rose,GOOOOD MORNING ASSES!,"",2025-08-21T22:17:44.671Z
+180,E5_ZooMain_localization,"","",SAY.Dialog:Day7.167.Zookeeper Rose,You've all been working so hard and finally today we'll find out who's going to be Ass of the Week.,"",2025-08-21T22:17:44.671Z
+181,E5_ZooMain_localization,Zookeepers Rose gets a phone call.,"",SAY.Dialog:Day7.166.Zookeeper Rose,"Hi there, Zookeeper Rose speaking!","",2025-08-21T22:17:44.671Z
+182,E5_ZooMain_localization,"","",SAY.Dialog:Day7.165.Zookeeper Rose,What's that?,"",2025-08-21T22:17:44.671Z
+183,E5_ZooMain_localization,"","",SAY.Dialog:Day7.164.Zookeeper Rose,The Zoo's Board of Directors are doing a site visit to meet the Ass of the Week?,"",2025-08-21T22:17:44.671Z
+184,E5_ZooMain_localization,"","",SAY.Dialog:Day7.163.Zookeeper Rose,And they're interested in reallocating more resources to our corner of the Zoo?,"",2025-08-21T22:17:44.671Z
+185,E5_ZooMain_localization,"","",SAY.Dialog:Day7.162.Zookeeper Rose,More hay?,"",2025-08-21T22:17:44.671Z
+186,E5_ZooMain_localization,"","",SAY.Dialog:Day7.171.Zookeeper Rose,More ointment?,"",2025-08-21T22:17:44.671Z
+187,E5_ZooMain_localization,"","",SAY.Dialog:Day7.170.Zookeeper Rose,That's PERFECT!,"",2025-08-21T22:17:44.671Z
+188,E5_ZooMain_localization,Zookeeper Rose hangs up.,"",SAY.Dialog:Day7.161.Zookeeper Rose,Thanks!,"",2025-08-21T22:17:44.671Z
+189,E5_ZooMain_localization,"","",SAY.Dialog:Day7.176.Zookeeper Rose,Listen up!,"",2025-08-21T22:17:44.671Z
+190,E5_ZooMain_localization,"","",SAY.Dialog:Day7.175.Zookeeper Rose,The BOARD OF DIRECTORS love it when you get intimate and Nuzzle them!,"",2025-08-21T22:17:44.671Z
+191,E5_ZooMain_localization,Jump to line 212.,"",SAY.Dialog:Day7.173.Zookeeper Rose,Get out there and make sure they leave here with full hearts and empty wallets!,"",2025-08-21T22:17:44.671Z
+192,E5_ZooMain_localization,Branch 3.1. If Slow talked to Sad.,"",SAY.Dialog:Day7.127.Smart Ass,Sad has ruined everything!,"",2025-08-21T22:17:44.671Z
+193,E5_ZooMain_localization,"","",SAY.Dialog:Day7.131.Big Ass,Was it something that we did?,"",2025-08-21T22:17:44.671Z
+194,E5_ZooMain_localization,"","",SAY.Dialog:Day7.128.Slow Ass,He said that he just wasn't hap-p-py here...,"",2025-08-21T22:17:44.671Z
+195,E5_ZooMain_localization,"","",SAY.Dialog:Day7.130.Kick Ass,@#$%&!—I DON'T UNDERSTAND—did he say where he was GOING?,"",2025-08-21T22:17:44.671Z
+196,E5_ZooMain_localization,"","",SAY.Dialog:Day7.129.Slow Ass,"Nop-p-pe. He's just... ""gone"".","",2025-08-21T22:17:44.671Z
+197,E5_ZooMain_localization,"","",SAY.Dialog:Day7.133.Smart Ass,Forget him! He's a quitter.,"",2025-08-21T22:17:44.671Z
+198,E5_ZooMain_localization,"","",SAY.Dialog:Day7.135.Smart Ass,And a sore loser!,"",2025-08-21T22:17:44.671Z
+199,E5_ZooMain_localization,Smart exits.,"",SAY.Dialog:Day7.235.Smart Ass,And good luck to him finding another job without Machines!,"",2025-08-21T22:17:44.671Z
+200,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day7.134.Slow Ass,P-p-perhaps that's true.,"",2025-08-21T22:17:44.671Z
+201,E5_ZooMain_localization,Branch 3.2. If Slow did NOT talk to Sad.,"",SAY.Dialog:Day7.149.Smart Ass,Sad has ruined everything!,"",2025-08-21T22:17:44.671Z
+202,E5_ZooMain_localization,"","",SAY.Dialog:Day7.236.Smart Ass,"If I ever see him again, I'm going to rip him a new one!","",2025-08-21T22:17:44.671Z
+203,E5_ZooMain_localization,"","",SAY.Dialog:Day7.141.Kick Ass,@#$%&!—he just walked out on us without saying ANYTHING?!,"",2025-08-21T22:17:44.671Z
+204,E5_ZooMain_localization,"","",SAY.Dialog:Day7.148.Slow Ass,...not even a goodb-b-bye!,"",2025-08-21T22:17:44.671Z
+205,E5_ZooMain_localization,"","",SAY.Dialog:Day7.147.Big Ass,I guess we just keep working without him.,"",2025-08-21T22:17:44.671Z
+206,E5_ZooMain_localization,"","",SAY.Dialog:Day7.146.Slow Ass,B-b-but shouldn't we look for him?,"",2025-08-21T22:17:44.671Z
+207,E5_ZooMain_localization,"","",SAY.Dialog:Day7.145.Smart Ass,Hell no!,"",2025-08-21T22:17:44.671Z
+208,E5_ZooMain_localization,"","",SAY.Dialog:Day7.144.Smart Ass,Good luck to him finding another job without Machines!,"",2025-08-21T22:17:44.671Z
+209,E5_ZooMain_localization,"","",SAY.Dialog:Day7.237.Smart Ass,I've changed my mind: Sad leaving is good news for the rest of us.,"",2025-08-21T22:17:44.671Z
+210,E5_ZooMain_localization,"","",SAY.Dialog:Day7.143.Smart Ass,Less competition for Ass of the Week!,"",2025-08-21T22:17:44.671Z
+211,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day7.233.Slow Ass,I guess it is one less Ass to comp-p-pete with.,"",2025-08-21T22:17:44.671Z
+212,E5_ZooMain_localization,Branch 3.3. If Sad was not in the Zoo.,"",SAY.Dialog:Day7.154.Slow Ass,May the b-b-est Ass win!,"",2025-08-21T22:17:44.671Z
+213,E5_ZooMain_localization,"","",SAY.Dialog:Day7.239.Big Ass,You've surprised us all with how quickly you've grown your score.,"",2025-08-21T22:17:44.671Z
+214,E5_ZooMain_localization,"","",SAY.Dialog:Day7.241.Kick Ass,@#$%&! How can we be losing to SLOW ASS?!?!,"",2025-08-21T22:17:44.671Z
+215,E5_ZooMain_localization,"","",SAY.Dialog:Day7.158.Big Ass,We wouldn't have this problem if you'd stop getting in my way.,"",2025-08-21T22:17:44.671Z
+216,E5_ZooMain_localization,"","",SAY.Dialog:Day7.157.Kick Ass,WHAT?! You're as clunky as a MACHINE.,"",2025-08-21T22:17:44.671Z
+217,E5_ZooMain_localization,"","",SAY.Dialog:Day7.156.Smart Ass,Shut it! It's his ointment that's giving him an advantage!,"",2025-08-21T22:17:44.671Z
+218,E5_ZooMain_localization,Mini-game begins.,"",SAY.Dialog:Day7.155.Slow Ass,B-b-bring it on!,"",2025-08-21T22:17:44.671Z
+219,E5_ZooMain_localization,Likely removed.,"",SAY.Dialog:Day7.178.Smart Ass,It's unfair!,"",2025-08-21T22:17:44.671Z
+220,E5_ZooMain_localization,Likely removed.,"",SAY.Dialog:Day7.234.Smart Ass,"If I ever see him again, I'm going to rip him a new one!","",2025-08-21T22:17:44.671Z
+221,E5_ZooMain_localization,"The final dialogue said by Grandma Kulan when the Player presses 'x' close to her, if the Player has visited her every day.","",SAY.Dialog:Grandma.23.Grandma Kulan,Thank you for coming to visit me everyday.,"",2025-08-21T22:17:44.671Z
+222,E5_ZooMain_localization,"","",SAY.Dialog:Grandma.27.Grandma Kulan,Maybe donkeys do have souls after all...?,"",2025-08-21T22:17:44.671Z
+223,E5_ZooMain_localization,"","",SAY.Dialog:Grandma.28.Grandma Kulan,I think I'm going to donate all my money to this Zoo.,"",2025-08-21T22:17:44.671Z
+224,E5_ZooMain_localization,"","",SAY.Dialog:Grandma.29.Grandma Kulan,Thank you donkey!,"",2025-08-21T22:17:44.671Z
+225,E5_ZooMain_localization,"","",SAY.Dialog:Grandma.29.,Thank you Donkey!,"",2025-08-21T22:17:44.671Z
+226,E5_ZooMain_localization,"","",SAY.Dialog:Grandma.8.,Sigh... Joey would have loved this...,"",2025-08-21T22:17:44.671Z
+227,E5_ZooMain_localization,"","",SAY.Dialog:Grandma.23.,Thank you for coming to visit me everyday.,"",2025-08-21T22:17:44.671Z
+228,E5_ZooMain_localization,"","",SAY.Dialog:Grandma.27.,Maybe Donkeys do have souls after all...?,"",2025-08-21T22:17:44.671Z
+229,E5_ZooMain_localization,"","",SAY.Dialog:Grandma.28.,I think I'm going to donate all my money to this Zoo.,"",2025-08-21T22:17:44.671Z
+230,E5_ZooMain_localization,"","",WRITE.Dialog:Localizer.5,Episode Number,"",2025-08-21T22:17:44.671Z
+231,E5_ZooMain_localization,"","",WRITE.Dialog:Localizer.7,in which the asses,"",2025-08-21T22:17:44.671Z
+232,E5_ZooMain_localization,"","",WRITE.Dialog:Localizer.8,Press X,"",2025-08-21T22:17:44.671Z
+3,E5_ZooCapture_localization,The Asses assemble around Zookeeper Rose.,"",SAY.Dialog:AssOfTheMonth.2.Zookeeper Rose,Times up! The results are in!\n,"",2025-08-21T22:17:44.671Z
+4,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.10.Zookeeper Rose,"You know if it were up to me you would all be Ass of the Week, but...","",2025-08-21T22:17:44.671Z
+5,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.34.Zookeeper Rose,We only had one plaque made.,"",2025-08-21T22:17:44.671Z
+6,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.33.Zookeeper Rose,So the winner is:,"",2025-08-21T22:17:44.671Z
+7,E5_ZooCapture_localization,"Jump to line 8, 11, 15, or 18.","",SAY.Dialog:AssOfTheMonth.40.Zookeeper Rose,{$String}!,"",2025-08-21T22:17:44.671Z
+8,E5_ZooCapture_localization,Smart = Sophie,"",WRITE.Dialog:Localizer.4,Sophie,"",2025-08-21T22:17:44.671Z
+9,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.186.Zookeeper Rose,She's the fan favourite!,"",2025-08-21T22:17:44.671Z
+10,E5_ZooCapture_localization,Jump to line 22 or 28.,"",SAY.Dialog:AssOfTheMonth.185.Smart Ass,Ha! EASY! Take that suckers!,"",2025-08-21T22:17:44.671Z
+11,E5_ZooCapture_localization,Big = The Hulk,"",WRITE.Dialog:Localizer.3,The Hulk,"",2025-08-21T22:17:44.671Z
+12,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.187.Zookeeper Rose,What a monumental achievement!,"",2025-08-21T22:17:44.671Z
+13,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.138.Zookeeper Rose,Congratulations on a banner week!,"",2025-08-21T22:17:44.671Z
+14,E5_ZooCapture_localization,Jump to line 22 or 28.,"",SAY.Dialog:AssOfTheMonth.141.Big Ass,This is a tremendous honour. Thank you!,"",2025-08-21T22:17:44.671Z
+15,E5_ZooCapture_localization,Kick = Littlefoot,"",WRITE.Dialog:Localizer.2,Littlefoot,"",2025-08-21T22:17:44.671Z
+16,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.188.Zookeeper Rose,"You kicked Ass! Now you can step into the role of a winner, and walk with pride.","",2025-08-21T22:17:44.671Z
+17,E5_ZooCapture_localization,Jump to line 22 or 28.,"",SAY.Dialog:AssOfTheMonth.142.Kick Ass,YES! @#$%&! YES!!,"",2025-08-21T22:17:44.671Z
+18,E5_ZooCapture_localization,Slow = Achilles,"",WRITE.Dialog:Localizer.1,Achilles,"",2025-08-21T22:17:44.671Z
+19,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.189.Zookeeper Rose,Your vulnerability turned out to be your greatest strength!,"",2025-08-21T22:17:44.671Z
+20,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.143.Zookeeper Rose,You're a real warrior!,"",2025-08-21T22:17:44.671Z
+21,E5_ZooCapture_localization,Jump to line 22 or 28.,"",SAY.Dialog:AssOfTheMonth.146.Slow Ass,I still can't b-b-believe that my p-p-poor b-b-bones didn't let me down!,"",2025-08-21T22:17:44.671Z
+22,E5_ZooCapture_localization,"A Truck arrives and two figures step out of the truck.
+Branch 1.1. Sad was at the Zoo and left.","",SAY.Dialog:AssOfTheMonth.73.Zookeeper Rose,You're late!,"",2025-08-21T22:17:44.671Z
+23,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.109.Melvin,I thought you said there were going to be five?,"",2025-08-21T22:17:44.671Z
+24,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.101.Zookeeper Rose,One of them escaped last night.,"",2025-08-21T22:17:44.671Z
+25,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.100.Wedgie,We had a deal!,"",2025-08-21T22:17:44.671Z
+26,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.99.Zookeeper Rose,Please? Isn't four enough?,"",2025-08-21T22:17:44.671Z
+27,E5_ZooCapture_localization,Jump to line 33.,"",SAY.Dialog:AssOfTheMonth.102.Wedgie,Fine... here's your money.,"",2025-08-21T22:17:44.671Z
+28,E5_ZooCapture_localization,"A Truck arrives and two figures step out of the truck.
+Branch 1.2. Sad was never at the Zoo.","",SAY.Dialog:AssOfTheMonth.74.Zookeeper Rose,You're late!,"",2025-08-21T22:17:44.671Z
+29,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.106.Melvin,There was traffic.,"",2025-08-21T22:17:44.671Z
+30,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.105.Wedgie,These the donkeys?,"",2025-08-21T22:17:44.671Z
+31,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.104.Zookeeper Rose,Yes.,"",2025-08-21T22:17:44.671Z
+32,E5_ZooCapture_localization,Jump to line 33.,"",SAY.Dialog:AssOfTheMonth.103.Wedgie,Here's your money.,"",2025-08-21T22:17:44.671Z
+33,E5_ZooCapture_localization,Branches (1.1 and 1.2) converge.,"",SAY.Dialog:AssOfTheMonth.121.Zookeeper Rose,I'm sorry donkeys.,"",2025-08-21T22:17:44.671Z
+34,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.126.Zookeeper Rose,"I love you all so much, but I need the cash...","",2025-08-21T22:17:44.671Z
+35,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.125.Zookeeper Rose,I need to buy a new phone...,"",2025-08-21T22:17:44.671Z
+36,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.123.Zookeeper Rose,They told me they are going to take really good care of you!,"",2025-08-21T22:17:44.671Z
+37,E5_ZooCapture_localization,Rose runs off.,"",SAY.Dialog:AssOfTheMonth.122.Zookeeper Rose,*sniff*,"",2025-08-21T22:17:44.671Z
+38,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.82.Wedgie,Come on! Let's catch 'em all!,"",2025-08-21T22:17:44.671Z
+39,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.83.Melvin,Hold on! I need 15 seconds to load my tranquilizer gun!,"",2025-08-21T22:17:44.671Z
+40,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.85.Smart Ass,RUN!,"",2025-08-21T22:17:44.671Z
+41,E5_ZooCapture_localization,"","",SAY.Dialog:AssOfTheMonth.96.Kick Ass,HIDE!,"",2025-08-21T22:17:44.671Z
+42,E5_ZooCapture_localization,The donkeys run into the pen and hide.,"",SAY.Dialog:AssOfTheMonth.89.Big Ass,SLOW ASS COME ON!,"",2025-08-21T22:17:44.671Z
+43,E5_ZooCapture_localization,"Inside the pen, the Asses attempt to hide.","",SAY.Dialog:CaptureInterjections.1.Kick Ass,Everyone! DON'T MOVE and DON'T MAKE A SOUND!,"",2025-08-21T22:17:44.671Z
+44,E5_ZooCapture_localization,"","",SAY.Dialog:CaptureInterjections.2.Melvin,What's that sound?,"",2025-08-21T22:17:44.671Z
+45,E5_ZooCapture_localization,"","",SAY.Dialog:CaptureInterjections.5.Smart Ass,Idiots! Hiding behind trees and rocks! They'll never find me! Ha!,"",2025-08-21T22:17:44.671Z
+46,E5_ZooCapture_localization,Branch 2.1. If Slow Ass is knocked out.,"",SAY.Dialog:PostKnockOut.2.Slow Ass,Huh?,"",2025-08-21T22:17:44.671Z
+47,E5_ZooCapture_localization,"","",SAY.Dialog:PostKnockOut.18.Slow Ass,What hap-p-p—?,"",2025-08-21T22:17:44.671Z
+48,E5_ZooCapture_localization,"","",SAY.Dialog:PostKnockOut.19.Slow Ass,OH NO!,"",2025-08-21T22:17:44.671Z
+49,E5_ZooCapture_localization,"","",SAY.Dialog:PostKnockOut.21.Slow Ass,It's u-p-p-p to ME to rescue them?!,"",2025-08-21T22:17:44.671Z
+50,E5_ZooCapture_localization,End of Episode.,"",SAY.Dialog:PostKnockOut.20.Slow Ass,Oh b-b-boy....,"",2025-08-21T22:17:44.671Z
+51,E5_ZooCapture_localization,"Branch 2.2. All the Asses are captured, except for Slow Ass.","",SAY.Dialog:TeamRocketEnd.2.Melvin,The Truck's full! Let's get back to the Factory and get paid.,"",2025-08-21T22:17:44.671Z
+52,E5_ZooCapture_localization,"","",SAY.Dialog:TeamRocketEnd.5.Wedgie,Wasn't there another one?,"",2025-08-21T22:17:44.671Z
+53,E5_ZooCapture_localization,"","",SAY.Dialog:TeamRocketEnd.11.Melvin,Who cares. The big one is worth at least two. Now hurry!,"",2025-08-21T22:17:44.671Z
+54,E5_ZooCapture_localization,Slow Ass successfully stays hidden.,"",SAY.Dialog:PostHiding.19.Slow Ass,OH NO!,"",2025-08-21T22:17:44.671Z
+55,E5_ZooCapture_localization,"","",SAY.Dialog:PostHiding.21.Slow Ass,It's u-p-p-p to ME to rescue the others?!,"",2025-08-21T22:17:44.671Z
+56,E5_ZooCapture_localization,End of Episode.,"",SAY.Dialog:PostHiding.22.Slow Ass,But I'll run out of ointment...,"",2025-08-21T22:17:44.671Z
