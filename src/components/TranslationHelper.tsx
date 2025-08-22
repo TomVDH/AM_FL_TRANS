@@ -181,6 +181,7 @@ const TranslationHelper: React.FC = () => {
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
   const [isLoadingCodex, setIsLoadingCodex] = useState(false);
   const [xlsxViewerTab, setXlsxViewerTab] = useState<'browse' | 'context'>('browse');
+  const [showFullBlankText, setShowFullBlankText] = useState(false);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
@@ -1005,9 +1006,27 @@ const TranslationHelper: React.FC = () => {
             </div>
           </div>
           
-          <div key={outputKey} className="bg-gray-50 dark:bg-gray-700 p-5 border border-black dark:border-gray-600 max-h-48 overflow-y-auto shadow-inner custom-scrollbar relative mb-6">
-            {/* Copy Icon Button */}
+          <div key={outputKey} className="bg-gray-50 dark:bg-gray-700 p-5 border border-black dark:border-gray-600 flex-1 max-h-96 overflow-y-auto shadow-inner custom-scrollbar relative mb-6">
+            {/* Action Buttons */}
             <div className="absolute top-2 right-2 flex items-center gap-2">
+              {/* Eye Icon Button - Toggle Display Mode */}
+              <button
+                onClick={() => setShowFullBlankText(!showFullBlankText)}
+                className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
+                title={showFullBlankText ? "Hide full blank text (show as ---)" : "Show full blank text"}
+              >
+                {showFullBlankText ? (
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                ) : (
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.878 9.878L3 3m6.878 6.878L21 21" />
+                  </svg>
+                )}
+              </button>
+              {/* Copy Icon Button */}
               <button
                 onClick={copyToClipboard}
                 className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
@@ -1027,7 +1046,9 @@ const TranslationHelper: React.FC = () => {
               {translations.map((trans, idx) => {
                 if (!trans) return '';
                 const utterer = (utterers && utterers.length > 0 && utterers[idx]) ? `[${utterers[idx]}] ` : '';
-                return `${getCellLocation(idx)}: ${utterer}${trans}`;
+                // Display logic: show "---" for blanks when eye is disabled, full text when enabled
+                const displayText = trans === '[BLANK, REMOVE LATER]' && !showFullBlankText ? '---' : trans;
+                return `${getCellLocation(idx)}: ${utterer}${displayText}`;
               }).filter(Boolean).join('\n') || 'Translations will appear here...'}
             </pre>
           </div>
