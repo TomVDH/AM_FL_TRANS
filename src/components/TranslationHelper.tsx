@@ -280,6 +280,9 @@ const TranslationHelper: React.FC = () => {
         setCellStart={setCellStart}
         sourceTexts={sourceTexts}
         workbookData={workbookData}
+        setSourceTexts={setSourceTexts}
+        setUtterers={setUtterers}
+        setTranslations={setTranslations}
         handleFileUpload={handleFileUpload}
         handleSourceInput={handleSourceInput}
         handleStart={handleStart}

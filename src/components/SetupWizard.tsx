@@ -9,7 +9,7 @@ interface SetupWizardProps {
   // Input mode state
   inputMode: 'excel' | 'embedded-json' | 'manual';
   setInputMode: (mode: 'excel' | 'embedded-json' | 'manual') => void;
-  
+
   // Excel configuration state
   excelSheets: string[];
   selectedSheet: string;
@@ -24,27 +24,30 @@ interface SetupWizardProps {
   setUseReferenceColumn: (use: boolean) => void;
   startRow: number;
   setStartRow: (row: number) => void;
-  
+
   // Manual input state
   cellStart: string;
   setCellStart: (cell: string) => void;
-  
+
   // Data state
   sourceTexts: string[];
   workbookData?: any;
-  
+  setSourceTexts?: (texts: string[]) => void;
+  setUtterers?: (utterers: string[]) => void;
+  setTranslations?: (translations: string[]) => void;
+
   // Event handlers
   handleFileUpload: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handleSourceInput: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   handleStart: () => void;
   handleExistingFileLoad?: (fileName: string) => void;
-  
+
   // Animation state
   gradientColors: string[];
   isTranslating?: boolean;
   showVersionHash: boolean;
   VERSION_HASH: string;
-  
+
   // Dark mode state
   darkMode: boolean;
   toggleDarkMode: () => void;
@@ -98,6 +101,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   setCellStart,
   sourceTexts,
   workbookData,
+  setSourceTexts,
+  setUtterers,
+  setTranslations,
   handleFileUpload,
   handleSourceInput,
   handleStart,
@@ -176,6 +182,73 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
     if (handleExistingFileLoad) {
       handleExistingFileLoad(fileName);
     }
+  };
+
+  // Wrapper function to handle data file loading before starting translation
+  const handleStartWithDataFile = async () => {
+    // If sourceTexts are already populated (e.g., from Excel or manual input), just start
+    if (sourceTexts.length > 0) {
+      handleStart();
+      return;
+    }
+
+    // If JSON or CSV file is selected, load it first
+    if ((fileType === 'json' || fileType === 'csv') && selectedDataFile && setSourceTexts && setUtterers && setTranslations) {
+      try {
+        const endpoint = fileType === 'json' ? '/api/json-data' : '/api/csv-data';
+        const response = await fetch(`${endpoint}?file=${encodeURIComponent(selectedDataFile)}`);
+
+        if (!response.ok) {
+          throw new Error(`Failed to load ${fileType.toUpperCase()} file`);
+        }
+
+        const data = await response.json();
+
+        // Extract source texts and utterers from the data
+        const texts: string[] = [];
+        const speakers: string[] = [];
+
+        if (fileType === 'json') {
+          // JSON format: data is the direct JSON structure with sheets array
+          data.sheets?.forEach((sheet: any) => {
+            sheet.entries?.forEach((entry: any) => {
+              if (entry.sourceEnglish) {
+                texts.push(entry.sourceEnglish);
+                speakers.push(entry.utterer || '');
+              }
+            });
+          });
+        } else {
+          // CSV format: data has sheets array with entries
+          data.sheets?.forEach((sheet: any) => {
+            sheet.entries?.forEach((entry: any) => {
+              if (entry.english) {
+                texts.push(entry.english);
+                speakers.push(entry.utterer || '');
+              }
+            });
+          });
+        }
+
+        if (texts.length === 0) {
+          alert(`No translatable entries found in the selected ${fileType.toUpperCase()} file.`);
+          return;
+        }
+
+        // Set the data in translation state
+        setSourceTexts(texts);
+        setUtterers(speakers);
+        setTranslations(new Array(texts.length).fill('[BLANK, REMOVE LATER]'));
+
+      } catch (error) {
+        console.error(`Error loading ${fileType} file:`, error);
+        alert(`Failed to load ${fileType.toUpperCase()} file. Please try again.`);
+        return; // Don't proceed to handleStart if loading failed
+      }
+    }
+
+    // Call the original handleStart function
+    handleStart();
   };
 
   // Function to detect locale columns from header row
@@ -689,7 +762,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               </p>
             )}
             <button
-              onClick={handleStart}
+              onClick={handleStartWithDataFile}
               disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
               className="w-full px-8 py-3 bg-black dark:bg-white text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
               style={{ borderRadius: '3px' }}
