@@ -318,7 +318,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
       {/* Dark Mode Toggle */}
       <button
         onClick={toggleDarkMode}
-        className="fixed top-4 right-4 p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200"
+        className="fixed top-4 right-4 p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
         style={{ borderRadius: '3px' }}
         aria-label="Toggle dark mode"
       >
@@ -460,7 +460,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     <div className="flex gap-2 mb-4">
                       <button
                         onClick={() => setFileType('excel')}
-                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 ${
+                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
                           fileType === 'excel'
                             ? 'bg-black dark:bg-white text-white dark:text-black'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -471,7 +471,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       </button>
                       <button
                         onClick={() => setFileType('json')}
-                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 ${
+                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
                           fileType === 'json'
                             ? 'bg-black dark:bg-white text-white dark:text-black'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -482,7 +482,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       </button>
                       <button
                         onClick={() => setFileType('csv')}
-                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 ${
+                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
                           fileType === 'csv'
                             ? 'bg-black dark:bg-white text-white dark:text-black'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -712,14 +712,14 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     // This will be handled by the parent component to switch to JSON mode
                     setInputMode('excel');
                   }}
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded transition-colors duration-200"
+                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
                   style={{ borderRadius: '3px' }}
                 >
                   Switch to Excel Mode
                 </button>
                 <button
                   onClick={() => window.open('/scripts/excel-to-json.js', '_blank')}
-                  className="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium rounded transition-colors duration-200"
+                  className="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
                   style={{ borderRadius: '3px' }}
                 >
                   View Processing Script

@@ -13,7 +13,7 @@ const VideoButton: React.FC<VideoButtonProps> = ({ className = '' }) => {
   return (
     <button
       onClick={handleVideoClick}
-      className={`inline-flex items-center justify-center p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm hover:bg-gray-50 dark:hover:bg-gray-600 ${className}`}
+      className={`inline-flex items-center justify-center p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 dark:text-white text-sm hover:bg-gray-50 dark:hover:bg-gray-600 ${className}`}
       title="Watch Video Tutorial"
       aria-label="Watch Video Tutorial"
       style={{ borderRadius: '3px' }}

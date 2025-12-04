@@ -546,7 +546,7 @@ const TranslationHelper: React.FC = () => {
                       {/* Copy button for source text */}
                       <button
                         onClick={copySourceText}
-                        className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
+                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
                         title="Copy source text"
                       >
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -557,7 +557,7 @@ const TranslationHelper: React.FC = () => {
                       {xlsxMode && (
                         <button
                           onClick={handleCopySourceToXlsxSearch}
-                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
+                          className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
                           title="Search this text in Reference Tools"
                         >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -642,7 +642,7 @@ const TranslationHelper: React.FC = () => {
                         {/* Copy button for source text */}
                         <button
                           onClick={copySourceText}
-                          className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
+                          className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
                           title="Copy source text"
                         >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -653,7 +653,7 @@ const TranslationHelper: React.FC = () => {
                         {xlsxMode && (
                           <button
                             onClick={handleCopySourceToXlsxSearch}
-                            className="p-1 text-gray-400 hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-50 dark:bg-opacity-20 rounded"
+                            className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
                             title="Search this text in Reference Tools"
                           >
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -662,6 +662,56 @@ const TranslationHelper: React.FC = () => {
                             </svg>
                           </button>
                         )}
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Next Source Translation Preview - Only show when eye mode is active */}
+                {eyeMode && currentIndex < sourceTexts.length - 1 && (
+                  <div
+                    className="gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-gray-300 dark:border-gray-600 opacity-50"
+                    style={{
+                      width: '450px',
+                      height: '150px',
+                      fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                      fontSize: '1.2rem',
+                      lineHeight: '1.4',
+                      overflow: 'hidden',
+                      letterSpacing: '0.02em',
+                      borderRadius: '4px',
+                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
+                      background: darkMode ? '#1a1a1a' : '#ffffff',
+                      position: 'relative'
+                    }}
+                  >
+                    {/* Speaker bar */}
+                    <div
+                      className="bg-gray-700 dark:bg-gray-800 text-white dark:text-gray-100 px-4 py-2 border-b-2 border-gray-400 dark:border-gray-700 text-left pixelify-sans-600 relative"
+                      style={{
+                        fontSize: '1.2rem',
+                        fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                        background: '#555555'
+                      }}
+                    >
+                      <div className="flex justify-center items-center">
+                        <span className="text-shadow-pixel opacity-60">Next Source Translation</span>
+                      </div>
+                    </div>
+
+                    {/* Main dialogue area */}
+                    <div
+                      className="p-3 relative text-left pixelify-sans-500 overflow-y-auto custom-scrollbar"
+                      style={{
+                        height: 'calc(100% - 45px)',
+                        fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
+                        fontSize: '1.0rem',
+                        lineHeight: '1.5',
+                        background: darkMode ? '#1a1a1a' : '#ffffff'
+                      }}
+                    >
+                      <div className="opacity-60 line-clamp-3">
+                        {sourceTexts[currentIndex + 1]}
                       </div>
                     </div>
                   </div>
@@ -779,7 +829,7 @@ const TranslationHelper: React.FC = () => {
                 {/* Gamepad Mode - UI View */}
                 <button
                   onClick={toggleGamepadMode}
-                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
+                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
                   title="UI View"
                 >
                   <svg className={`w-5 h-5 ${gamepadMode ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-500'}`} fill="currentColor" viewBox="0 0 20 20">
@@ -789,7 +839,7 @@ const TranslationHelper: React.FC = () => {
                 {/* Eye Mode - Translation Preview */}
                 <button
                   onClick={toggleEyeMode}
-                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
+                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
                   title="Translation Preview"
                 >
                   {eyeMode ? (
@@ -806,7 +856,7 @@ const TranslationHelper: React.FC = () => {
                 {/* Highlight Mode - Codex Highlights */}
                 <button
                   onClick={toggleHighlightMode}
-                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
+                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
                   title="Codex Highlights"
                 >
                   {highlightMode ? (
@@ -838,7 +888,7 @@ const TranslationHelper: React.FC = () => {
                 {/* XLSX Mode Toggle */}
                 <button
                   onClick={toggleXlsxMode}
-                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-colors duration-200"
+                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
                   title="XLSX Data View"
                 >
                   <svg className={`w-5 h-5 ${xlsxMode ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-500'}`} fill="currentColor" viewBox="0 0 24 24">
@@ -977,7 +1027,7 @@ const TranslationHelper: React.FC = () => {
           <div className="mt-4">
             <button
               onClick={() => setAccordionStates(prev => ({ ...prev, jumpTo: !prev.jumpTo }))}
-              className="w-full flex items-center justify-between px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 shadow-sm font-semibold text-sm"
+              className="w-full flex items-center justify-between px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-semibold text-sm"
               style={{ borderRadius: '3px' }}
             >
               <span>Jump to Row {excelSheets.length > 1 ? '/ Change Sheet' : ''}</span>
@@ -991,47 +1041,93 @@ const TranslationHelper: React.FC = () => {
               </svg>
             </button>
             {accordionStates.jumpTo && (
-              <div className="mt-2 p-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
-                <div className="flex items-center justify-center gap-4">
-                  {/* Jump to Row */}
+              <div className="mt-2 p-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-sm space-y-4" style={{ borderRadius: '3px' }}>
+                {/* Jump to Row Section */}
+                <div className="space-y-2">
+                  <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide text-left block">Jump to Row:</label>
                   <div className="flex items-center gap-2">
-                    <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Jump to:</label>
+                    <button
+                      onClick={() => {
+                        const newIndex = Math.max(0, currentIndex - 5);
+                        setCurrentIndex(newIndex);
+                        setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                      }}
+                      className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
+                      style={{ borderRadius: '3px' }}
+                      title="Jump back 5 rows"
+                    >
+                      -5
+                    </button>
+                    <button
+                      onClick={() => {
+                        const newIndex = Math.max(0, currentIndex - 1);
+                        setCurrentIndex(newIndex);
+                        setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                      }}
+                      className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
+                      style={{ borderRadius: '3px' }}
+                      title="Jump back 1 row"
+                    >
+                      -1
+                    </button>
                     <input
                       type="number"
                       min={startRow}
                       max={startRow + sourceTexts.length - 1}
-                      placeholder={`${startRow}-${startRow + sourceTexts.length - 1}`}
-                      className="w-20 p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
-                      style={{ borderRadius: '3px' }}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter') {
-                          const rowNumber = parseInt(e.currentTarget.value);
-                          if (rowNumber >= startRow && rowNumber < startRow + sourceTexts.length) {
-                            jumpToRow(rowNumber);
-                            e.currentTarget.value = '';
-                          }
+                      value={startRow + currentIndex}
+                      onChange={(e) => {
+                        const rowNumber = parseInt(e.target.value);
+                        if (rowNumber >= startRow && rowNumber < startRow + sourceTexts.length) {
+                          jumpToRow(rowNumber);
                         }
                       }}
+                      placeholder={`${startRow}-${startRow + sourceTexts.length - 1}`}
+                      className="flex-1 p-2 text-sm text-center font-bold border-2 border-gray-400 dark:border-gray-500 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-800 shadow-sm dark:text-white"
+                      style={{ borderRadius: '3px' }}
                     />
+                    <button
+                      onClick={() => {
+                        const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 1);
+                        setCurrentIndex(newIndex);
+                        setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                      }}
+                      className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
+                      style={{ borderRadius: '3px' }}
+                      title="Jump forward 1 row"
+                    >
+                      +1
+                    </button>
+                    <button
+                      onClick={() => {
+                        const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 5);
+                        setCurrentIndex(newIndex);
+                        setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                      }}
+                      className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
+                      style={{ borderRadius: '3px' }}
+                      title="Jump forward 5 rows"
+                    >
+                      +5
+                    </button>
                   </div>
-
-                  {/* Sheet Change - Only show if Excel sheets are available */}
-                  {excelSheets.length > 1 && (
-                    <div className="flex items-center gap-2">
-                      <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Sheet:</label>
-                      <select
-                        value={selectedSheet}
-                        onChange={(e) => handleSheetChange(e.target.value)}
-                        className="p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
-                        style={{ borderRadius: '3px' }}
-                      >
-                        {excelSheets.map(sheet => (
-                          <option key={sheet} value={sheet}>{sheet}</option>
-                        ))}
-                      </select>
-                    </div>
-                  )}
                 </div>
+
+                {/* Sheet Change - Only show if Excel sheets are available */}
+                {excelSheets.length > 1 && (
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide text-left block">Sheet:</label>
+                    <select
+                      value={selectedSheet}
+                      onChange={(e) => handleSheetChange(e.target.value)}
+                      className="w-full p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
+                      style={{ borderRadius: '3px' }}
+                    >
+                      {excelSheets.map(sheet => (
+                        <option key={sheet} value={sheet}>{sheet}</option>
+                      ))}
+                    </select>
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -1135,18 +1231,6 @@ const TranslationHelper: React.FC = () => {
             </pre>
           </div>
 
-          {/* Next Source Text Preview */}
-          {currentIndex < sourceTexts.length - 1 && (
-            <div className="text-sm leading-relaxed px-4 py-3 text-gray-400 dark:text-gray-500 border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 rounded mb-4 opacity-60" style={{ borderRadius: '3px' }}>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wide">Next Source:</span>
-              </div>
-              <div className="text-sm opacity-75 line-clamp-2">
-                {sourceTexts[currentIndex + 1]}
-              </div>
-            </div>
-          )}
-
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
             <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
               <p className="font-bold text-base sm:text-lg text-gray-900 dark:text-gray-100">{currentIndex + 1}</p>
@@ -1176,7 +1260,7 @@ const TranslationHelper: React.FC = () => {
               </div>
               <button
                 onClick={toggleXlsxMode}
-                className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+                className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
                 style={{ borderRadius: '3px' }}
                 title="Close Reference Tools"
               >
