@@ -257,6 +257,41 @@ const TranslationHelper: React.FC = () => {
     }
   }, [currentIndex, isStarted, animateCardTransition]);
 
+  // Keyboard shortcuts
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      // Only handle shortcuts when textarea is not focused
+      if (document.activeElement?.tagName === 'TEXTAREA' || document.activeElement?.tagName === 'INPUT') {
+        // Allow Enter to submit even from textarea
+        if (e.key === 'Enter' && e.ctrlKey) {
+          e.preventDefault();
+          handleSubmit();
+        }
+        return;
+      }
+
+      // O for Previous
+      if (e.key.toLowerCase() === 'o' && currentIndex > 0) {
+        e.preventDefault();
+        handlePrevious();
+      }
+      // P for Next
+      else if (e.key.toLowerCase() === 'p' && currentIndex < sourceTexts.length - 1) {
+        e.preventDefault();
+        setCurrentIndex(currentIndex + 1);
+        setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
+      }
+      // Enter for Submit
+      else if (e.key === 'Enter') {
+        e.preventDefault();
+        handleSubmit();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [currentIndex, sourceTexts.length, translations, handlePrevious, handleSubmit, setCurrentIndex, setCurrentTranslation]);
+
 
   if (!isStarted) {
     return (
