@@ -115,6 +115,13 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   const [selectedExistingFile, setSelectedExistingFile] = React.useState('');
   const [localeColumns, setLocaleColumns] = React.useState<{column: string, locale: string}[]>([]);
 
+  // JSON/CSV file selection state
+  const [dataFileType, setDataFileType] = React.useState<'json' | 'csv'>('json');
+  const [jsonFiles, setJsonFiles] = React.useState<string[]>([]);
+  const [csvFiles, setCsvFiles] = React.useState<string[]>([]);
+  const [selectedDataFile, setSelectedDataFile] = React.useState('');
+  const [loadingDataFiles, setLoadingDataFiles] = React.useState(false);
+
   // Load existing files on component mount
   React.useEffect(() => {
     const loadExistingFiles = async () => {
@@ -133,6 +140,35 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
     };
 
     loadExistingFiles();
+  }, []);
+
+  // Load JSON and CSV files on component mount
+  React.useEffect(() => {
+    const loadDataFiles = async () => {
+      setLoadingDataFiles(true);
+      try {
+        const [jsonResponse, csvResponse] = await Promise.all([
+          fetch('/api/json-files'),
+          fetch('/api/csv-files')
+        ]);
+
+        if (jsonResponse.ok) {
+          const jsonData = await jsonResponse.json();
+          setJsonFiles(jsonData);
+        }
+
+        if (csvResponse.ok) {
+          const csvData = await csvResponse.json();
+          setCsvFiles(csvData);
+        }
+      } catch (error) {
+        console.error('Error loading data files:', error);
+      } finally {
+        setLoadingDataFiles(false);
+      }
+    };
+
+    loadDataFiles();
   }, []);
 
   const handleExistingFileSelect = (fileName: string) => {
@@ -374,6 +410,66 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                   {excelSheets.length > 0 && (
                     <p className="text-sm text-green-600 dark:text-green-400 text-center font-medium">✓ File loaded successfully</p>
                   )}
+
+                  {/* JSON/CSV File Selector */}
+                  <div className="mt-8 pt-8 border-t border-gray-300 dark:border-gray-600">
+                    <label className="block text-sm font-bold mb-3 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
+                      Load Reference Data (JSON/CSV)
+                    </label>
+
+                    {/* File Type Toggle */}
+                    <div className="flex gap-2 mb-4">
+                      <button
+                        onClick={() => setDataFileType('json')}
+                        className={`flex-1 px-4 py-2 font-bold tracking-tight uppercase transition-all duration-200 ${
+                          dataFileType === 'json'
+                            ? 'bg-black dark:bg-white text-white dark:text-black'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                        }`}
+                        style={{ borderRadius: '3px' }}
+                      >
+                        JSON
+                      </button>
+                      <button
+                        onClick={() => setDataFileType('csv')}
+                        className={`flex-1 px-4 py-2 font-bold tracking-tight uppercase transition-all duration-200 ${
+                          dataFileType === 'csv'
+                            ? 'bg-black dark:bg-white text-white dark:text-black'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                        }`}
+                        style={{ borderRadius: '3px' }}
+                      >
+                        CSV
+                      </button>
+                    </div>
+
+                    {/* File Selector */}
+                    {loadingDataFiles ? (
+                      <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                        <p className="text-gray-500 dark:text-gray-400">Loading files...</p>
+                      </div>
+                    ) : (
+                      <select
+                        value={selectedDataFile}
+                        onChange={(e) => setSelectedDataFile(e.target.value)}
+                        className="w-full p-4 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-base"
+                        style={{ borderRadius: '3px' }}
+                      >
+                        <option value="">Select a {dataFileType.toUpperCase()} file...</option>
+                        {(dataFileType === 'json' ? jsonFiles : csvFiles).map(file => (
+                          <option key={file} value={file}>
+                            {file}
+                          </option>
+                        ))}
+                      </select>
+                    )}
+
+                    {selectedDataFile && (
+                      <p className="text-sm text-green-600 dark:text-green-400 mt-2 font-medium">
+                        ✓ {selectedDataFile} selected
+                      </p>
+                    )}
+                  </div>
                 </div>
               </div>
 
