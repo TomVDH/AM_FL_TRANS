@@ -341,47 +341,6 @@ const TranslationHelper: React.FC = () => {
             {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
           </p>
           
-          {/* Jump to Row and Sheet Change */}
-          <div className="flex items-center justify-center gap-4 mt-4">
-            {/* Jump to Row */}
-            <div className="flex items-center gap-2">
-              <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Jump to:</label>
-              <input
-                type="number"
-                min={startRow}
-                max={startRow + sourceTexts.length - 1}
-                placeholder={`${startRow}-${startRow + sourceTexts.length - 1}`}
-                className="w-20 p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
-                style={{ borderRadius: '3px' }}
-                onKeyDown={(e) => {
-                  if (e.key === 'Enter') {
-                    const rowNumber = parseInt(e.currentTarget.value);
-                    if (rowNumber >= startRow && rowNumber < startRow + sourceTexts.length) {
-                      jumpToRow(rowNumber);
-                      e.currentTarget.value = '';
-                    }
-                  }
-                }}
-              />
-            </div>
-            
-            {/* Sheet Change - Only show if Excel sheets are available */}
-            {excelSheets.length > 1 && (
-              <div className="flex items-center gap-2">
-                <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Sheet:</label>
-                <select
-                  value={selectedSheet}
-                  onChange={(e) => handleSheetChange(e.target.value)}
-                  className="p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
-                  style={{ borderRadius: '3px' }}
-                >
-                  {excelSheets.map(sheet => (
-                    <option key={sheet} value={sheet}>{sheet}</option>
-                  ))}
-                </select>
-              </div>
-            )}
-          </div>
         </div>
 
         {/* Enhanced Progress Bar - Dynamic fill with gaps for blank entries */}
@@ -961,13 +920,11 @@ const TranslationHelper: React.FC = () => {
             </button>
             <button
               onClick={() => {
-                handleSubmit();
-                // Wait for state to update, then move to next
-                setTimeout(() => {
-                  if (currentIndex < sourceTexts.length - 1) {
-                    // handleSubmit already moves to next
-                  }
-                }, 0);
+                // Navigate to next without saving (just browse)
+                if (currentIndex < sourceTexts.length - 1) {
+                  setCurrentIndex(currentIndex + 1);
+                  setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
+                }
               }}
               onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
               onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
@@ -979,6 +936,69 @@ const TranslationHelper: React.FC = () => {
             >
               Next ›
             </button>
+          </div>
+
+          {/* Jump to Row Accordion */}
+          <div className="mt-4">
+            <button
+              onClick={() => setAccordionStates(prev => ({ ...prev, jumpTo: !prev.jumpTo }))}
+              className="w-full flex items-center justify-between px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 shadow-sm font-semibold text-sm"
+              style={{ borderRadius: '3px' }}
+            >
+              <span>Jump to Row {excelSheets.length > 1 ? '/ Change Sheet' : ''}</span>
+              <svg
+                className={`w-4 h-4 transition-transform duration-200 ${accordionStates.jumpTo ? 'transform rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {accordionStates.jumpTo && (
+              <div className="mt-2 p-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
+                <div className="flex items-center justify-center gap-4">
+                  {/* Jump to Row */}
+                  <div className="flex items-center gap-2">
+                    <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Jump to:</label>
+                    <input
+                      type="number"
+                      min={startRow}
+                      max={startRow + sourceTexts.length - 1}
+                      placeholder={`${startRow}-${startRow + sourceTexts.length - 1}`}
+                      className="w-20 p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
+                      style={{ borderRadius: '3px' }}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                          const rowNumber = parseInt(e.currentTarget.value);
+                          if (rowNumber >= startRow && rowNumber < startRow + sourceTexts.length) {
+                            jumpToRow(rowNumber);
+                            e.currentTarget.value = '';
+                          }
+                        }
+                      }}
+                    />
+                  </div>
+
+                  {/* Sheet Change - Only show if Excel sheets are available */}
+                  {excelSheets.length > 1 && (
+                    <div className="flex items-center gap-2">
+                      <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Sheet:</label>
+                      <select
+                        value={selectedSheet}
+                        onChange={(e) => handleSheetChange(e.target.value)}
+                        className="p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
+                        style={{ borderRadius: '3px' }}
+                      >
+                        {excelSheets.map(sheet => (
+                          <option key={sheet} value={sheet}>{sheet}</option>
+                        ))}
+                      </select>
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
           </div>
 
             </div>
@@ -1079,7 +1099,19 @@ const TranslationHelper: React.FC = () => {
               }).filter(Boolean).join('\n') || 'Translations will appear here...'}
             </pre>
           </div>
-          
+
+          {/* Next Source Text Preview */}
+          {currentIndex < sourceTexts.length - 1 && (
+            <div className="text-sm leading-relaxed px-4 py-3 text-gray-400 dark:text-gray-500 border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 rounded mb-4 opacity-60" style={{ borderRadius: '3px' }}>
+              <div className="flex items-center gap-2 mb-1">
+                <span className="text-xs font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-wide">Next Source:</span>
+              </div>
+              <div className="text-sm opacity-75 line-clamp-2">
+                {sourceTexts[currentIndex + 1]}
+              </div>
+            </div>
+          )}
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
             <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
               <p className="font-bold text-base sm:text-lg text-gray-900 dark:text-gray-100">{currentIndex + 1}</p>
