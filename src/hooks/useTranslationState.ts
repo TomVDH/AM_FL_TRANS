@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 import * as XLSX from 'xlsx';
+import { toast } from 'sonner';
 
 export interface TranslationState {
   // Core translation state
@@ -209,14 +210,15 @@ export const useTranslationState = (): TranslationState => {
           setSelectedSheet(workbook.SheetNames[0]);
         }
       } catch (error) {
-        alert('Error reading Excel file. Please ensure it\'s a valid Excel file.');
+        toast.error('Error reading Excel file. Please ensure it\'s a valid Excel file.');
+        console.error('Excel file read error:', error);
       } finally {
         setIsLoadingExcel(false);
       }
     };
-    
+
     reader.onerror = () => {
-      alert('Error reading Excel file. Please ensure it\'s a valid Excel file.');
+      toast.error('Error reading Excel file. Please try again.');
       setIsLoadingExcel(false);
     };
     
@@ -255,8 +257,10 @@ export const useTranslationState = (): TranslationState => {
       setTranslations(new Array(sourceTexts.length).fill('[BLANK, REMOVE LATER]'));
       setCurrentIndex(0);
       setCurrentTranslation('');
+      toast.success(`Loaded ${sourceTexts.length} entries from ${selectedSheet}`);
     } catch (error) {
       console.error('Error processing Excel data:', error);
+      toast.error('Failed to process Excel data. Please check your column settings.');
     }
   }, [workbookData, selectedSheet, sourceColumn, uttererColumn, startRow, setSourceTexts, setUtterers, setTranslations, setCurrentIndex, setCurrentTranslation]);
 
@@ -329,10 +333,9 @@ export const useTranslationState = (): TranslationState => {
       // Remove whitespace and clean the text before copying
       const cleanText = sourceText.trim().replace(/\s+/g, ' ');
       navigator.clipboard.writeText(cleanText);
-      setShowCopied(true);
-      setTimeout(() => setShowCopied(false), 2000);
+      toast.success('Source text copied to clipboard');
     }
-  }, [currentIndex, sourceTexts, setShowCopied]);
+  }, [currentIndex, sourceTexts]);
   
   /**
    * Copy source text to JSON search
@@ -364,13 +367,14 @@ export const useTranslationState = (): TranslationState => {
       });
 
       if (response.ok) {
-        setShowCopied(true);
-        setTimeout(() => setShowCopied(false), 2000);
+        toast.success('Translation saved successfully');
       } else {
-        console.error('Failed to persist translation');
+        const data = await response.json();
+        toast.error(data.error || 'Failed to save translation');
       }
     } catch (error) {
       console.error('Error persisting translation:', error);
+      toast.error('Network error: Failed to save translation');
     }
   }, []);
   

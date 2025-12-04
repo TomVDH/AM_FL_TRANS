@@ -117,46 +117,27 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
    * @returns HTML string with highlighted elements
    */
   const highlightMatchingText = (text: string) => {
-    console.log('🎨 TextHighlighter Debug: Starting highlight for text:', text);
-    console.log('🎨 TextHighlighter Debug: jsonData available:', !!jsonData);
-    console.log('🎨 TextHighlighter Debug: xlsxData available:', !!xlsxData);
-    console.log('🎨 TextHighlighter Debug: highlightMode:', highlightMode);
-    
-    // Character highlighting is always available, even without JSON/XLSX data
-    const hasAnyData = jsonData || xlsxData || true; // Character data is always available
-    
     // Get matches from all data sources (character data is always active)
     const jsonMatches = jsonData ? findJsonMatches(text) : [];
     const xlsxMatches = xlsxData ? findXlsxMatches(text) : [];
     const assCharacters = detectAssCharacters(text);
     const characterMatches = findCharacterMatches(text); // Always enabled
-    
-    console.log('🎨 TextHighlighter Debug: Found JSON matches:', jsonMatches.length);
-    console.log('🎨 TextHighlighter Debug: Found XLSX matches:', xlsxMatches.length);
-    console.log('🎨 TextHighlighter Debug: Found Ass characters:', assCharacters.length);
-    console.log('🎨 TextHighlighter Debug: Found Character matches:', characterMatches.length);
-    
+
     let highlightedText = text;
-    
-    console.log('🎨 TextHighlighter Debug: Highlight mode is:', highlightMode);
     
     // Only highlight if highlight mode is enabled
     if (highlightMode) {
       // Process JSON matches
       if (jsonMatches.length > 0) {
       const sortedMatches = [...jsonMatches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
-      
+
       sortedMatches.forEach(match => {
-        console.log('🎨 TextHighlighter Debug: Processing JSON match:', match.sourceEnglish);
-        
         // Escape special regex characters in the sourceEnglish
         const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
-        
+
         // Create hover text
         const hoverText = getHoverText(match);
-        
-        console.log('🎨 TextHighlighter Debug: Replacing with hover text:', hoverText);
         
         // Replace with highlighted span that has hover functionality
         highlightedText = highlightedText.replace(regex, 
@@ -168,18 +149,14 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
     // Process XLSX matches
     if (xlsxMatches.length > 0) {
       const sortedXlsxMatches = [...xlsxMatches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
-      
+
       sortedXlsxMatches.forEach(match => {
-        console.log('🎨 TextHighlighter Debug: Processing XLSX match:', match.sourceEnglish);
-        
         // Escape special regex characters in the sourceEnglish
         const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
-        
+
         // Create hover text
         const hoverText = getXlsxHoverText(match);
-        
-        console.log('🎨 TextHighlighter Debug: Replacing with XLSX hover text:', hoverText);
         
         // Replace with highlighted span that has hover functionality
         highlightedText = highlightedText.replace(regex, 
@@ -190,12 +167,10 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
     
     // Always highlight character names from CSV (always active - blue highlighting)
     characterMatches.forEach(charMatch => {
-      console.log('🎨 TextHighlighter Debug: Processing character match:', charMatch.english);
-      
       // Escape special regex characters
       const escapedName = charMatch.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
       const regex = new RegExp(`\\b(${escapedName})\\b`, 'gi');
-      
+
       // Create hover text with Dutch translation
       const hoverText = `${charMatch.english} → ${charMatch.dutch}`;
       
@@ -213,8 +188,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       );
     });
     }
-    
-    console.log('🎨 TextHighlighter Debug: Final highlighted text length:', highlightedText.length);
+
     return highlightedText;
   };
 

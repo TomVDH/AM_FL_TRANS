@@ -5,10 +5,13 @@ import * as XLSX from 'xlsx';
 
 /**
  * XLSX Files API Endpoint
- * 
+ *
  * Returns available XLSX files and their sheet information
  * Can also search within XLSX files directly
  */
+
+// Maximum file size: 10MB
+const MAX_FILE_SIZE = 10 * 1024 * 1024;
 
 interface XLSXFileInfo {
   fileName: string;
@@ -81,17 +84,20 @@ export async function GET(request: NextRequest) {
       if (file.endsWith('.xlsx')) {
         try {
           const filePath = path.join(excelDir, file);
-          console.log(`Attempting to read: ${filePath}`);
-          
+
           // Check if file exists and is readable
           if (!fs.existsSync(filePath)) {
-            console.error(`File does not exist: ${filePath}`);
             continue;
           }
           
           const stats = fs.statSync(filePath);
-          console.log(`File stats: size=${stats.size}, modified=${stats.mtime}`);
-          
+
+          // Skip files that are too large
+          if (stats.size > MAX_FILE_SIZE) {
+            console.warn(`File ${file} exceeds size limit (${stats.size} bytes)`);
+            continue;
+          }
+
           // Try to read the workbook with error handling
           const fileBuffer = fs.readFileSync(filePath);
           const workbook = XLSX.read(fileBuffer, { type: 'buffer' });
@@ -102,8 +108,6 @@ export async function GET(request: NextRequest) {
             fileSize: stats.size,
             lastModified: stats.mtime.toISOString()
           });
-          
-          console.log(`Successfully read ${file} with sheets: ${workbook.SheetNames.join(', ')}`);
         } catch (error) {
           console.error(`Error reading ${file}:`, error);
           // Skip files that can't be read
@@ -143,14 +147,23 @@ export async function POST(request: NextRequest) {
     
     const excelDir = path.join(process.cwd(), 'excels');
     const filePath = path.join(excelDir, fileName);
-    
+
     if (!fs.existsSync(filePath)) {
       return NextResponse.json(
         { error: `File not found: ${fileName}` },
         { status: 404 }
       );
     }
-    
+
+    // Check file size before processing
+    const stats = fs.statSync(filePath);
+    if (stats.size > MAX_FILE_SIZE) {
+      return NextResponse.json(
+        { error: `File exceeds maximum size limit of ${MAX_FILE_SIZE / 1024 / 1024}MB` },
+        { status: 413 }
+      );
+    }
+
     const fileBuffer = fs.readFileSync(filePath);
     const workbook = XLSX.read(fileBuffer, { type: 'buffer' });
     const results: XLSXSearchResult[] = [];
