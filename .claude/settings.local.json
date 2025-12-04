@@ -30,7 +30,8 @@
       "Bash(tree:*)",
       "Bash(wc:*)",
       "Bash(git commit:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(node -e:*)"
     ],
     "deny": [],
     "ask": []

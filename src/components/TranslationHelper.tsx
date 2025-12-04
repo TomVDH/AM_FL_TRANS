@@ -942,7 +942,7 @@ const TranslationHelper: React.FC = () => {
               onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
               disabled={currentIndex === 0}
               className="px-4 py-2 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
-              style={{ 
+              style={{
                 borderRadius: '3px'
               }}
             >
@@ -953,11 +953,31 @@ const TranslationHelper: React.FC = () => {
               onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
               onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
               className="flex-1 px-4 py-2 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
-              style={{ 
+              style={{
                 borderRadius: '3px'
               }}
             >
-              {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Submit & Next ›'}
+              {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Submit'}
+            </button>
+            <button
+              onClick={() => {
+                handleSubmit();
+                // Wait for state to update, then move to next
+                setTimeout(() => {
+                  if (currentIndex < sourceTexts.length - 1) {
+                    // handleSubmit already moves to next
+                  }
+                }, 0);
+              }}
+              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
+              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
+              disabled={currentIndex === sourceTexts.length - 1}
+              className="px-4 py-2 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
+              style={{
+                borderRadius: '3px'
+              }}
+            >
+              Next ›
             </button>
           </div>
 
