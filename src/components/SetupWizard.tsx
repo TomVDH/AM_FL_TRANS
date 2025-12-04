@@ -115,8 +115,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   const [selectedExistingFile, setSelectedExistingFile] = React.useState('');
   const [localeColumns, setLocaleColumns] = React.useState<{column: string, locale: string}[]>([]);
 
-  // JSON/CSV file selection state
-  const [dataFileType, setDataFileType] = React.useState<'json' | 'csv'>('json');
+  // Unified file selection state
+  const [fileType, setFileType] = React.useState<'excel' | 'json' | 'csv'>('excel');
   const [jsonFiles, setJsonFiles] = React.useState<string[]>([]);
   const [csvFiles, setCsvFiles] = React.useState<string[]>([]);
   const [selectedDataFile, setSelectedDataFile] = React.useState('');
@@ -377,52 +377,29 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     <div className="flex-1 border-t border-gray-300 dark:border-gray-600"></div>
                   </div>
 
-                  {/* Existing Files Option */}
+                  {/* Unified File Selector */}
                   <div className="relative">
                     <label className="block text-sm font-bold mb-3 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
                       Load Existing File
-                    </label>
-                    {loadingExistingFiles ? (
-                      <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                        <p className="text-gray-500 dark:text-gray-400">Loading available files...</p>
-                      </div>
-                    ) : existingFiles.length > 0 ? (
-                      <select
-                        value={selectedExistingFile}
-                        onChange={(e) => handleExistingFileSelect(e.target.value)}
-                        className="w-full p-4 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-base"
-                        style={{ borderRadius: '3px' }}
-                      >
-                        <option value="">Select an existing Excel file...</option>
-                        {existingFiles.map(file => (
-                          <option key={file.fileName} value={file.fileName}>
-                            {file.fileName} ({file.sheets?.length || 0} sheets)
-                          </option>
-                        ))}
-                      </select>
-                    ) : (
-                      <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                        <p className="text-gray-500 dark:text-gray-400">No existing files found in /excels folder</p>
-                      </div>
-                    )}
-                  </div>
-
-                  {excelSheets.length > 0 && (
-                    <p className="text-sm text-green-600 dark:text-green-400 text-center font-medium">✓ File loaded successfully</p>
-                  )}
-
-                  {/* JSON/CSV File Selector */}
-                  <div className="mt-8 pt-8 border-t border-gray-300 dark:border-gray-600">
-                    <label className="block text-sm font-bold mb-3 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                      Load Reference Data (JSON/CSV)
                     </label>
 
                     {/* File Type Toggle */}
                     <div className="flex gap-2 mb-4">
                       <button
-                        onClick={() => setDataFileType('json')}
-                        className={`flex-1 px-4 py-2 font-bold tracking-tight uppercase transition-all duration-200 ${
-                          dataFileType === 'json'
+                        onClick={() => setFileType('excel')}
+                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 ${
+                          fileType === 'excel'
+                            ? 'bg-black dark:bg-white text-white dark:text-black'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                        }`}
+                        style={{ borderRadius: '3px' }}
+                      >
+                        Excel
+                      </button>
+                      <button
+                        onClick={() => setFileType('json')}
+                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 ${
+                          fileType === 'json'
                             ? 'bg-black dark:bg-white text-white dark:text-black'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                         }`}
@@ -431,9 +408,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                         JSON
                       </button>
                       <button
-                        onClick={() => setDataFileType('csv')}
-                        className={`flex-1 px-4 py-2 font-bold tracking-tight uppercase transition-all duration-200 ${
-                          dataFileType === 'csv'
+                        onClick={() => setFileType('csv')}
+                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 ${
+                          fileType === 'csv'
                             ? 'bg-black dark:bg-white text-white dark:text-black'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
                         }`}
@@ -443,31 +420,66 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       </button>
                     </div>
 
-                    {/* File Selector */}
-                    {loadingDataFiles ? (
-                      <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                        <p className="text-gray-500 dark:text-gray-400">Loading files...</p>
-                      </div>
-                    ) : (
-                      <select
-                        value={selectedDataFile}
-                        onChange={(e) => setSelectedDataFile(e.target.value)}
-                        className="w-full p-4 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-base"
-                        style={{ borderRadius: '3px' }}
-                      >
-                        <option value="">Select a {dataFileType.toUpperCase()} file...</option>
-                        {(dataFileType === 'json' ? jsonFiles : csvFiles).map(file => (
-                          <option key={file} value={file}>
-                            {file}
-                          </option>
-                        ))}
-                      </select>
+                    {/* Excel File Selector */}
+                    {fileType === 'excel' && (
+                      <>
+                        {loadingExistingFiles ? (
+                          <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                            <p className="text-gray-500 dark:text-gray-400">Loading files...</p>
+                          </div>
+                        ) : existingFiles.length > 0 ? (
+                          <select
+                            value={selectedExistingFile}
+                            onChange={(e) => handleExistingFileSelect(e.target.value)}
+                            className="w-full p-4 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-base"
+                            style={{ borderRadius: '3px' }}
+                          >
+                            <option value="">Select an Excel file...</option>
+                            {existingFiles.map(file => (
+                              <option key={file.fileName} value={file.fileName}>
+                                {file.fileName} ({file.sheets?.length || 0} sheets)
+                              </option>
+                            ))}
+                          </select>
+                        ) : (
+                          <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                            <p className="text-gray-500 dark:text-gray-400">No Excel files found in /excels folder</p>
+                          </div>
+                        )}
+                        {selectedExistingFile && excelSheets.length > 0 && (
+                          <p className="text-sm text-green-600 dark:text-green-400 mt-2 font-medium">✓ {selectedExistingFile} loaded</p>
+                        )}
+                      </>
                     )}
 
-                    {selectedDataFile && (
-                      <p className="text-sm text-green-600 dark:text-green-400 mt-2 font-medium">
-                        ✓ {selectedDataFile} selected
-                      </p>
+                    {/* JSON/CSV File Selector */}
+                    {(fileType === 'json' || fileType === 'csv') && (
+                      <>
+                        {loadingDataFiles ? (
+                          <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                            <p className="text-gray-500 dark:text-gray-400">Loading files...</p>
+                          </div>
+                        ) : (
+                          <select
+                            value={selectedDataFile}
+                            onChange={(e) => setSelectedDataFile(e.target.value)}
+                            className="w-full p-4 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-base"
+                            style={{ borderRadius: '3px' }}
+                          >
+                            <option value="">Select a {fileType.toUpperCase()} file...</option>
+                            {(fileType === 'json' ? jsonFiles : csvFiles).map(file => (
+                              <option key={file} value={file}>
+                                {file}
+                              </option>
+                            ))}
+                          </select>
+                        )}
+                        {selectedDataFile && (
+                          <p className="text-sm text-green-600 dark:text-green-400 mt-2 font-medium">
+                            ✓ {selectedDataFile} selected
+                          </p>
+                        )}
+                      </>
                     )}
                   </div>
                 </div>
@@ -678,7 +690,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             )}
             <button
               onClick={handleStart}
-              disabled={sourceTexts.length === 0}
+              disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
               className="w-full px-8 py-3 bg-black dark:bg-white text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
               style={{ borderRadius: '3px' }}
             >
