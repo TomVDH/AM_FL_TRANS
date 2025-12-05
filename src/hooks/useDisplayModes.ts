@@ -17,6 +17,7 @@ export const useDisplayModes = () => {
   const [eyeMode, setEyeMode] = useState(false);                       // Show translation instead of source
   const [highlightMode, setHighlightMode] = useState(true);            // Toggle highlighting of codex matches
   const [gamepadMode, setGamepadMode] = useState(false);               // Pixel dialogue box mode
+  const [eyeModeBeforeGamepad, setEyeModeBeforeGamepad] = useState(false); // Store eyeMode state before entering gamepad mode
 
   // Initialize and persist dark mode
   useEffect(() => {
@@ -46,7 +47,22 @@ export const useDisplayModes = () => {
   const toggleDarkMode = () => setDarkMode(prev => !prev);
   const toggleEyeMode = () => setEyeMode(prev => !prev);
   const toggleHighlightMode = () => setHighlightMode(prev => !prev);
-  const toggleGamepadMode = () => setGamepadMode(prev => !prev);
+  const toggleGamepadMode = () => {
+    setGamepadMode(prev => {
+      const newGamepadMode = !prev;
+
+      if (newGamepadMode) {
+        // Entering gamepad mode: save current eyeMode state and enable eyeMode
+        setEyeModeBeforeGamepad(eyeMode);
+        setEyeMode(true);
+      } else {
+        // Exiting gamepad mode: restore previous eyeMode state
+        setEyeMode(eyeModeBeforeGamepad);
+      }
+
+      return newGamepadMode;
+    });
+  };
 
   return {
     // State

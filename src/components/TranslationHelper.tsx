@@ -192,6 +192,13 @@ const TranslationHelper: React.FC = () => {
   const { characterData, findCharacterMatches } = useCharacterHighlighting();
 
   // Create wrapper function for XLSX matches that returns compatible format
+  // Trim speaker name to last dot for full name display
+  const trimSpeakerName = (speaker: string | undefined): string => {
+    if (!speaker) return '';
+    const lastDotIndex = speaker.lastIndexOf('.');
+    return lastDotIndex !== -1 ? speaker.substring(lastDotIndex + 1) : speaker;
+  };
+
   const findXlsxMatchesWrapper = useCallback((text: string) => {
     const matches = findXlsxMatches(text);
     return matches.map(match => ({
@@ -670,12 +677,7 @@ const TranslationHelper: React.FC = () => {
                   >
                     <div className="flex justify-center items-center">
                       <span className="text-shadow-pixel">
-                        {(() => {
-                          const utterer = utterers[currentIndex];
-                          if (!utterer) return 'Speaker';
-                          const parts = utterer.split('.');
-                          return parts.length >= 4 ? parts[3] : utterer;
-                        })()}
+                        {trimSpeakerName(utterers[currentIndex]) || 'Speaker'}
                       </span>
                     </div>
                   </div>
@@ -835,56 +837,6 @@ const TranslationHelper: React.FC = () => {
                     </div>
                   </div>
                 )}
-
-                {/* Next Source Translation Preview - Only show when eye mode is active */}
-                {eyeMode && currentIndex < sourceTexts.length - 1 && (
-                  <div
-                    className="gamepad-box relative pixelify-sans-500 bg-white dark:bg-gray-900 text-black dark:text-gray-100 border-2 border-dashed border-gray-300 dark:border-gray-600 opacity-50"
-                    style={{
-                      width: '450px',
-                      height: '150px',
-                      fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
-                      fontSize: '1.2rem',
-                      lineHeight: '1.4',
-                      overflow: 'hidden',
-                      letterSpacing: '0.02em',
-                      borderRadius: '4px',
-                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.05)',
-                      background: darkMode ? '#1a1a1a' : '#ffffff',
-                      position: 'relative'
-                    }}
-                  >
-                    {/* Speaker bar */}
-                    <div
-                      className="bg-gray-700 dark:bg-gray-800 text-white dark:text-gray-100 px-4 py-2 border-b-2 border-gray-400 dark:border-gray-700 text-left pixelify-sans-600 relative"
-                      style={{
-                        fontSize: '1.2rem',
-                        fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
-                        background: '#555555'
-                      }}
-                    >
-                      <div className="flex justify-center items-center">
-                        <span className="text-shadow-pixel opacity-60">Next Source Translation</span>
-                      </div>
-                    </div>
-
-                    {/* Main dialogue area */}
-                    <div
-                      className="p-3 relative text-left pixelify-sans-500 overflow-y-auto custom-scrollbar"
-                      style={{
-                        height: 'calc(100% - 45px)',
-                        fontFamily: 'var(--font-pixelify-sans), "Pixelify Sans", sans-serif',
-                        fontSize: '1.0rem',
-                        lineHeight: '1.5',
-                        background: darkMode ? '#1a1a1a' : '#ffffff'
-                      }}
-                    >
-                      <div className="opacity-60 line-clamp-3">
-                        {sourceTexts[currentIndex + 1]}
-                      </div>
-                    </div>
-                  </div>
-                )}
               </div>
                           ) : (
                 <div className="space-y-4">
@@ -920,7 +872,7 @@ const TranslationHelper: React.FC = () => {
                     {utterers.length > 0 && utterers[currentIndex] && (
                       <div className="text-left mb-2">
                         <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Speaker: </span>
-                        <span className="text-xs font-medium text-gray-600 dark:text-gray-300">{utterers[currentIndex]}</span>
+                        <span className="text-xs font-medium text-gray-600 dark:text-gray-300">{trimSpeakerName(utterers[currentIndex])}</span>
                       </div>
                     )}
                     <TextHighlighter
@@ -982,6 +934,21 @@ const TranslationHelper: React.FC = () => {
                         onCharacterNameClick={handleCharacterNameClick}
                         className="no-suggestions"
                       />
+                    </div>
+                  )}
+
+                  {/* Next Source Translation Preview - Only show when eye mode is active */}
+                  {eyeMode && currentIndex < sourceTexts.length - 1 && (
+                    <div
+                      className="text-lg font-medium leading-relaxed px-6 py-4 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 rounded relative opacity-50"
+                      style={{ borderRadius: '3px' }}
+                    >
+                      <div className="flex justify-between items-center mb-2">
+                        <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Next Source Text</span>
+                      </div>
+                      <div className="line-clamp-3">
+                        {sourceTexts[currentIndex + 1]}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -1127,13 +1094,16 @@ const TranslationHelper: React.FC = () => {
                         {/* Eye Mode - Translation Preview */}
                         <div className="flex flex-col items-center gap-1">
                           <button
-                            onClick={toggleEyeMode}
-                            className={`p-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ${
-                              eyeMode
-                                ? 'bg-gray-700 dark:bg-gray-300'
-                                : 'bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500'
+                            onClick={gamepadMode ? undefined : toggleEyeMode}
+                            disabled={gamepadMode}
+                            className={`p-3 rounded-full transition-all duration-200 shadow-md ${
+                              gamepadMode
+                                ? 'bg-gray-300 dark:bg-gray-700 opacity-50 cursor-not-allowed'
+                                : eyeMode
+                                  ? 'bg-gray-700 dark:bg-gray-300 hover:shadow-lg transform hover:-translate-y-0.5'
+                                  : 'bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500 hover:shadow-lg transform hover:-translate-y-0.5'
                             }`}
-                            title="Translation Preview"
+                            title={gamepadMode ? "Preview always on in UI View" : "Translation Preview"}
                           >
                             {eyeMode ? (
                               <svg className="w-6 h-6 text-white dark:text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1239,7 +1209,7 @@ const TranslationHelper: React.FC = () => {
             </div>
           </div>
           
-          <div key={outputKey} className="bg-gray-50 dark:bg-gray-700 p-5 border border-black dark:border-gray-600 flex-1 max-h-96 overflow-y-auto shadow-inner custom-scrollbar relative mb-6">
+          <div key={outputKey} className="bg-gray-50 dark:bg-gray-700 p-5 border border-black dark:border-gray-600 flex-1 overflow-y-auto shadow-inner custom-scrollbar relative mb-6 flex items-center justify-center">
             {/* Action Buttons */}
             <div className="absolute top-2 right-2 flex items-center gap-2">
               {/* Eye Icon Button - Toggle Display Mode */}
@@ -1284,7 +1254,7 @@ const TranslationHelper: React.FC = () => {
                   return '';
                 }
                 
-                const utterer = (utterers && utterers.length > 0 && utterers[idx]) ? `[${utterers[idx]}] ` : '';
+                const utterer = (utterers && utterers.length > 0 && utterers[idx]) ? `[${trimSpeakerName(utterers[idx])}] ` : '';
                 return `${getCellLocation(idx)}: ${utterer}${trans}`;
               }).filter(Boolean).join('\n') || 'Translations will appear here...'}
             </pre>
