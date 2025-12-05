@@ -266,4 +266,14 @@
     box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
     transform: scale(1);
   }
+}
+
+/* Smooth animated gradient shimmer for progress bar */
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 } 

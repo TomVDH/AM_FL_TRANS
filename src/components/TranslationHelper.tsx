@@ -182,6 +182,7 @@ const TranslationHelper: React.FC = () => {
   const [isLoadingCodex, setIsLoadingCodex] = useState(false);
   const [xlsxViewerTab, setXlsxViewerTab] = useState<'browse' | 'context'>('browse');
   const [showAllEntries, setShowAllEntries] = useState(false);
+  const [activeTab, setActiveTab] = useState<'input' | 'output'>('input');
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
@@ -378,71 +379,130 @@ const TranslationHelper: React.FC = () => {
           
         </div>
 
-        {/* Enhanced Progress Bar - Dynamic fill with gaps for blank entries */}
-        <div 
+        {/* Enhanced Progress Bar - Smooth animated gradient with segmented fill */}
+        <div
           ref={progressBarRef}
           className="relative h-3 bg-gray-200 dark:bg-gray-700 border border-black dark:border-gray-600 overflow-hidden shadow-inner cursor-pointer transition-all duration-300 mb-8"
+          style={{ borderRadius: '3px' }}
         >
           <div className="absolute inset-0 flex">
             {sourceTexts.map((_, index) => {
               const isCompleted = index < currentIndex; // Only completed when we've moved past it
               const isBlank = translations[index] === '' || translations[index] === '[BLANK, REMOVE LATER]';
               const isCurrent = index === currentIndex;
-              const isJustCompleted = index === currentIndex - 1; // The pip that was just submitted
+              const isJustCompleted = index === currentIndex - 1; // The segment that was just submitted
               const segmentWidth = (100 / sourceTexts.length);
-              
+
               return (
                 <div
                   key={index}
-                  className="relative h-full transition-all duration-300"
-                  style={{ 
-                    width: `${segmentWidth}%`,
-                    borderRight: index < sourceTexts.length - 1 ? '1px solid rgba(0,0,0,0.1)' : 'none'
+                  className="relative h-full"
+                  style={{
+                    width: `${segmentWidth}%`
                   }}
                 >
                   {isCompleted && (
                     <div
-                      className={`absolute inset-0 transition-all duration-500 ${
-                        isBlank 
-                          ? 'bg-red-800 dark:bg-red-900' // Dark red for blank entries
-                          : 'bg-green-500 dark:bg-green-400' // Green for completed translations
-                      }`}
+                      className="absolute inset-0 transition-all duration-700"
                       style={{
-                        backgroundImage: (darkMode 
-                          ? `repeating-linear-gradient(
-                              45deg,
-                              transparent,
-                              transparent 2px,
-                              rgba(255, 255, 255, 0.35) 2px,
-                              rgba(255, 255, 255, 0.35) 4px
-                            )`
-                          : `repeating-linear-gradient(
-                              45deg,
-                              transparent,
-                              transparent 2px,
-                              rgba(0, 0, 0, 0.2) 2px,
-                              rgba(0, 0, 0, 0.2) 4px
-                            )`),
-                        animation: (!isBlank && isJustCompleted) ? 'pipGlow 1s ease-out' : undefined,
-                        boxShadow: isBlank 
-                          ? '0 0 6px rgba(127, 29, 29, 0.5)' // Dark red glow for blank
-                          : (!isBlank && isJustCompleted) 
-                            ? '0 0 8px rgba(34, 197, 94, 0.6)' // Green glow for successful
-                            : undefined
+                        background: isBlank
+                          ? darkMode
+                            ? 'linear-gradient(90deg, #7f1d1d 0%, #991b1b 50%, #7f1d1d 100%)'
+                            : 'linear-gradient(90deg, #991b1b 0%, #b91c1c 50%, #991b1b 100%)'
+                          : darkMode
+                            ? 'linear-gradient(90deg, #16a34a 0%, #22c55e 50%, #16a34a 100%)'
+                            : 'linear-gradient(90deg, #22c55e 0%, #4ade80 50%, #22c55e 100%)',
+                        backgroundSize: '200% 100%',
+                        animation: isJustCompleted
+                          ? 'shimmer 1.5s ease-out, pipGlow 1s ease-out'
+                          : 'shimmer 3s ease-in-out infinite',
+                        boxShadow: isBlank
+                          ? '0 0 6px rgba(127, 29, 29, 0.5)'
+                          : (!isBlank && isJustCompleted)
+                            ? '0 0 12px rgba(34, 197, 94, 0.8)'
+                            : '0 0 4px rgba(34, 197, 94, 0.3)'
                       }}
                     />
                   )}
                   {isCurrent && !isCompleted && (
-                    <div 
-                      className="absolute inset-0 bg-gray-400 dark:bg-gray-500 opacity-50" 
+                    <div
+                      className="absolute inset-0 opacity-50"
                       style={{
-                        boxShadow: '0 0 8px rgba(156, 163, 175, 0.6)' // Gray glow for active/current
+                        background: darkMode
+                          ? 'linear-gradient(90deg, #6b7280 0%, #9ca3af 50%, #6b7280 100%)'
+                          : 'linear-gradient(90deg, #9ca3af 0%, #d1d5db 50%, #9ca3af 100%)',
+                        backgroundSize: '200% 100%',
+                        animation: 'shimmer 2s ease-in-out infinite',
+                        boxShadow: '0 0 8px rgba(156, 163, 175, 0.6)'
                       }}
                     />
                   )}
                 </div>
               );
             })}
+          </div>
+        </div>
+
+        {/* Navigation Buttons - Centered Above Grid */}
+        <div className="flex justify-center items-center gap-4 mb-8">
+          <div className="flex gap-3">
+            {/* Previous Button */}
+            <div className="flex flex-col items-center gap-1">
+              <button
+                ref={(el) => {
+                  if (el && buttonsRef.current) {
+                    // Store reference if needed
+                  }
+                }}
+                onClick={handlePrevious}
+                onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
+                onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
+                disabled={currentIndex === 0}
+                className="px-6 py-3 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm flex items-center gap-2"
+                style={{ borderRadius: '3px' }}
+              >
+                <span>← Previous</span>
+                <kbd className="px-1.5 py-0.5 text-xs font-bold text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '2px' }}>O</kbd>
+              </button>
+            </div>
+
+            {/* Submit Button */}
+            <div className="flex flex-col items-center gap-1">
+              <button
+                onClick={handleSubmit}
+                onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
+                onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
+                className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
+                style={{ borderRadius: '3px' }}
+              >
+                {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Submit'}
+              </button>
+              <div className="flex items-center gap-1">
+                <kbd className="px-1.5 py-0.5 text-xs font-bold text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '2px' }}>Shift</kbd>
+                <span className="text-xs text-gray-500 dark:text-gray-400">+</span>
+                <kbd className="px-1.5 py-0.5 text-xs font-bold text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '2px' }}>Enter</kbd>
+              </div>
+            </div>
+
+            {/* Next Button */}
+            <div className="flex flex-col items-center gap-1">
+              <button
+                onClick={() => {
+                  if (currentIndex < sourceTexts.length - 1) {
+                    setCurrentIndex(currentIndex + 1);
+                    setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
+                  }
+                }}
+                onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
+                onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
+                disabled={currentIndex === sourceTexts.length - 1}
+                className="px-6 py-3 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm flex items-center gap-2"
+                style={{ borderRadius: '3px' }}
+              >
+                <span>Next →</span>
+                <kbd className="px-1.5 py-0.5 text-xs font-bold text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '2px' }}>P</kbd>
+              </button>
+            </div>
           </div>
         </div>
 
@@ -897,130 +957,6 @@ const TranslationHelper: React.FC = () => {
                 </button>
               </div>
             </div>
-            <textarea
-              ref={textareaRef}
-              value={currentTranslation}
-              onChange={(e) => setCurrentTranslation(e.target.value)}
-              onKeyDown={(e) => {
-                if (e.key === 'Enter' && e.shiftKey) {
-                  e.preventDefault();
-                  handleSubmit();
-                }
-              }}
-              className="w-full p-5 border border-gray-300 dark:border-gray-600 rounded-md focus:border-gray-500 dark:focus:border-gray-400 focus:ring-2 focus:ring-gray-300 focus:ring-opacity-30 transition-all duration-200 text-lg leading-relaxed bg-gray-50 dark:bg-gray-700 shadow-inner dark:text-white resize-none"
-              placeholder="Enter your translation..."
-              rows={3}
-              autoFocus
-            />
-            <div className="mt-2">
-              <div className="flex items-start justify-between">
-                <p className="text-xs text-gray-500">
-                  Press Shift+Enter to submit
-                </p>
-                
-                {/* XLSX Translation Suggestions */}
-                {xlsxData && (() => {
-                  const matches = findXlsxMatchesWrapper(sourceTexts[currentIndex] || '');
-                  if (matches.length > 0) {
-                    // Sort matches by relevance: exact phrase matches first, then by length (longest first)
-                    const sortedMatches = matches.sort((a, b) => {
-                      const text = sourceTexts[currentIndex] || '';
-                      const aIsExact = a.sourceEnglish.toLowerCase() === text.toLowerCase();
-                      const bIsExact = b.sourceEnglish.toLowerCase() === text.toLowerCase();
-                      
-                      if (aIsExact && !bIsExact) return -1;
-                      if (!aIsExact && bIsExact) return 1;
-                      
-                      // If both are exact or both are partial, sort by length (longest first)
-                      return b.sourceEnglish.length - a.sourceEnglish.length;
-                    });
-                    
-                    console.log('🔧 TranslationHelper Debug: Sorted XLSX matches:', sortedMatches.map(m => ({
-                      sourceEnglish: m.sourceEnglish,
-                      translatedDutch: m.translatedDutch,
-                      category: m.category
-                    })));
-                    
-                    const firstMatch = sortedMatches[0];
-                    console.log('🔧 TranslationHelper Debug: Using XLSX match:', firstMatch.sourceEnglish, 'for text:', sourceTexts[currentIndex]);
-                    return (
-                      <div className="flex flex-wrap gap-2 justify-end ml-4" style={{ maxWidth: '50%' }}>
-                        {/* Translated Dutch Suggestion */}
-                        {firstMatch.translatedDutch && firstMatch.translatedDutch.trim() !== '' && (
-                          <button
-                            onClick={() => insertTranslatedSuggestion(firstMatch.translatedDutch)}
-                            className="px-3 py-1 text-xs bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-600 hover:bg-green-200 dark:hover:bg-green-700 transition-colors duration-200 font-medium whitespace-nowrap"
-                            style={{ 
-                              borderRadius: '3px'
-                            }}
-                            title={`Use Dutch translation: ${firstMatch.translatedDutch}`}
-                          >
-                            {firstMatch.translatedDutch}
-                          </button>
-                        )}
-                        
-                        {/* Placeholder Button */}
-                        <button
-                          onClick={() => insertPlaceholder(firstMatch.sourceEnglish)}
-                          className="px-3 py-1 text-xs bg-orange-100 dark:bg-orange-800 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-600 hover:bg-orange-200 dark:hover:bg-orange-700 transition-colors duration-200 font-medium whitespace-nowrap"
-                          style={{ 
-                            borderRadius: '3px'
-                          }}
-                          title={`Use placeholder: (${firstMatch.sourceEnglish})`}
-                        >
-                          Placeholder
-                        </button>
-                      </div>
-                    );
-                  }
-                  return null;
-                })()}
-              </div>
-            </div>
-          </div>
-
-          <div ref={buttonsRef} className="flex gap-3">
-            <button
-              onClick={handlePrevious}
-              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
-              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
-              disabled={currentIndex === 0}
-              className="px-4 py-2 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
-              style={{
-                borderRadius: '3px'
-              }}
-            >
-              ‹ Previous
-            </button>
-            <button
-              onClick={handleSubmit}
-              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
-              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
-              className="flex-1 px-4 py-2 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
-              style={{
-                borderRadius: '3px'
-              }}
-            >
-              {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Submit'}
-            </button>
-            <button
-              onClick={() => {
-                // Navigate to next without saving (just browse)
-                if (currentIndex < sourceTexts.length - 1) {
-                  setCurrentIndex(currentIndex + 1);
-                  setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
-                }
-              }}
-              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
-              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
-              disabled={currentIndex === sourceTexts.length - 1}
-              className="px-4 py-2 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
-              style={{
-                borderRadius: '3px'
-              }}
-            >
-              Next ›
-            </button>
           </div>
 
           {/* Jump to Row Accordion */}
@@ -1135,12 +1071,122 @@ const TranslationHelper: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column - Translated Output */}
+          {/* Right Column - Tabbed Interface */}
           <div className="h-full">
-            {/* Output Section */}
-            <div className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 shadow-md transition-transform duration-200 h-full flex flex-col ${
-              showCopied ? 'transform scale-95' : 'transform scale-100'
-            }`} style={{ borderRadius: '3px' }}>
+            <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-md h-full flex flex-col" style={{ borderRadius: '3px' }}>
+              {/* Tab Navigation */}
+              <div className="flex border-b border-gray-300 dark:border-gray-600">
+                <button
+                  onClick={() => setActiveTab('input')}
+                  className={`flex-1 px-4 py-3 font-black tracking-tight uppercase text-sm transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                    activeTab === 'input'
+                      ? 'border-b-2 border-black dark:border-white text-black dark:text-white bg-gray-50 dark:bg-gray-700'
+                      : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
+                  }`}
+                >
+                  Translation Input
+                </button>
+                <button
+                  onClick={() => setActiveTab('output')}
+                  className={`flex-1 px-4 py-3 font-black tracking-tight uppercase text-sm transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                    activeTab === 'output'
+                      ? 'border-b-2 border-black dark:border-white text-black dark:text-white bg-gray-50 dark:bg-gray-700'
+                      : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
+                  }`}
+                >
+                  Translation Output
+                </button>
+              </div>
+
+              {/* Tab Content */}
+              <div className={`p-6 flex-1 flex flex-col transition-transform duration-200 ${
+                showCopied ? 'transform scale-95' : 'transform scale-100'
+              }`}>
+
+                {/* Translation Input Tab */}
+                {activeTab === 'input' && (
+                  <div className="flex flex-col h-full">
+                    <div className="flex justify-between items-center mb-6">
+                      <div>
+                        <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translation Input</h3>
+                        <p className="text-xs text-gray-500 mt-1">Enter your translation below</p>
+                      </div>
+                    </div>
+
+                    {/* Textarea */}
+                    <textarea
+                      ref={textareaRef}
+                      value={currentTranslation}
+                      onChange={(e) => setCurrentTranslation(e.target.value)}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' && e.shiftKey) {
+                          e.preventDefault();
+                          handleSubmit();
+                        }
+                      }}
+                      className="w-full p-5 border border-gray-300 dark:border-gray-600 rounded-md focus:border-gray-500 dark:focus:border-gray-400 focus:ring-2 focus:ring-gray-300 focus:ring-opacity-30 transition-all duration-200 text-lg leading-relaxed bg-gray-50 dark:bg-gray-700 shadow-inner dark:text-white resize-none flex-1"
+                      placeholder="Enter your translation..."
+                      autoFocus
+                    />
+
+                    <div className="mt-4">
+                      <div className="flex items-start justify-between">
+                        <p className="text-xs text-gray-500">
+                          Press Shift+Enter to submit
+                        </p>
+
+                        {/* XLSX Translation Suggestions */}
+                        {xlsxData && (() => {
+                          const matches = findXlsxMatchesWrapper(sourceTexts[currentIndex] || '');
+                          if (matches.length > 0) {
+                            const sortedMatches = matches.sort((a, b) => {
+                              const text = sourceTexts[currentIndex] || '';
+                              const aIsExact = a.sourceEnglish.toLowerCase() === text.toLowerCase();
+                              const bIsExact = b.sourceEnglish.toLowerCase() === text.toLowerCase();
+
+                              if (aIsExact && !bIsExact) return -1;
+                              if (!aIsExact && bIsExact) return 1;
+
+                              return b.sourceEnglish.length - a.sourceEnglish.length;
+                            });
+
+                            const firstMatch = sortedMatches[0];
+                            return (
+                              <div className="flex flex-wrap gap-2 justify-end ml-4" style={{ maxWidth: '50%' }}>
+                                {/* Translated Dutch Suggestion */}
+                                {firstMatch.translatedDutch && firstMatch.translatedDutch.trim() !== '' && (
+                                  <button
+                                    onClick={() => insertTranslatedSuggestion(firstMatch.translatedDutch)}
+                                    className="px-3 py-1 text-xs bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-600 hover:bg-green-200 dark:hover:bg-green-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                                    style={{ borderRadius: '3px' }}
+                                    title={`Use Dutch translation: ${firstMatch.translatedDutch}`}
+                                  >
+                                    {firstMatch.translatedDutch}
+                                  </button>
+                                )}
+
+                                {/* Placeholder Button */}
+                                <button
+                                  onClick={() => insertPlaceholder(firstMatch.sourceEnglish)}
+                                  className="px-3 py-1 text-xs bg-orange-100 dark:bg-orange-800 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-600 hover:bg-orange-200 dark:hover:bg-orange-700 transition-colors duration-200 font-medium whitespace-nowrap"
+                                  style={{ borderRadius: '3px' }}
+                                  title={`Use placeholder: (${firstMatch.sourceEnglish})`}
+                                >
+                                  Placeholder
+                                </button>
+                              </div>
+                            );
+                          }
+                          return null;
+                        })()}
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Translation Output Tab */}
+                {activeTab === 'output' && (
+                  <div className="flex flex-col h-full">
           <div className="flex justify-between items-center mb-6">
             <div>
               <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translated Output</h3>
@@ -1245,6 +1291,9 @@ const TranslationHelper: React.FC = () => {
               <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Progress</p>
             </div>
           </div>
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         </div>

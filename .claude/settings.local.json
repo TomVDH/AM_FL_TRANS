@@ -31,7 +31,8 @@
       "Bash(wc:*)",
       "Bash(git commit:*)",
       "Bash(cat:*)",
-      "Bash(node -e:*)"
+      "Bash(node -e:*)",
+      "Bash(xargs kill:*)"
     ],
     "deny": [],
     "ask": []
