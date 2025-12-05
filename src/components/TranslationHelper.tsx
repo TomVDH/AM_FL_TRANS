@@ -366,17 +366,132 @@ const TranslationHelper: React.FC = () => {
 
       <div className="max-w-7xl mx-auto">
         {/* Header - Centered above grid */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-black mb-3 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
-          {selectedSheet && (
-            <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
-              Sheet: {selectedSheet}
+        <div className="mb-12">
+          <div className="text-center">
+            <h1 className="text-4xl font-black mb-3 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
+            {selectedSheet && (
+              <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+                Sheet: {selectedSheet}
+              </p>
+            )}
+          </div>
+
+          {/* Item Counter and Jump To - Side by Side */}
+          <div className="flex items-center justify-center gap-4 mt-4">
+            <p className="text-gray-600 dark:text-gray-400 text-lg">
+              {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
+              {selectedSheet && <> • {selectedSheet}</>}
             </p>
-          )}
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
-            {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
-          </p>
-          
+
+            {/* Jump to Row Accordion */}
+            <div className="relative">
+              <button
+                onClick={() => setAccordionStates(prev => ({ ...prev, jumpTo: !prev.jumpTo }))}
+                className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-semibold text-sm"
+                style={{ borderRadius: '3px' }}
+              >
+                <span>Jump to Row {excelSheets.length > 1 ? '/ Change Sheet' : ''}</span>
+                <svg
+                  className={`w-4 h-4 transition-transform duration-200 ${accordionStates.jumpTo ? 'transform rotate-180' : ''}`}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {accordionStates.jumpTo && (
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 p-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-lg space-y-4 z-50 min-w-max" style={{ borderRadius: '3px' }}>
+                  {/* Jump to Row Section */}
+                  <div className="space-y-2">
+                    <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide text-left block">Jump to Row:</label>
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={() => {
+                          const newIndex = Math.max(0, currentIndex - 5);
+                          setCurrentIndex(newIndex);
+                          setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                        }}
+                        className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
+                        style={{ borderRadius: '3px' }}
+                        title="Jump back 5 rows"
+                      >
+                        -5
+                      </button>
+                      <button
+                        onClick={() => {
+                          const newIndex = Math.max(0, currentIndex - 1);
+                          setCurrentIndex(newIndex);
+                          setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                        }}
+                        className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
+                        style={{ borderRadius: '3px' }}
+                        title="Jump back 1 row"
+                      >
+                        -1
+                      </button>
+                      <input
+                        type="number"
+                        min={startRow}
+                        max={startRow + sourceTexts.length - 1}
+                        value={startRow + currentIndex}
+                        onChange={(e) => {
+                          const rowNumber = parseInt(e.target.value);
+                          if (rowNumber >= startRow && rowNumber < startRow + sourceTexts.length) {
+                            jumpToRow(rowNumber);
+                          }
+                        }}
+                        placeholder={`${startRow}-${startRow + sourceTexts.length - 1}`}
+                        className="flex-1 p-2 text-sm text-center font-bold border-2 border-gray-400 dark:border-gray-500 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-800 shadow-sm dark:text-white"
+                        style={{ borderRadius: '3px' }}
+                      />
+                      <button
+                        onClick={() => {
+                          const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 1);
+                          setCurrentIndex(newIndex);
+                          setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                        }}
+                        className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
+                        style={{ borderRadius: '3px' }}
+                        title="Jump forward 1 row"
+                      >
+                        +1
+                      </button>
+                      <button
+                        onClick={() => {
+                          const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 5);
+                          setCurrentIndex(newIndex);
+                          setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                        }}
+                        className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
+                        style={{ borderRadius: '3px' }}
+                        title="Jump forward 5 rows"
+                      >
+                        +5
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Sheet Change - Only show if Excel sheets are available */}
+                  {excelSheets.length > 1 && (
+                    <div className="space-y-2">
+                      <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide text-left block">Sheet:</label>
+                      <select
+                        value={selectedSheet}
+                        onChange={(e) => handleSheetChange(e.target.value)}
+                        className="w-full p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
+                        style={{ borderRadius: '3px' }}
+                      >
+                        {excelSheets.map(sheet => (
+                          <option key={sheet} value={sheet}>{sheet}</option>
+                        ))}
+                      </select>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          </div>
         </div>
 
         {/* Enhanced Progress Bar - Smooth animated gradient with segmented fill */}
@@ -874,201 +989,6 @@ const TranslationHelper: React.FC = () => {
             </div>
           </div>
 
-
-
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <label className="text-base font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translation</label>
-              <div className="flex items-center gap-3">
-                {/* Reference Column UI - DISABLED FOR MVP
-                {useReferenceColumn && (
-                  <span className="text-xs bg-blue-100 dark:bg-blue-800 text-blue-900 dark:text-blue-300 px-3 py-1 font-bold shadow-sm border border-blue-600 dark:border-blue-600" style={{ borderRadius: '3px' }}>
-                    Verification Mode
-                  </span>
-                )}
-                */}
-                {/* Gamepad Mode - UI View */}
-                <button
-                  onClick={toggleGamepadMode}
-                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
-                  title="UI View"
-                >
-                  <svg className={`w-5 h-5 ${gamepadMode ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-500'}`} fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM11 7a1 1 0 100 2 1 1 0 000-2zm2 1a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zM8 10a1 1 0 100 2 1 1 0 000-2zm-2 1a1 1 0 01-1 1H4a1 1 0 110-2h1a1 1 0 011 1zm3.293 2.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM15 13a1 1 0 100 2 1 1 0 000-2z"/>
-                  </svg>
-                </button>
-                {/* Eye Mode - Translation Preview */}
-                <button
-                  onClick={toggleEyeMode}
-                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
-                  title="Translation Preview"
-                >
-                  {eyeMode ? (
-                    <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
-                  ) : (
-                    <svg className="w-5 h-5 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
-                    </svg>
-                  )}
-                </button>
-                {/* Highlight Mode - Codex Highlights */}
-                <button
-                  onClick={toggleHighlightMode}
-                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
-                  title="Codex Highlights"
-                >
-                  {highlightMode ? (
-                    <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C11.4477 2 11 2.44772 11 3V4C11 4.55228 11.4477 5 12 5C12.5523 5 13 4.55228 13 4V3C13 2.44772 12.5523 2 12 2Z"/>
-                      <path d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7Z"/>
-                      <path d="M12 19C11.4477 19 11 19.4477 11 20V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V20C13 19.4477 12.5523 19 12 19Z"/>
-                      <path d="M5.63604 5.63604C5.24551 6.02656 5.24551 6.65973 5.63604 7.05025L6.34315 7.75736C6.73367 8.14788 7.36683 8.14788 7.75736 7.75736C8.14788 7.36683 8.14788 6.73367 7.75736 6.34315L7.05025 5.63604C6.65973 5.24551 6.02656 5.24551 5.63604 5.63604Z"/>
-                      <path d="M18.364 5.63604C17.9735 5.24551 17.3403 5.24551 16.9497 5.63604L16.2426 6.34315C15.8521 6.73367 15.8521 7.36683 16.2426 7.75736C16.6332 8.14788 17.2663 8.14788 17.6569 7.75736L18.364 7.05025C18.7545 6.65973 18.7545 6.02656 18.364 5.63604Z"/>
-                      <path d="M2 12C2 11.4477 2.44772 11 3 11H4C4.55228 11 5 11.4477 5 12C5 12.5523 4.55228 13 4 13H3C2.44772 13 2 12.5523 2 12Z"/>
-                      <path d="M20 11C19.4477 11 19 11.4477 19 12C19 12.5523 19.4477 13 20 13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H20Z"/>
-                      <path d="M7.75736 16.2426C7.36683 15.8521 6.73367 15.8521 6.34315 16.2426L5.63604 16.9497C5.24551 17.3403 5.24551 17.9735 5.63604 18.364C6.02656 18.7545 6.65973 18.7545 7.05025 18.364L7.75736 17.6569C8.14788 17.2663 8.14788 16.6332 7.75736 16.2426Z"/>
-                      <path d="M17.6569 16.2426C17.2663 15.8521 16.6332 15.8521 16.2426 16.2426C15.8521 16.6332 15.8521 17.2663 16.2426 17.6569L16.9497 18.364C17.3403 18.7545 17.9735 18.7545 18.364 18.364C18.7545 17.9735 18.7545 17.3403 18.364 16.9497L17.6569 16.2426Z"/>
-                    </svg>
-                  ) : (
-                    <svg className="w-5 h-5 text-gray-400 dark:text-gray-500" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C11.4477 2 11 2.44772 11 3V4C11 4.55228 11.4477 5 12 5C12.5523 5 13 4.55228 13 4V3C13 2.44772 12.5523 2 12 2Z"/>
-                      <path d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7Z"/>
-                      <path d="M12 19C11.4477 19 11 19.4477 11 20V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V20C13 19.4477 12.5523 19 12 19Z"/>
-                      <path d="M5.63604 5.63604C5.24551 6.02656 5.24551 6.65973 5.63604 7.05025L6.34315 7.75736C6.73367 8.14788 7.36683 8.14788 7.75736 7.75736C8.14788 7.36683 8.14788 6.73367 7.75736 6.34315L7.05025 5.63604C6.65973 5.24551 6.02656 5.24551 5.63604 5.63604Z"/>
-                      <path d="M18.364 5.63604C17.9735 5.24551 17.3403 5.24551 16.9497 5.63604L16.2426 6.34315C15.8521 6.73367 15.8521 7.36683 16.2426 7.75736C16.6332 8.14788 17.2663 8.14788 17.6569 7.75736L18.364 7.05025C18.7545 6.65973 18.7545 6.02656 18.364 5.63604Z"/>
-                      <path d="M2 12C2 11.4477 2.44772 11 3 11H4C4.55228 11 5 11.4477 5 12C5 12.5523 4.55228 13 4 13H3C2.44772 13 2 12.5523 2 12Z"/>
-                      <path d="M20 11C19.4477 11 19 11.4477 19 12C19 12.5523 19.4477 13 20 13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H20Z"/>
-                      <path d="M7.75736 16.2426C7.36683 15.8521 6.73367 15.8521 6.34315 16.2426L5.63604 16.9497C5.24551 17.3403 5.24551 17.9735 5.63604 18.364C6.02656 18.7545 6.65973 18.7545 7.05025 18.364L7.75736 17.6569C8.14788 17.2663 8.14788 16.6332 7.75736 16.2426Z"/>
-                      <path d="M17.6569 16.2426C17.2663 15.8521 16.6332 15.8521 16.2426 16.2426C15.8521 16.6332 15.8521 17.2663 16.2426 17.6569L16.9497 18.364C17.3403 18.7545 17.9735 18.7545 18.364 18.364C18.7545 17.9735 18.7545 17.3403 18.364 16.9497L17.6569 16.2426Z"/>
-                    </svg>
-                  )}
-                </button>
-                {/* XLSX Mode Toggle */}
-                <button
-                  onClick={toggleXlsxMode}
-                  className="p-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
-                  title="XLSX Data View"
-                >
-                  <svg className={`w-5 h-5 ${xlsxMode ? 'text-gray-700 dark:text-gray-300' : 'text-gray-400 dark:text-gray-500'}`} fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          {/* Jump to Row Accordion */}
-          <div className="mt-4">
-            <button
-              onClick={() => setAccordionStates(prev => ({ ...prev, jumpTo: !prev.jumpTo }))}
-              className="w-full flex items-center justify-between px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-semibold text-sm"
-              style={{ borderRadius: '3px' }}
-            >
-              <span>Jump to Row {excelSheets.length > 1 ? '/ Change Sheet' : ''}</span>
-              <svg
-                className={`w-4 h-4 transition-transform duration-200 ${accordionStates.jumpTo ? 'transform rotate-180' : ''}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            {accordionStates.jumpTo && (
-              <div className="mt-2 p-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-sm space-y-4" style={{ borderRadius: '3px' }}>
-                {/* Jump to Row Section */}
-                <div className="space-y-2">
-                  <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide text-left block">Jump to Row:</label>
-                  <div className="flex items-center gap-2">
-                    <button
-                      onClick={() => {
-                        const newIndex = Math.max(0, currentIndex - 5);
-                        setCurrentIndex(newIndex);
-                        setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
-                      }}
-                      className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
-                      style={{ borderRadius: '3px' }}
-                      title="Jump back 5 rows"
-                    >
-                      -5
-                    </button>
-                    <button
-                      onClick={() => {
-                        const newIndex = Math.max(0, currentIndex - 1);
-                        setCurrentIndex(newIndex);
-                        setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
-                      }}
-                      className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
-                      style={{ borderRadius: '3px' }}
-                      title="Jump back 1 row"
-                    >
-                      -1
-                    </button>
-                    <input
-                      type="number"
-                      min={startRow}
-                      max={startRow + sourceTexts.length - 1}
-                      value={startRow + currentIndex}
-                      onChange={(e) => {
-                        const rowNumber = parseInt(e.target.value);
-                        if (rowNumber >= startRow && rowNumber < startRow + sourceTexts.length) {
-                          jumpToRow(rowNumber);
-                        }
-                      }}
-                      placeholder={`${startRow}-${startRow + sourceTexts.length - 1}`}
-                      className="flex-1 p-2 text-sm text-center font-bold border-2 border-gray-400 dark:border-gray-500 focus:border-black dark:focus:border-white focus:ring-2 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-800 shadow-sm dark:text-white"
-                      style={{ borderRadius: '3px' }}
-                    />
-                    <button
-                      onClick={() => {
-                        const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 1);
-                        setCurrentIndex(newIndex);
-                        setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
-                      }}
-                      className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
-                      style={{ borderRadius: '3px' }}
-                      title="Jump forward 1 row"
-                    >
-                      +1
-                    </button>
-                    <button
-                      onClick={() => {
-                        const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 5);
-                        setCurrentIndex(newIndex);
-                        setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
-                      }}
-                      className="px-4 py-2 bg-gray-200 dark:bg-gray-600 text-gray-900 dark:text-gray-100 border border-gray-400 dark:border-gray-500 hover:bg-gray-300 dark:hover:bg-gray-500 transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 font-black text-sm"
-                      style={{ borderRadius: '3px' }}
-                      title="Jump forward 5 rows"
-                    >
-                      +5
-                    </button>
-                  </div>
-                </div>
-
-                {/* Sheet Change - Only show if Excel sheets are available */}
-                {excelSheets.length > 1 && (
-                  <div className="space-y-2">
-                    <label className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide text-left block">Sheet:</label>
-                    <select
-                      value={selectedSheet}
-                      onChange={(e) => handleSheetChange(e.target.value)}
-                      className="w-full p-2 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
-                      style={{ borderRadius: '3px' }}
-                    >
-                      {excelSheets.map(sheet => (
-                        <option key={sheet} value={sheet}>{sheet}</option>
-                      ))}
-                    </select>
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-
             </div>
           </div>
 
@@ -1180,6 +1100,98 @@ const TranslationHelper: React.FC = () => {
                           }
                           return null;
                         })()}
+                      </div>
+                    </div>
+
+                    {/* UI Control Buttons - Display Mode Controls */}
+                    <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-600">
+                      <div className="flex items-center justify-center gap-4">
+                        {/* Gamepad Mode - UI View */}
+                        <div className="flex flex-col items-center gap-1">
+                          <button
+                            onClick={toggleGamepadMode}
+                            className={`p-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ${
+                              gamepadMode
+                                ? 'bg-gray-700 dark:bg-gray-300'
+                                : 'bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500'
+                            }`}
+                            title="Gamepad UI View"
+                          >
+                            <svg className={`w-6 h-6 ${gamepadMode ? 'text-white dark:text-gray-900' : 'text-gray-600 dark:text-gray-300'}`} fill="currentColor" viewBox="0 0 20 20">
+                              <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM11 7a1 1 0 100 2 1 1 0 000-2zm2 1a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zM8 10a1 1 0 100 2 1 1 0 000-2zm-2 1a1 1 0 01-1 1H4a1 1 0 110-2h1a1 1 0 011 1zm3.293 2.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM15 13a1 1 0 100 2 1 1 0 000-2z"/>
+                            </svg>
+                          </button>
+                          <span className="text-xs font-medium text-gray-600 dark:text-gray-400">UI View</span>
+                        </div>
+
+                        {/* Eye Mode - Translation Preview */}
+                        <div className="flex flex-col items-center gap-1">
+                          <button
+                            onClick={toggleEyeMode}
+                            className={`p-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ${
+                              eyeMode
+                                ? 'bg-gray-700 dark:bg-gray-300'
+                                : 'bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500'
+                            }`}
+                            title="Translation Preview"
+                          >
+                            {eyeMode ? (
+                              <svg className="w-6 h-6 text-white dark:text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                              </svg>
+                            ) : (
+                              <svg className="w-6 h-6 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l3.59 3.59m0 0A9.953 9.953 0 0112 5c4.478 0 8.268 2.943 9.543 7a10.025 10.025 0 01-4.132 5.411m0 0L21 21" />
+                              </svg>
+                            )}
+                          </button>
+                          <span className="text-xs font-medium text-gray-600 dark:text-gray-400">Preview</span>
+                        </div>
+
+                        {/* Highlight Mode - Codex Highlights */}
+                        <div className="flex flex-col items-center gap-1">
+                          <button
+                            onClick={toggleHighlightMode}
+                            className={`p-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ${
+                              highlightMode
+                                ? 'bg-gray-700 dark:bg-gray-300'
+                                : 'bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500'
+                            }`}
+                            title="Codex Highlights"
+                          >
+                            <svg className={`w-6 h-6 ${highlightMode ? 'text-white dark:text-gray-900' : 'text-gray-600 dark:text-gray-300'}`} fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M12 2C11.4477 2 11 2.44772 11 3V4C11 4.55228 11.4477 5 12 5C12.5523 5 13 4.55228 13 4V3C13 2.44772 12.5523 2 12 2Z"/>
+                              <path d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7Z"/>
+                              <path d="M12 19C11.4477 19 11 19.4477 11 20V21C11 21.5523 11.4477 22 12 22C12.5523 22 13 21.5523 13 21V20C13 19.4477 12.5523 19 12 19Z"/>
+                              <path d="M5.63604 5.63604C5.24551 6.02656 5.24551 6.65973 5.63604 7.05025L6.34315 7.75736C6.73367 8.14788 7.36683 8.14788 7.75736 7.75736C8.14788 7.36683 8.14788 6.73367 7.75736 6.34315L7.05025 5.63604C6.65973 5.24551 6.02656 5.24551 5.63604 5.63604Z"/>
+                              <path d="M18.364 5.63604C17.9735 5.24551 17.3403 5.24551 16.9497 5.63604L16.2426 6.34315C15.8521 6.73367 15.8521 7.36683 16.2426 7.75736C16.6332 8.14788 17.2663 8.14788 17.6569 7.75736L18.364 7.05025C18.7545 6.65973 18.7545 6.02656 18.364 5.63604Z"/>
+                              <path d="M2 12C2 11.4477 2.44772 11 3 11H4C4.55228 11 5 11.4477 5 12C5 12.5523 4.55228 13 4 13H3C2.44772 13 2 12.5523 2 12Z"/>
+                              <path d="M20 11C19.4477 11 19 11.4477 19 12C19 12.5523 19.4477 13 20 13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H20Z"/>
+                              <path d="M7.75736 16.2426C7.36683 15.8521 6.73367 15.8521 6.34315 16.2426L5.63604 16.9497C5.24551 17.3403 5.24551 17.9735 5.63604 18.364C6.02656 18.7545 6.65973 18.7545 7.05025 18.364L7.75736 17.6569C8.14788 17.2663 8.14788 16.6332 7.75736 16.2426Z"/>
+                              <path d="M17.6569 16.2426C17.2663 15.8521 16.6332 15.8521 16.2426 16.2426C15.8521 16.6332 15.8521 17.2663 16.2426 17.6569L16.9497 18.364C17.3403 18.7545 17.9735 18.7545 18.364 18.364C18.7545 17.9735 18.7545 17.3403 18.364 16.9497L17.6569 16.2426Z"/>
+                            </svg>
+                          </button>
+                          <span className="text-xs font-medium text-gray-600 dark:text-gray-400">Highlights</span>
+                        </div>
+
+                        {/* XLSX Mode Toggle */}
+                        <div className="flex flex-col items-center gap-1">
+                          <button
+                            onClick={toggleXlsxMode}
+                            className={`p-3 rounded-full transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 ${
+                              xlsxMode
+                                ? 'bg-gray-700 dark:bg-gray-300'
+                                : 'bg-gray-200 dark:bg-gray-600 hover:bg-gray-300 dark:hover:bg-gray-500'
+                            }`}
+                            title="XLSX Data View"
+                          >
+                            <svg className={`w-6 h-6 ${xlsxMode ? 'text-white dark:text-gray-900' : 'text-gray-600 dark:text-gray-300'}`} fill="currentColor" viewBox="0 0 24 24">
+                              <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                            </svg>
+                          </button>
+                          <span className="text-xs font-medium text-gray-600 dark:text-gray-400">Data View</span>
+                        </div>
                       </div>
                     </div>
                   </div>
