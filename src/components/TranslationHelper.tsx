@@ -520,12 +520,6 @@ const TranslationHelper: React.FC = () => {
               style={{ borderRadius: '3px' }}
             >
           <div className="space-y-6">
-            {utterers.length > 0 && utterers[currentIndex] && (
-              <div className="mb-4">
-                <label className="text-sm font-black text-gray-600 dark:text-gray-400 uppercase tracking-wide block mb-2">Speaker</label>
-                <p className="text-lg font-medium text-gray-500 dark:text-gray-400">{utterers[currentIndex]}</p>
-              </div>
-            )}
             <div className="space-y-2">
               {gamepadMode ? (
                 <div className="flex gap-8 justify-center">
@@ -806,6 +800,13 @@ const TranslationHelper: React.FC = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
                         </svg>
                       </button>
+                    )}
+                    {/* Inline Speaker Label - Show only when speaker exists */}
+                    {utterers.length > 0 && utterers[currentIndex] && (
+                      <div className="text-left mb-2">
+                        <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Speaker: </span>
+                        <span className="text-xs font-medium text-gray-600 dark:text-gray-300">{utterers[currentIndex]}</span>
+                      </div>
                     )}
                     <TextHighlighter
                       text={sourceTexts[currentIndex]}
