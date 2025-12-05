@@ -644,7 +644,7 @@ const TranslationHelper: React.FC = () => {
           <div className="space-y-6">
             <div className="space-y-2">
               {gamepadMode ? (
-                <div className="flex gap-8 justify-center">
+                <div className="flex flex-col gap-8 items-center">
                   {/* Main Dialogue Box */}
                   <div 
                     ref={dialogueBoxRef}
