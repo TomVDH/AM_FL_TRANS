@@ -50,13 +50,10 @@ export const useJsonHighlighting = (initialJsonData?: any): JsonHighlightingStat
    */
   const findJsonMatches = useCallback((text: string): any[] => {
     if (!highlightingJsonData || !text) return [];
-    
+
     const matches: any[] = [];
     const searchText = text.toLowerCase();
-    
-    console.log('🔧 JSON Highlighting Debug: Searching for:', searchText);
-    console.log('🔧 JSON Highlighting Debug: JSON data structure:', highlightingJsonData);
-    
+
     // Search through JSON data structure
     if (highlightingJsonData.sheets) {
       highlightingJsonData.sheets.forEach((sheet: any) => {
@@ -65,21 +62,19 @@ export const useJsonHighlighting = (initialJsonData?: any): JsonHighlightingStat
             // Check multiple fields for matches
             const fieldsToCheck = ['utterer', 'sourceEnglish', 'translatedDutch', 'context'];
             let found = false;
-            
+
             fieldsToCheck.forEach(field => {
               if (entry[field] && entry[field].toLowerCase().includes(searchText)) {
                 matches.push(entry);
                 found = true;
-                console.log('🔧 JSON Highlighting Debug: Found match in', field, ':', entry[field]);
               }
             });
-            
+
             // Also check if the search text contains any of the entry values
             if (!found) {
               fieldsToCheck.forEach(field => {
                 if (entry[field] && searchText.includes(entry[field].toLowerCase())) {
                   matches.push(entry);
-                  console.log('🔧 JSON Highlighting Debug: Found reverse match:', entry[field]);
                 }
               });
             }
@@ -87,8 +82,7 @@ export const useJsonHighlighting = (initialJsonData?: any): JsonHighlightingStat
         }
       });
     }
-    
-    console.log('🔧 JSON Highlighting Debug: Total matches found:', matches.length);
+
     return matches;
   }, [highlightingJsonData]);
   
@@ -119,18 +113,14 @@ export const useJsonHighlighting = (initialJsonData?: any): JsonHighlightingStat
    * This data is used for highlighting world entities and character names.
    */
   const loadLocalizationManual = useCallback(async () => {
-    console.log('🔧 JSON Highlighting Debug: Loading Localization Manual for highlighting');
     try {
       const response = await fetch('/api/json-data?file=READ_ME_LocalizationManual.json');
       if (response.ok) {
         const data = await response.json();
         setHighlightingJsonData(data);
-        console.log('🔧 JSON Highlighting Debug: Localization Manual loaded for highlighting');
-      } else {
-        console.log('🔧 JSON Highlighting Debug: Failed to load Localization Manual');
       }
     } catch (error) {
-      console.log('🔧 JSON Highlighting Debug: Error loading Localization Manual:', error);
+      console.error('Error loading Localization Manual:', error);
     }
   }, []);
   
@@ -152,14 +142,13 @@ export const useJsonHighlighting = (initialJsonData?: any): JsonHighlightingStat
   
   /**
    * Copy source text to JSON search
-   * 
+   *
    * Sets the current source text as the JSON search term.
    * Used for searching the current text in the JSON viewer.
    */
   const copySourceToJsonSearch = useCallback(() => {
     // This function would be called with the current source text
     // The actual implementation depends on how it's used in the component
-    console.log('🔧 JSON Highlighting Debug: Copying source text to JSON search');
   }, []);
   
   // ========== Effects ==========
@@ -172,23 +161,6 @@ export const useJsonHighlighting = (initialJsonData?: any): JsonHighlightingStat
       loadLocalizationManual();
     }
   }, [highlightingJsonData, loadLocalizationManual]);
-  
-  /**
-   * Debug: Log JSON data changes
-   */
-  useEffect(() => {
-    console.log('🔧 JSON Highlighting Debug: highlightingJsonData:', highlightingJsonData);
-    console.log('🔧 JSON Highlighting Debug: highlightingJsonData sheets:', highlightingJsonData?.sheets?.length);
-    if (highlightingJsonData?.sheets) {
-      const namesSheet = highlightingJsonData.sheets.find((sheet: any) => 
-        sheet.sheetName === "Names and World Overview"
-      );
-      console.log('🔧 JSON Highlighting Debug: Names sheet found:', !!namesSheet);
-      if (namesSheet) {
-        console.log('🔧 JSON Highlighting Debug: Names sheet entries:', namesSheet.entries?.length);
-      }
-    }
-  }, [highlightingJsonData]);
   
   return {
     // State

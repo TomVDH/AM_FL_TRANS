@@ -35,6 +35,9 @@ interface SetupWizardProps {
   setSourceTexts?: (texts: string[]) => void;
   setUtterers?: (utterers: string[]) => void;
   setTranslations?: (translations: string[]) => void;
+  setLoadedFileName?: (fileName: string) => void;
+  setLoadedFileType?: (fileType: 'excel' | 'json' | 'csv' | 'manual' | '') => void;
+  setOriginalTranslations?: (translations: string[]) => void;
 
   // Event handlers
   handleFileUpload: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -104,6 +107,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   setSourceTexts,
   setUtterers,
   setTranslations,
+  setLoadedFileName,
+  setLoadedFileType,
+  setOriginalTranslations,
   handleFileUpload,
   handleSourceInput,
   handleStart,
@@ -127,6 +133,18 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   const [csvFiles, setCsvFiles] = React.useState<string[]>([]);
   const [selectedDataFile, setSelectedDataFile] = React.useState('');
   const [loadingDataFiles, setLoadingDataFiles] = React.useState(false);
+
+  // Handle file type change - clear previous selections and data to avoid stale state
+  const handleFileTypeChange = React.useCallback((newType: 'excel' | 'json' | 'csv') => {
+    setFileType(newType);
+    // Clear selections when switching file types to prevent loading wrong data
+    setSelectedDataFile('');
+    setSelectedExistingFile('');
+    // Clear any previously loaded source data to force fresh load
+    if (setSourceTexts) setSourceTexts([]);
+    if (setUtterers) setUtterers([]);
+    if (setTranslations) setTranslations([]);
+  }, [setSourceTexts, setUtterers, setTranslations]);
 
   // Load existing files on component mount
   React.useEffect(() => {
@@ -188,6 +206,11 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   const handleStartWithDataFile = async () => {
     // If sourceTexts are already populated (e.g., from Excel or manual input), just start
     if (sourceTexts.length > 0) {
+      // For Excel files, set the loaded file info
+      if (fileType === 'excel' && selectedExistingFile) {
+        setLoadedFileName?.(selectedExistingFile);
+        setLoadedFileType?.('excel');
+      }
       handleStart();
       return;
     }
@@ -244,6 +267,11 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         setSourceTexts(texts);
         setUtterers(speakers);
         setTranslations(existingTranslations);
+
+        // Track the loaded file info and original translations for persistence logic
+        setLoadedFileName?.(selectedDataFile);
+        setLoadedFileType?.(fileType);
+        setOriginalTranslations?.(existingTranslations);
 
       } catch (error) {
         console.error(`Error loading ${fileType} file:`, error);
@@ -338,15 +366,30 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         )}
       </button>
 
-      <div className="max-w-7xl w-full space-y-8" style={{ animation: 'fadeIn 0.5s ease-out' }}>
-        <div className="text-center mb-12">
-          <h1 className="text-6xl font-black mb-4 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">Choose your input method below</p>
+      {/* Main Container - Responsive width based on configuration panel visibility */}
+      <div
+        className={`w-full space-y-6 transition-all duration-500 ease-in-out ${
+          excelSheets.length > 0 ? 'max-w-4xl' : 'max-w-2xl'
+        }`}
+        style={{ animation: 'fadeIn 0.5s ease-out' }}
+      >
+        {/* Header Section - Tighter spacing */}
+        <div className="text-center mb-6">
+          <h1 className="text-5xl font-black mb-3 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
+          <p className="text-gray-600 dark:text-gray-400 text-base">Choose your input method below</p>
+          {/* Dutch Translation Column Reminder */}
+          <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-amber-50 dark:bg-amber-900/20 border border-amber-300 dark:border-amber-700 text-amber-800 dark:text-amber-300 text-xs font-medium" style={{ borderRadius: '3px' }}>
+            <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+            </svg>
+            <span>Dutch translations → Column J (hardcoded)</span>
+          </div>
         </div>
-        
-        <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-8 space-y-8 shadow-sm transition-all duration-300">
+
+        {/* Main Form Card - Tighter padding */}
+        <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 space-y-6 shadow-sm transition-all duration-300">
           {/* Input Mode Toggle - Hidden but preserved */}
-          <div className="hidden justify-center mb-8">
+          <div className="hidden justify-center mb-6">
             <div className="bg-gray-100 dark:bg-gray-700 border border-black dark:border-gray-600 p-1 flex transition-colors duration-300">
               <button
                 onClick={() => setInputMode('excel')}
@@ -385,15 +428,15 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           </div>
 
           {/* Excel Upload Section */}
-          <div className="space-y-6 animate-fade-in">
-            
-            <div className="grid grid-cols-2 gap-6">
+          <div className="space-y-4 animate-fade-in">
+
+            <div className="grid grid-cols-2 gap-4">
               {/* Upload Options Panel */}
               <div className={`transition-all duration-500 ease-in-out ${excelSheets.length > 0 ? 'col-span-1' : 'col-span-2'}`}>
-                <div className="space-y-6 mx-auto" style={{ maxWidth: excelSheets.length > 0 ? 'none' : '600px' }}>
+                <div className="space-y-4 mx-auto" style={{ maxWidth: excelSheets.length > 0 ? 'none' : 'none' }}>
                   {/* File Upload Option */}
                   <div className="relative">
-                    <label className="block text-sm font-bold mb-3 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
+                    <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
                       Upload New File
                     </label>
                     <input
@@ -429,18 +472,18 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                           }
                         }
                       }}
-                      className="w-full p-6 border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-gray-50 dark:bg-gray-800 transition-all duration-200 cursor-pointer text-center"
+                      className="w-full p-4 border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-gray-50 dark:bg-gray-800 transition-all duration-200 cursor-pointer text-center"
                       style={{ borderRadius: '3px' }}
                     >
-                      <div className="space-y-3">
-                        <svg className="mx-auto h-10 w-10 text-gray-400 dark:text-gray-500" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                      <div className="space-y-2">
+                        <svg className="mx-auto h-8 w-8 text-gray-400 dark:text-gray-500" stroke="currentColor" fill="none" viewBox="0 0 48 48">
                           <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>
                         <div>
-                          <p className="text-base font-bold text-gray-900 dark:text-gray-100">
+                          <p className="text-sm font-bold text-gray-900 dark:text-gray-100">
                             Drop Excel file here or click to browse
                           </p>
-                          <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                          <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
                             Supports .xlsx and .xls files
                           </p>
                         </div>
@@ -451,21 +494,21 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                   {/* Divider */}
                   <div className="flex items-center">
                     <div className="flex-1 border-t border-gray-300 dark:border-gray-600"></div>
-                    <span className="px-3 text-sm text-gray-500 dark:text-gray-400 font-medium">OR</span>
+                    <span className="px-2 text-xs text-gray-500 dark:text-gray-400 font-medium">OR</span>
                     <div className="flex-1 border-t border-gray-300 dark:border-gray-600"></div>
                   </div>
 
                   {/* Unified File Selector */}
                   <div className="relative">
-                    <label className="block text-sm font-bold mb-3 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
+                    <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
                       Load Existing File
                     </label>
 
                     {/* File Type Toggle */}
-                    <div className="flex gap-2 mb-4">
+                    <div className="flex gap-1.5 mb-3">
                       <button
-                        onClick={() => setFileType('excel')}
-                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                        onClick={() => handleFileTypeChange('excel')}
+                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
                           fileType === 'excel'
                             ? 'bg-black dark:bg-white text-white dark:text-black'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -475,8 +518,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                         Excel
                       </button>
                       <button
-                        onClick={() => setFileType('json')}
-                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                        onClick={() => handleFileTypeChange('json')}
+                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
                           fileType === 'json'
                             ? 'bg-black dark:bg-white text-white dark:text-black'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -486,8 +529,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                         JSON
                       </button>
                       <button
-                        onClick={() => setFileType('csv')}
-                        className={`flex-1 px-3 py-2 text-sm font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                        onClick={() => handleFileTypeChange('csv')}
+                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
                           fileType === 'csv'
                             ? 'bg-black dark:bg-white text-white dark:text-black'
                             : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
@@ -502,14 +545,14 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     {fileType === 'excel' && (
                       <>
                         {loadingExistingFiles ? (
-                          <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                            <p className="text-gray-500 dark:text-gray-400">Loading files...</p>
+                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                            <p className="text-sm text-gray-500 dark:text-gray-400">Loading files...</p>
                           </div>
                         ) : existingFiles.length > 0 ? (
                           <select
                             value={selectedExistingFile}
                             onChange={(e) => handleExistingFileSelect(e.target.value)}
-                            className="w-full p-4 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-base"
+                            className="w-full p-2.5 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
                             style={{ borderRadius: '3px' }}
                           >
                             <option value="">Select an Excel file...</option>
@@ -520,12 +563,12 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                             ))}
                           </select>
                         ) : (
-                          <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                            <p className="text-gray-500 dark:text-gray-400">No Excel files found in /excels folder</p>
+                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                            <p className="text-sm text-gray-500 dark:text-gray-400">No Excel files found in /excels folder</p>
                           </div>
                         )}
                         {selectedExistingFile && excelSheets.length > 0 && (
-                          <p className="text-sm text-green-600 dark:text-green-400 mt-2 font-medium">✓ {selectedExistingFile} loaded</p>
+                          <p className="text-xs text-green-600 dark:text-green-400 mt-1.5 font-medium">✓ {selectedExistingFile} loaded</p>
                         )}
                       </>
                     )}
@@ -534,14 +577,14 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     {(fileType === 'json' || fileType === 'csv') && (
                       <>
                         {loadingDataFiles ? (
-                          <div className="w-full p-6 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                            <p className="text-gray-500 dark:text-gray-400">Loading files...</p>
+                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                            <p className="text-sm text-gray-500 dark:text-gray-400">Loading files...</p>
                           </div>
                         ) : (
                           <select
                             value={selectedDataFile}
                             onChange={(e) => setSelectedDataFile(e.target.value)}
-                            className="w-full p-4 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-base"
+                            className="w-full p-2.5 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
                             style={{ borderRadius: '3px' }}
                           >
                             <option value="">Select a {fileType.toUpperCase()} file...</option>
@@ -553,7 +596,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                           </select>
                         )}
                         {selectedDataFile && (
-                          <p className="text-sm text-green-600 dark:text-green-400 mt-2 font-medium">
+                          <p className="text-xs text-green-600 dark:text-green-400 mt-1.5 font-medium">
                             ✓ {selectedDataFile} selected
                           </p>
                         )}
@@ -565,32 +608,43 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
               {/* Configuration Panel - Slides in smoothly when file is loaded */}
               <div className={`col-span-1 transition-all duration-500 ease-in-out ${
-                excelSheets.length > 0 
-                  ? 'opacity-100 transform translate-x-0' 
+                excelSheets.length > 0
+                  ? 'opacity-100 transform translate-x-0'
                   : 'opacity-0 transform translate-x-8 pointer-events-none'
               }`}>
                 {excelSheets.length > 0 && (
-                  <div className="bg-gray-50 dark:bg-gray-700 border border-black p-6 space-y-4 h-full">
+                  <div className="bg-gray-50 dark:bg-gray-700 border border-black p-4 space-y-3 h-full">
                     {/* Sheet Settings Header */}
-                    <div className="mb-4">
-                      <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
+                    <div className="mb-2">
+                      <h3 className="text-sm font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
                         Sheet Settings
                       </h3>
                     </div>
                     
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-4">
-                      <div className="col-span-2">
-                        <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100">Sheet</label>
+                    <div className="grid grid-cols-1 gap-3 mb-3">
+                      <div>
+                        <label className="block text-xs font-bold mb-1.5 text-gray-900 dark:text-gray-100">Sheet</label>
                         <select
                           value={selectedSheet}
                           onChange={(e) => setSelectedSheet(e.target.value)}
-                          className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
+                          className="w-full p-2 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
                         >
                           {excelSheets.map(sheet => (
                             <option key={sheet} value={sheet}>{sheet}</option>
                           ))}
                         </select>
                       </div>
+                      {/* ADVANCED INDEX SETTINGS - TEMPORARILY HIDDEN
+                       * These settings (Key Column, Source Column, Start Row) are hidden
+                       * to simplify the UI. The defaults work for the standard Excel format:
+                       * - Key Column (Utterer): A
+                       * - Source Column (English): C
+                       * - Dutch Column: J (hardcoded)
+                       * - Start Row: 2 (after header)
+                       *
+                       * Reference Column UI was already disabled for MVP.
+                       * To re-enable these settings, uncomment the JSX blocks below.
+                       */}
                       {/* Reference Column UI - DISABLED FOR MVP
                       <div className="col-span-2">
                         <div className="flex items-center space-x-3 mb-3">
@@ -617,6 +671,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                         )}
                       </div>
                       */}
+                      {/* Key Column, Source Column, Start Row - TEMPORARILY HIDDEN
                       <div>
                         <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100">Key Column</label>
                         <input
@@ -649,6 +704,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                           min="1"
                         />
                       </div>
+                      */}
                     </div>
 
                     {/* Detected Locale Columns */}
@@ -760,16 +816,17 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             </div>
           )}
           
-          <div className="space-y-4 pt-4 border-t border-black">
+          {/* Start Button Section */}
+          <div className="space-y-3 pt-4 border-t border-black">
             {sourceTexts.length > 0 && (
-              <p className="text-sm text-gray-600 dark:text-gray-400 text-center">
+              <p className="text-xs text-gray-600 dark:text-gray-400 text-center">
                 ✓ {sourceTexts.length} items ready to translate
               </p>
             )}
             <button
               onClick={handleStartWithDataFile}
               disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
-              className="w-full px-8 py-3 bg-black dark:bg-white text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide"
+              className="w-full px-6 py-2.5 bg-black dark:bg-white text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
               style={{ borderRadius: '3px' }}
             >
               Start Translation →
@@ -778,17 +835,17 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         </div>
 
         {/* Video, GitHub, and Codex Buttons */}
-        <div className="mt-20 mb-6 text-center">
-          <div className="flex justify-center gap-4">
-            <VideoButton className="mb-4" />
-            <GitHubButton className="mb-4" />
-            <CodexButton className="mb-4" />
+        <div className="mt-10 mb-4 text-center">
+          <div className="flex justify-center gap-3">
+            <VideoButton className="mb-2" />
+            <GitHubButton className="mb-2" />
+            <CodexButton className="mb-2" />
           </div>
         </div>
 
         {/* Footer */}
-        <div className="mb-8 text-center">
-          <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-6">
+        <div className="mb-4 text-center">
+          <p className="text-xs text-gray-500 dark:text-gray-400 font-medium mb-4">
             Onnozelaer Marketing Works © 2025 - made with Generative AI
           </p>
 
@@ -801,8 +858,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               onClick={() => {}} // Will be handled by parent
               title="Click to change gradient"
               style={{
-                width: '125px',  // Half of 250px
-                height: '25px',   // Half of 50px
+                width: '100px',
+                height: '20px',
                 backgroundImage: gradientColors.length > 0
                   ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})`
                   : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
@@ -812,7 +869,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             >
               {showVersionHash && (
                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                  <div className="text-white text-lg font-black tracking-tight uppercase letter-spacing-wide">
+                  <div className="text-white text-xs font-black tracking-tight uppercase letter-spacing-wide">
                     {VERSION_HASH}
                   </div>
                 </div>

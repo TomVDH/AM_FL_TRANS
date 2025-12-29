@@ -80,9 +80,7 @@ export const useXlsxMode = (): XlsxModeState => {
       if (response.ok) {
         const data = await response.json();
         setAvailableXlsxFiles(data.files || []);
-        console.log('🔧 XLSX Mode Debug: Available files loaded:', data.files?.length);
       } else {
-        console.error('Failed to load XLSX files');
         setAvailableXlsxFiles([]);
       }
     } catch (error) {
@@ -100,13 +98,11 @@ export const useXlsxMode = (): XlsxModeState => {
    */
   const loadXlsxData = useCallback(async (fileName: string) => {
     if (!fileName) return;
-    
+
     setIsLoadingXlsx(true);
     setSelectedXlsxFile(fileName);
-    
+
     try {
-      console.log('🔧 XLSX Mode Debug: Loading file:', fileName);
-      
       // Search the file to get all data
       const response = await fetch('/api/xlsx-files', {
         method: 'POST',
@@ -120,11 +116,10 @@ export const useXlsxMode = (): XlsxModeState => {
           globalSearch: globalSearch
         }),
       });
-      
+
       if (response.ok) {
         const data = await response.json();
-        console.log('🔧 XLSX Mode Debug: File data loaded:', data);
-        
+
         // Flatten results from all sheets into a single array
         const allEntries: XlsxEntry[] = [];
         data.results?.forEach((result: any) => {
@@ -136,16 +131,14 @@ export const useXlsxMode = (): XlsxModeState => {
             });
           });
         });
-        
+
         setXlsxData(allEntries);
-        console.log('🔧 XLSX Mode Debug: Total entries loaded:', allEntries.length);
-        
+
         // If no sheet is selected and we have data, select the first sheet
         if (!selectedXlsxSheet && data.results && data.results.length > 0) {
           setSelectedXlsxSheet(data.results[0].sheetName);
         }
       } else {
-        console.error('Failed to load XLSX data');
         setXlsxData(null);
       }
     } catch (error) {
@@ -165,13 +158,11 @@ export const useXlsxMode = (): XlsxModeState => {
    */
   const searchXlsxFiles = useCallback(async (searchTerm?: string) => {
     if (!selectedXlsxFile) return;
-    
+
     const term = searchTerm !== undefined ? searchTerm : xlsxSearchTerm;
     setIsLoadingXlsx(true);
-    
+
     try {
-      console.log('🔧 XLSX Mode Debug: Searching with term:', term);
-      
       const response = await fetch('/api/xlsx-files', {
         method: 'POST',
         headers: {
@@ -184,11 +175,10 @@ export const useXlsxMode = (): XlsxModeState => {
           globalSearch: globalSearch
         }),
       });
-      
+
       if (response.ok) {
         const data = await response.json();
-        console.log('🔧 XLSX Mode Debug: Search results:', data);
-        
+
         // Flatten results from all sheets into a single array
         const allEntries: XlsxEntry[] = [];
         data.results?.forEach((result: any) => {
@@ -200,11 +190,9 @@ export const useXlsxMode = (): XlsxModeState => {
             });
           });
         });
-        
+
         setXlsxData(allEntries);
-        console.log('🔧 XLSX Mode Debug: Search entries found:', allEntries.length);
       } else {
-        console.error('Failed to search XLSX data');
         setXlsxData([]);
       }
     } catch (error) {
@@ -223,13 +211,12 @@ export const useXlsxMode = (): XlsxModeState => {
   const toggleXlsxMode = useCallback(() => {
     setXlsxMode(prev => {
       const newMode = !prev;
-      console.log('🔧 XLSX Mode Debug: Toggling mode to:', newMode);
-      
+
       if (newMode && availableXlsxFiles.length === 0) {
         // Load available files when entering XLSX mode
         loadAvailableFiles();
       }
-      
+
       return newMode;
     });
   }, [availableXlsxFiles.length, loadAvailableFiles]);
@@ -307,12 +294,10 @@ export const useXlsxMode = (): XlsxModeState => {
    */
   const findXlsxMatches = useCallback((text: string): XlsxEntry[] => {
     if (!xlsxData || !text) return [];
-    
+
     const matches: XlsxEntry[] = [];
     const searchText = text.toLowerCase();
-    
-    console.log('🔧 XLSX Mode Debug: Finding matches for:', searchText);
-    
+
     xlsxData.forEach(entry => {
       // Check for exact or partial matches in various fields
       if (
@@ -324,8 +309,7 @@ export const useXlsxMode = (): XlsxModeState => {
         matches.push(entry);
       }
     });
-    
-    console.log('🔧 XLSX Mode Debug: Found matches:', matches.length);
+
     return matches;
   }, [xlsxData]);
   

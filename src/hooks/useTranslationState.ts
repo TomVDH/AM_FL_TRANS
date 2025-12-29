@@ -24,7 +24,16 @@ export interface TranslationState {
   gradientColors: string[];
   showVersionHash: boolean;
   inputMode: 'excel' | 'embedded-json' | 'manual';
-  
+
+  // Data source tracking
+  loadedFileName: string;
+  loadedFileType: 'excel' | 'json' | 'csv' | 'manual' | '';
+  originalTranslations: string[];
+
+  // Change detection
+  hasCurrentEntryChanged: () => boolean;
+  getCurrentOriginalValue: () => string;
+
   // Setup state
   sourceColumn: string;
   uttererColumn: string;
@@ -53,7 +62,10 @@ export interface TranslationState {
   setSourceColumn: (column: string) => void;
   setUttererColumn: (column: string) => void;
   setStartRow: (row: number) => void;
-  
+  setLoadedFileName: (fileName: string) => void;
+  setLoadedFileType: (fileType: 'excel' | 'json' | 'csv' | 'manual' | '') => void;
+  setOriginalTranslations: (translations: string[]) => void;
+
   // Functions
   handleStart: () => void;
   handleBackToSetup: () => void;
@@ -61,6 +73,7 @@ export interface TranslationState {
   handlePrevious: () => void;
   handleSourceInput: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
   handleFileUpload: (e: React.ChangeEvent<HTMLInputElement>) => Promise<void>;
+  handleExistingFileLoad: (fileName: string) => Promise<void>;
   handleSheetChange: (sheetName: string) => void;
   insertTranslatedSuggestion: (translatedText: string) => void;
   insertPlaceholder: (originalSource: string) => void;
@@ -118,7 +131,29 @@ export const useTranslationState = (): TranslationState => {
   const [gradientColors, setGradientColors] = useState<string[]>([]);
   const [showVersionHash, setShowVersionHash] = useState(false);
   const [inputMode, setInputMode] = useState<'excel' | 'embedded-json' | 'manual'>('excel');
-  
+
+  // ========== Data Source Tracking ==========
+  const [loadedFileName, setLoadedFileName] = useState<string>('');
+  const [loadedFileType, setLoadedFileType] = useState<'excel' | 'json' | 'csv' | 'manual' | ''>('');
+  const [originalTranslations, setOriginalTranslations] = useState<string[]>([]); // Track original values for persistence logic
+
+  // ========== Change Detection ==========
+  // Compute whether the current entry has been modified from its original value
+  const getCurrentOriginalValue = useCallback(() => {
+    const original = originalTranslations[currentIndex] || '[BLANK, REMOVE LATER]';
+    return original === '[BLANK, REMOVE LATER]' ? '' : original;
+  }, [originalTranslations, currentIndex]);
+
+  // Check if current translation differs from the original
+  const hasCurrentEntryChanged = useCallback(() => {
+    const originalValue = getCurrentOriginalValue();
+    const currentValue = currentTranslation.trim();
+    // If both are effectively empty, no change
+    if (originalValue === '' && currentValue === '') return false;
+    // Compare the actual values
+    return currentValue !== originalValue;
+  }, [getCurrentOriginalValue, currentTranslation]);
+
   // ========== Setup State ==========
   const [sourceColumn, setSourceColumn] = useState('C');
   const [uttererColumn, setUttererColumn] = useState('A');
@@ -146,32 +181,46 @@ export const useTranslationState = (): TranslationState => {
   
   /**
    * Handle submit button click
+   * Only persists to translation array if the value has changed from original
    */
   const handleSubmit = useCallback(() => {
-    // Always save the current translation
     const newTranslations = [...translations];
-    newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
-    setTranslations(newTranslations);
-    
+    const hasChanged = hasCurrentEntryChanged();
+
+    // Only update the translations array if the entry has actually changed
+    if (hasChanged) {
+      newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
+      setTranslations(newTranslations);
+    }
+
     // Only move to next if not on last row
     if (currentIndex < sourceTexts.length - 1) {
       setCurrentIndex(currentIndex + 1);
-      setCurrentTranslation(newTranslations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : newTranslations[currentIndex + 1] || '');
+      const nextTranslation = hasChanged ? newTranslations[currentIndex + 1] : translations[currentIndex + 1];
+      setCurrentTranslation(nextTranslation === '[BLANK, REMOVE LATER]' ? '' : nextTranslation || '');
     }
-  }, [currentIndex, currentTranslation, sourceTexts.length, translations]);
+  }, [currentIndex, currentTranslation, sourceTexts.length, translations, hasCurrentEntryChanged]);
   
   /**
    * Handle previous button click
+   * Only persists to translation array if the value has changed from original
    */
   const handlePrevious = useCallback(() => {
     if (currentIndex > 0) {
       const newTranslations = [...translations];
-      newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
-      setTranslations(newTranslations);
+      const hasChanged = hasCurrentEntryChanged();
+
+      // Only update the translations array if the entry has actually changed
+      if (hasChanged) {
+        newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
+        setTranslations(newTranslations);
+      }
+
       setCurrentIndex(currentIndex - 1);
-      setCurrentTranslation(translations[currentIndex - 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex - 1] || '');
+      const prevTranslation = hasChanged ? newTranslations[currentIndex - 1] : translations[currentIndex - 1];
+      setCurrentTranslation(prevTranslation === '[BLANK, REMOVE LATER]' ? '' : prevTranslation || '');
     }
-  }, [currentIndex, currentTranslation, translations]);
+  }, [currentIndex, currentTranslation, translations, hasCurrentEntryChanged]);
   
   /**
    * Handle source text input
@@ -224,45 +273,91 @@ export const useTranslationState = (): TranslationState => {
     
     reader.readAsArrayBuffer(file);
   }, []);
-  
+
   /**
-   * Process Excel data and extract source texts and utterers
+   * Handle loading an existing Excel file from the server
+   */
+  const handleExistingFileLoad = useCallback(async (fileName: string) => {
+    setIsLoadingExcel(true);
+    try {
+      const response = await fetch(`/api/xlsx-files/load?fileName=${encodeURIComponent(fileName)}`);
+      if (!response.ok) {
+        throw new Error('Failed to load Excel file');
+      }
+
+      const arrayBuffer = await response.arrayBuffer();
+      const data = new Uint8Array(arrayBuffer);
+      const workbook = XLSX.read(data, { type: 'array' });
+
+      setWorkbookData(workbook);
+      setExcelSheets(workbook.SheetNames);
+      setLoadedFileName(fileName);
+      setLoadedFileType('excel');
+      if (workbook.SheetNames.length > 0) {
+        setSelectedSheet(workbook.SheetNames[0]);
+      }
+      toast.success(`Loaded ${fileName}`);
+    } catch (error) {
+      console.error('Error loading Excel file:', error);
+      toast.error('Failed to load Excel file. Please try again.');
+    } finally {
+      setIsLoadingExcel(false);
+    }
+  }, []);
+
+  /**
+   * Process Excel data and extract source texts, utterers, and existing Dutch translations
+   * Dutch translations are hardcoded to column J (index 9) for this project
    */
   const processExcelData = useCallback(() => {
     if (!workbookData || !selectedSheet) return;
-    
+
     try {
       const worksheet = workbookData.Sheets[selectedSheet];
       if (!worksheet) return;
-      
+
       const range = XLSX.utils.decode_range(worksheet['!ref'] || 'A1:A1');
       const sourceTexts: string[] = [];
       const utterers: string[] = [];
-      
+      const existingTranslations: string[] = [];
+
+      // Dutch translations column is hardcoded to J (index 9)
+      const dutchColumnIndex = 9; // Column J = index 9
+
       for (let row = startRow - 1; row <= range.e.r; row++) {
         const sourceCell = XLSX.utils.encode_cell({ r: row, c: sourceColumn.charCodeAt(0) - 65 });
         const uttererCell = XLSX.utils.encode_cell({ r: row, c: uttererColumn.charCodeAt(0) - 65 });
-        
+        const dutchCell = XLSX.utils.encode_cell({ r: row, c: dutchColumnIndex });
+
         const sourceValue = worksheet[sourceCell]?.v;
         const uttererValue = worksheet[uttererCell]?.v;
-        
+        const dutchValue = worksheet[dutchCell]?.v;
+
         if (sourceValue && sourceValue.toString().trim()) {
           sourceTexts.push(sourceValue.toString().trim());
           utterers.push(uttererValue ? uttererValue.toString().trim() : '');
+          // Load existing Dutch translation or mark as blank
+          const dutchTranslation = dutchValue ? dutchValue.toString().trim() : '';
+          existingTranslations.push(dutchTranslation || '[BLANK, REMOVE LATER]');
         }
       }
-      
+
       setSourceTexts(sourceTexts);
       setUtterers(utterers);
-      setTranslations(new Array(sourceTexts.length).fill('[BLANK, REMOVE LATER]'));
+      setTranslations(existingTranslations);
+      setOriginalTranslations(existingTranslations); // Track originals for change detection
       setCurrentIndex(0);
-      setCurrentTranslation('');
-      toast.success(`Loaded ${sourceTexts.length} entries from ${selectedSheet}`);
+      // Set current translation to the first entry's existing translation
+      const firstTranslation = existingTranslations[0];
+      setCurrentTranslation(firstTranslation === '[BLANK, REMOVE LATER]' ? '' : firstTranslation || '');
+
+      const existingCount = existingTranslations.filter(t => t !== '[BLANK, REMOVE LATER]').length;
+      toast.success(`Loaded ${sourceTexts.length} entries from ${selectedSheet} (${existingCount} with existing translations)`);
     } catch (error) {
       console.error('Error processing Excel data:', error);
       toast.error('Failed to process Excel data. Please check your column settings.');
     }
-  }, [workbookData, selectedSheet, sourceColumn, uttererColumn, startRow, setSourceTexts, setUtterers, setTranslations, setCurrentIndex, setCurrentTranslation]);
+  }, [workbookData, selectedSheet, sourceColumn, uttererColumn, startRow, setSourceTexts, setUtterers, setTranslations, setOriginalTranslations, setCurrentIndex, setCurrentTranslation]);
 
   /**
    * Handle sheet change
@@ -548,7 +643,14 @@ export const useTranslationState = (): TranslationState => {
     sourceColumn,
     uttererColumn,
     startRow,
-    
+    loadedFileName,
+    loadedFileType,
+    originalTranslations,
+
+    // Change detection
+    hasCurrentEntryChanged,
+    getCurrentOriginalValue,
+
     // Refs
     fileInputRef,
     textareaRef,
@@ -572,7 +674,10 @@ export const useTranslationState = (): TranslationState => {
     setSourceColumn,
     setUttererColumn,
     setStartRow,
-    
+    setLoadedFileName,
+    setLoadedFileType,
+    setOriginalTranslations,
+
     // Functions
     handleStart,
     handleBackToSetup,
@@ -580,6 +685,7 @@ export const useTranslationState = (): TranslationState => {
     handlePrevious,
     handleSourceInput,
     handleFileUpload,
+    handleExistingFileLoad,
     handleSheetChange,
     insertTranslatedSuggestion,
     insertPlaceholder,

@@ -1,16 +1,16 @@
-import React from 'react';
+import React, { useMemo, useCallback } from 'react';
 import { useJsonHighlighting } from '../hooks/useJsonHighlighting';
 import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
 
 /**
  * TextHighlighter Component
- * 
+ *
  * Handles all text highlighting functionality including:
  * - JSON-based text matching and highlighting
  * - TranslatedDutch value display on hover
  * - Clickable character insertion
  * - Highlight mode toggling
- * 
+ *
  * @component
  */
 interface TextHighlighterProps {
@@ -23,10 +23,19 @@ interface TextHighlighterProps {
   onCharacterClick: (characterName: string) => void;
   onSuggestionClick?: (suggestion: string) => void;
   onCharacterNameClick?: (characterName: string) => void;
+  onHighlightClick?: (entry: any, type: 'json' | 'xlsx' | 'character') => void;
   className?: string;
   style?: React.CSSProperties;
   showSuggestions?: boolean;
 }
+
+// CSS classes for highlights (moved from inline styles)
+const HIGHLIGHT_STYLES = {
+  json: 'highlight-tag highlight-json',
+  xlsx: 'highlight-tag highlight-xlsx',
+  character: 'highlight-tag highlight-character',
+  clickable: 'highlight-tag highlight-clickable',
+};
 
 const TextHighlighter: React.FC<TextHighlighterProps> = ({
   text,
@@ -38,6 +47,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   onCharacterClick,
   onSuggestionClick,
   onCharacterNameClick,
+  onHighlightClick,
   className = '',
   style = {},
   showSuggestions = true
@@ -46,276 +56,231 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   const { findJsonMatches, getHoverText } = useJsonHighlighting(jsonData);
   const { findCharacterMatches } = useCharacterHighlighting();
 
+  // Determine display text
+  const displayText = eyeMode && currentTranslation ? currentTranslation : text;
+
   /**
-   * Find XLSX matches for highlighting
-   * 
-   * @param text - Text to search for matches
-   * @returns Array of matching XLSX entries
+   * Find XLSX matches for highlighting - memoized
    */
-  const findXlsxMatches = (text: string) => {
-    if (!xlsxData || !text) return [];
-    
+  const findXlsxMatches = useCallback((searchText: string) => {
+    if (!xlsxData || !searchText) return [];
+
     const matches: any[] = [];
-    const searchText = text.toLowerCase();
-    
+    const lowerText = searchText.toLowerCase();
+
     xlsxData.forEach(entry => {
       if (
-        entry.sourceEnglish.toLowerCase().includes(searchText) ||
-        entry.translatedDutch.toLowerCase().includes(searchText) ||
-        searchText.includes(entry.sourceEnglish.toLowerCase()) ||
-        searchText.includes(entry.translatedDutch.toLowerCase())
+        entry.sourceEnglish.toLowerCase().includes(lowerText) ||
+        entry.translatedDutch.toLowerCase().includes(lowerText) ||
+        lowerText.includes(entry.sourceEnglish.toLowerCase()) ||
+        lowerText.includes(entry.translatedDutch.toLowerCase())
       ) {
         matches.push(entry);
       }
     });
-    
+
     return matches;
-  };
+  }, [xlsxData]);
 
   /**
    * Get hover text for XLSX matches
-   * 
-   * @param match - The XLSX match entry
-   * @returns Hover text string
    */
-  const getXlsxHoverText = (match: any): string => {
+  const getXlsxHoverText = useCallback((match: any): string => {
     const parts = [];
     if (match.translatedDutch) parts.push(`Dutch: ${match.translatedDutch}`);
     if (match.context) parts.push(`Context: ${match.context}`);
     if (match.utterer) parts.push(`Speaker: ${match.utterer}`);
-    
     return parts.join(' | ');
-  };
+  }, []);
 
   /**
    * Detect **Ass character names in text
-   * 
-   * Looks for patterns like "**Ass" or "**Ass Name" in the text
-   * and extracts the character names for highlighting and insertion
-   * 
-   * @param text - The text to search for character names
-   * @returns Array of detected character names
    */
-  const detectAssCharacters = (text: string) => {
-    if (!text) return [];
-    
+  const detectAssCharacters = useCallback((textToSearch: string) => {
+    if (!textToSearch) return [];
+
     const characterPattern = /\*\*([^*\n]+?)(?=\*\*|$)/g;
-    const matches = text.match(characterPattern);
-    
+    const matches = textToSearch.match(characterPattern);
+
     if (!matches) return [];
-    
+
     return matches.map(match => match.slice(2)); // Remove ** prefix
-  };
+  }, []);
 
   /**
-   * Highlight matching text based on JSON data
-   * 
-   * This function searches for matches in JSON data and highlights
-   * them with hover functionality for translatedDutch values
-   * 
-   * @param text - The text to highlight
-   * @returns HTML string with highlighted elements
+   * Memoized match results - only recompute when dependencies change
    */
-  const highlightMatchingText = (text: string) => {
-    // Get matches from all data sources (character data is always active)
-    const jsonMatches = jsonData ? findJsonMatches(text) : [];
-    const xlsxMatches = xlsxData ? findXlsxMatches(text) : [];
-    const assCharacters = detectAssCharacters(text);
-    const characterMatches = findCharacterMatches(text); // Always enabled
+  const matchResults = useMemo(() => {
+    const jsonMatches = jsonData ? findJsonMatches(displayText) : [];
+    const xlsxMatches = xlsxData ? findXlsxMatches(displayText) : [];
+    const characterMatches = findCharacterMatches(displayText);
+    const assCharacters = detectAssCharacters(displayText);
 
-    let highlightedText = text;
-    
-    // Only highlight if highlight mode is enabled
+    return { jsonMatches, xlsxMatches, characterMatches, assCharacters };
+  }, [displayText, jsonData, xlsxData, findJsonMatches, findXlsxMatches, findCharacterMatches, detectAssCharacters]);
+
+  /**
+   * Highlight matching text based on all data sources - memoized
+   */
+  const highlightedText = useMemo(() => {
+    const { jsonMatches, xlsxMatches, characterMatches, assCharacters } = matchResults;
+    let result = displayText;
+
+    // Only apply highlights if highlight mode is enabled
     if (highlightMode) {
-      // Process JSON matches
+      // Process JSON matches (blue)
       if (jsonMatches.length > 0) {
-      const sortedMatches = [...jsonMatches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
+        const sortedMatches = [...jsonMatches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
+        sortedMatches.forEach(match => {
+          const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
+          const hoverText = getHoverText(match);
+          result = result.replace(regex,
+            `<span class="${HIGHLIGHT_STYLES.json}" data-type="json" data-hover="${hoverText}" title="${hoverText}">$1</span>`
+          );
+        });
+      }
 
-      sortedMatches.forEach(match => {
-        // Escape special regex characters in the sourceEnglish
-        const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
+      // Process XLSX matches (green)
+      if (xlsxMatches.length > 0) {
+        const sortedMatches = [...xlsxMatches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
+        sortedMatches.forEach(match => {
+          const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+          const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
+          const hoverText = getXlsxHoverText(match);
+          result = result.replace(regex,
+            `<span class="${HIGHLIGHT_STYLES.xlsx}" data-type="xlsx" data-hover="${hoverText}" title="${hoverText}">$1</span>`
+          );
+        });
+      }
 
-        // Create hover text
-        const hoverText = getHoverText(match);
-        
-        // Replace with highlighted span that has hover functionality
-        highlightedText = highlightedText.replace(regex, 
-          `<span class="json-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #3b82f6; font-weight: 500; background: rgba(59, 130, 246, 0.08); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(59, 130, 246, 0.3); box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.1), 0 0 6px rgba(59, 130, 246, 0.15); transition: all 0.2s ease;" title="${hoverText}" onmouseover="this.style.background='rgba(59, 130, 246, 0.12)'; this.style.boxShadow='0 0 0 1px rgba(59, 130, 246, 0.2), 0 0 8px rgba(59, 130, 246, 0.25)'; this.style.borderColor='rgba(59, 130, 246, 0.4)'" onmouseout="this.style.background='rgba(59, 130, 246, 0.08)'; this.style.boxShadow='0 0 0 1px rgba(59, 130, 246, 0.1), 0 0 6px rgba(59, 130, 246, 0.15)'; this.style.borderColor='rgba(59, 130, 246, 0.3)'">$1</span>`
+      // Process character matches (purple) - always active
+      characterMatches.forEach(charMatch => {
+        const escapedName = charMatch.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`\\b(${escapedName})\\b`, 'gi');
+        const hoverText = `${charMatch.english} → ${charMatch.dutch}`;
+        result = result.replace(regex,
+          `<span class="${HIGHLIGHT_STYLES.character}" data-type="character" data-character="$1" data-hover="${hoverText}" title="${hoverText}">$1</span>`
+        );
+      });
+
+      // Process **Ass characters (red) - clickable
+      assCharacters.forEach(character => {
+        const escapedChar = character.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const regex = new RegExp(`(${escapedChar})`, 'gi');
+        result = result.replace(regex,
+          `<span class="${HIGHLIGHT_STYLES.clickable}" data-type="clickable" data-character="$1">$1</span>`
         );
       });
     }
-    
-    // Process XLSX matches
-    if (xlsxMatches.length > 0) {
-      const sortedXlsxMatches = [...xlsxMatches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
 
-      sortedXlsxMatches.forEach(match => {
-        // Escape special regex characters in the sourceEnglish
-        const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
-
-        // Create hover text
-        const hoverText = getXlsxHoverText(match);
-        
-        // Replace with highlighted span that has hover functionality
-        highlightedText = highlightedText.replace(regex, 
-          `<span class="xlsx-highlight" data-hover="${hoverText}" style="cursor: pointer; color: #10b981; font-weight: 500; background: rgba(16, 185, 129, 0.08); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(16, 185, 129, 0.3); box-shadow: 0 0 0 1px rgba(16, 185, 129, 0.1), 0 0 6px rgba(16, 185, 129, 0.15); transition: all 0.2s ease;" title="${hoverText}" onmouseover="this.style.background='rgba(16, 185, 129, 0.12)'; this.style.boxShadow='0 0 0 1px rgba(16, 185, 129, 0.2), 0 0 8px rgba(16, 185, 129, 0.25)'; this.style.borderColor='rgba(16, 185, 129, 0.4)'" onmouseout="this.style.background='rgba(16, 185, 129, 0.08)'; this.style.boxShadow='0 0 0 1px rgba(16, 185, 129, 0.1), 0 0 6px rgba(16, 185, 129, 0.15)'; this.style.borderColor='rgba(16, 185, 129, 0.3)'">$1</span>`
-        );
-      });
-    }
-    
-    // Always highlight character names from CSV (always active - blue highlighting)
-    characterMatches.forEach(charMatch => {
-      // Escape special regex characters
-      const escapedName = charMatch.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const regex = new RegExp(`\\b(${escapedName})\\b`, 'gi');
-
-      // Create hover text with Dutch translation
-      const hoverText = `${charMatch.english} → ${charMatch.dutch}`;
-      
-      // Replace with highlighted span that's clickable and has hover
-      highlightedText = highlightedText.replace(regex, 
-        `<span class="character-highlight" data-character="$1" data-hover="${hoverText}" style="cursor: pointer; color: #8b5cf6; font-weight: 500; background: rgba(139, 92, 246, 0.08); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(139, 92, 246, 0.3); box-shadow: 0 0 0 1px rgba(139, 92, 246, 0.1), 0 0 6px rgba(139, 92, 246, 0.15); transition: all 0.2s ease;" title="${hoverText}" onmouseover="this.style.background='rgba(139, 92, 246, 0.12)'; this.style.boxShadow='0 0 0 1px rgba(139, 92, 246, 0.2), 0 0 8px rgba(139, 92, 246, 0.25)'; this.style.borderColor='rgba(139, 92, 246, 0.4)'" onmouseout="this.style.background='rgba(139, 92, 246, 0.08)'; this.style.boxShadow='0 0 0 1px rgba(139, 92, 246, 0.1), 0 0 6px rgba(139, 92, 246, 0.15)'; this.style.borderColor='rgba(139, 92, 246, 0.3)'">$1</span>`
-      );
-    });
-    
-    // Make **Ass characters clickable (always blue)
-    assCharacters.forEach(character => {
-      const regex = new RegExp(`(${character})`, 'gi');
-      highlightedText = highlightedText.replace(regex, 
-        '<span class="clickable-character" data-character="$1" style="cursor: pointer; color: #ef4444; font-weight: 500; background: rgba(239, 68, 68, 0.08); padding: 2px 6px; border-radius: 4px; border: 1px solid rgba(239, 68, 68, 0.3); box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.1), 0 0 6px rgba(239, 68, 68, 0.15); transition: all 0.2s ease;" onmouseover="this.style.background=\'rgba(239, 68, 68, 0.12)\'; this.style.boxShadow=\'0 0 0 1px rgba(239, 68, 68, 0.2), 0 0 8px rgba(239, 68, 68, 0.25)\'; this.style.borderColor=\'rgba(239, 68, 68, 0.4)\'" onmouseout="this.style.background=\'rgba(239, 68, 68, 0.08)\'; this.style.boxShadow=\'0 0 0 1px rgba(239, 68, 68, 0.1), 0 0 6px rgba(239, 68, 68, 0.15)\'; this.style.borderColor=\'rgba(239, 68, 68, 0.3)\'">$1</span>'
-      );
-    });
-    }
-
-    return highlightedText;
-  };
+    return result;
+  }, [displayText, matchResults, highlightMode, getHoverText, getXlsxHoverText]);
 
   /**
    * Handle click events on highlighted text
-   * 
-   * Detects clicks on clickable character elements and triggers
-   * the character insertion callback
-   * 
-   * @param e - The click event
    */
-  const handleTextClick = (e: React.MouseEvent) => {
+  const handleTextClick = useCallback((e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
-    if (target.classList.contains('clickable-character')) {
+    const dataType = target.getAttribute('data-type');
+
+    if (dataType === 'clickable') {
       const characterName = target.getAttribute('data-character');
       if (characterName) {
         onCharacterClick(characterName);
       }
-    } else if (target.classList.contains('character-highlight')) {
+    } else if (dataType === 'character') {
       const characterName = target.getAttribute('data-character');
       if (characterName && onCharacterNameClick) {
         onCharacterNameClick(characterName);
       }
+    } else if ((dataType === 'json' || dataType === 'xlsx') && onHighlightClick) {
+      // Could trigger jump to Data Viewer
+      const hoverData = target.getAttribute('data-hover');
+      if (hoverData) {
+        onHighlightClick({ hover: hoverData }, dataType as 'json' | 'xlsx');
+      }
     }
-  };
-
-  // Determine which text to display and highlight
-  const displayText = eyeMode && currentTranslation ? currentTranslation : text;
-  const highlightedText = highlightMatchingText(displayText);
-  
-  /**
-   * Extract character names from text for placeholder suggestions
-   * Detects patterns like "Slow Ass", "Trusty Ass", etc.
-   * Also detects shortened names like "Trusty", "Thirsty"
-   */
-  const extractCharacterNames = (text: string): string[] => {
-    if (!text) return [];
-    
-    const names = new Set<string>();
-    
-    // Pattern to match "Word Ass" character names
-    const fullNamePattern = /\b(\w+\s+Ass)\b/gi;
-    const fullMatches = text.match(fullNamePattern) || [];
-    fullMatches.forEach(match => names.add(match.trim()));
-    
-    // Pattern to match potential shortened character names
-    // Look for capitalized words that could be character names
-    const shortNamePattern = /\b([A-Z][a-z]+(?:'s)?)\b/g;
-    const shortMatches = text.match(shortNamePattern) || [];
-    
-    // Check if these shortened names have corresponding character data
-    shortMatches.forEach(match => {
-      const cleanMatch = match.replace(/'s$/, ''); // Remove possessive 's
-      const characterMatches = findCharacterMatches(cleanMatch);
-      
-      // If we find character data for this name, include it
-      if (characterMatches.length > 0) {
-        names.add(cleanMatch);
-      }
-      
-      // Also check if it could be a shortened version of a "Word Ass" name
-      const possibleFullName = `${cleanMatch} Ass`;
-      if (text.toLowerCase().includes(possibleFullName.toLowerCase()) || 
-          findCharacterMatches(possibleFullName).length > 0) {
-        names.add(possibleFullName);
-      }
-    });
-    
-    return Array.from(names);
-  };
+  }, [onCharacterClick, onCharacterNameClick, onHighlightClick]);
 
   /**
-   * Extract individual words/phrases that have translations
-   * Creates specific suggestions for each highlighted element
+   * Extract and deduplicate translation suggestions - memoized
    */
-  const extractTranslationSuggestions = (text: string) => {
-    const suggestions = new Map<string, any>();
-    
-    // Get all matches from different sources
-    const jsonMatches = jsonData ? findJsonMatches(text) : [];
-    const xlsxMatches = xlsxData ? findXlsxMatches(text) : [];
-    const charMatches = findCharacterMatches(text);
-    
-    // Process JSON matches
-    jsonMatches.forEach(match => {
-      if (match.translatedDutch && match.translatedDutch.trim()) {
-        suggestions.set(match.sourceEnglish, {
-          source: match.sourceEnglish,
-          translation: match.translatedDutch,
-          type: 'json'
-        });
-      }
-    });
-    
-    // Process XLSX matches
-    xlsxMatches.forEach(match => {
-      if (match.translatedDutch && match.translatedDutch.trim()) {
-        suggestions.set(match.sourceEnglish, {
-          source: match.sourceEnglish,
-          translation: match.translatedDutch,
-          type: 'xlsx'
-        });
-      }
-    });
-    
-    // Process character matches
-    charMatches.forEach(match => {
+  const translationSuggestions = useMemo(() => {
+    const { jsonMatches, xlsxMatches, characterMatches } = matchResults;
+    const suggestions = new Map<string, { source: string; translation: string; type: string; priority: number }>();
+
+    // Process character matches first (highest priority for names)
+    characterMatches.forEach(match => {
       if (match.dutch && match.dutch.trim()) {
-        suggestions.set(match.english, {
+        suggestions.set(match.dutch, {
           source: match.english,
           translation: match.dutch,
-          type: 'character'
+          type: 'character',
+          priority: 3 // Highest priority
         });
       }
     });
-    
-    return Array.from(suggestions.values());
-  };
 
-  // Get suggestions for the current text (always available, controlled by showSuggestions prop)
-  const jsonSuggestions = jsonData ? findJsonMatches(displayText) : [];
-  const xlsxSuggestions = xlsxData ? findXlsxMatches(displayText) : [];
-  const characterNames = extractCharacterNames(displayText);
-  const translationSuggestions = extractTranslationSuggestions(displayText);
-  
-  // Combine all suggestions
-  const allSuggestions = [...jsonSuggestions, ...xlsxSuggestions];
+    // Process JSON matches
+    jsonMatches.forEach(match => {
+      if (match.translatedDutch && match.translatedDutch.trim() && !suggestions.has(match.translatedDutch)) {
+        suggestions.set(match.translatedDutch, {
+          source: match.sourceEnglish,
+          translation: match.translatedDutch,
+          type: 'json',
+          priority: 2
+        });
+      }
+    });
+
+    // Process XLSX matches
+    xlsxMatches.forEach(match => {
+      if (match.translatedDutch && match.translatedDutch.trim() && !suggestions.has(match.translatedDutch)) {
+        suggestions.set(match.translatedDutch, {
+          source: match.sourceEnglish,
+          translation: match.translatedDutch,
+          type: 'xlsx',
+          priority: 1
+        });
+      }
+    });
+
+    // Sort by priority (descending) then by translation length (descending for relevance)
+    return Array.from(suggestions.values())
+      .sort((a, b) => b.priority - a.priority || b.translation.length - a.translation.length);
+  }, [matchResults]);
+
+  /**
+   * Extract character placeholder names - memoized and deduplicated
+   */
+  const characterPlaceholders = useMemo(() => {
+    if (!displayText) return [];
+
+    const names = new Set<string>();
+
+    // Pattern to match "Word Ass" character names
+    const fullNamePattern = /\b(\w+\s+Ass)\b/gi;
+    const fullMatches = displayText.match(fullNamePattern) || [];
+    fullMatches.forEach(match => names.add(match.trim()));
+
+    // Check for known character names
+    const { characterMatches } = matchResults;
+    characterMatches.forEach(match => {
+      if (displayText.toLowerCase().includes(match.english.toLowerCase())) {
+        names.add(match.english);
+      }
+    });
+
+    return Array.from(names);
+  }, [displayText, matchResults]);
+
+  // Determine if suggestions should show
+  const shouldShowSuggestions = showSuggestions &&
+    (translationSuggestions.length > 0 || characterPlaceholders.length > 0) &&
+    onSuggestionClick &&
+    !className.includes('opacity-70') &&
+    !className.includes('no-suggestions');
 
   return (
     <div className={className} style={style}>
@@ -323,15 +288,15 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
         dangerouslySetInnerHTML={{ __html: highlightedText }}
         onClick={handleTextClick}
       />
-      
-      {/* Suggestion buttons - controlled by showSuggestions prop */}
-      {showSuggestions && (translationSuggestions.length > 0 || characterNames.length > 0) && onSuggestionClick && !className.includes('opacity-70') && !className.includes('no-suggestions') && (
+
+      {/* Suggestion buttons - deduplicated and sorted */}
+      {shouldShowSuggestions && (
         <div className="mt-2 flex flex-wrap gap-2">
-          {/* Character placeholder buttons (orange/wire color) */}
-          {characterNames.map((characterName, index) => (
+          {/* Character placeholder buttons (orange) */}
+          {characterPlaceholders.slice(0, 5).map((characterName, index) => (
             <button
-              key={`placeholder-${index}`}
-              onClick={() => onSuggestionClick(`(${characterName})`)}
+              key={`placeholder-${characterName}`}
+              onClick={() => onSuggestionClick!(`(${characterName})`)}
               className="px-3 py-1 text-sm bg-orange-100 dark:bg-orange-800 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-600 hover:bg-orange-200 dark:hover:bg-orange-700 transition-colors duration-200 font-medium"
               title={`Insert placeholder: (${characterName})`}
               style={{ borderRadius: '3px' }}
@@ -339,15 +304,15 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
               ({characterName})
             </button>
           ))}
-          
-          {/* Individual word/phrase translation buttons (green for available translations) */}
-          {translationSuggestions.map((suggestion, index) => (
+
+          {/* Translation buttons - limited to 8 max, deduplicated */}
+          {translationSuggestions.slice(0, 8).map((suggestion) => (
             <button
-              key={`word-translation-${index}`}
-              onClick={() => onSuggestionClick(suggestion.translation)}
+              key={`translation-${suggestion.translation}`}
+              onClick={() => onSuggestionClick!(suggestion.translation)}
               className={`px-3 py-1 text-sm transition-colors duration-200 font-medium ${
-                suggestion.type === 'character' 
-                  ? 'bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 hover:bg-blue-200 dark:hover:bg-blue-700'
+                suggestion.type === 'character'
+                  ? 'bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-600 hover:bg-purple-200 dark:hover:bg-purple-700'
                   : 'bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-600 hover:bg-green-200 dark:hover:bg-green-700'
               }`}
               title={`"${suggestion.source}" → "${suggestion.translation}"`}
@@ -358,9 +323,8 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
           ))}
         </div>
       )}
-
     </div>
   );
 };
 
-export default TextHighlighter; 
+export default TextHighlighter;

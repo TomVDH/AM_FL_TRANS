@@ -99,6 +99,96 @@
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
     background: #94a3b8;      /* Darker gray on hover */
   }
+
+  /* ========== Text Highlighting Styles ========== */
+  /* Base highlight tag styling */
+  .highlight-tag {
+    cursor: pointer;
+    padding: 0 2px;
+    border-radius: 2px;
+    transition: background-color 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  /* JSON data highlights (blue) */
+  .highlight-json {
+    background-color: rgba(59, 130, 246, 0.2);
+    border-bottom: 2px solid #3b82f6;
+  }
+
+  .highlight-json:hover {
+    background-color: rgba(59, 130, 246, 0.35);
+    box-shadow: 0 0 4px rgba(59, 130, 246, 0.4);
+  }
+
+  /* XLSX data highlights (green) */
+  .highlight-xlsx {
+    background-color: rgba(16, 185, 129, 0.2);
+    border-bottom: 2px solid #10b981;
+  }
+
+  .highlight-xlsx:hover {
+    background-color: rgba(16, 185, 129, 0.35);
+    box-shadow: 0 0 4px rgba(16, 185, 129, 0.4);
+  }
+
+  /* Character name highlights (purple) */
+  .highlight-character {
+    background-color: rgba(139, 92, 246, 0.2);
+    border-bottom: 2px solid #8b5cf6;
+  }
+
+  .highlight-character:hover {
+    background-color: rgba(139, 92, 246, 0.35);
+    box-shadow: 0 0 4px rgba(139, 92, 246, 0.4);
+  }
+
+  /* Clickable Ass character highlights (red/orange) */
+  .highlight-clickable {
+    background-color: rgba(239, 68, 68, 0.2);
+    border-bottom: 2px solid #ef4444;
+  }
+
+  .highlight-clickable:hover {
+    background-color: rgba(239, 68, 68, 0.35);
+    box-shadow: 0 0 4px rgba(239, 68, 68, 0.4);
+  }
+
+  /* Dark mode variants */
+  .dark .highlight-json {
+    background-color: rgba(59, 130, 246, 0.25);
+    border-bottom-color: #60a5fa;
+  }
+
+  .dark .highlight-json:hover {
+    background-color: rgba(59, 130, 246, 0.4);
+  }
+
+  .dark .highlight-xlsx {
+    background-color: rgba(16, 185, 129, 0.25);
+    border-bottom-color: #34d399;
+  }
+
+  .dark .highlight-xlsx:hover {
+    background-color: rgba(16, 185, 129, 0.4);
+  }
+
+  .dark .highlight-character {
+    background-color: rgba(139, 92, 246, 0.25);
+    border-bottom-color: #a78bfa;
+  }
+
+  .dark .highlight-character:hover {
+    background-color: rgba(139, 92, 246, 0.4);
+  }
+
+  .dark .highlight-clickable {
+    background-color: rgba(239, 68, 68, 0.25);
+    border-bottom-color: #f87171;
+  }
+
+  .dark .highlight-clickable:hover {
+    background-color: rgba(239, 68, 68, 0.4);
+  }
 }
 
 /**

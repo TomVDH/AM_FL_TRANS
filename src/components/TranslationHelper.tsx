@@ -18,6 +18,7 @@ import CodexPanel from './CodexPanel';
 import TextHighlighter from './TextHighlighter';
 import VideoButton from './VideoButton';
 import CodexButton from './CodexButton';
+import ReferenceToolsPanel from './ReferenceToolsPanel';
 import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
 
 
@@ -62,12 +63,21 @@ const TranslationHelper: React.FC = () => {
     setSourceColumn,
     setUttererColumn,
     setStartRow,
+    setLoadedFileName,
+    setLoadedFileType,
+    setOriginalTranslations,
+    loadedFileName,
+    loadedFileType,
+    originalTranslations,
+    hasCurrentEntryChanged,
+    getCurrentOriginalValue,
     handleStart,
     handleBackToSetup,
     handleSubmit,
     handlePrevious,
     handleSourceInput,
     handleFileUpload,
+    handleExistingFileLoad,
     handleSheetChange,
     insertTranslatedSuggestion,
     insertPlaceholder,
@@ -93,8 +103,57 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
+  // Generate Excel-compatible output for modified entries only
+  // Returns array of { cellRef: "J5", value: "translation", excelRow: 5 }
+  const getModifiedEntriesForExcel = () => {
+    return translations.map((trans, idx) => {
+      if (!trans || trans === '[BLANK, REMOVE LATER]') return null;
+
+      // Check if modified from original
+      const originalValue = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
+      const hasBeenModified = trans !== originalValue;
+      const wasOriginallyBlank = originalValue === '[BLANK, REMOVE LATER]' || originalValue === '';
+      const isNowFilled = trans !== '[BLANK, REMOVE LATER]' && trans !== '';
+
+      // Only include if modified or newly filled
+      if (!hasBeenModified && !(wasOriginallyBlank && isNowFilled)) return null;
+
+      // Calculate actual Excel row (startRow is 1-indexed, idx is 0-indexed)
+      const excelRow = startRow + idx;
+
+      return {
+        cellRef: `J${excelRow}`,
+        value: trans,
+        excelRow,
+        idx
+      };
+    }).filter(Boolean) as { cellRef: string; value: string; excelRow: number; idx: number }[];
+  };
+
   const copyToClipboard = () => {
-    const text = translations.join('\n');
+    const modifiedEntries = getModifiedEntriesForExcel();
+
+    if (modifiedEntries.length === 0) {
+      // Nothing to copy
+      return;
+    }
+
+    // For Excel pasting: just the translations, one per line
+    // User selects starting cell in J column and pastes
+    const text = modifiedEntries.map(e => e.value).join('\n');
+    navigator.clipboard.writeText(text);
+    setShowCopied(true);
+    setTimeout(() => setShowCopied(false), 2000);
+  };
+
+  // Copy with cell references for manual paste (shows where each goes)
+  const copyWithCellRefs = () => {
+    const modifiedEntries = getModifiedEntriesForExcel();
+
+    if (modifiedEntries.length === 0) return;
+
+    // Format: "J5: translation text" for each line
+    const text = modifiedEntries.map(e => `${e.cellRef}: ${e.value}`).join('\n');
     navigator.clipboard.writeText(text);
     setShowCopied(true);
     setTimeout(() => setShowCopied(false), 2000);
@@ -170,7 +229,6 @@ const TranslationHelper: React.FC = () => {
       
       // Set the search term
       setXlsxSearchTerm(sourceText);
-      console.log('Set XLSX search term to:', sourceText);
     }
   };
   
@@ -183,6 +241,7 @@ const TranslationHelper: React.FC = () => {
   const [xlsxViewerTab, setXlsxViewerTab] = useState<'browse' | 'context'>('browse');
   const [showAllEntries, setShowAllEntries] = useState(false);
   const [activeTab, setActiveTab] = useState<'input' | 'output'>('input');
+  const [showKeyboardShortcuts, setShowKeyboardShortcuts] = useState(false);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
@@ -230,6 +289,45 @@ const TranslationHelper: React.FC = () => {
       }
     }, 100);
   };
+
+  // Handle highlight click to jump to Data Viewer
+  const handleHighlightClick = useCallback((entry: any, type: 'json' | 'xlsx' | 'character') => {
+    // Enable XLSX mode if not already enabled
+    if (!xlsxMode) {
+      toggleXlsxMode();
+    }
+
+    // Load XLSX data if not already loaded
+    if (!xlsxData && availableXlsxFiles.length > 0) {
+      loadXlsxData(availableXlsxFiles[0].fileName);
+    }
+
+    // Set the search term based on hover data or entry info
+    if (entry.hover) {
+      // Extract source text from hover format "Dutch: X | Context: Y | Source: Z"
+      const sourceMatch = entry.hover.match(/Source:\s*([^|]+)/);
+      const dutchMatch = entry.hover.match(/Dutch:\s*([^|]+)/);
+      const searchTerm = sourceMatch ? sourceMatch[1].trim() : (dutchMatch ? dutchMatch[1].trim() : '');
+      if (searchTerm) {
+        setXlsxSearchTerm(searchTerm);
+      }
+    } else if (entry.sourceEnglish) {
+      setXlsxSearchTerm(entry.sourceEnglish);
+    } else if (entry.translatedDutch) {
+      setXlsxSearchTerm(entry.translatedDutch);
+    }
+
+    // Switch to context search tab for better match visibility
+    setXlsxViewerTab('context');
+
+    // Scroll to Reference Tools section
+    setTimeout(() => {
+      const referenceTools = document.querySelector('.reference-tools-section');
+      if (referenceTools) {
+        referenceTools.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  }, [xlsxMode, xlsxData, availableXlsxFiles, toggleXlsxMode, loadXlsxData, setXlsxSearchTerm]);
 
   useEffect(() => {
     const loadLocalizationManual = async () => {
@@ -326,7 +424,11 @@ const TranslationHelper: React.FC = () => {
         setSourceTexts={setSourceTexts}
         setUtterers={setUtterers}
         setTranslations={setTranslations}
+        setLoadedFileName={setLoadedFileName}
+        setLoadedFileType={setLoadedFileType}
+        setOriginalTranslations={setOriginalTranslations}
         handleFileUpload={handleFileUpload}
+        handleExistingFileLoad={handleExistingFileLoad}
         handleSourceInput={handleSourceInput}
         handleStart={handleStart}
         gradientColors={gradientColors}
@@ -339,24 +441,126 @@ const TranslationHelper: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-8 transition-colors duration-300" style={{ animation: 'fadeIn 0.5s ease-out' }}>
-      {/* Dark Mode Toggle */}
-      <button
-        onClick={toggleDarkMode}
-        className="fixed top-4 right-4 p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200"
-        style={{ borderRadius: '3px' }}
-        aria-label="Toggle dark mode"
-      >
-        {darkMode ? (
-          <svg className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-3 md:p-5 transition-colors duration-300" style={{ animation: 'fadeIn 0.5s ease-out' }}>
+      {/* Top Right Controls - Dark Mode + Keyboard Shortcuts */}
+      <div className="fixed top-4 right-4 flex items-center gap-2">
+        {/* Keyboard Shortcuts Button */}
+        <button
+          onClick={() => setShowKeyboardShortcuts(true)}
+          className="p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200"
+          style={{ borderRadius: '3px' }}
+          aria-label="Keyboard shortcuts"
+          title="Keyboard Shortcuts"
+        >
+          <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
-        ) : (
-          <svg className="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-          </svg>
-        )}
-      </button>
+        </button>
+
+        {/* Dark Mode Toggle */}
+        <button
+          onClick={toggleDarkMode}
+          className="p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200"
+          style={{ borderRadius: '3px' }}
+          aria-label="Toggle dark mode"
+        >
+          {darkMode ? (
+            <svg className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
+            </svg>
+          ) : (
+            <svg className="w-5 h-5 text-gray-700" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+            </svg>
+          )}
+        </button>
+      </div>
+
+      {/* Keyboard Shortcuts Modal */}
+      {showKeyboardShortcuts && (
+        <div
+          className="fixed inset-0 bg-black/50 dark:bg-black/70 flex items-center justify-center z-50 backdrop-blur-sm"
+          onClick={() => setShowKeyboardShortcuts(false)}
+        >
+          <div
+            className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-2xl p-6 max-w-lg w-full mx-4"
+            style={{ borderRadius: '3px' }}
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Modal Header */}
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase">Keyboard Shortcuts</h3>
+              <button
+                onClick={() => setShowKeyboardShortcuts(false)}
+                className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+
+            {/* Shortcuts Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              {/* Navigation */}
+              <div className="space-y-3">
+                <h4 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Navigation</h4>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Previous</span>
+                  <kbd className="px-3 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>O</kbd>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Next</span>
+                  <kbd className="px-3 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>P</kbd>
+                </div>
+              </div>
+
+              {/* Actions */}
+              <div className="space-y-3">
+                <h4 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Actions</h4>
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Submit</span>
+                  <div className="flex items-center gap-1">
+                    <kbd className="px-2 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>Shift</kbd>
+                    <span className="text-xs text-gray-400">+</span>
+                    <kbd className="px-2 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>Enter</kbd>
+                  </div>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-700 dark:text-gray-300">Trim Whitespace</span>
+                  <kbd className="px-3 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>T</kbd>
+                </div>
+              </div>
+
+              {/* Toggles */}
+              <div className="space-y-3 col-span-2 pt-3 border-t border-gray-200 dark:border-gray-700">
+                <h4 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Toggles</h4>
+                <div className="grid grid-cols-2 gap-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-700 dark:text-gray-300">Reference Tools</span>
+                    <kbd className="px-3 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>R</kbd>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-700 dark:text-gray-300">Eye Mode</span>
+                    <kbd className="px-3 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>E</kbd>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-700 dark:text-gray-300">Highlight Mode</span>
+                    <kbd className="px-3 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>H</kbd>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-700 dark:text-gray-300">Game Mode</span>
+                    <kbd className="px-3 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>G</kbd>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Footer hint */}
+            <p className="mt-6 text-xs text-gray-400 dark:text-gray-500 text-center">Press <kbd className="px-1.5 py-0.5 text-xs bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '2px' }}>Esc</kbd> or click outside to close</p>
+          </div>
+        </div>
+      )}
 
       {/* Back to Setup Floating Button */}
       <button
@@ -372,34 +576,53 @@ const TranslationHelper: React.FC = () => {
 
 
       <div className="max-w-7xl mx-auto">
-        {/* Header - Centered above grid */}
-        <div className="mb-12">
+        {/* Header - Centered above grid - Tightened */}
+        <div className="mb-4">
           <div className="text-center">
-            <h1 className="text-4xl font-black mb-3 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
+            <h1 className="text-3xl font-black mb-2 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
+            {/* Data Mode Indicator */}
+            {loadedFileName && (
+              <div className="flex items-center justify-center gap-1.5 mb-1">
+                <span className={`inline-flex items-center px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide border ${
+                  loadedFileType === 'excel'
+                    ? 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 border-green-300 dark:border-green-700'
+                    : loadedFileType === 'json'
+                    ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 border-blue-300 dark:border-blue-700'
+                    : loadedFileType === 'csv'
+                    ? 'bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 border-purple-300 dark:border-purple-700'
+                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-600'
+                }`} style={{ borderRadius: '3px' }}>
+                  {loadedFileType || 'manual'}
+                </span>
+                <span className="text-xs text-gray-500 dark:text-gray-400 font-medium truncate max-w-xs">
+                  {loadedFileName}
+                </span>
+              </div>
+            )}
             {selectedSheet && (
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+              <p className="text-xs text-gray-500 dark:text-gray-400 mb-1">
                 Sheet: {selectedSheet}
               </p>
             )}
           </div>
 
-          {/* Item Counter and Jump To - Side by Side */}
-          <div className="flex items-center justify-center gap-4 mt-4">
-            <p className="text-gray-600 dark:text-gray-400 text-lg">
+          {/* Item Counter and Jump To - Side by Side - Tightened */}
+          <div className="flex items-center justify-center gap-3 mt-2">
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
               {getCellLocation(currentIndex)} • Item {currentIndex + 1} of {sourceTexts.length}
               {selectedSheet && <> • {selectedSheet}</>}
             </p>
 
-            {/* Jump to Row Accordion */}
+            {/* Jump to Row Accordion - Compact */}
             <div className="relative">
               <button
                 onClick={() => setAccordionStates(prev => ({ ...prev, jumpTo: !prev.jumpTo }))}
-                className="flex items-center gap-2 px-4 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-semibold text-sm"
+                className="flex items-center gap-1.5 px-2.5 py-1.5 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-semibold text-xs"
                 style={{ borderRadius: '3px' }}
               >
-                <span>Jump to Row {excelSheets.length > 1 ? '/ Change Sheet' : ''}</span>
+                <span>Jump {excelSheets.length > 1 ? '/ Sheet' : ''}</span>
                 <svg
-                  className={`w-4 h-4 transition-transform duration-200 ${accordionStates.jumpTo ? 'transform rotate-180' : ''}`}
+                  className={`w-3 h-3 transition-transform duration-200 ${accordionStates.jumpTo ? 'transform rotate-180' : ''}`}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -501,10 +724,10 @@ const TranslationHelper: React.FC = () => {
           </div>
         </div>
 
-        {/* Enhanced Progress Bar - Smooth animated gradient with segmented fill */}
+        {/* Enhanced Progress Bar - Smooth animated gradient with segmented fill - Compact */}
         <div
           ref={progressBarRef}
-          className="relative h-3 bg-gray-200 dark:bg-gray-700 border border-black dark:border-gray-600 overflow-hidden shadow-inner cursor-pointer transition-all duration-300 mb-8"
+          className="relative h-2 bg-gray-200 dark:bg-gray-700 border border-black dark:border-gray-600 overflow-hidden shadow-inner cursor-pointer transition-all duration-300 mb-4"
           style={{ borderRadius: '3px' }}
         >
           <div className="absolute inset-0 flex">
@@ -565,83 +788,93 @@ const TranslationHelper: React.FC = () => {
           </div>
         </div>
 
-        {/* Navigation Buttons - Centered Above Grid */}
-        <div className="flex justify-center items-center gap-4 mb-8">
-          <div className="flex gap-3">
-            {/* Previous Button */}
-            <div className="flex flex-col items-center gap-1">
-              <button
-                ref={(el) => {
-                  if (el && buttonsRef.current) {
-                    // Store reference if needed
-                  }
-                }}
-                onClick={handlePrevious}
-                onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
-                onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
-                disabled={currentIndex === 0}
-                className="px-6 py-3 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm flex items-center gap-2"
-                style={{ borderRadius: '3px' }}
-              >
-                <span>← Previous</span>
-                <kbd className="px-1.5 py-0.5 text-xs font-bold text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '2px' }}>O</kbd>
-              </button>
-            </div>
+        {/* Navigation Buttons - Clean Design with Uniform Heights */}
+        <div className="flex justify-between items-center mb-4 px-2 gap-4">
+          {/* Previous Button - Left Edge */}
+          <div className="group">
+            <button
+              ref={(el) => {
+                if (el && buttonsRef.current) {
+                  // Store reference if needed
+                }
+              }}
+              onClick={handlePrevious}
+              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
+              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
+              disabled={currentIndex === 0}
+              className="relative h-12 px-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 transition-all duration-300 ease-out font-bold tracking-wide uppercase text-sm disabled:cursor-not-allowed disabled:shadow-none overflow-hidden"
+              style={{ borderRadius: '3px' }}
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                <span className="text-base">←</span>
+                Previous
+              </span>
+              {/* Hover gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
+            </button>
+          </div>
 
-            {/* Submit Button */}
-            <div className="flex flex-col items-center gap-1">
-              <button
-                onClick={handleSubmit}
-                onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
-                onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
-                className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
+          {/* Submit Button - Center, Primary Action */}
+          <div className="group">
+            <button
+              onClick={handleSubmit}
+              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
+              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
+              className="relative h-12 px-12 bg-gradient-to-br from-gray-900 via-black to-gray-900 dark:from-gray-100 dark:via-white dark:to-gray-100 text-white dark:text-black border-2 border-gray-800 dark:border-gray-200 hover:border-gray-700 dark:hover:border-gray-300 hover:shadow-2xl hover:shadow-black/30 dark:hover:shadow-white/20 active:shadow-inner active:scale-[0.98] transition-all duration-300 ease-out font-black tracking-wide uppercase text-base overflow-hidden"
+              style={{ borderRadius: '3px' }}
+            >
+              <span className="relative z-10">
+                {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Submit & Next'}
+              </span>
+              {/* Animated shine effect on hover */}
+              <div
+                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 dark:via-black/10 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"
                 style={{ borderRadius: '3px' }}
-              >
-                {currentIndex === sourceTexts.length - 1 ? 'Complete ✓' : 'Submit'}
-              </button>
-              <div className="flex items-center gap-1">
-                <kbd className="px-1.5 py-0.5 text-xs font-bold text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '2px' }}>Shift</kbd>
-                <span className="text-xs text-gray-500 dark:text-gray-400">+</span>
-                <kbd className="px-1.5 py-0.5 text-xs font-bold text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '2px' }}>Enter</kbd>
-              </div>
-            </div>
+              />
+              {/* Hover glow */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black dark:from-gray-200 dark:via-gray-100 dark:to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
+            </button>
+          </div>
 
-            {/* Next Button */}
-            <div className="flex flex-col items-center gap-1">
-              <button
-                onClick={() => {
-                  if (currentIndex < sourceTexts.length - 1) {
-                    setCurrentIndex(currentIndex + 1);
-                    setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
-                  }
-                }}
-                onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
-                onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
-                disabled={currentIndex === sourceTexts.length - 1}
-                className="px-6 py-3 bg-white dark:bg-gray-800 text-black dark:text-white border border-black dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm flex items-center gap-2"
-                style={{ borderRadius: '3px' }}
-              >
-                <span>Next →</span>
-                <kbd className="px-1.5 py-0.5 text-xs font-bold text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 shadow-sm" style={{ borderRadius: '2px' }}>P</kbd>
-              </button>
-            </div>
+          {/* Next Button - Right Edge */}
+          <div className="group">
+            <button
+              onClick={() => {
+                if (currentIndex < sourceTexts.length - 1) {
+                  setCurrentIndex(currentIndex + 1);
+                  setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
+                }
+              }}
+              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
+              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
+              disabled={currentIndex === sourceTexts.length - 1}
+              className="relative h-12 px-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 transition-all duration-300 ease-out font-bold tracking-wide uppercase text-sm disabled:cursor-not-allowed disabled:shadow-none overflow-hidden"
+              style={{ borderRadius: '3px' }}
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                Next
+                <span className="text-base">→</span>
+              </span>
+              {/* Hover gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
+            </button>
           </div>
         </div>
 
-        {/* Main 2-Column Grid Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        {/* Main 2-Column Grid Layout - Tighter gap */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
           {/* Left Column - Translation Card + JSON Settings */}
-          <div className="space-y-8">
+          <div className="space-y-4 h-full flex flex-col">
 
-            {/* Translation Card */}
-            <div 
+            {/* Translation Card - Compact padding */}
+            <div
               ref={cardRef}
-              className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-8 space-y-8 shadow-md transition-all duration-300 ${
+              className={`bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-5 space-y-4 shadow-md transition-all duration-300 flex-1 flex flex-col ${
                 isAnimating ? 'opacity-0 transform -translate-x-4' : 'opacity-100 transform translate-x-0'
               }`}
               style={{ borderRadius: '3px' }}
             >
-          <div className="space-y-6">
+          <div className="space-y-4">
             <div className="space-y-2">
               {gamepadMode ? (
                 <div className="flex flex-col gap-8 items-center">
@@ -705,6 +938,7 @@ const TranslationHelper: React.FC = () => {
                       onCharacterClick={insertCharacterName}
                       onSuggestionClick={insertTranslatedSuggestion}
                       onCharacterNameClick={handleCharacterNameClick}
+                      onHighlightClick={handleHighlightClick}
                       className="dialogue-content no-suggestions"
                       style={{
                         textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
@@ -801,6 +1035,7 @@ const TranslationHelper: React.FC = () => {
                         onCharacterClick={insertCharacterName}
                         onSuggestionClick={insertTranslatedSuggestion}
                         onCharacterNameClick={handleCharacterNameClick}
+                        onHighlightClick={handleHighlightClick}
                         className="dialogue-content opacity-70"
                         style={{
                           textShadow: '1px 1px 2px rgba(0, 0, 0, 0.1)',
@@ -885,8 +1120,23 @@ const TranslationHelper: React.FC = () => {
                       onCharacterClick={insertCharacterName}
                       onSuggestionClick={insertTranslatedSuggestion}
                       onCharacterNameClick={handleCharacterNameClick}
+                      onHighlightClick={handleHighlightClick}
                       className="no-suggestions"
                     />
+
+                    {/* Existing Dutch Translation (Column J) Display */}
+                    <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-700">
+                      {translations[currentIndex] && translations[currentIndex] !== '[BLANK, REMOVE LATER]' ? (
+                        <p className="text-sm text-amber-700 dark:text-amber-300 italic">
+                          <span className="text-[9px] font-bold text-amber-500 dark:text-amber-500 uppercase tracking-wide mr-1.5 not-italic">J:</span>
+                          {translations[currentIndex]}
+                        </p>
+                      ) : (
+                        <p className="text-xs text-gray-400 dark:text-gray-500 italic">
+                          Awaiting your Dutch translation...
+                        </p>
+                      )}
+                    </div>
                   </div>
 
                   {/* Source Display - Only show when eye mode is active */}
@@ -932,25 +1182,26 @@ const TranslationHelper: React.FC = () => {
                         currentTranslation=""
                         onCharacterClick={insertCharacterName}
                         onCharacterNameClick={handleCharacterNameClick}
+                        onHighlightClick={handleHighlightClick}
                         className="no-suggestions"
                       />
                     </div>
                   )}
 
-                  {/* Next Source Translation Preview - Only show when eye mode is active */}
-                  {eyeMode && currentIndex < sourceTexts.length - 1 && (
-                    <div
-                      className="text-lg font-medium leading-relaxed px-6 py-4 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 rounded relative opacity-50"
-                      style={{ borderRadius: '3px' }}
-                    >
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Next Source Text</span>
-                      </div>
-                      <div className="line-clamp-3">
-                        {sourceTexts[currentIndex + 1]}
-                      </div>
+                  {/* Next String Preview - Always visible when there's a next entry */}
+                  {currentIndex < sourceTexts.length - 1 && (
+                    <div className="mt-2 pt-2 border-t border-dashed border-gray-200 dark:border-gray-700">
+                      <p className="text-xs text-gray-400 dark:text-gray-500 line-clamp-1">
+                        <span className="text-[9px] font-bold text-blue-500 dark:text-blue-400 uppercase tracking-wide mr-1.5 not-italic">NEXT:</span>
+                        <span className="font-semibold text-gray-500 dark:text-gray-400">
+                          {trimSpeakerName(utterers[currentIndex + 1]) || 'Speaker'}
+                        </span>
+                        <span className="mx-1 text-gray-300 dark:text-gray-600">—</span>
+                        <span className="italic">{sourceTexts[currentIndex + 1]}</span>
+                      </p>
                     </div>
                   )}
+
                 </div>
               )}
             </div>
@@ -959,35 +1210,35 @@ const TranslationHelper: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Column - Tabbed Interface */}
+          {/* Right Column - Tabbed Interface - Compact */}
           <div className="h-full">
             <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-md h-full flex flex-col" style={{ borderRadius: '3px' }}>
-              {/* Tab Navigation */}
+              {/* Tab Navigation - Tighter */}
               <div className="flex border-b border-gray-300 dark:border-gray-600">
                 <button
                   onClick={() => setActiveTab('input')}
-                  className={`flex-1 px-4 py-3 font-black tracking-tight uppercase text-sm transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                  className={`flex-1 px-3 py-2 font-black tracking-tight uppercase text-xs transition-all duration-200 ${
                     activeTab === 'input'
                       ? 'border-b-2 border-black dark:border-white text-black dark:text-white bg-gray-50 dark:bg-gray-700'
                       : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
                   }`}
                 >
-                  Translation Input
+                  Input
                 </button>
                 <button
                   onClick={() => setActiveTab('output')}
-                  className={`flex-1 px-4 py-3 font-black tracking-tight uppercase text-sm transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                  className={`flex-1 px-3 py-2 font-black tracking-tight uppercase text-xs transition-all duration-200 ${
                     activeTab === 'output'
                       ? 'border-b-2 border-black dark:border-white text-black dark:text-white bg-gray-50 dark:bg-gray-700'
                       : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
                   }`}
                 >
-                  Translation Output
+                  Output
                 </button>
               </div>
 
-              {/* Tab Content */}
-              <div className={`p-6 flex-1 flex flex-col transition-transform duration-200 ${
+              {/* Tab Content - Tighter padding */}
+              <div className={`p-4 flex-1 flex flex-col transition-transform duration-200 ${
                 showCopied ? 'transform scale-95' : 'transform scale-100'
               }`}>
 
@@ -998,6 +1249,20 @@ const TranslationHelper: React.FC = () => {
                       <div>
                         <h3 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Translation Input</h3>
                         <p className="text-xs text-gray-500 mt-1">Enter your translation below</p>
+                      </div>
+                      {/* Change Detection Indicator */}
+                      <div className="flex items-center gap-2">
+                        {hasCurrentEntryChanged() ? (
+                          <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-700" style={{ borderRadius: '3px' }}>
+                            <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                            Modified
+                          </span>
+                        ) : (
+                          <span className="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-bold uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>
+                            <span className="w-2 h-2 bg-gray-400 rounded-full"></span>
+                            Unchanged
+                          </span>
+                        )}
                       </div>
                     </div>
 
@@ -1012,7 +1277,11 @@ const TranslationHelper: React.FC = () => {
                           handleSubmit();
                         }
                       }}
-                      className="w-full p-5 border border-gray-300 dark:border-gray-600 rounded-md focus:border-gray-500 dark:focus:border-gray-400 focus:ring-2 focus:ring-gray-300 focus:ring-opacity-30 transition-all duration-200 text-lg leading-relaxed bg-gray-50 dark:bg-gray-700 shadow-inner dark:text-white resize-none flex-1"
+                      className={`w-full p-5 rounded-md focus:ring-2 focus:ring-opacity-30 transition-all duration-200 text-lg leading-relaxed shadow-inner dark:text-white resize-none flex-1 ${
+                        hasCurrentEntryChanged()
+                          ? 'border-2 border-green-400 dark:border-green-600 bg-green-50 dark:bg-gray-700 focus:border-green-500 dark:focus:border-green-500 focus:ring-green-300'
+                          : 'border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-700 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-gray-300'
+                      }`}
                       placeholder="Enter your translation..."
                       autoFocus
                     />
@@ -1176,36 +1445,25 @@ const TranslationHelper: React.FC = () => {
               <p className="text-xs text-gray-500 mt-1">Shows row info, but copies translations only</p>
             </div>
             <div className="flex items-center gap-2">
-              {/* Trim Current Button */}
-              <button
-                onClick={trimCurrentTranslation}
-                className="px-3 py-2 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
-                style={{ borderRadius: '3px' }}
-                title="Trim whitespace from current translation"
-              >
-                Trim
-              </button>
-              
               {/* Export Button */}
               <button
                 onClick={exportTranslations}
                 className="px-3 py-2 bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-600 hover:bg-blue-200 dark:hover:bg-blue-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
                 style={{ borderRadius: '3px' }}
-                title="Export all translations to file"
+                title="Export translations to CSV file"
               >
                 Export
               </button>
-              
-              {/* Reset Output Button */}
+
+              {/* Clear Output Button */}
               <button
                 onClick={resetOutputDisplay}
-                className="px-3 py-2 bg-orange-100 dark:bg-orange-800 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-600 hover:bg-orange-200 dark:hover:bg-orange-700 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
+                className="px-3 py-2 bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 border border-red-300 dark:border-red-700 hover:bg-red-200 dark:hover:bg-red-800 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 font-black tracking-tight uppercase letter-spacing-wide text-sm"
                 style={{ borderRadius: '3px' }}
-                title="Clear and refresh translation output display"
+                title="Clear all translations and start fresh"
               >
-                Refresh
+                Clear
               </button>
-              
             </div>
           </div>
           
@@ -1229,11 +1487,21 @@ const TranslationHelper: React.FC = () => {
                   </svg>
                 )}
               </button>
-              {/* Copy Icon Button */}
+              {/* Copy with Refs Button - for reference */}
+              <button
+                onClick={copyWithCellRefs}
+                className="p-1 text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
+                title="Copy with J column cell refs (e.g., J5: translation)"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </button>
+              {/* Copy Values Only Button - for Excel paste */}
               <button
                 onClick={copyToClipboard}
-                className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
-                title="Copy translations only (for pasting back to spreadsheet)"
+                className="p-1 text-gray-500 hover:text-green-600 dark:text-gray-400 dark:hover:text-green-400 transition-colors duration-200 bg-black dark:bg-white bg-opacity-20 dark:bg-opacity-10 hover:bg-opacity-30 dark:hover:bg-opacity-20 rounded"
+                title="Copy values only (paste into Excel starting at first modified cell)"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -1241,33 +1509,100 @@ const TranslationHelper: React.FC = () => {
               </button>
               {showCopied && (
                 <div className="absolute -top-8 right-0 bg-green-600 dark:bg-green-700 text-white px-2 py-1 text-xs whitespace-nowrap shadow-lg border border-green-800 dark:border-green-900" style={{ borderRadius: '3px' }}>
-                  ✓ Copied!
+                  Copied!
                 </div>
               )}
             </div>
-            <pre className="text-sm font-mono whitespace-pre-wrap leading-relaxed text-gray-900 dark:text-gray-100">
-              {translations.map((trans, idx) => {
-                if (!trans) return '';
-                
-                // When eye is disabled, hide blank entries entirely
-                if (!showAllEntries && trans === '[BLANK, REMOVE LATER]') {
-                  return '';
+            {/* Paste Guidance Indicator */}
+            {(() => {
+              const modifiedEntries = getModifiedEntriesForExcel();
+              if (modifiedEntries.length === 0) return null;
+
+              // Check if entries are contiguous (no gaps)
+              let isContiguous = true;
+              for (let i = 1; i < modifiedEntries.length; i++) {
+                if (modifiedEntries[i].excelRow !== modifiedEntries[i-1].excelRow + 1) {
+                  isContiguous = false;
+                  break;
                 }
-                
-                const utterer = (utterers && utterers.length > 0 && utterers[idx]) ? `[${trimSpeakerName(utterers[idx])}] ` : '';
-                return `${getCellLocation(idx)}: ${utterer}${trans}`;
-              }).filter(Boolean).join('\n') || 'Translations will appear here...'}
+              }
+
+              if (isContiguous) {
+                return (
+                  <div className="absolute top-2 left-2 text-xs text-green-600 dark:text-green-400 bg-white dark:bg-gray-800 px-2 py-1 rounded border border-green-300 dark:border-green-700">
+                    Contiguous: paste to {modifiedEntries[0].cellRef}
+                    {modifiedEntries.length > 1 && ` (${modifiedEntries.length} rows)`}
+                  </div>
+                );
+              } else {
+                return (
+                  <div className="absolute top-2 left-2 text-xs text-amber-600 dark:text-amber-400 bg-white dark:bg-gray-800 px-2 py-1 rounded border border-amber-300 dark:border-amber-700">
+                    Non-contiguous: use cell refs
+                  </div>
+                );
+              }
+            })()}
+            <pre className="text-sm font-mono whitespace-pre-wrap leading-relaxed text-gray-900 dark:text-gray-100">
+              {(() => {
+                const entries = translations.map((trans, idx) => {
+                  if (!trans) return null;
+
+                  // When eye is disabled, hide blank entries entirely
+                  if (!showAllEntries && trans === '[BLANK, REMOVE LATER]') {
+                    return null;
+                  }
+
+                  // Check if this translation is different from the original
+                  const originalValue = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
+                  const hasBeenModified = trans !== originalValue;
+                  const wasOriginallyBlank = originalValue === '[BLANK, REMOVE LATER]' || originalValue === '';
+                  const isNowFilled = trans !== '[BLANK, REMOVE LATER]' && trans !== '';
+
+                  // Show entry if:
+                  // 1. showAllEntries is true (user wants to see everything), OR
+                  // 2. The entry has been modified from its original value, OR
+                  // 3. The entry was originally blank and now has content
+                  if (!showAllEntries && !hasBeenModified && !(wasOriginallyBlank && isNowFilled)) {
+                    return null;
+                  }
+
+                  // Calculate actual Excel J column cell reference
+                  const excelRow = startRow + idx;
+                  const cellRef = `J${excelRow}`;
+                  const utterer = (utterers && utterers.length > 0 && utterers[idx]) ? `[${trimSpeakerName(utterers[idx])}] ` : '';
+
+                  return { cellRef, utterer, trans, isModified: hasBeenModified || (wasOriginallyBlank && isNowFilled) };
+                }).filter(Boolean) as { cellRef: string; utterer: string; trans: string; isModified: boolean }[];
+
+                if (entries.length === 0) {
+                  return 'Translations will appear here...';
+                }
+
+                return entries.map((entry, i) => (
+                  `${entry.cellRef}: ${entry.utterer}${entry.trans}`
+                )).join('\n');
+              })()}
             </pre>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+          <div className="grid grid-cols-1 sm:grid-cols-4 gap-4 text-sm">
             <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
               <p className="font-bold text-base sm:text-lg text-gray-900 dark:text-gray-100">{currentIndex + 1}</p>
               <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Current</p>
             </div>
             <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
-              <p className="font-bold text-base sm:text-lg text-gray-900 dark:text-gray-100">{translations.filter(t => t).length}</p>
-              <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Completed</p>
+              <p className="font-bold text-base sm:text-lg text-gray-900 dark:text-gray-100">{translations.filter(t => t && t !== '[BLANK, REMOVE LATER]').length}</p>
+              <p className="text-gray-600 dark:text-gray-400 font-bold text-xs sm:text-sm">Filled</p>
+            </div>
+            <div className="text-center p-3 sm:p-4 bg-blue-50 dark:bg-blue-900 border border-blue-300 dark:border-blue-700 shadow-sm" style={{ borderRadius: '3px' }}>
+              <p className="font-bold text-base sm:text-lg text-blue-700 dark:text-blue-300">
+                {translations.filter((trans, idx) => {
+                  if (!trans || trans === '[BLANK, REMOVE LATER]') return false;
+                  const originalValue = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
+                  return trans !== originalValue;
+                }).length}
+              </p>
+              <p className="text-blue-600 dark:text-blue-400 font-bold text-xs sm:text-sm">Modified</p>
             </div>
             <div className="text-center p-3 sm:p-4 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 shadow-sm" style={{ borderRadius: '3px' }}>
               <p className="font-bold text-base sm:text-lg text-gray-900 dark:text-gray-100">{Math.round(progress)}%</p>
@@ -1282,448 +1617,36 @@ const TranslationHelper: React.FC = () => {
         </div>
 
         {/* XLSX Mode Interface - Full Width Below Grid */}
-        {xlsxMode && (
-          <div className="reference-tools-section mt-8 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 shadow-md transition-all duration-300" style={{ borderRadius: '3px' }}>
-            {/* Header */}
-            <div className="flex items-center justify-between mb-6">
-              <div>
-                <h4 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Reference Tools</h4>
-                <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Browse and search Excel translation files</p>
-              </div>
-              <button
-                onClick={toggleXlsxMode}
-                className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
-                style={{ borderRadius: '3px' }}
-                title="Close Reference Tools"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              </button>
-            </div>
-            
-            {/* Tab Navigation */}
-            <div className="border-b border-gray-200 dark:border-gray-600 mb-6">
-              <div className="flex gap-1">
-                <button
-                  onClick={() => setXlsxViewerTab('browse')}
-                  className={`px-4 py-2 text-sm font-medium transition-colors ${
-                    xlsxViewerTab === 'browse'
-                      ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
-                  }`}
-                >
-                  Browse Data
-                </button>
-                <button
-                  onClick={() => setXlsxViewerTab('context')}
-                  className={`px-4 py-2 text-sm font-medium transition-colors ${
-                    xlsxViewerTab === 'context'
-                      ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
-                  }`}
-                >
-                  Context Search (beta)
-                </button>
-              </div>
-            </div>
-            
-            {/* Tab Content */}
-            {xlsxViewerTab === 'browse' ? (
-            <div className="space-y-4">
-              {/* File and Sheet Selection */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="space-y-2">
-                  <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">File</label>
-                  <select
-                    value={selectedXlsxFile}
-                    onChange={(e) => loadXlsxData(e.target.value)}
-                    className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
-                    style={{ borderRadius: '3px' }}
-                    disabled={isLoadingXlsx}
-                  >
-                    <option value="">Select an XLSX file</option>
-                    {availableXlsxFiles.map(file => (
-                      <option key={file.fileName} value={file.fileName}>{file.fileName}</option>
-                    ))}
-                  </select>
-                </div>
-
-                {/* Sheet Selection */}
-                {xlsxData && !globalSearch && (
-                  <div className="space-y-2">
-                    <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Sheet</label>
-                    <select
-                      value={selectedXlsxSheet}
-                      onChange={(e) => setSelectedXlsxSheet(e.target.value)}
-                      className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
-                      style={{ borderRadius: '3px' }}
-                      disabled={isLoadingXlsx}
-                    >
-                      <option value="">Select a sheet</option>
-                      {getAvailableSheets().map((sheetName: string) => (
-                        <option key={sheetName} value={sheetName}>{sheetName}</option>
-                      ))}
-                    </select>
-                  </div>
-                )}
-              </div>
-
-              {/* Search and Global Toggle */}
-              <div className="space-y-4">
-                <div className="space-y-2">
-                  <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Search</label>
-                  <input
-                    type="text"
-                    value={xlsxSearchTerm}
-                    onChange={(e) => setXlsxSearchTerm(e.target.value)}
-                    placeholder="Search by row number, utterer, context, or text..."
-                    className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
-                    style={{ borderRadius: '3px' }}
-                    disabled={isLoadingXlsx}
-                  />
-                </div>
-                
-                {/* Global Search Toggle */}
-                <div className="flex items-center gap-3">
-                  <input
-                    type="checkbox"
-                    id="globalSearch"
-                    checked={globalSearch}
-                    onChange={(e) => setGlobalSearch(e.target.checked)}
-                    className="w-4 h-4 text-black border border-black dark:border-gray-600 rounded focus:ring-2 focus:ring-gray-500 focus:ring-offset-0 dark:bg-gray-700"
-                    style={{ borderRadius: '2px' }}
-                    disabled={isLoadingXlsx}
-                  />
-                  <label htmlFor="globalSearch" className="text-sm font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                    Global Search
-                  </label>
-                  {globalSearch && (
-                    <span className="inline-flex items-center gap-1 px-2 py-1 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded text-xs text-amber-800 dark:text-amber-200 font-medium transition-all duration-300 animate-fade-in" style={{ borderRadius: '2px' }}>
-                      <svg className="w-3 h-3 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                      </svg>
-                      Global Search is slow! Use at your own risk.
-                    </span>
-                  )}
-                </div>
-              </div>
-              
-              {/* XLSX Data Display */}
-              {xlsxData && (globalSearch || selectedXlsxSheet) && (
-              <div className="mt-6 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 max-h-64 overflow-y-auto shadow-inner custom-scrollbar" style={{ borderRadius: '3px' }}>
-                {isLoadingXlsx ? (
-                  <div className="p-8 text-center">
-                    <div className="text-gray-500 dark:text-gray-400">Loading XLSX data...</div>
-                  </div>
-                ) : (
-                  <div className="p-4 space-y-3">
-                    {getFilteredEntries().map((entry: any, index: number) => (
-                      <div key={index} className="p-4 border border-gray-200 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
-                        <div className="space-y-2">
-                          {/* Header with Row and Sheet */}
-                          <div className="flex items-center justify-between">
-                            <div className="flex items-center gap-3">
-                              <span className="font-bold text-blue-600 dark:text-blue-400 text-sm">Row {entry.row}</span>
-                              {globalSearch && entry.sheetName && (
-                                <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-1 rounded font-medium tracking-tight uppercase letter-spacing-wide">
-                                  {entry.sheetName}
-                                </span>
-                              )}
-                              {entry.fileName && (
-                                <span className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 px-2 py-1 rounded font-medium">
-                                  {entry.fileName}
-                                </span>
-                              )}
-                            </div>
-                          </div>
-                          
-                          {/* Data Grid */}
-                          <div className="grid grid-cols-1 gap-2 text-sm">
-                            <div className="flex items-start gap-2">
-                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Utterer:</span>
-                              <div className="flex items-center gap-2 flex-1">
-                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.utterer}</span>
-                                <button
-                                  onClick={() => copyJsonField(entry.utterer, 'utterer')}
-                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                  title="Copy utterer"
-                                >
-                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                  </svg>
-                                </button>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-2">
-                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Context:</span>
-                              <div className="flex items-center gap-2 flex-1">
-                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.context}</span>
-                                <button
-                                  onClick={() => copyJsonField(entry.context, 'context')}
-                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                  title="Copy context"
-                                >
-                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                  </svg>
-                                </button>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-2">
-                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Source:</span>
-                              <div className="flex items-center gap-2 flex-1">
-                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.sourceEnglish}</span>
-                                <button
-                                  onClick={() => copyJsonField(entry.sourceEnglish, 'source')}
-                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                  title="Copy source text"
-                                >
-                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                  </svg>
-                                </button>
-                              </div>
-                            </div>
-                            <div className="flex items-start gap-2">
-                              <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
-                              <div className="flex items-center gap-2 flex-1">
-                                <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.translatedDutch}</span>
-                                <button
-                                  onClick={() => copyJsonField(entry.translatedDutch, 'dutch')}
-                                  className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                  title="Copy Dutch translation"
-                                >
-                                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                  </svg>
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                    {getFilteredEntries().length === 0 && (
-                      <div className="text-center text-gray-500 dark:text-gray-400 py-8 text-sm">
-                        No entries found matching your search criteria.
-                      </div>
-                    )}
-                  </div>
-                )}
-              </div>
-            )}
-            </div>
-          ) : (
-            /* Context Search Tab */
-            <div className="space-y-4">
-              
-              {/* Auto-search results based on current source text */}
-              <div className="space-y-2">
-                <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                  Searching for: &quot;{sourceTexts[currentIndex]}&quot;
-                </label>
-                <div className="bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 p-4 max-h-64 overflow-y-auto shadow-inner custom-scrollbar" style={{ borderRadius: '3px' }}>
-                  {(() => {
-                    const matches = findXlsxMatchesWrapper(sourceTexts[currentIndex] || '');
-                    const charMatches = findCharacterMatches(sourceTexts[currentIndex] || '');
-                    
-                    if (matches.length > 0 || charMatches.length > 0) {
-                      return (
-                        <>
-                          {/* Show highlighted text with suggestions */}
-                          <div className="mb-4 p-4 bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded shadow-sm" style={{ 
-                            borderRadius: '6px',
-                            boxShadow: darkMode 
-                              ? '0 0 0 1px rgba(59, 130, 246, 0.2), 0 2px 4px rgba(59, 130, 246, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.05)'
-                              : '0 0 0 1px rgba(59, 130, 246, 0.1), 0 2px 4px rgba(59, 130, 246, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-                            background: darkMode 
-                              ? 'linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(147, 197, 253, 0.12) 100%)'
-                              : 'linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(147, 197, 253, 0.08) 100%)'
-                          }}>
-                            <div className="text-sm font-semibold mb-3 text-blue-700 dark:text-blue-300 flex items-center gap-2">
-                              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                              Currently Highlighted Text:
-                            </div>
-                            <TextHighlighter
-                              text={sourceTexts[currentIndex]}
-                              jsonData={highlightingJsonData}
-                              xlsxData={xlsxData || []}
-                              highlightMode={true}
-                              eyeMode={false}
-                              currentTranslation=""
-                              onCharacterClick={insertCharacterName}
-                              onSuggestionClick={insertTranslatedSuggestion}
-                              onCharacterNameClick={handleCharacterNameClick}
-                              className=""
-                              showSuggestions={true}
-                            />
-                          </div>
-                          
-                          {/* Historical matches - styled like reference viewer */}
-                          {matches.map((match, idx) => (
-                            <div key={`xlsx-${idx}`} className="mb-3 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
-                              <div className="space-y-2">
-                                {/* Header with Row and Sheet */}
-                                <div className="flex items-center justify-between">
-                                  <div className="flex items-center gap-3">
-                                    <span className="font-bold text-blue-600 dark:text-blue-400 text-sm">Row {match.rowNumber}</span>
-                                    {match.sheetName && (
-                                      <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-1 rounded font-medium tracking-tight uppercase letter-spacing-wide">
-                                        {match.sheetName}
-                                      </span>
-                                    )}
-                                  </div>
-                                </div>
-                                
-                                {/* Data Grid */}
-                                <div className="grid grid-cols-1 gap-2 text-sm">
-                                  <div className="flex items-start gap-2">
-                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Utterer:</span>
-                                    <div className="flex items-center gap-2 flex-1">
-                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{match.utterer}</span>
-                                      <button
-                                        onClick={() => navigator.clipboard.writeText(match.utterer)}
-                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                        title="Copy utterer"
-                                      >
-                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                        </svg>
-                                      </button>
-                                    </div>
-                                  </div>
-                                  <div className="flex items-start gap-2">
-                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Context:</span>
-                                    <div className="flex items-center gap-2 flex-1">
-                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{match.context}</span>
-                                      <button
-                                        onClick={() => navigator.clipboard.writeText(match.context)}
-                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                        title="Copy context"
-                                      >
-                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                        </svg>
-                                      </button>
-                                    </div>
-                                  </div>
-                                  <div className="flex items-start gap-2">
-                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Source:</span>
-                                    <div className="flex items-center gap-2 flex-1">
-                                      <div className="text-gray-700 dark:text-gray-300 flex-1">
-                                        <TextHighlighter
-                                          text={match.sourceEnglish}
-                                          jsonData={highlightingJsonData}
-                                          xlsxData={xlsxData || []}
-                                          highlightMode={true}
-                                          eyeMode={false}
-                                          currentTranslation=""
-                                          onCharacterClick={insertCharacterName}
-                                          onSuggestionClick={insertTranslatedSuggestion}
-                                          onCharacterNameClick={handleCharacterNameClick}
-                                          className="inline"
-                                          showSuggestions={false}
-                                        />
-                                      </div>
-                                      <button
-                                        onClick={() => navigator.clipboard.writeText(match.sourceEnglish)}
-                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                        title="Copy source text"
-                                      >
-                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                        </svg>
-                                      </button>
-                                    </div>
-                                  </div>
-                                  <div className="flex items-start gap-2">
-                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
-                                    <div className="flex items-center gap-2 flex-1">
-                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{match.translatedDutch || '(no translation)'}</span>
-                                      {match.translatedDutch && (
-                                        <button
-                                          onClick={() => navigator.clipboard.writeText(match.translatedDutch)}
-                                          className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                          title="Copy Dutch translation"
-                                        >
-                                          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                          </svg>
-                                        </button>
-                                      )}
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          ))}
-                          {charMatches.map((char, idx) => (
-                            <div key={`char-${idx}`} className="mb-3 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-600 rounded-md hover:bg-green-100 dark:hover:bg-green-900/30 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
-                              <div className="space-y-2">
-                                {/* Header */}
-                                <div className="flex items-center justify-between">
-                                  <div className="flex items-center gap-3">
-                                    <span className="font-bold text-green-800 dark:text-green-300 text-sm">Character</span>
-                                    <span className="text-xs bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200 px-2 py-1 rounded font-medium">
-                                      {char.name}
-                                    </span>
-                                  </div>
-                                </div>
-                                
-                                {/* Data Grid */}
-                                <div className="grid grid-cols-1 gap-2 text-sm">
-                                  <div className="flex items-start gap-2">
-                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">English:</span>
-                                    <div className="flex items-center gap-2 flex-1">
-                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{char.english}</span>
-                                      <button
-                                        onClick={() => navigator.clipboard.writeText(char.english)}
-                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                        title="Copy English name"
-                                      >
-                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                        </svg>
-                                      </button>
-                                    </div>
-                                  </div>
-                                  <div className="flex items-start gap-2">
-                                    <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
-                                    <div className="flex items-center gap-2 flex-1">
-                                      <span className="text-gray-700 dark:text-gray-300 flex-1">{char.dutch}</span>
-                                      <button
-                                        onClick={() => navigator.clipboard.writeText(char.dutch)}
-                                        className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                        title="Copy Dutch translation"
-                                      >
-                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                        </svg>
-                                      </button>
-                                    </div>
-                                  </div>
-                                  {char.description && (
-                                    <div className="flex items-start gap-2">
-                                      <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Description:</span>
-                                      <span className="text-gray-600 dark:text-gray-400 flex-1 text-xs">{char.description}</span>
-                                    </div>
-                                  )}
-                                </div>
-                              </div>
-                            </div>
-                          ))}
-                        </>
-                      );
-                    }
-                    return <p className="text-gray-500 dark:text-gray-400 text-sm">No historical matches found for current text.</p>;
-                  })()}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-        )}
+        <ReferenceToolsPanel
+          xlsxMode={xlsxMode}
+          toggleXlsxMode={toggleXlsxMode}
+          xlsxViewerTab={xlsxViewerTab}
+          setXlsxViewerTab={setXlsxViewerTab}
+          xlsxData={xlsxData}
+          selectedXlsxFile={selectedXlsxFile}
+          selectedXlsxSheet={selectedXlsxSheet}
+          availableXlsxFiles={availableXlsxFiles}
+          xlsxSearchTerm={xlsxSearchTerm}
+          setXlsxSearchTerm={setXlsxSearchTerm}
+          globalSearch={globalSearch}
+          setGlobalSearch={setGlobalSearch}
+          isLoadingXlsx={isLoadingXlsx}
+          loadXlsxData={loadXlsxData}
+          setSelectedXlsxSheet={setSelectedXlsxSheet}
+          getAvailableSheets={getAvailableSheets}
+          getFilteredEntries={getFilteredEntries}
+          sourceTexts={sourceTexts}
+          currentIndex={currentIndex}
+          highlightingJsonData={highlightingJsonData}
+          findXlsxMatchesWrapper={findXlsxMatchesWrapper}
+          findCharacterMatches={findCharacterMatches}
+          insertCharacterName={insertCharacterName}
+          insertTranslatedSuggestion={insertTranslatedSuggestion}
+          handleCharacterNameClick={handleCharacterNameClick}
+          handleHighlightClick={handleHighlightClick}
+          darkMode={darkMode}
+          copyJsonField={copyJsonField}
+        />
 
         {/* Codex Reference Panel - HIDDEN FOR NOW */}
         {/* 
