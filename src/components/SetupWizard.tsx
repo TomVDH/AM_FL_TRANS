@@ -204,9 +204,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
         const data = await response.json();
 
-        // Extract source texts and utterers from the data
+        // Extract source texts, utterers, and existing translations from the data
         const texts: string[] = [];
         const speakers: string[] = [];
+        const existingTranslations: string[] = [];
 
         if (fileType === 'json') {
           // JSON format: data is the direct JSON structure with sheets array
@@ -215,6 +216,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               if (entry.sourceEnglish) {
                 texts.push(entry.sourceEnglish);
                 speakers.push(entry.utterer || '');
+                // Load existing Dutch translation if available, otherwise use blank placeholder
+                existingTranslations.push(entry.translatedDutch || '[BLANK, REMOVE LATER]');
               }
             });
           });
@@ -225,6 +228,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               if (entry.english) {
                 texts.push(entry.english);
                 speakers.push(entry.utterer || '');
+                // Load existing Dutch translation if available, otherwise use blank placeholder
+                existingTranslations.push(entry.dutch || '[BLANK, REMOVE LATER]');
               }
             });
           });
@@ -235,10 +240,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           return;
         }
 
-        // Set the data in translation state
+        // Set the data in translation state (including existing translations)
         setSourceTexts(texts);
         setUtterers(speakers);
-        setTranslations(new Array(texts.length).fill('[BLANK, REMOVE LATER]'));
+        setTranslations(existingTranslations);
 
       } catch (error) {
         console.error(`Error loading ${fileType} file:`, error);
