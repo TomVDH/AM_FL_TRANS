@@ -1,6 +1,6 @@
 {
   "fileName": "6_asses.masses_E6Proxy",
-  "processedAt": "2025-08-03T15:55:22.746Z",
+  "processedAt": "2025-12-29T08:53:11.118Z",
   "sheets": [
     {
       "sheetName": "E6_EpisodeTitle_localization",
@@ -10,7 +10,7 @@
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "EPISODE SIX",
-          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
@@ -251,7 +251,7 @@
         {
           "rowNumber": 34,
           "utterer": "SAY.Dialog:LazyCole.2.Lazy Ass",
-          "context": "Start NPC dialogue when getting to the furtherst right end of the map.\nCave in starts to happen.",
+          "context": "Start NPC dialogue when getting to the furtherst right end of the map. Cave in starts to happen.",
           "sourceEnglish": "Heyyyy Hard Ass, what's shakin'? Haha.",
           "translatedDutch": ""
         },
@@ -279,7 +279,7 @@
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:Worker.1.Miner With No Legs",
-          "context": "NPC Dialogue (single line). Nightmare sequence.\nNon-repeater line.",
+          "context": "NPC Dialogue (single line). Nightmare sequence. Non-repeater line.",
           "sourceEnglish": "{s}{s=7}My... legs...{/s}",
           "translatedDutch": ""
         },
@@ -300,7 +300,7 @@
         {
           "rowNumber": 41,
           "utterer": "SAY.Dialog:Sad_Horror.1.Sad Ass",
-          "context": "NPC Dialogue (single line). Nightmare sequence.\nSad explodes.",
+          "context": "NPC Dialogue (single line). Nightmare sequence. Sad explodes.",
           "sourceEnglish": "HAHAHAHAHAHAHAHAHAHA...",
           "translatedDutch": ""
         },
@@ -356,7 +356,7 @@
         {
           "rowNumber": 49,
           "utterer": "SAY.Dialog:FoundLazy.24.Hard Ass",
-          "context": "A dialogue between Good Hard Ass and Evil Hard Ass ensues.\nGood Hard Ass.",
+          "context": "A dialogue between Good Hard Ass and Evil Hard Ass ensues. Good Hard Ass.",
           "sourceEnglish": "We failed to save Lazy.",
           "translatedDutch": ""
         },
@@ -543,29 +543,29 @@
         {
           "rowNumber": 5,
           "utterer": "SAY.DialogMaster.72.Hard Ass",
-          "context": "Good Hard Ass. The fight begins. \nThe other Asses enter the fight one by one.",
+          "context": "Good Hard Ass. The fight begins. The other Asses enter the fight one by one.",
           "sourceEnglish": "Who says I'm alone?\\n",
           "translatedDutch": ""
         },
         {
           "rowNumber": 6,
-          "utterer": "SAY.DialogMaster.19.Thirsty Ass",
-          "context": "NPC Dialogue on entrance to the fight. (Spoken by Thirsty)",
-          "sourceEnglish": "Heck, I don't have a drop of respect left for you.",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 7,
           "utterer": "SAY.DialogMaster.74.Hard Ass",
           "context": "NPC Dialogue on entrance to the fight.",
           "sourceEnglish": "Prepare to become obsolete.",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 8,
-          "utterer": "SAY.DialogMaster.29.Sad Ass",
+          "rowNumber": 7,
+          "utterer": "SAY.DialogMaster.39.Nice Ass",
           "context": "NPC Dialogue on entrance to the fight.",
-          "sourceEnglish": "Time to put you out of YOUR misery...",
+          "sourceEnglish": "Golly, you're about to get pounded, in less than two minutes!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 8,
+          "utterer": "SAY.DialogMaster.19.Thirsty Ass",
+          "context": "NPC Dialogue on entrance to the fight. (Spoken by Thirsty)",
+          "sourceEnglish": "Heck, I don't have a drop of respect left for you.",
           "translatedDutch": ""
         },
         {
@@ -577,16 +577,16 @@
         },
         {
           "rowNumber": 10,
-          "utterer": "SAY.DialogMaster.39.Nice Ass",
+          "utterer": "SAY.DialogMaster.44.{$NewName}",
           "context": "NPC Dialogue on entrance to the fight.",
-          "sourceEnglish": "Golly, you're about to get pounded, in less than two minutes!",
+          "sourceEnglish": "Uncle Hard, everyone says you're a two-faced liar!",
           "translatedDutch": ""
         },
         {
           "rowNumber": 11,
-          "utterer": "SAY.DialogMaster.44.{$NewName}",
+          "utterer": "SAY.DialogMaster.29.Sad Ass",
           "context": "NPC Dialogue on entrance to the fight.",
-          "sourceEnglish": "Uncle Hard, everyone says you're a two-faced liar!",
+          "sourceEnglish": "Time to put you out of YOUR misery...",
           "translatedDutch": ""
         },
         {
@@ -732,14 +732,14 @@
         {
           "rowNumber": 32,
           "utterer": "WRITE.DialogLocalizer.9",
-          "context": "Attack.",
+          "context": "Attack. (Takes HP from opponent)",
           "sourceEnglish": "Drain",
           "translatedDutch": ""
         },
         {
           "rowNumber": 33,
           "utterer": "WRITE.DialogLocalizer.10",
-          "context": "Attack.",
+          "context": "Attack. (Raise Defense)",
           "sourceEnglish": "Endure",
           "translatedDutch": ""
         },
@@ -760,14 +760,14 @@
         {
           "rowNumber": 36,
           "utterer": "WRITE.DialogLocalizer.13",
-          "context": "Attack.",
+          "context": "Attack. High Noon is a cowboy reference because Thirsty has a cowboy accent in English. Feel free to come up with any type of attack name.",
           "sourceEnglish": "High Noon",
           "translatedDutch": ""
         },
         {
           "rowNumber": 37,
           "utterer": "WRITE.DialogLocalizer.14",
-          "context": "Attack.",
+          "context": "Attack. (Defending)",
           "sourceEnglish": "Impenetrable",
           "translatedDutch": ""
         },
@@ -926,7 +926,7 @@
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:PostNightmare.7.Sturdy Ass",
-          "context": "Branch (1.1, and 1.2) converge. \nThe scene fades in to Sturdy Ass and the Foal standing in front of Hard Ass.",
+          "context": "Branch (1.1, and 1.2) converge. The scene fades in to Sturdy Ass and the Foal standing in front of Hard Ass.",
           "sourceEnglish": "Comrade?",
           "translatedDutch": ""
         },
@@ -1080,7 +1080,7 @@
         {
           "rowNumber": 27,
           "utterer": "SAY.Dialog:PostNightmare.78.{$NewName}",
-          "context": "After this line, the Foal and Sturdy expore the map in search of the Theatre.",
+          "context": "After this line, the Foal and Sturdy explore the map in search of the Theatre.",
           "sourceEnglish": "You promised to show me where the Old Theatre is.",
           "translatedDutch": ""
         },
@@ -1150,14 +1150,14 @@
         {
           "rowNumber": 37,
           "utterer": "SAY.Dialog:Shrine.10.Sturdy Ass",
-          "context": "In the long way, Sturdy reminisces at an old shrine.\nThis version occurs if The Foal is present.",
+          "context": "In the long way, Sturdy reminisces at an old shrine. This version occurs if The Foal is present.",
           "sourceEnglish": "Something about this place makes me feel closer to the Gods.",
           "translatedDutch": ""
         },
         {
           "rowNumber": 38,
           "utterer": "SAY.Dialog:Shrine.36.Sturdy Ass",
-          "context": "In the long way, Sturdy reminisces at an old shrine.\nThis version occurs if The Foal is NOT present.",
+          "context": "In the long way, Sturdy reminisces at an old shrine. This version occurs if The Foal is NOT present.",
           "sourceEnglish": "I'll have to bring {$NewName} here next time we have quality time together.",
           "translatedDutch": ""
         },
@@ -1171,7 +1171,7 @@
         {
           "rowNumber": 40,
           "utterer": "SAY.Dialog:SturdyArrivesAtVillage.396.Sturdy Ass",
-          "context": "Dialogue for when Sturdy and the Foal arrive from the South entrance of Bumpkin Village.\n\nNote for translators: this is the same dialogue as entering from the East entrance.",
+          "context": "Dialogue for when Sturdy and the Foal arrive from the South entrance of Bumpkin Village. Note for translators: this is the same dialogue as entering from the East entrance.",
           "sourceEnglish": "It's a shame you never saw this place as it was, before the Fire, before the Machines.",
           "translatedDutch": ""
         },
@@ -1213,7 +1213,7 @@
         {
           "rowNumber": 46,
           "utterer": "SAY.Dialog:SturdyArrivesAtVillage.418.Sturdy Ass",
-          "context": "Dialogue for when Sturdy and the Foal arrive from the East entrance of Bumpkin Village.\n\nNote for translators: this is the same dialogue as entering from the South entrance.",
+          "context": "Dialogue for when Sturdy and the Foal arrive from the East entrance of Bumpkin Village. Note for translators: this is the same dialogue as entering from the South entrance.",
           "sourceEnglish": "It's a shame you never saw this place as it was, before the Fire, before the Machines.",
           "translatedDutch": ""
         },
@@ -1430,7 +1430,7 @@
         {
           "rowNumber": 77,
           "utterer": "SAY.Dialog:EnterTheTheatre.78.{$NewName}",
-          "context": "Dialogue options (2.1 and 2.2) converge. \nThe Foal exits the Theatre.",
+          "context": "Dialogue options (2.1 and 2.2) converge. The Foal exits the Theatre.",
           "sourceEnglish": "Told ya I'd be safe!",
           "translatedDutch": ""
         },
@@ -1542,7 +1542,7 @@
         {
           "rowNumber": 93,
           "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.334.Sturdy Ass",
-          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
           "sourceEnglish": "This place was so beautiful...",
           "translatedDutch": ""
         },
@@ -1563,7 +1563,7 @@
         {
           "rowNumber": 96,
           "utterer": "SAY.Dialog_Sculpture1_VillageWest.340.Sturdy Ass",
-          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
           "sourceEnglish": "This place was so beautiful...",
           "translatedDutch": ""
         },
@@ -1584,7 +1584,7 @@
         {
           "rowNumber": 99,
           "utterer": "SAY.Dialog_Sculpture2_VillageNorth.341.Sturdy Ass",
-          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
           "sourceEnglish": "This place was so beautiful...",
           "translatedDutch": ""
         },
@@ -1605,7 +1605,7 @@
         {
           "rowNumber": 102,
           "utterer": "SAY.Dialog_Sculpture3_VillageSouth.347.Sturdy Ass",
-          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
           "sourceEnglish": "This place was so beautiful...",
           "translatedDutch": ""
         },
@@ -1626,7 +1626,7 @@
         {
           "rowNumber": 105,
           "utterer": "SAY.Dialog_Sculpture4_VillageEast.348.Sturdy Ass",
-          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
           "sourceEnglish": "This place was so beautiful...",
           "translatedDutch": ""
         },
@@ -1647,7 +1647,7 @@
         {
           "rowNumber": 108,
           "utterer": "SAY.Dialog_Sculpture5_FannysideEast.348.Sturdy Ass",
-          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
           "sourceEnglish": "This place was so beautiful...",
           "translatedDutch": ""
         },
@@ -1668,7 +1668,7 @@
         {
           "rowNumber": 111,
           "utterer": "SAY.Dialog_Sculpture6_Mine.349.Sturdy Ass",
-          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. \n\nNote for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+          "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
           "sourceEnglish": "This place was so beautiful...",
           "translatedDutch": ""
         },
@@ -1892,7 +1892,7 @@
         {
           "rowNumber": 143,
           "utterer": "SAY.Dialog_Sculpture3_VillageSouth.17.Sturdy Ass",
-          "context": "Sturdy approaches a sculpture.\nJump to line x, y, or z.",
+          "context": "Sturdy approaches a sculpture. Jump to line x, y, or z.",
           "sourceEnglish": "Trusty was always better at coming up with names...",
           "translatedDutch": ""
         },
@@ -1927,7 +1927,7 @@
         {
           "rowNumber": 148,
           "utterer": "MENU.Dialog_Sculpture3_VillageSouth.18",
-          "context": "Dialogue option 3. \nThis variation appears if Old Ass's last words were 'Ass Power'.",
+          "context": "Dialogue option 3. This variation appears if Old Ass's last words were 'Ass Power'.",
           "sourceEnglish": "\"Ass Power!\"",
           "translatedDutch": ""
         },
@@ -1941,7 +1941,7 @@
         {
           "rowNumber": 150,
           "utterer": "MENU.Dialog_Sculpture3_VillageSouth.327",
-          "context": "Dialogue option 3.\nThis variation appears if Old Ass's last words were 'I'm scared'.",
+          "context": "Dialogue option 3. This variation appears if Old Ass's last words were 'I'm scared'.",
           "sourceEnglish": "\"I'm Scared\"",
           "translatedDutch": ""
         },
@@ -1962,7 +1962,7 @@
         {
           "rowNumber": 153,
           "utterer": "SAY.Dialog_Sculpture4_VillageEast.17.Sturdy Ass",
-          "context": "Sturdy approaches a sculpture.\nJump to line x, y, or z.",
+          "context": "Sturdy approaches a sculpture. Jump to line x, y, or z.",
           "sourceEnglish": "Being an artist is one of the most spiritual things I've done with my life.",
           "translatedDutch": ""
         },
@@ -2018,7 +2018,7 @@
         {
           "rowNumber": 161,
           "utterer": "SAY.Dialog_Sculpture5_FannysideEast.17.Sturdy Ass",
-          "context": "Sturdy approaches a sculpture.\nJump to line x, y, or z.",
+          "context": "Sturdy approaches a sculpture. Jump to line x, y, or z.",
           "sourceEnglish": "This sculpture will remind everyone of Fannyside's golden days.",
           "translatedDutch": ""
         },
@@ -2165,7 +2165,7 @@
         {
           "rowNumber": 182,
           "utterer": "SAY.Dialog:Sad.10.Sad Ass",
-          "context": "Dialogue when Sturdy comes across Sad at his Memorial Garden.\nThis dialogue only happens when Sad is still on the Farm.",
+          "context": "Dialogue when Sturdy comes across Sad at his Memorial Garden. This dialogue only happens when Sad is still on the Farm.",
           "sourceEnglish": "Hullo Sturdy!",
           "translatedDutch": ""
         },
@@ -2417,14 +2417,14 @@
         {
           "rowNumber": 218,
           "utterer": "SAY.Dialog:Sculpture7Dummy.10.Sturdy Ass",
-          "context": "Dialogue for when Sturdy approaches the final sculpture, but has not talked to Thirsty.\nRepeater line.",
+          "context": "Dialogue for when Sturdy approaches the final sculpture, but has not talked to Thirsty. Repeater line.",
           "sourceEnglish": "This pile isn't very inspiring...",
           "translatedDutch": ""
         },
         {
           "rowNumber": 219,
           "utterer": "SAY.Dialog_Sculpture7_FarmBar.23.Sturdy Ass",
-          "context": "Dialogue for when Sturdy approaches the final sculpture and has already talked to Thirsty.\nJump to line x, y, or z.",
+          "context": "Dialogue for when Sturdy approaches the final sculpture and has already talked to Thirsty. Jump to line x, y, or z.",
           "sourceEnglish": "What's the perfect title to commemorate the opening of Bottoms Up?",
           "translatedDutch": ""
         },
@@ -3739,7 +3739,7 @@
         {
           "rowNumber": 51,
           "utterer": "SAY.Dialog:Dongle.135.Bad Ass",
-          "context": "Bad Ass leaves the Foal and exits the room.\nThe Foal searches for a way to power the Machine.",
+          "context": "Bad Ass leaves the Foal and exits the room. The Foal searches for a way to power the Machine.",
           "sourceEnglish": "Charge the machine. I'll be back.",
           "translatedDutch": ""
         },

@@ -1,6 +1,6 @@
 {
   "fileName": "10_asses.masses_E10Proxy",
-  "processedAt": "2025-08-03T15:55:21.981Z",
+  "processedAt": "2025-12-29T08:53:10.412Z",
   "sheets": [
     {
       "sheetName": "E10_EpisodeTitle_localization",
@@ -78,7 +78,7 @@
           "utterer": "SAY.Dialog_E10_Slow.54.Thirsty Ass",
           "context": "Our core cast drives past the riot in the tractor, which promptly dies. The Herd emerges onto the street",
           "sourceEnglish": "Aw dang! The Tractor-Machine's choking. Maybe it needs a break.",
-          "translatedDutch": "Zefix! Die Traktor-Maschin' gibt ean Geist auf. Vielleicht braucht's a Paus'n."
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
@@ -113,7 +113,7 @@
           "utterer": "SAY.Dialog_E10_Slow.140.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Slow Ass! Where in the world did ya bring us to?!",
-          "translatedDutch": "Lahm-Esel! Wo host du uns denn hi bracht?"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 15,
@@ -200,7 +200,7 @@
         {
           "rowNumber": 5,
           "utterer": "SAY.Dialog:E10_Nice.32.Nice Ass",
-          "context": "Post Nice-Ass Fight, if lost the fight and Sad is in the city (was in the factory). \nSad Ass finds Nice Ass on the ground, beaten.",
+          "context": "Post Nice-Ass Fight, if lost the fight and Sad is in the city (was in the factory). Sad Ass finds Nice Ass on the ground, beaten.",
           "sourceEnglish": "Sad Ass? Is that you?",
           "translatedDutch": ""
         },
@@ -235,7 +235,7 @@
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:FindingSadAss.2.Nice Ass",
-          "context": "Post Nice-Ass Fight, if won the fight and Sad is in the city (was in the factory). \nNice Ass finds Sad Ass on the ground, beaten.",
+          "context": "Post Nice-Ass Fight, if won the fight and Sad is in the city (was in the factory). Nice Ass finds Sad Ass on the ground, beaten.",
           "sourceEnglish": "Sad Ass! Can you hear me?",
           "translatedDutch": ""
         },
@@ -310,7 +310,7 @@
           "utterer": "SAY.Dialog:E10_Thirsty.14.Thirsty Ass",
           "context": "Zooming over to elsewhere in the city, we see Thirsty Ass about to fight.",
           "sourceEnglish": "YEEEHAW! Time to get crackin'!",
-          "translatedDutch": "JETZ ABA! Auf geht's!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
@@ -324,7 +324,7 @@
           "utterer": "SAY.Dialog:FindingKickAss.68.Thirsty Ass",
           "context": "Thirsty Ass finds Kick Ass stomping on a Human, beaten.",
           "sourceEnglish": "Kick Ass?!",
-          "translatedDutch": "Schlagi?"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
@@ -338,7 +338,7 @@
           "utterer": "SAY.Dialog:FindingKickAss.73.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Kick Ass!!",
-          "translatedDutch": "Schlagi!!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 8,
@@ -352,14 +352,14 @@
           "utterer": "SAY.Dialog:FindingKickAss.75.Thirsty Ass",
           "context": "",
           "sourceEnglish": "We came here to rescue y'all, but it looks like y'all are doin' fine on yer own!",
-          "translatedDutch": "Mir san herkomma, um euch alle z'retten, aba wia's ausschaugt, geht's euch eh guad!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "SAY.Dialog:FindingKickAss.76.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Where are the others?",
-          "translatedDutch": "Wo san denn die Andern?"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 11,
@@ -380,7 +380,7 @@
           "utterer": "SAY.Dialog:E10_Thirsty.36.Thirsty Ass",
           "context": "Post Thirsty-Ass Fight, if lost the fight.",
           "sourceEnglish": "Dang...",
-          "translatedDutch": "Zefix..."
+          "translatedDutch": ""
         },
         {
           "rowNumber": 14,
@@ -394,7 +394,7 @@
           "utterer": "SAY.Dialog:E10_Thirsty.40.Thirsty Ass",
           "context": "",
           "sourceEnglish": "What a sight for sore eyes—if it ain't Kick Ass!",
-          "translatedDutch": "Is der jetz echt? Is des ned der Schlagi?"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 16,
@@ -408,14 +408,14 @@
           "utterer": "SAY.Dialog:E10_Thirsty.41.Thirsty Ass",
           "context": "",
           "sourceEnglish": "We came to git you Comrade.",
-          "translatedDutch": "Mir san herkomma, um di z'holen, Chef."
+          "translatedDutch": ""
         },
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:E10_Thirsty.42.Thirsty Ass",
           "context": "",
           "sourceEnglish": "We came to bring you home.",
-          "translatedDutch": "Mir san herkomma, um di hoam z'bringa."
+          "translatedDutch": ""
         },
         {
           "rowNumber": 19,
@@ -429,14 +429,14 @@
           "utterer": "SAY.Dialog:E10_Thirsty.44.Thirsty Ass",
           "context": "",
           "sourceEnglish": "What matters most, is that we stick together.",
-          "translatedDutch": "Was zählt, is, dass mia alle z'samm halten."
+          "translatedDutch": ""
         },
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog:E10_Thirsty.45.Thirsty Ass",
           "context": "Go to line 22",
           "sourceEnglish": "Plus, I need more customers! I finally opened The Bottom's Up Ba—",
-          "translatedDutch": "Außerdem brauch i mehr Kundschaft! I hob endlich mei Bar eröffnet, „Zum Tiefen Wasserloch“ –"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
@@ -478,7 +478,7 @@
           "utterer": "SAY.Dialog:FindingKickAss.61.Thirsty Ass",
           "context": "They all run off.",
           "sourceEnglish": "Let's git goin'!",
-          "translatedDutch": "Auf geht's!"
+          "translatedDutch": ""
         }
       ]
     },
@@ -503,7 +503,7 @@
           "rowNumber": 5,
           "utterer": "SAY.Dialog:E10_Hard.38.Smart Ass",
           "context": "Branch 1: Hard Ass loses the fight against the horde of riot cops.",
-          "sourceEnglish": "You saw here it folks... the expert on saving others: Hard Ass.",
+          "sourceEnglish": "You saw it here folks... the expert on saving others: Hard Ass.",
           "translatedDutch": ""
         },
         {
@@ -651,7 +651,7 @@
           "utterer": "SAY.Dialog:E10_Hard.636.Thirsty Ass",
           "context": "Kick and Thirsty enter.",
           "sourceEnglish": "Yeehaw! We're all here!",
-          "translatedDutch": "Da schaug' her! Mia san alle hier!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 27,
@@ -756,7 +756,7 @@
           "utterer": "SAY.Dialog:E10_Hard.383.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Yeehaw! We're gonna be a Herd again!",
-          "translatedDutch": "Sauba sog i! Mir werden wieda a Herdn sei!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 42,
@@ -777,7 +777,7 @@
           "utterer": "SAY.Dialog:E10_Hard.164.Thirsty Ass",
           "context": "",
           "sourceEnglish": "How the hell are we gonna make it back to our Farm without the ding dang Tractor-Machine?",
-          "translatedDutch": "Wie zum Deifi soll ma denn zur Farm komma ohne die depperte Traktor-Maschin'?"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 45,
@@ -882,7 +882,7 @@
           "utterer": "SAY.Dialog:E10_Hard.604.Thirsty Ass",
           "context": "",
           "sourceEnglish": "But Nice Ass, this ain't our fight!",
-          "translatedDutch": "Aba Netti, des is ned unsre Sach'!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 60,
@@ -903,7 +903,7 @@
           "utterer": "SAY.Dialog:E10_Hard.603.Thirsty Ass",
           "context": "",
           "sourceEnglish": "But Big Ass, this ain't our fight!",
-          "translatedDutch": "Aba Mega, des is ned unsre Sach'!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 63,
@@ -945,7 +945,7 @@
           "utterer": "SAY.Dialog:E10_Hard.192.Thirsty Ass",
           "context": "Nice Ass runs inside and Thirsty calls after her. Everyone runs inside.",
           "sourceEnglish": "Nice Ass—?! Wait!",
-          "translatedDutch": "Netti –?! Wart'!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 69,
@@ -1213,15 +1213,15 @@
         },
         {
           "rowNumber": 34,
-          "utterer": "SAY.Dialog:Occupation.646.Golden Ass",
-          "context": "PROPHET IS FEMALE\nGo to line 32 (Foal) or line 62 (Cole).",
+          "utterer": "SAY.Dialog:Occupation.642.Golden Ass",
+          "context": "PROPHET IS FEMALE Copy needed for separate animation depending on current Prophet Choice",
           "sourceEnglish": "Behold, here with me, a special Prophet-Machine for the Humans to worship!",
           "translatedDutch": ""
         },
         {
           "rowNumber": 35,
-          "utterer": "SAY.Dialog:Occupation.642.Golden Ass",
-          "context": "PROPHET IS MALE\nCopy needed for separate animation depending on current Prophet Choice",
+          "utterer": "SAY.Dialog:Occupation.646.Golden Ass",
+          "context": "PROPHET IS MALE Go to line 32 (Foal) or line 62 (Cole).",
           "sourceEnglish": "Behold, here with me, a special Prophet-Machine for the Humans to worship!",
           "translatedDutch": ""
         },
@@ -1431,7 +1431,7 @@
         {
           "rowNumber": 65,
           "utterer": "SAY.Dialog:Occupation.1092.Golden Ass",
-          "context": "Skip to line 96 and onwards. \nThe following is a section where players will walk around and assemble a manifesto, chosen from the values of the many Asses inside the government building.",
+          "context": "Skip to line 96 and onwards. The following is a section where players will walk around and assemble a manifesto, chosen from the values of the many Asses inside the government building.",
           "sourceEnglish": "After you fill your Manifesto, you can always replace a previous idea by choosing a new one.",
           "translatedDutch": ""
         },
@@ -1669,7 +1669,7 @@
         {
           "rowNumber": 99,
           "utterer": "SAY.Dialog:Occupation.849.Cole-Machine",
-          "context": "Skip to line 96 and onwards. \nThe following is a section where players will walk around and assemble a manifesto, chosen from the values of the many Asses inside the government building.",
+          "context": "Skip to line 96 and onwards. The following is a section where players will walk around and assemble a manifesto, chosen from the values of the many Asses inside the government building.",
           "sourceEnglish": "Let's get this started...",
           "translatedDutch": ""
         },
@@ -1748,7 +1748,7 @@
           "utterer": "SAY.Dialog:Thirsty_4.10.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Tell the Humans that we want to run our own businesses, like the Bottoms Up Bar!",
-          "translatedDutch": "Sog den Menschn, mir wollen eigene G'schäfte aufmacha, wia die Bar „Zum Tiefen Wasserloch“!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 111,
@@ -1776,7 +1776,7 @@
           "utterer": "SAY.Dialog:Thirsty_4.32.Thirsty Ass",
           "context": "Repeater line.",
           "sourceEnglish": "YEEHAW—I'm a small business owner!",
-          "translatedDutch": "Da schaugst's her! I bin a Kleinunternehmer!"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 115,
@@ -2223,7 +2223,7 @@
           "rowNumber": 178,
           "utterer": "SAY.Dialog:Helpful_9.79.Helpful Ass",
           "context": "",
-          "sourceEnglish": "I'da left too if was them, getting cut down like.",
+          "sourceEnglish": "I'da left too if I was them, getting cut down like.",
           "translatedDutch": ""
         },
         {
@@ -3648,20 +3648,27 @@
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "",
           "sourceEnglish": "epilogue",
-          "translatedDutch": "エピローグ"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "",
           "sourceEnglish": "press x\\nto continue",
-          "translatedDutch": "xを押す\\nを押す"
+          "translatedDutch": ""
         }
       ]
     },
     {
       "sheetName": "E10_Epilogue_localization",
       "entries": [
+        {
+          "rowNumber": 2,
+          "utterer": "SPACER",
+          "context": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "sourceEnglish": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",
+          "translatedDutch": "Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm"
+        },
         {
           "rowNumber": 3,
           "utterer": "SAY.Flowchart:Dialog_TheLongGame.2.Sturdy Ass",
@@ -3910,768 +3917,803 @@
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "",
           "sourceEnglish": "Thank you for playing asses.masses",
-          "translatedDutch": "asses.masssesをプレイしていただきありがとうございます。"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "WRITE.Dialog:Localizer.42",
           "context": "",
           "sourceEnglish": "a game by Patrick Blenkarn and Milton Lim",
-          "translatedDutch": "Patrick BlenkarnとMilton Limによるゲーム"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "WRITE.Dialog:Localizer.43",
           "context": "",
           "sourceEnglish": "concept, direction, design",
-          "translatedDutch": "コンセプト、ディレクション、デザイン"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "WRITE.Dialog:Localizer.44",
           "context": "",
           "sourceEnglish": "dramaturgy",
-          "translatedDutch": "ドラマトゥルギー"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "WRITE.Dialog:Localizer.45",
           "context": "",
           "sourceEnglish": "text",
-          "translatedDutch": "テキスト"
+          "translatedDutch": ""
         },
         {
           "rowNumber": 7,
-          "utterer": "WRITE.Dialog:Localizer.63",
-          "context": "",
-          "sourceEnglish": "Spanish translation",
-          "translatedDutch": "スペイン語翻訳"
-        },
-        {
-          "rowNumber": 8,
-          "utterer": "WRITE.Dialog:Localizer.145",
-          "context": "",
-          "sourceEnglish": "French translation",
-          "translatedDutch": "フランス語翻訳"
-        },
-        {
-          "rowNumber": 9,
-          "utterer": "WRITE.Dialog:Localizer.144",
-          "context": "",
-          "sourceEnglish": "Portuguese translation",
-          "translatedDutch": "ポルトガル語翻訳"
-        },
-        {
-          "rowNumber": 10,
-          "utterer": "WRITE.Dialog:Localizer.146",
-          "context": "",
-          "sourceEnglish": "Italian translation",
-          "translatedDutch": "イタリア語翻訳"
-        },
-        {
-          "rowNumber": 11,
-          "utterer": "WRITE.Dialog:Localizer.147",
-          "context": "",
-          "sourceEnglish": "German translation",
-          "translatedDutch": "ドイツ語翻訳"
-        },
-        {
-          "rowNumber": 12,
-          "utterer": "WRITE.Dialog:Localizer.148",
-          "context": "",
-          "sourceEnglish": "Turkish translation",
-          "translatedDutch": "トルコ語翻訳"
-        },
-        {
-          "rowNumber": 13,
           "utterer": "WRITE.Dialog:Localizer.51",
           "context": "",
           "sourceEnglish": "programming",
-          "translatedDutch": "プログラミング"
+          "translatedDutch": ""
         },
         {
-          "rowNumber": 14,
+          "rowNumber": 8,
           "utterer": "WRITE.Dialog:Localizer.52",
           "context": "",
           "sourceEnglish": "sound design",
-          "translatedDutch": "サウンドデザイン"
+          "translatedDutch": ""
         },
         {
-          "rowNumber": 15,
+          "rowNumber": 9,
           "utterer": "WRITE.Dialog:Localizer.53",
           "context": "",
           "sourceEnglish": "original music and audio implementation",
-          "translatedDutch": "オリジナル音楽とオーディオ実装"
+          "translatedDutch": ""
         },
         {
-          "rowNumber": 16,
+          "rowNumber": 10,
           "utterer": "WRITE.Dialog:Localizer.54",
           "context": "",
           "sourceEnglish": "pixel art and 2D animation",
-          "translatedDutch": "ピクセルアートと2Dアニメーション"
+          "translatedDutch": ""
         },
         {
-          "rowNumber": 17,
+          "rowNumber": 11,
           "utterer": "WRITE.Dialog:Localizer.55",
           "context": "",
           "sourceEnglish": "3D environments and visual effects",
-          "translatedDutch": "3D環境と視覚効果"
+          "translatedDutch": ""
         },
         {
-          "rowNumber": 18,
+          "rowNumber": 12,
           "utterer": "WRITE.Dialog:Localizer.56",
           "context": "",
           "sourceEnglish": "additional 3D animations and rigging",
-          "translatedDutch": "追加の3Dアニメーションとリギング"
+          "translatedDutch": ""
         },
         {
-          "rowNumber": 19,
+          "rowNumber": 13,
           "utterer": "WRITE.Dialog:Localizer.57",
           "context": "",
           "sourceEnglish": "video",
-          "translatedDutch": "ビデオ"
+          "translatedDutch": ""
         },
         {
-          "rowNumber": 20,
+          "rowNumber": 14,
           "utterer": "WRITE.Dialog:Localizer.143",
           "context": "",
           "sourceEnglish": "touring producer",
-          "translatedDutch": "ツアープロデューサー"
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 15,
+          "utterer": "WRITE.Dialog:Localizer.153",
+          "context": "",
+          "sourceEnglish": "TRANSLATORS",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 16,
+          "utterer": "WRITE.Dialog:Localizer.63",
+          "context": "",
+          "sourceEnglish": "Spanish translation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 17,
+          "utterer": "WRITE.Dialog:Localizer.145",
+          "context": "",
+          "sourceEnglish": "French translation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 18,
+          "utterer": "WRITE.Dialog:Localizer.144",
+          "context": "",
+          "sourceEnglish": "Portuguese translation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 19,
+          "utterer": "WRITE.Dialog:Localizer.146",
+          "context": "",
+          "sourceEnglish": "Italian translation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 20,
+          "utterer": "WRITE.Dialog:Localizer.147",
+          "context": "",
+          "sourceEnglish": "German translation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 21,
+          "utterer": "WRITE.Dialog:Localizer.148",
+          "context": "",
+          "sourceEnglish": "Turkish translation",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 22,
-          "utterer": "WRITE.Dialog:Localizer.59",
+          "utterer": "WRITE.Dialog:Localizer.149",
           "context": "",
-          "sourceEnglish": "THE FANNYSIDE ASSES",
-          "translatedDutch": "THE FANNYSIDE ASSES"
+          "sourceEnglish": "Catalan translation",
+          "translatedDutch": ""
         },
         {
           "rowNumber": 23,
+          "utterer": "WRITE.Dialog:Localizer.150",
+          "context": "",
+          "sourceEnglish": "Korean translation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 24,
+          "utterer": "WRITE.Dialog:Localizer.151",
+          "context": "",
+          "sourceEnglish": "Flemish translation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 25,
+          "utterer": "WRITE.Dialog:Localizer.152",
+          "context": "",
+          "sourceEnglish": "Japanese translation",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 27,
+          "utterer": "WRITE.Dialog:Localizer.59",
+          "context": "",
+          "sourceEnglish": "THE FANNYSIDE ASSES",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 28,
           "utterer": "WRITE.Dialog:Localizer.60",
           "context": "",
           "sourceEnglish": "Trusty Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 24,
+          "rowNumber": 29,
           "utterer": "WRITE.Dialog:Localizer.61",
           "context": "",
           "sourceEnglish": "Old Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 25,
+          "rowNumber": 30,
           "utterer": "WRITE.Dialog:Localizer.62",
           "context": "",
           "sourceEnglish": "Nice Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 26,
+          "rowNumber": 31,
           "utterer": "WRITE.Dialog:Localizer.64",
           "context": "",
           "sourceEnglish": "Big Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 27,
+          "rowNumber": 32,
           "utterer": "WRITE.Dialog:Localizer.65",
           "context": "",
           "sourceEnglish": "Thirsty Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 28,
+          "rowNumber": 33,
           "utterer": "WRITE.Dialog:Localizer.66",
           "context": "",
           "sourceEnglish": "Smart Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 29,
+          "rowNumber": 34,
           "utterer": "WRITE.Dialog:Localizer.67",
           "context": "",
           "sourceEnglish": "Slow Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 30,
+          "rowNumber": 35,
           "utterer": "WRITE.Dialog:Localizer.68",
           "context": "",
           "sourceEnglish": "Sad Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 31,
+          "rowNumber": 36,
           "utterer": "WRITE.Dialog:Localizer.69",
           "context": "",
           "sourceEnglish": "Sick Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 32,
+          "rowNumber": 37,
           "utterer": "WRITE.Dialog:Localizer.70",
           "context": "",
           "sourceEnglish": "Kick Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 33,
+          "rowNumber": 38,
           "utterer": "WRITE.Dialog:Localizer.71",
           "context": "",
           "sourceEnglish": "Hard Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 34,
+          "rowNumber": 39,
           "utterer": "WRITE.Dialog:Localizer.72",
           "context": "",
           "sourceEnglish": "Bad Ass / Cole Butte / Cole-Machine",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 35,
+          "rowNumber": 40,
           "utterer": "WRITE.Dialog:Localizer.73",
           "context": "",
           "sourceEnglish": "Sturdy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 36,
+          "rowNumber": 41,
           "utterer": "WRITE.Dialog:Localizer.74",
           "context": "",
           "sourceEnglish": "{$NewName}",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 37,
+          "rowNumber": 42,
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "THE ASTRAL PLANE ASSES",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 38,
+          "rowNumber": 43,
           "utterer": "WRITE.Dialog:Localizer.76",
           "context": "",
           "sourceEnglish": "Happy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 39,
+          "rowNumber": 44,
           "utterer": "WRITE.Dialog:Localizer.77",
           "context": "Ugly Ass is not a character who ever has lines. They are just one of the options to have sex with in E1.",
           "sourceEnglish": "Ugly Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 40,
+          "rowNumber": 45,
           "utterer": "WRITE.Dialog:Localizer.78",
           "context": "Spicy Ass is not a character who ever has lines. They are just one of the options to have sex with in E1. (Formerly called Sweet)",
           "sourceEnglish": "Spicy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 41,
+          "rowNumber": 46,
           "utterer": "WRITE.Dialog:Localizer.79",
           "context": "",
           "sourceEnglish": "**** Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 42,
+          "rowNumber": 47,
           "utterer": "WRITE.Dialog:Localizer.80",
           "context": "",
           "sourceEnglish": "Dirty Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 43,
+          "rowNumber": 48,
           "utterer": "WRITE.Dialog:Localizer.81",
           "context": "",
           "sourceEnglish": "Shifty Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 44,
+          "rowNumber": 49,
           "utterer": "WRITE.Dialog:Localizer.82",
           "context": "",
           "sourceEnglish": "Risky Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 45,
+          "rowNumber": 50,
           "utterer": "WRITE.Dialog:Localizer.83",
           "context": "",
           "sourceEnglish": "Greedy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 46,
+          "rowNumber": 51,
           "utterer": "WRITE.Dialog:Localizer.84",
           "context": "",
           "sourceEnglish": "Janky Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 47,
+          "rowNumber": 52,
           "utterer": "WRITE.Dialog:Localizer.85",
           "context": "",
           "sourceEnglish": "Hairy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 48,
+          "rowNumber": 53,
           "utterer": "WRITE.Dialog:Localizer.86",
           "context": "",
           "sourceEnglish": "Total Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 49,
+          "rowNumber": 54,
           "utterer": "WRITE.Dialog:Localizer.87",
           "context": "",
           "sourceEnglish": "Lofty Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 50,
+          "rowNumber": 55,
           "utterer": "WRITE.Dialog:Localizer.88",
           "context": "",
           "sourceEnglish": "Mean Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 51,
+          "rowNumber": 56,
           "utterer": "WRITE.Dialog:Localizer.89",
           "context": "",
           "sourceEnglish": "Fresh Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 52,
+          "rowNumber": 57,
           "utterer": "WRITE.Dialog:Localizer.90",
           "context": "",
           "sourceEnglish": "Tight Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 53,
+          "rowNumber": 58,
           "utterer": "WRITE.Dialog:Localizer.91",
           "context": "",
           "sourceEnglish": "Bitter Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 54,
+          "rowNumber": 59,
           "utterer": "WRITE.Dialog:Localizer.93",
           "context": "",
           "sourceEnglish": "Broken Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 55,
+          "rowNumber": 60,
           "utterer": "WRITE.Dialog:Localizer.94",
           "context": "",
           "sourceEnglish": "Mad Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 56,
+          "rowNumber": 61,
           "utterer": "WRITE.Dialog:Localizer.95",
           "context": "",
           "sourceEnglish": "Chafed Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 57,
+          "rowNumber": 62,
           "utterer": "WRITE.Dialog:Localizer.96",
           "context": "",
           "sourceEnglish": "Sulky Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 58,
+          "rowNumber": 63,
           "utterer": "WRITE.Dialog:Localizer.97",
           "context": "",
           "sourceEnglish": "Angry Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 59,
+          "rowNumber": 64,
           "utterer": "WRITE.Dialog:Localizer.98",
           "context": "",
           "sourceEnglish": "DJ Dope Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 60,
+          "rowNumber": 65,
           "utterer": "WRITE.Dialog:Localizer.99",
           "context": "",
           "sourceEnglish": "Trippy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 61,
+          "rowNumber": 66,
           "utterer": "WRITE.Dialog:Localizer.100",
           "context": "",
           "sourceEnglish": "Shaky Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 62,
+          "rowNumber": 67,
           "utterer": "WRITE.Dialog:Localizer.101",
           "context": "",
           "sourceEnglish": "Mellow Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 63,
+          "rowNumber": 68,
           "utterer": "WRITE.Dialog:Localizer.102",
           "context": "",
           "sourceEnglish": "Hasty Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 64,
+          "rowNumber": 69,
           "utterer": "WRITE.Dialog:Localizer.103",
           "context": "",
           "sourceEnglish": "Haul Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 65,
+          "rowNumber": 70,
           "utterer": "WRITE.Dialog:Localizer.105",
           "context": "",
           "sourceEnglish": "Gullible Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 66,
+          "rowNumber": 71,
           "utterer": "WRITE.Dialog:Localizer.104",
           "context": "",
           "sourceEnglish": "Cranky Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 67,
+          "rowNumber": 72,
           "utterer": "WRITE.Dialog:Localizer.106",
           "context": "",
           "sourceEnglish": "Cool Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 68,
+          "rowNumber": 73,
           "utterer": "WRITE.Dialog:Localizer.107",
           "context": "",
           "sourceEnglish": "Peek Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 69,
+          "rowNumber": 74,
           "utterer": "WRITE.Dialog:Localizer.108",
           "context": "",
           "sourceEnglish": "Blunt Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 70,
+          "rowNumber": 75,
           "utterer": "WRITE.Dialog:Localizer.110",
           "context": "",
           "sourceEnglish": "Dusty Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 71,
+          "rowNumber": 76,
           "utterer": "WRITE.Dialog:Localizer.109",
           "context": "",
           "sourceEnglish": "Furry Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 72,
+          "rowNumber": 77,
           "utterer": "WRITE.Dialog:Localizer.111",
           "context": "",
           "sourceEnglish": "The Gods",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 73,
+          "rowNumber": 78,
           "utterer": "WRITE.Dialog:Localizer.9",
           "context": "",
           "sourceEnglish": "THE FACTORY ASSES",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 74,
+          "rowNumber": 79,
           "utterer": "WRITE.Dialog:Localizer.113",
           "context": "",
           "sourceEnglish": "Proper Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 75,
+          "rowNumber": 80,
           "utterer": "WRITE.Dialog:Localizer.112",
           "context": "",
           "sourceEnglish": "Bleak Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 76,
+          "rowNumber": 81,
           "utterer": "WRITE.Dialog:Localizer.114",
           "context": "",
           "sourceEnglish": "Gaunt Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 77,
+          "rowNumber": 82,
           "utterer": "WRITE.Dialog:Localizer.115",
           "context": "",
           "sourceEnglish": "Helpful Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 78,
+          "rowNumber": 83,
           "utterer": "WRITE.Dialog:Localizer.116",
           "context": "",
           "sourceEnglish": "Skinny Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 79,
+          "rowNumber": 84,
           "utterer": "WRITE.Dialog:Localizer.117",
           "context": "",
           "sourceEnglish": "Resentful Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 80,
+          "rowNumber": 85,
           "utterer": "WRITE.Dialog:Localizer.118",
           "context": "",
           "sourceEnglish": "Sleepy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 81,
+          "rowNumber": 86,
           "utterer": "WRITE.Dialog:Localizer.119",
           "context": "",
           "sourceEnglish": "Left Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 82,
+          "rowNumber": 87,
           "utterer": "WRITE.Dialog:Localizer.120",
           "context": "",
           "sourceEnglish": "Right Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 83,
+          "rowNumber": 88,
           "utterer": "WRITE.Dialog:Localizer.121",
           "context": "",
           "sourceEnglish": "Weepy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 84,
+          "rowNumber": 89,
           "utterer": "WRITE.Dialog:Localizer.122",
           "context": "",
           "sourceEnglish": "Busted Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 85,
+          "rowNumber": 90,
           "utterer": "WRITE.Dialog:Localizer.123",
           "context": "",
           "sourceEnglish": "Tragic Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 86,
+          "rowNumber": 91,
           "utterer": "WRITE.Dialog:Localizer.124",
           "context": "",
           "sourceEnglish": "Wild Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 87,
+          "rowNumber": 92,
           "utterer": "WRITE.Dialog:Localizer.125",
           "context": "",
           "sourceEnglish": "Edgy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 88,
+          "rowNumber": 93,
           "utterer": "WRITE.Dialog:Localizer.126",
           "context": "",
           "sourceEnglish": "Feeble Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 89,
+          "rowNumber": 94,
           "utterer": "WRITE.Dialog:Localizer.127",
           "context": "",
           "sourceEnglish": "Gloomy Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 90,
+          "rowNumber": 95,
           "utterer": "WRITE.Dialog:Localizer.128",
           "context": "",
           "sourceEnglish": "Distressed Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 91,
+          "rowNumber": 96,
           "utterer": "WRITE.Dialog:Localizer.130",
           "context": "",
           "sourceEnglish": "Anxious Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 92,
+          "rowNumber": 97,
           "utterer": "WRITE.Dialog:Localizer.129",
           "context": "",
           "sourceEnglish": "Tender Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 93,
+          "rowNumber": 98,
           "utterer": "WRITE.Dialog:Localizer.92",
           "context": "",
           "sourceEnglish": "Wild Ass",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 94,
+          "rowNumber": 99,
           "utterer": "WRITE.Dialog:Localizer.11",
           "context": "",
           "sourceEnglish": "THE HUMANS",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 95,
+          "rowNumber": 100,
           "utterer": "WRITE.Dialog:Localizer.131",
           "context": "",
           "sourceEnglish": "Child Joey",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 96,
+          "rowNumber": 101,
           "utterer": "WRITE.Dialog:Localizer.132",
           "context": "",
           "sourceEnglish": "Grandmother",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 97,
+          "rowNumber": 102,
           "utterer": "WRITE.Dialog:Localizer.133",
           "context": "",
           "sourceEnglish": "Miner Jenny",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 98,
+          "rowNumber": 103,
           "utterer": "WRITE.Dialog:Localizer.134",
           "context": "",
           "sourceEnglish": "Mr. Hugh G. Butte",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 99,
+          "rowNumber": 104,
           "utterer": "WRITE.Dialog:Localizer.135",
           "context": "This character never speaks. But he's the farmer that Hard Ass kills in E4.",
           "sourceEnglish": "Farmer Brown",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 100,
+          "rowNumber": 105,
           "utterer": "WRITE.Dialog:Localizer.136",
           "context": "",
           "sourceEnglish": "Ass Handler Melvin",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 101,
+          "rowNumber": 106,
           "utterer": "WRITE.Dialog:Localizer.137",
           "context": "",
           "sourceEnglish": "Ass Handler Wedgie",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 102,
+          "rowNumber": 107,
           "utterer": "WRITE.Dialog:Localizer.138",
           "context": "",
           "sourceEnglish": "Ringmaster Rico",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 103,
+          "rowNumber": 108,
           "utterer": "WRITE.Dialog:Localizer.139",
           "context": "",
           "sourceEnglish": "Zookeeper Rose",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 104,
+          "rowNumber": 109,
           "utterer": "WRITE.Dialog:Localizer.140",
           "context": "",
           "sourceEnglish": "Mme. Derriere",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 105,
+          "rowNumber": 110,
           "utterer": "WRITE.Dialog:Localizer.141",
           "context": "",
           "sourceEnglish": "Radio Host Marcos",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 106,
+          "rowNumber": 111,
           "utterer": "WRITE.Dialog:Localizer.13",
           "context": "",
           "sourceEnglish": "SPECIAL THANKS TO",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 107,
+          "rowNumber": 112,
           "utterer": "WRITE.Dialog:Localizer.142",
           "context": "",
           "sourceEnglish": "and all of our playtesters",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 108,
+          "rowNumber": 113,
           "utterer": "WRITE.Dialog:Localizer.15",
           "context": "",
           "sourceEnglish": "PRESENTATIONS",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 109,
+          "rowNumber": 114,
           "utterer": "WRITE.Dialog:Localizer.17",
           "context": "",
           "sourceEnglish": "FEAT. SAMPLED MUSIC FROM:",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 110,
+          "rowNumber": 115,
           "utterer": "WRITE.Dialog:Localizer.40",
           "context": "",
           "sourceEnglish": "Never forget:",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 111,
+          "rowNumber": 116,
           "utterer": "WRITE.Dialog:Localizer.41",
-          "context": "",
+          "context": "OPTION A",
           "sourceEnglish": "ASS POWER",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 112,
+          "rowNumber": 117,
           "utterer": "WRITE.Dialog:Localizer.19",
-          "context": "",
+          "context": "OPTION B",
           "sourceEnglish": "DON'T BE SCARED",
           "translatedDutch": ""
         }

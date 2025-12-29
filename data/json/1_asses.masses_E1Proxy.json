@@ -1,6 +1,6 @@
 {
   "fileName": "1_asses.masses_E1Proxy",
-  "processedAt": "2025-08-03T15:55:22.158Z",
+  "processedAt": "2025-12-29T08:53:10.588Z",
   "sheets": [
     {
       "sheetName": "E1_EpisodeTitle_localization",
@@ -28,14 +28,14 @@
           "rowNumber": 3,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.4.Old Ass",
           "context": "The scene fades up from black to see Old Ass giving a lecture to Trusty Ass.",
-          "sourceEnglish": "...  ...  Trusty Ass? Comrade, are you listening?",
+          "sourceEnglish": "... ... Trusty Ass? Comrade, are you listening?",
           "translatedDutch": "Hè (Trusty Ass)? Kameraad, hoor je me?"
         },
         {
           "rowNumber": 4,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.5.Old Ass",
           "context": "",
-          "sourceEnglish": "Now where was I...  Right...  I was lamenting the struggles of our existence.",
+          "sourceEnglish": "Now where was I... Right... I was lamenting the struggles of our existence.",
           "translatedDutch": "Waar was ik... Juist, ik was bezig me de realiteit van ons bestaan te beklagen."
         },
         {
@@ -97,7 +97,7 @@
         {
           "rowNumber": 13,
           "utterer": "SAY.Dialog: 1_OldAss_StartGame.18.Old Ass",
-          "context": "End of dialogue. \nTrusty is assigned the task of raising the Herd's morale.\nSturdy can run around and explore again.",
+          "context": "End of dialogue. Trusty is assigned the task of raising the Herd's morale. Sturdy can run around and explore again.",
           "sourceEnglish": "Come find me when you're done.",
           "translatedDutch": "Kom terug wanneer ge klaar bent."
         },
@@ -153,7 +153,7 @@
         {
           "rowNumber": 21,
           "utterer": "SAY.Dialog: STURDY_Aft_BoostMorale.10.Sturdy Ass",
-          "context": "End of dialogue. \nSturdy can run around and explore again.",
+          "context": "End of dialogue. Sturdy can run around and explore again.",
           "sourceEnglish": "We can do it!",
           "translatedDutch": "We kunnen dat!"
         },
@@ -167,7 +167,7 @@
         {
           "rowNumber": 23,
           "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.4.Old Ass",
-          "context": "Dialogue with Old Ass.\nAfter having talked to all the Asses in the Herd (completing the Morale task).",
+          "context": "Dialogue with Old Ass. After having talked to all the Asses in the Herd (completing the Morale task).",
           "sourceEnglish": "Exemplary work, Comrade Trusty. Keeping up a group's morale is no easy task.",
           "translatedDutch": "Puike prestatie, Kameraad (Trusty Ass). De sfeer in orde houden is geen sinecure."
         },
@@ -188,7 +188,7 @@
         {
           "rowNumber": 26,
           "utterer": "SAY.Dialog: 3_OldAss_ActivateRest.23.Old Ass",
-          "context": "End of dialogue. \nSturdy can run around and explore again.",
+          "context": "End of dialogue. Sturdy can run around and explore again.",
           "sourceEnglish": "A well earned rest awaits you in the other room.",
           "translatedDutch": "Geniet van je welverdiende rust."
         },
@@ -202,7 +202,7 @@
         {
           "rowNumber": 28,
           "utterer": "SAY.Dialog: STURDY_Night.1.Sturdy Ass",
-          "context": "Dialogue with Sturdy.\nAfter completing the Morale task.",
+          "context": "Dialogue with Sturdy. After completing the Morale task.",
           "sourceEnglish": "Goodnight Trusty! You really care about the Herd and it shows.",
           "translatedDutch": "Goeie nacht, (Trusty Ass). Je zit met onze Kudde in en dat zien we."
         },
@@ -216,7 +216,7 @@
         {
           "rowNumber": 30,
           "utterer": "SAY.Dialog: STURDY_Night.20.Sturdy Ass",
-          "context": "End of dialogue. \nSturdy can run around and explore again.",
+          "context": "End of dialogue. Sturdy can run around and explore again.",
           "sourceEnglish": "Even my labour pains are in solidarity with the Herd!",
           "translatedDutch": "Zelfs mijn weeën zijn in solidariteit met onze Kudde."
         },
@@ -363,7 +363,7 @@
           "utterer": "SAY.Dialog:Thirsty1_AssignQuest_Bucket/Water.3.Thirsty Ass",
           "context": "",
           "sourceEnglish": "It's been mighty dry these days...",
-          "translatedDutch": "'t Is kurk—maar dan ook kurkdroog héé,  de laatst'en tijd."
+          "translatedDutch": "'t Is kurk—maar dan ook kurkdroog héé, de laatst'en tijd."
         },
         {
           "rowNumber": 23,
@@ -452,7 +452,7 @@
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:SlowWoodQuest.3.Slow Ass",
-          "context": "Note: In English, Slow Ass stutters happen on the same letters throughout the game: b, p\n\nFor some languages, a wider range or more case-by-case approach is used",
+          "context": "Note: In English, Slow Ass stutters happen on the same letters throughout the game: b, p For some languages, a wider range or more case-by-case approach is used",
           "sourceEnglish": "Thanks for convincing Old Ass to p-p-put me on b-bridge duty.",
           "translatedDutch": "B-bedankt om (Old Ass) te overtuigen van het b-bruggetje aan mij over te laten."
         },
@@ -488,7 +488,7 @@
           "rowNumber": 40,
           "utterer": "SAY.Dialog:SlowWoodQuest.11.Slow Ass",
           "context": "",
-          "sourceEnglish": "If Smart Ass finds out I'm b-behind schedule,  she'll tear me a new one.",
+          "sourceEnglish": "If Smart Ass finds out I'm b-behind schedule, she'll tear me a new one.",
           "translatedDutch": "Als (Smart Ass) te horen krijgt dat ik te laat k-klaar zal zijn, geeft z-ze me vast onder mijn hoeven."
         },
         {
@@ -740,14 +740,14 @@
           "rowNumber": 76,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.3.Sad Ass",
           "context": "Sad (male) Matches Quest",
-          "sourceEnglish": "Oh hullo Trusty...  thanks for noticing me...",
+          "sourceEnglish": "Oh hullo Trusty... thanks for noticing me...",
           "translatedDutch": "Ohh hallo'kes Trusty... fijn dat je me opmerkt.."
         },
         {
           "rowNumber": 77,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.5.Sad Ass",
           "context": "",
-          "sourceEnglish": "Wish I could say 'good' afternoon...  but it's not...",
+          "sourceEnglish": "Wish I could say 'good' afternoon... but it's not...",
           "translatedDutch": "Wou dat ik 'goeie' middag kon zeggen.. maar het is helemaal niet zo goed."
         },
         {
@@ -817,7 +817,7 @@
           "rowNumber": 87,
           "utterer": "SAY.Dialog:Sad_Quest_Matches.24.Sad Ass",
           "context": "",
-          "sourceEnglish": "Thanks for the matches...  hope I don't burn myself...",
+          "sourceEnglish": "Thanks for the matches... hope I don't burn myself...",
           "translatedDutch": "Bedankt voor de lucifers... zien dat ik mezelf niet verbrand..."
         },
         {
@@ -984,7 +984,7 @@
         {
           "rowNumber": 111,
           "utterer": "SAY.Dialog:JoeyFeeding.16.Child Joey",
-          "context": "",
+          "context": "If player accepts",
           "sourceEnglish": "He he he! That tickles.",
           "translatedDutch": "Hi-hi-hi, dat kietelt!"
         },
@@ -1642,15 +1642,15 @@
           "rowNumber": 58,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.33.Sturdy Ass",
           "context": "Sturdy sings for Old Ass",
-          "sourceEnglish": "\"{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}\"",
-          "translatedDutch": "\"{color=yellow}{s=5}♪  hie haa hi hon 'ee ah he a'w ♪{/s}{/color}\""
+          "sourceEnglish": "\"{color=yellow}{s=5}♪ hee haw hi hon 'ee ah he a'w ♪{/s}{/color}\"",
+          "translatedDutch": "\"{color=yellow}{s=5}♪ hie haa hi hon 'ee ah he a'w ♪{/s}{/color}\""
         },
         {
           "rowNumber": 59,
           "utterer": "SAY.Dialog:SturdyAloneWithOld.37.Sturdy Ass",
           "context": "",
-          "sourceEnglish": "\"{color=yellow}♪  HEE HAW HI HON 'EE AH HE A'W! ♪{/color}\"",
-          "translatedDutch": "\"{color=yellow}♪  HIE HAA HI HON 'EE AH HE A'W! ♪{/color}\""
+          "sourceEnglish": "\"{color=yellow}♪ HEE HAW HI HON 'EE AH HE A'W! ♪{/color}\"",
+          "translatedDutch": "\"{color=yellow}♪ HIE HAA HI HON 'EE AH HE A'W! ♪{/color}\""
         }
       ]
     },

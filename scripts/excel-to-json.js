@@ -39,22 +39,56 @@ function ensureOutputDirectories() {
 }
 
 /**
+ * Strip HTML tags and style attributes from a string
+ * Excel files with rich text formatting can contain embedded HTML/styles
+ * @param {string} text - The text to clean
+ * @returns {string} Clean text without HTML
+ */
+function stripHtmlAndStyles(text) {
+  if (!text || typeof text !== 'string') return text;
+
+  // Remove HTML tags and their contents for style/script tags
+  let cleaned = text.replace(/<style[^>]*>[\s\S]*?<\/style>/gi, '');
+  cleaned = cleaned.replace(/<script[^>]*>[\s\S]*?<\/script>/gi, '');
+
+  // Remove all HTML tags but keep their text content
+  cleaned = cleaned.replace(/<[^>]+>/g, '');
+
+  // Decode common HTML entities
+  cleaned = cleaned.replace(/&nbsp;/g, ' ');
+  cleaned = cleaned.replace(/&amp;/g, '&');
+  cleaned = cleaned.replace(/&lt;/g, '<');
+  cleaned = cleaned.replace(/&gt;/g, '>');
+  cleaned = cleaned.replace(/&quot;/g, '"');
+  cleaned = cleaned.replace(/&#39;/g, "'");
+
+  // Remove any remaining style attributes that might be inline
+  cleaned = cleaned.replace(/style="[^"]*"/gi, '');
+  cleaned = cleaned.replace(/style='[^']*'/gi, '');
+
+  // Clean up extra whitespace
+  cleaned = cleaned.replace(/\s+/g, ' ').trim();
+
+  return cleaned;
+}
+
+/**
  * Extract data from a specific row starting from Column B until empty
  * @param {Array} row - The row data
  * @returns {Array} Array of values from Column B onwards until empty
  */
 function extractRowValues(row) {
   const values = [];
-  
+
   // Start from Column B (index 1) and go until empty
   for (let i = 1; i < row.length; i++) {
-    const cellValue = row[i] ? row[i].toString().trim() : '';
+    const cellValue = row[i] ? stripHtmlAndStyles(row[i].toString().trim()) : '';
     if (cellValue === '') {
       break; // Stop at first empty cell
     }
     values.push(cellValue);
   }
-  
+
   return values;
 }
 
@@ -98,12 +132,12 @@ function processStandardExcelFile(filePath) {
         // Skip empty rows
         if (!row || row.length === 0) continue;
         
-        // Extract data from columns A, B, C, and J (Dutch)
-        const utterer = row[0] ? row[0].toString().trim() : '';
-        const context = row[1] ? row[1].toString().trim() : '';
-        const sourceEnglish = row[2] ? row[2].toString().trim() : '';
-        const translatedDutch = row[9] ? row[9].toString().trim() : ''; // Column J (index 9)
-        
+        // Extract data from columns A, B, C, and J (Dutch) - strip any HTML/styles
+        const utterer = stripHtmlAndStyles(row[0] ? row[0].toString().trim() : '');
+        const context = stripHtmlAndStyles(row[1] ? row[1].toString().trim() : '');
+        const sourceEnglish = stripHtmlAndStyles(row[2] ? row[2].toString().trim() : '');
+        const translatedDutch = stripHtmlAndStyles(row[9] ? row[9].toString().trim() : ''); // Column J (index 9)
+
         // Only add entries that have source text
         if (sourceEnglish && sourceEnglish !== '') {
           sheetData.entries.push({

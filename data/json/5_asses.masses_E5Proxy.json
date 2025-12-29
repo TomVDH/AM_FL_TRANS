@@ -1,6 +1,6 @@
 {
   "fileName": "5_asses.masses_E5Proxy",
-  "processedAt": "2025-08-03T15:55:22.662Z",
+  "processedAt": "2025-12-29T08:53:11.031Z",
   "sheets": [
     {
       "sheetName": "E5_Highway_localization",
@@ -368,7 +368,7 @@
         {
           "rowNumber": 33,
           "utterer": "SAY.Dialog:RingmasterOpening.29.Ringmaster Rico",
-          "context": "The Player gains control of the Elephant.\nAfter the mini-game, the dialogue jumps to either line 35 or 47.",
+          "context": "The Player gains control of the Elephant. After the mini-game, the dialogue jumps to either line 35 or 47.",
           "sourceEnglish": "...ELI THE AFRICAN ELEPHANT!",
           "translatedDutch": ""
         },
@@ -382,7 +382,7 @@
         {
           "rowNumber": 35,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.35.Ringmaster Rico",
-          "context": "After the Elephant's section, Rico reviews the performance.\nThis is if the Elephant gave a BAD show.",
+          "context": "After the Elephant's section, Rico reviews the performance. This is if the Elephant gave a BAD show.",
           "sourceEnglish": "Give a polite round of applause for Eli the Elephant who...",
           "translatedDutch": ""
         },
@@ -431,7 +431,7 @@
         {
           "rowNumber": 42,
           "utterer": "SAY.Dialog:BackstageElephant.104.Smart Ass",
-          "context": "The Elephant goes back stage.\nThis is the version of dialogue following a BAD performance.",
+          "context": "The Elephant goes back stage. This is the version of dialogue following a BAD performance.",
           "sourceEnglish": "What kind of lead-in was that?!",
           "translatedDutch": ""
         },
@@ -466,7 +466,7 @@
         {
           "rowNumber": 47,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.188.Ringmaster Rico",
-          "context": "After the Elephant's section, Rico reviews the performance.\nThis is if the Elephant gave a GOOD show.",
+          "context": "After the Elephant's section, Rico reviews the performance. This is if the Elephant gave a GOOD show.",
           "sourceEnglish": "Wow—what a COLOSSAL feat!",
           "translatedDutch": ""
         },
@@ -529,7 +529,7 @@
         {
           "rowNumber": 56,
           "utterer": "SAY.Dialog:BackstageElephant.113.Smart Ass",
-          "context": "The Elephant goes back stage.\nThis is the version of dialogue following a GOOD performance.",
+          "context": "The Elephant goes back stage. This is the version of dialogue following a GOOD performance.",
           "sourceEnglish": "Tonight's crowd is easy!",
           "translatedDutch": ""
         },
@@ -606,14 +606,14 @@
         {
           "rowNumber": 67,
           "utterer": "SAY.Dialog:RicoIntroductions.55.Ringmaster Rico",
-          "context": "The Player gains control of the Gorilla again.\nAfter the mini-game, the dialogue jumps to either line 68 or 81.",
+          "context": "The Player gains control of the Gorilla again. After the mini-game, the dialogue jumps to either line 68 or 81.",
           "sourceEnglish": "QUEENIE THE GORILLA!",
           "translatedDutch": ""
         },
         {
           "rowNumber": 68,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.55.Ringmaster Rico",
-          "context": "After the Gorilla's section, Rico reviews the performance.\nThis is if the Gorilla gave a BAD show.",
+          "context": "After the Gorilla's section, Rico reviews the performance. This is if the Gorilla gave a BAD show.",
           "sourceEnglish": "Okay, okay, sometimes live acts can get a little hairy.",
           "translatedDutch": ""
         },
@@ -662,7 +662,7 @@
         {
           "rowNumber": 75,
           "utterer": "SAY.Dialog:BackstageGorilla.108.Kick Ass",
-          "context": "The Gorilla goes back stage.\nThis is the version of dialogue following a BAD performance.",
+          "context": "The Gorilla goes back stage. This is the version of dialogue following a BAD performance.",
           "sourceEnglish": "What HAPPENED out there?!",
           "translatedDutch": ""
         },
@@ -704,7 +704,7 @@
         {
           "rowNumber": 81,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.52.Ringmaster Rico",
-          "context": "After the Gorilla's section, Rico reviews the performance.\nThis is if the Gorilla gave a GOOD show.",
+          "context": "After the Gorilla's section, Rico reviews the performance. This is if the Gorilla gave a GOOD show.",
           "sourceEnglish": "What APE-TITUDE under such HAIRY circumstances!",
           "translatedDutch": ""
         },
@@ -802,14 +802,14 @@
         {
           "rowNumber": 95,
           "utterer": "SAY.Dialog:RicoIntroductions.56.Ringmaster Rico",
-          "context": "The Player gains control of the Zebra again.\nAfter the mini-game, the dialogue jumps to either line 95 or 113.",
+          "context": "The Player gains control of the Zebra again. After the mini-game, the dialogue jumps to either line 95 or 113.",
           "sourceEnglish": "Welcome to the stage YINYANG THE CHINESE ZEBRA!!",
           "translatedDutch": ""
         },
         {
           "rowNumber": 96,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.70.Ringmaster Rico",
-          "context": "After the Zebra's section, Rico reviews the performance.\nThis is if the Zebra gave a BAD show.",
+          "context": "After the Zebra's section, Rico reviews the performance. This is if the Zebra gave a BAD show.",
           "sourceEnglish": "*Oof*",
           "translatedDutch": ""
         },
@@ -845,13 +845,13 @@
           "rowNumber": 101,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.224.Ringmaster Rico",
           "context": "",
-          "sourceEnglish": "... and it could have been worse!",
+          "sourceEnglish": "...and it could have been worse!",
           "translatedDutch": ""
         },
         {
           "rowNumber": 102,
           "utterer": "SAY.Dialog:BackstageZebra.165.Kick Ass",
-          "context": "The Gorilla goes back stage.\nThis is the version of dialogue following a BAD performance.",
+          "context": "The Gorilla goes back stage. This is the version of dialogue following a BAD performance.",
           "sourceEnglish": "Some of my paint RUBBED OFF!",
           "translatedDutch": ""
         },
@@ -935,7 +935,7 @@
         {
           "rowNumber": 114,
           "utterer": "SAY.Dialog:BackstageZebra.185.Sad Ass",
-          "context": "Branch (BAD Performance Version): \nIf Sad left the Farm, Sad Ass enters.",
+          "context": "Branch (BAD Performance Version): If Sad left the Farm, Sad Ass enters.",
           "sourceEnglish": "...I'm not sure real Bears ride bicycles though...",
           "translatedDutch": ""
         },
@@ -949,7 +949,7 @@
         {
           "rowNumber": 116,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.67.Ringmaster Rico",
-          "context": "After the Zebra's section, Rico reviews the performance.\nThis is if the Zebra gave a GOOD show.",
+          "context": "After the Zebra's section, Rico reviews the performance. This is if the Zebra gave a GOOD show.",
           "sourceEnglish": "What a RUSH! What a HIGH!",
           "translatedDutch": ""
         },
@@ -984,7 +984,7 @@
         {
           "rowNumber": 121,
           "utterer": "SAY.Dialog:BackstageZebra.128.Big Ass",
-          "context": "The Zebra goes back stage.\nThis is the version of dialogue following a GOOD performance.",
+          "context": "The Zebra goes back stage. This is the version of dialogue following a GOOD performance.",
           "sourceEnglish": "Your duet with the Ringmaster brought tears to my eyes!",
           "translatedDutch": ""
         },
@@ -1075,7 +1075,7 @@
         {
           "rowNumber": 134,
           "utterer": "SAY.Dialog:BackstageZebra.183.Sad Ass",
-          "context": "Branch (Good Performance Version): \nIf Sad left the Farm, Sad Ass enters.",
+          "context": "Branch (Good Performance Version): If Sad left the Farm, Sad Ass enters.",
           "sourceEnglish": "Says all of you who don't have to ride a bicycle...",
           "translatedDutch": ""
         },
@@ -1117,14 +1117,14 @@
         {
           "rowNumber": 140,
           "utterer": "SAY.Dialog:RicoIntroductions.97.Ringmaster Rico",
-          "context": "The Player gains control of the Bear again.\nAfter the mini-game, the dialogue jumps to either line s or d.",
+          "context": "The Player gains control of the Bear again. After the mini-game, the dialogue jumps to either line s or d.",
           "sourceEnglish": "CHEKHOV THE KAMCHATKA BROWN BEAR!",
           "translatedDutch": ""
         },
         {
           "rowNumber": 141,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.86.Ringmaster Rico",
-          "context": "After the Bear's section, Rico reviews the performance.\nThis is if the Bear gave a BAD show.",
+          "context": "After the Bear's section, Rico reviews the performance. This is if the Bear gave a BAD show.",
           "sourceEnglish": "Let's take a moment to pause and reflect on that act before we shift gears...",
           "translatedDutch": ""
         },
@@ -1152,7 +1152,7 @@
         {
           "rowNumber": 145,
           "utterer": "SAY.Dialog:BackstageBear.114.Big Ass",
-          "context": "The Bear goes back stage.\nThis is the version of dialogue following a BAD performance.",
+          "context": "The Bear goes back stage. This is the version of dialogue following a BAD performance.",
           "sourceEnglish": "Don't beat yourself up Sad, the bike was a late addition, you haven't had a lot of time to practice.",
           "translatedDutch": ""
         },
@@ -1201,7 +1201,7 @@
         {
           "rowNumber": 152,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.83.Ringmaster Rico",
-          "context": "After the Bear's section, Rico reviews the performance.\nThis is if the Bear gave a GOOD show.",
+          "context": "After the Bear's section, Rico reviews the performance. This is if the Bear gave a GOOD show.",
           "sourceEnglish": "My head is spinning—with how great that act was!",
           "translatedDutch": ""
         },
@@ -1236,7 +1236,7 @@
         {
           "rowNumber": 157,
           "utterer": "SAY.Dialog:BackstageBear.113.Kick Ass",
-          "context": "The Bear goes back stage.\nThis is the version of dialogue following a GOOD performance.",
+          "context": "The Bear goes back stage. This is the version of dialogue following a GOOD performance.",
           "sourceEnglish": "Sad!! Your bike routine is OFF THE CHAIN!",
           "translatedDutch": ""
         },
@@ -1488,50 +1488,50 @@
         {
           "rowNumber": 193,
           "utterer": "SAY.Dialog:RicoIntroductions.90.Ringmaster Rico",
-          "context": "The Player gains control of the Lion again.\nAfter the mini-game, the dialogue jumps to either line s or d.",
+          "context": "The Player gains control of the Lion again. After the mini-game, the dialogue jumps to either line s or d.",
           "sourceEnglish": "BHUT JOLOKIA THE SPICY ASIATIC LION!",
           "translatedDutch": ""
         },
         {
           "rowNumber": 195,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.284.Ringmaster Rico",
-          "context": "After the Lion's section, Rico makes his big announcement!",
+          "context": "After the Lion's section, he reviews the performance! IF POOR:",
           "sourceEnglish": "I'm not lyin' folks... that could have been better.",
           "translatedDutch": ""
         },
         {
           "rowNumber": 196,
-          "utterer": "SAY.Dialog:RicoGoodOrPoor.298.Ringmaster Rico",
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.312.Ringmaster Rico",
           "context": "",
-          "sourceEnglish": "On the whole, I'd say tonight's show was a WILD success!",
+          "sourceEnglish": "But don't worry!",
           "translatedDutch": ""
         },
         {
           "rowNumber": 197,
-          "utterer": "SAY.Dialog:RicoGoodOrPoor.299.Ringmaster Rico",
-          "context": "",
-          "sourceEnglish": "On the whole, I guess tonight was a bit off.",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 198,
-          "utterer": "SAY.Dialog:RicoGoodOrPoor.300.Ringmaster Rico",
-          "context": "",
-          "sourceEnglish": "For those of you who have stayed—thank you for not walking out!",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 199,
           "utterer": "SAY.Dialog:RicoGoodOrPoor.310.Ringmaster Rico",
-          "context": "",
+          "context": "IF GOOD",
           "sourceEnglish": "Let me hear you ROAR!",
           "translatedDutch": ""
         },
         {
+          "rowNumber": 198,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.298.Ringmaster Rico",
+          "context": "He then reviews the full performance. If all four games total average was GOOD:",
+          "sourceEnglish": "On the whole, I'd say tonight's show was a WILD success!",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 199,
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.299.Ringmaster Rico",
+          "context": "If all four games total average was POOR:",
+          "sourceEnglish": "On the whole, I guess tonight was a bit off.",
+          "translatedDutch": ""
+        },
+        {
           "rowNumber": 200,
-          "utterer": "SAY.Dialog:RicoGoodOrPoor.312.Ringmaster Rico",
+          "utterer": "SAY.Dialog:RicoGoodOrPoor.300.Ringmaster Rico",
           "context": "",
-          "sourceEnglish": "But don't worry!",
+          "sourceEnglish": "For those of you who have stayed—thank you for not walking out!",
           "translatedDutch": ""
         },
         {
@@ -1802,51 +1802,51 @@
         },
         {
           "rowNumber": 239,
-          "utterer": "SAY.Dialog:Ending.281.Grandma Kulan",
-          "context": "",
-          "sourceEnglish": "Oh my! Really?",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 240,
-          "utterer": "SAY.Dialog:Ending.282.Mme. Derriere",
-          "context": "",
-          "sourceEnglish": "My dear, the deaths of your precious grandson and those poor helpless villagers who burned alive—it breaks my heart.",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 241,
-          "utterer": "SAY.Dialog:Ending.283.Mme. Derriere",
-          "context": "",
-          "sourceEnglish": "All that matters is that we don't look back.",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 242,
-          "utterer": "SAY.Dialog:Ending.284.Grandma Kulan",
-          "context": "",
-          "sourceEnglish": "But his life was cut short during the tragic fires of Bumpkin Village exactly 6 months and 3 weeks ago.",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 243,
           "utterer": "SAY.Dialog:Ending.285.Grandma Kulan",
           "context": "",
           "sourceEnglish": "My darling Joey would have loved this show.",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 244,
+          "rowNumber": 240,
+          "utterer": "SAY.Dialog:Ending.284.Grandma Kulan",
+          "context": "",
+          "sourceEnglish": "But his life was cut short during the tragic fires of Bumpkin Village exactly 6 months and 3 weeks ago.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 241,
           "utterer": "SAY.Dialog:Ending.286.Grandma Kulan",
           "context": "",
           "sourceEnglish": "With all your power and resources, will you prevent explosions like Bumpkin's from ever happening again?",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 245,
+          "rowNumber": 242,
           "utterer": "SAY.Dialog:Ending.287.Mme. Derriere",
           "context": "",
           "sourceEnglish": "I can promise you that the research I'm funding right now will transform the face of the world.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 243,
+          "utterer": "SAY.Dialog:Ending.282.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "My dear, the deaths of your precious grandson and those poor helpless villagers who burned alive—it breaks my heart.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 244,
+          "utterer": "SAY.Dialog:Ending.290.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "Bumpkinites deserved more than dangerously out-of-date and accident-prone equipment.",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 245,
+          "utterer": "SAY.Dialog:Ending.289.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "They deserved purposeful jobs!",
           "translatedDutch": ""
         },
         {
@@ -1858,37 +1858,37 @@
         },
         {
           "rowNumber": 247,
-          "utterer": "SAY.Dialog:Ending.289.Mme. Derriere",
-          "context": "",
-          "sourceEnglish": "They deserved purposeful jobs!",
+          "utterer": "SAY.Dialog:Ending.293.Mme. Derriere",
+          "context": "End of Circus.",
+          "sourceEnglish": "And even you can play a part in it!",
           "translatedDutch": ""
         },
         {
           "rowNumber": 248,
-          "utterer": "SAY.Dialog:Ending.290.Mme. Derriere",
+          "utterer": "SAY.Dialog:Ending.281.Grandma Kulan",
           "context": "",
-          "sourceEnglish": "Bumpkinites deserved more than dangerously out-of-date and accident-prone equipment.",
+          "sourceEnglish": "Oh my! Really?",
           "translatedDutch": ""
         },
         {
           "rowNumber": 249,
-          "utterer": "SAY.Dialog:Ending.291.Mme. Derriere",
-          "context": "",
-          "sourceEnglish": "Walk with me.",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 250,
           "utterer": "SAY.Dialog:Ending.292.Grandma Kulan",
           "context": "",
           "sourceEnglish": "But I don't even have the strength to go back and visit Bumpkin...",
           "translatedDutch": ""
         },
         {
+          "rowNumber": 250,
+          "utterer": "SAY.Dialog:Ending.283.Mme. Derriere",
+          "context": "",
+          "sourceEnglish": "All that matters is that we don't look back.",
+          "translatedDutch": ""
+        },
+        {
           "rowNumber": 251,
-          "utterer": "SAY.Dialog:Ending.293.Mme. Derriere",
+          "utterer": "SAY.Dialog:Ending.291.Mme. Derriere",
           "context": "End of Circus.",
-          "sourceEnglish": "And even you can play a part in it!",
+          "sourceEnglish": "Walk with me.",
           "translatedDutch": ""
         }
       ]
@@ -3127,7 +3127,7 @@
         {
           "rowNumber": 137,
           "utterer": "SAY.Dialog:SadGoodbye.10.Slow Ass",
-          "context": "After the work day, if Sad Ass is at the Zoo, he stays behind. \nThe Player (Slow Ass) can go talk to him.",
+          "context": "After the work day, if Sad Ass is at the Zoo, he stays behind. The Player (Slow Ass) can go talk to him.",
           "sourceEnglish": "Sad Ass?",
           "translatedDutch": ""
         },
@@ -3805,7 +3805,7 @@
           "rowNumber": 3,
           "utterer": "SAY.Dialog:AssOfTheMonth.2.Zookeeper Rose",
           "context": "The Asses assemble around Zookeeper Rose.",
-          "sourceEnglish": "Times up! The results are in!\\n",
+          "sourceEnglish": "Times up! The results are in!",
           "translatedDutch": ""
         },
         {
@@ -3937,7 +3937,7 @@
         {
           "rowNumber": 22,
           "utterer": "SAY.Dialog:AssOfTheMonth.73.Zookeeper Rose",
-          "context": "A Truck arrives and two figures step out of the truck.\nBranch 1.1. Sad was at the Zoo and left.",
+          "context": "A Truck arrives and two figures step out of the truck. Branch 1.1. Sad was at the Zoo and left.",
           "sourceEnglish": "You're late!",
           "translatedDutch": ""
         },
@@ -3979,7 +3979,7 @@
         {
           "rowNumber": 28,
           "utterer": "SAY.Dialog:AssOfTheMonth.74.Zookeeper Rose",
-          "context": "A Truck arrives and two figures step out of the truck.\nBranch 1.2. Sad was never at the Zoo.",
+          "context": "A Truck arrives and two figures step out of the truck. Branch 1.2. Sad was never at the Zoo.",
           "sourceEnglish": "You're late!",
           "translatedDutch": ""
         },

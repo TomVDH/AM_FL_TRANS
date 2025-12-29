@@ -1,6 +1,6 @@
 {
   "fileName": "8_asses.masses_E8Proxy",
-  "processedAt": "2025-08-03T15:55:22.933Z",
+  "processedAt": "2025-12-29T08:53:11.318Z",
   "sheets": [
     {
       "sheetName": "E8_EpisodeTitle_localization",
@@ -348,7 +348,7 @@
           "rowNumber": 4,
           "utterer": "SAY.Dialog:GODS.56.THE GODS",
           "context": "",
-          "sourceEnglish": "{s=5} HAW EE HAW HE'E {/s}",
+          "sourceEnglish": "{s=5} HAW EE HAW HE'E! {/s}",
           "translatedDutch": ""
         },
         {

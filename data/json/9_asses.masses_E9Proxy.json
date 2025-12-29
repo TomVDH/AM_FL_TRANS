@@ -1,6 +1,6 @@
 {
   "fileName": "9_asses.masses_E9Proxy",
-  "processedAt": "2025-08-03T15:55:22.960Z",
+  "processedAt": "2025-12-29T08:53:11.353Z",
   "sheets": [
     {
       "sheetName": "E9_EpisodeTitle_localization",
@@ -35,77 +35,77 @@
           "rowNumber": 2,
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "",
-          "sourceEnglish": "Donkeys",
+          "sourceEnglish": "DONKEYS",
           "translatedDutch": ""
         },
         {
           "rowNumber": 3,
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
-          "sourceEnglish": "Equines",
+          "sourceEnglish": "EQUINES",
           "translatedDutch": ""
         },
         {
           "rowNumber": 4,
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
-          "sourceEnglish": "Mammals",
+          "sourceEnglish": "MAMMALS",
           "translatedDutch": ""
         },
         {
           "rowNumber": 5,
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "",
-          "sourceEnglish": "Animals",
+          "sourceEnglish": "ANIMALS",
           "translatedDutch": ""
         },
         {
           "rowNumber": 6,
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
-          "sourceEnglish": "Animate Beings",
+          "sourceEnglish": "ANIMATE BEINGS",
           "translatedDutch": ""
         },
         {
           "rowNumber": 7,
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "",
-          "sourceEnglish": "Somethings",
+          "sourceEnglish": "SOMETHINGS",
           "translatedDutch": ""
         },
         {
           "rowNumber": 8,
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "",
-          "sourceEnglish": "Inanimate Objects",
+          "sourceEnglish": "INANIMATE OBJECTS",
           "translatedDutch": ""
         },
         {
           "rowNumber": 9,
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "",
-          "sourceEnglish": "Tools",
+          "sourceEnglish": "TOOLS",
           "translatedDutch": ""
         },
         {
           "rowNumber": 10,
           "utterer": "WRITE.Dialog:Localizer.12",
           "context": "",
-          "sourceEnglish": "Machines",
+          "sourceEnglish": "MACHINES",
           "translatedDutch": ""
         },
         {
           "rowNumber": 11,
           "utterer": "WRITE.Dialog:Localizer.11",
           "context": "",
-          "sourceEnglish": "Computers",
+          "sourceEnglish": "COMPUTERS",
           "translatedDutch": ""
         },
         {
           "rowNumber": 12,
           "utterer": "WRITE.Dialog:Localizer.10",
           "context": "",
-          "sourceEnglish": "Robots",
+          "sourceEnglish": "ROBOTS",
           "translatedDutch": ""
         }
       ]

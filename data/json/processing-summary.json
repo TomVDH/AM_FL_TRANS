@@ -1,30 +1,30 @@
 {
-  "processedAt": "2025-08-03T15:55:23.097Z",
-  "totalFiles": 14,
-  "successfulFiles": 14,
+  "processedAt": "2025-12-29T08:53:11.403Z",
+  "totalFiles": 13,
+  "successfulFiles": 13,
   "failedFiles": 0,
-  "totalSheets": 124,
-  "totalEntries": 4573,
+  "totalSheets": 119,
+  "totalEntries": 4548,
   "files": [
     {
       "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy",
       "success": true,
       "sheets": 9,
-      "entries": 249,
+      "entries": 251,
       "error": null
     },
     {
       "fileName": "10_asses.masses_E10Proxy",
       "success": true,
       "sheets": 11,
-      "entries": 660,
+      "entries": 666,
       "error": null
     },
     {
       "fileName": "11_asses.masses_NonCSVBasedTranslations",
       "success": true,
-      "sheets": 11,
-      "entries": 76,
+      "sheets": 12,
+      "entries": 79,
       "error": null
     },
     {
@@ -91,17 +91,10 @@
       "error": null
     },
     {
-      "fileName": "READ_ME_Localization",
+      "fileName": "READ_ME_LocalizationManual",
       "success": true,
       "sheets": 1,
-      "entries": 42,
-      "error": null
-    },
-    {
-      "fileName": "Translation Checklist",
-      "success": true,
-      "sheets": 6,
-      "entries": 39,
+      "entries": 45,
       "error": null
     }
   ]

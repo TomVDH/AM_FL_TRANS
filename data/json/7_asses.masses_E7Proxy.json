@@ -1,6 +1,6 @@
 {
   "fileName": "7_asses.masses_E7Proxy",
-  "processedAt": "2025-08-03T15:55:22.883Z",
+  "processedAt": "2025-12-29T08:53:11.263Z",
   "sheets": [
     {
       "sheetName": "E7_Opening_localization",
@@ -708,7 +708,7 @@
           "rowNumber": 4,
           "utterer": "SAY.Dialog:Opening.3.Smart Ass",
           "context": "",
-          "sourceEnglish": "We're looking for someone named Big—you seen him?\\n",
+          "sourceEnglish": "We're looking for someone named Big—you seen him?",
           "translatedDutch": ""
         },
         {
@@ -1427,7 +1427,7 @@
         {
           "rowNumber": 12,
           "utterer": "MENU.Dialog:Ending.347",
-          "context": "Branch 1.1. If came from Circus without Sad.",
+          "context": "Branch 1.1.",
           "sourceEnglish": "Fine.",
           "translatedDutch": ""
         },
@@ -1441,7 +1441,7 @@
         {
           "rowNumber": 14,
           "utterer": "MENU.Dialog:Ending.349",
-          "context": "Branch 1.2. If came from Circus with Sad.",
+          "context": "Branch 1.2.",
           "sourceEnglish": "Let's make it quick.",
           "translatedDutch": ""
         },
@@ -1455,7 +1455,7 @@
         {
           "rowNumber": 16,
           "utterer": "MENU.Dialog:Ending.348",
-          "context": "Branch 1.3. If came from Zoo without Sad.",
+          "context": "Branch 1.3. SKIPS SONG",
           "sourceEnglish": "We have to keep moving.",
           "translatedDutch": ""
         },
@@ -1469,8 +1469,8 @@
         {
           "rowNumber": 18,
           "utterer": "SAY.Dialog:Ending.327.The Masses",
-          "context": "The branch options (1.1, 1.2, 1.3) converge. \nThe Asses sing the Song of Ascension.",
-          "sourceEnglish": "{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/color}",
+          "context": "The branch options (1.1, 1.2, 1.3) converge. The Asses sing the Song of Ascension.",
+          "sourceEnglish": "{color=yellow}{s=5}♪ hee haw hi hon 'ee ah he a'w ♪{/color}",
           "translatedDutch": ""
         },
         {
@@ -1745,7 +1745,7 @@
         {
           "rowNumber": 17,
           "utterer": "SAY.Dialog:FirstPassComplete.68.Smart Ass",
-          "context": "Branch 1.2. If Sad is absent from the group.\nJump to line 20 once the Player reaches the end.",
+          "context": "Branch 1.2. If Sad is absent from the group. Jump to line 20 once the Player reaches the end.",
           "sourceEnglish": "It's just me now...",
           "translatedDutch": ""
         },
