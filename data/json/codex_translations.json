@@ -1,0 +1,1062 @@
+{
+  "generated": "2025-12-29T23:37:56.839Z",
+  "sources": [
+    "E0 CharacterProfiles_localization (authoritative for characters)",
+    "README Names and World Overview (supplementary locations/humans)"
+  ],
+  "stats": {
+    "total": 116,
+    "fromE0": 103,
+    "fromREADME": 13,
+    "byCategory": {
+      "CHARACTER": 109,
+      "LOCATION": 7
+    }
+  },
+  "entries": [
+    {
+      "name": "Angry Ass",
+      "key": "CHARACTER.Angry Ass",
+      "description": "Character",
+      "english": "Angry Ass",
+      "dutch": "Boze Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Anxious Ass",
+      "key": "CHARACTER.Anxious Ass",
+      "description": "Character",
+      "english": "Anxious Ass",
+      "dutch": "Angstige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Melvin",
+      "key": "CHARACTER.Melvin",
+      "description": "Character",
+      "english": "Ass Handler Melvin",
+      "dutch": "Zakkenzeuler Zeno",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Wedgie",
+      "key": "CHARACTER.Wedgie",
+      "description": "Character",
+      "english": "Ass Handler Wedgie",
+      "dutch": "Zakkenzeulster Zita",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Audience Member David",
+      "key": "CHARACTER.Audience Member David",
+      "description": "Character",
+      "english": "Audience Member David",
+      "dutch": "Toeschouwer David",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Audience Member Laurel",
+      "key": "CHARACTER.Audience Member Laurel",
+      "description": "Character",
+      "english": "Audience Member Laurel",
+      "dutch": "Toeschouwer Laurel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Audience Members Patrick & Milton",
+      "key": "CHARACTER.Audience Members Patrick & Milton",
+      "description": "Character",
+      "english": "Audience Members Patrick & Milton",
+      "dutch": "Toeschouwers Patrick & Milton",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Bad Ass",
+      "key": "CHARACTER.Bad Ass",
+      "description": "Character",
+      "english": "Bad Ass",
+      "dutch": "Waaghalske",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Big Ass",
+      "key": "CHARACTER.Big Ass",
+      "description": "Character",
+      "english": "Big Ass",
+      "dutch": "Mega Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Bitter Ass",
+      "key": "CHARACTER.Bitter Ass",
+      "description": "Character",
+      "english": "Bitter Ass",
+      "dutch": "Bittere Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Bleak Ass",
+      "key": "CHARACTER.Bleak Ass",
+      "description": "x",
+      "english": "Bleak Ass",
+      "dutch": "Depressieve Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Blunt Ass",
+      "key": "CHARACTER.Blunt Ass",
+      "description": "Character",
+      "english": "Blunt Ass",
+      "dutch": "Groffe ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Broken Ass",
+      "key": "CHARACTER.Broken Ass",
+      "description": "Character",
+      "english": "Broken Ass",
+      "dutch": "Gebroken Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Busted Ass",
+      "key": "CHARACTER.Busted Ass",
+      "description": "Character",
+      "english": "Busted Ass",
+      "dutch": "Afgereden Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Chafed Ass",
+      "key": "CHARACTER.Chafed Ass",
+      "description": "Character",
+      "english": "Chafed Ass",
+      "dutch": "Excema Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Child Joey",
+      "key": "CHARACTER.Child Joey",
+      "description": "Character",
+      "english": "Child Joey",
+      "dutch": "Luukske Vermeulen",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "ChildJoeyKulan",
+      "key": "CHARACTER.ChildJoeyKulan",
+      "description": "MAIN HUMANS",
+      "english": "Child Joey Kulan",
+      "dutch": "Klein Luukske Vermeulen",
+      "category": "CHARACTER",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "ColeButteColeMachine",
+      "key": "CHARACTER.ColeButte/Cole-Machine",
+      "description": "MAIN HUMANS",
+      "english": "Cole Butte / Cole-Machine",
+      "dutch": "Piet Vanscheetvelde",
+      "category": "CHARACTER",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "Cole-Machine",
+      "key": "CHARACTER.Cole-Machine",
+      "description": "Character",
+      "english": "Cole-Machine",
+      "dutch": "Piet-Machine",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Cool Ass",
+      "key": "CHARACTER.Cool Ass",
+      "description": "Character",
+      "english": "Cool Ass",
+      "dutch": "Coole Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Cow",
+      "key": "CHARACTER.Cow",
+      "description": "Character",
+      "english": "Cow",
+      "dutch": "Koe",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Cranky Ass",
+      "key": "CHARACTER.Cranky Ass",
+      "description": "Character",
+      "english": "Cranky Ass",
+      "dutch": "Mopperende Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Decrepit Sign",
+      "key": "CHARACTER.Decrepit Sign",
+      "description": "Character",
+      "english": "Decrepit Sign",
+      "dutch": "Verlept Bord",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Dirty Ass",
+      "key": "CHARACTER.Dirty Ass",
+      "description": "Character",
+      "english": "Dirty Ass",
+      "dutch": "Vuile Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Dirty Sign",
+      "key": "CHARACTER.Dirty Sign",
+      "description": "Character",
+      "english": "Dirty Sign",
+      "dutch": "Smerig Bord",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Distressed Ass",
+      "key": "CHARACTER.Distressed Ass",
+      "description": "Character",
+      "english": "Distressed Ass",
+      "dutch": "Ontzette Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "DJ Dope Ass",
+      "key": "CHARACTER.DJ Dope Ass",
+      "description": "Character",
+      "english": "DJ Dope Ass",
+      "dutch": "DJ Lijpe Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Radio Host Marcos",
+      "key": "CHARACTER.Radio Host Marcos",
+      "description": "Character",
+      "english": "DJ Marcos",
+      "dutch": "DJ Tom",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Dusty Ass",
+      "key": "CHARACTER.Dusty Ass",
+      "description": "Character",
+      "english": "Dusty Ass",
+      "dutch": "Stoffige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Edgy Ass",
+      "key": "CHARACTER.Edgy Ass",
+      "description": "x",
+      "english": "Edgy Ass",
+      "dutch": "Avantgarde Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Elephant",
+      "key": "CHARACTER.Elephant",
+      "description": "Character",
+      "english": "Eli the Elephant",
+      "dutch": "Ollie de Olifant",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Factory PA",
+      "key": "CHARACTER.Factory PA",
+      "description": "Character",
+      "english": "Factory PA",
+      "dutch": "Fabrieksomroep",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Fancy Sign",
+      "key": "CHARACTER.Fancy Sign",
+      "description": "Character",
+      "english": "Fancy Sign",
+      "dutch": "Schoon Bord",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Feeble Ass",
+      "key": "CHARACTER.Feeble Ass",
+      "description": "Character",
+      "english": "Feeble Ass",
+      "dutch": "Slappe Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Foalnamedbyaudience",
+      "key": "CHARACTER.Foal(namedbyaudience)",
+      "description": "FARM DONKEYS",
+      "english": "Foal (named by audience)",
+      "dutch": "-tje",
+      "category": "CHARACTER",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "Fresh Ass",
+      "key": "CHARACTER.Fresh Ass",
+      "description": "Character",
+      "english": "Fresh Ass",
+      "dutch": "Verse Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Furry Ass",
+      "key": "CHARACTER.Furry Ass",
+      "description": "Character",
+      "english": "Furry Ass",
+      "dutch": "Harige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Gaunt Ass",
+      "key": "CHARACTER.Gaunt Ass",
+      "description": "x",
+      "english": "Gaunt Ass",
+      "dutch": "Beenderige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Gloomy Ass",
+      "key": "CHARACTER.Gloomy Ass",
+      "description": "Character",
+      "english": "Gloomy Ass",
+      "dutch": "Duistere Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Golden Ass",
+      "key": "CHARACTER.Golden Ass",
+      "description": "Character",
+      "english": "Golden Ass",
+      "dutch": "Gouden Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Grandma Kulan",
+      "key": "CHARACTER.Grandma Kulan",
+      "description": "Character",
+      "english": "Grandma Kulan",
+      "dutch": "Grootmoe Vermeulen",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Greedy Ass",
+      "key": "CHARACTER.Greedy Ass",
+      "description": "Character",
+      "english": "Greedy Ass",
+      "dutch": "Inhalige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Gullible Ass",
+      "key": "CHARACTER.Gullible Ass",
+      "description": "Character",
+      "english": "Gullible Ass",
+      "dutch": "Goedgelovige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Hairy Ass",
+      "key": "CHARACTER.Hairy Ass",
+      "description": "Character",
+      "english": "Hairy Ass",
+      "dutch": "Stoppelige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Happy Ass",
+      "key": "CHARACTER.Happy Ass",
+      "description": "Character",
+      "english": "Happy Ass",
+      "dutch": "Blije Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Hard Ass",
+      "key": "CHARACTER.Hard Ass",
+      "description": "Character",
+      "english": "Hard Ass",
+      "dutch": "Felle Gast",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Hasty Ass",
+      "key": "CHARACTER.Hasty Ass",
+      "description": "Character",
+      "english": "Hasty Ass",
+      "dutch": "Haastge Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Haul Ass",
+      "key": "CHARACTER.Haul Ass",
+      "description": "Character",
+      "english": "Haul Ass",
+      "dutch": "Sleur Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Haw",
+      "key": "CHARACTER.Haw",
+      "description": "Character",
+      "english": "Haw",
+      "dutch": "Haaa",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Healthy Ass",
+      "key": "CHARACTER.Healthy Ass",
+      "description": "Character",
+      "english": "Healthy Ass",
+      "dutch": "Gezonde Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Hee",
+      "key": "CHARACTER.Hee",
+      "description": "The Gods",
+      "english": "Hee",
+      "dutch": "Hieee",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Helpful Ass",
+      "key": "CHARACTER.Helpful Ass",
+      "description": "x",
+      "english": "Helpful Ass",
+      "dutch": "Hulpvaardige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Historic Sign",
+      "key": "CHARACTER.Historic Sign",
+      "description": "Character",
+      "english": "Historic Sign",
+      "dutch": "Historisch Bord",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "HughGButte",
+      "key": "CHARACTER.HughG.Butte",
+      "description": "MAIN HUMANS",
+      "english": "Hugh G. Butte",
+      "dutch": "Egbert K. Vanscheetvelde",
+      "category": "CHARACTER",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "Human",
+      "key": "CHARACTER.Human",
+      "description": "Humans",
+      "english": "Human",
+      "dutch": "Mens",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Janky Ass",
+      "key": "CHARACTER.Janky Ass",
+      "description": "Character",
+      "english": "Janky Ass",
+      "dutch": "Deficiënte Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Kick Ass",
+      "key": "CHARACTER.Kick Ass",
+      "description": "Character",
+      "english": "Kick Ass",
+      "dutch": "Stampgast",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Lazy Ass",
+      "key": "CHARACTER.Lazy Ass",
+      "description": "Character",
+      "english": "Lazy Ass",
+      "dutch": "Luie Zak",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Left Ass",
+      "key": "CHARACTER.Left Ass",
+      "description": "(Always male)",
+      "english": "Left Ass",
+      "dutch": "Linker Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Lofty Ass",
+      "key": "CHARACTER.Lofty Ass",
+      "description": "Character",
+      "english": "Lofty Ass",
+      "dutch": "Opgeblazen Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Mad Ass",
+      "key": "CHARACTER.Mad Ass",
+      "description": "Astral Plane Donkeys",
+      "english": "Mad Ass",
+      "dutch": "Gekke Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Mean Ass",
+      "key": "CHARACTER.Mean Ass",
+      "description": "Character",
+      "english": "Mean Ass",
+      "dutch": "Stoute Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Mellow Ass",
+      "key": "CHARACTER.Mellow Ass",
+      "description": "Character",
+      "english": "Mellow Ass",
+      "dutch": "Chille Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Miner Jenny",
+      "key": "CHARACTER.Miner Jenny",
+      "description": "Character",
+      "english": "Miner Jenny",
+      "dutch": "Mijnwerker Jenny",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Miner With No Legs",
+      "key": "CHARACTER.Miner With No Legs",
+      "description": "Character",
+      "english": "Miner With No Legs",
+      "dutch": "Mijnwerker zonder Benen",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Mme. Derriere",
+      "key": "CHARACTER.Mme. Derriere",
+      "description": "Character",
+      "english": "Mme. Derriere",
+      "dutch": "Mevr. Derrière",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Mr. Butte",
+      "key": "CHARACTER.Mr. Butte",
+      "description": "Character",
+      "english": "Mr. Butte",
+      "dutch": "Mr. Vanscheetvelde",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Nice Ass",
+      "key": "CHARACTER.Nice Ass",
+      "description": "Character",
+      "english": "Nice Ass",
+      "dutch": "Schoon Beest",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Official Sign",
+      "key": "CHARACTER.Official Sign",
+      "description": "Character",
+      "english": "Official Sign",
+      "dutch": "Officiëel Bord",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Old Ass",
+      "key": "CHARACTER.Old Ass",
+      "description": "Character",
+      "english": "Old Ass",
+      "dutch": "Ouwe Zak",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Old Sign",
+      "key": "CHARACTER.Old Sign",
+      "description": "Character",
+      "english": "Old Sign",
+      "dutch": "Oud Bord",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Peek Ass",
+      "key": "CHARACTER.Peek Ass",
+      "description": "Character",
+      "english": "Peek Ass",
+      "dutch": "(Peek Ass)",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Pig",
+      "key": "CHARACTER.Pig",
+      "description": "Character",
+      "english": "Pig",
+      "dutch": "Varken",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Proper Ass",
+      "key": "CHARACTER.Proper Ass",
+      "description": "Factory Donkeys (be sure to make a balance of gender between the ones marked with X)",
+      "english": "Proper Ass",
+      "dutch": "Keurige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "RadioHostMarcos",
+      "key": "CHARACTER.RadioHostMarcos",
+      "description": "MAIN HUMANS",
+      "english": "Radio Host Marcos",
+      "dutch": "DJ Tom",
+      "category": "CHARACTER",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "Resentful Ass",
+      "key": "CHARACTER.Resentful Ass",
+      "description": "x",
+      "english": "Resentful Ass",
+      "dutch": "Wrokkige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Right Ass",
+      "key": "CHARACTER.Right Ass",
+      "description": "(Always male)",
+      "english": "Right Ass",
+      "dutch": "Rechter Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Ringmaster Rico",
+      "key": "CHARACTER.Ringmaster Rico",
+      "description": "Character",
+      "english": "Ringmaster Rico",
+      "dutch": "Circusdirecteur Baptiste",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Risky Ass",
+      "key": "CHARACTER.Risky Ass",
+      "description": "Character",
+      "english": "Risky Ass",
+      "dutch": "Riskante Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Sad Ass",
+      "key": "CHARACTER.Sad Ass",
+      "description": "Character",
+      "english": "Sad Ass",
+      "dutch": "Triestigaard",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "SandyButte",
+      "key": "CHARACTER.SandyButte",
+      "description": "MAIN HUMANS",
+      "english": "Sandy Butte",
+      "dutch": "Smaragd Vanscheetvelde",
+      "category": "CHARACTER",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "Shaky Ass",
+      "key": "CHARACTER.Shaky Ass",
+      "description": "Character",
+      "english": "Shaky Ass",
+      "dutch": "Bibber Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Sheep",
+      "key": "CHARACTER.Sheep",
+      "description": "Circus/Farm Animals",
+      "english": "Sheep",
+      "dutch": "Schaap",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Shifty Ass",
+      "key": "CHARACTER.Shifty Ass",
+      "description": "Character",
+      "english": "Shifty Ass",
+      "dutch": "Ongure Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Shitty Sign",
+      "key": "CHARACTER.Shitty Sign",
+      "description": "Character",
+      "english": "Shitty Sign",
+      "dutch": "Bord met stront eraan",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Sick Ass",
+      "key": "CHARACTER.Sick Ass",
+      "description": "Character",
+      "english": "Sick Ass",
+      "dutch": "Snotezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Sign",
+      "key": "CHARACTER.Sign",
+      "description": "Signs",
+      "english": "Sign",
+      "dutch": "Bord",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Skinny Ass",
+      "key": "CHARACTER.Skinny Ass",
+      "description": "x",
+      "english": "Skinny Ass",
+      "dutch": "Magere Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Sleepy Ass",
+      "key": "CHARACTER.Sleepy Ass",
+      "description": "Character",
+      "english": "Sleepy Ass",
+      "dutch": "Slaaperige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Slow Ass",
+      "key": "CHARACTER.Slow Ass",
+      "description": "Character",
+      "english": "Slow Ass",
+      "dutch": "Slome Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Smart Ass",
+      "key": "CHARACTER.Smart Ass",
+      "description": "Character",
+      "english": "Smart Ass",
+      "dutch": "Betweter",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Smelly Ass",
+      "key": "CHARACTER.Smelly Ass",
+      "description": "Character",
+      "english": "Smelly Ass",
+      "dutch": "Stinkende Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Sturdy Ass",
+      "key": "CHARACTER.Sturdy Ass",
+      "description": "Character",
+      "english": "Sturdy Ass",
+      "dutch": "Stoere Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Sulky Ass",
+      "key": "CHARACTER.Sulky Ass",
+      "description": "Character",
+      "english": "Sulky Ass",
+      "dutch": "Zielige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Tender Ass",
+      "key": "CHARACTER.Tender Ass",
+      "description": "Character",
+      "english": "Tender Ass",
+      "dutch": "Gevoelige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "THE GODS",
+      "key": "CHARACTER.THE GODS",
+      "description": "Character",
+      "english": "THE GODS",
+      "dutch": "DE GODEN",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "The Masses",
+      "key": "CHARACTER.The Masses",
+      "description": "Character",
+      "english": "The Masses",
+      "dutch": "De Massa",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Thirsty Ass",
+      "key": "CHARACTER.Thirsty Ass",
+      "description": "Character",
+      "english": "Thirsty Ass",
+      "dutch": "Dorstlap",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Tight Ass",
+      "key": "CHARACTER.Tight Ass",
+      "description": "Character",
+      "english": "Tight Ass",
+      "dutch": "Strakke Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Total Ass",
+      "key": "CHARACTER.Total Ass",
+      "description": "Character",
+      "english": "Total Ass",
+      "dutch": "Totale Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Tragic Ass",
+      "key": "CHARACTER.Tragic Ass",
+      "description": "x",
+      "english": "Tragic Ass",
+      "dutch": "Weemoedige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Trippy Ass",
+      "key": "CHARACTER.Trippy Ass",
+      "description": "Character",
+      "english": "Trippy Ass",
+      "dutch": "Trippende Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Trusty Ass",
+      "key": "CHARACTER.Trusty Ass",
+      "description": "Character",
+      "english": "Trusty Ass",
+      "dutch": "Trouwe Zak",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Ugly Ass",
+      "key": "CHARACTER.Ugly Ass",
+      "description": "Character",
+      "english": "Ugly Ass",
+      "dutch": "Lelijke Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Warning Sign",
+      "key": "CHARACTER.Warning Sign",
+      "description": "Character",
+      "english": "Warning Sign",
+      "dutch": "Waarschuwingsbord",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Weepy Ass",
+      "key": "CHARACTER.Weepy Ass",
+      "description": "Character",
+      "english": "Weepy Ass",
+      "dutch": "Huilerige Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Welcome Sign",
+      "key": "CHARACTER.Welcome Sign",
+      "description": "Character",
+      "english": "Welcome Sign",
+      "dutch": "Welkomsbord",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Wild Ass",
+      "key": "CHARACTER.Wild Ass",
+      "description": "Character",
+      "english": "Wild Ass",
+      "dutch": "Wilde Ezel",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "Zookeeper Rose",
+      "key": "CHARACTER.Zookeeper Rose",
+      "description": "Character",
+      "english": "Zookeeper Rose",
+      "dutch": "Dierendokter Dina",
+      "category": "CHARACTER",
+      "source": "E0_CharacterProfiles"
+    },
+    {
+      "name": "AstralPlane",
+      "key": "LOCATION.AstralPlane",
+      "description": "WORLD",
+      "english": "Astral Plane",
+      "dutch": "het Astrale Hiernamaals",
+      "category": "LOCATION",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "BumpkinVillage",
+      "key": "LOCATION.BumpkinVillage",
+      "description": "WORLD",
+      "english": "Bumpkin Village",
+      "dutch": "Klotegem",
+      "category": "LOCATION",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "Fannyside",
+      "key": "LOCATION.Fannyside",
+      "description": "WORLD",
+      "english": "Fannyside",
+      "dutch": "Muilegem",
+      "category": "LOCATION",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "FannysideFarm",
+      "key": "LOCATION.FannysideFarm",
+      "description": "WORLD",
+      "english": "Fannyside Farm",
+      "dutch": "De Boerderij van Muilegem",
+      "category": "LOCATION",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "MechaCity",
+      "key": "LOCATION.MechaCity",
+      "description": "WORLD",
+      "english": "Mecha City",
+      "dutch": "Mechalen",
+      "category": "LOCATION",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "Reassignment",
+      "key": "LOCATION.Reassignment",
+      "description": "WORLD",
+      "english": "Reassignment",
+      "dutch": "Heraanstelling",
+      "category": "LOCATION",
+      "source": "README_WorldOverview"
+    },
+    {
+      "name": "SongofAscension",
+      "key": "LOCATION.SongofAscension",
+      "description": "WORLD",
+      "english": "Song of Ascension",
+      "dutch": "ezelenhemelvaartszangderzielen",
+      "category": "LOCATION",
+      "source": "README_WorldOverview"
+    }
+  ]
+}

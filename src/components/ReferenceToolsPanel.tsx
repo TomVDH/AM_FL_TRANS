@@ -1,7 +1,8 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import TextHighlighter from './TextHighlighter';
+import SourceBadge from './SourceBadge';
 import { XlsxEntry, XlsxFileInfo } from '../hooks/useXlsxMode';
 
 interface CharacterMatch {
@@ -9,6 +10,7 @@ interface CharacterMatch {
   english: string;
   dutch: string;
   description?: string;
+  category?: string;
   startIndex?: number;
   endIndex?: number;
 }
@@ -69,6 +71,98 @@ interface ReferenceToolsPanelProps {
   copyJsonField: (text: string, fieldName: string) => void;
 }
 
+type TabType = 'browse' | 'context' | 'codex';
+
+// Reusable Result Card Component with larger touch targets
+const ResultCard: React.FC<{
+  type: 'xlsx' | 'codex' | 'character';
+  primary: string;
+  secondary?: string;
+  metadata?: { label: string; value: string }[];
+  onInsert?: () => void;
+  onCopy?: () => void;
+  badge?: React.ReactNode;
+  children?: React.ReactNode;
+}> = ({ type, primary, secondary, metadata, onInsert, onCopy, badge, children }) => {
+  const bgColors = {
+    xlsx: 'bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-600 hover:border-green-300 dark:hover:border-green-700',
+    codex: 'bg-purple-50 dark:bg-purple-900/20 border-purple-200 dark:border-purple-700 hover:border-purple-400 dark:hover:border-purple-500',
+    character: 'bg-indigo-50 dark:bg-indigo-900/20 border-indigo-200 dark:border-indigo-700 hover:border-indigo-400 dark:hover:border-indigo-500',
+  };
+
+  return (
+    <div
+      className={`p-4 border rounded-lg shadow-sm hover:shadow-md transition-all duration-200 ${bgColors[type]}`}
+      style={{ borderRadius: '6px' }}
+    >
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex-1 min-w-0">
+          {/* Badge */}
+          {badge && <div className="mb-2">{badge}</div>}
+
+          {/* Primary (Dutch translation - most important) */}
+          <div className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-1">
+            {primary}
+          </div>
+
+          {/* Secondary (English source) */}
+          {secondary && (
+            <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+              {secondary}
+            </div>
+          )}
+
+          {/* Metadata */}
+          {metadata && metadata.length > 0 && (
+            <div className="flex flex-wrap gap-2 mt-2">
+              {metadata.map((item, idx) => (
+                <span
+                  key={idx}
+                  className="inline-flex items-center text-xs text-gray-500 dark:text-gray-400"
+                >
+                  <span className="font-medium mr-1">{item.label}:</span>
+                  <span>{item.value}</span>
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* Additional content */}
+          {children}
+        </div>
+
+        {/* Action Buttons - Large touch targets (44x44px) */}
+        <div className="flex flex-col gap-2 flex-shrink-0">
+          {onInsert && (
+            <button
+              onClick={onInsert}
+              className="flex items-center justify-center w-11 h-11 bg-purple-600 hover:bg-purple-700 text-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+              style={{ borderRadius: '8px', minWidth: '44px', minHeight: '44px' }}
+              title="Insert translation"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+          )}
+          {onCopy && (
+            <button
+              onClick={onCopy}
+              className="flex items-center justify-center w-11 h-11 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
+              style={{ borderRadius: '8px', minWidth: '44px', minHeight: '44px' }}
+              title="Copy to clipboard"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   xlsxMode,
   toggleXlsxMode,
@@ -99,21 +193,98 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   darkMode,
   copyJsonField,
 }) => {
+  // Extended tab type to include codex
+  const [activeTab, setActiveTab] = useState<TabType>(xlsxViewerTab);
+  const [codexFilter, setCodexFilter] = useState<'all' | 'CHARACTER' | 'LOCATION' | 'OTHER'>('all');
+  const [codexSearchTerm, setCodexSearchTerm] = useState('');
+  const [codexData, setCodexData] = useState<CharacterMatch[]>([]);
+  const [isLoadingCodex, setIsLoadingCodex] = useState(false);
+
+  // Sync with external tab state
+  useEffect(() => {
+    if (xlsxViewerTab === 'browse' || xlsxViewerTab === 'context') {
+      setActiveTab(xlsxViewerTab);
+    }
+  }, [xlsxViewerTab]);
+
+  // Handle tab change
+  const handleTabChange = (tab: TabType) => {
+    setActiveTab(tab);
+    if (tab === 'browse' || tab === 'context') {
+      setXlsxViewerTab(tab);
+    }
+  };
+
+  // Load full codex data
+  useEffect(() => {
+    const loadCodex = async () => {
+      try {
+        setIsLoadingCodex(true);
+        const response = await fetch('/api/csv-data?file=codex_translations.csv');
+        if (response.ok) {
+          const data = await response.json();
+          if (data.sheets && data.sheets[0]) {
+            setCodexData(data.sheets[0].entries || []);
+          }
+        }
+      } catch (error) {
+        console.error('Error loading codex:', error);
+      } finally {
+        setIsLoadingCodex(false);
+      }
+    };
+
+    if (xlsxMode) {
+      loadCodex();
+    }
+  }, [xlsxMode]);
+
+  // Filter codex data
+  const filteredCodexData = useMemo(() => {
+    let filtered = codexData;
+
+    // Category filter
+    if (codexFilter !== 'all') {
+      filtered = filtered.filter(entry => entry.category === codexFilter);
+    }
+
+    // Search filter
+    if (codexSearchTerm) {
+      const term = codexSearchTerm.toLowerCase();
+      filtered = filtered.filter(entry =>
+        entry.english.toLowerCase().includes(term) ||
+        entry.dutch.toLowerCase().includes(term) ||
+        entry.name.toLowerCase().includes(term)
+      );
+    }
+
+    return filtered;
+  }, [codexData, codexFilter, codexSearchTerm]);
+
+  // Copy to clipboard helper
+  const copyToClipboard = useCallback((text: string) => {
+    navigator.clipboard.writeText(text);
+  }, []);
+
   if (!xlsxMode) return null;
 
   return (
-    <div className="reference-tools-section mt-8 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 shadow-md transition-all duration-300" style={{ borderRadius: '3px' }}>
+    <div className="reference-tools-section mt-8 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-6 shadow-lg transition-all duration-300" style={{ borderRadius: '8px' }}>
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div>
-          <h4 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Reference Tools</h4>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">Browse and search Excel translation files</p>
+          <h4 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase">
+            Reference Tools
+          </h4>
+          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+            Search translations across all data sources
+          </p>
         </div>
         <button
           onClick={toggleXlsxMode}
-          className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
-          style={{ borderRadius: '3px' }}
-          title="Close Reference Tools"
+          className="flex items-center justify-center w-10 h-10 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
+          style={{ borderRadius: '8px' }}
+          title="Close Reference Tools (Esc)"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -121,44 +292,75 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
         </button>
       </div>
 
-      {/* Tab Navigation */}
-      <div className="border-b border-gray-200 dark:border-gray-600 mb-6">
-        <div className="flex gap-1">
-          <button
-            onClick={() => setXlsxViewerTab('browse')}
-            className={`px-4 py-2 text-sm font-medium transition-colors ${
-              xlsxViewerTab === 'browse'
-                ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-                : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
-            }`}
-          >
-            Browse Data
-          </button>
-          <button
-            onClick={() => setXlsxViewerTab('context')}
-            className={`px-4 py-2 text-sm font-medium transition-colors ${
-              xlsxViewerTab === 'context'
-                ? 'text-blue-600 dark:text-blue-400 border-b-2 border-blue-600 dark:border-blue-400'
-                : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200'
-            }`}
-          >
-            Context Search (beta)
-          </button>
-        </div>
+      {/* Tab Navigation - Redesigned */}
+      <div className="flex gap-1 mb-6 p-1 bg-gray-100 dark:bg-gray-700 rounded-lg" style={{ borderRadius: '8px' }}>
+        <button
+          onClick={() => handleTabChange('browse')}
+          className={`flex-1 px-4 py-2.5 text-sm font-medium rounded-md transition-all duration-200 ${
+            activeTab === 'browse'
+              ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm'
+              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+          }`}
+          style={{ borderRadius: '6px' }}
+        >
+          <span className="flex items-center justify-center gap-2">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+            </svg>
+            Browse
+          </span>
+        </button>
+        <button
+          onClick={() => handleTabChange('context')}
+          className={`flex-1 px-4 py-2.5 text-sm font-medium rounded-md transition-all duration-200 ${
+            activeTab === 'context'
+              ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm'
+              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+          }`}
+          style={{ borderRadius: '6px' }}
+        >
+          <span className="flex items-center justify-center gap-2">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            Context
+          </span>
+        </button>
+        <button
+          onClick={() => handleTabChange('codex')}
+          className={`flex-1 px-4 py-2.5 text-sm font-medium rounded-md transition-all duration-200 ${
+            activeTab === 'codex'
+              ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm'
+              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+          }`}
+          style={{ borderRadius: '6px' }}
+        >
+          <span className="flex items-center justify-center gap-2">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            Codex
+            <span className="text-[10px] px-1.5 py-0.5 bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 rounded-full font-bold">
+              {codexData.length}
+            </span>
+          </span>
+        </button>
       </div>
 
       {/* Tab Content */}
-      {xlsxViewerTab === 'browse' ? (
+      {activeTab === 'browse' && (
         <div className="space-y-4">
           {/* File and Sheet Selection */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
-              <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">File</label>
+              <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wide">
+                File
+              </label>
               <select
                 value={selectedXlsxFile}
                 onChange={(e) => loadXlsxData(e.target.value)}
-                className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
-                style={{ borderRadius: '3px' }}
+                className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:border-purple-500 dark:focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200 bg-white dark:bg-gray-700 dark:text-white text-sm"
+                style={{ borderRadius: '8px' }}
                 disabled={isLoadingXlsx}
               >
                 <option value="">Select an XLSX file</option>
@@ -168,15 +370,16 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
               </select>
             </div>
 
-            {/* Sheet Selection */}
             {xlsxData && !globalSearch && (
               <div className="space-y-2">
-                <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Sheet</label>
+                <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wide">
+                  Sheet
+                </label>
                 <select
                   value={selectedXlsxSheet}
                   onChange={(e) => setSelectedXlsxSheet(e.target.value)}
-                  className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
-                  style={{ borderRadius: '3px' }}
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:border-purple-500 dark:focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200 bg-white dark:bg-gray-700 dark:text-white text-sm"
+                  style={{ borderRadius: '8px' }}
                   disabled={isLoadingXlsx}
                 >
                   <option value="">Select a sheet</option>
@@ -188,144 +391,90 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
             )}
           </div>
 
-          {/* Search and Global Toggle */}
-          <div className="space-y-4">
-            <div className="space-y-2">
-              <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">Search</label>
-              <input
-                type="text"
-                value={xlsxSearchTerm}
-                onChange={(e) => setXlsxSearchTerm(e.target.value)}
-                placeholder="Search by row number, utterer, context, or text..."
-                className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
-                style={{ borderRadius: '3px' }}
-                disabled={isLoadingXlsx}
-              />
+          {/* Search Input - Modernized */}
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
             </div>
-
-            {/* Global Search Toggle */}
-            <div className="flex items-center gap-3">
-              <input
-                type="checkbox"
-                id="globalSearch"
-                checked={globalSearch}
-                onChange={(e) => setGlobalSearch(e.target.checked)}
-                className="w-4 h-4 text-black border border-black dark:border-gray-600 rounded focus:ring-2 focus:ring-gray-500 focus:ring-offset-0 dark:bg-gray-700"
-                style={{ borderRadius: '2px' }}
-                disabled={isLoadingXlsx}
-              />
-              <label htmlFor="globalSearch" className="text-sm font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                Global Search
-              </label>
-              {globalSearch && (
-                <span className="inline-flex items-center gap-1 px-2 py-1 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded text-xs text-amber-800 dark:text-amber-200 font-medium transition-all duration-300 animate-fade-in" style={{ borderRadius: '2px' }}>
-                  <svg className="w-3 h-3 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
-                  </svg>
-                  Global Search is slow! Use at your own risk.
-                </span>
-              )}
-            </div>
+            <input
+              type="text"
+              value={xlsxSearchTerm}
+              onChange={(e) => setXlsxSearchTerm(e.target.value)}
+              placeholder="Search by row, utterer, context, or text..."
+              className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:border-purple-500 dark:focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200 bg-white dark:bg-gray-700 dark:text-white text-sm"
+              style={{ borderRadius: '8px' }}
+              disabled={isLoadingXlsx}
+            />
+            {xlsxSearchTerm && (
+              <button
+                onClick={() => setXlsxSearchTerm('')}
+                className="absolute inset-y-0 right-0 pr-4 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
           </div>
 
-          {/* XLSX Data Display */}
+          {/* Global Search Toggle - Redesigned */}
+          <div className="flex items-center gap-3">
+            <label className="relative inline-flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                checked={globalSearch}
+                onChange={(e) => setGlobalSearch(e.target.checked)}
+                className="sr-only peer"
+                disabled={isLoadingXlsx}
+              />
+              <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 dark:peer-focus:ring-purple-800 rounded-full peer dark:bg-gray-600 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-purple-600"></div>
+            </label>
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              Global Search
+            </span>
+            {globalSearch && (
+              <span className="inline-flex items-center gap-1 px-2 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 text-xs font-medium rounded-full">
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
+                </svg>
+                Slower performance
+              </span>
+            )}
+          </div>
+
+          {/* Results - Updated with new ResultCard */}
           {xlsxData && (globalSearch || selectedXlsxSheet) && (
-            <div className="mt-6 bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 max-h-64 overflow-y-auto shadow-inner custom-scrollbar" style={{ borderRadius: '3px' }}>
+            <div className="mt-4 bg-gray-50 dark:bg-gray-900/50 rounded-lg p-4 max-h-80 overflow-y-auto custom-scrollbar" style={{ borderRadius: '8px' }}>
               {isLoadingXlsx ? (
-                <div className="p-8 text-center">
-                  <div className="text-gray-500 dark:text-gray-400">Loading XLSX data...</div>
+                <div className="flex items-center justify-center py-8">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600"></div>
                 </div>
               ) : (
-                <div className="p-4 space-y-3">
+                <div className="space-y-3">
                   {getFilteredEntries().map((entry: any, index: number) => (
-                    <div key={index} className="p-4 border border-gray-200 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
-                      <div className="space-y-2">
-                        {/* Header with Row and Sheet */}
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <span className="font-bold text-blue-600 dark:text-blue-400 text-sm">Row {entry.row}</span>
-                            {globalSearch && entry.sheetName && (
-                              <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-1 rounded font-medium tracking-tight uppercase letter-spacing-wide">
-                                {entry.sheetName}
-                              </span>
-                            )}
-                            {entry.fileName && (
-                              <span className="text-xs bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 px-2 py-1 rounded font-medium">
-                                {entry.fileName}
-                              </span>
-                            )}
-                          </div>
-                        </div>
-
-                        {/* Data Grid */}
-                        <div className="grid grid-cols-1 gap-2 text-sm">
-                          <div className="flex items-start gap-2">
-                            <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Utterer:</span>
-                            <div className="flex items-center gap-2 flex-1">
-                              <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.utterer}</span>
-                              <button
-                                onClick={() => copyJsonField(entry.utterer, 'utterer')}
-                                className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                title="Copy utterer"
-                              >
-                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-2">
-                            <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Context:</span>
-                            <div className="flex items-center gap-2 flex-1">
-                              <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.context}</span>
-                              <button
-                                onClick={() => copyJsonField(entry.context, 'context')}
-                                className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                title="Copy context"
-                              >
-                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-2">
-                            <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Source:</span>
-                            <div className="flex items-center gap-2 flex-1">
-                              <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.sourceEnglish}</span>
-                              <button
-                                onClick={() => copyJsonField(entry.sourceEnglish, 'source')}
-                                className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                title="Copy source text"
-                              >
-                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                          <div className="flex items-start gap-2">
-                            <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
-                            <div className="flex items-center gap-2 flex-1">
-                              <span className="text-gray-700 dark:text-gray-300 flex-1">{entry.translatedDutch}</span>
-                              <button
-                                onClick={() => copyJsonField(entry.translatedDutch, 'dutch')}
-                                className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                title="Copy Dutch translation"
-                              >
-                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                </svg>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <ResultCard
+                      key={index}
+                      type="xlsx"
+                      primary={entry.translatedDutch || '(no translation)'}
+                      secondary={entry.sourceEnglish}
+                      metadata={[
+                        { label: 'Row', value: String(entry.row) },
+                        { label: 'Speaker', value: entry.utterer },
+                        ...(entry.sheetName ? [{ label: 'Sheet', value: entry.sheetName }] : []),
+                      ]}
+                      onInsert={entry.translatedDutch ? () => insertTranslatedSuggestion(entry.translatedDutch) : undefined}
+                      onCopy={() => copyToClipboard(entry.translatedDutch || entry.sourceEnglish)}
+                      badge={<SourceBadge source="xlsx" size="sm" />}
+                    />
                   ))}
                   {getFilteredEntries().length === 0 && (
-                    <div className="text-center text-gray-500 dark:text-gray-400 py-8 text-sm">
-                      No entries found matching your search criteria.
+                    <div className="text-center py-8">
+                      <svg className="w-12 h-12 mx-auto text-gray-300 dark:text-gray-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <p className="text-gray-500 dark:text-gray-400 text-sm">No entries found</p>
                     </div>
                   )}
                 </div>
@@ -333,215 +482,193 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
             </div>
           )}
         </div>
-      ) : (
-        /* Context Search Tab */
+      )}
+
+      {activeTab === 'context' && (
         <div className="space-y-4">
-          {/* Auto-search results based on current source text */}
-          <div className="space-y-2">
-            <label className="block text-xs font-bold text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-              Searching for: &quot;{sourceTexts[currentIndex]}&quot;
-            </label>
-            <div className="bg-gray-50 dark:bg-gray-700 border border-black dark:border-gray-600 p-4 max-h-64 overflow-y-auto shadow-inner custom-scrollbar" style={{ borderRadius: '3px' }}>
-              {(() => {
-                const matches = findXlsxMatchesWrapper(sourceTexts[currentIndex] || '');
-                const charMatches = findCharacterMatches(sourceTexts[currentIndex] || '');
-
-                if (matches.length > 0 || charMatches.length > 0) {
-                  return (
-                    <>
-                      {/* Show highlighted text with suggestions */}
-                      <div className="mb-4 p-4 bg-blue-50 dark:bg-blue-950 border border-blue-200 dark:border-blue-800 rounded shadow-sm" style={{
-                        borderRadius: '6px',
-                        boxShadow: darkMode
-                          ? '0 0 0 1px rgba(59, 130, 246, 0.2), 0 2px 4px rgba(59, 130, 246, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.05)'
-                          : '0 0 0 1px rgba(59, 130, 246, 0.1), 0 2px 4px rgba(59, 130, 246, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
-                        background: darkMode
-                          ? 'linear-gradient(135deg, rgba(59, 130, 246, 0.12) 0%, rgba(147, 197, 253, 0.12) 100%)'
-                          : 'linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(147, 197, 253, 0.08) 100%)'
-                      }}>
-                        <div className="text-sm font-semibold mb-3 text-blue-700 dark:text-blue-300 flex items-center gap-2">
-                          <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                          Currently Highlighted Text:
-                        </div>
-                        <TextHighlighter
-                          text={sourceTexts[currentIndex]}
-                          jsonData={highlightingJsonData}
-                          xlsxData={xlsxData || []}
-                          highlightMode={true}
-                          eyeMode={false}
-                          currentTranslation=""
-                          onCharacterClick={insertCharacterName}
-                          onSuggestionClick={insertTranslatedSuggestion}
-                          onCharacterNameClick={handleCharacterNameClick}
-                          onHighlightClick={handleHighlightClick}
-                          className=""
-                          showSuggestions={true}
-                        />
-                      </div>
-
-                      {/* Historical matches - styled like reference viewer */}
-                      {matches.map((match, idx) => (
-                        <div key={`xlsx-${idx}`} className="mb-3 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-md hover:bg-gray-50 dark:hover:bg-gray-700 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
-                          <div className="space-y-2">
-                            {/* Header with Row and Sheet */}
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-3">
-                                <span className="font-bold text-blue-600 dark:text-blue-400 text-sm">Row {match.rowNumber}</span>
-                                {match.sheetName && (
-                                  <span className="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 px-2 py-1 rounded font-medium tracking-tight uppercase letter-spacing-wide">
-                                    {match.sheetName}
-                                  </span>
-                                )}
-                              </div>
-                            </div>
-
-                            {/* Data Grid */}
-                            <div className="grid grid-cols-1 gap-2 text-sm">
-                              <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Utterer:</span>
-                                <div className="flex items-center gap-2 flex-1">
-                                  <span className="text-gray-700 dark:text-gray-300 flex-1">{match.utterer}</span>
-                                  <button
-                                    onClick={() => navigator.clipboard.writeText(match.utterer)}
-                                    className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                    title="Copy utterer"
-                                  >
-                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                    </svg>
-                                  </button>
-                                </div>
-                              </div>
-                              <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-900 dark:text-gray-100 min-w-16">Context:</span>
-                                <div className="flex items-center gap-2 flex-1">
-                                  <span className="text-gray-700 dark:text-gray-300 flex-1">{match.context}</span>
-                                  <button
-                                    onClick={() => navigator.clipboard.writeText(match.context)}
-                                    className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                    title="Copy context"
-                                  >
-                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                    </svg>
-                                  </button>
-                                </div>
-                              </div>
-                              <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Source:</span>
-                                <div className="flex items-center gap-2 flex-1">
-                                  <div className="text-gray-700 dark:text-gray-300 flex-1">
-                                    <TextHighlighter
-                                      text={match.sourceEnglish}
-                                      jsonData={highlightingJsonData}
-                                      xlsxData={xlsxData || []}
-                                      highlightMode={true}
-                                      eyeMode={false}
-                                      currentTranslation=""
-                                      onCharacterClick={insertCharacterName}
-                                      onSuggestionClick={insertTranslatedSuggestion}
-                                      onCharacterNameClick={handleCharacterNameClick}
-                                      onHighlightClick={handleHighlightClick}
-                                      className="inline"
-                                      showSuggestions={false}
-                                    />
-                                  </div>
-                                  <button
-                                    onClick={() => navigator.clipboard.writeText(match.sourceEnglish)}
-                                    className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                    title="Copy source text"
-                                  >
-                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                    </svg>
-                                  </button>
-                                </div>
-                              </div>
-                              <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
-                                <div className="flex items-center gap-2 flex-1">
-                                  <span className="text-gray-700 dark:text-gray-300 flex-1">{match.translatedDutch || '(no translation)'}</span>
-                                  {match.translatedDutch && (
-                                    <button
-                                      onClick={() => navigator.clipboard.writeText(match.translatedDutch)}
-                                      className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                      title="Copy Dutch translation"
-                                    >
-                                      <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                      </svg>
-                                    </button>
-                                  )}
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                      {charMatches.map((char, idx) => (
-                        <div key={`char-${idx}`} className="mb-3 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-600 rounded-md hover:bg-green-100 dark:hover:bg-green-900/30 transition-all duration-200 shadow-sm" style={{ borderRadius: '3px' }}>
-                          <div className="space-y-2">
-                            {/* Header */}
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-3">
-                                <span className="font-bold text-green-800 dark:text-green-300 text-sm">Character</span>
-                                <span className="text-xs bg-green-200 dark:bg-green-800 text-green-800 dark:text-green-200 px-2 py-1 rounded font-medium">
-                                  {char.name}
-                                </span>
-                              </div>
-                            </div>
-
-                            {/* Data Grid */}
-                            <div className="grid grid-cols-1 gap-2 text-sm">
-                              <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">English:</span>
-                                <div className="flex items-center gap-2 flex-1">
-                                  <span className="text-gray-700 dark:text-gray-300 flex-1">{char.english}</span>
-                                  <button
-                                    onClick={() => navigator.clipboard.writeText(char.english)}
-                                    className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                    title="Copy English name"
-                                  >
-                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                    </svg>
-                                  </button>
-                                </div>
-                              </div>
-                              <div className="flex items-start gap-2">
-                                <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Dutch:</span>
-                                <div className="flex items-center gap-2 flex-1">
-                                  <span className="text-gray-700 dark:text-gray-300 flex-1">{char.dutch}</span>
-                                  <button
-                                    onClick={() => navigator.clipboard.writeText(char.dutch)}
-                                    className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                                    title="Copy Dutch translation"
-                                  >
-                                    <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                    </svg>
-                                  </button>
-                                </div>
-                              </div>
-                              {char.description && (
-                                <div className="flex items-start gap-2">
-                                  <span className="font-bold text-gray-900 dark:text-gray-100 min-w-20">Description:</span>
-                                  <span className="text-gray-600 dark:text-gray-400 flex-1 text-xs">{char.description}</span>
-                                </div>
-                              )}
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </>
-                  );
-                }
-                return <p className="text-gray-500 dark:text-gray-400 text-sm">No historical matches found for current text.</p>;
-              })()}
+          {/* Current source text indicator */}
+          <div className="p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-700 rounded-lg" style={{ borderRadius: '8px' }}>
+            <div className="flex items-center gap-2 mb-2">
+              <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+              <span className="text-xs font-bold text-blue-700 dark:text-blue-300 uppercase">
+                Searching current text
+              </span>
             </div>
+            <TextHighlighter
+              text={sourceTexts[currentIndex]}
+              jsonData={highlightingJsonData}
+              xlsxData={xlsxData || []}
+              highlightMode={true}
+              eyeMode={false}
+              currentTranslation=""
+              onCharacterClick={insertCharacterName}
+              onSuggestionClick={insertTranslatedSuggestion}
+              onCharacterNameClick={handleCharacterNameClick}
+              onHighlightClick={handleHighlightClick}
+              className="text-sm"
+              showSuggestions={true}
+            />
+          </div>
+
+          {/* Context matches */}
+          <div className="space-y-3 max-h-80 overflow-y-auto custom-scrollbar">
+            {(() => {
+              const xlsxMatches = findXlsxMatchesWrapper(sourceTexts[currentIndex] || '');
+              const charMatches = findCharacterMatches(sourceTexts[currentIndex] || '');
+
+              if (xlsxMatches.length === 0 && charMatches.length === 0) {
+                return (
+                  <div className="text-center py-8">
+                    <svg className="w-12 h-12 mx-auto text-gray-300 dark:text-gray-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                    <p className="text-gray-500 dark:text-gray-400 text-sm">No matches found for current text</p>
+                  </div>
+                );
+              }
+
+              return (
+                <>
+                  {charMatches.map((char, idx) => (
+                    <ResultCard
+                      key={`char-${idx}`}
+                      type="codex"
+                      primary={char.dutch}
+                      secondary={char.english}
+                      metadata={[
+                        { label: 'Category', value: char.category || 'Character' },
+                        ...(char.description ? [{ label: 'Note', value: char.description }] : []),
+                      ]}
+                      onInsert={() => insertCharacterName(char.dutch)}
+                      onCopy={() => copyToClipboard(char.dutch)}
+                      badge={<SourceBadge source="character" size="sm" />}
+                    />
+                  ))}
+                  {xlsxMatches.map((match, idx) => (
+                    <ResultCard
+                      key={`xlsx-${idx}`}
+                      type="xlsx"
+                      primary={match.translatedDutch || '(no translation)'}
+                      secondary={match.sourceEnglish}
+                      metadata={[
+                        { label: 'Row', value: String(match.rowNumber) },
+                        { label: 'Speaker', value: match.utterer },
+                        ...(match.sheetName ? [{ label: 'Sheet', value: match.sheetName }] : []),
+                      ]}
+                      onInsert={match.translatedDutch ? () => insertTranslatedSuggestion(match.translatedDutch) : undefined}
+                      onCopy={() => copyToClipboard(match.translatedDutch || match.sourceEnglish)}
+                      badge={<SourceBadge source="xlsx" size="sm" />}
+                    />
+                  ))}
+                </>
+              );
+            })()}
           </div>
         </div>
       )}
+
+      {activeTab === 'codex' && (
+        <div className="space-y-4">
+          {/* Codex Search and Filters */}
+          <div className="flex flex-col sm:flex-row gap-3">
+            {/* Search */}
+            <div className="relative flex-1">
+              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </div>
+              <input
+                type="text"
+                value={codexSearchTerm}
+                onChange={(e) => setCodexSearchTerm(e.target.value)}
+                placeholder="Search codex..."
+                className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:border-purple-500 dark:focus:border-purple-400 focus:ring-2 focus:ring-purple-500/20 transition-all duration-200 bg-white dark:bg-gray-700 dark:text-white text-sm"
+                style={{ borderRadius: '8px' }}
+              />
+            </div>
+
+            {/* Category Filter Pills */}
+            <div className="flex gap-1 p-1 bg-gray-100 dark:bg-gray-700 rounded-lg" style={{ borderRadius: '8px' }}>
+              {(['all', 'CHARACTER', 'LOCATION', 'OTHER'] as const).map((filter) => (
+                <button
+                  key={filter}
+                  onClick={() => setCodexFilter(filter)}
+                  className={`px-3 py-2 text-xs font-medium rounded-md transition-all duration-200 ${
+                    codexFilter === filter
+                      ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm'
+                      : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+                  }`}
+                  style={{ borderRadius: '6px' }}
+                >
+                  {filter === 'all' ? 'All' : filter.charAt(0) + filter.slice(1).toLowerCase()}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Results count */}
+          <div className="text-xs text-gray-500 dark:text-gray-400">
+            Showing {filteredCodexData.length} of {codexData.length} entries
+          </div>
+
+          {/* Codex Results */}
+          <div className="space-y-3 max-h-96 overflow-y-auto custom-scrollbar">
+            {isLoadingCodex ? (
+              <div className="flex items-center justify-center py-8">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-600"></div>
+              </div>
+            ) : filteredCodexData.length === 0 ? (
+              <div className="text-center py-8">
+                <svg className="w-12 h-12 mx-auto text-gray-300 dark:text-gray-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                <p className="text-gray-500 dark:text-gray-400 text-sm">No codex entries found</p>
+              </div>
+            ) : (
+              filteredCodexData.map((entry, idx) => (
+                <ResultCard
+                  key={idx}
+                  type="codex"
+                  primary={entry.dutch}
+                  secondary={entry.english}
+                  metadata={[
+                    { label: 'Category', value: entry.category || 'Unknown' },
+                    ...(entry.description && entry.description !== 'Character' ? [{ label: 'Note', value: entry.description }] : []),
+                  ]}
+                  onInsert={() => insertCharacterName(entry.dutch)}
+                  onCopy={() => copyToClipboard(entry.dutch)}
+                  badge={
+                    <span className={`inline-flex items-center px-2 py-0.5 text-[10px] font-bold uppercase rounded-full ${
+                      entry.category === 'CHARACTER'
+                        ? 'bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300'
+                        : entry.category === 'LOCATION'
+                        ? 'bg-blue-100 dark:bg-blue-800 text-blue-700 dark:text-blue-300'
+                        : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400'
+                    }`}>
+                      {entry.category || 'Other'}
+                    </span>
+                  }
+                />
+              ))
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Keyboard hint */}
+      <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+        <div className="flex items-center justify-center gap-4 text-xs text-gray-400 dark:text-gray-500">
+          <span className="flex items-center gap-1">
+            <kbd className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 rounded text-[10px] font-mono">Esc</kbd>
+            Close
+          </span>
+          <span className="flex items-center gap-1">
+            <kbd className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 rounded text-[10px] font-mono">Tab</kbd>
+            Cycle tabs
+          </span>
+        </div>
+      </div>
     </div>
   );
 };

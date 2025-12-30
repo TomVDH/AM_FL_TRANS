@@ -43,19 +43,27 @@ interface CharacterCSVEntry {
   korean: string;
 }
 
+interface CodexCSVEntry {
+  name: string;
+  description: string;
+  english: string;
+  dutch: string;
+  category: string;
+}
+
 /**
- * Parse character translations CSV content
+ * Parse character translations CSV content (legacy format)
  * @param csvContent - Raw CSV content
  * @returns Parsed character data
  */
 function parseCharacterCSV(csvContent: string) {
   const lines = csvContent.split('\n');
   const characters: CharacterCSVEntry[] = [];
-  
+
   for (let i = 1; i < lines.length; i++) { // Skip header
     const line = lines[i].trim();
     if (!line) continue;
-    
+
     const values = parseCSVRow(line);
     if (values.length >= 11) {
       characters.push({
@@ -73,8 +81,37 @@ function parseCharacterCSV(csvContent: string) {
       });
     }
   }
-  
+
   return [{ sheetName: 'Characters', entries: characters }];
+}
+
+/**
+ * Parse codex translations CSV content (new unified format)
+ * Format: name,description,english,dutch,category
+ * @param csvContent - Raw CSV content
+ * @returns Parsed codex data
+ */
+function parseCodexCSV(csvContent: string) {
+  const lines = csvContent.split('\n');
+  const entries: CodexCSVEntry[] = [];
+
+  for (let i = 1; i < lines.length; i++) { // Skip header
+    const line = lines[i].trim();
+    if (!line) continue;
+
+    const values = parseCSVRow(line);
+    if (values.length >= 4) {
+      entries.push({
+        name: values[0],
+        description: values[1],
+        english: values[2],
+        dutch: values[3],
+        category: values[4] || 'CHARACTER'
+      });
+    }
+  }
+
+  return [{ sheetName: 'Codex', entries }];
 }
 
 /**
@@ -82,11 +119,19 @@ function parseCharacterCSV(csvContent: string) {
  * @param csvContent - Raw CSV content
  * @returns Format type
  */
-function detectCSVFormat(csvContent: string): 'character' | 'episode' {
-  const firstLine = csvContent.split('\n')[0];
-  if (firstLine.includes('Name/Key,Description,English,Spanish')) {
+function detectCSVFormat(csvContent: string): 'codex' | 'character' | 'episode' {
+  const firstLine = csvContent.split('\n')[0].toLowerCase();
+
+  // New unified codex format: name,description,english,dutch,category
+  if (firstLine.includes('name,description,english,dutch,category')) {
+    return 'codex';
+  }
+
+  // Legacy character format with multiple languages
+  if (firstLine.includes('name/key,description,english,spanish')) {
     return 'character';
   }
+
   return 'episode';
 }
 
@@ -97,7 +142,11 @@ function detectCSVFormat(csvContent: string): 'character' | 'episode' {
  */
 function parseCSVContent(csvContent: string) {
   const format = detectCSVFormat(csvContent);
-  
+
+  if (format === 'codex') {
+    return parseCodexCSV(csvContent);
+  }
+
   if (format === 'character') {
     return parseCharacterCSV(csvContent);
   }
