@@ -479,18 +479,21 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       onDragOver={(e) => {
                         e.preventDefault();
                         e.currentTarget.classList.add('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900/20');
+                        e.currentTarget.setAttribute('aria-dropeffect', 'copy');
                       }}
                       onDragLeave={(e) => {
                         e.preventDefault();
                         e.currentTarget.classList.remove('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900/20');
+                        e.currentTarget.setAttribute('aria-dropeffect', 'none');
                       }}
                       onDrop={(e) => {
                         e.preventDefault();
                         e.currentTarget.classList.remove('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900/20');
+                        e.currentTarget.setAttribute('aria-dropeffect', 'none');
                         const files = e.dataTransfer.files;
                         if (files.length > 0) {
                           const file = files[0];
-                          if (file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' || 
+                          if (file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' ||
                               file.type === 'application/vnd.ms-excel') {
                             // Create a synthetic event for the file upload handler
                             const syntheticEvent = {
@@ -500,6 +503,15 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                           }
                         }
                       }}
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          fileInputRef.current?.click();
+                        }
+                      }}
+                      aria-label="Upload Excel file: Click to browse or drag and drop .xlsx or .xls file here"
                       className="w-full p-4 border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-gray-50 dark:bg-gray-800 transition-all duration-200 cursor-pointer text-center"
                       style={{ borderRadius: '3px' }}
                     >
@@ -533,9 +545,11 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     </label>
 
                     {/* File Type Toggle */}
-                    <div className="flex gap-1.5 mb-3">
+                    <div className="flex gap-1.5 mb-3" role="group" aria-label="File type selection">
                       <button
                         onClick={() => handleFileTypeChange('excel')}
+                        aria-label="Select Excel files"
+                        aria-pressed={fileType === 'excel'}
                         className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-300 ease-out ${
                           fileType === 'excel'
                             ? 'bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black border border-gray-700 dark:border-gray-300'
@@ -547,6 +561,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       </button>
                       <button
                         onClick={() => handleFileTypeChange('json')}
+                        aria-label="Select JSON files"
+                        aria-pressed={fileType === 'json'}
                         className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-300 ease-out ${
                           fileType === 'json'
                             ? 'bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black border border-gray-700 dark:border-gray-300'
@@ -558,6 +574,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       </button>
                       <button
                         onClick={() => handleFileTypeChange('csv')}
+                        aria-label="Select CSV files"
+                        aria-pressed={fileType === 'csv'}
                         className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-300 ease-out ${
                           fileType === 'csv'
                             ? 'bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black border border-gray-700 dark:border-gray-300'

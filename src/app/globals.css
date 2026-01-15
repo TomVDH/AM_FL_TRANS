@@ -101,6 +101,59 @@
     font-family: inherit;
     letter-spacing: -0.011em;
   }
+
+  /* ========== WCAG AA Accessibility Enhancements ========== */
+
+  /* Universal keyboard focus styles for all interactive elements */
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [role="button"]:focus-visible,
+  [tabindex]:not([tabindex="-1"]):focus-visible {
+    outline: 3px solid #3b82f6;
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+
+  /* Dark mode focus styles */
+  .dark button:focus-visible,
+  .dark a:focus-visible,
+  .dark input:focus-visible,
+  .dark select:focus-visible,
+  .dark textarea:focus-visible,
+  .dark [role="button"]:focus-visible,
+  .dark [tabindex]:not([tabindex="-1"]):focus-visible {
+    outline-color: #60a5fa;
+  }
+
+  /* Remove default outline to use our custom one */
+  button:focus,
+  a:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+  }
+
+  /* High contrast text colors for WCAG AA compliance */
+  .text-gray-400 {
+    color: #6b7280 !important; /* Ensures 4.5:1 contrast on white */
+  }
+
+  .text-gray-500 {
+    color: #4b5563 !important; /* Better contrast than default */
+  }
+
+  /* Dark mode text contrast adjustments */
+  .dark .text-gray-400 {
+    color: #9ca3af !important;
+  }
+
+  .dark .text-gray-500 {
+    color: #d1d5db !important;
+  }
 }
 
 /**

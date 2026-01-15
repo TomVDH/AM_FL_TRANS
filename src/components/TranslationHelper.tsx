@@ -955,10 +955,16 @@ const TranslationHelper: React.FC = () => {
                 const isJustCompleted = index === currentIndex - 1;
                 const segmentWidth = (100 / sourceTexts.length);
 
+                const status = isCompleted ? (isBlank ? 'blank' : 'completed') : (isCurrent ? 'current' : 'pending');
+                const ariaLabel = `Entry ${index + 1}: ${status}${utterers[index] ? ` - ${utterers[index]}` : ''}`;
+
                 return (
                   <div
                     key={index}
                     data-segment={index}
+                    role="button"
+                    tabIndex={-1}
+                    aria-label={ariaLabel}
                     className="relative h-full"
                     style={{
                       width: `${segmentWidth}%`
