@@ -574,6 +574,7 @@ const TranslationHelper: React.FC = () => {
         toggleDarkMode={toggleDarkMode}
         showResetModal={showResetModal}
         setShowResetModal={setShowResetModal}
+        isLoadingExcel={isLoadingExcel}
       />
     );
   }
