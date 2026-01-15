@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 96,
+    "rowNumber": 98,
+    "key": "WRITE.DialogLocalizer.125",
+    "utterer": "WRITE.DialogLocalizer.125",
+    "context": "",
+    "sourceEnglish": "En La Gloria, Colombia, el servicio de biblioteca móvil que usa los burros para transportar libros a los pueblos pequeños se llama:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 97,
+    "rowNumber": 99,
+    "key": "WRITE.DialogLocalizer.126",
+    "utterer": "WRITE.DialogLocalizer.126",
+    "context": "",
+    "sourceEnglish": "Biblioburro"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 98,
+    "rowNumber": 100,
+    "key": "WRITE.DialogLocalizer.127",
+    "utterer": "WRITE.DialogLocalizer.127",
+    "context": "",
+    "sourceEnglish": "Libraría Asinia"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 99,
+    "rowNumber": 101,
+    "key": "WRITE.DialogLocalizer.128",
+    "utterer": "WRITE.DialogLocalizer.128",
+    "context": "",
+    "sourceEnglish": "In China, the rise in demand for a luxury Traditional Chinese Medicine product called 'ejiao' has resulted in how many asses being slaughtered every year?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 100,
+    "rowNumber": 102,
+    "key": "WRITE.DialogLocalizer.129",
+    "utterer": "WRITE.DialogLocalizer.129",
+    "context": "",
+    "sourceEnglish": "5 million"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 101,
+    "rowNumber": 103,
+    "key": "WRITE.DialogLocalizer.130",
+    "utterer": "WRITE.DialogLocalizer.130",
+    "context": "",
+    "sourceEnglish": "3 million"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 102,
+    "rowNumber": 104,
+    "key": "WRITE.DialogLocalizer.185",
+    "utterer": "WRITE.DialogLocalizer.185",
+    "context": "",
+    "sourceEnglish": "2 million"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 103,
+    "rowNumber": 105,
+    "key": "WRITE.DialogLocalizer.131",
+    "utterer": "WRITE.DialogLocalizer.131",
+    "context": "",
+    "sourceEnglish": "As of 2018, how heavy must a tourist be to be too heavy to ride an ass on the island of Santorini, Greece?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 104,
+    "rowNumber": 106,
+    "key": "WRITE.DialogLocalizer.132",
+    "utterer": "WRITE.DialogLocalizer.132",
+    "context": "",
+    "sourceEnglish": "75kg (165lbs)"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 105,
+    "rowNumber": 107,
+    "key": "WRITE.DialogLocalizer.133",
+    "utterer": "WRITE.DialogLocalizer.133",
+    "context": "",
+    "sourceEnglish": "100kg (220lbs)"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 106,
+    "rowNumber": 108,
+    "key": "WRITE.DialogLocalizer.134",
+    "utterer": "WRITE.DialogLocalizer.134",
+    "context": "",
+    "sourceEnglish": "In northwestern Australia, wild asses are shot from government helicopters because:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 107,
+    "rowNumber": 109,
+    "key": "WRITE.DialogLocalizer.135",
+    "utterer": "WRITE.DialogLocalizer.135",
+    "context": "",
+    "sourceEnglish": "They are considered an invasive species left behind from British colonization"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 108,
+    "rowNumber": 110,
+    "key": "WRITE.DialogLocalizer.136",
+    "utterer": "WRITE.DialogLocalizer.136",
+    "context": "",
+    "sourceEnglish": "They are destroying the natural landscape of the Kimberley"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 109,
+    "rowNumber": 111,
+    "key": "WRITE.DialogLocalizer.186",
+    "utterer": "WRITE.DialogLocalizer.186",
+    "context": "",
+    "sourceEnglish": "All of the above"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 110,
+    "rowNumber": 112,
+    "key": "WRITE.DialogLocalizer.137",
+    "utterer": "WRITE.DialogLocalizer.137",
+    "context": "",
+    "sourceEnglish": "Equus asinus has been in the service of human beings as a manual labourer for how many years?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 111,
+    "rowNumber": 113,
+    "key": "WRITE.DialogLocalizer.138",
+    "utterer": "WRITE.DialogLocalizer.138",
+    "context": "",
+    "sourceEnglish": "5000 years"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 112,
+    "rowNumber": 114,
+    "key": "WRITE.DialogLocalizer.139",
+    "utterer": "WRITE.DialogLocalizer.139",
+    "context": "",
+    "sourceEnglish": "7000 years"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 113,
+    "rowNumber": 115,
+    "key": "WRITE.DialogLocalizer.21",
+    "utterer": "WRITE.DialogLocalizer.21",
+    "context": "",
+    "sourceEnglish": "AVATAR READY"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 114,
+    "rowNumber": 116,
+    "key": "WRITE.DialogLocalizer.22",
+    "utterer": "WRITE.DialogLocalizer.22",
+    "context": "",
+    "sourceEnglish": "MATERIALIZING..."
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_GameTitle_localization",
+    "entryIndex": 0,
+    "rowNumber": 2,
+    "key": "WRITE.DialogLocalizer.1",
+    "utterer": "WRITE.DialogLocalizer.1",
+    "context": "",
+    "sourceEnglish": "PRESS X TO BEGIN"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "8x_Intermission_localization",
+    "entryIndex": 0,
+    "rowNumber": 2,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "",
+    "sourceEnglish": "INTERMISSION"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "8x_Intermission_localization",
+    "entryIndex": 1,
+    "rowNumber": 3,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "",
+    "sourceEnglish": "in which there is a PAUSE of no fixed duration"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "8x_Intermission_localization",
+    "entryIndex": 2,
+    "rowNumber": 4,
+    "key": "WRITE.Dialog:Localizer.8",
+    "utterer": "WRITE.Dialog:Localizer.8",
+    "context": "",
+    "sourceEnglish": "PRESS X TO BEGIN WHENEVER"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_EpisodeTitle_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "",
+    "sourceEnglish": "EPISODE TEN"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_EpisodeTitle_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "",
+    "sourceEnglish": "THE RIOT"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_EpisodeTitle_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "WRITE.Dialog:Localizer.8",
+    "utterer": "WRITE.Dialog:Localizer.8",
+    "context": "",
+    "sourceEnglish": "Press X to Begin"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog_E10_Slow.9.Proper Ass",
+    "utterer": "SAY.Dialog_E10_Slow.9.Proper Ass",
+    "context": "A riot ensues in the streets, led by the donkeys.",
+    "sourceEnglish": "What would we like?!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog_E10_Slow.50.The Masses",
+    "utterer": "SAY.Dialog_E10_Slow.50.The Masses",
+    "context": "",
+    "sourceEnglish": "System change!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog_E10_Slow.51.Proper Ass",
+    "utterer": "SAY.Dialog_E10_Slow.51.Proper Ass",
+    "context": "",
+    "sourceEnglish": "When would we prefer to have it?!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog_E10_Slow.52.The Masses",
+    "utterer": "SAY.Dialog_E10_Slow.52.The Masses",
+    "context": "",
+    "sourceEnglish": "NOW!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog_E10_Slow.67.Proper Ass",
+    "utterer": "SAY.Dialog_E10_Slow.67.Proper Ass",
+    "context": "",
+    "sourceEnglish": "Who's going to prevent us?!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog_E10_Slow.68.The Masses",
+    "utterer": "SAY.Dialog_E10_Slow.68.The Masses",
+    "context": "",
+    "sourceEnglish": "NO ONE!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog_E10_Slow.54.Thirsty Ass",
+    "utterer": "SAY.Dialog_E10_Slow.54.Thirsty Ass",
+    "context": "Our core cast drives past the riot in the tractor, which promptly dies. The Herd emerges onto the street",
+    "sourceEnglish": "Aw dang! The Tractor-Machine's choking. Maybe it needs a break."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog_E10_Slow.55.Nice Ass",
+    "utterer": "SAY.Dialog_E10_Slow.55.Nice Ass",
+    "context": "",
+    "sourceEnglish": "Golly, who are these Asses?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog_E10_Slow.159.Nice Ass",
+    "utterer": "SAY.Dialog_E10_Slow.159.Nice Ass",
+    "context": "Said if Sad Ass is not in the party.",
+    "sourceEnglish": "How will we ever find our Comrades?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog_E10_Slow.161.Sad Ass",
+    "utterer": "SAY.Dialog_E10_Slow.161.Sad Ass",
+    "context": "Said instead of the line above, if Sad Ass is in the party.",
+    "sourceEnglish": "It'll be impossible to find the others in this mess..."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog_E10_Slow.163.Sad Ass",
+    "utterer": "SAY.Dialog_E10_Slow.163.Sad Ass",
+    "context": "",
+    "sourceEnglish": "I have a bad feeling about this..."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog_E10_Slow.140.Thirsty Ass",
+    "utterer": "SAY.Dialog_E10_Slow.140.Thirsty Ass",
+    "context": "",
+    "sourceEnglish": "Slow Ass! Where in the world did ya bring us to?!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog_E10_Slow.142.Slow Ass",
+    "utterer": "SAY.Dialog_E10_Slow.142.Slow Ass",
+    "context": "",
+    "sourceEnglish": "Smart and the others are b-bound to b-be here somewhere."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog_E10_Slow.157.Hard Ass",
+    "utterer": "SAY.Dialog_E10_Slow.157.Hard Ass",
+    "context": "",
+    "sourceEnglish": "Stay focused."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "SAY.Dialog_E10_Slow.158.Hard Ass",
+    "utterer": "SAY.Dialog_E10_Slow.158.Hard Ass",
+    "context": "",
+    "sourceEnglish": "We will cover more ground by splitting up."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "SAY.Dialog_E10_Slow.135.Hard Ass",
+    "utterer": "SAY.Dialog_E10_Slow.135.Hard Ass",
+    "context": "Said if the Good Hard Ass won in the E6 Nightmare fight",
+    "sourceEnglish": "Find the others and meet back here as soon as you can."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "SAY.Dialog_E10_Slow.136.Hard Ass",
+    "utterer": "SAY.Dialog_E10_Slow.136.Hard Ass",
+    "context": "Everyone runs off, we're left with Slow Ass who has to fight.",
+    "sourceEnglish": "And be careful."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "SAY.Dialog_E10_Slow.134.Hard Ass",
+    "utterer": "SAY.Dialog_E10_Slow.134.Hard Ass",
+    "context": "Said if the Bad Hard Ass won in the E6 Nightmare fight",
+    "sourceEnglish": "If you come across any Humans. Don't hold back."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "SAY.Dialog_E10_Slow.125.Hard Ass",
+    "utterer": "SAY.Dialog_E10_Slow.125.Hard Ass",
+    "context": "Everyone runs off, we're left with Slow Ass who has to fight.",
+    "sourceEnglish": "Move!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "SAY.Dialog_E10_Slow.77.Slow Ass",
+    "utterer": "SAY.Dialog_E10_Slow.77.Slow Ass",
+    "context": "Post Slow-Ass Fight, if went to Circus",
+    "sourceEnglish": "Oof! They saw right through my costume..."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Slow_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "SAY.Dialog_E10_Slow.78.Slow Ass",
+    "utterer": "SAY.Dialog_E10_Slow.78.Slow Ass",
+    "context": "Post Slow-Ass Fight, if went to Zoo",
+    "sourceEnglish": "Oof! If only I had my Ointment..."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Nice_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:E10_Nice.11.Nice Ass",
+    "utterer": "SAY.Dialog:E10_Nice.11.Nice Ass",
+    "context": "Zooming over to elsewhere in the city, we see Nice Ass about to fight.",
+    "sourceEnglish": "Gosh! I gotta find the others before it's too late!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Nice_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:E10_Nice.45.Nice Ass",
+    "utterer": "SAY.Dialog:E10_Nice.45.Nice Ass",
+    "context": "Post Nice-Ass Fight, if lost the fight and Sad isn't in the city (left the rest of the Herd at the Zoo). The camera fades out.",
+    "sourceEnglish": "Yikes..."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Nice_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:E10_Nice.32.Nice Ass",
+    "utterer": "SAY.Dialog:E10_Nice.32.Nice Ass",
+    "context": "Post Nice-Ass Fight, if lost the fight and Sad is in the city (was in the factory). Sad Ass finds Nice Ass on the ground, beaten.",
+    "sourceEnglish": "Sad Ass? Is that you?"
+  }
+]

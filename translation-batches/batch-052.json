@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:PostWorkerDies.17.Kick Ass",
+    "utterer": "SAY.Dialog:PostWorkerDies.17.Kick Ass",
+    "context": "",
+    "sourceEnglish": "&%@$! Big Ass WATCH OUT!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:PostWorkerDies.21.Big Ass",
+    "utterer": "SAY.Dialog:PostWorkerDies.21.Big Ass",
+    "context": "Big Ass is picked up by the same hook as the worker and taken into the next room.",
+    "sourceEnglish": "AAAAAAHHHHHHH!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:PostWorkerDies.22.Smart Ass",
+    "utterer": "SAY.Dialog:PostWorkerDies.22.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Hang on!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "WRITE.Dialog:Localizer.1",
+    "utterer": "WRITE.Dialog:Localizer.1",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "That's not it."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "WRITE.Dialog:Localizer.2",
+    "utterer": "WRITE.Dialog:Localizer.2",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "There has to be another way."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "WRITE.Dialog:Localizer.3",
+    "utterer": "WRITE.Dialog:Localizer.3",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Terrible plan."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "WRITE.Dialog:Localizer.4",
+    "utterer": "WRITE.Dialog:Localizer.4",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Come on Smart, you can do better."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Nope."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "WRITE.Dialog:Localizer.6",
+    "utterer": "WRITE.Dialog:Localizer.6",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Let's try that again..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Slaughtering_localization",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "You can do this."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:Opening.36.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.36.Smart Ass",
+    "context": "A loud sound from the machine—the worker is being sliced and diced. Big is next.",
+    "sourceEnglish": "What's that sound?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:Opening.26.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.26.Kick Ass",
+    "context": "",
+    "sourceEnglish": "@#$%&!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Opening.41.Big Ass",
+    "utterer": "SAY.Dialog:Opening.41.Big Ass",
+    "context": "",
+    "sourceEnglish": "HELP!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Opening.43.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.43.Smart Ass",
+    "context": "",
+    "sourceEnglish": "We've got to turn off this Death-Machine."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Opening.3.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.3.Smart Ass",
+    "context": "This is said if Sad is not present.",
+    "sourceEnglish": "Kick—cut the power!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:Opening.11.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.11.Smart Ass",
+    "context": "Alternately, this is said if Sad is present.",
+    "sourceEnglish": "Kick and Sad—cut the power!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:Opening.58.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.58.Smart Ass",
+    "context": "",
+    "sourceEnglish": "I'll jam the controls."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:BigIsSaved.12.Smart Ass",
+    "utterer": "SAY.Dialog:BigIsSaved.12.Smart Ass",
+    "context": "The machine is stopped now.",
+    "sourceEnglish": "STEP TWO COMPLETE!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:GateOpened.20.Big Ass",
+    "utterer": "SAY.Dialog:GateOpened.20.Big Ass",
+    "context": "",
+    "sourceEnglish": "I truly thought that was the end for me."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:GateOpened.13.Big Ass",
+    "utterer": "SAY.Dialog:GateOpened.13.Big Ass",
+    "context": "",
+    "sourceEnglish": "You're all heroes!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "MENU.Dialog:GateOpened.47",
+    "utterer": "MENU.Dialog:GateOpened.47",
+    "context": "Dialogue option 1.1.",
+    "sourceEnglish": "Hey! It was MY plan!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:GateOpened.49.Smart Ass",
+    "utterer": "SAY.Dialog:GateOpened.49.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Hey! It was MY plan."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:GateOpened.58.Kick Ass",
+    "utterer": "SAY.Dialog:GateOpened.58.Kick Ass",
+    "context": "",
+    "sourceEnglish": "I'm happy you're SAFE!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog:GateOpened.52.Sad Ass",
+    "utterer": "SAY.Dialog:GateOpened.52.Sad Ass",
+    "context": "This is said if Sad is present. Jump to line 21.",
+    "sourceEnglish": "...me too."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "MENU.Dialog:GateOpened.48",
+    "utterer": "MENU.Dialog:GateOpened.48",
+    "context": "Dialogue option 1.2.",
+    "sourceEnglish": "I'm happy you're safe."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "SAY.Dialog:GateOpened.50.Smart Ass",
+    "utterer": "SAY.Dialog:GateOpened.50.Smart Ass",
+    "context": "",
+    "sourceEnglish": "I'm happy you're safe."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "SAY.Dialog:GateOpened.82.Sad Ass",
+    "utterer": "SAY.Dialog:GateOpened.82.Sad Ass",
+    "context": "This is said if Sad is present.",
+    "sourceEnglish": "...me too."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "SAY.Dialog:GateOpened.64.Smart Ass",
+    "utterer": "SAY.Dialog:GateOpened.64.Smart Ass",
+    "context": "Jump to line 21.",
+    "sourceEnglish": "It was MY great plan!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "SAY.Dialog:GateOpened.69.Kick Ass",
+    "utterer": "SAY.Dialog:GateOpened.69.Kick Ass",
+    "context": "",
+    "sourceEnglish": "What's NEXT?!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "SAY.Dialog:GateOpened.39.Smart Ass",
+    "utterer": "SAY.Dialog:GateOpened.39.Smart Ass",
+    "context": "The Asses can now head towards the exit for this level.",
+    "sourceEnglish": "Step THREE! We all get out alive!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "SAY.Dialog:Radio.10.Factory PA",
+    "utterer": "SAY.Dialog:Radio.10.Factory PA",
+    "context": "Optional dialogue when interacting with the radio.",
+    "sourceEnglish": "*ksh*—Greetings employees."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "SAY.Dialog:Radio.24.Factory PA",
+    "utterer": "SAY.Dialog:Radio.24.Factory PA",
+    "context": "",
+    "sourceEnglish": "Congratulations, the new automated Forklifts have been increasing efficiency by 15%."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "SAY.Dialog:Radio.25.Factory PA",
+    "utterer": "SAY.Dialog:Radio.25.Factory PA",
+    "context": "",
+    "sourceEnglish": "Retirement parties for Forklift Operators will be held in the Break Room from 13h00-13h05."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "SAY.Dialog:Radio.26.Factory PA",
+    "utterer": "SAY.Dialog:Radio.26.Factory PA",
+    "context": "",
+    "sourceEnglish": "There will be cake.*ksh*"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "WRITE.Dialog:Localizer.1",
+    "utterer": "WRITE.Dialog:Localizer.1",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "That's not it."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "WRITE.Dialog:Localizer.2",
+    "utterer": "WRITE.Dialog:Localizer.2",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "There has to be another way."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "WRITE.Dialog:Localizer.3",
+    "utterer": "WRITE.Dialog:Localizer.3",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Terrible plan."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 27,
+    "rowNumber": 30,
+    "key": "WRITE.Dialog:Localizer.4",
+    "utterer": "WRITE.Dialog:Localizer.4",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Come on Smart, you can do better."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 28,
+    "rowNumber": 31,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Nope."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 29,
+    "rowNumber": 32,
+    "key": "WRITE.Dialog:Localizer.6",
+    "utterer": "WRITE.Dialog:Localizer.6",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Let's try that again..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Skinning_localization",
+    "entryIndex": 30,
+    "rowNumber": 33,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "You can do this."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Chilling_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:Opening.73.Big Ass",
+    "utterer": "SAY.Dialog:Opening.73.Big Ass",
+    "context": "The Asses find themselves in a big freezer with countless carcasses.",
+    "sourceEnglish": "..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Chilling_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:Opening.21.Sad Ass",
+    "utterer": "SAY.Dialog:Opening.21.Sad Ass",
+    "context": "This dialogue happens if Sad is present.",
+    "sourceEnglish": "*whimper*"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Chilling_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Ending.92.Big Ass",
+    "utterer": "SAY.Dialog:Ending.92.Big Ass",
+    "context": "",
+    "sourceEnglish": "Wait. We should sing the Song of Ascension for our Comrades before we leave."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Chilling_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Ending.93.Kick Ass",
+    "utterer": "SAY.Dialog:Ending.93.Kick Ass",
+    "context": "",
+    "sourceEnglish": "Big—from the look of these carcasses... We're too late."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Chilling_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Ending.168.Big Ass",
+    "utterer": "SAY.Dialog:Ending.168.Big Ass",
+    "context": "",
+    "sourceEnglish": "Back on that hook, my life flashed before my eyes."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Chilling_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:Ending.169.Big Ass",
+    "utterer": "SAY.Dialog:Ending.169.Big Ass",
+    "context": "",
+    "sourceEnglish": "I've never fit in anywhere, or made much of an impact."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Chilling_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:Ending.170.Big Ass",
+    "utterer": "SAY.Dialog:Ending.170.Big Ass",
+    "context": "",
+    "sourceEnglish": "But, I want to make a difference now."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Chilling_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:Ending.171.Big Ass",
+    "utterer": "SAY.Dialog:Ending.171.Big Ass",
+    "context": "",
+    "sourceEnglish": "Even if we're too late, we should try."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Chilling_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:Ending.172.Big Ass",
+    "utterer": "SAY.Dialog:Ending.172.Big Ass",
+    "context": "",
+    "sourceEnglish": "If it means one more Soul makes it to the Astral Plane, it's worth it."
+  }
+]

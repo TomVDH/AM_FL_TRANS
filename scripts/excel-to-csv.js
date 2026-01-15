@@ -68,12 +68,21 @@ function escapeCSVValue(value) {
 
 /**
  * Create CSV header row
+ *
+ * Excel Column Structure:
+ * A = Key (translation key identifier)
+ * B = Description/Context
+ * C = Standard/English (source text)
+ * D-I = Other languages (ES, FR, PT, IT, DE, TR)
+ * J = NL/Dutch (our target translation)
+ * K = CA/Catalan
+ *
  * @returns {string} CSV header row
  */
 function createCSVHeader() {
   return [
     'RowNumber',
-    'SheetName', 
+    'SheetName',
     'Context',
     'Key',
     'Utterer',
@@ -152,13 +161,20 @@ function processExcelToCSV(filePath) {
         const row = jsonData[i];
         if (!row || row.length === 0) continue;
         
+        // Excel Column Structure:
+        // A (row[0]) = Key (translation key identifier like "SAY.Sign_...")
+        // B (row[1]) = Description/Context
+        // C (row[2]) = English (source text)
+        // D-I (row[3-8]) = ES, FR, PT, IT, DE, TR
+        // J (row[9]) = NL/Dutch (target translation)
+        // K (row[10]) = CA/Catalan (not used)
         const entry = {
           rowNumber: i + 1,
-          utterer: row[0] ? row[0].toString().trim() : '',
-          context: row[1] ? row[1].toString().trim() : '',
-          sourceEnglish: row[2] ? row[2].toString().trim() : '',
-          translatedDutch: row[9] ? row[9].toString().trim() : '', // Column J
-          key: row[10] ? row[10].toString().trim() : '' // Column K if exists
+          key: row[0] ? row[0].toString().trim() : '',           // Column A: Key
+          context: row[1] ? row[1].toString().trim() : '',       // Column B: Description
+          sourceEnglish: row[2] ? row[2].toString().trim() : '', // Column C: English
+          translatedDutch: row[9] ? row[9].toString().trim() : '', // Column J: Dutch
+          utterer: '' // We don't have a separate utterer column; key serves this purpose
         };
         
         // Only include rows with source text

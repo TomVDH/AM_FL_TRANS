@@ -1,64 +1,88 @@
 {
   "fileName": "Translation Checklist",
-  "processedAt": "2025-08-03T15:55:23.093Z",
+  "processedAt": "2025-12-29T22:52:04.205Z",
   "sheets": [
     {
       "sheetName": "Schedule",
       "entries": [
         {
           "rowNumber": 10,
+          "key": "45838",
           "utterer": "45838",
           "context": "CA-E1 [ML] - 11am PST",
           "sourceEnglish": "TR-E3 [ML] - 10am PST",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 23,
-          "utterer": "45887",
-          "context": "KO/JP font updates",
-          "sourceEnglish": "KO-E4",
-          "translatedDutch": ""
-        },
-        {
-          "rowNumber": 25,
-          "utterer": "45894",
-          "context": "KO/JP font updates",
-          "sourceEnglish": "KO-E5",
-          "translatedDutch": ""
-        },
-        {
           "rowNumber": 27,
+          "key": "45901",
           "utterer": "45901",
           "context": "KO/JP font updates",
           "sourceEnglish": "CA-E6",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 30,
-          "utterer": "45908",
-          "context": "KO/JP font updates",
-          "sourceEnglish": "CA-E7 + E8",
+          "rowNumber": 31,
+          "key": "",
+          "utterer": "",
+          "context": "",
+          "sourceEnglish": "KO-E6 + E7 @ 11h ET (PB in Ottawa)",
           "translatedDutch": ""
         },
         {
           "rowNumber": 33,
+          "key": "45922",
           "utterer": "45922",
           "context": "",
           "sourceEnglish": "PT-Stability Playthrough",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 35,
-          "utterer": "45936",
+          "rowNumber": 34,
+          "key": "45929",
+          "utterer": "45929",
           "context": "",
           "sourceEnglish": "CA-E9 + E10",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 36,
+          "rowNumber": 35,
+          "key": "45936",
+          "utterer": "45936",
+          "context": "",
+          "sourceEnglish": "KO-Review",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 37,
+          "key": "45943",
           "utterer": "45943",
           "context": "",
           "sourceEnglish": "CA-E0 and animation checks",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 38,
+          "key": "45950",
+          "utterer": "45950",
+          "context": "KO-E10 + 0",
+          "sourceEnglish": "KO-Review",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 45,
+          "key": "45999",
+          "utterer": "45999",
+          "context": "NL-E5 - TBD",
+          "sourceEnglish": "NL-E6 - TBD",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 46,
+          "key": "46006",
+          "utterer": "46006",
+          "context": "NL-E7/8 - TBD",
+          "sourceEnglish": "NL-E9 - TBD",
           "translatedDutch": ""
         }
       ]
@@ -68,6 +92,7 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "All",
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
           "sourceEnglish": "x",
@@ -75,6 +100,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "All",
           "utterer": "All",
           "context": "World Building Meeting 2: Make Decisions on Names, etc. (They can change!)",
           "sourceEnglish": "x",
@@ -82,6 +108,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "Test translation of E1 Stable 1F + E1 Farm",
           "sourceEnglish": "x",
@@ -89,13 +116,31 @@
         },
         {
           "rowNumber": 5,
+          "key": "All",
           "utterer": "All",
           "context": "Review Test Translation",
           "sourceEnglish": "x",
           "translatedDutch": ""
         },
         {
+          "rowNumber": 6,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E0",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 7,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
           "rowNumber": 8,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "E1",
           "sourceEnglish": "x",
@@ -103,6 +148,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "All",
           "utterer": "All",
           "context": "Review",
           "sourceEnglish": "x",
@@ -110,6 +156,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "E2",
           "sourceEnglish": "x",
@@ -117,6 +164,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "All",
           "utterer": "All",
           "context": "Review",
           "sourceEnglish": "x",
@@ -124,6 +172,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "E3",
           "sourceEnglish": "x",
@@ -131,6 +180,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "All",
           "utterer": "All",
           "context": "Review",
           "sourceEnglish": "x",
@@ -138,6 +188,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "E4",
           "sourceEnglish": "x",
@@ -145,6 +196,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "All",
           "utterer": "All",
           "context": "Review",
           "sourceEnglish": "x",
@@ -152,6 +204,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "E5 (both)",
           "sourceEnglish": "x",
@@ -159,16 +212,191 @@
         },
         {
           "rowNumber": 17,
+          "key": "All",
           "utterer": "All",
           "context": "Review",
           "sourceEnglish": "x",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 51,
+          "rowNumber": 18,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E6",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 19,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 20,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E7",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 21,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 22,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E8",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 23,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 24,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E9",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 25,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 26,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E10",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 27,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 28,
+          "key": "Patrick",
+          "utterer": "Patrick",
+          "context": "Redraw/Animate all NonCSV elements",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 29,
+          "key": "Patrick",
+          "utterer": "Patrick",
+          "context": "E10 Words; Manual input, add all targeted GameObject, reposition all respawn colliders",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 30,
+          "key": "Patrick",
+          "utterer": "Patrick",
+          "context": "Add new Sprites/Animations to GameObjects",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 52,
+          "key": "Can we make a really long word for the song of ascension?",
           "utterer": "Can we make a really long word for the song of ascension?",
           "context": "",
           "sourceEnglish": "Eşekleştiremeyeceklerimizdenmişçesine",
+          "translatedDutch": ""
+        }
+      ]
+    },
+    {
+      "sheetName": "NL",
+      "entries": [
+        {
+          "rowNumber": 2,
+          "key": "All",
+          "utterer": "All",
+          "context": "World Building Meeting 1: Names, Tone, Humour",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 4,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "Test translation of E1 Stable 1F + E1 Farm",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 8,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E1",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 9,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 10,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E2",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 11,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 12,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E3",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 13,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
           "translatedDutch": ""
         }
       ]
@@ -178,6 +406,7 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "All",
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
           "sourceEnglish": "x",
@@ -185,6 +414,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "All",
           "utterer": "All",
           "context": "World Building Meeting 2: Make Decisions on Names, etc. (They can change!)",
           "sourceEnglish": "x",
@@ -192,6 +422,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "Test translation of E1 Stable 1F + E1 Farm",
           "sourceEnglish": "x",
@@ -199,6 +430,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "All",
           "utterer": "All",
           "context": "Review Test Translation",
           "sourceEnglish": "x",
@@ -206,6 +438,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "E1",
           "sourceEnglish": "x",
@@ -213,6 +446,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "All",
           "utterer": "All",
           "context": "Review",
           "sourceEnglish": "x",
@@ -220,6 +454,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "E2",
           "sourceEnglish": "x",
@@ -227,6 +462,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "All",
           "utterer": "All",
           "context": "Review",
           "sourceEnglish": "x",
@@ -234,6 +470,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "E3",
           "sourceEnglish": "x",
@@ -241,6 +478,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "All",
           "utterer": "All",
           "context": "Review",
           "sourceEnglish": "x",
@@ -253,6 +491,7 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "All",
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
           "sourceEnglish": "x",
@@ -260,6 +499,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "Translator",
           "utterer": "Translator",
           "context": "Test translation of E1 Stable 1F + E1 Farm",
           "sourceEnglish": "x",
@@ -267,27 +507,73 @@
         },
         {
           "rowNumber": 5,
+          "key": "All",
           "utterer": "All",
           "context": "Review Test Translation",
           "sourceEnglish": "x",
           "translatedDutch": ""
-        }
-      ]
-    },
-    {
-      "sheetName": "NL",
-      "entries": [
+        },
         {
-          "rowNumber": 2,
-          "utterer": "All",
-          "context": "World Building Meeting 1: Names, Tone, Humour",
+          "rowNumber": 8,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E1",
           "sourceEnglish": "x",
           "translatedDutch": ""
         },
         {
-          "rowNumber": 4,
+          "rowNumber": 9,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 10,
+          "key": "Translator",
           "utterer": "Translator",
-          "context": "Test translation of E1 Stable 1F + E1 Farm",
+          "context": "E2",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 11,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 12,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E3",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 13,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 14,
+          "key": "Translator",
+          "utterer": "Translator",
+          "context": "E4",
+          "sourceEnglish": "x",
+          "translatedDutch": ""
+        },
+        {
+          "rowNumber": 15,
+          "key": "All",
+          "utterer": "All",
+          "context": "Review",
           "sourceEnglish": "x",
           "translatedDutch": ""
         }
@@ -298,6 +584,7 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "All",
           "utterer": "All",
           "context": "World Building Meeting 1: Names, Tone, Humour",
           "sourceEnglish": "x",

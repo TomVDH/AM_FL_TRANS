@@ -1462,50 +1462,8 @@ const TranslationHelper: React.FC = () => {
                           <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black dark:from-gray-200 dark:via-gray-100 dark:to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
                         </button>
 
-                        {/* XLSX Translation Suggestions */}
-                        {xlsxData && (() => {
-                          const matches = findXlsxMatchesWrapper(sourceTexts[currentIndex] || '');
-                          if (matches.length > 0) {
-                            const sortedMatches = matches.sort((a, b) => {
-                              const text = sourceTexts[currentIndex] || '';
-                              const aIsExact = a.sourceEnglish.toLowerCase() === text.toLowerCase();
-                              const bIsExact = b.sourceEnglish.toLowerCase() === text.toLowerCase();
-
-                              if (aIsExact && !bIsExact) return -1;
-                              if (!aIsExact && bIsExact) return 1;
-
-                              return b.sourceEnglish.length - a.sourceEnglish.length;
-                            });
-
-                            const firstMatch = sortedMatches[0];
-                            return (
-                              <div className="flex flex-wrap gap-2 justify-end ml-4" style={{ maxWidth: '50%' }}>
-                                {/* Translated Dutch Suggestion */}
-                                {firstMatch.translatedDutch && firstMatch.translatedDutch.trim() !== '' && (
-                                  <button
-                                    onClick={() => insertTranslatedSuggestion(firstMatch.translatedDutch)}
-                                    className="px-3 py-1 text-xs bg-green-100 dark:bg-green-800 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-600 hover:bg-green-200 dark:hover:bg-green-700 transition-colors duration-200 font-medium whitespace-nowrap"
-                                    style={{ borderRadius: '3px' }}
-                                    title={`Use Dutch translation: ${firstMatch.translatedDutch}`}
-                                  >
-                                    {firstMatch.translatedDutch}
-                                  </button>
-                                )}
-
-                                {/* Placeholder Button */}
-                                <button
-                                  onClick={() => insertPlaceholder(firstMatch.sourceEnglish)}
-                                  className="px-3 py-1 text-xs bg-orange-100 dark:bg-orange-800 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-600 hover:bg-orange-200 dark:hover:bg-orange-700 transition-colors duration-200 font-medium whitespace-nowrap"
-                                  style={{ borderRadius: '3px' }}
-                                  title={`Use placeholder: (${firstMatch.sourceEnglish})`}
-                                >
-                                  Placeholder
-                                </button>
-                              </div>
-                            );
-                          }
-                          return null;
-                        })()}
+                        {/* XLSX Translation Suggestions - DISABLED per user request */}
+                        {/* Suggestions are now only accessible via Reference Tools panel */}
                       </div>
                     </div>
 

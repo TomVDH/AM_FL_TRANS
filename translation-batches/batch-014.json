@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 12,
+    "rowNumber": 14,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.201.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.201.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "The Revolution is coming."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 13,
+    "rowNumber": 15,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.232.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.232.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "And when it arrives, I hope you will be part of it."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 14,
+    "rowNumber": 16,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.241.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.241.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "We can't leave this work to the Gods."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 15,
+    "rowNumber": 17,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.203.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.203.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "We must bear the burden of History and Progress together."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 16,
+    "rowNumber": 18,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.198.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.198.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "We should hurry."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 17,
+    "rowNumber": 19,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.206.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.206.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "There are Humans coming down the road."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 18,
+    "rowNumber": 20,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.205.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.205.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "The next Farm is a day's walk away."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 19,
+    "rowNumber": 21,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.207.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.207.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "We've told them our story. It's up to them now."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 20,
+    "rowNumber": 22,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.128.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.128.Cole-Machine",
+    "context": "Final line of asses.masses.",
+    "sourceEnglish": "Do you think they'll join us?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 21,
+    "rowNumber": 23,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.165.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.165.Sturdy Ass",
+    "context": "Foal track, if Prophet.",
+    "sourceEnglish": "Comrades, are you listening?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 22,
+    "rowNumber": 24,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.209.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.209.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "It took me a long time to see that I could have a role to play."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 23,
+    "rowNumber": 25,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.210.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.210.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "All animals deserve to be free."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 24,
+    "rowNumber": 26,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.211.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.211.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "To live a life that is just."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 25,
+    "rowNumber": 27,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.242.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.242.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "The Revolution will take time."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 26,
+    "rowNumber": 28,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.244.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.244.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "But when it comes, I hope you will be part of it."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 27,
+    "rowNumber": 29,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.212.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.212.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "We can't leave this work to the Gods."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 28,
+    "rowNumber": 30,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.213.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.213.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "We must all bear the burden of History and Progress together."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 29,
+    "rowNumber": 31,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.43.{$NewName}",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.43.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Mother—I see a Human coming! Let's go!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 30,
+    "rowNumber": 32,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.44.{$NewName}",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.44.{$NewName}",
+    "context": "",
+    "sourceEnglish": "UGH! This rain is so not good for my metal."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 31,
+    "rowNumber": 33,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.45.{$NewName}",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.45.{$NewName}",
+    "context": "",
+    "sourceEnglish": "The next Farm is a whole day's walk away!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 32,
+    "rowNumber": 34,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.117.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.117.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "Thank you, Comrades."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 33,
+    "rowNumber": 35,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.118.Sturdy Ass",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.118.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "Until we meet again."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Epilogue_localization",
+    "entryIndex": 34,
+    "rowNumber": 36,
+    "key": "SAY.Flowchart:Dialog_TheLongGame.133.{$NewName}",
+    "utterer": "SAY.Flowchart:Dialog_TheLongGame.133.{$NewName}",
+    "context": "Final line of asses.masses.",
+    "sourceEnglish": "Do you think they'll join us?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 0,
+    "rowNumber": 2,
+    "key": "WRITE.Dialog:Localizer.1",
+    "utterer": "WRITE.Dialog:Localizer.1",
+    "context": "",
+    "sourceEnglish": "Thank you for playing asses.masses"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 1,
+    "rowNumber": 3,
+    "key": "WRITE.Dialog:Localizer.42",
+    "utterer": "WRITE.Dialog:Localizer.42",
+    "context": "",
+    "sourceEnglish": "a game by Patrick Blenkarn and Milton Lim"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 2,
+    "rowNumber": 4,
+    "key": "WRITE.Dialog:Localizer.43",
+    "utterer": "WRITE.Dialog:Localizer.43",
+    "context": "",
+    "sourceEnglish": "concept, direction, design"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 3,
+    "rowNumber": 5,
+    "key": "WRITE.Dialog:Localizer.44",
+    "utterer": "WRITE.Dialog:Localizer.44",
+    "context": "",
+    "sourceEnglish": "dramaturgy"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 4,
+    "rowNumber": 6,
+    "key": "WRITE.Dialog:Localizer.45",
+    "utterer": "WRITE.Dialog:Localizer.45",
+    "context": "",
+    "sourceEnglish": "text"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 5,
+    "rowNumber": 7,
+    "key": "WRITE.Dialog:Localizer.51",
+    "utterer": "WRITE.Dialog:Localizer.51",
+    "context": "",
+    "sourceEnglish": "programming"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 6,
+    "rowNumber": 8,
+    "key": "WRITE.Dialog:Localizer.52",
+    "utterer": "WRITE.Dialog:Localizer.52",
+    "context": "",
+    "sourceEnglish": "sound design"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 7,
+    "rowNumber": 9,
+    "key": "WRITE.Dialog:Localizer.53",
+    "utterer": "WRITE.Dialog:Localizer.53",
+    "context": "",
+    "sourceEnglish": "original music and audio implementation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 8,
+    "rowNumber": 10,
+    "key": "WRITE.Dialog:Localizer.54",
+    "utterer": "WRITE.Dialog:Localizer.54",
+    "context": "",
+    "sourceEnglish": "pixel art and 2D animation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 9,
+    "rowNumber": 11,
+    "key": "WRITE.Dialog:Localizer.55",
+    "utterer": "WRITE.Dialog:Localizer.55",
+    "context": "",
+    "sourceEnglish": "3D environments and visual effects"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 10,
+    "rowNumber": 12,
+    "key": "WRITE.Dialog:Localizer.56",
+    "utterer": "WRITE.Dialog:Localizer.56",
+    "context": "",
+    "sourceEnglish": "additional 3D animations and rigging"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 11,
+    "rowNumber": 13,
+    "key": "WRITE.Dialog:Localizer.57",
+    "utterer": "WRITE.Dialog:Localizer.57",
+    "context": "",
+    "sourceEnglish": "video"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 12,
+    "rowNumber": 14,
+    "key": "WRITE.Dialog:Localizer.143",
+    "utterer": "WRITE.Dialog:Localizer.143",
+    "context": "",
+    "sourceEnglish": "touring producer"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 13,
+    "rowNumber": 15,
+    "key": "WRITE.Dialog:Localizer.153",
+    "utterer": "WRITE.Dialog:Localizer.153",
+    "context": "",
+    "sourceEnglish": "TRANSLATORS"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 14,
+    "rowNumber": 16,
+    "key": "WRITE.Dialog:Localizer.63",
+    "utterer": "WRITE.Dialog:Localizer.63",
+    "context": "",
+    "sourceEnglish": "Spanish translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 15,
+    "rowNumber": 17,
+    "key": "WRITE.Dialog:Localizer.145",
+    "utterer": "WRITE.Dialog:Localizer.145",
+    "context": "",
+    "sourceEnglish": "French translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 16,
+    "rowNumber": 18,
+    "key": "WRITE.Dialog:Localizer.144",
+    "utterer": "WRITE.Dialog:Localizer.144",
+    "context": "",
+    "sourceEnglish": "Portuguese translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 17,
+    "rowNumber": 19,
+    "key": "WRITE.Dialog:Localizer.146",
+    "utterer": "WRITE.Dialog:Localizer.146",
+    "context": "",
+    "sourceEnglish": "Italian translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 18,
+    "rowNumber": 20,
+    "key": "WRITE.Dialog:Localizer.147",
+    "utterer": "WRITE.Dialog:Localizer.147",
+    "context": "",
+    "sourceEnglish": "German translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 19,
+    "rowNumber": 21,
+    "key": "WRITE.Dialog:Localizer.148",
+    "utterer": "WRITE.Dialog:Localizer.148",
+    "context": "",
+    "sourceEnglish": "Turkish translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 20,
+    "rowNumber": 22,
+    "key": "WRITE.Dialog:Localizer.149",
+    "utterer": "WRITE.Dialog:Localizer.149",
+    "context": "",
+    "sourceEnglish": "Catalan translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 21,
+    "rowNumber": 23,
+    "key": "WRITE.Dialog:Localizer.150",
+    "utterer": "WRITE.Dialog:Localizer.150",
+    "context": "",
+    "sourceEnglish": "Korean translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 22,
+    "rowNumber": 24,
+    "key": "WRITE.Dialog:Localizer.151",
+    "utterer": "WRITE.Dialog:Localizer.151",
+    "context": "",
+    "sourceEnglish": "Flemish translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 23,
+    "rowNumber": 25,
+    "key": "WRITE.Dialog:Localizer.152",
+    "utterer": "WRITE.Dialog:Localizer.152",
+    "context": "",
+    "sourceEnglish": "Japanese translation"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "WRITE.Dialog:Localizer.59",
+    "utterer": "WRITE.Dialog:Localizer.59",
+    "context": "",
+    "sourceEnglish": "THE FANNYSIDE ASSES"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "WRITE.Dialog:Localizer.60",
+    "utterer": "WRITE.Dialog:Localizer.60",
+    "context": "",
+    "sourceEnglish": "Trusty Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "WRITE.Dialog:Localizer.61",
+    "utterer": "WRITE.Dialog:Localizer.61",
+    "context": "",
+    "sourceEnglish": "Old Ass"
+  }
+]

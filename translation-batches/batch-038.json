@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 35,
+    "rowNumber": 38,
+    "key": "SAY.Dialog:AssOfTheMonth.82.Wedgie",
+    "utterer": "SAY.Dialog:AssOfTheMonth.82.Wedgie",
+    "context": "",
+    "sourceEnglish": "Come on! Let's catch 'em all!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 36,
+    "rowNumber": 39,
+    "key": "SAY.Dialog:AssOfTheMonth.83.Melvin",
+    "utterer": "SAY.Dialog:AssOfTheMonth.83.Melvin",
+    "context": "",
+    "sourceEnglish": "Hold on! I need 15 seconds to load my tranquilizer gun!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 37,
+    "rowNumber": 40,
+    "key": "SAY.Dialog:AssOfTheMonth.85.Smart Ass",
+    "utterer": "SAY.Dialog:AssOfTheMonth.85.Smart Ass",
+    "context": "",
+    "sourceEnglish": "RUN!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 38,
+    "rowNumber": 41,
+    "key": "SAY.Dialog:AssOfTheMonth.96.Kick Ass",
+    "utterer": "SAY.Dialog:AssOfTheMonth.96.Kick Ass",
+    "context": "",
+    "sourceEnglish": "HIDE!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 39,
+    "rowNumber": 42,
+    "key": "SAY.Dialog:AssOfTheMonth.89.Big Ass",
+    "utterer": "SAY.Dialog:AssOfTheMonth.89.Big Ass",
+    "context": "The donkeys run into the pen and hide.",
+    "sourceEnglish": "SLOW ASS COME ON!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 40,
+    "rowNumber": 43,
+    "key": "SAY.Dialog:CaptureInterjections.1.Kick Ass",
+    "utterer": "SAY.Dialog:CaptureInterjections.1.Kick Ass",
+    "context": "Inside the pen, the Asses attempt to hide.",
+    "sourceEnglish": "Everyone! DON'T MOVE and DON'T MAKE A SOUND!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 41,
+    "rowNumber": 44,
+    "key": "SAY.Dialog:CaptureInterjections.2.Melvin",
+    "utterer": "SAY.Dialog:CaptureInterjections.2.Melvin",
+    "context": "",
+    "sourceEnglish": "What's that sound?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 42,
+    "rowNumber": 45,
+    "key": "SAY.Dialog:CaptureInterjections.5.Smart Ass",
+    "utterer": "SAY.Dialog:CaptureInterjections.5.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Idiots! Hiding behind trees and rocks! They'll never find me! Ha!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 43,
+    "rowNumber": 46,
+    "key": "SAY.Dialog:PostKnockOut.2.Slow Ass",
+    "utterer": "SAY.Dialog:PostKnockOut.2.Slow Ass",
+    "context": "Branch 2.1. If Slow Ass is knocked out.",
+    "sourceEnglish": "Huh?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 44,
+    "rowNumber": 47,
+    "key": "SAY.Dialog:PostKnockOut.18.Slow Ass",
+    "utterer": "SAY.Dialog:PostKnockOut.18.Slow Ass",
+    "context": "",
+    "sourceEnglish": "What hap-p-p—?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 45,
+    "rowNumber": 48,
+    "key": "SAY.Dialog:PostKnockOut.19.Slow Ass",
+    "utterer": "SAY.Dialog:PostKnockOut.19.Slow Ass",
+    "context": "",
+    "sourceEnglish": "OH NO!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 46,
+    "rowNumber": 49,
+    "key": "SAY.Dialog:PostKnockOut.21.Slow Ass",
+    "utterer": "SAY.Dialog:PostKnockOut.21.Slow Ass",
+    "context": "",
+    "sourceEnglish": "It's u-p-p-p to ME to rescue them?!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 47,
+    "rowNumber": 50,
+    "key": "SAY.Dialog:PostKnockOut.20.Slow Ass",
+    "utterer": "SAY.Dialog:PostKnockOut.20.Slow Ass",
+    "context": "End of Episode.",
+    "sourceEnglish": "Oh b-b-boy...."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 48,
+    "rowNumber": 51,
+    "key": "SAY.Dialog:TeamRocketEnd.2.Melvin",
+    "utterer": "SAY.Dialog:TeamRocketEnd.2.Melvin",
+    "context": "Branch 2.2. All the Asses are captured, except for Slow Ass.",
+    "sourceEnglish": "The Truck's full! Let's get back to the Factory and get paid."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 49,
+    "rowNumber": 52,
+    "key": "SAY.Dialog:TeamRocketEnd.5.Wedgie",
+    "utterer": "SAY.Dialog:TeamRocketEnd.5.Wedgie",
+    "context": "",
+    "sourceEnglish": "Wasn't there another one?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 50,
+    "rowNumber": 53,
+    "key": "SAY.Dialog:TeamRocketEnd.11.Melvin",
+    "utterer": "SAY.Dialog:TeamRocketEnd.11.Melvin",
+    "context": "",
+    "sourceEnglish": "Who cares. The big one is worth at least two. Now hurry!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 51,
+    "rowNumber": 54,
+    "key": "SAY.Dialog:PostHiding.19.Slow Ass",
+    "utterer": "SAY.Dialog:PostHiding.19.Slow Ass",
+    "context": "Slow Ass successfully stays hidden.",
+    "sourceEnglish": "OH NO!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 52,
+    "rowNumber": 55,
+    "key": "SAY.Dialog:PostHiding.21.Slow Ass",
+    "utterer": "SAY.Dialog:PostHiding.21.Slow Ass",
+    "context": "",
+    "sourceEnglish": "It's u-p-p-p to ME to rescue the others?!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooCapture_localization",
+    "entryIndex": 53,
+    "rowNumber": 56,
+    "key": "SAY.Dialog:PostHiding.22.Slow Ass",
+    "utterer": "SAY.Dialog:PostHiding.22.Slow Ass",
+    "context": "End of Episode.",
+    "sourceEnglish": "But I'll run out of ointment..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_EpisodeTitle_localization",
+    "entryIndex": 0,
+    "rowNumber": 2,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "",
+    "sourceEnglish": "EPISODE SIX"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_EpisodeTitle_localization",
+    "entryIndex": 1,
+    "rowNumber": 3,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "",
+    "sourceEnglish": "THE DREAM"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_EpisodeTitle_localization",
+    "entryIndex": 2,
+    "rowNumber": 4,
+    "key": "WRITE.Dialog:Localizer.8",
+    "utterer": "WRITE.Dialog:Localizer.8",
+    "context": "",
+    "sourceEnglish": "Press X to Begin"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:Jenny_Intro.20.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Intro.20.Miner Jenny",
+    "context": "Hard Ass wakes up to a hit on the head via Jenny.",
+    "sourceEnglish": "No sleeping on the job you useless donkey!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:Jenny_Intro.37.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Intro.37.Miner Jenny",
+    "context": "",
+    "sourceEnglish": "I'm working overtime too—you don't see ME nodding off."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Jenny_Intro.43.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Intro.43.Miner Jenny",
+    "context": "",
+    "sourceEnglish": "You're with me on Level 300 today!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Jenny_Intro.48.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Intro.48.Miner Jenny",
+    "context": "",
+    "sourceEnglish": "At least I don't have to be with that lazy donkey."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Jenny_Intro.49.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Intro.49.Miner Jenny",
+    "context": "Jenny leaves and Hard Ass is free to roam around the Mines and talk to the others.",
+    "sourceEnglish": "I'm done wasting my time on slackers!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:Kick_Normal.20.Kick Ass",
+    "utterer": "SAY.Dialog:Kick_Normal.20.Kick Ass",
+    "context": "Start NPC dialogue.",
+    "sourceEnglish": "COMRADE!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:Kick_Normal.34.Kick Ass",
+    "utterer": "SAY.Dialog:Kick_Normal.34.Kick Ass",
+    "context": "",
+    "sourceEnglish": "Thanks for working with Jenny today."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:Kick_Normal.33.Kick Ass",
+    "utterer": "SAY.Dialog:Kick_Normal.33.Kick Ass",
+    "context": "",
+    "sourceEnglish": "Lazy could NOT handle another shift with HER."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:Kick_Normal.35.Kick Ass",
+    "utterer": "SAY.Dialog:Kick_Normal.35.Kick Ass",
+    "context": "End NPC dialogue.",
+    "sourceEnglish": "Sick and I just finished moving the last piece of that new Boring-Machine—and @#$%&! it's HEAVY."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:Kick_Normal.21.Kick Ass",
+    "utterer": "SAY.Dialog:Kick_Normal.21.Kick Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "No way that Boring-Machine can BLAST through a day of work LIKE WE CAN."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:Sick_Normal.20.Sick Ass",
+    "utterer": "SAY.Dialog:Sick_Normal.20.Sick Ass",
+    "context": "NPC Dialogue (single line). Repeater line.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:Butte_Normal.20.Mr. Butte",
+    "utterer": "SAY.Dialog:Butte_Normal.20.Mr. Butte",
+    "context": "Start NPC dialogue.",
+    "sourceEnglish": "My favourite donkey!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:Butte_Normal.36.Mr. Butte",
+    "utterer": "SAY.Dialog:Butte_Normal.36.Mr. Butte",
+    "context": "",
+    "sourceEnglish": "Are you ready for the big day?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog:Butte_Normal.35.Mr. Butte",
+    "utterer": "SAY.Dialog:Butte_Normal.35.Mr. Butte",
+    "context": "",
+    "sourceEnglish": "We're going to get the Boring Machine up and running, and it'll save our Mine from going under."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "SAY.Dialog:Butte_Normal.34.Mr. Butte",
+    "utterer": "SAY.Dialog:Butte_Normal.34.Mr. Butte",
+    "context": "",
+    "sourceEnglish": "Once I recoup the money I spent on the Machine, I'll send my son, Cole, to that fancy university he got into..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "SAY.Dialog:Butte_Normal.33.Mr. Butte",
+    "utterer": "SAY.Dialog:Butte_Normal.33.Mr. Butte",
+    "context": "End NPC dialogue.",
+    "sourceEnglish": "And all of my workers will be taken care of too!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "SAY.Dialog:Butte_Normal.21.Mr. Butte",
+    "utterer": "SAY.Dialog:Butte_Normal.21.Mr. Butte",
+    "context": "Repeater line.",
+    "sourceEnglish": "This Machine will fix everything... I know it!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "SAY.Dialog:Lazy.1.Lazy Ass",
+    "utterer": "SAY.Dialog:Lazy.1.Lazy Ass",
+    "context": "Start NPC dialogue.",
+    "sourceEnglish": "Heyyyy Hard! Thanks for switching shifts with me."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "SAY.Dialog:Lazy.8.Lazy Ass",
+    "utterer": "SAY.Dialog:Lazy.8.Lazy Ass",
+    "context": "",
+    "sourceEnglish": "I love 'working' with Cole Butte."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "SAY.Dialog:Lazy.9.Lazy Ass",
+    "utterer": "SAY.Dialog:Lazy.9.Lazy Ass",
+    "context": "",
+    "sourceEnglish": "We sit together on Level 300 while he talks about Robots and smokes."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "SAY.Dialog:Lazy.10.Lazy Ass",
+    "utterer": "SAY.Dialog:Lazy.10.Lazy Ass",
+    "context": "End NPC dialogue. Lazy and Cole leave.",
+    "sourceEnglish": "Boredom is freedom, ya know?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "SAY.Dialog:Sad_Normal.36.Sad Ass",
+    "utterer": "SAY.Dialog:Sad_Normal.36.Sad Ass",
+    "context": "Start NPC dialogue.",
+    "sourceEnglish": "Hullo Comrade..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "SAY.Dialog:Sad_Normal.20.Sad Ass",
+    "utterer": "SAY.Dialog:Sad_Normal.20.Sad Ass",
+    "context": "",
+    "sourceEnglish": "Thanks again for taking Lazy's shift today."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "SAY.Dialog:Sad_Normal.35.Sad Ass",
+    "utterer": "SAY.Dialog:Sad_Normal.35.Sad Ass",
+    "context": "End NPC dialogue.",
+    "sourceEnglish": "I love seeing her when she is happy."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "SAY.Dialog:Sad_Normal.21.Sad Ass",
+    "utterer": "SAY.Dialog:Sad_Normal.21.Sad Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "Who could say no to Lazy's beautiful grey eyes?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "SAY.Dialog:Jenny_Normal.20.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Normal.20.Miner Jenny",
+    "context": "Start NPC dialogue.",
+    "sourceEnglish": "WHAT TOOK YOU SO LONG YOU PIECE OF SHIT?!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "SAY.Dialog:Jenny_Normal.37.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Normal.37.Miner Jenny",
+    "context": "",
+    "sourceEnglish": "I apologize donkey... I'm emotional."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 27,
+    "rowNumber": 30,
+    "key": "SAY.Dialog:Jenny_Normal.40.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Normal.40.Miner Jenny",
+    "context": "",
+    "sourceEnglish": "I dumped Cole yesterday."
+  }
+]

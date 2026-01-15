@@ -1,6 +1,15 @@
-import { useState, useCallback, useRef, useEffect } from 'react';
+import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react';
 import * as XLSX from 'xlsx';
 import { toast } from 'sonner';
+
+// Filter options for entry navigation
+export type FilterStatus = 'all' | 'completed' | 'blank' | 'modified';
+
+export interface FilterOptions {
+  status: FilterStatus;
+  speaker?: string;
+  searchTerm?: string;
+}
 
 export interface TranslationState {
   // Core translation state
@@ -10,6 +19,11 @@ export interface TranslationState {
   currentIndex: number;
   currentTranslation: string;
   isStarted: boolean;
+
+  // Filtering state
+  filterOptions: FilterOptions;
+  filteredIndices: number[];
+  filterStats: { all: number; completed: number; blank: number; modified: number };
   
   // Excel processing state
   cellStart: string;
@@ -89,7 +103,22 @@ export interface TranslationState {
   exportTranslations: () => void;
   jumpToRow: (rowNumber: number) => void;
   resetOutputDisplay: () => void;
+  resetFromFile: () => Promise<void>;
   outputKey: number;
+
+  // Filtering functions
+  setFilterOptions: (options: FilterOptions) => void;
+  setFilterStatus: (status: FilterStatus) => void;
+  navigateToNextFiltered: () => void;
+  navigateToPrevFiltered: () => void;
+
+  // LIVE EDIT mode
+  liveEditMode: boolean;
+  syncStatus: 'idle' | 'syncing' | 'synced' | 'error';
+  lastSyncTime: Date | null;
+  setLiveEditMode: (mode: boolean) => void;
+  toggleLiveEditMode: () => void;
+  syncCurrentTranslation: () => Promise<void>;
 }
 
 /**
@@ -137,6 +166,14 @@ export const useTranslationState = (): TranslationState => {
   const [loadedFileType, setLoadedFileType] = useState<'excel' | 'json' | 'csv' | 'manual' | ''>('');
   const [originalTranslations, setOriginalTranslations] = useState<string[]>([]); // Track original values for persistence logic
 
+  // ========== Filtering State ==========
+  const [filterOptions, setFilterOptions] = useState<FilterOptions>({ status: 'all' });
+
+  // ========== LIVE EDIT State ==========
+  const [liveEditMode, setLiveEditMode] = useState(false);
+  const [syncStatus, setSyncStatus] = useState<'idle' | 'syncing' | 'synced' | 'error'>('idle');
+  const [lastSyncTime, setLastSyncTime] = useState<Date | null>(null);
+
   // ========== Change Detection ==========
   // Compute whether the current entry has been modified from its original value
   const getCurrentOriginalValue = useCallback(() => {
@@ -153,6 +190,106 @@ export const useTranslationState = (): TranslationState => {
     // Compare the actual values
     return currentValue !== originalValue;
   }, [getCurrentOriginalValue, currentTranslation]);
+
+  // ========== Filtering Logic ==========
+  // Compute filter stats for the UI badges
+  const filterStats = useMemo(() => {
+    const all = translations.length;
+    const blank = translations.filter(t => t === '' || t === '[BLANK, REMOVE LATER]').length;
+    const completed = all - blank;
+    const modified = translations.filter((t, idx) => {
+      const original = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
+      const isBlank = t === '' || t === '[BLANK, REMOVE LATER]';
+      const wasBlank = original === '' || original === '[BLANK, REMOVE LATER]';
+      if (isBlank && wasBlank) return false;
+      return t !== original;
+    }).length;
+    return { all, completed, blank, modified };
+  }, [translations, originalTranslations]);
+
+  // Compute filtered indices based on filter options
+  const filteredIndices = useMemo(() => {
+    if (filterOptions.status === 'all' && !filterOptions.speaker && !filterOptions.searchTerm) {
+      return sourceTexts.map((_, i) => i);
+    }
+
+    return sourceTexts.map((source, idx) => {
+      const translation = translations[idx];
+      const original = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
+      const utterer = utterers[idx] || '';
+
+      // Status filter
+      if (filterOptions.status !== 'all') {
+        const isBlank = translation === '' || translation === '[BLANK, REMOVE LATER]';
+        const wasBlank = original === '' || original === '[BLANK, REMOVE LATER]';
+        const isModified = translation !== original && !(isBlank && wasBlank);
+
+        if (filterOptions.status === 'blank' && !isBlank) return -1;
+        if (filterOptions.status === 'completed' && isBlank) return -1;
+        if (filterOptions.status === 'modified' && !isModified) return -1;
+      }
+
+      // Speaker filter
+      if (filterOptions.speaker && !utterer.toLowerCase().includes(filterOptions.speaker.toLowerCase())) {
+        return -1;
+      }
+
+      // Search term filter (searches source text and translation)
+      if (filterOptions.searchTerm) {
+        const searchLower = filterOptions.searchTerm.toLowerCase();
+        const matchesSource = source.toLowerCase().includes(searchLower);
+        const matchesTranslation = translation.toLowerCase().includes(searchLower);
+        if (!matchesSource && !matchesTranslation) return -1;
+      }
+
+      return idx;
+    }).filter(idx => idx !== -1);
+  }, [sourceTexts, translations, originalTranslations, utterers, filterOptions]);
+
+  // Set filter status shorthand
+  const setFilterStatus = useCallback((status: FilterStatus) => {
+    setFilterOptions(prev => ({ ...prev, status }));
+  }, []);
+
+  // Navigate to next filtered entry
+  const navigateToNextFiltered = useCallback(() => {
+    if (filteredIndices.length === 0) return;
+
+    // Find the next filtered index after currentIndex
+    const currentPosInFiltered = filteredIndices.indexOf(currentIndex);
+    if (currentPosInFiltered === -1) {
+      // Current index not in filtered list, jump to first filtered entry
+      const nextIdx = filteredIndices[0];
+      setCurrentIndex(nextIdx);
+      setCurrentTranslation(translations[nextIdx] === '[BLANK, REMOVE LATER]' ? '' : translations[nextIdx] || '');
+    } else if (currentPosInFiltered < filteredIndices.length - 1) {
+      // Move to next filtered entry
+      const nextIdx = filteredIndices[currentPosInFiltered + 1];
+      setCurrentIndex(nextIdx);
+      setCurrentTranslation(translations[nextIdx] === '[BLANK, REMOVE LATER]' ? '' : translations[nextIdx] || '');
+    }
+    // If at last filtered entry, do nothing
+  }, [filteredIndices, currentIndex, translations]);
+
+  // Navigate to previous filtered entry
+  const navigateToPrevFiltered = useCallback(() => {
+    if (filteredIndices.length === 0) return;
+
+    // Find the previous filtered index before currentIndex
+    const currentPosInFiltered = filteredIndices.indexOf(currentIndex);
+    if (currentPosInFiltered === -1) {
+      // Current index not in filtered list, jump to last filtered entry
+      const prevIdx = filteredIndices[filteredIndices.length - 1];
+      setCurrentIndex(prevIdx);
+      setCurrentTranslation(translations[prevIdx] === '[BLANK, REMOVE LATER]' ? '' : translations[prevIdx] || '');
+    } else if (currentPosInFiltered > 0) {
+      // Move to previous filtered entry
+      const prevIdx = filteredIndices[currentPosInFiltered - 1];
+      setCurrentIndex(prevIdx);
+      setCurrentTranslation(translations[prevIdx] === '[BLANK, REMOVE LATER]' ? '' : translations[prevIdx] || '');
+    }
+    // If at first filtered entry, do nothing
+  }, [filteredIndices, currentIndex, translations]);
 
   // ========== Setup State ==========
   const [sourceColumn, setSourceColumn] = useState('C');
@@ -304,6 +441,33 @@ export const useTranslationState = (): TranslationState => {
       setIsLoadingExcel(false);
     }
   }, []);
+
+  /**
+   * Reset translations from the current Excel file
+   * Reloads the file from disk and reprocesses all data
+   */
+  const resetFromFile = useCallback(async () => {
+    if (!loadedFileName || loadedFileType !== 'excel') {
+      toast.error('No Excel file loaded');
+      return;
+    }
+
+    const modifiedCount = translations.filter((trans, idx) => {
+      const original = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
+      return trans !== original;
+    }).length;
+
+    if (modifiedCount > 0) {
+      const confirmed = window.confirm(
+        `You have ${modifiedCount} unsaved translation${modifiedCount > 1 ? 's' : ''}. Reset from file will discard all changes and reload from the Excel file. Continue?`
+      );
+      if (!confirmed) return;
+    }
+
+    // Reload the file
+    await handleExistingFileLoad(loadedFileName);
+    toast.success('Translations reset from file');
+  }, [loadedFileName, loadedFileType, translations, originalTranslations, handleExistingFileLoad]);
 
   /**
    * Process Excel data and extract source texts, utterers, and existing Dutch translations
@@ -609,7 +773,99 @@ export const useTranslationState = (): TranslationState => {
     // Force a complete re-render of the output component
     setOutputKey(prev => prev + 1);
   }, [sourceTexts.length]);
-  
+
+  // ========== LIVE EDIT Functions ==========
+
+  /**
+   * Toggle LIVE EDIT mode
+   */
+  const toggleLiveEditMode = useCallback(() => {
+    setLiveEditMode(prev => {
+      if (!prev) {
+        // Entering LIVE EDIT mode
+        setSyncStatus('idle');
+        toast.info('LIVE EDIT mode enabled - changes will sync to Excel');
+      } else {
+        // Exiting LIVE EDIT mode
+        toast.info('LIVE EDIT mode disabled');
+      }
+      return !prev;
+    });
+  }, []);
+
+  /**
+   * Sync current translation to Excel file
+   * Called when navigating (Previous/Submit) in LIVE EDIT mode
+   */
+  const syncCurrentTranslation = useCallback(async () => {
+    // Only sync if in LIVE EDIT mode and we have a file loaded
+    if (!liveEditMode) return;
+    if (!loadedFileName) {
+      toast.error('No file loaded for LIVE EDIT');
+      return;
+    }
+    if (loadedFileType !== 'excel') {
+      toast.error('LIVE EDIT only works with Excel files');
+      return;
+    }
+    if (!selectedSheet) {
+      toast.error('No sheet selected');
+      return;
+    }
+
+    // Check if current entry has changed
+    if (!hasCurrentEntryChanged()) {
+      // No changes to sync
+      return;
+    }
+
+    setSyncStatus('syncing');
+
+    try {
+      const cellRef = `J${startRow + currentIndex}`;
+      const response = await fetch('/api/xlsx-save', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          sourceFileName: loadedFileName,
+          sheetName: selectedSheet,
+          cellRef,
+          value: currentTranslation.trim()
+        })
+      });
+
+      const data = await response.json();
+
+      if (response.ok && data.success) {
+        // Update originalTranslations to reflect the saved state
+        const newOriginals = [...originalTranslations];
+        newOriginals[currentIndex] = currentTranslation.trim() || '[BLANK, REMOVE LATER]';
+        setOriginalTranslations(newOriginals);
+
+        setSyncStatus('synced');
+        setLastSyncTime(new Date());
+        toast.success(`Saved ${cellRef} to ${loadedFileName}`);
+      } else {
+        setSyncStatus('error');
+        toast.error(`Sync failed: ${data.error || 'Unknown error'}`);
+      }
+    } catch (error) {
+      setSyncStatus('error');
+      toast.error('Sync failed: Network error');
+      console.error('LIVE EDIT sync error:', error);
+    }
+  }, [
+    liveEditMode,
+    loadedFileName,
+    loadedFileType,
+    selectedSheet,
+    hasCurrentEntryChanged,
+    startRow,
+    currentIndex,
+    currentTranslation,
+    originalTranslations
+  ]);
+
   // Process Excel data when sheet, columns, or start row changes
   useEffect(() => {
     if (workbookData && selectedSheet) {
@@ -701,6 +957,24 @@ export const useTranslationState = (): TranslationState => {
     exportTranslations,
     jumpToRow,
     resetOutputDisplay,
+    resetFromFile,
     outputKey,
+
+    // Filtering
+    filterOptions,
+    filteredIndices,
+    filterStats,
+    setFilterOptions,
+    setFilterStatus,
+    navigateToNextFiltered,
+    navigateToPrevFiltered,
+
+    // LIVE EDIT
+    liveEditMode,
+    syncStatus,
+    lastSyncTime,
+    setLiveEditMode,
+    toggleLiveEditMode,
+    syncCurrentTranslation,
   };
 }; 

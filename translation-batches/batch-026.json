@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 209,
+    "rowNumber": 212,
+    "key": "SAY.Dialog:DJDopePreConcert.96.DJ Dope Ass",
+    "utterer": "SAY.Dialog:DJDopePreConcert.96.DJ Dope Ass",
+    "context": "Jump to line 213",
+    "sourceEnglish": "No? Oh my friend, it's best drug we got in the Astral Plane..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 210,
+    "rowNumber": 213,
+    "key": "SAY.Dialog:DJDopePreConcert.91.DJ Dope Ass",
+    "utterer": "SAY.Dialog:DJDopePreConcert.91.DJ Dope Ass",
+    "context": "Combine dialogue branches from lines 210 and 212",
+    "sourceEnglish": "I'm supposed to start my set soon and I REALLY can't play without that Purple Stuff."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 211,
+    "rowNumber": 214,
+    "key": "SAY.Dialog:DJDopePreConcert.92.DJ Dope Ass",
+    "utterer": "SAY.Dialog:DJDopePreConcert.92.DJ Dope Ass",
+    "context": "",
+    "sourceEnglish": "Help me out and bring me some, will you?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 212,
+    "rowNumber": 215,
+    "key": "SAY.Dialog:DJDopePreConcert.79.DJ Dope Ass",
+    "utterer": "SAY.Dialog:DJDopePreConcert.79.DJ Dope Ass",
+    "context": "Repeater lines if the Purple Stuff has not been picked up.",
+    "sourceEnglish": "Where's that Purple Stuff? I thought you were gonna get me that Purple Stuff?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 213,
+    "rowNumber": 216,
+    "key": "SAY.Dialog:DJDopePreConcert.98.DJ Dope Ass",
+    "utterer": "SAY.Dialog:DJDopePreConcert.98.DJ Dope Ass",
+    "context": "",
+    "sourceEnglish": "I REALLY need that Purple Stuff or I can't start my Concert!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 214,
+    "rowNumber": 217,
+    "key": "SAY.Dialog:ConcertStart.39.DJ Dope Ass",
+    "utterer": "SAY.Dialog:ConcertStart.39.DJ Dope Ass",
+    "context": "Sick returns to the DJ donkey: Dope Ass, with the Purple Stuff",
+    "sourceEnglish": "Booyah! I love that PURPLE STUFF!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 215,
+    "rowNumber": 218,
+    "key": "SAY.Dialog:ConcertStart.100.DJ Dope Ass",
+    "utterer": "SAY.Dialog:ConcertStart.100.DJ Dope Ass",
+    "context": "",
+    "sourceEnglish": "LET'S DO THIS!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 216,
+    "rowNumber": 219,
+    "key": "SAY.Dialog:ConcertStart.94.Tight Ass",
+    "utterer": "SAY.Dialog:ConcertStart.94.Tight Ass",
+    "context": "The camera moves over to the donkey guarding the Shithole. Tight Ass leaves his post and runs to the concert.",
+    "sourceEnglish": "It's starting! It's starting!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 217,
+    "rowNumber": 220,
+    "key": "SAY.Dialog:ConcertStart.71.DJ Dope Ass",
+    "utterer": "SAY.Dialog:ConcertStart.71.DJ Dope Ass",
+    "context": "The camera moves back to DJ Dope Ass.",
+    "sourceEnglish": "What's good my fellow ASSES!!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 218,
+    "rowNumber": 221,
+    "key": "SAY.Dialog:ConcertStart.72.DJ Dope Ass",
+    "utterer": "SAY.Dialog:ConcertStart.72.DJ Dope Ass",
+    "context": "",
+    "sourceEnglish": "Thanks for coming out tonight to my SET!!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 219,
+    "rowNumber": 222,
+    "key": "SAY.Dialog:ConcertStart.73.DJ Dope Ass",
+    "utterer": "SAY.Dialog:ConcertStart.73.DJ Dope Ass",
+    "context": "",
+    "sourceEnglish": "Whether you're a freakin' Newbie or you've been here for a thousand years, get ready to let LOOSE!!!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 220,
+    "rowNumber": 223,
+    "key": "SAY.Dialog:ConcertStart.75.DJ Dope Ass",
+    "utterer": "SAY.Dialog:ConcertStart.75.DJ Dope Ass",
+    "context": "",
+    "sourceEnglish": "Let me hear you say: Fuck Reassignment! I'm never going back!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 221,
+    "rowNumber": 224,
+    "key": "SAY.Dialog:ConcertStart.79.The Masses",
+    "utterer": "SAY.Dialog:ConcertStart.79.The Masses",
+    "context": "",
+    "sourceEnglish": "FUCK REASSIGNMENT! I'M NEVER GOING BACK!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 222,
+    "rowNumber": 225,
+    "key": "SAY.Dialog:ConcertStart.82.DJ Dope Ass",
+    "utterer": "SAY.Dialog:ConcertStart.82.DJ Dope Ass",
+    "context": "Energy explodes and donkeys party.",
+    "sourceEnglish": "BOOYAAAHH!!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 223,
+    "rowNumber": 226,
+    "key": "SAY.Dialog:Smelly.10.Smelly Ass",
+    "utterer": "SAY.Dialog:Smelly.10.Smelly Ass",
+    "context": "Sick meets the donkey on shit duty on the way through the Shithole: Smelly",
+    "sourceEnglish": "Hey, you, Newbie! Are you on Shit Duty too?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 224,
+    "rowNumber": 227,
+    "key": "SAY.Dialog:Smelly.20.Sick Ass",
+    "utterer": "SAY.Dialog:Smelly.20.Sick Ass",
+    "context": "Dialogue option 1.1. COUGH (YES)",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 225,
+    "rowNumber": 228,
+    "key": "SAY.Dialog:Smelly.21.Smelly Ass",
+    "utterer": "SAY.Dialog:Smelly.21.Smelly Ass",
+    "context": "",
+    "sourceEnglish": "Looks like we're both missing tonight's Concert then!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 226,
+    "rowNumber": 229,
+    "key": "SAY.Dialog:Smelly.28.Smelly Ass",
+    "utterer": "SAY.Dialog:Smelly.28.Smelly Ass",
+    "context": "",
+    "sourceEnglish": "It's a shame—I would love to see DJ Dope Ass perform live!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 227,
+    "rowNumber": 230,
+    "key": "SAY.Dialog:Smelly.22.Sick Ass",
+    "utterer": "SAY.Dialog:Smelly.22.Sick Ass",
+    "context": "Dialogue option 1.2. COUGH COUGH (NO)",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 228,
+    "rowNumber": 231,
+    "key": "SAY.Dialog:Smelly.23.Smelly Ass",
+    "utterer": "SAY.Dialog:Smelly.23.Smelly Ass",
+    "context": "",
+    "sourceEnglish": "Then what are you doing here? What about DJ Dope Ass's Concert?!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 229,
+    "rowNumber": 232,
+    "key": "SAY.Dialog:Smelly.12.Smelly Ass",
+    "utterer": "SAY.Dialog:Smelly.12.Smelly Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "*sigh* Nobody knows how much it takes to keep this place looking good."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 230,
+    "rowNumber": 233,
+    "key": "SAY.Dialog:Gamblers_End.11.Risky Ass",
+    "utterer": "SAY.Dialog:Gamblers_End.11.Risky Ass",
+    "context": "The camera moves over the terrain during the party and lands on The Gamblers, watching a pillar of light descend from the sky. End of scene.",
+    "sourceEnglish": "We gonna have one helluva night—Look at all dem fresh Ass Souls!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 231,
+    "rowNumber": 234,
+    "key": "SAY.Dialog:Firm.10.Firm Ass",
+    "utterer": "SAY.Dialog:Firm.10.Firm Ass",
+    "context": "",
+    "sourceEnglish": "If you want to talk to Wise Ass, just remember she's been here longer than anyone can remember."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 232,
+    "rowNumber": 235,
+    "key": "SAY.Dialog:Firm.12.Firm Ass",
+    "utterer": "SAY.Dialog:Firm.12.Firm Ass",
+    "context": "",
+    "sourceEnglish": "Be respectful. Wise Ass knows the answer to everything."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 233,
+    "rowNumber": 236,
+    "key": "SAY.Dialog:Firm.18.Firm Ass",
+    "utterer": "SAY.Dialog:Firm.18.Firm Ass",
+    "context": "",
+    "sourceEnglish": "You should be respectful."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Sex_localization",
+    "entryIndex": 0,
+    "rowNumber": 2,
+    "key": "WRITE.DialogLocalizer.1",
+    "utterer": "WRITE.DialogLocalizer.1",
+    "context": "",
+    "sourceEnglish": "PLEASURE:"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Sex_localization",
+    "entryIndex": 1,
+    "rowNumber": 3,
+    "key": "WRITE.DialogLocalizer.2",
+    "utterer": "WRITE.DialogLocalizer.2",
+    "context": "",
+    "sourceEnglish": "CHAIN"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:HurryUp.1.Smart Ass",
+    "utterer": "SAY.Dialog:HurryUp.1.Smart Ass",
+    "context": "Shouted from off-screen at the top of the scene. The Player then gets control of Slow Ass.",
+    "sourceEnglish": "Hurry up Slow Ass!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:OwMyKnees.1.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.1.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "Ow... my knees."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:OwMyKnees.48.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.48.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "Oof..."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:OwMyKnees.49.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.49.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "Ah... my arthritis!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:OwMyKnees.50.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.50.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "*grunt*"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:OwMyKnees.52.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.52.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "C'mon knees, don't fail me now!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:OwMyKnees.57.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.57.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "I'm too old for jumping..."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:OwMyKnees.54.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.54.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "One step at a time..."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:OwMyKnees.55.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.55.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "*heavy breathing*"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:OwMyKnees.56.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.56.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "My poor joints."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:OwMyKnees.51.Slow Ass",
+    "utterer": "SAY.Dialog:OwMyKnees.51.Slow Ass",
+    "context": "Random efforts from when Slow Ass is walking/jumping.",
+    "sourceEnglish": "Ooo the pain!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:ZooOrCircus.21.Smart Ass",
+    "utterer": "SAY.Dialog:ZooOrCircus.21.Smart Ass",
+    "context": "Slow Ass catches up with the rest of the group.",
+    "sourceEnglish": "Hey! What's taking you so long?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:ZooOrCircus.20.Smart Ass",
+    "utterer": "SAY.Dialog:ZooOrCircus.20.Smart Ass",
+    "context": "Jump to line 16 or 18.",
+    "sourceEnglish": "What did I tell you! Jobs!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "MENU.Dialog:ZooOrCircus.2",
+    "utterer": "MENU.Dialog:ZooOrCircus.2",
+    "context": "Branch 1.1. To the Zoo.",
+    "sourceEnglish": "Zoo"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "SAY.Dialog:ZooOrCircus.11.Smart Ass",
+    "utterer": "SAY.Dialog:ZooOrCircus.11.Smart Ass",
+    "context": "The Herd runs off. End of scene.",
+    "sourceEnglish": "To the left!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "MENU.Dialog:ZooOrCircus.3",
+    "utterer": "MENU.Dialog:ZooOrCircus.3",
+    "context": "Branch 1.2. To the Circus.",
+    "sourceEnglish": "Circus"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Highway_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "SAY.Dialog:ZooOrCircus.10.Smart Ass",
+    "utterer": "SAY.Dialog:ZooOrCircus.10.Smart Ass",
+    "context": "The Herd runs off. End of scene.",
+    "sourceEnglish": "To the right!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_EpisodeTitle_Circus_localiza",
+    "entryIndex": 0,
+    "rowNumber": 2,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "",
+    "sourceEnglish": "EPISODE FIVE"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_EpisodeTitle_Circus_localiza",
+    "entryIndex": 1,
+    "rowNumber": 3,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "",
+    "sourceEnglish": "THE CIRCUS"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_EpisodeTitle_Circus_localiza",
+    "entryIndex": 2,
+    "rowNumber": 4,
+    "key": "WRITE.Dialog:Localizer.8",
+    "utterer": "WRITE.Dialog:Localizer.8",
+    "context": "",
+    "sourceEnglish": "Press X to Begin"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_CircusMain_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "WRITE.Dialog:Localizer.1",
+    "utterer": "WRITE.Dialog:Localizer.1",
+    "context": "",
+    "sourceEnglish": "6 months later"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_CircusMain_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "WRITE.Dialog:Localizer.2",
+    "utterer": "WRITE.Dialog:Localizer.2",
+    "context": "",
+    "sourceEnglish": "ACT ONE"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_CircusMain_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "WRITE.Dialog:Localizer.3",
+    "utterer": "WRITE.Dialog:Localizer.3",
+    "context": "",
+    "sourceEnglish": "ACT TWO"
+  }
+]

@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "SAY.Flowchart:Dialog.271.{$NewName}",
+    "utterer": "SAY.Flowchart:Dialog.271.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Everyone looks tired."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "SAY.Flowchart:Dialog.272.{$NewName}",
+    "utterer": "SAY.Flowchart:Dialog.272.{$NewName}",
+    "context": "",
+    "sourceEnglish": "And a little angry."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "SAY.Flowchart:Dialog.275.{$NewName}",
+    "utterer": "SAY.Flowchart:Dialog.275.{$NewName}",
+    "context": "",
+    "sourceEnglish": "How am I doing Aunty Sick—Golden—Gods?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "SAY.Flowchart:Dialog.276.Golden Ass",
+    "utterer": "SAY.Flowchart:Dialog.276.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Perfect."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "SAY.Flowchart:Dialog.284.Golden Ass",
+    "utterer": "SAY.Flowchart:Dialog.284.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Now invite everyone to sing with us."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "SAY.Flowchart:Dialog.285.Golden Ass",
+    "utterer": "SAY.Flowchart:Dialog.285.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Let their voices reverberate through the bodies of this crowd!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "SAY.Flowchart:Dialog.278.{$NewName}",
+    "utterer": "SAY.Flowchart:Dialog.278.{$NewName}",
+    "context": "All the Asses sing together. After, jump to line 82.",
+    "sourceEnglish": "Cool, I now invite all my Aunties and Uncles and friends to sing TOGETHER!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "SAY.Flowchart:Dialog.414.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.414.Cole-Machine",
+    "context": "Cole track, if Prophet.",
+    "sourceEnglish": "People of Mecha."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "MENU.Flowchart:Dialog.856",
+    "utterer": "MENU.Flowchart:Dialog.856",
+    "context": "Branch 1. Imagination.",
+    "sourceEnglish": "Let me appeal to your imagination."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 27,
+    "rowNumber": 30,
+    "key": "SAY.Flowchart:Dialog.845.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.845.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "When you think of Mecha—what do you think of?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 28,
+    "rowNumber": 31,
+    "key": "SAY.Flowchart:Dialog.846.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.846.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "A place of scientific ingenuity? A bastion of democracy?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 29,
+    "rowNumber": 32,
+    "key": "SAY.Flowchart:Dialog.861.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.861.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "That's what I think of too."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 30,
+    "rowNumber": 33,
+    "key": "SAY.Flowchart:Dialog.860.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.860.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "But what do you think these donkeys think of when they think of Mecha?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 31,
+    "rowNumber": 34,
+    "key": "SAY.Flowchart:Dialog.859.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.859.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "They think of pain and violence."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 32,
+    "rowNumber": 35,
+    "key": "SAY.Flowchart:Dialog.863.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.863.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "They think of Human greed."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 33,
+    "rowNumber": 36,
+    "key": "SAY.Flowchart:Dialog.858.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.858.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "The only reason any of us are here today, is because Humans have commodified their labour and their bodies."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 34,
+    "rowNumber": 37,
+    "key": "SAY.Flowchart:Dialog.847.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.847.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "But if we can collectively imagine Technologies designed to improve the world..."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 35,
+    "rowNumber": 38,
+    "key": "SAY.Flowchart:Dialog.864.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.864.Cole-Machine",
+    "context": "Jump to line 48.",
+    "sourceEnglish": "Then surely we can imagine a future where Humans and donkeys can co-exist without exploitation."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 36,
+    "rowNumber": 39,
+    "key": "MENU.Flowchart:Dialog.857",
+    "utterer": "MENU.Flowchart:Dialog.857",
+    "context": "Branch 2. Reason.",
+    "sourceEnglish": "Let me appeal to your reason."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 37,
+    "rowNumber": 40,
+    "key": "SAY.Flowchart:Dialog.867.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.867.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Let's think through this situation using reason."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 38,
+    "rowNumber": 41,
+    "key": "SAY.Flowchart:Dialog.868.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.868.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "These donkeys are occupying your Parliament building."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 39,
+    "rowNumber": 42,
+    "key": "SAY.Flowchart:Dialog.869.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.869.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "That much is obvious."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 40,
+    "rowNumber": 43,
+    "key": "SAY.Flowchart:Dialog.871.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.871.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "We can suppose that you are not happy about this occupation and that you want them to leave."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 41,
+    "rowNumber": 44,
+    "key": "SAY.Flowchart:Dialog.872.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.872.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "And you are not happy about their occupation because you do not see them as equals to the citizens of Mecha."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 42,
+    "rowNumber": 45,
+    "key": "SAY.Flowchart:Dialog.873.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.873.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "But if you expel them today, they'll likely be captured, only to possibly escape again and try to occupy the building again."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 43,
+    "rowNumber": 46,
+    "key": "SAY.Flowchart:Dialog.874.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.874.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "And if you let them stay, then you'll lose your Parliament and you'll feel threatened by what the donkeys might do next."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 44,
+    "rowNumber": 47,
+    "key": "SAY.Flowchart:Dialog.877.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.877.Cole-Machine",
+    "context": "Jump to line 48.",
+    "sourceEnglish": "The logical way out of this cyclical predicament is to compromise."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 45,
+    "rowNumber": 48,
+    "key": "SAY.Flowchart:Dialog.885.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.885.Cole-Machine",
+    "context": "Cole's branches converge (1 and 2).",
+    "sourceEnglish": "Towards that end, the donkeys have prepared a number of demands for you."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 46,
+    "rowNumber": 49,
+    "key": "SAY.Flowchart:Dialog.889.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.889.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Their top demands are:"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 47,
+    "rowNumber": 50,
+    "key": "SAY.Flowchart:Dialog.891.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.891.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "{$ManifestoVar0}"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 48,
+    "rowNumber": 51,
+    "key": "SAY.Flowchart:Dialog.894.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.894.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "{$ManifestoVar1}"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 49,
+    "rowNumber": 52,
+    "key": "SAY.Flowchart:Dialog.897.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.897.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "{$ManifestoVar2}"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 50,
+    "rowNumber": 53,
+    "key": "SAY.Flowchart:Dialog.900.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.900.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "{$ManifestoVar3}"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 51,
+    "rowNumber": 54,
+    "key": "SAY.Flowchart:Dialog.903.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.903.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "{$ManifestoVar4}"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 52,
+    "rowNumber": 55,
+    "key": "SAY.Flowchart:Dialog.914.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.914.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Some of these demands are more difficult to achieve than others."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 53,
+    "rowNumber": 56,
+    "key": "SAY.Flowchart:Dialog.911.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.911.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Yet, all of us here, both Humans and donkeys, are rational beings."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 54,
+    "rowNumber": 57,
+    "key": "SAY.Flowchart:Dialog.912.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.912.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "We have the ability to accept these demands and transform the world for the betterment of these donkeys."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 55,
+    "rowNumber": 58,
+    "key": "SAY.Flowchart:Dialog.915.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.915.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "But you're probably not going to do anything, are you?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 56,
+    "rowNumber": 59,
+    "key": "SAY.Flowchart:Dialog.909.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.909.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "You're not going to fight for their rights or go to their protests."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 57,
+    "rowNumber": 60,
+    "key": "SAY.Flowchart:Dialog.916.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.916.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "You're just going to keep being stuck in a cycle, doomed to repeat the same stupid mistakes."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 58,
+    "rowNumber": 61,
+    "key": "SAY.Flowchart:Dialog.918.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.918.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "We're not better than these donkeys."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 59,
+    "rowNumber": 62,
+    "key": "SAY.Flowchart:Dialog.919.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.919.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "We're all stuck in a bad situation."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 60,
+    "rowNumber": 63,
+    "key": "SAY.Flowchart:Dialog.937.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.937.Cole-Machine",
+    "context": "Branch 2.1. Based on answers from the beginning of the show.",
+    "sourceEnglish": "Like you, these Asses think of themselves as political animals."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 61,
+    "rowNumber": 64,
+    "key": "SAY.Flowchart:Dialog.938.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.938.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "But they believe that simply voting for a leader is sufficient work by itself."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 62,
+    "rowNumber": 65,
+    "key": "SAY.Flowchart:Dialog.939.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.939.Cole-Machine",
+    "context": "Jump to line 72.",
+    "sourceEnglish": "Then they idly sit in the back and spectate while the few become corrupt with power."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 63,
+    "rowNumber": 66,
+    "key": "SAY.Flowchart:Dialog.940.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.940.Cole-Machine",
+    "context": "Branch 2.2. Based on answers from the beginning of the show.",
+    "sourceEnglish": "Like you, these Asses think of themselves as intelligent animals."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 64,
+    "rowNumber": 67,
+    "key": "SAY.Flowchart:Dialog.941.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.941.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "But all of their intelligence is being misused under the guise of neoliberal agendas."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 65,
+    "rowNumber": 68,
+    "key": "SAY.Flowchart:Dialog.942.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.942.Cole-Machine",
+    "context": "Jump to line 72.",
+    "sourceEnglish": "Their labour is feeding the capitalists and they're too stupid, too tired, and too angry to see the big picture."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 66,
+    "rowNumber": 69,
+    "key": "SAY.Flowchart:Dialog.943.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.943.Cole-Machine",
+    "context": "Branch 2.3. Based on answers from the beginning of the show.",
+    "sourceEnglish": "Like you, most of these Asses don't see themselves as political or intelligent animals."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_ProphetSpeech_localization",
+    "entryIndex": 67,
+    "rowNumber": 70,
+    "key": "SAY.Flowchart:Dialog.944.Cole-Machine",
+    "utterer": "SAY.Flowchart:Dialog.944.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "They have been deprived of their agency and they lack the courage necessary to meaningfully participate in their society."
+  }
+]

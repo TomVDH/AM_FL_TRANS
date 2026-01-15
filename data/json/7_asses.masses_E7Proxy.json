@@ -1,12 +1,13 @@
 {
   "fileName": "7_asses.masses_E7Proxy",
-  "processedAt": "2025-12-29T08:53:11.263Z",
+  "processedAt": "2025-12-29T22:52:04.055Z",
   "sheets": [
     {
       "sheetName": "E7_Opening_localization",
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.2.Melvin",
           "utterer": "SAY.Dialog:Opening.2.Melvin",
           "context": "Two Factory workers stand outside during a smoke break.",
           "sourceEnglish": "Maybe we should get back to work now?",
@@ -14,6 +15,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.7.Wedgie",
           "utterer": "SAY.Dialog:Opening.7.Wedgie",
           "context": "",
           "sourceEnglish": "Settle down—we're on break!",
@@ -21,6 +23,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.6.Melvin",
           "utterer": "SAY.Dialog:Opening.6.Melvin",
           "context": "",
           "sourceEnglish": "I can't afford to lose this job...",
@@ -28,6 +31,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.29.Melvin",
           "utterer": "SAY.Dialog:Opening.29.Melvin",
           "context": "",
           "sourceEnglish": "Mme. Derriere has been hinting that she's going to automate every department!",
@@ -35,6 +39,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.30.Melvin",
           "utterer": "SAY.Dialog:Opening.30.Melvin",
           "context": "",
           "sourceEnglish": "She's obsessed with efficiency—so can we go now?!",
@@ -42,6 +47,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.5.Wedgie",
           "utterer": "SAY.Dialog:Opening.5.Wedgie",
           "context": "",
           "sourceEnglish": "Cool it.",
@@ -49,6 +55,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Opening.10.Wedgie",
           "utterer": "SAY.Dialog:Opening.10.Wedgie",
           "context": "",
           "sourceEnglish": "If we worked in Slaughter or Shipping, sure, maybe we could be replaced.",
@@ -56,6 +63,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Opening.31.Wedgie",
           "utterer": "SAY.Dialog:Opening.31.Wedgie",
           "context": "",
           "sourceEnglish": "But us? No way.",
@@ -63,6 +71,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:Opening.32.Wedgie",
           "utterer": "SAY.Dialog:Opening.32.Wedgie",
           "context": "",
           "sourceEnglish": "You can't replace Animal Handling. It's an ART.",
@@ -70,6 +79,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Opening.9.Melvin",
           "utterer": "SAY.Dialog:Opening.9.Melvin",
           "context": "",
           "sourceEnglish": "You say that, but I bet Mme. Derriere's already building Robots to go pick up donkeys instead of us.",
@@ -77,6 +87,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Opening.8.Wedgie",
           "utterer": "SAY.Dialog:Opening.8.Wedgie",
           "context": "",
           "sourceEnglish": "Robots?!",
@@ -84,6 +95,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:Opening.33.Wedgie",
           "utterer": "SAY.Dialog:Opening.33.Wedgie",
           "context": "",
           "sourceEnglish": "When was the last time you saw a Robot?",
@@ -91,6 +103,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:Opening.13.Melvin",
           "utterer": "SAY.Dialog:Opening.13.Melvin",
           "context": "",
           "sourceEnglish": "Uh... I dunno. The Forklift's automated now, doesn't that count?",
@@ -98,6 +111,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:Opening.19.Wedgie",
           "utterer": "SAY.Dialog:Opening.19.Wedgie",
           "context": "",
           "sourceEnglish": "There's a difference between a Machine and a Robot, idiot.",
@@ -105,6 +119,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:Opening.18.Melvin",
           "utterer": "SAY.Dialog:Opening.18.Melvin",
           "context": "",
           "sourceEnglish": "What about the self-locking cages in the Holding Facilities?",
@@ -112,6 +127,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:Opening.17.Wedgie",
           "utterer": "SAY.Dialog:Opening.17.Wedgie",
           "context": "",
           "sourceEnglish": "What are you talking about? We don't have self-locking cages.",
@@ -124,6 +140,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "EPISODE SEVEN",
@@ -131,6 +148,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "THE FACTORY",
@@ -138,6 +156,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "Press X to Begin",
@@ -150,6 +169,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.62.Kick Ass",
           "utterer": "SAY.Dialog:Opening.62.Kick Ass",
           "context": "",
           "sourceEnglish": "WAKE UP! WAKE UP!",
@@ -157,6 +177,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.63.Smart Ass",
           "utterer": "SAY.Dialog:Opening.63.Smart Ass",
           "context": "",
           "sourceEnglish": "Oof... my head hurts...",
@@ -164,6 +185,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.64.Smart Ass",
           "utterer": "SAY.Dialog:Opening.64.Smart Ass",
           "context": "Branch 1.1. The group went to the Circus and Sad Ass stayed on the Farm.",
           "sourceEnglish": "Where's my Gorilla costume?",
@@ -171,6 +193,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.14.Kick Ass",
           "utterer": "SAY.Dialog:Opening.14.Kick Ass",
           "context": "Jump to line 11.",
           "sourceEnglish": "@#$%&! We're NOT AT THE CIRCUS ANYMORE!",
@@ -178,6 +201,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.188.Smart Ass",
           "utterer": "SAY.Dialog:Opening.188.Smart Ass",
           "context": "Branch 1.2. The group went to the Circus with Sad Ass.",
           "sourceEnglish": "Where's my Gorilla costume?",
@@ -185,6 +209,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.76.Sad Ass",
           "utterer": "SAY.Dialog:Opening.76.Sad Ass",
           "context": "Jump to line 11.",
           "sourceEnglish": "We're not at the Circus anymore...",
@@ -192,6 +217,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Opening.89.Smart Ass",
           "utterer": "SAY.Dialog:Opening.89.Smart Ass",
           "context": "Branch 1.3. The group went to the Zoo.",
           "sourceEnglish": "Is it Monday? Are we starting Ass of the Week?!",
@@ -199,6 +225,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Opening.90.Kick Ass",
           "utterer": "SAY.Dialog:Opening.90.Kick Ass",
           "context": "Jump to line 11.",
           "sourceEnglish": "@#$%&! We're NOT AT THE ZOO ANYMORE!",
@@ -206,6 +233,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:Opening.156.Kick Ass",
           "utterer": "SAY.Dialog:Opening.156.Kick Ass",
           "context": "Branches (1.1, 1.2, 1.3) converge.",
           "sourceEnglish": "We're in trouble—REAL TROUBLE.",
@@ -213,6 +241,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Opening.160.Smart Ass",
           "utterer": "SAY.Dialog:Opening.160.Smart Ass",
           "context": "",
           "sourceEnglish": "What?! Where are the others?",
@@ -220,6 +249,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Opening.164.Kick Ass",
           "utterer": "SAY.Dialog:Opening.164.Kick Ass",
           "context": "",
           "sourceEnglish": "Slow Ass wasn't in the Truck-Machine when we got here—",
@@ -227,6 +257,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:Opening.170.Kick Ass",
           "utterer": "SAY.Dialog:Opening.170.Kick Ass",
           "context": "",
           "sourceEnglish": "And Big Ass is MISSING.",
@@ -234,6 +265,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:Opening.183.Smart Ass",
           "utterer": "SAY.Dialog:Opening.183.Smart Ass",
           "context": "",
           "sourceEnglish": "Big Ass has gotta be around here somewhere.",
@@ -241,6 +273,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "MENU.Dialog:Opening.173",
           "utterer": "MENU.Dialog:Opening.173",
           "context": "Dialogue option 1. Jump to line 19.",
           "sourceEnglish": "Maybe he's still stuck in the Truck-Machine.",
@@ -248,6 +281,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "MENU.Dialog:Opening.175",
           "utterer": "MENU.Dialog:Opening.175",
           "context": "Dialogue option 2. Jump to line 19.",
           "sourceEnglish": "Maybe he couldn't fit in this cage.",
@@ -255,6 +289,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "MENU.Dialog:Opening.174",
           "utterer": "MENU.Dialog:Opening.174",
           "context": "Dialogue option 3. Jump to line 19.",
           "sourceEnglish": "Maybe the Humans mistook him for a Horse.",
@@ -262,6 +297,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:Opening.184.Smart Ass",
           "utterer": "SAY.Dialog:Opening.184.Smart Ass",
           "context": "All dialogue options from 3 previous lines converge.",
           "sourceEnglish": "Maybe—",
@@ -269,6 +305,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:Opening.36.???",
           "utterer": "SAY.Dialog:Opening.36.???",
           "context": "",
           "sourceEnglish": "Don't bother looking for your friend.",
@@ -276,6 +313,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:Opening.102.???",
           "utterer": "SAY.Dialog:Opening.102.???",
           "context": "",
           "sourceEnglish": "It's too late for him.",
@@ -283,6 +321,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:Opening.99.Kick Ass",
           "utterer": "SAY.Dialog:Opening.99.Kick Ass",
           "context": "",
           "sourceEnglish": "@#$%&! Who are YOU?",
@@ -290,6 +329,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:Opening.100.Bleak Ass",
           "utterer": "SAY.Dialog:Opening.100.Bleak Ass",
           "context": "",
           "sourceEnglish": "The name is Bleak Ass.",
@@ -297,6 +337,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:Opening.103.Bleak Ass",
           "utterer": "SAY.Dialog:Opening.103.Bleak Ass",
           "context": "",
           "sourceEnglish": "I came here with my Herd.",
@@ -304,6 +345,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:Opening.104.Bleak Ass",
           "utterer": "SAY.Dialog:Opening.104.Bleak Ass",
           "context": "",
           "sourceEnglish": "We used to work in the mountains carrying books to school children.",
@@ -311,6 +353,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:Opening.168.Bleak Ass",
           "utterer": "SAY.Dialog:Opening.168.Bleak Ass",
           "context": "",
           "sourceEnglish": "Now I'm the only one of us left.",
@@ -318,6 +361,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:Opening.106.Smart Ass",
           "utterer": "SAY.Dialog:Opening.106.Smart Ass",
           "context": "",
           "sourceEnglish": "What is this place?",
@@ -325,6 +369,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "SAY.Dialog:Opening.107.Bleak Ass",
           "utterer": "SAY.Dialog:Opening.107.Bleak Ass",
           "context": "",
           "sourceEnglish": "It's called a Factory...",
@@ -332,6 +377,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:Opening.108.Bleak Ass",
           "utterer": "SAY.Dialog:Opening.108.Bleak Ass",
           "context": "",
           "sourceEnglish": "But I call it Hell.",
@@ -339,6 +385,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "SAY.Dialog:Opening.109.Kick Ass",
           "utterer": "SAY.Dialog:Opening.109.Kick Ass",
           "context": "",
           "sourceEnglish": "@#$%&!—Smart Ass, what's the PLAN?!",
@@ -346,6 +393,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:Opening.111.Smart Ass",
           "utterer": "SAY.Dialog:Opening.111.Smart Ass",
           "context": "",
           "sourceEnglish": "The Plan is:",
@@ -353,6 +401,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:Opening.114.Smart Ass",
           "utterer": "SAY.Dialog:Opening.114.Smart Ass",
           "context": "",
           "sourceEnglish": "ONE. We break out of this cage.",
@@ -360,6 +409,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:Opening.113.Smart Ass",
           "utterer": "SAY.Dialog:Opening.113.Smart Ass",
           "context": "",
           "sourceEnglish": "TWO. We go find Big Ass.",
@@ -367,6 +417,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:Opening.112.Smart Ass",
           "utterer": "SAY.Dialog:Opening.112.Smart Ass",
           "context": "",
           "sourceEnglish": "THREE. We get out of this Factory alive and—I'll tell you the rest later!",
@@ -374,6 +425,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:Opening.115.Smart Ass",
           "utterer": "SAY.Dialog:Opening.115.Smart Ass",
           "context": "",
           "sourceEnglish": "Easy.",
@@ -381,6 +433,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:Gate.11.Smart Ass",
           "utterer": "SAY.Dialog:Gate.11.Smart Ass",
           "context": "",
           "sourceEnglish": "Hey, it was unlocked—Step ONE complete!",
@@ -388,6 +441,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:Gate.5.Smart Ass",
           "utterer": "SAY.Dialog:Gate.5.Smart Ass",
           "context": "Said to either ONE donkey or TWO donkeys. If necessary adapt sentence to avoid Singular / Plural variations in target language.",
           "sourceEnglish": "Stay here while I find us a way out.",
@@ -395,6 +449,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "SAY.Dialog:Ending.8.Smart Ass",
           "utterer": "SAY.Dialog:Ending.8.Smart Ass",
           "context": "Once reaching the final gate and leaving the room.",
           "sourceEnglish": "Easy!",
@@ -402,6 +457,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:Ending.10.Bleak Ass",
           "utterer": "SAY.Dialog:Ending.10.Bleak Ass",
           "context": "",
           "sourceEnglish": "Good luck.",
@@ -409,6 +465,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:Ending.15.Bleak Ass",
           "utterer": "SAY.Dialog:Ending.15.Bleak Ass",
           "context": "",
           "sourceEnglish": "No one who goes through that door ever comes back....",
@@ -416,6 +473,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "SAY.Dialog:Edgy.2.Edgy Ass",
           "utterer": "SAY.Dialog:Edgy.2.Edgy Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "What was THAT?!",
@@ -423,6 +481,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:Helpful.13.Helpful Ass",
           "utterer": "SAY.Dialog:Helpful.13.Helpful Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "It sure helps to have other people looking out for you... will you do the same for me?",
@@ -430,6 +489,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "SAY.Dialog:Helpful.19.Helpful Ass",
           "utterer": "SAY.Dialog:Helpful.19.Helpful Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "I saw a Human come in and fiddle with that thing on the wall over there.",
@@ -437,6 +497,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:Helpful.20.Helpful Ass",
           "utterer": "SAY.Dialog:Helpful.20.Helpful Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "Maybe you should touch it?",
@@ -444,6 +505,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "SAY.Dialog:Gaunt.2.Gaunt Ass",
           "utterer": "SAY.Dialog:Gaunt.2.Gaunt Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "Please, do you have any food?",
@@ -451,6 +513,7 @@
         },
         {
           "rowNumber": 46,
+          "key": "SAY.Dialog:Weepy.2.Weepy Ass",
           "utterer": "SAY.Dialog:Weepy.2.Weepy Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "WAAAHH!! I... just want to go home!",
@@ -458,6 +521,7 @@
         },
         {
           "rowNumber": 47,
+          "key": "SAY.Dialog:Bleak.2.Bleak Ass",
           "utterer": "SAY.Dialog:Bleak.2.Bleak Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "There's only one way out of this place... in a box.",
@@ -465,6 +529,7 @@
         },
         {
           "rowNumber": 48,
+          "key": "SAY.Dialog:Busted.2.Busted Ass",
           "utterer": "SAY.Dialog:Busted.2.Busted Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "I tried to run from the Humans... but they tracked me down and locked me up.",
@@ -472,6 +537,7 @@
         },
         {
           "rowNumber": 49,
+          "key": "SAY.Dialog:Sleepy.2.Sleepy Ass",
           "utterer": "SAY.Dialog:Sleepy.2.Sleepy Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "Zzzz... —AHH!— Zzzz...",
@@ -479,6 +545,7 @@
         },
         {
           "rowNumber": 50,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -486,6 +553,7 @@
         },
         {
           "rowNumber": 51,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -493,6 +561,7 @@
         },
         {
           "rowNumber": 52,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -500,6 +569,7 @@
         },
         {
           "rowNumber": 53,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -507,6 +577,7 @@
         },
         {
           "rowNumber": 54,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -514,6 +585,7 @@
         },
         {
           "rowNumber": 55,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -521,6 +593,7 @@
         },
         {
           "rowNumber": 56,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -533,6 +606,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.9.Skinny Ass",
           "utterer": "SAY.Dialog:Opening.9.Skinny Ass",
           "context": "",
           "sourceEnglish": "Psst! How did you get out? Are you here to save us?!",
@@ -540,6 +614,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.11.Smart Ass",
           "utterer": "SAY.Dialog:Opening.11.Smart Ass",
           "context": "",
           "sourceEnglish": "We're looking for someone named Big Ass—you seen him?",
@@ -547,6 +622,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.6.Skinny Ass",
           "utterer": "SAY.Dialog:Opening.6.Skinny Ass",
           "context": "",
           "sourceEnglish": "Big Ass?",
@@ -554,6 +630,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.13.Skinny Ass",
           "utterer": "SAY.Dialog:Opening.13.Skinny Ass",
           "context": "",
           "sourceEnglish": "No, but I did see a hefty fellow being taken to the next room.",
@@ -561,6 +638,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.12.Skinny Ass",
           "utterer": "SAY.Dialog:Opening.12.Skinny Ass",
           "context": "",
           "sourceEnglish": "You should hurry...",
@@ -568,6 +646,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.47.Skinny Ass",
           "utterer": "SAY.Dialog:Opening.47.Skinny Ass",
           "context": "",
           "sourceEnglish": "But, whatever you do, don't let those cameras see you.",
@@ -575,6 +654,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Opening.15.Smart Ass",
           "utterer": "SAY.Dialog:Opening.15.Smart Ass",
           "context": "",
           "sourceEnglish": "I got us out of the last room, it's your turn Kick Ass.",
@@ -582,6 +662,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Opening.18.Kick Ass",
           "utterer": "SAY.Dialog:Opening.18.Kick Ass",
           "context": "",
           "sourceEnglish": "@#$%&! What do I DO?",
@@ -589,6 +670,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:Opening.17.Smart Ass",
           "utterer": "SAY.Dialog:Opening.17.Smart Ass",
           "context": "",
           "sourceEnglish": "Let me think...",
@@ -596,6 +678,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Opening.19.Smart Ass",
           "utterer": "SAY.Dialog:Opening.19.Smart Ass",
           "context": "Camera zoom into Smart Ass's mind.",
           "sourceEnglish": "First, Kick Ass will...",
@@ -603,6 +686,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Ending.3.Smart Ass",
           "utterer": "SAY.Dialog:Ending.3.Smart Ass",
           "context": "Upon completion of the map.",
           "sourceEnglish": "Easy!",
@@ -610,6 +694,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:Gloomy.2.Gloomy Ass",
           "utterer": "SAY.Dialog:Gloomy.2.Gloomy Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "You and your friends aren't going to make it out of here alive.",
@@ -617,6 +702,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:Feeble.2.Feeble Ass",
           "utterer": "SAY.Dialog:Feeble.2.Feeble Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "...will anybody help me?",
@@ -624,6 +710,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:Left.2.Left Ass",
           "utterer": "SAY.Dialog:Left.2.Left Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "I can't find my partner!! Where is he?!",
@@ -631,6 +718,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:Distressed.2.Distressed Ass",
           "utterer": "SAY.Dialog:Distressed.2.Distressed Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "What did I do to deserve this?!",
@@ -638,6 +726,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:Resentful.2.Resentful Ass",
           "utterer": "SAY.Dialog:Resentful.2.Resentful Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "You're lucky, you still have some of your Herd. For now.",
@@ -645,6 +734,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -652,6 +742,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -659,6 +750,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -666,6 +758,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -673,6 +766,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -680,6 +774,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -687,6 +782,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -699,6 +795,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.26.Proper Ass",
           "utterer": "SAY.Dialog:Opening.26.Proper Ass",
           "context": "",
           "sourceEnglish": "Pardon me! Is this a jailbreak?",
@@ -706,6 +803,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.3.Smart Ass",
           "utterer": "SAY.Dialog:Opening.3.Smart Ass",
           "context": "",
           "sourceEnglish": "We're looking for someone named Big—you seen him?",
@@ -713,6 +811,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.8.Proper Ass",
           "utterer": "SAY.Dialog:Opening.8.Proper Ass",
           "context": "",
           "sourceEnglish": "Big? Oh dear, perhaps that was the Ass of impressive mass that was just taken into the Slaughterhouse chamber.",
@@ -720,6 +819,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.20.Proper Ass",
           "utterer": "SAY.Dialog:Opening.20.Proper Ass",
           "context": "",
           "sourceEnglish": "Never fear, we have a provision of shared responsibility for singing the Song of Ascension for the Asses who go before us.",
@@ -727,6 +827,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.19.Proper Ass",
           "utterer": "SAY.Dialog:Opening.19.Proper Ass",
           "context": "",
           "sourceEnglish": "You just don't want to be the final Ass of the night...",
@@ -734,6 +835,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.17.Kick Ass",
           "utterer": "SAY.Dialog:Opening.17.Kick Ass",
           "context": "",
           "sourceEnglish": "We gotta find Big Ass QUICK!",
@@ -741,6 +843,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Opening.15.Proper Ass",
           "utterer": "SAY.Dialog:Opening.15.Proper Ass",
           "context": "",
           "sourceEnglish": "Of course, if you come across any Humans, you might be wise to give them a right good knock on the skull.",
@@ -748,6 +851,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Opening.13.Proper Ass",
           "utterer": "SAY.Dialog:Opening.13.Proper Ass",
           "context": "",
           "sourceEnglish": "It's your life or theirs after all.",
@@ -755,6 +859,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:Opening.12.Smart Ass",
           "utterer": "SAY.Dialog:Opening.12.Smart Ass",
           "context": "",
           "sourceEnglish": "You hear that Kick?",
@@ -762,6 +867,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Opening.41.Smart Ass",
           "utterer": "SAY.Dialog:Opening.41.Smart Ass",
           "context": "",
           "sourceEnglish": "A good knock, just like old times.",
@@ -769,6 +875,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Opening.22.Kick Ass",
           "utterer": "SAY.Dialog:Opening.22.Kick Ass",
           "context": "",
           "sourceEnglish": "WHAT?!—I don't DO that anymore!",
@@ -776,6 +883,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:Opening.21.Kick Ass",
           "utterer": "SAY.Dialog:Opening.21.Kick Ass",
           "context": "",
           "sourceEnglish": "You made me promise to never HURT HUMANS AGAIN!",
@@ -783,6 +891,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:Opening.40.Smart Ass",
           "utterer": "SAY.Dialog:Opening.40.Smart Ass",
           "context": "",
           "sourceEnglish": "Plans change!",
@@ -790,6 +899,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:Opening.46.Smart Ass",
           "utterer": "SAY.Dialog:Opening.46.Smart Ass",
           "context": "",
           "sourceEnglish": "It's time for a new strategy...",
@@ -797,6 +907,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:Opening.47.Smart Ass",
           "utterer": "SAY.Dialog:Opening.47.Smart Ass",
           "context": "Camera zoom into Smart Ass's mind.",
           "sourceEnglish": "First, Kick Ass will avoid...",
@@ -804,6 +915,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:Ending.3.Smart Ass",
           "utterer": "SAY.Dialog:Ending.3.Smart Ass",
           "context": "Upon completion of the map.",
           "sourceEnglish": "See that wasn't so bad!",
@@ -811,6 +923,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:Ending.8.Kick Ass",
           "utterer": "SAY.Dialog:Ending.8.Kick Ass",
           "context": "",
           "sourceEnglish": "JUST that once—NEVER AGAIN!",
@@ -818,6 +931,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:Tragic.2.Tragic Ass",
           "utterer": "SAY.Dialog:Tragic.2.Tragic Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "Death will take us all.",
@@ -825,6 +939,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:AndThenKickWill.3.Smart Ass",
           "utterer": "SAY.Dialog:AndThenKickWill.3.Smart Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "And then Kick will knock out...",
@@ -832,6 +947,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:Wild_1.2.Wild Ass",
           "utterer": "SAY.Dialog:Wild_1.2.Wild Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "If I see a Human, I'll beat them down!",
@@ -839,6 +955,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:Anxious_1.2.Anxious Ass",
           "utterer": "SAY.Dialog:Anxious_1.2.Anxious Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "What's going to happen to me?!",
@@ -846,6 +963,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:Right.2.Right Ass",
           "utterer": "SAY.Dialog:Right.2.Right Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "If you see my partner Left, tell him I have always loved him dearly.",
@@ -853,6 +971,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:Tender.2.Tender Ass",
           "utterer": "SAY.Dialog:Tender.2.Tender Ass",
           "context": "Random NPC lines.",
           "sourceEnglish": "Will you sing for me when I'm gone?",
@@ -860,6 +979,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -867,6 +987,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -874,6 +995,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -881,6 +1003,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -888,6 +1011,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -895,6 +1019,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -902,6 +1027,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -914,6 +1040,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.3.Big Ass",
           "utterer": "SAY.Dialog:Opening.3.Big Ass",
           "context": "",
           "sourceEnglish": "Comrades?! Is that you?! Help me!",
@@ -921,6 +1048,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.16.Wedgie",
           "utterer": "SAY.Dialog:Opening.16.Wedgie",
           "context": "",
           "sourceEnglish": "Quit your braying, you idiot!",
@@ -928,6 +1056,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.15.Kick Ass",
           "utterer": "SAY.Dialog:Opening.15.Kick Ass",
           "context": "",
           "sourceEnglish": "Smart Ass! What do we DO NOW?!",
@@ -935,6 +1064,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.14.Smart Ass",
           "utterer": "SAY.Dialog:Opening.14.Smart Ass",
           "context": "",
           "sourceEnglish": "I'm on it!",
@@ -942,6 +1072,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.13.Smart Ass",
           "utterer": "SAY.Dialog:Opening.13.Smart Ass",
           "context": "Camera zoom into Smart Ass's mind.",
           "sourceEnglish": "First, Kick Ass will knock out...",
@@ -949,6 +1080,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Ending.3.Smart Ass",
           "utterer": "SAY.Dialog:Ending.3.Smart Ass",
           "context": "Upon completion of the map.",
           "sourceEnglish": "Ha! Big Ass is as good as saved! EASY!",
@@ -956,6 +1088,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -963,6 +1096,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -970,6 +1104,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -977,6 +1112,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -984,6 +1120,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -991,6 +1128,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -998,6 +1136,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -1010,6 +1149,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.3.Big Ass",
           "utterer": "SAY.Dialog:Opening.3.Big Ass",
           "context": "Big Ass is on a conveyor belt headed towards a worker with a gun.",
           "sourceEnglish": "Help me!",
@@ -1017,6 +1157,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.22.Kick Ass",
           "utterer": "SAY.Dialog:Opening.22.Kick Ass",
           "context": "",
           "sourceEnglish": "@#$%&!",
@@ -1024,6 +1165,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.21.Smart Ass",
           "utterer": "SAY.Dialog:Opening.21.Smart Ass",
           "context": "Camera zoom into Smart Ass's mind.",
           "sourceEnglish": "SHUT IT! I gotta strategize!",
@@ -1031,6 +1173,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.20.Smart Ass",
           "utterer": "SAY.Dialog:Opening.20.Smart Ass",
           "context": "Upon zooming of the map.",
           "sourceEnglish": "First, Kick Ass will run...",
@@ -1038,6 +1181,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:PostWorkerDies.7.Big Ass",
           "utterer": "SAY.Dialog:PostWorkerDies.7.Big Ass",
           "context": "Kick, Smart, and (possibly) Sad, have hit a button which took the Factory worker away on a hook.",
           "sourceEnglish": "Get me outta here!",
@@ -1045,6 +1189,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:PostWorkerDies.28.Smart Ass",
           "utterer": "SAY.Dialog:PostWorkerDies.28.Smart Ass",
           "context": "",
           "sourceEnglish": "HOW?!",
@@ -1052,6 +1197,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:PostWorkerDies.30.Big Ass",
           "utterer": "SAY.Dialog:PostWorkerDies.30.Big Ass",
           "context": "",
           "sourceEnglish": "Try a button!",
@@ -1059,6 +1205,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:PostWorkerDies.49.Big Ass",
           "utterer": "SAY.Dialog:PostWorkerDies.49.Big Ass",
           "context": "",
           "sourceEnglish": "Try another!",
@@ -1066,6 +1213,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:PostWorkerDies.17.Kick Ass",
           "utterer": "SAY.Dialog:PostWorkerDies.17.Kick Ass",
           "context": "",
           "sourceEnglish": "&%@$! Big Ass WATCH OUT!",
@@ -1073,6 +1221,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:PostWorkerDies.21.Big Ass",
           "utterer": "SAY.Dialog:PostWorkerDies.21.Big Ass",
           "context": "Big Ass is picked up by the same hook as the worker and taken into the next room.",
           "sourceEnglish": "AAAAAAHHHHHHH!",
@@ -1080,6 +1229,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:PostWorkerDies.22.Smart Ass",
           "utterer": "SAY.Dialog:PostWorkerDies.22.Smart Ass",
           "context": "",
           "sourceEnglish": "Hang on!",
@@ -1087,6 +1237,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -1094,6 +1245,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -1101,6 +1253,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -1108,6 +1261,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -1115,6 +1269,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -1122,6 +1277,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -1129,6 +1285,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -1141,6 +1298,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.36.Smart Ass",
           "utterer": "SAY.Dialog:Opening.36.Smart Ass",
           "context": "A loud sound from the machine—the worker is being sliced and diced. Big is next.",
           "sourceEnglish": "What's that sound?",
@@ -1148,6 +1306,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.26.Kick Ass",
           "utterer": "SAY.Dialog:Opening.26.Kick Ass",
           "context": "",
           "sourceEnglish": "@#$%&!",
@@ -1155,6 +1314,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.41.Big Ass",
           "utterer": "SAY.Dialog:Opening.41.Big Ass",
           "context": "",
           "sourceEnglish": "HELP!",
@@ -1162,6 +1322,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.43.Smart Ass",
           "utterer": "SAY.Dialog:Opening.43.Smart Ass",
           "context": "",
           "sourceEnglish": "We've got to turn off this Death-Machine.",
@@ -1169,6 +1330,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.3.Smart Ass",
           "utterer": "SAY.Dialog:Opening.3.Smart Ass",
           "context": "This is said if Sad is not present.",
           "sourceEnglish": "Kick—cut the power!",
@@ -1176,6 +1338,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.11.Smart Ass",
           "utterer": "SAY.Dialog:Opening.11.Smart Ass",
           "context": "Alternately, this is said if Sad is present.",
           "sourceEnglish": "Kick and Sad—cut the power!",
@@ -1183,6 +1346,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Opening.58.Smart Ass",
           "utterer": "SAY.Dialog:Opening.58.Smart Ass",
           "context": "",
           "sourceEnglish": "I'll jam the controls.",
@@ -1190,6 +1354,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:BigIsSaved.12.Smart Ass",
           "utterer": "SAY.Dialog:BigIsSaved.12.Smart Ass",
           "context": "The machine is stopped now.",
           "sourceEnglish": "STEP TWO COMPLETE!",
@@ -1197,6 +1362,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:GateOpened.20.Big Ass",
           "utterer": "SAY.Dialog:GateOpened.20.Big Ass",
           "context": "",
           "sourceEnglish": "I truly thought that was the end for me.",
@@ -1204,6 +1370,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:GateOpened.13.Big Ass",
           "utterer": "SAY.Dialog:GateOpened.13.Big Ass",
           "context": "",
           "sourceEnglish": "You're all heroes!",
@@ -1211,6 +1378,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "MENU.Dialog:GateOpened.47",
           "utterer": "MENU.Dialog:GateOpened.47",
           "context": "Dialogue option 1.1.",
           "sourceEnglish": "Hey! It was MY plan!",
@@ -1218,6 +1386,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:GateOpened.49.Smart Ass",
           "utterer": "SAY.Dialog:GateOpened.49.Smart Ass",
           "context": "",
           "sourceEnglish": "Hey! It was MY plan.",
@@ -1225,6 +1394,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:GateOpened.58.Kick Ass",
           "utterer": "SAY.Dialog:GateOpened.58.Kick Ass",
           "context": "",
           "sourceEnglish": "I'm happy you're SAFE!",
@@ -1232,6 +1402,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:GateOpened.52.Sad Ass",
           "utterer": "SAY.Dialog:GateOpened.52.Sad Ass",
           "context": "This is said if Sad is present. Jump to line 21.",
           "sourceEnglish": "...me too.",
@@ -1239,6 +1410,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "MENU.Dialog:GateOpened.48",
           "utterer": "MENU.Dialog:GateOpened.48",
           "context": "Dialogue option 1.2.",
           "sourceEnglish": "I'm happy you're safe.",
@@ -1246,6 +1418,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:GateOpened.50.Smart Ass",
           "utterer": "SAY.Dialog:GateOpened.50.Smart Ass",
           "context": "",
           "sourceEnglish": "I'm happy you're safe.",
@@ -1253,6 +1426,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:GateOpened.82.Sad Ass",
           "utterer": "SAY.Dialog:GateOpened.82.Sad Ass",
           "context": "This is said if Sad is present.",
           "sourceEnglish": "...me too.",
@@ -1260,6 +1434,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:GateOpened.64.Smart Ass",
           "utterer": "SAY.Dialog:GateOpened.64.Smart Ass",
           "context": "Jump to line 21.",
           "sourceEnglish": "It was MY great plan!",
@@ -1267,6 +1442,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:GateOpened.69.Kick Ass",
           "utterer": "SAY.Dialog:GateOpened.69.Kick Ass",
           "context": "",
           "sourceEnglish": "What's NEXT?!",
@@ -1274,6 +1450,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:GateOpened.39.Smart Ass",
           "utterer": "SAY.Dialog:GateOpened.39.Smart Ass",
           "context": "The Asses can now head towards the exit for this level.",
           "sourceEnglish": "Step THREE! We all get out alive!",
@@ -1281,6 +1458,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:Radio.10.Factory PA",
           "utterer": "SAY.Dialog:Radio.10.Factory PA",
           "context": "Optional dialogue when interacting with the radio.",
           "sourceEnglish": "*ksh*—Greetings employees.",
@@ -1288,6 +1466,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:Radio.24.Factory PA",
           "utterer": "SAY.Dialog:Radio.24.Factory PA",
           "context": "",
           "sourceEnglish": "Congratulations, the new automated Forklifts have been increasing efficiency by 15%.",
@@ -1295,6 +1474,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:Radio.25.Factory PA",
           "utterer": "SAY.Dialog:Radio.25.Factory PA",
           "context": "",
           "sourceEnglish": "Retirement parties for Forklift Operators will be held in the Break Room from 13h00-13h05.",
@@ -1302,6 +1482,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:Radio.26.Factory PA",
           "utterer": "SAY.Dialog:Radio.26.Factory PA",
           "context": "",
           "sourceEnglish": "There will be cake.*ksh*",
@@ -1309,6 +1490,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -1316,6 +1498,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -1323,6 +1506,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -1330,6 +1514,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -1337,6 +1522,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -1344,6 +1530,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -1351,6 +1538,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -1363,6 +1551,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.73.Big Ass",
           "utterer": "SAY.Dialog:Opening.73.Big Ass",
           "context": "The Asses find themselves in a big freezer with countless carcasses.",
           "sourceEnglish": "...",
@@ -1370,6 +1559,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.21.Sad Ass",
           "utterer": "SAY.Dialog:Opening.21.Sad Ass",
           "context": "This dialogue happens if Sad is present.",
           "sourceEnglish": "*whimper*",
@@ -1377,6 +1567,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Ending.92.Big Ass",
           "utterer": "SAY.Dialog:Ending.92.Big Ass",
           "context": "",
           "sourceEnglish": "Wait. We should sing the Song of Ascension for our Comrades before we leave.",
@@ -1384,6 +1575,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Ending.93.Kick Ass",
           "utterer": "SAY.Dialog:Ending.93.Kick Ass",
           "context": "",
           "sourceEnglish": "Big—from the look of these carcasses... We're too late.",
@@ -1391,6 +1583,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Ending.168.Big Ass",
           "utterer": "SAY.Dialog:Ending.168.Big Ass",
           "context": "",
           "sourceEnglish": "Back on that hook, my life flashed before my eyes.",
@@ -1398,6 +1591,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Ending.169.Big Ass",
           "utterer": "SAY.Dialog:Ending.169.Big Ass",
           "context": "",
           "sourceEnglish": "I've never fit in anywhere, or made much of an impact.",
@@ -1405,6 +1599,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Ending.170.Big Ass",
           "utterer": "SAY.Dialog:Ending.170.Big Ass",
           "context": "",
           "sourceEnglish": "But, I want to make a difference now.",
@@ -1412,6 +1607,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Ending.171.Big Ass",
           "utterer": "SAY.Dialog:Ending.171.Big Ass",
           "context": "",
           "sourceEnglish": "Even if we're too late, we should try.",
@@ -1419,6 +1615,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:Ending.172.Big Ass",
           "utterer": "SAY.Dialog:Ending.172.Big Ass",
           "context": "",
           "sourceEnglish": "If it means one more Soul makes it to the Astral Plane, it's worth it.",
@@ -1426,6 +1623,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "MENU.Dialog:Ending.347",
           "utterer": "MENU.Dialog:Ending.347",
           "context": "Branch 1.1.",
           "sourceEnglish": "Fine.",
@@ -1433,6 +1631,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Ending.359.Smart Ass",
           "utterer": "SAY.Dialog:Ending.359.Smart Ass",
           "context": "Jump to line 18.",
           "sourceEnglish": "Fine.",
@@ -1440,6 +1639,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "MENU.Dialog:Ending.349",
           "utterer": "MENU.Dialog:Ending.349",
           "context": "Branch 1.2.",
           "sourceEnglish": "Let's make it quick.",
@@ -1447,6 +1647,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:Ending.358.Smart Ass",
           "utterer": "SAY.Dialog:Ending.358.Smart Ass",
           "context": "Jump to line 18.",
           "sourceEnglish": "Let's make it quick.",
@@ -1454,6 +1655,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "MENU.Dialog:Ending.348",
           "utterer": "MENU.Dialog:Ending.348",
           "context": "Branch 1.3. SKIPS SONG",
           "sourceEnglish": "We have to keep moving.",
@@ -1461,6 +1663,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:Ending.360.Smart Ass",
           "utterer": "SAY.Dialog:Ending.360.Smart Ass",
           "context": "Jump to line 18.",
           "sourceEnglish": "We have to keep moving.",
@@ -1468,6 +1671,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:Ending.327.The Masses",
           "utterer": "SAY.Dialog:Ending.327.The Masses",
           "context": "The branch options (1.1, 1.2, 1.3) converge. The Asses sing the Song of Ascension.",
           "sourceEnglish": "{color=yellow}{s=5}♪ hee haw hi hon 'ee ah he a'w ♪{/color}",
@@ -1475,6 +1679,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:Ending.364.Smart Ass",
           "utterer": "SAY.Dialog:Ending.364.Smart Ass",
           "context": "The Asses head off towards one of two rooms: Meat Processing or Boiling.",
           "sourceEnglish": "Come on.",
@@ -1482,6 +1687,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:Ending.25.Smart Ass",
           "utterer": "SAY.Dialog:Ending.25.Smart Ass",
           "context": "Check the miro! These are still in the game",
           "sourceEnglish": "Come on, we should keep going.",
@@ -1489,6 +1695,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:Ending.175.Smart Ass",
           "utterer": "SAY.Dialog:Ending.175.Smart Ass",
           "context": "Check the miro! These are still in the game",
           "sourceEnglish": "These Asses aren't our Comrades.",
@@ -1496,6 +1703,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:Ending.362.Smart Ass",
           "utterer": "SAY.Dialog:Ending.362.Smart Ass",
           "context": "Check the miro! These are still in the game",
           "sourceEnglish": "Everyone spread out.",
@@ -1503,6 +1711,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:Ending.120.Sad Ass",
           "utterer": "SAY.Dialog:Ending.120.Sad Ass",
           "context": "Check the miro! These are still in the game",
           "sourceEnglish": "You know... it wouldn't hurt to try...",
@@ -1510,6 +1719,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:Ending.121.Sad Ass",
           "utterer": "SAY.Dialog:Ending.121.Sad Ass",
           "context": "Check the miro! These are still in the game",
           "sourceEnglish": "It'd be nice to sing it together.",
@@ -1522,6 +1732,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.3.Kick Ass",
           "utterer": "SAY.Dialog:Opening.3.Kick Ass",
           "context": "A room with many Humans.",
           "sourceEnglish": "There are so many Humans!",
@@ -1529,6 +1740,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.8.Big Ass",
           "utterer": "SAY.Dialog:Opening.8.Big Ass",
           "context": "",
           "sourceEnglish": "We should go one at—",
@@ -1536,6 +1748,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.7.Smart Ass",
           "utterer": "SAY.Dialog:Opening.7.Smart Ass",
           "context": "",
           "sourceEnglish": "—one at a time!",
@@ -1543,6 +1756,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.6.Smart Ass",
           "utterer": "SAY.Dialog:Opening.6.Smart Ass",
           "context": "Camera zoom into Smart's mind.",
           "sourceEnglish": "Let me think...",
@@ -1550,6 +1764,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.18.Smart Ass",
           "utterer": "SAY.Dialog:Opening.18.Smart Ass",
           "context": "The Asses take turns navigating the room, one-at-a-time.",
           "sourceEnglish": "First Kick will go...",
@@ -1557,6 +1772,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:FirstPassComplete.9.Smart Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.9.Smart Ass",
           "context": "Once Kick Ass makes it to the exit.",
           "sourceEnglish": "Big Ass is next...",
@@ -1564,6 +1780,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:SecondPassComplete.23.Smart Ass",
           "utterer": "SAY.Dialog:SecondPassComplete.23.Smart Ass",
           "context": "This is said after Big Ass makes it to the exit and if Sad Ass is not in the group.",
           "sourceEnglish": "Time for the Ace Strategist to show everyone how it's done!",
@@ -1571,6 +1788,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:SecondPassComplete.28.Smart Ass",
           "utterer": "SAY.Dialog:SecondPassComplete.28.Smart Ass",
           "context": "This is said after Big Ass makes it to the exit and if Sad Ass is in the group.",
           "sourceEnglish": "Sad Ass is next...",
@@ -1578,6 +1796,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:ThirdPassComplete.8.Smart Ass",
           "utterer": "SAY.Dialog:ThirdPassComplete.8.Smart Ass",
           "context": "This is said after Sad Ass makes it to the exit.",
           "sourceEnglish": "Time for the Ace Strategist to show everyone how it's done!",
@@ -1585,6 +1804,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Ending.3.Smart Ass",
           "utterer": "SAY.Dialog:Ending.3.Smart Ass",
           "context": "Once Smart Ass makes it to the exit.",
           "sourceEnglish": "EASY!",
@@ -1592,6 +1812,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -1599,6 +1820,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -1606,6 +1828,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -1613,6 +1836,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -1620,6 +1844,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -1627,6 +1852,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -1634,6 +1860,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -1646,6 +1873,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.3.Big Ass",
           "utterer": "SAY.Dialog:Opening.3.Big Ass",
           "context": "",
           "sourceEnglish": "Are they melting the skin of the deceased in here?",
@@ -1653,6 +1881,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.11.Kick Ass",
           "utterer": "SAY.Dialog:Opening.11.Kick Ass",
           "context": "",
           "sourceEnglish": "@$#%!",
@@ -1660,6 +1889,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.10.Smart Ass",
           "utterer": "SAY.Dialog:Opening.10.Smart Ass",
           "context": "",
           "sourceEnglish": "Shut it you two!",
@@ -1667,6 +1897,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.9.Smart Ass",
           "utterer": "SAY.Dialog:Opening.9.Smart Ass",
           "context": "Camera zoom into Smart's mind.",
           "sourceEnglish": "I've got a new strategy.",
@@ -1674,6 +1905,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.8.Smart Ass",
           "utterer": "SAY.Dialog:Opening.8.Smart Ass",
           "context": "",
           "sourceEnglish": "There are switches and Humans in front of the gates.",
@@ -1681,6 +1913,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.14.Smart Ass",
           "utterer": "SAY.Dialog:Opening.14.Smart Ass",
           "context": "",
           "sourceEnglish": "We'll go in pairs. Kick and Big will work together...",
@@ -1688,6 +1921,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:FirstPassComplete.103.Big Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.103.Big Ass",
           "context": "This triggers if Big is at the exit and Kick is not in range.",
           "sourceEnglish": "Don't fall behind, Kick Ass!",
@@ -1695,6 +1929,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:FirstPassComplete.102.Kick Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.102.Kick Ass",
           "context": "This triggers if Kick is at the exit and Big is not in range.",
           "sourceEnglish": "HURRY UP, Big Ass!",
@@ -1702,6 +1937,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:FirstPassComplete.14.Kick Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.14.Kick Ass",
           "context": "x",
           "sourceEnglish": "WE MADE IT!",
@@ -1709,6 +1945,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:FirstPassComplete.16.Big Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.16.Big Ass",
           "context": "",
           "sourceEnglish": "{vpunch=100,0.75}HURRAH!",
@@ -1716,6 +1953,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:FirstPassComplete.55.Smart Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.55.Smart Ass",
           "context": "",
           "sourceEnglish": "Morons.",
@@ -1723,6 +1961,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:FirstPassComplete.71.Sad Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.71.Sad Ass",
           "context": "Branch 1.1. If Sad is present in the group.",
           "sourceEnglish": "Are we a pair too...?",
@@ -1730,6 +1969,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:FirstPassComplete.99.Smart Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.99.Smart Ass",
           "context": "",
           "sourceEnglish": "Don't hold me back, Sad Ass.",
@@ -1737,6 +1977,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:FirstPassComplete.72.Smart Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.72.Smart Ass",
           "context": "Jump to line 20 once the Player reaches the end.",
           "sourceEnglish": "Sad and I will work together...",
@@ -1744,6 +1985,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:FirstPassComplete.68.Smart Ass",
           "utterer": "SAY.Dialog:FirstPassComplete.68.Smart Ass",
           "context": "Branch 1.2. If Sad is absent from the group. Jump to line 20 once the Player reaches the end.",
           "sourceEnglish": "It's just me now...",
@@ -1751,6 +1993,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:Ending.18.Sad Ass",
           "utterer": "SAY.Dialog:Ending.18.Sad Ass",
           "context": "Not in the Miro.",
           "sourceEnglish": "Hurry up!",
@@ -1758,6 +2001,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:Ending.44.Smart Ass",
           "utterer": "SAY.Dialog:Ending.44.Smart Ass",
           "context": "Not in the Miro.",
           "sourceEnglish": "Hurry up!",
@@ -1765,6 +2009,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:Ending.50.Smart Ass",
           "utterer": "SAY.Dialog:Ending.50.Smart Ass",
           "context": "All Asses reach the exit.",
           "sourceEnglish": "Easy!",
@@ -1772,6 +2017,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -1779,6 +2025,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -1786,6 +2033,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -1793,6 +2041,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -1800,6 +2049,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -1807,6 +2057,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -1814,6 +2065,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -1826,6 +2078,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.48.Smart Ass",
           "utterer": "SAY.Dialog:Opening.48.Smart Ass",
           "context": "",
           "sourceEnglish": "Come on. We have to be getting close to an exit!",
@@ -1833,6 +2086,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.50.Big Ass",
           "utterer": "SAY.Dialog:Opening.50.Big Ass",
           "context": "",
           "sourceEnglish": "Wait.",
@@ -1840,6 +2094,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.24.Big Ass",
           "utterer": "SAY.Dialog:Opening.24.Big Ass",
           "context": "",
           "sourceEnglish": "We'll never get by unnoticed.",
@@ -1847,6 +2102,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.27.Smart Ass",
           "utterer": "SAY.Dialog:Opening.27.Smart Ass",
           "context": "",
           "sourceEnglish": "Hmmm...",
@@ -1854,6 +2110,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.26.Smart Ass",
           "utterer": "SAY.Dialog:Opening.26.Smart Ass",
           "context": "",
           "sourceEnglish": "We're going to need to think outside the box.",
@@ -1861,6 +2118,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.28.Smart Ass",
           "utterer": "SAY.Dialog:Opening.28.Smart Ass",
           "context": "Camera zoom into Smart's mind. The Asses get into boxes and sneak past.",
           "sourceEnglish": "Got it!",
@@ -1868,6 +2126,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Ending.3.Smart Ass",
           "utterer": "SAY.Dialog:Ending.3.Smart Ass",
           "context": "All Asses reach the exit and hop onto a conveyor belt to leave the room.",
           "sourceEnglish": "Easy!",
@@ -1875,6 +2134,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -1882,6 +2142,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -1889,6 +2150,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -1896,6 +2158,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -1903,6 +2166,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -1910,6 +2174,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -1917,6 +2182,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -1929,6 +2195,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.9.Smart Ass",
           "utterer": "SAY.Dialog:Opening.9.Smart Ass",
           "context": "One of the final levels in the Factory. The Asses jump off the conveyor belt and are on opposite sides of a big wall.",
           "sourceEnglish": "JUMP!",
@@ -1936,6 +2203,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.23.Smart Ass",
           "utterer": "SAY.Dialog:Opening.23.Smart Ass",
           "context": "",
           "sourceEnglish": "What are you doing over there?!",
@@ -1943,6 +2211,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.3.Kick Ass",
           "utterer": "SAY.Dialog:Opening.3.Kick Ass",
           "context": "",
           "sourceEnglish": "We JUMPED! Just like YOU SAID!",
@@ -1950,6 +2219,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.25.Big Ass",
           "utterer": "SAY.Dialog:Opening.25.Big Ass",
           "context": "",
           "sourceEnglish": "What'll we do?",
@@ -1957,6 +2227,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.21.Smart Ass",
           "utterer": "SAY.Dialog:Opening.21.Smart Ass",
           "context": "",
           "sourceEnglish": "We're going to have to work like a Team...",
@@ -1964,6 +2235,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.8.Smart Ass",
           "utterer": "SAY.Dialog:Opening.8.Smart Ass",
           "context": "Camera zoom into Smart's mind.",
           "sourceEnglish": "Time to strategize!",
@@ -1971,6 +2243,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Opening.32.Smart Ass",
           "utterer": "SAY.Dialog:Opening.32.Smart Ass",
           "context": "The Asses leave the stage one-at-a-time.",
           "sourceEnglish": "Who should go first?",
@@ -1978,6 +2251,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "That's not it.",
@@ -1985,6 +2259,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "There has to be another way.",
@@ -1992,6 +2267,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Terrible plan.",
@@ -1999,6 +2275,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Come on Smart, you can do better.",
@@ -2006,6 +2283,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Nope.",
@@ -2013,6 +2291,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "Let's try that again...",
@@ -2020,6 +2299,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Randomized text that pops up on screen when the player dies.",
           "sourceEnglish": "You can do this.",
@@ -2032,6 +2312,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:BigJob.4.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.4.Smart Ass",
           "context": "The Asses are in a hallway close to the exit.",
           "sourceEnglish": "Haha! STEP THREE (ALMOST) COMPLETE!",
@@ -2039,6 +2320,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:BigJob.233.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.233.Smart Ass",
           "context": "",
           "sourceEnglish": "I'm getting all of us out of here alive!",
@@ -2046,6 +2328,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:BigJob.7.Big Ass",
           "utterer": "SAY.Dialog:BigJob.7.Big Ass",
           "context": "",
           "sourceEnglish": "What about freeing the other Asses?",
@@ -2053,6 +2336,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:BigJob.6.Big Ass",
           "utterer": "SAY.Dialog:BigJob.6.Big Ass",
           "context": "",
           "sourceEnglish": "Aren't they part of your Plan?",
@@ -2060,6 +2344,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:BigJob.10.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.10.Smart Ass",
           "context": "",
           "sourceEnglish": "Fuck the others.",
@@ -2067,6 +2352,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:BigJob.11.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.11.Smart Ass",
           "context": "",
           "sourceEnglish": "A Plan that includes trying to save us AND free hundreds of other Asses is impossible.",
@@ -2074,6 +2360,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:BigJob.143.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.143.Smart Ass",
           "context": "",
           "sourceEnglish": "So let's go.",
@@ -2081,6 +2368,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:BigJob.9.Big Ass",
           "utterer": "SAY.Dialog:BigJob.9.Big Ass",
           "context": "",
           "sourceEnglish": "And what will we do after that?",
@@ -2088,6 +2376,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:BigJob.14.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.14.Smart Ass",
           "context": "",
           "sourceEnglish": "I'll tell you later.",
@@ -2095,6 +2384,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:BigJob.8.Big Ass",
           "utterer": "SAY.Dialog:BigJob.8.Big Ass",
           "context": "",
           "sourceEnglish": "{vpunch=100,1}I want to know NOW, Smart Ass.",
@@ -2102,6 +2392,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:BigJob.18.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.18.Smart Ass",
           "context": "",
           "sourceEnglish": "FINE. Fine.",
@@ -2109,6 +2400,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:BigJob.22.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.22.Smart Ass",
           "context": "Jump to line 15 or line 17.",
           "sourceEnglish": "After we get out of here, we will:",
@@ -2116,6 +2408,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "MENU.Dialog:BigJob.234",
           "utterer": "MENU.Dialog:BigJob.234",
           "context": "Dialogue option 1.1",
           "sourceEnglish": "Forget everything that's happened.",
@@ -2123,6 +2416,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:BigJob.240.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.240.Smart Ass",
           "context": "Jump to line 20.",
           "sourceEnglish": "We forget everything that's happened in this Factory Hell and go find kind Humans who will care for us.",
@@ -2130,6 +2424,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "MENU.Dialog:BigJob.235",
           "utterer": "MENU.Dialog:BigJob.235",
           "context": "Dialogue option 1.2",
           "sourceEnglish": "Never forget what we've seen.",
@@ -2137,6 +2432,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:BigJob.237.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.237.Smart Ass",
           "context": "",
           "sourceEnglish": "We never forget what we've seen in this Factory Hell.",
@@ -2144,6 +2440,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:BigJob.238.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.238.Smart Ass",
           "context": "Jump to line 20.",
           "sourceEnglish": "And we find kind Humans to take care of us.",
@@ -2151,6 +2448,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:BigJob.242.Kick Ass",
           "utterer": "SAY.Dialog:BigJob.242.Kick Ass",
           "context": "Dialogues (1.1, 1.2) converge.",
           "sourceEnglish": "WHAT?!",
@@ -2158,6 +2456,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:BigJob.243.Kick Ass",
           "utterer": "SAY.Dialog:BigJob.243.Kick Ass",
           "context": "",
           "sourceEnglish": "How can you believe there are still KIND Humans in this world?",
@@ -2165,6 +2464,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:BigJob.258.Kick Ass",
           "utterer": "SAY.Dialog:BigJob.258.Kick Ass",
           "context": "This is said if Sad Ass is not present.",
           "sourceEnglish": "After everything Humans have DONE TO US?",
@@ -2172,6 +2472,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:BigJob.260.Sad Ass",
           "utterer": "SAY.Dialog:BigJob.260.Sad Ass",
           "context": "This is said if Sad Ass is present.",
           "sourceEnglish": "After everything Humans have done to us Asses?",
@@ -2179,6 +2480,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:BigJob.182.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.182.Smart Ass",
           "context": "",
           "sourceEnglish": "We all left the Mine because we wanted a comfortable life of fresh hay and good work.",
@@ -2186,6 +2488,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:BigJob.183.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.183.Smart Ass",
           "context": "",
           "sourceEnglish": "A life with no Machines and no violence.",
@@ -2193,6 +2496,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:BigJob.184.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.184.Smart Ass",
           "context": "",
           "sourceEnglish": "Believing in the existence of kind Humans is the only way to get what we want.",
@@ -2200,6 +2504,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:BigJob.188.Big Ass",
           "utterer": "SAY.Dialog:BigJob.188.Big Ass",
           "context": "",
           "sourceEnglish": "I'm not leaving the other Asses here to die, just so we can try to live in comfort.",
@@ -2207,6 +2512,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "SAY.Dialog:BigJob.190.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.190.Smart Ass",
           "context": "",
           "sourceEnglish": "Listen you oaf! That's not the PLAN!",
@@ -2214,6 +2520,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:BigJob.191.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.191.Smart Ass",
           "context": "",
           "sourceEnglish": "I've run through every single possibility and there's NO VERSION where we get out of here alive by going backwards.",
@@ -2221,6 +2528,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "SAY.Dialog:BigJob.193.Big Ass",
           "utterer": "SAY.Dialog:BigJob.193.Big Ass",
           "context": "Jump to line 31 or line 34.",
           "sourceEnglish": "Then I'll go back, alone.",
@@ -2228,6 +2536,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:BigJob.174.Kick Ass",
           "utterer": "SAY.Dialog:BigJob.174.Kick Ass",
           "context": "Branch 2.1. This is said if Sad is not present.",
           "sourceEnglish": "@#$%&! If you go back—the Humans will KILL you!",
@@ -2235,6 +2544,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:BigJob.175.Kick Ass",
           "utterer": "SAY.Dialog:BigJob.175.Kick Ass",
           "context": "",
           "sourceEnglish": "And your Soul will be STUCK here!",
@@ -2242,6 +2552,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:BigJob.177.Kick Ass",
           "utterer": "SAY.Dialog:BigJob.177.Kick Ass",
           "context": "Jump to line 37.",
           "sourceEnglish": "Comrade, what if Smart is RIGHT?",
@@ -2249,6 +2560,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:BigJob.170.Sad Ass",
           "utterer": "SAY.Dialog:BigJob.170.Sad Ass",
           "context": "Branch 2.2. This is said if Sad is present.",
           "sourceEnglish": "But... if you go back—the Humans'll kill you.",
@@ -2256,6 +2568,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:BigJob.172.Sad Ass",
           "utterer": "SAY.Dialog:BigJob.172.Sad Ass",
           "context": "",
           "sourceEnglish": "And your Soul will be stuck here... *whimper*",
@@ -2263,6 +2576,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:BigJob.173.Kick Ass",
           "utterer": "SAY.Dialog:BigJob.173.Kick Ass",
           "context": "Jump to line 37.",
           "sourceEnglish": "Comrade, what if Smart is RIGHT?",
@@ -2270,6 +2584,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:BigJob.158.Big Ass",
           "utterer": "SAY.Dialog:BigJob.158.Big Ass",
           "context": "Branches (2.1, 2.2) converge.",
           "sourceEnglish": "You don't have to join me.",
@@ -2277,6 +2592,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "SAY.Dialog:BigJob.159.Big Ass",
           "utterer": "SAY.Dialog:BigJob.159.Big Ass",
           "context": "",
           "sourceEnglish": "But this is something I must do.",
@@ -2284,6 +2600,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:BigJob.160.Big Ass",
           "utterer": "SAY.Dialog:BigJob.160.Big Ass",
           "context": "",
           "sourceEnglish": "Before I die, I need to make an impact.",
@@ -2291,6 +2608,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:BigJob.163.Smart Ass",
           "utterer": "SAY.Dialog:BigJob.163.Smart Ass",
           "context": "Jump to line 41 or line 43.",
           "sourceEnglish": "We're not responsible for the others! You hear me?!?",
@@ -2298,6 +2616,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "MENU.Dialog:BigJob.264",
           "utterer": "MENU.Dialog:BigJob.264",
           "context": "Dialogue option 3.1.",
           "sourceEnglish": "I know... but I choose to be.",
@@ -2305,6 +2624,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:BigJob.267.Big Ass",
           "utterer": "SAY.Dialog:BigJob.267.Big Ass",
           "context": "End of scene.",
           "sourceEnglish": "I know... but I choose to be.",
@@ -2312,6 +2632,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "MENU.Dialog:BigJob.265",
           "utterer": "MENU.Dialog:BigJob.265",
           "context": "Dialogue option 3.2.",
           "sourceEnglish": "Goodbye, Comrades.",
@@ -2319,6 +2640,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:BigJob.271.Big Ass",
           "utterer": "SAY.Dialog:BigJob.271.Big Ass",
           "context": "End of scene.",
           "sourceEnglish": "Goodbye, Comrades.",
@@ -2331,6 +2653,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:EnterControlRoom.1.Big Ass",
           "utterer": "SAY.Dialog:EnterControlRoom.1.Big Ass",
           "context": "Big Ass goes into the control room, alone.",
           "sourceEnglish": "There must be a way to free the other Asses in here.",
@@ -2338,6 +2661,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:EnterControlRoom.6.Factory PA",
           "utterer": "SAY.Dialog:EnterControlRoom.6.Factory PA",
           "context": "Zoom into the Factory intercom speaker.",
           "sourceEnglish": "*ksch*—Attention all workers. We have a Code 455.",
@@ -2345,6 +2669,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:EnterControlRoom.7.Factory PA",
           "utterer": "SAY.Dialog:EnterControlRoom.7.Factory PA",
           "context": "",
           "sourceEnglish": "All personnel should be on the lookout for runaway donkeys within the Factory.",
@@ -2352,6 +2677,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:EnterControlRoom.8.Factory PA",
           "utterer": "SAY.Dialog:EnterControlRoom.8.Factory PA",
           "context": "Zoom out from the Factory intercom speaker.",
           "sourceEnglish": "If found, use of force is permitted—*ksh*",
@@ -2359,6 +2685,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Ending.3.Security Guard Andy",
           "utterer": "SAY.Dialog:Ending.3.Security Guard Andy",
           "context": "A security guard comes in and readies a gun.",
           "sourceEnglish": "There's one of those runaway donkeys!",
@@ -2366,6 +2693,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Ending.7.Security Guard Andy",
           "utterer": "SAY.Dialog:Ending.7.Security Guard Andy",
           "context": "",
           "sourceEnglish": "Ready?!",
@@ -2373,6 +2701,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Ending.43.Factory PA",
           "utterer": "SAY.Dialog:Ending.43.Factory PA",
           "context": "Zoom into the Factory intercom speaker.",
           "sourceEnglish": "*ksch*—Help! The donkeys are free! THEY ARE ESCAPING!",
@@ -2380,6 +2709,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Ending.44.Proper Ass",
           "utterer": "SAY.Dialog:Ending.44.Proper Ass",
           "context": "",
           "sourceEnglish": "Jailbreak!!!!",
@@ -2387,6 +2717,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:Ending.45.Factory PA",
           "utterer": "SAY.Dialog:Ending.45.Factory PA",
           "context": "Zoom out from the Factory intercom speaker.",
           "sourceEnglish": "Ayyyyyyyy—*ksh*",
@@ -2394,6 +2725,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Ending.60.Mme. Derriere",
           "utterer": "SAY.Dialog:Ending.60.Mme. Derriere",
           "context": "Zoom into the Factory intercom speaker upon exiting.",
           "sourceEnglish": "Whichever group of Activists has broken into my beloved Factory and let my donkeys out, hear me:",
@@ -2401,6 +2733,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Ending.61.Mme. Derriere",
           "utterer": "SAY.Dialog:Ending.61.Mme. Derriere",
           "context": "",
           "sourceEnglish": "You can't stop Progress.",
@@ -2408,6 +2741,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:Ending.62.Mme. Derriere",
           "utterer": "SAY.Dialog:Ending.62.Mme. Derriere",
           "context": "",
           "sourceEnglish": "But if you'd like to try...",
@@ -2415,6 +2749,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:Ending.63.Mme. Derriere",
           "utterer": "SAY.Dialog:Ending.63.Mme. Derriere",
           "context": "Zoom out from the Factory intercom speaker.",
           "sourceEnglish": "Come find me in my Robotics Lab.",
@@ -2427,6 +2762,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Container.51.Big Ass",
           "utterer": "SAY.Dialog:Container.51.Big Ass",
           "context": "A reflection by Big Ass when trying to leave the Factory for the first time.",
           "sourceEnglish": "Am I making a massive mistake?",
@@ -2434,6 +2770,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Container.58.Big Ass",
           "utterer": "SAY.Dialog:Container.58.Big Ass",
           "context": "",
           "sourceEnglish": "Shouldn't I try to stop the one in charge?",
@@ -2441,6 +2778,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Container.61.Big Ass",
           "utterer": "SAY.Dialog:Container.61.Big Ass",
           "context": "A reflection by Big Ass when trying to leave the Factory for a second time.",
           "sourceEnglish": "No, I've already done what I came to do.",
@@ -2448,6 +2786,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Container.23.Big Ass",
           "utterer": "SAY.Dialog:Container.23.Big Ass",
           "context": "A reflection by Big Ass when trying to go into the Robotics Lab the first time.",
           "sourceEnglish": "This way looks much more dangerous...",
@@ -2455,6 +2794,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Container.20.Big Ass",
           "utterer": "SAY.Dialog:Container.20.Big Ass",
           "context": "",
           "sourceEnglish": "I shouldn't bite off more than I can chew...",
@@ -2462,6 +2802,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Container.39.Big Ass",
           "utterer": "SAY.Dialog:Container.39.Big Ass",
           "context": "A reflection by Big Ass when trying to go into the Robotics Lab the second time.",
           "sourceEnglish": "What am I saying... I can do this!",
@@ -2469,6 +2810,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Container.44.Big Ass",
           "utterer": "SAY.Dialog:Container.44.Big Ass",
           "context": "Doors close behind Big Ass.",
           "sourceEnglish": "UH OH.",
@@ -2476,6 +2818,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Container.12.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.12.Mme. Derriere",
           "context": "Mme. Derriere stands behind a pane of glass in her Robotics Laboratory.",
           "sourceEnglish": "Hello donkey...",
@@ -2483,6 +2826,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:Container.64.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.64.Mme. Derriere",
           "context": "",
           "sourceEnglish": "I don't know how those pesky Activists broke into my factory and let you all out.",
@@ -2490,6 +2834,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Container.68.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.68.Mme. Derriere",
           "context": "",
           "sourceEnglish": "But let me tell you something...",
@@ -2497,6 +2842,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Container.67.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.67.Mme. Derriere",
           "context": "",
           "sourceEnglish": "I have a Masters in Business Administration from Mecha University.",
@@ -2504,6 +2850,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:Container.66.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.66.Mme. Derriere",
           "context": "",
           "sourceEnglish": "I know how to make ends meet.",
@@ -2511,6 +2858,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:Container.76.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.76.Mme. Derriere",
           "context": "",
           "sourceEnglish": "And you're about to meet your end.",
@@ -2518,6 +2866,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:Container.65.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.65.Mme. Derriere",
           "context": "Fight begins. After fight, jump to line 17 or 19.",
           "sourceEnglish": "PREPARE TO DIE!",
@@ -2525,6 +2874,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:Container.9.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.9.Mme. Derriere",
           "context": "This dialogue occurs if Big Ass WINS the fight against Mme. Derriere.",
           "sourceEnglish": "My beautiful and expensive Robots!",
@@ -2532,6 +2882,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:Container.69.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.69.Mme. Derriere",
           "context": "Explosions. Big leaves after this.",
           "sourceEnglish": "You'll PAY FOR THIS!",
@@ -2539,6 +2890,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:Container.4.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.4.Mme. Derriere",
           "context": "This dialogue occurs if Big Ass LOSES the fight against Mme. Derriere.",
           "sourceEnglish": "HA HA HA HA!",
@@ -2546,6 +2898,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:Container.70.Mme. Derriere",
           "utterer": "SAY.Dialog:Container.70.Mme. Derriere",
           "context": "Screen fades to black.",
           "sourceEnglish": "Look who's in the red now.",
@@ -2558,6 +2911,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.62.Kick Ass",
           "utterer": "SAY.Dialog:Opening.62.Kick Ass",
           "context": "Branch 3.1. Big LOST the fight against Mme. Derriere.",
           "sourceEnglish": "Big Ass really did it... he set them ALL free.",
@@ -2565,6 +2919,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.78.Smart Ass",
           "utterer": "SAY.Dialog:Opening.78.Smart Ass",
           "context": "",
           "sourceEnglish": "I thought I had the perfect Plan...",
@@ -2572,6 +2927,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.2.Sad Ass",
           "utterer": "SAY.Dialog:Opening.2.Sad Ass",
           "context": "This is said if Sad Ass is present.",
           "sourceEnglish": "*whimper*",
@@ -2579,6 +2935,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.63.Kick Ass",
           "utterer": "SAY.Dialog:Opening.63.Kick Ass",
           "context": "End of scene. The Asses leave.",
           "sourceEnglish": "Goodbye, Comrade Big Ass.",
@@ -2586,6 +2943,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.159.Big Ass",
           "utterer": "SAY.Dialog:Opening.159.Big Ass",
           "context": "Branch 3.2. Big ESCAPED the Factory without fighting Mme. Derriere.",
           "sourceEnglish": "I made it out... I'm FREE!",
@@ -2593,6 +2951,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.148.Big Ass",
           "utterer": "SAY.Dialog:Opening.148.Big Ass",
           "context": "",
           "sourceEnglish": "And I saved all those Asses—",
@@ -2600,6 +2959,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Opening.155.Big Ass",
           "utterer": "SAY.Dialog:Opening.155.Big Ass",
           "context": "End of scene. Big leaves.",
           "sourceEnglish": "But I guess I'm on my own now...",
@@ -2607,6 +2967,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Opening.165.Big Ass",
           "utterer": "SAY.Dialog:Opening.165.Big Ass",
           "context": "Branch 3.3. Big WON the fight against Mme. Derriere.",
           "sourceEnglish": "IT'S GONNA BLOW!",
@@ -2614,6 +2975,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:Opening.167.Big Ass",
           "utterer": "SAY.Dialog:Opening.167.Big Ass",
           "context": "",
           "sourceEnglish": "HEE HAW! I DID IT!",
@@ -2621,6 +2983,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Opening.173.Big Ass",
           "utterer": "SAY.Dialog:Opening.173.Big Ass",
           "context": "End of scene. Big leaves.",
           "sourceEnglish": "Who'd have thought I could save all those Asses and blow up a Factory all on my own?",

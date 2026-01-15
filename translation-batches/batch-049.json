@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 52,
+    "rowNumber": 55,
+    "key": "SAY.Dialog:PostComputer.13.Bad Ass",
+    "utterer": "SAY.Dialog:PostComputer.13.Bad Ass",
+    "context": "Bad Ass goes into the Machine.",
+    "sourceEnglish": "Kid, if anything goes wrong, I don't want to be remembered as a fucking donkey."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 53,
+    "rowNumber": 56,
+    "key": "SAY.Dialog:PostComputer.24.Bad Ass",
+    "utterer": "SAY.Dialog:PostComputer.24.Bad Ass",
+    "context": "",
+    "sourceEnglish": "My real name is..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 54,
+    "rowNumber": 57,
+    "key": "SAY.Dialog:PostComputer.11.Bad Ass",
+    "utterer": "SAY.Dialog:PostComputer.11.Bad Ass",
+    "context": "The doors close on Bad Ass.",
+    "sourceEnglish": "...Cole Butte."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:Opening.2.Melvin",
+    "utterer": "SAY.Dialog:Opening.2.Melvin",
+    "context": "Two Factory workers stand outside during a smoke break.",
+    "sourceEnglish": "Maybe we should get back to work now?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:Opening.7.Wedgie",
+    "utterer": "SAY.Dialog:Opening.7.Wedgie",
+    "context": "",
+    "sourceEnglish": "Settle down—we're on break!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Opening.6.Melvin",
+    "utterer": "SAY.Dialog:Opening.6.Melvin",
+    "context": "",
+    "sourceEnglish": "I can't afford to lose this job..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Opening.29.Melvin",
+    "utterer": "SAY.Dialog:Opening.29.Melvin",
+    "context": "",
+    "sourceEnglish": "Mme. Derriere has been hinting that she's going to automate every department!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Opening.30.Melvin",
+    "utterer": "SAY.Dialog:Opening.30.Melvin",
+    "context": "",
+    "sourceEnglish": "She's obsessed with efficiency—so can we go now?!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:Opening.5.Wedgie",
+    "utterer": "SAY.Dialog:Opening.5.Wedgie",
+    "context": "",
+    "sourceEnglish": "Cool it."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:Opening.10.Wedgie",
+    "utterer": "SAY.Dialog:Opening.10.Wedgie",
+    "context": "",
+    "sourceEnglish": "If we worked in Slaughter or Shipping, sure, maybe we could be replaced."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:Opening.31.Wedgie",
+    "utterer": "SAY.Dialog:Opening.31.Wedgie",
+    "context": "",
+    "sourceEnglish": "But us? No way."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:Opening.32.Wedgie",
+    "utterer": "SAY.Dialog:Opening.32.Wedgie",
+    "context": "",
+    "sourceEnglish": "You can't replace Animal Handling. It's an ART."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:Opening.9.Melvin",
+    "utterer": "SAY.Dialog:Opening.9.Melvin",
+    "context": "",
+    "sourceEnglish": "You say that, but I bet Mme. Derriere's already building Robots to go pick up donkeys instead of us."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:Opening.8.Wedgie",
+    "utterer": "SAY.Dialog:Opening.8.Wedgie",
+    "context": "",
+    "sourceEnglish": "Robots?!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:Opening.33.Wedgie",
+    "utterer": "SAY.Dialog:Opening.33.Wedgie",
+    "context": "",
+    "sourceEnglish": "When was the last time you saw a Robot?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:Opening.13.Melvin",
+    "utterer": "SAY.Dialog:Opening.13.Melvin",
+    "context": "",
+    "sourceEnglish": "Uh... I dunno. The Forklift's automated now, doesn't that count?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog:Opening.19.Wedgie",
+    "utterer": "SAY.Dialog:Opening.19.Wedgie",
+    "context": "",
+    "sourceEnglish": "There's a difference between a Machine and a Robot, idiot."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "SAY.Dialog:Opening.18.Melvin",
+    "utterer": "SAY.Dialog:Opening.18.Melvin",
+    "context": "",
+    "sourceEnglish": "What about the self-locking cages in the Holding Facilities?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Opening_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "SAY.Dialog:Opening.17.Wedgie",
+    "utterer": "SAY.Dialog:Opening.17.Wedgie",
+    "context": "",
+    "sourceEnglish": "What are you talking about? We don't have self-locking cages."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_EpisodeTitle_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "",
+    "sourceEnglish": "EPISODE SEVEN"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_EpisodeTitle_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "",
+    "sourceEnglish": "THE FACTORY"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_EpisodeTitle_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "WRITE.Dialog:Localizer.8",
+    "utterer": "WRITE.Dialog:Localizer.8",
+    "context": "",
+    "sourceEnglish": "Press X to Begin"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:Opening.62.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.62.Kick Ass",
+    "context": "",
+    "sourceEnglish": "WAKE UP! WAKE UP!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:Opening.63.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.63.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Oof... my head hurts..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Opening.64.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.64.Smart Ass",
+    "context": "Branch 1.1. The group went to the Circus and Sad Ass stayed on the Farm.",
+    "sourceEnglish": "Where's my Gorilla costume?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Opening.14.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.14.Kick Ass",
+    "context": "Jump to line 11.",
+    "sourceEnglish": "@#$%&! We're NOT AT THE CIRCUS ANYMORE!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Opening.188.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.188.Smart Ass",
+    "context": "Branch 1.2. The group went to the Circus with Sad Ass.",
+    "sourceEnglish": "Where's my Gorilla costume?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:Opening.76.Sad Ass",
+    "utterer": "SAY.Dialog:Opening.76.Sad Ass",
+    "context": "Jump to line 11.",
+    "sourceEnglish": "We're not at the Circus anymore..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:Opening.89.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.89.Smart Ass",
+    "context": "Branch 1.3. The group went to the Zoo.",
+    "sourceEnglish": "Is it Monday? Are we starting Ass of the Week?!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:Opening.90.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.90.Kick Ass",
+    "context": "Jump to line 11.",
+    "sourceEnglish": "@#$%&! We're NOT AT THE ZOO ANYMORE!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:Opening.156.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.156.Kick Ass",
+    "context": "Branches (1.1, 1.2, 1.3) converge.",
+    "sourceEnglish": "We're in trouble—REAL TROUBLE."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:Opening.160.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.160.Smart Ass",
+    "context": "",
+    "sourceEnglish": "What?! Where are the others?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:Opening.164.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.164.Kick Ass",
+    "context": "",
+    "sourceEnglish": "Slow Ass wasn't in the Truck-Machine when we got here—"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:Opening.170.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.170.Kick Ass",
+    "context": "",
+    "sourceEnglish": "And Big Ass is MISSING."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:Opening.183.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.183.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Big Ass has gotta be around here somewhere."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "MENU.Dialog:Opening.173",
+    "utterer": "MENU.Dialog:Opening.173",
+    "context": "Dialogue option 1. Jump to line 19.",
+    "sourceEnglish": "Maybe he's still stuck in the Truck-Machine."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "MENU.Dialog:Opening.175",
+    "utterer": "MENU.Dialog:Opening.175",
+    "context": "Dialogue option 2. Jump to line 19.",
+    "sourceEnglish": "Maybe he couldn't fit in this cage."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "MENU.Dialog:Opening.174",
+    "utterer": "MENU.Dialog:Opening.174",
+    "context": "Dialogue option 3. Jump to line 19.",
+    "sourceEnglish": "Maybe the Humans mistook him for a Horse."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "SAY.Dialog:Opening.184.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.184.Smart Ass",
+    "context": "All dialogue options from 3 previous lines converge.",
+    "sourceEnglish": "Maybe—"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "SAY.Dialog:Opening.36.???",
+    "utterer": "SAY.Dialog:Opening.36.???",
+    "context": "",
+    "sourceEnglish": "Don't bother looking for your friend."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "SAY.Dialog:Opening.102.???",
+    "utterer": "SAY.Dialog:Opening.102.???",
+    "context": "",
+    "sourceEnglish": "It's too late for him."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "SAY.Dialog:Opening.99.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.99.Kick Ass",
+    "context": "",
+    "sourceEnglish": "@#$%&! Who are YOU?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "SAY.Dialog:Opening.100.Bleak Ass",
+    "utterer": "SAY.Dialog:Opening.100.Bleak Ass",
+    "context": "",
+    "sourceEnglish": "The name is Bleak Ass."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "SAY.Dialog:Opening.103.Bleak Ass",
+    "utterer": "SAY.Dialog:Opening.103.Bleak Ass",
+    "context": "",
+    "sourceEnglish": "I came here with my Herd."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "SAY.Dialog:Opening.104.Bleak Ass",
+    "utterer": "SAY.Dialog:Opening.104.Bleak Ass",
+    "context": "",
+    "sourceEnglish": "We used to work in the mountains carrying books to school children."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "SAY.Dialog:Opening.168.Bleak Ass",
+    "utterer": "SAY.Dialog:Opening.168.Bleak Ass",
+    "context": "",
+    "sourceEnglish": "Now I'm the only one of us left."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "SAY.Dialog:Opening.106.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.106.Smart Ass",
+    "context": "",
+    "sourceEnglish": "What is this place?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "SAY.Dialog:Opening.107.Bleak Ass",
+    "utterer": "SAY.Dialog:Opening.107.Bleak Ass",
+    "context": "",
+    "sourceEnglish": "It's called a Factory..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "SAY.Dialog:Opening.108.Bleak Ass",
+    "utterer": "SAY.Dialog:Opening.108.Bleak Ass",
+    "context": "",
+    "sourceEnglish": "But I call it Hell."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Holding1_localization",
+    "entryIndex": 27,
+    "rowNumber": 30,
+    "key": "SAY.Dialog:Opening.109.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.109.Kick Ass",
+    "context": "",
+    "sourceEnglish": "@#$%&!—Smart Ass, what's the PLAN?!"
+  }
+]

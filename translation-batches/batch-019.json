@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 35,
+    "rowNumber": 38,
+    "key": "SAY.Dialog:KickHard.27.Kick Ass",
+    "utterer": "SAY.Dialog:KickHard.27.Kick Ass",
+    "context": "",
+    "sourceEnglish": "We've had ENOUGH!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 36,
+    "rowNumber": 39,
+    "key": "SAY.Dialog:KickHard.56.Kick Ass",
+    "utterer": "SAY.Dialog:KickHard.56.Kick Ass",
+    "context": "",
+    "sourceEnglish": "We don't want to play your GAME ANYMORE!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 37,
+    "rowNumber": 40,
+    "key": "SAY.Dialog:KickHard.24.Hard Ass",
+    "utterer": "SAY.Dialog:KickHard.24.Hard Ass",
+    "context": "",
+    "sourceEnglish": "There is no going back after what we have done."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 38,
+    "rowNumber": 41,
+    "key": "SAY.Dialog:KickHard.55.Hard Ass",
+    "utterer": "SAY.Dialog:KickHard.55.Hard Ass",
+    "context": "",
+    "sourceEnglish": "The truth will tear the Herd in two."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 39,
+    "rowNumber": 42,
+    "key": "SAY.Dialog:KickHard.28.Kick Ass",
+    "utterer": "SAY.Dialog:KickHard.28.Kick Ass",
+    "context": "",
+    "sourceEnglish": "I DON'T CARE about the Herd!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 40,
+    "rowNumber": 43,
+    "key": "SAY.Dialog:KickHard.38.Kick Ass",
+    "utterer": "SAY.Dialog:KickHard.38.Kick Ass",
+    "context": "",
+    "sourceEnglish": "All I care about is—"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 41,
+    "rowNumber": 44,
+    "key": "SAY.Dialog:KickHard.54.Kick Ass",
+    "utterer": "SAY.Dialog:KickHard.54.Kick Ass",
+    "context": "",
+    "sourceEnglish": "Sick?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 42,
+    "rowNumber": 45,
+    "key": "SAY.Dialog:KickHard.37.Kick Ass",
+    "utterer": "SAY.Dialog:KickHard.37.Kick Ass",
+    "context": "",
+    "sourceEnglish": "SICK?!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 43,
+    "rowNumber": 46,
+    "key": "SAY.Dialog:KickHard.40.Kick Ass",
+    "utterer": "SAY.Dialog:KickHard.40.Kick Ass",
+    "context": "Kick Ass goes to find Sick Ass.",
+    "sourceEnglish": "Sick—where are you?!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 44,
+    "rowNumber": 47,
+    "key": "SAY.Dialog:HardRepeater.12.Hard Ass",
+    "utterer": "SAY.Dialog:HardRepeater.12.Hard Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone.",
+    "sourceEnglish": "\"You only hit rock bottom when you quit.\""
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 45,
+    "rowNumber": 48,
+    "key": "SAY.Dialog:KickNice.10.Nice Ass",
+    "utterer": "SAY.Dialog:KickNice.10.Nice Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they talked with Sick.",
+    "sourceEnglish": "Sick looks like she's feeling better! I think everything's going to be alright!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 46,
+    "rowNumber": 49,
+    "key": "SAY.Dialog:KickNice.12.Nice Ass",
+    "utterer": "SAY.Dialog:KickNice.12.Nice Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they did NOT talk with Sick.",
+    "sourceEnglish": "How's Sick feeling today? You two make such a good pair!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 47,
+    "rowNumber": 50,
+    "key": "SAY.Dialog:KickSad.10.Sad Ass",
+    "utterer": "SAY.Dialog:KickSad.10.Sad Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they talked with Sick.",
+    "sourceEnglish": "You and I can sit Vigil together. I don't have my candle though..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 48,
+    "rowNumber": 51,
+    "key": "SAY.Dialog:KickSad.12.Sad Ass",
+    "utterer": "SAY.Dialog:KickSad.12.Sad Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they did NOT talk with Sick.",
+    "sourceEnglish": "Today is just as dark as yesterday and will be just as dark as tomorrow."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 49,
+    "rowNumber": 52,
+    "key": "SAY.Dialog:KickThirsty.10.Thirsty Ass",
+    "utterer": "SAY.Dialog:KickThirsty.10.Thirsty Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they talked with Sick.",
+    "sourceEnglish": "You look like you could use some water too!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 50,
+    "rowNumber": 53,
+    "key": "SAY.Dialog:KickThirsty.12.Thirsty Ass",
+    "utterer": "SAY.Dialog:KickThirsty.12.Thirsty Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they did NOT talk with Sick.",
+    "sourceEnglish": "Dangnabbit! I'm goin' stir crazy down here!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 51,
+    "rowNumber": 54,
+    "key": "SAY.Dialog:KickBig.10.Big Ass",
+    "utterer": "SAY.Dialog:KickBig.10.Big Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they talked with Sick.",
+    "sourceEnglish": "I hope Sick found some extra rations."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 52,
+    "rowNumber": 55,
+    "key": "SAY.Dialog:KickBig.12.Big Ass",
+    "utterer": "SAY.Dialog:KickBig.12.Big Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they did NOT talk with Sick.",
+    "sourceEnglish": "This is a difficult time, Comrade. I'm here for you."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 53,
+    "rowNumber": 56,
+    "key": "SAY.Dialog:KickSlow.10.Slow Ass",
+    "utterer": "SAY.Dialog:KickSlow.10.Slow Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone.",
+    "sourceEnglish": "I hope Sick is feeling b-b-b..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 54,
+    "rowNumber": 57,
+    "key": "SAY.Dialog:KickSlow.24.Slow Ass",
+    "utterer": "SAY.Dialog:KickSlow.24.Slow Ass",
+    "context": "",
+    "sourceEnglish": "b-b-b-b..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 55,
+    "rowNumber": 58,
+    "key": "SAY.Dialog:KickSlow.23.Slow Ass",
+    "utterer": "SAY.Dialog:KickSlow.23.Slow Ass",
+    "context": "",
+    "sourceEnglish": "b-b-b-b-b..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 56,
+    "rowNumber": 59,
+    "key": "SAY.Dialog:KickSlow.22.Slow Ass",
+    "utterer": "SAY.Dialog:KickSlow.22.Slow Ass",
+    "context": "",
+    "sourceEnglish": "...better."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 57,
+    "rowNumber": 60,
+    "key": "SAY.Dialog:KickSturdy.10.Sturdy Ass",
+    "utterer": "SAY.Dialog:KickSturdy.10.Sturdy Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they talked with Sick.",
+    "sourceEnglish": "Hold tight, Comrade. I trust the Gods will see how special Sick Ass is when they meet her."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 58,
+    "rowNumber": 61,
+    "key": "SAY.Dialog:KickSturdy.23.Sturdy Ass",
+    "utterer": "SAY.Dialog:KickSturdy.23.Sturdy Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone. // This option is if they did NOT talk with Sick.",
+    "sourceEnglish": "Have you seen {$NewName}? I can't find her anywhere."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 59,
+    "rowNumber": 62,
+    "key": "SAY.Dialog:KickSmart.10.Smart Ass",
+    "utterer": "SAY.Dialog:KickSmart.10.Smart Ass",
+    "context": "NPC dialogue repeater option. No particular order for when you talk to someone.",
+    "sourceEnglish": "If we had some Human medicine maybe Sick would get better."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 60,
+    "rowNumber": 63,
+    "key": "SAY.Dialog:KickAttemptToExitToMine.2.Kick Ass",
+    "utterer": "SAY.Dialog:KickAttemptToExitToMine.2.Kick Ass",
+    "context": "Dialogue for when Kick Ass tries to exit.",
+    "sourceEnglish": "Sick?!—@#$%&!—I don't think she'd have gone this way..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 61,
+    "rowNumber": 64,
+    "key": "SAY.Dialog:KickAttemptToExitOutside.2.Kick Ass",
+    "utterer": "SAY.Dialog:KickAttemptToExitOutside.2.Kick Ass",
+    "context": "Dialogue for when Kick Ass tries to exit.",
+    "sourceEnglish": "I don't think Sick would have gone back out into the rain..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 62,
+    "rowNumber": 65,
+    "key": "SAY.Dialog:KickFindsSick.1.Kick Ass",
+    "utterer": "SAY.Dialog:KickFindsSick.1.Kick Ass",
+    "context": "Kick finds Sick Ass's lifeless body.",
+    "sourceEnglish": "I FOUND YOU!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 63,
+    "rowNumber": 66,
+    "key": "SAY.Dialog:KickFindsSick.2.Kick Ass",
+    "utterer": "SAY.Dialog:KickFindsSick.2.Kick Ass",
+    "context": "",
+    "sourceEnglish": "Sick...? SICK?!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 64,
+    "rowNumber": 67,
+    "key": "SAY.Dialog:KickFindsSick.6.Kick Ass",
+    "utterer": "SAY.Dialog:KickFindsSick.6.Kick Ass",
+    "context": "Kick wails.",
+    "sourceEnglish": "HEEEEEHAWWWW!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 65,
+    "rowNumber": 68,
+    "key": "SAY.Dialog:KickSturdy.12.",
+    "utterer": "SAY.Dialog:KickSturdy.12.",
+    "context": "",
+    "sourceEnglish": "REPEATER"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 66,
+    "rowNumber": 69,
+    "key": "SAY.Dialog:KickSlow.12.",
+    "utterer": "SAY.Dialog:KickSlow.12.",
+    "context": "",
+    "sourceEnglish": "REPEATER"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 67,
+    "rowNumber": 70,
+    "key": "SAY.Dialog:KickHard.12.",
+    "utterer": "SAY.Dialog:KickHard.12.",
+    "context": "",
+    "sourceEnglish": "REPEATER"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_Mine1F_localization",
+    "entryIndex": 68,
+    "rowNumber": 71,
+    "key": "SAY.Dialog:KickSmart.12.",
+    "utterer": "SAY.Dialog:KickSmart.12.",
+    "context": "",
+    "sourceEnglish": "REPEATER"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:Debate.39.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.39.Kick Ass",
+    "context": "The Herd gathers to see the commotion. Kick Ass, standing over his sister's body, is incensed and rageful.",
+    "sourceEnglish": "HEEEE—@#$%&!—HAWWW!!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:Debate.42.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.42.Kick Ass",
+    "context": "",
+    "sourceEnglish": "THIS IS YOUR FAULT HARD ASS!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Debate.59.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.59.Kick Ass",
+    "context": "",
+    "sourceEnglish": "EVERYONE deserves to know why Sick is DEAD."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Debate.60.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.60.Kick Ass",
+    "context": "",
+    "sourceEnglish": "What REALLY happened on our \"scavenging\" missions..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Debate.61.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.61.Kick Ass",
+    "context": "",
+    "sourceEnglish": "What Hard Ass FORCED us to do..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:Debate.301.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.301.Kick Ass",
+    "context": "",
+    "sourceEnglish": "...to the Humans."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:Debate.62.Smart Ass",
+    "utterer": "SAY.Dialog:Debate.62.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Humans?! Are you joking?!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:Debate.64.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.64.Kick Ass",
+    "context": "Fade to flashback (next scene).",
+    "sourceEnglish": "They've been—TRYING TO RETURN—to Fannyside ever since the Fire."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:Debate.76.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.76.Kick Ass",
+    "context": "Fade back from flashback.",
+    "sourceEnglish": "Hard Ass forced us to keep it a SECRET."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:Debate.78.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.78.Kick Ass",
+    "context": "",
+    "sourceEnglish": "Because you'd CRAWL BACK to the Humans just to stay alive."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:Debate.79.Kick Ass",
+    "utterer": "SAY.Dialog:Debate.79.Kick Ass",
+    "context": "",
+    "sourceEnglish": "But LOOK AT US NOW—dying anyway!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:Debate.123.Smart Ass",
+    "utterer": "SAY.Dialog:Debate.123.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Is this some kind of twisted joke, Hard Ass?!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:Debate.88.Hard Ass",
+    "utterer": "SAY.Dialog:Debate.88.Hard Ass",
+    "context": "",
+    "sourceEnglish": "You begged me to rescue the Humans."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog:Debate.89.Hard Ass",
+    "utterer": "SAY.Dialog:Debate.89.Hard Ass",
+    "context": "",
+    "sourceEnglish": "But when I went to save them from the Fire, the Humans were ready to kill me to save themselves."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "SAY.Dialog:Debate.90.Hard Ass",
+    "utterer": "SAY.Dialog:Debate.90.Hard Ass",
+    "context": "",
+    "sourceEnglish": "They revealed their true nature."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_HerdSplits_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "SAY.Dialog:Debate.94.Hard Ass",
+    "utterer": "SAY.Dialog:Debate.94.Hard Ass",
+    "context": "",
+    "sourceEnglish": "That day, I learned what it will take for us to survive."
+  }
+]

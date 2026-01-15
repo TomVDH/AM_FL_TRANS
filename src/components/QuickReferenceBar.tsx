@@ -41,7 +41,32 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
   // Auto-detect matches from current source text
   const matches = useMemo(() => {
     if (!sourceText) return [];
-    return findCharacterMatches(sourceText);
+    const allMatches = findCharacterMatches(sourceText);
+
+    // Group matches by character name (english) to show count
+    const groupedMap = new Map<string, {
+      match: CodexMatch;
+      count: number;
+      instances: CodexMatch[];
+    }>();
+
+    allMatches.forEach(match => {
+      const key = match.english;
+      if (groupedMap.has(key)) {
+        const existing = groupedMap.get(key)!;
+        existing.count++;
+        existing.instances.push(match);
+      } else {
+        groupedMap.set(key, {
+          match,
+          count: 1,
+          instances: [match],
+        });
+      }
+    });
+
+    // Return array with count metadata
+    return Array.from(groupedMap.values());
   }, [sourceText, findCharacterMatches]);
 
   if (!isVisible || matches.length === 0) {
@@ -67,7 +92,7 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
             Quick Ref
           </span>
           <span className="text-[10px] text-purple-500 dark:text-purple-400">
-            {matches.length} match{matches.length !== 1 ? 'es' : ''}
+            {matches.reduce((sum, m) => sum + m.count, 0)} instance{matches.reduce((sum, m) => sum + m.count, 0) !== 1 ? 's' : ''} ({matches.length} unique)
           </span>
         </div>
         <div className="flex items-center gap-2">
@@ -96,26 +121,33 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
 
       {/* Match Pills - Smaller and more compact */}
       <div className="flex flex-wrap gap-1.5">
-        {visibleMatches.map((match, index) => (
+        {visibleMatches.map((item, index) => (
           <div
-            key={`${match.english}-${index}`}
+            key={`${item.match.english}-${index}`}
             className="group flex items-center gap-0.5 bg-white dark:bg-gray-800 border border-purple-200 dark:border-purple-700 px-2 py-1 shadow-sm hover:shadow-md hover:border-purple-400 dark:hover:border-purple-500 transition-all duration-200 cursor-pointer"
             style={{ borderRadius: '3px' }}
             onClick={() => onOpenReferenceTools?.()}
-            title="Click to open Reference Tools"
+            title={`Found ${item.count}x - Click to open Reference Tools`}
           >
             {/* Category indicator */}
-            {match.category && (
+            {item.match.category && (
               <span className={`w-1 h-1 rounded-full mr-0.5 ${
-                match.category === 'CHARACTER' ? 'bg-purple-500' :
-                match.category === 'LOCATION' ? 'bg-blue-500' :
+                item.match.category === 'CHARACTER' ? 'bg-purple-500' :
+                item.match.category === 'LOCATION' ? 'bg-blue-500' :
                 'bg-gray-400'
               }`} />
             )}
 
+            {/* Count badge - only show if > 1 */}
+            {item.count > 1 && (
+              <span className="text-[9px] font-bold text-white bg-purple-600 dark:bg-purple-500 px-1 py-0.5 mr-0.5" style={{ borderRadius: '2px' }}>
+                {item.count}x
+              </span>
+            )}
+
             {/* English name - smaller */}
             <span className="text-[11px] text-gray-600 dark:text-gray-400">
-              {match.english}
+              {item.match.english}
             </span>
 
             {/* Arrow - smaller */}
@@ -125,18 +157,18 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
 
             {/* Dutch translation - smaller */}
             <span className="text-[11px] font-semibold text-purple-700 dark:text-purple-300">
-              {match.dutch}
+              {item.match.dutch}
             </span>
 
             {/* Insert button - smaller, stops propagation */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                onInsert(match.dutch);
+                onInsert(item.match.dutch);
               }}
               className="ml-1 p-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-800 transition-all duration-200 opacity-60 group-hover:opacity-100"
               style={{ borderRadius: '2px', minWidth: '20px', minHeight: '20px' }}
-              title={`Insert "${match.dutch}"`}
+              title={`Insert "${item.match.dutch}"`}
             >
               <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />

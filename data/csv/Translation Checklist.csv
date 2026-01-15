@@ -1,44 +1,75 @@
 # File: Translation Checklist
-# Processed: 2025-08-21T22:17:44.978Z
-# Sheets: 7
+# Processed: 2025-12-29T22:52:04.205Z
+# Sheets: 6
 
 RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
-10,Schedule,CA-E1 [ML] - 11am PST,"",45838,TR-E3 [ML] - 10am PST,"",2025-08-21T22:17:44.978Z
-23,Schedule,KO/JP font updates,"",45887,KO-E4,"",2025-08-21T22:17:44.978Z
-25,Schedule,KO/JP font updates,"",45894,KO-E5,"",2025-08-21T22:17:44.978Z
-27,Schedule,KO/JP font updates,"",45901,CA-E6,"",2025-08-21T22:17:44.978Z
-30,Schedule,KO/JP font updates,"",45908,CA-E7 + E8,"",2025-08-21T22:17:44.978Z
-33,Schedule,"","",45922,PT-Stability Playthrough,"",2025-08-21T22:17:44.978Z
-35,Schedule,"","",45936,CA-E9 + E10,"",2025-08-21T22:17:44.978Z
-36,Schedule,"","",45943,CA-E0 and animation checks,"",2025-08-21T22:17:44.978Z
-2,TR,"World Building Meeting 1: Names, Tone, Humour","",All,x,"",2025-08-21T22:17:44.978Z
-3,TR,"World Building Meeting 2: Make Decisions on Names, etc. (They can change!)","",All,x,"",2025-08-21T22:17:44.978Z
-4,TR,Test translation of E1 Stable 1F + E1 Farm,"",Translator,x,"",2025-08-21T22:17:44.978Z
-5,TR,Review Test Translation,"",All,x,"",2025-08-21T22:17:44.978Z
-8,TR,E1,"",Translator,x,"",2025-08-21T22:17:44.978Z
-9,TR,Review,"",All,x,"",2025-08-21T22:17:44.978Z
-10,TR,E2,"",Translator,x,"",2025-08-21T22:17:44.978Z
-11,TR,Review,"",All,x,"",2025-08-21T22:17:44.978Z
-12,TR,E3,"",Translator,x,"",2025-08-21T22:17:44.978Z
-13,TR,Review,"",All,x,"",2025-08-21T22:17:44.978Z
-14,TR,E4,"",Translator,x,"",2025-08-21T22:17:44.978Z
-15,TR,Review,"",All,x,"",2025-08-21T22:17:44.978Z
-16,TR,E5 (both),"",Translator,x,"",2025-08-21T22:17:44.978Z
-17,TR,Review,"",All,x,"",2025-08-21T22:17:44.978Z
-51,TR,"","",Can we make a really long word for the song of ascension?,Eşekleştiremeyeceklerimizdenmişçesine,"",2025-08-21T22:17:44.978Z
-2,CA,"World Building Meeting 1: Names, Tone, Humour","",All,x,"",2025-08-21T22:17:44.978Z
-3,CA,"World Building Meeting 2: Make Decisions on Names, etc. (They can change!)","",All,x,"",2025-08-21T22:17:44.978Z
-4,CA,Test translation of E1 Stable 1F + E1 Farm,"",Translator,x,"",2025-08-21T22:17:44.978Z
-5,CA,Review Test Translation,"",All,x,"",2025-08-21T22:17:44.978Z
-8,CA,E1,"",Translator,x,"",2025-08-21T22:17:44.978Z
-9,CA,Review,"",All,x,"",2025-08-21T22:17:44.978Z
-10,CA,E2,"",Translator,x,"",2025-08-21T22:17:44.978Z
-11,CA,Review,"",All,x,"",2025-08-21T22:17:44.978Z
-12,CA,E3,"",Translator,x,"",2025-08-21T22:17:44.978Z
-13,CA,Review,"",All,x,"",2025-08-21T22:17:44.978Z
-2,KO,"World Building Meeting 1: Names, Tone, Humour","",All,x,"",2025-08-21T22:17:44.978Z
-4,KO,Test translation of E1 Stable 1F + E1 Farm,"",Translator,x,"",2025-08-21T22:17:44.978Z
-5,KO,Review Test Translation,"",All,x,"",2025-08-21T22:17:44.978Z
-2,NL,"World Building Meeting 1: Names, Tone, Humour","",All,x,"",2025-08-21T22:17:44.978Z
-4,NL,Test translation of E1 Stable 1F + E1 Farm,"",Translator,x,"",2025-08-21T22:17:44.978Z
-2,JP,"World Building Meeting 1: Names, Tone, Humour","",All,x,"",2025-08-21T22:17:44.978Z
+10,Schedule,CA-E1 [ML] - 11am PST,45838,45838,TR-E3 [ML] - 10am PST,"",2025-12-29T22:52:04.205Z
+27,Schedule,KO/JP font updates,45901,45901,CA-E6,"",2025-12-29T22:52:04.205Z
+31,Schedule,,,,KO-E6 + E7 @ 11h ET (PB in Ottawa),"",2025-12-29T22:52:04.205Z
+33,Schedule,,45922,45922,PT-Stability Playthrough,"",2025-12-29T22:52:04.205Z
+34,Schedule,,45929,45929,CA-E9 + E10,"",2025-12-29T22:52:04.205Z
+35,Schedule,,45936,45936,KO-Review,"",2025-12-29T22:52:04.205Z
+37,Schedule,,45943,45943,CA-E0 and animation checks,"",2025-12-29T22:52:04.205Z
+38,Schedule,KO-E10 + 0,45950,45950,KO-Review,"",2025-12-29T22:52:04.205Z
+45,Schedule,NL-E5 - TBD,45999,45999,NL-E6 - TBD,"",2025-12-29T22:52:04.205Z
+46,Schedule,NL-E7/8 - TBD,46006,46006,NL-E9 - TBD,"",2025-12-29T22:52:04.205Z
+2,TR,World Building Meeting 1: Names, Tone, Humour,All,All,x,"",2025-12-29T22:52:04.205Z
+3,TR,World Building Meeting 2: Make Decisions on Names, etc. (They can change!),All,All,x,"",2025-12-29T22:52:04.205Z
+4,TR,Test translation of E1 Stable 1F + E1 Farm,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+5,TR,Review Test Translation,All,All,x,"",2025-12-29T22:52:04.205Z
+6,TR,E0,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+7,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+8,TR,E1,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+9,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+10,TR,E2,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+11,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+12,TR,E3,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+13,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+14,TR,E4,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+15,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+16,TR,E5 (both),Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+17,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+18,TR,E6,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+19,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+20,TR,E7,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+21,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+22,TR,E8,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+23,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+24,TR,E9,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+25,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+26,TR,E10,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+27,TR,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+28,TR,Redraw/Animate all NonCSV elements,Patrick,Patrick,x,"",2025-12-29T22:52:04.205Z
+29,TR,E10 Words; Manual input, add all targeted GameObject, reposition all respawn colliders,Patrick,Patrick,x,"",2025-12-29T22:52:04.205Z
+30,TR,Add new Sprites/Animations to GameObjects,Patrick,Patrick,x,"",2025-12-29T22:52:04.205Z
+52,TR,,Can we make a really long word for the song of ascension?,Can we make a really long word for the song of ascension?,Eşekleştiremeyeceklerimizdenmişçesine,"",2025-12-29T22:52:04.205Z
+2,NL,World Building Meeting 1: Names, Tone, Humour,All,All,x,"",2025-12-29T22:52:04.205Z
+4,NL,Test translation of E1 Stable 1F + E1 Farm,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+8,NL,E1,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+9,NL,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+10,NL,E2,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+11,NL,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+12,NL,E3,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+13,NL,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+2,CA,World Building Meeting 1: Names, Tone, Humour,All,All,x,"",2025-12-29T22:52:04.205Z
+3,CA,World Building Meeting 2: Make Decisions on Names, etc. (They can change!),All,All,x,"",2025-12-29T22:52:04.205Z
+4,CA,Test translation of E1 Stable 1F + E1 Farm,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+5,CA,Review Test Translation,All,All,x,"",2025-12-29T22:52:04.205Z
+8,CA,E1,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+9,CA,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+10,CA,E2,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+11,CA,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+12,CA,E3,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+13,CA,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+2,KO,World Building Meeting 1: Names, Tone, Humour,All,All,x,"",2025-12-29T22:52:04.205Z
+4,KO,Test translation of E1 Stable 1F + E1 Farm,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+5,KO,Review Test Translation,All,All,x,"",2025-12-29T22:52:04.205Z
+8,KO,E1,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+9,KO,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+10,KO,E2,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+11,KO,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+12,KO,E3,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+13,KO,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+14,KO,E4,Translator,Translator,x,"",2025-12-29T22:52:04.205Z
+15,KO,Review,All,All,x,"",2025-12-29T22:52:04.205Z
+2,JP,World Building Meeting 1: Names, Tone, Humour,All,All,x,"",2025-12-29T22:52:04.205Z

@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 46,
+    "rowNumber": 48,
+    "key": "WRITE.DialogLocalizer.84",
+    "utterer": "WRITE.DialogLocalizer.84",
+    "context": "",
+    "sourceEnglish": "Yes"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 47,
+    "rowNumber": 49,
+    "key": "WRITE.DialogLocalizer.85",
+    "utterer": "WRITE.DialogLocalizer.85",
+    "context": "",
+    "sourceEnglish": "No"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 48,
+    "rowNumber": 50,
+    "key": "WRITE.DialogLocalizer.178",
+    "utterer": "WRITE.DialogLocalizer.178",
+    "context": "",
+    "sourceEnglish": "I don't know"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 49,
+    "rowNumber": 51,
+    "key": "WRITE.DialogLocalizer.86",
+    "utterer": "WRITE.DialogLocalizer.86",
+    "context": "",
+    "sourceEnglish": "Would you consider yourself to be the best representative of your species to lead a Revolution?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 50,
+    "rowNumber": 52,
+    "key": "WRITE.DialogLocalizer.87",
+    "utterer": "WRITE.DialogLocalizer.87",
+    "context": "",
+    "sourceEnglish": "Yes"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 51,
+    "rowNumber": 53,
+    "key": "WRITE.DialogLocalizer.88",
+    "utterer": "WRITE.DialogLocalizer.88",
+    "context": "",
+    "sourceEnglish": "No"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 52,
+    "rowNumber": 54,
+    "key": "WRITE.DialogLocalizer.89",
+    "utterer": "WRITE.DialogLocalizer.89",
+    "context": "",
+    "sourceEnglish": "Which of these mythic and literary heroes do you identify with the most?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 53,
+    "rowNumber": 55,
+    "key": "WRITE.DialogLocalizer.90",
+    "utterer": "WRITE.DialogLocalizer.90",
+    "context": "",
+    "sourceEnglish": "Bottom from A Midsummer Night's Dream"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 54,
+    "rowNumber": 56,
+    "key": "WRITE.DialogLocalizer.91",
+    "utterer": "WRITE.DialogLocalizer.91",
+    "context": "",
+    "sourceEnglish": "Lucius from The Golden Ass by Apuleius"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 55,
+    "rowNumber": 57,
+    "key": "WRITE.DialogLocalizer.180",
+    "utterer": "WRITE.DialogLocalizer.180",
+    "context": "",
+    "sourceEnglish": "Midas from Greek Mythology"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 56,
+    "rowNumber": 58,
+    "key": "WRITE.DialogLocalizer.179",
+    "utterer": "WRITE.DialogLocalizer.179",
+    "context": "",
+    "sourceEnglish": "Pinocchio from Pinocchio"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 57,
+    "rowNumber": 59,
+    "key": "WRITE.DialogLocalizer.19",
+    "utterer": "WRITE.DialogLocalizer.19",
+    "context": "",
+    "sourceEnglish": "PHASE ONE\\nCOMPLETE"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 58,
+    "rowNumber": 60,
+    "key": "WRITE.DialogLocalizer.20",
+    "utterer": "WRITE.DialogLocalizer.20",
+    "context": "",
+    "sourceEnglish": "CALIBRATING INTELLIGENCE"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 59,
+    "rowNumber": 61,
+    "key": "WRITE.DialogLocalizer.92",
+    "utterer": "WRITE.DialogLocalizer.92",
+    "context": "",
+    "sourceEnglish": "In English, when one human says to another human, \"You ass,\" they are comparing a human to:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 60,
+    "rowNumber": 62,
+    "key": "WRITE.DialogLocalizer.93",
+    "utterer": "WRITE.DialogLocalizer.93",
+    "context": "",
+    "sourceEnglish": "Equus asinus"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 61,
+    "rowNumber": 63,
+    "key": "WRITE.DialogLocalizer.94",
+    "utterer": "WRITE.DialogLocalizer.94",
+    "context": "",
+    "sourceEnglish": "A buttocks"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 62,
+    "rowNumber": 64,
+    "key": "WRITE.DialogLocalizer.95",
+    "utterer": "WRITE.DialogLocalizer.95",
+    "context": "",
+    "sourceEnglish": "In English, when one human says to another human, \"I'd hit that ass\" they mean:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 63,
+    "rowNumber": 65,
+    "key": "WRITE.DialogLocalizer.96",
+    "utterer": "WRITE.DialogLocalizer.96",
+    "context": "",
+    "sourceEnglish": "They would forcibly beat an Equus asinus if they could"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 64,
+    "rowNumber": 66,
+    "key": "WRITE.DialogLocalizer.97",
+    "utterer": "WRITE.DialogLocalizer.97",
+    "context": "",
+    "sourceEnglish": "They would have sexual intercourse with another human if they could"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 65,
+    "rowNumber": 67,
+    "key": "WRITE.DialogLocalizer.98",
+    "utterer": "WRITE.DialogLocalizer.98",
+    "context": "",
+    "sourceEnglish": "In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 66,
+    "rowNumber": 68,
+    "key": "WRITE.DialogLocalizer.99",
+    "utterer": "WRITE.DialogLocalizer.99",
+    "context": "",
+    "sourceEnglish": "Balaam beats the ass to death and has to find another one to do his work for him"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 67,
+    "rowNumber": 69,
+    "key": "WRITE.DialogLocalizer.100",
+    "utterer": "WRITE.DialogLocalizer.100",
+    "context": "",
+    "sourceEnglish": "God gives the ass the ability to speak and the ass begs Balaam to spare them"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 68,
+    "rowNumber": 70,
+    "key": "WRITE.DialogLocalizer.101",
+    "utterer": "WRITE.DialogLocalizer.101",
+    "context": "",
+    "sourceEnglish": "In Aesop's Fables, one reads: \"An ass put on the skin of a lion and went around frightening all the animals. The ass saw a fox and tried to frighten her too, but she had heard his voice first, so she said to the ass, 'You can be sure that I too would have been afraid, if I had not already heard the sound of your bray'.\" The moral is:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 69,
+    "rowNumber": 71,
+    "key": "WRITE.DialogLocalizer.102",
+    "utterer": "WRITE.DialogLocalizer.102",
+    "context": "",
+    "sourceEnglish": "The disenfranchised are forced to imitate those in power without ever attaining more power"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 70,
+    "rowNumber": 72,
+    "key": "WRITE.DialogLocalizer.103",
+    "utterer": "WRITE.DialogLocalizer.103",
+    "context": "",
+    "sourceEnglish": "A fool is still a fool regardless of how they are dressed"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 71,
+    "rowNumber": 73,
+    "key": "WRITE.DialogLocalizer.104",
+    "utterer": "WRITE.DialogLocalizer.104",
+    "context": "",
+    "sourceEnglish": "In Ancient Greece, asses symbolized fertility because:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 72,
+    "rowNumber": 74,
+    "key": "WRITE.DialogLocalizer.105",
+    "utterer": "WRITE.DialogLocalizer.105",
+    "context": "",
+    "sourceEnglish": "Male donkeys have very large penises"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 73,
+    "rowNumber": 75,
+    "key": "WRITE.DialogLocalizer.106",
+    "utterer": "WRITE.DialogLocalizer.106",
+    "context": "",
+    "sourceEnglish": "Female donkeys frequently give birth to twins"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 74,
+    "rowNumber": 76,
+    "key": "WRITE.DialogLocalizer.107",
+    "utterer": "WRITE.DialogLocalizer.107",
+    "context": "",
+    "sourceEnglish": "A 'mare' is the general term for a female equine. What is the specific term for a female donkey?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 75,
+    "rowNumber": 77,
+    "key": "WRITE.DialogLocalizer.108",
+    "utterer": "WRITE.DialogLocalizer.108",
+    "context": "",
+    "sourceEnglish": "Jack"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 76,
+    "rowNumber": 78,
+    "key": "WRITE.DialogLocalizer.109",
+    "utterer": "WRITE.DialogLocalizer.109",
+    "context": "",
+    "sourceEnglish": "Gelding"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 77,
+    "rowNumber": 79,
+    "key": "WRITE.DialogLocalizer.182",
+    "utterer": "WRITE.DialogLocalizer.182",
+    "context": "",
+    "sourceEnglish": "Jennet"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 78,
+    "rowNumber": 80,
+    "key": "WRITE.DialogLocalizer.181",
+    "utterer": "WRITE.DialogLocalizer.181",
+    "context": "",
+    "sourceEnglish": "Molly"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 79,
+    "rowNumber": 81,
+    "key": "WRITE.DialogLocalizer.110",
+    "utterer": "WRITE.DialogLocalizer.110",
+    "context": "",
+    "sourceEnglish": "A famous piece of anti-Christian graffiti from ancient Rome depicts:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 80,
+    "rowNumber": 82,
+    "key": "WRITE.DialogLocalizer.111",
+    "utterer": "WRITE.DialogLocalizer.111",
+    "context": "",
+    "sourceEnglish": "Jesus with an ass's head"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 81,
+    "rowNumber": 83,
+    "key": "WRITE.DialogLocalizer.112",
+    "utterer": "WRITE.DialogLocalizer.112",
+    "context": "",
+    "sourceEnglish": "Jesus riding an ass backwards"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 82,
+    "rowNumber": 84,
+    "key": "WRITE.DialogLocalizer.113",
+    "utterer": "WRITE.DialogLocalizer.113",
+    "context": "",
+    "sourceEnglish": "What does tradition say Mohammed's ass, Ya'fur, did after the Prophet died?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 83,
+    "rowNumber": 85,
+    "key": "WRITE.DialogLocalizer.114",
+    "utterer": "WRITE.DialogLocalizer.114",
+    "context": "",
+    "sourceEnglish": "Committed suicide by throwing itself down a well"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 84,
+    "rowNumber": 86,
+    "key": "WRITE.DialogLocalizer.115",
+    "utterer": "WRITE.DialogLocalizer.115",
+    "context": "",
+    "sourceEnglish": "Rode away from Mecca weeping never to return"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 85,
+    "rowNumber": 87,
+    "key": "WRITE.DialogLocalizer.116",
+    "utterer": "WRITE.DialogLocalizer.116",
+    "context": "",
+    "sourceEnglish": "In the philosophical paradox called Buridan's Ass, an ass placed between a bucket of water and a bale of hay will:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 86,
+    "rowNumber": 88,
+    "key": "WRITE.DialogLocalizer.117",
+    "utterer": "WRITE.DialogLocalizer.117",
+    "context": "",
+    "sourceEnglish": "Always choose the hay first"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 87,
+    "rowNumber": 89,
+    "key": "WRITE.DialogLocalizer.118",
+    "utterer": "WRITE.DialogLocalizer.118",
+    "context": "",
+    "sourceEnglish": "Always choose the water first"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 88,
+    "rowNumber": 90,
+    "key": "WRITE.DialogLocalizer.183",
+    "utterer": "WRITE.DialogLocalizer.183",
+    "context": "",
+    "sourceEnglish": "Die from indecision"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 89,
+    "rowNumber": 91,
+    "key": "WRITE.DialogLocalizer.119",
+    "utterer": "WRITE.DialogLocalizer.119",
+    "context": "",
+    "sourceEnglish": "Was ist die Bedeutung des Ausdrucks „sich eine Eselsbrücke bauen“?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 90,
+    "rowNumber": 92,
+    "key": "WRITE.DialogLocalizer.120",
+    "utterer": "WRITE.DialogLocalizer.120",
+    "context": "",
+    "sourceEnglish": "Eine Abkürzung oder gedankliche Assoziation zu finden, um sich etwas besser merken zu können"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 91,
+    "rowNumber": 93,
+    "key": "WRITE.DialogLocalizer.121",
+    "utterer": "WRITE.DialogLocalizer.121",
+    "context": "",
+    "sourceEnglish": "Vertrauen Sie niemals einem langsamen Esel beim Brückenbauen"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 92,
+    "rowNumber": 94,
+    "key": "WRITE.DialogLocalizer.122",
+    "utterer": "WRITE.DialogLocalizer.122",
+    "context": "",
+    "sourceEnglish": "In 1981, the video game DONKEY.BAS was distributed on all original IBM computers. In that game, players must:"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 93,
+    "rowNumber": 95,
+    "key": "WRITE.DialogLocalizer.123",
+    "utterer": "WRITE.DialogLocalizer.123",
+    "context": "",
+    "sourceEnglish": "Play as a donkey pulling wagons of hay from one town to another"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 94,
+    "rowNumber": 96,
+    "key": "WRITE.DialogLocalizer.124",
+    "utterer": "WRITE.DialogLocalizer.124",
+    "context": "",
+    "sourceEnglish": "Drive a car down a road while avoiding donkeys"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 95,
+    "rowNumber": 97,
+    "key": "WRITE.DialogLocalizer.184",
+    "utterer": "WRITE.DialogLocalizer.184",
+    "context": "",
+    "sourceEnglish": "Play a rhythm game that simulates donkeys mating"
+  }
+]

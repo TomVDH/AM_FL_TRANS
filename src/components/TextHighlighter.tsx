@@ -37,6 +37,60 @@ const HIGHLIGHT_STYLES = {
   clickable: 'highlight-tag highlight-clickable',
 };
 
+/**
+ * Escape special HTML characters for safe insertion into HTML attributes
+ * Prevents XSS and fixes broken HTML when data contains quotes, angle brackets, etc.
+ */
+const escapeHtmlAttribute = (str: string): string => {
+  if (!str) return '';
+  return str
+    .replace(/&/g, '&amp;')   // Must be first to avoid double-escaping
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;');
+};
+
+/**
+ * Generate a unique placeholder that won't appear in normal text
+ */
+const generatePlaceholder = (index: number, type: string): string => {
+  return `\u0000HIGHLIGHT_${type}_${index}\u0000`;
+};
+
+/**
+ * Highlight text using a two-pass approach to avoid nested replacements
+ * Pass 1: Replace matches with unique placeholders
+ * Pass 2: Replace placeholders with actual HTML spans
+ */
+const safeHighlight = (
+  text: string,
+  matches: Array<{ pattern: RegExp; replacement: string }>
+): string => {
+  if (!matches.length) return text;
+
+  let result = text;
+  const placeholders: Map<string, string> = new Map();
+
+  // Pass 1: Replace all matches with placeholders
+  matches.forEach((match, index) => {
+    const placeholder = generatePlaceholder(index, 'M');
+    result = result.replace(match.pattern, (fullMatch, captured) => {
+      // Store the replacement with the actual captured text
+      const actualReplacement = match.replacement.replace(/\$1/g, captured);
+      placeholders.set(placeholder, actualReplacement);
+      return placeholder;
+    });
+  });
+
+  // Pass 2: Replace placeholders with actual HTML
+  placeholders.forEach((replacement, placeholder) => {
+    result = result.replace(placeholder, replacement);
+  });
+
+  return result;
+};
+
 const TextHighlighter: React.FC<TextHighlighterProps> = ({
   text,
   jsonData,
@@ -121,6 +175,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
 
   /**
    * Highlight matching text based on all data sources - memoized
+   * Uses a two-pass approach to prevent nested replacements from breaking HTML
    */
   const highlightedText = useMemo(() => {
     const { jsonMatches, xlsxMatches, characterMatches, assCharacters } = matchResults;
@@ -128,50 +183,119 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
 
     // Only apply highlights if highlight mode is enabled
     if (highlightMode) {
-      // Process JSON matches (blue)
+      // Collect all replacements first, then apply them in a safe way
+      interface PendingReplacement {
+        start: number;
+        end: number;
+        original: string;
+        replacement: string;
+        priority: number; // Higher = applied first (won't be overwritten)
+      }
+
+      const pendingReplacements: PendingReplacement[] = [];
+
+      // Helper to find all matches and their positions
+      const findAllMatches = (
+        text: string,
+        pattern: RegExp,
+        createReplacement: (match: string) => string,
+        priority: number
+      ) => {
+        let match;
+        const regex = new RegExp(pattern.source, 'gi'); // Ensure global flag
+        while ((match = regex.exec(text)) !== null) {
+          pendingReplacements.push({
+            start: match.index,
+            end: match.index + match[0].length,
+            original: match[0],
+            replacement: createReplacement(match[0]),
+            priority
+          });
+        }
+      };
+
+      // Process JSON matches (blue) - priority 1 (lowest)
       if (jsonMatches.length > 0) {
         const sortedMatches = [...jsonMatches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
         sortedMatches.forEach(match => {
           const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
           const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
-          const hoverText = getHoverText(match);
-          result = result.replace(regex,
-            `<span class="${HIGHLIGHT_STYLES.json}" data-type="json" data-hover="${hoverText}" title="${hoverText}">$1</span>`
+          const hoverText = escapeHtmlAttribute(getHoverText(match));
+          findAllMatches(displayText, regex, (m) =>
+            `<span class="${HIGHLIGHT_STYLES.json}" data-type="json" data-hover="${hoverText}" title="${hoverText}">${m}</span>`,
+            1
           );
         });
       }
 
-      // Process XLSX matches (green)
+      // Process XLSX matches (green) - priority 2
       if (xlsxMatches.length > 0) {
         const sortedMatches = [...xlsxMatches].sort((a, b) => b.sourceEnglish.length - a.sourceEnglish.length);
         sortedMatches.forEach(match => {
           const escapedSource = match.sourceEnglish.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
           const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
-          const hoverText = getXlsxHoverText(match);
-          result = result.replace(regex,
-            `<span class="${HIGHLIGHT_STYLES.xlsx}" data-type="xlsx" data-hover="${hoverText}" title="${hoverText}">$1</span>`
+          const hoverText = escapeHtmlAttribute(getXlsxHoverText(match));
+          findAllMatches(displayText, regex, (m) =>
+            `<span class="${HIGHLIGHT_STYLES.xlsx}" data-type="xlsx" data-hover="${hoverText}" title="${hoverText}">${m}</span>`,
+            2
           );
         });
       }
 
-      // Process character matches (purple) - always active
+      // Process character matches (purple) - priority 3 (highest for named entities)
+      // Note: characterMatches already has exact positions from findCharacterMatches()
+      // which detects both full names AND nicknames (e.g., "Trusty" for "Trusty Ass")
       characterMatches.forEach(charMatch => {
-        const escapedName = charMatch.english.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`\\b(${escapedName})\\b`, 'gi');
-        const hoverText = `${charMatch.english} → ${charMatch.dutch}`;
-        result = result.replace(regex,
-          `<span class="${HIGHLIGHT_STYLES.character}" data-type="character" data-character="$1" data-hover="${hoverText}" title="${hoverText}">$1</span>`
-        );
+        const hoverText = escapeHtmlAttribute(`${charMatch.matchedName} → ${charMatch.dutch} (${charMatch.english})`);
+        const matchText = displayText.substring(charMatch.startIndex, charMatch.endIndex);
+        pendingReplacements.push({
+          start: charMatch.startIndex,
+          end: charMatch.endIndex,
+          original: matchText,
+          replacement: `<span class="${HIGHLIGHT_STYLES.character}" data-type="character" data-character="${escapeHtmlAttribute(charMatch.english)}" data-hover="${hoverText}" title="${hoverText}">${matchText}</span>`,
+          priority: 3
+        });
       });
 
-      // Process **Ass characters (red) - clickable
+      // Process **Ass characters (red) - clickable - priority 4 (highest)
       assCharacters.forEach(character => {
         const escapedChar = character.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`(${escapedChar})`, 'gi');
-        result = result.replace(regex,
-          `<span class="${HIGHLIGHT_STYLES.clickable}" data-type="clickable" data-character="$1">$1</span>`
+        findAllMatches(displayText, regex, (m) =>
+          `<span class="${HIGHLIGHT_STYLES.clickable}" data-type="clickable" data-character="${escapeHtmlAttribute(m)}">${m}</span>`,
+          4
         );
       });
+
+      // Now apply all replacements in a non-overlapping way
+      // Sort by priority (highest first), then by position (earlier first)
+      // Remove overlapping replacements (keep highest priority)
+      pendingReplacements.sort((a, b) => {
+        if (b.priority !== a.priority) return b.priority - a.priority;
+        return a.start - b.start;
+      });
+
+      // Filter out overlapping replacements
+      const finalReplacements: typeof pendingReplacements = [];
+      const usedRanges: Array<{ start: number; end: number }> = [];
+
+      for (const rep of pendingReplacements) {
+        const overlaps = usedRanges.some(
+          range => !(rep.end <= range.start || rep.start >= range.end)
+        );
+        if (!overlaps) {
+          finalReplacements.push(rep);
+          usedRanges.push({ start: rep.start, end: rep.end });
+        }
+      }
+
+      // Sort by position (reverse order so we can replace from end to start)
+      finalReplacements.sort((a, b) => b.start - a.start);
+
+      // Apply replacements from end to start to preserve positions
+      for (const rep of finalReplacements) {
+        result = result.substring(0, rep.start) + rep.replacement + result.substring(rep.end);
+      }
     }
 
     return result;
@@ -211,10 +335,14 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
     const suggestions = new Map<string, { source: string; translation: string; type: string; priority: number }>();
 
     // Process character matches first (highest priority for names)
+    // Note: matchedName could be a nickname (e.g., "Trusty") while english is the full name (e.g., "Trusty Ass")
     characterMatches.forEach(match => {
       if (match.dutch && match.dutch.trim()) {
+        const sourceLabel = match.matchedName !== match.english
+          ? `${match.matchedName} (${match.english})`
+          : match.english;
         suggestions.set(match.dutch, {
-          source: match.english,
+          source: sourceLabel,
           translation: match.dutch,
           type: 'character',
           priority: 3 // Highest priority

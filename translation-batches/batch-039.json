@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 28,
+    "rowNumber": 31,
+    "key": "SAY.Dialog:Jenny_Normal.35.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Normal.35.Miner Jenny",
+    "context": "",
+    "sourceEnglish": "*SOB*"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 29,
+    "rowNumber": 32,
+    "key": "SAY.Dialog:Jenny_Normal.41.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Normal.41.Miner Jenny",
+    "context": "End NPC dialogue.",
+    "sourceEnglish": "After all these years, I needed a break."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 30,
+    "rowNumber": 33,
+    "key": "SAY.Dialog:Jenny_Normal.21.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Normal.21.Miner Jenny",
+    "context": "Repeater line.",
+    "sourceEnglish": "Maybe I should leave and get a job in Mecha City..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 31,
+    "rowNumber": 34,
+    "key": "SAY.Dialog:LazyCole.2.Lazy Ass",
+    "utterer": "SAY.Dialog:LazyCole.2.Lazy Ass",
+    "context": "Start NPC dialogue when getting to the furtherst right end of the map. Cave in starts to happen.",
+    "sourceEnglish": "Heyyyy Hard Ass, what's shakin'? Haha."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 32,
+    "rowNumber": 35,
+    "key": "SAY.Dialog:LazyCole.5.Lazy Ass",
+    "utterer": "SAY.Dialog:LazyCole.5.Lazy Ass",
+    "context": "",
+    "sourceEnglish": "These rocks are really coming down, eh?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 33,
+    "rowNumber": 36,
+    "key": "SAY.Dialog:LazyCole.23.Lazy Ass",
+    "utterer": "SAY.Dialog:LazyCole.23.Lazy Ass",
+    "context": "",
+    "sourceEnglish": "You better get outta here."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 34,
+    "rowNumber": 37,
+    "key": "SAY.Dialog:LazyCole.15.Lazy Ass",
+    "utterer": "SAY.Dialog:LazyCole.15.Lazy Ass",
+    "context": "End NPC dialogue. Lazy leaves and it becomes clear this is Hard Ass's nightmare.",
+    "sourceEnglish": "Tell Sad Ass not to worry—Cole's going to find us a way out."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 35,
+    "rowNumber": 38,
+    "key": "SAY.Dialog:Worker.1.Miner With No Legs",
+    "utterer": "SAY.Dialog:Worker.1.Miner With No Legs",
+    "context": "NPC Dialogue (single line). Nightmare sequence. Non-repeater line.",
+    "sourceEnglish": "{s}{s=7}My... legs...{/s}"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 36,
+    "rowNumber": 39,
+    "key": "SAY.Dialog:Jenny_Horror.1.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Horror.1.Miner Jenny",
+    "context": "NPC Dialogue. Nightmare sequence.",
+    "sourceEnglish": "I never made it to Mecha City..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 37,
+    "rowNumber": 40,
+    "key": "SAY.Dialog:Jenny_Horror.9.Miner Jenny",
+    "utterer": "SAY.Dialog:Jenny_Horror.9.Miner Jenny",
+    "context": "Jenny kills herself with her shovel.",
+    "sourceEnglish": "BECAUSE YOU KILLED ME!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 38,
+    "rowNumber": 41,
+    "key": "SAY.Dialog:Sad_Horror.1.Sad Ass",
+    "utterer": "SAY.Dialog:Sad_Horror.1.Sad Ass",
+    "context": "NPC Dialogue (single line). Nightmare sequence. Sad explodes.",
+    "sourceEnglish": "HAHAHAHAHAHAHAHAHAHA..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 39,
+    "rowNumber": 42,
+    "key": "SAY.Dialog:Butte_Horror.1.Mr. Butte",
+    "utterer": "SAY.Dialog:Butte_Horror.1.Mr. Butte",
+    "context": "NPC Dialogue. Nightmare sequence.",
+    "sourceEnglish": "*glug glug*"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 40,
+    "rowNumber": 43,
+    "key": "SAY.Dialog:Butte_Horror.6.Mr. Butte",
+    "utterer": "SAY.Dialog:Butte_Horror.6.Mr. Butte",
+    "context": "Mr. Butte gets ripped apart by a mini-boring machine emerging from inside of him.",
+    "sourceEnglish": "...I don't feel so good—"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 41,
+    "rowNumber": 44,
+    "key": "SAY.Dialog:Kick_Horror.1.Kick Ass",
+    "utterer": "SAY.Dialog:Kick_Horror.1.Kick Ass",
+    "context": "NPC Dialogue. Nightmare sequence.",
+    "sourceEnglish": "—this is all YOUR FAULT!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 42,
+    "rowNumber": 45,
+    "key": "SAY.Dialog:Kick_Horror.11.Kick Ass",
+    "utterer": "SAY.Dialog:Kick_Horror.11.Kick Ass",
+    "context": "",
+    "sourceEnglish": "You tore Sick AWAY FROM ME!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 43,
+    "rowNumber": 46,
+    "key": "SAY.Dialog:Kick_Horror.9.Kick Ass",
+    "utterer": "SAY.Dialog:Kick_Horror.9.Kick Ass",
+    "context": "Kick Ass vomits himself to death.",
+    "sourceEnglish": "And you made me into a KILLER."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 44,
+    "rowNumber": 47,
+    "key": "SAY.Dialog:Sick_Horror.1.Sick Ass",
+    "utterer": "SAY.Dialog:Sick_Horror.1.Sick Ass",
+    "context": "NPC Dialogue. Nightmare sequence.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 45,
+    "rowNumber": 48,
+    "key": "SAY.Dialog:Sick_Horror.14.Sick Ass",
+    "utterer": "SAY.Dialog:Sick_Horror.14.Sick Ass",
+    "context": "Sick Ass falls over dead and an Indiana Jones boulder appears behind her.",
+    "sourceEnglish": "{s}{s=10}Turn around.{/s}"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 46,
+    "rowNumber": 49,
+    "key": "SAY.Dialog:FoundLazy.24.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.24.Hard Ass",
+    "context": "A dialogue between Good Hard Ass and Evil Hard Ass ensues. Good Hard Ass.",
+    "sourceEnglish": "We failed to save Lazy."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 47,
+    "rowNumber": 50,
+    "key": "SAY.Dialog:FoundLazy.1.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.1.Hard Ass",
+    "context": "",
+    "sourceEnglish": "You can't keep running from the truth."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 48,
+    "rowNumber": 51,
+    "key": "SAY.Dialog:FoundLazy.8.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.8.Hard Ass",
+    "context": "Evil Hard Ass (Player).",
+    "sourceEnglish": "I have made up for our mistake."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 49,
+    "rowNumber": 52,
+    "key": "SAY.Dialog:FoundLazy.25.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.25.Hard Ass",
+    "context": "",
+    "sourceEnglish": "I am protecting the Herd."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 50,
+    "rowNumber": 53,
+    "key": "SAY.Dialog:FoundLazy.7.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.7.Hard Ass",
+    "context": "Good Hard Ass.",
+    "sourceEnglish": "You're miserable."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 51,
+    "rowNumber": 54,
+    "key": "SAY.Dialog:FoundLazy.12.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.12.Hard Ass",
+    "context": "Evil Hard Ass (Player).",
+    "sourceEnglish": "Revolutions have no room for emotions."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 52,
+    "rowNumber": 55,
+    "key": "SAY.Dialog:FoundLazy.11.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.11.Hard Ass",
+    "context": "Good Hard Ass.",
+    "sourceEnglish": "Revolutions can't be won alone."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 53,
+    "rowNumber": 56,
+    "key": "SAY.Dialog:FoundLazy.27.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.27.Hard Ass",
+    "context": "",
+    "sourceEnglish": "You underestimated our friends and let the Herd split apart."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 54,
+    "rowNumber": 57,
+    "key": "SAY.Dialog:FoundLazy.30.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.30.Hard Ass",
+    "context": "Evil Hard Ass (Player).",
+    "sourceEnglish": "They weren't ready."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 55,
+    "rowNumber": 58,
+    "key": "SAY.Dialog:FoundLazy.10.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.10.Hard Ass",
+    "context": "Good Hard Ass.",
+    "sourceEnglish": "You never gave them a chance."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 56,
+    "rowNumber": 59,
+    "key": "SAY.Dialog:FoundLazy.9.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.9.Hard Ass",
+    "context": "",
+    "sourceEnglish": "I'm not going to sit back and watch you destroy us."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 57,
+    "rowNumber": 60,
+    "key": "SAY.Dialog:FoundLazy.31.Hard Ass",
+    "utterer": "SAY.Dialog:FoundLazy.31.Hard Ass",
+    "context": "A showdown (fight) between Evil Hard Ass and the Nightmare version of the Herd occurs.",
+    "sourceEnglish": "I'm taking back control now whether you like it or not."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 58,
+    "rowNumber": 61,
+    "key": "SAY.Dialog_Thirsty.38.",
+    "utterer": "SAY.Dialog_Thirsty.38.",
+    "context": "x",
+    "sourceEnglish": "Comrade Sturdy! Hell, you look parched!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 59,
+    "rowNumber": 62,
+    "key": "SAY.Dialog_Thirsty.41.",
+    "utterer": "SAY.Dialog_Thirsty.41.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "The Bar needs something beautiful..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 60,
+    "rowNumber": 63,
+    "key": "SAY.Dialog_Thirsty.43.",
+    "utterer": "SAY.Dialog_Thirsty.43.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "Mosey on over and take a sip of my new drink special: The Pail Ale!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 61,
+    "rowNumber": 64,
+    "key": "SAY.Dialog_Thirsty.44.",
+    "utterer": "SAY.Dialog_Thirsty.44.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "Tonight, The Bottoms Up Bar is finally openin'!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 62,
+    "rowNumber": 65,
+    "key": "SAY.Dialog_Thirsty.45.",
+    "utterer": "SAY.Dialog_Thirsty.45.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "I think this here bar is missin' the somethin' special that makes it worth comin' to."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 63,
+    "rowNumber": 66,
+    "key": "SAY.Dialog_Thirsty.46.",
+    "utterer": "SAY.Dialog_Thirsty.46.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "Say, if yer lookin' for a distraction..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 64,
+    "rowNumber": 67,
+    "key": "SAY.Dialog_Thirsty.47.",
+    "utterer": "SAY.Dialog_Thirsty.47.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "But hey at least she's keepin' outta trouble."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 65,
+    "rowNumber": 68,
+    "key": "SAY.Dialog_Thirsty.48.",
+    "utterer": "SAY.Dialog_Thirsty.48.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "Lemme guess—{$NewName} still spending all her time inside playin' Rocks with Bad Ass?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 66,
+    "rowNumber": 69,
+    "key": "SAY.Dialog_Thirsty.49.",
+    "utterer": "SAY.Dialog_Thirsty.49.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "It's looking good, Comrade."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 67,
+    "rowNumber": 70,
+    "key": "SAY.Dialog_Thirsty.50.",
+    "utterer": "SAY.Dialog_Thirsty.50.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "Always been my darn DREAM to have a place for us Asses to take a break and share some good 'ol water."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 68,
+    "rowNumber": 71,
+    "key": "SAY.Dialog_Thirsty.51.",
+    "utterer": "SAY.Dialog_Thirsty.51.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "I could definitely use a drink and an ear to bend."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_Nightmare_localization",
+    "entryIndex": 69,
+    "rowNumber": 72,
+    "key": "SAY.Dialog_Thirsty.54.",
+    "utterer": "SAY.Dialog_Thirsty.54.",
+    "context": "This dialogue is in the wrong scene. CUT.",
+    "sourceEnglish": "What do ya think it needs?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.DialogMaster.1.Hard Ass",
+    "utterer": "SAY.DialogMaster.1.Hard Ass",
+    "context": "Good Hard Ass.",
+    "sourceEnglish": "You are weak."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.DialogMaster.71.Hard Ass",
+    "utterer": "SAY.DialogMaster.71.Hard Ass",
+    "context": "Evil Hard Ass (Player).",
+    "sourceEnglish": "You cannot beat me one-on-one."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.DialogMaster.72.Hard Ass",
+    "utterer": "SAY.DialogMaster.72.Hard Ass",
+    "context": "Good Hard Ass. The fight begins. The other Asses enter the fight one by one.",
+    "sourceEnglish": "Who says I'm alone?\\n"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.DialogMaster.74.Hard Ass",
+    "utterer": "SAY.DialogMaster.74.Hard Ass",
+    "context": "NPC Dialogue on entrance to the fight.",
+    "sourceEnglish": "Prepare to become obsolete."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.DialogMaster.39.Nice Ass",
+    "utterer": "SAY.DialogMaster.39.Nice Ass",
+    "context": "NPC Dialogue on entrance to the fight.",
+    "sourceEnglish": "Golly, you're about to get pounded, in less than two minutes!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.DialogMaster.19.Thirsty Ass",
+    "utterer": "SAY.DialogMaster.19.Thirsty Ass",
+    "context": "NPC Dialogue on entrance to the fight. (Spoken by Thirsty)",
+    "sourceEnglish": "Heck, I don't have a drop of respect left for you."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.DialogMaster.34.Sturdy Ass",
+    "utterer": "SAY.DialogMaster.34.Sturdy Ass",
+    "context": "NPC Dialogue on entrance to the fight.",
+    "sourceEnglish": "Comrade, you've gotten weak. It's only a matter of time until you crack."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.DialogMaster.44.{$NewName}",
+    "utterer": "SAY.DialogMaster.44.{$NewName}",
+    "context": "NPC Dialogue on entrance to the fight.",
+    "sourceEnglish": "Uncle Hard, everyone says you're a two-faced liar!"
+  }
+]

@@ -1,7 +1,7 @@
 FileName,Success,Sheets,Entries,Error
-0_asses.masses_Manager+Intermissions+E0Proxy,true,9,249,""
-10_asses.masses_E10Proxy,true,11,660,""
-11_asses.masses_NonCSVBasedTranslations,true,11,76,""
+0_asses.masses_Manager+Intermissions+E0Proxy,true,9,251,""
+10_asses.masses_E10Proxy,true,11,666,""
+11_asses.masses_NonCSVBasedTranslations,true,12,79,""
 1_asses.masses_E1Proxy,true,12,416,""
 2_asses.masses_E2Proxy,true,15,398,""
 3_asses.masses_E3Proxy,true,10,380,""
@@ -11,5 +11,5 @@ FileName,Success,Sheets,Entries,Error
 7_asses.masses_E7Proxy,true,17,363,""
 8_asses.masses_E8Proxy,true,3,96,""
 9_asses.masses_E9Proxy,true,5,292,""
-READ_ME_Localization,true,14,512,""
-Translation Checklist,true,7,39,""
+READ_ME_LocalizationManual,true,13,500,""
+Translation Checklist,true,7,70,""

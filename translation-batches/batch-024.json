@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 109,
+    "rowNumber": 112,
+    "key": "SAY.Dialog:RaceHasty.70.Hasty Ass",
+    "utterer": "SAY.Dialog:RaceHasty.70.Hasty Ass",
+    "context": "",
+    "sourceEnglish": "Or not! Who knows?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 110,
+    "rowNumber": 113,
+    "key": "SAY.Dialog:RaceHasty.69.Hasty Ass",
+    "utterer": "SAY.Dialog:RaceHasty.69.Hasty Ass",
+    "context": "",
+    "sourceEnglish": "Wait. Practice is practice."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 111,
+    "rowNumber": 114,
+    "key": "SAY.Dialog:RaceHasty.38.Hasty Ass",
+    "utterer": "SAY.Dialog:RaceHasty.38.Hasty Ass",
+    "context": "",
+    "sourceEnglish": "Wanna race again?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 112,
+    "rowNumber": 115,
+    "key": "SAY.Dialog:RaceHasty.68.Hasty Ass",
+    "utterer": "SAY.Dialog:RaceHasty.68.Hasty Ass",
+    "context": "",
+    "sourceEnglish": "Wanna race again?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 113,
+    "rowNumber": 116,
+    "key": "SAY.Dialog:RaceHasty.71.Sick Ass",
+    "utterer": "SAY.Dialog:RaceHasty.71.Sick Ass",
+    "context": "Dialogue option 2.1. COUGH (YES)",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 114,
+    "rowNumber": 117,
+    "key": "SAY.Dialog:RaceHasty.74.Hasty Ass",
+    "utterer": "SAY.Dialog:RaceHasty.74.Hasty Ass",
+    "context": "",
+    "sourceEnglish": "Let's go!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 115,
+    "rowNumber": 118,
+    "key": "SAY.Dialog:RaceHasty.72.Sick Ass",
+    "utterer": "SAY.Dialog:RaceHasty.72.Sick Ass",
+    "context": "Dialogue option 2.2. COUGH COUGH (NO)",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 116,
+    "rowNumber": 119,
+    "key": "SAY.Dialog:RaceHasty.73.Hasty Ass",
+    "utterer": "SAY.Dialog:RaceHasty.73.Hasty Ass",
+    "context": "",
+    "sourceEnglish": "No? Shame! Ah well. I'll be here. Ready to race. Always ready!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 117,
+    "rowNumber": 120,
+    "key": "SAY.Dialog_WinnerHasty.10.Hasty Ass",
+    "utterer": "SAY.Dialog_WinnerHasty.10.Hasty Ass",
+    "context": "x",
+    "sourceEnglish": "WHEW. You're FAST! I like that. I really like that!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 118,
+    "rowNumber": 121,
+    "key": "SAY.Dialog_WinnerHasty.20.Hasty Ass",
+    "utterer": "SAY.Dialog_WinnerHasty.20.Hasty Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "You're breathtaking! As in, I can't breathe! Whew!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 119,
+    "rowNumber": 122,
+    "key": "SAY.Dialog:Bitter.10.Bitter Ass",
+    "utterer": "SAY.Dialog:Bitter.10.Bitter Ass",
+    "context": "Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys)",
+    "sourceEnglish": "Hey Newbie. You look like you might be interested in joining our group."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 120,
+    "rowNumber": 123,
+    "key": "SAY.Dialog:Bitter.20.Bitter Ass",
+    "utterer": "SAY.Dialog:Bitter.20.Bitter Ass",
+    "context": "",
+    "sourceEnglish": "We're HAW. It stands for \"Humans Are the Worst.\""
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 121,
+    "rowNumber": 124,
+    "key": "SAY.Dialog:Bitter.19.Bitter Ass",
+    "utterer": "SAY.Dialog:Bitter.19.Bitter Ass",
+    "context": "",
+    "sourceEnglish": "We like to gather and share stories about how much we hate Humans."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 122,
+    "rowNumber": 125,
+    "key": "SAY.Dialog:Bitter.18.Bitter Ass",
+    "utterer": "SAY.Dialog:Bitter.18.Bitter Ass",
+    "context": "",
+    "sourceEnglish": "I hate Humans because they beat me with a steel pipe!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 123,
+    "rowNumber": 126,
+    "key": "SAY.Dialog:Bitter.12.Bitter Ass",
+    "utterer": "SAY.Dialog:Bitter.12.Bitter Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "Feel free to meet the membership!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 124,
+    "rowNumber": 127,
+    "key": "SAY.Dialog:Hairy.10.Hairy Ass",
+    "utterer": "SAY.Dialog:Hairy.10.Hairy Ass",
+    "context": "Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys)",
+    "sourceEnglish": "G'day mate! Crikey, I hayte Humans cuz they shot me and family from thehr helicoptahs."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 125,
+    "rowNumber": 128,
+    "key": "SAY.Dialog:Hairy.12.Hairy Ass",
+    "utterer": "SAY.Dialog:Hairy.12.Hairy Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "It wuz a real bugga, lemme tell ya."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 126,
+    "rowNumber": 129,
+    "key": "SAY.Dialog:Mean.10.Mean Ass",
+    "utterer": "SAY.Dialog:Mean.10.Mean Ass",
+    "context": "Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys)",
+    "sourceEnglish": "Bonjour. I hate ze Humans because zey set my tail on fire just for one of zeir art movies."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 127,
+    "rowNumber": 130,
+    "key": "SAY.Dialog:Mean.12.Mean Ass",
+    "utterer": "SAY.Dialog:Mean.12.Mean Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "Zey always valued zeir art above our lives."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 128,
+    "rowNumber": 131,
+    "key": "SAY.Dialog:Broken.10.Broken Ass",
+    "utterer": "SAY.Dialog:Broken.10.Broken Ass",
+    "context": "Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys)",
+    "sourceEnglish": "Geia sou, Newbie. I used to give tours to Humans around my beautiful home islands."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 129,
+    "rowNumber": 132,
+    "key": "SAY.Dialog:Broken.19.Broken Ass",
+    "utterer": "SAY.Dialog:Broken.19.Broken Ass",
+    "context": "",
+    "sourceEnglish": "One day my boss let a big Human sit on me and he broke my back."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 130,
+    "rowNumber": 133,
+    "key": "SAY.Dialog:Broken.18.Broken Ass",
+    "utterer": "SAY.Dialog:Broken.18.Broken Ass",
+    "context": "",
+    "sourceEnglish": "My boss shot me in the head because he didn't think I could work again."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 131,
+    "rowNumber": 134,
+    "key": "SAY.Dialog:Broken.12.Broken Ass",
+    "utterer": "SAY.Dialog:Broken.12.Broken Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "There was a very clear sign that said the weight limit was 100 kilos!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 132,
+    "rowNumber": 135,
+    "key": "SAY.Dialog:Mad.10.Mad Ass",
+    "utterer": "SAY.Dialog:Mad.10.Mad Ass",
+    "context": "Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys)",
+    "sourceEnglish": "Merhaba. I hate Humans because during one of their wars they loaded my panniers with explosives without telling me."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 133,
+    "rowNumber": 136,
+    "key": "SAY.Dialog:Mad.12.Mad Ass",
+    "utterer": "SAY.Dialog:Mad.12.Mad Ass",
+    "context": "",
+    "sourceEnglish": "I thought I was carrying water..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 134,
+    "rowNumber": 137,
+    "key": "SAY.Dialog:Mad.18.Mad Ass",
+    "utterer": "SAY.Dialog:Mad.18.Mad Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "I thought I was carrying water..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 135,
+    "rowNumber": 138,
+    "key": "SAY.Dialog:Chafed.10.Chafed Ass",
+    "utterer": "SAY.Dialog:Chafed.10.Chafed Ass",
+    "context": "Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys)",
+    "sourceEnglish": "Nihao. I hate Humans because I worked for them my whole life only to be killed with a sledgehammer, skinned, and turned into some 'delicacy'."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 136,
+    "rowNumber": 139,
+    "key": "SAY.Dialog:Chafed.12.Chafed Ass",
+    "utterer": "SAY.Dialog:Chafed.12.Chafed Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "My death had no dignity."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 137,
+    "rowNumber": 140,
+    "key": "SAY.Dialog:Angry.10.Angry Ass",
+    "utterer": "SAY.Dialog:Angry.10.Angry Ass",
+    "context": "Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys)",
+    "sourceEnglish": "UGH! I hate Humans because they never gave us the representation in their media we deserved."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 138,
+    "rowNumber": 141,
+    "key": "SAY.Dialog:Angry.18.Angry Ass",
+    "utterer": "SAY.Dialog:Angry.18.Angry Ass",
+    "context": "",
+    "sourceEnglish": "Like, we're not all stubborn and stupid, you know?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 139,
+    "rowNumber": 142,
+    "key": "SAY.Dialog:Angry.12.Angry Ass",
+    "utterer": "SAY.Dialog:Angry.12.Angry Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "Most of us are complex individuals with rich inner lives."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 140,
+    "rowNumber": 143,
+    "key": "SAY.Dialog:Sulky.10.Sulky Ass",
+    "utterer": "SAY.Dialog:Sulky.10.Sulky Ass",
+    "context": "Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys)",
+    "sourceEnglish": "I hear the Humans have some new ways of killing that don’t hurt."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 141,
+    "rowNumber": 144,
+    "key": "SAY.Dialog:Sulky.18.Sulky Ass",
+    "utterer": "SAY.Dialog:Sulky.18.Sulky Ass",
+    "context": "",
+    "sourceEnglish": "Well in my day, it was just the good old throat slit."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 142,
+    "rowNumber": 145,
+    "key": "SAY.Dialog:Sulky.19.Sulky Ass",
+    "utterer": "SAY.Dialog:Sulky.19.Sulky Ass",
+    "context": "",
+    "sourceEnglish": "You ever have your throat slit in front of your loved ones?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 143,
+    "rowNumber": 146,
+    "key": "SAY.Dialog:Sulky.26.Sick Ass",
+    "utterer": "SAY.Dialog:Sulky.26.Sick Ass",
+    "context": "Dialogue option 1.1. COUGH (YES)",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 144,
+    "rowNumber": 147,
+    "key": "SAY.Dialog:Sulky.27.Sulky Ass",
+    "utterer": "SAY.Dialog:Sulky.27.Sulky Ass",
+    "context": "",
+    "sourceEnglish": "Liar."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 145,
+    "rowNumber": 148,
+    "key": "SAY.Dialog:Sulky.28.Sick Ass",
+    "utterer": "SAY.Dialog:Sulky.28.Sick Ass",
+    "context": "Dialogue option 1.2. COUGH COUGH (NO)",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 146,
+    "rowNumber": 149,
+    "key": "SAY.Dialog:Sulky.29.Sulky Ass",
+    "utterer": "SAY.Dialog:Sulky.29.Sulky Ass",
+    "context": "",
+    "sourceEnglish": "Didn't think so."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 147,
+    "rowNumber": 150,
+    "key": "SAY.Dialog:Sulky.12.Sulky Ass",
+    "utterer": "SAY.Dialog:Sulky.12.Sulky Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "Even if it doesn't hurt, you're still dead."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 148,
+    "rowNumber": 151,
+    "key": "SAY.Dialog:NostalgicRadicalsIntro.31.Total Ass",
+    "utterer": "SAY.Dialog:NostalgicRadicalsIntro.31.Total Ass",
+    "context": "Sick meets the Nostalgic Radicals as a GROUP: Total, Janky, Lofty, Ugly",
+    "sourceEnglish": "Hey, Newbie! You're from Trusty's old Herd aren't you.\\n"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 149,
+    "rowNumber": 152,
+    "key": "SAY.Dialog:NostalgicRadicalsIntro.32.Total Ass",
+    "utterer": "SAY.Dialog:NostalgicRadicalsIntro.32.Total Ass",
+    "context": "",
+    "sourceEnglish": "She told us all about your Protest."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 150,
+    "rowNumber": 153,
+    "key": "SAY.Dialog:NostalgicRadicalsIntro.35.Janky Ass",
+    "utterer": "SAY.Dialog:NostalgicRadicalsIntro.35.Janky Ass",
+    "context": "",
+    "sourceEnglish": "ACHH! Protests... they seem like great ideas but they DON'T WORK."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 151,
+    "rowNumber": 154,
+    "key": "SAY.Dialog:NostalgicRadicalsIntro.36.Lofty Ass",
+    "utterer": "SAY.Dialog:NostalgicRadicalsIntro.36.Lofty Ass",
+    "context": "",
+    "sourceEnglish": "Every Ass here has had their share of Protests,"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 152,
+    "rowNumber": 155,
+    "key": "SAY.Dialog:NostalgicRadicalsIntro.37.Lofty Ass",
+    "utterer": "SAY.Dialog:NostalgicRadicalsIntro.37.Lofty Ass",
+    "context": "Note: There is a needed extra space before \"Strikes\" because this line extends from the previous.",
+    "sourceEnglish": "Strikes, Marches, Boycotts..."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 153,
+    "rowNumber": 156,
+    "key": "SAY.Dialog:NostalgicRadicalsIntro.38.Ugly Ass",
+    "utterer": "SAY.Dialog:NostalgicRadicalsIntro.38.Ugly Ass",
+    "context": "",
+    "sourceEnglish": "Some wanted better living conditions."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 154,
+    "rowNumber": 157,
+    "key": "SAY.Dialog:NostalgicRadicalsIntro.39.Total Ass",
+    "utterer": "SAY.Dialog:NostalgicRadicalsIntro.39.Total Ass",
+    "context": "End of group dialogue",
+    "sourceEnglish": "Those were the days, my friends. Those. Were. The. Days."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 155,
+    "rowNumber": 158,
+    "key": "SAY.Dialog:Janky.10.Janky Ass",
+    "utterer": "SAY.Dialog:Janky.10.Janky Ass",
+    "context": "Sick meets the Nostalgic Radicals as INDIVIDUALS: Total, Janky, Lofty, Ugly",
+    "sourceEnglish": "ACH! Protests! They're all for show."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 156,
+    "rowNumber": 159,
+    "key": "SAY.Dialog:Janky.18.Janky Ass",
+    "utterer": "SAY.Dialog:Janky.18.Janky Ass",
+    "context": "",
+    "sourceEnglish": "I led a few impromptu insurrections in the 1300s. We nearly toppled the government."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 157,
+    "rowNumber": 160,
+    "key": "SAY.Dialog:Janky.12.Janky Ass",
+    "utterer": "SAY.Dialog:Janky.12.Janky Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "It didn't take much to get those Peasants to Revolt."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 158,
+    "rowNumber": 161,
+    "key": "SAY.Dialog:Ugly.10.Ugly Ass",
+    "utterer": "SAY.Dialog:Ugly.10.Ugly Ass",
+    "context": "Sick meets the Nostalgic Radicals as INDIVIDUALS: Total, Janky, Lofty, Ugly",
+    "sourceEnglish": "I led a Hunger Strike in the 1800s against my landowners."
+  }
+]

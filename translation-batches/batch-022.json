@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "MENU.Dialog:DustySex.27",
+    "utterer": "MENU.Dialog:DustySex.27",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "MENU.Dialog:DustySex.33",
+    "utterer": "MENU.Dialog:DustySex.33",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "MENU.Dialog:DustySex.34",
+    "utterer": "MENU.Dialog:DustySex.34",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "MENU.Dialog:DustySex.37",
+    "utterer": "MENU.Dialog:DustySex.37",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "MENU.Dialog:DustySex.38",
+    "utterer": "MENU.Dialog:DustySex.38",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "MENU.Dialog:FurrySex.26",
+    "utterer": "MENU.Dialog:FurrySex.26",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "MENU.Dialog:FurrySex.27",
+    "utterer": "MENU.Dialog:FurrySex.27",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "MENU.Dialog:FurrySex.33",
+    "utterer": "MENU.Dialog:FurrySex.33",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "MENU.Dialog:FurrySex.34",
+    "utterer": "MENU.Dialog:FurrySex.34",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "MENU.Dialog:FurrySex.37",
+    "utterer": "MENU.Dialog:FurrySex.37",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "MENU.Dialog:FurrySex.38",
+    "utterer": "MENU.Dialog:FurrySex.38",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "MENU.Dialog:Gamblers.10",
+    "utterer": "MENU.Dialog:Gamblers.10",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "MENU.Dialog:Gamblers.11",
+    "utterer": "MENU.Dialog:Gamblers.11",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "MENU.Dialog:RaceHasty.23",
+    "utterer": "MENU.Dialog:RaceHasty.23",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "MENU.Dialog:RaceHasty.25",
+    "utterer": "MENU.Dialog:RaceHasty.25",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "MENU.Dialog:RaceHasty.26",
+    "utterer": "MENU.Dialog:RaceHasty.26",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "MENU.Dialog:RaceHasty.39",
+    "utterer": "MENU.Dialog:RaceHasty.39",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "MENU.Dialog:RaceHasty.40",
+    "utterer": "MENU.Dialog:RaceHasty.40",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 27,
+    "rowNumber": 30,
+    "key": "MENU.Dialog:RaceHasty.76",
+    "utterer": "MENU.Dialog:RaceHasty.76",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 28,
+    "rowNumber": 31,
+    "key": "MENU.Dialog:RaceHasty.77",
+    "utterer": "MENU.Dialog:RaceHasty.77",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 29,
+    "rowNumber": 32,
+    "key": "MENU.Dialog:RaceHasty.78",
+    "utterer": "MENU.Dialog:RaceHasty.78",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 30,
+    "rowNumber": 33,
+    "key": "MENU.Dialog:Smelly.26",
+    "utterer": "MENU.Dialog:Smelly.26",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 31,
+    "rowNumber": 34,
+    "key": "MENU.Dialog:Smelly.27",
+    "utterer": "MENU.Dialog:Smelly.27",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 32,
+    "rowNumber": 35,
+    "key": "MENU.Dialog:Sulky.22",
+    "utterer": "MENU.Dialog:Sulky.22",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 33,
+    "rowNumber": 36,
+    "key": "MENU.Dialog:Sulky.23",
+    "utterer": "MENU.Dialog:Sulky.23",
+    "context": "Yes/No menu options.",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 34,
+    "rowNumber": 37,
+    "key": "SAY.Dialog:TrustysMate.30.Happy Ass",
+    "utterer": "SAY.Dialog:TrustysMate.30.Happy Ass",
+    "context": "Back in the Astral Plane, Sick Ass runs into Happy Ass.",
+    "sourceEnglish": "Oh boy. Another one. I almost didn't see you."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 35,
+    "rowNumber": 38,
+    "key": "SAY.Dialog:TrustysMate.124.Happy Ass",
+    "utterer": "SAY.Dialog:TrustysMate.124.Happy Ass",
+    "context": "",
+    "sourceEnglish": "I'm doing the welcome ritual for Newbies today."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 36,
+    "rowNumber": 39,
+    "key": "SAY.Dialog:TrustysMate.123.Happy Ass",
+    "utterer": "SAY.Dialog:TrustysMate.123.Happy Ass",
+    "context": "",
+    "sourceEnglish": "But there's been over 400 of you already... so I'm a bit... sore."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 37,
+    "rowNumber": 40,
+    "key": "SAY.Dialog:TrustysMate.146.Happy Ass",
+    "utterer": "SAY.Dialog:TrustysMate.146.Happy Ass",
+    "context": "",
+    "sourceEnglish": "But it's really great that you're here. You're going to love it."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 38,
+    "rowNumber": 41,
+    "key": "SAY.Dialog:TrustysMate.147.Happy Ass",
+    "utterer": "SAY.Dialog:TrustysMate.147.Happy Ass",
+    "context": "",
+    "sourceEnglish": "Make sure to check out the Concert tonight in the Pond of Hehehehe!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 39,
+    "rowNumber": 42,
+    "key": "SAY.Dialog:TrustysMate.148.Happy Ass",
+    "utterer": "SAY.Dialog:TrustysMate.148.Happy Ass",
+    "context": "",
+    "sourceEnglish": "It's going to be 7 and a half hours of AWESOME."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 40,
+    "rowNumber": 43,
+    "key": "SAY.Dialog:TrustysMate.84.Happy Ass",
+    "utterer": "SAY.Dialog:TrustysMate.84.Happy Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "Head on up over the hill!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 41,
+    "rowNumber": 44,
+    "key": "SAY.Dialog:Gamblers.1.Risky Ass",
+    "utterer": "SAY.Dialog:Gamblers.1.Risky Ass",
+    "context": "Sick Ass finds the Gamblers atop the hill.",
+    "sourceEnglish": "401! I win! I told you we'd break 400 today."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 42,
+    "rowNumber": 45,
+    "key": "SAY.Dialog:Gamblers.5.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.5.Greedy Ass",
+    "context": "oof Jobs = Hoof Jobs = Hand Jobs?",
+    "sourceEnglish": "Ah shaddup, let's make another wager! Double or nothin'—Winner gets two 'oof Jobs!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 43,
+    "rowNumber": 46,
+    "key": "SAY.Dialog:Gamblers.6.Shifty Ass",
+    "utterer": "SAY.Dialog:Gamblers.6.Shifty Ass",
+    "context": "",
+    "sourceEnglish": "Hey Newbies, we're betting on how many Asses are gonna fall from the sky tonight. You want in?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 44,
+    "rowNumber": 47,
+    "key": "SAY.Dialog:Gamblers.110.Fresh Ass",
+    "utterer": "SAY.Dialog:Gamblers.110.Fresh Ass",
+    "context": "",
+    "sourceEnglish": "Sure! How about... 455?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 45,
+    "rowNumber": 48,
+    "key": "SAY.Dialog:Gamblers.111.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.111.Greedy Ass",
+    "context": "",
+    "sourceEnglish": "You kiddin' me? Only fifty more? Fuggetaboutit!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 46,
+    "rowNumber": 49,
+    "key": "SAY.Dialog:Gamblers.112.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.112.Greedy Ass",
+    "context": "Jump to line 50 or 52.",
+    "sourceEnglish": "What about you? You wanna bet?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 47,
+    "rowNumber": 50,
+    "key": "SAY.Dialog:Gamblers.76.Sick Ass",
+    "utterer": "SAY.Dialog:Gamblers.76.Sick Ass",
+    "context": "If Player chooses COUGH (YES).",
+    "sourceEnglish": "*COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 48,
+    "rowNumber": 51,
+    "key": "SAY.Dialog:Gamblers.137.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.137.Greedy Ass",
+    "context": "Jump to line 55.",
+    "sourceEnglish": "I knew she was the gambling type!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 49,
+    "rowNumber": 52,
+    "key": "SAY.Dialog:Gamblers.138.Sick Ass",
+    "utterer": "SAY.Dialog:Gamblers.138.Sick Ass",
+    "context": "If Player chooses COUGH COUGH (NO).",
+    "sourceEnglish": "*COUGH COUGH*"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 50,
+    "rowNumber": 53,
+    "key": "SAY.Dialog:Gamblers.115.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.115.Greedy Ass",
+    "context": "",
+    "sourceEnglish": "No? Don't be a Loser! It's just a little bit of fun!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 51,
+    "rowNumber": 54,
+    "key": "SAY.Dialog:Gamblers.125.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.125.Greedy Ass",
+    "context": "Jump to line 55.",
+    "sourceEnglish": "You like fun don't you?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 52,
+    "rowNumber": 55,
+    "key": "SAY.Dialog:Gamblers.121.Shifty Ass",
+    "utterer": "SAY.Dialog:Gamblers.121.Shifty Ass",
+    "context": "Players guess how many new Ass Souls will drop from the sky:",
+    "sourceEnglish": "So what's your bet? How many Newbies will drop?"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 53,
+    "rowNumber": 56,
+    "key": "WRITE.Dialog:Localizer.1",
+    "utterer": "WRITE.Dialog:Localizer.1",
+    "context": "",
+    "sourceEnglish": "WAGER"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 54,
+    "rowNumber": 57,
+    "key": "SAY.Dialog:Gamblers.78.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.78.Greedy Ass",
+    "context": "If guessed 5000+.",
+    "sourceEnglish": "{$Number}? Are things that bad in the land of the livin'? Fuggetaboutit! Yeesh!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 55,
+    "rowNumber": 58,
+    "key": "SAY.Dialog:Gamblers.103.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.103.Greedy Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "{$Number}, don't worry—a number that high? We won't forget."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 56,
+    "rowNumber": 59,
+    "key": "SAY.Dialog:Gamblers.80.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.80.Greedy Ass",
+    "context": "If guessed 1000-5000.",
+    "sourceEnglish": "{$Number}. Pretty reasonable."
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 57,
+    "rowNumber": 60,
+    "key": "SAY.Dialog:Gamblers.126.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.126.Greedy Ass",
+    "context": "",
+    "sourceEnglish": "For a Loser!"
+  },
+  {
+    "fileName": "4_asses.masses_E4Proxy.json",
+    "sheetName": "E4_AstralPlaneMain_localization",
+    "entryIndex": 58,
+    "rowNumber": 61,
+    "key": "SAY.Dialog:Gamblers.48.Greedy Ass",
+    "utterer": "SAY.Dialog:Gamblers.48.Greedy Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "{$Number}? You gotta play big to win big!"
+  }
+]

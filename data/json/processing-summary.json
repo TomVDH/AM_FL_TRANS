@@ -1,10 +1,10 @@
 {
-  "processedAt": "2025-12-29T08:53:11.403Z",
-  "totalFiles": 13,
-  "successfulFiles": 13,
+  "processedAt": "2025-12-29T22:52:04.208Z",
+  "totalFiles": 14,
+  "successfulFiles": 14,
   "failedFiles": 0,
-  "totalSheets": 119,
-  "totalEntries": 4548,
+  "totalSheets": 125,
+  "totalEntries": 4618,
   "files": [
     {
       "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy",
@@ -95,6 +95,13 @@
       "success": true,
       "sheets": 1,
       "entries": 45,
+      "error": null
+    },
+    {
+      "fileName": "Translation Checklist",
+      "success": true,
+      "sheets": 6,
+      "entries": 70,
       "error": null
     }
   ]

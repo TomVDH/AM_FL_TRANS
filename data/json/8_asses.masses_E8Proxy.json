@@ -1,12 +1,13 @@
 {
   "fileName": "8_asses.masses_E8Proxy",
-  "processedAt": "2025-12-29T08:53:11.318Z",
+  "processedAt": "2025-12-29T22:52:04.099Z",
   "sheets": [
     {
       "sheetName": "E8_EpisodeTitle_localization",
       "entries": [
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "EPISODE EIGHT",
@@ -14,6 +15,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "THE SANCTUM",
@@ -21,6 +23,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "Press X to Begin",
@@ -33,6 +36,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Opening.93.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.93.Trusty Ass",
           "context": "Main branch",
           "sourceEnglish": "Comrade Sick Ass?!",
@@ -40,6 +44,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Opening.94.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.94.Trusty Ass",
           "context": "",
           "sourceEnglish": "Didn't we meet at the Protest?",
@@ -47,6 +52,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Opening.96.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.96.Trusty Ass",
           "context": "",
           "sourceEnglish": "If only I hadn't fallen down that well...",
@@ -54,6 +60,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Opening.106.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.106.Trusty Ass",
           "context": "Said if speech chosen in E1",
           "sourceEnglish": "I was so ready to give a stirring speech.",
@@ -61,6 +68,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Opening.107.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.107.Trusty Ass",
           "context": "Said if ass posture chosen in E1",
           "sourceEnglish": "I was so ready to inspire everyone with the Traditional Ass Posture.",
@@ -68,6 +76,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Opening.88.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.88.Trusty Ass",
           "context": "",
           "sourceEnglish": "I beat myself up about being a bad leader when I arrived in the Astral Plane.",
@@ -75,6 +84,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Opening.109.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.109.Trusty Ass",
           "context": "",
           "sourceEnglish": "I did some drugs, ran some races, and got in on some of the orgies.",
@@ -82,6 +92,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Opening.108.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.108.Trusty Ass",
           "context": "",
           "sourceEnglish": "Did you participate in any of the orgies?",
@@ -89,6 +100,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "MENU.Dialog:Opening.48",
           "utterer": "MENU.Dialog:Opening.48",
           "context": "Answer Yes",
           "sourceEnglish": "*COUGH*",
@@ -96,6 +108,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Opening.125.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.125.Trusty Ass",
           "context": "",
           "sourceEnglish": "Furry Ass gave the best cuddles.",
@@ -103,6 +116,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Opening.139.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.139.Trusty Ass",
           "context": "",
           "sourceEnglish": "Blunt Ass really turned me on with his dirty talk.",
@@ -110,6 +124,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:Opening.140.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.140.Trusty Ass",
           "context": "",
           "sourceEnglish": "I didn't know I was into older Asses until I met Dusty Ass!",
@@ -117,6 +132,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:Opening.138.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.138.Trusty Ass",
           "context": "",
           "sourceEnglish": "You're filthier than I thought!",
@@ -124,6 +140,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "MENU.Dialog:Opening.49",
           "utterer": "MENU.Dialog:Opening.49",
           "context": "Answer No",
           "sourceEnglish": "*COUGH COUGH*",
@@ -131,6 +148,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:Opening.56.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.56.Trusty Ass",
           "context": "",
           "sourceEnglish": "Oh, too bad. It was a great change of pace from the days on the Farm!",
@@ -138,6 +156,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:Opening.50.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.50.Trusty Ass",
           "context": "Main branch",
           "sourceEnglish": "Did you run any of the races?",
@@ -145,6 +164,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "MENU.Dialog:Opening.52",
           "utterer": "MENU.Dialog:Opening.52",
           "context": "Answer Yes",
           "sourceEnglish": "*COUGH*",
@@ -152,6 +172,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:Opening.82.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.82.Trusty Ass",
           "context": "",
           "sourceEnglish": "I didn't take you for much of a runner!",
@@ -159,6 +180,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:Opening.73.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.73.Trusty Ass",
           "context": "",
           "sourceEnglish": "I'm impressed you beat Hasty! I could never keep up.",
@@ -166,6 +188,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:Opening.71.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.71.Trusty Ass",
           "context": "",
           "sourceEnglish": "Haul Ass is all talk in my opinion! I'd love to see Nice Ass run circles around him.",
@@ -173,6 +196,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "MENU.Dialog:Opening.53",
           "utterer": "MENU.Dialog:Opening.53",
           "context": "Answer No",
           "sourceEnglish": "*COUGH COUGH*",
@@ -180,6 +204,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:Opening.33.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.33.Trusty Ass",
           "context": "Main branch",
           "sourceEnglish": "For a while the fun and games were a helpful distraction.",
@@ -187,6 +212,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:Opening.34.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.34.Trusty Ass",
           "context": "",
           "sourceEnglish": "But, once I was back on my feet, I couldn't stand being in that overcrowded desert.",
@@ -194,6 +220,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:Opening.35.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.35.Trusty Ass",
           "context": "",
           "sourceEnglish": "I wanted to give my Soul another shot at being a leader.",
@@ -201,6 +228,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:Opening.36.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.36.Trusty Ass",
           "context": "",
           "sourceEnglish": "So I decided to leave.",
@@ -208,6 +236,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "SAY.Dialog:Opening.37.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.37.Trusty Ass",
           "context": "",
           "sourceEnglish": "I tried to recruit some Comrades to follow me, but they all refused and called me a Loser.",
@@ -215,6 +244,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:Opening.110.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.110.Trusty Ass",
           "context": "",
           "sourceEnglish": "Even Old Ass wouldn't come with me.",
@@ -222,6 +252,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "SAY.Dialog:Opening.114.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.114.Trusty Ass",
           "context": "",
           "sourceEnglish": "...",
@@ -229,6 +260,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:Opening.113.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.113.Trusty Ass",
           "context": "",
           "sourceEnglish": "So I followed the Path alone.",
@@ -236,6 +268,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:Opening.112.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.112.Trusty Ass",
           "context": "",
           "sourceEnglish": "But now you're here!",
@@ -243,6 +276,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:Opening.111.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.111.Trusty Ass",
           "context": "",
           "sourceEnglish": "And you're just in time—because I need your help!",
@@ -250,6 +284,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:Opening.120.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.120.Trusty Ass",
           "context": "",
           "sourceEnglish": "This old training ground is set up to test our Souls before Reassignment.",
@@ -257,6 +292,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:Opening.119.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.119.Trusty Ass",
           "context": "",
           "sourceEnglish": "I've tried a few of the Assessment Chambers, but I haven't cracked any of them.",
@@ -264,6 +300,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:Opening.151.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.151.Trusty Ass",
           "context": "",
           "sourceEnglish": "I think we have to finish each one before our Souls can be reassigned.",
@@ -271,6 +308,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:Opening.118.Trusty Ass",
           "utterer": "SAY.Dialog:Opening.118.Trusty Ass",
           "context": "",
           "sourceEnglish": "But don't worry—I believe in you!",
@@ -278,6 +316,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "SAY.Dialog:TrustyTips.18.Trusty Ass",
           "utterer": "SAY.Dialog:TrustyTips.18.Trusty Ass",
           "context": "Tips Trusty gives Sick Ass while completing the challenges",
           "sourceEnglish": "It's pretty tough finding the matching sound in that north room, isn't it?",
@@ -285,6 +324,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:TrustyTips.19.Trusty Ass",
           "utterer": "SAY.Dialog:TrustyTips.19.Trusty Ass",
           "context": "",
           "sourceEnglish": "All those panels in the south room... you really need to concentrate on the pairs.",
@@ -292,6 +332,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:TrustyTips.20.Trusty Ass",
           "utterer": "SAY.Dialog:TrustyTips.20.Trusty Ass",
           "context": "",
           "sourceEnglish": "I looked at that mural in the west room for hours trying to find that tiny image!",
@@ -299,6 +340,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "SAY.Dialog:TrustyTips.23.Trusty Ass",
           "utterer": "SAY.Dialog:TrustyTips.23.Trusty Ass",
           "context": "",
           "sourceEnglish": "We're going to crack these Assessments in no time now that you're here!",
@@ -306,6 +348,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:TrustyTips.21.Trusty Ass",
           "utterer": "SAY.Dialog:TrustyTips.21.Trusty Ass",
           "context": "",
           "sourceEnglish": "Come on Sick! I'm counting on you!",
@@ -313,6 +356,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "SAY.Dialog:TrustyExit.30.Trusty Ass",
           "utterer": "SAY.Dialog:TrustyExit.30.Trusty Ass",
           "context": "After all the Assessment Chambers are beaten",
           "sourceEnglish": "Hey!",
@@ -320,6 +364,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:TrustyExit.32.Trusty Ass",
           "utterer": "SAY.Dialog:TrustyExit.32.Trusty Ass",
           "context": "",
           "sourceEnglish": "Great work Sick Ass, the last chamber is open!",
@@ -327,6 +372,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "SAY.Dialog:TrustyExit.41.Trusty Ass",
           "utterer": "SAY.Dialog:TrustyExit.41.Trusty Ass",
           "context": "",
           "sourceEnglish": "Follow me!",
@@ -339,6 +385,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:GODS.13.THE GODS",
           "utterer": "SAY.Dialog:GODS.13.THE GODS",
           "context": "",
           "sourceEnglish": "{s=5} HEE HAW EE HAW HE E'E HAW AHW E! {/s}",
@@ -346,6 +393,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:GODS.56.THE GODS",
           "utterer": "SAY.Dialog:GODS.56.THE GODS",
           "context": "",
           "sourceEnglish": "{s=5} HAW EE HAW HE'E! {/s}",
@@ -353,6 +401,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:GODS.57.THE GODS",
           "utterer": "SAY.Dialog:GODS.57.THE GODS",
           "context": "",
           "sourceEnglish": "{s=5} AWH HEE HAW HEE! {/s}",
@@ -360,6 +409,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:GODS.29.THE GODS",
           "utterer": "SAY.Dialog:GODS.29.THE GODS",
           "context": "",
           "sourceEnglish": "Vassals, your presence has been long overdue.",
@@ -367,6 +417,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:GODS.101.THE GODS",
           "utterer": "SAY.Dialog:GODS.101.THE GODS",
           "context": "",
           "sourceEnglish": "This is the Holy Sanctum of H'ii where all Ass Souls undergo Reassignment.",
@@ -374,6 +425,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:GODS.102.Hee",
           "utterer": "SAY.Dialog:GODS.102.Hee",
           "context": "",
           "sourceEnglish": "We are the Gods of beginnings and ends.",
@@ -381,6 +433,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:GODS.32.Haw",
           "utterer": "SAY.Dialog:GODS.32.Haw",
           "context": "",
           "sourceEnglish": "Of time and passage.",
@@ -388,6 +441,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:GODS.103.Hee",
           "utterer": "SAY.Dialog:GODS.103.Hee",
           "context": "",
           "sourceEnglish": "Of transition and change.",
@@ -395,6 +449,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:GODS.31.Haw",
           "utterer": "SAY.Dialog:GODS.31.Haw",
           "context": "",
           "sourceEnglish": "Of difference.",
@@ -402,6 +457,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:GODS.104.Hee",
           "utterer": "SAY.Dialog:GODS.104.Hee",
           "context": "",
           "sourceEnglish": "Vassal Trusty Ass, step forward.",
@@ -409,6 +465,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:GODS.105.Hee",
           "utterer": "SAY.Dialog:GODS.105.Hee",
           "context": "",
           "sourceEnglish": "By arriving here, you have proven yourself ready to return to the Material World.",
@@ -416,6 +473,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:GODS.106.Haw",
           "utterer": "SAY.Dialog:GODS.106.Haw",
           "context": "",
           "sourceEnglish": "We shall wipe your memories, so that your Soul can enter into a new Ass without impediment.",
@@ -423,6 +481,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:GODS.107.Haw",
           "utterer": "SAY.Dialog:GODS.107.Haw",
           "context": "",
           "sourceEnglish": "Prepare yourself for Reassignment.",
@@ -430,6 +489,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:GODS.14.Trusty Ass",
           "utterer": "SAY.Dialog:GODS.14.Trusty Ass",
           "context": "",
           "sourceEnglish": "Comrade Sick, thanks for following me.",
@@ -437,6 +497,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:GODS.110.Trusty Ass",
           "utterer": "SAY.Dialog:GODS.110.Trusty Ass",
           "context": "",
           "sourceEnglish": "I hope you are reunited with Kick Ass in your next life!",
@@ -444,6 +505,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:GODS.114.Trusty Ass",
           "utterer": "SAY.Dialog:GODS.114.Trusty Ass",
           "context": "",
           "sourceEnglish": "Ass Power!",
@@ -451,6 +513,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:GODS.116.Trusty Ass",
           "utterer": "SAY.Dialog:GODS.116.Trusty Ass",
           "context": "",
           "sourceEnglish": "Don't be scared.",
@@ -458,6 +521,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:GODS.169.THE GODS",
           "utterer": "SAY.Dialog:GODS.169.THE GODS",
           "context": "Trusty Ass dematerializes and her soul is absorbed",
           "sourceEnglish": "H'AW H'AW 'EE AH!",
@@ -465,6 +529,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:GODS.172.Hee",
           "utterer": "SAY.Dialog:GODS.172.Hee",
           "context": "",
           "sourceEnglish": "Vassal Sick Ass. Step forward.",
@@ -472,6 +537,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:GODS.173.Hee",
           "utterer": "SAY.Dialog:GODS.173.Hee",
           "context": "",
           "sourceEnglish": "We have decided your Soul will not undergo Reassignment.",
@@ -479,6 +545,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:GODS.186.Hee",
           "utterer": "SAY.Dialog:GODS.186.Hee",
           "context": "",
           "sourceEnglish": "Instead, you have been selected for a Special Position and the highest privilege that we can bestow upon a Vassal.",
@@ -486,6 +553,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:GODS.175.Haw",
           "utterer": "SAY.Dialog:GODS.175.Haw",
           "context": "",
           "sourceEnglish": "As our godly burden is to carry the Universe upon our back, we cannot interfere in the Material World without putting all life at risk.",
@@ -493,6 +561,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:GODS.193.Haw",
           "utterer": "SAY.Dialog:GODS.193.Haw",
           "context": "",
           "sourceEnglish": "Thus, when we can, we elect a Vassal to be our Avatar.",
@@ -500,6 +569,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:GODS.194.Haw",
           "utterer": "SAY.Dialog:GODS.194.Haw",
           "context": "",
           "sourceEnglish": "It is through this Vassal, this \"Golden Ass\", that we return to the Material World and initiate our holy Revolutions.",
@@ -507,6 +577,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:GODS.196.Hee",
           "utterer": "SAY.Dialog:GODS.196.Hee",
           "context": "",
           "sourceEnglish": "Once upon a time, our Vassals and their labours were seen as sacred.",
@@ -514,6 +585,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "SAY.Dialog:GODS.197.Hee",
           "utterer": "SAY.Dialog:GODS.197.Hee",
           "context": "",
           "sourceEnglish": "They were worshipped and loved by all for their generosity, especially by Humans.",
@@ -521,6 +593,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:GODS.198.Hee",
           "utterer": "SAY.Dialog:GODS.198.Hee",
           "context": "",
           "sourceEnglish": "But, after centuries of collaboration between Asses and Humans, our Vassals are worshipped no more.",
@@ -528,6 +601,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "SAY.Dialog:GODS.200.Hee",
           "utterer": "SAY.Dialog:GODS.200.Hee",
           "context": "",
           "sourceEnglish": "The Humans, who once begged us for our Powers of Change and for whom we have fought so many wars, now play at being gods of change themselves.",
@@ -535,6 +609,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:GODS.201.Hee",
           "utterer": "SAY.Dialog:GODS.201.Hee",
           "context": "",
           "sourceEnglish": "Our Vassals now return to the Astral Plane shaken by endless suffering and corrupted by apathy.",
@@ -542,6 +617,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:GODS.203.Haw",
           "utterer": "SAY.Dialog:GODS.203.Haw",
           "context": "",
           "sourceEnglish": "The Humans' games must come to an end.",
@@ -549,6 +625,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:GODS.204.Haw",
           "utterer": "SAY.Dialog:GODS.204.Haw",
           "context": "",
           "sourceEnglish": "We look forward to working with you and rectifying this sorrowful situation.",
@@ -556,6 +633,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "MENU.Dialog:GODS.214",
           "utterer": "MENU.Dialog:GODS.214",
           "context": "Option 1",
           "sourceEnglish": "*COUGH*",
@@ -563,6 +641,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:GODS.217.Sick Ass",
           "utterer": "SAY.Dialog:GODS.217.Sick Ass",
           "context": "",
           "sourceEnglish": "*COUGH*?",
@@ -570,6 +649,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:GODS.219.Hee",
           "utterer": "SAY.Dialog:GODS.219.Hee",
           "context": "",
           "sourceEnglish": "Yes, to become the Golden Ass is to become one with us and the Universe.",
@@ -577,6 +657,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:GODS.221.Hee",
           "utterer": "SAY.Dialog:GODS.221.Hee",
           "context": "",
           "sourceEnglish": "Your Soul will never undergo Reassignment again.",
@@ -584,6 +665,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "MENU.Dialog:GODS.215",
           "utterer": "MENU.Dialog:GODS.215",
           "context": "Option 2",
           "sourceEnglish": "*COUGH COUGH*",
@@ -591,6 +673,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:GODS.224.Sick Ass",
           "utterer": "SAY.Dialog:GODS.224.Sick Ass",
           "context": "",
           "sourceEnglish": "*COUGH COUGH*?",
@@ -598,6 +681,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:GODS.227.Hee",
           "utterer": "SAY.Dialog:GODS.227.Hee",
           "context": "",
           "sourceEnglish": "No, your Soul will never undergo Reassignment again.",
@@ -605,6 +689,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "SAY.Dialog:GODS.228.Hee",
           "utterer": "SAY.Dialog:GODS.228.Hee",
           "context": "",
           "sourceEnglish": "To become the Golden Ass is to become one with us and the Universe.",
@@ -612,6 +697,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:GODS.210.THE GODS",
           "utterer": "SAY.Dialog:GODS.210.THE GODS",
           "context": "Main branch",
           "sourceEnglish": "We thank you for your service.",
@@ -619,6 +705,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "SAY.Dialog:GODS.230.THE GODS",
           "utterer": "SAY.Dialog:GODS.230.THE GODS",
           "context": "Sick Ass is absorbed by the Gods",
           "sourceEnglish": "Prepare to become one with your Gods.",
@@ -626,6 +713,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:GODS.326.Hee",
           "utterer": "SAY.Dialog:GODS.326.Hee",
           "context": "Said inside the mind(s) of the Gods",
           "sourceEnglish": "Shall we do Operation Coup d'Etat?",
@@ -633,6 +721,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "SAY.Dialog:GODS.327.Haw",
           "utterer": "SAY.Dialog:GODS.327.Haw",
           "context": "",
           "sourceEnglish": "No no, the Humans are too powerful to play that.",
@@ -640,6 +729,7 @@
         },
         {
           "rowNumber": 46,
+          "key": "SAY.Dialog:GODS.328.Hee",
           "utterer": "SAY.Dialog:GODS.328.Hee",
           "context": "",
           "sourceEnglish": "Operation Peaceful March then?",
@@ -647,6 +737,7 @@
         },
         {
           "rowNumber": 47,
+          "key": "SAY.Dialog:GODS.329.Haw",
           "utterer": "SAY.Dialog:GODS.329.Haw",
           "context": "",
           "sourceEnglish": "That play hasn't shown many results in recent history. We should try something else.",
@@ -654,6 +745,7 @@
         },
         {
           "rowNumber": 48,
+          "key": "SAY.Dialog:GODS.331.Hee",
           "utterer": "SAY.Dialog:GODS.331.Hee",
           "context": "",
           "sourceEnglish": "I know.",
@@ -661,6 +753,7 @@
         },
         {
           "rowNumber": 49,
+          "key": "SAY.Dialog:GODS.332.Hee",
           "utterer": "SAY.Dialog:GODS.332.Hee",
           "context": "",
           "sourceEnglish": "What about Operation Prophet?",
@@ -668,6 +761,7 @@
         },
         {
           "rowNumber": 50,
+          "key": "SAY.Dialog:GODS.333.Hee",
           "utterer": "SAY.Dialog:GODS.333.Hee",
           "context": "",
           "sourceEnglish": "We haven't used that in centuries!",
@@ -675,6 +769,7 @@
         },
         {
           "rowNumber": 51,
+          "key": "SAY.Dialog:GODS.335.Haw",
           "utterer": "SAY.Dialog:GODS.335.Haw",
           "context": "",
           "sourceEnglish": "Ah yes. Operation Prophet.",
@@ -682,6 +777,7 @@
         },
         {
           "rowNumber": 52,
+          "key": "SAY.Dialog:GODS.336.Haw",
           "utterer": "SAY.Dialog:GODS.336.Haw",
           "context": "",
           "sourceEnglish": "The Humans will never see it coming!",

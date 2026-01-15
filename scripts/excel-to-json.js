@@ -132,8 +132,14 @@ function processStandardExcelFile(filePath) {
         // Skip empty rows
         if (!row || row.length === 0) continue;
         
-        // Extract data from columns A, B, C, and J (Dutch) - strip any HTML/styles
-        const utterer = stripHtmlAndStyles(row[0] ? row[0].toString().trim() : '');
+        // Excel Column Structure:
+        // A (row[0]) = Key (translation key identifier like "SAY.Sign_..." or "WRITE.Dialog:...")
+        // B (row[1]) = Description/Context
+        // C (row[2]) = English (source text)
+        // D-I (row[3-8]) = ES, FR, PT, IT, DE, TR
+        // J (row[9]) = NL/Dutch (target translation)
+        // K (row[10]) = CA/Catalan (not used)
+        const key = stripHtmlAndStyles(row[0] ? row[0].toString().trim() : '');
         const context = stripHtmlAndStyles(row[1] ? row[1].toString().trim() : '');
         const sourceEnglish = stripHtmlAndStyles(row[2] ? row[2].toString().trim() : '');
         const translatedDutch = stripHtmlAndStyles(row[9] ? row[9].toString().trim() : ''); // Column J (index 9)
@@ -142,7 +148,8 @@ function processStandardExcelFile(filePath) {
         if (sourceEnglish && sourceEnglish !== '') {
           sheetData.entries.push({
             rowNumber: i + 1, // Excel row number (1-based)
-            utterer: utterer,
+            key: key,             // Translation key from Column A
+            utterer: key,         // Keep utterer for backwards compatibility (same as key)
             context: context,
             sourceEnglish: sourceEnglish,
             translatedDutch: translatedDutch

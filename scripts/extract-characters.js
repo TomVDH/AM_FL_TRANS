@@ -1,13 +1,15 @@
 /**
- * Extract Codex Data from Authoritative Sources
+ * Extract Enhanced Codex Data from Authoritative Sources
  *
  * This script extracts character names, locations, and world terms from:
- * 1. E0 CharacterProfiles_localization (AUTHORITATIVE for character names)
- * 2. READ_ME_LocalizationManual "Names and World Overview" (supplementary data)
+ * 1. E0 CharacterProfiles_localization (AUTHORITATIVE for character names/translations)
+ * 2. READ_ME_LocalizationManual "Names and World Overview" (supplementary data + bios)
  *
- * The README sheet uses a TRANSPOSED layout where:
- * - English names are in one row across columns
- * - Dutch translations are in another row aligned to those columns
+ * Enhanced fields (Phase 2):
+ * - nicknames: Array of common shorthands (e.g., ["Sick", "Uncle Sick"])
+ * - bio: Full character description from README
+ * - gender: "male" | "female" | null
+ * - dialogueStyle: Speech patterns and conventions
  *
  * Output:
  * - data/csv/codex_translations.csv
@@ -21,9 +23,66 @@ const path = require('path');
 const allEntries = [];
 const seenKeys = new Set();
 
+// Map to store README metadata by character name
+const readmeMetadata = new Map();
+
 // Normalize string for deduplication (remove spaces, lowercase)
 function normalizeKey(str) {
   return str.toLowerCase().replace(/\s+/g, '').replace(/[^a-z0-9]/g, '');
+}
+
+/**
+ * Generate nicknames from character name
+ * Pattern analysis from E0-E4:
+ * - "Sick Ass" -> ["Sick", "Sicko"]
+ * - "Trusty Ass" -> ["Trusty"]
+ * - Prefixed forms: "Uncle Sick", "Aunty Nice", "Comrade Sturdy"
+ */
+function generateNicknames(englishName) {
+  const nicknames = [];
+
+  // Extract base adjective by removing " Ass" suffix
+  if (englishName.endsWith(' Ass')) {
+    const base = englishName.replace(' Ass', '');
+    nicknames.push(base);
+
+    // Add common diminutive/nickname forms
+    const nicknameVariants = {
+      'Sick': ['Sicko'],
+      'Bad': ['Baddie'],
+      'Old': ['Oldie'],
+      'Nice': ['Nicey'],
+      'Sad': ['Saddie'],
+      'Lazy': ['Laze'],
+      'Kick': ['Kicker'],
+      'Hard': ['Hardie'],
+    };
+
+    if (nicknameVariants[base]) {
+      nicknames.push(...nicknameVariants[base]);
+    }
+
+    // Add common prefixed forms found in dialogue
+    const kinshipPrefixes = ['Uncle', 'Aunty', 'Comrade', 'Brother', 'Sister'];
+    kinshipPrefixes.forEach(prefix => {
+      nicknames.push(`${prefix} ${base}`);
+    });
+  }
+
+  // Human name variations (first name only)
+  if (englishName.includes(' ') && !englishName.endsWith(' Ass')) {
+    const parts = englishName.split(' ');
+    // Add first name as nickname
+    if (parts[0] && parts[0].length > 2) {
+      nicknames.push(parts[0]);
+    }
+    // For "Title Name" format like "Miner Jenny" or "Ringmaster Rico"
+    if (parts.length === 2 && parts[0].match(/^(Miner|Ringmaster|Zookeeper|Grandma|Child|Asshandler|Radio)/)) {
+      nicknames.push(parts[1]); // Just "Jenny", "Rico", etc.
+    }
+  }
+
+  return nicknames;
 }
 
 // Helper to add entry with deduplication (E0 data takes priority)
@@ -54,15 +113,83 @@ function addEntry(entry, isAuthoritative = false) {
     return false;
   }
 
+  // Generate nicknames if not provided
+  if (!entry.nicknames || entry.nicknames.length === 0) {
+    entry.nicknames = generateNicknames(entry.english);
+  }
+
+  // Merge README metadata if available
+  const readmeMeta = readmeMetadata.get(normalizeKey(entry.english));
+  if (readmeMeta) {
+    entry.bio = entry.bio || readmeMeta.bio || '';
+    entry.gender = entry.gender || readmeMeta.gender || null;
+    entry.dialogueStyle = entry.dialogueStyle || readmeMeta.dialogueStyle || '';
+  }
+
   seenKeys.add(key);
   allEntries.push(entry);
   return true;
 }
 
 // ========================================
+// PART 0: Extract README metadata first (bios, gender, dialogue style)
+// ========================================
+console.log('Reading README for character metadata (bios, gender, dialogue)...');
+const readmePath = '/Users/tomlinson/AM_FL_TRANS/excels/READ_ME_LocalizationManual.xlsx';
+const readmeWorkbook = XLSX.readFile(readmePath);
+const worldSheet = readmeWorkbook.Sheets['Names and World Overview'];
+
+if (worldSheet) {
+  const data = XLSX.utils.sheet_to_json(worldSheet, { header: 1 });
+
+  // Row 3: Character names (header row with names in columns)
+  // Row 4: Sex/Gender
+  // Row 5: Description (bio)
+  // Row 6: Dialog convention
+
+  const nameRow = data[3] || [];
+  const genderRow = data[4] || [];
+  const descRow = data[5] || [];
+  const dialogRow = data[6] || [];
+
+  // Process main donkeys (columns 1-15)
+  for (let col = 1; col < nameRow.length; col++) {
+    const name = (nameRow[col] || '').toString().trim();
+    if (name && name !== 'Character Name') {
+      const normalizedKey = normalizeKey(name);
+      readmeMetadata.set(normalizedKey, {
+        bio: (descRow[col] || '').toString().trim(),
+        gender: (genderRow[col] || '').toString().trim().toLowerCase() || null,
+        dialogueStyle: (dialogRow[col] || '').toString().trim(),
+      });
+    }
+  }
+
+  // Process human characters (row 37-38 area)
+  const humanNameRow = data[37] || [];
+  const humanDescRow = data[38] || [];
+
+  for (let col = 1; col < humanNameRow.length; col++) {
+    const name = (humanNameRow[col] || '').toString().trim();
+    if (name && name !== 'Character Name') {
+      const normalizedKey = normalizeKey(name);
+      if (!readmeMetadata.has(normalizedKey)) {
+        readmeMetadata.set(normalizedKey, {
+          bio: (humanDescRow[col] || '').toString().trim(),
+          gender: null, // Humans don't have gender row in same format
+          dialogueStyle: '',
+        });
+      }
+    }
+  }
+
+  console.log(`  Loaded metadata for ${readmeMetadata.size} characters from README`);
+}
+
+// ========================================
 // PART 1: Extract from E0 CharacterProfiles (AUTHORITATIVE SOURCE)
 // ========================================
-console.log('Reading E0 CharacterProfiles_localization (AUTHORITATIVE)...');
+console.log('\nReading E0 CharacterProfiles_localization (AUTHORITATIVE)...');
 const e0Path = '/Users/tomlinson/AM_FL_TRANS/excels/0_asses.masses_Manager+Intermissions+E0Proxy.xlsx';
 const e0Workbook = XLSX.readFile(e0Path);
 const charSheet = e0Workbook.Sheets['CharacterProfiles_localization'];
@@ -87,7 +214,11 @@ if (charSheet) {
           english,
           dutch,
           category: 'CHARACTER',
-          source: 'E0_CharacterProfiles'
+          source: 'E0_CharacterProfiles',
+          nicknames: [],
+          bio: '',
+          gender: null,
+          dialogueStyle: '',
         }, true); // Mark as authoritative
       }
     }
@@ -101,14 +232,11 @@ console.log(`  Found ${e0Count} authoritative entries from E0`);
 // PART 2: Extract from README (Names and World Overview) - TRANSPOSED FORMAT
 // ========================================
 console.log('\nReading README Names and World Overview (supplementary)...');
-const readmePath = '/Users/tomlinson/AM_FL_TRANS/excels/READ_ME_LocalizationManual.xlsx';
-const readmeWorkbook = XLSX.readFile(readmePath);
-const worldSheet = readmeWorkbook.Sheets['Names and World Overview'];
 
 if (worldSheet) {
   const data = XLSX.utils.sheet_to_json(worldSheet, { header: 1 });
 
-  // Parse sections
+  // Parse sections for locations and machines
   const sections = [];
   let currentSection = null;
 
@@ -132,7 +260,7 @@ if (worldSheet) {
     }
 
     // English row
-    if (currentSection && (firstCell === 'Character Name' || firstCell === 'Place name/Core Concepts')) {
+    if (currentSection && (firstCell === 'Character Name' || firstCell === 'Place name/Core Concepts' || firstCell === 'English')) {
       currentSection.englishRow = row;
       currentSection.englishRowIndex = i;
     }
@@ -158,13 +286,17 @@ if (worldSheet) {
 
       if (english && dutch) {
         addEntry({
-          name: english.replace(/[^a-zA-Z0-9]/g, ''),
+          name: english.replace(/[^a-zA-Z0-9\s]/g, ''),
           key: `${section.category}.${english.replace(/\s+/g, '')}`,
           description: section.name,
           english,
           dutch,
           category: section.category,
-          source: 'README_WorldOverview'
+          source: 'README_WorldOverview',
+          nicknames: [],
+          bio: '',
+          gender: null,
+          dialogueStyle: '',
         }, false); // Not authoritative
       }
     }
@@ -192,33 +324,39 @@ categories.forEach(cat => {
 
 console.log(`\nTotal entries: ${allEntries.length}`);
 
-// Show sample entries from each source
-console.log('\n=== SAMPLE ENTRIES ===\n');
-console.log('From E0 (authoritative):');
-allEntries.filter(e => e.source === 'E0_CharacterProfiles').slice(0, 5).forEach(e => {
-  console.log(`  ${e.english} -> ${e.dutch}`);
-});
-console.log('\nFrom README (supplementary):');
-allEntries.filter(e => e.source === 'README_WorldOverview').slice(0, 10).forEach(e => {
-  console.log(`  [${e.category}] ${e.english} -> ${e.dutch}`);
+// Show sample entries with new fields
+console.log('\n=== SAMPLE ENTRIES WITH ENHANCED DATA ===\n');
+allEntries.filter(e => e.category === 'CHARACTER').slice(0, 5).forEach(e => {
+  console.log(`${e.english} -> ${e.dutch}`);
+  console.log(`  Nicknames: ${e.nicknames.join(', ') || 'none'}`);
+  console.log(`  Gender: ${e.gender || 'unknown'}`);
+  console.log(`  Bio: ${(e.bio || '').substring(0, 80)}...`);
+  console.log(`  Dialogue: ${(e.dialogueStyle || '').substring(0, 60)}...`);
+  console.log('');
 });
 
-// Generate CSV
-const csvLines = ['name,description,english,dutch,category'];
+// Generate CSV with new columns
+const csvLines = ['name,description,english,dutch,category,nicknames,bio,gender,dialogueStyle'];
 allEntries.forEach(entry => {
   const escapeCsv = (str) => {
     if (!str) return '';
+    str = str.toString();
     if (str.includes(',') || str.includes('"') || str.includes('\n')) {
       return '"' + str.replace(/"/g, '""') + '"';
     }
     return str;
   };
+
   csvLines.push([
     escapeCsv(entry.name),
     escapeCsv(entry.description),
     escapeCsv(entry.english),
     escapeCsv(entry.dutch),
-    escapeCsv(entry.category || '')
+    escapeCsv(entry.category || ''),
+    escapeCsv(entry.nicknames.join(';')), // Semicolon-separated for CSV
+    escapeCsv(entry.bio || ''),
+    escapeCsv(entry.gender || ''),
+    escapeCsv(entry.dialogueStyle || ''),
   ].join(','));
 });
 
@@ -228,17 +366,20 @@ fs.writeFileSync(outputPath, csvLines.join('\n'), 'utf8');
 console.log('\n=== OUTPUT ===');
 console.log(`Written ${allEntries.length} entries to ${outputPath}`);
 
-// Write JSON
+// Write JSON with full metadata
 const jsonOutput = {
   generated: new Date().toISOString(),
+  version: '2.0.0',
   sources: [
     'E0 CharacterProfiles_localization (authoritative for characters)',
-    'README Names and World Overview (supplementary locations/humans)'
+    'README Names and World Overview (supplementary + bios/descriptions)'
   ],
   stats: {
     total: allEntries.length,
     fromE0: allEntries.filter(e => e.source === 'E0_CharacterProfiles').length,
     fromREADME: allEntries.filter(e => e.source === 'README_WorldOverview').length,
+    withBios: allEntries.filter(e => e.bio && e.bio.length > 0).length,
+    withNicknames: allEntries.filter(e => e.nicknames && e.nicknames.length > 0).length,
     byCategory: Object.fromEntries(
       categories.map(cat => [cat, allEntries.filter(e => e.category === cat).length])
     )

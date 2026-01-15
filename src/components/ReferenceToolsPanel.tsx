@@ -71,9 +71,9 @@ interface ReferenceToolsPanelProps {
   copyJsonField: (text: string, fieldName: string) => void;
 }
 
-type TabType = 'browse' | 'context' | 'codex';
+type TabType = 'browse' | 'context' | 'codex' | 'global';
 
-// Reusable Result Card Component with larger touch targets
+// Reusable Result Card Component - Compact version (Phase 2)
 const ResultCard: React.FC<{
   type: 'xlsx' | 'codex' | 'character';
   primary: string;
@@ -92,36 +92,37 @@ const ResultCard: React.FC<{
 
   return (
     <div
-      className={`p-4 border rounded-lg shadow-sm hover:shadow-md transition-all duration-200 ${bgColors[type]}`}
-      style={{ borderRadius: '6px' }}
+      className={`p-2.5 border shadow-sm hover:shadow-md transition-all duration-200 ${bgColors[type]}`}
+      style={{ borderRadius: '4px' }}
     >
-      <div className="flex items-start justify-between gap-3">
+      <div className="flex items-start justify-between gap-2">
         <div className="flex-1 min-w-0">
-          {/* Badge */}
-          {badge && <div className="mb-2">{badge}</div>}
-
-          {/* Primary (Dutch translation - most important) */}
-          <div className="text-base font-semibold text-gray-900 dark:text-gray-100 mb-1">
-            {primary}
+          {/* Badge - inline */}
+          <div className="flex items-center gap-2 mb-1">
+            {badge}
+            {/* Primary (Dutch translation - most important) */}
+            <span className="text-sm font-semibold text-gray-900 dark:text-gray-100 truncate">
+              {primary}
+            </span>
           </div>
 
           {/* Secondary (English source) */}
           {secondary && (
-            <div className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+            <div className="text-xs text-gray-600 dark:text-gray-400 mb-1 truncate">
               {secondary}
             </div>
           )}
 
-          {/* Metadata */}
+          {/* Metadata - inline */}
           {metadata && metadata.length > 0 && (
-            <div className="flex flex-wrap gap-2 mt-2">
+            <div className="flex flex-wrap gap-1.5">
               {metadata.map((item, idx) => (
                 <span
                   key={idx}
-                  className="inline-flex items-center text-xs text-gray-500 dark:text-gray-400"
+                  className="inline-flex items-center text-[10px] text-gray-500 dark:text-gray-400"
                 >
-                  <span className="font-medium mr-1">{item.label}:</span>
-                  <span>{item.value}</span>
+                  <span className="font-medium mr-0.5">{item.label}:</span>
+                  <span className="truncate max-w-[100px]">{item.value}</span>
                 </span>
               ))}
             </div>
@@ -131,28 +132,28 @@ const ResultCard: React.FC<{
           {children}
         </div>
 
-        {/* Action Buttons - Large touch targets (44x44px) */}
-        <div className="flex flex-col gap-2 flex-shrink-0">
+        {/* Action Buttons - Smaller but still accessible */}
+        <div className="flex gap-1 flex-shrink-0">
           {onInsert && (
             <button
               onClick={onInsert}
-              className="flex items-center justify-center w-11 h-11 bg-purple-600 hover:bg-purple-700 text-white rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
-              style={{ borderRadius: '8px', minWidth: '44px', minHeight: '44px' }}
+              className="flex items-center justify-center w-8 h-8 bg-purple-600 hover:bg-purple-700 text-white shadow-sm hover:shadow-md transition-all duration-200"
+              style={{ borderRadius: '4px', minWidth: '32px', minHeight: '32px' }}
               title="Insert translation"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
               </svg>
             </button>
           )}
           {onCopy && (
             <button
               onClick={onCopy}
-              className="flex items-center justify-center w-11 h-11 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 rounded-lg shadow-sm hover:shadow-md transition-all duration-200"
-              style={{ borderRadius: '8px', minWidth: '44px', minHeight: '44px' }}
+              className="flex items-center justify-center w-8 h-8 bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 shadow-sm hover:shadow-md transition-all duration-200"
+              style={{ borderRadius: '4px', minWidth: '32px', minHeight: '32px' }}
               title="Copy to clipboard"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
               </svg>
             </button>
@@ -193,14 +194,15 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   darkMode,
   copyJsonField,
 }) => {
-  // Extended tab type to include codex
-  const [activeTab, setActiveTab] = useState<TabType>(xlsxViewerTab);
+  // Default to codex tab (Phase 2: Codex is now primary)
+  const [activeTab, setActiveTab] = useState<TabType>('codex');
+  const [legacyDropdownOpen, setLegacyDropdownOpen] = useState(false);
   const [codexFilter, setCodexFilter] = useState<'all' | 'CHARACTER' | 'LOCATION' | 'OTHER'>('all');
   const [codexSearchTerm, setCodexSearchTerm] = useState('');
   const [codexData, setCodexData] = useState<CharacterMatch[]>([]);
   const [isLoadingCodex, setIsLoadingCodex] = useState(false);
 
-  // Sync with external tab state
+  // Sync with external tab state (for legacy tabs)
   useEffect(() => {
     if (xlsxViewerTab === 'browse' || xlsxViewerTab === 'context') {
       setActiveTab(xlsxViewerTab);
@@ -210,8 +212,15 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   // Handle tab change
   const handleTabChange = (tab: TabType) => {
     setActiveTab(tab);
+    setLegacyDropdownOpen(false);
     if (tab === 'browse' || tab === 'context') {
       setXlsxViewerTab(tab);
+    }
+    // Enable global search when entering global tab, disable when leaving
+    if (tab === 'global') {
+      setGlobalSearch(true);
+    } else if (globalSearch) {
+      setGlobalSearch(false);
     }
   };
 
@@ -269,82 +278,118 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   if (!xlsxMode) return null;
 
   return (
-    <div className="reference-tools-section mt-8 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-6 shadow-lg transition-all duration-300" style={{ borderRadius: '8px' }}>
-      {/* Header */}
-      <div className="flex items-center justify-between mb-6">
+    <div className="reference-tools-section mt-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 p-3 shadow-sm transition-all duration-300" style={{ borderRadius: '4px' }}>
+      {/* Header - Compact */}
+      <div className="flex items-center justify-between mb-2">
         <div>
-          <h4 className="text-lg font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase">
+          <h4 className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-wide uppercase">
             Reference Tools
           </h4>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-            Search translations across all data sources
-          </p>
         </div>
         <button
           onClick={toggleXlsxMode}
-          className="flex items-center justify-center w-10 h-10 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg"
-          style={{ borderRadius: '8px' }}
+          className="flex items-center justify-center w-6 h-6 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
+          style={{ borderRadius: '2px' }}
           title="Close Reference Tools (Esc)"
         >
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
           </svg>
         </button>
       </div>
 
-      {/* Tab Navigation - Redesigned */}
-      <div className="flex gap-1 mb-6 p-1 bg-gray-100 dark:bg-gray-700 rounded-lg" style={{ borderRadius: '8px' }}>
-        <button
-          onClick={() => handleTabChange('browse')}
-          className={`flex-1 px-4 py-2.5 text-sm font-medium rounded-md transition-all duration-200 ${
-            activeTab === 'browse'
-              ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm'
-              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-          }`}
-          style={{ borderRadius: '6px' }}
-        >
-          <span className="flex items-center justify-center gap-2">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
-            </svg>
-            Browse
-          </span>
-        </button>
-        <button
-          onClick={() => handleTabChange('context')}
-          className={`flex-1 px-4 py-2.5 text-sm font-medium rounded-md transition-all duration-200 ${
-            activeTab === 'context'
-              ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm'
-              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
-          }`}
-          style={{ borderRadius: '6px' }}
-        >
-          <span className="flex items-center justify-center gap-2">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-            </svg>
-            Context
-          </span>
-        </button>
+      {/* Tab Navigation - Compact */}
+      <div className="flex gap-1 mb-3 p-0.5 bg-gray-50 dark:bg-gray-900" style={{ borderRadius: '3px' }}>
+        {/* Codex Tab - Primary */}
         <button
           onClick={() => handleTabChange('codex')}
-          className={`flex-1 px-4 py-2.5 text-sm font-medium rounded-md transition-all duration-200 ${
+          className={`flex-1 px-2 py-1 text-[10px] font-medium transition-all duration-200 ${
             activeTab === 'codex'
-              ? 'bg-white dark:bg-gray-600 text-gray-900 dark:text-gray-100 shadow-sm'
+              ? 'bg-gray-700 dark:bg-gray-300 text-white dark:text-gray-900'
               : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
           }`}
-          style={{ borderRadius: '6px' }}
+          style={{ borderRadius: '2px' }}
         >
-          <span className="flex items-center justify-center gap-2">
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <span className="flex items-center justify-center gap-1">
+            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
             Codex
-            <span className="text-[10px] px-1.5 py-0.5 bg-purple-100 dark:bg-purple-800 text-purple-700 dark:text-purple-300 rounded-full font-bold">
+            <span className="text-[8px] px-1 py-0.5 bg-gray-600 dark:bg-gray-400 text-white dark:text-gray-900 font-bold" style={{ borderRadius: '2px' }}>
               {codexData.length}
             </span>
           </span>
         </button>
+
+        {/* Global Search Tab */}
+        <button
+          onClick={() => handleTabChange('global')}
+          className={`flex-1 px-2 py-1 text-[10px] font-medium transition-all duration-200 ${
+            activeTab === 'global'
+              ? 'bg-gray-700 dark:bg-gray-300 text-white dark:text-gray-900'
+              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+          }`}
+          style={{ borderRadius: '2px' }}
+        >
+          <span className="flex items-center justify-center gap-1.5">
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            Global
+          </span>
+        </button>
+
+        {/* Legacy Dropdown */}
+        <div className="relative">
+          <button
+            onClick={() => setLegacyDropdownOpen(!legacyDropdownOpen)}
+            className={`px-2 py-1 text-[10px] font-medium transition-all duration-200 flex items-center gap-1 ${
+              activeTab === 'browse' || activeTab === 'context'
+                ? 'bg-gray-700 dark:bg-gray-300 text-white dark:text-gray-900'
+                : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+            }`}
+            style={{ borderRadius: '2px' }}
+          >
+            <span className="flex items-center gap-1">
+              {activeTab === 'browse' ? 'Browse' : activeTab === 'context' ? 'Context' : 'Legacy'}
+              <svg className={`w-3 h-3 transition-transform ${legacyDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+          </button>
+
+          {/* Dropdown Menu */}
+          {legacyDropdownOpen && (
+            <div className="absolute top-full left-0 mt-1 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 shadow-lg z-10 min-w-[120px]" style={{ borderRadius: '4px' }}>
+              <button
+                onClick={() => handleTabChange('browse')}
+                className={`w-full px-3 py-2 text-left text-xs font-medium transition-colors flex items-center gap-2 ${
+                  activeTab === 'browse'
+                    ? 'bg-gray-100 dark:bg-gray-600 text-gray-900 dark:text-gray-100'
+                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600'
+                }`}
+              >
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 10h16M4 14h16M4 18h16" />
+                </svg>
+                Browse Data
+              </button>
+              <button
+                onClick={() => handleTabChange('context')}
+                className={`w-full px-3 py-2 text-left text-xs font-medium transition-colors flex items-center gap-2 ${
+                  activeTab === 'context'
+                    ? 'bg-gray-100 dark:bg-gray-600 text-gray-900 dark:text-gray-100'
+                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-600'
+                }`}
+              >
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+                Context Search
+              </button>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* Tab Content */}
@@ -653,6 +698,102 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
               ))
             )}
           </div>
+        </div>
+      )}
+
+      {activeTab === 'global' && (
+        <div className="space-y-4">
+          {/* Global Search Info */}
+          <div className="p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded-lg" style={{ borderRadius: '8px' }}>
+            <div className="flex items-center gap-2 mb-1">
+              <svg className="w-4 h-4 text-amber-600 dark:text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="text-xs font-bold text-amber-700 dark:text-amber-300 uppercase">
+                Global Search
+              </span>
+            </div>
+            <p className="text-xs text-amber-600 dark:text-amber-400">
+              Search across all files and sheets. May be slower for large datasets.
+            </p>
+          </div>
+
+          {/* File Selection */}
+          <div className="space-y-2">
+            <label className="block text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wide">
+              Select Data File
+            </label>
+            <select
+              value={selectedXlsxFile}
+              onChange={(e) => loadXlsxData(e.target.value)}
+              className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:border-amber-500 dark:focus:border-amber-400 focus:ring-2 focus:ring-amber-500/20 transition-all duration-200 bg-white dark:bg-gray-700 dark:text-white text-sm"
+              style={{ borderRadius: '8px' }}
+              disabled={isLoadingXlsx}
+            >
+              <option value="">Select an XLSX file to search</option>
+              {availableXlsxFiles.map(file => (
+                <option key={file.fileName} value={file.fileName}>{file.fileName}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Search Input */}
+          <div className="relative">
+            <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+              <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+            <input
+              type="text"
+              value={xlsxSearchTerm}
+              onChange={(e) => setXlsxSearchTerm(e.target.value)}
+              placeholder="Search all files and sheets..."
+              className="w-full pl-12 pr-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:border-amber-500 dark:focus:border-amber-400 focus:ring-2 focus:ring-amber-500/20 transition-all duration-200 bg-white dark:bg-gray-700 dark:text-white text-sm"
+              style={{ borderRadius: '8px' }}
+              disabled={!xlsxData}
+            />
+          </div>
+
+          {/* Results */}
+          {xlsxData && (
+            <div className="mt-4 bg-gray-50 dark:bg-gray-900/50 rounded-lg p-4 max-h-80 overflow-y-auto custom-scrollbar" style={{ borderRadius: '8px' }}>
+              {isLoadingXlsx ? (
+                <div className="flex items-center justify-center py-8">
+                  <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-amber-600"></div>
+                </div>
+              ) : (
+                <div className="space-y-3">
+                  {getFilteredEntries().map((entry: any, index: number) => (
+                    <ResultCard
+                      key={index}
+                      type="xlsx"
+                      primary={entry.translatedDutch || '(no translation)'}
+                      secondary={entry.sourceEnglish}
+                      metadata={[
+                        { label: 'Row', value: String(entry.row) },
+                        { label: 'Speaker', value: entry.utterer },
+                        ...(entry.sheetName ? [{ label: 'Sheet', value: entry.sheetName }] : []),
+                      ]}
+                      onInsert={entry.translatedDutch ? () => insertTranslatedSuggestion(entry.translatedDutch) : undefined}
+                      onCopy={() => copyToClipboard(entry.translatedDutch || entry.sourceEnglish)}
+                      badge={<SourceBadge source="xlsx" size="sm" />}
+                    />
+                  ))}
+                  {getFilteredEntries().length === 0 && (
+                    <div className="text-center py-8">
+                      <svg className="w-12 h-12 mx-auto text-gray-300 dark:text-gray-600 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <p className="text-gray-500 dark:text-gray-400 text-sm">
+                        {xlsxSearchTerm ? 'No entries match your search' : 'Enter a search term to begin'}
+                      </p>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
 

@@ -1,0 +1,392 @@
+{
+  "totalBatches": 64,
+  "batchSize": 50,
+  "totalEntries": 3154,
+  "completedBatches": 0,
+  "batches": [
+    {
+      "batchNumber": 1,
+      "fileName": "batch-001.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 2,
+      "fileName": "batch-002.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 3,
+      "fileName": "batch-003.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 4,
+      "fileName": "batch-004.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 5,
+      "fileName": "batch-005.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 6,
+      "fileName": "batch-006.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 7,
+      "fileName": "batch-007.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 8,
+      "fileName": "batch-008.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 9,
+      "fileName": "batch-009.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 10,
+      "fileName": "batch-010.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 11,
+      "fileName": "batch-011.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 12,
+      "fileName": "batch-012.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 13,
+      "fileName": "batch-013.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 14,
+      "fileName": "batch-014.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 15,
+      "fileName": "batch-015.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 16,
+      "fileName": "batch-016.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 17,
+      "fileName": "batch-017.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 18,
+      "fileName": "batch-018.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 19,
+      "fileName": "batch-019.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 20,
+      "fileName": "batch-020.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 21,
+      "fileName": "batch-021.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 22,
+      "fileName": "batch-022.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 23,
+      "fileName": "batch-023.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 24,
+      "fileName": "batch-024.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 25,
+      "fileName": "batch-025.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 26,
+      "fileName": "batch-026.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 27,
+      "fileName": "batch-027.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 28,
+      "fileName": "batch-028.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 29,
+      "fileName": "batch-029.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 30,
+      "fileName": "batch-030.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 31,
+      "fileName": "batch-031.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 32,
+      "fileName": "batch-032.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 33,
+      "fileName": "batch-033.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 34,
+      "fileName": "batch-034.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 35,
+      "fileName": "batch-035.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 36,
+      "fileName": "batch-036.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 37,
+      "fileName": "batch-037.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 38,
+      "fileName": "batch-038.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 39,
+      "fileName": "batch-039.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 40,
+      "fileName": "batch-040.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 41,
+      "fileName": "batch-041.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 42,
+      "fileName": "batch-042.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 43,
+      "fileName": "batch-043.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 44,
+      "fileName": "batch-044.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 45,
+      "fileName": "batch-045.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 46,
+      "fileName": "batch-046.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 47,
+      "fileName": "batch-047.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 48,
+      "fileName": "batch-048.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 49,
+      "fileName": "batch-049.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 50,
+      "fileName": "batch-050.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 51,
+      "fileName": "batch-051.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 52,
+      "fileName": "batch-052.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 53,
+      "fileName": "batch-053.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 54,
+      "fileName": "batch-054.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 55,
+      "fileName": "batch-055.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 56,
+      "fileName": "batch-056.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 57,
+      "fileName": "batch-057.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 58,
+      "fileName": "batch-058.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 59,
+      "fileName": "batch-059.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 60,
+      "fileName": "batch-060.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 61,
+      "fileName": "batch-061.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 62,
+      "fileName": "batch-062.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 63,
+      "fileName": "batch-063.json",
+      "status": "pending",
+      "entriesCount": 50
+    },
+    {
+      "batchNumber": 64,
+      "fileName": "batch-064.json",
+      "status": "pending",
+      "entriesCount": 4
+    }
+  ]
+}

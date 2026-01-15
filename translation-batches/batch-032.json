@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Day1.24.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.24.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "As long as we keep using this Ointment for your arthritis, you should be able to keep up with the others."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Day1.30.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.30.Zookeeper Rose",
+    "context": "Rose blows whistle and the other donkeys enter.",
+    "sourceEnglish": "Now let's get to work!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Day1.29.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.29.Zookeeper Rose",
+    "context": "Rose speaks to the group of Asses.",
+    "sourceEnglish": "Oh Good Morning my beautiful Asses!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:Day1.34.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.34.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "I'm so glad you're all here, because I have an important announcement!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:Day1.65.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.65.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "The Zoo's Board of Directors wants me to choose an Ass to be the face of a new advertising campaign."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:Day1.64.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.64.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "They know that Asses sell tickets!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:Day1.61.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.61.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "So I've made up a game to decide who it will be."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:Day1.60.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.60.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "I call it ASS OF THE WEEK."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:Day1.59.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.59.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "Every day, you'll compete to see who can capture the attention of the most visitors by giving them what they came here to see."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:Day1.74.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.74.Zookeeper Rose",
+    "context": "Big = Hulk (Can be renamed for more culturally appropriate name)",
+    "sourceEnglish": "Will it be you The Hulk?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:Day1.73.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.73.Zookeeper Rose",
+    "context": "Kick = Littlefoot (Can be renamed for more culturally appropriate name)",
+    "sourceEnglish": "Is it you Littlefoot?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog:Day1.154.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.154.Zookeeper Rose",
+    "context": "Sad = Eeyore (Can be renamed for more culturally appropriate name)",
+    "sourceEnglish": "Or maybe, you, Eeyore?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "SAY.Dialog:Day1.136.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.136.Zookeeper Rose",
+    "context": "Smart = Sophie (Can be renamed for more culturally appropriate name)",
+    "sourceEnglish": "Or Sophie?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "SAY.Dialog:Day1.138.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.138.Zookeeper Rose",
+    "context": "Slow = Achilles",
+    "sourceEnglish": "Or, Achilles? Now that your joints aren't swollen anymore!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "SAY.Dialog:Day1.140.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.140.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "We'll add up your scores at the end of the week, to find out who wins."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "SAY.Dialog:Day1.141.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.141.Zookeeper Rose",
+    "context": "Rose exits.",
+    "sourceEnglish": "I'll go open the gate and then we'll get started."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "SAY.Dialog:Day1.78.Sad Ass",
+    "utterer": "SAY.Dialog:Day1.78.Sad Ass",
+    "context": "This dialogue is said if Sad Ass is present.",
+    "sourceEnglish": "*sigh*"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "SAY.Dialog:Day1.44.Smart Ass",
+    "utterer": "SAY.Dialog:Day1.44.Smart Ass",
+    "context": "",
+    "sourceEnglish": "I've got a Plan!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "SAY.Dialog:Day1.84.Smart Ass",
+    "utterer": "SAY.Dialog:Day1.84.Smart Ass",
+    "context": "",
+    "sourceEnglish": "ONE, I'm going to run into the pen."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "SAY.Dialog:Day1.83.Smart Ass",
+    "utterer": "SAY.Dialog:Day1.83.Smart Ass",
+    "context": "",
+    "sourceEnglish": "TWO, I'm going to capture the attention of the visiting Humans."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "SAY.Dialog:Day1.82.Smart Ass",
+    "utterer": "SAY.Dialog:Day1.82.Smart Ass",
+    "context": "",
+    "sourceEnglish": "THREE, I'm going to have the highest score."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "SAY.Dialog:Day1.81.Smart Ass",
+    "utterer": "SAY.Dialog:Day1.81.Smart Ass",
+    "context": "",
+    "sourceEnglish": "AND WIN ASS OF THE WEEK!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "SAY.Dialog:Day1.80.Smart Ass",
+    "utterer": "SAY.Dialog:Day1.80.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Easy."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "SAY.Dialog:Day1.79.Smart Ass",
+    "utterer": "SAY.Dialog:Day1.79.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Have fun fighting over second place suckers!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "SAY.Dialog:Day1.45.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.45.Zookeeper Rose",
+    "context": "Rose returns.",
+    "sourceEnglish": "Get ready to meet the visitors."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 27,
+    "rowNumber": 30,
+    "key": "SAY.Dialog:Day1.85.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.85.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "Those TOURISTS with the colourful Hawaiian shirts love it when you turn Left and Right to give them a good look at you."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 28,
+    "rowNumber": 31,
+    "key": "SAY.Dialog:Day1.91.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.91.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "THE TEACHERS with clip boards like it when you demonstrate a classic donkey Kick!\\n"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 29,
+    "rowNumber": 32,
+    "key": "SAY.Dialog:Day1.90.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.90.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "Those lab-coat wearing RESEARCHERS are fascinated with animal behaviour, so show them a Dust Bath!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 30,
+    "rowNumber": 33,
+    "key": "SAY.Dialog:Day1.89.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.89.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "And of course that OLD LADY who is always here just wants to be Listened to."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 31,
+    "rowNumber": 34,
+    "key": "SAY.Dialog:Day1.88.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.88.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "You got that memorized, right?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 32,
+    "rowNumber": 35,
+    "key": "SAY.Dialog:Day1.210.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.210.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "Attention spans aren't what they used to be!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 33,
+    "rowNumber": 36,
+    "key": "SAY.Dialog:Day1.87.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.87.Zookeeper Rose",
+    "context": "The other Asses run off.",
+    "sourceEnglish": "So you have to be quick to catch the visitors before they get bored."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 34,
+    "rowNumber": 37,
+    "key": "SAY.Dialog:Day1.35.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.35.Zookeeper Rose",
+    "context": "Zookeeper Rose addresses Slow Ass.",
+    "sourceEnglish": "Oh, Achilles!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 35,
+    "rowNumber": 38,
+    "key": "SAY.Dialog:Day1.37.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.37.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "I want you to have an equal chance of winning."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_Zoo_Introduction_localizatio",
+    "entryIndex": 36,
+    "rowNumber": 39,
+    "key": "SAY.Dialog:Day1.36.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day1.36.Zookeeper Rose",
+    "context": "The Player is given control of Slow Ass. Mini-game begins.",
+    "sourceEnglish": "If you need any extra Ointment for your joints to keep up with the others, just come find me."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "WRITE.Dialog:Day1.1",
+    "utterer": "WRITE.Dialog:Day1.1",
+    "context": "",
+    "sourceEnglish": "MONDAY"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "WRITE.Dialog:Localizer.1",
+    "utterer": "WRITE.Dialog:Localizer.1",
+    "context": "Read on the Info Sign of the Zoo.",
+    "sourceEnglish": "Fun facts about Equus Asinus: \\n\\n- Originally from Africa\\n- Can live into their 50s\\n- Are extremely nimble on rocky terrain\\n- Used as working animals for at least 7,000 years\\n- Don't like being in the rain"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Ointment.10.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Ointment.10.Zookeeper Rose",
+    "context": "Said by Zookeeper Rose when the Player presses 'x' near her and your Ointment bar is empty.",
+    "sourceEnglish": "Get your Ointment!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Ointment.12.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Ointment.12.Zookeeper Rose",
+    "context": "Said by Zookeeper Rose when the Player presses 'x' near her and the Ointment bar is NOT empty.",
+    "sourceEnglish": "Your joints look good!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Grandma.8.Grandma Kulan",
+    "utterer": "SAY.Dialog:Grandma.8.Grandma Kulan",
+    "context": "Said by Grandma Kulan when the Player presses 'x' close to her.",
+    "sourceEnglish": "Sigh... Joey would have loved this..."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:EndOfDay.6.Slow Ass",
+    "utterer": "SAY.Dialog:EndOfDay.6.Slow Ass",
+    "context": "Said by Slow Ass upon exiting the map at the end of Day 1, after the mini-game.",
+    "sourceEnglish": "I'm b-b-beat... time for b-b-bed..."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "WRITE.Dialog:Day2.144",
+    "utterer": "WRITE.Dialog:Day2.144",
+    "context": "",
+    "sourceEnglish": "TUESDAY"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:Day2.2.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day2.2.Zookeeper Rose",
+    "context": "Beginning of the next day.",
+    "sourceEnglish": "GOOOODDDD MORNING ASSSSSSES!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:Day2.81.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day2.81.Zookeeper Rose",
+    "context": "",
+    "sourceEnglish": "Superb work yesterday!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:Day2.85.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day2.85.Zookeeper Rose",
+    "context": "Jump to line 13, 14, 15, 16, or 17.",
+    "sourceEnglish": "The current leader is..."
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:Day2.49.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day2.49.Zookeeper Rose",
+    "context": "Dialogue 1.1. If SMART Ass is winning",
+    "sourceEnglish": "Sophie! Everyone can tell how smart she is!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:Day2.50.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day2.50.Zookeeper Rose",
+    "context": "Dialogue 1.2. If BIG Ass is winning.",
+    "sourceEnglish": "The Hulk! Who doesn't love a big donkey?"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:Day2.51.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day2.51.Zookeeper Rose",
+    "context": "Dialogue 1.3. If KICK Ass is winning.",
+    "sourceEnglish": "Littlefoot, you are kick-starting the race for Ass of the Week!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog:Day2.52.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day2.52.Zookeeper Rose",
+    "context": "Dialogue 1.4. If SAD Ass is winning.",
+    "sourceEnglish": "Eeyore! Everyone wants to cheer you on!"
+  },
+  {
+    "fileName": "5_asses.masses_E5Proxy.json",
+    "sheetName": "E5_ZooMain_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "SAY.Dialog:Day2.48.Zookeeper Rose",
+    "utterer": "SAY.Dialog:Day2.48.Zookeeper Rose",
+    "context": "Dialogue 1.5. If SLOW Ass is winning.",
+    "sourceEnglish": "Achilles! That ointment is really making a difference!"
+  }
+]

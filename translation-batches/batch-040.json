@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.DialogMaster.29.Sad Ass",
+    "utterer": "SAY.DialogMaster.29.Sad Ass",
+    "context": "NPC Dialogue on entrance to the fight.",
+    "sourceEnglish": "Time to put you out of YOUR misery..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "WRITE.DialogLocalizer.45",
+    "utterer": "WRITE.DialogLocalizer.45",
+    "context": "Player Attack.",
+    "sourceEnglish": "Vengence"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "WRITE.DialogLocalizer.40",
+    "utterer": "WRITE.DialogLocalizer.40",
+    "context": "UI.",
+    "sourceEnglish": "Strike one target"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "WRITE.DialogLocalizer.47",
+    "utterer": "WRITE.DialogLocalizer.47",
+    "context": "Player Attack.",
+    "sourceEnglish": "Torment"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "WRITE.DialogLocalizer.39",
+    "utterer": "WRITE.DialogLocalizer.39",
+    "context": "UI.",
+    "sourceEnglish": "Strike one target"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "WRITE.DialogLocalizer.48",
+    "utterer": "WRITE.DialogLocalizer.48",
+    "context": "Player Attack.",
+    "sourceEnglish": "Trauma"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "WRITE.DialogLocalizer.41",
+    "utterer": "WRITE.DialogLocalizer.41",
+    "context": "UI.",
+    "sourceEnglish": "Strike multiple targets"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "WRITE.DialogLocalizer.49",
+    "utterer": "WRITE.DialogLocalizer.49",
+    "context": "Player Attack.",
+    "sourceEnglish": "Endure"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "WRITE.DialogLocalizer.42",
+    "utterer": "WRITE.DialogLocalizer.42",
+    "context": "UI.",
+    "sourceEnglish": "Raise your defence"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "WRITE.DialogLocalizer.50",
+    "utterer": "WRITE.DialogLocalizer.50",
+    "context": "Player Attack.",
+    "sourceEnglish": "Lick Wounds"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "WRITE.DialogLocalizer.43",
+    "utterer": "WRITE.DialogLocalizer.43",
+    "context": "UI.",
+    "sourceEnglish": "Recover your health"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "WRITE.DialogLocalizer.46",
+    "utterer": "WRITE.DialogLocalizer.46",
+    "context": "Player Attack.",
+    "sourceEnglish": "Annihilation"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "WRITE.DialogLocalizer.44",
+    "utterer": "WRITE.DialogLocalizer.44",
+    "context": "UI.",
+    "sourceEnglish": "Critically strike multiple targets"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "WRITE.DialogLocalizer.1",
+    "utterer": "WRITE.DialogLocalizer.1",
+    "context": "Attack.",
+    "sourceEnglish": "Acceleration"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "WRITE.DialogLocalizer.2",
+    "utterer": "WRITE.DialogLocalizer.2",
+    "context": "Attack.",
+    "sourceEnglish": "Annihilation"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "WRITE.DialogLocalizer.3",
+    "utterer": "WRITE.DialogLocalizer.3",
+    "context": "Attack.",
+    "sourceEnglish": "Bleeding Heart"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "WRITE.DialogLocalizer.4",
+    "utterer": "WRITE.DialogLocalizer.4",
+    "context": "Attack.",
+    "sourceEnglish": "Breach"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "WRITE.DialogLocalizer.5",
+    "utterer": "WRITE.DialogLocalizer.5",
+    "context": "Attack.",
+    "sourceEnglish": "Bum Rush"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "WRITE.DialogLocalizer.6",
+    "utterer": "WRITE.DialogLocalizer.6",
+    "context": "Attack.",
+    "sourceEnglish": "Catastrophe"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 27,
+    "rowNumber": 30,
+    "key": "WRITE.DialogLocalizer.7",
+    "utterer": "WRITE.DialogLocalizer.7",
+    "context": "Attack.",
+    "sourceEnglish": "Courage"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 28,
+    "rowNumber": 31,
+    "key": "WRITE.DialogLocalizer.8",
+    "utterer": "WRITE.DialogLocalizer.8",
+    "context": "Attack.",
+    "sourceEnglish": "Dominate"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 29,
+    "rowNumber": 32,
+    "key": "WRITE.DialogLocalizer.9",
+    "utterer": "WRITE.DialogLocalizer.9",
+    "context": "Attack. (Takes HP from opponent)",
+    "sourceEnglish": "Drain"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 30,
+    "rowNumber": 33,
+    "key": "WRITE.DialogLocalizer.10",
+    "utterer": "WRITE.DialogLocalizer.10",
+    "context": "Attack. (Raise Defense)",
+    "sourceEnglish": "Endure"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 31,
+    "rowNumber": 34,
+    "key": "WRITE.DialogLocalizer.11",
+    "utterer": "WRITE.DialogLocalizer.11",
+    "context": "Attack.",
+    "sourceEnglish": "Gaslighting"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 32,
+    "rowNumber": 35,
+    "key": "WRITE.DialogLocalizer.12",
+    "utterer": "WRITE.DialogLocalizer.12",
+    "context": "Attack.",
+    "sourceEnglish": "Helmet Headbutt"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 33,
+    "rowNumber": 36,
+    "key": "WRITE.DialogLocalizer.13",
+    "utterer": "WRITE.DialogLocalizer.13",
+    "context": "Attack. High Noon is a cowboy reference because Thirsty has a cowboy accent in English. Feel free to come up with any type of attack name.",
+    "sourceEnglish": "High Noon"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 34,
+    "rowNumber": 37,
+    "key": "WRITE.DialogLocalizer.14",
+    "utterer": "WRITE.DialogLocalizer.14",
+    "context": "Attack. (Defending)",
+    "sourceEnglish": "Impenetrable"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 35,
+    "rowNumber": 38,
+    "key": "WRITE.DialogLocalizer.15",
+    "utterer": "WRITE.DialogLocalizer.15",
+    "context": "Attack.",
+    "sourceEnglish": "Lick Wounds"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 36,
+    "rowNumber": 39,
+    "key": "WRITE.DialogLocalizer.16",
+    "utterer": "WRITE.DialogLocalizer.16",
+    "context": "Attack.",
+    "sourceEnglish": "Plow"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 37,
+    "rowNumber": 40,
+    "key": "WRITE.DialogLocalizer.17",
+    "utterer": "WRITE.DialogLocalizer.17",
+    "context": "Attack.",
+    "sourceEnglish": "Quench"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 38,
+    "rowNumber": 41,
+    "key": "WRITE.DialogLocalizer.18",
+    "utterer": "WRITE.DialogLocalizer.18",
+    "context": "Attack.",
+    "sourceEnglish": "Rock Bottom"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 39,
+    "rowNumber": 42,
+    "key": "WRITE.DialogLocalizer.19",
+    "utterer": "WRITE.DialogLocalizer.19",
+    "context": "Attack.",
+    "sourceEnglish": "Rocks"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 40,
+    "rowNumber": 43,
+    "key": "WRITE.DialogLocalizer.20",
+    "utterer": "WRITE.DialogLocalizer.20",
+    "context": "Attack.",
+    "sourceEnglish": "Scrap"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 41,
+    "rowNumber": 44,
+    "key": "WRITE.DialogLocalizer.21",
+    "utterer": "WRITE.DialogLocalizer.21",
+    "context": "Attack.",
+    "sourceEnglish": "Stomping Ground"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 42,
+    "rowNumber": 45,
+    "key": "WRITE.DialogLocalizer.22",
+    "utterer": "WRITE.DialogLocalizer.22",
+    "context": "Attack.",
+    "sourceEnglish": "Trauma"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 43,
+    "rowNumber": 46,
+    "key": "WRITE.DialogLocalizer.23",
+    "utterer": "WRITE.DialogLocalizer.23",
+    "context": "Attack.",
+    "sourceEnglish": "Torment"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 44,
+    "rowNumber": 47,
+    "key": "WRITE.DialogLocalizer.24",
+    "utterer": "WRITE.DialogLocalizer.24",
+    "context": "Attack.",
+    "sourceEnglish": "Vengence"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 45,
+    "rowNumber": 48,
+    "key": "WRITE.DialogLocalizer.26",
+    "utterer": "WRITE.DialogLocalizer.26",
+    "context": "UI. Target.",
+    "sourceEnglish": "Hard Ass"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 46,
+    "rowNumber": 49,
+    "key": "WRITE.DialogLocalizer.30",
+    "utterer": "WRITE.DialogLocalizer.30",
+    "context": "UI. Target.",
+    "sourceEnglish": "Hard Ass"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 47,
+    "rowNumber": 50,
+    "key": "WRITE.DialogLocalizer.31",
+    "utterer": "WRITE.DialogLocalizer.31",
+    "context": "UI. Target.",
+    "sourceEnglish": "Nice Ass"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 48,
+    "rowNumber": 51,
+    "key": "WRITE.DialogLocalizer.32",
+    "utterer": "WRITE.DialogLocalizer.32",
+    "context": "UI. Target.",
+    "sourceEnglish": "Thirsty Ass"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 49,
+    "rowNumber": 52,
+    "key": "WRITE.DialogLocalizer.33",
+    "utterer": "WRITE.DialogLocalizer.33",
+    "context": "UI. Target.",
+    "sourceEnglish": "Sturdy Ass"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 50,
+    "rowNumber": 53,
+    "key": "WRITE.DialogLocalizer.36",
+    "utterer": "WRITE.DialogLocalizer.36",
+    "context": "UI. Target.",
+    "sourceEnglish": "Sad Ass"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 51,
+    "rowNumber": 54,
+    "key": "WRITE.DialogLocalizer.53",
+    "utterer": "WRITE.DialogLocalizer.53",
+    "context": "UI. example: \"Sad Ass uses:",
+    "sourceEnglish": "uses"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 52,
+    "rowNumber": 55,
+    "key": "SAY.DialogMaster.4.Hard Ass",
+    "utterer": "SAY.DialogMaster.4.Hard Ass",
+    "context": "Evil Hard Ass (Player) WINS.",
+    "sourceEnglish": "No compromises."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BattleHard_localization",
+    "entryIndex": 53,
+    "rowNumber": 56,
+    "key": "SAY.DialogMaster.6.Hard Ass",
+    "utterer": "SAY.DialogMaster.6.Hard Ass",
+    "context": "Evil Hard Ass (Player) LOSES.",
+    "sourceEnglish": "We're just trying to help."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:PostNightmare.15.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.15.Hard Ass",
+    "context": "1.1 Evil Hard Ass Wins",
+    "sourceEnglish": "I'll kill ANYONE in my way!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:PostNightmare.134.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.134.Hard Ass",
+    "context": "",
+    "sourceEnglish": "Revolutions have no room for emotions."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:PostNightmare.7.Sturdy Ass",
+    "utterer": "SAY.Dialog:PostNightmare.7.Sturdy Ass",
+    "context": "Branch (1.1, and 1.2) converge. The scene fades in to Sturdy Ass and the Foal standing in front of Hard Ass.",
+    "sourceEnglish": "Comrade?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:PostNightmare.23.Sturdy Ass",
+    "utterer": "SAY.Dialog:PostNightmare.23.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "It's not like you to nod off at your post."
+  }
+]

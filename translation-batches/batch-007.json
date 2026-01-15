@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 40,
+    "rowNumber": 43,
+    "key": "SAY.Dialog:Occupation.477.Edgy Ass",
+    "utterer": "SAY.Dialog:Occupation.477.Edgy Ass",
+    "context": "",
+    "sourceEnglish": "And it sounds like a Foal too!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 41,
+    "rowNumber": 44,
+    "key": "SAY.Dialog:Occupation.516.Helpful Ass",
+    "utterer": "SAY.Dialog:Occupation.516.Helpful Ass",
+    "context": "",
+    "sourceEnglish": "How do we know the Humans will listen to that Machine?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 42,
+    "rowNumber": 45,
+    "key": "SAY.Dialog:Occupation.515.Helpful Ass",
+    "utterer": "SAY.Dialog:Occupation.515.Helpful Ass",
+    "context": "",
+    "sourceEnglish": "Say something in Human!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 43,
+    "rowNumber": 46,
+    "key": "SAY.Dialog:Occupation.478.{$NewName}",
+    "utterer": "SAY.Dialog:Occupation.478.{$NewName}",
+    "context": "",
+    "sourceEnglish": "I think there's a setting—hold on... okay:"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 44,
+    "rowNumber": 47,
+    "key": "SAY.Dialog:Occupation.480.{$NewName}",
+    "utterer": "SAY.Dialog:Occupation.480.{$NewName}",
+    "context": "",
+    "sourceEnglish": "\"Anyone want to play ROCKS?\""
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 45,
+    "rowNumber": 48,
+    "key": "SAY.Dialog:Occupation.482.Proper Ass",
+    "utterer": "SAY.Dialog:Occupation.482.Proper Ass",
+    "context": "",
+    "sourceEnglish": "Splendid! I have no idea what she just said."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 46,
+    "rowNumber": 49,
+    "key": "SAY.Dialog:Occupation.830.Proper Ass",
+    "utterer": "SAY.Dialog:Occupation.830.Proper Ass",
+    "context": "",
+    "sourceEnglish": "But this is what we've been waiting for!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 47,
+    "rowNumber": 50,
+    "key": "SAY.Dialog:Occupation.483.Proper Ass",
+    "utterer": "SAY.Dialog:Occupation.483.Proper Ass",
+    "context": "",
+    "sourceEnglish": "Young Prophet, will you translate our demands to the Humans?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 48,
+    "rowNumber": 51,
+    "key": "SAY.Dialog:Occupation.484.{$NewName}",
+    "utterer": "SAY.Dialog:Occupation.484.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Wowee... okay..."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 49,
+    "rowNumber": 52,
+    "key": "SAY.Dialog:Occupation.487.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.487.Golden Ass",
+    "context": "",
+    "sourceEnglish": "A wonderful collaboration! Just like old times."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 50,
+    "rowNumber": 53,
+    "key": "SAY.Dialog:Occupation.581.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.581.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Prophet, our first act will be to talk to these Asses."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 51,
+    "rowNumber": 54,
+    "key": "SAY.Dialog:Occupation.488.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.488.Golden Ass",
+    "context": "",
+    "sourceEnglish": "We shall assemble an inspiring Manifesto for you to present to the Human public."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 52,
+    "rowNumber": 55,
+    "key": "SAY.Dialog:Occupation.489.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.489.Golden Ass",
+    "context": "",
+    "sourceEnglish": "It shall be the first step towards winning Human allies to our cause."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 53,
+    "rowNumber": 56,
+    "key": "SAY.Dialog:Occupation.786.Helpful Ass",
+    "utterer": "SAY.Dialog:Occupation.786.Helpful Ass",
+    "context": "",
+    "sourceEnglish": "Tell them we've suffered so much—"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 54,
+    "rowNumber": 57,
+    "key": "SAY.Dialog:Occupation.789.Edgy Ass",
+    "utterer": "SAY.Dialog:Occupation.789.Edgy Ass",
+    "context": "",
+    "sourceEnglish": "Tell the Humans to support—"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 55,
+    "rowNumber": 58,
+    "key": "SAY.Dialog:Occupation.788.Tragic Ass",
+    "utterer": "SAY.Dialog:Occupation.788.Tragic Ass",
+    "context": "",
+    "sourceEnglish": "The Humans have to stop misrep—"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 56,
+    "rowNumber": 59,
+    "key": "SAY.Dialog:Occupation.787.Resentful Ass",
+    "utterer": "SAY.Dialog:Occupation.787.Resentful Ass",
+    "context": "",
+    "sourceEnglish": "No more rides!!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 57,
+    "rowNumber": 60,
+    "key": "SAY.Dialog:Occupation.785.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.785.Golden Ass",
+    "context": "",
+    "sourceEnglish": "SILENCE. You all have a lot to say, but we shall assemble this Manifesto in an orderly fashion."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 58,
+    "rowNumber": 61,
+    "key": "SAY.Dialog:Occupation.790.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.790.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Spread out, Vassals."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 59,
+    "rowNumber": 62,
+    "key": "SAY.Dialog:Occupation.791.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.791.Golden Ass",
+    "context": "",
+    "sourceEnglish": "You shall all be heard."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 60,
+    "rowNumber": 63,
+    "key": "SAY.Dialog:Occupation.1089.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.1089.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Prophet, we must keep our demands succinct."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 61,
+    "rowNumber": 64,
+    "key": "SAY.Dialog:Occupation.1091.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.1091.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Choose the five best ideas from these Vassals and add them to the Manifesto."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 62,
+    "rowNumber": 65,
+    "key": "SAY.Dialog:Occupation.1092.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.1092.Golden Ass",
+    "context": "Skip to line 96 and onwards. The following is a section where players will walk around and assemble a manifesto, chosen from the values of the many Asses inside the government building.",
+    "sourceEnglish": "After you fill your Manifesto, you can always replace a previous idea by choosing a new one."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 63,
+    "rowNumber": 66,
+    "key": "SAY.Dialog:Occupation.521.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.521.Cole-Machine",
+    "context": "Cole track, if Prophet.",
+    "sourceEnglish": "What the fuck did you all do?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 64,
+    "rowNumber": 67,
+    "key": "SAY.Dialog:Occupation.525.Nice Ass",
+    "utterer": "SAY.Dialog:Occupation.525.Nice Ass",
+    "context": "",
+    "sourceEnglish": "Golly, Bad Ass, is that you?"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 65,
+    "rowNumber": 68,
+    "key": "SAY.Dialog:Occupation.526.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.526.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Nice Ass? Of course the Fannyside idiots would be here..."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 66,
+    "rowNumber": 69,
+    "key": "SAY.Dialog:Occupation.527.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.527.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Mecha's Parliament is a place of democracy!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 67,
+    "rowNumber": 70,
+    "key": "SAY.Dialog:Occupation.831.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.831.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Of intellectual endeavours and progress."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 68,
+    "rowNumber": 71,
+    "key": "SAY.Dialog:Occupation.833.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.833.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "And you've shit all over it!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 69,
+    "rowNumber": 72,
+    "key": "SAY.Dialog:Occupation.529.Edgy Ass",
+    "utterer": "SAY.Dialog:Occupation.529.Edgy Ass",
+    "context": "",
+    "sourceEnglish": "The Humans beat us, and even killed some of us too!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 70,
+    "rowNumber": 73,
+    "key": "SAY.Dialog:Occupation.532.Edgy Ass",
+    "utterer": "SAY.Dialog:Occupation.532.Edgy Ass",
+    "context": "",
+    "sourceEnglish": "They're extremists!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 71,
+    "rowNumber": 74,
+    "key": "SAY.Dialog:Occupation.832.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.832.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Mecha's citizens are rational beings!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 72,
+    "rowNumber": 75,
+    "key": "SAY.Dialog:Occupation.835.Resentful Ass",
+    "utterer": "SAY.Dialog:Occupation.835.Resentful Ass",
+    "context": "",
+    "sourceEnglish": "They didn't seem rational when they attacked us in the streets."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 73,
+    "rowNumber": 76,
+    "key": "SAY.Dialog:Occupation.838.Skinny Ass",
+    "utterer": "SAY.Dialog:Occupation.838.Skinny Ass",
+    "context": "",
+    "sourceEnglish": "They don't value us... You don't know what it's like."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 74,
+    "rowNumber": 77,
+    "key": "SAY.Dialog:Occupation.840.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.840.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "I do know what it's like to be treated like an Ass."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 75,
+    "rowNumber": 78,
+    "key": "SAY.Dialog:Occupation.841.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.841.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "It's terrible."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 76,
+    "rowNumber": 79,
+    "key": "SAY.Dialog:Occupation.842.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.842.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "And unfair."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 77,
+    "rowNumber": 80,
+    "key": "SAY.Dialog:Occupation.844.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.844.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "You've all come from places where you have been mistreated by Humans."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 78,
+    "rowNumber": 81,
+    "key": "SAY.Dialog:Occupation.847.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.847.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "But Mecha's citizens are not like the others. They value science, progress, and reason."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 79,
+    "rowNumber": 82,
+    "key": "SAY.Dialog:Occupation.846.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.846.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Once they learn to see the world from your perspective, they will work with us to change the ways of Humans everywhere."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 80,
+    "rowNumber": 83,
+    "key": "SAY.Dialog:Occupation.845.Cole-Machine",
+    "utterer": "SAY.Dialog:Occupation.845.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "If you tell me your demands, I will relay them to the citizens of Mecha in their own language."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 81,
+    "rowNumber": 84,
+    "key": "SAY.Dialog:Occupation.537.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.537.Golden Ass",
+    "context": "",
+    "sourceEnglish": "A wonderful collaboration! Just like old times."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 82,
+    "rowNumber": 85,
+    "key": "SAY.Dialog:Occupation.538.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.538.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Prophet, our first act will be to talk to these Asses."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 83,
+    "rowNumber": 86,
+    "key": "SAY.Dialog:Occupation.539.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.539.Golden Ass",
+    "context": "",
+    "sourceEnglish": "We shall assemble an inspiring Manifesto for you to present to the Human public."
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 84,
+    "rowNumber": 87,
+    "key": "SAY.Dialog:Occupation.540.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.540.Golden Ass",
+    "context": "",
+    "sourceEnglish": "It shall change their philosophies about Asses, about Life, about Everything!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 85,
+    "rowNumber": 88,
+    "key": "SAY.Dialog:Occupation.798.Helpful Ass",
+    "utterer": "SAY.Dialog:Occupation.798.Helpful Ass",
+    "context": "",
+    "sourceEnglish": "Tell the Humans we've suffered so much—"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 86,
+    "rowNumber": 89,
+    "key": "SAY.Dialog:Occupation.800.Edgy Ass",
+    "utterer": "SAY.Dialog:Occupation.800.Edgy Ass",
+    "context": "",
+    "sourceEnglish": "Tell the Humans to support—"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 87,
+    "rowNumber": 90,
+    "key": "SAY.Dialog:Occupation.802.Tragic Ass",
+    "utterer": "SAY.Dialog:Occupation.802.Tragic Ass",
+    "context": "",
+    "sourceEnglish": "The Humans have to stop misrep—"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 88,
+    "rowNumber": 91,
+    "key": "SAY.Dialog:Occupation.804.Resentful Ass",
+    "utterer": "SAY.Dialog:Occupation.804.Resentful Ass",
+    "context": "",
+    "sourceEnglish": "No more rides!!"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Government_localization",
+    "entryIndex": 89,
+    "rowNumber": 92,
+    "key": "SAY.Dialog:Occupation.806.Golden Ass",
+    "utterer": "SAY.Dialog:Occupation.806.Golden Ass",
+    "context": "",
+    "sourceEnglish": "SILENCE. You all have a lot to say, but we shall assemble this Manifesto in an orderly fashion."
+  }
+]

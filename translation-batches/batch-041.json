@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:PostNightmare.19.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.19.Hard Ass",
+    "context": "",
+    "sourceEnglish": "I'm... fine Comrade."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:PostNightmare.22.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.22.Hard Ass",
+    "context": "",
+    "sourceEnglish": "It was a momentary lapse."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:PostNightmare.20.{$NewName}",
+    "utterer": "SAY.Dialog:PostNightmare.20.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Hi Uncle Hard! How many Humans have you killed today?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:PostNightmare.24.Sturdy Ass",
+    "utterer": "SAY.Dialog:PostNightmare.24.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "{$NewName}!!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:PostNightmare.25.{$NewName}",
+    "utterer": "SAY.Dialog:PostNightmare.25.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Ugh! It's just a QUESTION."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:PostNightmare.26.{$NewName}",
+    "utterer": "SAY.Dialog:PostNightmare.26.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Yeesh."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:PostNightmare.27.{$NewName}",
+    "utterer": "SAY.Dialog:PostNightmare.27.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Uncle Hard, Comrade Mother and I are spending 'quality time' together, wanna come?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:PostNightmare.28.Sturdy Ass",
+    "utterer": "SAY.Dialog:PostNightmare.28.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "Uncle Hard can't abandon his post."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:PostNightmare.29.Sturdy Ass",
+    "utterer": "SAY.Dialog:PostNightmare.29.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "The Humans are still trying to breach the Barricades and our Territory must be protected."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog:PostNightmare.16.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.16.Hard Ass",
+    "context": "1.2 Good Hard Ass wins",
+    "sourceEnglish": "It all stops now."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "SAY.Dialog:PostNightmare.133.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.133.Hard Ass",
+    "context": "",
+    "sourceEnglish": "Revolutions can't be won alone."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "SAY.Dialog:PostNightmare.91.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.91.Hard Ass",
+    "context": "Branch 2.1. EVIL version of Hard Ass WON.",
+    "sourceEnglish": "I must keep the Humans out."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "SAY.Dialog:PostNightmare.92.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.92.Hard Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "They are a threat to our autonomy."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "SAY.Dialog:PostNightmare.93.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.93.Hard Ass",
+    "context": "Branch 2.2. GOOD version of Hard Ass WON. Jump to line x.",
+    "sourceEnglish": "We need to protect each other."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "SAY.Dialog:PostNightmare.67.{$NewName}",
+    "utterer": "SAY.Dialog:PostNightmare.67.{$NewName}",
+    "context": "",
+    "sourceEnglish": "When will Aunty Smart and the others decide to come home?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "SAY.Dialog:PostNightmare.70.Hard Ass",
+    "utterer": "SAY.Dialog:PostNightmare.70.Hard Ass",
+    "context": "The sound of a vehicle approaching. Hard Ass leaves to take care of the intruders.",
+    "sourceEnglish": "Duty calls."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "SAY.Dialog:PostNightmare.73.Sturdy Ass",
+    "utterer": "SAY.Dialog:PostNightmare.73.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "{$NewName}! I won't tell you again: the others have gone against the Gods."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "SAY.Dialog:PostNightmare.75.Sturdy Ass",
+    "utterer": "SAY.Dialog:PostNightmare.75.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "And if they ever come back, this isn't their home anymore."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "SAY.Dialog:PostNightmare.76.{$NewName}",
+    "utterer": "SAY.Dialog:PostNightmare.76.{$NewName}",
+    "context": "",
+    "sourceEnglish": "..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "SAY.Dialog:PostNightmare.77.{$NewName}",
+    "utterer": "SAY.Dialog:PostNightmare.77.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Can we head back to the Old Village now?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "SAY.Dialog:PostNightmare.78.{$NewName}",
+    "utterer": "SAY.Dialog:PostNightmare.78.{$NewName}",
+    "context": "After this line, the Foal and Sturdy explore the map in search of the Theatre.",
+    "sourceEnglish": "You promised to show me where the Old Theatre is."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "SAY.Dialog:FoalFollow.26.{$NewName}",
+    "utterer": "SAY.Dialog:FoalFollow.26.{$NewName}",
+    "context": "Randomized dialogue for when Sturdy tries to talk to the Foal.",
+    "sourceEnglish": "Let's go, let's go, let's go!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "SAY.Dialog:FoalFollow.27.{$NewName}",
+    "utterer": "SAY.Dialog:FoalFollow.27.{$NewName}",
+    "context": "Randomized dialogue for when Sturdy tries to talk to the Foal.",
+    "sourceEnglish": "Is this what it was like on the day of the protest?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 27,
+    "rowNumber": 30,
+    "key": "SAY.Dialog:FoalFollow.28.{$NewName}",
+    "utterer": "SAY.Dialog:FoalFollow.28.{$NewName}",
+    "context": "Randomized dialogue for when Sturdy tries to talk to the Foal.",
+    "sourceEnglish": "The sun is so bright!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 28,
+    "rowNumber": 31,
+    "key": "SAY.Dialog:FoalFollow.30.{$NewName}",
+    "utterer": "SAY.Dialog:FoalFollow.30.{$NewName}",
+    "context": "",
+    "sourceEnglish": "It's a good thing I have my helmet."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 29,
+    "rowNumber": 32,
+    "key": "SAY.Dialog:FoalFollow.29.{$NewName}",
+    "utterer": "SAY.Dialog:FoalFollow.29.{$NewName}",
+    "context": "Randomized dialogue for when Sturdy tries to talk to the Foal.",
+    "sourceEnglish": "WAHOO! There are so many cool rocks out here!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 30,
+    "rowNumber": 33,
+    "key": "SAY.Dialog:ShortWayLongWay.45.Sturdy Ass",
+    "utterer": "SAY.Dialog:ShortWayLongWay.45.Sturdy Ass",
+    "context": "A fork in the road. Sturdy and the Foal discuss which way to go to get to the Theatre.",
+    "sourceEnglish": "Which way should we go?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 31,
+    "rowNumber": 34,
+    "key": "SAY.Dialog:ShortWayLongWay.62.Sturdy Ass",
+    "utterer": "SAY.Dialog:ShortWayLongWay.62.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "The Short Way to the South or the Long Way to the North East?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 32,
+    "rowNumber": 35,
+    "key": "SAY.Dialog:ShortWayLongWay.57.{$NewName}",
+    "utterer": "SAY.Dialog:ShortWayLongWay.57.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Ugh. Whatever, Comrade Mother."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 33,
+    "rowNumber": 36,
+    "key": "SAY.Dialog:ShortWayLongWay.58.{$NewName}",
+    "utterer": "SAY.Dialog:ShortWayLongWay.58.{$NewName}",
+    "context": "After this, Sturdy chooses which way to go.",
+    "sourceEnglish": "I don't care which way we go, as long we get to the Old Village!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 34,
+    "rowNumber": 37,
+    "key": "SAY.Dialog:Shrine.10.Sturdy Ass",
+    "utterer": "SAY.Dialog:Shrine.10.Sturdy Ass",
+    "context": "In the long way, Sturdy reminisces at an old shrine. This version occurs if The Foal is present.",
+    "sourceEnglish": "Something about this place makes me feel closer to the Gods."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 35,
+    "rowNumber": 38,
+    "key": "SAY.Dialog:Shrine.36.Sturdy Ass",
+    "utterer": "SAY.Dialog:Shrine.36.Sturdy Ass",
+    "context": "In the long way, Sturdy reminisces at an old shrine. This version occurs if The Foal is NOT present.",
+    "sourceEnglish": "I'll have to bring {$NewName} here next time we have quality time together."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 36,
+    "rowNumber": 39,
+    "key": "SAY.Dialog:Shrine.38.Sturdy Ass",
+    "utterer": "SAY.Dialog:Shrine.38.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "Something about this place makes me feel closer to the Gods."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 37,
+    "rowNumber": 40,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.396.Sturdy Ass",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.396.Sturdy Ass",
+    "context": "Dialogue for when Sturdy and the Foal arrive from the South entrance of Bumpkin Village. Note for translators: this is the same dialogue as entering from the East entrance.",
+    "sourceEnglish": "It's a shame you never saw this place as it was, before the Fire, before the Machines."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 38,
+    "rowNumber": 41,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.397.Sturdy Ass",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.397.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "I used to bring deliveries here from the Farm every day—"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 39,
+    "rowNumber": 42,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.398.{$NewName}",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.398.{$NewName}",
+    "context": "",
+    "sourceEnglish": "—which one's the 'Theatre'?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 40,
+    "rowNumber": 43,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.399.Sturdy Ass",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.399.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "The 'Theatre'? Since when were you so interested in Theatre?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 41,
+    "rowNumber": 44,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.400.{$NewName}",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.400.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Everyone is interested in Theatre!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 42,
+    "rowNumber": 45,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.402.Sturdy Ass",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.402.Sturdy Ass",
+    "context": "Sturdy and the Foal enter the village and look for the Theatre.",
+    "sourceEnglish": "Follow me then. I'll tell you a story when we get there."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 43,
+    "rowNumber": 46,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.418.Sturdy Ass",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.418.Sturdy Ass",
+    "context": "Dialogue for when Sturdy and the Foal arrive from the East entrance of Bumpkin Village. Note for translators: this is the same dialogue as entering from the South entrance.",
+    "sourceEnglish": "It's a shame you never saw this place as it was, before the Fire, before the Machines."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 44,
+    "rowNumber": 47,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.419.Sturdy Ass",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.419.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "I used to bring deliveries here from the Farm every day—"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 45,
+    "rowNumber": 48,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.420.{$NewName}",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.420.{$NewName}",
+    "context": "",
+    "sourceEnglish": "—which one's the 'Theatre'?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 46,
+    "rowNumber": 49,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.421.Sturdy Ass",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.421.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "The 'Theatre'? Since when were you so interested in Theatre?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 47,
+    "rowNumber": 50,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.422.{$NewName}",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.422.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Everyone is interested in Theatre!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 48,
+    "rowNumber": 51,
+    "key": "SAY.Dialog:SturdyArrivesAtVillage.424.Sturdy Ass",
+    "utterer": "SAY.Dialog:SturdyArrivesAtVillage.424.Sturdy Ass",
+    "context": "Sturdy and the Foal enter the village and look for the Theatre.",
+    "sourceEnglish": "Follow me then. I'll tell you a story when we get there."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 49,
+    "rowNumber": 52,
+    "key": "SAY.Dialog:AttemptToBacktrack_STARTOFF.4.{$NewName}",
+    "utterer": "SAY.Dialog:AttemptToBacktrack_STARTOFF.4.{$NewName}",
+    "context": "Dialogue that plays when Sturdy tries to backtrack / leave Bumpkin too early.",
+    "sourceEnglish": "Mother! Where are you going?!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 50,
+    "rowNumber": 53,
+    "key": "SAY.Dialog:AttemptToBacktrack_STARTOFF.5.{$NewName}",
+    "utterer": "SAY.Dialog:AttemptToBacktrack_STARTOFF.5.{$NewName}",
+    "context": "",
+    "sourceEnglish": "You promised to show me the Theatre!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 51,
+    "rowNumber": 54,
+    "key": "SAY.Dialog:EnterTheTheatre.7.Sturdy Ass",
+    "utterer": "SAY.Dialog:EnterTheTheatre.7.Sturdy Ass",
+    "context": "Dialogue that plays when Sturdy and the Foal arrive at the Theatre.",
+    "sourceEnglish": "This building is a remnant of another time."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 52,
+    "rowNumber": 55,
+    "key": "SAY.Dialog:EnterTheTheatre.109.Sturdy Ass",
+    "utterer": "SAY.Dialog:EnterTheTheatre.109.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "Before the Humans betrayed us, I used to perform with them here."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 53,
+    "rowNumber": 56,
+    "key": "SAY.Dialog:EnterTheTheatre.6.{$NewName}",
+    "utterer": "SAY.Dialog:EnterTheTheatre.6.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Huh? You never told me that."
+  }
+]

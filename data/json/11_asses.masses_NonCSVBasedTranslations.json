@@ -1,12 +1,13 @@
 {
   "fileName": "11_asses.masses_NonCSVBasedTranslations",
-  "processedAt": "2025-12-29T08:53:10.452Z",
+  "processedAt": "2025-12-29T22:52:03.371Z",
   "sheets": [
     {
       "sheetName": "Other Translations",
       "entries": [
         {
           "rowNumber": 2,
+          "key": "na",
           "utterer": "na",
           "context": "",
           "sourceEnglish": "Foal Name Controller",
@@ -14,6 +15,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "1",
           "utterer": "1",
           "context": "Farm",
           "sourceEnglish": "Sign_FannysideFlour",
@@ -21,6 +23,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "1",
           "utterer": "1",
           "context": "Farm",
           "sourceEnglish": "Sign_FannysideFlourBurned",
@@ -28,6 +31,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "1",
           "utterer": "1",
           "context": "Stable2f",
           "sourceEnglish": "Inelligble Foal Names",
@@ -35,6 +39,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "1",
           "utterer": "1",
           "context": "TheProtest",
           "sourceEnglish": "Sign_BumpkinVillage",
@@ -42,6 +47,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "1",
           "utterer": "1",
           "context": "Fannyside",
           "sourceEnglish": "Sign_MineName",
@@ -49,6 +55,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "1",
           "utterer": "1",
           "context": "TheWell",
           "sourceEnglish": "Flashing text",
@@ -56,6 +63,7 @@
         },
         {
           "rowNumber": 54,
+          "key": "1",
           "utterer": "1",
           "context": "TheSex",
           "sourceEnglish": "Sex Accuracy PopUp: Meh",
@@ -63,6 +71,7 @@
         },
         {
           "rowNumber": 55,
+          "key": "1",
           "utterer": "1",
           "context": "TheSex",
           "sourceEnglish": "Sex Accuracy PopUp: Meh",
@@ -70,6 +79,7 @@
         },
         {
           "rowNumber": 56,
+          "key": "1",
           "utterer": "1",
           "context": "TheSex",
           "sourceEnglish": "Sex Accuracy PopUp: Meh",
@@ -77,6 +87,7 @@
         },
         {
           "rowNumber": 57,
+          "key": "1",
           "utterer": "1",
           "context": "TheSex",
           "sourceEnglish": "Sex Accuracy PopUp: Meh",
@@ -84,6 +95,7 @@
         },
         {
           "rowNumber": 58,
+          "key": "1",
           "utterer": "1",
           "context": "TheSex",
           "sourceEnglish": "Sex Accuracy PopUp: Meh",
@@ -91,6 +103,7 @@
         },
         {
           "rowNumber": 59,
+          "key": "1",
           "utterer": "1",
           "context": "TheFarm",
           "sourceEnglish": "Stable Sign",
@@ -98,6 +111,7 @@
         },
         {
           "rowNumber": 60,
+          "key": "1",
           "utterer": "1",
           "context": "TheFarm",
           "sourceEnglish": "Mill Sign",
@@ -105,6 +119,7 @@
         },
         {
           "rowNumber": 61,
+          "key": "1",
           "utterer": "1",
           "context": "The Protest",
           "sourceEnglish": "Theatre Sign",
@@ -112,6 +127,7 @@
         },
         {
           "rowNumber": 62,
+          "key": "3",
           "utterer": "3",
           "context": "E3_100",
           "sourceEnglish": "CircusAds in newspaper",
@@ -119,6 +135,7 @@
         },
         {
           "rowNumber": 63,
+          "key": "",
           "utterer": "",
           "context": "",
           "sourceEnglish": "Zoo Name",
@@ -126,6 +143,7 @@
         },
         {
           "rowNumber": 64,
+          "key": "3",
           "utterer": "3",
           "context": "E3_100",
           "sourceEnglish": "Job Ad Derriere Name",
@@ -133,6 +151,7 @@
         },
         {
           "rowNumber": 65,
+          "key": "3",
           "utterer": "3",
           "context": "E3_LazysGrave",
           "sourceEnglish": "Wallet",
@@ -140,6 +159,7 @@
         },
         {
           "rowNumber": 66,
+          "key": "3",
           "utterer": "3",
           "context": "E3_LazysGrave",
           "sourceEnglish": "Wallet",
@@ -147,6 +167,7 @@
         },
         {
           "rowNumber": 67,
+          "key": "4",
           "utterer": "4",
           "context": "Goodbye",
           "sourceEnglish": "Song of Ascension phonemes (See SendingText.PSD)",
@@ -154,6 +175,7 @@
         },
         {
           "rowNumber": 68,
+          "key": "5",
           "utterer": "5",
           "context": "Hwy",
           "sourceEnglish": "Derriere Truck Sign",
@@ -161,6 +183,7 @@
         },
         {
           "rowNumber": 69,
+          "key": "5",
           "utterer": "5",
           "context": "Hwy",
           "sourceEnglish": "Boredom is Freedom",
@@ -168,6 +191,7 @@
         },
         {
           "rowNumber": 70,
+          "key": "5",
           "utterer": "5",
           "context": "Hwy",
           "sourceEnglish": "Prophet Sign",
@@ -175,6 +199,7 @@
         },
         {
           "rowNumber": 71,
+          "key": "5",
           "utterer": "5",
           "context": "Hwy",
           "sourceEnglish": "Jack's Diner",
@@ -182,6 +207,7 @@
         },
         {
           "rowNumber": 72,
+          "key": "5",
           "utterer": "5",
           "context": "Hwy",
           "sourceEnglish": "Gas sign",
@@ -189,6 +215,7 @@
         },
         {
           "rowNumber": 73,
+          "key": "6",
           "utterer": "6",
           "context": "World",
           "sourceEnglish": "Slow Story Derriere Name",
@@ -196,6 +223,7 @@
         },
         {
           "rowNumber": 74,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Derriere Assorted Meats Sign",
@@ -203,6 +231,7 @@
         },
         {
           "rowNumber": 75,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Enlightenment Solutions",
@@ -210,6 +239,7 @@
         },
         {
           "rowNumber": 76,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "ProgressLabs",
@@ -217,6 +247,7 @@
         },
         {
           "rowNumber": 77,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Mecha City Art Gallery",
@@ -224,6 +255,7 @@
         },
         {
           "rowNumber": 78,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Centre for Social Justice",
@@ -231,6 +263,7 @@
         },
         {
           "rowNumber": 79,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Aspire",
@@ -238,6 +271,7 @@
         },
         {
           "rowNumber": 80,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Green Future",
@@ -245,6 +279,7 @@
         },
         {
           "rowNumber": 81,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Mecha City Research Centre",
@@ -252,6 +287,7 @@
         },
         {
           "rowNumber": 82,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Mecha U Aspire to Excellence",
@@ -259,6 +295,7 @@
         },
         {
           "rowNumber": 83,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Institute for Progress",
@@ -266,6 +303,7 @@
         },
         {
           "rowNumber": 84,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Derriere Law Firm and Associates",
@@ -273,6 +311,7 @@
         },
         {
           "rowNumber": 85,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Derriere Innovation Hub",
@@ -280,6 +319,7 @@
         },
         {
           "rowNumber": 86,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Ms. Fission",
@@ -287,6 +327,7 @@
         },
         {
           "rowNumber": 87,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Red D",
@@ -294,6 +335,7 @@
         },
         {
           "rowNumber": 88,
+          "key": "7",
           "utterer": "7",
           "context": "Opening",
           "sourceEnglish": "Gold D",
@@ -301,6 +343,7 @@
         },
         {
           "rowNumber": 89,
+          "key": "7",
           "utterer": "7",
           "context": "BigBattle",
           "sourceEnglish": "Robotics",
@@ -308,6 +351,7 @@
         },
         {
           "rowNumber": 90,
+          "key": "9",
           "utterer": "9",
           "context": "Ripping",
           "sourceEnglish": "Jack's dinner background",
@@ -315,6 +359,7 @@
         },
         {
           "rowNumber": 91,
+          "key": "9",
           "utterer": "9",
           "context": "Ripping",
           "sourceEnglish": "MIT letter acceptance letter",
@@ -322,6 +367,7 @@
         },
         {
           "rowNumber": 92,
+          "key": "9",
           "utterer": "9",
           "context": "Ripping",
           "sourceEnglish": "MIT letter being burned",
@@ -329,6 +375,7 @@
         },
         {
           "rowNumber": 93,
+          "key": "9",
           "utterer": "9",
           "context": "Ripping",
           "sourceEnglish": "Song of Ascension",
@@ -336,6 +383,7 @@
         },
         {
           "rowNumber": 95,
+          "key": "9",
           "utterer": "9",
           "context": "Ripping",
           "sourceEnglish": "Flashing text",
@@ -343,6 +391,7 @@
         },
         {
           "rowNumber": 102,
+          "key": "10",
           "utterer": "10",
           "context": "ProphetSpeech",
           "sourceEnglish": "Manual backups for Manifesto",
@@ -350,6 +399,7 @@
         },
         {
           "rowNumber": 103,
+          "key": "",
           "utterer": "",
           "context": "",
           "sourceEnglish": "NOTE: These are for if something happens and the game crashes between the Government Manifesto and the Prophet Speech, these will be used for the Manifesto speech at the end. Written in E10_ProphetSpeech script",
@@ -362,6 +412,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "the spark",
           "utterer": "the spark",
           "context": "",
           "sourceEnglish": "the inevitable",
@@ -369,6 +420,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "the Machine Prophet",
           "sourceEnglish": "and the asses from Fannyside",
@@ -381,6 +433,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "the spark",
           "utterer": "the spark",
           "context": "",
           "sourceEnglish": "the inevitable",
@@ -388,6 +441,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "불꽃",
           "utterer": "불꽃",
           "context": "",
           "sourceEnglish": "필연",
@@ -395,6 +449,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "the Machine Prophet",
           "sourceEnglish": "and the asses from Fannyside",
@@ -402,6 +457,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "",
           "utterer": "",
           "context": "기계 선지자",
           "sourceEnglish": "그리고 엉덩면에서 온 당나귀들",
@@ -414,6 +470,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "火花",
           "utterer": "火花",
           "context": "",
           "sourceEnglish": "必然",
@@ -421,6 +478,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "機械預言者",
           "sourceEnglish": "そしてファニーサイドのロバたち",
@@ -433,6 +491,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "la chispa",
           "utterer": "la chispa",
           "context": "",
           "sourceEnglish": "lo inevitable",
@@ -440,6 +499,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "la Máquina-Profeta",
           "sourceEnglish": "y los asnos de Las Posaderas",
@@ -452,6 +512,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "l'étincelle",
           "utterer": "l'étincelle",
           "context": "",
           "sourceEnglish": "l'inévitable",
@@ -459,6 +520,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "la Machine-Prophète",
           "sourceEnglish": "et les ânes de Niquedouille",
@@ -471,6 +533,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "a faísca",
           "utterer": "a faísca",
           "context": "",
           "sourceEnglish": "o invitável",
@@ -478,6 +541,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "a Profeta-Máquina",
           "sourceEnglish": "e os Asnos de Santa Caipira",
@@ -490,6 +554,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "la scintilla",
           "utterer": "la scintilla",
           "context": "",
           "sourceEnglish": "l'inevitabile",
@@ -497,6 +562,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "la Macchina-Profeta",
           "sourceEnglish": "e gli Asini di Culonia",
@@ -509,6 +575,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "der Funke",
           "utterer": "der Funke",
           "context": "",
           "sourceEnglish": "das Unvermeidliche",
@@ -516,6 +583,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "die Prophet-Maschine",
           "sourceEnglish": "und die Esel von Po-der-Welt",
@@ -528,6 +596,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "kıvılcım",
           "utterer": "kıvılcım",
           "context": "",
           "sourceEnglish": "kaçınılmaz",
@@ -535,6 +604,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "Makine Peygamber",
           "sourceEnglish": "Anıran'ın Eşekleri",
@@ -547,6 +617,7 @@
       "entries": [
         {
           "rowNumber": 5,
+          "key": "la guspira",
           "utterer": "la guspira",
           "context": "",
           "sourceEnglish": "l'inevitable",
@@ -554,6 +625,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "",
           "utterer": "",
           "context": "la Màquina-Profeta",
           "sourceEnglish": "i els ases de Talldevall",
@@ -566,6 +638,7 @@
       "entries": [
         {
           "rowNumber": 4,
+          "key": "Fonts",
           "utterer": "Fonts",
           "context": "Status",
           "sourceEnglish": "S-sedilla",
@@ -573,6 +646,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "Reactor7",
           "utterer": "Reactor7",
           "context": "Done",
           "sourceEnglish": "x",
@@ -580,6 +654,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "Beth Ellen",
           "utterer": "Beth Ellen",
           "context": "Done",
           "sourceEnglish": "x",
@@ -587,6 +662,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "GreenwichMean",
           "utterer": "GreenwichMean",
           "context": "Done",
           "sourceEnglish": "x",
@@ -594,6 +670,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "Philosopher",
           "utterer": "Philosopher",
           "context": "Done",
           "sourceEnglish": "x",
@@ -601,6 +678,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "DOS",
           "utterer": "DOS",
           "context": "Done",
           "sourceEnglish": "x",
@@ -608,6 +686,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "VT323",
           "utterer": "VT323",
           "context": "Done",
           "sourceEnglish": "x",

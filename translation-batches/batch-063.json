@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 96,
+    "rowNumber": 99,
+    "key": "SAY.Dialog:Meeting.728.Cole-Machine",
+    "utterer": "SAY.Dialog:Meeting.728.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "I'll see you in Mecha City."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 97,
+    "rowNumber": 100,
+    "key": "SAY.Dialog:Meeting.729.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.729.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Okay but—"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 98,
+    "rowNumber": 101,
+    "key": "SAY.Dialog:Meeting.513.Cole-Machine",
+    "utterer": "SAY.Dialog:Meeting.513.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Don't abandon your Mother."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 99,
+    "rowNumber": 102,
+    "key": "SAY.Dialog:Meeting.514.Cole-Machine",
+    "utterer": "SAY.Dialog:Meeting.514.Cole-Machine",
+    "context": "Cole flies off on the Golden Ass",
+    "sourceEnglish": "She won't say it, but she needs you."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 100,
+    "rowNumber": 103,
+    "key": "SAY.Dialog:Meeting.529.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.529.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Comrade Mother."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 101,
+    "rowNumber": 104,
+    "key": "SAY.Dialog:Meeting.530.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.530.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Where's the rest of the Herd?"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 102,
+    "rowNumber": 105,
+    "key": "SAY.Dialog:Meeting.532.Sturdy Ass",
+    "utterer": "SAY.Dialog:Meeting.532.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "The traitors were in trouble in the City."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 103,
+    "rowNumber": 106,
+    "key": "SAY.Dialog:Meeting.533.Sturdy Ass",
+    "utterer": "SAY.Dialog:Meeting.533.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "So your Aunties and Uncles left on the Tractor-Machine to find them."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 104,
+    "rowNumber": 107,
+    "key": "SAY.Dialog:Meeting.535.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.535.{$NewName}",
+    "context": "",
+    "sourceEnglish": "..."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 105,
+    "rowNumber": 108,
+    "key": "SAY.Dialog:Meeting.536.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.536.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Mother, if Uncle Hard and the others are gone, I don't think it's safe for us here anymore."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 106,
+    "rowNumber": 109,
+    "key": "SAY.Dialog:Meeting.539.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.539.{$NewName}",
+    "context": "End of Cole's track",
+    "sourceEnglish": "Will you come with me to Mecha City?"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 107,
+    "rowNumber": 110,
+    "key": "MENU.Dialog:Meeting.458",
+    "utterer": "MENU.Dialog:Meeting.458",
+    "context": "Branch: Foal is Prophet.",
+    "sourceEnglish": "{$NewName}"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 108,
+    "rowNumber": 111,
+    "key": "SAY.Dialog:Meeting.277.Golden Ass",
+    "utterer": "SAY.Dialog:Meeting.277.Golden Ass",
+    "context": "",
+    "sourceEnglish": "{$NewName}, you shall be the next Prophet."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 109,
+    "rowNumber": 112,
+    "key": "SAY.Dialog:Meeting.278.Golden Ass",
+    "utterer": "SAY.Dialog:Meeting.278.Golden Ass",
+    "context": "",
+    "sourceEnglish": "You shall join the ranks of great leaders from across time immemorial."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 110,
+    "rowNumber": 113,
+    "key": "SAY.Dialog:Meeting.279.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.279.{$NewName}",
+    "context": "",
+    "sourceEnglish": "WAHOO! Really?! Oh wow! That's so exciting!"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 111,
+    "rowNumber": 114,
+    "key": "MENU.Dialog:Meeting.674",
+    "utterer": "MENU.Dialog:Meeting.674",
+    "context": "",
+    "sourceEnglish": "Get on our back for we have much work to do."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 112,
+    "rowNumber": 115,
+    "key": "SAY.Dialog:Meeting.673.Golden Ass",
+    "utterer": "SAY.Dialog:Meeting.673.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Get on our back for we have much work to do."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 113,
+    "rowNumber": 116,
+    "key": "MENU.Dialog:Meeting.675",
+    "utterer": "MENU.Dialog:Meeting.675",
+    "context": "",
+    "sourceEnglish": "Climb upon us and let us fly on the Winds of Revolution!"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 114,
+    "rowNumber": 117,
+    "key": "SAY.Dialog:Meeting.672.Golden Ass",
+    "utterer": "SAY.Dialog:Meeting.672.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Climb upon us and let us fly on the Winds of Revolution!"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 115,
+    "rowNumber": 118,
+    "key": "SAY.Dialog:Meeting.667.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.667.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Okay!"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 116,
+    "rowNumber": 119,
+    "key": "SAY.Dialog:Meeting.669.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.669.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Wait... Aunty Sick—Golden—Gods, is this a short trip... or a long trip?"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 117,
+    "rowNumber": 120,
+    "key": "MENU.Dialog:Meeting.670",
+    "utterer": "MENU.Dialog:Meeting.670",
+    "context": "",
+    "sourceEnglish": "Your commitment to the cause shall be Eternal."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 118,
+    "rowNumber": 121,
+    "key": "SAY.Dialog:Meeting.647.Golden Ass",
+    "utterer": "SAY.Dialog:Meeting.647.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Your commitment to the cause shall be Eternal."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 119,
+    "rowNumber": 122,
+    "key": "MENU.Dialog:Meeting.671",
+    "utterer": "MENU.Dialog:Meeting.671",
+    "context": "",
+    "sourceEnglish": "As long as it takes until all life is freed from under the yoke of Human tyranny."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 120,
+    "rowNumber": 123,
+    "key": "SAY.Dialog:Meeting.644.Golden Ass",
+    "utterer": "SAY.Dialog:Meeting.644.Golden Ass",
+    "context": "",
+    "sourceEnglish": "As long as it takes until all life is freed from under the yoke of Human tyranny."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 121,
+    "rowNumber": 124,
+    "key": "SAY.Dialog:Meeting.629.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.629.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Oh."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 122,
+    "rowNumber": 125,
+    "key": "SAY.Dialog:Meeting.630.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.630.{$NewName}",
+    "context": "Needs 3 lines after this: Can we go to Mecha City? // If you wish // Wahoo let's go",
+    "sourceEnglish": "Um."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 123,
+    "rowNumber": 126,
+    "key": "SAY.Dialog:Meeting.631.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.631.{$NewName}",
+    "context": "Different in Miro",
+    "sourceEnglish": "Comrade Mother... ?"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 124,
+    "rowNumber": 127,
+    "key": "SAY.Dialog:Meeting.633.Sturdy Ass",
+    "utterer": "SAY.Dialog:Meeting.633.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "..."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 125,
+    "rowNumber": 128,
+    "key": "SAY.Dialog:Meeting.635.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.635.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Aunty Sick—Golden—Gods, can Comrade Mother come with us?"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 126,
+    "rowNumber": 129,
+    "key": "MENU.Dialog:Meeting.637",
+    "utterer": "MENU.Dialog:Meeting.637",
+    "context": "",
+    "sourceEnglish": "She is not yet ready to support your Movement."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 127,
+    "rowNumber": 130,
+    "key": "SAY.Dialog:Meeting.639.Golden Ass",
+    "utterer": "SAY.Dialog:Meeting.639.Golden Ass",
+    "context": "",
+    "sourceEnglish": "She is not yet ready to support your Movement."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 128,
+    "rowNumber": 131,
+    "key": "MENU.Dialog:Meeting.638",
+    "utterer": "MENU.Dialog:Meeting.638",
+    "context": "",
+    "sourceEnglish": "Only the passing of time shall tell how she will contribute to the cause."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 129,
+    "rowNumber": 132,
+    "key": "SAY.Dialog:Meeting.640.Golden Ass",
+    "utterer": "SAY.Dialog:Meeting.640.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Only the passing of time shall tell how she will contribute to the cause."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 130,
+    "rowNumber": 133,
+    "key": "SAY.Dialog:Meeting.594.Cole-Machine",
+    "utterer": "SAY.Dialog:Meeting.594.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Kid, you really want to be a Prophet for these fuckers?"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 131,
+    "rowNumber": 134,
+    "key": "SAY.Dialog:Meeting.711.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.711.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Yes...?"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 132,
+    "rowNumber": 135,
+    "key": "SAY.Dialog:Meeting.710.Cole-Machine",
+    "utterer": "SAY.Dialog:Meeting.710.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "Then go."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 133,
+    "rowNumber": 136,
+    "key": "SAY.Dialog:Meeting.712.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.712.{$NewName}",
+    "context": "",
+    "sourceEnglish": "But Uncle Bad—Cole, we're supposed to go to the big city together!"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 134,
+    "rowNumber": 137,
+    "key": "SAY.Dialog:Meeting.709.Cole-Machine",
+    "utterer": "SAY.Dialog:Meeting.709.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "I'll come find you in Mecha."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 135,
+    "rowNumber": 138,
+    "key": "SAY.Dialog:Meeting.708.Cole-Machine",
+    "utterer": "SAY.Dialog:Meeting.708.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "And I'll look after your Mother, too."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 136,
+    "rowNumber": 139,
+    "key": "SAY.Dialog:Meeting.714.Cole-Machine",
+    "utterer": "SAY.Dialog:Meeting.714.Cole-Machine",
+    "context": "",
+    "sourceEnglish": "She'll be safe with me."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 137,
+    "rowNumber": 140,
+    "key": "SAY.Dialog:Meeting.598.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.598.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Comrade Mother, I'm not giving up on you."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 138,
+    "rowNumber": 141,
+    "key": "SAY.Dialog:Meeting.599.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.599.{$NewName}",
+    "context": "",
+    "sourceEnglish": "So, don't give up on me either."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 139,
+    "rowNumber": 142,
+    "key": "SAY.Dialog:Meeting.600.Golden Ass",
+    "utterer": "SAY.Dialog:Meeting.600.Golden Ass",
+    "context": "",
+    "sourceEnglish": "Let us depart, Prophet."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 140,
+    "rowNumber": 143,
+    "key": "SAY.Dialog:Meeting.601.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.601.{$NewName}",
+    "context": "",
+    "sourceEnglish": "See you soon Uncle Bad—Cole!"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 141,
+    "rowNumber": 144,
+    "key": "SAY.Dialog:Meeting.602.{$NewName}",
+    "utterer": "SAY.Dialog:Meeting.602.{$NewName}",
+    "context": "Foal flies off on the Golden Ass",
+    "sourceEnglish": "See you soon... Mother. I love you."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 142,
+    "rowNumber": 145,
+    "key": "SAY.Dialog:Meeting.607.Cole-Machine",
+    "utterer": "SAY.Dialog:Meeting.607.Cole-Machine",
+    "context": "Cole turns to Sturdy",
+    "sourceEnglish": "Where are the others?"
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 143,
+    "rowNumber": 146,
+    "key": "SAY.Dialog:Meeting.609.Sturdy Ass",
+    "utterer": "SAY.Dialog:Meeting.609.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "They went to the City..."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 144,
+    "rowNumber": 147,
+    "key": "SAY.Dialog:Meeting.610.Sturdy Ass",
+    "utterer": "SAY.Dialog:Meeting.610.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "They left me behind."
+  },
+  {
+    "fileName": "9_asses.masses_E9Proxy.json",
+    "sheetName": "E9_GoldenAss_localization",
+    "entryIndex": 145,
+    "rowNumber": 148,
+    "key": "SAY.Dialog:Meeting.612.Sturdy Ass",
+    "utterer": "SAY.Dialog:Meeting.612.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "Again."
+  }
+]

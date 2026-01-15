@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:PreComputer.34.{$NewName}",
+    "utterer": "SAY.Dialog:PreComputer.34.{$NewName}",
+    "context": "",
+    "sourceEnglish": "She kept talking about how she used to be a star."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:PreComputer.9.Bad Ass",
+    "utterer": "SAY.Dialog:PreComputer.9.Bad Ass",
+    "context": "",
+    "sourceEnglish": "I knew she'd bring up those terrible amateur productions they used to subject us to."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:PreComputer.8.Bad Ass",
+    "utterer": "SAY.Dialog:PreComputer.8.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Was everything where I said it would be?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:PreComputer.10.{$NewName}",
+    "utterer": "SAY.Dialog:PreComputer.10.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Yessir! I had to crawl through the broken doorway and climb through the rubble—"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:PreComputer.11.Bad Ass",
+    "utterer": "SAY.Dialog:PreComputer.11.Bad Ass",
+    "context": "Jump to line 10 or 12.",
+    "sourceEnglish": "Do you have the light from the Theatre?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:PreComputer.14.{$NewName}",
+    "utterer": "SAY.Dialog:PreComputer.14.{$NewName}",
+    "context": "Dialogue 1.1. The Foal went into the Theatre and has the Light.",
+    "sourceEnglish": "You bet!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:PreComputer.21.Bad Ass",
+    "utterer": "SAY.Dialog:PreComputer.21.Bad Ass",
+    "context": "Jump to line 32.",
+    "sourceEnglish": "Good. Screw it into the Machine."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:PreComputer.23.{$NewName}",
+    "utterer": "SAY.Dialog:PreComputer.23.{$NewName}",
+    "context": "Dialogue 1.2. The Foal didn't go into the Theatre and doesn't have the Light.",
+    "sourceEnglish": "OF COURSE I DO..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:PreComputer.22.Bad Ass",
+    "utterer": "SAY.Dialog:PreComputer.22.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Hm. It looks different."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:PreComputer.32.Bad Ass",
+    "utterer": "SAY.Dialog:PreComputer.32.Bad Ass",
+    "context": "Jump to line 17.",
+    "sourceEnglish": "Whatever. Screw it into the Machine."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "SAY.Dialog:ExitAttempt.7.Bad Ass",
+    "utterer": "SAY.Dialog:ExitAttempt.7.Bad Ass",
+    "context": "If the Foal goes to Bad Ass before screwing in the Light.",
+    "sourceEnglish": "Be a good Assistant and do something useful."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog:ExitAttempt.13.Bad Ass",
+    "utterer": "SAY.Dialog:ExitAttempt.13.Bad Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "Leave me alone."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "SAY.Dialog:Dongle.32.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.32.{$NewName}",
+    "context": "The Foal screws the Light into the Machine.",
+    "sourceEnglish": "Phew! It works!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "SAY.Dialog:Dongle.18.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.18.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Why does the Mystery-Machine need this super important light from the Theatre??"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "SAY.Dialog:Dongle.10.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.10.Bad Ass",
+    "context": "",
+    "sourceEnglish": "It makes the Machine look cool."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 17,
+    "rowNumber": 20,
+    "key": "SAY.Dialog:Dongle.72.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.72.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Hey Uncle Bad Ass..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 18,
+    "rowNumber": 21,
+    "key": "SAY.Dialog:Dongle.112.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.112.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Are you going to tell me what the Mystery-Machine is for?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 19,
+    "rowNumber": 22,
+    "key": "SAY.Dialog:Dongle.113.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.113.Bad Ass",
+    "context": "",
+    "sourceEnglish": "No."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "SAY.Dialog:Dongle.97.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.97.{$NewName}",
+    "context": "",
+    "sourceEnglish": "...I feel weird lying to Comrade Mother."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "SAY.Dialog:Dongle.114.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.114.{$NewName}",
+    "context": "",
+    "sourceEnglish": "She still thinks we are playing 'Rocks' down here everyday..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "SAY.Dialog:Dongle.36.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.36.Bad Ass",
+    "context": "",
+    "sourceEnglish": "She wouldn't understand."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "SAY.Dialog:Dongle.39.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.39.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Hey Uncle Bad Ass..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "SAY.Dialog:Dongle.100.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.100.{$NewName}",
+    "context": "",
+    "sourceEnglish": "...what were your parents like?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 25,
+    "rowNumber": 28,
+    "key": "SAY.Dialog:Dongle.38.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.38.Bad Ass",
+    "context": "",
+    "sourceEnglish": "My mother left when I was a kid and my father was a greedy capitalist asshole who worked all the time."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 26,
+    "rowNumber": 29,
+    "key": "SAY.Dialog:Dongle.42.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.42.{$NewName}",
+    "context": "",
+    "sourceEnglish": "...woah."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 27,
+    "rowNumber": 30,
+    "key": "SAY.Dialog:Dongle.46.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.46.Bad Ass",
+    "context": "",
+    "sourceEnglish": "I detested my father. I wish he had abandoned me instead of mum."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 28,
+    "rowNumber": 31,
+    "key": "SAY.Dialog:Dongle.75.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.75.{$NewName}",
+    "context": "",
+    "sourceEnglish": "...your Mother abandoned you?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 29,
+    "rowNumber": 32,
+    "key": "SAY.Dialog:Dongle.48.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.48.Bad Ass",
+    "context": "",
+    "sourceEnglish": "I don't blame her. I'm happy she got out of this backward village."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 30,
+    "rowNumber": 33,
+    "key": "SAY.Dialog:Dongle.47.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.47.Bad Ass",
+    "context": "",
+    "sourceEnglish": "All I've ever wanted was to get as far away from here as I could."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 31,
+    "rowNumber": 34,
+    "key": "SAY.Dialog:Dongle.118.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.118.{$NewName}",
+    "context": "",
+    "sourceEnglish": "Where would you go?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 32,
+    "rowNumber": 35,
+    "key": "SAY.Dialog:Dongle.86.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.86.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Mecha City."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 33,
+    "rowNumber": 36,
+    "key": "SAY.Dialog:Dongle.77.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.77.Bad Ass",
+    "context": "",
+    "sourceEnglish": "A place that believes in science and creativity."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 34,
+    "rowNumber": 37,
+    "key": "SAY.Dialog:Dongle.78.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.78.Bad Ass",
+    "context": "",
+    "sourceEnglish": "A place where there are no bosses or leaders."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 35,
+    "rowNumber": 38,
+    "key": "SAY.Dialog:Dongle.79.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.79.Bad Ass",
+    "context": "",
+    "sourceEnglish": "A place for the people."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 36,
+    "rowNumber": 39,
+    "key": "SAY.Dialog:Dongle.85.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.85.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Intelligent people."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 37,
+    "rowNumber": 40,
+    "key": "SAY.Dialog:Dongle.80.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.80.Bad Ass",
+    "context": "",
+    "sourceEnglish": "People collectively dedicated to inventing beautiful things that will make the world a better place for everyone..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 38,
+    "rowNumber": 41,
+    "key": "SAY.Dialog:Dongle.123.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.123.Bad Ass",
+    "context": "",
+    "sourceEnglish": "... And this Machine is going to get me there. At last."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 39,
+    "rowNumber": 42,
+    "key": "SAY.Dialog:Dongle.126.{$NewName}",
+    "utterer": "SAY.Dialog:Dongle.126.{$NewName}",
+    "context": "",
+    "sourceEnglish": "What's wrong with here?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 40,
+    "rowNumber": 43,
+    "key": "SAY.Dialog:Dongle.51.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.51.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Literally everything."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 41,
+    "rowNumber": 44,
+    "key": "SAY.Dialog:Dongle.131.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.131.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Multigenerational poverty."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 42,
+    "rowNumber": 45,
+    "key": "SAY.Dialog:Dongle.130.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.130.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Rampant religious dogmas."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 43,
+    "rowNumber": 46,
+    "key": "SAY.Dialog:Dongle.129.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.129.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Extreme political conservatism."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 44,
+    "rowNumber": 47,
+    "key": "SAY.Dialog:Dongle.128.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.128.Bad Ass",
+    "context": "",
+    "sourceEnglish": "All predicated on an extractionist economy."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 45,
+    "rowNumber": 48,
+    "key": "SAY.Dialog:Dongle.132.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.132.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Fuck."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 46,
+    "rowNumber": 49,
+    "key": "SAY.Dialog:Dongle.134.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.134.Bad Ass",
+    "context": "",
+    "sourceEnglish": "This."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 47,
+    "rowNumber": 50,
+    "key": "SAY.Dialog:Dongle.133.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.133.Bad Ass",
+    "context": "",
+    "sourceEnglish": "Place."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 48,
+    "rowNumber": 51,
+    "key": "SAY.Dialog:Dongle.135.Bad Ass",
+    "utterer": "SAY.Dialog:Dongle.135.Bad Ass",
+    "context": "Bad Ass leaves the Foal and exits the room. The Foal searches for a way to power the Machine.",
+    "sourceEnglish": "Charge the machine. I'll be back."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 49,
+    "rowNumber": 52,
+    "key": "SAY.Dialog:PostComputer.2.Bad Ass",
+    "utterer": "SAY.Dialog:PostComputer.2.Bad Ass",
+    "context": "The Foal starts the Machine up. Bad Ass returns.",
+    "sourceEnglish": "Hey, what I said back there—"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 50,
+    "rowNumber": 53,
+    "key": "SAY.Dialog:PostComputer.12.Bad Ass",
+    "utterer": "SAY.Dialog:PostComputer.12.Bad Ass",
+    "context": "",
+    "sourceEnglish": "It's working...? It's really working!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_BadCave_localization",
+    "entryIndex": 51,
+    "rowNumber": 54,
+    "key": "SAY.Dialog:PostComputer.5.Bad Ass",
+    "utterer": "SAY.Dialog:PostComputer.5.Bad Ass",
+    "context": "",
+    "sourceEnglish": "At last!"
+  }
+]

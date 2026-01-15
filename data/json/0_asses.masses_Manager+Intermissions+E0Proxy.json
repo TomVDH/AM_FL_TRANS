@@ -1,12 +1,13 @@
 {
   "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy",
-  "processedAt": "2025-12-29T08:53:10.271Z",
+  "processedAt": "2025-12-29T22:52:03.200Z",
   "sheets": [
     {
       "sheetName": "ManagerScene_localization",
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.1",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.1",
           "context": "",
           "sourceEnglish": "COMRADES",
@@ -14,6 +15,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.2",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.2",
           "context": "",
           "sourceEnglish": "MORALE",
@@ -21,6 +23,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.5",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.5",
           "context": "",
           "sourceEnglish": "Trusty Ass",
@@ -28,6 +31,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.15",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.15",
           "context": "",
           "sourceEnglish": "Nice Ass",
@@ -35,6 +39,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.14",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.14",
           "context": "",
           "sourceEnglish": "Big Ass",
@@ -42,6 +47,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.12",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.12",
           "context": "",
           "sourceEnglish": "Thirsty Ass",
@@ -49,6 +55,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.13",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.13",
           "context": "",
           "sourceEnglish": "Smart Ass",
@@ -56,6 +63,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.11",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.11",
           "context": "",
           "sourceEnglish": "Slow Ass",
@@ -63,6 +71,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.10",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.10",
           "context": "",
           "sourceEnglish": "Kick Ass",
@@ -70,6 +79,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.9",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.9",
           "context": "",
           "sourceEnglish": "Sick Ass",
@@ -77,6 +87,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.8",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.8",
           "context": "",
           "sourceEnglish": "Hard Ass",
@@ -84,6 +95,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.7",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.7",
           "context": "",
           "sourceEnglish": "Sturdy Ass",
@@ -91,6 +103,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.6",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.6",
           "context": "",
           "sourceEnglish": "Sad Ass",
@@ -98,6 +111,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "WRITE.ManagerCanvasUiTextFlowchart.16",
           "utterer": "WRITE.ManagerCanvasUiTextFlowchart.16",
           "context": "",
           "sourceEnglish": "Cole-Machine",
@@ -110,13 +124,15 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "CHARACTER.Character Name",
           "utterer": "CHARACTER.Character Name",
           "context": "",
           "sourceEnglish": "Character Name",
-          "translatedDutch": ""
+          "translatedDutch": "Personagenaam"
         },
         {
           "rowNumber": 3,
+          "key": "CHARACTER.{$NewName}",
           "utterer": "CHARACTER.{$NewName}",
           "context": "Main Donkeys",
           "sourceEnglish": "{$NewName}",
@@ -124,6 +140,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "CHARACTER.Old Ass",
           "utterer": "CHARACTER.Old Ass",
           "context": "",
           "sourceEnglish": "Old Ass",
@@ -131,6 +148,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "CHARACTER.Trusty Ass",
           "utterer": "CHARACTER.Trusty Ass",
           "context": "",
           "sourceEnglish": "Trusty Ass",
@@ -138,6 +156,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "CHARACTER.Nice Ass",
           "utterer": "CHARACTER.Nice Ass",
           "context": "",
           "sourceEnglish": "Nice Ass",
@@ -145,6 +164,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "CHARACTER.Big Ass",
           "utterer": "CHARACTER.Big Ass",
           "context": "",
           "sourceEnglish": "Big Ass",
@@ -152,6 +172,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "CHARACTER.Thirsty Ass",
           "utterer": "CHARACTER.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Thirsty Ass",
@@ -159,6 +180,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "CHARACTER.Smart Ass",
           "utterer": "CHARACTER.Smart Ass",
           "context": "",
           "sourceEnglish": "Smart Ass",
@@ -166,6 +188,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "CHARACTER.Slow Ass",
           "utterer": "CHARACTER.Slow Ass",
           "context": "",
           "sourceEnglish": "Slow Ass",
@@ -173,6 +196,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "CHARACTER.Kick Ass",
           "utterer": "CHARACTER.Kick Ass",
           "context": "",
           "sourceEnglish": "Kick Ass",
@@ -180,6 +204,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "CHARACTER.Sick Ass",
           "utterer": "CHARACTER.Sick Ass",
           "context": "",
           "sourceEnglish": "Sick Ass",
@@ -187,6 +212,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "CHARACTER.Hard Ass",
           "utterer": "CHARACTER.Hard Ass",
           "context": "",
           "sourceEnglish": "Hard Ass",
@@ -194,6 +220,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "CHARACTER.Sturdy Ass",
           "utterer": "CHARACTER.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Sturdy Ass",
@@ -201,6 +228,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "CHARACTER.Sad Ass",
           "utterer": "CHARACTER.Sad Ass",
           "context": "",
           "sourceEnglish": "Sad Ass",
@@ -208,6 +236,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "CHARACTER.Lazy Ass",
           "utterer": "CHARACTER.Lazy Ass",
           "context": "",
           "sourceEnglish": "Lazy Ass",
@@ -215,6 +244,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "CHARACTER.Bad Ass",
           "utterer": "CHARACTER.Bad Ass",
           "context": "",
           "sourceEnglish": "Bad Ass",
@@ -222,6 +252,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "CHARACTER.Cole-Machine",
           "utterer": "CHARACTER.Cole-Machine",
           "context": "",
           "sourceEnglish": "Cole-Machine",
@@ -229,6 +260,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "CHARACTER.Golden Ass",
           "utterer": "CHARACTER.Golden Ass",
           "context": "",
           "sourceEnglish": "Golden Ass",
@@ -236,6 +268,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "CHARACTER.The Masses",
           "utterer": "CHARACTER.The Masses",
           "context": "",
           "sourceEnglish": "The Masses",
@@ -243,6 +276,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "CHARACTER.Hee",
           "utterer": "CHARACTER.Hee",
           "context": "The Gods",
           "sourceEnglish": "Hee",
@@ -250,6 +284,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "CHARACTER.Haw",
           "utterer": "CHARACTER.Haw",
           "context": "",
           "sourceEnglish": "Haw",
@@ -257,6 +292,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "CHARACTER.THE GODS",
           "utterer": "CHARACTER.THE GODS",
           "context": "",
           "sourceEnglish": "THE GODS",
@@ -264,6 +300,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "CHARACTER.Sheep",
           "utterer": "CHARACTER.Sheep",
           "context": "Circus/Farm Animals",
           "sourceEnglish": "Sheep",
@@ -271,6 +308,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "CHARACTER.Elephant",
           "utterer": "CHARACTER.Elephant",
           "context": "",
           "sourceEnglish": "Eli the Elephant",
@@ -278,6 +316,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "CHARACTER.Pig",
           "utterer": "CHARACTER.Pig",
           "context": "",
           "sourceEnglish": "Pig",
@@ -285,6 +324,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "CHARACTER.Cow",
           "utterer": "CHARACTER.Cow",
           "context": "",
           "sourceEnglish": "Cow",
@@ -292,6 +332,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "CHARACTER.Human",
           "utterer": "CHARACTER.Human",
           "context": "Humans",
           "sourceEnglish": "Human",
@@ -299,6 +340,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "CHARACTER.Melvin",
           "utterer": "CHARACTER.Melvin",
           "context": "",
           "sourceEnglish": "Ass Handler Melvin",
@@ -306,6 +348,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "CHARACTER.Wedgie",
           "utterer": "CHARACTER.Wedgie",
           "context": "",
           "sourceEnglish": "Ass Handler Wedgie",
@@ -313,6 +356,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "CHARACTER.Mme. Derriere",
           "utterer": "CHARACTER.Mme. Derriere",
           "context": "",
           "sourceEnglish": "Mme. Derriere",
@@ -320,6 +364,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "CHARACTER.Ringmaster Rico",
           "utterer": "CHARACTER.Ringmaster Rico",
           "context": "",
           "sourceEnglish": "Ringmaster Rico",
@@ -327,6 +372,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "CHARACTER.Zookeeper Rose",
           "utterer": "CHARACTER.Zookeeper Rose",
           "context": "",
           "sourceEnglish": "Zookeeper Rose",
@@ -334,6 +380,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "CHARACTER.Factory PA",
           "utterer": "CHARACTER.Factory PA",
           "context": "",
           "sourceEnglish": "Factory PA",
@@ -341,6 +388,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "CHARACTER.Miner With No Legs",
           "utterer": "CHARACTER.Miner With No Legs",
           "context": "",
           "sourceEnglish": "Miner With No Legs",
@@ -348,6 +396,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "CHARACTER.Audience Members Patrick & Milton",
           "utterer": "CHARACTER.Audience Members Patrick & Milton",
           "context": "",
           "sourceEnglish": "Audience Members Patrick & Milton",
@@ -355,6 +404,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "CHARACTER.Audience Member Laurel",
           "utterer": "CHARACTER.Audience Member Laurel",
           "context": "",
           "sourceEnglish": "Audience Member Laurel",
@@ -362,6 +412,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "CHARACTER.Audience Member David",
           "utterer": "CHARACTER.Audience Member David",
           "context": "",
           "sourceEnglish": "Audience Member David",
@@ -369,6 +420,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "CHARACTER.Radio Host Marcos",
           "utterer": "CHARACTER.Radio Host Marcos",
           "context": "",
           "sourceEnglish": "DJ Marcos",
@@ -376,6 +428,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "CHARACTER.???",
           "utterer": "CHARACTER.???",
           "context": "",
           "sourceEnglish": "???",
@@ -383,6 +436,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "CHARACTER.Child Joey",
           "utterer": "CHARACTER.Child Joey",
           "context": "",
           "sourceEnglish": "Child Joey",
@@ -390,6 +444,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "CHARACTER.Grandma Kulan",
           "utterer": "CHARACTER.Grandma Kulan",
           "context": "",
           "sourceEnglish": "Grandma Kulan",
@@ -397,6 +452,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "CHARACTER.Miner Jenny",
           "utterer": "CHARACTER.Miner Jenny",
           "context": "",
           "sourceEnglish": "Miner Jenny",
@@ -404,6 +460,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "CHARACTER.Mr. Butte",
           "utterer": "CHARACTER.Mr. Butte",
           "context": "",
           "sourceEnglish": "Mr. Butte",
@@ -411,6 +468,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "CHARACTER.Sign",
           "utterer": "CHARACTER.Sign",
           "context": "Signs",
           "sourceEnglish": "Sign",
@@ -418,6 +476,7 @@
         },
         {
           "rowNumber": 46,
+          "key": "CHARACTER.Shitty Sign",
           "utterer": "CHARACTER.Shitty Sign",
           "context": "",
           "sourceEnglish": "Shitty Sign",
@@ -425,6 +484,7 @@
         },
         {
           "rowNumber": 47,
+          "key": "CHARACTER.Old Sign",
           "utterer": "CHARACTER.Old Sign",
           "context": "",
           "sourceEnglish": "Old Sign",
@@ -432,6 +492,7 @@
         },
         {
           "rowNumber": 48,
+          "key": "CHARACTER.Welcome Sign",
           "utterer": "CHARACTER.Welcome Sign",
           "context": "",
           "sourceEnglish": "Welcome Sign",
@@ -439,6 +500,7 @@
         },
         {
           "rowNumber": 49,
+          "key": "CHARACTER.Fancy Sign",
           "utterer": "CHARACTER.Fancy Sign",
           "context": "",
           "sourceEnglish": "Fancy Sign",
@@ -446,6 +508,7 @@
         },
         {
           "rowNumber": 50,
+          "key": "CHARACTER.Official Sign",
           "utterer": "CHARACTER.Official Sign",
           "context": "",
           "sourceEnglish": "Official Sign",
@@ -453,6 +516,7 @@
         },
         {
           "rowNumber": 51,
+          "key": "CHARACTER.Dirty Sign",
           "utterer": "CHARACTER.Dirty Sign",
           "context": "",
           "sourceEnglish": "Dirty Sign",
@@ -460,6 +524,7 @@
         },
         {
           "rowNumber": 52,
+          "key": "CHARACTER.Decrepit Sign",
           "utterer": "CHARACTER.Decrepit Sign",
           "context": "",
           "sourceEnglish": "Decrepit Sign",
@@ -467,6 +532,7 @@
         },
         {
           "rowNumber": 53,
+          "key": "CHARACTER.Historic Sign",
           "utterer": "CHARACTER.Historic Sign",
           "context": "",
           "sourceEnglish": "Historic Sign",
@@ -474,6 +540,7 @@
         },
         {
           "rowNumber": 54,
+          "key": "CHARACTER.Warning Sign",
           "utterer": "CHARACTER.Warning Sign",
           "context": "",
           "sourceEnglish": "Warning Sign",
@@ -481,6 +548,7 @@
         },
         {
           "rowNumber": 55,
+          "key": "CHARACTER.Proper Ass",
           "utterer": "CHARACTER.Proper Ass",
           "context": "Factory Donkeys (be sure to make a balance of gender between the ones marked with X)",
           "sourceEnglish": "Proper Ass",
@@ -488,6 +556,7 @@
         },
         {
           "rowNumber": 56,
+          "key": "CHARACTER.Skinny Ass",
           "utterer": "CHARACTER.Skinny Ass",
           "context": "x",
           "sourceEnglish": "Skinny Ass",
@@ -495,6 +564,7 @@
         },
         {
           "rowNumber": 57,
+          "key": "CHARACTER.Tender Ass",
           "utterer": "CHARACTER.Tender Ass",
           "context": "",
           "sourceEnglish": "Tender Ass",
@@ -502,6 +572,7 @@
         },
         {
           "rowNumber": 58,
+          "key": "CHARACTER.Tragic Ass",
           "utterer": "CHARACTER.Tragic Ass",
           "context": "x",
           "sourceEnglish": "Tragic Ass",
@@ -509,6 +580,7 @@
         },
         {
           "rowNumber": 59,
+          "key": "CHARACTER.Wild Ass",
           "utterer": "CHARACTER.Wild Ass",
           "context": "",
           "sourceEnglish": "Wild Ass",
@@ -516,6 +588,7 @@
         },
         {
           "rowNumber": 60,
+          "key": "CHARACTER.Anxious Ass",
           "utterer": "CHARACTER.Anxious Ass",
           "context": "",
           "sourceEnglish": "Anxious Ass",
@@ -523,6 +596,7 @@
         },
         {
           "rowNumber": 61,
+          "key": "CHARACTER.Resentful Ass",
           "utterer": "CHARACTER.Resentful Ass",
           "context": "x",
           "sourceEnglish": "Resentful Ass",
@@ -530,6 +604,7 @@
         },
         {
           "rowNumber": 62,
+          "key": "CHARACTER.Distressed Ass",
           "utterer": "CHARACTER.Distressed Ass",
           "context": "",
           "sourceEnglish": "Distressed Ass",
@@ -537,6 +612,7 @@
         },
         {
           "rowNumber": 63,
+          "key": "CHARACTER.Gloomy Ass",
           "utterer": "CHARACTER.Gloomy Ass",
           "context": "",
           "sourceEnglish": "Gloomy Ass",
@@ -544,6 +620,7 @@
         },
         {
           "rowNumber": 64,
+          "key": "CHARACTER.Feeble Ass",
           "utterer": "CHARACTER.Feeble Ass",
           "context": "",
           "sourceEnglish": "Feeble Ass",
@@ -551,6 +628,7 @@
         },
         {
           "rowNumber": 65,
+          "key": "CHARACTER.Helpful Ass",
           "utterer": "CHARACTER.Helpful Ass",
           "context": "x",
           "sourceEnglish": "Helpful Ass",
@@ -558,6 +636,7 @@
         },
         {
           "rowNumber": 66,
+          "key": "CHARACTER.Gaunt Ass",
           "utterer": "CHARACTER.Gaunt Ass",
           "context": "x",
           "sourceEnglish": "Gaunt Ass",
@@ -565,6 +644,7 @@
         },
         {
           "rowNumber": 67,
+          "key": "CHARACTER.Sleepy Ass",
           "utterer": "CHARACTER.Sleepy Ass",
           "context": "",
           "sourceEnglish": "Sleepy Ass",
@@ -572,6 +652,7 @@
         },
         {
           "rowNumber": 68,
+          "key": "CHARACTER.Weepy Ass",
           "utterer": "CHARACTER.Weepy Ass",
           "context": "",
           "sourceEnglish": "Weepy Ass",
@@ -579,6 +660,7 @@
         },
         {
           "rowNumber": 69,
+          "key": "CHARACTER.Edgy Ass",
           "utterer": "CHARACTER.Edgy Ass",
           "context": "x",
           "sourceEnglish": "Edgy Ass",
@@ -586,6 +668,7 @@
         },
         {
           "rowNumber": 70,
+          "key": "CHARACTER.Bleak Ass",
           "utterer": "CHARACTER.Bleak Ass",
           "context": "x",
           "sourceEnglish": "Bleak Ass",
@@ -593,6 +676,7 @@
         },
         {
           "rowNumber": 71,
+          "key": "CHARACTER.Busted Ass",
           "utterer": "CHARACTER.Busted Ass",
           "context": "",
           "sourceEnglish": "Busted Ass",
@@ -600,6 +684,7 @@
         },
         {
           "rowNumber": 72,
+          "key": "CHARACTER.Right Ass",
           "utterer": "CHARACTER.Right Ass",
           "context": "(Always male)",
           "sourceEnglish": "Right Ass",
@@ -607,6 +692,7 @@
         },
         {
           "rowNumber": 73,
+          "key": "CHARACTER.Left Ass",
           "utterer": "CHARACTER.Left Ass",
           "context": "(Always male)",
           "sourceEnglish": "Left Ass",
@@ -614,6 +700,7 @@
         },
         {
           "rowNumber": 74,
+          "key": "CHARACTER.Mad Ass",
           "utterer": "CHARACTER.Mad Ass",
           "context": "Astral Plane Donkeys",
           "sourceEnglish": "Mad Ass",
@@ -621,6 +708,7 @@
         },
         {
           "rowNumber": 75,
+          "key": "CHARACTER.Smelly Ass",
           "utterer": "CHARACTER.Smelly Ass",
           "context": "",
           "sourceEnglish": "Smelly Ass",
@@ -628,6 +716,7 @@
         },
         {
           "rowNumber": 76,
+          "key": "CHARACTER.Greedy Ass",
           "utterer": "CHARACTER.Greedy Ass",
           "context": "",
           "sourceEnglish": "Greedy Ass",
@@ -635,6 +724,7 @@
         },
         {
           "rowNumber": 77,
+          "key": "CHARACTER.Shifty Ass",
           "utterer": "CHARACTER.Shifty Ass",
           "context": "",
           "sourceEnglish": "Shifty Ass",
@@ -642,6 +732,7 @@
         },
         {
           "rowNumber": 78,
+          "key": "CHARACTER.Risky Ass",
           "utterer": "CHARACTER.Risky Ass",
           "context": "",
           "sourceEnglish": "Risky Ass",
@@ -649,6 +740,7 @@
         },
         {
           "rowNumber": 79,
+          "key": "CHARACTER.Furry Ass",
           "utterer": "CHARACTER.Furry Ass",
           "context": "",
           "sourceEnglish": "Furry Ass",
@@ -656,6 +748,7 @@
         },
         {
           "rowNumber": 80,
+          "key": "CHARACTER.Dusty Ass",
           "utterer": "CHARACTER.Dusty Ass",
           "context": "",
           "sourceEnglish": "Dusty Ass",
@@ -663,6 +756,7 @@
         },
         {
           "rowNumber": 81,
+          "key": "CHARACTER.Blunt Ass",
           "utterer": "CHARACTER.Blunt Ass",
           "context": "",
           "sourceEnglish": "Blunt Ass",
@@ -670,6 +764,7 @@
         },
         {
           "rowNumber": 82,
+          "key": "CHARACTER.Peek Ass",
           "utterer": "CHARACTER.Peek Ass",
           "context": "",
           "sourceEnglish": "Peek Ass",
@@ -677,6 +772,7 @@
         },
         {
           "rowNumber": 83,
+          "key": "CHARACTER.Cool Ass",
           "utterer": "CHARACTER.Cool Ass",
           "context": "",
           "sourceEnglish": "Cool Ass",
@@ -684,6 +780,7 @@
         },
         {
           "rowNumber": 84,
+          "key": "CHARACTER.Mean Ass",
           "utterer": "CHARACTER.Mean Ass",
           "context": "",
           "sourceEnglish": "Mean Ass",
@@ -691,6 +788,7 @@
         },
         {
           "rowNumber": 85,
+          "key": "CHARACTER.Cranky Ass",
           "utterer": "CHARACTER.Cranky Ass",
           "context": "",
           "sourceEnglish": "Cranky Ass",
@@ -698,6 +796,7 @@
         },
         {
           "rowNumber": 86,
+          "key": "CHARACTER.Hasty Ass",
           "utterer": "CHARACTER.Hasty Ass",
           "context": "",
           "sourceEnglish": "Hasty Ass",
@@ -705,6 +804,7 @@
         },
         {
           "rowNumber": 87,
+          "key": "CHARACTER.Haul Ass",
           "utterer": "CHARACTER.Haul Ass",
           "context": "",
           "sourceEnglish": "Haul Ass",
@@ -712,6 +812,7 @@
         },
         {
           "rowNumber": 88,
+          "key": "CHARACTER.Healthy Ass",
           "utterer": "CHARACTER.Healthy Ass",
           "context": "",
           "sourceEnglish": "Healthy Ass",
@@ -719,6 +820,7 @@
         },
         {
           "rowNumber": 89,
+          "key": "CHARACTER.Mellow Ass",
           "utterer": "CHARACTER.Mellow Ass",
           "context": "",
           "sourceEnglish": "Mellow Ass",
@@ -726,6 +828,7 @@
         },
         {
           "rowNumber": 90,
+          "key": "CHARACTER.Shaky Ass",
           "utterer": "CHARACTER.Shaky Ass",
           "context": "",
           "sourceEnglish": "Shaky Ass",
@@ -733,6 +836,7 @@
         },
         {
           "rowNumber": 91,
+          "key": "CHARACTER.Trippy Ass",
           "utterer": "CHARACTER.Trippy Ass",
           "context": "",
           "sourceEnglish": "Trippy Ass",
@@ -740,6 +844,7 @@
         },
         {
           "rowNumber": 92,
+          "key": "CHARACTER.DJ Dope Ass",
           "utterer": "CHARACTER.DJ Dope Ass",
           "context": "",
           "sourceEnglish": "DJ Dope Ass",
@@ -747,6 +852,7 @@
         },
         {
           "rowNumber": 93,
+          "key": "CHARACTER.Angry Ass",
           "utterer": "CHARACTER.Angry Ass",
           "context": "",
           "sourceEnglish": "Angry Ass",
@@ -754,6 +860,7 @@
         },
         {
           "rowNumber": 94,
+          "key": "CHARACTER.Sulky Ass",
           "utterer": "CHARACTER.Sulky Ass",
           "context": "",
           "sourceEnglish": "Sulky Ass",
@@ -761,6 +868,7 @@
         },
         {
           "rowNumber": 95,
+          "key": "CHARACTER.Chafed Ass",
           "utterer": "CHARACTER.Chafed Ass",
           "context": "",
           "sourceEnglish": "Chafed Ass",
@@ -768,6 +876,7 @@
         },
         {
           "rowNumber": 96,
+          "key": "CHARACTER.Broken Ass",
           "utterer": "CHARACTER.Broken Ass",
           "context": "",
           "sourceEnglish": "Broken Ass",
@@ -775,6 +884,7 @@
         },
         {
           "rowNumber": 97,
+          "key": "CHARACTER.Bitter Ass",
           "utterer": "CHARACTER.Bitter Ass",
           "context": "",
           "sourceEnglish": "Bitter Ass",
@@ -782,6 +892,7 @@
         },
         {
           "rowNumber": 98,
+          "key": "CHARACTER.Lofty Ass",
           "utterer": "CHARACTER.Lofty Ass",
           "context": "",
           "sourceEnglish": "Lofty Ass",
@@ -789,6 +900,7 @@
         },
         {
           "rowNumber": 99,
+          "key": "CHARACTER.Total Ass",
           "utterer": "CHARACTER.Total Ass",
           "context": "",
           "sourceEnglish": "Total Ass",
@@ -796,6 +908,7 @@
         },
         {
           "rowNumber": 100,
+          "key": "CHARACTER.Happy Ass",
           "utterer": "CHARACTER.Happy Ass",
           "context": "",
           "sourceEnglish": "Happy Ass",
@@ -803,6 +916,7 @@
         },
         {
           "rowNumber": 101,
+          "key": "CHARACTER.Hairy Ass",
           "utterer": "CHARACTER.Hairy Ass",
           "context": "",
           "sourceEnglish": "Hairy Ass",
@@ -810,6 +924,7 @@
         },
         {
           "rowNumber": 102,
+          "key": "CHARACTER.Dirty Ass",
           "utterer": "CHARACTER.Dirty Ass",
           "context": "",
           "sourceEnglish": "Dirty Ass",
@@ -817,6 +932,7 @@
         },
         {
           "rowNumber": 103,
+          "key": "CHARACTER.Janky Ass",
           "utterer": "CHARACTER.Janky Ass",
           "context": "",
           "sourceEnglish": "Janky Ass",
@@ -824,6 +940,7 @@
         },
         {
           "rowNumber": 104,
+          "key": "CHARACTER.Tight Ass",
           "utterer": "CHARACTER.Tight Ass",
           "context": "",
           "sourceEnglish": "Tight Ass",
@@ -831,6 +948,7 @@
         },
         {
           "rowNumber": 105,
+          "key": "CHARACTER.Fresh Ass",
           "utterer": "CHARACTER.Fresh Ass",
           "context": "",
           "sourceEnglish": "Fresh Ass",
@@ -838,6 +956,7 @@
         },
         {
           "rowNumber": 106,
+          "key": "CHARACTER.Gullible Ass",
           "utterer": "CHARACTER.Gullible Ass",
           "context": "",
           "sourceEnglish": "Gullible Ass",
@@ -845,6 +964,7 @@
         },
         {
           "rowNumber": 107,
+          "key": "CHARACTER.Ugly Ass",
           "utterer": "CHARACTER.Ugly Ass",
           "context": "",
           "sourceEnglish": "Ugly Ass",
@@ -852,17 +972,19 @@
         },
         {
           "rowNumber": 108,
+          "key": "",
           "utterer": "",
           "context": "",
           "sourceEnglish": "Spicy Ass?",
-          "translatedDutch": ""
+          "translatedDutch": "Pittige Ezel?"
         },
         {
           "rowNumber": 109,
+          "key": "",
           "utterer": "",
           "context": "",
           "sourceEnglish": "*** Ass",
-          "translatedDutch": ""
+          "translatedDutch": "*** Ezel"
         }
       ]
     },
@@ -871,10 +993,11 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "",
           "sourceEnglish": "Instructions for Operators [EN]",
-          "translatedDutch": ""
+          "translatedDutch": "Instructies voor Operators [NL]"
         }
       ]
     },
@@ -883,629 +1006,719 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.DialogLocalizer.17",
           "utterer": "WRITE.DialogLocalizer.17",
           "context": "",
           "sourceEnglish": "AVATAR REQUIRED",
-          "translatedDutch": ""
+          "translatedDutch": "AVATAR VEREIST"
         },
         {
           "rowNumber": 3,
+          "key": "WRITE.DialogLocalizer.18",
           "utterer": "WRITE.DialogLocalizer.18",
           "context": "",
           "sourceEnglish": "AWAITING INPUT",
-          "translatedDutch": ""
+          "translatedDutch": "WACHT OP INVOER"
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.DialogLocalizer.187",
           "utterer": "WRITE.DialogLocalizer.187",
           "context": "",
           "sourceEnglish": "PRESS X",
-          "translatedDutch": ""
+          "translatedDutch": "DRUK OP X"
         },
         {
           "rowNumber": 5,
+          "key": "WRITE.DialogLocalizer.12",
           "utterer": "WRITE.DialogLocalizer.12",
           "context": "",
           "sourceEnglish": "Which does your society value more?",
-          "translatedDutch": ""
+          "translatedDutch": "Wat waardeert jouw maatschappij meer?"
         },
         {
           "rowNumber": 6,
+          "key": "WRITE.DialogLocalizer.13",
           "utterer": "WRITE.DialogLocalizer.13",
           "context": "",
           "sourceEnglish": "Those who stay with the herd",
-          "translatedDutch": ""
+          "translatedDutch": "Degenen die bij de kudde blijven"
         },
         {
           "rowNumber": 7,
+          "key": "WRITE.DialogLocalizer.14",
           "utterer": "WRITE.DialogLocalizer.14",
           "context": "",
           "sourceEnglish": "Those who step away from the herd",
-          "translatedDutch": ""
+          "translatedDutch": "Degenen die zich van de kudde afkeren"
         },
         {
           "rowNumber": 8,
+          "key": "WRITE.DialogLocalizer.53",
           "utterer": "WRITE.DialogLocalizer.53",
           "context": "",
           "sourceEnglish": "Do you think of yourself as an intelligent animal?",
-          "translatedDutch": ""
+          "translatedDutch": "Beschouw je jezelf als een intelligent dier?"
         },
         {
           "rowNumber": 9,
+          "key": "WRITE.DialogLocalizer.55",
           "utterer": "WRITE.DialogLocalizer.55",
           "context": "",
           "sourceEnglish": "Yes",
-          "translatedDutch": ""
+          "translatedDutch": "Ja"
         },
         {
           "rowNumber": 10,
+          "key": "WRITE.DialogLocalizer.54",
           "utterer": "WRITE.DialogLocalizer.54",
           "context": "",
           "sourceEnglish": "No",
-          "translatedDutch": ""
+          "translatedDutch": "Nee"
         },
         {
           "rowNumber": 11,
+          "key": "WRITE.DialogLocalizer.56",
           "utterer": "WRITE.DialogLocalizer.56",
           "context": "",
           "sourceEnglish": "Do you think of yourself as a political animal?",
-          "translatedDutch": ""
+          "translatedDutch": "Beschouw je jezelf als een politiek dier?"
         },
         {
           "rowNumber": 12,
+          "key": "WRITE.DialogLocalizer.57",
           "utterer": "WRITE.DialogLocalizer.57",
           "context": "",
           "sourceEnglish": "Yes",
-          "translatedDutch": ""
+          "translatedDutch": "Ja"
         },
         {
           "rowNumber": 13,
+          "key": "WRITE.DialogLocalizer.58",
           "utterer": "WRITE.DialogLocalizer.58",
           "context": "",
           "sourceEnglish": "No",
-          "translatedDutch": ""
+          "translatedDutch": "Nee"
         },
         {
           "rowNumber": 14,
+          "key": "WRITE.DialogLocalizer.59",
           "utterer": "WRITE.DialogLocalizer.59",
           "context": "",
           "sourceEnglish": "Do you have urges to copulate and reproduce?",
-          "translatedDutch": ""
+          "translatedDutch": "Heb je de drang om te paren en voort te planten?"
         },
         {
           "rowNumber": 15,
+          "key": "WRITE.DialogLocalizer.60",
           "utterer": "WRITE.DialogLocalizer.60",
           "context": "",
           "sourceEnglish": "Yes",
-          "translatedDutch": ""
+          "translatedDutch": "Ja"
         },
         {
           "rowNumber": 16,
+          "key": "WRITE.DialogLocalizer.61",
           "utterer": "WRITE.DialogLocalizer.61",
           "context": "",
           "sourceEnglish": "No",
-          "translatedDutch": ""
+          "translatedDutch": "Nee"
         },
         {
           "rowNumber": 17,
+          "key": "WRITE.DialogLocalizer.62",
           "utterer": "WRITE.DialogLocalizer.62",
           "context": "",
           "sourceEnglish": "What is your natural habitat?",
-          "translatedDutch": ""
+          "translatedDutch": "Wat is je natuurlijke habitat?"
         },
         {
           "rowNumber": 18,
+          "key": "WRITE.DialogLocalizer.63",
           "utterer": "WRITE.DialogLocalizer.63",
           "context": "",
           "sourceEnglish": "Grassy plains",
-          "translatedDutch": ""
+          "translatedDutch": "Graslanden"
         },
         {
           "rowNumber": 19,
+          "key": "WRITE.DialogLocalizer.140",
           "utterer": "WRITE.DialogLocalizer.140",
           "context": "",
           "sourceEnglish": "Rocky desert",
-          "translatedDutch": ""
+          "translatedDutch": "Rotsachtige woestijn"
         },
         {
           "rowNumber": 20,
+          "key": "WRITE.DialogLocalizer.64",
           "utterer": "WRITE.DialogLocalizer.64",
           "context": "",
           "sourceEnglish": "Concrete jungle",
-          "translatedDutch": ""
+          "translatedDutch": "Betonnen jungle"
         },
         {
           "rowNumber": 21,
+          "key": "WRITE.DialogLocalizer.65",
           "utterer": "WRITE.DialogLocalizer.65",
           "context": "",
           "sourceEnglish": "Do you have experience doing manual labour every day for an extended period of time?",
-          "translatedDutch": ""
+          "translatedDutch": "Heb je ervaring met het dagelijks verrichten van zwaar lichamelijk werk gedurende lange tijd?"
         },
         {
           "rowNumber": 22,
+          "key": "WRITE.DialogLocalizer.66",
           "utterer": "WRITE.DialogLocalizer.66",
           "context": "",
           "sourceEnglish": "Yes",
-          "translatedDutch": ""
+          "translatedDutch": "Ja"
         },
         {
           "rowNumber": 23,
+          "key": "WRITE.DialogLocalizer.67",
           "utterer": "WRITE.DialogLocalizer.67",
           "context": "",
           "sourceEnglish": "No",
-          "translatedDutch": ""
+          "translatedDutch": "Nee"
         },
         {
           "rowNumber": 24,
+          "key": "WRITE.DialogLocalizer.68",
           "utterer": "WRITE.DialogLocalizer.68",
           "context": "",
           "sourceEnglish": "Have you ever gone on a labour strike due to unfair or dangerous working conditions?",
-          "translatedDutch": ""
+          "translatedDutch": "Ben je ooit in staking gegaan vanwege oneerlijke of gevaarlijke arbeidsomstandigheden?"
         },
         {
           "rowNumber": 25,
+          "key": "WRITE.DialogLocalizer.69",
           "utterer": "WRITE.DialogLocalizer.69",
           "context": "",
           "sourceEnglish": "Yes",
-          "translatedDutch": ""
+          "translatedDutch": "Ja"
         },
         {
           "rowNumber": 26,
+          "key": "WRITE.DialogLocalizer.70",
           "utterer": "WRITE.DialogLocalizer.70",
           "context": "",
           "sourceEnglish": "No",
-          "translatedDutch": ""
+          "translatedDutch": "Nee"
         },
         {
           "rowNumber": 27,
+          "key": "WRITE.DialogLocalizer.71",
           "utterer": "WRITE.DialogLocalizer.71",
           "context": "",
           "sourceEnglish": "Have you ever lost your job because your role became redundant at your place of work?",
-          "translatedDutch": ""
+          "translatedDutch": "Ben je ooit je baan kwijtgeraakt omdat je functie overbodig werd?"
         },
         {
           "rowNumber": 28,
+          "key": "WRITE.DialogLocalizer.72",
           "utterer": "WRITE.DialogLocalizer.72",
           "context": "",
           "sourceEnglish": "Yes",
-          "translatedDutch": ""
+          "translatedDutch": "Ja"
         },
         {
           "rowNumber": 29,
+          "key": "WRITE.DialogLocalizer.73",
           "utterer": "WRITE.DialogLocalizer.73",
           "context": "",
           "sourceEnglish": "No",
-          "translatedDutch": ""
+          "translatedDutch": "Nee"
         },
         {
           "rowNumber": 30,
+          "key": "WRITE.DialogLocalizer.74",
           "utterer": "WRITE.DialogLocalizer.74",
           "context": "",
           "sourceEnglish": "What kind of job was it?",
-          "translatedDutch": ""
+          "translatedDutch": "Wat voor soort werk was het?"
         },
         {
           "rowNumber": 31,
+          "key": "WRITE.DialogLocalizer.75",
           "utterer": "WRITE.DialogLocalizer.75",
           "context": "",
           "sourceEnglish": "Agriculture, fishery",
-          "translatedDutch": ""
+          "translatedDutch": "Landbouw, visserij"
         },
         {
           "rowNumber": 32,
+          "key": "WRITE.DialogLocalizer.76",
           "utterer": "WRITE.DialogLocalizer.76",
           "context": "",
           "sourceEnglish": "Mining, oil, forestry",
-          "translatedDutch": ""
+          "translatedDutch": "Mijnbouw, olie, bosbouw"
         },
         {
           "rowNumber": 33,
+          "key": "WRITE.DialogLocalizer.170",
           "utterer": "WRITE.DialogLocalizer.170",
           "context": "",
           "sourceEnglish": "Administration or clerical support",
-          "translatedDutch": ""
+          "translatedDutch": "Administratie of kantoorondersteuning"
         },
         {
           "rowNumber": 34,
+          "key": "WRITE.DialogLocalizer.171",
           "utterer": "WRITE.DialogLocalizer.171",
           "context": "",
           "sourceEnglish": "Hospitality or service",
-          "translatedDutch": ""
+          "translatedDutch": "Horeca of dienstverlening"
         },
         {
           "rowNumber": 35,
+          "key": "WRITE.DialogLocalizer.172",
           "utterer": "WRITE.DialogLocalizer.172",
           "context": "",
           "sourceEnglish": "Arts and culture",
-          "translatedDutch": ""
+          "translatedDutch": "Kunst en cultuur"
         },
         {
           "rowNumber": 36,
+          "key": "WRITE.DialogLocalizer.173",
           "utterer": "WRITE.DialogLocalizer.173",
           "context": "",
           "sourceEnglish": "Other",
-          "translatedDutch": ""
+          "translatedDutch": "Anders"
         },
         {
           "rowNumber": 37,
+          "key": "WRITE.DialogLocalizer.77",
           "utterer": "WRITE.DialogLocalizer.77",
           "context": "",
           "sourceEnglish": "How were the job conditions?",
-          "translatedDutch": ""
+          "translatedDutch": "Hoe waren de arbeidsomstandigheden?"
         },
         {
           "rowNumber": 38,
+          "key": "WRITE.DialogLocalizer.78",
           "utterer": "WRITE.DialogLocalizer.78",
           "context": "",
           "sourceEnglish": "Amazing",
-          "translatedDutch": ""
+          "translatedDutch": "Fantastisch"
         },
         {
           "rowNumber": 39,
+          "key": "WRITE.DialogLocalizer.79",
           "utterer": "WRITE.DialogLocalizer.79",
           "context": "",
           "sourceEnglish": "Good",
-          "translatedDutch": ""
+          "translatedDutch": "Goed"
         },
         {
           "rowNumber": 40,
+          "key": "WRITE.DialogLocalizer.174",
           "utterer": "WRITE.DialogLocalizer.174",
           "context": "",
           "sourceEnglish": "Fair",
-          "translatedDutch": ""
+          "translatedDutch": "Redelijk"
         },
         {
           "rowNumber": 41,
+          "key": "WRITE.DialogLocalizer.175",
           "utterer": "WRITE.DialogLocalizer.175",
           "context": "",
           "sourceEnglish": "Bad",
-          "translatedDutch": ""
+          "translatedDutch": "Slecht"
         },
         {
           "rowNumber": 42,
+          "key": "WRITE.DialogLocalizer.176",
           "utterer": "WRITE.DialogLocalizer.176",
           "context": "",
           "sourceEnglish": "Terrible",
-          "translatedDutch": ""
+          "translatedDutch": "Verschrikkelijk"
         },
         {
           "rowNumber": 43,
+          "key": "WRITE.DialogLocalizer.80",
           "utterer": "WRITE.DialogLocalizer.80",
           "context": "",
           "sourceEnglish": "Do you miss the job?",
-          "translatedDutch": ""
+          "translatedDutch": "Mis je het werk?"
         },
         {
           "rowNumber": 44,
+          "key": "WRITE.DialogLocalizer.81",
           "utterer": "WRITE.DialogLocalizer.81",
           "context": "",
           "sourceEnglish": "Yes",
-          "translatedDutch": ""
+          "translatedDutch": "Ja"
         },
         {
           "rowNumber": 45,
+          "key": "WRITE.DialogLocalizer.82",
           "utterer": "WRITE.DialogLocalizer.82",
           "context": "",
           "sourceEnglish": "No",
-          "translatedDutch": ""
+          "translatedDutch": "Nee"
         },
         {
           "rowNumber": 46,
+          "key": "WRITE.DialogLocalizer.177",
           "utterer": "WRITE.DialogLocalizer.177",
           "context": "",
           "sourceEnglish": "I miss aspects of it",
-          "translatedDutch": ""
+          "translatedDutch": "Ik mis bepaalde aspecten ervan"
         },
         {
           "rowNumber": 47,
+          "key": "WRITE.DialogLocalizer.83",
           "utterer": "WRITE.DialogLocalizer.83",
           "context": "",
           "sourceEnglish": "Do you think you would still have the job if you did things differently?",
-          "translatedDutch": ""
+          "translatedDutch": "Denk je dat je het werk nog zou hebben als je dingen anders had gedaan?"
         },
         {
           "rowNumber": 48,
+          "key": "WRITE.DialogLocalizer.84",
           "utterer": "WRITE.DialogLocalizer.84",
           "context": "",
           "sourceEnglish": "Yes",
-          "translatedDutch": ""
+          "translatedDutch": "Ja"
         },
         {
           "rowNumber": 49,
+          "key": "WRITE.DialogLocalizer.85",
           "utterer": "WRITE.DialogLocalizer.85",
           "context": "",
           "sourceEnglish": "No",
-          "translatedDutch": ""
+          "translatedDutch": "Nee"
         },
         {
           "rowNumber": 50,
+          "key": "WRITE.DialogLocalizer.178",
           "utterer": "WRITE.DialogLocalizer.178",
           "context": "",
           "sourceEnglish": "I don't know",
-          "translatedDutch": ""
+          "translatedDutch": "Ik weet het niet"
         },
         {
           "rowNumber": 51,
+          "key": "WRITE.DialogLocalizer.86",
           "utterer": "WRITE.DialogLocalizer.86",
           "context": "",
           "sourceEnglish": "Would you consider yourself to be the best representative of your species to lead a Revolution?",
-          "translatedDutch": ""
+          "translatedDutch": "Beschouw je jezelf als de beste vertegenwoordiger van je soort om een Revolutie te leiden?"
         },
         {
           "rowNumber": 52,
+          "key": "WRITE.DialogLocalizer.87",
           "utterer": "WRITE.DialogLocalizer.87",
           "context": "",
           "sourceEnglish": "Yes",
-          "translatedDutch": ""
+          "translatedDutch": "Ja"
         },
         {
           "rowNumber": 53,
+          "key": "WRITE.DialogLocalizer.88",
           "utterer": "WRITE.DialogLocalizer.88",
           "context": "",
           "sourceEnglish": "No",
-          "translatedDutch": ""
+          "translatedDutch": "Nee"
         },
         {
           "rowNumber": 54,
+          "key": "WRITE.DialogLocalizer.89",
           "utterer": "WRITE.DialogLocalizer.89",
           "context": "",
           "sourceEnglish": "Which of these mythic and literary heroes do you identify with the most?",
-          "translatedDutch": ""
+          "translatedDutch": "Met welke van deze mythische en literaire helden identificeer je je het meest?"
         },
         {
           "rowNumber": 55,
+          "key": "WRITE.DialogLocalizer.90",
           "utterer": "WRITE.DialogLocalizer.90",
           "context": "",
           "sourceEnglish": "Bottom from A Midsummer Night's Dream",
-          "translatedDutch": ""
+          "translatedDutch": "Bult uit Een Midzomernachtdroom"
         },
         {
           "rowNumber": 56,
+          "key": "WRITE.DialogLocalizer.91",
           "utterer": "WRITE.DialogLocalizer.91",
           "context": "",
           "sourceEnglish": "Lucius from The Golden Ass by Apuleius",
-          "translatedDutch": ""
+          "translatedDutch": "Lucius uit De Gouden Ezel van Apuleius"
         },
         {
           "rowNumber": 57,
+          "key": "WRITE.DialogLocalizer.180",
           "utterer": "WRITE.DialogLocalizer.180",
           "context": "",
           "sourceEnglish": "Midas from Greek Mythology",
-          "translatedDutch": ""
+          "translatedDutch": "Midas uit de Griekse Mythologie"
         },
         {
           "rowNumber": 58,
+          "key": "WRITE.DialogLocalizer.179",
           "utterer": "WRITE.DialogLocalizer.179",
           "context": "",
           "sourceEnglish": "Pinocchio from Pinocchio",
-          "translatedDutch": ""
+          "translatedDutch": "Pinokkio uit Pinokkio"
         },
         {
           "rowNumber": 59,
+          "key": "WRITE.DialogLocalizer.19",
           "utterer": "WRITE.DialogLocalizer.19",
           "context": "",
           "sourceEnglish": "PHASE ONE\\nCOMPLETE",
-          "translatedDutch": ""
+          "translatedDutch": "FASE EEN\\nVOLTOOID"
         },
         {
           "rowNumber": 60,
+          "key": "WRITE.DialogLocalizer.20",
           "utterer": "WRITE.DialogLocalizer.20",
           "context": "",
           "sourceEnglish": "CALIBRATING INTELLIGENCE",
-          "translatedDutch": ""
+          "translatedDutch": "KALIBREREN INTELLIGENTIE"
         },
         {
           "rowNumber": 61,
+          "key": "WRITE.DialogLocalizer.92",
           "utterer": "WRITE.DialogLocalizer.92",
           "context": "",
           "sourceEnglish": "In English, when one human says to another human, \"You ass,\" they are comparing a human to:",
-          "translatedDutch": ""
+          "translatedDutch": "In het Engels, wanneer een mens tegen een ander mens zegt \"You ass\", vergelijkt men een mens met:"
         },
         {
           "rowNumber": 62,
+          "key": "WRITE.DialogLocalizer.93",
           "utterer": "WRITE.DialogLocalizer.93",
           "context": "",
           "sourceEnglish": "Equus asinus",
-          "translatedDutch": ""
+          "translatedDutch": "Equus asinus"
         },
         {
           "rowNumber": 63,
+          "key": "WRITE.DialogLocalizer.94",
           "utterer": "WRITE.DialogLocalizer.94",
           "context": "",
           "sourceEnglish": "A buttocks",
-          "translatedDutch": ""
+          "translatedDutch": "Billen"
         },
         {
           "rowNumber": 64,
+          "key": "WRITE.DialogLocalizer.95",
           "utterer": "WRITE.DialogLocalizer.95",
           "context": "",
           "sourceEnglish": "In English, when one human says to another human, \"I'd hit that ass\" they mean:",
-          "translatedDutch": ""
+          "translatedDutch": "In het Engels, wanneer een mens tegen een ander mens zegt \"I'd hit that ass\", bedoelen ze:"
         },
         {
           "rowNumber": 65,
+          "key": "WRITE.DialogLocalizer.96",
           "utterer": "WRITE.DialogLocalizer.96",
           "context": "",
           "sourceEnglish": "They would forcibly beat an Equus asinus if they could",
-          "translatedDutch": ""
+          "translatedDutch": "Ze zouden een Equus asinus gewelddadig slaan als ze konden"
         },
         {
           "rowNumber": 66,
+          "key": "WRITE.DialogLocalizer.97",
           "utterer": "WRITE.DialogLocalizer.97",
           "context": "",
           "sourceEnglish": "They would have sexual intercourse with another human if they could",
-          "translatedDutch": ""
+          "translatedDutch": "Ze zouden geslachtsgemeenschap hebben met een ander mens als ze konden"
         },
         {
           "rowNumber": 67,
+          "key": "WRITE.DialogLocalizer.98",
           "utterer": "WRITE.DialogLocalizer.98",
           "context": "",
           "sourceEnglish": "In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:",
-          "translatedDutch": ""
+          "translatedDutch": "In het Oude Testament is een mens genaamd Bileam zijn ezel aan het slaan wanneer plotseling:"
         },
         {
           "rowNumber": 68,
+          "key": "WRITE.DialogLocalizer.99",
           "utterer": "WRITE.DialogLocalizer.99",
           "context": "",
           "sourceEnglish": "Balaam beats the ass to death and has to find another one to do his work for him",
-          "translatedDutch": ""
+          "translatedDutch": "Bileam de ezel doodslaat en een andere moet vinden om zijn werk te doen"
         },
         {
           "rowNumber": 69,
+          "key": "WRITE.DialogLocalizer.100",
           "utterer": "WRITE.DialogLocalizer.100",
           "context": "",
           "sourceEnglish": "God gives the ass the ability to speak and the ass begs Balaam to spare them",
-          "translatedDutch": ""
+          "translatedDutch": "God de ezel het vermogen geeft te spreken en de ezel Bileam smeekt hem te sparen"
         },
         {
           "rowNumber": 70,
+          "key": "WRITE.DialogLocalizer.101",
           "utterer": "WRITE.DialogLocalizer.101",
           "context": "",
           "sourceEnglish": "In Aesop's Fables, one reads: \"An ass put on the skin of a lion and went around frightening all the animals. The ass saw a fox and tried to frighten her too, but she had heard his voice first, so she said to the ass, 'You can be sure that I too would have been afraid, if I had not already heard the sound of your bray'.\" The moral is:",
-          "translatedDutch": ""
+          "translatedDutch": "In Aesopus' Fabels leest men: \"Een ezel trok de huid van een leeuw aan en ging rond om alle dieren angst aan te jagen. De ezel zag een vos en probeerde haar ook bang te maken, maar zij had zijn stem al gehoord, dus zei ze tegen de ezel: 'Je kunt er zeker van zijn dat ik ook bang zou zijn geweest, als ik het geluid van je geschreeuw niet al had gehoord'.\" De moraal is:"
         },
         {
           "rowNumber": 71,
+          "key": "WRITE.DialogLocalizer.102",
           "utterer": "WRITE.DialogLocalizer.102",
           "context": "",
           "sourceEnglish": "The disenfranchised are forced to imitate those in power without ever attaining more power",
-          "translatedDutch": ""
+          "translatedDutch": "De rechtelozen worden gedwongen degenen met macht te imiteren zonder ooit meer macht te verkrijgen"
         },
         {
           "rowNumber": 72,
+          "key": "WRITE.DialogLocalizer.103",
           "utterer": "WRITE.DialogLocalizer.103",
           "context": "",
           "sourceEnglish": "A fool is still a fool regardless of how they are dressed",
-          "translatedDutch": ""
+          "translatedDutch": "Een dwaas blijft een dwaas, ongeacht hoe ze gekleed zijn"
         },
         {
           "rowNumber": 73,
+          "key": "WRITE.DialogLocalizer.104",
           "utterer": "WRITE.DialogLocalizer.104",
           "context": "",
           "sourceEnglish": "In Ancient Greece, asses symbolized fertility because:",
-          "translatedDutch": ""
+          "translatedDutch": "In het oude Griekenland symboliseerden ezels vruchtbaarheid omdat:"
         },
         {
           "rowNumber": 74,
+          "key": "WRITE.DialogLocalizer.105",
           "utterer": "WRITE.DialogLocalizer.105",
           "context": "",
           "sourceEnglish": "Male donkeys have very large penises",
-          "translatedDutch": ""
+          "translatedDutch": "Mannelijke ezels zeer grote penissen hebben"
         },
         {
           "rowNumber": 75,
+          "key": "WRITE.DialogLocalizer.106",
           "utterer": "WRITE.DialogLocalizer.106",
           "context": "",
           "sourceEnglish": "Female donkeys frequently give birth to twins",
-          "translatedDutch": ""
+          "translatedDutch": "Vrouwelijke ezels vaak tweelingen baren"
         },
         {
           "rowNumber": 76,
+          "key": "WRITE.DialogLocalizer.107",
           "utterer": "WRITE.DialogLocalizer.107",
           "context": "",
           "sourceEnglish": "A 'mare' is the general term for a female equine. What is the specific term for a female donkey?",
-          "translatedDutch": ""
+          "translatedDutch": "Een 'merrie' is de algemene term voor een vrouwelijk paard. Wat is de specifieke term voor een vrouwelijke ezel?"
         },
         {
           "rowNumber": 77,
+          "key": "WRITE.DialogLocalizer.108",
           "utterer": "WRITE.DialogLocalizer.108",
           "context": "",
           "sourceEnglish": "Jack",
-          "translatedDutch": ""
+          "translatedDutch": "Jack"
         },
         {
           "rowNumber": 78,
+          "key": "WRITE.DialogLocalizer.109",
           "utterer": "WRITE.DialogLocalizer.109",
           "context": "",
           "sourceEnglish": "Gelding",
-          "translatedDutch": ""
+          "translatedDutch": "Ruin"
         },
         {
           "rowNumber": 79,
+          "key": "WRITE.DialogLocalizer.182",
           "utterer": "WRITE.DialogLocalizer.182",
           "context": "",
           "sourceEnglish": "Jennet",
-          "translatedDutch": ""
+          "translatedDutch": "Jennet"
         },
         {
           "rowNumber": 80,
+          "key": "WRITE.DialogLocalizer.181",
           "utterer": "WRITE.DialogLocalizer.181",
           "context": "",
           "sourceEnglish": "Molly",
-          "translatedDutch": ""
+          "translatedDutch": "Molly"
         },
         {
           "rowNumber": 81,
+          "key": "WRITE.DialogLocalizer.110",
           "utterer": "WRITE.DialogLocalizer.110",
           "context": "",
           "sourceEnglish": "A famous piece of anti-Christian graffiti from ancient Rome depicts:",
-          "translatedDutch": ""
+          "translatedDutch": "Een beroemd stuk anti-christelijke graffiti uit het oude Rome toont:"
         },
         {
           "rowNumber": 82,
+          "key": "WRITE.DialogLocalizer.111",
           "utterer": "WRITE.DialogLocalizer.111",
           "context": "",
           "sourceEnglish": "Jesus with an ass's head",
-          "translatedDutch": ""
+          "translatedDutch": "Jezus met een ezelskop"
         },
         {
           "rowNumber": 83,
+          "key": "WRITE.DialogLocalizer.112",
           "utterer": "WRITE.DialogLocalizer.112",
           "context": "",
           "sourceEnglish": "Jesus riding an ass backwards",
-          "translatedDutch": ""
+          "translatedDutch": "Jezus achterstevoren op een ezel rijdend"
         },
         {
           "rowNumber": 84,
+          "key": "WRITE.DialogLocalizer.113",
           "utterer": "WRITE.DialogLocalizer.113",
           "context": "",
           "sourceEnglish": "What does tradition say Mohammed's ass, Ya'fur, did after the Prophet died?",
-          "translatedDutch": ""
+          "translatedDutch": "Wat zegt de traditie dat Mohammeds ezel, Ya'fur, deed nadat de Profeet stierf?"
         },
         {
           "rowNumber": 85,
+          "key": "WRITE.DialogLocalizer.114",
           "utterer": "WRITE.DialogLocalizer.114",
           "context": "",
           "sourceEnglish": "Committed suicide by throwing itself down a well",
-          "translatedDutch": ""
+          "translatedDutch": "Pleegde zelfmoord door zich in een put te werpen"
         },
         {
           "rowNumber": 86,
+          "key": "WRITE.DialogLocalizer.115",
           "utterer": "WRITE.DialogLocalizer.115",
           "context": "",
           "sourceEnglish": "Rode away from Mecca weeping never to return",
-          "translatedDutch": ""
+          "translatedDutch": "Reed huilend weg uit Mekka om nooit meer terug te keren"
         },
         {
           "rowNumber": 87,
+          "key": "WRITE.DialogLocalizer.116",
           "utterer": "WRITE.DialogLocalizer.116",
           "context": "",
           "sourceEnglish": "In the philosophical paradox called Buridan's Ass, an ass placed between a bucket of water and a bale of hay will:",
-          "translatedDutch": ""
+          "translatedDutch": "In de filosofische paradox genaamd Buridans Ezel, zal een ezel geplaatst tussen een emmer water en een baal hooi:"
         },
         {
           "rowNumber": 88,
+          "key": "WRITE.DialogLocalizer.117",
           "utterer": "WRITE.DialogLocalizer.117",
           "context": "",
           "sourceEnglish": "Always choose the hay first",
-          "translatedDutch": ""
+          "translatedDutch": "Altijd eerst het hooi kiezen"
         },
         {
           "rowNumber": 89,
+          "key": "WRITE.DialogLocalizer.118",
           "utterer": "WRITE.DialogLocalizer.118",
           "context": "",
           "sourceEnglish": "Always choose the water first",
-          "translatedDutch": ""
+          "translatedDutch": "Altijd eerst het water kiezen"
         },
         {
           "rowNumber": 90,
+          "key": "WRITE.DialogLocalizer.183",
           "utterer": "WRITE.DialogLocalizer.183",
           "context": "",
           "sourceEnglish": "Die from indecision",
-          "translatedDutch": ""
+          "translatedDutch": "Sterven van besluiteloosheid"
         },
         {
           "rowNumber": 91,
+          "key": "WRITE.DialogLocalizer.119",
           "utterer": "WRITE.DialogLocalizer.119",
           "context": "",
           "sourceEnglish": "Was ist die Bedeutung des Ausdrucks „sich eine Eselsbrücke bauen“?",
@@ -1513,178 +1726,203 @@
         },
         {
           "rowNumber": 92,
+          "key": "WRITE.DialogLocalizer.120",
           "utterer": "WRITE.DialogLocalizer.120",
           "context": "",
           "sourceEnglish": "Eine Abkürzung oder gedankliche Assoziation zu finden, um sich etwas besser merken zu können",
-          "translatedDutch": ""
+          "translatedDutch": "Een verkorting of gedachte-associatie vinden om iets beter te kunnen onthouden"
         },
         {
           "rowNumber": 93,
+          "key": "WRITE.DialogLocalizer.121",
           "utterer": "WRITE.DialogLocalizer.121",
           "context": "",
           "sourceEnglish": "Vertrauen Sie niemals einem langsamen Esel beim Brückenbauen",
-          "translatedDutch": ""
+          "translatedDutch": "Vertrouw nooit een trage ezel bij het bouwen van bruggen"
         },
         {
           "rowNumber": 94,
+          "key": "WRITE.DialogLocalizer.122",
           "utterer": "WRITE.DialogLocalizer.122",
           "context": "",
           "sourceEnglish": "In 1981, the video game DONKEY.BAS was distributed on all original IBM computers. In that game, players must:",
-          "translatedDutch": ""
+          "translatedDutch": "In 1981 werd het videospel DONKEY.BAS gedistribueerd op alle originele IBM-computers. In dat spel moeten spelers:"
         },
         {
           "rowNumber": 95,
+          "key": "WRITE.DialogLocalizer.123",
           "utterer": "WRITE.DialogLocalizer.123",
           "context": "",
           "sourceEnglish": "Play as a donkey pulling wagons of hay from one town to another",
-          "translatedDutch": ""
+          "translatedDutch": "Spelen als een ezel die hooiwagens van de ene stad naar de andere trekt"
         },
         {
           "rowNumber": 96,
+          "key": "WRITE.DialogLocalizer.124",
           "utterer": "WRITE.DialogLocalizer.124",
           "context": "",
           "sourceEnglish": "Drive a car down a road while avoiding donkeys",
-          "translatedDutch": ""
+          "translatedDutch": "Een auto over een weg rijden terwijl ze ezels ontwijken"
         },
         {
           "rowNumber": 97,
+          "key": "WRITE.DialogLocalizer.184",
           "utterer": "WRITE.DialogLocalizer.184",
           "context": "",
           "sourceEnglish": "Play a rhythm game that simulates donkeys mating",
-          "translatedDutch": ""
+          "translatedDutch": "Een ritme spel spelen dat ezels bij het paren simuleert"
         },
         {
           "rowNumber": 98,
+          "key": "WRITE.DialogLocalizer.125",
           "utterer": "WRITE.DialogLocalizer.125",
           "context": "",
           "sourceEnglish": "En La Gloria, Colombia, el servicio de biblioteca móvil que usa los burros para transportar libros a los pueblos pequeños se llama:",
-          "translatedDutch": ""
+          "translatedDutch": "In La Gloria, Colombia, heet de mobiele bibliotheekdienst die ezels gebruikt om boeken naar kleine dorpen te vervoeren:"
         },
         {
           "rowNumber": 99,
+          "key": "WRITE.DialogLocalizer.126",
           "utterer": "WRITE.DialogLocalizer.126",
           "context": "",
           "sourceEnglish": "Biblioburro",
-          "translatedDutch": ""
+          "translatedDutch": "Biblioburro"
         },
         {
           "rowNumber": 100,
+          "key": "WRITE.DialogLocalizer.127",
           "utterer": "WRITE.DialogLocalizer.127",
           "context": "",
           "sourceEnglish": "Libraría Asinia",
-          "translatedDutch": ""
+          "translatedDutch": "Libraría Asinia"
         },
         {
           "rowNumber": 101,
+          "key": "WRITE.DialogLocalizer.128",
           "utterer": "WRITE.DialogLocalizer.128",
           "context": "",
           "sourceEnglish": "In China, the rise in demand for a luxury Traditional Chinese Medicine product called 'ejiao' has resulted in how many asses being slaughtered every year?",
-          "translatedDutch": ""
+          "translatedDutch": "In China heeft de toegenomen vraag naar een luxe Traditioneel Chinees Geneesmiddel genaamd 'ejiao' geleid tot de slacht van hoeveel ezels per jaar?"
         },
         {
           "rowNumber": 102,
+          "key": "WRITE.DialogLocalizer.129",
           "utterer": "WRITE.DialogLocalizer.129",
           "context": "",
           "sourceEnglish": "5 million",
-          "translatedDutch": ""
+          "translatedDutch": "5 miljoen"
         },
         {
           "rowNumber": 103,
+          "key": "WRITE.DialogLocalizer.130",
           "utterer": "WRITE.DialogLocalizer.130",
           "context": "",
           "sourceEnglish": "3 million",
-          "translatedDutch": ""
+          "translatedDutch": "3 miljoen"
         },
         {
           "rowNumber": 104,
+          "key": "WRITE.DialogLocalizer.185",
           "utterer": "WRITE.DialogLocalizer.185",
           "context": "",
           "sourceEnglish": "2 million",
-          "translatedDutch": ""
+          "translatedDutch": "2 miljoen"
         },
         {
           "rowNumber": 105,
+          "key": "WRITE.DialogLocalizer.131",
           "utterer": "WRITE.DialogLocalizer.131",
           "context": "",
           "sourceEnglish": "As of 2018, how heavy must a tourist be to be too heavy to ride an ass on the island of Santorini, Greece?",
-          "translatedDutch": ""
+          "translatedDutch": "Vanaf 2018, hoe zwaar moet een toerist zijn om te zwaar te zijn om op een ezel te rijden op het eiland Santorini, Griekenland?"
         },
         {
           "rowNumber": 106,
+          "key": "WRITE.DialogLocalizer.132",
           "utterer": "WRITE.DialogLocalizer.132",
           "context": "",
           "sourceEnglish": "75kg (165lbs)",
-          "translatedDutch": ""
+          "translatedDutch": "75kg (165lbs)"
         },
         {
           "rowNumber": 107,
+          "key": "WRITE.DialogLocalizer.133",
           "utterer": "WRITE.DialogLocalizer.133",
           "context": "",
           "sourceEnglish": "100kg (220lbs)",
-          "translatedDutch": ""
+          "translatedDutch": "100kg (220lbs)"
         },
         {
           "rowNumber": 108,
+          "key": "WRITE.DialogLocalizer.134",
           "utterer": "WRITE.DialogLocalizer.134",
           "context": "",
           "sourceEnglish": "In northwestern Australia, wild asses are shot from government helicopters because:",
-          "translatedDutch": ""
+          "translatedDutch": "In noordwest-Australië worden wilde ezels vanuit regeringshelikopters neergeschoten omdat:"
         },
         {
           "rowNumber": 109,
+          "key": "WRITE.DialogLocalizer.135",
           "utterer": "WRITE.DialogLocalizer.135",
           "context": "",
           "sourceEnglish": "They are considered an invasive species left behind from British colonization",
-          "translatedDutch": ""
+          "translatedDutch": "Ze worden beschouwd als een invasieve soort achtergelaten door de Britse kolonisatie"
         },
         {
           "rowNumber": 110,
+          "key": "WRITE.DialogLocalizer.136",
           "utterer": "WRITE.DialogLocalizer.136",
           "context": "",
           "sourceEnglish": "They are destroying the natural landscape of the Kimberley",
-          "translatedDutch": ""
+          "translatedDutch": "Ze het natuurlijke landschap van de Kimberley vernietigen"
         },
         {
           "rowNumber": 111,
+          "key": "WRITE.DialogLocalizer.186",
           "utterer": "WRITE.DialogLocalizer.186",
           "context": "",
           "sourceEnglish": "All of the above",
-          "translatedDutch": ""
+          "translatedDutch": "Alle bovenstaande"
         },
         {
           "rowNumber": 112,
+          "key": "WRITE.DialogLocalizer.137",
           "utterer": "WRITE.DialogLocalizer.137",
           "context": "",
           "sourceEnglish": "Equus asinus has been in the service of human beings as a manual labourer for how many years?",
-          "translatedDutch": ""
+          "translatedDutch": "Equus asinus is al hoeveel jaar in dienst van de mensheid als handarbeider?"
         },
         {
           "rowNumber": 113,
+          "key": "WRITE.DialogLocalizer.138",
           "utterer": "WRITE.DialogLocalizer.138",
           "context": "",
           "sourceEnglish": "5000 years",
-          "translatedDutch": ""
+          "translatedDutch": "5000 jaar"
         },
         {
           "rowNumber": 114,
+          "key": "WRITE.DialogLocalizer.139",
           "utterer": "WRITE.DialogLocalizer.139",
           "context": "",
           "sourceEnglish": "7000 years",
-          "translatedDutch": ""
+          "translatedDutch": "7000 jaar"
         },
         {
           "rowNumber": 115,
+          "key": "WRITE.DialogLocalizer.21",
           "utterer": "WRITE.DialogLocalizer.21",
           "context": "",
           "sourceEnglish": "AVATAR READY",
-          "translatedDutch": ""
+          "translatedDutch": "AVATAR GEREED"
         },
         {
           "rowNumber": 116,
+          "key": "WRITE.DialogLocalizer.22",
           "utterer": "WRITE.DialogLocalizer.22",
           "context": "",
           "sourceEnglish": "MATERIALIZING...",
-          "translatedDutch": ""
+          "translatedDutch": "MATERIALISEREN..."
         }
       ]
     },
@@ -1693,10 +1931,11 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.DialogLocalizer.1",
           "utterer": "WRITE.DialogLocalizer.1",
           "context": "",
           "sourceEnglish": "PRESS X TO BEGIN",
-          "translatedDutch": ""
+          "translatedDutch": "DRUK OP X OM TE BEGINNEN"
         }
       ]
     },
@@ -1705,6 +1944,7 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "INTERMISSION",
@@ -1712,6 +1952,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "in which there is a PAUSE of no fixed duration",
@@ -1719,6 +1960,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "PRESS X TO BEGIN WHENEVER",
@@ -1731,6 +1973,7 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "INTERMISSION",
@@ -1738,6 +1981,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "in which there is a PAUSE of no fixed duration",
@@ -1745,6 +1989,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "PRESS X TO BEGIN WHENEVER",
@@ -1757,6 +2002,7 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "INTERMISSION",
@@ -1764,6 +2010,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "in which there is a PAUSE of no fixed duration",
@@ -1771,6 +2018,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "PRESS X TO BEGIN WHENEVER",
@@ -1783,24 +2031,27 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "INTERMISSION",
-          "translatedDutch": ""
+          "translatedDutch": "ONDERBREKING"
         },
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "in which there is a PAUSE of no fixed duration",
-          "translatedDutch": ""
+          "translatedDutch": "Waar een PAUZE van onbepaalde duur heerst."
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "PRESS X TO BEGIN WHENEVER",
-          "translatedDutch": ""
+          "translatedDutch": "DRUK OP X OM TERUG TE BEGINNEN"
         }
       ]
     }

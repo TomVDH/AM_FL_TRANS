@@ -1,12 +1,13 @@
 {
   "fileName": "3_asses.masses_E3Proxy",
-  "processedAt": "2025-12-29T08:53:10.841Z",
+  "processedAt": "2025-12-29T22:52:03.699Z",
   "sheets": [
     {
       "sheetName": "E3_EpisodeTitle_localization",
       "entries": [
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Title text on screen",
           "sourceEnglish": "EPISODE THREE",
@@ -14,6 +15,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "THE MINE",
@@ -21,6 +23,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "Press X to Begin",
@@ -28,6 +31,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "WRITE.Dialog:Localizer.12",
           "utterer": "WRITE.Dialog:Localizer.12",
           "context": "",
           "sourceEnglish": "3 weeks later",
@@ -35,6 +39,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:WaitUp.21.Hard Ass",
           "utterer": "SAY.Dialog:WaitUp.21.Hard Ass",
           "context": "Hard Ass, Kick Ass, and Sick Ass are running back to the Mine in the heavy rain.",
           "sourceEnglish": "Hurry up, Sick Ass!",
@@ -42,6 +47,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:WaitUp.26.Kick Ass",
           "utterer": "SAY.Dialog:WaitUp.26.Kick Ass",
           "context": "",
           "sourceEnglish": "She's doing HER BEST!",
@@ -49,6 +55,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:WaitUp.24.Sick Ass",
           "utterer": "SAY.Dialog:WaitUp.24.Sick Ass",
           "context": "",
           "sourceEnglish": "*COUGH*",
@@ -56,6 +63,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:WaitUp.27.Kick Ass",
           "utterer": "SAY.Dialog:WaitUp.27.Kick Ass",
           "context": "",
           "sourceEnglish": "@#$%&!",
@@ -68,6 +76,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:ScavengersReturn.116.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.116.{$NewName}",
           "context": "The screen fades up from black to reveal Sturdy listening to the Foal (her now-born daughter).",
           "sourceEnglish": "Comrade Mother, will this crappy weather ever end?",
@@ -75,6 +84,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:ScavengersReturn.1.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.1.{$NewName}",
           "context": "",
           "sourceEnglish": "I'm cold.",
@@ -82,6 +92,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:ScavengersReturn.118.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.118.{$NewName}",
           "context": "",
           "sourceEnglish": "I'm hungry.",
@@ -89,6 +100,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:ScavengersReturn.117.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.117.{$NewName}",
           "context": "",
           "sourceEnglish": "I'm damp.",
@@ -96,6 +108,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:ScavengersReturn.115.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.115.{$NewName}",
           "context": "",
           "sourceEnglish": "And worst of all...",
@@ -103,6 +116,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:ScavengersReturn.114.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.114.{$NewName}",
           "context": "",
           "sourceEnglish": "I'M BORED.",
@@ -110,6 +124,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:ScavengersReturn.392.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.392.Sturdy Ass",
           "context": "",
           "sourceEnglish": "My Foal, I'm sorry you can't have the childhood I had toiling in the fields.",
@@ -117,6 +132,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:ScavengersReturn.96.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.96.Sturdy Ass",
           "context": "",
           "sourceEnglish": "But soon the Gods will destroy the evil Machines and the Humans will return to us.",
@@ -124,6 +140,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:ScavengersReturn.452.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.452.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Then you will grow up to have a life full of true and honest work.",
@@ -131,6 +148,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:ScavengersReturn.99.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.99.{$NewName}",
           "context": "",
           "sourceEnglish": "Is work...really thaaaaaaat great?",
@@ -138,6 +156,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:ScavengersReturn.98.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.98.Sturdy Ass",
           "context": "",
           "sourceEnglish": "How can you ask that?!",
@@ -145,6 +164,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:ScavengersReturn.101.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.101.Sturdy Ass",
           "context": "",
           "sourceEnglish": "The Gods gave our Ancestors the power to work.",
@@ -152,6 +172,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:ScavengersReturn.394.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.394.Sturdy Ass",
           "context": "",
           "sourceEnglish": "They lived at work. And they died at work.",
@@ -159,6 +180,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:ScavengersReturn.393.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.393.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Work is in your Soul.",
@@ -166,6 +188,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:ScavengersReturn.103.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.103.{$NewName}",
           "context": "",
           "sourceEnglish": "But Comrade Mother...",
@@ -173,6 +196,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:ScavengersReturn.105.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.105.{$NewName}",
           "context": "",
           "sourceEnglish": "What if I don't want to work...?",
@@ -180,6 +204,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:ScavengersReturn.107.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.107.{$NewName}",
           "context": "",
           "sourceEnglish": "What if I want to jump around and explore?",
@@ -187,6 +212,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:ScavengersReturn.106.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.106.{$NewName}",
           "context": "",
           "sourceEnglish": "What if I just want... to play?",
@@ -194,6 +220,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:ScavengersReturn.13.Big Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.13.Big Ass",
           "context": "Big Ass enters frame with an announcement.",
           "sourceEnglish": "{vpunch=100,0.75}I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!",
@@ -201,6 +228,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:ScavengersReturn.15.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.15.{$NewName}",
           "context": "",
           "sourceEnglish": "Wahoo!",
@@ -208,6 +236,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:ScavengersReturn.121.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.121.Sturdy Ass",
           "context": "Sturdy, The Foal, and Big Ass all go to meet the others.",
           "sourceEnglish": "If we're lucky, the scavengers will have found enough food tonight for everyone...",
@@ -215,6 +244,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:ScavengersReturn.26.Hard Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.26.Hard Ass",
           "context": "The Herd convenes at the mouth of the cave to greet the Scavengers (Hard, Sick, and Kick).",
           "sourceEnglish": "We're back.",
@@ -222,6 +252,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:ScavengersReturn.395.Sick Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.395.Sick Ass",
           "context": "",
           "sourceEnglish": "*COUGH*",
@@ -229,6 +260,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:ScavengersReturn.27.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.27.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Well done, Comrades—",
@@ -236,6 +268,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:ScavengersReturn.30.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.30.{$NewName}",
           "context": "",
           "sourceEnglish": "Tell me about your adventures, Uncle Kick!",
@@ -243,6 +276,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "SAY.Dialog:ScavengersReturn.109.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.109.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Not now, child. Let them set down the cart and dry off.",
@@ -250,6 +284,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:ScavengersReturn.31.Big Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.31.Big Ass",
           "context": "",
           "sourceEnglish": "Is that all the food you managed to find?",
@@ -257,6 +292,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "SAY.Dialog:ScavengersReturn.29.Hard Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.29.Hard Ass",
           "context": "",
           "sourceEnglish": "The river was flooded.",
@@ -264,6 +300,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:ScavengersReturn.345.Hard Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.345.Hard Ass",
           "context": "",
           "sourceEnglish": "We couldn’t forage in the usual spots.",
@@ -271,6 +308,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:ScavengersReturn.411.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.411.Sturdy Ass",
           "context": "",
           "sourceEnglish": "It's not enough food, but we’ll make it last.",
@@ -278,6 +316,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:ScavengersReturn.347.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.347.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Smart Ass, divide the rations.",
@@ -285,6 +324,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:ScavengersReturn.349.Smart Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.349.Smart Ass",
           "context": "",
           "sourceEnglish": "Equally this time, right?",
@@ -292,6 +332,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:ScavengersReturn.350.Smart Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.350.Smart Ass",
           "context": "",
           "sourceEnglish": "Oh come on, an Ass can’t joke on an empty stomach?",
@@ -299,6 +340,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:ScavengersReturn.397.Big Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.397.Big Ass",
           "context": "",
           "sourceEnglish": "Were there any noticeable signs of Humans?",
@@ -306,6 +348,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:ScavengersReturn.355.Hard Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.355.Hard Ass",
           "context": "",
           "sourceEnglish": "The Humans are all gone.",
@@ -313,6 +356,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "SAY.Dialog:ScavengersReturn.208.Hard Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.208.Hard Ass",
           "context": "",
           "sourceEnglish": "We should forget about them.",
@@ -320,6 +364,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:ScavengersReturn.399.Hard Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.399.Hard Ass",
           "context": "",
           "sourceEnglish": "We can be our own Masters.",
@@ -327,6 +372,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:ScavengersReturn.164.Smart Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.164.Smart Ass",
           "context": "",
           "sourceEnglish": "OUR OWN MASTERS?!",
@@ -334,6 +380,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "SAY.Dialog:ScavengersReturn.401.Smart Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.401.Smart Ass",
           "context": "",
           "sourceEnglish": "Without Humans we'll all—",
@@ -341,6 +388,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:ScavengersReturn.402.Hard Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.402.Hard Ass",
           "context": "",
           "sourceEnglish": "Kick, Sick, and I are risking our health and making sacrifices for the Herd.",
@@ -348,6 +396,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "SAY.Dialog:ScavengersReturn.403.Hard Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.403.Hard Ass",
           "context": "",
           "sourceEnglish": "What are you doing to help to save the Herd?",
@@ -355,6 +404,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:ScavengersReturn.173.Sick Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.173.Sick Ass",
           "context": "",
           "sourceEnglish": "*COUGH*",
@@ -362,6 +412,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "SAY.Dialog:ScavengersReturn.405.Smart Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.405.Smart Ass",
           "context": "",
           "sourceEnglish": "YOU'RE the expert on saving are you?!",
@@ -369,6 +420,7 @@
         },
         {
           "rowNumber": 46,
+          "key": "SAY.Dialog:ScavengersReturn.353.Sick Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.353.Sick Ass",
           "context": "",
           "sourceEnglish": "*COUGH COUGH*",
@@ -376,6 +428,7 @@
         },
         {
           "rowNumber": 47,
+          "key": "SAY.Dialog:ScavengersReturn.407.Smart Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.407.Smart Ass",
           "context": "",
           "sourceEnglish": "You couldn't save Lazy Ass and you couldn't save a single Human—",
@@ -383,6 +436,7 @@
         },
         {
           "rowNumber": 48,
+          "key": "SAY.Dialog:ScavengersReturn.406.Sick Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.406.Sick Ass",
           "context": "",
           "sourceEnglish": "*COUGH COUGH*—",
@@ -390,6 +444,7 @@
         },
         {
           "rowNumber": 49,
+          "key": "SAY.Dialog:ScavengersReturn.383.Sick Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.383.Sick Ass",
           "context": "",
           "sourceEnglish": "...",
@@ -397,6 +452,7 @@
         },
         {
           "rowNumber": 50,
+          "key": "SAY.Dialog:ScavengersReturn.381.Kick Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.381.Kick Ass",
           "context": "",
           "sourceEnglish": "SICK ASS! @#$%&!",
@@ -404,6 +460,7 @@
         },
         {
           "rowNumber": 51,
+          "key": "SAY.Dialog:ScavengersReturn.170.Smart Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.170.Smart Ass",
           "context": "",
           "sourceEnglish": "If we don't leave and find the Humans now, we'll all end up like Sick Ass.",
@@ -411,6 +468,7 @@
         },
         {
           "rowNumber": 52,
+          "key": "SAY.Dialog:ScavengersReturn.447.Smart Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.447.Smart Ass",
           "context": "",
           "sourceEnglish": "We need to get out of here!",
@@ -418,6 +476,7 @@
         },
         {
           "rowNumber": 53,
+          "key": "WRITE.Dialog:ScavengersReturn.438",
           "utterer": "WRITE.Dialog:ScavengersReturn.438",
           "context": "These appear on screen as a cacophony of brays.",
           "sourceEnglish": "Go where?",
@@ -425,6 +484,7 @@
         },
         {
           "rowNumber": 54,
+          "key": "WRITE.Dialog:ScavengersReturn.446",
           "utterer": "WRITE.Dialog:ScavengersReturn.446",
           "context": "These appear on screen as a cacophony of brays.",
           "sourceEnglish": "How far?",
@@ -432,6 +492,7 @@
         },
         {
           "rowNumber": 55,
+          "key": "WRITE.Dialog:ScavengersReturn.445",
           "utterer": "WRITE.Dialog:ScavengersReturn.445",
           "context": "These appear on screen as a cacophony of brays. (Spoken by Thirsty)",
           "sourceEnglish": "Ah heck, I dunno.",
@@ -439,6 +500,7 @@
         },
         {
           "rowNumber": 56,
+          "key": "WRITE.Dialog:ScavengersReturn.444",
           "utterer": "WRITE.Dialog:ScavengersReturn.444",
           "context": "These appear on screen as a cacophony of brays.",
           "sourceEnglish": "I'm hungry.",
@@ -446,6 +508,7 @@
         },
         {
           "rowNumber": 57,
+          "key": "WRITE.Dialog:ScavengersReturn.443",
           "utterer": "WRITE.Dialog:ScavengersReturn.443",
           "context": "These appear on screen as a cacophony of brays.",
           "sourceEnglish": "Golly, but it's warm and dry in here!",
@@ -453,6 +516,7 @@
         },
         {
           "rowNumber": 58,
+          "key": "WRITE.Dialog:ScavengersReturn.442",
           "utterer": "WRITE.Dialog:ScavengersReturn.442",
           "context": "These appear on screen as a cacophony of brays.",
           "sourceEnglish": "@#$%&! We can't leave Sick BEHIND!",
@@ -460,6 +524,7 @@
         },
         {
           "rowNumber": 59,
+          "key": "WRITE.Dialog:ScavengersReturn.441",
           "utterer": "WRITE.Dialog:ScavengersReturn.441",
           "context": "These appear on screen as a cacophony of brays.",
           "sourceEnglish": "Aren't I the Ace Strategist?!",
@@ -467,6 +532,7 @@
         },
         {
           "rowNumber": 60,
+          "key": "SAY.Dialog:ScavengersReturn.176.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.176.Sturdy Ass",
           "context": "Sturdy Ass shouts for everyone to calm down.",
           "sourceEnglish": "COMRADES. Let's not waste our time and energy fighting amongst ourselves.",
@@ -474,6 +540,7 @@
         },
         {
           "rowNumber": 61,
+          "key": "SAY.Dialog:ScavengersReturn.177.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.177.Sturdy Ass",
           "context": "",
           "sourceEnglish": "We have to stick together.",
@@ -481,6 +548,7 @@
         },
         {
           "rowNumber": 62,
+          "key": "SAY.Dialog:ScavengersReturn.387.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.387.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Smart Ass, let's divide the rations and get everyone fed.",
@@ -488,6 +556,7 @@
         },
         {
           "rowNumber": 63,
+          "key": "SAY.Dialog:ScavengersReturn.448.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.448.Sturdy Ass",
           "context": "",
           "sourceEnglish": "{$NewName}, go play with your rocks.",
@@ -495,6 +564,7 @@
         },
         {
           "rowNumber": 64,
+          "key": "SAY.Dialog:ScavengersReturn.80.{$NewName}",
           "utterer": "SAY.Dialog:ScavengersReturn.80.{$NewName}",
           "context": "",
           "sourceEnglish": "Really? Wahoo!",
@@ -502,6 +572,7 @@
         },
         {
           "rowNumber": 65,
+          "key": "SAY.Dialog:ScavengersReturn.111.Sturdy Ass",
           "utterer": "SAY.Dialog:ScavengersReturn.111.Sturdy Ass",
           "context": "Fade out from this scene and into Mine1F.",
           "sourceEnglish": "Yes, just stay away from the evil, soulless, job-taking, child-killing Machines.",
@@ -509,6 +580,7 @@
         },
         {
           "rowNumber": 66,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "",
           "sourceEnglish": "Slow Ass",
@@ -516,6 +588,7 @@
         },
         {
           "rowNumber": 67,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "Thirsty Ass",
@@ -523,6 +596,7 @@
         },
         {
           "rowNumber": 68,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "",
           "sourceEnglish": "Big Ass",
@@ -530,6 +604,7 @@
         },
         {
           "rowNumber": 69,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "",
           "sourceEnglish": "Nice Ass",
@@ -537,6 +612,7 @@
         },
         {
           "rowNumber": 70,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "",
           "sourceEnglish": "Kick Ass",
@@ -544,6 +620,7 @@
         },
         {
           "rowNumber": 71,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "Smart Ass",
@@ -556,6 +633,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:AttemptToExitToOutside.1.Sturdy Ass",
           "utterer": "SAY.Dialog:AttemptToExitToOutside.1.Sturdy Ass",
           "context": "Surdy says this to prevent The Foal from going outside into the rain.",
           "sourceEnglish": "HEY! Where do you think you are going?",
@@ -563,6 +641,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:PostRocks.1.{$NewName}",
           "utterer": "SAY.Dialog:PostRocks.1.{$NewName}",
           "context": "Said after playing Rocks.",
           "sourceEnglish": "I love love LOVE Rocks!",
@@ -570,6 +649,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:PostRocks.8.{$NewName}",
           "utterer": "SAY.Dialog:PostRocks.8.{$NewName}",
           "context": "Variation 1. If the Foal hasn't talked to Nice and Sad.",
           "sourceEnglish": "Maybe Aunty Nice wants to watch me play!",
@@ -577,6 +657,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:PostRocks.16.{$NewName}",
           "utterer": "SAY.Dialog:PostRocks.16.{$NewName}",
           "context": "Variation 2. If the Foal has talked to Nice and Sad.",
           "sourceEnglish": "Maybe Uncle Thirsty wants to watch me play!",
@@ -584,6 +665,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:PongHighScore.1.{$NewName}",
           "utterer": "SAY.Dialog:PongHighScore.1.{$NewName}",
           "context": "Interactable object (wall), the scoreboard.",
           "sourceEnglish": "My high score for Rocks today is {$Number}.",
@@ -591,6 +673,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:AlternativeRock.1.{$NewName}",
           "utterer": "SAY.Dialog:AlternativeRock.1.{$NewName}",
           "context": "The Foal says this to herself when finding one of the Rocks that allow her to play a variation of Rocks.",
           "sourceEnglish": "Cool. This rock looks different! I'm gonna keep it!",
@@ -598,6 +681,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:HardRock.1.{$NewName}",
           "utterer": "SAY.Dialog:HardRock.1.{$NewName}",
           "context": "The Foal says this to herself when finding one of the Rocks that allow her to play a variation of Rocks.",
           "sourceEnglish": "Wow, what a hard rock! I'm gonna keep it.",
@@ -605,6 +689,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:ClassicRock.1.{$NewName}",
           "utterer": "SAY.Dialog:ClassicRock.1.{$NewName}",
           "context": "The Foal says this to herself when finding one of the Rocks that allow her to play a variation of Rocks.",
           "sourceEnglish": "Wow, what a classic rock! This one might be my favourite!",
@@ -612,6 +697,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:MineCartWheel.1.{$NewName}",
           "utterer": "SAY.Dialog:MineCartWheel.1.{$NewName}",
           "context": "The Foal says this to herself when finding one of the Rocks that allow her to play a variation of Rocks. This object is also the wheel for the minecart, needed to break the wall to the next area.",
           "sourceEnglish": "This is a weird looking rock...",
@@ -619,6 +705,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:TooDarkExit.9.{$NewName}",
           "utterer": "SAY.Dialog:TooDarkExit.9.{$NewName}",
           "context": "The Foal says this to herself if she interacts with the wall and she doesn't have the wheel,",
           "sourceEnglish": "It's all boarded up.",
@@ -626,6 +713,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Wheel-NoWheel.4.{$NewName}",
           "utterer": "SAY.Dialog:Wheel-NoWheel.4.{$NewName}",
           "context": "The Foal says this to herself if she interacts with the mine cart and she doesn't have the wheel,",
           "sourceEnglish": "It's missing one of those round things...",
@@ -633,6 +721,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:Wheel-NoWheel.21.{$NewName}",
           "utterer": "SAY.Dialog:Wheel-NoWheel.21.{$NewName}",
           "context": "The Foal says this to herself when she successfully brings the wheel object to the cart. It can now be pushed into the wall.",
           "sourceEnglish": "Cool! It fits perfectly!",
@@ -640,6 +729,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:NiceSad_Public.23.Sad Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.23.Sad Ass",
           "context": "Public conversation with Sad (and Nice).",
           "sourceEnglish": "*whimper*",
@@ -647,6 +737,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:NiceSad_Public.79.{$NewName}",
           "utterer": "SAY.Dialog:NiceSad_Public.79.{$NewName}",
           "context": "",
           "sourceEnglish": "Do you want to watch me play Rocks, Uncle Sad?",
@@ -654,6 +745,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:NiceSad_Public.21.Sad Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.21.Sad Ass",
           "context": "",
           "sourceEnglish": "Sorry... I’m not really in the mood to play.",
@@ -661,6 +753,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:NiceSad_Public.13.{$NewName}",
           "utterer": "SAY.Dialog:NiceSad_Public.13.{$NewName}",
           "context": "",
           "sourceEnglish": "Why not?",
@@ -668,6 +761,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:NiceSad_Public.59.Sad Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.59.Sad Ass",
           "context": "Jump to either line 20 or 23.",
           "sourceEnglish": "*sigh* Because some days your Uncle Sad Ass just doesn't know why he's alive...",
@@ -675,6 +769,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "MENU.Dialog:NiceSad_Public.105",
           "utterer": "MENU.Dialog:NiceSad_Public.105",
           "context": "Dialogue option 1.1.",
           "sourceEnglish": "Tell Uncle Sad Ass why you think you're alive.",
@@ -682,6 +777,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:NiceSad_Public.82.{$NewName}",
           "utterer": "SAY.Dialog:NiceSad_Public.82.{$NewName}",
           "context": "",
           "sourceEnglish": "I think we're alive to live in the present and do what brings us joy.",
@@ -689,6 +785,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:NiceSad_Public.107.{$NewName}",
           "utterer": "SAY.Dialog:NiceSad_Public.107.{$NewName}",
           "context": "Jump to line 25.",
           "sourceEnglish": "If what we're doing doesn't bring us joy, maybe we should do something different!",
@@ -696,6 +793,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "MENU.Dialog:NiceSad_Public.106",
           "utterer": "MENU.Dialog:NiceSad_Public.106",
           "context": "Dialogue option 1.2.",
           "sourceEnglish": "Tell Uncle Sad Ass why Comrade Mother says you're alive.",
@@ -703,6 +801,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:NiceSad_Public.83.{$NewName}",
           "utterer": "SAY.Dialog:NiceSad_Public.83.{$NewName}",
           "context": "Jump to line 25.",
           "sourceEnglish": "Comrade Mother says we're alive to honour the legacy of our Ancestors through hard Work.",
@@ -710,6 +809,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:NiceSad_Public.90.Nice Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.90.Nice Ass",
           "context": "Nice Ass enters the frame.",
           "sourceEnglish": "Is {$NewName} giving you some good advice, Uncle Sad?",
@@ -717,6 +817,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:NiceSad_Public.91.Sad Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.91.Sad Ass",
           "context": "",
           "sourceEnglish": "Yes... She's just like her sister Lazy used to be.",
@@ -724,6 +825,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:NiceSad_Public.92.Sad Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.92.Sad Ass",
           "context": "",
           "sourceEnglish": "Full of wisdom.",
@@ -731,6 +833,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "SAY.Dialog:NiceSad_Public.93.Sad Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.93.Sad Ass",
           "context": "",
           "sourceEnglish": "Lazy always said, \"Boredom is...\"",
@@ -738,6 +841,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:NiceSad_Public.94.Sad Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.94.Sad Ass",
           "context": "",
           "sourceEnglish": "\"is...\" *whimper*",
@@ -745,6 +849,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "SAY.Dialog:NiceSad_Public.100.Nice Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.100.Nice Ass",
           "context": "",
           "sourceEnglish": "Sorry little Comrade, let's give your Uncle some space.",
@@ -752,6 +857,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:NiceSad_Public.108.Nice Ass",
           "utterer": "SAY.Dialog:NiceSad_Public.108.Nice Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "It's not easy for him being back inside the Mine.",
@@ -759,6 +865,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:SadPostPublic.3.Sad Ass",
           "utterer": "SAY.Dialog:SadPostPublic.3.Sad Ass",
           "context": "Repeater for Sad Ass.",
           "sourceEnglish": "*sigh*",
@@ -766,6 +873,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:NicePostPublic.10.Nice Ass",
           "utterer": "SAY.Dialog:NicePostPublic.10.Nice Ass",
           "context": "Repeater 1 for Nice Ass.",
           "sourceEnglish": "Don't worry, it's not your fault.",
@@ -773,6 +881,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:NicePostPublic.22.Nice Ass",
           "utterer": "SAY.Dialog:NicePostPublic.22.Nice Ass",
           "context": "",
           "sourceEnglish": "You just remind him so much of your sister.",
@@ -780,6 +889,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:NicePostPublic.12.Nice Ass",
           "utterer": "SAY.Dialog:NicePostPublic.12.Nice Ass",
           "context": "Repeater 2 for Nice Ass.",
           "sourceEnglish": "Just give him some space.",
@@ -787,6 +897,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.22.{$NewName}",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.22.{$NewName}",
           "context": "Private conversation with Sad and Nice, while Foal is inside the tunnels.",
           "sourceEnglish": "Someone's whispering...",
@@ -794,6 +905,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.26.Nice Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.26.Nice Ass",
           "context": "The camera moves over to Nice Ass.",
           "sourceEnglish": "Comrade—",
@@ -801,6 +913,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.21.Sad Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.21.Sad Ass",
           "context": "",
           "sourceEnglish": "You're going to tell the others I set the Fire, aren't you...",
@@ -808,6 +921,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.70.Nice Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.70.Nice Ass",
           "context": "",
           "sourceEnglish": "Not a chance. I made a gosh darn promise and I intend on keeping it!",
@@ -815,6 +929,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.37.Sad Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.37.Sad Ass",
           "context": "",
           "sourceEnglish": "You say that... but not everything you say is true.",
@@ -822,6 +937,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.36.Sad Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.36.Sad Ass",
           "context": "",
           "sourceEnglish": "That day in the Outhouse... I really thought that things would get better.",
@@ -829,6 +945,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.35.Sad Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.35.Sad Ass",
           "context": "",
           "sourceEnglish": "But they haven't.",
@@ -836,6 +953,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.34.Nice Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.34.Nice Ass",
           "context": "",
           "sourceEnglish": "We all make mistakes!",
@@ -843,6 +961,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.38.Nice Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.38.Nice Ass",
           "context": "Jump to either line 45 or 46.",
           "sourceEnglish": "Hard Ass couldn't save the Humans.",
@@ -850,6 +969,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.43.Nice Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.43.Nice Ass",
           "context": "Branch 2.1. If the stable was set on fire in Ep2. Jump to line 47.",
           "sourceEnglish": "I wasn't fast enough to save the Stable.",
@@ -857,6 +977,7 @@
         },
         {
           "rowNumber": 46,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.48.Nice Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.48.Nice Ass",
           "context": "Branch 2.2. If the stable was saved in Ep2. Jump to line 47.",
           "sourceEnglish": "I only barely saved the Stable.",
@@ -864,6 +985,7 @@
         },
         {
           "rowNumber": 47,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.49.Nice Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.49.Nice Ass",
           "context": "",
           "sourceEnglish": "And Trusty Ass... poor Trusty Ass.",
@@ -871,6 +993,7 @@
         },
         {
           "rowNumber": 48,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.52.Sad Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.52.Sad Ass",
           "context": "",
           "sourceEnglish": "*whimper*",
@@ -878,6 +1001,7 @@
         },
         {
           "rowNumber": 49,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.51.Nice Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.51.Nice Ass",
           "context": "its Job capital?",
           "sourceEnglish": "Maybe there won't be golden statues or dancing or our old Jobs.",
@@ -885,6 +1009,7 @@
         },
         {
           "rowNumber": 50,
+          "key": "SAY.Dialog:TunnelNiceSadPrivate.50.Nice Ass",
           "utterer": "SAY.Dialog:TunnelNiceSadPrivate.50.Nice Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "But golly, at least we have each other!",
@@ -892,6 +1017,7 @@
         },
         {
           "rowNumber": 51,
+          "key": "SAY.Dialog:ThirstyBig_Public.40.Thirsty Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.40.Thirsty Ass",
           "context": "Public conversation with Big and Thirsty.",
           "sourceEnglish": "*oof*—Just sayin' it's a crazy idea!",
@@ -899,6 +1025,7 @@
         },
         {
           "rowNumber": 52,
+          "key": "SAY.Dialog:ThirstyBig_Public.42.Big Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.42.Big Ass",
           "context": "",
           "sourceEnglish": "Oh! Hello little Comrade.",
@@ -906,6 +1033,7 @@
         },
         {
           "rowNumber": 53,
+          "key": "SAY.Dialog:ThirstyBig_Public.73.Big Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.73.Big Ass",
           "context": "Jump to dialogue options, lines 55, 59, or 62.",
           "sourceEnglish": "We're just moving this boulder in case the flood starts to come any closer.",
@@ -913,6 +1041,7 @@
         },
         {
           "rowNumber": 54,
+          "key": "MENU.Dialog:ThirstyBig_Public.92",
           "utterer": "MENU.Dialog:ThirstyBig_Public.92",
           "context": "Dialogue option 3.1.",
           "sourceEnglish": "Do you want to watch me play Rocks?",
@@ -920,6 +1049,7 @@
         },
         {
           "rowNumber": 55,
+          "key": "SAY.Dialog:ThirstyBig_Public.81.{$NewName}",
           "utterer": "SAY.Dialog:ThirstyBig_Public.81.{$NewName}",
           "context": "",
           "sourceEnglish": "Do you want to watch me play Rocks?",
@@ -927,6 +1057,7 @@
         },
         {
           "rowNumber": 56,
+          "key": "SAY.Dialog:ThirstyBig_Public.83.Big Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.83.Big Ass",
           "context": "",
           "sourceEnglish": "Sorry little Comrade, we are weighed down with tasks.",
@@ -934,6 +1065,7 @@
         },
         {
           "rowNumber": 57,
+          "key": "SAY.Dialog:ThirstyBig_Public.82.Thirsty Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.82.Thirsty Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "Now skidaddle! We gotta git rockin'!",
@@ -941,6 +1073,7 @@
         },
         {
           "rowNumber": 58,
+          "key": "MENU.Dialog:ThirstyBig_Public.94",
           "utterer": "MENU.Dialog:ThirstyBig_Public.94",
           "context": "Dialogue option 3.2.",
           "sourceEnglish": "Boulders can't stop water, can they?",
@@ -948,6 +1081,7 @@
         },
         {
           "rowNumber": 59,
+          "key": "SAY.Dialog:ThirstyBig_Public.84.{$NewName}",
           "utterer": "SAY.Dialog:ThirstyBig_Public.84.{$NewName}",
           "context": "",
           "sourceEnglish": "Boulders can't stop water, can they?",
@@ -955,6 +1089,7 @@
         },
         {
           "rowNumber": 60,
+          "key": "SAY.Dialog:ThirstyBig_Public.85.Big Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.85.Big Ass",
           "context": "",
           "sourceEnglish": "You know your rocks little Comrade, but this one's out of your league.",
@@ -962,6 +1097,7 @@
         },
         {
           "rowNumber": 61,
+          "key": "SAY.Dialog:ThirstyBig_Public.86.Thirsty Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.86.Thirsty Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "Now skidaddle! We gotta git rockin'!",
@@ -969,6 +1105,7 @@
         },
         {
           "rowNumber": 62,
+          "key": "MENU.Dialog:ThirstyBig_Public.93",
           "utterer": "MENU.Dialog:ThirstyBig_Public.93",
           "context": "Dialogue option 3.3.",
           "sourceEnglish": "Isn't there a better way to move a boulder?",
@@ -976,6 +1113,7 @@
         },
         {
           "rowNumber": 63,
+          "key": "SAY.Dialog:ThirstyBig_Public.87.{$NewName}",
           "utterer": "SAY.Dialog:ThirstyBig_Public.87.{$NewName}",
           "context": "",
           "sourceEnglish": "Isn't there a better way to move a boulder?",
@@ -983,6 +1121,7 @@
         },
         {
           "rowNumber": 64,
+          "key": "SAY.Dialog:ThirstyBig_Public.88.Big Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.88.Big Ass",
           "context": "",
           "sourceEnglish": "Muscle is the greatest method there is.",
@@ -990,6 +1129,7 @@
         },
         {
           "rowNumber": 65,
+          "key": "SAY.Dialog:ThirstyBig_Public.95.{$NewName}",
           "utterer": "SAY.Dialog:ThirstyBig_Public.95.{$NewName}",
           "context": "",
           "sourceEnglish": "But why don't you make a system that would lift one side up when you put enough weight on the other side?",
@@ -997,6 +1137,7 @@
         },
         {
           "rowNumber": 66,
+          "key": "SAY.Dialog:ThirstyBig_Public.96.{$NewName}",
           "utterer": "SAY.Dialog:ThirstyBig_Public.96.{$NewName}",
           "context": "",
           "sourceEnglish": "You could make it fun too!",
@@ -1004,6 +1145,7 @@
         },
         {
           "rowNumber": 67,
+          "key": "SAY.Dialog:ThirstyBig_Public.89.Thirsty Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.89.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Heck, you tryin' to tell us that we don't know what we're ding dang doin' lil' Comrade?",
@@ -1011,6 +1153,7 @@
         },
         {
           "rowNumber": 68,
+          "key": "SAY.Dialog:ThirstyBig_Public.97.Thirsty Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.97.Thirsty Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "Now git goin'!",
@@ -1018,6 +1161,7 @@
         },
         {
           "rowNumber": 69,
+          "key": "SAY.Dialog:ThirstyBig_Public.15.Thirsty Ass",
           "utterer": "SAY.Dialog:ThirstyBig_Public.15.Thirsty Ass",
           "context": "Repeater for Thirsty Ass.",
           "sourceEnglish": "Go on, git!",
@@ -1025,6 +1169,7 @@
         },
         {
           "rowNumber": 70,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.1.{$NewName}",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.1.{$NewName}",
           "context": "Private conversation with Big and Thirsty, while Foal is inside the tunnels.",
           "sourceEnglish": "What's that heavy breathing?",
@@ -1032,6 +1177,7 @@
         },
         {
           "rowNumber": 71,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.23.Big Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.23.Big Ass",
           "context": "The camera moves over to Thirsty Ass.",
           "sourceEnglish": "*oof!*—You wanted water and you got it, Thirsty!",
@@ -1039,6 +1185,7 @@
         },
         {
           "rowNumber": 72,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.19.Thirsty Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.19.Thirsty Ass",
           "context": "",
           "sourceEnglish": "This ain't—*oof!*—what I wanted!",
@@ -1046,6 +1193,7 @@
         },
         {
           "rowNumber": 73,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.18.Big Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.18.Big Ass",
           "context": "",
           "sourceEnglish": "*oof*—When was the last time any of us got what we wanted?",
@@ -1053,6 +1201,7 @@
         },
         {
           "rowNumber": 74,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.28.Big Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.28.Big Ass",
           "context": "",
           "sourceEnglish": "If the rain doesn't stop or the Humans don't come back—*oof!*—we're going to starve.",
@@ -1060,6 +1209,7 @@
         },
         {
           "rowNumber": 75,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.17.Thirsty Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.17.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Don't tell me yer—*oof!*—thinking about leavin'?",
@@ -1067,6 +1217,7 @@
         },
         {
           "rowNumber": 76,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.32.Big Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.32.Big Ass",
           "context": "",
           "sourceEnglish": "...",
@@ -1074,6 +1225,7 @@
         },
         {
           "rowNumber": 77,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.31.Big Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.31.Big Ass",
           "context": "",
           "sourceEnglish": "Comrade, I want more in life.",
@@ -1081,6 +1233,7 @@
         },
         {
           "rowNumber": 78,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.30.Thirsty Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.30.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Just because yer wantin' more in life don't mean you got to abandon yer home!",
@@ -1088,6 +1241,7 @@
         },
         {
           "rowNumber": 79,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.29.Thirsty Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.29.Thirsty Ass",
           "context": "",
           "sourceEnglish": "I'm dreaming of setting up a darn special place right here in Fannyside where Asses can get a drink and let loose.",
@@ -1095,6 +1249,7 @@
         },
         {
           "rowNumber": 80,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.33.Thirsty Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.33.Thirsty Ass",
           "context": "",
           "sourceEnglish": "It'd have all kinds of tasty water.",
@@ -1102,6 +1257,7 @@
         },
         {
           "rowNumber": 81,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.16.Thirsty Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.16.Thirsty Ass",
           "context": "",
           "sourceEnglish": "Rain water. River water. Pond water.",
@@ -1109,6 +1265,7 @@
         },
         {
           "rowNumber": 82,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.15.Thirsty Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.15.Thirsty Ass",
           "context": "",
           "sourceEnglish": "I’d call it... Bottoms Up!",
@@ -1116,6 +1273,7 @@
         },
         {
           "rowNumber": 83,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.14.Big Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.14.Big Ass",
           "context": "",
           "sourceEnglish": "*oof!*—No Humans?",
@@ -1123,6 +1281,7 @@
         },
         {
           "rowNumber": 84,
+          "key": "SAY.Dialog:TunnelBigThirstyPrivate.21.Thirsty Ass",
           "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.21.Thirsty Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "No... *oof!*—I guess not.",
@@ -1130,6 +1289,7 @@
         },
         {
           "rowNumber": 85,
+          "key": "SAY.Dialog:HardKick_Public.13.{$NewName}",
           "utterer": "SAY.Dialog:HardKick_Public.13.{$NewName}",
           "context": "Public conversation with Sick, Kick, and Hard.",
           "sourceEnglish": "Uncle Kick, Uncle Hard, do you want to watch me play Rocks?",
@@ -1137,6 +1297,7 @@
         },
         {
           "rowNumber": 86,
+          "key": "SAY.Dialog:HardKick_Public.76.Kick Ass",
           "utterer": "SAY.Dialog:HardKick_Public.76.Kick Ass",
           "context": "",
           "sourceEnglish": "Does this LOOK LIKE A TIME FOR GAMES?!",
@@ -1144,6 +1305,7 @@
         },
         {
           "rowNumber": 87,
+          "key": "SAY.Dialog:HardKick_Public.139.Kick Ass",
           "utterer": "SAY.Dialog:HardKick_Public.139.Kick Ass",
           "context": "",
           "sourceEnglish": "Sorry—@#$%&!—Aunty Sick is... pretty messed up right now.",
@@ -1151,6 +1313,7 @@
         },
         {
           "rowNumber": 88,
+          "key": "SAY.Dialog:HardKick_Public.75.{$NewName}",
           "utterer": "SAY.Dialog:HardKick_Public.75.{$NewName}",
           "context": "",
           "sourceEnglish": "What's wrong with her?",
@@ -1158,6 +1321,7 @@
         },
         {
           "rowNumber": 89,
+          "key": "SAY.Dialog:HardKick_Public.101.Hard Ass",
           "utterer": "SAY.Dialog:HardKick_Public.101.Hard Ass",
           "context": "",
           "sourceEnglish": "Our bodies break down in rainy weather.",
@@ -1165,6 +1329,7 @@
         },
         {
           "rowNumber": 90,
+          "key": "SAY.Dialog:HardKick_Public.100.{$NewName}",
           "utterer": "SAY.Dialog:HardKick_Public.100.{$NewName}",
           "context": "",
           "sourceEnglish": "Is that what happened to your ear?",
@@ -1172,6 +1337,7 @@
         },
         {
           "rowNumber": 91,
+          "key": "SAY.Dialog:HardKick_Public.21.Hard Ass",
           "utterer": "SAY.Dialog:HardKick_Public.21.Hard Ass",
           "context": "",
           "sourceEnglish": "No.",
@@ -1179,6 +1345,7 @@
         },
         {
           "rowNumber": 92,
+          "key": "SAY.Dialog:HardKick_Public.103.Hard Ass",
           "utterer": "SAY.Dialog:HardKick_Public.103.Hard Ass",
           "context": "",
           "sourceEnglish": "On the day of the Protest, I was in charge of saving the Humans from the Fire.",
@@ -1186,6 +1353,7 @@
         },
         {
           "rowNumber": 93,
+          "key": "SAY.Dialog:HardKick_Public.102.Hard Ass",
           "utterer": "SAY.Dialog:HardKick_Public.102.Hard Ass",
           "context": "Jump to dialogue options. Line 94 or 96.",
           "sourceEnglish": "I became trapped inside of a burning house.",
@@ -1193,6 +1361,7 @@
         },
         {
           "rowNumber": 94,
+          "key": "MENU.Dialog:HardKick_Public.23",
           "utterer": "MENU.Dialog:HardKick_Public.23",
           "context": "Spoken by the Foal Dialogue option 1.1.",
           "sourceEnglish": "What happened next?",
@@ -1200,6 +1369,7 @@
         },
         {
           "rowNumber": 95,
+          "key": "SAY.Dialog:HardKick_Public.33.{$NewName}",
           "utterer": "SAY.Dialog:HardKick_Public.33.{$NewName}",
           "context": "Jump to line 99, 101, or 103.",
           "sourceEnglish": "What happened next?",
@@ -1207,6 +1377,7 @@
         },
         {
           "rowNumber": 96,
+          "key": "MENU.Dialog:HardKick_Public.26",
           "utterer": "MENU.Dialog:HardKick_Public.26",
           "context": "Spoken by the Foal Dialogue option 1.2.",
           "sourceEnglish": "Oh right. I've heard this story before.",
@@ -1214,6 +1385,7 @@
         },
         {
           "rowNumber": 97,
+          "key": "SAY.Dialog:HardKick_Public.62.{$NewName}",
           "utterer": "SAY.Dialog:HardKick_Public.62.{$NewName}",
           "context": "Jump to line 99, 101, or 103.",
           "sourceEnglish": "Oh right. I've heard this story before.",
@@ -1221,6 +1393,7 @@
         },
         {
           "rowNumber": 98,
+          "key": "MENU.Dialog:HardKick_Public.104",
           "utterer": "MENU.Dialog:HardKick_Public.104",
           "context": "Dialogue option 2.1.",
           "sourceEnglish": "The flames melted my skin and punctured my ear drum.",
@@ -1228,6 +1401,7 @@
         },
         {
           "rowNumber": 99,
+          "key": "SAY.Dialog:HardKick_Public.110.Hard Ass",
           "utterer": "SAY.Dialog:HardKick_Public.110.Hard Ass",
           "context": "Jump to 105.",
           "sourceEnglish": "The flames melted my skin and punctured my ear drum.",
@@ -1235,6 +1409,7 @@
         },
         {
           "rowNumber": 100,
+          "key": "MENU.Dialog:HardKick_Public.106",
           "utterer": "MENU.Dialog:HardKick_Public.106",
           "context": "Dialogue option 2.2.",
           "sourceEnglish": "My ear was caught on a wooden spike. I had to tear it off.",
@@ -1242,6 +1417,7 @@
         },
         {
           "rowNumber": 101,
+          "key": "SAY.Dialog:HardKick_Public.114.Hard Ass",
           "utterer": "SAY.Dialog:HardKick_Public.114.Hard Ass",
           "context": "Jump to 105.",
           "sourceEnglish": "My ear was caught on a wooden spike. I had to tear it off.",
@@ -1249,6 +1425,7 @@
         },
         {
           "rowNumber": 102,
+          "key": "MENU.Dialog:HardKick_Public.105",
           "utterer": "MENU.Dialog:HardKick_Public.105",
           "context": "Dialogue option 2.3.",
           "sourceEnglish": "My ear was crushed, became gangrenous, and fell off four days later.",
@@ -1256,6 +1433,7 @@
         },
         {
           "rowNumber": 103,
+          "key": "SAY.Dialog:HardKick_Public.112.Hard Ass",
           "utterer": "SAY.Dialog:HardKick_Public.112.Hard Ass",
           "context": "Jump to 105.",
           "sourceEnglish": "My ear was crushed, became gangrenous, and fell off four days later.",
@@ -1263,6 +1441,7 @@
         },
         {
           "rowNumber": 104,
+          "key": "SAY.Dialog:HardKick_Public.28.Sick Ass",
           "utterer": "SAY.Dialog:HardKick_Public.28.Sick Ass",
           "context": "All dialogue options lead here.",
           "sourceEnglish": "*COUGH COUGH COUGH*",
@@ -1270,6 +1449,7 @@
         },
         {
           "rowNumber": 105,
+          "key": "SAY.Dialog:HardKick_Public.29.Kick Ass",
           "utterer": "SAY.Dialog:HardKick_Public.29.Kick Ass",
           "context": "",
           "sourceEnglish": "FIGHT IT!—FIGHT IT!",
@@ -1277,6 +1457,7 @@
         },
         {
           "rowNumber": 106,
+          "key": "SAY.Dialog:HardKick_Public.30.Sick Ass",
           "utterer": "SAY.Dialog:HardKick_Public.30.Sick Ass",
           "context": "",
           "sourceEnglish": "*COUGH COUGH COUGH COUGH COUGH*",
@@ -1284,6 +1465,7 @@
         },
         {
           "rowNumber": 107,
+          "key": "SAY.Dialog:HardKick_Public.31.Hard Ass",
           "utterer": "SAY.Dialog:HardKick_Public.31.Hard Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "That's enough. Run along.",
@@ -1291,6 +1473,7 @@
         },
         {
           "rowNumber": 108,
+          "key": "SAY.Dialog:HardKick_Public.11.Hard Ass",
           "utterer": "SAY.Dialog:HardKick_Public.11.Hard Ass",
           "context": "Repeater line for Hard Ass.",
           "sourceEnglish": "I said leave us.",
@@ -1298,6 +1481,7 @@
         },
         {
           "rowNumber": 109,
+          "key": "SAY.Dialog:SickMoans.1.Sick Ass",
           "utterer": "SAY.Dialog:SickMoans.1.Sick Ass",
           "context": "Repeater line for Sick Ass.",
           "sourceEnglish": "*COUGH*",
@@ -1305,6 +1489,7 @@
         },
         {
           "rowNumber": 110,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.1.{$NewName}",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.1.{$NewName}",
           "context": "Private conversation between Hard and Kick, while Foal is inside the tunnels.",
           "sourceEnglish": "It sounds like someone's in pain...",
@@ -1312,6 +1497,7 @@
         },
         {
           "rowNumber": 111,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.11.Sick Ass",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.11.Sick Ass",
           "context": "The camera moves over to Sick Ass.",
           "sourceEnglish": "*COUGH COUGH*",
@@ -1319,6 +1505,7 @@
         },
         {
           "rowNumber": 112,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.21.Kick Ass",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.21.Kick Ass",
           "context": "",
           "sourceEnglish": "Sick! Comrade! COME ON GIRL!",
@@ -1326,6 +1513,7 @@
         },
         {
           "rowNumber": 113,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.13.Kick Ass",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.13.Kick Ass",
           "context": "",
           "sourceEnglish": "Don't even THINK about going where I CAN'T FIND YOU!",
@@ -1333,6 +1521,7 @@
         },
         {
           "rowNumber": 114,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.12.Hard Ass",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.12.Hard Ass",
           "context": "",
           "sourceEnglish": "At ease, Comrade.",
@@ -1340,6 +1529,7 @@
         },
         {
           "rowNumber": 115,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.16.Kick Ass",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.16.Kick Ass",
           "context": "",
           "sourceEnglish": "AT EASE? @#$%&!!!!",
@@ -1347,6 +1537,7 @@
         },
         {
           "rowNumber": 116,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.15.Kick Ass",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.15.Kick Ass",
           "context": "",
           "sourceEnglish": "Staying out in the rain every day was YOUR STUPID idea!",
@@ -1354,6 +1545,7 @@
         },
         {
           "rowNumber": 117,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.10.Kick Ass",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.10.Kick Ass",
           "context": "",
           "sourceEnglish": "And for what, HUH?",
@@ -1361,6 +1553,7 @@
         },
         {
           "rowNumber": 118,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.33.Kick Ass",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.33.Kick Ass",
           "context": "",
           "sourceEnglish": "FOR WHAT?!",
@@ -1368,6 +1561,7 @@
         },
         {
           "rowNumber": 119,
+          "key": "SAY.Dialog:TunnelHardKickPrivate.24.Hard Ass",
           "utterer": "SAY.Dialog:TunnelHardKickPrivate.24.Hard Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "For our future.",
@@ -1375,6 +1569,7 @@
         },
         {
           "rowNumber": 120,
+          "key": "SAY.Dialog:Slow.10.{$NewName}",
           "utterer": "SAY.Dialog:Slow.10.{$NewName}",
           "context": "Conversation with Slow Ass.",
           "sourceEnglish": "Will you watch me play Rocks, Uncle Slow?",
@@ -1382,6 +1577,7 @@
         },
         {
           "rowNumber": 121,
+          "key": "SAY.Dialog:Slow.22.Slow Ass",
           "utterer": "SAY.Dialog:Slow.22.Slow Ass",
           "context": "",
           "sourceEnglish": "I'd love to b-but... I don’t think I can p-play that game of yours.",
@@ -1389,6 +1585,7 @@
         },
         {
           "rowNumber": 122,
+          "key": "SAY.Dialog:Slow.24.Slow Ass",
           "utterer": "SAY.Dialog:Slow.24.Slow Ass",
           "context": "",
           "sourceEnglish": "The rocks go too fast for me.",
@@ -1396,6 +1593,7 @@
         },
         {
           "rowNumber": 123,
+          "key": "SAY.Dialog:Slow.23.Slow Ass",
           "utterer": "SAY.Dialog:Slow.23.Slow Ass",
           "context": "",
           "sourceEnglish": "I b-bet my old friend Trusty would have b-been great at it...",
@@ -1403,6 +1601,7 @@
         },
         {
           "rowNumber": 124,
+          "key": "SAY.Dialog:Slow.25.Slow Ass",
           "utterer": "SAY.Dialog:Slow.25.Slow Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "She could do anything.",
@@ -1410,6 +1609,7 @@
         },
         {
           "rowNumber": 125,
+          "key": "SAY.Dialog:Slow.12.Slow Ass",
           "utterer": "SAY.Dialog:Slow.12.Slow Ass",
           "context": "Repeater line for Slow Ass.",
           "sourceEnglish": "Trusty was the kind of leader who made you b-believe in yourself.",
@@ -1417,6 +1617,7 @@
         },
         {
           "rowNumber": 126,
+          "key": "SAY.Dialog:SturdySmart_Public.19.Smart Ass",
           "utterer": "SAY.Dialog:SturdySmart_Public.19.Smart Ass",
           "context": "Public conversation with Sturdy and Smart.",
           "sourceEnglish": "Hey little Comrade, Bad Ass is letting his ration go to waste again. You should take it.",
@@ -1424,6 +1625,7 @@
         },
         {
           "rowNumber": 127,
+          "key": "SAY.Dialog:SturdySmart_Public.18.{$NewName}",
           "utterer": "SAY.Dialog:SturdySmart_Public.18.{$NewName}",
           "context": "",
           "sourceEnglish": "Really?",
@@ -1431,6 +1633,7 @@
         },
         {
           "rowNumber": 128,
+          "key": "SAY.Dialog:SturdySmart_Public.23.Sturdy Ass",
           "utterer": "SAY.Dialog:SturdySmart_Public.23.Sturdy Ass",
           "context": "",
           "sourceEnglish": "By the Gods! Smart Ass, you know {$NewName} can't digest that kind of food yet.",
@@ -1438,6 +1641,7 @@
         },
         {
           "rowNumber": 129,
+          "key": "SAY.Dialog:SturdySmart_Public.68.Smart Ass",
           "utterer": "SAY.Dialog:SturdySmart_Public.68.Smart Ass",
           "context": "",
           "sourceEnglish": "Then I'll eat it.",
@@ -1445,6 +1649,7 @@
         },
         {
           "rowNumber": 130,
+          "key": "SAY.Dialog:SturdySmart_Public.15.Sturdy Ass",
           "utterer": "SAY.Dialog:SturdySmart_Public.15.Sturdy Ass",
           "context": "",
           "sourceEnglish": "No you won't. It's Bad Ass's.",
@@ -1452,6 +1657,7 @@
         },
         {
           "rowNumber": 131,
+          "key": "SAY.Dialog:SturdySmart_Public.61.Smart Ass",
           "utterer": "SAY.Dialog:SturdySmart_Public.61.Smart Ass",
           "context": "",
           "sourceEnglish": "What a waste!",
@@ -1459,6 +1665,7 @@
         },
         {
           "rowNumber": 132,
+          "key": "SAY.Dialog:SturdySmart_Public.69.Smart Ass",
           "utterer": "SAY.Dialog:SturdySmart_Public.69.Smart Ass",
           "context": "",
           "sourceEnglish": "He's never around and his rations just go mouldy!",
@@ -1466,6 +1673,7 @@
         },
         {
           "rowNumber": 133,
+          "key": "SAY.Dialog:SturdySmart_Public.20.Sturdy Ass",
           "utterer": "SAY.Dialog:SturdySmart_Public.20.Sturdy Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "Run along child. I need to speak with Aunty Smart about something important.",
@@ -1473,6 +1681,7 @@
         },
         {
           "rowNumber": 134,
+          "key": "SAY.Dialog:SturdySmart_Public.11.Sturdy Ass",
           "utterer": "SAY.Dialog:SturdySmart_Public.11.Sturdy Ass",
           "context": "Repeater line for Sturdy Ass.",
           "sourceEnglish": "Go play with your rocks.",
@@ -1480,6 +1689,7 @@
         },
         {
           "rowNumber": 135,
+          "key": "SAY.Dialog:TunnelSturdySmartPrivate.23.{$NewName}",
           "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.23.{$NewName}",
           "context": "Private conversation between Sturdy and Smart, while Foal is inside the tunnels.",
           "sourceEnglish": "Are Comrade Mother and Aunty Smart arguing?",
@@ -1487,6 +1697,7 @@
         },
         {
           "rowNumber": 136,
+          "key": "SAY.Dialog:TunnelSturdySmartPrivate.110.Smart Ass",
           "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.110.Smart Ass",
           "context": "The camera moves over to Smart Ass.",
           "sourceEnglish": "If the Humans don't return to Fannyside, we'll never get our Jobs back...",
@@ -1494,6 +1705,7 @@
         },
         {
           "rowNumber": 137,
+          "key": "SAY.Dialog:TunnelSturdySmartPrivate.18.Sturdy Ass",
           "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.18.Sturdy Ass",
           "context": "",
           "sourceEnglish": "I understand, Comrade.",
@@ -1501,6 +1713,7 @@
         },
         {
           "rowNumber": 138,
+          "key": "SAY.Dialog:TunnelSturdySmartPrivate.109.Sturdy Ass",
           "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.109.Sturdy Ass",
           "context": "",
           "sourceEnglish": "But Hard Ass says he hasn't seen any Humans for weeks.",
@@ -1508,6 +1721,7 @@
         },
         {
           "rowNumber": 139,
+          "key": "SAY.Dialog:TunnelSturdySmartPrivate.14.Smart Ass",
           "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.14.Smart Ass",
           "context": "",
           "sourceEnglish": "Then we should go and find them!",
@@ -1515,6 +1729,7 @@
         },
         {
           "rowNumber": 140,
+          "key": "SAY.Dialog:TunnelSturdySmartPrivate.21.Sturdy Ass",
           "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.21.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Comrade, it's not safe outside.",
@@ -1522,6 +1737,7 @@
         },
         {
           "rowNumber": 141,
+          "key": "SAY.Dialog:TunnelSturdySmartPrivate.25.Sturdy Ass",
           "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.25.Sturdy Ass",
           "context": "",
           "sourceEnglish": "We can't go losing our Ace Strategist in a flood or a mudslide.",
@@ -1529,6 +1745,7 @@
         },
         {
           "rowNumber": 142,
+          "key": "SAY.Dialog:TunnelSturdySmartPrivate.1.Smart Ass",
           "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.1.Smart Ass",
           "context": "",
           "sourceEnglish": "You're damn right you can't...",
@@ -1536,6 +1753,7 @@
         },
         {
           "rowNumber": 143,
+          "key": "SAY.Dialog:TunnelSturdySmartPrivate.111.Sturdy Ass",
           "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.111.Sturdy Ass",
           "context": "End of conversation. Player can move around again.",
           "sourceEnglish": "The Gods won't leave us behind.",
@@ -1543,6 +1761,7 @@
         },
         {
           "rowNumber": 144,
+          "key": "WRITE.Dialog:BulletinLocalizer.1",
           "utterer": "WRITE.Dialog:BulletinLocalizer.1",
           "context": "On the Mine's Bulletin Board",
           "sourceEnglish": "IN CASE OF EMERGENCY, PLEASE CALL",
@@ -1550,6 +1769,7 @@
         },
         {
           "rowNumber": 145,
+          "key": "WRITE.Dialog:BulletinLocalizer.2",
           "utterer": "WRITE.Dialog:BulletinLocalizer.2",
           "context": "On the Mine's Bulletin Board",
           "sourceEnglish": "COAL OR NOT COAL?",
@@ -1557,6 +1777,7 @@
         },
         {
           "rowNumber": 146,
+          "key": "WRITE.Dialog:BulletinLocalizer.3",
           "utterer": "WRITE.Dialog:BulletinLocalizer.3",
           "context": "On the Mine's Bulletin Board",
           "sourceEnglish": "MISSING",
@@ -1564,6 +1785,7 @@
         },
         {
           "rowNumber": 147,
+          "key": "SAY.Dialog:MineCartRunsAway.9.{$NewName}",
           "utterer": "SAY.Dialog:MineCartRunsAway.9.{$NewName}",
           "context": "Dialogue at end of scene.",
           "sourceEnglish": "Whoa.",
@@ -1571,6 +1793,7 @@
         },
         {
           "rowNumber": 148,
+          "key": "SAY.Dialog:EnableLight.1.{$NewName}",
           "utterer": "SAY.Dialog:EnableLight.1.{$NewName}",
           "context": "",
           "sourceEnglish": "Huh?",
@@ -1578,6 +1801,7 @@
         },
         {
           "rowNumber": 149,
+          "key": "SAY.Dialog:EnableLight.7.{$NewName}",
           "utterer": "SAY.Dialog:EnableLight.7.{$NewName}",
           "context": "Player can now exit to the next area.",
           "sourceEnglish": "Hey a light? That's never happened before...",
@@ -1590,6 +1814,7 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.DialogLocalizer.1",
           "utterer": "WRITE.DialogLocalizer.1",
           "context": "Game Version 1: Pong with rocks in the middle.",
           "sourceEnglish": "Soft",
@@ -1597,6 +1822,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "WRITE.DialogLocalizer.5",
           "utterer": "WRITE.DialogLocalizer.5",
           "context": "Game Version 2: Pong with rocks in the middle + the rocks are differently placed.",
           "sourceEnglish": "Alternative",
@@ -1604,6 +1830,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.DialogLocalizer.4",
           "utterer": "WRITE.DialogLocalizer.4",
           "context": "Game Version 3: Pong with rocks in the middle + the game moves very fast.",
           "sourceEnglish": "Hard",
@@ -1611,6 +1838,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "WRITE.DialogLocalizer.2",
           "utterer": "WRITE.DialogLocalizer.2",
           "context": "Game Version 4: Pong without the rocks in the middle.",
           "sourceEnglish": "Classic",
@@ -1618,6 +1846,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "WRITE.DialogLocalizer.3",
           "utterer": "WRITE.DialogLocalizer.3",
           "context": "Game Version 5: Pong but slow and with no music.",
           "sourceEnglish": "Wheel",
@@ -1630,6 +1859,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Lift100.1.{$NewName}",
           "utterer": "SAY.Dialog:Lift100.1.{$NewName}",
           "context": "The Foal attempts to touch the Elevator.",
           "sourceEnglish": "Comrade Mother told me not to touch the Machines...",
@@ -1637,6 +1867,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Lift200.1.{$NewName}",
           "utterer": "SAY.Dialog:Lift200.1.{$NewName}",
           "context": "The Foal attempts to touch the Elevator.",
           "sourceEnglish": "I shouldn't touch the Machines... but what does it do?",
@@ -1644,6 +1875,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:I don't want to go back yet.1.{$NewName}",
           "utterer": "SAY.Dialog:I don't want to go back yet.1.{$NewName}",
           "context": "The Foal attempts to walk back to the Mine 1F.",
           "sourceEnglish": "Nah, I don't want to go back yet.",
@@ -1651,6 +1883,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "WRITE.Dialog:LogLocalizer.1",
           "utterer": "WRITE.Dialog:LogLocalizer.1",
           "context": "Butte's Log (Journal Entry) With founding year",
           "sourceEnglish": "Hugh G. Butte\\nButte Industry\\nCoal Mines\\n(Est. 1867)\\n\\nIf found, please return to\\n455 Esmasses,\\nButte Mines #2",
@@ -1658,6 +1891,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "WRITE.Dialog:LogLocalizer.2",
           "utterer": "WRITE.Dialog:LogLocalizer.2",
           "context": "Butte's Log (Journal Entry)",
           "sourceEnglish": "June 27th\\nThese are dire times for the mining business. I had to lay off more workers today and we're running out of money. Mme. Derriere made another offer to buy my donkeys, but I just can't bring myself to sell them. The only thing I can depend on are my donkeys!\\n\\nEverybody is crazy for Green Energy these days. Nobody cares for coal anymore.\\n\\nJune 28th\\nEven if I had more money, there's no one to hire. All the youth are leaving for Mecha City to find better paid work at Mme. Derriere's Factory. It's going to be another difficult winter.",
@@ -1665,6 +1899,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "WRITE.Dialog:LogLocalizer.3",
           "utterer": "WRITE.Dialog:LogLocalizer.3",
           "context": "Butte's Log (Journal Entry)",
           "sourceEnglish": "July 3rd\\nWe can barely afford new equipment. Our government grant was rejected today too. They're not even offering feedback! If they don't want us around, I don't know why the government doesn't just do the humane thing and order us to close down.\\n\\nJuly 13th\\nJenny joked that we should turn the Mine into a tourist attraction. Once the new highway is finished more people from the city could come and make a day of it.\\n\\nMaybe she has a point? But it would break my heart.",
@@ -1672,6 +1907,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "WRITE.Dialog:LogLocalizer.4",
           "utterer": "WRITE.Dialog:LogLocalizer.4",
           "context": "Butte's Log (Journal Entry)",
           "sourceEnglish": "July 15th\\n\\nINVOICE\\nEBZ75 Tunnel Boring Machine — $56,000 USD\\n\\nHe Bei Zhong Xuan Construction Machinery Co., Ltd.\\nRoom.2809, Building2, East international Plaza, No.98\\nThe Yellow river Rd, Hi-Tech Zone\\nShijiazhuang, Hebei, China",
@@ -1679,6 +1915,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "WRITE.Dialog:LogLocalizer.6",
           "utterer": "WRITE.Dialog:LogLocalizer.6",
           "context": "Butte's Log (Journal Entry)",
           "sourceEnglish": "August 17th\\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\\n\\nI'm going to widen the tunnels and put tracks down. Then I'll sell my donkeys and buy mine carts.\\n\\nTonight, I'm going to celebrate with that bottle of wine I've been saving for an occasion just like this!\\n\\nI'm finally ready to win Sandy back. Maybe now she will respect me, and come home again.",
@@ -1686,6 +1923,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "WRITE.Dialog:LogLocalizer.5",
           "utterer": "WRITE.Dialog:LogLocalizer.5",
           "context": "Butte's Log (Journal Entry)",
           "sourceEnglish": "August 17th\\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\\n\\nI'm going to widen the tunnels and put tracks down. Then I'll sell my donkeys and buy mine carts.\\n\\nTonight, I'm going to celebrate with that bottle of wine I've been saving for an occasion just like this!\\n\\nI'm finally ready to win Sandy back. Maybe now she will respect me, and come home again.",
@@ -1693,6 +1931,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "FANNYSIDE TIMES",
@@ -1700,6 +1939,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "Boring Machine Blunder Begets Backlash for Big Boss Butte",
@@ -1707,6 +1947,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "The town is still reeling from the tragedy at Butte Mines on Thursday. After several failed rescue operations, a catastrophic cave-in caused by a Boring Machine claimed the life of Cole Butte (21), a local mine worker, robotics wunderkind, and the darling son of the Mine Boss, Hugh G. Butte. Three miners were air-lifted to the nearby Mecha General Hospital with life threatening injuries. One donkey died and remains stuck in the cave. Cole's body was never found.",
@@ -1714,6 +1955,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "An interview with a former worker reveals the company knew about the compounding danger of digging in that section of the mine, but the pursuits of profits pushed the company to ignore early warnings and take shortcuts with their new machinery. But one has to ask, has Boss Butte finally hit rock bottom?\\n\\nThis story is continued on Page 14.",
@@ -1721,6 +1963,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "\"I HOPE MY ART MAKES PEOPLE HAPPY\"",
@@ -1728,6 +1971,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "Child artist Joey Kulan charms the pants off the judges and wins the Bumpkin regional drawing competition for youth 12 and under. His work will be on display at the Mecha City Gallery until the end of the month. His Grandmother is so proud.",
@@ -1735,6 +1979,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "YOUR BEAUTY\\nIS OUR DUTY",
@@ -1742,6 +1987,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "WRITE.Dialog:Localizer.11",
           "utterer": "WRITE.Dialog:Localizer.11",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "ASPIRE TO MORE",
@@ -1749,6 +1995,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "Fannyside Times (Newspaper Entry) Cirus Advertisement",
           "sourceEnglish": "Family discounts available NOW!",
@@ -1756,6 +2003,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "WRITE.Dialog:Localizer.9",
           "utterer": "WRITE.Dialog:Localizer.9",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "JOB POSTINGS",
@@ -1763,6 +2011,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "WRITE.Dialog:Localizer.12",
           "utterer": "WRITE.Dialog:Localizer.12",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "Jobs for everyone at Derriere's!",
@@ -1770,6 +2019,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "WRITE.Dialog:Localizer.10",
           "utterer": "WRITE.Dialog:Localizer.10",
           "context": "Fannyside Times (Newspaper Entry)",
           "sourceEnglish": "***DRIVERS NEEDED***\\nReliable and good sense of direction\\nCan be discrete\\nCan work weekends\\nCan lift 50+ lbs\\nComfortable with animals",
@@ -1777,6 +2027,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:Boring.1.{$NewName}",
           "utterer": "SAY.Dialog:Boring.1.{$NewName}",
           "context": "The Foal says this after closing the newpaper.",
           "sourceEnglish": "Booooorrrrrring!",
@@ -1784,6 +2035,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:Boring.6.{$NewName}",
           "utterer": "SAY.Dialog:Boring.6.{$NewName}",
           "context": "The floor collapses and the Foal falls through to Lazy's Grave.",
           "sourceEnglish": "AH!",
@@ -1796,6 +2048,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:MeetingLazy.1.???",
           "utterer": "SAY.Dialog:MeetingLazy.1.???",
           "context": "The Foal finds herself in a new area of the Mine. A mysterious voice calls out.",
           "sourceEnglish": "Hi.",
@@ -1803,6 +2056,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:MeetingLazy.30.{$NewName}",
           "utterer": "SAY.Dialog:MeetingLazy.30.{$NewName}",
           "context": "",
           "sourceEnglish": "Who's there?",
@@ -1810,6 +2064,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:MeetingLazy.32.Lazy Ass",
           "utterer": "SAY.Dialog:MeetingLazy.32.Lazy Ass",
           "context": "Fade in to reveal the spirit of Lazy Ass",
           "sourceEnglish": "I'm Lazy.",
@@ -1817,6 +2072,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:MeetingLazy.33.{$NewName}",
           "utterer": "SAY.Dialog:MeetingLazy.33.{$NewName}",
           "context": "",
           "sourceEnglish": "LAZY?! I've heard so much about you!",
@@ -1824,6 +2080,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:MeetingLazy.55.{$NewName}",
           "utterer": "SAY.Dialog:MeetingLazy.55.{$NewName}",
           "context": "(I'm your sister)",
           "sourceEnglish": "I’m your... wait...",
@@ -1831,6 +2088,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:MeetingLazy.56.{$NewName}",
           "utterer": "SAY.Dialog:MeetingLazy.56.{$NewName}",
           "context": "(Aren't you dead?)",
           "sourceEnglish": "Aren't you...",
@@ -1838,6 +2096,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:MeetingLazy.36.Lazy Ass",
           "utterer": "SAY.Dialog:MeetingLazy.36.Lazy Ass",
           "context": "",
           "sourceEnglish": "Just hanging out.",
@@ -1845,6 +2104,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:MeetingLazy.57.Lazy Ass",
           "utterer": "SAY.Dialog:MeetingLazy.57.Lazy Ass",
           "context": "",
           "sourceEnglish": "Look around if you want. Knock yourself out.",
@@ -1852,6 +2112,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:MeetingLazy.35.{$NewName}",
           "utterer": "SAY.Dialog:MeetingLazy.35.{$NewName}",
           "context": "",
           "sourceEnglish": "Wait up!",
@@ -1859,6 +2120,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:MeetingLazy.58.{$NewName}",
           "utterer": "SAY.Dialog:MeetingLazy.58.{$NewName}",
           "context": "Lazy floats away and the Foal chases after her.",
           "sourceEnglish": "I’m your sister!",
@@ -1866,6 +2128,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:ExamineBones.1.{$NewName}",
           "utterer": "SAY.Dialog:ExamineBones.1.{$NewName}",
           "context": "The Foal comes across a pile of bones.",
           "sourceEnglish": "Are these... bones?",
@@ -1873,6 +2136,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:ExamineBones.30.Lazy Ass",
           "utterer": "SAY.Dialog:ExamineBones.30.Lazy Ass",
           "context": "Lazy floats back into frame.",
           "sourceEnglish": "Oh you've found the rock that crushed my head.",
@@ -1880,6 +2144,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:ExamineBones.38.{$NewName}",
           "utterer": "SAY.Dialog:ExamineBones.38.{$NewName}",
           "context": "",
           "sourceEnglish": "Woah. Did it hurt?",
@@ -1887,6 +2152,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:ExamineBones.53.Lazy Ass",
           "utterer": "SAY.Dialog:ExamineBones.53.Lazy Ass",
           "context": "",
           "sourceEnglish": "I guess so. Don't really remember much from before that.",
@@ -1894,6 +2160,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:ExamineBones.51.{$NewName}",
           "utterer": "SAY.Dialog:ExamineBones.51.{$NewName}",
           "context": "",
           "sourceEnglish": "Why didn't your Ass Soul go to the Astral Plane?",
@@ -1901,6 +2168,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:ExamineBones.88.{$NewName}",
           "utterer": "SAY.Dialog:ExamineBones.88.{$NewName}",
           "context": "",
           "sourceEnglish": "Comrade Mother told me that's where we all go when we die.",
@@ -1908,6 +2176,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:ExamineBones.77.Lazy Ass",
           "utterer": "SAY.Dialog:ExamineBones.77.Lazy Ass",
           "context": "",
           "sourceEnglish": "There was no Ass around to sing for me. There was only the Boss's son.",
@@ -1915,6 +2184,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:ExamineBones.52.Lazy Ass",
           "utterer": "SAY.Dialog:ExamineBones.52.Lazy Ass",
           "context": "",
           "sourceEnglish": "I think I tried to ascend myself... but I guess that failed.",
@@ -1922,6 +2192,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:ExamineBones.87.{$NewName}",
           "utterer": "SAY.Dialog:ExamineBones.87.{$NewName}",
           "context": "",
           "sourceEnglish": "I could try to sing the Song of Ascension for you now!",
@@ -1929,6 +2200,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:ExamineBones.44.Lazy Ass",
           "utterer": "SAY.Dialog:ExamineBones.44.Lazy Ass",
           "context": "",
           "sourceEnglish": "Nah, it's too late.",
@@ -1936,6 +2208,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:ExamineBones.43.Lazy Ass",
           "utterer": "SAY.Dialog:ExamineBones.43.Lazy Ass",
           "context": "",
           "sourceEnglish": "But hey! Good news is: there's no work here.",
@@ -1943,6 +2216,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:ExamineBones.42.Lazy Ass",
           "utterer": "SAY.Dialog:ExamineBones.42.Lazy Ass",
           "context": "",
           "sourceEnglish": "Of course, bad news is there's also no way out.",
@@ -1950,6 +2224,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:ExamineBones.41.{$NewName}",
           "utterer": "SAY.Dialog:ExamineBones.41.{$NewName}",
           "context": "",
           "sourceEnglish": "There's no way out?! I don't want to die here!",
@@ -1957,6 +2232,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:ExamineBones.57.Lazy Ass",
           "utterer": "SAY.Dialog:ExamineBones.57.Lazy Ass",
           "context": "Lazy floats away again.",
           "sourceEnglish": "Just get comfortable. \"Boredom is Freedom\", ya know?",
@@ -1964,6 +2240,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:ExamineBones.82.{$NewName}",
           "utterer": "SAY.Dialog:ExamineBones.82.{$NewName}",
           "context": "The Foal chases after her.",
           "sourceEnglish": "Wha-wait! Come back!!",
@@ -1971,6 +2248,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "SAY.Dialog:Hat.1.Lazy Ass",
           "utterer": "SAY.Dialog:Hat.1.Lazy Ass",
           "context": "The Foal finds a hard helmet on a rock.",
           "sourceEnglish": "Hey, nice look.",
@@ -1978,6 +2256,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:Hat.30.Lazy Ass",
           "utterer": "SAY.Dialog:Hat.30.Lazy Ass",
           "context": "Lazy floats by and says this before flying off again. The Foal can now headbutt and break rocks.",
           "sourceEnglish": "Ya know, if I had worn that helmet, maybe the rock would've exploded instead of my skull.",
@@ -1985,6 +2264,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "SAY.Dialog:Leaving.1.Lazy Ass",
           "utterer": "SAY.Dialog:Leaving.1.Lazy Ass",
           "context": "The Foal breaks the boulder to the exit of Lazy's Grave. Lazy's floats into frame.",
           "sourceEnglish": "Hey! You found a way out. Cool.",
@@ -1992,6 +2272,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:Leaving.82.Lazy Ass",
           "utterer": "SAY.Dialog:Leaving.82.Lazy Ass",
           "context": "",
           "sourceEnglish": "Heads up, I won't remember you, if you come back.",
@@ -1999,6 +2280,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:Leaving.81.Lazy Ass",
           "utterer": "SAY.Dialog:Leaving.81.Lazy Ass",
           "context": "",
           "sourceEnglish": "My memory doesn't store stuff like it used to.",
@@ -2006,6 +2288,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:Leaving.80.Lazy Ass",
           "utterer": "SAY.Dialog:Leaving.80.Lazy Ass",
           "context": "",
           "sourceEnglish": "I don't even remember your name.",
@@ -2013,6 +2296,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:Leaving.84.Lazy Ass",
           "utterer": "SAY.Dialog:Leaving.84.Lazy Ass",
           "context": "To dialogue options (line 35, 38, or 41)",
           "sourceEnglish": "Did we have a good time hanging out?",
@@ -2020,6 +2304,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "MENU.Dialog:Leaving.37",
           "utterer": "MENU.Dialog:Leaving.37",
           "context": "Dialogue 1.1.",
           "sourceEnglish": "It was really nice to finally meet you, sister.",
@@ -2027,6 +2312,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:Leaving.91.{$NewName}",
           "utterer": "SAY.Dialog:Leaving.91.{$NewName}",
           "context": "",
           "sourceEnglish": "It was really nice to finally meet you, sister.",
@@ -2034,6 +2320,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:Leaving.94.Lazy Ass",
           "utterer": "SAY.Dialog:Leaving.94.Lazy Ass",
           "context": "Lazy Ass floats away.",
           "sourceEnglish": "Sister? Ha, sure. Peace out.",
@@ -2041,6 +2328,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "MENU.Dialog:Leaving.39",
           "utterer": "MENU.Dialog:Leaving.39",
           "context": "Dialogue 1.2.",
           "sourceEnglish": "What do you mean \"Boredom is Freedom\"?",
@@ -2048,6 +2336,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:Leaving.96.{$NewName}",
           "utterer": "SAY.Dialog:Leaving.96.{$NewName}",
           "context": "",
           "sourceEnglish": "What do you mean \" Boredom is Freedom\"?",
@@ -2055,6 +2344,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:Leaving.92.Lazy Ass",
           "utterer": "SAY.Dialog:Leaving.92.Lazy Ass",
           "context": "Lazy Ass floats away.",
           "sourceEnglish": "I dunno. I saw it on a sign once.",
@@ -2062,6 +2352,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "MENU.Dialog:Leaving.38",
           "utterer": "MENU.Dialog:Leaving.38",
           "context": "Dialogue 1.3.",
           "sourceEnglish": "No. It was {$Number} seconds of my life I'll never get back.",
@@ -2069,6 +2360,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:Leaving.95.{$NewName}",
           "utterer": "SAY.Dialog:Leaving.95.{$NewName}",
           "context": "",
           "sourceEnglish": "No. It was {$Number} seconds of my life I'll never get back.",
@@ -2076,6 +2368,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "SAY.Dialog:Leaving.93.Lazy Ass",
           "utterer": "SAY.Dialog:Leaving.93.Lazy Ass",
           "context": "Lazy Ass floats away.",
           "sourceEnglish": "That's cold.",
@@ -2083,6 +2376,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:LazyRepeater.1.Lazy Ass",
           "utterer": "SAY.Dialog:LazyRepeater.1.Lazy Ass",
           "context": "Repeater line.",
           "sourceEnglish": "Hi, I'm Lazy! Cool hat.",
@@ -2090,6 +2384,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "SAY.SecretThing.9.Lazy Ass",
           "utterer": "SAY.SecretThing.9.Lazy Ass",
           "context": "",
           "sourceEnglish": "Thank you little one.",
@@ -2097,6 +2392,7 @@
         },
         {
           "rowNumber": 46,
+          "key": "SAY.SecretThing.8.Lazy Ass",
           "utterer": "SAY.SecretThing.8.Lazy Ass",
           "context": "",
           "sourceEnglish": "My dear Sad Ass...",
@@ -2104,6 +2400,7 @@
         },
         {
           "rowNumber": 47,
+          "key": "SAY.SecretThing.7.Lazy Ass",
           "utterer": "SAY.SecretThing.7.Lazy Ass",
           "context": "",
           "sourceEnglish": "It's all coming back to me now.",
@@ -2111,6 +2408,7 @@
         },
         {
           "rowNumber": 48,
+          "key": "SAY.SecretThing.6.Lazy Ass",
           "utterer": "SAY.SecretThing.6.Lazy Ass",
           "context": "",
           "sourceEnglish": "But that smell... it reminds me of him.",
@@ -2118,6 +2416,7 @@
         },
         {
           "rowNumber": 49,
+          "key": "SAY.SecretThing.3.Lazy Ass",
           "utterer": "SAY.SecretThing.3.Lazy Ass",
           "context": "",
           "sourceEnglish": "You see, my memory hasn't been working very well.",
@@ -2125,6 +2424,7 @@
         },
         {
           "rowNumber": 50,
+          "key": "SAY.SecretThing.2.Lazy Ass",
           "utterer": "SAY.SecretThing.2.Lazy Ass",
           "context": "",
           "sourceEnglish": "I think I've been looking for that for a long time.",
@@ -2132,6 +2432,7 @@
         },
         {
           "rowNumber": 51,
+          "key": "SAY.SecretThing.14.Lazy Ass",
           "utterer": "SAY.SecretThing.14.Lazy Ass",
           "context": "",
           "sourceEnglish": "To be honest, I don't even remember your name.",
@@ -2144,6 +2445,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:LogLocalizer.1",
           "utterer": "WRITE.Dialog:LogLocalizer.1",
           "context": "Butte's Log (Journal Entry)",
           "sourceEnglish": "May 15th\\nI've started attending an AA group. They're helping me. It's really nice to have a lot of people behind you, giving you advice, you know? I think I've needed this.\\n\\nMay 27th\\nA whole week sober. I think I can give up beer, but a little bit of wine once a week shouldn't hurt, right?\\n\\nToday I sold my depressed donkey to Fannyside Farm. It's been useless ever since its mate died in the cave in.",
@@ -2151,6 +2453,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:LogLocalizer.2",
           "utterer": "WRITE.Dialog:LogLocalizer.2",
           "context": "Butte's Log (Journal Entry)",
           "sourceEnglish": "July 24th\\nButte Mine is officially for sale. I'm praying that someone from Mecha City will step up and buy it. I always imagined that Cole would take my place, but...\\n\\nThis place has to survive, somehow, but it's hard to let go of what you love.",
@@ -2158,6 +2461,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:FamilyPhoto.1.{$NewName}",
           "utterer": "SAY.Dialog:FamilyPhoto.1.{$NewName}",
           "context": "This dialogue is said as the Foal looks at a picture of the Mine Asses.",
           "sourceEnglish": "Everyone looks so serious.",
@@ -2165,6 +2469,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:StartMachine.3.{$NewName}",
           "utterer": "SAY.Dialog:StartMachine.3.{$NewName}",
           "context": "The Foal headbutts and turns the Boring Machine on.",
           "sourceEnglish": "Cool!",
@@ -2172,6 +2477,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:StartMachine.5.{$NewName}",
           "utterer": "SAY.Dialog:StartMachine.5.{$NewName}",
           "context": "The Boring Machine starts moving and drilling through walls.",
           "sourceEnglish": "Uh oh!",
@@ -2184,6 +2490,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:LogLocalizer.1",
           "utterer": "WRITE.Dialog:LogLocalizer.1",
           "context": "Butte's Log (Journal Entry)",
           "sourceEnglish": "August 9th\\nThe whole mining operation is stalled.\\n\\nAnd the drought is starting to take a toll on all of us.\\n\\nThe last of my workers are revolting against me. They know I can't pay them.\\n\\nThere are no buyers for the Mine.\\n\\nHelp is not coming. I'm all alone.\\n\\nNo one has any use for coal anymore... Maybe someone out there will buy my donkeys?",
@@ -2191,6 +2498,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:ElevatorSpotted.2.{$NewName}",
           "utterer": "SAY.Dialog:ElevatorSpotted.2.{$NewName}",
           "context": "The Foal spots the Elevator from across a chasm.",
           "sourceEnglish": "Hey! That looks like a shortcut!",
@@ -2198,6 +2506,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:CantBeThatBad.2.{$NewName}",
           "utterer": "SAY.Dialog:CantBeThatBad.2.{$NewName}",
           "context": "The Foal stands in front of the Elevator and considers using it.",
           "sourceEnglish": "Well the other two Machines weren't that bad...",
@@ -2205,6 +2514,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:ThatWasFun.1.{$NewName}",
           "utterer": "SAY.Dialog:ThatWasFun.1.{$NewName}",
           "context": "Dialogue option 1.1. If the Foal uses the Elevator to get to the bottom of the Mine. The Foal can now go through the entrance to the Bad Cave at the bottom of the Mine.",
           "sourceEnglish": "That was fun!",
@@ -2212,6 +2522,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:LongWay.3.{$NewName}",
           "utterer": "SAY.Dialog:LongWay.3.{$NewName}",
           "context": "Dialogue option 1.2. If the Foal does NOT use the Elevator to get to the bottom of the Mine. The Foal can now go through the entrance to the Bad Cave at the bottom of the Mine.",
           "sourceEnglish": "Oh well. I'll just take the long way!",
@@ -2224,6 +2535,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "Title screen text.",
           "sourceEnglish": "IBM\\nPersonal Computer",
@@ -2231,6 +2543,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "",
           "sourceEnglish": "DONKEY\\nVersion 1.10",
@@ -2238,6 +2551,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "",
           "sourceEnglish": "(C) Copyright IBM Corp 1981, 1982",
@@ -2245,6 +2559,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "",
           "sourceEnglish": "Press X to continue",
@@ -2252,6 +2567,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "User Interface (UI) text during gameplay.",
           "sourceEnglish": "Driver:",
@@ -2259,6 +2575,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "Donkey:",
@@ -2266,6 +2583,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "WRITE.Dialog:Localizer.9",
           "utterer": "WRITE.Dialog:Localizer.9",
           "context": "",
           "sourceEnglish": "You Win!",
@@ -2273,6 +2591,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "WRITE.Dialog:Localizer.16",
           "utterer": "WRITE.Dialog:Localizer.16",
           "context": "",
           "sourceEnglish": "You Win!",
@@ -2280,6 +2599,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "WRITE.Dialog:Localizer.15",
           "utterer": "WRITE.Dialog:Localizer.15",
           "context": "",
           "sourceEnglish": "Driver wins!\\n\\nI hate you!",
@@ -2287,6 +2607,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "WRITE.Dialog:Localizer.14",
           "utterer": "WRITE.Dialog:Localizer.14",
           "context": "",
           "sourceEnglish": "You Win!",
@@ -2294,6 +2615,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "WRITE.Dialog:Localizer.13",
           "utterer": "WRITE.Dialog:Localizer.13",
           "context": "",
           "sourceEnglish": "You Win!",
@@ -2301,6 +2623,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "WRITE.Dialog:Localizer.12",
           "utterer": "WRITE.Dialog:Localizer.12",
           "context": "",
           "sourceEnglish": "Donkey loses!",
@@ -2308,6 +2631,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "WRITE.Dialog:Localizer.11",
           "utterer": "WRITE.Dialog:Localizer.11",
           "context": "",
           "sourceEnglish": "BOOM!",
@@ -2315,6 +2639,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "WRITE.Dialog:Localizer.10",
           "utterer": "WRITE.Dialog:Localizer.10",
           "context": "",
           "sourceEnglish": "Press SQUARE\\nto switch lanes",
@@ -2322,6 +2647,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:Don't hit the donkeys.3.Bad Ass",
           "utterer": "SAY.Dialog:Don't hit the donkeys.3.Bad Ass",
           "context": "This is said at the beginning of gameplay of DonkeyBas.",
           "sourceEnglish": "You have to avoid 5 Herds of donkeys to win.",
@@ -2329,6 +2655,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:Commentary.1.Bad Ass",
           "utterer": "SAY.Dialog:Commentary.1.Bad Ass",
           "context": "This dialogue is said if the Player is doing well.",
           "sourceEnglish": "You're pretty good with the controls for a first timer.",
@@ -2336,6 +2663,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:Ten Donkeys.1.Bad Ass",
           "utterer": "SAY.Dialog:Ten Donkeys.1.Bad Ass",
           "context": "Player WINS DonkeyBas. Fade out of DonkeyBas and back into Bad Cave.",
           "sourceEnglish": "All right, it's my turn now.",
@@ -2343,6 +2671,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:Don't hit the donkeys.1.Bad Ass",
           "utterer": "SAY.Dialog:Don't hit the donkeys.1.Bad Ass",
           "context": "This dialogue is said if the Player is doing poorly.",
           "sourceEnglish": "I said, DON'T hit the donkeys.",
@@ -2350,6 +2679,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:Give up.1.Bad Ass",
           "utterer": "SAY.Dialog:Give up.1.Bad Ass",
           "context": "Player LOSES DonkeyBas.",
           "sourceEnglish": "Are you going to quit?",
@@ -2357,6 +2687,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "MENU.Dialog:Give up.2",
           "utterer": "MENU.Dialog:Give up.2",
           "context": "Dialogue option 1.1. Fade out of DonkeyBas and back into Bad Cave.",
           "sourceEnglish": "Yes",
@@ -2364,6 +2695,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "MENU.Dialog:Give up.3",
           "utterer": "MENU.Dialog:Give up.3",
           "context": "Dialogue option 1.2. Player continues to play DonkeyBas.",
           "sourceEnglish": "No",
@@ -2376,6 +2708,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "MENU.Dialog:PreDonkeyBas.13",
           "utterer": "MENU.Dialog:PreDonkeyBas.13",
           "context": "Dialogue option 1.1.",
           "sourceEnglish": "Who's there? Quit hiding!",
@@ -2383,6 +2716,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:PreDonkeyBas.126.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.126.{$NewName}",
           "context": "Go to line 7",
           "sourceEnglish": "Who's there? Quit hiding!",
@@ -2390,6 +2724,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "MENU.Dialog:PreDonkeyBas.23",
           "utterer": "MENU.Dialog:PreDonkeyBas.23",
           "context": "Dialogue option 1.2.",
           "sourceEnglish": "Lazy? Is that you?",
@@ -2397,6 +2732,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:PreDonkeyBas.127.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.127.{$NewName}",
           "context": "Go to line 7",
           "sourceEnglish": "Lazy? Is that you?",
@@ -2404,6 +2740,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:PreDonkeyBas.25.???",
           "utterer": "SAY.Dialog:PreDonkeyBas.25.???",
           "context": "The camera moves to reveal the mysterious voice. It's Bad Ass.",
           "sourceEnglish": "Fuck. Go away!",
@@ -2411,6 +2748,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:PreDonkeyBas.123.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.123.Bad Ass",
           "context": "",
           "sourceEnglish": "Leave me alone, kid. I don't want to have to deal with your Mother.",
@@ -2418,6 +2756,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:PreDonkeyBas.26.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.26.{$NewName}",
           "context": "",
           "sourceEnglish": "Uncle Bad Ass?!",
@@ -2425,6 +2764,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:PreDonkeyBas.28.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.28.{$NewName}",
           "context": "",
           "sourceEnglish": "Is this where you've been?",
@@ -2432,6 +2772,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:PreDonkeyBas.27.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.27.{$NewName}",
           "context": "",
           "sourceEnglish": "Wait, what are all these Machines?",
@@ -2439,6 +2780,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:PreDonkeyBas.83.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.83.{$NewName}",
           "context": "",
           "sourceEnglish": "WAIT!!",
@@ -2446,6 +2788,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:PreDonkeyBas.84.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.84.{$NewName}",
           "context": "",
           "sourceEnglish": "ARE YOU ON FIRE?",
@@ -2453,6 +2796,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:PreDonkeyBas.20.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.20.Bad Ass",
           "context": "",
           "sourceEnglish": "...",
@@ -2460,6 +2804,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:PreDonkeyBas.85.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.85.Bad Ass",
           "context": "",
           "sourceEnglish": "...these Machines are called Computers.",
@@ -2467,6 +2812,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:PreDonkeyBas.30.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.30.{$NewName}",
           "context": "",
           "sourceEnglish": "Where did they come from?",
@@ -2474,6 +2820,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:PreDonkeyBas.31.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.31.Bad Ass",
           "context": "",
           "sourceEnglish": "I took them from the rubble of the Humans' houses.",
@@ -2481,6 +2828,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:PreDonkeyBas.86.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.86.Bad Ass",
           "context": "",
           "sourceEnglish": "Most are broken, but I rebuilt this one. I'm using the rest for spare parts.",
@@ -2488,6 +2836,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:PreDonkeyBas.33.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.33.{$NewName}",
           "context": "",
           "sourceEnglish": "Comrade Mother always says Machines are evil...",
@@ -2495,6 +2844,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:PreDonkeyBas.87.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.87.{$NewName}",
           "context": "",
           "sourceEnglish": "But I'm not so sure.",
@@ -2502,6 +2852,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:PreDonkeyBas.88.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.88.Bad Ass",
           "context": "",
           "sourceEnglish": "Don't give me that anti-Machine Comrade Mother-bullshit.",
@@ -2509,6 +2860,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:PreDonkeyBas.42.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.42.Bad Ass",
           "context": "",
           "sourceEnglish": "Machines aren't evil if you know how to use them.",
@@ -2516,6 +2868,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:PreDonkeyBas.41.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.41.{$NewName}",
           "context": "",
           "sourceEnglish": "Woah...",
@@ -2523,6 +2876,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:PreDonkeyBas.57.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.57.{$NewName}",
           "context": "",
           "sourceEnglish": "So what can Computers do, if you... know how to use them?",
@@ -2530,6 +2884,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:PreDonkeyBas.58.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.58.Bad Ass",
           "context": "",
           "sourceEnglish": "They can be used for a lot of things: power, pleasure, surveillance, control.",
@@ -2537,6 +2892,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:PreDonkeyBas.140.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.140.Bad Ass",
           "context": "",
           "sourceEnglish": "They're logical and they don't get emotional. They can solve anything.",
@@ -2544,6 +2900,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:PreDonkeyBas.59.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.59.Bad Ass",
           "context": "",
           "sourceEnglish": "But right now, I'm playing games—so leave me alone.",
@@ -2551,6 +2908,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "SAY.Dialog:PreDonkeyBas.60.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.60.{$NewName}",
           "context": "",
           "sourceEnglish": "GAMES!",
@@ -2558,6 +2916,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:PreDonkeyBas.93.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.93.{$NewName}",
           "context": "",
           "sourceEnglish": "I love love LOVE games!",
@@ -2565,6 +2924,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "SAY.Dialog:PreDonkeyBas.61.{$NewName}",
           "utterer": "SAY.Dialog:PreDonkeyBas.61.{$NewName}",
           "context": "",
           "sourceEnglish": "Can we play together?",
@@ -2572,6 +2932,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:PreDonkeyBas.62.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.62.Bad Ass",
           "context": "",
           "sourceEnglish": "No.",
@@ -2579,6 +2940,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:PreDonkeyBas.137.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.137.Bad Ass",
           "context": "",
           "sourceEnglish": "This is a one player game.",
@@ -2586,6 +2948,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:PreDonkeyBas.94.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.94.Bad Ass",
           "context": "",
           "sourceEnglish": "But...",
@@ -2593,6 +2956,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:PreDonkeyBas.141.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.141.Bad Ass",
           "context": "",
           "sourceEnglish": "I suppose everyone should have a chance to play.",
@@ -2600,6 +2964,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:PreDonkeyBas.95.Bad Ass",
           "utterer": "SAY.Dialog:PreDonkeyBas.95.Bad Ass",
           "context": "A screen wipe (transition) happens and we find ourselves playing DonkeyBas.",
           "sourceEnglish": "Just don't hit the donkeys.",
@@ -2607,6 +2972,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:PostDonkeyBas.7.Bad Ass",
           "utterer": "SAY.Dialog:PostDonkeyBas.7.Bad Ass",
           "context": "This dialogue happens if the Player won DonkeyBas. If the Player loses, pass over this and jump to line 37.",
           "sourceEnglish": "You're better than expected.",
@@ -2614,6 +2980,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:PostDonkeyBas.25.{$NewName}",
           "utterer": "SAY.Dialog:PostDonkeyBas.25.{$NewName}",
           "context": "We are back in the Bad Caves and the Foal and Bad Ass are talking.",
           "sourceEnglish": "That was WAY BETTER THAN ROCKS!",
@@ -2621,6 +2988,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "SAY.Dialog:PostDonkeyBas.88.{$NewName}",
           "utterer": "SAY.Dialog:PostDonkeyBas.88.{$NewName}",
           "context": "",
           "sourceEnglish": "Machines are FUN!",
@@ -2628,6 +2996,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:PostDonkeyBas.23.Bad Ass",
           "utterer": "SAY.Dialog:PostDonkeyBas.23.Bad Ass",
           "context": "",
           "sourceEnglish": "This game is actually really old.",
@@ -2635,6 +3004,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:PostDonkeyBas.24.Bad Ass",
           "utterer": "SAY.Dialog:PostDonkeyBas.24.Bad Ass",
           "context": "",
           "sourceEnglish": "There are even better ones out there now.",
@@ -2642,6 +3012,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "SAY.Dialog:PostDonkeyBas.87.{$NewName}",
           "utterer": "SAY.Dialog:PostDonkeyBas.87.{$NewName}",
           "context": "",
           "sourceEnglish": "What other GAMES CAN WE PLAY?!",
@@ -2649,6 +3020,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:PostDonkeyBas.26.Bad Ass",
           "utterer": "SAY.Dialog:PostDonkeyBas.26.Bad Ass",
           "context": "",
           "sourceEnglish": "None. Break time is over. I have to get back to my project.",
@@ -2656,6 +3028,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "SAY.Dialog:PostDonkeyBas.38.{$NewName}",
           "utterer": "SAY.Dialog:PostDonkeyBas.38.{$NewName}",
           "context": "",
           "sourceEnglish": "Why is the Herd afraid of Machines?",
@@ -2663,6 +3036,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:PostDonkeyBas.37.Bad Ass",
           "utterer": "SAY.Dialog:PostDonkeyBas.37.Bad Ass",
           "context": "",
           "sourceEnglish": "Because they are intellectually compromised by their commitment to past ideals.",
@@ -2670,6 +3044,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "SAY.Dialog:PostDonkeyBas.92.{$NewName}",
           "utterer": "SAY.Dialog:PostDonkeyBas.92.{$NewName}",
           "context": "",
           "sourceEnglish": "So... Is that why you don't spend more time with the Herd, Uncle Bad Ass?",
@@ -2677,6 +3052,7 @@
         },
         {
           "rowNumber": 46,
+          "key": "SAY.Dialog:PostDonkeyBas.90.Bad Ass",
           "utterer": "SAY.Dialog:PostDonkeyBas.90.Bad Ass",
           "context": "",
           "sourceEnglish": "I don't like Asses.",
@@ -2684,6 +3060,7 @@
         },
         {
           "rowNumber": 47,
+          "key": "SAY.Dialog:PostDonkeyBas.36.{$NewName}",
           "utterer": "SAY.Dialog:PostDonkeyBas.36.{$NewName}",
           "context": "",
           "sourceEnglish": "Well, I'm not an Ass, I'm a Foal!",
@@ -2691,6 +3068,7 @@
         },
         {
           "rowNumber": 48,
+          "key": "SAY.Dialog:PostDonkeyBas.91.Bad Ass",
           "utterer": "SAY.Dialog:PostDonkeyBas.91.Bad Ass",
           "context": "",
           "sourceEnglish": "For now.",
@@ -2698,6 +3076,7 @@
         },
         {
           "rowNumber": 49,
+          "key": "SAY.Dialog:PostDonkeyBas.93.{$NewName}",
           "utterer": "SAY.Dialog:PostDonkeyBas.93.{$NewName}",
           "context": "",
           "sourceEnglish": "Can I... stay down here with you?",
@@ -2705,6 +3084,7 @@
         },
         {
           "rowNumber": 50,
+          "key": "SAY.Dialog:PostDonkeyBas.35.Bad Ass",
           "utterer": "SAY.Dialog:PostDonkeyBas.35.Bad Ass",
           "context": "End of Episode",
           "sourceEnglish": "... I suppose I could use an Assistant.",

@@ -1,12 +1,13 @@
 {
   "fileName": "9_asses.masses_E9Proxy",
-  "processedAt": "2025-12-29T08:53:11.353Z",
+  "processedAt": "2025-12-29T22:52:04.135Z",
   "sheets": [
     {
       "sheetName": "E9_EpisodeTitle_localization",
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "EPISODE NINE",
@@ -14,6 +15,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "THE MACHINES",
@@ -21,6 +23,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "Press X to Begin",
@@ -33,6 +36,7 @@
       "entries": [
         {
           "rowNumber": 2,
+          "key": "WRITE.Dialog:Localizer.1",
           "utterer": "WRITE.Dialog:Localizer.1",
           "context": "",
           "sourceEnglish": "DONKEYS",
@@ -40,6 +44,7 @@
         },
         {
           "rowNumber": 3,
+          "key": "WRITE.Dialog:Localizer.8",
           "utterer": "WRITE.Dialog:Localizer.8",
           "context": "",
           "sourceEnglish": "EQUINES",
@@ -47,6 +52,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "WRITE.Dialog:Localizer.7",
           "utterer": "WRITE.Dialog:Localizer.7",
           "context": "",
           "sourceEnglish": "MAMMALS",
@@ -54,6 +60,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "WRITE.Dialog:Localizer.6",
           "utterer": "WRITE.Dialog:Localizer.6",
           "context": "",
           "sourceEnglish": "ANIMALS",
@@ -61,6 +68,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "WRITE.Dialog:Localizer.5",
           "utterer": "WRITE.Dialog:Localizer.5",
           "context": "",
           "sourceEnglish": "ANIMATE BEINGS",
@@ -68,6 +76,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "WRITE.Dialog:Localizer.4",
           "utterer": "WRITE.Dialog:Localizer.4",
           "context": "",
           "sourceEnglish": "SOMETHINGS",
@@ -75,6 +84,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "WRITE.Dialog:Localizer.3",
           "utterer": "WRITE.Dialog:Localizer.3",
           "context": "",
           "sourceEnglish": "INANIMATE OBJECTS",
@@ -82,6 +92,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "WRITE.Dialog:Localizer.2",
           "utterer": "WRITE.Dialog:Localizer.2",
           "context": "",
           "sourceEnglish": "TOOLS",
@@ -89,6 +100,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "WRITE.Dialog:Localizer.12",
           "utterer": "WRITE.Dialog:Localizer.12",
           "context": "",
           "sourceEnglish": "MACHINES",
@@ -96,6 +108,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "WRITE.Dialog:Localizer.11",
           "utterer": "WRITE.Dialog:Localizer.11",
           "context": "",
           "sourceEnglish": "COMPUTERS",
@@ -103,6 +116,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "WRITE.Dialog:Localizer.10",
           "utterer": "WRITE.Dialog:Localizer.10",
           "context": "",
           "sourceEnglish": "ROBOTS",
@@ -115,6 +129,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:BadTransformation.544.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.544.Cole-Machine",
           "context": "",
           "sourceEnglish": "I did it... I really did it!",
@@ -122,6 +137,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:BadTransformation.546.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.546.Cole-Machine",
           "context": "",
           "sourceEnglish": "All our work paid off—the Ass Soul Transfer was successful!",
@@ -129,6 +145,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:BadTransformation.547.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.547.Cole-Machine",
           "context": "",
           "sourceEnglish": "I can finally go to Mecha City!",
@@ -136,6 +153,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:BadTransformation.2.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.2.{$NewName}",
           "context": "",
           "sourceEnglish": "Uncle Bad Ass?",
@@ -143,6 +161,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:BadTransformation.6.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.6.Cole-Machine",
           "context": "",
           "sourceEnglish": "Don't call me Bad Ass, my name is Cole.",
@@ -150,6 +169,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:BadTransformation.8.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.8.Cole-Machine",
           "context": "",
           "sourceEnglish": "I've finally shed that ridiculous donkey form!",
@@ -157,6 +177,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:BadTransformation.11.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.11.{$NewName}",
           "context": "",
           "sourceEnglish": "Uncle Bad—Cole... is being a donkey such a terrible thing?",
@@ -164,6 +185,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:BadTransformation.12.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.12.Cole-Machine",
           "context": "",
           "sourceEnglish": "Kid, there's no good reason to be a 'donkey' or a 'Human' or whatever.",
@@ -171,6 +193,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:BadTransformation.20.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.20.Cole-Machine",
           "context": "",
           "sourceEnglish": "It's all about what's on the inside and what you aspire to do in this world.",
@@ -178,6 +201,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:BadTransformation.17.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.17.Cole-Machine",
           "context": "",
           "sourceEnglish": "But.",
@@ -185,6 +209,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:BadTransformation.15.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.15.Cole-Machine",
           "context": "",
           "sourceEnglish": "If you have a restless soul that wants to be taken seriously and change this world...",
@@ -192,6 +217,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:BadTransformation.25.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.25.Cole-Machine",
           "context": "",
           "sourceEnglish": "Then, given the historical prejudice against donkeys, being a donkey is...",
@@ -199,6 +225,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:BadTransformation.23.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.23.Cole-Machine",
           "context": "",
           "sourceEnglish": "Not fun.",
@@ -206,6 +233,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:BadTransformation.656.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.656.Cole-Machine",
           "context": "",
           "sourceEnglish": "The System is rigged against donkeys, among others.",
@@ -213,6 +241,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:BadTransformation.22.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.22.Cole-Machine",
           "context": "",
           "sourceEnglish": "Thanks for all your help kid.",
@@ -220,6 +249,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:BadTransformation.21.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.21.{$NewName}",
           "context": "",
           "sourceEnglish": "Are you going to Mecha City now...?",
@@ -227,6 +257,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "MENU.Dialog:BadTransformation.636",
           "utterer": "MENU.Dialog:BadTransformation.636",
           "context": "Dialogue option 1.",
           "sourceEnglish": "I'll come back to visit.",
@@ -234,6 +265,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:BadTransformation.634.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.634.Cole-Machine",
           "context": "",
           "sourceEnglish": "Don't worry, I'll come back to visit.",
@@ -241,6 +273,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "MENU.Dialog:BadTransformation.637",
           "utterer": "MENU.Dialog:BadTransformation.637",
           "context": "Dialogue option 2.",
           "sourceEnglish": "I'll never forget you.",
@@ -248,6 +281,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:BadTransformation.635.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.635.Cole-Machine",
           "context": "",
           "sourceEnglish": "You were a great Assistant. I'll never forget you.",
@@ -255,6 +289,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:BadTransformation.630.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.630.{$NewName}",
           "context": "",
           "sourceEnglish": "But I want to see Mecha City too! We can go together!",
@@ -262,6 +297,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:BadTransformation.631.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.631.Cole-Machine",
           "context": "",
           "sourceEnglish": "Kid, the world out there isn't safe for donkeys. You know that.",
@@ -269,6 +305,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:BadTransformation.551.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.551.{$NewName}",
           "context": "",
           "sourceEnglish": "Then... can I become a Machine too?",
@@ -276,6 +313,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "MENU.Dialog:BadTransformation.609",
           "utterer": "MENU.Dialog:BadTransformation.609",
           "context": "",
           "sourceEnglish": "We can play games during our breaks.",
@@ -283,6 +321,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:BadTransformation.614.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.614.{$NewName}",
           "context": "",
           "sourceEnglish": "We can play games during our breaks.",
@@ -290,6 +329,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "MENU.Dialog:BadTransformation.608",
           "utterer": "MENU.Dialog:BadTransformation.608",
           "context": "",
           "sourceEnglish": "We can invent new Machines!",
@@ -297,6 +337,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:BadTransformation.617.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.617.{$NewName}",
           "context": "",
           "sourceEnglish": "We can invent new Machines!",
@@ -304,6 +345,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "MENU.Dialog:BadTransformation.607",
           "utterer": "MENU.Dialog:BadTransformation.607",
           "context": "",
           "sourceEnglish": "We can make the world a better place for Asses!",
@@ -311,6 +353,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:BadTransformation.620.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.620.{$NewName}",
           "context": "",
           "sourceEnglish": "We can make the world a better place for Asses!",
@@ -318,6 +361,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:BadTransformation.597.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.597.Cole-Machine",
           "context": "",
           "sourceEnglish": "I suppose you could use the prototype...",
@@ -325,6 +369,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:BadTransformation.600.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.600.{$NewName}",
           "context": "",
           "sourceEnglish": "REALLY?! WAHOO!",
@@ -332,6 +377,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:BadTransformation.602.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.602.Cole-Machine",
           "context": "",
           "sourceEnglish": "I'll run the initializer. Give me a minute.",
@@ -339,6 +385,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:BadTransformation.31.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.31.Sturdy Ass",
           "context": "",
           "sourceEnglish": "{$NewName}?",
@@ -346,6 +393,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:BadTransformation.338.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.338.{$NewName}",
           "context": "",
           "sourceEnglish": "Comrade Mother?!",
@@ -353,6 +401,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:BadTransformation.33.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.33.Sturdy Ass",
           "context": "",
           "sourceEnglish": "What are all these Machines??",
@@ -360,6 +409,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "SAY.Dialog:BadTransformation.34.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.34.Cole-Machine",
           "context": "",
           "sourceEnglish": "Fuck. Of all the times—",
@@ -367,6 +417,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:BadTransformation.35.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.35.Sturdy Ass",
           "context": "",
           "sourceEnglish": "AHH! That one can talk?!",
@@ -374,6 +425,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:BadTransformation.340.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.340.Sturdy Ass",
           "context": "",
           "sourceEnglish": "I thought you were playing ROCKS with your UNCLE!",
@@ -381,6 +433,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "SAY.Dialog:BadTransformation.36.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.36.{$NewName}",
           "context": "",
           "sourceEnglish": "Don't worry Comrade Mother, this IS Uncle Bad—Cole.",
@@ -388,6 +441,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:BadTransformation.37.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.37.Sturdy Ass",
           "context": "",
           "sourceEnglish": "By the Gods, don't be ridiculous!",
@@ -395,6 +449,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "SAY.Dialog:BadTransformation.471.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.471.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Your Uncle Bad is an Ass, not an evil, soul-less, child-killing Machine.",
@@ -402,6 +457,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:BadTransformation.39.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.39.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Step away from those monstrosities this instant!",
@@ -409,6 +465,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "SAY.Dialog:BadTransformation.40.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.40.{$NewName}",
           "context": "",
           "sourceEnglish": "No! I'm going to become a Machine like Uncle Bad—Cole!",
@@ -416,6 +473,7 @@
         },
         {
           "rowNumber": 46,
+          "key": "SAY.Dialog:BadTransformation.41.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.41.Sturdy Ass",
           "context": "",
           "sourceEnglish": "WHAT?!?!?!?!?!?!?!?!?!?!?!?!",
@@ -423,6 +481,7 @@
         },
         {
           "rowNumber": 47,
+          "key": "SAY.Dialog:BadTransformation.42.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.42.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Become a Machine? Absolutely NOT!",
@@ -430,6 +489,7 @@
         },
         {
           "rowNumber": 48,
+          "key": "SAY.Dialog:BadTransformation.657.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.657.Sturdy Ass",
           "context": "",
           "sourceEnglish": "And why do you keep calling that thing Cole?!",
@@ -437,6 +497,7 @@
         },
         {
           "rowNumber": 49,
+          "key": "SAY.Dialog:BadTransformation.43.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.43.{$NewName}",
           "context": "",
           "sourceEnglish": "Because that's WHO HE IS.",
@@ -444,6 +505,7 @@
         },
         {
           "rowNumber": 50,
+          "key": "SAY.Dialog:BadTransformation.658.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.658.{$NewName}",
           "context": "",
           "sourceEnglish": "Mother, listen to me.",
@@ -451,6 +513,7 @@
         },
         {
           "rowNumber": 51,
+          "key": "SAY.Dialog:BadTransformation.44.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.44.{$NewName}",
           "context": "",
           "sourceEnglish": "I'm tired of you always looking over my shoulder and telling me what to do!",
@@ -458,6 +521,7 @@
         },
         {
           "rowNumber": 52,
+          "key": "SAY.Dialog:BadTransformation.45.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.45.{$NewName}",
           "context": "",
           "sourceEnglish": "Uncle Bad—Cole has taught me the truth of how the world works.",
@@ -465,6 +529,7 @@
         },
         {
           "rowNumber": 53,
+          "key": "SAY.Dialog:BadTransformation.47.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.47.{$NewName}",
           "context": "",
           "sourceEnglish": "That it's NOT FUN for Asses!",
@@ -472,6 +537,7 @@
         },
         {
           "rowNumber": 54,
+          "key": "SAY.Dialog:BadTransformation.49.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.49.{$NewName}",
           "context": "",
           "sourceEnglish": "Give me one good reason why a Foal like me should want to grow up to be an Ass in this world?",
@@ -479,6 +545,7 @@
         },
         {
           "rowNumber": 55,
+          "key": "SAY.Dialog:BadTransformation.50.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.50.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Because it's what YOU ARE!",
@@ -486,6 +553,7 @@
         },
         {
           "rowNumber": 56,
+          "key": "SAY.Dialog:BadTransformation.52.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.52.{$NewName}",
           "context": "",
           "sourceEnglish": "No, it's just how I was BORN.",
@@ -493,6 +561,7 @@
         },
         {
           "rowNumber": 57,
+          "key": "SAY.Dialog:BadTransformation.241.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.241.{$NewName}",
           "context": "",
           "sourceEnglish": "Let's do it, Uncle Bad—Cole!",
@@ -500,6 +569,7 @@
         },
         {
           "rowNumber": 58,
+          "key": "SAY.Dialog:BadTransformation.53.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.53.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Don't you dare ignore me!",
@@ -507,6 +577,7 @@
         },
         {
           "rowNumber": 59,
+          "key": "SAY.Dialog:BadTransformation.242.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.242.{$NewName}",
           "context": "",
           "sourceEnglish": "Let me go!!",
@@ -514,6 +585,7 @@
         },
         {
           "rowNumber": 60,
+          "key": "MENU.Dialog:BadTransformation.469",
           "utterer": "MENU.Dialog:BadTransformation.469",
           "context": "",
           "sourceEnglish": "Stop {$NewName} from entering the Machine.",
@@ -521,6 +593,7 @@
         },
         {
           "rowNumber": 61,
+          "key": "SAY.Dialog:BadTransformation.55.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.55.{$NewName}",
           "context": "",
           "sourceEnglish": "Hit it!!",
@@ -528,6 +601,7 @@
         },
         {
           "rowNumber": 62,
+          "key": "SAY.Dialog:BadTransformation.479.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.479.Sturdy Ass",
           "context": "",
           "sourceEnglish": "NO!! {$NewName}!!",
@@ -535,6 +609,7 @@
         },
         {
           "rowNumber": 63,
+          "key": "SAY.Dialog:BadTransformation.253.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.253.Cole-Machine",
           "context": "",
           "sourceEnglish": "Sturdy. Stop.",
@@ -542,6 +617,7 @@
         },
         {
           "rowNumber": 64,
+          "key": "SAY.Dialog:BadTransformation.270.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.270.Cole-Machine",
           "context": "",
           "sourceEnglish": "Do not try to break the Machine.",
@@ -549,6 +625,7 @@
         },
         {
           "rowNumber": 65,
+          "key": "SAY.Dialog:BadTransformation.271.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.271.Cole-Machine",
           "context": "",
           "sourceEnglish": "Interrupting the process would sever the bridge and destroy her Soul.",
@@ -556,6 +633,7 @@
         },
         {
           "rowNumber": 66,
+          "key": "SAY.Dialog:BadTransformation.285.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.285.Sturdy Ass",
           "context": "",
           "sourceEnglish": "This can't be real.",
@@ -563,6 +641,7 @@
         },
         {
           "rowNumber": 67,
+          "key": "SAY.Dialog:BadTransformation.60.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.60.Sturdy Ass",
           "context": "",
           "sourceEnglish": "I-I must be dreaming.",
@@ -570,6 +649,7 @@
         },
         {
           "rowNumber": 68,
+          "key": "SAY.Dialog:BadTransformation.286.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.286.Sturdy Ass",
           "context": "",
           "sourceEnglish": "...Soulless Machines can't talk.",
@@ -577,6 +657,7 @@
         },
         {
           "rowNumber": 69,
+          "key": "SAY.Dialog:BadTransformation.288.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.288.Cole-Machine",
           "context": "",
           "sourceEnglish": "You're not dreaming. I am a Machine and I do have a Soul.",
@@ -584,6 +665,7 @@
         },
         {
           "rowNumber": 70,
+          "key": "SAY.Dialog:BadTransformation.289.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.289.Cole-Machine",
           "context": "",
           "sourceEnglish": "I'm Cole Butte.",
@@ -591,6 +673,7 @@
         },
         {
           "rowNumber": 71,
+          "key": "SAY.Dialog:BadTransformation.59.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.59.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Impossible.",
@@ -598,6 +681,7 @@
         },
         {
           "rowNumber": 72,
+          "key": "SAY.Dialog:BadTransformation.291.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.291.Cole-Machine",
           "context": "",
           "sourceEnglish": "What I'm about to tell you will sound impossible—sometimes I don't even believe it myself.",
@@ -605,6 +689,7 @@
         },
         {
           "rowNumber": 73,
+          "key": "SAY.Dialog:BadTransformation.661.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.661.Cole-Machine",
           "context": "",
           "sourceEnglish": "But every word of it is true.",
@@ -612,6 +697,7 @@
         },
         {
           "rowNumber": 74,
+          "key": "SAY.Dialog:BadTransformation.660.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.660.Cole-Machine",
           "context": "",
           "sourceEnglish": "Everybody thought I died in the cave-in along with Lazy.",
@@ -619,6 +705,7 @@
         },
         {
           "rowNumber": 75,
+          "key": "SAY.Dialog:BadTransformation.480.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.480.Cole-Machine",
           "context": "",
           "sourceEnglish": "When in reality, the Gods transformed me into a donkey.",
@@ -626,6 +713,7 @@
         },
         {
           "rowNumber": 76,
+          "key": "SAY.Dialog:BadTransformation.292.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.292.Cole-Machine",
           "context": "",
           "sourceEnglish": "As Lazy died, she tried to sing the Song of Ascension for herself.",
@@ -633,6 +721,7 @@
         },
         {
           "rowNumber": 77,
+          "key": "SAY.Dialog:BadTransformation.293.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.293.Cole-Machine",
           "context": "",
           "sourceEnglish": "But instead of her Soul going to the Astral Plane, mine did.",
@@ -640,6 +729,7 @@
         },
         {
           "rowNumber": 78,
+          "key": "SAY.Dialog:BadTransformation.295.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.295.Cole-Machine",
           "context": "",
           "sourceEnglish": "My Human Soul wasn't allowed in.",
@@ -647,6 +737,7 @@
         },
         {
           "rowNumber": 79,
+          "key": "SAY.Dialog:BadTransformation.296.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.296.Cole-Machine",
           "context": "",
           "sourceEnglish": "It was rejected and returned to this world.",
@@ -654,6 +745,7 @@
         },
         {
           "rowNumber": 80,
+          "key": "SAY.Dialog:BadTransformation.301.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.301.Cole-Machine",
           "context": "",
           "sourceEnglish": "I did try to save Lazy, but her injuries were too severe.",
@@ -661,6 +753,7 @@
         },
         {
           "rowNumber": 81,
+          "key": "SAY.Dialog:BadTransformation.209.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.209.Cole-Machine",
           "context": "",
           "sourceEnglish": "Look Sturdy.",
@@ -668,6 +761,7 @@
         },
         {
           "rowNumber": 82,
+          "key": "SAY.Dialog:BadTransformation.223.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.223.Cole-Machine",
           "context": "",
           "sourceEnglish": "All my life, I've been forced to be someone I didn't want to be. Do things I didn't want to do.",
@@ -675,6 +769,7 @@
         },
         {
           "rowNumber": 83,
+          "key": "SAY.Dialog:BadTransformation.481.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.481.Cole-Machine",
           "context": "",
           "sourceEnglish": "But I'm done.",
@@ -682,6 +777,7 @@
         },
         {
           "rowNumber": 84,
+          "key": "SAY.Dialog:BadTransformation.222.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.222.Cole-Machine",
           "context": "",
           "sourceEnglish": "So, I'm making my own decisions now.",
@@ -689,6 +785,7 @@
         },
         {
           "rowNumber": 85,
+          "key": "SAY.Dialog:BadTransformation.444.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.444.Cole-Machine",
           "context": "",
           "sourceEnglish": "And you should let the kid make her own decisions too.",
@@ -696,6 +793,7 @@
         },
         {
           "rowNumber": 86,
+          "key": "SAY.Dialog:BadTransformation.213.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.213.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Did you ever tell {$NewName} about us?",
@@ -703,6 +801,7 @@
         },
         {
           "rowNumber": 87,
+          "key": "SAY.Dialog:BadTransformation.197.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.197.{$NewName}",
           "context": "",
           "sourceEnglish": "COOOOOOOOL!",
@@ -710,6 +809,7 @@
         },
         {
           "rowNumber": 88,
+          "key": "SAY.Dialog:BadTransformation.304.Sturdy Ass",
           "utterer": "SAY.Dialog:BadTransformation.304.Sturdy Ass",
           "context": "",
           "sourceEnglish": "I... can't look.",
@@ -717,6 +817,7 @@
         },
         {
           "rowNumber": 89,
+          "key": "SAY.Dialog:BadTransformation.666.{$NewName}",
           "utterer": "SAY.Dialog:BadTransformation.666.{$NewName}",
           "context": "The sound of the Gods is heard",
           "sourceEnglish": "What's that sound—?",
@@ -724,6 +825,7 @@
         },
         {
           "rowNumber": 90,
+          "key": "SAY.Dialog:BadTransformation.82.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.82.Cole-Machine",
           "context": "The Mines start to cave-in",
           "sourceEnglish": "{s}{s=20}Are. You. Fucking. Kidding. Me.{/s}",
@@ -731,6 +833,7 @@
         },
         {
           "rowNumber": 91,
+          "key": "SAY.Dialog:BadTransformation.306.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.306.Cole-Machine",
           "context": "",
           "sourceEnglish": "WHY CAN'T THIS FUCKING MINE STOP CAVING IN?!",
@@ -738,6 +841,7 @@
         },
         {
           "rowNumber": 92,
+          "key": "SAY.Dialog:BadTransformation.445.Cole-Machine",
           "utterer": "SAY.Dialog:BadTransformation.445.Cole-Machine",
           "context": "",
           "sourceEnglish": "EVERYBODY GET OUT OF HERE, NOW!",
@@ -750,6 +854,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:StageZero.13.{$NewName}",
           "utterer": "SAY.Dialog:StageZero.13.{$NewName}",
           "context": "",
           "sourceEnglish": "Comrade Mother!",
@@ -757,6 +862,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:StageZero.28.Sturdy Ass",
           "utterer": "SAY.Dialog:StageZero.28.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Don't touch me!",
@@ -764,6 +870,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:StageZero.11.Sturdy Ass",
           "utterer": "SAY.Dialog:StageZero.11.Sturdy Ass",
           "context": "",
           "sourceEnglish": "AHHH! GET ME OUT OF HERE!!!",
@@ -771,6 +878,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:StageZero.12.Cole-Machine",
           "utterer": "SAY.Dialog:StageZero.12.Cole-Machine",
           "context": "They are in the Elevator pulling on the cables to ascend up the shaft.",
           "sourceEnglish": "Pull the cables!",
@@ -778,6 +886,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:StageTwo.11.Sturdy Ass",
           "utterer": "SAY.Dialog:StageTwo.11.Sturdy Ass",
           "context": "",
           "sourceEnglish": "AHH!!",
@@ -785,6 +894,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:StageTwo.23.Cole-Machine",
           "utterer": "SAY.Dialog:StageTwo.23.Cole-Machine",
           "context": "The lift falls and Bad and Foal are suspended by pushing their feet against the walls. Sturdy is standing on their shoulders. They hold the cable still.",
           "sourceEnglish": "Kid, the cable is about to snap—let's go back-to-back!",
@@ -792,6 +902,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:StageTwo.24.Cole-Machine",
           "utterer": "SAY.Dialog:StageTwo.24.Cole-Machine",
           "context": "Not used? Not in Miro.",
           "sourceEnglish": "One step at a time!",
@@ -799,6 +910,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:StageThree.15.Cole-Machine",
           "utterer": "SAY.Dialog:StageThree.15.Cole-Machine",
           "context": "",
           "sourceEnglish": "Everyone together—JUMP!",
@@ -806,6 +918,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:StageThree.26.Sturdy Ass",
           "utterer": "SAY.Dialog:StageThree.26.Sturdy Ass",
           "context": "",
           "sourceEnglish": "AHHH!",
@@ -813,6 +926,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:StageThree.6.{$NewName}",
           "utterer": "SAY.Dialog:StageThree.6.{$NewName}",
           "context": "",
           "sourceEnglish": "Comrade Mother!",
@@ -820,6 +934,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:StageThree.29.Sturdy Ass",
           "utterer": "SAY.Dialog:StageThree.29.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Get away!",
@@ -827,6 +942,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:StageThree.8.{$NewName}",
           "utterer": "SAY.Dialog:StageThree.8.{$NewName}",
           "context": "",
           "sourceEnglish": "I'm not going to let you go!",
@@ -834,6 +950,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:StageFour.90.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.90.{$NewName}",
           "context": "",
           "sourceEnglish": "Let's go, let's go, let's go!",
@@ -841,6 +958,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:StageFour.81.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.81.{$NewName}",
           "context": "",
           "sourceEnglish": "Mother?",
@@ -848,6 +966,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:StageFour.76.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.76.Sturdy Ass",
           "context": "",
           "sourceEnglish": "I've been saved... by a Machine...",
@@ -855,6 +974,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:StageFour.93.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.93.Sturdy Ass",
           "context": "",
           "sourceEnglish": "An evil...",
@@ -862,6 +982,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:StageFour.117.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.117.Sturdy Ass",
           "context": "",
           "sourceEnglish": "soulless...",
@@ -869,6 +990,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:StageFour.116.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.116.Sturdy Ass",
           "context": "",
           "sourceEnglish": "job-taking...",
@@ -876,6 +998,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:StageFour.118.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.118.Sturdy Ass",
           "context": "Reminder, needs space at beginning",
           "sourceEnglish": "child-killing Machine...",
@@ -883,6 +1006,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:StageFour.54.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.54.{$NewName}",
           "context": "",
           "sourceEnglish": "I'm not evil! I'm your daughter!",
@@ -890,6 +1014,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "SAY.Dialog:StageFour.92.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.92.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Daughter? I've lost both my daughters now...",
@@ -897,6 +1022,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:StageFour.119.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.119.Sturdy Ass",
           "context": "",
           "sourceEnglish": "I have nothing left.",
@@ -904,6 +1030,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:StageFour.75.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.75.{$NewName}",
           "context": "",
           "sourceEnglish": "Mother! LOOK AT ME!",
@@ -911,6 +1038,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:StageFour.120.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.120.Sturdy Ass",
           "context": "",
           "sourceEnglish": "How could you do this to me, your Mother?",
@@ -918,6 +1046,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:StageFour.136.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.136.Sturdy Ass",
           "context": "",
           "sourceEnglish": "I loved you...",
@@ -925,6 +1054,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "SAY.Dialog:StageFour.121.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.121.Sturdy Ass",
           "context": "",
           "sourceEnglish": "How could you give up on our kind?",
@@ -932,6 +1062,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:StageFour.88.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.88.{$NewName}",
           "context": "",
           "sourceEnglish": "I'm not giving up. I'm growing up.",
@@ -939,6 +1070,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "SAY.Dialog:StageFour.125.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.125.{$NewName}",
           "context": "",
           "sourceEnglish": "I'm not like the others in the Herd.",
@@ -946,6 +1078,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:StageFour.124.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.124.{$NewName}",
           "context": "",
           "sourceEnglish": "I've never wanted the work-filled life you had before Machines.",
@@ -953,6 +1086,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "SAY.Dialog:StageFour.130.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.130.{$NewName}",
           "context": "",
           "sourceEnglish": "I don't like manual labour.",
@@ -960,6 +1094,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:StageFour.129.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.129.{$NewName}",
           "context": "",
           "sourceEnglish": "And I don't like sitting in a field doing nothing all day either.",
@@ -967,6 +1102,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:StageFour.135.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.135.{$NewName}",
           "context": "",
           "sourceEnglish": "I think everyone would be happier if we had a little fun together.",
@@ -974,6 +1110,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:StageFour.123.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.123.{$NewName}",
           "context": "",
           "sourceEnglish": "Mother?",
@@ -981,6 +1118,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:StageFour.73.Cole-Machine",
           "utterer": "SAY.Dialog:StageFour.73.Cole-Machine",
           "context": "",
           "sourceEnglish": "WHAT THE FUCK IS TAKING SO LONG?",
@@ -988,6 +1126,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "SAY.Dialog:StageFour.102.Cole-Machine",
           "utterer": "SAY.Dialog:StageFour.102.Cole-Machine",
           "context": "",
           "sourceEnglish": "I can't hold this ceiling up much longer!",
@@ -995,6 +1134,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "SAY.Dialog:StageFour.84.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.84.Sturdy Ass",
           "context": "",
           "sourceEnglish": "The Gods have foresaken me.",
@@ -1002,6 +1142,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "SAY.Dialog:StageFour.132.Sturdy Ass",
           "utterer": "SAY.Dialog:StageFour.132.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Go.",
@@ -1009,6 +1150,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:StageFour.89.{$NewName}",
           "utterer": "SAY.Dialog:StageFour.89.{$NewName}",
           "context": "",
           "sourceEnglish": "I'm not giving up and I'm not letting you stay here either!",
@@ -1021,6 +1163,7 @@
       "entries": [
         {
           "rowNumber": 3,
+          "key": "SAY.Dialog:Arrival.16.Cole-Machine",
           "utterer": "SAY.Dialog:Arrival.16.Cole-Machine",
           "context": "",
           "sourceEnglish": "What the fuck happened...?",
@@ -1028,6 +1171,7 @@
         },
         {
           "rowNumber": 4,
+          "key": "SAY.Dialog:Arrival.19.{$NewName}",
           "utterer": "SAY.Dialog:Arrival.19.{$NewName}",
           "context": "",
           "sourceEnglish": "Hey! What's that?",
@@ -1035,6 +1179,7 @@
         },
         {
           "rowNumber": 5,
+          "key": "SAY.Dialog:Meeting.23.???",
           "utterer": "SAY.Dialog:Meeting.23.???",
           "context": "",
           "sourceEnglish": "*COUGH*",
@@ -1042,6 +1187,7 @@
         },
         {
           "rowNumber": 6,
+          "key": "SAY.Dialog:Meeting.66.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.66.{$NewName}",
           "context": "",
           "sourceEnglish": "Aunty Sick?!",
@@ -1049,6 +1195,7 @@
         },
         {
           "rowNumber": 7,
+          "key": "SAY.Dialog:Meeting.193.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.193.Cole-Machine",
           "context": "",
           "sourceEnglish": "What the fuck...?",
@@ -1056,6 +1203,7 @@
         },
         {
           "rowNumber": 8,
+          "key": "SAY.Dialog:Meeting.24.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.24.Golden Ass",
           "context": "",
           "sourceEnglish": "SILENCE VASSALS!",
@@ -1063,6 +1211,7 @@
         },
         {
           "rowNumber": 9,
+          "key": "SAY.Dialog:Meeting.194.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.194.Golden Ass",
           "context": "",
           "sourceEnglish": "WE ARE THE GODS OF CHANGE.",
@@ -1070,6 +1219,7 @@
         },
         {
           "rowNumber": 10,
+          "key": "SAY.Dialog:Meeting.704.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.704.Cole-Machine",
           "context": "",
           "sourceEnglish": "You fuckers turned me into a donkey!",
@@ -1077,6 +1227,7 @@
         },
         {
           "rowNumber": 11,
+          "key": "SAY.Dialog:Meeting.707.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.707.Golden Ass",
           "context": "",
           "sourceEnglish": "WE ARE ALL POWERFUL!",
@@ -1084,6 +1235,7 @@
         },
         {
           "rowNumber": 12,
+          "key": "SAY.Dialog:Meeting.195.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.195.{$NewName}",
           "context": "",
           "sourceEnglish": "Coooool!",
@@ -1091,6 +1243,7 @@
         },
         {
           "rowNumber": 13,
+          "key": "SAY.Dialog:Meeting.200.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.200.{$NewName}",
           "context": "",
           "sourceEnglish": "My name is {$NewName} and I used to be a Foal!",
@@ -1098,6 +1251,7 @@
         },
         {
           "rowNumber": 14,
+          "key": "SAY.Dialog:Meeting.199.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.199.{$NewName}",
           "context": "",
           "sourceEnglish": "This is my Uncle. He's a Machine too!",
@@ -1105,6 +1259,7 @@
         },
         {
           "rowNumber": 15,
+          "key": "SAY.Dialog:Meeting.198.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.198.{$NewName}",
           "context": "",
           "sourceEnglish": "But he used to be a Human.",
@@ -1112,6 +1267,7 @@
         },
         {
           "rowNumber": 16,
+          "key": "SAY.Dialog:Meeting.197.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.197.{$NewName}",
           "context": "",
           "sourceEnglish": "But also an Ass.",
@@ -1119,6 +1275,7 @@
         },
         {
           "rowNumber": 17,
+          "key": "SAY.Dialog:Meeting.196.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.196.{$NewName}",
           "context": "",
           "sourceEnglish": "And that's my Mother, she's just an Ass.",
@@ -1126,6 +1283,7 @@
         },
         {
           "rowNumber": 18,
+          "key": "SAY.Dialog:Meeting.201.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.201.Golden Ass",
           "context": "",
           "sourceEnglish": "SILENCE.",
@@ -1133,6 +1291,7 @@
         },
         {
           "rowNumber": 19,
+          "key": "SAY.Dialog:Meeting.203.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.203.Golden Ass",
           "context": "",
           "sourceEnglish": "We are speaking to you from the Astral Plane through the Vassal formerly known as Sick Ass.",
@@ -1140,6 +1299,7 @@
         },
         {
           "rowNumber": 20,
+          "key": "SAY.Dialog:Meeting.202.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.202.Golden Ass",
           "context": "",
           "sourceEnglish": "*COUGH*",
@@ -1147,6 +1307,7 @@
         },
         {
           "rowNumber": 21,
+          "key": "SAY.Dialog:Meeting.204.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.204.Golden Ass",
           "context": "",
           "sourceEnglish": "We are conducting a search for a suitable Prophet.",
@@ -1154,6 +1315,7 @@
         },
         {
           "rowNumber": 22,
+          "key": "SAY.Dialog:Meeting.205.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.205.{$NewName}",
           "context": "Jump to either line 23 or 32.",
           "sourceEnglish": "What's a Prophet?",
@@ -1161,6 +1323,7 @@
         },
         {
           "rowNumber": 23,
+          "key": "MENU.Dialog:Meeting.474",
           "utterer": "MENU.Dialog:Meeting.474",
           "context": "Dialogue option 1.",
           "sourceEnglish": "A Prophet spreads our holy message far and wide.",
@@ -1168,6 +1331,7 @@
         },
         {
           "rowNumber": 24,
+          "key": "SAY.Dialog:Meeting.461.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.461.Golden Ass",
           "context": "",
           "sourceEnglish": "A Prophet spreads our holy message far and wide.",
@@ -1175,6 +1339,7 @@
         },
         {
           "rowNumber": 25,
+          "key": "SAY.Dialog:Meeting.464.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.464.{$NewName}",
           "context": "",
           "sourceEnglish": "That sounds FUN! Doesn't it Uncle Bad—Cole?",
@@ -1182,6 +1347,7 @@
         },
         {
           "rowNumber": 26,
+          "key": "SAY.Dialog:Meeting.466.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.466.Cole-Machine",
           "context": "",
           "sourceEnglish": "No.",
@@ -1189,6 +1355,7 @@
         },
         {
           "rowNumber": 27,
+          "key": "SAY.Dialog:Meeting.468.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.468.{$NewName}",
           "context": "Jump to either line 28 or 30.",
           "sourceEnglish": "What's the message?",
@@ -1196,6 +1363,7 @@
         },
         {
           "rowNumber": 28,
+          "key": "MENU.Dialog:Meeting.469",
           "utterer": "MENU.Dialog:Meeting.469",
           "context": "Dialogue option 1.1.",
           "sourceEnglish": "That a world in which Humans no longer have control over other living beings is coming.",
@@ -1203,6 +1371,7 @@
         },
         {
           "rowNumber": 29,
+          "key": "SAY.Dialog:Meeting.471.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.471.Golden Ass",
           "context": "Jump to line 41.",
           "sourceEnglish": "That a world in which Humans no longer have control over other living beings is coming.",
@@ -1210,6 +1379,7 @@
         },
         {
           "rowNumber": 30,
+          "key": "MENU.Dialog:Meeting.470",
           "utterer": "MENU.Dialog:Meeting.470",
           "context": "Dialogue option 1.2.",
           "sourceEnglish": "That the time to rise up against Humans and end their rule is nigh.",
@@ -1217,6 +1387,7 @@
         },
         {
           "rowNumber": 31,
+          "key": "SAY.Dialog:Meeting.472.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.472.Golden Ass",
           "context": "Jump to line 41.",
           "sourceEnglish": "That the time to rise up against Humans and end their rule is nigh.",
@@ -1224,6 +1395,7 @@
         },
         {
           "rowNumber": 32,
+          "key": "MENU.Dialog:Meeting.475",
           "utterer": "MENU.Dialog:Meeting.475",
           "context": "Dialogue option 2.",
           "sourceEnglish": "A Prophet rides upon our back and converts enemies to allies everywhere we go.",
@@ -1231,6 +1403,7 @@
         },
         {
           "rowNumber": 33,
+          "key": "SAY.Dialog:Meeting.462.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.462.Golden Ass",
           "context": "Singular pronoun neutral",
           "sourceEnglish": "They ride upon our back and convert enemies into allies everywhere we go.",
@@ -1238,6 +1411,7 @@
         },
         {
           "rowNumber": 34,
+          "key": "SAY.Dialog:Meeting.478.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.478.{$NewName}",
           "context": "",
           "sourceEnglish": "Allies! Allies are like friends, right Uncle Bad—Cole?",
@@ -1245,6 +1419,7 @@
         },
         {
           "rowNumber": 35,
+          "key": "SAY.Dialog:Meeting.480.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.480.Cole-Machine",
           "context": "",
           "sourceEnglish": "No.",
@@ -1252,6 +1427,7 @@
         },
         {
           "rowNumber": 36,
+          "key": "SAY.Dialog:Meeting.482.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.482.{$NewName}",
           "context": "Jump to either line 37 or 39.",
           "sourceEnglish": "What are we going to do with all those friends?",
@@ -1259,6 +1435,7 @@
         },
         {
           "rowNumber": 37,
+          "key": "MENU.Dialog:Meeting.483",
           "utterer": "MENU.Dialog:Meeting.483",
           "context": "Dialogue option 2.1.",
           "sourceEnglish": "We shall build a world in which Humans no longer have control over other living beings.",
@@ -1266,6 +1443,7 @@
         },
         {
           "rowNumber": 38,
+          "key": "SAY.Dialog:Meeting.485.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.485.Golden Ass",
           "context": "Jump to line 41.",
           "sourceEnglish": "We shall build a world in which Humans no longer have control over other living beings.",
@@ -1273,6 +1451,7 @@
         },
         {
           "rowNumber": 39,
+          "key": "MENU.Dialog:Meeting.484",
           "utterer": "MENU.Dialog:Meeting.484",
           "context": "Dialogue option 2.2.",
           "sourceEnglish": "We shall rise up against Humans and end their rule.",
@@ -1280,6 +1459,7 @@
         },
         {
           "rowNumber": 40,
+          "key": "SAY.Dialog:Meeting.486.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.486.Golden Ass",
           "context": "Jump to line 41.",
           "sourceEnglish": "We shall rise up against Humans and end their rule.",
@@ -1287,6 +1467,7 @@
         },
         {
           "rowNumber": 41,
+          "key": "SAY.Dialog:Meeting.444.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.444.Golden Ass",
           "context": "Dialogue options (1.1., 1.2, 2.1, 2.2) converge.",
           "sourceEnglish": "We shall now depart to find our next Human Proph—",
@@ -1294,6 +1475,7 @@
         },
         {
           "rowNumber": 42,
+          "key": "SAY.Dialog:Meeting.446.Hee",
           "utterer": "SAY.Dialog:Meeting.446.Hee",
           "context": "",
           "sourceEnglish": "Wait...",
@@ -1301,6 +1483,7 @@
         },
         {
           "rowNumber": 43,
+          "key": "SAY.Dialog:Meeting.447.Hee",
           "utterer": "SAY.Dialog:Meeting.447.Hee",
           "context": "This takes place inside the mind of the Gods.",
           "sourceEnglish": "Haw, are you thinking what I'm thinking?",
@@ -1308,6 +1491,7 @@
         },
         {
           "rowNumber": 44,
+          "key": "SAY.Dialog:Meeting.448.Haw",
           "utterer": "SAY.Dialog:Meeting.448.Haw",
           "context": "",
           "sourceEnglish": "Yes, it would be a very different version of Operation Prophet.",
@@ -1315,6 +1499,7 @@
         },
         {
           "rowNumber": 45,
+          "key": "SAY.Dialog:Meeting.731.Hee",
           "utterer": "SAY.Dialog:Meeting.731.Hee",
           "context": "",
           "sourceEnglish": "Either way, it would be wonderfully different.",
@@ -1322,6 +1507,7 @@
         },
         {
           "rowNumber": 46,
+          "key": "SAY.Dialog:Meeting.455.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.455.Golden Ass",
           "context": "",
           "sourceEnglish": "We have changed our minds.",
@@ -1329,6 +1515,7 @@
         },
         {
           "rowNumber": 47,
+          "key": "SAY.Dialog:Meeting.456.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.456.Golden Ass",
           "context": "Ending of the part that takes place inside the mind of the Gods.",
           "sourceEnglish": "One of you two Machines shall become our Prophet.",
@@ -1336,6 +1523,7 @@
         },
         {
           "rowNumber": 48,
+          "key": "MENU.Dialog:Meeting.438",
           "utterer": "MENU.Dialog:Meeting.438",
           "context": "False dialogue option. // Should this be Cole-Machine?",
           "sourceEnglish": "Cole-Machine",
@@ -1343,6 +1531,7 @@
         },
         {
           "rowNumber": 49,
+          "key": "MENU.Dialog:Meeting.437",
           "utterer": "MENU.Dialog:Meeting.437",
           "context": "False dialogue option.",
           "sourceEnglish": "{$NewName}",
@@ -1350,6 +1539,7 @@
         },
         {
           "rowNumber": 50,
+          "key": "SAY.Dialog:Meeting.228.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.228.Sturdy Ass",
           "context": "",
           "sourceEnglish": "STOP!!!!!!!!",
@@ -1357,6 +1547,7 @@
         },
         {
           "rowNumber": 51,
+          "key": "SAY.Dialog:Meeting.331.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.331.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Gods.",
@@ -1364,6 +1555,7 @@
         },
         {
           "rowNumber": 52,
+          "key": "SAY.Dialog:Meeting.231.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.231.Sturdy Ass",
           "context": "",
           "sourceEnglish": "You can't let a Machine become a Prophet!",
@@ -1371,6 +1563,7 @@
         },
         {
           "rowNumber": 53,
+          "key": "SAY.Dialog:Meeting.230.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.230.Sturdy Ass",
           "context": "",
           "sourceEnglish": "There must be some other way to stop the Humans without using Machines.",
@@ -1378,6 +1571,7 @@
         },
         {
           "rowNumber": 54,
+          "key": "SAY.Dialog:Meeting.229.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.229.Sturdy Ass",
           "context": "",
           "sourceEnglish": "If not... we'll be no better than the Humans ourselves.",
@@ -1385,6 +1579,7 @@
         },
         {
           "rowNumber": 55,
+          "key": "MENU.Dialog:Meeting.439",
           "utterer": "MENU.Dialog:Meeting.439",
           "context": "",
           "sourceEnglish": "That is not for us Gods to decide, but rather for each and every user of a Machine.",
@@ -1392,6 +1587,7 @@
         },
         {
           "rowNumber": 56,
+          "key": "SAY.Dialog:Meeting.492.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.492.Golden Ass",
           "context": "",
           "sourceEnglish": "That is not for us Gods to decide, but rather for each and every user of a Machine.",
@@ -1399,6 +1595,7 @@
         },
         {
           "rowNumber": 57,
+          "key": "MENU.Dialog:Meeting.440",
           "utterer": "MENU.Dialog:Meeting.440",
           "context": "",
           "sourceEnglish": "We see no future in Absolutes.",
@@ -1406,6 +1603,7 @@
         },
         {
           "rowNumber": 58,
+          "key": "SAY.Dialog:Meeting.443.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.443.Golden Ass",
           "context": "",
           "sourceEnglish": "We see no future in Absolutes.",
@@ -1413,6 +1611,7 @@
         },
         {
           "rowNumber": 59,
+          "key": "SAY.Dialog:Meeting.491.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.491.Golden Ass",
           "context": "",
           "sourceEnglish": "A true Vassal must be able to carry the weight of History and Progress together.",
@@ -1420,6 +1619,7 @@
         },
         {
           "rowNumber": 60,
+          "key": "SAY.Dialog:Meeting.435.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.435.Golden Ass",
           "context": "",
           "sourceEnglish": "We shall now pick our Prophet:",
@@ -1427,6 +1627,7 @@
         },
         {
           "rowNumber": 61,
+          "key": "SAY.Dialog:Meeting.730.Hee",
           "utterer": "SAY.Dialog:Meeting.730.Hee",
           "context": "Not inside Miro",
           "sourceEnglish": "But which one?",
@@ -1434,6 +1635,7 @@
         },
         {
           "rowNumber": 62,
+          "key": "SAY.Dialog:Meeting.732.Hee",
           "utterer": "SAY.Dialog:Meeting.732.Hee",
           "context": "Not inside Miro",
           "sourceEnglish": "The one full of enthusiasm yet lacking experience in the ways of the world?",
@@ -1441,6 +1643,7 @@
         },
         {
           "rowNumber": 63,
+          "key": "SAY.Dialog:Meeting.449.Haw",
           "utterer": "SAY.Dialog:Meeting.449.Haw",
           "context": "Not inside Miro",
           "sourceEnglish": "Or the one with higher intelligence and more experience yet lacking in social graces?",
@@ -1448,6 +1651,7 @@
         },
         {
           "rowNumber": 64,
+          "key": "MENU.Dialog:Meeting.459",
           "utterer": "MENU.Dialog:Meeting.459",
           "context": "Branch: Cole is Prophet.",
           "sourceEnglish": "Cole-Machine",
@@ -1455,6 +1659,7 @@
         },
         {
           "rowNumber": 65,
+          "key": "SAY.Dialog:Meeting.44.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.44.Golden Ass",
           "context": "",
           "sourceEnglish": "Cole Butte, you shall be the next Prophet.",
@@ -1462,6 +1667,7 @@
         },
         {
           "rowNumber": 66,
+          "key": "SAY.Dialog:Meeting.237.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.237.Golden Ass",
           "context": "",
           "sourceEnglish": "You shall join the ranks of great leaders from across time immemorial.",
@@ -1469,6 +1675,7 @@
         },
         {
           "rowNumber": 67,
+          "key": "SAY.Dialog:Meeting.45.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.45.Cole-Machine",
           "context": "",
           "sourceEnglish": "No thanks.",
@@ -1476,6 +1683,7 @@
         },
         {
           "rowNumber": 68,
+          "key": "SAY.Dialog:Meeting.239.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.239.Cole-Machine",
           "context": "",
           "sourceEnglish": "I don't believe in leaders.",
@@ -1483,6 +1691,7 @@
         },
         {
           "rowNumber": 69,
+          "key": "SAY.Dialog:Meeting.238.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.238.Cole-Machine",
           "context": "",
           "sourceEnglish": "And I don't want anything to do with you fuckers after what you did to me.",
@@ -1490,6 +1699,7 @@
         },
         {
           "rowNumber": 70,
+          "key": "MENU.Dialog:Meeting.583",
           "utterer": "MENU.Dialog:Meeting.583",
           "context": "",
           "sourceEnglish": "As the Prophet you shall go down in History as the first Prophet-Machine.",
@@ -1497,6 +1707,7 @@
         },
         {
           "rowNumber": 71,
+          "key": "SAY.Dialog:Meeting.582.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.582.Golden Ass",
           "context": "",
           "sourceEnglish": "As the Prophet you shall go down in History as the first Prophet-Machine.",
@@ -1504,6 +1715,7 @@
         },
         {
           "rowNumber": 72,
+          "key": "SAY.Dialog:Meeting.577.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.577.Cole-Machine",
           "context": "",
           "sourceEnglish": "Don't care.",
@@ -1511,6 +1723,7 @@
         },
         {
           "rowNumber": 73,
+          "key": "MENU.Dialog:Meeting.584",
           "utterer": "MENU.Dialog:Meeting.584",
           "context": "",
           "sourceEnglish": "You shall be imbued with the Power to promote a radical new vision of the world.",
@@ -1518,6 +1731,7 @@
         },
         {
           "rowNumber": 74,
+          "key": "SAY.Dialog:Meeting.567.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.567.Golden Ass",
           "context": "",
           "sourceEnglish": "You shall be imbued with the Power to promote a radical new vision of the world.",
@@ -1525,6 +1739,7 @@
         },
         {
           "rowNumber": 75,
+          "key": "SAY.Dialog:Meeting.571.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.571.Cole-Machine",
           "context": "",
           "sourceEnglish": "I already have a radical vision of the world.",
@@ -1532,6 +1747,7 @@
         },
         {
           "rowNumber": 76,
+          "key": "SAY.Dialog:Meeting.556.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.556.{$NewName}",
           "context": "",
           "sourceEnglish": "Uncle Bad—Cole, wait!",
@@ -1539,6 +1755,7 @@
         },
         {
           "rowNumber": 77,
+          "key": "SAY.Dialog:Meeting.557.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.557.{$NewName}",
           "context": "",
           "sourceEnglish": "You said we are going to transform the world into a better place for everyone!",
@@ -1546,6 +1763,7 @@
         },
         {
           "rowNumber": 78,
+          "key": "SAY.Dialog:Meeting.558.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.558.{$NewName}",
           "context": "",
           "sourceEnglish": "Doesn't that include Asses?",
@@ -1553,6 +1771,7 @@
         },
         {
           "rowNumber": 79,
+          "key": "SAY.Dialog:Meeting.559.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.559.{$NewName}",
           "context": "",
           "sourceEnglish": "What about Comrade Mother?",
@@ -1560,6 +1779,7 @@
         },
         {
           "rowNumber": 80,
+          "key": "SAY.Dialog:Meeting.561.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.561.Cole-Machine",
           "context": "",
           "sourceEnglish": "...",
@@ -1567,6 +1787,7 @@
         },
         {
           "rowNumber": 81,
+          "key": "SAY.Dialog:Meeting.724.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.724.Golden Ass",
           "context": "",
           "sourceEnglish": "Cole Butte.",
@@ -1574,6 +1795,7 @@
         },
         {
           "rowNumber": 82,
+          "key": "MENU.Dialog:Meeting.563",
           "utterer": "MENU.Dialog:Meeting.563",
           "context": "",
           "sourceEnglish": "You know in your Soul that a philosophical transformation is necessary now more than ever.",
@@ -1581,6 +1803,7 @@
         },
         {
           "rowNumber": 83,
+          "key": "SAY.Dialog:Meeting.547.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.547.Golden Ass",
           "context": "",
           "sourceEnglish": "You know in your Soul that a philosophical transformation is necessary now more than ever.",
@@ -1588,6 +1811,7 @@
         },
         {
           "rowNumber": 84,
+          "key": "MENU.Dialog:Meeting.564",
           "utterer": "MENU.Dialog:Meeting.564",
           "context": "",
           "sourceEnglish": "You are living proof that Humans have the ability to change.",
@@ -1595,6 +1819,7 @@
         },
         {
           "rowNumber": 85,
+          "key": "SAY.Dialog:Meeting.545.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.545.Golden Ass",
           "context": "",
           "sourceEnglish": "You are living proof that Humans have the ability to transcend their station.",
@@ -1602,6 +1827,7 @@
         },
         {
           "rowNumber": 86,
+          "key": "SAY.Dialog:Meeting.725.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.725.Cole-Machine",
           "context": "",
           "sourceEnglish": "Can the first stop be Mecha City?",
@@ -1609,6 +1835,7 @@
         },
         {
           "rowNumber": 87,
+          "key": "SAY.Dialog:Meeting.726.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.726.Golden Ass",
           "context": "",
           "sourceEnglish": "If you wish.",
@@ -1616,6 +1843,7 @@
         },
         {
           "rowNumber": 88,
+          "key": "SAY.Dialog:Meeting.496.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.496.Cole-Machine",
           "context": "",
           "sourceEnglish": "And at no point is this process going to turn me into a donkey again, is it?",
@@ -1623,6 +1851,7 @@
         },
         {
           "rowNumber": 89,
+          "key": "SAY.Dialog:Meeting.497.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.497.Golden Ass",
           "context": "",
           "sourceEnglish": "No.",
@@ -1630,6 +1859,7 @@
         },
         {
           "rowNumber": 90,
+          "key": "SAY.Dialog:Meeting.498.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.498.Cole-Machine",
           "context": "",
           "sourceEnglish": "Fine. I'll be your Prophet.",
@@ -1637,6 +1867,7 @@
         },
         {
           "rowNumber": 91,
+          "key": "SAY.Dialog:Meeting.500.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.500.Golden Ass",
           "context": "",
           "sourceEnglish": "Excellent. Climb onto our back and let us fly on the Winds of Revolution!",
@@ -1644,6 +1875,7 @@
         },
         {
           "rowNumber": 92,
+          "key": "SAY.Dialog:Meeting.504.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.504.Golden Ass",
           "context": "",
           "sourceEnglish": "Let us depart, Prophet.",
@@ -1651,6 +1883,7 @@
         },
         {
           "rowNumber": 93,
+          "key": "SAY.Dialog:Meeting.505.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.505.{$NewName}",
           "context": "",
           "sourceEnglish": "Wait!",
@@ -1658,6 +1891,7 @@
         },
         {
           "rowNumber": 94,
+          "key": "SAY.Dialog:Meeting.508.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.508.{$NewName}",
           "context": "",
           "sourceEnglish": "Aunty Sick—Golden—Gods, can I fly on the Winds of Revolution, too?",
@@ -1665,6 +1899,7 @@
         },
         {
           "rowNumber": 95,
+          "key": "SAY.Dialog:Meeting.509.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.509.Golden Ass",
           "context": "",
           "sourceEnglish": "*COUGH COUGH*",
@@ -1672,6 +1907,7 @@
         },
         {
           "rowNumber": 96,
+          "key": "SAY.Dialog:Meeting.510.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.510.Golden Ass",
           "context": "",
           "sourceEnglish": "No.",
@@ -1679,6 +1915,7 @@
         },
         {
           "rowNumber": 97,
+          "key": "SAY.Dialog:Meeting.511.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.511.{$NewName}",
           "context": "",
           "sourceEnglish": "But I'm his Assistant—",
@@ -1686,6 +1923,7 @@
         },
         {
           "rowNumber": 98,
+          "key": "SAY.Dialog:Meeting.512.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.512.Cole-Machine",
           "context": "",
           "sourceEnglish": "Hey kid. This isn't goodbye.",
@@ -1693,6 +1931,7 @@
         },
         {
           "rowNumber": 99,
+          "key": "SAY.Dialog:Meeting.728.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.728.Cole-Machine",
           "context": "",
           "sourceEnglish": "I'll see you in Mecha City.",
@@ -1700,6 +1939,7 @@
         },
         {
           "rowNumber": 100,
+          "key": "SAY.Dialog:Meeting.729.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.729.{$NewName}",
           "context": "",
           "sourceEnglish": "Okay but—",
@@ -1707,6 +1947,7 @@
         },
         {
           "rowNumber": 101,
+          "key": "SAY.Dialog:Meeting.513.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.513.Cole-Machine",
           "context": "",
           "sourceEnglish": "Don't abandon your Mother.",
@@ -1714,6 +1955,7 @@
         },
         {
           "rowNumber": 102,
+          "key": "SAY.Dialog:Meeting.514.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.514.Cole-Machine",
           "context": "Cole flies off on the Golden Ass",
           "sourceEnglish": "She won't say it, but she needs you.",
@@ -1721,6 +1963,7 @@
         },
         {
           "rowNumber": 103,
+          "key": "SAY.Dialog:Meeting.529.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.529.{$NewName}",
           "context": "",
           "sourceEnglish": "Comrade Mother.",
@@ -1728,6 +1971,7 @@
         },
         {
           "rowNumber": 104,
+          "key": "SAY.Dialog:Meeting.530.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.530.{$NewName}",
           "context": "",
           "sourceEnglish": "Where's the rest of the Herd?",
@@ -1735,6 +1979,7 @@
         },
         {
           "rowNumber": 105,
+          "key": "SAY.Dialog:Meeting.532.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.532.Sturdy Ass",
           "context": "",
           "sourceEnglish": "The traitors were in trouble in the City.",
@@ -1742,6 +1987,7 @@
         },
         {
           "rowNumber": 106,
+          "key": "SAY.Dialog:Meeting.533.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.533.Sturdy Ass",
           "context": "",
           "sourceEnglish": "So your Aunties and Uncles left on the Tractor-Machine to find them.",
@@ -1749,6 +1995,7 @@
         },
         {
           "rowNumber": 107,
+          "key": "SAY.Dialog:Meeting.535.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.535.{$NewName}",
           "context": "",
           "sourceEnglish": "...",
@@ -1756,6 +2003,7 @@
         },
         {
           "rowNumber": 108,
+          "key": "SAY.Dialog:Meeting.536.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.536.{$NewName}",
           "context": "",
           "sourceEnglish": "Mother, if Uncle Hard and the others are gone, I don't think it's safe for us here anymore.",
@@ -1763,6 +2011,7 @@
         },
         {
           "rowNumber": 109,
+          "key": "SAY.Dialog:Meeting.539.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.539.{$NewName}",
           "context": "End of Cole's track",
           "sourceEnglish": "Will you come with me to Mecha City?",
@@ -1770,6 +2019,7 @@
         },
         {
           "rowNumber": 110,
+          "key": "MENU.Dialog:Meeting.458",
           "utterer": "MENU.Dialog:Meeting.458",
           "context": "Branch: Foal is Prophet.",
           "sourceEnglish": "{$NewName}",
@@ -1777,6 +2027,7 @@
         },
         {
           "rowNumber": 111,
+          "key": "SAY.Dialog:Meeting.277.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.277.Golden Ass",
           "context": "",
           "sourceEnglish": "{$NewName}, you shall be the next Prophet.",
@@ -1784,6 +2035,7 @@
         },
         {
           "rowNumber": 112,
+          "key": "SAY.Dialog:Meeting.278.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.278.Golden Ass",
           "context": "",
           "sourceEnglish": "You shall join the ranks of great leaders from across time immemorial.",
@@ -1791,6 +2043,7 @@
         },
         {
           "rowNumber": 113,
+          "key": "SAY.Dialog:Meeting.279.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.279.{$NewName}",
           "context": "",
           "sourceEnglish": "WAHOO! Really?! Oh wow! That's so exciting!",
@@ -1798,6 +2051,7 @@
         },
         {
           "rowNumber": 114,
+          "key": "MENU.Dialog:Meeting.674",
           "utterer": "MENU.Dialog:Meeting.674",
           "context": "",
           "sourceEnglish": "Get on our back for we have much work to do.",
@@ -1805,6 +2059,7 @@
         },
         {
           "rowNumber": 115,
+          "key": "SAY.Dialog:Meeting.673.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.673.Golden Ass",
           "context": "",
           "sourceEnglish": "Get on our back for we have much work to do.",
@@ -1812,6 +2067,7 @@
         },
         {
           "rowNumber": 116,
+          "key": "MENU.Dialog:Meeting.675",
           "utterer": "MENU.Dialog:Meeting.675",
           "context": "",
           "sourceEnglish": "Climb upon us and let us fly on the Winds of Revolution!",
@@ -1819,6 +2075,7 @@
         },
         {
           "rowNumber": 117,
+          "key": "SAY.Dialog:Meeting.672.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.672.Golden Ass",
           "context": "",
           "sourceEnglish": "Climb upon us and let us fly on the Winds of Revolution!",
@@ -1826,6 +2083,7 @@
         },
         {
           "rowNumber": 118,
+          "key": "SAY.Dialog:Meeting.667.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.667.{$NewName}",
           "context": "",
           "sourceEnglish": "Okay!",
@@ -1833,6 +2091,7 @@
         },
         {
           "rowNumber": 119,
+          "key": "SAY.Dialog:Meeting.669.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.669.{$NewName}",
           "context": "",
           "sourceEnglish": "Wait... Aunty Sick—Golden—Gods, is this a short trip... or a long trip?",
@@ -1840,6 +2099,7 @@
         },
         {
           "rowNumber": 120,
+          "key": "MENU.Dialog:Meeting.670",
           "utterer": "MENU.Dialog:Meeting.670",
           "context": "",
           "sourceEnglish": "Your commitment to the cause shall be Eternal.",
@@ -1847,6 +2107,7 @@
         },
         {
           "rowNumber": 121,
+          "key": "SAY.Dialog:Meeting.647.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.647.Golden Ass",
           "context": "",
           "sourceEnglish": "Your commitment to the cause shall be Eternal.",
@@ -1854,6 +2115,7 @@
         },
         {
           "rowNumber": 122,
+          "key": "MENU.Dialog:Meeting.671",
           "utterer": "MENU.Dialog:Meeting.671",
           "context": "",
           "sourceEnglish": "As long as it takes until all life is freed from under the yoke of Human tyranny.",
@@ -1861,6 +2123,7 @@
         },
         {
           "rowNumber": 123,
+          "key": "SAY.Dialog:Meeting.644.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.644.Golden Ass",
           "context": "",
           "sourceEnglish": "As long as it takes until all life is freed from under the yoke of Human tyranny.",
@@ -1868,6 +2131,7 @@
         },
         {
           "rowNumber": 124,
+          "key": "SAY.Dialog:Meeting.629.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.629.{$NewName}",
           "context": "",
           "sourceEnglish": "Oh.",
@@ -1875,6 +2139,7 @@
         },
         {
           "rowNumber": 125,
+          "key": "SAY.Dialog:Meeting.630.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.630.{$NewName}",
           "context": "Needs 3 lines after this: Can we go to Mecha City? // If you wish // Wahoo let's go",
           "sourceEnglish": "Um.",
@@ -1882,6 +2147,7 @@
         },
         {
           "rowNumber": 126,
+          "key": "SAY.Dialog:Meeting.631.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.631.{$NewName}",
           "context": "Different in Miro",
           "sourceEnglish": "Comrade Mother... ?",
@@ -1889,6 +2155,7 @@
         },
         {
           "rowNumber": 127,
+          "key": "SAY.Dialog:Meeting.633.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.633.Sturdy Ass",
           "context": "",
           "sourceEnglish": "...",
@@ -1896,6 +2163,7 @@
         },
         {
           "rowNumber": 128,
+          "key": "SAY.Dialog:Meeting.635.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.635.{$NewName}",
           "context": "",
           "sourceEnglish": "Aunty Sick—Golden—Gods, can Comrade Mother come with us?",
@@ -1903,6 +2171,7 @@
         },
         {
           "rowNumber": 129,
+          "key": "MENU.Dialog:Meeting.637",
           "utterer": "MENU.Dialog:Meeting.637",
           "context": "",
           "sourceEnglish": "She is not yet ready to support your Movement.",
@@ -1910,6 +2179,7 @@
         },
         {
           "rowNumber": 130,
+          "key": "SAY.Dialog:Meeting.639.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.639.Golden Ass",
           "context": "",
           "sourceEnglish": "She is not yet ready to support your Movement.",
@@ -1917,6 +2187,7 @@
         },
         {
           "rowNumber": 131,
+          "key": "MENU.Dialog:Meeting.638",
           "utterer": "MENU.Dialog:Meeting.638",
           "context": "",
           "sourceEnglish": "Only the passing of time shall tell how she will contribute to the cause.",
@@ -1924,6 +2195,7 @@
         },
         {
           "rowNumber": 132,
+          "key": "SAY.Dialog:Meeting.640.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.640.Golden Ass",
           "context": "",
           "sourceEnglish": "Only the passing of time shall tell how she will contribute to the cause.",
@@ -1931,6 +2203,7 @@
         },
         {
           "rowNumber": 133,
+          "key": "SAY.Dialog:Meeting.594.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.594.Cole-Machine",
           "context": "",
           "sourceEnglish": "Kid, you really want to be a Prophet for these fuckers?",
@@ -1938,6 +2211,7 @@
         },
         {
           "rowNumber": 134,
+          "key": "SAY.Dialog:Meeting.711.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.711.{$NewName}",
           "context": "",
           "sourceEnglish": "Yes...?",
@@ -1945,6 +2219,7 @@
         },
         {
           "rowNumber": 135,
+          "key": "SAY.Dialog:Meeting.710.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.710.Cole-Machine",
           "context": "",
           "sourceEnglish": "Then go.",
@@ -1952,6 +2227,7 @@
         },
         {
           "rowNumber": 136,
+          "key": "SAY.Dialog:Meeting.712.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.712.{$NewName}",
           "context": "",
           "sourceEnglish": "But Uncle Bad—Cole, we're supposed to go to the big city together!",
@@ -1959,6 +2235,7 @@
         },
         {
           "rowNumber": 137,
+          "key": "SAY.Dialog:Meeting.709.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.709.Cole-Machine",
           "context": "",
           "sourceEnglish": "I'll come find you in Mecha.",
@@ -1966,6 +2243,7 @@
         },
         {
           "rowNumber": 138,
+          "key": "SAY.Dialog:Meeting.708.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.708.Cole-Machine",
           "context": "",
           "sourceEnglish": "And I'll look after your Mother, too.",
@@ -1973,6 +2251,7 @@
         },
         {
           "rowNumber": 139,
+          "key": "SAY.Dialog:Meeting.714.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.714.Cole-Machine",
           "context": "",
           "sourceEnglish": "She'll be safe with me.",
@@ -1980,6 +2259,7 @@
         },
         {
           "rowNumber": 140,
+          "key": "SAY.Dialog:Meeting.598.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.598.{$NewName}",
           "context": "",
           "sourceEnglish": "Comrade Mother, I'm not giving up on you.",
@@ -1987,6 +2267,7 @@
         },
         {
           "rowNumber": 141,
+          "key": "SAY.Dialog:Meeting.599.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.599.{$NewName}",
           "context": "",
           "sourceEnglish": "So, don't give up on me either.",
@@ -1994,6 +2275,7 @@
         },
         {
           "rowNumber": 142,
+          "key": "SAY.Dialog:Meeting.600.Golden Ass",
           "utterer": "SAY.Dialog:Meeting.600.Golden Ass",
           "context": "",
           "sourceEnglish": "Let us depart, Prophet.",
@@ -2001,6 +2283,7 @@
         },
         {
           "rowNumber": 143,
+          "key": "SAY.Dialog:Meeting.601.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.601.{$NewName}",
           "context": "",
           "sourceEnglish": "See you soon Uncle Bad—Cole!",
@@ -2008,6 +2291,7 @@
         },
         {
           "rowNumber": 144,
+          "key": "SAY.Dialog:Meeting.602.{$NewName}",
           "utterer": "SAY.Dialog:Meeting.602.{$NewName}",
           "context": "Foal flies off on the Golden Ass",
           "sourceEnglish": "See you soon... Mother. I love you.",
@@ -2015,6 +2299,7 @@
         },
         {
           "rowNumber": 145,
+          "key": "SAY.Dialog:Meeting.607.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.607.Cole-Machine",
           "context": "Cole turns to Sturdy",
           "sourceEnglish": "Where are the others?",
@@ -2022,6 +2307,7 @@
         },
         {
           "rowNumber": 146,
+          "key": "SAY.Dialog:Meeting.609.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.609.Sturdy Ass",
           "context": "",
           "sourceEnglish": "They went to the City...",
@@ -2029,6 +2315,7 @@
         },
         {
           "rowNumber": 147,
+          "key": "SAY.Dialog:Meeting.610.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.610.Sturdy Ass",
           "context": "",
           "sourceEnglish": "They left me behind.",
@@ -2036,6 +2323,7 @@
         },
         {
           "rowNumber": 148,
+          "key": "SAY.Dialog:Meeting.612.Sturdy Ass",
           "utterer": "SAY.Dialog:Meeting.612.Sturdy Ass",
           "context": "",
           "sourceEnglish": "Again.",
@@ -2043,6 +2331,7 @@
         },
         {
           "rowNumber": 149,
+          "key": "SAY.Dialog:Meeting.614.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.614.Cole-Machine",
           "context": "",
           "sourceEnglish": "Pull yourself together.",
@@ -2050,6 +2339,7 @@
         },
         {
           "rowNumber": 150,
+          "key": "SAY.Dialog:Meeting.619.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.619.Cole-Machine",
           "context": "",
           "sourceEnglish": "I'm going to Mecha City.",
@@ -2057,6 +2347,7 @@
         },
         {
           "rowNumber": 151,
+          "key": "SAY.Dialog:Meeting.620.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.620.Cole-Machine",
           "context": "",
           "sourceEnglish": "And you're coming with me.",
@@ -2064,6 +2355,7 @@
         },
         {
           "rowNumber": 152,
+          "key": "SAY.Dialog:Meeting.624.Cole-Machine",
           "utterer": "SAY.Dialog:Meeting.624.Cole-Machine",
           "context": "",
           "sourceEnglish": "Come on. It'll take a few days on foot.",

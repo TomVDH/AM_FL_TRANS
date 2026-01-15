@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 104,
+    "rowNumber": 107,
+    "key": "SAY.Dialog_Sculpture4_VillageEast.351.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture4_VillageEast.351.Sturdy Ass",
+    "context": "Art making mini game.",
+    "sourceEnglish": "Maybe I could make something special here?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 105,
+    "rowNumber": 108,
+    "key": "SAY.Dialog_Sculpture5_FannysideEast.348.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture5_FannysideEast.348.Sturdy Ass",
+    "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+    "sourceEnglish": "This place was so beautiful..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 106,
+    "rowNumber": 109,
+    "key": "SAY.Dialog_Sculpture5_FannysideEast.349.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture5_FannysideEast.349.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "And now it's just a pile of junk left behind and forgotten."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 107,
+    "rowNumber": 110,
+    "key": "SAY.Dialog_Sculpture5_FannysideEast.351.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture5_FannysideEast.351.Sturdy Ass",
+    "context": "Art making mini game.",
+    "sourceEnglish": "Maybe I could make something special here?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 108,
+    "rowNumber": 111,
+    "key": "SAY.Dialog_Sculpture6_Mine.349.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture6_Mine.349.Sturdy Ass",
+    "context": "Dialogue for when Sturdy first approaches detritus and wants to make art. Note for translators: There are multiples of these dialogues (exact copies) because Sturdy could approach any of the pieces first.",
+    "sourceEnglish": "This place was so beautiful..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 109,
+    "rowNumber": 112,
+    "key": "SAY.Dialog_Sculpture6_Mine.350.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture6_Mine.350.Sturdy Ass",
+    "context": "",
+    "sourceEnglish": "And now it's just a pile of junk left behind and forgotten."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 110,
+    "rowNumber": 113,
+    "key": "SAY.Dialog_Sculpture6_Mine.352.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture6_Mine.352.Sturdy Ass",
+    "context": "Art making mini game.",
+    "sourceEnglish": "Maybe I could make something special here?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 111,
+    "rowNumber": 114,
+    "key": "SAY.Dialog:Well.10.Sturdy Ass",
+    "utterer": "SAY.Dialog:Well.10.Sturdy Ass",
+    "context": "Dialogue for when Sturdy is at the Well.",
+    "sourceEnglish": "Oh Comrade Trusty..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 112,
+    "rowNumber": 115,
+    "key": "SAY.Dialog:Well.12.Sturdy Ass",
+    "utterer": "SAY.Dialog:Well.12.Sturdy Ass",
+    "context": "Repeater line.",
+    "sourceEnglish": "Rest in power my dear Comrade."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 113,
+    "rowNumber": 116,
+    "key": "SAY.Dialog_Sculpture0_VillageFarWestExit.315.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.315.Sturdy Ass",
+    "context": "Sturdy approaches a sculpture.",
+    "sourceEnglish": "This sculpture reminds me of how difficult it was to come up with a name for the Foal."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 114,
+    "rowNumber": 117,
+    "key": "SAY.Dialog_Sculpture0_VillageFarWestExit.316.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.316.Sturdy Ass",
+    "context": "Jump to line x, y, or z.",
+    "sourceEnglish": "It needs a title:"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 115,
+    "rowNumber": 118,
+    "key": "MENU.Dialog_Sculpture0_VillageFarWestExit.312",
+    "utterer": "MENU.Dialog_Sculpture0_VillageFarWestExit.312",
+    "context": "Dialogue option 1.",
+    "sourceEnglish": "\"Enfant Terrible\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 116,
+    "rowNumber": 119,
+    "key": "SAY.Dialog_Sculpture0_VillageFarWestExit.16.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.16.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"Enfant Terrible\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 117,
+    "rowNumber": 120,
+    "key": "MENU.Dialog_Sculpture0_VillageFarWestExit.314",
+    "utterer": "MENU.Dialog_Sculpture0_VillageFarWestExit.314",
+    "context": "Dialogue option 2.",
+    "sourceEnglish": "\"Kin Aesthetic Response\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 118,
+    "rowNumber": 121,
+    "key": "SAY.Dialog_Sculpture0_VillageFarWestExit.17.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.17.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"Kin Aesthetic Response\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 119,
+    "rowNumber": 122,
+    "key": "MENU.Dialog_Sculpture0_VillageFarWestExit.313",
+    "utterer": "MENU.Dialog_Sculpture0_VillageFarWestExit.313",
+    "context": "Dialogue option 3.",
+    "sourceEnglish": "\"Growing Pains\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 120,
+    "rowNumber": 123,
+    "key": "SAY.Dialog_Sculpture0_VillageFarWestExit.18.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.18.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"Growing Pains\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 121,
+    "rowNumber": 124,
+    "key": "SAY.Dialog_Sculpture0_VillageFarWestExit.310.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture0_VillageFarWestExit.310.Sturdy Ass",
+    "context": "Dialogue (1, 2, 3) converges.",
+    "sourceEnglish": "The Foal can be a real hoof-full sometimes."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 122,
+    "rowNumber": 125,
+    "key": "SAY.Dialog_Sculpture1_VillageWest.15.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture1_VillageWest.15.Sturdy Ass",
+    "context": "Sturdy approaches a sculpture.",
+    "sourceEnglish": "Making art is finally giving me an outlet to express myself."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 123,
+    "rowNumber": 126,
+    "key": "SAY.Dialog_Sculpture1_VillageWest.311.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture1_VillageWest.311.Sturdy Ass",
+    "context": "Jump to line x, y, or z.",
+    "sourceEnglish": "But who am I?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 124,
+    "rowNumber": 127,
+    "key": "MENU.Dialog_Sculpture1_VillageWest.16",
+    "utterer": "MENU.Dialog_Sculpture1_VillageWest.16",
+    "context": "Dialogue option 1.",
+    "sourceEnglish": "\"My Womb, My Self\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 125,
+    "rowNumber": 128,
+    "key": "SAY.Dialog_Sculpture1_VillageWest.20.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture1_VillageWest.20.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"My Womb, My Self\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 126,
+    "rowNumber": 129,
+    "key": "MENU.Dialog_Sculpture1_VillageWest.17",
+    "utterer": "MENU.Dialog_Sculpture1_VillageWest.17",
+    "context": "Dialogue option 2.",
+    "sourceEnglish": "\"Mother Courage\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 127,
+    "rowNumber": 130,
+    "key": "SAY.Dialog_Sculpture1_VillageWest.23.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture1_VillageWest.23.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"Mother Courage\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 128,
+    "rowNumber": 131,
+    "key": "MENU.Dialog_Sculpture1_VillageWest.18",
+    "utterer": "MENU.Dialog_Sculpture1_VillageWest.18",
+    "context": "Dialogue option 3.",
+    "sourceEnglish": "\"Ecstasy of a Mother\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 129,
+    "rowNumber": 132,
+    "key": "SAY.Dialog_Sculpture1_VillageWest.26.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture1_VillageWest.26.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"Ecstasy of a Mother\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 130,
+    "rowNumber": 133,
+    "key": "SAY.Dialog_Sculpture1_VillageWest.303.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture1_VillageWest.303.Sturdy Ass",
+    "context": "Dialogue (1, 2, 3) converges.",
+    "sourceEnglish": "Does being a mother define me?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 131,
+    "rowNumber": 134,
+    "key": "SAY.Dialog_Sculpture2_VillageNorth.17.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture2_VillageNorth.17.Sturdy Ass",
+    "context": "Sturdy approaches a sculpture.",
+    "sourceEnglish": "Machines could never make a sculpture like this one!"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 132,
+    "rowNumber": 135,
+    "key": "SAY.Dialog_Sculpture2_VillageNorth.311.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture2_VillageNorth.311.Sturdy Ass",
+    "context": "Jump to line x, y, or z.",
+    "sourceEnglish": "What should I call this?"
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 133,
+    "rowNumber": 136,
+    "key": "MENU.Dialog_Sculpture2_VillageNorth.18",
+    "utterer": "MENU.Dialog_Sculpture2_VillageNorth.18",
+    "context": "Dialogue option 1.",
+    "sourceEnglish": "\"If The Machines Never Were\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 134,
+    "rowNumber": 137,
+    "key": "SAY.Dialog_Sculpture2_VillageNorth.22.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture2_VillageNorth.22.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"If The Machines Never Were\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 135,
+    "rowNumber": 138,
+    "key": "MENU.Dialog_Sculpture2_VillageNorth.19",
+    "utterer": "MENU.Dialog_Sculpture2_VillageNorth.19",
+    "context": "Dialogue option 2.",
+    "sourceEnglish": "\"The Protest in My Heart\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 136,
+    "rowNumber": 139,
+    "key": "SAY.Dialog_Sculpture2_VillageNorth.25.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture2_VillageNorth.25.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"The Protest in My Heart\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 137,
+    "rowNumber": 140,
+    "key": "MENU.Dialog_Sculpture2_VillageNorth.20",
+    "utterer": "MENU.Dialog_Sculpture2_VillageNorth.20",
+    "context": "Dialogue option 3.",
+    "sourceEnglish": "\"The Tyranny of Machinery\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 138,
+    "rowNumber": 141,
+    "key": "SAY.Dialog_Sculpture2_VillageNorth.28.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture2_VillageNorth.28.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"The Tyranny of Machinery\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 139,
+    "rowNumber": 142,
+    "key": "SAY.Dialog_Sculpture2_VillageNorth.303.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture2_VillageNorth.303.Sturdy Ass",
+    "context": "Dialogue (1, 2, 3) converges.",
+    "sourceEnglish": "Damn those evil, soulless, job-taking, child-killing Machines."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 140,
+    "rowNumber": 143,
+    "key": "SAY.Dialog_Sculpture3_VillageSouth.17.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture3_VillageSouth.17.Sturdy Ass",
+    "context": "Sturdy approaches a sculpture. Jump to line x, y, or z.",
+    "sourceEnglish": "Trusty was always better at coming up with names..."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 141,
+    "rowNumber": 144,
+    "key": "MENU.Dialog_Sculpture3_VillageSouth.19",
+    "utterer": "MENU.Dialog_Sculpture3_VillageSouth.19",
+    "context": "Dialogue option 1.",
+    "sourceEnglish": "\"Trusty, All is Well\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 142,
+    "rowNumber": 145,
+    "key": "SAY.Dialog_Sculpture3_VillageSouth.340.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture3_VillageSouth.340.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"Trusty, All is Well\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 143,
+    "rowNumber": 146,
+    "key": "MENU.Dialog_Sculpture3_VillageSouth.20",
+    "utterer": "MENU.Dialog_Sculpture3_VillageSouth.20",
+    "context": "Dialogue option 2.",
+    "sourceEnglish": "\"hee haw hi hon 'ee ah he a'w\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 144,
+    "rowNumber": 147,
+    "key": "SAY.Dialog_Sculpture3_VillageSouth.338.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture3_VillageSouth.338.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"hee haw hi hon 'ee ah he a'w\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 145,
+    "rowNumber": 148,
+    "key": "MENU.Dialog_Sculpture3_VillageSouth.18",
+    "utterer": "MENU.Dialog_Sculpture3_VillageSouth.18",
+    "context": "Dialogue option 3. This variation appears if Old Ass's last words were 'Ass Power'.",
+    "sourceEnglish": "\"Ass Power!\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 146,
+    "rowNumber": 149,
+    "key": "SAY.Dialog_Sculpture3_VillageSouth.333.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture3_VillageSouth.333.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"Ass Power!\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 147,
+    "rowNumber": 150,
+    "key": "MENU.Dialog_Sculpture3_VillageSouth.327",
+    "utterer": "MENU.Dialog_Sculpture3_VillageSouth.327",
+    "context": "Dialogue option 3. This variation appears if Old Ass's last words were 'I'm scared'.",
+    "sourceEnglish": "\"I'm Scared\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 148,
+    "rowNumber": 151,
+    "key": "SAY.Dialog_Sculpture3_VillageSouth.336.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture3_VillageSouth.336.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"I'm Scared\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 149,
+    "rowNumber": 152,
+    "key": "SAY.Dialog_Sculpture3_VillageSouth.303.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture3_VillageSouth.303.Sturdy Ass",
+    "context": "Dialogue (1, 2, 3) converges.",
+    "sourceEnglish": "Our Herd has lost so much."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 150,
+    "rowNumber": 153,
+    "key": "SAY.Dialog_Sculpture4_VillageEast.17.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture4_VillageEast.17.Sturdy Ass",
+    "context": "Sturdy approaches a sculpture. Jump to line x, y, or z.",
+    "sourceEnglish": "Being an artist is one of the most spiritual things I've done with my life."
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 151,
+    "rowNumber": 154,
+    "key": "MENU.Dialog_Sculpture4_VillageEast.18",
+    "utterer": "MENU.Dialog_Sculpture4_VillageEast.18",
+    "context": "Dialogue option 1.",
+    "sourceEnglish": "\"The Gods Leadeth Me\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 152,
+    "rowNumber": 155,
+    "key": "SAY.Dialog_Sculpture4_VillageEast.22.Sturdy Ass",
+    "utterer": "SAY.Dialog_Sculpture4_VillageEast.22.Sturdy Ass",
+    "context": "Jump to line x.",
+    "sourceEnglish": "\"The Gods Leadeth Me\""
+  },
+  {
+    "fileName": "6_asses.masses_E6Proxy.json",
+    "sheetName": "E6_World_localization",
+    "entryIndex": 153,
+    "rowNumber": 156,
+    "key": "MENU.Dialog_Sculpture4_VillageEast.19",
+    "utterer": "MENU.Dialog_Sculpture4_VillageEast.19",
+    "context": "Dialogue option 2.",
+    "sourceEnglish": "\"Golden Showers for All\""
+  }
+]

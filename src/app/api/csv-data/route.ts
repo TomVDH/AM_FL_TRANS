@@ -49,6 +49,10 @@ interface CodexCSVEntry {
   english: string;
   dutch: string;
   category: string;
+  nicknames?: string;
+  bio?: string;
+  gender?: string;
+  dialogueStyle?: string;
 }
 
 /**
@@ -87,7 +91,7 @@ function parseCharacterCSV(csvContent: string) {
 
 /**
  * Parse codex translations CSV content (new unified format)
- * Format: name,description,english,dutch,category
+ * Format: name,description,english,dutch,category,nicknames,bio,gender,dialogueStyle
  * @param csvContent - Raw CSV content
  * @returns Parsed codex data
  */
@@ -106,7 +110,11 @@ function parseCodexCSV(csvContent: string) {
         description: values[1],
         english: values[2],
         dutch: values[3],
-        category: values[4] || 'CHARACTER'
+        category: values[4] || 'CHARACTER',
+        nicknames: values[5] || '',
+        bio: values[6] || '',
+        gender: values[7] || '',
+        dialogueStyle: values[8] || ''
       });
     }
   }

@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Boiling_localization",
+    "entryIndex": 20,
+    "rowNumber": 23,
+    "key": "WRITE.Dialog:Localizer.3",
+    "utterer": "WRITE.Dialog:Localizer.3",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Terrible plan."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Boiling_localization",
+    "entryIndex": 21,
+    "rowNumber": 24,
+    "key": "WRITE.Dialog:Localizer.4",
+    "utterer": "WRITE.Dialog:Localizer.4",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Come on Smart, you can do better."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Boiling_localization",
+    "entryIndex": 22,
+    "rowNumber": 25,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Nope."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Boiling_localization",
+    "entryIndex": 23,
+    "rowNumber": 26,
+    "key": "WRITE.Dialog:Localizer.6",
+    "utterer": "WRITE.Dialog:Localizer.6",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Let's try that again..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Boiling_localization",
+    "entryIndex": 24,
+    "rowNumber": 27,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "You can do this."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:Opening.48.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.48.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Come on. We have to be getting close to an exit!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:Opening.50.Big Ass",
+    "utterer": "SAY.Dialog:Opening.50.Big Ass",
+    "context": "",
+    "sourceEnglish": "Wait."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Opening.24.Big Ass",
+    "utterer": "SAY.Dialog:Opening.24.Big Ass",
+    "context": "",
+    "sourceEnglish": "We'll never get by unnoticed."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Opening.27.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.27.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Hmmm..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Opening.26.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.26.Smart Ass",
+    "context": "",
+    "sourceEnglish": "We're going to need to think outside the box."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:Opening.28.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.28.Smart Ass",
+    "context": "Camera zoom into Smart's mind. The Asses get into boxes and sneak past.",
+    "sourceEnglish": "Got it!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:Ending.3.Smart Ass",
+    "utterer": "SAY.Dialog:Ending.3.Smart Ass",
+    "context": "All Asses reach the exit and hop onto a conveyor belt to leave the room.",
+    "sourceEnglish": "Easy!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "WRITE.Dialog:Localizer.1",
+    "utterer": "WRITE.Dialog:Localizer.1",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "That's not it."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "WRITE.Dialog:Localizer.2",
+    "utterer": "WRITE.Dialog:Localizer.2",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "There has to be another way."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "WRITE.Dialog:Localizer.3",
+    "utterer": "WRITE.Dialog:Localizer.3",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Terrible plan."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "WRITE.Dialog:Localizer.4",
+    "utterer": "WRITE.Dialog:Localizer.4",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Come on Smart, you can do better."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Nope."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "WRITE.Dialog:Localizer.6",
+    "utterer": "WRITE.Dialog:Localizer.6",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Let's try that again..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Ejiao_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "You can do this."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:Opening.9.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.9.Smart Ass",
+    "context": "One of the final levels in the Factory. The Asses jump off the conveyor belt and are on opposite sides of a big wall.",
+    "sourceEnglish": "JUMP!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:Opening.23.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.23.Smart Ass",
+    "context": "",
+    "sourceEnglish": "What are you doing over there?!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:Opening.3.Kick Ass",
+    "utterer": "SAY.Dialog:Opening.3.Kick Ass",
+    "context": "",
+    "sourceEnglish": "We JUMPED! Just like YOU SAID!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:Opening.25.Big Ass",
+    "utterer": "SAY.Dialog:Opening.25.Big Ass",
+    "context": "",
+    "sourceEnglish": "What'll we do?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:Opening.21.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.21.Smart Ass",
+    "context": "",
+    "sourceEnglish": "We're going to have to work like a Team..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:Opening.8.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.8.Smart Ass",
+    "context": "Camera zoom into Smart's mind.",
+    "sourceEnglish": "Time to strategize!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:Opening.32.Smart Ass",
+    "utterer": "SAY.Dialog:Opening.32.Smart Ass",
+    "context": "The Asses leave the stage one-at-a-time.",
+    "sourceEnglish": "Who should go first?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "WRITE.Dialog:Localizer.1",
+    "utterer": "WRITE.Dialog:Localizer.1",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "That's not it."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "WRITE.Dialog:Localizer.2",
+    "utterer": "WRITE.Dialog:Localizer.2",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "There has to be another way."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "WRITE.Dialog:Localizer.3",
+    "utterer": "WRITE.Dialog:Localizer.3",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Terrible plan."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "WRITE.Dialog:Localizer.4",
+    "utterer": "WRITE.Dialog:Localizer.4",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Come on Smart, you can do better."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "WRITE.Dialog:Localizer.5",
+    "utterer": "WRITE.Dialog:Localizer.5",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Nope."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "WRITE.Dialog:Localizer.6",
+    "utterer": "WRITE.Dialog:Localizer.6",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "Let's try that again..."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_Shipping_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "WRITE.Dialog:Localizer.7",
+    "utterer": "WRITE.Dialog:Localizer.7",
+    "context": "Randomized text that pops up on screen when the player dies.",
+    "sourceEnglish": "You can do this."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 0,
+    "rowNumber": 3,
+    "key": "SAY.Dialog:BigJob.4.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.4.Smart Ass",
+    "context": "The Asses are in a hallway close to the exit.",
+    "sourceEnglish": "Haha! STEP THREE (ALMOST) COMPLETE!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 1,
+    "rowNumber": 4,
+    "key": "SAY.Dialog:BigJob.233.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.233.Smart Ass",
+    "context": "",
+    "sourceEnglish": "I'm getting all of us out of here alive!"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 2,
+    "rowNumber": 5,
+    "key": "SAY.Dialog:BigJob.7.Big Ass",
+    "utterer": "SAY.Dialog:BigJob.7.Big Ass",
+    "context": "",
+    "sourceEnglish": "What about freeing the other Asses?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 3,
+    "rowNumber": 6,
+    "key": "SAY.Dialog:BigJob.6.Big Ass",
+    "utterer": "SAY.Dialog:BigJob.6.Big Ass",
+    "context": "",
+    "sourceEnglish": "Aren't they part of your Plan?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 4,
+    "rowNumber": 7,
+    "key": "SAY.Dialog:BigJob.10.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.10.Smart Ass",
+    "context": "",
+    "sourceEnglish": "Fuck the others."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 5,
+    "rowNumber": 8,
+    "key": "SAY.Dialog:BigJob.11.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.11.Smart Ass",
+    "context": "",
+    "sourceEnglish": "A Plan that includes trying to save us AND free hundreds of other Asses is impossible."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 6,
+    "rowNumber": 9,
+    "key": "SAY.Dialog:BigJob.143.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.143.Smart Ass",
+    "context": "",
+    "sourceEnglish": "So let's go."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 7,
+    "rowNumber": 10,
+    "key": "SAY.Dialog:BigJob.9.Big Ass",
+    "utterer": "SAY.Dialog:BigJob.9.Big Ass",
+    "context": "",
+    "sourceEnglish": "And what will we do after that?"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 8,
+    "rowNumber": 11,
+    "key": "SAY.Dialog:BigJob.14.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.14.Smart Ass",
+    "context": "",
+    "sourceEnglish": "I'll tell you later."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 9,
+    "rowNumber": 12,
+    "key": "SAY.Dialog:BigJob.8.Big Ass",
+    "utterer": "SAY.Dialog:BigJob.8.Big Ass",
+    "context": "",
+    "sourceEnglish": "{vpunch=100,1}I want to know NOW, Smart Ass."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 10,
+    "rowNumber": 13,
+    "key": "SAY.Dialog:BigJob.18.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.18.Smart Ass",
+    "context": "",
+    "sourceEnglish": "FINE. Fine."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 11,
+    "rowNumber": 14,
+    "key": "SAY.Dialog:BigJob.22.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.22.Smart Ass",
+    "context": "Jump to line 15 or line 17.",
+    "sourceEnglish": "After we get out of here, we will:"
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 12,
+    "rowNumber": 15,
+    "key": "MENU.Dialog:BigJob.234",
+    "utterer": "MENU.Dialog:BigJob.234",
+    "context": "Dialogue option 1.1",
+    "sourceEnglish": "Forget everything that's happened."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 13,
+    "rowNumber": 16,
+    "key": "SAY.Dialog:BigJob.240.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.240.Smart Ass",
+    "context": "Jump to line 20.",
+    "sourceEnglish": "We forget everything that's happened in this Factory Hell and go find kind Humans who will care for us."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 14,
+    "rowNumber": 17,
+    "key": "MENU.Dialog:BigJob.235",
+    "utterer": "MENU.Dialog:BigJob.235",
+    "context": "Dialogue option 1.2",
+    "sourceEnglish": "Never forget what we've seen."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 15,
+    "rowNumber": 18,
+    "key": "SAY.Dialog:BigJob.237.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.237.Smart Ass",
+    "context": "",
+    "sourceEnglish": "We never forget what we've seen in this Factory Hell."
+  },
+  {
+    "fileName": "7_asses.masses_E7Proxy.json",
+    "sheetName": "E7_BigJob_localization",
+    "entryIndex": 16,
+    "rowNumber": 19,
+    "key": "SAY.Dialog:BigJob.238.Smart Ass",
+    "utterer": "SAY.Dialog:BigJob.238.Smart Ass",
+    "context": "Jump to line 20.",
+    "sourceEnglish": "And we find kind Humans to take care of us."
+  }
+]

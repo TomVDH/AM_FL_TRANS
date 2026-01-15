@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 77,
+    "rowNumber": 80,
+    "key": "WRITE.Dialog:Localizer.112",
+    "utterer": "WRITE.Dialog:Localizer.112",
+    "context": "",
+    "sourceEnglish": "Bleak Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 78,
+    "rowNumber": 81,
+    "key": "WRITE.Dialog:Localizer.114",
+    "utterer": "WRITE.Dialog:Localizer.114",
+    "context": "",
+    "sourceEnglish": "Gaunt Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 79,
+    "rowNumber": 82,
+    "key": "WRITE.Dialog:Localizer.115",
+    "utterer": "WRITE.Dialog:Localizer.115",
+    "context": "",
+    "sourceEnglish": "Helpful Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 80,
+    "rowNumber": 83,
+    "key": "WRITE.Dialog:Localizer.116",
+    "utterer": "WRITE.Dialog:Localizer.116",
+    "context": "",
+    "sourceEnglish": "Skinny Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 81,
+    "rowNumber": 84,
+    "key": "WRITE.Dialog:Localizer.117",
+    "utterer": "WRITE.Dialog:Localizer.117",
+    "context": "",
+    "sourceEnglish": "Resentful Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 82,
+    "rowNumber": 85,
+    "key": "WRITE.Dialog:Localizer.118",
+    "utterer": "WRITE.Dialog:Localizer.118",
+    "context": "",
+    "sourceEnglish": "Sleepy Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 83,
+    "rowNumber": 86,
+    "key": "WRITE.Dialog:Localizer.119",
+    "utterer": "WRITE.Dialog:Localizer.119",
+    "context": "",
+    "sourceEnglish": "Left Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 84,
+    "rowNumber": 87,
+    "key": "WRITE.Dialog:Localizer.120",
+    "utterer": "WRITE.Dialog:Localizer.120",
+    "context": "",
+    "sourceEnglish": "Right Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 85,
+    "rowNumber": 88,
+    "key": "WRITE.Dialog:Localizer.121",
+    "utterer": "WRITE.Dialog:Localizer.121",
+    "context": "",
+    "sourceEnglish": "Weepy Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 86,
+    "rowNumber": 89,
+    "key": "WRITE.Dialog:Localizer.122",
+    "utterer": "WRITE.Dialog:Localizer.122",
+    "context": "",
+    "sourceEnglish": "Busted Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 87,
+    "rowNumber": 90,
+    "key": "WRITE.Dialog:Localizer.123",
+    "utterer": "WRITE.Dialog:Localizer.123",
+    "context": "",
+    "sourceEnglish": "Tragic Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 88,
+    "rowNumber": 91,
+    "key": "WRITE.Dialog:Localizer.124",
+    "utterer": "WRITE.Dialog:Localizer.124",
+    "context": "",
+    "sourceEnglish": "Wild Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 89,
+    "rowNumber": 92,
+    "key": "WRITE.Dialog:Localizer.125",
+    "utterer": "WRITE.Dialog:Localizer.125",
+    "context": "",
+    "sourceEnglish": "Edgy Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 90,
+    "rowNumber": 93,
+    "key": "WRITE.Dialog:Localizer.126",
+    "utterer": "WRITE.Dialog:Localizer.126",
+    "context": "",
+    "sourceEnglish": "Feeble Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 91,
+    "rowNumber": 94,
+    "key": "WRITE.Dialog:Localizer.127",
+    "utterer": "WRITE.Dialog:Localizer.127",
+    "context": "",
+    "sourceEnglish": "Gloomy Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 92,
+    "rowNumber": 95,
+    "key": "WRITE.Dialog:Localizer.128",
+    "utterer": "WRITE.Dialog:Localizer.128",
+    "context": "",
+    "sourceEnglish": "Distressed Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 93,
+    "rowNumber": 96,
+    "key": "WRITE.Dialog:Localizer.130",
+    "utterer": "WRITE.Dialog:Localizer.130",
+    "context": "",
+    "sourceEnglish": "Anxious Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 94,
+    "rowNumber": 97,
+    "key": "WRITE.Dialog:Localizer.129",
+    "utterer": "WRITE.Dialog:Localizer.129",
+    "context": "",
+    "sourceEnglish": "Tender Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 95,
+    "rowNumber": 98,
+    "key": "WRITE.Dialog:Localizer.92",
+    "utterer": "WRITE.Dialog:Localizer.92",
+    "context": "",
+    "sourceEnglish": "Wild Ass"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 96,
+    "rowNumber": 99,
+    "key": "WRITE.Dialog:Localizer.11",
+    "utterer": "WRITE.Dialog:Localizer.11",
+    "context": "",
+    "sourceEnglish": "THE HUMANS"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 97,
+    "rowNumber": 100,
+    "key": "WRITE.Dialog:Localizer.131",
+    "utterer": "WRITE.Dialog:Localizer.131",
+    "context": "",
+    "sourceEnglish": "Child Joey"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 98,
+    "rowNumber": 101,
+    "key": "WRITE.Dialog:Localizer.132",
+    "utterer": "WRITE.Dialog:Localizer.132",
+    "context": "",
+    "sourceEnglish": "Grandmother"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 99,
+    "rowNumber": 102,
+    "key": "WRITE.Dialog:Localizer.133",
+    "utterer": "WRITE.Dialog:Localizer.133",
+    "context": "",
+    "sourceEnglish": "Miner Jenny"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 100,
+    "rowNumber": 103,
+    "key": "WRITE.Dialog:Localizer.134",
+    "utterer": "WRITE.Dialog:Localizer.134",
+    "context": "",
+    "sourceEnglish": "Mr. Hugh G. Butte"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 101,
+    "rowNumber": 104,
+    "key": "WRITE.Dialog:Localizer.135",
+    "utterer": "WRITE.Dialog:Localizer.135",
+    "context": "This character never speaks. But he's the farmer that Hard Ass kills in E4.",
+    "sourceEnglish": "Farmer Brown"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 102,
+    "rowNumber": 105,
+    "key": "WRITE.Dialog:Localizer.136",
+    "utterer": "WRITE.Dialog:Localizer.136",
+    "context": "",
+    "sourceEnglish": "Ass Handler Melvin"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 103,
+    "rowNumber": 106,
+    "key": "WRITE.Dialog:Localizer.137",
+    "utterer": "WRITE.Dialog:Localizer.137",
+    "context": "",
+    "sourceEnglish": "Ass Handler Wedgie"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 104,
+    "rowNumber": 107,
+    "key": "WRITE.Dialog:Localizer.138",
+    "utterer": "WRITE.Dialog:Localizer.138",
+    "context": "",
+    "sourceEnglish": "Ringmaster Rico"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 105,
+    "rowNumber": 108,
+    "key": "WRITE.Dialog:Localizer.139",
+    "utterer": "WRITE.Dialog:Localizer.139",
+    "context": "",
+    "sourceEnglish": "Zookeeper Rose"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 106,
+    "rowNumber": 109,
+    "key": "WRITE.Dialog:Localizer.140",
+    "utterer": "WRITE.Dialog:Localizer.140",
+    "context": "",
+    "sourceEnglish": "Mme. Derriere"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 107,
+    "rowNumber": 110,
+    "key": "WRITE.Dialog:Localizer.141",
+    "utterer": "WRITE.Dialog:Localizer.141",
+    "context": "",
+    "sourceEnglish": "Radio Host Marcos"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 108,
+    "rowNumber": 111,
+    "key": "WRITE.Dialog:Localizer.13",
+    "utterer": "WRITE.Dialog:Localizer.13",
+    "context": "",
+    "sourceEnglish": "SPECIAL THANKS TO"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 109,
+    "rowNumber": 112,
+    "key": "WRITE.Dialog:Localizer.142",
+    "utterer": "WRITE.Dialog:Localizer.142",
+    "context": "",
+    "sourceEnglish": "and all of our playtesters"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 110,
+    "rowNumber": 113,
+    "key": "WRITE.Dialog:Localizer.15",
+    "utterer": "WRITE.Dialog:Localizer.15",
+    "context": "",
+    "sourceEnglish": "PRESENTATIONS"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 111,
+    "rowNumber": 114,
+    "key": "WRITE.Dialog:Localizer.17",
+    "utterer": "WRITE.Dialog:Localizer.17",
+    "context": "",
+    "sourceEnglish": "FEAT. SAMPLED MUSIC FROM:"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 112,
+    "rowNumber": 115,
+    "key": "WRITE.Dialog:Localizer.40",
+    "utterer": "WRITE.Dialog:Localizer.40",
+    "context": "",
+    "sourceEnglish": "Never forget:"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 113,
+    "rowNumber": 116,
+    "key": "WRITE.Dialog:Localizer.41",
+    "utterer": "WRITE.Dialog:Localizer.41",
+    "context": "OPTION A",
+    "sourceEnglish": "ASS POWER"
+  },
+  {
+    "fileName": "10_asses.masses_E10Proxy.json",
+    "sheetName": "E10_Credits_localization",
+    "entryIndex": 114,
+    "rowNumber": 117,
+    "key": "WRITE.Dialog:Localizer.19",
+    "utterer": "WRITE.Dialog:Localizer.19",
+    "context": "OPTION B",
+    "sourceEnglish": "DON'T BE SCARED"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "Other Translations",
+    "entryIndex": 3,
+    "rowNumber": 5,
+    "key": "1",
+    "utterer": "1",
+    "context": "Stable2f",
+    "sourceEnglish": "Inelligble Foal Names"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "Other Translations",
+    "entryIndex": 16,
+    "rowNumber": 63,
+    "key": "",
+    "utterer": "",
+    "context": "",
+    "sourceEnglish": "Zoo Name"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "Other Translations",
+    "entryIndex": 18,
+    "rowNumber": 65,
+    "key": "3",
+    "utterer": "3",
+    "context": "E3_LazysGrave",
+    "sourceEnglish": "Wallet"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "Other Translations",
+    "entryIndex": 19,
+    "rowNumber": 66,
+    "key": "3",
+    "utterer": "3",
+    "context": "E3_LazysGrave",
+    "sourceEnglish": "Wallet"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "E10_Words_English",
+    "entryIndex": 0,
+    "rowNumber": 5,
+    "key": "the spark",
+    "utterer": "the spark",
+    "context": "",
+    "sourceEnglish": "the inevitable"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "E10_Words_English",
+    "entryIndex": 1,
+    "rowNumber": 8,
+    "key": "",
+    "utterer": "",
+    "context": "the Machine Prophet",
+    "sourceEnglish": "and the asses from Fannyside"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "E10_Words_Korean",
+    "entryIndex": 0,
+    "rowNumber": 5,
+    "key": "the spark",
+    "utterer": "the spark",
+    "context": "",
+    "sourceEnglish": "the inevitable"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "E10_Words_Korean",
+    "entryIndex": 1,
+    "rowNumber": 6,
+    "key": "불꽃",
+    "utterer": "불꽃",
+    "context": "",
+    "sourceEnglish": "필연"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "E10_Words_Korean",
+    "entryIndex": 2,
+    "rowNumber": 8,
+    "key": "",
+    "utterer": "",
+    "context": "the Machine Prophet",
+    "sourceEnglish": "and the asses from Fannyside"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "E10_Words_Japanese",
+    "entryIndex": 0,
+    "rowNumber": 5,
+    "key": "火花",
+    "utterer": "火花",
+    "context": "",
+    "sourceEnglish": "必然"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "E10_Words_Japanese",
+    "entryIndex": 1,
+    "rowNumber": 8,
+    "key": "",
+    "utterer": "",
+    "context": "機械預言者",
+    "sourceEnglish": "そしてファニーサイドのロバたち"
+  },
+  {
+    "fileName": "11_asses.masses_NonCSVBasedTranslations.json",
+    "sheetName": "E10_Words_Espanol",
+    "entryIndex": 0,
+    "rowNumber": 5,
+    "key": "la chispa",
+    "utterer": "la chispa",
+    "context": "",
+    "sourceEnglish": "lo inevitable"
+  }
+]

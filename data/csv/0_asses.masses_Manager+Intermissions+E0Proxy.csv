@@ -1,256 +1,256 @@
 # File: 0_asses.masses_Manager+Intermissions+E0Proxy
-# Processed: 2025-12-29T08:53:10.271Z
+# Processed: 2025-12-29T22:52:03.200Z
 # Sheets: 9
 
 RowNumber,SheetName,Context,Key,Utterer,SourceEnglish,TranslatedDutch,ProcessedAt
-2,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.1,COMRADES,KAMERADEN,2025-12-29T08:53:10.271Z
-3,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.2,MORALE,MORAAL,2025-12-29T08:53:10.271Z
-4,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.5,Trusty Ass,Trouwe Zak,2025-12-29T08:53:10.271Z
-5,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.15,Nice Ass,Schoon Beest,2025-12-29T08:53:10.271Z
-6,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.14,Big Ass,Mega Ezel,2025-12-29T08:53:10.271Z
-7,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.12,Thirsty Ass,Dorstlap,2025-12-29T08:53:10.271Z
-8,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.13,Smart Ass,Betweter,2025-12-29T08:53:10.271Z
-9,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.11,Slow Ass,Slome Ezel,2025-12-29T08:53:10.271Z
-10,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.10,Kick Ass,Stampgast,2025-12-29T08:53:10.271Z
-11,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.9,Sick Ass,Snotezel,2025-12-29T08:53:10.271Z
-12,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.8,Hard Ass,Felle Gast,2025-12-29T08:53:10.271Z
-13,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.7,Sturdy Ass,Stoere Ezel,2025-12-29T08:53:10.271Z
-14,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.6,Sad Ass,Triestigaard,2025-12-29T08:53:10.271Z
-15,ManagerScene_localization,,,WRITE.ManagerCanvasUiTextFlowchart.16,Cole-Machine,Piet-Machine,2025-12-29T08:53:10.271Z
-2,CharacterProfiles_localization,,,CHARACTER.Character Name,Character Name,"",2025-12-29T08:53:10.271Z
-3,CharacterProfiles_localization,Main Donkeys,,CHARACTER.{$NewName},{$NewName},{$NewName},2025-12-29T08:53:10.271Z
-4,CharacterProfiles_localization,,,CHARACTER.Old Ass,Old Ass,Ouwe Zak,2025-12-29T08:53:10.271Z
-5,CharacterProfiles_localization,,,CHARACTER.Trusty Ass,Trusty Ass,Trouwe Zak,2025-12-29T08:53:10.271Z
-6,CharacterProfiles_localization,,,CHARACTER.Nice Ass,Nice Ass,Schoon Beest,2025-12-29T08:53:10.271Z
-7,CharacterProfiles_localization,,,CHARACTER.Big Ass,Big Ass,Mega Ezel,2025-12-29T08:53:10.271Z
-8,CharacterProfiles_localization,,,CHARACTER.Thirsty Ass,Thirsty Ass,Dorstlap,2025-12-29T08:53:10.271Z
-9,CharacterProfiles_localization,,,CHARACTER.Smart Ass,Smart Ass,Betweter,2025-12-29T08:53:10.271Z
-10,CharacterProfiles_localization,,,CHARACTER.Slow Ass,Slow Ass,Slome Ezel,2025-12-29T08:53:10.271Z
-11,CharacterProfiles_localization,,,CHARACTER.Kick Ass,Kick Ass,Stampgast,2025-12-29T08:53:10.271Z
-12,CharacterProfiles_localization,,,CHARACTER.Sick Ass,Sick Ass,Snotezel,2025-12-29T08:53:10.271Z
-13,CharacterProfiles_localization,,,CHARACTER.Hard Ass,Hard Ass,Felle Gast,2025-12-29T08:53:10.271Z
-14,CharacterProfiles_localization,,,CHARACTER.Sturdy Ass,Sturdy Ass,Stoere Ezel,2025-12-29T08:53:10.271Z
-15,CharacterProfiles_localization,,,CHARACTER.Sad Ass,Sad Ass,Triestigaard,2025-12-29T08:53:10.271Z
-16,CharacterProfiles_localization,,,CHARACTER.Lazy Ass,Lazy Ass,Luie Zak,2025-12-29T08:53:10.271Z
-17,CharacterProfiles_localization,,,CHARACTER.Bad Ass,Bad Ass,Waaghalske,2025-12-29T08:53:10.271Z
-18,CharacterProfiles_localization,,,CHARACTER.Cole-Machine,Cole-Machine,Piet-Machine,2025-12-29T08:53:10.271Z
-19,CharacterProfiles_localization,,,CHARACTER.Golden Ass,Golden Ass,Gouden Ezel,2025-12-29T08:53:10.271Z
-20,CharacterProfiles_localization,,,CHARACTER.The Masses,The Masses,De Massa,2025-12-29T08:53:10.271Z
-21,CharacterProfiles_localization,The Gods,,CHARACTER.Hee,Hee,Hieee,2025-12-29T08:53:10.271Z
-22,CharacterProfiles_localization,,,CHARACTER.Haw,Haw,Haaa,2025-12-29T08:53:10.271Z
-23,CharacterProfiles_localization,,,CHARACTER.THE GODS,THE GODS,DE GODEN,2025-12-29T08:53:10.271Z
-24,CharacterProfiles_localization,Circus/Farm Animals,,CHARACTER.Sheep,Sheep,Schaap,2025-12-29T08:53:10.271Z
-25,CharacterProfiles_localization,,,CHARACTER.Elephant,Eli the Elephant,Ollie de Olifant,2025-12-29T08:53:10.271Z
-26,CharacterProfiles_localization,,,CHARACTER.Pig,Pig,Varken,2025-12-29T08:53:10.271Z
-27,CharacterProfiles_localization,,,CHARACTER.Cow,Cow,Koe,2025-12-29T08:53:10.271Z
-28,CharacterProfiles_localization,Humans,,CHARACTER.Human,Human,Mens,2025-12-29T08:53:10.271Z
-29,CharacterProfiles_localization,,,CHARACTER.Melvin,Ass Handler Melvin,Zakkenzeuler Zeno,2025-12-29T08:53:10.271Z
-30,CharacterProfiles_localization,,,CHARACTER.Wedgie,Ass Handler Wedgie,Zakkenzeulster Zita,2025-12-29T08:53:10.271Z
-31,CharacterProfiles_localization,,,CHARACTER.Mme. Derriere,Mme. Derriere,Mevr. Derrière,2025-12-29T08:53:10.271Z
-32,CharacterProfiles_localization,,,CHARACTER.Ringmaster Rico,Ringmaster Rico,Circusdirecteur Baptiste,2025-12-29T08:53:10.271Z
-33,CharacterProfiles_localization,,,CHARACTER.Zookeeper Rose,Zookeeper Rose,Dierendokter Dina,2025-12-29T08:53:10.271Z
-34,CharacterProfiles_localization,,,CHARACTER.Factory PA,Factory PA,Fabrieksomroep,2025-12-29T08:53:10.271Z
-35,CharacterProfiles_localization,,,CHARACTER.Miner With No Legs,Miner With No Legs,Mijnwerker zonder Benen,2025-12-29T08:53:10.271Z
-36,CharacterProfiles_localization,,,CHARACTER.Audience Members Patrick & Milton,Audience Members Patrick & Milton,Toeschouwers Patrick & Milton,2025-12-29T08:53:10.271Z
-37,CharacterProfiles_localization,,,CHARACTER.Audience Member Laurel,Audience Member Laurel,Toeschouwer Laurel,2025-12-29T08:53:10.271Z
-38,CharacterProfiles_localization,,,CHARACTER.Audience Member David,Audience Member David,Toeschouwer David,2025-12-29T08:53:10.271Z
-39,CharacterProfiles_localization,,,CHARACTER.Radio Host Marcos,DJ Marcos,DJ Tom,2025-12-29T08:53:10.271Z
-40,CharacterProfiles_localization,,,CHARACTER.???,???,???,2025-12-29T08:53:10.271Z
-41,CharacterProfiles_localization,,,CHARACTER.Child Joey,Child Joey,Luukske Vermeulen,2025-12-29T08:53:10.271Z
-42,CharacterProfiles_localization,,,CHARACTER.Grandma Kulan,Grandma Kulan,Grootmoe Vermeulen,2025-12-29T08:53:10.271Z
-43,CharacterProfiles_localization,,,CHARACTER.Miner Jenny,Miner Jenny,Mijnwerker Jenny,2025-12-29T08:53:10.271Z
-44,CharacterProfiles_localization,,,CHARACTER.Mr. Butte,Mr. Butte,Mr. Vanscheetvelde,2025-12-29T08:53:10.271Z
-45,CharacterProfiles_localization,Signs,,CHARACTER.Sign,Sign,Bord,2025-12-29T08:53:10.271Z
-46,CharacterProfiles_localization,,,CHARACTER.Shitty Sign,Shitty Sign,Bord met stront eraan,2025-12-29T08:53:10.271Z
-47,CharacterProfiles_localization,,,CHARACTER.Old Sign,Old Sign,Oud Bord,2025-12-29T08:53:10.271Z
-48,CharacterProfiles_localization,,,CHARACTER.Welcome Sign,Welcome Sign,Welkomsbord,2025-12-29T08:53:10.271Z
-49,CharacterProfiles_localization,,,CHARACTER.Fancy Sign,Fancy Sign,Schoon Bord,2025-12-29T08:53:10.271Z
-50,CharacterProfiles_localization,,,CHARACTER.Official Sign,Official Sign,Officiëel Bord,2025-12-29T08:53:10.271Z
-51,CharacterProfiles_localization,,,CHARACTER.Dirty Sign,Dirty Sign,Smerig Bord,2025-12-29T08:53:10.271Z
-52,CharacterProfiles_localization,,,CHARACTER.Decrepit Sign,Decrepit Sign,Verlept Bord,2025-12-29T08:53:10.271Z
-53,CharacterProfiles_localization,,,CHARACTER.Historic Sign,Historic Sign,Historisch Bord,2025-12-29T08:53:10.271Z
-54,CharacterProfiles_localization,,,CHARACTER.Warning Sign,Warning Sign,Waarschuwingsbord,2025-12-29T08:53:10.271Z
-55,CharacterProfiles_localization,Factory Donkeys (be sure to make a balance of gender between the ones marked with X),,CHARACTER.Proper Ass,Proper Ass,Keurige Ezel,2025-12-29T08:53:10.271Z
-56,CharacterProfiles_localization,x,,CHARACTER.Skinny Ass,Skinny Ass,Magere Ezel,2025-12-29T08:53:10.271Z
-57,CharacterProfiles_localization,,,CHARACTER.Tender Ass,Tender Ass,Gevoelige Ezel,2025-12-29T08:53:10.271Z
-58,CharacterProfiles_localization,x,,CHARACTER.Tragic Ass,Tragic Ass,Weemoedige Ezel,2025-12-29T08:53:10.271Z
-59,CharacterProfiles_localization,,,CHARACTER.Wild Ass,Wild Ass,Wilde Ezel,2025-12-29T08:53:10.271Z
-60,CharacterProfiles_localization,,,CHARACTER.Anxious Ass,Anxious Ass,Angstige Ezel,2025-12-29T08:53:10.271Z
-61,CharacterProfiles_localization,x,,CHARACTER.Resentful Ass,Resentful Ass,Wrokkige Ezel,2025-12-29T08:53:10.271Z
-62,CharacterProfiles_localization,,,CHARACTER.Distressed Ass,Distressed Ass,Ontzette Ezel,2025-12-29T08:53:10.271Z
-63,CharacterProfiles_localization,,,CHARACTER.Gloomy Ass,Gloomy Ass,Duistere Ezel,2025-12-29T08:53:10.271Z
-64,CharacterProfiles_localization,,,CHARACTER.Feeble Ass,Feeble Ass,Slappe Ezel,2025-12-29T08:53:10.271Z
-65,CharacterProfiles_localization,x,,CHARACTER.Helpful Ass,Helpful Ass,Hulpvaardige Ezel,2025-12-29T08:53:10.271Z
-66,CharacterProfiles_localization,x,,CHARACTER.Gaunt Ass,Gaunt Ass,Beenderige Ezel,2025-12-29T08:53:10.271Z
-67,CharacterProfiles_localization,,,CHARACTER.Sleepy Ass,Sleepy Ass,Slaaperige Ezel,2025-12-29T08:53:10.271Z
-68,CharacterProfiles_localization,,,CHARACTER.Weepy Ass,Weepy Ass,Huilerige Ezel,2025-12-29T08:53:10.271Z
-69,CharacterProfiles_localization,x,,CHARACTER.Edgy Ass,Edgy Ass,Avantgarde Ezel,2025-12-29T08:53:10.271Z
-70,CharacterProfiles_localization,x,,CHARACTER.Bleak Ass,Bleak Ass,Depressieve Ezel,2025-12-29T08:53:10.271Z
-71,CharacterProfiles_localization,,,CHARACTER.Busted Ass,Busted Ass,Afgereden Ezel,2025-12-29T08:53:10.271Z
-72,CharacterProfiles_localization,(Always male),,CHARACTER.Right Ass,Right Ass,Rechter Ezel,2025-12-29T08:53:10.271Z
-73,CharacterProfiles_localization,(Always male),,CHARACTER.Left Ass,Left Ass,Linker Ezel,2025-12-29T08:53:10.271Z
-74,CharacterProfiles_localization,Astral Plane Donkeys,,CHARACTER.Mad Ass,Mad Ass,Gekke Ezel,2025-12-29T08:53:10.271Z
-75,CharacterProfiles_localization,,,CHARACTER.Smelly Ass,Smelly Ass,Stinkende Ezel,2025-12-29T08:53:10.271Z
-76,CharacterProfiles_localization,,,CHARACTER.Greedy Ass,Greedy Ass,Inhalige Ezel,2025-12-29T08:53:10.271Z
-77,CharacterProfiles_localization,,,CHARACTER.Shifty Ass,Shifty Ass,Ongure Ezel,2025-12-29T08:53:10.271Z
-78,CharacterProfiles_localization,,,CHARACTER.Risky Ass,Risky Ass,Riskante Ezel,2025-12-29T08:53:10.271Z
-79,CharacterProfiles_localization,,,CHARACTER.Furry Ass,Furry Ass,Harige Ezel,2025-12-29T08:53:10.271Z
-80,CharacterProfiles_localization,,,CHARACTER.Dusty Ass,Dusty Ass,Stoffige Ezel,2025-12-29T08:53:10.271Z
-81,CharacterProfiles_localization,,,CHARACTER.Blunt Ass,Blunt Ass,Groffe ezel,2025-12-29T08:53:10.271Z
-82,CharacterProfiles_localization,,,CHARACTER.Peek Ass,Peek Ass,(Peek Ass),2025-12-29T08:53:10.271Z
-83,CharacterProfiles_localization,,,CHARACTER.Cool Ass,Cool Ass,Coole Ezel,2025-12-29T08:53:10.271Z
-84,CharacterProfiles_localization,,,CHARACTER.Mean Ass,Mean Ass,Stoute Ezel,2025-12-29T08:53:10.271Z
-85,CharacterProfiles_localization,,,CHARACTER.Cranky Ass,Cranky Ass,Mopperende Ezel,2025-12-29T08:53:10.271Z
-86,CharacterProfiles_localization,,,CHARACTER.Hasty Ass,Hasty Ass,Haastge Ezel,2025-12-29T08:53:10.271Z
-87,CharacterProfiles_localization,,,CHARACTER.Haul Ass,Haul Ass,Sleur Ezel,2025-12-29T08:53:10.271Z
-88,CharacterProfiles_localization,,,CHARACTER.Healthy Ass,Healthy Ass,Gezonde Ezel,2025-12-29T08:53:10.271Z
-89,CharacterProfiles_localization,,,CHARACTER.Mellow Ass,Mellow Ass,Chille Ezel,2025-12-29T08:53:10.271Z
-90,CharacterProfiles_localization,,,CHARACTER.Shaky Ass,Shaky Ass,Bibber Ezel,2025-12-29T08:53:10.271Z
-91,CharacterProfiles_localization,,,CHARACTER.Trippy Ass,Trippy Ass,Trippende Ezel,2025-12-29T08:53:10.271Z
-92,CharacterProfiles_localization,,,CHARACTER.DJ Dope Ass,DJ Dope Ass,DJ Lijpe Ezel,2025-12-29T08:53:10.271Z
-93,CharacterProfiles_localization,,,CHARACTER.Angry Ass,Angry Ass,Boze Ezel,2025-12-29T08:53:10.271Z
-94,CharacterProfiles_localization,,,CHARACTER.Sulky Ass,Sulky Ass,Zielige Ezel,2025-12-29T08:53:10.271Z
-95,CharacterProfiles_localization,,,CHARACTER.Chafed Ass,Chafed Ass,Excema Ezel,2025-12-29T08:53:10.271Z
-96,CharacterProfiles_localization,,,CHARACTER.Broken Ass,Broken Ass,Gebroken Ezel,2025-12-29T08:53:10.271Z
-97,CharacterProfiles_localization,,,CHARACTER.Bitter Ass,Bitter Ass,Bittere Ezel,2025-12-29T08:53:10.271Z
-98,CharacterProfiles_localization,,,CHARACTER.Lofty Ass,Lofty Ass,Opgeblazen Ezel,2025-12-29T08:53:10.271Z
-99,CharacterProfiles_localization,,,CHARACTER.Total Ass,Total Ass,Totale Ezel,2025-12-29T08:53:10.271Z
-100,CharacterProfiles_localization,,,CHARACTER.Happy Ass,Happy Ass,Blije Ezel,2025-12-29T08:53:10.271Z
-101,CharacterProfiles_localization,,,CHARACTER.Hairy Ass,Hairy Ass,Stoppelige Ezel,2025-12-29T08:53:10.271Z
-102,CharacterProfiles_localization,,,CHARACTER.Dirty Ass,Dirty Ass,Vuile Ezel,2025-12-29T08:53:10.271Z
-103,CharacterProfiles_localization,,,CHARACTER.Janky Ass,Janky Ass,Deficiënte Ezel,2025-12-29T08:53:10.271Z
-104,CharacterProfiles_localization,,,CHARACTER.Tight Ass,Tight Ass,Strakke Ezel,2025-12-29T08:53:10.271Z
-105,CharacterProfiles_localization,,,CHARACTER.Fresh Ass,Fresh Ass,Verse Ezel,2025-12-29T08:53:10.271Z
-106,CharacterProfiles_localization,,,CHARACTER.Gullible Ass,Gullible Ass,Goedgelovige Ezel,2025-12-29T08:53:10.271Z
-107,CharacterProfiles_localization,,,CHARACTER.Ugly Ass,Ugly Ass,Lelijke Ezel,2025-12-29T08:53:10.271Z
-108,CharacterProfiles_localization,,,,Spicy Ass?,"",2025-12-29T08:53:10.271Z
-109,CharacterProfiles_localization,,,,*** Ass,"",2025-12-29T08:53:10.271Z
-2,E0_Instructions_localization,,,WRITE.Dialog:Localizer.1,Instructions for Operators [EN],"",2025-12-29T08:53:10.271Z
-2,E0_Questions_localization,,,WRITE.DialogLocalizer.17,AVATAR REQUIRED,"",2025-12-29T08:53:10.271Z
-3,E0_Questions_localization,,,WRITE.DialogLocalizer.18,AWAITING INPUT,"",2025-12-29T08:53:10.271Z
-4,E0_Questions_localization,,,WRITE.DialogLocalizer.187,PRESS X,"",2025-12-29T08:53:10.271Z
-5,E0_Questions_localization,,,WRITE.DialogLocalizer.12,Which does your society value more?,"",2025-12-29T08:53:10.271Z
-6,E0_Questions_localization,,,WRITE.DialogLocalizer.13,Those who stay with the herd,"",2025-12-29T08:53:10.271Z
-7,E0_Questions_localization,,,WRITE.DialogLocalizer.14,Those who step away from the herd,"",2025-12-29T08:53:10.271Z
-8,E0_Questions_localization,,,WRITE.DialogLocalizer.53,Do you think of yourself as an intelligent animal?,"",2025-12-29T08:53:10.271Z
-9,E0_Questions_localization,,,WRITE.DialogLocalizer.55,Yes,"",2025-12-29T08:53:10.271Z
-10,E0_Questions_localization,,,WRITE.DialogLocalizer.54,No,"",2025-12-29T08:53:10.271Z
-11,E0_Questions_localization,,,WRITE.DialogLocalizer.56,Do you think of yourself as a political animal?,"",2025-12-29T08:53:10.271Z
-12,E0_Questions_localization,,,WRITE.DialogLocalizer.57,Yes,"",2025-12-29T08:53:10.271Z
-13,E0_Questions_localization,,,WRITE.DialogLocalizer.58,No,"",2025-12-29T08:53:10.271Z
-14,E0_Questions_localization,,,WRITE.DialogLocalizer.59,Do you have urges to copulate and reproduce?,"",2025-12-29T08:53:10.271Z
-15,E0_Questions_localization,,,WRITE.DialogLocalizer.60,Yes,"",2025-12-29T08:53:10.271Z
-16,E0_Questions_localization,,,WRITE.DialogLocalizer.61,No,"",2025-12-29T08:53:10.271Z
-17,E0_Questions_localization,,,WRITE.DialogLocalizer.62,What is your natural habitat?,"",2025-12-29T08:53:10.271Z
-18,E0_Questions_localization,,,WRITE.DialogLocalizer.63,Grassy plains,"",2025-12-29T08:53:10.271Z
-19,E0_Questions_localization,,,WRITE.DialogLocalizer.140,Rocky desert,"",2025-12-29T08:53:10.271Z
-20,E0_Questions_localization,,,WRITE.DialogLocalizer.64,Concrete jungle,"",2025-12-29T08:53:10.271Z
-21,E0_Questions_localization,,,WRITE.DialogLocalizer.65,Do you have experience doing manual labour every day for an extended period of time?,"",2025-12-29T08:53:10.271Z
-22,E0_Questions_localization,,,WRITE.DialogLocalizer.66,Yes,"",2025-12-29T08:53:10.271Z
-23,E0_Questions_localization,,,WRITE.DialogLocalizer.67,No,"",2025-12-29T08:53:10.271Z
-24,E0_Questions_localization,,,WRITE.DialogLocalizer.68,Have you ever gone on a labour strike due to unfair or dangerous working conditions?,"",2025-12-29T08:53:10.271Z
-25,E0_Questions_localization,,,WRITE.DialogLocalizer.69,Yes,"",2025-12-29T08:53:10.271Z
-26,E0_Questions_localization,,,WRITE.DialogLocalizer.70,No,"",2025-12-29T08:53:10.271Z
-27,E0_Questions_localization,,,WRITE.DialogLocalizer.71,Have you ever lost your job because your role became redundant at your place of work?,"",2025-12-29T08:53:10.271Z
-28,E0_Questions_localization,,,WRITE.DialogLocalizer.72,Yes,"",2025-12-29T08:53:10.271Z
-29,E0_Questions_localization,,,WRITE.DialogLocalizer.73,No,"",2025-12-29T08:53:10.271Z
-30,E0_Questions_localization,,,WRITE.DialogLocalizer.74,What kind of job was it?,"",2025-12-29T08:53:10.271Z
-31,E0_Questions_localization,,,WRITE.DialogLocalizer.75,"Agriculture, fishery","",2025-12-29T08:53:10.271Z
-32,E0_Questions_localization,,,WRITE.DialogLocalizer.76,"Mining, oil, forestry","",2025-12-29T08:53:10.271Z
-33,E0_Questions_localization,,,WRITE.DialogLocalizer.170,Administration or clerical support,"",2025-12-29T08:53:10.271Z
-34,E0_Questions_localization,,,WRITE.DialogLocalizer.171,Hospitality or service,"",2025-12-29T08:53:10.271Z
-35,E0_Questions_localization,,,WRITE.DialogLocalizer.172,Arts and culture,"",2025-12-29T08:53:10.271Z
-36,E0_Questions_localization,,,WRITE.DialogLocalizer.173,Other,"",2025-12-29T08:53:10.271Z
-37,E0_Questions_localization,,,WRITE.DialogLocalizer.77,How were the job conditions?,"",2025-12-29T08:53:10.271Z
-38,E0_Questions_localization,,,WRITE.DialogLocalizer.78,Amazing,"",2025-12-29T08:53:10.271Z
-39,E0_Questions_localization,,,WRITE.DialogLocalizer.79,Good,"",2025-12-29T08:53:10.271Z
-40,E0_Questions_localization,,,WRITE.DialogLocalizer.174,Fair,"",2025-12-29T08:53:10.271Z
-41,E0_Questions_localization,,,WRITE.DialogLocalizer.175,Bad,"",2025-12-29T08:53:10.271Z
-42,E0_Questions_localization,,,WRITE.DialogLocalizer.176,Terrible,"",2025-12-29T08:53:10.271Z
-43,E0_Questions_localization,,,WRITE.DialogLocalizer.80,Do you miss the job?,"",2025-12-29T08:53:10.271Z
-44,E0_Questions_localization,,,WRITE.DialogLocalizer.81,Yes,"",2025-12-29T08:53:10.271Z
-45,E0_Questions_localization,,,WRITE.DialogLocalizer.82,No,"",2025-12-29T08:53:10.271Z
-46,E0_Questions_localization,,,WRITE.DialogLocalizer.177,I miss aspects of it,"",2025-12-29T08:53:10.271Z
-47,E0_Questions_localization,,,WRITE.DialogLocalizer.83,Do you think you would still have the job if you did things differently?,"",2025-12-29T08:53:10.271Z
-48,E0_Questions_localization,,,WRITE.DialogLocalizer.84,Yes,"",2025-12-29T08:53:10.271Z
-49,E0_Questions_localization,,,WRITE.DialogLocalizer.85,No,"",2025-12-29T08:53:10.271Z
-50,E0_Questions_localization,,,WRITE.DialogLocalizer.178,I don't know,"",2025-12-29T08:53:10.271Z
-51,E0_Questions_localization,,,WRITE.DialogLocalizer.86,Would you consider yourself to be the best representative of your species to lead a Revolution?,"",2025-12-29T08:53:10.271Z
-52,E0_Questions_localization,,,WRITE.DialogLocalizer.87,Yes,"",2025-12-29T08:53:10.271Z
-53,E0_Questions_localization,,,WRITE.DialogLocalizer.88,No,"",2025-12-29T08:53:10.271Z
-54,E0_Questions_localization,,,WRITE.DialogLocalizer.89,Which of these mythic and literary heroes do you identify with the most?,"",2025-12-29T08:53:10.271Z
-55,E0_Questions_localization,,,WRITE.DialogLocalizer.90,Bottom from A Midsummer Night's Dream,"",2025-12-29T08:53:10.271Z
-56,E0_Questions_localization,,,WRITE.DialogLocalizer.91,Lucius from The Golden Ass by Apuleius,"",2025-12-29T08:53:10.271Z
-57,E0_Questions_localization,,,WRITE.DialogLocalizer.180,Midas from Greek Mythology,"",2025-12-29T08:53:10.271Z
-58,E0_Questions_localization,,,WRITE.DialogLocalizer.179,Pinocchio from Pinocchio,"",2025-12-29T08:53:10.271Z
-59,E0_Questions_localization,,,WRITE.DialogLocalizer.19,PHASE ONE\nCOMPLETE,"",2025-12-29T08:53:10.271Z
-60,E0_Questions_localization,,,WRITE.DialogLocalizer.20,CALIBRATING INTELLIGENCE,"",2025-12-29T08:53:10.271Z
-61,E0_Questions_localization,,,WRITE.DialogLocalizer.92,"In English, when one human says to another human, ""You ass,"" they are comparing a human to:","",2025-12-29T08:53:10.271Z
-62,E0_Questions_localization,,,WRITE.DialogLocalizer.93,Equus asinus,"",2025-12-29T08:53:10.271Z
-63,E0_Questions_localization,,,WRITE.DialogLocalizer.94,A buttocks,"",2025-12-29T08:53:10.271Z
-64,E0_Questions_localization,,,WRITE.DialogLocalizer.95,"In English, when one human says to another human, ""I'd hit that ass"" they mean:","",2025-12-29T08:53:10.271Z
-65,E0_Questions_localization,,,WRITE.DialogLocalizer.96,They would forcibly beat an Equus asinus if they could,"",2025-12-29T08:53:10.271Z
-66,E0_Questions_localization,,,WRITE.DialogLocalizer.97,They would have sexual intercourse with another human if they could,"",2025-12-29T08:53:10.271Z
-67,E0_Questions_localization,,,WRITE.DialogLocalizer.98,"In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:","",2025-12-29T08:53:10.271Z
-68,E0_Questions_localization,,,WRITE.DialogLocalizer.99,Balaam beats the ass to death and has to find another one to do his work for him,"",2025-12-29T08:53:10.271Z
-69,E0_Questions_localization,,,WRITE.DialogLocalizer.100,God gives the ass the ability to speak and the ass begs Balaam to spare them,"",2025-12-29T08:53:10.271Z
-70,E0_Questions_localization,,,WRITE.DialogLocalizer.101,"In Aesop's Fables, one reads: ""An ass put on the skin of a lion and went around frightening all the animals. The ass saw a fox and tried to frighten her too, but she had heard his voice first, so she said to the ass, 'You can be sure that I too would have been afraid, if I had not already heard the sound of your bray'."" The moral is:","",2025-12-29T08:53:10.271Z
-71,E0_Questions_localization,,,WRITE.DialogLocalizer.102,The disenfranchised are forced to imitate those in power without ever attaining more power,"",2025-12-29T08:53:10.271Z
-72,E0_Questions_localization,,,WRITE.DialogLocalizer.103,A fool is still a fool regardless of how they are dressed,"",2025-12-29T08:53:10.271Z
-73,E0_Questions_localization,,,WRITE.DialogLocalizer.104,"In Ancient Greece, asses symbolized fertility because:","",2025-12-29T08:53:10.271Z
-74,E0_Questions_localization,,,WRITE.DialogLocalizer.105,Male donkeys have very large penises,"",2025-12-29T08:53:10.271Z
-75,E0_Questions_localization,,,WRITE.DialogLocalizer.106,Female donkeys frequently give birth to twins,"",2025-12-29T08:53:10.271Z
-76,E0_Questions_localization,,,WRITE.DialogLocalizer.107,A 'mare' is the general term for a female equine. What is the specific term for a female donkey?,"",2025-12-29T08:53:10.271Z
-77,E0_Questions_localization,,,WRITE.DialogLocalizer.108,Jack,"",2025-12-29T08:53:10.271Z
-78,E0_Questions_localization,,,WRITE.DialogLocalizer.109,Gelding,"",2025-12-29T08:53:10.271Z
-79,E0_Questions_localization,,,WRITE.DialogLocalizer.182,Jennet,"",2025-12-29T08:53:10.271Z
-80,E0_Questions_localization,,,WRITE.DialogLocalizer.181,Molly,"",2025-12-29T08:53:10.271Z
-81,E0_Questions_localization,,,WRITE.DialogLocalizer.110,A famous piece of anti-Christian graffiti from ancient Rome depicts:,"",2025-12-29T08:53:10.271Z
-82,E0_Questions_localization,,,WRITE.DialogLocalizer.111,Jesus with an ass's head,"",2025-12-29T08:53:10.271Z
-83,E0_Questions_localization,,,WRITE.DialogLocalizer.112,Jesus riding an ass backwards,"",2025-12-29T08:53:10.271Z
-84,E0_Questions_localization,,,WRITE.DialogLocalizer.113,"What does tradition say Mohammed's ass, Ya'fur, did after the Prophet died?","",2025-12-29T08:53:10.271Z
-85,E0_Questions_localization,,,WRITE.DialogLocalizer.114,Committed suicide by throwing itself down a well,"",2025-12-29T08:53:10.271Z
-86,E0_Questions_localization,,,WRITE.DialogLocalizer.115,Rode away from Mecca weeping never to return,"",2025-12-29T08:53:10.271Z
-87,E0_Questions_localization,,,WRITE.DialogLocalizer.116,"In the philosophical paradox called Buridan's Ass, an ass placed between a bucket of water and a bale of hay will:","",2025-12-29T08:53:10.271Z
-88,E0_Questions_localization,,,WRITE.DialogLocalizer.117,Always choose the hay first,"",2025-12-29T08:53:10.271Z
-89,E0_Questions_localization,,,WRITE.DialogLocalizer.118,Always choose the water first,"",2025-12-29T08:53:10.271Z
-90,E0_Questions_localization,,,WRITE.DialogLocalizer.183,Die from indecision,"",2025-12-29T08:53:10.271Z
-91,E0_Questions_localization,,,WRITE.DialogLocalizer.119,Was ist die Bedeutung des Ausdrucks „sich eine Eselsbrücke bauen“?,"",2025-12-29T08:53:10.271Z
-92,E0_Questions_localization,,,WRITE.DialogLocalizer.120,"Eine Abkürzung oder gedankliche Assoziation zu finden, um sich etwas besser merken zu können","",2025-12-29T08:53:10.271Z
-93,E0_Questions_localization,,,WRITE.DialogLocalizer.121,Vertrauen Sie niemals einem langsamen Esel beim Brückenbauen,"",2025-12-29T08:53:10.271Z
-94,E0_Questions_localization,,,WRITE.DialogLocalizer.122,"In 1981, the video game DONKEY.BAS was distributed on all original IBM computers. In that game, players must:","",2025-12-29T08:53:10.271Z
-95,E0_Questions_localization,,,WRITE.DialogLocalizer.123,Play as a donkey pulling wagons of hay from one town to another,"",2025-12-29T08:53:10.271Z
-96,E0_Questions_localization,,,WRITE.DialogLocalizer.124,Drive a car down a road while avoiding donkeys,"",2025-12-29T08:53:10.271Z
-97,E0_Questions_localization,,,WRITE.DialogLocalizer.184,Play a rhythm game that simulates donkeys mating,"",2025-12-29T08:53:10.271Z
-98,E0_Questions_localization,,,WRITE.DialogLocalizer.125,"En La Gloria, Colombia, el servicio de biblioteca móvil que usa los burros para transportar libros a los pueblos pequeños se llama:","",2025-12-29T08:53:10.271Z
-99,E0_Questions_localization,,,WRITE.DialogLocalizer.126,Biblioburro,"",2025-12-29T08:53:10.271Z
-100,E0_Questions_localization,,,WRITE.DialogLocalizer.127,Libraría Asinia,"",2025-12-29T08:53:10.271Z
-101,E0_Questions_localization,,,WRITE.DialogLocalizer.128,"In China, the rise in demand for a luxury Traditional Chinese Medicine product called 'ejiao' has resulted in how many asses being slaughtered every year?","",2025-12-29T08:53:10.271Z
-102,E0_Questions_localization,,,WRITE.DialogLocalizer.129,5 million,"",2025-12-29T08:53:10.271Z
-103,E0_Questions_localization,,,WRITE.DialogLocalizer.130,3 million,"",2025-12-29T08:53:10.271Z
-104,E0_Questions_localization,,,WRITE.DialogLocalizer.185,2 million,"",2025-12-29T08:53:10.271Z
-105,E0_Questions_localization,,,WRITE.DialogLocalizer.131,"As of 2018, how heavy must a tourist be to be too heavy to ride an ass on the island of Santorini, Greece?","",2025-12-29T08:53:10.271Z
-106,E0_Questions_localization,,,WRITE.DialogLocalizer.132,75kg (165lbs),"",2025-12-29T08:53:10.271Z
-107,E0_Questions_localization,,,WRITE.DialogLocalizer.133,100kg (220lbs),"",2025-12-29T08:53:10.271Z
-108,E0_Questions_localization,,,WRITE.DialogLocalizer.134,"In northwestern Australia, wild asses are shot from government helicopters because:","",2025-12-29T08:53:10.271Z
-109,E0_Questions_localization,,,WRITE.DialogLocalizer.135,They are considered an invasive species left behind from British colonization,"",2025-12-29T08:53:10.271Z
-110,E0_Questions_localization,,,WRITE.DialogLocalizer.136,They are destroying the natural landscape of the Kimberley,"",2025-12-29T08:53:10.271Z
-111,E0_Questions_localization,,,WRITE.DialogLocalizer.186,All of the above,"",2025-12-29T08:53:10.271Z
-112,E0_Questions_localization,,,WRITE.DialogLocalizer.137,Equus asinus has been in the service of human beings as a manual labourer for how many years?,"",2025-12-29T08:53:10.271Z
-113,E0_Questions_localization,,,WRITE.DialogLocalizer.138,5000 years,"",2025-12-29T08:53:10.271Z
-114,E0_Questions_localization,,,WRITE.DialogLocalizer.139,7000 years,"",2025-12-29T08:53:10.271Z
-115,E0_Questions_localization,,,WRITE.DialogLocalizer.21,AVATAR READY,"",2025-12-29T08:53:10.271Z
-116,E0_Questions_localization,,,WRITE.DialogLocalizer.22,MATERIALIZING...,"",2025-12-29T08:53:10.271Z
-2,E0_GameTitle_localization,,,WRITE.DialogLocalizer.1,PRESS X TO BEGIN,"",2025-12-29T08:53:10.271Z
-2,2x_Intermission_localization,,,WRITE.Dialog:Localizer.5,INTERMISSION,ONDERBREKING,2025-12-29T08:53:10.271Z
-3,2x_Intermission_localization,,,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,Waar een PAUZE van onbepaalde duur heerst.,2025-12-29T08:53:10.271Z
-4,2x_Intermission_localization,,,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,DRUK OP X OM TERUG TE BEGINNEN,2025-12-29T08:53:10.271Z
-2,4x_Intermission_localization,,,WRITE.Dialog:Localizer.5,INTERMISSION,ONDERBREKING,2025-12-29T08:53:10.271Z
-3,4x_Intermission_localization,,,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,Waar een PAUZE van onbepaalde duur heerst.,2025-12-29T08:53:10.271Z
-4,4x_Intermission_localization,,,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,DRUK OP X OM TERUG TE BEGINNEN,2025-12-29T08:53:10.271Z
-2,6x_Intermission_localization,,,WRITE.Dialog:Localizer.5,INTERMISSION,ONDERBREKING,2025-12-29T08:53:10.271Z
-3,6x_Intermission_localization,,,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,Waar een PAUZE van onbepaalde duur heerst.,2025-12-29T08:53:10.271Z
-4,6x_Intermission_localization,,,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,DRUK OP X OM TERUG TE BEGINNEN,2025-12-29T08:53:10.271Z
-2,8x_Intermission_localization,,,WRITE.Dialog:Localizer.5,INTERMISSION,"",2025-12-29T08:53:10.271Z
-3,8x_Intermission_localization,,,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,"",2025-12-29T08:53:10.271Z
-4,8x_Intermission_localization,,,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,"",2025-12-29T08:53:10.271Z
+2,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.1,WRITE.ManagerCanvasUiTextFlowchart.1,COMRADES,KAMERADEN,2025-12-29T22:52:03.200Z
+3,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.2,WRITE.ManagerCanvasUiTextFlowchart.2,MORALE,MORAAL,2025-12-29T22:52:03.200Z
+4,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.5,WRITE.ManagerCanvasUiTextFlowchart.5,Trusty Ass,Trouwe Zak,2025-12-29T22:52:03.200Z
+5,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.15,WRITE.ManagerCanvasUiTextFlowchart.15,Nice Ass,Schoon Beest,2025-12-29T22:52:03.200Z
+6,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.14,WRITE.ManagerCanvasUiTextFlowchart.14,Big Ass,Mega Ezel,2025-12-29T22:52:03.200Z
+7,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.12,WRITE.ManagerCanvasUiTextFlowchart.12,Thirsty Ass,Dorstlap,2025-12-29T22:52:03.200Z
+8,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.13,WRITE.ManagerCanvasUiTextFlowchart.13,Smart Ass,Betweter,2025-12-29T22:52:03.200Z
+9,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.11,WRITE.ManagerCanvasUiTextFlowchart.11,Slow Ass,Slome Ezel,2025-12-29T22:52:03.200Z
+10,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.10,WRITE.ManagerCanvasUiTextFlowchart.10,Kick Ass,Stampgast,2025-12-29T22:52:03.200Z
+11,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.9,WRITE.ManagerCanvasUiTextFlowchart.9,Sick Ass,Snotezel,2025-12-29T22:52:03.200Z
+12,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.8,WRITE.ManagerCanvasUiTextFlowchart.8,Hard Ass,Felle Gast,2025-12-29T22:52:03.200Z
+13,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.7,WRITE.ManagerCanvasUiTextFlowchart.7,Sturdy Ass,Stoere Ezel,2025-12-29T22:52:03.200Z
+14,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.6,WRITE.ManagerCanvasUiTextFlowchart.6,Sad Ass,Triestigaard,2025-12-29T22:52:03.200Z
+15,ManagerScene_localization,,WRITE.ManagerCanvasUiTextFlowchart.16,WRITE.ManagerCanvasUiTextFlowchart.16,Cole-Machine,Piet-Machine,2025-12-29T22:52:03.200Z
+2,CharacterProfiles_localization,,CHARACTER.Character Name,CHARACTER.Character Name,Character Name,"",2025-12-29T22:52:03.200Z
+3,CharacterProfiles_localization,Main Donkeys,CHARACTER.{$NewName},CHARACTER.{$NewName},{$NewName},{$NewName},2025-12-29T22:52:03.200Z
+4,CharacterProfiles_localization,,CHARACTER.Old Ass,CHARACTER.Old Ass,Old Ass,Ouwe Zak,2025-12-29T22:52:03.200Z
+5,CharacterProfiles_localization,,CHARACTER.Trusty Ass,CHARACTER.Trusty Ass,Trusty Ass,Trouwe Zak,2025-12-29T22:52:03.200Z
+6,CharacterProfiles_localization,,CHARACTER.Nice Ass,CHARACTER.Nice Ass,Nice Ass,Schoon Beest,2025-12-29T22:52:03.200Z
+7,CharacterProfiles_localization,,CHARACTER.Big Ass,CHARACTER.Big Ass,Big Ass,Mega Ezel,2025-12-29T22:52:03.200Z
+8,CharacterProfiles_localization,,CHARACTER.Thirsty Ass,CHARACTER.Thirsty Ass,Thirsty Ass,Dorstlap,2025-12-29T22:52:03.200Z
+9,CharacterProfiles_localization,,CHARACTER.Smart Ass,CHARACTER.Smart Ass,Smart Ass,Betweter,2025-12-29T22:52:03.200Z
+10,CharacterProfiles_localization,,CHARACTER.Slow Ass,CHARACTER.Slow Ass,Slow Ass,Slome Ezel,2025-12-29T22:52:03.200Z
+11,CharacterProfiles_localization,,CHARACTER.Kick Ass,CHARACTER.Kick Ass,Kick Ass,Stampgast,2025-12-29T22:52:03.200Z
+12,CharacterProfiles_localization,,CHARACTER.Sick Ass,CHARACTER.Sick Ass,Sick Ass,Snotezel,2025-12-29T22:52:03.200Z
+13,CharacterProfiles_localization,,CHARACTER.Hard Ass,CHARACTER.Hard Ass,Hard Ass,Felle Gast,2025-12-29T22:52:03.200Z
+14,CharacterProfiles_localization,,CHARACTER.Sturdy Ass,CHARACTER.Sturdy Ass,Sturdy Ass,Stoere Ezel,2025-12-29T22:52:03.200Z
+15,CharacterProfiles_localization,,CHARACTER.Sad Ass,CHARACTER.Sad Ass,Sad Ass,Triestigaard,2025-12-29T22:52:03.200Z
+16,CharacterProfiles_localization,,CHARACTER.Lazy Ass,CHARACTER.Lazy Ass,Lazy Ass,Luie Zak,2025-12-29T22:52:03.200Z
+17,CharacterProfiles_localization,,CHARACTER.Bad Ass,CHARACTER.Bad Ass,Bad Ass,Waaghalske,2025-12-29T22:52:03.200Z
+18,CharacterProfiles_localization,,CHARACTER.Cole-Machine,CHARACTER.Cole-Machine,Cole-Machine,Piet-Machine,2025-12-29T22:52:03.200Z
+19,CharacterProfiles_localization,,CHARACTER.Golden Ass,CHARACTER.Golden Ass,Golden Ass,Gouden Ezel,2025-12-29T22:52:03.200Z
+20,CharacterProfiles_localization,,CHARACTER.The Masses,CHARACTER.The Masses,The Masses,De Massa,2025-12-29T22:52:03.200Z
+21,CharacterProfiles_localization,The Gods,CHARACTER.Hee,CHARACTER.Hee,Hee,Hieee,2025-12-29T22:52:03.200Z
+22,CharacterProfiles_localization,,CHARACTER.Haw,CHARACTER.Haw,Haw,Haaa,2025-12-29T22:52:03.200Z
+23,CharacterProfiles_localization,,CHARACTER.THE GODS,CHARACTER.THE GODS,THE GODS,DE GODEN,2025-12-29T22:52:03.200Z
+24,CharacterProfiles_localization,Circus/Farm Animals,CHARACTER.Sheep,CHARACTER.Sheep,Sheep,Schaap,2025-12-29T22:52:03.200Z
+25,CharacterProfiles_localization,,CHARACTER.Elephant,CHARACTER.Elephant,Eli the Elephant,Ollie de Olifant,2025-12-29T22:52:03.200Z
+26,CharacterProfiles_localization,,CHARACTER.Pig,CHARACTER.Pig,Pig,Varken,2025-12-29T22:52:03.200Z
+27,CharacterProfiles_localization,,CHARACTER.Cow,CHARACTER.Cow,Cow,Koe,2025-12-29T22:52:03.200Z
+28,CharacterProfiles_localization,Humans,CHARACTER.Human,CHARACTER.Human,Human,Mens,2025-12-29T22:52:03.200Z
+29,CharacterProfiles_localization,,CHARACTER.Melvin,CHARACTER.Melvin,Ass Handler Melvin,Zakkenzeuler Zeno,2025-12-29T22:52:03.200Z
+30,CharacterProfiles_localization,,CHARACTER.Wedgie,CHARACTER.Wedgie,Ass Handler Wedgie,Zakkenzeulster Zita,2025-12-29T22:52:03.200Z
+31,CharacterProfiles_localization,,CHARACTER.Mme. Derriere,CHARACTER.Mme. Derriere,Mme. Derriere,Mevr. Derrière,2025-12-29T22:52:03.200Z
+32,CharacterProfiles_localization,,CHARACTER.Ringmaster Rico,CHARACTER.Ringmaster Rico,Ringmaster Rico,Circusdirecteur Baptiste,2025-12-29T22:52:03.200Z
+33,CharacterProfiles_localization,,CHARACTER.Zookeeper Rose,CHARACTER.Zookeeper Rose,Zookeeper Rose,Dierendokter Dina,2025-12-29T22:52:03.200Z
+34,CharacterProfiles_localization,,CHARACTER.Factory PA,CHARACTER.Factory PA,Factory PA,Fabrieksomroep,2025-12-29T22:52:03.200Z
+35,CharacterProfiles_localization,,CHARACTER.Miner With No Legs,CHARACTER.Miner With No Legs,Miner With No Legs,Mijnwerker zonder Benen,2025-12-29T22:52:03.200Z
+36,CharacterProfiles_localization,,CHARACTER.Audience Members Patrick & Milton,CHARACTER.Audience Members Patrick & Milton,Audience Members Patrick & Milton,Toeschouwers Patrick & Milton,2025-12-29T22:52:03.200Z
+37,CharacterProfiles_localization,,CHARACTER.Audience Member Laurel,CHARACTER.Audience Member Laurel,Audience Member Laurel,Toeschouwer Laurel,2025-12-29T22:52:03.200Z
+38,CharacterProfiles_localization,,CHARACTER.Audience Member David,CHARACTER.Audience Member David,Audience Member David,Toeschouwer David,2025-12-29T22:52:03.200Z
+39,CharacterProfiles_localization,,CHARACTER.Radio Host Marcos,CHARACTER.Radio Host Marcos,DJ Marcos,DJ Tom,2025-12-29T22:52:03.200Z
+40,CharacterProfiles_localization,,CHARACTER.???,CHARACTER.???,???,???,2025-12-29T22:52:03.200Z
+41,CharacterProfiles_localization,,CHARACTER.Child Joey,CHARACTER.Child Joey,Child Joey,Luukske Vermeulen,2025-12-29T22:52:03.200Z
+42,CharacterProfiles_localization,,CHARACTER.Grandma Kulan,CHARACTER.Grandma Kulan,Grandma Kulan,Grootmoe Vermeulen,2025-12-29T22:52:03.200Z
+43,CharacterProfiles_localization,,CHARACTER.Miner Jenny,CHARACTER.Miner Jenny,Miner Jenny,Mijnwerker Jenny,2025-12-29T22:52:03.200Z
+44,CharacterProfiles_localization,,CHARACTER.Mr. Butte,CHARACTER.Mr. Butte,Mr. Butte,Mr. Vanscheetvelde,2025-12-29T22:52:03.200Z
+45,CharacterProfiles_localization,Signs,CHARACTER.Sign,CHARACTER.Sign,Sign,Bord,2025-12-29T22:52:03.200Z
+46,CharacterProfiles_localization,,CHARACTER.Shitty Sign,CHARACTER.Shitty Sign,Shitty Sign,Bord met stront eraan,2025-12-29T22:52:03.200Z
+47,CharacterProfiles_localization,,CHARACTER.Old Sign,CHARACTER.Old Sign,Old Sign,Oud Bord,2025-12-29T22:52:03.200Z
+48,CharacterProfiles_localization,,CHARACTER.Welcome Sign,CHARACTER.Welcome Sign,Welcome Sign,Welkomsbord,2025-12-29T22:52:03.200Z
+49,CharacterProfiles_localization,,CHARACTER.Fancy Sign,CHARACTER.Fancy Sign,Fancy Sign,Schoon Bord,2025-12-29T22:52:03.200Z
+50,CharacterProfiles_localization,,CHARACTER.Official Sign,CHARACTER.Official Sign,Official Sign,Officiëel Bord,2025-12-29T22:52:03.200Z
+51,CharacterProfiles_localization,,CHARACTER.Dirty Sign,CHARACTER.Dirty Sign,Dirty Sign,Smerig Bord,2025-12-29T22:52:03.200Z
+52,CharacterProfiles_localization,,CHARACTER.Decrepit Sign,CHARACTER.Decrepit Sign,Decrepit Sign,Verlept Bord,2025-12-29T22:52:03.200Z
+53,CharacterProfiles_localization,,CHARACTER.Historic Sign,CHARACTER.Historic Sign,Historic Sign,Historisch Bord,2025-12-29T22:52:03.200Z
+54,CharacterProfiles_localization,,CHARACTER.Warning Sign,CHARACTER.Warning Sign,Warning Sign,Waarschuwingsbord,2025-12-29T22:52:03.200Z
+55,CharacterProfiles_localization,Factory Donkeys (be sure to make a balance of gender between the ones marked with X),CHARACTER.Proper Ass,CHARACTER.Proper Ass,Proper Ass,Keurige Ezel,2025-12-29T22:52:03.200Z
+56,CharacterProfiles_localization,x,CHARACTER.Skinny Ass,CHARACTER.Skinny Ass,Skinny Ass,Magere Ezel,2025-12-29T22:52:03.200Z
+57,CharacterProfiles_localization,,CHARACTER.Tender Ass,CHARACTER.Tender Ass,Tender Ass,Gevoelige Ezel,2025-12-29T22:52:03.200Z
+58,CharacterProfiles_localization,x,CHARACTER.Tragic Ass,CHARACTER.Tragic Ass,Tragic Ass,Weemoedige Ezel,2025-12-29T22:52:03.200Z
+59,CharacterProfiles_localization,,CHARACTER.Wild Ass,CHARACTER.Wild Ass,Wild Ass,Wilde Ezel,2025-12-29T22:52:03.200Z
+60,CharacterProfiles_localization,,CHARACTER.Anxious Ass,CHARACTER.Anxious Ass,Anxious Ass,Angstige Ezel,2025-12-29T22:52:03.200Z
+61,CharacterProfiles_localization,x,CHARACTER.Resentful Ass,CHARACTER.Resentful Ass,Resentful Ass,Wrokkige Ezel,2025-12-29T22:52:03.200Z
+62,CharacterProfiles_localization,,CHARACTER.Distressed Ass,CHARACTER.Distressed Ass,Distressed Ass,Ontzette Ezel,2025-12-29T22:52:03.200Z
+63,CharacterProfiles_localization,,CHARACTER.Gloomy Ass,CHARACTER.Gloomy Ass,Gloomy Ass,Duistere Ezel,2025-12-29T22:52:03.200Z
+64,CharacterProfiles_localization,,CHARACTER.Feeble Ass,CHARACTER.Feeble Ass,Feeble Ass,Slappe Ezel,2025-12-29T22:52:03.200Z
+65,CharacterProfiles_localization,x,CHARACTER.Helpful Ass,CHARACTER.Helpful Ass,Helpful Ass,Hulpvaardige Ezel,2025-12-29T22:52:03.200Z
+66,CharacterProfiles_localization,x,CHARACTER.Gaunt Ass,CHARACTER.Gaunt Ass,Gaunt Ass,Beenderige Ezel,2025-12-29T22:52:03.200Z
+67,CharacterProfiles_localization,,CHARACTER.Sleepy Ass,CHARACTER.Sleepy Ass,Sleepy Ass,Slaaperige Ezel,2025-12-29T22:52:03.200Z
+68,CharacterProfiles_localization,,CHARACTER.Weepy Ass,CHARACTER.Weepy Ass,Weepy Ass,Huilerige Ezel,2025-12-29T22:52:03.200Z
+69,CharacterProfiles_localization,x,CHARACTER.Edgy Ass,CHARACTER.Edgy Ass,Edgy Ass,Avantgarde Ezel,2025-12-29T22:52:03.200Z
+70,CharacterProfiles_localization,x,CHARACTER.Bleak Ass,CHARACTER.Bleak Ass,Bleak Ass,Depressieve Ezel,2025-12-29T22:52:03.200Z
+71,CharacterProfiles_localization,,CHARACTER.Busted Ass,CHARACTER.Busted Ass,Busted Ass,Afgereden Ezel,2025-12-29T22:52:03.200Z
+72,CharacterProfiles_localization,(Always male),CHARACTER.Right Ass,CHARACTER.Right Ass,Right Ass,Rechter Ezel,2025-12-29T22:52:03.200Z
+73,CharacterProfiles_localization,(Always male),CHARACTER.Left Ass,CHARACTER.Left Ass,Left Ass,Linker Ezel,2025-12-29T22:52:03.200Z
+74,CharacterProfiles_localization,Astral Plane Donkeys,CHARACTER.Mad Ass,CHARACTER.Mad Ass,Mad Ass,Gekke Ezel,2025-12-29T22:52:03.200Z
+75,CharacterProfiles_localization,,CHARACTER.Smelly Ass,CHARACTER.Smelly Ass,Smelly Ass,Stinkende Ezel,2025-12-29T22:52:03.200Z
+76,CharacterProfiles_localization,,CHARACTER.Greedy Ass,CHARACTER.Greedy Ass,Greedy Ass,Inhalige Ezel,2025-12-29T22:52:03.200Z
+77,CharacterProfiles_localization,,CHARACTER.Shifty Ass,CHARACTER.Shifty Ass,Shifty Ass,Ongure Ezel,2025-12-29T22:52:03.200Z
+78,CharacterProfiles_localization,,CHARACTER.Risky Ass,CHARACTER.Risky Ass,Risky Ass,Riskante Ezel,2025-12-29T22:52:03.200Z
+79,CharacterProfiles_localization,,CHARACTER.Furry Ass,CHARACTER.Furry Ass,Furry Ass,Harige Ezel,2025-12-29T22:52:03.200Z
+80,CharacterProfiles_localization,,CHARACTER.Dusty Ass,CHARACTER.Dusty Ass,Dusty Ass,Stoffige Ezel,2025-12-29T22:52:03.200Z
+81,CharacterProfiles_localization,,CHARACTER.Blunt Ass,CHARACTER.Blunt Ass,Blunt Ass,Groffe ezel,2025-12-29T22:52:03.200Z
+82,CharacterProfiles_localization,,CHARACTER.Peek Ass,CHARACTER.Peek Ass,Peek Ass,(Peek Ass),2025-12-29T22:52:03.200Z
+83,CharacterProfiles_localization,,CHARACTER.Cool Ass,CHARACTER.Cool Ass,Cool Ass,Coole Ezel,2025-12-29T22:52:03.200Z
+84,CharacterProfiles_localization,,CHARACTER.Mean Ass,CHARACTER.Mean Ass,Mean Ass,Stoute Ezel,2025-12-29T22:52:03.200Z
+85,CharacterProfiles_localization,,CHARACTER.Cranky Ass,CHARACTER.Cranky Ass,Cranky Ass,Mopperende Ezel,2025-12-29T22:52:03.200Z
+86,CharacterProfiles_localization,,CHARACTER.Hasty Ass,CHARACTER.Hasty Ass,Hasty Ass,Haastge Ezel,2025-12-29T22:52:03.200Z
+87,CharacterProfiles_localization,,CHARACTER.Haul Ass,CHARACTER.Haul Ass,Haul Ass,Sleur Ezel,2025-12-29T22:52:03.200Z
+88,CharacterProfiles_localization,,CHARACTER.Healthy Ass,CHARACTER.Healthy Ass,Healthy Ass,Gezonde Ezel,2025-12-29T22:52:03.200Z
+89,CharacterProfiles_localization,,CHARACTER.Mellow Ass,CHARACTER.Mellow Ass,Mellow Ass,Chille Ezel,2025-12-29T22:52:03.200Z
+90,CharacterProfiles_localization,,CHARACTER.Shaky Ass,CHARACTER.Shaky Ass,Shaky Ass,Bibber Ezel,2025-12-29T22:52:03.200Z
+91,CharacterProfiles_localization,,CHARACTER.Trippy Ass,CHARACTER.Trippy Ass,Trippy Ass,Trippende Ezel,2025-12-29T22:52:03.200Z
+92,CharacterProfiles_localization,,CHARACTER.DJ Dope Ass,CHARACTER.DJ Dope Ass,DJ Dope Ass,DJ Lijpe Ezel,2025-12-29T22:52:03.200Z
+93,CharacterProfiles_localization,,CHARACTER.Angry Ass,CHARACTER.Angry Ass,Angry Ass,Boze Ezel,2025-12-29T22:52:03.200Z
+94,CharacterProfiles_localization,,CHARACTER.Sulky Ass,CHARACTER.Sulky Ass,Sulky Ass,Zielige Ezel,2025-12-29T22:52:03.200Z
+95,CharacterProfiles_localization,,CHARACTER.Chafed Ass,CHARACTER.Chafed Ass,Chafed Ass,Excema Ezel,2025-12-29T22:52:03.200Z
+96,CharacterProfiles_localization,,CHARACTER.Broken Ass,CHARACTER.Broken Ass,Broken Ass,Gebroken Ezel,2025-12-29T22:52:03.200Z
+97,CharacterProfiles_localization,,CHARACTER.Bitter Ass,CHARACTER.Bitter Ass,Bitter Ass,Bittere Ezel,2025-12-29T22:52:03.200Z
+98,CharacterProfiles_localization,,CHARACTER.Lofty Ass,CHARACTER.Lofty Ass,Lofty Ass,Opgeblazen Ezel,2025-12-29T22:52:03.200Z
+99,CharacterProfiles_localization,,CHARACTER.Total Ass,CHARACTER.Total Ass,Total Ass,Totale Ezel,2025-12-29T22:52:03.200Z
+100,CharacterProfiles_localization,,CHARACTER.Happy Ass,CHARACTER.Happy Ass,Happy Ass,Blije Ezel,2025-12-29T22:52:03.200Z
+101,CharacterProfiles_localization,,CHARACTER.Hairy Ass,CHARACTER.Hairy Ass,Hairy Ass,Stoppelige Ezel,2025-12-29T22:52:03.200Z
+102,CharacterProfiles_localization,,CHARACTER.Dirty Ass,CHARACTER.Dirty Ass,Dirty Ass,Vuile Ezel,2025-12-29T22:52:03.200Z
+103,CharacterProfiles_localization,,CHARACTER.Janky Ass,CHARACTER.Janky Ass,Janky Ass,Deficiënte Ezel,2025-12-29T22:52:03.200Z
+104,CharacterProfiles_localization,,CHARACTER.Tight Ass,CHARACTER.Tight Ass,Tight Ass,Strakke Ezel,2025-12-29T22:52:03.200Z
+105,CharacterProfiles_localization,,CHARACTER.Fresh Ass,CHARACTER.Fresh Ass,Fresh Ass,Verse Ezel,2025-12-29T22:52:03.200Z
+106,CharacterProfiles_localization,,CHARACTER.Gullible Ass,CHARACTER.Gullible Ass,Gullible Ass,Goedgelovige Ezel,2025-12-29T22:52:03.200Z
+107,CharacterProfiles_localization,,CHARACTER.Ugly Ass,CHARACTER.Ugly Ass,Ugly Ass,Lelijke Ezel,2025-12-29T22:52:03.200Z
+108,CharacterProfiles_localization,,,,Spicy Ass?,"",2025-12-29T22:52:03.200Z
+109,CharacterProfiles_localization,,,,*** Ass,"",2025-12-29T22:52:03.200Z
+2,E0_Instructions_localization,,WRITE.Dialog:Localizer.1,WRITE.Dialog:Localizer.1,Instructions for Operators [EN],"",2025-12-29T22:52:03.200Z
+2,E0_Questions_localization,,WRITE.DialogLocalizer.17,WRITE.DialogLocalizer.17,AVATAR REQUIRED,"",2025-12-29T22:52:03.200Z
+3,E0_Questions_localization,,WRITE.DialogLocalizer.18,WRITE.DialogLocalizer.18,AWAITING INPUT,"",2025-12-29T22:52:03.200Z
+4,E0_Questions_localization,,WRITE.DialogLocalizer.187,WRITE.DialogLocalizer.187,PRESS X,"",2025-12-29T22:52:03.200Z
+5,E0_Questions_localization,,WRITE.DialogLocalizer.12,WRITE.DialogLocalizer.12,Which does your society value more?,"",2025-12-29T22:52:03.200Z
+6,E0_Questions_localization,,WRITE.DialogLocalizer.13,WRITE.DialogLocalizer.13,Those who stay with the herd,"",2025-12-29T22:52:03.200Z
+7,E0_Questions_localization,,WRITE.DialogLocalizer.14,WRITE.DialogLocalizer.14,Those who step away from the herd,"",2025-12-29T22:52:03.200Z
+8,E0_Questions_localization,,WRITE.DialogLocalizer.53,WRITE.DialogLocalizer.53,Do you think of yourself as an intelligent animal?,"",2025-12-29T22:52:03.200Z
+9,E0_Questions_localization,,WRITE.DialogLocalizer.55,WRITE.DialogLocalizer.55,Yes,"",2025-12-29T22:52:03.200Z
+10,E0_Questions_localization,,WRITE.DialogLocalizer.54,WRITE.DialogLocalizer.54,No,"",2025-12-29T22:52:03.200Z
+11,E0_Questions_localization,,WRITE.DialogLocalizer.56,WRITE.DialogLocalizer.56,Do you think of yourself as a political animal?,"",2025-12-29T22:52:03.200Z
+12,E0_Questions_localization,,WRITE.DialogLocalizer.57,WRITE.DialogLocalizer.57,Yes,"",2025-12-29T22:52:03.200Z
+13,E0_Questions_localization,,WRITE.DialogLocalizer.58,WRITE.DialogLocalizer.58,No,"",2025-12-29T22:52:03.200Z
+14,E0_Questions_localization,,WRITE.DialogLocalizer.59,WRITE.DialogLocalizer.59,Do you have urges to copulate and reproduce?,"",2025-12-29T22:52:03.200Z
+15,E0_Questions_localization,,WRITE.DialogLocalizer.60,WRITE.DialogLocalizer.60,Yes,"",2025-12-29T22:52:03.200Z
+16,E0_Questions_localization,,WRITE.DialogLocalizer.61,WRITE.DialogLocalizer.61,No,"",2025-12-29T22:52:03.200Z
+17,E0_Questions_localization,,WRITE.DialogLocalizer.62,WRITE.DialogLocalizer.62,What is your natural habitat?,"",2025-12-29T22:52:03.200Z
+18,E0_Questions_localization,,WRITE.DialogLocalizer.63,WRITE.DialogLocalizer.63,Grassy plains,"",2025-12-29T22:52:03.200Z
+19,E0_Questions_localization,,WRITE.DialogLocalizer.140,WRITE.DialogLocalizer.140,Rocky desert,"",2025-12-29T22:52:03.200Z
+20,E0_Questions_localization,,WRITE.DialogLocalizer.64,WRITE.DialogLocalizer.64,Concrete jungle,"",2025-12-29T22:52:03.200Z
+21,E0_Questions_localization,,WRITE.DialogLocalizer.65,WRITE.DialogLocalizer.65,Do you have experience doing manual labour every day for an extended period of time?,"",2025-12-29T22:52:03.200Z
+22,E0_Questions_localization,,WRITE.DialogLocalizer.66,WRITE.DialogLocalizer.66,Yes,"",2025-12-29T22:52:03.200Z
+23,E0_Questions_localization,,WRITE.DialogLocalizer.67,WRITE.DialogLocalizer.67,No,"",2025-12-29T22:52:03.200Z
+24,E0_Questions_localization,,WRITE.DialogLocalizer.68,WRITE.DialogLocalizer.68,Have you ever gone on a labour strike due to unfair or dangerous working conditions?,"",2025-12-29T22:52:03.200Z
+25,E0_Questions_localization,,WRITE.DialogLocalizer.69,WRITE.DialogLocalizer.69,Yes,"",2025-12-29T22:52:03.200Z
+26,E0_Questions_localization,,WRITE.DialogLocalizer.70,WRITE.DialogLocalizer.70,No,"",2025-12-29T22:52:03.200Z
+27,E0_Questions_localization,,WRITE.DialogLocalizer.71,WRITE.DialogLocalizer.71,Have you ever lost your job because your role became redundant at your place of work?,"",2025-12-29T22:52:03.200Z
+28,E0_Questions_localization,,WRITE.DialogLocalizer.72,WRITE.DialogLocalizer.72,Yes,"",2025-12-29T22:52:03.200Z
+29,E0_Questions_localization,,WRITE.DialogLocalizer.73,WRITE.DialogLocalizer.73,No,"",2025-12-29T22:52:03.200Z
+30,E0_Questions_localization,,WRITE.DialogLocalizer.74,WRITE.DialogLocalizer.74,What kind of job was it?,"",2025-12-29T22:52:03.200Z
+31,E0_Questions_localization,,WRITE.DialogLocalizer.75,WRITE.DialogLocalizer.75,"Agriculture, fishery","",2025-12-29T22:52:03.200Z
+32,E0_Questions_localization,,WRITE.DialogLocalizer.76,WRITE.DialogLocalizer.76,"Mining, oil, forestry","",2025-12-29T22:52:03.200Z
+33,E0_Questions_localization,,WRITE.DialogLocalizer.170,WRITE.DialogLocalizer.170,Administration or clerical support,"",2025-12-29T22:52:03.200Z
+34,E0_Questions_localization,,WRITE.DialogLocalizer.171,WRITE.DialogLocalizer.171,Hospitality or service,"",2025-12-29T22:52:03.200Z
+35,E0_Questions_localization,,WRITE.DialogLocalizer.172,WRITE.DialogLocalizer.172,Arts and culture,"",2025-12-29T22:52:03.200Z
+36,E0_Questions_localization,,WRITE.DialogLocalizer.173,WRITE.DialogLocalizer.173,Other,"",2025-12-29T22:52:03.200Z
+37,E0_Questions_localization,,WRITE.DialogLocalizer.77,WRITE.DialogLocalizer.77,How were the job conditions?,"",2025-12-29T22:52:03.200Z
+38,E0_Questions_localization,,WRITE.DialogLocalizer.78,WRITE.DialogLocalizer.78,Amazing,"",2025-12-29T22:52:03.200Z
+39,E0_Questions_localization,,WRITE.DialogLocalizer.79,WRITE.DialogLocalizer.79,Good,"",2025-12-29T22:52:03.200Z
+40,E0_Questions_localization,,WRITE.DialogLocalizer.174,WRITE.DialogLocalizer.174,Fair,"",2025-12-29T22:52:03.200Z
+41,E0_Questions_localization,,WRITE.DialogLocalizer.175,WRITE.DialogLocalizer.175,Bad,"",2025-12-29T22:52:03.200Z
+42,E0_Questions_localization,,WRITE.DialogLocalizer.176,WRITE.DialogLocalizer.176,Terrible,"",2025-12-29T22:52:03.200Z
+43,E0_Questions_localization,,WRITE.DialogLocalizer.80,WRITE.DialogLocalizer.80,Do you miss the job?,"",2025-12-29T22:52:03.200Z
+44,E0_Questions_localization,,WRITE.DialogLocalizer.81,WRITE.DialogLocalizer.81,Yes,"",2025-12-29T22:52:03.200Z
+45,E0_Questions_localization,,WRITE.DialogLocalizer.82,WRITE.DialogLocalizer.82,No,"",2025-12-29T22:52:03.200Z
+46,E0_Questions_localization,,WRITE.DialogLocalizer.177,WRITE.DialogLocalizer.177,I miss aspects of it,"",2025-12-29T22:52:03.200Z
+47,E0_Questions_localization,,WRITE.DialogLocalizer.83,WRITE.DialogLocalizer.83,Do you think you would still have the job if you did things differently?,"",2025-12-29T22:52:03.200Z
+48,E0_Questions_localization,,WRITE.DialogLocalizer.84,WRITE.DialogLocalizer.84,Yes,"",2025-12-29T22:52:03.200Z
+49,E0_Questions_localization,,WRITE.DialogLocalizer.85,WRITE.DialogLocalizer.85,No,"",2025-12-29T22:52:03.200Z
+50,E0_Questions_localization,,WRITE.DialogLocalizer.178,WRITE.DialogLocalizer.178,I don't know,"",2025-12-29T22:52:03.200Z
+51,E0_Questions_localization,,WRITE.DialogLocalizer.86,WRITE.DialogLocalizer.86,Would you consider yourself to be the best representative of your species to lead a Revolution?,"",2025-12-29T22:52:03.200Z
+52,E0_Questions_localization,,WRITE.DialogLocalizer.87,WRITE.DialogLocalizer.87,Yes,"",2025-12-29T22:52:03.200Z
+53,E0_Questions_localization,,WRITE.DialogLocalizer.88,WRITE.DialogLocalizer.88,No,"",2025-12-29T22:52:03.200Z
+54,E0_Questions_localization,,WRITE.DialogLocalizer.89,WRITE.DialogLocalizer.89,Which of these mythic and literary heroes do you identify with the most?,"",2025-12-29T22:52:03.200Z
+55,E0_Questions_localization,,WRITE.DialogLocalizer.90,WRITE.DialogLocalizer.90,Bottom from A Midsummer Night's Dream,"",2025-12-29T22:52:03.200Z
+56,E0_Questions_localization,,WRITE.DialogLocalizer.91,WRITE.DialogLocalizer.91,Lucius from The Golden Ass by Apuleius,"",2025-12-29T22:52:03.200Z
+57,E0_Questions_localization,,WRITE.DialogLocalizer.180,WRITE.DialogLocalizer.180,Midas from Greek Mythology,"",2025-12-29T22:52:03.200Z
+58,E0_Questions_localization,,WRITE.DialogLocalizer.179,WRITE.DialogLocalizer.179,Pinocchio from Pinocchio,"",2025-12-29T22:52:03.200Z
+59,E0_Questions_localization,,WRITE.DialogLocalizer.19,WRITE.DialogLocalizer.19,PHASE ONE\nCOMPLETE,"",2025-12-29T22:52:03.200Z
+60,E0_Questions_localization,,WRITE.DialogLocalizer.20,WRITE.DialogLocalizer.20,CALIBRATING INTELLIGENCE,"",2025-12-29T22:52:03.200Z
+61,E0_Questions_localization,,WRITE.DialogLocalizer.92,WRITE.DialogLocalizer.92,"In English, when one human says to another human, ""You ass,"" they are comparing a human to:","",2025-12-29T22:52:03.200Z
+62,E0_Questions_localization,,WRITE.DialogLocalizer.93,WRITE.DialogLocalizer.93,Equus asinus,"",2025-12-29T22:52:03.200Z
+63,E0_Questions_localization,,WRITE.DialogLocalizer.94,WRITE.DialogLocalizer.94,A buttocks,"",2025-12-29T22:52:03.200Z
+64,E0_Questions_localization,,WRITE.DialogLocalizer.95,WRITE.DialogLocalizer.95,"In English, when one human says to another human, ""I'd hit that ass"" they mean:","",2025-12-29T22:52:03.200Z
+65,E0_Questions_localization,,WRITE.DialogLocalizer.96,WRITE.DialogLocalizer.96,They would forcibly beat an Equus asinus if they could,"",2025-12-29T22:52:03.200Z
+66,E0_Questions_localization,,WRITE.DialogLocalizer.97,WRITE.DialogLocalizer.97,They would have sexual intercourse with another human if they could,"",2025-12-29T22:52:03.200Z
+67,E0_Questions_localization,,WRITE.DialogLocalizer.98,WRITE.DialogLocalizer.98,"In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:","",2025-12-29T22:52:03.200Z
+68,E0_Questions_localization,,WRITE.DialogLocalizer.99,WRITE.DialogLocalizer.99,Balaam beats the ass to death and has to find another one to do his work for him,"",2025-12-29T22:52:03.200Z
+69,E0_Questions_localization,,WRITE.DialogLocalizer.100,WRITE.DialogLocalizer.100,God gives the ass the ability to speak and the ass begs Balaam to spare them,"",2025-12-29T22:52:03.200Z
+70,E0_Questions_localization,,WRITE.DialogLocalizer.101,WRITE.DialogLocalizer.101,"In Aesop's Fables, one reads: ""An ass put on the skin of a lion and went around frightening all the animals. The ass saw a fox and tried to frighten her too, but she had heard his voice first, so she said to the ass, 'You can be sure that I too would have been afraid, if I had not already heard the sound of your bray'."" The moral is:","",2025-12-29T22:52:03.200Z
+71,E0_Questions_localization,,WRITE.DialogLocalizer.102,WRITE.DialogLocalizer.102,The disenfranchised are forced to imitate those in power without ever attaining more power,"",2025-12-29T22:52:03.200Z
+72,E0_Questions_localization,,WRITE.DialogLocalizer.103,WRITE.DialogLocalizer.103,A fool is still a fool regardless of how they are dressed,"",2025-12-29T22:52:03.200Z
+73,E0_Questions_localization,,WRITE.DialogLocalizer.104,WRITE.DialogLocalizer.104,"In Ancient Greece, asses symbolized fertility because:","",2025-12-29T22:52:03.200Z
+74,E0_Questions_localization,,WRITE.DialogLocalizer.105,WRITE.DialogLocalizer.105,Male donkeys have very large penises,"",2025-12-29T22:52:03.200Z
+75,E0_Questions_localization,,WRITE.DialogLocalizer.106,WRITE.DialogLocalizer.106,Female donkeys frequently give birth to twins,"",2025-12-29T22:52:03.200Z
+76,E0_Questions_localization,,WRITE.DialogLocalizer.107,WRITE.DialogLocalizer.107,A 'mare' is the general term for a female equine. What is the specific term for a female donkey?,"",2025-12-29T22:52:03.200Z
+77,E0_Questions_localization,,WRITE.DialogLocalizer.108,WRITE.DialogLocalizer.108,Jack,"",2025-12-29T22:52:03.200Z
+78,E0_Questions_localization,,WRITE.DialogLocalizer.109,WRITE.DialogLocalizer.109,Gelding,"",2025-12-29T22:52:03.200Z
+79,E0_Questions_localization,,WRITE.DialogLocalizer.182,WRITE.DialogLocalizer.182,Jennet,"",2025-12-29T22:52:03.200Z
+80,E0_Questions_localization,,WRITE.DialogLocalizer.181,WRITE.DialogLocalizer.181,Molly,"",2025-12-29T22:52:03.200Z
+81,E0_Questions_localization,,WRITE.DialogLocalizer.110,WRITE.DialogLocalizer.110,A famous piece of anti-Christian graffiti from ancient Rome depicts:,"",2025-12-29T22:52:03.200Z
+82,E0_Questions_localization,,WRITE.DialogLocalizer.111,WRITE.DialogLocalizer.111,Jesus with an ass's head,"",2025-12-29T22:52:03.200Z
+83,E0_Questions_localization,,WRITE.DialogLocalizer.112,WRITE.DialogLocalizer.112,Jesus riding an ass backwards,"",2025-12-29T22:52:03.200Z
+84,E0_Questions_localization,,WRITE.DialogLocalizer.113,WRITE.DialogLocalizer.113,"What does tradition say Mohammed's ass, Ya'fur, did after the Prophet died?","",2025-12-29T22:52:03.200Z
+85,E0_Questions_localization,,WRITE.DialogLocalizer.114,WRITE.DialogLocalizer.114,Committed suicide by throwing itself down a well,"",2025-12-29T22:52:03.200Z
+86,E0_Questions_localization,,WRITE.DialogLocalizer.115,WRITE.DialogLocalizer.115,Rode away from Mecca weeping never to return,"",2025-12-29T22:52:03.200Z
+87,E0_Questions_localization,,WRITE.DialogLocalizer.116,WRITE.DialogLocalizer.116,"In the philosophical paradox called Buridan's Ass, an ass placed between a bucket of water and a bale of hay will:","",2025-12-29T22:52:03.200Z
+88,E0_Questions_localization,,WRITE.DialogLocalizer.117,WRITE.DialogLocalizer.117,Always choose the hay first,"",2025-12-29T22:52:03.200Z
+89,E0_Questions_localization,,WRITE.DialogLocalizer.118,WRITE.DialogLocalizer.118,Always choose the water first,"",2025-12-29T22:52:03.200Z
+90,E0_Questions_localization,,WRITE.DialogLocalizer.183,WRITE.DialogLocalizer.183,Die from indecision,"",2025-12-29T22:52:03.200Z
+91,E0_Questions_localization,,WRITE.DialogLocalizer.119,WRITE.DialogLocalizer.119,Was ist die Bedeutung des Ausdrucks „sich eine Eselsbrücke bauen“?,"",2025-12-29T22:52:03.200Z
+92,E0_Questions_localization,,WRITE.DialogLocalizer.120,WRITE.DialogLocalizer.120,"Eine Abkürzung oder gedankliche Assoziation zu finden, um sich etwas besser merken zu können","",2025-12-29T22:52:03.200Z
+93,E0_Questions_localization,,WRITE.DialogLocalizer.121,WRITE.DialogLocalizer.121,Vertrauen Sie niemals einem langsamen Esel beim Brückenbauen,"",2025-12-29T22:52:03.200Z
+94,E0_Questions_localization,,WRITE.DialogLocalizer.122,WRITE.DialogLocalizer.122,"In 1981, the video game DONKEY.BAS was distributed on all original IBM computers. In that game, players must:","",2025-12-29T22:52:03.200Z
+95,E0_Questions_localization,,WRITE.DialogLocalizer.123,WRITE.DialogLocalizer.123,Play as a donkey pulling wagons of hay from one town to another,"",2025-12-29T22:52:03.200Z
+96,E0_Questions_localization,,WRITE.DialogLocalizer.124,WRITE.DialogLocalizer.124,Drive a car down a road while avoiding donkeys,"",2025-12-29T22:52:03.200Z
+97,E0_Questions_localization,,WRITE.DialogLocalizer.184,WRITE.DialogLocalizer.184,Play a rhythm game that simulates donkeys mating,"",2025-12-29T22:52:03.200Z
+98,E0_Questions_localization,,WRITE.DialogLocalizer.125,WRITE.DialogLocalizer.125,"En La Gloria, Colombia, el servicio de biblioteca móvil que usa los burros para transportar libros a los pueblos pequeños se llama:","",2025-12-29T22:52:03.200Z
+99,E0_Questions_localization,,WRITE.DialogLocalizer.126,WRITE.DialogLocalizer.126,Biblioburro,"",2025-12-29T22:52:03.200Z
+100,E0_Questions_localization,,WRITE.DialogLocalizer.127,WRITE.DialogLocalizer.127,Libraría Asinia,"",2025-12-29T22:52:03.200Z
+101,E0_Questions_localization,,WRITE.DialogLocalizer.128,WRITE.DialogLocalizer.128,"In China, the rise in demand for a luxury Traditional Chinese Medicine product called 'ejiao' has resulted in how many asses being slaughtered every year?","",2025-12-29T22:52:03.200Z
+102,E0_Questions_localization,,WRITE.DialogLocalizer.129,WRITE.DialogLocalizer.129,5 million,"",2025-12-29T22:52:03.200Z
+103,E0_Questions_localization,,WRITE.DialogLocalizer.130,WRITE.DialogLocalizer.130,3 million,"",2025-12-29T22:52:03.200Z
+104,E0_Questions_localization,,WRITE.DialogLocalizer.185,WRITE.DialogLocalizer.185,2 million,"",2025-12-29T22:52:03.200Z
+105,E0_Questions_localization,,WRITE.DialogLocalizer.131,WRITE.DialogLocalizer.131,"As of 2018, how heavy must a tourist be to be too heavy to ride an ass on the island of Santorini, Greece?","",2025-12-29T22:52:03.200Z
+106,E0_Questions_localization,,WRITE.DialogLocalizer.132,WRITE.DialogLocalizer.132,75kg (165lbs),"",2025-12-29T22:52:03.200Z
+107,E0_Questions_localization,,WRITE.DialogLocalizer.133,WRITE.DialogLocalizer.133,100kg (220lbs),"",2025-12-29T22:52:03.200Z
+108,E0_Questions_localization,,WRITE.DialogLocalizer.134,WRITE.DialogLocalizer.134,"In northwestern Australia, wild asses are shot from government helicopters because:","",2025-12-29T22:52:03.200Z
+109,E0_Questions_localization,,WRITE.DialogLocalizer.135,WRITE.DialogLocalizer.135,They are considered an invasive species left behind from British colonization,"",2025-12-29T22:52:03.200Z
+110,E0_Questions_localization,,WRITE.DialogLocalizer.136,WRITE.DialogLocalizer.136,They are destroying the natural landscape of the Kimberley,"",2025-12-29T22:52:03.200Z
+111,E0_Questions_localization,,WRITE.DialogLocalizer.186,WRITE.DialogLocalizer.186,All of the above,"",2025-12-29T22:52:03.200Z
+112,E0_Questions_localization,,WRITE.DialogLocalizer.137,WRITE.DialogLocalizer.137,Equus asinus has been in the service of human beings as a manual labourer for how many years?,"",2025-12-29T22:52:03.200Z
+113,E0_Questions_localization,,WRITE.DialogLocalizer.138,WRITE.DialogLocalizer.138,5000 years,"",2025-12-29T22:52:03.200Z
+114,E0_Questions_localization,,WRITE.DialogLocalizer.139,WRITE.DialogLocalizer.139,7000 years,"",2025-12-29T22:52:03.200Z
+115,E0_Questions_localization,,WRITE.DialogLocalizer.21,WRITE.DialogLocalizer.21,AVATAR READY,"",2025-12-29T22:52:03.200Z
+116,E0_Questions_localization,,WRITE.DialogLocalizer.22,WRITE.DialogLocalizer.22,MATERIALIZING...,"",2025-12-29T22:52:03.200Z
+2,E0_GameTitle_localization,,WRITE.DialogLocalizer.1,WRITE.DialogLocalizer.1,PRESS X TO BEGIN,"",2025-12-29T22:52:03.200Z
+2,2x_Intermission_localization,,WRITE.Dialog:Localizer.5,WRITE.Dialog:Localizer.5,INTERMISSION,ONDERBREKING,2025-12-29T22:52:03.200Z
+3,2x_Intermission_localization,,WRITE.Dialog:Localizer.7,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,Waar een PAUZE van onbepaalde duur heerst.,2025-12-29T22:52:03.200Z
+4,2x_Intermission_localization,,WRITE.Dialog:Localizer.8,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,DRUK OP X OM TERUG TE BEGINNEN,2025-12-29T22:52:03.200Z
+2,4x_Intermission_localization,,WRITE.Dialog:Localizer.5,WRITE.Dialog:Localizer.5,INTERMISSION,ONDERBREKING,2025-12-29T22:52:03.200Z
+3,4x_Intermission_localization,,WRITE.Dialog:Localizer.7,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,Waar een PAUZE van onbepaalde duur heerst.,2025-12-29T22:52:03.200Z
+4,4x_Intermission_localization,,WRITE.Dialog:Localizer.8,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,DRUK OP X OM TERUG TE BEGINNEN,2025-12-29T22:52:03.200Z
+2,6x_Intermission_localization,,WRITE.Dialog:Localizer.5,WRITE.Dialog:Localizer.5,INTERMISSION,ONDERBREKING,2025-12-29T22:52:03.200Z
+3,6x_Intermission_localization,,WRITE.Dialog:Localizer.7,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,Waar een PAUZE van onbepaalde duur heerst.,2025-12-29T22:52:03.200Z
+4,6x_Intermission_localization,,WRITE.Dialog:Localizer.8,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,DRUK OP X OM TERUG TE BEGINNEN,2025-12-29T22:52:03.200Z
+2,8x_Intermission_localization,,WRITE.Dialog:Localizer.5,WRITE.Dialog:Localizer.5,INTERMISSION,"",2025-12-29T22:52:03.200Z
+3,8x_Intermission_localization,,WRITE.Dialog:Localizer.7,WRITE.Dialog:Localizer.7,in which there is a PAUSE of no fixed duration,"",2025-12-29T22:52:03.200Z
+4,8x_Intermission_localization,,WRITE.Dialog:Localizer.8,WRITE.Dialog:Localizer.8,PRESS X TO BEGIN WHENEVER,"",2025-12-29T22:52:03.200Z

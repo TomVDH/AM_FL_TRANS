@@ -1,0 +1,502 @@
+[
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "CharacterProfiles_localization",
+    "entryIndex": 0,
+    "rowNumber": 2,
+    "key": "CHARACTER.Character Name",
+    "utterer": "CHARACTER.Character Name",
+    "context": "",
+    "sourceEnglish": "Character Name"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "CharacterProfiles_localization",
+    "entryIndex": 106,
+    "rowNumber": 108,
+    "key": "",
+    "utterer": "",
+    "context": "",
+    "sourceEnglish": "Spicy Ass?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "CharacterProfiles_localization",
+    "entryIndex": 107,
+    "rowNumber": 109,
+    "key": "",
+    "utterer": "",
+    "context": "",
+    "sourceEnglish": "*** Ass"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Instructions_localization",
+    "entryIndex": 0,
+    "rowNumber": 2,
+    "key": "WRITE.Dialog:Localizer.1",
+    "utterer": "WRITE.Dialog:Localizer.1",
+    "context": "",
+    "sourceEnglish": "Instructions for Operators [EN]"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 0,
+    "rowNumber": 2,
+    "key": "WRITE.DialogLocalizer.17",
+    "utterer": "WRITE.DialogLocalizer.17",
+    "context": "",
+    "sourceEnglish": "AVATAR REQUIRED"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 1,
+    "rowNumber": 3,
+    "key": "WRITE.DialogLocalizer.18",
+    "utterer": "WRITE.DialogLocalizer.18",
+    "context": "",
+    "sourceEnglish": "AWAITING INPUT"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 2,
+    "rowNumber": 4,
+    "key": "WRITE.DialogLocalizer.187",
+    "utterer": "WRITE.DialogLocalizer.187",
+    "context": "",
+    "sourceEnglish": "PRESS X"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 3,
+    "rowNumber": 5,
+    "key": "WRITE.DialogLocalizer.12",
+    "utterer": "WRITE.DialogLocalizer.12",
+    "context": "",
+    "sourceEnglish": "Which does your society value more?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 4,
+    "rowNumber": 6,
+    "key": "WRITE.DialogLocalizer.13",
+    "utterer": "WRITE.DialogLocalizer.13",
+    "context": "",
+    "sourceEnglish": "Those who stay with the herd"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 5,
+    "rowNumber": 7,
+    "key": "WRITE.DialogLocalizer.14",
+    "utterer": "WRITE.DialogLocalizer.14",
+    "context": "",
+    "sourceEnglish": "Those who step away from the herd"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 6,
+    "rowNumber": 8,
+    "key": "WRITE.DialogLocalizer.53",
+    "utterer": "WRITE.DialogLocalizer.53",
+    "context": "",
+    "sourceEnglish": "Do you think of yourself as an intelligent animal?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 7,
+    "rowNumber": 9,
+    "key": "WRITE.DialogLocalizer.55",
+    "utterer": "WRITE.DialogLocalizer.55",
+    "context": "",
+    "sourceEnglish": "Yes"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 8,
+    "rowNumber": 10,
+    "key": "WRITE.DialogLocalizer.54",
+    "utterer": "WRITE.DialogLocalizer.54",
+    "context": "",
+    "sourceEnglish": "No"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 9,
+    "rowNumber": 11,
+    "key": "WRITE.DialogLocalizer.56",
+    "utterer": "WRITE.DialogLocalizer.56",
+    "context": "",
+    "sourceEnglish": "Do you think of yourself as a political animal?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 10,
+    "rowNumber": 12,
+    "key": "WRITE.DialogLocalizer.57",
+    "utterer": "WRITE.DialogLocalizer.57",
+    "context": "",
+    "sourceEnglish": "Yes"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 11,
+    "rowNumber": 13,
+    "key": "WRITE.DialogLocalizer.58",
+    "utterer": "WRITE.DialogLocalizer.58",
+    "context": "",
+    "sourceEnglish": "No"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 12,
+    "rowNumber": 14,
+    "key": "WRITE.DialogLocalizer.59",
+    "utterer": "WRITE.DialogLocalizer.59",
+    "context": "",
+    "sourceEnglish": "Do you have urges to copulate and reproduce?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 13,
+    "rowNumber": 15,
+    "key": "WRITE.DialogLocalizer.60",
+    "utterer": "WRITE.DialogLocalizer.60",
+    "context": "",
+    "sourceEnglish": "Yes"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 14,
+    "rowNumber": 16,
+    "key": "WRITE.DialogLocalizer.61",
+    "utterer": "WRITE.DialogLocalizer.61",
+    "context": "",
+    "sourceEnglish": "No"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 15,
+    "rowNumber": 17,
+    "key": "WRITE.DialogLocalizer.62",
+    "utterer": "WRITE.DialogLocalizer.62",
+    "context": "",
+    "sourceEnglish": "What is your natural habitat?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 16,
+    "rowNumber": 18,
+    "key": "WRITE.DialogLocalizer.63",
+    "utterer": "WRITE.DialogLocalizer.63",
+    "context": "",
+    "sourceEnglish": "Grassy plains"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 17,
+    "rowNumber": 19,
+    "key": "WRITE.DialogLocalizer.140",
+    "utterer": "WRITE.DialogLocalizer.140",
+    "context": "",
+    "sourceEnglish": "Rocky desert"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 18,
+    "rowNumber": 20,
+    "key": "WRITE.DialogLocalizer.64",
+    "utterer": "WRITE.DialogLocalizer.64",
+    "context": "",
+    "sourceEnglish": "Concrete jungle"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 19,
+    "rowNumber": 21,
+    "key": "WRITE.DialogLocalizer.65",
+    "utterer": "WRITE.DialogLocalizer.65",
+    "context": "",
+    "sourceEnglish": "Do you have experience doing manual labour every day for an extended period of time?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 20,
+    "rowNumber": 22,
+    "key": "WRITE.DialogLocalizer.66",
+    "utterer": "WRITE.DialogLocalizer.66",
+    "context": "",
+    "sourceEnglish": "Yes"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 21,
+    "rowNumber": 23,
+    "key": "WRITE.DialogLocalizer.67",
+    "utterer": "WRITE.DialogLocalizer.67",
+    "context": "",
+    "sourceEnglish": "No"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 22,
+    "rowNumber": 24,
+    "key": "WRITE.DialogLocalizer.68",
+    "utterer": "WRITE.DialogLocalizer.68",
+    "context": "",
+    "sourceEnglish": "Have you ever gone on a labour strike due to unfair or dangerous working conditions?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 23,
+    "rowNumber": 25,
+    "key": "WRITE.DialogLocalizer.69",
+    "utterer": "WRITE.DialogLocalizer.69",
+    "context": "",
+    "sourceEnglish": "Yes"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 24,
+    "rowNumber": 26,
+    "key": "WRITE.DialogLocalizer.70",
+    "utterer": "WRITE.DialogLocalizer.70",
+    "context": "",
+    "sourceEnglish": "No"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 25,
+    "rowNumber": 27,
+    "key": "WRITE.DialogLocalizer.71",
+    "utterer": "WRITE.DialogLocalizer.71",
+    "context": "",
+    "sourceEnglish": "Have you ever lost your job because your role became redundant at your place of work?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 26,
+    "rowNumber": 28,
+    "key": "WRITE.DialogLocalizer.72",
+    "utterer": "WRITE.DialogLocalizer.72",
+    "context": "",
+    "sourceEnglish": "Yes"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 27,
+    "rowNumber": 29,
+    "key": "WRITE.DialogLocalizer.73",
+    "utterer": "WRITE.DialogLocalizer.73",
+    "context": "",
+    "sourceEnglish": "No"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 28,
+    "rowNumber": 30,
+    "key": "WRITE.DialogLocalizer.74",
+    "utterer": "WRITE.DialogLocalizer.74",
+    "context": "",
+    "sourceEnglish": "What kind of job was it?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 29,
+    "rowNumber": 31,
+    "key": "WRITE.DialogLocalizer.75",
+    "utterer": "WRITE.DialogLocalizer.75",
+    "context": "",
+    "sourceEnglish": "Agriculture, fishery"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 30,
+    "rowNumber": 32,
+    "key": "WRITE.DialogLocalizer.76",
+    "utterer": "WRITE.DialogLocalizer.76",
+    "context": "",
+    "sourceEnglish": "Mining, oil, forestry"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 31,
+    "rowNumber": 33,
+    "key": "WRITE.DialogLocalizer.170",
+    "utterer": "WRITE.DialogLocalizer.170",
+    "context": "",
+    "sourceEnglish": "Administration or clerical support"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 32,
+    "rowNumber": 34,
+    "key": "WRITE.DialogLocalizer.171",
+    "utterer": "WRITE.DialogLocalizer.171",
+    "context": "",
+    "sourceEnglish": "Hospitality or service"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 33,
+    "rowNumber": 35,
+    "key": "WRITE.DialogLocalizer.172",
+    "utterer": "WRITE.DialogLocalizer.172",
+    "context": "",
+    "sourceEnglish": "Arts and culture"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 34,
+    "rowNumber": 36,
+    "key": "WRITE.DialogLocalizer.173",
+    "utterer": "WRITE.DialogLocalizer.173",
+    "context": "",
+    "sourceEnglish": "Other"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 35,
+    "rowNumber": 37,
+    "key": "WRITE.DialogLocalizer.77",
+    "utterer": "WRITE.DialogLocalizer.77",
+    "context": "",
+    "sourceEnglish": "How were the job conditions?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 36,
+    "rowNumber": 38,
+    "key": "WRITE.DialogLocalizer.78",
+    "utterer": "WRITE.DialogLocalizer.78",
+    "context": "",
+    "sourceEnglish": "Amazing"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 37,
+    "rowNumber": 39,
+    "key": "WRITE.DialogLocalizer.79",
+    "utterer": "WRITE.DialogLocalizer.79",
+    "context": "",
+    "sourceEnglish": "Good"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 38,
+    "rowNumber": 40,
+    "key": "WRITE.DialogLocalizer.174",
+    "utterer": "WRITE.DialogLocalizer.174",
+    "context": "",
+    "sourceEnglish": "Fair"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 39,
+    "rowNumber": 41,
+    "key": "WRITE.DialogLocalizer.175",
+    "utterer": "WRITE.DialogLocalizer.175",
+    "context": "",
+    "sourceEnglish": "Bad"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 40,
+    "rowNumber": 42,
+    "key": "WRITE.DialogLocalizer.176",
+    "utterer": "WRITE.DialogLocalizer.176",
+    "context": "",
+    "sourceEnglish": "Terrible"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 41,
+    "rowNumber": 43,
+    "key": "WRITE.DialogLocalizer.80",
+    "utterer": "WRITE.DialogLocalizer.80",
+    "context": "",
+    "sourceEnglish": "Do you miss the job?"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 42,
+    "rowNumber": 44,
+    "key": "WRITE.DialogLocalizer.81",
+    "utterer": "WRITE.DialogLocalizer.81",
+    "context": "",
+    "sourceEnglish": "Yes"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 43,
+    "rowNumber": 45,
+    "key": "WRITE.DialogLocalizer.82",
+    "utterer": "WRITE.DialogLocalizer.82",
+    "context": "",
+    "sourceEnglish": "No"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 44,
+    "rowNumber": 46,
+    "key": "WRITE.DialogLocalizer.177",
+    "utterer": "WRITE.DialogLocalizer.177",
+    "context": "",
+    "sourceEnglish": "I miss aspects of it"
+  },
+  {
+    "fileName": "0_asses.masses_Manager+Intermissions+E0Proxy.json",
+    "sheetName": "E0_Questions_localization",
+    "entryIndex": 45,
+    "rowNumber": 47,
+    "key": "WRITE.DialogLocalizer.83",
+    "utterer": "WRITE.DialogLocalizer.83",
+    "context": "",
+    "sourceEnglish": "Do you think you would still have the job if you did things differently?"
+  }
+]
