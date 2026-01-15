@@ -1980,8 +1980,8 @@ const TranslationHelper: React.FC = () => {
 
       {/* Footer - Sticky at bottom */}
       <footer className="py-4 px-3 md:px-5 text-center border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
-        <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mb-3">
-          Onnozelaer Marketing Works © 2025 - made with Generative AI
+        <p className="text-sm text-gray-500 dark:text-gray-400 italic mb-3">
+          Onnozelaer Marketing Works © 2025 - built with Claude Code support
         </p>
 
         {/* Version Badge with Gradient */}

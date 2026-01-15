@@ -899,8 +899,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
         {/* Footer */}
         <div className="mb-4 text-center">
-          <p className="text-xs text-gray-500 dark:text-gray-400 font-medium mb-4">
-            Onnozelaer Marketing Works © 2025 - made with Generative AI
+          <p className="text-xs text-gray-500 dark:text-gray-400 italic mb-4">
+            Onnozelaer Marketing Works © 2025 - built with Claude Code support
           </p>
 
           {/* Gradient Accent Block with Playfair Display */}

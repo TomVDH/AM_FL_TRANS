@@ -138,13 +138,6 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
               }`} />
             )}
 
-            {/* Count badge - only show if > 1 */}
-            {item.count > 1 && (
-              <span className="text-[9px] font-bold text-white bg-purple-600 dark:bg-purple-500 px-1 py-0.5 mr-0.5" style={{ borderRadius: '2px' }}>
-                {item.count}x
-              </span>
-            )}
-
             {/* English name - smaller */}
             <span className="text-[11px] text-gray-600 dark:text-gray-400">
               {item.match.english}
