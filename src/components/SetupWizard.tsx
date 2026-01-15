@@ -372,7 +372,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           console.log('[SetupWizard] Dark mode button clicked!');
           toggleDarkMode();
         }}
-        className="fixed top-4 right-4 h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out z-50"
+        className="fixed top-4 right-4 h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out z-50"
         style={{ borderRadius: '3px' }}
         aria-label="Toggle dark mode"
       >
@@ -903,7 +903,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             {setShowResetModal && (
               <button
                 onClick={() => setShowResetModal(true)}
-                className="group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-red-400 dark:hover:border-red-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-red-400 dark:hover:border-red-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
                 style={{ borderRadius: '3px' }}
                 title="Reset to originals (nuclear reset)"
               >

@@ -679,7 +679,7 @@ const TranslationHelper: React.FC = () => {
               {/* Home Button - Returns to setup */}
               <button
                 onClick={handleBackToSetup}
-                className="group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
                 style={{ borderRadius: '3px' }}
                 aria-label="Back to Home"
                 title="Back to Home"
@@ -730,7 +730,7 @@ const TranslationHelper: React.FC = () => {
               <div className="relative">
                 <button
                   onClick={() => setAccordionStates(prev => ({ ...prev, navigation: !prev.navigation }))}
-                  className="group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                  className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
                   style={{ borderRadius: '3px' }}
                   aria-label="Navigation menu"
                   title="Filter & Jump"
@@ -877,7 +877,7 @@ const TranslationHelper: React.FC = () => {
               {/* Keyboard Shortcuts Button - Now integrated */}
               <button
                 onClick={() => setShowKeyboardShortcuts(true)}
-                className="group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
                 style={{ borderRadius: '3px' }}
                 aria-label="Keyboard shortcuts"
                 title="Keyboard Shortcuts"
@@ -891,7 +891,7 @@ const TranslationHelper: React.FC = () => {
               {/* Dark Mode Toggle - Now integrated */}
               <button
                 onClick={toggleDarkMode}
-                className="group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
                 style={{ borderRadius: '3px' }}
                 aria-label="Toggle dark mode"
                 title="Toggle Dark Mode"
@@ -2041,7 +2041,7 @@ const TranslationHelper: React.FC = () => {
             {/* Reset Button */}
             <button
               onClick={() => setShowResetModal(true)}
-              className="group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-red-400 dark:hover:border-red-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+              className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-red-400 dark:hover:border-red-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
               style={{ borderRadius: '3px' }}
               title="Reset to originals (nuclear reset)"
             >

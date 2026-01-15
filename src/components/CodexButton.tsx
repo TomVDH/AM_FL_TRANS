@@ -12,7 +12,7 @@ const CodexButton: React.FC<CodexButtonProps> = ({ className = '' }) => {
   return (
     <button
       onClick={handleCodexClick}
-      className={`group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden ${className}`}
+      className={`group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden ${className}`}
       title="View Codex Reference"
       aria-label="View Codex Reference"
       style={{ borderRadius: '3px' }}
