@@ -328,6 +328,13 @@ export const useTranslationState = (): TranslationState => {
     if (hasChanged) {
       newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
       setTranslations(newTranslations);
+
+      // Show success feedback
+      if (currentTranslation.trim() !== '') {
+        toast.success('Translation saved', {
+          duration: 1500,
+        });
+      }
     }
 
     // Only move to next if not on last row
