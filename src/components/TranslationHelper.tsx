@@ -955,7 +955,7 @@ const TranslationHelper: React.FC = () => {
                       <div
                         className="absolute inset-0 opacity-50"
                         style={{
-                          background: darkMode
+                          backgroundImage: darkMode
                             ? 'linear-gradient(90deg, #6b7280 0%, #9ca3af 50%, #6b7280 100%)'
                             : 'linear-gradient(90deg, #9ca3af 0%, #d1d5db 50%, #9ca3af 100%)',
                           backgroundSize: '200% 100%',
