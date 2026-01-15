@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import * as XLSX from 'xlsx';
+import { toast } from 'sonner';
 
 export interface ExcelProcessingState {
   // Excel processing state
@@ -55,6 +56,22 @@ export const useExcelProcessing = (): ExcelProcessingState => {
     const file = e.target.files?.[0];
     if (!file) return;
 
+    // Validate file type
+    if (file.type !== 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' &&
+        file.type !== 'application/vnd.ms-excel' &&
+        !file.name.endsWith('.xlsx') &&
+        !file.name.endsWith('.xls')) {
+      toast.error('Invalid file type. Please upload an Excel file (.xlsx or .xls)');
+      return;
+    }
+
+    // Validate file size (max 50MB)
+    const maxSize = 50 * 1024 * 1024; // 50MB
+    if (file.size > maxSize) {
+      toast.error('File too large. Maximum file size is 50MB');
+      return;
+    }
+
     setIsLoadingExcel(true);
     const reader = new FileReader();
     
@@ -72,14 +89,15 @@ export const useExcelProcessing = (): ExcelProcessingState => {
           setSelectedSheet(workbook.SheetNames[0]);
         }
       } catch (error) {
-        alert('Error reading Excel file. Please ensure it\'s a valid Excel file.');
+        toast.error('Error reading Excel file. Please ensure it\'s a valid Excel file.');
+        console.error('Excel read error:', error);
       } finally {
         setIsLoadingExcel(false);
       }
     };
-    
+
     reader.onerror = () => {
-      alert('Error reading Excel file. Please ensure it\'s a valid Excel file.');
+      toast.error('Error reading Excel file. Please try again.');
       setIsLoadingExcel(false);
     };
     

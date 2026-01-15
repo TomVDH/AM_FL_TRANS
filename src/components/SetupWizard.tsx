@@ -2,6 +2,7 @@
 
 import React, { useRef } from 'react';
 import Spinner from './ui/Spinner';
+import { toast } from 'sonner';
 import VideoButton from './VideoButton';
 import GitHubButton from './GitHubButton';
 import CodexButton from './CodexButton';
@@ -498,14 +499,28 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                         const files = e.dataTransfer.files;
                         if (files.length > 0) {
                           const file = files[0];
-                          if (file.type === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' ||
-                              file.type === 'application/vnd.ms-excel') {
-                            // Create a synthetic event for the file upload handler
-                            const syntheticEvent = {
-                              target: { files: [file] }
-                            } as unknown as React.ChangeEvent<HTMLInputElement>;
-                            handleFileUpload(syntheticEvent);
+
+                          // Validate file type
+                          if (file.type !== 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' &&
+                              file.type !== 'application/vnd.ms-excel' &&
+                              !file.name.endsWith('.xlsx') &&
+                              !file.name.endsWith('.xls')) {
+                            toast.error('Invalid file type. Please upload an Excel file (.xlsx or .xls)');
+                            return;
                           }
+
+                          // Validate file size (max 50MB)
+                          const maxSize = 50 * 1024 * 1024; // 50MB
+                          if (file.size > maxSize) {
+                            toast.error('File too large. Maximum file size is 50MB');
+                            return;
+                          }
+
+                          // File is valid, proceed with upload
+                          const syntheticEvent = {
+                            target: { files: [file] }
+                          } as unknown as React.ChangeEvent<HTMLInputElement>;
+                          handleFileUpload(syntheticEvent);
                         }
                       }}
                       role="button"

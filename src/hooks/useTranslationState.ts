@@ -379,6 +379,22 @@ export const useTranslationState = (): TranslationState => {
     const file = e.target.files?.[0];
     if (!file) return;
 
+    // Validate file type
+    if (file.type !== 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' &&
+        file.type !== 'application/vnd.ms-excel' &&
+        !file.name.endsWith('.xlsx') &&
+        !file.name.endsWith('.xls')) {
+      toast.error('Invalid file type. Please upload an Excel file (.xlsx or .xls)');
+      return;
+    }
+
+    // Validate file size (max 50MB)
+    const maxSize = 50 * 1024 * 1024; // 50MB
+    if (file.size > maxSize) {
+      toast.error('File too large. Maximum file size is 50MB');
+      return;
+    }
+
     setIsLoadingExcel(true);
     const reader = new FileReader();
     
