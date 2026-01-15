@@ -187,6 +187,42 @@ const TranslationHelper: React.FC = () => {
     toast.success('Output cleared');
   };
 
+  // Get Dutch column values from the loaded Excel workbook
+  const getDutchColumnValues = (): string[] => {
+    if (!workbookData || !selectedSheet || loadedFileType !== 'excel') {
+      return [];
+    }
+
+    try {
+      const worksheet = workbookData.Sheets[selectedSheet];
+      if (!worksheet) return [];
+
+      const dutchValues: string[] = [];
+
+      // Read column J starting from startRow
+      for (let i = 0; i < sourceTexts.length; i++) {
+        const rowNum = startRow + i;
+        const cellAddress = `J${rowNum}`;
+        const cell = worksheet[cellAddress];
+
+        // Extract the value, handling different cell types
+        let value = '';
+        if (cell) {
+          if (cell.v !== undefined && cell.v !== null) {
+            value = String(cell.v).trim();
+          }
+        }
+
+        dutchValues.push(value);
+      }
+
+      return dutchValues;
+    } catch (error) {
+      console.error('Error reading Dutch column from workbook:', error);
+      return [];
+    }
+  };
+
   // LIVE EDIT wrappers - sync before navigation
   const handleSubmitWithSync = async () => {
     if (liveEditMode) {
@@ -1735,6 +1771,11 @@ const TranslationHelper: React.FC = () => {
                     <th className="px-3 py-2 text-left text-xs font-black uppercase tracking-wide text-gray-700 dark:text-gray-300">
                       Dutch Translation
                     </th>
+                    {liveEditMode && (
+                      <th className="px-3 py-2 text-left text-xs font-black uppercase tracking-wide text-gray-700 dark:text-gray-300">
+                        Excel Column
+                      </th>
+                    )}
                     <th className="px-3 py-2 text-center text-xs font-black uppercase tracking-wide text-gray-700 dark:text-gray-300 w-24">
                       Status
                     </th>
@@ -1745,6 +1786,9 @@ const TranslationHelper: React.FC = () => {
                 </thead>
                 <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                   {(() => {
+                    // Get Dutch column values for live mode comparison
+                    const dutchColumnValues = liveEditMode ? getDutchColumnValues() : [];
+
                     const entries = translations.map((trans, idx) => {
                       if (!trans) return null;
 
@@ -1781,6 +1825,7 @@ const TranslationHelper: React.FC = () => {
                       }
 
                       const isBlank = trans === '[BLANK, REMOVE LATER]';
+                      const dutchValue = liveEditMode && dutchColumnValues[idx] ? dutchColumnValues[idx] : '';
 
                       return {
                         idx,
@@ -1789,7 +1834,8 @@ const TranslationHelper: React.FC = () => {
                         trans,
                         isModified,
                         isBlank,
-                        excelRow
+                        excelRow,
+                        dutchValue
                       };
                     }).filter(Boolean) as {
                       idx: number;
@@ -1799,12 +1845,13 @@ const TranslationHelper: React.FC = () => {
                       isModified: boolean;
                       isBlank: boolean;
                       excelRow: number;
+                      dutchValue: string;
                     }[];
 
                     if (entries.length === 0) {
                       return (
                         <tr>
-                          <td colSpan={5} className="px-6 py-12 text-center text-gray-500 dark:text-gray-400 italic">
+                          <td colSpan={liveEditMode ? 6 : 5} className="px-6 py-12 text-center text-gray-500 dark:text-gray-400 italic">
                             Translations will appear here...
                           </td>
                         </tr>
@@ -1849,6 +1896,29 @@ const TranslationHelper: React.FC = () => {
                             {entry.isBlank ? 'Blank entry' : entry.trans}
                           </span>
                         </td>
+                        {liveEditMode && (
+                          <td className="px-3 py-2">
+                            <div className="relative overflow-hidden max-w-xs h-6">
+                              {entry.dutchValue ? (
+                                entry.dutchValue.length > 40 ? (
+                                  <div className="scrolling-text-container">
+                                    <span className="scrolling-text text-sm text-blue-700 dark:text-blue-400 font-medium">
+                                      {entry.dutchValue}
+                                    </span>
+                                  </div>
+                                ) : (
+                                  <span className="text-sm text-blue-700 dark:text-blue-400 font-medium">
+                                    {entry.dutchValue}
+                                  </span>
+                                )
+                              ) : (
+                                <span className="text-xs text-gray-400 dark:text-gray-500 italic">
+                                  Empty
+                                </span>
+                              )}
+                            </div>
+                          </td>
+                        )}
                         <td className="px-3 py-2 text-center">
                           {entry.isModified ? (
                             <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400 border border-green-300 dark:border-green-700" style={{ borderRadius: '3px' }}>
