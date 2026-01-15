@@ -54,6 +54,10 @@ interface SetupWizardProps {
   // Dark mode state
   darkMode: boolean;
   toggleDarkMode: () => void;
+
+  // Reset functionality
+  showResetModal?: boolean;
+  setShowResetModal?: (show: boolean) => void;
 }
 
 /**
@@ -119,7 +123,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   showVersionHash,
   VERSION_HASH,
   darkMode,
-  toggleDarkMode
+  toggleDarkMode,
+  showResetModal,
+  setShowResetModal
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [existingFiles, setExistingFiles] = React.useState<any[]>([]);
@@ -150,14 +156,18 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   React.useEffect(() => {
     const loadExistingFiles = async () => {
       setLoadingExistingFiles(true);
+      console.log('[SetupWizard] Loading existing Excel files...');
       try {
         const response = await fetch('/api/xlsx-files');
         if (response.ok) {
           const data = await response.json();
+          console.log('[SetupWizard] Loaded Excel files:', data.files?.length || 0, 'files');
           setExistingFiles(data.files || []);
+        } else {
+          console.error('[SetupWizard] Failed to load Excel files:', response.status);
         }
       } catch (error) {
-        console.error('Error loading existing files:', error);
+        console.error('[SetupWizard] Error loading existing files:', error);
       } finally {
         setLoadingExistingFiles(false);
       }
@@ -170,6 +180,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   React.useEffect(() => {
     const loadDataFiles = async () => {
       setLoadingDataFiles(true);
+      console.log('[SetupWizard] Loading JSON and CSV files...');
       try {
         const [jsonResponse, csvResponse] = await Promise.all([
           fetch('/api/json-files'),
@@ -178,15 +189,21 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
         if (jsonResponse.ok) {
           const jsonData = await jsonResponse.json();
+          console.log('[SetupWizard] Loaded JSON files:', jsonData?.length || 0, 'files');
           setJsonFiles(jsonData);
+        } else {
+          console.error('[SetupWizard] Failed to load JSON files:', jsonResponse.status);
         }
 
         if (csvResponse.ok) {
           const csvData = await csvResponse.json();
+          console.log('[SetupWizard] Loaded CSV files:', csvData?.length || 0, 'files');
           setCsvFiles(csvData);
+        } else {
+          console.error('[SetupWizard] Failed to load CSV files:', csvResponse.status);
         }
       } catch (error) {
-        console.error('Error loading data files:', error);
+        console.error('[SetupWizard] Error loading data files:', error);
       } finally {
         setLoadingDataFiles(false);
       }
@@ -196,6 +213,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   }, []);
 
   const handleExistingFileSelect = (fileName: string) => {
+    console.log('[SetupWizard] Excel file selected:', fileName);
     setSelectedExistingFile(fileName);
     if (handleExistingFileLoad) {
       handleExistingFileLoad(fileName);
@@ -350,17 +368,20 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-8 flex items-center justify-center transition-colors duration-300">
       {/* Dark Mode Toggle */}
       <button
-        onClick={toggleDarkMode}
-        className="fixed top-4 right-4 p-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 shadow-sm hover:shadow-md transition-all duration-200 transform hover:-translate-y-0.5"
+        onClick={() => {
+          console.log('[SetupWizard] Dark mode button clicked!');
+          toggleDarkMode();
+        }}
+        className="fixed top-4 right-4 h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out z-50"
         style={{ borderRadius: '3px' }}
         aria-label="Toggle dark mode"
       >
         {darkMode ? (
-          <svg className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
+          <svg className="w-4 h-4 text-yellow-500 relative z-10" fill="currentColor" viewBox="0 0 20 20">
             <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
           </svg>
         ) : (
-          <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="currentColor" viewBox="0 0 20 20">
+          <svg className="w-4 h-4 text-gray-700 dark:text-gray-300 relative z-10" fill="currentColor" viewBox="0 0 20 20">
             <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
           </svg>
         )}
@@ -373,12 +394,21 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         }`}
         style={{ animation: 'fadeIn 0.5s ease-out' }}
       >
-        {/* Header Section - Tighter spacing */}
+        {/* Header Section with Logo */}
         <div className="text-center mb-6">
-          <h1 className="text-5xl font-black mb-3 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
+          {/* Logo Image */}
+          <div className="mb-4 flex justify-center">
+            <img
+              src="/images/asses-masses-logo.png"
+              alt="Asses Masses Logo"
+              className="h-24 w-auto max-w-full object-contain"
+            />
+          </div>
+          <h1 className="text-5xl font-black mb-1 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
+          <p className="text-sm font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase mb-3">asses.masses edition</p>
           <p className="text-gray-600 dark:text-gray-400 text-base">Choose your input method below</p>
           {/* Dutch Translation Column Reminder */}
-          <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-amber-50 dark:bg-amber-900/20 border border-amber-300 dark:border-amber-700 text-amber-800 dark:text-amber-300 text-xs font-medium" style={{ borderRadius: '3px' }}>
+          <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 text-xs font-medium" style={{ borderRadius: '3px' }}>
             <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
             </svg>
@@ -387,7 +417,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         </div>
 
         {/* Main Form Card - Tighter padding */}
-        <div className="bg-white dark:bg-gray-800 border border-black dark:border-gray-600 p-6 space-y-6 shadow-sm transition-all duration-300">
+        <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-6 space-y-6 shadow-sm transition-all duration-300" style={{ borderRadius: '3px' }}>
           {/* Input Mode Toggle - Hidden but preserved */}
           <div className="hidden justify-center mb-6">
             <div className="bg-gray-100 dark:bg-gray-700 border border-black dark:border-gray-600 p-1 flex transition-colors duration-300">
@@ -508,10 +538,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     <div className="flex gap-1.5 mb-3">
                       <button
                         onClick={() => handleFileTypeChange('excel')}
-                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-300 ease-out ${
                           fileType === 'excel'
-                            ? 'bg-black dark:bg-white text-white dark:text-black'
-                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                            ? 'bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black border border-gray-700 dark:border-gray-300'
+                            : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md'
                         }`}
                         style={{ borderRadius: '3px' }}
                       >
@@ -519,10 +549,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       </button>
                       <button
                         onClick={() => handleFileTypeChange('json')}
-                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-300 ease-out ${
                           fileType === 'json'
-                            ? 'bg-black dark:bg-white text-white dark:text-black'
-                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                            ? 'bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black border border-gray-700 dark:border-gray-300'
+                            : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md'
                         }`}
                         style={{ borderRadius: '3px' }}
                       >
@@ -530,10 +560,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       </button>
                       <button
                         onClick={() => handleFileTypeChange('csv')}
-                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 ${
+                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-300 ease-out ${
                           fileType === 'csv'
-                            ? 'bg-black dark:bg-white text-white dark:text-black'
-                            : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
+                            ? 'bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black border border-gray-700 dark:border-gray-300'
+                            : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md'
                         }`}
                         style={{ borderRadius: '3px' }}
                       >
@@ -580,10 +610,13 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                           <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
                             <p className="text-sm text-gray-500 dark:text-gray-400">Loading files...</p>
                           </div>
-                        ) : (
+                        ) : (fileType === 'json' ? jsonFiles : csvFiles).length > 0 ? (
                           <select
                             value={selectedDataFile}
-                            onChange={(e) => setSelectedDataFile(e.target.value)}
+                            onChange={(e) => {
+                              console.log(`[SetupWizard] ${fileType.toUpperCase()} file selected:`, e.target.value);
+                              setSelectedDataFile(e.target.value);
+                            }}
                             className="w-full p-2.5 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
                             style={{ borderRadius: '3px' }}
                           >
@@ -594,6 +627,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                               </option>
                             ))}
                           </select>
+                        ) : (
+                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                            <p className="text-sm text-gray-500 dark:text-gray-400">No {fileType.toUpperCase()} files found in /data/{fileType} folder</p>
+                          </div>
                         )}
                         {selectedDataFile && (
                           <p className="text-xs text-green-600 dark:text-green-400 mt-1.5 font-medium">
@@ -613,7 +650,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                   : 'opacity-0 transform translate-x-8 pointer-events-none'
               }`}>
                 {excelSheets.length > 0 && (
-                  <div className="bg-gray-50 dark:bg-gray-700 border border-black p-4 space-y-3 h-full">
+                  <div className="bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 p-4 space-y-3 h-full" style={{ borderRadius: '3px' }}>
                     {/* Sheet Settings Header */}
                     <div className="mb-2">
                       <h3 className="text-sm font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
@@ -627,7 +664,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                         <select
                           value={selectedSheet}
                           onChange={(e) => setSelectedSheet(e.target.value)}
-                          className="w-full p-2 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
+                          className="w-full p-2 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
+                          style={{ borderRadius: '3px' }}
                         >
                           {excelSheets.map(sheet => (
                             <option key={sheet} value={sheet}>{sheet}</option>
@@ -773,14 +811,14 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     // This will be handled by the parent component to switch to JSON mode
                     setInputMode('excel');
                   }}
-                  className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+                  className="px-4 py-2 bg-gradient-to-br from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white text-sm font-bold border border-blue-700 dark:border-blue-600 hover:border-blue-600 dark:hover:border-blue-500 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
                   style={{ borderRadius: '3px' }}
                 >
                   Switch to Excel Mode
                 </button>
                 <button
                   onClick={() => window.open('/scripts/excel-to-json.js', '_blank')}
-                  className="px-4 py-2 bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium rounded transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5"
+                  className="px-4 py-2 bg-gradient-to-br from-gray-600 to-gray-700 dark:from-gray-500 dark:to-gray-600 text-white text-sm font-bold border border-gray-700 dark:border-gray-600 hover:border-gray-600 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
                   style={{ borderRadius: '3px' }}
                 >
                   View Processing Script
@@ -796,11 +834,12 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                 Paste Text Manually
               </label>
               <textarea
-                className="w-full h-48 p-4 border border-black dark:border-gray-600 font-mono text-sm focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white resize-none"
+                className="w-full h-48 p-4 border border-gray-300 dark:border-gray-600 font-mono text-sm focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white resize-none"
+                style={{ borderRadius: '3px' }}
                 placeholder="Paste your text here, one line per item..."
                 onChange={handleSourceInput}
               />
-              
+
               <div>
                 <label className="block text-base font-black mb-4 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
                   Starting Cell
@@ -809,7 +848,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                   type="text"
                   value={cellStart}
                   onChange={(e) => setCellStart(e.target.value)}
-                  className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white"
+                  style={{ borderRadius: '3px' }}
                   placeholder="A1"
                 />
               </div>
@@ -817,7 +857,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           )}
           
           {/* Start Button Section */}
-          <div className="space-y-3 pt-4 border-t border-black">
+          <div className="space-y-3 pt-4 border-t border-gray-300 dark:border-gray-600">
             {sourceTexts.length > 0 && (
               <p className="text-xs text-gray-600 dark:text-gray-400 text-center">
                 ✓ {sourceTexts.length} items ready to translate
@@ -826,7 +866,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             <button
               onClick={handleStartWithDataFile}
               disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
-              className="w-full px-6 py-2.5 bg-black dark:bg-white text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 hover:bg-gray-800 dark:hover:bg-gray-100 transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
+              className="w-full px-6 py-2.5 bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 border border-gray-700 dark:border-gray-300 hover:border-gray-600 dark:hover:border-gray-400 hover:shadow-md transition-all duration-300 ease-out disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
               style={{ borderRadius: '3px' }}
             >
               Start Translation →
@@ -834,12 +874,26 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           </div>
         </div>
 
-        {/* Video, GitHub, and Codex Buttons */}
+        {/* Video, GitHub, Codex, and Reset Buttons */}
         <div className="mt-10 mb-4 text-center">
-          <div className="flex justify-center gap-3">
-            <VideoButton className="mb-2" />
-            <GitHubButton className="mb-2" />
-            <CodexButton className="mb-2" />
+          <div className="flex justify-center gap-2">
+            <VideoButton />
+            <GitHubButton />
+            <CodexButton />
+            {/* Reset Button */}
+            {setShowResetModal && (
+              <button
+                onClick={() => setShowResetModal(true)}
+                className="group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-red-400 dark:hover:border-red-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                style={{ borderRadius: '3px' }}
+                title="Reset to originals (nuclear reset)"
+              >
+                <svg className="w-4 h-4 relative z-10 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                <div className="absolute inset-0 bg-gradient-to-br from-red-100 to-red-200 dark:from-red-900/30 dark:to-red-800/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
+              </button>
+            )}
           </div>
         </div>
 
@@ -849,31 +903,36 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             Onnozelaer Marketing Works © 2025 - made with Generative AI
           </p>
 
-          {/* Gradient Accent Block (Halved) */}
+          {/* Gradient Accent Block with Playfair Display */}
           <div className="flex justify-center items-center">
             <div
-              className="shadow-lg relative cursor-pointer"
+              className="rounded-sm shadow-md relative cursor-pointer overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-xl flex items-center justify-center"
               onMouseEnter={() => {}} // Will be handled by parent
               onMouseLeave={() => {}} // Will be handled by parent
               onClick={() => {}} // Will be handled by parent
               title="Click to change gradient"
               style={{
-                width: '100px',
-                height: '20px',
+                width: '120px',
+                height: '28px',
                 backgroundImage: gradientColors.length > 0
                   ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})`
                   : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
                 backgroundSize: '200% 200%',
-                animation: 'gradientShift 5s ease-in-out infinite'
+                animation: 'gradientShift 5s ease-in-out infinite',
               }}
             >
-              {showVersionHash && (
-                <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
-                  <div className="text-white text-xs font-black tracking-tight uppercase letter-spacing-wide">
-                    {VERSION_HASH}
-                  </div>
-                </div>
-              )}
+              <span
+                className="text-white font-semibold tracking-wider drop-shadow-lg transition-all duration-500"
+                style={{
+                  fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace',
+                  fontSize: '12px',
+                  opacity: showVersionHash ? 1 : 0,
+                  transform: showVersionHash ? 'translateY(0)' : 'translateY(5px)',
+                  letterSpacing: '0.05em'
+                }}
+              >
+                {VERSION_HASH}
+              </span>
             </div>
           </div>
         </div>

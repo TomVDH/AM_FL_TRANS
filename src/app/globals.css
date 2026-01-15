@@ -61,14 +61,17 @@
   body.bg-random-9 { background-color: #ecfccb; } /* Lime 100 */
   body.bg-random-10 { background-color: #cffafe; } /* Cyan 100 */
 
-  /* Dark mode: muted versions with CSS filter */
-  .dark body {
-    filter: saturate(0.3) brightness(0.4);
-  }
-
-  .dark body > * {
-    filter: saturate(1) brightness(1); /* Reset filter for child elements */
-  }
+  /* Dark mode: darker, muted versions */
+  .dark body.bg-random-1 { background-color: #1a1510; } /* Dark amber */
+  .dark body.bg-random-2 { background-color: #0f1419; } /* Dark blue */
+  .dark body.bg-random-3 { background-color: #1a0f14; } /* Dark pink */
+  .dark body.bg-random-4 { background-color: #151019; } /* Dark violet */
+  .dark body.bg-random-5 { background-color: #0f1a10; } /* Dark green */
+  .dark body.bg-random-6 { background-color: #1a1410; } /* Dark orange */
+  .dark body.bg-random-7 { background-color: #0f1519; } /* Dark sky */
+  .dark body.bg-random-8 { background-color: #19101a; } /* Dark fuchsia */
+  .dark body.bg-random-9 { background-color: #131a0f; } /* Dark lime */
+  .dark body.bg-random-10 { background-color: #0f1a19; } /* Dark cyan */
   
   /* Heading styles with tighter letter spacing */
   h1, h2, h3, h4, h5, h6 {
@@ -467,6 +470,12 @@
 
 .gamepad-continue-indicator span {
   animation: pulse-typewriter 1s ease-in-out infinite;
+}
+
+/* Gradient shift animation for footer version badge */
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
 }
 
 .gamepad-continue-indicator span:nth-child(2) {

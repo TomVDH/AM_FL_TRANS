@@ -13,19 +13,20 @@ const VideoButton: React.FC<VideoButtonProps> = ({ className = '' }) => {
   return (
     <button
       onClick={handleVideoClick}
-      className={`inline-flex items-center justify-center p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 dark:text-white text-sm hover:bg-gray-50 dark:hover:bg-gray-600 ${className}`}
+      className={`group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden ${className}`}
       title="Watch Video Tutorial"
       aria-label="Watch Video Tutorial"
       style={{ borderRadius: '3px' }}
     >
-      <svg 
-        className="w-5 h-5 text-gray-700 dark:text-gray-300" 
-        fill="currentColor" 
+      <svg
+        className="w-4 h-4 relative z-10"
+        fill="currentColor"
         viewBox="0 0 24 24"
         aria-hidden="true"
       >
         <path d="M8 5v14l11-7z"/>
       </svg>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
     </button>
   );
 };

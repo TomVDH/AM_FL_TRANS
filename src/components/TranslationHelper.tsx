@@ -21,6 +21,7 @@ import VideoButton from './VideoButton';
 import CodexButton from './CodexButton';
 import ReferenceToolsPanel from './ReferenceToolsPanel';
 import QuickReferenceBar from './QuickReferenceBar';
+import ResetConfirmationModal from './ResetConfirmationModal';
 import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
 
 
@@ -263,17 +264,42 @@ const TranslationHelper: React.FC = () => {
       if (!xlsxMode) {
         toggleXlsxMode();
       }
-      
+
       // Load XLSX data if not already loaded
       if (!xlsxData && availableXlsxFiles.length > 0) {
         loadXlsxData(availableXlsxFiles[0].fileName);
       }
-      
+
       // Set the search term
       setXlsxSearchTerm(sourceText);
     }
   };
-  
+
+  // Reset to originals handler
+  const handleResetToOriginals = async () => {
+    try {
+      const response = await fetch('/api/reset-originals', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' }
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        toast.success(`Reset complete: ${data.copiedFiles.length} file(s) restored`);
+        // Return to Screen 1 (Setup Wizard)
+        setIsStarted(false);
+      } else {
+        toast.error(`Reset failed: ${data.error}`);
+      }
+    } catch (error) {
+      console.error('Error resetting to originals:', error);
+      toast.error('Failed to reset files');
+    } finally {
+      setShowResetModal(false);
+    }
+  };
+
   const VERSION_HASH = 'v2.0.0';
   
   const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({});
@@ -285,6 +311,7 @@ const TranslationHelper: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'input' | 'output'>('input');
   const [showKeyboardShortcuts, setShowKeyboardShortcuts] = useState(false);
   const [showInlineSource, setShowInlineSource] = useState(false);
+  const [showResetModal, setShowResetModal] = useState(false);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
@@ -509,6 +536,8 @@ const TranslationHelper: React.FC = () => {
         VERSION_HASH={VERSION_HASH}
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
+        showResetModal={showResetModal}
+        setShowResetModal={setShowResetModal}
       />
     );
   }
@@ -903,7 +932,7 @@ const TranslationHelper: React.FC = () => {
                       <div
                         className="absolute inset-0 transition-all duration-700"
                         style={{
-                          background: isBlank
+                          backgroundImage: isBlank
                             ? darkMode
                               ? 'linear-gradient(90deg, #7f1d1d 0%, #991b1b 50%, #7f1d1d 100%)'
                               : 'linear-gradient(90deg, #991b1b 0%, #b91c1c 50%, #991b1b 100%)'
@@ -1970,11 +1999,23 @@ const TranslationHelper: React.FC = () => {
         />
         */}
 
-        {/* Video and Codex Buttons */}
+        {/* Video, Codex, and Reset Buttons */}
         <div className="mt-20 mb-6 text-center">
-          <div className="flex justify-center gap-4">
-            <VideoButton className="mb-4" />
-            <CodexButton className="mb-4" />
+          <div className="flex justify-center gap-2">
+            <VideoButton />
+            <CodexButton />
+            {/* Reset Button */}
+            <button
+              onClick={() => setShowResetModal(true)}
+              className="group relative h-9 w-9 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-red-400 dark:hover:border-red-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+              style={{ borderRadius: '3px' }}
+              title="Reset to originals (nuclear reset)"
+            >
+              <svg className="w-4 h-4 relative z-10 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              <div className="absolute inset-0 bg-gradient-to-br from-red-100 to-red-200 dark:from-red-900/30 dark:to-red-800/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
+            </button>
           </div>
         </div>
       </main>
@@ -2001,18 +2042,19 @@ const TranslationHelper: React.FC = () => {
                 ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})`
                 : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
               backgroundSize: '200% 200%',
-              backgroundPosition: '0% 0%',
+              animation: 'gradientShift 5s ease-in-out infinite',
               borderRadius: '3px'
             }}
           >
             <div className="absolute inset-0 flex items-center justify-center">
               <span
-                className="text-white font-bold tracking-wider drop-shadow-lg transition-all duration-500"
+                className="text-white font-semibold tracking-wider drop-shadow-lg transition-all duration-500"
                 style={{
-                  fontFamily: 'var(--font-playfair)',
-                  fontSize: showVersionHash ? '13px' : '12px',
-                  opacity: showVersionHash ? 1 : 0.95,
-                  letterSpacing: showVersionHash ? '0.1em' : '0.05em'
+                  fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace',
+                  fontSize: '12px',
+                  opacity: showVersionHash ? 1 : 0,
+                  transform: showVersionHash ? 'translateY(0)' : 'translateY(5px)',
+                  letterSpacing: '0.05em'
                 }}
               >
                 {VERSION_HASH}
@@ -2021,13 +2063,25 @@ const TranslationHelper: React.FC = () => {
           </div>
         </div>
       </footer>
+
+      {/* Reset Confirmation Modal */}
+      <ResetConfirmationModal
+        isOpen={showResetModal}
+        onClose={() => setShowResetModal(false)}
+        onConfirm={handleResetToOriginals}
+      />
       
       <style jsx>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(20px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        
+
+        @keyframes gradientShift {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+
         .gamepad-box {
           image-rendering: pixelated;
           image-rendering: -moz-crisp-edges;

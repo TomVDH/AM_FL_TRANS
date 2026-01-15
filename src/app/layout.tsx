@@ -65,6 +65,7 @@ export default function RootLayout({
         <Toaster
           position="top-right"
           richColors
+          closeButton
           toastOptions={{
             style: {
               zIndex: 99999,
