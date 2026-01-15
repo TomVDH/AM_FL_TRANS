@@ -459,11 +459,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
           {/* Excel Upload Section */}
           <div className="space-y-4 animate-fade-in">
-
-            <div className="grid grid-cols-2 gap-4">
               {/* Upload Options Panel */}
-              <div className={`transition-all duration-500 ease-in-out ${excelSheets.length > 0 ? 'col-span-1' : 'col-span-2'}`}>
-                <div className="space-y-4 mx-auto" style={{ maxWidth: excelSheets.length > 0 ? 'none' : 'none' }}>
+              <div className="transition-all duration-500 ease-in-out">
+                <div className="space-y-4 mx-auto">
                   {/* File Upload Option */}
                   <div className="relative">
                     <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
@@ -641,45 +639,40 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     )}
                   </div>
                 </div>
-              </div>
 
-              {/* Configuration Panel - Integrated sheet selector */}
-              <div className={`col-span-1 transition-all duration-500 ease-in-out ${
-                excelSheets.length > 0
-                  ? 'opacity-100 transform translate-x-0'
-                  : 'opacity-0 transform translate-x-8 pointer-events-none'
-              }`}>
-                {excelSheets.length > 0 && (
-                  <div className="bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 p-5 space-y-4 h-full shadow-sm" style={{ borderRadius: '3px' }}>
-                    {/* Sheet Settings Header with icon */}
-                    <div className="flex items-center gap-2 pb-3 border-b border-gray-200 dark:border-gray-700">
-                      <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                      <h3 className="text-sm font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase">
-                        Configure Sheet
-                      </h3>
-                    </div>
-
-                    <div className="space-y-4">
-                      <div>
-                        <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase">
-                          Select Sheet
-                        </label>
-                        <select
-                          value={selectedSheet}
-                          onChange={(e) => setSelectedSheet(e.target.value)}
-                          className="w-full p-3 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-2 focus:ring-gray-500/20 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm font-medium"
-                          style={{ borderRadius: '3px' }}
-                        >
-                          {excelSheets.map(sheet => (
-                            <option key={sheet} value={sheet}>{sheet}</option>
-                          ))}
-                        </select>
-                        <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
-                          {excelSheets.length} sheet{excelSheets.length !== 1 ? 's' : ''} available
-                        </p>
+                {/* Sheet Settings - Below file picker when Excel selected */}
+                {fileType === 'excel' && excelSheets.length > 0 && (
+                  <div className="mt-4 transition-all duration-500 ease-in-out opacity-100 transform translate-y-0">
+                    <div className="bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 p-5 space-y-4 shadow-sm" style={{ borderRadius: '3px' }}>
+                      {/* Sheet Settings Header with icon */}
+                      <div className="flex items-center gap-2 pb-3 border-b border-gray-200 dark:border-gray-700">
+                        <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <h3 className="text-sm font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase">
+                          Configure Sheet
+                        </h3>
                       </div>
+
+                      <div className="space-y-4">
+                        <div>
+                          <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase">
+                            Select Sheet
+                          </label>
+                          <select
+                            value={selectedSheet}
+                            onChange={(e) => setSelectedSheet(e.target.value)}
+                            className="w-full p-3 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-2 focus:ring-gray-500/20 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm font-medium"
+                            style={{ borderRadius: '3px' }}
+                          >
+                            {excelSheets.map(sheet => (
+                              <option key={sheet} value={sheet}>{sheet}</option>
+                            ))}
+                          </select>
+                          <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
+                            {excelSheets.length} sheet{excelSheets.length !== 1 ? 's' : ''} available
+                          </p>
+                        </div>
                       {/* ADVANCED INDEX SETTINGS - TEMPORARILY HIDDEN
                        * These settings (Key Column, Source Column, Start Row) are hidden
                        * to simplify the UI. The defaults work for the standard Excel format:
@@ -751,35 +744,35 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                         />
                       </div>
                       */}
-                    </div>
-
-                    {/* Detected Locale Columns */}
-                    {localeColumns.length > 0 && (
-                      <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-300 dark:border-blue-700 rounded">
-                        <label className="block text-xs font-bold mb-2 text-blue-900 dark:text-blue-300">
-                          Detected Locale Columns
-                        </label>
-                        <div className="flex flex-wrap gap-2">
-                          {localeColumns.map((item, index) => (
-                            <span
-                              key={index}
-                              className="inline-flex items-center px-2 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-300 rounded border border-blue-300 dark:border-blue-600"
-                            >
-                              Column {item.column}: {item.locale}
-                            </span>
-                          ))}
-                        </div>
                       </div>
-                    )}
-                    {sourceTexts.length > 0 && (
-                      <p className="text-sm text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 p-3 border border-green-600 dark:border-green-700">
-                        ✓ Found {sourceTexts.length} items (speakers from column {uttererColumn}, text from column {sourceColumn})
-                      </p>
-                    )}
+
+                      {/* Detected Locale Columns */}
+                      {localeColumns.length > 0 && (
+                        <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-300 dark:border-blue-700 rounded">
+                          <label className="block text-xs font-bold mb-2 text-blue-900 dark:text-blue-300">
+                            Detected Locale Columns
+                          </label>
+                          <div className="flex flex-wrap gap-2">
+                            {localeColumns.map((item, index) => (
+                              <span
+                                key={index}
+                                className="inline-flex items-center px-2 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-300 rounded border border-blue-300 dark:border-blue-600"
+                              >
+                                Column {item.column}: {item.locale}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+                      {sourceTexts.length > 0 && (
+                        <p className="text-sm text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 p-3 border border-green-600 dark:border-green-700">
+                          ✓ Found {sourceTexts.length} items (speakers from column {uttererColumn}, text from column {sourceColumn})
+                        </p>
+                      )}
+                    </div>
                   </div>
                 )}
               </div>
-            </div>
           </div>
 
           {/* Embedded JSON Section */}
