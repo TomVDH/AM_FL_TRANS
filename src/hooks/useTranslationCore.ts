@@ -1,290 +1,229 @@
+/**
+ * Translation Core Hook
+ *
+ * Manages core translation state and navigation:
+ * - Source texts and translations arrays
+ * - Current index and translation
+ * - Submit/previous navigation with change detection
+ * - Output display reset
+ *
+ * Extracted from useTranslationState for better separation of concerns.
+ */
+
 import { useState, useCallback, useRef } from 'react';
+import { toast } from 'sonner';
+import { BLANK_PLACEHOLDER } from '@/constants';
+import {
+  convertBlankToDisplay,
+  convertDisplayToStorage,
+} from '@/utils/translationHelpers';
+
+// ============================================================================
+// TYPES
+// ============================================================================
 
 export interface TranslationCoreState {
-  // Core translation state
+  // Core state
   sourceTexts: string[];
   utterers: string[];
   translations: string[];
+  originalTranslations: string[];
   currentIndex: number;
   currentTranslation: string;
   isStarted: boolean;
-  
+  outputKey: number;
+
   // Refs
   fileInputRef: React.RefObject<HTMLInputElement>;
   textareaRef: React.RefObject<HTMLTextAreaElement>;
-  
+
+  // Change detection
+  hasCurrentEntryChanged: () => boolean;
+  getCurrentOriginalValue: () => string;
+
   // Setters
   setSourceTexts: (texts: string[]) => void;
   setUtterers: (utterers: string[]) => void;
   setTranslations: (translations: string[]) => void;
+  setOriginalTranslations: (translations: string[]) => void;
   setCurrentIndex: (index: number) => void;
-  setCurrentTranslation: (translation: string) => void;
+  setCurrentTranslation: (translation: string | ((prev: string) => string)) => void;
   setIsStarted: (started: boolean) => void;
-  
-  // Functions
+
+  // Navigation functions
   handleStart: () => void;
   handleBackToSetup: () => void;
   handleSubmit: () => void;
   handlePrevious: () => void;
   handleSourceInput: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
-  insertTranslatedSuggestion: (translatedText: string) => void;
-  insertPlaceholder: (originalSource: string) => void;
-  copySourceText: () => void;
-  copySourceToJsonSearch: () => void;
-  persistTranslation: (rowNumber: number, newTranslation: string) => Promise<void>;
-  getCellLocation: (index: number) => string;
+  jumpToRow: (rowNumber: number, startRow: number) => void;
+  resetOutputDisplay: () => void;
 }
 
+// ============================================================================
+// HOOK
+// ============================================================================
+
 /**
- * Translation Core Hook
- * 
- * Manages the core translation functionality:
- * - Translation state management
- * - Navigation between translations
- * - Text input handling
- * - Copy operations
- * - Translation persistence
- * - Cell location calculation
- * 
- * @returns Translation core state and functions
+ * useTranslationCore
+ *
+ * Core translation state management hook responsible for:
+ * - Managing arrays of source texts, utterers, and translations
+ * - Tracking current position and translation text
+ * - Handling submit/previous navigation with change detection
+ * - Managing started/setup state
+ *
+ * @returns Core translation state and functions
  */
 export const useTranslationCore = (): TranslationCoreState => {
-  // ========== Core Translation State ==========
+  // ========== Core State ==========
   const [sourceTexts, setSourceTexts] = useState<string[]>([]);
   const [utterers, setUtterers] = useState<string[]>([]);
   const [translations, setTranslations] = useState<string[]>([]);
+  const [originalTranslations, setOriginalTranslations] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentTranslation, setCurrentTranslation] = useState('');
   const [isStarted, setIsStarted] = useState(false);
-  
-  // ========== Component References ==========
+  const [outputKey, setOutputKey] = useState(0);
+
+  // ========== Refs ==========
   const fileInputRef = useRef<HTMLInputElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
-  
-  // ========== Translation Functions ==========
-  
-  /**
-   * Handle start button click
-   * 
-   * Initializes the translation session and sets up the workflow.
-   */
+
+  // ========== Change Detection ==========
+  const getCurrentOriginalValue = useCallback(() => {
+    const original = originalTranslations[currentIndex] || BLANK_PLACEHOLDER;
+    return convertBlankToDisplay(original);
+  }, [originalTranslations, currentIndex]);
+
+  const hasCurrentEntryChanged = useCallback(() => {
+    const originalValue = getCurrentOriginalValue();
+    const currentValue = currentTranslation.trim();
+    // If both are effectively empty, no change
+    if (originalValue === '' && currentValue === '') return false;
+    // Compare the actual values
+    return currentValue !== originalValue;
+  }, [getCurrentOriginalValue, currentTranslation]);
+
+  // ========== Navigation Functions ==========
   const handleStart = useCallback(() => {
     setIsStarted(true);
   }, []);
-  
-  /**
-   * Handle back to setup button click
-   * 
-   * Returns to setup wizard from translation workflow.
-   */
+
   const handleBackToSetup = useCallback(() => {
     setIsStarted(false);
   }, []);
-  
-  /**
-   * Handle submit button click
-   * 
-   * Saves current translation and moves to next item.
-   */
+
   const handleSubmit = useCallback(() => {
-    if (currentIndex < sourceTexts.length - 1) {
-      const newTranslations = [...translations];
-      newTranslations[currentIndex] = currentTranslation;
+    const newTranslations = [...translations];
+    const hasChanged = hasCurrentEntryChanged();
+
+    // Only update the translations array if the entry has actually changed
+    if (hasChanged) {
+      newTranslations[currentIndex] = convertDisplayToStorage(currentTranslation);
       setTranslations(newTranslations);
-      setCurrentIndex(currentIndex + 1);
-      setCurrentTranslation(translations[currentIndex + 1] || '');
+
+      // Show success feedback
+      if (currentTranslation.trim() !== '') {
+        toast.success('Translation saved', { duration: 1500 });
+      }
     }
-  }, [currentIndex, currentTranslation, sourceTexts.length, translations]);
-  
-  /**
-   * Handle previous button click
-   * 
-   * Moves to previous translation item.
-   */
+
+    // Only move to next if not on last row
+    if (currentIndex < sourceTexts.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+      const nextTranslation = hasChanged
+        ? newTranslations[currentIndex + 1]
+        : translations[currentIndex + 1];
+      setCurrentTranslation(convertBlankToDisplay(nextTranslation));
+    }
+  }, [currentIndex, currentTranslation, sourceTexts.length, translations, hasCurrentEntryChanged]);
+
   const handlePrevious = useCallback(() => {
     if (currentIndex > 0) {
       const newTranslations = [...translations];
-      newTranslations[currentIndex] = currentTranslation;
-      setTranslations(newTranslations);
+      const hasChanged = hasCurrentEntryChanged();
+
+      // Only update the translations array if the entry has actually changed
+      if (hasChanged) {
+        newTranslations[currentIndex] = convertDisplayToStorage(currentTranslation);
+        setTranslations(newTranslations);
+      }
+
       setCurrentIndex(currentIndex - 1);
-      setCurrentTranslation(translations[currentIndex - 1] || '');
+      const prevTranslation = hasChanged
+        ? newTranslations[currentIndex - 1]
+        : translations[currentIndex - 1];
+      setCurrentTranslation(convertBlankToDisplay(prevTranslation));
     }
-  }, [currentIndex, currentTranslation, translations]);
-  
-  /**
-   * Handle source text input
-   * 
-   * Updates manual source text when user types in textarea.
-   */
+  }, [currentIndex, currentTranslation, translations, hasCurrentEntryChanged]);
+
   const handleSourceInput = useCallback((e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const text = e.target.value;
     const lines = text.split('\n').filter(line => line.trim());
     setSourceTexts(lines);
     setUtterers(new Array(lines.length).fill(''));
-    setTranslations(new Array(lines.length).fill(''));
+    setTranslations(new Array(lines.length).fill(BLANK_PLACEHOLDER));
+    setOriginalTranslations(new Array(lines.length).fill(BLANK_PLACEHOLDER));
     setCurrentIndex(0);
     setCurrentTranslation('');
   }, []);
-  
-  /**
-   * Insert translated suggestion into textarea
-   * 
-   * Inserts a translated text at the current cursor position.
-   */
-  const insertTranslatedSuggestion = useCallback((translatedText: string) => {
-    const textarea = textareaRef.current;
-    
-    if (textarea) {
-      const cursorPos = textarea.selectionStart;
-      const before = currentTranslation.slice(0, cursorPos);
-      const after = currentTranslation.slice(cursorPos);
-      const newText = before + translatedText + after;
-      
-      setCurrentTranslation(newText);
-      
-      // Set cursor position after the inserted text
-      setTimeout(() => {
-        if (textarea) {
-          const newCursorPos = cursorPos + translatedText.length;
-          textarea.setSelectionRange(newCursorPos, newCursorPos);
-          textarea.focus();
-        }
-      }, 0);
-    } else {
-      // Fallback: append to the end if textarea ref is not available
-      setCurrentTranslation(prev => prev + translatedText);
-    }
-  }, [currentTranslation]);
-  
-  /**
-   * Insert placeholder with original source
-   * 
-   * Inserts a placeholder with the original English text.
-   */
-  const insertPlaceholder = useCallback((originalSource: string) => {
-    const placeholderText = `(${originalSource})`;
-    const textarea = textareaRef.current;
-    
-    if (textarea) {
-      const cursorPos = textarea.selectionStart;
-      const before = currentTranslation.slice(0, cursorPos);
-      const after = currentTranslation.slice(cursorPos);
-      const newText = before + placeholderText + after;
-      
-      setCurrentTranslation(newText);
-      
-      // Set cursor position after the inserted text
-      setTimeout(() => {
-        if (textarea) {
-          const newCursorPos = cursorPos + placeholderText.length;
-          textarea.setSelectionRange(newCursorPos, newCursorPos);
-          textarea.focus();
-        }
-      }, 0);
-    } else {
-      // Fallback: append to the end if textarea ref is not available
-      setCurrentTranslation(prev => prev + placeholderText);
-    }
-  }, [currentTranslation]);
-  
-  /**
-   * Copy source text to clipboard
-   * 
-   * Copies the current source text to the clipboard.
-   */
-  const copySourceText = useCallback(() => {
-    const sourceText = sourceTexts[currentIndex];
-    if (sourceText) {
-      // Remove whitespace and clean the text before copying
-      const cleanText = sourceText.trim().replace(/\s+/g, ' ');
-      navigator.clipboard.writeText(cleanText);
-    }
-  }, [currentIndex, sourceTexts]);
-  
-  /**
-   * Copy source text to JSON search
-   * 
-   * Sets the current source text as the JSON search term.
-   */
-  const copySourceToJsonSearch = useCallback(() => {
-    const sourceText = sourceTexts[currentIndex];
-    if (sourceText) {
-      // This would be handled by the JSON highlighting hook
-      console.log('Copying source text to JSON search:', sourceText);
-    }
-  }, [currentIndex, sourceTexts]);
-  
-  /**
-   * Persist translation to backend
-   * 
-   * Saves the translation to the backend API.
-   */
-  const persistTranslation = useCallback(async (rowNumber: number, newTranslation: string) => {
-    try {
-      const response = await fetch('/api/persist-translation', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          fileName: 'READ_ME_LocalizationManual',
-          rowNumber: rowNumber,
-          newTranslation: newTranslation
-        }),
-      });
 
-      if (response.ok) {
-        console.log('Translation persisted successfully');
-      } else {
-        console.error('Failed to persist translation');
+  const jumpToRow = useCallback(
+    (rowNumber: number, startRow: number) => {
+      const index = rowNumber - startRow;
+      if (index >= 0 && index < sourceTexts.length) {
+        setCurrentIndex(index);
+        setCurrentTranslation(convertBlankToDisplay(translations[index]));
       }
-    } catch (error) {
-      console.error('Error persisting translation:', error);
-    }
-  }, []);
-  
-  /**
-   * Get cell location for current index
-   * 
-   * Calculates the cell location based on the current index.
-   */
-  const getCellLocation = useCallback((index: number) => {
-    // This is a simplified version - the actual implementation depends on Excel configuration
-    return `Row ${index + 1}`;
-  }, []);
-  
+    },
+    [sourceTexts.length, translations]
+  );
+
+  const resetOutputDisplay = useCallback(() => {
+    // Clear all translations and reset to blank placeholders
+    setTranslations(new Array(sourceTexts.length).fill(BLANK_PLACEHOLDER));
+    setCurrentTranslation('');
+    // Force a complete re-render of the output component
+    setOutputKey(prev => prev + 1);
+  }, [sourceTexts.length]);
+
+  // ========== Return ==========
   return {
     // State
     sourceTexts,
     utterers,
     translations,
+    originalTranslations,
     currentIndex,
     currentTranslation,
     isStarted,
-    
+    outputKey,
+
     // Refs
     fileInputRef,
     textareaRef,
-    
+
+    // Change detection
+    hasCurrentEntryChanged,
+    getCurrentOriginalValue,
+
     // Setters
     setSourceTexts,
     setUtterers,
     setTranslations,
+    setOriginalTranslations,
     setCurrentIndex,
     setCurrentTranslation,
     setIsStarted,
-    
+
     // Functions
     handleStart,
     handleBackToSetup,
     handleSubmit,
     handlePrevious,
     handleSourceInput,
-    insertTranslatedSuggestion,
-    insertPlaceholder,
-    copySourceText,
-    copySourceToJsonSearch,
-    persistTranslation,
-    getCellLocation,
+    jumpToRow,
+    resetOutputDisplay,
   };
 }; 

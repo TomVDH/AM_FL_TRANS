@@ -12,7 +12,6 @@ import { useUIComponents } from '../hooks/useUIComponents';
 import { useGradientBarAnimation } from '../hooks/useGradientBarAnimation';
 import { useFooterGradientAnimation } from '../hooks/useFooterGradientAnimation';
 import { useInterfaceAnimations } from '../hooks/useInterfaceAnimations';
-import { useExcelProcessing } from '../hooks/useExcelProcessing';
 import { useTranslationState } from '../hooks/useTranslationState';
 import SetupWizard from './SetupWizard';
 import CodexPanel from './CodexPanel';
@@ -23,6 +22,8 @@ import ReferenceToolsPanel from './ReferenceToolsPanel';
 import QuickReferenceBar from './QuickReferenceBar';
 import ResetConfirmationModal from './ResetConfirmationModal';
 import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
+import { useWowMode } from '../hooks/useWowMode';
+import { celebrateMilestone } from '../utils/celebrations';
 
 
 const TranslationHelper: React.FC = () => {
@@ -229,6 +230,10 @@ const TranslationHelper: React.FC = () => {
       await syncCurrentTranslation();
     }
     handleSubmit();
+
+    // Trigger celebration on milestones when Wow mode is active
+    const completedCount = translations.filter(t => t && t !== '' && t !== '[BLANK, REMOVE LATER]').length;
+    celebrateMilestone(completedCount, isWowMode);
   };
 
   const handlePreviousWithSync = async () => {
@@ -355,6 +360,7 @@ const TranslationHelper: React.FC = () => {
   const { gradientBarRef } = useFooterGradientAnimation();
   const { cardRef, buttonsRef, dialogueBoxRef, animateCardTransition, animateButtonHover } = useInterfaceAnimations();
   const { characterData, findCharacterMatches } = useCharacterHighlighting();
+  const { isWowMode, handleWowClick, triggerCelebration } = useWowMode();
 
   // Create wrapper function for XLSX matches that returns compatible format
   // Trim speaker name to last dot for full name display
@@ -570,6 +576,11 @@ const TranslationHelper: React.FC = () => {
         gradientColors={gradientColors}
         showVersionHash={showVersionHash}
         VERSION_HASH={VERSION_HASH}
+        onVersionBadgeHover={(isHovering) => setShowVersionHash(isHovering)}
+        onVersionBadgeClick={() => {
+          setGradientColors(generateGradientColors());
+          handleWowClick();
+        }}
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
         showResetModal={showResetModal}
@@ -1825,12 +1836,6 @@ const TranslationHelper: React.FC = () => {
                       const cellRef = `J${excelRow}`;
                       const utterer = (utterers && utterers.length > 0 && utterers[idx]) ? trimSpeakerName(utterers[idx]) : '';
                       const isModified = hasBeenModified || (wasOriginallyBlank && isNowFilled);
-
-                      // Debug logging (remove after testing)
-                      if (idx < 5) {
-                        console.log(`Entry ${idx}: trans="${trans}", original="${originalValue}", isModified=${isModified}`);
-                      }
-
                       const isBlank = trans === '[BLANK, REMOVE LATER]';
                       const dutchValue = liveEditMode && dutchColumnValues[idx] ? dutchColumnValues[idx] : '';
 
@@ -2068,7 +2073,10 @@ const TranslationHelper: React.FC = () => {
             className="rounded-sm shadow-md relative cursor-pointer overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-xl"
             onMouseEnter={() => setShowVersionHash(true)}
             onMouseLeave={() => setShowVersionHash(false)}
-            onClick={() => setGradientColors(generateGradientColors())}
+            onClick={() => {
+              setGradientColors(generateGradientColors());
+              handleWowClick();
+            }}
             title="Click to change gradient"
             style={{
               width: '120px',

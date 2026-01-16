@@ -53,6 +53,10 @@ interface SetupWizardProps {
   showVersionHash: boolean;
   VERSION_HASH: string;
 
+  // Footer interaction handlers
+  onVersionBadgeHover?: (isHovering: boolean) => void;
+  onVersionBadgeClick?: () => void;
+
   // Dark mode state
   darkMode: boolean;
   toggleDarkMode: () => void;
@@ -127,6 +131,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   isTranslating,
   showVersionHash,
   VERSION_HASH,
+  onVersionBadgeHover,
+  onVersionBadgeClick,
   darkMode,
   toggleDarkMode,
   showResetModal,
@@ -952,9 +958,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           <div className="flex justify-center items-center">
             <div
               className="rounded-sm shadow-md relative cursor-pointer overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-xl flex items-center justify-center"
-              onMouseEnter={() => {}} // Will be handled by parent
-              onMouseLeave={() => {}} // Will be handled by parent
-              onClick={() => {}} // Will be handled by parent
+              onMouseEnter={() => onVersionBadgeHover?.(true)}
+              onMouseLeave={() => onVersionBadgeHover?.(false)}
+              onClick={() => onVersionBadgeClick?.()}
               title="Click to change gradient"
               style={{
                 width: '120px',
