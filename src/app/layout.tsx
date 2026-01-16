@@ -66,6 +66,9 @@ export default function RootLayout({
           position="top-right"
           richColors
           closeButton
+          gap={12}
+          visibleToasts={5}
+          expand={true}
           toastOptions={{
             style: {
               zIndex: 99999,
@@ -73,11 +76,14 @@ export default function RootLayout({
               color: 'var(--toast-color)',
               border: '1px solid var(--toast-border)',
               borderRadius: '3px',
-              padding: '12px 16px',
+              padding: '14px 16px',
               fontSize: '14px',
               fontWeight: 500,
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+              minHeight: '48px',
             },
-            className: 'toast-custom'
+            className: 'toast-custom',
+            duration: 4000,
           }}
         />
       </body>

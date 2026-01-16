@@ -1,6 +1,5 @@
 import React, { useMemo, useCallback } from 'react';
-import { useJsonHighlighting } from '../hooks/useJsonHighlighting';
-import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
+import { useJsonHighlighting, useCharacterHighlighting } from '../hooks/highlighting';
 
 /**
  * TextHighlighter Component

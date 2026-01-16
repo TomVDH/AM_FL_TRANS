@@ -6,6 +6,7 @@ import { toast } from 'sonner';
 import VideoButton from './VideoButton';
 import GitHubButton from './GitHubButton';
 import CodexButton from './CodexButton';
+import { BLANK_PLACEHOLDER } from '@/constants';
 
 interface SetupWizardProps {
   // Input mode state
@@ -264,7 +265,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                 texts.push(entry.sourceEnglish);
                 speakers.push(entry.utterer || '');
                 // Load existing Dutch translation if available, otherwise use blank placeholder
-                existingTranslations.push(entry.translatedDutch || '[BLANK, REMOVE LATER]');
+                existingTranslations.push(entry.translatedDutch || BLANK_PLACEHOLDER);
               }
             });
           });
@@ -276,14 +277,14 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                 texts.push(entry.english);
                 speakers.push(entry.utterer || '');
                 // Load existing Dutch translation if available, otherwise use blank placeholder
-                existingTranslations.push(entry.dutch || '[BLANK, REMOVE LATER]');
+                existingTranslations.push(entry.dutch || BLANK_PLACEHOLDER);
               }
             });
           });
         }
 
         if (texts.length === 0) {
-          alert(`No translatable entries found in the selected ${fileType.toUpperCase()} file.`);
+          toast.warning(`No translatable entries found in the selected ${fileType.toUpperCase()} file.`);
           return;
         }
 
@@ -299,7 +300,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
       } catch (error) {
         console.error(`Error loading ${fileType} file:`, error);
-        alert(`Failed to load ${fileType.toUpperCase()} file. Please try again.`);
+        toast.error(`Failed to load ${fileType.toUpperCase()} file. Please try again.`);
         return; // Don't proceed to handleStart if loading failed
       }
     }
@@ -418,7 +419,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
             </svg>
-            <span>Dutch translations → Column J (hardcoded)</span>
+            <span>Your translations will export to Column J</span>
           </div>
         </div>
 
@@ -635,8 +636,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                             ))}
                           </select>
                         ) : (
-                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">No Excel files found in /excels folder</p>
+                          <div className="w-full p-4 border border-dashed border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">No Excel files found</p>
+                            <p className="text-xs text-gray-400 dark:text-gray-500">Upload a file above to get started</p>
                           </div>
                         )}
                         {selectedExistingFile && excelSheets.length > 0 && (
@@ -670,8 +672,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                             ))}
                           </select>
                         ) : (
-                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">No {fileType.toUpperCase()} files found in /data/{fileType} folder</p>
+                          <div className="w-full p-4 border border-dashed border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
+                            <p className="text-sm text-gray-500 dark:text-gray-400 mb-1">No {fileType.toUpperCase()} files found</p>
+                            <p className="text-xs text-gray-400 dark:text-gray-500">Add files to /data/{fileType} folder</p>
                           </div>
                         )}
                         {selectedDataFile && (
@@ -794,7 +797,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       {localeColumns.length > 0 && (
                         <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-300 dark:border-blue-700 rounded">
                           <label className="block text-xs font-bold mb-2 text-blue-900 dark:text-blue-300">
-                            Detected Locale Columns
+                            Languages Found in File
                           </label>
                           <div className="flex flex-wrap gap-2">
                             {localeColumns.map((item, index) => (
@@ -810,7 +813,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       )}
                       {sourceTexts.length > 0 && (
                         <p className="text-sm text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 p-3 border border-green-600 dark:border-green-700">
-                          ✓ Found {sourceTexts.length} items (speakers from column {uttererColumn}, text from column {sourceColumn})
+                          ✓ Ready! {sourceTexts.length} lines loaded for translation
                         </p>
                       )}
                     </div>
@@ -823,8 +826,11 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           {inputMode === 'embedded-json' && (
             <div className="space-y-6 animate-fade-in">
               <label className="block text-base font-black mb-4 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                Embedded JSON Data
+                Project Data Files
               </label>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mb-4 -mt-2">
+                Select a JSON or CSV file from your project
+              </p>
               
               {/* Preamble Section */}
               <div className="p-4 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-md">
@@ -875,25 +881,33 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           {/* Manual Input Section */}
           {inputMode === 'manual' && (
             <div className="space-y-6 animate-fade-in">
-              <label className="block text-base font-black mb-4 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                Paste Text Manually
-              </label>
+              <div>
+                <label className="block text-base font-black mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
+                  Paste Text Manually
+                </label>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">
+                  Paste your source text below, one line per translation item
+                </p>
+              </div>
               <textarea
-                className="w-full h-48 p-4 border border-gray-300 dark:border-gray-600 font-mono text-sm focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white resize-none"
+                className="w-full h-48 p-4 border border-gray-300 dark:border-gray-600 font-mono text-sm focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white resize-none input-glow"
                 style={{ borderRadius: '3px' }}
-                placeholder="Paste your text here, one line per item..."
+                placeholder="Line 1: First text to translate&#10;Line 2: Second text to translate&#10;Line 3: Third text to translate..."
                 onChange={handleSourceInput}
               />
 
               <div>
-                <label className="block text-base font-black mb-4 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                  Starting Cell
+                <label className="block text-base font-black mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
+                  Export Starting Position
                 </label>
+                <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+                  Where should translations start when exported to Excel? (e.g., A1, B5)
+                </p>
                 <input
                   type="text"
                   value={cellStart}
                   onChange={(e) => setCellStart(e.target.value)}
-                  className="w-full p-3 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white"
+                  className="w-full p-3 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white input-glow"
                   style={{ borderRadius: '3px' }}
                   placeholder="A1"
                 />
@@ -911,11 +925,16 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             <button
               onClick={handleStartWithDataFile}
               disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
-              className="w-full px-6 py-2.5 bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 border border-gray-700 dark:border-gray-300 hover:border-gray-600 dark:hover:border-gray-400 hover:shadow-md transition-all duration-300 ease-out disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
+              className="w-full px-6 py-2.5 bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 border border-gray-700 dark:border-gray-300 hover:border-gray-600 dark:hover:border-gray-400 hover:shadow-md transition-all duration-300 ease-out disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm btn-spring"
               style={{ borderRadius: '3px' }}
             >
               Start Translation →
             </button>
+            {sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile && (
+              <p className="text-xs text-amber-600 dark:text-amber-400 text-center mt-2">
+                Select a file above to get started
+              </p>
+            )}
           </div>
         </div>
 

@@ -1,15 +1,20 @@
 import TranslationHelper from '@/components/TranslationHelper'
+import ErrorBoundary from '@/components/ui/ErrorBoundary'
 
 /**
  * Home Page Component
- * 
+ *
  * The main entry point of the AM Translations Helper application.
  * Renders the TranslationHelper component which contains all the
  * translation workflow functionality.
- * 
+ *
  * This minimal approach keeps the page component clean while
  * delegating all business logic to the TranslationHelper component.
  */
 export default function Home() {
-  return <TranslationHelper />
+  return (
+    <ErrorBoundary>
+      <TranslationHelper />
+    </ErrorBoundary>
+  )
 } 

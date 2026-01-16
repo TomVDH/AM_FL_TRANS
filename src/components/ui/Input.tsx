@@ -10,13 +10,13 @@ interface TextAreaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement
   error?: string;
 }
 
-export const Input: React.FC<InputProps> = ({ 
-  label, 
-  error, 
-  className = '', 
-  ...props 
+export const Input: React.FC<InputProps> = ({
+  label,
+  error,
+  className = '',
+  ...props
 }) => {
-  const baseClasses = "w-full px-4 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-all duration-200";
+  const baseClasses = "w-full px-4 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-all duration-200 input-glow";
   const errorClasses = error ? "border-red-500 focus:ring-red-500 focus:border-red-500" : "";
   
   const classes = [
@@ -46,13 +46,13 @@ export const Input: React.FC<InputProps> = ({
   );
 };
 
-export const TextArea: React.FC<TextAreaProps> = ({ 
-  label, 
-  error, 
-  className = '', 
-  ...props 
+export const TextArea: React.FC<TextAreaProps> = ({
+  label,
+  error,
+  className = '',
+  ...props
 }) => {
-  const baseClasses = "w-full px-4 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-all duration-200 resize-none";
+  const baseClasses = "w-full px-4 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-all duration-200 resize-none input-glow";
   const errorClasses = error ? "border-red-500 focus:ring-red-500 focus:border-red-500" : "";
   
   const classes = [
@@ -87,14 +87,14 @@ interface SelectProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
   error?: string;
 }
 
-export const Select: React.FC<SelectProps> = ({ 
-  label, 
-  error, 
-  className = '', 
+export const Select: React.FC<SelectProps> = ({
+  label,
+  error,
+  className = '',
   children,
-  ...props 
+  ...props
 }) => {
-  const baseClasses = "w-full px-4 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-all duration-200";
+  const baseClasses = "w-full px-4 py-3 bg-white dark:bg-gray-800 border border-black dark:border-gray-600 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-gray-500 transition-all duration-200 input-glow";
   const errorClasses = error ? "border-red-500 focus:ring-red-500 focus:border-red-500" : "";
   
   const classes = [

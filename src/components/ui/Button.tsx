@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   children, 
   ...props 
 }) => {
-  const baseClasses = "font-black tracking-tight uppercase letter-spacing-wide transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm";
+  const baseClasses = "font-black tracking-tight uppercase letter-spacing-wide shadow-sm btn-spring disabled:transform-none disabled:hover:shadow-sm";
   
   const variantClasses = {
     primary: "bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100",

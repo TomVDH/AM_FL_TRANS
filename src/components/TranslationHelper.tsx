@@ -6,12 +6,9 @@ import { toast } from 'sonner';
 import { useDisplayModes } from '../hooks/useDisplayModes';
 import { useXlsxMode } from '../hooks/useXlsxMode';
 import { useReferenceColumn as useReferenceColumnHook } from '../hooks/useReferenceColumn';
-import { useJsonHighlighting } from '../hooks/useJsonHighlighting';
-import { useCharacterDetection } from '../hooks/useCharacterDetection';
+import { useJsonHighlighting, useCharacterDetection, useCharacterHighlighting } from '../hooks/highlighting';
 import { useUIComponents } from '../hooks/useUIComponents';
-import { useGradientBarAnimation } from '../hooks/useGradientBarAnimation';
-import { useFooterGradientAnimation } from '../hooks/useFooterGradientAnimation';
-import { useInterfaceAnimations } from '../hooks/useInterfaceAnimations';
+import { useGradientBarAnimation, useFooterGradientAnimation, useInterfaceAnimations } from '../hooks/animations';
 import { useExcelProcessing } from '../hooks/useExcelProcessing';
 import { useTranslationState } from '../hooks/useTranslationState';
 import SetupWizard from './SetupWizard';
@@ -22,7 +19,12 @@ import CodexButton from './CodexButton';
 import ReferenceToolsPanel from './ReferenceToolsPanel';
 import QuickReferenceBar from './QuickReferenceBar';
 import ResetConfirmationModal from './ResetConfirmationModal';
-import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
+import CompletionModal from './CompletionModal';
+import ErrorBoundary from './ui/ErrorBoundary';
+import { useFocusTrap } from '../hooks/useFocusTrap';
+import { useWowMode } from '../hooks/animations';
+import { fireCompletionConfetti, fireMilestoneConfetti } from '../utils/celebrations';
+import { BLANK_PLACEHOLDER } from '@/constants';
 
 
 const TranslationHelper: React.FC = () => {
@@ -121,13 +123,13 @@ const TranslationHelper: React.FC = () => {
   // Returns array of { cellRef: "J5", value: "translation", excelRow: 5 }
   const getModifiedEntriesForExcel = () => {
     return translations.map((trans, idx) => {
-      if (!trans || trans === '[BLANK, REMOVE LATER]') return null;
+      if (!trans || trans === BLANK_PLACEHOLDER) return null;
 
       // Check if modified from original
-      const originalValue = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
+      const originalValue = originalTranslations[idx] || BLANK_PLACEHOLDER;
       const hasBeenModified = trans !== originalValue;
-      const wasOriginallyBlank = originalValue === '[BLANK, REMOVE LATER]' || originalValue === '';
-      const isNowFilled = trans !== '[BLANK, REMOVE LATER]' && trans !== '';
+      const wasOriginallyBlank = originalValue === BLANK_PLACEHOLDER || originalValue === '';
+      const isNowFilled = trans !== BLANK_PLACEHOLDER && trans !== '';
 
       // Only include if modified or newly filled
       if (!hasBeenModified && !(wasOriginallyBlank && isNowFilled)) return null;
@@ -223,12 +225,65 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
+  // Check if all entries are complete (have non-blank translations)
+  const checkAllEntriesComplete = useCallback(() => {
+    if (translations.length === 0) return false;
+
+    // Check if the current entry would be filled after submit
+    const currentEntryWillBeFilled = currentTranslation.trim() !== '';
+
+    // Count how many entries are blank (excluding current if it will be filled)
+    const blankCount = translations.filter((trans, idx) => {
+      if (idx === currentIndex && currentEntryWillBeFilled) return false;
+      return trans === '' || trans === BLANK_PLACEHOLDER;
+    }).length;
+
+    return blankCount === 0;
+  }, [translations, currentIndex, currentTranslation]);
+
   // LIVE EDIT wrappers - sync before navigation
   const handleSubmitWithSync = async () => {
     if (liveEditMode) {
       await syncCurrentTranslation();
     }
+
+    // Check for completion BEFORE calling handleSubmit
+    const isOnLastEntry = currentIndex === sourceTexts.length - 1;
+    const willBeComplete = checkAllEntriesComplete();
+
     handleSubmit();
+
+    // Celebration triggers (when wow-mode is enabled)
+    if (wowModeEnabled && sourceTexts.length > 0) {
+      const newProgress = ((currentIndex + 1) / sourceTexts.length) * 100;
+      const oldProgress = (currentIndex / sourceTexts.length) * 100;
+
+      // Animate the just-completed segment with GSAP glow
+      setTimeout(() => animateSegmentCelebration(currentIndex), 50);
+
+      // Check for completion (last entry)
+      if (isOnLastEntry) {
+        setTimeout(() => fireCompletionConfetti(), 200);
+      }
+      // Check for milestone crossings (25%, 50%, 75%)
+      else if (
+        (oldProgress < 25 && newProgress >= 25) ||
+        (oldProgress < 50 && newProgress >= 50) ||
+        (oldProgress < 75 && newProgress >= 75)
+      ) {
+        setTimeout(() => fireMilestoneConfetti(), 100);
+      }
+    }
+
+    // Show completion modal when on last entry OR when all entries complete
+    if (isOnLastEntry && willBeComplete) {
+      // Fire confetti even if wow mode is off for completion
+      if (!wowModeEnabled) {
+        setTimeout(() => fireCompletionConfetti(), 200);
+      }
+      // Show the completion modal after a brief delay
+      setTimeout(() => setShowCompletionModal(true), 500);
+    }
   };
 
   const handlePreviousWithSync = async () => {
@@ -257,7 +312,9 @@ const TranslationHelper: React.FC = () => {
     toggleHighlightMode,
     toggleGamepadMode,
   } = useDisplayModes();
-  
+
+  const { wowModeEnabled, toggleWowMode } = useWowMode();
+
   const {
     xlsxMode,
     selectedXlsxFile,
@@ -346,14 +403,17 @@ const TranslationHelper: React.FC = () => {
   const [showAllEntries, setShowAllEntries] = useState(false);
   const [activeTab, setActiveTab] = useState<'input' | 'output'>('input');
   const [showKeyboardShortcuts, setShowKeyboardShortcuts] = useState(false);
+  const keyboardShortcutsRef = useRef<HTMLDivElement>(null);
+  useFocusTrap(showKeyboardShortcuts, keyboardShortcutsRef);
   const [showInlineSource, setShowInlineSource] = useState(false);
   const [showResetModal, setShowResetModal] = useState(false);
+  const [showCompletionModal, setShowCompletionModal] = useState(false);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
   const { progressBarRef, progressFillRef, animateProgress } = useGradientBarAnimation();
   const { gradientBarRef } = useFooterGradientAnimation();
-  const { cardRef, buttonsRef, dialogueBoxRef, animateCardTransition, animateButtonHover } = useInterfaceAnimations();
+  const { cardRef, buttonsRef, dialogueBoxRef, animateCardTransition, animateButtonHover, animateSegmentCelebration } = useInterfaceAnimations();
   const { characterData, findCharacterMatches } = useCharacterHighlighting();
 
   // Create wrapper function for XLSX matches that returns compatible format
@@ -491,7 +551,7 @@ const TranslationHelper: React.FC = () => {
       else if (e.key.toLowerCase() === 'p' && currentIndex < sourceTexts.length - 1) {
         e.preventDefault();
         setCurrentIndex(currentIndex + 1);
-        setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
+        setCurrentTranslation(translations[currentIndex + 1] === BLANK_PLACEHOLDER ? '' : translations[currentIndex + 1] || '');
       }
       // R for Reference Tools toggle
       else if (e.key.toLowerCase() === 'r') {
@@ -537,7 +597,8 @@ const TranslationHelper: React.FC = () => {
 
   if (!isStarted) {
     return (
-      <SetupWizard
+      <ErrorBoundary>
+        <SetupWizard
         inputMode={inputMode}
         setInputMode={setInputMode}
         excelSheets={excelSheets}
@@ -576,6 +637,7 @@ const TranslationHelper: React.FC = () => {
         setShowResetModal={setShowResetModal}
         isLoadingExcel={isLoadingExcel}
       />
+      </ErrorBoundary>
     );
   }
 
@@ -584,16 +646,18 @@ const TranslationHelper: React.FC = () => {
       {/* Keyboard Shortcuts Modal */}
       {showKeyboardShortcuts && (
         <div
-          className="fixed inset-0 bg-black/50 dark:bg-black/70 flex items-center justify-center z-50 backdrop-blur-sm"
+          className="fixed inset-0 bg-black/50 dark:bg-black/70 flex items-center justify-center z-50 backdrop-blur-sm modal-backdrop-animate"
           onClick={() => setShowKeyboardShortcuts(false)}
           role="dialog"
           aria-modal="true"
           aria-labelledby="keyboard-shortcuts-title"
         >
           <div
-            className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-2xl p-6 max-w-lg w-full mx-4"
+            ref={keyboardShortcutsRef}
+            className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-2xl p-6 max-w-lg w-full mx-4 modal-content-animate"
             style={{ borderRadius: '3px' }}
             onClick={(e) => e.stopPropagation()}
+            tabIndex={-1}
           >
             {/* Modal Header */}
             <div className="flex items-center justify-between mb-6">
@@ -801,7 +865,7 @@ const TranslationHelper: React.FC = () => {
                           onClick={() => {
                             const newIndex = Math.max(0, currentIndex - 5);
                             setCurrentIndex(newIndex);
-                            setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                            setCurrentTranslation(translations[newIndex] === BLANK_PLACEHOLDER ? '' : translations[newIndex] || '');
                           }}
                           className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 transition-colors"
                           style={{ borderRadius: '2px' }}
@@ -812,7 +876,7 @@ const TranslationHelper: React.FC = () => {
                           onClick={() => {
                             const newIndex = Math.max(0, currentIndex - 1);
                             setCurrentIndex(newIndex);
-                            setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                            setCurrentTranslation(translations[newIndex] === BLANK_PLACEHOLDER ? '' : translations[newIndex] || '');
                           }}
                           className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 transition-colors"
                           style={{ borderRadius: '2px' }}
@@ -837,7 +901,7 @@ const TranslationHelper: React.FC = () => {
                           onClick={() => {
                             const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 1);
                             setCurrentIndex(newIndex);
-                            setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                            setCurrentTranslation(translations[newIndex] === BLANK_PLACEHOLDER ? '' : translations[newIndex] || '');
                           }}
                           className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 transition-colors"
                           style={{ borderRadius: '2px' }}
@@ -848,7 +912,7 @@ const TranslationHelper: React.FC = () => {
                           onClick={() => {
                             const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 5);
                             setCurrentIndex(newIndex);
-                            setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                            setCurrentTranslation(translations[newIndex] === BLANK_PLACEHOLDER ? '' : translations[newIndex] || '');
                           }}
                           className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 transition-colors"
                           style={{ borderRadius: '2px' }}
@@ -908,6 +972,7 @@ const TranslationHelper: React.FC = () => {
                 )}
                 <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
               </button>
+
             </div>
           </div>
         </div>
@@ -926,14 +991,22 @@ const TranslationHelper: React.FC = () => {
               onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
               onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
               disabled={currentIndex === 0 || syncStatus === 'syncing'}
-              className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:shadow-none overflow-hidden"
+              className={`relative h-10 w-10 flex items-center justify-center border transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:shadow-none overflow-hidden ${
+                wowModeEnabled
+                  ? 'bg-gradient-to-br from-violet-500 to-purple-600 text-white border-violet-400 hover:border-violet-300 hover:shadow-lg hover:shadow-violet-500/30 disabled:from-gray-400 disabled:to-gray-500 disabled:border-gray-400 disabled:text-gray-200 btn-magnetic'
+                  : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50'
+              }`}
               style={{ borderRadius: '3px' }}
               title="Previous (←)"
             >
               <svg className="w-5 h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
+              <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out ${
+                wowModeEnabled
+                  ? 'bg-gradient-to-br from-violet-400 to-purple-500'
+                  : 'bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800'
+              }`} style={{ borderRadius: '3px' }} />
             </button>
           </div>
 
@@ -951,7 +1024,7 @@ const TranslationHelper: React.FC = () => {
             <div className="absolute inset-0 flex">
               {sourceTexts.map((_, index) => {
                 const isCompleted = index < currentIndex;
-                const isBlank = translations[index] === '' || translations[index] === '[BLANK, REMOVE LATER]';
+                const isBlank = translations[index] === '' || translations[index] === BLANK_PLACEHOLDER;
                 const isCurrent = index === currentIndex;
                 const isJustCompleted = index === currentIndex - 1;
                 const segmentWidth = (100 / sourceTexts.length);
@@ -964,11 +1037,22 @@ const TranslationHelper: React.FC = () => {
                     key={index}
                     data-segment={index}
                     role="button"
-                    tabIndex={-1}
+                    tabIndex={0}
                     aria-label={ariaLabel}
-                    className="relative h-full"
+                    className="relative h-full cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-inset hover:opacity-80 transition-opacity"
                     style={{
                       width: `${segmentWidth}%`
+                    }}
+                    onClick={() => {
+                      setCurrentIndex(index);
+                      setCurrentTranslation(translations[index] === BLANK_PLACEHOLDER ? '' : translations[index] || '');
+                    }}
+                    onKeyDown={(e) => {
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        setCurrentIndex(index);
+                        setCurrentTranslation(translations[index] === BLANK_PLACEHOLDER ? '' : translations[index] || '');
+                      }
                     }}
                   >
                     {isCompleted && (
@@ -1019,20 +1103,28 @@ const TranslationHelper: React.FC = () => {
               onClick={() => {
                 if (currentIndex < sourceTexts.length - 1) {
                   setCurrentIndex(currentIndex + 1);
-                  setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
+                  setCurrentTranslation(translations[currentIndex + 1] === BLANK_PLACEHOLDER ? '' : translations[currentIndex + 1] || '');
                 }
               }}
               onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
               onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
               disabled={currentIndex === sourceTexts.length - 1}
-              className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:shadow-none overflow-hidden"
+              className={`relative h-10 w-10 flex items-center justify-center border transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:shadow-none overflow-hidden ${
+                wowModeEnabled
+                  ? 'bg-gradient-to-br from-fuchsia-500 to-pink-600 text-white border-fuchsia-400 hover:border-fuchsia-300 hover:shadow-lg hover:shadow-fuchsia-500/30 disabled:from-gray-400 disabled:to-gray-500 disabled:border-gray-400 disabled:text-gray-200 btn-magnetic'
+                  : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50'
+              }`}
               style={{ borderRadius: '3px' }}
               title="Next (→)"
             >
               <svg className="w-5 h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
+              <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out ${
+                wowModeEnabled
+                  ? 'bg-gradient-to-br from-fuchsia-400 to-pink-500'
+                  : 'bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800'
+              }`} style={{ borderRadius: '3px' }} />
             </button>
           </div>
         </div>
@@ -1298,7 +1390,7 @@ const TranslationHelper: React.FC = () => {
 
                     {/* Existing Dutch Translation (Column J) Display - Subtle gray styling with speaker info */}
                     <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-700">
-                      {translations[currentIndex] && translations[currentIndex] !== '[BLANK, REMOVE LATER]' ? (
+                      {translations[currentIndex] && translations[currentIndex] !== BLANK_PLACEHOLDER ? (
                         <div className="space-y-1">
                           {/* Speaker Name Badge */}
                           {utterers[currentIndex] && (
@@ -1493,7 +1585,11 @@ const TranslationHelper: React.FC = () => {
                         <button
                           onClick={handleSubmitWithSync}
                           disabled={syncStatus === 'syncing'}
-                          className="group relative h-9 px-6 bg-gradient-to-br from-gray-900 via-black to-gray-900 dark:from-gray-100 dark:via-white dark:to-gray-100 text-white dark:text-black border border-gray-800 dark:border-gray-200 hover:border-gray-700 dark:hover:border-gray-300 hover:shadow-lg active:shadow-inner active:scale-[0.98] transition-all duration-300 ease-out font-bold tracking-wide uppercase text-xs overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
+                          className={`group relative h-9 px-6 border active:shadow-inner active:scale-[0.98] transition-all duration-300 ease-out font-bold tracking-wide uppercase text-xs overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed ${
+                            wowModeEnabled
+                              ? 'bg-gradient-to-br from-emerald-500 via-green-500 to-teal-600 text-white border-emerald-400 hover:border-emerald-300 hover:shadow-lg hover:shadow-emerald-500/40 btn-magnetic'
+                              : 'bg-gradient-to-br from-gray-900 via-black to-gray-900 dark:from-gray-100 dark:via-white dark:to-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200 hover:border-gray-700 dark:hover:border-gray-300 hover:shadow-lg'
+                          }`}
                           style={{ borderRadius: '3px' }}
                         >
                           <span className="relative z-10 flex items-center gap-2">
@@ -1502,7 +1598,11 @@ const TranslationHelper: React.FC = () => {
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14m-7-7l7 7-7 7" />
                             </svg>
                           </span>
-                          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black dark:from-gray-200 dark:via-gray-100 dark:to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
+                          <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out ${
+                            wowModeEnabled
+                              ? 'bg-gradient-to-br from-emerald-400 via-green-400 to-teal-500'
+                              : 'bg-gradient-to-br from-gray-800 via-gray-900 to-black dark:from-gray-200 dark:via-gray-100 dark:to-white'
+                          }`} style={{ borderRadius: '3px' }} />
                         </button>
 
                         {/* XLSX Translation Suggestions - DISABLED per user request */}
@@ -1519,7 +1619,9 @@ const TranslationHelper: React.FC = () => {
                           onClick={toggleGamepadMode}
                           className={`group relative h-7 px-2.5 flex items-center gap-1 border transition-all duration-200 overflow-hidden ${
                             gamepadMode
-                              ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
+                              ? wowModeEnabled
+                                ? 'bg-gradient-to-r from-indigo-500 to-blue-600 text-white border-indigo-400 shadow-lg shadow-indigo-500/25'
+                                : 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
                               : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
                           }`}
                           style={{ borderRadius: '3px' }}
@@ -1536,7 +1638,9 @@ const TranslationHelper: React.FC = () => {
                           onClick={toggleHighlightMode}
                           className={`group relative h-7 px-2.5 flex items-center gap-1 border transition-all duration-200 overflow-hidden ${
                             highlightMode
-                              ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
+                              ? wowModeEnabled
+                                ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white border-amber-400 shadow-lg shadow-amber-500/25'
+                                : 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
                               : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
                           }`}
                           style={{ borderRadius: '3px' }}
@@ -1553,7 +1657,9 @@ const TranslationHelper: React.FC = () => {
                           onClick={toggleXlsxMode}
                           className={`group relative h-7 px-2.5 flex items-center gap-1 border transition-all duration-200 overflow-hidden ${
                             xlsxMode
-                              ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
+                              ? wowModeEnabled
+                                ? 'bg-gradient-to-r from-cyan-500 to-sky-600 text-white border-cyan-400 shadow-lg shadow-cyan-500/25'
+                                : 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
                               : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
                           }`}
                           style={{ borderRadius: '3px' }}
@@ -1572,7 +1678,9 @@ const TranslationHelper: React.FC = () => {
                             disabled={!loadedFileName}
                             className={`group relative h-7 px-2.5 flex items-center gap-1.5 border transition-all duration-200 overflow-hidden ${
                               liveEditMode
-                                ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
+                                ? wowModeEnabled
+                                  ? 'bg-gradient-to-r from-rose-500 to-red-600 text-white border-rose-400 shadow-lg shadow-rose-500/25'
+                                  : 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
                                 : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
                             } disabled:opacity-30 disabled:cursor-not-allowed`}
                             style={{ borderRadius: '3px' }}
@@ -1800,17 +1908,17 @@ const TranslationHelper: React.FC = () => {
                       if (!trans) return null;
 
                       // When eye is disabled, hide blank entries entirely
-                      if (!showAllEntries && trans === '[BLANK, REMOVE LATER]') {
+                      if (!showAllEntries && trans === BLANK_PLACEHOLDER) {
                         return null;
                       }
 
                       // Check if this translation is different from the original
                       const originalValue = originalTranslations && originalTranslations[idx]
                         ? originalTranslations[idx]
-                        : '[BLANK, REMOVE LATER]';
+                        : BLANK_PLACEHOLDER;
                       const hasBeenModified = trans !== originalValue;
-                      const wasOriginallyBlank = originalValue === '[BLANK, REMOVE LATER]' || originalValue === '';
-                      const isNowFilled = trans !== '[BLANK, REMOVE LATER]' && trans !== '';
+                      const wasOriginallyBlank = originalValue === BLANK_PLACEHOLDER || originalValue === '';
+                      const isNowFilled = trans !== BLANK_PLACEHOLDER && trans !== '';
 
                       // Show entry if:
                       // 1. showAllEntries is true (user wants to see everything), OR
@@ -1831,7 +1939,7 @@ const TranslationHelper: React.FC = () => {
                         console.log(`Entry ${idx}: trans="${trans}", original="${originalValue}", isModified=${isModified}`);
                       }
 
-                      const isBlank = trans === '[BLANK, REMOVE LATER]';
+                      const isBlank = trans === BLANK_PLACEHOLDER;
                       const dutchValue = liveEditMode && dutchColumnValues[idx] ? dutchColumnValues[idx] : '';
 
                       return {
@@ -2061,8 +2169,26 @@ const TranslationHelper: React.FC = () => {
           Onnozelaer Marketing Works © 2025 - built with Claude Code support
         </p>
 
-        {/* Version Badge with Gradient */}
-        <div className="flex justify-center items-center gap-2">
+        {/* Version Badge with Gradient and Wow Mode Toggle */}
+        <div className="flex justify-center items-center gap-3">
+          {/* Wow Mode Toggle */}
+          <button
+            onClick={toggleWowMode}
+            className={`group relative h-7 px-3 flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide transition-all duration-300 ${
+              wowModeEnabled
+                ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg shadow-purple-500/25'
+                : 'bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 hover:bg-gray-300 dark:hover:bg-gray-600'
+            }`}
+            style={{ borderRadius: '3px' }}
+            aria-label="Toggle wow effects"
+            title={wowModeEnabled ? "Effects: On" : "Effects: Off"}
+          >
+            <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+            </svg>
+            <span>{wowModeEnabled ? 'WOW' : 'WOW'}</span>
+          </button>
+
           <div
             ref={gradientBarRef}
             className="rounded-sm shadow-md relative cursor-pointer overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-xl"
@@ -2104,6 +2230,43 @@ const TranslationHelper: React.FC = () => {
         isOpen={showResetModal}
         onClose={() => setShowResetModal(false)}
         onConfirm={handleResetToOriginals}
+      />
+
+      {/* Completion Modal */}
+      <CompletionModal
+        isOpen={showCompletionModal}
+        onClose={() => setShowCompletionModal(false)}
+        onExportCSV={exportTranslations}
+        onCopyToClipboard={copyToClipboard}
+        onLoadAnotherSheet={handleBackToSetup}
+        onNextSheet={(() => {
+          // Find the next sheet in the workbook
+          if (excelSheets.length > 1 && selectedSheet) {
+            const currentSheetIndex = excelSheets.indexOf(selectedSheet);
+            if (currentSheetIndex < excelSheets.length - 1) {
+              return () => {
+                handleSheetChange(excelSheets[currentSheetIndex + 1]);
+              };
+            }
+          }
+          return undefined;
+        })()}
+        nextSheetName={(() => {
+          // Get the name of the next sheet
+          if (excelSheets.length > 1 && selectedSheet) {
+            const currentSheetIndex = excelSheets.indexOf(selectedSheet);
+            if (currentSheetIndex < excelSheets.length - 1) {
+              return excelSheets[currentSheetIndex + 1];
+            }
+          }
+          return undefined;
+        })()}
+        stats={{
+          totalEntries: sourceTexts.length,
+          modifiedCount: filterStats.modified,
+          completedCount: filterStats.completed,
+        }}
+        isLiveEditMode={liveEditMode}
       />
       
       <style jsx>{`

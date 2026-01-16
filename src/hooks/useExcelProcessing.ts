@@ -1,6 +1,7 @@
 import { useState, useCallback } from 'react';
 import * as XLSX from 'xlsx';
 import { toast } from 'sonner';
+import { validateExcelFile } from '@/utils/fileValidation';
 
 export interface ExcelProcessingState {
   // Excel processing state
@@ -56,19 +57,10 @@ export const useExcelProcessing = (): ExcelProcessingState => {
     const file = e.target.files?.[0];
     if (!file) return;
 
-    // Validate file type
-    if (file.type !== 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' &&
-        file.type !== 'application/vnd.ms-excel' &&
-        !file.name.endsWith('.xlsx') &&
-        !file.name.endsWith('.xls')) {
-      toast.error('Invalid file type. Please upload an Excel file (.xlsx or .xls)');
-      return;
-    }
-
-    // Validate file size (max 50MB)
-    const maxSize = 50 * 1024 * 1024; // 50MB
-    if (file.size > maxSize) {
-      toast.error('File too large. Maximum file size is 50MB');
+    // Validate file using shared utility
+    const validation = validateExcelFile(file);
+    if (!validation.valid) {
+      toast.error(validation.error);
       return;
     }
 
@@ -132,7 +124,7 @@ export const useExcelProcessing = (): ExcelProcessingState => {
       }
     } catch (error) {
       console.error('Error loading existing Excel file:', error);
-      alert('Error loading existing Excel file. Please try again.');
+      toast.error('Error loading existing Excel file. Please try again.');
     } finally {
       setIsLoadingExcel(false);
     }

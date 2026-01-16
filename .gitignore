@@ -45,3 +45,5 @@ example-*.md
 # IDE
 .vscode/
 .idea/ 
+*storybook.log
+storybook-static

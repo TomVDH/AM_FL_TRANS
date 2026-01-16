@@ -278,7 +278,7 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   if (!xlsxMode) return null;
 
   return (
-    <div className="reference-tools-section mt-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 p-3 shadow-sm transition-all duration-300" style={{ borderRadius: '4px' }}>
+    <div className="reference-tools-section mt-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 p-3 shadow-sm transition-all duration-300 panel-slide-in" style={{ borderRadius: '4px' }}>
       {/* Header - Compact */}
       <div className="flex items-center justify-between mb-2">
         <div>

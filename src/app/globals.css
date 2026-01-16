@@ -35,6 +35,48 @@
     --toast-border: #4b5563;
   }
 
+  /* Toast notification styling */
+  [data-sonner-toaster] {
+    --normal-bg: var(--toast-bg) !important;
+    --normal-text: var(--toast-color) !important;
+    --normal-border: var(--toast-border) !important;
+  }
+
+  /* Toast close button styling - dark mode compatible */
+  [data-sonner-toast] [data-close-button] {
+    background: transparent !important;
+    border: 1px solid var(--toast-border) !important;
+    color: var(--toast-color) !important;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+    border-radius: 3px !important;
+  }
+
+  [data-sonner-toast] [data-close-button]:hover {
+    opacity: 1;
+    background: rgba(128, 128, 128, 0.1) !important;
+  }
+
+  .dark [data-sonner-toast] [data-close-button] {
+    border-color: #6b7280 !important;
+    color: #e5e7eb !important;
+  }
+
+  .dark [data-sonner-toast] [data-close-button]:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  /* Toast stacking animation */
+  [data-sonner-toast] {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+                opacity 0.3s ease !important;
+  }
+
+  /* Toast icon styling for dark mode */
+  .dark [data-sonner-toast] [data-icon] svg {
+    color: inherit !important;
+  }
+
   /* System font stack for optimal performance and native feel */
   html {
     font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -381,6 +423,160 @@
     transform: translateY(0);
   }
 }
+
+/* Modal entrance animations */
+@keyframes modalBackdropIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalContentIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Modal animation utility classes */
+.modal-backdrop-animate {
+  animation: modalBackdropIn 0.25s ease-out forwards;
+}
+
+.modal-content-animate {
+  animation: modalContentIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  animation-delay: 0.1s;
+  opacity: 0;
+}
+
+/* Panel slide-in animation */
+@keyframes panelSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.panel-slide-in {
+  animation: panelSlideIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Button spring hover effect - mimics spring physics */
+.btn-spring {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-spring:hover:not(:disabled) {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.15);
+}
+
+.btn-spring:active:not(:disabled) {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.1s;
+}
+
+/* Magnetic button effect for wow-mode - enhanced hover with glow */
+.btn-magnetic {
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1),
+              box-shadow 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.btn-magnetic::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.4), rgba(236, 72, 153, 0.4));
+  border-radius: 5px;
+  opacity: 0;
+  filter: blur(8px);
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.btn-magnetic:hover:not(:disabled)::before {
+  opacity: 1;
+}
+
+.btn-magnetic:hover:not(:disabled) {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 15px 30px -5px rgba(168, 85, 247, 0.25),
+              0 8px 15px -5px rgba(236, 72, 153, 0.2);
+}
+
+.btn-magnetic:active:not(:disabled) {
+  transform: translateY(0) scale(0.97);
+  transition-duration: 0.15s;
+}
+
+/* Input focus glow effect */
+.input-glow {
+  position: relative;
+  transition: box-shadow 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.input-glow:focus,
+.input-glow:focus-within {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+.dark .input-glow:focus,
+.dark .input-glow:focus-within {
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3);
+}
+
+/* Enhanced input focus for textarea */
+textarea.input-glow:focus {
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3),
+              0 4px 20px -5px rgba(59, 130, 246, 0.2);
+}
+
+.dark textarea.input-glow:focus {
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3),
+              0 4px 20px -5px rgba(96, 165, 250, 0.2);
+}
+
+/* Staggered fade-in animation for list items */
+@keyframes staggerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stagger-item {
+  opacity: 0;
+  animation: staggerFadeIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.stagger-item:nth-child(1) { animation-delay: 0.05s; }
+.stagger-item:nth-child(2) { animation-delay: 0.1s; }
+.stagger-item:nth-child(3) { animation-delay: 0.15s; }
+.stagger-item:nth-child(4) { animation-delay: 0.2s; }
+.stagger-item:nth-child(5) { animation-delay: 0.25s; }
+.stagger-item:nth-child(6) { animation-delay: 0.3s; }
+.stagger-item:nth-child(7) { animation-delay: 0.35s; }
+.stagger-item:nth-child(8) { animation-delay: 0.4s; }
+.stagger-item:nth-child(9) { animation-delay: 0.45s; }
+.stagger-item:nth-child(10) { animation-delay: 0.5s; }
 
 /* Gradient shift animation for dynamic backgrounds */
 @keyframes gradientShift {

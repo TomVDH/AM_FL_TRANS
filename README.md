@@ -1,51 +1,48 @@
 # AM Translations Helper
 
-A comprehensive React TypeScript application for assisting with translation workflows, supporting Excel file uploads, manual text input, and advanced translation management features.
+A React TypeScript application for translation workflows. Supports Excel file uploads, JSON/CSV data files, and manual text input.
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
-# Automated setup (recommended)
-./scripts/setup.sh
-
-# Or manual setup
 npm install
-npm run build
 npm run dev
 ```
 
-## 📚 Documentation
-
-- **[Project Overview](docs/README.md)** - Complete project guide and current status
-- **[Architecture](docs/ARCHITECTURE.md)** - Technical architecture and design patterns
-- **[Changelog](docs/CHANGELOG.md)** - Version history and changes
-- **[Historical Docs](archived-markdowns/)** - Previous project documentation
-
-## 🔧 Development
+## Development
 
 ```bash
 npm run dev          # Start development server
 npm run build        # Build for production
 npm run start        # Start production server
 npm run lint         # Run ESLint
-npm run type-check   # TypeScript type checking
-npm run excel-to-json # Convert Excel files to JSON
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-AM Translations Helper/
-├── src/                          # Main application source
-├── docs/                         # Project documentation
-├── scripts/                      # Setup and utility scripts
-├── archived-markdowns/           # Historical documentation
-├── excels/                       # Excel files for processing
-└── data/json/                    # Processed JSON output
+src/
+├── app/              # Next.js app router
+├── components/       # React components
+├── hooks/            # Custom React hooks
+└── utils/            # Utility functions
+
+data/
+├── json/             # JSON data files
+└── csv/              # CSV data files
+
+excels/               # Excel files for processing
+docs/                 # Project documentation
 ```
 
----
+## Features
 
-**Built with ❤️ using Next.js, TypeScript, and Tailwind CSS**
+- Excel file processing with column configuration
+- JSON/CSV data file support
+- Live edit mode with auto-sync
+- Dark mode support
+- Keyboard shortcuts
+- Progress tracking with session persistence
+- Celebration effects (toggleable)
 
-*For detailed information, see [docs/README.md](docs/README.md)*
+Built with Next.js, TypeScript, and Tailwind CSS

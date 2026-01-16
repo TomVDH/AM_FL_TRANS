@@ -1,6 +1,9 @@
 import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react';
 import * as XLSX from 'xlsx';
 import { toast } from 'sonner';
+import { useSessionPersistence, SessionData } from './useSessionPersistence';
+import { BLANK_PLACEHOLDER, DUTCH_COLUMN_INDEX, EXCEL_COLUMN_A_CODE } from '@/constants';
+import { validateExcelFile } from '@/utils/fileValidation';
 
 // Filter options for entry navigation
 export type FilterStatus = 'all' | 'completed' | 'blank' | 'modified';
@@ -177,8 +180,8 @@ export const useTranslationState = (): TranslationState => {
   // ========== Change Detection ==========
   // Compute whether the current entry has been modified from its original value
   const getCurrentOriginalValue = useCallback(() => {
-    const original = originalTranslations[currentIndex] || '[BLANK, REMOVE LATER]';
-    return original === '[BLANK, REMOVE LATER]' ? '' : original;
+    const original = originalTranslations[currentIndex] || BLANK_PLACEHOLDER;
+    return original === BLANK_PLACEHOLDER ? '' : original;
   }, [originalTranslations, currentIndex]);
 
   // Check if current translation differs from the original
@@ -195,12 +198,12 @@ export const useTranslationState = (): TranslationState => {
   // Compute filter stats for the UI badges
   const filterStats = useMemo(() => {
     const all = translations.length;
-    const blank = translations.filter(t => t === '' || t === '[BLANK, REMOVE LATER]').length;
+    const blank = translations.filter(t => t === '' || t === BLANK_PLACEHOLDER).length;
     const completed = all - blank;
     const modified = translations.filter((t, idx) => {
-      const original = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
-      const isBlank = t === '' || t === '[BLANK, REMOVE LATER]';
-      const wasBlank = original === '' || original === '[BLANK, REMOVE LATER]';
+      const original = originalTranslations[idx] || BLANK_PLACEHOLDER;
+      const isBlank = t === '' || t === BLANK_PLACEHOLDER;
+      const wasBlank = original === '' || original === BLANK_PLACEHOLDER;
       if (isBlank && wasBlank) return false;
       return t !== original;
     }).length;
@@ -215,13 +218,13 @@ export const useTranslationState = (): TranslationState => {
 
     return sourceTexts.map((source, idx) => {
       const translation = translations[idx];
-      const original = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
+      const original = originalTranslations[idx] || BLANK_PLACEHOLDER;
       const utterer = utterers[idx] || '';
 
       // Status filter
       if (filterOptions.status !== 'all') {
-        const isBlank = translation === '' || translation === '[BLANK, REMOVE LATER]';
-        const wasBlank = original === '' || original === '[BLANK, REMOVE LATER]';
+        const isBlank = translation === '' || translation === BLANK_PLACEHOLDER;
+        const wasBlank = original === '' || original === BLANK_PLACEHOLDER;
         const isModified = translation !== original && !(isBlank && wasBlank);
 
         if (filterOptions.status === 'blank' && !isBlank) return -1;
@@ -261,12 +264,12 @@ export const useTranslationState = (): TranslationState => {
       // Current index not in filtered list, jump to first filtered entry
       const nextIdx = filteredIndices[0];
       setCurrentIndex(nextIdx);
-      setCurrentTranslation(translations[nextIdx] === '[BLANK, REMOVE LATER]' ? '' : translations[nextIdx] || '');
+      setCurrentTranslation(translations[nextIdx] === BLANK_PLACEHOLDER ? '' : translations[nextIdx] || '');
     } else if (currentPosInFiltered < filteredIndices.length - 1) {
       // Move to next filtered entry
       const nextIdx = filteredIndices[currentPosInFiltered + 1];
       setCurrentIndex(nextIdx);
-      setCurrentTranslation(translations[nextIdx] === '[BLANK, REMOVE LATER]' ? '' : translations[nextIdx] || '');
+      setCurrentTranslation(translations[nextIdx] === BLANK_PLACEHOLDER ? '' : translations[nextIdx] || '');
     }
     // If at last filtered entry, do nothing
   }, [filteredIndices, currentIndex, translations]);
@@ -281,12 +284,12 @@ export const useTranslationState = (): TranslationState => {
       // Current index not in filtered list, jump to last filtered entry
       const prevIdx = filteredIndices[filteredIndices.length - 1];
       setCurrentIndex(prevIdx);
-      setCurrentTranslation(translations[prevIdx] === '[BLANK, REMOVE LATER]' ? '' : translations[prevIdx] || '');
+      setCurrentTranslation(translations[prevIdx] === BLANK_PLACEHOLDER ? '' : translations[prevIdx] || '');
     } else if (currentPosInFiltered > 0) {
       // Move to previous filtered entry
       const prevIdx = filteredIndices[currentPosInFiltered - 1];
       setCurrentIndex(prevIdx);
-      setCurrentTranslation(translations[prevIdx] === '[BLANK, REMOVE LATER]' ? '' : translations[prevIdx] || '');
+      setCurrentTranslation(translations[prevIdx] === BLANK_PLACEHOLDER ? '' : translations[prevIdx] || '');
     }
     // If at first filtered entry, do nothing
   }, [filteredIndices, currentIndex, translations]);
@@ -299,7 +302,34 @@ export const useTranslationState = (): TranslationState => {
   // ========== Component References ==========
   const fileInputRef = useRef<HTMLInputElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
-  
+
+  // ========== Session Persistence ==========
+  const handleSessionRestore = useCallback((session: SessionData) => {
+    setCurrentIndex(session.currentIndex);
+    setTranslations(session.translations);
+    setSourceTexts(session.sourceTexts);
+    setUtterers(session.utterers);
+    setLoadedFileName(session.loadedFileName);
+    setLoadedFileType(session.loadedFileType);
+    setSelectedSheet(session.selectedSheet);
+    setIsStarted(session.isStarted);
+    // Set current translation from restored session
+    const currentTrans = session.translations[session.currentIndex];
+    setCurrentTranslation(currentTrans === BLANK_PLACEHOLDER ? '' : currentTrans || '');
+  }, []);
+
+  const { clearSession } = useSessionPersistence({
+    currentIndex,
+    translations,
+    sourceTexts,
+    utterers,
+    loadedFileName,
+    loadedFileType,
+    selectedSheet,
+    isStarted,
+    onRestore: handleSessionRestore,
+  });
+
   // ========== Translation Functions ==========
   
   /**
@@ -314,7 +344,8 @@ export const useTranslationState = (): TranslationState => {
    */
   const handleBackToSetup = useCallback(() => {
     setIsStarted(false);
-  }, []);
+    clearSession(); // Clear saved session when going back to setup
+  }, [clearSession]);
   
   /**
    * Handle submit button click
@@ -326,7 +357,7 @@ export const useTranslationState = (): TranslationState => {
 
     // Only update the translations array if the entry has actually changed
     if (hasChanged) {
-      newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
+      newTranslations[currentIndex] = currentTranslation.trim() === '' ? BLANK_PLACEHOLDER : currentTranslation;
       setTranslations(newTranslations);
 
       // Show success feedback
@@ -341,7 +372,7 @@ export const useTranslationState = (): TranslationState => {
     if (currentIndex < sourceTexts.length - 1) {
       setCurrentIndex(currentIndex + 1);
       const nextTranslation = hasChanged ? newTranslations[currentIndex + 1] : translations[currentIndex + 1];
-      setCurrentTranslation(nextTranslation === '[BLANK, REMOVE LATER]' ? '' : nextTranslation || '');
+      setCurrentTranslation(nextTranslation === BLANK_PLACEHOLDER ? '' : nextTranslation || '');
     }
   }, [currentIndex, currentTranslation, sourceTexts.length, translations, hasCurrentEntryChanged]);
   
@@ -356,13 +387,13 @@ export const useTranslationState = (): TranslationState => {
 
       // Only update the translations array if the entry has actually changed
       if (hasChanged) {
-        newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
+        newTranslations[currentIndex] = currentTranslation.trim() === '' ? BLANK_PLACEHOLDER : currentTranslation;
         setTranslations(newTranslations);
       }
 
       setCurrentIndex(currentIndex - 1);
       const prevTranslation = hasChanged ? newTranslations[currentIndex - 1] : translations[currentIndex - 1];
-      setCurrentTranslation(prevTranslation === '[BLANK, REMOVE LATER]' ? '' : prevTranslation || '');
+      setCurrentTranslation(prevTranslation === BLANK_PLACEHOLDER ? '' : prevTranslation || '');
     }
   }, [currentIndex, currentTranslation, translations, hasCurrentEntryChanged]);
   
@@ -374,7 +405,7 @@ export const useTranslationState = (): TranslationState => {
     const lines = text.split('\n').filter(line => line.trim());
     setSourceTexts(lines);
     setUtterers(new Array(lines.length).fill(''));
-    setTranslations(new Array(lines.length).fill('[BLANK, REMOVE LATER]'));
+    setTranslations(new Array(lines.length).fill(BLANK_PLACEHOLDER));
     setCurrentIndex(0);
     setCurrentTranslation('');
   }, []);
@@ -386,19 +417,10 @@ export const useTranslationState = (): TranslationState => {
     const file = e.target.files?.[0];
     if (!file) return;
 
-    // Validate file type
-    if (file.type !== 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' &&
-        file.type !== 'application/vnd.ms-excel' &&
-        !file.name.endsWith('.xlsx') &&
-        !file.name.endsWith('.xls')) {
-      toast.error('Invalid file type. Please upload an Excel file (.xlsx or .xls)');
-      return;
-    }
-
-    // Validate file size (max 50MB)
-    const maxSize = 50 * 1024 * 1024; // 50MB
-    if (file.size > maxSize) {
-      toast.error('File too large. Maximum file size is 50MB');
+    // Validate file using shared utility
+    const validation = validateExcelFile(file);
+    if (!validation.valid) {
+      toast.error(validation.error);
       return;
     }
 
@@ -476,7 +498,7 @@ export const useTranslationState = (): TranslationState => {
     }
 
     const modifiedCount = translations.filter((trans, idx) => {
-      const original = originalTranslations[idx] || '[BLANK, REMOVE LATER]';
+      const original = originalTranslations[idx] || BLANK_PLACEHOLDER;
       return trans !== original;
     }).length;
 
@@ -508,13 +530,10 @@ export const useTranslationState = (): TranslationState => {
       const utterers: string[] = [];
       const existingTranslations: string[] = [];
 
-      // Dutch translations column is hardcoded to J (index 9)
-      const dutchColumnIndex = 9; // Column J = index 9
-
       for (let row = startRow - 1; row <= range.e.r; row++) {
-        const sourceCell = XLSX.utils.encode_cell({ r: row, c: sourceColumn.charCodeAt(0) - 65 });
-        const uttererCell = XLSX.utils.encode_cell({ r: row, c: uttererColumn.charCodeAt(0) - 65 });
-        const dutchCell = XLSX.utils.encode_cell({ r: row, c: dutchColumnIndex });
+        const sourceCell = XLSX.utils.encode_cell({ r: row, c: sourceColumn.charCodeAt(0) - EXCEL_COLUMN_A_CODE });
+        const uttererCell = XLSX.utils.encode_cell({ r: row, c: uttererColumn.charCodeAt(0) - EXCEL_COLUMN_A_CODE });
+        const dutchCell = XLSX.utils.encode_cell({ r: row, c: DUTCH_COLUMN_INDEX });
 
         const sourceValue = worksheet[sourceCell]?.v;
         const uttererValue = worksheet[uttererCell]?.v;
@@ -525,7 +544,7 @@ export const useTranslationState = (): TranslationState => {
           utterers.push(uttererValue ? uttererValue.toString().trim() : '');
           // Load existing Dutch translation or mark as blank
           const dutchTranslation = dutchValue ? dutchValue.toString().trim() : '';
-          existingTranslations.push(dutchTranslation || '[BLANK, REMOVE LATER]');
+          existingTranslations.push(dutchTranslation || BLANK_PLACEHOLDER);
         }
       }
 
@@ -536,9 +555,9 @@ export const useTranslationState = (): TranslationState => {
       setCurrentIndex(0);
       // Set current translation to the first entry's existing translation
       const firstTranslation = existingTranslations[0];
-      setCurrentTranslation(firstTranslation === '[BLANK, REMOVE LATER]' ? '' : firstTranslation || '');
+      setCurrentTranslation(firstTranslation === BLANK_PLACEHOLDER ? '' : firstTranslation || '');
 
-      const existingCount = existingTranslations.filter(t => t !== '[BLANK, REMOVE LATER]').length;
+      const existingCount = existingTranslations.filter(t => t !== BLANK_PLACEHOLDER).length;
       toast.success(`Loaded ${sourceTexts.length} entries from ${selectedSheet} (${existingCount} with existing translations)`);
     } catch (error) {
       console.error('Error processing Excel data:', error);
@@ -782,7 +801,7 @@ export const useTranslationState = (): TranslationState => {
     const index = rowNumber - startRow;
     if (index >= 0 && index < sourceTexts.length) {
       setCurrentIndex(index);
-      setCurrentTranslation(translations[index] === '[BLANK, REMOVE LATER]' ? '' : translations[index] || '');
+      setCurrentTranslation(translations[index] === BLANK_PLACEHOLDER ? '' : translations[index] || '');
     }
   }, [startRow, sourceTexts.length, translations]);
 
@@ -791,7 +810,7 @@ export const useTranslationState = (): TranslationState => {
    */
   const resetOutputDisplay = useCallback(() => {
     // Clear all translations and reset to blank placeholders
-    setTranslations(new Array(sourceTexts.length).fill('[BLANK, REMOVE LATER]'));
+    setTranslations(new Array(sourceTexts.length).fill(BLANK_PLACEHOLDER));
     setCurrentTranslation('');
     // Force a complete re-render of the output component
     setOutputKey(prev => prev + 1);
@@ -862,7 +881,7 @@ export const useTranslationState = (): TranslationState => {
       if (response.ok && data.success) {
         // Update originalTranslations to reflect the saved state
         const newOriginals = [...originalTranslations];
-        newOriginals[currentIndex] = currentTranslation.trim() || '[BLANK, REMOVE LATER]';
+        newOriginals[currentIndex] = currentTranslation.trim() || BLANK_PLACEHOLDER;
         setOriginalTranslations(newOriginals);
 
         setSyncStatus('synced');

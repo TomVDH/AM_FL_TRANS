@@ -17,10 +17,13 @@
     "clean": "rm -rf .next node_modules/.cache",
     "clean-build": "npm run clean && npm run build",
     "fresh-start": "rm -rf .next node_modules package-lock.json && npm install && npm run dev",
-    "build-and-launch": "npm run clean && npm run build && npm run start"
+    "build-and-launch": "npm run clean && npm run build && npm run start",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.71.2",
+    "canvas-confetti": "^1.9.4",
     "exceljs": "^4.4.0",
     "gsap": "^3.13.0",
     "next": "^15.0.3",
@@ -30,6 +33,7 @@
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^22.17.0",
     "@types/react": "18.3.23",
     "@types/react-dom": "^18.3.1",
@@ -38,7 +42,20 @@
     "eslint-config-next": "^15.0.3",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
-    "typescript": "5.8.3"
+    "typescript": "5.8.3",
+    "storybook": "^10.1.11",
+    "@storybook/nextjs-vite": "^10.1.11",
+    "@chromatic-com/storybook": "^5.0.0",
+    "@storybook/addon-vitest": "^10.1.11",
+    "@storybook/addon-a11y": "^10.1.11",
+    "@storybook/addon-docs": "^10.1.11",
+    "@storybook/addon-onboarding": "^10.1.11",
+    "vite": "^7.3.1",
+    "eslint-plugin-storybook": "^10.1.11",
+    "vitest": "^4.0.17",
+    "playwright": "^1.57.0",
+    "@vitest/browser-playwright": "^4.0.17",
+    "@vitest/coverage-v8": "^4.0.17"
   },
   "engines": {
     "node": ">=18.0.0"
