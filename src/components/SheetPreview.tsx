@@ -78,36 +78,11 @@ const SheetPreview: React.FC<SheetPreviewProps> = ({
         const sourceHeader = worksheet[sourceHeaderCell]?.v?.toString() || 'English';
         const targetHeader = worksheet[targetHeaderCell]?.v?.toString() || languageCode;
 
-        // Calculate sample row indices (beginning, middle, end)
+        // Get first 10 data rows
         const sampleIndices: number[] = [];
-
-        // Beginning: first 3 data rows
-        for (let i = 0; i < 3 && startRow + i - 1 <= lastRow; i++) {
+        for (let i = 0; i < 10 && startRow + i - 1 <= lastRow; i++) {
           sampleIndices.push(startRow + i);
         }
-
-        // Middle: 3 rows from ~50%
-        if (totalDataRows > 10) {
-          const middleStart = Math.floor(startRow + totalDataRows * 0.5);
-          for (let i = 0; i < 3 && middleStart + i - 1 <= lastRow; i++) {
-            if (!sampleIndices.includes(middleStart + i)) {
-              sampleIndices.push(middleStart + i);
-            }
-          }
-        }
-
-        // End: last 3 rows
-        if (totalDataRows > 6) {
-          for (let i = 2; i >= 0; i--) {
-            const rowNum = lastRow - i + 1;
-            if (rowNum >= startRow && !sampleIndices.includes(rowNum)) {
-              sampleIndices.push(rowNum);
-            }
-          }
-        }
-
-        // Sort indices
-        sampleIndices.sort((a, b) => a - b);
 
         // Extract row data
         const rows: PreviewRow[] = [];
