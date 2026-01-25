@@ -358,7 +358,93 @@ export const useTranslationState = (): TranslationState => {
     columnLetterToIndex(translationColumn),
     [translationColumn, columnLetterToIndex]
   );
-  
+
+  // Language detection keywords mapping
+  const LANGUAGE_KEYWORDS: Record<string, { code: string; name: string }> = {
+    'dutch': { code: 'NL', name: 'Dutch' },
+    'nl': { code: 'NL', name: 'Dutch' },
+    'nederlands': { code: 'NL', name: 'Dutch' },
+    'portuguese': { code: 'PT', name: 'Portuguese' },
+    'pt': { code: 'PT', name: 'Portuguese' },
+    'português': { code: 'PT', name: 'Portuguese' },
+    'spanish': { code: 'ES', name: 'Spanish' },
+    'es': { code: 'ES', name: 'Spanish' },
+    'español': { code: 'ES', name: 'Spanish' },
+    'french': { code: 'FR', name: 'French' },
+    'fr': { code: 'FR', name: 'French' },
+    'français': { code: 'FR', name: 'French' },
+    'german': { code: 'DE', name: 'German' },
+    'de': { code: 'DE', name: 'German' },
+    'deutsch': { code: 'DE', name: 'German' },
+    'italian': { code: 'IT', name: 'Italian' },
+    'it': { code: 'IT', name: 'Italian' },
+    'italiano': { code: 'IT', name: 'Italian' },
+    'russian': { code: 'RU', name: 'Russian' },
+    'ru': { code: 'RU', name: 'Russian' },
+    'japanese': { code: 'JA', name: 'Japanese' },
+    'ja': { code: 'JA', name: 'Japanese' },
+    'korean': { code: 'KO', name: 'Korean' },
+    'ko': { code: 'KO', name: 'Korean' },
+    'chinese': { code: 'ZH', name: 'Chinese' },
+    'zh': { code: 'ZH', name: 'Chinese' },
+  };
+
+  /**
+   * Detect available language columns across all sheets in workbook
+   */
+  const detectLanguagesInWorkbook = useCallback((workbook: XLSX.WorkBook): DetectedLanguage[] => {
+    const languageMap = new Map<string, DetectedLanguage>();
+    const totalSheets = workbook.SheetNames.length;
+
+    for (const sheetName of workbook.SheetNames) {
+      const worksheet = workbook.Sheets[sheetName];
+      if (!worksheet || !worksheet['!ref']) continue;
+
+      const range = XLSX.utils.decode_range(worksheet['!ref']);
+
+      // Scan header row (row 0)
+      for (let col = 0; col <= range.e.c; col++) {
+        const cellRef = XLSX.utils.encode_cell({ r: 0, c: col });
+        const cell = worksheet[cellRef];
+        if (!cell?.v) continue;
+
+        const headerText = cell.v.toString().trim();
+        const headerLower = headerText.toLowerCase();
+
+        // Check against language keywords
+        for (const [keyword, langInfo] of Object.entries(LANGUAGE_KEYWORDS)) {
+          if (headerLower.includes(keyword)) {
+            const columnLetter = XLSX.utils.encode_col(col);
+            const key = `${langInfo.code}-${columnLetter}`;
+
+            if (languageMap.has(key)) {
+              // Add sheet to existing language entry
+              const existing = languageMap.get(key)!;
+              if (!existing.sheets.includes(sheetName)) {
+                existing.sheets.push(sheetName);
+              }
+            } else {
+              // Create new language entry
+              languageMap.set(key, {
+                code: langInfo.code,
+                name: langInfo.name,
+                column: columnLetter,
+                headerText: headerText,
+                sheets: [sheetName],
+                totalSheets: totalSheets,
+              });
+            }
+            break; // Only match first keyword per column
+          }
+        }
+      }
+    }
+
+    // Convert map to array and sort by sheet coverage (most sheets first)
+    return Array.from(languageMap.values())
+      .sort((a, b) => b.sheets.length - a.sheets.length);
+  }, []);
+
   // ========== Component References ==========
   const fileInputRef = useRef<HTMLInputElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
