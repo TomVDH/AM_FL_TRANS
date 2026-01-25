@@ -14,6 +14,9 @@ import { useFooterGradientAnimation } from '../hooks/useFooterGradientAnimation'
 import { useInterfaceAnimations } from '../hooks/useInterfaceAnimations';
 import { useTranslationState } from '../hooks/useTranslationState';
 import SetupWizard from './SetupWizard';
+import type { DetectedLanguage } from './LanguageSelector';
+import CompletionSummary from './CompletionSummary';
+import TranslationReview from './TranslationReview';
 import CodexPanel from './CodexPanel';
 import TextHighlighter from './TextHighlighter';
 import VideoButton from './VideoButton';
@@ -25,6 +28,8 @@ import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
 import { useWowMode } from '../hooks/useWowMode';
 import { celebrateMilestone } from '../utils/celebrations';
 
+// Stable empty array reference to prevent re-renders from xlsxData || [] pattern
+const EMPTY_XLSX_DATA: any[] = [];
 
 const TranslationHelper: React.FC = () => {
   const {
@@ -46,6 +51,15 @@ const TranslationHelper: React.FC = () => {
     sourceColumn,
     uttererColumn,
     startRow,
+    translationColumn,
+    translationColumnIndex,
+    targetLanguageLabel,
+    detectedLanguages,
+    selectedLanguage,
+    setDetectedLanguages,
+    setSelectedLanguage,
+    setTranslationColumn,
+    setTargetLanguageLabel,
     fileInputRef,
     textareaRef,
     setSourceTexts,
@@ -89,7 +103,6 @@ const TranslationHelper: React.FC = () => {
     getCellLocation,
     generateGradientColors,
     extractSpeakerName,
-    categoryHasMatches,
     trimCurrentTranslation,
     resetOutputDisplay,
     resetFromFile,
@@ -109,6 +122,16 @@ const TranslationHelper: React.FC = () => {
     setLiveEditMode,
     toggleLiveEditMode,
     syncCurrentTranslation,
+    // COMPLETION FLOW
+    showCompletionSummary,
+    showReviewMode,
+    episodeNumber,
+    finishSheet,
+    enterReviewMode,
+    exitReviewMode,
+    advanceToNextSheet,
+    updateTranslationAtIndex,
+    exportToCsv,
   } = useTranslationState();
 
   const copyJsonField = (text: string, fieldName: string) => {
@@ -229,11 +252,20 @@ const TranslationHelper: React.FC = () => {
     if (liveEditMode) {
       await syncCurrentTranslation();
     }
+
+    // Check if this is the last entry BEFORE calling handleSubmit
+    const isLastEntry = currentIndex === sourceTexts.length - 1;
+
     handleSubmit();
 
     // Trigger celebration on milestones when Wow mode is active
     const completedCount = translations.filter(t => t && t !== '' && t !== '[BLANK, REMOVE LATER]').length;
     celebrateMilestone(completedCount, isWowMode);
+
+    // Auto-trigger completion flow when submitting the last entry
+    if (isLastEntry) {
+      finishSheet();
+    }
   };
 
   const handlePreviousWithSync = async () => {
@@ -351,7 +383,7 @@ const TranslationHelper: React.FC = () => {
   const [showAllEntries, setShowAllEntries] = useState(false);
   const [activeTab, setActiveTab] = useState<'input' | 'output'>('input');
   const [showKeyboardShortcuts, setShowKeyboardShortcuts] = useState(false);
-  const [showInlineSource, setShowInlineSource] = useState(false);
+  const [showInlineSource, setShowInlineSource] = useState(true); // true = show EN source, false = show NL translation
   const [showResetModal, setShowResetModal] = useState(false);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
@@ -475,6 +507,16 @@ const TranslationHelper: React.FC = () => {
     }
   }, [currentIndex, isStarted, animateCardTransition]);
 
+  // Helper function for keyboard submit that includes completion flow
+  const handleKeyboardSubmit = useCallback(() => {
+    const isLastEntry = currentIndex === sourceTexts.length - 1;
+    handleSubmit();
+    // Trigger completion flow when submitting the last entry
+    if (isLastEntry) {
+      finishSheet();
+    }
+  }, [currentIndex, sourceTexts.length, handleSubmit, finishSheet]);
+
   // Keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -483,7 +525,7 @@ const TranslationHelper: React.FC = () => {
         // Allow Enter to submit even from textarea
         if (e.key === 'Enter' && e.ctrlKey) {
           e.preventDefault();
-          handleSubmit();
+          handleKeyboardSubmit();
         }
         return;
       }
@@ -532,14 +574,20 @@ const TranslationHelper: React.FC = () => {
       // Enter for Submit
       else if (e.key === 'Enter') {
         e.preventDefault();
-        handleSubmit();
+        handleKeyboardSubmit();
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentIndex, sourceTexts.length, translations, handlePrevious, handleSubmit, setCurrentIndex, setCurrentTranslation, xlsxMode, toggleXlsxMode, trimCurrentTranslation, toggleHighlightMode, toggleGamepadMode]);
+  }, [currentIndex, sourceTexts.length, translations, handlePrevious, handleSubmit, setCurrentIndex, setCurrentTranslation, xlsxMode, toggleXlsxMode, trimCurrentTranslation, toggleHighlightMode, toggleGamepadMode, finishSheet, handleKeyboardSubmit]);
 
+  // Handle language selection
+  const handleSelectLanguage = useCallback((language: DetectedLanguage) => {
+    setSelectedLanguage(language);
+    setTranslationColumn(language.column);
+    setTargetLanguageLabel(language.code);
+  }, [setSelectedLanguage, setTranslationColumn, setTargetLanguageLabel]);
 
   if (!isStarted) {
     return (
@@ -559,6 +607,13 @@ const TranslationHelper: React.FC = () => {
         setUseReferenceColumn={setUseReferenceColumn}
         startRow={startRow}
         setStartRow={setStartRow}
+        translationColumn={translationColumn}
+        setTranslationColumn={setTranslationColumn}
+        targetLanguageLabel={targetLanguageLabel}
+        setTargetLanguageLabel={setTargetLanguageLabel}
+        detectedLanguages={detectedLanguages}
+        selectedLanguage={selectedLanguage}
+        onSelectLanguage={handleSelectLanguage}
         cellStart={cellStart}
         setCellStart={setCellStart}
         sourceTexts={sourceTexts}
@@ -691,7 +746,7 @@ const TranslationHelper: React.FC = () => {
               {/* Home Button - Returns to setup */}
               <button
                 onClick={handleBackToSetup}
-                className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg transition-all duration-300"
                 style={{ borderRadius: '3px' }}
                 aria-label="Back to Home"
                 title="Back to Home"
@@ -742,7 +797,7 @@ const TranslationHelper: React.FC = () => {
               <div className="relative">
                 <button
                   onClick={() => setAccordionStates(prev => ({ ...prev, navigation: !prev.navigation }))}
-                  className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                  className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg transition-all duration-300"
                   style={{ borderRadius: '3px' }}
                   aria-label="Navigation menu"
                   title="Filter & Jump"
@@ -889,7 +944,7 @@ const TranslationHelper: React.FC = () => {
               {/* Keyboard Shortcuts Button - Now integrated */}
               <button
                 onClick={() => setShowKeyboardShortcuts(true)}
-                className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg transition-all duration-300"
                 style={{ borderRadius: '3px' }}
                 aria-label="Keyboard shortcuts"
                 title="Keyboard Shortcuts"
@@ -903,7 +958,7 @@ const TranslationHelper: React.FC = () => {
               {/* Dark Mode Toggle - Now integrated */}
               <button
                 onClick={toggleDarkMode}
-                className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
+                className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg transition-all duration-300"
                 style={{ borderRadius: '3px' }}
                 aria-label="Toggle dark mode"
                 title="Toggle Dark Mode"
@@ -923,6 +978,28 @@ const TranslationHelper: React.FC = () => {
           </div>
         </div>
 
+        {/* Conditional rendering for completion flow */}
+        {showCompletionSummary ? (
+          <CompletionSummary
+            sheetName={selectedSheet}
+            episodeNumber={episodeNumber}
+            stats={{ total: filterStats.all, completed: filterStats.completed, blank: filterStats.blank, modified: filterStats.modified }}
+            remainingSheets={excelSheets.filter((_, i) => i > excelSheets.indexOf(selectedSheet))}
+            onReview={enterReviewMode}
+            onExport={exportToCsv}
+            onNextSheet={advanceToNextSheet}
+            onBackToSetup={handleBackToSetup}
+          />
+        ) : showReviewMode ? (
+          <TranslationReview
+            sourceTexts={sourceTexts}
+            translations={translations}
+            originalTranslations={originalTranslations}
+            onUpdateTranslation={updateTranslationAtIndex}
+            onBack={exitReviewMode}
+          />
+        ) : (
+          <>
         {/* Navigation Row - Prev button, Progress Bar, Next button */}
         <div className="flex items-center gap-3 mb-6 mt-6">
           {/* Previous Button - Arrow Only */}
@@ -1057,7 +1134,7 @@ const TranslationHelper: React.FC = () => {
             </span>
           </h2>
           <h2 className="text-sm font-black tracking-tight uppercase text-gray-600 dark:text-gray-400">
-            Translation I/O
+            Translation Input
           </h2>
         </div>
 
@@ -1101,29 +1178,19 @@ const TranslationHelper: React.FC = () => {
                           style={{ borderRadius: '2px', fontFamily: 'monospace' }}
                           title={`Excel Row ${startRow + currentIndex}`}
                         >
-                          J{startRow + currentIndex}
+                          {translationColumn}{startRow + currentIndex}
                         </span>
                         <span className="text-shadow-pixel">
                           {trimSpeakerName(utterers[currentIndex]) || 'Speaker'}
                         </span>
                       </div>
-                      {/* Inline source toggle */}
+                      {/* Language toggle - switches between EN source and NL translation */}
                       <button
                         onClick={() => setShowInlineSource(prev => !prev)}
-                        className={`flex items-center gap-1 px-2 py-1 text-[10px] font-bold uppercase tracking-wide border transition-all duration-200 rounded ${
-                          showInlineSource
-                            ? 'bg-blue-600 text-white border-blue-500 shadow-sm'
-                            : 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600'
-                        }`}
-                        title="Toggle source preview (E)"
+                        className="flex items-center gap-1.5 px-2 py-1 text-[10px] font-bold uppercase tracking-wide border border-gray-500 bg-gray-700 text-gray-200 hover:bg-gray-600 transition-all duration-200 rounded"
+                        title="Toggle between English source and Dutch translation (E)"
                       >
-                        EN
-                        <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20">
-                          {showInlineSource
-                            ? <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                            : <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                          }
-                        </svg>
+                        {showInlineSource ? 'EN' : 'NL'}
                       </button>
                     </div>
 
@@ -1135,29 +1202,29 @@ const TranslationHelper: React.FC = () => {
                         maxHeight: '200px'
                       }}
                     >
-                      <TextHighlighter
-                        text={sourceTexts[currentIndex]}
-                        jsonData={highlightingJsonData}
-                        xlsxData={xlsxData || []}
-                        highlightMode={highlightMode}
-                        eyeMode={eyeMode}
-                        currentTranslation={currentTranslation}
-                        onCharacterClick={insertCharacterName}
-                        onSuggestionClick={insertTranslatedSuggestion}
-                        onCharacterNameClick={handleCharacterNameClick}
-                        onHighlightClick={handleHighlightClick}
-                        className="dialogue-content no-suggestions"
-                      />
-
-                      {/* Inline source preview within dialogue box */}
-                      {showInlineSource && (
-                        <div className="mt-3 pt-3 border-t border-gray-200 dark:border-gray-700">
-                          <div className="text-xs text-gray-400 dark:text-gray-500 uppercase tracking-wide mb-1 font-semibold">
-                            Source
-                          </div>
-                          <div className="text-sm text-gray-500 dark:text-gray-400 italic leading-relaxed">
-                            {sourceTexts[currentIndex]}
-                          </div>
+                      {showInlineSource ? (
+                        /* English source text */
+                        <TextHighlighter
+                          text={sourceTexts[currentIndex]}
+                          jsonData={highlightingJsonData}
+                          xlsxData={xlsxData || EMPTY_XLSX_DATA}
+                          highlightMode={highlightMode}
+                          eyeMode={eyeMode}
+                          currentTranslation={currentTranslation}
+                          onCharacterClick={insertCharacterName}
+                          onSuggestionClick={insertTranslatedSuggestion}
+                          onCharacterNameClick={handleCharacterNameClick}
+                          onHighlightClick={handleHighlightClick}
+                          className="dialogue-content no-suggestions"
+                        />
+                      ) : (
+                        /* Dutch translation */
+                        <div className="dialogue-content">
+                          {translations[currentIndex] && translations[currentIndex] !== '[BLANK, REMOVE LATER]' ? (
+                            <span>{translations[currentIndex]}</span>
+                          ) : (
+                            <span className="text-gray-400 italic">No translation yet...</span>
+                          )}
                         </div>
                       )}
                     </div>
@@ -1198,213 +1265,138 @@ const TranslationHelper: React.FC = () => {
                   </div>
                 </div>
               ) : (
-                <div className="space-y-4">
-                  {/* Main Translation Display */}
-                  <div 
-                    className="text-2xl font-bold leading-relaxed px-6 py-4 text-gray-900 dark:text-gray-100 border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 rounded relative"
-                    style={{ borderRadius: '3px' }}
-                  >
-                    {/* Copy button for source text */}
+                <div className="space-y-0">
+                  {/* n-1 Preview - Clickable to navigate */}
+                  {currentIndex > 0 && sourceTexts[currentIndex - 1] && (
                     <button
-                      onClick={copySourceText}
-                      className="absolute top-2 right-2 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                      title="Copy source text"
+                      onClick={() => {
+                        setCurrentIndex(currentIndex - 1);
+                        setCurrentTranslation(translations[currentIndex - 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex - 1] || '');
+                      }}
+                      className="w-full text-left px-4 py-2 bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 border-b-0 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors cursor-pointer group"
+                      style={{ borderRadius: '3px 3px 0 0' }}
                     >
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                      </svg>
-                    </button>
-                    {/* XLSX button - only show when XLSX mode is active */}
-                    {xlsxMode && (
-                      <button
-                        onClick={handleCopySourceToXlsxSearch}
-                        className="absolute top-2 right-8 p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                        title="Search this text in Reference Tools"
-                      >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
-                        </svg>
-                      </button>
-                    )}
-                    {/* Previous Context - Show previous entry for context */}
-                    {currentIndex > 0 && sourceTexts[currentIndex - 1] && (
-                      <div className="text-left mb-2 pb-2 border-b border-gray-200 dark:border-gray-700">
-                        <div className="flex items-start gap-2">
-                          {/* Cell reference badge for previous row */}
-                          <span
-                            className="inline-flex items-center px-1 py-0.5 text-[8px] font-bold bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-600 shrink-0"
-                            style={{ borderRadius: '2px', fontFamily: 'monospace' }}
-                            title={`Excel Row ${startRow + currentIndex - 1}`}
-                          >
-                            J{startRow + currentIndex - 1}
-                          </span>
-                          <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wide shrink-0 mt-0.5">Prev</span>
-                          <span className="text-xs text-gray-400 dark:text-gray-500 italic line-clamp-2">
-                            {utterers[currentIndex - 1] && (
-                              <span className="font-medium not-italic text-gray-500 dark:text-gray-400 mr-1">
-                                [{trimSpeakerName(utterers[currentIndex - 1])}]
-                              </span>
-                            )}
-                            {sourceTexts[currentIndex - 1].length > 100
-                              ? sourceTexts[currentIndex - 1].slice(0, 100) + '...'
-                              : sourceTexts[currentIndex - 1]
-                            }
-                          </span>
-                        </div>
-                      </div>
-                    )}
-                    {/* Cell Reference, Source Toggle & Speaker Label */}
-                    <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-2">
-                        {/* Cell Reference Badge */}
                         <span
-                          className="inline-flex items-center px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-500"
+                          className="inline-flex items-center px-1 py-0.5 text-[8px] font-bold bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-300 dark:border-gray-600 shrink-0"
+                          style={{ borderRadius: '2px', fontFamily: 'monospace' }}
+                        >
+                          {translationColumn}{startRow + currentIndex - 1}
+                        </span>
+                        <span className="text-xs text-gray-400 dark:text-gray-500 truncate group-hover:text-gray-500 dark:group-hover:text-gray-400">
+                          {trimSpeakerName(utterers[currentIndex - 1]) || 'Speaker'} — {sourceTexts[currentIndex - 1]}
+                        </span>
+                        <svg className="w-3 h-3 text-gray-300 dark:text-gray-600 shrink-0 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                        </svg>
+                      </div>
+                    </button>
+                  )}
+
+                  {/* Main Source Text Display - SPOTLIGHT */}
+                  <div
+                    className="relative bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 shadow-sm"
+                    style={{
+                      borderRadius: currentIndex > 0 && sourceTexts[currentIndex - 1] ? '0' : '3px 3px 0 0',
+                    }}
+                  >
+                    {/* Minimal Header Row */}
+                    <div className="flex items-center justify-between px-4 py-2 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/50">
+                      <div className="flex items-center gap-2">
+                        <span
+                          className="inline-flex items-center px-1.5 py-0.5 text-[10px] font-bold bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-500"
                           style={{ borderRadius: '2px', fontFamily: 'monospace' }}
                           title={`Excel Row ${startRow + currentIndex}`}
                         >
-                          J{startRow + currentIndex}
+                          {translationColumn}{startRow + currentIndex}
                         </span>
-                        {/* Source toggle button */}
+                        <span className="text-sm font-bold text-gray-900 dark:text-gray-100">
+                          {trimSpeakerName(utterers[currentIndex]) || 'Speaker'}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-1">
                         <button
-                          onClick={() => setShowInlineSource(prev => !prev)}
-                          className={`flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide border transition-colors duration-200 ${
-                            showInlineSource
-                              ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 border-blue-300 dark:border-blue-700'
-                              : 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border-gray-300 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600'
-                          }`}
-                          style={{ borderRadius: '2px' }}
-                          title="Toggle source preview (E)"
+                          onClick={copySourceText}
+                          className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                          title="Copy source text"
                         >
-                          <span>EN</span>
-                          <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20">
-                            {showInlineSource
-                              ? <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
-                              : <path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd" />
-                            }
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
                           </svg>
                         </button>
-                        {/* Speaker label - Show only when speaker exists */}
-                        {utterers.length > 0 && utterers[currentIndex] && (
-                          <div className="text-left">
-                            <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Character: </span>
-                            <span className="text-xs font-medium text-gray-600 dark:text-gray-300">{trimSpeakerName(utterers[currentIndex])}</span>
-                          </div>
+                        {xlsxMode && (
+                          <button
+                            onClick={handleCopySourceToXlsxSearch}
+                            className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                            title="Search in references"
+                          >
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                          </button>
                         )}
                       </div>
                     </div>
-                    <TextHighlighter
-                      text={sourceTexts[currentIndex]}
-                      jsonData={highlightingJsonData}
-                      xlsxData={xlsxData || []}
-                      highlightMode={highlightMode}
-                      eyeMode={false}
-                      currentTranslation={currentTranslation}
-                      onCharacterClick={insertCharacterName}
-                      onSuggestionClick={insertTranslatedSuggestion}
-                      onCharacterNameClick={handleCharacterNameClick}
-                      onHighlightClick={handleHighlightClick}
-                      className="no-suggestions"
-                    />
 
-                    {/* Existing Dutch Translation (Column J) Display - Subtle gray styling with speaker info */}
-                    <div className="mt-2 pt-2 border-t border-gray-200 dark:border-gray-700">
-                      {translations[currentIndex] && translations[currentIndex] !== '[BLANK, REMOVE LATER]' ? (
-                        <div className="space-y-1">
-                          {/* Speaker Name Badge */}
-                          {utterers[currentIndex] && (
-                            <div className="flex items-center gap-1.5 mb-1">
-                              <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wide">Character:</span>
-                              <span className="text-[10px] font-medium text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30 px-1.5 py-0.5 border border-purple-200 dark:border-purple-700" style={{ borderRadius: '2px' }}>
-                                {extractSpeakerName(utterers[currentIndex])}
-                              </span>
-                            </div>
-                          )}
-                          {/* Dutch Translation */}
-                          <p className="text-sm text-gray-600 dark:text-gray-300 italic">
-                            <span className="text-[9px] font-bold text-gray-500 dark:text-gray-500 uppercase tracking-wide mr-1.5 not-italic">NL:</span>
+                    {/* Source Text - Spotlight */}
+                    <div className="px-5 py-4">
+                      <div className="text-xl font-medium leading-relaxed text-gray-900 dark:text-gray-100">
+                        <TextHighlighter
+                          text={sourceTexts[currentIndex]}
+                          jsonData={highlightingJsonData}
+                          xlsxData={xlsxData || EMPTY_XLSX_DATA}
+                          highlightMode={highlightMode}
+                          eyeMode={false}
+                          currentTranslation={currentTranslation}
+                          onCharacterClick={insertCharacterName}
+                          onSuggestionClick={insertTranslatedSuggestion}
+                          onCharacterNameClick={handleCharacterNameClick}
+                          onHighlightClick={handleHighlightClick}
+                          className="no-suggestions"
+                        />
+                      </div>
+
+                      {/* Dutch Translation Preview */}
+                      <div className="mt-3 pt-3 border-t border-gray-100 dark:border-gray-700">
+                        {translations[currentIndex] && translations[currentIndex] !== '[BLANK, REMOVE LATER]' ? (
+                          <p className="text-sm text-gray-600 dark:text-gray-400 italic">
+                            <span className="text-[9px] font-bold text-gray-500 dark:text-gray-500 uppercase tracking-wide mr-1.5 not-italic">{targetLanguageLabel}:</span>
                             {translations[currentIndex]}
                           </p>
-                        </div>
-                      ) : (
-                        <p className="text-xs text-gray-400 dark:text-gray-500 italic">
-                          Awaiting your Dutch translation...
-                        </p>
-                      )}
+                        ) : (
+                          <p className="text-xs text-gray-400 dark:text-gray-500 italic">
+                            Awaiting translation...
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </div>
 
-                  {/* Source Display - Only show when inline source toggle is active */}
-                  {showInlineSource && (
-                    <div 
-                      className="text-xl font-medium leading-relaxed px-6 py-4 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 rounded relative opacity-70"
-                      style={{ borderRadius: '3px' }}
-                    >
-                      <div className="flex justify-between items-center mb-2">
-                        <span className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Source Text</span>
-                        <div className="flex items-center gap-2">
-                          {/* Copy button for source text */}
-                          <button
-                            onClick={copySourceText}
-                            className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                            title="Copy source text"
-                          >
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                            </svg>
-                          </button>
-                          {/* XLSX button - only show when XLSX mode is active */}
-                          {xlsxMode && (
-                            <button
-                              onClick={handleCopySourceToXlsxSearch}
-                              className="p-1 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 transition-colors duration-200"
-                              title="Search this text in Reference Tools"
-                            >
-                              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m-6 4h6m-6 4h6" />
-                        </svg>
-                            </button>
-                          )}
-                        </div>
-                      </div>
-                      <TextHighlighter
-                        text={sourceTexts[currentIndex]}
-                        jsonData={highlightingJsonData}
-                        xlsxData={xlsxData || []}
-                        highlightMode={highlightMode}
-                        eyeMode={false}
-                        currentTranslation=""
-                        onCharacterClick={insertCharacterName}
-                        onCharacterNameClick={handleCharacterNameClick}
-                        onHighlightClick={handleHighlightClick}
-                        className="no-suggestions"
-                      />
-                    </div>
-                  )}
-
-                  {/* Next String Preview - Always visible when there's a next entry */}
+                  {/* n+1 Preview - Clickable to navigate */}
                   {currentIndex < sourceTexts.length - 1 && (
-                    <div className="mt-2 pt-2 border-t border-dashed border-gray-200 dark:border-gray-700">
-                      <div className="flex items-start gap-2">
-                        {/* Cell reference badge for next row */}
+                    <button
+                      onClick={() => {
+                        setCurrentIndex(currentIndex + 1);
+                        setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
+                      }}
+                      className="w-full text-left px-4 py-2 bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 border-t-0 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors cursor-pointer group"
+                      style={{ borderRadius: '0 0 3px 3px' }}
+                    >
+                      <div className="flex items-center gap-2">
                         <span
-                          className="inline-flex items-center px-1 py-0.5 text-[8px] font-bold bg-blue-50 dark:bg-blue-900/30 text-blue-500 dark:text-blue-400 border border-blue-200 dark:border-blue-700 shrink-0"
+                          className="inline-flex items-center px-1 py-0.5 text-[8px] font-bold bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-300 dark:border-gray-600 shrink-0"
                           style={{ borderRadius: '2px', fontFamily: 'monospace' }}
-                          title={`Excel Row ${startRow + currentIndex + 1}`}
                         >
-                          J{startRow + currentIndex + 1}
+                          {translationColumn}{startRow + currentIndex + 1}
                         </span>
-                        <span className="text-[9px] font-bold text-blue-500 dark:text-blue-400 uppercase tracking-wide shrink-0">Next</span>
-                        <span className="text-xs text-gray-400 dark:text-gray-500 line-clamp-1">
-                          <span className="font-semibold text-gray-500 dark:text-gray-400">
-                            {trimSpeakerName(utterers[currentIndex + 1]) || 'Speaker'}
-                          </span>
-                          <span className="mx-1 text-gray-300 dark:text-gray-600">—</span>
-                          <span className="italic">{sourceTexts[currentIndex + 1]}</span>
+                        <span className="text-xs text-gray-400 dark:text-gray-500 truncate group-hover:text-gray-500 dark:group-hover:text-gray-400">
+                          {trimSpeakerName(utterers[currentIndex + 1]) || 'Speaker'} — {sourceTexts[currentIndex + 1]}
                         </span>
+                        <svg className="w-3 h-3 text-gray-300 dark:text-gray-600 shrink-0 ml-auto opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
                       </div>
-                    </div>
+                    </button>
                   )}
 
                 </div>
@@ -1418,46 +1410,96 @@ const TranslationHelper: React.FC = () => {
             <QuickReferenceBar
               sourceText={sourceTexts[currentIndex] || ''}
               findCharacterMatches={findCharacterMatches}
+              findXlsxMatches={findXlsxMatches}
               onInsert={insertCharacterName}
               onOpenReferenceTools={() => {
                 if (!xlsxMode) toggleXlsxMode();
               }}
               isVisible={xlsxMode || highlightMode}
             />
+
+            {/* Mode Toggles - Bottom toolbar */}
+            <div className="mt-auto pt-3 flex items-center justify-between">
+              <div className="flex items-center gap-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-1 py-0.5" style={{ borderRadius: '3px' }}>
+                {/* Gamepad Mode */}
+                <button
+                  onClick={toggleGamepadMode}
+                  className={`p-1.5 transition-all duration-150 ${
+                    gamepadMode
+                      ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-700'
+                      : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
+                  }`}
+                  style={{ borderRadius: '2px' }}
+                  title="Game View (G)"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM11 7a1 1 0 100 2 1 1 0 000-2zm2 1a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1z"/>
+                  </svg>
+                </button>
+
+                {/* Highlight Mode */}
+                <button
+                  onClick={toggleHighlightMode}
+                  className={`p-1.5 transition-all duration-150 ${
+                    highlightMode
+                      ? 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30'
+                      : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
+                  }`}
+                  style={{ borderRadius: '2px' }}
+                  title="Codex Highlights (H)"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+                  </svg>
+                </button>
+
+                {/* Reference Tools */}
+                <button
+                  onClick={toggleXlsxMode}
+                  className={`p-1.5 transition-all duration-150 ${
+                    xlsxMode
+                      ? 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30'
+                      : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
+                  }`}
+                  style={{ borderRadius: '2px' }}
+                  title="Reference Tools (R)"
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
+                  </svg>
+                </button>
+              </div>
+
+              {/* Live Mode - Right side, only for Excel */}
+              {loadedFileType === 'excel' && (
+                <button
+                  onClick={() => setLiveEditMode(!liveEditMode)}
+                  disabled={!loadedFileName}
+                  className={`flex items-center gap-1.5 px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wide border transition-all duration-150 ${
+                    liveEditMode
+                      ? 'text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30 border-green-300 dark:border-green-700'
+                      : 'text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
+                  } disabled:opacity-30 disabled:cursor-not-allowed`}
+                  style={{ borderRadius: '3px' }}
+                  title="Live Excel Sync"
+                >
+                  <span className={`w-1.5 h-1.5 rounded-full ${
+                    syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' :
+                    syncStatus === 'synced' ? 'bg-green-500' :
+                    syncStatus === 'error' ? 'bg-red-500 animate-pulse' :
+                    'bg-gray-400'
+                  }`} />
+                  Live
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Right Column - Tabbed Interface - Compact */}
           <div className="h-full">
             <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-md h-full flex flex-col" style={{ borderRadius: '3px' }}>
-              {/* Tab Navigation - Tighter */}
-              <div className="flex border-b border-gray-300 dark:border-gray-600">
-                <button
-                  onClick={() => setActiveTab('input')}
-                  className={`flex-1 px-3 py-2 font-black tracking-tight uppercase text-xs transition-all duration-200 ${
-                    activeTab === 'input'
-                      ? 'border-b-2 border-gray-300 dark:border-white text-black dark:text-white bg-gray-50 dark:bg-gray-700'
-                      : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
-                  }`}
-                >
-                  Input
-                </button>
-                <button
-                  onClick={() => setActiveTab('output')}
-                  className={`flex-1 px-3 py-2 font-black tracking-tight uppercase text-xs transition-all duration-200 ${
-                    activeTab === 'output'
-                      ? 'border-b-2 border-gray-300 dark:border-white text-black dark:text-white bg-gray-50 dark:bg-gray-700'
-                      : 'text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200'
-                  }`}
-                >
-                  Output
-                </button>
-              </div>
-
-              {/* Tab Content - Tighter padding */}
+              {/* Content Area */}
               <div className="p-4 flex-1 flex flex-col">
-
-                {/* Translation I/O Tab - Input */}
-                {activeTab === 'input' && (
                   <div className="flex flex-col h-full">
                     {/* Change Detection - Top Right, Compact */}
                     <div className="flex justify-end mb-2">
@@ -1521,95 +1563,19 @@ const TranslationHelper: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* UI Control Buttons - Display Mode Controls - Redesigned with consistent button style */}
-                    {/* Mode Buttons - Compact version (Phase 2) */}
-                    <div className="mt-4 pt-3 border-t border-gray-200 dark:border-gray-600">
-                      <div className="flex items-center justify-center gap-1.5">
-                        {/* Gamepad Mode - UI View */}
-                        <button
-                          onClick={toggleGamepadMode}
-                          className={`group relative h-7 px-2.5 flex items-center gap-1 border transition-all duration-200 overflow-hidden ${
-                            gamepadMode
-                              ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
-                              : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
-                          }`}
-                          style={{ borderRadius: '3px' }}
-                          title="Gamepad UI View"
-                        >
-                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM11 7a1 1 0 100 2 1 1 0 000-2zm2 1a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1zM8 10a1 1 0 100 2 1 1 0 000-2zm-2 1a1 1 0 01-1 1H4a1 1 0 110-2h1a1 1 0 011 1zm3.293 2.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM15 13a1 1 0 100 2 1 1 0 000-2z"/>
-                          </svg>
-                          <span className="text-[10px] font-bold uppercase tracking-wide">Game View</span>
-                        </button>
-
-                        {/* Highlight Mode - Codex Highlights */}
-                        <button
-                          onClick={toggleHighlightMode}
-                          className={`group relative h-7 px-2.5 flex items-center gap-1 border transition-all duration-200 overflow-hidden ${
-                            highlightMode
-                              ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
-                              : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
-                          }`}
-                          style={{ borderRadius: '3px' }}
-                          title="Codex Highlights"
-                        >
-                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7Z"/>
-                          </svg>
-                          <span className="text-[10px] font-bold uppercase tracking-wide">Highlights</span>
-                        </button>
-
-                        {/* XLSX Mode Toggle */}
-                        <button
-                          onClick={toggleXlsxMode}
-                          className={`group relative h-7 px-2.5 flex items-center gap-1 border transition-all duration-200 overflow-hidden ${
-                            xlsxMode
-                              ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
-                              : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
-                          }`}
-                          style={{ borderRadius: '3px' }}
-                          title="Reference Data View (R)"
-                        >
-                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                          </svg>
-                          <span className="text-[10px] font-bold uppercase tracking-wide">References</span>
-                        </button>
-
-                        {/* Live Edit Mode Toggle - Only for Excel files */}
-                        {loadedFileType === 'excel' && (
-                          <button
-                            onClick={() => setLiveEditMode(!liveEditMode)}
-                            disabled={!loadedFileName}
-                            className={`group relative h-7 px-2.5 flex items-center gap-1.5 border transition-all duration-200 overflow-hidden ${
-                              liveEditMode
-                                ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-black border-gray-800 dark:border-gray-200'
-                                : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500'
-                            } disabled:opacity-30 disabled:cursor-not-allowed`}
-                            style={{ borderRadius: '3px' }}
-                            title="Live Excel Sync Mode"
-                          >
-                            {/* Sync Status Indicator */}
-                            <span className={`w-1.5 h-1.5 rounded-full ${
-                              syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' :
-                              syncStatus === 'synced' ? 'bg-green-500' :
-                              syncStatus === 'error' ? 'bg-red-500 animate-pulse' :
-                              'bg-gray-400'
-                            }`} />
-                            <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2zm0 2v12h16V6H4zm2 2h3v8H6V8zm5 0h7v2h-7V8zm0 4h7v2h-7v-2z"/>
-                            </svg>
-                            <span className="text-[10px] font-bold uppercase tracking-wide">Live</span>
-                          </button>
-                        )}
-                      </div>
-                    </div>
                   </div>
-                )}
+              </div>
+            </div>
+          </div>
+        </div>
 
-                {/* Translation Output Tab */}
-                {activeTab === 'output' && (
-                  <div className="flex flex-col h-full">
+        {/* Output Section - Full Width Below Grid */}
+        <div className="mt-4">
+          <h2 className="text-sm font-black tracking-tight uppercase text-gray-600 dark:text-gray-400 mb-2">
+            Translation Output
+          </h2>
+          <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-md p-4" style={{ borderRadius: '3px' }}>
+            <div className="flex flex-col">
           {/* Mode Toggle & Header */}
           <div className="flex justify-between items-center mb-2">
             <div className="flex items-center gap-2">
@@ -1988,9 +1954,6 @@ const TranslationHelper: React.FC = () => {
               </div>
             </div>
           </div>
-                  </div>
-                )}
-              </div>
             </div>
           </div>
         </div>
@@ -2016,6 +1979,7 @@ const TranslationHelper: React.FC = () => {
           getFilteredEntries={getFilteredEntries}
           sourceTexts={sourceTexts}
           currentIndex={currentIndex}
+          currentWorkingSheet={selectedSheet}
           highlightingJsonData={highlightingJsonData}
           findXlsxMatchesWrapper={findXlsxMatchesWrapper}
           findCharacterMatches={findCharacterMatches}
@@ -2028,12 +1992,11 @@ const TranslationHelper: React.FC = () => {
         />
 
         {/* Codex Reference Panel - HIDDEN FOR NOW */}
-        {/* 
+        {/*
         <CodexPanel
           codexData={codexData}
           accordionStates={accordionStates}
           isLoadingCodex={isLoadingCodex}
-          categoryHasMatches={categoryHasMatches}
           toggleAccordion={toggleAccordion}
           renderCodexItems={renderCodexItems}
         />
@@ -2058,6 +2021,8 @@ const TranslationHelper: React.FC = () => {
             </button>
           </div>
         </div>
+          </>
+        )}
       </main>
 
       {/* Footer - Sticky at bottom */}
