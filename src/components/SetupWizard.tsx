@@ -1,11 +1,16 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useRef, useState, useEffect, useMemo } from 'react';
+import * as XLSX from 'xlsx';
 import Spinner from './ui/Spinner';
 import { toast } from 'sonner';
 import VideoButton from './VideoButton';
 import GitHubButton from './GitHubButton';
 import CodexButton from './CodexButton';
+import CodexEditor from './CodexEditor';
+import SheetSelector from './SheetSelector';
+import LanguageSelector, { DetectedLanguage } from './LanguageSelector';
+import SheetPreview from './SheetPreview';
 
 interface SetupWizardProps {
   // Input mode state
@@ -26,6 +31,17 @@ interface SetupWizardProps {
   setUseReferenceColumn: (use: boolean) => void;
   startRow: number;
   setStartRow: (row: number) => void;
+
+  // Translation column configuration (for multi-language support)
+  translationColumn: string;
+  setTranslationColumn: (column: string) => void;
+  targetLanguageLabel: string;
+  setTargetLanguageLabel: (label: string) => void;
+
+  // Language detection
+  detectedLanguages: DetectedLanguage[];
+  selectedLanguage: DetectedLanguage | null;
+  onSelectLanguage: (language: DetectedLanguage) => void;
 
   // Manual input state
   cellStart: string;
@@ -113,6 +129,13 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   setUseReferenceColumn,
   startRow,
   setStartRow,
+  translationColumn,
+  setTranslationColumn,
+  targetLanguageLabel,
+  setTargetLanguageLabel,
+  detectedLanguages,
+  selectedLanguage,
+  onSelectLanguage,
   cellStart,
   setCellStart,
   sourceTexts,
@@ -152,6 +175,36 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   const [selectedDataFile, setSelectedDataFile] = React.useState('');
   const [loadingDataFiles, setLoadingDataFiles] = React.useState(false);
 
+  // Codex editor state - expanded by default for better discoverability
+  const [showCodexEditor, setShowCodexEditor] = useState(true);
+  const [codexEntryCount, setCodexEntryCount] = useState<number>(0);
+
+  // Extract column headers from the selected sheet
+  const sheetColumns = useMemo(() => {
+    if (!workbookData || !selectedSheet) return [];
+
+    const worksheet = workbookData.Sheets[selectedSheet];
+    if (!worksheet) return [];
+
+    const range = XLSX.utils.decode_range(worksheet['!ref'] || 'A1');
+    const columns: { letter: string; header: string }[] = [];
+
+    // Read header row (row 1, index 0)
+    for (let col = 0; col <= range.e.c; col++) {
+      const cellAddress = XLSX.utils.encode_cell({ r: 0, c: col });
+      const cell = worksheet[cellAddress];
+      const colLetter = XLSX.utils.encode_col(col);
+      const headerValue = cell?.v?.toString().trim() || `Column ${colLetter}`;
+
+      columns.push({
+        letter: colLetter,
+        header: headerValue
+      });
+    }
+
+    return columns;
+  }, [workbookData, selectedSheet]);
+
   // Handle file type change - clear previous selections and data to avoid stale state
   const handleFileTypeChange = React.useCallback((newType: 'excel' | 'json' | 'csv') => {
     setFileType(newType);
@@ -186,6 +239,30 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
     };
 
     loadExistingFiles();
+  }, []);
+
+  // Load codex entry count on mount
+  React.useEffect(() => {
+    const loadCodexCount = async () => {
+      try {
+        const response = await fetch('/api/codex');
+        if (response.ok) {
+          const data = await response.json();
+          setCodexEntryCount(Array.isArray(data) ? data.length : 0);
+        }
+      } catch (error) {
+        console.error('[SetupWizard] Error loading codex count:', error);
+      }
+    };
+    loadCodexCount();
+  }, []);
+
+  // Callback to refresh codex count when entries change
+  const handleCodexUpdated = React.useCallback(() => {
+    fetch('/api/codex')
+      .then(res => res.json())
+      .then(data => setCodexEntryCount(Array.isArray(data) ? data.length : 0))
+      .catch(err => console.error('[SetupWizard] Error refreshing codex count:', err));
   }, []);
 
   // Load JSON and CSV files on component mount
@@ -424,7 +501,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
             </svg>
-            <span>Dutch translations → Column J (hardcoded)</span>
+            <span>Target: Column {translationColumn} ({targetLanguageLabel})</span>
           </div>
         </div>
 
@@ -469,171 +546,127 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             </div>
           </div>
 
-          {/* Excel Upload Section */}
-          <div className="space-y-4 animate-fade-in">
-              {/* Upload Options Panel */}
-              <div className="transition-all duration-500 ease-in-out">
-                <div className="space-y-4 mx-auto">
-                  {/* File Upload Option */}
-                  <div className="relative">
-                    <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                      Upload New File
-                    </label>
-                    <input
-                      ref={fileInputRef}
-                      type="file"
-                      accept=".xlsx,.xls"
-                      onChange={handleFileUpload}
-                      className="hidden"
-                    />
-                    <div
-                      onClick={() => fileInputRef.current?.click()}
-                      onDragOver={(e) => {
-                        e.preventDefault();
-                        e.currentTarget.classList.add('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900/20');
-                        e.currentTarget.setAttribute('aria-dropeffect', 'copy');
-                      }}
-                      onDragLeave={(e) => {
-                        e.preventDefault();
-                        e.currentTarget.classList.remove('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900/20');
-                        e.currentTarget.setAttribute('aria-dropeffect', 'none');
-                      }}
-                      onDrop={(e) => {
-                        e.preventDefault();
-                        e.currentTarget.classList.remove('border-blue-500', 'bg-blue-50', 'dark:bg-blue-900/20');
-                        e.currentTarget.setAttribute('aria-dropeffect', 'none');
-                        const files = e.dataTransfer.files;
-                        if (files.length > 0) {
-                          const file = files[0];
+          {/* File Source Cabinet - Unified Layout */}
+          <div className="animate-fade-in">
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm overflow-hidden" style={{ borderRadius: '3px' }}>
 
-                          // Validate file type
-                          if (file.type !== 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' &&
-                              file.type !== 'application/vnd.ms-excel' &&
-                              !file.name.endsWith('.xlsx') &&
-                              !file.name.endsWith('.xls')) {
-                            toast.error('Invalid file type. Please upload an Excel file (.xlsx or .xls)');
-                            return;
-                          }
+              {/* Section 1: Upload New File */}
+              <div className="p-4 border-b border-gray-200 dark:border-gray-700">
+                <div className="flex items-center gap-2 mb-3">
+                  <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                  </svg>
+                  <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Upload New</span>
+                </div>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept=".xlsx,.xls"
+                  onChange={handleFileUpload}
+                  className="hidden"
+                />
+                <div
+                  onClick={() => fileInputRef.current?.click()}
+                  onDragOver={(e) => {
+                    e.preventDefault();
+                    e.currentTarget.classList.add('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
+                  }}
+                  onDragLeave={(e) => {
+                    e.preventDefault();
+                    e.currentTarget.classList.remove('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
+                  }}
+                  onDrop={(e) => {
+                    e.preventDefault();
+                    e.currentTarget.classList.remove('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
+                    const files = e.dataTransfer.files;
+                    if (files.length > 0) {
+                      const file = files[0];
+                      if (file.type !== 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' &&
+                          file.type !== 'application/vnd.ms-excel' &&
+                          !file.name.endsWith('.xlsx') &&
+                          !file.name.endsWith('.xls')) {
+                        toast.error('Invalid file type. Please upload an Excel file (.xlsx or .xls)');
+                        return;
+                      }
+                      const maxSize = 50 * 1024 * 1024;
+                      if (file.size > maxSize) {
+                        toast.error('File too large. Maximum file size is 50MB');
+                        return;
+                      }
+                      const syntheticEvent = {
+                        target: { files: [file] }
+                      } as unknown as React.ChangeEvent<HTMLInputElement>;
+                      handleFileUpload(syntheticEvent);
+                    }
+                  }}
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      fileInputRef.current?.click();
+                    }
+                  }}
+                  aria-label="Upload Excel file"
+                  className="flex items-center justify-center gap-3 p-3 border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-gray-50 dark:bg-gray-900/50 transition-all duration-200 cursor-pointer"
+                  style={{ borderRadius: '3px' }}
+                >
+                  {isLoadingExcel ? (
+                    <Spinner size="sm" label="Processing..." />
+                  ) : (
+                    <>
+                      <svg className="w-5 h-5 text-gray-400 dark:text-gray-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                      </svg>
+                      <span className="text-sm text-gray-600 dark:text-gray-400">Drop .xlsx file or click to browse</span>
+                    </>
+                  )}
+                </div>
+              </div>
 
-                          // Validate file size (max 50MB)
-                          const maxSize = 50 * 1024 * 1024; // 50MB
-                          if (file.size > maxSize) {
-                            toast.error('File too large. Maximum file size is 50MB');
-                            return;
-                          }
+              {/* Section 2: Load Existing File */}
+              <div className="p-4">
+                <div className="flex items-center gap-2 mb-3">
+                  <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" />
+                  </svg>
+                  <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Load Existing</span>
+                </div>
 
-                          // File is valid, proceed with upload
-                          const syntheticEvent = {
-                            target: { files: [file] }
-                          } as unknown as React.ChangeEvent<HTMLInputElement>;
-                          handleFileUpload(syntheticEvent);
-                        }
-                      }}
-                      role="button"
-                      tabIndex={0}
-                      onKeyDown={(e) => {
-                        if (e.key === 'Enter' || e.key === ' ') {
-                          e.preventDefault();
-                          fileInputRef.current?.click();
-                        }
-                      }}
-                      aria-label="Upload Excel file: Click to browse or drag and drop .xlsx or .xls file here"
-                      className="w-full p-4 border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-gray-50 dark:bg-gray-800 transition-all duration-200 cursor-pointer text-center"
-                      style={{ borderRadius: '3px' }}
-                    >
-                      {isLoadingExcel ? (
-                        <div className="space-y-2">
-                          <Spinner size="lg" label="Processing Excel file..." />
-                        </div>
-                      ) : (
-                        <div className="space-y-2">
-                          <svg className="mx-auto h-8 w-8 text-gray-400 dark:text-gray-500" stroke="currentColor" fill="none" viewBox="0 0 48 48">
-                            <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                          </svg>
-                          <div>
-                            <p className="text-sm font-bold text-gray-900 dark:text-gray-100">
-                              Drop Excel file here or click to browse
-                            </p>
-                            <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">
-                              Supports .xlsx and .xls files
-                            </p>
-                          </div>
-                        </div>
-                      )}
-                    </div>
+                {/* File Type + File Selector Row */}
+                <div className="flex items-center gap-2">
+                  {/* File Type Toggle - Compact */}
+                  <div className="flex shrink-0" role="group" aria-label="File type">
+                    {['excel', 'json', 'csv'].map((type) => (
+                      <button
+                        key={type}
+                        onClick={() => handleFileTypeChange(type as 'excel' | 'json' | 'csv')}
+                        aria-pressed={fileType === type}
+                        className={`px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wide transition-all duration-200 first:rounded-l-[3px] last:rounded-r-[3px] ${
+                          fileType === type
+                            ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
+                        }`}
+                      >
+                        {type === 'excel' ? 'XLS' : type.toUpperCase()}
+                      </button>
+                    ))}
                   </div>
 
-                  {/* Divider */}
-                  <div className="flex items-center">
-                    <div className="flex-1 border-t border-gray-300 dark:border-gray-600"></div>
-                    <span className="px-2 text-xs text-gray-500 dark:text-gray-400 font-medium">OR</span>
-                    <div className="flex-1 border-t border-gray-300 dark:border-gray-600"></div>
-                  </div>
-
-                  {/* Unified File Selector */}
-                  <div className="relative">
-                    <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                      Load Existing File
-                    </label>
-
-                    {/* File Type Toggle */}
-                    <div className="flex gap-1.5 mb-3" role="group" aria-label="File type selection">
-                      <button
-                        onClick={() => handleFileTypeChange('excel')}
-                        aria-label="Select Excel files"
-                        aria-pressed={fileType === 'excel'}
-                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-300 ease-out ${
-                          fileType === 'excel'
-                            ? 'bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black border border-gray-700 dark:border-gray-300'
-                            : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md'
-                        }`}
-                        style={{ borderRadius: '3px' }}
-                      >
-                        Excel
-                      </button>
-                      <button
-                        onClick={() => handleFileTypeChange('json')}
-                        aria-label="Select JSON files"
-                        aria-pressed={fileType === 'json'}
-                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-300 ease-out ${
-                          fileType === 'json'
-                            ? 'bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black border border-gray-700 dark:border-gray-300'
-                            : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md'
-                        }`}
-                        style={{ borderRadius: '3px' }}
-                      >
-                        JSON
-                      </button>
-                      <button
-                        onClick={() => handleFileTypeChange('csv')}
-                        aria-label="Select CSV files"
-                        aria-pressed={fileType === 'csv'}
-                        className={`flex-1 px-2 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-300 ease-out ${
-                          fileType === 'csv'
-                            ? 'bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black border border-gray-700 dark:border-gray-300'
-                            : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md'
-                        }`}
-                        style={{ borderRadius: '3px' }}
-                      >
-                        CSV
-                      </button>
-                    </div>
-
-                    {/* Excel File Selector */}
+                  {/* File Selector - Flex grow */}
+                  <div className="flex-1 min-w-0">
                     {fileType === 'excel' && (
                       <>
                         {loadingExistingFiles ? (
-                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">Loading files...</p>
-                          </div>
+                          <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
                         ) : existingFiles.length > 0 ? (
                           <select
                             value={selectedExistingFile}
                             onChange={(e) => handleExistingFileSelect(e.target.value)}
-                            className="w-full p-2.5 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
+                            className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
                             style={{ borderRadius: '3px' }}
                           >
-                            <option value="">Select an Excel file...</option>
+                            <option value="">Select file...</option>
                             {existingFiles.map(file => (
                               <option key={file.fileName} value={file.fileName}>
                                 {file.fileName} ({file.sheets?.length || 0} sheets)
@@ -641,23 +674,14 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                             ))}
                           </select>
                         ) : (
-                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">No Excel files found in /excels folder</p>
-                          </div>
-                        )}
-                        {selectedExistingFile && excelSheets.length > 0 && (
-                          <p className="text-xs text-green-600 dark:text-green-400 mt-1.5 font-medium">✓ {selectedExistingFile} loaded</p>
+                          <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /excels</div>
                         )}
                       </>
                     )}
-
-                    {/* JSON/CSV File Selector */}
                     {(fileType === 'json' || fileType === 'csv') && (
                       <>
                         {loadingDataFiles ? (
-                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">Loading files...</p>
-                          </div>
+                          <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
                         ) : (fileType === 'json' ? jsonFiles : csvFiles).length > 0 ? (
                           <select
                             value={selectedDataFile}
@@ -665,164 +689,94 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                               console.log(`[SetupWizard] ${fileType.toUpperCase()} file selected:`, e.target.value);
                               setSelectedDataFile(e.target.value);
                             }}
-                            className="w-full p-2.5 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm"
+                            className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
                             style={{ borderRadius: '3px' }}
                           >
-                            <option value="">Select a {fileType.toUpperCase()} file...</option>
+                            <option value="">Select file...</option>
                             {(fileType === 'json' ? jsonFiles : csvFiles).map(file => (
-                              <option key={file} value={file}>
-                                {file}
-                              </option>
+                              <option key={file} value={file}>{file}</option>
                             ))}
                           </select>
                         ) : (
-                          <div className="w-full p-3 border border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-center" style={{ borderRadius: '3px' }}>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">No {fileType.toUpperCase()} files found in /data/{fileType} folder</p>
-                          </div>
-                        )}
-                        {selectedDataFile && (
-                          <p className="text-xs text-green-600 dark:text-green-400 mt-1.5 font-medium">
-                            ✓ {selectedDataFile} selected
-                          </p>
+                          <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /data/{fileType}</div>
                         )}
                       </>
                     )}
                   </div>
                 </div>
 
-                {/* Sheet Settings - Below file picker when Excel selected */}
-                {fileType === 'excel' && excelSheets.length > 0 && (
-                  <div className="mt-4 transition-all duration-500 ease-in-out opacity-100 transform translate-y-0">
-                    <div className="bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 p-5 space-y-4 shadow-sm" style={{ borderRadius: '3px' }}>
-                      {/* Sheet Settings Header with icon */}
-                      <div className="flex items-center gap-2 pb-3 border-b border-gray-200 dark:border-gray-700">
-                        <svg className="w-5 h-5 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                        </svg>
-                        <h3 className="text-sm font-black text-gray-900 dark:text-gray-100 tracking-tight uppercase">
-                          Configure Sheet
-                        </h3>
-                      </div>
-
-                      <div className="space-y-4">
-                        <div>
-                          <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100 tracking-tight uppercase">
-                            Select Sheet
-                          </label>
-                          <select
-                            value={selectedSheet}
-                            onChange={(e) => setSelectedSheet(e.target.value)}
-                            className="w-full p-3 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-2 focus:ring-gray-500/20 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white text-sm font-medium"
-                            style={{ borderRadius: '3px' }}
-                          >
-                            {excelSheets.map(sheet => (
-                              <option key={sheet} value={sheet}>{sheet}</option>
-                            ))}
-                          </select>
-                          <p className="mt-2 text-xs text-gray-500 dark:text-gray-400">
-                            {excelSheets.length} sheet{excelSheets.length !== 1 ? 's' : ''} available
-                          </p>
-                        </div>
-                      {/* ADVANCED INDEX SETTINGS - TEMPORARILY HIDDEN
-                       * These settings (Key Column, Source Column, Start Row) are hidden
-                       * to simplify the UI. The defaults work for the standard Excel format:
-                       * - Key Column (Utterer): A
-                       * - Source Column (English): C
-                       * - Dutch Column: J (hardcoded)
-                       * - Start Row: 2 (after header)
-                       *
-                       * Reference Column UI was already disabled for MVP.
-                       * To re-enable these settings, uncomment the JSX blocks below.
-                       */}
-                      {/* Reference Column UI - DISABLED FOR MVP
-                      <div className="col-span-2">
-                        <div className="flex items-center space-x-3 mb-3">
-                          <input
-                            type="checkbox"
-                            id="useReference"
-                            checked={useReferenceColumn}
-                            onChange={(e) => setUseReferenceColumn(e.target.checked)}
-                            className="w-4 h-4 text-black border border-gray-300 rounded focus:ring-2 focus:ring-gray-500 focus:ring-offset-0"
-                          />
-                          <label htmlFor="useReference" className="text-xs font-bold text-gray-900 dark:text-gray-100">
-                            Use Reference Column (for verification/correction)
-                          </label>
-                        </div>
-                        {useReferenceColumn && (
-                          <input
-                            type="text"
-                            value={referenceColumn}
-                            onChange={(e) => setReferenceColumn(e.target.value.toUpperCase())}
-                            className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
-                            placeholder="D"
-                            maxLength={1}
-                          />
-                        )}
-                      </div>
-                      */}
-                      {/* Key Column, Source Column, Start Row - TEMPORARILY HIDDEN
-                      <div>
-                        <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100">Key Column</label>
-                        <input
-                          type="text"
-                          value={uttererColumn}
-                          onChange={(e) => setUttererColumn(e.target.value.toUpperCase())}
-                          className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
-                          placeholder="A"
-                          maxLength={1}
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100">Source Column</label>
-                        <input
-                          type="text"
-                          value={sourceColumn}
-                          onChange={(e) => setSourceColumn(e.target.value.toUpperCase())}
-                          className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
-                          placeholder="C"
-                          maxLength={1}
-                        />
-                      </div>
-                      <div className="col-span-2">
-                        <label className="block text-xs font-bold mb-2 text-gray-900 dark:text-gray-100">Start Row</label>
-                        <input
-                          type="number"
-                          value={startRow}
-                          onChange={(e) => setStartRow(parseInt(e.target.value) || 1)}
-                          className="w-full p-3 border border-black dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm dark:text-white"
-                          min="1"
-                        />
-                      </div>
-                      */}
-                      </div>
-
-                      {/* Detected Locale Columns */}
-                      {localeColumns.length > 0 && (
-                        <div className="mt-4 p-3 bg-blue-50 dark:bg-blue-900/20 border border-blue-300 dark:border-blue-700 rounded">
-                          <label className="block text-xs font-bold mb-2 text-blue-900 dark:text-blue-300">
-                            Detected Locale Columns
-                          </label>
-                          <div className="flex flex-wrap gap-2">
-                            {localeColumns.map((item, index) => (
-                              <span
-                                key={index}
-                                className="inline-flex items-center px-2 py-1 text-xs font-medium bg-blue-100 dark:bg-blue-800 text-blue-800 dark:text-blue-300 rounded border border-blue-300 dark:border-blue-600"
-                              >
-                                Column {item.column}: {item.locale}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                      {sourceTexts.length > 0 && (
-                        <p className="text-sm text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/20 p-3 border border-green-600 dark:border-green-700">
-                          ✓ Found {sourceTexts.length} items (speakers from column {uttererColumn}, text from column {sourceColumn})
-                        </p>
-                      )}
-                    </div>
+                {/* Selection confirmation */}
+                {((fileType === 'excel' && selectedExistingFile && excelSheets.length > 0) ||
+                  ((fileType === 'json' || fileType === 'csv') && selectedDataFile)) && (
+                  <div className="mt-2 flex items-center gap-1.5">
+                    <svg className="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    <span className="text-xs text-green-600 dark:text-green-400 font-medium">
+                      {fileType === 'excel' ? selectedExistingFile : selectedDataFile} loaded
+                    </span>
                   </div>
                 )}
               </div>
+
+              {/* Section 2.5: Language Selection - Only when Excel loaded */}
+              {fileType === 'excel' && excelSheets.length > 0 && (
+                <div className="p-4 border-t border-gray-200 dark:border-gray-700">
+                  <LanguageSelector
+                    languages={detectedLanguages}
+                    selectedLanguage={selectedLanguage}
+                    onSelectLanguage={onSelectLanguage}
+                    disabled={isLoadingExcel}
+                  />
+                </div>
+              )}
+
+              {/* Section 3: Sheet Configuration - Only when Excel with sheets */}
+              {fileType === 'excel' && excelSheets.length > 0 && (
+                <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-900/30">
+                  <div className="flex items-center gap-2 mb-3">
+                    <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Select Sheet</span>
+                  </div>
+                  <SheetSelector
+                    sheets={excelSheets}
+                    selectedSheet={selectedSheet}
+                    onSelectSheet={setSelectedSheet}
+                    workbookData={workbookData}
+                    startRow={startRow}
+                  />
+
+                  {/* Sheet Preview */}
+                  {selectedSheet && selectedLanguage && (
+                    <div className="mt-4">
+                      <SheetPreview
+                        workbook={workbookData}
+                        sheetName={selectedSheet}
+                        sourceColumn={sourceColumn}
+                        targetColumn={selectedLanguage.column}
+                        startRow={startRow}
+                        languageCode={selectedLanguage.code}
+                      />
+                    </div>
+                  )}
+
+                  {/* Status indicators */}
+                  {sourceTexts.length > 0 && (
+                    <div className="mt-3 flex items-center gap-1.5">
+                      <svg className="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                      </svg>
+                      <span className="text-xs text-green-600 dark:text-green-400 font-medium">
+                        {sourceTexts.length} items ready
+                      </span>
+                    </div>
+                  )}
+                </div>
+              )}
+
+            </div>
           </div>
 
           {/* Embedded JSON Section */}
@@ -923,6 +877,39 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               Start Translation →
             </button>
           </div>
+        </div>
+
+        {/* Codex / Reference Data Editor */}
+        <div className="mt-8 border-t border-gray-300 dark:border-gray-600 pt-6">
+          <button
+            onClick={() => setShowCodexEditor(!showCodexEditor)}
+            className="w-full flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 transition-all duration-200"
+            style={{ borderRadius: '3px' }}
+          >
+            <span className="flex items-center gap-2">
+              <span className="font-bold text-gray-900 dark:text-gray-100 text-sm uppercase tracking-wide">
+                Codex / Reference Data
+              </span>
+              {codexEntryCount > 0 && (
+                <span className="px-2 py-0.5 text-xs font-medium bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full">
+                  {codexEntryCount} entries
+                </span>
+              )}
+            </span>
+            <svg
+              className={`w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200 ${showCodexEditor ? 'rotate-180' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          {showCodexEditor && (
+            <div className="mt-3 p-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>
+              <CodexEditor onCodexUpdated={handleCodexUpdated} />
+            </div>
+          )}
         </div>
 
         {/* Video, GitHub, Codex, and Reset Buttons */}
