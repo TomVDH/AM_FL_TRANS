@@ -1,6 +1,7 @@
 import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react';
 import * as XLSX from 'xlsx';
 import { toast } from 'sonner';
+import { extractEpisodeNumber } from '@/utils/episodeExtractor';
 
 // Filter options for entry navigation
 export type FilterStatus = 'all' | 'completed' | 'blank' | 'modified';
@@ -9,6 +10,15 @@ export interface FilterOptions {
   status: FilterStatus;
   speaker?: string;
   searchTerm?: string;
+}
+
+export interface DetectedLanguage {
+  code: string;           // "NL", "PT", etc.
+  name: string;           // "Dutch", "Portuguese", etc.
+  column: string;         // "J", "K", etc.
+  headerText: string;     // Original header text from Excel
+  sheets: string[];       // Which sheets have this language
+  totalSheets: number;    // Total sheets in workbook
 }
 
 export interface TranslationState {
@@ -52,7 +62,18 @@ export interface TranslationState {
   sourceColumn: string;
   uttererColumn: string;
   startRow: number;
-  
+
+  // Translation column configuration (multi-language support)
+  translationColumn: string;
+  translationColumnIndex: number;
+  targetLanguageLabel: string;
+
+  // Language detection state
+  detectedLanguages: DetectedLanguage[];
+  selectedLanguage: DetectedLanguage | null;
+  setDetectedLanguages: (languages: DetectedLanguage[]) => void;
+  setSelectedLanguage: (language: DetectedLanguage | null) => void;
+
   // Refs
   fileInputRef: React.RefObject<HTMLInputElement>;
   textareaRef: React.RefObject<HTMLTextAreaElement>;
@@ -76,6 +97,8 @@ export interface TranslationState {
   setSourceColumn: (column: string) => void;
   setUttererColumn: (column: string) => void;
   setStartRow: (row: number) => void;
+  setTranslationColumn: (column: string) => void;
+  setTargetLanguageLabel: (label: string) => void;
   setLoadedFileName: (fileName: string) => void;
   setLoadedFileType: (fileType: 'excel' | 'json' | 'csv' | 'manual' | '') => void;
   setOriginalTranslations: (translations: string[]) => void;
@@ -97,7 +120,6 @@ export interface TranslationState {
   getCellLocation: (index: number) => string;
   generateGradientColors: () => string[];
   extractSpeakerName: (utterer: string) => string;
-  categoryHasMatches: (category: string) => boolean;
   processExcelData: () => void;
   trimCurrentTranslation: () => void;
   exportTranslations: () => void;
@@ -119,6 +141,19 @@ export interface TranslationState {
   setLiveEditMode: (mode: boolean) => void;
   toggleLiveEditMode: () => void;
   syncCurrentTranslation: () => Promise<void>;
+
+  // Completion flow state
+  showCompletionSummary: boolean;
+  showReviewMode: boolean;
+  episodeNumber: string;
+
+  // Completion flow functions
+  finishSheet: () => void;
+  enterReviewMode: () => void;
+  exitReviewMode: () => void;
+  advanceToNextSheet: () => void;
+  updateTranslationAtIndex: (index: number, value: string) => void;
+  exportToCsv: () => void;
 }
 
 /**
@@ -173,6 +208,11 @@ export const useTranslationState = (): TranslationState => {
   const [liveEditMode, setLiveEditMode] = useState(false);
   const [syncStatus, setSyncStatus] = useState<'idle' | 'syncing' | 'synced' | 'error'>('idle');
   const [lastSyncTime, setLastSyncTime] = useState<Date | null>(null);
+
+  // ========== Completion Flow State ==========
+  const [showCompletionSummary, setShowCompletionSummary] = useState(false);
+  const [showReviewMode, setShowReviewMode] = useState(false);
+  const [episodeNumber, setEpisodeNumber] = useState<string>('UNKNOWN');
 
   // ========== Change Detection ==========
   // Compute whether the current entry has been modified from its original value
@@ -295,6 +335,29 @@ export const useTranslationState = (): TranslationState => {
   const [sourceColumn, setSourceColumn] = useState('C');
   const [uttererColumn, setUttererColumn] = useState('A');
   const [startRow, setStartRow] = useState(3);
+
+  // Translation column configuration (for multi-language support)
+  const [translationColumn, setTranslationColumn] = useState('J');
+  const [targetLanguageLabel, setTargetLanguageLabel] = useState('NL');
+
+  // Language detection state
+  const [detectedLanguages, setDetectedLanguages] = useState<DetectedLanguage[]>([]);
+  const [selectedLanguage, setSelectedLanguage] = useState<DetectedLanguage | null>(null);
+
+  // Helper to convert column letter to 0-based index (A=0, B=1, ... Z=25, AA=26, etc.)
+  const columnLetterToIndex = useCallback((letter: string): number => {
+    letter = letter.toUpperCase();
+    let result = 0;
+    for (let i = 0; i < letter.length; i++) {
+      result = result * 26 + (letter.charCodeAt(i) - 64);
+    }
+    return result - 1;
+  }, []);
+
+  const translationColumnIndex = useMemo(() =>
+    columnLetterToIndex(translationColumn),
+    [translationColumn, columnLetterToIndex]
+  );
   
   // ========== Component References ==========
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -405,16 +468,19 @@ export const useTranslationState = (): TranslationState => {
     setIsLoadingExcel(true);
     const reader = new FileReader();
     
-    reader.onload = (e) => {
+    reader.onload = (evt) => {
       try {
-        const result = e.target?.result;
+        const result = evt.target?.result;
         if (!result) return;
-        
+
         const data = new Uint8Array(result as ArrayBuffer);
         const workbook = XLSX.read(data, { type: 'array' });
-        
+
         setWorkbookData(workbook);
         setExcelSheets(workbook.SheetNames);
+        setLoadedFileName(file.name);
+        setLoadedFileType('excel');
+        setEpisodeNumber(extractEpisodeNumber(file.name));
         if (workbook.SheetNames.length > 0) {
           setSelectedSheet(workbook.SheetNames[0]);
         }
@@ -453,6 +519,7 @@ export const useTranslationState = (): TranslationState => {
       setExcelSheets(workbook.SheetNames);
       setLoadedFileName(fileName);
       setLoadedFileType('excel');
+      setEpisodeNumber(extractEpisodeNumber(fileName));
       if (workbook.SheetNames.length > 0) {
         setSelectedSheet(workbook.SheetNames[0]);
       }
@@ -508,24 +575,24 @@ export const useTranslationState = (): TranslationState => {
       const utterers: string[] = [];
       const existingTranslations: string[] = [];
 
-      // Dutch translations column is hardcoded to J (index 9)
-      const dutchColumnIndex = 9; // Column J = index 9
+      // Translation column is configurable (defaults to J/index 9 for Dutch)
+      const targetColumnIndex = translationColumnIndex;
 
       for (let row = startRow - 1; row <= range.e.r; row++) {
         const sourceCell = XLSX.utils.encode_cell({ r: row, c: sourceColumn.charCodeAt(0) - 65 });
         const uttererCell = XLSX.utils.encode_cell({ r: row, c: uttererColumn.charCodeAt(0) - 65 });
-        const dutchCell = XLSX.utils.encode_cell({ r: row, c: dutchColumnIndex });
+        const targetCell = XLSX.utils.encode_cell({ r: row, c: targetColumnIndex });
 
         const sourceValue = worksheet[sourceCell]?.v;
         const uttererValue = worksheet[uttererCell]?.v;
-        const dutchValue = worksheet[dutchCell]?.v;
+        const targetValue = worksheet[targetCell]?.v;
 
         if (sourceValue && sourceValue.toString().trim()) {
           sourceTexts.push(sourceValue.toString().trim());
           utterers.push(uttererValue ? uttererValue.toString().trim() : '');
-          // Load existing Dutch translation or mark as blank
-          const dutchTranslation = dutchValue ? dutchValue.toString().trim() : '';
-          existingTranslations.push(dutchTranslation || '[BLANK, REMOVE LATER]');
+          // Load existing translation or mark as blank
+          const existingTranslation = targetValue ? targetValue.toString().trim() : '';
+          existingTranslations.push(existingTranslation || '[BLANK, REMOVE LATER]');
         }
       }
 
@@ -544,7 +611,7 @@ export const useTranslationState = (): TranslationState => {
       console.error('Error processing Excel data:', error);
       toast.error('Failed to process Excel data. Please check your column settings.');
     }
-  }, [workbookData, selectedSheet, sourceColumn, uttererColumn, startRow, setSourceTexts, setUtterers, setTranslations, setOriginalTranslations, setCurrentIndex, setCurrentTranslation]);
+  }, [workbookData, selectedSheet, sourceColumn, uttererColumn, startRow, translationColumnIndex, setSourceTexts, setUtterers, setTranslations, setOriginalTranslations, setCurrentIndex, setCurrentTranslation]);
 
   /**
    * Handle sheet change
@@ -702,25 +769,18 @@ export const useTranslationState = (): TranslationState => {
    */
   const extractSpeakerName = useCallback((utterer: string): string => {
     if (!utterer) return 'Speaker';
-    
+
     const parts = utterer.split('.');
     if (parts.length >= 4) {
       return parts[3];
     }
-    
+
     const cleanName = utterer.replace(/^SAY\./, '').replace(/\.\d+$/, '');
     if (cleanName && cleanName !== utterer) {
       return cleanName.replace(/_/g, ' ');
     }
-    
+
     return 'Speaker';
-  }, []);
-  
-  /**
-   * Check if a category has matching entries
-   */
-  const categoryHasMatches = useCallback((category: string): boolean => {
-    return false;
   }, []);
 
   /**
@@ -845,7 +905,7 @@ export const useTranslationState = (): TranslationState => {
     setSyncStatus('syncing');
 
     try {
-      const cellRef = `J${startRow + currentIndex}`;
+      const cellRef = `${translationColumn}${startRow + currentIndex}`;
       const response = await fetch('/api/xlsx-save', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -886,7 +946,8 @@ export const useTranslationState = (): TranslationState => {
     startRow,
     currentIndex,
     currentTranslation,
-    originalTranslations
+    originalTranslations,
+    translationColumn
   ]);
 
   // Process Excel data when sheet, columns, or start row changes
@@ -900,7 +961,104 @@ export const useTranslationState = (): TranslationState => {
   useEffect(() => {
     setGradientColors(generateGradientColors());
   }, [generateGradientColors]);
-  
+
+  // ========== Completion Flow Functions ==========
+
+  /**
+   * Finish current sheet and show completion summary
+   */
+  const finishSheet = useCallback(() => {
+    // Save current translation before showing summary
+    if (currentTranslation.trim()) {
+      const newTranslations = [...translations];
+      newTranslations[currentIndex] = currentTranslation.trim() || '[BLANK, REMOVE LATER]';
+      setTranslations(newTranslations);
+    }
+    setShowCompletionSummary(true);
+    setShowReviewMode(false);
+  }, [currentTranslation, translations, currentIndex]);
+
+  /**
+   * Enter review mode from completion summary
+   */
+  const enterReviewMode = useCallback(() => {
+    setShowCompletionSummary(false);
+    setShowReviewMode(true);
+  }, []);
+
+  /**
+   * Exit review mode and return to completion summary
+   */
+  const exitReviewMode = useCallback(() => {
+    setShowReviewMode(false);
+    setShowCompletionSummary(true);
+  }, []);
+
+  /**
+   * Advance to next sheet in the workbook
+   */
+  const advanceToNextSheet = useCallback(() => {
+    const currentSheetIndex = excelSheets.indexOf(selectedSheet);
+    if (currentSheetIndex < excelSheets.length - 1) {
+      const nextSheet = excelSheets[currentSheetIndex + 1];
+      setSelectedSheet(nextSheet);
+      setShowCompletionSummary(false);
+      setShowReviewMode(false);
+      setCurrentIndex(0);
+      setCurrentTranslation('');
+      // processExcelData will be triggered by useEffect watching selectedSheet
+    }
+  }, [excelSheets, selectedSheet]);
+
+  /**
+   * Update translation at specific index (for review mode)
+   */
+  const updateTranslationAtIndex = useCallback((index: number, value: string) => {
+    const newTranslations = [...translations];
+    newTranslations[index] = value.trim() || '[BLANK, REMOVE LATER]';
+    setTranslations(newTranslations);
+  }, [translations]);
+
+  /**
+   * Export translations to CSV with episode number in filename
+   */
+  const exportToCsv = useCallback(() => {
+    const csvHeader = 'Row No,Source,Translation\n';
+
+    const csvRows = translations.map((trans, idx) => {
+      const rowNum = startRow + idx;
+      const source = sourceTexts[idx] || '';
+      const translation = trans === '[BLANK, REMOVE LATER]' ? '' : trans;
+
+      // Escape CSV values
+      const escapeCsv = (value: string) => {
+        if (value.includes(',') || value.includes('"') || value.includes('\n')) {
+          return `"${value.replace(/"/g, '""')}"`;
+        }
+        return value;
+      };
+
+      return `${rowNum},${escapeCsv(source)},${escapeCsv(translation)}`;
+    }).join('\n');
+
+    const csvData = csvHeader + csvRows;
+    const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+
+    // Use EP_NO--sheet-name.csv format
+    const safeSheetName = (selectedSheet || 'sheet').replace(/[^a-zA-Z0-9_-]/g, '_');
+    a.download = `${episodeNumber}--${safeSheetName}.csv`;
+
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+
+    toast.success(`Exported ${episodeNumber}--${safeSheetName}.csv`);
+  }, [translations, sourceTexts, startRow, selectedSheet, episodeNumber]);
+
   return {
     // State
     sourceTexts,
@@ -922,9 +1080,18 @@ export const useTranslationState = (): TranslationState => {
     sourceColumn,
     uttererColumn,
     startRow,
+    translationColumn,
+    translationColumnIndex,
+    targetLanguageLabel,
     loadedFileName,
     loadedFileType,
     originalTranslations,
+
+    // Language detection
+    detectedLanguages,
+    selectedLanguage,
+    setDetectedLanguages,
+    setSelectedLanguage,
 
     // Change detection
     hasCurrentEntryChanged,
@@ -953,6 +1120,8 @@ export const useTranslationState = (): TranslationState => {
     setSourceColumn,
     setUttererColumn,
     setStartRow,
+    setTranslationColumn,
+    setTargetLanguageLabel,
     setLoadedFileName,
     setLoadedFileType,
     setOriginalTranslations,
@@ -974,7 +1143,6 @@ export const useTranslationState = (): TranslationState => {
     getCellLocation,
     generateGradientColors,
     extractSpeakerName,
-    categoryHasMatches,
     processExcelData,
     trimCurrentTranslation,
     exportTranslations,
@@ -999,5 +1167,16 @@ export const useTranslationState = (): TranslationState => {
     setLiveEditMode,
     toggleLiveEditMode,
     syncCurrentTranslation,
+
+    // Completion flow
+    showCompletionSummary,
+    showReviewMode,
+    episodeNumber,
+    finishSheet,
+    enterReviewMode,
+    exitReviewMode,
+    advanceToNextSheet,
+    updateTranslationAtIndex,
+    exportToCsv,
   };
 }; 
