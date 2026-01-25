@@ -570,6 +570,17 @@ export const useTranslationState = (): TranslationState => {
         if (workbook.SheetNames.length > 0) {
           setSelectedSheet(workbook.SheetNames[0]);
         }
+
+        // Detect languages after loading workbook
+        const detected = detectLanguagesInWorkbook(workbook);
+        setDetectedLanguages(detected);
+
+        // Auto-select first detected language if available
+        if (detected.length > 0) {
+          setSelectedLanguage(detected[0]);
+          setTranslationColumn(detected[0].column);
+          setTargetLanguageLabel(detected[0].code);
+        }
       } catch (error) {
         toast.error('Error reading Excel file. Please ensure it\'s a valid Excel file.');
         console.error('Excel file read error:', error);
@@ -582,9 +593,9 @@ export const useTranslationState = (): TranslationState => {
       toast.error('Error reading Excel file. Please try again.');
       setIsLoadingExcel(false);
     };
-    
+
     reader.readAsArrayBuffer(file);
-  }, []);
+  }, [detectLanguagesInWorkbook]);
 
   /**
    * Handle loading an existing Excel file from the server
@@ -609,6 +620,18 @@ export const useTranslationState = (): TranslationState => {
       if (workbook.SheetNames.length > 0) {
         setSelectedSheet(workbook.SheetNames[0]);
       }
+
+      // Detect languages after loading workbook
+      const detected = detectLanguagesInWorkbook(workbook);
+      setDetectedLanguages(detected);
+
+      // Auto-select first detected language if available
+      if (detected.length > 0) {
+        setSelectedLanguage(detected[0]);
+        setTranslationColumn(detected[0].column);
+        setTargetLanguageLabel(detected[0].code);
+      }
+
       toast.success(`Loaded ${fileName}`);
     } catch (error) {
       console.error('Error loading Excel file:', error);
@@ -616,7 +639,7 @@ export const useTranslationState = (): TranslationState => {
     } finally {
       setIsLoadingExcel(false);
     }
-  }, []);
+  }, [detectLanguagesInWorkbook]);
 
   /**
    * Reset translations from the current Excel file
