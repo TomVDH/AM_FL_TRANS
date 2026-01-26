@@ -51,14 +51,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${pixelifySans.variable} ${playfairDisplay.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{
-          __html: `
-            (function() {
-              const randomBg = 'bg-random-' + (Math.floor(Math.random() * 10) + 1);
-              document.body.classList.add(randomBg);
-            })();
-          `
-        }} />
       </head>
       <body className="antialiased" style={{ position: 'relative', zIndex: 0 }}>
         {children}
@@ -66,6 +58,9 @@ export default function RootLayout({
           position="top-right"
           richColors
           closeButton
+          expand={true}
+          gap={8}
+          visibleToasts={4}
           toastOptions={{
             style: {
               zIndex: 99999,
