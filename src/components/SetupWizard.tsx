@@ -11,6 +11,8 @@ import CodexEditor from './CodexEditor';
 import SheetSelector from './SheetSelector';
 import LanguageSelector, { DetectedLanguage } from './LanguageSelector';
 import SheetPreview from './SheetPreview';
+import ReferenceDataInfo from './ReferenceDataInfo';
+import { useCodexLanguages } from '../hooks/useCodexLanguages';
 
 interface SetupWizardProps {
   // Input mode state
@@ -178,6 +180,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   // Codex editor state - expanded by default for better discoverability
   const [showCodexEditor, setShowCodexEditor] = useState(true);
   const [codexEntryCount, setCodexEntryCount] = useState<number>(0);
+
+  // Reference data availability check
+  const { hasLanguage, isLoading: isLoadingCodex, totalEntries } = useCodexLanguages();
 
   // Extract column headers from the selected sheet
   const sheetColumns = useMemo(() => {
@@ -728,6 +733,20 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     onSelectLanguage={onSelectLanguage}
                     disabled={isLoadingExcel}
                   />
+
+                  {/* Reference Data Status */}
+                  {selectedLanguage && (
+                    <div className="mt-4">
+                      <ReferenceDataInfo
+                        selectedLanguage={selectedLanguage.code}
+                        selectedLanguageName={selectedLanguage.name}
+                        hasReferenceData={hasLanguage(selectedLanguage.code)}
+                        isLoading={isLoadingCodex}
+                        totalEntries={totalEntries}
+                        onLearnMore={() => window.open('/docs/reference-data-guide.md', '_blank')}
+                      />
+                    </div>
+                  )}
                 </div>
               )}
 
