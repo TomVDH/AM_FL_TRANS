@@ -65,7 +65,7 @@ const ReferenceDataInfo: React.FC<ReferenceDataInfoProps> = ({
           </p>
           <p className="text-xs text-amber-600 dark:text-amber-400 mt-1">
             Reference data (character names, common phrases) is not yet available for {selectedLanguageName}.
-            You can still translate, but auto-suggestions won't appear.
+            You can still translate, but auto-suggestions won&apos;t appear.
           </p>
           {onLearnMore && (
             <button
