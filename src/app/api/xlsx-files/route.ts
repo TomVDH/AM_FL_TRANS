@@ -129,23 +129,166 @@ export async function GET(request: NextRequest) {
 }
 
 /**
+ * Search a single workbook and return results
+ */
+function searchWorkbook(
+  workbook: XLSX.WorkBook,
+  fileName: string,
+  searchTerm: string,
+  globalSearch: boolean,
+  selectedSheet: string,
+  translationColumnIndex: number
+): XLSXSearchResult[] {
+  const results: XLSXSearchResult[] = [];
+
+  // Determine which sheets to search
+  const sheetsToSearch = globalSearch
+    ? workbook.SheetNames
+    : selectedSheet
+      ? [selectedSheet]
+      : workbook.SheetNames;
+
+  sheetsToSearch.forEach(sheetName => {
+    const worksheet = workbook.Sheets[sheetName];
+    const jsonData = XLSX.utils.sheet_to_json(worksheet, {
+      header: 1,
+      defval: ''
+    });
+
+    const matches: XLSXSearchResult['matches'] = [];
+
+    // Process rows (skip header row)
+    for (let i = 1; i < jsonData.length; i++) {
+      const row = jsonData[i] as any[];
+      if (!row || row.length === 0) continue;
+
+      const entry = {
+        row: i + 1,
+        utterer: row[0] ? row[0].toString().trim() : '',
+        context: row[1] ? row[1].toString().trim() : '',
+        sourceEnglish: row[2] ? row[2].toString().trim() : '',
+        translatedDutch: row[translationColumnIndex] ? row[translationColumnIndex].toString().trim() : '',
+        key: row[10] ? row[10].toString().trim() : ''
+      };
+
+      // Only include rows with source text
+      if (!entry.sourceEnglish) continue;
+
+      // Search logic
+      let isMatch = false;
+
+      if (searchTerm) {
+        const searchLower = searchTerm.toLowerCase();
+
+        if (
+          entry.sourceEnglish.toLowerCase().includes(searchLower) ||
+          entry.translatedDutch.toLowerCase().includes(searchLower) ||
+          entry.utterer.toLowerCase().includes(searchLower)
+        ) {
+          isMatch = true;
+        }
+      } else {
+        // If no search term, return all entries (for browsing)
+        isMatch = true;
+      }
+
+      if (isMatch) {
+        matches.push(entry);
+      }
+    }
+
+    if (matches.length > 0) {
+      results.push({
+        fileName,
+        sheetName,
+        matches
+      });
+    }
+  });
+
+  return results;
+}
+
+/**
  * POST /api/xlsx-files
- * 
+ *
  * Search within XLSX files directly
+ * Supports searchAllFiles parameter to search across ALL files in /excels
  */
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { fileName, searchTerm, selectedSheet, globalSearch = false } = body;
-    
+    const {
+      fileName,
+      searchTerm,
+      selectedSheet,
+      globalSearch = false,
+      searchAllFiles = false,
+      translationColumnIndex = 9
+    } = body;
+
+    const excelDir = path.join(process.cwd(), 'excels');
+
+    // Search ALL files mode
+    if (searchAllFiles) {
+      if (!searchTerm) {
+        return NextResponse.json(
+          { error: 'Search term required when searching all files' },
+          { status: 400 }
+        );
+      }
+
+      const allResults: XLSXSearchResult[] = [];
+      const files = fs.readdirSync(excelDir).filter(f => f.endsWith('.xlsx'));
+
+      for (const file of files) {
+        try {
+          const filePath = path.join(excelDir, file);
+          const stats = fs.statSync(filePath);
+
+          // Skip files that are too large
+          if (stats.size > MAX_FILE_SIZE) {
+            console.warn(`Skipping ${file} - exceeds size limit`);
+            continue;
+          }
+
+          const fileBuffer = fs.readFileSync(filePath);
+          const workbook = XLSX.read(fileBuffer, { type: 'buffer' });
+
+          const fileResults = searchWorkbook(
+            workbook,
+            file,
+            searchTerm,
+            true, // Always search all sheets when searching all files
+            '',
+            translationColumnIndex
+          );
+
+          allResults.push(...fileResults);
+        } catch (error) {
+          console.error(`Error searching ${file}:`, error);
+          // Continue with other files
+        }
+      }
+
+      return NextResponse.json({
+        searchAllFiles: true,
+        searchTerm,
+        totalMatches: allResults.reduce((sum, r) => sum + r.matches.length, 0),
+        filesSearched: files.length,
+        results: allResults,
+        searchedAt: new Date().toISOString()
+      });
+    }
+
+    // Single file mode (original behavior)
     if (!fileName) {
       return NextResponse.json(
         { error: 'Missing required parameter: fileName' },
         { status: 400 }
       );
     }
-    
-    const excelDir = path.join(process.cwd(), 'excels');
+
     const filePath = path.join(excelDir, fileName);
 
     if (!fs.existsSync(filePath)) {
@@ -166,74 +309,16 @@ export async function POST(request: NextRequest) {
 
     const fileBuffer = fs.readFileSync(filePath);
     const workbook = XLSX.read(fileBuffer, { type: 'buffer' });
-    const results: XLSXSearchResult[] = [];
-    
-    // Determine which sheets to search
-    const sheetsToSearch = globalSearch 
-      ? workbook.SheetNames 
-      : selectedSheet 
-        ? [selectedSheet] 
-        : workbook.SheetNames;
-    
-    sheetsToSearch.forEach(sheetName => {
-      const worksheet = workbook.Sheets[sheetName];
-      const jsonData = XLSX.utils.sheet_to_json(worksheet, { 
-        header: 1,
-        defval: ''
-      });
-      
-      const matches: XLSXSearchResult['matches'] = [];
-      
-      // Process rows (skip header row)
-      for (let i = 1; i < jsonData.length; i++) {
-        const row = jsonData[i] as any[];
-        if (!row || row.length === 0) continue;
-        
-        const entry = {
-          row: i + 1,
-          utterer: row[0] ? row[0].toString().trim() : '',
-          context: row[1] ? row[1].toString().trim() : '',
-          sourceEnglish: row[2] ? row[2].toString().trim() : '',
-          translatedDutch: row[9] ? row[9].toString().trim() : '', // Column J
-          key: row[10] ? row[10].toString().trim() : '' // Column K if exists
-        };
-        
-        // Only include rows with source text
-        if (!entry.sourceEnglish) continue;
-        
-        // Search logic
-        let isMatch = false;
-        
-        if (searchTerm) {
-          const searchLower = searchTerm.toLowerCase();
-          
-          if (
-            entry.sourceEnglish.toLowerCase().includes(searchLower) ||
-            entry.translatedDutch.toLowerCase().includes(searchLower) ||
-            entry.utterer.toLowerCase().includes(searchLower) ||
-            entry.context.toLowerCase().includes(searchLower)
-          ) {
-            isMatch = true;
-          }
-        } else {
-          // If no search term, return all entries (for browsing)
-          isMatch = true;
-        }
-        
-        if (isMatch) {
-          matches.push(entry);
-        }
-      }
-      
-      if (matches.length > 0) {
-        results.push({
-          fileName,
-          sheetName,
-          matches
-        });
-      }
-    });
-    
+
+    const results = searchWorkbook(
+      workbook,
+      fileName,
+      searchTerm,
+      globalSearch,
+      selectedSheet,
+      translationColumnIndex
+    );
+
     return NextResponse.json({
       fileName,
       searchTerm,
@@ -243,7 +328,7 @@ export async function POST(request: NextRequest) {
       results,
       searchedAt: new Date().toISOString()
     });
-    
+
   } catch (error) {
     console.error('Error searching XLSX file:', error);
     return NextResponse.json(

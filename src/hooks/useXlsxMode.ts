@@ -27,13 +27,15 @@ export interface XlsxModeState {
   xlsxData: XlsxEntry[] | null;
   availableXlsxFiles: XlsxFileInfo[];
   globalSearch: boolean;
+  searchAllFiles: boolean;
   isLoadingXlsx: boolean;
-  
+
   // Setters
   setSelectedXlsxSheet: (sheet: string) => void;
   setXlsxSearchTerm: (term: string) => void;
   setGlobalSearch: (global: boolean) => void;
-  
+  setSearchAllFiles: (searchAll: boolean) => void;
+
   // Functions
   loadXlsxData: (fileName: string) => Promise<void>;
   toggleXlsxMode: () => void;
@@ -41,7 +43,7 @@ export interface XlsxModeState {
   getFilteredEntries: () => XlsxEntry[];
   getAvailableSheets: () => string[];
   findXlsxMatches: (text: string) => XlsxEntry[];
-  searchXlsxFiles: (searchTerm?: string) => Promise<void>;
+  searchXlsxFiles: (searchTerm?: string, translationColumnIndex?: number) => Promise<void>;
 }
 
 /**
@@ -65,6 +67,7 @@ export const useXlsxMode = (): XlsxModeState => {
   const [xlsxData, setXlsxData] = useState<XlsxEntry[] | null>(null);
   const [availableXlsxFiles, setAvailableXlsxFiles] = useState<XlsxFileInfo[]>([]);
   const [globalSearch, setGlobalSearch] = useState(false);
+  const [searchAllFiles, setSearchAllFiles] = useState(false);
   const [isLoadingXlsx, setIsLoadingXlsx] = useState(false);
   
   // ========== XLSX Mode Functions ==========
@@ -151,15 +154,24 @@ export const useXlsxMode = (): XlsxModeState => {
   
   /**
    * Search XLSX files
-   * 
+   *
    * Performs a search across XLSX files with the current search term.
-   * 
+   * If searchAllFiles is enabled, searches across ALL files in /excels.
+   *
    * @param searchTerm - Optional search term (uses current state if not provided)
    */
-  const searchXlsxFiles = useCallback(async (searchTerm?: string) => {
-    if (!selectedXlsxFile) return;
-
+  const searchXlsxFiles = useCallback(async (searchTerm?: string, translationColumnIndex: number = 9) => {
     const term = searchTerm !== undefined ? searchTerm : xlsxSearchTerm;
+
+    // For searchAllFiles mode, require a search term
+    if (searchAllFiles && !term) {
+      setXlsxData([]);
+      return;
+    }
+
+    // For single file mode, require a file to be selected
+    if (!searchAllFiles && !selectedXlsxFile) return;
+
     setIsLoadingXlsx(true);
 
     try {
@@ -169,10 +181,12 @@ export const useXlsxMode = (): XlsxModeState => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          fileName: selectedXlsxFile,
+          fileName: searchAllFiles ? '' : selectedXlsxFile,
           searchTerm: term,
           selectedSheet: selectedXlsxSheet,
-          globalSearch: globalSearch
+          globalSearch: globalSearch,
+          searchAllFiles: searchAllFiles,
+          translationColumnIndex
         }),
       });
 
@@ -201,7 +215,7 @@ export const useXlsxMode = (): XlsxModeState => {
     } finally {
       setIsLoadingXlsx(false);
     }
-  }, [selectedXlsxFile, selectedXlsxSheet, xlsxSearchTerm, globalSearch]);
+  }, [selectedXlsxFile, selectedXlsxSheet, xlsxSearchTerm, globalSearch, searchAllFiles]);
   
   /**
    * Toggle XLSX mode
@@ -223,7 +237,7 @@ export const useXlsxMode = (): XlsxModeState => {
   
   /**
    * Clear XLSX mode
-   * 
+   *
    * Disables XLSX mode and clears all related state.
    */
   const clearXlsxMode = useCallback(() => {
@@ -233,20 +247,21 @@ export const useXlsxMode = (): XlsxModeState => {
     setXlsxSearchTerm('');
     setXlsxData(null);
     setGlobalSearch(false);
+    setSearchAllFiles(false);
   }, []);
   
   /**
    * Get filtered entries based on current search and selection
-   * 
+   *
    * @returns Filtered array of XLSX entries
    */
   const getFilteredEntries = useCallback((): XlsxEntry[] => {
     if (!xlsxData) return [];
-    
+
     let filtered = xlsxData;
-    
-    // Filter by sheet if not in global search mode
-    if (!globalSearch && selectedXlsxSheet) {
+
+    // Filter by sheet if one is selected (empty string means "All")
+    if (selectedXlsxSheet) {
       filtered = filtered.filter(entry => entry.sheetName === selectedXlsxSheet);
     }
     
@@ -257,13 +272,12 @@ export const useXlsxMode = (): XlsxModeState => {
         entry.sourceEnglish.toLowerCase().includes(searchLower) ||
         entry.translatedDutch.toLowerCase().includes(searchLower) ||
         entry.utterer.toLowerCase().includes(searchLower) ||
-        entry.context.toLowerCase().includes(searchLower) ||
         entry.row.toString().includes(searchLower)
       );
     }
     
     return filtered;
-  }, [xlsxData, selectedXlsxSheet, xlsxSearchTerm, globalSearch]);
+  }, [xlsxData, selectedXlsxSheet, xlsxSearchTerm]);
   
   /**
    * Get available sheets from loaded data
@@ -326,14 +340,20 @@ export const useXlsxMode = (): XlsxModeState => {
    * Trigger search when search term changes
    */
   useEffect(() => {
-    if (selectedXlsxFile && xlsxMode) {
+    // For searchAllFiles mode, only search if there's a search term
+    // For single file mode, require a file to be selected
+    const shouldSearch = searchAllFiles
+      ? (xlsxMode && xlsxSearchTerm)
+      : (selectedXlsxFile && xlsxMode);
+
+    if (shouldSearch) {
       const debounceTimer = setTimeout(() => {
         searchXlsxFiles();
       }, 300); // Debounce search
-      
+
       return () => clearTimeout(debounceTimer);
     }
-  }, [xlsxSearchTerm, selectedXlsxSheet, globalSearch, selectedXlsxFile, xlsxMode, searchXlsxFiles]);
+  }, [xlsxSearchTerm, selectedXlsxSheet, globalSearch, selectedXlsxFile, xlsxMode, searchAllFiles, searchXlsxFiles]);
   
   return {
     // State
@@ -344,13 +364,15 @@ export const useXlsxMode = (): XlsxModeState => {
     xlsxData,
     availableXlsxFiles,
     globalSearch,
+    searchAllFiles,
     isLoadingXlsx,
-    
+
     // Setters
     setSelectedXlsxSheet,
     setXlsxSearchTerm,
     setGlobalSearch,
-    
+    setSearchAllFiles,
+
     // Functions
     loadXlsxData,
     toggleXlsxMode,

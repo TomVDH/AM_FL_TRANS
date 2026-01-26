@@ -303,10 +303,12 @@ const TranslationHelper: React.FC = () => {
     xlsxData,
     availableXlsxFiles,
     globalSearch,
+    searchAllFiles,
     isLoadingXlsx,
     setSelectedXlsxSheet,
     setXlsxSearchTerm,
     setGlobalSearch,
+    setSearchAllFiles,
     loadXlsxData,
     toggleXlsxMode,
     clearXlsxMode,
@@ -1972,6 +1974,8 @@ const TranslationHelper: React.FC = () => {
           setXlsxSearchTerm={setXlsxSearchTerm}
           globalSearch={globalSearch}
           setGlobalSearch={setGlobalSearch}
+          searchAllFiles={searchAllFiles}
+          setSearchAllFiles={setSearchAllFiles}
           isLoadingXlsx={isLoadingXlsx}
           loadXlsxData={loadXlsxData}
           setSelectedXlsxSheet={setSelectedXlsxSheet}
