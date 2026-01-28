@@ -34,7 +34,6 @@ export interface TextOperationsState {
   trimCurrentTranslation: () => void;
   persistTranslation: (rowNumber: number, newTranslation: string) => Promise<void>;
   extractSpeakerName: (utterer: string) => string;
-  categoryHasMatches: (category: string) => boolean;
 }
 
 // ============================================================================
@@ -211,14 +210,6 @@ export const useTextOperations = ({
     return 'Speaker';
   }, []);
 
-  /**
-   * Check if a category has matching entries (placeholder)
-   */
-  const categoryHasMatches = useCallback((_category: string): boolean => {
-    // Placeholder implementation
-    return false;
-  }, []);
-
   // ========== Return ==========
   return {
     copySourceText,
@@ -228,6 +219,5 @@ export const useTextOperations = ({
     trimCurrentTranslation,
     persistTranslation,
     extractSpeakerName,
-    categoryHasMatches,
   };
 };

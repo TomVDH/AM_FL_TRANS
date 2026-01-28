@@ -156,34 +156,7 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
     }
   }, [activeTab, effectiveSearchTerm, setXlsxSearchTerm]);
 
-  // Auto-target current working sheet when global search is enabled
-  // This sets the sheet filter to match the sheet name the user is currently translating
-  useEffect(() => {
-    if (globalSearch && currentWorkingSheet && xlsxData) {
-      const availableSheets = getAvailableSheets();
-      // Check if current working sheet name exists in the loaded XLSX reference data
-      if (availableSheets.includes(currentWorkingSheet)) {
-        setSelectedXlsxSheet(currentWorkingSheet);
-      } else {
-        // If exact match not found, try partial match (sheet name might have different prefix)
-        // e.g., "E0_CharacterProfiles_localization" vs "CharacterProfiles"
-        const sheetBaseName = currentWorkingSheet
-          .replace(/^E\d+_/, '')  // Remove episode prefix
-          .replace(/_localization$/i, '');  // Remove _localization suffix
-
-        const matchingSheet = availableSheets.find(sheet => {
-          const refBaseName = sheet
-            .replace(/^E\d+_/, '')
-            .replace(/_localization$/i, '');
-          return refBaseName.toLowerCase() === sheetBaseName.toLowerCase();
-        });
-
-        if (matchingSheet) {
-          setSelectedXlsxSheet(matchingSheet);
-        }
-      }
-    }
-  }, [globalSearch, currentWorkingSheet, xlsxData, getAvailableSheets, setSelectedXlsxSheet]);
+  // Note: Auto-targeting removed - user has full control over tab selection
 
   // Load full codex data
   useEffect(() => {

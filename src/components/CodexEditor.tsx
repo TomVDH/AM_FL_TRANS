@@ -13,13 +13,18 @@ interface CodexEntry {
   name: string;
   description: string;
   english: string;
-  dutch: string;
   category: string;
   nicknames?: string;
   bio?: string;
   gender?: string;
   dialogueStyle?: string;
+  // Dynamic language column - any language can be the translation target
+  [key: string]: string | undefined;
 }
+
+// The translation field name - can be 'dutch', 'portuguese', etc.
+// For backwards compatibility, we use 'dutch' as the primary field but display as 'translation'
+const TRANSLATION_FIELD = 'dutch';
 
 interface CodexEditorProps {
   onCodexUpdated?: () => void;
@@ -165,7 +170,14 @@ function parseCSVContent(content: string): { headers: string[]; rows: Record<str
 // IMPORT SECTION
 // ============================================================================
 
-const REQUIRED_COLUMNS = ['name', 'english', 'dutch', 'category'];
+// Base required columns - translation column (dutch, portuguese, etc.) is also required
+const BASE_REQUIRED_COLUMNS = ['name', 'english', 'category'];
+// For backwards compatibility, require 'dutch' OR any other translation column
+const REQUIRED_COLUMNS = ['name', 'english', 'category'];
+// Columns to show in preview (name, english, translation, category)
+const PREVIEW_COLUMNS = ['name', 'english', 'translation', 'category'];
+// Known translation column names for detection
+const KNOWN_TRANSLATION_COLUMNS = ['dutch', 'portuguese', 'spanish', 'french', 'german', 'italian', 'translation'];
 
 interface ImportSectionProps {
   onImport: (entries: CodexEntry[]) => Promise<void>;
@@ -175,6 +187,7 @@ const ImportSection: React.FC<ImportSectionProps> = ({ onImport }) => {
   const [preview, setPreview] = useState<Record<string, string>[]>([]);
   const [allRows, setAllRows] = useState<Record<string, string>[]>([]);
   const [headers, setHeaders] = useState<string[]>([]);
+  const [detectedTranslationCol, setDetectedTranslationCol] = useState<string>('dutch');
   const [error, setError] = useState<string>('');
   const [isLoading, setIsLoading] = useState(false);
   const [showConfirm, setShowConfirm] = useState(false);
@@ -204,6 +217,14 @@ const ImportSection: React.FC<ImportSectionProps> = ({ onImport }) => {
           setError(`Missing required columns: ${missingColumns.join(', ')}`);
           return;
         }
+
+        // Check for at least one translation column (dutch, portuguese, spanish, etc.)
+        const foundTranslationCol = KNOWN_TRANSLATION_COLUMNS.find(col => parsedHeaders.includes(col));
+        if (!foundTranslationCol) {
+          setError('Missing translation column (dutch, portuguese, spanish, etc.)');
+          return;
+        }
+        setDetectedTranslationCol(foundTranslationCol);
 
         setHeaders(parsedHeaders);
         setAllRows(rows);
@@ -244,7 +265,8 @@ const ImportSection: React.FC<ImportSectionProps> = ({ onImport }) => {
         name: row.name || '',
         description: row.description || 'Character',
         english: row.english || '',
-        dutch: row.dutch || '',
+        // Use the detected translation column, map to 'dutch' for backwards compatibility
+        [TRANSLATION_FIELD]: row[detectedTranslationCol] || '',
         category: row.category || 'CHARACTER',
         nicknames: row.nicknames || '',
         bio: row.bio || '',
@@ -303,7 +325,7 @@ const ImportSection: React.FC<ImportSectionProps> = ({ onImport }) => {
           Drop CSV file here or click to browse
         </p>
         <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
-          Required columns: {REQUIRED_COLUMNS.join(', ')}
+          Required: name, english, category + translation column (dutch, portuguese, etc.)
         </p>
       </div>
 
@@ -333,21 +355,19 @@ const ImportSection: React.FC<ImportSectionProps> = ({ onImport }) => {
             <table className="w-full text-sm">
               <thead className="bg-gray-50 dark:bg-gray-700">
                 <tr>
-                  {REQUIRED_COLUMNS.map(col => (
-                    <th key={col} className="px-3 py-2 text-left text-xs font-bold text-gray-700 dark:text-gray-300 uppercase">
-                      {col}
-                    </th>
-                  ))}
+                  <th className="px-3 py-2 text-left text-xs font-bold text-gray-700 dark:text-gray-300 uppercase">name</th>
+                  <th className="px-3 py-2 text-left text-xs font-bold text-gray-700 dark:text-gray-300 uppercase">english</th>
+                  <th className="px-3 py-2 text-left text-xs font-bold text-gray-700 dark:text-gray-300 uppercase">translation</th>
+                  <th className="px-3 py-2 text-left text-xs font-bold text-gray-700 dark:text-gray-300 uppercase">category</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
                 {preview.map((row, idx) => (
                   <tr key={idx} className="bg-white dark:bg-gray-800">
-                    {REQUIRED_COLUMNS.map(col => (
-                      <td key={col} className="px-3 py-2 text-gray-900 dark:text-gray-100 truncate max-w-[150px]">
-                        {row[col] || '-'}
-                      </td>
-                    ))}
+                    <td className="px-3 py-2 text-gray-900 dark:text-gray-100 truncate max-w-[150px]">{row.name || '-'}</td>
+                    <td className="px-3 py-2 text-gray-900 dark:text-gray-100 truncate max-w-[150px]">{row.english || '-'}</td>
+                    <td className="px-3 py-2 text-gray-900 dark:text-gray-100 truncate max-w-[150px]">{row[detectedTranslationCol] || '-'}</td>
+                    <td className="px-3 py-2 text-gray-900 dark:text-gray-100 truncate max-w-[150px]">{row.category || '-'}</td>
                   </tr>
                 ))}
               </tbody>
@@ -406,7 +426,7 @@ const QuickAddForm: React.FC<QuickAddFormProps> = ({ categories, onAdd }) => {
   const [formData, setFormData] = useState({
     name: '',
     english: '',
-    dutch: '',
+    translation: '',
     category: 'CHARACTER',
     nicknames: '',
   });
@@ -415,7 +435,7 @@ const QuickAddForm: React.FC<QuickAddFormProps> = ({ categories, onAdd }) => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.english || !formData.dutch) {
+    if (!formData.name || !formData.english || !formData.translation) {
       toast.error('Please fill in all required fields');
       return;
     }
@@ -426,7 +446,7 @@ const QuickAddForm: React.FC<QuickAddFormProps> = ({ categories, onAdd }) => {
         name: formData.name,
         description: 'Character',
         english: formData.english,
-        dutch: formData.dutch,
+        [TRANSLATION_FIELD]: formData.translation,
         category: formData.category,
         nicknames: formData.nicknames,
       });
@@ -435,7 +455,7 @@ const QuickAddForm: React.FC<QuickAddFormProps> = ({ categories, onAdd }) => {
       setFormData({
         name: '',
         english: '',
-        dutch: '',
+        translation: '',
         category: 'CHARACTER',
         nicknames: '',
       });
@@ -477,8 +497,8 @@ const QuickAddForm: React.FC<QuickAddFormProps> = ({ categories, onAdd }) => {
         />
         <Input
           label="Translation"
-          value={formData.dutch}
-          onChange={(e) => setFormData(prev => ({ ...prev, dutch: e.target.value }))}
+          value={formData.translation}
+          onChange={(e) => setFormData(prev => ({ ...prev, translation: e.target.value }))}
           placeholder="Translation"
           size="sm"
         />
@@ -692,12 +712,13 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
     // Apply search
     if (searchTerm) {
       const term = searchTerm.toLowerCase();
-      filtered = filtered.filter(entry =>
-        entry.name.toLowerCase().includes(term) ||
-        entry.english.toLowerCase().includes(term) ||
-        entry.dutch.toLowerCase().includes(term) ||
-        (entry.nicknames && entry.nicknames.toLowerCase().includes(term))
-      );
+      filtered = filtered.filter(entry => {
+        const translationValue = (entry[TRANSLATION_FIELD] || '') as string;
+        return entry.name.toLowerCase().includes(term) ||
+          entry.english.toLowerCase().includes(term) ||
+          translationValue.toLowerCase().includes(term) ||
+          (entry.nicknames && entry.nicknames.toLowerCase().includes(term));
+      });
     }
 
     return filtered;
@@ -711,7 +732,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
       setEditData({
         name: entry.name,
         english: entry.english,
-        dutch: entry.dutch,
+        [TRANSLATION_FIELD]: (entry[TRANSLATION_FIELD] || '') as string,
         category: entry.category,
         nicknames: entry.nicknames || '',
         description: entry.description || '',
@@ -844,7 +865,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                       {entry.english}
                     </td>
                     <td className="px-3 py-2 text-gray-900 dark:text-gray-100 truncate max-w-[200px]">
-                      {entry.dutch}
+                      {entry[TRANSLATION_FIELD] as string || ''}
                     </td>
                     <td className="px-3 py-2">
                       <span className={`codex-category-badge inline-flex items-center px-2 py-0.5 text-[10px] font-bold uppercase ${getCategoryBadgeClass()}`}>
@@ -879,8 +900,8 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                               </label>
                               <input
                                 type="text"
-                                value={editData.dutch || ''}
-                                onChange={(e) => setEditData(prev => ({ ...prev, dutch: e.target.value }))}
+                                value={(editData[TRANSLATION_FIELD] || '') as string}
+                                onChange={(e) => setEditData(prev => ({ ...prev, [TRANSLATION_FIELD]: e.target.value }))}
                                 className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
                                 style={{ borderRadius: '3px' }}
                                 onClick={(e) => e.stopPropagation()}
@@ -1010,7 +1031,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   e.stopPropagation();
                                   handleSave(entry);
                                 }}
-                                disabled={isLoading || !editData.dutch}
+                                disabled={isLoading || !editData[TRANSLATION_FIELD]}
                                 className="inline-flex items-center gap-1 px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-bold uppercase disabled:opacity-50 transition-colors"
                                 style={{ borderRadius: '3px' }}
                               >
@@ -1078,10 +1099,12 @@ const CodexEditor: React.FC<CodexEditorProps> = ({ onCodexUpdated }) => {
       if (!response.ok) throw new Error('Failed to load codex');
 
       const data = await response.json();
-      setEntries(data);
+      // Handle both new format { entries, availableLanguages, totalEntries } and old format (array directly)
+      const entriesArray = Array.isArray(data) ? data : (data.entries || []);
+      setEntries(entriesArray);
 
       // Extract unique categories
-      const uniqueCategories = Array.from(new Set(data.map((e: CodexEntry) => e.category))).filter(Boolean) as string[];
+      const uniqueCategories = Array.from(new Set(entriesArray.map((e: CodexEntry) => e.category))).filter(Boolean) as string[];
       setCategories(uniqueCategories);
     } catch (error) {
       console.error('Error loading codex:', error);

@@ -1,6 +1,21 @@
-import React, { useMemo, useCallback } from 'react';
+import React, { useMemo, useCallback, useState, useEffect, useRef } from 'react';
 import { useJsonHighlighting } from '../hooks/useJsonHighlighting';
 import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
+
+/**
+ * Context menu state for right-click on highlights
+ */
+interface ContextMenuState {
+  visible: boolean;
+  x: number;
+  y: number;
+  entry: {
+    english: string;
+    dutch: string;
+    type: 'character' | 'xlsx' | 'json' | 'clickable';
+    raw?: any;
+  } | null;
+}
 
 /**
  * TextHighlighter Component
@@ -110,8 +125,80 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   const { findJsonMatches, getHoverText } = useJsonHighlighting(jsonData);
   const { findCharacterMatches } = useCharacterHighlighting();
 
+  // Context menu state
+  const [contextMenu, setContextMenu] = useState<ContextMenuState>({
+    visible: false,
+    x: 0,
+    y: 0,
+    entry: null
+  });
+  const contextMenuRef = useRef<HTMLDivElement>(null);
+
   // Determine display text
   const displayText = eyeMode && currentTranslation ? currentTranslation : text;
+
+  // Close context menu on click outside or Escape key
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (contextMenuRef.current && !contextMenuRef.current.contains(e.target as Node)) {
+        setContextMenu(prev => ({ ...prev, visible: false }));
+      }
+    };
+
+    const handleEscape = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setContextMenu(prev => ({ ...prev, visible: false }));
+      }
+    };
+
+    if (contextMenu.visible) {
+      document.addEventListener('mousedown', handleClickOutside);
+      document.addEventListener('keydown', handleEscape);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener('keydown', handleEscape);
+    };
+  }, [contextMenu.visible]);
+
+  // Context menu handlers
+  const handleContextMenuInsert = useCallback(() => {
+    if (contextMenu.entry?.dutch) {
+      if (contextMenu.entry.type === 'character' || contextMenu.entry.type === 'clickable') {
+        onCharacterClick(contextMenu.entry.dutch);
+      } else if (onSuggestionClick) {
+        onSuggestionClick(contextMenu.entry.dutch);
+      }
+    }
+    setContextMenu(prev => ({ ...prev, visible: false }));
+  }, [contextMenu.entry, onCharacterClick, onSuggestionClick]);
+
+  const handleContextMenuCopyDutch = useCallback(() => {
+    if (contextMenu.entry?.dutch) {
+      navigator.clipboard.writeText(contextMenu.entry.dutch);
+    }
+    setContextMenu(prev => ({ ...prev, visible: false }));
+  }, [contextMenu.entry]);
+
+  const handleContextMenuCopyEnglish = useCallback(() => {
+    if (contextMenu.entry?.english) {
+      navigator.clipboard.writeText(contextMenu.entry.english);
+    }
+    setContextMenu(prev => ({ ...prev, visible: false }));
+  }, [contextMenu.entry]);
+
+  const handleContextMenuViewInPanel = useCallback(() => {
+    if (contextMenu.entry && onHighlightClick) {
+      const type = contextMenu.entry.type === 'clickable' ? 'character' : contextMenu.entry.type;
+      onHighlightClick(contextMenu.entry.raw || contextMenu.entry, type as 'json' | 'xlsx' | 'character');
+    }
+    setContextMenu(prev => ({ ...prev, visible: false }));
+  }, [contextMenu.entry, onHighlightClick]);
+
+  const closeContextMenu = useCallback(() => {
+    setContextMenu(prev => ({ ...prev, visible: false }));
+  }, []);
 
   /**
    * Find XLSX matches for highlighting - memoized
@@ -328,6 +415,71 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   }, [onCharacterClick, onCharacterNameClick, onHighlightClick]);
 
   /**
+   * Handle right-click context menu on highlights
+   */
+  const handleContextMenu = useCallback((e: React.MouseEvent) => {
+    const target = e.target as HTMLElement;
+    const dataType = target.getAttribute('data-type') as 'character' | 'xlsx' | 'json' | 'clickable' | null;
+
+    if (!dataType) return; // Not a highlight, let default context menu show
+
+    e.preventDefault();
+
+    // Extract data from the highlight element
+    const hoverData = target.getAttribute('data-hover') || '';
+    const characterName = target.getAttribute('data-character') || '';
+    const textContent = target.textContent || '';
+
+    // Parse hover data to extract english/dutch where possible
+    let english = textContent;
+    let dutch = '';
+
+    if (dataType === 'character' || dataType === 'clickable') {
+      // For characters, hover format is: "matchedName → dutch (english)"
+      const charMatch = hoverData.match(/^(.+?)\s*→\s*(.+?)\s*\((.+?)\)$/);
+      if (charMatch) {
+        english = charMatch[3]; // Full english name
+        dutch = charMatch[2];   // Dutch translation
+      } else {
+        // Fallback for clickable (just character name)
+        english = characterName || textContent;
+        // Try to find dutch from character matches
+        const { characterMatches } = matchResults;
+        const foundMatch = characterMatches.find(
+          m => m.english.toLowerCase() === english.toLowerCase() ||
+               m.matchedName.toLowerCase() === english.toLowerCase()
+        );
+        if (foundMatch) {
+          dutch = foundMatch.dutch;
+          english = foundMatch.english;
+        }
+      }
+    } else if (dataType === 'xlsx') {
+      // For XLSX, hover format is: "Dutch: xxx | Context: xxx | Speaker: xxx"
+      const dutchMatch = hoverData.match(/Dutch:\s*([^|]+)/);
+      if (dutchMatch) dutch = dutchMatch[1].trim();
+      english = textContent;
+    } else if (dataType === 'json') {
+      // Similar format for JSON
+      const dutchMatch = hoverData.match(/Dutch:\s*([^|]+)/);
+      if (dutchMatch) dutch = dutchMatch[1].trim();
+      english = textContent;
+    }
+
+    setContextMenu({
+      visible: true,
+      x: e.clientX,
+      y: e.clientY,
+      entry: {
+        english,
+        dutch,
+        type: dataType,
+        raw: { hover: hoverData, character: characterName }
+      }
+    });
+  }, [matchResults]);
+
+  /**
    * Extract and deduplicate translation suggestions - memoized
    */
   const translationSuggestions = useMemo(() => {
@@ -415,7 +567,73 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       <div
         dangerouslySetInnerHTML={{ __html: highlightedText }}
         onClick={handleTextClick}
+        onContextMenu={handleContextMenu}
       />
+
+      {/* Right-click context menu */}
+      {contextMenu.visible && contextMenu.entry && (
+        <div
+          ref={contextMenuRef}
+          className="highlight-context-menu"
+          style={{
+            left: contextMenu.x,
+            top: contextMenu.y
+          }}
+        >
+          {/* Insert option - only if dutch translation exists */}
+          {contextMenu.entry.dutch && (
+            <button
+              className="highlight-context-menu-item"
+              onClick={handleContextMenuInsert}
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+              </svg>
+              <span>Insert &quot;{contextMenu.entry.dutch.length > 20 ? contextMenu.entry.dutch.slice(0, 20) + '...' : contextMenu.entry.dutch}&quot;</span>
+            </button>
+          )}
+
+          {/* Copy Dutch */}
+          {contextMenu.entry.dutch && (
+            <button
+              className="highlight-context-menu-item"
+              onClick={handleContextMenuCopyDutch}
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              <span>Copy Dutch</span>
+            </button>
+          )}
+
+          {/* Copy English */}
+          <button
+            className="highlight-context-menu-item"
+            onClick={handleContextMenuCopyEnglish}
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+            </svg>
+            <span>Copy English</span>
+          </button>
+
+          {/* Divider */}
+          <div className="highlight-context-menu-divider" />
+
+          {/* View in Reference Panel */}
+          {onHighlightClick && (
+            <button
+              className="highlight-context-menu-item"
+              onClick={handleContextMenuViewInPanel}
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              <span>View in Reference Panel</span>
+            </button>
+          )}
+        </div>
+      )}
 
       {/* Suggestion buttons - deduplicated and sorted */}
       {shouldShowSuggestions && (
@@ -455,4 +673,34 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
   );
 };
 
-export default TextHighlighter;
+// Memoized export to prevent re-renders when only currentTranslation changes
+// (currentTranslation only affects display when eyeMode is true)
+export default React.memo(TextHighlighter, (prevProps, nextProps) => {
+  // Only re-render if props that affect the displayed content changed
+  // Skip re-render if only currentTranslation changed and eyeMode is false
+  if (
+    prevProps.text === nextProps.text &&
+    prevProps.highlightMode === nextProps.highlightMode &&
+    prevProps.className === nextProps.className &&
+    prevProps.showSuggestions === nextProps.showSuggestions &&
+    // Only compare jsonData/xlsxData by reference (they should be stable)
+    prevProps.jsonData === nextProps.jsonData &&
+    prevProps.xlsxData === nextProps.xlsxData &&
+    // If eyeMode is false on both, currentTranslation doesn't matter
+    (!prevProps.eyeMode && !nextProps.eyeMode)
+  ) {
+    return true; // Props are equal, skip re-render
+  }
+
+  // For eyeMode changes or when eyeMode is true, do full comparison
+  if (prevProps.eyeMode !== nextProps.eyeMode) {
+    return false; // Re-render
+  }
+
+  if (prevProps.eyeMode && nextProps.eyeMode) {
+    // In eye mode, currentTranslation matters
+    return prevProps.currentTranslation === nextProps.currentTranslation;
+  }
+
+  return false; // Default: re-render
+});

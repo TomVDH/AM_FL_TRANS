@@ -179,10 +179,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
   // Codex editor state - expanded by default for better discoverability
   const [showCodexEditor, setShowCodexEditor] = useState(true);
-  const [codexEntryCount, setCodexEntryCount] = useState<number>(0);
 
-  // Reference data availability check
-  const { hasLanguage, isLoading: isLoadingCodex, totalEntries } = useCodexLanguages();
+  // Reference data availability check - also provides entry count
+  const { hasLanguage, isLoading: isLoadingCodex, totalEntries, refresh: refreshCodex } = useCodexLanguages();
 
   // Extract column headers from the selected sheet
   const sheetColumns = useMemo(() => {
@@ -246,29 +245,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
     loadExistingFiles();
   }, []);
 
-  // Load codex entry count on mount
-  React.useEffect(() => {
-    const loadCodexCount = async () => {
-      try {
-        const response = await fetch('/api/codex');
-        if (response.ok) {
-          const data = await response.json();
-          setCodexEntryCount(Array.isArray(data) ? data.length : 0);
-        }
-      } catch (error) {
-        console.error('[SetupWizard] Error loading codex count:', error);
-      }
-    };
-    loadCodexCount();
-  }, []);
-
-  // Callback to refresh codex count when entries change
+  // Callback to refresh codex count when entries change - uses the hook's refresh
   const handleCodexUpdated = React.useCallback(() => {
-    fetch('/api/codex')
-      .then(res => res.json())
-      .then(data => setCodexEntryCount(Array.isArray(data) ? data.length : 0))
-      .catch(err => console.error('[SetupWizard] Error refreshing codex count:', err));
-  }, []);
+    refreshCodex();
+  }, [refreshCodex]);
 
   // Load JSON and CSV files on component mount
   React.useEffect(() => {
@@ -501,13 +481,15 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           <h1 className="text-5xl font-black mb-1 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
           <p className="text-sm font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase mb-3">asses.masses edition</p>
           <p className="text-gray-600 dark:text-gray-400 text-base">Choose your input method below</p>
-          {/* Dutch Translation Column Reminder */}
-          <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 text-xs font-medium" style={{ borderRadius: '3px' }}>
-            <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-              <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-            </svg>
-            <span>Target: Column {translationColumn} ({targetLanguageLabel})</span>
-          </div>
+          {/* Translation Target Indicator - only show when language is selected */}
+          {selectedLanguage && (
+            <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 text-xs font-medium" style={{ borderRadius: '3px' }}>
+              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
+              </svg>
+              <span>Target: Column {selectedLanguage.column} ({selectedLanguage.name})</span>
+            </div>
+          )}
         </div>
 
         {/* Main Form Card - Tighter padding */}
@@ -900,30 +882,53 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
         {/* Codex / Reference Data Editor */}
         <div className="mt-8 border-t border-gray-300 dark:border-gray-600 pt-6">
-          <button
-            onClick={() => setShowCodexEditor(!showCodexEditor)}
-            className="w-full flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 transition-all duration-200"
-            style={{ borderRadius: '3px' }}
-          >
-            <span className="flex items-center gap-2">
-              <span className="font-bold text-gray-900 dark:text-gray-100 text-sm uppercase tracking-wide">
-                Codex / Reference Data
-              </span>
-              {codexEntryCount > 0 && (
-                <span className="px-2 py-0.5 text-xs font-medium bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full">
-                  {codexEntryCount} entries
-                </span>
-              )}
-            </span>
-            <svg
-              className={`w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200 ${showCodexEditor ? 'rotate-180' : ''}`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setShowCodexEditor(!showCodexEditor)}
+              className="flex-1 flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 transition-all duration-200"
+              style={{ borderRadius: '3px' }}
             >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
+              <span className="flex items-center gap-2">
+                <span className="font-bold text-gray-900 dark:text-gray-100 text-sm uppercase tracking-wide">
+                  Codex / Reference Data
+                </span>
+                {totalEntries > 0 && (
+                  <span className="px-2 py-0.5 text-xs font-medium bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full">
+                    {totalEntries} entries
+                  </span>
+                )}
+              </span>
+              <svg
+                className={`w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200 ${showCodexEditor ? 'rotate-180' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            {/* Refresh button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                refreshCodex();
+                toast.success('Codex refreshed');
+              }}
+              disabled={isLoadingCodex}
+              className="h-[46px] w-[46px] flex items-center justify-center bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
+              style={{ borderRadius: '3px' }}
+              title="Refresh codex"
+            >
+              <svg
+                className={`w-4 h-4 text-gray-500 dark:text-gray-400 ${isLoadingCodex ? 'animate-spin' : ''}`}
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+            </button>
+          </div>
           {showCodexEditor && (
             <div className="mt-3 p-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>
               <CodexEditor onCodexUpdated={handleCodexUpdated} />

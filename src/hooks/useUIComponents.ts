@@ -4,7 +4,6 @@ export interface UIComponentsState {
   // Functions
   extractSpeakerName: (utterer: string) => string;
   generateGradientColors: () => string[];
-  categoryHasMatches: (category: string) => boolean;
 }
 
 /**
@@ -53,10 +52,10 @@ export const useUIComponents = (): UIComponentsState => {
   
   /**
    * Generate gradient colors for visual effects
-   * 
+   *
    * Creates a set of gradient colors for use in UI elements.
    * These colors cycle through different hues for visual variety.
-   * 
+   *
    * @returns Array of gradient color strings
    */
   const generateGradientColors = useCallback((): string[] => {
@@ -70,31 +69,15 @@ export const useUIComponents = (): UIComponentsState => {
       'from-teal-400 to-green-400',
       'from-orange-400 to-red-400',
     ];
-    
+
     // Shuffle the colors for variety
     const shuffled = [...colors].sort(() => Math.random() - 0.5);
     return shuffled.slice(0, 4); // Return 4 colors
   }, []);
-  
-  /**
-   * Check if a category has matching entries
-   * 
-   * Determines if a category has any matching entries for UI display.
-   * Used for conditional rendering of UI elements.
-   * 
-   * @param category - The category to check
-   * @returns True if category has matches, false otherwise
-   */
-  const categoryHasMatches = useCallback((category: string): boolean => {
-    // This function is still used by CodexPanel, so we'll keep it
-    // but it won't be used for highlighting anymore
-    return false;
-  }, []);
-  
+
   return {
     // Functions
     extractSpeakerName,
     generateGradientColors,
-    categoryHasMatches,
   };
 }; 

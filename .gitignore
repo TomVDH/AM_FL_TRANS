@@ -44,4 +44,12 @@ example-*.md
 
 # IDE
 .vscode/
-.idea/ 
+.idea/
+*storybook.log
+storybook-static
+
+# Playwright MCP screenshots
+.playwright-mcp/
+
+# Claude Code local settings
+.claude/settings.local.json
