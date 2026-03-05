@@ -25,6 +25,7 @@ export interface TranslationState {
   // Core translation state
   sourceTexts: string[];
   utterers: string[];
+  contextNotes: string[];
   translations: string[];
   currentIndex: number;
   currentTranslation: string;
@@ -81,6 +82,7 @@ export interface TranslationState {
   // Setters
   setSourceTexts: (texts: string[]) => void;
   setUtterers: (utterers: string[]) => void;
+  setContextNotes: (notes: string[]) => void;
   setTranslations: (translations: string[]) => void;
   setCurrentIndex: (index: number) => void;
   setCurrentTranslation: (translation: string | ((prev: string) => string)) => void;
@@ -151,6 +153,7 @@ export interface TranslationState {
   finishSheet: () => void;
   enterReviewMode: () => void;
   exitReviewMode: () => void;
+  resumeTranslation: () => void;
   advanceToNextSheet: () => void;
   updateTranslationAtIndex: (index: number, value: string) => void;
   exportToCsv: () => void;
@@ -170,10 +173,17 @@ export interface TranslationState {
  * 
  * @returns Complete translation state and functions
  */
-export const useTranslationState = (): TranslationState => {
+export interface UseTranslationStateProps {
+  /** Callback when a translation is saved (on submit/previous with changes) */
+  onTranslationSaved?: (source: string, translation: string, file: string, sheet: string, row: number) => void;
+}
+
+export const useTranslationState = (props?: UseTranslationStateProps): TranslationState => {
+  const onTranslationSaved = props?.onTranslationSaved;
   // ========== Core Translation State ==========
   const [sourceTexts, setSourceTexts] = useState<string[]>([]);
   const [utterers, setUtterers] = useState<string[]>([]);
+  const [contextNotes, setContextNotes] = useState<string[]>([]);
   const [translations, setTranslations] = useState<string[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentTranslation, setCurrentTranslation] = useState('');
@@ -460,9 +470,12 @@ export const useTranslationState = (): TranslationState => {
   
   /**
    * Handle back to setup button click
+   * Resets all completion state to allow fresh start on re-entry
    */
   const handleBackToSetup = useCallback(() => {
     setIsStarted(false);
+    setShowCompletionSummary(false);
+    setShowReviewMode(false);
   }, []);
   
   /**
@@ -483,6 +496,12 @@ export const useTranslationState = (): TranslationState => {
         toast.success('Translation saved', {
           duration: 1500,
         });
+
+        // Save to translation memory (always, not just LIVE EDIT)
+        const source = sourceTexts[currentIndex];
+        if (source && onTranslationSaved) {
+          onTranslationSaved(source, currentTranslation.trim(), loadedFileName, selectedSheet, startRow + currentIndex);
+        }
       }
     }
 
@@ -492,7 +511,7 @@ export const useTranslationState = (): TranslationState => {
       const nextTranslation = hasChanged ? newTranslations[currentIndex + 1] : translations[currentIndex + 1];
       setCurrentTranslation(nextTranslation === '[BLANK, REMOVE LATER]' ? '' : nextTranslation || '');
     }
-  }, [currentIndex, currentTranslation, sourceTexts.length, translations, hasCurrentEntryChanged]);
+  }, [currentIndex, currentTranslation, sourceTexts, sourceTexts.length, translations, hasCurrentEntryChanged, loadedFileName, selectedSheet, startRow, onTranslationSaved]);
   
   /**
    * Handle previous button click
@@ -507,13 +526,19 @@ export const useTranslationState = (): TranslationState => {
       if (hasChanged) {
         newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
         setTranslations(newTranslations);
+
+        // Save to translation memory (always, not just LIVE EDIT)
+        const source = sourceTexts[currentIndex];
+        if (source && currentTranslation.trim() !== '' && onTranslationSaved) {
+          onTranslationSaved(source, currentTranslation.trim(), loadedFileName, selectedSheet, startRow + currentIndex);
+        }
       }
 
       setCurrentIndex(currentIndex - 1);
       const prevTranslation = hasChanged ? newTranslations[currentIndex - 1] : translations[currentIndex - 1];
       setCurrentTranslation(prevTranslation === '[BLANK, REMOVE LATER]' ? '' : prevTranslation || '');
     }
-  }, [currentIndex, currentTranslation, translations, hasCurrentEntryChanged]);
+  }, [currentIndex, currentTranslation, sourceTexts, translations, hasCurrentEntryChanged, loadedFileName, selectedSheet, startRow, onTranslationSaved]);
   
   /**
    * Handle source text input
@@ -682,6 +707,7 @@ export const useTranslationState = (): TranslationState => {
       const range = XLSX.utils.decode_range(worksheet['!ref'] || 'A1:A1');
       const sourceTexts: string[] = [];
       const utterers: string[] = [];
+      const contextNotes: string[] = [];
       const existingTranslations: string[] = [];
 
       // Translation column is configurable (defaults to J/index 9 for Dutch)
@@ -690,15 +716,19 @@ export const useTranslationState = (): TranslationState => {
       for (let row = startRow - 1; row <= range.e.r; row++) {
         const sourceCell = XLSX.utils.encode_cell({ r: row, c: sourceColumn.charCodeAt(0) - 65 });
         const uttererCell = XLSX.utils.encode_cell({ r: row, c: uttererColumn.charCodeAt(0) - 65 });
+        // Context notes are in column B (Description column)
+        const contextCell = XLSX.utils.encode_cell({ r: row, c: 1 }); // Column B = index 1
         const targetCell = XLSX.utils.encode_cell({ r: row, c: targetColumnIndex });
 
         const sourceValue = worksheet[sourceCell]?.v;
         const uttererValue = worksheet[uttererCell]?.v;
+        const contextValue = worksheet[contextCell]?.v;
         const targetValue = worksheet[targetCell]?.v;
 
         if (sourceValue && sourceValue.toString().trim()) {
           sourceTexts.push(sourceValue.toString().trim());
           utterers.push(uttererValue ? uttererValue.toString().trim() : '');
+          contextNotes.push(contextValue ? contextValue.toString().trim() : '');
           // Load existing translation or mark as blank
           const existingTranslation = targetValue ? targetValue.toString().trim() : '';
           existingTranslations.push(existingTranslation || '[BLANK, REMOVE LATER]');
@@ -707,6 +737,7 @@ export const useTranslationState = (): TranslationState => {
 
       setSourceTexts(sourceTexts);
       setUtterers(utterers);
+      setContextNotes(contextNotes);
       setTranslations(existingTranslations);
       setOriginalTranslations(existingTranslations); // Track originals for change detection
       setCurrentIndex(0);
@@ -720,7 +751,7 @@ export const useTranslationState = (): TranslationState => {
       console.error('Error processing Excel data:', error);
       toast.error('Failed to process Excel data. Please check your column settings.');
     }
-  }, [workbookData, selectedSheet, sourceColumn, uttererColumn, startRow, translationColumnIndex, setSourceTexts, setUtterers, setTranslations, setOriginalTranslations, setCurrentIndex, setCurrentTranslation]);
+  }, [workbookData, selectedSheet, sourceColumn, uttererColumn, startRow, translationColumnIndex, setSourceTexts, setUtterers, setContextNotes, setTranslations, setOriginalTranslations, setCurrentIndex, setCurrentTranslation]);
 
   /**
    * Handle sheet change
@@ -1104,6 +1135,16 @@ export const useTranslationState = (): TranslationState => {
   }, []);
 
   /**
+   * Resume translation - exit completion flow and return to translation screen
+   * Allows user to continue editing the current sheet after finishing
+   */
+  const resumeTranslation = useCallback(() => {
+    setShowCompletionSummary(false);
+    setShowReviewMode(false);
+    // Keep isStarted = true so we stay in translation mode
+  }, []);
+
+  /**
    * Advance to next sheet in the workbook
    */
   const advanceToNextSheet = useCallback(() => {
@@ -1172,6 +1213,7 @@ export const useTranslationState = (): TranslationState => {
     // State
     sourceTexts,
     utterers,
+    contextNotes,
     translations,
     currentIndex,
     currentTranslation,
@@ -1213,6 +1255,7 @@ export const useTranslationState = (): TranslationState => {
     // Setters
     setSourceTexts,
     setUtterers,
+    setContextNotes,
     setTranslations,
     setCurrentIndex,
     setCurrentTranslation,
@@ -1284,6 +1327,7 @@ export const useTranslationState = (): TranslationState => {
     finishSheet,
     enterReviewMode,
     exitReviewMode,
+    resumeTranslation,
     advanceToNextSheet,
     updateTranslationAtIndex,
     exportToCsv,

@@ -23,6 +23,15 @@ interface XlsxMatchWrapper {
   context: string;
 }
 
+interface EditedTranslationMatch {
+  sourceEnglish: string;
+  translatedText: string;
+  index: number;
+  rowNumber: number;
+  isCurrentEntry: boolean;
+  utterer?: string;
+}
+
 interface ReferenceToolsPanelProps {
   // Mode and tab state
   xlsxMode: boolean;
@@ -72,9 +81,13 @@ interface ReferenceToolsPanelProps {
   // Utility functions
   darkMode: boolean;
   copyJsonField: (text: string, fieldName: string) => void;
+
+  // Edited translations data (optional, for backward compatibility)
+  editedEntries?: EditedTranslationMatch[];
+  onJumpToEntry?: (index: number) => void;
 }
 
-type TabType = 'codex' | 'search';
+type TabType = 'codex' | 'search' | 'edited';
 
 const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   xlsxMode,
@@ -108,6 +121,8 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   handleHighlightClick: _handleHighlightClick,
   darkMode: _darkMode,
   copyJsonField: _copyJsonField,
+  editedEntries = [],
+  onJumpToEntry,
 }) => {
   // Suppress unused variable warnings for props kept for API compatibility
   void _xlsxViewerTab; void _setXlsxViewerTab; void _highlightingJsonData;
@@ -232,7 +247,7 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
         </button>
       </div>
 
-      {/* Tab Navigation - 2 Tabs Only */}
+      {/* Tab Navigation - 3 Tabs */}
       <div className="flex gap-1 mb-3 p-0.5 bg-gray-50 dark:bg-gray-900" style={{ borderRadius: '3px' }}>
         {/* Codex Tab */}
         <button
@@ -270,6 +285,29 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
             </svg>
             Search
+          </span>
+        </button>
+
+        {/* Edited Tab - Orange */}
+        <button
+          onClick={() => handleTabChange('edited')}
+          className={`flex-1 px-3 py-1.5 text-xs font-medium transition-all duration-200 ${
+            activeTab === 'edited'
+              ? 'bg-orange-600 dark:bg-orange-500 text-white'
+              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+          }`}
+          style={{ borderRadius: '2px' }}
+        >
+          <span className="flex items-center justify-center gap-1.5">
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+            </svg>
+            Edited
+            {editedEntries.length > 0 && (
+              <span className="text-[9px] px-1.5 py-0.5 bg-orange-700 dark:bg-orange-400 text-white dark:text-gray-900 font-bold" style={{ borderRadius: '2px' }}>
+                {editedEntries.length}
+              </span>
+            )}
           </span>
         </button>
       </div>
@@ -629,6 +667,121 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
       )}
 
       {/* Global tab content merged into Search tab above */}
+
+      {/* Edited Tab Content */}
+      {activeTab === 'edited' && (
+        <div className="space-y-3">
+          {/* Info header */}
+          <div className="flex items-center gap-2 text-xs text-orange-600 dark:text-orange-400">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Your edited translations - click to jump, + to insert</span>
+          </div>
+
+          {/* Results list */}
+          <div className="border border-gray-200 dark:border-gray-600 overflow-hidden max-h-80 overflow-y-auto custom-scrollbar" style={{ borderRadius: '3px' }}>
+            {editedEntries.length === 0 ? (
+              <div className="text-center py-8 text-gray-500 dark:text-gray-400 text-xs">
+                <svg className="w-8 h-8 mx-auto mb-2 text-gray-300 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                </svg>
+                No edited translations yet
+              </div>
+            ) : (
+              editedEntries.map((entry, idx) => (
+                <div
+                  key={`edited-${entry.index}-${idx}`}
+                  className={`group px-3 py-2.5 transition-colors hover:bg-orange-50 dark:hover:bg-orange-900/20 cursor-pointer ${
+                    idx !== 0 ? 'border-t border-gray-100 dark:border-gray-700' : ''
+                  } ${entry.isCurrentEntry ? 'bg-orange-50 dark:bg-orange-900/30' : ''}`}
+                  onClick={() => onJumpToEntry?.(entry.index)}
+                >
+                  {/* Header row with metadata and actions */}
+                  <div className="flex items-center justify-between mb-1.5">
+                    <div className="flex items-center gap-2">
+                      {/* Row number badge - orange */}
+                      <span className="text-[10px] font-mono font-medium px-1.5 py-0.5 bg-orange-100 dark:bg-orange-900/50 text-orange-700 dark:text-orange-300" style={{ borderRadius: '2px' }}>
+                        Row {entry.rowNumber}
+                      </span>
+
+                      {/* Orange dot */}
+                      <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+
+                      {/* Current entry indicator */}
+                      {entry.isCurrentEntry && (
+                        <span className="text-[9px] px-1.5 py-0.5 bg-orange-200 dark:bg-orange-800 text-orange-800 dark:text-orange-200 font-medium" style={{ borderRadius: '2px' }}>
+                          Current
+                        </span>
+                      )}
+
+                      {/* Utterer if available */}
+                      {entry.utterer && (
+                        <span className="text-[10px] px-1.5 py-0.5 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400" style={{ borderRadius: '2px' }}>
+                          {entry.utterer}
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Actions */}
+                    <div className="flex items-center gap-1">
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          insertTranslatedSuggestion(entry.translatedText);
+                        }}
+                        className="p-1 bg-orange-100 dark:bg-orange-900/50 hover:bg-orange-200 dark:hover:bg-orange-800 text-orange-600 dark:text-orange-400 transition-colors"
+                        style={{ borderRadius: '2px' }}
+                        title={`Insert translation`}
+                      >
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+                        </svg>
+                      </button>
+                      <button
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          copyToClipboard(entry.translatedText);
+                        }}
+                        className="p-1 bg-gray-100 dark:bg-gray-600 hover:bg-gray-200 dark:hover:bg-gray-500 text-gray-600 dark:text-gray-300 transition-colors"
+                        style={{ borderRadius: '2px' }}
+                        title="Copy to clipboard"
+                      >
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Source text */}
+                  <div className="mb-1">
+                    <span className="text-[9px] uppercase tracking-wide text-gray-400 dark:text-gray-500 mr-1">EN:</span>
+                    <span className="text-xs text-gray-600 dark:text-gray-400 whitespace-pre-wrap break-words">
+                      {entry.sourceEnglish}
+                    </span>
+                  </div>
+
+                  {/* Translation */}
+                  <div>
+                    <span className="text-[9px] uppercase tracking-wide text-gray-400 dark:text-gray-500 mr-1">NL:</span>
+                    <span className="text-xs font-medium text-orange-700 dark:text-orange-300 whitespace-pre-wrap break-words">
+                      {entry.translatedText}
+                    </span>
+                  </div>
+                </div>
+              ))
+            )}
+          </div>
+
+          {/* Results count */}
+          {editedEntries.length > 0 && (
+            <div className="text-[10px] text-gray-400 dark:text-gray-500 text-right">
+              {editedEntries.length} edited translation{editedEntries.length !== 1 ? 's' : ''}
+            </div>
+          )}
+        </div>
+      )}
 
       {/* Keyboard hint */}
       <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">

@@ -25,6 +25,8 @@ import ReferenceToolsPanel from './ReferenceToolsPanel';
 import QuickReferenceBar from './QuickReferenceBar';
 import ResetConfirmationModal from './ResetConfirmationModal';
 import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
+import { useEditedTranslations } from '../hooks/useEditedTranslations';
+import { useTranslationMemory } from '../hooks/useTranslationMemory';
 import { useWowMode } from '../hooks/useWowMode';
 import { celebrateMilestone } from '../utils/celebrations';
 
@@ -32,9 +34,21 @@ import { celebrateMilestone } from '../utils/celebrations';
 const EMPTY_XLSX_DATA: any[] = [];
 
 const TranslationHelper: React.FC = () => {
+  // Translation memory - must be called before useTranslationState to pass callback
+  const {
+    findMemoryMatches,
+    saveToMemory,
+  } = useTranslationMemory();
+
+  // Wrapper callback for saving to translation memory
+  const handleTranslationSaved = useCallback((source: string, translation: string, file: string, sheet: string, row: number) => {
+    saveToMemory({ source, translation, file, sheet, row });
+  }, [saveToMemory]);
+
   const {
     sourceTexts,
     utterers,
+    contextNotes,
     translations,
     currentIndex,
     currentTranslation,
@@ -129,10 +143,11 @@ const TranslationHelper: React.FC = () => {
     finishSheet,
     enterReviewMode,
     exitReviewMode,
+    resumeTranslation,
     advanceToNextSheet,
     updateTranslationAtIndex,
     exportToCsv,
-  } = useTranslationState();
+  } = useTranslationState({ onTranslationSaved: handleTranslationSaved });
 
   const copyJsonField = (text: string, fieldName: string) => {
     if (text) {
@@ -416,6 +431,63 @@ const TranslationHelper: React.FC = () => {
       context: match.context
     }));
   }, [findXlsxMatches]);
+
+  // Edited translations tracking for repetition detection
+  const {
+    editedEntries,
+    findEditedMatches,
+  } = useEditedTranslations({
+    sourceTexts,
+    translations,
+    originalTranslations,
+    utterers,
+    currentIndex,
+    startRow,
+  });
+
+  // Combine edited matches with memory matches for QuickReferenceBar
+  const findCombinedEditedMatches = useCallback((text: string) => {
+    const sessionMatches = findEditedMatches(text);
+    const memoryMatches = findMemoryMatches(text);
+
+    // Combine and deduplicate by translation text
+    const seen = new Set<string>();
+    const combined = [];
+
+    // Session matches first (more recent/relevant)
+    for (const match of sessionMatches) {
+      const key = match.translatedText.toLowerCase();
+      if (!seen.has(key)) {
+        seen.add(key);
+        combined.push(match);
+      }
+    }
+
+    // Then memory matches
+    for (const match of memoryMatches) {
+      const key = match.translatedText.toLowerCase();
+      if (!seen.has(key)) {
+        seen.add(key);
+        combined.push({
+          sourceEnglish: match.sourceEnglish,
+          translatedText: match.translatedText,
+          index: -1, // Memory matches don't have a session index
+          rowNumber: match.row || 0,
+          utterer: undefined,
+        });
+      }
+    }
+
+    return combined;
+  }, [findEditedMatches, findMemoryMatches]);
+
+  // Handle jumping to a specific entry (for edited translations)
+  const handleJumpToEntry = useCallback((index: number) => {
+    if (index >= 0 && index < sourceTexts.length) {
+      setCurrentIndex(index);
+      setCurrentTranslation(translations[index] || '');
+    }
+  }, [sourceTexts.length, setCurrentIndex, setCurrentTranslation, translations]);
 
   // Handle character name click for scrolling to context search
   const handleCharacterNameClick = (characterName: string) => {
@@ -991,6 +1063,7 @@ const TranslationHelper: React.FC = () => {
             onExport={exportToCsv}
             onNextSheet={advanceToNextSheet}
             onBackToSetup={handleBackToSetup}
+            onContinueEditing={resumeTranslation}
           />
         ) : showReviewMode ? (
           <TranslationReview
@@ -1196,6 +1269,15 @@ const TranslationHelper: React.FC = () => {
                       </button>
                     </div>
 
+                    {/* Context Notes in Compact Mode */}
+                    {contextNotes[currentIndex] && (
+                      <div className="mx-2 mt-1 px-2 py-1 bg-amber-900/30 border border-amber-700/50 rounded">
+                        <span className="text-xs text-amber-300/80 italic leading-tight">
+                          {contextNotes[currentIndex]}
+                        </span>
+                      </div>
+                    )}
+
                     {/* Main dialogue content area */}
                     <div
                       className="gamepad-dialogue-content relative overflow-y-auto custom-scrollbar"
@@ -1340,6 +1422,20 @@ const TranslationHelper: React.FC = () => {
                       </div>
                     </div>
 
+                    {/* Context Notes - Scene direction/description from column B */}
+                    {contextNotes[currentIndex] && (
+                      <div className="px-4 py-2 bg-amber-50 dark:bg-amber-900/20 border-b border-amber-200 dark:border-amber-800/50">
+                        <div className="flex items-start gap-2">
+                          <svg className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                          <span className="text-sm text-amber-800 dark:text-amber-300 italic leading-snug">
+                            {contextNotes[currentIndex]}
+                          </span>
+                        </div>
+                      </div>
+                    )}
+
                     {/* Source Text - Spotlight */}
                     <div className="px-5 py-4">
                       <div className="text-xl font-medium leading-relaxed text-gray-900 dark:text-gray-100">
@@ -1413,10 +1509,12 @@ const TranslationHelper: React.FC = () => {
               sourceText={sourceTexts[currentIndex] || ''}
               findCharacterMatches={findCharacterMatches}
               findXlsxMatches={findXlsxMatches}
+              findEditedMatches={findCombinedEditedMatches}
               onInsert={insertCharacterName}
               onOpenReferenceTools={() => {
                 if (!xlsxMode) toggleXlsxMode();
               }}
+              onJumpToEntry={handleJumpToEntry}
               isVisible={xlsxMode || highlightMode}
             />
 
@@ -1993,6 +2091,8 @@ const TranslationHelper: React.FC = () => {
           handleHighlightClick={handleHighlightClick}
           darkMode={darkMode}
           copyJsonField={copyJsonField}
+          editedEntries={editedEntries}
+          onJumpToEntry={handleJumpToEntry}
         />
 
         {/* Codex Reference Panel - HIDDEN FOR NOW */}

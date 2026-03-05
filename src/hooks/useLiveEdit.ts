@@ -26,9 +26,12 @@ export interface UseLiveEditProps {
   startRow: number;
   currentIndex: number;
   currentTranslation: string;
+  sourceText: string;
   originalTranslations: string[];
   setOriginalTranslations: (translations: string[]) => void;
   hasCurrentEntryChanged: () => boolean;
+  /** Optional callback called after successful sync - use for translation memory */
+  onSyncSuccess?: (source: string, translation: string, file: string, sheet: string, row: number) => void;
 }
 
 export interface LiveEditState {
@@ -61,9 +64,11 @@ export const useLiveEdit = ({
   startRow,
   currentIndex,
   currentTranslation,
+  sourceText,
   originalTranslations,
   setOriginalTranslations,
   hasCurrentEntryChanged,
+  onSyncSuccess,
 }: UseLiveEditProps): LiveEditState => {
   // ========== State ==========
   const [liveEditMode, setLiveEditMode] = useState(false);
@@ -144,6 +149,17 @@ export const useLiveEdit = ({
         setSyncStatus('synced');
         setLastSyncTime(new Date());
         toast.success(`Saved ${cellRef} to ${loadedFileName}`);
+
+        // Call sync success callback (for translation memory)
+        if (onSyncSuccess && sourceText && currentTranslation.trim()) {
+          onSyncSuccess(
+            sourceText,
+            currentTranslation.trim(),
+            loadedFileName,
+            selectedSheet,
+            startRow + currentIndex
+          );
+        }
       } else {
         setSyncStatus('error');
         toast.error(`Sync failed: ${data.error || 'Unknown error'}`);
@@ -162,8 +178,10 @@ export const useLiveEdit = ({
     startRow,
     currentIndex,
     currentTranslation,
+    sourceText,
     originalTranslations,
     setOriginalTranslations,
+    onSyncSuccess,
   ]);
 
   // ========== Return ==========

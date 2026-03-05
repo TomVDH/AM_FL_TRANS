@@ -74,6 +74,11 @@ const SheetSelector: React.FC<SheetSelectorProps> = ({
     );
   }, [sheetsWithInfo, searchTerm]);
 
+  // Calculate total rows across all sheets
+  const totalRows = useMemo(() => {
+    return sheetsWithInfo.reduce((sum, sheet) => sum + (sheet.rowCount || 0), 0);
+  }, [sheetsWithInfo]);
+
   // Extract episode/category from sheet name for grouping display
   const getSheetCategory = (name: string): string => {
     const match = name.match(/^(E\d+)_/i);
@@ -184,6 +189,18 @@ const SheetSelector: React.FC<SheetSelectorProps> = ({
               </div>
             </button>
           ))}
+        </div>
+      )}
+
+      {/* Total rows across all sheets */}
+      {totalRows > 0 && (
+        <div className="flex items-center justify-between pt-2 border-t border-gray-200 dark:border-gray-700 mt-2">
+          <span className="text-[10px] text-gray-500 dark:text-gray-400 uppercase tracking-wide font-medium">
+            Total to translate
+          </span>
+          <span className="text-xs font-bold text-orange-600 dark:text-orange-400">
+            {totalRows.toLocaleString()} rows
+          </span>
         </div>
       )}
     </div>

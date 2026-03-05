@@ -21,12 +21,22 @@ interface XlsxMatch {
   fileName?: string;
 }
 
+interface EditedMatch {
+  sourceEnglish: string;
+  translatedText: string;
+  index: number;
+  rowNumber: number;
+  utterer?: string;
+}
+
 interface QuickReferenceBarProps {
   sourceText: string;
   findCharacterMatches: (text: string) => CodexMatch[];
   findXlsxMatches?: (text: string) => XlsxMatch[];
+  findEditedMatches?: (text: string) => EditedMatch[];
   onInsert: (dutchText: string) => void;
   onOpenReferenceTools?: () => void;
+  onJumpToEntry?: (index: number) => void;
   isVisible: boolean;
 }
 
@@ -43,8 +53,10 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
   sourceText,
   findCharacterMatches,
   findXlsxMatches,
+  findEditedMatches,
   onInsert,
   onOpenReferenceTools,
+  onJumpToEntry,
   isVisible,
 }) => {
   const [expandedView, setExpandedView] = useState(false);
@@ -112,9 +124,39 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
     return Array.from(groupedMap.values()).slice(0, 6);
   }, [sourceText, findXlsxMatches]);
 
+  // Auto-detect edited matches (repetitions with translations)
+  const editedMatches = useMemo(() => {
+    if (!sourceText || !findEditedMatches) return [];
+    const allMatches = findEditedMatches(sourceText);
+
+    // Group by translation to deduplicate
+    const groupedMap = new Map<string, {
+      match: EditedMatch;
+      count: number;
+    }>();
+
+    allMatches.forEach(match => {
+      if (!match.translatedText) return;
+
+      const key = match.translatedText.toLowerCase();
+      if (groupedMap.has(key)) {
+        const existing = groupedMap.get(key)!;
+        existing.count++;
+      } else {
+        groupedMap.set(key, {
+          match,
+          count: 1,
+        });
+      }
+    });
+
+    return Array.from(groupedMap.values()).slice(0, 4);
+  }, [sourceText, findEditedMatches]);
+
   const totalCodexInstances = codexMatches.reduce((sum, m) => sum + m.count, 0);
   const totalXlsxInstances = xlsxMatches.reduce((sum, m) => sum + m.count, 0);
-  const totalMatches = codexMatches.length + xlsxMatches.length;
+  const totalEditedInstances = editedMatches.reduce((sum, m) => sum + m.count, 0);
+  const totalMatches = codexMatches.length + xlsxMatches.length + editedMatches.length;
 
   if (!isVisible || totalMatches === 0) {
     return null;
@@ -122,7 +164,8 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
 
   const visibleCodexMatches = expandedView ? codexMatches : codexMatches.slice(0, MAX_VISIBLE);
   const visibleXlsxMatches = expandedView ? xlsxMatches : xlsxMatches.slice(0, Math.max(0, MAX_VISIBLE - visibleCodexMatches.length));
-  const hiddenCount = totalMatches - (visibleCodexMatches.length + visibleXlsxMatches.length);
+  const visibleEditedMatches = expandedView ? editedMatches : editedMatches.slice(0, Math.max(0, MAX_VISIBLE - visibleCodexMatches.length - visibleXlsxMatches.length));
+  const hiddenCount = totalMatches - (visibleCodexMatches.length + visibleXlsxMatches.length + visibleEditedMatches.length);
 
   return (
     <div
@@ -146,6 +189,10 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
             {totalCodexInstances > 0 && totalXlsxInstances > 0 && ' · '}
             {totalXlsxInstances > 0 && (
               <span className="text-green-600 dark:text-green-400">{totalXlsxInstances} xlsx</span>
+            )}
+            {(totalCodexInstances > 0 || totalXlsxInstances > 0) && totalEditedInstances > 0 && ' · '}
+            {totalEditedInstances > 0 && (
+              <span className="text-orange-600 dark:text-orange-400">{totalEditedInstances} edited</span>
             )}
           </span>
         </div>
@@ -255,6 +302,50 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
               className="ml-1 p-1 bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 hover:bg-green-200 dark:hover:bg-green-800 transition-all duration-200 opacity-60 group-hover:opacity-100"
               style={{ borderRadius: '2px', minWidth: '20px', minHeight: '20px' }}
               title={`Insert "${item.match.translatedDutch}"`}
+            >
+              <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+              </svg>
+            </button>
+          </div>
+        ))}
+
+        {/* Edited matches - Orange (repetitions from your own work) */}
+        {visibleEditedMatches.map((item, index) => (
+          <div
+            key={`edited-${item.match.index}-${index}`}
+            className="group flex items-center gap-0.5 bg-white dark:bg-gray-800 border border-orange-200 dark:border-orange-700 px-2 py-1 shadow-sm hover:shadow-md hover:border-orange-400 dark:hover:border-orange-500 transition-all duration-200 cursor-pointer"
+            style={{ borderRadius: '3px' }}
+            onClick={() => onJumpToEntry?.(item.match.index)}
+            title={`Row ${item.match.rowNumber} - Your translation. Click to jump.`}
+          >
+            {/* Edited indicator */}
+            <span className="w-1.5 h-1.5 rounded-full mr-0.5 bg-orange-500" />
+
+            {/* Row number badge */}
+            <span className="text-[9px] font-mono px-1 py-0.5 bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 mr-0.5" style={{ borderRadius: '2px' }}>
+              {item.match.rowNumber}
+            </span>
+
+            {/* Arrow */}
+            <svg className="w-2.5 h-2.5 text-orange-400 dark:text-orange-500 mx-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+            </svg>
+
+            {/* Translation */}
+            <span className="text-[11px] font-semibold text-orange-700 dark:text-orange-300 max-w-[120px] truncate">
+              {item.match.translatedText}
+            </span>
+
+            {/* Insert button */}
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onInsert(item.match.translatedText);
+              }}
+              className="ml-1 p-1 bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 hover:bg-orange-200 dark:hover:bg-orange-800 transition-all duration-200 opacity-60 group-hover:opacity-100"
+              style={{ borderRadius: '2px', minWidth: '20px', minHeight: '20px' }}
+              title={`Insert "${item.match.translatedText}"`}
             >
               <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
