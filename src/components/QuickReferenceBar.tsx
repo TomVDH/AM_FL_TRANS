@@ -1,6 +1,7 @@
 'use client';
 
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useState, useEffect, useCallback } from 'react';
+import CharacterInfoCard from './CharacterInfoCard';
 
 interface CodexMatch {
   name: string;
@@ -8,6 +9,9 @@ interface CodexMatch {
   dutch: string;
   description?: string;
   category?: string;
+  bio?: string;
+  gender?: string;
+  dialogueStyle?: string;
   startIndex: number;
   endIndex: number;
 }
@@ -60,7 +64,38 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
   isVisible,
 }) => {
   const [expandedView, setExpandedView] = useState(false);
+  const [expandedCharacter, setExpandedCharacter] = useState<string | null>(null);
   const MAX_VISIBLE = 4;
+
+  // Close character card when source text changes and character is no longer present
+  useEffect(() => {
+    if (expandedCharacter && sourceText) {
+      const stillPresent = findCharacterMatches(sourceText).some(
+        m => m.english === expandedCharacter
+      );
+      if (!stillPresent) {
+        setExpandedCharacter(null);
+      }
+    }
+  }, [sourceText, expandedCharacter, findCharacterMatches]);
+
+  // Close on Escape key
+  const handleKeyDown = useCallback((e: KeyboardEvent) => {
+    if (e.key === 'Escape' && expandedCharacter) {
+      setExpandedCharacter(null);
+    }
+  }, [expandedCharacter]);
+
+  useEffect(() => {
+    if (expandedCharacter) {
+      document.addEventListener('keydown', handleKeyDown);
+      return () => document.removeEventListener('keydown', handleKeyDown);
+    }
+  }, [expandedCharacter, handleKeyDown]);
+
+  // Helper: does this character have rich info?
+  const hasCharacterInfo = (match: CodexMatch) =>
+    match.category === 'CHARACTER' && (match.bio || match.gender || match.dialogueStyle);
 
   // Auto-detect codex matches from current source text
   const codexMatches = useMemo(() => {
@@ -223,48 +258,79 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
       {/* Match Pills - Codex (purple) + XLSX (green) */}
       <div className="flex flex-wrap gap-1.5">
         {/* Codex matches - Purple */}
-        {visibleCodexMatches.map((item, index) => (
-          <div
-            key={`codex-${item.match.english}-${index}`}
-            className="group flex items-center gap-0.5 bg-white dark:bg-gray-800 border border-purple-200 dark:border-purple-700 px-2 py-1 shadow-sm hover:shadow-md hover:border-purple-400 dark:hover:border-purple-500 transition-all duration-200 cursor-pointer"
-            style={{ borderRadius: '3px' }}
-            onClick={() => onOpenReferenceTools?.()}
-            title={`Found ${item.count}x - Click to open Reference Tools`}
-          >
-            {/* Category indicator */}
-            <span className="w-1.5 h-1.5 rounded-full mr-0.5 bg-purple-500" />
-
-            {/* English name - smaller */}
-            <span className="text-[11px] text-gray-600 dark:text-gray-400 max-w-[100px] truncate">
-              {item.match.english}
-            </span>
-
-            {/* Arrow - smaller */}
-            <svg className="w-2.5 h-2.5 text-purple-400 dark:text-purple-500 mx-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-
-            {/* Translation - smaller */}
-            <span className="text-[11px] font-semibold text-purple-700 dark:text-purple-300 max-w-[100px] truncate">
-              {item.match.dutch}
-            </span>
-
-            {/* Insert button - smaller, stops propagation */}
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                onInsert(item.match.dutch);
+        {visibleCodexMatches.map((item, index) => {
+          const hasInfo = hasCharacterInfo(item.match);
+          const isExpanded = expandedCharacter === item.match.english;
+          return (
+            <div
+              key={`codex-${item.match.english}-${index}`}
+              className={`group flex items-center gap-0.5 bg-white dark:bg-gray-800 border px-2 py-1 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer ${
+                isExpanded
+                  ? 'border-purple-400 dark:border-purple-500 ring-1 ring-purple-300 dark:ring-purple-600'
+                  : 'border-purple-200 dark:border-purple-700 hover:border-purple-400 dark:hover:border-purple-500'
+              }`}
+              style={{ borderRadius: '3px' }}
+              onClick={() => {
+                if (hasInfo) {
+                  setExpandedCharacter(isExpanded ? null : item.match.english);
+                } else {
+                  onOpenReferenceTools?.();
+                }
               }}
-              className="ml-1 p-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-800 transition-all duration-200 opacity-60 group-hover:opacity-100"
-              style={{ borderRadius: '2px', minWidth: '20px', minHeight: '20px' }}
-              title={`Insert "${item.match.dutch}"`}
+              title={hasInfo
+                ? `${item.count}x - Click for character info`
+                : `Found ${item.count}x - Click to open Reference Tools`
+              }
             >
-              <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+              {/* Category indicator */}
+              <span className="w-1.5 h-1.5 rounded-full mr-0.5 bg-purple-500" />
+
+              {/* Info icon for characters with rich data */}
+              {hasInfo && (
+                <svg className={`w-3 h-3 mr-0.5 shrink-0 transition-colors ${isExpanded ? 'text-purple-600 dark:text-purple-300' : 'text-purple-400 dark:text-purple-500'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+              )}
+
+              {/* English name - smaller */}
+              <span className="text-[11px] text-gray-600 dark:text-gray-400 max-w-[100px] truncate">
+                {item.match.english}
+              </span>
+
+              {/* Arrow - smaller */}
+              <svg className="w-2.5 h-2.5 text-purple-400 dark:text-purple-500 mx-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
-            </button>
-          </div>
-        ))}
+
+              {/* Translation - smaller */}
+              <span className="text-[11px] font-semibold text-purple-700 dark:text-purple-300 max-w-[100px] truncate">
+                {item.match.dutch}
+              </span>
+
+              {/* Gender badge inline on pill */}
+              {item.match.gender && (
+                <span className="ml-0.5 text-[9px] text-purple-500 dark:text-purple-400">
+                  {item.match.gender === 'male' ? '\u2642' : '\u2640'}
+                </span>
+              )}
+
+              {/* Insert button - smaller, stops propagation */}
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onInsert(item.match.dutch);
+                }}
+                className="ml-1 p-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-800 transition-all duration-200 opacity-60 group-hover:opacity-100"
+                style={{ borderRadius: '2px', minWidth: '20px', minHeight: '20px' }}
+                title={`Insert "${item.match.dutch}"`}
+              >
+                <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+                </svg>
+              </button>
+            </div>
+          );
+        })}
 
         {/* XLSX matches - Green */}
         {visibleXlsxMatches.map((item, index) => (
@@ -354,6 +420,19 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
           </div>
         ))}
       </div>
+
+      {/* Character Info Card - expands below pills when a main character is clicked */}
+      {expandedCharacter && (() => {
+        const charData = codexMatches.find(m => m.match.english === expandedCharacter);
+        if (!charData || !hasCharacterInfo(charData.match)) return null;
+        return (
+          <CharacterInfoCard
+            character={charData.match}
+            onClose={() => setExpandedCharacter(null)}
+            onInsert={onInsert}
+          />
+        );
+      })()}
     </div>
   );
 };

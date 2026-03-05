@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "generated": "2026-03-05T10:19:38.437Z",
+  "generated": "2026-03-05T21:52:10.298Z",
   "description": "Codex translations for Asses & Masses",
   "totalEntries": 171,
   "entries": [
@@ -50,7 +50,7 @@
         "Ass"
       ],
       "bio": "Newly hired labourer at Derriere's Factory. Worried about losing his job. Male.",
-      "gender": "",
+      "gender": "male",
       "dialogueStyle": ""
     },
     {
@@ -63,7 +63,7 @@
         "Ass"
       ],
       "bio": "Longterm worker at Derrerie's Factory. Smokes. Thinks most people are 'idiots'. Does the bare minimum. Female.",
-      "gender": "",
+      "gender": "female",
       "dialogueStyle": ""
     },
     {
@@ -285,7 +285,7 @@
         "Child"
       ],
       "bio": "A small boy who is also a great artist. He visits the Fannyside Farm to see the donkeys with his grandmother. Every year he plays baby Jesus in the nativity play in the Bumpkin church. He is killed in the fire of Ep2.",
-      "gender": "",
+      "gender": "male",
       "dialogueStyle": ""
     },
     {
@@ -298,7 +298,7 @@
         "Cole"
       ],
       "bio": "Always a rebel and a bit jaded by being left behind by his mother at a young age. A robotics-wiz, he dreamed of going to Mecha City to make a difference in the world through science. He was forced to work in the mine after graduating. Became depressed after his father wasted his scholarship money. In the cave-in, he tries to save Lazy and when Lazy tries to 'send' herself, Cole's soul is sent to the Astral Plane, only to be rejected and return to his body, ultimately and mysteriously, transforming his body into that of a donkey.",
-      "gender": "",
+      "gender": "male",
       "dialogueStyle": ""
     },
     {
@@ -679,7 +679,7 @@
         "Kulan"
       ],
       "bio": "An old woman who looks after her grandson. She thinks donkeys have no souls and are stupid. After Joey dies in Ep2, she becomes sad and cherishes her memories of their last afternoon visiting donkeys by going to the Zoo, or going to the Circus. Easter Egg: If the Circus, she ultimately gets a job as a janitor at Derriere's Factory as a way to keep herself busy.",
-      "gender": "",
+      "gender": "female",
       "dialogueStyle": ""
     },
     {
@@ -890,7 +890,7 @@
         "Hugh"
       ],
       "bio": "Alcoholic Mine boss. His diaries in Ep3 reveal his struggle to keep the Mine alive and his poor management skills. He used Cole's university scholarship money to buy a Boring Machine in an attempt to save the business. He is killed in Ep2 by Hard Ass.",
-      "gender": "",
+      "gender": "male",
       "dialogueStyle": ""
     },
     {
@@ -1061,7 +1061,7 @@
         "Jenny"
       ],
       "bio": "Miner in Butte Mines. She grew up in Bumpkin. She was in a relationship with Cole Butte, but dumped him after he got depressed. She is killed by Hard Ass in Ep 2 while trying to get Hard Ass to save her computer from the fire—a computer that Cole made for her.",
-      "gender": "",
+      "gender": "female",
       "dialogueStyle": ""
     },
     {
@@ -1087,7 +1087,7 @@
         "Mme."
       ],
       "bio": "Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",
-      "gender": "",
+      "gender": "female",
       "dialogueStyle": ""
     },
     {
@@ -1300,7 +1300,7 @@
         "Rico"
       ],
       "bio": "The Ringmaster of the Big City Circus. He's all about bums in seats. He speaks like Job from Arrested Development.",
-      "gender": "",
+      "gender": "male",
       "dialogueStyle": ""
     },
     {
@@ -1350,7 +1350,7 @@
         "Sandy"
       ],
       "bio": "Cole's mother. Only appears in a flashback. She leaves home because of her abusive and alcoholic husband, Hugh.",
-      "gender": "",
+      "gender": "female",
       "dialogueStyle": ""
     },
     {
@@ -1845,7 +1845,7 @@
         "Rose"
       ],
       "bio": "A Zookkeeper at the Mecha City Zoo. She is very chipper and enthusiastic about everything. But she also has no morals and makes a deal with Derriere to give the donkeys over in exchange for money to buy a new phone.",
-      "gender": "",
+      "gender": "female",
       "dialogueStyle": ""
     },
     {
