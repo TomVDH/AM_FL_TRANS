@@ -1,31 +1,15 @@
 {
-  "generated": "2025-12-30T00:30:48.703Z",
-  "version": "2.0.0",
-  "sources": [
-    "E0 CharacterProfiles_localization (authoritative for characters)",
-    "README Names and World Overview (supplementary + bios/descriptions)"
-  ],
-  "stats": {
-    "total": 125,
-    "fromE0": 103,
-    "fromREADME": 22,
-    "withBios": 27,
-    "withNicknames": 108,
-    "byCategory": {
-      "CHARACTER": 117,
-      "LOCATION": 7,
-      "OTHER": 1
-    }
-  },
+  "version": "2.0",
+  "generated": "2026-03-05T10:19:38.437Z",
+  "description": "Codex translations for Asses & Masses",
+  "totalEntries": 171,
   "entries": [
     {
       "name": "Angry Ass",
-      "key": "CHARACTER.Angry Ass",
       "description": "Character",
       "english": "Angry Ass",
       "dutch": "Boze Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Angry",
         "Uncle Angry",
@@ -35,17 +19,15 @@
         "Sister Angry"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Anxious Ass",
-      "key": "CHARACTER.Anxious Ass",
       "description": "Character",
       "english": "Anxious Ass",
       "dutch": "Angstige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Anxious",
         "Uncle Anxious",
@@ -55,92 +37,80 @@
         "Sister Anxious"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Melvin",
-      "key": "CHARACTER.Melvin",
       "description": "Character",
       "english": "Ass Handler Melvin",
       "dutch": "Zakkenzeuler Zeno",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Ass"
       ],
       "bio": "Newly hired labourer at Derriere's Factory. Worried about losing his job. Male.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Wedgie",
-      "key": "CHARACTER.Wedgie",
       "description": "Character",
       "english": "Ass Handler Wedgie",
       "dutch": "Zakkenzeulster Zita",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Ass"
       ],
       "bio": "Longterm worker at Derrerie's Factory. Smokes. Thinks most people are 'idiots'. Does the bare minimum. Female.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Audience Member David",
-      "key": "CHARACTER.Audience Member David",
       "description": "Character",
       "english": "Audience Member David",
       "dutch": "Toeschouwer David",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Audience"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Audience Member Laurel",
-      "key": "CHARACTER.Audience Member Laurel",
       "description": "Character",
       "english": "Audience Member Laurel",
       "dutch": "Toeschouwer Laurel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Audience"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Audience Members Patrick & Milton",
-      "key": "CHARACTER.Audience Members Patrick & Milton",
       "description": "Character",
       "english": "Audience Members Patrick & Milton",
       "dutch": "Toeschouwers Patrick & Milton",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Audience"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Bad Ass",
-      "key": "CHARACTER.Bad Ass",
       "description": "Character",
       "english": "Bad Ass",
       "dutch": "Waaghalske",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Bad",
         "Baddie",
@@ -156,12 +126,10 @@
     },
     {
       "name": "Big Ass",
-      "key": "CHARACTER.Big Ass",
       "description": "Character",
       "english": "Big Ass",
       "dutch": "Mega Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Big",
         "Uncle Big",
@@ -176,12 +144,10 @@
     },
     {
       "name": "Bitter Ass",
-      "key": "CHARACTER.Bitter Ass",
       "description": "Character",
       "english": "Bitter Ass",
       "dutch": "Bittere Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Bitter",
         "Uncle Bitter",
@@ -191,17 +157,15 @@
         "Sister Bitter"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Bleak Ass",
-      "key": "CHARACTER.Bleak Ass",
       "description": "x",
       "english": "Bleak Ass",
       "dutch": "Depressieve Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Bleak",
         "Uncle Bleak",
@@ -211,17 +175,15 @@
         "Sister Bleak"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Blunt Ass",
-      "key": "CHARACTER.Blunt Ass",
       "description": "Character",
       "english": "Blunt Ass",
       "dutch": "Groffe ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Blunt",
         "Uncle Blunt",
@@ -231,17 +193,15 @@
         "Sister Blunt"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Broken Ass",
-      "key": "CHARACTER.Broken Ass",
       "description": "Character",
       "english": "Broken Ass",
       "dutch": "Gebroken Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Broken",
         "Uncle Broken",
@@ -251,17 +211,15 @@
         "Sister Broken"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Busted Ass",
-      "key": "CHARACTER.Busted Ass",
       "description": "Character",
       "english": "Busted Ass",
       "dutch": "Afgereden Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Busted",
         "Uncle Busted",
@@ -271,30 +229,26 @@
         "Sister Busted"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "CarMachine",
-      "key": "CHARACTER.Car-Machine",
       "description": "MACHINES",
       "english": "Car-Machine",
       "dutch": "Auto Machine",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Chafed Ass",
-      "key": "CHARACTER.Chafed Ass",
       "description": "Character",
       "english": "Chafed Ass",
       "dutch": "Excema Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Chafed",
         "Uncle Chafed",
@@ -304,76 +258,66 @@
         "Sister Chafed"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Child Joey",
-      "key": "CHARACTER.Child Joey",
       "description": "Character",
       "english": "Child Joey",
       "dutch": "Luukske Vermeulen",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Child",
         "Joey"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Child Joey Kulan",
-      "key": "CHARACTER.ChildJoeyKulan",
       "description": "MAIN HUMANS",
       "english": "Child Joey Kulan",
       "dutch": "Klein Luukske Vermeulen",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Child"
       ],
       "bio": "A small boy who is also a great artist. He visits the Fannyside Farm to see the donkeys with his grandmother. Every year he plays baby Jesus in the nativity play in the Bumpkin church. He is killed in the fire of Ep2.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Cole Butte  ColeMachine",
-      "key": "CHARACTER.ColeButte/Cole-Machine",
       "description": "MAIN HUMANS",
       "english": "Cole Butte / Cole-Machine",
       "dutch": "Piet Vanscheetvelde",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Cole"
       ],
       "bio": "Always a rebel and a bit jaded by being left behind by his mother at a young age. A robotics-wiz, he dreamed of going to Mecha City to make a difference in the world through science. He was forced to work in the mine after graduating. Became depressed after his father wasted his scholarship money. In the cave-in, he tries to save Lazy and when Lazy tries to 'send' herself, Cole's soul is sent to the Astral Plane, only to be rejected and return to his body, ultimately and mysteriously, transforming his body into that of a donkey.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Cole-Machine",
-      "key": "CHARACTER.Cole-Machine",
       "description": "Character",
       "english": "Cole-Machine",
       "dutch": "Piet-Machine",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Cool Ass",
-      "key": "CHARACTER.Cool Ass",
       "description": "Character",
       "english": "Cool Ass",
       "dutch": "Coole Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Cool",
         "Uncle Cool",
@@ -383,30 +327,26 @@
         "Sister Cool"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Cow",
-      "key": "CHARACTER.Cow",
       "description": "Character",
       "english": "Cow",
       "dutch": "Koe",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Cranky Ass",
-      "key": "CHARACTER.Cranky Ass",
       "description": "Character",
       "english": "Cranky Ass",
       "dutch": "Mopperende Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Cranky",
         "Uncle Cranky",
@@ -416,45 +356,39 @@
         "Sister Cranky"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "DeathMachine",
-      "key": "CHARACTER.Death-Machine",
       "description": "MACHINES",
       "english": "Death-Machine",
       "dutch": "Machine des Doods",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Decrepit Sign",
-      "key": "CHARACTER.Decrepit Sign",
       "description": "Character",
       "english": "Decrepit Sign",
       "dutch": "Verlept Bord",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Decrepit"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Dirty Ass",
-      "key": "CHARACTER.Dirty Ass",
       "description": "Character",
       "english": "Dirty Ass",
       "dutch": "Vuile Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Dirty",
         "Uncle Dirty",
@@ -464,32 +398,28 @@
         "Sister Dirty"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Dirty Sign",
-      "key": "CHARACTER.Dirty Sign",
       "description": "Character",
       "english": "Dirty Sign",
       "dutch": "Smerig Bord",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Dirty"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Distressed Ass",
-      "key": "CHARACTER.Distressed Ass",
       "description": "Character",
       "english": "Distressed Ass",
       "dutch": "Ontzette Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Distressed",
         "Uncle Distressed",
@@ -499,17 +429,15 @@
         "Sister Distressed"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "DJ Dope Ass",
-      "key": "CHARACTER.DJ Dope Ass",
       "description": "Character",
       "english": "DJ Dope Ass",
       "dutch": "DJ Lijpe Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "DJ Dope",
         "Uncle DJ Dope",
@@ -519,30 +447,26 @@
         "Sister DJ Dope"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Radio Host Marcos",
-      "key": "CHARACTER.Radio Host Marcos",
       "description": "Character",
       "english": "DJ Marcos",
       "dutch": "DJ Tom",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Dusty Ass",
-      "key": "CHARACTER.Dusty Ass",
       "description": "Character",
       "english": "Dusty Ass",
       "dutch": "Stoffige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Dusty",
         "Uncle Dusty",
@@ -552,17 +476,15 @@
         "Sister Dusty"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Edgy Ass",
-      "key": "CHARACTER.Edgy Ass",
       "description": "x",
       "english": "Edgy Ass",
       "dutch": "Avantgarde Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Edgy",
         "Uncle Edgy",
@@ -572,62 +494,54 @@
         "Sister Edgy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Elephant",
-      "key": "CHARACTER.Elephant",
       "description": "Character",
       "english": "Eli the Elephant",
       "dutch": "Ollie de Olifant",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Eli"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Factory PA",
-      "key": "CHARACTER.Factory PA",
       "description": "Character",
       "english": "Factory PA",
       "dutch": "Fabrieksomroep",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Factory"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Fancy Sign",
-      "key": "CHARACTER.Fancy Sign",
       "description": "Character",
       "english": "Fancy Sign",
       "dutch": "Schoon Bord",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Fancy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Feeble Ass",
-      "key": "CHARACTER.Feeble Ass",
       "description": "Character",
       "english": "Feeble Ass",
       "dutch": "Slappe Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Feeble",
         "Uncle Feeble",
@@ -637,30 +551,26 @@
         "Sister Feeble"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "FlyingMachine",
-      "key": "CHARACTER.Flying-Machine",
       "description": "MACHINES",
       "english": "Flying-Machine",
       "dutch": "Vlieg Machine",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Foal named by audience",
-      "key": "CHARACTER.Foal(namedbyaudience)",
       "description": "FARM DONKEYS",
       "english": "Foal (named by audience)",
       "dutch": "-tje",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Foal"
       ],
@@ -670,12 +580,10 @@
     },
     {
       "name": "Fresh Ass",
-      "key": "CHARACTER.Fresh Ass",
       "description": "Character",
       "english": "Fresh Ass",
       "dutch": "Verse Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Fresh",
         "Uncle Fresh",
@@ -685,17 +593,15 @@
         "Sister Fresh"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Furry Ass",
-      "key": "CHARACTER.Furry Ass",
       "description": "Character",
       "english": "Furry Ass",
       "dutch": "Harige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Furry",
         "Uncle Furry",
@@ -705,17 +611,15 @@
         "Sister Furry"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Gaunt Ass",
-      "key": "CHARACTER.Gaunt Ass",
       "description": "x",
       "english": "Gaunt Ass",
       "dutch": "Beenderige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Gaunt",
         "Uncle Gaunt",
@@ -725,17 +629,15 @@
         "Sister Gaunt"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Gloomy Ass",
-      "key": "CHARACTER.Gloomy Ass",
       "description": "Character",
       "english": "Gloomy Ass",
       "dutch": "Duistere Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Gloomy",
         "Uncle Gloomy",
@@ -745,17 +647,15 @@
         "Sister Gloomy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Golden Ass",
-      "key": "CHARACTER.Golden Ass",
       "description": "Character",
       "english": "Golden Ass",
       "dutch": "Gouden Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Golden",
         "Uncle Golden",
@@ -765,33 +665,29 @@
         "Sister Golden"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Grandma Kulan",
-      "key": "CHARACTER.Grandma Kulan",
       "description": "Character",
       "english": "Grandma Kulan",
       "dutch": "Grootmoe Vermeulen",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Grandma",
         "Kulan"
       ],
       "bio": "An old woman who looks after her grandson. She thinks donkeys have no souls and are stupid. After Joey dies in Ep2, she becomes sad and cherishes her memories of their last afternoon visiting donkeys by going to the Zoo, or going to the Circus. Easter Egg: If the Circus, she ultimately gets a job as a janitor at Derriere's Factory as a way to keep herself busy.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Greedy Ass",
-      "key": "CHARACTER.Greedy Ass",
       "description": "Character",
       "english": "Greedy Ass",
       "dutch": "Inhalige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Greedy",
         "Uncle Greedy",
@@ -801,17 +697,15 @@
         "Sister Greedy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Gullible Ass",
-      "key": "CHARACTER.Gullible Ass",
       "description": "Character",
       "english": "Gullible Ass",
       "dutch": "Goedgelovige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Gullible",
         "Uncle Gullible",
@@ -821,17 +715,15 @@
         "Sister Gullible"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Hairy Ass",
-      "key": "CHARACTER.Hairy Ass",
       "description": "Character",
       "english": "Hairy Ass",
       "dutch": "Stoppelige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Hairy",
         "Uncle Hairy",
@@ -841,17 +733,15 @@
         "Sister Hairy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Happy Ass",
-      "key": "CHARACTER.Happy Ass",
       "description": "Character",
       "english": "Happy Ass",
       "dutch": "Blije Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Happy",
         "Uncle Happy",
@@ -861,17 +751,15 @@
         "Sister Happy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Hard Ass",
-      "key": "CHARACTER.Hard Ass",
       "description": "Character",
       "english": "Hard Ass",
-      "dutch": "Felle Gast",
+      "dutch": "Bikkelharde Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Hard",
         "Hardie",
@@ -887,12 +775,10 @@
     },
     {
       "name": "Hasty Ass",
-      "key": "CHARACTER.Hasty Ass",
       "description": "Character",
       "english": "Hasty Ass",
       "dutch": "Haastge Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Hasty",
         "Uncle Hasty",
@@ -902,17 +788,15 @@
         "Sister Hasty"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Haul Ass",
-      "key": "CHARACTER.Haul Ass",
       "description": "Character",
       "english": "Haul Ass",
       "dutch": "Sleur Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Haul",
         "Uncle Haul",
@@ -922,30 +806,26 @@
         "Sister Haul"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Haw",
-      "key": "CHARACTER.Haw",
       "description": "Character",
       "english": "Haw",
       "dutch": "Haaa",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Healthy Ass",
-      "key": "CHARACTER.Healthy Ass",
       "description": "Character",
       "english": "Healthy Ass",
       "dutch": "Gezonde Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Healthy",
         "Uncle Healthy",
@@ -955,30 +835,26 @@
         "Sister Healthy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Hee",
-      "key": "CHARACTER.Hee",
       "description": "The Gods",
       "english": "Hee",
       "dutch": "Hieee",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Helpful Ass",
-      "key": "CHARACTER.Helpful Ass",
       "description": "x",
       "english": "Helpful Ass",
       "dutch": "Hulpvaardige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Helpful",
         "Uncle Helpful",
@@ -988,60 +864,52 @@
         "Sister Helpful"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Historic Sign",
-      "key": "CHARACTER.Historic Sign",
       "description": "Character",
       "english": "Historic Sign",
       "dutch": "Historisch Bord",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Historic"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Hugh G Butte",
-      "key": "CHARACTER.HughG.Butte",
       "description": "MAIN HUMANS",
       "english": "Hugh G. Butte",
       "dutch": "Egbert K. Vanscheetvelde",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Hugh"
       ],
       "bio": "Alcoholic Mine boss. His diaries in Ep3 reveal his struggle to keep the Mine alive and his poor management skills. He used Cole's university scholarship money to buy a Boring Machine in an attempt to save the business. He is killed in Ep2 by Hard Ass.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Human",
-      "key": "CHARACTER.Human",
       "description": "Humans",
       "english": "Human",
       "dutch": "Mens",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Janky Ass",
-      "key": "CHARACTER.Janky Ass",
       "description": "Character",
       "english": "Janky Ass",
       "dutch": "Deficiënte Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Janky",
         "Uncle Janky",
@@ -1051,17 +919,15 @@
         "Sister Janky"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Kick Ass",
-      "key": "CHARACTER.Kick Ass",
       "description": "Character",
       "english": "Kick Ass",
       "dutch": "Stampgast",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Kick",
         "Kicker",
@@ -1077,12 +943,10 @@
     },
     {
       "name": "Lazy Ass",
-      "key": "CHARACTER.Lazy Ass",
       "description": "Character",
       "english": "Lazy Ass",
       "dutch": "Luie Zak",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Lazy",
         "Laze",
@@ -1098,12 +962,10 @@
     },
     {
       "name": "Left Ass",
-      "key": "CHARACTER.Left Ass",
       "description": "(Always male)",
       "english": "Left Ass",
       "dutch": "Linker Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Left",
         "Uncle Left",
@@ -1113,17 +975,15 @@
         "Sister Left"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Lofty Ass",
-      "key": "CHARACTER.Lofty Ass",
       "description": "Character",
       "english": "Lofty Ass",
       "dutch": "Opgeblazen Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Lofty",
         "Uncle Lofty",
@@ -1133,17 +993,15 @@
         "Sister Lofty"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Mad Ass",
-      "key": "CHARACTER.Mad Ass",
       "description": "Astral Plane Donkeys",
       "english": "Mad Ass",
       "dutch": "Gekke Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Mad",
         "Uncle Mad",
@@ -1153,17 +1011,15 @@
         "Sister Mad"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Mean Ass",
-      "key": "CHARACTER.Mean Ass",
       "description": "Character",
       "english": "Mean Ass",
       "dutch": "Stoute Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Mean",
         "Uncle Mean",
@@ -1173,17 +1029,15 @@
         "Sister Mean"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Mellow Ass",
-      "key": "CHARACTER.Mellow Ass",
       "description": "Character",
       "english": "Mellow Ass",
       "dutch": "Chille Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Mellow",
         "Uncle Mellow",
@@ -1193,78 +1047,68 @@
         "Sister Mellow"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Miner Jenny",
-      "key": "CHARACTER.Miner Jenny",
       "description": "Character",
       "english": "Miner Jenny",
       "dutch": "Mijnwerker Jenny",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Miner",
         "Jenny"
       ],
       "bio": "Miner in Butte Mines. She grew up in Bumpkin. She was in a relationship with Cole Butte, but dumped him after he got depressed. She is killed by Hard Ass in Ep 2 while trying to get Hard Ass to save her computer from the fire—a computer that Cole made for her.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Miner With No Legs",
-      "key": "CHARACTER.Miner With No Legs",
       "description": "Character",
       "english": "Miner With No Legs",
       "dutch": "Mijnwerker zonder Benen",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Miner"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Mme. Derriere",
-      "key": "CHARACTER.Mme. Derriere",
       "description": "Character",
       "english": "Mme. Derriere",
       "dutch": "Mevr. Derrière",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Mme."
       ],
       "bio": "Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Mr. Butte",
-      "key": "CHARACTER.Mr. Butte",
       "description": "Character",
       "english": "Mr. Butte",
       "dutch": "Mr. Vanscheetvelde",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Mr."
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Nice Ass",
-      "key": "CHARACTER.Nice Ass",
       "description": "Character",
       "english": "Nice Ass",
       "dutch": "Schoon Beest",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Nice",
         "Nicey",
@@ -1280,27 +1124,23 @@
     },
     {
       "name": "Official Sign",
-      "key": "CHARACTER.Official Sign",
       "description": "Character",
       "english": "Official Sign",
       "dutch": "Officiëel Bord",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Official"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Old Ass",
-      "key": "CHARACTER.Old Ass",
       "description": "Character",
       "english": "Old Ass",
-      "dutch": "Ouwe Zak",
+      "dutch": "Oude Zak",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Old",
         "Oldie",
@@ -1316,27 +1156,23 @@
     },
     {
       "name": "Old Sign",
-      "key": "CHARACTER.Old Sign",
       "description": "Character",
       "english": "Old Sign",
       "dutch": "Oud Bord",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Old"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Peek Ass",
-      "key": "CHARACTER.Peek Ass",
       "description": "Character",
       "english": "Peek Ass",
       "dutch": "(Peek Ass)",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Peek",
         "Uncle Peek",
@@ -1346,30 +1182,26 @@
         "Sister Peek"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Pig",
-      "key": "CHARACTER.Pig",
       "description": "Character",
       "english": "Pig",
       "dutch": "Varken",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Proper Ass",
-      "key": "CHARACTER.Proper Ass",
       "description": "Factory Donkeys (be sure to make a balance of gender between the ones marked with X)",
       "english": "Proper Ass",
       "dutch": "Keurige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Proper",
         "Uncle Proper",
@@ -1379,62 +1211,54 @@
         "Sister Proper"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "ProphetMachine F",
-      "key": "CHARACTER.Prophet-Machine(F)",
       "description": "MACHINES",
       "english": "Prophet-Machine (F)",
       "dutch": "Profetische Machine",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Prophet-Machine"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "ProphetMachine M",
-      "key": "CHARACTER.Prophet-Machine(M)",
       "description": "MACHINES",
       "english": "Prophet-Machine (M)",
       "dutch": "Profetische Machine",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Prophet-Machine"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Radio Host Marcos",
-      "key": "CHARACTER.RadioHostMarcos",
       "description": "MAIN HUMANS",
       "english": "Radio Host Marcos",
       "dutch": "DJ Tom",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Radio"
       ],
       "bio": "Radio interview for Mecha City. Enthusiastic user of Mme. Derriere's beauty products.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Resentful Ass",
-      "key": "CHARACTER.Resentful Ass",
       "description": "x",
       "english": "Resentful Ass",
       "dutch": "Wrokkige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Resentful",
         "Uncle Resentful",
@@ -1444,17 +1268,15 @@
         "Sister Resentful"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Right Ass",
-      "key": "CHARACTER.Right Ass",
       "description": "(Always male)",
       "english": "Right Ass",
       "dutch": "Rechter Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Right",
         "Uncle Right",
@@ -1464,33 +1286,29 @@
         "Sister Right"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Ringmaster Rico",
-      "key": "CHARACTER.Ringmaster Rico",
       "description": "Character",
       "english": "Ringmaster Rico",
       "dutch": "Circusdirecteur Baptiste",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Ringmaster",
         "Rico"
       ],
       "bio": "The Ringmaster of the Big City Circus. He's all about bums in seats. He speaks like Job from Arrested Development.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Risky Ass",
-      "key": "CHARACTER.Risky Ass",
       "description": "Character",
       "english": "Risky Ass",
       "dutch": "Riskante Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Risky",
         "Uncle Risky",
@@ -1500,17 +1318,15 @@
         "Sister Risky"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Sad Ass",
-      "key": "CHARACTER.Sad Ass",
       "description": "Character",
       "english": "Sad Ass",
       "dutch": "Triestigaard",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Sad",
         "Saddie",
@@ -1526,27 +1342,23 @@
     },
     {
       "name": "Sandy Butte",
-      "key": "CHARACTER.SandyButte",
       "description": "MAIN HUMANS",
       "english": "Sandy Butte",
       "dutch": "Smaragd Vanscheetvelde",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Sandy"
       ],
       "bio": "Cole's mother. Only appears in a flashback. She leaves home because of her abusive and alcoholic husband, Hugh.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Shaky Ass",
-      "key": "CHARACTER.Shaky Ass",
       "description": "Character",
       "english": "Shaky Ass",
       "dutch": "Bibber Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Shaky",
         "Uncle Shaky",
@@ -1556,30 +1368,26 @@
         "Sister Shaky"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Sheep",
-      "key": "CHARACTER.Sheep",
       "description": "Circus/Farm Animals",
       "english": "Sheep",
       "dutch": "Schaap",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Shifty Ass",
-      "key": "CHARACTER.Shifty Ass",
       "description": "Character",
       "english": "Shifty Ass",
       "dutch": "Ongure Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Shifty",
         "Uncle Shifty",
@@ -1589,32 +1397,28 @@
         "Sister Shifty"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Shitty Sign",
-      "key": "CHARACTER.Shitty Sign",
       "description": "Character",
       "english": "Shitty Sign",
       "dutch": "Bord met stront eraan",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Shitty"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Sick Ass",
-      "key": "CHARACTER.Sick Ass",
       "description": "Character",
       "english": "Sick Ass",
-      "dutch": "Snotezel",
+      "dutch": "Snot Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Sick",
         "Sicko",
@@ -1630,25 +1434,21 @@
     },
     {
       "name": "Sign",
-      "key": "CHARACTER.Sign",
       "description": "Signs",
       "english": "Sign",
       "dutch": "Bord",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Skinny Ass",
-      "key": "CHARACTER.Skinny Ass",
       "description": "x",
       "english": "Skinny Ass",
       "dutch": "Magere Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Skinny",
         "Uncle Skinny",
@@ -1658,17 +1458,15 @@
         "Sister Skinny"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Sleepy Ass",
-      "key": "CHARACTER.Sleepy Ass",
       "description": "Character",
       "english": "Sleepy Ass",
       "dutch": "Slaaperige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Sleepy",
         "Uncle Sleepy",
@@ -1678,17 +1476,15 @@
         "Sister Sleepy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Slow Ass",
-      "key": "CHARACTER.Slow Ass",
       "description": "Character",
       "english": "Slow Ass",
       "dutch": "Slome Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Slow",
         "Uncle Slow",
@@ -1703,12 +1499,10 @@
     },
     {
       "name": "Smart Ass",
-      "key": "CHARACTER.Smart Ass",
       "description": "Character",
       "english": "Smart Ass",
       "dutch": "Betweter",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Smart",
         "Uncle Smart",
@@ -1723,12 +1517,10 @@
     },
     {
       "name": "Smelly Ass",
-      "key": "CHARACTER.Smelly Ass",
       "description": "Character",
       "english": "Smelly Ass",
       "dutch": "Stinkende Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Smelly",
         "Uncle Smelly",
@@ -1738,17 +1530,15 @@
         "Sister Smelly"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Sturdy Ass",
-      "key": "CHARACTER.Sturdy Ass",
       "description": "Character",
       "english": "Sturdy Ass",
       "dutch": "Stoere Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Sturdy",
         "Uncle Sturdy",
@@ -1763,12 +1553,10 @@
     },
     {
       "name": "Sulky Ass",
-      "key": "CHARACTER.Sulky Ass",
       "description": "Character",
       "english": "Sulky Ass",
       "dutch": "Zielige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Sulky",
         "Uncle Sulky",
@@ -1778,30 +1566,26 @@
         "Sister Sulky"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "TankMachine",
-      "key": "CHARACTER.Tank-Machine",
       "description": "MACHINES",
       "english": "Tank-Machine",
       "dutch": "Tank Machine",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Tender Ass",
-      "key": "CHARACTER.Tender Ass",
       "description": "Character",
       "english": "Tender Ass",
       "dutch": "Gevoelige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Tender",
         "Uncle Tender",
@@ -1811,47 +1595,41 @@
         "Sister Tender"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "THE GODS",
-      "key": "CHARACTER.THE GODS",
       "description": "Character",
       "english": "THE GODS",
       "dutch": "DE GODEN",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "THE"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "The Masses",
-      "key": "CHARACTER.The Masses",
       "description": "Character",
       "english": "The Masses",
       "dutch": "De Massa",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "The"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Thirsty Ass",
-      "key": "CHARACTER.Thirsty Ass",
       "description": "Character",
       "english": "Thirsty Ass",
       "dutch": "Dorstlap",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Thirsty",
         "Uncle Thirsty",
@@ -1866,12 +1644,10 @@
     },
     {
       "name": "Tight Ass",
-      "key": "CHARACTER.Tight Ass",
       "description": "Character",
       "english": "Tight Ass",
       "dutch": "Strakke Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Tight",
         "Uncle Tight",
@@ -1881,17 +1657,15 @@
         "Sister Tight"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Total Ass",
-      "key": "CHARACTER.Total Ass",
       "description": "Character",
       "english": "Total Ass",
       "dutch": "Totale Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Total",
         "Uncle Total",
@@ -1901,30 +1675,26 @@
         "Sister Total"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "TractorMachine",
-      "key": "CHARACTER.Tractor-Machine",
       "description": "MACHINES",
       "english": "Tractor-Machine",
       "dutch": "Traktor Machine",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Tragic Ass",
-      "key": "CHARACTER.Tragic Ass",
       "description": "x",
       "english": "Tragic Ass",
       "dutch": "Weemoedige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Tragic",
         "Uncle Tragic",
@@ -1934,17 +1704,15 @@
         "Sister Tragic"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Trippy Ass",
-      "key": "CHARACTER.Trippy Ass",
       "description": "Character",
       "english": "Trippy Ass",
       "dutch": "Trippende Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Trippy",
         "Uncle Trippy",
@@ -1954,30 +1722,26 @@
         "Sister Trippy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "TruckMachine",
-      "key": "CHARACTER.Truck-Machine",
       "description": "MACHINES",
       "english": "Truck-Machine",
       "dutch": "Camion Machine",
       "category": "CHARACTER",
-      "source": "README_WorldOverview",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Trusty Ass",
-      "key": "CHARACTER.Trusty Ass",
       "description": "Character",
       "english": "Trusty Ass",
       "dutch": "Trouwe Zak",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Trusty",
         "Uncle Trusty",
@@ -1992,12 +1756,10 @@
     },
     {
       "name": "Ugly Ass",
-      "key": "CHARACTER.Ugly Ass",
       "description": "Character",
       "english": "Ugly Ass",
       "dutch": "Lelijke Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Ugly",
         "Uncle Ugly",
@@ -2007,32 +1769,28 @@
         "Sister Ugly"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Warning Sign",
-      "key": "CHARACTER.Warning Sign",
       "description": "Character",
       "english": "Warning Sign",
       "dutch": "Waarschuwingsbord",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Warning"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Weepy Ass",
-      "key": "CHARACTER.Weepy Ass",
       "description": "Character",
       "english": "Weepy Ass",
       "dutch": "Huilerige Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Weepy",
         "Uncle Weepy",
@@ -2042,32 +1800,28 @@
         "Sister Weepy"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Welcome Sign",
-      "key": "CHARACTER.Welcome Sign",
       "description": "Character",
       "english": "Welcome Sign",
       "dutch": "Welkomsbord",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Welcome"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Wild Ass",
-      "key": "CHARACTER.Wild Ass",
       "description": "Character",
       "english": "Wild Ass",
       "dutch": "Wilde Ezel",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Wild",
         "Uncle Wild",
@@ -2077,139 +1831,627 @@
         "Sister Wild"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Zookeeper Rose",
-      "key": "CHARACTER.Zookeeper Rose",
       "description": "Character",
       "english": "Zookeeper Rose",
       "dutch": "Dierendokter Dina",
       "category": "CHARACTER",
-      "source": "E0_CharacterProfiles",
       "nicknames": [
         "Zookeeper",
         "Rose"
       ],
       "bio": "A Zookkeeper at the Mecha City Zoo. She is very chipper and enthusiastic about everything. But she also has no morals and makes a deal with Derriere to give the donkeys over in exchange for money to buy a new phone.",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Astral Plane",
-      "key": "LOCATION.AstralPlane",
       "description": "WORLD",
       "english": "Astral Plane",
       "dutch": "het Astrale Hiernamaals",
       "category": "LOCATION",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Astral"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Bumpkin Village",
-      "key": "LOCATION.BumpkinVillage",
       "description": "WORLD",
       "english": "Bumpkin Village",
       "dutch": "Klotegem",
       "category": "LOCATION",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Bumpkin"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Fannyside",
-      "key": "LOCATION.Fannyside",
       "description": "WORLD",
       "english": "Fannyside",
       "dutch": "Muilegem",
       "category": "LOCATION",
-      "source": "README_WorldOverview",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Fannyside Farm",
-      "key": "LOCATION.FannysideFarm",
       "description": "WORLD",
       "english": "Fannyside Farm",
       "dutch": "De Boerderij van Muilegem",
       "category": "LOCATION",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Fannyside"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Mecha City",
-      "key": "LOCATION.MechaCity",
       "description": "WORLD",
       "english": "Mecha City",
       "dutch": "Mechalen",
       "category": "LOCATION",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Mecha"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Reassignment",
-      "key": "LOCATION.Reassignment",
       "description": "WORLD",
       "english": "Reassignment",
       "dutch": "Heraanstelling",
       "category": "LOCATION",
-      "source": "README_WorldOverview",
       "nicknames": [],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "Song of Ascension",
-      "key": "LOCATION.SongofAscension",
       "description": "WORLD",
       "english": "Song of Ascension",
       "dutch": "ezelenhemelvaartszangderzielen",
       "category": "LOCATION",
-      "source": "README_WorldOverview",
       "nicknames": [
         "Song"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
       "dialogueStyle": ""
     },
     {
       "name": "hee haw",
-      "key": "OTHER.heehaw",
       "description": "ロバート – マシン",
       "english": "hee haw",
       "dutch": "iaën / iii aaa ia ia",
       "category": "OTHER",
-      "source": "README_WorldOverview",
       "nicknames": [
         "hee"
       ],
       "bio": "",
-      "gender": null,
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Humans",
+      "description": "TERM",
+      "english": "Humans",
+      "dutch": "Mensen",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Comrade",
+      "description": "CHARACTER",
+      "english": "Comrade",
+      "dutch": "Kameraad",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Machines",
+      "description": "TERM",
+      "english": "Machines",
+      "dutch": "Machines",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Protest",
+      "description": "TERM",
+      "english": "Protest",
+      "dutch": "Protest",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Herd",
+      "description": "TERM",
+      "english": "Herd",
+      "dutch": "Kudde",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Heritage Stable",
+      "description": "LOCATION",
+      "english": "Heritage Stable",
+      "dutch": "Erfgoedshoeve",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Outhouse",
+      "description": "TERM",
+      "english": "Outhouse",
+      "dutch": "Hudo",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Purple Stuff",
+      "description": "TERM",
+      "english": "Purple Stuff",
+      "dutch": "Paarse Spul",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Comrades",
+      "description": "CHARACTER",
+      "english": "Comrades",
+      "dutch": "Kameraden",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Industry Coal Mines",
+      "description": "LOCATION",
+      "english": "Industry Coal Mines",
+      "dutch": "Industrie",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Mill and Granary",
+      "description": "LOCATION",
+      "english": "Mill and Granary",
+      "dutch": "Molen",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Well",
+      "description": "TERM",
+      "english": "Well",
+      "dutch": "Bron van Ya'Fur",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Miners",
+      "description": "LOCATION",
+      "english": "Miners",
+      "dutch": "Mijn-Ezels",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Long Way",
+      "description": "TERM",
+      "english": "Long Way",
+      "dutch": "Lange Weg",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Mother",
+      "description": "CHARACTER",
+      "english": "Mother",
+      "dutch": "Moeder",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Stable",
+      "description": "LOCATION",
+      "english": "Stable",
+      "dutch": "Stal",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Newbie",
+      "description": "TERM",
+      "english": "Newbie",
+      "dutch": "Nieuweling",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Concert",
+      "description": "TERM",
+      "english": "Concert",
+      "dutch": "Concert",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Revolution",
+      "description": "TERM",
+      "english": "Revolution",
+      "dutch": "Revolutie",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Freedom",
+      "description": "TERM",
+      "english": "Freedom",
+      "dutch": "Vrijheid",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Mill",
+      "description": "LOCATION",
+      "english": "Mill",
+      "dutch": "Molen",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Mines",
+      "description": "LOCATION",
+      "english": "Mines",
+      "dutch": "Mijnen",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Needle",
+      "description": "TERM",
+      "english": "Needle",
+      "dutch": "Spuit",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Computer",
+      "description": "TERM",
+      "english": "Computer",
+      "dutch": "Computer",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Rocks",
+      "description": "TERM",
+      "english": "Rocks",
+      "dutch": "Stenen-spel",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Boredom",
+      "description": "TERM",
+      "english": "Boredom",
+      "dutch": "Verveling",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Newbies",
+      "description": "TERM",
+      "english": "Newbies",
+      "dutch": "Nieuwkomertjes",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Comrade Trusty",
+      "description": "CHARACTER",
+      "english": "Comrade Trusty",
+      "dutch": "Kameraad Trouwe",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Ass Soul",
+      "description": "TERM",
+      "english": "Ass Soul",
+      "dutch": "Astrale Hiernamaals",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Herds",
+      "description": "TERM",
+      "english": "Herds",
+      "dutch": "Kuddes",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Plan C",
+      "description": "TERM",
+      "english": "Plan C",
+      "dutch": "Plan C",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Ancestors",
+      "description": "TERM",
+      "english": "Ancestors",
+      "dutch": "Voorouders",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Uncle Sad Ass",
+      "description": "CHARACTER",
+      "english": "Uncle Sad Ass",
+      "dutch": "Nonkel Triestigaard",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Fire",
+      "description": "TERM",
+      "english": "Fire",
+      "dutch": "Vuur",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Jobs",
+      "description": "TERM",
+      "english": "Jobs",
+      "dutch": "Beroepen",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "City Bank",
+      "description": "LOCATION",
+      "english": "City Bank",
+      "dutch": "Stadsbank",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Computers",
+      "description": "TERM",
+      "english": "Computers",
+      "dutch": "Computers",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Protests",
+      "description": "TERM",
+      "english": "Protests",
+      "dutch": "Protesten",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Pond",
+      "description": "LOCATION",
+      "english": "Pond",
+      "dutch": "Vijver",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Hunger Strike",
+      "description": "TERM",
+      "english": "Hunger Strike",
+      "dutch": "Hongerstaking",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Ass Souls",
+      "description": "TERM",
+      "english": "Ass Souls",
+      "dutch": "Ezel Zielen",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Mountain Trail",
+      "description": "LOCATION",
+      "english": "Mountain Trail",
+      "dutch": "Lange Weg",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Double Kick",
+      "description": "TERM",
+      "english": "Double Kick",
+      "dutch": "Dubbele Stamp",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Pond of Hehehehe",
+      "description": "LOCATION",
+      "english": "Pond of Hehehehe",
+      "dutch": "Vijver van Vermaak",
+      "category": "LOCATION",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Loser",
+      "description": "TERM",
+      "english": "Loser",
+      "dutch": "Loser",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "History",
+      "description": "TERM",
+      "english": "History",
+      "dutch": "Geschiedenis",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
       "dialogueStyle": ""
     }
   ]

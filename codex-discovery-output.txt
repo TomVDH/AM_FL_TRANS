@@ -1,0 +1,792 @@
+
+════════════════════════════════════════════════════════════
+🔍  CODEX TERM DISCOVERY
+════════════════════════════════════════════════════════════
+
+📚 Loading existing codex...
+   643 known terms/aliases loaded
+
+📂 Scanning all Excel files (Column C across ALL sheets)...
+────────────────────────────────────────────────────────────
+  ✅ 0_asses.masses_Manager+Intermissions+E0Proxy       9 sheets | 242 cells | 142 terms
+  ✅ 10_asses.masses_E10Proxy                           11 sheets | 666 cells | 359 terms
+  ✅ 11_asses.masses_NonCSVBasedTranslations            12 sheets | 71 cells | 48 terms
+  ✅ 1_asses.masses_E1Proxy                             12 sheets | 416 cells | 245 terms
+  ✅ 2_asses.masses_E2Proxy                             15 sheets | 398 cells | 212 terms
+  ✅ 3_asses.masses_E3Proxy                             10 sheets | 379 cells | 180 terms
+  ✅ 4_asses.masses_E4Proxy                             9 sheets | 435 cells | 188 terms
+  ✅ 5_asses.masses_E5Proxy                             7 sheets | 591 cells | 163 terms
+  ✅ 6_asses.masses_E6Proxy                             8 sheets | 535 cells | 271 terms
+  ✅ 7_asses.masses_E7Proxy                             17 sheets | 363 cells | 133 terms
+  ✅ 8_asses.masses_E8Proxy                             3 sheets | 96 cells | 73 terms
+  ✅ 9_asses.masses_E9Proxy                             5 sheets | 292 cells | 156 terms
+  ✅ READ_ME_LocalizationManual                         13 sheets | 496 cells | 67 terms
+  ✅ Translation Checklist                              7 sheets | 14 cells | 1 terms
+────────────────────────────────────────────────────────────
+
+════════════════════════════════════════════════════════════
+📊  SCAN SUMMARY
+════════════════════════════════════════════════════════════
+  📁 Files scanned:   14
+  📄 Sheets scanned:  138
+  📝 Cells scanned:   4994
+  🏷️  Terms found:     2238
+
+📋 PER-FILE BREAKDOWN:
+────────────────────────────────────────────────────────────
+  📁 0_asses.masses_Manager+Intermissions+E0Proxy
+     9 sheets | 242 cells | 142 terms ███████████████
+       🟢 ManagerScene_localization                14 cells → 11 terms
+       🟢 CharacterProfiles_localization           108 cells → 94 terms
+       🟢 E0_Instructions_localization             1 cells → 1 terms
+       🟢 E0_Questions_localization                106 cells → 36 terms
+       ⚪ E0_GameTitle_localization                1 cells → 0 terms
+       ⚪ 2x_Intermission_localization             3 cells → 0 terms
+       ⚪ 4x_Intermission_localization             3 cells → 0 terms
+       ⚪ 6x_Intermission_localization             3 cells → 0 terms
+       ⚪ 8x_Intermission_localization             3 cells → 0 terms
+
+  📁 10_asses.masses_E10Proxy
+     11 sheets | 666 cells | 359 terms ██████████████████████████████
+       🟢 E10_EpisodeTitle_localization            3 cells → 1 terms
+       🟢 E10_Slow_localization                    21 cells → 6 terms
+       🟢 E10_Nice_localization                    14 cells → 7 terms
+       🟢 E10_Sad_localization                     2 cells → 1 terms
+       🟢 E10_Thirsty_localization                 25 cells → 7 terms
+       🟢 E10_Hard_localization                    72 cells → 39 terms
+       🟢 E10_Government_localization              272 cells → 170 terms
+       🟢 E10_ProphetSpeech_localization           105 cells → 37 terms
+       ⚪ E10_Words_localization                   2 cells → 0 terms
+       🟢 E10_Epilogue_localization                35 cells → 14 terms
+       🟢 E10_Credits_localization                 115 cells → 77 terms
+
+  📁 11_asses.masses_NonCSVBasedTranslations
+     12 sheets | 71 cells | 48 terms █████
+       🟢 Other Translations                       50 cells → 36 terms
+       🟢 E10_Words_English                        2 cells → 1 terms
+       🟢 E10_Words_Korean                         3 cells → 1 terms
+       ⚪ E10_Words_Japanese                       1 cells → 0 terms
+       🟢 E10_Words_Espanol                        2 cells → 1 terms
+       🟢 E10_Words_French                         2 cells → 1 terms
+       🟢 E10_Words_Portuguese                     2 cells → 1 terms
+       🟢 E10_Words_Italian                        2 cells → 2 terms
+       🟢 E10_Words_German                         2 cells → 3 terms
+       🟢 E10_Words_Turkish                        2 cells → 1 terms
+       🟢 E10_Words_Catalan                        2 cells → 1 terms
+       ⚪ FONT Tracker                             1 cells → 0 terms
+
+  📁 1_asses.masses_E1Proxy
+     12 sheets | 416 cells | 245 terms █████████████████████████
+       ⚪ E1_EpisodeTitle_localization             2 cells → 0 terms
+       🟢 E1_Stable1F_localization                 29 cells → 26 terms
+       🟢 E1_Farm_localization                     123 cells → 64 terms
+       🟢 E1_Mill_localization                     3 cells → 1 terms
+       🟢 E1_Plowing_localization                  16 cells → 4 terms
+       🟢 E1_TrustysDream_localization             1 cells → 1 terms
+       🟢 E1_Stable2F_localization                 57 cells → 34 terms
+       🟢 E1_FarmHouseInt_localization             22 cells → 11 terms
+       ⚪ E1_TheatreInt_localization               1 cells → 0 terms
+       🟢 E1_TheProtest_localization               149 cells → 97 terms
+       🟢 E1_RedFields_localization                11 cells → 7 terms
+       ⚪ E1_TheSex_localization                   2 cells → 0 terms
+
+  📁 2_asses.masses_E2Proxy
+     15 sheets | 398 cells | 212 terms ██████████████████████
+       🟢 E2_EpisodeTitle_localization             3 cells → 1 terms
+       🟢 E2_World_A1_localization                 57 cells → 40 terms
+       🟢 E2_BadAssRescue_localization             7 cells → 1 terms
+       🟢 E2_World_B1_localization                 47 cells → 31 terms
+       🟢 E2_ChildsHouse_localization              15 cells → 1 terms
+       🟢 E2_World_A2_localization                 26 cells → 19 terms
+       🟢 E2_World_B2_localization                 23 cells → 12 terms
+       🟢 E2_MinersHouse_localization              15 cells → 8 terms
+       🟢 E2_BattleMiner_localization              31 cells → 18 terms
+       ⚪ E2_ChurchInt_localization                1 cells → 0 terms
+       ⚪ E2_TheatreInt_localization               1 cells → 0 terms
+       🟢 E2_ButtesHouse_localization              23 cells → 12 terms
+       🟢 E2_BattleButte_localization              30 cells → 13 terms
+       🟢 E2_Confession_localization               86 cells → 30 terms
+       🟢 E2_World_A3_localization                 33 cells → 26 terms
+
+  📁 3_asses.masses_E3Proxy
+     10 sheets | 379 cells | 180 terms ██████████████████
+       🟢 E3_EpisodeTitle_localization             8 cells → 2 terms
+       🟢 E3_Mine1FOpening_localization            69 cells → 33 terms
+       🟢 E3_Mine1F_localization                   147 cells → 64 terms
+       ⚪ E3_Rocks_localization                    5 cells → 0 terms
+       🟢 E3_100_localization                      23 cells → 35 terms
+       🟢 E3_LazysGrave_localization               49 cells → 16 terms
+       🟢 E3_200_localization                      5 cells → 4 terms
+       🟢 E3_300_localization                      5 cells → 2 terms
+       🟢 E3_DonkeyBas_localization                20 cells → 8 terms
+       🟢 E3_BadCave_localization                  48 cells → 16 terms
+
+  📁 4_asses.masses_E4Proxy
+     9 sheets | 435 cells | 188 terms ███████████████████
+       🟢 E4_EpisodeTitle_localization             3 cells → 1 terms
+       🟢 E4_HideAndSeek_localization              20 cells → 2 terms
+       🟢 E4_Mine1F_localization                   69 cells → 28 terms
+       🟢 E4_HerdSplits_localization               82 cells → 50 terms
+       🟢 E4_KicksConfession_localization          5 cells → 4 terms
+       🟢 E4_KicksGoodbye_localization             3 cells → 3 terms
+       🟢 E4_Mine1F_Exit_localization              17 cells → 5 terms
+       🟢 E4_AstralPlaneMain_localization          234 cells → 95 terms
+       ⚪ E4_Sex_localization                      2 cells → 0 terms
+
+  📁 5_asses.masses_E5Proxy
+     7 sheets | 591 cells | 163 terms █████████████████
+       🟢 E5_Highway_localization                  17 cells → 1 terms
+       🟢 E5_EpisodeTitle_Circus_localiza          3 cells → 1 terms
+       🟢 E5_CircusMain_localization               247 cells → 50 terms
+       🟢 E5_EpisodeTitle_Zoo_localizatio          3 cells → 1 terms
+       🟢 E5_Zoo_Introduction_localizatio          37 cells → 18 terms
+       🟢 E5_ZooMain_localization                  230 cells → 86 terms
+       🟢 E5_ZooCapture_localization               54 cells → 6 terms
+
+  📁 6_asses.masses_E6Proxy
+     8 sheets | 535 cells | 271 terms ████████████████████████████
+       🟢 E6_EpisodeTitle_localization             3 cells → 1 terms
+       🟢 E6_Nightmare_localization                70 cells → 30 terms
+       🟢 E6_BattleHard_localization               54 cells → 15 terms
+       🟢 E6_World_localization                    347 cells → 203 terms
+       ⚪ E6_Church_localization                   1 cells → 0 terms
+       🟢 E6_Stable2F_localization                 2 cells → 2 terms
+       🟢 E6_MineLift_localization                 3 cells → 3 terms
+       🟢 E6_BadCave_localization                  55 cells → 17 terms
+
+  📁 7_asses.masses_E7Proxy
+     17 sheets | 363 cells | 133 terms ██████████████
+       🟢 E7_Opening_localization                  16 cells → 10 terms
+       🟢 E7_EpisodeTitle_localization             3 cells → 1 terms
+       🟢 E7_Holding1_localization                 54 cells → 25 terms
+       🟢 E7_Holding2_localization                 23 cells → 6 terms
+       🟢 E7_Holding3_localization                 30 cells → 13 terms
+       🟢 E7_SlaughterWaitingRoom_localiz          13 cells → 4 terms
+       🟢 E7_Slaughtering_localization             18 cells → 3 terms
+       🟢 E7_Skinning_localization                 31 cells → 6 terms
+       🟢 E7_Chilling_localization                 22 cells → 6 terms
+       🟢 E7_MeatProcessing_localization           17 cells → 7 terms
+       🟢 E7_Boiling_localization                  25 cells → 6 terms
+       🟢 E7_Ejiao_localization                    14 cells → 1 terms
+       🟢 E7_Shipping_localization                 14 cells → 2 terms
+       🟢 E7_BigJob_localization                   42 cells → 25 terms
+       🟢 E7_ShippingTwo_localization              13 cells → 7 terms
+       🟢 E7_BigBattle_localization                18 cells → 5 terms
+       🟢 E7_CityStreet_localization               10 cells → 6 terms
+
+  📁 8_asses.masses_E8Proxy
+     3 sheets | 96 cells | 73 terms ████████
+       🟢 E8_EpisodeTitle_localization             3 cells → 1 terms
+       🟢 E8_SanctumMain_localization              43 cells → 24 terms
+       🟢 E8_TheGods_localization                  50 cells → 48 terms
+
+  📁 9_asses.masses_E9Proxy
+     5 sheets | 292 cells | 156 terms ████████████████
+       🟢 E9_EpisodeTitle_localization             3 cells → 1 terms
+       ⚪ E9_Captcha_localization                  11 cells → 0 terms
+       🟢 E9_BadCave_localization                  90 cells → 50 terms
+       🟢 E9_MineEscape_localization               38 cells → 8 terms
+       🟢 E9_GoldenAss_localization                150 cells → 97 terms
+
+  📁 READ_ME_LocalizationManual
+     13 sheets | 496 cells | 67 terms ███████
+       ⚪ Localization Manual                      15 cells → 0 terms
+       🟢 Names and World Overview                 65 cells → 55 terms
+       ⚪ KO Wordplay                              0 cells → 0 terms
+       ⚪ JP Wordplay                              61 cells → 0 terms
+       🟢 CA Wordplay                              269 cells → 3 terms
+       🟢 NL Wordplay                              9 cells → 2 terms
+       ⚪ Spanish Wordplay                         0 cells → 0 terms
+       ⚪ Turkish Wordplay                         1 cells → 0 terms
+       ⚪ Characters                               0 cells → 0 terms
+       🟢 German                                   28 cells → 7 terms
+       ⚪ Timeline                                 48 cells → 0 terms
+       ⚪ Testing                                  0 cells → 0 terms
+       ⚪ French word play                         0 cells → 0 terms
+
+  📁 Translation Checklist
+     7 sheets | 14 cells | 1 terms █
+       🟢 Schedule                                 13 cells → 1 terms
+       ⚪ TR                                       1 cells → 0 terms
+       ⚪ NL                                       0 cells → 0 terms
+       ⚪ CA                                       0 cells → 0 terms
+       ⚪ KO                                       0 cells → 0 terms
+       ⚪ JP                                       0 cells → 0 terms
+       ⚪ Template                                 0 cells → 0 terms
+
+════════════════════════════════════════════════════════════
+🆕  NEW TERMS NOT IN CODEX (appearing 2+ times)
+════════════════════════════════════════════════════════════
+
+  1. "Humans" (156x across 10 files) ████████████████████████████████████████
+     📂 10_asses.masses_E10Proxy, 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy, 8_asses.masses_E8Proxy, 9_asses.masses_E9Proxy
+
+  2. "Asses" (53x across 10 files) ████████████████████████████████████████
+     📂 10_asses.masses_E10Proxy, 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy, 8_asses.masses_E8Proxy, 9_asses.masses_E9Proxy
+
+  3. "Machines" (43x across 8 files) ████████████████████████████████████████
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy, 9_asses.masses_E9Proxy
+
+  4. "Comrade" (42x across 6 files) ████████████████████████████████████████
+     📂 10_asses.masses_E10Proxy, 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 6_asses.masses_E6Proxy
+
+  5. "Herd" (37x across 9 files) █████████████████████████████████████
+     📂 10_asses.masses_E10Proxy, 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy, 9_asses.masses_E9Proxy
+
+  6. "Manifesto" (36x across 2 files) ████████████████████████████████████
+     📂 10_asses.masses_E10Proxy, 11_asses.masses_NonCSVBasedTranslations
+
+  7. "Machine" (25x across 7 files) █████████████████████████
+     📂 10_asses.masses_E10Proxy, 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy, 9_asses.masses_E9Proxy, READ_ME_LocalizationManual
+
+  8. "Prophet" (23x across 4 files) ███████████████████████
+     📂 0_asses.masses_Manager+Intermissions+E0Proxy, 10_asses.masses_E10Proxy, 8_asses.masses_E8Proxy, 9_asses.masses_E9Proxy
+
+  9. "Comrades" (21x across 9 files) █████████████████████
+     📂 10_asses.masses_E10Proxy, 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy, 8_asses.masses_E8Proxy
+
+ 10. "Soul" (21x across 8 files) █████████████████████
+     📂 10_asses.masses_E10Proxy, 1_asses.masses_E1Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy, 8_asses.masses_E8Proxy, 9_asses.masses_E9Proxy
+
+ 11. "Mother" (19x across 3 files) ███████████████████
+     📂 3_asses.masses_E3Proxy, 6_asses.masses_E6Proxy, 9_asses.masses_E9Proxy
+
+ 12. "Heritage Stable" (16x across 2 files) ████████████████
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy
+
+ 13. "Well" (14x across 3 files) ██████████████
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 6_asses.masses_E6Proxy
+
+ 14. "Week" (13x across 3 files) █████████████
+     📂 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy
+
+ 15. "Theatre" (13x across 1 file) █████████████
+     📂 6_asses.masses_E6Proxy
+
+ 16. "Plan" (12x across 6 files) ████████████
+     📂 10_asses.masses_E10Proxy, 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 4_asses.masses_E4Proxy, 5_asses.masses_E5Proxy, 7_asses.masses_E7Proxy
+
+ 17. "Mine" (11x across 7 files) ███████████
+     📂 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy, READ_ME_LocalizationManual
+
+ 18. "Begin" (10x across 9 files) ██████████
+     📂 10_asses.masses_E10Proxy, 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy, 8_asses.masses_E8Proxy, 9_asses.masses_E9Proxy
+
+ 19. "Outhouse" (10x across 3 files) ██████████
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy
+
+ 20. "Zoo" (9x across 3 files) █████████
+     📂 10_asses.masses_E10Proxy, 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy
+
+ 21. "Newbie" (9x across 2 files) █████████
+     📂 1_asses.masses_E1Proxy, 4_asses.masses_E4Proxy
+
+ 22. "Rocks" (9x across 2 files) █████████
+     📂 3_asses.masses_E3Proxy, 6_asses.masses_E6Proxy
+
+ 23. "Donkey" (9x across 2 files) █████████
+     📂 5_asses.masses_E5Proxy, READ_ME_LocalizationManual
+
+ 24. "Vassals" (8x across 2 files) ████████
+     📂 10_asses.masses_E10Proxy, 8_asses.masses_E8Proxy
+
+ 25. "Uncle Bad—Cole" (8x across 2 files) ████████
+     📂 10_asses.masses_E10Proxy, 9_asses.masses_E9Proxy
+
+ 26. "Industry Coal Mines" (8x across 2 files) ████████
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy
+
+ 27. "State" (8x across 2 files) ████████
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy
+
+ 28. "Comrade Mother" (8x across 3 files) ████████
+     📂 3_asses.masses_E3Proxy, 6_asses.masses_E6Proxy, 9_asses.masses_E9Proxy
+
+ 29. "Mme" (7x across 5 files) ███████
+     📂 10_asses.masses_E10Proxy, 1_asses.masses_E1Proxy, 3_asses.masses_E3Proxy, 5_asses.masses_E5Proxy, 7_asses.masses_E7Proxy
+
+ 30. "NewName" (7x across 4 files) ███████
+     📂 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 6_asses.masses_E6Proxy, 9_asses.masses_E9Proxy
+
+ 31. "Revolution" (6x across 4 files) ██████
+     📂 0_asses.masses_Manager+Intermissions+E0Proxy, 10_asses.masses_E10Proxy, 2_asses.masses_E2Proxy, 4_asses.masses_E4Proxy
+
+ 32. "Ointment" (6x across 3 files) ██████
+     📂 10_asses.masses_E10Proxy, 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy
+
+ 33. "Freedom" (6x across 3 files) ██████
+     📂 11_asses.masses_NonCSVBasedTranslations, 3_asses.masses_E3Proxy, 6_asses.masses_E6Proxy
+
+ 34. "Long Way" (6x across 3 files) ██████
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 6_asses.masses_E6Proxy
+
+ 35. "Miners" (6x across 1 file) ██████
+     📂 1_asses.masses_E1Proxy
+
+ 36. "Ace Strategist" (6x across 3 files) ██████
+     📂 1_asses.masses_E1Proxy, 3_asses.masses_E3Proxy, 7_asses.masses_E7Proxy
+
+ 37. "Fire" (6x across 3 files) ██████
+     📂 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 6_asses.masses_E6Proxy
+
+ 38. "Dope Ass" (5x across 3 files) █████
+     📂 0_asses.masses_Manager+Intermissions+E0Proxy, 10_asses.masses_E10Proxy, 4_asses.masses_E4Proxy
+
+ 39. "Territory" (5x across 2 files) █████
+     📂 10_asses.masses_E10Proxy, 6_asses.masses_E6Proxy
+
+ 40. "Hellhole" (5x across 2 files) █████
+     📂 10_asses.masses_E10Proxy, 4_asses.masses_E4Proxy
+
+ 41. "Accuracy PopUp Meh" (5x across 1 file) █████
+     📂 11_asses.masses_NonCSVBasedTranslations
+
+ 42. "Forest Shrine" (5x across 2 files) █████
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy
+
+ 43. "Needle" (5x across 2 files) █████
+     📂 1_asses.masses_E1Proxy, 4_asses.masses_E4Proxy
+
+ 44. "Newbies" (5x across 1 file) █████
+     📂 4_asses.masses_E4Proxy
+
+ 45. "Loser" (5x across 2 files) █████
+     📂 4_asses.masses_E4Proxy, 8_asses.masses_E8Proxy
+
+ 46. "Purple Stuff" (5x across 1 file) █████
+     📂 4_asses.masses_E4Proxy
+
+ 47. "All" (5x across 2 files) █████
+     📂 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy
+
+ 48. "Power" (5x across 3 files) █████
+     📂 6_asses.masses_E6Proxy, 8_asses.masses_E8Proxy, 9_asses.masses_E9Proxy
+
+ 49. "Vassal" (5x across 2 files) █████
+     📂 8_asses.masses_E8Proxy, 9_asses.masses_E9Proxy
+
+ 50. "Bad—Cole" (4x across 2 files) ████
+     📂 10_asses.masses_E10Proxy, 9_asses.masses_E9Proxy
+
+ 51. "Parliament" (4x across 1 file) ████
+     📂 10_asses.masses_E10Proxy
+
+ 52. "Factories" (4x across 1 file) ████
+     📂 10_asses.masses_E10Proxy
+
+ 53. "Animals" (4x across 1 file) ████
+     📂 10_asses.masses_E10Proxy
+
+ 54. "System" (4x across 2 files) ████
+     📂 10_asses.masses_E10Proxy, 9_asses.masses_E9Proxy
+
+ 55. "Cole Butte" (4x across 4 files) ████
+     📂 10_asses.masses_E10Proxy, 3_asses.masses_E3Proxy, 6_asses.masses_E6Proxy, 9_asses.masses_E9Proxy
+
+ 56. "Stable" (4x across 3 files) ████
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy
+
+ 57. "Masters" (4x across 4 files) ████
+     📂 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy, 7_asses.masses_E7Proxy
+
+ 58. "Ancestors" (4x across 2 files) ████
+     📂 3_asses.masses_E3Proxy, 6_asses.masses_E6Proxy
+
+ 59. "Number" (4x across 2 files) ████
+     📂 3_asses.masses_E3Proxy, 5_asses.masses_E5Proxy
+
+ 60. "Win" (4x across 1 file) ████
+     📂 3_asses.masses_E3Proxy
+
+ 61. "Assistant" (4x across 3 files) ████
+     📂 3_asses.masses_E3Proxy, 6_asses.masses_E6Proxy, 9_asses.masses_E9Proxy
+
+ 62. "Concert" (4x across 1 file) ████
+     📂 4_asses.masses_E4Proxy
+
+ 63. "Robots" (4x across 3 files) ████
+     📂 5_asses.masses_E5Proxy, 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy
+
+ 64. "Hulk" (4x across 1 file) ████
+     📂 5_asses.masses_E5Proxy
+
+ 65. "Winds of Revolution" (4x across 1 file) ████
+     📂 9_asses.masses_E9Proxy
+
+ 66. "Government" (3x across 1 file) ███
+     📂 10_asses.masses_E10Proxy
+
+ 67. "Ass Souls" (3x across 3 files) ███
+     📂 10_asses.masses_E10Proxy, 4_asses.masses_E4Proxy, 8_asses.masses_E8Proxy
+
+ 68. "Activists" (3x across 2 files) ███
+     📂 10_asses.masses_E10Proxy, 7_asses.masses_E7Proxy
+
+ 69. "Robot" (3x across 2 files) ███
+     📂 10_asses.masses_E10Proxy, 7_asses.masses_E7Proxy
+
+ 70. "Brown" (3x across 2 files) ███
+     📂 10_asses.masses_E10Proxy, 2_asses.masses_E2Proxy
+
+ 71. "Progress" (3x across 3 files) ███
+     📂 11_asses.masses_NonCSVBasedTranslations, 5_asses.masses_E5Proxy, 7_asses.masses_E7Proxy
+
+ 72. "Mill" (3x across 2 files) ███
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy
+
+ 73. "Mines" (3x across 2 files) ███
+     📂 1_asses.masses_E1Proxy, 2_asses.masses_E2Proxy
+
+ 74. "Old Ass's" (3x across 1 file) ███
+     📂 1_asses.masses_E1Proxy
+
+ 75. "Mountain Trail" (3x across 1 file) ███
+     📂 2_asses.masses_E2Proxy
+
+ 76. "Computer" (3x across 2 files) ███
+     📂 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy
+
+ 77. "Bray" (3x across 2 files) ███
+     📂 2_asses.masses_E2Proxy, 5_asses.masses_E5Proxy
+
+ 78. "Headbutt" (3x across 2 files) ███
+     📂 2_asses.masses_E2Proxy, 6_asses.masses_E6Proxy
+
+ 79. "Lazy's" (3x across 2 files) ███
+     📂 2_asses.masses_E2Proxy, 6_asses.masses_E6Proxy
+
+ 80. "Grey" (3x across 1 file) ███
+     📂 2_asses.masses_E2Proxy
+
+ 81. "Uncle Sad Ass" (3x across 1 file) ███
+     📂 3_asses.masses_E3Proxy
+
+ 82. "Boredom" (3x across 1 file) ███
+     📂 3_asses.masses_E3Proxy
+
+ 83. "Jobs" (3x across 2 files) ███
+     📂 3_asses.masses_E3Proxy, 4_asses.masses_E4Proxy
+
+ 84. "Boring Machine" (3x across 3 files) ███
+     📂 3_asses.masses_E3Proxy, 6_asses.masses_E6Proxy, READ_ME_LocalizationManual
+
+ 85. "History" (3x across 2 files) ███
+     📂 4_asses.masses_E4Proxy, 9_asses.masses_E9Proxy
+
+ 86. "Zoo's Board of Directors" (3x across 1 file) ███
+     📂 5_asses.masses_E5Proxy
+
+ 87. "Eeyore" (3x across 1 file) ███
+     📂 5_asses.masses_E5Proxy
+
+ 88. "Uncle Bad Ass" (3x across 1 file) ███
+     📂 6_asses.masses_E6Proxy
+
+ 89. "Watering Hole Opening" (3x across 1 file) ███
+     📂 6_asses.masses_E6Proxy
+
+ 90. "No" (3x across 1 file) ███
+     📂 6_asses.masses_E6Proxy
+
+ 91. "Circus" (3x across 2 files) ███
+     📂 6_asses.masses_E6Proxy, 7_asses.masses_E7Proxy
+
+ 92. "Material World" (3x across 1 file) ███
+     📂 8_asses.masses_E8Proxy
+
+ 93. "Universe" (3x across 1 file) ███
+     📂 8_asses.masses_E8Proxy
+
+ 94. "Sick—Golden—Gods" (3x across 1 file) ███
+     📂 9_asses.masses_E9Proxy
+
+ 95. "Name" (2x across 2 files) ██
+     📂 0_asses.masses_Manager+Intermissions+E0Proxy, 11_asses.masses_NonCSVBasedTranslations
+
+ 96. "Handler Melvin" (2x across 2 files) ██
+     📂 0_asses.masses_Manager+Intermissions+E0Proxy, 10_asses.masses_E10Proxy
+
+ 97. "Handler Wedgie" (2x across 2 files) ██
+     📂 0_asses.masses_Manager+Intermissions+E0Proxy, 10_asses.masses_E10Proxy
+
+ 98. "English" (2x across 1 file) ██
+     📂 0_asses.masses_Manager+Intermissions+E0Proxy
+
+ 99. "Balaam" (2x across 1 file) ██
+     📂 0_asses.masses_Manager+Intermissions+E0Proxy
+
+100. "Esel" (2x across 2 files) ██
+     📂 0_asses.masses_Manager+Intermissions+E0Proxy, 11_asses.masses_NonCSVBasedTranslations
+
+101. "Foals" (2x across 1 file) ██
+     📂 10_asses.masses_E10Proxy
+
+102. "Janus" (2x across 1 file) ██
+     📂 10_asses.masses_E10Proxy
+
+103. "Fish" (2x across 1 file) ██
+     📂 10_asses.masses_E10Proxy
+
+104. "World" (2x across 1 file) ██
+     📂 10_asses.masses_E10Proxy
+
+105. "Las Posaderas" (2x across 2 files) ██
+     📂 11_asses.masses_NonCSVBasedTranslations, READ_ME_LocalizationManual
+
+106. "Niquedouille" (2x across 2 files) ██
+     📂 11_asses.masses_NonCSVBasedTranslations, READ_ME_LocalizationManual
+
+107. "Culonia" (2x across 2 files) ██
+     📂 11_asses.masses_NonCSVBasedTranslations, READ_ME_LocalizationManual
+
+108. "Talldevall" (2x across 2 files) ██
+     📂 11_asses.masses_NonCSVBasedTranslations, READ_ME_LocalizationManual
+
+109. "Old Ass's Protest" (2x across 2 files) ██
+     📂 1_asses.masses_E1Proxy, 6_asses.masses_E6Proxy
+
+110. "Vigil" (2x across 2 files) ██
+     📂 1_asses.masses_E1Proxy, 4_asses.masses_E4Proxy
+
+111. "Morale" (2x across 2 files) ██
+     📂 1_asses.masses_E1Proxy, 4_asses.masses_E4Proxy
+
+112. "Ass Soul" (2x across 2 files) ██
+     📂 1_asses.masses_E1Proxy, 3_asses.masses_E3Proxy
+
+113. "Show" (2x across 1 file) ██
+     📂 1_asses.masses_E1Proxy
+
+114. "Traditional Ass Posture" (2x across 2 files) ██
+     📂 1_asses.masses_E1Proxy, 8_asses.masses_E8Proxy
+
+115. "Herds" (2x across 2 files) ██
+     📂 1_asses.masses_E1Proxy, 3_asses.masses_E3Proxy
+
+116. "Plan C" (2x across 1 file) ██
+     📂 2_asses.masses_E2Proxy
+
+117. "Ass's" (2x across 2 files) ██
+     📂 2_asses.masses_E2Proxy, 4_asses.masses_E4Proxy
+
+118. "Boss's" (2x across 2 files) ██
+     📂 2_asses.masses_E2Proxy, 3_asses.masses_E3Proxy
+
+119. "Grunt" (2x across 1 file) ██
+     📂 2_asses.masses_E2Proxy
+
+120. "Tackle" (2x across 1 file) ██
+     📂 2_asses.masses_E2Proxy
+
+121. "Double Kick" (2x across 1 file) ██
+     📂 2_asses.masses_E2Proxy
+
+122. "Stomp" (2x across 1 file) ██
+     📂 2_asses.masses_E2Proxy
+
+123. "Blue" (2x across 1 file) ██
+     📂 2_asses.masses_E2Proxy
+
+124. "Uncle" (2x across 2 files) ██
+     📂 3_asses.masses_E3Proxy, 9_asses.masses_E9Proxy
+
+125. "City Bank" (2x across 1 file) ██
+     📂 3_asses.masses_E3Proxy
+
+126. "Computers" (2x across 1 file) ██
+     📂 3_asses.masses_E3Proxy
+
+127. "Don't" (2x across 2 files) ██
+     📂 4_asses.masses_E4Proxy, 5_asses.masses_E5Proxy
+
+128. "Slow—we're" (2x across 1 file) ██
+     📂 4_asses.masses_E4Proxy
+
+129. "Pond of Hehehehe" (2x across 1 file) ██
+     📂 4_asses.masses_E4Proxy
+
+130. "Protests" (2x across 1 file) ██
+     📂 4_asses.masses_E4Proxy
+
+131. "Dope Ass's Concert" (2x across 1 file) ██
+     📂 4_asses.masses_E4Proxy
+
+132. "Pond" (2x across 1 file) ██
+     📂 4_asses.masses_E4Proxy
+
+133. "Hunger Strike" (2x across 1 file) ██
+     📂 4_asses.masses_E4Proxy
+
+134. "World Tour" (2x across 1 file) ██
+     📂 5_asses.masses_E5Proxy
+
+135. "Tour" (2x across 1 file) ██
+     📂 5_asses.masses_E5Proxy
+
+136. "Littlefoot" (2x across 1 file) ██
+     📂 5_asses.masses_E5Proxy
+
+137. "Achilles" (2x across 1 file) ██
+     📂 5_asses.masses_E5Proxy
+
+138. "Dust Bath" (2x across 1 file) ██
+     📂 5_asses.masses_E5Proxy
+
+139. "Listened" (2x across 1 file) ██
+     📂 5_asses.masses_E5Proxy
+
+140. "Nuzzle" (2x across 1 file) ██
+     📂 5_asses.masses_E5Proxy
+
+141. "Level" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+142. "Bar" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+143. "Wounds" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+144. "Old Village" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+145. "Terrible" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+146. "Aesthetic Response" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+147. "Pains" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+148. "Courage" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+149. "Tyranny of Machinery" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+150. "Scared" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+151. "Showers" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+152. "Next Life" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+153. "Pleasures of Entering Fannyside" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+154. "Content" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+155. "Fields Weep" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+156. "Blood" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+157. "Born First Lost" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+158. "Study" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+159. "Laziness" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+160. "Eternity" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+161. "Traditions" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+162. "Gorilla Kick" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+163. "Zeb-bra" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+164. "Mystery-Machine" (2x across 1 file) ██
+     📂 6_asses.masses_E6Proxy
+
+165. "Gorilla" (2x across 1 file) ██
+     📂 7_asses.masses_E7Proxy
+
+166. "Factory Hell" (2x across 1 file) ██
+     📂 7_asses.masses_E7Proxy
+
+167. "Souls" (2x across 1 file) ██
+     📂 8_asses.masses_E8Proxy
+
+168. "Operation Prophet" (2x across 2 files) ██
+     📂 8_asses.masses_E8Proxy, 9_asses.masses_E9Proxy
+
+169. "Absolutes" (2x across 1 file) ██
+     📂 9_asses.masses_E9Proxy
+
+170. "Eternal" (2x across 1 file) ██
+     📂 9_asses.masses_E9Proxy
+
+171. "Movement" (2x across 1 file) ██
+     📂 9_asses.masses_E9Proxy
+
+172. "Nagwi" (2x across 1 file) ██
+     📂 READ_ME_LocalizationManual
+
+173. "Ep" (2x across 1 file) ██
+     📂 READ_ME_LocalizationManual
+
+174. "Kuyukazan" (2x across 1 file) ██
+     📂 READ_ME_LocalizationManual
+
+175. "Words" (2x across 1 file) ██
+     📂 READ_ME_LocalizationManual
+
+════════════════════════════════════════════════════════════
+✅  EXISTING CODEX TERMS FOUND
+════════════════════════════════════════════════════════════
+
+  1. "Ass" (301x across 12 files)
+  2. "Gods" (28x across 7 files)
+  3. "Human" (25x across 7 files)
+  4. "Farm" (25x across 6 files)
+  5. "Trusty" (24x across 4 files)
+  6. "Protest" (20x across 6 files)
+  7. "Hard Ass" (18x across 7 files)
+  8. "Astral Plane" (16x across 7 files)
+  9. "Sick" (16x across 5 files)
+ 10. "Factory" (15x across 5 files)
+ 11. "Foal" (15x across 6 files)
+ 12. "Smart" (14x across 3 files)
+ 13. "Sign" (13x across 2 files)
+ 14. "Old Ass" (13x across 3 files)
+ 15. "Jenny" (12x across 4 files)
+ 16. "Big Ass" (11x across 5 files)
+ 17. "Lazy" (11x across 4 files)
+ 18. "Mecha City" (11x across 3 files)
+ 19. "Sad Ass" (10x across 6 files)
+ 20. "Kick Ass" (9x across 4 files)
+ 21. "Tractor-Machine" (9x across 4 files)
+ 22. "Nice Ass" (9x across 4 files)
+ 23. "Fannyside Farm" (9x across 3 files)
+ 24. "Fannyside" (8x across 4 files)
+ 25. "Slow Ass" (8x across 4 files)
+ 26. "City" (8x across 3 files)
+ 27. "Sick Ass" (8x across 4 files)
+ 28. "Bad Ass" (7x across 4 files)
+ 29. "Truck-Machine" (7x across 3 files)
+ 30. "Village" (7x across 2 files)
+  ... and 54 more known terms
+
+════════════════════════════════════════════════════════════
+🏁  FINAL TOTALS
+════════════════════════════════════════════════════════════
+  🔢 Total unique capitalized terms:    588
+  ✅ Already in codex:                  84
+  🆕 New discoveries (2+ occurrences):  175
+  🔹 New discoveries (1 occurrence):    329
+
+Run with --verbose for example contexts
+Run with --min-count=1 to see all discoveries
+════════════════════════════════════════════════════════════
