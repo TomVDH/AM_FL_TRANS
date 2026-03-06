@@ -24,6 +24,7 @@ import CodexButton from './CodexButton';
 import ReferenceToolsPanel from './ReferenceToolsPanel';
 import QuickReferenceBar from './QuickReferenceBar';
 import ResetConfirmationModal from './ResetConfirmationModal';
+import { ConversationView } from './ConversationView';
 import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
 import { useEditedTranslations } from '../hooks/useEditedTranslations';
 import { useTranslationMemory } from '../hooks/useTranslationMemory';
@@ -306,9 +307,11 @@ const TranslationHelper: React.FC = () => {
     eyeMode,
     highlightMode,
     gamepadMode,
+    conversationMode,
     toggleDarkMode,
     toggleHighlightMode,
     toggleGamepadMode,
+    toggleConversationMode,
   } = useDisplayModes();
   
   const {
@@ -612,6 +615,9 @@ const TranslationHelper: React.FC = () => {
   // Keyboard shortcuts
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      // Don't process standard shortcuts in conversation mode — ConversationView has its own
+      if (conversationMode) return;
+
       // Only handle shortcuts when textarea is not focused
       if (document.activeElement?.tagName === 'TEXTAREA' || document.activeElement?.tagName === 'INPUT') {
         // Allow Enter to submit even from textarea
@@ -677,7 +683,7 @@ const TranslationHelper: React.FC = () => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentIndex, sourceTexts.length, translations, handlePrevious, handleSubmit, setCurrentIndex, setCurrentTranslation, xlsxMode, toggleXlsxMode, trimCurrentTranslation, toggleHighlightMode, toggleGamepadMode, toggleAiSuggest, finishSheet, handleKeyboardSubmit]);
+  }, [currentIndex, sourceTexts.length, translations, handlePrevious, handleSubmit, setCurrentIndex, setCurrentTranslation, xlsxMode, toggleXlsxMode, trimCurrentTranslation, toggleHighlightMode, toggleGamepadMode, toggleAiSuggest, finishSheet, handleKeyboardSubmit, conversationMode]);
 
   // Handle language selection
   const handleSelectLanguage = useCallback((language: DetectedLanguage) => {
@@ -1584,6 +1590,24 @@ const TranslationHelper: React.FC = () => {
                           <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
                           <span>AI</span>
                         </button>
+                        {/* Conversation Mode */}
+                        <button
+                          onClick={toggleConversationMode}
+                          disabled={!isStarted || sourceTexts.length === 0}
+                          className={`p-1.5 transition-all duration-150 ${
+                            conversationMode
+                              ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30'
+                              : !isStarted || sourceTexts.length === 0
+                                ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed'
+                                : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
+                          }`}
+                          style={{ borderRadius: '2px' }}
+                          title="Conversation View"
+                        >
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
+                          </svg>
+                        </button>
                       </div>
                       {hasCurrentEntryChanged() ? (
                         <span className="inline-flex items-center gap-1.5 px-2 py-1.5 text-[10px] font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-700" style={{ borderRadius: '3px' }}>
@@ -2228,6 +2252,26 @@ const TranslationHelper: React.FC = () => {
          * - Border: 2px dashed with dark mode support
          */
       `}</style>
+
+      {conversationMode && isStarted && sourceTexts.length > 0 && (
+        <ConversationView
+          sourceTexts={sourceTexts}
+          translations={translations}
+          originalTranslations={originalTranslations}
+          utterers={utterers}
+          contextNotes={contextNotes}
+          currentIndex={currentIndex}
+          setCurrentIndex={setCurrentIndex}
+          setCurrentTranslation={setCurrentTranslation}
+          handleSubmitWithSync={handleSubmitWithSync}
+          updateTranslationAtIndex={updateTranslationAtIndex}
+          syncStatus={syncStatus}
+          selectedSheet={selectedSheet}
+          characterData={characterData}
+          highlightMode={highlightMode}
+          onExit={toggleConversationMode}
+        />
+      )}
 
     </div>
   );
