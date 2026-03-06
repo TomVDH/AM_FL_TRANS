@@ -17,6 +17,7 @@ export const useDisplayModes = () => {
   const [eyeMode, setEyeMode] = useState(false);                       // Show translation instead of source
   const [highlightMode, setHighlightMode] = useState(true);            // Toggle highlighting of codex matches
   const [gamepadMode, setGamepadMode] = useState(false);               // Pixel dialogue box mode
+  const [conversationMode, setConversationMode] = useState(false);     // Chat bubble conversation view
   const [eyeModeBeforeGamepad, setEyeModeBeforeGamepad] = useState(false); // Store eyeMode state before entering gamepad mode
 
   // Initialize and persist dark mode
@@ -63,6 +64,16 @@ export const useDisplayModes = () => {
       return newGamepadMode;
     });
   };
+  const toggleConversationMode = () => {
+    setConversationMode(prev => {
+      const entering = !prev;
+      if (entering) {
+        // Exiting gamepad mode if active — mutually exclusive
+        setGamepadMode(false);
+      }
+      return entering;
+    });
+  };
 
   return {
     // State
@@ -70,17 +81,20 @@ export const useDisplayModes = () => {
     eyeMode,
     highlightMode,
     gamepadMode,
-    
+    conversationMode,
+
     // Setters
     setDarkMode,
     setEyeMode,
     setHighlightMode,
     setGamepadMode,
-    
+    setConversationMode,
+
     // Toggle functions
     toggleDarkMode,
     toggleEyeMode,
     toggleHighlightMode,
     toggleGamepadMode,
+    toggleConversationMode,
   };
 }; 
