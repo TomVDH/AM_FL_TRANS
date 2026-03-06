@@ -27,6 +27,7 @@ import ResetConfirmationModal from './ResetConfirmationModal';
 import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
 import { useEditedTranslations } from '../hooks/useEditedTranslations';
 import { useTranslationMemory } from '../hooks/useTranslationMemory';
+import { useAiSuggestion } from '../hooks/useAiSuggestion';
 import { useWowMode } from '../hooks/useWowMode';
 import { celebrateMilestone } from '../utils/celebrations';
 
@@ -446,6 +447,22 @@ const TranslationHelper: React.FC = () => {
     startRow,
   });
 
+  // AI translation suggestion
+  const {
+    aiSuggestEnabled,
+    aiSuggestion,
+    isLoadingAiSuggestion,
+    aiSuggestError,
+    toggleAiSuggest,
+    clearAiSuggestion,
+  } = useAiSuggestion({
+    sourceText: sourceTexts[currentIndex] || '',
+    speaker: trimSpeakerName(utterers[currentIndex]),
+    context: contextNotes[currentIndex] || '',
+    existingTranslation: currentTranslation,
+    currentIndex,
+  });
+
   // Combine edited matches with memory matches for QuickReferenceBar
   const findCombinedEditedMatches = useCallback((text: string) => {
     const sessionMatches = findEditedMatches(text);
@@ -646,6 +663,11 @@ const TranslationHelper: React.FC = () => {
         e.preventDefault();
         toggleGamepadMode();
       }
+      // A for AI Suggest toggle
+      else if (e.key.toLowerCase() === 'a') {
+        e.preventDefault();
+        toggleAiSuggest();
+      }
       // Enter for Submit
       else if (e.key === 'Enter') {
         e.preventDefault();
@@ -655,7 +677,7 @@ const TranslationHelper: React.FC = () => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentIndex, sourceTexts.length, translations, handlePrevious, handleSubmit, setCurrentIndex, setCurrentTranslation, xlsxMode, toggleXlsxMode, trimCurrentTranslation, toggleHighlightMode, toggleGamepadMode, finishSheet, handleKeyboardSubmit]);
+  }, [currentIndex, sourceTexts.length, translations, handlePrevious, handleSubmit, setCurrentIndex, setCurrentTranslation, xlsxMode, toggleXlsxMode, trimCurrentTranslation, toggleHighlightMode, toggleGamepadMode, toggleAiSuggest, finishSheet, handleKeyboardSubmit]);
 
   // Handle language selection
   const handleSelectLanguage = useCallback((language: DetectedLanguage) => {
@@ -796,6 +818,10 @@ const TranslationHelper: React.FC = () => {
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-700 dark:text-gray-300">Highlight Mode</span>
                     <kbd className="px-3 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>H</kbd>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-gray-700 dark:text-gray-300">AI Suggest</span>
+                    <kbd className="px-3 py-1.5 text-xs font-bold text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>A</kbd>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-sm text-gray-700 dark:text-gray-300">Game Mode</span>
@@ -1553,6 +1579,11 @@ const TranslationHelper: React.FC = () => {
                           <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${liveEditMode ? syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' : syncStatus === 'synced' ? 'bg-green-500' : syncStatus === 'error' ? 'bg-red-500 animate-pulse' : 'bg-green-500' : 'bg-gray-400'}`} />
                           Live
                         </button>
+                        {/* AI Suggest */}
+                        <button onClick={toggleAiSuggest} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${aiSuggestEnabled ? 'text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="AI Suggest (A)">
+                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
+                          <span>AI</span>
+                        </button>
                       </div>
                       {hasCurrentEntryChanged() ? (
                         <span className="inline-flex items-center gap-1.5 px-2 py-1.5 text-[10px] font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-700" style={{ borderRadius: '3px' }}>
@@ -1586,6 +1617,37 @@ const TranslationHelper: React.FC = () => {
                       placeholder="Enter your translation..."
                       autoFocus
                     />
+
+                    {/* AI Suggestion Golden Pill */}
+                    {aiSuggestEnabled && (isLoadingAiSuggestion || aiSuggestion || aiSuggestError) && (
+                      <div className="mt-2">
+                        {isLoadingAiSuggestion ? (
+                          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 border border-amber-300 dark:border-amber-600 text-amber-700 dark:text-amber-300 text-xs font-medium animate-pulse" style={{ borderRadius: '3px' }}>
+                            <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
+                            Generating suggestion...
+                          </div>
+                        ) : aiSuggestError ? (
+                          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-red-50 dark:bg-red-900/20 border border-red-300 dark:border-red-700 text-red-600 dark:text-red-400 text-xs" style={{ borderRadius: '3px' }}>
+                            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd"/></svg>
+                            {aiSuggestError}
+                          </div>
+                        ) : aiSuggestion ? (
+                          <button
+                            onClick={() => {
+                              insertTranslatedSuggestion(aiSuggestion);
+                              clearAiSuggestion();
+                              toast.success('AI suggestion inserted');
+                            }}
+                            className="group inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/30 dark:to-yellow-900/30 border border-amber-300 dark:border-amber-600 hover:border-amber-400 dark:hover:border-amber-500 hover:shadow-md text-amber-800 dark:text-amber-200 text-xs transition-all duration-150 cursor-pointer max-w-full" style={{ borderRadius: '3px' }}
+                            title="Click to insert AI suggestion"
+                          >
+                            <svg className="w-3 h-3 text-amber-500 dark:text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/></svg>
+                            <span className="truncate">{aiSuggestion}</span>
+                            <svg className="w-3 h-3 text-amber-400 dark:text-amber-500 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4"/></svg>
+                          </button>
+                        ) : null}
+                      </div>
+                    )}
 
                     <div className="mt-4">
                       <div className="flex items-center justify-between">
