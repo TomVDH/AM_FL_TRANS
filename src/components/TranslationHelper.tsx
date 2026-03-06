@@ -402,6 +402,7 @@ const TranslationHelper: React.FC = () => {
   const [showKeyboardShortcuts, setShowKeyboardShortcuts] = useState(false);
   const [showInlineSource, setShowInlineSource] = useState(true); // true = show EN source, false = show NL translation
   const [showResetModal, setShowResetModal] = useState(false);
+  const [showOutput, setShowOutput] = useState(true);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
@@ -1221,7 +1222,7 @@ const TranslationHelper: React.FC = () => {
             {/* Translation Card - Compact padding */}
             <div
               ref={cardRef}
-              className={`bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-5 space-y-4 shadow-md transition-all duration-300 flex-1 flex flex-col ${
+              className={`bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-5 space-y-4 shadow-sm transition-all duration-300 flex-1 flex flex-col ${
                 isAnimating ? 'opacity-0 transform -translate-x-4' : 'opacity-100 transform translate-x-0'
               }`}
               style={{
@@ -1357,12 +1358,12 @@ const TranslationHelper: React.FC = () => {
                         setCurrentIndex(currentIndex - 1);
                         setCurrentTranslation(translations[currentIndex - 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex - 1] || '');
                       }}
-                      className="w-full text-left px-4 py-2 bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 border-b-0 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors cursor-pointer group"
+                      className="w-full text-left px-4 py-2 bg-gray-50/50 dark:bg-gray-800/30 border border-gray-100 dark:border-gray-700/50 border-b-0 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors cursor-pointer group"
                       style={{ borderRadius: '3px 3px 0 0' }}
                     >
                       <div className="flex items-center gap-2">
                         <span
-                          className="inline-flex items-center px-1 py-0.5 text-[8px] font-bold bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-300 dark:border-gray-600 shrink-0"
+                          className="inline-flex items-center px-1 py-0.5 text-[8px] font-bold bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-600 shrink-0"
                           style={{ borderRadius: '2px', fontFamily: 'monospace' }}
                         >
                           {translationColumn}{startRow + currentIndex - 1}
@@ -1379,13 +1380,13 @@ const TranslationHelper: React.FC = () => {
 
                   {/* Main Source Text Display - SPOTLIGHT */}
                   <div
-                    className="relative bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 shadow-sm"
+                    className="relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm"
                     style={{
                       borderRadius: currentIndex > 0 && sourceTexts[currentIndex - 1] ? '0' : '3px 3px 0 0',
                     }}
                   >
                     {/* Minimal Header Row */}
-                    <div className="flex items-center justify-between px-4 py-2 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900/50">
+                    <div className="flex items-center justify-between px-4 py-2 border-b border-gray-100 dark:border-gray-700/50 bg-gray-50/50 dark:bg-gray-900/30">
                       <div className="flex items-center gap-2">
                         <span
                           className="inline-flex items-center px-1.5 py-0.5 text-[10px] font-bold bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-500"
@@ -1477,12 +1478,12 @@ const TranslationHelper: React.FC = () => {
                         setCurrentIndex(currentIndex + 1);
                         setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
                       }}
-                      className="w-full text-left px-4 py-2 bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 border-t-0 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors cursor-pointer group"
+                      className="w-full text-left px-4 py-2 bg-gray-50/50 dark:bg-gray-800/30 border border-gray-100 dark:border-gray-700/50 border-t-0 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-colors cursor-pointer group"
                       style={{ borderRadius: '0 0 3px 3px' }}
                     >
                       <div className="flex items-center gap-2">
                         <span
-                          className="inline-flex items-center px-1 py-0.5 text-[8px] font-bold bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-300 dark:border-gray-600 shrink-0"
+                          className="inline-flex items-center px-1 py-0.5 text-[8px] font-bold bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-600 shrink-0"
                           style={{ borderRadius: '2px', fontFamily: 'monospace' }}
                         >
                           {translationColumn}{startRow + currentIndex + 1}
@@ -1518,98 +1519,48 @@ const TranslationHelper: React.FC = () => {
               isVisible={xlsxMode || highlightMode}
             />
 
-            {/* Mode Toggles - Bottom toolbar */}
-            <div className="mt-auto pt-3 flex items-center justify-between">
-              <div className="flex items-center gap-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-1 py-0.5" style={{ borderRadius: '3px' }}>
-                {/* Gamepad Mode */}
-                <button
-                  onClick={toggleGamepadMode}
-                  className={`p-1.5 transition-all duration-150 ${
-                    gamepadMode
-                      ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-700'
-                      : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
-                  }`}
-                  style={{ borderRadius: '2px' }}
-                  title="Game View (G)"
-                >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM11 7a1 1 0 100 2 1 1 0 000-2zm2 1a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1z"/>
-                  </svg>
-                </button>
-
-                {/* Highlight Mode */}
-                <button
-                  onClick={toggleHighlightMode}
-                  className={`p-1.5 transition-all duration-150 ${
-                    highlightMode
-                      ? 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30'
-                      : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
-                  }`}
-                  style={{ borderRadius: '2px' }}
-                  title="Codex Highlights (H)"
-                >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
-                  </svg>
-                </button>
-
-                {/* Reference Tools */}
-                <button
-                  onClick={toggleXlsxMode}
-                  className={`p-1.5 transition-all duration-150 ${
-                    xlsxMode
-                      ? 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30'
-                      : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
-                  }`}
-                  style={{ borderRadius: '2px' }}
-                  title="Reference Tools (R)"
-                >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
-                  </svg>
-                </button>
-              </div>
-
-              {/* Live Mode - Right side, only for Excel */}
-              {loadedFileType === 'excel' && (
-                <button
-                  onClick={() => setLiveEditMode(!liveEditMode)}
-                  disabled={!loadedFileName}
-                  className={`flex items-center gap-1.5 px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wide border transition-all duration-150 ${
-                    liveEditMode
-                      ? 'text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30 border-green-300 dark:border-green-700'
-                      : 'text-gray-500 dark:text-gray-400 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 hover:border-gray-300 dark:hover:border-gray-600'
-                  } disabled:opacity-30 disabled:cursor-not-allowed`}
-                  style={{ borderRadius: '3px' }}
-                  title="Live Excel Sync"
-                >
-                  <span className={`w-1.5 h-1.5 rounded-full ${
-                    syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' :
-                    syncStatus === 'synced' ? 'bg-green-500' :
-                    syncStatus === 'error' ? 'bg-red-500 animate-pulse' :
-                    'bg-gray-400'
-                  }`} />
-                  Live
-                </button>
-              )}
-            </div>
+            {/* spacer to push QuickReferenceBar to bottom of left column */}
+            <div className="mt-auto" />
           </div>
 
           {/* Right Column - Tabbed Interface - Compact */}
           <div className="h-full">
-            <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-md h-full flex flex-col" style={{ borderRadius: '3px' }}>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm h-full flex flex-col" style={{ borderRadius: '3px' }}>
               {/* Content Area */}
               <div className="p-4 flex-1 flex flex-col">
                   <div className="flex flex-col h-full">
-                    {/* Change Detection - Top Right, Compact */}
-                    <div className="flex justify-end mb-2">
+                    {/* Mode Toggles + Change Detection - Single Row */}
+                    <div className="flex items-center justify-between mb-2">
+                      <div className="flex items-center gap-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-1 py-0.5" style={{ borderRadius: '3px' }}>
+                        {/* Gamepad Mode */}
+                        <button onClick={toggleGamepadMode} className={`p-1.5 transition-all duration-150 ${gamepadMode ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-700' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Game View (G)">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM11 7a1 1 0 100 2 1 1 0 000-2zm2 1a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1z"/></svg>
+                        </button>
+                        {/* Highlight Mode */}
+                        <button onClick={toggleHighlightMode} className={`p-1.5 transition-all duration-150 ${highlightMode ? 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Codex Highlights (H)">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+                        </button>
+                        {/* Reference Tools */}
+                        <button onClick={toggleXlsxMode} className={`p-1.5 transition-all duration-150 ${xlsxMode ? 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Reference Tools (R)">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                        </button>
+                        {/* Output Toggle */}
+                        <button onClick={() => setShowOutput(!showOutput)} className={`p-1.5 transition-all duration-150 ${showOutput ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Toggle Output">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" /></svg>
+                        </button>
+                        {/* Live Edit Mode */}
+                        <button onClick={() => { if (loadedFileType !== 'excel') { toast.error('LIVE EDIT requires an Excel file to be loaded'); return; } setLiveEditMode(!liveEditMode); }} disabled={loadedFileType !== 'excel'} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${liveEditMode ? 'text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30' : loadedFileType !== 'excel' ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title={loadedFileType !== 'excel' ? 'Load an Excel file to enable LIVE EDIT' : 'Live Excel Sync'}>
+                          <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${liveEditMode ? syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' : syncStatus === 'synced' ? 'bg-green-500' : syncStatus === 'error' ? 'bg-red-500 animate-pulse' : 'bg-green-500' : 'bg-gray-400'}`} />
+                          Live
+                        </button>
+                      </div>
                       {hasCurrentEntryChanged() ? (
-                        <span className="inline-flex items-center gap-1.5 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-700" style={{ borderRadius: '2px' }}>
+                        <span className="inline-flex items-center gap-1.5 px-2 py-1.5 text-[10px] font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-700" style={{ borderRadius: '3px' }}>
                           <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></span>
                           Modified
                         </span>
                       ) : (
-                        <span className="inline-flex items-center gap-1.5 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '2px' }}>
+                        <span className="inline-flex items-center gap-1.5 px-2 py-1.5 text-[10px] font-bold uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-600" style={{ borderRadius: '3px' }}>
                           <span className="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
                           Unchanged
                         </span>
@@ -1670,7 +1621,7 @@ const TranslationHelper: React.FC = () => {
         </div>
 
         {/* Output Section - Full Width Below Grid */}
-        <div className="mt-4">
+        {showOutput && <div className="mt-4">
           <h2 className="text-sm font-black tracking-tight uppercase text-gray-600 dark:text-gray-400 mb-2">
             Translation Output
           </h2>
@@ -2056,7 +2007,7 @@ const TranslationHelper: React.FC = () => {
           </div>
             </div>
           </div>
-        </div>
+        </div>}
 
         {/* XLSX Mode Interface - Full Width Below Grid */}
         <ReferenceToolsPanel
