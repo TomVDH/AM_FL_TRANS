@@ -417,11 +417,10 @@ const TranslationHelper: React.FC = () => {
   const { isWowMode, handleWowClick, triggerCelebration } = useWowMode();
 
   // Create wrapper function for XLSX matches that returns compatible format
-  // Trim speaker name to last dot for full name display
+  // Trim speaker name — delegates to extractSpeakerName utility
   const trimSpeakerName = (speaker: string | undefined): string => {
     if (!speaker) return '';
-    const lastDotIndex = speaker.lastIndexOf('.');
-    return lastDotIndex !== -1 ? speaker.substring(lastDotIndex + 1) : speaker;
+    return extractSpeakerName(speaker);
   };
 
   const findXlsxMatchesWrapper = useCallback((text: string) => {
