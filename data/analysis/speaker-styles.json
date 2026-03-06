@@ -1,0 +1,498 @@
+{
+  "Smart Ass": {
+    "speaker": "Smart Ass",
+    "lineCount": 315,
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E7"
+    ],
+    "styleAnalysis": "**TONE:** Commanding, abrasive\n\n**VOCABULARY:** Colloquial with strategic terminology. Uses crude language (\"shit,\" \"damn\") mixed with planning jargon. Frequently references group hierarchy and work concepts.\n\n**VERBAL TICS:** Numbered plan sequences (\"ONE... TWO... THREE...\"). Repeated \"Easy\" as dismissive assessment. \"No offence\" as false politeness before insults. Frequent rhetorical questions for emphasis (\"You gotta be joking?!\" \"are you?!\").\n\n**SENTENCE STRUCTURE:** Mix of short declaratives and extended explanations. Heavy use of exclamations and aggressive questions. Often uses ellipses for dramatic pauses or trailing thoughts.\n\n**KEY THEMES:** Strategic planning and backup schemes. Group loyalty versus self-interest. Work dependency on humans. Dismissive commentary on other characters' capabilities. Survival pragmatism over idealism.",
+    "analyzedAt": "2026-03-06T04:36:48.103Z"
+  },
+  "{$NewName}": {
+    "speaker": "{$NewName}",
+    "lineCount": 261,
+    "episodes": [
+      "E10",
+      "E3",
+      "E6",
+      "E9"
+    ],
+    "styleAnalysis": "**TONE:** Enthusiastic, curious\n\n**VOCABULARY:** Childlike and colloquial, mixing family terms (\"Comrade Mother,\" \"Uncle,\" \"Aunties\") with simple expressions and occasional dramatic outbursts. Uses contemporary slang (\"super,\" \"totally,\" \"yeesh\").\n\n**VERBAL TICS:** Frequent exclamations with multiple punctuation marks (\"WAHOO!\" \"COME ON!\"), rhetorical questions, addresses adults with formal family titles even in casual speech.\n\n**SENTENCE STRUCTURE:** Mix of short declarative statements and excited exclamations. Heavy use of questions to express curiosity. Fragments during emotional moments (\"Mother! LOOK AT ME!\").\n\n**KEY THEMES:** Games and play, family relationships, questioning adult authority and societal rules, expressing wonder about the world, seeking adventure and freedom from boring routine.",
+    "analyzedAt": "2026-03-06T04:37:02.938Z"
+  },
+  "Sturdy Ass": {
+    "speaker": "Sturdy Ass",
+    "lineCount": 259,
+    "episodes": [
+      "E1",
+      "E10",
+      "E3",
+      "E4",
+      "E6",
+      "E9"
+    ],
+    "styleAnalysis": "**Tone:** Maternal, revolutionary\n\n**Vocabulary:** Elevated colloquial with ideological terminology (\"Comrade,\" \"Revolution,\" \"Gods,\" \"Ancestors\"). Religious and political language mixed with everyday motherly concerns.\n\n**Verbal tics:** \"Comrade\" as standard address, \"By the Gods!\" as exclamation. Repeated phrase \"evil, soulless, job-taking, child-killing Machines\" shows obsessive anti-Machine sentiment. \"Ass Power!\" and similar rallying cries.\n\n**Sentence structure:** Mix of short declaratives and longer inspirational speeches. Frequent exclamations and commands. Uses rhetorical questions sparingly but effectively.\n\n**Key themes:** Protection of her foal, faith in divine plan, anti-Machine prejudice, revolutionary ideology, community unity, honoring the dead, maternal guidance, and eventual call for broader animal liberation.",
+    "analyzedAt": "2026-03-06T04:37:09.788Z"
+  },
+  "Kick Ass": {
+    "speaker": "Kick Ass",
+    "lineCount": 177,
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7"
+    ],
+    "styleAnalysis": "**Tone**: Explosive, passionate\n\n**Vocabulary**: Colloquial and intense, heavy use of profanity substitutes (@#$%&!), simple but emotionally charged language, frequent shouting through ALL CAPS emphasis\n\n**Verbal tics**: \"@#$%&!\" as primary expletive, \"Let's DO THIS!\" energy, capitalizes key words for emphasis, often calls others by name loudly\n\n**Sentence structure**: Short, punchy exclamations and questions, frequent fragments, commands and imperatives (\"FIGHT IT!\", \"WAKE UP!\"), uses \"—\" for interruptions and emotional breaks\n\n**Key themes**: Protective devotion to sister Sick Ass, calls to action and urgency, frustration with situations beyond his control, guilt over past violence against humans, loyalty to fellow donkeys, anger at injustice",
+    "analyzedAt": "2026-03-06T04:37:16.260Z"
+  },
+  "Sad Ass": {
+    "speaker": "Sad Ass",
+    "lineCount": 164,
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7"
+    ],
+    "styleAnalysis": "**Tone**: melancholic, defeated\n\n**Vocabulary**: Simple, colloquial language with occasional poetic touches (\"My heart is buried under layers of coal\"). Uses \"Comrade\" as preferred address for friends.\n\n**Verbal tics**: Frequent \"*whimper*\" and \"*sigh*\" interjections. Often begins with \"Oh...\" Apologetic phrases (\"I'm sorry,\" \"You probably forgot\"). Self-deprecating references (\"your Uncle Sad Ass\").\n\n**Sentence structure**: Mix of short, trailing fragments and longer reflective statements. Uses ellipses frequently (...) creating hesitant, incomplete delivery. Occasional dramatic outbursts (\"HEEEEHAWWWWW!!\").\n\n**Key themes**: Death and mourning of Lazy, past trauma from mine work, self-doubt about purpose in life, guilt over causing problems, gratitude toward those who help him, honoring the dead.",
+    "analyzedAt": "2026-03-06T04:37:23.621Z"
+  },
+  "Slow Ass": {
+    "speaker": "Slow Ass",
+    "lineCount": 162,
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ],
+    "styleAnalysis": "**Tone**: anxious, earnest\n\n**Vocabulary**: Simple, colloquial language with polite formalities (\"please,\" \"thanks,\" \"sorry\"). Uses gentle euphemisms and hopeful expressions.\n\n**Verbal tics**: Stutters on all words beginning with B (\"b-b-b\") and P (\"p-p-p\"). Severity increases with emotional intensity, sometimes building through multiple lines. Uses \"p-phew\" as relief expression and \"oof\" for pain/surprise.\n\n**Sentence structure**: Mix of short, hesitant statements and longer explanatory sentences. Frequent questions seeking reassurance (\"Right Trusty?\"). Uses ellipses for trailing off uncertainly.\n\n**Key themes**: Constant references to deceased mentor Trusty with deep reverence. Self-doubt and physical limitations from arthritis. Apologetic about holding others back while trying to contribute. Focus on teamwork and not abandoning others.",
+    "analyzedAt": "2026-03-06T04:37:31.010Z"
+  },
+  "Hard Ass": {
+    "speaker": "Hard Ass",
+    "lineCount": 154,
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E6"
+    ],
+    "styleAnalysis": "**Tone**: Stoic, commanding\n\n**Vocabulary**: Military/revolutionary register with formal address (\"Comrade\"), simple concrete words, occasional philosophical concepts (\"Astral Plane\", \"reborn\")\n\n**Verbal tics**: Frequent ellipses for contemplative pauses, \"Comrade\" as standard address, miners' motto \"You only hit rock bottom when you quit\", \"At ease\" military greeting\n\n**Sentence structure**: Predominantly short declarative statements, occasional compound sentences for complex ideas, rare questions, commands without softening language, fragments for emphasis\n\n**Key themes**: Duty to the herd/collective, sacrifice and hardship as necessary, leadership through action not words, revolutionary goals, protecting comrades, practical assessment of situations, rejection of weakness or sentimentality",
+    "analyzedAt": "2026-03-06T04:37:37.650Z"
+  },
+  "Cole-Machine": {
+    "speaker": "Cole-Machine",
+    "lineCount": 152,
+    "episodes": [
+      "E10",
+      "E9"
+    ],
+    "styleAnalysis": "**TONE:** Passionate, pragmatic\n\n**VOCABULARY:** Mixed register - intellectual/political terminology (\"neoliberal agendas,\" \"commodified,\" \"cyclical predicament\") combined with profanity and colloquialisms. Shifts between formal rhetoric and raw emotional outbursts.\n\n**VERBAL TICS:** Strategic use of profanity for emphasis (\"What the fuck,\" \"Fuck. Of all the times\"). Rhetorical questions to engage audience. Direct imperatives (\"THROW OUT OUR LEADERS,\" \"GET OUT OF HERE, NOW!\").\n\n**SENTENCE STRUCTURE:** Varies dramatically - long, complex political arguments broken by short, punchy declarations. Heavy use of exclamation points during emotional peaks. Fragmented thoughts during crisis moments.\n\n**KEY THEMES:** Political liberation and anti-exploitation rhetoric, identity transformation and authenticity, collective action over individual apathy, dismantling corrupt power structures, human-donkey coexistence through compromise rather than violence.",
+    "analyzedAt": "2026-03-06T04:37:44.493Z"
+  },
+  "Nice Ass": {
+    "speaker": "Nice Ass",
+    "lineCount": 145,
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E6"
+    ],
+    "styleAnalysis": "**Tone:** Enthusiastic, wholesome\n\n**Vocabulary:** Colloquial with wholesome rural expressions; avoids harsh language, prefers gentle alternatives (\"gosh darn\" over stronger oaths)\n\n**Verbal tics:** Signature exclamations \"Golly!\" \"Gosh!\" \"Jeepers!\" \"Yikes!\" \"Yuppers!\" Heavy use of exclamation points. Frequent \"Comrade\" address showing solidarity.\n\n**Sentence structure:** Mix of short exclamatory bursts and longer encouraging statements. Questions often express concern for others. Declarative statements about promises and beliefs.\n\n**Key themes:** Loyalty and promise-keeping (\"I made a gosh darn promise\"), encouragement and morale-boosting (\"Don't worry, I believe in you\"), work ethic (plowing references), rescue missions and helping others, community solidarity (\"we're a Herd\"), optimistic problem-solving.",
+    "analyzedAt": "2026-03-06T04:37:52.386Z"
+  },
+  "Big Ass": {
+    "speaker": "Big Ass",
+    "lineCount": 138,
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E7"
+    ],
+    "styleAnalysis": "**Tone:** Earnest, commanding\n\n**Vocabulary:** Simple but elevated - uses \"Comrade,\" \"immemorial,\" \"belittled\" alongside basic terms. Gravitates toward size-related descriptors (massive, enormous, grand, heavy, puny).\n\n**Verbal tics:** Frequently references scale and impact. Uses \"Comrade\" as respectful address. Emphatic exclamations with vpunch formatting. Physical exertion sounds \"*oof!*\" during labor.\n\n**Sentence structure:** Mix of declarative statements and rousing exclamations. Tends toward complete sentences rather than fragments. Questions often seek information or clarification rather than rhetorical effect.\n\n**Key themes:** Physical limitations vs. aspirations (\"won't fit,\" \"out of your league\"), collective solidarity (\"ASS POWER,\" \"No one gets left behind\"), desire for greater purpose beyond current circumstances, protective concern for the herd's welfare and unity.",
+    "analyzedAt": "2026-03-06T04:37:59.736Z"
+  },
+  "Zookeeper Rose": {
+    "speaker": "Zookeeper Rose",
+    "lineCount": 137,
+    "episodes": [
+      "E5"
+    ],
+    "styleAnalysis": "**STYLE PROFILE: Zookeeper Rose**\n\nTone: Aggressively cheerful, amoral\n\nVocabulary: Colloquial with business/marketing jargon mixed in. Uses casual contractions and enthusiastic descriptors. Switches to panicked informal speech when stressed.\n\nVerbal tics: Elongated greetings (\"GOOOODDDD MORNING ASSSSSSES!\"). Frequent ALL CAPS for emphasis and visitor categories (TOURISTS, RESEARCHERS). Repetitive motivational phrases. Uses \"Ass\" extensively in wordplay.\n\nSentence structure: Heavy use of exclamation points. Short, punchy commands mixed with longer explanatory sentences. Rhetorical questions for engagement. Fragments when excited or panicked.\n\nKey themes: Performance competition between donkeys, visitor satisfaction and ticket sales, daily zoo operations, maintaining appearances despite underlying corruption. Treats animals as entertainment products while maintaining fake maternal warmth.",
+    "analyzedAt": "2026-03-06T04:38:06.572Z"
+  },
+  "Thirsty Ass": {
+    "speaker": "Thirsty Ass",
+    "lineCount": 108,
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E6"
+    ],
+    "styleAnalysis": "**Tone:** Enthusiastic, folksy\n\n**Vocabulary:** Rural colloquial with heavy Southern dialect - \"ain't,\" \"yer,\" \"git,\" \"ding dang,\" \"heck,\" abundant profanity (\"damn,\" \"hell\"), water-related terminology\n\n**Verbal tics:** \"YEEHAW!\" as primary exclamation, \"git\" variations, \"ding dang\" as intensifier, frequent \"heck\" and \"dang,\" \"*oof*\" during physical exertion, water puns (\"Pail Ale,\" \"on the rocks\")\n\n**Sentence structure:** Mix of short exclamatory bursts and longer rambling sentences, heavy use of exclamation points, contractions throughout, questions often rhetorical or directed at specific characters\n\n**Key themes:** His \"Bottoms Up Bar\" business dream, obsession with Nice Ass and her physical attributes, water scarcity and drinks, loyalty to the group, practical concerns about survival and transportation",
+    "analyzedAt": "2026-03-06T04:38:13.504Z"
+  },
+  "Ringmaster Rico": {
+    "speaker": "Ringmaster Rico",
+    "lineCount": 97,
+    "episodes": [
+      "E5"
+    ],
+    "styleAnalysis": "**STYLE PROFILE: Ringmaster Rico**\n\n**Tone:** Theatrical, bombastic\n\n**Vocabulary:** Showbiz colloquial mixed with circus vernacular and over-the-top superlatives (\"visually spectacular,\" \"death-defying,\" \"JUMBO serving\")\n\n**Verbal tics:** Heavy use of ALL CAPS for emphasis, frequent exclamation points, rhetorical questions followed by immediate answers (\"Will it be dangerous?\" \"Yes!\"), animal puns (\"monkeying around,\" \"ape-titude,\" \"not lyin'\"), addresses audience directly (\"folks,\" \"one and all\")\n\n**Sentence structure:** Mix of short punchy declarations and elaborate build-ups, heavy use of exclamations, dramatic pauses indicated by ellipses, lists of escalating adjectives\n\n**Key themes:** Promoting acts and managing audience expectations, self-promotion, damage control when performances go wrong, emphasizing spectacle and entertainment value, financial concerns disguised as showmanship",
+    "analyzedAt": "2026-03-06T04:38:19.533Z"
+  },
+  "Bad Ass": {
+    "speaker": "Bad Ass",
+    "lineCount": 91,
+    "episodes": [
+      "E1",
+      "E2",
+      "E3",
+      "E6"
+    ],
+    "styleAnalysis": "**Tone:** Cynical, dismissive\n\n**Vocabulary:** Mix of intellectual/philosophical terminology with blunt profanity and colloquialisms. Uses academic concepts (\"systemic issues,\" \"technological progress,\" \"philosophical transformation\") alongside crude directness (\"fuck that,\" \"bullshit\").\n\n**Verbal tics:** Frequent \"leave me alone\" demands, \"fuck\" as emphatic modifier, rhetorical questions for mockery (\"What's the brilliant plan?\"), dismissive \"whatever\" responses.\n\n**Sentence structure:** Predominantly short, declarative statements. Uses questions sarcastically to highlight others' foolishness. Fragments for emphasis (\"Pathetic\"). Direct commands when annoyed.\n\n**Key themes:** Critique of naive activism, technological determinism vs. traditional values, desire for solitude, intellectual superiority over emotional responses, machines as logical solutions to social problems.",
+    "analyzedAt": "2026-03-06T04:38:26.206Z"
+  },
+  "Golden Ass": {
+    "speaker": "Golden Ass",
+    "lineCount": 86,
+    "episodes": [
+      "E10",
+      "E9"
+    ],
+    "styleAnalysis": "**Tone:** Authoritative, grandiose\n\n**Vocabulary:** Formal, elevated register with religious and political terminology (\"Vassals,\" \"Manifesto,\" \"holy Mass,\" \"Astral Plane\"). Mixes divine language with organizational directives.\n\n**Verbal tics:** Frequent coughing \"*COUGH*\"; commands beginning with action words (\"SILENCE,\" \"Spread out\"); uses \"we/us\" for divine plurality but switches to \"I\" when establishing identity; repeats key phrases for emphasis.\n\n**Sentence structure:** Mix of short imperatives and longer declarative statements. Heavy use of exclamations for dramatic effect. Speaks in proclamations and instructions rather than conversational dialogue.\n\n**Key themes:** Divine authority and power, organizing revolution against humans, prophetic missions, collaboration between gods and followers, manifesto creation, spreading holy messages to convert the masses.",
+    "analyzedAt": "2026-03-06T04:38:33.053Z"
+  },
+  "Trusty Ass": {
+    "speaker": "Trusty Ass",
+    "lineCount": 74,
+    "episodes": [
+      "E1",
+      "E8"
+    ],
+    "styleAnalysis": "**Tone**: earnest, matter-of-fact\n\n**Vocabulary**: Simple, colloquial language with occasional formal analysis (\"I've analyzed the situation\"). Uses community-specific terms (\"Comrade,\" \"Traditional Ass Posture,\" \"Astral Plane\"). Casual about taboo topics.\n\n**Verbal tics**: Observational statements about objects and situations. Uses \"Ahh!\" for surprise. Repeats key information for emphasis.\n\n**Sentence structure**: Mostly short, declarative statements. Uses exclamations frequently. Asks direct questions when engaging others. Occasional incomplete thoughts when interrupted.\n\n**Key themes**: Leadership responsibility and self-doubt, practical observations about environment, community loyalty, second chances. Transitions from basic descriptions to personal revelations about failure, experimentation, and redemption through proper preparation.",
+    "analyzedAt": "2026-03-06T04:38:39.487Z"
+  },
+  "Old Ass": {
+    "speaker": "Old Ass",
+    "lineCount": 54,
+    "episodes": [
+      "E1",
+      "E4"
+    ],
+    "styleAnalysis": "**STYLE PROFILE - Old Ass**\n\nTone: Passionate, revolutionary\n\nVocabulary: Formal political rhetoric mixed with folksy expressions (\"hit the hay,\" \"this old Ass\"). Heavy use of capitalized words for emphasis (INJUSTICES, PROTEST, ASS POWER). Political terminology: \"Comrade,\" \"Herd,\" \"the Masses.\"\n\nVerbal tics: Addresses others as \"Comrade\" and \"young Comrade.\" Frequent use of \"we\" and \"our\" for collective identity. Capitalizes key concepts for dramatic effect. Rhetorical pauses marked by ellipses.\n\nSentence structure: Mix of short declarative statements and longer inspirational proclamations. Heavy use of exclamation points for rousing effect. Employs dramatic pauses and trailing thoughts.\n\nKey themes: Worker solidarity, fighting injustice, collective action, inspiring morale, reclaiming dignity and purpose. Transitions from revolutionary fervor to ethereal guide in afterlife.",
+    "analyzedAt": "2026-03-06T04:38:45.937Z"
+  },
+  "Mme": {
+    "speaker": "Mme",
+    "lineCount": 46,
+    "episodes": [
+      "E1",
+      "E10",
+      "E5",
+      "E7"
+    ],
+    "styleAnalysis": "**Tone:** Manipulative, condescending\n\n**Vocabulary:** Corporate-speak mixed with refined formal language; business jargon (\"bottom line,\" \"ends meet,\" \"in the red\"); philanthropic rhetoric masking exploitation\n\n**Verbal tics:** \"My dear\" as patronizing address; \"Progress\" capitalized as sacred concept; exclamation points for dramatic emphasis; rhetorical questions to assert dominance\n\n**Sentence structure:** Mix of polished corporate statements and sharp commands; builds to climactic declarations; uses parallel structure for persuasive effect (\"They deserved...\")\n\n**Key themes:** Business success and profit; positioning herself as benefactor while revealing authoritarian control; dehumanizing others as property or obstacles to \"Progress\"; maintaining facade of respectability while threatening violence",
+    "analyzedAt": "2026-03-06T04:38:52.279Z"
+  },
+  "Sick Ass": {
+    "speaker": "Sick Ass",
+    "lineCount": 45,
+    "episodes": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E6",
+      "E8"
+    ],
+    "styleAnalysis": "**Tone**: Afflicted, communicative\n\n**Vocabulary**: Entirely non-verbal communication system using respiratory sounds; operates on binary logic understood by community\n\n**Verbal tics**: Single \"*COUGH*\" indicates affirmation/yes; \"*COUGH COUGH*\" for emphasis or stronger responses; repetitive coughing for extended communication; occasional silent pauses (\"...\"); rare interrogative coughs with question marks\n\n**Sentence structure**: Exclusively fragmented respiratory expressions; no complete sentences except one dramatic imperative (\"Turn around\"); communication entirely through cough variations and timing\n\n**Key themes**: Physical deterioration from labor conditions; non-verbal consent and decision-making; community understanding transcending traditional speech; transformation from mundane suffering to divine significance; illness as both burden and pathway to transcendence",
+    "analyzedAt": "2026-03-06T04:38:59.353Z"
+  },
+  "Lazy Ass": {
+    "speaker": "Lazy Ass",
+    "lineCount": 34,
+    "episodes": [
+      "E3",
+      "E6"
+    ],
+    "styleAnalysis": "**Tone:** Laid-back, detached\n\n**Vocabulary:** Casual, colloquial with surfer/stoner inflections (\"Heyyyy,\" \"ya know?\"). Simple, conversational language without pretension.\n\n**Verbal tics:** \"Boredom is freedom\" as personal motto. Frequent \"ya know?\" and casual greetings. \"Peace out\" for goodbyes. Uses \"cool,\" \"hey,\" and relaxed interjections.\n\n**Sentence structure:** Predominantly short, simple sentences. Occasional longer explanatory statements but keeps things uncomplicated. Uses fragments casually (\"Just hanging out\"). Questions are direct and undemanding.\n\n**Key themes:** Death treated matter-of-factly, work avoidance, memory loss acknowledged without distress, relationships (especially with Sad Ass), finding comfort in stasis. Maintains chill attitude even about tragic circumstances like mine collapse and failed ascension.",
+    "analyzedAt": "2026-03-06T04:39:06.623Z"
+  },
+  "Helpful Ass": {
+    "speaker": "Helpful Ass",
+    "lineCount": 33,
+    "episodes": [
+      "E10",
+      "E7"
+    ],
+    "styleAnalysis": "**Tone:** Eager, earnest\n\n**Vocabulary:** Colloquial and folksy, with contractions (\"I'da,\" \"whodda,\" \"thunk\") and casual expressions (\"it was a hoot,\" \"I was a goner\")\n\n**Verbal tics:** Repetitive storytelling formula: \"You won't believe what happened next\" followed by \"Do you wanna know?\" Uses \"whodda thunk it\" as signature surprise expression. Frequent exclamation points for enthusiasm.\n\n**Sentence structure:** Mix of short declarative statements and enthusiastic exclamations. Heavy use of questions to engage listener. Simple, direct sentence construction with occasional folksy grammar.\n\n**Key themes:** Personal hardship and job loss, environmental destruction (disappearing fish/trees), gratitude for rescue, desire to share experiences and connect with others through storytelling.",
+    "analyzedAt": "2026-03-06T04:39:12.959Z"
+  },
+  "Hee": {
+    "speaker": "Hee",
+    "lineCount": 28,
+    "episodes": [
+      "E10",
+      "E8",
+      "E9"
+    ],
+    "styleAnalysis": "**Tone:** Formal, divine authority\n\n**Vocabulary:** Elevated, ceremonial language with religious/mystical terminology (\"Vassal,\" \"Soul,\" \"Reassignment,\" \"Astral Plane,\" \"Sacred\"). Uses formal titles and proper nouns for operations and positions.\n\n**Verbal tics:** Repetitive phrasing for emphasis (\"Your Soul will never undergo Reassignment again\" repeated twice). Questions framed as declarations of uncertainty (\"What shall our next move be?\"). Uses \"Operation\" prefix for strategic plans.\n\n**Sentence structure:** Predominantly declarative statements of medium length. Occasional rhetorical questions. Uses formal address patterns (\"Vassal [Title], step forward\").\n\n**Key themes:** Divine judgment and soul assignment, lamenting lost reverence from humans, strategic planning for intervention in mortal affairs, the sacred nature of donkey labor, cosmic authority and universal connection.",
+    "analyzedAt": "2026-03-06T04:39:19.600Z"
+  },
+  "Proper Ass": {
+    "speaker": "Proper Ass",
+    "lineCount": 25,
+    "episodes": [
+      "E10",
+      "E7"
+    ],
+    "styleAnalysis": "**STYLE PROFILE: Proper Ass**\n\n**Tone:** Enthusiastic, authoritative\n\n**Vocabulary:** Formal British register with polite expressions (\"Good afternoon Chaps!\", \"Splendid!\", \"Never fear\", \"Oh dear\") mixed with revolutionary rhetoric. Uses elevated diction even in urgent situations.\n\n**Verbal tics:** Exclamation points dominate speech. Frequently uses rhetorical questions in groups of three. \"Pardon me!\" as polite interruption. British colloquialisms like \"right good knock\" and \"Chaps.\"\n\n**Sentence structure:** Mix of short declarative commands (\"EVERYBODY GET INSIDE!\") and longer explanatory statements. Heavy use of exclamations. Tends toward proclamations and announcements.\n\n**Key themes:** Animal rights activism, political representation, anti-human sentiment, leadership during crisis situations, formal courtesy maintained even during violent revolution.",
+    "analyzedAt": "2026-03-06T04:39:26.081Z"
+  },
+  "Wedgie": {
+    "speaker": "Wedgie",
+    "lineCount": 22,
+    "episodes": [
+      "E5",
+      "E7"
+    ],
+    "styleAnalysis": "**Tone:** Gruff, impatient\n\n**Vocabulary:** Colloquial and crude, with occasional workplace jargon (\"Animal Handling,\" \"Slaughter or Shipping\"). Uses direct insults and casual profanity.\n\n**Verbal tics:** Repeatedly calls others \"idiot\" as his go-to insult. Frequent use of exclamation points for emphasis and shouting.\n\n**Sentence structure:** Predominantly short, clipped sentences and commands. Heavy use of exclamations and rhetorical questions. Speaks in fragments when agitated (\"*wheeze* Screw it\").\n\n**Key themes:** Work-related complaints, money/payment, capturing donkeys, job security concerns, and workplace hierarchy. Shows blue-collar pride in his specialized skills while expressing frustration with coworkers and situations beyond his control.",
+    "analyzedAt": "2026-03-06T04:39:31.711Z"
+  },
+  "Mr": {
+    "speaker": "Mr",
+    "lineCount": 21,
+    "episodes": [
+      "E2",
+      "E6"
+    ],
+    "styleAnalysis": "**STYLE PROFILE: Mr. Butte**\n\n**Tone:** Weary, conflicted\n\n**Vocabulary:** Colloquial business speak mixed with personal confessions. Uses casual contractions (\"can't,\" \"it's\") and folksy expressions (\"what the hell\"). Alternates between corporate justifications and vulnerable admissions.\n\n**Verbal tics:** Drinking sound effects \"*glug glug*\" appear frequently, indicating alcoholism. Refers to donkeys as both replaceable workers and companions. Uses \"you know?\" as conversational filler.\n\n**Sentence structure:** Mix of short, defeated statements (\"I lost... everything\") and longer explanatory sentences. Uses ellipses for trailing thoughts and self-interruption.\n\n**Key themes:** Business failure and financial pressure, guilt over replacing workers with machines, family obligations (son's education), loneliness and abandonment, seeking meaning in dire circumstances, talking to animals as confidants.",
+    "analyzedAt": "2026-03-06T04:39:38.209Z"
+  },
+  "Child Joey": {
+    "speaker": "Child Joey",
+    "lineCount": 19,
+    "episodes": [
+      "E1",
+      "E2"
+    ],
+    "styleAnalysis": "**STYLE PROFILE: Child Joey**\n\n**Tone:** Innocent, demanding\n\n**Vocabulary:** Simple childlike language with basic words and concepts. Uses direct, uncomplicated expressions typical of a young child speaking to adults and animals.\n\n**Verbal tics:** Repeats \"donkey\" frequently as direct address. Uses \"Want more, donkey?\" as exact repetition. Employs childish exclamations like \"He he he!\" and \"OWIIIEEEEE!\" Heavy use of ALL CAPS for emotional emphasis.\n\n**Sentence structure:** Short, simple sentences and fragments. Heavy reliance on exclamations and questions. Commands and demands are frequent (\"Get that bucket!\" \"Please donkey!\").\n\n**Key themes:** Expectation of obedience from animals, parroting adult prejudices about donkeys being \"worthless\" and \"stupid,\" basic needs and wants, distress calls for help.",
+    "analyzedAt": "2026-03-06T04:39:43.999Z"
+  },
+  "Miner Jenny": {
+    "speaker": "Miner Jenny",
+    "lineCount": 19,
+    "episodes": [
+      "E2",
+      "E6"
+    ],
+    "styleAnalysis": "**Tone**: Aggressive, volatile\n\n**Vocabulary**: Working-class colloquial with harsh profanity and direct insults (\"piece of shit,\" \"useless donkey,\" \"big dumb donkey ears\")\n\n**Verbal tics**: Excessive capitalization for emotional outbursts, shifts between extreme anger and sudden vulnerability, uses \"donkey\" as both identifier and insult\n\n**Sentence structure**: Sharp commands and exclamations dominate, with emotional fragments during breakdowns. Heavy use of caps lock for intensity. Alternates between barked orders and sobbing confessions.\n\n**Key themes**: Work demands and frustration with laziness, her relationship troubles with Cole, desperation to preserve meaningful possessions (the computer), dreams of escaping to a better life, underlying emotional pain masked by aggression",
+    "analyzedAt": "2026-03-06T04:40:10.488Z"
+  },
+  "The Masses": {
+    "speaker": "The Masses",
+    "lineCount": 19,
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E4"
+    ],
+    "styleAnalysis": "**STYLE PROFILE: The Masses**\n\n**Tone:** Agitated, rallying\n\n**Vocabulary:** Simple, colloquial with protest rhetoric and crude language when emotional. Heavy use of \"ASS\" as cultural/identity marker.\n\n**Verbal tics:** Repetitive chanting (\"POWER!\" \"LOSER!\"), \"ASS\" prefix/compound words (\"ASS CULTURE,\" \"ASS P-POWER!\"), imperative commands, frequent use of ALL CAPS for emphasis.\n\n**Sentence structure:** Predominantly short, fragmented exclamations and commands. Minimal complete sentences. Heavy reliance on exclamation points. Occasional direct questions to \"Trusty Ass.\"\n\n**Key themes:** Collective action and protest demands (jobs, respect, cultural identity), resistance to authority (\"FUCK REASSIGNMENT!\"), maintaining group momentum, concern for fellow donkeys' safety and direction.",
+    "analyzedAt": "2026-03-06T04:40:16.867Z"
+  },
+  "Melvin": {
+    "speaker": "Melvin",
+    "lineCount": 18,
+    "episodes": [
+      "E5",
+      "E7"
+    ],
+    "styleAnalysis": "**Tone:** Anxious, practical\n\n**Vocabulary:** Colloquial, workplace-appropriate with occasional crude terms (\"sleazy\"); uses specific technical language when discussing work equipment and processes\n\n**Verbal tics:** Frequent questioning to express doubt or concern; uses \"What if...\" constructions to voice worries; employs capitalized exclamations for panic moments\n\n**Sentence structure:** Mix of short, clipped statements and longer explanatory sentences; heavy use of questions (both genuine inquiries and rhetorical worry); exclamations during moments of fear or urgency\n\n**Key themes:** Job security and workplace anxiety dominate his concerns; shows paranoia about tricks and deception; focuses on practical logistics and timing; expresses fear of automation replacing workers; demonstrates working-class awareness of economic vulnerability",
+    "analyzedAt": "2026-03-06T04:40:23.635Z"
+  },
+  "Radio Host Marcos": {
+    "speaker": "Radio Host Marcos",
+    "lineCount": 18,
+    "episodes": [
+      "E1",
+      "E10"
+    ],
+    "styleAnalysis": "**Tone:** Enthusiastic, professional\n\n**Vocabulary:** Standard broadcast media register with occasional colloquialisms (\"get your butts,\" \"gotta say\") and product placement terminology\n\n**Verbal tics:** \"*ksh*\" radio static sound effect, \"That's right\" for emphasis, uses \"butts/glutes\" puns naturally within context\n\n**Sentence structure:** Mix of short declarative statements and longer descriptive sentences. Frequent exclamations for excitement. Uses rhetorical questions during interviews. Transitions smoothly between topics with standard radio segues.\n\n**Key themes:** Weather reports, local entertainment recommendations, enthusiastic product endorsements (especially Mme. Derriere's beauty products), breaking news coverage, maintaining upbeat radio personality even during serious events like the government building occupation.",
+    "analyzedAt": "2026-03-06T04:40:29.986Z"
+  },
+  "Greedy Ass": {
+    "speaker": "Greedy Ass",
+    "lineCount": 17,
+    "episodes": [
+      "E4"
+    ],
+    "styleAnalysis": "**Tone:** Pushy, condescending\n\n**Vocabulary:** Street-smart colloquial with gambling terminology and mild profanity substitutes. Heavy Brooklyn/New York accent reflected in spelling (\"fuggetaboutit,\" \"ya,\" \"gotta\").\n\n**Verbal tics:** \"Fuggetaboutit!\" as dismissive catchphrase, repeatedly calls others \"Loser!\" as insult, uses \"Sheesh\" and \"Yeesh\" as exasperated expressions.\n\n**Sentence structure:** Mix of short punchy statements and exclamatory questions. Heavy use of exclamation points and question marks. Frequent sentence fragments and interrupted thoughts.\n\n**Key themes:** Gambling and betting obsessed, constantly trying to entice others into wagers with escalating stakes. Shows disdain for conservative players while simultaneously mocking high and low guesses. Focuses on winning, losing, and risk-taking.",
+    "analyzedAt": "2026-03-06T04:40:36.326Z"
+  },
+  "Hasty Ass": {
+    "speaker": "Hasty Ass",
+    "lineCount": 17,
+    "episodes": [
+      "E4"
+    ],
+    "styleAnalysis": "**Tone:** Hyperactive, enthusiastic\n\n**Vocabulary:** Colloquial and casual, with simple exclamations (\"Hell yeah,\" \"FUN!\") and friendly slang (\"friendo\"). Uses basic, accessible language without complexity.\n\n**Verbal tics:** Obsessive repetition of \"Let's go!\" and racing invitations. Heavy use of exclamation marks and multiple question marks. Repeats \"Wanna race?\" as a verbal loop. \"Shame! Ah well\" appears twice as a disappointment response.\n\n**Sentence structure:** Predominantly short, punchy sentences and fragments. Frequent exclamations and questions. Uses rapid-fire repetition (\"Let's go let's go let's go!\") to convey urgency and excitement.\n\n**Key themes:** Racing dominates all conversation. Constantly seeks competition, expresses readiness and availability. Shows appreciation for speed and athletic ability in others.",
+    "analyzedAt": "2026-03-06T04:40:42.684Z"
+  },
+  "DJ Dope Ass": {
+    "speaker": "DJ Dope Ass",
+    "lineCount": 16,
+    "episodes": [
+      "E4"
+    ],
+    "styleAnalysis": "**TONE:** Hyped, drug-dependent\n\n**VOCABULARY:** Street slang and DJ/party vernacular with colloquial register. Heavy use of superlatives (\"best damn drug,\" \"freakin' Newbie\") and performance terminology.\n\n**VERBAL TICS:** \"Purple Stuff\" obsessively repeated, \"Booyah/BOOYAAAHH!\" as signature exclamation, \"Hey—Hey—Hey\" stuttered greetings, emphatic ALL CAPS for energy words, multiple exclamation points for excitement.\n\n**SENTENCE STRUCTURE:** Mix of short urgent fragments and longer explanatory sentences. Heavy use of questions when seeking drugs, exclamations dominate performance mode. Repetitive pleading structure when desperate.\n\n**KEY THEMES:** Chemical dependency central to character - cannot perform without \"Purple Stuff.\" DJ performance and crowd energy. Anti-establishment rebellion (\"Fuck Reassignment\"). Party culture and escapism from systematic control.",
+    "analyzedAt": "2026-03-06T04:40:50.319Z"
+  },
+  "Haw": {
+    "speaker": "Haw",
+    "lineCount": 16,
+    "episodes": [
+      "E10",
+      "E8",
+      "E9"
+    ],
+    "styleAnalysis": "**Tone:** Authoritative, mystical\n\n**Vocabulary:** Elevated formal register with religious and bureaucratic terminology (\"godly burden,\" \"Reassignment,\" \"rectifying,\" \"impediment\"). Mixes cosmic concepts with operational language.\n\n**Verbal tics:** Uses \"we\" exclusively when speaking officially, suggesting collective divine identity. Employs ritualistic phrases like \"Prepare yourself\" and formal transitions (\"Thus,\" \"Ah yes\").\n\n**Sentence structure:** Predominantly declarative statements of varying length. Complex sentences for explanations of cosmic duty, shorter ones for commands and operational directives. Occasional rhetorical flourishes and exclamations for emphasis.\n\n**Key themes:** Divine responsibility and cosmic burden, memory manipulation and soul transfer, strategic operations against humans, the tension between godly non-interference and necessary intervention through chosen avatars.",
+    "analyzedAt": "2026-03-06T04:40:57.216Z"
+  },
+  "Bleak Ass": {
+    "speaker": "Bleak Ass",
+    "lineCount": 14,
+    "episodes": [
+      "E10",
+      "E7"
+    ],
+    "styleAnalysis": "**Tone:** Bleak, matter-of-fact\n\n**Vocabulary:** Simple, direct language with occasional metaphorical terms (\"Hell\" for Factory). Uses compound descriptors for technology (\"Tank-Machines,\" \"Flying-Machines\"). Mix of everyday speech and darker imagery.\n\n**Verbal tics:** Ellipses for trailing thoughts and ominous pauses (...). Names self formally. Uses \"us\" when referring to lost herd, maintaining connection to the dead.\n\n**Sentence structure:** Predominantly short, declarative statements. Occasional fragments. Builds tension through simple accumulation rather than complex syntax.\n\n**Key themes:** Loss and isolation, industrial/mechanical threats, death and disappearance, wisdom of the quiet/overlooked, survival warnings. Past trauma informing present observations.",
+    "analyzedAt": "2026-03-06T04:41:03.799Z"
+  },
+  "Grandma Kulan": {
+    "speaker": "Grandma Kulan",
+    "lineCount": 14,
+    "episodes": [
+      "E1",
+      "E5"
+    ],
+    "styleAnalysis": "**Tone:** Gentle, melancholic\n\n**Vocabulary:** Simple, affectionate language with endearing terms like \"honey,\" \"darling,\" and \"my darling Joey.\" Uses polite, respectful address (\"Mme. Derriere\"). Shifts from dismissive animal references to reverent spiritual language.\n\n**Verbal tics:** Frequent use of endearments. Repetitive lamenting phrase \"Joey would have loved this/that.\" Wistful sighing and nostalgic reflections.\n\n**Sentence structure:** Mix of short, matter-of-fact statements and longer emotional expressions. Uses rhetorical questions for self-reflection. Exclamations express both surprise and gratitude.\n\n**Key themes:** Joey's memory dominates her speech. Evolution from skepticism about donkeys' intelligence/souls to spiritual awakening. Grief processing through charitable acts and location-based memories. Protective grandmother instincts.",
+    "analyzedAt": "2026-03-06T04:41:10.730Z"
+  },
+  "???": {
+    "speaker": "???",
+    "lineCount": 12,
+    "episodes": [
+      "E1",
+      "E2",
+      "E3",
+      "E5",
+      "E6",
+      "E7",
+      "E9"
+    ],
+    "styleAnalysis": "**Tone**: Ominous, varied\n\n**Vocabulary**: Mixed register - ranges from simple colloquial (\"Hi,\" \"Fuck. Go away!\") to more formal/dramatic phrasing (\"Don't bother looking for your friend\"). Includes crude language and sound effects.\n\n**Verbal tics**: Frequent use of sound effects (*WAHHH*, *glug glug*, *huff p-puff*, *COUGH*). Questions often used for confusion or recognition (\"Is someone there?\" \"Is that a donkey?\"). Emphatic capitalization for urgency (WAKE UP!).\n\n**Sentence structure**: Predominantly short, direct statements and fragments. Mix of exclamations, questions, and declarative sentences. Tends toward brevity.\n\n**Key themes**: Recognition and identification of others, warnings and foreboding statements, physical distress/sounds, moments of confusion or disorientation. Often appears in crisis or transitional moments.",
+    "analyzedAt": "2026-03-06T04:41:17.230Z"
+  },
+  "Happy Ass": {
+    "speaker": "Happy Ass",
+    "lineCount": 12,
+    "episodes": [
+      "E1",
+      "E4"
+    ],
+    "styleAnalysis": "**Tone:** Enthusiastic, welcoming\n\n**Vocabulary:** Colloquial and casual, using simple everyday language with informal contractions and accessible terms like \"Newbie,\" \"Oh boy,\" and \"awesome.\"\n\n**Verbal tics:** Frequent exclamation points showing constant excitement, uses \"Newbie\" as a consistent term of endearment, employs emphatic capitalization (\"AWESOME\") for emphasis.\n\n**Sentence structure:** Mix of short declarative statements and longer explanatory sentences, occasional questions to engage others, heavy use of exclamatory sentences to maintain upbeat energy.\n\n**Key themes:** Welcomes newcomers with ritualistic procedures, maintains relentless positivity even when exhausted or overwhelmed, focuses on community events and shared experiences, consistently promotes participation in group activities.",
+    "analyzedAt": "2026-03-06T04:41:23.563Z"
+  },
+  "Welcome Sign": {
+    "speaker": "Welcome Sign",
+    "lineCount": 12,
+    "episodes": [
+      "E1",
+      "E2"
+    ],
+    "styleAnalysis": "**Tone**: Formal, welcoming\n\n**Vocabulary**: Official/institutional language with descriptive marketing terms (\"beautiful Heritage Stable,\" \"state of the art Mill and Granary\"); consistently proper and promotional in register\n\n**Verbal tics**: Invariable greeting formula \"Welcome to Fannyside Farm\"; directional phrases always follow same pattern \"To the [direction], our [adjective] [location]\"; repetitive phrasing across all interactions\n\n**Sentence structure**: Consistently paired sentences - one welcome statement followed by directional information; declarative statements only; no questions or exclamations; formal, complete sentences\n\n**Key themes**: Geographic orientation and facility promotion; emphasizes farm infrastructure and landmarks; functions as pure informational interface highlighting the farm's amenities and layout for newcomers",
+    "analyzedAt": "2026-03-06T04:41:29.902Z"
+  },
+  "Decrepit Sign": {
+    "speaker": "Decrepit Sign",
+    "lineCount": 11,
+    "episodes": [
+      "E1",
+      "E2"
+    ],
+    "styleAnalysis": "**Tone**: Utilitarian, informational\n\n**Vocabulary**: Simple, functional signage language with basic directional and status terminology. Uses standard public notice phrasing.\n\n**Verbal tics**: Repetitive cycling between the same two primary messages: \"The Long Way to the Forest Shrine\" and \"CLOSED FOR REPAIRS.\" Shows obsessive repetition of core phrases with occasional variation.\n\n**Sentence structure**: Brief, declarative statements typical of wayfinding signage. No questions or complex constructions. Follows standard sign formatting conventions with all-caps for warnings/status updates.\n\n**Key themes**: Navigation and accessibility - primarily concerned with directing travelers to destinations (forest shrine, mountain trail to city) while communicating service interruptions. Represents the infrastructure of guidance in a world where pathways are frequently compromised.",
+    "analyzedAt": "2026-03-06T04:41:36.666Z"
+  },
+  "Resentful Ass": {
+    "speaker": "Resentful Ass",
+    "lineCount": 11,
+    "episodes": [
+      "E10",
+      "E7"
+    ],
+    "styleAnalysis": "**Tone:** Militant, agitated\n\n**Vocabulary:** Direct, colloquial speech with clear political messaging. Uses simple but emotionally charged language that builds from observational to declarative statements.\n\n**Verbal tics:** Repeats \"No more rides!!\" as a rallying cry. Uses \"Hey!\" for attention-getting. Tends toward exclamatory punctuation for emphasis.\n\n**Sentence structure:** Mix of short, punchy declarations and longer explanatory statements. Frequently uses exclamations. Shifts from fragmented observations (\"Wait!\" \"Is that a Human?\") to complete protest statements.\n\n**Key themes:** Labor rights and dignity for donkeys, resistance to being used as transportation by humans, organizing collective action against demeaning treatment. Shows awareness of hierarchy (\"Golden Ass\") and community solidarity concerns.",
+    "analyzedAt": "2026-03-06T04:41:43.554Z"
+  },
+  "Edgy Ass": {
+    "speaker": "Edgy Ass",
+    "lineCount": 10,
+    "episodes": [
+      "E10",
+      "E7"
+    ],
+    "styleAnalysis": "**STYLE PROFILE: Edgy Ass**\n\n**Tone:** Agitated, passionate\n\n**Vocabulary:** Colloquial with occasional formal phrases (\"creative endeavours\"), straightforward language mixing casual speech with elevated concepts (Machine, Prophet, Humans as proper nouns)\n\n**Verbal tics:** Repetitive incomplete phrases (\"Tell the Humans to support—\"), exclamatory outbursts, tendency to restart and expand statements. Pessimistic refrain about artistic appreciation.\n\n**Sentence structure:** Mix of short exclamations and longer declarative statements. Heavy use of exclamation points. Fragmented speech when emotional or interrupted. Questions express disbelief rather than genuine inquiry.\n\n**Key themes:** Human-donkey conflict and oppression, advocacy for artistic recognition, religious/prophetic skepticism, social justice concerns, creative validation",
+    "analyzedAt": "2026-03-06T04:41:50.091Z"
+  },
+  "Skinny Ass": {
+    "speaker": "Skinny Ass",
+    "lineCount": 10,
+    "episodes": [
+      "E10",
+      "E7"
+    ],
+    "styleAnalysis": "**TONE:** Anxious, earnest\n\n**VOCABULARY:** Simple, colloquial language with basic sentence structures. Uses familiar terms like \"Foals\" for children and \"Big Ass\" as casual address. Direct, unpretentious word choices.\n\n**VERBAL TICS:** Frequent use of ellipses indicating hesitation or trailing thoughts. Tends to ask urgent questions, especially when seeking help or information. Uses \"But...\" to start contradictory statements.\n\n**SENTENCE STRUCTURE:** Mix of short, clipped statements and longer explanatory sentences. Heavy use of questions and exclamations showing emotional urgency. Often speaks in fragments when nervous or excited.\n\n**KEY THEMES:** Survival and escape from oppression. Focuses on immediate dangers, practical concerns about dealing with humans, and coordinating resistance efforts. Shows protective concern for other characters.",
+    "analyzedAt": "2026-03-06T04:41:56.420Z"
+  },
+  "Tight Ass": {
+    "speaker": "Tight Ass",
+    "lineCount": 10,
+    "episodes": [
+      "E4"
+    ],
+    "styleAnalysis": "**Tone:** Authoritarian, excitable\n\n**Vocabulary:** Colloquial with crude slang (\"Shit Hole,\" \"Dope Ass\"), mixing official-sounding rhetoric with street-level language. Uses derogatory terms as rallying cries.\n\n**Verbal tics:** Rhetorical questions demanding crowd participation (\"what are you???\"), repetitive commands (\"Say it again!\"), enthusiastic repetition (\"It's starting! It's starting!\"), nervous laughter (\"Haha\").\n\n**Sentence structure:** Mix of short declarative statements and questions. Heavy use of exclamation points showing high energy/agitation. Fragments during excited moments.\n\n**Key themes:** Enforcing boundaries and preventing escape, loyalty to the system, crowd control through shaming, abandoning duty for entertainment. Contradicts his own strict rules when personal interests arise.",
+    "analyzedAt": "2026-03-06T04:42:03.042Z"
+  }
+}
