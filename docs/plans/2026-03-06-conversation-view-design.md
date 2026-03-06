@@ -21,7 +21,7 @@ When conversation mode is active, the entire two-column grid (source text card, 
 ```
 +--------------------------------------------------+
 | HEADER BAR (fixed top, ~48px)                     |
-| [Sheet name] [progress] [EN|NL|EN+NL] [Me: ___] [x] |
+| [Sheet name] [progress] [EN|NL|EN+NL] [POV: ___] [x] |
 +--------------------------------------------------+
 |                                                    |
 |  CHAT THREAD (scrollable, flex-1)                 |
@@ -57,7 +57,7 @@ When conversation mode is active, the entire two-column grid (source text card, 
 ### Entry and Exit
 
 - **Entry:** A sixth button (chat bubble icon) is added to the existing mode toggle button bar (alongside Gamepad, Highlight, Reference, Output, Live). Clicking it activates conversation mode.
-- **Exit:** An `x` close button in the conversation view header bar. Also: pressing `Escape` exits. The button in the standard-mode bar also toggles it off.
+- **Exit:** An `x` close button in the conversation view header bar. The button in the standard-mode bar also toggles it off. Escape does NOT exit conversation mode directly — it only closes the active layer (see Escape priority chain below).
 - **State preserved:** When exiting conversation mode, the user returns to standard mode at the same row they last interacted with.
 
 ### New Component Structure
@@ -70,7 +70,7 @@ TranslationHelper.tsx
         |     |-- Sheet name + row count
         |     |-- Progress indicator (translated / total)
         |     |-- Language toggle: [EN] [NL] [EN+NL]
-        |     |-- Protagonist selector: "Me: [dropdown]"
+        |     |-- Protagonist selector: "POV: [dropdown]"
         |     |-- Exit button
         |-- ConversationThread.tsx
         |     |-- ChatBubble.tsx (per dialogue row)
@@ -105,7 +105,7 @@ The component simply renders these arrays differently — as a scrolling thread 
 Each dialogue row becomes a `ChatBubble` component.
 
 **Speaker identification:**
-- Speaker name extracted from Column A using existing `trimSpeakerName()` (takes last dot-segment)
+- Speaker name extracted from Column A using existing `extractSpeakerName()` from `speakerNameUtils.ts` (takes last dot-segment). Note: the inline `trimSpeakerName` in TranslationHelper.tsx should be refactored to use this utility during this work.
 - Speaker matched to codex CHARACTER entry for enrichment (gender badge, color assignment)
 - Matching cascade: exact match on `entry.english` -> exact match on `entry.name` -> nickname match -> substring match -> fallback (render name without enrichment)
 
@@ -114,7 +114,13 @@ Each dialogue row becomes a `ChatBubble` component.
 **Visual layout:**
 - Protagonist bubbles: right-aligned, neutral/blue background
 - Other speakers: left-aligned, color-coded by speaker
-- Each bubble shows: speaker name tag (with gender symbol if known), dialogue text, and translation status indicator
+- Each bubble shows: speaker name tag (with gender symbol if known), dialogue text, context note (if present), and translation status indicator
+
+**Context notes (Column B):**
+- When a row has a non-empty context note (e.g., "Angry, talking to crowd", "Dialogue option 1"), display it as a small italic muted line above the dialogue text inside the bubble
+- Example: `[Angry, shouting at the herd]` in `text-[11px] italic text-gray-400`
+- Context notes are critical for accurate translation — without them the translator must flip back to standard mode, defeating the purpose of conversation view
+- Context notes used for system message detection (see §2) are still shown on those system messages
 
 **Color assignment:**
 - Each scene (sheet) assigns colors from a fixed palette to speakers in order of first appearance
@@ -130,10 +136,10 @@ Each dialogue row becomes a `ChatBubble` component.
 | NL | Dutch translation only (or "untranslated" placeholder) |
 | EN+NL | English on top, Dutch underneath (dimmer) |
 
-**Translation status indicators on each bubble:**
-- Translated: subtle checkmark or green left-border
-- Untranslated: dashed border or dim "awaiting translation" text
-- Modified (unsaved): yellow/green pulse, same as current Modified badge
+**Translation status indicators on each bubble (must not rely on color alone — see Accessibility section):**
+- Translated: green left-border + small checkmark icon on speaker name tag
+- Untranslated: dashed border + dim "— awaiting translation —" placeholder text
+- Modified (unsaved): amber left-border + pencil dot icon, same pulse as current Modified badge
 
 **Clicking a bubble:**
 - Selects it (visual highlight: thicker border or glow)
@@ -167,11 +173,11 @@ The toggle is a segmented control (three buttons in a group, active one highligh
 
 ### 4. Protagonist Selector
 
-A dropdown in the header bar labeled "Me:" that lets the user designate which character appears on the right side of the chat.
+A dropdown in the header bar labeled "POV:" (point of view) that lets the user designate which character appears on the right side of the chat. We use "POV" rather than "Me" because the translator is not the character — they're observing the scene from a character's perspective.
 
 **Behavior:**
 - Dropdown is populated dynamically with all speakers found in the current sheet
-- Default: auto-detect — if the sheet contains a speaker matching `Foal`, `{$NewName}`, or any codex entry marked as protagonist, select that. Otherwise, select the most frequent speaker.
+- Default: auto-detect — if the sheet contains a speaker matching `Foal` or `{$NewName}`, select that. Otherwise, select the most frequent speaker. (Note: there is no `protagonist` field on CodexEntry — detection is purely name-based.) If auto-detection fails, show hint: "No protagonist detected — select one."
 - User can change it at any time. Selection persists per sheet (stored in component state or localStorage).
 - When changed, the thread re-renders with the new protagonist on the right.
 
@@ -199,7 +205,13 @@ Fixed panel at the bottom of the screen. Hidden when no bubble is selected.
 - **Navigation arrows:** `<< -1` and `+1 >>` buttons move to the previous/next bubble, loading it into the dock. This lets you "tick through" sequential translations without clicking each bubble.
 - **Auto-advance:** After submitting, automatically advances to the next untranslated bubble. The chat thread scrolls to bring it into view.
 
-**Dismiss:** Click outside a bubble or press Escape to close the dock without submitting.
+**Unsaved edit handling:**
+- The EditDock textarea state is **local** to EditDock (not wired to global `currentTranslation`). This prevents 149 ChatBubble re-renders on every keystroke.
+- On submit (Shift+Enter): sync local state to global `handleSubmitWithSync()`, then clear.
+- On dismiss (Escape or click-outside): if the textarea has been modified from its initial value, auto-save to the local `translations[]` array (same behavior as standard mode's Modified state). No confirmation dialog — the change is preserved but not synced to xlsx until explicit submit.
+- On navigation (-1/+1): same as dismiss — auto-save current edits before loading the next row.
+
+**Dismiss:** Click outside a bubble or press Escape to close the dock. Unsaved changes are preserved in local state (marked Modified).
 
 ### 6. Codex Highlighting in Bubbles
 
@@ -236,9 +248,9 @@ E1_TheProtest  •  87 / 149 translated  [=======>        ]
 
 | Key | Action |
 |---|---|
-| `Escape` | Close edit dock / exit conversation mode |
+| `Escape` | Layered dismiss: CharacterInfoPopover → Edit Dock → (does NOT exit conversation mode) |
 | `Shift+Enter` | Submit translation (when dock is open) |
-| `Up/Down arrows` | Navigate between bubbles (when dock is open) |
+| `Alt+Up / Alt+Down` | Navigate between bubbles (when dock is open). Plain Up/Down reserved for textarea cursor movement. |
 | `L` | Cycle language toggle (EN -> NL -> EN+NL -> EN) |
 | `H` | Toggle codex highlighting |
 
@@ -256,13 +268,15 @@ Output: { english: "Smart Ass", dutch: "Betweter", gender: "female", ... } or nu
 ```
 
 **Matching cascade (in order):**
-1. Exact match on `entry.english === speakerName`
-2. Exact match on `entry.name === speakerName`
+1. Exact match on `entry.english === speakerName` (e.g., `entry.english` is the codex English display name)
+2. Exact match on `entry.name === speakerName` (e.g., `entry.name` is the codex entry identifier key)
 3. Nickname match: `entry.nicknames.includes(speakerName)`
-4. Substring: `speakerName.includes(entry.english)` or reverse
+4. Substring (guarded): `entry.english.includes(speakerName)` — **one direction only** (codex name contains speaker name). Both strings must be 4+ characters to prevent greedy matches (e.g., "Ass" matching everything). Normalize whitespace and casing before comparing: `.replace(/[-_\s]+/g, ' ').trim().toLowerCase()`.
 5. Return null (render speaker name without enrichment)
 
-**Caching:** Results cached in a Map per render cycle. ~100 speakers, ~170 codex entries — fast enough for O(n*m) with small n and m.
+**Note on overlap:** The existing `findCharacterMatches()` in `useCharacterHighlighting.ts` does text-range highlighting (finding all character mentions in a string). The new `findCodexCharacter()` is a simpler speaker-to-entry lookup. They solve different problems and are intentionally separate, but share the codex data source.
+
+**Caching:** Results cached in a `useMemo`-derived Map keyed by speaker name. The `uniqueSpeakers` array must also be memoized to keep dependency references stable. ~100 speakers, ~170 codex entries — fast enough for O(n*m) with small n and m.
 
 ### Known edge cases
 - `"Melvin"` (from xlsx) should match `"Ass Handler Melvin"` (codex english) — caught by step 4
@@ -319,12 +333,82 @@ This is technically accurate (it's the order they appear in the xlsx) and suffic
 
 ---
 
+## Intermediate Data Model
+
+Rather than operating on parallel arrays (`sourceTexts[i]`, `translations[i]`, `utterers[i]`) in JSX, derive a `ConversationRow[]` model via `useMemo`:
+
+```ts
+interface ConversationRow {
+  index: number;
+  type: 'dialogue' | 'system';
+  speakerName: string;
+  sourceText: string;
+  translation: string;
+  isTranslated: boolean;
+  isModified: boolean;
+  codexEntry: CodexEntry | null;
+  color: string;
+  isProtagonist: boolean;
+  contextNote: string;
+}
+```
+
+Benefits:
+- Single source of truth for all derived data (no duplicated logic in ChatBubble vs. SystemMessage)
+- Stable references for `React.memo` comparisons — each row object only changes when its specific translation changes
+- Clean separation: `ConversationThread` maps over `conversationRows`, `ChatBubble` receives a single `row` prop instead of 6+ parallel array indices
+- Speaker codex matching and color assignment happen once in the useMemo, not per-bubble
+
+Compute speaker-to-codex map and color assignments in a single `useMemo` pass alongside this model.
+
+---
+
+## Accessibility
+
+**ARIA roles:**
+- `ConversationThread`: `role="feed"` with `aria-label="Conversation thread"`
+- `ChatBubble`: `role="article"` with `aria-label="{speakerName}: {dialogueText}. Status: {translationStatus}."` and `aria-selected` when active
+- `SystemMessage`: `role="note"` with `aria-label="Stage direction: {text}"`
+- `EditDock`: `role="complementary"` with `aria-label="Edit panel for selected dialogue"` and `aria-live="polite"` (announces new content to screen readers)
+- Source text in dock: `aria-readonly="true"` with `aria-label="English source text (read only)"`
+
+**Focus management:**
+- When dock opens: focus moves to textarea via `textareaRef.current?.focus()`
+- When dock closes: focus returns to the last-clicked bubble (store ref: `lastClickedBubbleRef`)
+- When navigating with -1/+1: focus stays in textarea, new content loads
+- All bubbles are keyboard-reachable with `tabIndex={0}`
+
+**Translation status — not color-only (WCAG 1.4.1):**
+
+| Status | Color signal | Second signal |
+|---|---|---|
+| Translated | Green left-border | Small checkmark icon + `aria-label="translated"` |
+| Untranslated | Dashed border | Placeholder text "— awaiting translation —" + `aria-label="not yet translated"` |
+| Modified | Amber pulse | Pencil dot icon + `aria-label="unsaved changes"` |
+
+**Viewport:** Use `height: 100dvh` (not `100vh`) on the outer container to handle mobile browser chrome and virtual keyboards correctly.
+
+**Contrast:** Speaker colors are used as left-border accents on neutral-background bubbles, not as full bubble backgrounds. Dialogue text is always dark on light (or light on dark in dark mode) regardless of speaker color. Amber and cyan accents pass contrast requirements as decorative borders, not informational text.
+
+---
+
 ## Technical Considerations
 
 **Performance:** A large sheet like `E1_TheProtest` has 149 rows. Rendering 149 bubble components is fine for React. No virtualization needed for v1 — if sheets grow past 500 rows, add `react-window` later.
 
-**State sharing:** Conversation mode shares `currentIndex`, `translations[]`, `currentTranslation`, and `handleSubmitWithSync()` with the standard view via the existing `useTranslationState` hook. No new state management needed.
+**Re-render prevention:** The EditDock textarea state must be local to EditDock, not wired to global `currentTranslation`. The global `currentTranslation` was designed for the single-row spotlight view — updating it on every keystroke would trigger re-renders of all 149 ChatBubble components. Wrap `ChatBubble` in `React.memo` as an additional safeguard.
 
-**Highlight integration:** The existing `TextHighlighter` component can be used directly inside `ChatBubble` for codex highlighting. The `useCharacterHighlighting` hook already provides `findCharacterMatches()` and loaded JSON data.
+**Submit race condition:** `handleSubmitWithSync()` is async (network call when Live Edit is active). Disable the submit button while `syncStatus === 'syncing'` to prevent double-submit. For auto-advance, derive the "next untranslated" index from the **updated** translations array (use a `useEffect` watching `currentIndex` changes), not inline in the submit handler.
+
+**Auto-advance edge cases:**
+- If no more untranslated bubbles exist: stay on current bubble, show a completion toast ("All lines translated!")
+- Auto-advance has a ~500ms visual delay: the submitted bubble stays highlighted briefly before scrolling to the next, so the translator can verify their work
+- Navigation arrows at row 0 / row N: buttons disable (do not wrap around)
+
+**State sharing:** Conversation mode shares `currentIndex`, `translations[]`, and `handleSubmitWithSync()` with the standard view via the existing `useTranslationState` hook. Note: `handleSubmitWithSync` is defined in `TranslationHelper.tsx` (not in a hook), so it is passed as a prop through `ConversationView` to `EditDock`.
+
+**Highlight integration:** The existing `TextHighlighter` component can be used directly inside `ChatBubble` for codex highlighting. The `useCharacterHighlighting` hook already provides `findCharacterMatches()` and loaded JSON data. The `characterData` array is already returned from the hook — the "Modify" action is to ensure it's easily consumable by the conversation view's `findCodexCharacter` utility.
+
+**System message detection precedence:** Column B keyword check overrides Column A pattern check. If a row has a valid `SAY.*` pattern in Column A but Column B contains "UI" or "Button text", it renders as a system message.
 
 **No new dependencies.** Everything builds on existing React, Tailwind, and the xlsx library already in the project.
