@@ -226,5 +226,111 @@
     ],
     "dutchStyleAnalysis": "**REGISTER**: Highly informal with \"gij/ge\" forms and colloquial vocabulary (\"jong,\" \"zot van\"). Street-level register maintained with casual contractions and slang.\n\n**DUTCH FLAVOR**: Strong Flemish/Belgian dialect markers throughout (\"Hebde gij,\" \"ge weet,\" \"jong\"). Uses regional expressions like \"zot van\" instead of standard Dutch \"dol op.\" Distinctly southern Netherlands/Belgian vernacular.\n\n**CHARACTER VOICE PRESERVATION**: Hyped energy maintained through extended exclamations (\"JOOOOOOOOOW,\" \"JOEEEEEEEEEE\") and ALL CAPS emphasis. Drug obsession preserved with literal \"Paarse Spul\" translation. Performance hype adapted naturally (\"LOSGAAN\" for \"LET'S DO THIS\").\n\n**VERBAL TICS IN DUTCH**: \"Hey—Hey—Hey\" kept identical. \"Booyah\" becomes \"JOEEEEEEEEEE\" with extended vowels. \"Purple Stuff\" consistently \"Paarse Spul.\" Repetitive pleading structure maintained.\n\n**TRANSLATION APPROACH**: Mostly literal with strategic adaptations for natural Dutch flow. \"Fix mij wat\" captures drug-seeking register. Cultural terms like \"Astral Plane\" directly translated as \"Astrale Hiernamaals.\"",
     "analyzedAt": "2026-03-06T05:07:50.451Z"
+  },
+  "The Masses": {
+    "speaker": "The Masses",
+    "lineCount": 15,
+    "episodes": [
+      "E1",
+      "E2",
+      "E4"
+    ],
+    "dutchStyleAnalysis": "**DUTCH TRANSLATION STYLE PROFILE: The Masses**\n\n**Register:** Informal Dutch using \"jij/je\" forms. Simple, direct vocabulary maintaining colloquial protest tone. Preserves crude language (\"FUCK\") when emphatic.\n\n**Dutch flavor:** Standard Netherlandic Dutch. Uses \"WEEST NIET BANG\" (archaic/dialectal plural imperative) suggesting collective voice. \"Jobs\" borrowed directly from English rather than Dutch \"banen.\"\n\n**Character voice preservation:** Maintains agitated rally energy through ALL CAPS and exclamation points. Preserves fragmented, chant-like structure and imperative commands.\n\n**Verbal tics in Dutch:** \"MACHT!\" for \"POWER!\", \"LOSER!\" kept in English, \"EZEL\" replaces \"ASS\" in compounds (\"EZEL M-MACHT!\" for \"ASS P-POWER!\"). \"Trouwe Zak\" consistently translates \"Trusty Ass.\"\n\n**Translation approach:** Primarily literal with cultural adaptation. ASS-compounds creatively localized using \"EZEL-\" prefix while maintaining rhythm and emphasis patterns.",
+    "analyzedAt": "2026-03-06T05:07:58.216Z"
+  },
+  "Grandma Kulan": {
+    "speaker": "Grandma Kulan",
+    "lineCount": 14,
+    "episodes": [
+      "E1",
+      "E5"
+    ],
+    "dutchStyleAnalysis": "**Register**: Mixed informal/formal - uses \"schat\" (honey/darling) informally but maintains polite \"u\" forms and \"Mevr.\" for respectful address. Simple, accessible vocabulary throughout.\n\n**Dutch flavor**: Clear Flemish tendencies - \"centen\" (money), \"danku\" (thank you), \"langs te komen\" (visit). Natural Dutch diminutives \"ezeltje\" and \"Luukske\" (Joey) create warmth. \"Muilegem\" as village name has authentic Dutch toponymic feel.\n\n**Character voice preservation**: Gentle melancholy maintained through soft language choices. Endearments translated consistently as \"schat.\" Wistful sighing (\"Zucht...\") and rhetorical questioning preserved exactly.\n\n**Verbal tics in Dutch**: \"Luukske zou dit/van... gevonden hebben\" becomes her recurring lament pattern. Maintains repetitive memorial references.\n\n**Translation approach**: Adaptive localization - \"Bumpkin Village\" becomes \"Muilegem\" (Dutch-sounding place name). Preserves emotional beats while making culturally authentic.",
+    "analyzedAt": "2026-03-06T05:08:06.916Z"
+  },
+  "Mr": {
+    "speaker": "Mr",
+    "lineCount": 13,
+    "episodes": [
+      "E2"
+    ],
+    "dutchStyleAnalysis": "**DUTCH TRANSLATION STYLE PROFILE: Mr. Vanscheetvelde**\n\n**Register:** Informal Dutch using \"je/jij\" forms. Colloquial vocabulary with business anglicisms (\"business is business,\" \"runnen\"). Casual contractions maintained through natural Dutch equivalents.\n\n**Dutch flavor:** Standard Netherlandic Dutch with minimal dialect markers. Creative name adaptation \"Vanscheetvelde\" adds scatological humor fitting the character's crude circumstances. Uses \"wat kan je doen\" as Dutch equivalent for resignation.\n\n**Character voice:** Weary tone preserved through ellipses and sighs. Vulnerable admissions maintained (\"alles kwijt,\" \"tegen een ezel bezig\"). Corporate-personal speech mix translated naturally.\n\n**Verbal tics:** \"*slok slok*\" replaces \"*glug glug*\" effectively. \"Misschien\" questions preserve uncertainty. Religious references kept literal (\"God stuurt me een Ezel\").\n\n**Approach:** Balanced literal-adaptive translation. Humor enhanced through name localization while preserving original meaning and emotional weight.",
+    "analyzedAt": "2026-03-06T05:08:14.203Z"
+  },
+  "Happy Ass": {
+    "speaker": "Happy Ass",
+    "lineCount": 12,
+    "episodes": [
+      "E1",
+      "E4"
+    ],
+    "dutchStyleAnalysis": "**Register**: Informal Dutch using \"je/jij\" forms with casual vocabulary. Simple, accessible language matching the original's colloquial tone.\n\n**Dutch flavor**: Standard Netherlandic Dutch without regional dialect markers. Uses native Dutch exclamations like \"Jemig\" for \"Oh boy\" and \"Topfun\" for emphatic emphasis rather than direct English loans.\n\n**Character voice preservation**: Maintains enthusiastic tone through exclamation marks and upbeat vocabulary. Preserves the welcoming, ritualistic nature with terms like \"welkomstritueel\" and consistent addressing of newcomers.\n\n**Verbal tics in Dutch**: \"Nieuweling/Nieuwkomertjes\" consistently translates \"Newbie.\" \"Feel The Love\" kept in English as catchphrase. \"TOPFUN\" replaces \"AWESOME\" as emphatic capitalized expression.\n\n**Translation approach**: Moderately adaptive, localizing exclamations and creating Dutch equivalents for emphasis words while preserving key English phrases as character markers.",
+    "analyzedAt": "2026-03-06T05:08:21.498Z"
+  },
+  "Mme": {
+    "speaker": "Mme",
+    "lineCount": 12,
+    "episodes": [
+      "E1",
+      "E5"
+    ],
+    "dutchStyleAnalysis": "**Register**: Mixed informal/formal - uses \"je/jij\" but maintains elevated vocabulary (\"geruststellen,\" \"vooruitgang\"). Corporate jargon adapted to Dutch business language (\"business,\" \"best-seller\").\n\n**Dutch flavor**: Standard Netherlandic Dutch with some Flemish influence (\"jobs\" retained over \"banen,\" \"gerief\" for equipment). Natural Dutch constructions like \"ik ben er niet goed van\" for emotional distress.\n\n**Character voice preservation**: Manipulative tone maintained through patronizing \"Liefste\" for \"My dear.\" Corporate-speak mixed with refined language preserved. \"Progress/vooruitgang\" keeps capitalized reverence.\n\n**Verbal tics in Dutch**: \"Liefste\" as condescending address. Parallel structure maintained (\"Ze verdienden...\" repetition). Exclamation points preserved for dramatic effect.\n\n**Translation approach**: Adaptive approach - restructures sentences for natural Dutch flow while preserving rhetorical power and manipulative undertones. Balances accessibility with character's sophisticated vocabulary.",
+    "analyzedAt": "2026-03-06T05:08:29.637Z"
+  },
+  "Wedgie": {
+    "speaker": "Wedgie",
+    "lineCount": 12,
+    "episodes": [
+      "E5"
+    ],
+    "dutchStyleAnalysis": "**Register**: Mixed informal/formal - uses \"jij/je\" forms but switches to formal \"uw\" for business transactions. Vocabulary remains colloquial and direct.\n\n**Dutch flavor**: Uses \"Allez dan\" (Belgian/Flemish influence) and \"camion\" (truck) showing Flemish tendencies. Natural Dutch word order and expressions like \"Laat vallen\" (drop it/forget it).\n\n**Character voice preservation**: Gruff tone maintained through short, clipped sentences. Impatience conveyed with direct commands and rhetorical questions. \"Domkop\" effectively replaces \"idiot\" as recurring insult.\n\n**Verbal tics in Dutch**: \"*puf puf*\" replaces \"*wheeze*\", \"domkop\" as go-to insult, frequent use of \"Kom op!\" for urgency.\n\n**Translation approach**: Largely literal but adapts idiomatically where needed. Preserves blue-collar directness and work-focused dialogue. Maintains exclamatory style with double exclamation marks.",
+    "analyzedAt": "2026-03-06T05:08:37.454Z"
+  },
+  "Melvin": {
+    "speaker": "Melvin",
+    "lineCount": 11,
+    "episodes": [
+      "E5"
+    ],
+    "dutchStyleAnalysis": "**Register**: Informal Dutch using \"je/jij\"; colloquial vocabulary with occasional crude language (\"kan me geen kloten schelen\"); workplace-appropriate technical terms maintained.\n\n**Dutch flavor**: Standard Netherlandic Dutch; uses \"met onze voeten spelen\" (playing with our feet) as creative idiom adaptation; \"Kan me geen kloten schelen\" for dismissive attitude; \"stond in de file\" for traffic.\n\n**Character voice preservation**: Anxious questioning maintained through \"Wat als...\" constructions; panic preserved with extended vowel sounds \"AAAAAAA!!!!\"; practical urgency kept in timing references and work focus.\n\n**Verbal tics in Dutch**: \"Wat als...\" (What if...) consistently translated; exclamatory panic moments with Dutch phonetic equivalents; questioning tone preserved.\n\n**Translation approach**: Generally adaptive rather than literal; creative solutions like \"met onze voeten spelen\" for \"playing tricks\"; maintains working-class directness and economic anxiety themes.",
+    "analyzedAt": "2026-03-06T05:08:44.701Z"
+  },
+  "Decrepit Sign": {
+    "speaker": "Decrepit Sign",
+    "lineCount": 10,
+    "episodes": [
+      "E1",
+      "E2"
+    ],
+    "dutchStyleAnalysis": "**Register**: Formal signage Dutch using standard public notice language. Maintains institutional tone with proper capitalization conventions (all-caps for warnings).\n\n**Dutch flavor**: Netherlandic standard with archaic/poetic contractions ('t Schrijn, 't Bos) that add folkloric atmosphere. No regional dialect markers, consistent with official wayfinding signage.\n\n**Character voice preservation**: Maintains utilitarian, robotic repetition through identical translations. The obsessive cycling between messages preserved through exact repetition of same Dutch phrases.\n\n**Verbal tics in Dutch**: Core phrases \"De Lange Weg Naar 't Schrijn in 't Bos\" and \"GESLOTEN WEGENS ONDERHOUD\" repeated verbatim, creating mechanical loop effect.\n\n**Translation approach**: Highly literal, prioritizing consistency over variation. The archaic contractions elevate simple signage language while maintaining the character's single-minded functionality.",
+    "analyzedAt": "2026-03-06T05:08:51.398Z"
+  },
+  "Radio Host Marcos": {
+    "speaker": "Radio Host Marcos",
+    "lineCount": 10,
+    "episodes": [
+      "E1"
+    ],
+    "dutchStyleAnalysis": "**Register**: Informal Dutch using \"je/jij\" forms with standard broadcast vocabulary. Maintains professional radio tone while incorporating casual expressions like \"superblij\" and \"bakken en braden.\"\n\n**Dutch flavor**: Netherlandic Dutch with creative place name adaptations (Mechalen, Groot-Muilegem). Uses established Dutch idioms like \"kurkdroog\" and \"rep je achterwerk\" rather than literal translations.\n\n**Character voice preservation**: Maintains enthusiastic radio personality through exclamatory phrases and smooth topic transitions. Professional warmth comes through in conversational interview style.\n\n**Verbal tics in Dutch**: \"*tsj*\" replaces \"*ksh*\" radio static. \"Mijn favoriet is...\" preserves recommendation style. Body-part humor adapted naturally with \"achterwerk\" and \"billen.\"\n\n**Translation approach**: Adaptive rather than literal, prioritizing natural Dutch flow. Creative wordplay in \"Muntige Muil\" shows localization effort while preserving comedic intent.",
+    "analyzedAt": "2026-03-06T05:08:58.852Z"
+  },
+  "Tight Ass": {
+    "speaker": "Tight Ass",
+    "lineCount": 10,
+    "episodes": [
+      "E4"
+    ],
+    "dutchStyleAnalysis": "**Register**: Informal Dutch using \"jij/je\" forms, maintaining colloquial energy. Vocabulary stays accessible while preserving authoritarian tone through direct commands and rhetorical structures.\n\n**Dutch flavor**: Standard Netherlandic Dutch without regional dialects. Uses natural Dutch expressions like \"terwijl ik iets te zeggen heb\" for \"on my watch.\" No Flemish tendencies detected.\n\n**Character voice preservation**: Authoritarian excitement maintained through exclamation points and repetitive structures. Crude energy preserved in \"Lijpe Ezel\" for \"Dope Ass.\" Nervous laughter (\"Haha\") kept verbatim.\n\n**Verbal tics in Dutch**: Repetitive commands structure maintained (\"Opnieuw!\"), crowd participation questions preserved (\"wat ben je dan???\"), enthusiastic repetition intact (\"Het begint! Het begint!\").\n\n**Translation approach**: Primarily literal with creative adaptations for Dutch flow. \"Loser\" kept as English loanword for impact. Maintains fragment-heavy excited speech patterns.",
+    "analyzedAt": "2026-03-06T05:09:06.770Z"
+  },
+  "Welcome Sign": {
+    "speaker": "Welcome Sign",
+    "lineCount": 10,
+    "episodes": [
+      "E1",
+      "E2"
+    ],
+    "dutchStyleAnalysis": "**Register**: Formal Dutch maintained through \"onze\" possessives and institutional vocabulary; proper/official tone preserved with standard Dutch rather than colloquial forms.\n\n**Dutch flavor**: Neutral Netherlandic Dutch with occasional Flemish-leaning contractions (\"'t zuiden\"); \"piekfijn\" shows distinctly Dutch idiomatic choice over literal translations; \"Boerderij van Muilegem\" creates local Dutch farm naming convention.\n\n**Character voice preservation**: Promotional/welcoming formality retained through consistent \"Welkom op\" formula and descriptive marketing language (\"prachtige,\" \"hoogmoderne\"); maintains informational signage character.\n\n**Verbal tics in Dutch**: Fixed greeting \"Welkom op de Boerderij van Muilegem\" replaces English formula; directional patterns vary between \"Ten [richting]:\" and \"Naar 't [richting]\" but maintain structural consistency.\n\n**Translation approach**: Adaptive rather than literal - \"state of the art\" becomes idiomatic \"piekfijn/hoogmoderne\"; \"Heritage Stable\" creatively rendered as \"Erfgoedshoeve\"; maintains repetitive, institutional character voice through Dutch equivalents.",
+    "analyzedAt": "2026-03-06T05:09:15.488Z"
   }
 }
