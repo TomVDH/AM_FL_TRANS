@@ -819,4 +819,42 @@
 [data-sonner-toast] [data-description] {
   font-weight: 400 !important;
   opacity: 0.9 !important;
-} 
+}
+
+/* === Conversation View === */
+
+@keyframes bubbleIn {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes dockSlideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@keyframes dockSlideDown {
+  from { transform: translateY(0);    opacity: 1; }
+  to   { transform: translateY(100%); opacity: 0; }
+}
+
+@keyframes popoverBloom {
+  from { opacity: 0; transform: scale(0.95) translateY(-4px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.animate-bubble-in {
+  animation: bubbleIn 0.2s ease-out both;
+}
+
+.dock-enter {
+  animation: dockSlideUp 0.22s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.dock-exit {
+  animation: dockSlideDown 0.18s ease-in both;
+}
+
+.popover-bloom {
+  animation: popoverBloom 0.15s ease-out both;
+}
