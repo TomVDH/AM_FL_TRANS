@@ -8,6 +8,7 @@ import { findCodexCharacter, isSystemMessage, type CodexEntry } from '@/utils/sp
 import { ConversationHeader } from './conversation/ConversationHeader';
 import { ConversationThread } from './conversation/ConversationThread';
 import { EditDock } from './conversation/EditDock';
+import { CharacterInfoPopover } from './conversation/CharacterInfoPopover';
 import type { ConversationRow } from './conversation/ChatBubble';
 
 type LanguageMode = 'EN' | 'NL' | 'EN+NL';
@@ -53,6 +54,7 @@ export function ConversationView({
   const [languageMode, setLanguageMode] = useState<LanguageMode>('EN+NL');
   const [protagonistName, setProtagonistName] = useState<string>('');
   const lastSelectedRef = useRef<HTMLElement | null>(null);
+  const [popoverState, setPopoverState] = useState<{ speakerName: string; rect: DOMRect } | null>(null);
 
   // Build unique speakers list and auto-detect protagonist
   const speakers = useMemo(() => {
@@ -185,6 +187,13 @@ export function ConversationView({
     setSelectedBubbleIndex(null);
   }, []);
 
+  // Handle speaker name click — show character info popover
+  const handleSpeakerClick = useCallback((speakerName: string, event: React.MouseEvent) => {
+    if (!highlightMode) return;
+    const rect = (event.target as HTMLElement).getBoundingClientRect();
+    setPopoverState({ speakerName, rect });
+  }, [highlightMode]);
+
   // Language mode cycling via 'L' key
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -246,6 +255,7 @@ export function ConversationView({
           languageMode={languageMode}
           isDockOpen={selectedBubbleIndex !== null}
           onBubbleClick={handleBubbleClick}
+          onSpeakerClick={handleSpeakerClick}
         />
       </div>
 
@@ -258,6 +268,19 @@ export function ConversationView({
         onDismiss={handleDockDismiss}
         totalRows={sourceTexts.length}
       />
+
+      {popoverState && (() => {
+        const entry = speakerCodexMap.get(popoverState.speakerName);
+        if (!entry) return null;
+        return (
+          <CharacterInfoPopover
+            character={entry}
+            anchorRect={popoverState.rect}
+            onClose={() => setPopoverState(null)}
+            onInsert={(text) => { /* insert into textarea if dock is open */ }}
+          />
+        );
+      })()}
     </div>
   );
 }
