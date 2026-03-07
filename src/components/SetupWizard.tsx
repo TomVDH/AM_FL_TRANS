@@ -457,493 +457,355 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   }, [detectLocaleColumns]);
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-8 flex items-center justify-center transition-colors duration-300">
-      {/* Dark Mode Toggle */}
-      <button
-        onClick={() => {
-          console.log('[SetupWizard] Dark mode button clicked!');
-          toggleDarkMode();
-        }}
-        className="fixed top-4 right-4 h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out z-50"
-        style={{ borderRadius: '3px' }}
-        aria-label="Toggle dark mode"
-      >
-        {darkMode ? (
-          <svg className="w-4 h-4 text-yellow-500 relative z-10" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
-          </svg>
-        ) : (
-          <svg className="w-4 h-4 text-gray-700 dark:text-gray-300 relative z-10" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-          </svg>
-        )}
-      </button>
+    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 flex items-start justify-center transition-colors duration-300">
 
-      {/* Main Container - Responsive width based on configuration panel visibility */}
+      {/* Main Container */}
       <div
-        className={`w-full space-y-6 transition-all duration-500 ease-in-out ${
-          excelSheets.length > 0 ? 'max-w-6xl' : 'max-w-4xl'
+        className={`w-full mt-8 md:mt-16 transition-all duration-500 ease-in-out ${
+          excelSheets.length > 0 ? 'max-w-3xl' : 'max-w-xl'
         }`}
-        style={{ animation: 'fadeIn 0.5s ease-out' }}
+        style={{ animation: 'fadeIn 0.3s ease-out' }}
       >
-        {/* Header Section with Logo */}
-        <div className="text-center mb-6">
-          {/* Logo Image */}
-          <div className="mb-4 flex justify-center">
-            <img
-              src="/images/asses-masses-logo.png"
-              alt="Asses Masses Logo"
-              className="h-24 w-auto max-w-full object-contain"
-            />
-          </div>
-          <h1 className="text-2xl font-bold mb-1 tracking-tight text-gray-900 dark:text-gray-100">Translation Helper</h1>
-          <p className="text-xs font-medium text-gray-400 dark:text-gray-500 tracking-wide uppercase">asses.masses edition</p>
-          {/* Translation Target Indicator - only show when language is selected */}
-          {selectedLanguage && (
-            <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 text-xs font-medium" style={{ borderRadius: '3px' }}>
-              <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-              </svg>
-              <span>Target: Column {selectedLanguage.column} ({selectedLanguage.name})</span>
-            </div>
-          )}
+        {/* Header — compact, left-aligned */}
+        <div className="mb-6 flex items-baseline gap-3">
+          <h1 className="text-lg font-semibold tracking-tight text-gray-900 dark:text-gray-100">AM FL TRANS</h1>
+          <span className="text-[10px] text-gray-400 dark:text-gray-500 uppercase tracking-widest">asses.masses</span>
         </div>
 
         {/* Resume Card */}
         {lastSession && handleResumeSession && (
-          <div className="mb-6">
+          <>
             <button
               onClick={() => handleResumeSession(lastSession)}
-              className="w-full text-left p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition-all duration-150 group"
+              className="w-full text-left px-4 py-3 mb-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition-all duration-150 group"
               style={{ borderRadius: '3px' }}
             >
               <div className="flex items-center justify-between">
-                <div>
-                  <div className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+                <div className="min-w-0">
+                  <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
                     Resume: {lastSession.fileName}
                     {lastSession.selectedSheet && ` — ${lastSession.selectedSheet}`}
-                  </div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
-                    {lastSession.translatedCount} / {lastSession.totalLines} translated
+                  </span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400 ml-2">
+                    {lastSession.translatedCount}/{lastSession.totalLines}
                     {lastSession.timestamp && ` · ${formatTimeAgo(lastSession.timestamp)}`}
-                  </div>
+                  </span>
                 </div>
-                <svg className="w-5 h-5 text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 shrink-0 ml-3 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </button>
+
+            <div className="flex items-center gap-3 mb-4">
+              <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
+              <span className="text-[10px] text-gray-400 dark:text-gray-500 uppercase tracking-widest">or start new</span>
+              <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
+            </div>
+          </>
+        )}
+
+        {/* File Selection — flat, no card wrapper */}
+        <div className="space-y-3">
+          {/* Server file selector row */}
+          <div className="flex items-center gap-2">
+            <div className="flex shrink-0" role="group" aria-label="File type">
+              {['excel', 'json', 'csv'].map((type) => (
+                <button
+                  key={type}
+                  onClick={() => handleFileTypeChange(type as 'excel' | 'json' | 'csv')}
+                  aria-pressed={fileType === type}
+                  className={`px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wide transition-all duration-200 first:rounded-l-[3px] last:rounded-r-[3px] ${
+                    fileType === type
+                      ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900'
+                      : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
+                  }`}
+                >
+                  {type === 'excel' ? 'XLS' : type.toUpperCase()}
+                </button>
+              ))}
+            </div>
+
+            <div className="flex-1 min-w-0">
+              {fileType === 'excel' && (
+                <>
+                  {loadingExistingFiles ? (
+                    <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
+                  ) : existingFiles.length > 0 ? (
+                    <select
+                      value={selectedExistingFile}
+                      onChange={(e) => handleExistingFileSelect(e.target.value)}
+                      className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
+                      style={{ borderRadius: '3px' }}
+                    >
+                      <option value="">Select file from server...</option>
+                      {existingFiles.map(file => (
+                        <option key={file.fileName} value={file.fileName}>
+                          {file.fileName} ({file.sheets?.length || 0} sheets)
+                        </option>
+                      ))}
+                    </select>
+                  ) : (
+                    <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /excels</div>
+                  )}
+                </>
+              )}
+              {(fileType === 'json' || fileType === 'csv') && (
+                <>
+                  {loadingDataFiles ? (
+                    <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
+                  ) : (fileType === 'json' ? jsonFiles : csvFiles).length > 0 ? (
+                    <select
+                      value={selectedDataFile}
+                      onChange={(e) => {
+                        console.log(`[SetupWizard] ${fileType.toUpperCase()} file selected:`, e.target.value);
+                        setSelectedDataFile(e.target.value);
+                      }}
+                      className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
+                      style={{ borderRadius: '3px' }}
+                    >
+                      <option value="">Select file from server...</option>
+                      {(fileType === 'json' ? jsonFiles : csvFiles).map(file => (
+                        <option key={file} value={file}>{file}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /data/{fileType}</div>
+                  )}
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* Upload drop zone — compact */}
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept=".xlsx,.xls"
+            onChange={handleFileUpload}
+            className="hidden"
+          />
+          <div
+            onClick={() => fileInputRef.current?.click()}
+            onDragOver={(e) => {
+              e.preventDefault();
+              e.currentTarget.classList.add('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
+            }}
+            onDragLeave={(e) => {
+              e.preventDefault();
+              e.currentTarget.classList.remove('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
+            }}
+            onDrop={(e) => {
+              e.preventDefault();
+              e.currentTarget.classList.remove('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
+              const files = e.dataTransfer.files;
+              if (files.length > 0) {
+                const file = files[0];
+                if (file.type !== 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' &&
+                    file.type !== 'application/vnd.ms-excel' &&
+                    !file.name.endsWith('.xlsx') &&
+                    !file.name.endsWith('.xls')) {
+                  toast.error('Invalid file type. Please upload an Excel file (.xlsx or .xls)');
+                  return;
+                }
+                const maxSize = 50 * 1024 * 1024;
+                if (file.size > maxSize) {
+                  toast.error('File too large. Maximum file size is 50MB');
+                  return;
+                }
+                const syntheticEvent = {
+                  target: { files: [file] }
+                } as unknown as React.ChangeEvent<HTMLInputElement>;
+                handleFileUpload(syntheticEvent);
+              }
+            }}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                fileInputRef.current?.click();
+              }
+            }}
+            aria-label="Upload Excel file"
+            className="flex items-center justify-center gap-2 py-2 border border-dashed border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-transparent transition-all duration-200 cursor-pointer"
+            style={{ borderRadius: '3px' }}
+          >
+            {isLoadingExcel ? (
+              <Spinner size="sm" label="Processing..." />
+            ) : (
+              <>
+                <svg className="w-4 h-4 text-gray-400 dark:text-gray-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
+                </svg>
+                <span className="text-xs text-gray-500 dark:text-gray-400">Drop .xlsx or click to upload</span>
+              </>
+            )}
+          </div>
+
+          {/* Selection confirmation */}
+          {((fileType === 'excel' && selectedExistingFile && excelSheets.length > 0) ||
+            ((fileType === 'json' || fileType === 'csv') && selectedDataFile)) && (
+            <div className="flex items-center gap-1.5">
+              <svg className="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+              </svg>
+              <span className="text-xs text-green-600 dark:text-green-400 font-medium">
+                {fileType === 'excel' ? selectedExistingFile : selectedDataFile} loaded
+              </span>
+            </div>
+          )}
+        </div>
+
+        {/* Progressive disclosure: Language → Sheet → Preview → Start */}
+        {fileType === 'excel' && excelSheets.length > 0 && (
+          <div className="mt-4 space-y-4">
+            <LanguageSelector
+              languages={detectedLanguages}
+              selectedLanguage={selectedLanguage}
+              onSelectLanguage={onSelectLanguage}
+              disabled={isLoadingExcel}
+            />
+
+            {selectedLanguage && (
+              <ReferenceDataInfo
+                selectedLanguage={selectedLanguage.code}
+                selectedLanguageName={selectedLanguage.name}
+                hasReferenceData={hasLanguage(selectedLanguage.code)}
+                isLoading={isLoadingCodex}
+                totalEntries={totalEntries}
+                onLearnMore={() => window.open('/docs/reference-data-guide.md', '_blank')}
+              />
+            )}
+
+            {/* Sheet selector */}
+            <div className="bg-gray-50/50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 p-3" style={{ borderRadius: '3px' }}>
+              <SheetSelector
+                sheets={excelSheets}
+                selectedSheet={selectedSheet}
+                onSelectSheet={setSelectedSheet}
+                workbookData={workbookData}
+                startRow={startRow}
+              />
+
+              {selectedSheet && selectedLanguage && (
+                <div className="mt-3">
+                  <SheetPreview
+                    workbook={workbookData}
+                    sheetName={selectedSheet}
+                    sourceColumn={sourceColumn}
+                    targetColumn={selectedLanguage.column}
+                    startRow={startRow}
+                    languageCode={selectedLanguage.code}
+                  />
+                </div>
+              )}
+
+              {sourceTexts.length > 0 && (
+                <div className="mt-2 flex items-center gap-1.5">
+                  <svg className="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-xs text-green-600 dark:text-green-400 font-medium">
+                    {sourceTexts.length} items ready
+                  </span>
+                </div>
+              )}
+            </div>
+
+            {/* Translation Target Indicator */}
+            {selectedLanguage && (
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs text-gray-500 dark:text-gray-400">
+                <span>Target: Column {selectedLanguage.column} ({selectedLanguage.name})</span>
+              </div>
+            )}
           </div>
         )}
 
-        {/* Main Form Card - Tighter padding */}
-        <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-6 space-y-6 shadow-sm transition-all duration-300" style={{ borderRadius: '3px' }}>
-          {/* Input Mode Toggle - Hidden but preserved */}
-          <div className="hidden justify-center mb-6">
-            <div className="bg-gray-100 dark:bg-gray-700 border border-black dark:border-gray-600 p-1 flex transition-colors duration-300">
-              <button
-                onClick={() => setInputMode('excel')}
-                className={`px-6 py-2 font-black tracking-tight uppercase letter-spacing-wide transition-all duration-200 ${
-                  inputMode === 'excel'
-                    ? 'bg-black dark:bg-white text-white dark:text-black'
-                    : 'bg-transparent text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                }`}
-                style={{ borderRadius: '3px' }}
-              >
-                Excel Upload
-              </button>
-              <button
-                onClick={() => setInputMode('embedded-json')}
-                className={`px-6 py-2 font-black tracking-tight uppercase letter-spacing-wide transition-all duration-200 ${
-                  inputMode === 'embedded-json'
-                    ? 'bg-black dark:bg-white text-white dark:text-black'
-                    : 'bg-transparent text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                }`}
-                style={{ borderRadius: '3px' }}
-              >
-                Embedded JSON
-              </button>
-              <button
-                onClick={() => setInputMode('manual')}
-                className={`px-6 py-2 font-black tracking-tight uppercase letter-spacing-wide transition-all duration-200 ${
-                  inputMode === 'manual'
-                    ? 'bg-black dark:bg-white text-white dark:text-black'
-                    : 'bg-transparent text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                }`}
-                style={{ borderRadius: '3px' }}
-              >
-                Manual Input
-              </button>
-            </div>
-          </div>
-
-          {/* File Source Cabinet - Unified Layout */}
-          <div className="animate-fade-in">
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm overflow-hidden" style={{ borderRadius: '3px' }}>
-
-              {/* Section 1: Upload New File */}
-              <div className="p-4 border-b border-gray-200 dark:border-gray-700">
-                <div className="flex items-center gap-2 mb-3">
-                  <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                  </svg>
-                  <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Upload New</span>
-                </div>
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept=".xlsx,.xls"
-                  onChange={handleFileUpload}
-                  className="hidden"
-                />
-                <div
-                  onClick={() => fileInputRef.current?.click()}
-                  onDragOver={(e) => {
-                    e.preventDefault();
-                    e.currentTarget.classList.add('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
-                  }}
-                  onDragLeave={(e) => {
-                    e.preventDefault();
-                    e.currentTarget.classList.remove('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
-                  }}
-                  onDrop={(e) => {
-                    e.preventDefault();
-                    e.currentTarget.classList.remove('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
-                    const files = e.dataTransfer.files;
-                    if (files.length > 0) {
-                      const file = files[0];
-                      if (file.type !== 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' &&
-                          file.type !== 'application/vnd.ms-excel' &&
-                          !file.name.endsWith('.xlsx') &&
-                          !file.name.endsWith('.xls')) {
-                        toast.error('Invalid file type. Please upload an Excel file (.xlsx or .xls)');
-                        return;
-                      }
-                      const maxSize = 50 * 1024 * 1024;
-                      if (file.size > maxSize) {
-                        toast.error('File too large. Maximum file size is 50MB');
-                        return;
-                      }
-                      const syntheticEvent = {
-                        target: { files: [file] }
-                      } as unknown as React.ChangeEvent<HTMLInputElement>;
-                      handleFileUpload(syntheticEvent);
-                    }
-                  }}
-                  role="button"
-                  tabIndex={0}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      fileInputRef.current?.click();
-                    }
-                  }}
-                  aria-label="Upload Excel file"
-                  className="flex items-center justify-center gap-3 p-3 border-2 border-dashed border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-gray-50 dark:bg-gray-900/50 transition-all duration-200 cursor-pointer"
-                  style={{ borderRadius: '3px' }}
-                >
-                  {isLoadingExcel ? (
-                    <Spinner size="sm" label="Processing..." />
-                  ) : (
-                    <>
-                      <svg className="w-5 h-5 text-gray-400 dark:text-gray-500" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-                      </svg>
-                      <span className="text-sm text-gray-600 dark:text-gray-400">Drop .xlsx file or click to browse</span>
-                    </>
-                  )}
-                </div>
-              </div>
-
-              {/* Section 2: Load Existing File */}
-              <div className="p-4">
-                <div className="flex items-center gap-2 mb-3">
-                  <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 19a2 2 0 01-2-2V7a2 2 0 012-2h4l2 2h4a2 2 0 012 2v1M5 19h14a2 2 0 002-2v-5a2 2 0 00-2-2H9a2 2 0 00-2 2v5a2 2 0 01-2 2z" />
-                  </svg>
-                  <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Load Existing</span>
-                </div>
-
-                {/* File Type + File Selector Row */}
-                <div className="flex items-center gap-2">
-                  {/* File Type Toggle - Compact */}
-                  <div className="flex shrink-0" role="group" aria-label="File type">
-                    {['excel', 'json', 'csv'].map((type) => (
-                      <button
-                        key={type}
-                        onClick={() => handleFileTypeChange(type as 'excel' | 'json' | 'csv')}
-                        aria-pressed={fileType === type}
-                        className={`px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wide transition-all duration-200 first:rounded-l-[3px] last:rounded-r-[3px] ${
-                          fileType === type
-                            ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900'
-                            : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
-                        }`}
-                      >
-                        {type === 'excel' ? 'XLS' : type.toUpperCase()}
-                      </button>
-                    ))}
-                  </div>
-
-                  {/* File Selector - Flex grow */}
-                  <div className="flex-1 min-w-0">
-                    {fileType === 'excel' && (
-                      <>
-                        {loadingExistingFiles ? (
-                          <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
-                        ) : existingFiles.length > 0 ? (
-                          <select
-                            value={selectedExistingFile}
-                            onChange={(e) => handleExistingFileSelect(e.target.value)}
-                            className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
-                            style={{ borderRadius: '3px' }}
-                          >
-                            <option value="">Select file...</option>
-                            {existingFiles.map(file => (
-                              <option key={file.fileName} value={file.fileName}>
-                                {file.fileName} ({file.sheets?.length || 0} sheets)
-                              </option>
-                            ))}
-                          </select>
-                        ) : (
-                          <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /excels</div>
-                        )}
-                      </>
-                    )}
-                    {(fileType === 'json' || fileType === 'csv') && (
-                      <>
-                        {loadingDataFiles ? (
-                          <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
-                        ) : (fileType === 'json' ? jsonFiles : csvFiles).length > 0 ? (
-                          <select
-                            value={selectedDataFile}
-                            onChange={(e) => {
-                              console.log(`[SetupWizard] ${fileType.toUpperCase()} file selected:`, e.target.value);
-                              setSelectedDataFile(e.target.value);
-                            }}
-                            className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
-                            style={{ borderRadius: '3px' }}
-                          >
-                            <option value="">Select file...</option>
-                            {(fileType === 'json' ? jsonFiles : csvFiles).map(file => (
-                              <option key={file} value={file}>{file}</option>
-                            ))}
-                          </select>
-                        ) : (
-                          <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /data/{fileType}</div>
-                        )}
-                      </>
-                    )}
-                  </div>
-                </div>
-
-                {/* Selection confirmation */}
-                {((fileType === 'excel' && selectedExistingFile && excelSheets.length > 0) ||
-                  ((fileType === 'json' || fileType === 'csv') && selectedDataFile)) && (
-                  <div className="mt-2 flex items-center gap-1.5">
-                    <svg className="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                    <span className="text-xs text-green-600 dark:text-green-400 font-medium">
-                      {fileType === 'excel' ? selectedExistingFile : selectedDataFile} loaded
-                    </span>
-                  </div>
-                )}
-              </div>
-
-              {/* Section 2.5: Language Selection - Only when Excel loaded */}
-              {fileType === 'excel' && excelSheets.length > 0 && (
-                <div className="p-4 border-t border-gray-200 dark:border-gray-700">
-                  <LanguageSelector
-                    languages={detectedLanguages}
-                    selectedLanguage={selectedLanguage}
-                    onSelectLanguage={onSelectLanguage}
-                    disabled={isLoadingExcel}
-                  />
-
-                  {/* Reference Data Status */}
-                  {selectedLanguage && (
-                    <div className="mt-4">
-                      <ReferenceDataInfo
-                        selectedLanguage={selectedLanguage.code}
-                        selectedLanguageName={selectedLanguage.name}
-                        hasReferenceData={hasLanguage(selectedLanguage.code)}
-                        isLoading={isLoadingCodex}
-                        totalEntries={totalEntries}
-                        onLearnMore={() => window.open('/docs/reference-data-guide.md', '_blank')}
-                      />
-                    </div>
-                  )}
-                </div>
-              )}
-
-              {/* Section 3: Sheet Configuration - Only when Excel with sheets */}
-              {fileType === 'excel' && excelSheets.length > 0 && (
-                <div className="p-4 border-t border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-900/30">
-                  <div className="flex items-center gap-2 mb-3">
-                    <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                    <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Select Sheet</span>
-                  </div>
-                  <SheetSelector
-                    sheets={excelSheets}
-                    selectedSheet={selectedSheet}
-                    onSelectSheet={setSelectedSheet}
-                    workbookData={workbookData}
-                    startRow={startRow}
-                  />
-
-                  {/* Sheet Preview */}
-                  {selectedSheet && selectedLanguage && (
-                    <div className="mt-4">
-                      <SheetPreview
-                        workbook={workbookData}
-                        sheetName={selectedSheet}
-                        sourceColumn={sourceColumn}
-                        targetColumn={selectedLanguage.column}
-                        startRow={startRow}
-                        languageCode={selectedLanguage.code}
-                      />
-                    </div>
-                  )}
-
-                  {/* Status indicators */}
-                  {sourceTexts.length > 0 && (
-                    <div className="mt-3 flex items-center gap-1.5">
-                      <svg className="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <span className="text-xs text-green-600 dark:text-green-400 font-medium">
-                        {sourceTexts.length} items ready
-                      </span>
-                    </div>
-                  )}
-                </div>
-              )}
-
-            </div>
-          </div>
-
-          {/* Embedded JSON Section */}
-          {inputMode === 'embedded-json' && (
-            <div className="space-y-6 animate-fade-in">
-              <label className="block text-base font-black mb-4 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                Embedded JSON Data
-              </label>
-              
-              {/* Preamble Section */}
-              <div className="p-4 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-md">
-                <h5 className="text-sm font-bold text-gray-900 dark:text-gray-100 mb-2">JSON Data Source & Rendering</h5>
-                <p className="text-xs text-gray-600 dark:text-gray-300 leading-relaxed">
-                  This panel sources JSON data from the <code className="bg-gray-200 dark:bg-gray-600 px-1 rounded">data/json/</code> folder, 
-                  containing processed Excel files converted to structured JSON format. Each JSON file represents an Excel workbook with multiple sheets, 
-                  where data is extracted from columns A (Utterer), B (Context), C (Source English), and J (Translated Dutch). 
-                  The JSONs are rendered as searchable, filterable entries with copy functionality for each field.
-                </p>
-              </div>
-
-              {/* Quick Stats */}
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-md">
-                  <p className="text-lg font-bold text-gray-900 dark:text-gray-100">14</p>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">JSON Files</p>
-                </div>
-                <div className="text-center p-3 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-md">
-                  <p className="text-lg font-bold text-gray-900 dark:text-gray-100">6,265</p>
-                  <p className="text-xs text-gray-600 dark:text-gray-400">Total Entries</p>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="flex gap-3">
-                <button
-                  onClick={() => {
-                    // This will be handled by the parent component to switch to JSON mode
-                    setInputMode('excel');
-                  }}
-                  className="px-4 py-2 bg-gradient-to-br from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white text-sm font-bold border border-blue-700 dark:border-blue-600 hover:border-blue-600 dark:hover:border-blue-500 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
-                  style={{ borderRadius: '3px' }}
-                >
-                  Switch to Excel Mode
-                </button>
-                <button
-                  onClick={() => window.open('/scripts/excel-to-json.js', '_blank')}
-                  className="px-4 py-2 bg-gradient-to-br from-gray-600 to-gray-700 dark:from-gray-500 dark:to-gray-600 text-white text-sm font-bold border border-gray-700 dark:border-gray-600 hover:border-gray-600 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
-                  style={{ borderRadius: '3px' }}
-                >
-                  View Processing Script
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* Manual Input Section */}
-          {inputMode === 'manual' && (
-            <div className="space-y-6 animate-fade-in">
-              <label className="block text-base font-black mb-4 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                Paste Text Manually
-              </label>
-              <textarea
-                className="w-full h-48 p-4 border border-gray-300 dark:border-gray-600 font-mono text-sm focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white resize-none"
-                style={{ borderRadius: '3px' }}
-                placeholder="Paste your text here, one line per item..."
-                onChange={handleSourceInput}
-              />
-
-              <div>
-                <label className="block text-base font-black mb-4 text-gray-900 dark:text-gray-100 tracking-tight uppercase letter-spacing-wide">
-                  Starting Cell
-                </label>
-                <input
-                  type="text"
-                  value={cellStart}
-                  onChange={(e) => setCellStart(e.target.value)}
-                  className="w-full p-3 border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 shadow-sm text-gray-900 dark:text-white"
-                  style={{ borderRadius: '3px' }}
-                  placeholder="A1"
-                />
-              </div>
-            </div>
-          )}
-          
-          {/* Start Button Section */}
-          <div className="space-y-3 pt-4 border-t border-gray-300 dark:border-gray-600">
-            {sourceTexts.length > 0 && (
-              <p className="text-xs text-gray-600 dark:text-gray-400 text-center">
-                ✓ {sourceTexts.length} items ready to translate
-              </p>
-            )}
-            <button
-              onClick={handleStartWithDataFile}
-              disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
-              className="w-full px-6 py-2.5 bg-gradient-to-br from-gray-800 to-gray-900 dark:from-gray-100 dark:to-gray-200 text-white dark:text-black disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 border border-gray-700 dark:border-gray-300 hover:border-gray-600 dark:hover:border-gray-400 hover:shadow-md transition-all duration-300 ease-out disabled:transform-none disabled:hover:shadow-sm font-black tracking-tight uppercase letter-spacing-wide text-sm"
-              style={{ borderRadius: '3px' }}
-            >
-              Start Translation →
-            </button>
-          </div>
+        {/* Hidden input mode toggle (preserved for logic) */}
+        <div className="hidden">
+          <button onClick={() => setInputMode('excel')}>Excel Upload</button>
+          <button onClick={() => setInputMode('embedded-json')}>Embedded JSON</button>
+          <button onClick={() => setInputMode('manual')}>Manual Input</button>
         </div>
 
-        {/* Codex / Reference Data Editor */}
-        <div className="mt-8 border-t border-gray-300 dark:border-gray-600 pt-6">
+        {/* Embedded JSON Section */}
+        {inputMode === 'embedded-json' && (
+          <div className="mt-4 space-y-4">
+            <p className="text-sm font-medium text-gray-900 dark:text-gray-100">Embedded JSON Data</p>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-xs text-gray-600 dark:text-gray-300 leading-relaxed" style={{ borderRadius: '3px' }}>
+              Sources JSON data from <code className="bg-gray-200 dark:bg-gray-600 px-1 rounded text-[11px]">data/json/</code> folder.
+            </div>
+            <div className="flex gap-2">
+              <button
+                onClick={() => setInputMode('excel')}
+                className="px-3 py-1.5 text-xs font-medium bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 border border-gray-700 dark:border-gray-300 hover:opacity-90 transition-opacity"
+                style={{ borderRadius: '3px' }}
+              >
+                Switch to Excel
+              </button>
+            </div>
+          </div>
+        )}
+
+        {/* Manual Input Section */}
+        {inputMode === 'manual' && (
+          <div className="mt-4 space-y-3">
+            <p className="text-sm font-medium text-gray-900 dark:text-gray-100">Paste Text Manually</p>
+            <textarea
+              className="w-full h-36 p-3 border border-gray-300 dark:border-gray-600 font-mono text-sm focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all duration-200 bg-white dark:bg-gray-700 text-gray-900 dark:text-white resize-none"
+              style={{ borderRadius: '3px' }}
+              placeholder="Paste your text here, one line per item..."
+              onChange={handleSourceInput}
+            />
+            <div>
+              <label className="block text-xs font-medium mb-1 text-gray-700 dark:text-gray-300">Starting Cell</label>
+              <input
+                type="text"
+                value={cellStart}
+                onChange={(e) => setCellStart(e.target.value)}
+                className="w-32 px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-1 focus:ring-gray-500 transition-all bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                style={{ borderRadius: '3px' }}
+                placeholder="A1"
+              />
+            </div>
+          </div>
+        )}
+
+        {/* Start Button */}
+        <div className="mt-5">
+          {sourceTexts.length > 0 && (
+            <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
+              {sourceTexts.length} items ready to translate
+            </p>
+          )}
+          <button
+            onClick={handleStartWithDataFile}
+            disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
+            className="w-full px-4 py-2.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 border border-transparent hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-150 disabled:cursor-not-allowed font-medium text-sm"
+            style={{ borderRadius: '3px' }}
+          >
+            Start Translation{sourceTexts.length > 0 ? ` — ${sourceTexts.length} lines` : ''}
+          </button>
+        </div>
+
+        {/* Codex — collapsed accordion */}
+        <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
           <div className="flex items-center gap-2">
             <button
               onClick={() => setShowCodexEditor(!showCodexEditor)}
-              className="flex-1 flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 transition-all duration-200"
-              style={{ borderRadius: '3px' }}
+              className="flex-1 flex items-center justify-between py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               <span className="flex items-center gap-2">
-                <span className="font-bold text-gray-900 dark:text-gray-100 text-sm uppercase tracking-wide">
-                  Codex / Reference Data
-                </span>
+                <span className="font-medium">Codex</span>
                 {totalEntries > 0 && (
-                  <span className="px-2 py-0.5 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full">
-                    {totalEntries} entries
+                  <span className="px-1.5 py-0.5 text-[10px] font-medium bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 rounded">
+                    {totalEntries}
                   </span>
                 )}
               </span>
               <svg
-                className={`w-5 h-5 text-gray-500 dark:text-gray-400 transform transition-transform duration-200 ${showCodexEditor ? 'rotate-180' : ''}`}
+                className={`w-4 h-4 text-gray-400 transform transition-transform duration-200 ${showCodexEditor ? 'rotate-180' : ''}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -951,19 +813,17 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            {/* Refresh button */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 refreshCodex();
               }}
               disabled={isLoadingCodex}
-              className="h-[46px] w-[46px] flex items-center justify-center bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
-              style={{ borderRadius: '3px' }}
+              className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors disabled:opacity-50"
               title="Refresh codex"
             >
               <svg
-                className={`w-4 h-4 text-gray-500 dark:text-gray-400 ${isLoadingCodex ? 'animate-spin' : ''}`}
+                className={`w-3.5 h-3.5 ${isLoadingCodex ? 'animate-spin' : ''}`}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -973,115 +833,106 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             </button>
           </div>
           {showCodexEditor && (
-            <div className="mt-3 p-4 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600" style={{ borderRadius: '3px' }}>
+            <div className="mt-2 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700" style={{ borderRadius: '3px' }}>
               <CodexEditor onCodexUpdated={handleCodexUpdated} />
             </div>
           )}
         </div>
 
-        {/* Advanced Configuration */}
-        <details className="mt-6">
-          <summary className="cursor-pointer text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors py-2">
-            Advanced — Style analysis, other input modes, links
+        {/* Advanced */}
+        <details className="mt-4">
+          <summary className="cursor-pointer text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors py-1">
+            Advanced
           </summary>
-          <div className="mt-3 space-y-4">
-            {/* Style Analysis Pipeline */}
+          <div className="mt-2 space-y-3">
             <StyleAnalysisPanel />
 
-            {/* Input Mode Toggle - Made visible in Advanced */}
             <div className="flex justify-center">
-              <div className="bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 p-1 flex transition-colors duration-300" style={{ borderRadius: '3px' }}>
-                <button
-                  onClick={() => setInputMode('excel')}
-                  className={`px-4 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 ${
-                    inputMode === 'excel'
-                      ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
-                  }`}
-                  style={{ borderRadius: '2px' }}
-                >
-                  Excel
-                </button>
-                <button
-                  onClick={() => setInputMode('embedded-json')}
-                  className={`px-4 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 ${
-                    inputMode === 'embedded-json'
-                      ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
-                  }`}
-                  style={{ borderRadius: '2px' }}
-                >
-                  JSON
-                </button>
-                <button
-                  onClick={() => setInputMode('manual')}
-                  className={`px-4 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 ${
-                    inputMode === 'manual'
-                      ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
-                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
-                  }`}
-                  style={{ borderRadius: '2px' }}
-                >
-                  Manual
-                </button>
+              <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 flex" style={{ borderRadius: '3px' }}>
+                {['excel', 'embedded-json', 'manual'].map((mode) => (
+                  <button
+                    key={mode}
+                    onClick={() => setInputMode(mode as any)}
+                    className={`px-3 py-1 text-[10px] font-medium uppercase tracking-wide transition-all duration-200 ${
+                      inputMode === mode
+                        ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
+                        : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                    }`}
+                    style={{ borderRadius: '2px' }}
+                  >
+                    {mode === 'embedded-json' ? 'JSON' : mode === 'excel' ? 'Excel' : 'Manual'}
+                  </button>
+                ))}
               </div>
             </div>
 
-            {/* Links */}
             <div className="flex justify-center gap-2">
               <VideoButton />
               <GitHubButton />
               <CodexButton />
-            {/* Reset Button */}
-            {setShowResetModal && (
-              <button
-                onClick={() => setShowResetModal(true)}
-                className="group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-red-400 dark:hover:border-red-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden"
-                style={{ borderRadius: '3px' }}
-                title="Reset to originals (nuclear reset)"
-              >
-                <svg className="w-4 h-4 relative z-10 group-hover:text-red-600 dark:group-hover:text-red-400 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                </svg>
-                <div className="absolute inset-0 bg-gradient-to-br from-red-100 to-red-200 dark:from-red-900/30 dark:to-red-800/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
-              </button>
-            )}
-          </div>
+              {setShowResetModal && (
+                <button
+                  onClick={() => setShowResetModal(true)}
+                  className="group h-9 w-9 flex items-center justify-center text-gray-400 hover:text-red-500 dark:hover:text-red-400 border border-gray-200 dark:border-gray-700 hover:border-red-300 dark:hover:border-red-500 transition-colors"
+                  style={{ borderRadius: '3px' }}
+                  title="Reset to originals"
+                >
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </button>
+              )}
+            </div>
           </div>
         </details>
 
-        {/* Footer */}
-        <div className="mb-4 text-center">
-          <p className="text-xs text-gray-500 dark:text-gray-400 italic mb-4">
-            Onnozelaer Marketing Works © 2025 - built with Claude Code support
+        {/* Footer — dark mode toggle + version inline */}
+        <div className="mt-6 pt-3 border-t border-gray-200 dark:border-gray-700 flex items-center justify-between">
+          <p className="text-[10px] text-gray-400 dark:text-gray-500">
+            Onnozelaer Marketing Works © 2025
           </p>
-
-          {/* Gradient Accent Block with Playfair Display */}
-          <div className="flex justify-center items-center">
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => {
+                console.log('[SetupWizard] Dark mode button clicked!');
+                toggleDarkMode();
+              }}
+              className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+              aria-label="Toggle dark mode"
+            >
+              {darkMode ? (
+                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
+                </svg>
+              ) : (
+                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                </svg>
+              )}
+            </button>
             <div
-              className="rounded-sm shadow-md relative cursor-pointer overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-xl flex items-center justify-center"
+              className="rounded-sm relative cursor-pointer overflow-hidden flex items-center justify-center"
               onMouseEnter={() => onVersionBadgeHover?.(true)}
               onMouseLeave={() => onVersionBadgeHover?.(false)}
               onClick={() => onVersionBadgeClick?.()}
               title="Click to change gradient"
               style={{
-                width: '120px',
-                height: '28px',
+                width: '80px',
+                height: '20px',
                 backgroundImage: gradientColors.length > 0
                   ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})`
-                  : 'linear-gradient(270deg, #3498DB, #9B59B6, #3498DB)',
+                  : 'linear-gradient(270deg, #6b7280, #9ca3af, #6b7280)',
                 backgroundSize: '200% 200%',
                 animation: 'gradientShift 5s ease-in-out infinite',
               }}
             >
               <span
-                className="text-white font-semibold tracking-wider drop-shadow-lg transition-all duration-500"
+                className="text-white font-medium tracking-wider drop-shadow-sm transition-all duration-500"
                 style={{
-                  fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace',
-                  fontSize: '12px',
+                  fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace',
+                  fontSize: '9px',
                   opacity: showVersionHash ? 1 : 0,
-                  transform: showVersionHash ? 'translateY(0)' : 'translateY(5px)',
-                  letterSpacing: '0.05em'
+                  transform: showVersionHash ? 'translateY(0)' : 'translateY(3px)',
                 }}
               >
                 {VERSION_HASH}
