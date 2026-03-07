@@ -35,6 +35,8 @@ interface UseBulkTranslateReturn {
   bulkProgress: number;
   bulkTotal: number;
   bulkCurrentLine: string;
+  bulkLastSuggestion: string;
+  bulkLastSource: string;
   startBulkTranslate: (model?: ModelTier) => void;
   stopBulkTranslate: () => void;
 
@@ -66,6 +68,8 @@ export function useBulkTranslate({
   const [bulkProgress, setBulkProgress] = useState(0);
   const [bulkTotal, setBulkTotal] = useState(0);
   const [bulkCurrentLine, setBulkCurrentLine] = useState('');
+  const [bulkLastSuggestion, setBulkLastSuggestion] = useState('');
+  const [bulkLastSource, setBulkLastSource] = useState('');
   const [showBulkReview, setShowBulkReview] = useState(false);
   const [bulkResults, setBulkResults] = useState<BulkTranslateResult[]>([]);
   const abortRef = useRef(false);
@@ -92,6 +96,8 @@ export function useBulkTranslate({
     setIsBulkTranslating(true);
     setBulkProgress(0);
     setBulkTotal(sourceTexts.length);
+    setBulkLastSuggestion('');
+    setBulkLastSource('');
     const results: BulkTranslateResult[] = [];
 
     for (let i = 0; i < sourceTexts.length; i++) {
@@ -149,14 +155,30 @@ export function useBulkTranslate({
         if (response.ok) {
           const data = await response.json();
           if (data.suggestion) {
-            results.push({
-              index: i,
-              originalTranslation: wasEmpty ? '' : existingTranslation,
-              opusTranslation: data.suggestion,
-              sourceText: source,
-              speaker,
-              wasEmpty,
-            });
+            const normalizedSuggestion = data.suggestion.trim();
+            const normalizedExisting = (wasEmpty ? '' : existingTranslation).trim();
+
+            if (normalizedSuggestion === normalizedExisting) {
+              console.log(`[Bulk Translate] %c${i+1}/${sourceTexts.length}%c [SKIP - identical] %c"${source.substring(0, 60)}"`,
+                'color: #8b5cf6; font-weight: bold', 'color: #6b7280', 'color: #9ca3af'
+              );
+            } else {
+              console.log(`[Bulk Translate] %c${i+1}/${sourceTexts.length}%c [${speaker || 'narrator'}] %c"${source.substring(0, 60)}"%c → %c"${data.suggestion}"`,
+                'color: #8b5cf6; font-weight: bold', 'color: inherit',
+                'color: #6b7280', 'color: inherit',
+                'color: #10b981; font-weight: bold'
+              );
+              setBulkLastSource(source);
+              setBulkLastSuggestion(data.suggestion);
+              results.push({
+                index: i,
+                originalTranslation: wasEmpty ? '' : existingTranslation,
+                opusTranslation: data.suggestion,
+                sourceText: source,
+                speaker,
+                wasEmpty,
+              });
+            }
           }
         }
       } catch {
@@ -241,6 +263,8 @@ export function useBulkTranslate({
     bulkProgress,
     bulkTotal,
     bulkCurrentLine,
+    bulkLastSuggestion,
+    bulkLastSource,
     startBulkTranslate,
     stopBulkTranslate,
     showBulkReview,

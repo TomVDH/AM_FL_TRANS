@@ -138,7 +138,6 @@ const TranslationHelper: React.FC = () => {
     liveEditMode,
     syncStatus,
     lastSyncTime,
-    setLiveEditMode,
     toggleLiveEditMode,
     syncCurrentTranslation,
     // Batch sync
@@ -539,6 +538,8 @@ const TranslationHelper: React.FC = () => {
     bulkProgress,
     bulkTotal,
     bulkCurrentLine,
+    bulkLastSuggestion,
+    bulkLastSource,
     startBulkTranslate,
     stopBulkTranslate,
     showBulkReview,
@@ -1748,7 +1749,7 @@ const TranslationHelper: React.FC = () => {
                           <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
                           <span>AI</span>
                         </button>
-                        <button onClick={() => { if (loadedFileType !== 'excel') { toast.error('LIVE EDIT requires an Excel file to be loaded'); return; } setLiveEditMode(!liveEditMode); }} disabled={loadedFileType !== 'excel'} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${liveEditMode ? 'text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30' : loadedFileType !== 'excel' ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title={loadedFileType !== 'excel' ? 'Load an Excel file to enable LIVE EDIT' : 'Live Excel Sync'}>
+                        <button onClick={() => { if (loadedFileType !== 'excel') { toast.error('LIVE EDIT requires an Excel file to be loaded'); return; } toggleLiveEditMode(); }} disabled={loadedFileType !== 'excel'} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${liveEditMode ? 'text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30' : loadedFileType !== 'excel' ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title={loadedFileType !== 'excel' ? 'Load an Excel file to enable LIVE EDIT' : 'Live Excel Sync'}>
                           <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${liveEditMode ? syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' : syncStatus === 'synced' ? 'bg-green-500' : syncStatus === 'error' ? 'bg-red-500 animate-pulse' : 'bg-green-500' : 'bg-gray-400'}`} />
                           Live
                         </button>
@@ -1952,50 +1953,10 @@ const TranslationHelper: React.FC = () => {
           <div className="flex justify-between items-center mb-2">
             <div className="flex items-center gap-2">
               <h3 className="text-sm font-bold text-gray-900 dark:text-gray-100 uppercase tracking-wide">Your Translations</h3>
-              {/* Mode Toggle Buttons */}
-              <div className="flex gap-1">
-                <button
-                  onClick={() => setLiveEditMode(false)}
-                  className={`px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide border transition-all duration-200 ${
-                    !liveEditMode
-                      ? 'bg-gray-700 dark:bg-gray-300 text-white dark:text-gray-900 border-gray-600 dark:border-gray-400'
-                      : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700'
-                  }`}
-                  style={{ borderRadius: '2px' }}
-                  title="CSV mode - copy translations for paste into Excel"
-                >
-                  Copy
-                </button>
-                <button
-                  onClick={() => {
-                    if (loadedFileType !== 'excel') {
-                      toast.error('LIVE EDIT requires an Excel file to be loaded');
-                      return;
-                    }
-                    setLiveEditMode(true);
-                  }}
-                  disabled={loadedFileType !== 'excel'}
-                  className={`px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide border transition-all duration-200 ${
-                    liveEditMode
-                      ? 'bg-green-700 text-white border-green-600'
-                      : loadedFileType !== 'excel'
-                        ? 'bg-gray-50 dark:bg-gray-800 text-gray-300 dark:text-gray-600 border-gray-200 dark:border-gray-700 cursor-not-allowed'
-                        : 'bg-gray-50 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border-gray-200 dark:border-gray-700 hover:bg-green-50 dark:hover:bg-green-900/20'
-                  }`}
-                  style={{ borderRadius: '2px' }}
-                  title={loadedFileType !== 'excel' ? 'Load an Excel file to enable LIVE EDIT' : 'LIVE EDIT - saves directly to Excel file'}
-                >
-                  Live
-                </button>
-              </div>
-              {/* Status Indicator */}
               {liveEditMode && (
-                <div className="text-[10px] text-gray-500">
-                  {syncStatus === 'syncing' && <span className="text-yellow-600 animate-pulse">●</span>}
-                  {syncStatus === 'synced' && <span className="text-green-600">●</span>}
-                  {syncStatus === 'error' && <span className="text-red-600">●</span>}
-                  {syncStatus === 'idle' && <span className="text-gray-400">○</span>}
-                </div>
+                <span className="px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-green-700 text-white border border-green-600" style={{ borderRadius: '2px' }}>
+                  Live
+                </span>
               )}
             </div>
           </div>
@@ -2043,7 +2004,7 @@ const TranslationHelper: React.FC = () => {
 
               {/* Action Buttons */}
               <div className="flex items-center gap-1.5">
-                {/* Filter Toggle */}
+                {/* Filter Toggle — both modes */}
                 <button
                   onClick={() => setShowAllEntries(!showAllEntries)}
                   className={`px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide border transition-all duration-200 ${
@@ -2057,27 +2018,60 @@ const TranslationHelper: React.FC = () => {
                   {showAllEntries ? 'All' : 'Modified'}
                 </button>
 
-                {/* Copy with Refs */}
-                <button
-                  onClick={copyWithCellRefs}
-                  className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
-                  style={{ borderRadius: '2px' }}
-                  title="Copy with J column cell refs (e.g., J5: translation)"
-                >
-                  w/ Refs
-                </button>
+                {liveEditMode ? (
+                  <>
+                    {/* Sync to Excel — Live mode only */}
+                    <button
+                      onClick={startBatchSync}
+                      disabled={dirtyCount === 0 || isBatchSyncing}
+                      className={`px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide border transition-all duration-200 ${
+                        isBatchSyncing
+                          ? 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 border-yellow-300 dark:border-yellow-700 animate-pulse'
+                          : dirtyCount > 0
+                            ? 'bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 border-green-300 dark:border-green-700 hover:bg-green-200 dark:hover:bg-green-800/40'
+                            : 'bg-gray-100 dark:bg-gray-700 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-600 cursor-not-allowed'
+                      }`}
+                      style={{ borderRadius: '2px' }}
+                      title={dirtyCount > 0 ? `Sync ${dirtyCount} unsaved translation(s) to Excel` : 'All translations are synced'}
+                    >
+                      {isBatchSyncing ? 'Syncing...' : `Sync to Excel${dirtyCount > 0 ? ` (${dirtyCount})` : ''}`}
+                    </button>
+                  </>
+                ) : (
+                  <>
+                    {/* Copy with Refs — Copy mode only */}
+                    <button
+                      onClick={copyWithCellRefs}
+                      className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
+                      style={{ borderRadius: '2px' }}
+                      title="Copy with J column cell refs (e.g., J5: translation)"
+                    >
+                      w/ Refs
+                    </button>
 
-                {/* Copy Values */}
-                <button
-                  onClick={copyToClipboard}
-                  className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
-                  style={{ borderRadius: '2px' }}
-                  title="Copy values only (paste into Excel starting at first modified cell)"
-                >
-                  Values
-                </button>
+                    {/* Copy Values — Copy mode only */}
+                    <button
+                      onClick={copyToClipboard}
+                      className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
+                      style={{ borderRadius: '2px' }}
+                      title="Copy values only (paste into Excel starting at first modified cell)"
+                    >
+                      Values
+                    </button>
 
-                {/* Reset from File - Only for Excel files */}
+                    {/* Export — Copy mode only */}
+                    <button
+                      onClick={exportTranslations}
+                      className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
+                      style={{ borderRadius: '2px' }}
+                      title="Export translations to CSV file"
+                    >
+                      Export
+                    </button>
+                  </>
+                )}
+
+                {/* Reset from File — Excel files, both modes */}
                 {loadedFileType === 'excel' && (
                   <button
                     onClick={resetFromFile}
@@ -2089,19 +2083,7 @@ const TranslationHelper: React.FC = () => {
                   </button>
                 )}
 
-                {/* Export */}
-                {!liveEditMode && (
-                  <button
-                    onClick={exportTranslations}
-                    className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
-                    style={{ borderRadius: '2px' }}
-                    title="Export translations to CSV file"
-                  >
-                    Export
-                  </button>
-                )}
-
-                {/* Clear */}
+                {/* Clear — both modes */}
                 <button
                   onClick={handleClearWithConfirmation}
                   className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-700 dark:hover:text-red-400 hover:border-red-300 dark:hover:border-red-700 transition-all duration-200"
@@ -2628,8 +2610,23 @@ const TranslationHelper: React.FC = () => {
                     <div className="h-full bg-gradient-to-r from-violet-500 to-purple-500 transition-all duration-300 ease-out rounded-full" style={{ width: `${(bulkProgress / Math.max(bulkTotal, 1)) * 100}%` }} />
                   </div>
                 </div>
-                <div className="text-xs text-gray-500 dark:text-gray-400 truncate">
-                  {bulkCurrentLine || 'Starting...'}
+                {/* Ephemeral translation preview */}
+                <div className="min-h-[4.5rem] relative overflow-hidden rounded-lg border border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50">
+                  {bulkLastSuggestion ? (
+                    <div key={bulkProgress} className="p-3 animate-slide-up-fade">
+                      <div className="text-[11px] text-gray-400 dark:text-gray-500 truncate mb-1">
+                        {bulkLastSource.substring(0, 80)}{bulkLastSource.length > 80 ? '...' : ''}
+                      </div>
+                      <div className="text-sm text-emerald-600 dark:text-emerald-400 font-medium truncate">
+                        → {bulkLastSuggestion}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="p-3 flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
+                      <span className="inline-block w-1.5 h-1.5 bg-violet-500 rounded-full animate-pulse" />
+                      {bulkCurrentLine || 'Starting...'}
+                    </div>
+                  )}
                 </div>
                 <div className="flex justify-end">
                   <button onClick={stopBulkTranslate} className="px-4 py-2 text-sm font-medium text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors rounded">
