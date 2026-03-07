@@ -101,6 +101,7 @@ const TranslationHelper: React.FC = () => {
     originalTranslations,
     hasCurrentEntryChanged,
     getCurrentOriginalValue,
+    getLastSession,
     handleStart,
     handleBackToSetup,
     handleSubmit,
@@ -774,6 +775,12 @@ const TranslationHelper: React.FC = () => {
   if (!isStarted) {
     return (
       <SetupWizard
+        lastSession={getLastSession()}
+        handleResumeSession={(session: any) => {
+          if (session?.fileName && handleExistingFileLoad) {
+            handleExistingFileLoad(session.fileName);
+          }
+        }}
         inputMode={inputMode}
         setInputMode={setInputMode}
         excelSheets={excelSheets}

@@ -16,6 +16,10 @@ import ReferenceDataInfo from './ReferenceDataInfo';
 import { useCodexLanguages } from '../hooks/useCodexLanguages';
 
 interface SetupWizardProps {
+  // Session resume
+  lastSession?: any;
+  handleResumeSession?: (session: any) => void;
+
   // Input mode state
   inputMode: 'excel' | 'embedded-json' | 'manual';
   setInputMode: (mode: 'excel' | 'embedded-json' | 'manual') => void;
@@ -116,7 +120,20 @@ interface SetupWizardProps {
  * 
  * @component
  */
+function formatTimeAgo(timestamp: number): string {
+  const seconds = Math.floor((Date.now() - timestamp) / 1000);
+  if (seconds < 60) return 'just now';
+  const minutes = Math.floor(seconds / 60);
+  if (minutes < 60) return `${minutes}m ago`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.floor(hours / 24);
+  return `${days}d ago`;
+}
+
 const SetupWizard: React.FC<SetupWizardProps> = ({
+  lastSession,
+  handleResumeSession,
   inputMode,
   setInputMode,
   excelSheets,
@@ -178,8 +195,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   const [selectedDataFile, setSelectedDataFile] = React.useState('');
   const [loadingDataFiles, setLoadingDataFiles] = React.useState(false);
 
-  // Codex editor state - expanded by default for better discoverability
-  const [showCodexEditor, setShowCodexEditor] = useState(true);
+  // Codex editor state - collapsed by default for cleaner setup
+  const [showCodexEditor, setShowCodexEditor] = useState(false);
 
   // Reference data availability check - also provides entry count
   const { hasLanguage, isLoading: isLoadingCodex, totalEntries, refresh: refreshCodex } = useCodexLanguages();
@@ -479,9 +496,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               className="h-24 w-auto max-w-full object-contain"
             />
           </div>
-          <h1 className="text-5xl font-black mb-1 tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
-          <p className="text-sm font-medium text-gray-500 dark:text-gray-400 tracking-wide uppercase mb-3">asses.masses edition</p>
-          <p className="text-gray-600 dark:text-gray-400 text-base">Choose your input method below</p>
+          <h1 className="text-2xl font-bold mb-1 tracking-tight text-gray-900 dark:text-gray-100">Translation Helper</h1>
+          <p className="text-xs font-medium text-gray-400 dark:text-gray-500 tracking-wide uppercase">asses.masses edition</p>
           {/* Translation Target Indicator - only show when language is selected */}
           {selectedLanguage && (
             <div className="mt-3 inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 text-xs font-medium" style={{ borderRadius: '3px' }}>
@@ -492,6 +508,33 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             </div>
           )}
         </div>
+
+        {/* Resume Card */}
+        {lastSession && handleResumeSession && (
+          <div className="mb-6">
+            <button
+              onClick={() => handleResumeSession(lastSession)}
+              className="w-full text-left p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition-all duration-150 group"
+              style={{ borderRadius: '3px' }}
+            >
+              <div className="flex items-center justify-between">
+                <div>
+                  <div className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+                    Resume: {lastSession.fileName}
+                    {lastSession.selectedSheet && ` — ${lastSession.selectedSheet}`}
+                  </div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                    {lastSession.translatedCount} / {lastSession.totalLines} translated
+                    {lastSession.timestamp && ` · ${formatTimeAgo(lastSession.timestamp)}`}
+                  </div>
+                </div>
+                <svg className="w-5 h-5 text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </button>
+          </div>
+        )}
 
         {/* Main Form Card - Tighter padding */}
         <div className="bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 p-6 space-y-6 shadow-sm transition-all duration-300" style={{ borderRadius: '3px' }}>
@@ -894,7 +937,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                   Codex / Reference Data
                 </span>
                 {totalEntries > 0 && (
-                  <span className="px-2 py-0.5 text-xs font-medium bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full">
+                  <span className="px-2 py-0.5 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full">
                     {totalEntries} entries
                   </span>
                 )}
@@ -936,17 +979,59 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           )}
         </div>
 
-        {/* Style Analysis Pipeline */}
-        <div className="mt-8">
-          <StyleAnalysisPanel />
-        </div>
+        {/* Advanced Configuration */}
+        <details className="mt-6">
+          <summary className="cursor-pointer text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors py-2">
+            Advanced — Style analysis, other input modes, links
+          </summary>
+          <div className="mt-3 space-y-4">
+            {/* Style Analysis Pipeline */}
+            <StyleAnalysisPanel />
 
-        {/* Video, GitHub, Codex, and Reset Buttons */}
-        <div className="mt-8 mb-4 text-center">
-          <div className="flex justify-center gap-2">
-            <VideoButton />
-            <GitHubButton />
-            <CodexButton />
+            {/* Input Mode Toggle - Made visible in Advanced */}
+            <div className="flex justify-center">
+              <div className="bg-gray-100 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 p-1 flex transition-colors duration-300" style={{ borderRadius: '3px' }}>
+                <button
+                  onClick={() => setInputMode('excel')}
+                  className={`px-4 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 ${
+                    inputMode === 'excel'
+                      ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
+                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                  }`}
+                  style={{ borderRadius: '2px' }}
+                >
+                  Excel
+                </button>
+                <button
+                  onClick={() => setInputMode('embedded-json')}
+                  className={`px-4 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 ${
+                    inputMode === 'embedded-json'
+                      ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
+                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                  }`}
+                  style={{ borderRadius: '2px' }}
+                >
+                  JSON
+                </button>
+                <button
+                  onClick={() => setInputMode('manual')}
+                  className={`px-4 py-1.5 text-xs font-bold tracking-tight uppercase transition-all duration-200 ${
+                    inputMode === 'manual'
+                      ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
+                      : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                  }`}
+                  style={{ borderRadius: '2px' }}
+                >
+                  Manual
+                </button>
+              </div>
+            </div>
+
+            {/* Links */}
+            <div className="flex justify-center gap-2">
+              <VideoButton />
+              <GitHubButton />
+              <CodexButton />
             {/* Reset Button */}
             {setShowResetModal && (
               <button
@@ -962,7 +1047,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               </button>
             )}
           </div>
-        </div>
+          </div>
+        </details>
 
         {/* Footer */}
         <div className="mb-4 text-center">

@@ -105,6 +105,10 @@ export interface TranslationState {
   setLoadedFileType: (fileType: 'excel' | 'json' | 'csv' | 'manual' | '') => void;
   setOriginalTranslations: (translations: string[]) => void;
 
+  // Session persistence
+  getLastSession: () => any;
+  saveLastSession: () => void;
+
   // Functions
   handleStart: () => void;
   handleBackToSetup: () => void;
@@ -482,14 +486,41 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
   const fileInputRef = useRef<HTMLInputElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   
+  // ========== Session Persistence ==========
+
+  const saveLastSession = useCallback(() => {
+    const session = {
+      fileName: loadedFileName,
+      fileType: loadedFileType,
+      selectedSheet,
+      sourceColumn,
+      uttererColumn,
+      startRow,
+      translationColumn,
+      targetLanguageLabel,
+      totalLines: sourceTexts.length,
+      translatedCount: translations.filter(t => t && t !== '' && t !== '[BLANK, REMOVE LATER]').length,
+      timestamp: Date.now(),
+    };
+    localStorage.setItem('lastTranslationSession', JSON.stringify(session));
+  }, [loadedFileName, loadedFileType, selectedSheet, sourceColumn, uttererColumn, startRow, translationColumn, targetLanguageLabel, sourceTexts.length, translations]);
+
+  const getLastSession = useCallback(() => {
+    try {
+      const data = localStorage.getItem('lastTranslationSession');
+      return data ? JSON.parse(data) : null;
+    } catch { return null; }
+  }, []);
+
   // ========== Translation Functions ==========
-  
+
   /**
    * Handle start button click
    */
   const handleStart = useCallback(() => {
     setIsStarted(true);
-  }, []);
+    saveLastSession();
+  }, [saveLastSession]);
   
   /**
    * Handle back to setup button click
@@ -530,7 +561,10 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
       const nextTranslation = hasChanged ? newTranslations[currentIndex + 1] : translations[currentIndex + 1];
       setCurrentTranslation(nextTranslation === '[BLANK, REMOVE LATER]' ? '' : nextTranslation || '');
     }
-  }, [currentIndex, currentTranslation, sourceTexts, sourceTexts.length, translations, hasCurrentEntryChanged, loadedFileName, selectedSheet, startRow, onTranslationSaved]);
+
+    // Save session progress
+    saveLastSession();
+  }, [currentIndex, currentTranslation, sourceTexts, sourceTexts.length, translations, hasCurrentEntryChanged, loadedFileName, selectedSheet, startRow, onTranslationSaved, saveLastSession]);
   
   /**
    * Handle previous button click
@@ -1204,6 +1238,10 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
     setLoadedFileName,
     setLoadedFileType,
     setOriginalTranslations,
+
+    // Session persistence
+    getLastSession,
+    saveLastSession,
 
     // Functions
     handleStart,
