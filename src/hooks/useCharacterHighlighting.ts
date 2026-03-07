@@ -6,11 +6,11 @@ interface CodexEntry {
   english: string;
   dutch: string;
   category?: string;
-  // Phase 2: Enhanced fields
   nicknames?: string[];
   bio?: string;
   gender?: string;
   dialogueStyle?: string;
+  dutchDialogueStyle?: string;
 }
 
 // Legacy alias for backwards compatibility

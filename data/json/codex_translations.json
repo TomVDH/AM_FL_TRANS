@@ -1,8 +1,8 @@
 {
   "version": "2.0",
-  "generated": "2026-03-06T05:09:20.177Z",
+  "generated": "2026-03-06T23:50:42.046Z",
   "description": "Codex translations for Asses & Masses",
-  "totalEntries": 171,
+  "totalEntries": 179,
   "entries": [
     {
       "name": "Angry Ass",
@@ -51,8 +51,8 @@
       ],
       "bio": "Newly hired labourer at Derriere's Factory. Worried about losing his job. Male.",
       "gender": "male",
-      "dialogueStyle": "**Tone:** Anxious, practical\n\n**Vocabulary:** Colloquial, workplace-appropriate with occasional crude terms (\"sleazy\"); uses specific technical language when discussing work equipment and processes\n\n**Verbal tics:** Frequent questioning to express doubt or concern; uses \"What if...\" constructions to voice worries; employs capitalized exclamations for panic moments\n\n**Sentence structure:** Mix of short, clipped statements and longer explanatory sentences; heavy use of questions (both genuine inquiries and rhetorical worry); exclamations during moments of fear or urgency\n\n**Key themes:** Job security and workplace anxiety dominate his concerns; shows paranoia about tricks and deception; focuses on practical logistics and timing; expresses fear of automation replacing workers; demonstrates working-class awareness of economic vulnerability",
-      "dutchDialogueStyle": "**Register**: Informal Dutch using \"je/jij\"; colloquial vocabulary with occasional crude language (\"kan me geen kloten schelen\"); workplace-appropriate technical terms maintained.\n\n**Dutch flavor**: Standard Netherlandic Dutch; uses \"met onze voeten spelen\" (playing with our feet) as creative idiom adaptation; \"Kan me geen kloten schelen\" for dismissive attitude; \"stond in de file\" for traffic.\n\n**Character voice preservation**: Anxious questioning maintained through \"Wat als...\" constructions; panic preserved with extended vowel sounds \"AAAAAAA!!!!\"; practical urgency kept in timing references and work focus.\n\n**Verbal tics in Dutch**: \"Wat als...\" (What if...) consistently translated; exclamatory panic moments with Dutch phonetic equivalents; questioning tone preserved.\n\n**Translation approach**: Generally adaptive rather than literal; creative solutions like \"met onze voeten spelen\" for \"playing tricks\"; maintains working-class directness and economic anxiety themes."
+      "dialogueStyle": "Tone: Anxious, practical\n\nVocabulary: Colloquial and workplace-appropriate, using everyday terms like \"sleazy,\" \"dunno,\" and casual contractions. Mixes fearful exclamations with matter-of-fact observations.\n\nVerbal tics: Repetitive \"what if\" constructions when worried. Uses \"EEEEE!!!!\" for panic. Often asks direct, practical questions. Frequent ellipses and question marks.\n\nSentence structure: Mix of short, clipped statements and longer worried speculation. Heavy use of questions, both rhetorical and direct. Exclamations during high stress, otherwise conversational fragments.\n\nKey themes: Job security and workplace concerns dominate dialogue. Shows pattern of initial suspicion/fear followed by practical problem-solving. Focuses on immediate threats, work efficiency, and potential consequences of automation.",
+      "dutchDialogueStyle": "Register: Informal Dutch using \"je/jij\" forms with colloquial vocabulary. Maintains workplace-appropriate language with occasional crude expressions (\"kan me geen kloten schelen\").\n\nDutch flavor: Standard Netherlandic Dutch without regional dialect markers. Uses common Dutch terms like \"camion\" (truck) and \"file\" (traffic jam). The idiom \"met onze voeten speelt\" creatively translates \"playing a trick.\"\n\nCharacter voice preservation: Anxious \"wat als\" (what if) constructions preserved. Panic screams adapted to Dutch \"AAAAAAA!!!!\" Fear-to-practicality pattern maintained through sentence structure and vocabulary choices.\n\nVerbal tics in Dutch: \"Wat als\" repetition mirrors English \"what if\" pattern. Direct questions and practical observations retained.\n\nTranslation approach: Mostly adaptive with creative solutions for idioms. Maintains character's emotional register while using natural Dutch expressions. Preserves workplace focus and anxiety-driven speech patterns."
     },
     {
       "name": "Wedgie",
@@ -65,8 +65,8 @@
       ],
       "bio": "Longterm worker at Derrerie's Factory. Smokes. Thinks most people are 'idiots'. Does the bare minimum. Female.",
       "gender": "female",
-      "dialogueStyle": "**Tone:** Gruff, impatient\n\n**Vocabulary:** Colloquial and crude, with occasional workplace jargon (\"Animal Handling,\" \"Slaughter or Shipping\"). Uses direct insults and casual profanity.\n\n**Verbal tics:** Repeatedly calls others \"idiot\" as his go-to insult. Frequent use of exclamation points for emphasis and shouting.\n\n**Sentence structure:** Predominantly short, clipped sentences and commands. Heavy use of exclamations and rhetorical questions. Speaks in fragments when agitated (\"*wheeze* Screw it\").\n\n**Key themes:** Work-related complaints, money/payment, capturing donkeys, job security concerns, and workplace hierarchy. Shows blue-collar pride in his specialized skills while expressing frustration with coworkers and situations beyond his control.",
-      "dutchDialogueStyle": "**Register**: Mixed informal/formal - uses \"jij/je\" forms but switches to formal \"uw\" for business transactions. Vocabulary remains colloquial and direct.\n\n**Dutch flavor**: Uses \"Allez dan\" (Belgian/Flemish influence) and \"camion\" (truck) showing Flemish tendencies. Natural Dutch word order and expressions like \"Laat vallen\" (drop it/forget it).\n\n**Character voice preservation**: Gruff tone maintained through short, clipped sentences. Impatience conveyed with direct commands and rhetorical questions. \"Domkop\" effectively replaces \"idiot\" as recurring insult.\n\n**Verbal tics in Dutch**: \"*puf puf*\" replaces \"*wheeze*\", \"domkop\" as go-to insult, frequent use of \"Kom op!\" for urgency.\n\n**Translation approach**: Largely literal but adapts idiomatically where needed. Preserves blue-collar directness and work-focused dialogue. Maintains exclamatory style with double exclamation marks."
+      "dialogueStyle": "Tone: Gruff, impatient\n\nVocabulary: Colloquial and crude, with occasional workplace jargon (\"Animal Handling,\" \"Slaughter,\" \"Shipping\"). Uses direct insults and casual profanity.\n\nVerbal tics: Frequently calls others \"idiot\" - appears three times across dialogue. Uses casual contractions (\"Let's,\" \"We're,\" \"I'm\"). Employs physical expressions like \"*wheeze\" and \"braying.\"\n\nSentence structure: Predominantly short, punchy statements and commands. Heavy use of exclamation points for emphasis. Mixes questions with declarative statements. Favors fragments and direct imperatives (\"Cool it,\" \"Come on!\").\n\nKey themes: Work efficiency and job security, catching/handling animals, money and deals, dismissing others' competence. Shows pride in specialized skills while being pragmatically focused on immediate tasks and compensation.",
+      "dutchDialogueStyle": "Register: Mixed informal/formal Dutch - uses \"jij/je\" forms but switches to formal \"uw\" when handling money/business transactions. Vocabulary remains colloquial with workplace terms intact.\n\nDutch flavor: Neutral Netherlandic Dutch with some Flemish touches (\"Allez dan,\" \"camion\" vs standard \"vrachtwagen\"). Uses natural Dutch constructions like \"domkop\" for \"idiot\" and \"Laat vallen\" for \"Screw it.\"\n\nCharacter voice preservation: Gruff impatience maintained through short, direct commands and exclamations. Physical expressions like \"*puf puf\" replace \"*wheeze\" effectively. Pragmatic focus on work/money preserved.\n\nVerbal tics in Dutch: \"domkop\" as consistent insult translation. Retains contractions and urgent imperatives (\"Kom op!\"). Question structures adapted naturally (\"Dit de ezels?\" maintains choppy speech pattern).\n\nTranslation approach: Primarily adaptive rather than literal, prioritizing natural Dutch flow while preserving personality markers and crude directness."
     },
     {
       "name": "Audience Member David",
@@ -111,7 +111,7 @@
       "name": "Bad Ass",
       "description": "Character",
       "english": "Bad Ass",
-      "dutch": "Waaghalske",
+      "dutch": "Stoere Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Bad",
@@ -125,7 +125,7 @@
       "bio": "A radical that wants to be left alone\n\nPessimistic Edgy Philosophical and Political\n\nIs actually a Human who was turned into a donkey by the Gods by accident. (see Cole Butte below)",
       "gender": "male",
       "dialogueStyle": "Critical theory, philosophical, generally contemporary jaded leftist",
-      "dutchDialogueStyle": "**Register**: Mixed informal/formal - uses \"ge/gij\" (Flemish informal) with occasional \"u\" for distance. Vocabulary remains intellectually elevated (\"onherroepelijk,\" \"transformeren\") mixed with crude colloquialisms (\"godverdomme,\" \"zever\").\n\n**Dutch flavor**: Strong Flemish dialect markers throughout - \"ge zijt,\" \"nie\" (niet), \"gedoe,\" \"Klotegem\" (creative village name). Uses Flemish expressions like \"Over mijn lijk\" and \"Kust mijn kloten.\"\n\n**Character voice preservation**: Cynicism maintained through blunt Flemish directness. Intellectual superiority preserved via formal vocabulary contrasted with dialectal dismissiveness. \"Laat mij gerust\" becomes recurring demand for solitude.\n\n**Verbal tics**: \"Laat mij gerust\" (leave me alone), \"godverdomme\" (fucking), \"zever\" (bullshit), questioning structure maintained for sarcasm.\n\n**Translation approach**: Creative adaptation prioritizing regional authenticity over literal translation. Philosophical terms kept formal while profanity becomes distinctly Flemish, creating authentic Belgian character voice."
+      "dutchDialogueStyle": "REGISTER: Mixed informal/formal - uses \"je/jij\" and \"ge/gij\" (Flemish), shifts to \"u\" when addressing unconscious characters. Academic vocabulary (\"intellectueel beperkt,\" \"filosofische transformatie\") mixed with strong profanity.\n\nDUTCH FLAVOR: Strong Flemish markers throughout - \"ge zijt,\" \"nie\" for \"niet,\" \"'k\" contractions, \"gedoe,\" \"zever.\" Local color with \"Klotegem\" for \"Bumpkin Village.\" Flemish swearing patterns (\"godverdomme,\" \"kust mijn kloten\").\n\nCHARACTER VOICE: Cynicism preserved through dismissive particles \"toch,\" elongated reasoning \"toch verdomme toch niet zomaar.\" Intellectual superiority maintained via complex sentence structures contrasting with blunt rejections.\n\nVERBAL TICS: \"Laat mij gerust\" for \"leave me alone,\" \"kom mij nie af met\" for rejecting arguments, \"'k veronderstel\" for grudging concessions, ellipses preserved for trailing thoughts.\n\nAPPROACH: Adaptive translation prioritizing natural Flemish speech patterns over literal fidelity, cultural localization of place names, profanity intensified to match character energy."
     },
     {
       "name": "Big Ass",
@@ -144,7 +144,7 @@
       "bio": "Always sees the big picture or puts things into perspective. Yearns for bigger opportunity and responsibility; wants to make an impact.",
       "gender": "male",
       "dialogueStyle": "references to size: massive, impressive, significant, make an impact",
-      "dutchDialogueStyle": "**Register**: Mixed formal/informal - uses \"u\" for respectful address to smaller animals (\"kleine Kameraad\"), \"ge/jullie\" in casual speech, maintaining elevated vocabulary (\"gekleineerd,\" \"rantsoenen\") alongside simple terms.\n\n**Dutch flavor**: Strong Flemish tendency with \"ge\" forms, contractions (\"nie\" for \"niet\"), and regional phrasing (\"ik haal hier eerlijk mijn slag thuis\"). Uses distinctly Dutch compound words (\"ezelenhemelvaartszangderzielen\").\n\n**Character voice preservation**: Maintains earnest, commanding tone through formal constructions and size metaphors (\"mega aankondiging,\" \"gigantische vlammen\"). \"Kameraad\" consistently translates \"Comrade.\"\n\n**Verbal tics in Dutch**: Physical exertion \"*oef!*\" for \"*oof!*\", vpunch formatting preserved, repeated references to scale (\"groots,\" \"mega,\" \"kleingeestig\").\n\n**Translation approach**: Adaptive - uses regional Dutch expressions while preserving meaning. Creative compounds and Flemish dialect enhance character authenticity over literal translation."
+      "dutchDialogueStyle": "REGISTER: Mixed formal-informal Dutch. Uses \"ge/u\" (Flemish formal-informal) alongside \"je/jij\", \"Kameraad\" for \"Comrade\". Vocabulary remains elevated with \"groots,\" \"gigantische,\" \"mega.\"\n\nDUTCH FLAVOR: Strong Flemish tendencies: \"ge\" pronouns, \"nie\" negations, \"moest ik\" conditionals, \"aan 't verleggen\" progressive forms. Flemish idioms: \"tot hier met werk,\" \"mijn slag thuis halen.\"\n\nCHARACTER VOICE: Preserves commanding earnestness through exclamatory tone, maintains physical effort sounds \"*oef!\" and grand descriptors. Leadership themes intact via collective language and concern for herd welfare.\n\nVERBAL TICS: \"*oef!\" for \"*oof!\", \"Kameraad\" address maintained, vpunch formatting preserved, \"kleine Kameraad\" as diminutive address form.\n\nTRANSLATION APPROACH: Culturally adaptive—uses regional Flemish rather than standard Dutch, creatively handles wordplay (\"ezelenhemelvaartszangderzielen\"), preserves character essence over literal accuracy."
     },
     {
       "name": "Bitter Ass",
@@ -180,7 +180,7 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Bleak, matter-of-fact\n\n**Vocabulary:** Simple, direct language with occasional metaphorical terms (\"Hell\" for Factory). Uses compound descriptors for technology (\"Tank-Machines,\" \"Flying-Machines\"). Mix of everyday speech and darker imagery.\n\n**Verbal tics:** Ellipses for trailing thoughts and ominous pauses (...). Names self formally. Uses \"us\" when referring to lost herd, maintaining connection to the dead.\n\n**Sentence structure:** Predominantly short, declarative statements. Occasional fragments. Builds tension through simple accumulation rather than complex syntax.\n\n**Key themes:** Loss and isolation, industrial/mechanical threats, death and disappearance, wisdom of the quiet/overlooked, survival warnings. Past trauma informing present observations."
+      "dialogueStyle": "Tone: Somber, resigned\n\nVocabulary: Simple, direct language with occasional poetic undertones. Uses concrete imagery (\"Tank-Machines,\" \"Flying-Machines\") and stark contrasts (\"Factory\" vs \"Hell\").\n\nVerbal tics: Ellipses for trailing thoughts and ominous pauses (...). Tends to reframe or rename things (\"It's called a Factory... But I call it Hell\"). Values quiet wisdom (\"silent ones,\" \"quiet types\").\n\nSentence structure: Mix of short declarative statements and longer, contemplative sentences. Uses fragments for emphasis. Frequent ellipses create hesitant, measured speech rhythm.\n\nKey themes: Loss and survival, the brutality of industrial systems, wisdom found in silence and observation. Speaks of his past carrying books to children, now witnessing others disappear into the \"Factory.\" Offers warnings wrapped as advice."
     },
     {
       "name": "Blunt Ass",
@@ -277,8 +277,8 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**STYLE PROFILE: Child Joey**\n\n**Tone:** Innocent, demanding\n\n**Vocabulary:** Simple childlike language with basic words and concepts. Uses direct, uncomplicated expressions typical of a young child speaking to adults and animals.\n\n**Verbal tics:** Repeats \"donkey\" frequently as direct address. Uses \"Want more, donkey?\" as exact repetition. Employs childish exclamations like \"He he he!\" and \"OWIIIEEEEE!\" Heavy use of ALL CAPS for emotional emphasis.\n\n**Sentence structure:** Short, simple sentences and fragments. Heavy reliance on exclamations and questions. Commands and demands are frequent (\"Get that bucket!\" \"Please donkey!\").\n\n**Key themes:** Expectation of obedience from animals, parroting adult prejudices about donkeys being \"worthless\" and \"stupid,\" basic needs and wants, distress calls for help.",
-      "dutchDialogueStyle": "**DUTCH TRANSLATION STYLE PROFILE: Child Joey**\n\n**Register:** Informal Dutch using \"je/jij\" forms. Simple, accessible vocabulary matching childlike speech patterns. Direct, uncomplicated language structure preserved.\n\n**Dutch flavor:** Standard Netherlandic Dutch. Uses natural Dutch expressions like \"lanterfanten\" (dawdling) and \"in de fik staan\" (on fire). Diminutive \"ezeltje\" consistently used for affectionate/patronizing tone.\n\n**Character voice:** Demanding, innocent personality fully preserved. Emotional intensity maintained through capitalization and exclamations. Childish prejudices and expectations clearly conveyed.\n\n**Verbal tics:** \"Ezeltje\" as consistent address form. Repeated questioning patterns. Exclamations adapted: \"Hi-hi-hi!\" for giggles, \"AAAAAUUUUW!\" for pain, \"*WEEIIIII*\" for distress.\n\n**Translation approach:** Primarily literal with natural Dutch adaptations. Some creative liberties (\"Please donkey!\" becomes \"Kom, ezeltje!\"). Maintains emotional register and urgency throughout."
+      "dialogueStyle": "Tone: Childlike, demanding\n\nVocabulary: Simple, age-appropriate language with basic sentence structure. Uses \"donkey\" repeatedly rather than names. Employs typical child exclamations (\"He he he!\" \"OWIIIEEEEE!\" \"*WAHHH\").\n\nVerbal tics: Frequent use of exclamation points and caps for emphasis. Repeats exact phrases (\"Want more, donkey?\"). Uses onomatopoeia for laughter and pain sounds.\n\nSentence structure: Short, direct sentences. Heavy use of exclamations and questions. Commands and demands dominate (\"Get that bucket!\" \"Please donkey!\"). Fragmented speech when distressed.\n\nKey themes: Expectation of animal obedience, expressing immediate needs and desires, parroting adult prejudices about donkeys being \"worthless\" and \"stupid,\" escalating from playful interaction to life-threatening desperation.",
+      "dutchDialogueStyle": "Register: Informal Dutch throughout using \"je/jij\" forms. Simple, direct vocabulary matching child's developmental level. Commands use imperative forms (\"Kom, ezeltje!\").\n\nDutch flavor: Flemish tendencies with \"Groetmoe/Grootmoe\" (grandmother), \"Luukske\" (diminutive -ske ending), \"lanterfanten\" (dawdle/loiter), \"in de fik staan\" (on fire). Consistent use of diminutive \"ezeltje\" for affection/condescension.\n\nCharacter voice preservation: Maintains demanding, frustrated tone through exclamatory Dutch. Preserves prejudiced language (\"WAARDELOOS,\" \"DOM\"). Child-like directness retained in translation choices.\n\nVerbal tics in Dutch: \"Hi-hi-hi!\" for laughter, \"AAAAAUUUW!\" and \"*WEEIIIII\" for pain/distress. \"Hé!\" for attention-getting. Mixed English borrowing in final desperate plea (\"Please! HELP MIJ!\").\n\nTranslation approach: Generally literal with strategic Flemish localization. Maintains caps for emphasis and emotional escalation patterns."
     },
     {
       "name": "Child Joey Kulan",
@@ -315,7 +315,7 @@
       "nicknames": [],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**TONE:** Passionate, pragmatic\n\n**VOCABULARY:** Mixed register - intellectual/political terminology (\"neoliberal agendas,\" \"commodified,\" \"cyclical predicament\") combined with profanity and colloquialisms. Shifts between formal rhetoric and raw emotional outbursts.\n\n**VERBAL TICS:** Strategic use of profanity for emphasis (\"What the fuck,\" \"Fuck. Of all the times\"). Rhetorical questions to engage audience. Direct imperatives (\"THROW OUT OUR LEADERS,\" \"GET OUT OF HERE, NOW!\").\n\n**SENTENCE STRUCTURE:** Varies dramatically - long, complex political arguments broken by short, punchy declarations. Heavy use of exclamation points during emotional peaks. Fragmented thoughts during crisis moments.\n\n**KEY THEMES:** Political liberation and anti-exploitation rhetoric, identity transformation and authenticity, collective action over individual apathy, dismantling corrupt power structures, human-donkey coexistence through compromise rather than violence."
+      "dialogueStyle": "TONE: Passionate, militant\n\nVOCABULARY: Elevated political discourse mixed with raw profanity - shifts between academic language (\"commodified,\" \"neoliberal agendas,\" \"cyclical predicament\") and street-level expletives (\"What the fuck,\" \"shit all over it\")\n\nVERBAL TICS: Strategic use of profanity for emphasis, rhetorical questions to engage audience, direct imperatives (\"THROW OUT OUR LEADERS,\" \"Don't follow me\")\n\nSENTENCE STRUCTURE: Varied - uses short, punchy statements for impact mixed with longer explanatory passages. Heavy use of exclamations and questions. Employs dramatic pauses and declarative statements.\n\nKEY THEMES: Revolution and resistance, anti-exploitation politics, identity transformation, collective action over individual leadership, critique of authority figures, democratic ideals versus corrupt systems, the relationship between humans and donkeys as political allegory."
     },
     {
       "name": "Cool Ass",
@@ -386,8 +386,8 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone**: Utilitarian, informational\n\n**Vocabulary**: Simple, functional signage language with basic directional and status terminology. Uses standard public notice phrasing.\n\n**Verbal tics**: Repetitive cycling between the same two primary messages: \"The Long Way to the Forest Shrine\" and \"CLOSED FOR REPAIRS.\" Shows obsessive repetition of core phrases with occasional variation.\n\n**Sentence structure**: Brief, declarative statements typical of wayfinding signage. No questions or complex constructions. Follows standard sign formatting conventions with all-caps for warnings/status updates.\n\n**Key themes**: Navigation and accessibility - primarily concerned with directing travelers to destinations (forest shrine, mountain trail to city) while communicating service interruptions. Represents the infrastructure of guidance in a world where pathways are frequently compromised.",
-      "dutchDialogueStyle": "**Register**: Formal signage Dutch using standard public notice language. Maintains institutional tone with proper capitalization conventions (all-caps for warnings).\n\n**Dutch flavor**: Netherlandic standard with archaic/poetic contractions ('t Schrijn, 't Bos) that add folkloric atmosphere. No regional dialect markers, consistent with official wayfinding signage.\n\n**Character voice preservation**: Maintains utilitarian, robotic repetition through identical translations. The obsessive cycling between messages preserved through exact repetition of same Dutch phrases.\n\n**Verbal tics in Dutch**: Core phrases \"De Lange Weg Naar 't Schrijn in 't Bos\" and \"GESLOTEN WEGENS ONDERHOUD\" repeated verbatim, creating mechanical loop effect.\n\n**Translation approach**: Highly literal, prioritizing consistency over variation. The archaic contractions elevate simple signage language while maintaining the character's single-minded functionality."
+      "dialogueStyle": "Tone: Utilitarian, declarative\n\nVocabulary: Formal directional language, bureaucratic terminology, geographic and infrastructural references\n\nVerbal tics: Repetitive cycling between \"The Long Way to the Forest Shrine\" and \"CLOSED FOR REPAIRS\" phrases, consistent all-caps formatting for closure notices\n\nSentence structure: Brief, fragmented noun phrases functioning as labels rather than complete sentences, no punctuation except periods\n\nKey themes: Navigation and wayfinding, accessibility barriers, institutional closures and repairs, geographic landmarks and pathways between locations like shrines, cities, and trails",
+      "dutchDialogueStyle": "Register: Formal institutional Dutch using standard bureaucratic terminology. Maintains official signage language with proper capitalization conventions.\n\nDutch flavor: Netherlandic standard with archaic contractions ('t for \"het\") giving folksy, rural signage authenticity. Uses formal \"wegens\" over casual alternatives, matching official municipal sign language.\n\nCharacter voice preservation: Perfectly maintains utilitarian, declarative tone through consistent institutional phrasing. Repetitive cycling between same two phrases preserved exactly, reinforcing the decrepit sign's limited vocabulary loop.\n\nVerbal tics in Dutch: \"De Lange Weg Naar 't Schrijn in 't Bos\" and \"GESLOTEN WEGENS ONDERHOUD\" as exact recurring expressions. Maintains all-caps formatting for closure notices, preserving visual hierarchy.\n\nTranslation approach: Completely literal, prioritizing authenticity of Dutch municipal signage conventions over creative adaptation. No wordplay attempted - focuses on realistic bureaucratic language."
     },
     {
       "name": "Dirty Ass",
@@ -454,8 +454,8 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**TONE:** Hyped, drug-dependent\n\n**VOCABULARY:** Street slang and DJ/party vernacular with colloquial register. Heavy use of superlatives (\"best damn drug,\" \"freakin' Newbie\") and performance terminology.\n\n**VERBAL TICS:** \"Purple Stuff\" obsessively repeated, \"Booyah/BOOYAAAHH!\" as signature exclamation, \"Hey—Hey—Hey\" stuttered greetings, emphatic ALL CAPS for energy words, multiple exclamation points for excitement.\n\n**SENTENCE STRUCTURE:** Mix of short urgent fragments and longer explanatory sentences. Heavy use of questions when seeking drugs, exclamations dominate performance mode. Repetitive pleading structure when desperate.\n\n**KEY THEMES:** Chemical dependency central to character - cannot perform without \"Purple Stuff.\" DJ performance and crowd energy. Anti-establishment rebellion (\"Fuck Reassignment\"). Party culture and escapism from systematic control.",
-      "dutchDialogueStyle": "**REGISTER**: Highly informal with \"gij/ge\" forms and colloquial vocabulary (\"jong,\" \"zot van\"). Street-level register maintained with casual contractions and slang.\n\n**DUTCH FLAVOR**: Strong Flemish/Belgian dialect markers throughout (\"Hebde gij,\" \"ge weet,\" \"jong\"). Uses regional expressions like \"zot van\" instead of standard Dutch \"dol op.\" Distinctly southern Netherlands/Belgian vernacular.\n\n**CHARACTER VOICE PRESERVATION**: Hyped energy maintained through extended exclamations (\"JOOOOOOOOOW,\" \"JOEEEEEEEEEE\") and ALL CAPS emphasis. Drug obsession preserved with literal \"Paarse Spul\" translation. Performance hype adapted naturally (\"LOSGAAN\" for \"LET'S DO THIS\").\n\n**VERBAL TICS IN DUTCH**: \"Hey—Hey—Hey\" kept identical. \"Booyah\" becomes \"JOEEEEEEEEEE\" with extended vowels. \"Purple Stuff\" consistently \"Paarse Spul.\" Repetitive pleading structure maintained.\n\n**TRANSLATION APPROACH**: Mostly literal with strategic adaptations for natural Dutch flow. \"Fix mij wat\" captures drug-seeking register. Cultural terms like \"Astral Plane\" directly translated as \"Astrale Hiernamaals.\""
+      "dialogueStyle": "TONE: Energetic, party-driven\n\nVOCABULARY: Street slang mixed with DJ/club terminology; heavy use of emphatic capitalization and exclamations\n\nVERBAL TICS: \"Booyah!\" as signature catchphrase; \"Purple Stuff\" as repeated drug reference; \"ASSES\" as crowd address; \"Hey—Hey—Hey\" stutter opening; frequent ALL CAPS for emphasis\n\nSENTENCE STRUCTURE: Mix of short exclamatory bursts and longer hype-building statements; heavy use of exclamation points; rhetorical questions to engage audience; fragments during excited moments\n\nKEY THEMES: Drug dependency (Purple Stuff obsession), DJ performance anxiety, crowd manipulation and hype-building, anti-establishment rebellion (\"Fuck Reassignment\"), party culture and escapism through music",
+      "dutchDialogueStyle": "Register: Highly informal Dutch using \"gij/ge\" (Flemish \"you\"), street-level vocabulary, and casual contractions. No formal register maintained.\n\nDutch flavor: Strong Flemish/Belgian dialect markers throughout (\"gij,\" \"ge weet,\" \"jong\" as address term, \"zot van\" for \"love\"). Distinctly Southern Dutch character voice rather than Standard Netherlands Dutch.\n\nCharacter voice preservation: Maintains energetic party atmosphere through ALL CAPS emphasis and extended vowels. Drug obsession with \"Paarse Spul\" preserved as direct calque. Crowd-hyping energy retained through exclamatory phrasing.\n\nVerbal tics in Dutch: \"Booyah\" becomes extended \"JOOOOOOOOOW/JOEEEEEEEEEE\" with Dutch phonetics. \"ASSES\" cleverly adapted to \"EZELS\" (donkeys) maintaining the insult while fitting show title. \"Purple Stuff\" consistently \"Paarse Spul.\"\n\nTranslation approach: Creative adaptation prioritizing character energy over literalness. Flemish dialect choice adds authentic street credibility matching English slang register."
     },
     {
       "name": "Radio Host Marcos",
@@ -502,7 +502,7 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**STYLE PROFILE: Edgy Ass**\n\n**Tone:** Agitated, passionate\n\n**Vocabulary:** Colloquial with occasional formal phrases (\"creative endeavours\"), straightforward language mixing casual speech with elevated concepts (Machine, Prophet, Humans as proper nouns)\n\n**Verbal tics:** Repetitive incomplete phrases (\"Tell the Humans to support—\"), exclamatory outbursts, tendency to restart and expand statements. Pessimistic refrain about artistic appreciation.\n\n**Sentence structure:** Mix of short exclamations and longer declarative statements. Heavy use of exclamation points. Fragmented speech when emotional or interrupted. Questions express disbelief rather than genuine inquiry.\n\n**Key themes:** Human-donkey conflict and oppression, advocacy for artistic recognition, religious/prophetic skepticism, social justice concerns, creative validation"
+      "dialogueStyle": "Tone: Incredulous, passionate\n\nVocabulary: Colloquial with occasional formal phrasing (\"creative endeavours\"), accessible language with religious/political terminology (\"Prophet,\" \"Machine,\" \"extremists\")\n\nVerbal tics: Repeats \"Tell the Humans to support—\" as interrupted phrase, uses exclamatory expressions of disbelief (\"That's crazy!\" \"It can't be...\"), frequent exclamation points\n\nSentence structure: Mix of short exclamations and longer declarative statements, heavy use of exclamation marks, tends toward fragmented speech when agitated or interrupted\n\nKey themes: Human-donkey relations and conflict, artistic expression and cultural appreciation, political resistance, religious/prophetic imagery, concern for creative recognition and societal indifference to art"
     },
     {
       "name": "Elephant",
@@ -673,7 +673,7 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Authoritative, grandiose\n\n**Vocabulary:** Formal, elevated register with religious and political terminology (\"Vassals,\" \"Manifesto,\" \"holy Mass,\" \"Astral Plane\"). Mixes divine language with organizational directives.\n\n**Verbal tics:** Frequent coughing \"*COUGH*\"; commands beginning with action words (\"SILENCE,\" \"Spread out\"); uses \"we/us\" for divine plurality but switches to \"I\" when establishing identity; repeats key phrases for emphasis.\n\n**Sentence structure:** Mix of short imperatives and longer declarative statements. Heavy use of exclamations for dramatic effect. Speaks in proclamations and instructions rather than conversational dialogue.\n\n**Key themes:** Divine authority and power, organizing revolution against humans, prophetic missions, collaboration between gods and followers, manifesto creation, spreading holy messages to convert the masses."
+      "dialogueStyle": "TONE: Authoritative, grandiose\n\nVOCABULARY: Formal, elevated register with religious/divine terminology (\"Vassals,\" \"Prophet,\" \"holy Mass,\" \"Astral Plane,\" \"godly powers\"). Uses royal plural \"we\" when speaking as collective deity.\n\nVERBAL TICS: Frequent coughing sounds \"*COUGH\", commands beginning with imperatives (\"SILENCE,\" \"Spread out\"), repetitive phrasing across dialogue branches, formal address \"Prophet\" as title.\n\nSENTENCE STRUCTURE: Declarative statements of varying length, exclamatory commands in all caps, occasional rhetorical flourishes. Tends toward proclamations rather than questions.\n\nKEY THEMES: Divine authority and power, revolution against human control, collaboration and unity among followers, manifesto creation, prophetic mission, liberation of oppressed beings from human rule."
     },
     {
       "name": "Grandma Kulan",
@@ -687,8 +687,8 @@
       ],
       "bio": "An old woman who looks after her grandson. She thinks donkeys have no souls and are stupid. After Joey dies in Ep2, she becomes sad and cherishes her memories of their last afternoon visiting donkeys by going to the Zoo, or going to the Circus. Easter Egg: If the Circus, she ultimately gets a job as a janitor at Derriere's Factory as a way to keep herself busy.",
       "gender": "female",
-      "dialogueStyle": "**Tone:** Gentle, melancholic\n\n**Vocabulary:** Simple, affectionate language with endearing terms like \"honey,\" \"darling,\" and \"my darling Joey.\" Uses polite, respectful address (\"Mme. Derriere\"). Shifts from dismissive animal references to reverent spiritual language.\n\n**Verbal tics:** Frequent use of endearments. Repetitive lamenting phrase \"Joey would have loved this/that.\" Wistful sighing and nostalgic reflections.\n\n**Sentence structure:** Mix of short, matter-of-fact statements and longer emotional expressions. Uses rhetorical questions for self-reflection. Exclamations express both surprise and gratitude.\n\n**Key themes:** Joey's memory dominates her speech. Evolution from skepticism about donkeys' intelligence/souls to spiritual awakening. Grief processing through charitable acts and location-based memories. Protective grandmother instincts.",
-      "dutchDialogueStyle": "**Register**: Mixed informal/formal - uses \"schat\" (honey/darling) informally but maintains polite \"u\" forms and \"Mevr.\" for respectful address. Simple, accessible vocabulary throughout.\n\n**Dutch flavor**: Clear Flemish tendencies - \"centen\" (money), \"danku\" (thank you), \"langs te komen\" (visit). Natural Dutch diminutives \"ezeltje\" and \"Luukske\" (Joey) create warmth. \"Muilegem\" as village name has authentic Dutch toponymic feel.\n\n**Character voice preservation**: Gentle melancholy maintained through soft language choices. Endearments translated consistently as \"schat.\" Wistful sighing (\"Zucht...\") and rhetorical questioning preserved exactly.\n\n**Verbal tics in Dutch**: \"Luukske zou dit/van... gevonden hebben\" becomes her recurring lament pattern. Maintains repetitive memorial references.\n\n**Translation approach**: Adaptive localization - \"Bumpkin Village\" becomes \"Muilegem\" (Dutch-sounding place name). Preserves emotional beats while making culturally authentic."
+      "dialogueStyle": "Tone: Gentle, melancholic\n\nVocabulary: Simple, everyday language with affectionate terms of endearment (\"honey,\" \"darling,\" \"my darling Joey\")\n\nVerbal tics: Frequent use of \"darling\" and \"honey\" when addressing others; expressions of longing (\"Joey would have loved this\"); gentle exclamations (\"Oh my! Really?\")\n\nSentence structure: Mix of short, direct statements and longer emotional declarations; uses questions for genuine inquiry rather than rhetoric; frequent exclamations showing surprise or emotion\n\nKey themes: Deep grief over Joey's death; evolving views on donkeys' intelligence and souls; memories of shared experiences; gratitude toward others; practical concerns about safety and prevention of tragedy; transformation from dismissive to appreciative of donkeys",
+      "dutchDialogueStyle": "Register: Mixed informal/formal Dutch. Uses \"schat\" (honey/darling) informally but switches to formal \"u\" with authority figures. Simple, everyday vocabulary matching gentle tone.\n\nDutch flavor: Strong Flemish tendencies - \"kleinzoon Luukske\" (diminutive), \"Muilegem\" (Dutch village name), \"centen\" (informal money), \"Danku\" (Flemish \"thank you\"). Uses Flemish sentence structures and expressions.\n\nCharacter voice preservation: Maintains melancholic gentleness through soft diminutives (\"ezeltje\", \"Luukske\") and preserved exclamations (\"Oh?\"). Emotional weight preserved in longer grief expressions.\n\nVerbal tics in Dutch: \"schat\" replaces English \"honey/darling\", \"Luukske\" consistently replaces \"Joey\", maintains \"Zucht...\" for sighs. Gentle questioning tone preserved.\n\nTranslation approach: Adaptive localization - creates Flemish cultural context while preserving emotional core. Literal for simple statements, creative for cultural references and place names."
     },
     {
       "name": "Greedy Ass",
@@ -706,8 +706,8 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Pushy, condescending\n\n**Vocabulary:** Street-smart colloquial with gambling terminology and mild profanity substitutes. Heavy Brooklyn/New York accent reflected in spelling (\"fuggetaboutit,\" \"ya,\" \"gotta\").\n\n**Verbal tics:** \"Fuggetaboutit!\" as dismissive catchphrase, repeatedly calls others \"Loser!\" as insult, uses \"Sheesh\" and \"Yeesh\" as exasperated expressions.\n\n**Sentence structure:** Mix of short punchy statements and exclamatory questions. Heavy use of exclamation points and question marks. Frequent sentence fragments and interrupted thoughts.\n\n**Key themes:** Gambling and betting obsessed, constantly trying to entice others into wagers with escalating stakes. Shows disdain for conservative players while simultaneously mocking high and low guesses. Focuses on winning, losing, and risk-taking.",
-      "dutchDialogueStyle": "**Register**: Informal Dutch using \"jij/je\" forms with colloquial street language. Vocabulary remains accessible but punchy.\n\n**Dutch flavor**: Netherlandic tendency with expressions like \"jong\" (buddy/pal), \"geen zorgen\" (no worries), and \"hard gaan om hard te winnen\" (go hard to win hard). Uses natural Dutch idioms like \"een gat in haar hand hebben\" (spendthrift) rather than literal translations.\n\n**Character voice preservation**: Maintains pushy, condescending tone through direct imperatives (\"zwijgt!\") and dismissive language. Gambling obsession preserved with betting terminology intact.\n\n**Verbal tics in Dutch**: \"Fuggetaboutit!\" becomes \"Laat maar zitten, jong!\" consistently. \"Loser!\" kept as English loanword \"loser!\" \"Sheesh/Yeesh\" translated to Dutch \"Gadver!\" (yuck/ugh).\n\n**Translation approach**: Creative adaptation prioritizing natural Dutch flow over literal translation. Humor maintained through equivalent Dutch expressions while preserving character's gambling-focused personality."
+      "dialogueStyle": "Tone: Brash, antagonistic\n\nVocabulary: Street-wise colloquial with gambling terminology and mild profanity substitutions (\"oof Jobs,\" \"Fuggetaboutit\"). Uses working-class vernacular and dismissive language.\n\nVerbal tics: \"Fuggetaboutit!\" as primary catchphrase, repeatedly calls others \"Loser!\" as insult, uses \"Sheesh\" and \"Yeesh\" as exclamations. Employs rhetorical questions to pressure others.\n\nSentence structure: Mix of short punchy statements and longer persuasive phrases. Heavy use of exclamation points and question marks. Frequent sentence fragments and interrupted speech patterns.\n\nKey themes: Gambling and betting dominate all conversations. Constantly trying to entice others into wagers, making numerical assessments, and expressing disdain for conservative choices. Shows obsession with risk-taking and winning big.",
+      "dutchDialogueStyle": "Register: Informal Dutch using \"jij/je\" forms with casual, working-class vocabulary. Street-level colloquialisms mixed with standard informal speech.\n\nDutch flavor: Netherlandic tendencies with expressions like \"Laat maar zitten, jong!\" and \"een gat in haar hand hebben.\" Uses \"gadver\" for disgust. No strong dialect markers but maintains Amsterdam-area casual tone.\n\nCharacter voice preservation: Retains antagonistic, pushy gambling personality through dismissive phrases and pressure tactics. Maintains numerical obsession and risk-taking themes effectively.\n\nVerbal tics in Dutch: \"Fuggetaboutit!\" becomes \"Laat maar zitten, jong!\" as primary catchphrase. \"Loser!\" kept as English loanword. \"Sheesh/Yeesh\" translated to \"Gadver!\" Retains exclamatory sentence patterns.\n\nTranslation approach: Adaptive translation prioritizing natural Dutch flow over literal accuracy. Creative solutions like \"een gat in haar hand hebben\" for gambling tendencies. Preserves gambling wordplay and rhetorical questioning structure."
     },
     {
       "name": "Gullible Ass",
@@ -761,14 +761,14 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Enthusiastic, welcoming\n\n**Vocabulary:** Colloquial and casual, using simple everyday language with informal contractions and accessible terms like \"Newbie,\" \"Oh boy,\" and \"awesome.\"\n\n**Verbal tics:** Frequent exclamation points showing constant excitement, uses \"Newbie\" as a consistent term of endearment, employs emphatic capitalization (\"AWESOME\") for emphasis.\n\n**Sentence structure:** Mix of short declarative statements and longer explanatory sentences, occasional questions to engage others, heavy use of exclamatory sentences to maintain upbeat energy.\n\n**Key themes:** Welcomes newcomers with ritualistic procedures, maintains relentless positivity even when exhausted or overwhelmed, focuses on community events and shared experiences, consistently promotes participation in group activities.",
-      "dutchDialogueStyle": "**Register**: Informal Dutch using \"je/jij\" forms with casual vocabulary. Simple, accessible language matching the original's colloquial tone.\n\n**Dutch flavor**: Standard Netherlandic Dutch without regional dialect markers. Uses native Dutch exclamations like \"Jemig\" for \"Oh boy\" and \"Topfun\" for emphatic emphasis rather than direct English loans.\n\n**Character voice preservation**: Maintains enthusiastic tone through exclamation marks and upbeat vocabulary. Preserves the welcoming, ritualistic nature with terms like \"welkomstritueel\" and consistent addressing of newcomers.\n\n**Verbal tics in Dutch**: \"Nieuweling/Nieuwkomertjes\" consistently translates \"Newbie.\" \"Feel The Love\" kept in English as catchphrase. \"TOPFUN\" replaces \"AWESOME\" as emphatic capitalized expression.\n\n**Translation approach**: Moderately adaptive, localizing exclamations and creating Dutch equivalents for emphasis words while preserving key English phrases as character markers."
+      "dialogueStyle": "Tone: Enthusiastic, welcoming\n\nVocabulary: Colloquial and casual, using simple everyday language with childlike excitement. Terms like \"Newbie,\" \"Oh boy,\" and \"AWESOME\" reflect informal, friendly register.\n\nVerbal tics: Exclamation points dominate speech patterns. Uses \"Newbie\" as consistent term of address. Employs intensifiers like \"really great\" and capitalizes \"AWESOME\" for emphasis.\n\nSentence structure: Mix of short declarative statements and exclamations. Frequent use of exclamatory sentences. Asks direct questions. Uses ellipses to show hesitation or physical discomfort.\n\nKey themes: Welcoming newcomers, ritual participation, maintaining positive attitude despite physical exhaustion, promoting community events and experiences, emphasizing belonging and inclusion in the group.",
+      "dutchDialogueStyle": "REGISTER: Informal Dutch using \"je/jij\" forms with casual, accessible vocabulary. Simple everyday language maintains childlike enthusiasm through direct, conversational tone.\n\nDUTCH FLAVOR: Standard Netherlandic Dutch. Uses \"Jemig\" as mild exclamation (Dutch equivalent of \"Oh boy\"). \"Vijver van Vermaak\" shows alliterative wordplay adaptation. No strong regional dialect markers.\n\nCHARACTER VOICE PRESERVATION: Enthusiastic tone maintained through exclamatory sentences and positive vocabulary like \"geweldig\" and \"TOPFUN.\" Physical discomfort shown through ellipses (\"een beetje... stijf\").\n\nVERBAL TICS: \"Nieuweling/Nieuwkomertjes\" consistently translates \"Newbie.\" \"TOPFUN\" replaces \"AWESOME\" as emphasized catchphrase. \"Feel The Love\" kept in English for effect.\n\nTRANSLATION APPROACH: Mostly literal with creative adaptations for wordplay. Preserves enthusiasm while using natural Dutch expressions. Cultural references adapted (Concert venue name) while maintaining original energy and welcoming personality."
     },
     {
       "name": "Hard Ass",
       "description": "Character",
       "english": "Hard Ass",
-      "dutch": "Bikkelharde Ezel",
+      "dutch": "Bikkeharde Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Hard",
@@ -782,13 +782,13 @@
       "bio": "Strong, stoic, and blunt. Willing to make sacrifices to protect the herd.",
       "gender": "male",
       "dialogueStyle": "Short sentence.  Very direct.  (Ernest Hemingway-esque.)",
-      "dutchDialogueStyle": "**Register**: Mixed formal/informal Dutch. Uses \"Kameraad\" (formal revolutionary address) but shifts between \"je/jij\" and occasional \"gij\" (Flemish formal). Vocabulary remains concrete and direct, matching military register.\n\n**Dutch flavor**: Notable Flemish influences with \"gij\" usage and \"meurt hier nog al, man\" (stinks here). Occasional Netherlandic standard Dutch. No strong regional dialect markers beyond these touches.\n\n**Character voice preservation**: Stoic commanding tone maintained through short, declarative Dutch sentences. Revolutionary terminology (\"Revolutie\", \"Kudde\") preserves collective leadership themes. Direct, unembellished language matches English terseness.\n\n**Verbal tics in Dutch**: \"Kameraad\" consistently used. Military \"Ingerukt\" for \"At ease\". Miners' motto creatively adapted: \"Om uit de beerput te klimmen, moet er stront aan de hoeven hangen.\"\n\n**Translation approach**: Generally literal with creative adaptation for idioms. Character essence preserved over word-for-word accuracy."
+      "dutchDialogueStyle": "REGISTER: Mixed formal/informal Dutch. Uses \"jij/je\" forms but maintains \"Kameraad\" for comradeship. Military vocabulary preserved (ingerukt, missie). Formal undertones through deliberate word choices.\n\nDUTCH FLAVOR: Standard Netherlandic Dutch with occasional Flemish touches (\"gij\" in one instance). Creative idiom adaptation - English \"rock bottom\" becomes Dutch \"beerput\" (cesspit) metaphor. Uses authentic Dutch expressions like \"mietje zijn\" (don't be soft).\n\nCHARACTER VOICE: Stoic authority preserved through short, declarative sentences. Ellipses maintained for contemplative pauses. Direct command structure kept intact.\n\nVERBAL TICS: \"Kameraad\" consistently used. Motto creatively adapted to Dutch metaphors rather than literal translation. \"At ease\" becomes \"Ingerukt/Rustig.\"\n\nAPPROACH: Adaptive translation prioritizing natural Dutch flow over literalness. Creative reworking of idiomatic expressions while preserving revolutionary/military register and character essence."
     },
     {
       "name": "Hasty Ass",
       "description": "Character",
       "english": "Hasty Ass",
-      "dutch": "Haastge Ezel",
+      "dutch": "Haastige Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Hasty",
@@ -800,8 +800,8 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Hyperactive, enthusiastic\n\n**Vocabulary:** Colloquial and casual, with simple exclamations (\"Hell yeah,\" \"FUN!\") and friendly slang (\"friendo\"). Uses basic, accessible language without complexity.\n\n**Verbal tics:** Obsessive repetition of \"Let's go!\" and racing invitations. Heavy use of exclamation marks and multiple question marks. Repeats \"Wanna race?\" as a verbal loop. \"Shame! Ah well\" appears twice as a disappointment response.\n\n**Sentence structure:** Predominantly short, punchy sentences and fragments. Frequent exclamations and questions. Uses rapid-fire repetition (\"Let's go let's go let's go!\") to convey urgency and excitement.\n\n**Key themes:** Racing dominates all conversation. Constantly seeks competition, expresses readiness and availability. Shows appreciation for speed and athletic ability in others.",
-      "dutchDialogueStyle": "**Register**: Highly informal Dutch using \"jij/je\" forms, casual vocabulary, and colloquial expressions. Maintains accessible, simple language matching the original's tone.\n\n**Dutch flavor**: Mix of standard Dutch with some creative adaptations. \"Hupsakéé\" replaces \"Hell yeah\" as a Dutch-flavored exclamation. \"Dat kan ik smaken\" (I can appreciate that) uses idiomatic Dutch. Generally Netherlandic rather than Flemish in approach.\n\n**Character voice preservation**: Hyperactive enthusiasm fully retained through exclamation marks, short punchy sentences, and energetic delivery. Racing obsession comes through clearly in repeated \"racen\" invitations.\n\n**Verbal tics in Dutch**: \"Let's go!\" kept in English as loan phrase. \"Jammer!\" for disappointment. Repetitive \"Wil je racen/opnieuw racen?\" maintains the obsessive questioning pattern.\n\n**Translation approach**: Pragmatic mix of literal and adaptive. Some direct English borrowings (\"Let's go\") alongside creative Dutch solutions (\"Hupsakéé\"). Preserves rhythm and energy over strict linguistic accuracy."
+      "dialogueStyle": "Tone: Hyperactive, enthusiastic\n\nVocabulary: Casual, colloquial with simple exclamations (\"Hell yeah!\", \"FUN!\", \"WHEW!\"). Uses friendly slang like \"friendo\" and direct, uncomplicated language.\n\nVerbal tics: Repetitive phrases (\"Let's go!\" appears multiple times), \"Wanna race?\" as constant refrain, \"No? Shame! Ah well. I'll be here. Ready to race. Always ready!\" as exact repeat. Heavy exclamation point usage throughout.\n\nSentence structure: Predominantly short, punchy sentences and fragments. Frequent questions seeking engagement. Exclamations dominate over statements. Uses rapid-fire delivery (\"Let's go let's go let's go!\").\n\nKey themes: Racing obsession, competition, friendship through shared activity, perpetual readiness and availability, complimenting others' speed/abilities.",
+      "dutchDialogueStyle": "Register: Highly informal Dutch using \"jij/je\" forms throughout. Casual vocabulary with simple exclamations and direct language matching the original's accessibility.\n\nDutch flavor: Predominantly Netherlandic Dutch with expressions like \"Hupsakéé\" and \"Dat kan ik smaken!\" Natural Dutch constructions like \"Moest je terug zin hebben\" show regional flavor while maintaining clarity.\n\nCharacter voice preservation: Hyperactive enthusiasm fully retained through exclamation-heavy delivery and short, punchy sentences. Racing obsession and friendly persistence come through clearly in repeated phrases.\n\nVerbal tics in Dutch: Keeps English \"Let's go!\" untranslated as catchphrase. \"Wil je racen?\" becomes consistent refrain. Signature repeat phrase adapted as \"Moest je terug zin hebben ben ik hier. Ik ben altijd klaar om te racen!\"\n\nTranslation approach: Balanced approach—literal for clarity, creative for expressions like \"Hupsakéé\" replacing \"Hell yeah.\" Preserves rapid-fire energy while ensuring Dutch naturalness."
     },
     {
       "name": "Haul Ass",
@@ -825,12 +825,12 @@
       "name": "Haw",
       "description": "Character",
       "english": "Haw",
-      "dutch": "Haaa",
+      "dutch": "HAA",
       "category": "CHARACTER",
       "nicknames": [],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Authoritative, mystical\n\n**Vocabulary:** Elevated formal register with religious and bureaucratic terminology (\"godly burden,\" \"Reassignment,\" \"rectifying,\" \"impediment\"). Mixes cosmic concepts with operational language.\n\n**Verbal tics:** Uses \"we\" exclusively when speaking officially, suggesting collective divine identity. Employs ritualistic phrases like \"Prepare yourself\" and formal transitions (\"Thus,\" \"Ah yes\").\n\n**Sentence structure:** Predominantly declarative statements of varying length. Complex sentences for explanations of cosmic duty, shorter ones for commands and operational directives. Occasional rhetorical flourishes and exclamations for emphasis.\n\n**Key themes:** Divine responsibility and cosmic burden, memory manipulation and soul transfer, strategic operations against humans, the tension between godly non-interference and necessary intervention through chosen avatars."
+      "dialogueStyle": "Tone: Authoritative, mystical\n\nVocabulary: Elevated formal register with religious/cosmic terminology (\"Soul,\" \"godly burden,\" \"holy Revolutions,\" \"Material World\"). Mixes divine proclamations with tactical planning language.\n\nVerbal tics: Uses \"we\" consistently for collective divine identity. Employs ritualistic phrasing like \"Prepare yourself for...\" and \"We look forward to...\" Punctuates grand statements with brief, matter-of-fact tactical observations.\n\nSentence structure: Alternates between elaborate, ceremonial declarations and short, practical exchanges. Uses passive constructions and formal syntax befitting divine authority.\n\nKey themes: Divine duty and cosmic responsibility, memory/soul manipulation, strategic operations against humans, the burden of godhood, material world intervention through chosen vessels. Balances metaphysical concepts with practical scheming."
     },
     {
       "name": "Healthy Ass",
@@ -854,12 +854,12 @@
       "name": "Hee",
       "description": "The Gods",
       "english": "Hee",
-      "dutch": "Hieee",
+      "dutch": "HIE",
       "category": "CHARACTER",
       "nicknames": [],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Formal, divine authority\n\n**Vocabulary:** Elevated, ceremonial language with religious/mystical terminology (\"Vassal,\" \"Soul,\" \"Reassignment,\" \"Astral Plane,\" \"Sacred\"). Uses formal titles and proper nouns for operations and positions.\n\n**Verbal tics:** Repetitive phrasing for emphasis (\"Your Soul will never undergo Reassignment again\" repeated twice). Questions framed as declarations of uncertainty (\"What shall our next move be?\"). Uses \"Operation\" prefix for strategic plans.\n\n**Sentence structure:** Predominantly declarative statements of medium length. Occasional rhetorical questions. Uses formal address patterns (\"Vassal [Title], step forward\").\n\n**Key themes:** Divine judgment and soul assignment, lamenting lost reverence from humans, strategic planning for intervention in mortal affairs, the sacred nature of donkey labor, cosmic authority and universal connection."
+      "dialogueStyle": "Tone: Formal, authoritative\n\nVocabulary: Elevated formal register with mythological and bureaucratic terminology (\"Vassal,\" \"Reassignment,\" \"Astral Plane,\" \"Material World\"); uses operation codenames and divine/cosmic concepts\n\nVerbal tics: Repetitive ceremonial phrasing (\"Step forward,\" \"Soul will never undergo Reassignment again\"); uses \"Operation [Name]\" format for plans; frequently employs \"we\" when speaking as collective deity\n\nSentence structure: Mixture of declarative statements and rhetorical questions; tends toward longer, complex sentences when explaining cosmic concepts; shorter, direct commands during ceremonies; uses parallel structure in explanations\n\nKey themes: Divine authority and cosmic order, the relationship between gods and mortals, ceremonial duties, strategic planning, the decline of worship and respect for their kind, transformation and spiritual advancement"
     },
     {
       "name": "Helpful Ass",
@@ -877,7 +877,7 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Eager, earnest\n\n**Vocabulary:** Colloquial and folksy, with contractions (\"I'da,\" \"whodda,\" \"thunk\") and casual expressions (\"it was a hoot,\" \"I was a goner\")\n\n**Verbal tics:** Repetitive storytelling formula: \"You won't believe what happened next\" followed by \"Do you wanna know?\" Uses \"whodda thunk it\" as signature surprise expression. Frequent exclamation points for enthusiasm.\n\n**Sentence structure:** Mix of short declarative statements and enthusiastic exclamations. Heavy use of questions to engage listener. Simple, direct sentence construction with occasional folksy grammar.\n\n**Key themes:** Personal hardship and job loss, environmental destruction (disappearing fish/trees), gratitude for rescue, desire to share experiences and connect with others through storytelling."
+      "dialogueStyle": "Tone: Earnest, optimistic\n\nVocabulary: Colloquial and folksy, with contractions (\"I'da,\" \"whodda,\" \"thunk\") and casual expressions (\"it was a hoot,\" \"I was a goner\")\n\nVerbal tics: Repetitive storytelling phrases (\"You won't believe what happened next,\" \"Do you wanna know?\"), enthusiastic exclamations, self-deprecating humor about job losses\n\nSentence structure: Mix of short declarative statements and longer narrative passages, frequent use of exclamation points, rhetorical questions to engage listeners, simple past tense storytelling\n\nKey themes: Personal hardship framed positively, cyclical job loss due to environmental destruction, gratitude for help received, desire to share experiences and connect with others, faith in communication solving problems"
     },
     {
       "name": "Historic Sign",
@@ -938,7 +938,7 @@
       "name": "Kick Ass",
       "description": "Character",
       "english": "Kick Ass",
-      "dutch": "Stampgast",
+      "dutch": "Stamp Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Kick",
@@ -952,13 +952,13 @@
       "bio": "Angry and impulsive. The brother of Sick Ass. Carries lots of shame for hurting Humans.",
       "gender": "male",
       "dialogueStyle": "Let's DO THIS THING! \n@#$%&! Emphasizes words in CAPS",
-      "dutchDialogueStyle": "**Register**: Mixed informal/formal Dutch - uses \"jij/je\" with peers but respectful \"u/uw\" with authority figures and sister, maintaining emotional intensity through capitalization and exclamation marks\n\n**Dutch flavor**: Strong Flemish tendencies with \"ge gaat er nie aan dénken,\" \"hè\" questioning particles, and distinctive phrasing. Uses \"Godver!/Godverdomme!\" as natural Dutch profanity alongside preserved \"@#$%&!\" symbols\n\n**Character voice preservation**: Explosive energy maintained through ALL CAPS emphasis, fragmented urgent speech, and protective tone toward \"Snotje\" (affectionate diminutive for Sick Ass). Emotional interruptions with \"—\" preserved\n\n**Verbal tics in Dutch**: \"@#$%&!\" kept untranslated, \"Godver!\" as authentic Dutch expletive, enthusiastic \"GEWELDIG!\" and action calls like \"VECHT ERTEGEN!\"\n\n**Translation approach**: Creative adaptation prioritizing emotional impact over literalism - \"Ready or not, here I come\" becomes Dutch hide-and-seek phrase \"Wie niet weg is, is gezien!\" Character names cleverly localized while preserving wordplay essence"
+      "dutchDialogueStyle": "REGISTER: Mixed informal (jij/je) and formal (u) address forms creating dynamic speech patterns. Colloquial vocabulary with occasional elevated terms like \"kameraden.\"\n\nDUTCH FLAVOR: Strong Flemish influence with \"ge gaat,\" \"nie,\" and \"hè\" as question tag. Uses distinctly Dutch expressions like \"op hoeven en hoeven zitten\" and \"geen kik geven.\" Flemish \"Godver/Godverdomme\" replaces some @#$%& instances.\n\nCHARACTER VOICE: Explosive energy preserved through caps, fragmented exclamations, and urgent questioning patterns. Military undertones maintained with \"kameraden\" terminology. Emotional rawness comes through dialect choices.\n\nVERBAL TICS: @#$%& partially retained, supplemented with \"Godver!\" Name adaptations (SNOT GRIET, STAMP GAST) maintain ASS wordplay. Repeated \"VOOR WAT?!\" preserves English pattern.\n\nTRANSLATION APPROACH: Creative name localization with Dutch vulgar equivalents. Idiomatic rather than literal, prioritizing emotional impact and regional flavor over word-for-word accuracy."
     },
     {
       "name": "Lazy Ass",
       "description": "Character",
       "english": "Lazy Ass",
-      "dutch": "Luie Zak",
+      "dutch": "Luie Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Lazy",
@@ -972,7 +972,7 @@
       "bio": "A lazy donkey. Very easy going, almost surfer-esque in tone, just here for a good time. Died in the Mine collapse accident 1 year before events of the story started. Mate of Sad Ass.\n\nShe is CARE FREE.",
       "gender": "female",
       "dialogueStyle": "\"Boredom is freedom\" \"Let's hang out\" \"Cool.\"",
-      "dutchDialogueStyle": "**Register**: Mixed informal/formal - uses \"ge/u\" (Flemish formal-informal) rather than standard \"je/jij\", creating unique laid-back politeness. Vocabulary remains simple and conversational.\n\n**Dutch flavor**: Strong Flemish dialect markers throughout - \"nie\" for \"niet\", \"'k\" contractions, \"aan 't\" progressive, \"petje/helm\" regional choices, \"doe uw goesting\" (pure Flemish idiom). Distinctly Belgian rather than Dutch.\n\n**Character voice preservation**: Maintains chill surfer vibe through Flemish casual expressions like \"precies\" (I guess), \"schoon/toffe\" (cool), informal contractions. The ge/u combination preserves his polite but detached personality.\n\n**Verbal tics in Dutch**: \"Verveling is Vrijheid\" (direct motto translation), \"weet ge wel?\" (ya know?), \"Later\" replaces \"Peace out\", \"Hey\" retained as-is.\n\n**Translation approach**: Culturally adaptive - uses strong regional Flemish to create authentic local character voice rather than literal translation. Humor preserved through dialect authenticity."
+      "dutchDialogueStyle": "Register: Informal Dutch using \"ge/u\" combination typical of Flemish; casual vocabulary with contracted forms ('k, 't, nie) maintaining laid-back tone.\n\nDutch flavor: Strong Flemish markers throughout - \"aan 't chillen,\" \"doe uw goesting,\" \"schoon petje,\" \"nie\" instead of \"niet.\" Distinctly Belgian rather than Netherlandic approach.\n\nCharacter voice preservation: Maintains dreaminess through contracted speech and casual delivery. Philosophical detachment preserved in \"Verveling is Vrijheid\" motto. Memory confusion and relationships handled with same gentle, accepting tone.\n\nVerbal tics in Dutch: \"Verveling is Vrijheid\" as direct motto translation; \"weet ge wel?\" for \"ya know?\"; \"Later\" for \"Peace out\" keeps casual farewell style.\n\nTranslation approach: Adaptive rather than literal - \"Cool hat\" becomes \"schoon petje\" (Flemish), \"Peace out\" becomes \"Later.\" Preserves conversational flow over word-for-word accuracy."
     },
     {
       "name": "Left Ass",
@@ -1076,7 +1076,7 @@
       ],
       "bio": "Miner in Butte Mines. She grew up in Bumpkin. She was in a relationship with Cole Butte, but dumped him after he got depressed. She is killed by Hard Ass in Ep 2 while trying to get Hard Ass to save her computer from the fire—a computer that Cole made for her.",
       "gender": "female",
-      "dialogueStyle": "**Tone**: Aggressive, volatile\n\n**Vocabulary**: Working-class colloquial with harsh profanity and direct insults (\"piece of shit,\" \"useless donkey,\" \"big dumb donkey ears\")\n\n**Verbal tics**: Excessive capitalization for emotional outbursts, shifts between extreme anger and sudden vulnerability, uses \"donkey\" as both identifier and insult\n\n**Sentence structure**: Sharp commands and exclamations dominate, with emotional fragments during breakdowns. Heavy use of caps lock for intensity. Alternates between barked orders and sobbing confessions.\n\n**Key themes**: Work demands and frustration with laziness, her relationship troubles with Cole, desperation to preserve meaningful possessions (the computer), dreams of escaping to a better life, underlying emotional pain masked by aggression"
+      "dialogueStyle": "Tone: Abrasive, volatile\n\nVocabulary: Coarse colloquial with crude profanity and workplace slang (\"piece of shit,\" \"slackers,\" \"useless donkey\")\n\nVerbal tics: Excessive capitalization for shouting, direct insults targeting laziness/incompetence, switches between aggressive commands and vulnerable emotional outbursts\n\nSentence structure: Sharp imperatives and exclamations dominate, with occasional longer explanatory sentences when emotional. Heavy use of caps lock for emphasis.\n\nKey themes: Work ethic and productivity standards, frustration with perceived laziness, relationship drama with Cole, desperate attachment to possessions (computer), oscillates between tough supervisor persona and emotional vulnerability about personal relationships and unfulfilled dreams of escape."
     },
     {
       "name": "Miner With No Legs",
@@ -1102,8 +1102,8 @@
       ],
       "bio": "Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",
       "gender": "female",
-      "dialogueStyle": "**Tone:** Manipulative, condescending\n\n**Vocabulary:** Corporate-speak mixed with refined formal language; business jargon (\"bottom line,\" \"ends meet,\" \"in the red\"); philanthropic rhetoric masking exploitation\n\n**Verbal tics:** \"My dear\" as patronizing address; \"Progress\" capitalized as sacred concept; exclamation points for dramatic emphasis; rhetorical questions to assert dominance\n\n**Sentence structure:** Mix of polished corporate statements and sharp commands; builds to climactic declarations; uses parallel structure for persuasive effect (\"They deserved...\")\n\n**Key themes:** Business success and profit; positioning herself as benefactor while revealing authoritarian control; dehumanizing others as property or obstacles to \"Progress\"; maintaining facade of respectability while threatening violence",
-      "dutchDialogueStyle": "**Register**: Mixed informal/formal - uses \"je/jij\" but maintains elevated vocabulary (\"geruststellen,\" \"vooruitgang\"). Corporate jargon adapted to Dutch business language (\"business,\" \"best-seller\").\n\n**Dutch flavor**: Standard Netherlandic Dutch with some Flemish influence (\"jobs\" retained over \"banen,\" \"gerief\" for equipment). Natural Dutch constructions like \"ik ben er niet goed van\" for emotional distress.\n\n**Character voice preservation**: Manipulative tone maintained through patronizing \"Liefste\" for \"My dear.\" Corporate-speak mixed with refined language preserved. \"Progress/vooruitgang\" keeps capitalized reverence.\n\n**Verbal tics in Dutch**: \"Liefste\" as condescending address. Parallel structure maintained (\"Ze verdienden...\" repetition). Exclamation points preserved for dramatic effect.\n\n**Translation approach**: Adaptive approach - restructures sentences for natural Dutch flow while preserving rhetorical power and manipulative undertones. Balances accessibility with character's sophisticated vocabulary."
+      "dialogueStyle": "TONE: Manipulative, condescending\n\nVOCABULARY: Corporate formal mixed with patronizing endearments (\"My dear,\" \"precious\"); business jargon (\"bottom line,\" \"ends meet\"); euphemistic language to mask cruelty (\"Progress,\" \"philanthropic\")\n\nVERBAL TICS: Frequent exclamation points; \"My dear/beloved/beautiful\" as possessive modifiers; business puns (\"in the red,\" \"meet your end\"); rhetorical questions for emphasis\n\nSENTENCE STRUCTURE: Declarative statements of authority; commands disguised as polite requests; dramatic short exclamations during confrontation; longer explanatory sentences when justifying actions\n\nKEY THEMES: Business success and profit; ownership and property rights; \"Progress\" as justification for exploitation; false philanthropy and civic duty; dehumanization of donkeys as \"beasts\" and \"property\"; maintaining social order through violence",
+      "dutchDialogueStyle": "Register: Mixed formal-informal Dutch using \"je/jij\" (informal) with elevated business vocabulary (\"business,\" \"vooruitgang\"). Corporate terminology retained in Dutch alongside accessible language.\n\nDutch flavor: Netherlandic standard Dutch with minimal dialect markers. Uses \"Goeiemorgen\" (casual greeting) and \"Muilegemmers\" (creative compound). No strong regional tendencies, maintains neutral accessibility.\n\nCharacter voice preservation: Manipulative tone preserved through false intimacy (\"Liefste\") and euphemistic language (\"vooruitgang\" for Progress). Condescending authority maintained via declarative statements and disguised commands (\"Loop even met me mee\").\n\nVerbal tics in Dutch: \"Liefste\" replaces English endearments; business terms often kept in English (\"business,\" \"best-seller\") for corporate authenticity; \"vooruitgang\" as key ideological term.\n\nTranslation approach: Moderately adaptive—preserves meaning while using natural Dutch phrasing. Some creative elements like \"Muilegemmers\" for \"Bumpkinites.\" Business jargon strategically preserved in English for character authenticity."
     },
     {
       "name": "Mr. Butte",
@@ -1116,14 +1116,14 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**STYLE PROFILE: Mr. Butte**\n\n**Tone:** Weary, conflicted\n\n**Vocabulary:** Colloquial business speak mixed with personal confessions. Uses casual contractions (\"can't,\" \"it's\") and folksy expressions (\"what the hell\"). Alternates between corporate justifications and vulnerable admissions.\n\n**Verbal tics:** Drinking sound effects \"*glug glug*\" appear frequently, indicating alcoholism. Refers to donkeys as both replaceable workers and companions. Uses \"you know?\" as conversational filler.\n\n**Sentence structure:** Mix of short, defeated statements (\"I lost... everything\") and longer explanatory sentences. Uses ellipses for trailing thoughts and self-interruption.\n\n**Key themes:** Business failure and financial pressure, guilt over replacing workers with machines, family obligations (son's education), loneliness and abandonment, seeking meaning in dire circumstances, talking to animals as confidants.",
-      "dutchDialogueStyle": "**DUTCH TRANSLATION STYLE PROFILE: Mr. Vanscheetvelde**\n\n**Register:** Informal Dutch using \"je/jij\" forms. Colloquial vocabulary with business anglicisms (\"business is business,\" \"runnen\"). Casual contractions maintained through natural Dutch equivalents.\n\n**Dutch flavor:** Standard Netherlandic Dutch with minimal dialect markers. Creative name adaptation \"Vanscheetvelde\" adds scatological humor fitting the character's crude circumstances. Uses \"wat kan je doen\" as Dutch equivalent for resignation.\n\n**Character voice:** Weary tone preserved through ellipses and sighs. Vulnerable admissions maintained (\"alles kwijt,\" \"tegen een ezel bezig\"). Corporate-personal speech mix translated naturally.\n\n**Verbal tics:** \"*slok slok*\" replaces \"*glug glug*\" effectively. \"Misschien\" questions preserve uncertainty. Religious references kept literal (\"God stuurt me een Ezel\").\n\n**Approach:** Balanced literal-adaptive translation. Humor enhanced through name localization while preserving original meaning and emotional weight."
+      "dialogueStyle": "Tone: Weary, desperate\n\nVocabulary: Colloquial business speak mixed with casual profanity and self-pity. Uses contemporary references (\"21st century\") and industry jargon (\"recoup,\" \"going under\").\n\nVerbal tics: \"*glug glug\" drinking sounds, rhetorical questions to himself, talking to donkeys as confidants. Frequent sighing and self-deprecating asides.\n\nSentence structure: Mix of short declarative statements and longer explanatory bursts. Uses fragments for emphasis (\"But business is business\"). Questions often directed at himself or the donkey.\n\nKey themes: Business failure and financial ruin, technological progress versus tradition, family obligations (son's education), personal losses (wife leaving), existential despair masked by forced optimism about machinery solving problems.",
+      "dutchDialogueStyle": "Register: Informal Dutch using \"je/jij\" forms with casual, conversational tone. Mix of standard Dutch with business anglicisms (\"business is business,\" \"runnen\").\n\nDutch flavor: Standard Netherlandic Dutch without strong dialectal markers. Retains English business terms where they sound natural in Dutch context. Name change to \"Vanscheetvelde\" adds Dutch authenticity while maintaining comedic undertone.\n\nCharacter voice preservation: Weary, self-pitying tone maintained through \"*zucht\" sighs and elliptical pauses. Drinking sounds adapted to \"*slok slok.\" Self-deprecating asides preserved (\"tegen een ezel bezig\").\n\nVerbal tics in Dutch: \"*slok slok\" for drinking, \"*zucht\" for sighing, rhetorical questions maintained, talking to donkeys as confidants preserved.\n\nTranslation approach: Mostly literal with selective adaptation. Cultural references kept (21st century), personal names localized (Sandy→Smaragdje), business terminology mixed Dutch/English for authenticity."
     },
     {
       "name": "Nice Ass",
       "description": "Character",
       "english": "Nice Ass",
-      "dutch": "Schoon Beest",
+      "dutch": "Lieve Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Nice",
@@ -1137,7 +1137,7 @@
       "bio": "Strong and fast. She loves to plow fields all day. She's energetic, modest, helpful, pure of heart. She would never break a promise.",
       "gender": "female",
       "dialogueStyle": "\"Golly\" \"Jeepers!\" \"Gosh\"",
-      "dutchDialogueStyle": "**Register**: Mixed informal (jij/je) and formal (u) depending on addressee; colloquial vocabulary with gentle alternatives like \"verdikke\" instead of stronger oaths.\n\n**Dutch flavor**: Strong Flemish tendencies with \"efkes,\" \"nie\" negations, \"van aan de slag,\" \"Nonkel,\" and \"bast\" intensifier. Natural Flemish sentence structures and informal contractions.\n\n**Character voice preservation**: Maintains enthusiastic tone through multiple exclamation marks and varied interjections. Preserves wholesome rural character with work ethic references and community solidarity themes.\n\n**Verbal tics in Dutch**: Signature exclamations become \"Oesje!\" \"Jemig!\" \"Jakkes!\" \"Wauw!\" Regular \"Kameraad\" address retained. Promise-keeping language with \"Ik beloof\" and \"belofte.\"\n\n**Translation approach**: Adaptive localization prioritizing natural Flemish speech over literal translation while preserving character essence and enthusiastic personality."
+      "dutchDialogueStyle": "Register: Mixed informal/formal Dutch. Uses \"jij/je\" with peers but \"u\" when addressing elders (Uncle Sad), reflecting respectful wholesomeness. Vocabulary remains accessible and clean.\n\nDutch flavor: Strong Flemish tendencies with \"efkes,\" \"nie\" (instead of \"niet\"), \"nonkel,\" \"van aan de slag,\" and \"bast\" (very). Uses regional expressions like \"verdikke\" and \"jongens toch.\" Shows consistent Flemish grammar patterns.\n\nCharacter voice preservation: Maintains enthusiastic tone through frequent exclamations. Preserves community-focused, optimistic personality. Work ethic and loyalty themes carry through clearly in Dutch phrasing.\n\nVerbal tics in Dutch: \"Kameraad\" consistently for \"Comrade.\" \"Oesje/Jemig\" replace \"Golly/Gosh.\" \"Jakkes\" for \"Yikes.\" \"Ja, ja\" substitutes \"Yuppers.\" Creates equivalent folksy charm.\n\nTranslation approach: Culturally adaptive. \"Fannyside\" becomes \"Muilegem\" (Dutch place name). Natural Dutch flow prioritized over literal word-for-word translation while preserving core meaning and character essence."
     },
     {
       "name": "Official Sign",
@@ -1156,7 +1156,7 @@
       "name": "Old Ass",
       "description": "Character",
       "english": "Old Ass",
-      "dutch": "Oude Zak",
+      "dutch": "Oude Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Old",
@@ -1170,7 +1170,7 @@
       "bio": "Classic Marxist/Leninist leader. Inspires the heard in his lofty speeches.",
       "gender": "male",
       "dialogueStyle": "\"Now where was I... Right... I was lamenting the struggles of our existence.\"\n\nInjustice\nProtest\nPolitics",
-      "dutchDialogueStyle": "**Register**: Mixed formal/informal Dutch. Uses \"u\" and \"gij\" forms showing elevated/archaic register, but switches to \"je\" in intimate moments. Vocabulary remains politically formal (\"onrechtvaardigheden,\" \"aanzien\") mixed with folksy terms.\n\n**Dutch flavor**: Strong Flemish tendencies with \"ge/gij\" forms, \"een klapke doen,\" \"'t\" contractions, and \"camion\" for truck. Uses distinctly Flemish expressions while maintaining universal political terminology.\n\n**Character voice preservation**: Revolutionary passion maintained through capitalization (EZEL MACHT, PROTEST) and exclamatory rhetoric. Formal political language (\"Kameraad,\" \"Kudde\") preserved alongside folksy warmth.\n\n**Verbal tics in Dutch**: \"Kameraad\" for \"Comrade,\" \"Jonge Kameraad\" as address form, \"EZEL MACHT\" for \"ASS POWER.\" Maintains collective \"ons/onze\" emphasis.\n\n**Translation approach**: Adaptive translation prioritizing character voice over literalism. \"ASS POWER\" becomes \"EZEL MACHT,\" creative solutions for wordplay while preserving revolutionary fervor and afterlife transformation."
+      "dutchDialogueStyle": "Register: Mixed formal/informal approach. Uses formal \"u\" and \"gij\" for authority (\"Maak gebruik van uw vaardigheden\") but shifts to informal \"je\" in intimate moments (\"Ben je daar?\"). Revolutionary vocabulary maintained with Dutch equivalents.\n\nDutch flavor: Strong Flemish tendencies with \"ge/gij\" forms, casual expressions like \"een klapke gedaan\" (having a chat), \"slaapkop\" (sleepyhead). Natural Dutch idioms replace English ones while preserving meaning.\n\nCharacter voice preservation: Theatrical passion maintained through emphatic capitalization (EZEL MACHT, PROTEST). Revolutionary fervor conveyed via strong Dutch political terminology. Dramatic pauses and ellipses preserved.\n\nVerbal tics in Dutch: \"Kameraad\" for \"Comrade,\" \"EZEL MACHT\" for \"ASS POWER,\" maintains \"Nu/Waar was ik\" transitional phrases. Repeated \"Ik wou dat\" structure for wishful statements.\n\nTranslation approach: Creative adaptation prioritizing natural Dutch flow while preserving political rhetoric and emotional beats. Character names cleverly localized (DJ Lijpe Ezel)."
     },
     {
       "name": "Old Sign",
@@ -1189,7 +1189,7 @@
       "name": "Peek Ass",
       "description": "Character",
       "english": "Peek Ass",
-      "dutch": "(Peek Ass)",
+      "dutch": "Constat-ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Peek",
@@ -1230,7 +1230,7 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**STYLE PROFILE: Proper Ass**\n\n**Tone:** Enthusiastic, authoritative\n\n**Vocabulary:** Formal British register with polite expressions (\"Good afternoon Chaps!\", \"Splendid!\", \"Never fear\", \"Oh dear\") mixed with revolutionary rhetoric. Uses elevated diction even in urgent situations.\n\n**Verbal tics:** Exclamation points dominate speech. Frequently uses rhetorical questions in groups of three. \"Pardon me!\" as polite interruption. British colloquialisms like \"right good knock\" and \"Chaps.\"\n\n**Sentence structure:** Mix of short declarative commands (\"EVERYBODY GET INSIDE!\") and longer explanatory statements. Heavy use of exclamations. Tends toward proclamations and announcements.\n\n**Key themes:** Animal rights activism, political representation, anti-human sentiment, leadership during crisis situations, formal courtesy maintained even during violent revolution."
+      "dialogueStyle": "Tone: Theatrical, revolutionary\n\nVocabulary: Elevated formal register with British politeness markers (\"Chaps,\" \"Splendid,\" \"Pardon me\") mixed with militant protest language. Uses proper grammar and complete sentences even in crisis situations.\n\nVerbal tics: Polite interjections (\"Good afternoon,\" \"Never fear,\" \"Of course\"), exclamatory announcements, tendency to address groups collectively. Uses \"Ass/Asses\" and \"Human/Humans\" as formal categories.\n\nSentence structure: Declarative statements and rhetorical questions in groups of three. Alternates between courteous conversational tone and bold proclamations. Frequent exclamation points for rallying cries.\n\nKey themes: Animal rights activism, political representation, revolutionary organizing, life-or-death survival, collective action against human oppression. Speaks as movement leader and tactical coordinator."
     },
     {
       "name": "ProphetMachine F",
@@ -1269,8 +1269,8 @@
       ],
       "bio": "Radio interview for Mecha City. Enthusiastic user of Mme. Derriere's beauty products.",
       "gender": "",
-      "dialogueStyle": "**Tone:** Enthusiastic, professional\n\n**Vocabulary:** Standard broadcast media register with occasional colloquialisms (\"get your butts,\" \"gotta say\") and product placement terminology\n\n**Verbal tics:** \"*ksh*\" radio static sound effect, \"That's right\" for emphasis, uses \"butts/glutes\" puns naturally within context\n\n**Sentence structure:** Mix of short declarative statements and longer descriptive sentences. Frequent exclamations for excitement. Uses rhetorical questions during interviews. Transitions smoothly between topics with standard radio segues.\n\n**Key themes:** Weather reports, local entertainment recommendations, enthusiastic product endorsements (especially Mme. Derriere's beauty products), breaking news coverage, maintaining upbeat radio personality even during serious events like the government building occupation.",
-      "dutchDialogueStyle": "**Register**: Informal Dutch using \"je/jij\" forms with standard broadcast vocabulary. Maintains professional radio tone while incorporating casual expressions like \"superblij\" and \"bakken en braden.\"\n\n**Dutch flavor**: Netherlandic Dutch with creative place name adaptations (Mechalen, Groot-Muilegem). Uses established Dutch idioms like \"kurkdroog\" and \"rep je achterwerk\" rather than literal translations.\n\n**Character voice preservation**: Maintains enthusiastic radio personality through exclamatory phrases and smooth topic transitions. Professional warmth comes through in conversational interview style.\n\n**Verbal tics in Dutch**: \"*tsj*\" replaces \"*ksh*\" radio static. \"Mijn favoriet is...\" preserves recommendation style. Body-part humor adapted naturally with \"achterwerk\" and \"billen.\"\n\n**Translation approach**: Adaptive rather than literal, prioritizing natural Dutch flow. Creative wordplay in \"Muntige Muil\" shows localization effort while preserving comedic intent."
+      "dialogueStyle": "Tone: Enthusiastic, professional\n\nVocabulary: Standard broadcast media register with occasional colloquialisms (\"get your butts,\" \"gotta say\") and promotional language. Mixes formal news delivery with casual product endorsements.\n\nVerbal tics: Opens segments with \"*ksh\" radio static sound. Uses emphatic phrases like \"We're over the moon!\" and \"That's right. You heard me.\" Incorporates butt/posterior puns naturally into speech (\"get your butts to,\" discussing \"glutes\").\n\nSentence structure: Mix of short declarative news statements and longer promotional sentences. Frequent exclamations during enthusiastic moments. Uses direct address to listeners (\"listeners,\" \"you heard me\").\n\nKey themes: Product endorsements (especially Mme. Derriere's beauty products), weather/local information, breaking news coverage, and maintaining upbeat radio persona even during serious events.",
+      "dutchDialogueStyle": "Register: Informal Dutch using \"je/jij\" forms with standard broadcast vocabulary. Mixes professional radio language with casual expressions (\"ik moet zeggen\", \"rep je achterwerk\").\n\nDutch flavor: Netherlandic tendencies with creative place name adaptations (Mechalen, Groot-Muilegem, Muntige Muil). Uses typical Dutch idioms like \"bakken en braden\" and \"kurkdroog\" for weather descriptions.\n\nCharacter voice preservation: Maintains enthusiastic radio persona through exclamations (\"superblij!\") and direct listener address. Professional broadcast tone preserved in segment transitions and product endorsements.\n\nVerbal tics in Dutch: \"*tsj\" replaces \"*ksh\" radio static. \"Achterwerk/billen\" maintains butt-related wordplay. Emphatic expressions adapted naturally (\"We zijn superblij!\" for \"over the moon\").\n\nTranslation approach: Creative adaptation prioritizing natural Dutch flow over literal translation. Local flavor enhanced through invented Dutch place names while preserving radio host authenticity."
     },
     {
       "name": "Resentful Ass",
@@ -1288,7 +1288,7 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Militant, agitated\n\n**Vocabulary:** Direct, colloquial speech with clear political messaging. Uses simple but emotionally charged language that builds from observational to declarative statements.\n\n**Verbal tics:** Repeats \"No more rides!!\" as a rallying cry. Uses \"Hey!\" for attention-getting. Tends toward exclamatory punctuation for emphasis.\n\n**Sentence structure:** Mix of short, punchy declarations and longer explanatory statements. Frequently uses exclamations. Shifts from fragmented observations (\"Wait!\" \"Is that a Human?\") to complete protest statements.\n\n**Key themes:** Labor rights and dignity for donkeys, resistance to being used as transportation by humans, organizing collective action against demeaning treatment. Shows awareness of hierarchy (\"Golden Ass\") and community solidarity concerns."
+      "dialogueStyle": "Tone: Defiant, aggrieved\n\nVocabulary: Direct, colloquial speech with simple but emotionally charged language. Uses concrete terms related to physical labor and social hierarchy.\n\nVerbal tics: Repetitive protest chant \"No more rides!!\" with double exclamation points. Tends to backtrack with qualifying statements to avoid offense (\"Of course, Golden Ass, I don't mean to insult you...\").\n\nSentence structure: Mix of short, declarative statements and exclamatory outbursts. Uses rhetorical questions for dramatic effect. Fragments and commands during moments of high emotion.\n\nKey themes: Labor exploitation and dignity, specifically rejecting subservient roles. Focuses on collective resistance while showing deference to authority figures. References physical degradation and loss of community bonds."
     },
     {
       "name": "Right Ass",
@@ -1320,8 +1320,8 @@
       ],
       "bio": "The Ringmaster of the Big City Circus. He's all about bums in seats. He speaks like Job from Arrested Development.",
       "gender": "male",
-      "dialogueStyle": "**STYLE PROFILE: Ringmaster Rico**\n\n**Tone:** Theatrical, bombastic\n\n**Vocabulary:** Showbiz colloquial mixed with circus vernacular and over-the-top superlatives (\"visually spectacular,\" \"death-defying,\" \"JUMBO serving\")\n\n**Verbal tics:** Heavy use of ALL CAPS for emphasis, frequent exclamation points, rhetorical questions followed by immediate answers (\"Will it be dangerous?\" \"Yes!\"), animal puns (\"monkeying around,\" \"ape-titude,\" \"not lyin'\"), addresses audience directly (\"folks,\" \"one and all\")\n\n**Sentence structure:** Mix of short punchy declarations and elaborate build-ups, heavy use of exclamations, dramatic pauses indicated by ellipses, lists of escalating adjectives\n\n**Key themes:** Promoting acts and managing audience expectations, self-promotion, damage control when performances go wrong, emphasizing spectacle and entertainment value, financial concerns disguised as showmanship",
-      "dutchDialogueStyle": "**DUTCH TRANSLATION STYLE PROFILE: Ringmaster Rico**\n\n**Register:** Informal Dutch using \"jullie\" address, colloquial vocabulary mixed with theatrical terms. Maintains accessible showbiz language rather than elevated formal register.\n\n**Dutch flavor:** Strong Flemish tendencies - \"Mechalen\" for \"Mecha City,\" \"kanjer van een show,\" \"vlees in de kuip,\" \"cent terug.\" Uses distinctly Belgian expressions and constructions throughout.\n\n**Character voice:** Preserves bombastic energy through exclamatory Dutch, maintains ALL CAPS emphasis, keeps rhetorical question-answer pattern (\"Wordt het gevaarlijk?\" \"Jazeker!\"). Theatrical flair translated into equivalent Dutch showmanship language.\n\n**Verbal tics:** Translates puns creatively (\"aap-itude\" for \"ape-titude\"), keeps audience addresses (\"mensen,\" \"jongens\"), maintains escalating superlatives in Dutch syntax.\n\n**Translation approach:** Adaptive rather than literal - prioritizes maintaining character energy and humor over word-for-word translation. Cultural references localized to Belgian context."
+      "dialogueStyle": "Tone: Theatrical, manic\n\nVocabulary: Showbiz colloquialisms mixed with carnival barker patter. Uses entertainment industry jargon (\"bums in seats,\" \"fills the stage\") and circus-specific terms. Frequent puns and wordplay related to animal acts.\n\nVerbal tics: Excessive capitalization for emphasis (FIRE!, YES!, JUMBO!). Rhetorical question-and-answer format (\"Will it be dangerous?\" \"Yes!\"). Classic circus phrases (\"one and all,\" \"ladies and gentlemen\" style intros). Self-referential asides.\n\nSentence structure: Mix of dramatic short bursts and elaborate build-ups. Heavy use of exclamation points. Ellipses for dramatic pauses. Fragmented thoughts that crescendo.\n\nKey themes: Audience engagement, spectacle promotion, damage control when acts go wrong, self-aggrandizement, commercial concerns (sponsors, no refunds).",
+      "dutchDialogueStyle": "Register: Informal Dutch using \"jullie\" address. Mix of colloquial speech (\"Jongens, jongens\") with elevated showbiz vocabulary. Theatrical but accessible language level.\n\nDutch flavor: Netherlandic tendencies with standard Dutch idioms (\"Nooit van zijn leven,\" \"welk vlees je in de kuip hebt\"). Some Flemish touches (\"Mechalen\" for Mecha City). Uses distinctly Dutch expressions like \"kanjer van een show.\"\n\nCharacter voice: Maintains theatrical bombast through capitalization (EEN SHOW, JUMBO, VUUR). Preserves manic energy with exclamation points and dramatic pauses. Self-aggrandizing tone intact.\n\nVerbal tics: Retains \"JAWEL!/JAZEKER!\" pattern, \"JUIST?!\" for emphasis. Uses \"mensen\" as audience address. Maintains rhetorical question structure.\n\nTranslation approach: Creative adaptation prioritizing flow over literalism. Animal puns adapted (\"aap-itude\"). Some English phrases left untranslated when Dutch equivalents would lose punch."
     },
     {
       "name": "Risky Ass",
@@ -1345,7 +1345,7 @@
       "name": "Sad Ass",
       "description": "Character",
       "english": "Sad Ass",
-      "dutch": "Triestigaard",
+      "dutch": "Triestige Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Sad",
@@ -1358,8 +1358,8 @@
       ],
       "bio": "Sad. Mourning his lover Lazy who died in the mines. Doesn't have direction in life anymore. He was a Mine donkey until he was sold to the Farm after Lazy died, unable to work anymore. He can be erratic and impulsive, taking out his anger on a car and accidentally starting the major fire of Ep2, or leaving the group behind in Ep5 from the Zoo.",
       "gender": "male",
-      "dialogueStyle": "Written as Eeyore\n\"Oh hullo...\"\n*whimper*",
-      "dutchDialogueStyle": "**Register**: Informal Dutch using \"je/jij\" forms, simple everyday vocabulary matching the melancholic tone. Occasional diminutives like \"hallo'kes\" and \"Luitje\" soften the register.\n\n**Dutch flavor**: Strong Flemish influence with \"ge/gij\" pronouns, contractions like \"nie\" (niet), \"da\" (dat), and typical Belgian phrasing. Regional markers include \"zien dat ik\" (make sure I don't) and \"uw Nonkel\" address form.\n\n**Character voice preservation**: Maintains hesitant delivery through ellipses, preserves self-deprecating tone with \"uw Nonkel Triestigaard.\" Melancholic register stays consistent with longer, trailing sentences.\n\n**Verbal tics in Dutch**: \"*boe-hoe-hoe-hoe*\" and \"*snik*\" for whimpers, \"*zucht*\" for sighs. Dramatic outbursts become \"HEEEEEEEEEE HAAAAAAAAAAA!!!!\" \n\n**Translation approach**: Primarily literal with cultural adaptation for Dutch animal sounds and expressions. Character names translated as compounds (Triestigaard, Betweter, Luitje) while maintaining emotional authenticity."
+      "dialogueStyle": "Written as Eeyore\n\"Oh hullo...\"\n*whimper",
+      "dutchDialogueStyle": "Register: Informal Dutch using \"je/ge\" (Flemish), conversational vocabulary with occasional poetic touches. Simple, accessible language matching the melancholic tone.\n\nDutch flavor: Strong Flemish markers - \"ge zegt,\" \"nie\" (instead of \"niet\"), \"da 't,\" \"Hudo\" (outhouse). Uses Flemish diminutives like \"hallo'kes\" and \"Luijetje.\" Regional speech patterns preserved throughout.\n\nCharacter voice preservation: Melancholy maintained through elongated interjections (\"Ohh,\" \"boehoehoehoe\"), trailing ellipses, and self-referential \"Nonkel Triestigaard.\" Defeated tone comes through incomplete thoughts and hesitant phrasing.\n\nVerbal tics in Dutch: \"*whimper\" becomes \"*boe-hoe-hoe-hoe\" or \"*snik,\" \"*sigh\" stays \"*zucht.\" Preserves questioning uncertainty and self-doubt patterns. Character names in parentheses maintain English originals.\n\nTranslation approach: Culturally adaptive - uses Flemish dialect authentically while preserving emotional beats. Literal where possible but prioritizes natural Dutch flow over word-for-word accuracy."
     },
     {
       "name": "Sandy Butte",
@@ -1451,8 +1451,8 @@
       ],
       "bio": "Generally unwell from working in the mine, and later in the rain. Ends up being the chosen Vassal for the Gods to become the sacred Golden Ass.",
       "gender": "female",
-      "dialogueStyle": "*cough*\n\n*cough cough*\n\nEveryone interprets and understands the coughs - mostly yes/no answers.",
-      "dutchDialogueStyle": "**Register**: Not applicable - character communicates entirely through non-verbal respiratory sounds transcending linguistic formality levels.\n\n**Dutch flavor**: Translators alternate between \"*HOEST*\" (standard Dutch cough onomatopoeia) and \"*KUCH*\" (more colloquial variant), suggesting Netherlandic Dutch base with stylistic variation. No dialect markers or regional expressions used.\n\n**Character voice preservation**: Perfect preservation of non-verbal communication system. Binary cough logic maintained: single coughs for affirmation, double coughs for emphasis, extended sequences for complex communication. Silent pauses (\"...\") retained identically.\n\n**Verbal tics in Dutch**: \"*HOEST*\" and \"*KUCH*\" used interchangeably as Dutch equivalents for \"*COUGH*\". Pattern consistency maintained within episodes but varies between episodes.\n\n**Translation approach**: Direct onomatopoeic substitution. Completely literal approach preserving exact cough counts and timing. One translation error noted in E2 with doubled cough sequence."
+      "dialogueStyle": "*cough\n\n*cough cough\n\nEveryone interprets and understands the coughs - mostly yes/no answers.",
+      "dutchDialogueStyle": "Register: Not applicable - character communicates entirely through non-verbal cough sounds, bypassing traditional Dutch linguistic registers.\n\nDutch flavor: Translator alternates between \"*HOEST\" (standard Netherlandic Dutch onomatopoeia) and \"*KUCH\" (more colloquial variant), suggesting deliberate variety to avoid monotony while maintaining Dutch authenticity.\n\nCharacter voice preservation: Sickly, resigned tone perfectly maintained through consistent onomatopoetic translation. Cough patterns and frequency variations (*HOEST HOEST for emphasis, up to five repetitions) preserve original communication system integrity.\n\nVerbal tics in Dutch: \"*HOEST\" and \"*KUCH\" function as complete linguistic units. Ellipses (\"...\") retained for silence beats. Repetition patterns maintain semantic meaning structure.\n\nTranslation approach: Purely adaptive approach using Dutch cough sounds. Creative consistency through onomatopoeia variation prevents repetitive reading while preserving character's unique nonverbal communication method."
     },
     {
       "name": "Sign",
@@ -1481,7 +1481,7 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**TONE:** Anxious, earnest\n\n**VOCABULARY:** Simple, colloquial language with basic sentence structures. Uses familiar terms like \"Foals\" for children and \"Big Ass\" as casual address. Direct, unpretentious word choices.\n\n**VERBAL TICS:** Frequent use of ellipses indicating hesitation or trailing thoughts. Tends to ask urgent questions, especially when seeking help or information. Uses \"But...\" to start contradictory statements.\n\n**SENTENCE STRUCTURE:** Mix of short, clipped statements and longer explanatory sentences. Heavy use of questions and exclamations showing emotional urgency. Often speaks in fragments when nervous or excited.\n\n**KEY THEMES:** Survival and escape from oppression. Focuses on immediate dangers, practical concerns about dealing with humans, and coordinating resistance efforts. Shows protective concern for other characters."
+      "dialogueStyle": "Tone: Urgent, anxious\n\nVocabulary: Colloquial with occasional naive/childlike elements (\"stories for Foals\"), mixed with direct confrontational language\n\nVerbal tics: Frequent questions, especially tag questions (\"but how?\"); uses \"Psst!\" for secretive communication; employs ellipses for trailing uncertainty\n\nSentence structure: Mix of short, clipped statements and longer explanatory sentences; heavy use of questions and exclamations; sentence fragments for emphasis (\"Big Ass?\")\n\nKey themes: Resistance against human oppression, rescue missions and escape scenarios, expressing feelings of devaluation and mistreatment, giving tactical advice and warnings, food/survival concerns, distinguishing reality from fantasy"
     },
     {
       "name": "Sleepy Ass",
@@ -1518,13 +1518,13 @@
       "bio": "Well-intentioned. Slow moving due to having arthritis. Timid, weary, unconfident. Looks up to Trusty.",
       "gender": "male",
       "dialogueStyle": "stutters every word that has a\nb-b-b\np-p-p",
-      "dutchDialogueStyle": "**Register**: Mixed formality - uses both informal \"je/jij\" and formal \"u/uw\" inconsistently, suggesting social uncertainty. Simple, accessible vocabulary matching original's colloquial tone.\n\n**Dutch flavor**: Standard Netherlandic Dutch with occasional Flemish touches (\"nie\" instead of \"niet\"). Uses Dutch idioms like \"vooruit met de geit\" and \"onder mijn hoeven geven\" to maintain local color.\n\n**Character voice preservation**: Anxiety and earnestness preserved through hesitant phrasing and apologetic tone. Self-doubt comes through in trailing sentences and frequent \"sorry\" usage.\n\n**Verbal tics in Dutch**: Stuttering pattern maintained on B/P sounds (\"b-b-b\", \"p-p-p\"). \"P-phew\" becomes \"oe-oef\" for relief. Name consistency: \"Trouwe Zak\" for Trusty, \"Betweter\" for Smart Ass.\n\n**Translation approach**: Primarily adaptive - prioritizes character voice over literal accuracy. Creative solutions for wordplay while preserving emotional beats and speech impediment authenticity."
+      "dutchDialogueStyle": "Register: Mixed formal/informal - uses both \"je/jij\" and \"u\" inconsistently, suggesting translator uncertainty. Generally informal vocabulary with polite markers like \"alsjeblieft.\"\n\nDutch flavor: Standard Netherlandic Dutch with occasional Flemish tendencies (\"nie dat\" instead of \"niet dat\"). Uses Dutch idioms like \"vooruit met de geit\" and \"onder mijn hoeven geven.\" Natural Dutch expressions rather than literal translations.\n\nCharacter voice preservation: Maintains anxious, earnest tone through hesitant phrasing and self-doubt expressions. Preserves reverence for \"Trouwe (Zak)\" and physical limitation references. Emotional vulnerability comes through clearly.\n\nVerbal tics in Dutch: Stuttering pattern preserved on B/P sounds (b-b-b, p-p-p). \"*oe-oef\" for \"*p-phew.\" Maintains ellipses and fragmented speech. Tag questions adapted naturally (\"T-t-toch, T-t-trouwe?\").\n\nTranslation approach: Adaptive rather than literal - prioritizes natural Dutch flow while preserving character essence. Creative solutions for wordplay and community terms (\"kameraden\")."
     },
     {
       "name": "Smart Ass",
       "description": "Character",
       "english": "Smart Ass",
-      "dutch": "Betweter",
+      "dutch": "Slimme Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Smart",
@@ -1537,7 +1537,7 @@
       "bio": "Self-centred, egotistical, strategist. Always has another backup plan. Always looking out for her own (either self or group)",
       "gender": "female",
       "dialogueStyle": "\"One...\nTwo...\nThree...\nEasy.\"\nFuck!\nCan't two jennets joke around?",
-      "dutchDialogueStyle": "**REGISTER:** Informal Dutch throughout - consistent \"je/jij\" usage, crude vocabulary maintained (\"godverdomme,\" \"bek dicht\"). Colloquial tone preserved with strategic terminology.\n\n**DUTCH FLAVOR:** Strong Flemish tendencies - \"nie\" instead of \"niet,\" \"ge/gij\" forms, \"smaakt\" for \"appreciates.\" Local place name \"Muilegem\" for \"Fannyside.\" Working-class vernacular.\n\n**CHARACTER VOICE:** Commanding tone intact through exclamatory caps and aggressive question marks. Abrasive personality maintained via direct insults and crude language. Strategic planning voice preserved.\n\n**VERBAL TICS:** \"POEPSIMPEL\" as consistent translation for \"Easy\" - more colorful than literal. Numbered sequences \"ÉÉN/TWEE/DRIE\" maintained. \"Kameraad\" for group dynamics. Repeated phrase structure for \"JOBS TERUG TE GEVEN.\"\n\n**APPROACH:** Adaptive translation prioritizing character voice over literalness. Creative solutions like \"Poepsimpel\" enhance Dutch flavor while preserving dismissive tone. Flemish dialect adds regional authenticity to working-class animal characters."
+      "dutchDialogueStyle": "Register: Informal Dutch using \"je/jij,\" direct colloquial language. Profanity translated literally (\"godverdomme,\" \"bek dicht\"). Mix of everyday vocabulary with planning terminology.\n\nDutch flavor: Strong Flemish tendencies - \"nie\" instead of \"niet,\" \"gij/ge\" forms, \"smaakt\" for \"appreciates.\" Regional vocabulary like \"verbrod\" and \"crossen.\" Natural Flemish sentence structures and expressions.\n\nCharacter voice preservation: Commanding tone maintained through short imperatives and exclamations. Strategic planning sequences preserved identically. Exasperation conveyed through rhetorical questions and direct insults.\n\nVerbal tics in Dutch: \"Poepsimpel\" consistently replaces \"Easy.\" Numbered sequences \"ÉÉN... TWEE... DRIE...\" maintained exactly. \"Jobs\" kept as English loanword rather than \"banen.\"\n\nTranslation approach: Literal preservation of structure with Flemish localization. Character names adapted to Dutch equivalents. Planning rhetoric and hierarchy themes translated directly while maintaining regional authenticity."
     },
     {
       "name": "Smelly Ass",
@@ -1561,7 +1561,7 @@
       "name": "Sturdy Ass",
       "description": "Character",
       "english": "Sturdy Ass",
-      "dutch": "Stoere Ezel",
+      "dutch": "Stevige Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Sturdy",
@@ -1574,7 +1574,7 @@
       "bio": "Overprotective mother. She is pair-bonded with Old Ass. She lost her first daughter Lazy in the mine. She is racist against Machines. Can be overbearing a strict.\n\nIn the end, she changes her ways and spreads the story of asses.masses to other farm animals towards starting a greater revolution.",
       "gender": "female",
       "dialogueStyle": "Pious\nThe Gods\nThe Ancestors",
-      "dutchDialogueStyle": "**Register**: Mixed formal/informal - uses \"u/uw\" with foal ({$NewName}) showing maternal authority, \"ge/gij\" in emotional moments, \"je\" with peers. Elevated vocabulary (\"Astrale Hiernamaals,\" \"ezelenhemelvaartszangderzielen\") maintains ideological gravitas.\n\n**Dutch flavor**: Strong Flemish tendencies - \"ge/gij\" forms, contractions (\"'t,\" \"nie\"), typical Flemish syntax. Some creative compounds (\"ezelenhemelvaartszangderzielen\") and regional expressions (\"ligt in het vergiet\").\n\n**Character voice preservation**: Revolutionary maternal tone preserved through religious language mixing with practical concerns. Anti-Machine obsession maintained with compound descriptors.\n\n**Verbal tics**: \"Kameraad\" for \"Comrade,\" \"Bij de Goden!\" for \"By the Gods!\", \"EZEL MACHT!\" for \"Ass Power!\" - direct translations maintaining revolutionary flavor.\n\n**Translation approach**: Primarily adaptive - creates new compounds, uses regional dialect for authenticity, maintains religious/political terminology while making it naturally Dutch."
+      "dutchDialogueStyle": "Register: Mixed formal/informal Dutch. Uses \"u/uw\" for respect and authority, \"ge/gij\" for Flemish flavor, \"je\" for casual moments. Elevated vocabulary (\"Astrale Hiernamaals,\" \"ezelenhemelvaartszangderzielen\") mixed with colloquial speech.\n\nDutch flavor: Strong Flemish tendencies with \"ge/gij,\" contractions like \"'t,\" and regional phrasing (\"da ge,\" \"nie\" for \"niet\"). Uses distinctly Dutch expressions like \"het kan me niet over 't hart\" and \"ligt in het vergiet.\"\n\nCharacter voice preservation: Maintains revolutionary maternal authority through formal address \"Kameraad\" and religious invocations \"Bij de Goden!\" Commands preserved with imperative constructions. Anti-machine mantra translated literally maintaining rhythm.\n\nVerbal tics in Dutch: \"Kameraad\" consistent throughout, \"EZEL MACHT!\" for \"Ass Power!\" Religious/spiritual terminology elevated with compound words. HEE HAW songs phonetically adapted.\n\nTranslation approach: Primarily adaptive, prioritizing natural Dutch flow over literal translation. Creative compound religious terms, idiomatic expressions for emotional beats."
     },
     {
       "name": "Sulky Ass",
@@ -1647,14 +1647,14 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**STYLE PROFILE: The Masses**\n\n**Tone:** Agitated, rallying\n\n**Vocabulary:** Simple, colloquial with protest rhetoric and crude language when emotional. Heavy use of \"ASS\" as cultural/identity marker.\n\n**Verbal tics:** Repetitive chanting (\"POWER!\" \"LOSER!\"), \"ASS\" prefix/compound words (\"ASS CULTURE,\" \"ASS P-POWER!\"), imperative commands, frequent use of ALL CAPS for emphasis.\n\n**Sentence structure:** Predominantly short, fragmented exclamations and commands. Minimal complete sentences. Heavy reliance on exclamation points. Occasional direct questions to \"Trusty Ass.\"\n\n**Key themes:** Collective action and protest demands (jobs, respect, cultural identity), resistance to authority (\"FUCK REASSIGNMENT!\"), maintaining group momentum, concern for fellow donkeys' safety and direction.",
-      "dutchDialogueStyle": "**DUTCH TRANSLATION STYLE PROFILE: The Masses**\n\n**Register:** Informal Dutch using \"jij/je\" forms. Simple, direct vocabulary maintaining colloquial protest tone. Preserves crude language (\"FUCK\") when emphatic.\n\n**Dutch flavor:** Standard Netherlandic Dutch. Uses \"WEEST NIET BANG\" (archaic/dialectal plural imperative) suggesting collective voice. \"Jobs\" borrowed directly from English rather than Dutch \"banen.\"\n\n**Character voice preservation:** Maintains agitated rally energy through ALL CAPS and exclamation points. Preserves fragmented, chant-like structure and imperative commands.\n\n**Verbal tics in Dutch:** \"MACHT!\" for \"POWER!\", \"LOSER!\" kept in English, \"EZEL\" replaces \"ASS\" in compounds (\"EZEL M-MACHT!\" for \"ASS P-POWER!\"). \"Trouwe Zak\" consistently translates \"Trusty Ass.\"\n\n**Translation approach:** Primarily literal with cultural adaptation. ASS-compounds creatively localized using \"EZEL-\" prefix while maintaining rhythm and emphasis patterns."
+      "dialogueStyle": "Tone: Militant, rallying\n\nVocabulary: Colloquial protest language with crude intensifiers, simple declarative statements, group-focused terminology (\"our,\" \"us,\" collective identity)\n\nVerbal tics: Repetitive chanting patterns, frequent use of \"ASS\" as cultural/power modifier, exclamation-heavy speech, direct commands and imperatives\n\nSentence structure: Predominantly short, punchy fragments and single-word outbursts designed for crowd chanting. Heavy use of exclamation points. Simple declarative sentences when giving directions or warnings.\n\nKey themes: Power reclamation, cultural preservation, resistance to systemic oppression, collective action, anti-establishment sentiment, protection of group identity and jobs, rejection of forced compliance (\"reassignment\")",
+      "dutchDialogueStyle": "Register: Informal Dutch using \"jij/je\" forms, straightforward vocabulary accessible to mass audiences, preserves crude intensifiers like \"fuck\" untranslated\n\nDutch flavor: Standard Netherlandic Dutch, no regional dialect markers. Uses \"jobs\" (Anglicism) over native \"banen,\" suggesting contemporary urban protest language\n\nCharacter voice preservation: Maintains militant rallying tone through caps and exclamation points. Collective pronouns \"onze/ons\" preserve group identity focus. Chanting rhythm kept intact\n\nVerbal tics in Dutch: \"MACHT!\" as power cry, \"EZEL\" replaces \"ASS\" in cultural contexts (\"EZELSCULTUUR,\" \"EZEL M-MACHT\"), \"LOSER\" kept as English loan for impact\n\nTranslation approach: Primarily literal with strategic adaptations. Cultural terms translated (\"ASS CULTURE\" → \"EZELSCULTUUR\") while preserving protest authenticity through mixed Dutch-English expressions"
     },
     {
       "name": "Thirsty Ass",
       "description": "Character",
       "english": "Thirsty Ass",
-      "dutch": "Dorstlap",
+      "dutch": "Beschonken Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Thirsty",
@@ -1667,7 +1667,7 @@
       "bio": "Older, a bit lecherous. Generally positive. Mostly interested in doing whatever Nice Ass is doing. Castrated. Dreams of starting a small business in the form of a Bar, called Bottom's Up",
       "gender": "male",
       "dialogueStyle": "Southern drawl, Cowboy or ruralite\n\"Yee haw\"\n\"Git goin'\"\nPuns on water",
-      "dutchDialogueStyle": "**Register**: Highly informal Dutch with consistent \"ge/gij/jullie\" forms, heavy use of contractions (\"'k,\" \"da',\" \"d'er,\" \"'t\"), and colloquial vocabulary matching the rural setting.\n\n**Dutch flavor**: Strong Flemish dialect markers throughout - \"héé\" as constant tag, \"sie,\" \"allez,\" \"doeme,\" \"gedoemme.\" Uses regional contractions and sentence structures. Incorporates Flemish idioms like \"vooruit met de geit\" and \"naar de kloten.\"\n\n**Character voice preservation**: Maintains enthusiastic tone through exclamations and dialect intensity. \"YEEHAW!\" becomes \"JIE-HAAA!/Hupse!\" His obsession with Nice Ass (\"Schoon Beest\") and water references preserved. Business dream \"Bottoms Up\" cleverly becomes \"Ad Fundum.\"\n\n**Verbal tics in Dutch**: \"héé\" replaces multiple English tag phrases, \"godverdomme/godver\" for strong profanity, \"amai/potverdikke\" for milder expressions, \"*oef*\" maintained for exertion.\n\n**Translation approach**: Highly adaptive, prioritizing authentic Flemish dialect over literal translation. Creative solutions maintain character essence while sounding naturally Dutch."
+      "dutchDialogueStyle": "Register: Highly informal Dutch with heavy Flemish dialect markers - consistent use of \"jij/je,\" dialect contractions like \"zou'j,\" \"g'ebt,\" \"dadde,\" and dropped syllables mimicking the English dialect pattern.\n\nDutch flavor: Strong West/East Flemish characteristics with \"héé\" as constant tag, \"sie,\" \"allez,\" \"doeme,\" \"gedoemme.\" Uses Flemish idioms like \"vooruit met de geit,\" \"naar de kloten,\" \"koek en ei.\" Maintains rural, working-class register through vocabulary choices.\n\nCharacter voice preservation: Enthusiasm preserved through exclamations and \"JIE-HAAA!\" for \"YEEHAW!\" Water obsession maintained, romantic bumbling intact, folksy warmth comes through dialect warmth.\n\nVerbal tics in Dutch: \"JIE-HAAA!/Hupse!\" replaces \"YEEHAW!\", \"héé\" as constant sentence closer, \"*oef\" maintained, \"godverdomme/godver\" for profanity.\n\nTranslation approach: Highly adaptive - replaces Southern US dialect with equivalent Flemish rural speech patterns rather than standard Dutch, preserving character essence over literal meaning."
     },
     {
       "name": "Tight Ass",
@@ -1685,8 +1685,8 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone:** Authoritarian, excitable\n\n**Vocabulary:** Colloquial with crude slang (\"Shit Hole,\" \"Dope Ass\"), mixing official-sounding rhetoric with street-level language. Uses derogatory terms as rallying cries.\n\n**Verbal tics:** Rhetorical questions demanding crowd participation (\"what are you???\"), repetitive commands (\"Say it again!\"), enthusiastic repetition (\"It's starting! It's starting!\"), nervous laughter (\"Haha\").\n\n**Sentence structure:** Mix of short declarative statements and questions. Heavy use of exclamation points showing high energy/agitation. Fragments during excited moments.\n\n**Key themes:** Enforcing boundaries and preventing escape, loyalty to the system, crowd control through shaming, abandoning duty for entertainment. Contradicts his own strict rules when personal interests arise.",
-      "dutchDialogueStyle": "**Register**: Informal Dutch using \"jij/je\" forms, maintaining colloquial energy. Vocabulary stays accessible while preserving authoritarian tone through direct commands and rhetorical structures.\n\n**Dutch flavor**: Standard Netherlandic Dutch without regional dialects. Uses natural Dutch expressions like \"terwijl ik iets te zeggen heb\" for \"on my watch.\" No Flemish tendencies detected.\n\n**Character voice preservation**: Authoritarian excitement maintained through exclamation points and repetitive structures. Crude energy preserved in \"Lijpe Ezel\" for \"Dope Ass.\" Nervous laughter (\"Haha\") kept verbatim.\n\n**Verbal tics in Dutch**: Repetitive commands structure maintained (\"Opnieuw!\"), crowd participation questions preserved (\"wat ben je dan???\"), enthusiastic repetition intact (\"Het begint! Het begint!\").\n\n**Translation approach**: Primarily literal with creative adaptations for Dutch flow. \"Loser\" kept as English loanword for impact. Maintains fragment-heavy excited speech patterns."
+      "dialogueStyle": "TIGHT ASS - STYLE PROFILE\n\nTone: Authoritarian, excitable\n\nVocabulary: Colloquial with crude slang (\"Ass,\" \"Shit Hole,\" \"Dope Ass\"), mixed with pseudo-official language (\"reassigned,\" \"Astral Plane\"). Uses rhetorical questions as control tactics.\n\nVerbal tics: Repetitive \"whoa whoa whoa\" for interruption, excited repetition (\"It's starting! It's starting!\"), nervous laughter (\"Haha\"), call-and-response patterns with crowds\n\nSentence structure: Mix of commanding statements and leading questions. Uses exclamations frequently. Employs fragments for emphasis and interruption.\n\nKey themes: Rigid rule enforcement about leaving/staying, loyalty to the system, hypocritical exceptions for personal interests (concerts), asserting authority over other donkeys while revealing his own weaknesses",
+      "dutchDialogueStyle": "Register: Informal Dutch using \"jij/je\" forms, colloquial vocabulary level matching original crude-official mix. \"Lijpe Ezel\" for \"Dope Ass\" maintains street slang register.\n\nDutch flavor: Standard Netherlandic Dutch, no regional dialect markers. Uses \"wel niet\" construction (\"waar denk jij wel niet\") for emphasis. \"Loser\" kept as English loanword rather than Dutch equivalent.\n\nCharacter voice: Authoritarian tone preserved through commanding sentence structure and rhetorical questions. Excitable nature maintained with repetitive patterns and exclamations.\n\nVerbal tics: \"Wow wow wow\" replaces \"whoa whoa whoa,\" \"Haha\" kept identical, excited repetition \"Het begint! Het begint!\" directly mirrors English.\n\nTranslation approach: Predominantly literal with creative touches like \"terwijl ik iets te zeggen heb\" for \"on my watch.\" Maintains crude humor through direct vocabulary choices."
     },
     {
       "name": "Total Ass",
@@ -1768,7 +1768,7 @@
       "name": "Trusty Ass",
       "description": "Character",
       "english": "Trusty Ass",
-      "dutch": "Trouwe Zak",
+      "dutch": "Trouwe Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Trusty",
@@ -1781,7 +1781,7 @@
       "bio": "First met as more of a listener than a leader, she is accepted as Old Ass's second in command. When she dies, she longs to be reassigned so that she can become a better leader.",
       "gender": "female",
       "dialogueStyle": "Never speaks until Ep 8.",
-      "dutchDialogueStyle": "**Register**: Informal Dutch using standard vocabulary. Simple, direct language matching the English colloquial tone. No formal address forms.\n\n**Dutch flavor**: Neutral Netherlandic Dutch without regional markers. Translates community terms literally (\"EZEL MACHT\" for \"ASS POWER\"). Uses standard Dutch expressions like \"ahum\" for \"ahem.\"\n\n**Character voice preservation**: Maintains matter-of-fact observational style through short declarative sentences. Preserves exclamatory speech patterns and repetitive emphasis. Keeps earnest, practical tone intact.\n\n**Verbal tics in Dutch**: \"Ahh!\" retained unchanged. \"Het is maar...\" and \"Dat is...\" for observations. \"Ooeeeeps!\" creatively lengthens \"Whoops!\" for character flavor.\n\n**Translation approach**: Primarily literal, maintaining simple sentence structure. Compounds like \"Camion-Machine,\" \"Traktor-Machine\" preserve the character's mechanical terminology. Adapts rally chants while keeping meaning (\"IK ZEG EZEL, JIJ ZEGT MACHT!\")."
+      "dutchDialogueStyle": "Register: Informal Dutch using standard vocabulary. Simple, direct constructions mirror English simplicity. No formal pronouns or elevated language despite occasional analytical phrases like \"Ik heb de situatie bekeken.\"\n\nDutch flavor: Neutral Netherlandic Dutch without regional markers. Compound words follow Dutch patterns (\"vogelverschrikker,\" \"zadelzakken\"). Machine terminology consistently uses Dutch-English hybrid \"X-Machine\" format.\n\nCharacter voice preservation: Earnest, matter-of-fact tone maintained through declarative statements. Leadership voice comes through in rally cries and collective terminology (\"Kudde,\" \"moraal\"). Observational fragments preserved with \"Dat is...\" constructions.\n\nVerbal tics in Dutch: Exclamations kept identical (\"Ahh!\") or phonetically adapted (\"Ooeeeeps!\" for \"Whoops!\"). \"EZEL MACHT\" becomes the Dutch rally cry, maintaining rhythmic power of original chants.\n\nTranslation approach: Primarily literal with creative adaptation for wordplay and chants. Cultural concepts like \"scarecrow\" fully localized while maintaining character's simple vocabulary range."
     },
     {
       "name": "Ugly Ass",
@@ -1843,8 +1843,8 @@
       ],
       "bio": "",
       "gender": "",
-      "dialogueStyle": "**Tone**: Formal, welcoming\n\n**Vocabulary**: Official/institutional language with descriptive marketing terms (\"beautiful Heritage Stable,\" \"state of the art Mill and Granary\"); consistently proper and promotional in register\n\n**Verbal tics**: Invariable greeting formula \"Welcome to Fannyside Farm\"; directional phrases always follow same pattern \"To the [direction], our [adjective] [location]\"; repetitive phrasing across all interactions\n\n**Sentence structure**: Consistently paired sentences - one welcome statement followed by directional information; declarative statements only; no questions or exclamations; formal, complete sentences\n\n**Key themes**: Geographic orientation and facility promotion; emphasizes farm infrastructure and landmarks; functions as pure informational interface highlighting the farm's amenities and layout for newcomers",
-      "dutchDialogueStyle": "**Register**: Formal Dutch maintained through \"onze\" possessives and institutional vocabulary; proper/official tone preserved with standard Dutch rather than colloquial forms.\n\n**Dutch flavor**: Neutral Netherlandic Dutch with occasional Flemish-leaning contractions (\"'t zuiden\"); \"piekfijn\" shows distinctly Dutch idiomatic choice over literal translations; \"Boerderij van Muilegem\" creates local Dutch farm naming convention.\n\n**Character voice preservation**: Promotional/welcoming formality retained through consistent \"Welkom op\" formula and descriptive marketing language (\"prachtige,\" \"hoogmoderne\"); maintains informational signage character.\n\n**Verbal tics in Dutch**: Fixed greeting \"Welkom op de Boerderij van Muilegem\" replaces English formula; directional patterns vary between \"Ten [richting]:\" and \"Naar 't [richting]\" but maintain structural consistency.\n\n**Translation approach**: Adaptive rather than literal - \"state of the art\" becomes idiomatic \"piekfijn/hoogmoderne\"; \"Heritage Stable\" creatively rendered as \"Erfgoedshoeve\"; maintains repetitive, institutional character voice through Dutch equivalents."
+      "dialogueStyle": "Tone: Formal, promotional\n\nVocabulary: Tourism/marketing register with descriptive adjectives (\"beautiful Heritage Stable,\" \"state of the art Mill\"). Uses proper facility names and directional language typical of informational signage.\n\nVerbal tics: Rigid repetition of identical phrasing. Always opens with \"Welcome to Fannyside Farm.\" Follows consistent pattern of directional information (\"To the west/south\"). Only variation occurs in final line changing \"south\" to \"southwest.\"\n\nSentence structure: Brief, declarative statements. Uses parallel construction for directional descriptions. No questions or exclamations—purely informational delivery.\n\nKey themes: Farm orientation and facility promotion. Functions as static information source highlighting farm amenities and layout for newcomers.",
+      "dutchDialogueStyle": "Register: Formal Dutch with tourism/promotional vocabulary. Uses standard directional terms (ten westen, ten/naar 't zuiden) and elevated descriptive language.\n\nDutch flavor: Standard Netherlandic Dutch with no regional dialect markers. Uses \"piekfijn\" (excellent/top-notch) as distinctly Dutch equivalent for \"state of the art,\" though occasionally switches to \"hoogmoderne\" for variety.\n\nCharacter voice preservation: Maintains rigid, informational tone through consistent sentence structure. Preserves formal promotional register and repetitive delivery pattern that defines the character's mechanical nature.\n\nVerbal tics in Dutch: Exact repetition of opening formula \"Welkom op de Boerderij van Muilegem.\" Consistent parallel construction with directional phrases, maintaining the character's programmed, unchanging delivery.\n\nTranslation approach: Primarily literal with creative localization. \"Fannyside Farm\" becomes culturally adapted \"Boerderij van Muilegem\" while preserving meaning and maintaining Dutch authenticity in facility descriptions."
     },
     {
       "name": "Wild Ass",
@@ -1876,8 +1876,8 @@
       ],
       "bio": "A Zookkeeper at the Mecha City Zoo. She is very chipper and enthusiastic about everything. But she also has no morals and makes a deal with Derriere to give the donkeys over in exchange for money to buy a new phone.",
       "gender": "female",
-      "dialogueStyle": "**STYLE PROFILE: Zookeeper Rose**\n\nTone: Aggressively cheerful, amoral\n\nVocabulary: Colloquial with business/marketing jargon mixed in. Uses casual contractions and enthusiastic descriptors. Switches to panicked informal speech when stressed.\n\nVerbal tics: Elongated greetings (\"GOOOODDDD MORNING ASSSSSSES!\"). Frequent ALL CAPS for emphasis and visitor categories (TOURISTS, RESEARCHERS). Repetitive motivational phrases. Uses \"Ass\" extensively in wordplay.\n\nSentence structure: Heavy use of exclamation points. Short, punchy commands mixed with longer explanatory sentences. Rhetorical questions for engagement. Fragments when excited or panicked.\n\nKey themes: Performance competition between donkeys, visitor satisfaction and ticket sales, daily zoo operations, maintaining appearances despite underlying corruption. Treats animals as entertainment products while maintaining fake maternal warmth.",
-      "dutchDialogueStyle": "**DUTCH TRANSLATION STYLE PROFILE: Zookeeper Rose**\n\n**Register:** Informal Dutch using \"je/jij\" throughout. Colloquial vocabulary with business terms (\"sociale media,\" \"middelen\"). Maintains enthusiastic, direct tone with casual contractions.\n\n**Dutch flavor:** Strong Flemish tendencies - \"zot van,\" \"het huis op stelten,\" \"flodder-hemdjes,\" \"Merci, hé!\" Regional diminutives like \"Ezeltjes\" for warmth. Uses \"word\" instead of \"wordt\" (Flemish grammar).\n\n**Character voice:** Preserves aggressive cheerfulness through exclamation-heavy speech and motivational phrases. Maintains fake maternal warmth with encouraging language. Panic comes through fragmented speech and capitalized outbursts.\n\n**Verbal tics:** Signature greeting becomes \"GOOOOOEEEEEIEMORGEN EZELTJES!\" ALL CAPS preserved for visitor categories (TOERISTEN, ONDERZOEKERS). \"Ass\" wordplay lost but \"Ezel\" repetition maintained.\n\n**Translation approach:** Adaptive translation prioritizing character voice over literalness. Some English puns simplified but enthusiasm and business jargon preserved."
+      "dialogueStyle": "Tone: Enthusiastic, cheerful\n\nVocabulary: Colloquial and casual, with frequent use of caps for emphasis. Simple, direct language mixed with zoo/business terminology. Uses animal names and cutesy expressions.\n\nVerbal tics: Signature greeting \"GOOOODDDD MORNING ASSSSSSES!\" with extended vowels. Heavy use of ALL CAPS for excitement or urgency. Frequent exclamation points. Refers to donkeys by character names (Hulk, Eeyore, etc.).\n\nSentence structure: Mix of short, punchy commands and longer explanatory sentences. Heavy use of exclamations and rhetorical questions. Fragments during moments of panic.\n\nKey themes: Zoo performance metrics, visitor satisfaction, competition between donkeys, maintaining appearances, and underlying anxiety about job security despite outward enthusiasm.",
+      "dutchDialogueStyle": "Register: Informal Dutch using \"je/jij\" forms, casual vocabulary with business terms. Maintains colloquial tone through contractions and direct speech patterns.\n\nDutch flavor: Flemish tendencies evident in \"zot van\" (crazy about), \"het huis op stelten zetten\" (raise the roof), and vocabulary choices like \"flodder-hemdjes\" for Hawaiian shirts. Uses \"merci, hé!\" as casual thanks.\n\nCharacter voice: Preserves enthusiasm through extended vowels in signature greeting \"GOOOOOEEEEEIEMORGEN EZELTJES!\" Maintains ALL CAPS emphasis and exclamatory tone. Personal encouragement style retained.\n\nVerbal tics: Consistent greeting translation, \"Ezeltjes\" for affectionate donkey reference, maintains character name usage (Jerommeke for Hulk shows localization).\n\nTranslation approach: Adaptive rather than literal, prioritizing natural Dutch flow while preserving personality markers and maintaining zoo-specific terminology."
     },
     {
       "name": "Astral Plane",
@@ -2013,10 +2013,10 @@
       "dialogueStyle": ""
     },
     {
-      "name": "Protest",
+      "name": "Herd",
       "description": "TERM",
-      "english": "Protest",
-      "dutch": "Protest",
+      "english": "Herd",
+      "dutch": "Kudde",
       "category": "TERM",
       "nicknames": [],
       "bio": "",
@@ -2024,10 +2024,10 @@
       "dialogueStyle": ""
     },
     {
-      "name": "Herd",
+      "name": "Protest",
       "description": "TERM",
-      "english": "Herd",
-      "dutch": "Kudde",
+      "english": "Protest",
+      "dutch": "Protest",
       "category": "TERM",
       "nicknames": [],
       "bio": "",
@@ -2046,10 +2046,10 @@
       "dialogueStyle": ""
     },
     {
-      "name": "Outhouse",
+      "name": "Week",
       "description": "TERM",
-      "english": "Outhouse",
-      "dutch": "Hudo",
+      "english": "Week",
+      "dutch": "Ezel",
       "category": "TERM",
       "nicknames": [],
       "bio": "",
@@ -2057,10 +2057,10 @@
       "dialogueStyle": ""
     },
     {
-      "name": "Purple Stuff",
+      "name": "Outhouse",
       "description": "TERM",
-      "english": "Purple Stuff",
-      "dutch": "Paarse Spul",
+      "english": "Outhouse",
+      "dutch": "Hudo",
       "category": "TERM",
       "nicknames": [],
       "bio": "",
@@ -2073,6 +2073,17 @@
       "english": "Comrades",
       "dutch": "Kameraden",
       "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Purple Stuff",
+      "description": "TERM",
+      "english": "Purple Stuff",
+      "dutch": "Paarse Spul",
+      "category": "TERM",
       "nicknames": [],
       "bio": "",
       "gender": "",
@@ -2178,6 +2189,17 @@
       "dialogueStyle": ""
     },
     {
+      "name": "Hulk",
+      "description": "CHARACTER",
+      "english": "Hulk",
+      "dutch": "Hulk",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
       "name": "Revolution",
       "description": "TERM",
       "english": "Revolution",
@@ -2271,6 +2293,17 @@
       "english": "Newbies",
       "dutch": "Nieuwkomertjes",
       "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Eeyore",
+      "description": "CHARACTER",
+      "english": "Eeyore",
+      "dutch": "Iejoor",
+      "category": "CHARACTER",
       "nicknames": [],
       "bio": "",
       "gender": "",
@@ -2420,6 +2453,50 @@
       "dialogueStyle": ""
     },
     {
+      "name": "Tour",
+      "description": "TERM",
+      "english": "Tour",
+      "dutch": "Circusdirecteur",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Achilles",
+      "description": "CHARACTER",
+      "english": "Achilles",
+      "dutch": "Achilles",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Left and Right",
+      "description": "TERM",
+      "english": "Left and Right",
+      "dutch": "Links",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Nuzzle",
+      "description": "TERM",
+      "english": "Nuzzle",
+      "dutch": "Knuffelen",
+      "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
       "name": "Ass Souls",
       "description": "TERM",
       "english": "Ass Souls",
@@ -2480,6 +2557,17 @@
       "english": "History",
       "dutch": "Geschiedenis",
       "category": "TERM",
+      "nicknames": [],
+      "bio": "",
+      "gender": "",
+      "dialogueStyle": ""
+    },
+    {
+      "name": "Littlefoot",
+      "description": "CHARACTER",
+      "english": "Littlefoot",
+      "dutch": "Platvoet",
+      "category": "CHARACTER",
       "nicknames": [],
       "bio": "",
       "gender": "",

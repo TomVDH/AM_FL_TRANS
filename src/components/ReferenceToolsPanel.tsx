@@ -12,6 +12,7 @@ interface CharacterMatch {
   bio?: string;
   gender?: string;
   dialogueStyle?: string;
+  dutchDialogueStyle?: string;
   startIndex?: number;
   endIndex?: number;
 }
@@ -603,7 +604,7 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
               </div>
             ) : (
               filteredCodexData.map((entry, idx) => {
-                const hasInfo = entry.category === 'CHARACTER' && (entry.bio || entry.gender || entry.dialogueStyle);
+                const hasInfo = entry.category === 'CHARACTER' && (entry.bio || entry.gender || entry.dialogueStyle || entry.dutchDialogueStyle);
                 const isExpanded = expandedCodexEntry === idx;
                 return (
                   <div key={idx}>
@@ -697,12 +698,26 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
                           </div>
                         )}
 
-                        {/* Dialogue Style */}
+                        {/* Dialogue Style (EN) */}
                         {entry.dialogueStyle && (
                           <div>
-                            <div className="text-[9px] uppercase tracking-wider text-purple-500 dark:text-purple-400 font-bold mb-0.5">Style</div>
+                            <div className="text-[9px] uppercase tracking-wider text-purple-500 dark:text-purple-400 font-bold mb-0.5">
+                              Style <span className="text-purple-400 dark:text-purple-500">EN</span>
+                            </div>
                             <div className="text-[11px] text-purple-900 dark:text-purple-100 whitespace-pre-line leading-relaxed pl-2 border-l-2 border-purple-300 dark:border-purple-600">
                               {entry.dialogueStyle}
+                            </div>
+                          </div>
+                        )}
+
+                        {/* Dialogue Style (NL) */}
+                        {entry.dutchDialogueStyle && (
+                          <div>
+                            <div className="text-[9px] uppercase tracking-wider text-orange-500 dark:text-orange-400 font-bold mb-0.5">
+                              Style <span className="text-orange-400 dark:text-orange-500">NL</span>
+                            </div>
+                            <div className="text-[11px] text-orange-900 dark:text-orange-100 whitespace-pre-line leading-relaxed pl-2 border-l-2 border-orange-300 dark:border-orange-600">
+                              {entry.dutchDialogueStyle}
                             </div>
                           </div>
                         )}

@@ -12,6 +12,7 @@ interface CodexMatch {
   bio?: string;
   gender?: string;
   dialogueStyle?: string;
+  dutchDialogueStyle?: string;
   startIndex: number;
   endIndex: number;
 }
@@ -95,7 +96,7 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
 
   // Helper: does this character have rich info?
   const hasCharacterInfo = (match: CodexMatch) =>
-    match.category === 'CHARACTER' && (match.bio || match.gender || match.dialogueStyle);
+    match.category === 'CHARACTER' && (match.bio || match.gender || match.dialogueStyle || match.dutchDialogueStyle);
 
   // Auto-detect codex matches from current source text
   const codexMatches = useMemo(() => {

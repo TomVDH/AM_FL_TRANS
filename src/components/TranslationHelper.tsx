@@ -24,6 +24,7 @@ import CodexButton from './CodexButton';
 import ReferenceToolsPanel from './ReferenceToolsPanel';
 import QuickReferenceBar from './QuickReferenceBar';
 import ResetConfirmationModal from './ResetConfirmationModal';
+import CharacterInfoCard from './CharacterInfoCard';
 import { ConversationView } from './ConversationView';
 import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
 import { useEditedTranslations } from '../hooks/useEditedTranslations';
@@ -381,7 +382,7 @@ const TranslationHelper: React.FC = () => {
 
       if (response.ok) {
         toast.success(`Reset complete: ${data.copiedFiles.length} file(s) restored`);
-        // Return to Screen 1 (Setup Wizard)
+        // Return to Setup
         setIsStarted(false);
       } else {
         toast.error(`Reset failed: ${data.error}`);
@@ -407,6 +408,10 @@ const TranslationHelper: React.FC = () => {
   const [showInlineSource, setShowInlineSource] = useState(true); // true = show EN source, false = show NL translation
   const [showResetModal, setShowResetModal] = useState(false);
   const [showOutput, setShowOutput] = useState(true);
+  const [showSpeakerCard, setShowSpeakerCard] = useState(false);
+
+  // Close speaker card when navigating
+  useEffect(() => { setShowSpeakerCard(false); }, [currentIndex]);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
@@ -422,6 +427,17 @@ const TranslationHelper: React.FC = () => {
     if (!speaker) return '';
     return extractSpeakerName(speaker);
   };
+
+  // Look up current speaker in codex for clickable name feature
+  const currentSpeakerCodexEntry = React.useMemo(() => {
+    const speakerName = trimSpeakerName(utterers[currentIndex]);
+    if (!speakerName || !characterData.length) return null;
+    const lower = speakerName.toLowerCase();
+    return characterData.find(e =>
+      e.english?.toLowerCase() === lower ||
+      (e.nicknames && e.nicknames.some((n: string) => n.toLowerCase() === lower))
+    ) || null;
+  }, [utterers, currentIndex, characterData]);
 
   const findXlsxMatchesWrapper = useCallback((text: string) => {
     const matches = findXlsxMatches(text);
@@ -1287,9 +1303,21 @@ const TranslationHelper: React.FC = () => {
                         >
                           {translationColumn}{startRow + currentIndex}
                         </span>
-                        <span className="text-shadow-pixel">
-                          {trimSpeakerName(utterers[currentIndex]) || 'Speaker'}
-                        </span>
+                        {currentSpeakerCodexEntry ? (
+                          <button
+                            className="text-shadow-pixel cursor-pointer hover:text-purple-300 transition-colors duration-150"
+                            onClick={() => setShowSpeakerCard(prev => !prev)}
+                            title={`View codex: ${currentSpeakerCodexEntry.english} → ${currentSpeakerCodexEntry.dutch}`}
+                            style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', color: 'inherit' }}
+                          >
+                            {trimSpeakerName(utterers[currentIndex])}
+                            <span className="ml-1 text-[8px] text-purple-400 opacity-70">▼</span>
+                          </button>
+                        ) : (
+                          <span className="text-shadow-pixel">
+                            {trimSpeakerName(utterers[currentIndex]) || 'Speaker'}
+                          </span>
+                        )}
                       </div>
                       {/* Language toggle - switches between EN source and NL translation */}
                       <button
@@ -1300,6 +1328,17 @@ const TranslationHelper: React.FC = () => {
                         {showInlineSource ? 'EN' : 'NL'}
                       </button>
                     </div>
+
+                    {/* Speaker Character Info Card */}
+                    {showSpeakerCard && currentSpeakerCodexEntry && (
+                      <div className="mx-2 mt-1">
+                        <CharacterInfoCard
+                          character={currentSpeakerCodexEntry}
+                          onClose={() => setShowSpeakerCard(false)}
+                          onInsert={insertCharacterName}
+                        />
+                      </div>
+                    )}
 
                     {/* Context Notes in Compact Mode */}
                     {contextNotes[currentIndex] && (
@@ -1562,34 +1601,11 @@ const TranslationHelper: React.FC = () => {
                   <div className="flex flex-col h-full">
                     {/* Mode Toggles + Change Detection - Single Row */}
                     <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center gap-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-1 py-0.5" style={{ borderRadius: '3px' }}>
-                        {/* Gamepad Mode */}
+                      <div className="flex items-center gap-0.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-1 py-0.5" style={{ borderRadius: '3px' }}>
+                        {/* View Modes Group */}
                         <button onClick={toggleGamepadMode} className={`p-1.5 transition-all duration-150 ${gamepadMode ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-700' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Game View (G)">
                           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM11 7a1 1 0 100 2 1 1 0 000-2zm2 1a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1z"/></svg>
                         </button>
-                        {/* Highlight Mode */}
-                        <button onClick={toggleHighlightMode} className={`p-1.5 transition-all duration-150 ${highlightMode ? 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Codex Highlights (H)">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
-                        </button>
-                        {/* Reference Tools */}
-                        <button onClick={toggleXlsxMode} className={`p-1.5 transition-all duration-150 ${xlsxMode ? 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Reference Tools (R)">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
-                        </button>
-                        {/* Output Toggle */}
-                        <button onClick={() => setShowOutput(!showOutput)} className={`p-1.5 transition-all duration-150 ${showOutput ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Toggle Output">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" /></svg>
-                        </button>
-                        {/* Live Edit Mode */}
-                        <button onClick={() => { if (loadedFileType !== 'excel') { toast.error('LIVE EDIT requires an Excel file to be loaded'); return; } setLiveEditMode(!liveEditMode); }} disabled={loadedFileType !== 'excel'} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${liveEditMode ? 'text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30' : loadedFileType !== 'excel' ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title={loadedFileType !== 'excel' ? 'Load an Excel file to enable LIVE EDIT' : 'Live Excel Sync'}>
-                          <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${liveEditMode ? syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' : syncStatus === 'synced' ? 'bg-green-500' : syncStatus === 'error' ? 'bg-red-500 animate-pulse' : 'bg-green-500' : 'bg-gray-400'}`} />
-                          Live
-                        </button>
-                        {/* AI Suggest */}
-                        <button onClick={toggleAiSuggest} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${aiSuggestEnabled ? 'text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="AI Suggest (A)">
-                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
-                          <span>AI</span>
-                        </button>
-                        {/* Conversation Mode */}
                         <button
                           onClick={toggleConversationMode}
                           disabled={!isStarted || sourceTexts.length === 0}
@@ -1606,6 +1622,33 @@ const TranslationHelper: React.FC = () => {
                           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
                           </svg>
+                        </button>
+
+                        {/* Separator */}
+                        <div className="w-px h-4 bg-gray-200 dark:bg-gray-600 mx-0.5" />
+
+                        {/* Tools Group */}
+                        <button onClick={toggleHighlightMode} className={`p-1.5 transition-all duration-150 ${highlightMode ? 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Codex Highlights (H)">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
+                        </button>
+                        <button onClick={toggleXlsxMode} className={`p-1.5 transition-all duration-150 ${xlsxMode ? 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Reference Tools (R)">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
+                        </button>
+                        <button onClick={() => setShowOutput(!showOutput)} className={`p-1.5 transition-all duration-150 ${showOutput ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Toggle Output">
+                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" /></svg>
+                        </button>
+
+                        {/* Separator */}
+                        <div className="w-px h-4 bg-gray-200 dark:bg-gray-600 mx-0.5" />
+
+                        {/* Integrations Group */}
+                        <button onClick={toggleAiSuggest} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${aiSuggestEnabled ? 'text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="AI Suggest (A)">
+                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
+                          <span>AI</span>
+                        </button>
+                        <button onClick={() => { if (loadedFileType !== 'excel') { toast.error('LIVE EDIT requires an Excel file to be loaded'); return; } setLiveEditMode(!liveEditMode); }} disabled={loadedFileType !== 'excel'} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${liveEditMode ? 'text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30' : loadedFileType !== 'excel' ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title={loadedFileType !== 'excel' ? 'Load an Excel file to enable LIVE EDIT' : 'Live Excel Sync'}>
+                          <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${liveEditMode ? syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' : syncStatus === 'synced' ? 'bg-green-500' : syncStatus === 'error' ? 'bg-red-500 animate-pulse' : 'bg-green-500' : 'bg-gray-400'}`} />
+                          Live
                         </button>
                       </div>
                       {hasCurrentEntryChanged() ? (
