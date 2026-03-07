@@ -8,6 +8,7 @@ import VideoButton from './VideoButton';
 import GitHubButton from './GitHubButton';
 import CodexButton from './CodexButton';
 import CodexEditor from './CodexEditor';
+import StyleAnalysisPanel from './StyleAnalysisPanel';
 import SheetSelector from './SheetSelector';
 import LanguageSelector, { DetectedLanguage } from './LanguageSelector';
 import SheetPreview from './SheetPreview';
@@ -912,7 +913,6 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               onClick={(e) => {
                 e.stopPropagation();
                 refreshCodex();
-                toast.success('Codex refreshed');
               }}
               disabled={isLoadingCodex}
               className="h-[46px] w-[46px] flex items-center justify-center bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -936,8 +936,13 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           )}
         </div>
 
+        {/* Style Analysis Pipeline */}
+        <div className="max-w-2xl mx-auto mt-8">
+          <StyleAnalysisPanel />
+        </div>
+
         {/* Video, GitHub, Codex, and Reset Buttons */}
-        <div className="mt-10 mb-4 text-center">
+        <div className="mt-8 mb-4 text-center">
           <div className="flex justify-center gap-2">
             <VideoButton />
             <GitHubButton />
