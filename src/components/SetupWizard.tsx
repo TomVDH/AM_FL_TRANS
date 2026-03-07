@@ -465,7 +465,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
       {/* Main Container - Responsive width based on configuration panel visibility */}
       <div
         className={`w-full space-y-6 transition-all duration-500 ease-in-out ${
-          excelSheets.length > 0 ? 'max-w-4xl' : 'max-w-2xl'
+          excelSheets.length > 0 ? 'max-w-6xl' : 'max-w-4xl'
         }`}
         style={{ animation: 'fadeIn 0.5s ease-out' }}
       >
@@ -937,7 +937,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         </div>
 
         {/* Style Analysis Pipeline */}
-        <div className="max-w-2xl mx-auto mt-8">
+        <div className="mt-8">
           <StyleAnalysisPanel />
         </div>
 

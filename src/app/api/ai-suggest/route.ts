@@ -21,6 +21,14 @@ interface SurroundingLine {
   text: string;
 }
 
+type ModelTier = 'haiku' | 'sonnet' | 'opus';
+
+const MODEL_MAP: Record<ModelTier, { id: string; maxTokens: number }> = {
+  haiku: { id: 'claude-haiku-4-5-20251001', maxTokens: 200 },
+  sonnet: { id: 'claude-sonnet-4-6', maxTokens: 300 },
+  opus: { id: 'claude-opus-4-6', maxTokens: 400 },
+};
+
 interface SuggestRequest {
   english: string;
   speaker: string;
@@ -28,6 +36,7 @@ interface SuggestRequest {
   existingTranslation?: string;
   linesBefore?: SurroundingLine[];
   linesAfter?: SurroundingLine[];
+  model?: ModelTier;
 }
 
 let codexCache: { entries: CodexEntry[]; loadedAt: number } | null = null;
@@ -114,10 +123,13 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
   }
 
-  const { english, speaker, context, existingTranslation, linesBefore, linesAfter } = body;
+  const { english, speaker, context, existingTranslation, linesBefore, linesAfter, model: requestedModel } = body;
   if (!english) {
     return NextResponse.json({ error: 'english text is required' }, { status: 400 });
   }
+
+  const modelTier: ModelTier = requestedModel && MODEL_MAP[requestedModel] ? requestedModel : 'haiku';
+  const { id: modelId, maxTokens } = MODEL_MAP[modelTier];
 
   // Look up character info from codex
   const entries = await getCodex();
@@ -188,8 +200,8 @@ Provide ONLY the Dutch translation. No explanation, no alternatives, no quotes a
   try {
     const client = new Anthropic({ apiKey });
     const response = await client.messages.create({
-      model: 'claude-sonnet-4-6',
-      max_tokens: 300,
+      model: modelId,
+      max_tokens: maxTokens,
       messages: [{ role: 'user', content: prompt }]
     });
 
@@ -197,7 +209,7 @@ Provide ONLY the Dutch translation. No explanation, no alternatives, no quotes a
       ? response.content[0].text.trim()
       : '';
 
-    return NextResponse.json({ suggestion });
+    return NextResponse.json({ suggestion, model: modelTier });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Unknown error';
     console.error('AI suggest error:', message);

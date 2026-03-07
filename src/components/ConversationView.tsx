@@ -163,7 +163,7 @@ export function ConversationView({
         const t = translations[nextUntranslated] === BLANK_PLACEHOLDER ? '' : (translations[nextUntranslated] || '');
         setCurrentTranslation(t);
       } else {
-        toast.success('All lines translated!', { duration: 2000 });
+        // All lines done — user can see this from the progress pips
       }
     }, 500);
   }, [conversationRows, translations, handleSubmitWithSync, setCurrentIndex, setCurrentTranslation]);

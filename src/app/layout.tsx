@@ -55,12 +55,10 @@ export default function RootLayout({
       <body className="antialiased" style={{ position: 'relative', zIndex: 0 }}>
         {children}
         <Toaster
-          position="top-right"
-          richColors
-          closeButton
-          expand={true}
-          gap={8}
-          visibleToasts={4}
+          position="bottom-right"
+          expand={false}
+          gap={6}
+          visibleToasts={3}
           toastOptions={{
             style: {
               zIndex: 99999,
@@ -68,11 +66,15 @@ export default function RootLayout({
               color: 'var(--toast-color)',
               border: '1px solid var(--toast-border)',
               borderRadius: '3px',
-              padding: '12px 16px',
-              fontSize: '14px',
-              fontWeight: 500,
+              padding: '8px 12px',
+              fontSize: '12px',
+              fontWeight: 600,
+              letterSpacing: '0.01em',
+              boxShadow: '0 2px 8px rgba(0,0,0,0.12)',
+              maxWidth: '320px',
             },
-            className: 'toast-custom'
+            className: 'toast-custom',
+            duration: 2500,
           }}
         />
       </body>

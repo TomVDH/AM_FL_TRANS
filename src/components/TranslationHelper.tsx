@@ -30,6 +30,7 @@ import { useCharacterHighlighting } from '../hooks/useCharacterHighlighting';
 import { useEditedTranslations } from '../hooks/useEditedTranslations';
 import { useTranslationMemory } from '../hooks/useTranslationMemory';
 import { useAiSuggestion } from '../hooks/useAiSuggestion';
+import { useBulkTranslate, type ModelTier } from '../hooks/useBulkTranslate';
 import { useWowMode } from '../hooks/useWowMode';
 import { useTranslationTimer } from '../hooks/useTranslationTimer';
 import { celebrateMilestone } from '../utils/celebrations';
@@ -140,6 +141,16 @@ const TranslationHelper: React.FC = () => {
     setLiveEditMode,
     toggleLiveEditMode,
     syncCurrentTranslation,
+    // Batch sync
+    showSyncModal,
+    syncModalDirtyCount,
+    isBatchSyncing,
+    batchSyncProgress,
+    batchSyncTotal,
+    startBatchSync,
+    skipBatchSync,
+    closeSyncModal,
+    dirtyCount,
     // COMPLETION FLOW
     showCompletionSummary,
     showReviewMode,
@@ -502,9 +513,12 @@ const TranslationHelper: React.FC = () => {
   const {
     aiSuggestEnabled,
     aiSuggestion,
+    aiSuggestionModel,
     isLoadingAiSuggestion,
+    isUpgradingAiSuggestion,
     aiSuggestError,
     toggleAiSuggest,
+    upgradeAiSuggestion,
     clearAiSuggestion,
   } = useAiSuggestion({
     sourceText: sourceTexts[currentIndex] || '',
@@ -515,6 +529,39 @@ const TranslationHelper: React.FC = () => {
     linesBefore: surroundingLines.before,
     linesAfter: surroundingLines.after,
   });
+
+  // Bulk translate with Opus
+  const {
+    showBulkModal,
+    openBulkModal,
+    closeBulkModal,
+    isBulkTranslating,
+    bulkProgress,
+    bulkTotal,
+    bulkCurrentLine,
+    startBulkTranslate,
+    stopBulkTranslate,
+    showBulkReview,
+    bulkResults,
+    acceptResult,
+    rejectResult,
+    updateResultTranslation,
+    acceptAll,
+    acceptAllEmpty,
+    rejectAllChanged,
+    exitReview,
+    emptyCount,
+    translatedCount,
+  } = useBulkTranslate({
+    sourceTexts,
+    utterers,
+    translations,
+    contextNotes,
+    trimSpeakerName,
+  });
+
+  // Model selection for bulk translate
+  const [bulkModel, setBulkModel] = useState<ModelTier>('opus');
 
   // Combine edited matches with memory matches for QuickReferenceBar
   const findCombinedEditedMatches = useCallback((text: string) => {
@@ -661,6 +708,13 @@ const TranslationHelper: React.FC = () => {
       // Don't process standard shortcuts in conversation mode — ConversationView has its own
       if (conversationMode) return;
 
+      // Ctrl+Shift+T for AI Translate Sheet — works from anywhere
+      if (e.key.toLowerCase() === 't' && e.ctrlKey && e.shiftKey) {
+        e.preventDefault();
+        openBulkModal();
+        return;
+      }
+
       // Only handle shortcuts when textarea is not focused
       if (document.activeElement?.tagName === 'TEXTAREA' || document.activeElement?.tagName === 'INPUT') {
         // Allow Enter to submit even from textarea
@@ -726,7 +780,7 @@ const TranslationHelper: React.FC = () => {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentIndex, sourceTexts.length, translations, handlePrevious, handleSubmit, setCurrentIndex, setCurrentTranslation, xlsxMode, toggleXlsxMode, trimCurrentTranslation, toggleHighlightMode, toggleGamepadMode, toggleAiSuggest, finishSheet, handleKeyboardSubmit, conversationMode]);
+  }, [currentIndex, sourceTexts.length, translations, handlePrevious, handleSubmit, setCurrentIndex, setCurrentTranslation, xlsxMode, toggleXlsxMode, trimCurrentTranslation, toggleHighlightMode, toggleGamepadMode, toggleAiSuggest, finishSheet, handleKeyboardSubmit, conversationMode, openBulkModal]);
 
   // Handle language selection
   const handleSelectLanguage = useCallback((language: DetectedLanguage) => {
@@ -1733,9 +1787,9 @@ const TranslationHelper: React.FC = () => {
                     />
 
                     {/* AI Suggestion Golden Pill */}
-                    {aiSuggestEnabled && (isLoadingAiSuggestion || aiSuggestion || aiSuggestError) && (
+                    {aiSuggestEnabled && (isLoadingAiSuggestion || isUpgradingAiSuggestion || aiSuggestion || aiSuggestError) && (
                       <div className="mt-2">
-                        {isLoadingAiSuggestion ? (
+                        {isLoadingAiSuggestion && !isUpgradingAiSuggestion ? (
                           <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 border border-amber-300 dark:border-amber-600 text-amber-700 dark:text-amber-300 text-xs font-medium animate-pulse" style={{ borderRadius: '3px' }}>
                             <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
                             Generating suggestion...
@@ -1746,18 +1800,45 @@ const TranslationHelper: React.FC = () => {
                             {aiSuggestError}
                           </div>
                         ) : aiSuggestion ? (
-                          <button
-                            onClick={() => {
-                              insertTranslatedSuggestion(aiSuggestion);
-                              clearAiSuggestion();
-                            }}
-                            className="group inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/30 dark:to-yellow-900/30 border border-amber-300 dark:border-amber-600 hover:border-amber-400 dark:hover:border-amber-500 hover:shadow-md text-amber-800 dark:text-amber-200 text-xs transition-all duration-150 cursor-pointer max-w-full" style={{ borderRadius: '3px' }}
-                            title="Click to insert AI suggestion"
-                          >
-                            <svg className="w-3 h-3 text-amber-500 dark:text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/></svg>
-                            <span className="truncate">{aiSuggestion}</span>
-                            <svg className="w-3 h-3 text-amber-400 dark:text-amber-500 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4"/></svg>
-                          </button>
+                          <div className="inline-flex items-center gap-0 max-w-full" style={{ borderRadius: '3px' }}>
+                            {/* Main suggestion — click to insert */}
+                            <button
+                              onClick={() => {
+                                insertTranslatedSuggestion(aiSuggestion);
+                                clearAiSuggestion();
+                              }}
+                              className={`group inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/30 dark:to-yellow-900/30 border border-amber-300 dark:border-amber-600 hover:border-amber-400 dark:hover:border-amber-500 hover:shadow-md text-amber-800 dark:text-amber-200 text-xs transition-all duration-150 cursor-pointer min-w-0 ${aiSuggestionModel === 'haiku' ? 'border-r-0' : ''}`}
+                              style={{ borderRadius: aiSuggestionModel === 'haiku' ? '3px 0 0 3px' : '3px' }}
+                              title="Click to insert AI suggestion"
+                            >
+                              <svg className="w-3 h-3 text-amber-500 dark:text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/></svg>
+                              <span className="truncate">{aiSuggestion}</span>
+                              <span className={`shrink-0 px-1 py-0.5 text-[9px] font-bold uppercase tracking-wider rounded-sm ${aiSuggestionModel === 'sonnet' ? 'bg-purple-100 dark:bg-purple-900/40 text-purple-600 dark:text-purple-300' : 'bg-amber-100 dark:bg-amber-800/40 text-amber-600 dark:text-amber-400'}`}>
+                                {aiSuggestionModel || 'haiku'}
+                              </span>
+                              <svg className="w-3 h-3 text-amber-400 dark:text-amber-500 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4"/></svg>
+                            </button>
+                            {/* Upgrade button — only when Haiku */}
+                            {aiSuggestionModel === 'haiku' && !isUpgradingAiSuggestion && (
+                              <button
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  upgradeAiSuggestion();
+                                }}
+                                className="inline-flex items-center px-2 py-1.5 bg-gradient-to-r from-purple-50 to-violet-50 dark:from-purple-900/30 dark:to-violet-900/30 border border-amber-300 dark:border-amber-600 hover:border-purple-400 dark:hover:border-purple-500 hover:shadow-md text-purple-600 dark:text-purple-300 text-xs transition-all duration-150 cursor-pointer"
+                                style={{ borderRadius: '0 3px 3px 0' }}
+                                title="Upgrade to Sonnet for better quality"
+                              >
+                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 15l7-7 7 7"/></svg>
+                              </button>
+                            )}
+                            {/* Upgrading spinner */}
+                            {isUpgradingAiSuggestion && (
+                              <div className="inline-flex items-center px-2 py-1.5 bg-gradient-to-r from-purple-50 to-violet-50 dark:from-purple-900/30 dark:to-violet-900/30 border border-purple-300 dark:border-purple-600 text-purple-600 dark:text-purple-300 text-xs animate-pulse" style={{ borderRadius: '0 3px 3px 0' }}>
+                                <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
+                              </div>
+                            )}
+                          </div>
                         ) : null}
                       </div>
                     )}
@@ -2392,6 +2473,357 @@ const TranslationHelper: React.FC = () => {
         onClose={() => setShowResetModal(false)}
         onConfirm={handleResetToOriginals}
       />
+
+      {/* Batch Sync Modal — shown when toggling LIVE EDIT on with unsaved changes */}
+      {showSyncModal && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 shadow-2xl w-full max-w-md mx-4 p-6" style={{ borderRadius: '6px' }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-black text-gray-900 dark:text-white tracking-tight uppercase">Unsaved Changes</h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400">Sync to Excel file</p>
+              </div>
+            </div>
+
+            {!isBatchSyncing ? (
+              <>
+                <div className="space-y-3 mb-6">
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    <span className="font-bold text-amber-600 dark:text-amber-400">{syncModalDirtyCount}</span> translation{syncModalDirtyCount !== 1 ? 's were' : ' was'} entered while Live Edit was off.
+                  </p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">
+                    Sync now to persist them to the Excel file, or skip to sync them individually as you navigate.
+                  </p>
+                </div>
+                <div className="flex justify-end gap-3">
+                  <button
+                    onClick={skipBatchSync}
+                    className="px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors"
+                  >
+                    Skip
+                  </button>
+                  <button
+                    onClick={startBatchSync}
+                    className="px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 shadow-md hover:shadow-lg transition-all"
+                    style={{ borderRadius: '4px' }}
+                  >
+                    Sync Now
+                  </button>
+                </div>
+              </>
+            ) : (
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-xs text-gray-600 dark:text-gray-400 mb-1">
+                    <span>{batchSyncProgress} / {batchSyncTotal} lines</span>
+                    <span>{Math.round((batchSyncProgress / Math.max(batchSyncTotal, 1)) * 100)}%</span>
+                  </div>
+                  <div className="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-emerald-500 to-teal-500 transition-all duration-300 ease-out rounded-full"
+                      style={{ width: `${(batchSyncProgress / Math.max(batchSyncTotal, 1)) * 100}%` }}
+                    />
+                  </div>
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400">
+                  Syncing changes to Excel...
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Bulk Translate Modal — Confirmation & Progress */}
+      {showBulkModal && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm">
+          <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-2xl w-full max-w-lg mx-4 p-6" style={{ borderRadius: '6px' }}>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-violet-500 to-purple-600 flex items-center justify-center">
+                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 dark:text-white">AI Translate Sheet</h3>
+                <p className="text-xs text-gray-500 dark:text-gray-400">Powered by Claude {bulkModel.charAt(0).toUpperCase() + bulkModel.slice(1)}</p>
+              </div>
+            </div>
+
+            {!isBulkTranslating ? (
+              <>
+                <div className="space-y-3 mb-6">
+                  <p className="text-sm text-gray-700 dark:text-gray-300">
+                    Translate all <span className="font-bold">{sourceTexts.length}</span> lines. Lines with existing translations will be re-translated for comparison.
+                  </p>
+
+                  {/* Model selector */}
+                  <div>
+                    <label className="block text-[10px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400 mb-1.5">Model</label>
+                    <div className="flex gap-0 border border-gray-200 dark:border-gray-600 rounded overflow-hidden">
+                      {([
+                        { id: 'haiku' as ModelTier, label: 'Haiku', desc: 'Fast & cheap', color: 'amber' },
+                        { id: 'sonnet' as ModelTier, label: 'Sonnet', desc: 'Balanced', color: 'purple' },
+                        { id: 'opus' as ModelTier, label: 'Opus', desc: 'Best quality', color: 'violet' },
+                      ]).map((m, i) => (
+                        <button
+                          key={m.id}
+                          onClick={() => setBulkModel(m.id)}
+                          className={`flex-1 px-3 py-2 text-xs font-bold transition-all ${
+                            i < 2 ? 'border-r border-gray-200 dark:border-gray-600' : ''
+                          } ${
+                            bulkModel === m.id
+                              ? m.id === 'haiku'
+                                ? 'bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300'
+                                : m.id === 'sonnet'
+                                ? 'bg-purple-50 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300'
+                                : 'bg-violet-50 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300'
+                              : 'text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-700/50'
+                          }`}
+                        >
+                          <div>{m.label}</div>
+                          <div className={`text-[9px] font-normal mt-0.5 ${bulkModel === m.id ? 'opacity-70' : 'opacity-50'}`}>{m.desc}</div>
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="flex gap-4 text-xs">
+                    <div className="flex items-center gap-1.5 px-2 py-1 bg-gray-100 dark:bg-gray-700 rounded">
+                      <span className="w-2 h-2 bg-gray-400 rounded-full" />
+                      <span className="text-gray-600 dark:text-gray-300"><span className="font-bold">{emptyCount}</span> empty</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 px-2 py-1 bg-blue-50 dark:bg-blue-900/30 rounded">
+                      <span className="w-2 h-2 bg-blue-500 rounded-full" />
+                      <span className="text-blue-700 dark:text-blue-300"><span className="font-bold">{translatedCount}</span> translated</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 px-2 py-1 bg-violet-50 dark:bg-violet-900/30 rounded">
+                      <span className="w-2 h-2 bg-violet-500 rounded-full" />
+                      <span className="text-violet-700 dark:text-violet-300"><span className="font-bold">{sourceTexts.length}</span> total</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-2 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 rounded text-xs text-amber-800 dark:text-amber-200">
+                    <svg className="w-4 h-4 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd"/></svg>
+                    <span>Existing translations will be preserved — you&apos;ll review changes in a side-by-side diff view before accepting.</span>
+                  </div>
+                </div>
+                <div className="flex justify-end gap-3">
+                  <button onClick={closeBulkModal} className="px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">Cancel</button>
+                  <button onClick={() => startBulkTranslate(bulkModel)} className="px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-violet-600 to-purple-600 hover:from-violet-700 hover:to-purple-700 shadow-md hover:shadow-lg transition-all" style={{ borderRadius: '4px' }}>
+                    Start Translation
+                  </button>
+                </div>
+              </>
+            ) : (
+              <div className="space-y-4">
+                <div>
+                  <div className="flex justify-between text-xs text-gray-600 dark:text-gray-400 mb-1">
+                    <span>{bulkProgress} / {bulkTotal} lines</span>
+                    <span>{Math.round((bulkProgress / Math.max(bulkTotal, 1)) * 100)}%</span>
+                  </div>
+                  <div className="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+                    <div className="h-full bg-gradient-to-r from-violet-500 to-purple-500 transition-all duration-300 ease-out rounded-full" style={{ width: `${(bulkProgress / Math.max(bulkTotal, 1)) * 100}%` }} />
+                  </div>
+                </div>
+                <div className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                  {bulkCurrentLine || 'Starting...'}
+                </div>
+                <div className="flex justify-end">
+                  <button onClick={stopBulkTranslate} className="px-4 py-2 text-sm font-medium text-red-600 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors rounded">
+                    Stop
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
+      {/* Bulk Translate Review Mode */}
+      {showBulkReview && (
+        <div className="fixed inset-0 z-[90] flex flex-col bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+          {/* Review Header — matches ResetConfirmationModal / CompletionSummary header pattern */}
+          <div className="shrink-0 border-b-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-4">
+            <div className="flex items-center justify-between max-w-5xl mx-auto">
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-violet-500 to-purple-600" style={{ borderRadius: '3px' }}>
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
+                </div>
+                <div>
+                  <h2 className="text-xl font-black text-gray-900 dark:text-white tracking-tight uppercase">Review AI Translations</h2>
+                  <div className="flex items-center gap-3 mt-0.5">
+                    <span className="text-xs font-bold text-gray-500 dark:text-gray-400">{bulkResults.length} lines to review</span>
+                    <span className="text-xs text-gray-400 dark:text-gray-500">·</span>
+                    <span className="text-xs text-gray-400 dark:text-gray-500">{bulkResults.filter(r => r.wasEmpty).length} new · {bulkResults.filter(r => !r.wasEmpty).length} changed</span>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => {
+                    const accepted = acceptAllEmpty();
+                    if (accepted.size > 0) {
+                      const updated = [...translations];
+                      accepted.forEach((translation, idx) => { updated[idx] = translation; });
+                      setTranslations(updated);
+                      toast.success(`Accepted ${accepted.size} empty-line translations`);
+                    }
+                  }}
+                  className="px-3 py-1.5 text-xs font-bold text-green-700 dark:text-green-300 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border border-green-300 dark:border-green-700 hover:border-green-400 dark:hover:border-green-600 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
+                  style={{ borderRadius: '3px' }}
+                >
+                  Accept Empty
+                </button>
+                <button
+                  onClick={() => {
+                    rejectAllChanged();
+                    toast.info('Rejected all re-translations');
+                  }}
+                  className="px-3 py-1.5 text-xs font-bold text-amber-700 dark:text-amber-300 bg-gradient-to-br from-amber-50 to-yellow-50 dark:from-amber-900/30 dark:to-yellow-900/30 border border-amber-300 dark:border-amber-700 hover:border-amber-400 dark:hover:border-amber-600 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
+                  style={{ borderRadius: '3px' }}
+                >
+                  Reject Changed
+                </button>
+                <button
+                  onClick={() => {
+                    const accepted = acceptAll();
+                    if (accepted.size > 0) {
+                      const updated = [...translations];
+                      accepted.forEach((translation, idx) => { updated[idx] = translation; });
+                      setTranslations(updated);
+                      toast.success(`Accepted all ${accepted.size} translations`);
+                    }
+                  }}
+                  className="px-3 py-1.5 text-xs font-bold text-white bg-gradient-to-br from-green-600 to-emerald-700 dark:from-green-500 dark:to-emerald-600 border border-green-700 dark:border-green-600 hover:border-green-600 dark:hover:border-green-500 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
+                  style={{ borderRadius: '3px' }}
+                >
+                  Accept All
+                </button>
+                <div className="w-px h-6 bg-gray-300 dark:bg-gray-600 mx-2" />
+                <button
+                  onClick={exitReview}
+                  className="px-3 py-1.5 text-xs font-bold text-gray-700 dark:text-gray-300 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
+                  style={{ borderRadius: '3px' }}
+                >
+                  Exit Review
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Review List */}
+          <div className="flex-1 overflow-y-auto">
+            <div className="max-w-5xl mx-auto py-6 px-6 space-y-4">
+              {bulkResults.map((result) => (
+                <div
+                  key={result.index}
+                  className="border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 overflow-hidden shadow-sm hover:shadow-md transition-all duration-200"
+                  style={{ borderRadius: '3px' }}
+                >
+                  {/* Line header */}
+                  <div className="flex items-center justify-between px-4 py-2.5 bg-gray-50 dark:bg-gray-900 border-b border-gray-300 dark:border-gray-600">
+                    <div className="flex items-center gap-3">
+                      <span className="text-[10px] font-bold text-gray-400 dark:text-gray-500 font-mono tracking-wide">#{result.index + 1}</span>
+                      {result.speaker && (
+                        <span className="text-xs font-black text-violet-600 dark:text-violet-400 tracking-tight">[{result.speaker}]</span>
+                      )}
+                      {result.wasEmpty && (
+                        <span
+                          className="inline-flex items-center px-1.5 py-0.5 text-[8px] font-bold uppercase tracking-wide bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 border border-blue-300 dark:border-blue-700"
+                          style={{ borderRadius: '2px' }}
+                        >
+                          new
+                        </span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <button
+                        onClick={() => {
+                          const translation = acceptResult(result.index);
+                          if (translation) {
+                            const updated = [...translations];
+                            updated[result.index] = translation;
+                            setTranslations(updated);
+                            toast.success(`Accepted line ${result.index + 1}`);
+                          }
+                        }}
+                        className="px-2.5 py-1 text-[10px] font-bold text-white bg-gradient-to-br from-green-600 to-emerald-700 dark:from-green-500 dark:to-emerald-600 border border-green-700 dark:border-green-600 hover:border-green-600 dark:hover:border-green-500 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
+                        style={{ borderRadius: '3px' }}
+                      >
+                        Accept
+                      </button>
+                      <button
+                        onClick={() => {
+                          rejectResult(result.index);
+                          toast.info(`Kept original for line ${result.index + 1}`);
+                        }}
+                        className="px-2.5 py-1 text-[10px] font-bold text-gray-700 dark:text-gray-300 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 border border-gray-300 dark:border-gray-600 hover:border-red-400 dark:hover:border-red-500 hover:text-red-600 dark:hover:text-red-400 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
+                        style={{ borderRadius: '3px' }}
+                      >
+                        Keep Old
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="px-4 py-3 space-y-2.5">
+                    {/* Source */}
+                    <div className="text-sm text-gray-800 dark:text-gray-200">
+                      <span className="text-[9px] font-bold uppercase text-gray-400 dark:text-gray-500 tracking-widest mr-2">EN</span>
+                      {result.sourceText}
+                    </div>
+
+                    {/* Old translation (if existed) */}
+                    {!result.wasEmpty && result.originalTranslation && (
+                      <div className="text-sm text-gray-400 dark:text-gray-500 line-through decoration-gray-300 dark:decoration-gray-600">
+                        <span className="text-[9px] font-bold uppercase text-gray-400 dark:text-gray-500 tracking-widest mr-2 no-underline">WAS</span>
+                        {result.originalTranslation}
+                      </div>
+                    )}
+
+                    {/* Opus translation — editable */}
+                    <div
+                      className="relative bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 focus-within:border-green-400 dark:focus-within:border-green-600 focus-within:ring-1 focus-within:ring-green-300 dark:focus-within:ring-green-700 transition-all"
+                      style={{ borderRadius: '3px' }}
+                    >
+                      <span className="absolute top-2 left-3 text-[9px] font-bold uppercase text-green-500 dark:text-green-400 tracking-widest pointer-events-none">NL</span>
+                      <textarea
+                        value={result.opusTranslation}
+                        onChange={(e) => updateResultTranslation(result.index, e.target.value)}
+                        className="w-full text-sm text-green-800 dark:text-green-200 bg-transparent pl-8 pr-3 py-2 resize-none focus:outline-none"
+                        rows={Math.max(1, Math.ceil(result.opusTranslation.length / 80))}
+                      />
+                    </div>
+                  </div>
+                </div>
+              ))}
+
+              {bulkResults.length === 0 && (
+                <div className="text-center py-16">
+                  <div
+                    className="inline-flex items-center justify-center w-16 h-16 bg-green-100 dark:bg-green-900/30 mb-4"
+                    style={{ borderRadius: '3px' }}
+                  >
+                    <svg className="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7"/></svg>
+                  </div>
+                  <p className="text-lg font-black text-gray-900 dark:text-white tracking-tight uppercase mb-1">All Reviewed</p>
+                  <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">Every translation has been processed.</p>
+                  <button
+                    onClick={exitReview}
+                    className="px-4 py-2 text-xs font-bold text-white bg-gradient-to-br from-gray-900 to-black dark:from-gray-100 dark:to-white dark:text-black border border-gray-800 dark:border-gray-200 hover:shadow-lg transition-all duration-300 ease-out tracking-tight uppercase"
+                    style={{ borderRadius: '3px' }}
+                  >
+                    Back to Translation
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
       
       <style jsx>{`
         @keyframes fadeIn {

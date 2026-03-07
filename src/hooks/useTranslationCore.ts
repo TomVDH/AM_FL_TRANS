@@ -123,10 +123,7 @@ export const useTranslationCore = (): TranslationCoreState => {
       newTranslations[currentIndex] = convertDisplayToStorage(currentTranslation);
       setTranslations(newTranslations);
 
-      // Show success feedback
-      if (currentTranslation.trim() !== '') {
-        toast.success('Translation saved', { duration: 1500 });
-      }
+      // Silent — progress bar and Modified/Unchanged badge show the state
     }
 
     // Only move to next if not on last row

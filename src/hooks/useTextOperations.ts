@@ -68,7 +68,7 @@ export const useTextOperations = ({
       // Remove whitespace and clean the text before copying
       const cleanText = sourceText.trim().replace(/\s+/g, ' ');
       navigator.clipboard.writeText(cleanText);
-      toast.success('Source text copied to clipboard');
+      // Silent — clipboard action is obvious from context
     }
   }, [currentIndex, sourceTexts]);
 
@@ -175,7 +175,7 @@ export const useTextOperations = ({
       });
 
       if (response.ok) {
-        toast.success('Translation saved successfully');
+        // Silent — save success is obvious from context
       } else {
         const data = await response.json();
         toast.error(data.error || 'Failed to save translation');

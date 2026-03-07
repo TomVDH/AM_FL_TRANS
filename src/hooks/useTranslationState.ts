@@ -2,6 +2,8 @@ import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react'
 import * as XLSX from 'xlsx';
 import { toast } from 'sonner';
 import { extractEpisodeNumber } from '@/utils/episodeExtractor';
+import { useLiveEdit } from './useLiveEdit';
+import type { SyncStatus } from './useLiveEdit';
 
 // Filter options for entry navigation
 export type FilterStatus = 'all' | 'completed' | 'blank' | 'modified';
@@ -138,11 +140,22 @@ export interface TranslationState {
 
   // LIVE EDIT mode
   liveEditMode: boolean;
-  syncStatus: 'idle' | 'syncing' | 'synced' | 'error';
+  syncStatus: SyncStatus;
   lastSyncTime: Date | null;
   setLiveEditMode: (mode: boolean) => void;
   toggleLiveEditMode: () => void;
   syncCurrentTranslation: () => Promise<void>;
+
+  // Batch sync
+  showSyncModal: boolean;
+  syncModalDirtyCount: number;
+  isBatchSyncing: boolean;
+  batchSyncProgress: number;
+  batchSyncTotal: number;
+  startBatchSync: () => void;
+  skipBatchSync: () => void;
+  closeSyncModal: () => void;
+  dirtyCount: number;
 
   // Completion flow state
   showCompletionSummary: boolean;
@@ -214,10 +227,8 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
   // ========== Filtering State ==========
   const [filterOptions, setFilterOptions] = useState<FilterOptions>({ status: 'all' });
 
-  // ========== LIVE EDIT State ==========
-  const [liveEditMode, setLiveEditMode] = useState(false);
-  const [syncStatus, setSyncStatus] = useState<'idle' | 'syncing' | 'synced' | 'error'>('idle');
-  const [lastSyncTime, setLastSyncTime] = useState<Date | null>(null);
+  // ========== LIVE EDIT (extracted to useLiveEdit hook) ==========
+  // Instantiated after translationColumn is defined — see below
 
   // ========== Completion Flow State ==========
   const [showCompletionSummary, setShowCompletionSummary] = useState(false);
@@ -369,6 +380,21 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
     [translationColumn, columnLetterToIndex]
   );
 
+  // ========== LIVE EDIT Hook ==========
+  const liveEdit = useLiveEdit({
+    translations,
+    originalTranslations,
+    setOriginalTranslations,
+    loadedFileName,
+    loadedFileType,
+    selectedSheet,
+    startRow,
+    translationColumn,
+    currentIndex,
+    currentTranslation,
+    hasCurrentEntryChanged,
+  });
+
   // Language detection keywords mapping
   const LANGUAGE_KEYWORDS: Record<string, { code: string; name: string }> = {
     'dutch': { code: 'NL', name: 'Dutch' },
@@ -491,12 +517,8 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
       newTranslations[currentIndex] = currentTranslation.trim() === '' ? '[BLANK, REMOVE LATER]' : currentTranslation;
       setTranslations(newTranslations);
 
-      // Show success feedback
+      // Silent — progress bar and Modified/Unchanged badge show the state
       if (currentTranslation.trim() !== '') {
-        toast.success('Translation saved', {
-          duration: 1500,
-        });
-
         // Save to translation memory (always, not just LIVE EDIT)
         const source = sourceTexts[currentIndex];
         if (source && onTranslationSaved) {
@@ -822,10 +844,9 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
       // Remove whitespace and clean the text before copying
       const cleanText = sourceText.trim().replace(/\s+/g, ' ');
       navigator.clipboard.writeText(cleanText);
-      toast.success('Source text copied to clipboard');
     }
   }, [currentIndex, sourceTexts]);
-  
+
   /**
    * Copy source text to JSON search
    */
@@ -856,7 +877,7 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
       });
 
       if (response.ok) {
-        toast.success('Translation saved successfully');
+        // Silent — save success is obvious from context
       } else {
         const data = await response.json();
         toast.error(data.error || 'Failed to save translation');
@@ -998,97 +1019,8 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
   }, [sourceTexts.length]);
 
   // ========== LIVE EDIT Functions ==========
-
-  /**
-   * Toggle LIVE EDIT mode
-   */
-  const toggleLiveEditMode = useCallback(() => {
-    setLiveEditMode(prev => {
-      if (!prev) {
-        // Entering LIVE EDIT mode
-        setSyncStatus('idle');
-        toast.info('LIVE EDIT mode enabled - changes will sync to Excel');
-      } else {
-        // Exiting LIVE EDIT mode
-        toast.info('LIVE EDIT mode disabled');
-      }
-      return !prev;
-    });
-  }, []);
-
-  /**
-   * Sync current translation to Excel file
-   * Called when navigating (Previous/Submit) in LIVE EDIT mode
-   */
-  const syncCurrentTranslation = useCallback(async () => {
-    // Only sync if in LIVE EDIT mode and we have a file loaded
-    if (!liveEditMode) return;
-    if (!loadedFileName) {
-      toast.error('No file loaded for LIVE EDIT');
-      return;
-    }
-    if (loadedFileType !== 'excel') {
-      toast.error('LIVE EDIT only works with Excel files');
-      return;
-    }
-    if (!selectedSheet) {
-      toast.error('No sheet selected');
-      return;
-    }
-
-    // Check if current entry has changed
-    if (!hasCurrentEntryChanged()) {
-      // No changes to sync
-      return;
-    }
-
-    setSyncStatus('syncing');
-
-    try {
-      const cellRef = `${translationColumn}${startRow + currentIndex}`;
-      const response = await fetch('/api/xlsx-save', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          sourceFileName: loadedFileName,
-          sheetName: selectedSheet,
-          cellRef,
-          value: currentTranslation.trim()
-        })
-      });
-
-      const data = await response.json();
-
-      if (response.ok && data.success) {
-        // Update originalTranslations to reflect the saved state
-        const newOriginals = [...originalTranslations];
-        newOriginals[currentIndex] = currentTranslation.trim() || '[BLANK, REMOVE LATER]';
-        setOriginalTranslations(newOriginals);
-
-        setSyncStatus('synced');
-        setLastSyncTime(new Date());
-        toast.success(`Saved ${cellRef} to ${loadedFileName}`);
-      } else {
-        setSyncStatus('error');
-        toast.error(`Sync failed: ${data.error || 'Unknown error'}`);
-      }
-    } catch (error) {
-      setSyncStatus('error');
-      toast.error('Sync failed: Network error');
-      console.error('LIVE EDIT sync error:', error);
-    }
-  }, [
-    liveEditMode,
-    loadedFileName,
-    loadedFileType,
-    selectedSheet,
-    hasCurrentEntryChanged,
-    startRow,
-    currentIndex,
-    currentTranslation,
-    originalTranslations,
-    translationColumn
-  ]);
+  // All live edit logic (toggle, sync, batch sync, dirty tracking) is now in useLiveEdit hook.
+  // See liveEdit.* below.
 
   // Process Excel data when sheet, columns, or start row changes
   useEffect(() => {
@@ -1312,13 +1244,24 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
     navigateToNextFiltered,
     navigateToPrevFiltered,
 
-    // LIVE EDIT
-    liveEditMode,
-    syncStatus,
-    lastSyncTime,
-    setLiveEditMode,
-    toggleLiveEditMode,
-    syncCurrentTranslation,
+    // LIVE EDIT (from useLiveEdit hook)
+    liveEditMode: liveEdit.liveEditMode,
+    syncStatus: liveEdit.syncStatus,
+    lastSyncTime: liveEdit.lastSyncTime,
+    setLiveEditMode: liveEdit.setLiveEditMode,
+    toggleLiveEditMode: liveEdit.toggleLiveEditMode,
+    syncCurrentTranslation: liveEdit.syncCurrentTranslation,
+
+    // Batch sync (from useLiveEdit hook)
+    showSyncModal: liveEdit.showSyncModal,
+    syncModalDirtyCount: liveEdit.syncModalDirtyCount,
+    isBatchSyncing: liveEdit.isBatchSyncing,
+    batchSyncProgress: liveEdit.batchSyncProgress,
+    batchSyncTotal: liveEdit.batchSyncTotal,
+    startBatchSync: liveEdit.startBatchSync,
+    skipBatchSync: liveEdit.skipBatchSync,
+    closeSyncModal: liveEdit.closeSyncModal,
+    dirtyCount: liveEdit.dirtyCount,
 
     // Completion flow
     showCompletionSummary,

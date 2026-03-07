@@ -668,9 +668,26 @@ const DeleteConfirmDialog: React.FC<DeleteConfirmDialogProps> = ({
 // CATEGORY BADGE
 // ============================================================================
 
-const getCategoryBadgeClass = (): string => {
-  // Monochrome badges - gray variations only for clean developer aesthetic
-  return 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600';
+const getCategoryBadgeClass = (category: string): string => {
+  const cat = category?.toUpperCase() || '';
+  switch (cat) {
+    case 'CHARACTER':
+      return 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-700';
+    case 'LOCATION':
+      return 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700';
+    case 'ITEM':
+      return 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-700';
+    case 'CONCEPT':
+      return 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-700';
+    case 'ORGANIZATION':
+      return 'bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300 border border-rose-300 dark:border-rose-700';
+    case 'SPECIES':
+      return 'bg-cyan-100 dark:bg-cyan-900/40 text-cyan-700 dark:text-cyan-300 border border-cyan-300 dark:border-cyan-700';
+    case 'TERM':
+      return 'bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-700';
+    default:
+      return 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600';
+  }
 };
 
 // ============================================================================
@@ -819,27 +836,27 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
       </div>
 
       {/* Results count */}
-      <div className="text-xs text-gray-500 dark:text-gray-400">
-        Showing {filteredEntries.length} of {entries.length} entries
-        {categoryFilter !== 'all' && ` in ${categoryFilter}`}
+      <div className="text-xs text-gray-500 dark:text-gray-400 font-medium">
+        Showing <span className="text-gray-700 dark:text-gray-300 font-bold">{filteredEntries.length}</span> of {entries.length} entries
+        {categoryFilter !== 'all' && <span className="text-gray-700 dark:text-gray-300"> in {categoryFilter}</span>}
       </div>
 
       {/* Table */}
-      <div className="border border-gray-200 dark:border-gray-700 overflow-hidden" style={{ borderRadius: '3px' }}>
-        <div className="max-h-[500px] overflow-y-auto custom-scrollbar">
-          <table className="w-full text-sm">
-            <thead className="bg-gray-50 dark:bg-gray-700 sticky top-0">
+      <div className="border-2 border-gray-300 dark:border-gray-600 overflow-hidden" style={{ borderRadius: '3px' }}>
+        <div className="max-h-[600px] overflow-y-auto custom-scrollbar">
+          <table className="w-full text-sm table-fixed">
+            <thead className="bg-gray-100 dark:bg-gray-700 sticky top-0 z-10 border-b-2 border-gray-300 dark:border-gray-600">
               <tr>
-                <th className="px-3 py-2 text-left text-xs font-bold text-gray-700 dark:text-gray-300 uppercase">
+                <th className="px-4 py-3 text-left text-xs font-black text-gray-700 dark:text-gray-300 uppercase tracking-wide" style={{ width: '18%' }}>
                   Name
                 </th>
-                <th className="px-3 py-2 text-left text-xs font-bold text-gray-700 dark:text-gray-300 uppercase">
+                <th className="px-4 py-3 text-left text-xs font-black text-gray-700 dark:text-gray-300 uppercase tracking-wide" style={{ width: '32%' }}>
                   English
                 </th>
-                <th className="px-3 py-2 text-left text-xs font-bold text-gray-700 dark:text-gray-300 uppercase">
+                <th className="px-4 py-3 text-left text-xs font-black text-gray-700 dark:text-gray-300 uppercase tracking-wide" style={{ width: '32%' }}>
                   Translation
                 </th>
-                <th className="px-3 py-2 text-left text-xs font-bold text-gray-700 dark:text-gray-300 uppercase w-24">
+                <th className="px-4 py-3 text-left text-xs font-black text-gray-700 dark:text-gray-300 uppercase tracking-wide" style={{ width: '18%' }}>
                   Category
                 </th>
               </tr>
@@ -854,21 +871,23 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                       cursor-pointer transition-colors
                       ${editingName === entry.name
                         ? 'bg-blue-50 dark:bg-blue-900/20'
-                        : 'bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700'
+                        : index % 2 === 0
+                          ? 'bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700/80'
+                          : 'bg-gray-50/50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-700/80'
                       }
                     `}
                   >
-                    <td className="px-3 py-2 text-gray-900 dark:text-gray-100 font-medium">
+                    <td className="px-4 py-2.5 text-gray-900 dark:text-gray-100 font-semibold">
                       {entry.name}
                     </td>
-                    <td className="px-3 py-2 text-gray-600 dark:text-gray-400 truncate max-w-[200px]">
+                    <td className="px-4 py-2.5 text-gray-600 dark:text-gray-400 overflow-hidden text-ellipsis whitespace-nowrap" title={entry.english}>
                       {entry.english}
                     </td>
-                    <td className="px-3 py-2 text-gray-900 dark:text-gray-100 truncate max-w-[200px]">
-                      {entry[TRANSLATION_FIELD] as string || ''}
+                    <td className="px-4 py-2.5 text-gray-900 dark:text-gray-100 overflow-hidden text-ellipsis whitespace-nowrap" title={entry[TRANSLATION_FIELD] as string || ''}>
+                      {entry[TRANSLATION_FIELD] as string || <span className="text-gray-400 dark:text-gray-600 italic">—</span>}
                     </td>
-                    <td className="px-3 py-2">
-                      <span className={`codex-category-badge inline-flex items-center px-2 py-0.5 text-[10px] font-bold uppercase ${getCategoryBadgeClass()}`}>
+                    <td className="px-4 py-2.5">
+                      <span className={`codex-category-badge inline-flex items-center px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wide ${getCategoryBadgeClass(entry.category)}`} style={{ borderRadius: '3px' }}>
                         {entry.category}
                       </span>
                     </td>
@@ -876,8 +895,8 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
 
                   {/* Edit row (expanded) - Full Field Editing */}
                   {editingName === entry.name && (
-                    <tr className="bg-blue-50 dark:bg-blue-900/10">
-                      <td colSpan={4} className="px-3 py-4">
+                    <tr className="bg-blue-50 dark:bg-blue-900/10 border-t border-blue-200 dark:border-blue-800">
+                      <td colSpan={4} className="px-4 py-4">
                         <div className="space-y-4">
                           {/* Row 1: English, Dutch, Category */}
                           <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -1049,7 +1068,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
 
               {filteredEntries.length === 0 && (
                 <tr>
-                  <td colSpan={4} className="px-3 py-8 text-center text-gray-500 dark:text-gray-400">
+                  <td colSpan={4} className="px-4 py-8 text-center text-gray-500 dark:text-gray-400">
                     {searchTerm || categoryFilter !== 'all'
                       ? 'No entries match your filters'
                       : 'No entries in codex'}
