@@ -1243,16 +1243,42 @@ const TranslationHelper: React.FC = () => {
           </button>
         </div>
 
-        {/* Column Headers - Outside the boxes */}
+        {/* View Switcher — segmented control for mutually exclusive views */}
+        <div className="flex items-center gap-4 mb-3">
+          <div className="inline-flex bg-gray-100 dark:bg-gray-800 p-0.5" style={{ borderRadius: '3px' }}>
+            <button
+              onClick={() => { if (gamepadMode) toggleGamepadMode(); if (conversationMode) toggleConversationMode(); }}
+              className={`px-3 py-1 text-xs font-medium transition-colors ${!gamepadMode && !conversationMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'}`}
+              style={{ borderRadius: '2px' }}
+            >
+              Standard
+            </button>
+            <button
+              onClick={() => { if (!gamepadMode) toggleGamepadMode(); if (conversationMode) toggleConversationMode(); }}
+              className={`px-3 py-1 text-xs font-medium transition-colors ${gamepadMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'}`}
+              style={{ borderRadius: '2px' }}
+            >
+              Gamepad
+            </button>
+            <button
+              onClick={() => { if (gamepadMode) toggleGamepadMode(); if (!conversationMode) toggleConversationMode(); }}
+              disabled={!isStarted || sourceTexts.length === 0}
+              className={`px-3 py-1 text-xs font-medium transition-colors ${conversationMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 disabled:text-gray-300 dark:disabled:text-gray-600'}`}
+              style={{ borderRadius: '2px' }}
+            >
+              Conversation
+            </button>
+          </div>
+          <span className="text-xs text-gray-400 dark:text-gray-500">{getCellLocation(currentIndex)}</span>
+        </div>
+
+        {/* Column Headers */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-2">
-          <h2 className="text-sm font-black tracking-tight uppercase text-gray-600 dark:text-gray-400">
+          <h2 className="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">
             Source Text
-            <span className="ml-2 text-[10px] font-medium text-gray-400 dark:text-gray-500 normal-case">
-              • {getCellLocation(currentIndex)}
-            </span>
           </h2>
-          <h2 className="text-sm font-black tracking-tight uppercase text-gray-600 dark:text-gray-400">
-            Translation Input
+          <h2 className="text-xs font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400">
+            Translation
           </h2>
         </div>
 
@@ -1446,7 +1472,7 @@ const TranslationHelper: React.FC = () => {
 
                   {/* Main Source Text Display - SPOTLIGHT */}
                   <div
-                    className="relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm"
+                    className="relative bg-gray-50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700"
                     style={{
                       borderRadius: currentIndex > 0 && sourceTexts[currentIndex - 1] ? '0' : '3px 3px 0 0',
                     }}
@@ -1610,67 +1636,34 @@ const TranslationHelper: React.FC = () => {
               {/* Content Area */}
               <div className="p-4 flex-1 flex flex-col">
                   <div className="flex flex-col h-full">
-                    {/* Mode Toggles + Change Detection - Single Row */}
-                    <div className="flex items-center justify-between mb-2">
-                      <div className="flex items-center gap-0.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 px-1 py-0.5" style={{ borderRadius: '3px' }}>
-                        {/* View Modes Group */}
-                        <button onClick={toggleGamepadMode} className={`p-1.5 transition-all duration-150 ${gamepadMode ? 'text-gray-900 dark:text-white bg-gray-100 dark:bg-gray-700' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Game View (G)">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 5a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H4a2 2 0 01-2-2V5zm3.293 1.293a1 1 0 010 1.414l-1 1a1 1 0 01-1.414-1.414l1-1a1 1 0 011.414 0zM11 7a1 1 0 100 2 1 1 0 000-2zm2 1a1 1 0 011-1h1a1 1 0 110 2h-1a1 1 0 01-1-1z"/></svg>
-                        </button>
-                        <button
-                          onClick={toggleConversationMode}
-                          disabled={!isStarted || sourceTexts.length === 0}
-                          className={`p-1.5 transition-all duration-150 ${
-                            conversationMode
-                              ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-900/30'
-                              : !isStarted || sourceTexts.length === 0
-                                ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed'
-                                : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'
-                          }`}
-                          style={{ borderRadius: '2px' }}
-                          title="Conversation View"
-                        >
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M18 10c0 3.866-3.582 7-8 7a8.841 8.841 0 01-4.083-.98L2 17l1.338-3.123C2.493 12.767 2 11.434 2 10c0-3.866 3.582-7 8-7s8 3.134 8 7zM7 9H5v2h2V9zm8 0h-2v2h2V9zM9 9h2v2H9V9z" clipRule="evenodd" />
-                          </svg>
-                        </button>
-
-                        {/* Separator */}
-                        <div className="w-px h-4 bg-gray-200 dark:bg-gray-600 mx-0.5" />
-
-                        {/* Tools Group */}
-                        <button onClick={toggleHighlightMode} className={`p-1.5 transition-all duration-150 ${highlightMode ? 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Codex Highlights (H)">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/></svg>
-                        </button>
-                        <button onClick={toggleXlsxMode} className={`p-1.5 transition-all duration-150 ${xlsxMode ? 'text-gray-700 dark:text-gray-200 bg-gray-100 dark:bg-gray-700' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Reference Tools (R)">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/></svg>
-                        </button>
-                        <button onClick={() => setShowOutput(!showOutput)} className={`p-1.5 transition-all duration-150 ${showOutput ? 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Toggle Output">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" /></svg>
-                        </button>
-
-                        {/* Separator */}
-                        <div className="w-px h-4 bg-gray-200 dark:bg-gray-600 mx-0.5" />
-
-                        {/* Integrations Group */}
-                        <button onClick={toggleAiSuggest} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${aiSuggestEnabled ? 'text-amber-700 dark:text-amber-300 bg-amber-50 dark:bg-amber-900/30' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="AI Suggest (A)">
-                          <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
-                          <span>AI</span>
-                        </button>
-                        <button onClick={() => { if (loadedFileType !== 'excel') { toast.error('LIVE EDIT requires an Excel file to be loaded'); return; } toggleLiveEditMode(); }} disabled={loadedFileType !== 'excel'} className={`flex items-center gap-1 px-1.5 py-1 text-[10px] font-bold uppercase tracking-wide transition-all duration-150 ${liveEditMode ? 'text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/30' : loadedFileType !== 'excel' ? 'text-gray-300 dark:text-gray-600 cursor-not-allowed' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title={loadedFileType !== 'excel' ? 'Load an Excel file to enable LIVE EDIT' : 'Live Excel Sync'}>
-                          <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${liveEditMode ? syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' : syncStatus === 'synced' ? 'bg-green-500' : syncStatus === 'error' ? 'bg-red-500 animate-pulse' : 'bg-green-500' : 'bg-gray-400'}`} />
+                    {/* Tool Toggles — compact labeled row */}
+                    <div className="flex items-center gap-1 mb-2">
+                      <button onClick={toggleHighlightMode} className={`px-2 py-1 text-xs font-medium transition-colors ${highlightMode ? 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Codex Highlights (H)" aria-label="Toggle codex highlights" aria-pressed={highlightMode}>
+                        H
+                      </button>
+                      <button onClick={toggleAiSuggest} className={`px-2 py-1 text-xs font-medium transition-colors ${aiSuggestEnabled ? 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="AI Suggest (A)" aria-label="Toggle AI suggestions" aria-pressed={aiSuggestEnabled}>
+                        A
+                      </button>
+                      <button onClick={toggleXlsxMode} className={`px-2 py-1 text-xs font-medium transition-colors ${xlsxMode ? 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Reference Tools (R)" aria-label="Toggle reference tools" aria-pressed={xlsxMode}>
+                        R
+                      </button>
+                      <button onClick={() => setShowOutput(!showOutput)} className={`px-2 py-1 text-xs font-medium transition-colors ${showOutput ? 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Output Table" aria-label="Toggle output table" aria-pressed={showOutput}>
+                        O
+                      </button>
+                      {loadedFileType === 'excel' && (
+                        <button onClick={toggleLiveEditMode} className={`flex items-center gap-1 px-2 py-1 text-xs font-medium transition-colors ${liveEditMode ? 'bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`} style={{ borderRadius: '2px' }} title="Live Excel Sync" aria-label="Toggle live edit mode" aria-pressed={liveEditMode}>
+                          <span className={`w-1.5 h-1.5 rounded-full ${liveEditMode ? syncStatus === 'syncing' ? 'bg-yellow-500 animate-pulse' : syncStatus === 'error' ? 'bg-red-500' : 'bg-green-500' : 'bg-gray-400'}`} />
                           Live
                         </button>
-                      </div>
-                      {hasCurrentEntryChanged() ? (
-                        <span className="inline-flex items-center gap-1.5 px-2 py-1.5 text-[10px] font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 border border-green-300 dark:border-green-700" style={{ borderRadius: '3px' }}>
-                          <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                      )}
+
+                      <div className="flex-1" />
+
+                      {/* Modified indicator — only shown when modified */}
+                      {hasCurrentEntryChanged() && (
+                        <span className="flex items-center gap-1 text-xs text-green-600 dark:text-green-400">
+                          <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
                           Modified
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center gap-1.5 px-2 py-1.5 text-[10px] font-bold uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-600" style={{ borderRadius: '3px' }}>
-                          <span className="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
-                          Unchanged
                         </span>
                       )}
                     </div>
@@ -1686,20 +1679,21 @@ const TranslationHelper: React.FC = () => {
                           handleSubmitWithSync();
                         }
                       }}
-                      className={`w-full p-5 rounded-md focus:ring-2 focus:ring-opacity-30 transition-all duration-200 text-lg leading-relaxed shadow-inner text-gray-900 dark:text-white resize-none flex-1 ${
+                      className={`w-full p-5 rounded-md focus:ring-2 focus:ring-opacity-30 transition-all duration-200 text-lg leading-relaxed text-gray-900 dark:text-white resize-none flex-1 ${
                         hasCurrentEntryChanged()
                           ? 'border border-green-400 dark:border-green-600 bg-green-50 dark:bg-gray-700 focus:border-green-500 dark:focus:border-green-500 focus:ring-green-300'
                           : 'border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 focus:border-gray-500 dark:focus:border-gray-400 focus:ring-gray-300'
                       }`}
                       placeholder="Enter your translation..."
+                      aria-label={`Translation for entry ${currentIndex + 1} of ${sourceTexts.length}`}
                       autoFocus
                     />
 
-                    {/* AI Suggestion Golden Pill */}
+                    {/* AI Suggestion */}
                     {aiSuggestEnabled && (isLoadingAiSuggestion || isUpgradingAiSuggestion || aiSuggestion || aiSuggestError) && (
                       <div className="mt-2">
                         {isLoadingAiSuggestion && !isUpgradingAiSuggestion ? (
-                          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 border border-amber-300 dark:border-amber-600 text-amber-700 dark:text-amber-300 text-xs font-medium animate-pulse" style={{ borderRadius: '3px' }}>
+                          <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600 text-gray-500 dark:text-gray-400 text-xs animate-pulse" style={{ borderRadius: '3px' }}>
                             <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
                             Generating suggestion...
                           </div>
@@ -1709,44 +1703,30 @@ const TranslationHelper: React.FC = () => {
                             {aiSuggestError}
                           </div>
                         ) : aiSuggestion ? (
-                          <div className="inline-flex items-center gap-0 max-w-full" style={{ borderRadius: '3px' }}>
-                            {/* Main suggestion — click to insert */}
+                          <div className="flex items-start gap-2 px-3 py-2 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600 text-sm text-gray-700 dark:text-gray-300" style={{ borderRadius: '3px' }}>
                             <button
-                              onClick={() => {
-                                insertTranslatedSuggestion(aiSuggestion);
-                                clearAiSuggestion();
-                              }}
-                              className={`group inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/30 dark:to-yellow-900/30 border border-amber-300 dark:border-amber-600 hover:border-amber-400 dark:hover:border-amber-500 hover:shadow-md text-amber-800 dark:text-amber-200 text-xs transition-all duration-150 cursor-pointer min-w-0 ${aiSuggestionModel === 'haiku' ? 'border-r-0' : ''}`}
-                              style={{ borderRadius: aiSuggestionModel === 'haiku' ? '3px 0 0 3px' : '3px' }}
-                              title="Click to insert AI suggestion"
+                              onClick={() => { insertTranslatedSuggestion(aiSuggestion); clearAiSuggestion(); }}
+                              className="flex-1 text-left hover:text-gray-900 dark:hover:text-gray-100 transition-colors cursor-pointer"
+                              title="Click to insert"
                             >
-                              <svg className="w-3 h-3 text-amber-500 dark:text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/></svg>
-                              <span className="truncate">{aiSuggestion}</span>
-                              <span className={`shrink-0 px-1 py-0.5 text-[9px] font-bold uppercase tracking-wider rounded-sm ${aiSuggestionModel === 'sonnet' ? 'bg-gray-200 dark:bg-gray-600 text-gray-700 dark:text-gray-200' : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300'}`}>
-                                {aiSuggestionModel || 'haiku'}
-                              </span>
-                              <svg className="w-3 h-3 text-amber-400 dark:text-amber-500 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4"/></svg>
+                              {aiSuggestion}
                             </button>
-                            {/* Upgrade button — only when Haiku */}
+                            <span className="shrink-0 px-1.5 py-0.5 text-[10px] font-medium bg-gray-200 dark:bg-gray-600 text-gray-500 dark:text-gray-400" style={{ borderRadius: '2px' }}>
+                              {aiSuggestionModel || 'haiku'}
+                            </span>
                             {aiSuggestionModel === 'haiku' && !isUpgradingAiSuggestion && (
-                              <button
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  upgradeAiSuggestion();
-                                }}
-                                className="inline-flex items-center px-2 py-1.5 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md text-gray-600 dark:text-gray-300 text-xs transition-all duration-150 cursor-pointer"
-                                style={{ borderRadius: '0 3px 3px 0' }}
-                                title="Upgrade to Sonnet for better quality"
-                              >
-                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 15l7-7 7 7"/></svg>
+                              <button onClick={(e) => { e.stopPropagation(); upgradeAiSuggestion(); }} className="shrink-0 p-0.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors" title="Upgrade to Sonnet" aria-label="Upgrade suggestion to Sonnet">
+                                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7"/></svg>
                               </button>
                             )}
-                            {/* Upgrading spinner */}
                             {isUpgradingAiSuggestion && (
-                              <div className="inline-flex items-center px-2 py-1.5 bg-gray-50 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-300 text-xs animate-pulse" style={{ borderRadius: '0 3px 3px 0' }}>
-                                <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
+                              <div className="shrink-0 p-0.5 text-gray-400 animate-pulse">
+                                <svg className="w-3.5 h-3.5 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
                               </div>
                             )}
+                            <button onClick={clearAiSuggestion} className="shrink-0 p-0.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors" title="Dismiss" aria-label="Dismiss AI suggestion">
+                              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/></svg>
+                            </button>
                           </div>
                         ) : null}
                       </div>
@@ -1762,16 +1742,15 @@ const TranslationHelper: React.FC = () => {
                         <button
                           onClick={handleSubmitWithSync}
                           disabled={syncStatus === 'syncing'}
-                          className="group relative h-9 px-6 bg-gradient-to-br from-gray-900 via-black to-gray-900 dark:from-gray-100 dark:via-white dark:to-gray-100 text-white dark:text-black border border-gray-800 dark:border-gray-200 hover:border-gray-700 dark:hover:border-gray-300 hover:shadow-lg active:shadow-inner active:scale-[0.98] transition-all duration-300 ease-out font-bold tracking-wide uppercase text-xs overflow-hidden disabled:opacity-50 disabled:cursor-not-allowed"
+                          className="h-9 px-6 bg-gray-900 dark:bg-gray-100 text-white dark:text-black border border-gray-800 dark:border-gray-200 hover:bg-gray-800 dark:hover:bg-gray-200 active:scale-[0.98] transition-all font-bold tracking-wide uppercase text-xs disabled:opacity-50 disabled:cursor-not-allowed"
                           style={{ borderRadius: '3px' }}
                         >
-                          <span className="relative z-10 flex items-center gap-2">
+                          <span className="flex items-center gap-2">
                             {syncStatus === 'syncing' ? 'Syncing...' : currentIndex === sourceTexts.length - 1 ? 'Complete' : 'Submit'}
                             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14m-7-7l7 7-7 7" />
                             </svg>
                           </span>
-                          <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black dark:from-gray-200 dark:via-gray-100 dark:to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
                         </button>
 
                         {/* XLSX Translation Suggestions - DISABLED per user request */}
