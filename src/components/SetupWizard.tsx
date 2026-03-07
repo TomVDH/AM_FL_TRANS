@@ -509,74 +509,55 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
         {/* File Selection — flat, no card wrapper */}
         <div className="space-y-3">
-          {/* Server file selector row */}
-          <div className="flex items-center gap-2">
-            <div className="flex shrink-0" role="group" aria-label="File type">
-              {['excel', 'json', 'csv'].map((type) => (
-                <button
-                  key={type}
-                  onClick={() => handleFileTypeChange(type as 'excel' | 'json' | 'csv')}
-                  aria-pressed={fileType === type}
-                  className={`px-2.5 py-1.5 text-[10px] font-bold uppercase tracking-wide transition-all duration-200 first:rounded-l-[3px] last:rounded-r-[3px] ${
-                    fileType === type
-                      ? 'bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900'
-                      : 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-600'
-                  }`}
-                >
-                  {type === 'excel' ? 'XLS' : type.toUpperCase()}
-                </button>
-              ))}
-            </div>
-
-            <div className="flex-1 min-w-0">
-              {fileType === 'excel' && (
-                <>
-                  {loadingExistingFiles ? (
-                    <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
-                  ) : existingFiles.length > 0 ? (
-                    <select
-                      value={selectedExistingFile}
-                      onChange={(e) => handleExistingFileSelect(e.target.value)}
-                      className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
-                      style={{ borderRadius: '3px' }}
-                    >
-                      <option value="">Select file from server...</option>
-                      {existingFiles.map(file => (
-                        <option key={file.fileName} value={file.fileName}>
-                          {file.fileName} ({file.sheets?.length || 0} sheets)
-                        </option>
-                      ))}
-                    </select>
-                  ) : (
-                    <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /excels</div>
-                  )}
-                </>
-              )}
-              {(fileType === 'json' || fileType === 'csv') && (
-                <>
-                  {loadingDataFiles ? (
-                    <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
-                  ) : (fileType === 'json' ? jsonFiles : csvFiles).length > 0 ? (
-                    <select
-                      value={selectedDataFile}
-                      onChange={(e) => {
-                        console.log(`[SetupWizard] ${fileType.toUpperCase()} file selected:`, e.target.value);
-                        setSelectedDataFile(e.target.value);
-                      }}
-                      className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
-                      style={{ borderRadius: '3px' }}
-                    >
-                      <option value="">Select file from server...</option>
-                      {(fileType === 'json' ? jsonFiles : csvFiles).map(file => (
-                        <option key={file} value={file}>{file}</option>
-                      ))}
-                    </select>
-                  ) : (
-                    <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /data/{fileType}</div>
-                  )}
-                </>
-              )}
-            </div>
+          {/* Server file selector */}
+          <div>
+            {fileType === 'excel' && (
+              <>
+                {loadingExistingFiles ? (
+                  <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
+                ) : existingFiles.length > 0 ? (
+                  <select
+                    value={selectedExistingFile}
+                    onChange={(e) => handleExistingFileSelect(e.target.value)}
+                    className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
+                    style={{ borderRadius: '3px' }}
+                  >
+                    <option value="">Select file from server...</option>
+                    {existingFiles.map(file => (
+                      <option key={file.fileName} value={file.fileName}>
+                        {file.fileName} ({file.sheets?.length || 0} sheets)
+                      </option>
+                    ))}
+                  </select>
+                ) : (
+                  <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /excels</div>
+                )}
+              </>
+            )}
+            {(fileType === 'json' || fileType === 'csv') && (
+              <>
+                {loadingDataFiles ? (
+                  <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
+                ) : (fileType === 'json' ? jsonFiles : csvFiles).length > 0 ? (
+                  <select
+                    value={selectedDataFile}
+                    onChange={(e) => {
+                      console.log(`[SetupWizard] ${fileType.toUpperCase()} file selected:`, e.target.value);
+                      setSelectedDataFile(e.target.value);
+                    }}
+                    className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
+                    style={{ borderRadius: '3px' }}
+                  >
+                    <option value="">Select file from server...</option>
+                    {(fileType === 'json' ? jsonFiles : csvFiles).map(file => (
+                      <option key={file} value={file}>{file}</option>
+                    ))}
+                  </select>
+                ) : (
+                  <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /data/{fileType}</div>
+                )}
+              </>
+            )}
           </div>
 
           {/* Upload drop zone — compact */}
@@ -796,10 +777,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           <div className="flex items-center gap-2">
             <button
               onClick={() => setShowCodexEditor(!showCodexEditor)}
-              className="flex-1 flex items-center justify-between py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="flex-1 flex items-center justify-between py-2 text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
               <span className="flex items-center gap-2">
-                <span className="font-medium">Codex</span>
+                <span className="text-sm font-bold tracking-tight">Codex</span>
                 {totalEntries > 0 && (
                   <span className="px-1.5 py-0.5 text-[10px] font-medium bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 rounded">
                     {totalEntries}
@@ -845,9 +826,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         <div className="mt-4">
           <button
             onClick={() => setShowAdvanced(!showAdvanced)}
-            className="flex-1 w-full flex items-center justify-between py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+            className="flex-1 w-full flex items-center justify-between py-2 text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
           >
-            <span className="font-medium">Advanced</span>
+            <span className="text-sm font-bold tracking-tight">Advanced</span>
             <svg
               className={`w-4 h-4 text-gray-400 transform transition-transform duration-200 ${showAdvanced ? 'rotate-180' : ''}`}
               fill="none"
@@ -858,11 +839,33 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             </svg>
           </button>
           {showAdvanced && (
-            <div className="mt-2 space-y-3">
-              <StyleAnalysisPanel />
+            <div className="mt-2 space-y-4">
+              {/* File type selector */}
+              <div>
+                <label className="block text-[10px] font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1.5">File Type</label>
+                <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 inline-flex" style={{ borderRadius: '3px' }}>
+                  {['excel', 'json', 'csv'].map((type) => (
+                    <button
+                      key={type}
+                      onClick={() => handleFileTypeChange(type as 'excel' | 'json' | 'csv')}
+                      aria-pressed={fileType === type}
+                      className={`px-3 py-1 text-[10px] font-medium uppercase tracking-wide transition-all duration-200 ${
+                        fileType === type
+                          ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
+                          : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                      }`}
+                      style={{ borderRadius: '2px' }}
+                    >
+                      {type === 'excel' ? 'XLS' : type.toUpperCase()}
+                    </button>
+                  ))}
+                </div>
+              </div>
 
-              <div className="flex justify-center">
-                <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 flex" style={{ borderRadius: '3px' }}>
+              {/* Input mode selector */}
+              <div>
+                <label className="block text-[10px] font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1.5">Input Mode</label>
+                <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 inline-flex" style={{ borderRadius: '3px' }}>
                   {['excel', 'embedded-json', 'manual'].map((mode) => (
                     <button
                       key={mode}
@@ -880,20 +883,26 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                 </div>
               </div>
 
-              <div className="flex justify-center gap-2">
+              {/* Style Analysis */}
+              <StyleAnalysisPanel />
+
+              {/* Quick links + Reset */}
+              <div className="flex items-center gap-2">
                 <VideoButton />
                 <GitHubButton />
                 <CodexButton />
+                <div className="flex-1" />
                 {setShowResetModal && (
                   <button
                     onClick={() => setShowResetModal(true)}
-                    className="group h-9 w-9 flex items-center justify-center text-gray-400 hover:text-red-500 dark:hover:text-red-400 border border-gray-200 dark:border-gray-700 hover:border-red-300 dark:hover:border-red-500 transition-colors"
+                    className="group h-8 px-2.5 flex items-center gap-1.5 text-xs text-gray-400 hover:text-red-500 dark:hover:text-red-400 border border-gray-200 dark:border-gray-700 hover:border-red-300 dark:hover:border-red-500 transition-colors"
                     style={{ borderRadius: '3px' }}
                     title="Reset to originals"
                   >
                     <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                     </svg>
+                    <span>Reset</span>
                   </button>
                 )}
               </div>
