@@ -197,6 +197,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
   // Codex editor state - collapsed by default for cleaner setup
   const [showCodexEditor, setShowCodexEditor] = useState(false);
+  // Advanced section - collapsed by default
+  const [showAdvanced, setShowAdvanced] = useState(false);
 
   // Reference data availability check - also provides entry count
   const { hasLanguage, isLoading: isLoadingCodex, totalEntries, refresh: refreshCodex } = useCodexLanguages();
@@ -839,52 +841,65 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           )}
         </div>
 
-        {/* Advanced */}
-        <details className="mt-4">
-          <summary className="cursor-pointer text-xs text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-400 transition-colors py-1">
-            Advanced
-          </summary>
-          <div className="mt-2 space-y-3">
-            <StyleAnalysisPanel />
+        {/* Advanced — toggle matching Codex style */}
+        <div className="mt-4">
+          <button
+            onClick={() => setShowAdvanced(!showAdvanced)}
+            className="flex-1 w-full flex items-center justify-between py-2 text-sm text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+          >
+            <span className="font-medium">Advanced</span>
+            <svg
+              className={`w-4 h-4 text-gray-400 transform transition-transform duration-200 ${showAdvanced ? 'rotate-180' : ''}`}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          {showAdvanced && (
+            <div className="mt-2 space-y-3">
+              <StyleAnalysisPanel />
 
-            <div className="flex justify-center">
-              <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 flex" style={{ borderRadius: '3px' }}>
-                {['excel', 'embedded-json', 'manual'].map((mode) => (
+              <div className="flex justify-center">
+                <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 flex" style={{ borderRadius: '3px' }}>
+                  {['excel', 'embedded-json', 'manual'].map((mode) => (
+                    <button
+                      key={mode}
+                      onClick={() => setInputMode(mode as any)}
+                      className={`px-3 py-1 text-[10px] font-medium uppercase tracking-wide transition-all duration-200 ${
+                        inputMode === mode
+                          ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
+                          : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+                      }`}
+                      style={{ borderRadius: '2px' }}
+                    >
+                      {mode === 'embedded-json' ? 'JSON' : mode === 'excel' ? 'Excel' : 'Manual'}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              <div className="flex justify-center gap-2">
+                <VideoButton />
+                <GitHubButton />
+                <CodexButton />
+                {setShowResetModal && (
                   <button
-                    key={mode}
-                    onClick={() => setInputMode(mode as any)}
-                    className={`px-3 py-1 text-[10px] font-medium uppercase tracking-wide transition-all duration-200 ${
-                      inputMode === mode
-                        ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
-                        : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
-                    }`}
-                    style={{ borderRadius: '2px' }}
+                    onClick={() => setShowResetModal(true)}
+                    className="group h-9 w-9 flex items-center justify-center text-gray-400 hover:text-red-500 dark:hover:text-red-400 border border-gray-200 dark:border-gray-700 hover:border-red-300 dark:hover:border-red-500 transition-colors"
+                    style={{ borderRadius: '3px' }}
+                    title="Reset to originals"
                   >
-                    {mode === 'embedded-json' ? 'JSON' : mode === 'excel' ? 'Excel' : 'Manual'}
+                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    </svg>
                   </button>
-                ))}
+                )}
               </div>
             </div>
-
-            <div className="flex justify-center gap-2">
-              <VideoButton />
-              <GitHubButton />
-              <CodexButton />
-              {setShowResetModal && (
-                <button
-                  onClick={() => setShowResetModal(true)}
-                  className="group h-9 w-9 flex items-center justify-center text-gray-400 hover:text-red-500 dark:hover:text-red-400 border border-gray-200 dark:border-gray-700 hover:border-red-300 dark:hover:border-red-500 transition-colors"
-                  style={{ borderRadius: '3px' }}
-                  title="Reset to originals"
-                >
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                  </svg>
-                </button>
-              )}
-            </div>
-          </div>
-        </details>
+          )}
+        </div>
 
         {/* Footer — dark mode toggle + version inline */}
         <div className="mt-6 pt-3 border-t border-gray-200 dark:border-gray-700 flex items-center justify-between">
