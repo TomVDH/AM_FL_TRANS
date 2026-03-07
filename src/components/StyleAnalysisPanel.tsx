@@ -1,0 +1,376 @@
+'use client';
+
+import React, { useState, useEffect, useCallback } from 'react';
+
+// ---------------------------------------------------------------------------
+// Types
+// ---------------------------------------------------------------------------
+
+interface FileStatus {
+  exists: boolean;
+  size?: number;
+  modified?: string;
+  entries?: number;
+}
+
+interface AnalysisStatus {
+  hasApiKey: boolean;
+  files: {
+    dialogue: FileStatus;
+    dutchDialogue: FileStatus;
+    styles: FileStatus;
+    dutchStyles: FileStatus;
+  };
+  codex: FileStatus & {
+    totalCharacters: number;
+    enrichedCount: number;
+    dutchEnrichedCount: number;
+  };
+}
+
+interface StepDef {
+  id: string;
+  label: string;
+  phase: 1 | 2 | 3;
+  phaseLabel: string;
+  apiCall: boolean; // true = uses Claude API (costs money, takes time)
+  dependsOn?: string;
+  outputKey?: keyof AnalysisStatus['files'];
+}
+
+const STEPS: StepDef[] = [
+  { id: 'extract-dialogue', label: 'Extract English dialogue', phase: 1, phaseLabel: 'Extract', apiCall: false, outputKey: 'dialogue' },
+  { id: 'extract-dutch-dialogue', label: 'Extract Dutch dialogue', phase: 1, phaseLabel: 'Extract', apiCall: false, outputKey: 'dutchDialogue' },
+  { id: 'analyze-styles', label: 'Analyze English styles', phase: 2, phaseLabel: 'Analyze', apiCall: true, dependsOn: 'extract-dialogue', outputKey: 'styles' },
+  { id: 'analyze-dutch-styles', label: 'Analyze Dutch styles', phase: 2, phaseLabel: 'Analyze', apiCall: true, dependsOn: 'extract-dutch-dialogue', outputKey: 'dutchStyles' },
+  { id: 'import-styles', label: 'Import English styles to codex', phase: 3, phaseLabel: 'Import', apiCall: false, dependsOn: 'analyze-styles' },
+  { id: 'import-dutch-styles', label: 'Import Dutch styles to codex', phase: 3, phaseLabel: 'Import', apiCall: false, dependsOn: 'analyze-dutch-styles' },
+];
+
+// ---------------------------------------------------------------------------
+// Helpers
+// ---------------------------------------------------------------------------
+
+function formatBytes(bytes: number): string {
+  if (bytes < 1024) return `${bytes} B`;
+  if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(1)} KB`;
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+}
+
+function relativeTime(isoStr: string): string {
+  const diff = Date.now() - new Date(isoStr).getTime();
+  const minutes = Math.floor(diff / 60000);
+  if (minutes < 1) return 'just now';
+  if (minutes < 60) return `${minutes}m ago`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.floor(hours / 24);
+  return `${days}d ago`;
+}
+
+// Phase colors
+const PHASE_COLORS: Record<number, string> = {
+  1: 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30',
+  2: 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30',
+  3: 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30',
+};
+
+// ---------------------------------------------------------------------------
+// Component
+// ---------------------------------------------------------------------------
+
+export default function StyleAnalysisPanel() {
+  const [status, setStatus] = useState<AnalysisStatus | null>(null);
+  const [loading, setLoading] = useState(true);
+  const [runningStep, setRunningStep] = useState<string | null>(null);
+  const [stepOutput, setStepOutput] = useState<string | null>(null);
+  const [stepError, setStepError] = useState<string | null>(null);
+  const [expanded, setExpanded] = useState(false);
+
+  // Fetch pipeline status
+  const fetchStatus = useCallback(async () => {
+    try {
+      const res = await fetch('/api/style-analysis');
+      if (res.ok) {
+        const data = await res.json();
+        setStatus(data);
+      }
+    } catch {
+      // silent
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    fetchStatus();
+  }, [fetchStatus]);
+
+  // Run a pipeline step
+  const runStep = useCallback(async (stepId: string, dryRun = false) => {
+    setRunningStep(stepId);
+    setStepOutput(null);
+    setStepError(null);
+
+    try {
+      const res = await fetch('/api/style-analysis', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ step: stepId, dryRun }),
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setStepOutput(data.output || 'Completed successfully.');
+      } else {
+        setStepError(data.error || 'Unknown error');
+        if (data.output) setStepOutput(data.output);
+      }
+
+      // Refresh status after run
+      await fetchStatus();
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'Network error';
+      setStepError(message);
+    } finally {
+      setRunningStep(null);
+    }
+  }, [fetchStatus]);
+
+  // Run the full pipeline
+  const runFullPipeline = useCallback(async () => {
+    for (const step of STEPS) {
+      setRunningStep(step.id);
+      setStepOutput(null);
+      setStepError(null);
+
+      try {
+        const res = await fetch('/api/style-analysis', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ step: step.id }),
+        });
+
+        const data = await res.json();
+        if (!data.success) {
+          setStepError(`Failed at "${step.label}": ${data.error}`);
+          setRunningStep(null);
+          return; // Stop pipeline on error
+        }
+      } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : 'Network error';
+        setStepError(`Failed at "${step.label}": ${message}`);
+        setRunningStep(null);
+        return;
+      }
+    }
+
+    setRunningStep(null);
+    setStepOutput('Full pipeline completed successfully.');
+    await fetchStatus();
+  }, [fetchStatus]);
+
+  // Compute enrichment progress
+  const enrichmentPercent = status?.codex
+    ? Math.round((status.codex.enrichedCount / Math.max(1, status.codex.totalCharacters)) * 100)
+    : 0;
+  const dutchEnrichmentPercent = status?.codex
+    ? Math.round((status.codex.dutchEnrichedCount / Math.max(1, status.codex.totalCharacters)) * 100)
+    : 0;
+
+  // Summary badge for collapsed state
+  const summaryText = status?.codex
+    ? `${status.codex.enrichedCount}/${status.codex.totalCharacters} characters enriched`
+    : 'Loading...';
+
+  return (
+    <div className="border border-gray-200 dark:border-gray-700" style={{ borderRadius: '3px' }}>
+      {/* Header — always visible */}
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
+      >
+        <div className="flex items-center gap-2">
+          {/* Sparkles icon */}
+          <svg className="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+          <span className="text-xs font-bold text-gray-700 dark:text-gray-200 uppercase tracking-wide">
+            Speaker Style Analysis
+          </span>
+        </div>
+
+        <div className="flex items-center gap-2">
+          {/* Summary badge */}
+          {!loading && status?.codex && (
+            <span className={`text-[10px] font-medium px-1.5 py-0.5 ${enrichmentPercent === 100 ? 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30' : 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30'}`} style={{ borderRadius: '2px' }}>
+              {summaryText}
+            </span>
+          )}
+          {/* Chevron */}
+          <svg className={`w-4 h-4 text-gray-400 transition-transform ${expanded ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+      </button>
+
+      {/* Expanded content */}
+      {expanded && (
+        <div className="border-t border-gray-200 dark:border-gray-700">
+          {loading ? (
+            <div className="px-4 py-6 text-center">
+              <div className="animate-spin h-5 w-5 border-2 border-purple-500 border-t-transparent mx-auto mb-2" style={{ borderRadius: '50%' }} />
+              <p className="text-xs text-gray-500 dark:text-gray-400">Loading pipeline status...</p>
+            </div>
+          ) : status ? (
+            <div className="p-4 space-y-4">
+              {/* Enrichment overview */}
+              <div className="grid grid-cols-2 gap-3">
+                {/* English enrichment */}
+                <div className="p-2 bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700" style={{ borderRadius: '3px' }}>
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase">English Styles</span>
+                    <span className="text-[10px] font-medium text-gray-600 dark:text-gray-300">{enrichmentPercent}%</span>
+                  </div>
+                  <div className="h-1.5 bg-gray-200 dark:bg-gray-700 overflow-hidden" style={{ borderRadius: '1px' }}>
+                    <div
+                      className={`h-full transition-all duration-500 ${enrichmentPercent === 100 ? 'bg-green-500' : 'bg-purple-500'}`}
+                      style={{ width: `${enrichmentPercent}%` }}
+                    />
+                  </div>
+                  <p className="text-[10px] text-gray-500 dark:text-gray-400 mt-1">
+                    {status.codex.enrichedCount} / {status.codex.totalCharacters} characters
+                  </p>
+                </div>
+
+                {/* Dutch enrichment */}
+                <div className="p-2 bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700" style={{ borderRadius: '3px' }}>
+                  <div className="flex items-center justify-between mb-1">
+                    <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase">Dutch Styles</span>
+                    <span className="text-[10px] font-medium text-gray-600 dark:text-gray-300">{dutchEnrichmentPercent}%</span>
+                  </div>
+                  <div className="h-1.5 bg-gray-200 dark:bg-gray-700 overflow-hidden" style={{ borderRadius: '1px' }}>
+                    <div
+                      className={`h-full transition-all duration-500 ${dutchEnrichmentPercent === 100 ? 'bg-green-500' : 'bg-orange-500'}`}
+                      style={{ width: `${dutchEnrichmentPercent}%` }}
+                    />
+                  </div>
+                  <p className="text-[10px] text-gray-500 dark:text-gray-400 mt-1">
+                    {status.codex.dutchEnrichedCount} / {status.codex.totalCharacters} characters
+                  </p>
+                </div>
+              </div>
+
+              {/* API key warning */}
+              {!status.hasApiKey && (
+                <div className="flex items-start gap-2 p-2 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800" style={{ borderRadius: '3px' }}>
+                  <svg className="w-4 h-4 text-red-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                  </svg>
+                  <p className="text-[11px] text-red-700 dark:text-red-300">
+                    <strong>ANTHROPIC_API_KEY not set.</strong> Analysis steps (Phase 2) require an API key in your <code className="bg-red-100 dark:bg-red-900/40 px-1">.env.local</code> file.
+                  </p>
+                </div>
+              )}
+
+              {/* Pipeline steps */}
+              <div className="space-y-1">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wide">Pipeline Steps</span>
+                  <button
+                    onClick={runFullPipeline}
+                    disabled={!!runningStep}
+                    className="text-[10px] font-bold text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 disabled:opacity-40 disabled:cursor-not-allowed transition-colors uppercase tracking-wide"
+                  >
+                    {runningStep ? 'Running...' : 'Run All'}
+                  </button>
+                </div>
+
+                {STEPS.map((step) => {
+                  const fileStatus = step.outputKey ? status.files[step.outputKey] : null;
+                  const isRunning = runningStep === step.id;
+                  const depMissing = step.dependsOn
+                    ? (() => {
+                        const dep = STEPS.find(s => s.id === step.dependsOn);
+                        if (!dep?.outputKey) return false;
+                        return !status.files[dep.outputKey]?.exists;
+                      })()
+                    : false;
+
+                  return (
+                    <div
+                      key={step.id}
+                      className={`flex items-center gap-2 px-2 py-1.5 border border-gray-100 dark:border-gray-700 transition-colors ${isRunning ? 'bg-purple-50/50 dark:bg-purple-900/10' : 'bg-white dark:bg-gray-800/30'}`}
+                      style={{ borderRadius: '3px' }}
+                    >
+                      {/* Phase badge */}
+                      <span className={`text-[9px] font-bold px-1 py-0.5 flex-shrink-0 uppercase ${PHASE_COLORS[step.phase]}`} style={{ borderRadius: '2px' }}>
+                        {step.phaseLabel}
+                      </span>
+
+                      {/* Step label */}
+                      <span className="text-[11px] text-gray-700 dark:text-gray-300 flex-1 min-w-0 truncate">
+                        {step.label}
+                        {step.apiCall && (
+                          <span className="ml-1 text-[9px] text-amber-500" title="Uses Claude API">⚡</span>
+                        )}
+                      </span>
+
+                      {/* Status indicator */}
+                      {fileStatus?.exists ? (
+                        <span className="text-[9px] text-gray-400 dark:text-gray-500 flex-shrink-0" title={`${formatBytes(fileStatus.size || 0)}, ${fileStatus.entries || '?'} entries`}>
+                          {fileStatus.entries ? `${fileStatus.entries} entries` : formatBytes(fileStatus.size || 0)}
+                          {fileStatus.modified && ` · ${relativeTime(fileStatus.modified)}`}
+                        </span>
+                      ) : (
+                        <span className="text-[9px] text-gray-300 dark:text-gray-600 flex-shrink-0">—</span>
+                      )}
+
+                      {/* Run button */}
+                      <button
+                        onClick={() => runStep(step.id)}
+                        disabled={!!runningStep || depMissing}
+                        title={depMissing ? `Requires "${STEPS.find(s => s.id === step.dependsOn)?.label}" first` : `Run: ${step.label}`}
+                        className="flex-shrink-0 p-1 text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                      >
+                        {isRunning ? (
+                          <div className="animate-spin h-3 w-3 border-[1.5px] border-purple-500 border-t-transparent" style={{ borderRadius: '50%' }} />
+                        ) : (
+                          <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                          </svg>
+                        )}
+                      </button>
+                    </div>
+                  );
+                })}
+              </div>
+
+              {/* Output / Error display */}
+              {(stepOutput || stepError) && (
+                <div className="relative">
+                  <button
+                    onClick={() => { setStepOutput(null); setStepError(null); }}
+                    className="absolute top-1 right-1 p-0.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                  >
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                    </svg>
+                  </button>
+                  <pre className={`text-[10px] leading-relaxed p-2 max-h-40 overflow-y-auto font-mono whitespace-pre-wrap ${stepError ? 'bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 border border-red-200 dark:border-red-800' : 'bg-gray-50 dark:bg-gray-800/50 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700'}`} style={{ borderRadius: '3px' }}>
+                    {stepError && `Error: ${stepError}\n\n`}{stepOutput}
+                  </pre>
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="px-4 py-6 text-center text-xs text-gray-400 dark:text-gray-500">
+              Failed to load pipeline status
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}

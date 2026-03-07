@@ -103,7 +103,7 @@ const Step2Demo = () => {
                 <li>All Excel files in /excels/ will be overwritten</li>
                 <li>Original files will be copied from /excels/Originals/</li>
                 <li>All translations will be lost</li>
-                <li>You will be returned to Screen 1 (Setup)</li>
+                <li>You will be returned to Setup</li>
               </ul>
             </div>
           </div>
@@ -165,7 +165,7 @@ const Step3Demo = () => {
               <li>All Excel files in /excels/ will be overwritten</li>
               <li>Original files will be copied from /excels/Originals/</li>
               <li>All translations will be lost</li>
-              <li>You will be returned to Screen 1 (Setup)</li>
+              <li>You will be returned to Setup</li>
             </ul>
           </div>
         </div>
