@@ -931,243 +931,206 @@ const TranslationHelper: React.FC = () => {
 
       {/* Main Content Area - Flex-grow to push footer down */}
       <main className="flex-1 max-w-7xl mx-auto w-full px-3 md:px-5 pt-3 md:pt-5">
-        {/* Header - Integrated toolbar with all controls */}
-        <div className="mb-4">
-          <div className="flex items-center justify-between">
-            {/* Left: Back button + Title with file type badge */}
-            <div className="flex items-center gap-3">
-              {/* Home Button - Returns to setup */}
+        {/* Header — compact single-line status bar */}
+        <div className="flex items-center justify-between py-2 px-1 mb-3">
+          {/* Left: Back + file/sheet context */}
+          <div className="flex items-center gap-3 min-w-0">
+            <button
+              onClick={handleBackToSetup}
+              className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors shrink-0"
+              aria-label="Back to setup"
+              title="Back to setup"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <span className="text-sm font-medium text-gray-700 dark:text-gray-300 truncate">
+              {loadedFileName || 'Untitled'}
+              {selectedSheet && <span className="text-gray-400 dark:text-gray-500"> · {selectedSheet}</span>}
+            </span>
+          </div>
+
+          {/* Center: Progress stats */}
+          <div className="flex items-center gap-3 text-xs text-gray-500 dark:text-gray-400 tabular-nums">
+            <span>{translations.filter(t => t && t !== '' && t !== '[BLANK, REMOVE LATER]').length} / {sourceTexts.length}</span>
+            <span>{sourceTexts.length > 0 ? Math.round((translations.filter(t => t && t !== '' && t !== '[BLANK, REMOVE LATER]').length / sourceTexts.length) * 100) : 0}%</span>
+          </div>
+
+          {/* Right: Utility icons */}
+          <div className="flex items-center gap-1 shrink-0">
+            {/* Filter & Jump popover */}
+            <div className="relative">
               <button
-                onClick={handleBackToSetup}
-                className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg transition-all duration-300"
-                style={{ borderRadius: '3px' }}
-                aria-label="Back to Home"
-                title="Back to Home"
+                onClick={() => setAccordionStates(prev => ({ ...prev, navigation: !prev.navigation }))}
+                className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                aria-label="Filter and jump"
+                title="Filter & Jump"
               >
-                <svg className="w-4 h-4 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
                 </svg>
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
               </button>
 
-              <div className="flex items-center gap-2">
-                <h1 className="text-2xl font-black tracking-tighter text-gray-900 dark:text-gray-100">Translation Helper</h1>
-                {selectedSheet && (
-                  <>
-                    <span className="text-gray-400 dark:text-gray-600">•</span>
-                    <span className="text-sm font-semibold text-gray-600 dark:text-gray-400">{selectedSheet}</span>
-                  </>
-                )}
-              </div>
-              {loadedFileName && (
-                <span className={`inline-flex items-center px-1 py-0.5 text-[8px] font-bold uppercase tracking-wide border ${
-                  loadedFileType === 'excel'
-                    ? 'bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-300 border-green-300 dark:border-green-700'
-                    : loadedFileType === 'json'
-                    ? 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 border-blue-300 dark:border-blue-700'
-                    : loadedFileType === 'csv'
-                    ? 'bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 border-purple-300 dark:border-purple-700'
-                    : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-600'
-                }`} style={{ borderRadius: '2px' }}>
-                  {loadedFileType || 'manual'}
-                </span>
-              )}
-            </div>
-
-            {/* Center: Empty for now */}
-            <div className="flex items-center gap-2">
-            </div>
-
-            {/* Right: File name + Keyboard Shortcuts + Dark Mode */}
-            <div className="flex items-center gap-2">
-              {loadedFileName && (
-                <span className="text-[10px] text-gray-400 dark:text-gray-500 font-medium truncate max-w-[150px] mr-2">
-                  {loadedFileName}
-                </span>
-              )}
-
-              {/* Navigation Button - Filter & Jump */}
-              <div className="relative">
-                <button
-                  onClick={() => setAccordionStates(prev => ({ ...prev, navigation: !prev.navigation }))}
-                  className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg transition-all duration-300"
-                  style={{ borderRadius: '3px' }}
-                  aria-label="Navigation menu"
-                  title="Filter & Jump"
-                >
-                  <svg className="w-4 h-4 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                  </svg>
-                  <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
-                </button>
-
-                {accordionStates.navigation && (
-                  <div className="absolute top-full right-0 mt-1 p-3 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 shadow-lg z-50 min-w-[200px]" style={{ borderRadius: '3px' }}>
-                    {/* Filter Section */}
-                    <div className="mb-3">
-                      <div className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase mb-1.5">Filter</div>
-                      <div className="space-y-1">
-                        <button
-                          onClick={() => { setFilterStatus('all'); }}
-                          className={`w-full flex items-center justify-between px-2 py-1.5 text-[10px] font-medium transition-colors ${
-                            filterOptions.status === 'all'
-                              ? 'bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300'
-                              : 'hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
-                          }`}
-                          style={{ borderRadius: '2px' }}
-                        >
-                          <span>All</span>
-                          <span className="text-gray-400 dark:text-gray-500">{filterStats.all}</span>
-                        </button>
-                        <button
-                          onClick={() => { setFilterStatus('completed'); }}
-                          className={`w-full flex items-center justify-between px-2 py-1.5 text-[10px] font-medium transition-colors ${
-                            filterOptions.status === 'completed'
-                              ? 'bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300'
-                              : 'hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
-                          }`}
-                          style={{ borderRadius: '2px' }}
-                        >
-                          <span className="flex items-center gap-1">
-                            <span className="w-2 h-2 bg-green-500 rounded-full" />
-                            Done
-                          </span>
-                          <span className="text-green-600 dark:text-green-400">{filterStats.completed}</span>
-                        </button>
-                        <button
-                          onClick={() => { setFilterStatus('blank'); }}
-                          className={`w-full flex items-center justify-between px-2 py-1.5 text-[10px] font-medium transition-colors ${
-                            filterOptions.status === 'blank'
-                              ? 'bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300'
-                              : 'hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300'
-                          }`}
-                          style={{ borderRadius: '2px' }}
-                        >
-                          <span className="flex items-center gap-1">
-                            <span className="w-2 h-2 bg-red-500 rounded-full" />
-                            Blank
-                          </span>
-                          <span className="text-red-600 dark:text-red-400">{filterStats.blank}</span>
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Jump Section */}
-                    <div className="pt-3 border-t border-gray-200 dark:border-gray-600">
-                      <div className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase mb-1.5">Jump</div>
-                      <div className="flex items-center gap-1.5 mb-2">
-                        <button
-                          onClick={() => {
-                            const newIndex = Math.max(0, currentIndex - 5);
-                            setCurrentIndex(newIndex);
-                            setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
-                          }}
-                          className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 transition-colors"
-                          style={{ borderRadius: '2px' }}
-                        >
-                          -5
-                        </button>
-                        <button
-                          onClick={() => {
-                            const newIndex = Math.max(0, currentIndex - 1);
-                            setCurrentIndex(newIndex);
-                            setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
-                          }}
-                          className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 transition-colors"
-                          style={{ borderRadius: '2px' }}
-                        >
-                          -1
-                        </button>
-                        <input
-                          type="number"
-                          min={startRow}
-                          max={startRow + sourceTexts.length - 1}
-                          value={startRow + currentIndex}
-                          onChange={(e) => {
-                            const rowNumber = parseInt(e.target.value);
-                            if (rowNumber >= startRow && rowNumber < startRow + sourceTexts.length) {
-                              jumpToRow(rowNumber);
-                            }
-                          }}
-                          className="w-14 px-1 py-1 text-[10px] text-center font-bold border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                          style={{ borderRadius: '2px' }}
-                        />
-                        <button
-                          onClick={() => {
-                            const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 1);
-                            setCurrentIndex(newIndex);
-                            setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
-                          }}
-                          className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 transition-colors"
-                          style={{ borderRadius: '2px' }}
-                        >
-                          +1
-                        </button>
-                        <button
-                          onClick={() => {
-                            const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 5);
-                            setCurrentIndex(newIndex);
-                            setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
-                          }}
-                          className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-300 dark:border-gray-600 transition-colors"
-                          style={{ borderRadius: '2px' }}
-                        >
-                          +5
-                        </button>
-                      </div>
-                      {excelSheets.length > 1 && (
-                        <div>
-                          <select
-                            value={selectedSheet}
-                            onChange={(e) => handleSheetChange(e.target.value)}
-                            className="w-full p-1 text-[10px] border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                            style={{ borderRadius: '2px' }}
-                          >
-                            {excelSheets.map(sheet => (
-                              <option key={sheet} value={sheet}>{sheet}</option>
-                            ))}
-                          </select>
-                        </div>
-                      )}
+              {accordionStates.navigation && (
+                <div className="absolute top-full right-0 mt-1 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg z-50 min-w-[200px]" style={{ borderRadius: '3px' }}>
+                  {/* Filter Section */}
+                  <div className="mb-3">
+                    <div className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase mb-1.5">Filter</div>
+                    <div className="space-y-1">
+                      <button
+                        onClick={() => { setFilterStatus('all'); }}
+                        className={`w-full flex items-center justify-between px-2 py-1.5 text-[10px] font-medium transition-colors ${
+                          filterOptions.status === 'all'
+                            ? 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100'
+                            : 'hover:bg-gray-50 dark:hover:bg-gray-700/50 text-gray-700 dark:text-gray-300'
+                        }`}
+                        style={{ borderRadius: '2px' }}
+                      >
+                        <span>All</span>
+                        <span className="text-gray-400 dark:text-gray-500">{filterStats.all}</span>
+                      </button>
+                      <button
+                        onClick={() => { setFilterStatus('completed'); }}
+                        className={`w-full flex items-center justify-between px-2 py-1.5 text-[10px] font-medium transition-colors ${
+                          filterOptions.status === 'completed'
+                            ? 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100'
+                            : 'hover:bg-gray-50 dark:hover:bg-gray-700/50 text-gray-700 dark:text-gray-300'
+                        }`}
+                        style={{ borderRadius: '2px' }}
+                      >
+                        <span className="flex items-center gap-1">
+                          <span className="w-2 h-2 bg-green-500 rounded-full" />
+                          Done
+                        </span>
+                        <span className="text-green-600 dark:text-green-400">{filterStats.completed}</span>
+                      </button>
+                      <button
+                        onClick={() => { setFilterStatus('blank'); }}
+                        className={`w-full flex items-center justify-between px-2 py-1.5 text-[10px] font-medium transition-colors ${
+                          filterOptions.status === 'blank'
+                            ? 'bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100'
+                            : 'hover:bg-gray-50 dark:hover:bg-gray-700/50 text-gray-700 dark:text-gray-300'
+                        }`}
+                        style={{ borderRadius: '2px' }}
+                      >
+                        <span className="flex items-center gap-1">
+                          <span className="w-2 h-2 bg-red-500 rounded-full" />
+                          Blank
+                        </span>
+                        <span className="text-red-600 dark:text-red-400">{filterStats.blank}</span>
+                      </button>
                     </div>
                   </div>
-                )}
-              </div>
 
-              {/* Keyboard Shortcuts Button - Now integrated */}
-              <button
-                onClick={() => setShowKeyboardShortcuts(true)}
-                className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg transition-all duration-300"
-                style={{ borderRadius: '3px' }}
-                aria-label="Keyboard shortcuts"
-                title="Keyboard Shortcuts"
-              >
-                <svg className="w-4 h-4 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
-              </button>
-
-              {/* Dark Mode Toggle - Now integrated */}
-              <button
-                onClick={toggleDarkMode}
-                className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg transition-all duration-300"
-                style={{ borderRadius: '3px' }}
-                aria-label="Toggle dark mode"
-                title="Toggle Dark Mode"
-              >
-                {darkMode ? (
-                  <svg className="w-4 h-4 text-yellow-500 relative z-10" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
-                  </svg>
-                ) : (
-                  <svg className="w-4 h-4 text-gray-700 dark:text-gray-300 relative z-10" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-                  </svg>
-                )}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
-              </button>
+                  {/* Jump Section */}
+                  <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
+                    <div className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase mb-1.5">Jump</div>
+                    <div className="flex items-center gap-1.5 mb-2">
+                      <button
+                        onClick={() => {
+                          const newIndex = Math.max(0, currentIndex - 5);
+                          setCurrentIndex(newIndex);
+                          setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                        }}
+                        className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-colors"
+                        style={{ borderRadius: '2px' }}
+                      >
+                        -5
+                      </button>
+                      <button
+                        onClick={() => {
+                          const newIndex = Math.max(0, currentIndex - 1);
+                          setCurrentIndex(newIndex);
+                          setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                        }}
+                        className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-colors"
+                        style={{ borderRadius: '2px' }}
+                      >
+                        -1
+                      </button>
+                      <input
+                        type="number"
+                        min={startRow}
+                        max={startRow + sourceTexts.length - 1}
+                        value={startRow + currentIndex}
+                        onChange={(e) => {
+                          const rowNumber = parseInt(e.target.value);
+                          if (rowNumber >= startRow && rowNumber < startRow + sourceTexts.length) {
+                            jumpToRow(rowNumber);
+                          }
+                        }}
+                        className="w-14 px-1 py-1 text-[10px] text-center font-bold border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                        style={{ borderRadius: '2px' }}
+                      />
+                      <button
+                        onClick={() => {
+                          const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 1);
+                          setCurrentIndex(newIndex);
+                          setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                        }}
+                        className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-colors"
+                        style={{ borderRadius: '2px' }}
+                      >
+                        +1
+                      </button>
+                      <button
+                        onClick={() => {
+                          const newIndex = Math.min(sourceTexts.length - 1, currentIndex + 5);
+                          setCurrentIndex(newIndex);
+                          setCurrentTranslation(translations[newIndex] === '[BLANK, REMOVE LATER]' ? '' : translations[newIndex] || '');
+                        }}
+                        className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-colors"
+                        style={{ borderRadius: '2px' }}
+                      >
+                        +5
+                      </button>
+                    </div>
+                    {excelSheets.length > 1 && (
+                      <div>
+                        <select
+                          value={selectedSheet}
+                          onChange={(e) => handleSheetChange(e.target.value)}
+                          className="w-full p-1 text-[10px] border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
+                          style={{ borderRadius: '2px' }}
+                        >
+                          {excelSheets.map(sheet => (
+                            <option key={sheet} value={sheet}>{sheet}</option>
+                          ))}
+                        </select>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
             </div>
+
+            <button
+              onClick={() => setShowKeyboardShortcuts(true)}
+              className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+              aria-label="Keyboard shortcuts"
+              title="Keyboard shortcuts"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              </svg>
+            </button>
+            <button
+              onClick={toggleDarkMode}
+              className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+              aria-label="Toggle dark mode"
+              title="Toggle dark mode"
+            >
+              {darkMode ? (
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd" />
+                </svg>
+              ) : (
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                </svg>
+              )}
+            </button>
           </div>
         </div>
 
@@ -1194,100 +1157,90 @@ const TranslationHelper: React.FC = () => {
           />
         ) : (
           <>
-        {/* Navigation Row - Prev button, Progress Bar, Next button */}
-        <div className="flex items-center gap-3 mb-6 mt-6">
-          {/* Previous Button - Arrow Only */}
-          <div className="group flex-shrink-0">
-            <button
-              onClick={handlePreviousWithSync}
-              disabled={currentIndex === 0 || syncStatus === 'syncing'}
-              className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:shadow-none overflow-hidden"
-              style={{ borderRadius: '3px' }}
-              title="Previous (←)"
-            >
-              <svg className="w-5 h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
-            </button>
-          </div>
+        {/* Navigation Row — Prev, hybrid progress bar, counter, Next */}
+        <div className="flex items-center gap-3 mb-4">
+          <button
+            onClick={handlePreviousWithSync}
+            disabled={currentIndex === 0 || syncStatus === 'syncing'}
+            className="p-1.5 text-gray-500 hover:text-gray-700 disabled:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200 dark:disabled:text-gray-600 transition-colors disabled:cursor-not-allowed shrink-0"
+            aria-label="Previous entry"
+            title="Previous (←)"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
 
-          {/* Enhanced Progress Bar - Between navigation buttons */}
+          {/* Hybrid Progress Bar */}
           <div
             role="progressbar"
             aria-valuenow={currentIndex + 1}
             aria-valuemin={1}
             aria-valuemax={sourceTexts.length}
-            aria-label={`Translation progress: ${currentIndex + 1} of ${sourceTexts.length} entries`}
-            className="relative flex-1 h-3 bg-gray-200 dark:bg-gray-700 border border-gray-300 dark:border-gray-600 overflow-hidden shadow-inner cursor-pointer transition-all duration-300"
+            aria-label={`Translation progress: ${currentIndex + 1} of ${sourceTexts.length}`}
+            className="relative flex-1 h-2 bg-gray-100 dark:bg-gray-800 overflow-hidden"
             style={{ borderRadius: '3px' }}
           >
-            <div className="absolute inset-0 flex">
-              {sourceTexts.map((_, index) => {
-                const isCompleted = index < currentIndex;
-                const isBlank = translations[index] === '' || translations[index] === '[BLANK, REMOVE LATER]';
-                const isCurrent = index === currentIndex;
-                const segmentWidth = (100 / sourceTexts.length);
-
-                const status = isCompleted ? (isBlank ? 'blank' : 'completed') : (isCurrent ? 'current' : 'pending');
-                const ariaLabel = `Entry ${index + 1}: ${status}${utterers[index] ? ` - ${utterers[index]}` : ''}`;
-
+            {sourceTexts.length <= 50 ? (
+              /* Individual pips for small sets */
+              <div className="absolute inset-0 flex">
+                {sourceTexts.map((_, index) => {
+                  const isCompleted = index < currentIndex;
+                  const isBlank = translations[index] === '' || translations[index] === '[BLANK, REMOVE LATER]';
+                  const isCurrent = index === currentIndex;
+                  return (
+                    <div
+                      key={index}
+                      role="presentation"
+                      className="relative h-full"
+                      style={{ width: `${100 / sourceTexts.length}%` }}
+                    >
+                      <div className={`absolute inset-0 ${
+                        isCompleted
+                          ? isBlank ? 'bg-red-400 dark:bg-red-600' : 'bg-green-400 dark:bg-green-500'
+                          : isCurrent ? 'bg-gray-300 dark:bg-gray-600' : ''
+                      }`} />
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              /* Continuous bar for large sets */
+              (() => {
+                const completed = translations.slice(0, currentIndex).filter(t => t && t !== '' && t !== '[BLANK, REMOVE LATER]').length;
+                const blank = currentIndex - completed;
+                const total = sourceTexts.length;
                 return (
-                  <div
-                    key={index}
-                    data-segment={index}
-                    role="button"
-                    tabIndex={-1}
-                    aria-label={ariaLabel}
-                    className="relative h-full"
-                    style={{
-                      width: `${segmentWidth}%`
-                    }}
-                  >
-                    {isCompleted && (
-                      <div
-                        className="absolute inset-0"
-                        style={{
-                          backgroundColor: isBlank
-                            ? (darkMode ? '#991b1b' : '#dc2626')
-                            : (darkMode ? '#16a34a' : '#22c55e'),
-                        }}
-                      />
-                    )}
-                    {isCurrent && !isCompleted && (
-                      <div
-                        className="absolute inset-0 opacity-50"
-                        style={{
-                          backgroundColor: darkMode ? '#6b7280' : '#9ca3af',
-                        }}
-                      />
-                    )}
-                  </div>
+                  <>
+                    <div className="absolute inset-y-0 left-0 bg-green-400 dark:bg-green-500 transition-all duration-300" style={{ width: `${(completed / total) * 100}%` }} />
+                    <div className="absolute inset-y-0 bg-red-400 dark:bg-red-600 transition-all duration-300" style={{ left: `${(completed / total) * 100}%`, width: `${(blank / total) * 100}%` }} />
+                    <div className="absolute inset-y-0 bg-gray-300 dark:bg-gray-600 transition-all duration-300" style={{ left: `${(currentIndex / total) * 100}%`, width: `${Math.max(1 / total, 0.5) * 100}%` }} />
+                  </>
                 );
-              })}
-            </div>
+              })()
+            )}
           </div>
 
-          {/* Next Button - Arrow Only */}
-          <div className="group flex-shrink-0">
-            <button
-              onClick={() => {
-                if (currentIndex < sourceTexts.length - 1) {
-                  setCurrentIndex(currentIndex + 1);
-                  setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
-                }
-              }}
-              disabled={currentIndex === sourceTexts.length - 1}
-              className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:shadow-none overflow-hidden"
-              style={{ borderRadius: '3px' }}
-              title="Next (→)"
-            >
-              <svg className="w-5 h-5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
-            </button>
-          </div>
+          <span className="text-xs text-gray-400 dark:text-gray-500 tabular-nums min-w-[4rem] text-center shrink-0">
+            {currentIndex + 1} / {sourceTexts.length}
+          </span>
+
+          <button
+            onClick={() => {
+              if (currentIndex < sourceTexts.length - 1) {
+                setCurrentIndex(currentIndex + 1);
+                setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
+              }
+            }}
+            disabled={currentIndex >= sourceTexts.length - 1}
+            className="p-1.5 text-gray-500 hover:text-gray-700 disabled:text-gray-300 dark:text-gray-400 dark:hover:text-gray-200 dark:disabled:text-gray-600 transition-colors disabled:cursor-not-allowed shrink-0"
+            aria-label="Next entry"
+            title="Next (→)"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
 
         {/* Column Headers - Outside the boxes */}
