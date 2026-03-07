@@ -31,6 +31,7 @@ import { useEditedTranslations } from '../hooks/useEditedTranslations';
 import { useTranslationMemory } from '../hooks/useTranslationMemory';
 import { useAiSuggestion } from '../hooks/useAiSuggestion';
 import { useWowMode } from '../hooks/useWowMode';
+import { useTranslationTimer } from '../hooks/useTranslationTimer';
 import { celebrateMilestone } from '../utils/celebrations';
 
 // Stable empty array reference to prevent re-renders from xlsxData || [] pattern
@@ -420,6 +421,20 @@ const TranslationHelper: React.FC = () => {
   const { cardRef, buttonsRef, dialogueBoxRef, animateCardTransition, animateButtonHover } = useInterfaceAnimations();
   const { characterData, findCharacterMatches } = useCharacterHighlighting();
   const { isWowMode, handleWowClick, triggerCelebration } = useWowMode();
+
+  // Translation timer — starts on first translation activity
+  const {
+    elapsedFormatted,
+    remainingFormatted,
+    isRunning: timerRunning,
+    linesPerMinute,
+    togglePause: toggleTimerPause,
+  } = useTranslationTimer({
+    totalLines: sourceTexts.length,
+    completedLines: filterStats.completed,
+    isStarted,
+    selectedSheet,
+  });
 
   // Create wrapper function for XLSX matches that returns compatible format
   // Trim speaker name — delegates to extractSpeakerName utility
@@ -2130,6 +2145,25 @@ const TranslationHelper: React.FC = () => {
               <div className="flex items-center gap-1">
                 <span className="text-gray-500 dark:text-gray-400 font-medium">Progress:</span>
                 <span className="font-bold text-gray-900 dark:text-gray-100">{Math.round(progress)}%</span>
+              </div>
+            </div>
+            {/* Timer */}
+            <div className="flex items-center gap-3">
+              <button
+                onClick={toggleTimerPause}
+                className="flex items-center gap-1 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors"
+                title={timerRunning ? 'Pause timer' : 'Timer starts on first translation'}
+              >
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span className={`font-mono font-bold ${timerRunning ? 'text-gray-900 dark:text-gray-100' : 'text-gray-400 dark:text-gray-500'}`}>
+                  {elapsedFormatted}
+                </span>
+              </button>
+              <div className="flex items-center gap-1" title={linesPerMinute ? `${linesPerMinute.toFixed(1)} lines/min` : 'Estimating...'}>
+                <span className="text-gray-500 dark:text-gray-400 font-medium">ETA:</span>
+                <span className="font-mono font-bold text-gray-900 dark:text-gray-100">{remainingFormatted}</span>
               </div>
             </div>
           </div>
