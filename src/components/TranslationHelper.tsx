@@ -1279,7 +1279,7 @@ const TranslationHelper: React.FC = () => {
         {/* Main 2-Column Grid Layout - Tighter gap */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 items-stretch">
           {/* Left Column - Translation Card + JSON Settings */}
-          <div className="space-y-4 h-full flex flex-col">
+          <div className="h-full flex flex-col">
 
             {/* Translation Card - Compact padding */}
             <div
@@ -1480,9 +1480,21 @@ const TranslationHelper: React.FC = () => {
                         >
                           {translationColumn}{startRow + currentIndex}
                         </span>
-                        <span className="text-sm font-bold text-gray-900 dark:text-gray-100">
-                          {trimSpeakerName(utterers[currentIndex]) || 'Speaker'}
-                        </span>
+                        {currentSpeakerCodexEntry ? (
+                          <button
+                            className="text-sm font-bold text-purple-700 dark:text-purple-300 hover:text-purple-900 dark:hover:text-purple-100 underline decoration-purple-300 dark:decoration-purple-600 underline-offset-2 transition-colors duration-150 cursor-pointer"
+                            onClick={() => setShowSpeakerCard(prev => !prev)}
+                            title={`View codex: ${currentSpeakerCodexEntry.english} → ${currentSpeakerCodexEntry.dutch}`}
+                            style={{ background: 'none', border: 'none', padding: 0, font: 'inherit' }}
+                          >
+                            {trimSpeakerName(utterers[currentIndex])}
+                            <span className="ml-1 text-[8px] text-purple-400 dark:text-purple-500 opacity-70">▼</span>
+                          </button>
+                        ) : (
+                          <span className="text-sm font-bold text-gray-900 dark:text-gray-100">
+                            {trimSpeakerName(utterers[currentIndex]) || 'Speaker'}
+                          </span>
+                        )}
                       </div>
                       <div className="flex items-center gap-1">
                         <button
@@ -1507,6 +1519,17 @@ const TranslationHelper: React.FC = () => {
                         )}
                       </div>
                     </div>
+
+                    {/* Speaker Character Info Card (default view) */}
+                    {!gamepadMode && showSpeakerCard && currentSpeakerCodexEntry && (
+                      <div className="px-4 py-2 border-b border-purple-200 dark:border-purple-800/50">
+                        <CharacterInfoCard
+                          character={currentSpeakerCodexEntry}
+                          onClose={() => setShowSpeakerCard(false)}
+                          onInsert={insertCharacterName}
+                        />
+                      </div>
+                    )}
 
                     {/* Context Notes - Scene direction/description from column B */}
                     {contextNotes[currentIndex] && (
@@ -1590,22 +1613,6 @@ const TranslationHelper: React.FC = () => {
 
             </div>
 
-            {/* Quick Reference Bar - Underhangs the left column */}
-            <QuickReferenceBar
-              sourceText={sourceTexts[currentIndex] || ''}
-              findCharacterMatches={findCharacterMatches}
-              findXlsxMatches={findXlsxMatches}
-              findEditedMatches={findCombinedEditedMatches}
-              onInsert={insertCharacterName}
-              onOpenReferenceTools={() => {
-                if (!xlsxMode) toggleXlsxMode();
-              }}
-              onJumpToEntry={handleJumpToEntry}
-              isVisible={xlsxMode || highlightMode}
-            />
-
-            {/* spacer to push QuickReferenceBar to bottom of left column */}
-            <div className="mt-auto" />
           </div>
 
           {/* Right Column - Tabbed Interface - Compact */}
@@ -1761,6 +1768,22 @@ const TranslationHelper: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Quick Reference Bar - Below grid, aligned with left column */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 -mt-0.5">
+          <QuickReferenceBar
+            sourceText={sourceTexts[currentIndex] || ''}
+            findCharacterMatches={findCharacterMatches}
+            findXlsxMatches={findXlsxMatches}
+            findEditedMatches={findCombinedEditedMatches}
+            onInsert={insertCharacterName}
+            onOpenReferenceTools={() => {
+              if (!xlsxMode) toggleXlsxMode();
+            }}
+            onJumpToEntry={handleJumpToEntry}
+            isVisible={xlsxMode || highlightMode}
+          />
         </div>
 
         {/* Output Section - Full Width Below Grid */}
