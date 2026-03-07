@@ -23,17 +23,17 @@
  * consistent typography and spacing throughout the application.
  */
 @layer base {
-  /* CSS Variables for toast styling */
+  /* CSS Variables for toast styling — minimal pill aesthetic */
   :root {
-    --toast-bg: #ffffff;
-    --toast-color: #1f2937;
-    --toast-border: #d1d5db;
+    --toast-bg: #f9fafb;
+    --toast-color: #374151;
+    --toast-border: #e5e7eb;
   }
 
   .dark {
-    --toast-bg: #1f2937;
-    --toast-color: #f9fafb;
-    --toast-border: #4b5563;
+    --toast-bg: #111827;
+    --toast-color: #d1d5db;
+    --toast-border: #374151;
   }
 
   /* System font stack for optimal performance and native feel */
@@ -198,6 +198,111 @@
     padding: 0 2px;
     border-radius: 2px;
     transition: background-color 0.15s ease, box-shadow 0.15s ease;
+    position: relative;
+  }
+
+  /* Custom tooltip using data-hover — styled to match highlight color */
+  .highlight-tag[data-hover]:hover::after {
+    content: attr(data-hover);
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    line-height: 1.4;
+    padding: 6px 10px;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    max-width: 360px;
+    width: max-content;
+    z-index: 50;
+    pointer-events: none;
+    animation: tooltip-fade-in 0.12s ease-out;
+  }
+
+  .highlight-tag[data-hover]:hover::before {
+    content: '';
+    position: absolute;
+    bottom: calc(100% + 2px);
+    left: 50%;
+    transform: translateX(-50%);
+    border: 4px solid transparent;
+    z-index: 50;
+    pointer-events: none;
+    animation: tooltip-fade-in 0.12s ease-out;
+  }
+
+  @keyframes tooltip-fade-in {
+    from { opacity: 0; transform: translateX(-50%) translateY(2px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+
+  /* Purple tooltip for character highlights */
+  .highlight-character[data-hover]:hover::after,
+  .highlight-clickable[data-hover]:hover::after {
+    background: #faf5ff;
+    color: #581c87;
+    border: 1.5px solid #a78bfa;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+  }
+  .highlight-character[data-hover]:hover::before,
+  .highlight-clickable[data-hover]:hover::before {
+    border-top-color: #a78bfa;
+  }
+
+  /* Blue tooltip for JSON highlights */
+  .highlight-json[data-hover]:hover::after {
+    background: #eff6ff;
+    color: #1e3a8a;
+    border: 1.5px solid #60a5fa;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+  }
+  .highlight-json[data-hover]:hover::before {
+    border-top-color: #60a5fa;
+  }
+
+  /* Green tooltip for XLSX highlights */
+  .highlight-xlsx[data-hover]:hover::after {
+    background: #ecfdf5;
+    color: #064e3b;
+    border: 1.5px solid #34d399;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+  }
+  .highlight-xlsx[data-hover]:hover::before {
+    border-top-color: #34d399;
+  }
+
+  /* Dark mode tooltip variants */
+  .dark .highlight-character[data-hover]:hover::after,
+  .dark .highlight-clickable[data-hover]:hover::after {
+    background: #2e1065;
+    color: #e9d5ff;
+    border-color: #7c3aed;
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.35);
+  }
+  .dark .highlight-character[data-hover]:hover::before,
+  .dark .highlight-clickable[data-hover]:hover::before {
+    border-top-color: #7c3aed;
+  }
+
+  .dark .highlight-json[data-hover]:hover::after {
+    background: #1e3a5f;
+    color: #bfdbfe;
+    border-color: #3b82f6;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.35);
+  }
+  .dark .highlight-json[data-hover]:hover::before {
+    border-top-color: #3b82f6;
+  }
+
+  .dark .highlight-xlsx[data-hover]:hover::after {
+    background: #064e3b;
+    color: #a7f3d0;
+    border-color: #10b981;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+  }
+  .dark .highlight-xlsx[data-hover]:hover::before {
+    border-top-color: #10b981;
   }
 
   /* JSON data highlights (blue) */
@@ -703,122 +808,125 @@
 
 /* ========== Toast Notification Styles ========== */
 
-/* Base toast styling */
+/* Minimal pill toast styling */
 [data-sonner-toast] {
   border-radius: 3px !important;
-  padding: 12px 16px !important;
-  font-size: 14px !important;
-  font-weight: 500 !important;
-  max-width: 360px !important;
+  padding: 8px 12px !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  max-width: 320px !important;
   border: 1px solid !important;
+  letter-spacing: 0.01em !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08) !important;
 }
 
-/* Success toast */
+/* Hide the close button on non-error toasts */
+[data-sonner-toast]:not([data-type="error"]) [data-close-button] {
+  display: none !important;
+}
+
+/* Hide default Sonner icons — we use the text content */
+[data-sonner-toast] [data-icon] {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+/* All toasts: monochrome base with colored status dot via icon */
 [data-sonner-toast][data-type="success"] {
-  background-color: #f0fdf4 !important;
-  border-color: #22c55e !important;
-  color: #166534 !important;
+  background-color: #f9fafb !important;
+  border-color: #e5e7eb !important;
+  color: #374151 !important;
 }
-
 [data-sonner-toast][data-type="success"] [data-icon] {
   color: #22c55e !important;
 }
 
-/* Error toast */
 [data-sonner-toast][data-type="error"] {
   background-color: #fef2f2 !important;
-  border-color: #ef4444 !important;
+  border-color: #fecaca !important;
   color: #991b1b !important;
 }
-
 [data-sonner-toast][data-type="error"] [data-icon] {
   color: #ef4444 !important;
 }
 
-/* Info toast */
 [data-sonner-toast][data-type="info"] {
-  background-color: #eff6ff !important;
-  border-color: #3b82f6 !important;
-  color: #1e40af !important;
+  background-color: #f9fafb !important;
+  border-color: #e5e7eb !important;
+  color: #374151 !important;
 }
-
 [data-sonner-toast][data-type="info"] [data-icon] {
-  color: #3b82f6 !important;
+  color: #6b7280 !important;
 }
 
-/* Warning toast */
 [data-sonner-toast][data-type="warning"] {
   background-color: #fffbeb !important;
-  border-color: #f59e0b !important;
+  border-color: #fde68a !important;
   color: #92400e !important;
 }
-
 [data-sonner-toast][data-type="warning"] [data-icon] {
   color: #f59e0b !important;
 }
 
-/* Default toast (no type specified) */
 [data-sonner-toast]:not([data-type]) {
-  background-color: #ffffff !important;
-  border-color: #d1d5db !important;
-  color: #1f2937 !important;
+  background-color: #f9fafb !important;
+  border-color: #e5e7eb !important;
+  color: #374151 !important;
 }
 
-/* Dark mode toast styles */
+/* Dark mode — monochrome with subtle tints */
 .dark [data-sonner-toast][data-type="success"] {
-  background-color: rgba(34, 197, 94, 0.1) !important;
-  border-color: #22c55e !important;
-  color: #86efac !important;
+  background-color: #111827 !important;
+  border-color: #1f2937 !important;
+  color: #d1d5db !important;
 }
-
 .dark [data-sonner-toast][data-type="success"] [data-icon] {
   color: #22c55e !important;
 }
 
 .dark [data-sonner-toast][data-type="error"] {
-  background-color: rgba(239, 68, 68, 0.1) !important;
-  border-color: #ef4444 !important;
+  background-color: #1c1117 !important;
+  border-color: #7f1d1d !important;
   color: #fca5a5 !important;
 }
-
 .dark [data-sonner-toast][data-type="error"] [data-icon] {
   color: #ef4444 !important;
 }
 
 .dark [data-sonner-toast][data-type="info"] {
-  background-color: rgba(59, 130, 246, 0.1) !important;
-  border-color: #3b82f6 !important;
-  color: #93c5fd !important;
+  background-color: #111827 !important;
+  border-color: #1f2937 !important;
+  color: #d1d5db !important;
 }
-
 .dark [data-sonner-toast][data-type="info"] [data-icon] {
-  color: #3b82f6 !important;
+  color: #6b7280 !important;
 }
 
 .dark [data-sonner-toast][data-type="warning"] {
-  background-color: rgba(245, 158, 11, 0.1) !important;
-  border-color: #f59e0b !important;
+  background-color: #1a1708 !important;
+  border-color: #78350f !important;
   color: #fcd34d !important;
 }
-
 .dark [data-sonner-toast][data-type="warning"] [data-icon] {
   color: #f59e0b !important;
 }
 
 .dark [data-sonner-toast]:not([data-type]) {
-  background-color: #1f2937 !important;
-  border-color: #4b5563 !important;
-  color: #f9fafb !important;
+  background-color: #111827 !important;
+  border-color: #1f2937 !important;
+  color: #d1d5db !important;
 }
 
 /* Toast title and description */
 [data-sonner-toast] [data-title] {
   font-weight: 600 !important;
+  font-size: 12px !important;
 }
 
 [data-sonner-toast] [data-description] {
   font-weight: 400 !important;
-  opacity: 0.9 !important;
+  font-size: 11px !important;
+  opacity: 0.8 !important;
 }
 
 /* === Conversation View === */

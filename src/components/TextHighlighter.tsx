@@ -309,7 +309,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
           const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
           const hoverText = escapeHtmlAttribute(getHoverText(match));
           findAllMatches(displayText, regex, (m) =>
-            `<span class="${HIGHLIGHT_STYLES.json}" data-type="json" data-hover="${hoverText}" title="${hoverText}">${m}</span>`,
+            `<span class="${HIGHLIGHT_STYLES.json}" data-type="json" data-hover="${hoverText}">${m}</span>`,
             1
           );
         });
@@ -323,7 +323,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
           const regex = new RegExp(`\\b(${escapedSource})\\b`, 'gi');
           const hoverText = escapeHtmlAttribute(getXlsxHoverText(match));
           findAllMatches(displayText, regex, (m) =>
-            `<span class="${HIGHLIGHT_STYLES.xlsx}" data-type="xlsx" data-hover="${hoverText}" title="${hoverText}">${m}</span>`,
+            `<span class="${HIGHLIGHT_STYLES.xlsx}" data-type="xlsx" data-hover="${hoverText}">${m}</span>`,
             2
           );
         });
@@ -339,7 +339,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
           start: charMatch.startIndex,
           end: charMatch.endIndex,
           original: matchText,
-          replacement: `<span class="${HIGHLIGHT_STYLES.character}" data-type="character" data-character="${escapeHtmlAttribute(charMatch.english)}" data-hover="${hoverText}" title="${hoverText}">${matchText}</span>`,
+          replacement: `<span class="${HIGHLIGHT_STYLES.character}" data-type="character" data-character="${escapeHtmlAttribute(charMatch.english)}" data-hover="${hoverText}">${matchText}</span>`,
           priority: 3
         });
       });
@@ -348,8 +348,16 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       assCharacters.forEach(character => {
         const escapedChar = character.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const regex = new RegExp(`(${escapedChar})`, 'gi');
+        // Look up codex info for hover tooltip
+        const charInfo = characterMatches.find(
+          cm => cm.english.toLowerCase() === character.toLowerCase() ||
+                cm.matchedName.toLowerCase() === character.toLowerCase()
+        );
+        const hoverAttr = charInfo
+          ? ` data-hover="${escapeHtmlAttribute(`${charInfo.matchedName} → ${charInfo.dutch} (${charInfo.english})`)}"`
+          : '';
         findAllMatches(displayText, regex, (m) =>
-          `<span class="${HIGHLIGHT_STYLES.clickable}" data-type="clickable" data-character="${escapeHtmlAttribute(m)}">${m}</span>`,
+          `<span class="${HIGHLIGHT_STYLES.clickable}" data-type="clickable" data-character="${escapeHtmlAttribute(m)}"${hoverAttr}>${m}</span>`,
           4
         );
       });
@@ -397,7 +405,9 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
 
     if (dataType === 'clickable') {
       const characterName = target.getAttribute('data-character');
-      if (characterName) {
+      if (characterName && onCharacterNameClick) {
+        onCharacterNameClick(characterName, e);
+      } else if (characterName) {
         onCharacterClick(characterName);
       }
     } else if (dataType === 'character') {

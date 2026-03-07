@@ -1331,7 +1331,15 @@ const TranslationHelper: React.FC = () => {
                         {currentSpeakerCodexEntry ? (
                           <button
                             className="text-shadow-pixel cursor-pointer hover:text-purple-300 transition-colors duration-150"
-                            onClick={() => setShowSpeakerCard(prev => !prev)}
+                            onClick={(e) => {
+                              const rect = (e.target as HTMLElement).getBoundingClientRect();
+                              const speakerName = trimSpeakerName(utterers[currentIndex]);
+                              if (codexPopover?.characterName === speakerName) {
+                                setCodexPopover(null);
+                              } else {
+                                setCodexPopover({ characterName: speakerName, rect });
+                              }
+                            }}
                             title={`View codex: ${currentSpeakerCodexEntry.english} → ${currentSpeakerCodexEntry.dutch}`}
                             style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', color: 'inherit' }}
                           >
@@ -1493,7 +1501,15 @@ const TranslationHelper: React.FC = () => {
                         {currentSpeakerCodexEntry ? (
                           <button
                             className="text-sm font-bold text-purple-700 dark:text-purple-300 hover:text-purple-900 dark:hover:text-purple-100 underline decoration-purple-300 dark:decoration-purple-600 underline-offset-2 transition-colors duration-150 cursor-pointer"
-                            onClick={() => setShowSpeakerCard(prev => !prev)}
+                            onClick={(e) => {
+                              const rect = (e.target as HTMLElement).getBoundingClientRect();
+                              const speakerName = trimSpeakerName(utterers[currentIndex]);
+                              if (codexPopover?.characterName === speakerName) {
+                                setCodexPopover(null);
+                              } else {
+                                setCodexPopover({ characterName: speakerName, rect });
+                              }
+                            }}
                             title={`View codex: ${currentSpeakerCodexEntry.english} → ${currentSpeakerCodexEntry.dutch}`}
                             style={{ background: 'none', border: 'none', padding: 0, font: 'inherit' }}
                           >
@@ -1797,7 +1813,7 @@ const TranslationHelper: React.FC = () => {
             <>
               <div className="fixed inset-0 z-40" onClick={() => setCodexPopover(null)} />
               <div
-                className="absolute z-50 w-[320px] shadow-xl border border-purple-300 dark:border-purple-700 bg-white dark:bg-gray-800 animate-in fade-in slide-in-from-top-1 duration-150"
+                className="absolute z-50 min-w-[200px] max-w-[480px] w-max shadow-xl border border-purple-300 dark:border-purple-700 bg-white dark:bg-gray-800 animate-in fade-in slide-in-from-top-1 duration-150"
                 style={{ top, left, borderRadius: '4px' }}
               >
                 {hasRichInfo ? (
@@ -1808,10 +1824,10 @@ const TranslationHelper: React.FC = () => {
                   />
                 ) : (
                   <div className="px-3 py-2 flex items-center justify-between gap-2">
-                    <div className="flex items-center gap-2 min-w-0">
-                      <span className="text-xs font-bold text-purple-900 dark:text-purple-100 truncate">{entry.english}</span>
+                    <div className="flex items-center gap-2">
+                      <span className="text-xs font-bold text-purple-900 dark:text-purple-100 whitespace-nowrap">{entry.english}</span>
                       <span className="text-[10px] text-purple-400 dark:text-purple-500">&rarr;</span>
-                      <span className="text-xs font-semibold text-purple-700 dark:text-purple-300 truncate">{entry.dutch}</span>
+                      <span className="text-xs font-semibold text-purple-700 dark:text-purple-300 whitespace-nowrap">{entry.dutch}</span>
                       {entry.category && (
                         <span className="text-[9px] px-1 py-0.5 bg-purple-100 dark:bg-purple-800 text-purple-600 dark:text-purple-300 shrink-0" style={{ borderRadius: '2px' }}>{entry.category}</span>
                       )}
