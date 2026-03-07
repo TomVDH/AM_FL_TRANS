@@ -584,27 +584,6 @@
   }
 }
 
-/* Gradient shift animation for dynamic backgrounds */
-@keyframes gradientShift {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-/* Fast gradient shift with opacity variation */
-@keyframes gradientShiftFast {
-  0%, 100% {
-    background-position: 0% 50%;
-    opacity: 0.7;
-  }
-  50% {
-    background-position: 100% 50%;
-    opacity: 1;
-  }
-}
 
 /**
  * Special Effects
@@ -614,50 +593,11 @@
 .glow-text {
   color: #3b82f6;             /* Blue color in light mode */
   font-weight: 600;
-  text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
-  animation: textGlow 3s ease-in-out infinite;
 }
 
 /* Dark mode variant of glow effect */
 .dark .glow-text {
   color: #60a5fa;             /* Lighter blue in dark mode */
-  text-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
-}
-
-/* Text glow animation */
-@keyframes textGlow {
-  0%, 100% {
-    text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
-  }
-  50% {
-    text-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
-  }
-}
-
-/* Progress bar pip glow entrance animation */
-@keyframes pipGlow {
-  0% {
-    box-shadow: 0 0 0 rgba(34, 197, 94, 0);
-    transform: scale(1);
-  }
-  50% {
-    box-shadow: 0 0 16px rgba(34, 197, 94, 0.8);
-    transform: scale(1.05);
-  }
-  100% {
-    box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
-    transform: scale(1);
-  }
-}
-
-/* Smooth animated gradient shimmer for progress bar */
-@keyframes shimmer {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
 }
 
 /* ========== Game Mode Dialogue Box Styles ========== */
@@ -727,11 +667,6 @@
   animation: pulse-typewriter 1s ease-in-out infinite;
 }
 
-/* Gradient shift animation for footer version badge */
-@keyframes gradientShift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
 
 .gamepad-continue-indicator span:nth-child(2) {
   animation-delay: 0.15s;

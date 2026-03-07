@@ -46,7 +46,6 @@ export interface TranslationState {
   isLoadingExcel: boolean;
   
   // UI state
-  isAnimating: boolean;
   showCopied: boolean;
   gradientColors: string[];
   showVersionHash: boolean;
@@ -93,7 +92,6 @@ export interface TranslationState {
   setExcelSheets: (sheets: string[]) => void;
   setSelectedSheet: (sheet: string) => void;
   setWorkbookData: (workbook: XLSX.WorkBook | null) => void;
-  setIsAnimating: (animating: boolean) => void;
   setShowCopied: (show: boolean) => void;
   setGradientColors: (colors: string[]) => void;
   setShowVersionHash: (show: boolean) => void;
@@ -213,7 +211,6 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
   const [isLoadingExcel, setIsLoadingExcel] = useState(false);
   
   // ========== UI State ==========
-  const [isAnimating, setIsAnimating] = useState(false);
   const [showCopied, setShowCopied] = useState(false);
   const [gradientColors, setGradientColors] = useState<string[]>([]);
   const [showVersionHash, setShowVersionHash] = useState(false);
@@ -1155,7 +1152,6 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
     selectedSheet,
     workbookData,
     isLoadingExcel,
-    isAnimating,
     showCopied,
     gradientColors,
     showVersionHash,
@@ -1196,7 +1192,6 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
     setExcelSheets,
     setSelectedSheet,
     setWorkbookData,
-    setIsAnimating,
     setShowCopied,
     setGradientColors,
     setShowVersionHash,

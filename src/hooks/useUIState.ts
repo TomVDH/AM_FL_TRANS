@@ -20,14 +20,12 @@ export type InputMode = 'excel' | 'embedded-json' | 'manual';
 
 export interface UIState {
   // State
-  isAnimating: boolean;
   showCopied: boolean;
   gradientColors: string[];
   showVersionHash: boolean;
   inputMode: InputMode;
 
   // Setters
-  setIsAnimating: (animating: boolean) => void;
   setShowCopied: (show: boolean) => void;
   setGradientColors: (colors: string[]) => void;
   setShowVersionHash: (show: boolean) => void;
@@ -67,7 +65,6 @@ const GRADIENT_COLOR_PALETTE = [
  */
 export const useUIState = (): UIState => {
   // ========== State ==========
-  const [isAnimating, setIsAnimating] = useState(false);
   const [showCopied, setShowCopied] = useState(false);
   const [gradientColors, setGradientColors] = useState<string[]>([]);
   const [showVersionHash, setShowVersionHash] = useState(false);
@@ -94,14 +91,12 @@ export const useUIState = (): UIState => {
   // ========== Return ==========
   return {
     // State
-    isAnimating,
     showCopied,
     gradientColors,
     showVersionHash,
     inputMode,
 
     // Setters
-    setIsAnimating,
     setShowCopied,
     setGradientColors,
     setShowVersionHash,

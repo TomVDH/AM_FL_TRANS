@@ -9,9 +9,6 @@ import { useReferenceColumn as useReferenceColumnHook } from '../hooks/useRefere
 import { useJsonHighlighting } from '../hooks/useJsonHighlighting';
 import { useCharacterDetection } from '../hooks/useCharacterDetection';
 import { useUIComponents } from '../hooks/useUIComponents';
-import { useGradientBarAnimation } from '../hooks/useGradientBarAnimation';
-import { useFooterGradientAnimation } from '../hooks/useFooterGradientAnimation';
-import { useInterfaceAnimations } from '../hooks/useInterfaceAnimations';
 import { useTranslationState } from '../hooks/useTranslationState';
 import SetupWizard from './SetupWizard';
 import type { DetectedLanguage } from './LanguageSelector';
@@ -63,7 +60,6 @@ const TranslationHelper: React.FC = () => {
     selectedSheet,
     workbookData,
     isLoadingExcel,
-    isAnimating,
     gradientColors,
     showVersionHash,
     inputMode,
@@ -91,7 +87,6 @@ const TranslationHelper: React.FC = () => {
     setExcelSheets,
     setSelectedSheet,
     setWorkbookData,
-    setIsAnimating,
     setGradientColors,
     setShowVersionHash,
     setInputMode,
@@ -418,9 +413,6 @@ const TranslationHelper: React.FC = () => {
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
-  const { progressBarRef, progressFillRef, animateProgress } = useGradientBarAnimation();
-  const { gradientBarRef } = useFooterGradientAnimation();
-  const { cardRef, buttonsRef, dialogueBoxRef, animateCardTransition, animateButtonHover } = useInterfaceAnimations();
   const { characterData, findCharacterMatches } = useCharacterHighlighting();
   const { isWowMode, handleWowClick, triggerCelebration } = useWowMode();
 
@@ -681,17 +673,6 @@ const TranslationHelper: React.FC = () => {
   
   const progress = sourceTexts.length > 0 ? ((currentIndex) / sourceTexts.length) * 100 : 0;
 
-  // Animate progress changes
-  useEffect(() => {
-    animateProgress(progress);
-  }, [progress, animateProgress]);
-
-  // Animate card transitions when current index changes
-  useEffect(() => {
-    if (isStarted && currentIndex > 0) {
-      animateCardTransition();
-    }
-  }, [currentIndex, isStarted, animateCardTransition]);
 
   // Helper function for keyboard submit that includes completion flow
   const handleKeyboardSubmit = useCallback(() => {
@@ -1211,14 +1192,7 @@ const TranslationHelper: React.FC = () => {
           {/* Previous Button - Arrow Only */}
           <div className="group flex-shrink-0">
             <button
-              ref={(el) => {
-                if (el && buttonsRef.current) {
-                  // Store reference if needed
-                }
-              }}
               onClick={handlePreviousWithSync}
-              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
-              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
               disabled={currentIndex === 0 || syncStatus === 'syncing'}
               className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:shadow-none overflow-hidden"
               style={{ borderRadius: '3px' }}
@@ -1233,7 +1207,6 @@ const TranslationHelper: React.FC = () => {
 
           {/* Enhanced Progress Bar - Between navigation buttons */}
           <div
-            ref={progressBarRef}
             role="progressbar"
             aria-valuenow={currentIndex + 1}
             aria-valuemin={1}
@@ -1247,7 +1220,6 @@ const TranslationHelper: React.FC = () => {
                 const isCompleted = index < currentIndex;
                 const isBlank = translations[index] === '' || translations[index] === '[BLANK, REMOVE LATER]';
                 const isCurrent = index === currentIndex;
-                const isJustCompleted = index === currentIndex - 1;
                 const segmentWidth = (100 / sourceTexts.length);
 
                 const status = isCompleted ? (isBlank ? 'blank' : 'completed') : (isCurrent ? 'current' : 'pending');
@@ -1267,24 +1239,11 @@ const TranslationHelper: React.FC = () => {
                   >
                     {isCompleted && (
                       <div
-                        className="absolute inset-0 transition-all duration-700"
+                        className="absolute inset-0"
                         style={{
-                          backgroundImage: isBlank
-                            ? darkMode
-                              ? 'linear-gradient(90deg, #7f1d1d 0%, #991b1b 50%, #7f1d1d 100%)'
-                              : 'linear-gradient(90deg, #991b1b 0%, #b91c1c 50%, #991b1b 100%)'
-                            : darkMode
-                              ? 'linear-gradient(90deg, #16a34a 0%, #22c55e 50%, #16a34a 100%)'
-                              : 'linear-gradient(90deg, #22c55e 0%, #4ade80 50%, #22c55e 100%)',
-                          backgroundSize: '200% 100%',
-                          animation: isJustCompleted
-                            ? 'shimmer 1.5s ease-out, pipGlow 1s ease-out'
-                            : 'shimmer 3s ease-in-out infinite',
-                          boxShadow: isBlank
-                            ? '0 0 6px rgba(127, 29, 29, 0.5)'
-                            : (!isBlank && isJustCompleted)
-                              ? '0 0 12px rgba(34, 197, 94, 0.8)'
-                              : '0 0 4px rgba(34, 197, 94, 0.3)'
+                          backgroundColor: isBlank
+                            ? (darkMode ? '#991b1b' : '#dc2626')
+                            : (darkMode ? '#16a34a' : '#22c55e'),
                         }}
                       />
                     )}
@@ -1292,12 +1251,7 @@ const TranslationHelper: React.FC = () => {
                       <div
                         className="absolute inset-0 opacity-50"
                         style={{
-                          backgroundImage: darkMode
-                            ? 'linear-gradient(90deg, #6b7280 0%, #9ca3af 50%, #6b7280 100%)'
-                            : 'linear-gradient(90deg, #9ca3af 0%, #d1d5db 50%, #9ca3af 100%)',
-                          backgroundSize: '200% 100%',
-                          animation: 'shimmer 2s ease-in-out infinite',
-                          boxShadow: '0 0 8px rgba(156, 163, 175, 0.6)'
+                          backgroundColor: darkMode ? '#6b7280' : '#9ca3af',
                         }}
                       />
                     )}
@@ -1316,8 +1270,6 @@ const TranslationHelper: React.FC = () => {
                   setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
                 }
               }}
-              onMouseEnter={(e) => animateButtonHover(e.currentTarget, true)}
-              onMouseLeave={(e) => animateButtonHover(e.currentTarget, false)}
               disabled={currentIndex === sourceTexts.length - 1}
               className="relative h-10 w-10 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-900 dark:text-gray-100 border border-gray-300 dark:border-gray-600 disabled:border-gray-200 dark:disabled:border-gray-800 disabled:text-gray-300 dark:disabled:text-gray-700 disabled:from-gray-100 disabled:to-gray-100 dark:disabled:from-gray-900 dark:disabled:to-gray-900 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-lg hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50 transition-all duration-300 ease-out disabled:cursor-not-allowed disabled:shadow-none overflow-hidden"
               style={{ borderRadius: '3px' }}
@@ -1351,10 +1303,7 @@ const TranslationHelper: React.FC = () => {
 
             {/* Translation Card - Compact padding */}
             <div
-              ref={cardRef}
-              className={`bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-5 space-y-4 shadow-sm transition-all duration-300 flex-1 flex flex-col ${
-                isAnimating ? 'opacity-0 transform -translate-x-4' : 'opacity-100 transform translate-x-0'
-              }`}
+              className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-5 space-y-4 shadow-sm transition-all duration-300 flex-1 flex flex-col opacity-100"
               style={{ borderRadius: '3px' }}
             >
           <div className="space-y-4">
@@ -1363,7 +1312,6 @@ const TranslationHelper: React.FC = () => {
                 <div className="flex flex-col gap-6 items-center">
                   {/* Main Dialogue Box - Modern JRPG Style */}
                   <div
-                    ref={dialogueBoxRef}
                     className="gamepad-dialogue-modern relative"
                     style={{
                       width: 'min(520px, 90vw)',
@@ -2411,7 +2359,6 @@ const TranslationHelper: React.FC = () => {
         {/* Version Badge with Gradient */}
         <div className="flex justify-center items-center gap-2">
           <div
-            ref={gradientBarRef}
             className="rounded-sm shadow-md relative cursor-pointer overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-xl"
             onMouseEnter={() => setShowVersionHash(true)}
             onMouseLeave={() => setShowVersionHash(false)}
