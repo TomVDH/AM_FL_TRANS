@@ -1,11 +1,18 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 
+interface SurroundingLine {
+  speaker?: string;
+  text: string;
+}
+
 interface UseAiSuggestionProps {
   sourceText: string;
   speaker: string;
   context: string;
   existingTranslation: string;
   currentIndex: number;
+  linesBefore?: SurroundingLine[];
+  linesAfter?: SurroundingLine[];
 }
 
 interface UseAiSuggestionReturn {
@@ -24,6 +31,8 @@ export function useAiSuggestion({
   context,
   existingTranslation,
   currentIndex,
+  linesBefore,
+  linesAfter,
 }: UseAiSuggestionProps): UseAiSuggestionReturn {
   const [aiSuggestEnabled, setAiSuggestEnabled] = useState(false);
   const [aiSuggestion, setAiSuggestion] = useState<string | null>(null);
@@ -67,6 +76,8 @@ export function useAiSuggestion({
           speaker,
           context,
           existingTranslation: existingTranslation || undefined,
+          linesBefore: linesBefore && linesBefore.length > 0 ? linesBefore : undefined,
+          linesAfter: linesAfter && linesAfter.length > 0 ? linesAfter : undefined,
         }),
         signal: controller.signal,
       });

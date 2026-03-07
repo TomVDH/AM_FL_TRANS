@@ -37,7 +37,7 @@ interface TextHighlighterProps {
   currentTranslation: string;
   onCharacterClick: (characterName: string) => void;
   onSuggestionClick?: (suggestion: string) => void;
-  onCharacterNameClick?: (characterName: string) => void;
+  onCharacterNameClick?: (characterName: string, event: React.MouseEvent) => void;
   onHighlightClick?: (entry: any, type: 'json' | 'xlsx' | 'character') => void;
   className?: string;
   style?: React.CSSProperties;
@@ -403,7 +403,7 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
     } else if (dataType === 'character') {
       const characterName = target.getAttribute('data-character');
       if (characterName && onCharacterNameClick) {
-        onCharacterNameClick(characterName);
+        onCharacterNameClick(characterName, e);
       }
     } else if ((dataType === 'json' || dataType === 'xlsx') && onHighlightClick) {
       // Could trigger jump to Data Viewer

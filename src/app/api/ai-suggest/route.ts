@@ -16,11 +16,18 @@ interface CodexEntry {
   dutchDialogueStyle?: string;
 }
 
+interface SurroundingLine {
+  speaker?: string;
+  text: string;
+}
+
 interface SuggestRequest {
   english: string;
   speaker: string;
   context: string;
   existingTranslation?: string;
+  linesBefore?: SurroundingLine[];
+  linesAfter?: SurroundingLine[];
 }
 
 let codexCache: { entries: CodexEntry[]; loadedAt: number } | null = null;
@@ -60,6 +67,37 @@ function findCharacterEntry(entries: CodexEntry[], speakerName: string): CodexEn
   return entry;
 }
 
+function findRelevantCodexEntries(entries: CodexEntry[], text: string): CodexEntry[] {
+  const textLower = text.toLowerCase();
+  const found: CodexEntry[] = [];
+  const seenEnglish = new Set<string>();
+
+  for (const entry of entries) {
+    if (seenEnglish.has(entry.english.toLowerCase())) continue;
+
+    const engLower = entry.english.toLowerCase();
+    // Check if entry's english name appears in the text (word boundary aware for 3+ char terms)
+    if (engLower.length >= 3 && textLower.includes(engLower)) {
+      found.push(entry);
+      seenEnglish.add(engLower);
+      continue;
+    }
+
+    // Check nicknames
+    if (entry.nicknames) {
+      for (const nick of entry.nicknames) {
+        if (nick.length >= 3 && textLower.includes(nick.toLowerCase())) {
+          found.push(entry);
+          seenEnglish.add(engLower);
+          break;
+        }
+      }
+    }
+  }
+
+  return found;
+}
+
 export async function POST(request: NextRequest) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
@@ -76,7 +114,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
   }
 
-  const { english, speaker, context, existingTranslation } = body;
+  const { english, speaker, context, existingTranslation, linesBefore, linesAfter } = body;
   if (!english) {
     return NextResponse.json({ error: 'english text is required' }, { status: 400 });
   }
@@ -85,17 +123,52 @@ export async function POST(request: NextRequest) {
   const entries = await getCodex();
   const charEntry = speaker ? findCharacterEntry(entries, speaker) : undefined;
 
+  // Find all codex entries referenced in the text and surrounding lines
+  const allText = [
+    english,
+    ...(linesBefore || []).map(l => l.text),
+    ...(linesAfter || []).map(l => l.text),
+  ].join(' ');
+  const referencedEntries = findRelevantCodexEntries(entries, allText);
+
   // Build context block
   const contextParts: string[] = [];
 
   if (charEntry) {
-    contextParts.push(`Character: ${charEntry.english} (Dutch name: ${charEntry.dutch || 'same'})`);
+    contextParts.push(`Speaker character: ${charEntry.english} (Dutch name: ${charEntry.dutch || 'same'})`);
     if (charEntry.gender) contextParts.push(`Gender: ${charEntry.gender}`);
     if (charEntry.dialogueStyle) contextParts.push(`English speech style:\n${charEntry.dialogueStyle}`);
     if (charEntry.dutchDialogueStyle) contextParts.push(`Dutch translation style:\n${charEntry.dutchDialogueStyle}`);
     if (charEntry.bio) contextParts.push(`Bio: ${charEntry.bio}`);
   } else if (speaker) {
     contextParts.push(`Speaker: ${speaker}`);
+  }
+
+  // Add surrounding dialogue context
+  if (linesBefore && linesBefore.length > 0) {
+    const beforeLines = linesBefore.map(l =>
+      l.speaker ? `[${l.speaker}]: ${l.text}` : l.text
+    ).join('\n');
+    contextParts.push(`Previous lines:\n${beforeLines}`);
+  }
+
+  if (linesAfter && linesAfter.length > 0) {
+    const afterLines = linesAfter.map(l =>
+      l.speaker ? `[${l.speaker}]: ${l.text}` : l.text
+    ).join('\n');
+    contextParts.push(`Following lines:\n${afterLines}`);
+  }
+
+  // Add referenced codex entries (excluding the speaker, already covered above)
+  const otherEntries = referencedEntries.filter(e => e !== charEntry);
+  if (otherEntries.length > 0) {
+    const codexRef = otherEntries.map(e => {
+      const parts = [`${e.english} → ${e.dutch}`];
+      if (e.category) parts.push(`(${e.category.toLowerCase()})`);
+      if (e.gender) parts.push(`[${e.gender}]`);
+      return parts.join(' ');
+    }).join('\n');
+    contextParts.push(`Referenced terms/characters:\n${codexRef}`);
   }
 
   if (context) {
@@ -115,8 +188,8 @@ Provide ONLY the Dutch translation. No explanation, no alternatives, no quotes a
   try {
     const client = new Anthropic({ apiKey });
     const response = await client.messages.create({
-      model: 'claude-haiku-4-5-20251001',
-      max_tokens: 200,
+      model: 'claude-sonnet-4-6',
+      max_tokens: 300,
       messages: [{ role: 'user', content: prompt }]
     });
 

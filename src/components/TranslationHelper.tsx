@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import * as XLSX from 'xlsx';
 import { toast } from 'sonner';
 import { useDisplayModes } from '../hooks/useDisplayModes';
@@ -156,7 +156,7 @@ const TranslationHelper: React.FC = () => {
   const copyJsonField = (text: string, fieldName: string) => {
     if (text) {
       navigator.clipboard.writeText(text);
-      toast.success(`${fieldName} copied!`);
+      // Silent — clipboard action is obvious from context
     }
   };
 
@@ -190,31 +190,23 @@ const TranslationHelper: React.FC = () => {
   const copyToClipboard = () => {
     const modifiedEntries = getModifiedEntriesForExcel();
 
-    if (modifiedEntries.length === 0) {
-      toast.info('No modified entries to copy');
-      return;
-    }
+    if (modifiedEntries.length === 0) return;
 
     // For Excel pasting: just the translations, one per line
     // User selects starting cell in J column and pastes
     const text = modifiedEntries.map(e => e.value).join('\n');
     navigator.clipboard.writeText(text);
-    toast.success(`Copied ${modifiedEntries.length} translation${modifiedEntries.length > 1 ? 's' : ''}`);
   };
 
   // Copy with cell references for manual paste (shows where each goes)
   const copyWithCellRefs = () => {
     const modifiedEntries = getModifiedEntriesForExcel();
 
-    if (modifiedEntries.length === 0) {
-      toast.info('No modified entries to copy');
-      return;
-    }
+    if (modifiedEntries.length === 0) return;
 
     // Format: "J5: translation text" for each line
     const text = modifiedEntries.map(e => `${e.cellRef}: ${e.value}`).join('\n');
     navigator.clipboard.writeText(text);
-    toast.success(`Copied ${modifiedEntries.length} with cell refs`);
   };
 
   // Clear with confirmation to prevent accidental data loss
@@ -227,7 +219,6 @@ const TranslationHelper: React.FC = () => {
       if (!confirmed) return;
     }
     resetOutputDisplay();
-    toast.success('Output cleared');
   };
 
   // Get Dutch column values from the loaded Excel workbook
@@ -410,9 +401,10 @@ const TranslationHelper: React.FC = () => {
   const [showResetModal, setShowResetModal] = useState(false);
   const [showOutput, setShowOutput] = useState(true);
   const [showSpeakerCard, setShowSpeakerCard] = useState(false);
+  const [codexPopover, setCodexPopover] = useState<{ characterName: string; rect: DOMRect } | null>(null);
 
-  // Close speaker card when navigating
-  useEffect(() => { setShowSpeakerCard(false); }, [currentIndex]);
+  // Close speaker card and codex popover when navigating
+  useEffect(() => { setShowSpeakerCard(false); setCodexPopover(null); }, [currentIndex]);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
@@ -480,6 +472,32 @@ const TranslationHelper: React.FC = () => {
     startRow,
   });
 
+  // Build surrounding lines for AI context (max 5 before, max 5 after)
+  const surroundingLines = useMemo(() => {
+    const before: { speaker?: string; text: string }[] = [];
+    const after: { speaker?: string; text: string }[] = [];
+
+    for (let i = Math.max(0, currentIndex - 5); i < currentIndex; i++) {
+      if (sourceTexts[i]?.trim()) {
+        before.push({
+          speaker: utterers[i] ? trimSpeakerName(utterers[i]) : undefined,
+          text: sourceTexts[i],
+        });
+      }
+    }
+
+    for (let i = currentIndex + 1; i <= Math.min(sourceTexts.length - 1, currentIndex + 5); i++) {
+      if (sourceTexts[i]?.trim()) {
+        after.push({
+          speaker: utterers[i] ? trimSpeakerName(utterers[i]) : undefined,
+          text: sourceTexts[i],
+        });
+      }
+    }
+
+    return { before, after };
+  }, [currentIndex, sourceTexts, utterers]);
+
   // AI translation suggestion
   const {
     aiSuggestEnabled,
@@ -494,6 +512,8 @@ const TranslationHelper: React.FC = () => {
     context: contextNotes[currentIndex] || '',
     existingTranslation: currentTranslation,
     currentIndex,
+    linesBefore: surroundingLines.before,
+    linesAfter: surroundingLines.after,
   });
 
   // Combine edited matches with memory matches for QuickReferenceBar
@@ -540,24 +560,17 @@ const TranslationHelper: React.FC = () => {
     }
   }, [sourceTexts.length, setCurrentIndex, setCurrentTranslation, translations]);
 
-  // Handle character name click for scrolling to context search
-  const handleCharacterNameClick = (characterName: string) => {
-    // Enable XLSX mode if not already enabled
-    if (!xlsxMode) {
-      toggleXlsxMode();
+  // Handle character name click — show popover with codex info
+  const handleCharacterNameClick = useCallback((characterName: string, event?: React.MouseEvent) => {
+    if (!event) return; // Need position for popover
+    const rect = (event.target as HTMLElement).getBoundingClientRect();
+    // Toggle off if same character
+    if (codexPopover?.characterName === characterName) {
+      setCodexPopover(null);
+    } else {
+      setCodexPopover({ characterName, rect });
     }
-    
-    // Switch to context search tab
-    setXlsxViewerTab('context');
-    
-    // Scroll to the Reference Tools section after a brief delay
-    setTimeout(() => {
-      const referenceTools = document.querySelector('.reference-tools-section');
-      if (referenceTools) {
-        referenceTools.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 100);
-  };
+  }, [codexPopover]);
 
   // Handle highlight click to jump to Data Viewer
   const handleHighlightClick = useCallback((entry: any, type: 'json' | 'xlsx' | 'character') => {
@@ -1287,10 +1300,7 @@ const TranslationHelper: React.FC = () => {
               className={`bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-5 space-y-4 shadow-sm transition-all duration-300 flex-1 flex flex-col ${
                 isAnimating ? 'opacity-0 transform -translate-x-4' : 'opacity-100 transform translate-x-0'
               }`}
-              style={{
-                // Remove bottom radius when QuickReferenceBar is visible (so it underhangs)
-                borderRadius: (xlsxMode || highlightMode) ? '3px 3px 0 0' : '3px'
-              }}
+              style={{ borderRadius: '3px' }}
             >
           <div className="space-y-4">
             <div className="space-y-2">
@@ -1724,7 +1734,6 @@ const TranslationHelper: React.FC = () => {
                             onClick={() => {
                               insertTranslatedSuggestion(aiSuggestion);
                               clearAiSuggestion();
-                              toast.success('AI suggestion inserted');
                             }}
                             className="group inline-flex items-center gap-2 px-3 py-1.5 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/30 dark:to-yellow-900/30 border border-amber-300 dark:border-amber-600 hover:border-amber-400 dark:hover:border-amber-500 hover:shadow-md text-amber-800 dark:text-amber-200 text-xs transition-all duration-150 cursor-pointer max-w-full" style={{ borderRadius: '3px' }}
                             title="Click to insert AI suggestion"
@@ -1770,21 +1779,70 @@ const TranslationHelper: React.FC = () => {
           </div>
         </div>
 
-        {/* Quick Reference Bar - Below grid, aligned with left column */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 -mt-0.5">
-          <QuickReferenceBar
-            sourceText={sourceTexts[currentIndex] || ''}
-            findCharacterMatches={findCharacterMatches}
-            findXlsxMatches={findXlsxMatches}
-            findEditedMatches={findCombinedEditedMatches}
-            onInsert={insertCharacterName}
-            onOpenReferenceTools={() => {
-              if (!xlsxMode) toggleXlsxMode();
-            }}
-            onJumpToEntry={handleJumpToEntry}
-            isVisible={xlsxMode || highlightMode}
-          />
-        </div>
+        {/* Codex Popover — triggered by clicking a purple pill in source text */}
+        {codexPopover && (() => {
+          const entry = characterData.find(e => {
+            const lower = codexPopover.characterName.toLowerCase();
+            return e.english?.toLowerCase() === lower ||
+              (e.nicknames && e.nicknames.some((n: string) => n.toLowerCase() === lower));
+          });
+          if (!entry) return null;
+          const top = codexPopover.rect.bottom + window.scrollY + 6;
+          const left = Math.min(
+            codexPopover.rect.left + window.scrollX,
+            window.innerWidth - 340
+          );
+          const hasRichInfo = entry.gender || entry.dialogueStyle || entry.dutchDialogueStyle || entry.bio;
+          return (
+            <>
+              <div className="fixed inset-0 z-40" onClick={() => setCodexPopover(null)} />
+              <div
+                className="absolute z-50 w-[320px] shadow-xl border border-purple-300 dark:border-purple-700 bg-white dark:bg-gray-800 animate-in fade-in slide-in-from-top-1 duration-150"
+                style={{ top, left, borderRadius: '4px' }}
+              >
+                {hasRichInfo ? (
+                  <CharacterInfoCard
+                    character={entry}
+                    onClose={() => setCodexPopover(null)}
+                    onInsert={insertCharacterName}
+                  />
+                ) : (
+                  <div className="px-3 py-2 flex items-center justify-between gap-2">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span className="text-xs font-bold text-purple-900 dark:text-purple-100 truncate">{entry.english}</span>
+                      <span className="text-[10px] text-purple-400 dark:text-purple-500">&rarr;</span>
+                      <span className="text-xs font-semibold text-purple-700 dark:text-purple-300 truncate">{entry.dutch}</span>
+                      {entry.category && (
+                        <span className="text-[9px] px-1 py-0.5 bg-purple-100 dark:bg-purple-800 text-purple-600 dark:text-purple-300 shrink-0" style={{ borderRadius: '2px' }}>{entry.category}</span>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-1 shrink-0">
+                      <button
+                        onClick={() => { insertCharacterName(entry.dutch); setCodexPopover(null); }}
+                        className="p-1 text-purple-500 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-200 hover:bg-purple-100 dark:hover:bg-purple-700 transition-colors"
+                        style={{ borderRadius: '2px' }}
+                        title={`Insert "${entry.dutch}"`}
+                      >
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+                        </svg>
+                      </button>
+                      <button
+                        onClick={() => setCodexPopover(null)}
+                        className="p-1 text-purple-400 dark:text-purple-500 hover:text-purple-600 dark:hover:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-700 transition-colors"
+                        style={{ borderRadius: '2px' }}
+                      >
+                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </>
+          );
+        })()}
 
         {/* Output Section - Full Width Below Grid */}
         {showOutput && <div className="mt-4">

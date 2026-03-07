@@ -79,7 +79,7 @@ interface ReferenceToolsPanelProps {
   // Action handlers
   insertCharacterName: (name: string) => void;
   insertTranslatedSuggestion: (suggestion: string) => void;
-  handleCharacterNameClick: (name: string) => void;
+  handleCharacterNameClick: (name: string, event?: React.MouseEvent) => void;
   handleHighlightClick: (entry: any, type: 'json' | 'xlsx' | 'character') => void;
 
   // Utility functions
