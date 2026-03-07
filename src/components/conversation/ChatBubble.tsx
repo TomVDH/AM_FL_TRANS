@@ -76,23 +76,26 @@ export const ChatBubble = React.memo(function ChatBubble({
     const enText = row.sourceText;
     const nlText = row.isTranslated ? row.translation : null;
 
+    const textColor = 'text-gray-900 dark:text-gray-100';
+    const subTextColor = 'text-gray-600 dark:text-gray-400';
+
     switch (languageMode) {
       case 'EN':
-        return <div className="text-[15px] leading-[1.55]">{enText}</div>;
+        return <div className={`text-[15px] leading-[1.55] ${textColor}`}>{enText}</div>;
       case 'NL':
         return nlText
-          ? <div className="text-[15px] leading-[1.55]">{nlText}</div>
+          ? <div className={`text-[15px] leading-[1.55] ${textColor}`}>{nlText}</div>
           : <div className="text-[13px] italic text-gray-400 dark:text-gray-500">— awaiting translation —</div>;
       case 'EN+NL':
         return (
           <>
-            <div className="text-[15px] leading-[1.55]">{enText}</div>
+            <div className={`text-[15px] leading-[1.55] ${textColor}`}>{enText}</div>
             {nlText ? (
-              <div className="mt-1.5 pt-1.5 border-t border-current/10 text-[13px] text-current/60 italic">
+              <div className={`mt-1.5 pt-1.5 border-t border-gray-200 dark:border-gray-700 text-[13px] ${subTextColor} italic`}>
                 {nlText}
               </div>
             ) : (
-              <div className="mt-1.5 pt-1.5 border-t border-current/10 text-[13px] italic text-gray-400 dark:text-gray-500">
+              <div className="mt-1.5 pt-1.5 border-t border-gray-200 dark:border-gray-700 text-[13px] italic text-gray-400 dark:text-gray-500">
                 — awaiting translation —
               </div>
             )}
