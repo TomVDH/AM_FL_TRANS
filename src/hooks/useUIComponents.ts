@@ -60,12 +60,12 @@ export const useUIComponents = (): UIComponentsState => {
    */
   const generateGradientColors = useCallback((): string[] => {
     const colors = [
-      'from-purple-400 to-pink-400',
-      'from-blue-400 to-purple-400',
+      'from-gray-400 to-gray-500',
+      'from-blue-400 to-gray-400',
       'from-green-400 to-blue-400',
       'from-yellow-400 to-orange-400',
       'from-red-400 to-pink-400',
-      'from-indigo-400 to-purple-400',
+      'from-gray-400 to-blue-400',
       'from-teal-400 to-green-400',
       'from-orange-400 to-red-400',
     ];
