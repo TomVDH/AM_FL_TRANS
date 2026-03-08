@@ -468,10 +468,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         }`}
         style={{ animation: 'fadeIn 0.3s ease-out' }}
       >
-        {/* Header — compact, left-aligned */}
-        <div className="mb-6 flex items-baseline gap-3">
-          <h1 className="text-lg font-semibold tracking-tight text-gray-900 dark:text-gray-100">AM FL TRANS</h1>
-          <span className="text-[10px] text-gray-400 dark:text-gray-500 uppercase tracking-widest">asses.masses</span>
+        {/* Header */}
+        <div className="mb-8">
+          <h1 className="text-2xl font-black tracking-tight text-gray-900 dark:text-gray-100">AM FL TRANS</h1>
+          <p className="text-[11px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] mt-0.5">asses.masses — Translation Workbench</p>
         </div>
 
         {/* Resume Card */}
@@ -479,21 +479,24 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           <>
             <button
               onClick={() => handleResumeSession(lastSession)}
-              className="w-full text-left px-4 py-3 mb-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-sm transition-all duration-150 group"
+              className="w-full text-left px-4 py-3.5 mb-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 hover:border-amber-300 dark:hover:border-amber-600 hover:shadow-md transition-all duration-150 group"
               style={{ borderRadius: '3px' }}
             >
               <div className="flex items-center justify-between">
                 <div className="min-w-0">
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <span className="text-[10px] font-bold uppercase tracking-wide text-amber-600 dark:text-amber-400">Resume</span>
+                    <span className="text-[10px] text-amber-500/60 dark:text-amber-500/40">
+                      {lastSession.translatedCount}/{lastSession.totalLines}
+                      {lastSession.timestamp && ` · ${formatTimeAgo(lastSession.timestamp)}`}
+                    </span>
+                  </div>
                   <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
-                    Resume: {lastSession.fileName}
-                    {lastSession.selectedSheet && ` — ${lastSession.selectedSheet}`}
-                  </span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400 ml-2">
-                    {lastSession.translatedCount}/{lastSession.totalLines}
-                    {lastSession.timestamp && ` · ${formatTimeAgo(lastSession.timestamp)}`}
+                    {lastSession.fileName}
+                    {lastSession.selectedSheet && <span className="text-gray-500 dark:text-gray-400"> — {lastSession.selectedSheet}</span>}
                   </span>
                 </div>
-                <svg className="w-4 h-4 text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-300 shrink-0 ml-3 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-amber-400 group-hover:text-amber-500 dark:text-amber-500 dark:group-hover:text-amber-400 shrink-0 ml-3 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
@@ -507,19 +510,18 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           </>
         )}
 
-        {/* File Selection — flat, no card wrapper */}
+        {/* File Selection */}
         <div className="space-y-3">
-          {/* Server file selector */}
           <div>
             {fileType === 'excel' && (
               <>
                 {loadingExistingFiles ? (
-                  <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
+                  <div className="px-3 py-2.5 text-xs text-gray-500 dark:text-gray-400">Loading files...</div>
                 ) : existingFiles.length > 0 ? (
                   <select
                     value={selectedExistingFile}
                     onChange={(e) => handleExistingFileSelect(e.target.value)}
-                    className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
+                    className="w-full px-3 py-2.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-2 focus:ring-gray-500/10 transition-all"
                     style={{ borderRadius: '3px' }}
                   >
                     <option value="">Select file from server...</option>
@@ -530,14 +532,14 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     ))}
                   </select>
                 ) : (
-                  <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /excels</div>
+                  <div className="px-3 py-2.5 text-xs text-gray-500 dark:text-gray-400">No files in /excels</div>
                 )}
               </>
             )}
             {(fileType === 'json' || fileType === 'csv') && (
               <>
                 {loadingDataFiles ? (
-                  <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">Loading...</div>
+                  <div className="px-3 py-2.5 text-xs text-gray-500 dark:text-gray-400">Loading files...</div>
                 ) : (fileType === 'json' ? jsonFiles : csvFiles).length > 0 ? (
                   <select
                     value={selectedDataFile}
@@ -545,7 +547,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                       console.log(`[SetupWizard] ${fileType.toUpperCase()} file selected:`, e.target.value);
                       setSelectedDataFile(e.target.value);
                     }}
-                    className="w-full px-2.5 py-1.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all"
+                    className="w-full px-3 py-2.5 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-2 focus:ring-gray-500/10 transition-all"
                     style={{ borderRadius: '3px' }}
                   >
                     <option value="">Select file from server...</option>
@@ -554,7 +556,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     ))}
                   </select>
                 ) : (
-                  <div className="px-3 py-1.5 text-xs text-gray-500 dark:text-gray-400">No files in /data/{fileType}</div>
+                  <div className="px-3 py-2.5 text-xs text-gray-500 dark:text-gray-400">No files in /data/{fileType}</div>
                 )}
               </>
             )}
@@ -611,7 +613,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               }
             }}
             aria-label="Upload Excel file"
-            className="flex items-center justify-center gap-2 py-2 border border-dashed border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-transparent transition-all duration-200 cursor-pointer"
+            className="flex items-center justify-center gap-2 py-3 border-2 border-dashed border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-800/50 bg-transparent transition-all duration-200 cursor-pointer"
             style={{ borderRadius: '3px' }}
           >
             {isLoadingExcel ? (
@@ -756,33 +758,32 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         )}
 
         {/* Start Button */}
-        <div className="mt-5">
-          {sourceTexts.length > 0 && (
-            <p className="text-xs text-gray-500 dark:text-gray-400 mb-2">
-              {sourceTexts.length} items ready to translate
-            </p>
-          )}
+        <div className="mt-6">
           <button
             onClick={handleStartWithDataFile}
             disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
-            className="w-full px-4 py-2.5 bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 border border-transparent hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors duration-150 disabled:cursor-not-allowed font-medium text-sm"
+            className={`w-full px-4 py-3 border transition-all duration-200 disabled:cursor-not-allowed font-semibold text-sm ${
+              sourceTexts.length > 0
+                ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200 hover:bg-gray-800 dark:hover:bg-gray-200 hover:shadow-lg'
+                : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700'
+            }`}
             style={{ borderRadius: '3px' }}
           >
-            Start Translation{sourceTexts.length > 0 ? ` — ${sourceTexts.length} lines` : ''}
+            {sourceTexts.length > 0 ? `Start Translation — ${sourceTexts.length} lines` : 'Start Translation'}
           </button>
         </div>
 
         {/* Codex — collapsed accordion */}
-        <div className="mt-6 pt-4 border-t border-gray-200 dark:border-gray-700">
+        <div className="mt-8 pt-5 border-t border-gray-200 dark:border-gray-700">
           <div className="flex items-center gap-2">
             <button
               onClick={() => setShowCodexEditor(!showCodexEditor)}
-              className="flex-1 flex items-center justify-between py-2 text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+              className="flex-1 flex items-center justify-between py-1.5 text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
             >
-              <span className="flex items-center gap-2">
+              <span className="flex items-center gap-2.5">
                 <span className="text-sm font-bold tracking-tight">Codex</span>
                 {totalEntries > 0 && (
-                  <span className="px-1.5 py-0.5 text-[10px] font-medium bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 rounded">
+                  <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded">
                     {totalEntries}
                   </span>
                 )}
@@ -823,10 +824,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         </div>
 
         {/* Advanced — toggle matching Codex style */}
-        <div className="mt-4">
+        <div className="mt-5">
           <button
             onClick={() => setShowAdvanced(!showAdvanced)}
-            className="flex-1 w-full flex items-center justify-between py-2 text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+            className="flex-1 w-full flex items-center justify-between py-1.5 text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
           >
             <span className="text-sm font-bold tracking-tight">Advanced</span>
             <svg
@@ -910,8 +911,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           )}
         </div>
 
-        {/* Footer — dark mode toggle + version inline */}
-        <div className="mt-6 pt-3 border-t border-gray-200 dark:border-gray-700 flex items-center justify-between">
+        {/* Footer */}
+        <div className="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700 flex items-center justify-between">
           <p className="text-[10px] text-gray-400 dark:text-gray-500">
             Onnozelaer Marketing Works © 2025
           </p>
