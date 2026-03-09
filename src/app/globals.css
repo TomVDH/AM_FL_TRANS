@@ -610,80 +610,99 @@
 /* Modern pixel-art dialogue box */
 .gamepad-dialogue-modern {
   border: 3px solid #1a1a1a;
-  border-radius: 8px;
-  background: linear-gradient(180deg, #ffffff 0%, #f8f8f8 100%);
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 50%, #f5f5f5 100%);
   box-shadow:
-    0 4px 0 0 rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.8);
+    0 6px 0 0 rgba(0, 0, 0, 0.15),
+    0 8px 24px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
   overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.gamepad-dialogue-modern:hover {
+  box-shadow:
+    0 6px 0 0 rgba(0, 0, 0, 0.15),
+    0 12px 32px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
 }
 
 .dark .gamepad-dialogue-modern {
   border-color: #4a4a4a;
-  background: linear-gradient(180deg, #1a1a1a 0%, #141414 100%);
+  background: linear-gradient(180deg, #1c1c1c 0%, #181818 50%, #141414 100%);
   box-shadow:
-    0 4px 0 0 rgba(0, 0, 0, 0.4),
-    inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+    0 6px 0 0 rgba(0, 0, 0, 0.35),
+    0 8px 24px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
+}
+
+.dark .gamepad-dialogue-modern:hover {
+  box-shadow:
+    0 6px 0 0 rgba(0, 0, 0, 0.35),
+    0 12px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.08);
 }
 
 /* Name tab styling - JRPG style */
 .gamepad-name-tab {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  background: #1a1a1a;
+  gap: 8px;
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
   color: #ffffff;
-  padding: 6px 14px;
-  border-radius: 0 0 8px 0;
+  padding: 7px 16px;
+  border-radius: 0 0 10px 0;
   font-family: var(--font-pixelify-sans), "Pixelify Sans", sans-serif;
   font-weight: 700;
   font-size: 1rem;
-  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 2px 3px 0 0 rgba(0, 0, 0, 0.12);
   position: relative;
+  transition: background 0.2s ease;
 }
 
 .dark .gamepad-name-tab {
-  background: #2a2a2a;
-  box-shadow: 2px 2px 0 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #2a2a2a, #3a3a3a);
+  box-shadow: 2px 3px 0 0 rgba(0, 0, 0, 0.25);
 }
 
 /* Animated continue indicator */
 .gamepad-continue-indicator {
   display: flex;
   align-items: center;
-  gap: 1px;
+  gap: 2px;
   font-family: var(--font-pixelify-sans), "Pixelify Sans", sans-serif;
   font-weight: 700;
-  color: #666666;
-  font-size: 1.2rem;
+  color: #888888;
+  font-size: 1rem;
 }
 
 .dark .gamepad-continue-indicator {
-  color: #888888;
+  color: #666666;
 }
 
 /* Pulsing typewriter animation */
 @keyframes pulse-typewriter {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
+  50% { opacity: 0.2; }
 }
 
 .gamepad-continue-indicator span {
-  animation: pulse-typewriter 1s ease-in-out infinite;
+  animation: pulse-typewriter 1.2s ease-in-out infinite;
+  transition: opacity 0.2s ease;
 }
 
 
 .gamepad-continue-indicator span:nth-child(2) {
-  animation-delay: 0.15s;
+  animation-delay: 0.2s;
 }
 
 .gamepad-continue-indicator span:nth-child(3) {
-  animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
 
 /* Dialogue content area */
 .gamepad-dialogue-content {
-  padding: 16px 20px;
+  padding: 16px 22px;
   font-family: var(--font-pixelify-sans), "Pixelify Sans", sans-serif;
   font-size: 1.15rem;
   line-height: 1.65;
@@ -697,10 +716,41 @@
   color: #e5e5e5;
 }
 
+/* 3-line overflow warning — text too long for game dialogue */
+.gamepad-overflow-warning {
+  position: relative;
+}
+
+.gamepad-overflow-warning::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, rgba(239, 68, 68, 0.5), transparent);
+  border-radius: 0 0 10px 10px;
+  animation: overflowPulse 2s ease-in-out infinite;
+}
+
+@keyframes overflowPulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+
+/* Line count badge */
+.gamepad-line-badge {
+  font-family: var(--font-pixelify-sans), "Pixelify Sans", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
 /* Source preview box - subtle styling */
 .gamepad-source-preview {
   border: 2px solid #d0d0d0;
-  border-radius: 6px;
+  border-radius: 8px;
   background: linear-gradient(180deg, #fafafa 0%, #f0f0f0 100%);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
 }
@@ -709,6 +759,16 @@
   border-color: #3a3a3a;
   background: linear-gradient(180deg, #1e1e1e 0%, #181818 100%);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Gamepad entrance animation */
+@keyframes gamepadSlideIn {
+  from { opacity: 0; transform: translateY(12px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.gamepad-enter {
+  animation: gamepadSlideIn 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both;
 }
 
 /* ========== Scrolling Text Animation for Live Mode ========== */
@@ -784,4 +844,121 @@
 
 .popover-bloom {
   animation: popoverBloom 0.15s ease-out both;
+}
+
+/* ========== V5 Micro-Interaction System ========== */
+
+/* Staggered list entrance — apply to parent, children inherit */
+@keyframes slideUpFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.stagger-enter > * {
+  animation: slideUpFadeIn 0.25s ease-out both;
+}
+.stagger-enter > *:nth-child(1) { animation-delay: 0ms; }
+.stagger-enter > *:nth-child(2) { animation-delay: 40ms; }
+.stagger-enter > *:nth-child(3) { animation-delay: 80ms; }
+.stagger-enter > *:nth-child(4) { animation-delay: 120ms; }
+.stagger-enter > *:nth-child(5) { animation-delay: 160ms; }
+.stagger-enter > *:nth-child(6) { animation-delay: 200ms; }
+.stagger-enter > *:nth-child(7) { animation-delay: 240ms; }
+.stagger-enter > *:nth-child(8) { animation-delay: 280ms; }
+
+/* Gentle scale entrance */
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.2s ease-out both;
+}
+
+/* Tab content entrance */
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(3px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-tab-enter {
+  animation: tabFadeIn 0.18s ease-out both;
+}
+
+/* Hover lift utility — smooth Y-translate + shadow */
+.hover-lift {
+  transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+.hover-lift:active {
+  transform: translateY(0px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.dark .hover-lift:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.dark .hover-lift:active {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/* Button press effect */
+.press-effect {
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+.press-effect:active {
+  transform: scale(0.985);
+}
+
+/* Arrow nudge — used on resume card arrow */
+@keyframes arrowNudge {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(3px); }
+}
+
+/* Expand-collapse panel with smooth height */
+@keyframes expandIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-expand-in {
+  animation: expandIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+/* Divider fade entrance */
+@keyframes dividerFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.animate-divider-fade {
+  animation: dividerFadeIn 0.4s ease-out 0.15s both;
+}
+
+/* Shimmer sweep for active/loading states */
+@keyframes shimmerSweep {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Start button glow pulse when active */
+@keyframes startButtonPulse {
+  0%, 100% { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+  50% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); }
+}
+
+/* Smooth border highlight for selected sheet */
+.sheet-item-selected {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Drop zone pulse on drag-over */
+@keyframes dropZonePulse {
+  0%, 100% { border-color: rgba(107, 114, 128, 0.3); }
+  50% { border-color: rgba(107, 114, 128, 0.6); }
 }

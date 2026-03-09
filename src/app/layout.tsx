@@ -27,7 +27,7 @@ const playfairDisplay = Playfair_Display({
  * Used for SEO and browser tab information
  */
 export const metadata: Metadata = {
-  title: 'AM Translations Helper',
+  title: 'AM FL V',
   description: 'A React TypeScript application for assisting with translation workflows, supporting Excel file uploads and manual text input.',
   icons: {
     icon: '/images/ass-favico-white.png',

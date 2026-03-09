@@ -34,8 +34,9 @@ export function ConversationHeader({
   const total = rows.length;
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-700 shadow-sm">
-      <div className="max-w-4xl mx-auto px-4 py-2 flex items-center gap-3">
+    <div className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200 dark:border-gray-700 shadow-sm" style={{ backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', backgroundColor: 'rgba(255,255,255,0.9)' }}>
+      <style>{`.dark .fixed.z-50[style] { background-color: rgba(17,24,39,0.9) !important; }`}</style>
+      <div className="max-w-4xl mx-auto px-4 py-2.5 flex items-center gap-3">
 
         {/* Sheet name */}
         <span className="text-xs font-bold tracking-wide uppercase text-gray-700 dark:text-gray-300 truncate max-w-[120px]" title={sheetName}>

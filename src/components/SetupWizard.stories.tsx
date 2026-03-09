@@ -213,7 +213,7 @@ const SetupWizardDemo = ({
         {/* Footer */}
         <div className="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700 text-center">
           <p className="text-xs text-gray-500 dark:text-gray-400">
-            AM Translations Helper v3.1.0
+            AM Translations Helper v5.0.0
           </p>
         </div>
       </div>

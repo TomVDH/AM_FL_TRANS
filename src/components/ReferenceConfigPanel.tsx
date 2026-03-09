@@ -116,7 +116,7 @@ export default function ReferenceConfigPanel({
 
       {/* Expanded: Tab Bar + Content — wider than parent for breathing room */}
       {isExpanded && (
-        <div className="mt-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 -mx-4 sm:-mx-8 md:-mx-12" style={{ borderRadius: '3px' }}>
+        <div className="mt-2 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 -mx-4 sm:-mx-8 md:-mx-12 animate-expand-in" style={{ borderRadius: '3px' }}>
           {/* Tab Bar */}
           <div className="flex border-b border-gray-200 dark:border-gray-700">
             {tabs.map((tab) => (
@@ -164,7 +164,7 @@ export default function ReferenceConfigPanel({
           </div>
 
           {/* Tab Content */}
-          <div className="p-4 max-h-[60vh] overflow-y-auto">
+          <div className="p-4 max-h-[60vh] overflow-y-auto animate-tab-enter" key={activeTab}>
             {activeTab === 'codex' && (
               <CodexEditor onCodexUpdated={onCodexUpdated} />
             )}

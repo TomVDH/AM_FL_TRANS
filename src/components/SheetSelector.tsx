@@ -142,10 +142,10 @@ const SheetSelector: React.FC<SheetSelectorProps> = ({
             <button
               key={sheet.name}
               onClick={() => onSelectSheet(sheet.name)}
-              className={`w-full flex items-center justify-between px-2.5 py-2 text-left transition-all duration-150 ${
+              className={`w-full flex items-center justify-between px-2.5 py-2 text-left transition-all duration-200 ${
                 sheet.isSelected
                   ? 'bg-green-50 dark:bg-green-900/20 border-l-3 border-l-green-500'
-                  : 'bg-white dark:bg-gray-800 border-l-3 border-l-transparent hover:bg-gray-50 dark:hover:bg-gray-700'
+                  : 'bg-white dark:bg-gray-800 border-l-3 border-l-transparent hover:bg-gray-50 dark:hover:bg-gray-700 hover:pl-3'
               } ${index !== 0 ? 'border-t border-gray-100 dark:border-gray-700' : ''}`}
             >
               <div className="flex items-center gap-2 min-w-0">

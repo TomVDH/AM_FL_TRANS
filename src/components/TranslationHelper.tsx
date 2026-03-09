@@ -392,7 +392,7 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
-  const VERSION_HASH = 'v3.1.0';
+  const VERSION_HASH = 'v5.0.0';
   
   const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({});
   const [codexData, setCodexData] = useState<any>(null);
@@ -848,23 +848,23 @@ const TranslationHelper: React.FC = () => {
   }
 
   return (
-    <div className="h-screen bg-gray-50 dark:bg-gray-900 flex flex-col overflow-hidden transition-colors duration-300" style={{ animation: 'fadeIn 0.5s ease-out' }}>
+    <div className="h-screen bg-gray-50 dark:bg-gray-900 flex flex-col overflow-hidden transition-colors duration-500" style={{ animation: 'fadeIn 0.4s ease-out' }}>
       {/* Main Content Area - scrolls internally, footer stays pinned */}
       <main className="flex-1 min-h-0 overflow-y-auto max-w-7xl mx-auto w-full px-3 md:px-5 pt-3 md:pt-5 flex flex-col">
         {/* Header — Two-Row Bar */}
-        <div className="mb-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm" style={{ borderRadius: '3px' }}>
+        <div className="mb-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm transition-shadow duration-300 hover:shadow-md" style={{ borderRadius: '3px' }}>
           {/* Row 0: Logo banner + file info + timer */}
           <div className="flex items-center gap-3 px-4 py-2.5 border-b border-gray-100 dark:border-gray-700/50 bg-gray-50/50 dark:bg-gray-900/30">
             <button
               onClick={handleBackToSetup}
-              className="shrink-0 cursor-pointer hover:opacity-80 transition-opacity"
+              className="shrink-0 cursor-pointer hover:opacity-80 hover:scale-105 transition-all duration-200"
               title="Go to Setup"
               aria-label="Go to Setup"
             >
               <img src="/images/asses-masses-logo.png" alt="Asses Masses" className="h-10 w-auto" />
             </button>
             <div className="flex flex-col min-w-0">
-              <span className="text-[10px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] leading-tight">asses.masses — Translation Workbench</span>
+              <span className="text-[10px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] leading-tight">asses.masses — AM FL V</span>
               <div className="flex items-baseline gap-1.5 min-w-0">
                 <span className="text-sm font-bold text-gray-800 dark:text-gray-200 truncate">
                   {loadedFileName || 'Untitled'}
@@ -879,7 +879,8 @@ const TranslationHelper: React.FC = () => {
             <div className="flex-1" />
             <button
               onClick={toggleTimerPause}
-              className="flex items-center gap-1.5 text-xs tabular-nums shrink-0"
+              className="flex items-center gap-1.5 text-xs tabular-nums shrink-0 hover:bg-gray-100 dark:hover:bg-gray-800 px-2 py-1 -mx-2 transition-all duration-200 press-effect"
+              style={{ borderRadius: '3px' }}
               title={timerRunning ? 'Pause timer' : 'Timer starts on first translation'}
             >
               <svg className="w-3 h-3 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -898,12 +899,12 @@ const TranslationHelper: React.FC = () => {
             <button
               onClick={handlePreviousWithSync}
               disabled={currentIndex === 0 || syncStatus === 'syncing'}
-              className="group relative h-7 w-7 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
+              className="group relative h-7 w-7 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden disabled:opacity-40 disabled:cursor-not-allowed shrink-0 press-effect"
               style={{ borderRadius: '3px' }}
               aria-label="Previous entry"
               title="Previous (←)"
             >
-              <svg className="w-3.5 h-3.5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5 relative z-10 transition-transform duration-200 group-hover:-translate-x-px" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
               <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -915,7 +916,7 @@ const TranslationHelper: React.FC = () => {
               aria-valuemin={1}
               aria-valuemax={sourceTexts.length}
               aria-label={`Translation progress: ${currentIndex + 1} of ${sourceTexts.length}`}
-              className="relative h-1.5 bg-gray-200/60 dark:bg-gray-700/40 overflow-hidden flex-1 min-w-[80px] max-w-[320px]"
+              className="relative h-1.5 bg-gray-200/60 dark:bg-gray-700/40 overflow-hidden flex-1 min-w-[80px] max-w-[320px] transition-all duration-300"
               style={{ borderRadius: '4px' }}
             >
               {sourceTexts.length <= 50 ? (
@@ -959,12 +960,12 @@ const TranslationHelper: React.FC = () => {
                 }
               }}
               disabled={currentIndex >= sourceTexts.length - 1}
-              className="group relative h-7 w-7 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden disabled:opacity-40 disabled:cursor-not-allowed shrink-0"
+              className="group relative h-7 w-7 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden disabled:opacity-40 disabled:cursor-not-allowed shrink-0 press-effect"
               style={{ borderRadius: '3px' }}
               aria-label="Next entry"
               title="Next (→)"
             >
-              <svg className="w-3.5 h-3.5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5 relative z-10 transition-transform duration-200 group-hover:translate-x-px" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
               <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -974,7 +975,7 @@ const TranslationHelper: React.FC = () => {
             <div className="inline-flex bg-gray-100 dark:bg-gray-800 p-0.5 shrink-0" style={{ borderRadius: '3px' }}>
               <button
                 onClick={() => { if (gamepadMode) toggleGamepadMode(); if (conversationMode) toggleConversationMode(); }}
-                className={`flex items-center justify-center w-7 h-6 transition-colors ${!gamepadMode && !conversationMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'}`}
+                className={`flex items-center justify-center w-7 h-6 transition-all duration-200 ${!gamepadMode && !conversationMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'}`}
                 style={{ borderRadius: '2px' }}
                 title="Standard"
                 aria-label="Standard mode"
@@ -983,7 +984,7 @@ const TranslationHelper: React.FC = () => {
               </button>
               <button
                 onClick={() => { if (!gamepadMode) toggleGamepadMode(); if (conversationMode) toggleConversationMode(); }}
-                className={`flex items-center justify-center w-7 h-6 transition-colors ${gamepadMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'}`}
+                className={`flex items-center justify-center w-7 h-6 transition-all duration-200 ${gamepadMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'}`}
                 style={{ borderRadius: '2px' }}
                 title="Gamepad"
                 aria-label="Gamepad mode"
@@ -993,7 +994,7 @@ const TranslationHelper: React.FC = () => {
               <button
                 onClick={() => { if (gamepadMode) toggleGamepadMode(); if (!conversationMode) toggleConversationMode(); }}
                 disabled={!isStarted || sourceTexts.length === 0}
-                className={`relative flex items-center justify-center w-7 h-6 transition-colors ${conversationMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 disabled:text-gray-300 dark:disabled:text-gray-600'}`}
+                className={`relative flex items-center justify-center w-7 h-6 transition-all duration-200 ${conversationMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 disabled:text-gray-300 dark:disabled:text-gray-600'}`}
                 style={{ borderRadius: '2px' }}
                 title="Conversation (beta)"
                 aria-label="Conversation mode"
@@ -1008,7 +1009,7 @@ const TranslationHelper: React.FC = () => {
               {loadedFileType === 'excel' && (
                 <button
                   onClick={toggleLiveEditMode}
-                  className={`h-7 px-2 flex items-center gap-1.5 text-xs font-medium transition-all ${liveEditMode ? 'text-green-600 dark:text-green-400' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`}
+                  className={`h-7 px-2 flex items-center gap-1.5 text-xs font-medium transition-all duration-200 press-effect ${liveEditMode ? 'text-green-600 dark:text-green-400' : 'text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300'}`}
                   title={liveEditMode ? `Live Excel Sync (${syncStatus})` : 'Enable Live Excel Sync'}
                   aria-label="Toggle live edit mode"
                   aria-pressed={liveEditMode}
@@ -1021,7 +1022,7 @@ const TranslationHelper: React.FC = () => {
               <div className="relative shrink-0">
                 <button
                   onClick={() => setAccordionStates(prev => ({ ...prev, navigation: !prev.navigation }))}
-                  className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200"
+                  className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 press-effect overflow-hidden"
                   style={{ borderRadius: '3px' }}
                   aria-label="Filter and jump"
                   title="Filter & Jump"
@@ -1031,7 +1032,7 @@ const TranslationHelper: React.FC = () => {
                   </svg>
                 </button>
                 {accordionStates.navigation && (
-                  <div className="absolute top-full right-0 mt-1 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg z-[60] min-w-[200px]" style={{ borderRadius: '3px' }}>
+                  <div className="absolute top-full right-0 mt-1 p-3 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg z-[60] min-w-[200px] popover-bloom" style={{ borderRadius: '3px' }}>
                     {/* Filter Section */}
                     <div className="mb-3">
                       <div className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase mb-1.5">Filter</div>
@@ -1054,11 +1055,11 @@ const TranslationHelper: React.FC = () => {
                     <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
                       <div className="text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase mb-1.5">Jump</div>
                       <div className="flex items-center gap-1.5 mb-2">
-                        <button onClick={() => { const ni = Math.max(0, currentIndex - 5); setCurrentIndex(ni); setCurrentTranslation(translations[ni] === '[BLANK, REMOVE LATER]' ? '' : translations[ni] || ''); }} className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-colors" style={{ borderRadius: '2px' }}>-5</button>
-                        <button onClick={() => { const ni = Math.max(0, currentIndex - 1); setCurrentIndex(ni); setCurrentTranslation(translations[ni] === '[BLANK, REMOVE LATER]' ? '' : translations[ni] || ''); }} className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-colors" style={{ borderRadius: '2px' }}>-1</button>
+                        <button onClick={() => { const ni = Math.max(0, currentIndex - 5); setCurrentIndex(ni); setCurrentTranslation(translations[ni] === '[BLANK, REMOVE LATER]' ? '' : translations[ni] || ''); }} className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-all duration-200 press-effect" style={{ borderRadius: '2px' }}>-5</button>
+                        <button onClick={() => { const ni = Math.max(0, currentIndex - 1); setCurrentIndex(ni); setCurrentTranslation(translations[ni] === '[BLANK, REMOVE LATER]' ? '' : translations[ni] || ''); }} className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-all duration-200 press-effect" style={{ borderRadius: '2px' }}>-1</button>
                         <input type="number" min={startRow} max={startRow + sourceTexts.length - 1} value={startRow + currentIndex} onChange={(e) => { const rn = parseInt(e.target.value); if (rn >= startRow && rn < startRow + sourceTexts.length) { jumpToRow(rn); } }} className="w-14 px-1 py-1 text-[10px] text-center font-bold border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white" style={{ borderRadius: '2px' }} />
-                        <button onClick={() => { const ni = Math.min(sourceTexts.length - 1, currentIndex + 1); setCurrentIndex(ni); setCurrentTranslation(translations[ni] === '[BLANK, REMOVE LATER]' ? '' : translations[ni] || ''); }} className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-colors" style={{ borderRadius: '2px' }}>+1</button>
-                        <button onClick={() => { const ni = Math.min(sourceTexts.length - 1, currentIndex + 5); setCurrentIndex(ni); setCurrentTranslation(translations[ni] === '[BLANK, REMOVE LATER]' ? '' : translations[ni] || ''); }} className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-colors" style={{ borderRadius: '2px' }}>+5</button>
+                        <button onClick={() => { const ni = Math.min(sourceTexts.length - 1, currentIndex + 1); setCurrentIndex(ni); setCurrentTranslation(translations[ni] === '[BLANK, REMOVE LATER]' ? '' : translations[ni] || ''); }} className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-all duration-200 press-effect" style={{ borderRadius: '2px' }}>+1</button>
+                        <button onClick={() => { const ni = Math.min(sourceTexts.length - 1, currentIndex + 5); setCurrentIndex(ni); setCurrentTranslation(translations[ni] === '[BLANK, REMOVE LATER]' ? '' : translations[ni] || ''); }} className="px-2 py-1 text-[10px] font-bold bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 border border-gray-200 dark:border-gray-600 transition-all duration-200 press-effect" style={{ borderRadius: '2px' }}>+5</button>
                       </div>
                       {excelSheets.length > 1 && (
                         <select value={selectedSheet} onChange={(e) => handleSheetChange(e.target.value)} className="w-full p-1 text-[10px] border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white" style={{ borderRadius: '2px' }}>
@@ -1074,7 +1075,7 @@ const TranslationHelper: React.FC = () => {
                 <button
                   ref={keyboardShortcutsRef}
                   onClick={() => setShowKeyboardShortcuts(!showKeyboardShortcuts)}
-                  className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200"
+                  className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 press-effect overflow-hidden"
                   style={{ borderRadius: '3px' }}
                   aria-label="Keyboard shortcuts"
                   title="Keyboard shortcuts"
@@ -1092,7 +1093,7 @@ const TranslationHelper: React.FC = () => {
               {/* Dark mode toggle */}
               <button
                 onClick={toggleDarkMode}
-                className="shrink-0 group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200"
+                className="shrink-0 group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 press-effect overflow-hidden"
                 style={{ borderRadius: '3px' }}
                 aria-label="Toggle dark mode"
                 title="Toggle dark mode"
@@ -1144,14 +1145,20 @@ const TranslationHelper: React.FC = () => {
             <div className="space-y-4 flex-1 flex flex-col">
             <div className="space-y-2">
               {gamepadMode ? (
-                <div className="flex flex-col gap-6 items-center">
+                <div className="flex flex-col gap-6 items-center gamepad-enter" key={`gamepad-${currentIndex}`}>
                   {/* Main Dialogue Box - Modern JRPG Style */}
+                  {(() => {
+                    // 3-line overflow detection: ~32 chars per line at Pixelify Sans 1.15rem in ~480px content width
+                    const displayText = showInlineSource ? sourceTexts[currentIndex] : (translations[currentIndex] && translations[currentIndex] !== '[BLANK, REMOVE LATER]' ? translations[currentIndex] : '');
+                    const estimatedLines = Math.ceil((displayText?.length || 0) / 32);
+                    const isOverflow = estimatedLines > 3;
+                    return (
                   <div
-                    className="gamepad-dialogue-modern relative"
+                    className={`gamepad-dialogue-modern relative ${isOverflow ? 'gamepad-overflow-warning' : ''}`}
                     style={{
-                      width: 'min(520px, 90vw)',
+                      width: 'min(560px, 92vw)',
                       minHeight: '180px',
-                      maxHeight: '300px',
+                      maxHeight: '320px',
                       position: 'relative'
                     }}
                   >
@@ -1160,8 +1167,8 @@ const TranslationHelper: React.FC = () => {
                       <div className="gamepad-name-tab">
                         {/* Cell Reference Badge */}
                         <span
-                          className="inline-flex items-center px-1 py-0.5 text-[9px] font-bold bg-gray-600 text-gray-200 border border-gray-500"
-                          style={{ borderRadius: '2px', fontFamily: 'monospace' }}
+                          className="inline-flex items-center px-1.5 py-0.5 text-[9px] font-bold bg-gray-600/80 text-gray-200 border border-gray-500/50"
+                          style={{ borderRadius: '3px', fontFamily: 'monospace' }}
                           title={`Excel Row ${startRow + currentIndex}`}
                         >
                           {translationColumn}{startRow + currentIndex}
@@ -1170,19 +1177,36 @@ const TranslationHelper: React.FC = () => {
                           {trimSpeakerName(utterers[currentIndex]) || 'Speaker'}
                         </span>
                       </div>
-                      {/* Language toggle - switches between EN source and NL translation */}
-                      <button
-                        onClick={() => setShowInlineSource(prev => !prev)}
-                        className="flex items-center gap-1.5 px-2 py-1 text-[10px] font-bold uppercase tracking-wide border border-gray-500 bg-gray-700 text-gray-200 hover:bg-gray-600 transition-all duration-200 rounded"
-                        title="Toggle between English source and Dutch translation (E)"
-                      >
-                        {showInlineSource ? 'EN' : 'NL'}
-                      </button>
+                      <div className="flex items-center gap-2 pr-1 pt-1">
+                        {/* Line count indicator */}
+                        {displayText && displayText.length > 0 && (
+                          <span
+                            className={`gamepad-line-badge px-1.5 py-0.5 ${
+                              isOverflow
+                                ? 'text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800'
+                                : 'text-gray-400 dark:text-gray-500 bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-700'
+                            }`}
+                            style={{ borderRadius: '3px' }}
+                            title={isOverflow ? `~${estimatedLines} lines — exceeds 3-line game limit!` : `~${estimatedLines} line${estimatedLines !== 1 ? 's' : ''}`}
+                          >
+                            {estimatedLines}/3
+                          </span>
+                        )}
+                        {/* Language toggle */}
+                        <button
+                          onClick={() => setShowInlineSource(prev => !prev)}
+                          className="flex items-center gap-1.5 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wide border border-gray-500/50 bg-gray-700/80 text-gray-200 hover:bg-gray-600 transition-all duration-200 press-effect"
+                          style={{ borderRadius: '4px' }}
+                          title="Toggle between English source and Dutch translation (E)"
+                        >
+                          {showInlineSource ? 'EN' : 'NL'}
+                        </button>
+                      </div>
                     </div>
 
                     {/* Speaker Character Info Card */}
                     {showSpeakerCard && currentSpeakerCodexEntry && (
-                      <div className="mx-2 mt-1">
+                      <div className="mx-3 mt-1.5 animate-scale-in">
                         <CharacterInfoCard
                           character={currentSpeakerCodexEntry}
                           onClose={() => setShowSpeakerCard(false)}
@@ -1193,7 +1217,7 @@ const TranslationHelper: React.FC = () => {
 
                     {/* Context Notes in Compact Mode */}
                     {contextNotes[currentIndex] && (
-                      <div className="mx-2 mt-1 px-2 py-1">
+                      <div className="mx-3 mt-1.5 px-2 py-1" style={{ animation: 'slideUpFadeIn 0.2s ease-out both' }}>
                         <span className="text-xs text-gray-400 dark:text-gray-500 italic leading-tight">
                           {contextNotes[currentIndex]}
                         </span>
@@ -1202,10 +1226,11 @@ const TranslationHelper: React.FC = () => {
 
                     {/* Main dialogue content area */}
                     <div
-                      className="gamepad-dialogue-content relative overflow-y-auto custom-scrollbar"
+                      className={`gamepad-dialogue-content relative overflow-y-auto custom-scrollbar ${isOverflow ? 'bg-red-50/30 dark:bg-red-950/10' : ''}`}
                       style={{
                         minHeight: '100px',
-                        maxHeight: '200px'
+                        maxHeight: '220px',
+                        transition: 'background-color 0.3s ease',
                       }}
                     >
                       {showInlineSource ? (
@@ -1236,12 +1261,13 @@ const TranslationHelper: React.FC = () => {
                     </div>
 
                     {/* Footer with action buttons and continue indicator */}
-                    <div className="flex items-center justify-between px-4 py-2 border-t border-gray-100 dark:border-gray-800">
+                    <div className="flex items-center justify-between px-4 py-2.5 border-t border-gray-100 dark:border-gray-800/50">
                       {/* Action buttons */}
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-1.5">
                         <button
                           onClick={copySourceText}
-                          className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded"
+                          className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 press-effect"
+                          style={{ borderRadius: '4px' }}
                           title="Copy source text"
                         >
                           <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1250,7 +1276,8 @@ const TranslationHelper: React.FC = () => {
                         </button>
                         <button
                             onClick={handleCopySourceToXlsxSearch}
-                            className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded"
+                            className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 press-effect"
+                            style={{ borderRadius: '4px' }}
                             title="Search this text in Reference Tools"
                           >
                             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1267,6 +1294,8 @@ const TranslationHelper: React.FC = () => {
                       </div>
                     </div>
                   </div>
+                    );
+                  })()}
                 </div>
               ) : (
                 <div className="space-y-0">
@@ -1277,9 +1306,9 @@ const TranslationHelper: React.FC = () => {
                         setCurrentIndex(currentIndex - 1);
                         setCurrentTranslation(translations[currentIndex - 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex - 1] || '');
                       }}
-                      className="w-full text-left py-1 px-1 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer group"
+                      className="w-full text-left py-1 px-1 hover:bg-gray-100 dark:hover:bg-gray-800 hover:pl-2 transition-all duration-200 cursor-pointer group"
                     >
-                      <span className="text-[11px] text-gray-400 dark:text-gray-500 truncate block group-hover:text-gray-500 dark:group-hover:text-gray-400">
+                      <span className="text-[11px] text-gray-400 dark:text-gray-500 truncate block group-hover:text-gray-500 dark:group-hover:text-gray-400 transition-colors duration-200">
                         ← {translationColumn}{startRow + currentIndex - 1} {trimSpeakerName(utterers[currentIndex - 1]) || ''} — {sourceTexts[currentIndex - 1]}
                       </span>
                     </button>
@@ -1298,7 +1327,7 @@ const TranslationHelper: React.FC = () => {
                       </span>
                       {currentSpeakerCodexEntry ? (
                         <button
-                          className="text-sm font-bold text-purple-700 dark:text-purple-300 hover:text-purple-900 dark:hover:text-purple-100 underline decoration-purple-300 dark:decoration-purple-600 underline-offset-2 transition-colors duration-150 cursor-pointer"
+                          className="text-sm font-bold text-purple-700 dark:text-purple-300 hover:text-purple-900 dark:hover:text-purple-100 underline decoration-purple-300 dark:decoration-purple-600 underline-offset-2 transition-all duration-200 cursor-pointer hover:underline-offset-4"
                           onClick={(e) => {
                             const rect = (e.target as HTMLElement).getBoundingClientRect();
                             const speakerName = trimSpeakerName(utterers[currentIndex]);
@@ -1334,7 +1363,7 @@ const TranslationHelper: React.FC = () => {
 
                     {/* Context Notes - Scene direction/description from column B */}
                     {contextNotes[currentIndex] && (
-                      <div className="px-4 py-2 bg-amber-50 dark:bg-amber-900/20 border-b border-amber-200 dark:border-amber-800/50">
+                      <div className="px-4 py-2 bg-amber-50 dark:bg-amber-900/20 border-b border-amber-200 dark:border-amber-800/50" style={{ animation: 'slideUpFadeIn 0.25s ease-out both' }}>
                         <div className="flex items-start gap-2">
                           <svg className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -1347,7 +1376,7 @@ const TranslationHelper: React.FC = () => {
                     )}
 
                     {/* Source Text - Spotlight */}
-                    <div className="px-5 py-4">
+                    <div className="px-5 py-4" key={`source-${currentIndex}`} style={{ animation: 'slideUpFadeIn 0.2s ease-out both' }}>
                       <div className="text-xl font-medium leading-relaxed text-gray-900 dark:text-gray-100">
                         <TextHighlighter
                           text={sourceTexts[currentIndex]}
@@ -1381,7 +1410,7 @@ const TranslationHelper: React.FC = () => {
 
                     {/* AI Suggestion — soft golden glow, no box */}
                     {aiSuggestEnabled && (isLoadingAiSuggestion || isUpgradingAiSuggestion || aiSuggestion || aiSuggestError) && (
-                      <div className="mx-4 mt-3 mb-1 px-1">
+                      <div className="mx-4 mt-3 mb-1 px-1" style={{ animation: 'slideUpFadeIn 0.2s ease-out both' }}>
                         {isLoadingAiSuggestion && !isUpgradingAiSuggestion ? (
                           <div className="inline-flex items-center gap-2 text-amber-500/60 dark:text-amber-400/50 text-xs animate-pulse">
                             <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
@@ -1397,7 +1426,7 @@ const TranslationHelper: React.FC = () => {
                             <svg className="w-3 h-3 text-amber-400/60 dark:text-amber-500/40 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                             <button
                               onClick={() => { setCurrentTranslation(aiSuggestion); clearAiSuggestion(); }}
-                              className="flex-1 text-left transition-colors cursor-pointer italic"
+                              className="flex-1 text-left transition-all duration-200 cursor-pointer italic hover:opacity-80"
                               style={{ color: 'rgb(180 140 60 / 0.7)', textShadow: '0 0 8px rgb(217 176 75 / 0.25), 0 0 20px rgb(217 176 75 / 0.1)' }}
                               title="Click to replace with suggestion (⌘I)"
                             >
@@ -1407,7 +1436,7 @@ const TranslationHelper: React.FC = () => {
                               {aiSuggestionModel || 'haiku'}
                             </span>
                             {aiSuggestionModel === 'haiku' && !isUpgradingAiSuggestion && (
-                              <button onClick={(e) => { e.stopPropagation(); upgradeAiSuggestion(); }} className="shrink-0 p-0.5 text-amber-400/50 hover:text-amber-500 dark:hover:text-amber-300 transition-colors" title="Upgrade to Sonnet">
+                              <button onClick={(e) => { e.stopPropagation(); upgradeAiSuggestion(); }} className="shrink-0 p-0.5 text-amber-400/50 hover:text-amber-500 dark:hover:text-amber-300 transition-all duration-200 hover:scale-110 press-effect" title="Upgrade to Sonnet">
                                 <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7"/></svg>
                               </button>
                             )}
@@ -1416,7 +1445,7 @@ const TranslationHelper: React.FC = () => {
                                 <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/></svg>
                               </div>
                             )}
-                            <button onClick={clearAiSuggestion} className="shrink-0 p-0.5 text-gray-400/40 hover:text-gray-500 dark:hover:text-gray-300 transition-colors" title="Dismiss">
+                            <button onClick={clearAiSuggestion} className="shrink-0 p-0.5 text-gray-400/40 hover:text-gray-500 dark:hover:text-gray-300 transition-all duration-200 hover:scale-110 press-effect" title="Dismiss">
                               <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12"/></svg>
                             </button>
                           </div>
@@ -1432,7 +1461,7 @@ const TranslationHelper: React.FC = () => {
                         setCurrentIndex(currentIndex + 1);
                         setCurrentTranslation(translations[currentIndex + 1] === '[BLANK, REMOVE LATER]' ? '' : translations[currentIndex + 1] || '');
                       }}
-                      className="w-full text-left py-1 px-1 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors cursor-pointer group"
+                      className="w-full text-left py-1 px-1 hover:bg-gray-100 dark:hover:bg-gray-800 hover:pl-2 transition-all duration-200 cursor-pointer group"
                     >
                       <span className="text-[11px] text-gray-400 dark:text-gray-500 truncate block group-hover:text-gray-500 dark:group-hover:text-gray-400">
                         → {translationColumn}{startRow + currentIndex + 1} {trimSpeakerName(utterers[currentIndex + 1]) || ''} — {sourceTexts[currentIndex + 1]}
@@ -1449,25 +1478,25 @@ const TranslationHelper: React.FC = () => {
 
           {/* Right Column — Elevated Card with Embedded Toolbar */}
           <div className="h-full">
-            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md h-full flex flex-col" style={{ borderRadius: '3px' }}>
+            <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg h-full flex flex-col transition-shadow duration-300" style={{ borderRadius: '3px' }}>
               {/* Embedded Toolbar — icon-only tool toggles + submit */}
               <div className="flex items-center justify-between px-3 py-1.5 border-b border-gray-200 dark:border-gray-700 bg-gray-50/50 dark:bg-gray-900/30">
                 {/* Left: Tool Toggles — icon-only, compact */}
                 <div className="flex items-center gap-1">
-                  <button onClick={toggleHighlightMode} className={`group relative flex items-center justify-center w-7 h-7 border transition-all duration-200 overflow-hidden ${highlightMode ? 'bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-500' : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300'}`} style={{ borderRadius: '3px' }} title="Codex Highlights (H)" aria-label="Toggle codex highlights" aria-pressed={highlightMode}>
+                  <button onClick={toggleHighlightMode} className={`group relative flex items-center justify-center w-7 h-7 border transition-all duration-200 overflow-hidden press-effect ${highlightMode ? 'bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-500' : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300'}`} style={{ borderRadius: '3px' }} title="Codex Highlights (H)" aria-label="Toggle codex highlights" aria-pressed={highlightMode}>
                     <svg className="w-3.5 h-3.5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </button>
-                  <button onClick={toggleAiSuggest} className={`group relative flex items-center justify-center w-7 h-7 border transition-all duration-200 overflow-hidden ${aiSuggestEnabled ? 'bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-500' : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300'}`} style={{ borderRadius: '3px' }} title="AI Suggest (A)" aria-label="Toggle AI suggestions" aria-pressed={aiSuggestEnabled}>
+                  <button onClick={toggleAiSuggest} className={`group relative flex items-center justify-center w-7 h-7 border transition-all duration-200 overflow-hidden press-effect ${aiSuggestEnabled ? 'bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-600 text-gray-800 dark:text-gray-200 border-gray-300 dark:border-gray-500' : 'bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300'}`} style={{ borderRadius: '3px' }} title="AI Suggest (A)" aria-label="Toggle AI suggestions" aria-pressed={aiSuggestEnabled}>
                     <svg className="w-3.5 h-3.5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" /></svg>
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </button>
                   <div className="w-px h-4 bg-gray-200 dark:bg-gray-700 mx-0.5" />
-                  <button onClick={() => setForceToolsTab('reference')} className="group relative flex items-center justify-center w-7 h-7 border transition-all duration-200 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300" style={{ borderRadius: '3px' }} title="Open Reference Panel (R)" aria-label="Open reference panel">
+                  <button onClick={() => setForceToolsTab('reference')} className="group relative flex items-center justify-center w-7 h-7 border transition-all duration-200 overflow-hidden press-effect bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300" style={{ borderRadius: '3px' }} title="Open Reference Panel (R)" aria-label="Open reference panel">
                     <svg className="w-3.5 h-3.5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </button>
-                  <button onClick={() => setForceToolsTab('output')} className="group relative flex items-center justify-center w-7 h-7 border transition-all duration-200 overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300" style={{ borderRadius: '3px' }} title="Open Output Panel (O)" aria-label="Open output panel">
+                  <button onClick={() => setForceToolsTab('output')} className="group relative flex items-center justify-center w-7 h-7 border transition-all duration-200 overflow-hidden press-effect bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300" style={{ borderRadius: '3px' }} title="Open Output Panel (O)" aria-label="Open output panel">
                     <svg className="w-3.5 h-3.5 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>
                     <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   </button>
@@ -1476,15 +1505,15 @@ const TranslationHelper: React.FC = () => {
                 {/* Right: Modified indicator + Submit */}
                 <div className="flex items-center gap-2">
                   {hasCurrentEntryChanged() && (
-                    <span className="flex items-center gap-1 text-[10px] text-green-600 dark:text-green-400 font-medium">
-                      <span className="w-1.5 h-1.5 bg-green-500 rounded-full" />
+                    <span className="flex items-center gap-1 text-[10px] text-green-600 dark:text-green-400 font-medium" style={{ animation: 'slideUpFadeIn 0.2s ease-out both' }}>
+                      <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
                       Modified
                     </span>
                   )}
                   <button
                     onClick={handleSubmitWithSync}
                     disabled={syncStatus === 'syncing'}
-                    className="h-7 px-4 bg-gray-900 dark:bg-gray-100 text-white dark:text-black border border-gray-800 dark:border-gray-200 hover:bg-gray-800 dark:hover:bg-gray-200 active:scale-[0.98] transition-all font-bold tracking-wide uppercase text-[10px] disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-1.5"
+                    className="h-7 px-4 bg-gray-900 dark:bg-gray-100 text-white dark:text-black border border-gray-800 dark:border-gray-200 hover:bg-gray-800 dark:hover:bg-gray-200 hover:-translate-y-px hover:shadow-md active:translate-y-0 active:shadow-sm active:scale-[0.98] transition-all duration-200 font-bold tracking-wide uppercase text-[10px] disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-1.5"
                     style={{ borderRadius: '3px' }}
                     title="Submit (Shift+Enter)"
                   >
@@ -1508,7 +1537,7 @@ const TranslationHelper: React.FC = () => {
                       handleSubmitWithSync();
                     }
                   }}
-                  className={`w-full px-4 py-3 focus:outline-none transition-colors duration-200 text-base leading-relaxed text-gray-900 dark:text-white resize-none flex-1 border-0 ${
+                  className={`w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900/10 dark:focus:ring-white/10 transition-all duration-300 text-base leading-relaxed text-gray-900 dark:text-white resize-none flex-1 border-0 ${
                     hasCurrentEntryChanged()
                       ? 'bg-green-50/50 dark:bg-green-900/10'
                       : 'bg-white dark:bg-gray-800'
@@ -1548,7 +1577,7 @@ const TranslationHelper: React.FC = () => {
             <>
               <div className="fixed inset-0 z-40" onClick={() => setCodexPopover(null)} />
               <div
-                className="absolute z-50 min-w-[200px] max-w-[480px] w-max shadow-xl border border-purple-300 dark:border-purple-700 bg-white dark:bg-gray-800 animate-in fade-in slide-in-from-top-1 duration-150"
+                className="absolute z-50 min-w-[200px] max-w-[480px] w-max shadow-xl border border-purple-300 dark:border-purple-700 bg-white dark:bg-gray-800 popover-bloom"
                 style={{ top, left, borderRadius: '4px' }}
               >
                 {hasRichInfo ? (
@@ -1570,7 +1599,7 @@ const TranslationHelper: React.FC = () => {
                     <div className="flex items-center gap-1 shrink-0">
                       <button
                         onClick={() => { insertCharacterName(entry.dutch); setCodexPopover(null); }}
-                        className="p-1 text-purple-500 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-200 hover:bg-purple-100 dark:hover:bg-purple-700 transition-colors"
+                        className="p-1 text-purple-500 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-200 hover:bg-purple-100 dark:hover:bg-purple-700 transition-all duration-200 press-effect"
                         style={{ borderRadius: '2px' }}
                         title={`Insert "${entry.dutch}"`}
                       >
@@ -1580,7 +1609,7 @@ const TranslationHelper: React.FC = () => {
                       </button>
                       <button
                         onClick={() => setCodexPopover(null)}
-                        className="p-1 text-purple-400 dark:text-purple-500 hover:text-purple-600 dark:hover:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-700 transition-colors"
+                        className="p-1 text-purple-400 dark:text-purple-500 hover:text-purple-600 dark:hover:text-purple-300 hover:bg-purple-100 dark:hover:bg-purple-700 transition-all duration-200 press-effect"
                         style={{ borderRadius: '2px' }}
                       >
                         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1703,7 +1732,7 @@ const TranslationHelper: React.FC = () => {
                 {/* Filter Toggle — both modes */}
                 <button
                   onClick={() => setShowAllEntries(!showAllEntries)}
-                  className={`px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide border transition-all duration-200 ${
+                  className={`px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide border transition-all duration-200 press-effect ${
                     showAllEntries
                       ? 'bg-gray-700 dark:bg-gray-300 text-white dark:text-gray-900 border-gray-600 dark:border-gray-400'
                       : 'bg-white dark:bg-gray-800 text-gray-600 dark:text-gray-300 border-gray-200 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700'
@@ -1738,7 +1767,7 @@ const TranslationHelper: React.FC = () => {
                     {/* Copy with Refs — Copy mode only */}
                     <button
                       onClick={copyWithCellRefs}
-                      className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
+                      className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 press-effect"
                       style={{ borderRadius: '2px' }}
                       title="Copy with J column cell refs (e.g., J5: translation)"
                     >
@@ -1748,7 +1777,7 @@ const TranslationHelper: React.FC = () => {
                     {/* Copy Values — Copy mode only */}
                     <button
                       onClick={copyToClipboard}
-                      className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
+                      className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 press-effect"
                       style={{ borderRadius: '2px' }}
                       title="Copy values only (paste into Excel starting at first modified cell)"
                     >
@@ -1758,7 +1787,7 @@ const TranslationHelper: React.FC = () => {
                     {/* Export — Copy mode only */}
                     <button
                       onClick={exportTranslations}
-                      className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200"
+                      className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-gray-200 dark:hover:bg-gray-600 transition-all duration-200 press-effect"
                       style={{ borderRadius: '2px' }}
                       title="Export translations to CSV file"
                     >
@@ -1771,7 +1800,7 @@ const TranslationHelper: React.FC = () => {
                 {loadedFileType === 'excel' && (
                   <button
                     onClick={resetFromFile}
-                    className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-700 dark:hover:text-blue-400 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-200"
+                    className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-700 dark:hover:text-blue-400 hover:border-blue-300 dark:hover:border-blue-700 transition-all duration-200 press-effect"
                     style={{ borderRadius: '2px' }}
                     title="Reload translations from the Excel file on disk"
                   >
@@ -1782,7 +1811,7 @@ const TranslationHelper: React.FC = () => {
                 {/* Clear — both modes */}
                 <button
                   onClick={handleClearWithConfirmation}
-                  className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-700 dark:hover:text-red-400 hover:border-red-300 dark:hover:border-red-700 transition-all duration-200"
+                  className="px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-red-50 dark:hover:bg-red-900/20 hover:text-red-700 dark:hover:text-red-400 hover:border-red-300 dark:hover:border-red-700 transition-all duration-200 press-effect"
                   style={{ borderRadius: '2px' }}
                   title="Clear all translations and start fresh"
                 >

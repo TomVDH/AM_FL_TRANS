@@ -117,7 +117,7 @@ export const ChatBubble = React.memo(function ChatBubble({
 
   return (
     <div
-      className={`flex ${row.isProtagonist ? 'justify-end' : 'justify-start'} mb-3 animate-bubble-in`}
+      className={`flex ${row.isProtagonist ? 'justify-end' : 'justify-start'} mb-3.5 animate-bubble-in`}
       style={{ animationDelay: `${Math.min(animationDelay, 400)}ms` }}
     >
       <div
@@ -128,22 +128,22 @@ export const ChatBubble = React.memo(function ChatBubble({
         aria-selected={isSelected}
         tabIndex={0}
         className={`${row.isProtagonist ? 'max-w-[65%]' : 'max-w-[75%]'} px-4 py-3 cursor-pointer
-          transition-all duration-150 scroll-mt-20
+          transition-all duration-200 scroll-mt-20
           ${bubbleClasses}
           ${isSelected
-            ? 'ring-2 ring-offset-1 ring-gray-900 dark:ring-white scale-[1.01] shadow-md'
-            : 'hover:scale-[1.005] hover:shadow-sm'
+            ? 'ring-2 ring-offset-2 ring-gray-900 dark:ring-white scale-[1.01] shadow-lg'
+            : 'hover:scale-[1.005] hover:shadow-sm hover:-translate-y-px'
           }`}
-        style={{ borderRadius: '4px' }}
+        style={{ borderRadius: '6px' }}
         onClick={() => onClick(row.index)}
         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(row.index); } }}
       >
         {/* Speaker name tag */}
-        <div className="flex items-center mb-1">
+        <div className="flex items-center mb-1.5">
           <button
             className={`text-[10px] font-semibold tracking-widest uppercase ${
               row.isProtagonist ? 'text-blue-600 dark:text-blue-400' : palette!.name
-            } hover:underline`}
+            } hover:underline transition-colors duration-150`}
             onClick={(e) => { e.stopPropagation(); onSpeakerClick?.(row.speakerName, e); }}
             title={row.codexEntry ? `${row.codexEntry.english} → ${row.codexEntry.dutch}` : row.speakerName}
           >
@@ -155,7 +155,7 @@ export const ChatBubble = React.memo(function ChatBubble({
 
         {/* Context note */}
         {row.contextNote && (
-          <div className="text-[11px] italic text-gray-400 dark:text-gray-500 mb-1">
+          <div className="text-[11px] italic text-gray-400 dark:text-gray-500 mb-1.5 leading-snug">
             [{row.contextNote}]
           </div>
         )}

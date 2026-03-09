@@ -117,9 +117,9 @@ export default function AppFooter({
             className="h-5 w-5 dark:invert"
           />
           <div>
-            <p className="text-[11px] font-semibold text-gray-500 dark:text-gray-400 tracking-tight">AM FL TRANS</p>
+            <p className="text-[11px] font-semibold text-gray-500 dark:text-gray-400 tracking-tight">AM FL V</p>
             <p className="text-[10px] text-gray-400 dark:text-gray-500">
-              Onnozelaer Marketing Works &copy; 2025
+              Onnozelaer Marketing Works &copy; 2026
             </p>
           </div>
         </div>
@@ -137,7 +137,7 @@ export default function AppFooter({
             <>
               <button
                 onClick={() => window.open('https://vimeo.com/880909581/c40dfa73d0', '_blank')}
-                className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden"
+                className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden press-effect"
                 style={{ borderRadius: '3px' }}
                 title="Watch Video"
                 aria-label="Watch Video"
@@ -148,7 +148,7 @@ export default function AppFooter({
               </button>
               <button
                 onClick={() => window.open('https://github.com/TomVDH/AM_FL_TRANS', '_blank')}
-                className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden"
+                className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden press-effect"
                 style={{ borderRadius: '3px' }}
                 title="View GitHub Repository"
                 aria-label="View GitHub Repository"
@@ -178,28 +178,49 @@ export default function AppFooter({
           </button>
 
           <div
-            className="rounded-sm relative cursor-pointer overflow-hidden flex items-center justify-center"
+            className="relative cursor-pointer overflow-hidden flex items-center justify-center group/badge"
             onMouseEnter={() => onVersionBadgeHover?.(true)}
             onMouseLeave={() => onVersionBadgeHover?.(false)}
             onClick={() => onVersionBadgeClick?.()}
             title="Click to change gradient"
             style={{
-              width: '80px',
+              width: showVersionHash ? '72px' : '48px',
               height: '20px',
+              borderRadius: '10px',
               backgroundImage: gradientColors.length > 0
                 ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})`
                 : 'linear-gradient(270deg, #6b7280, #9ca3af, #6b7280)',
-              backgroundSize: '200% 200%',
-              animation: 'gradientShift 5s ease-in-out infinite',
+              backgroundSize: '300% 300%',
+              animation: 'gradientShift 6s ease-in-out infinite',
+              transition: 'width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease',
+              boxShadow: showVersionHash
+                ? '0 0 12px rgba(139, 92, 246, 0.25), 0 0 4px rgba(59, 130, 246, 0.2)'
+                : '0 0 0 rgba(0,0,0,0)',
             }}
           >
-            <span
-              className="text-white font-medium tracking-wider drop-shadow-sm transition-all duration-500"
+            {/* Shimmer overlay on hover */}
+            <div
               style={{
-                fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace',
-                fontSize: '9px',
+                position: 'absolute',
+                inset: 0,
+                background: 'linear-gradient(110deg, transparent 25%, rgba(255,255,255,0.2) 50%, transparent 75%)',
+                backgroundSize: '200% 100%',
+                animation: showVersionHash ? 'gradientShiftFast 2s ease-in-out infinite' : 'none',
                 opacity: showVersionHash ? 1 : 0,
-                transform: showVersionHash ? 'translateY(0)' : 'translateY(3px)',
+                transition: 'opacity 0.3s ease',
+              }}
+            />
+            <span
+              className="relative z-10 text-white tracking-wider drop-shadow-sm"
+              style={{
+                fontFamily: 'var(--font-playfair), Georgia, serif',
+                fontSize: '10px',
+                fontWeight: 700,
+                letterSpacing: '0.08em',
+                opacity: showVersionHash ? 1 : 0,
+                transform: showVersionHash ? 'translateY(0) scale(1)' : 'translateY(4px) scale(0.9)',
+                transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
+                textShadow: '0 1px 3px rgba(0,0,0,0.3)',
               }}
             >
               {VERSION_HASH}

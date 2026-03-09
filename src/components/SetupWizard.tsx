@@ -477,7 +477,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         {/* Header */}
         <div className="mb-8 flex items-end gap-4">
           <img src="/images/asses-masses-logo.png" alt="Asses Masses" className="h-14 w-auto" />
-          <p className="text-[11px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] pb-0.5">asses.masses — Translation Workbench</p>
+          <p className="text-[11px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] pb-0.5">asses.masses — AM FL V</p>
         </div>
 
         {/* Resume Card */}
@@ -485,7 +485,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           <>
             <button
               onClick={() => handleResumeSession(lastSession)}
-              className="w-full text-left px-4 py-3.5 mb-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 hover:border-amber-300 dark:hover:border-amber-600 hover:shadow-md transition-all duration-150 group"
+              className="w-full text-left px-4 py-3.5 mb-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 hover:border-amber-300 dark:hover:border-amber-600 hover-lift group"
               style={{ borderRadius: '3px' }}
             >
               <div className="flex items-center justify-between">
@@ -502,13 +502,13 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     {lastSession.selectedSheet && <span className="text-gray-500 dark:text-gray-400"> — {lastSession.selectedSheet}</span>}
                   </span>
                 </div>
-                <svg className="w-5 h-5 text-amber-400 group-hover:text-amber-500 dark:text-amber-500 dark:group-hover:text-amber-400 shrink-0 ml-3 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-amber-400 group-hover:text-amber-500 dark:text-amber-500 dark:group-hover:text-amber-400 shrink-0 ml-3 transition-all duration-200 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </button>
 
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-4 animate-divider-fade">
               <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
               <span className="text-[10px] text-gray-400 dark:text-gray-500 uppercase tracking-widest">or start new</span>
               <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
@@ -619,7 +619,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               }
             }}
             aria-label="Upload Excel file"
-            className="flex items-center justify-center gap-2 py-3 border-2 border-dashed border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-800/50 bg-transparent transition-all duration-200 cursor-pointer"
+            className="flex items-center justify-center gap-2 py-3 border-2 border-dashed border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-800/50 bg-transparent transition-all duration-300 cursor-pointer hover:scale-[1.005] active:scale-[0.995]"
             style={{ borderRadius: '3px' }}
           >
             {isLoadingExcel ? (
@@ -638,7 +638,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
         {/* Progressive disclosure: Language → Sheet → Preview → Start */}
         {fileType === 'excel' && excelSheets.length > 0 && (
-          <div className="mt-4 space-y-2">
+          <div className="mt-4 space-y-2 stagger-enter">
             <LanguageSelector
               languages={detectedLanguages}
               selectedLanguage={selectedLanguage}
@@ -754,9 +754,9 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           <button
             onClick={handleStartWithDataFile}
             disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
-            className={`w-full px-4 py-3 border transition-all duration-200 disabled:cursor-not-allowed font-semibold text-sm ${
+            className={`w-full px-4 py-3 border transition-all duration-300 disabled:cursor-not-allowed font-semibold text-sm press-effect ${
               sourceTexts.length > 0
-                ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200 hover:bg-gray-800 dark:hover:bg-gray-200 hover:shadow-lg'
+                ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200 hover:bg-gray-800 dark:hover:bg-gray-200 hover:shadow-lg hover:-translate-y-px'
                 : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700'
             }`}
             style={{ borderRadius: '3px' }}
