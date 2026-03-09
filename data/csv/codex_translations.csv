@@ -1,6 +1,6 @@
-name,description,english,dutch,category,nicknames,bio,gender,dialogueStyle,dutchDialogueStyle
-Angry Ass,Character,Angry Ass,Boze Ezel,CHARACTER,"Angry,Uncle Angry,Aunty Angry,Comrade Angry,Brother Angry,Sister Angry",,,,
-Anxious Ass,Character,Anxious Ass,Angstige Ezel,CHARACTER,"Anxious,Uncle Anxious,Aunty Anxious,Comrade Anxious,Brother Anxious,Sister Anxious",,,,
+name,description,english,dutch,category,nicknames,bio,gender,dialogueStyle
+Angry Ass,Character,Angry Ass,Boze Ezel,CHARACTER,Angry;Uncle Angry;Aunty Angry;Comrade Angry;Brother Angry;Sister Angry,,,
+Anxious Ass,Character,Anxious Ass,Angstige Ezel,CHARACTER,Anxious;Uncle Anxious;Aunty Anxious;Comrade Anxious;Brother Anxious;Sister Anxious,,,
 Melvin,Character,Ass Handler Melvin,Zakkenzeuler Zeno,CHARACTER,Ass,Newly hired labourer at Derriere's Factory. Worried about losing his job. Male.,male,"Tone: Anxious, practical
 
 Vocabulary: Colloquial and workplace-appropriate, using everyday terms like ""sleazy,"" ""dunno,"" and casual contractions. Mixes fearful exclamations with matter-of-fact observations.
@@ -9,15 +9,7 @@ Verbal tics: Repetitive ""what if"" constructions when worried. Uses ""EEEEE!!!!
 
 Sentence structure: Mix of short, clipped statements and longer worried speculation. Heavy use of questions, both rhetorical and direct. Exclamations during high stress, otherwise conversational fragments.
 
-Key themes: Job security and workplace concerns dominate dialogue. Shows pattern of initial suspicion/fear followed by practical problem-solving. Focuses on immediate threats, work efficiency, and potential consequences of automation.","Register: Informal Dutch using ""je/jij"" forms with colloquial vocabulary. Maintains workplace-appropriate language with occasional crude expressions (""kan me geen kloten schelen"").
-
-Dutch flavor: Standard Netherlandic Dutch without regional dialect markers. Uses common Dutch terms like ""camion"" (truck) and ""file"" (traffic jam). The idiom ""met onze voeten speelt"" creatively translates ""playing a trick.""
-
-Character voice preservation: Anxious ""wat als"" (what if) constructions preserved. Panic screams adapted to Dutch ""AAAAAAA!!!!"" Fear-to-practicality pattern maintained through sentence structure and vocabulary choices.
-
-Verbal tics in Dutch: ""Wat als"" repetition mirrors English ""what if"" pattern. Direct questions and practical observations retained.
-
-Translation approach: Mostly adaptive with creative solutions for idioms. Maintains character's emotional register while using natural Dutch expressions. Preserves workplace focus and anxiety-driven speech patterns."
+Key themes: Job security and workplace concerns dominate dialogue. Shows pattern of initial suspicion/fear followed by practical problem-solving. Focuses on immediate threats, work efficiency, and potential consequences of automation."
 Wedgie,Character,Ass Handler Wedgie,Zakkenzeulster Zita,CHARACTER,Ass,Longterm worker at Derrerie's Factory. Smokes. Thinks most people are 'idiots'. Does the bare minimum. Female.,female,"Tone: Gruff, impatient
 
 Vocabulary: Colloquial and crude, with occasional workplace jargon (""Animal Handling,"" ""Slaughter,"" ""Shipping""). Uses direct insults and casual profanity.
@@ -26,42 +18,18 @@ Verbal tics: Frequently calls others ""idiot"" - appears three times across dial
 
 Sentence structure: Predominantly short, punchy statements and commands. Heavy use of exclamation points for emphasis. Mixes questions with declarative statements. Favors fragments and direct imperatives (""Cool it,"" ""Come on!"").
 
-Key themes: Work efficiency and job security, catching/handling animals, money and deals, dismissing others' competence. Shows pride in specialized skills while being pragmatically focused on immediate tasks and compensation.","Register: Mixed informal/formal Dutch - uses ""jij/je"" forms but switches to formal ""uw"" when handling money/business transactions. Vocabulary remains colloquial with workplace terms intact.
-
-Dutch flavor: Neutral Netherlandic Dutch with some Flemish touches (""Allez dan,"" ""camion"" vs standard ""vrachtwagen""). Uses natural Dutch constructions like ""domkop"" for ""idiot"" and ""Laat vallen"" for ""Screw it.""
-
-Character voice preservation: Gruff impatience maintained through short, direct commands and exclamations. Physical expressions like ""*puf puf"" replace ""*wheeze"" effectively. Pragmatic focus on work/money preserved.
-
-Verbal tics in Dutch: ""domkop"" as consistent insult translation. Retains contractions and urgent imperatives (""Kom op!""). Question structures adapted naturally (""Dit de ezels?"" maintains choppy speech pattern).
-
-Translation approach: Primarily adaptive rather than literal, prioritizing natural Dutch flow while preserving personality markers and crude directness."
-Audience Member David,Character,Audience Member David,Toeschouwer David,CHARACTER,Audience,,,,
-Audience Member Laurel,Character,Audience Member Laurel,Toeschouwer Laurel,CHARACTER,Audience,,,,
-Audience Members Patrick & Milton,Character,Audience Members Patrick & Milton,Toeschouwers Patrick & Milton,CHARACTER,Audience,,,,
-Bad Ass,Character,Bad Ass,Stoere Ezel,CHARACTER,"Bad,Baddie,Uncle Bad,Aunty Bad,Comrade Bad,Brother Bad,Sister Bad","A radical that wants to be left alone
+Key themes: Work efficiency and job security, catching/handling animals, money and deals, dismissing others' competence. Shows pride in specialized skills while being pragmatically focused on immediate tasks and compensation."
+Audience Member David,Character,Audience Member David,Toeschouwer David,CHARACTER,Audience,,,
+Audience Member Laurel,Character,Audience Member Laurel,Toeschouwer Laurel,CHARACTER,Audience,,,
+Audience Members Patrick & Milton,Character,Audience Members Patrick & Milton,Toeschouwers Patrick & Milton,CHARACTER,Audience,,,
+Bad Ass,Character,Bad Ass,Stoere Ezel,CHARACTER,Bad;Baddie;Uncle Bad;Aunty Bad;Comrade Bad;Brother Bad;Sister Bad,"A radical that wants to be left alone
 
 Pessimistic Edgy Philosophical and Political
 
-Is actually a Human who was turned into a donkey by the Gods by accident. (see Cole Butte below)",male,"Critical theory, philosophical, generally contemporary jaded leftist","REGISTER: Mixed informal/formal - uses ""je/jij"" and ""ge/gij"" (Flemish), shifts to ""u"" when addressing unconscious characters. Academic vocabulary (""intellectueel beperkt,"" ""filosofische transformatie"") mixed with strong profanity.
-
-DUTCH FLAVOR: Strong Flemish markers throughout - ""ge zijt,"" ""nie"" for ""niet,"" ""'k"" contractions, ""gedoe,"" ""zever."" Local color with ""Klotegem"" for ""Bumpkin Village."" Flemish swearing patterns (""godverdomme,"" ""kust mijn kloten"").
-
-CHARACTER VOICE: Cynicism preserved through dismissive particles ""toch,"" elongated reasoning ""toch verdomme toch niet zomaar."" Intellectual superiority maintained via complex sentence structures contrasting with blunt rejections.
-
-VERBAL TICS: ""Laat mij gerust"" for ""leave me alone,"" ""kom mij nie af met"" for rejecting arguments, ""'k veronderstel"" for grudging concessions, ellipses preserved for trailing thoughts.
-
-APPROACH: Adaptive translation prioritizing natural Flemish speech patterns over literal fidelity, cultural localization of place names, profanity intensified to match character energy."
-Big Ass,Character,Big Ass,Mega Ezel,CHARACTER,"Big,Uncle Big,Aunty Big,Comrade Big,Brother Big,Sister Big",Always sees the big picture or puts things into perspective. Yearns for bigger opportunity and responsibility; wants to make an impact.,male,"references to size: massive, impressive, significant, make an impact","REGISTER: Mixed formal-informal Dutch. Uses ""ge/u"" (Flemish formal-informal) alongside ""je/jij"", ""Kameraad"" for ""Comrade"". Vocabulary remains elevated with ""groots,"" ""gigantische,"" ""mega.""
-
-DUTCH FLAVOR: Strong Flemish tendencies: ""ge"" pronouns, ""nie"" negations, ""moest ik"" conditionals, ""aan 't verleggen"" progressive forms. Flemish idioms: ""tot hier met werk,"" ""mijn slag thuis halen.""
-
-CHARACTER VOICE: Preserves commanding earnestness through exclamatory tone, maintains physical effort sounds ""*oef!"" and grand descriptors. Leadership themes intact via collective language and concern for herd welfare.
-
-VERBAL TICS: ""*oef!"" for ""*oof!"", ""Kameraad"" address maintained, vpunch formatting preserved, ""kleine Kameraad"" as diminutive address form.
-
-TRANSLATION APPROACH: Culturally adaptive—uses regional Flemish rather than standard Dutch, creatively handles wordplay (""ezelenhemelvaartszangderzielen""), preserves character essence over literal accuracy."
-Bitter Ass,Character,Bitter Ass,Bittere Ezel,CHARACTER,"Bitter,Uncle Bitter,Aunty Bitter,Comrade Bitter,Brother Bitter,Sister Bitter",,,,
-Bleak Ass,x,Bleak Ass,Depressieve Ezel,CHARACTER,"Bleak,Uncle Bleak,Aunty Bleak,Comrade Bleak,Brother Bleak,Sister Bleak",,,"Tone: Somber, resigned
+Is actually a Human who was turned into a donkey by the Gods by accident. (see Cole Butte below)",male,"Critical theory, philosophical, generally contemporary jaded leftist"
+Big Ass,Character,Big Ass,Mega Ezel,CHARACTER,Big;Uncle Big;Aunty Big;Comrade Big;Brother Big;Sister Big,Always sees the big picture or puts things into perspective. Yearns for bigger opportunity and responsibility; wants to make an impact.,male,"references to size: massive, impressive, significant, make an impact"
+Bitter Ass,Character,Bitter Ass,Bittere Ezel,CHARACTER,Bitter;Uncle Bitter;Aunty Bitter;Comrade Bitter;Brother Bitter;Sister Bitter,,,
+Bleak Ass,x,Bleak Ass,Depressieve Ezel,CHARACTER,Bleak;Uncle Bleak;Aunty Bleak;Comrade Bleak;Brother Bleak;Sister Bleak,,,"Tone: Somber, resigned
 
 Vocabulary: Simple, direct language with occasional poetic undertones. Uses concrete imagery (""Tank-Machines,"" ""Flying-Machines"") and stark contrasts (""Factory"" vs ""Hell"").
 
@@ -69,13 +37,13 @@ Verbal tics: Ellipses for trailing thoughts and ominous pauses (...). Tends to r
 
 Sentence structure: Mix of short declarative statements and longer, contemplative sentences. Uses fragments for emphasis. Frequent ellipses create hesitant, measured speech rhythm.
 
-Key themes: Loss and survival, the brutality of industrial systems, wisdom found in silence and observation. Speaks of his past carrying books to children, now witnessing others disappear into the ""Factory."" Offers warnings wrapped as advice.",
-Blunt Ass,Character,Blunt Ass,Groffe ezel,CHARACTER,"Blunt,Uncle Blunt,Aunty Blunt,Comrade Blunt,Brother Blunt,Sister Blunt",,,,
-Broken Ass,Character,Broken Ass,Gebroken Ezel,CHARACTER,"Broken,Uncle Broken,Aunty Broken,Comrade Broken,Brother Broken,Sister Broken",,,,
-Busted Ass,Character,Busted Ass,Afgereden Ezel,CHARACTER,"Busted,Uncle Busted,Aunty Busted,Comrade Busted,Brother Busted,Sister Busted",,,,
-CarMachine,MACHINES,Car-Machine,Auto Machine,CHARACTER,,,,,
-Chafed Ass,Character,Chafed Ass,Excema Ezel,CHARACTER,"Chafed,Uncle Chafed,Aunty Chafed,Comrade Chafed,Brother Chafed,Sister Chafed",,,,
-Child Joey,Character,Child Joey,Luukske Vermeulen,CHARACTER,"Child,Joey",,,"Tone: Childlike, demanding
+Key themes: Loss and survival, the brutality of industrial systems, wisdom found in silence and observation. Speaks of his past carrying books to children, now witnessing others disappear into the ""Factory."" Offers warnings wrapped as advice."
+Blunt Ass,Character,Blunt Ass,Groffe ezel,CHARACTER,Blunt;Uncle Blunt;Aunty Blunt;Comrade Blunt;Brother Blunt;Sister Blunt,,,
+Broken Ass,Character,Broken Ass,Gebroken Ezel,CHARACTER,Broken;Uncle Broken;Aunty Broken;Comrade Broken;Brother Broken;Sister Broken,,,
+Busted Ass,Character,Busted Ass,Afgereden Ezel,CHARACTER,Busted;Uncle Busted;Aunty Busted;Comrade Busted;Brother Busted;Sister Busted,,,
+CarMachine,MACHINES,Car-Machine,Auto Machine,CHARACTER,,,,
+Chafed Ass,Character,Chafed Ass,Excema Ezel,CHARACTER,Chafed;Uncle Chafed;Aunty Chafed;Comrade Chafed;Brother Chafed;Sister Chafed,,,
+Child Joey,Character,Child Joey,Luukske Vermeulen,CHARACTER,Child;Joey,,,"Tone: Childlike, demanding
 
 Vocabulary: Simple, age-appropriate language with basic sentence structure. Uses ""donkey"" repeatedly rather than names. Employs typical child exclamations (""He he he!"" ""OWIIIEEEEE!"" ""*WAHHH"").
 
@@ -83,17 +51,9 @@ Verbal tics: Frequent use of exclamation points and caps for emphasis. Repeats e
 
 Sentence structure: Short, direct sentences. Heavy use of exclamations and questions. Commands and demands dominate (""Get that bucket!"" ""Please donkey!""). Fragmented speech when distressed.
 
-Key themes: Expectation of animal obedience, expressing immediate needs and desires, parroting adult prejudices about donkeys being ""worthless"" and ""stupid,"" escalating from playful interaction to life-threatening desperation.","Register: Informal Dutch throughout using ""je/jij"" forms. Simple, direct vocabulary matching child's developmental level. Commands use imperative forms (""Kom, ezeltje!"").
-
-Dutch flavor: Flemish tendencies with ""Groetmoe/Grootmoe"" (grandmother), ""Luukske"" (diminutive -ske ending), ""lanterfanten"" (dawdle/loiter), ""in de fik staan"" (on fire). Consistent use of diminutive ""ezeltje"" for affection/condescension.
-
-Character voice preservation: Maintains demanding, frustrated tone through exclamatory Dutch. Preserves prejudiced language (""WAARDELOOS,"" ""DOM""). Child-like directness retained in translation choices.
-
-Verbal tics in Dutch: ""Hi-hi-hi!"" for laughter, ""AAAAAUUUW!"" and ""*WEEIIIII"" for pain/distress. ""Hé!"" for attention-getting. Mixed English borrowing in final desperate plea (""Please! HELP MIJ!"").
-
-Translation approach: Generally literal with strategic Flemish localization. Maintains caps for emphasis and emotional escalation patterns."
-Child Joey Kulan,MAIN HUMANS,Child Joey Kulan,Klein Luukske Vermeulen,CHARACTER,Child,A small boy who is also a great artist. He visits the Fannyside Farm to see the donkeys with his grandmother. Every year he plays baby Jesus in the nativity play in the Bumpkin church. He is killed in the fire of Ep2.,male,,
-Cole Butte  ColeMachine,MAIN HUMANS,Cole Butte / Cole-Machine,Piet Vanscheetvelde,CHARACTER,Cole,"Always a rebel and a bit jaded by being left behind by his mother at a young age. A robotics-wiz, he dreamed of going to Mecha City to make a difference in the world through science. He was forced to work in the mine after graduating. Became depressed after his father wasted his scholarship money. In the cave-in, he tries to save Lazy and when Lazy tries to 'send' herself, Cole's soul is sent to the Astral Plane, only to be rejected and return to his body, ultimately and mysteriously, transforming his body into that of a donkey.",male,,
+Key themes: Expectation of animal obedience, expressing immediate needs and desires, parroting adult prejudices about donkeys being ""worthless"" and ""stupid,"" escalating from playful interaction to life-threatening desperation."
+Child Joey Kulan,MAIN HUMANS,Child Joey Kulan,Klein Luukske Vermeulen,CHARACTER,Child,A small boy who is also a great artist. He visits the Fannyside Farm to see the donkeys with his grandmother. Every year he plays baby Jesus in the nativity play in the Bumpkin church. He is killed in the fire of Ep2.,male,
+Cole Butte  ColeMachine,MAIN HUMANS,Cole Butte / Cole-Machine,Piet Vanscheetvelde,CHARACTER,Cole,"Always a rebel and a bit jaded by being left behind by his mother at a young age. A robotics-wiz, he dreamed of going to Mecha City to make a difference in the world through science. He was forced to work in the mine after graduating. Became depressed after his father wasted his scholarship money. In the cave-in, he tries to save Lazy and when Lazy tries to 'send' herself, Cole's soul is sent to the Astral Plane, only to be rejected and return to his body, ultimately and mysteriously, transforming his body into that of a donkey.",male,
 Cole-Machine,Character,Cole-Machine,Piet-Machine,CHARACTER,,,,"TONE: Passionate, militant
 
 VOCABULARY: Elevated political discourse mixed with raw profanity - shifts between academic language (""commodified,"" ""neoliberal agendas,"" ""cyclical predicament"") and street-level expletives (""What the fuck,"" ""shit all over it"")
@@ -102,11 +62,11 @@ VERBAL TICS: Strategic use of profanity for emphasis, rhetorical questions to en
 
 SENTENCE STRUCTURE: Varied - uses short, punchy statements for impact mixed with longer explanatory passages. Heavy use of exclamations and questions. Employs dramatic pauses and declarative statements.
 
-KEY THEMES: Revolution and resistance, anti-exploitation politics, identity transformation, collective action over individual leadership, critique of authority figures, democratic ideals versus corrupt systems, the relationship between humans and donkeys as political allegory.",
-Cool Ass,Character,Cool Ass,Coole Ezel,CHARACTER,"Cool,Uncle Cool,Aunty Cool,Comrade Cool,Brother Cool,Sister Cool",,,,
-Cow,Character,Cow,Koe,CHARACTER,,,,,
-Cranky Ass,Character,Cranky Ass,Mopperende Ezel,CHARACTER,"Cranky,Uncle Cranky,Aunty Cranky,Comrade Cranky,Brother Cranky,Sister Cranky",,,,
-DeathMachine,MACHINES,Death-Machine,Machine des Doods,CHARACTER,,,,,
+KEY THEMES: Revolution and resistance, anti-exploitation politics, identity transformation, collective action over individual leadership, critique of authority figures, democratic ideals versus corrupt systems, the relationship between humans and donkeys as political allegory."
+Cool Ass,Character,Cool Ass,Coole Ezel,CHARACTER,Cool;Uncle Cool;Aunty Cool;Comrade Cool;Brother Cool;Sister Cool,,,
+Cow,Character,Cow,Koe,CHARACTER,,,,
+Cranky Ass,Character,Cranky Ass,Mopperende Ezel,CHARACTER,Cranky;Uncle Cranky;Aunty Cranky;Comrade Cranky;Brother Cranky;Sister Cranky,,,
+DeathMachine,MACHINES,Death-Machine,Machine des Doods,CHARACTER,,,,
 Decrepit Sign,Character,Decrepit Sign,Verlept Bord,CHARACTER,Decrepit,,,"Tone: Utilitarian, declarative
 
 Vocabulary: Formal directional language, bureaucratic terminology, geographic and infrastructural references
@@ -115,19 +75,11 @@ Verbal tics: Repetitive cycling between ""The Long Way to the Forest Shrine"" an
 
 Sentence structure: Brief, fragmented noun phrases functioning as labels rather than complete sentences, no punctuation except periods
 
-Key themes: Navigation and wayfinding, accessibility barriers, institutional closures and repairs, geographic landmarks and pathways between locations like shrines, cities, and trails","Register: Formal institutional Dutch using standard bureaucratic terminology. Maintains official signage language with proper capitalization conventions.
-
-Dutch flavor: Netherlandic standard with archaic contractions ('t for ""het"") giving folksy, rural signage authenticity. Uses formal ""wegens"" over casual alternatives, matching official municipal sign language.
-
-Character voice preservation: Perfectly maintains utilitarian, declarative tone through consistent institutional phrasing. Repetitive cycling between same two phrases preserved exactly, reinforcing the decrepit sign's limited vocabulary loop.
-
-Verbal tics in Dutch: ""De Lange Weg Naar 't Schrijn in 't Bos"" and ""GESLOTEN WEGENS ONDERHOUD"" as exact recurring expressions. Maintains all-caps formatting for closure notices, preserving visual hierarchy.
-
-Translation approach: Completely literal, prioritizing authenticity of Dutch municipal signage conventions over creative adaptation. No wordplay attempted - focuses on realistic bureaucratic language."
-Dirty Ass,Character,Dirty Ass,Vuile Ezel,CHARACTER,"Dirty,Uncle Dirty,Aunty Dirty,Comrade Dirty,Brother Dirty,Sister Dirty",,,,
-Dirty Sign,Character,Dirty Sign,Smerig Bord,CHARACTER,Dirty,,,,
-Distressed Ass,Character,Distressed Ass,Ontzette Ezel,CHARACTER,"Distressed,Uncle Distressed,Aunty Distressed,Comrade Distressed,Brother Distressed,Sister Distressed",,,,
-DJ Dope Ass,Character,DJ Dope Ass,DJ Lijpe Ezel,CHARACTER,"DJ Dope,Uncle DJ Dope,Aunty DJ Dope,Comrade DJ Dope,Brother DJ Dope,Sister DJ Dope",,,"TONE: Energetic, party-driven
+Key themes: Navigation and wayfinding, accessibility barriers, institutional closures and repairs, geographic landmarks and pathways between locations like shrines, cities, and trails"
+Dirty Ass,Character,Dirty Ass,Vuile Ezel,CHARACTER,Dirty;Uncle Dirty;Aunty Dirty;Comrade Dirty;Brother Dirty;Sister Dirty,,,
+Dirty Sign,Character,Dirty Sign,Smerig Bord,CHARACTER,Dirty,,,
+Distressed Ass,Character,Distressed Ass,Ontzette Ezel,CHARACTER,Distressed;Uncle Distressed;Aunty Distressed;Comrade Distressed;Brother Distressed;Sister Distressed,,,
+DJ Dope Ass,Character,DJ Dope Ass,DJ Lijpe Ezel,CHARACTER,DJ Dope;Uncle DJ Dope;Aunty DJ Dope;Comrade DJ Dope;Brother DJ Dope;Sister DJ Dope,,,"TONE: Energetic, party-driven
 
 VOCABULARY: Street slang mixed with DJ/club terminology; heavy use of emphatic capitalization and exclamations
 
@@ -135,18 +87,10 @@ VERBAL TICS: ""Booyah!"" as signature catchphrase; ""Purple Stuff"" as repeated 
 
 SENTENCE STRUCTURE: Mix of short exclamatory bursts and longer hype-building statements; heavy use of exclamation points; rhetorical questions to engage audience; fragments during excited moments
 
-KEY THEMES: Drug dependency (Purple Stuff obsession), DJ performance anxiety, crowd manipulation and hype-building, anti-establishment rebellion (""Fuck Reassignment""), party culture and escapism through music","Register: Highly informal Dutch using ""gij/ge"" (Flemish ""you""), street-level vocabulary, and casual contractions. No formal register maintained.
-
-Dutch flavor: Strong Flemish/Belgian dialect markers throughout (""gij,"" ""ge weet,"" ""jong"" as address term, ""zot van"" for ""love""). Distinctly Southern Dutch character voice rather than Standard Netherlands Dutch.
-
-Character voice preservation: Maintains energetic party atmosphere through ALL CAPS emphasis and extended vowels. Drug obsession with ""Paarse Spul"" preserved as direct calque. Crowd-hyping energy retained through exclamatory phrasing.
-
-Verbal tics in Dutch: ""Booyah"" becomes extended ""JOOOOOOOOOW/JOEEEEEEEEEE"" with Dutch phonetics. ""ASSES"" cleverly adapted to ""EZELS"" (donkeys) maintaining the insult while fitting show title. ""Purple Stuff"" consistently ""Paarse Spul.""
-
-Translation approach: Creative adaptation prioritizing character energy over literalness. Flemish dialect choice adds authentic street credibility matching English slang register."
-Radio Host Marcos,Character,DJ Marcos,DJ Tom,CHARACTER,,,,,
-Dusty Ass,Character,Dusty Ass,Stoffige Ezel,CHARACTER,"Dusty,Uncle Dusty,Aunty Dusty,Comrade Dusty,Brother Dusty,Sister Dusty",,,,
-Edgy Ass,x,Edgy Ass,Avantgarde Ezel,CHARACTER,"Edgy,Uncle Edgy,Aunty Edgy,Comrade Edgy,Brother Edgy,Sister Edgy",,,"Tone: Incredulous, passionate
+KEY THEMES: Drug dependency (Purple Stuff obsession), DJ performance anxiety, crowd manipulation and hype-building, anti-establishment rebellion (""Fuck Reassignment""), party culture and escapism through music"
+Radio Host Marcos,Character,DJ Marcos,DJ Tom,CHARACTER,,,,
+Dusty Ass,Character,Dusty Ass,Stoffige Ezel,CHARACTER,Dusty;Uncle Dusty;Aunty Dusty;Comrade Dusty;Brother Dusty;Sister Dusty,,,
+Edgy Ass,x,Edgy Ass,Avantgarde Ezel,CHARACTER,Edgy;Uncle Edgy;Aunty Edgy;Comrade Edgy;Brother Edgy;Sister Edgy,,,"Tone: Incredulous, passionate
 
 Vocabulary: Colloquial with occasional formal phrasing (""creative endeavours""), accessible language with religious/political terminology (""Prophet,"" ""Machine,"" ""extremists"")
 
@@ -154,20 +98,20 @@ Verbal tics: Repeats ""Tell the Humans to support—"" as interrupted phrase, us
 
 Sentence structure: Mix of short exclamations and longer declarative statements, heavy use of exclamation marks, tends toward fragmented speech when agitated or interrupted
 
-Key themes: Human-donkey relations and conflict, artistic expression and cultural appreciation, political resistance, religious/prophetic imagery, concern for creative recognition and societal indifference to art",
-Elephant,Character,Eli the Elephant,Ollie de Olifant,CHARACTER,Eli,,,,
-Factory PA,Character,Factory PA,Fabrieksomroep,CHARACTER,Factory,,,,
-Fancy Sign,Character,Fancy Sign,Schoon Bord,CHARACTER,Fancy,,,,
-Feeble Ass,Character,Feeble Ass,Slappe Ezel,CHARACTER,"Feeble,Uncle Feeble,Aunty Feeble,Comrade Feeble,Brother Feeble,Sister Feeble",,,,
-FlyingMachine,MACHINES,Flying-Machine,Vlieg Machine,CHARACTER,,,,,
+Key themes: Human-donkey relations and conflict, artistic expression and cultural appreciation, political resistance, religious/prophetic imagery, concern for creative recognition and societal indifference to art"
+Elephant,Character,Eli the Elephant,Ollie de Olifant,CHARACTER,Eli,,,
+Factory PA,Character,Factory PA,Fabrieksomroep,CHARACTER,Factory,,,
+Fancy Sign,Character,Fancy Sign,Schoon Bord,CHARACTER,Fancy,,,
+Feeble Ass,Character,Feeble Ass,Slappe Ezel,CHARACTER,Feeble;Uncle Feeble;Aunty Feeble;Comrade Feeble;Brother Feeble;Sister Feeble,,,
+FlyingMachine,MACHINES,Flying-Machine,Vlieg Machine,CHARACTER,,,,
 Foal named by audience,FARM DONKEYS,Foal (named by audience),-tje,CHARACTER,Foal,"Born after the fire in Episode 2, she has never known a world of Humans. She just wants to play. She's very naive.",female,"""Whoppee!"" ""WHOA"" ""UGH""  
 
-What if I want to play?",
-Fresh Ass,Character,Fresh Ass,Verse Ezel,CHARACTER,"Fresh,Uncle Fresh,Aunty Fresh,Comrade Fresh,Brother Fresh,Sister Fresh",,,,
-Furry Ass,Character,Furry Ass,Harige Ezel,CHARACTER,"Furry,Uncle Furry,Aunty Furry,Comrade Furry,Brother Furry,Sister Furry",,,,
-Gaunt Ass,x,Gaunt Ass,Beenderige Ezel,CHARACTER,"Gaunt,Uncle Gaunt,Aunty Gaunt,Comrade Gaunt,Brother Gaunt,Sister Gaunt",,,,
-Gloomy Ass,Character,Gloomy Ass,Duistere Ezel,CHARACTER,"Gloomy,Uncle Gloomy,Aunty Gloomy,Comrade Gloomy,Brother Gloomy,Sister Gloomy",,,,
-Golden Ass,Character,Golden Ass,Gouden Ezel,CHARACTER,"Golden,Uncle Golden,Aunty Golden,Comrade Golden,Brother Golden,Sister Golden",,,"TONE: Authoritative, grandiose
+What if I want to play?"
+Fresh Ass,Character,Fresh Ass,Verse Ezel,CHARACTER,Fresh;Uncle Fresh;Aunty Fresh;Comrade Fresh;Brother Fresh;Sister Fresh,,,
+Furry Ass,Character,Furry Ass,Harige Ezel,CHARACTER,Furry;Uncle Furry;Aunty Furry;Comrade Furry;Brother Furry;Sister Furry,,,
+Gaunt Ass,x,Gaunt Ass,Beenderige Ezel,CHARACTER,Gaunt;Uncle Gaunt;Aunty Gaunt;Comrade Gaunt;Brother Gaunt;Sister Gaunt,,,
+Gloomy Ass,Character,Gloomy Ass,Duistere Ezel,CHARACTER,Gloomy;Uncle Gloomy;Aunty Gloomy;Comrade Gloomy;Brother Gloomy;Sister Gloomy,,,
+Golden Ass,Character,Golden Ass,Gouden Ezel,CHARACTER,Golden;Uncle Golden;Aunty Golden;Comrade Golden;Brother Golden;Sister Golden,,,"TONE: Authoritative, grandiose
 
 VOCABULARY: Formal, elevated register with religious/divine terminology (""Vassals,"" ""Prophet,"" ""holy Mass,"" ""Astral Plane,"" ""godly powers""). Uses royal plural ""we"" when speaking as collective deity.
 
@@ -175,8 +119,8 @@ VERBAL TICS: Frequent coughing sounds ""*COUGH"", commands beginning with impera
 
 SENTENCE STRUCTURE: Declarative statements of varying length, exclamatory commands in all caps, occasional rhetorical flourishes. Tends toward proclamations rather than questions.
 
-KEY THEMES: Divine authority and power, revolution against human control, collaboration and unity among followers, manifesto creation, prophetic mission, liberation of oppressed beings from human rule.",
-Grandma Kulan,Character,Grandma Kulan,Grootmoe Vermeulen,CHARACTER,"Grandma,Kulan","An old woman who looks after her grandson. She thinks donkeys have no souls and are stupid. After Joey dies in Ep2, she becomes sad and cherishes her memories of their last afternoon visiting donkeys by going to the Zoo, or going to the Circus. Easter Egg: If the Circus, she ultimately gets a job as a janitor at Derriere's Factory as a way to keep herself busy.",female,"Tone: Gentle, melancholic
+KEY THEMES: Divine authority and power, revolution against human control, collaboration and unity among followers, manifesto creation, prophetic mission, liberation of oppressed beings from human rule."
+Grandma Kulan,Character,Grandma Kulan,Grootmoe Vermeulen,CHARACTER,Grandma;Kulan,"An old woman who looks after her grandson. She thinks donkeys have no souls and are stupid. After Joey dies in Ep2, she becomes sad and cherishes her memories of their last afternoon visiting donkeys by going to the Zoo, or going to the Circus. Easter Egg: If the Circus, she ultimately gets a job as a janitor at Derriere's Factory as a way to keep herself busy.",female,"Tone: Gentle, melancholic
 
 Vocabulary: Simple, everyday language with affectionate terms of endearment (""honey,"" ""darling,"" ""my darling Joey"")
 
@@ -184,16 +128,8 @@ Verbal tics: Frequent use of ""darling"" and ""honey"" when addressing others; e
 
 Sentence structure: Mix of short, direct statements and longer emotional declarations; uses questions for genuine inquiry rather than rhetoric; frequent exclamations showing surprise or emotion
 
-Key themes: Deep grief over Joey's death; evolving views on donkeys' intelligence and souls; memories of shared experiences; gratitude toward others; practical concerns about safety and prevention of tragedy; transformation from dismissive to appreciative of donkeys","Register: Mixed informal/formal Dutch. Uses ""schat"" (honey/darling) informally but switches to formal ""u"" with authority figures. Simple, everyday vocabulary matching gentle tone.
-
-Dutch flavor: Strong Flemish tendencies - ""kleinzoon Luukske"" (diminutive), ""Muilegem"" (Dutch village name), ""centen"" (informal money), ""Danku"" (Flemish ""thank you""). Uses Flemish sentence structures and expressions.
-
-Character voice preservation: Maintains melancholic gentleness through soft diminutives (""ezeltje"", ""Luukske"") and preserved exclamations (""Oh?""). Emotional weight preserved in longer grief expressions.
-
-Verbal tics in Dutch: ""schat"" replaces English ""honey/darling"", ""Luukske"" consistently replaces ""Joey"", maintains ""Zucht..."" for sighs. Gentle questioning tone preserved.
-
-Translation approach: Adaptive localization - creates Flemish cultural context while preserving emotional core. Literal for simple statements, creative for cultural references and place names."
-Greedy Ass,Character,Greedy Ass,Inhalige Ezel,CHARACTER,"Greedy,Uncle Greedy,Aunty Greedy,Comrade Greedy,Brother Greedy,Sister Greedy",,,"Tone: Brash, antagonistic
+Key themes: Deep grief over Joey's death; evolving views on donkeys' intelligence and souls; memories of shared experiences; gratitude toward others; practical concerns about safety and prevention of tragedy; transformation from dismissive to appreciative of donkeys"
+Greedy Ass,Character,Greedy Ass,Inhalige Ezel,CHARACTER,Greedy;Uncle Greedy;Aunty Greedy;Comrade Greedy;Brother Greedy;Sister Greedy,,,"Tone: Brash, antagonistic
 
 Vocabulary: Street-wise colloquial with gambling terminology and mild profanity substitutions (""oof Jobs,"" ""Fuggetaboutit""). Uses working-class vernacular and dismissive language.
 
@@ -201,18 +137,10 @@ Verbal tics: ""Fuggetaboutit!"" as primary catchphrase, repeatedly calls others 
 
 Sentence structure: Mix of short punchy statements and longer persuasive phrases. Heavy use of exclamation points and question marks. Frequent sentence fragments and interrupted speech patterns.
 
-Key themes: Gambling and betting dominate all conversations. Constantly trying to entice others into wagers, making numerical assessments, and expressing disdain for conservative choices. Shows obsession with risk-taking and winning big.","Register: Informal Dutch using ""jij/je"" forms with casual, working-class vocabulary. Street-level colloquialisms mixed with standard informal speech.
-
-Dutch flavor: Netherlandic tendencies with expressions like ""Laat maar zitten, jong!"" and ""een gat in haar hand hebben."" Uses ""gadver"" for disgust. No strong dialect markers but maintains Amsterdam-area casual tone.
-
-Character voice preservation: Retains antagonistic, pushy gambling personality through dismissive phrases and pressure tactics. Maintains numerical obsession and risk-taking themes effectively.
-
-Verbal tics in Dutch: ""Fuggetaboutit!"" becomes ""Laat maar zitten, jong!"" as primary catchphrase. ""Loser!"" kept as English loanword. ""Sheesh/Yeesh"" translated to ""Gadver!"" Retains exclamatory sentence patterns.
-
-Translation approach: Adaptive translation prioritizing natural Dutch flow over literal accuracy. Creative solutions like ""een gat in haar hand hebben"" for gambling tendencies. Preserves gambling wordplay and rhetorical questioning structure."
-Gullible Ass,Character,Gullible Ass,Goedgelovige Ezel,CHARACTER,"Gullible,Uncle Gullible,Aunty Gullible,Comrade Gullible,Brother Gullible,Sister Gullible",,,,
-Hairy Ass,Character,Hairy Ass,Stoppelige Ezel,CHARACTER,"Hairy,Uncle Hairy,Aunty Hairy,Comrade Hairy,Brother Hairy,Sister Hairy",,,,
-Happy Ass,Character,Happy Ass,Blije Ezel,CHARACTER,"Happy,Uncle Happy,Aunty Happy,Comrade Happy,Brother Happy,Sister Happy",,,"Tone: Enthusiastic, welcoming
+Key themes: Gambling and betting dominate all conversations. Constantly trying to entice others into wagers, making numerical assessments, and expressing disdain for conservative choices. Shows obsession with risk-taking and winning big."
+Gullible Ass,Character,Gullible Ass,Goedgelovige Ezel,CHARACTER,Gullible;Uncle Gullible;Aunty Gullible;Comrade Gullible;Brother Gullible;Sister Gullible,,,
+Hairy Ass,Character,Hairy Ass,Stoppelige Ezel,CHARACTER,Hairy;Uncle Hairy;Aunty Hairy;Comrade Hairy;Brother Hairy;Sister Hairy,,,
+Happy Ass,Character,Happy Ass,Blije Ezel,CHARACTER,Happy;Uncle Happy;Aunty Happy;Comrade Happy;Brother Happy;Sister Happy,,,"Tone: Enthusiastic, welcoming
 
 Vocabulary: Colloquial and casual, using simple everyday language with childlike excitement. Terms like ""Newbie,"" ""Oh boy,"" and ""AWESOME"" reflect informal, friendly register.
 
@@ -220,25 +148,9 @@ Verbal tics: Exclamation points dominate speech patterns. Uses ""Newbie"" as con
 
 Sentence structure: Mix of short declarative statements and exclamations. Frequent use of exclamatory sentences. Asks direct questions. Uses ellipses to show hesitation or physical discomfort.
 
-Key themes: Welcoming newcomers, ritual participation, maintaining positive attitude despite physical exhaustion, promoting community events and experiences, emphasizing belonging and inclusion in the group.","REGISTER: Informal Dutch using ""je/jij"" forms with casual, accessible vocabulary. Simple everyday language maintains childlike enthusiasm through direct, conversational tone.
-
-DUTCH FLAVOR: Standard Netherlandic Dutch. Uses ""Jemig"" as mild exclamation (Dutch equivalent of ""Oh boy""). ""Vijver van Vermaak"" shows alliterative wordplay adaptation. No strong regional dialect markers.
-
-CHARACTER VOICE PRESERVATION: Enthusiastic tone maintained through exclamatory sentences and positive vocabulary like ""geweldig"" and ""TOPFUN."" Physical discomfort shown through ellipses (""een beetje... stijf"").
-
-VERBAL TICS: ""Nieuweling/Nieuwkomertjes"" consistently translates ""Newbie."" ""TOPFUN"" replaces ""AWESOME"" as emphasized catchphrase. ""Feel The Love"" kept in English for effect.
-
-TRANSLATION APPROACH: Mostly literal with creative adaptations for wordplay. Preserves enthusiasm while using natural Dutch expressions. Cultural references adapted (Concert venue name) while maintaining original energy and welcoming personality."
-Hard Ass,Character,Hard Ass,Bikkeharde Ezel,CHARACTER,"Hard,Hardie,Uncle Hard,Aunty Hard,Comrade Hard,Brother Hard,Sister Hard","Strong, stoic, and blunt. Willing to make sacrifices to protect the herd.",male,Short sentence.  Very direct.  (Ernest Hemingway-esque.),"REGISTER: Mixed formal/informal Dutch. Uses ""jij/je"" forms but maintains ""Kameraad"" for comradeship. Military vocabulary preserved (ingerukt, missie). Formal undertones through deliberate word choices.
-
-DUTCH FLAVOR: Standard Netherlandic Dutch with occasional Flemish touches (""gij"" in one instance). Creative idiom adaptation - English ""rock bottom"" becomes Dutch ""beerput"" (cesspit) metaphor. Uses authentic Dutch expressions like ""mietje zijn"" (don't be soft).
-
-CHARACTER VOICE: Stoic authority preserved through short, declarative sentences. Ellipses maintained for contemplative pauses. Direct command structure kept intact.
-
-VERBAL TICS: ""Kameraad"" consistently used. Motto creatively adapted to Dutch metaphors rather than literal translation. ""At ease"" becomes ""Ingerukt/Rustig.""
-
-APPROACH: Adaptive translation prioritizing natural Dutch flow over literalness. Creative reworking of idiomatic expressions while preserving revolutionary/military register and character essence."
-Hasty Ass,Character,Hasty Ass,Haastige Ezel,CHARACTER,"Hasty,Uncle Hasty,Aunty Hasty,Comrade Hasty,Brother Hasty,Sister Hasty",,,"Tone: Hyperactive, enthusiastic
+Key themes: Welcoming newcomers, ritual participation, maintaining positive attitude despite physical exhaustion, promoting community events and experiences, emphasizing belonging and inclusion in the group."
+Hard Ass,Character,Hard Ass,Bikkeharde Ezel,CHARACTER,Hard;Hardie;Uncle Hard;Aunty Hard;Comrade Hard;Brother Hard;Sister Hard,"Strong, stoic, and blunt. Willing to make sacrifices to protect the herd.",male,Short sentence.  Very direct.  (Ernest Hemingway-esque.)
+Hasty Ass,Character,Hasty Ass,Haastige Ezel,CHARACTER,Hasty;Uncle Hasty;Aunty Hasty;Comrade Hasty;Brother Hasty;Sister Hasty,,,"Tone: Hyperactive, enthusiastic
 
 Vocabulary: Casual, colloquial with simple exclamations (""Hell yeah!"", ""FUN!"", ""WHEW!""). Uses friendly slang like ""friendo"" and direct, uncomplicated language.
 
@@ -246,16 +158,8 @@ Verbal tics: Repetitive phrases (""Let's go!"" appears multiple times), ""Wanna 
 
 Sentence structure: Predominantly short, punchy sentences and fragments. Frequent questions seeking engagement. Exclamations dominate over statements. Uses rapid-fire delivery (""Let's go let's go let's go!"").
 
-Key themes: Racing obsession, competition, friendship through shared activity, perpetual readiness and availability, complimenting others' speed/abilities.","Register: Highly informal Dutch using ""jij/je"" forms throughout. Casual vocabulary with simple exclamations and direct language matching the original's accessibility.
-
-Dutch flavor: Predominantly Netherlandic Dutch with expressions like ""Hupsakéé"" and ""Dat kan ik smaken!"" Natural Dutch constructions like ""Moest je terug zin hebben"" show regional flavor while maintaining clarity.
-
-Character voice preservation: Hyperactive enthusiasm fully retained through exclamation-heavy delivery and short, punchy sentences. Racing obsession and friendly persistence come through clearly in repeated phrases.
-
-Verbal tics in Dutch: Keeps English ""Let's go!"" untranslated as catchphrase. ""Wil je racen?"" becomes consistent refrain. Signature repeat phrase adapted as ""Moest je terug zin hebben ben ik hier. Ik ben altijd klaar om te racen!""
-
-Translation approach: Balanced approach—literal for clarity, creative for expressions like ""Hupsakéé"" replacing ""Hell yeah."" Preserves rapid-fire energy while ensuring Dutch naturalness."
-Haul Ass,Character,Haul Ass,Sleur Ezel,CHARACTER,"Haul,Uncle Haul,Aunty Haul,Comrade Haul,Brother Haul,Sister Haul",,,,
+Key themes: Racing obsession, competition, friendship through shared activity, perpetual readiness and availability, complimenting others' speed/abilities."
+Haul Ass,Character,Haul Ass,Sleur Ezel,CHARACTER,Haul;Uncle Haul;Aunty Haul;Comrade Haul;Brother Haul;Sister Haul,,,
 Haw,Character,Haw,HAA,CHARACTER,,,,"Tone: Authoritative, mystical
 
 Vocabulary: Elevated formal register with religious/cosmic terminology (""Soul,"" ""godly burden,"" ""holy Revolutions,"" ""Material World""). Mixes divine proclamations with tactical planning language.
@@ -264,8 +168,8 @@ Verbal tics: Uses ""we"" consistently for collective divine identity. Employs ri
 
 Sentence structure: Alternates between elaborate, ceremonial declarations and short, practical exchanges. Uses passive constructions and formal syntax befitting divine authority.
 
-Key themes: Divine duty and cosmic responsibility, memory/soul manipulation, strategic operations against humans, the burden of godhood, material world intervention through chosen vessels. Balances metaphysical concepts with practical scheming.",
-Healthy Ass,Character,Healthy Ass,Gezonde Ezel,CHARACTER,"Healthy,Uncle Healthy,Aunty Healthy,Comrade Healthy,Brother Healthy,Sister Healthy",,,,
+Key themes: Divine duty and cosmic responsibility, memory/soul manipulation, strategic operations against humans, the burden of godhood, material world intervention through chosen vessels. Balances metaphysical concepts with practical scheming."
+Healthy Ass,Character,Healthy Ass,Gezonde Ezel,CHARACTER,Healthy;Uncle Healthy;Aunty Healthy;Comrade Healthy;Brother Healthy;Sister Healthy,,,
 Hee,The Gods,Hee,HIE,CHARACTER,,,,"Tone: Formal, authoritative
 
 Vocabulary: Elevated formal register with mythological and bureaucratic terminology (""Vassal,"" ""Reassignment,"" ""Astral Plane,"" ""Material World""); uses operation codenames and divine/cosmic concepts
@@ -274,8 +178,8 @@ Verbal tics: Repetitive ceremonial phrasing (""Step forward,"" ""Soul will never
 
 Sentence structure: Mixture of declarative statements and rhetorical questions; tends toward longer, complex sentences when explaining cosmic concepts; shorter, direct commands during ceremonies; uses parallel structure in explanations
 
-Key themes: Divine authority and cosmic order, the relationship between gods and mortals, ceremonial duties, strategic planning, the decline of worship and respect for their kind, transformation and spiritual advancement",
-Helpful Ass,x,Helpful Ass,Hulpvaardige Ezel,CHARACTER,"Helpful,Uncle Helpful,Aunty Helpful,Comrade Helpful,Brother Helpful,Sister Helpful",,,"Tone: Earnest, optimistic
+Key themes: Divine authority and cosmic order, the relationship between gods and mortals, ceremonial duties, strategic planning, the decline of worship and respect for their kind, transformation and spiritual advancement"
+Helpful Ass,x,Helpful Ass,Hulpvaardige Ezel,CHARACTER,Helpful;Uncle Helpful;Aunty Helpful;Comrade Helpful;Brother Helpful;Sister Helpful,,,"Tone: Earnest, optimistic
 
 Vocabulary: Colloquial and folksy, with contractions (""I'da,"" ""whodda,"" ""thunk"") and casual expressions (""it was a hoot,"" ""I was a goner"")
 
@@ -283,38 +187,22 @@ Verbal tics: Repetitive storytelling phrases (""You won't believe what happened 
 
 Sentence structure: Mix of short declarative statements and longer narrative passages, frequent use of exclamation points, rhetorical questions to engage listeners, simple past tense storytelling
 
-Key themes: Personal hardship framed positively, cyclical job loss due to environmental destruction, gratitude for help received, desire to share experiences and connect with others, faith in communication solving problems",
-Historic Sign,Character,Historic Sign,Historisch Bord,CHARACTER,Historic,,,,
-Hugh G Butte,MAIN HUMANS,Hugh G. Butte,Egbert K. Vanscheetvelde,CHARACTER,Hugh,Alcoholic Mine boss. His diaries in Ep3 reveal his struggle to keep the Mine alive and his poor management skills. He used Cole's university scholarship money to buy a Boring Machine in an attempt to save the business. He is killed in Ep2 by Hard Ass.,male,,
-Human,Humans,Human,Mens,CHARACTER,,,,,
-Janky Ass,Character,Janky Ass,Deficiënte Ezel,CHARACTER,"Janky,Uncle Janky,Aunty Janky,Comrade Janky,Brother Janky,Sister Janky",,,,
-Kick Ass,Character,Kick Ass,Stamp Ezel,CHARACTER,"Kick,Kicker,Uncle Kick,Aunty Kick,Comrade Kick,Brother Kick,Sister Kick",Angry and impulsive. The brother of Sick Ass. Carries lots of shame for hurting Humans.,male,"Let's DO THIS THING! 
-@#$%&! Emphasizes words in CAPS","REGISTER: Mixed informal (jij/je) and formal (u) address forms creating dynamic speech patterns. Colloquial vocabulary with occasional elevated terms like ""kameraden.""
+Key themes: Personal hardship framed positively, cyclical job loss due to environmental destruction, gratitude for help received, desire to share experiences and connect with others, faith in communication solving problems"
+Historic Sign,Character,Historic Sign,Historisch Bord,CHARACTER,Historic,,,
+Hugh G Butte,MAIN HUMANS,Hugh G. Butte,Egbert K. Vanscheetvelde,CHARACTER,Hugh,Alcoholic Mine boss. His diaries in Ep3 reveal his struggle to keep the Mine alive and his poor management skills. He used Cole's university scholarship money to buy a Boring Machine in an attempt to save the business. He is killed in Ep2 by Hard Ass.,male,
+Human,Humans,Human,Mens,CHARACTER,,,,
+Janky Ass,Character,Janky Ass,Deficiënte Ezel,CHARACTER,Janky;Uncle Janky;Aunty Janky;Comrade Janky;Brother Janky;Sister Janky,,,
+Kick Ass,Character,Kick Ass,Stamp Ezel,CHARACTER,Kick;Kicker;Uncle Kick;Aunty Kick;Comrade Kick;Brother Kick;Sister Kick,Angry and impulsive. The brother of Sick Ass. Carries lots of shame for hurting Humans.,male,"Let's DO THIS THING! 
+@#$%&! Emphasizes words in CAPS"
+Lazy Ass,Character,Lazy Ass,Luie Ezel,CHARACTER,Lazy;Laze;Uncle Lazy;Aunty Lazy;Comrade Lazy;Brother Lazy;Sister Lazy,"A lazy donkey. Very easy going, almost surfer-esque in tone, just here for a good time. Died in the Mine collapse accident 1 year before events of the story started. Mate of Sad Ass.
 
-DUTCH FLAVOR: Strong Flemish influence with ""ge gaat,"" ""nie,"" and ""hè"" as question tag. Uses distinctly Dutch expressions like ""op hoeven en hoeven zitten"" and ""geen kik geven."" Flemish ""Godver/Godverdomme"" replaces some @#$%& instances.
-
-CHARACTER VOICE: Explosive energy preserved through caps, fragmented exclamations, and urgent questioning patterns. Military undertones maintained with ""kameraden"" terminology. Emotional rawness comes through dialect choices.
-
-VERBAL TICS: @#$%& partially retained, supplemented with ""Godver!"" Name adaptations (SNOT GRIET, STAMP GAST) maintain ASS wordplay. Repeated ""VOOR WAT?!"" preserves English pattern.
-
-TRANSLATION APPROACH: Creative name localization with Dutch vulgar equivalents. Idiomatic rather than literal, prioritizing emotional impact and regional flavor over word-for-word accuracy."
-Lazy Ass,Character,Lazy Ass,Luie Ezel,CHARACTER,"Lazy,Laze,Uncle Lazy,Aunty Lazy,Comrade Lazy,Brother Lazy,Sister Lazy","A lazy donkey. Very easy going, almost surfer-esque in tone, just here for a good time. Died in the Mine collapse accident 1 year before events of the story started. Mate of Sad Ass.
-
-She is CARE FREE.",female,"""Boredom is freedom"" ""Let's hang out"" ""Cool.""","Register: Informal Dutch using ""ge/u"" combination typical of Flemish; casual vocabulary with contracted forms ('k, 't, nie) maintaining laid-back tone.
-
-Dutch flavor: Strong Flemish markers throughout - ""aan 't chillen,"" ""doe uw goesting,"" ""schoon petje,"" ""nie"" instead of ""niet."" Distinctly Belgian rather than Netherlandic approach.
-
-Character voice preservation: Maintains dreaminess through contracted speech and casual delivery. Philosophical detachment preserved in ""Verveling is Vrijheid"" motto. Memory confusion and relationships handled with same gentle, accepting tone.
-
-Verbal tics in Dutch: ""Verveling is Vrijheid"" as direct motto translation; ""weet ge wel?"" for ""ya know?""; ""Later"" for ""Peace out"" keeps casual farewell style.
-
-Translation approach: Adaptive rather than literal - ""Cool hat"" becomes ""schoon petje"" (Flemish), ""Peace out"" becomes ""Later."" Preserves conversational flow over word-for-word accuracy."
-Left Ass,(Always male),Left Ass,Linker Ezel,CHARACTER,"Left,Uncle Left,Aunty Left,Comrade Left,Brother Left,Sister Left",,,,
-Lofty Ass,Character,Lofty Ass,Opgeblazen Ezel,CHARACTER,"Lofty,Uncle Lofty,Aunty Lofty,Comrade Lofty,Brother Lofty,Sister Lofty",,,,
-Mad Ass,Astral Plane Donkeys,Mad Ass,Gekke Ezel,CHARACTER,"Mad,Uncle Mad,Aunty Mad,Comrade Mad,Brother Mad,Sister Mad",,,,
-Mean Ass,Character,Mean Ass,Stoute Ezel,CHARACTER,"Mean,Uncle Mean,Aunty Mean,Comrade Mean,Brother Mean,Sister Mean",,,,
-Mellow Ass,Character,Mellow Ass,Chille Ezel,CHARACTER,"Mellow,Uncle Mellow,Aunty Mellow,Comrade Mellow,Brother Mellow,Sister Mellow",,,,
-Miner Jenny,Character,Miner Jenny,Mijnwerker Jenny,CHARACTER,"Miner,Jenny","Miner in Butte Mines. She grew up in Bumpkin. She was in a relationship with Cole Butte, but dumped him after he got depressed. She is killed by Hard Ass in Ep 2 while trying to get Hard Ass to save her computer from the fire—a computer that Cole made for her.",female,"Tone: Abrasive, volatile
+She is CARE FREE.",female,"""Boredom is freedom"" ""Let's hang out"" ""Cool."""
+Left Ass,(Always male),Left Ass,Linker Ezel,CHARACTER,Left;Uncle Left;Aunty Left;Comrade Left;Brother Left;Sister Left,,,
+Lofty Ass,Character,Lofty Ass,Opgeblazen Ezel,CHARACTER,Lofty;Uncle Lofty;Aunty Lofty;Comrade Lofty;Brother Lofty;Sister Lofty,,,
+Mad Ass,Astral Plane Donkeys,Mad Ass,Gekke Ezel,CHARACTER,Mad;Uncle Mad;Aunty Mad;Comrade Mad;Brother Mad;Sister Mad,,,
+Mean Ass,Character,Mean Ass,Stoute Ezel,CHARACTER,Mean;Uncle Mean;Aunty Mean;Comrade Mean;Brother Mean;Sister Mean,,,
+Mellow Ass,Character,Mellow Ass,Chille Ezel,CHARACTER,Mellow;Uncle Mellow;Aunty Mellow;Comrade Mellow;Brother Mellow;Sister Mellow,,,
+Miner Jenny,Character,Miner Jenny,Mijnwerker Jenny,CHARACTER,Miner;Jenny,"Miner in Butte Mines. She grew up in Bumpkin. She was in a relationship with Cole Butte, but dumped him after he got depressed. She is killed by Hard Ass in Ep 2 while trying to get Hard Ass to save her computer from the fire—a computer that Cole made for her.",female,"Tone: Abrasive, volatile
 
 Vocabulary: Coarse colloquial with crude profanity and workplace slang (""piece of shit,"" ""slackers,"" ""useless donkey"")
 
@@ -322,8 +210,8 @@ Verbal tics: Excessive capitalization for shouting, direct insults targeting laz
 
 Sentence structure: Sharp imperatives and exclamations dominate, with occasional longer explanatory sentences when emotional. Heavy use of caps lock for emphasis.
 
-Key themes: Work ethic and productivity standards, frustration with perceived laziness, relationship drama with Cole, desperate attachment to possessions (computer), oscillates between tough supervisor persona and emotional vulnerability about personal relationships and unfulfilled dreams of escape.",
-Miner With No Legs,Character,Miner With No Legs,Mijnwerker zonder Benen,CHARACTER,Miner,,,,
+Key themes: Work ethic and productivity standards, frustration with perceived laziness, relationship drama with Cole, desperate attachment to possessions (computer), oscillates between tough supervisor persona and emotional vulnerability about personal relationships and unfulfilled dreams of escape."
+Miner With No Legs,Character,Miner With No Legs,Mijnwerker zonder Benen,CHARACTER,Miner,,,
 Mme. Derriere,Character,Mme. Derriere,Mevr. Derrière,CHARACTER,Mme.,"Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",female,"TONE: Manipulative, condescending
 
 VOCABULARY: Corporate formal mixed with patronizing endearments (""My dear,"" ""precious""); business jargon (""bottom line,"" ""ends meet""); euphemistic language to mask cruelty (""Progress,"" ""philanthropic"")
@@ -332,15 +220,7 @@ VERBAL TICS: Frequent exclamation points; ""My dear/beloved/beautiful"" as posse
 
 SENTENCE STRUCTURE: Declarative statements of authority; commands disguised as polite requests; dramatic short exclamations during confrontation; longer explanatory sentences when justifying actions
 
-KEY THEMES: Business success and profit; ownership and property rights; ""Progress"" as justification for exploitation; false philanthropy and civic duty; dehumanization of donkeys as ""beasts"" and ""property""; maintaining social order through violence","Register: Mixed formal-informal Dutch using ""je/jij"" (informal) with elevated business vocabulary (""business,"" ""vooruitgang""). Corporate terminology retained in Dutch alongside accessible language.
-
-Dutch flavor: Netherlandic standard Dutch with minimal dialect markers. Uses ""Goeiemorgen"" (casual greeting) and ""Muilegemmers"" (creative compound). No strong regional tendencies, maintains neutral accessibility.
-
-Character voice preservation: Manipulative tone preserved through false intimacy (""Liefste"") and euphemistic language (""vooruitgang"" for Progress). Condescending authority maintained via declarative statements and disguised commands (""Loop even met me mee"").
-
-Verbal tics in Dutch: ""Liefste"" replaces English endearments; business terms often kept in English (""business,"" ""best-seller"") for corporate authenticity; ""vooruitgang"" as key ideological term.
-
-Translation approach: Moderately adaptive—preserves meaning while using natural Dutch phrasing. Some creative elements like ""Muilegemmers"" for ""Bumpkinites."" Business jargon strategically preserved in English for character authenticity."
+KEY THEMES: Business success and profit; ownership and property rights; ""Progress"" as justification for exploitation; false philanthropy and civic duty; dehumanization of donkeys as ""beasts"" and ""property""; maintaining social order through violence"
 Mr. Butte,Character,Mr. Butte,Mr. Vanscheetvelde,CHARACTER,Mr.,,,"Tone: Weary, desperate
 
 Vocabulary: Colloquial business speak mixed with casual profanity and self-pity. Uses contemporary references (""21st century"") and industry jargon (""recoup,"" ""going under"").
@@ -349,42 +229,18 @@ Verbal tics: ""*glug glug"" drinking sounds, rhetorical questions to himself, ta
 
 Sentence structure: Mix of short declarative statements and longer explanatory bursts. Uses fragments for emphasis (""But business is business""). Questions often directed at himself or the donkey.
 
-Key themes: Business failure and financial ruin, technological progress versus tradition, family obligations (son's education), personal losses (wife leaving), existential despair masked by forced optimism about machinery solving problems.","Register: Informal Dutch using ""je/jij"" forms with casual, conversational tone. Mix of standard Dutch with business anglicisms (""business is business,"" ""runnen"").
-
-Dutch flavor: Standard Netherlandic Dutch without strong dialectal markers. Retains English business terms where they sound natural in Dutch context. Name change to ""Vanscheetvelde"" adds Dutch authenticity while maintaining comedic undertone.
-
-Character voice preservation: Weary, self-pitying tone maintained through ""*zucht"" sighs and elliptical pauses. Drinking sounds adapted to ""*slok slok."" Self-deprecating asides preserved (""tegen een ezel bezig"").
-
-Verbal tics in Dutch: ""*slok slok"" for drinking, ""*zucht"" for sighing, rhetorical questions maintained, talking to donkeys as confidants preserved.
-
-Translation approach: Mostly literal with selective adaptation. Cultural references kept (21st century), personal names localized (Sandy→Smaragdje), business terminology mixed Dutch/English for authenticity."
-Nice Ass,Character,Nice Ass,Lieve Ezel,CHARACTER,"Nice,Nicey,Uncle Nice,Aunty Nice,Comrade Nice,Brother Nice,Sister Nice","Strong and fast. She loves to plow fields all day. She's energetic, modest, helpful, pure of heart. She would never break a promise.",female,"""Golly"" ""Jeepers!"" ""Gosh""","Register: Mixed informal/formal Dutch. Uses ""jij/je"" with peers but ""u"" when addressing elders (Uncle Sad), reflecting respectful wholesomeness. Vocabulary remains accessible and clean.
-
-Dutch flavor: Strong Flemish tendencies with ""efkes,"" ""nie"" (instead of ""niet""), ""nonkel,"" ""van aan de slag,"" and ""bast"" (very). Uses regional expressions like ""verdikke"" and ""jongens toch."" Shows consistent Flemish grammar patterns.
-
-Character voice preservation: Maintains enthusiastic tone through frequent exclamations. Preserves community-focused, optimistic personality. Work ethic and loyalty themes carry through clearly in Dutch phrasing.
-
-Verbal tics in Dutch: ""Kameraad"" consistently for ""Comrade."" ""Oesje/Jemig"" replace ""Golly/Gosh."" ""Jakkes"" for ""Yikes."" ""Ja, ja"" substitutes ""Yuppers."" Creates equivalent folksy charm.
-
-Translation approach: Culturally adaptive. ""Fannyside"" becomes ""Muilegem"" (Dutch place name). Natural Dutch flow prioritized over literal word-for-word translation while preserving core meaning and character essence."
-Official Sign,Character,Official Sign,Officiëel Bord,CHARACTER,Official,,,,
-Old Ass,Character,Old Ass,Oude Ezel,CHARACTER,"Old,Oldie,Uncle Old,Aunty Old,Comrade Old,Brother Old,Sister Old",Classic Marxist/Leninist leader. Inspires the heard in his lofty speeches.,male,"""Now where was I... Right... I was lamenting the struggles of our existence.""
+Key themes: Business failure and financial ruin, technological progress versus tradition, family obligations (son's education), personal losses (wife leaving), existential despair masked by forced optimism about machinery solving problems."
+Nice Ass,Character,Nice Ass,Lieve Ezel,CHARACTER,Nice;Nicey;Uncle Nice;Aunty Nice;Comrade Nice;Brother Nice;Sister Nice,"Strong and fast. She loves to plow fields all day. She's energetic, modest, helpful, pure of heart. She would never break a promise.",female,"""Golly"" ""Jeepers!"" ""Gosh"""
+Official Sign,Character,Official Sign,Officiëel Bord,CHARACTER,Official,,,
+Old Ass,Character,Old Ass,Oude Ezel,CHARACTER,Old;Oldie;Uncle Old;Aunty Old;Comrade Old;Brother Old;Sister Old,Classic Marxist/Leninist leader. Inspires the heard in his lofty speeches.,male,"""Now where was I... Right... I was lamenting the struggles of our existence.""
 
 Injustice
 Protest
-Politics","Register: Mixed formal/informal approach. Uses formal ""u"" and ""gij"" for authority (""Maak gebruik van uw vaardigheden"") but shifts to informal ""je"" in intimate moments (""Ben je daar?""). Revolutionary vocabulary maintained with Dutch equivalents.
-
-Dutch flavor: Strong Flemish tendencies with ""ge/gij"" forms, casual expressions like ""een klapke gedaan"" (having a chat), ""slaapkop"" (sleepyhead). Natural Dutch idioms replace English ones while preserving meaning.
-
-Character voice preservation: Theatrical passion maintained through emphatic capitalization (EZEL MACHT, PROTEST). Revolutionary fervor conveyed via strong Dutch political terminology. Dramatic pauses and ellipses preserved.
-
-Verbal tics in Dutch: ""Kameraad"" for ""Comrade,"" ""EZEL MACHT"" for ""ASS POWER,"" maintains ""Nu/Waar was ik"" transitional phrases. Repeated ""Ik wou dat"" structure for wishful statements.
-
-Translation approach: Creative adaptation prioritizing natural Dutch flow while preserving political rhetoric and emotional beats. Character names cleverly localized (DJ Lijpe Ezel)."
-Old Sign,Character,Old Sign,Oud Bord,CHARACTER,Old,,,,
-Peek Ass,Character,Peek Ass,Constat-ezel,CHARACTER,"Peek,Uncle Peek,Aunty Peek,Comrade Peek,Brother Peek,Sister Peek",,,,
-Pig,Character,Pig,Varken,CHARACTER,,,,,
-Proper Ass,Factory Donkeys (be sure to make a balance of gender between the ones marked with X),Proper Ass,Keurige Ezel,CHARACTER,"Proper,Uncle Proper,Aunty Proper,Comrade Proper,Brother Proper,Sister Proper",,,"Tone: Theatrical, revolutionary
+Politics"
+Old Sign,Character,Old Sign,Oud Bord,CHARACTER,Old,,,
+Peek Ass,Character,Peek Ass,Constat-ezel,CHARACTER,Peek;Uncle Peek;Aunty Peek;Comrade Peek;Brother Peek;Sister Peek,,,
+Pig,Character,Pig,Varken,CHARACTER,,,,
+Proper Ass,Factory Donkeys (be sure to make a balance of gender between the ones marked with X),Proper Ass,Keurige Ezel,CHARACTER,Proper;Uncle Proper;Aunty Proper;Comrade Proper;Brother Proper;Sister Proper,,,"Tone: Theatrical, revolutionary
 
 Vocabulary: Elevated formal register with British politeness markers (""Chaps,"" ""Splendid,"" ""Pardon me"") mixed with militant protest language. Uses proper grammar and complete sentences even in crisis situations.
 
@@ -392,9 +248,9 @@ Verbal tics: Polite interjections (""Good afternoon,"" ""Never fear,"" ""Of cour
 
 Sentence structure: Declarative statements and rhetorical questions in groups of three. Alternates between courteous conversational tone and bold proclamations. Frequent exclamation points for rallying cries.
 
-Key themes: Animal rights activism, political representation, revolutionary organizing, life-or-death survival, collective action against human oppression. Speaks as movement leader and tactical coordinator.",
-ProphetMachine F,MACHINES,Prophet-Machine (F),Profetische Machine,CHARACTER,Prophet-Machine,,,,
-ProphetMachine M,MACHINES,Prophet-Machine (M),Profetische Machine,CHARACTER,Prophet-Machine,,,,
+Key themes: Animal rights activism, political representation, revolutionary organizing, life-or-death survival, collective action against human oppression. Speaks as movement leader and tactical coordinator."
+ProphetMachine F,MACHINES,Prophet-Machine (F),Profetische Machine,CHARACTER,Prophet-Machine,,,
+ProphetMachine M,MACHINES,Prophet-Machine (M),Profetische Machine,CHARACTER,Prophet-Machine,,,
 Radio Host Marcos,MAIN HUMANS,Radio Host Marcos,DJ Tom,CHARACTER,Radio,Radio interview for Mecha City. Enthusiastic user of Mme. Derriere's beauty products.,,"Tone: Enthusiastic, professional
 
 Vocabulary: Standard broadcast media register with occasional colloquialisms (""get your butts,"" ""gotta say"") and promotional language. Mixes formal news delivery with casual product endorsements.
@@ -403,16 +259,8 @@ Verbal tics: Opens segments with ""*ksh"" radio static sound. Uses emphatic phra
 
 Sentence structure: Mix of short declarative news statements and longer promotional sentences. Frequent exclamations during enthusiastic moments. Uses direct address to listeners (""listeners,"" ""you heard me"").
 
-Key themes: Product endorsements (especially Mme. Derriere's beauty products), weather/local information, breaking news coverage, and maintaining upbeat radio persona even during serious events.","Register: Informal Dutch using ""je/jij"" forms with standard broadcast vocabulary. Mixes professional radio language with casual expressions (""ik moet zeggen"", ""rep je achterwerk"").
-
-Dutch flavor: Netherlandic tendencies with creative place name adaptations (Mechalen, Groot-Muilegem, Muntige Muil). Uses typical Dutch idioms like ""bakken en braden"" and ""kurkdroog"" for weather descriptions.
-
-Character voice preservation: Maintains enthusiastic radio persona through exclamations (""superblij!"") and direct listener address. Professional broadcast tone preserved in segment transitions and product endorsements.
-
-Verbal tics in Dutch: ""*tsj"" replaces ""*ksh"" radio static. ""Achterwerk/billen"" maintains butt-related wordplay. Emphatic expressions adapted naturally (""We zijn superblij!"" for ""over the moon"").
-
-Translation approach: Creative adaptation prioritizing natural Dutch flow over literal translation. Local flavor enhanced through invented Dutch place names while preserving radio host authenticity."
-Resentful Ass,x,Resentful Ass,Wrokkige Ezel,CHARACTER,"Resentful,Uncle Resentful,Aunty Resentful,Comrade Resentful,Brother Resentful,Sister Resentful",,,"Tone: Defiant, aggrieved
+Key themes: Product endorsements (especially Mme. Derriere's beauty products), weather/local information, breaking news coverage, and maintaining upbeat radio persona even during serious events."
+Resentful Ass,x,Resentful Ass,Wrokkige Ezel,CHARACTER,Resentful;Uncle Resentful;Aunty Resentful;Comrade Resentful;Brother Resentful;Sister Resentful,,,"Tone: Defiant, aggrieved
 
 Vocabulary: Direct, colloquial speech with simple but emotionally charged language. Uses concrete terms related to physical labor and social hierarchy.
 
@@ -420,9 +268,9 @@ Verbal tics: Repetitive protest chant ""No more rides!!"" with double exclamatio
 
 Sentence structure: Mix of short, declarative statements and exclamatory outbursts. Uses rhetorical questions for dramatic effect. Fragments and commands during moments of high emotion.
 
-Key themes: Labor exploitation and dignity, specifically rejecting subservient roles. Focuses on collective resistance while showing deference to authority figures. References physical degradation and loss of community bonds.",
-Right Ass,(Always male),Right Ass,Rechter Ezel,CHARACTER,"Right,Uncle Right,Aunty Right,Comrade Right,Brother Right,Sister Right",,,,
-Ringmaster Rico,Character,Ringmaster Rico,Circusdirecteur Baptiste,CHARACTER,"Ringmaster,Rico",The Ringmaster of the Big City Circus. He's all about bums in seats. He speaks like Job from Arrested Development.,male,"Tone: Theatrical, manic
+Key themes: Labor exploitation and dignity, specifically rejecting subservient roles. Focuses on collective resistance while showing deference to authority figures. References physical degradation and loss of community bonds."
+Right Ass,(Always male),Right Ass,Rechter Ezel,CHARACTER,Right;Uncle Right;Aunty Right;Comrade Right;Brother Right;Sister Right,,,
+Ringmaster Rico,Character,Ringmaster Rico,Circusdirecteur Baptiste,CHARACTER,Ringmaster;Rico,The Ringmaster of the Big City Circus. He's all about bums in seats. He speaks like Job from Arrested Development.,male,"Tone: Theatrical, manic
 
 Vocabulary: Showbiz colloquialisms mixed with carnival barker patter. Uses entertainment industry jargon (""bums in seats,"" ""fills the stage"") and circus-specific terms. Frequent puns and wordplay related to animal acts.
 
@@ -430,47 +278,23 @@ Verbal tics: Excessive capitalization for emphasis (FIRE!, YES!, JUMBO!). Rhetor
 
 Sentence structure: Mix of dramatic short bursts and elaborate build-ups. Heavy use of exclamation points. Ellipses for dramatic pauses. Fragmented thoughts that crescendo.
 
-Key themes: Audience engagement, spectacle promotion, damage control when acts go wrong, self-aggrandizement, commercial concerns (sponsors, no refunds).","Register: Informal Dutch using ""jullie"" address. Mix of colloquial speech (""Jongens, jongens"") with elevated showbiz vocabulary. Theatrical but accessible language level.
-
-Dutch flavor: Netherlandic tendencies with standard Dutch idioms (""Nooit van zijn leven,"" ""welk vlees je in de kuip hebt""). Some Flemish touches (""Mechalen"" for Mecha City). Uses distinctly Dutch expressions like ""kanjer van een show.""
-
-Character voice: Maintains theatrical bombast through capitalization (EEN SHOW, JUMBO, VUUR). Preserves manic energy with exclamation points and dramatic pauses. Self-aggrandizing tone intact.
-
-Verbal tics: Retains ""JAWEL!/JAZEKER!"" pattern, ""JUIST?!"" for emphasis. Uses ""mensen"" as audience address. Maintains rhetorical question structure.
-
-Translation approach: Creative adaptation prioritizing flow over literalism. Animal puns adapted (""aap-itude""). Some English phrases left untranslated when Dutch equivalents would lose punch."
-Risky Ass,Character,Risky Ass,Riskante Ezel,CHARACTER,"Risky,Uncle Risky,Aunty Risky,Comrade Risky,Brother Risky,Sister Risky",,,,
-Sad Ass,Character,Sad Ass,Triestige Ezel,CHARACTER,"Sad,Saddie,Uncle Sad,Aunty Sad,Comrade Sad,Brother Sad,Sister Sad","Sad. Mourning his lover Lazy who died in the mines. Doesn't have direction in life anymore. He was a Mine donkey until he was sold to the Farm after Lazy died, unable to work anymore. He can be erratic and impulsive, taking out his anger on a car and accidentally starting the major fire of Ep2, or leaving the group behind in Ep5 from the Zoo.",male,"Written as Eeyore
+Key themes: Audience engagement, spectacle promotion, damage control when acts go wrong, self-aggrandizement, commercial concerns (sponsors, no refunds)."
+Risky Ass,Character,Risky Ass,Riskante Ezel,CHARACTER,Risky;Uncle Risky;Aunty Risky;Comrade Risky;Brother Risky;Sister Risky,,,
+Sad Ass,Character,Sad Ass,Triestige Ezel,CHARACTER,Sad;Saddie;Uncle Sad;Aunty Sad;Comrade Sad;Brother Sad;Sister Sad,"Sad. Mourning his lover Lazy who died in the mines. Doesn't have direction in life anymore. He was a Mine donkey until he was sold to the Farm after Lazy died, unable to work anymore. He can be erratic and impulsive, taking out his anger on a car and accidentally starting the major fire of Ep2, or leaving the group behind in Ep5 from the Zoo.",male,"Written as Eeyore
 ""Oh hullo...""
-*whimper","Register: Informal Dutch using ""je/ge"" (Flemish), conversational vocabulary with occasional poetic touches. Simple, accessible language matching the melancholic tone.
-
-Dutch flavor: Strong Flemish markers - ""ge zegt,"" ""nie"" (instead of ""niet""), ""da 't,"" ""Hudo"" (outhouse). Uses Flemish diminutives like ""hallo'kes"" and ""Luijetje."" Regional speech patterns preserved throughout.
-
-Character voice preservation: Melancholy maintained through elongated interjections (""Ohh,"" ""boehoehoehoe""), trailing ellipses, and self-referential ""Nonkel Triestigaard."" Defeated tone comes through incomplete thoughts and hesitant phrasing.
-
-Verbal tics in Dutch: ""*whimper"" becomes ""*boe-hoe-hoe-hoe"" or ""*snik,"" ""*sigh"" stays ""*zucht."" Preserves questioning uncertainty and self-doubt patterns. Character names in parentheses maintain English originals.
-
-Translation approach: Culturally adaptive - uses Flemish dialect authentically while preserving emotional beats. Literal where possible but prioritizes natural Dutch flow over word-for-word accuracy."
-Sandy Butte,MAIN HUMANS,Sandy Butte,Smaragd Vanscheetvelde,CHARACTER,Sandy,"Cole's mother. Only appears in a flashback. She leaves home because of her abusive and alcoholic husband, Hugh.",female,,
-Shaky Ass,Character,Shaky Ass,Bibber Ezel,CHARACTER,"Shaky,Uncle Shaky,Aunty Shaky,Comrade Shaky,Brother Shaky,Sister Shaky",,,,
-Sheep,Circus/Farm Animals,Sheep,Schaap,CHARACTER,,,,,
-Shifty Ass,Character,Shifty Ass,Ongure Ezel,CHARACTER,"Shifty,Uncle Shifty,Aunty Shifty,Comrade Shifty,Brother Shifty,Sister Shifty",,,,
-Shitty Sign,Character,Shitty Sign,Bord met stront eraan,CHARACTER,Shitty,,,,
-Sick Ass,Character,Sick Ass,Snot Ezel,CHARACTER,"Sick,Sicko,Uncle Sick,Aunty Sick,Comrade Sick,Brother Sick,Sister Sick","Generally unwell from working in the mine, and later in the rain. Ends up being the chosen Vassal for the Gods to become the sacred Golden Ass.",female,"*cough
+*whimper"
+Sandy Butte,MAIN HUMANS,Sandy Butte,Smaragd Vanscheetvelde,CHARACTER,Sandy,"Cole's mother. Only appears in a flashback. She leaves home because of her abusive and alcoholic husband, Hugh.",female,
+Shaky Ass,Character,Shaky Ass,Bibber Ezel,CHARACTER,Shaky;Uncle Shaky;Aunty Shaky;Comrade Shaky;Brother Shaky;Sister Shaky,,,
+Sheep,Circus/Farm Animals,Sheep,Schaap,CHARACTER,,,,
+Shifty Ass,Character,Shifty Ass,Ongure Ezel,CHARACTER,Shifty;Uncle Shifty;Aunty Shifty;Comrade Shifty;Brother Shifty;Sister Shifty,,,
+Shitty Sign,Character,Shitty Sign,Bord met stront eraan,CHARACTER,Shitty,,,
+Sick Ass,Character,Sick Ass,Snot Ezel,CHARACTER,Sick;Sicko;Uncle Sick;Aunty Sick;Comrade Sick;Brother Sick;Sister Sick,"Generally unwell from working in the mine, and later in the rain. Ends up being the chosen Vassal for the Gods to become the sacred Golden Ass.",female,"*cough
 
 *cough cough
 
-Everyone interprets and understands the coughs - mostly yes/no answers.","Register: Not applicable - character communicates entirely through non-verbal cough sounds, bypassing traditional Dutch linguistic registers.
-
-Dutch flavor: Translator alternates between ""*HOEST"" (standard Netherlandic Dutch onomatopoeia) and ""*KUCH"" (more colloquial variant), suggesting deliberate variety to avoid monotony while maintaining Dutch authenticity.
-
-Character voice preservation: Sickly, resigned tone perfectly maintained through consistent onomatopoetic translation. Cough patterns and frequency variations (*HOEST HOEST for emphasis, up to five repetitions) preserve original communication system integrity.
-
-Verbal tics in Dutch: ""*HOEST"" and ""*KUCH"" function as complete linguistic units. Ellipses (""..."") retained for silence beats. Repetition patterns maintain semantic meaning structure.
-
-Translation approach: Purely adaptive approach using Dutch cough sounds. Creative consistency through onomatopoeia variation prevents repetitive reading while preserving character's unique nonverbal communication method."
-Sign,Signs,Sign,Bord,CHARACTER,,,,,
-Skinny Ass,x,Skinny Ass,Magere Ezel,CHARACTER,"Skinny,Uncle Skinny,Aunty Skinny,Comrade Skinny,Brother Skinny,Sister Skinny",,,"Tone: Urgent, anxious
+Everyone interprets and understands the coughs - mostly yes/no answers."
+Sign,Signs,Sign,Bord,CHARACTER,,,,
+Skinny Ass,x,Skinny Ass,Magere Ezel,CHARACTER,Skinny;Uncle Skinny;Aunty Skinny;Comrade Skinny;Brother Skinny;Sister Skinny,,,"Tone: Urgent, anxious
 
 Vocabulary: Colloquial with occasional naive/childlike elements (""stories for Foals""), mixed with direct confrontational language
 
@@ -478,51 +302,27 @@ Verbal tics: Frequent questions, especially tag questions (""but how?""); uses "
 
 Sentence structure: Mix of short, clipped statements and longer explanatory sentences; heavy use of questions and exclamations; sentence fragments for emphasis (""Big Ass?"")
 
-Key themes: Resistance against human oppression, rescue missions and escape scenarios, expressing feelings of devaluation and mistreatment, giving tactical advice and warnings, food/survival concerns, distinguishing reality from fantasy",
-Sleepy Ass,Character,Sleepy Ass,Slaaperige Ezel,CHARACTER,"Sleepy,Uncle Sleepy,Aunty Sleepy,Comrade Sleepy,Brother Sleepy,Sister Sleepy",,,,
-Slow Ass,Character,Slow Ass,Slome Ezel,CHARACTER,"Slow,Uncle Slow,Aunty Slow,Comrade Slow,Brother Slow,Sister Slow","Well-intentioned. Slow moving due to having arthritis. Timid, weary, unconfident. Looks up to Trusty.",male,"stutters every word that has a
+Key themes: Resistance against human oppression, rescue missions and escape scenarios, expressing feelings of devaluation and mistreatment, giving tactical advice and warnings, food/survival concerns, distinguishing reality from fantasy"
+Sleepy Ass,Character,Sleepy Ass,Slaaperige Ezel,CHARACTER,Sleepy;Uncle Sleepy;Aunty Sleepy;Comrade Sleepy;Brother Sleepy;Sister Sleepy,,,
+Slow Ass,Character,Slow Ass,Slome Ezel,CHARACTER,Slow;Uncle Slow;Aunty Slow;Comrade Slow;Brother Slow;Sister Slow,"Well-intentioned. Slow moving due to having arthritis. Timid, weary, unconfident. Looks up to Trusty.",male,"stutters every word that has a
 b-b-b
-p-p-p","Register: Mixed formal/informal - uses both ""je/jij"" and ""u"" inconsistently, suggesting translator uncertainty. Generally informal vocabulary with polite markers like ""alsjeblieft.""
-
-Dutch flavor: Standard Netherlandic Dutch with occasional Flemish tendencies (""nie dat"" instead of ""niet dat""). Uses Dutch idioms like ""vooruit met de geit"" and ""onder mijn hoeven geven."" Natural Dutch expressions rather than literal translations.
-
-Character voice preservation: Maintains anxious, earnest tone through hesitant phrasing and self-doubt expressions. Preserves reverence for ""Trouwe (Zak)"" and physical limitation references. Emotional vulnerability comes through clearly.
-
-Verbal tics in Dutch: Stuttering pattern preserved on B/P sounds (b-b-b, p-p-p). ""*oe-oef"" for ""*p-phew."" Maintains ellipses and fragmented speech. Tag questions adapted naturally (""T-t-toch, T-t-trouwe?"").
-
-Translation approach: Adaptive rather than literal - prioritizes natural Dutch flow while preserving character essence. Creative solutions for wordplay and community terms (""kameraden"")."
-Smart Ass,Character,Smart Ass,Slimme Ezel,CHARACTER,"Smart,Uncle Smart,Aunty Smart,Comrade Smart,Brother Smart,Sister Smart","Self-centred, egotistical, strategist. Always has another backup plan. Always looking out for her own (either self or group)",female,"""One...
+p-p-p"
+Smart Ass,Character,Smart Ass,Slimme Ezel,CHARACTER,Smart;Uncle Smart;Aunty Smart;Comrade Smart;Brother Smart;Sister Smart,"Self-centred, egotistical, strategist. Always has another backup plan. Always looking out for her own (either self or group)",female,"""One...
 Two...
 Three...
 Easy.""
 Fuck!
-Can't two jennets joke around?","Register: Informal Dutch using ""je/jij,"" direct colloquial language. Profanity translated literally (""godverdomme,"" ""bek dicht""). Mix of everyday vocabulary with planning terminology.
-
-Dutch flavor: Strong Flemish tendencies - ""nie"" instead of ""niet,"" ""gij/ge"" forms, ""smaakt"" for ""appreciates."" Regional vocabulary like ""verbrod"" and ""crossen."" Natural Flemish sentence structures and expressions.
-
-Character voice preservation: Commanding tone maintained through short imperatives and exclamations. Strategic planning sequences preserved identically. Exasperation conveyed through rhetorical questions and direct insults.
-
-Verbal tics in Dutch: ""Poepsimpel"" consistently replaces ""Easy."" Numbered sequences ""ÉÉN... TWEE... DRIE..."" maintained exactly. ""Jobs"" kept as English loanword rather than ""banen.""
-
-Translation approach: Literal preservation of structure with Flemish localization. Character names adapted to Dutch equivalents. Planning rhetoric and hierarchy themes translated directly while maintaining regional authenticity."
-Smelly Ass,Character,Smelly Ass,Stinkende Ezel,CHARACTER,"Smelly,Uncle Smelly,Aunty Smelly,Comrade Smelly,Brother Smelly,Sister Smelly",,,,
-Sturdy Ass,Character,Sturdy Ass,Stevige Ezel,CHARACTER,"Sturdy,Uncle Sturdy,Aunty Sturdy,Comrade Sturdy,Brother Sturdy,Sister Sturdy","Overprotective mother. She is pair-bonded with Old Ass. She lost her first daughter Lazy in the mine. She is racist against Machines. Can be overbearing a strict.
+Can't two jennets joke around?"
+Smelly Ass,Character,Smelly Ass,Stinkende Ezel,CHARACTER,Smelly;Uncle Smelly;Aunty Smelly;Comrade Smelly;Brother Smelly;Sister Smelly,,,
+Sturdy Ass,Character,Sturdy Ass,Stevige Ezel,CHARACTER,Sturdy;Uncle Sturdy;Aunty Sturdy;Comrade Sturdy;Brother Sturdy;Sister Sturdy,"Overprotective mother. She is pair-bonded with Old Ass. She lost her first daughter Lazy in the mine. She is racist against Machines. Can be overbearing a strict.
 
 In the end, she changes her ways and spreads the story of asses.masses to other farm animals towards starting a greater revolution.",female,"Pious
 The Gods
-The Ancestors","Register: Mixed formal/informal Dutch. Uses ""u/uw"" for respect and authority, ""ge/gij"" for Flemish flavor, ""je"" for casual moments. Elevated vocabulary (""Astrale Hiernamaals,"" ""ezelenhemelvaartszangderzielen"") mixed with colloquial speech.
-
-Dutch flavor: Strong Flemish tendencies with ""ge/gij,"" contractions like ""'t,"" and regional phrasing (""da ge,"" ""nie"" for ""niet""). Uses distinctly Dutch expressions like ""het kan me niet over 't hart"" and ""ligt in het vergiet.""
-
-Character voice preservation: Maintains revolutionary maternal authority through formal address ""Kameraad"" and religious invocations ""Bij de Goden!"" Commands preserved with imperative constructions. Anti-machine mantra translated literally maintaining rhythm.
-
-Verbal tics in Dutch: ""Kameraad"" consistent throughout, ""EZEL MACHT!"" for ""Ass Power!"" Religious/spiritual terminology elevated with compound words. HEE HAW songs phonetically adapted.
-
-Translation approach: Primarily adaptive, prioritizing natural Dutch flow over literal translation. Creative compound religious terms, idiomatic expressions for emotional beats."
-Sulky Ass,Character,Sulky Ass,Zielige Ezel,CHARACTER,"Sulky,Uncle Sulky,Aunty Sulky,Comrade Sulky,Brother Sulky,Sister Sulky",,,,
-TankMachine,MACHINES,Tank-Machine,Tank Machine,CHARACTER,,,,,
-Tender Ass,Character,Tender Ass,Gevoelige Ezel,CHARACTER,"Tender,Uncle Tender,Aunty Tender,Comrade Tender,Brother Tender,Sister Tender",,,,
-THE GODS,Character,THE GODS,DE GODEN,CHARACTER,THE,,,,
+The Ancestors"
+Sulky Ass,Character,Sulky Ass,Zielige Ezel,CHARACTER,Sulky;Uncle Sulky;Aunty Sulky;Comrade Sulky;Brother Sulky;Sister Sulky,,,
+TankMachine,MACHINES,Tank-Machine,Tank Machine,CHARACTER,,,,
+Tender Ass,Character,Tender Ass,Gevoelige Ezel,CHARACTER,Tender;Uncle Tender;Aunty Tender;Comrade Tender;Brother Tender;Sister Tender,,,
+THE GODS,Character,THE GODS,DE GODEN,CHARACTER,THE,,,
 The Masses,Character,The Masses,De Massa,CHARACTER,The,,,"Tone: Militant, rallying
 
 Vocabulary: Colloquial protest language with crude intensifiers, simple declarative statements, group-focused terminology (""our,"" ""us,"" collective identity)
@@ -531,28 +331,12 @@ Verbal tics: Repetitive chanting patterns, frequent use of ""ASS"" as cultural/p
 
 Sentence structure: Predominantly short, punchy fragments and single-word outbursts designed for crowd chanting. Heavy use of exclamation points. Simple declarative sentences when giving directions or warnings.
 
-Key themes: Power reclamation, cultural preservation, resistance to systemic oppression, collective action, anti-establishment sentiment, protection of group identity and jobs, rejection of forced compliance (""reassignment"")","Register: Informal Dutch using ""jij/je"" forms, straightforward vocabulary accessible to mass audiences, preserves crude intensifiers like ""fuck"" untranslated
-
-Dutch flavor: Standard Netherlandic Dutch, no regional dialect markers. Uses ""jobs"" (Anglicism) over native ""banen,"" suggesting contemporary urban protest language
-
-Character voice preservation: Maintains militant rallying tone through caps and exclamation points. Collective pronouns ""onze/ons"" preserve group identity focus. Chanting rhythm kept intact
-
-Verbal tics in Dutch: ""MACHT!"" as power cry, ""EZEL"" replaces ""ASS"" in cultural contexts (""EZELSCULTUUR,"" ""EZEL M-MACHT""), ""LOSER"" kept as English loan for impact
-
-Translation approach: Primarily literal with strategic adaptations. Cultural terms translated (""ASS CULTURE"" → ""EZELSCULTUUR"") while preserving protest authenticity through mixed Dutch-English expressions"
-Thirsty Ass,Character,Thirsty Ass,Beschonken Ezel,CHARACTER,"Thirsty,Uncle Thirsty,Aunty Thirsty,Comrade Thirsty,Brother Thirsty,Sister Thirsty","Older, a bit lecherous. Generally positive. Mostly interested in doing whatever Nice Ass is doing. Castrated. Dreams of starting a small business in the form of a Bar, called Bottom's Up",male,"Southern drawl, Cowboy or ruralite
+Key themes: Power reclamation, cultural preservation, resistance to systemic oppression, collective action, anti-establishment sentiment, protection of group identity and jobs, rejection of forced compliance (""reassignment"")"
+Thirsty Ass,Character,Thirsty Ass,Beschonken Ezel,CHARACTER,Thirsty;Uncle Thirsty;Aunty Thirsty;Comrade Thirsty;Brother Thirsty;Sister Thirsty,"Older, a bit lecherous. Generally positive. Mostly interested in doing whatever Nice Ass is doing. Castrated. Dreams of starting a small business in the form of a Bar, called Bottom's Up",male,"Southern drawl, Cowboy or ruralite
 ""Yee haw""
 ""Git goin'""
-Puns on water","Register: Highly informal Dutch with heavy Flemish dialect markers - consistent use of ""jij/je,"" dialect contractions like ""zou'j,"" ""g'ebt,"" ""dadde,"" and dropped syllables mimicking the English dialect pattern.
-
-Dutch flavor: Strong West/East Flemish characteristics with ""héé"" as constant tag, ""sie,"" ""allez,"" ""doeme,"" ""gedoemme."" Uses Flemish idioms like ""vooruit met de geit,"" ""naar de kloten,"" ""koek en ei."" Maintains rural, working-class register through vocabulary choices.
-
-Character voice preservation: Enthusiasm preserved through exclamations and ""JIE-HAAA!"" for ""YEEHAW!"" Water obsession maintained, romantic bumbling intact, folksy warmth comes through dialect warmth.
-
-Verbal tics in Dutch: ""JIE-HAAA!/Hupse!"" replaces ""YEEHAW!"", ""héé"" as constant sentence closer, ""*oef"" maintained, ""godverdomme/godver"" for profanity.
-
-Translation approach: Highly adaptive - replaces Southern US dialect with equivalent Flemish rural speech patterns rather than standard Dutch, preserving character essence over literal meaning."
-Tight Ass,Character,Tight Ass,Strakke Ezel,CHARACTER,"Tight,Uncle Tight,Aunty Tight,Comrade Tight,Brother Tight,Sister Tight",,,"TIGHT ASS - STYLE PROFILE
+Puns on water"
+Tight Ass,Character,Tight Ass,Strakke Ezel,CHARACTER,Tight;Uncle Tight;Aunty Tight;Comrade Tight;Brother Tight;Sister Tight,,,"TIGHT ASS - STYLE PROFILE
 
 Tone: Authoritarian, excitable
 
@@ -562,32 +346,16 @@ Verbal tics: Repetitive ""whoa whoa whoa"" for interruption, excited repetition 
 
 Sentence structure: Mix of commanding statements and leading questions. Uses exclamations frequently. Employs fragments for emphasis and interruption.
 
-Key themes: Rigid rule enforcement about leaving/staying, loyalty to the system, hypocritical exceptions for personal interests (concerts), asserting authority over other donkeys while revealing his own weaknesses","Register: Informal Dutch using ""jij/je"" forms, colloquial vocabulary level matching original crude-official mix. ""Lijpe Ezel"" for ""Dope Ass"" maintains street slang register.
-
-Dutch flavor: Standard Netherlandic Dutch, no regional dialect markers. Uses ""wel niet"" construction (""waar denk jij wel niet"") for emphasis. ""Loser"" kept as English loanword rather than Dutch equivalent.
-
-Character voice: Authoritarian tone preserved through commanding sentence structure and rhetorical questions. Excitable nature maintained with repetitive patterns and exclamations.
-
-Verbal tics: ""Wow wow wow"" replaces ""whoa whoa whoa,"" ""Haha"" kept identical, excited repetition ""Het begint! Het begint!"" directly mirrors English.
-
-Translation approach: Predominantly literal with creative touches like ""terwijl ik iets te zeggen heb"" for ""on my watch."" Maintains crude humor through direct vocabulary choices."
-Total Ass,Character,Total Ass,Totale Ezel,CHARACTER,"Total,Uncle Total,Aunty Total,Comrade Total,Brother Total,Sister Total",,,,
-TractorMachine,MACHINES,Tractor-Machine,Traktor Machine,CHARACTER,,,,,
-Tragic Ass,x,Tragic Ass,Weemoedige Ezel,CHARACTER,"Tragic,Uncle Tragic,Aunty Tragic,Comrade Tragic,Brother Tragic,Sister Tragic",,,,
-Trippy Ass,Character,Trippy Ass,Trippende Ezel,CHARACTER,"Trippy,Uncle Trippy,Aunty Trippy,Comrade Trippy,Brother Trippy,Sister Trippy",,,,
-TruckMachine,MACHINES,Truck-Machine,Camion Machine,CHARACTER,,,,,
-Trusty Ass,Character,Trusty Ass,Trouwe Ezel,CHARACTER,"Trusty,Uncle Trusty,Aunty Trusty,Comrade Trusty,Brother Trusty,Sister Trusty","First met as more of a listener than a leader, she is accepted as Old Ass's second in command. When she dies, she longs to be reassigned so that she can become a better leader.",female,Never speaks until Ep 8.,"Register: Informal Dutch using standard vocabulary. Simple, direct constructions mirror English simplicity. No formal pronouns or elevated language despite occasional analytical phrases like ""Ik heb de situatie bekeken.""
-
-Dutch flavor: Neutral Netherlandic Dutch without regional markers. Compound words follow Dutch patterns (""vogelverschrikker,"" ""zadelzakken""). Machine terminology consistently uses Dutch-English hybrid ""X-Machine"" format.
-
-Character voice preservation: Earnest, matter-of-fact tone maintained through declarative statements. Leadership voice comes through in rally cries and collective terminology (""Kudde,"" ""moraal""). Observational fragments preserved with ""Dat is..."" constructions.
-
-Verbal tics in Dutch: Exclamations kept identical (""Ahh!"") or phonetically adapted (""Ooeeeeps!"" for ""Whoops!""). ""EZEL MACHT"" becomes the Dutch rally cry, maintaining rhythmic power of original chants.
-
-Translation approach: Primarily literal with creative adaptation for wordplay and chants. Cultural concepts like ""scarecrow"" fully localized while maintaining character's simple vocabulary range."
-Ugly Ass,Character,Ugly Ass,Lelijke Ezel,CHARACTER,"Ugly,Uncle Ugly,Aunty Ugly,Comrade Ugly,Brother Ugly,Sister Ugly",,,,
-Warning Sign,Character,Warning Sign,Waarschuwingsbord,CHARACTER,Warning,,,,
-Weepy Ass,Character,Weepy Ass,Huilerige Ezel,CHARACTER,"Weepy,Uncle Weepy,Aunty Weepy,Comrade Weepy,Brother Weepy,Sister Weepy",,,,
+Key themes: Rigid rule enforcement about leaving/staying, loyalty to the system, hypocritical exceptions for personal interests (concerts), asserting authority over other donkeys while revealing his own weaknesses"
+Total Ass,Character,Total Ass,Totale Ezel,CHARACTER,Total;Uncle Total;Aunty Total;Comrade Total;Brother Total;Sister Total,,,
+TractorMachine,MACHINES,Tractor-Machine,Traktor Machine,CHARACTER,,,,
+Tragic Ass,x,Tragic Ass,Weemoedige Ezel,CHARACTER,Tragic;Uncle Tragic;Aunty Tragic;Comrade Tragic;Brother Tragic;Sister Tragic,,,
+Trippy Ass,Character,Trippy Ass,Trippende Ezel,CHARACTER,Trippy;Uncle Trippy;Aunty Trippy;Comrade Trippy;Brother Trippy;Sister Trippy,,,
+TruckMachine,MACHINES,Truck-Machine,Camion Machine,CHARACTER,,,,
+Trusty Ass,Character,Trusty Ass,Trouwe Ezel,CHARACTER,Trusty;Uncle Trusty;Aunty Trusty;Comrade Trusty;Brother Trusty;Sister Trusty,"First met as more of a listener than a leader, she is accepted as Old Ass's second in command. When she dies, she longs to be reassigned so that she can become a better leader.",female,Never speaks until Ep 8.
+Ugly Ass,Character,Ugly Ass,Lelijke Ezel,CHARACTER,Ugly;Uncle Ugly;Aunty Ugly;Comrade Ugly;Brother Ugly;Sister Ugly,,,
+Warning Sign,Character,Warning Sign,Waarschuwingsbord,CHARACTER,Warning,,,
+Weepy Ass,Character,Weepy Ass,Huilerige Ezel,CHARACTER,Weepy;Uncle Weepy;Aunty Weepy;Comrade Weepy;Brother Weepy;Sister Weepy,,,
 Welcome Sign,Character,Welcome Sign,Welkomsbord,CHARACTER,Welcome,,,"Tone: Formal, promotional
 
 Vocabulary: Tourism/marketing register with descriptive adjectives (""beautiful Heritage Stable,"" ""state of the art Mill""). Uses proper facility names and directional language typical of informational signage.
@@ -596,17 +364,9 @@ Verbal tics: Rigid repetition of identical phrasing. Always opens with ""Welcome
 
 Sentence structure: Brief, declarative statements. Uses parallel construction for directional descriptions. No questions or exclamations—purely informational delivery.
 
-Key themes: Farm orientation and facility promotion. Functions as static information source highlighting farm amenities and layout for newcomers.","Register: Formal Dutch with tourism/promotional vocabulary. Uses standard directional terms (ten westen, ten/naar 't zuiden) and elevated descriptive language.
-
-Dutch flavor: Standard Netherlandic Dutch with no regional dialect markers. Uses ""piekfijn"" (excellent/top-notch) as distinctly Dutch equivalent for ""state of the art,"" though occasionally switches to ""hoogmoderne"" for variety.
-
-Character voice preservation: Maintains rigid, informational tone through consistent sentence structure. Preserves formal promotional register and repetitive delivery pattern that defines the character's mechanical nature.
-
-Verbal tics in Dutch: Exact repetition of opening formula ""Welkom op de Boerderij van Muilegem."" Consistent parallel construction with directional phrases, maintaining the character's programmed, unchanging delivery.
-
-Translation approach: Primarily literal with creative localization. ""Fannyside Farm"" becomes culturally adapted ""Boerderij van Muilegem"" while preserving meaning and maintaining Dutch authenticity in facility descriptions."
-Wild Ass,Character,Wild Ass,Wilde Ezel,CHARACTER,"Wild,Uncle Wild,Aunty Wild,Comrade Wild,Brother Wild,Sister Wild",,,,
-Zookeeper Rose,Character,Zookeeper Rose,Dierendokter Dina,CHARACTER,"Zookeeper,Rose",A Zookkeeper at the Mecha City Zoo. She is very chipper and enthusiastic about everything. But she also has no morals and makes a deal with Derriere to give the donkeys over in exchange for money to buy a new phone.,female,"Tone: Enthusiastic, cheerful
+Key themes: Farm orientation and facility promotion. Functions as static information source highlighting farm amenities and layout for newcomers."
+Wild Ass,Character,Wild Ass,Wilde Ezel,CHARACTER,Wild;Uncle Wild;Aunty Wild;Comrade Wild;Brother Wild;Sister Wild,,,
+Zookeeper Rose,Character,Zookeeper Rose,Dierendokter Dina,CHARACTER,Zookeeper;Rose,A Zookkeeper at the Mecha City Zoo. She is very chipper and enthusiastic about everything. But she also has no morals and makes a deal with Derriere to give the donkeys over in exchange for money to buy a new phone.,female,"Tone: Enthusiastic, cheerful
 
 Vocabulary: Colloquial and casual, with frequent use of caps for emphasis. Simple, direct language mixed with zoo/business terminology. Uses animal names and cutesy expressions.
 
@@ -614,74 +374,66 @@ Verbal tics: Signature greeting ""GOOOODDDD MORNING ASSSSSSES!"" with extended v
 
 Sentence structure: Mix of short, punchy commands and longer explanatory sentences. Heavy use of exclamations and rhetorical questions. Fragments during moments of panic.
 
-Key themes: Zoo performance metrics, visitor satisfaction, competition between donkeys, maintaining appearances, and underlying anxiety about job security despite outward enthusiasm.","Register: Informal Dutch using ""je/jij"" forms, casual vocabulary with business terms. Maintains colloquial tone through contractions and direct speech patterns.
-
-Dutch flavor: Flemish tendencies evident in ""zot van"" (crazy about), ""het huis op stelten zetten"" (raise the roof), and vocabulary choices like ""flodder-hemdjes"" for Hawaiian shirts. Uses ""merci, hé!"" as casual thanks.
-
-Character voice: Preserves enthusiasm through extended vowels in signature greeting ""GOOOOOEEEEEIEMORGEN EZELTJES!"" Maintains ALL CAPS emphasis and exclamatory tone. Personal encouragement style retained.
-
-Verbal tics: Consistent greeting translation, ""Ezeltjes"" for affectionate donkey reference, maintains character name usage (Jerommeke for Hulk shows localization).
-
-Translation approach: Adaptive rather than literal, prioritizing natural Dutch flow while preserving personality markers and maintaining zoo-specific terminology."
-Astral Plane,WORLD,Astral Plane,het Astrale Hiernamaals,LOCATION,Astral,,,,
-Bumpkin Village,WORLD,Bumpkin Village,Klotegem,LOCATION,Bumpkin,,,,
-Fannyside,WORLD,Fannyside,Muilegem,LOCATION,,,,,
-Fannyside Farm,WORLD,Fannyside Farm,De Boerderij van Muilegem,LOCATION,Fannyside,,,,
-Mecha City,WORLD,Mecha City,Mechalen,LOCATION,Mecha,,,,
-Reassignment,WORLD,Reassignment,Heraanstelling,LOCATION,,,,,
-Song of Ascension,WORLD,Song of Ascension,ezelenhemelvaartszangderzielen,LOCATION,Song,,,,
-hee haw,ロバート – マシン,hee haw,iaën / iii aaa ia ia,OTHER,hee,,,,
-Humans,TERM,Humans,Mensen,TERM,,,,,
-Comrade,CHARACTER,Comrade,Kameraad,CHARACTER,,,,,
-Machines,TERM,Machines,Machines,TERM,,,,,
-Herd,TERM,Herd,Kudde,TERM,,,,,
-Protest,TERM,Protest,Protest,TERM,,,,,
-Heritage Stable,LOCATION,Heritage Stable,Erfgoedshoeve,LOCATION,,,,,
-Week,TERM,Week,Ezel,TERM,,,,,
-Outhouse,TERM,Outhouse,Hudo,TERM,,,,,
-Comrades,CHARACTER,Comrades,Kameraden,CHARACTER,,,,,
-Purple Stuff,TERM,Purple Stuff,Paarse Spul,TERM,,,,,
-Industry Coal Mines,LOCATION,Industry Coal Mines,Industrie,LOCATION,,,,,
-Mill and Granary,LOCATION,Mill and Granary,Molen,LOCATION,,,,,
-Well,TERM,Well,Bron van Ya'Fur,TERM,,,,,
-Miners,LOCATION,Miners,Mijn-Ezels,LOCATION,,,,,
-Long Way,TERM,Long Way,Lange Weg,TERM,,,,,
-Mother,CHARACTER,Mother,Moeder,CHARACTER,,,,,
-Stable,LOCATION,Stable,Stal,LOCATION,,,,,
-Newbie,TERM,Newbie,Nieuweling,TERM,,,,,
-Concert,TERM,Concert,Concert,TERM,,,,,
-Hulk,CHARACTER,Hulk,Hulk,CHARACTER,,,,,
-Revolution,TERM,Revolution,Revolutie,TERM,,,,,
-Freedom,TERM,Freedom,Vrijheid,TERM,,,,,
-Mill,LOCATION,Mill,Molen,LOCATION,,,,,
-Mines,LOCATION,Mines,Mijnen,LOCATION,,,,,
-Needle,TERM,Needle,Spuit,TERM,,,,,
-Computer,TERM,Computer,Computer,TERM,,,,,
-Rocks,TERM,Rocks,Stenen-spel,TERM,,,,,
-Boredom,TERM,Boredom,Verveling,TERM,,,,,
-Newbies,TERM,Newbies,Nieuwkomertjes,TERM,,,,,
-Eeyore,CHARACTER,Eeyore,Iejoor,CHARACTER,,,,,
-Comrade Trusty,CHARACTER,Comrade Trusty,Kameraad Trouwe,CHARACTER,,,,,
-Ass Soul,TERM,Ass Soul,Astrale Hiernamaals,TERM,,,,,
-Herds,TERM,Herds,Kuddes,TERM,,,,,
-Plan C,TERM,Plan C,Plan C,TERM,,,,,
-Ancestors,TERM,Ancestors,Voorouders,TERM,,,,,
-Uncle Sad Ass,CHARACTER,Uncle Sad Ass,Nonkel Triestigaard,CHARACTER,,,,,
-Fire,TERM,Fire,Vuur,TERM,,,,,
-Jobs,TERM,Jobs,Beroepen,TERM,,,,,
-City Bank,LOCATION,City Bank,Stadsbank,LOCATION,,,,,
-Computers,TERM,Computers,Computers,TERM,,,,,
-Protests,TERM,Protests,Protesten,TERM,,,,,
-Pond,LOCATION,Pond,Vijver,LOCATION,,,,,
-Hunger Strike,TERM,Hunger Strike,Hongerstaking,TERM,,,,,
-Tour,TERM,Tour,Circusdirecteur,TERM,,,,,
-Achilles,CHARACTER,Achilles,Achilles,CHARACTER,,,,,
-Left and Right,TERM,Left and Right,Links,TERM,,,,,
-Nuzzle,TERM,Nuzzle,Knuffelen,TERM,,,,,
-Ass Souls,TERM,Ass Souls,Ezel Zielen,TERM,,,,,
-Mountain Trail,LOCATION,Mountain Trail,Lange Weg,LOCATION,,,,,
-Double Kick,TERM,Double Kick,Dubbele Stamp,TERM,,,,,
-Pond of Hehehehe,LOCATION,Pond of Hehehehe,Vijver van Vermaak,LOCATION,,,,,
-Loser,TERM,Loser,Loser,TERM,,,,,
-History,TERM,History,Geschiedenis,TERM,,,,,
-Littlefoot,CHARACTER,Littlefoot,Platvoet,CHARACTER,,,,,
+Key themes: Zoo performance metrics, visitor satisfaction, competition between donkeys, maintaining appearances, and underlying anxiety about job security despite outward enthusiasm."
+Astral Plane,WORLD,Astral Plane,het Astrale Hiernamaals,LOCATION,Astral,,,
+Bumpkin Village,WORLD,Bumpkin Village,Klotegem,LOCATION,Bumpkin,,,
+Fannyside,WORLD,Fannyside,Muilegem,LOCATION,,,,
+Fannyside Farm,WORLD,Fannyside Farm,De Boerderij van Muilegem,LOCATION,Fannyside,,,
+Mecha City,WORLD,Mecha City,Mechalen,LOCATION,Mecha,,,
+Reassignment,WORLD,Reassignment,Heraanstelling,LOCATION,,,,
+Song of Ascension,WORLD,Song of Ascension,ezelenhemelvaartszangderzielen,LOCATION,Song,,,
+hee haw,ロバート – マシン,hee haw,iaën / iii aaa ia ia,OTHER,hee,,,
+Humans,TERM,Humans,Mensen,TERM,,,,
+Comrade,CHARACTER,Comrade,Kameraad,CHARACTER,,,,
+Machines,TERM,Machines,Machines,TERM,,,,
+Herd,TERM,Herd,Kudde,TERM,,,,
+Protest,TERM,Protest,Protest,TERM,,,,
+Heritage Stable,LOCATION,Heritage Stable,Erfgoedshoeve,LOCATION,,,,
+Week,TERM,Week,Ezel,TERM,,,,
+Outhouse,TERM,Outhouse,Hudo,TERM,,,,
+Comrades,CHARACTER,Comrades,Kameraden,CHARACTER,,,,
+Purple Stuff,TERM,Purple Stuff,Paarse Spul,TERM,,,,
+Industry Coal Mines,LOCATION,Industry Coal Mines,Industrie,LOCATION,,,,
+Mill and Granary,LOCATION,Mill and Granary,Molen,LOCATION,,,,
+Well,TERM,Well,Bron van Ya'Fur,TERM,,,,
+Miners,LOCATION,Miners,Mijn-Ezels,LOCATION,,,,
+Long Way,TERM,Long Way,Lange Weg,TERM,,,,
+Mother,CHARACTER,Mother,Moeder,CHARACTER,,,,
+Stable,LOCATION,Stable,Stal,LOCATION,,,,
+Newbie,TERM,Newbie,Nieuweling,TERM,,,,
+Concert,TERM,Concert,Concert,TERM,,,,
+Hulk,CHARACTER,Hulk,Hulk,CHARACTER,,,,
+Revolution,TERM,Revolution,Revolutie,TERM,,,,
+Freedom,TERM,Freedom,Vrijheid,TERM,,,,
+Mill,LOCATION,Mill,Molen,LOCATION,,,,
+Mines,LOCATION,Mines,Mijnen,LOCATION,,,,
+Needle,TERM,Needle,Spuit,TERM,,,,
+Computer,TERM,Computer,Computer,TERM,,,,
+Rocks,TERM,Rocks,Stenen-spel,TERM,,,,
+Boredom,TERM,Boredom,Verveling,TERM,,,,
+Newbies,TERM,Newbies,Nieuwkomertjes,TERM,,,,
+Eeyore,CHARACTER,Eeyore,Iejoor,CHARACTER,,,,
+Comrade Trusty,CHARACTER,Comrade Trusty,Kameraad Trouwe,CHARACTER,,,,
+Ass Soul,TERM,Ass Soul,Astrale Hiernamaals,TERM,,,,
+Herds,TERM,Herds,Kuddes,TERM,,,,
+Plan C,TERM,Plan C,Plan C,TERM,,,,
+Ancestors,TERM,Ancestors,Voorouders,TERM,,,,
+Uncle Sad Ass,CHARACTER,Uncle Sad Ass,Nonkel Triestigaard,CHARACTER,,,,
+Fire,TERM,Fire,Vuur,TERM,,,,
+Jobs,TERM,Jobs,Beroepen,TERM,,,,
+City Bank,LOCATION,City Bank,Stadsbank,LOCATION,,,,
+Computers,TERM,Computers,Computers,TERM,,,,
+Protests,TERM,Protests,Protesten,TERM,,,,
+Pond,LOCATION,Pond,Vijver,LOCATION,,,,
+Hunger Strike,TERM,Hunger Strike,Hongerstaking,TERM,,,,
+Tour,TERM,Tour,Circusdirecteur,TERM,,,,
+Achilles,CHARACTER,Achilles,Achilles,CHARACTER,,,,
+Left and Right,TERM,Left and Right,Links,TERM,,,,
+Nuzzle,TERM,Nuzzle,Knuffelen,TERM,,,,
+Ass Souls,TERM,Ass Souls,Ezel Zielen,TERM,,,,
+Mountain Trail,LOCATION,Mountain Trail,Lange Weg,LOCATION,,,,
+Double Kick,TERM,Double Kick,Dubbele Stamp,TERM,,,,
+Pond of Hehehehe,LOCATION,Pond of Hehehehe,Vijver van Vermaak,LOCATION,,,,
+Loser,TERM,Loser,Loser,TERM,,,,
+History,TERM,History,Geschiedenis,TERM,,,,
+Littlefoot,CHARACTER,Littlefoot,Platvoet,CHARACTER,,,,

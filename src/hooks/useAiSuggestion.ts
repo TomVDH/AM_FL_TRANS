@@ -146,11 +146,11 @@ export function useAiSuggestion({
     }
 
     // Debounce 300ms
-    const timer = setTimeout(() => {
+    const timerId = setTimeout(() => {
       fetchAiSuggestion('haiku');
     }, 300);
 
-    return () => clearTimeout(timer);
+    return () => clearTimeout(timerId);
   }, [aiSuggestEnabled, currentIndex]); // Only trigger on index change, not on every keystroke
 
   // Clear suggestion when navigating (before auto-fetch kicks in)

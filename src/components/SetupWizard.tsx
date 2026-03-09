@@ -3,12 +3,9 @@
 import React, { useRef, useState, useEffect, useMemo } from 'react';
 import * as XLSX from 'xlsx';
 import Spinner from './ui/Spinner';
-import { toast } from 'sonner';
-import VideoButton from './VideoButton';
-import GitHubButton from './GitHubButton';
-import CodexButton from './CodexButton';
-import CodexEditor from './CodexEditor';
-import StyleAnalysisPanel from './StyleAnalysisPanel';
+import { toast } from '@/lib/toast';
+import AppFooter from './AppFooter';
+import ReferenceConfigPanel from './ReferenceConfigPanel';
 import SheetSelector from './SheetSelector';
 import LanguageSelector, { DetectedLanguage } from './LanguageSelector';
 import SheetPreview from './SheetPreview';
@@ -90,6 +87,7 @@ interface SetupWizardProps {
 
   // Loading states
   isLoadingExcel?: boolean;
+
 }
 
 /**
@@ -180,7 +178,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   toggleDarkMode,
   showResetModal,
   setShowResetModal,
-  isLoadingExcel
+  isLoadingExcel,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [existingFiles, setExistingFiles] = React.useState<any[]>([]);
@@ -195,10 +193,17 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   const [selectedDataFile, setSelectedDataFile] = React.useState('');
   const [loadingDataFiles, setLoadingDataFiles] = React.useState(false);
 
-  // Codex editor state - collapsed by default for cleaner setup
-  const [showCodexEditor, setShowCodexEditor] = useState(false);
-  // Advanced section - collapsed by default
-  const [showAdvanced, setShowAdvanced] = useState(false);
+  // Sheet preview toggle — collapsed by default
+  const [showSheetPreview, setShowSheetPreview] = useState(false);
+  const [refPanelExpanded, setRefPanelExpanded] = useState(false);
+
+  // Hydration-safe time-ago: only compute on client after mount
+  const [timeAgoText, setTimeAgoText] = useState('');
+  useEffect(() => {
+    if (lastSession?.timestamp) {
+      setTimeAgoText(formatTimeAgo(lastSession.timestamp));
+    }
+  }, [lastSession?.timestamp]);
 
   // Reference data availability check - also provides entry count
   const { hasLanguage, isLoading: isLoadingCodex, totalEntries, refresh: refreshCodex } = useCodexLanguages();
@@ -241,29 +246,30 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
     if (setTranslations) setTranslations([]);
   }, [setSourceTexts, setUtterers, setTranslations]);
 
+  // Reusable file list loader — called on mount and after downloads/resets
+  const refreshFileList = React.useCallback(async () => {
+    setLoadingExistingFiles(true);
+    console.log('[SetupWizard] Loading existing Excel files...');
+    try {
+      const response = await fetch('/api/xlsx-files');
+      if (response.ok) {
+        const data = await response.json();
+        console.log('[SetupWizard] Loaded Excel files:', data.files?.length || 0, 'files');
+        setExistingFiles(data.files || []);
+      } else {
+        console.error('[SetupWizard] Failed to load Excel files:', response.status);
+      }
+    } catch (error) {
+      console.error('[SetupWizard] Error loading existing files:', error);
+    } finally {
+      setLoadingExistingFiles(false);
+    }
+  }, []);
+
   // Load existing files on component mount
   React.useEffect(() => {
-    const loadExistingFiles = async () => {
-      setLoadingExistingFiles(true);
-      console.log('[SetupWizard] Loading existing Excel files...');
-      try {
-        const response = await fetch('/api/xlsx-files');
-        if (response.ok) {
-          const data = await response.json();
-          console.log('[SetupWizard] Loaded Excel files:', data.files?.length || 0, 'files');
-          setExistingFiles(data.files || []);
-        } else {
-          console.error('[SetupWizard] Failed to load Excel files:', response.status);
-        }
-      } catch (error) {
-        console.error('[SetupWizard] Error loading existing files:', error);
-      } finally {
-        setLoadingExistingFiles(false);
-      }
-    };
-
-    loadExistingFiles();
-  }, []);
+    refreshFileList();
+  }, [refreshFileList]);
 
   // Callback to refresh codex count when entries change - uses the hook's refresh
   const handleCodexUpdated = React.useCallback(() => {
@@ -459,19 +465,19 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   }, [detectLocaleColumns]);
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 flex items-start justify-center transition-colors duration-300">
+    <div className={`min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 pb-16 flex justify-center transition-colors duration-300 ${refPanelExpanded ? 'items-start pt-12 md:pt-16' : 'items-center'}`}>
 
       {/* Main Container */}
       <div
-        className={`w-full mt-8 md:mt-16 transition-all duration-500 ease-in-out ${
+        className={`w-full transition-all duration-500 ease-in-out ${
           excelSheets.length > 0 ? 'max-w-3xl' : 'max-w-xl'
         }`}
         style={{ animation: 'fadeIn 0.3s ease-out' }}
       >
         {/* Header */}
-        <div className="mb-8">
-          <h1 className="text-2xl font-black tracking-tight text-gray-900 dark:text-gray-100">AM FL TRANS</h1>
-          <p className="text-[11px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] mt-0.5">asses.masses — Translation Workbench</p>
+        <div className="mb-8 flex items-end gap-4">
+          <img src="/images/asses-masses-logo.png" alt="Asses Masses" className="h-14 w-auto" />
+          <p className="text-[11px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] pb-0.5">asses.masses — Translation Workbench</p>
         </div>
 
         {/* Resume Card */}
@@ -488,7 +494,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     <span className="text-[10px] font-bold uppercase tracking-wide text-amber-600 dark:text-amber-400">Resume</span>
                     <span className="text-[10px] text-amber-500/60 dark:text-amber-500/40">
                       {lastSession.translatedCount}/{lastSession.totalLines}
-                      {lastSession.timestamp && ` · ${formatTimeAgo(lastSession.timestamp)}`}
+                      {timeAgoText && ` · ${timeAgoText}`}
                     </span>
                   </div>
                   <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
@@ -628,23 +634,11 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             )}
           </div>
 
-          {/* Selection confirmation */}
-          {((fileType === 'excel' && selectedExistingFile && excelSheets.length > 0) ||
-            ((fileType === 'json' || fileType === 'csv') && selectedDataFile)) && (
-            <div className="flex items-center gap-1.5">
-              <svg className="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-              </svg>
-              <span className="text-xs text-green-600 dark:text-green-400 font-medium">
-                {fileType === 'excel' ? selectedExistingFile : selectedDataFile} loaded
-              </span>
-            </div>
-          )}
         </div>
 
         {/* Progressive disclosure: Language → Sheet → Preview → Start */}
         {fileType === 'excel' && excelSheets.length > 0 && (
-          <div className="mt-4 space-y-4">
+          <div className="mt-4 space-y-2">
             <LanguageSelector
               languages={detectedLanguages}
               selectedLanguage={selectedLanguage}
@@ -664,17 +658,32 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             )}
 
             {/* Sheet selector */}
-            <div className="bg-gray-50/50 dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 p-3" style={{ borderRadius: '3px' }}>
-              <SheetSelector
-                sheets={excelSheets}
-                selectedSheet={selectedSheet}
-                onSelectSheet={setSelectedSheet}
-                workbookData={workbookData}
-                startRow={startRow}
-              />
+            <SheetSelector
+              sheets={excelSheets}
+              selectedSheet={selectedSheet}
+              onSelectSheet={setSelectedSheet}
+              workbookData={workbookData}
+              startRow={startRow}
+            />
 
-              {selectedSheet && selectedLanguage && (
-                <div className="mt-3">
+            {/* Sheet preview — toggleable */}
+            {selectedSheet && selectedLanguage && (
+              <>
+                <button
+                  onClick={() => setShowSheetPreview(!showSheetPreview)}
+                  className="flex items-center gap-1.5 text-xs text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 transition-colors py-1"
+                >
+                  <svg
+                    className={`w-3 h-3 transform transition-transform duration-200 ${showSheetPreview ? 'rotate-90' : ''}`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                  <span>Preview</span>
+                </button>
+                {showSheetPreview && (
                   <SheetPreview
                     workbook={workbookData}
                     sheetName={selectedSheet}
@@ -683,27 +692,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
                     startRow={startRow}
                     languageCode={selectedLanguage.code}
                   />
-                </div>
-              )}
-
-              {sourceTexts.length > 0 && (
-                <div className="mt-2 flex items-center gap-1.5">
-                  <svg className="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  <span className="text-xs text-green-600 dark:text-green-400 font-medium">
-                    {sourceTexts.length} items ready
-                  </span>
-                </div>
-              )}
-            </div>
-
-            {/* Translation Target Indicator */}
-            {selectedLanguage && (
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs text-gray-500 dark:text-gray-400">
-                <span>Target: Column {selectedLanguage.column} ({selectedLanguage.name})</span>
-              </div>
+                )}
+              </>
             )}
+
           </div>
         )}
 
@@ -758,7 +750,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         )}
 
         {/* Start Button */}
-        <div className="mt-6">
+        <div className="mt-4">
           <button
             onClick={handleStartWithDataFile}
             disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
@@ -769,201 +761,40 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             }`}
             style={{ borderRadius: '3px' }}
           >
-            {sourceTexts.length > 0 ? `Start Translation — ${sourceTexts.length} lines` : 'Start Translation'}
+            {sourceTexts.length > 0 ? `Start Translation — ${sourceTexts.length} lines${selectedLanguage ? ` (${selectedLanguage.name})` : ''}` : 'Start Translation'}
           </button>
         </div>
 
-        {/* Codex — collapsed accordion */}
-        <div className="mt-8 pt-5 border-t border-gray-200 dark:border-gray-700">
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setShowCodexEditor(!showCodexEditor)}
-              className="flex-1 flex items-center justify-between py-1.5 text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-            >
-              <span className="flex items-center gap-2.5">
-                <span className="text-sm font-bold tracking-tight">Codex</span>
-                {totalEntries > 0 && (
-                  <span className="px-1.5 py-0.5 text-[10px] font-semibold bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 rounded">
-                    {totalEntries}
-                  </span>
-                )}
-              </span>
-              <svg
-                className={`w-4 h-4 text-gray-400 transform transition-transform duration-200 ${showCodexEditor ? 'rotate-180' : ''}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                refreshCodex();
-              }}
-              disabled={isLoadingCodex}
-              className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors disabled:opacity-50"
-              title="Refresh codex"
-            >
-              <svg
-                className={`w-3.5 h-3.5 ${isLoadingCodex ? 'animate-spin' : ''}`}
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-              </svg>
-            </button>
-          </div>
-          {showCodexEditor && (
-            <div className="mt-2 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700" style={{ borderRadius: '3px' }}>
-              <CodexEditor onCodexUpdated={handleCodexUpdated} />
-            </div>
-          )}
-        </div>
+        {/* Reference & Config — single tabbed panel */}
+        <ReferenceConfigPanel
+          totalEntries={totalEntries}
+          isLoadingCodex={isLoadingCodex}
+          refreshCodex={refreshCodex}
+          onCodexUpdated={handleCodexUpdated}
+          fileType={fileType}
+          onFileTypeChange={handleFileTypeChange}
+          inputMode={inputMode}
+          setInputMode={setInputMode}
+          setShowResetModal={setShowResetModal}
+          onFilesChanged={refreshFileList}
+          onExpandChange={setRefPanelExpanded}
+        />
 
-        {/* Advanced — toggle matching Codex style */}
-        <div className="mt-5">
-          <button
-            onClick={() => setShowAdvanced(!showAdvanced)}
-            className="flex-1 w-full flex items-center justify-between py-1.5 text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
-          >
-            <span className="text-sm font-bold tracking-tight">Advanced</span>
-            <svg
-              className={`w-4 h-4 text-gray-400 transform transition-transform duration-200 ${showAdvanced ? 'rotate-180' : ''}`}
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          {showAdvanced && (
-            <div className="mt-2 space-y-4">
-              {/* File type selector */}
-              <div>
-                <label className="block text-[10px] font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1.5">File Type</label>
-                <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 inline-flex" style={{ borderRadius: '3px' }}>
-                  {['excel', 'json', 'csv'].map((type) => (
-                    <button
-                      key={type}
-                      onClick={() => handleFileTypeChange(type as 'excel' | 'json' | 'csv')}
-                      aria-pressed={fileType === type}
-                      className={`px-3 py-1 text-[10px] font-medium uppercase tracking-wide transition-all duration-200 ${
-                        fileType === type
-                          ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
-                          : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
-                      }`}
-                      style={{ borderRadius: '2px' }}
-                    >
-                      {type === 'excel' ? 'XLS' : type.toUpperCase()}
-                    </button>
-                  ))}
-                </div>
-              </div>
+      </div>
 
-              {/* Input mode selector */}
-              <div>
-                <label className="block text-[10px] font-medium uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-1.5">Input Mode</label>
-                <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 inline-flex" style={{ borderRadius: '3px' }}>
-                  {['excel', 'embedded-json', 'manual'].map((mode) => (
-                    <button
-                      key={mode}
-                      onClick={() => setInputMode(mode as any)}
-                      className={`px-3 py-1 text-[10px] font-medium uppercase tracking-wide transition-all duration-200 ${
-                        inputMode === mode
-                          ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
-                          : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
-                      }`}
-                      style={{ borderRadius: '2px' }}
-                    >
-                      {mode === 'embedded-json' ? 'JSON' : mode === 'excel' ? 'Excel' : 'Manual'}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Style Analysis */}
-              <StyleAnalysisPanel />
-
-              {/* Quick links + Reset */}
-              <div className="flex items-center gap-2">
-                <VideoButton />
-                <GitHubButton />
-                <CodexButton />
-                <div className="flex-1" />
-                {setShowResetModal && (
-                  <button
-                    onClick={() => setShowResetModal(true)}
-                    className="group h-8 px-2.5 flex items-center gap-1.5 text-xs text-gray-400 hover:text-red-500 dark:hover:text-red-400 border border-gray-200 dark:border-gray-700 hover:border-red-300 dark:hover:border-red-500 transition-colors"
-                    style={{ borderRadius: '3px' }}
-                    title="Reset to originals"
-                  >
-                    <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-                    </svg>
-                    <span>Reset</span>
-                  </button>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* Footer */}
-        <div className="mt-8 pt-4 border-t border-gray-200 dark:border-gray-700 flex items-center justify-between">
-          <p className="text-[10px] text-gray-400 dark:text-gray-500">
-            Onnozelaer Marketing Works © 2025
-          </p>
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => {
-                console.log('[SetupWizard] Dark mode button clicked!');
-                toggleDarkMode();
-              }}
-              className="p-1.5 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
-              aria-label="Toggle dark mode"
-            >
-              {darkMode ? (
-                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clipRule="evenodd" />
-                </svg>
-              ) : (
-                <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-                </svg>
-              )}
-            </button>
-            <div
-              className="rounded-sm relative cursor-pointer overflow-hidden flex items-center justify-center"
-              onMouseEnter={() => onVersionBadgeHover?.(true)}
-              onMouseLeave={() => onVersionBadgeHover?.(false)}
-              onClick={() => onVersionBadgeClick?.()}
-              title="Click to change gradient"
-              style={{
-                width: '80px',
-                height: '20px',
-                backgroundImage: gradientColors.length > 0
-                  ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})`
-                  : 'linear-gradient(270deg, #6b7280, #9ca3af, #6b7280)',
-                backgroundSize: '200% 200%',
-                animation: 'gradientShift 5s ease-in-out infinite',
-              }}
-            >
-              <span
-                className="text-white font-medium tracking-wider drop-shadow-sm transition-all duration-500"
-                style={{
-                  fontFamily: 'ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace',
-                  fontSize: '9px',
-                  opacity: showVersionHash ? 1 : 0,
-                  transform: showVersionHash ? 'translateY(0)' : 'translateY(3px)',
-                }}
-              >
-                {VERSION_HASH}
-              </span>
-            </div>
-          </div>
+      {/* Footer — fixed full-width at bottom */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+        <div className="max-w-3xl mx-auto px-4 md:px-6">
+          <AppFooter
+            darkMode={darkMode}
+            toggleDarkMode={toggleDarkMode}
+            gradientColors={gradientColors}
+            showVersionHash={showVersionHash}
+            VERSION_HASH={VERSION_HASH}
+            onVersionBadgeHover={onVersionBadgeHover}
+            onVersionBadgeClick={onVersionBadgeClick}
+            variant="setup"
+          />
         </div>
       </div>
     </div>

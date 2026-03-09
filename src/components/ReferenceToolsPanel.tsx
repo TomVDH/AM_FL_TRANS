@@ -197,10 +197,8 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
       }
     };
 
-    if (xlsxMode) {
-      loadCodex();
-    }
-  }, [xlsxMode]);
+    loadCodex();
+  }, []);
 
   // Filter codex data
   const filteredCodexData = useMemo(() => {
@@ -229,28 +227,8 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
     navigator.clipboard.writeText(text);
   }, []);
 
-  if (!xlsxMode) return null;
-
   return (
-    <div className="reference-tools-section mt-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 p-3 shadow-sm transition-all duration-300" style={{ borderRadius: '4px' }}>
-      {/* Header - Compact */}
-      <div className="flex items-center justify-between mb-2">
-        <div>
-          <h4 className="text-xs font-bold text-gray-900 dark:text-gray-100 tracking-wide uppercase">
-            Reference Tools
-          </h4>
-        </div>
-        <button
-          onClick={toggleXlsxMode}
-          className="flex items-center justify-center w-6 h-6 text-gray-400 hover:text-gray-600 dark:text-gray-500 dark:hover:text-gray-300 transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-700"
-          style={{ borderRadius: '2px' }}
-          title="Close Reference Tools (Esc)"
-        >
-          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      </div>
+    <div className="reference-tools-section transition-all duration-300">
 
       {/* Tab Navigation - 3 Tabs */}
       <div className="flex gap-1 mb-3 p-0.5 bg-gray-50 dark:bg-gray-900" style={{ borderRadius: '3px' }}>

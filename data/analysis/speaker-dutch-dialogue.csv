@@ -114,6 +114,9 @@ The Foal can now go through the entrance to the Bad Cave at the bottom of the Mi
 {$NewName},E3,E3_BadCave_localization,,"So... Is that why you don't spend more time with the Herd, Uncle Bad Ass?","Dus... Is dat waarom ge niet meer met de Kudde hangt, Nonkel Waaghalske?",SAY.Dialog:PostDonkeyBas.92.{$NewName}
 {$NewName},E3,E3_BadCave_localization,,"Well, I'm not an Ass, I'm a Foal!","Awel, ik ben geen Ezel, ik ben een Veulen!",SAY.Dialog:PostDonkeyBas.36.{$NewName}
 {$NewName},E3,E3_BadCave_localization,,Can I... stay down here with you?,Mag ik... hier beneden bij u blijven?,SAY.Dialog:PostDonkeyBas.93.{$NewName}
+{$NewName},E6,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,"Uncle Hard, everyone says you're a two-faced liar!","Oom Bikkehard, iedereen zegt dat je een tweegezichtige leugenaar bent!",SAY.DialogMaster.44.{$NewName}
+{$NewName},E6,E6_MineLift_localization,This is said if Sturdy didn't let the Foal go into the Theatre and she didn't get the light.,Uncle Bad Ass is going to be so disappointed in me that I didn't get the super important light he wanted.,Oom Stoere Ezel gaat zo teleurgesteld in me zijn dat ik het superbelangrijke licht niet heb gekregen dat hij wilde.,SAY.Dialog:MineMonologue.5.{$NewName}
+{$NewName},E6,E6_MineLift_localization,This is said if Sturdy didn't let the Foal go into the Theatre and she didn't get the light.,I gotta find something to replace that super important light he needs...,Ik moet iets vinden om dat superbelangrijke licht dat hij nodig heeft te vervangen...,SAY.Dialog:GottaFindTheThingy.2.{$NewName}
 Angry Ass,E4,E4_AstralPlaneMain_localization,Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys),UGH! I hate Humans because they never gave us the representation in their media we deserved.,UGH! Ik haat Mensen omdat ze ons nooit de representatie in de media geven die we verdienden.,SAY.Dialog:Angry.10.Angry Ass
 Angry Ass,E4,E4_AstralPlaneMain_localization,,"Like, we're not all stubborn and stupid, you know?","Komaan! We zijn niet allemaal oliedom, weet je?",SAY.Dialog:Angry.18.Angry Ass
 Angry Ass,E4,E4_AstralPlaneMain_localization,Repeater line.,Most of us are complex individuals with rich inner lives.,De meeste van ons zijn hele mensen met rijke innerlijke belevenissen.,SAY.Dialog:Angry.12.Angry Ass
@@ -486,6 +489,29 @@ Hard Ass,E4,E4_HerdSplits_localization,"Old, can likely be deleted.",Revolution 
 Hard Ass,E4,E4_HerdSplits_localization,"Old, can likely be deleted.","Sick has been ill a long time, Comrade.","Snotje is al lang ziek, Kameraad.",SAY.Dialog:Debate.48.Hard Ass
 Hard Ass,E4,E4_Mine1F_Exit_localization,NPC dialogue option. No particular order for when you talk to someone.,You're being emotional. The Humans will toss you aside the first chance they get.,Je overdrijft. De Mensen maken korte metten met jou vanaf de eerste keer ze de kans hebben.,SAY.Dialog:HardPostSplit.10.Hard Ass
 Hard Ass,E4,E4_Mine1F_Exit_localization,Repeater line.,Just go.,Trap het af.,SAY.Dialog:HardPostSplit.12.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,"A dialogue between Good Hard Ass and Evil Hard Ass ensues.
+Good Hard Ass.",We failed to save Lazy.,We hebben Luie niet kunnen redden.,SAY.Dialog:FoundLazy.24.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,,You can't keep running from the truth.,Je kunt niet blijven wegrennen voor de waarheid.,SAY.Dialog:FoundLazy.1.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,Evil Hard Ass (Player).,I have made up for our mistake.,Ik heb onze fout rechtgezet.,SAY.Dialog:FoundLazy.8.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,,I am protecting the Herd.,Ik bescherm de Kudde.,SAY.Dialog:FoundLazy.25.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,Good Hard Ass.,You're miserable.,Je bent ellendig.,SAY.Dialog:FoundLazy.7.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,Evil Hard Ass (Player).,Revolutions have no room for emotions.,Revoluties hebben geen ruimte voor emoties.,SAY.Dialog:FoundLazy.12.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,Good Hard Ass.,Revolutions can't be won alone.,Revoluties win je niet in je eentje.,SAY.Dialog:FoundLazy.11.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,,You underestimated our friends and let the Herd split apart.,Je hebt onze vrienden onderschat en de Kudde laten splijten.,SAY.Dialog:FoundLazy.27.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,Evil Hard Ass (Player).,They weren't ready.,Ze waren er niet klaar voor.,SAY.Dialog:FoundLazy.30.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,Good Hard Ass.,You never gave them a chance.,Je hebt ze nooit een kans gegeven.,SAY.Dialog:FoundLazy.10.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,,I'm not going to sit back and watch you destroy us.,Ik ga niet achterover leunen terwijl jij ons kapotmaakt.,SAY.Dialog:FoundLazy.9.Hard Ass
+Hard Ass,E6,E6_Nightmare_localization,A showdown (fight) between Evil Hard Ass and the Nightmare version of the Herd occurs.,I'm taking back control now whether you like it or not.,Ik neem nu de controle terug. Of je het leuk vindt of niet.,SAY.Dialog:FoundLazy.31.Hard Ass
+Hard Ass,E6,E6_BattleHard_localization,Good Hard Ass.,You are weak.,Je bent zwak.,SAY.DialogMaster.1.Hard Ass
+Hard Ass,E6,E6_BattleHard_localization,Evil Hard Ass (Player).,You cannot beat me one-on-one.,"Je verslaat me niet, man tegen man.",SAY.DialogMaster.71.Hard Ass
+Hard Ass,E6,E6_BattleHard_localization,"Good Hard Ass. The fight begins. 
+The other Asses enter the fight one by one.",Who says I'm alone?\n,Wie zegt dat ik alleen sta?,SAY.DialogMaster.72.Hard Ass
+Hard Ass,E6,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,Prepare to become obsolete.,Bereid je voor om overbodig te worden.,SAY.DialogMaster.74.Hard Ass
+Hard Ass,E6,E6_BattleHard_localization,Evil Hard Ass (Player) LOSES.,We're just trying to help.,We proberen alleen te helpen.,SAY.DialogMaster.6.Hard Ass
+Hard Ass,E6,E6_World_localization,1.1 Evil Hard Ass Wins,I'll kill ANYONE in my way!,Ik maak IEDEREEN af die in mijn weg staat!,SAY.Dialog:PostNightmare.15.Hard Ass
+Hard Ass,E6,E6_World_localization,,Revolutions have no room for emotions.,Revoluties hebben geen ruimte voor emoties.,SAY.Dialog:PostNightmare.134.Hard Ass
+Hard Ass,E6,E6_World_localization,,I'm... fine Comrade.,"Ik ben... in orde, Kameraad.",SAY.Dialog:PostNightmare.19.Hard Ass
+Hard Ass,E6,E6_World_localization,,It was a momentary lapse.,Een moment van zwakte.,SAY.Dialog:PostNightmare.22.Hard Ass
 Hasty Ass,E4,E4_AstralPlaneMain_localization,Sick Ass finds an energetic Ass who wants to race.,You're new! Wanna race? I'm pretty fast! You'll see!,Ben jij nieuw hier! Wil je racen? Ik ben redelijk snel! Je zal wel zien!,SAY.Dialog:RaceHasty.59.Hasty Ass
 Hasty Ass,E4,E4_AstralPlaneMain_localization,,Come on! You down? Let's go? Let's go!!,"Kom! Heb je zin? Zullen we racen? Kom, we racen!!",SAY.Dialog:RaceHasty.10.Hasty Ass
 Hasty Ass,E4,E4_AstralPlaneMain_localization,,Hell yeah new friendo!,"Hupsakéé, nieuwe vrienden!",SAY.Dialog:RaceHasty.64.Hasty Ass
@@ -630,6 +656,14 @@ Kick Ass,E5,E5_ZooMain_localization,,WHAT?! You're as clunky as a MACHINE.,WAT?!
 Kick Ass,E5,E5_ZooCapture_localization,Jump to line 22 or 28.,YES! @#$%&! YES!!,JA! @#$%&! JA!!!!,SAY.Dialog:AssOfTheMonth.142.Kick Ass
 Kick Ass,E5,E5_ZooCapture_localization,,HIDE!,VERSTOP JE!,SAY.Dialog:AssOfTheMonth.96.Kick Ass
 Kick Ass,E5,E5_ZooCapture_localization,"Inside the pen, the Asses attempt to hide.",Everyone! DON'T MOVE and DON'T MAKE A SOUND!,Iedereen! NIEMAND geeft EEN KIK!,SAY.Dialog:CaptureInterjections.1.Kick Ass
+Kick Ass,E6,E6_Nightmare_localization,Start NPC dialogue.,COMRADE!,KAMERAAD!,SAY.Dialog:Kick_Normal.20.Kick Ass
+Kick Ass,E6,E6_Nightmare_localization,,Thanks for working with Jenny today.,Bedankt dat ge vandaag met Jenny hebt gewerkt.,SAY.Dialog:Kick_Normal.34.Kick Ass
+Kick Ass,E6,E6_Nightmare_localization,,Lazy could NOT handle another shift with HER.,Luie kon NIE nog een shift aan met HAAR.,SAY.Dialog:Kick_Normal.33.Kick Ass
+Kick Ass,E6,E6_Nightmare_localization,End NPC dialogue.,Sick and I just finished moving the last piece of that new Boring-Machine—and @#$%&! it's HEAVY.,"Snot en ik hebben NET het laatste stuk van die nieuwe Saai-Machine versleept—en @#$%&! da's ZWAAR, hè.",SAY.Dialog:Kick_Normal.35.Kick Ass
+Kick Ass,E6,E6_Nightmare_localization,Repeater line.,No way that Boring-Machine can BLAST through a day of work LIKE WE CAN.,"Geen SCHIJN van kans dat die Cole-Machine een hele dag kan KNALLEN zoals WIJ dat kunnen, hè.",SAY.Dialog:Kick_Normal.21.Kick Ass
+Kick Ass,E6,E6_Nightmare_localization,NPC Dialogue. Nightmare sequence.,—this is all YOUR FAULT!,—dit is allemaal JOUW SCHULD!,SAY.Dialog:Kick_Horror.1.Kick Ass
+Kick Ass,E6,E6_Nightmare_localization,,You tore Sick AWAY FROM ME!,Ge hebt Snot van me WEGGERUKT!,SAY.Dialog:Kick_Horror.11.Kick Ass
+Kick Ass,E6,E6_Nightmare_localization,Kick Ass vomits himself to death.,And you made me into a KILLER.,En ge hebt van mij een MOORDENAAR gemaakt.,SAY.Dialog:Kick_Horror.9.Kick Ass
 Lazy Ass,E3,E3_LazysGrave_localization,Fade in to reveal the spirit of Lazy Ass,I'm Lazy.,Ik ben Luie Zak.,SAY.Dialog:MeetingLazy.32.Lazy Ass
 Lazy Ass,E3,E3_LazysGrave_localization,,Just hanging out.,Gewoon aan 't chillen.,SAY.Dialog:MeetingLazy.36.Lazy Ass
 Lazy Ass,E3,E3_LazysGrave_localization,,Look around if you want. Knock yourself out.,Kijk gerust rond als ge wilt. Doe uw goesting.,SAY.Dialog:MeetingLazy.57.Lazy Ass
@@ -661,6 +695,15 @@ Lazy Ass,E3,E3_LazysGrave_localization,,But that smell... it reminds me of him.,
 Lazy Ass,E3,E3_LazysGrave_localization,,"You see, my memory hasn't been working very well.","Ge ziet, mijn geheugen werkt nie meer zo goed.",SAY.SecretThing.3.Lazy Ass
 Lazy Ass,E3,E3_LazysGrave_localization,,I think I've been looking for that for a long time.,k Denk dat ik daar al lang naar aan 't zoeken was.,SAY.SecretThing.2.Lazy Ass
 Lazy Ass,E3,E3_LazysGrave_localization,,"To be honest, I don't even remember  your name.","Eerlijk gezegd, 'k herinner mij zelfs uw naam nie.",SAY.SecretThing.14.Lazy Ass
+Lazy Ass,E6,E6_Nightmare_localization,Start NPC dialogue.,Heyyyy Hard! Thanks for switching shifts with me.,Heyyy Bikkeharde! Merci da ge van shift wilt wisselen met mij.,SAY.Dialog:Lazy.1.Lazy Ass
+Lazy Ass,E6,E6_Nightmare_localization,,I love 'working' with Cole Butte.,'k werk zo graag samen met Piet Vanscheetvelde.,SAY.Dialog:Lazy.8.Lazy Ass
+Lazy Ass,E6,E6_Nightmare_localization,,We sit together on Level 300 while he talks about Robots and smokes.,We zitten samen op Niveau 300 terwijl hij over Robots klapt en rookt.,SAY.Dialog:Lazy.9.Lazy Ass
+Lazy Ass,E6,E6_Nightmare_localization,End NPC dialogue. Lazy and Cole leave.,"Boredom is freedom, ya know?","Verveling is Vrijheid, weet ge wel?",SAY.Dialog:Lazy.10.Lazy Ass
+Lazy Ass,E6,E6_Nightmare_localization,"Start NPC dialogue when getting to the furtherst right end of the map.
+Cave in starts to happen.","Heyyyy Hard Ass, what's shakin'? Haha.","Heyyy Bikkeharde Ezel, wa hangt er? Haha.",SAY.Dialog:LazyCole.2.Lazy Ass
+Lazy Ass,E6,E6_Nightmare_localization,,"These rocks are really coming down, eh?","Die stenen komen er echt goed af, hé?",SAY.Dialog:LazyCole.5.Lazy Ass
+Lazy Ass,E6,E6_Nightmare_localization,,You better get outta here.,Ge kunt beter maken da ge hier wegkomt.,SAY.Dialog:LazyCole.23.Lazy Ass
+Lazy Ass,E6,E6_Nightmare_localization,End NPC dialogue. Lazy leaves and it becomes clear this is Hard Ass's nightmare.,Tell Sad Ass not to worry—Cole's going to find us a way out.,Zeg tegen Triestige Ezel da hij nie moet piekeren—Piet Vanscheetvelde gaat nen uitweg voor ons vinden.,SAY.Dialog:LazyCole.15.Lazy Ass
 Lofty Ass,E4,E4_AstralPlaneMain_localization,,"Every Ass here has had their share of Protests,","Elke Ezel heeft hier zijn deel aan Protesten gehad,",SAY.Dialog:NostalgicRadicalsIntro.36.Lofty Ass
 Lofty Ass,E4,E4_AstralPlaneMain_localization,"Note: There is a needed extra space before ""Strikes"" because this line extends from the previous.","Strikes, Marches, Boycotts...","Stakingen, Marsen, Boycotts...",SAY.Dialog:NostalgicRadicalsIntro.37.Lofty Ass
 Lofty Ass,E4,E4_AstralPlaneMain_localization,"Sick meets the Nostalgic Radicals as INDIVIDUALS: Total, Janky, Lofty, Ugly",We were simple village donkeys when the Humans recruited my herd to do supply drops in their wars.,Wij waren simpele dorpsezels wanneer de Mensen onze Kudde gebruikte om voorraden in hun oorlogen te zeulen.,SAY.Dialog:Lofty.10.Lofty Ass
@@ -692,6 +735,21 @@ Miner Jenny,E2,E2_MinersHouse_localization,,Run into the flames and grab my Comp
 Miner Jenny,E2,E2_MinersHouse_localization,,I NEED IT!,IK HEB HET NODIG!,SAY.Dialog:Miner.14.Miner Jenny
 Miner Jenny,E2,E2_MinersHouse_localization,Hard Ass doesn't move.,"What, you can't hear me with those big dumb donkey ears?","Wat, kan je me niet verstaan met je domme ezelsoren, ofzo?",SAY.Dialog:Miner.11.Miner Jenny
 Miner Jenny,E2,E2_MinersHouse_localization,"A screen wipe (transition), Hard Ass has to fight Miner Jenny.","Fine, I'll MAKE YOU DO IT!",Oké. IK MAAK ER ZEKER VAN DAT JE 'T VOOR MIJ DOET.,SAY.Dialog:Miner.7.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,Hard Ass wakes up to a hit on the head via Jenny.,No sleeping on the job you useless donkey!,"Er word niet op het werk geslapen, nutteloze ezel!",SAY.Dialog:Jenny_Intro.20.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,,I'm working overtime too—you don't see ME nodding off.,Ik werk ook na de uren—je ziet MIJ toch niet indutten.,SAY.Dialog:Jenny_Intro.37.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,,You're with me on Level 300 today!,Jij gaat vandaag met mij mee naar Niveau 300!,SAY.Dialog:Jenny_Intro.43.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,,At least I don't have to be with that lazy donkey.,Tenminste hoef ik niet met die luie ezel samen te werken.,SAY.Dialog:Jenny_Intro.48.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,Jenny leaves and Hard Ass is free to roam around the Mines and talk to the others.,I'm done wasting my time on slackers!,Ik ben klaar met mijn tijd te verspillen aan luiwammesen!,SAY.Dialog:Jenny_Intro.49.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,Start NPC dialogue.,WHAT TOOK YOU SO LONG YOU PIECE OF SHIT?!,"WAT DUURDE DAT ZO LANG, STUK STRONT DAT JE BENT?!",SAY.Dialog:Jenny_Normal.20.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,,I apologize donkey... I'm emotional.,Ik... sorry ezel... ik ben emotioneel.,SAY.Dialog:Jenny_Normal.37.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,,I dumped Cole yesterday.,Ik heb Piet gisteren gedumpt.,SAY.Dialog:Jenny_Normal.40.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,,*SOB*,*SNIK*,SAY.Dialog:Jenny_Normal.35.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,End NPC dialogue.,"After all these years, I needed a break.",Na al die jaren had ik even een pauze nodig.,SAY.Dialog:Jenny_Normal.41.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,Repeater line.,Maybe I should leave and get a job in Mecha City...,Misschien moet ik gewoon vertrekken en een baan zoeken in Mechalen...,SAY.Dialog:Jenny_Normal.21.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,NPC Dialogue. Nightmare sequence.,I never made it to Mecha City...,Ik heb Mechalen nooit gehaald...,SAY.Dialog:Jenny_Horror.1.Miner Jenny
+Miner Jenny,E6,E6_Nightmare_localization,Jenny kills herself with her shovel.,BECAUSE YOU KILLED ME!,OMDAT JE ME VERMOORD HEBT!,SAY.Dialog:Jenny_Horror.9.Miner Jenny
+Miner With No Legs,E6,E6_Nightmare_localization,"NPC Dialogue (single line). Nightmare sequence.
+Non-repeater line.",{s}{s=7}My... legs...{/s},{s}{s=7}Mijn... benen...{/s},SAY.Dialog:Worker.1.Miner With No Legs
 Mme,E1,E1_FarmHouseInt_localization,,Good morning! It's simple... success in business is all about the bottom line.,Goeiemorgen! Simpel. Succes in de business begint bij de winst die je maakt.,SAY.Dialog:Radio.6.Mme. Derriere
 Mme,E1,E1_FarmHouseInt_localization,,"One must embrace the hustle and bustle, but also have a product that changes lives.","We moeten bereid zijn hard te werken, en dat aan een product dat levens verandert.",SAY.Dialog:Radio.5.Mme. Derriere
 Mme,E1,E1_FarmHouseInt_localization,,Yes that's our bestseller! I believe that EVERYONE can use this product and reap the benefits.,Onze best-seller! Ik denk dat iedereen de voordelen uit deze producten zullen halen.,SAY.Dialog:Radio.33.Mme. Derriere
@@ -717,6 +775,14 @@ Mr,E2,E2_ButtesHouse_localization,,The world is burning and God sends me an Ass 
 Mr,E2,E2_ButtesHouse_localization,,Maybe it's a sign?,Misschien is het een teken?,SAY.Dialog:Butte.21.Mr. Butte
 Mr,E2,E2_ButtesHouse_localization,,"Ah, what the hell. Look at me. Talking to a donkey again...","Ach, wat maakt het. Kijk naar mij — tegen een ezel bezig...",SAY.Dialog:Butte.20.Mr. Butte
 Mr,E2,E2_ButtesHouse_localization,,No wonder Sandy left me...,Niet moeilijk dat Smaragdje bij mij weg is...,SAY.Dialog:Butte.54.Mr. Butte
+Mr,E6,E6_Nightmare_localization,Start NPC dialogue.,My favourite donkey!,Mijn lievelingsezel!,SAY.Dialog:Butte_Normal.20.Mr. Butte
+Mr,E6,E6_Nightmare_localization,,Are you ready for the big day?,Ben je klaar voor de grote dag?,SAY.Dialog:Butte_Normal.36.Mr. Butte
+Mr,E6,E6_Nightmare_localization,,"We're going to get the Boring Machine up and running, and it'll save our Mine from going under.","We gaan de Boormachine opstarten en laten draaien, en die gaat onze Mijn redden van de ondergang.",SAY.Dialog:Butte_Normal.35.Mr. Butte
+Mr,E6,E6_Nightmare_localization,,"Once I recoup the money I spent on the Machine, I'll send my son, Cole, to that fancy university he got into...","Zodra ik het geld terugverdien dat ik in de Machine heb gestoken, stuur ik mijn zoon Piet naar die chique universiteit waar hij is aangenomen...",SAY.Dialog:Butte_Normal.34.Mr. Butte
+Mr,E6,E6_Nightmare_localization,End NPC dialogue.,And all of my workers will be taken care of too!,En al mijn werkers worden ook goed verzorgd!,SAY.Dialog:Butte_Normal.33.Mr. Butte
+Mr,E6,E6_Nightmare_localization,Repeater line.,This Machine will fix everything... I know it!,Deze Machine gaat alles oplossen... Ik weet het zeker!,SAY.Dialog:Butte_Normal.21.Mr. Butte
+Mr,E6,E6_Nightmare_localization,NPC Dialogue. Nightmare sequence.,*glug glug*,*slok slok*,SAY.Dialog:Butte_Horror.1.Mr. Butte
+Mr,E6,E6_Nightmare_localization,Mr. Butte gets ripped apart by a mini-boring machine emerging from inside of him.,...I don't feel so good—,...Ik voel me niet zo lekker—,SAY.Dialog:Butte_Horror.6.Mr. Butte
 Nice Ass,E1,E1_Farm_localization,Boosting Nice (female) Morale,Hiya Comrade! Haha I'm just too excited about tomorrow!,"Hela, Kameraad! Hehe, ik kan niet wachten tot morgen!",SAY.Dialog:Nice1_TriggerPlow.3.Nice Ass
 Nice Ass,E1,E1_Farm_localization,,And there's nothing like a good plow to settle the nerves. Come on and do a line!,"En niets zoals een goeie ploegbeurt om de zenuwen tegen te gaan! Voila zie, doet een lijntje!",SAY.Dialog:Nice1_TriggerPlow.1.Nice Ass
 Nice Ass,E1,E1_Farm_localization,,Let's plow again!,Nog een ploegbeurt!,SAY.Dialog:Nice1_TriggerPlow.19.Nice Ass
@@ -834,6 +900,7 @@ Nice Ass,E4,E4_Mine1F_localization,"NPC dialogue repeater option. No particular 
 Nice Ass,E4,E4_HerdSplits_localization,,Golly. Leave Fannyside? But this is our home. I can't just leave!,Oesje. Weg van Muilegem verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!,SAY.Dialog:Debate.181.Nice Ass
 Nice Ass,E4,E4_Mine1F_Exit_localization,NPC dialogue option. No particular order for when you talk to someone.,"If you ever change your mind, we'll welcome you back!","Als je van gedachte verandert, we zouden jullie er graag terug bij hebben!",SAY.Dialog:NicePostSplit.10.Nice Ass
 Nice Ass,E4,E4_Mine1F_Exit_localization,Repeater line.,I hope you find what you're looking for!,Ik hoop dat jullie vinden wat jullie zoeken!,SAY.Dialog:NicePostSplit.12.Nice Ass
+Nice Ass,E6,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,"Golly, you're about to get pounded, in less than two minutes!","Oesje, ge gaat bast in de pan geslagen worden, in minder dan twee minuten!",SAY.DialogMaster.39.Nice Ass
 Official Sign,E1,E1_Farm_localization,Interactable Object. Sign.,NEW Government Sponsored Highway: Connecting Urban and Rural Communities,NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.,SAY.Sign_Highway_Official.1.Official Sign
 Official Sign,E1,E1_TheProtest_localization,,NEW Derriere Highway: Connecting Urban and Rural Communities,NIEUW Derrière-snelweg: brengt verbinding tussen stedelijke en landelijke gemeenschappen.,SAY.Sign_Highway_Official.1.Official Sign
 Official Sign,E2,E2_World_A1_localization,"Interactable Object, Sign.",NEW Derriere Sponsored Highway: Connecting Urban and Rural Communities,NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.,SAY.Sign_Highway_Official.1.Official Sign
@@ -1188,6 +1255,13 @@ Sad Ass,E5,E5_ZooMain_localization,,...,...,SAY.Dialog:SadGoodbye.48.Sad Ass
 Sad Ass,E5,E5_ZooMain_localization,,I always thought we were a lot alike.,Ik dacht altijd dat we een beetje hetzelfde waren.,SAY.Dialog:SadGoodbye.49.Sad Ass
 Sad Ass,E5,E5_ZooMain_localization,,Goodbye Slow Ass.,Tot ziens Slome Ezel.,SAY.Dialog:SadGoodbye.50.Sad Ass
 Sad Ass,E5,E5_ZooMain_localization,Repeater line.,Goodbye.,Tot ziens.,SAY.Dialog:SadGoodbye.12.Sad Ass
+Sad Ass,E6,E6_Nightmare_localization,Start NPC dialogue.,Hullo Comrade...,Hallo'kes Kameraad...,SAY.Dialog:Sad_Normal.36.Sad Ass
+Sad Ass,E6,E6_Nightmare_localization,,Thanks again for taking Lazy's shift today.,Bedankt nogmaals da ge de shift van Luie overneemt vandaag.,SAY.Dialog:Sad_Normal.20.Sad Ass
+Sad Ass,E6,E6_Nightmare_localization,End NPC dialogue.,I love seeing her when she is happy.,Ik zie haar zo graag als ze blij is...,SAY.Dialog:Sad_Normal.35.Sad Ass
+Sad Ass,E6,E6_Nightmare_localization,Repeater line.,Who could say no to Lazy's beautiful grey eyes?,Wie zou nee kunnen zeggen tegen Luie haar prachtige grijze ogen...,SAY.Dialog:Sad_Normal.21.Sad Ass
+Sad Ass,E6,E6_Nightmare_localization,"NPC Dialogue (single line). Nightmare sequence.
+Sad explodes.",HAHAHAHAHAHAHAHAHAHA...,HAHAHAHAHAHAHAHAHAHA...,SAY.Dialog:Sad_Horror.1.Sad Ass
+Sad Ass,E6,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,Time to put you out of YOUR misery...,Tijd om u uit UW lijden te verlossen...,SAY.DialogMaster.29.Sad Ass
 Shaky Ass,E4,E4_AstralPlaneMain_localization,Sick meets one of the drug-using donkeys: Shaky or Mellow or Trippy,I'M HAVING AN OUT-OF-BODY EXPERIENCE!,IK ZWEEF UIT MIJN LICHAAM!,SAY.Dialog:Shakey.10.Shaky Ass
 Shaky Ass,E4,E4_AstralPlaneMain_localization,,"WHAT THE FUCK, I'M WATCHING MY OWN BODY.","WHAT DE FUCK, IK KAN MIJN EIGEN LICHAAM ZIEN.",SAY.Dialog:Shakey.19.Shaky Ass
 Shaky Ass,E4,E4_AstralPlaneMain_localization,Repeater line.,NOW I CAN FEEL IT IN MY BONES!,NU KAN IK MIJN BEENDEREN VOELEN!,SAY.Dialog:Shakey.12.Shaky Ass
@@ -1240,6 +1314,9 @@ Sick Ass,E4,E4_AstralPlaneMain_localization,Dialogue option 1.1. COUGH (YES),*CO
 Sick Ass,E4,E4_AstralPlaneMain_localization,Dialogue option 1.2. COUGH COUGH (NO),*COUGH COUGH*,*HOEST HOEST*,SAY.Dialog:DJDopePreConcert.95.Sick Ass
 Sick Ass,E4,E4_AstralPlaneMain_localization,Dialogue option 1.1. COUGH (YES),*COUGH*,*HOEST*,SAY.Dialog:Smelly.20.Sick Ass
 Sick Ass,E4,E4_AstralPlaneMain_localization,Dialogue option 1.2. COUGH COUGH (NO),*COUGH COUGH*,*HOEST HOEST*,SAY.Dialog:Smelly.22.Sick Ass
+Sick Ass,E6,E6_Nightmare_localization,NPC Dialogue (single line). Repeater line.,*COUGH*,*HOEST*,SAY.Dialog:Sick_Normal.20.Sick Ass
+Sick Ass,E6,E6_Nightmare_localization,NPC Dialogue. Nightmare sequence.,*COUGH COUGH*,*HOEST HOEST*,SAY.Dialog:Sick_Horror.1.Sick Ass
+Sick Ass,E6,E6_Nightmare_localization,Sick Ass falls over dead and an Indiana Jones boulder appears behind her.,{s}{s=10}Turn around.{/s},{s}{s=10}*KUCH KUCH{/s},SAY.Dialog:Sick_Horror.14.Sick Ass
 Slow Ass,E1,E1_Farm_localization,Slow (male) Wood Quest,Trusty! I'm so p-pleased to see you!,Trouwe Zak! Ik b-ben zo blij je te z-zien!,SAY.Dialog:SlowWoodQuest.1.Slow Ass
 Slow Ass,E1,E1_Farm_localization,"Note: In English, Slow Ass stutters happen on the same letters throughout the game: b, p
 
@@ -1662,7 +1739,12 @@ Sturdy Ass,E4,E4_HerdSplits_localization,,The only thing we have left is each ot
 Sturdy Ass,E4,E4_HerdSplits_localization,,"Any Ass who leaves, betrays the Herd.","Moest een Ezel de Kudde willen verlaten, dan is dat verraad.",SAY.Dialog:Debate.174.Sturdy Ass
 Sturdy Ass,E4,E4_Mine1F_Exit_localization,NPC dialogue option. No particular order for when you talk to someone.,"Comrade, is this what Sick would have wanted?","Kameraad, is dit wat Snotje zou gewenst hebben?",SAY.Dialog:SturdyPostSplit.10.Sturdy Ass
 Sturdy Ass,E4,E4_Mine1F_Exit_localization,Repeater line.,It's going to break {$NewName}'s heart to know you're all gone.,"Dit zal {$NewName}'s hart verpletteren, te weten dat jullie allemaal weg zijn.",SAY.Dialog:SturdyPostSplit.24.Sturdy Ass
+Sturdy Ass,E6,E6_BattleHard_localization,NPC Dialogue on entrance to the fight.,"Comrade, you've gotten weak. It's only a matter of time until you crack.","Kameraad, ge zijt zwak geworden. 't Is nog maar een kwestie van tijd eer ge barst.",SAY.DialogMaster.34.Sturdy Ass
+Sturdy Ass,E6,E6_World_localization,"Branch (1.1, and 1.2) converge. 
+The scene fades in to Sturdy Ass and the Foal standing in front of Hard Ass.",Comrade?,Kameraad?,SAY.Dialog:PostNightmare.7.Sturdy Ass
+Sturdy Ass,E6,E6_World_localization,,It's not like you to nod off at your post.,"'t Is niks voor u om in te dommelen op uw post, Kameraad.",SAY.Dialog:PostNightmare.23.Sturdy Ass
 Sturdy Ass,E6,E6_Church_localization,Sturdy looks at the mural on the wall of the church.,I wonder if they ever got to where they were going...,"Lorem ipsum dolor sit amet, consecteturew adipiscing elit. Nulla id sapien ut metus duba dapibus auctor. Nunc blandit in fermentumm",SAY.Dialog:Church.1.Sturdy Ass
+Sturdy Ass,E6,E6_Stable2F_localization,Repeater line.,I wonder what you'd think of all that's happened...,Ik vraag me af wat ge zoudt denken van alles wat er gebeurd is...,SAY.Dialog:OldBody.12.Sturdy Ass
 Sulky Ass,E4,E4_AstralPlaneMain_localization,Sick talks with a donkey from HAW—Humans Are the Worst (An AntiHuman group of donkeys),I hear the Humans have some new ways of killing that don’t hurt.,Ik heb gehoord dat de Mensen een nieuwe manier hebben om te doden. Eentje die géén pijn doet.,SAY.Dialog:Sulky.10.Sulky Ass
 Sulky Ass,E4,E4_AstralPlaneMain_localization,,"Well in my day, it was just the good old throat slit.","In mijnen tijd, was het gewoon het mes over de keel.",SAY.Dialog:Sulky.18.Sulky Ass
 Sulky Ass,E4,E4_AstralPlaneMain_localization,,You ever have your throat slit in front of your loved ones?,Heb je ooit je keel overgesneden gehad in het bijzijn van je geliefden?,SAY.Dialog:Sulky.19.Sulky Ass
@@ -1745,6 +1827,7 @@ Thirsty Ass,E4,E4_HerdSplits_localization,,Nice Ass what are you going to do?,"S
 Thirsty Ass,E4,E4_HerdSplits_localization,,"Then heck, I’m staying too!",Allez dan! Ik blijf hier ook!,SAY.Dialog:Debate.192.Thirsty Ass
 Thirsty Ass,E4,E4_Mine1F_Exit_localization,NPC dialogue option. No particular order for when you talk to someone.,"Heck, I know we ain't seein' eye to eye, but I'm gonna miss y'all...","Gedoemme, ik weet dat het niet altijd koek en ei is, maar ik ga jullie missen, héé...",SAY.Dialog:ThristyPostSplit.10.Thirsty Ass
 Thirsty Ass,E4,E4_Mine1F_Exit_localization,Repeater line.,You just standin' there to make me cry more are ya? Git goin'!,"Sta je daar nu gewoon te staan om mij meer te doen bleiten? Maakt dat je weg bent, héé!",SAY.Dialog:ThristyPostSplit.12.Thirsty Ass
+Thirsty Ass,E6,E6_BattleHard_localization,NPC Dialogue on entrance to the fight. (Spoken by Thirsty),"Heck, I don't have a drop of respect left for you.","Godver, ik heb geen druppel respect meer over voor jansen, héé.",SAY.DialogMaster.19.Thirsty Ass
 Tight Ass,E4,E4_AstralPlaneMain_localization,Camera cuts to a rally: Tight Ass addressing a group of newly arrived donkeys,And that's why no Ass leaves the Astral Plane!,En dat is waarom geen enkele Ezel het Astrale Hiernamaals verlaat!,SAY.Dialog:OldAss.89.Tight Ass
 Tight Ass,E4,E4_AstralPlaneMain_localization,,"If you try to leave to get reassigned, what are you???","Als je probeert weg te gaan om herverkoren te worden, wat ben je dan???",SAY.Dialog:OldAss.100.Tight Ass
 Tight Ass,E4,E4_AstralPlaneMain_localization,Needs a space at end,"Say it again! If you leave, you are a—","Opnieuw! Als je weggaat, ben je een —",SAY.Dialog:OldAss.102.Tight Ass

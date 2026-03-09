@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
 import * as XLSX from 'xlsx';
-import { toast } from 'sonner';
+import { toast } from '@/lib/toast';
 
 export interface ExcelProcessingState {
   // Excel processing state

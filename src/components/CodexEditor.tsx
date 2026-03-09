@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import { toast } from 'sonner';
+import { toast } from '@/lib/toast';
 import Button from './ui/Button';
 import { Input, Select } from './ui/Input';
 
@@ -307,7 +307,7 @@ const ImportSection: React.FC<ImportSectionProps> = ({ onImport }) => {
         className={`
           p-6 border-2 border-dashed cursor-pointer transition-all duration-200 text-center
           ${isDragging
-            ? 'border-blue-500 bg-blue-50 dark:bg-blue-900/20'
+            ? 'border-blue-500 bg-amber-50 dark:bg-amber-900/20'
             : 'border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-gray-50 dark:bg-gray-800/50'
           }
         `}
@@ -668,26 +668,9 @@ const DeleteConfirmDialog: React.FC<DeleteConfirmDialogProps> = ({
 // CATEGORY BADGE
 // ============================================================================
 
-const getCategoryBadgeClass = (category: string): string => {
-  const cat = category?.toUpperCase() || '';
-  switch (cat) {
-    case 'CHARACTER':
-      return 'bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 border border-blue-300 dark:border-blue-700';
-    case 'LOCATION':
-      return 'bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700';
-    case 'ITEM':
-      return 'bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-300 border border-amber-300 dark:border-amber-700';
-    case 'CONCEPT':
-      return 'bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 border border-purple-300 dark:border-purple-700';
-    case 'ORGANIZATION':
-      return 'bg-rose-100 dark:bg-rose-900/40 text-rose-700 dark:text-rose-300 border border-rose-300 dark:border-rose-700';
-    case 'SPECIES':
-      return 'bg-cyan-100 dark:bg-cyan-900/40 text-cyan-700 dark:text-cyan-300 border border-cyan-300 dark:border-cyan-700';
-    case 'TERM':
-      return 'bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-700';
-    default:
-      return 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600';
-  }
+const getCategoryBadgeClass = (_category: string): string => {
+  // Unified gray badge — category text itself provides differentiation
+  return 'bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-600';
 };
 
 // ============================================================================
@@ -870,7 +853,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                     className={`
                       cursor-pointer transition-colors
                       ${editingName === entry.name
-                        ? 'bg-blue-50 dark:bg-blue-900/20'
+                        ? 'bg-amber-50 dark:bg-amber-900/20'
                         : index % 2 === 0
                           ? 'bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700/80'
                           : 'bg-gray-50/50 dark:bg-gray-800/50 hover:bg-gray-100 dark:hover:bg-gray-700/80'
@@ -895,7 +878,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
 
                   {/* Edit row (expanded) - Full Field Editing */}
                   {editingName === entry.name && (
-                    <tr className="bg-blue-50 dark:bg-blue-900/10 border-t border-blue-200 dark:border-blue-800">
+                    <tr className="bg-amber-50 dark:bg-amber-900/10 border-t border-amber-200 dark:border-amber-800">
                       <td colSpan={4} className="px-4 py-4">
                         <div className="space-y-4">
                           {/* Row 1: English, Dutch, Category */}
@@ -908,7 +891,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                 type="text"
                                 value={editData.english || ''}
                                 onChange={(e) => setEditData(prev => ({ ...prev, english: e.target.value }))}
-                                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm"
                                 style={{ borderRadius: '3px' }}
                                 onClick={(e) => e.stopPropagation()}
                               />
@@ -921,7 +904,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                 type="text"
                                 value={(editData[TRANSLATION_FIELD] || '') as string}
                                 onChange={(e) => setEditData(prev => ({ ...prev, [TRANSLATION_FIELD]: e.target.value }))}
-                                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm"
                                 style={{ borderRadius: '3px' }}
                                 onClick={(e) => e.stopPropagation()}
                               />
@@ -933,7 +916,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                               <select
                                 value={editData.category || ''}
                                 onChange={(e) => setEditData(prev => ({ ...prev, category: e.target.value }))}
-                                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm"
                                 style={{ borderRadius: '3px' }}
                                 onClick={(e) => e.stopPropagation()}
                               >
@@ -968,7 +951,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   value={editData.description || ''}
                                   onChange={(e) => setEditData(prev => ({ ...prev, description: e.target.value }))}
                                   placeholder="e.g., Character, Location"
-                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm"
                                   style={{ borderRadius: '3px' }}
                                   onClick={(e) => e.stopPropagation()}
                                 />
@@ -982,7 +965,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   value={editData.bio || ''}
                                   onChange={(e) => setEditData(prev => ({ ...prev, bio: e.target.value }))}
                                   placeholder="Short biography"
-                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm"
                                   style={{ borderRadius: '3px' }}
                                   onClick={(e) => e.stopPropagation()}
                                 />
@@ -994,7 +977,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                 <select
                                   value={editData.gender || ''}
                                   onChange={(e) => setEditData(prev => ({ ...prev, gender: e.target.value }))}
-                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm"
                                   style={{ borderRadius: '3px' }}
                                   onClick={(e) => e.stopPropagation()}
                                 >
@@ -1013,7 +996,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   value={editData.dialogueStyle || ''}
                                   onChange={(e) => setEditData(prev => ({ ...prev, dialogueStyle: e.target.value }))}
                                   placeholder="Speech pattern notes"
-                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm"
                                   style={{ borderRadius: '3px' }}
                                   onClick={(e) => e.stopPropagation()}
                                 />
@@ -1051,7 +1034,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   handleSave(entry);
                                 }}
                                 disabled={isLoading || !editData[TRANSLATION_FIELD]}
-                                className="inline-flex items-center gap-1 px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-bold uppercase disabled:opacity-50 transition-colors"
+                                className="inline-flex items-center gap-1 px-3 py-1.5 bg-gray-900 hover:bg-gray-800 dark:bg-gray-100 dark:hover:bg-gray-200 dark:text-gray-900 text-white text-xs font-bold uppercase disabled:opacity-50 transition-colors"
                                 style={{ borderRadius: '3px' }}
                               >
                                 <CheckIcon />
@@ -1244,26 +1227,8 @@ const CodexEditor: React.FC<CodexEditorProps> = ({ onCodexUpdated }) => {
 
   return (
     <div className="space-y-4">
-      {/* Header */}
-      <div className="flex items-center justify-between">
-        <div>
-          <h3 className="text-lg font-bold text-gray-900 dark:text-gray-100">
-            Codex Editor
-          </h3>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            Manage translation reference data
-          </p>
-        </div>
-        <span className="inline-flex items-center px-2.5 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium" style={{ borderRadius: '3px' }}>
-          {entries.length} entries
-        </span>
-      </div>
-
-      {/* Quick Edit Table (always visible, first for primary workflow) */}
-      <div className="border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 p-4" style={{ borderRadius: '3px' }}>
-        <h4 className="text-sm font-bold text-gray-900 dark:text-gray-100 uppercase tracking-wide mb-4">
-          Browse & Edit
-        </h4>
+      {/* Quick Edit Table (always visible, primary workflow) */}
+      <div>
         <QuickEditTable
           entries={entries}
           categories={categories}

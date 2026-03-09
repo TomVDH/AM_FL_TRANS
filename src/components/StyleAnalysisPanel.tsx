@@ -68,18 +68,18 @@ function relativeTime(isoStr: string): string {
   return `${days}d ago`;
 }
 
-// Phase colors
+// Phase colors — unified gray, no rainbow
 const PHASE_COLORS: Record<number, string> = {
-  1: 'text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30',
-  2: 'text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30',
-  3: 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30',
+  1: 'text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700',
+  2: 'text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700',
+  3: 'text-gray-600 dark:text-gray-400 bg-gray-100 dark:bg-gray-700',
 };
 
 // ---------------------------------------------------------------------------
 // Component
 // ---------------------------------------------------------------------------
 
-export default function StyleAnalysisPanel() {
+export default function StyleAnalysisPanel({ embedded = false }: { embedded?: boolean } = {}) {
   const [status, setStatus] = useState<AnalysisStatus | null>(null);
   const [loading, setLoading] = useState(true);
   const [runningStep, setRunningStep] = useState<string | null>(null);
@@ -184,49 +184,18 @@ export default function StyleAnalysisPanel() {
     ? `${status.codex.enrichedCount}/${status.codex.totalCharacters} characters enriched`
     : 'Loading...';
 
-  return (
-    <div className="border border-gray-200 dark:border-gray-700" style={{ borderRadius: '3px' }}>
-      {/* Header — always visible */}
-      <button
-        onClick={() => setExpanded(!expanded)}
-        className="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"
-      >
-        <div className="flex items-center gap-2">
-          {/* Sparkles icon */}
-          <svg className="w-4 h-4 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
-          </svg>
-          <span className="text-xs font-bold text-gray-700 dark:text-gray-200 uppercase tracking-wide">
-            Speaker Style Analysis
-          </span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          {/* Summary badge */}
-          {!loading && status?.codex && (
-            <span className={`text-[10px] font-medium px-1.5 py-0.5 ${enrichmentPercent === 100 ? 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30' : 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30'}`} style={{ borderRadius: '2px' }}>
-              {summaryText}
-            </span>
-          )}
-          {/* Chevron */}
-          <svg className={`w-4 h-4 text-gray-400 transition-transform ${expanded ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-          </svg>
-        </div>
-      </button>
-
-      {/* Expanded content */}
-      {expanded && (
-        <div className="border-t border-gray-200 dark:border-gray-700">
-          {loading ? (
+  // Content block shared by both modes
+  const content = (
+    <>
+      {loading ? (
             <div className="px-4 py-6 text-center">
-              <div className="animate-spin h-5 w-5 border-2 border-purple-500 border-t-transparent mx-auto mb-2" style={{ borderRadius: '50%' }} />
+              <div className="animate-spin h-5 w-5 border-2 border-gray-500 border-t-transparent mx-auto mb-2" style={{ borderRadius: '50%' }} />
               <p className="text-xs text-gray-500 dark:text-gray-400">Loading pipeline status...</p>
             </div>
           ) : status ? (
             <div className="p-4 space-y-4">
               {/* Enrichment overview */}
-              <div className="grid grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {/* English enrichment */}
                 <div className="p-2 bg-gray-50 dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700" style={{ borderRadius: '3px' }}>
                   <div className="flex items-center justify-between mb-1">
@@ -235,7 +204,7 @@ export default function StyleAnalysisPanel() {
                   </div>
                   <div className="h-1.5 bg-gray-200 dark:bg-gray-700 overflow-hidden" style={{ borderRadius: '1px' }}>
                     <div
-                      className={`h-full transition-all duration-500 ${enrichmentPercent === 100 ? 'bg-green-500' : 'bg-purple-500'}`}
+                      className={`h-full transition-all duration-500 ${enrichmentPercent === 100 ? 'bg-amber-500' : 'bg-amber-400'}`}
                       style={{ width: `${enrichmentPercent}%` }}
                     />
                   </div>
@@ -252,7 +221,7 @@ export default function StyleAnalysisPanel() {
                   </div>
                   <div className="h-1.5 bg-gray-200 dark:bg-gray-700 overflow-hidden" style={{ borderRadius: '1px' }}>
                     <div
-                      className={`h-full transition-all duration-500 ${dutchEnrichmentPercent === 100 ? 'bg-green-500' : 'bg-orange-500'}`}
+                      className={`h-full transition-all duration-500 ${dutchEnrichmentPercent === 100 ? 'bg-amber-500' : 'bg-amber-400'}`}
                       style={{ width: `${dutchEnrichmentPercent}%` }}
                     />
                   </div>
@@ -281,7 +250,7 @@ export default function StyleAnalysisPanel() {
                   <button
                     onClick={runFullPipeline}
                     disabled={!!runningStep}
-                    className="text-[10px] font-bold text-purple-600 dark:text-purple-400 hover:text-purple-800 dark:hover:text-purple-300 disabled:opacity-40 disabled:cursor-not-allowed transition-colors uppercase tracking-wide"
+                    className="text-[10px] font-bold text-amber-600 dark:text-amber-400 hover:text-amber-800 dark:hover:text-amber-300 disabled:opacity-40 disabled:cursor-not-allowed transition-colors uppercase tracking-wide"
                   >
                     {runningStep ? 'Running...' : 'Run All'}
                   </button>
@@ -301,7 +270,7 @@ export default function StyleAnalysisPanel() {
                   return (
                     <div
                       key={step.id}
-                      className={`flex items-center gap-2 px-2 py-1.5 border border-gray-100 dark:border-gray-700 transition-colors ${isRunning ? 'bg-purple-50/50 dark:bg-purple-900/10' : 'bg-white dark:bg-gray-800/30'}`}
+                      className={`flex items-center gap-2 px-2 py-1.5 border border-gray-100 dark:border-gray-700 transition-colors ${isRunning ? 'bg-amber-50/50 dark:bg-amber-900/10' : 'bg-white dark:bg-gray-800/30'}`}
                       style={{ borderRadius: '3px' }}
                     >
                       {/* Phase badge */}
@@ -313,7 +282,7 @@ export default function StyleAnalysisPanel() {
                       <span className="text-[11px] text-gray-700 dark:text-gray-300 flex-1 min-w-0 truncate">
                         {step.label}
                         {step.apiCall && (
-                          <span className="ml-1 text-[9px] text-amber-500" title="Uses Claude API">⚡</span>
+                          <span className="ml-1.5 inline-flex items-center px-1 py-px text-[8px] font-bold uppercase tracking-wide bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 rounded" title="Uses Claude API (costs apply)">AI</span>
                         )}
                       </span>
 
@@ -332,10 +301,10 @@ export default function StyleAnalysisPanel() {
                         onClick={() => runStep(step.id)}
                         disabled={!!runningStep || depMissing}
                         title={depMissing ? `Requires "${STEPS.find(s => s.id === step.dependsOn)?.label}" first` : `Run: ${step.label}`}
-                        className="flex-shrink-0 p-1 text-gray-400 hover:text-purple-600 dark:hover:text-purple-400 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                        className="flex-shrink-0 p-1 text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
                       >
                         {isRunning ? (
-                          <div className="animate-spin h-3 w-3 border-[1.5px] border-purple-500 border-t-transparent" style={{ borderRadius: '50%' }} />
+                          <div className="animate-spin h-3 w-3 border-[1.5px] border-gray-500 border-t-transparent" style={{ borderRadius: '50%' }} />
                         ) : (
                           <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
@@ -369,6 +338,36 @@ export default function StyleAnalysisPanel() {
               Failed to load pipeline status
             </div>
           )}
+    </>
+  );
+
+  // Embedded mode: no accordion, content shown directly
+  if (embedded) {
+    return <div>{content}</div>;
+  }
+
+  // Standalone mode: accordion wrapper
+  return (
+    <div>
+      <button
+        onClick={() => setExpanded(!expanded)}
+        className="flex-1 w-full flex items-center justify-between py-1.5 text-gray-800 dark:text-gray-200 hover:text-gray-900 dark:hover:text-gray-100 transition-colors"
+      >
+        <span className="flex items-center gap-2.5">
+          <span className="text-sm font-bold tracking-tight">Speaker Style Analysis</span>
+          {!loading && status?.codex && (
+            <span className="px-1.5 py-0.5 text-[10px] font-semibold rounded text-amber-700 dark:text-amber-400 bg-amber-100 dark:bg-amber-900/30">
+              {summaryText}
+            </span>
+          )}
+        </span>
+        <svg className={`w-4 h-4 text-gray-400 transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+      {expanded && (
+        <div className="mt-2 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800" style={{ borderRadius: '3px' }}>
+          {content}
         </div>
       )}
     </div>

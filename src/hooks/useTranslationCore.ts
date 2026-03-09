@@ -11,7 +11,7 @@
  */
 
 import { useState, useCallback, useRef } from 'react';
-import { toast } from 'sonner';
+import { toast } from '@/lib/toast';
 import { BLANK_PLACEHOLDER } from '@/constants';
 import {
   convertBlankToDisplay,

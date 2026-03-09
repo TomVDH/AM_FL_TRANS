@@ -24,9 +24,9 @@ interface SurroundingLine {
 type ModelTier = 'haiku' | 'sonnet' | 'opus';
 
 const MODEL_MAP: Record<ModelTier, { id: string; maxTokens: number }> = {
-  haiku: { id: 'claude-haiku-4-5-20251001', maxTokens: 200 },
-  sonnet: { id: 'claude-sonnet-4-6', maxTokens: 300 },
-  opus: { id: 'claude-opus-4-6', maxTokens: 400 },
+  haiku: { id: 'claude-haiku-4-5-20251001', maxTokens: 300 },
+  sonnet: { id: 'claude-sonnet-4-6', maxTokens: 400 },
+  opus: { id: 'claude-opus-4-6', maxTokens: 500 },
 };
 
 interface SuggestRequest {
@@ -191,28 +191,47 @@ export async function POST(request: NextRequest) {
     contextParts.push(`Current translation (for reference): ${existingTranslation}`);
   }
 
-  const prompt = `You are translating dialogue for "Asses & Masses" (Dutch: "Ezels & Massa's"), an animated series about donkeys in an allegorical society. Translate the following English dialogue line into Dutch.
+  const prompt = `Translate this ONE English dialogue line into Dutch for the animated series "Asses & Masses" ("Ezels & Massa's") about donkeys in an allegorical society.
 
-${contextParts.length > 0 ? contextParts.join('\n\n') + '\n\n' : ''}English: "${english}"
+${contextParts.length > 0 ? contextParts.join('\n\n') + '\n\n' : ''}THE LINE TO TRANSLATE:
+"${english}"
 
-Provide ONLY the Dutch translation. No explanation, no alternatives, no quotes around the result. Match the character's established Dutch voice and register. Preserve tone, humor, and any verbal tics. If the line contains sound effects (like *cough* or *sigh*), keep them as-is or use the Dutch equivalent.`;
+RULES:
+- Output ONLY the Dutch translation wrapped in <translation> tags
+- No explanation, no commentary, no alternatives, no preamble
+- Match the character's established Dutch voice and register
+- Preserve tone, humor, wordplay, and verbal tics
+- Keep sound effects as-is or use Dutch equivalent (*cough* → *kuch*)
+- Translate ONLY the line above — ignore any similarity to context lines
+
+<translation>your Dutch translation here</translation>`;
 
   try {
-    const client = new Anthropic({ apiKey });
+    const client = new Anthropic({ apiKey, timeout: 40_000 }); // 40s timeout
+    const apiStart = Date.now();
+    console.log(`[AI Suggest API] Calling ${modelId} for: "${english.substring(0, 50)}"...`);
+
     const response = await client.messages.create({
       model: modelId,
       max_tokens: maxTokens,
       messages: [{ role: 'user', content: prompt }]
     });
 
-    const suggestion = response.content[0].type === 'text'
+    const apiDuration = ((Date.now() - apiStart) / 1000).toFixed(1);
+    console.log(`[AI Suggest API] Response in ${apiDuration}s (${response.usage?.input_tokens || '?'} in / ${response.usage?.output_tokens || '?'} out) — stop: ${response.stop_reason}`);
+
+    const rawText = response.content[0].type === 'text'
       ? response.content[0].text.trim()
       : '';
+
+    // Extract from <translation> tags, fall back to raw text
+    const tagMatch = rawText.match(/<translation>([\s\S]*?)<\/translation>/);
+    const suggestion = tagMatch ? tagMatch[1].trim() : rawText.replace(/<\/?translation>/g, '').trim();
 
     return NextResponse.json({ suggestion, model: modelTier });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Unknown error';
-    console.error('AI suggest error:', message);
+    console.error(`[AI Suggest API] ERROR after request: ${message}`);
     return NextResponse.json({ error: message }, { status: 500 });
   }
 }

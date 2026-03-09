@@ -48,12 +48,8 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
     );
   }
 
-  const coverage = selectedLanguage
-    ? `${selectedLanguage.sheets.length} of ${selectedLanguage.totalSheets}`
-    : '';
-
   return (
-    <div className="space-y-2">
+    <div className="space-y-1.5">
       <div className="flex items-center gap-2">
         <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -63,41 +59,32 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
         </span>
       </div>
 
-      <select
-        value={selectedLanguage ? `${selectedLanguage.code}-${selectedLanguage.column}` : ''}
-        onChange={(e) => {
-          const selected = languages.find(
-            lang => `${lang.code}-${lang.column}` === e.target.value
+      <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 inline-flex" style={{ borderRadius: '3px' }}>
+        {languages.map((lang) => {
+          const isActive = selectedLanguage &&
+            `${selectedLanguage.code}-${selectedLanguage.column}` === `${lang.code}-${lang.column}`;
+          return (
+            <button
+              key={`${lang.code}-${lang.column}`}
+              onClick={() => onSelectLanguage(lang)}
+              disabled={disabled}
+              className={`px-3 py-1.5 text-xs font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed ${
+                isActive
+                  ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
+                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+              }`}
+              style={{ borderRadius: '2px' }}
+            >
+              {lang.name} <span className="text-gray-400 dark:text-gray-500">({lang.code})</span>
+            </button>
           );
-          if (selected) {
-            onSelectLanguage(selected);
-          }
-        }}
-        disabled={disabled}
-        className="w-full px-3 py-2 text-sm border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:border-gray-500 focus:ring-1 focus:ring-gray-500/20 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-        style={{ borderRadius: '3px' }}
-      >
-        {languages.map((lang) => (
-          <option key={`${lang.code}-${lang.column}`} value={`${lang.code}-${lang.column}`}>
-            {lang.name} ({lang.code}) — Column {lang.column}
-          </option>
-        ))}
-      </select>
+        })}
+      </div>
 
-      {selectedLanguage && (
-        <div className="flex items-center gap-2 text-xs">
-          <svg className="w-3.5 h-3.5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-          </svg>
-          <span className="text-green-600 dark:text-green-400">
-            Available in {coverage} sheets
-          </span>
-          {selectedLanguage.sheets.length < selectedLanguage.totalSheets && (
-            <span className="text-amber-500 dark:text-amber-400 text-[10px]">
-              (not all sheets)
-            </span>
-          )}
-        </div>
+      {selectedLanguage && selectedLanguage.sheets.length < selectedLanguage.totalSheets && (
+        <p className="text-[10px] text-amber-500 dark:text-amber-400">
+          Available in {selectedLanguage.sheets.length} of {selectedLanguage.totalSheets} sheets
+        </p>
       )}
     </div>
   );

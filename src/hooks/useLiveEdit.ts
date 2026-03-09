@@ -12,7 +12,7 @@
  */
 
 import { useState, useCallback, useRef, useMemo } from 'react';
-import { toast } from 'sonner';
+import { toast } from '@/lib/toast';
 import { BLANK_PLACEHOLDER } from '@/constants';
 
 // ============================================================================

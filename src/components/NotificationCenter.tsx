@@ -97,7 +97,7 @@ export default function NotificationCenter({
         {/* Bell SVG */}
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-5 w-5"
+          className="h-4 w-4"
           viewBox="0 0 20 20"
           fill="currentColor"
           aria-hidden="true"
@@ -120,7 +120,7 @@ export default function NotificationCenter({
       {open && (
         <div
           ref={panelRef}
-          className="absolute right-0 top-full mt-2 w-80 max-w-sm max-h-96 overflow-y-auto bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg z-50"
+          className="absolute right-0 bottom-full mb-2 w-80 max-w-sm max-h-96 overflow-y-auto bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg z-50"
           style={{ borderRadius: '3px' }}
           role="dialog"
           aria-label="Notification center"

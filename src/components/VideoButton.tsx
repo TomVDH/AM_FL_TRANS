@@ -13,20 +13,21 @@ const VideoButton: React.FC<VideoButtonProps> = ({ className = '' }) => {
   return (
     <button
       onClick={handleVideoClick}
-      className={`group relative h-11 w-11 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 hover:shadow-md transition-all duration-300 ease-out overflow-hidden ${className}`}
+      className={`group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden ${className}`}
+      style={{ borderRadius: '3px' }}
       title="Watch Video Tutorial"
       aria-label="Watch Video Tutorial"
-      style={{ borderRadius: '3px' }}
     >
       <svg
-        className="w-4 h-4 relative z-10"
+        className="w-3 h-3 relative z-10"
         fill="currentColor"
         viewBox="0 0 24 24"
         aria-hidden="true"
       >
         <path d="M8 5v14l11-7z"/>
       </svg>
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-out" style={{ borderRadius: '3px' }} />
+      <span className="text-[10px] font-medium relative z-10">Video</span>
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
     </button>
   );
 };

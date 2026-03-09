@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useRef, useEffect, useMemo } from 'react';
 import * as XLSX from 'xlsx';
-import { toast } from 'sonner';
+import { toast } from '@/lib/toast';
 import { extractEpisodeNumber } from '@/utils/episodeExtractor';
 import { useLiveEdit } from './useLiveEdit';
 import type { SyncStatus } from './useLiveEdit';
