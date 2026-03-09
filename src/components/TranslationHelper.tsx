@@ -848,9 +848,9 @@ const TranslationHelper: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex flex-col transition-colors duration-300" style={{ animation: 'fadeIn 0.5s ease-out' }}>
-      {/* Main Content Area - Flex-grow to push footer down */}
-      <main className="flex-1 max-w-7xl mx-auto w-full px-3 md:px-5 pt-3 md:pt-5 flex flex-col">
+    <div className="h-screen bg-gray-50 dark:bg-gray-900 flex flex-col overflow-hidden transition-colors duration-300" style={{ animation: 'fadeIn 0.5s ease-out' }}>
+      {/* Main Content Area - scrolls internally, footer stays pinned */}
+      <main className="flex-1 min-h-0 overflow-y-auto max-w-7xl mx-auto w-full px-3 md:px-5 pt-3 md:pt-5 flex flex-col">
         {/* Header — Two-Row Bar */}
         <div className="mb-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm" style={{ borderRadius: '3px' }}>
           {/* Row 0: Logo banner + file info + timer */}

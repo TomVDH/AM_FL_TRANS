@@ -191,7 +191,16 @@ export async function POST(request: NextRequest) {
     contextParts.push(`Current translation (for reference): ${existingTranslation}`);
   }
 
-  const prompt = `Translate this ONE English dialogue line into Dutch for the animated series "Asses & Masses" ("Ezels & Massa's") about donkeys in an allegorical society.
+  const prompt = `Translate this ONE English dialogue line into Flemish Belgian Dutch (Vlaams) for the animated series "Asses & Masses" ("Ezels & Massa's") about donkeys in an allegorical society. This is a Belgian production for a Belgian audience.
+
+FLEMISH BASELINE (use unless the character's Dutch translation style below says otherwise):
+- Default register is informal Flemish Belgian Dutch, NOT Netherlandic Dutch
+- Use "ge/gij" pronouns (not "jij/je") and "u" for formal address
+- Use Flemish negation "nie" (not "niet"), contractions "'k" (ik), "'t" (het)
+- Use "-ke" diminutives (manneke, beetje → beetke) where natural
+- Prefer Flemish vocabulary: "schoon" (mooi), "goesting" (zin), "ni waar" (toch), "allez", "amai"
+- Keep sentences direct and punchy — spoken Flemish, not written Dutch
+- If a character has a specific "Dutch translation style" below, that OVERRIDES this baseline
 
 ${contextParts.length > 0 ? contextParts.join('\n\n') + '\n\n' : ''}THE LINE TO TRANSLATE:
 "${english}"
@@ -201,10 +210,10 @@ RULES:
 - No explanation, no commentary, no alternatives, no preamble
 - Match the character's established Dutch voice and register
 - Preserve tone, humor, wordplay, and verbal tics
-- Keep sound effects as-is or use Dutch equivalent (*cough* → *kuch*)
+- Keep sound effects as-is or use Flemish equivalent (*cough* → *kuch*, *sigh* → *zucht*)
 - Translate ONLY the line above — ignore any similarity to context lines
 
-<translation>your Dutch translation here</translation>`;
+<translation>your Flemish Dutch translation here</translation>`;
 
   try {
     const client = new Anthropic({ apiKey, timeout: 40_000 }); // 40s timeout

@@ -153,12 +153,12 @@ Admin/maintenance tool that uses Claude to analyze character speaking styles acr
 |------|------|
 | `src/app/api/style-analysis/route.ts` | Pipeline runner (spawns scripts) |
 | `src/components/StyleAnalysisPanel.tsx` | Admin UI with per-step controls |
-| `scripts/extract-dialogue-by-speaker.js` | Extracts EN dialogue → CSV |
-| `scripts/extract-dutch-dialogue-by-speaker.js` | Extracts NL dialogue → CSV |
-| `scripts/analyze-speaker-styles.js` | Claude Sonnet → English style profiles |
-| `scripts/analyze-dutch-styles.js` | Claude Sonnet → Dutch style profiles |
-| `scripts/import-styles-to-codex.js` | Writes English styles to codex |
-| `scripts/import-dutch-styles-to-codex.js` | Writes Dutch styles to codex |
+| `scripts/pipeline/extract-dialogue-by-speaker.js` | Extracts EN dialogue → CSV |
+| `scripts/pipeline/extract-dutch-dialogue-by-speaker.js` | Extracts NL dialogue → CSV |
+| `scripts/pipeline/analyze-speaker-styles.js` | Claude Sonnet → English style profiles |
+| `scripts/pipeline/analyze-dutch-styles.js` | Claude Sonnet → Dutch style profiles |
+| `scripts/pipeline/import-styles-to-codex.js` | Writes English styles to codex |
+| `scripts/pipeline/import-dutch-styles-to-codex.js` | Writes Dutch styles to codex |
 
 ### Pipeline Steps
 | # | Step | Script | Uses AI | Output |
@@ -248,7 +248,7 @@ Standalone scripts used for initial bulk translation seeding (before the web UI 
 ### Files
 | File | Model | Notes |
 |------|-------|-------|
-| `scripts/ai-translate.js` | claude-sonnet-4-5-20250929 | Reads JSON episode files, bulk translates |
+| `scripts/ai/ai-translate.js` | claude-sonnet-4-5-20250929 | Reads JSON episode files, bulk translates |
 | `translation-batches/translate-all-batches.js` | claude-sonnet-4-5-20250929 | Processes 64 pre-split batch files, max 16K tokens, temp 0.3 |
 
 ---

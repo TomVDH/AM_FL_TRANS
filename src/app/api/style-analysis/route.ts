@@ -12,32 +12,32 @@ const CODEX_JSON = path.join(ROOT, 'data', 'json', 'codex_translations.json');
 // Pipeline steps mapped to their scripts and expected outputs
 const PIPELINE_STEPS: Record<string, { script: string; args?: string; output?: string; description: string }> = {
   'extract-dialogue': {
-    script: 'scripts/extract-dialogue-by-speaker.js',
+    script: 'scripts/pipeline/extract-dialogue-by-speaker.js',
     output: 'speaker-dialogue.csv',
     description: 'Extract English dialogue by speaker',
   },
   'extract-dutch-dialogue': {
-    script: 'scripts/extract-dutch-dialogue-by-speaker.js',
+    script: 'scripts/pipeline/extract-dutch-dialogue-by-speaker.js',
     output: 'speaker-dutch-dialogue.csv',
     description: 'Extract Dutch dialogue by speaker',
   },
   'analyze-styles': {
-    script: 'scripts/analyze-speaker-styles.js',
+    script: 'scripts/pipeline/analyze-speaker-styles.js',
     output: 'speaker-styles.json',
     description: 'Analyze English speaking styles (Claude API)',
   },
   'analyze-dutch-styles': {
-    script: 'scripts/analyze-dutch-styles.js',
+    script: 'scripts/pipeline/analyze-dutch-styles.js',
     output: 'speaker-dutch-styles.json',
     description: 'Analyze Dutch translation styles (Claude API)',
   },
   'import-styles': {
-    script: 'scripts/import-styles-to-codex.js',
+    script: 'scripts/pipeline/import-styles-to-codex.js',
     args: '--apply',
     description: 'Import English styles into codex',
   },
   'import-dutch-styles': {
-    script: 'scripts/import-dutch-styles-to-codex.js',
+    script: 'scripts/pipeline/import-dutch-styles-to-codex.js',
     args: '--apply',
     description: 'Import Dutch styles into codex',
   },

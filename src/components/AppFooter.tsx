@@ -1,6 +1,7 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { toast as toastEmitter, type ToastEvent } from '@/lib/toast';
 
 interface AppFooterProps {
   darkMode: boolean;
@@ -14,6 +15,36 @@ interface AppFooterProps {
   renderActions?: () => React.ReactNode;
 }
 
+const ICON_COLOR: Record<ToastEvent['type'], string> = {
+  success: 'text-emerald-500',
+  error: 'text-red-500',
+  info: 'text-blue-400 dark:text-blue-300',
+  warning: 'text-amber-500',
+};
+
+const ICON: Record<ToastEvent['type'], React.ReactNode> = {
+  success: (
+    <svg className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" />
+    </svg>
+  ),
+  error: (
+    <svg className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  ),
+  info: (
+    <svg className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  ),
+  warning: (
+    <svg className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+    </svg>
+  ),
+};
+
 export default function AppFooter({
   darkMode,
   toggleDarkMode,
@@ -25,11 +56,66 @@ export default function AppFooter({
   variant = 'setup',
   renderActions,
 }: AppFooterProps) {
+  const [items, setItems] = useState<ToastEvent[]>([]);
+  const timersRef = useRef<Map<string, ReturnType<typeof setTimeout>>>(new Map());
+
+  useEffect(() => {
+    return toastEmitter.subscribe((event) => {
+      setItems((prev) => [...prev.slice(-2), event]); // keep max 3
+
+      if (event.duration > 0) {
+        const timer = setTimeout(() => {
+          setItems((prev) => prev.filter((t) => t.id !== event.id));
+          timersRef.current.delete(event.id);
+        }, event.duration);
+        timersRef.current.set(event.id, timer);
+      }
+    });
+  }, []);
+
+  const dismiss = useCallback((id: string) => {
+    const timer = timersRef.current.get(id);
+    if (timer) { clearTimeout(timer); timersRef.current.delete(id); }
+    setItems((prev) => prev.filter((t) => t.id !== id));
+  }, []);
+
   return (
-    <div className={variant === 'setup' ? 'py-2.5' : 'py-3 px-3 md:px-5 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900'}>
+    <div className={variant === 'setup' ? 'py-2.5' : 'shrink-0 py-3 px-3 md:px-5 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900'}>
+      {/* Inline notifications */}
+      {items.length > 0 && (
+        <div className="flex flex-col gap-1 mb-2">
+          {items.map((item) => (
+            <div
+              key={item.id}
+              className="flex items-center gap-2 animate-[fadeSlideIn_200ms_ease-out]"
+              role="alert"
+            >
+              <span className={ICON_COLOR[item.type]}>{ICON[item.type]}</span>
+              <span className="text-[11px] text-gray-600 dark:text-gray-300 truncate">{item.message}</span>
+              {item.duration === 0 && (
+                <button
+                  onClick={() => dismiss(item.id)}
+                  className="shrink-0 ml-auto text-gray-300 hover:text-gray-500 dark:text-gray-600 dark:hover:text-gray-400 transition-colors"
+                  aria-label="Dismiss"
+                >
+                  <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                </button>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+
       <div className="flex items-center justify-between">
         {/* Left: Branding */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
+          <img
+            src="/images/ass-favico-trans.png"
+            alt=""
+            className="h-5 w-5 dark:invert"
+          />
           <div>
             <p className="text-[11px] font-semibold text-gray-500 dark:text-gray-400 tracking-tight">AM FL TRANS</p>
             <p className="text-[10px] text-gray-400 dark:text-gray-500">
@@ -40,7 +126,6 @@ export default function AppFooter({
 
         {/* Right: Actions */}
         <div className="flex items-center gap-1.5">
-          {/* Extra actions (translation variant) */}
           {renderActions && (
             <>
               {renderActions()}
@@ -48,7 +133,6 @@ export default function AppFooter({
             </>
           )}
 
-          {/* Video + GitHub — setup variant only */}
           {variant === 'setup' && (
             <>
               <button
@@ -77,7 +161,6 @@ export default function AppFooter({
             </>
           )}
 
-          {/* Dark mode toggle */}
           <button
             onClick={toggleDarkMode}
             className="h-7 px-2 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
@@ -94,7 +177,6 @@ export default function AppFooter({
             )}
           </button>
 
-          {/* Version badge */}
           <div
             className="rounded-sm relative cursor-pointer overflow-hidden flex items-center justify-center"
             onMouseEnter={() => onVersionBadgeHover?.(true)}

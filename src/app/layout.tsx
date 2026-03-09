@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Pixelify_Sans, Playfair_Display } from 'next/font/google'
-import ToastContainer from '@/components/ToastContainer'
 import './globals.css'
 
 /**
@@ -30,6 +29,9 @@ const playfairDisplay = Playfair_Display({
 export const metadata: Metadata = {
   title: 'AM Translations Helper',
   description: 'A React TypeScript application for assisting with translation workflows, supporting Excel file uploads and manual text input.',
+  icons: {
+    icon: '/images/ass-favico-white.png',
+  },
 }
 
 /**
@@ -54,7 +56,6 @@ export default function RootLayout({
       </head>
       <body className="antialiased" style={{ position: 'relative', zIndex: 0 }}>
         {children}
-        <ToastContainer />
       </body>
     </html>
   )

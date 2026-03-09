@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Codex Nickname Architecture — Visual Previews</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { background: #f8f8f8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .preview-frame { background: white; border: 1px solid #e5e7eb; border-radius: 6px; padding: 20px; margin-bottom: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.06); }
+  .section-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #9ca3af; margin-bottom: 8px; }
+  .note { font-size: 11px; color: #6b7280; line-height: 1.5; margin-top: 8px; padding: 8px 10px; background: #f9fafb; border-left: 2px solid #d1d5db; border-radius: 0 3px 3px 0; }
+</style>
+</head>
+<body class="p-8 max-w-4xl mx-auto">
+
+<h1 class="text-lg font-bold text-gray-900 mb-1">Codex Nickname Sub-Entries</h1>
+<p class="text-xs text-gray-500 mb-8">Visual previews for per-nickname Dutch translations across UI surfaces</p>
+
+<!-- ============================================ -->
+<!-- PREVIEW 1: Character Info Card (expanded)    -->
+<!-- ============================================ -->
+<div class="preview-frame">
+  <div class="section-label">1 / Character Info Card — Expanded (in Quick Ref bar)</div>
+
+  <!-- The card itself -->
+  <div style="max-width: 480px; border: 1px solid #e9d5ff; border-radius: 4px; background: #faf5ff; overflow: hidden; margin-top: 12px;">
+
+    <!-- Header -->
+    <div style="background: rgba(243,232,255,0.5); border-bottom: 1px solid #e9d5ff; padding: 6px 12px; display: flex; align-items: center; justify-content: space-between;">
+      <div style="display: flex; align-items: center; gap: 6px;">
+        <span style="font-size: 11px; font-weight: 700; color: #581c87;">Angry Ass</span>
+        <span style="font-size: 11px; color: #a855f7;">→</span>
+        <span style="font-size: 11px; font-weight: 600; color: #7e22ce;">Boze Ezel</span>
+        <span style="font-size: 9px; padding: 1px 6px; background: #e9d5ff; color: #7e22ce; border-radius: 2px;">♂ male</span>
+      </div>
+      <div style="display: flex; gap: 2px;">
+        <button style="padding: 4px; color: #a855f7; background: none; border: none; cursor: pointer;">
+          <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+        </button>
+        <button style="padding: 4px; color: #9ca3af; background: none; border: none; cursor: pointer;">
+          <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div style="padding: 8px 12px; display: flex; flex-direction: column; gap: 10px;">
+
+      <!-- Nicknames section (NEW) -->
+      <div>
+        <div style="font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; color: #a855f7; font-weight: 700; margin-bottom: 4px;">Also Known As</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 4px;">
+          <span style="font-size: 10px; padding: 2px 8px; background: #f3e8ff; border: 1px solid #e9d5ff; border-radius: 3px; color: #6b21a8; display: inline-flex; align-items: center; gap: 4px;">
+            Angry <span style="color: #c084fc;">→</span> <span style="font-weight: 600;">Boze</span>
+          </span>
+          <span style="font-size: 10px; padding: 2px 8px; background: #f3e8ff; border: 1px solid #e9d5ff; border-radius: 3px; color: #6b21a8; display: inline-flex; align-items: center; gap: 4px;">
+            Uncle Angry <span style="color: #c084fc;">→</span> <span style="font-weight: 600;">Oom Boze</span>
+          </span>
+          <span style="font-size: 10px; padding: 2px 8px; background: #f3e8ff; border: 1px solid #e9d5ff; border-radius: 3px; color: #6b21a8; display: inline-flex; align-items: center; gap: 4px;">
+            Aunty Angry <span style="color: #c084fc;">→</span> <span style="font-weight: 600;">Tante Boze</span>
+          </span>
+          <span style="font-size: 10px; padding: 2px 8px; background: #f3e8ff; border: 1px solid #e9d5ff; border-radius: 3px; color: #6b21a8; display: inline-flex; align-items: center; gap: 4px;">
+            Comrade Angry <span style="color: #c084fc;">→</span> <span style="font-weight: 600;">Kameraad Boze</span>
+          </span>
+          <span style="font-size: 10px; padding: 2px 8px; background: #f3e8ff; border: 1px solid #e9d5ff; border-radius: 3px; color: #6b21a8; display: inline-flex; align-items: center; gap: 4px;">
+            Brother Angry <span style="color: #c084fc;">→</span> <span style="font-weight: 600;">Broeder Boze</span>
+          </span>
+          <span style="font-size: 10px; padding: 2px 8px; background: #f3e8ff; border: 1px solid #e9d5ff; border-radius: 3px; color: #6b21a8; display: inline-flex; align-items: center; gap: 4px;">
+            Sister Angry <span style="color: #c084fc;">→</span> <span style="font-weight: 600;">Zuster Boze</span>
+          </span>
+        </div>
+      </div>
+
+      <!-- Style EN -->
+      <div>
+        <div style="font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; color: #a855f7; font-weight: 700; margin-bottom: 3px;">Style EN</div>
+        <div style="font-size: 11px; color: #581c87; padding-left: 8px; border-left: 2px solid #d8b4fe; line-height: 1.5;">
+          Tone: Hot-tempered, confrontational. Uses aggressive exclamations and demands.
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div>
+        <div style="font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; color: #a855f7; font-weight: 700; margin-bottom: 3px;">Bio</div>
+        <div style="font-size: 11px; color: #6b21a8; line-height: 1.5;">
+          Quick to anger, always looking for a fight. The first to protest any injustice, real or perceived.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>New:</strong> "Also Known As" section with paired en→nl tags. Each tag is clickable to insert the Dutch nickname. Fits naturally between the header and style sections.
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PREVIEW 2: Quick Ref Bar pill + tooltip      -->
+<!-- ============================================ -->
+<div class="preview-frame">
+  <div class="section-label">2 / Quick Ref Bar — Pill with Nickname Tooltip</div>
+
+  <div style="max-width: 520px; margin-top: 12px;">
+    <!-- Simulated Quick Ref bar -->
+    <div style="background: linear-gradient(to right, #f9fafb, #f3f4f6); border: 1px solid #9ca3af; border-radius: 0 0 4px 4px; padding: 10px; padding-top: 8px;">
+
+      <!-- Header -->
+      <div style="display: flex; align-items: center; gap: 6px; margin-bottom: 6px;">
+        <div style="width: 6px; height: 6px; background: #6b7280; border-radius: 50%;"></div>
+        <span style="font-size: 10px; font-weight: 700; color: #374151; text-transform: uppercase; letter-spacing: 0.05em;">Quick Ref</span>
+        <span style="font-size: 10px; color: #9333ea;">3 codex</span>
+      </div>
+
+      <!-- Pills row -->
+      <div style="display: flex; flex-wrap: wrap; gap: 6px;">
+
+        <!-- Regular full-name pill -->
+        <div style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; background: white; border: 1px solid #e9d5ff; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+          <div style="width: 6px; height: 6px; background: #a855f7; border-radius: 50%;"></div>
+          <span style="font-size: 11px; color: #6b7280;">Angry Ass</span>
+          <svg width="10" height="10" fill="none" stroke="#a855f7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <span style="font-size: 11px; font-weight: 600; color: #7e22ce;">Boze Ezel</span>
+        </div>
+
+        <!-- NICKNAME pill — visually distinct with dashed border -->
+        <div style="position: relative; display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; background: #faf5ff; border: 1px dashed #d8b4fe; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+          <div style="width: 5px; height: 5px; background: #c084fc; border-radius: 50%;"></div>
+          <span style="font-size: 10px; color: #9ca3af;">Uncle Angry</span>
+          <svg width="10" height="10" fill="none" stroke="#c084fc" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <span style="font-size: 10px; font-weight: 600; color: #9333ea;">Oom Boze</span>
+          <span style="font-size: 8px; color: #c084fc; margin-left: 2px;">(Angry Ass)</span>
+        </div>
+
+        <!-- Another regular pill for contrast -->
+        <div style="display: inline-flex; align-items: center; gap: 4px; padding: 4px 8px; background: white; border: 1px solid #e9d5ff; border-radius: 3px; box-shadow: 0 1px 2px rgba(0,0,0,0.04);">
+          <div style="width: 6px; height: 6px; background: #a855f7; border-radius: 50%;"></div>
+          <span style="font-size: 11px; color: #6b7280;">Trusty Ass</span>
+          <svg width="10" height="10" fill="none" stroke="#a855f7" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          <span style="font-size: 11px; font-weight: 600; color: #7e22ce;">Trouwe Ezel</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>When a nickname is detected in source text:</strong> it appears as a lighter, dashed-border pill showing both the nickname translation and a tiny parent-name reference. Insert button would insert the nickname's Dutch ("Oom Boze"), not the full character Dutch name.
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PREVIEW 3: Text Highlight tooltip            -->
+<!-- ============================================ -->
+<div class="preview-frame">
+  <div class="section-label">3 / Source Text Highlighting — Nickname Match Tooltip</div>
+
+  <div style="max-width: 520px; margin-top: 12px;">
+    <!-- Simulated source text area -->
+    <div style="padding: 12px 14px; background: #fafafa; border: 1px solid #d1d5db; border-radius: 4px; font-size: 13px; line-height: 1.7; color: #1f2937;">
+      So I told
+      <!-- Full name match -->
+      <span style="background: #f3e8ff; border: 1px solid #e9d5ff; padding: 0 3px; border-radius: 2px; color: #6b21a8; cursor: pointer; position: relative;">Angry Ass<span style="display: none;">tooltip</span></span>
+      that
+      <!-- Nickname match — slightly different visual treatment -->
+      <span style="background: #faf5ff; border: 1px dashed #d8b4fe; padding: 0 3px; border-radius: 2px; color: #7e22ce; cursor: pointer; position: relative;">Uncle Angry</span>
+      was not coming to the meeting, and that
+      <span style="background: #faf5ff; border: 1px dashed #d8b4fe; padding: 0 3px; border-radius: 2px; color: #7e22ce; cursor: pointer;">Comrade Angry</span>
+      had already left.
+    </div>
+
+    <!-- Simulated tooltip for "Uncle Angry" -->
+    <div style="margin-top: 8px; margin-left: 160px; display: inline-block; background: #1f2937; color: white; padding: 6px 10px; border-radius: 4px; font-size: 11px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); position: relative;">
+      <div style="position: absolute; top: -4px; left: 20px; width: 8px; height: 8px; background: #1f2937; transform: rotate(45deg);"></div>
+      <div style="display: flex; align-items: center; gap: 4px;">
+        <span style="color: #e9d5ff;">Uncle Angry</span>
+        <span style="color: #6b7280;">→</span>
+        <span style="color: #a78bfa; font-weight: 600;">Oom Boze</span>
+      </div>
+      <div style="font-size: 9px; color: #9ca3af; margin-top: 2px;">
+        alias of Angry Ass / Boze Ezel
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Current:</strong> tooltip shows "Uncle Angry → Boze Ezel (Angry Ass)" — the parent's full Dutch name.
+    <br>
+    <strong>New:</strong> tooltip shows nickname's own Dutch translation ("Oom Boze") with a smaller "alias of" line linking back to the parent. Dashed border distinguishes nickname matches from full-name matches.
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PREVIEW 4: Codex Editor — Nickname Input     -->
+<!-- ============================================ -->
+<div class="preview-frame">
+  <div class="section-label">4 / Codex Editor — Paired Nickname Tag Input</div>
+
+  <div style="max-width: 480px; margin-top: 12px;">
+    <!-- Simulated form section -->
+    <div style="background: #fafafa; border: 1px solid #e5e7eb; border-radius: 4px; padding: 12px;">
+
+      <!-- Field label -->
+      <div style="font-size: 11px; font-weight: 600; color: #374151; margin-bottom: 6px;">Nicknames / Aliases</div>
+
+      <!-- Existing tags -->
+      <div style="display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px;">
+        <span style="display: inline-flex; align-items: center; gap: 3px; font-size: 10px; padding: 3px 6px 3px 8px; background: #f3e8ff; border: 1px solid #e9d5ff; border-radius: 3px; color: #6b21a8;">
+          Angry <span style="color: #c084fc;">→</span> <span style="font-weight: 600;">Boze</span>
+          <button style="margin-left: 4px; color: #c084fc; background: none; border: none; cursor: pointer; font-size: 12px; line-height: 1;">×</button>
+        </span>
+        <span style="display: inline-flex; align-items: center; gap: 3px; font-size: 10px; padding: 3px 6px 3px 8px; background: #f3e8ff; border: 1px solid #e9d5ff; border-radius: 3px; color: #6b21a8;">
+          Uncle Angry <span style="color: #c084fc;">→</span> <span style="font-weight: 600;">Oom Boze</span>
+          <button style="margin-left: 4px; color: #c084fc; background: none; border: none; cursor: pointer; font-size: 12px; line-height: 1;">×</button>
+        </span>
+        <span style="display: inline-flex; align-items: center; gap: 3px; font-size: 10px; padding: 3px 6px 3px 8px; background: #f3e8ff; border: 1px solid #e9d5ff; border-radius: 3px; color: #6b21a8;">
+          Aunty Angry <span style="color: #c084fc;">→</span> <span style="font-weight: 600;">Tante Boze</span>
+          <button style="margin-left: 4px; color: #c084fc; background: none; border: none; cursor: pointer; font-size: 12px; line-height: 1;">×</button>
+        </span>
+        <!-- Unpaired nickname (no Dutch yet) -->
+        <span style="display: inline-flex; align-items: center; gap: 3px; font-size: 10px; padding: 3px 6px 3px 8px; background: #fff7ed; border: 1px dashed #fed7aa; border-radius: 3px; color: #9a3412;">
+          Sister Angry <span style="color: #d1d5db;">→</span> <span style="color: #d1d5db; font-style: italic;">no NL</span>
+          <button style="margin-left: 4px; color: #fdba74; background: none; border: none; cursor: pointer; font-size: 12px; line-height: 1;">×</button>
+        </span>
+      </div>
+
+      <!-- Add new row -->
+      <div style="display: flex; gap: 4px; align-items: center;">
+        <input type="text" placeholder="English nickname" style="flex: 1; font-size: 11px; padding: 5px 8px; border: 1px solid #d1d5db; border-radius: 3px; background: white; outline: none;" />
+        <span style="font-size: 11px; color: #d1d5db;">→</span>
+        <input type="text" placeholder="Dutch (optional)" style="flex: 1; font-size: 11px; padding: 5px 8px; border: 1px solid #d1d5db; border-radius: 3px; background: white; outline: none;" />
+        <button style="font-size: 10px; padding: 5px 10px; background: #f3e8ff; color: #7e22ce; border: 1px solid #e9d5ff; border-radius: 3px; cursor: pointer; font-weight: 600;">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Paired input:</strong> two fields side by side. Dutch is optional — unpaired nicknames (orange/dashed) still work for matching but fall back to parent's Dutch name. The CSV format would be <code>Angry=Boze;Uncle Angry=Oom Boze;Sister Angry</code> — bare entries have no <code>=</code>.
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PREVIEW 5: Context menu with nickname        -->
+<!-- ============================================ -->
+<div class="preview-frame">
+  <div class="section-label">5 / Right-Click Context Menu — Nickname Insert</div>
+
+  <div style="max-width: 360px; margin-top: 12px;">
+    <!-- Simulated context menu -->
+    <div style="background: white; border: 1px solid #e5e7eb; border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); padding: 4px; width: 220px;">
+
+      <button style="display: flex; align-items: center; gap: 8px; width: 100%; padding: 6px 8px; font-size: 12px; color: #374151; background: none; border: none; cursor: pointer; border-radius: 4px; text-align: left;" onmouseover="this.style.background='#f3f4f6'" onmouseout="this.style.background='none'">
+        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+        Insert "<span style="font-weight: 600; color: #7e22ce;">Oom Boze</span>"
+      </button>
+
+      <button style="display: flex; align-items: center; gap: 8px; width: 100%; padding: 6px 8px; font-size: 12px; color: #374151; background: none; border: none; cursor: pointer; border-radius: 4px; text-align: left;" onmouseover="this.style.background='#f3f4f6'" onmouseout="this.style.background='none'">
+        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+        Insert "<span style="font-weight: 600; color: #6b7280;">Boze Ezel</span>"
+        <span style="font-size: 9px; color: #9ca3af; margin-left: auto;">full</span>
+      </button>
+
+      <div style="height: 1px; background: #e5e7eb; margin: 4px 0;"></div>
+
+      <button style="display: flex; align-items: center; gap: 8px; width: 100%; padding: 6px 8px; font-size: 12px; color: #374151; background: none; border: none; cursor: pointer; border-radius: 4px; text-align: left;" onmouseover="this.style.background='#f3f4f6'" onmouseout="this.style.background='none'">
+        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+        Copy Dutch
+      </button>
+
+      <button style="display: flex; align-items: center; gap: 8px; width: 100%; padding: 6px 8px; font-size: 12px; color: #374151; background: none; border: none; cursor: pointer; border-radius: 4px; text-align: left;" onmouseover="this.style.background='#f3f4f6'" onmouseout="this.style.background='none'">
+        <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+        Copy English
+      </button>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>New:</strong> When right-clicking a nickname highlight, the context menu offers <em>both</em> the nickname's Dutch ("Oom Boze") as primary insert and the full character Dutch ("Boze Ezel") as a secondary option. This lets you choose the contextually appropriate form.
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PREVIEW 6: CSV Format Comparison             -->
+<!-- ============================================ -->
+<div class="preview-frame">
+  <div class="section-label">6 / CSV Data Format — Current vs Proposed</div>
+
+  <div style="max-width: 580px; margin-top: 12px;">
+
+    <!-- Current format -->
+    <div style="margin-bottom: 16px;">
+      <div style="font-size: 10px; font-weight: 700; color: #dc2626; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Current (bare strings, no Dutch)</div>
+      <div style="font-family: 'SF Mono', 'Fira Code', monospace; font-size: 11px; padding: 8px 12px; background: #fef2f2; border: 1px solid #fecaca; border-radius: 4px; color: #991b1b; overflow-x: auto; white-space: nowrap;">
+        nicknames: Angry;Uncle Angry;Aunty Angry;Comrade Angry;Brother Angry;Sister Angry
+      </div>
+    </div>
+
+    <!-- Proposed format -->
+    <div>
+      <div style="font-size: 10px; font-weight: 700; color: #16a34a; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 4px;">Proposed (paired en=nl, backward compatible)</div>
+      <div style="font-family: 'SF Mono', 'Fira Code', monospace; font-size: 11px; padding: 8px 12px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 4px; color: #166534; overflow-x: auto; white-space: nowrap;">
+        nicknames: Angry=Boze;Uncle Angry=Oom Boze;Aunty Angry=Tante Boze;Sister Angry
+      </div>
+      <div style="font-size: 10px; color: #6b7280; margin-top: 4px; padding-left: 2px;">
+        ↑ "Sister Angry" has no <code style="background: #f3f4f6; padding: 0 3px; border-radius: 2px;">=</code> — unpaired, falls back to parent Dutch name
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================ -->
+<!-- PREVIEW 7: Quick Ref Card (future)           -->
+<!-- ============================================ -->
+<div class="preview-frame">
+  <div class="section-label">7 / Quick Ref Character Card — Future Vision (connects with character card agent)</div>
+
+  <div style="max-width: 320px; margin-top: 12px;">
+    <div style="border: 1px solid #e9d5ff; border-radius: 6px; overflow: hidden; background: white; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+
+      <!-- Card header -->
+      <div style="background: linear-gradient(135deg, #f3e8ff, #ede9fe); padding: 10px 14px; border-bottom: 1px solid #e9d5ff;">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+          <div>
+            <div style="font-size: 14px; font-weight: 700; color: #581c87;">Angry Ass</div>
+            <div style="font-size: 12px; color: #7e22ce; font-weight: 500;">Boze Ezel</div>
+          </div>
+          <span style="font-size: 10px; padding: 2px 8px; background: rgba(147,51,234,0.15); color: #7e22ce; border-radius: 10px;">♂</span>
+        </div>
+      </div>
+
+      <!-- Aliases strip -->
+      <div style="padding: 8px 14px; background: #faf5ff; border-bottom: 1px solid #f3e8ff;">
+        <div style="font-size: 8px; text-transform: uppercase; letter-spacing: 0.08em; color: #a855f7; font-weight: 700; margin-bottom: 4px;">Aliases</div>
+        <div style="display: flex; flex-wrap: wrap; gap: 3px;">
+          <span style="font-size: 9px; padding: 1px 5px; background: white; border: 1px solid #e9d5ff; border-radius: 2px; color: #7e22ce;">Angry → Boze</span>
+          <span style="font-size: 9px; padding: 1px 5px; background: white; border: 1px solid #e9d5ff; border-radius: 2px; color: #7e22ce;">Uncle → Oom</span>
+          <span style="font-size: 9px; padding: 1px 5px; background: white; border: 1px solid #e9d5ff; border-radius: 2px; color: #7e22ce;">Aunty → Tante</span>
+          <span style="font-size: 9px; padding: 1px 5px; background: white; border: 1px solid #e9d5ff; border-radius: 2px; color: #7e22ce;">Comrade → Kameraad</span>
+          <span style="font-size: 9px; padding: 1px 5px; background: white; border: 1px solid #e9d5ff; border-radius: 2px; color: #7e22ce;">Brother → Broeder</span>
+          <span style="font-size: 9px; padding: 1px 5px; background: white; border: 1px solid #e9d5ff; border-radius: 2px; color: #7e22ce;">Sister → Zuster</span>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div style="padding: 10px 14px;">
+        <div style="font-size: 11px; color: #4b5563; line-height: 1.5;">
+          Quick to anger, always looking for a fight. The first to protest any injustice, real or perceived.
+        </div>
+      </div>
+
+      <!-- Style footer -->
+      <div style="padding: 8px 14px; background: #f9fafb; border-top: 1px solid #f3f4f6;">
+        <div style="font-size: 9px; color: #6b7280; line-height: 1.4;">
+          <strong>Style:</strong> Hot-tempered, confrontational. Aggressive exclamations and demands.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Future Quick Ref card</strong> — compact, self-contained character card consuming a clean <code>CodexEntry</code> with structured nicknames. The aliases strip shows abbreviated prefix translations. This is the shape the character card agent should target.
+  </div>
+</div>
+
+<div style="margin-top: 40px; padding-top: 16px; border-top: 1px solid #e5e7eb;">
+  <p style="font-size: 10px; color: #9ca3af;">Generated 2026-03-07 — Codex nickname architecture previews</p>
+</div>
+
+</body>
+</html>

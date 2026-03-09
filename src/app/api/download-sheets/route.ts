@@ -8,11 +8,11 @@ const execAsync = promisify(exec);
  * POST /api/download-sheets
  *
  * Downloads all source Google Sheets as .xlsx into /excels and /excels/Originals.
- * Runs scripts/download-sheets.js as a subprocess (~10-30s for 11 files).
+ * Runs scripts/convert/download-sheets.js as a subprocess (~10-30s for 11 files).
  */
 export async function POST() {
   try {
-    const { stdout, stderr } = await execAsync('node scripts/download-sheets.js', {
+    const { stdout, stderr } = await execAsync('node scripts/convert/download-sheets.js', {
       cwd: process.cwd(),
       timeout: 300000, // 5 minutes — generous for 11 network downloads
       env: { ...process.env },
