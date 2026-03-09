@@ -23,17 +23,17 @@ export interface ConversationRow {
   contextNote: string;
 }
 
-// Muted tint palette — left-border accent + subtle bg
+// Muted tint palette — left-border accent + subtle bg + avatar colors
 // Index matches SPEAKER_COLORS order in ConversationThread
 export const SPEAKER_PALETTE = [
-  { bg: 'bg-blue-50 dark:bg-blue-950/30',     border: 'border-l-2 border-blue-400',     name: 'text-blue-700 dark:text-blue-300' },
-  { bg: 'bg-amber-50 dark:bg-amber-950/30',   border: 'border-l-2 border-amber-500',    name: 'text-amber-700 dark:text-amber-300' },
-  { bg: 'bg-violet-50 dark:bg-violet-950/30',  border: 'border-l-2 border-violet-400',   name: 'text-violet-700 dark:text-violet-300' },
-  { bg: 'bg-emerald-50 dark:bg-emerald-950/30', border: 'border-l-2 border-emerald-400', name: 'text-emerald-700 dark:text-emerald-300' },
-  { bg: 'bg-rose-50 dark:bg-rose-950/30',     border: 'border-l-2 border-rose-400',     name: 'text-rose-700 dark:text-rose-300' },
-  { bg: 'bg-cyan-50 dark:bg-cyan-950/30',     border: 'border-l-2 border-cyan-500',     name: 'text-cyan-700 dark:text-cyan-300' },
-  { bg: 'bg-orange-50 dark:bg-orange-950/30', border: 'border-l-2 border-orange-400',   name: 'text-orange-700 dark:text-orange-300' },
-  { bg: 'bg-teal-50 dark:bg-teal-950/30',     border: 'border-l-2 border-teal-400',     name: 'text-teal-700 dark:text-teal-300' },
+  { bg: 'bg-blue-50 dark:bg-blue-950/30',      border: 'border-l-[3px] border-blue-400',     name: 'text-blue-700 dark:text-blue-300',     avatar: 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400' },
+  { bg: 'bg-amber-50 dark:bg-amber-950/30',    border: 'border-l-[3px] border-amber-500',    name: 'text-amber-700 dark:text-amber-300',   avatar: 'bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400' },
+  { bg: 'bg-violet-50 dark:bg-violet-950/30',  border: 'border-l-[3px] border-violet-400',   name: 'text-violet-700 dark:text-violet-300', avatar: 'bg-violet-100 dark:bg-violet-900/50 text-violet-600 dark:text-violet-400' },
+  { bg: 'bg-emerald-50 dark:bg-emerald-950/30', border: 'border-l-[3px] border-emerald-400', name: 'text-emerald-700 dark:text-emerald-300', avatar: 'bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400' },
+  { bg: 'bg-rose-50 dark:bg-rose-950/30',      border: 'border-l-[3px] border-rose-400',     name: 'text-rose-700 dark:text-rose-300',     avatar: 'bg-rose-100 dark:bg-rose-900/50 text-rose-600 dark:text-rose-400' },
+  { bg: 'bg-cyan-50 dark:bg-cyan-950/30',      border: 'border-l-[3px] border-cyan-500',     name: 'text-cyan-700 dark:text-cyan-300',     avatar: 'bg-cyan-100 dark:bg-cyan-900/50 text-cyan-600 dark:text-cyan-400' },
+  { bg: 'bg-orange-50 dark:bg-orange-950/30',  border: 'border-l-[3px] border-orange-400',   name: 'text-orange-700 dark:text-orange-300', avatar: 'bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400' },
+  { bg: 'bg-teal-50 dark:bg-teal-950/30',      border: 'border-l-[3px] border-teal-400',     name: 'text-teal-700 dark:text-teal-300',     avatar: 'bg-teal-100 dark:bg-teal-900/50 text-teal-600 dark:text-teal-400' },
 ] as const;
 
 interface ChatBubbleProps {
@@ -111,15 +111,28 @@ export const ChatBubble = React.memo(function ChatBubble({
           ? 'ring-1 ring-blue-200 dark:ring-blue-800'
           : 'ring-1 ring-dashed ring-blue-300/50 dark:ring-blue-700/50'
       }`
-    : `${palette!.bg} ${palette!.border} pl-3 ${
+    : `${palette!.bg} ${palette!.border} pl-3.5 ${
         !row.isTranslated ? 'border-dashed' : ''
       }`;
+
+  // Extract a clean initial — strip leading punctuation/symbols like {$
+  const avatarInitial = (row.speakerName.match(/[A-Za-z]/)?.[0] || row.speakerName.charAt(0)).toUpperCase();
 
   return (
     <div
       className={`flex ${row.isProtagonist ? 'justify-end' : 'justify-start'} mb-3.5 animate-bubble-in`}
       style={{ animationDelay: `${Math.min(animationDelay, 400)}ms` }}
     >
+      {/* Speaker avatar — non-protagonist only, left side */}
+      {!row.isProtagonist && (
+        <div
+          className={`w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold shrink-0 mr-2 mt-1 shadow-sm transition-transform duration-200 hover:scale-110 ${palette!.avatar}`}
+          title={row.speakerName}
+        >
+          {avatarInitial}
+        </div>
+      )}
+
       <div
         role="article"
         aria-label={`${row.speakerName}: ${row.sourceText}. ${
@@ -127,14 +140,14 @@ export const ChatBubble = React.memo(function ChatBubble({
         }.`}
         aria-selected={isSelected}
         tabIndex={0}
-        className={`${row.isProtagonist ? 'max-w-[65%]' : 'max-w-[75%]'} px-4 py-3 cursor-pointer
-          transition-all duration-200 scroll-mt-20
+        className={`${row.isProtagonist ? 'max-w-[65%]' : 'max-w-[72%]'} px-4 py-3 cursor-pointer
+          transition-all duration-200 scroll-mt-20 shadow-sm
           ${bubbleClasses}
           ${isSelected
             ? 'ring-2 ring-offset-2 ring-gray-900 dark:ring-white scale-[1.01] shadow-lg'
-            : 'hover:scale-[1.005] hover:shadow-sm hover:-translate-y-px'
+            : 'hover:scale-[1.005] hover:shadow hover:-translate-y-px'
           }`}
-        style={{ borderRadius: '6px' }}
+        style={{ borderRadius: row.isProtagonist ? '16px 16px 4px 16px' : '16px 16px 16px 4px' }}
         onClick={() => onClick(row.index)}
         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(row.index); } }}
       >
@@ -163,6 +176,16 @@ export const ChatBubble = React.memo(function ChatBubble({
         {/* Dialogue content */}
         {renderContent()}
       </div>
+
+      {/* Speaker avatar — protagonist only, right side */}
+      {row.isProtagonist && (
+        <div
+          className="w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold shrink-0 ml-2 mt-1 shadow-sm transition-transform duration-200 hover:scale-110 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400"
+          title={row.speakerName}
+        >
+          {avatarInitial}
+        </div>
+      )}
     </div>
   );
 });

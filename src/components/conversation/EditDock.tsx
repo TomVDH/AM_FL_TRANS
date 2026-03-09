@@ -110,18 +110,18 @@ export function EditDock({
       role="complementary"
       aria-label="Edit panel for selected dialogue"
       aria-live="polite"
-      className={`fixed bottom-0 left-0 right-0 z-40 border-t border-gray-200 dark:border-gray-700 shadow-xl ${
+      className={`fixed bottom-0 left-0 right-0 z-40 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-t border-gray-200/60 dark:border-gray-700/50 shadow-2xl ${
         isVisible ? 'dock-enter' : 'dock-exit'
       }`}
-      style={{ backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', backgroundColor: 'rgba(255,255,255,0.92)' }}
       onKeyDown={handleKeyDown}
     >
-      <style>{`.dark [role="complementary"] { background-color: rgba(17,24,39,0.92) !important; }`}</style>
-      <div className="max-w-3xl mx-auto px-4 py-3.5">
+      <div className="max-w-3xl mx-auto px-5 py-4">
         {/* Source line */}
-        <div className="flex items-center gap-2 mb-2.5 text-sm text-gray-500 dark:text-gray-400" aria-readonly="true" aria-label="English source text (read only)">
-          <span className="font-bold text-gray-700 dark:text-gray-300 shrink-0 text-xs uppercase tracking-wide">{row.speakerName}:</span>
-          <span className="truncate text-[13px]" title={row.sourceText}>&ldquo;{row.sourceText}&rdquo;</span>
+        <div className="flex items-start gap-2.5 mb-3" aria-readonly="true" aria-label="English source text (read only)">
+          <span className="text-[11px] font-bold tracking-wider uppercase text-gray-500 dark:text-gray-400 shrink-0 mt-0.5">{row.speakerName}</span>
+          <span className="text-sm text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-2" title={row.sourceText}>
+            &ldquo;{row.sourceText}&rdquo;
+          </span>
         </div>
 
         {/* Textarea */}
@@ -129,8 +129,8 @@ export function EditDock({
           ref={textareaRef}
           value={localText}
           onChange={(e) => setLocalText(e.target.value)}
-          className="w-full px-3.5 py-2.5 text-sm border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 resize-none focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-shadow duration-200"
-          style={{ borderRadius: '4px' }}
+          className="w-full px-4 py-3 text-sm border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-800/80 text-gray-900 dark:text-gray-100 resize-none focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-shadow duration-200"
+          style={{ borderRadius: '10px' }}
           rows={2}
           placeholder="Enter Dutch translation..."
         />
@@ -140,28 +140,29 @@ export function EditDock({
           <button
             onClick={() => handleNav(-1)}
             disabled={isAtStart}
-            className="px-3 py-1.5 text-xs font-bold text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-200 press-effect"
-            style={{ borderRadius: '4px', minWidth: '44px', minHeight: '44px' }}
+            className="px-3 py-1.5 text-xs font-bold text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-25 disabled:cursor-not-allowed transition-all duration-200 press-effect"
+            style={{ borderRadius: '6px', minWidth: '44px', minHeight: '36px' }}
             title="Previous (Alt+Up)"
           >
-            &laquo; -1
+            &laquo; Prev
           </button>
 
-          <div className="flex items-center gap-2 text-[11px] text-gray-400 dark:text-gray-500">
+          <div className="flex items-center gap-2.5 text-[11px] text-gray-400 dark:text-gray-500">
             {syncStatus === 'syncing' && (
-              <span className="text-amber-500 animate-pulse">Syncing...</span>
+              <span className="text-amber-500 animate-pulse font-medium">Syncing...</span>
             )}
-            <span className="opacity-60">Shift+Enter to submit</span>
+            <kbd className="px-1.5 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-[10px] font-mono">Shift+Enter</kbd>
+            <span>to submit</span>
           </div>
 
           <button
             onClick={() => handleNav(1)}
             disabled={isAtEnd}
-            className="px-3 py-1.5 text-xs font-bold text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-30 disabled:cursor-not-allowed transition-all duration-200 press-effect"
-            style={{ borderRadius: '4px', minWidth: '44px', minHeight: '44px' }}
+            className="px-3 py-1.5 text-xs font-bold text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 disabled:opacity-25 disabled:cursor-not-allowed transition-all duration-200 press-effect"
+            style={{ borderRadius: '6px', minWidth: '44px', minHeight: '36px' }}
             title="Next (Alt+Down)"
           >
-            +1 &raquo;
+            Next &raquo;
           </button>
         </div>
       </div>
