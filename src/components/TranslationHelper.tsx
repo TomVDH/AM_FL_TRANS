@@ -264,6 +264,29 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
+  // Save accepted translations to speaker corpus (fire-and-forget)
+  const saveToSpeakerCorpus = useCallback((entries: Array<{ speaker: string; english: string; dutch: string }>) => {
+    if (entries.length === 0) return;
+    fetch('/api/speaker-corpus', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        entries: entries.map(e => ({ ...e, sheet: selectedSheet, file: loadedFileName })),
+      }),
+    }).catch(() => { /* silent — corpus is best-effort */ });
+  }, [selectedSheet, loadedFileName]);
+
+  // Wrap updateTranslationAtIndex to also save to corpus
+  const updateTranslationAtIndexWithCorpus = useCallback((index: number, value: string) => {
+    updateTranslationAtIndex(index, value);
+    const speaker = utterers[index] ? extractSpeakerName(utterers[index]) : '';
+    const source = sourceTexts[index];
+    const trimmed = value.trim();
+    if (speaker && source && trimmed && trimmed !== '[BLANK, REMOVE LATER]') {
+      saveToSpeakerCorpus([{ speaker, english: source, dutch: trimmed }]);
+    }
+  }, [updateTranslationAtIndex, utterers, sourceTexts, extractSpeakerName, saveToSpeakerCorpus]);
+
   // LIVE EDIT wrappers - sync before navigation
   const handleSubmitWithSync = async () => {
     if (liveEditMode) {
@@ -273,7 +296,17 @@ const TranslationHelper: React.FC = () => {
     // Check if this is the last entry BEFORE calling handleSubmit
     const isLastEntry = currentIndex === sourceTexts.length - 1;
 
+    // Capture speaker/source before handleSubmit advances the index
+    const speaker = trimSpeakerName(utterers[currentIndex]);
+    const source = sourceTexts[currentIndex];
+    const translation = currentTranslation.trim();
+
     handleSubmit();
+
+    // Save to speaker corpus if speaker is known and translation is non-empty
+    if (speaker && source && translation && translation !== '[BLANK, REMOVE LATER]') {
+      saveToSpeakerCorpus([{ speaker, english: source, dutch: translation }]);
+    }
 
     // Trigger celebration on milestones when Wow mode is active
     const completedCount = translations.filter(t => t && t !== '' && t !== '[BLANK, REMOVE LATER]').length;
@@ -570,6 +603,9 @@ const TranslationHelper: React.FC = () => {
   const [bulkScope, setBulkScope] = useState<BulkScope>('all');
   const [bulkContextWindow, setBulkContextWindow] = useState(5);
   const [bulkRequestDelay, setBulkRequestDelay] = useState(200);
+
+  // Banner: show after bulk accept-all when all lines are translated
+  const [showBulkCompleteBanner, setShowBulkCompleteBanner] = useState(false);
 
   // Combine edited matches with memory matches for QuickReferenceBar
   const findCombinedEditedMatches = useCallback((text: string) => {
@@ -1135,11 +1171,34 @@ const TranslationHelper: React.FC = () => {
             sourceTexts={sourceTexts}
             translations={translations}
             originalTranslations={originalTranslations}
-            onUpdateTranslation={updateTranslationAtIndex}
+            onUpdateTranslation={updateTranslationAtIndexWithCorpus}
             onBack={exitReviewMode}
           />
         ) : (
           <>
+        {/* All-translated banner after bulk accept */}
+        {showBulkCompleteBanner && (
+          <div className="mx-auto max-w-3xl w-full mb-2 px-4 py-3 bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/20 dark:to-yellow-900/20 border border-amber-300 dark:border-amber-700 flex items-center justify-between" style={{ borderRadius: '3px' }}>
+            <div className="flex items-center gap-2">
+              <span className="text-amber-700 dark:text-amber-300 text-sm font-bold tracking-tight">All {sourceTexts.length} lines translated.</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => setShowBulkCompleteBanner(false)}
+                className="px-2 py-1 text-[10px] font-bold text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 transition-colors uppercase tracking-wide"
+              >
+                Dismiss
+              </button>
+              <button
+                onClick={() => { setShowBulkCompleteBanner(false); finishSheet(); }}
+                className="px-3 py-1.5 text-xs font-bold text-white bg-gradient-to-br from-amber-600 to-yellow-700 dark:from-amber-500 dark:to-yellow-600 border border-amber-700 dark:border-amber-600 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
+                style={{ borderRadius: '3px' }}
+              >
+                Review &amp; Finish →
+              </button>
+            </div>
+          </div>
+        )}
         {/* Center-floating workspace */}
         <div className="flex-1 flex flex-col justify-center min-h-0 -mt-8">
         {/* Main 2-Column Grid Layout — 50/50 centered */}
@@ -1542,11 +1601,12 @@ const TranslationHelper: React.FC = () => {
                       handleSubmitWithSync();
                     }
                   }}
-                  className={`w-full px-4 py-3 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gray-900/10 dark:focus:ring-white/10 transition-all duration-300 text-base leading-relaxed text-gray-900 dark:text-white resize-none flex-1 border-0 ${
+                  className={`w-full px-4 py-3 focus:outline-none transition-all duration-300 text-base leading-relaxed text-gray-900 dark:text-white resize-none flex-1 border-0 ${
                     hasCurrentEntryChanged()
                       ? 'bg-green-50/50 dark:bg-green-900/10'
-                      : 'bg-white dark:bg-gray-800'
+                      : 'bg-gray-50/50 dark:bg-gray-700/50 focus:bg-gray-50 dark:focus:bg-gray-700/80'
                   }`}
+                  style={{ outline: 'none' }}
                   placeholder="Enter your translation..."
                   aria-label={`Translation for entry ${currentIndex + 1} of ${sourceTexts.length}`}
                   autoFocus
@@ -2482,12 +2542,24 @@ const TranslationHelper: React.FC = () => {
               <div className="flex items-center gap-2">
                 <button
                   onClick={() => {
+                    // Capture results before acceptAllEmpty clears them
+                    const resultsBySpeaker = new Map(bulkResults.filter(r => r.wasEmpty && r.speaker).map(r => [r.index, r]));
                     const accepted = acceptAllEmpty();
                     if (accepted.size > 0) {
                       const updated = [...translations];
                       accepted.forEach((translation, idx) => { updated[idx] = translation; });
                       setTranslations(updated);
                       toast.success(`Accepted ${accepted.size} empty-line translations`);
+                      // Save to speaker corpus
+                      const corpusEntries: Array<{ speaker: string; english: string; dutch: string }> = [];
+                      accepted.forEach((translation, idx) => {
+                        const r = resultsBySpeaker.get(idx);
+                        if (r?.speaker) corpusEntries.push({ speaker: r.speaker, english: r.sourceText, dutch: translation });
+                      });
+                      saveToSpeakerCorpus(corpusEntries);
+                      // Check if all lines now have translations
+                      const stillEmpty = updated.filter((t, i) => i < sourceTexts.length && (!t || t === '[BLANK, REMOVE LATER]')).length;
+                      if (stillEmpty === 0) setShowBulkCompleteBanner(true);
                     }
                   }}
                   className="px-3 py-1.5 text-xs font-bold text-green-700 dark:text-green-300 bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/30 dark:to-emerald-900/30 border border-green-300 dark:border-green-700 hover:border-green-400 dark:hover:border-green-600 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
@@ -2507,12 +2579,24 @@ const TranslationHelper: React.FC = () => {
                 </button>
                 <button
                   onClick={() => {
+                    // Capture results before acceptAll clears them
+                    const resultsMap = new Map(bulkResults.filter(r => r.speaker).map(r => [r.index, r]));
                     const accepted = acceptAll();
                     if (accepted.size > 0) {
                       const updated = [...translations];
                       accepted.forEach((translation, idx) => { updated[idx] = translation; });
                       setTranslations(updated);
                       toast.success(`Accepted all ${accepted.size} translations`);
+                      // Save to speaker corpus
+                      const corpusEntries: Array<{ speaker: string; english: string; dutch: string }> = [];
+                      accepted.forEach((translation, idx) => {
+                        const r = resultsMap.get(idx);
+                        if (r?.speaker) corpusEntries.push({ speaker: r.speaker, english: r.sourceText, dutch: translation });
+                      });
+                      saveToSpeakerCorpus(corpusEntries);
+                      // Check if all lines now have translations
+                      const stillEmpty = updated.filter((t, i) => i < sourceTexts.length && (!t || t === '[BLANK, REMOVE LATER]')).length;
+                      if (stillEmpty === 0) setShowBulkCompleteBanner(true);
                     }
                   }}
                   className="px-3 py-1.5 text-xs font-bold text-white bg-gradient-to-br from-green-600 to-emerald-700 dark:from-green-500 dark:to-emerald-600 border border-green-700 dark:border-green-600 hover:border-green-600 dark:hover:border-green-500 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
@@ -2566,6 +2650,9 @@ const TranslationHelper: React.FC = () => {
                             updated[result.index] = translation;
                             setTranslations(updated);
                             toast.success(`Accepted line ${result.index + 1}`);
+                            if (result.speaker) {
+                              saveToSpeakerCorpus([{ speaker: result.speaker, english: result.sourceText, dutch: translation }]);
+                            }
                           }
                         }}
                         className="px-2.5 py-1 text-[10px] font-bold text-white bg-gradient-to-br from-green-600 to-emerald-700 dark:from-green-500 dark:to-emerald-600 border border-green-700 dark:border-green-600 hover:border-green-600 dark:hover:border-green-500 hover:shadow-md transition-all duration-300 ease-out tracking-tight uppercase"
@@ -2687,7 +2774,7 @@ const TranslationHelper: React.FC = () => {
           setCurrentIndex={setCurrentIndex}
           setCurrentTranslation={setCurrentTranslation}
           handleSubmitWithSync={handleSubmitWithSync}
-          updateTranslationAtIndex={updateTranslationAtIndex}
+          updateTranslationAtIndex={updateTranslationAtIndexWithCorpus}
           syncStatus={syncStatus}
           selectedSheet={selectedSheet}
           characterData={characterData}

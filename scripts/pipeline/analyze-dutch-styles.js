@@ -18,6 +18,7 @@ const PROJECT_ROOT = path.join(__dirname, '..', '..');
 const CSV_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-dutch-dialogue.csv');
 const OUT_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-dutch-styles.json');
 const EN_STYLES_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-styles.json');
+const CORPUS_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-corpus.jsonl');
 
 const MIN_LINES = parseInt(process.argv.find(a => a.startsWith('--min-lines='))?.split('=')[1] || '10');
 const ONLY_SPEAKER = process.argv.find(a => a.startsWith('--speaker='))?.split('=').slice(1).join('=');
@@ -65,6 +66,24 @@ if (fs.existsSync(EN_STYLES_FILE)) {
   enStyles = JSON.parse(fs.readFileSync(EN_STYLES_FILE, 'utf8'));
 }
 
+// Load approved translation corpus (speaker-indexed exemplars)
+const corpusBySpeaker = new Map();
+if (fs.existsSync(CORPUS_FILE)) {
+  const corpusRaw = fs.readFileSync(CORPUS_FILE, 'utf8').trim();
+  if (corpusRaw) {
+    for (const line of corpusRaw.split('\n')) {
+      try {
+        const entry = JSON.parse(line);
+        if (!entry.speaker || !entry.english || !entry.dutch) continue;
+        const key = entry.speaker.toLowerCase();
+        if (!corpusBySpeaker.has(key)) corpusBySpeaker.set(key, []);
+        corpusBySpeaker.get(key).push(entry);
+      } catch { /* skip malformed */ }
+    }
+    console.log(`Loaded speaker corpus: ${[...corpusBySpeaker.values()].reduce((s, v) => s + v.length, 0)} entries for ${corpusBySpeaker.size} speakers`);
+  }
+}
+
 let targetSpeakers = [...speakers.entries()]
   .filter(([_, lines]) => lines.length >= MIN_LINES)
   .sort((a, b) => b[1].length - a[1].length);
@@ -110,6 +129,13 @@ async function analyzeSpeaker(name, dialogueLines) {
     return `[${l.episode}] EN: "${l.english}" → NL: "${l.dutch}"`;
   }).join('\n');
 
+  // Get approved corpus exemplars for this speaker (up to 20)
+  const corpusEntries = (corpusBySpeaker.get(name.toLowerCase()) || []).slice(0, 20);
+  const corpusBlock = corpusEntries.length > 0
+    ? '\n\nAPPROVED TRANSLATIONS (use these as voice exemplars — these are human-approved translations for this character):\n' +
+      corpusEntries.map(e => `EN: "${e.english}"\nNL: "${e.dutch}"`).join('\n---\n')
+    : '';
+
   const prompt = `You are analyzing Dutch translations from "Asses & Masses" (Dutch: "Ezels & Massa's"), an animated series about donkeys in an allegorical society. The translator is Flemish Belgian, deliberately chosen to give the Dutch translation a warm Flemish sensibility while remaining fully understandable to Netherlands/Dutch audiences. The degree of Flemish flavor varies by character — some speak heavy plat Vlaams, others speak clean standard Dutch, and most fall in between. This linguistic variation IS characterization.
 
 Below are paired English→Dutch dialogue lines for the character "${name}".
@@ -117,7 +143,7 @@ Below are paired English→Dutch dialogue lines for the character "${name}".
 ${enProfile ? 'English speech profile:\n' + enProfile + '\n\n' : ''}Total translated lines: ${dialogueLines.length} (showing ${sampled.length} samples across ${episodes.size} episodes)
 
 DIALOGUE PAIRS:
-${dialogueBlock}
+${dialogueBlock}${corpusBlock}
 
 Produce a concise DUTCH TRANSLATION STYLE PROFILE for how this character should be translated. This is a PRESCRIPTIVE guide for future translations, not just a description. Focus on:
 1. **Register**: formal/informal Dutch — specify pronoun forms (je/jij, ge/gij, u) and vocabulary level
@@ -126,7 +152,7 @@ Produce a concise DUTCH TRANSLATION STYLE PROFILE for how this character should 
 4. **Verbal tics in Dutch**: translated catchphrases, recurring expressions, speech patterns to maintain
 5. **Translation approach**: literal vs creative/adaptive, how humor/wordplay should be handled
 
-Format as a compact block for a translation reference card (max 150 words). Use line breaks between sections. Do NOT use markdown headers or bullet points — just plain text with line breaks.`;
+Format as a compact block for a translation reference card (max 150 words). Use line breaks between sections. Do NOT use markdown headers or bullet points — just plain text with line breaks.${corpusEntries.length > 0 ? '\n\nIMPORTANT: The APPROVED TRANSLATIONS above are human-verified. Your style profile should reflect and reinforce the patterns in these translations.' : ''}`;
 
   const response = await client.messages.create({
     model: 'claude-sonnet-4-20250514',
