@@ -18,6 +18,7 @@ const PROJECT_ROOT = path.join(__dirname, '..', '..');
 const CSV_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-dialogue.csv');
 const OUT_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-styles.json');
 const CODEX_FILE = path.join(PROJECT_ROOT, 'data', 'json', 'codex_translations.json');
+const CORPUS_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-corpus.jsonl');
 
 // Parse args
 const MIN_LINES = parseInt(process.argv.find(a => a.startsWith('--min-lines='))?.split('=')[1] || '10');
@@ -69,6 +70,24 @@ const codexChars = new Map();
 for (const e of codex.entries) {
   if (e.category === 'CHARACTER') {
     codexChars.set(e.english, e);
+  }
+}
+
+// Load approved translation corpus (for English dialogue patterns)
+const corpusBySpeaker = new Map();
+if (fs.existsSync(CORPUS_FILE)) {
+  const corpusRaw = fs.readFileSync(CORPUS_FILE, 'utf8').trim();
+  if (corpusRaw) {
+    for (const line of corpusRaw.split('\n')) {
+      try {
+        const entry = JSON.parse(line);
+        if (!entry.speaker || !entry.english) continue;
+        const key = entry.speaker.toLowerCase();
+        if (!corpusBySpeaker.has(key)) corpusBySpeaker.set(key, []);
+        corpusBySpeaker.get(key).push(entry);
+      } catch { /* skip malformed */ }
+    }
+    console.log(`Loaded speaker corpus: ${[...corpusBySpeaker.values()].reduce((s, v) => s + v.length, 0)} entries for ${corpusBySpeaker.size} speakers`);
   }
 }
 
@@ -128,12 +147,19 @@ async function analyzeSpeaker(name, dialogueLines) {
     return `[${l.episode}]${ctx} "${l.english}"`;
   }).join('\n');
 
+  // Get approved corpus entries for this speaker (up to 20, English only)
+  const corpusEntries = (corpusBySpeaker.get(name.toLowerCase()) || []).slice(0, 20);
+  const corpusBlock = corpusEntries.length > 0
+    ? '\n\nAPPROVED DIALOGUE (human-verified translations exist for these — they represent canonical speech patterns):\n' +
+      corpusEntries.map(e => `"${e.english}"`).join('\n')
+    : '';
+
   const prompt = `You are analyzing dialogue from "Asses & Masses", an animated series about donkeys in an allegorical society. Below are sample dialogue lines from the character "${name}".
 
 ${existingInfo.length > 0 ? 'Known info:\n' + existingInfo.join('\n') + '\n\n' : ''}Total lines in script: ${dialogueLines.length} (showing ${sampled.length} samples across ${episodes.size} episodes)
 
 DIALOGUE:
-${dialogueBlock}
+${dialogueBlock}${corpusBlock}
 
 Produce a concise STYLE PROFILE for this character's speech patterns. Include:
 1. **Tone** (2-3 words): emotional register (e.g., "sardonic, world-weary" or "excitable, naive")
