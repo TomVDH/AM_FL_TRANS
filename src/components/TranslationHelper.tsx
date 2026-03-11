@@ -538,6 +538,7 @@ const TranslationHelper: React.FC = () => {
     bulkCurrentLine,
     bulkLastSuggestion,
     bulkLastSource,
+    bulkLastSpeaker,
     bulkSuggestionCount,
     startBulkTranslate,
     stopBulkTranslate,
@@ -2085,7 +2086,7 @@ const TranslationHelper: React.FC = () => {
                   <div className="min-h-[3.5rem] px-3 py-2.5 bg-gray-50 dark:bg-gray-800/50 border border-gray-200/60 dark:border-gray-700/40" style={{ borderRadius: '3px' }}>
                     {bulkLastSuggestion ? (
                       <div key={bulkSuggestionCount} className="animate-slide-up-fade">
-                        <div className="text-xs text-gray-500 dark:text-gray-400 truncate">{bulkLastSource.substring(0, 80)}{bulkLastSource.length > 80 ? '...' : ''}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400 truncate">{bulkLastSpeaker && <span className="text-purple-500 dark:text-purple-400 font-medium">[{bulkLastSpeaker}]</span>}{bulkLastSpeaker ? ' ' : ''}{bulkLastSource.substring(0, 80)}{bulkLastSource.length > 80 ? '...' : ''}</div>
                         <div className="text-sm text-emerald-600 dark:text-emerald-400 font-medium truncate mt-1">→ {bulkLastSuggestion}</div>
                       </div>
                     ) : (
