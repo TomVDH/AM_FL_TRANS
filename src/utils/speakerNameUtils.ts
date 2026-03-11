@@ -22,7 +22,7 @@ export function extractSpeakerName(utterer: string): string {
 
   const parts = utterer.split('.');
   if (parts.length >= 4) {
-    return parts[3]; // Return the human-readable name part
+    return parts.slice(3).join('.'); // Rejoin to preserve dots in names like "Mme. Derriere"
   }
 
   // Fallback: try to extract a meaningful name from the string

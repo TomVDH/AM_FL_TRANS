@@ -18,6 +18,7 @@ interface CodexEntry {
   bio?: string;
   gender?: string;
   dialogueStyle?: string;
+  dutchDialogueStyle?: string;
   // Dynamic language column - any language can be the translation target
   [key: string]: string | undefined;
 }
@@ -272,6 +273,7 @@ const ImportSection: React.FC<ImportSectionProps> = ({ onImport }) => {
         bio: row.bio || '',
         gender: row.gender || '',
         dialogueStyle: row.dialoguestyle || row.dialogueStyle || '',
+        dutchDialogueStyle: row.dutchdialoguestyle || row.dutchDialogueStyle || '',
       }));
 
       await onImport(entries);
@@ -739,6 +741,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
         bio: entry.bio || '',
         gender: entry.gender || '',
         dialogueStyle: entry.dialogueStyle || '',
+        dutchDialogueStyle: entry.dutchDialogueStyle || '',
       });
     }
   };
@@ -987,22 +990,43 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   <option value="other">Other</option>
                                 </select>
                               </div>
+                            </div>
+                          </div>
+
+                          {/* Row 4: Style Fields */}
+                          {editData.category?.toUpperCase() === 'CHARACTER' && (
+                            <div className="pt-2 border-t border-gray-200 dark:border-gray-700 space-y-3">
+                              <p className="text-xs text-gray-500 dark:text-gray-400 uppercase mb-2">Voice & Style</p>
                               <div>
                                 <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 uppercase mb-1">
-                                  Dialogue Style
+                                  English Dialogue Style
                                 </label>
-                                <input
-                                  type="text"
+                                <textarea
                                   value={editData.dialogueStyle || ''}
                                   onChange={(e) => setEditData(prev => ({ ...prev, dialogueStyle: e.target.value }))}
-                                  placeholder="Speech pattern notes"
-                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm"
+                                  placeholder="English speech pattern notes (tone, vocabulary, verbal tics, sentence structure, key themes)"
+                                  rows={editData.dialogueStyle ? Math.min(8, Math.max(3, (editData.dialogueStyle.match(/\n/g) || []).length + 2)) : 2}
+                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm font-mono resize-y"
+                                  style={{ borderRadius: '3px' }}
+                                  onClick={(e) => e.stopPropagation()}
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-xs font-medium text-amber-700 dark:text-amber-400 uppercase mb-1">
+                                  Dutch Translation Style
+                                </label>
+                                <textarea
+                                  value={editData.dutchDialogueStyle || ''}
+                                  onChange={(e) => setEditData(prev => ({ ...prev, dutchDialogueStyle: e.target.value }))}
+                                  placeholder="Dutch translation voice (register, Flemish density, character voice, verbal tics, translation approach)"
+                                  rows={editData.dutchDialogueStyle ? Math.min(8, Math.max(3, (editData.dutchDialogueStyle.match(/\n/g) || []).length + 2)) : 2}
+                                  className="w-full px-3 py-2 border border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-900/10 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm font-mono resize-y"
                                   style={{ borderRadius: '3px' }}
                                   onClick={(e) => e.stopPropagation()}
                                 />
                               </div>
                             </div>
-                          </div>
+                          )}
 
                           {/* Actions */}
                           <div className="flex gap-2 justify-between pt-2">

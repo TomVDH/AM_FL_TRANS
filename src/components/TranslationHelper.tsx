@@ -603,6 +603,7 @@ const TranslationHelper: React.FC = () => {
   const [bulkScope, setBulkScope] = useState<BulkScope>('all');
   const [bulkContextWindow, setBulkContextWindow] = useState(5);
   const [bulkRequestDelay, setBulkRequestDelay] = useState(200);
+  const [bulkUseCorpus, setBulkUseCorpus] = useState(false);
 
   // Three-pip unlock gates — must click 3 times to unlock, 4th click triggers action
   const [bulkPanelUnlock, setBulkPanelUnlock] = useState(0);
@@ -2457,6 +2458,27 @@ const TranslationHelper: React.FC = () => {
                 <p className="text-[10px] text-gray-400 dark:text-gray-500 mt-0.5">Delay between API calls — increase if hitting rate limits</p>
               </div>
 
+              {/* Corpus toggle */}
+              <div className="flex items-center justify-between py-2">
+                <div>
+                  <label className="text-[10px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">Include Corpus</label>
+                  <p className="text-[10px] text-gray-400 dark:text-gray-500 mt-0.5">Inject approved translations as voice reference (more tokens per request)</p>
+                </div>
+                <button
+                  onClick={() => setBulkUseCorpus(v => !v)}
+                  className={`relative w-9 h-5 rounded-full transition-colors ${
+                    bulkUseCorpus
+                      ? 'bg-amber-500'
+                      : 'bg-gray-300 dark:bg-gray-600'
+                  }`}
+                  style={{ borderRadius: '10px' }}
+                >
+                  <span className={`absolute top-0.5 w-4 h-4 bg-white rounded-full shadow transition-transform ${
+                    bulkUseCorpus ? 'translate-x-4' : 'translate-x-0.5'
+                  }`} style={{ borderRadius: '50%' }} />
+                </button>
+              </div>
+
               {/* Stats badges */}
               <div className="flex gap-3 text-xs">
                 <div className="flex items-center gap-1.5 px-2 py-1 bg-gray-100 dark:bg-gray-700" style={{ borderRadius: '2px' }}>
@@ -2520,6 +2542,7 @@ const TranslationHelper: React.FC = () => {
                       scope: bulkScope,
                       contextWindow: bulkContextWindow,
                       startIndex: currentIndex,
+                      useCorpus: bulkUseCorpus,
                     });
                   }}
                   className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all"
@@ -2541,6 +2564,7 @@ const TranslationHelper: React.FC = () => {
                       contextWindow: bulkContextWindow,
                       requestDelay: bulkRequestDelay,
                       startIndex: currentIndex,
+                      useCorpus: bulkUseCorpus,
                     });
                   } else {
                     const next = bulkModalUnlock + 1;

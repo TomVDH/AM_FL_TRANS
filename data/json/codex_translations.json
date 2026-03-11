@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "generated": "2026-03-09T08:16:46.681Z",
+  "generated": "2026-03-11T04:19:33.782Z",
   "description": "Codex translations for Asses & Masses",
   "totalEntries": 179,
   "entries": [
@@ -1104,7 +1104,8 @@
       "dutch": "Mevr. Derrière",
       "category": "CHARACTER",
       "nicknames": [
-        "Mme."
+        "Mme.",
+        "Mme"
       ],
       "bio": "Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",
       "gender": "female",
@@ -1541,10 +1542,10 @@
         "Brother Smart",
         "Sister Smart"
       ],
-      "bio": "Self-centred, egotistical, strategist. Always has another backup plan. Always looking out for her own (either self or group)",
+      "bio": "Self-centred, egotistical, strategist. Always has another backup plan. Always looking out for her own (either self or group). Carries herself with an air of superiority — snooty, condescending, and convinced she's the smartest one in every room.",
       "gender": "female",
-      "dialogueStyle": "**TONE:** Commanding, abrasive\n\n**VOCABULARY:** Colloquial with strategic terminology. Uses crude language (\"shit,\" \"damn\") and donkey-specific terms (\"Jennets,\" \"Comrades\"). Employs numbered planning sequences and workplace jargon.\n\n**VERBAL TICS:** Numbered plan sequences (\"ONE... TWO... THREE...\"). Frequently says \"Easy.\" Uses rhetorical questions for emphasis. Heavy use of exclamation points and ellipses for dramatic pauses.\n\n**SENTENCE STRUCTURE:** Mix of short commands and longer strategic explanations. Frequent exclamations and rhetorical questions. Uses fragments for emphasis (\"Easy.\" \"Ha.\" \"Fine.\").\n\n**KEY THEMES:** Strategic planning and backup schemes. Work and human-donkey labor relationships. Group survival and resource management. Insulting others while protecting her own authority and the collective.",
-      "dutchDialogueStyle": "**Register**: Informal Dutch with mixed je/jij and occasional ge/gij for emphasis or anger. Colloquial vocabulary with strategic formal terms (Plan, strategie). Heavy profanity maintained.\n\n**Flemish density**: Moderate to heavy. Use \"ge/gij\" in heated moments, \"nie\" for negation, \"'t\" contractions, and Flemish vocabulary (\"jobs\" kept as loanword, \"crossen\" for run). Belgian warmth through word choices like \"komaan\" and \"poepsimpel.\"\n\n**Character voice**: Commanding authority with exasperated energy. Direct, blunt tone using short imperatives (\"Bek dicht!\") and dramatic emphasis through capitals and repetition. Maintains planning jargon credibility while staying street-smart.\n\n**Verbal tics in Dutch**: \"Poepsimpel\" for \"Easy.\" Numbered sequences \"ÉÉN, TWEE, DRIE.\" \"ONZE JOBS TERUG TE GEVEN\" as recurring rallying cry. Rhetorical questions with \"zeker?\" tag. \"Godverdomme\" for strong emphasis.\n\n**Translation approach**: Adaptive for character consistency. Preserve rhythm and energy over literal meaning. Maintain profanity impact and planning terminology. Keep Flemish warmth without losing Netherlands comprehension."
+      "dialogueStyle": "**TONE:** Commanding, condescending, snooty. Talks down to everyone as if explaining things to children. Dripping with disdain.\n\n**VOCABULARY:** Colloquial with strategic terminology. Uses crude language (\"shit,\" \"damn\") but delivers it with an air of refinement — swearing through gritted teeth rather than shouting. Donkey-specific terms (\"Jennets,\" \"Comrades\"). Employs numbered planning sequences and workplace jargon.\n\n**VERBAL TICS:** Numbered plan sequences (\"ONE... TWO... THREE...\"). Frequently says \"Easy.\" with smug satisfaction. Uses rhetorical questions dripping with condescension. Heavy use of ellipses for theatrical pauses. Sighs and eye-rolls implied in delivery.\n\n**SENTENCE STRUCTURE:** Mix of clipped, imperious commands and longer strategic explanations delivered like lectures. Rhetorical questions that make others feel stupid. Uses fragments for dismissive emphasis (\"Easy.\" \"Obviously.\" \"Fine.\").\n\n**KEY THEMES:** Strategic planning and backup schemes. Work and human-donkey labor relationships. Group survival and resource management. Belittling others' intelligence while protecting her own authority and the collective.",
+      "dutchDialogueStyle": "**Register**: Clean, polished ABN (Algemeen Beschaafd Nederlands). NO Flemish markers — no ge/gij, no nie, no plat Vlaams. She speaks pristine standard Dutch, which is itself a character choice: she considers herself above regional dialect. Uses jij/je consistently. Strategic formal vocabulary mixed with sharp colloquial put-downs.\n\n**Flemish density**: ZERO. Smart Ass is explicitly a snooty Dutch woman. Her clean ABN contrasts with the Flemish-speaking characters around her, reinforcing her sense of superiority. This linguistic distinction IS her characterization.\n\n**Character voice**: Ice-cold authority with withering condescension. She doesn't yell — she enunciates. Short, clipped imperatives delivered with disdain (\"Mond dicht.\" not \"Bek dicht!\"). Talks to others like they're slow. Her profanity is precise and cutting, never sloppy.\n\n**Verbal tics in Dutch**: \"Poepsimpel.\" for \"Easy.\" — the ONE Flemish word she's picked up from years among Flemish donkeys, delivered with a smirk. Numbered sequences \"EEN, TWEE, DRIE.\" delivered like a teacher to dim students. \"Onze banen terug\" as rallying cry. Rhetorical questions with \"toch?\" or \"nietwaar?\" tags. \"Godbetert\" or \"hemeltjelief\" for exasperation rather than crude swearing.\n\n**Translation approach**: Maintain pristine ABN at all times. Her Dutch should sound educated, sharp, and slightly old-money. Preserve the strategic planning vocabulary. Profanity should feel deliberate and withering, not vulgar. The contrast between her polished Dutch and the Flemish warmth of other characters is essential to her personality."
     },
     {
       "name": "Smelly Ass",

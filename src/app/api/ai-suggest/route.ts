@@ -4,6 +4,35 @@ import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 
 const CODEX_PATH = path.join(process.cwd(), 'data', 'json', 'codex_translations.json');
+const CORPUS_PATH = path.join(process.cwd(), 'data', 'analysis', 'speaker-corpus.jsonl');
+
+interface CorpusEntry {
+  speaker: string;
+  english: string;
+  dutch: string;
+}
+
+let corpusCache: { entries: CorpusEntry[]; loadedAt: number } | null = null;
+
+async function getCorpusForSpeaker(speaker: string, limit = 15): Promise<CorpusEntry[]> {
+  // Cache corpus for 60s
+  if (!corpusCache || Date.now() - corpusCache.loadedAt > 60000) {
+    try {
+      const raw = await fs.readFile(CORPUS_PATH, 'utf8');
+      const entries: CorpusEntry[] = raw.trim().split('\n').filter(Boolean).map(line => {
+        try { return JSON.parse(line); } catch { return null; }
+      }).filter(Boolean);
+      corpusCache = { entries, loadedAt: Date.now() };
+    } catch {
+      corpusCache = { entries: [], loadedAt: Date.now() };
+    }
+  }
+
+  const speakerLower = speaker.toLowerCase();
+  return corpusCache.entries
+    .filter(e => e.speaker.toLowerCase() === speakerLower)
+    .slice(-limit); // most recent entries
+}
 
 interface CodexEntry {
   english: string;
@@ -37,6 +66,7 @@ interface SuggestRequest {
   linesBefore?: SurroundingLine[];
   linesAfter?: SurroundingLine[];
   model?: ModelTier;
+  useCorpus?: boolean;
 }
 
 let codexCache: { entries: CodexEntry[]; loadedAt: number } | null = null;
@@ -124,7 +154,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
   }
 
-  const { english, speaker, context, existingTranslation, linesBefore, linesAfter, model: requestedModel } = body;
+  const { english, speaker, context, existingTranslation, linesBefore, linesAfter, model: requestedModel, useCorpus } = body;
   if (!english) {
     return NextResponse.json({ error: 'english text is required' }, { status: 400 });
   }
@@ -155,6 +185,15 @@ export async function POST(request: NextRequest) {
     if (charEntry.bio) contextParts.push(`Bio: ${charEntry.bio}`);
   } else if (speaker) {
     contextParts.push(`Speaker: ${speaker}`);
+  }
+
+  // Add corpus exemplars when requested
+  if (useCorpus && speaker) {
+    const corpusEntries = await getCorpusForSpeaker(speaker);
+    if (corpusEntries.length > 0) {
+      const exemplars = corpusEntries.map(e => `EN: ${e.english}\nNL: ${e.dutch}`).join('\n\n');
+      contextParts.push(`APPROVED TRANSLATIONS for ${speaker} (use these as voice reference — reinforce these patterns):\n${exemplars}`);
+    }
   }
 
   // Add surrounding dialogue context

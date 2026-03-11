@@ -31,6 +31,7 @@ export interface BulkTranslateOptions {
   contextWindow?: number;   // 0-10, default 5
   requestDelay?: number;    // 0-1000ms, default 200
   startIndex?: number;      // for 'from-current' scope
+  useCorpus?: boolean;      // include speaker corpus exemplars (more context tokens)
 }
 
 interface UseBulkTranslateProps {
@@ -168,6 +169,7 @@ export function useBulkTranslate({
       scope = 'all',
       contextWindow = 5,
       startIndex = 0,
+      useCorpus = false,
     } = options;
 
     const snapSourceTexts = [...sourceTexts];
@@ -242,6 +244,7 @@ export function useBulkTranslate({
             linesBefore: linesBefore.length > 0 ? linesBefore : undefined,
             linesAfter: linesAfter.length > 0 ? linesAfter : undefined,
             model,
+            ...(useCorpus ? { useCorpus: true } : {}),
           }),
           signal: controller.signal,
         });
@@ -276,6 +279,7 @@ export function useBulkTranslate({
       contextWindow = 5,
       requestDelay = 200,
       startIndex = 0,
+      useCorpus = false,
     } = options;
 
     // Store settings for regeneration
@@ -388,6 +392,7 @@ export function useBulkTranslate({
             linesBefore: linesBefore.length > 0 ? linesBefore : undefined,
             linesAfter: linesAfter.length > 0 ? linesAfter : undefined,
             model,
+            ...(useCorpus ? { useCorpus: true } : {}),
           }),
           signal: controller.signal,
         });

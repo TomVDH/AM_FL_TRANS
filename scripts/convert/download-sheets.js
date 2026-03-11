@@ -16,7 +16,7 @@ const fs = require('fs');
 const path = require('path');
 const https = require('https');
 
-const EXCELS_FOLDER = path.join(__dirname, '..', 'excels');
+const EXCELS_FOLDER = path.join(__dirname, '..', '..', 'excels');
 const ORIGINALS_FOLDER = path.join(EXCELS_FOLDER, 'Originals');
 
 // Google Sheet ID → local filename mapping (sequential episodes)
