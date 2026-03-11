@@ -2117,12 +2117,12 @@ const TranslationHelper: React.FC = () => {
                     </div>
                     <div className="relative">
                       <button
-                        disabled
-                        className="h-8 px-4 bg-gray-200 dark:bg-gray-700 text-gray-400 dark:text-gray-500 border border-gray-300 dark:border-gray-600 cursor-not-allowed font-bold tracking-wide uppercase text-xs flex items-center gap-1.5"
+                        onClick={openBulkModal}
+                        className="h-8 px-4 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-gray-950 text-white font-bold tracking-wide uppercase text-xs flex items-center gap-1.5 shadow-md hover:shadow-lg transition-all"
                         style={{ borderRadius: '3px' }}
-                        title="AI Bulk Translate"
+                        title="AI Bulk Translate (Ctrl+Shift+T)"
                       >
-                        <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd"/></svg>
+                        <img src="/images/ass-favico-white.png" alt="" className="w-3.5 h-3.5" />
                         Start Bulk Translate
                       </button>
                     </div>
@@ -2259,8 +2259,8 @@ const TranslationHelper: React.FC = () => {
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm">
           <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-2xl w-full max-w-lg mx-4 p-6" style={{ borderRadius: '6px' }}>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 flex items-center justify-center" style={{ borderRadius: '8px', background: 'linear-gradient(135deg, #374151, #111827)' }}>
-                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
+              <div className="w-10 h-10 flex items-center justify-center overflow-hidden" style={{ borderRadius: '8px', background: 'linear-gradient(135deg, #374151, #111827)' }}>
+                <img src="/images/ass-favico-white.png" alt="" className="w-6 h-6" />
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white">AI Translate Sheet</h3>
@@ -2470,8 +2470,8 @@ const TranslationHelper: React.FC = () => {
           <div className="shrink-0 border-b-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-4">
             <div className="flex items-center justify-between max-w-5xl mx-auto">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 flex items-center justify-center bg-gradient-to-br from-gray-700 to-gray-900" style={{ borderRadius: '3px' }}>
-                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2l1.5 4.5L16 8l-4.5 1.5L10 14l-1.5-4.5L4 8l4.5-1.5L10 2z"/><path d="M15 12l.75 2.25L18 15l-2.25.75L15 18l-.75-2.25L12 15l2.25-.75L15 12z" opacity="0.6"/></svg>
+                <div className="w-10 h-10 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-700 to-gray-900" style={{ borderRadius: '3px' }}>
+                  <img src="/images/ass-favico-white.png" alt="" className="w-6 h-6" />
                 </div>
                 <div>
                   <h2 className="text-xl font-black text-gray-900 dark:text-white tracking-tight uppercase">Review AI Translations</h2>
