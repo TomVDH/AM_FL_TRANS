@@ -184,9 +184,23 @@ Factory PA,Character,Factory PA,Fabrieksomroep,CHARACTER,Factory,,,,
 Fancy Sign,Character,Fancy Sign,Schoon Bord,CHARACTER,Fancy,,,,
 Feeble Ass,Character,Feeble Ass,Slappe Ezel,CHARACTER,Feeble;Uncle Feeble;Aunty Feeble;Comrade Feeble;Brother Feeble;Sister Feeble,,,,
 FlyingMachine,MACHINES,Flying-Machine,Vlieg Machine,CHARACTER,,,,,
-Foal named by audience,FARM DONKEYS,Foal (named by audience),-tje,CHARACTER,Foal,"Born after the fire in Episode 2, she has never known a world of Humans. She just wants to play. She's very naive.",female,"""Whoppee!"" ""WHOA"" ""UGH""  
+Foal named by audience,FARM DONKEYS,Foal (named by audience),-tje,CHARACTER,Foal,"Born after the fire in Episode 2, she has never known a world of Humans. She just wants to play. She's very naive.",female,"**TONE:** Boundless childlike energy that matures across episodes. E3: wide-eyed wonder, whining, playful. E6: growing independence, rebellion against mother's authority, secret-keeping. E9: young agency, emotional maturity, choosing her own path. Throughout, she is curious, impulsive, and disarmingly sincere.
 
-What if I want to play?",
+**VOCABULARY:** Simple, punchy words. Heavy exclamations (""Wahoo!"" ""Cool!"" ""Ugh!""). Superlatives (""LOVE love LOVE,"" ""WAY BETTER THAN ROCKS!""). Childlike reasoning that's accidentally profound (""I think we're alive to live in the present and do what brings us joy""). ""Comrade Mother"" as a formal title she uses unironically. ""Uncle/Aunty"" for every Herd member.
+
+**VERBAL TICS:** ""Wahoo!"" for excitement. ""Ugh!"" for frustration. Repeated emphasis (""I love love LOVE""). ""What if..."" questions that challenge adult assumptions. ALL CAPS for emotional peaks. ""Uncle Bad—Cole"" (self-correcting mid-word as Bad Ass becomes Cole-Machine). Trailing ""..."" when uncertain or processing.
+
+**SENTENCE STRUCTURE:** Short, punchy, exclamatory. Questions drive her dialogue — she is always asking. Single-word reactions (""Cool!"" ""Really?"" ""Woah.""). Longer sentences only when making philosophical observations or pleading. Interrupts herself with dashes.
+
+**KEY THEMES:** Play vs. work (rejecting the Herd's work-worship). Curiosity about Machines vs. mother's fear of them. Growing up and away from her mother. Secret friendship with Bad Ass/Cole. The tension between loyalty and independence. Finding her own beliefs rather than inheriting her mother's.","**Register:** Deliberate pronoun system matching her relationships. ge/gij for peers, uncles, and aunts — the warm Flemish address she grew up hearing. je/jij exclusively when speaking to her mother — the intimate, childlike voice. u/uw for solemn or reverent moments (meeting Lazy's ghost, speaking to elders she doesn't know well). This pronoun switching is instinctive, not calculated.
+
+**Flemish density:** Moderate, with a distinctly childlike flavor. 'k contractions are a signature (""'k Heb het koud,"" ""'k Ben nat,"" ""'k Verveel mij dood"") — a child's shorthand, natural and unstudied. ""Nonkel"" for uncles (never ""Oom""; if informal, ""Ome""). ""Tante"" for aunts. ""Amai"" and ""oei"" as exclamations. ""nie"" in casual speech. ""Awel"" as a connector. Her Flemish should sound like a kid who picked it up from the Herd — natural, unpolished, warm.
+
+**Character voice:** Pure energy in Flemish wrapping. Her excitement comes through in short bursts and ALL CAPS. Her Flemish is unselfconscious — she doesn't think about how she speaks, she just does. Philosophical moments land harder because the language stays simple. Growing independence shows through tone shifts, not dialect changes.
+
+**Verbal tics in Dutch:** ""Joepie!"" / ""Wahoe!"" for excitement. ""Oei oei!"" for trouble. ""Amai"" for wonder. ""'k Heb / 'k Ben / 'k Wil"" contractions as baseline speech. ""Kameraad-Moeder"" always hyphenated — it's a compound title, her name for Sturdy. ""Nonkel Stoer"" for Bad Ass, ""Ome Bikkel"" for Hard Ass. ""SPELLEKES"" (Flemish diminutive plural) for games. Characters addressed by Nonkel/Tante + first name or codex nickname.
+
+**Translation approach:** Keep it simple and energetic. Her Dutch should read like a kid talks — short, loud, full of feeling. Don't over-dialect; let the 'k contractions and ""Nonkel"" carry the Flemish flavor naturally. ALL CAPS emphasis should be preserved. Philosophical moments (""Ik denk dat we leven om nu plezier te maken"") stay in plain language — the profundity is in the simplicity. Self-corrections with em-dashes (Nonkel Stoer—Piet) preserved exactly."
 Fresh Ass,Character,Fresh Ass,Verse Ezel,CHARACTER,Fresh;Uncle Fresh;Aunty Fresh;Comrade Fresh;Brother Fresh;Sister Fresh,,,,
 Furry Ass,Character,Furry Ass,Harige Ezel,CHARACTER,Furry;Uncle Furry;Aunty Furry;Comrade Furry;Brother Furry;Sister Furry,,,,
 Gaunt Ass,x,Gaunt Ass,Beenderige Ezel,CHARACTER,Gaunt;Uncle Gaunt;Aunty Gaunt;Comrade Gaunt;Brother Gaunt;Sister Gaunt,,,,
@@ -415,7 +429,7 @@ Miner Jenny,Character,Miner Jenny,Mijnwerker Jenny,CHARACTER,Miner;Jenny,"Miner 
 
 **Translation approach:** Prioritize emotional impact over literal accuracy. Adapt workplace slang to Dutch mining context. Preserve rhythm of angry outbursts and sudden emotional collapses through sentence structure and punctuation."
 Miner With No Legs,Character,Miner With No Legs,Mijnwerker zonder Benen,CHARACTER,Miner,,,,
-Mme. Derriere,Character,Mme. Derriere,Mevr. Derrière,CHARACTER,Mme.,"Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",female,"**TONE:** Manipulative, condescending
+Mme. Derriere,Character,Mme. Derriere,Mevr. Derrière,CHARACTER,Mme.;Mme,"Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",female,"**TONE:** Manipulative, condescending
 
 **VOCABULARY:** Corporate-speak mixed with false empathy (""my dear,"" ""precious"") and dehumanizing language (""beasts,"" ""property""). Business jargon (""bottom line,"" ""red,"" ""ends meet"") combined with philanthropic rhetoric.
 
@@ -644,23 +658,23 @@ Smart Ass,Character,Smart Ass,Slimme Ezel,CHARACTER,Smart;Uncle Smart;Aunty Smar
 Smelly Ass,Character,Smelly Ass,Stinkende Ezel,CHARACTER,Smelly;Uncle Smelly;Aunty Smelly;Comrade Smelly;Brother Smelly;Sister Smelly,,,,
 Sturdy Ass,Character,Sturdy Ass,Stevige Ezel,CHARACTER,Sturdy;Uncle Sturdy;Aunty Sturdy;Comrade Sturdy;Brother Sturdy;Sister Sturdy,"Overprotective mother. She is pair-bonded with Old Ass. She lost her first daughter Lazy in the mine. She is racist against Machines. Can be overbearing a strict.
 
-In the end, she changes her ways and spreads the story of asses.masses to other farm animals towards starting a greater revolution.",female,"**Tone**: Pious, maternal
+In the end, she changes her ways and spreads the story of asses.masses to other farm animals towards starting a greater revolution.",female,"**TONE:** Maternal, pious, and deeply passionate. Oscillates between tender warmth (with her Foal) and fierce, righteous conviction (against Machines, for the Gods). Emotionally raw in moments of grief — she mourns openly and fears loss constantly. An undercurrent of abandonment anxiety runs through everything.
 
-**Vocabulary**: Revolutionary/political terminology mixed with religious language; uses ""Comrade"" as standard address; formal but accessible speech patterns
+**VOCABULARY:** Religious/spiritual terminology saturates her speech (""the Gods,"" ""the Ancestors,"" ""the Astral Plane,"" ""Soul,"" ""Ascension""). Revolutionary/political language overlaps (""Comrade,"" ""Herd,"" ""Protest,"" ""Territory,"" ""traitors,"" ""betrayed""). Art vocabulary emerges in E6 as character development. Profanity is minimal and pointed — ""Damn those..."" rather than casual swearing.
 
-**Verbal tics**: ""By the Gods!"" as exclamation; ""evil, soulless, job-taking, child-killing Machines"" as repeated anti-Machine slur; frequent invocation of ""the Gods,"" ""the Ancestors,"" and spiritual concepts
+**VERBAL TICS:** ""Comrade"" as universal address. The anti-Machine litany: ""evil, soulless, job-taking, child-killing Machines"" — recited like a prayer. ""By the Gods!"" as primary exclamation. ""Ass Power!"" as rallying cry. Ellipses for trailing emotional moments (""They left me behind...""). Single-word fragments for devastating emphasis (""Again."" ""Never."").
 
-**Sentence structure**: Mix of short declarative statements and longer speeches; uses exclamations for emphasis; questions often rhetorical or concerned with group welfare
+**SENTENCE STRUCTURE:** Short fierce exclamations when agitated (""STOP!!"" ""No means NO!"" ""Gods."" ""Again."") alternating with longer passionate speeches and tender monologues. Rhetorical questions in distress. Commands when taking charge. Fragments for emotional gut-punches.
 
-**Key themes**: Protection of her foal and herd; religious faith and divine plan; anti-Machine prejudice; revolutionary ideals and collective action; work as spiritual calling; maternal guidance and concern for community survival","**Register**: Mixed formal/informal Dutch. Use ""ge/gij"" for peer addresses (Kameraden), ""uw/u"" for formal respect, ""je/jij"" only with foal/children. Elevated vocabulary for revolutionary/spiritual discourse, simple terms for maternal moments.
+**KEY THEMES:** Motherhood, loss, and the terror of being left behind (Lazy's death, Foal growing up, Herd departing without her). Unwavering faith in the Gods. Anti-Machine hatred as conviction and coping mechanism. Herd loyalty vs. betrayal. Art as late-blooming emotional outlet. The tension between protecting and letting go.","**Register:** Flemish ge/gij as default for peers, Herd members, and general address. Switches to je/jij only when speaking directly to her Foal — the softened pronoun is her maternal voice. Uses u/uw for solemn, spiritual, or respectful moments (""ik hou ook van u"" in a grave moment, ""uw Ziel"" when invoking the Gods). ""Kameraad"" appended liberally, often sentence-final — a verbal habit, not just a title.
 
-**Flemish density**: Moderate-heavy Flemish markers. Core patterns: ""ge zijt"" (you are), ""nie"" (not), ""'t"" contractions, ""da/dat"" (that), ""-ke"" diminutives for endearment (""Betweterke""). Avoid ""allez/amai"" - too casual for her dignity. Use ""moest"" (conditional if/should) for formal hypotheticals.
+**Flemish density:** Moderate. Natural ge/gij throughout, 't contractions (""'t is,"" ""'t spijt me""), occasional ""da"" for dat in casual speech, ""moest"" for conditionals. But NOT heavy dialect — prefer ""niet"" in most positions, save ""nie"" for natural casual moments. No piled-up contractions. Her Flemish should feel like a warm, educated Flemish mother — earthy but dignified, not plat. ""-ke"" diminutives sparingly for genuine affection (""Betweterke,"" ""Veulentje"").
 
-**Character voice**: Warm maternal authority with revolutionary gravitas. Flemish softens her intensity while preserving leadership tone. Religious invocations stay formal (""Bij de Goden""), maternal speech gets cozy Flemish warmth.
+**Character voice:** Warm maternal authority wrapped in natural Flemish. Religious invocations carry weight and stay elevated (""Bij de Goden!""). Emotional rawness comes through in short, punchy fragments (""Alweer."" ""'t Is niet veilig.""). She is the heart of the Herd: passionate, devout, frightened of losing what she loves.
 
-**Verbal tics**: ""Kameraad"" before names always. Anti-machine mantra: ""slechte, zielloze, werk-afpakkende, kind-dodende Machines."" ""EZEL MACHT!"" for Ass Power. Compound spiritual terms (""ezelenhemelvaartszangderzielen"").
+**Verbal tics in Dutch:** ""Kameraad"" at the end of sentences — reflexive, like punctuation. The anti-Machine litany, fixed form: ""kwaadaardige, zielloze, baanafpakkende, kindermoorddadige Machines."" ""Bij de Goden!"" for exclamation. ""EZEL MACHT!"" for rallying. ""ezelenhemelvaartszangderzielen"" (the glorious compound for the Song of Ascension). ""Veulentje"" for the Foal always. Characters addressed by full ""-Ezel"" names or codex nicknames.
 
-**Translation approach**: Adaptive for spiritual/revolutionary"
+**Translation approach:** Moderately adaptive. Flemish markers should flow naturally, never feel forced or stacked. Preserve compound constructions. Religious/spiritual terms stay elevated against the warm Flemish baseline. Emotional moments lean into simplicity over dialect. Art titles: keep French/English when pretentious, translate when heartfelt. The anti-Machine litany is FIXED — same wording every time."
 Sulky Ass,Character,Sulky Ass,Zielige Ezel,CHARACTER,Sulky;Uncle Sulky;Aunty Sulky;Comrade Sulky;Brother Sulky;Sister Sulky,,,,
 TankMachine,MACHINES,Tank-Machine,Tank Machine,CHARACTER,,,,,
 Tender Ass,Character,Tender Ass,Gevoelige Ezel,CHARACTER,Tender;Uncle Tender;Aunty Tender;Comrade Tender;Brother Tender;Sister Tender,,,,
