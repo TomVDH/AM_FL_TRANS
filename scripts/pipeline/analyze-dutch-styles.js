@@ -14,13 +14,15 @@ const fs = require('fs');
 const path = require('path');
 const Anthropic = require('@anthropic-ai/sdk');
 
-const CSV_FILE = path.join(__dirname, '..', 'data', 'analysis', 'speaker-dutch-dialogue.csv');
-const OUT_FILE = path.join(__dirname, '..', 'data', 'analysis', 'speaker-dutch-styles.json');
-const EN_STYLES_FILE = path.join(__dirname, '..', 'data', 'analysis', 'speaker-styles.json');
+const PROJECT_ROOT = path.join(__dirname, '..', '..');
+const CSV_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-dutch-dialogue.csv');
+const OUT_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-dutch-styles.json');
+const EN_STYLES_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-styles.json');
 
 const MIN_LINES = parseInt(process.argv.find(a => a.startsWith('--min-lines='))?.split('=')[1] || '10');
 const ONLY_SPEAKER = process.argv.find(a => a.startsWith('--speaker='))?.split('=').slice(1).join('=');
 const DRY_RUN = process.argv.includes('--dry-run');
+const FORCE = process.argv.includes('--force');
 
 function parseCSVLine(line) {
   const fields = [];
@@ -108,21 +110,23 @@ async function analyzeSpeaker(name, dialogueLines) {
     return `[${l.episode}] EN: "${l.english}" → NL: "${l.dutch}"`;
   }).join('\n');
 
-  const prompt = `You are analyzing Dutch translations from "Asses & Masses" (Dutch: "Ezels & Massa's"), an animated series. Below are paired English→Dutch dialogue lines for the character "${name}".
+  const prompt = `You are analyzing Dutch translations from "Asses & Masses" (Dutch: "Ezels & Massa's"), an animated series about donkeys in an allegorical society. The translator is Flemish Belgian, deliberately chosen to give the Dutch translation a warm Flemish sensibility while remaining fully understandable to Netherlands/Dutch audiences. The degree of Flemish flavor varies by character — some speak heavy plat Vlaams, others speak clean standard Dutch, and most fall in between. This linguistic variation IS characterization.
+
+Below are paired English→Dutch dialogue lines for the character "${name}".
 
 ${enProfile ? 'English speech profile:\n' + enProfile + '\n\n' : ''}Total translated lines: ${dialogueLines.length} (showing ${sampled.length} samples across ${episodes.size} episodes)
 
 DIALOGUE PAIRS:
 ${dialogueBlock}
 
-Produce a concise DUTCH TRANSLATION STYLE PROFILE for how this character has been translated. Focus on:
-1. **Register**: formal/informal Dutch (je/jij vs u, vocabulary level)
-2. **Dutch flavor**: dialect markers, Dutch idioms used, Flemish vs Netherlandic tendencies
-3. **Character voice preservation**: how the English personality comes through in Dutch
-4. **Verbal tics in Dutch**: translated catchphrases, recurring Dutch expressions
-5. **Translation approach**: literal vs creative/adaptive, how humor/wordplay is handled
+Produce a concise DUTCH TRANSLATION STYLE PROFILE for how this character should be translated. This is a PRESCRIPTIVE guide for future translations, not just a description. Focus on:
+1. **Register**: formal/informal Dutch — specify pronoun forms (je/jij, ge/gij, u) and vocabulary level
+2. **Flemish density**: how much Flemish flavoring — heavy (ge/gij, nie, 'k/'t, -ke diminutives, allez, amai), moderate (subtle Belgian warmth), or clean standard Dutch. Be specific about which markers to use or avoid
+3. **Character voice**: how the English personality must come through in Dutch — tone, energy, social register
+4. **Verbal tics in Dutch**: translated catchphrases, recurring expressions, speech patterns to maintain
+5. **Translation approach**: literal vs creative/adaptive, how humor/wordplay should be handled
 
-Format as a compact block for a translation reference card (max 120 words). Use line breaks between sections. Do NOT use markdown headers or bullet points — just plain text with line breaks.`;
+Format as a compact block for a translation reference card (max 150 words). Use line breaks between sections. Do NOT use markdown headers or bullet points — just plain text with line breaks.`;
 
   const response = await client.messages.create({
     model: 'claude-sonnet-4-20250514',
@@ -147,7 +151,7 @@ async function main() {
   for (let i = 0; i < targetSpeakers.length; i++) {
     const [name, lines] = targetSpeakers[i];
 
-    if (results[name] && !ONLY_SPEAKER) {
+    if (results[name] && results[name].dutchStyleAnalysis && !ONLY_SPEAKER && !FORCE) {
       console.log(`[${i + 1}/${targetSpeakers.length}] ${name} — already analyzed, skipping`);
       continue;
     }

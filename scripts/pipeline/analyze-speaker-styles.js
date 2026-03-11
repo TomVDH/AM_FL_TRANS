@@ -14,14 +14,16 @@ const fs = require('fs');
 const path = require('path');
 const Anthropic = require('@anthropic-ai/sdk');
 
-const CSV_FILE = path.join(__dirname, '..', 'data', 'analysis', 'speaker-dialogue.csv');
-const OUT_FILE = path.join(__dirname, '..', 'data', 'analysis', 'speaker-styles.json');
-const CODEX_FILE = path.join(__dirname, '..', 'data', 'json', 'codex_translations.json');
+const PROJECT_ROOT = path.join(__dirname, '..', '..');
+const CSV_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-dialogue.csv');
+const OUT_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-styles.json');
+const CODEX_FILE = path.join(PROJECT_ROOT, 'data', 'json', 'codex_translations.json');
 
 // Parse args
 const MIN_LINES = parseInt(process.argv.find(a => a.startsWith('--min-lines='))?.split('=')[1] || '10');
 const ONLY_SPEAKER = process.argv.find(a => a.startsWith('--speaker='))?.split('=').slice(1).join('=');
 const DRY_RUN = process.argv.includes('--dry-run');
+const FORCE = process.argv.includes('--force');
 
 // Read CSV
 const csvRaw = fs.readFileSync(CSV_FILE, 'utf8');
@@ -167,7 +169,7 @@ async function main() {
     const [name, lines] = targetSpeakers[i];
 
     // Skip if already analyzed
-    if (results[name] && !ONLY_SPEAKER) {
+    if (results[name] && results[name].styleAnalysis && !ONLY_SPEAKER && !FORCE) {
       console.log(`[${i + 1}/${targetSpeakers.length}] ${name} — already analyzed, skipping`);
       continue;
     }

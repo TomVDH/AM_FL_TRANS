@@ -235,7 +235,7 @@ export function ConversationView({
   const selectedRow = selectedBubbleIndex !== null ? conversationRows[selectedBubbleIndex] : null;
 
   return (
-    <div className="fixed inset-0 z-30 flex flex-col bg-gray-50 dark:bg-gray-950" style={{ height: '100dvh' }}>
+    <div className="fixed inset-0 z-30 flex flex-col bg-white/80 dark:bg-gray-950/85 backdrop-blur-xl" style={{ height: '100dvh' }}>
       <ConversationHeader
         sheetName={selectedSheet}
         rows={conversationRows}
@@ -247,7 +247,7 @@ export function ConversationView({
         onExit={onExit}
       />
 
-      <div className="flex-1 overflow-hidden mt-[60px]">
+      <div className="flex-1 flex flex-col overflow-hidden mt-[64px]">
         <ConversationThread
           rows={conversationRows}
           colorMap={colorMap}

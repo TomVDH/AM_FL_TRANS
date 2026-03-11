@@ -550,6 +550,10 @@ const TranslationHelper: React.FC = () => {
     acceptAllEmpty,
     rejectAllChanged,
     exitReview,
+    isDryRunning,
+    dryRunResults,
+    startDryRun,
+    clearDryRun,
     emptyCount,
     translatedCount,
   } = useBulkTranslate({
@@ -2376,17 +2380,68 @@ const TranslationHelper: React.FC = () => {
                 </div>
               </div>
 
-              {/* Info banner */}
-              <div className="flex items-start gap-2 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 text-xs text-amber-800 dark:text-amber-200" style={{ borderRadius: '3px' }}>
-                <svg className="w-4 h-4 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/></svg>
-                <span>You&apos;ll review all changes in a diff view before accepting.</span>
-              </div>
+              {/* Dry Run Preview */}
+              {dryRunResults.length > 0 && (
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <label className="text-[10px] font-bold uppercase tracking-wider text-gray-500 dark:text-gray-400">Preview — 3 sample lines</label>
+                    <button onClick={clearDryRun} className="text-[10px] text-gray-400 hover:text-gray-600 dark:hover:text-gray-500 dark:hover:text-gray-300 transition-colors">Clear</button>
+                  </div>
+                  <div className="space-y-1.5 max-h-[200px] overflow-y-auto">
+                    {dryRunResults.map((r) => (
+                      <div key={r.index} className="p-2.5 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600" style={{ borderRadius: '3px' }}>
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500">#{r.index + 1}</span>
+                          {r.speaker && <span className="text-[9px] font-bold text-purple-600 dark:text-purple-400">{r.speaker}</span>}
+                        </div>
+                        <div className="text-[11px] text-gray-500 dark:text-gray-400 mb-1 leading-snug">{r.sourceText.length > 120 ? r.sourceText.substring(0, 120) + '...' : r.sourceText}</div>
+                        <div className="text-[11px] text-emerald-700 dark:text-emerald-400 font-medium leading-snug">{r.translation.length > 120 ? r.translation.substring(0, 120) + '...' : r.translation}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {isDryRunning && (
+                <div className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-gray-700/50 border border-gray-200 dark:border-gray-600" style={{ borderRadius: '3px' }}>
+                  <svg className="w-4 h-4 animate-spin text-gray-500" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth={4} />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                  </svg>
+                  <span className="text-xs text-gray-600 dark:text-gray-300">Translating 3 sample lines...</span>
+                </div>
+              )}
+
+              {/* Info banner — only show before dry run */}
+              {dryRunResults.length === 0 && !isDryRunning && (
+                <div className="flex items-start gap-2 p-3 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700 text-xs text-amber-800 dark:text-amber-200" style={{ borderRadius: '3px' }}>
+                  <svg className="w-4 h-4 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd"/></svg>
+                  <span>Preview 3 sample lines first, or go straight to full translation.</span>
+                </div>
+              )}
             </div>
 
             <div className="flex justify-end gap-3">
-              <button onClick={closeBulkModal} className="px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">Cancel</button>
+              <button onClick={() => { closeBulkModal(); clearDryRun(); }} className="px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">Cancel</button>
+              {!isDryRunning && dryRunResults.length === 0 && (
+                <button
+                  onClick={() => {
+                    startDryRun({
+                      model: bulkModel,
+                      scope: bulkScope,
+                      contextWindow: bulkContextWindow,
+                      startIndex: currentIndex,
+                    });
+                  }}
+                  className="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all"
+                  style={{ borderRadius: '3px' }}
+                >
+                  Preview 3 Lines
+                </button>
+              )}
               <button
                 onClick={() => {
+                  clearDryRun();
                   setForceToolsTab('bulk');
                   startBulkTranslate({
                     model: bulkModel,
@@ -2396,10 +2451,11 @@ const TranslationHelper: React.FC = () => {
                     startIndex: currentIndex,
                   });
                 }}
-                className="px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-gray-950 shadow-md hover:shadow-lg transition-all"
+                disabled={isDryRunning}
+                className="px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-gray-950 shadow-md hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 style={{ borderRadius: '3px' }}
               >
-                Start Translation
+                {dryRunResults.length > 0 ? 'Start Full Translation' : 'Start Translation'}
               </button>
             </div>
           </div>

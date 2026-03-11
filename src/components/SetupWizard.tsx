@@ -88,6 +88,11 @@ interface SetupWizardProps {
   // Loading states
   isLoadingExcel?: boolean;
 
+  // API key
+  apiKey?: string;
+  hasClientApiKey?: boolean;
+  onApiKeyChange?: (key: string) => void;
+  onApiKeyClear?: () => void;
 }
 
 /**
@@ -179,6 +184,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   showResetModal,
   setShowResetModal,
   isLoadingExcel,
+  apiKey,
+  hasClientApiKey,
+  onApiKeyChange,
+  onApiKeyClear,
 }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [existingFiles, setExistingFiles] = React.useState<any[]>([]);
@@ -778,6 +787,10 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           setShowResetModal={setShowResetModal}
           onFilesChanged={refreshFileList}
           onExpandChange={setRefPanelExpanded}
+          apiKey={apiKey}
+          hasClientApiKey={hasClientApiKey}
+          onApiKeyChange={onApiKeyChange}
+          onApiKeyClear={onApiKeyClear}
         />
 
       </div>

@@ -37,6 +37,12 @@ interface ReferenceConfigPanelProps {
 
   // Dark mode (for styling consistency)
   darkMode?: boolean;
+
+  // API key
+  apiKey?: string;
+  hasClientApiKey?: boolean;
+  onApiKeyChange?: (key: string) => void;
+  onApiKeyClear?: () => void;
 }
 
 export default function ReferenceConfigPanel({
@@ -53,6 +59,10 @@ export default function ReferenceConfigPanel({
   setShowResetModal,
   onFilesChanged,
   onExpandChange,
+  apiKey,
+  hasClientApiKey,
+  onApiKeyChange,
+  onApiKeyClear,
 }: ReferenceConfigPanelProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
@@ -175,6 +185,41 @@ export default function ReferenceConfigPanel({
 
             {activeTab === 'settings' && (
               <div className="space-y-5">
+                {/* API Key */}
+                {onApiKeyChange && (
+                  <div>
+                    <label className="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">Anthropic API Key</label>
+                    <p className="text-[11px] text-gray-400 dark:text-gray-500 mb-2">
+                      Required for AI features. Stored locally in your browser — never sent to our servers.
+                    </p>
+                    <div className="flex gap-2">
+                      <div className="relative flex-1">
+                        <input
+                          type="password"
+                          value={apiKey || ''}
+                          onChange={(e) => onApiKeyChange(e.target.value)}
+                          placeholder="sk-ant-..."
+                          className="w-full h-8 px-3 text-xs bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-600 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-gray-400 dark:focus:border-gray-500"
+                          style={{ borderRadius: '3px' }}
+                        />
+                        {hasClientApiKey && (
+                          <span className="absolute right-2 top-1/2 -translate-y-1/2 w-2 h-2 bg-emerald-500 rounded-full" title="Key saved" />
+                        )}
+                      </div>
+                      {hasClientApiKey && onApiKeyClear && (
+                        <button
+                          onClick={onApiKeyClear}
+                          className="h-8 px-2.5 text-[10px] font-medium text-gray-400 hover:text-red-500 border border-gray-200 dark:border-gray-600 hover:border-red-300 transition-colors"
+                          style={{ borderRadius: '3px' }}
+                          title="Remove API key"
+                        >
+                          Clear
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                )}
+
                 {/* File type selector */}
                 <div>
                   <label className="block text-xs font-semibold text-gray-700 dark:text-gray-300 mb-1">File Type</label>

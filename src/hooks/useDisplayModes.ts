@@ -20,17 +20,26 @@ export const useDisplayModes = () => {
   const [conversationMode, setConversationMode] = useState(false);     // Chat bubble conversation view
   const [eyeModeBeforeGamepad, setEyeModeBeforeGamepad] = useState(false); // Store eyeMode state before entering gamepad mode
 
-  // Initialize and persist dark mode
+  // Initialize dark mode from localStorage or system preference
   useEffect(() => {
-    // Check localStorage and system preference
     const savedMode = localStorage.getItem('darkMode');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+
     if (savedMode !== null) {
       setDarkMode(savedMode === 'true');
     } else {
-      setDarkMode(systemPrefersDark);
+      setDarkMode(mq.matches);
     }
+
+    // Listen for OS/browser preference changes in real-time
+    const handleChange = (e: MediaQueryListEvent) => {
+      // Only follow system if user hasn't manually set a preference
+      if (localStorage.getItem('darkMode') === null) {
+        setDarkMode(e.matches);
+      }
+    };
+    mq.addEventListener('change', handleChange);
+    return () => mq.removeEventListener('change', handleChange);
   }, []);
 
   // Update document class and localStorage when dark mode changes

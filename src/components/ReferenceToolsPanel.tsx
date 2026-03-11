@@ -91,7 +91,20 @@ interface ReferenceToolsPanelProps {
   onJumpToEntry?: (index: number) => void;
 }
 
-type TabType = 'codex' | 'search' | 'edited';
+type TabType = 'codex' | 'search' | 'edited' | 'past';
+
+interface PastSheetMatch {
+  fileName: string;
+  sheetName: string;
+  matches: Array<{
+    row: number;
+    utterer: string;
+    context: string;
+    sourceEnglish: string;
+    translatedDutch: string;
+    key?: string;
+  }>;
+}
 
 const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   xlsxMode,
@@ -145,6 +158,12 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
   const [searchMode] = useState<'current' | 'custom'>('current');
   const [customSearchTerm] = useState('');
 
+  // Past Sheets tab state
+  const [pastSheetResults, setPastSheetResults] = useState<PastSheetMatch[]>([]);
+  const [pastSheetLoading, setPastSheetLoading] = useState(false);
+  const [pastSheetSearchedTerm, setPastSheetSearchedTerm] = useState('');
+  const [pastSheetCollapsed, setPastSheetCollapsed] = useState<Record<string, boolean>>({});
+
   // Handle tab change
   const handleTabChange = (tab: TabType) => {
     setActiveTab(tab);
@@ -176,7 +195,46 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
     }
   }, [activeTab, effectiveSearchTerm, setXlsxSearchTerm]);
 
-  // Note: Auto-targeting removed - user has full control over tab selection
+  // Auto-search past sheets when tab is active and source text changes
+  useEffect(() => {
+    if (activeTab !== 'past') return;
+    const currentSource = sourceTexts[currentIndex] || '';
+    if (!currentSource || currentSource === pastSheetSearchedTerm) return;
+
+    let cancelled = false;
+    const searchPastSheets = async () => {
+      setPastSheetLoading(true);
+      try {
+        // Extract key words from source text (first 5 significant words)
+        const words = currentSource.split(/\s+/).filter(w => w.length > 2);
+        const searchTerm = words.slice(0, 6).join(' ');
+
+        const res = await fetch('/api/xlsx-files', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            searchTerm: searchTerm,
+            searchAllFiles: true,
+            globalSearch: true,
+          })
+        });
+        if (cancelled) return;
+        if (res.ok) {
+          const data = await res.json();
+          setPastSheetResults(data.results || []);
+          setPastSheetSearchedTerm(currentSource);
+          setPastSheetCollapsed({});
+        }
+      } catch (err) {
+        console.error('Past sheet search error:', err);
+      } finally {
+        if (!cancelled) setPastSheetLoading(false);
+      }
+    };
+
+    const timer = setTimeout(searchPastSheets, 300);
+    return () => { cancelled = true; clearTimeout(timer); };
+  }, [activeTab, sourceTexts, currentIndex, pastSheetSearchedTerm]);
 
   // Load full codex data
   useEffect(() => {
@@ -289,6 +347,29 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
             {editedEntries.length > 0 && (
               <span className="text-[9px] px-1.5 py-0.5 bg-orange-700 dark:bg-orange-400 text-white dark:text-gray-900 font-bold" style={{ borderRadius: '2px' }}>
                 {editedEntries.length}
+              </span>
+            )}
+          </span>
+        </button>
+
+        {/* Past Sheets Tab - Teal */}
+        <button
+          onClick={() => handleTabChange('past')}
+          className={`flex-1 px-3 py-1.5 text-xs font-medium transition-all duration-200 ${
+            activeTab === 'past'
+              ? 'bg-teal-700 dark:bg-teal-500 text-white'
+              : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
+          }`}
+          style={{ borderRadius: '2px' }}
+        >
+          <span className="flex items-center justify-center gap-1.5">
+            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+            Past
+            {pastSheetResults.length > 0 && (
+              <span className="text-[9px] px-1.5 py-0.5 bg-teal-800 dark:bg-teal-400 text-white dark:text-gray-900 font-bold" style={{ borderRadius: '2px' }}>
+                {pastSheetResults.reduce((sum, r) => sum + r.matches.length, 0)}
               </span>
             )}
           </span>
@@ -838,6 +919,151 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
               {editedEntries.length} edited translation{editedEntries.length !== 1 ? 's' : ''}
             </div>
           )}
+        </div>
+      )}
+
+      {/* Past Sheets Tab Content */}
+      {activeTab === 'past' && (
+        <div className="space-y-2">
+          {/* Status bar */}
+          <div className="flex items-center justify-between px-1">
+            <div className="text-[10px] text-gray-400 dark:text-gray-500">
+              {pastSheetLoading ? (
+                <span className="flex items-center gap-1.5">
+                  <svg className="w-3 h-3 animate-spin" fill="none" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth={4} />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                  </svg>
+                  Scanning all sheets...
+                </span>
+              ) : pastSheetResults.length > 0 ? (
+                <span>
+                  {pastSheetResults.reduce((sum, r) => sum + r.matches.length, 0)} match{pastSheetResults.reduce((sum, r) => sum + r.matches.length, 0) !== 1 ? 'es' : ''} across {pastSheetResults.length} sheet{pastSheetResults.length !== 1 ? 's' : ''}
+                </span>
+              ) : pastSheetSearchedTerm ? (
+                <span>No past instances found</span>
+              ) : (
+                <span>Auto-searches current source text across all Excel files</span>
+              )}
+            </div>
+            {pastSheetSearchedTerm && !pastSheetLoading && (
+              <button
+                onClick={() => { setPastSheetSearchedTerm(''); setPastSheetResults([]); }}
+                className="text-[10px] text-teal-600 dark:text-teal-400 hover:underline"
+              >
+                Refresh
+              </button>
+            )}
+          </div>
+
+          {/* Results grouped by file → sheet */}
+          <div className="border border-gray-200 dark:border-gray-700 overflow-hidden max-h-[50vh] overflow-y-auto" style={{ borderRadius: '3px' }}>
+            {pastSheetResults.length === 0 && !pastSheetLoading && (
+              <div className="p-6 text-center text-xs text-gray-400 dark:text-gray-500">
+                {pastSheetSearchedTerm
+                  ? 'No matching translations found in other sheets.'
+                  : 'Switch to this tab to scan all Excel files for past translations of the current string.'}
+              </div>
+            )}
+
+            {pastSheetResults.map((group, gIdx) => {
+              const groupKey = `${group.fileName}::${group.sheetName}`;
+              const isCollapsed = pastSheetCollapsed[groupKey];
+              // Extract short file label (e.g., "E1" from "1_asses.masses_E1Proxy.xlsx")
+              const fileLabel = group.fileName.replace(/^\d+_asses\.masses_/, '').replace(/Proxy\.xlsx$/, '').replace(/\.xlsx$/, '');
+              // Check if this is the currently loaded file+sheet (to highlight differently)
+              const isCurrent = group.fileName === selectedXlsxFile && group.sheetName === currentWorkingSheet;
+
+              return (
+                <div key={gIdx} className={`${gIdx > 0 ? 'border-t border-gray-200 dark:border-gray-700' : ''}`}>
+                  {/* Group header */}
+                  <button
+                    onClick={() => setPastSheetCollapsed(prev => ({ ...prev, [groupKey]: !prev[groupKey] }))}
+                    className={`w-full flex items-center gap-2 px-3 py-2 text-left transition-colors ${
+                      isCurrent
+                        ? 'bg-teal-50 dark:bg-teal-900/20'
+                        : 'bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-750'
+                    }`}
+                  >
+                    <svg className={`w-3 h-3 text-gray-400 transition-transform ${isCollapsed ? '' : 'rotate-90'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                    <span className="text-[10px] font-bold text-teal-700 dark:text-teal-400 px-1.5 py-0.5 bg-teal-100 dark:bg-teal-900/40" style={{ borderRadius: '2px' }}>
+                      {fileLabel}
+                    </span>
+                    <span className="text-[10px] text-gray-500 dark:text-gray-400 truncate">
+                      {group.sheetName}
+                    </span>
+                    {isCurrent && (
+                      <span className="text-[9px] px-1 py-0.5 bg-teal-200 dark:bg-teal-800 text-teal-700 dark:text-teal-300 font-medium" style={{ borderRadius: '2px' }}>
+                        current
+                      </span>
+                    )}
+                    <span className="ml-auto text-[10px] text-gray-400 dark:text-gray-500">
+                      {group.matches.length}
+                    </span>
+                  </button>
+
+                  {/* Matches */}
+                  {!isCollapsed && group.matches.map((match, mIdx) => (
+                    <div
+                      key={mIdx}
+                      className={`px-3 py-2 transition-colors hover:bg-teal-50 dark:hover:bg-teal-900/10 ${
+                        mIdx > 0 ? 'border-t border-gray-100 dark:border-gray-700/50' : ''
+                      }`}
+                    >
+                      <div className="flex items-center justify-between mb-1">
+                        <div className="flex items-center gap-1.5">
+                          <span className="text-[10px] font-mono font-medium px-1.5 py-0.5 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400" style={{ borderRadius: '2px' }}>
+                            Row {match.row}
+                          </span>
+                          {match.utterer && (
+                            <span className="text-[10px] px-1.5 py-0.5 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400" style={{ borderRadius: '2px' }}>
+                              {match.utterer}
+                            </span>
+                          )}
+                        </div>
+                        <div className="flex items-center gap-1">
+                          {match.translatedDutch && (
+                            <button
+                              onClick={() => insertTranslatedSuggestion(match.translatedDutch)}
+                              className="p-1 bg-teal-100 dark:bg-teal-900/50 hover:bg-teal-200 dark:hover:bg-teal-800 text-teal-600 dark:text-teal-400 transition-colors"
+                              style={{ borderRadius: '2px' }}
+                              title="Insert translation"
+                            >
+                              <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 4v16m8-8H4" />
+                              </svg>
+                            </button>
+                          )}
+                          <button
+                            onClick={() => copyToClipboard(match.translatedDutch || match.sourceEnglish)}
+                            className="p-1 bg-gray-100 dark:bg-gray-600 hover:bg-gray-200 dark:hover:bg-gray-500 text-gray-600 dark:text-gray-300 transition-colors"
+                            style={{ borderRadius: '2px' }}
+                            title="Copy"
+                          >
+                            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                      <div className="mb-0.5">
+                        <span className="text-[9px] uppercase tracking-wide text-gray-400 dark:text-gray-500 mr-1">EN:</span>
+                        <span className="text-xs text-gray-600 dark:text-gray-400 whitespace-pre-wrap break-words">{match.sourceEnglish}</span>
+                      </div>
+                      {match.translatedDutch && (
+                        <div>
+                          <span className="text-[9px] uppercase tracking-wide text-gray-400 dark:text-gray-500 mr-1">NL:</span>
+                          <span className="text-xs font-medium text-teal-700 dark:text-teal-300 whitespace-pre-wrap break-words">{match.translatedDutch}</span>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              );
+            })}
+          </div>
         </div>
       )}
 

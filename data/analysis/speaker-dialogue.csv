@@ -3404,7 +3404,7 @@ Zookeeper Rose,E5,E5_Zoo_Introduction_localizatio,,"We'll add up your scores at 
 Zookeeper Rose,E5,E5_Zoo_Introduction_localizatio,Rose exits.,I'll go open the gate and then we'll get started.,SAY.Dialog:Day1.141.Zookeeper Rose
 Zookeeper Rose,E5,E5_Zoo_Introduction_localizatio,Rose returns.,Get ready to meet the visitors.,SAY.Dialog:Day1.45.Zookeeper Rose
 Zookeeper Rose,E5,E5_Zoo_Introduction_localizatio,,Those TOURISTS with the colourful Hawaiian shirts love it when you turn Left and Right to give them a good look at you.,SAY.Dialog:Day1.85.Zookeeper Rose
-Zookeeper Rose,E5,E5_Zoo_Introduction_localizatio,,THE TEACHERS with clip boards like it when you demonstrate a classic donkey Kick!\n,SAY.Dialog:Day1.91.Zookeeper Rose
+Zookeeper Rose,E5,E5_Zoo_Introduction_localizatio,,THE TEACHERS with clip boards like it when you demonstrate a classic donkey Kick!,SAY.Dialog:Day1.91.Zookeeper Rose
 Zookeeper Rose,E5,E5_Zoo_Introduction_localizatio,,"Those lab-coat wearing RESEARCHERS are fascinated with animal behaviour, so show them a Dust Bath!",SAY.Dialog:Day1.90.Zookeeper Rose
 Zookeeper Rose,E5,E5_Zoo_Introduction_localizatio,,And of course that OLD LADY who is always here just wants to be Listened to.,SAY.Dialog:Day1.89.Zookeeper Rose
 Zookeeper Rose,E5,E5_Zoo_Introduction_localizatio,,"You got that memorized, right?",SAY.Dialog:Day1.88.Zookeeper Rose

@@ -108,11 +108,12 @@ function findRelevantCodexEntries(entries: CodexEntry[], text: string): CodexEnt
 }
 
 export async function POST(request: NextRequest) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
+  // API key: prefer client-provided (via header), fall back to server env var
+  const apiKey = request.headers.get('x-api-key') || process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
     return NextResponse.json(
-      { error: 'ANTHROPIC_API_KEY not configured' },
-      { status: 500 }
+      { error: 'No API key — enter your Anthropic key in Settings or set ANTHROPIC_API_KEY in .env.local' },
+      { status: 401 }
     );
   }
 
@@ -191,16 +192,12 @@ export async function POST(request: NextRequest) {
     contextParts.push(`Current translation (for reference): ${existingTranslation}`);
   }
 
-  const prompt = `Translate this ONE English dialogue line into Flemish Belgian Dutch (Vlaams) for the animated series "Asses & Masses" ("Ezels & Massa's") about donkeys in an allegorical society. This is a Belgian production for a Belgian audience.
+  const prompt = `Translate this ONE English dialogue line into Dutch for the animated series "Asses & Masses" ("Ezels & Massa's") about donkeys in an allegorical society.
 
-FLEMISH BASELINE (use unless the character's Dutch translation style below says otherwise):
-- Default register is informal Flemish Belgian Dutch, NOT Netherlandic Dutch
-- Use "ge/gij" pronouns (not "jij/je") and "u" for formal address
-- Use Flemish negation "nie" (not "niet"), contractions "'k" (ik), "'t" (het)
-- Use "-ke" diminutives (manneke, beetje → beetke) where natural
-- Prefer Flemish vocabulary: "schoon" (mooi), "goesting" (zin), "ni waar" (toch), "allez", "amai"
-- Keep sentences direct and punchy — spoken Flemish, not written Dutch
-- If a character has a specific "Dutch translation style" below, that OVERRIDES this baseline
+TRANSLATION VOICE:
+The translator is Flemish Belgian, deliberately chosen to give this Dutch translation a warm Flemish sensibility. The translation must remain fully understandable to Netherlands/Dutch audiences — Flemish is the seasoning, not a barrier. The degree of Flemish flavor varies by character: some speak heavy plat Vlaams (ge/gij, nie, 'k/'t, -ke diminutives, allez, amai), others speak clean standard Dutch, and most fall somewhere in between. This linguistic variation IS characterization — Flemish density reflects social class, community belonging, and personality.
+- If a character has a "Dutch translation style" below, follow it precisely — it defines their specific register
+- If a character has NO Dutch translation style, use clean standard Dutch with a subtle Belgian warmth — do NOT default to "ge/gij" or heavy Flemish markers. Only characters whose style explicitly calls for Flemish pronouns should use them
 
 ${contextParts.length > 0 ? contextParts.join('\n\n') + '\n\n' : ''}THE LINE TO TRANSLATE:
 "${english}"
@@ -210,10 +207,10 @@ RULES:
 - No explanation, no commentary, no alternatives, no preamble
 - Match the character's established Dutch voice and register
 - Preserve tone, humor, wordplay, and verbal tics
-- Keep sound effects as-is or use Flemish equivalent (*cough* → *kuch*, *sigh* → *zucht*)
+- Keep sound effects as-is or use Dutch equivalent (*cough* → *kuch*, *sigh* → *zucht*)
 - Translate ONLY the line above — ignore any similarity to context lines
 
-<translation>your Flemish Dutch translation here</translation>`;
+<translation>your Dutch translation here</translation>`;
 
   try {
     const client = new Anthropic({ apiKey, timeout: 40_000 }); // 40s timeout

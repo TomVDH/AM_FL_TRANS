@@ -10,9 +10,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const STYLES_FILE = path.join(__dirname, '..', 'data', 'analysis', 'speaker-dutch-styles.json');
-const CSV_PATH = path.join(__dirname, '..', 'data', 'csv', 'codex_translations.csv');
-const JSON_PATH = path.join(__dirname, '..', 'data', 'json', 'codex_translations.json');
+const PROJECT_ROOT = path.join(__dirname, '..', '..');
+const STYLES_FILE = path.join(PROJECT_ROOT, 'data', 'analysis', 'speaker-dutch-styles.json');
+const CSV_PATH = path.join(PROJECT_ROOT, 'data', 'csv', 'codex_translations.csv');
+const JSON_PATH = path.join(PROJECT_ROOT, 'data', 'json', 'codex_translations.json');
 
 const APPLY = process.argv.includes('--apply');
 const OVERWRITE = process.argv.includes('--overwrite');

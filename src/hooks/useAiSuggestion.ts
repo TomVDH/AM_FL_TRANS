@@ -15,6 +15,7 @@ interface UseAiSuggestionProps {
   currentIndex: number;
   linesBefore?: SurroundingLine[];
   linesAfter?: SurroundingLine[];
+  apiKey?: string;
 }
 
 interface UseAiSuggestionReturn {
@@ -38,6 +39,7 @@ export function useAiSuggestion({
   currentIndex,
   linesBefore,
   linesAfter,
+  apiKey,
 }: UseAiSuggestionProps): UseAiSuggestionReturn {
   const [aiSuggestEnabled, setAiSuggestEnabled] = useState(false);
   const [aiSuggestion, setAiSuggestion] = useState<string | null>(null);
@@ -85,7 +87,10 @@ export function useAiSuggestion({
     try {
       const response = await fetch('/api/ai-suggest', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          ...(apiKey ? { 'x-api-key': apiKey } : {}),
+        },
         body: JSON.stringify({
           english: sourceText,
           speaker,
@@ -121,7 +126,7 @@ export function useAiSuggestion({
         setIsUpgradingAiSuggestion(false);
       }
     }
-  }, [sourceText, speaker, context, existingTranslation, currentIndex, linesBefore, linesAfter]);
+  }, [sourceText, speaker, context, existingTranslation, currentIndex, linesBefore, linesAfter, apiKey]);
 
   const upgradeAiSuggestion = useCallback(() => {
     fetchAiSuggestion('sonnet');

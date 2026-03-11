@@ -17,6 +17,14 @@ export interface BulkTranslateResult {
   wasEmpty: boolean;
 }
 
+export interface DryRunResult {
+  index: number;
+  sourceText: string;
+  speaker: string;
+  translation: string;
+  existingTranslation: string;
+}
+
 export interface BulkTranslateOptions {
   model?: ModelTier;
   scope?: BulkScope;
@@ -31,6 +39,7 @@ interface UseBulkTranslateProps {
   translations: string[];
   contextNotes: string[];
   trimSpeakerName: (name: string) => string;
+  apiKey?: string;
 }
 
 interface UseBulkTranslateReturn {
@@ -46,6 +55,7 @@ interface UseBulkTranslateReturn {
   bulkCurrentLine: string;
   bulkLastSuggestion: string;
   bulkLastSource: string;
+  bulkLastSpeaker: string;
   bulkSuggestionCount: number;
   startBulkTranslate: (options?: BulkTranslateOptions) => void;
   stopBulkTranslate: () => void;
@@ -56,10 +66,18 @@ interface UseBulkTranslateReturn {
   acceptResult: (index: number) => string; // returns the accepted translation
   rejectResult: (index: number) => void;
   updateResultTranslation: (index: number, newTranslation: string) => void;
+  regenerateResult: (index: number) => Promise<void>;
+  isRegenerating: number | null; // index currently regenerating, or null
   acceptAll: () => Map<number, string>;
   acceptAllEmpty: () => Map<number, string>;
   rejectAllChanged: () => void;
   exitReview: () => void;
+
+  // Dry run
+  isDryRunning: boolean;
+  dryRunResults: DryRunResult[];
+  startDryRun: (options?: BulkTranslateOptions) => void;
+  clearDryRun: () => void;
 
   // Stats
   emptyCount: number;
@@ -99,6 +117,7 @@ export function useBulkTranslate({
   translations,
   contextNotes,
   trimSpeakerName,
+  apiKey,
 }: UseBulkTranslateProps): UseBulkTranslateReturn {
   const [showBulkModal, setShowBulkModal] = useState(false);
   const [isBulkTranslating, setIsBulkTranslating] = useState(false);
@@ -108,11 +127,19 @@ export function useBulkTranslate({
   const [showBulkReview, setShowBulkReview] = useState(false);
   const [bulkResults, setBulkResults] = useState<BulkTranslateResult[]>([]);
   const abortRef = useRef(false);
+  const [isRegenerating, setIsRegenerating] = useState<number | null>(null);
+  // Remember last-used settings for regeneration
+  const lastModelRef = useRef<ModelTier>('opus');
+  const lastContextWindowRef = useRef(5);
   // Use refs instead of state for ephemeral display values to avoid re-renders during async loop
   const lastSuggestionRef = useRef('');
   const lastSourceRef = useRef('');
+  const lastSpeakerRef = useRef('');
   // Counter that only increments on actual new suggestions (not skipped lines)
   const suggestionCountRef = useRef(0);
+
+  const [isDryRunning, setIsDryRunning] = useState(false);
+  const [dryRunResults, setDryRunResults] = useState<DryRunResult[]>([]);
 
   const emptyCount = translations.filter((t, i) => i < sourceTexts.length && (!t || t === '[BLANK, REMOVE LATER]')).length;
   const translatedCount = sourceTexts.length - emptyCount;
@@ -131,6 +158,117 @@ export function useBulkTranslate({
     abortRef.current = true;
   }, []);
 
+  const clearDryRun = useCallback(() => {
+    setDryRunResults([]);
+  }, []);
+
+  const startDryRun = useCallback(async (options: BulkTranslateOptions = {}) => {
+    const {
+      model = 'opus',
+      scope = 'all',
+      contextWindow = 5,
+      startIndex = 0,
+    } = options;
+
+    const snapSourceTexts = [...sourceTexts];
+    const snapUtterers = [...utterers];
+    const snapTranslations = [...translations];
+    const snapContextNotes = [...contextNotes];
+
+    // Determine eligible indices based on scope
+    const loopStart = scope === 'from-current' ? Math.max(0, startIndex) : 0;
+    const eligible: number[] = [];
+    for (let i = loopStart; i < snapSourceTexts.length; i++) {
+      const src = snapSourceTexts[i];
+      if (!src?.trim()) continue;
+      if (scope === 'empty') {
+        const existing = snapTranslations[i] || '';
+        if (existing && existing !== '[BLANK, REMOVE LATER]') continue;
+      }
+      eligible.push(i);
+    }
+
+    if (eligible.length === 0) return;
+
+    // Pick 3 representative lines: first, middle, last
+    const picks: number[] = [];
+    if (eligible.length <= 3) {
+      picks.push(...eligible);
+    } else {
+      picks.push(eligible[0]);
+      picks.push(eligible[Math.floor(eligible.length / 2)]);
+      picks.push(eligible[eligible.length - 1]);
+    }
+
+    setIsDryRunning(true);
+    setDryRunResults([]);
+    const results: DryRunResult[] = [];
+
+    for (const i of picks) {
+      const source = snapSourceTexts[i];
+      const speaker = snapUtterers[i] ? trimSpeakerName(snapUtterers[i]) : '';
+      const existingTranslation = snapTranslations[i] || '';
+      const wasEmpty = !existingTranslation || existingTranslation === '[BLANK, REMOVE LATER]';
+
+      // Build context window
+      const linesBefore: SurroundingLine[] = [];
+      const linesAfter: SurroundingLine[] = [];
+      for (let j = Math.max(0, i - contextWindow); j < i; j++) {
+        if (snapSourceTexts[j]?.trim()) {
+          linesBefore.push({ speaker: snapUtterers[j] ? trimSpeakerName(snapUtterers[j]) : undefined, text: snapSourceTexts[j] });
+        }
+      }
+      for (let j = i + 1; j <= Math.min(snapSourceTexts.length - 1, i + contextWindow); j++) {
+        if (snapSourceTexts[j]?.trim()) {
+          linesAfter.push({ speaker: snapUtterers[j] ? trimSpeakerName(snapUtterers[j]) : undefined, text: snapSourceTexts[j] });
+        }
+      }
+
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+
+        const response = await fetch('/api/ai-suggest', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...(apiKey ? { 'x-api-key': apiKey } : {}),
+          },
+          body: JSON.stringify({
+            english: source,
+            speaker,
+            context: snapContextNotes[i] || '',
+            existingTranslation: wasEmpty ? undefined : existingTranslation,
+            linesBefore: linesBefore.length > 0 ? linesBefore : undefined,
+            linesAfter: linesAfter.length > 0 ? linesAfter : undefined,
+            model,
+          }),
+          signal: controller.signal,
+        });
+
+        clearTimeout(timeoutId);
+
+        if (response.ok) {
+          const data = await response.json();
+          if (data.suggestion && !isGarbageResponse(data.suggestion, source)) {
+            results.push({
+              index: i,
+              sourceText: source,
+              speaker,
+              translation: data.suggestion,
+              existingTranslation: wasEmpty ? '' : existingTranslation,
+            });
+          }
+        }
+      } catch (err) {
+        console.error('[Dry Run] Error:', err);
+      }
+    }
+
+    setDryRunResults(results);
+    setIsDryRunning(false);
+  }, [sourceTexts, utterers, translations, contextNotes, trimSpeakerName, apiKey]);
+
   const startBulkTranslate = useCallback(async (options: BulkTranslateOptions = {}) => {
     const {
       model = 'opus',
@@ -139,6 +277,10 @@ export function useBulkTranslate({
       requestDelay = 200,
       startIndex = 0,
     } = options;
+
+    // Store settings for regeneration
+    lastModelRef.current = model;
+    lastContextWindowRef.current = contextWindow;
 
     // Invalidate any previous run by incrementing the global session ID.
     // The previous run's async loop will see the mismatch and exit gracefully.
@@ -160,15 +302,30 @@ export function useBulkTranslate({
     // Determine loop start based on scope
     const loopStart = scope === 'from-current' ? Math.max(0, startIndex) : 0;
 
+    // Pre-count lines that will actually be sent to the API (not blank, not skipped by scope)
+    let effectiveTotal = 0;
+    for (let i = loopStart; i < snapSourceTexts.length; i++) {
+      const src = snapSourceTexts[i];
+      if (!src?.trim()) continue; // blank source
+      if (scope === 'empty') {
+        const existing = snapTranslations[i] || '';
+        const isEmpty = !existing || existing === '[BLANK, REMOVE LATER]';
+        if (!isEmpty) continue; // already translated, skipped in empty-only mode
+      }
+      effectiveTotal++;
+    }
+
     setIsBulkTranslating(true);
     setBulkProgress(0);
-    setBulkTotal(snapSourceTexts.length - loopStart);
+    setBulkTotal(effectiveTotal);
     lastSuggestionRef.current = '';
     lastSourceRef.current = '';
+    lastSpeakerRef.current = '';
     suggestionCountRef.current = 0;
     const results: BulkTranslateResult[] = [];
+    let processed = 0;
 
-    console.log(`[Bulk Translate] Starting session #${mySessionId}: ${snapSourceTexts.length - loopStart} lines (scope: ${scope}, start: ${loopStart}), model: ${model}, context: ${contextWindow}, delay: ${requestDelay}ms`);
+    console.log(`[Bulk Translate] Starting session #${mySessionId}: ${effectiveTotal} lines to process (${snapSourceTexts.length - loopStart} total, scope: ${scope}, start: ${loopStart}), model: ${model}, context: ${contextWindow}, delay: ${requestDelay}ms`);
 
     for (let i = loopStart; i < snapSourceTexts.length; i++) {
       // Check both abort flag AND session invalidation
@@ -178,20 +335,14 @@ export function useBulkTranslate({
       }
 
       const source = snapSourceTexts[i];
-      if (!source?.trim()) {
-        setBulkProgress(i - loopStart + 1);
-        continue;
-      }
+      if (!source?.trim()) continue;
 
       const speaker = snapUtterers[i] ? trimSpeakerName(snapUtterers[i]) : '';
       const existingTranslation = snapTranslations[i] || '';
       const wasEmpty = !existingTranslation || existingTranslation === '[BLANK, REMOVE LATER]';
 
       // Scope: 'empty' skips lines that already have translations
-      if (scope === 'empty' && !wasEmpty) {
-        setBulkProgress(i - loopStart + 1);
-        continue;
-      }
+      if (scope === 'empty' && !wasEmpty) continue;
 
       currentLineRef.current = `[${speaker || 'narrator'}] ${source.substring(0, 60)}${source.length > 60 ? '...' : ''}`;
 
@@ -225,7 +376,10 @@ export function useBulkTranslate({
 
         const response = await fetch('/api/ai-suggest', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: {
+            'Content-Type': 'application/json',
+            ...(apiKey ? { 'x-api-key': apiKey } : {}),
+          },
           body: JSON.stringify({
             english: source,
             speaker,
@@ -270,6 +424,7 @@ export function useBulkTranslate({
               );
               lastSourceRef.current = source;
               lastSuggestionRef.current = data.suggestion;
+              lastSpeakerRef.current = speaker || '';
               suggestionCountRef.current += 1;
               results.push({
                 index: i,
@@ -299,7 +454,8 @@ export function useBulkTranslate({
         );
       }
 
-      setBulkProgress(i - loopStart + 1);
+      processed++;
+      setBulkProgress(processed);
 
       // Configurable delay between requests
       if (!abortRef.current && globalSessionId === mySessionId && i < snapSourceTexts.length - 1) {
@@ -313,11 +469,11 @@ export function useBulkTranslate({
       setShowBulkModal(false);
       setBulkResults(results);
       setShowBulkReview(results.length > 0);
-      console.log(`[Bulk Translate] Session #${mySessionId} done: ${results.length} results from ${snapSourceTexts.length - loopStart} lines`);
+      console.log(`[Bulk Translate] Session #${mySessionId} done: ${results.length} results from ${processed} processed (${snapSourceTexts.length - loopStart} total lines)`);
     } else {
       console.log(`[Bulk Translate] Session #${mySessionId} discarded (superseded by #${globalSessionId})`);
     }
-  }, [sourceTexts, utterers, translations, contextNotes, trimSpeakerName]);
+  }, [sourceTexts, utterers, translations, contextNotes, trimSpeakerName, apiKey]);
 
   const acceptResult = useCallback((index: number): string => {
     const result = bulkResults.find(r => r.index === index);
@@ -375,11 +531,69 @@ export function useBulkTranslate({
     setShowBulkReview(false);
   }, []);
 
+  const regenerateResult = useCallback(async (resultIndex: number) => {
+    const result = bulkResults.find(r => r.index === resultIndex);
+    if (!result) return;
+
+    setIsRegenerating(resultIndex);
+    try {
+      const i = result.index;
+      const source = sourceTexts[i];
+      const speaker = utterers[i] ? trimSpeakerName(utterers[i]) : '';
+      const cw = lastContextWindowRef.current;
+
+      // Build context window
+      const linesBefore: SurroundingLine[] = [];
+      const linesAfter: SurroundingLine[] = [];
+      for (let j = Math.max(0, i - cw); j < i; j++) {
+        if (sourceTexts[j]?.trim()) {
+          linesBefore.push({ speaker: utterers[j] ? trimSpeakerName(utterers[j]) : undefined, text: sourceTexts[j] });
+        }
+      }
+      for (let j = i + 1; j <= Math.min(sourceTexts.length - 1, i + cw); j++) {
+        if (sourceTexts[j]?.trim()) {
+          linesAfter.push({ speaker: utterers[j] ? trimSpeakerName(utterers[j]) : undefined, text: sourceTexts[j] });
+        }
+      }
+
+      const response = await fetch('/api/ai-suggest', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(apiKey ? { 'x-api-key': apiKey } : {}),
+        },
+        body: JSON.stringify({
+          english: source,
+          speaker,
+          context: contextNotes[i] || '',
+          existingTranslation: result.opusTranslation, // send current as existing so AI sees it
+          linesBefore: linesBefore.length > 0 ? linesBefore : undefined,
+          linesAfter: linesAfter.length > 0 ? linesAfter : undefined,
+          model: lastModelRef.current,
+        }),
+      });
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data.suggestion) {
+          setBulkResults(prev => prev.map(r =>
+            r.index === resultIndex ? { ...r, opusTranslation: data.suggestion } : r
+          ));
+        }
+      }
+    } catch (err) {
+      console.error('[Bulk Translate] Regenerate failed:', err);
+    } finally {
+      setIsRegenerating(null);
+    }
+  }, [bulkResults, sourceTexts, utterers, contextNotes, trimSpeakerName, apiKey]);
+
   // Read refs during render — they update in the async loop,
   // and the UI re-renders via bulkProgress state changes (the only setState in the loop)
   const bulkCurrentLine = currentLineRef.current;
   const bulkLastSuggestion = lastSuggestionRef.current;
   const bulkLastSource = lastSourceRef.current;
+  const bulkLastSpeaker = lastSpeakerRef.current;
   const bulkSuggestionCount = suggestionCountRef.current;
 
   return {
@@ -392,6 +606,7 @@ export function useBulkTranslate({
     bulkCurrentLine,
     bulkLastSuggestion,
     bulkLastSource,
+    bulkLastSpeaker,
     bulkSuggestionCount,
     startBulkTranslate,
     stopBulkTranslate,
@@ -400,10 +615,16 @@ export function useBulkTranslate({
     acceptResult,
     rejectResult,
     updateResultTranslation,
+    regenerateResult,
+    isRegenerating,
     acceptAll,
     acceptAllEmpty,
     rejectAllChanged,
     exitReview,
+    isDryRunning,
+    dryRunResults,
+    startDryRun,
+    clearDryRun,
     emptyCount,
     translatedCount,
   };

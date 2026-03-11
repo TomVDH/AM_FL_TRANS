@@ -45,7 +45,7 @@ export function ConversationThread({
       role="feed"
       aria-label="Conversation thread"
       className="flex-1 overflow-y-auto px-4 pt-4 transition-[padding-bottom] duration-200 ease-out custom-scrollbar"
-      style={{ paddingBottom: isDockOpen ? '160px' : '24px' }}
+      style={{ paddingBottom: isDockOpen ? '180px' : '24px' }}
     >
       <div className="max-w-3xl mx-auto">
         {rows.map((row, i) => {

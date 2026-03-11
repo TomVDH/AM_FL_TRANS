@@ -12,8 +12,9 @@ const XLSX = require('xlsx');
 const fs = require('fs');
 const path = require('path');
 
-const EXCEL_DIR = path.join(__dirname, '..', 'excels');
-const OUT_DIR = path.join(__dirname, '..', 'data', 'analysis');
+const PROJECT_ROOT = path.join(__dirname, '..', '..');
+const EXCEL_DIR = path.join(PROJECT_ROOT, 'excels');
+const OUT_DIR = path.join(PROJECT_ROOT, 'data', 'analysis');
 const OUT_FILE = path.join(OUT_DIR, 'speaker-dialogue.csv');
 
 // Only numbered episode files (0-11)
