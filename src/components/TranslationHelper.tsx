@@ -2118,11 +2118,11 @@ const TranslationHelper: React.FC = () => {
                     <div className="relative">
                       <button
                         onClick={openBulkModal}
-                        className="h-8 px-4 bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-gray-950 text-white font-bold tracking-wide uppercase text-xs flex items-center gap-1.5 shadow-md hover:shadow-lg transition-all"
+                        className="h-8 px-4 bg-amber-500/90 hover:bg-amber-500 text-white font-bold tracking-wide uppercase text-xs flex items-center gap-1.5 shadow-md hover:shadow-lg transition-all"
                         style={{ borderRadius: '3px' }}
                         title="AI Bulk Translate (Ctrl+Shift+T)"
                       >
-                        <img src="/images/ass-favico-white.png" alt="" className="w-3.5 h-3.5" />
+                        <img src="/images/ass-favico-white.png" alt="" className="w-3.5 h-3.5 opacity-80" />
                         Start Bulk Translate
                       </button>
                     </div>
@@ -2259,9 +2259,7 @@ const TranslationHelper: React.FC = () => {
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 backdrop-blur-sm">
           <div className="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-2xl w-full max-w-lg mx-4 p-6" style={{ borderRadius: '6px' }}>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 flex items-center justify-center overflow-hidden" style={{ borderRadius: '8px', background: 'linear-gradient(135deg, #374151, #111827)' }}>
-                <img src="/images/ass-favico-white.png" alt="" className="w-6 h-6" />
-              </div>
+              <img src="/images/ass-favico-trans.png" alt="" className="w-10 h-10" />
               <div>
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white">AI Translate Sheet</h3>
                 <p className="text-xs text-gray-500 dark:text-gray-400">{sourceTexts.length} lines · Powered by Claude</p>
@@ -2452,7 +2450,7 @@ const TranslationHelper: React.FC = () => {
                   });
                 }}
                 disabled={isDryRunning}
-                className="px-4 py-2 text-sm font-bold text-white bg-gradient-to-r from-gray-700 to-gray-900 hover:from-gray-800 hover:to-gray-950 shadow-md hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="px-4 py-2 text-sm font-bold text-white bg-amber-500/90 hover:bg-amber-500 shadow-md hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 style={{ borderRadius: '3px' }}
               >
                 {dryRunResults.length > 0 ? 'Start Full Translation' : 'Start Translation'}
@@ -2470,9 +2468,7 @@ const TranslationHelper: React.FC = () => {
           <div className="shrink-0 border-b-2 border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 px-6 py-4">
             <div className="flex items-center justify-between max-w-5xl mx-auto">
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 flex items-center justify-center overflow-hidden bg-gradient-to-br from-gray-700 to-gray-900" style={{ borderRadius: '3px' }}>
-                  <img src="/images/ass-favico-white.png" alt="" className="w-6 h-6" />
-                </div>
+                <img src="/images/ass-favico-trans.png" alt="" className="w-10 h-10" />
                 <div>
                   <h2 className="text-xl font-black text-gray-900 dark:text-white tracking-tight uppercase">Review AI Translations</h2>
                   <div className="flex items-center gap-3 mt-0.5">
