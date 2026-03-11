@@ -392,7 +392,7 @@ const TranslationHelper: React.FC = () => {
     }
   };
 
-  const VERSION_HASH = 'v5.0.0';
+  const VERSION_HASH = process.env.NEXT_PUBLIC_GIT_HASH || 'dev';
   
   const [accordionStates, setAccordionStates] = useState<Record<string, boolean>>({});
   const [codexData, setCodexData] = useState<any>(null);
@@ -571,6 +571,12 @@ const TranslationHelper: React.FC = () => {
   const [bulkContextWindow, setBulkContextWindow] = useState(5);
   const [bulkRequestDelay, setBulkRequestDelay] = useState(200);
 
+  // Three-pip unlock gates — must click 3 times to unlock, 4th click triggers action
+  const [bulkPanelUnlock, setBulkPanelUnlock] = useState(0);
+  const [bulkModalUnlock, setBulkModalUnlock] = useState(0);
+  const bulkPanelUnlockTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const bulkModalUnlockTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   // Combine edited matches with memory matches for QuickReferenceBar
   const findCombinedEditedMatches = useCallback((text: string) => {
     const sessionMatches = findEditedMatches(text);
@@ -713,9 +719,10 @@ const TranslationHelper: React.FC = () => {
         return;
       }
 
-      // Ctrl+Shift+T for AI Translate Sheet — works from anywhere
+      // Ctrl+Shift+T for AI Translate Sheet — works from anywhere (bypasses pip-unlock)
       if (e.key.toLowerCase() === 't' && e.ctrlKey && e.shiftKey) {
         e.preventDefault();
+        setBulkModalUnlock(0);
         openBulkModal();
         return;
       }
@@ -2116,17 +2123,40 @@ const TranslationHelper: React.FC = () => {
                       <h3 className="text-sm font-bold text-gray-900 dark:text-gray-100">AI Translate Sheet</h3>
                       <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">Translate all {sourceTexts.length} lines with AI</p>
                     </div>
-                    <div className="relative">
-                      <button
-                        onClick={openBulkModal}
-                        className="h-8 px-4 bg-amber-500/90 hover:bg-amber-500 text-white font-bold tracking-wide uppercase text-xs flex items-center gap-1.5 shadow-md hover:shadow-lg transition-all"
-                        style={{ borderRadius: '3px' }}
-                        title="AI Bulk Translate (Ctrl+Shift+T)"
-                      >
-                        <img src="/images/ass-favico-white.png" alt="" className="w-3.5 h-3.5 opacity-80" />
-                        Start Bulk Translate
-                      </button>
-                    </div>
+                    <button
+                      onClick={() => {
+                        if (bulkPanelUnlock >= 3) {
+                          setBulkPanelUnlock(0);
+                          setBulkModalUnlock(0);
+                          if (bulkPanelUnlockTimer.current) clearTimeout(bulkPanelUnlockTimer.current);
+                          openBulkModal();
+                        } else {
+                          const next = bulkPanelUnlock + 1;
+                          setBulkPanelUnlock(next);
+                          if (bulkPanelUnlockTimer.current) clearTimeout(bulkPanelUnlockTimer.current);
+                          bulkPanelUnlockTimer.current = setTimeout(() => setBulkPanelUnlock(0), 3000);
+                        }
+                      }}
+                      className={`h-8 px-3 flex items-center gap-2 text-xs font-medium border transition-all ${
+                        bulkPanelUnlock >= 3
+                          ? 'text-amber-700 dark:text-amber-300 border-amber-400 dark:border-amber-500 bg-amber-50 dark:bg-amber-900/20'
+                          : 'text-gray-600 dark:text-gray-400 border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-white dark:bg-gray-800'
+                      }`}
+                      style={{ borderRadius: '3px' }}
+                      title={bulkPanelUnlock >= 3 ? 'Click to open Bulk Translate' : `Click ${3 - bulkPanelUnlock} more time${3 - bulkPanelUnlock !== 1 ? 's' : ''} to unlock`}
+                    >
+                      <img src="/images/ass-favico-trans.png" alt="" className="w-4 h-4" />
+                      <span>{bulkPanelUnlock >= 3 ? 'Go' : 'Bulk Translate'}</span>
+                      <span className="flex gap-[3px] ml-0.5">
+                        {[0, 1, 2].map(i => (
+                          <span key={i} className={`w-[5px] h-[5px] rounded-full transition-colors duration-200 ${
+                            i < bulkPanelUnlock
+                              ? 'bg-amber-500 dark:bg-amber-400'
+                              : 'bg-gray-300 dark:bg-gray-600'
+                          }`} />
+                        ))}
+                      </span>
+                    </button>
                   </div>
                   <div className="flex gap-4 text-xs">
                     <div className="flex items-center gap-1.5 px-2 py-1 bg-gray-100 dark:bg-gray-700" style={{ borderRadius: '2px' }}>
@@ -2440,21 +2470,47 @@ const TranslationHelper: React.FC = () => {
               )}
               <button
                 onClick={() => {
-                  clearDryRun();
-                  setForceToolsTab('bulk');
-                  startBulkTranslate({
-                    model: bulkModel,
-                    scope: bulkScope,
-                    contextWindow: bulkContextWindow,
-                    requestDelay: bulkRequestDelay,
-                    startIndex: currentIndex,
-                  });
+                  if (bulkModalUnlock >= 3) {
+                    setBulkModalUnlock(0);
+                    if (bulkModalUnlockTimer.current) clearTimeout(bulkModalUnlockTimer.current);
+                    clearDryRun();
+                    setForceToolsTab('bulk');
+                    startBulkTranslate({
+                      model: bulkModel,
+                      scope: bulkScope,
+                      contextWindow: bulkContextWindow,
+                      requestDelay: bulkRequestDelay,
+                      startIndex: currentIndex,
+                    });
+                  } else {
+                    const next = bulkModalUnlock + 1;
+                    setBulkModalUnlock(next);
+                    if (bulkModalUnlockTimer.current) clearTimeout(bulkModalUnlockTimer.current);
+                    bulkModalUnlockTimer.current = setTimeout(() => setBulkModalUnlock(0), 3000);
+                  }
                 }}
                 disabled={isDryRunning}
-                className="px-4 py-2 text-sm font-bold text-white bg-amber-500/90 hover:bg-amber-500 shadow-md hover:shadow-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className={`px-4 py-2 text-sm font-bold transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2 ${
+                  bulkModalUnlock >= 3
+                    ? 'text-white bg-amber-500/90 hover:bg-amber-500 shadow-md hover:shadow-lg'
+                    : 'text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-600 hover:border-gray-400 dark:hover:border-gray-500 bg-white dark:bg-gray-800'
+                }`}
                 style={{ borderRadius: '3px' }}
+                title={bulkModalUnlock >= 3 ? 'Click to start translation' : `Click ${3 - bulkModalUnlock} more time${3 - bulkModalUnlock !== 1 ? 's' : ''} to unlock`}
               >
-                {dryRunResults.length > 0 ? 'Start Full Translation' : 'Start Translation'}
+                <span>{bulkModalUnlock >= 3
+                  ? (dryRunResults.length > 0 ? 'Start Full Translation' : 'Start Translation')
+                  : 'Unlock to Start'
+                }</span>
+                <span className="flex gap-[3px]">
+                  {[0, 1, 2].map(i => (
+                    <span key={i} className={`w-[5px] h-[5px] rounded-full transition-colors duration-200 ${
+                      i < bulkModalUnlock
+                        ? bulkModalUnlock >= 3 ? 'bg-white/80' : 'bg-amber-500 dark:bg-amber-400'
+                        : bulkModalUnlock >= 3 ? 'bg-white/30' : 'bg-gray-300 dark:bg-gray-600'
+                    }`} />
+                  ))}
+                </span>
               </button>
             </div>
           </div>

@@ -211,12 +211,12 @@ export default function AppFooter({
               }}
             />
             <span
-              className="relative z-10 text-white tracking-wider drop-shadow-sm"
+              className="relative z-10 text-white uppercase drop-shadow-sm"
               style={{
-                fontFamily: 'var(--font-playfair), Georgia, serif',
-                fontSize: '10px',
+                fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace',
+                fontSize: '9px',
                 fontWeight: 700,
-                letterSpacing: '0.08em',
+                letterSpacing: '0.12em',
                 opacity: showVersionHash ? 1 : 0,
                 transform: showVersionHash ? 'translateY(0) scale(1)' : 'translateY(4px) scale(0.9)',
                 transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
