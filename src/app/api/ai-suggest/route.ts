@@ -279,9 +279,9 @@ RULES:
     const suggestion = tagMatch ? tagMatch[1].trim() : rawText.replace(/<\/?translation>/g, '').trim();
 
     requestCounter++;
-    const response = NextResponse.json({ suggestion, model: modelTier });
-    if (requestCounter === 100) response.headers.set('X-Sakke', 'Honderdste! Pansen op, manneke.');
-    return response;
+    const jsonResp = NextResponse.json({ suggestion, model: modelTier });
+    if (requestCounter === 100) jsonResp.headers.set('X-Sakke', 'Honderdste! Pansen op, manneke.');
+    return jsonResp;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Unknown error';
     console.error(`[AI Suggest API] ERROR after request: ${message}`);
