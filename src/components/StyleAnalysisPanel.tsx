@@ -94,6 +94,7 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [speakerAudit, setSpeakerAudit] = useState<{ speaker: string; result: any } | null>(null);
   const [auditingSpkr, setAuditingSpkr] = useState<string | null>(null);
+  const [auditSource, setAuditSource] = useState<'corpus' | 'full'>('full');
 
   const DATA_FILES: Record<string, string> = {
     'extract-dialogue': '/api/style-analysis/view?file=speaker-dialogue.csv',
@@ -120,7 +121,7 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
     setAuditingSpkr(speaker);
     setSpeakerAudit(null);
     try {
-      const res = await fetch(`/api/corpus-audit?speaker=${encodeURIComponent(speaker)}&source=corpus`);
+      const res = await fetch(`/api/corpus-audit?speaker=${encodeURIComponent(speaker)}&source=${auditSource}`);
       const result = await res.json();
       setSpeakerAudit({ speaker, result });
     } catch (err) {
@@ -460,7 +461,21 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
 
   const renderCorpusView = (data: { totalEntries: number; totalSpeakers: number; speakers: { speaker: string; count: number; samples: { english: string; dutch: string }[] }[] }) => (
     <div className="space-y-1">
-      <p className="text-[10px] text-gray-500 dark:text-gray-400 pb-1">{data.totalEntries} approved translations · {data.totalSpeakers} speakers</p>
+      <div className="flex items-center justify-between pb-2 border-b border-gray-200 dark:border-gray-700">
+        <p className="text-[10px] text-gray-500 dark:text-gray-400">{data.totalEntries} approved translations · {data.totalSpeakers} speakers</p>
+        <div className="flex items-center gap-1.5">
+          <span className="text-[9px] text-gray-400 uppercase">Audit source:</span>
+          <select
+            value={auditSource}
+            onChange={(e) => setAuditSource(e.target.value as 'corpus' | 'full')}
+            className="px-1.5 py-0.5 text-[10px] border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+            style={{ borderRadius: '2px' }}
+          >
+            <option value="corpus">Corpus only ({data.totalEntries})</option>
+            <option value="full">Full dialogue (all episodes)</option>
+          </select>
+        </div>
+      </div>
       {data.speakers.map(s => (
         <div key={s.speaker} className="border-b border-gray-100 dark:border-gray-800 pb-2">
           <div className="flex items-center justify-between gap-2">
