@@ -802,7 +802,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
       </div>
 
       {/* Footer — flows naturally at bottom of content */}
-      <div className="w-full mt-auto pt-8 mt-12 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+      <div className="w-full mt-auto pt-8 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
         <div className="max-w-3xl mx-auto px-4 md:px-6">
           <AppFooter
             darkMode={darkMode}
