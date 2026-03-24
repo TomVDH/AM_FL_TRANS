@@ -13,6 +13,7 @@ import { useState, useEffect } from 'react';
  */
 export const useDisplayModes = () => {
   // ========== Display Mode State ==========
+  const [mounted, setMounted] = useState(false);                       // Hydration guard
   const [darkMode, setDarkMode] = useState(false);                     // Dark mode toggle
   const [eyeMode, setEyeMode] = useState(false);                       // Show translation instead of source
   const [highlightMode, setHighlightMode] = useState(true);            // Toggle highlighting of codex matches
@@ -22,6 +23,7 @@ export const useDisplayModes = () => {
 
   // Initialize dark mode from localStorage or system preference
   useEffect(() => {
+    setMounted(true);
     const savedMode = localStorage.getItem('darkMode');
     const mq = window.matchMedia('(prefers-color-scheme: dark)');
 
@@ -86,6 +88,7 @@ export const useDisplayModes = () => {
 
   return {
     // State
+    mounted,
     darkMode,
     eyeMode,
     highlightMode,

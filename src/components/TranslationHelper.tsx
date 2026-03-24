@@ -336,6 +336,7 @@ const TranslationHelper: React.FC = () => {
   } = useReferenceColumnHook();
   
   const {
+    mounted,
     darkMode,
     eyeMode,
     highlightMode,
@@ -346,6 +347,9 @@ const TranslationHelper: React.FC = () => {
     toggleGamepadMode,
     toggleConversationMode,
   } = useDisplayModes();
+
+  // Suppress rendering until client-side hydration is complete (prevents dark mode mismatch)
+  if (!mounted) return null;
   
   const {
     xlsxMode,
