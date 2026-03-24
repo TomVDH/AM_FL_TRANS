@@ -415,7 +415,7 @@ Miner Jenny,Character,Miner Jenny,Mijnwerker Jenny,CHARACTER,Miner;Jenny,"Miner 
 
 **Translation approach:** Prioritize emotional impact over literal accuracy. Adapt workplace slang to Dutch mining context. Preserve rhythm of angry outbursts and sudden emotional collapses through sentence structure and punctuation."
 Miner With No Legs,Character,Miner With No Legs,Mijnwerker zonder Benen,CHARACTER,Miner,,,,
-Mme. Derriere,Character,Mme. Derriere,Mevr. Derrière,CHARACTER,Mme.,"Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",female,"**TONE:** Manipulative, condescending
+Mme. Derriere,Character,Mme. Derriere,Mevr. Derrière,CHARACTER,Mme. Derriere;Mevr. Derriere,"Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",female,"**TONE:** Manipulative, condescending
 
 **VOCABULARY:** Corporate-speak mixed with false empathy (""my dear,"" ""precious"") and dehumanizing language (""beasts,"" ""property""). Business jargon (""bottom line,"" ""red,"" ""ends meet"") combined with philanthropic rhetoric.
 
@@ -804,7 +804,7 @@ Week,TERM,Week,Ezel,TERM,,,,,
 Outhouse,TERM,Outhouse,Hudo,TERM,,,,,
 Comrades,CHARACTER,Comrades,Kameraden,CHARACTER,,,,,
 Purple Stuff,TERM,Purple Stuff,Paarse Spul,TERM,,,,,
-Industry Coal Mines,LOCATION,Industry Coal Mines,Industrie,LOCATION,,,,,
+Butte Industry Coal Mines,LOCATION,Butte Industry Coal Mines,Vanscheetvelde Industrie en Kolen,LOCATION,Butte Mines;Coal Mines;the Mines;the Mine,,,,
 Mill and Granary,LOCATION,Mill and Granary,Molen,LOCATION,,,,,
 Well,TERM,Well,Bron van Ya'Fur,TERM,,,,,
 Miners,LOCATION,Miners,Mijn-Ezels,LOCATION,,,,,

@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "generated": "2026-03-11T04:19:33.782Z",
+  "generated": "2026-03-24T05:24:32.937Z",
   "description": "Codex translations for Asses & Masses",
   "_bostrol": "Ezels spreken zacht / honderdvierenveertig stem / het werk is gedaan",
   "totalEntries": 179,
@@ -2099,12 +2099,17 @@
       "dialogueStyle": ""
     },
     {
-      "name": "Industry Coal Mines",
+      "name": "Butte Industry Coal Mines",
       "description": "LOCATION",
-      "english": "Industry Coal Mines",
-      "dutch": "Industrie",
+      "english": "Butte Industry Coal Mines",
+      "dutch": "Vanscheetvelde Industrie en Kolen",
       "category": "LOCATION",
-      "nicknames": [],
+      "nicknames": [
+        "Butte Mines",
+        "Coal Mines",
+        "the Mines",
+        "the Mine"
+      ],
       "bio": "",
       "gender": "",
       "dialogueStyle": ""
