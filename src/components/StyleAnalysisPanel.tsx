@@ -88,9 +88,12 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
   const [stepOutput, setStepOutput] = useState<string | null>(null);
   const [stepError, setStepError] = useState<string | null>(null);
   const [expanded, setExpanded] = useState(false);
-  const [viewingData, setViewingData] = useState<{ label: string; content: string } | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [viewingData, setViewingData] = useState<{ label: string; stepId: string; data: any } | null>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [speakerAudit, setSpeakerAudit] = useState<{ speaker: string; result: any } | null>(null);
+  const [auditingSpkr, setAuditingSpkr] = useState<string | null>(null);
 
-  // File paths for view-data
   const DATA_FILES: Record<string, string> = {
     'extract-dialogue': '/api/style-analysis/view?file=speaker-dialogue.csv',
     'extract-dutch-dialogue': '/api/style-analysis/view?file=speaker-dutch-dialogue.csv',
@@ -104,10 +107,25 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
     if (!url) return;
     try {
       const res = await fetch(url);
-      const text = await res.text();
-      setViewingData({ label, content: text });
+      const data = await res.json();
+      setViewingData({ label, stepId, data });
+      setSpeakerAudit(null);
     } catch (err) {
-      setViewingData({ label, content: `Error loading data: ${err}` });
+      setViewingData({ label, stepId, data: { error: String(err) } });
+    }
+  };
+
+  const runSpeakerAudit = async (speaker: string) => {
+    setAuditingSpkr(speaker);
+    setSpeakerAudit(null);
+    try {
+      const res = await fetch(`/api/corpus-audit?speaker=${encodeURIComponent(speaker)}&source=corpus`);
+      const result = await res.json();
+      setSpeakerAudit({ speaker, result });
+    } catch (err) {
+      setSpeakerAudit({ speaker, result: { error: String(err) } });
+    } finally {
+      setAuditingSpkr(null);
     }
   };
 
@@ -406,6 +424,97 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
     return () => document.removeEventListener('mousedown', handleClick);
   }, [viewingData]);
 
+  const renderDialogueView = (data: { totalLines: number; totalSpeakers: number; speakers: { speaker: string; count: number; episodes: string[] }[] }) => (
+    <div className="space-y-0.5">
+      <p className="text-[10px] text-gray-500 dark:text-gray-400 pb-2">{data.totalLines} lines · {data.totalSpeakers} speakers</p>
+      <div className="grid grid-cols-[1fr_auto_auto] gap-x-4 gap-y-0.5 text-[11px]">
+        <span className="text-[9px] font-bold text-gray-400 uppercase">Speaker</span>
+        <span className="text-[9px] font-bold text-gray-400 uppercase text-right">Lines</span>
+        <span className="text-[9px] font-bold text-gray-400 uppercase">Episodes</span>
+        {data.speakers.map(s => (
+          <React.Fragment key={s.speaker}>
+            <span className="text-gray-800 dark:text-gray-200 truncate">{s.speaker}</span>
+            <span className="text-gray-600 dark:text-gray-300 text-right font-mono">{s.count}</span>
+            <span className="text-[9px] text-gray-400">{s.episodes.join(', ')}</span>
+          </React.Fragment>
+        ))}
+      </div>
+    </div>
+  );
+
+  const renderStylesView = (data: { totalSpeakers: number; speakers: { speaker: string; lineCount: number; style: string }[] }) => (
+    <div className="space-y-3">
+      <p className="text-[10px] text-gray-500 dark:text-gray-400">{data.totalSpeakers} speaker profiles</p>
+      {data.speakers.map(s => (
+        <div key={s.speaker} className="border-b border-gray-100 dark:border-gray-800 pb-2">
+          <div className="flex items-center justify-between">
+            <span className="text-[11px] font-bold text-gray-800 dark:text-gray-200">{s.speaker}</span>
+            <span className="text-[9px] text-gray-400">{s.lineCount} lines analyzed</span>
+          </div>
+          <p className="text-[10px] text-gray-600 dark:text-gray-300 mt-1 whitespace-pre-wrap leading-relaxed">{String(s.style || '—')}</p>
+        </div>
+      ))}
+    </div>
+  );
+
+  const renderCorpusView = (data: { totalEntries: number; totalSpeakers: number; speakers: { speaker: string; count: number; samples: { english: string; dutch: string }[] }[] }) => (
+    <div className="space-y-1">
+      <p className="text-[10px] text-gray-500 dark:text-gray-400 pb-1">{data.totalEntries} approved translations · {data.totalSpeakers} speakers</p>
+      {data.speakers.map(s => (
+        <div key={s.speaker} className="border-b border-gray-100 dark:border-gray-800 pb-2">
+          <div className="flex items-center justify-between gap-2">
+            <span className="text-[11px] font-bold text-gray-800 dark:text-gray-200">{s.speaker}</span>
+            <div className="flex items-center gap-2">
+              <span className="text-[9px] text-gray-400">{s.count} entries</span>
+              <button
+                onClick={() => runSpeakerAudit(s.speaker)}
+                disabled={auditingSpkr === s.speaker}
+                className="px-1.5 py-0.5 text-[9px] font-bold uppercase bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-400 hover:bg-amber-200 dark:hover:bg-amber-800/40 disabled:opacity-50 transition-colors"
+                style={{ borderRadius: '2px' }}
+              >
+                {auditingSpkr === s.speaker ? '...' : 'Audit'}
+              </button>
+            </div>
+          </div>
+          {/* Sample pairs */}
+          <div className="mt-1 space-y-0.5">
+            {s.samples.map((p, i) => (
+              <div key={i} className="text-[10px] text-gray-500 dark:text-gray-400">
+                <span className="text-gray-400">EN:</span> {p.english} → <span className="text-amber-600 dark:text-amber-400">NL:</span> {p.dutch}
+              </div>
+            ))}
+          </div>
+          {/* Inline audit result for this speaker */}
+          {speakerAudit?.speaker === s.speaker && speakerAudit.result && (
+            <div className="mt-2 p-2 bg-amber-50/50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-800 space-y-1" style={{ borderRadius: '3px' }}>
+              {speakerAudit.result.error ? (
+                <p className="text-[10px] text-red-600">{speakerAudit.result.error}</p>
+              ) : (
+                <>
+                  <div className="flex gap-3 text-[9px] text-gray-400 pb-1 border-b border-amber-200 dark:border-amber-800">
+                    <span>{speakerAudit.result.entryCount} entries</span>
+                    <span>{speakerAudit.result.sampledCount} sampled</span>
+                    <span>{speakerAudit.result.uniqueEnglish} unique</span>
+                  </div>
+                  {speakerAudit.result.audit && typeof speakerAudit.result.audit === 'object' &&
+                    Object.entries(speakerAudit.result.audit as Record<string, unknown>).map(([key, val]) => (
+                      <div key={key}>
+                        <span className="text-[9px] font-bold text-amber-700 dark:text-amber-400 uppercase">{key}: </span>
+                        <span className="text-[10px] text-gray-700 dark:text-gray-300">
+                          {Array.isArray(val) ? val.join(' · ') : String(val)}
+                        </span>
+                      </div>
+                    ))
+                  }
+                </>
+              )}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+
   const dataModal = viewingData && (
     <div className="fixed inset-0 z-50 flex items-center justify-center" style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}>
       <div
@@ -426,9 +535,19 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
             </button>
           </div>
         </div>
-        <pre className="flex-1 overflow-auto p-4 text-[10px] leading-relaxed font-mono text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
-          {viewingData.content}
-        </pre>
+        <div className="flex-1 overflow-auto p-4">
+          {viewingData.data?.error ? (
+            <p className="text-[11px] text-red-600">{viewingData.data.error}</p>
+          ) : viewingData.data?.type === 'dialogue' ? (
+            renderDialogueView(viewingData.data)
+          ) : viewingData.data?.type === 'styles' ? (
+            renderStylesView(viewingData.data)
+          ) : viewingData.data?.type === 'corpus' ? (
+            renderCorpusView(viewingData.data)
+          ) : (
+            <pre className="text-[10px] font-mono text-gray-700 dark:text-gray-300 whitespace-pre-wrap">{JSON.stringify(viewingData.data, null, 2)}</pre>
+          )}
+        </div>
       </div>
     </div>
   );
