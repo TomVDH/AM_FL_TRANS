@@ -72,6 +72,13 @@ async function getFileStatus(filePath: string): Promise<FileStatus> {
         }
       } catch { /* ignore parse errors */ }
     }
+    // For JSONL files, count lines
+    if (filePath.endsWith('.jsonl')) {
+      try {
+        const raw = await fs.readFile(filePath, 'utf8');
+        result.entries = raw.trim().split('\n').filter(Boolean).length;
+      } catch { /* ignore */ }
+    }
     // For CSV files, count lines (minus header)
     if (filePath.endsWith('.csv')) {
       try {
@@ -89,11 +96,12 @@ async function getFileStatus(filePath: string): Promise<FileStatus> {
 // GET: Return status of all analysis files + codex enrichment state
 export async function GET() {
   try {
-    const [dialogue, dutchDialogue, styles, dutchStyles, codex] = await Promise.all([
+    const [dialogue, dutchDialogue, styles, dutchStyles, corpus, codex] = await Promise.all([
       getFileStatus(path.join(ANALYSIS_DIR, 'speaker-dialogue.csv')),
       getFileStatus(path.join(ANALYSIS_DIR, 'speaker-dutch-dialogue.csv')),
       getFileStatus(path.join(ANALYSIS_DIR, 'speaker-styles.json')),
       getFileStatus(path.join(ANALYSIS_DIR, 'speaker-dutch-styles.json')),
+      getFileStatus(path.join(ANALYSIS_DIR, 'speaker-corpus.jsonl')),
       getFileStatus(CODEX_JSON),
     ]);
 
@@ -120,6 +128,7 @@ export async function GET() {
         dutchDialogue,
         styles,
         dutchStyles,
+        corpus,
       },
       codex: {
         ...codex,

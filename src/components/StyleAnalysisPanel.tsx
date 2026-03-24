@@ -18,6 +18,7 @@ interface AnalysisStatus {
   files: {
     dialogue: FileStatus;
     dutchDialogue: FileStatus;
+    corpus: FileStatus;
     styles: FileStatus;
     dutchStyles: FileStatus;
   };
@@ -45,6 +46,7 @@ const STEPS: StepDef[] = [
   { id: 'analyze-dutch-styles', label: 'Analyze Dutch styles', phase: 2, phaseLabel: 'Analyze', apiCall: true, dependsOn: 'extract-dutch-dialogue', outputKey: 'dutchStyles' },
   { id: 'import-styles', label: 'Import English styles to codex', phase: 3, phaseLabel: 'Import', apiCall: false, dependsOn: 'analyze-styles' },
   { id: 'import-dutch-styles', label: 'Import Dutch styles to codex', phase: 3, phaseLabel: 'Import', apiCall: false, dependsOn: 'analyze-dutch-styles' },
+  { id: 'corpus', label: 'Speaker corpus (approved translations)', phase: 3, phaseLabel: 'Corpus', apiCall: false, outputKey: 'corpus' },
 ];
 
 // ---------------------------------------------------------------------------
@@ -86,6 +88,28 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
   const [stepOutput, setStepOutput] = useState<string | null>(null);
   const [stepError, setStepError] = useState<string | null>(null);
   const [expanded, setExpanded] = useState(false);
+  const [viewingData, setViewingData] = useState<{ label: string; content: string } | null>(null);
+
+  // File paths for view-data
+  const DATA_FILES: Record<string, string> = {
+    'extract-dialogue': '/api/style-analysis/view?file=speaker-dialogue.csv',
+    'extract-dutch-dialogue': '/api/style-analysis/view?file=speaker-dutch-dialogue.csv',
+    'analyze-styles': '/api/style-analysis/view?file=speaker-styles.json',
+    'analyze-dutch-styles': '/api/style-analysis/view?file=speaker-dutch-styles.json',
+    'corpus': '/api/style-analysis/view?file=speaker-corpus.jsonl',
+  };
+
+  const viewData = async (stepId: string, label: string) => {
+    const url = DATA_FILES[stepId];
+    if (!url) return;
+    try {
+      const res = await fetch(url);
+      const text = await res.text();
+      setViewingData({ label, content: text });
+    } catch (err) {
+      setViewingData({ label, content: `Error loading data: ${err}` });
+    }
+  };
 
   // Fetch pipeline status
   const fetchStatus = useCallback(async () => {
@@ -296,21 +320,37 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
                         <span className="text-[9px] text-gray-300 dark:text-gray-600 flex-shrink-0">—</span>
                       )}
 
-                      {/* Run button */}
-                      <button
-                        onClick={() => runStep(step.id)}
-                        disabled={!!runningStep || depMissing}
-                        title={depMissing ? `Requires "${STEPS.find(s => s.id === step.dependsOn)?.label}" first` : `Run: ${step.label}`}
-                        className="flex-shrink-0 p-1 text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-                      >
-                        {isRunning ? (
-                          <div className="animate-spin h-3 w-3 border-[1.5px] border-gray-500 border-t-transparent" style={{ borderRadius: '50%' }} />
-                        ) : (
-                          <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                      {/* View data button */}
+                      {fileStatus?.exists && DATA_FILES[step.id] && (
+                        <button
+                          onClick={() => viewData(step.id, step.label)}
+                          title={`View: ${step.label}`}
+                          className="flex-shrink-0 p-1 text-gray-300 hover:text-gray-600 dark:text-gray-600 dark:hover:text-gray-300 transition-colors"
+                        >
+                          <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
                           </svg>
-                        )}
-                      </button>
+                        </button>
+                      )}
+
+                      {/* Run button (not for corpus — it's built by the translation workflow) */}
+                      {step.id !== 'corpus' && (
+                        <button
+                          onClick={() => runStep(step.id)}
+                          disabled={!!runningStep || depMissing}
+                          title={depMissing ? `Requires "${STEPS.find(s => s.id === step.dependsOn)?.label}" first` : `Run: ${step.label}`}
+                          className="flex-shrink-0 p-1 text-gray-400 hover:text-amber-600 dark:hover:text-amber-400 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                        >
+                          {isRunning ? (
+                            <div className="animate-spin h-3 w-3 border-[1.5px] border-gray-500 border-t-transparent" style={{ borderRadius: '50%' }} />
+                          ) : (
+                            <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
+                            </svg>
+                          )}
+                        </button>
+                      )}
                     </div>
                   );
                 })}
@@ -341,9 +381,23 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
     </>
   );
 
+  const dataModal = viewingData && (
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40" onClick={() => setViewingData(null)}>
+      <div className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 shadow-xl w-full max-w-2xl max-h-[80vh] flex flex-col mx-4" style={{ borderRadius: '3px' }} onClick={(e) => e.stopPropagation()}>
+        <div className="flex items-center justify-between px-4 py-3 border-b border-gray-200 dark:border-gray-700">
+          <h3 className="text-sm font-bold text-gray-800 dark:text-gray-100 uppercase">{viewingData.label}</h3>
+          <button onClick={() => setViewingData(null)} className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 text-lg leading-none">&times;</button>
+        </div>
+        <pre className="flex-1 overflow-auto p-4 text-[10px] leading-relaxed font-mono text-gray-700 dark:text-gray-300 whitespace-pre-wrap">
+          {viewingData.content}
+        </pre>
+      </div>
+    </div>
+  );
+
   // Embedded mode: no accordion, content shown directly
   if (embedded) {
-    return <div>{content}</div>;
+    return <div>{content}{dataModal}</div>;
   }
 
   // Standalone mode: accordion wrapper
@@ -370,6 +424,7 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
           {content}
         </div>
       )}
+      {dataModal}
     </div>
   );
 }
