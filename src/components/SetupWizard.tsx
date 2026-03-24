@@ -480,14 +480,14 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   }, [detectLocaleColumns]);
 
   return (
-    <div className={`min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 flex flex-col transition-colors duration-300 ${refPanelExpanded ? 'items-center pt-12 md:pt-16' : 'items-center justify-center'}`}>
+    <div className={`min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 flex flex-col items-center transition-colors duration-500 ${refPanelExpanded ? 'pt-8 md:pt-12 justify-start' : 'pt-[12vh] justify-start'}`}>
 
       {/* Main Container */}
       <div
-        className={`w-full transition-all duration-500 ease-in-out ${
+        className={`w-full transition-all duration-700 ease-in-out ${
           excelSheets.length > 0 ? 'max-w-3xl' : 'max-w-xl'
         }`}
-        style={{ animation: 'fadeIn 0.3s ease-out' }}
+        style={{ animation: 'fadeIn 0.5s ease-out' }}
       >
         {/* Header */}
         <div className="mb-8 flex items-end gap-4">
@@ -802,7 +802,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
       </div>
 
       {/* Footer — flows naturally at bottom of content */}
-      <div className="w-full mt-auto pt-6 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+      <div className="w-full mt-auto pt-8 mt-12 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
         <div className="max-w-3xl mx-auto px-4 md:px-6">
           <AppFooter
             darkMode={darkMode}
