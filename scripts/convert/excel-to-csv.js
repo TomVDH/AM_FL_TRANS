@@ -22,8 +22,8 @@ const path = require('path');
 const XLSX = require('xlsx');
 
 // Configuration
-const EXCELS_FOLDER = path.join(__dirname, '..', 'excels');
-const CSV_OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'csv');
+const EXCELS_FOLDER = path.join(__dirname, '..', '..', 'excels');
+const CSV_OUTPUT_FOLDER = path.join(__dirname, '..', '..', 'data', 'csv');
 
 /**
  * CSV Processing Configuration

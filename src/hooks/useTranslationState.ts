@@ -964,7 +964,7 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
 
     const parts = utterer.split('.');
     if (parts.length >= 4) {
-      return parts[3];
+      return parts.slice(3).join('.'); // Rejoin to preserve dots in names like "Mme. Derriere"
     }
 
     const cleanName = utterer.replace(/^SAY\./, '').replace(/\.\d+$/, '');

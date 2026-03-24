@@ -132,6 +132,7 @@ export function useBulkTranslate({
   // Remember last-used settings for regeneration
   const lastModelRef = useRef<ModelTier>('opus');
   const lastContextWindowRef = useRef(5);
+  const lastUseCorpusRef = useRef(false);
   // Use refs instead of state for ephemeral display values to avoid re-renders during async loop
   const lastSuggestionRef = useRef('');
   const lastSourceRef = useRef('');
@@ -285,6 +286,7 @@ export function useBulkTranslate({
     // Store settings for regeneration
     lastModelRef.current = model;
     lastContextWindowRef.current = contextWindow;
+    lastUseCorpusRef.current = useCorpus;
 
     // Invalidate any previous run by incrementing the global session ID.
     // The previous run's async loop will see the mismatch and exit gracefully.
@@ -575,6 +577,7 @@ export function useBulkTranslate({
           linesBefore: linesBefore.length > 0 ? linesBefore : undefined,
           linesAfter: linesAfter.length > 0 ? linesAfter : undefined,
           model: lastModelRef.current,
+          ...(lastUseCorpusRef.current ? { useCorpus: true } : {}),
         }),
       });
 

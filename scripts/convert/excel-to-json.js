@@ -20,9 +20,9 @@ const path = require('path');
 const XLSX = require('xlsx');
 
 // Configuration
-const EXCELS_FOLDER = path.join(__dirname, '..', 'excels');
-const JSON_OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'json');
-const CSV_OUTPUT_FOLDER = path.join(__dirname, '..', 'data', 'csv');
+const EXCELS_FOLDER = path.join(__dirname, '..', '..', 'excels');
+const JSON_OUTPUT_FOLDER = path.join(__dirname, '..', '..', 'data', 'json');
+const CSV_OUTPUT_FOLDER = path.join(__dirname, '..', '..', 'data', 'csv');
 
 /**
  * Ensure output directories exist

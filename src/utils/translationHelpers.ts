@@ -182,7 +182,7 @@ export const extractSpeakerName = (utterer: string, fallback = 'Speaker'): strin
   // Try to extract from dot-separated format
   const parts = utterer.split('.');
   if (parts.length >= 4) {
-    return parts[3];
+    return parts.slice(3).join('.'); // Rejoin to preserve dots in names like "Mme. Derriere"
   }
 
   // Fallback: clean up the string
