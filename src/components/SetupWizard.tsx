@@ -214,6 +214,12 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
     }
   }, [lastSession?.timestamp]);
 
+  // Cabinet egg: Pitr — the donkeys are asleep
+  useEffect(() => {
+    const h = new Date().getHours();
+    if (h === 0) console.log('The donkeys are asleep. Why aren\'t you?');
+  }, []);
+
   // Reference data availability check - also provides entry count
   const { hasLanguage, isLoading: isLoadingCodex, totalEntries, refresh: refreshCodex } = useCodexLanguages();
 

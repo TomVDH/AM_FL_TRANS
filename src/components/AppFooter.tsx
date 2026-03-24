@@ -58,6 +58,19 @@ export default function AppFooter({
 }: AppFooterProps) {
   const [items, setItems] = useState<ToastEvent[]>([]);
   const timersRef = useRef<Map<string, ReturnType<typeof setTimeout>>>(new Map());
+  // Cabinet egg: Kevijntje — hold hover on version badge for 5s to see "PROOST"
+  const [proost, setProost] = useState(false);
+  const proostTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const handleBadgeEnter = useCallback(() => {
+    onVersionBadgeHover?.(true);
+    proostTimer.current = setTimeout(() => setProost(true), 5000);
+  }, [onVersionBadgeHover]);
+  const handleBadgeLeave = useCallback(() => {
+    onVersionBadgeHover?.(false);
+    if (proostTimer.current) clearTimeout(proostTimer.current);
+    proostTimer.current = null;
+    setProost(false);
+  }, [onVersionBadgeHover]);
 
   useEffect(() => {
     return toastEmitter.subscribe((event) => {
@@ -114,11 +127,20 @@ export default function AppFooter({
           <img
             src="/images/ass-favico-trans.png"
             alt=""
-            className="h-5 w-5 dark:invert"
+            className="h-5 w-5 dark:invert transition-transform duration-500 hover:rotate-[360deg]"
           />
           <div>
             <p className="text-[11px] font-semibold text-gray-500 dark:text-gray-400 tracking-tight">AM FL V</p>
-            <p className="text-[10px] text-gray-400 dark:text-gray-500">
+            <p
+              className="text-[10px] text-gray-400 dark:text-gray-500 select-none"
+              title=""
+              onDoubleClick={(e) => {
+                // Cabinet egg: Henske — triple-click (doubleClick + extra) shows build credits
+                if (e.detail >= 3) {
+                  (e.target as HTMLElement).title = '184 commits / 8 months / 126 donkeys / 1 tool / Aug 2025 — Mar 2026';
+                }
+              }}
+            >
               Onnozelaer Marketing Works &copy; 2026
             </p>
           </div>
@@ -179,8 +201,8 @@ export default function AppFooter({
 
           <div
             className="relative cursor-pointer overflow-hidden flex items-center justify-center group/badge"
-            onMouseEnter={() => onVersionBadgeHover?.(true)}
-            onMouseLeave={() => onVersionBadgeHover?.(false)}
+            onMouseEnter={handleBadgeEnter}
+            onMouseLeave={handleBadgeLeave}
             onClick={() => onVersionBadgeClick?.()}
             title="Click to change gradient"
             style={{
@@ -223,7 +245,7 @@ export default function AppFooter({
                 textShadow: '0 1px 3px rgba(0,0,0,0.3)',
               }}
             >
-              {VERSION_HASH}
+              {proost ? 'PROOST' : VERSION_HASH}
             </span>
           </div>
         </div>

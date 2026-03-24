@@ -6,6 +6,9 @@ import Anthropic from '@anthropic-ai/sdk';
 const CODEX_PATH = path.join(process.cwd(), 'data', 'json', 'codex_translations.json');
 const CORPUS_PATH = path.join(process.cwd(), 'data', 'analysis', 'speaker-corpus.jsonl');
 
+// Cabinet egg: Sakke — counts requests, drops a header on the 100th
+let requestCounter = 0;
+
 interface CorpusEntry {
   speaker: string;
   english: string;
@@ -275,7 +278,10 @@ RULES:
     const tagMatch = rawText.match(/<translation>([\s\S]*?)<\/translation>/);
     const suggestion = tagMatch ? tagMatch[1].trim() : rawText.replace(/<\/?translation>/g, '').trim();
 
-    return NextResponse.json({ suggestion, model: modelTier });
+    requestCounter++;
+    const response = NextResponse.json({ suggestion, model: modelTier });
+    if (requestCounter === 100) response.headers.set('X-Sakke', 'Honderdste! Pansen op, manneke.');
+    return response;
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : 'Unknown error';
     console.error(`[AI Suggest API] ERROR after request: ${message}`);

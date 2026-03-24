@@ -602,6 +602,15 @@ const TranslationHelper: React.FC = () => {
   const [bulkModel, setBulkModel] = useState<ModelTier>('opus');
   const [bulkScope, setBulkScope] = useState<BulkScope>('all');
   const [bulkContextWindow, setBulkContextWindow] = useState(5);
+
+  // Cabinet egg: Poekie — page title celebrates when all lines are translated
+  useEffect(() => {
+    if (sourceTexts.length > 0 && emptyCount === 0) {
+      document.title = 'Goed gedaan, ezel! — AM FL V';
+    } else {
+      document.title = 'AM FL V';
+    }
+  }, [sourceTexts.length, emptyCount]);
   const [bulkRequestDelay, setBulkRequestDelay] = useState(200);
   const [bulkUseCorpus, setBulkUseCorpus] = useState(false);
 

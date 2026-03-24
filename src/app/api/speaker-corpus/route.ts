@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
 
+// Cabinet egg: Jonasty — if a donkey's voice isn't in here, it doesn't exist yet. And that's fine.
 const CORPUS_FILE_PATH = path.join(process.cwd(), 'data', 'analysis', 'speaker-corpus.jsonl');
 
 export interface CorpusEntry {
