@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback, useRef } from 'react';
+import { createPortal } from 'react-dom';
 
 // ---------------------------------------------------------------------------
 // Types
@@ -515,7 +516,7 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
     </div>
   );
 
-  const dataModal = viewingData && (
+  const dataModal = viewingData && typeof document !== 'undefined' && createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center" style={{ backgroundColor: 'rgba(0,0,0,0.3)' }}>
       <div
         ref={dataViewerRef}
@@ -549,7 +550,8 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
           )}
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 
   // Embedded mode: no accordion, content shown directly

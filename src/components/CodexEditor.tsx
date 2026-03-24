@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { toast } from '@/lib/toast';
 import Button from './ui/Button';
 import { Input, Select } from './ui/Input';
@@ -1069,7 +1070,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   </select>
                                 </div>
 
-                                {auditResult && (
+                                {auditResult && typeof document !== 'undefined' && createPortal(
                                   <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40" onClick={() => setAuditResult(null)}>
                                     <div className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 shadow-xl w-full max-w-lg max-h-[80vh] overflow-y-auto p-5 mx-4 text-xs space-y-2" style={{ borderRadius: '3px' }} onClick={(e) => e.stopPropagation()}>
                                       <div className="flex items-center justify-between mb-3">
@@ -1108,7 +1109,8 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                         </>
                                       )}
                                     </div>
-                                  </div>
+                                  </div>,
+                                  document.body
                                 )}
                               </div>
                             </div>
