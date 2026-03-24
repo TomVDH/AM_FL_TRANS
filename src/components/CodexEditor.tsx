@@ -1005,7 +1005,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   value={editData.dialogueStyle || ''}
                                   onChange={(e) => setEditData(prev => ({ ...prev, dialogueStyle: e.target.value }))}
                                   placeholder="English speech pattern notes (tone, vocabulary, verbal tics, sentence structure, key themes)"
-                                  rows={editData.dialogueStyle ? Math.min(8, Math.max(3, (editData.dialogueStyle.match(/\n/g) || []).length + 2)) : 2}
+                                  rows={4}
                                   className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm font-mono resize-y"
                                   style={{ borderRadius: '3px' }}
                                   onClick={(e) => e.stopPropagation()}
@@ -1019,7 +1019,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   value={editData.dutchDialogueStyle || ''}
                                   onChange={(e) => setEditData(prev => ({ ...prev, dutchDialogueStyle: e.target.value }))}
                                   placeholder="Dutch translation voice (register, Flemish density, character voice, verbal tics, translation approach)"
-                                  rows={editData.dutchDialogueStyle ? Math.min(8, Math.max(3, (editData.dutchDialogueStyle.match(/\n/g) || []).length + 2)) : 2}
+                                  rows={4}
                                   className="w-full px-3 py-2 border border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-900/10 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm font-mono resize-y"
                                   style={{ borderRadius: '3px' }}
                                   onClick={(e) => e.stopPropagation()}

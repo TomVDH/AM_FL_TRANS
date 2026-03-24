@@ -2465,6 +2465,9 @@ const TranslationHelper: React.FC = () => {
                   <p className="text-[10px] text-gray-400 dark:text-gray-500 mt-0.5">Inject approved translations as voice reference (more tokens per request)</p>
                 </div>
                 <button
+                  role="switch"
+                  aria-checked={bulkUseCorpus}
+                  aria-label="Include corpus in bulk translation"
                   onClick={() => setBulkUseCorpus(v => !v)}
                   className={`relative w-9 h-5 rounded-full transition-colors ${
                     bulkUseCorpus
@@ -2533,7 +2536,7 @@ const TranslationHelper: React.FC = () => {
             </div>
 
             <div className="flex justify-end gap-3">
-              <button onClick={() => { closeBulkModal(); clearDryRun(); }} className="px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">Cancel</button>
+              <button onClick={() => { closeBulkModal(); clearDryRun(); setBulkUseCorpus(false); }} className="px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200 transition-colors">Cancel</button>
               {!isDryRunning && dryRunResults.length === 0 && (
                 <button
                   onClick={() => {

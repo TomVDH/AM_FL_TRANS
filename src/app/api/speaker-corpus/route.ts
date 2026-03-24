@@ -94,8 +94,17 @@ export async function POST(request: NextRequest) {
     const ts = new Date().toISOString();
     const newLines: string[] = [];
 
+    // Filter out game-engine labels that are not character speakers
+    const noisePattern = /^(MENU|WRITE|CHOICE|NARR)\./;
+
     for (const entry of entries) {
       if (!entry.speaker || !entry.english || !entry.dutch) {
+        skipped++;
+        continue;
+      }
+
+      // Skip game-engine menu/narration labels
+      if (noisePattern.test(entry.speaker)) {
         skipped++;
         continue;
       }

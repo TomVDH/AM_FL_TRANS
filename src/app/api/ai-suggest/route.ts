@@ -191,7 +191,9 @@ export async function POST(request: NextRequest) {
   if (useCorpus && speaker) {
     const corpusEntries = await getCorpusForSpeaker(speaker);
     if (corpusEntries.length > 0) {
-      const exemplars = corpusEntries.map(e => `EN: ${e.english}\nNL: ${e.dutch}`).join('\n\n');
+      // Strip <translation> tags from corpus fields to prevent collision with response extraction regex
+      const sanitize = (s: string) => s.replace(/<\/?translation>/g, '');
+      const exemplars = corpusEntries.map(e => `EN: ${sanitize(e.english)}\nNL: ${sanitize(e.dutch)}`).join('\n\n');
       contextParts.push(`APPROVED TRANSLATIONS for ${speaker} (use these as voice reference — reinforce these patterns):\n${exemplars}`);
     }
   }
