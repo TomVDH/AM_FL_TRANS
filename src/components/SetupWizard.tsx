@@ -480,7 +480,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   }, [detectLocaleColumns]);
 
   return (
-    <div className={`min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 pb-32 flex justify-center transition-colors duration-300 ${refPanelExpanded ? 'items-start pt-12 md:pt-16' : 'items-center'}`}>
+    <div className={`min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 flex flex-col transition-colors duration-300 ${refPanelExpanded ? 'items-center pt-12 md:pt-16' : 'items-center justify-center'}`}>
 
       {/* Main Container */}
       <div
@@ -801,8 +801,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
       </div>
 
-      {/* Footer — fixed full-width at bottom */}
-      <div className="fixed bottom-0 left-0 right-0 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+      {/* Footer — flows naturally at bottom of content */}
+      <div className="w-full mt-auto pt-6 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
         <div className="max-w-3xl mx-auto px-4 md:px-6">
           <AppFooter
             darkMode={darkMode}
