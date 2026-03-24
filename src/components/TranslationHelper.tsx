@@ -348,9 +348,6 @@ const TranslationHelper: React.FC = () => {
     toggleConversationMode,
   } = useDisplayModes();
 
-  // Suppress rendering until client-side hydration is complete (prevents dark mode mismatch)
-  if (!mounted) return null;
-  
   const {
     xlsxMode,
     selectedXlsxFile,
@@ -908,6 +905,9 @@ const TranslationHelper: React.FC = () => {
       />
     );
   }
+
+  // Suppress rendering until client-side hydration is complete (prevents dark mode mismatch)
+  if (!mounted) return null;
 
   return (
     <div className="h-screen bg-gray-50 dark:bg-gray-900 flex flex-col overflow-hidden transition-colors duration-500" style={{ animation: 'fadeIn 0.4s ease-out' }}>
