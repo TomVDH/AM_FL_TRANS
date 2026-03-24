@@ -694,6 +694,23 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
   const [isLoading, setIsLoading] = useState(false);
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [auditResult, setAuditResult] = useState<Record<string, unknown> | null>(null);
+  const [isAuditing, setIsAuditing] = useState(false);
+  const [auditSource, setAuditSource] = useState<'corpus' | 'full'>('corpus');
+
+  const runAudit = async (characterName: string) => {
+    setIsAuditing(true);
+    setAuditResult(null);
+    try {
+      const res = await fetch(`/api/corpus-audit?speaker=${encodeURIComponent(characterName)}&source=${auditSource}`);
+      const data = await res.json();
+      setAuditResult(data);
+    } catch (err) {
+      setAuditResult({ error: err instanceof Error ? err.message : 'Audit failed' });
+    } finally {
+      setIsAuditing(false);
+    }
+  };
 
   // Combine fixed categories with any custom ones from data
   const allCategories = useMemo(() => {
@@ -1024,6 +1041,75 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                   style={{ borderRadius: '3px' }}
                                   onClick={(e) => e.stopPropagation()}
                                 />
+                              </div>
+
+                              {/* Audit Tool */}
+                              <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
+                                <div className="flex items-center gap-2">
+                                  <button
+                                    onClick={(e) => {
+                                      e.stopPropagation();
+                                      runAudit(entry.english || entry.name);
+                                    }}
+                                    disabled={isAuditing}
+                                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-amber-100 dark:bg-amber-900/30 hover:bg-amber-200 dark:hover:bg-amber-900/50 text-amber-800 dark:text-amber-300 text-xs font-bold uppercase transition-colors disabled:opacity-50"
+                                    style={{ borderRadius: '3px' }}
+                                  >
+                                    {isAuditing ? 'Auditing...' : 'Audit Voice'}
+                                  </button>
+                                  <select
+                                    value={auditSource}
+                                    onChange={(e) => setAuditSource(e.target.value as 'corpus' | 'full')}
+                                    onClick={(e) => e.stopPropagation()}
+                                    className="px-2 py-1 text-xs border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300"
+                                    style={{ borderRadius: '3px' }}
+                                  >
+                                    <option value="corpus">Corpus only</option>
+                                    <option value="full">Full dialogue (all episodes)</option>
+                                  </select>
+                                </div>
+
+                                {auditResult && (
+                                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40" onClick={() => setAuditResult(null)}>
+                                    <div className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 shadow-xl w-full max-w-lg max-h-[80vh] overflow-y-auto p-5 mx-4 text-xs space-y-2" style={{ borderRadius: '3px' }} onClick={(e) => e.stopPropagation()}>
+                                      <div className="flex items-center justify-between mb-3">
+                                        <h3 className="text-sm font-bold text-gray-800 dark:text-gray-100 uppercase">
+                                          Voice Audit — {String(auditResult.speaker || '')}
+                                        </h3>
+                                        <button onClick={() => setAuditResult(null)} className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 text-lg leading-none">&times;</button>
+                                      </div>
+                                      {auditResult.error ? (
+                                        <p className="text-red-600 dark:text-red-400">{String(auditResult.error)}</p>
+                                      ) : (
+                                        <>
+                                          <p className="text-gray-500 dark:text-gray-400 pb-2 border-b border-gray-200 dark:border-gray-700">
+                                            <strong>{String(auditResult.source || 'corpus')}</strong> — {String(auditResult.entryCount || 0)} entries
+                                            ({String(auditResult.sampledCount || auditResult.entryCount || 0)} sampled)
+                                            {auditResult.uniqueEnglish && <> · {String(auditResult.uniqueEnglish)} unique EN · {String(auditResult.uniqueDutch)} unique NL</>}
+                                            {(auditResult as Record<string, unknown>).episodes && Array.isArray((auditResult as Record<string, unknown>).episodes) && <> · {((auditResult as Record<string, unknown>).episodes as string[]).join(', ')}</>}
+                                          </p>
+                                          {auditResult.audit && typeof auditResult.audit === 'object' && !('raw' in (auditResult.audit as Record<string, unknown>)) ? (
+                                            Object.entries(auditResult.audit as Record<string, unknown>).map(([key, val]) => (
+                                              <div key={key} className="border-b border-gray-100 dark:border-gray-800 pb-2">
+                                                <span className="font-bold text-amber-700 dark:text-amber-400 uppercase text-[10px]">{key}</span>
+                                                <p className="text-gray-800 dark:text-gray-200 mt-0.5">
+                                                  {Array.isArray(val) ? val.join(' · ') : String(val)}
+                                                </p>
+                                              </div>
+                                            ))
+                                          ) : (
+                                            <pre className="whitespace-pre-wrap text-gray-700 dark:text-gray-300">{JSON.stringify(auditResult.audit, null, 2)}</pre>
+                                          )}
+                                          {auditResult.tokenEstimate && (
+                                            <p className="text-gray-400 dark:text-gray-500 pt-2 border-t border-gray-200 dark:border-gray-700">
+                                              Tokens: {String((auditResult.tokenEstimate as Record<string, unknown>).perRequestCost || '')}
+                                            </p>
+                                          )}
+                                        </>
+                                      )}
+                                    </div>
+                                  </div>
+                                )}
                               </div>
                             </div>
                           )}
