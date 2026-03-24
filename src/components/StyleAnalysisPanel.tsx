@@ -164,7 +164,7 @@ export default function StyleAnalysisPanel({ embedded = false }: { embedded?: bo
 
   // Run the full pipeline
   const runFullPipeline = useCallback(async () => {
-    for (const step of STEPS) {
+    for (const step of STEPS.filter(s => s.id !== 'corpus')) {
       setRunningStep(step.id);
       setStepOutput(null);
       setStepError(null);
