@@ -284,6 +284,12 @@ const TranslationHelper: React.FC = () => {
     const trimmed = value.trim();
     if (speaker && source && trimmed && trimmed !== '[BLANK, REMOVE LATER]') {
       saveToSpeakerCorpus([{ speaker, english: source, dutch: trimmed }]);
+      // Update local corpus lookup so indicator shows immediately
+      setCorpusKeys(prev => {
+        const next = new Map(prev);
+        next.set(`${speaker.toLowerCase()}::${source}`, next.size + 1);
+        return next;
+      });
     }
   }, [updateTranslationAtIndex, utterers, sourceTexts, extractSpeakerName, saveToSpeakerCorpus]);
 
@@ -441,9 +447,25 @@ const TranslationHelper: React.FC = () => {
   const [showOutput, setShowOutput] = useState(true);
   const [showSpeakerCard, setShowSpeakerCard] = useState(false);
   const [codexPopover, setCodexPopover] = useState<{ characterName: string; rect: DOMRect } | null>(null);
+  const [corpusKeys, setCorpusKeys] = useState<Map<string, number>>(new Map());
 
   // Close speaker card and codex popover when navigating
   useEffect(() => { setShowSpeakerCard(false); setCodexPopover(null); }, [currentIndex]);
+
+  // Load speaker corpus keys for "Corpus Approved" indicator
+  useEffect(() => {
+    fetch('/api/speaker-corpus')
+      .then(res => res.json())
+      .then(data => {
+        const keys = new Map<string, number>();
+        for (let i = 0; i < (data.entries || []).length; i++) {
+          const e = data.entries[i];
+          keys.set(`${e.speaker.toLowerCase()}::${e.english}`, i + 1);
+        }
+        setCorpusKeys(keys);
+      })
+      .catch(() => { /* silent */ });
+  }, [selectedSheet]);
 
   const [highlightingJsonData, setHighlightingJsonData] = useState<any>(null);
   const { findJsonMatches, getHoverText } = useJsonHighlighting(highlightingJsonData);
@@ -574,6 +596,9 @@ const TranslationHelper: React.FC = () => {
     bulkLastSource,
     bulkLastSpeaker,
     bulkSuggestionCount,
+    bulkSkipCount,
+    bulkPreviewStatus,
+    bulkHeaderSummary,
     startBulkTranslate,
     stopBulkTranslate,
     showBulkReview,
@@ -597,6 +622,8 @@ const TranslationHelper: React.FC = () => {
     translations,
     contextNotes,
     trimSpeakerName,
+    characterData,
+    onLineProcessing: setCurrentIndex,
   });
 
   // Bulk translate config state
@@ -1125,7 +1152,7 @@ const TranslationHelper: React.FC = () => {
                       </div>
                       {excelSheets.length > 1 && (
                         <select value={selectedSheet} onChange={(e) => handleSheetChange(e.target.value)} className="w-full p-1 text-[10px] border border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white" style={{ borderRadius: '2px' }}>
-                          {excelSheets.map(sheet => (<option key={sheet} value={sheet}>{sheet}</option>))}
+                          {excelSheets.map((sheet, i) => (<option key={sheet} value={sheet}>{i} — {sheet}</option>))}
                         </select>
                       )}
                     </div>
@@ -1633,10 +1660,36 @@ const TranslationHelper: React.FC = () => {
                   autoFocus
                 />
                 <div className="flex items-center justify-between px-4 py-1.5 border-t border-gray-100 dark:border-gray-700/50">
-                  {hasCurrentEntryChanged() && (
-                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full" title="Modified" />
-                  )}
-                  <span className="ml-auto text-[10px] text-gray-300 dark:text-gray-600">
+                  <div className="flex items-center gap-2">
+                    {hasCurrentEntryChanged() ? (
+                      <span className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-400 border border-green-300 dark:border-green-700" style={{ borderRadius: '3px' }}>
+                        <span className="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                        Modified
+                      </span>
+                    ) : (
+                      <span className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-gray-100 dark:bg-gray-700 text-gray-400 dark:text-gray-500 border border-gray-200 dark:border-gray-600" style={{ borderRadius: '3px' }}>
+                        <span className="w-1.5 h-1.5 bg-gray-400 rounded-full"></span>
+                        Original
+                      </span>
+                    )}
+                    {(() => {
+                      const speaker = trimSpeakerName(utterers[currentIndex]);
+                      const source = sourceTexts[currentIndex];
+                      const corpusKey = speaker && source ? `${speaker.toLowerCase()}::${source}` : '';
+                      const corpusLine = corpusKey ? corpusKeys.get(corpusKey) : undefined;
+                      return corpusLine ? (
+                        <span
+                          className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-400 border border-amber-300 dark:border-amber-700"
+                          style={{ borderRadius: '3px' }}
+                          title={`speaker-corpus.jsonl — line ${corpusLine}`}
+                        >
+                          <span className="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                          Corpus #{corpusLine}
+                        </span>
+                      ) : null;
+                    })()}
+                  </div>
+                  <span className="text-[10px] text-gray-300 dark:text-gray-600">
                     Shift+Enter to submit
                   </span>
                 </div>
@@ -2020,15 +2073,32 @@ const TranslationHelper: React.FC = () => {
                           </span>
                         </td>
                         <td className="px-3 py-2">
-                          {entry.utterer ? (
-                            <span className="text-sm font-medium text-purple-700 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30 px-2 py-0.5 border border-purple-200 dark:border-purple-700" style={{ borderRadius: '3px' }}>
-                              {entry.utterer}
-                            </span>
-                          ) : (
-                            <span className="text-xs text-gray-400 dark:text-gray-500 italic">
-                              No speaker
-                            </span>
-                          )}
+                          <div className="flex items-center gap-1.5">
+                            {entry.utterer ? (
+                              <span className="text-sm font-medium text-purple-700 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30 px-2 py-0.5 border border-purple-200 dark:border-purple-700" style={{ borderRadius: '3px' }}>
+                                {entry.utterer}
+                              </span>
+                            ) : (
+                              <span className="text-xs text-gray-400 dark:text-gray-500 italic">
+                                No speaker
+                              </span>
+                            )}
+                            {(() => {
+                              if (!entry.utterer || !sourceTexts[entry.idx]) return null;
+                              const line = corpusKeys.get(`${entry.utterer.toLowerCase()}::${sourceTexts[entry.idx]}`);
+                              if (!line) return null;
+                              return (
+                                <span
+                                  className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-400 border border-amber-300 dark:border-amber-700"
+                                  style={{ borderRadius: '3px' }}
+                                  title={`speaker-corpus.jsonl — line ${line}`}
+                                >
+                                  <span className="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                                  Corpus #{line}
+                                </span>
+                              );
+                            })()}
+                          </div>
                         </td>
                         <td className="px-3 py-2">
                           <span className={`text-sm leading-relaxed ${
@@ -2163,19 +2233,42 @@ const TranslationHelper: React.FC = () => {
                   <div className="w-full h-2 bg-gray-200 dark:bg-gray-700 overflow-hidden mb-3" style={{ borderRadius: '2px' }}>
                     <div className="h-full bg-gradient-to-r from-gray-600 to-gray-900 dark:from-gray-400 dark:to-gray-200 transition-all duration-300 ease-out" style={{ width: `${(bulkProgress / Math.max(bulkTotal, 1)) * 100}%`, borderRadius: '2px' }} />
                   </div>
-                  {/* Last translation preview */}
+                  {/* Translation preview */}
                   <div className="min-h-[3.5rem] px-3 py-2.5 bg-gray-50 dark:bg-gray-800/50 border border-gray-200/60 dark:border-gray-700/40" style={{ borderRadius: '3px' }}>
-                    {bulkLastSuggestion ? (
-                      <div key={bulkSuggestionCount} className="animate-slide-up-fade">
-                        <div className="text-xs text-gray-500 dark:text-gray-400 truncate">{bulkLastSpeaker && <span className="text-purple-500 dark:text-purple-400 font-medium">[{bulkLastSpeaker}]</span>}{bulkLastSpeaker ? ' ' : ''}{bulkLastSource.substring(0, 80)}{bulkLastSource.length > 80 ? '...' : ''}</div>
-                        <div className="text-sm text-emerald-600 dark:text-emerald-400 font-medium truncate mt-1">→ {bulkLastSuggestion}</div>
-                      </div>
-                    ) : (
-                      <div className="flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
-                        <span className="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full animate-pulse" />
-                        {bulkCurrentLine || 'Starting...'}
-                      </div>
-                    )}
+                    <div key={bulkSuggestionCount} className="animate-slide-up-fade">
+                      {bulkPreviewStatus === 'pending' ? (
+                        <>
+                          <div className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                            {bulkLastSpeaker && <span className="text-purple-500 dark:text-purple-400 font-medium">[{bulkLastSpeaker}]</span>}
+                            {bulkLastSpeaker ? ' ' : ''}{bulkLastSource.substring(0, 80)}{bulkLastSource.length > 80 ? '...' : ''}
+                          </div>
+                          {bulkHeaderSummary && (
+                            <div className="text-[10px] text-gray-400 dark:text-gray-500 mt-1 font-mono tracking-wide">{bulkHeaderSummary}</div>
+                          )}
+                          <div className="flex items-center gap-1.5 mt-1 text-xs text-gray-400 dark:text-gray-500">
+                            <span className="inline-block w-1.5 h-1.5 bg-amber-400 rounded-full animate-pulse" />
+                            translating...
+                          </div>
+                        </>
+                      ) : bulkLastSuggestion ? (
+                        <>
+                          <div className="text-xs text-gray-500 dark:text-gray-400 truncate">
+                            {bulkLastSpeaker && <span className="text-purple-500 dark:text-purple-400 font-medium">[{bulkLastSpeaker}]</span>}
+                            {bulkLastSpeaker ? ' ' : ''}{bulkLastSource.substring(0, 80)}{bulkLastSource.length > 80 ? '...' : ''}
+                          </div>
+                          {bulkPreviewStatus === 'identical' ? (
+                            <div className="text-sm text-gray-400 dark:text-gray-500 font-medium truncate mt-1">= {bulkLastSuggestion} <span className="text-[10px] uppercase tracking-wide text-gray-400">identical</span></div>
+                          ) : (
+                            <div className="text-sm text-emerald-600 dark:text-emerald-400 font-medium truncate mt-1">&rarr; {bulkLastSuggestion}</div>
+                          )}
+                        </>
+                      ) : (
+                        <div className="flex items-center gap-2 text-xs text-gray-400 dark:text-gray-500">
+                          <span className="inline-block w-1.5 h-1.5 bg-gray-400 rounded-full animate-pulse" />
+                          {bulkCurrentLine || 'Starting...'}
+                        </div>
+                      )}
+                    </div>
                   </div>
                   {/* Stats */}
                   <div className="flex gap-4 text-xs mt-3">
@@ -2187,6 +2280,12 @@ const TranslationHelper: React.FC = () => {
                       <span className="w-2 h-2 bg-blue-500 rounded-full" />
                       <span className="text-blue-700 dark:text-blue-300"><span className="font-bold">{translatedCount}</span> translated</span>
                     </div>
+                    {bulkSkipCount > 0 && (
+                      <div className="flex items-center gap-1.5 px-2 py-1 bg-gray-100 dark:bg-gray-700" style={{ borderRadius: '2px' }}>
+                        <span className="w-2 h-2 bg-gray-400 rounded-full" />
+                        <span className="text-gray-600 dark:text-gray-300"><span className="font-bold">{bulkSkipCount}</span> identical</span>
+                      </div>
+                    )}
                   </div>
                 </div>
               ) : (

@@ -1,0 +1,295 @@
+{
+  "version": "3.0",
+  "generated": "2026-03-31T20:45:29.182Z",
+  "description": "Verified codex — main cast, user-confirmed data only",
+  "entries": [
+    {
+      "name": "Bad Ass",
+      "english": "Bad Ass",
+      "dutch": "Stoere Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Bad"
+      ],
+      "bio": "A radical that wants to be left alone\n\nPessimistic Edgy Philosophical and Political\n\nIs actually a Human who was turned into a donkey by the Gods by accident. (see Cole Butte below)",
+      "gender": "male",
+      "flemishDensity": "heavy",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "contractions": "none",
+      "verbalTics": "Laat mij gerust (recurring dismissal), 'k Veronderstel (grudging concession ×2), godverdomme (profanity peak), Eindelijk! (payoff/release ×2 in E6)",
+      "dynamics": "cynical, philosophical, intellectual, isolated",
+      "relationships": "mother left young; despised capitalist father; dreams of escaping to Mechalen; real name Piet Vanscheetvelde; reluctant mentor to the Foal (E6)",
+      "note": "''k:17 — heaviest 'k user in cast. godver:4. liggen doen, zever, nen, da conjunction — densest Flemish in cast.",
+      "verified": true
+    },
+    {
+      "name": "Big Ass",
+      "english": "Big Ass",
+      "dutch": "Mega Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Big",
+        "Comrade Big"
+      ],
+      "bio": "Always sees the big picture or puts things into perspective. Yearns for bigger opportunity and responsibility; wants to make an impact.",
+      "gender": "male",
+      "flemishDensity": "medium",
+      "register": "tussentaal",
+      "pronounForm": "mixed",
+      "contractions": "none",
+      "verbalTics": "*oef!* (physical effort ×4), Kameraad (constant address ×7+), size descriptors: mega/gigantische/geweldige",
+      "dynamics": "earnest, passionate, big-picture thinker",
+      "relationships": "solidarity with herd, wants recognition",
+      "note": "kameraad:7, oef:4 — full Ik not 'k; niet dominant over nie",
+      "verified": true
+    },
+    {
+      "name": "Hard Ass",
+      "english": "Hard Ass",
+      "dutch": "Bikkeharde Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Hard",
+        "Uncle Hard"
+      ],
+      "bio": "Strong, stoic, and blunt. Willing to make sacrifices to protect the herd.",
+      "gender": "male",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "contractions": "none",
+      "verbalTics": "Kameraad (constant address ×7+), \"Om uit de beerput te klimmen, moet er stront aan de hoeven hangen\" (motto ×2), \"Geen mietje zijn\" (×2), ... (contemplative pauses throughout)",
+      "dynamics": "stoic, blunt, protective, sacrificial",
+      "relationships": "protector of the herd",
+      "note": "kameraad:7, motto ×2 (beerput/stront), \"Geen mietje zijn\" ×2, \"Let's go\" kept verbatim in Dutch; \"Dat meurt hier nog al, man\" — strongest Flemish moment",
+      "verified": true
+    },
+    {
+      "name": "Kick Ass",
+      "english": "Kick Ass",
+      "dutch": "Stamp Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Kick"
+      ],
+      "bio": "Angry and impulsive. The brother of Sick Ass. Carries lots of shame for hurting Humans.",
+      "gender": "male",
+      "flemishDensity": "medium",
+      "register": "tussentaal",
+      "pronounForm": "mixed",
+      "contractions": "none",
+      "verbalTics": "@#$%&! (5+ times, kept as is), godver(domme) (×3 explicit), Snotje (constant nickname for Sick Ass), VOOR WAT?! (×2), hè (sentence-final emphasis)",
+      "dynamics": "angry, impulsive, guilt-ridden",
+      "relationships": "brother of Sick Ass; lost her in E4; carries blood guilt for violence against Humans on Hard Ass's orders",
+      "note": "kameraad:5; \"De Kudde kan mij een WORST WEZEN\" (I don't care); \"op hoeven en hoeven zitten\" (begging); mixed nie/niet; je/jij dominant, ge/gij/uw at emotional peaks",
+      "verified": true
+    },
+    {
+      "name": "Lazy Ass",
+      "english": "Lazy Ass",
+      "dutch": "Luie Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Lazy",
+        "Comrade Lazy"
+      ],
+      "bio": "A lazy donkey. Very easy going, almost surfer-esque in tone, just here for a good time. Died in the Mine collapse accident 1 year before events of the story started. Mate of Sad Ass.\n\nShe is CARE FREE.",
+      "gender": "female",
+      "flemishDensity": "heavy",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "contractions": "none",
+      "verbalTics": "\"Verveling is Vrijheid\" (motto ×2), \"weet ge wel?\" (ya know? tag ×2), 'k Denk (tentative memory ×3), kleintje (affectionate to Foal), \"Later\" (Peace out)",
+      "dynamics": "easy-going, surfer tone, carefree",
+      "relationships": "lover of Sad Ass, daughter of Sturdy Ass",
+      "note": "'k:9; nie dominant, no \"niet\"; da conjunction; merci, klapt, nen, \"Doe uw goesting\" — heavy Flemish. Note: godver:4 not confirmed in available lines",
+      "verified": true
+    },
+    {
+      "name": "Nice Ass",
+      "english": "Nice Ass",
+      "dutch": "Lieve Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Nice",
+        "Aunty Nice"
+      ],
+      "bio": "Strong and fast. She loves to plow fields all day. She's energetic, modest, helpful, pure of heart. She would never break a promise.",
+      "gender": "female",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "jij/je",
+      "contractions": "none",
+      "verbalTics": "Oesje! (Golly/Gosh ×5+), Jakkes! (Yikes ×3), Jemig! (Jeepers ×2), Kameraad (address ×7+), \"Oude Zak zou niet willen dat we iemand achterlaten\" (repeater ×4)",
+      "dynamics": "warm, earnest, energetic, modest",
+      "relationships": "keeper of Sad Ass's secret (fire); encouraging/maternal to all herd; Thirsty Ass is obsessed with her (not reciprocal)",
+      "note": "kameraad:7; niet not nie throughout; je/jij consistent (no ge/gij); Oesje/Jakkes/Jemig signature exclamations; potvolkoffie, verdikke as mild oaths",
+      "verified": true
+    },
+    {
+      "name": "Old Ass",
+      "english": "Old Ass",
+      "dutch": "Oude Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Old"
+      ],
+      "bio": "Classic Marxist/Leninist leader. Inspires the heard in his lofty speeches.",
+      "gender": "male",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "mixed",
+      "contractions": "none",
+      "verbalTics": "Kameraad (×7+), EZEL MACHT (ASS POWER, ×2), \"Ik wou dat\" (wistful regret ×2), ... (dramatic ellipses throughout dying scene), \"Jonge Kameraad\" (specific address to Trusty/Foal)",
+      "dynamics": "sage leader, formal oratory, ideological speeches",
+      "relationships": "leader of the herd, pair-bonded with Sturdy Ass",
+      "note": "kameraad:7; polsen + klapke (Flemish markers); \"Ik wou dat\" as emotional signature; EZEL MACHT as catchphrase; niet throughout (no nie)",
+      "verified": true
+    },
+    {
+      "name": "Sad Ass",
+      "english": "Sad Ass",
+      "dutch": "Triestige Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Sad",
+        "Uncle Sad"
+      ],
+      "bio": "Sad. Mourning his lover Lazy who died in the mines. Doesn't have direction in life anymore. He was a Mine donkey until he was sold to the Farm after Lazy died, unable to work anymore. He can be erratic and impulsive, taking out his anger on a car and accidentally starting the major fire of Ep2, or leaving the group behind in Ep5 from the Zoo.",
+      "gender": "male",
+      "flemishDensity": "medium",
+      "register": "tussentaal",
+      "pronounForm": "jij/je",
+      "contractions": "none",
+      "verbalTics": "*boe-hoe-hoe-hoe* (whimper ×5+), *snik* (lighter cry E3+), *zucht* (sigh ×2), \"Ik wou\" (regret pattern ×3), \"HET IS ALLEMAAL MIJN FOUT\" (guilt explosion ×2), trailing ... throughout",
+      "dynamics": "melancholic, lost, mourning",
+      "relationships": "mourning lover Lazy Ass",
+      "note": "nie in emotional peaks; ge/gij in E3 private; hallo'kes + Nonkel (Flemish); stuttered speech w-wou/z-zaken; \"Ik wou\" as regret marker",
+      "verified": true
+    },
+    {
+      "name": "Sick Ass",
+      "english": "Sick Ass",
+      "dutch": "Snot Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Sick",
+        "Comrade Sick"
+      ],
+      "bio": "Generally unwell from working in the mine, and later in the rain. Ends up being the chosen Vassal for the Gods to become the sacred Golden Ass.",
+      "gender": "female",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "N/A",
+      "contractions": "none",
+      "verbalTics": "*HOEST* (dramatic/E1-E2/E4-E6), *KUCH* (everyday/E3), \"Omdraaien.\" (only spoken word — E6 nightmare)",
+      "dynamics": "unwell, quiet, chosen vessel",
+      "relationships": "sister of Kick Ass, vessel of the Gods",
+      "note": "Mostly *HOEST*/*KUCH*; one spoken word: \"Omdraaien.\" (E6); *HOEST* in dramatic contexts, *KUCH* in everyday E3 interactions",
+      "verified": true
+    },
+    {
+      "name": "Slow Ass",
+      "english": "Slow Ass",
+      "dutch": "Slome Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Slow"
+      ],
+      "bio": "Well-intentioned. Slow moving due to having arthritis. Timid, weary, unconfident. Looks up to Trusty.",
+      "gender": "male",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "jij/je",
+      "contractions": "none",
+      "verbalTics": "stutter on Dutch consonants (z-, w-, g-, h-, n- — NOT fixed to B/P like English, adapts to Dutch leading consonant), *oe-oef* (p-phew), *puf puf* (grunt), *snuf snuf* (sniff), trailing b-b-b... stutter gag (E4)",
+      "dynamics": "timid, hesitant, well-intentioned, unconfident",
+      "relationships": "deep reverence for Trusty; stayed behind to sing Song of Ascension for her (E2); departs with Kick Ass (E4)",
+      "note": "stutter doesn't map B/P→Dutch; adapts to leading consonant of each Dutch word; one \"nie\" (E3); \"uw/u\" as reverent address for Trusty",
+      "verified": true
+    },
+    {
+      "name": "Smart Ass",
+      "english": "Smart Ass",
+      "dutch": "Slimme Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Smart",
+        "Aunty Smart"
+      ],
+      "bio": "Self-centred, egotistical, strategist. Always has another backup plan. Always looking out for her own (either self or group). Carries herself with an air of superiority — snooty, condescending, and convinced she's the smartest one in every room.",
+      "gender": "female",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "jij/je",
+      "contractions": "none",
+      "verbalTics": "\"Poepsimpel.\" (Easy. — signature ×3+), ÉÉN/TWEE/DRIE numbered plan sequences (×3 full plans), \"EN ONZE JOBS TERUG TE GEVEN!\" (rallying cry, ends every plan)",
+      "dynamics": "strategic, calculating, self-serving, intellectual",
+      "relationships": "manipulates herd, looks out for own group",
+      "note": "Only ABN speaker; \"Poepsimpel\" is her one deliberate Flemish word; \"Da's catchy\" — one Flemish contraction slip; \"ezelinnekes\" — one -ke diminutive",
+      "verified": true
+    },
+    {
+      "name": "Sturdy Ass",
+      "english": "Sturdy Ass",
+      "dutch": "Stevige Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Sturdy",
+        "Comrade Sturdy"
+      ],
+      "bio": "Overprotective mother. She is pair-bonded with Old Ass. She lost her first daughter Lazy in the mine. She is racist against Machines. Can be overbearing a strict.\n\nIn the end, she changes her ways and spreads the story of asses.masses to other farm animals towards starting a greater revolution.",
+      "gender": "female",
+      "flemishDensity": "medium",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "contractions": "none",
+      "verbalTics": "Kameraad (×30 — most in cast), \"slechte, zielloze, werk-afpakkende, kind-dodende Machines\" (anti-machine mantra ×2+), \"Bij de Goden!\" (exclamation), Veulentje (foal address), ezelenhemelvaartszangderzielen",
+      "dynamics": "overprotective mother, fierce, emotional",
+      "relationships": "pair-bonded with Old Ass, lost daughter Lazy, racist against Machines",
+      "note": "'t:29 — heaviest contraction user. kameraad:30 — heaviest address user. da:14. Uses \"niet\" not \"nie\" despite consistent ge/gij",
+      "verified": true
+    },
+    {
+      "name": "Thirsty Ass",
+      "english": "Thirsty Ass",
+      "dutch": "Beschonken Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Thirsty"
+      ],
+      "bio": "Older, a bit lecherous. Generally positive. Mostly interested in doing whatever Nice Ass is doing. Castrated. Dreams of starting a small business in the form of a Bar, called Bottom's Up",
+      "gender": "male",
+      "flemishDensity": "heavy",
+      "register": "plat Vlaams",
+      "pronounForm": "ge/gij",
+      "contractions": "none",
+      "verbalTics": "héé (sentence-final, almost every line), JIE-HAAA! (YEEHAW), godver(domme), doeme/gedoemme, amai, *oef*, allez, sie",
+      "dynamics": "lecherous, positive, older, easy-going",
+      "relationships": "obsessed with Nice Ass (her legs, castration regret), close to Big Ass (E3 tunnel convo), loyal herd member, dreams of Bottoms Up bar (→ Poepegaatje)",
+      "note": "héé in 50+ of 92 Dutch lines — single most dominant feature. da/dadde heavy. Bottoms Up → Poepegaatje. Drink puns: Bronnini, Emmer Ale, Spuugspritz. Zero corpus entries.",
+      "verified": true
+    },
+    {
+      "name": "Trusty Ass",
+      "english": "Trusty Ass",
+      "dutch": "Trouwe Ezel",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Trusty"
+      ],
+      "bio": "First met as more of a listener than a leader, she is accepted as Old Ass's second in command. When she dies, she longs to be reassigned so that she can become a better leader.",
+      "gender": "female",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "jij/je",
+      "contractions": "none",
+      "verbalTics": "\"Ahh!\" (startled ×2), \"Het is maar.../Dat is...\" (observation pattern throughout), \"Ooeeeeps!\" (Whoops — death line), \"Ahum\" (Ahem)",
+      "dynamics": "quiet authority, listener first, steady presence",
+      "relationships": "second in command to Old Ass; dies in E1 (falls in well); guide/reassigned in Astral Plane (E4)",
+      "note": "player character — mostly environmental observations; \"niet best\" (Flemish understatement); \"misschien de moment\" (E1); \"In den beginne\" (archaic opener)",
+      "verified": true
+    }
+  ]
+}

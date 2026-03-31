@@ -51,7 +51,7 @@ export function ConversationView({
   onExit,
 }: ConversationViewProps) {
   const [selectedBubbleIndex, setSelectedBubbleIndex] = useState<number | null>(null);
-  const [languageMode, setLanguageMode] = useState<LanguageMode>('EN+NL');
+  const [languageMode, setLanguageMode] = useState<LanguageMode>('NL');
   const [protagonistName, setProtagonistName] = useState<string>('');
   const lastSelectedRef = useRef<HTMLElement | null>(null);
   const [popoverState, setPopoverState] = useState<{ speakerName: string; rect: DOMRect } | null>(null);
@@ -69,6 +69,11 @@ export function ConversationView({
     }
     return result;
   }, [utterers]);
+
+  // Reset to NL view on sheet change
+  useEffect(() => {
+    setLanguageMode('NL');
+  }, [selectedSheet]);
 
   // Auto-detect protagonist on mount / sheet change
   useEffect(() => {
