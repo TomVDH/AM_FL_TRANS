@@ -59,23 +59,27 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({
         </span>
       </div>
 
-      <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 inline-flex" style={{ borderRadius: '3px' }}>
+      <div className="bg-gray-100 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 p-0.5 flex flex-wrap" style={{ borderRadius: '3px' }}>
         {languages.map((lang) => {
           const isActive = selectedLanguage &&
             `${selectedLanguage.code}-${selectedLanguage.column}` === `${lang.code}-${lang.column}`;
+          const isNL = lang.code === 'NL';
           return (
             <button
               key={`${lang.code}-${lang.column}`}
-              onClick={() => onSelectLanguage(lang)}
-              disabled={disabled}
-              className={`px-3 py-1.5 text-xs font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed ${
-                isActive
-                  ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
-                  : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
+              onClick={() => isNL ? onSelectLanguage(lang) : undefined}
+              disabled={disabled || !isNL}
+              className={`flex-1 px-3 py-1.5 text-xs font-medium text-center transition-all duration-200 ${
+                !isNL
+                  ? 'opacity-30 cursor-not-allowed text-gray-400 dark:text-gray-500'
+                  : isActive
+                    ? 'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 shadow-sm'
+                    : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'
               }`}
               style={{ borderRadius: '2px' }}
+              title={!isNL ? 'Only Dutch (NL) is supported' : undefined}
             >
-              {lang.name} <span className="text-gray-400 dark:text-gray-500">({lang.code})</span>
+              {lang.code}
             </button>
           );
         })}

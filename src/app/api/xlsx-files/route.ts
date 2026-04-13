@@ -115,8 +115,14 @@ export async function GET(request: NextRequest) {
       }
     }
     
+    // Natural numeric sort: 0, 1, 2, ... 10 (not lexicographic 0, 1, 10, 2)
     return NextResponse.json({
-      files: xlsxFiles.sort((a, b) => a.fileName.localeCompare(b.fileName))
+      files: xlsxFiles.sort((a, b) => {
+        const numA = parseInt(a.fileName.match(/^(\d+)/)?.[1] || '999', 10);
+        const numB = parseInt(b.fileName.match(/^(\d+)/)?.[1] || '999', 10);
+        if (numA !== numB) return numA - numB;
+        return a.fileName.localeCompare(b.fileName);
+      })
     });
     
   } catch (error) {

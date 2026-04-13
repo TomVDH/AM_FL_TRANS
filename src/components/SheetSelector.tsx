@@ -5,6 +5,7 @@ import React, { useState, useMemo } from 'react';
 interface SheetInfo {
   name: string;
   rowCount?: number;
+  translatedCount?: number;
   isSelected?: boolean;
 }
 
@@ -14,6 +15,7 @@ interface SheetSelectorProps {
   onSelectSheet: (sheet: string) => void;
   workbookData?: any;
   startRow?: number;
+  translationColumnLetter?: string;
 }
 
 /**
@@ -27,30 +29,36 @@ const SheetSelector: React.FC<SheetSelectorProps> = ({
   selectedSheet,
   onSelectSheet,
   workbookData,
-  startRow = 2
+  startRow = 2,
+  translationColumnLetter,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
-  // Calculate row counts for each sheet - only count rows where Column A is filled
+  // Calculate row counts and translation fill for each sheet
   const sheetsWithInfo = useMemo((): SheetInfo[] => {
     return sheets.map(sheetName => {
       let rowCount = 0;
+      let translatedCount = 0;
 
       if (workbookData?.Sheets?.[sheetName]) {
         const worksheet = workbookData.Sheets[sheetName];
         const range = worksheet['!ref'];
         if (range) {
-          // Parse range like "A1:N100" to get last row
           const match = range.match(/:([A-Z]+)(\d+)$/);
           if (match) {
             const lastRow = parseInt(match[2], 10);
-            // Count only rows where Column A has data (starting from startRow)
+            const tlCol = translationColumnLetter || null;
             for (let row = startRow; row <= lastRow; row++) {
-              const cellAddress = `A${row}`;
-              const cell = worksheet[cellAddress];
-              // Count row if Column A has a non-empty value
-              if (cell && cell.v !== undefined && cell.v !== null && cell.v.toString().trim() !== '') {
+              const cellA = worksheet[`A${row}`];
+              if (cellA && cellA.v !== undefined && cellA.v !== null && cellA.v.toString().trim() !== '') {
                 rowCount++;
+                // Check if translation column has content
+                if (tlCol) {
+                  const tlCell = worksheet[`${tlCol}${row}`];
+                  if (tlCell && tlCell.v !== undefined && tlCell.v !== null && tlCell.v.toString().trim() !== '' && tlCell.v.toString().trim() !== '[BLANK, REMOVE LATER]') {
+                    translatedCount++;
+                  }
+                }
               }
             }
           }
@@ -60,10 +68,11 @@ const SheetSelector: React.FC<SheetSelectorProps> = ({
       return {
         name: sheetName,
         rowCount,
+        translatedCount,
         isSelected: sheetName === selectedSheet
       };
     });
-  }, [sheets, workbookData, selectedSheet, startRow]);
+  }, [sheets, workbookData, selectedSheet, startRow, translationColumnLetter]);
 
   // Filter sheets by search term
   const filteredSheets = useMemo(() => {
@@ -169,16 +178,31 @@ const SheetSelector: React.FC<SheetSelectorProps> = ({
               </div>
 
               <div className="flex items-center gap-2 shrink-0">
-                {/* Row count */}
-                <span className={`text-[10px] ${
-                  sheet.isSelected
-                    ? 'text-green-600 dark:text-green-400'
-                    : 'text-gray-400 dark:text-gray-500'
-                }`}>
-                  {sheet.rowCount !== undefined && sheet.rowCount > 0
-                    ? `${sheet.rowCount}`
-                    : '...'}
-                </span>
+                {/* Row count + percentage */}
+                {sheet.rowCount !== undefined && sheet.rowCount > 0 ? (
+                  <>
+                    <span className={`text-[10px] ${
+                      sheet.isSelected
+                        ? 'text-green-600 dark:text-green-400'
+                        : 'text-gray-400 dark:text-gray-500'
+                    }`}>
+                      {sheet.rowCount}
+                    </span>
+                    {sheet.translatedCount !== undefined && (
+                      <span className={`text-[9px] font-medium px-1 py-0.5 ${
+                        sheet.translatedCount === sheet.rowCount
+                          ? 'text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30'
+                          : sheet.translatedCount === 0
+                            ? 'text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-900/30'
+                            : 'text-amber-600 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/30'
+                      }`} style={{ borderRadius: '2px' }}>
+                        {Math.round((sheet.translatedCount / sheet.rowCount) * 100)}%
+                      </span>
+                    )}
+                  </>
+                ) : (
+                  <span className="text-[10px] text-gray-400 dark:text-gray-500">...</span>
+                )}
 
                 {/* Selected indicator */}
                 {sheet.isSelected && (

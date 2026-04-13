@@ -679,6 +679,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               onSelectSheet={setSelectedSheet}
               workbookData={workbookData}
               startRow={startRow}
+              translationColumnLetter={selectedLanguage?.column}
             />
 
             {/* Sheet preview — toggleable */}

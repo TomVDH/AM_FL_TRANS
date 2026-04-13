@@ -396,34 +396,23 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
     hasCurrentEntryChanged,
   });
 
-  // Language detection keywords mapping
+  // Language detection — detect all columns, NL is the only active target
   const LANGUAGE_KEYWORDS: Record<string, { code: string; name: string }> = {
     'dutch': { code: 'NL', name: 'Dutch' },
     'nl': { code: 'NL', name: 'Dutch' },
     'nederlands': { code: 'NL', name: 'Dutch' },
     'portuguese': { code: 'PT', name: 'Portuguese' },
     'pt': { code: 'PT', name: 'Portuguese' },
-    'português': { code: 'PT', name: 'Portuguese' },
     'spanish': { code: 'ES', name: 'Spanish' },
     'es': { code: 'ES', name: 'Spanish' },
-    'español': { code: 'ES', name: 'Spanish' },
     'french': { code: 'FR', name: 'French' },
     'fr': { code: 'FR', name: 'French' },
-    'français': { code: 'FR', name: 'French' },
     'german': { code: 'DE', name: 'German' },
     'de': { code: 'DE', name: 'German' },
-    'deutsch': { code: 'DE', name: 'German' },
     'italian': { code: 'IT', name: 'Italian' },
     'it': { code: 'IT', name: 'Italian' },
-    'italiano': { code: 'IT', name: 'Italian' },
-    'russian': { code: 'RU', name: 'Russian' },
-    'ru': { code: 'RU', name: 'Russian' },
-    'japanese': { code: 'JA', name: 'Japanese' },
-    'ja': { code: 'JA', name: 'Japanese' },
     'korean': { code: 'KO', name: 'Korean' },
     'ko': { code: 'KO', name: 'Korean' },
-    'chinese': { code: 'ZH', name: 'Chinese' },
-    'zh': { code: 'ZH', name: 'Chinese' },
   };
 
   /**
@@ -477,9 +466,13 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
       }
     }
 
-    // Convert map to array and sort by sheet coverage (most sheets first)
+    // NL first, then rest sorted by sheet coverage
     return Array.from(languageMap.values())
-      .sort((a, b) => b.sheets.length - a.sheets.length);
+      .sort((a, b) => {
+        if (a.code === 'NL') return -1;
+        if (b.code === 'NL') return 1;
+        return b.sheets.length - a.sheets.length;
+      });
   }, []);
 
   // ========== Component References ==========
@@ -653,11 +646,12 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
         const detected = detectLanguagesInWorkbook(workbook);
         setDetectedLanguages(detected);
 
-        // Auto-select first detected language if available
+        // Auto-select NL if detected, otherwise first available
         if (detected.length > 0) {
-          setSelectedLanguage(detected[0]);
-          setTranslationColumn(detected[0].column);
-          setTargetLanguageLabel(detected[0].code);
+          const nl = detected.find(l => l.code === 'NL') || detected[0];
+          setSelectedLanguage(nl);
+          setTranslationColumn(nl.column);
+          setTargetLanguageLabel(nl.code);
         }
       } catch (error) {
         toast.error('Error reading Excel file. Please ensure it\'s a valid Excel file.');
@@ -703,11 +697,12 @@ export const useTranslationState = (props?: UseTranslationStateProps): Translati
       const detected = detectLanguagesInWorkbook(workbook);
       setDetectedLanguages(detected);
 
-      // Auto-select first detected language if available
+      // Auto-select NL if detected, otherwise first available
       if (detected.length > 0) {
-        setSelectedLanguage(detected[0]);
-        setTranslationColumn(detected[0].column);
-        setTargetLanguageLabel(detected[0].code);
+        const nl = detected.find(l => l.code === 'NL') || detected[0];
+        setSelectedLanguage(nl);
+        setTranslationColumn(nl.column);
+        setTargetLanguageLabel(nl.code);
       }
 
       toast.success(`Loaded ${fileName}`);
