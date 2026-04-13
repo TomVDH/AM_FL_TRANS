@@ -205,6 +205,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   // Sheet preview toggle — collapsed by default
   const [showSheetPreview, setShowSheetPreview] = useState(false);
   const [refPanelExpanded, setRefPanelExpanded] = useState(false);
+  const [isDragOver, setIsDragOver] = useState(false);
 
   // Hydration-safe time-ago: only compute on client after mount
   const [timeAgoText, setTimeAgoText] = useState('');
@@ -480,7 +481,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
   }, [detectLocaleColumns]);
 
   return (
-    <div className={`min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 flex flex-col items-center transition-colors duration-500 ${refPanelExpanded ? 'pt-8 md:pt-12 justify-start' : 'pt-[12vh] justify-start'}`}>
+    <div className={`min-h-screen bg-[#f5f4f1] dark:bg-[#121210] bg-grain relative p-4 md:p-6 flex flex-col items-center transition-colors duration-500 ${refPanelExpanded ? 'pt-8 md:pt-12 justify-start' : 'pt-[12vh] justify-start'}`}>
 
       {/* Main Container */}
       <div
@@ -489,10 +490,20 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         }`}
         style={{ animation: 'fadeIn 0.5s ease-out' }}
       >
-        {/* Header */}
-        <div className="mb-8 flex items-end gap-4">
-          <img src="/images/asses-masses-logo.png" alt="Asses Masses" className="h-14 w-auto" />
-          <p className="text-[11px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] pb-0.5">asses.masses — AM FL V</p>
+        {/* Hero Header */}
+        <div className="mb-10 flex flex-col items-center stagger-enter relative z-10">
+          <img
+            src="/images/asses-masses-logo.png"
+            alt="Asses & Masses — lineup of pixel donkeys"
+            className="h-20 md:h-28 w-auto mb-4"
+            style={{ imageRendering: 'pixelated' }}
+          />
+          <h1 className="setup-header-title text-gray-900 dark:text-gray-100">
+            AM FL TRANS
+          </h1>
+          <p className="mt-2 text-[11px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em]">
+            English to Flemish Dutch &mdash; Asses &amp; Masses
+          </p>
         </div>
 
         {/* Resume Card */}
@@ -500,13 +511,13 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           <>
             <button
               onClick={() => handleResumeSession(lastSession)}
-              className="w-full text-left px-4 py-3.5 mb-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 hover:border-amber-300 dark:hover:border-amber-600 hover-lift group"
+              className="w-full text-left px-5 py-4 mb-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 border-l-4 border-l-amber-400 dark:border-l-amber-500 hover:border-amber-300 dark:hover:border-amber-600 hover-lift group relative z-10"
               style={{ borderRadius: '3px' }}
             >
               <div className="flex items-center justify-between">
                 <div className="min-w-0">
                   <div className="flex items-center gap-2 mb-0.5">
-                    <span className="text-[10px] font-bold uppercase tracking-wide text-amber-600 dark:text-amber-400">Resume</span>
+                    <span className="text-[11px] font-bold uppercase tracking-wide text-amber-600 dark:text-amber-400">Resume</span>
                     <span className="text-[10px] text-amber-500/60 dark:text-amber-500/40">
                       {lastSession.translatedCount}/{lastSession.totalLines}
                       {timeAgoText && ` · ${timeAgoText}`}
@@ -532,7 +543,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         )}
 
         {/* File Selection */}
-        <div className="space-y-3">
+        <div className="space-y-3 relative z-10">
           <div>
             {fileType === 'excel' && (
               <>
@@ -595,15 +606,15 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
             onClick={() => fileInputRef.current?.click()}
             onDragOver={(e) => {
               e.preventDefault();
-              e.currentTarget.classList.add('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
+              setIsDragOver(true);
             }}
             onDragLeave={(e) => {
               e.preventDefault();
-              e.currentTarget.classList.remove('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
+              setIsDragOver(false);
             }}
             onDrop={(e) => {
               e.preventDefault();
-              e.currentTarget.classList.remove('border-gray-500', 'bg-gray-100', 'dark:bg-gray-700');
+              setIsDragOver(false);
               const files = e.dataTransfer.files;
               if (files.length > 0) {
                 const file = files[0];
@@ -634,7 +645,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
               }
             }}
             aria-label="Upload Excel file"
-            className="flex items-center justify-center gap-2 py-3 border-2 border-dashed border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:bg-gray-50 dark:hover:bg-gray-800/50 bg-transparent transition-all duration-300 cursor-pointer hover:scale-[1.005] active:scale-[0.995]"
+            className={`flex items-center justify-center gap-2 py-3 upload-zone cursor-pointer hover:scale-[1.005] active:scale-[0.995] relative z-10 ${isDragOver ? 'drag-over' : ''}`}
             style={{ borderRadius: '3px' }}
           >
             {isLoadingExcel ? (
@@ -653,7 +664,8 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
 
         {/* Progressive disclosure: Language → Sheet → Preview → Start */}
         {fileType === 'excel' && excelSheets.length > 0 && (
-          <div className="mt-4 space-y-2 stagger-enter">
+          <div className="mt-4 space-y-2 stagger-enter relative z-10">
+            <div className="zone-separator" />
             <LanguageSelector
               languages={detectedLanguages}
               selectedLanguage={selectedLanguage}
@@ -766,14 +778,15 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
         )}
 
         {/* Start Button */}
-        <div className="mt-4">
+        <div className="zone-separator" />
+        <div className="relative z-10">
           <button
             onClick={handleStartWithDataFile}
             disabled={sourceTexts.length === 0 && !selectedDataFile && !selectedExistingFile}
-            className={`w-full px-4 py-3 border transition-all duration-300 disabled:cursor-not-allowed font-semibold text-sm press-effect ${
+            className={`w-full px-4 py-3.5 border transition-all duration-300 disabled:cursor-not-allowed font-semibold text-base press-effect ${
               sourceTexts.length > 0
-                ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200 hover:bg-gray-800 dark:hover:bg-gray-200 hover:shadow-lg hover:-translate-y-px'
-                : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-gray-200 dark:border-gray-700'
+                ? 'bg-gray-900 dark:bg-gray-100 text-white dark:text-gray-900 border-gray-800 dark:border-gray-200 hover:bg-gray-800 dark:hover:bg-gray-200 hover:shadow-lg hover:-translate-y-px start-btn-ready'
+                : 'bg-gray-200 dark:bg-gray-800 text-gray-400 dark:text-gray-600 border-gray-200 dark:border-gray-700 opacity-60'
             }`}
             style={{ borderRadius: '3px' }}
           >
@@ -803,7 +816,7 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
       </div>
 
       {/* Footer — flows naturally at bottom of content */}
-      <div className="w-full mt-auto pt-8 bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700">
+      <div className="w-full mt-auto pt-8 bg-transparent relative z-10">
         <div className="max-w-3xl mx-auto px-4 md:px-6">
           <AppFooter
             darkMode={darkMode}
