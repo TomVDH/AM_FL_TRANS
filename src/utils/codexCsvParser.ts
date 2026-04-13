@@ -14,8 +14,10 @@ export interface CodexEntry {
   nicknames?: string;
   bio?: string;
   gender?: string;
-  dialogueStyle?: string;
-  dutchDialogueStyle?: string;
+  flemishDensity?: string;
+  register?: string;
+  pronounForm?: string;
+  verbalTics?: string;
   // Dynamic language columns (for multi-language support)
   [languageCode: string]: string | undefined;
 }
@@ -148,8 +150,8 @@ export function parseCodexCSV(csvContent: string): ParsedCodexData {
         nicknames: values[headerIndexMap['nicknames'] ?? 5] || '',
         bio: values[headerIndexMap['bio'] ?? 6] || '',
         gender: values[headerIndexMap['gender'] ?? 7] || '',
-        dialogueStyle: values[headerIndexMap['dialoguestyle'] ?? 8] || '',
-        dutchDialogueStyle: values[headerIndexMap['dutchdialoguestyle'] ?? 9] || '',
+        flemishDensity: values[headerIndexMap['flemishdensity'] ?? 8] || '',
+        register: values[headerIndexMap['register'] ?? 9] || '',
       };
 
       // Add dynamic language columns
@@ -173,7 +175,7 @@ export function parseCodexCSV(csvContent: string): ParsedCodexData {
 export function entriesToCSV(entries: CodexEntry[], languageColumns: string[] = ['dutch']): string {
   const headerParts = ['name', 'description', 'english'];
   headerParts.push(...languageColumns);
-  headerParts.push('category', 'nicknames', 'bio', 'gender', 'dialogueStyle', 'dutchDialogueStyle');
+  headerParts.push('category', 'nicknames', 'bio', 'gender', 'flemishDensity', 'register');
 
   const rows = [headerParts.join(',')];
 
@@ -193,8 +195,8 @@ export function entriesToCSV(entries: CodexEntry[], languageColumns: string[] = 
       escapeCSVValue(entry.nicknames),
       escapeCSVValue(entry.bio),
       escapeCSVValue(entry.gender),
-      escapeCSVValue(entry.dialogueStyle),
-      escapeCSVValue(entry.dutchDialogueStyle),
+      escapeCSVValue(entry.flemishDensity),
+      escapeCSVValue(entry.register),
     );
 
     rows.push(rowParts.join(','));

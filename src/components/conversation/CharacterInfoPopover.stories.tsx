@@ -16,14 +16,16 @@ const mockAnchorRect = {
 } as DOMRect
 
 const fullCharacter: CodexEntry = {
-  name: 'Maria',
-  description: 'Main protagonist',
-  english: 'Maria',
-  dutch: 'Maria',
-  category: 'character',
-  gender: 'female',
-  dialogueStyle: 'Confident, direct. Uses short declarative sentences.',
-  bio: 'A young scholar who discovers she has magical abilities.',
+  name: 'Bad Ass',
+  description: 'Main character',
+  english: 'Bad Ass',
+  dutch: 'Stoere Ezel',
+  category: 'CHARACTER',
+  gender: 'male',
+  flemishDensity: 'heavy',
+  register: 'tussentaal',
+  pronounForm: 'ge/gij',
+  bio: 'A radical that wants to be left alone. Pessimistic, edgy, philosophical.',
 }
 
 const minimalCharacter: CodexEntry = {
@@ -31,19 +33,22 @@ const minimalCharacter: CodexEntry = {
   description: 'Minor character',
   english: 'Guard',
   dutch: 'Bewaker',
-  category: 'character',
+  category: 'CHARACTER',
   gender: 'male',
 }
 
 const longBioCharacter: CodexEntry = {
-  name: 'The Sage',
-  description: 'Ancient hermit',
-  english: 'The Sage',
-  dutch: 'De Wijze',
-  category: 'character',
-  gender: 'male',
-  dialogueStyle: 'Calm, wise. Speaks in measured, deliberate tones. Often uses metaphors drawn from nature.',
-  bio: 'An old hermit who guards the secrets of the ancient kingdom. He has lived for centuries in the mountains, watching civilizations rise and fall. His knowledge of the old magic is unmatched, though he rarely intervenes in mortal affairs unless the balance of power is threatened.',
+  name: 'Sturdy Ass',
+  description: 'Main character',
+  english: 'Sturdy Ass',
+  dutch: 'Stevige Ezel',
+  category: 'CHARACTER',
+  gender: 'female',
+  flemishDensity: 'medium',
+  register: 'tussentaal',
+  pronounForm: 'ge/gij',
+  verbalTics: 'Kameraad (x30), anti-machine mantra, Bij de Goden!',
+  bio: 'Overprotective mother. Pair-bonded with Old Ass. Lost her first daughter Lazy in the mine. Racist against Machines. Can be overbearing and strict. In the end, she changes her ways and spreads the story to other farm animals.',
 }
 
 const meta: Meta<typeof CharacterInfoPopover> = {

@@ -15,7 +15,6 @@ export interface ConversationRow {
     english: string;
     dutch: string;
     gender?: string;
-    dialogueStyle?: string;
     bio?: string;
   } | null;
   color: string;

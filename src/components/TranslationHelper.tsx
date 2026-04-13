@@ -1711,7 +1711,7 @@ const TranslationHelper: React.FC = () => {
             codexPopover.rect.left + window.scrollX,
             window.innerWidth - 340
           );
-          const hasRichInfo = entry.gender || entry.dialogueStyle || entry.dutchDialogueStyle || entry.bio;
+          const hasRichInfo = entry.gender || entry.flemishDensity || entry.bio;
           return (
             <>
               <div className="fixed inset-0 z-40" onClick={() => setCodexPopover(null)} />

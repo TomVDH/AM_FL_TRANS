@@ -18,8 +18,10 @@ interface CodexEntry {
   nicknames?: string;
   bio?: string;
   gender?: string;
-  dialogueStyle?: string;
-  dutchDialogueStyle?: string;
+  flemishDensity?: string;
+  register?: string;
+  pronounForm?: string;
+  verbalTics?: string;
   // Dynamic language column - any language can be the translation target
   [key: string]: string | undefined;
 }
@@ -273,8 +275,10 @@ const ImportSection: React.FC<ImportSectionProps> = ({ onImport }) => {
         nicknames: row.nicknames || '',
         bio: row.bio || '',
         gender: row.gender || '',
-        dialogueStyle: row.dialoguestyle || row.dialogueStyle || '',
-        dutchDialogueStyle: row.dutchdialoguestyle || row.dutchDialogueStyle || '',
+        flemishDensity: row.flemishdensity || row.flemishDensity || '',
+        register: row.register || '',
+        pronounForm: row.pronounform || row.pronounForm || '',
+        verbalTics: row.verbaltics || row.verbalTics || '',
       }));
 
       await onImport(entries);
@@ -758,8 +762,10 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
         description: entry.description || '',
         bio: entry.bio || '',
         gender: entry.gender || '',
-        dialogueStyle: entry.dialogueStyle || '',
-        dutchDialogueStyle: entry.dutchDialogueStyle || '',
+        flemishDensity: entry.flemishDensity || '',
+        register: entry.register || '',
+        pronounForm: entry.pronounForm || '',
+        verbalTics: entry.verbalTics || '',
       });
     }
   };
@@ -1011,40 +1017,31 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                             </div>
                           </div>
 
-                          {/* Row 4: Style Fields */}
-                          {editData.category?.toUpperCase() === 'CHARACTER' && (
-                            <div className="pt-2 border-t border-gray-200 dark:border-gray-700 space-y-3">
-                              <p className="text-xs text-gray-500 dark:text-gray-400 uppercase mb-2">Voice & Style</p>
-                              <div>
-                                <label className="block text-xs font-medium text-gray-700 dark:text-gray-300 uppercase mb-1">
-                                  English Dialogue Style
-                                </label>
-                                <textarea
-                                  value={editData.dialogueStyle || ''}
-                                  onChange={(e) => setEditData(prev => ({ ...prev, dialogueStyle: e.target.value }))}
-                                  placeholder="English speech pattern notes (tone, vocabulary, verbal tics, sentence structure, key themes)"
-                                  rows={4}
-                                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-400 text-sm font-mono resize-y"
-                                  style={{ borderRadius: '3px' }}
-                                  onClick={(e) => e.stopPropagation()}
-                                />
-                              </div>
-                              <div>
-                                <label className="block text-xs font-medium text-amber-700 dark:text-amber-400 uppercase mb-1">
-                                  Dutch Translation Style
-                                </label>
-                                <textarea
-                                  value={editData.dutchDialogueStyle || ''}
-                                  onChange={(e) => setEditData(prev => ({ ...prev, dutchDialogueStyle: e.target.value }))}
-                                  placeholder="Dutch translation voice (register, Flemish density, character voice, verbal tics, translation approach)"
-                                  rows={4}
-                                  className="w-full px-3 py-2 border border-amber-300 dark:border-amber-700 bg-amber-50/50 dark:bg-amber-900/10 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-amber-400 text-sm font-mono resize-y"
-                                  style={{ borderRadius: '3px' }}
-                                  onClick={(e) => e.stopPropagation()}
-                                />
-                              </div>
+                          {/* Row 4: Voice Profile (read-only, generated from corpus) */}
+                          {editData.category?.toUpperCase() === 'CHARACTER' && (editData.flemishDensity || editData.register || editData.pronounForm || editData.verbalTics) && (
+                            <div className="pt-2 border-t border-gray-200 dark:border-gray-700 space-y-1">
+                              <p className="text-xs text-gray-500 dark:text-gray-400 uppercase mb-1">Voice Profile <span className="text-[10px] normal-case text-gray-400 dark:text-gray-500">(from corpus audit)</span></p>
+                              {(editData.flemishDensity || editData.register) && (
+                                <div className="text-xs text-gray-700 dark:text-gray-300">
+                                  {editData.flemishDensity}{editData.register ? ` · ${editData.register}` : ''}
+                                </div>
+                              )}
+                              {editData.pronounForm && (
+                                <div className="text-xs text-gray-600 dark:text-gray-400">
+                                  Pronouns: {editData.pronounForm}
+                                </div>
+                              )}
+                              {editData.verbalTics && (
+                                <div className="text-xs text-gray-500 dark:text-gray-400 italic">
+                                  {editData.verbalTics}
+                                </div>
+                              )}
+                            </div>
+                          )}
 
-                              {/* Audit Tool */}
+                          {/* Audit Tool */}
+                          {editData.category?.toUpperCase() === 'CHARACTER' && (
+                            <>
                               <div className="pt-2 border-t border-gray-200 dark:border-gray-700">
                                 <div className="flex items-center gap-2">
                                   <button
@@ -1069,51 +1066,51 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
                                     <option value="full">Full dialogue (all episodes)</option>
                                   </select>
                                 </div>
-
-                                {auditResult && typeof document !== 'undefined' && createPortal(
-                                  <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40" onClick={() => setAuditResult(null)}>
-                                    <div className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 shadow-xl w-full max-w-lg max-h-[80vh] overflow-y-auto p-5 mx-4 text-xs space-y-2" style={{ borderRadius: '3px' }} onClick={(e) => e.stopPropagation()}>
-                                      <div className="flex items-center justify-between mb-3">
-                                        <h3 className="text-sm font-bold text-gray-800 dark:text-gray-100 uppercase">
-                                          Voice Audit — {String(auditResult.speaker || '')}
-                                        </h3>
-                                        <button onClick={() => setAuditResult(null)} className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 text-lg leading-none">&times;</button>
-                                      </div>
-                                      {auditResult.error ? (
-                                        <p className="text-red-600 dark:text-red-400">{String(auditResult.error)}</p>
-                                      ) : (
-                                        <>
-                                          <p className="text-gray-500 dark:text-gray-400 pb-2 border-b border-gray-200 dark:border-gray-700">
-                                            <strong>{String(auditResult.source || 'corpus')}</strong> — {String(auditResult.entryCount || 0)} entries
-                                            ({String(auditResult.sampledCount || auditResult.entryCount || 0)} sampled)
-                                            {auditResult.uniqueEnglish && <> · {String(auditResult.uniqueEnglish)} unique EN · {String(auditResult.uniqueDutch)} unique NL</>}
-                                            {(auditResult as Record<string, unknown>).episodes && Array.isArray((auditResult as Record<string, unknown>).episodes) && <> · {((auditResult as Record<string, unknown>).episodes as string[]).join(', ')}</>}
-                                          </p>
-                                          {auditResult.audit && typeof auditResult.audit === 'object' && !('raw' in (auditResult.audit as Record<string, unknown>)) ? (
-                                            Object.entries(auditResult.audit as Record<string, unknown>).map(([key, val]) => (
-                                              <div key={key} className="border-b border-gray-100 dark:border-gray-800 pb-2">
-                                                <span className="font-bold text-amber-700 dark:text-amber-400 uppercase text-[10px]">{key}</span>
-                                                <p className="text-gray-800 dark:text-gray-200 mt-0.5">
-                                                  {Array.isArray(val) ? val.join(' · ') : String(val)}
-                                                </p>
-                                              </div>
-                                            ))
-                                          ) : (
-                                            <pre className="whitespace-pre-wrap text-gray-700 dark:text-gray-300">{JSON.stringify(auditResult.audit, null, 2)}</pre>
-                                          )}
-                                          {auditResult.tokenEstimate && (
-                                            <p className="text-gray-400 dark:text-gray-500 pt-2 border-t border-gray-200 dark:border-gray-700">
-                                              Tokens: {String((auditResult.tokenEstimate as Record<string, unknown>).perRequestCost || '')}
-                                            </p>
-                                          )}
-                                        </>
-                                      )}
-                                    </div>
-                                  </div>,
-                                  document.body
-                                )}
                               </div>
-                            </div>
+
+                              {auditResult && typeof document !== 'undefined' && createPortal(
+                                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40" onClick={() => setAuditResult(null)}>
+                                  <div className="bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-600 shadow-xl w-full max-w-lg max-h-[80vh] overflow-y-auto p-5 mx-4 text-xs space-y-2" style={{ borderRadius: '3px' }} onClick={(e) => e.stopPropagation()}>
+                                    <div className="flex items-center justify-between mb-3">
+                                      <h3 className="text-sm font-bold text-gray-800 dark:text-gray-100 uppercase">
+                                        Voice Audit — {String(auditResult.speaker || '')}
+                                      </h3>
+                                      <button onClick={() => setAuditResult(null)} className="text-gray-400 hover:text-gray-600 dark:hover:text-gray-200 text-lg leading-none">&times;</button>
+                                    </div>
+                                    {auditResult.error ? (
+                                      <p className="text-red-600 dark:text-red-400">{String(auditResult.error)}</p>
+                                    ) : (
+                                      <>
+                                        <p className="text-gray-500 dark:text-gray-400 pb-2 border-b border-gray-200 dark:border-gray-700">
+                                          <strong>{String(auditResult.source || 'corpus')}</strong> — {String(auditResult.entryCount || 0)} entries
+                                          ({String(auditResult.sampledCount || auditResult.entryCount || 0)} sampled)
+                                          {auditResult.uniqueEnglish && <> · {String(auditResult.uniqueEnglish)} unique EN · {String(auditResult.uniqueDutch)} unique NL</>}
+                                          {(auditResult as Record<string, unknown>).episodes && Array.isArray((auditResult as Record<string, unknown>).episodes) && <> · {((auditResult as Record<string, unknown>).episodes as string[]).join(', ')}</>}
+                                        </p>
+                                        {auditResult.audit && typeof auditResult.audit === 'object' && !('raw' in (auditResult.audit as Record<string, unknown>)) ? (
+                                          Object.entries(auditResult.audit as Record<string, unknown>).map(([key, val]) => (
+                                            <div key={key} className="border-b border-gray-100 dark:border-gray-800 pb-2">
+                                              <span className="font-bold text-amber-700 dark:text-amber-400 uppercase text-[10px]">{key}</span>
+                                              <p className="text-gray-800 dark:text-gray-200 mt-0.5">
+                                                {Array.isArray(val) ? val.join(' · ') : String(val)}
+                                              </p>
+                                            </div>
+                                          ))
+                                        ) : (
+                                          <pre className="whitespace-pre-wrap text-gray-700 dark:text-gray-300">{JSON.stringify(auditResult.audit, null, 2)}</pre>
+                                        )}
+                                        {auditResult.tokenEstimate && (
+                                          <p className="text-gray-400 dark:text-gray-500 pt-2 border-t border-gray-200 dark:border-gray-700">
+                                            Tokens: {String((auditResult.tokenEstimate as Record<string, unknown>).perRequestCost || '')}
+                                          </p>
+                                        )}
+                                      </>
+                                    )}
+                                  </div>
+                                </div>,
+                                document.body
+                              )}
+                            </>
                           )}
 
                           {/* Actions */}

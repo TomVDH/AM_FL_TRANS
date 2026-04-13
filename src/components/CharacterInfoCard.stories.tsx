@@ -17,44 +17,46 @@ type Story = StoryObj<typeof CharacterInfoCard>
 export const FullInfo: Story = {
   args: {
     character: {
-      name: 'Marieke',
-      english: 'Marieke',
-      dutch: 'Marieke',
-      gender: 'female',
-      dialogueStyle:
-        'Warm, maternal tone. Uses gentle encouragement and folksy wisdom. Tends toward longer, flowing sentences with emotional depth.',
-      dutchDialogueStyle:
-        'Warme, moederlijke toon. Gebruikt zachte aanmoediging en volkse wijsheid. Neigt naar langere, vloeiende zinnen met emotionele diepgang.',
-      bio: 'Marieke is a retired schoolteacher who now runs the village bakery. She is known for her warmth and her uncanny ability to sense when someone needs a kind word or a fresh stroopwafel.',
-    },
-    onClose: fn(),
-    onInsert: fn(),
-  },
-}
-
-export const MaleCharacter: Story = {
-  args: {
-    character: {
-      name: 'Hendrik',
-      english: 'Hendrik',
-      dutch: 'Hendrik',
+      name: 'Bad Ass',
+      english: 'Bad Ass',
+      dutch: 'Stoere Ezel',
       gender: 'male',
-      dialogueStyle:
-        'Gruff but kind. Short, clipped sentences. Avoids emotional language but shows care through actions.',
+      flemishDensity: 'heavy',
+      register: 'tussentaal',
+      pronounForm: 'ge/gij',
+      verbalTics: 'Laat mij gerust, godverdomme, Eindelijk!',
+      bio: 'A radical that wants to be left alone. Pessimistic, edgy, philosophical and political. Is actually a Human who was turned into a donkey by the Gods by accident.',
     },
     onClose: fn(),
     onInsert: fn(),
   },
 }
 
-export const FemaleNoStyles: Story = {
+export const ABNCharacter: Story = {
   args: {
     character: {
-      name: 'Sofie',
-      english: 'Sofie',
-      dutch: 'Sofie',
+      name: 'Smart Ass',
+      english: 'Smart Ass',
+      dutch: 'Slimme Ezel',
       gender: 'female',
-      bio: 'A young artist from Amsterdam.',
+      flemishDensity: 'zero',
+      register: 'ABN',
+      pronounForm: 'jij/je',
+      verbalTics: 'Poepsimpel, numbered plan sequences',
+    },
+    onClose: fn(),
+    onInsert: fn(),
+  },
+}
+
+export const NoProfile: Story = {
+  args: {
+    character: {
+      name: 'Random NPC',
+      english: 'Random NPC',
+      dutch: 'Willekeurig Personage',
+      gender: 'female',
+      bio: 'A minor character who appears briefly.',
     },
     onClose: fn(),
     onInsert: fn(),
@@ -64,12 +66,14 @@ export const FemaleNoStyles: Story = {
 export const WithLongBio: Story = {
   args: {
     character: {
-      name: 'Professor van der Berg',
-      english: 'Professor van der Berg',
-      dutch: 'Professor van der Berg',
-      gender: 'male',
-      dialogueStyle: 'Academic and precise.',
-      bio: 'Professor van der Berg has spent forty years studying the migratory patterns of European starlings. His office at the University of Utrecht is filled with hand-drawn maps, annotated field journals, and a collection of antique binoculars that he insists are each calibrated differently for optimal birdwatching conditions across the Dutch landscape.',
+      name: 'Sturdy Ass',
+      english: 'Sturdy Ass',
+      dutch: 'Stevige Ezel',
+      gender: 'female',
+      flemishDensity: 'medium',
+      register: 'tussentaal',
+      pronounForm: 'ge/gij',
+      bio: 'Overprotective mother. She is pair-bonded with Old Ass. She lost her first daughter Lazy in the mine. She is racist against Machines. Can be overbearing and strict. In the end, she changes her ways and spreads the story of asses.masses to other farm animals towards starting a greater revolution.',
     },
     onClose: fn(),
     onInsert: fn(),

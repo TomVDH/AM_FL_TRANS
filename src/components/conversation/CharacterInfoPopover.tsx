@@ -37,7 +37,7 @@ export function CharacterInfoPopover({ character, anchorRect, onClose, onInsert 
   }, [onClose]);
 
   const gender = character.gender ? GENDER_SYMBOLS[character.gender] : '';
-  const hasContent = character.gender || character.dialogueStyle || character.bio;
+  const hasContent = character.gender || character.flemishDensity || character.bio;
   if (!hasContent) return null;
 
   return (
@@ -65,10 +65,10 @@ export function CharacterInfoPopover({ character, anchorRect, onClose, onInsert 
           </button>
         </div>
 
-        {/* Dialogue style */}
-        {character.dialogueStyle && (
+        {/* Voice profile */}
+        {character.flemishDensity && (
           <div className="text-[11px] text-purple-800 dark:text-purple-300 mb-1.5 leading-relaxed">
-            {character.dialogueStyle}
+            {character.flemishDensity}{character.register ? ` ${character.register}` : ''}{character.pronounForm ? ` · ${character.pronounForm}` : ''}
           </div>
         )}
 

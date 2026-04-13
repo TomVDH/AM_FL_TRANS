@@ -8,9 +8,11 @@ interface CharacterInfoCardProps {
     english: string;
     dutch: string;
     gender?: string;
-    dialogueStyle?: string;
-    dutchDialogueStyle?: string;
     bio?: string;
+    flemishDensity?: string;
+    register?: string;
+    pronounForm?: string;
+    verbalTics?: string;
   };
   onClose: () => void;
   onInsert: (text: string) => void;
@@ -26,9 +28,9 @@ const CharacterInfoCard: React.FC<CharacterInfoCardProps> = ({
   onInsert,
 }) => {
   const [bioExpanded, setBioExpanded] = useState(false);
-  const { gender, dialogueStyle, dutchDialogueStyle, bio, english, dutch } = character;
+  const { gender, bio, english, dutch, flemishDensity, register, pronounForm, verbalTics } = character;
 
-  const hasAnyInfo = gender || dialogueStyle || dutchDialogueStyle || bio;
+  const hasAnyInfo = gender || flemishDensity || bio;
   if (!hasAnyInfo) return null;
 
   // Determine if bio needs truncation (roughly > 120 chars)
@@ -84,26 +86,16 @@ const CharacterInfoCard: React.FC<CharacterInfoCardProps> = ({
 
       {/* Content */}
       <div className="px-3 py-2 space-y-2 max-h-48 overflow-y-auto custom-scrollbar">
-        {/* Dialogue Style (EN) */}
-        {dialogueStyle && (
+        {/* Voice Profile */}
+        {flemishDensity && (
           <div>
             <div className="text-[9px] uppercase tracking-wider text-purple-500 dark:text-purple-400 font-bold mb-0.5">
-              Style <span className="text-purple-400 dark:text-purple-500">EN</span>
+              Voice Profile
             </div>
-            <div className="text-[11px] text-purple-900 dark:text-purple-100 whitespace-pre-line leading-relaxed pl-2 border-l-2 border-purple-300 dark:border-purple-600">
-              {dialogueStyle}
-            </div>
-          </div>
-        )}
-
-        {/* Dialogue Style (NL) */}
-        {dutchDialogueStyle && (
-          <div>
-            <div className="text-[9px] uppercase tracking-wider text-orange-500 dark:text-orange-400 font-bold mb-0.5">
-              Style <span className="text-orange-400 dark:text-orange-500">NL</span>
-            </div>
-            <div className="text-[11px] text-orange-900 dark:text-orange-100 whitespace-pre-line leading-relaxed pl-2 border-l-2 border-orange-300 dark:border-orange-600">
-              {dutchDialogueStyle}
+            <div className="text-[11px] text-purple-900 dark:text-purple-100 leading-relaxed pl-2 border-l-2 border-purple-300 dark:border-purple-600 space-y-0.5">
+              <div><span className="text-purple-500 dark:text-purple-400">Flemish:</span> {flemishDensity}{register ? ` (${register})` : ''}</div>
+              {pronounForm && <div><span className="text-purple-500 dark:text-purple-400">Pronouns:</span> {pronounForm}</div>}
+              {verbalTics && <div><span className="text-purple-500 dark:text-purple-400">Tics:</span> {verbalTics}</div>}
             </div>
           </div>
         )}

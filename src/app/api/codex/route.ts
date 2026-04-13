@@ -22,8 +22,6 @@ interface CodexEntry {
   nicknames?: string[];
   bio?: string;
   gender?: string;
-  dialogueStyle?: string;
-  dutchDialogueStyle?: string;
   flemishDensity?: string;
   register?: string;
   pronounForm?: string;

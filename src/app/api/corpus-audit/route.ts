@@ -80,9 +80,8 @@ export async function GET(request: NextRequest) {
     }
 
     // Load codex for cross-reference
-    let codexStyle = '';
-    let codexDutchStyle = '';
     let codexBio = '';
+    let codexVoiceProfile = '';
     try {
       const codexRaw = await fs.readFile(CODEX_PATH, 'utf8');
       const codex = JSON.parse(codexRaw);
@@ -91,9 +90,14 @@ export async function GET(request: NextRequest) {
         e.english?.toLowerCase() === speakerLower
       );
       if (entry) {
-        codexStyle = entry.dialogueStyle || '';
-        codexDutchStyle = entry.dutchDialogueStyle || '';
         codexBio = entry.bio || '';
+        const voiceParts = [
+          entry.flemishDensity && `Flemish density: ${entry.flemishDensity}`,
+          entry.register && `Register: ${entry.register}`,
+          entry.pronounForm && `Pronouns: ${entry.pronounForm}`,
+          entry.verbalTics && `Verbal tics: ${entry.verbalTics}`,
+        ].filter(Boolean);
+        codexVoiceProfile = voiceParts.join('; ');
       }
     } catch {
       // Codex not available
@@ -128,8 +132,7 @@ export async function GET(request: NextRequest) {
 
     const codexContext = [
       codexBio && `Bio: ${codexBio}`,
-      codexStyle && `English style profile: ${codexStyle.substring(0, 500)}`,
-      codexDutchStyle && `Dutch style profile: ${codexDutchStyle.substring(0, 500)}`,
+      codexVoiceProfile && `Voice profile: ${codexVoiceProfile}`,
     ].filter(Boolean).join('\n\n');
 
     // Count episodes
@@ -171,7 +174,7 @@ ${AUDIT_QUESTIONS}`;
       uniqueEnglish,
       uniqueDutch,
       episodes,
-      hasCodexProfile: !!(codexStyle || codexDutchStyle),
+      hasCodexProfile: !!codexVoiceProfile,
       audit,
       tokenEstimate: {
         corpusTokens: Math.ceil(dialoguePairs.length / 4),

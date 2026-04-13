@@ -54,3 +54,6 @@ storybook-static
 # Claude Code local settings
 .claude/settings.local.json
 /package-lock.json
+
+# Cabinet session state
+crew-notes/
