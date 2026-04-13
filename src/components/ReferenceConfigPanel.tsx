@@ -3,9 +3,8 @@
 import React, { useState, useEffect } from 'react';
 import { toast } from '@/lib/toast';
 import CodexEditor from './CodexEditor';
-import StyleAnalysisPanel from './StyleAnalysisPanel';
 
-type TabId = 'codex' | 'styles' | 'settings';
+type TabId = 'codex' | 'settings';
 
 interface ReferenceConfigPanelProps {
   // Codex
@@ -13,10 +12,6 @@ interface ReferenceConfigPanelProps {
   isLoadingCodex: boolean;
   refreshCodex: () => void;
   onCodexUpdated: () => void;
-
-  // Style Analysis summary (read from StyleAnalysisPanel's own state — we just show count in badge)
-  styleEnrichedCount?: number;
-  styleTotalCount?: number;
 
   // Settings: file type
   fileType: 'excel' | 'json' | 'csv';
@@ -50,8 +45,6 @@ export default function ReferenceConfigPanel({
   isLoadingCodex,
   refreshCodex,
   onCodexUpdated,
-  styleEnrichedCount,
-  styleTotalCount,
   fileType,
   onFileTypeChange,
   inputMode,
@@ -80,22 +73,12 @@ export default function ReferenceConfigPanel({
 
   const tabs: { id: TabId; label: string; badge?: string }[] = [
     { id: 'codex', label: 'Codex', badge: totalEntries > 0 ? String(totalEntries) : undefined },
-    {
-      id: 'styles',
-      label: 'Styles',
-      badge: styleEnrichedCount !== undefined && styleTotalCount !== undefined
-        ? `${styleEnrichedCount}/${styleTotalCount}`
-        : undefined,
-    },
     { id: 'settings', label: 'Settings' },
   ];
 
   // Build collapsed summary text
   const summaryParts: string[] = [];
   if (totalEntries > 0) summaryParts.push(`${totalEntries} codex`);
-  if (styleEnrichedCount !== undefined && styleTotalCount !== undefined) {
-    summaryParts.push(`${styleEnrichedCount}/${styleTotalCount} enriched`);
-  }
   summaryParts.push(`${fileType.toUpperCase()} mode`);
   const summaryText = summaryParts.join(' \u00b7 ');
 
@@ -177,10 +160,6 @@ export default function ReferenceConfigPanel({
           <div className="p-4 max-h-[60vh] overflow-y-auto animate-tab-enter" key={activeTab}>
             {activeTab === 'codex' && (
               <CodexEditor onCodexUpdated={onCodexUpdated} />
-            )}
-
-            {activeTab === 'styles' && (
-              <StyleAnalysisPanel embedded />
             )}
 
             {activeTab === 'settings' && (

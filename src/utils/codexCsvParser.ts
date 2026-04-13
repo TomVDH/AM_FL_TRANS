@@ -1,8 +1,8 @@
 /**
- * Shared CSV parser for codex_translations.csv
+ * Shared CSV parser for general CSV files.
  *
- * Single source of truth for parsing the codex CSV format.
- * Used by /api/codex and /api/csv-data routes.
+ * Used by /api/csv-data route for episode data.
+ * Note: The codex now uses JSON as SSoT — see /api/codex.
  */
 
 export interface CodexEntry {

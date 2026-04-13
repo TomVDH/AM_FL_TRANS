@@ -4,7 +4,7 @@ import path from 'path';
 import Anthropic from '@anthropic-ai/sdk';
 
 const CORPUS_PATH = path.join(process.cwd(), 'data', 'analysis', 'speaker-corpus.jsonl');
-const DIALOGUE_CSV_PATH = path.join(process.cwd(), 'data', 'analysis', 'speaker-dutch-dialogue.csv');
+const DIALOGUE_JSONL_PATH = path.join(process.cwd(), 'data', 'analysis', 'all-dialogue.jsonl');
 const CODEX_PATH = path.join(process.cwd(), 'data', 'json', 'codex_translations.json');
 
 interface DialoguePair {
@@ -38,29 +38,6 @@ const AUDIT_QUESTIONS = `Based ONLY on the translation pairs provided above, ans
 
 Format your response as JSON with keys: identity, termsOfAddress, knownBy, emotionalTone, flemishDensity, pronounForms, verbalTics, outliers, bestFive. Each value should be a concise string (1-3 sentences max, except bestFive which is an array of english strings).`;
 
-function parseCSVLine(line: string): string[] {
-  const fields: string[] = [];
-  let current = '';
-  let inQuotes = false;
-  for (let i = 0; i < line.length; i++) {
-    const ch = line[i];
-    if (ch === '"') {
-      if (inQuotes && line[i + 1] === '"') {
-        current += '"';
-        i++;
-      } else {
-        inQuotes = !inQuotes;
-      }
-    } else if (ch === ',' && !inQuotes) {
-      fields.push(current);
-      current = '';
-    } else {
-      current += ch;
-    }
-  }
-  fields.push(current);
-  return fields;
-}
 
 async function loadFromCorpus(speakerLower: string): Promise<DialoguePair[]> {
   const raw = await fs.readFile(CORPUS_PATH, 'utf8');
@@ -69,21 +46,11 @@ async function loadFromCorpus(speakerLower: string): Promise<DialoguePair[]> {
   }).filter((e): e is DialoguePair => e !== null && e.speaker.toLowerCase() === speakerLower);
 }
 
-async function loadFromDialogueCSV(speakerLower: string): Promise<DialoguePair[]> {
-  const raw = await fs.readFile(DIALOGUE_CSV_PATH, 'utf8');
-  const lines = raw.split('\n');
-  // Header: speaker,episode,sheet,context,english,dutch,utterer_key
-  const entries: DialoguePair[] = [];
-  for (let i = 1; i < lines.length; i++) {
-    const line = lines[i].trim();
-    if (!line) continue;
-    const fields = parseCSVLine(line);
-    const [speaker, episode, sheet, , english, dutch] = fields;
-    if (speaker && english && dutch && speaker.toLowerCase() === speakerLower) {
-      entries.push({ speaker, english, dutch, episode, sheet });
-    }
-  }
-  return entries;
+async function loadFromFullDialogue(speakerLower: string): Promise<DialoguePair[]> {
+  const raw = await fs.readFile(DIALOGUE_JSONL_PATH, 'utf8');
+  return raw.trim().split('\n').filter(Boolean).map(line => {
+    try { return JSON.parse(line); } catch { return null; }
+  }).filter((e): e is DialoguePair => e !== null && e.speaker.toLowerCase() === speakerLower);
 }
 
 export async function GET(request: NextRequest) {
@@ -100,7 +67,7 @@ export async function GET(request: NextRequest) {
 
     // Load entries from selected source
     const entries = source === 'full'
-      ? await loadFromDialogueCSV(speakerLower)
+      ? await loadFromFullDialogue(speakerLower)
       : await loadFromCorpus(speakerLower);
 
     if (entries.length === 0) {
@@ -108,7 +75,7 @@ export async function GET(request: NextRequest) {
         speaker,
         source,
         entryCount: 0,
-        error: `No entries found for "${speaker}" in ${source === 'full' ? 'dialogue CSV' : 'corpus'}`,
+        error: `No entries found for "${speaker}" in ${source === 'full' ? 'full dialogue' : 'corpus'}`,
       });
     }
 

@@ -737,7 +737,7 @@ const QuickEditTable: React.FC<QuickEditTableProps> = ({ entries, categories, on
         return entry.name.toLowerCase().includes(term) ||
           entry.english.toLowerCase().includes(term) ||
           translationValue.toLowerCase().includes(term) ||
-          (entry.nicknames && entry.nicknames.toLowerCase().includes(term));
+          (entry.nicknames && (Array.isArray(entry.nicknames) ? entry.nicknames.some(n => n.toLowerCase().includes(term)) : String(entry.nicknames).toLowerCase().includes(term)));
       });
     }
 

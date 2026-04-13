@@ -1,32 +1,55 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
-import {
-  type CodexEntry,
-  parseCodexCSV,
-  entriesToCSV,
-} from '../../../utils/codexCsvParser';
 
 /**
  * Codex API Endpoint
  *
- * CRUD operations for the codex_translations.csv file.
+ * CRUD operations for codex_translations.json (single source of truth).
  *
  * GET /api/codex - Returns all codex entries as JSON array
- * POST /api/codex - Add, update, or replace codex entries
+ * POST /api/codex - Add, update, replace, or delete codex entries
  */
+
+const JSON_FILE_PATH = path.join(process.cwd(), 'data', 'json', 'codex_translations.json');
+
+interface CodexEntry {
+  name: string;
+  description?: string;
+  english: string;
+  dutch?: string;
+  category: string;
+  nicknames?: string[];
+  bio?: string;
+  gender?: string;
+  dialogueStyle?: string;
+  dutchDialogueStyle?: string;
+  flemishDensity?: string;
+  register?: string;
+  pronounForm?: string;
+  contractions?: string;
+  verbalTics?: string;
+  dynamics?: string;
+  relationships?: string;
+  note?: string;
+  verified?: boolean;
+  [key: string]: string | string[] | boolean | undefined;
+}
+
+interface CodexFile {
+  version: string;
+  generated: string;
+  description: string;
+  _bostrol?: string;
+  totalEntries: number;
+  entries: CodexEntry[];
+}
 
 interface PostRequestBody {
   action: 'add' | 'update' | 'replace' | 'delete';
   data: CodexEntry | CodexEntry[] | { name: string };
 }
 
-const CSV_FILE_PATH = path.join(process.cwd(), 'data', 'csv', 'codex_translations.csv');
-const BACKUP_FILE_PATH = path.join(process.cwd(), 'data', 'csv', 'codex_translations.backup.csv');
-
-/**
- * Validate that a CodexEntry has required fields
- */
 function validateEntry(entry: CodexEntry): { valid: boolean; error?: string } {
   if (!entry.name || typeof entry.name !== 'string' || entry.name.trim() === '') {
     return { valid: false, error: 'Missing required field: name' };
@@ -40,51 +63,38 @@ function validateEntry(entry: CodexEntry): { valid: boolean; error?: string } {
   return { valid: true };
 }
 
+async function readCodex(): Promise<CodexFile> {
+  const raw = await fs.readFile(JSON_FILE_PATH, 'utf8');
+  return JSON.parse(raw);
+}
+
+async function writeCodex(codex: CodexFile): Promise<void> {
+  codex.totalEntries = codex.entries.length;
+  codex.generated = new Date().toISOString();
+  await fs.writeFile(JSON_FILE_PATH, JSON.stringify(codex, null, 2) + '\n', 'utf8');
+}
+
 /**
  * GET /api/codex
- *
- * Read and parse codex_translations.csv, return as JSON with entries and metadata
  */
 export async function GET() {
   try {
-    try {
-      await fs.access(CSV_FILE_PATH);
-    } catch {
-      return NextResponse.json(
-        { error: 'Codex file not found' },
-        { status: 404 }
-      );
-    }
-
-    const csvContent = await fs.readFile(CSV_FILE_PATH, 'utf8');
-    const { entries, languageColumns } = parseCodexCSV(csvContent);
-
-    const availableLanguages = languageColumns.filter(lang => {
-      return entries.some(entry => {
-        const value = entry[lang];
-        return value && typeof value === 'string' && value.trim() !== '';
-      });
-    });
+    await fs.access(JSON_FILE_PATH);
+    const codex = await readCodex();
 
     return NextResponse.json({
-      entries,
-      availableLanguages,
-      totalEntries: entries.length
+      entries: codex.entries,
+      availableLanguages: ['dutch'],
+      totalEntries: codex.entries.length,
     });
-
   } catch (error) {
     console.error('Error reading codex file:', error);
-    return NextResponse.json(
-      { error: 'Failed to read codex file' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Failed to read codex file' }, { status: 500 });
   }
 }
 
 /**
  * POST /api/codex
- *
- * Handle add, update, replace, and delete operations
  */
 export async function POST(request: NextRequest) {
   try {
@@ -99,69 +109,49 @@ export async function POST(request: NextRequest) {
     }
 
     if (!data) {
-      return NextResponse.json(
-        { error: 'Missing required field: data' },
-        { status: 400 }
-      );
+      return NextResponse.json({ error: 'Missing required field: data' }, { status: 400 });
     }
 
-    // Read existing entries and language columns
-    let existingEntries: CodexEntry[] = [];
-    let existingLanguageColumns: string[] = ['dutch'];
-    try {
-      const csvContent = await fs.readFile(CSV_FILE_PATH, 'utf8');
-      const parsed = parseCodexCSV(csvContent);
-      existingEntries = parsed.entries;
-      existingLanguageColumns = parsed.languageColumns.length > 0 ? parsed.languageColumns : ['dutch'];
-    } catch {
-      existingEntries = [];
-    }
+    const codex = await readCodex();
 
     switch (action) {
       case 'add': {
         const entry = data as CodexEntry;
-
         const validation = validateEntry(entry);
         if (!validation.valid) {
-          return NextResponse.json(
-            { error: validation.error },
-            { status: 400 }
-          );
+          return NextResponse.json({ error: validation.error }, { status: 400 });
         }
 
-        const duplicateIndex = existingEntries.findIndex(
+        const exists = codex.entries.some(
           e => e.name.toLowerCase() === entry.name.toLowerCase()
         );
-        if (duplicateIndex !== -1) {
+        if (exists) {
           return NextResponse.json(
             { error: `Entry with name "${entry.name}" already exists` },
             { status: 409 }
           );
         }
 
-        existingEntries.push(entry);
-
-        const csvContent = entriesToCSV(existingEntries, existingLanguageColumns);
-        await fs.writeFile(CSV_FILE_PATH, csvContent, 'utf8');
+        codex.entries.push(entry);
+        await writeCodex(codex);
 
         return NextResponse.json({
           success: true,
           message: `Entry "${entry.name}" added successfully`,
-          entry
+          entry,
         });
       }
 
       case 'update': {
         const entry = data as CodexEntry;
-
-        if (!entry.name || typeof entry.name !== 'string' || entry.name.trim() === '') {
+        if (!entry.name) {
           return NextResponse.json(
             { error: 'Missing required field: name (for lookup)' },
             { status: 400 }
           );
         }
 
-        const index = existingEntries.findIndex(
+        const index = codex.entries.findIndex(
           e => e.name.toLowerCase() === entry.name.toLowerCase()
         );
         if (index === -1) {
@@ -171,40 +161,25 @@ export async function POST(request: NextRequest) {
           );
         }
 
-        const existingEntry = existingEntries[index];
-        const updatedEntry: CodexEntry = {
-          name: entry.name,
-          description: entry.description !== undefined ? entry.description : existingEntry.description,
-          english: entry.english !== undefined ? entry.english : existingEntry.english,
-          dutch: entry.dutch !== undefined ? entry.dutch : existingEntry.dutch,
-          category: entry.category !== undefined ? entry.category : existingEntry.category,
-          nicknames: entry.nicknames !== undefined ? entry.nicknames : existingEntry.nicknames,
-          bio: entry.bio !== undefined ? entry.bio : existingEntry.bio,
-          gender: entry.gender !== undefined ? entry.gender : existingEntry.gender,
-          dialogueStyle: entry.dialogueStyle !== undefined ? entry.dialogueStyle : existingEntry.dialogueStyle,
-          dutchDialogueStyle: entry.dutchDialogueStyle !== undefined ? entry.dutchDialogueStyle : existingEntry.dutchDialogueStyle,
-        };
-
-        // Update dynamic language columns
-        for (const langCol of existingLanguageColumns) {
-          updatedEntry[langCol] = entry[langCol] !== undefined ? entry[langCol] : existingEntry[langCol];
+        // Merge: only overwrite fields that are provided
+        const existing = codex.entries[index];
+        for (const [key, val] of Object.entries(entry)) {
+          if (val !== undefined) {
+            (existing as Record<string, unknown>)[key] = val;
+          }
         }
-
-        existingEntries[index] = updatedEntry;
-
-        const csvContent = entriesToCSV(existingEntries, existingLanguageColumns);
-        await fs.writeFile(CSV_FILE_PATH, csvContent, 'utf8');
+        codex.entries[index] = existing;
+        await writeCodex(codex);
 
         return NextResponse.json({
           success: true,
           message: `Entry "${entry.name}" updated successfully`,
-          entry: updatedEntry
+          entry: existing,
         });
       }
 
       case 'replace': {
         const entries = data as CodexEntry[];
-
         if (!Array.isArray(entries)) {
           return NextResponse.json(
             { error: 'For replace action, data must be an array of entries' },
@@ -222,84 +197,51 @@ export async function POST(request: NextRequest) {
           }
         }
 
-        // Backup existing file
-        try {
-          await fs.access(CSV_FILE_PATH);
-          const existingContent = await fs.readFile(CSV_FILE_PATH, 'utf8');
-          await fs.writeFile(BACKUP_FILE_PATH, existingContent, 'utf8');
-        } catch {
-          // File doesn't exist, no backup needed
-        }
-
-        const csvContent = entriesToCSV(entries, existingLanguageColumns);
-        await fs.writeFile(CSV_FILE_PATH, csvContent, 'utf8');
+        codex.entries = entries;
+        await writeCodex(codex);
 
         return NextResponse.json({
           success: true,
-          message: `Replaced codex with ${entries.length} entries. Backup saved to codex_translations.backup.csv`,
-          count: entries.length
+          message: `Replaced codex with ${entries.length} entries`,
+          count: entries.length,
         });
       }
 
       case 'delete': {
         const { name: nameToDelete } = data as { name: string };
-
-        if (!nameToDelete || typeof nameToDelete !== 'string') {
+        if (!nameToDelete) {
           return NextResponse.json(
             { error: 'Name is required for delete action' },
             { status: 400 }
           );
         }
 
-        let deleteExistingEntries: CodexEntry[] = [];
-        let deleteLanguageColumns: string[] = ['dutch'];
-        try {
-          await fs.access(CSV_FILE_PATH);
-          const existingContent = await fs.readFile(CSV_FILE_PATH, 'utf8');
-          const parsed = parseCodexCSV(existingContent);
-          deleteExistingEntries = parsed.entries;
-          deleteLanguageColumns = parsed.languageColumns.length > 0 ? parsed.languageColumns : ['dutch'];
-        } catch {
-          return NextResponse.json(
-            { error: 'Codex file not found' },
-            { status: 404 }
-          );
-        }
-
-        const originalLength = deleteExistingEntries.length;
-        const filteredEntries = deleteExistingEntries.filter(
+        const before = codex.entries.length;
+        codex.entries = codex.entries.filter(
           e => e.name.toLowerCase() !== nameToDelete.toLowerCase()
         );
 
-        if (filteredEntries.length === originalLength) {
+        if (codex.entries.length === before) {
           return NextResponse.json(
             { error: `Entry with name "${nameToDelete}" not found` },
             { status: 404 }
           );
         }
 
-        const csvContent = entriesToCSV(filteredEntries, deleteLanguageColumns);
-        await fs.writeFile(CSV_FILE_PATH, csvContent, 'utf8');
+        await writeCodex(codex);
 
         return NextResponse.json({
           success: true,
           message: `Entry "${nameToDelete}" deleted successfully`,
-          remainingCount: filteredEntries.length
+          remainingCount: codex.entries.length,
         });
       }
 
       default:
-        return NextResponse.json(
-          { error: 'Invalid action' },
-          { status: 400 }
-        );
+        return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
     }
-
   } catch (error) {
     console.error('Error processing codex request:', error);
-    return NextResponse.json(
-      { error: 'Failed to process request' },
-      { status: 500 }
-    );
+    return NextResponse.json({ error: 'Failed to process request' }, { status: 500 });
   }
 }

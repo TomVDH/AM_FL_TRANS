@@ -14,8 +14,6 @@ const meta: Meta<typeof ReferenceConfigPanel> = {
     isLoadingCodex: false,
     refreshCodex: fn(),
     onCodexUpdated: fn(),
-    styleEnrichedCount: 18,
-    styleTotalCount: 30,
     fileType: 'excel',
     onFileTypeChange: fn(),
     inputMode: 'excel',

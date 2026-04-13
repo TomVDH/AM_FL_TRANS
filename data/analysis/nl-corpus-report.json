@@ -1,0 +1,4085 @@
+{
+  "Smart Ass": {
+    "lineCount": 321,
+    "pronouns": {
+      "ge/gij": 10,
+      "je/jij": 41,
+      "u": 7
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "nie": 7,
+      "da": 5,
+      "allez": 1,
+      "-ke diminutive": 8,
+      "godver": 3
+    },
+    "flemishTotal": 24,
+    "flemishDensity": "trace",
+    "contractions": {
+      "'k": 4,
+      "'s": 3,
+      "da's": 2
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "wie gaat er",
+        "count": 7
+      },
+      {
+        "phrase": "onze jobs terug",
+        "count": 6
+      },
+      {
+        "phrase": "en onze jobs",
+        "count": 5
+      },
+      {
+        "phrase": "jobs terug te",
+        "count": 5
+      },
+      {
+        "phrase": "terug te geven",
+        "count": 5
+      },
+      {
+        "phrase": "en onze jobs terug",
+        "count": 5
+      },
+      {
+        "phrase": "onze jobs terug te",
+        "count": 5
+      },
+      {
+        "phrase": "jobs terug te geven",
+        "count": 5
+      },
+      {
+        "phrase": "en onze jobs terug te",
+        "count": 5
+      },
+      {
+        "phrase": "onze jobs terug te geven",
+        "count": 5
+      },
+      {
+        "phrase": "en onze jobs terug te geven",
+        "count": 5
+      },
+      {
+        "phrase": "overtuigen de mensen",
+        "count": 4
+      },
+      {
+        "phrase": "we zijn hier",
+        "count": 4
+      },
+      {
+        "phrase": "job zonder machines",
+        "count": 4
+      },
+      {
+        "phrase": "de mijn-ezels en",
+        "count": 3
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 10, je/jij: 41 — ratio 24%"
+      },
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 7, niet: 30"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E7"
+    ]
+  },
+  "Sturdy Ass": {
+    "lineCount": 283,
+    "pronouns": {
+      "ge/gij": 38,
+      "je/jij": 10,
+      "u": 22
+    },
+    "dominantPronoun": "mixed (ge/gij: 38, u: 22)",
+    "flemishMarkers": {
+      "nie": 16,
+      "da": 20,
+      "-ke diminutive": 8
+    },
+    "flemishTotal": 44,
+    "flemishDensity": "light",
+    "contractions": {
+      "'k": 5
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "deze plek was",
+        "count": 7
+      },
+      {
+        "phrase": "en nu is",
+        "count": 7
+      },
+      {
+        "phrase": "nu is 't",
+        "count": 7
+      },
+      {
+        "phrase": "een hoop rommel",
+        "count": 7
+      },
+      {
+        "phrase": "achtergelaten en vergeten",
+        "count": 7
+      },
+      {
+        "phrase": "en nu is 't",
+        "count": 7
+      },
+      {
+        "phrase": "misschien kan ik",
+        "count": 7
+      },
+      {
+        "phrase": "kan ik hier",
+        "count": 7
+      },
+      {
+        "phrase": "ik hier iets",
+        "count": 7
+      },
+      {
+        "phrase": "hier iets bijzonders",
+        "count": 7
+      },
+      {
+        "phrase": "iets bijzonders van",
+        "count": 7
+      },
+      {
+        "phrase": "bijzonders van maken",
+        "count": 7
+      },
+      {
+        "phrase": "misschien kan ik hier",
+        "count": 7
+      },
+      {
+        "phrase": "kan ik hier iets",
+        "count": 7
+      },
+      {
+        "phrase": "ik hier iets bijzonders",
+        "count": 7
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 38, je/jij: 10 — ratio 26%"
+      },
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 16, niet: 22"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E10",
+      "E3",
+      "E4",
+      "E6",
+      "E9"
+    ]
+  },
+  "{$NewName}": {
+    "lineCount": 267,
+    "pronouns": {
+      "ge/gij": 14,
+      "je/jij": 23,
+      "u": 13
+    },
+    "dominantPronoun": "mixed (je/jij: 23, ge/gij: 14)",
+    "flemishMarkers": {
+      "nie": 4,
+      "da": 5,
+      "amai": 4,
+      "-ke diminutive": 10
+    },
+    "flemishTotal": 23,
+    "flemishDensity": "trace",
+    "contractions": {
+      "'k": 9
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "kijken naar mijn",
+        "count": 4
+      },
+      {
+        "phrase": "naar mijn stenen-spel",
+        "count": 4
+      },
+      {
+        "phrase": "kijken naar mijn stenen-spel",
+        "count": 4
+      },
+      {
+        "phrase": "wat als ik",
+        "count": 3
+      },
+      {
+        "phrase": "wil je kijken",
+        "count": 3
+      },
+      {
+        "phrase": "je kijken naar",
+        "count": 3
+      },
+      {
+        "phrase": "wil je kijken naar",
+        "count": 3
+      },
+      {
+        "phrase": "je kijken naar mijn",
+        "count": 3
+      },
+      {
+        "phrase": "wil je kijken naar mijn",
+        "count": 3
+      },
+      {
+        "phrase": "je kijken naar mijn stenen-spel",
+        "count": 3
+      },
+      {
+        "phrase": "wil je kijken naar mijn stenen-spel",
+        "count": 3
+      },
+      {
+        "phrase": "ik denk dat",
+        "count": 3
+      },
+      {
+        "phrase": "wat is dat",
+        "count": 3
+      },
+      {
+        "phrase": "ik ben uw",
+        "count": 3
+      },
+      {
+        "phrase": "nonkel stoere—piet heeft",
+        "count": 3
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 14, je/jij: 23 — ratio 61%"
+      },
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 4, niet: 28"
+      }
+    ],
+    "episodes": [
+      "E10",
+      "E3",
+      "E6",
+      "E9"
+    ]
+  },
+  "Kick Ass": {
+    "lineCount": 181,
+    "pronouns": {
+      "ge/gij": 16,
+      "je/jij": 22,
+      "u": 8
+    },
+    "dominantPronoun": "mixed (je/jij: 22, ge/gij: 16)",
+    "flemishMarkers": {
+      "nie": 7,
+      "da": 4,
+      "-ke diminutive": 3,
+      "godver": 4
+    },
+    "flemishTotal": 18,
+    "flemishDensity": "trace",
+    "contractions": {
+      "'k": 1,
+      "'s": 1,
+      "da's": 1
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "waar ik u",
+        "count": 2
+      },
+      {
+        "phrase": "ik u nie",
+        "count": 2
+      },
+      {
+        "phrase": "u nie kan",
+        "count": 2
+      },
+      {
+        "phrase": "nie kan vinden",
+        "count": 2
+      },
+      {
+        "phrase": "waar ik u nie",
+        "count": 2
+      },
+      {
+        "phrase": "ik u nie kan",
+        "count": 2
+      },
+      {
+        "phrase": "u nie kan vinden",
+        "count": 2
+      },
+      {
+        "phrase": "waar ik u nie kan",
+        "count": 2
+      },
+      {
+        "phrase": "ik u nie kan vinden",
+        "count": 2
+      },
+      {
+        "phrase": "waar ik u nie kan vinden",
+        "count": 2
+      },
+      {
+        "phrase": "in de regen",
+        "count": 2
+      },
+      {
+        "phrase": "aan te doen",
+        "count": 2
+      },
+      {
+        "phrase": "@#$%& — ik",
+        "count": 2
+      },
+      {
+        "phrase": "ik denk niet",
+        "count": 2
+      },
+      {
+        "phrase": "denk niet dat",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 16, je/jij: 22 — ratio 73%"
+      },
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 7, niet: 19"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7"
+    ]
+  },
+  "Sad Ass": {
+    "lineCount": 172,
+    "pronouns": {
+      "ge/gij": 6,
+      "je/jij": 36,
+      "u": 6
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "nie": 5,
+      "da": 4,
+      "-ke diminutive": 5
+    },
+    "flemishTotal": 14,
+    "flemishDensity": "trace",
+    "contractions": {
+      "'s": 1,
+      "da's": 1
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "ik denk dat",
+        "count": 4
+      },
+      {
+        "phrase": "iemand zei me",
+        "count": 3
+      },
+      {
+        "phrase": "zei me ooit",
+        "count": 3
+      },
+      {
+        "phrase": "me ooit dat",
+        "count": 3
+      },
+      {
+        "phrase": "iemand zei me ooit",
+        "count": 3
+      },
+      {
+        "phrase": "zei me ooit dat",
+        "count": 3
+      },
+      {
+        "phrase": "iemand zei me ooit dat",
+        "count": 3
+      },
+      {
+        "phrase": "ik ben blij",
+        "count": 3
+      },
+      {
+        "phrase": "ben blij dat",
+        "count": 3
+      },
+      {
+        "phrase": "ik ben blij dat",
+        "count": 3
+      },
+      {
+        "phrase": "vandaag is het",
+        "count": 2
+      },
+      {
+        "phrase": "dat ik mezelf",
+        "count": 2
+      },
+      {
+        "phrase": "het spijt me",
+        "count": 2
+      },
+      {
+        "phrase": "ik blijf hier",
+        "count": 2
+      },
+      {
+        "phrase": "ik ben zo",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 5, niet: 24"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6",
+      "E7"
+    ]
+  },
+  "Slow Ass": {
+    "lineCount": 166,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 19,
+      "u": 2
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "nie": 1,
+      "-ke diminutive": 1
+    },
+    "flemishTotal": 2,
+    "flemishDensity": "trace",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "dat ik te",
+        "count": 3
+      },
+      {
+        "phrase": "ik te laat",
+        "count": 3
+      },
+      {
+        "phrase": "dat ik te laat",
+        "count": 3
+      },
+      {
+        "phrase": "en ik heb",
+        "count": 2
+      },
+      {
+        "phrase": "in de molen",
+        "count": 2
+      },
+      {
+        "phrase": "de molen liggen",
+        "count": 2
+      },
+      {
+        "phrase": "in de molen liggen",
+        "count": 2
+      },
+      {
+        "phrase": "er z-zeker van",
+        "count": 2
+      },
+      {
+        "phrase": "z-zeker van dat",
+        "count": 2
+      },
+      {
+        "phrase": "er z-zeker van dat",
+        "count": 2
+      },
+      {
+        "phrase": "{color=yellow}{s=5}♪ hee haw",
+        "count": 2
+      },
+      {
+        "phrase": "hee haw hi",
+        "count": 2
+      },
+      {
+        "phrase": "haw hi hon",
+        "count": 2
+      },
+      {
+        "phrase": "hi hon 'ee",
+        "count": 2
+      },
+      {
+        "phrase": "hon 'ee ah",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 1, niet: 20"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E6"
+    ]
+  },
+  "Hard Ass": {
+    "lineCount": 158,
+    "pronouns": {
+      "ge/gij": 6,
+      "je/jij": 23,
+      "u": 3
+    },
+    "dominantPronoun": "mixed (je/jij: 23, ge/gij: 6)",
+    "flemishMarkers": {
+      "-ke diminutive": 2
+    },
+    "flemishTotal": 2,
+    "flemishDensity": "trace",
+    "contractions": {
+      "'s": 1
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "geen mietje zijn",
+        "count": 3
+      },
+      {
+        "phrase": "om uit de",
+        "count": 2
+      },
+      {
+        "phrase": "uit de beerput",
+        "count": 2
+      },
+      {
+        "phrase": "de beerput te",
+        "count": 2
+      },
+      {
+        "phrase": "beerput te klimmen",
+        "count": 2
+      },
+      {
+        "phrase": "te klimmen moet",
+        "count": 2
+      },
+      {
+        "phrase": "klimmen moet er",
+        "count": 2
+      },
+      {
+        "phrase": "moet er stront",
+        "count": 2
+      },
+      {
+        "phrase": "er stront aan",
+        "count": 2
+      },
+      {
+        "phrase": "stront aan de",
+        "count": 2
+      },
+      {
+        "phrase": "aan de hoeven",
+        "count": 2
+      },
+      {
+        "phrase": "de hoeven hangen",
+        "count": 2
+      },
+      {
+        "phrase": "om uit de beerput",
+        "count": 2
+      },
+      {
+        "phrase": "uit de beerput te",
+        "count": 2
+      },
+      {
+        "phrase": "de beerput te klimmen",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 6, je/jij: 23 — ratio 26%"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E6"
+    ]
+  },
+  "Nice Ass": {
+    "lineCount": 153,
+    "pronouns": {
+      "ge/gij": 4,
+      "je/jij": 34,
+      "u": 6
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "nie": 7,
+      "da": 1,
+      "-ke diminutive": 7
+    },
+    "flemishTotal": 15,
+    "flemishDensity": "trace",
+    "contractions": {
+      "'s": 1,
+      "da's": 1
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "oude zak zou",
+        "count": 4
+      },
+      {
+        "phrase": "zak zou niet",
+        "count": 4
+      },
+      {
+        "phrase": "zou niet willen",
+        "count": 4
+      },
+      {
+        "phrase": "niet willen dat",
+        "count": 4
+      },
+      {
+        "phrase": "willen dat we",
+        "count": 4
+      },
+      {
+        "phrase": "dat we iemand",
+        "count": 4
+      },
+      {
+        "phrase": "we iemand achterlaten",
+        "count": 4
+      },
+      {
+        "phrase": "oude zak zou niet",
+        "count": 4
+      },
+      {
+        "phrase": "zak zou niet willen",
+        "count": 4
+      },
+      {
+        "phrase": "zou niet willen dat",
+        "count": 4
+      },
+      {
+        "phrase": "niet willen dat we",
+        "count": 4
+      },
+      {
+        "phrase": "willen dat we iemand",
+        "count": 4
+      },
+      {
+        "phrase": "dat we iemand achterlaten",
+        "count": 4
+      },
+      {
+        "phrase": "oude zak zou niet willen",
+        "count": 4
+      },
+      {
+        "phrase": "zak zou niet willen dat",
+        "count": 4
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 7, niet: 19"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E6"
+    ]
+  },
+  "Cole-Machine": {
+    "lineCount": 153,
+    "pronouns": {
+      "ge/gij": 36,
+      "je/jij": 5,
+      "u": 18
+    },
+    "dominantPronoun": "mixed (ge/gij: 36, u: 18)",
+    "flemishMarkers": {
+      "nie": 8,
+      "da": 7,
+      "allez": 4,
+      "nen/ne": 6,
+      "-ke diminutive": 4,
+      "godver": 16
+    },
+    "flemishTotal": 45,
+    "flemishDensity": "light",
+    "contractions": {
+      "'k": 19,
+      "'s": 1
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "de burgers van",
+        "count": 4
+      },
+      {
+        "phrase": "burgers van mechalen",
+        "count": 4
+      },
+      {
+        "phrase": "de burgers van mechalen",
+        "count": 4
+      },
+      {
+        "phrase": "in nen ezel",
+        "count": 3
+      },
+      {
+        "phrase": "wat de fok",
+        "count": 3
+      },
+      {
+        "phrase": "net als gij",
+        "count": 3
+      },
+      {
+        "phrase": "mij in nen",
+        "count": 2
+      },
+      {
+        "phrase": "mij in nen ezel",
+        "count": 2
+      },
+      {
+        "phrase": "te maken hebben",
+        "count": 2
+      },
+      {
+        "phrase": "in de steek",
+        "count": 2
+      },
+      {
+        "phrase": "van mechalen zijn",
+        "count": 2
+      },
+      {
+        "phrase": "burgers van mechalen zijn",
+        "count": 2
+      },
+      {
+        "phrase": "de burgers van mechalen zijn",
+        "count": 2
+      },
+      {
+        "phrase": "allez laat ons",
+        "count": 2
+      },
+      {
+        "phrase": "de wereld te",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 8, niet: 21"
+      }
+    ],
+    "episodes": [
+      "E10",
+      "E9"
+    ]
+  },
+  "Big Ass": {
+    "lineCount": 141,
+    "pronouns": {
+      "ge/gij": 11,
+      "je/jij": 11,
+      "u": 5
+    },
+    "dominantPronoun": "mixed (ge/gij: 11, je/jij: 11)",
+    "flemishMarkers": {
+      "nie": 7,
+      "da": 1,
+      "-ke diminutive": 4
+    },
+    "flemishTotal": 12,
+    "flemishDensity": "trace",
+    "contractions": {
+      "'k": 12
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "de andere ezels",
+        "count": 3
+      },
+      {
+        "phrase": "en ik heb",
+        "count": 3
+      },
+      {
+        "phrase": "dit is een",
+        "count": 2
+      },
+      {
+        "phrase": "laat ze niet",
+        "count": 2
+      },
+      {
+        "phrase": "ze niet wachten",
+        "count": 2
+      },
+      {
+        "phrase": "laat ze niet wachten",
+        "count": 2
+      },
+      {
+        "phrase": "andere ezels hier",
+        "count": 2
+      },
+      {
+        "phrase": "de andere ezels hier",
+        "count": 2
+      },
+      {
+        "phrase": "die de leiding",
+        "count": 2
+      },
+      {
+        "phrase": "al die ezels",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 11, je/jij: 11 — ratio 100%"
+      },
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 7, niet: 16"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E5",
+      "E7"
+    ]
+  },
+  "Zookeeper Rose": {
+    "lineCount": 139,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 69,
+      "u": 1
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "amai": 1,
+      "-ke diminutive": 12
+    },
+    "flemishTotal": 13,
+    "flemishDensity": "trace",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "van de week",
+        "count": 8
+      },
+      {
+        "phrase": "ezel van de",
+        "count": 7
+      },
+      {
+        "phrase": "ezel van de week",
+        "count": 7
+      },
+      {
+        "phrase": "de raad van",
+        "count": 5
+      },
+      {
+        "phrase": "raad van bestuur",
+        "count": 5
+      },
+      {
+        "phrase": "van de dierentuin",
+        "count": 5
+      },
+      {
+        "phrase": "de raad van bestuur",
+        "count": 5
+      },
+      {
+        "phrase": "van bestuur van",
+        "count": 3
+      },
+      {
+        "phrase": "bestuur van de",
+        "count": 3
+      },
+      {
+        "phrase": "raad van bestuur van",
+        "count": 3
+      },
+      {
+        "phrase": "van bestuur van de",
+        "count": 3
+      },
+      {
+        "phrase": "bestuur van de dierentuin",
+        "count": 3
+      },
+      {
+        "phrase": "de raad van bestuur van",
+        "count": 3
+      },
+      {
+        "phrase": "raad van bestuur van de",
+        "count": 3
+      },
+      {
+        "phrase": "van bestuur van de dierentuin",
+        "count": 3
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E5"
+    ]
+  },
+  "Thirsty Ass": {
+    "lineCount": 114,
+    "pronouns": {
+      "ge/gij": 15,
+      "je/jij": 9,
+      "u": 3
+    },
+    "dominantPronoun": "mixed (ge/gij: 15, je/jij: 9)",
+    "flemishMarkers": {
+      "nie": 10,
+      "da": 20,
+      "allez": 5,
+      "amai": 3,
+      "nen/ne": 11,
+      "-ke diminutive": 9,
+      "godver": 13
+    },
+    "flemishTotal": 71,
+    "flemishDensity": "medium",
+    "contractions": {
+      "'k": 9,
+      "'t": 1,
+      "'s": 5,
+      "da's": 5
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "schoon beest haar",
+        "count": 2
+      },
+      {
+        "phrase": "ik weet dat",
+        "count": 2
+      },
+      {
+        "phrase": "allez vooruit wij",
+        "count": 2
+      },
+      {
+        "phrase": "vooruit wij moeten",
+        "count": 2
+      },
+      {
+        "phrase": "wij moeten nog",
+        "count": 2
+      },
+      {
+        "phrase": "moeten nog rotsen",
+        "count": 2
+      },
+      {
+        "phrase": "nog rotsen rollen",
+        "count": 2
+      },
+      {
+        "phrase": "allez vooruit wij moeten",
+        "count": 2
+      },
+      {
+        "phrase": "vooruit wij moeten nog",
+        "count": 2
+      },
+      {
+        "phrase": "wij moeten nog rotsen",
+        "count": 2
+      },
+      {
+        "phrase": "moeten nog rotsen rollen",
+        "count": 2
+      },
+      {
+        "phrase": "allez vooruit wij moeten nog",
+        "count": 2
+      },
+      {
+        "phrase": "vooruit wij moeten nog rotsen",
+        "count": 2
+      },
+      {
+        "phrase": "wij moeten nog rotsen rollen",
+        "count": 2
+      },
+      {
+        "phrase": "allez vooruit wij moeten nog rotsen",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 15, je/jij: 9 — ratio 60%"
+      },
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 10, niet: 10"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E3",
+      "E4",
+      "E6"
+    ]
+  },
+  "Ringmaster Rico": {
+    "lineCount": 112,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 15,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "amai": 2,
+      "-ke diminutive": 1
+    },
+    "flemishTotal": 3,
+    "flemishDensity": "trace",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "deze beesten hebben",
+        "count": 2
+      },
+      {
+        "phrase": "beesten hebben lang",
+        "count": 2
+      },
+      {
+        "phrase": "hebben lang gereisd",
+        "count": 2
+      },
+      {
+        "phrase": "lang gereisd om",
+        "count": 2
+      },
+      {
+        "phrase": "gereisd om hier",
+        "count": 2
+      },
+      {
+        "phrase": "om hier vanavond",
+        "count": 2
+      },
+      {
+        "phrase": "hier vanavond te",
+        "count": 2
+      },
+      {
+        "phrase": "deze beesten hebben lang",
+        "count": 2
+      },
+      {
+        "phrase": "beesten hebben lang gereisd",
+        "count": 2
+      },
+      {
+        "phrase": "hebben lang gereisd om",
+        "count": 2
+      },
+      {
+        "phrase": "lang gereisd om hier",
+        "count": 2
+      },
+      {
+        "phrase": "gereisd om hier vanavond",
+        "count": 2
+      },
+      {
+        "phrase": "om hier vanavond te",
+        "count": 2
+      },
+      {
+        "phrase": "deze beesten hebben lang gereisd",
+        "count": 2
+      },
+      {
+        "phrase": "beesten hebben lang gereisd om",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E5"
+    ]
+  },
+  "Bad Ass": {
+    "lineCount": 94,
+    "pronouns": {
+      "ge/gij": 7,
+      "je/jij": 9,
+      "u": 5
+    },
+    "dominantPronoun": "mixed (je/jij: 9, ge/gij: 7)",
+    "flemishMarkers": {
+      "nie": 7,
+      "da": 3,
+      "nen/ne": 1,
+      "zever": 1,
+      "-ke diminutive": 2,
+      "godver": 4
+    },
+    "flemishTotal": 18,
+    "flemishDensity": "light",
+    "contractions": {
+      "'k": 17
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "jullie jobs terug",
+        "count": 3
+      },
+      {
+        "phrase": "laat mij gerust",
+        "count": 3
+      },
+      {
+        "phrase": "ik dacht dat",
+        "count": 2
+      },
+      {
+        "phrase": "dacht dat jullie",
+        "count": 2
+      },
+      {
+        "phrase": "in plaats van",
+        "count": 2
+      },
+      {
+        "phrase": "ik dacht dat jullie",
+        "count": 2
+      },
+      {
+        "phrase": "triestigaard en stoere",
+        "count": 2
+      },
+      {
+        "phrase": "naar de rivier",
+        "count": 2
+      },
+      {
+        "phrase": "zoek een manier",
+        "count": 2
+      },
+      {
+        "phrase": "een manier om",
+        "count": 2
+      },
+      {
+        "phrase": "vuur te blussen",
+        "count": 2
+      },
+      {
+        "phrase": "te blussen en",
+        "count": 2
+      },
+      {
+        "phrase": "blussen en de",
+        "count": 2
+      },
+      {
+        "phrase": "en de boerderij",
+        "count": 2
+      },
+      {
+        "phrase": "de boerderij te",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 7, je/jij: 9 — ratio 78%"
+      },
+      {
+        "type": "mixed-negation",
+        "detail": "nie: 7, niet: 9"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E2",
+      "E3",
+      "E6"
+    ]
+  },
+  "Golden Ass": {
+    "lineCount": 89,
+    "pronouns": {
+      "ge/gij": 23,
+      "je/jij": 0,
+      "u": 17
+    },
+    "dominantPronoun": "mixed (ge/gij: 23, u: 17)",
+    "flemishMarkers": {
+      "-ke diminutive": 11
+    },
+    "flemishTotal": 11,
+    "flemishDensity": "light",
+    "contractions": {
+      "'s": 1
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "wij zullen een",
+        "count": 3
+      },
+      {
+        "phrase": "dat is niet",
+        "count": 3
+      },
+      {
+        "phrase": "het astrale hiernamaals",
+        "count": 2
+      },
+      {
+        "phrase": "over andere levende",
+        "count": 2
+      },
+      {
+        "phrase": "andere levende wezens",
+        "count": 2
+      },
+      {
+        "phrase": "over andere levende wezens",
+        "count": 2
+      },
+      {
+        "phrase": "tegen de mensen",
+        "count": 2
+      },
+      {
+        "phrase": "de mensen en",
+        "count": 2
+      },
+      {
+        "phrase": "mensen en hun",
+        "count": 2
+      },
+      {
+        "phrase": "en hun heerschappij",
+        "count": 2
+      },
+      {
+        "phrase": "tegen de mensen en",
+        "count": 2
+      },
+      {
+        "phrase": "de mensen en hun",
+        "count": 2
+      },
+      {
+        "phrase": "mensen en hun heerschappij",
+        "count": 2
+      },
+      {
+        "phrase": "tegen de mensen en hun",
+        "count": 2
+      },
+      {
+        "phrase": "de mensen en hun heerschappij",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E9"
+    ]
+  },
+  "Trusty Ass": {
+    "lineCount": 74,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 17,
+      "u": 1
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "-ke diminutive": 4
+    },
+    "flemishTotal": 4,
+    "flemishDensity": "trace",
+    "contractions": {
+      "'s": 2
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "het is maar",
+        "count": 2
+      },
+      {
+        "phrase": "is maar een",
+        "count": 2
+      },
+      {
+        "phrase": "maar een vogelverschrikker",
+        "count": 2
+      },
+      {
+        "phrase": "het is maar een",
+        "count": 2
+      },
+      {
+        "phrase": "is maar een vogelverschrikker",
+        "count": 2
+      },
+      {
+        "phrase": "het is maar een vogelverschrikker",
+        "count": 2
+      },
+      {
+        "phrase": "de camion-machine is",
+        "count": 2
+      },
+      {
+        "phrase": "dat is de",
+        "count": 2
+      },
+      {
+        "phrase": "waren oude's laatste",
+        "count": 2
+      },
+      {
+        "phrase": "oude's laatste woorden",
+        "count": 2
+      },
+      {
+        "phrase": "waren oude's laatste woorden",
+        "count": 2
+      },
+      {
+        "phrase": "laat de wereld",
+        "count": 2
+      },
+      {
+        "phrase": "de wereld het",
+        "count": 2
+      },
+      {
+        "phrase": "wereld het licht",
+        "count": 2
+      },
+      {
+        "phrase": "het licht van",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E8"
+    ]
+  },
+  "Old Ass": {
+    "lineCount": 57,
+    "pronouns": {
+      "ge/gij": 3,
+      "je/jij": 7,
+      "u": 3
+    },
+    "dominantPronoun": "mixed (je/jij: 7, ge/gij: 3)",
+    "flemishMarkers": {
+      "-ke diminutive": 2
+    },
+    "flemishTotal": 2,
+    "flemishDensity": "trace",
+    "contractions": {
+      "'s": 1
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "ik wou dat",
+        "count": 3
+      },
+      {
+        "phrase": "van ons bestaan",
+        "count": 2
+      },
+      {
+        "phrase": "kom terug wanneer",
+        "count": 2
+      },
+      {
+        "phrase": "ze hebben me",
+        "count": 2
+      },
+      {
+        "phrase": "wou dat ik",
+        "count": 2
+      },
+      {
+        "phrase": "ik wou dat ik",
+        "count": 2
+      },
+      {
+        "phrase": "laat de wereld",
+        "count": 2
+      },
+      {
+        "phrase": "van de ezel",
+        "count": 2
+      },
+      {
+        "phrase": "de ezel macht",
+        "count": 2
+      },
+      {
+        "phrase": "ezel macht zien",
+        "count": 2
+      },
+      {
+        "phrase": "van de ezel macht",
+        "count": 2
+      },
+      {
+        "phrase": "de ezel macht zien",
+        "count": 2
+      },
+      {
+        "phrase": "van de ezel macht zien",
+        "count": 2
+      },
+      {
+        "phrase": "dit is de",
+        "count": 2
+      },
+      {
+        "phrase": "dj lijpe ezel",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 3, je/jij: 7 — ratio 43%"
+      }
+    ],
+    "episodes": [
+      "E1",
+      "E4"
+    ]
+  },
+  "Mme. Derriere": {
+    "lineCount": 46,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 16,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "-ke diminutive": 2
+    },
+    "flemishTotal": 2,
+    "flemishDensity": "trace",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "mijn fabriek zijn",
+        "count": 2
+      },
+      {
+        "phrase": "het lijkt me",
+        "count": 2
+      },
+      {
+        "phrase": "lijkt me dat",
+        "count": 2
+      },
+      {
+        "phrase": "me dat ongure",
+        "count": 2
+      },
+      {
+        "phrase": "dat ongure radicalen",
+        "count": 2
+      },
+      {
+        "phrase": "en de ezels",
+        "count": 2
+      },
+      {
+        "phrase": "de ezels hebben",
+        "count": 2
+      },
+      {
+        "phrase": "ezels hebben losgelaten",
+        "count": 2
+      },
+      {
+        "phrase": "hebben losgelaten op",
+        "count": 2
+      },
+      {
+        "phrase": "losgelaten op onze",
+        "count": 2
+      },
+      {
+        "phrase": "op onze prachtige",
+        "count": 2
+      },
+      {
+        "phrase": "onze prachtige stad",
+        "count": 2
+      },
+      {
+        "phrase": "het lijkt me dat",
+        "count": 2
+      },
+      {
+        "phrase": "lijkt me dat ongure",
+        "count": 2
+      },
+      {
+        "phrase": "me dat ongure radicalen",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E10",
+      "E5",
+      "E7"
+    ]
+  },
+  "Sick Ass": {
+    "lineCount": 46,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2",
+      "E3",
+      "E4",
+      "E6",
+      "E8"
+    ]
+  },
+  "Lazy Ass": {
+    "lineCount": 37,
+    "pronouns": {
+      "ge/gij": 11,
+      "je/jij": 0,
+      "u": 6
+    },
+    "dominantPronoun": "mixed (ge/gij: 11, u: 6)",
+    "flemishMarkers": {
+      "nie": 7,
+      "da": 3,
+      "nen/ne": 1,
+      "goesting": 1,
+      "-ke diminutive": 1
+    },
+    "flemishTotal": 13,
+    "flemishDensity": "light",
+    "contractions": {
+      "'k": 9
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "'k herinner mij",
+        "count": 3
+      },
+      {
+        "phrase": "ik ben luie",
+        "count": 2
+      },
+      {
+        "phrase": "denk dat ik",
+        "count": 2
+      },
+      {
+        "phrase": "verveling is vrijheid",
+        "count": 2
+      },
+      {
+        "phrase": "is vrijheid weet",
+        "count": 2
+      },
+      {
+        "phrase": "vrijheid weet ge",
+        "count": 2
+      },
+      {
+        "phrase": "weet ge wel",
+        "count": 2
+      },
+      {
+        "phrase": "verveling is vrijheid weet",
+        "count": 2
+      },
+      {
+        "phrase": "is vrijheid weet ge",
+        "count": 2
+      },
+      {
+        "phrase": "vrijheid weet ge wel",
+        "count": 2
+      },
+      {
+        "phrase": "verveling is vrijheid weet ge",
+        "count": 2
+      },
+      {
+        "phrase": "is vrijheid weet ge wel",
+        "count": 2
+      },
+      {
+        "phrase": "verveling is vrijheid weet ge wel",
+        "count": 2
+      },
+      {
+        "phrase": "herinner mij zelfs",
+        "count": 2
+      },
+      {
+        "phrase": "mij zelfs uw",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E3",
+      "E6"
+    ]
+  },
+  "Helpful Ass": {
+    "lineCount": 33,
+    "pronouns": {
+      "ge/gij": 13,
+      "je/jij": 0,
+      "u": 1
+    },
+    "dominantPronoun": "ge/gij",
+    "flemishMarkers": {
+      "nie": 4,
+      "da": 12,
+      "nen/ne": 7,
+      "-ke diminutive": 3
+    },
+    "flemishTotal": 26,
+    "flemishDensity": "medium",
+    "contractions": {
+      "'k": 15
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "wil de 't",
+        "count": 3
+      },
+      {
+        "phrase": "wa da er",
+        "count": 3
+      },
+      {
+        "phrase": "da we zóveel",
+        "count": 2
+      },
+      {
+        "phrase": "we zóveel geleden",
+        "count": 2
+      },
+      {
+        "phrase": "zóveel geleden hebben—",
+        "count": 2
+      },
+      {
+        "phrase": "da we zóveel geleden",
+        "count": 2
+      },
+      {
+        "phrase": "we zóveel geleden hebben—",
+        "count": 2
+      },
+      {
+        "phrase": "da we zóveel geleden hebben—",
+        "count": 2
+      },
+      {
+        "phrase": "nie geloven wa",
+        "count": 2
+      },
+      {
+        "phrase": "geloven wa da",
+        "count": 2
+      },
+      {
+        "phrase": "da er toen",
+        "count": 2
+      },
+      {
+        "phrase": "nie geloven wa da",
+        "count": 2
+      },
+      {
+        "phrase": "geloven wa da er",
+        "count": 2
+      },
+      {
+        "phrase": "wa da er toen",
+        "count": 2
+      },
+      {
+        "phrase": "nie geloven wa da er",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Hee": {
+    "lineCount": 28,
+    "pronouns": {
+      "ge/gij": 4,
+      "je/jij": 0,
+      "u": 3
+    },
+    "dominantPronoun": "mixed (ge/gij: 4, u: 3)",
+    "flemishMarkers": {
+      "-ke diminutive": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "trace",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "ezel stap naar",
+        "count": 2
+      },
+      {
+        "phrase": "stap naar voren",
+        "count": 2
+      },
+      {
+        "phrase": "ezel stap naar voren",
+        "count": 2
+      },
+      {
+        "phrase": "de gouden ezel",
+        "count": 2
+      },
+      {
+        "phrase": "gouden ezel worden",
+        "count": 2
+      },
+      {
+        "phrase": "ezel worden is",
+        "count": 2
+      },
+      {
+        "phrase": "worden is één",
+        "count": 2
+      },
+      {
+        "phrase": "is één worden",
+        "count": 2
+      },
+      {
+        "phrase": "één worden met",
+        "count": 2
+      },
+      {
+        "phrase": "worden met ons",
+        "count": 2
+      },
+      {
+        "phrase": "met ons en",
+        "count": 2
+      },
+      {
+        "phrase": "ons en het",
+        "count": 2
+      },
+      {
+        "phrase": "en het universum",
+        "count": 2
+      },
+      {
+        "phrase": "de gouden ezel worden",
+        "count": 2
+      },
+      {
+        "phrase": "gouden ezel worden is",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E8",
+      "E9"
+    ]
+  },
+  "Proper Ass": {
+    "lineCount": 25,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 7
+    },
+    "dominantPronoun": "u",
+    "flemishMarkers": {
+      "-ke diminutive": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "trace",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "waar de mensen",
+        "count": 2
+      },
+      {
+        "phrase": "de mensen hun",
+        "count": 2
+      },
+      {
+        "phrase": "mensen hun beslissingen",
+        "count": 2
+      },
+      {
+        "phrase": "hun beslissingen nemen",
+        "count": 2
+      },
+      {
+        "phrase": "waar de mensen hun",
+        "count": 2
+      },
+      {
+        "phrase": "de mensen hun beslissingen",
+        "count": 2
+      },
+      {
+        "phrase": "mensen hun beslissingen nemen",
+        "count": 2
+      },
+      {
+        "phrase": "waar de mensen hun beslissingen",
+        "count": 2
+      },
+      {
+        "phrase": "de mensen hun beslissingen nemen",
+        "count": 2
+      },
+      {
+        "phrase": "waar de mensen hun beslissingen nemen",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Wedgie": {
+    "lineCount": 22,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 3,
+      "u": 2
+    },
+    "dominantPronoun": "mixed (je/jij: 3, u: 2)",
+    "flemishMarkers": {
+      "allez": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "trace",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "hier is uw",
+        "count": 2
+      },
+      {
+        "phrase": "is uw geld",
+        "count": 2
+      },
+      {
+        "phrase": "hier is uw geld",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E5",
+      "E7"
+    ]
+  },
+  "Mr. Butte": {
+    "lineCount": 21,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 4,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E2",
+      "E6"
+    ]
+  },
+  "The Masses": {
+    "lineCount": 20,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 2,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "trouwe zak waar",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E10",
+      "E2",
+      "E4",
+      "E7"
+    ]
+  },
+  "Child Joey": {
+    "lineCount": 19,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 4,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "-ke diminutive": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "trace",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Miner Jenny": {
+    "lineCount": 19,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 8,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E2",
+      "E6"
+    ]
+  },
+  "Radio Host Marcos": {
+    "lineCount": 18,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 6,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "-ke diminutive": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "trace",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E10"
+    ]
+  },
+  "Melvin": {
+    "lineCount": 18,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 2,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "-ke diminutive": 2
+    },
+    "flemishTotal": 2,
+    "flemishDensity": "light",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E5",
+      "E7"
+    ]
+  },
+  "Greedy Ass": {
+    "lineCount": 17,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 3,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "laat maar zitten",
+        "count": 3
+      },
+      {
+        "phrase": "maar zitten jong",
+        "count": 3
+      },
+      {
+        "phrase": "laat maar zitten jong",
+        "count": 3
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Hasty Ass": {
+    "lineCount": 17,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 10,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {
+      "'s": 4
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "nee jammer moest",
+        "count": 2
+      },
+      {
+        "phrase": "jammer moest je",
+        "count": 2
+      },
+      {
+        "phrase": "moest je terug",
+        "count": 2
+      },
+      {
+        "phrase": "je terug zin",
+        "count": 2
+      },
+      {
+        "phrase": "terug zin hebben",
+        "count": 2
+      },
+      {
+        "phrase": "zin hebben ben",
+        "count": 2
+      },
+      {
+        "phrase": "hebben ben ik",
+        "count": 2
+      },
+      {
+        "phrase": "ben ik hier",
+        "count": 2
+      },
+      {
+        "phrase": "ik hier ik",
+        "count": 2
+      },
+      {
+        "phrase": "hier ik ben",
+        "count": 2
+      },
+      {
+        "phrase": "ik ben altijd",
+        "count": 2
+      },
+      {
+        "phrase": "ben altijd klaar",
+        "count": 2
+      },
+      {
+        "phrase": "altijd klaar om",
+        "count": 2
+      },
+      {
+        "phrase": "klaar om te",
+        "count": 2
+      },
+      {
+        "phrase": "om te racen",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "DJ Dope Ass": {
+    "lineCount": 16,
+    "pronouns": {
+      "ge/gij": 5,
+      "je/jij": 3,
+      "u": 0
+    },
+    "dominantPronoun": "mixed (ge/gij: 5, je/jij: 3)",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "dat paarse spul",
+        "count": 5
+      },
+      {
+        "phrase": "van dat paarse",
+        "count": 4
+      },
+      {
+        "phrase": "van dat paarse spul",
+        "count": 4
+      },
+      {
+        "phrase": "wat van dat",
+        "count": 3
+      },
+      {
+        "phrase": "wat van dat paarse",
+        "count": 3
+      },
+      {
+        "phrase": "wat van dat paarse spul",
+        "count": 3
+      },
+      {
+        "phrase": "over wat ik",
+        "count": 3
+      },
+      {
+        "phrase": "wat ik het",
+        "count": 3
+      },
+      {
+        "phrase": "ik het heb",
+        "count": 3
+      },
+      {
+        "phrase": "over wat ik het",
+        "count": 3
+      },
+      {
+        "phrase": "wat ik het heb",
+        "count": 3
+      },
+      {
+        "phrase": "over wat ik het heb",
+        "count": 3
+      },
+      {
+        "phrase": "ge weet over",
+        "count": 2
+      },
+      {
+        "phrase": "weet over wat",
+        "count": 2
+      },
+      {
+        "phrase": "het heb jong",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [
+      {
+        "type": "mixed-pronouns",
+        "detail": "ge/gij: 5, je/jij: 3 — ratio 60%"
+      }
+    ],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Haw": {
+    "lineCount": 16,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 4
+    },
+    "dominantPronoun": "u",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "de materiële wereld",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E8",
+      "E9"
+    ]
+  },
+  "Grandma Kulan": {
+    "lineCount": 14,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 3,
+      "u": 1
+    },
+    "dominantPronoun": "mixed (je/jij: 3, u: 1)",
+    "flemishMarkers": {
+      "-ke diminutive": 4
+    },
+    "flemishTotal": 4,
+    "flemishDensity": "light",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "kom we gaan",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E5"
+    ]
+  },
+  "Bleak Ass": {
+    "lineCount": 14,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 1
+    },
+    "dominantPronoun": "u",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "???": {
+    "lineCount": 12,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 2,
+      "u": 1
+    },
+    "dominantPronoun": "mixed (je/jij: 2, u: 1)",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2",
+      "E3",
+      "E5",
+      "E6",
+      "E7",
+      "E9"
+    ]
+  },
+  "Happy Ass": {
+    "lineCount": 12,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 7,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E4"
+    ]
+  },
+  "Resentful Ass": {
+    "lineCount": 11,
+    "pronouns": {
+      "ge/gij": 3,
+      "je/jij": 0,
+      "u": 3
+    },
+    "dominantPronoun": "mixed (ge/gij: 3, u: 3)",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Welcome Sign": {
+    "lineCount": 10,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "welkom op de",
+        "count": 5
+      },
+      {
+        "phrase": "op de boerderij",
+        "count": 5
+      },
+      {
+        "phrase": "de boerderij van",
+        "count": 5
+      },
+      {
+        "phrase": "boerderij van muilegem",
+        "count": 5
+      },
+      {
+        "phrase": "van muilegem ten",
+        "count": 5
+      },
+      {
+        "phrase": "muilegem ten westen",
+        "count": 5
+      },
+      {
+        "phrase": "ten westen onze",
+        "count": 5
+      },
+      {
+        "phrase": "westen onze prachtige",
+        "count": 5
+      },
+      {
+        "phrase": "onze prachtige erfgoedshoeve",
+        "count": 5
+      },
+      {
+        "phrase": "prachtige erfgoedshoeve en",
+        "count": 5
+      },
+      {
+        "phrase": "erfgoedshoeve en korenvelden",
+        "count": 5
+      },
+      {
+        "phrase": "welkom op de boerderij",
+        "count": 5
+      },
+      {
+        "phrase": "op de boerderij van",
+        "count": 5
+      },
+      {
+        "phrase": "de boerderij van muilegem",
+        "count": 5
+      },
+      {
+        "phrase": "boerderij van muilegem ten",
+        "count": 5
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Decrepit Sign": {
+    "lineCount": 10,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "de lange weg",
+        "count": 5
+      },
+      {
+        "phrase": "lange weg naar",
+        "count": 5
+      },
+      {
+        "phrase": "weg naar 't",
+        "count": 5
+      },
+      {
+        "phrase": "naar 't schrijn",
+        "count": 5
+      },
+      {
+        "phrase": "'t schrijn in",
+        "count": 5
+      },
+      {
+        "phrase": "schrijn in 't",
+        "count": 5
+      },
+      {
+        "phrase": "in 't bos",
+        "count": 5
+      },
+      {
+        "phrase": "de lange weg naar",
+        "count": 5
+      },
+      {
+        "phrase": "lange weg naar 't",
+        "count": 5
+      },
+      {
+        "phrase": "weg naar 't schrijn",
+        "count": 5
+      },
+      {
+        "phrase": "naar 't schrijn in",
+        "count": 5
+      },
+      {
+        "phrase": "'t schrijn in 't",
+        "count": 5
+      },
+      {
+        "phrase": "schrijn in 't bos",
+        "count": 5
+      },
+      {
+        "phrase": "de lange weg naar 't",
+        "count": 5
+      },
+      {
+        "phrase": "lange weg naar 't schrijn",
+        "count": 5
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Tight Ass": {
+    "lineCount": 10,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 7,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {
+      "'s": 1
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "het astrale hiernamaals",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Edgy Ass": {
+    "lineCount": 10,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {
+      "nie": 1,
+      "da": 2
+    },
+    "flemishTotal": 3,
+    "flemishDensity": "light",
+    "contractions": {
+      "'s": 1,
+      "da's": 1
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "de mensen dat",
+        "count": 3
+      },
+      {
+        "phrase": "mensen dat ze",
+        "count": 3
+      },
+      {
+        "phrase": "de mensen dat ze",
+        "count": 3
+      },
+      {
+        "phrase": "zeg de mensen",
+        "count": 2
+      },
+      {
+        "phrase": "zeg de mensen dat",
+        "count": 2
+      },
+      {
+        "phrase": "zeg de mensen dat ze",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Skinny Ass": {
+    "lineCount": 10,
+    "pronouns": {
+      "ge/gij": 3,
+      "je/jij": 2,
+      "u": 2
+    },
+    "dominantPronoun": "mixed (ge/gij: 3, je/jij: 2)",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {
+      "'s": 1
+    },
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Factory PA": {
+    "lineCount": 9,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E7"
+    ]
+  },
+  "THE GODS": {
+    "lineCount": 8,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 5
+    },
+    "dominantPronoun": "u",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E8"
+    ]
+  },
+  "Sulky Ass": {
+    "lineCount": 6,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 4,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Total Ass": {
+    "lineCount": 6,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 2,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "dat waren de",
+        "count": 2
+      },
+      {
+        "phrase": "waren de dagen",
+        "count": 2
+      },
+      {
+        "phrase": "dat waren de dagen",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Tragic Ass": {
+    "lineCount": 6,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "moeten stoppen met",
+        "count": 3
+      },
+      {
+        "phrase": "de mensen moeten",
+        "count": 2
+      },
+      {
+        "phrase": "mensen moeten stoppen",
+        "count": 2
+      },
+      {
+        "phrase": "stoppen met het",
+        "count": 2
+      },
+      {
+        "phrase": "met het verkeerd",
+        "count": 2
+      },
+      {
+        "phrase": "de mensen moeten stoppen",
+        "count": 2
+      },
+      {
+        "phrase": "mensen moeten stoppen met",
+        "count": 2
+      },
+      {
+        "phrase": "moeten stoppen met het",
+        "count": 2
+      },
+      {
+        "phrase": "stoppen met het verkeerd",
+        "count": 2
+      },
+      {
+        "phrase": "de mensen moeten stoppen met",
+        "count": 2
+      },
+      {
+        "phrase": "mensen moeten stoppen met het",
+        "count": 2
+      },
+      {
+        "phrase": "moeten stoppen met het verkeerd",
+        "count": 2
+      },
+      {
+        "phrase": "de mensen moeten stoppen met het",
+        "count": 2
+      },
+      {
+        "phrase": "mensen moeten stoppen met het verkeerd",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Dirty Sign": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "vanscheetvelde industrie en",
+        "count": 5
+      },
+      {
+        "phrase": "industrie en kolen",
+        "count": 5
+      },
+      {
+        "phrase": "vanscheetvelde industrie en kolen",
+        "count": 5
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Warning Sign": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "364 dagen sinds",
+        "count": 5
+      },
+      {
+        "phrase": "dagen sinds laatste",
+        "count": 5
+      },
+      {
+        "phrase": "364 dagen sinds laatste",
+        "count": 5
+      },
+      {
+        "phrase": "sinds laatste mijn-ongeval",
+        "count": 4
+      },
+      {
+        "phrase": "dagen sinds laatste mijn-ongeval",
+        "count": 4
+      },
+      {
+        "phrase": "364 dagen sinds laatste mijn-ongeval",
+        "count": 4
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Official Sign": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {
+      "-ke diminutive": 10
+    },
+    "flemishTotal": 10,
+    "flemishDensity": "heavy",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "stedelijke en landelijke",
+        "count": 5
+      },
+      {
+        "phrase": "niew overheids-gesubsidiëerde snelweg",
+        "count": 4
+      },
+      {
+        "phrase": "overheids-gesubsidiëerde snelweg brengt",
+        "count": 4
+      },
+      {
+        "phrase": "snelweg brengt stedelijke",
+        "count": 4
+      },
+      {
+        "phrase": "brengt stedelijke en",
+        "count": 4
+      },
+      {
+        "phrase": "en landelijke regios",
+        "count": 4
+      },
+      {
+        "phrase": "landelijke regios in",
+        "count": 4
+      },
+      {
+        "phrase": "regios in verbinding",
+        "count": 4
+      },
+      {
+        "phrase": "niew overheids-gesubsidiëerde snelweg brengt",
+        "count": 4
+      },
+      {
+        "phrase": "overheids-gesubsidiëerde snelweg brengt stedelijke",
+        "count": 4
+      },
+      {
+        "phrase": "snelweg brengt stedelijke en",
+        "count": 4
+      },
+      {
+        "phrase": "brengt stedelijke en landelijke",
+        "count": 4
+      },
+      {
+        "phrase": "stedelijke en landelijke regios",
+        "count": 4
+      },
+      {
+        "phrase": "en landelijke regios in",
+        "count": 4
+      },
+      {
+        "phrase": "landelijke regios in verbinding",
+        "count": 4
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Fancy Sign": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "de piekfijne molen",
+        "count": 3
+      },
+      {
+        "phrase": "molen en graanschuur",
+        "count": 3
+      },
+      {
+        "phrase": "piekfijne molen met",
+        "count": 2
+      },
+      {
+        "phrase": "molen met graanopslag",
+        "count": 2
+      },
+      {
+        "phrase": "de piekfijne molen met",
+        "count": 2
+      },
+      {
+        "phrase": "piekfijne molen met graanopslag",
+        "count": 2
+      },
+      {
+        "phrase": "de piekfijne molen met graanopslag",
+        "count": 2
+      },
+      {
+        "phrase": "de hoogmoderne molen",
+        "count": 2
+      },
+      {
+        "phrase": "hoogmoderne molen en",
+        "count": 2
+      },
+      {
+        "phrase": "de hoogmoderne molen en",
+        "count": 2
+      },
+      {
+        "phrase": "hoogmoderne molen en graanschuur",
+        "count": 2
+      },
+      {
+        "phrase": "de hoogmoderne molen en graanschuur",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Shitty Sign": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Old Sign": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Historic Sign": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "de bron van",
+        "count": 5
+      },
+      {
+        "phrase": "bron van ya'fur",
+        "count": 5
+      },
+      {
+        "phrase": "de bron van ya'fur",
+        "count": 5
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E1",
+      "E2"
+    ]
+  },
+  "Risky Ass": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 2,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Bitter Ass": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 2,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Lofty Ass": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {
+      "-ke diminutive": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "light",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Dusty Ass": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 1,
+      "je/jij": 2,
+      "u": 1
+    },
+    "dominantPronoun": "mixed (je/jij: 2, ge/gij: 1)",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Smelly Ass": {
+    "lineCount": 5,
+    "pronouns": {
+      "ge/gij": 2,
+      "je/jij": 1,
+      "u": 0
+    },
+    "dominantPronoun": "mixed (ge/gij: 2, je/jij: 1)",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {
+      "'s": 2
+    },
+    "repeatedPhrases": [
+      {
+        "phrase": "dj lijpe ezel's",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Broken Ass": {
+    "lineCount": 4,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Janky Ass": {
+    "lineCount": 4,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Ugly Ass": {
+    "lineCount": 4,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 3,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Mellow Ass": {
+    "lineCount": 4,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 2,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Furry Ass": {
+    "lineCount": 4,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 5,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "goesting": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "light",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Gaunt Ass": {
+    "lineCount": 4,
+    "pronouns": {
+      "ge/gij": 1,
+      "je/jij": 0,
+      "u": 1
+    },
+    "dominantPronoun": "mixed (ge/gij: 1, u: 1)",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Mad Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [
+      {
+        "phrase": "ik dacht dat",
+        "count": 2
+      },
+      {
+        "phrase": "dacht dat ik",
+        "count": 2
+      },
+      {
+        "phrase": "dat ik water",
+        "count": 2
+      },
+      {
+        "phrase": "ik water droeg",
+        "count": 2
+      },
+      {
+        "phrase": "ik dacht dat ik",
+        "count": 2
+      },
+      {
+        "phrase": "dacht dat ik water",
+        "count": 2
+      },
+      {
+        "phrase": "dat ik water droeg",
+        "count": 2
+      },
+      {
+        "phrase": "ik dacht dat ik water",
+        "count": 2
+      },
+      {
+        "phrase": "dacht dat ik water droeg",
+        "count": 2
+      },
+      {
+        "phrase": "ik dacht dat ik water droeg",
+        "count": 2
+      }
+    ],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Angry Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 1,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {
+      "-ke diminutive": 2
+    },
+    "flemishTotal": 2,
+    "flemishDensity": "medium",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Trippy Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 1,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "ge/gij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Shaky Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Peek Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Blunt Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 1,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "ge/gij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Firm Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 2,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Audience Member David": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E5"
+    ]
+  },
+  "Weepy Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {
+      "-ke diminutive": 2
+    },
+    "flemishTotal": 2,
+    "flemishDensity": "medium",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Busted Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Sleepy Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {
+      "kansen": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "light",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Left Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {
+      "-ke diminutive": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "light",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Wild Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {
+      "nen/ne": 1
+    },
+    "flemishTotal": 1,
+    "flemishDensity": "light",
+    "contractions": {
+      "'k": 1
+    },
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Right Ass": {
+    "lineCount": 3,
+    "pronouns": {
+      "ge/gij": 1,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "ge/gij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10",
+      "E7"
+    ]
+  },
+  "Shifty Ass": {
+    "lineCount": 2,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 1,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Gullible Ass": {
+    "lineCount": 2,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Hairy Ass": {
+    "lineCount": 2,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 1
+    },
+    "dominantPronoun": "u",
+    "flemishMarkers": {
+      "nie": 1,
+      "zenne": 1
+    },
+    "flemishTotal": 2,
+    "flemishDensity": "medium",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Mean Ass": {
+    "lineCount": 2,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Chafed Ass": {
+    "lineCount": 2,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Audience Member Laurel": {
+    "lineCount": 2,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E5"
+    ]
+  },
+  "Security Guard Andy": {
+    "lineCount": 2,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E7"
+    ]
+  },
+  "Fresh Ass": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E4"
+    ]
+  },
+  "Elephant": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E5"
+    ]
+  },
+  "Audience Members Patrick & Milton": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E5"
+    ]
+  },
+  "Miner With No Legs": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E6"
+    ]
+  },
+  "Gloomy Ass": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 1,
+      "je/jij": 0,
+      "u": 1
+    },
+    "dominantPronoun": "mixed (ge/gij: 1, u: 1)",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E7"
+    ]
+  },
+  "Feeble Ass": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E7"
+    ]
+  },
+  "Distressed Ass": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E7"
+    ]
+  },
+  "Anxious Ass": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E7"
+    ]
+  },
+  "Tender Ass": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 1,
+      "u": 0
+    },
+    "dominantPronoun": "je/jij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E7"
+    ]
+  },
+  "Sheep": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10"
+    ]
+  },
+  "Pig": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 1,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "ge/gij",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10"
+    ]
+  },
+  "Cow": {
+    "lineCount": 1,
+    "pronouns": {
+      "ge/gij": 0,
+      "je/jij": 0,
+      "u": 0
+    },
+    "dominantPronoun": "none",
+    "flemishMarkers": {},
+    "flemishTotal": 0,
+    "flemishDensity": "zero",
+    "contractions": {},
+    "repeatedPhrases": [],
+    "inconsistencies": [],
+    "episodes": [
+      "E10"
+    ]
+  }
+}

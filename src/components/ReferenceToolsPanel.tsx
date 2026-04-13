@@ -241,11 +241,11 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
     const loadCodex = async () => {
       try {
         setIsLoadingCodex(true);
-        const response = await fetch('/api/csv-data?file=codex_translations.csv');
+        const response = await fetch('/api/codex');
         if (response.ok) {
           const data = await response.json();
-          if (data.sheets && data.sheets[0]) {
-            setCodexData(data.sheets[0].entries || []);
+          if (data.entries) {
+            setCodexData(data.entries);
           }
         }
       } catch (error) {

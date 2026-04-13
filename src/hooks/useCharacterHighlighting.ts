@@ -20,7 +20,7 @@ type CharacterEntry = CodexEntry;
  * Character/Codex Highlighting Hook - Phase 2 Enhanced
  *
  * Manages codex highlighting functionality:
- * - Loads character and location translations from codex_translations.csv
+ * - Loads character and location translations from codex JSON API
  * - Provides literal matching for names AND nicknames in source text
  * - Returns highlight data for display
  *
@@ -37,21 +37,11 @@ export const useCharacterHighlighting = () => {
   const loadCharacterData = useCallback(async () => {
     try {
       setIsLoading(true);
-      // Use codex_translations.csv which contains authoritative character/location data
-      const response = await fetch('/api/csv-data?file=codex_translations.csv');
+      const response = await fetch('/api/codex');
       if (response.ok) {
         const data = await response.json();
-        if (data.sheets && data.sheets[0]) {
-          // Parse entries and convert nicknames from semicolon-separated string to array
-          const entries = data.sheets[0].entries.map((entry: any) => ({
-            ...entry,
-            nicknames: entry.nicknames
-              ? (typeof entry.nicknames === 'string'
-                  ? entry.nicknames.split(';').map((n: string) => n.trim()).filter(Boolean)
-                  : entry.nicknames)
-              : [],
-          }));
-          setCharacterData(entries);
+        if (data.entries) {
+          setCharacterData(data.entries);
         }
       }
     } catch (error) {

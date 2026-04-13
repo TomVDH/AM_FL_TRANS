@@ -37,7 +37,7 @@ export interface HighlightMatch {
 }
 
 /**
- * Character entry from character_translations.csv
+ * Character entry from codex JSON
  */
 export interface CharacterEntry {
   name: string;

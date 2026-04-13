@@ -46,6 +46,15 @@ interface CodexEntry {
   gender?: string;
   dialogueStyle?: string;
   dutchDialogueStyle?: string;
+  // Structured voice profile fields (verified main cast)
+  flemishDensity?: string;
+  register?: string;
+  pronounForm?: string;
+  contractions?: string;
+  verbalTics?: string;
+  dynamics?: string;
+  relationships?: string;
+  note?: string;
 }
 
 interface SurroundingLine {
@@ -183,8 +192,25 @@ export async function POST(request: NextRequest) {
   if (charEntry) {
     contextParts.push(`Speaker character: ${charEntry.english} (Dutch name: ${charEntry.dutch || 'same'})`);
     if (charEntry.gender) contextParts.push(`Gender: ${charEntry.gender}`);
+
+    // Structured voice profile header (verified main cast)
+    if (charEntry.flemishDensity || charEntry.register || charEntry.pronounForm) {
+      const headerLines: string[] = [];
+      headerLines.push('CHARACTER VOICE PROFILE:');
+      if (charEntry.flemishDensity) headerLines.push(`  Flemish density: ${charEntry.flemishDensity}`);
+      if (charEntry.register) headerLines.push(`  Register: ${charEntry.register}`);
+      if (charEntry.pronounForm) headerLines.push(`  Pronoun form: ${charEntry.pronounForm}`);
+      if (charEntry.contractions && charEntry.contractions !== 'none') headerLines.push(`  Contractions: ${charEntry.contractions}`);
+      if (charEntry.verbalTics) headerLines.push(`  Verbal tics: ${charEntry.verbalTics}`);
+      if (charEntry.dynamics) headerLines.push(`  Dynamics: ${charEntry.dynamics}`);
+      if (charEntry.note) headerLines.push(`  Note: ${charEntry.note}`);
+      contextParts.push(headerLines.join('\n'));
+    }
+
+    // Legacy style fields (non-verified characters that still have them)
     if (charEntry.dialogueStyle) contextParts.push(`English speech style:\n${charEntry.dialogueStyle}`);
     if (charEntry.dutchDialogueStyle) contextParts.push(`Dutch translation style:\n${charEntry.dutchDialogueStyle}`);
+
     if (charEntry.bio) contextParts.push(`Bio: ${charEntry.bio}`);
   } else if (speaker) {
     contextParts.push(`Speaker: ${speaker}`);
