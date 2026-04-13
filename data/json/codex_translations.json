@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "generated": "2026-04-13T07:35:14.154Z",
+  "generated": "2026-04-13T07:45:05.283Z",
   "description": "Codex translations for Asses & Masses",
   "_bostrol": "Ezels spreken zacht / honderdvierenveertig stem / het werk is gedaan",
   "totalEntries": 178,
@@ -632,12 +632,20 @@
       "dutch": "-tje",
       "category": "CHARACTER",
       "nicknames": [
-        "Foal"
+        "Foal",
+        "{$NewName}"
       ],
       "bio": "Born after the fire in Episode 2, she has never known a world of Humans. She just wants to play. She's very naive.",
       "gender": "female",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'k (9x), 's (4x), da's (4x)",
+      "flemishDensity": "trace",
+      "register": "tussentaal",
+      "pronounForm": "mixed",
+      "verbalTics": "\"kijken naar mijn stenen-spel\" (recurring game request), \"wat als ik\" (hypothetical starter), amai (4x), kameraad (21x), nonkel (21x)",
+      "dynamics": "naive, playful, curious, earnest",
+      "relationships": "daughter of Sturdy Ass, born after E2 fire, never knew Humans, calls herd members Nonkel/Tante",
+      "note": "'k:9, da's:4 — light contractions. Addresses everyone as Nonkel/Tante. -ke diminutive:10. Plays 'Stenen-spel' obsessively. 267 lines across E3/E6/E9/E10."
     },
     {
       "name": "Fresh Ass",

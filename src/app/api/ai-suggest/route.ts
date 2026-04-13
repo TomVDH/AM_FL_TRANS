@@ -267,6 +267,8 @@ CHARACTER VOICE RULES:
 - If NO voice profile is provided but the speaker is known, default to light tussentaal with je/jij pronouns — a gentle Flemish middle ground
 - Only use heavy Flemish (ge/gij, nie, 'k, plat Vlaams) when the voice profile explicitly calls for it
 - Only use pure ABN/standard Dutch when the voice profile explicitly says "zero" density or "ABN" register
+- ARTICLE RULE: Flemish dialectal articles like "ne/nen" should ONLY appear for characters with heavy or medium Flemish density. The correct masculine form is "ne" (not "nen" before most nouns). For light/trace/zero characters, use standard "een". When in doubt, omit dialectal articles entirely.
+- DE-EMPHASIZE dialectal grammar for most characters. Flemish flavor comes primarily from word choice, exclamations, and sentence rhythm — not from heavy article/pronoun substitution. Reserve ge/gij, nie, ne/nen for characters whose profiles explicitly call for it.
 
 OUTPUT RULES:
 - Output ONLY the Dutch translation wrapped in <translation> tags
