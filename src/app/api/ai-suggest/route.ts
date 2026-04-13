@@ -44,9 +44,7 @@ interface CodexEntry {
   nicknames?: string[];
   bio?: string;
   gender?: string;
-  dialogueStyle?: string;
-  dutchDialogueStyle?: string;
-  // Structured voice profile fields (verified main cast)
+  // Voice profile fields
   flemishDensity?: string;
   register?: string;
   pronounForm?: string;
@@ -207,10 +205,6 @@ export async function POST(request: NextRequest) {
       contextParts.push(headerLines.join('\n'));
     }
 
-    // Legacy style fields (non-verified characters that still have them)
-    if (charEntry.dialogueStyle) contextParts.push(`English speech style:\n${charEntry.dialogueStyle}`);
-    if (charEntry.dutchDialogueStyle) contextParts.push(`Dutch translation style:\n${charEntry.dutchDialogueStyle}`);
-
     if (charEntry.bio) contextParts.push(`Bio: ${charEntry.bio}`);
   } else if (speaker) {
     contextParts.push(`Speaker: ${speaker}`);
@@ -262,25 +256,37 @@ export async function POST(request: NextRequest) {
     contextParts.push(`Current translation (for reference): ${existingTranslation}`);
   }
 
-  const prompt = `Translate this ONE English dialogue line into Dutch for the animated series "Asses & Masses" ("Ezels & Massa's") about donkeys in an allegorical society.
+  // System prompt — persistent voice rules (same for every request)
+  const systemPrompt = `You are a professional Flemish Belgian translator for "Asses & Masses" ("Ezels & Massa's"), an animated series about donkeys in an allegorical society.
 
 TRANSLATION VOICE:
-The translator is Flemish Belgian, deliberately chosen to give this Dutch translation a warm Flemish sensibility. The translation must remain fully understandable to Netherlands/Dutch audiences — Flemish is the seasoning, not a barrier. The degree of Flemish flavor varies by character: some speak heavy plat Vlaams (ge/gij, nie, 'k/'t, -ke diminutives, allez, amai), others speak clean standard Dutch, and most fall somewhere in between. This linguistic variation IS characterization — Flemish density reflects social class, community belonging, and personality.
-- If a character has a "Dutch translation style" below, follow it precisely — it defines their specific register
-- If a character has NO Dutch translation style, use clean standard Dutch with a subtle Belgian warmth — do NOT default to "ge/gij" or heavy Flemish markers. Only characters whose style explicitly calls for Flemish pronouns should use them
+You are Flemish Belgian, deliberately chosen to give this Dutch translation a warm Flemish sensibility. The translation must remain fully understandable to Netherlands/Dutch audiences — Flemish is the seasoning, not a barrier. The degree of Flemish flavor varies by character: some speak heavy plat Vlaams (ge/gij, nie, 'k/'t, -ke diminutives, allez, amai), others speak clean standard Dutch, and most fall somewhere in between. This linguistic variation IS characterization — Flemish density reflects social class, community belonging, and personality.
 
-${contextParts.length > 0 ? contextParts.join('\n\n') + '\n\n' : ''}THE LINE TO TRANSLATE:
-"${english}"
+CHARACTER VOICE RULES:
+- If a CHARACTER VOICE PROFILE is provided, follow it precisely — flemishDensity, register, pronounForm, and verbalTics define that character's exact voice
+- If NO voice profile is provided but the speaker is known, default to light tussentaal with je/jij pronouns — a gentle Flemish middle ground
+- Only use heavy Flemish (ge/gij, nie, 'k, plat Vlaams) when the voice profile explicitly calls for it
+- Only use pure ABN/standard Dutch when the voice profile explicitly says "zero" density or "ABN" register
 
-RULES:
+OUTPUT RULES:
 - Output ONLY the Dutch translation wrapped in <translation> tags
 - No explanation, no commentary, no alternatives, no preamble
 - Match the character's established Dutch voice and register
 - Preserve tone, humor, wordplay, and verbal tics
 - Keep sound effects as-is or use Dutch equivalent (*cough* → *kuch*, *sigh* → *zucht*)
-- Translate ONLY the line above — ignore any similarity to context lines
+- Translate ONLY the line provided — ignore any similarity to context lines`;
 
-<translation>your Dutch translation here</translation>`;
+  // User message — per-line context
+  const userParts: string[] = [];
+
+  if (contextParts.length > 0) {
+    userParts.push(contextParts.join('\n\n'));
+  }
+
+  userParts.push(`THE LINE TO TRANSLATE:\n"${english}"`);
+  userParts.push('<translation>your Dutch translation here</translation>');
+
+  const userMessage = userParts.join('\n\n');
 
   try {
     const client = new Anthropic({ apiKey, timeout: 40_000 }); // 40s timeout
@@ -290,7 +296,8 @@ RULES:
     const response = await client.messages.create({
       model: modelId,
       max_tokens: maxTokens,
-      messages: [{ role: 'user', content: prompt }]
+      system: systemPrompt,
+      messages: [{ role: 'user', content: userMessage }]
     });
 
     const apiDuration = ((Date.now() - apiStart) / 1000).toFixed(1);

@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "generated": "2026-04-13T04:05:53.000Z",
+  "generated": "2026-04-13T07:35:14.154Z",
   "description": "Codex translations for Asses & Masses",
   "_bostrol": "Ezels spreken zacht / honderdvierenveertig stem / het werk is gedaan",
   "totalEntries": 178,
@@ -17,7 +17,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "medium",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "note": "markers: -ke diminutive:2; niet only"
     },
     {
       "name": "Anxious Ass",
@@ -31,7 +35,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Melvin",
@@ -46,7 +53,11 @@
       "gender": "male",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "note": "markers: -ke diminutive:2; niet only"
     },
     {
       "name": "Wedgie",
@@ -61,7 +72,12 @@
       "gender": "female",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "trace",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "verbalTics": "\"hier is uw\" x2, \"is uw geld\" x2, \"hier is uw geld\" x2",
+      "note": "markers: allez:1; niet only"
     },
     {
       "name": "Audience Member David",
@@ -119,8 +135,8 @@
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
       "flemishDensity": "heavy",
-      "register": "tussentaal",
-      "pronounForm": "ge/gij",
+      "register": "plat Vlaams",
+      "pronounForm": "mixed",
       "contractions": "none",
       "verbalTics": "Laat mij gerust (recurring dismissal), 'k Veronderstel (grudging concession ×2), godverdomme (profanity peak), Eindelijk! (payoff/release ×2 in E6)",
       "dynamics": "cynical, philosophical, intellectual, isolated",
@@ -162,7 +178,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "note": "niet only"
     },
     {
       "name": "Bleak Ass",
@@ -176,7 +196,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "formeel ABN",
+      "pronounForm": "u"
     },
     {
       "name": "Blunt Ass",
@@ -190,7 +213,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "ge/gij"
     },
     {
       "name": "Broken Ass",
@@ -204,7 +230,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Busted Ass",
@@ -218,7 +247,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "CarMachine",
@@ -244,7 +276,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Child Joey",
@@ -259,7 +294,11 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "trace",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "note": "markers: -ke diminutive:1; niet only"
     },
     {
       "name": "Child Joey Kulan",
@@ -273,7 +312,11 @@
       "bio": "A small boy who is also a great artist. He visits the Fannyside Farm to see the donkeys with his grandmother. Every year he plays baby Jesus in the nativity play in the Bumpkin church. He is killed in the fire of Ep2.",
       "gender": "male",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "trace",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "note": "markers: -ke diminutive:1; niet only"
     },
     {
       "name": "Cole Butte  ColeMachine",
@@ -287,7 +330,12 @@
       "bio": "Always a rebel and a bit jaded by being left behind by his mother at a young age. A robotics-wiz, he dreamed of going to Mecha City to make a difference in the world through science. He was forced to work in the mine after graduating. Became depressed after his father wasted his scholarship money. In the cave-in, he tries to save Lazy and when Lazy tries to 'send' herself, Cole's soul is sent to the Astral Plane, only to be rejected and return to his body, ultimately and mysteriously, transforming his body into that of a donkey.",
       "gender": "male",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'k (19x), 's (1x)",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "verbalTics": "\"de burgers van\" x4, \"burgers van mechalen\" x4, \"de burgers van mechalen\" x4, godverdomme (13x)",
+      "note": "'k:19, 's:1; markers: godver:16, nie:8, da:7, nen/ne:6; negation: nie:8 niet:21"
     },
     {
       "name": "Cole-Machine",
@@ -300,7 +348,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'k (19x), 's (1x)",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "verbalTics": "\"de burgers van\" x4, \"burgers van mechalen\" x4, \"de burgers van mechalen\" x4, godverdomme (13x)",
+      "note": "'k:19, 's:1; markers: godver:16, nie:8, da:7, nen/ne:6; negation: nie:8 niet:21"
     },
     {
       "name": "Cool Ass",
@@ -326,7 +379,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "note": "niet only"
     },
     {
       "name": "Cranky Ass",
@@ -367,7 +424,11 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "verbalTics": "\"de lange weg\" x4, \"lange weg naar\" x4, \"weg naar t\" x4"
     },
     {
       "name": "Dirty Ass",
@@ -395,7 +456,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "verbalTics": "\"vanscheetvelde industrie en\" x4, \"industrie en kolen\" x4, \"vanscheetvelde industrie en kolen\" x4"
     },
     {
       "name": "Distressed Ass",
@@ -409,7 +474,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "DJ Dope Ass",
@@ -424,7 +492,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "mixed",
+      "verbalTics": "\"dat paarse spul\" x5, \"van dat paarse\" x4, \"van dat paarse spul\" x4",
+      "note": "niet only"
     },
     {
       "name": "Radio Host Marcos",
@@ -450,7 +523,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "mixed"
     },
     {
       "name": "Edgy Ass",
@@ -464,7 +540,12 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'s (1x), da's (1x)",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "none",
+      "verbalTics": "\"de mensen dat\" x3, \"mensen dat ze\" x3, \"de mensen dat ze\" x3",
+      "note": "'s:1, da's:1; markers: da:2, nie:1; nie only"
     },
     {
       "name": "Elephant",
@@ -492,7 +573,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Fancy Sign",
@@ -506,7 +590,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "verbalTics": "\"de piekfijne molen\" x3, \"piekfijne molen met\" x2, \"molen met graanopslag\" x2"
     },
     {
       "name": "Feeble Ass",
@@ -520,7 +608,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "FlyingMachine",
@@ -560,7 +651,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Furry Ass",
@@ -574,7 +668,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "note": "markers: goesting:1; niet only"
     },
     {
       "name": "Gaunt Ass",
@@ -588,7 +686,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "ge/gij"
     },
     {
       "name": "Gloomy Ass",
@@ -602,7 +703,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "ge/gij",
+      "note": "niet only"
     },
     {
       "name": "Golden Ass",
@@ -617,7 +722,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'s (1x)",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "verbalTics": "\"wij zullen een\" x3, \"dat is niet\" x3, \"het astrale hiernamaals\" x2",
+      "note": "'s:1; markers: -ke diminutive:11; niet only"
     },
     {
       "name": "Grandma Kulan",
@@ -632,7 +742,12 @@
       "gender": "female",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "none",
+      "verbalTics": "\"kom we gaan\" x2",
+      "note": "markers: -ke diminutive:2; niet only"
     },
     {
       "name": "Greedy Ass",
@@ -647,7 +762,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "verbalTics": "\"laat maar zitten\" x3, \"maar zitten jong\" x3, \"laat maar zitten jong\" x3",
+      "note": "niet only"
     },
     {
       "name": "Gullible Ass",
@@ -661,7 +781,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Hairy Ass",
@@ -675,7 +798,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "medium",
+      "register": "tussentaal",
+      "pronounForm": "u",
+      "note": "markers: nie:1, zenne:1; nie only"
     },
     {
       "name": "Happy Ass",
@@ -690,7 +817,11 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "note": "niet only"
     },
     {
       "name": "Hard Ass",
@@ -729,7 +860,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'s (4x)",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "verbalTics": "\"nee jammer moest\" x2, \"jammer moest je\" x2, \"moest je terug\" x2",
+      "note": "'s:4; niet only"
     },
     {
       "name": "Haul Ass",
@@ -756,7 +892,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "formeel ABN",
+      "pronounForm": "u",
+      "verbalTics": "\"de materiële wereld\" x2",
+      "note": "niet only"
     },
     {
       "name": "Healthy Ass",
@@ -783,7 +924,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "trace",
+      "register": "ABN",
+      "pronounForm": "ge/gij",
+      "verbalTics": "\"ezel stap naar\" x2, \"stap naar voren\" x2, \"ezel stap naar voren\" x2",
+      "note": "markers: -ke diminutive:1; niet only"
     },
     {
       "name": "Helpful Ass",
@@ -798,7 +944,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'k (15x)",
+      "flemishDensity": "medium",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "verbalTics": "\"wil de t\" x3, \"wa da er\" x3, \"da we zóveel\" x2",
+      "note": "'k:15; markers: da:12, nen/ne:7, nie:4, -ke diminutive:3; nie only"
     },
     {
       "name": "Historic Sign",
@@ -812,7 +963,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "verbalTics": "\"de bron van\" x4, \"bron van yafur\" x4, \"de bron van yafur\" x4"
     },
     {
       "name": "Hugh G Butte",
@@ -852,7 +1007,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "note": "niet only"
     },
     {
       "name": "Kick Ass",
@@ -913,7 +1072,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "none",
+      "note": "markers: -ke diminutive:1; niet only"
     },
     {
       "name": "Lofty Ass",
@@ -927,7 +1090,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "none",
+      "note": "markers: -ke diminutive:1; niet only"
     },
     {
       "name": "Mad Ass",
@@ -941,7 +1108,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "verbalTics": "\"ik dacht dat\" x2, \"dacht dat ik\" x2, \"dat ik water\" x2"
     },
     {
       "name": "Mean Ass",
@@ -955,7 +1126,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "note": "niet only"
     },
     {
       "name": "Mellow Ass",
@@ -969,7 +1144,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij"
     },
     {
       "name": "Miner Jenny",
@@ -984,7 +1162,11 @@
       "gender": "female",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "note": "niet only"
     },
     {
       "name": "Miner With No Legs",
@@ -998,7 +1180,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Mme. Derriere",
@@ -1011,7 +1196,12 @@
       "gender": "female",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "trace",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "verbalTics": "\"mijn fabriek zijn\" x2, \"het lijkt me\" x2, \"lijkt me dat\" x2",
+      "note": "markers: -ke diminutive:2; niet only"
     },
     {
       "name": "Mr. Butte",
@@ -1026,7 +1216,11 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "note": "niet only"
     },
     {
       "name": "Nice Ass",
@@ -1064,7 +1258,12 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "heavy",
+      "register": "plat Vlaams",
+      "pronounForm": "none",
+      "verbalTics": "\"stedelijke en landelijke\" x4, \"niew overheids-gesubsidiëerde snelweg\" x3, \"overheids-gesubsidiëerde snelweg brengt\" x3",
+      "note": "markers: -ke diminutive:8"
     },
     {
       "name": "Old Ass",
@@ -1101,7 +1300,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Peek Ass",
@@ -1115,7 +1317,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "note": "niet only"
     },
     {
       "name": "Pig",
@@ -1127,7 +1333,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "ge/gij"
     },
     {
       "name": "Proper Ass",
@@ -1142,7 +1351,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "trace",
+      "register": "formeel ABN",
+      "pronounForm": "u",
+      "verbalTics": "\"waar de mensen\" x2, \"de mensen hun\" x2, \"mensen hun beslissingen\" x2",
+      "note": "markers: -ke diminutive:1; niet only"
     },
     {
       "name": "ProphetMachine F",
@@ -1185,7 +1399,11 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "trace",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "note": "markers: -ke diminutive:1; niet only"
     },
     {
       "name": "Resentful Ass",
@@ -1199,7 +1417,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "ge/gij",
+      "note": "niet only"
     },
     {
       "name": "Right Ass",
@@ -1213,7 +1435,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "ge/gij"
     },
     {
       "name": "Ringmaster Rico",
@@ -1242,7 +1467,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij"
     },
     {
       "name": "Sad Ass",
@@ -1294,7 +1522,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Sheep",
@@ -1306,7 +1537,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Shifty Ass",
@@ -1320,7 +1554,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij"
     },
     {
       "name": "Shitty Sign",
@@ -1334,7 +1571,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none"
     },
     {
       "name": "Sick Ass",
@@ -1370,7 +1610,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "verbalTics": "\"welkom op de\" x4, \"op de boerderij\" x4, \"de boerderij van\" x4"
     },
     {
       "name": "Skinny Ass",
@@ -1384,7 +1628,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'s (1x)",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "mixed",
+      "note": "'s:1; niet only"
     },
     {
       "name": "Sleepy Ass",
@@ -1398,7 +1646,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "note": "niet only"
     },
     {
       "name": "Slow Ass",
@@ -1459,7 +1711,12 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'s (2x)",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "mixed",
+      "verbalTics": "\"dj lijpe ezels\" x2",
+      "note": "'s:2"
     },
     {
       "name": "Sturdy Ass",
@@ -1497,7 +1754,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij"
     },
     {
       "name": "TankMachine",
@@ -1523,7 +1783,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "note": "niet only"
     },
     {
       "name": "THE GODS",
@@ -1537,7 +1801,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "formeel ABN",
+      "pronounForm": "u"
     },
     {
       "name": "The Masses",
@@ -1552,7 +1819,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "verbalTics": "\"trouwe zak waar\" x2",
+      "note": "niet only"
     },
     {
       "name": "Thirsty Ass",
@@ -1569,7 +1841,7 @@
       "dutchDialogueStyle": "",
       "flemishDensity": "heavy",
       "register": "plat Vlaams",
-      "pronounForm": "ge/gij",
+      "pronounForm": "mixed",
       "contractions": "none",
       "verbalTics": "héé (sentence-final, almost every line), JIE-HAAA! (YEEHAW), godver(domme), doeme/gedoemme, amai, *oef*, allez, sie",
       "dynamics": "lecherous, positive, older, easy-going",
@@ -1589,7 +1861,12 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'s (1x)",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "verbalTics": "\"het astrale hiernamaals\" x2",
+      "note": "'s:1; niet only"
     },
     {
       "name": "Total Ass",
@@ -1603,7 +1880,12 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "verbalTics": "\"dat waren de\" x2, \"waren de dagen\" x2, \"dat waren de dagen\" x2",
+      "note": "niet only"
     },
     {
       "name": "TractorMachine",
@@ -1629,7 +1911,12 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "verbalTics": "\"moeten stoppen met\" x3, \"de mensen moeten\" x2, \"mensen moeten stoppen\" x2",
+      "note": "niet only"
     },
     {
       "name": "Trippy Ass",
@@ -1643,7 +1930,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "ge/gij"
     },
     {
       "name": "TruckMachine",
@@ -1692,7 +1982,10 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "je/jij"
     },
     {
       "name": "Warning Sign",
@@ -1706,7 +1999,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "verbalTics": "\"364 dagen sinds\" x4, \"dagen sinds laatste\" x4, \"sinds laatste mijn-ongeval\" x4"
     },
     {
       "name": "Weepy Ass",
@@ -1720,7 +2017,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "medium",
+      "register": "tussentaal",
+      "pronounForm": "none",
+      "note": "markers: -ke diminutive:2"
     },
     {
       "name": "Welcome Sign",
@@ -1735,7 +2036,11 @@
       "gender": "",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "zero",
+      "register": "ABN",
+      "pronounForm": "none",
+      "verbalTics": "\"welkom op de\" x4, \"op de boerderij\" x4, \"de boerderij van\" x4"
     },
     {
       "name": "Wild Ass",
@@ -1749,7 +2054,11 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'k (1x)",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "none",
+      "note": "'k:1; markers: nen/ne:1"
     },
     {
       "name": "Zookeeper Rose",
@@ -1764,7 +2073,12 @@
       "gender": "female",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "flemishDensity": "trace",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "verbalTics": "\"van de week\" x8, \"ezel van de\" x7, \"ezel van de week\" x7",
+      "note": "markers: -ke diminutive:12, amai:1; niet only"
     },
     {
       "name": "Astral Plane",
@@ -2261,7 +2575,12 @@
       "bio": "",
       "gender": "",
       "dialogueStyle": "",
-      "contractions": "none"
+      "contractions": "'s (1x), da's (1x)",
+      "flemishDensity": "trace",
+      "register": "ABN",
+      "pronounForm": "je/jij",
+      "verbalTics": "\"ik denk dat\" x4, \"iemand zei me\" x3, \"zei me ooit\" x3, zucht (6x), hee (3x), kameraad:5",
+      "note": "'s:1, da's:1; markers: nie:5, -ke diminutive:5, da:4; negation: nie:5 niet:19"
     },
     {
       "name": "Fire",
