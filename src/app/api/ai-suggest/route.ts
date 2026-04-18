@@ -79,6 +79,54 @@ interface SuggestRequest {
   useCorpus?: boolean;
 }
 
+/**
+ * Strip wrapping quotes from the model's output.
+ *
+ * Quotes INSIDE the sentence are preserved (reported speech). Only quote
+ * characters that wrap the entire line are stripped, and only if the source
+ * English wasn't wrapped in the same kind of quote — that way we never lose
+ * an intentional outer quote.
+ *
+ * Handles: " " ' ' " " ' ' « » „ " ‚ ' (straight, curly, guillemets, German).
+ * Runs up to 2 passes to catch double-wrapped cases.
+ */
+function stripWrappingQuotes(out: string, source: string): string {
+  const pairs: Array<[string, string[]]> = [
+    ['"', ['"']],
+    ["'", ["'"]],
+    ['\u201C', ['\u201D']],        // " "
+    ['\u2018', ['\u2019']],        // ' '
+    ['\u00AB', ['\u00BB']],        // « »
+    ['\u201E', ['\u201C', '\u201D']], // „ " / „ "
+    ['\u201A', ['\u2019', '\u2018']], // ‚ ' / ‚ '
+  ];
+  const sourceWrapped = (s: string) => {
+    const t = s.trim();
+    if (t.length < 2) return false;
+    for (const [open, closes] of pairs) {
+      if (t[0] === open && closes.includes(t[t.length - 1])) return true;
+    }
+    return false;
+  };
+  const sourceHadWrap = sourceWrapped(source);
+  let current = out.trim();
+  for (let pass = 0; pass < 2; pass++) {
+    if (current.length < 2) break;
+    let stripped = false;
+    for (const [open, closes] of pairs) {
+      if (current[0] === open && closes.includes(current[current.length - 1])) {
+        // Preserve wrapping if source had the same kind of wrap
+        if (sourceHadWrap && pass === 0) return current;
+        current = current.slice(1, -1).trim();
+        stripped = true;
+        break;
+      }
+    }
+    if (!stripped) break;
+  }
+  return current;
+}
+
 let codexCache: { entries: CodexEntry[]; loadedAt: number } | null = null;
 
 async function getCodex(): Promise<CodexEntry[]> {
@@ -272,6 +320,8 @@ CHARACTER VOICE RULES:
 
 OUTPUT RULES:
 - Output ONLY the Dutch translation wrapped in <translation> tags
+- NEVER wrap the translation in quotation marks of any kind — not straight ("…"), not curly (“…”), not single ('…' / ‘…’), not guillemets («…»), not low-high German («…»), not any variant. The <translation> tags are the only wrapper. If the source line happens to start or end with a quote character, still do not add wrapping quotes around the translation.
+- Preserve quotes that appear INSIDE the line (e.g. a reported sub-quote: EN: He said "no." → NL: Hij zei "nee."). Only the outer wrapping is forbidden.
 - No explanation, no commentary, no alternatives, no preamble
 - Match the character's established Dutch voice and register
 - Preserve tone, humor, wordplay, and verbal tics
@@ -285,8 +335,8 @@ OUTPUT RULES:
     userParts.push(contextParts.join('\n\n'));
   }
 
-  userParts.push(`THE LINE TO TRANSLATE:\n"${english}"`);
-  userParts.push('<translation>your Dutch translation here</translation>');
+  userParts.push(`THE LINE TO TRANSLATE (the text between the === markers is the line itself, without any wrapping quotes):\n===\n${english}\n===`);
+  userParts.push('Emit your Dutch translation inside <translation>…</translation>. Do NOT add wrapping quotes of any kind around the translation.');
 
   const userMessage = userParts.join('\n\n');
 
@@ -311,7 +361,10 @@ OUTPUT RULES:
 
     // Extract from <translation> tags, fall back to raw text
     const tagMatch = rawText.match(/<translation>([\s\S]*?)<\/translation>/);
-    const suggestion = tagMatch ? tagMatch[1].trim() : rawText.replace(/<\/?translation>/g, '').trim();
+    const extracted = tagMatch ? tagMatch[1].trim() : rawText.replace(/<\/?translation>/g, '').trim();
+    // Strip wrapping quotes the model may have sneaked in (straight, curly, guillemets, …)
+    // Preserves INNER quotes and any legitimate wrap that was already in the source.
+    const suggestion = stripWrappingQuotes(extracted, english);
 
     requestCounter++;
     const jsonResp = NextResponse.json({ suggestion, model: modelTier });
