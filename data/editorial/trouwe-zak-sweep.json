@@ -1,0 +1,87 @@
+{
+  "character": "(cross-character sweep)",
+  "rules_applied": [
+    "trouweZakDeprecation: 'Trouwe Zak' removed from valid forms for Trusty Ass. Replace with Trouwe Ezel (formal / full-name / memorial register) or Trouwe (casual / intimate) per line context."
+  ],
+  "generated": "2026-04-20",
+  "corrections": [
+    {
+      "id": "TZ-1",
+      "rationale": "Old Ass casual address + Kameraad particle → Trouwe (intimate)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable1F_localization",
+      "cell": "J3",
+      "speaker": "Old Ass",
+      "english": "...  ...  Trusty Ass? Comrade, are you listening?",
+      "current_nl": "H\u00e8 Trouwe Zak? Kameraad, hoor je me?",
+      "proposed_nl": "H\u00e8 Trouwe? Kameraad, hoor je me?"
+    },
+    {
+      "id": "TZ-2",
+      "rationale": "Sturdy Ass goodnight, affectionate → Trouwe (intimate)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable1F_localization",
+      "cell": "J28",
+      "speaker": "Sturdy Ass",
+      "english": "Goodnight Trusty! You really care about the Herd and it shows.",
+      "current_nl": "Goeie nacht, Trouwe Zak. Je zit met onze Kudde in en dat zien we.",
+      "proposed_nl": "Goeie nacht, Trouwe. Je zit met onze Kudde in en dat zien we."
+    },
+    {
+      "id": "TZ-3",
+      "rationale": "Kick Ass meeting/exclamation → Trouwe (casual greeting)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J93",
+      "speaker": "Kick Ass",
+      "english": "You must be TRUSTY!",
+      "current_nl": "Jij moet Trouwe Zak zijn!",
+      "proposed_nl": "Jij moet Trouwe zijn!"
+    },
+    {
+      "id": "TZ-4",
+      "rationale": "The Masses address, EN 'Trusty Ass' full form → Trouwe Ezel (formal)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J122",
+      "speaker": "The Masses",
+      "english": "Trusty Ass? Where are you going? The Village isn't that way.",
+      "current_nl": "Trouwe Zak? Waar loop jij naartoe? Het dorp is niet die kant uit.",
+      "proposed_nl": "Trouwe Ezel? Waar loop jij naartoe? Het dorp is niet die kant uit."
+    },
+    {
+      "id": "TZ-5",
+      "rationale": "The Masses address, EN 'Trusty Ass!' full form → Trouwe Ezel (formal)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J127",
+      "speaker": "The Masses",
+      "english": "Trusty Ass! Where are you going?",
+      "current_nl": "Trouwe Zak! Waar ga jij heen?",
+      "proposed_nl": "Trouwe Ezel! Waar ga jij heen?"
+    },
+    {
+      "id": "TZ-6",
+      "rationale": "Hard Ass dismissal of old leadership, EN 'Trusty Ass' full form → Trouwe Ezel (formal)",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J20",
+      "speaker": "Hard Ass",
+      "english": "Old Ass and Trusty Ass were not cut out for the role of leader. They were too soft.",
+      "current_nl": "Oude Zak en Trouwe Zak waren niet geschikt voor het leiderschap. Ze zijn te soft.",
+      "proposed_nl": "Oude Zak en Trouwe Ezel waren niet geschikt voor het leiderschap. Ze zijn te soft.",
+      "note": "Oude Zak kept as-is for now — Old Ass codex pass will resolve that later."
+    },
+    {
+      "id": "TZ-7",
+      "rationale": "Big Ass reverent memorial 'Song of Ascension for Trusty' → Trouwe Ezel (formal memorial, matches Slow S-2 precedent)",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J43",
+      "speaker": "Big Ass",
+      "english": "Slow Ass should stay behind and sing the Song of Ascension for Trusty.",
+      "current_nl": "Slome Ezel moet achterblijven en het ezelenhemelvaartszangderzielen aan Trouwe Zak voordragen.",
+      "proposed_nl": "Slome Ezel moet achterblijven en het ezelenhemelvaartszangderzielen aan Trouwe Ezel voordragen."
+    }
+  ]
+}

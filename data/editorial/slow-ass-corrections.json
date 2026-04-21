@@ -1,0 +1,73 @@
+{
+  "character": "Slow Ass",
+  "canonical_nl": "Slome Ezel",
+  "rules_applied": [
+    "negationRule: nie → niet (Slow never uses nie)",
+    "placeholderLeakFix: English 'Trusty' untranslated in NL",
+    "trouweZakDeprecation: Trouwe Zak is no longer used; replace with Trouwe (casual/intimate) or Trouwe Ezel (formal/memorial) depending on context",
+    "stutterPreservation: all stutter hyphens (b-, z-, g-, p-, d-, etc.) preserved in corrections"
+  ],
+  "generated": "2026-04-20",
+  "corrections": [
+    {
+      "id": "S-1",
+      "rationale": "negationRule: nie → niet",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "speaker": "Slow Ass",
+      "english": "I'd love to b-but... I don’t think I can p-play that game of yours.",
+      "current_nl": "Graag, m-maar... ik denk nie dat ik uw s-spel kan spelen.",
+      "proposed_nl": "Graag, m-maar... ik denk niet dat ik uw s-spel kan spelen.",
+      "cell": "J121",
+      "key": "SAY.Dialog:Slow.22.Slow Ass"
+    },
+    {
+      "id": "S-2",
+      "rationale": "Trusty (EN leak) → Trouwe Ezel (formal memorial register matches 'u deed geloven in uzelf')",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "speaker": "Slow Ass",
+      "english": "Trusty was the kind of leader who made you b-believe in yourself.",
+      "current_nl": "Trusty was zo’n leider die u deed g-geloven in uzelf.",
+      "proposed_nl": "Trouwe Ezel was zo’n leider die u deed g-geloven in uzelf.",
+      "cell": "J125",
+      "key": "SAY.Dialog:Slow.12.Slow Ass"
+    },
+    {
+      "id": "S-3",
+      "rationale": "Trouwe Zak deprecation → Trouwe (casual/affectionate greeting)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "speaker": "Slow Ass",
+      "english": "Trusty! I'm so p-pleased to see you!",
+      "current_nl": "Trouwe Zak! Ik b-ben zo blij je te z-zien!",
+      "proposed_nl": "Trouwe! Ik b-ben zo blij je te z-zien!",
+      "cell": "J34",
+      "key": "SAY.Dialog:SlowWoodQuest.1.Slow Ass"
+    },
+    {
+      "id": "S-4",
+      "rationale": "Trouwe Zak deprecation → Trouwe (intimate farewell)",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "speaker": "Slow Ass",
+      "english": "Goodb-bye Trusty...",
+      "current_nl": "Tot z-ziens Trouwe Zak...",
+      "proposed_nl": "Tot z-ziens Trouwe...",
+      "cell": "J48",
+      "key": "SAY.Dialog:SlowB1.28.Slow Ass"
+    },
+    {
+      "id": "S-5",
+      "rationale": "Trouwe Zak deprecation → Trouwe (intimate memorial reference in casual conditional)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "speaker": "Slow Ass",
+      "english": "If Trusty were around, she'd by right b-b-by your side.",
+      "current_nl": "Moest Trouwe Zak hier zijn, zou ze z-z-z-zo bij ons staan.",
+      "proposed_nl": "Moest Trouwe hier zijn, zou ze z-z-z-zo bij ons staan.",
+      "cell": "J14",
+      "key": "SAY.Dialog:SickSlow.12.Slow Ass"
+    }
+  ]
+}

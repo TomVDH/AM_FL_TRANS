@@ -1,0 +1,85 @@
+{
+  "character": "Trusty Ass",
+  "canonical_nl": "Trouwe Ezel",
+  "rules_applied": [
+    "inboundAddressRule: Nice Ass says bare 'Trusty' → must be 'Trouwtje' (narrow scope)",
+    "inboundAddressRule: any 'Trusty Ass' full form → canonical 'Trouwe Ezel'",
+    "pronounRule: u → jou for Trusty Ass's own speech (light/tussentaal/jij-je)",
+    "placeholderLeakFix: '(Trusty Ass)' wrapper left by unresolved substitution"
+  ],
+  "generated": "2026-04-20",
+  "corrections": [
+    {
+      "id": "T-1",
+      "rationale": "Nice→Trusty bare rule",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Plowing_localization",
+      "cell": "J5",
+      "key": "SAY.Dialog:FinishLines.2.Nice Ass",
+      "speaker": "Nice Ass",
+      "english": "Gosh! You're amazing Trusty!",
+      "current_nl": "Wauw, jij kan er wat van Trouwe!",
+      "proposed_nl": "Wauw, jij kan er wat van Trouwtje!"
+    },
+    {
+      "id": "T-2",
+      "rationale": "Nice→Trusty bare rule",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J23",
+      "key": "SAY.Dialog:PickUpNice.11.Nice Ass",
+      "speaker": "Nice Ass",
+      "english": "You're right Trusty! Accidents happen all the time!",
+      "current_nl": "Je hebt gelijk, Trouwe! Ongelukken gebeuren nu eenmaal!",
+      "proposed_nl": "Je hebt gelijk, Trouwtje! Ongelukken gebeuren nu eenmaal!"
+    },
+    {
+      "id": "T-3",
+      "rationale": "Nice→Trusty bare rule",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J63",
+      "key": "SAY.Dialog:3_Dialog: HesitationAtGate.22.Nice Ass",
+      "speaker": "Nice Ass",
+      "english": "Trusty?",
+      "current_nl": "Trouwe?",
+      "proposed_nl": "Trouwtje?"
+    },
+    {
+      "id": "T-4",
+      "rationale": "'Trusty Ass' full form → canonical; also placeholder leak repair",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J34",
+      "key": "SAY.Dialog:Confession.89.Nice Ass",
+      "speaker": "Nice Ass",
+      "english": "Trusty Ass fell down the well trying to get water...and died.",
+      "current_nl": "(Trusty Ass) viel in de waterput toen ie water ging halen... Hij is dood.",
+      "proposed_nl": "Trouwe Ezel viel in de waterput toen ie water ging halen... Hij is dood."
+    },
+    {
+      "id": "T-5",
+      "rationale": "'Trusty Ass' full form → canonical; also untranslated EN leak repair",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J47",
+      "key": "SAY.Dialog:TunnelNiceSadPrivate.49.Nice Ass",
+      "speaker": "Nice Ass",
+      "english": "And Trusty Ass... poor Trusty Ass.",
+      "current_nl": "En Trusty... arme Trusty.",
+      "proposed_nl": "En Trouwe Ezel... arme Trouwe Ezel."
+    },
+    {
+      "id": "T-6",
+      "rationale": "u→jou (Trusty's own pronoun profile is jij/je, not u)",
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_SanctumMain_localization",
+      "cell": "J42",
+      "key": "SAY.Dialog:TrustyTips.21.Trusty Ass",
+      "speaker": "Trusty Ass",
+      "english": "Come on Sick! I'm counting on you!",
+      "current_nl": "Kom op Snot! Ik reken op u!",
+      "proposed_nl": "Kom op Snot! Ik reken op jou!"
+    }
+  ]
+}

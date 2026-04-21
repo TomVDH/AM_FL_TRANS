@@ -1,0 +1,167 @@
+index,episode,sheet,speaker,english,dutch
+1,E1,E1_Farm_localization,Slow Ass,Trusty! I'm so p-pleased to see you!,Trouwe Zak! Ik b-ben zo blij je te z-zien!
+2,E1,E1_Farm_localization,Slow Ass,Thanks for convincing Old Ass to p-p-put me on b-bridge duty.,B-bedankt om Ouwe Zak te overtuigen van het b-bruggetje aan mij over te laten.
+3,E1,E1_Farm_localization,Slow Ass,I think you're the only one who b-believes in me.,Ik denk dat jij de enige bent die in me g-gelooft.
+4,E1,E1_Farm_localization,Slow Ass,...,...
+5,E1,E1_Farm_localization,Slow Ass,I have a b-bit of a p-problem though.,Ik zit wel met een p-probleempje.
+6,E1,E1_Farm_localization,Slow Ass,I've run out of wood and need more to finish fixing the b-bridge b-before the P-Protest.,Ik z-zit zonder hout en ik heb meer nodig om het b-bruggetje te repareren voor het p-p-protest.
+7,E1,E1_Farm_localization,Slow Ass,"If Smart Ass finds out I'm b-behind schedule,  she'll tear me a new one.","Als Betweter te horen krijgt dat ik te laat k-klaar zal zijn, geeft z-ze me vast onder mijn hoeven."
+8,E1,E1_Farm_localization,Slow Ass,Can you b-bring me some more wood p-please?,K-kan jij alsjeblieft wat meer hout gaan h-halen?
+9,E1,E1_Farm_localization,Slow Ass,Our p-panniers from the old days should still b-be in the Mill.,Onze oude z-z-zadel z-z-zakken moeten in de Molen liggen.
+10,E1,E1_Farm_localization,Slow Ass,I'm p-pretty sure the old p-panniers are still in the Mill.,Ik b-ben er z-zeker van dat de z-zakken in de Molen liggen.
+11,E1,E1_Farm_localization,Slow Ass,You found the p-panniers! The wood I need is at the end of the road to the west.,"Je hebt de z-zakken gevonden! Het h-hout ligt wat verderop de weg, naar het w-w-westen toe."
+12,E1,E1_Farm_localization,Slow Ass,Thanks Trusty. I don't know what I'd do without you.,"Bedankt Trouwe, ik w-weet niet wat z-zonder je te doen."
+13,E1,E1_Farm_localization,Slow Ass,P-Please don't tell Smart Ass I'm b-behind schedule!,Zeg a-alsjeblieft niet tegen B-Betweter dat ik niet z-zo op schema zit.
+14,E1,E1_TheProtest_localization,Slow Ass,Sorry Comrades. I've been doing my b-best.,"Sorry, k-kameraden. Ik p-probeer mijn best te d-doen."
+15,E1,E1_TheProtest_localization,Slow Ass,I stayed up all night b-but haven't finished fixing the b-bridge yet.,Ik b-ben de h-hele nacht opgebleven m-maar de b-brug is nog niet klaar.
+16,E1,E1_TheProtest_localization,Slow Ass,*p-phew*,*oe-oef*
+17,E1,E1_TheProtest_localization,Slow Ass,The long way? Okay... b-but I won't b-be able to move as fast as everyone else due to my p-painful arthritis...,De l-lange weg? Oké maar vergeet niet dat ik z-zo snel niet kan met m-mijn pijnlijke artrose.
+18,E1,E1_TheProtest_localization,Slow Ass,B-but I p-promise I'll do my b-b-best!,M-maar ik beloof d-dat ik mijn b-best zal d-doen!
+19,E1,E1_TheProtest_localization,Slow Ass,P-please everyone! Trusty will know what to do!,"K-kalmeer, iedereen! Trouwe w-w-weet wel wat te doen."
+20,E1,E1_TheProtest_localization,Slow Ass,Right Trusty?,"T-t-toch, T-t-trouwe?"
+21,E1,E1_TheProtest_localization,Slow Ass,{s}{s=5}COMRADE!!! {/s},{s}{s=5}KAMERAAD! {/s}
+22,E2,E2_World_A1_localization,Slow Ass,COMRADE!!!!!!!,KAMERAAD!!!!
+23,E2,E2_World_A1_localization,Slow Ass,Trusty? Trusty!? P-p-please don't leave us!,Trouwe? Trouwe? L-laat ons nu n-niet achter!
+24,E2,E2_World_A1_localization,Slow Ass,*sniff* Is there a P-Plan C?,*snuf snuf* Is er dan een p-plan C?
+25,E2,E2_World_A1_localization,Slow Ass,B-but what about Trusty?,M-maar wat d-dan met Trouwe?
+26,E2,E2_World_B1_localization,Slow Ass,*p-phew*,*oe-oef*
+27,E2,E2_World_B1_localization,Slow Ass,And I'll sing the Song of Ascension for Trusty.,En ik zal de Ezelenhemelvaartszangderzielen voor Trouwe zingen.
+28,E2,E2_World_B1_localization,Slow Ass,Ass P-Power?,Ezel M-macht?
+29,E2,E2_World_B1_localization,Slow Ass,Goodb-bye Trusty...,Tot z-ziens Trouwe Zak...
+30,E2,E2_World_B1_localization,Slow Ass,{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color},{color=yellow}{s=5}♪ hee haw hi hon 'ee ah he a'w ♪{/s}{/color}
+31,E2,E2_World_B1_localization,Slow Ass,Goodb-bye...,Tot z-ziens...
+32,E2,E2_World_B2_localization,Slow Ass,Goodbye Trusty...,Tot ziens (Trusty Ass)...
+33,E2,E2_World_B2_localization,Slow Ass,{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color},{color=yellow}{s=5}♪ hee haw hi hon 'ee ah he a'w ♪{/s}{/color}
+34,E2,E2_World_B2_localization,Slow Ass,Goodbye...,Tot ziens...
+35,E3,E3_Mine1F_localization,Slow Ass,I'd love to b-but... I don’t think I can p-play that game of yours.,"Graag, m-maar... ik denk nie dat ik uw s-spel kan spelen."
+36,E3,E3_Mine1F_localization,Slow Ass,The rocks go too fast for me.,Die keien gaan te snel voor mij.
+37,E3,E3_Mine1F_localization,Slow Ass,I b-bet my old friend Trusty would have b-been great at it...,Ik wed dat mijn oude vriendin Trusty daar h-héél goed in zou geweest zijn...
+38,E3,E3_Mine1F_localization,Slow Ass,She could do anything.,"Zij kon alles, zulle."
+39,E3,E3_Mine1F_localization,Slow Ass,Trusty was the kind of leader who made you b-believe in yourself.,Trusty was zo’n leider die u deed g-geloven in uzelf.
+40,E4,E4_Mine1F_localization,Slow Ass,"Oh Sick, I wish you would get b-b-b...","Oh Snotje, ik wou dat je b-b-b..."
+41,E4,E4_Mine1F_localization,Slow Ass,b-b-b-b...,b-b-b-b...
+42,E4,E4_Mine1F_localization,Slow Ass,b-b-b-b-b...,b-b-b-b-b...
+43,E4,E4_Mine1F_localization,Slow Ass,...better.,...beter zou worden.
+44,E4,E4_Mine1F_localization,Slow Ass,"If Trusty were around, she'd by right b-b-by your side.","Moest Trouwe Zak hier zijn, zou ze z-z-z-zo bij ons staan."
+45,E4,E4_Mine1F_localization,Slow Ass,I hope Sick is feeling b-b-b...,Ik hoop dat Snotje zich b-b-b...
+46,E4,E4_Mine1F_localization,Slow Ass,b-b-b-b...,b-b-b-b...
+47,E4,E4_Mine1F_localization,Slow Ass,b-b-b-b-b...,b-b-b-b-b...
+48,E4,E4_Mine1F_localization,Slow Ass,...better.,...beter voelt.
+49,E4,E4_HerdSplits_localization,Slow Ass,"If Trusty were here, none of this would have hap-p-p-p-pened.","Moest Trouwe hier zijn, zou n-n-n-niets van dit gebeurd zijn."
+50,E4,E4_HerdSplits_localization,Slow Ass,...I'll come...,...Ik kom...
+51,E4,E4_Mine1F_Exit_localization,Slow Ass,That was a b-beautiful sending.,Dat was een w-wonderschone uitvaart.
+52,E4,E4_Mine1F_Exit_localization,Slow Ass,She's in a b-better p-place now.,Ik ben er z-zeker van dat z-ze ergens b-beter is.
+53,E4,E4_Mine1F_Exit_localization,Slow Ass,"Come on, let's b-bring up the rear together.","Kom, wij zijn de a-achterhoede."
+54,E5,E5_Highway_localization,Slow Ass,Ow... my knees.,Oef... mijn knieëen.
+55,E5,E5_Highway_localization,Slow Ass,Oof...,Oef...
+56,E5,E5_Highway_localization,Slow Ass,Ah... my arthritis!,Ah... mijn artrose!
+57,E5,E5_Highway_localization,Slow Ass,*grunt*,*puf puf*
+58,E5,E5_Highway_localization,Slow Ass,"C'mon knees, don't fail me now!","Komaan knietjes, niet opgeven!"
+59,E5,E5_Highway_localization,Slow Ass,I'm too old for jumping...,Ik ben te oud om te springen...
+60,E5,E5_Highway_localization,Slow Ass,One step at a time...,Stap voor stap...
+61,E5,E5_Highway_localization,Slow Ass,*heavy breathing*,*zwaar gëadem*
+62,E5,E5_Highway_localization,Slow Ass,My poor joints.,Mijn arme gewrichten.
+63,E5,E5_Highway_localization,Slow Ass,Ooo the pain!,O... zo veel pijn.
+64,E5,E5_CircusMain_localization,Slow Ass,Sorry I'm late.,Sorry dat ik te laat ben.
+65,E5,E5_CircusMain_localization,Slow Ass,This costume takes forever to p-p-put on...,Dit kostuum d-d-duurt zo lang om aan te t-t-trekken.
+66,E5,E5_CircusMain_localization,Slow Ass,*huff p-p-puff* I'm p-p-pouring sweat from the adrenaline already...,"*puf puf* Ik z-z-zweet al zo nijg, gewoon van d-d-de adrenaline..."
+67,E5,E5_CircusMain_localization,Slow Ass,*inhale*,*ademt in*
+68,E5,E5_CircusMain_localization,Slow Ass,*exhale*,*ademt uit*
+69,E5,E5_CircusMain_localization,Slow Ass,Sorry I'm late.,Sorry dat ik te laat ben.
+70,E5,E5_CircusMain_localization,Slow Ass,This costume takes forever to p-p-put on...,Dit kostuum d-d-duurt zo lang om aan te t-t-trekken.
+71,E5,E5_CircusMain_localization,Slow Ass,*huff p-p-puff* I'm p-p-pouring sweat from the adrenaline already...,"*puf puf* Ik z-z-zweet al zo nijg, gewoon van d-d-de adrenaline..."
+72,E5,E5_CircusMain_localization,Slow Ass,*inhale*,*ademt in*
+73,E5,E5_CircusMain_localization,Slow Ass,*exhale*,*ademt uit*
+74,E5,E5_CircusMain_localization,Slow Ass,Hey everyb-b-body! Did you hear the announcement!?,Hé iedereen! Hebben jullie d-d-de aankondiging gehoord?
+75,E5,E5_CircusMain_localization,Slow Ass,"P-p-phew, they didn't find me!","O-o-oef, ze hebben me niet gezien!"
+76,E5,E5_CircusMain_localization,Slow Ass,Time to b-b-be b-b-brave...,Tijd om m-m-moedig te wezen...
+77,E5,E5_CircusMain_localization,Slow Ass,I've b-b-been p-p-practicing!,Ik heb g-g-gëoefend!
+78,E5,E5_CircusMain_localization,Slow Ass,I'm the only one left—I've got to rescue the others!,Ik ben de enige die overblijft — ik moet de anderen redden!
+79,E5,E5_CircusMain_localization,Slow Ass,Time to b-b-be b-b-brave and rescue the others.,Tijd om m-m-moedig te zijn en de rest te r-r-redden.
+80,E5,E5_ZooMain_localization,Slow Ass,I'm b-b-beat... time for b-b-bed...,Ik b-b-ben doodop... tijd voor b-b-bed...
+81,E5,E5_ZooMain_localization,Slow Ass,"We can't b-b-be good at everything, Smar—","Je kan niet in a-a-alles goed z-z-zijn, Slim—"
+82,E5,E5_ZooMain_localization,Slow Ass,P-p-phew! I'm p-p-parched!,O-o-oef! Ik ben uitged-d-droogd!
+83,E5,E5_ZooMain_localization,Slow Ass,Oh b-b-boy.,Och j-j-jongens.
+84,E5,E5_ZooMain_localization,Slow Ass,I have to p-pick up the p-pace!,Ik moet mij terug h-h-herpakken!
+85,E5,E5_ZooMain_localization,Slow Ass,B-b-better rest up for tomorrow!,Ik g-g-ga beter slapen voor m-m-morgen!
+86,E5,E5_ZooMain_localization,Slow Ass,I hop-p-pe I'll do b-b-better today.,Ik h-h-hoop dat het vandaag b-b-beter zal gaan.
+87,E5,E5_ZooMain_localization,Slow Ass,"Stop it, I'm b-b-blushing.","Stop ermee, je doet me b-b-blozen."
+88,E5,E5_ZooMain_localization,Slow Ass,Oh b-b-boy. Today was p-p-particularly p-p-punishing...,Ach j-j-jongens. Vandaag was b-b-bijzonder h-h-hard...
+89,E5,E5_ZooMain_localization,Slow Ass,P-p-please don't hate me...,H-h-haat mij alsjeblief n-n-niet maar...
+90,E5,E5_ZooMain_localization,Slow Ass,I gotta keep p-p-pushing myself!,Ik moet b-b-blijven d-d-doorzetten!
+91,E5,E5_ZooMain_localization,Slow Ass,What a b-b-backb-b-breaker. I can feel it in my b-b-bones...,Wat een radbrakend gedoe. Ik kan het in mijn b-b-botten voelen...
+92,E5,E5_ZooMain_localization,Slow Ass,"Sad Ass, I'm hap-p-p-py here.","Triestigaard, ik b-b-b-ben gelukkig hier."
+93,E5,E5_ZooMain_localization,Slow Ass,I'm finally achieving my full p-p-potential!,Ik kan eindelijk mijn p-p-potentieel halen!
+94,E5,E5_ZooMain_localization,Slow Ass,B-b-buck up-p-p.,V-v-vooruit met de g-g-geit.
+95,E5,E5_ZooMain_localization,Slow Ass,They are p-p-prob-b-b-bly still freezing their tails off in the Mine.,Hun s-s-s-staart vriest er waarschijnlijk af in die Mijn.
+96,E5,E5_ZooMain_localization,Slow Ass,Sad Ass?,Triestige Ezel?
+97,E5,E5_ZooMain_localization,Slow Ass,We can change our workp-p-place dynamic!,We kunnen de w-w-werksfeer verbeteren!
+98,E5,E5_ZooMain_localization,Slow Ass,B-b-but you can't ab-b-bandon the Herd!,M-m-maar je kan de Kudde niet z-z-zomaar achterlaten!
+99,E5,E5_ZooMain_localization,Slow Ass,I can give you some of my Ass of the Week p-points!,Ik kan je wat van mijn Ezel van de Week-punten g-g-geven!
+100,E5,E5_ZooMain_localization,Slow Ass,He said that he just wasn't hap-p-py here...,Hij zei gewoon dat ie hier niet g-g-gelukkig was...
+101,E5,E5_ZooMain_localization,Slow Ass,"Nop-p-pe. He's just... ""gone"".","N-n-neeje, hij is... ""weg""."
+102,E5,E5_ZooMain_localization,Slow Ass,P-p-perhaps that's true.,D-d-dat is misschien wel w-w-waar.
+103,E5,E5_ZooMain_localization,Slow Ass,...not even a goodb-b-bye!,...niet eens s-s-salut gezegd.
+104,E5,E5_ZooMain_localization,Slow Ass,B-b-but shouldn't we look for him?,M-m-moeten we hem dan niet gaan zoeken?
+105,E5,E5_ZooMain_localization,Slow Ass,I guess it is one less Ass to comp-p-pete with.,Misschien d-d-dan toch één Ezel minder...
+106,E5,E5_ZooMain_localization,Slow Ass,May the b-b-est Ass win!,Moge de b-b-beste Ezel winnen!
+107,E5,E5_ZooMain_localization,Slow Ass,B-b-bring it on!,K-k-kom maar op!
+108,E5,E5_ZooCapture_localization,Slow Ass,I still can't b-b-believe that my p-p-poor b-b-bones didn't let me down!,Ik k-k-kan nog altijd niet g-g-geloven dat mijn b-b-beenderen het niet b-b-begeven hebben!
+109,E5,E5_ZooCapture_localization,Slow Ass,Huh?,Hé?
+110,E5,E5_ZooCapture_localization,Slow Ass,What hap-p-p—?,Wat is er geb-b-b—?
+111,E5,E5_ZooCapture_localization,Slow Ass,OH NO!,OH NEE!
+112,E5,E5_ZooCapture_localization,Slow Ass,It's u-p-p-p to ME to rescue them?!,Het is a-a-aan mij om ze te r-r-redden?
+113,E5,E5_ZooCapture_localization,Slow Ass,Oh b-b-boy....,O j-j-jongens.
+114,E5,E5_ZooCapture_localization,Slow Ass,OH NO!,O NEE!
+115,E5,E5_ZooCapture_localization,Slow Ass,It's u-p-p-p to ME to rescue the others?!,Het is a-a-aan mij om ze te r-r-redden?
+116,E5,E5_ZooCapture_localization,Slow Ass,But I'll run out of ointment...,Maar ik ga z-z-zonder zalf z-z-zitten...
+117,E6,E6_World_localization,Slow Ass,Hello everyb-b-body...,Hallo allemaal-b-b-b...
+118,E6,E6_World_localization,Slow Ass,I'm supposed to b-b-be a Lion!,Ik b-b-ben eigenlijk een Leeuw!
+119,E6,E6_World_localization,Slow Ass,"Thanks, b-b-but I'm here b-b-because I need your help-p-p!","Bedankt, m-m-maar ik b-b-ben hier omdat ik jullie hulp-p-p nodig heb-b-b!"
+120,E6,E6_World_localization,Slow Ass,Something terrib-b-ble has hap-p-p-ened and I need your help-p-p!,Er is iets verschrikkelijks geb-b-beurd en ik heb jullie hulp-p-p nodig!
+121,E6,E6_World_localization,Slow Ass,Oh b-b-boy... do you want the short version or the long version?,Oh b-b-boy... willen jullie de korte versie of de lange versie?
+122,E6,E6_World_localization,Slow Ass,I'll do my b-b-best.,Ik zal mijn b-b-best doen.
+123,E6,E6_World_localization,Slow Ass,It's a b-b-bit of story...,Het is een b-b-beetje een verhaal...
+124,E6,E6_World_localization,Slow Ass,We found job-bs as p-performers in a Circus show.,We vonden b-b-baantjes als a-a-artiesten in een circusshow.
+125,E6,E6_World_localization,Slow Ass,Humans travelled from far away to watch us p-pretend to be other animals!,Mensen kwamen van heinde en verre om ons te zien p-p-pretenderen dat we andere dieren waren!
+126,E6,E6_World_localization,Slow Ass,"We took to the stage one at a time, b-but we worked as a team.","We b-b-betraden het p-podium één voor één, m-maar we werkten als een team."
+127,E6,E6_World_localization,Slow Ass,You wouldn't have b-believed your eyes!,Je zou je ogen niet geloofd heb-b-ben!
+128,E6,E6_World_localization,Slow Ass,"Smart was a dancing Gorilla, Kick did acrob-b-batics as a Zeb-bra,","Slimme was een dansende Gorilla, Stamp deed acrob-b-batiek als een Zeb-bra,"
+129,E6,E6_World_localization,Slow Ass,"Sad had a b-bear routine on a b-bicycle, and B-Big was a b-ball catching elephant—","Triestige deed een b-b-berenact op een fiets, en M-Mega was een b-b-balvangende olifant—"
+130,E6,E6_World_localization,Slow Ass,"Smart was a dancing Gorilla, Kick did acrob-b-batics as a Zeb-bra,","Slimme was een dansende Gorilla, Stamp deed acrob-b-batiek als een Zeb-bra,"
+131,E6,E6_World_localization,Slow Ass,and B-B-Big was a b-b-ball catching Elep-phant—,en M-M-Mega was een b-b-bal vangende Olif-f-fant—
+132,E6,E6_World_localization,Slow Ass,"And for the closing act, I b-bravely jump-ped through fire in my lion costume!",En voor de slotact sprong ik b-b-braaf door het vuur in mijn leeuwenp-p-pak!
+133,E6,E6_World_localization,Slow Ass,B-but we ran into a terrib-ble p-problem.,M-m-maar we liepen tegen een verschrikkelijk p-p-probleem aan.
+134,E6,E6_World_localization,Slow Ass,"Just when we thought we were going on tour, our B-Boss, Ringmaster Rico, B-BETRAYED US!","Net toen we dachten dat we op circustournee zouden gaan, heeft onze Circusdirecteur B-B-Baptiste, ONS V-V-VERRADEN!"
+135,E6,E6_World_localization,Slow Ass,"After months of searching, we finally found job-bs at a Zoo.","Na maanden zoeken, hadden we eindelijk b-banen gevonden in een dierentuin."
+136,E6,E6_World_localization,Slow Ass,"The long hours were b-brutal on my b-bones, so the nice Zookeep-per gave me Ointment to help-p my joint p-pain!","De lange uren waren b-brutaal voor mijn b-botten, dus de aardige dierenverzorgster gaf me Zalf om me te help-pen met mijn pijn!"
+137,E6,E6_World_localization,Slow Ass,The Ointment help-ped me in the weekly comp-petition to see who was b-best at their job-b.,De Zalf help-pte me in de wekelijkse comp-petitie om te zien wie het b-beste was in zijn b-baan.
+138,E6,E6_World_localization,Slow Ass,"Unfortunately, the race to the top-p made us comp-petitive.",Helaas maakte de race naar de top-p ons comp-p-petitief.
+139,E6,E6_World_localization,Slow Ass,"One night after a long shift, Sad Ass said he had enough.",Op-p een avond na een lange dienst zei Triestige Ezel dat hij er genoeg van had.
+140,E6,E6_World_localization,Slow Ass,He ran away from us and left us all b-behind.,Hij rende b-bij ons weg en liet ons allemaal achter.
+141,E6,E6_World_localization,Slow Ass,"If you can b-believe it—I, surp-prisingly, won Ass of the Week!","Als je het kunt b-b-geloven—ík, tot mijn eigen verb-b-bazing, heb-b Ezel v/d Week gewonnen!"
+142,E6,E6_World_localization,Slow Ass,"I tried my b-b-best, but {$String} won Ass of the Week!","Ik heb mijn b-b-best gedaan, maar {$String} won Ezel van de Week!"
+143,E6,E6_World_localization,Slow Ass,"Right after the announcement, we ran into a terrib-ble p-problem!",Vlak na de aankondiging liepen we tegen een verschrikkelijk p-p-probleem aan!
+144,E6,E6_World_localization,Slow Ass,"Our B-Boss, Zookeep-per Rose, B-BETRAYED US!","Onze B-Baas, Dierendokter D-Dina, heeft ons B-B-VERRADEN!"
+145,E6,E6_World_localization,Slow Ass,Two Humans in b-black p-put our Comrades in a Truck-Machine.,Twee Mensen in het zwart hebben onze Kameraden in een Camion Machine ges-s-stopt.
+146,E6,E6_World_localization,Slow Ass,I followed it all the way to the City.,Ik b-ben het helemaal gevolgd tot aan de Stad.
+147,E6,E6_World_localization,Slow Ass,"There were tall b-buildings, and a b-big Factory that smelled so b-bad...","Daar waren hoge geb-b-bouwen, en een grote Fab-b-briek die zo verschrikkelijk stonk..."
+148,E6,E6_World_localization,Slow Ass,That's where the Truck-Machine stop-ped.,Daar is de Camion Machine gestop-pt.
+149,E6,E6_World_localization,Slow Ass,...,...
+150,E6,E6_World_localization,Slow Ass,The others are in deep-p troub-b-b-b-b-ble!,De anderen zitten in diepe p-p-prob-b-b-b-b-blemen!
+151,E6,E6_World_localization,Slow Ass,I'm b-begging you! P-please help-p!,Ik b-b-bid je! Help-p alsjeb-b-blieft!
+152,E6,E6_World_localization,Slow Ass,"If I learned anything at the Circus, it's that the b-best show is an ensemble effort.","Als ik iets geleerd heb in het Circus, dan is het dat de b-b-beste show een ensemblep-p-prestatie is."
+153,E6,E6_World_localization,Slow Ass,"We're a team, even when it ap-p-pears like we're not.","We zijn een team, ook al b-b-blijkt het soms van niet."
+154,E6,E6_World_localization,Slow Ass,"If I learned anything at the Zoo, it's that nothing good comes out of comp-p-peting with each other.","Als ik iets geleerd heb in de Dierentuin, dan is het dat er niks goeds komt uit het b-b-beconcurreren van elkaar."
+155,E6,E6_World_localization,Slow Ass,We're stronger as one Herd.,We zijn sterker als één Kudde.
+156,E6,E6_World_localization,Slow Ass,"Sturdy, will you come with us? P-p-please?","Stevige, kom je met ons mee? P-p-please... alsjebbblieft?"
+157,E10,E10_Slow_localization,Slow Ass,Smart and the others are b-bound to b-be here somewhere.,Slimme Ezel en de anderen z-z-zijn h-h-hier vast ergens.
+158,E10,E10_Slow_localization,Slow Ass,Oof! They saw right through my costume...,*oef* Ze h-h-hebben dwars door mijn kostuum heen gekeken...
+159,E10,E10_Slow_localization,Slow Ass,Oof! If only I had my Ointment...,*oef* H-h-had ik maar mijn Zalf...
+160,E10,E10_Hard_localization,Slow Ass,Wait—,W-wacht—
+161,E10,E10_Hard_localization,Slow Ass,Where's B-Big Ass?,W-ww-aar is M-Mega Ezel?
+162,E10,E10_Hard_localization,Slow Ass,B-But I'd hold everyb-b-body back.,M-Maar ik zou iedereen n-n-naar beneden halen.
+163,E10,E10_Hard_localization,Slow Ass,"Smart Ass, come up with a new P-P-Plan!","Slimme Ezel, bedenk een n-n-nieuw Plan!"
+164,E10,E10_Hard_localization,Slow Ass,We're all on the same side.,W-w-we staan allemaal aan dezelfde kant.
+165,E10,E10_Government_localization,Slow Ass,Tell the Humans that we can't work at a p-pace where we have to hurt ourselves to keep-p our Job-bs.,Z-zeg tegen de Mensen dat we niet kunnen werken in een t-tempo waar we onszelf moeten bezeren om onze b-baan te h-houden.
+166,E10,E10_Government_localization,Slow Ass,Thanks... I feel rep-p-presented.,Bedankt... ik voel me g-g-gerepresenteerd.

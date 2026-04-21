@@ -1,0 +1,1130 @@
+[
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 32,
+    "key": "SAY.Dialog:E10_Hard.366.Big Ass",
+    "en": "{vpunch=100,0.75}They're not idiots, Smart Ass!",
+    "nl": "{vpunch=100,0.75}Dat zijn geen idioten, Slimme Ezel!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 33,
+    "key": "SAY.Dialog:E10_Hard.370.Big Ass",
+    "en": "They're just trying to survive, like us.",
+    "nl": "Ze proberen gewoon te overleven, net als ons."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 36,
+    "key": "SAY.Dialog:E10_Hard.376.Big Ass",
+    "en": "I am. And I did it.",
+    "nl": "Jazeker."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 37,
+    "key": "SAY.Dialog:E10_Hard.556.Big Ass",
+    "en": "I freed the Asses.",
+    "nl": "En ik heb de Ezels bevrijd."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 38,
+    "key": "SAY.Dialog:E10_Hard.379.Big Ass",
+    "en": "I faced off against the horrible Human in charge of the Factory.",
+    "nl": "Ik heb het opgenomen tegen de verschrikkelijke Mens die de leiding had over de Fabriek."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 39,
+    "key": "SAY.Dialog:E10_Hard.557.Big Ass",
+    "en": "And I caused a massive explosion too.",
+    "nl": "En ik heb ook een mega explosie veroorzaakt."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 51,
+    "key": "SAY.Dialog:E10_Hard.392.Big Ass",
+    "en": "No one gets left behind!",
+    "nl": "Niemand wordt achtergelaten!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 52,
+    "key": "SAY.Dialog:E10_Hard.394.Big Ass",
+    "en": "And I mean no one.",
+    "nl": "En ik meen het, niemand."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 53,
+    "key": "SAY.Dialog:E10_Hard.396.Big Ass",
+    "en": "These Asses deserve to find a safe place to live too.",
+    "nl": "Deze Ezels verdienen het ook om een veilige plek te vinden om te leven."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 54,
+    "key": "SAY.Dialog:E10_Hard.483.Big Ass",
+    "en": "If the Humans don't kill us today, they will kill us tomorrow.",
+    "nl": "Als de Mensen ons vandaag niet doodmaken, doen ze het morgen."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 55,
+    "key": "SAY.Dialog:E10_Hard.484.Big Ass",
+    "en": "You have no idea what we saw in that Factory!",
+    "nl": "Ge hebt geen idee wat we in die Fabriek gezien hebben!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 60,
+    "key": "SAY.Dialog:E10_Hard.581.Big Ass",
+    "en": "Well I do.",
+    "nl": "Ik wel."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 61,
+    "key": "SAY.Dialog:E10_Hard.583.Big Ass",
+    "en": "We join these other Asses and go inside!",
+    "nl": "We sluiten ons aan bij die andere Ezels en gaan naar binnen!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 70,
+    "key": "SAY.Dialog:E10_Hard.507.Big Ass",
+    "en": "You...",
+    "nl": "Gij..."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 72,
+    "key": "SAY.Dialog:E10_Hard.537.Big Ass",
+    "en": "You didn't have faith in me.",
+    "nl": ""
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 74,
+    "key": "SAY.Dialog:E10_Hard.538.Big Ass",
+    "en": "You were just looking out for our own.",
+    "nl": "Ge was gewoon aan het uitkijken voor de onze."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Government_localization",
+    "row": 142,
+    "key": "SAY.Dialog:Big_16.10.Big Ass",
+    "en": "Tell the Humans to close their Factories everywhere...",
+    "nl": "Zeg tegen de Mensen dat ze overal hun Fabrieken sluiten..."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Government_localization",
+    "row": 145,
+    "key": "SAY.Dialog:Big_16.12.Big Ass",
+    "en": "No Ass gets left behind.",
+    "nl": "Geen Ezel wordt achtergelaten, Kameraad."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_ProphetSpeech_localization",
+    "row": 109,
+    "key": "SAY.Flowchart:Dialog.1148.Big Ass",
+    "en": "ASS POWER!",
+    "nl": "EZELKRACHT!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_ProphetSpeech_localization",
+    "row": 110,
+    "key": "SAY.Flowchart:Dialog.1150.Big Ass",
+    "en": "DON'T BE SCARED!",
+    "nl": "WEES NIET BANG!"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 47,
+    "key": "SAY.Dialog:BIG_BoostMorale.1.Big Ass",
+    "en": "Good afternoon, Comrade.",
+    "nl": "Goeiemiddag, Kameraad."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 48,
+    "key": "SAY.Dialog:BIG_BoostMorale.2.Big Ass",
+    "en": "I'm fuelling up so that I can make tomorrow's Protest a huge success.",
+    "nl": "Ik ben aan het bijtanken zodat ik het Protest van morgen een groots succes kan maken."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 49,
+    "key": "SAY.Dialog:BIG_BoostMorale.3.Big Ass",
+    "en": "Though, I feel guilty eating all this hay when the Miners are in Mourning.",
+    "nl": "Maar zoveel hooi eten doet me wat schuldig voelen, zeker nu de Mijn-Ezels middenin hun rouwproces zitten."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 50,
+    "key": "SAY.Dialog:BIG_BoostMorale.4.Big Ass",
+    "en": "It must be pretty bad down in the Mines if it can stop an Ass from eating.",
+    "nl": "Het moet er slecht uitzien in de Mijnen als een ezel daarna geen honger meer heeft."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 51,
+    "key": "SAY.Dialog:BIG_BoostMorale.5.Big Ass",
+    "en": "Glad I don't fit down there.",
+    "nl": "Misschien best zo, ik geraak toch niet door die mijnschacht."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 52,
+    "key": "SAY.Dialog:BIG_BoostMorale.9.Big Ass",
+    "en": "*munch munch munch*",
+    "nl": "*njam njam njam*"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 122,
+    "key": "SAY.Dialog:BIG_Night.5.Big Ass",
+    "en": "... .ZZZZZZ... ... .",
+    "nl": "...ZZZZZZZ..."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 25,
+    "key": "SAY.Dialog:PickUpBig.28.Big Ass",
+    "en": "Poor Old Ass.",
+    "nl": "Arme Oude Zak."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 26,
+    "key": "SAY.Dialog:PickUpBig.29.Big Ass",
+    "en": "What a massive loss. Will the Protest continue?",
+    "nl": "Wat een drama. Gaat het Protest nog door?"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 29,
+    "key": "SAY.Dialog:PickUpBig.19.Big Ass",
+    "en": "Don't say that, Trusty. What would we do without you?",
+    "nl": "Laat dat, Trouwe. Wat zouden we zonder jou doen?"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 30,
+    "key": "SAY.Dialog:PickUpBig.23.Big Ass",
+    "en": "Well then I'm hungry to get started!",
+    "nl": "Ik ben klaar om te beginnen. Ik krijg er zelfs honger van."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 52,
+    "key": "SAY.Dialog:2_Dialog: FarmComradesRecruited.1.Big Ass",
+    "en": "That's everyone. Now to the gate!",
+    "nl": "Iedereen is hier. Naar de poorten!"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 55,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.10.Big Ass",
+    "en": "Asses have always been the backbone of this Farm since time immemorial.",
+    "nl": "Ezels zijn altijd al de ruggegraat van deze Hoeve geweest, sinds de dieren konden spreken."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 56,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.11.Big Ass",
+    "en": "The weight of history is on our shoulders...",
+    "nl": "Het gewicht van onze geschiedenis drukt ons op de schouders."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 69,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.34.Big Ass",
+    "en": "A grand idea.",
+    "nl": "Een groots idee."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 72,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.43.Big Ass",
+    "en": "What an empty feeling...",
+    "nl": "Wat een leeg gevoel..."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 77,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.128.Big Ass",
+    "en": "But the Humans have belittled us.",
+    "nl": "Maar de Mensen hebben ons gekleineerd."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 138,
+    "key": "SAY.Dialog: WellScene.55.Big Ass",
+    "en": "{vpunch=100,0.75}UH OH!",
+    "nl": "{vpunch=100,0.75}OH OH!"
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 19,
+    "key": "SAY.Dialog:Opening.7.Big Ass",
+    "en": "The Herd keeps shrinking!",
+    "nl": "De Kudde blijft kleiner worden!"
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 22,
+    "key": "SAY.Dialog:Opening.13.Big Ass",
+    "en": "Excuse me.",
+    "nl": "Pardon."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 26,
+    "key": "SAY.Dialog:Opening.15.Big Ass",
+    "en": "I have something to say.",
+    "nl": "Ik heb wat te zeggen."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 31,
+    "key": "SAY.Dialog:Opening.18.Big Ass",
+    "en": "{vpunch=100,0.75}HEY! LISTEN!!",
+    "nl": "{vpunch=100,0.75}HEY! LUISTEREN!!!"
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 32,
+    "key": "SAY.Dialog:Opening.19.Big Ass",
+    "en": "The fire's accelerating on the dry ground.",
+    "nl": "Het vuur verspreidt zich over de droge grond."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 33,
+    "key": "SAY.Dialog:Opening.90.Big Ass",
+    "en": "The enormous flames are spreading west! They'll reach the Farm in no time—",
+    "nl": "De gigantische vlammen bewegen zich naar het westen! Niet lang meer tot ze bij de Boerderij—"
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 43,
+    "key": "SAY.Dialog:Opening.165.Big Ass",
+    "en": "Slow Ass should stay behind and sing the Song of Ascension for Trusty.",
+    "nl": "Slome Ezel moet achterblijven en het ezelenhemelvaartszangderzielen aan Trouwe Ezel voordragen."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_B1_localization",
+    "row": 21,
+    "key": "SAY.Dialog:B1_MainDialog.13.Big Ass",
+    "en": "I won't fit.",
+    "nl": "Ik pas daar niet tussen."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_B1_localization",
+    "row": 22,
+    "key": "SAY.Dialog:B1_MainDialog.56.Big Ass",
+    "en": "How about Thirsty?",
+    "nl": "En Dorstlap?"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1FOpening_localization",
+    "row": 21,
+    "key": "SAY.Dialog:ScavengersReturn.13.Big Ass",
+    "en": "{vpunch=100,0.75}I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!",
+    "nl": "{vpunch=100,0.75}Ik heb een mega aankondiging, Kameraad Stoere! Harde, Trap, en Zieke zijn terug!"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1FOpening_localization",
+    "row": 29,
+    "key": "SAY.Dialog:ScavengersReturn.31.Big Ass",
+    "en": "Is that all the food you managed to find?",
+    "nl": "Is dat al het eten dat ge hebt kunnen vinden?"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1FOpening_localization",
+    "row": 36,
+    "key": "SAY.Dialog:ScavengersReturn.397.Big Ass",
+    "en": "Were there any noticeable signs of Humans?",
+    "nl": "Waren er tekenen van Mensen?"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 52,
+    "key": "SAY.Dialog:ThirstyBig_Public.42.Big Ass",
+    "en": "Oh! Hello little Comrade.",
+    "nl": "Oh! Dag, kleine Kameraad."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 53,
+    "key": "SAY.Dialog:ThirstyBig_Public.73.Big Ass",
+    "en": "We're just moving this boulder in case the flood starts to come any closer.",
+    "nl": "We zijn dit rotsbloki aan ’t verleggen, voor als de vloed nog dichter komt."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 56,
+    "key": "SAY.Dialog:ThirstyBig_Public.83.Big Ass",
+    "en": "Sorry little Comrade, we are weighed down with tasks.",
+    "nl": "Sorry, kleine Kameraad, we zitten tot hier met werk."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 60,
+    "key": "SAY.Dialog:ThirstyBig_Public.85.Big Ass",
+    "en": "You know your rocks little Comrade, but this one's out of your league.",
+    "nl": "Ge kent uw stenen wel, kleine Kameraad, maar deze is te straf voor u."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 64,
+    "key": "SAY.Dialog:ThirstyBig_Public.88.Big Ass",
+    "en": "Muscle is the greatest method there is.",
+    "nl": "Spieren is de beste methode die er is."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 71,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.23.Big Ass",
+    "en": "*oof!*—You wanted water and you got it, Thirsty!",
+    "nl": "*oef!*—Ge wilde water en ge hebt het, Dorstlap!"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 73,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.18.Big Ass",
+    "en": "*oof*—When was the last time any of us got what we wanted?",
+    "nl": "*oef*—Wanneer heeft iemand van ons nog gekregen wat hij wou?"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 74,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.28.Big Ass",
+    "en": "If the rain doesn't stop or the Humans don't come back—*oof!*—we're going to starve.",
+    "nl": "Als de regen nie stopt of de Mensen nie terugkomen—*oef!*—gaan we verhongeren."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 76,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.32.Big Ass",
+    "en": "...",
+    "nl": "..."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 77,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.31.Big Ass",
+    "en": "Comrade, I want more in life.",
+    "nl": "Kameraad, ik wil méér in ’t leven."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 83,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.14.Big Ass",
+    "en": "*oof!*—No Humans?",
+    "nl": "*oef!*—Geen Mensen?"
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_Mine1F_localization",
+    "row": 25,
+    "key": "SAY.Dialog:SickBig.10.Big Ass",
+    "en": "If I had any of my rations left I'd share them with you.",
+    "nl": "Moest ik nog wat rantsoenen over hebben had ik je er wat gegeven."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_Mine1F_localization",
+    "row": 26,
+    "key": "SAY.Dialog:SickBig.22.Big Ass",
+    "en": "I'm sorry, there's nothing left.",
+    "nl": "Sorry, er schiet niets meer over."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_Mine1F_localization",
+    "row": 54,
+    "key": "SAY.Dialog:KickBig.10.Big Ass",
+    "en": "I hope Sick found some extra rations.",
+    "nl": "Ik hoop dat Snotje wat extra rantsoen gevonden heeft."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_Mine1F_localization",
+    "row": 55,
+    "key": "SAY.Dialog:KickBig.12.Big Ass",
+    "en": "This is a difficult time, Comrade. I'm here for you.",
+    "nl": "Dit is een moeilijke tijd, Kameraad. Ik ben hier voor u."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_HerdSplits_localization",
+    "row": 50,
+    "key": "SAY.Dialog:Debate.176.Big Ass",
+    "en": "The Humans may have belittled us, but that's no reason for such heavy violence.",
+    "nl": "De Mensen mogen ons dan zo gekleineerd hebben, dit is nog altijd geen reden voor zulk geweld."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_HerdSplits_localization",
+    "row": 51,
+    "key": "SAY.Dialog:Debate.299.Big Ass",
+    "en": "{vpunch=100,0.75}I'm leaving with Smart Ass too.",
+    "nl": "{vpunch=100,0.75}Ik vertrek samen met Betweter."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 43,
+    "key": "SAY.Dialog:BackstageElephant.117.Big Ass",
+    "en": "Even after all that rehearsing, the audience sure knows how to make you feel small.",
+    "nl": "Zelfs na al dat repeteren, weet het publiek wel hoe je klein te doen voelen."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 46,
+    "key": "SAY.Dialog:BackstageElephant.114.Big Ass",
+    "en": "Don't keep them waiting!",
+    "nl": "Laat ze niet wachten!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 57,
+    "key": "SAY.Dialog:BackstageElephant.112.Big Ass",
+    "en": "It's thanks to all the rehearsing we've been doing.",
+    "nl": "Dat is dankzij al de repetities die we hebben gedaan."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 59,
+    "key": "SAY.Dialog:BackstageElephant.118.Big Ass",
+    "en": "Don't keep them waiting!",
+    "nl": "Laat ze niet wachten!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 60,
+    "key": "SAY.Dialog:BackstageElephant.94.Big Ass",
+    "en": "Now is not the time to get stage fright!",
+    "nl": "Nu is het niet de moment om plankenkoorts te krijgen."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 110,
+    "key": "SAY.Dialog:BackstageZebra.162.Big Ass",
+    "en": "Is it problematic that Kick is appropriating a Zebra's stripes? Isn't it a little bit rac—?",
+    "nl": "Is het wat problematisch dat Stamp Ezel zebastrepen aanheeft? Is dat niet wat rac...?"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 121,
+    "key": "SAY.Dialog:BackstageZebra.128.Big Ass",
+    "en": "Your duet with the Ringmaster brought tears to my eyes!",
+    "nl": "Jouw duet met de Circusdirecteur ontroerde me!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 123,
+    "key": "SAY.Dialog:BackstageZebra.152.Big Ass",
+    "en": "Oooooo I can't wait to go on tour! Bigger crowds, cushier dressing rooms...",
+    "nl": "Ik kan niet wachten om op toernee te gaan! Groter publiek, mooiere kleedkamers..."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 127,
+    "key": "SAY.Dialog:BackstageZebra.155.Big Ass",
+    "en": "And I'm outgrowing my Elephant suit...",
+    "nl": "En ik groei uit mijn olifantenkostuum..."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 133,
+    "key": "SAY.Dialog:BackstageZebra.158.Big Ass",
+    "en": "We've finally found a place to work where we all fit in.",
+    "nl": "We hebben eindelijk een plek gevonden waar we allemaal kunnen thuishoren."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 136,
+    "key": "SAY.Dialog:BackstageZebra.137.Big Ass",
+    "en": "Go show the crowd your cool moves Sad!",
+    "nl": "Ga je zieke moves aan het publiek tonen, Triestigaard!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 145,
+    "key": "SAY.Dialog:BackstageBear.114.Big Ass",
+    "en": "Don't beat yourself up Sad, the bike was a late addition, you haven't had a lot of time to practice.",
+    "nl": "Maak je niet te druk, Triestigaard. Die fiets is er pas laat bijgekomen, en je hebt niet veel tijd gehad om te oefenen."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 162,
+    "key": "SAY.Dialog:BackstageBear.129.Big Ass",
+    "en": "We're closer than ever. We're an ENSEMBLE!",
+    "nl": "We staan sterker dan ooit. We zijn een ENSEMBLE!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 211,
+    "key": "SAY.Dialog:Ending.260.Big Ass",
+    "en": "{vpunch=100,0.75}UH OH! We're in huge trouble!",
+    "nl": "{vpunch=100,0.75}OH OH! We zitten diep in de shit!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 45,
+    "key": "SAY.Dialog:Day3.108.Big Ass",
+    "en": "It's not my fault your score is so low.",
+    "nl": "Niet mijn schuld dat je score zo laag is."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 49,
+    "key": "SAY.Dialog:Day3.110.Big Ass",
+    "en": "Massive gains!",
+    "nl": "Geweldige winsten!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 72,
+    "key": "SAY.Dialog:Day4.98.Big Ass",
+    "en": "I won't be distracted by your puny squabbles!",
+    "nl": "Ik zal niet worden afgeleid door jullie kleingeestig gekibbel!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 75,
+    "key": "SAY.Dialog:Day4.150.Big Ass",
+    "en": "At this rate, we'll have to call you Speedy...",
+    "nl": "Op dit tempo, zouden we je Snelle Ezel moeten noemen..."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 79,
+    "key": "SAY.Dialog:Day4.109.Big Ass",
+    "en": "No. I'm going to win fair and square!",
+    "nl": "Noppes. Ik haal hier eerlijk mijn slag thuis!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 100,
+    "key": "SAY.Dialog:Day5.108.Big Ass",
+    "en": "We don't have to deal with her oversized ego!",
+    "nl": "Nu moeten we niet meer met haar opgeblazen ego te maken hebben!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 131,
+    "key": "SAY.Dialog:Day6.131.Big Ass",
+    "en": "Joy. Do you think the rest of the Herd is as happy as we are?",
+    "nl": "Vreugde. Denken jullie dat de rest van de Kudde even gelukkig als wij zijn?"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 193,
+    "key": "SAY.Dialog:Day7.131.Big Ass",
+    "en": "Was it something that we did?",
+    "nl": "Ligt 't aan ons, dan?"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 205,
+    "key": "SAY.Dialog:Day7.147.Big Ass",
+    "en": "I guess we just keep working without him.",
+    "nl": "Dan blijven we verderwerken zonder hem, dan."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 213,
+    "key": "SAY.Dialog:Day7.239.Big Ass",
+    "en": "You've surprised us all with how quickly you've grown your score.",
+    "nl": "Je staat ons doen kijken met hoe snel je punten aan het scoren bent."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 215,
+    "key": "SAY.Dialog:Day7.158.Big Ass",
+    "en": "We wouldn't have this problem if you'd stop getting in my way.",
+    "nl": "We zouden misschien beter spelen als ge wat minder in mijn weg loopt."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooCapture_localization",
+    "row": 14,
+    "key": "SAY.Dialog:AssOfTheMonth.141.Big Ass",
+    "en": "This is a tremendous honour. Thank you!",
+    "nl": "Dit is een geweldige eer. Dank u."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooCapture_localization",
+    "row": 42,
+    "key": "SAY.Dialog:AssOfTheMonth.89.Big Ass",
+    "en": "SLOW ASS COME ON!",
+    "nl": "SLOME KOM OP!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 3,
+    "key": "SAY.Dialog:Opening.3.Big Ass",
+    "en": "Help me!",
+    "nl": "Help mij!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 7,
+    "key": "SAY.Dialog:PostWorkerDies.7.Big Ass",
+    "en": "Get me outta here!",
+    "nl": "Haal me hier weg!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 9,
+    "key": "SAY.Dialog:PostWorkerDies.30.Big Ass",
+    "en": "Try a button!",
+    "nl": "Probeer een knop!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 10,
+    "key": "SAY.Dialog:PostWorkerDies.49.Big Ass",
+    "en": "Try another!",
+    "nl": "Probeer een andere!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 12,
+    "key": "SAY.Dialog:PostWorkerDies.21.Big Ass",
+    "en": "AAAAAAHHHHHHH!",
+    "nl": "AAAAAAHHHHHHH!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Skinning_localization",
+    "row": 5,
+    "key": "SAY.Dialog:Opening.41.Big Ass",
+    "en": "HELP!",
+    "nl": "HELP!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Skinning_localization",
+    "row": 11,
+    "key": "SAY.Dialog:GateOpened.20.Big Ass",
+    "en": "I truly thought that was the end for me.",
+    "nl": "Ik dacht echt dat 't gedaan was met mij."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Skinning_localization",
+    "row": 12,
+    "key": "SAY.Dialog:GateOpened.13.Big Ass",
+    "en": "You're all heroes!",
+    "nl": "Ge zijt allemaal helden!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 3,
+    "key": "SAY.Dialog:Opening.73.Big Ass",
+    "en": "...",
+    "nl": "..."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 5,
+    "key": "SAY.Dialog:Ending.92.Big Ass",
+    "en": "Wait. We should sing the Song of Ascension for our Comrades before we leave.",
+    "nl": "Wacht. Voor we vertrekken moeten we de ezelenhemelvaartszangderzielen zingen voor onze Kameraden."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 7,
+    "key": "SAY.Dialog:Ending.168.Big Ass",
+    "en": "Back on that hook, my life flashed before my eyes.",
+    "nl": "Toen ik daar aan die haak hing, zag ik mijn hele leven aan mij voorbijflitsen."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 8,
+    "key": "SAY.Dialog:Ending.169.Big Ass",
+    "en": "I've never fit in anywhere, or made much of an impact.",
+    "nl": "Ik heb nooit echt ergens ingepast, of veel impact gehad."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 9,
+    "key": "SAY.Dialog:Ending.170.Big Ass",
+    "en": "But, I want to make a difference now.",
+    "nl": "Maar ik wil nú een verschil maken."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 10,
+    "key": "SAY.Dialog:Ending.171.Big Ass",
+    "en": "Even if we're too late, we should try.",
+    "nl": "Ook al zijn we te laat, we moeten 't toch proberen."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 11,
+    "key": "SAY.Dialog:Ending.172.Big Ass",
+    "en": "If it means one more Soul makes it to the Astral Plane, it's worth it.",
+    "nl": "Als 't betekent dat er nog één Ziel het Astrale Hiernamaals bereikt, dan is 't dat waard."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_MeatProcessing_localization",
+    "row": 4,
+    "key": "SAY.Dialog:Opening.8.Big Ass",
+    "en": "We should go one at—",
+    "nl": "We moeten één voor één—"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Boiling_localization",
+    "row": 3,
+    "key": "SAY.Dialog:Opening.3.Big Ass",
+    "en": "Are they melting the skin of the deceased in here?",
+    "nl": "Zijn ze hier 't vel van de overledenen aan 't smelten ofwa?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Boiling_localization",
+    "row": 9,
+    "key": "SAY.Dialog:FirstPassComplete.103.Big Ass",
+    "en": "Don't fall behind, Kick Ass!",
+    "nl": "Blijf nie achter, Stamp Ezel!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Boiling_localization",
+    "row": 12,
+    "key": "SAY.Dialog:FirstPassComplete.16.Big Ass",
+    "en": "{vpunch=100,0.75}HURRAH!",
+    "nl": "{vpunch=100,0.75}HOERA!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Ejiao_localization",
+    "row": 4,
+    "key": "SAY.Dialog:Opening.50.Big Ass",
+    "en": "Wait.",
+    "nl": "Wacht."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Ejiao_localization",
+    "row": 5,
+    "key": "SAY.Dialog:Opening.24.Big Ass",
+    "en": "We'll never get by unnoticed.",
+    "nl": "We geraken hier nooit onopgemerkt voorbij."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Shipping_localization",
+    "row": 6,
+    "key": "SAY.Dialog:Opening.25.Big Ass",
+    "en": "What'll we do?",
+    "nl": "Wa gaan we doen?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 5,
+    "key": "SAY.Dialog:BigJob.7.Big Ass",
+    "en": "What about freeing the other Asses?",
+    "nl": "En wat met de andere Ezels bevrijden dan?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 6,
+    "key": "SAY.Dialog:BigJob.6.Big Ass",
+    "en": "Aren't they part of your Plan?",
+    "nl": "Maken die dan nie deel uit van uw Plan?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 10,
+    "key": "SAY.Dialog:BigJob.9.Big Ass",
+    "en": "And what will we do after that?",
+    "nl": "En wat gaan we daarna doen?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 12,
+    "key": "SAY.Dialog:BigJob.8.Big Ass",
+    "en": "{vpunch=100,1}I want to know NOW, Smart Ass.",
+    "nl": "{vpunch=100,1}Ik wil 't NU weten, Slimme Ezel."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 27,
+    "key": "SAY.Dialog:BigJob.188.Big Ass",
+    "en": "I'm not leaving the other Asses here to die, just so we can try to live in comfort.",
+    "nl": "'k laat de andere Ezels hier nie achter om te sterven, alleen maar zodat wij in comfort kunnen proberen te leven."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 30,
+    "key": "SAY.Dialog:BigJob.193.Big Ass",
+    "en": "Then I'll go back, alone.",
+    "nl": "Dan ga 'k alleen terug."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 37,
+    "key": "SAY.Dialog:BigJob.158.Big Ass",
+    "en": "You don't have to join me.",
+    "nl": "Ge moet nie met mij meekomen."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 38,
+    "key": "SAY.Dialog:BigJob.159.Big Ass",
+    "en": "But this is something I must do.",
+    "nl": "Maar dit is iets wat ik moet doen."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 39,
+    "key": "SAY.Dialog:BigJob.160.Big Ass",
+    "en": "Before I die, I need to make an impact.",
+    "nl": "Voor ik sterf, moet ik iets groots betekenen."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 42,
+    "key": "SAY.Dialog:BigJob.267.Big Ass",
+    "en": "I know... but I choose to be.",
+    "nl": "Ik weet het... maar ik kies ervoor om dat te zijn."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 44,
+    "key": "SAY.Dialog:BigJob.271.Big Ass",
+    "en": "Goodbye, Comrades.",
+    "nl": "Vaarwel, Kameraden."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_ShippingTwo_localization",
+    "row": 3,
+    "key": "SAY.Dialog:EnterControlRoom.1.Big Ass",
+    "en": "There must be a way to free the other Asses in here.",
+    "nl": "Er moet toch een manier zijn om de andere Ezels hier vrij te krijgen."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 3,
+    "key": "SAY.Dialog:Container.51.Big Ass",
+    "en": "Am I making a massive mistake?",
+    "nl": "Ben ik hier een massale fout aan 't maken?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 4,
+    "key": "SAY.Dialog:Container.58.Big Ass",
+    "en": "Shouldn't I try to stop the one in charge?",
+    "nl": "Zou 'k nie moeten proberen om degene die de leiding heeft tegen te houden?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 5,
+    "key": "SAY.Dialog:Container.61.Big Ass",
+    "en": "No, I've already done what I came to do.",
+    "nl": "Nee, 'k heb al gedaan waarvoor 'k gekomen ben."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 6,
+    "key": "SAY.Dialog:Container.23.Big Ass",
+    "en": "This way looks much more dangerous...",
+    "nl": "Deze kant ziet er wel véél gevaarlijker uit..."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 7,
+    "key": "SAY.Dialog:Container.20.Big Ass",
+    "en": "I shouldn't bite off more than I can chew...",
+    "nl": "'k Zou best niet te veel hooi op mijn vork nemen."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 8,
+    "key": "SAY.Dialog:Container.39.Big Ass",
+    "en": "What am I saying... I can do this!",
+    "nl": "Wat zeg ik nu... 'k kan dit!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 9,
+    "key": "SAY.Dialog:Container.44.Big Ass",
+    "en": "UH OH.",
+    "nl": "OEI OEI."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 7,
+    "key": "SAY.Dialog:Opening.159.Big Ass",
+    "en": "I made it out... I'm FREE!",
+    "nl": "'k Ben eruit geraakt... 'k ben VRIJ!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 8,
+    "key": "SAY.Dialog:Opening.148.Big Ass",
+    "en": "And I saved all those Asses—",
+    "nl": "En ik heb al die Ezels gered—"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 9,
+    "key": "SAY.Dialog:Opening.155.Big Ass",
+    "en": "But I guess I'm on my own now...",
+    "nl": "Maar 'k denk dat ik er nu alleen voor sta..."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 10,
+    "key": "SAY.Dialog:Opening.165.Big Ass",
+    "en": "IT'S GONNA BLOW!",
+    "nl": "'T GAAT ONTPLOFFEN!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 11,
+    "key": "SAY.Dialog:Opening.167.Big Ass",
+    "en": "HEE HAW! I DID IT!",
+    "nl": "HIE HAA! 'K HEB 'T GEDAAN!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 12,
+    "key": "SAY.Dialog:Opening.173.Big Ass",
+    "en": "Who'd have thought I could save all those Asses and blow up a Factory all on my own?",
+    "nl": "Wie had dat gedacht, da'k in mijn eentje al die Ezels kon redden én een hele Fabriek de lucht in kon blazen?"
+  }
+]

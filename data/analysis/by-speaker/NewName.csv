@@ -1,0 +1,268 @@
+index,episode,sheet,speaker,english,dutch
+1,E3,E3_Mine1FOpening_localization,{$NewName},"Comrade Mother, will this crappy weather ever end?","Kameraad Moeder, gaat dit kloteweeer ooit nog stoppen?"
+2,E3,E3_Mine1FOpening_localization,{$NewName},I'm cold.,'k Heb het koud.
+3,E3,E3_Mine1FOpening_localization,{$NewName},I'm hungry.,'k Heb honger.
+4,E3,E3_Mine1FOpening_localization,{$NewName},I'm damp.,'k Ben nat.
+5,E3,E3_Mine1FOpening_localization,{$NewName},And worst of all...,En het ergste van al...
+6,E3,E3_Mine1FOpening_localization,{$NewName},I'M BORED.,'K VERVEEL MIJ DOOD.
+7,E3,E3_Mine1FOpening_localization,{$NewName},Is work...really thaaaaaaat great?,Is werken... echt zooooooo geweldig?
+8,E3,E3_Mine1FOpening_localization,{$NewName},But Comrade Mother...,Maar Kameraad Moeder...
+9,E3,E3_Mine1FOpening_localization,{$NewName},What if I don't want to work...?,Wat als ik niet wil werken...?
+10,E3,E3_Mine1FOpening_localization,{$NewName},What if I want to jump around and explore?,Wat als ik wil rondspringen en ontdekken?
+11,E3,E3_Mine1FOpening_localization,{$NewName},What if I just want... to play?,Wat als ik gewoon... wil spelen?
+12,E3,E3_Mine1FOpening_localization,{$NewName},Wahoo!,Joepie!
+13,E3,E3_Mine1FOpening_localization,{$NewName},"Tell me about your adventures, Uncle Kick!","Vertel mij over uw avonturen, Nonkel Hoef!"
+14,E3,E3_Mine1FOpening_localization,{$NewName},Really? Wahoo!,Echt? Joepie!
+15,E3,E3_Mine1F_localization,{$NewName},I love love LOVE Rocks!,Ik hou hou HOU van Keien!
+16,E3,E3_Mine1F_localization,{$NewName},Maybe Aunty Nice wants to watch me play!,Misschien wil Tante Schoontje wel komen kijken!
+17,E3,E3_Mine1F_localization,{$NewName},Maybe Uncle Thirsty wants to watch me play!,Misschien wil Nonkel Dorst wel meekijken!
+18,E3,E3_Mine1F_localization,{$NewName},My high score for Rocks today is {$Number}.,Mijn hoogste score vandaag is {$Number}.
+19,E3,E3_Mine1F_localization,{$NewName},Cool. This rock looks different! I'm gonna keep it!,Wauw! Deze kei ziet er kei-cool uit! Die hou ik bij!
+20,E3,E3_Mine1F_localization,{$NewName},"Wow, what a hard rock! I'm gonna keep it.",Amai! Da’s een harde kei! Die steek ik bij!
+21,E3,E3_Mine1F_localization,{$NewName},"Wow, what a classic rock! This one might be my favourite!",Wauw! Wat een klassieker! Da’s misschien mijn favoriet!
+22,E3,E3_Mine1F_localization,{$NewName},This is a weird looking rock...,Da’s een raar uitziende kei…
+23,E3,E3_Mine1F_localization,{$NewName},It's all boarded up.,Alles is dichtgetimmerd.
+24,E3,E3_Mine1F_localization,{$NewName},It's missing one of those round things...,Er ontbreekt zo’n rond ding…
+25,E3,E3_Mine1F_localization,{$NewName},Cool! It fits perfectly!,Joepie! ’t Past perfect!
+26,E3,E3_Mine1F_localization,{$NewName},"Do you want to watch me play Rocks, Uncle Sad?","Wil je kijken naar mijn Stenen-spel, Nonkel Triestigaard?"
+27,E3,E3_Mine1F_localization,{$NewName},Why not?,Waarom niet?
+28,E3,E3_Mine1F_localization,{$NewName},I think we're alive to live in the present and do what brings us joy.,Ik denk dat we leven om nu plezier te maken en te doen waar we blij van worden.
+29,E3,E3_Mine1F_localization,{$NewName},"If what we're doing doesn't bring us joy, maybe we should do something different!","Als wat we doen ons geen vreugde brengt, moeten we misschien iets anders doen!"
+30,E3,E3_Mine1F_localization,{$NewName},Comrade Mother says we're alive to honour the legacy of our Ancestors through hard Work.,Kameraad-Moeder zegt dat we leven om de erfenis van onze Voorouders te eren met hard Werk.
+31,E3,E3_Mine1F_localization,{$NewName},Someone's whispering...,Iemand is aan ’t fluisteren...
+32,E3,E3_Mine1F_localization,{$NewName},Do you want to watch me play Rocks?,Wil je kijken naar mijn Stenen-spel?
+33,E3,E3_Mine1F_localization,{$NewName},"Boulders can't stop water, can they?","Rotsblokken kunnen water niet stoppen, hè?"
+34,E3,E3_Mine1F_localization,{$NewName},Isn't there a better way to move a boulder?,Is er geen betere manier om zo’n kei te verleggen?
+35,E3,E3_Mine1F_localization,{$NewName},But why don't you make a system that would lift one side up when you put enough weight on the other side?,Maar waarom maakt ge geen systeem dat één kant opheft als ge gewicht op de andere zet?
+36,E3,E3_Mine1F_localization,{$NewName},You could make it fun too!,Ge kunt het zelfs plezant maken!
+37,E3,E3_Mine1F_localization,{$NewName},What's that heavy breathing?,Wat is dat zwaar gehijg?
+38,E3,E3_Mine1F_localization,{$NewName},"Uncle Kick, Uncle Hard, do you want to watch me play Rocks?","Nonkel Hoef, Nonkel Stoer, willen jullie kijken naar mijn Stenen-spel?"
+39,E3,E3_Mine1F_localization,{$NewName},What's wrong with her?,Wat scheelt er met haar?
+40,E3,E3_Mine1F_localization,{$NewName},Is that what happened to your ear?,Is dat wat er met uw oor gebeurd is?
+41,E3,E3_Mine1F_localization,{$NewName},What happened next?,En wat gebeurde er dan?
+42,E3,E3_Mine1F_localization,{$NewName},Oh right. I've heard this story before.,Ah juist. Dit verhaal heb ik al gehoord.
+43,E3,E3_Mine1F_localization,{$NewName},It sounds like someone's in pain...,’t Klinkt alsof iemand pijn heeft...
+44,E3,E3_Mine1F_localization,{$NewName},"Will you watch me play Rocks, Uncle Slow?","Wil je kijken naar mijn Stenen-spel, Oom Sloom?"
+45,E3,E3_Mine1F_localization,{$NewName},Really?,Echt?
+46,E3,E3_Mine1F_localization,{$NewName},Are Comrade Mother and Aunty Smart arguing?,Zijn Kameraad-Moeder en Tante Betje aan ’t bekvechten?
+47,E3,E3_Mine1F_localization,{$NewName},Whoa.,Amai.
+48,E3,E3_Mine1F_localization,{$NewName},Huh?,Huh?
+49,E3,E3_Mine1F_localization,{$NewName},Hey a light? That's never happened before...,"Hé, een licht? Da’s nog nooit gebeurd…"
+50,E3,E3_100_localization,{$NewName},Comrade Mother told me not to touch the Machines...,Kameraad Moeder heeft gezegd dat ik de Machines niet mag aanraken...
+51,E3,E3_100_localization,{$NewName},I shouldn't touch the Machines... but what does it do?,k Mag de Machines niet aanraken... maar wat doet dat ding?
+52,E3,E3_100_localization,{$NewName},"Nah, I don't want to go back yet.","Nee, 'k wil nog niet teruggaan."
+53,E3,E3_100_localization,{$NewName},Booooorrrrrring!,Saaaaaaaaai!
+54,E3,E3_100_localization,{$NewName},AH!,AH!
+55,E3,E3_LazysGrave_localization,{$NewName},Who's there?,Wie is daar?
+56,E3,E3_LazysGrave_localization,{$NewName},LAZY?! I've heard so much about you!,LUIE ZAK?! 'k Heb zoveel over u gehoord!
+57,E3,E3_LazysGrave_localization,{$NewName},I’m your... wait...,Ik ben uw... wacht...
+58,E3,E3_LazysGrave_localization,{$NewName},Aren't you...,Zijt gij nie...
+59,E3,E3_LazysGrave_localization,{$NewName},Wait up!,Wacht eens!
+60,E3,E3_LazysGrave_localization,{$NewName},I’m your sister!,Ik ben uw zus!
+61,E3,E3_LazysGrave_localization,{$NewName},Are these... bones?,Zijn dit... beenderen?
+62,E3,E3_LazysGrave_localization,{$NewName},Woah. Did it hurt?,Amai. Deed dat zeer?
+63,E3,E3_LazysGrave_localization,{$NewName},Why didn't your Ass Soul go to the Astral Plane?,Waarom is uw Ezelenziel nie naar het Astrale Hiernamaals gegaan?
+64,E3,E3_LazysGrave_localization,{$NewName},Comrade Mother told me that's where we all go when we die.,Kameraad Moeder heeft gezegd dat we daar allemaal naartoe gaan als we doodgaan.
+65,E3,E3_LazysGrave_localization,{$NewName},I could try to sing the Song of Ascension for you now!,Ik kan het ezelenhemelvaartszangderzielen voor u proberen zingen!
+66,E3,E3_LazysGrave_localization,{$NewName},There's no way out?! I don't want to die here!,Geen uitweg?! Ik wil hier nie doodgaan!
+67,E3,E3_LazysGrave_localization,{$NewName},Wha-wait! Come back!!,Wa-wacht! Kom terug!!
+68,E3,E3_LazysGrave_localization,{$NewName},"It was really nice to finally meet you, sister.","'t Was echt fijn om u eindelijk te ontmoeten, zus."
+69,E3,E3_LazysGrave_localization,{$NewName},"What do you mean "" Boredom is Freedom""?","Wat bedoelt ge met ""Verveling is Vrijheid""?"
+70,E3,E3_LazysGrave_localization,{$NewName},No. It was {$Number} seconds of my life I'll never get back.,Nee. 't Was {$Number} seconden van mijn leven die ik nooit terugkrijg.
+71,E3,E3_200_localization,{$NewName},Everyone looks so serious.,Iedereen ziet er zo serieus uit.
+72,E3,E3_200_localization,{$NewName},Cool!,Cool!
+73,E3,E3_200_localization,{$NewName},Uh oh!,Oei oei!
+74,E3,E3_300_localization,{$NewName},Hey! That looks like a shortcut!,Hey! Dat ziet er uit als een kortere weg!
+75,E3,E3_300_localization,{$NewName},Well the other two Machines weren't that bad...,"Awel, die andere twee Machines waren niet zo erg..."
+76,E3,E3_300_localization,{$NewName},That was fun!,Dat was plezant!
+77,E3,E3_300_localization,{$NewName},Oh well. I'll just take the long way!,Ach ja. 'k Neem gewoon de lange weg!
+78,E3,E3_BadCave_localization,{$NewName},Who's there? Quit hiding!,Wie is daar? Stop met verstoppen!
+79,E3,E3_BadCave_localization,{$NewName},Lazy? Is that you?,Luie? Zijt gij dat?
+80,E3,E3_BadCave_localization,{$NewName},Uncle Bad Ass?!,Nonkel Waaghalske?!
+81,E3,E3_BadCave_localization,{$NewName},Is this where you've been?,Is het hier dat ge zit?
+82,E3,E3_BadCave_localization,{$NewName},"Wait, what are all these Machines?","Wacht, wat zijn al die Machines?"
+83,E3,E3_BadCave_localization,{$NewName},WAIT!!,WACHT!!
+84,E3,E3_BadCave_localization,{$NewName},ARE YOU ON FIRE?,STAAT GE IN BRAND?
+85,E3,E3_BadCave_localization,{$NewName},Where did they come from?,Van waar komen die?
+86,E3,E3_BadCave_localization,{$NewName},Comrade Mother always says Machines are evil...,Kameraad Moeder zegt altijd dat Machines slecht zijn...
+87,E3,E3_BadCave_localization,{$NewName},But I'm not so sure.,Maar 'k ben daar nie zo zeker van.
+88,E3,E3_BadCave_localization,{$NewName},Woah...,Amai...
+89,E3,E3_BadCave_localization,{$NewName},"So what can Computers do, if you... know how to use them?","Dus wat kunnen Computers doen, als ge... weet hoe ze te gebruiken?"
+90,E3,E3_BadCave_localization,{$NewName},GAMES!,SPELLEKES!
+91,E3,E3_BadCave_localization,{$NewName},I love love LOVE games!,'k Vind spellekes SUPER SUPER TOF!
+92,E3,E3_BadCave_localization,{$NewName},Can we play together?,Kunnen we samen spelen?
+93,E3,E3_BadCave_localization,{$NewName},That was WAY BETTER THAN ROCKS!,Dat was VEEL BETER DAN STENEN!
+94,E3,E3_BadCave_localization,{$NewName},Machines are FUN!,Machines zijn PLEZANT!
+95,E3,E3_BadCave_localization,{$NewName},What other GAMES CAN WE PLAY?!,Welke andere SPELLEKES KUNNEN WE SPELEN?!
+96,E3,E3_BadCave_localization,{$NewName},Why is the Herd afraid of Machines?,Waarom is de Kudde bang van Machines?
+97,E3,E3_BadCave_localization,{$NewName},"So... Is that why you don't spend more time with the Herd, Uncle Bad Ass?","Dus... Is dat waarom ge niet meer met de Kudde hangt, Nonkel Waaghalske?"
+98,E3,E3_BadCave_localization,{$NewName},"Well, I'm not an Ass, I'm a Foal!","Awel, ik ben geen Ezel, ik ben een Veulen!"
+99,E3,E3_BadCave_localization,{$NewName},Can I... stay down here with you?,Mag ik... hier beneden bij u blijven?
+100,E6,E6_BattleHard_localization,{$NewName},"Uncle Hard, everyone says you're a two-faced liar!","Oom Bikkel, iedereen zegt dat je een achterbakse leugenaar bent!"
+101,E6,E6_World_localization,{$NewName},Hi Uncle Hard! How many Humans have you killed today?,Hoi Oom Bikkelhard! Hoeveel Mensen heb je vandaag gedood?
+102,E6,E6_World_localization,{$NewName},Ugh! It's just a QUESTION.,Ugh! Het is maar een VRAAG.
+103,E6,E6_World_localization,{$NewName},Yeesh.,Tjee.
+104,E6,E6_World_localization,{$NewName},"Uncle Hard, Comrade Mother and I are spending 'quality time' together, wanna come?","Oom Bikkel, Kameraad Moeder en ik brengen 'quality time' samen door, wil je meedoen?"
+105,E6,E6_World_localization,{$NewName},When will Aunty Smart and the others decide to come home?,Wanneer komen Tante Slimme en de anderen naar huis?
+106,E6,E6_World_localization,{$NewName},...,...
+107,E6,E6_World_localization,{$NewName},Can we head back to the Old Village now?,Kunnen we nu terug naar het Oude Dorp?
+108,E6,E6_World_localization,{$NewName},You promised to show me where the Old Theatre is.,Je had beloofd me te laten zien waar het Oude Theater is.
+109,E6,E6_World_localization,{$NewName},"Let's go, let's go, let's go!","Kom op, kom op, kom op!"
+110,E6,E6_World_localization,{$NewName},Is this what it was like on the day of the protest?,Is dit hoe het was op de dag van het Protest?
+111,E6,E6_World_localization,{$NewName},The sun is so bright!,De zon is zo fel!
+112,E6,E6_World_localization,{$NewName},It's a good thing I have my helmet.,Het is maar goed dat ik mijn helm heb.
+113,E6,E6_World_localization,{$NewName},WAHOO! There are so many cool rocks out here!,WAHOO! Er liggen hier zoveel coole stenen!
+114,E6,E6_World_localization,{$NewName},"Ugh. Whatever, Comrade Mother.","Ugh. Maakt niet uit, Kameraad Moeder."
+115,E6,E6_World_localization,{$NewName},"I don't care which way we go, as long we get to the Old Village!","Mij maakt het niet uit welke weg we nemen, als we maar bij het Oude Dorp komen!"
+116,E6,E6_World_localization,{$NewName},—which one's the 'Theatre'?,—welke is het 'Theater'?
+117,E6,E6_World_localization,{$NewName},Everyone is interested in Theatre!,Iedereen is geïnteresseerd in Theater!
+118,E6,E6_World_localization,{$NewName},—which one's the 'Theatre'?,—welke is het 'Theater'?
+119,E6,E6_World_localization,{$NewName},Everyone is interested in Theatre!,Iedereen is geïnteresseerd in Theater!
+120,E6,E6_World_localization,{$NewName},Mother! Where are you going?!,Moeder! Waar ga je heen?!
+121,E6,E6_World_localization,{$NewName},You promised to show me the Theatre!,Je had beloofd me het Theater te laten zien!
+122,E6,E6_World_localization,{$NewName},Huh? You never told me that.,Hè? Dat heb je me nooit verteld.
+123,E6,E6_World_localization,{$NewName},Can I go inside?,Mag ik naar binnen?
+124,E6,E6_World_localization,{$NewName},I can totally fit and I'll be super safe.,Ik pas er makkelijk door en ik zal super veilig zijn.
+125,E6,E6_World_localization,{$NewName},I just want to look inside.,Ik wil alleen even naar binnen kijken.
+126,E6,E6_World_localization,{$NewName},Please?,Alsjeblieft?
+127,E6,E6_World_localization,{$NewName},—WAHOO! You're the best!,—WAHOE! Je bent de beste!
+128,E6,E6_World_localization,{$NewName},Pleeeeeaaaaaaaaase?,Alsjebliiiiiiiiieeeeeft?
+129,E6,E6_World_localization,{$NewName},I'm FINE MOTHER!,Ik ben GESTELD MOEDER!
+130,E6,E6_World_localization,{$NewName},Told ya I'd be safe!,Zei toch dat ik veilig zou zijn!
+131,E6,E6_World_localization,{$NewName},Ohh... I just remembered I promised Uncle Bad Ass we'd play Rocks!,Ohh... ik herinner me net dat ik Oom Stoere Ezel beloofd heb dat we Stenen-spel zouden spelen!
+132,E6,E6_World_localization,{$NewName},I gotta go.,Ik moet gaan.
+133,E6,E6_World_localization,{$NewName},"Love you, bye!","Hou van je, doei!"
+134,E6,E6_World_localization,{$NewName},COME ON!,KOM OP!
+135,E6,E6_World_localization,{$NewName},UGH YOU NEVER LET ME DO ANYTHING FUN!,UGH JE LAAT ME NOOIT IETS LEUKS DOEN!
+136,E6,E6_World_localization,{$NewName},I'M OUTTA HERE.,IK BEN WEG HIER.
+137,E6,E6_MineLift_localization,{$NewName},Stupid Comrade Mother not letting me go in the stupid Theatre.,Stomme Kameraad Moeder die me niet in dat stomme Theater liet gaan.
+138,E6,E6_MineLift_localization,{$NewName},Uncle Bad Ass is going to be so disappointed in me that I didn't get the super important light he wanted.,Oom Stoere Ezel gaat zo teleurgesteld in me zijn dat ik het superbelangrijke licht niet heb gevonden.
+139,E6,E6_MineLift_localization,{$NewName},I gotta find something to replace that super important light he needs...,Ik moet iets vinden om dat superbelangrijke licht dat hij nodig heeft te vervangen...
+140,E6,E6_BadCave_localization,{$NewName},Comrade Mother wouldn't leave...,Kameraad Moeder wilde niet weggaan...
+141,E6,E6_BadCave_localization,{$NewName},She kept talking about how she used to be a star.,Ze bleef maar praten over hoe ze vroeger een ster was.
+142,E6,E6_BadCave_localization,{$NewName},Yessir! I had to crawl through the broken doorway and climb through the rubble—,Jawel! Ik moest door de kapotte deuropening kruipen en over het puin klauteren—
+143,E6,E6_BadCave_localization,{$NewName},You bet!,Reken maar!
+144,E6,E6_BadCave_localization,{$NewName},OF COURSE I DO...,NATUURLIJK WEL...
+145,E6,E6_BadCave_localization,{$NewName},Phew! It works!,Pfoe! Het werkt!
+146,E6,E6_BadCave_localization,{$NewName},Why does the Mystery-Machine need this super important light from the Theatre??,Waarom heeft de Mysterie-Machine dit superbelangrijke licht van het Theater nodig??
+147,E6,E6_BadCave_localization,{$NewName},Hey Uncle Bad Ass...,Hé Oom Stoere...
+148,E6,E6_BadCave_localization,{$NewName},Are you going to tell me what the Mystery-Machine is for?,Ga je me vertellen waar de Mysterie-Machine voor is?
+149,E6,E6_BadCave_localization,{$NewName},...I feel weird lying to Comrade Mother.,...ik vind het raar om tegen Kameraad Moeder te liegen.
+150,E6,E6_BadCave_localization,{$NewName},She still thinks we are playing 'Rocks' down here everyday...,Ze denkt nog steeds dat we hier elke dag 'Stenen-spel' aan het spelen zijn...
+151,E6,E6_BadCave_localization,{$NewName},Hey Uncle Bad Ass...,Hé Oom Stoere...
+152,E6,E6_BadCave_localization,{$NewName},...what were your parents like?,...hoe waren jouw ouders?
+153,E6,E6_BadCave_localization,{$NewName},...woah.,...woah.
+154,E6,E6_BadCave_localization,{$NewName},...your Mother abandoned you?,...je Moeder heeft je in de steek gelaten?
+155,E6,E6_BadCave_localization,{$NewName},Where would you go?,Waar zou je naartoe gaan?
+156,E6,E6_BadCave_localization,{$NewName},What's wrong with here?,Wat is er mis met hier?
+157,E9,E9_BadCave_localization,{$NewName},Uncle Bad Ass?,Nonkel Stoere Ezel?
+158,E9,E9_BadCave_localization,{$NewName},Uncle Bad—Cole... is being a donkey such a terrible thing?,Oom Stoere—Piet... is het zo erg om een ezel te zijn?
+159,E9,E9_BadCave_localization,{$NewName},Are you going to Mecha City now...?,Ga je nu naar Mechalen...?
+160,E9,E9_BadCave_localization,{$NewName},But I want to see Mecha City too! We can go together!,Maar ik wil Mechalen ook zien! We kunnen samen gaan!
+161,E9,E9_BadCave_localization,{$NewName},Then... can I become a Machine too?,Kan... ik dan ook een Machine worden?
+162,E9,E9_BadCave_localization,{$NewName},We can play games during our breaks.,We kunnen spelletjes spelen tijdens onze pauzes.
+163,E9,E9_BadCave_localization,{$NewName},We can invent new Machines!,We kunnen nieuwe Machines uitvinden!
+164,E9,E9_BadCave_localization,{$NewName},We can make the world a better place for Asses!,We kunnen van de wereld een betere plek maken voor Ezels!
+165,E9,E9_BadCave_localization,{$NewName},REALLY?! WAHOO!,ECHT?! WAHOE!
+166,E9,E9_BadCave_localization,{$NewName},Comrade Mother?!,Kameraad Moeder?!
+167,E9,E9_BadCave_localization,{$NewName},"Don't worry Comrade Mother, this IS Uncle Bad—Cole.","""Geen zorgen Kameraad Moeder, dit IS Nonkel Stoere—Piet."""
+168,E9,E9_BadCave_localization,{$NewName},No! I'm going to become a Machine like Uncle Bad—Cole!,Nee! Ik ga een Machine worden zoals Nonkel Stoere—Piet!
+169,E9,E9_BadCave_localization,{$NewName},Because that's WHO HE IS.,Omdat dat is WIE HIJ IS.
+170,E9,E9_BadCave_localization,{$NewName},"Mother, listen to me.","Moeder, luister naar mij."
+171,E9,E9_BadCave_localization,{$NewName},I'm tired of you always looking over my shoulder and telling me what to do!,Ik ben het beu dat je altijd over mijn schouder meekijkt en mij zegt wat ik moet doen!
+172,E9,E9_BadCave_localization,{$NewName},Uncle Bad—Cole has taught me the truth of how the world works.,Nonkel Stoere—Piet heeft me de waarheid geleerd over hoe de wereld werkt.
+173,E9,E9_BadCave_localization,{$NewName},That it's NOT FUN for Asses!,Dat het NIET LEUK is voor Ezels!
+174,E9,E9_BadCave_localization,{$NewName},Give me one good reason why a Foal like me should want to grow up to be an Ass in this world?,Geef me één goede reden waarom een veulentje zoals ik zou willen opgroeien tot een Ezel in deze wereld?
+175,E9,E9_BadCave_localization,{$NewName},"No, it's just how I was BORN.","Nee, 't is gewoon hoe ik GEBOREN ben."
+176,E9,E9_BadCave_localization,{$NewName},"Let's do it, Uncle Bad—Cole!","Kom, we starten, Nonkel Stoere—Piet!"
+177,E9,E9_BadCave_localization,{$NewName},Let me go!!,Laat me los!!
+178,E9,E9_BadCave_localization,{$NewName},Hit it!!,Doe maar!!
+179,E9,E9_BadCave_localization,{$NewName},COOOOOOOOL!,COOOOOOOOL!
+180,E9,E9_BadCave_localization,{$NewName},What's that sound—?,Wat is dat voor geluid—?
+181,E9,E9_MineEscape_localization,{$NewName},Comrade Mother!,Kameraad Moeder!
+182,E9,E9_MineEscape_localization,{$NewName},Comrade Mother!,Kameraad Moeder!
+183,E9,E9_MineEscape_localization,{$NewName},I'm not going to let you go!,Ik laat u niet los!
+184,E9,E9_MineEscape_localization,{$NewName},"Let's go, let's go, let's go!","Kom, kom, kom!"
+185,E9,E9_MineEscape_localization,{$NewName},Mother?,Moeder?
+186,E9,E9_MineEscape_localization,{$NewName},I'm not evil! I'm your daughter!,Ik ben niet slecht! Ik ben uw dochter!
+187,E9,E9_MineEscape_localization,{$NewName},Mother! LOOK AT ME!,Moeder! KIJK NAAR MIJ!
+188,E9,E9_MineEscape_localization,{$NewName},I'm not giving up. I'm growing up.,Ik geef niet op. Ik word volwassen.
+189,E9,E9_MineEscape_localization,{$NewName},I'm not like the others in the Herd.,Ik ben niet zoals de anderen in de Kudde.
+190,E9,E9_MineEscape_localization,{$NewName},I've never wanted the work-filled life you had before Machines.,Ik heb nooit het werkgevulde leven gewild dat jij had vóór de Machines.
+191,E9,E9_MineEscape_localization,{$NewName},I don't like manual labour.,Ik hou niet van zwaar lichamelijk werk.
+192,E9,E9_MineEscape_localization,{$NewName},And I don't like sitting in a field doing nothing all day either.,En ik hou ook niet van de hele dag in een veld te zitten niksen.
+193,E9,E9_MineEscape_localization,{$NewName},I think everyone would be happier if we had a little fun together.,Ik denk dat iedereen gelukkiger zou zijn als we samen wat plezier hadden.
+194,E9,E9_MineEscape_localization,{$NewName},Mother?,Moeder?
+195,E9,E9_MineEscape_localization,{$NewName},I'm not giving up and I'm not letting you stay here either!,Ik geef niet op en ik laat jou hier ook niet achter!
+196,E9,E9_GoldenAss_localization,{$NewName},Hey! What's that?,Hé! Wat is dat?
+197,E9,E9_GoldenAss_localization,{$NewName},Aunty Sick?!,Tante Snot?!
+198,E9,E9_GoldenAss_localization,{$NewName},Coooool!,Coooool!
+199,E9,E9_GoldenAss_localization,{$NewName},My name is {$NewName} and I used to be a Foal!,Mijn naam is {$NewName} en ik was vroeger een veulentje!
+200,E9,E9_GoldenAss_localization,{$NewName},This is my Uncle. He's a Machine too!,Dit is mijn nonkel. Hij is ook een Machine!
+201,E9,E9_GoldenAss_localization,{$NewName},But he used to be a Human.,Maar hij was vroeger een Mens.
+202,E9,E9_GoldenAss_localization,{$NewName},But also an Ass.,Maar ook een Ezel.
+203,E9,E9_GoldenAss_localization,{$NewName},"And that's my Mother, she's just an Ass.","En dat is mijn Moeder, zij is gewoon een Ezel."
+204,E9,E9_GoldenAss_localization,{$NewName},What's a Prophet?,Wat is een Profeet?
+205,E9,E9_GoldenAss_localization,{$NewName},That sounds FUN! Doesn't it Uncle Bad—Cole?,"Da klinkt LEUK! Toch, Nonkel Stoere—Piet?"
+206,E9,E9_GoldenAss_localization,{$NewName},What's the message?,Wat is de boodschap?
+207,E9,E9_GoldenAss_localization,{$NewName},"Allies! Allies are like friends, right Uncle Bad—Cole?","Bondgenoten! Bondgenoten zijn zoals vrienden, toch Nonkel Stoere—Piet?"
+208,E9,E9_GoldenAss_localization,{$NewName},What are we going to do with all those friends?,Wat gaan we doen met al die vrienden?
+209,E9,E9_GoldenAss_localization,{$NewName},"Uncle Bad—Cole, wait!","Nonkel Stoere—Piet, wacht!"
+210,E9,E9_GoldenAss_localization,{$NewName},You said we are going to transform the world into a better place for everyone!,Ge hebt gezegd dat we de wereld gaan veranderen in een betere plek voor iedereen!
+211,E9,E9_GoldenAss_localization,{$NewName},Doesn't that include Asses?,Horen Ezels daar dan niet bij?
+212,E9,E9_GoldenAss_localization,{$NewName},What about Comrade Mother?,En wat met Kameraad Moeder?
+213,E9,E9_GoldenAss_localization,{$NewName},Wait!,Wacht!
+214,E9,E9_GoldenAss_localization,{$NewName},"Aunty Sick—Golden—Gods, can I fly on the Winds of Revolution, too?","Tante Snot—Gouden—Goden, mag ik ook op de Winden van de Revolutie vliegen?"
+215,E9,E9_GoldenAss_localization,{$NewName},But I'm his Assistant—,Maar ik ben zijn Assistent—
+216,E9,E9_GoldenAss_localization,{$NewName},Okay but—,Oké maar—
+217,E9,E9_GoldenAss_localization,{$NewName},Comrade Mother.,Kameraad Moeder.
+218,E9,E9_GoldenAss_localization,{$NewName},Where's the rest of the Herd?,Waar is de rest van de Kudde?
+219,E9,E9_GoldenAss_localization,{$NewName},...,...
+220,E9,E9_GoldenAss_localization,{$NewName},"Mother, if Uncle Hard and the others are gone, I don't think it's safe for us here anymore.","Moeder, als Nonkel Bikkelharde en de anderen weg zijn, denk ik niet dat het hier nog veilig is voor ons."
+221,E9,E9_GoldenAss_localization,{$NewName},Will you come with me to Mecha City?,Wil je met mij mee naar Mechalen?
+222,E9,E9_GoldenAss_localization,{$NewName},WAHOO! Really?! Oh wow! That's so exciting!,WAHOE! Echt waar?! Oh wauw! Dat is zó spannend!
+223,E9,E9_GoldenAss_localization,{$NewName},Okay!,Oké!
+224,E9,E9_GoldenAss_localization,{$NewName},"Wait... Aunty Sick—Golden—Gods, is this a short trip... or a long trip?","Wacht... Tante Snot—Gouden—Goden, is dit een kort ritje... of een lang ritje?"
+225,E9,E9_GoldenAss_localization,{$NewName},Oh.,Oh.
+226,E9,E9_GoldenAss_localization,{$NewName},Um.,Euhm.
+227,E9,E9_GoldenAss_localization,{$NewName},Comrade Mother... ?,Kameraad Moeder... ?
+228,E9,E9_GoldenAss_localization,{$NewName},"Aunty Sick—Golden—Gods, can Comrade Mother come with us?","Tante Snot—Gouden—Goden, mag Kameraad Moeder met ons meekomen?"
+229,E9,E9_GoldenAss_localization,{$NewName},Yes...?,Ja...?
+230,E9,E9_GoldenAss_localization,{$NewName},"But Uncle Bad—Cole, we're supposed to go to the big city together!","Maar Nonkel Stoere—Piet, we zouden toch samen naar de grote stad gaan!"
+231,E9,E9_GoldenAss_localization,{$NewName},"Comrade Mother, I'm not giving up on you.","Kameraad Moeder, ik geef u niet op."
+232,E9,E9_GoldenAss_localization,{$NewName},"So, don't give up on me either.",Dus geef mij ook niet op.
+233,E9,E9_GoldenAss_localization,{$NewName},See you soon Uncle Bad—Cole!,Tot snel Nonkel Stoere—Piet!
+234,E9,E9_GoldenAss_localization,{$NewName},See you soon... Mother. I love you.,Tot snel... Moeder. Ik hou van u.
+235,E10,E10_Government_localization,{$NewName},Hiya Aunties and Uncles!,Hallo Tantes en Nonkels!
+236,E10,E10_Government_localization,{$NewName},"WOAH, look at all these new Ass friends!","WOAH, kijk eens naar al die nieuwe Ezelvriendjes!"
+237,E10,E10_Government_localization,{$NewName},Yeah! Check it out! I'm a Prophet now! And a Machine!,Ja! Kijk kijk! Ik ben nu een Profeet! En een Machine!
+238,E10,E10_Government_localization,{$NewName},"Uncle Bad—Cole, built a cool Transformation-Machine and now I can walk on two legs!",Nonkel Stoere—Piet heeft een coole Transformatie-Machine gebouwd en nu kan ik op twee benen lopen!
+239,E10,E10_Government_localization,{$NewName},I can also do this!,Ik kan ook dit doen!
+240,E10,E10_Government_localization,{$NewName},I think there's a setting—hold on... okay:,Ik denk dat er een instelling is—wacht even... oké:
+241,E10,E10_Government_localization,{$NewName},"""Anyone want to play ROCKS?""","""Heeft iemand zin om STENEN-SPEL te spelen?"""
+242,E10,E10_Government_localization,{$NewName},Wowee... okay...,Wowee... oké...
+243,E10,E10_Government_localization,{$NewName},Umm... Not yet.,Euhm... Nog niet.
+244,E10,E10_Government_localization,{$NewName},READY!,KLAAR!
+245,E10,E10_ProphetSpeech_localization,{$NewName},WOAH! I've never seen so many Humans!,WOAH! Ik heb nog nooit zoveel Mensen gezien!
+246,E10,E10_ProphetSpeech_localization,{$NewName},Okay...,Oké...
+247,E10,E10_ProphetSpeech_localization,{$NewName},A Manifesto.,Een Manifest.
+248,E10,E10_ProphetSpeech_localization,{$NewName},By my Aunties and Uncles and friends.,Van mijn Tantes en Nonkels en vrienden.
+249,E10,E10_ProphetSpeech_localization,{$NewName},Their top demands are:,Hun belangrijkste eisen zijn:
+250,E10,E10_ProphetSpeech_localization,{$NewName},{$ManifestoVar0},{$ManifestoVar0}
+251,E10,E10_ProphetSpeech_localization,{$NewName},{$ManifestoVar1},{$ManifestoVar1}
+252,E10,E10_ProphetSpeech_localization,{$NewName},{$ManifestoVar2},{$ManifestoVar2}
+253,E10,E10_ProphetSpeech_localization,{$NewName},{$ManifestoVar3},{$ManifestoVar3}
+254,E10,E10_ProphetSpeech_localization,{$NewName},{$ManifestoVar4},{$ManifestoVar4}
+255,E10,E10_ProphetSpeech_localization,{$NewName},Thank you for listening.,Bedankt om te luisteren.
+256,E10,E10_ProphetSpeech_localization,{$NewName},"Now that you all know the demands, we can change the System together.","Nu dat je allemaal de eisen kent, kunnen we samen het Systeem veranderen."
+257,E10,E10_ProphetSpeech_localization,{$NewName},My Uncle Bad—Cole taught me that the System is rigged against Asses.,Mijn Nonkel Stoere—Piet heeft me geleerd dat het Systeem tegen Ezels is opgezet.
+258,E10,E10_ProphetSpeech_localization,{$NewName},But I kinda think the System is rigged against everyone!,Maar ik denk eigenlijk dat het Systeem tegen iedereen vals speelt!
+259,E10,E10_ProphetSpeech_localization,{$NewName},Because no one here looks happy.,Want niemand ziet er hier gelukkig uit.
+260,E10,E10_ProphetSpeech_localization,{$NewName},Everyone looks tired.,Iedereen ziet er moe uit.
+261,E10,E10_ProphetSpeech_localization,{$NewName},And a little angry.,En een beetje boos.
+262,E10,E10_ProphetSpeech_localization,{$NewName},How am I doing Aunty Sick—Golden—Gods?,Tante Snot—Gouden—Goden? Lukt het mij wat?
+263,E10,E10_ProphetSpeech_localization,{$NewName},"Cool, I now invite all my Aunties and Uncles and friends to sing TOGETHER!","Cool, ik nodig nu al mijn Tantes en Nonkels en vrienden uit om SAMEN te zingen!"
+264,E10,E10_Epilogue_localization,{$NewName},Mother—I see a Human coming! Let's go!,Moeder—ik zie een Mens aankomen! Laten we gaan!
+265,E10,E10_Epilogue_localization,{$NewName},UGH! This rain is so not good for my metal.,BAH! Deze regen is echt niet goed voor mijn metaal.
+266,E10,E10_Epilogue_localization,{$NewName},The next Farm is a whole day's walk away!,De volgende Boerderij is een hele dag stappen!
+267,E10,E10_Epilogue_localization,{$NewName},Do you think they'll join us?,Denkt ge dat ze zich bij ons zullen aansluiten?
