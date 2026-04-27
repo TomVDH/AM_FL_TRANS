@@ -158,7 +158,7 @@ When auto-expanding stutters by regex, **post-pass trim is required**: `([A-Za-z
 **Token counts (live, intimate-pronoun families):**
 - ge: 9 · gij: 2 · u: 3 · uw: 2 → **GE-family: 16**
 - je: 9 · jou: 1 · jouw: 1 · jullie: 2 → **JE-family: 13**
-- ik: 38 · 'k: 10
+- ik: 38 · 'k: 12 (11 lowercase + 1 uppercase `'K` at E7_CityStreet R11; double-hits at E7_BigBattle R5 and E7_CityStreet R7) — *corrected 2026-04-27 from snapshot replay (was 10)*
 - het: 22 · 't: 9
 - niet: 16 · nie: 7
 - kameraad: 8 (× *Kameraden* plural: 3) — always capitalized
@@ -174,8 +174,8 @@ When auto-expanding stutters by regex, **post-pass trim is required**: `([A-Za-z
 | Field | Codex says | Reality |
 |---|---|---|
 | pronounForm | `mixed` | Tom locked `ge/gij` 2026-04-27 (see Part 4) |
-| contractions | `none` | Stale — corpus has `'k`×10 + `'t`×9 |
-| note | `"full Ik not 'k; niet dominant over nie"` | Half-stale — `niet` part is right; `'k` part is wrong (10 instances). Will be rewritten after Big Ass lock. |
+| contractions | `none` | Stale — corpus has `'k`×12 + `'t`×9 |
+| note | `"full Ik not 'k; niet dominant over nie"` | Half-stale — `niet` part is right; `'k` part is wrong (12 instances incl. 1 uppercase `'K`). Will be rewritten after Big Ass lock. |
 
 **Stage-direction context:** 49 of 143 lines have stage directions in the Description column. They flag him as: speech-maker (`Branch X.Y: Big makes a speech`), morale officer (`Boosting Big Morale`, `Recruit Big Ass`), self-volunteer for danger (`Big offers to go inside`, `goes into the control room, alone`), and the herd's anxious-but-committed hero in E7 (`A reflection by Big Ass when trying to leave the Factory`).
 
@@ -187,7 +187,7 @@ When auto-expanding stutters by regex, **post-pass trim is required**: `([A-Za-z
 |---|---|---|---|
 | Q1 | pronoun | **ge/gij dominant** | ~11 lines (je-family → ge-family) |
 | Q2 | negation | **`niet` only** | 7 (`nie` → `niet`) |
-| Q3 | `'k`/`ik` | **`ik` only** | 10 (`'k` → `ik`, including 1 `da'k` → `dat ik`) |
+| Q3 | `'k`/`ik` | **`ik` only** | 12 (`'k` → `ik`, including 1 `da'k` → `dat ik` and 1 uppercase `'K` → `IK` at E7_CityStreet R11; *corrected 2026-04-27 from 10*) |
 | Q4 | `'t`/`het` | both free, no normalization | 0 |
 | Q5 | `u`/`uw` | keep all 5 (paradigm with ge/gij) | 0 |
 | Q6 | `jullie` | keep both (accepted in tussentaal) | 0 |
@@ -224,7 +224,7 @@ E1_TheProtest R25:
 
 Codex canon for Old Ass: `Oude Ezel` (formal) / `Oude` (intimate). The `-Zak` suffix matches the `Trouwe Zak` deprecation pattern.
 
-**Cross-character impact:** 19 other `Oude Zak` hits in other characters' lines. Whatever Tom picks here likely becomes a sweep rule.
+**Cross-character impact (verified 2026-04-27 from `_full-corpus-2026-04-26.json`):** 19 total `Oude Zak` hits corpus-wide — 1 Big Ass + 18 elsewhere. By-speaker: Sturdy 6 · Nice 6 · Hard 2 · Old Ass 1 (self-ref or addressing) · Sad 1 · Smart 1 · plus 1 NPC speaker `34`. Whatever Tom picks here likely becomes a sweep rule.
 
 **Options for Tom:**
 - A) `Oude Ezel` — formal full name
@@ -233,11 +233,15 @@ Codex canon for Old Ass: `Oude Ezel` (formal) / `Oude` (intimate). The `-Zak` su
 
 ### Q8 — `Triestigaard` calling Sad Ass
 
-E5_CircusMain R136 *"Ga je zieke moves aan het publiek tonen, **Triestigaard**!"* and R145 *"Maak je niet te druk, **Triestigaard**..."*. Codex canon: `Triestige Ezel`. Big-specific intimate or error?
+E5_CircusMain R136 *"Ga je zieke moves aan het publiek tonen, **Triestigaard**!"* and R145 *"Maak je niet te druk, **Triestigaard**..."*. Codex canon: `Triestige Ezel`.
+
+**Cross-character verification (2026-04-27):** `Triestigaard` has **20 corpus-wide hits across 12 speakers** — Smart 5, Bad 2, Big 2, Kick 2, Hard 1, Nice 1, Sad 1 (himself), Lazy 1, Slow 1, plus `{$NewName}` 1, plus 2 numeric NPC speakers. **This is widespread corpus-canon, not Big-specific.** Likely a codex-vs-corpus problem — codex may need adding `Triestigaard` as an accepted nickname (same shape as Trusty's `Trouwe Ezel` formal / `Trouwe` intimate split).
 
 ### Q9 — `Dorstlap` calling Thirsty Ass
 
-E2_World_B1 R22 *"En **Dorstlap**?"* and E3_Mine1F R71 *"...Dorstlap!"*. Codex canon: `Beschonken Ezel`. **Note:** corpus elsewhere uses both `Beschonken Ezel` (formal credits) and `Dorstlap` (Big's lines + others). May be the codex that's wrong, not the corpus.
+E2_World_B1 R22 *"En **Dorstlap**?"* and E3_Mine1F R71 *"\*oef!\*—Ge wilde water en ge hebt het, **Dorstlap**!"*. Codex canon: `Beschonken Ezel`.
+
+**Cross-character verification (2026-04-27):** `Dorstlap` has **9 corpus-wide hits** (Kick 2, Trusty 2, Big 2, Nice 1, plus 2 numeric NPC speakers); `Beschonken` has only **6 corpus-wide** (Thirsty himself 1, Kick 1, Sturdy 1, plus 3 numeric NPC speakers). **Corpus is split with `Dorstlap` slightly dominant in main-cast usage.** Likely a codex-vs-corpus problem — codex may need adding `Dorstlap` as accepted intimate alongside `Beschonken Ezel`, same pattern as Trusty's split.
 
 ### Q10 — E3_Mine1FOpening R21 hot spot (4 names in one line)
 
@@ -251,6 +255,8 @@ Divergences against codex:
 - `Zieke` (Sick) — codex says `Snot Ezel` / nickname `Snotje`; `Zieke` is a generic adjective.
 
 This is a likely pre-canonical translation that never got swept.
+
+**Verified 2026-04-27 from snapshot.** Big-Ass scope is this single line. Three of the four short forms (`Stoere`, `Harde`, `Trap`) recur elsewhere across the corpus — see Part 6 for cross-character sweep scope.
 
 ---
 
