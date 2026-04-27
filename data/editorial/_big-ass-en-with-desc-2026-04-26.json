@@ -1,0 +1,1146 @@
+[
+  {
+    "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+    "sheet": "CharacterProfiles_localization",
+    "row": 7,
+    "key": "CHARACTER.Big Ass",
+    "desc": null,
+    "en": "Big Ass"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 32,
+    "key": "SAY.Dialog:E10_Hard.366.Big Ass",
+    "desc": "Big Ass enters.",
+    "en": "{vpunch=100,0.75}They're not idiots, Smart Ass!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 33,
+    "key": "SAY.Dialog:E10_Hard.370.Big Ass",
+    "desc": null,
+    "en": "They're just trying to survive, like us."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 36,
+    "key": "SAY.Dialog:E10_Hard.376.Big Ass",
+    "desc": null,
+    "en": "I am. And I did it."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 37,
+    "key": "SAY.Dialog:E10_Hard.556.Big Ass",
+    "desc": null,
+    "en": "I freed the Asses."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 38,
+    "key": "SAY.Dialog:E10_Hard.379.Big Ass",
+    "desc": "These lines only occur if Big Ass managed to destroy the factory.",
+    "en": "I faced off against the horrible Human in charge of the Factory."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 39,
+    "key": "SAY.Dialog:E10_Hard.557.Big Ass",
+    "desc": "These lines only occur if Big Ass managed to destroy the factory.",
+    "en": "And I caused a massive explosion too."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 51,
+    "key": "SAY.Dialog:E10_Hard.392.Big Ass",
+    "desc": "Branch 4.2: Big makes a speech",
+    "en": "No one gets left behind!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 52,
+    "key": "SAY.Dialog:E10_Hard.394.Big Ass",
+    "desc": null,
+    "en": "And I mean no one."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 53,
+    "key": "SAY.Dialog:E10_Hard.396.Big Ass",
+    "desc": null,
+    "en": "These Asses deserve to find a safe place to live too."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 54,
+    "key": "SAY.Dialog:E10_Hard.483.Big Ass",
+    "desc": null,
+    "en": "If the Humans don't kill us today, they will kill us tomorrow."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 55,
+    "key": "SAY.Dialog:E10_Hard.484.Big Ass",
+    "desc": null,
+    "en": "You have no idea what we saw in that Factory!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 60,
+    "key": "SAY.Dialog:E10_Hard.581.Big Ass",
+    "desc": "Branch 5.2: Big offers to go inside the government building.",
+    "en": "Well I do."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 61,
+    "key": "SAY.Dialog:E10_Hard.583.Big Ass",
+    "desc": null,
+    "en": "We join these other Asses and go inside!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 70,
+    "key": "SAY.Dialog:E10_Hard.507.Big Ass",
+    "desc": "Not in the Miro?",
+    "en": "You..."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 72,
+    "key": "SAY.Dialog:E10_Hard.537.Big Ass",
+    "desc": null,
+    "en": "You didn't have faith in me."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Hard_localization",
+    "row": 74,
+    "key": "SAY.Dialog:E10_Hard.538.Big Ass",
+    "desc": null,
+    "en": "You were just looking out for our own."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Government_localization",
+    "row": 142,
+    "key": "SAY.Dialog:Big_16.10.Big Ass",
+    "desc": null,
+    "en": "Tell the Humans to close their Factories everywhere..."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_Government_localization",
+    "row": 145,
+    "key": "SAY.Dialog:Big_16.12.Big Ass",
+    "desc": null,
+    "en": "No Ass gets left behind."
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_ProphetSpeech_localization",
+    "row": 109,
+    "key": "SAY.Flowchart:Dialog.1148.Big Ass",
+    "desc": null,
+    "en": "ASS POWER!"
+  },
+  {
+    "file": "10_asses.masses_E10Proxy.xlsx",
+    "sheet": "E10_ProphetSpeech_localization",
+    "row": 110,
+    "key": "SAY.Flowchart:Dialog.1150.Big Ass",
+    "desc": null,
+    "en": "DON'T BE SCARED!"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 47,
+    "key": "SAY.Dialog:BIG_BoostMorale.1.Big Ass",
+    "desc": "Boosting Big (male) Morale",
+    "en": "Good afternoon, Comrade."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 48,
+    "key": "SAY.Dialog:BIG_BoostMorale.2.Big Ass",
+    "desc": null,
+    "en": "I'm fuelling up so that I can make tomorrow's Protest a huge success."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 49,
+    "key": "SAY.Dialog:BIG_BoostMorale.3.Big Ass",
+    "desc": "PB: It's not exactly clear why the donkeys are not eating, but we can assume it is that they are perhaps fasting in honour of Lazy's death.",
+    "en": "Though, I feel guilty eating all this hay when the Miners are in Mourning."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 50,
+    "key": "SAY.Dialog:BIG_BoostMorale.4.Big Ass",
+    "desc": null,
+    "en": "It must be pretty bad down in the Mines if it can stop an Ass from eating."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 51,
+    "key": "SAY.Dialog:BIG_BoostMorale.5.Big Ass",
+    "desc": null,
+    "en": "Glad I don't fit down there."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 52,
+    "key": "SAY.Dialog:BIG_BoostMorale.9.Big Ass",
+    "desc": null,
+    "en": "*munch munch munch*"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_Farm_localization",
+    "row": 122,
+    "key": "SAY.Dialog:BIG_Night.5.Big Ass",
+    "desc": null,
+    "en": "... .ZZZZZZ... ... ."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 25,
+    "key": "SAY.Dialog:PickUpBig.28.Big Ass",
+    "desc": null,
+    "en": "Poor Old Ass."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 26,
+    "key": "SAY.Dialog:PickUpBig.29.Big Ass",
+    "desc": "Recruit Big Ass",
+    "en": "What a massive loss. Will the Protest continue?"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 29,
+    "key": "SAY.Dialog:PickUpBig.19.Big Ass",
+    "desc": null,
+    "en": "Don't say that, Trusty. What would we do without you?"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 30,
+    "key": "SAY.Dialog:PickUpBig.23.Big Ass",
+    "desc": null,
+    "en": "Well then I'm hungry to get started!"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 52,
+    "key": "SAY.Dialog:2_Dialog: FarmComradesRecruited.1.Big Ass",
+    "desc": "After recruiting Nice, Big, Thirsty, Smart",
+    "en": "That's everyone. Now to the gate!"
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 55,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.10.Big Ass",
+    "desc": null,
+    "en": "Asses have always been the backbone of this Farm since time immemorial."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 56,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.11.Big Ass",
+    "desc": null,
+    "en": "The weight of history is on our shoulders..."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 69,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.34.Big Ass",
+    "desc": null,
+    "en": "A grand idea."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 72,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.43.Big Ass",
+    "desc": null,
+    "en": "What an empty feeling..."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 77,
+    "key": "SAY.Dialog:3_Dialog: HesitationAtGate.128.Big Ass",
+    "desc": null,
+    "en": "But the Humans have belittled us."
+  },
+  {
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "sheet": "E1_TheProtest_localization",
+    "row": 138,
+    "key": "SAY.Dialog: WellScene.55.Big Ass",
+    "desc": null,
+    "en": "{vpunch=100,0.75}UH OH!"
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 19,
+    "key": "SAY.Dialog:Opening.7.Big Ass",
+    "desc": null,
+    "en": "The Herd keeps shrinking!"
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 22,
+    "key": "SAY.Dialog:Opening.13.Big Ass",
+    "desc": "(Desire to interject. Not an apology. Nor outrage at what Smart Ass just sad.)",
+    "en": "Excuse me."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 26,
+    "key": "SAY.Dialog:Opening.15.Big Ass",
+    "desc": null,
+    "en": "I have something to say."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 31,
+    "key": "SAY.Dialog:Opening.18.Big Ass",
+    "desc": null,
+    "en": "{vpunch=100,0.75}HEY! LISTEN!!"
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 32,
+    "key": "SAY.Dialog:Opening.19.Big Ass",
+    "desc": null,
+    "en": "The fire's accelerating on the dry ground."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 33,
+    "key": "SAY.Dialog:Opening.90.Big Ass",
+    "desc": null,
+    "en": "The enormous flames are spreading west! They'll reach the Farm in no time—"
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_A1_localization",
+    "row": 43,
+    "key": "SAY.Dialog:Opening.165.Big Ass",
+    "desc": null,
+    "en": "Slow Ass should stay behind and sing the Song of Ascension for Trusty."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_B1_localization",
+    "row": 21,
+    "key": "SAY.Dialog:B1_MainDialog.13.Big Ass",
+    "desc": null,
+    "en": "I won't fit."
+  },
+  {
+    "file": "2_asses.masses_E2Proxy.xlsx",
+    "sheet": "E2_World_B1_localization",
+    "row": 22,
+    "key": "SAY.Dialog:B1_MainDialog.56.Big Ass",
+    "desc": null,
+    "en": "How about Thirsty?"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1FOpening_localization",
+    "row": 21,
+    "key": "SAY.Dialog:ScavengersReturn.13.Big Ass",
+    "desc": "Big Ass enters frame with an announcement.",
+    "en": "{vpunch=100,0.75}I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1FOpening_localization",
+    "row": 29,
+    "key": "SAY.Dialog:ScavengersReturn.31.Big Ass",
+    "desc": null,
+    "en": "Is that all the food you managed to find?"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1FOpening_localization",
+    "row": 36,
+    "key": "SAY.Dialog:ScavengersReturn.397.Big Ass",
+    "desc": null,
+    "en": "Were there any noticeable signs of Humans?"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 52,
+    "key": "SAY.Dialog:ThirstyBig_Public.42.Big Ass",
+    "desc": null,
+    "en": "Oh! Hello little Comrade."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 53,
+    "key": "SAY.Dialog:ThirstyBig_Public.73.Big Ass",
+    "desc": "Jump to dialogue options, lines 55, 59, or 62.",
+    "en": "We're just moving this boulder in case the flood starts to come any closer."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 56,
+    "key": "SAY.Dialog:ThirstyBig_Public.83.Big Ass",
+    "desc": null,
+    "en": "Sorry little Comrade, we are weighed down with tasks."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 60,
+    "key": "SAY.Dialog:ThirstyBig_Public.85.Big Ass",
+    "desc": null,
+    "en": "You know your rocks little Comrade, but this one's out of your league."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 64,
+    "key": "SAY.Dialog:ThirstyBig_Public.88.Big Ass",
+    "desc": null,
+    "en": "Muscle is the greatest method there is."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 71,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.23.Big Ass",
+    "desc": "The camera moves over to Thirsty Ass.",
+    "en": "*oof!*—You wanted water and you got it, Thirsty!"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 73,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.18.Big Ass",
+    "desc": null,
+    "en": "*oof*—When was the last time any of us got what we wanted?"
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 74,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.28.Big Ass",
+    "desc": null,
+    "en": "If the rain doesn't stop or the Humans don't come back—*oof!*—we're going to starve."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 76,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.32.Big Ass",
+    "desc": null,
+    "en": "..."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 77,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.31.Big Ass",
+    "desc": null,
+    "en": "Comrade, I want more in life."
+  },
+  {
+    "file": "3_asses.masses_E3Proxy.xlsx",
+    "sheet": "E3_Mine1F_localization",
+    "row": 83,
+    "key": "SAY.Dialog:TunnelBigThirstyPrivate.14.Big Ass",
+    "desc": null,
+    "en": "*oof!*—No Humans?"
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_Mine1F_localization",
+    "row": 25,
+    "key": "SAY.Dialog:SickBig.10.Big Ass",
+    "desc": "NPC dialogue option. No particular order for when you talk to someone.",
+    "en": "If I had any of my rations left I'd share them with you."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_Mine1F_localization",
+    "row": 26,
+    "key": "SAY.Dialog:SickBig.22.Big Ass",
+    "desc": "Repeater line.",
+    "en": "I'm sorry, there's nothing left."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_Mine1F_localization",
+    "row": 54,
+    "key": "SAY.Dialog:KickBig.10.Big Ass",
+    "desc": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they talked with Sick.",
+    "en": "I hope Sick found some extra rations."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_Mine1F_localization",
+    "row": 55,
+    "key": "SAY.Dialog:KickBig.12.Big Ass",
+    "desc": "NPC dialogue repeater option. No particular order for when you talk to someone.\n// This option is if they did NOT talk with Sick.",
+    "en": "This is a difficult time, Comrade. I'm here for you."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_HerdSplits_localization",
+    "row": 50,
+    "key": "SAY.Dialog:Debate.176.Big Ass",
+    "desc": null,
+    "en": "The Humans may have belittled us, but that's no reason for such heavy violence."
+  },
+  {
+    "file": "4_asses.masses_E4Proxy.xlsx",
+    "sheet": "E4_HerdSplits_localization",
+    "row": 51,
+    "key": "SAY.Dialog:Debate.299.Big Ass",
+    "desc": null,
+    "en": "{vpunch=100,0.75}I'm leaving with Smart Ass too."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 43,
+    "key": "SAY.Dialog:BackstageElephant.117.Big Ass",
+    "desc": null,
+    "en": "Even after all that rehearsing, the audience sure knows how to make you feel small."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 46,
+    "key": "SAY.Dialog:BackstageElephant.114.Big Ass",
+    "desc": "Player gains control of the Gorilla.",
+    "en": "Don't keep them waiting!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 57,
+    "key": "SAY.Dialog:BackstageElephant.112.Big Ass",
+    "desc": null,
+    "en": "It's thanks to all the rehearsing we've been doing."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 59,
+    "key": "SAY.Dialog:BackstageElephant.118.Big Ass",
+    "desc": "Player gains control of the Gorilla.",
+    "en": "Don't keep them waiting!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 60,
+    "key": "SAY.Dialog:BackstageElephant.94.Big Ass",
+    "desc": "Elephant repeater.",
+    "en": "Now is not the time to get stage fright!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 110,
+    "key": "SAY.Dialog:BackstageZebra.162.Big Ass",
+    "desc": null,
+    "en": "Is it problematic that Kick is appropriating a Zebra's stripes? Isn't it a little bit rac—?"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 121,
+    "key": "SAY.Dialog:BackstageZebra.128.Big Ass",
+    "desc": "The Zebra goes back stage.\nThis is the version of dialogue following a GOOD performance.",
+    "en": "Your duet with the Ringmaster brought tears to my eyes!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 123,
+    "key": "SAY.Dialog:BackstageZebra.152.Big Ass",
+    "desc": null,
+    "en": "Oooooo I can't wait to go on tour! Bigger crowds, cushier dressing rooms..."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 127,
+    "key": "SAY.Dialog:BackstageZebra.155.Big Ass",
+    "desc": null,
+    "en": "And I'm outgrowing my Elephant suit..."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 133,
+    "key": "SAY.Dialog:BackstageZebra.158.Big Ass",
+    "desc": "Jump to either line 133 or x (skipping Bear).",
+    "en": "We've finally found a place to work where we all fit in."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 136,
+    "key": "SAY.Dialog:BackstageZebra.137.Big Ass",
+    "desc": "Player gains control of the Bear.",
+    "en": "Go show the crowd your cool moves Sad!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 145,
+    "key": "SAY.Dialog:BackstageBear.114.Big Ass",
+    "desc": "The Bear goes back stage.\nThis is the version of dialogue following a BAD performance.",
+    "en": "Don't beat yourself up Sad, the bike was a late addition, you haven't had a lot of time to practice."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 162,
+    "key": "SAY.Dialog:BackstageBear.129.Big Ass",
+    "desc": null,
+    "en": "We're closer than ever. We're an ENSEMBLE!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_CircusMain_localization",
+    "row": 211,
+    "key": "SAY.Dialog:Ending.260.Big Ass",
+    "desc": null,
+    "en": "{vpunch=100,0.75}UH OH! We're in huge trouble!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 45,
+    "key": "SAY.Dialog:Day3.108.Big Ass",
+    "desc": null,
+    "en": "It's not my fault your score is so low."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 49,
+    "key": "SAY.Dialog:Day3.110.Big Ass",
+    "desc": "Dialogue 4.3. If SMART is not winning.",
+    "en": "Massive gains!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 72,
+    "key": "SAY.Dialog:Day4.98.Big Ass",
+    "desc": null,
+    "en": "I won't be distracted by your puny squabbles!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 75,
+    "key": "SAY.Dialog:Day4.150.Big Ass",
+    "desc": null,
+    "en": "At this rate, we'll have to call you Speedy..."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 79,
+    "key": "SAY.Dialog:Day4.109.Big Ass",
+    "desc": null,
+    "en": "No. I'm going to win fair and square!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 100,
+    "key": "SAY.Dialog:Day5.108.Big Ass",
+    "desc": "Jump to line 101.",
+    "en": "We don't have to deal with her oversized ego!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 131,
+    "key": "SAY.Dialog:Day6.131.Big Ass",
+    "desc": "Branch 1.2. Sad Ass is NOT present.",
+    "en": "Joy. Do you think the rest of the Herd is as happy as we are?"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 193,
+    "key": "SAY.Dialog:Day7.131.Big Ass",
+    "desc": null,
+    "en": "Was it something that we did?"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 205,
+    "key": "SAY.Dialog:Day7.147.Big Ass",
+    "desc": null,
+    "en": "I guess we just keep working without him."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 213,
+    "key": "SAY.Dialog:Day7.239.Big Ass",
+    "desc": null,
+    "en": "You've surprised us all with how quickly you've grown your score."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooMain_localization",
+    "row": 215,
+    "key": "SAY.Dialog:Day7.158.Big Ass",
+    "desc": null,
+    "en": "We wouldn't have this problem if you'd stop getting in my way."
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooCapture_localization",
+    "row": 14,
+    "key": "SAY.Dialog:AssOfTheMonth.141.Big Ass",
+    "desc": "Jump to line 22 or 28.",
+    "en": "This is a tremendous honour. Thank you!"
+  },
+  {
+    "file": "5_asses.masses_E5Proxy.xlsx",
+    "sheet": "E5_ZooCapture_localization",
+    "row": 42,
+    "key": "SAY.Dialog:AssOfTheMonth.89.Big Ass",
+    "desc": "The donkeys run into the pen and hide.",
+    "en": "SLOW ASS COME ON!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_SlaughterWaitingRoom_localiz",
+    "row": 3,
+    "key": "SAY.Dialog:Opening.3.Big Ass",
+    "desc": null,
+    "en": "Comrades?! Is that you?! Help me!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 3,
+    "key": "SAY.Dialog:Opening.3.Big Ass",
+    "desc": "Big Ass is on a conveyor belt headed towards a worker with a gun.",
+    "en": "Help me!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 7,
+    "key": "SAY.Dialog:PostWorkerDies.7.Big Ass",
+    "desc": "Kick, Smart, and (possibly) Sad, have hit a button which took the Factory worker away on a hook.",
+    "en": "Get me outta here!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 9,
+    "key": "SAY.Dialog:PostWorkerDies.30.Big Ass",
+    "desc": null,
+    "en": "Try a button!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 10,
+    "key": "SAY.Dialog:PostWorkerDies.49.Big Ass",
+    "desc": null,
+    "en": "Try another!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Slaughtering_localization",
+    "row": 12,
+    "key": "SAY.Dialog:PostWorkerDies.21.Big Ass",
+    "desc": "Big Ass is picked up by the same hook as the worker and taken into the next room.",
+    "en": "AAAAAAHHHHHHH!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Skinning_localization",
+    "row": 5,
+    "key": "SAY.Dialog:Opening.41.Big Ass",
+    "desc": null,
+    "en": "HELP!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Skinning_localization",
+    "row": 11,
+    "key": "SAY.Dialog:GateOpened.20.Big Ass",
+    "desc": null,
+    "en": "I truly thought that was the end for me."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Skinning_localization",
+    "row": 12,
+    "key": "SAY.Dialog:GateOpened.13.Big Ass",
+    "desc": null,
+    "en": "You're all heroes!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 3,
+    "key": "SAY.Dialog:Opening.73.Big Ass",
+    "desc": "The Asses find themselves in a big freezer with countless carcasses.",
+    "en": "..."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 5,
+    "key": "SAY.Dialog:Ending.92.Big Ass",
+    "desc": null,
+    "en": "Wait. We should sing the Song of Ascension for our Comrades before we leave."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 7,
+    "key": "SAY.Dialog:Ending.168.Big Ass",
+    "desc": null,
+    "en": "Back on that hook, my life flashed before my eyes."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 8,
+    "key": "SAY.Dialog:Ending.169.Big Ass",
+    "desc": null,
+    "en": "I've never fit in anywhere, or made much of an impact."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 9,
+    "key": "SAY.Dialog:Ending.170.Big Ass",
+    "desc": null,
+    "en": "But, I want to make a difference now."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 10,
+    "key": "SAY.Dialog:Ending.171.Big Ass",
+    "desc": null,
+    "en": "Even if we're too late, we should try."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Chilling_localization",
+    "row": 11,
+    "key": "SAY.Dialog:Ending.172.Big Ass",
+    "desc": null,
+    "en": "If it means one more Soul makes it to the Astral Plane, it's worth it."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_MeatProcessing_localization",
+    "row": 4,
+    "key": "SAY.Dialog:Opening.8.Big Ass",
+    "desc": null,
+    "en": "We should go one at—"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Boiling_localization",
+    "row": 3,
+    "key": "SAY.Dialog:Opening.3.Big Ass",
+    "desc": null,
+    "en": "Are they melting the skin of the deceased in here?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Boiling_localization",
+    "row": 9,
+    "key": "SAY.Dialog:FirstPassComplete.103.Big Ass",
+    "desc": "This triggers if Big is at the exit and Kick is not in range.",
+    "en": "Don't fall behind, Kick Ass!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Boiling_localization",
+    "row": 12,
+    "key": "SAY.Dialog:FirstPassComplete.16.Big Ass",
+    "desc": null,
+    "en": "{vpunch=100,0.75}HURRAH!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Ejiao_localization",
+    "row": 4,
+    "key": "SAY.Dialog:Opening.50.Big Ass",
+    "desc": null,
+    "en": "Wait."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Ejiao_localization",
+    "row": 5,
+    "key": "SAY.Dialog:Opening.24.Big Ass",
+    "desc": null,
+    "en": "We'll never get by unnoticed."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_Shipping_localization",
+    "row": 6,
+    "key": "SAY.Dialog:Opening.25.Big Ass",
+    "desc": null,
+    "en": "What'll we do?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 5,
+    "key": "SAY.Dialog:BigJob.7.Big Ass",
+    "desc": null,
+    "en": "What about freeing the other Asses?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 6,
+    "key": "SAY.Dialog:BigJob.6.Big Ass",
+    "desc": null,
+    "en": "Aren't they part of your Plan?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 10,
+    "key": "SAY.Dialog:BigJob.9.Big Ass",
+    "desc": null,
+    "en": "And what will we do after that?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 12,
+    "key": "SAY.Dialog:BigJob.8.Big Ass",
+    "desc": null,
+    "en": "{vpunch=100,1}I want to know NOW, Smart Ass."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 27,
+    "key": "SAY.Dialog:BigJob.188.Big Ass",
+    "desc": null,
+    "en": "I'm not leaving the other Asses here to die, just so we can try to live in comfort."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 30,
+    "key": "SAY.Dialog:BigJob.193.Big Ass",
+    "desc": "Jump to line 31 or line 34.",
+    "en": "Then I'll go back, alone."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 37,
+    "key": "SAY.Dialog:BigJob.158.Big Ass",
+    "desc": "Branches (2.1, 2.2) converge.",
+    "en": "You don't have to join me."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 38,
+    "key": "SAY.Dialog:BigJob.159.Big Ass",
+    "desc": null,
+    "en": "But this is something I must do."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 39,
+    "key": "SAY.Dialog:BigJob.160.Big Ass",
+    "desc": null,
+    "en": "Before I die, I need to make an impact."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 42,
+    "key": "SAY.Dialog:BigJob.267.Big Ass",
+    "desc": "End of scene.",
+    "en": "I know... but I choose to be."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigJob_localization",
+    "row": 44,
+    "key": "SAY.Dialog:BigJob.271.Big Ass",
+    "desc": "End of scene.",
+    "en": "Goodbye, Comrades."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_ShippingTwo_localization",
+    "row": 3,
+    "key": "SAY.Dialog:EnterControlRoom.1.Big Ass",
+    "desc": "Big Ass goes into the control room, alone.",
+    "en": "There must be a way to free the other Asses in here."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 3,
+    "key": "SAY.Dialog:Container.51.Big Ass",
+    "desc": "A reflection by Big Ass when trying to leave the Factory for the first time.",
+    "en": "Am I making a massive mistake?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 4,
+    "key": "SAY.Dialog:Container.58.Big Ass",
+    "desc": null,
+    "en": "Shouldn't I try to stop the one in charge?"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 5,
+    "key": "SAY.Dialog:Container.61.Big Ass",
+    "desc": "A reflection by Big Ass when trying to leave the Factory for a second time.",
+    "en": "No, I've already done what I came to do."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 6,
+    "key": "SAY.Dialog:Container.23.Big Ass",
+    "desc": "A reflection by Big Ass when trying to go into the Robotics Lab the first time.",
+    "en": "This way looks much more dangerous..."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 7,
+    "key": "SAY.Dialog:Container.20.Big Ass",
+    "desc": null,
+    "en": "I shouldn't bite off more than I can chew..."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 8,
+    "key": "SAY.Dialog:Container.39.Big Ass",
+    "desc": "A reflection by Big Ass when trying to go into the Robotics Lab the second time.",
+    "en": "What am I saying... I can do this!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_BigBattle_localization",
+    "row": 9,
+    "key": "SAY.Dialog:Container.44.Big Ass",
+    "desc": "Doors close behind Big Ass.",
+    "en": "UH OH."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 7,
+    "key": "SAY.Dialog:Opening.159.Big Ass",
+    "desc": "Branch 3.2. Big ESCAPED the Factory without fighting Mme. Derriere.",
+    "en": "I made it out... I'm FREE!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 8,
+    "key": "SAY.Dialog:Opening.148.Big Ass",
+    "desc": null,
+    "en": "And I saved all those Asses—"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 9,
+    "key": "SAY.Dialog:Opening.155.Big Ass",
+    "desc": "End of scene. Big leaves.",
+    "en": "But I guess I'm on my own now..."
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 10,
+    "key": "SAY.Dialog:Opening.165.Big Ass",
+    "desc": "Branch 3.3. Big WON the fight against Mme. Derriere.",
+    "en": "IT'S GONNA BLOW!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 11,
+    "key": "SAY.Dialog:Opening.167.Big Ass",
+    "desc": null,
+    "en": "HEE HAW! I DID IT!"
+  },
+  {
+    "file": "7_asses.masses_E7Proxy.xlsx",
+    "sheet": "E7_CityStreet_localization",
+    "row": 12,
+    "key": "SAY.Dialog:Opening.173.Big Ass",
+    "desc": "End of scene. Big leaves.",
+    "en": "Who'd have thought I could save all those Asses and blow up a Factory all on my own?"
+  }
+]
