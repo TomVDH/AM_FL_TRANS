@@ -1,0 +1,102 @@
+{
+  "character": "(cross-character sweep)",
+  "rules_applied": [
+    "sadAssRegisterSplit: Establish formal 'Triestige Ezel' (canon) vs casual 'Triestigaard' (Flemish -aard epithet, affectionate-mocking) as parallel forms for Sad Ass — same shape as Trouwe Ezel/Trouwe split. Codex update required post-pass: legitimize Triestigaard as accepted casual form. Per-line disposition: formal contexts (third-person, stage directions, peer formal address) → Triestige Ezel; intimate/casual peer address, family register ('Uncle Sad'), and emotional shouting → Triestigaard."
+  ],
+  "generated": "2026-04-27",
+  "decision_status": "Q8 fully locked. 7 corrections (Triestigaard → Triestige Ezel) + 13 documented keeps. Big Ass scope: zero flips (both Big lines are register-correct casual address).",
+  "corrections": [
+    {
+      "id": "TG-1",
+      "rationale": "Hard Ass — formal third-person mention ('Give my best to Sad Ass'). Distanced register.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J63",
+      "speaker": "Hard Ass",
+      "english": "Give my best to Sad Ass.",
+      "current_nl": "Het beste aan Triestigaard.",
+      "proposed_nl": "Het beste aan Triestige Ezel."
+    },
+    {
+      "id": "TG-2",
+      "rationale": "NPC stage direction. Formal canon.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J46",
+      "speaker": "20",
+      "english": "Politely suggest that Sad Ass should suck it up.",
+      "current_nl": "Stel tactvol voor dat Triestigaard op haar tanden bijt.",
+      "proposed_nl": "Stel tactvol voor dat Triestige Ezel op haar tanden bijt."
+    },
+    {
+      "id": "TG-3",
+      "rationale": "NPC stage direction. Formal canon.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J47",
+      "speaker": "21",
+      "english": "Commiserate with Sad Ass over all that has been lost.",
+      "current_nl": "Herdenk met Triestigaard over al wat er verloren is gegaan.",
+      "proposed_nl": "Herdenk met Triestige Ezel over al wat er verloren is gegaan."
+    },
+    {
+      "id": "TG-4",
+      "rationale": "Bad Ass — third-person task statement ('I'll find Sad Ass and Sturdy Ass'). Formal listing of full names.",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BadAssRescue_localization",
+      "cell": "J8",
+      "speaker": "Bad Ass",
+      "english": "I'll find Sad Ass and Sturdy Ass and take them to the river.",
+      "current_nl": "Ik zoek Triestigaard en Stoere Ezel en breng ze naar de rivier.",
+      "proposed_nl": "Ik zoek Triestige Ezel en Stoere Ezel en breng ze naar de rivier."
+    },
+    {
+      "id": "TG-5",
+      "rationale": "Bad Ass — third-person task statement, formal listing alongside other full names.",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J59",
+      "speaker": "Bad Ass",
+      "english": "I'll find Sad Ass and Sturdy Ass and take them to the river.",
+      "current_nl": "Ik zal Triestigaard en Stoere naar de rivier brengen.",
+      "proposed_nl": "Ik zal Triestige Ezel en Stoere naar de rivier brengen."
+    },
+    {
+      "id": "TG-6",
+      "rationale": "Smart Ass — formal call ('Sad Ass? Comrade?'). Direct address with formal Kameraad particle.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J65",
+      "speaker": "Smart Ass",
+      "english": "Sad Ass? Comrade? What's your decision?",
+      "current_nl": "Triestigaard? Kameraad? Wat is jouw beslissing?",
+      "proposed_nl": "Triestige Ezel? Kameraad? Wat is jouw beslissing?"
+    },
+    {
+      "id": "TG-7",
+      "rationale": "Slow Ass — direct address, EN uses formal 'Sad Ass'. Slow's voice contains stutter; treating formal canon for the address slot.",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J128",
+      "speaker": "Slow Ass",
+      "english": "Sad Ass, I'm hap-p-p-py here.",
+      "current_nl": "Triestigaard, ik b-b-ben gelukkig hier.",
+      "proposed_nl": "Triestige Ezel, ik b-b-ben gelukkig hier."
+    }
+  ],
+  "documented_keeps": [
+    {"file": "2_asses.masses_E2Proxy.xlsx", "sheet": "E2_World_A1_localization", "cell": "J56", "speaker": "Nice Ass", "rationale": "panic call ('Sad Ass! Sturdy Ass! Bad Ass!') — emotional shouting, casual register override"},
+    {"file": "3_asses.masses_E3Proxy.xlsx", "sheet": "E3_LazysGrave_localization", "cell": "J46", "speaker": "Lazy Ass", "rationale": "intimate mourning ('Mijn lieve Triestigaard') — affectionate epithet"},
+    {"file": "3_asses.masses_E3Proxy.xlsx", "sheet": "E3_Mine1F_localization", "cell": "J16", "speaker": "{$NewName}", "rationale": "child's voice, family register ('Uncle Sad')"},
+    {"file": "3_asses.masses_E3Proxy.xlsx", "sheet": "E3_Mine1F_localization", "cell": "J19", "speaker": "Sad Ass", "rationale": "self-ref family register ('Uncle Sad Ass')"},
+    {"file": "3_asses.masses_E3Proxy.xlsx", "sheet": "E3_Mine1F_localization", "cell": "J20", "speaker": "105", "rationale": "stage direction in family register ('Uncle Sad Ass')"},
+    {"file": "4_asses.masses_E4Proxy.xlsx", "sheet": "E4_HerdSplits_localization", "cell": "J80", "speaker": "Smart Ass", "rationale": "casual exit list, EN bare 'Sad'"},
+    {"file": "5_asses.masses_E5Proxy.xlsx", "sheet": "E5_CircusMain_localization", "cell": "J136", "speaker": "Big Ass", "rationale": "friend-to-friend casual address, EN bare 'Sad'"},
+    {"file": "5_asses.masses_E5Proxy.xlsx", "sheet": "E5_CircusMain_localization", "cell": "J145", "speaker": "Big Ass", "rationale": "friend-to-friend reassurance, EN bare 'Sad'"},
+    {"file": "5_asses.masses_E5Proxy.xlsx", "sheet": "E5_CircusMain_localization", "cell": "J149", "speaker": "Kick Ass", "rationale": "friend-to-friend casual, EN bare 'Sad'"},
+    {"file": "5_asses.masses_E5Proxy.xlsx", "sheet": "E5_CircusMain_localization", "cell": "J157", "speaker": "Kick Ass", "rationale": "casual hype, EN bare 'Sad'"},
+    {"file": "5_asses.masses_E5Proxy.xlsx", "sheet": "E5_ZooMain_localization", "cell": "J192", "speaker": "Smart Ass", "rationale": "angry/dismissive third-person, EN bare 'Sad'"},
+    {"file": "5_asses.masses_E5Proxy.xlsx", "sheet": "E5_ZooMain_localization", "cell": "J201", "speaker": "Smart Ass", "rationale": "angry/dismissive third-person, EN bare 'Sad'"},
+    {"file": "5_asses.masses_E5Proxy.xlsx", "sheet": "E5_ZooMain_localization", "cell": "J209", "speaker": "Smart Ass", "rationale": "casual third-person, EN bare 'Sad'"}
+  ]
+}

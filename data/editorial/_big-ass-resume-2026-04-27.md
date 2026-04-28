@@ -216,7 +216,15 @@ When auto-expanding stutters by regex, **post-pass trim is required**: `([A-Za-z
 
 ## Part 5 — Pending decisions (Q7+)
 
-### Q7 — `Oude Zak` calling Old Ass (ASKED, AWAITING ANSWER)
+### Q7 — `Oude Zak` calling Old Ass — **LOCKED 2026-04-27**
+
+**Decision:** Big Ass E1_TheProtest J25 → `Arme Oude Ezel.` (option A, formal canon).
+
+**Status:**
+- Big Ass scope: 1 flip locked. Persisted in `data/editorial/oude-zak-sweep.json` as correction `OZ-1`.
+- Cross-character: 18 lines listed as `pending_disposition` in same file. Default lean: `Oude Ezel` for formal/third-person/stage-direction; `Oude` for intimate/mournful direct address. Per-line calls deferred to post-Big-Ass sweep session.
+
+**Original framing (kept for reference):**
 
 E1_TheProtest R25:
 - EN: *"Poor Old Ass."*
@@ -231,19 +239,72 @@ Codex canon for Old Ass: `Oude Ezel` (formal) / `Oude` (intimate). The `-Zak` su
 - B) `Oude` — intimate short
 - C) Keep `Oude Zak` (would override `-Zak` deprecation pattern)
 
-### Q8 — `Triestigaard` calling Sad Ass
+### Q8 — `Triestigaard` calling Sad Ass — **LOCKED 2026-04-27**
+
+**Decision shape:** register split — formal `Triestige Ezel` (codex canon) / casual `Triestigaard` (Flemish `-aard` epithet, affectionate-mocking). Codex update needed post-pass to legitimize `Triestigaard` as accepted casual form.
+
+**Disposition rule (emergent from line-by-line):**
+- formal third-person, stage directions, peer formal address with `Kameraad`, formal task statements listing full names → `Triestige Ezel`
+- intimate/casual peer address, family register (`Uncle Sad`), emotional shouting, intimate mourning → `Triestigaard`
+
+**Status:**
+- 7 corrections (Triestigaard → Triestige Ezel) persisted in `data/editorial/triestigaard-sweep.json` as `TG-1`..`TG-7`
+- 13 keeps documented in same file under `documented_keeps` for audit trail
+- Big Ass scope: **0 flips**. Both Big lines (E5_CircusMain J136, J145) are register-correct casual address.
+- Codex update required for Sad Ass entry (post-Big-Ass).
+
+**Original framing (kept for reference):**
 
 E5_CircusMain R136 *"Ga je zieke moves aan het publiek tonen, **Triestigaard**!"* and R145 *"Maak je niet te druk, **Triestigaard**..."*. Codex canon: `Triestige Ezel`.
 
 **Cross-character verification (2026-04-27):** `Triestigaard` has **20 corpus-wide hits across 12 speakers** — Smart 5, Bad 2, Big 2, Kick 2, Hard 1, Nice 1, Sad 1 (himself), Lazy 1, Slow 1, plus `{$NewName}` 1, plus 2 numeric NPC speakers. **This is widespread corpus-canon, not Big-specific.** Likely a codex-vs-corpus problem — codex may need adding `Triestigaard` as an accepted nickname (same shape as Trusty's `Trouwe Ezel` formal / `Trouwe` intimate split).
 
-### Q9 — `Dorstlap` calling Thirsty Ass
+### Q9 — `Dorstlap` calling Thirsty Ass — **LOCKED 2026-04-27**
+
+**Decision shape:** register split — formal `Beschonken Ezel` (codex canon, unchanged) / casual `Zatlap` (NEW — Flemish `-lap` epithet, drunk-rag/sot register). **`Dorstlap` retired entirely** (off-theme: thirsty ≠ drunk). `Zatlap` aligns thematically with `Beschonken` (intoxicated).
+
+**Disposition rule (emergent from line-by-line):**
+- stage directions, third-person mention, profile/credits → `Beschonken Ezel`
+- peer-to-peer direct address (Big, Kick, Nice) → `Zatlap`
+- bare `Beschonken` is unstable: → `Beschonken Ezel` for narrated third-person, → `Zatlap` for direct casual address
+
+**Status:**
+- 12 corrections (6 → `Beschonken Ezel`, 6 → `Zatlap`) persisted in `data/editorial/thirsty-sweep.json` as `TH-1`..`TH-12`
+- Includes typo fix `Dorstklap` (E3_Mine1FOpening J67) → `Beschonken Ezel`
+- Big Ass scope: **2 flips** (E2_World_B1 J22 `Dorstlap` → `Zatlap`, E3_Mine1F J71 `Dorstlap` → `Zatlap`)
+- Deferred flag: E6_World J229 (Sturdy) `da` → `dat` contraction repair, parked for Sturdy editorial pass
+- Codex update required for Thirsty Ass entry (post-Big-Ass): legitimize `Zatlap`, retire `Dorstlap`
+
+**Original framing (kept for reference):**
 
 E2_World_B1 R22 *"En **Dorstlap**?"* and E3_Mine1F R71 *"\*oef!\*—Ge wilde water en ge hebt het, **Dorstlap**!"*. Codex canon: `Beschonken Ezel`.
 
 **Cross-character verification (2026-04-27):** `Dorstlap` has **9 corpus-wide hits** (Kick 2, Trusty 2, Big 2, Nice 1, plus 2 numeric NPC speakers); `Beschonken` has only **6 corpus-wide** (Thirsty himself 1, Kick 1, Sturdy 1, plus 3 numeric NPC speakers). **Corpus is split with `Dorstlap` slightly dominant in main-cast usage.** Likely a codex-vs-corpus problem — codex may need adding `Dorstlap` as accepted intimate alongside `Beschonken Ezel`, same pattern as Trusty's split.
 
-### Q10 — E3_Mine1FOpening R21 hot spot (4 names in one line)
+### Q10 — E3_Mine1FOpening R21 hot spot — **LOCKED 2026-04-28**
+
+**Decision:** Three internal swaps in one cell (E3_Mine1FOpening_localization J21):
+
+| Slot | Was | Now | Why |
+|---|---|---|---|
+| Sturdy | `Stoere` | `Stevige` | Wrong-character collision: `Stoere` is Bad's canon. Casual-short of `Stevige Ezel`. |
+| Hard | `Harde` | `Harde` (kept) | Already corpus-canonical short; thematically aligned with `Bikkeharde Ezel`. |
+| Kick | `Trap` | `Stamper` | NEW casual short for Kick. Agent-noun shape parallel to `Triestigaard`/`Zatlap`. **Zero corpus presence — clean introduction.** |
+| Sick | `Zieke` | `Snotje` | Codex-aligned casual diminutive. **Corpus has 22 `Snotje` hits already — codex missing it from Sick's nicknames is a separate codex bug to fix.** |
+
+**Final line:**
+> Before: *"Ik heb een mega aankondiging, **Kameraad Stoere**! **Harde**, **Trap**, en **Zieke** zijn terug!"*
+> After: *"Ik heb een mega aankondiging, **Kameraad Stevige**! **Harde**, **Stamper**, en **Snotje** zijn terug!"*
+
+**Cross-character implications (deferred):**
+- `Trap` for Kick: 4 corpus hits total. Cross-char sweep is small — handled in future Kick Ass pass.
+- `Stamper`: 0 corpus hits — being introduced from zero.
+- `Snotje`: codex catch-up needed (Sick Ass `nicknames` array).
+- 9 bare `Stoere` corpus-wide need per-line disambiguation in Sturdy/Bad passes.
+
+**Persisted in:** `data/editorial/big-ass-corrections.json` as correction `BA-Q10-1`.
+
+**Original framing (kept for reference):**
 
 - EN: *"I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!"*
 - NL: *"Ik heb een mega aankondiging, **Kameraad Stoere**! **Harde**, **Trap**, en **Zieke** zijn terug!"*
@@ -269,7 +330,7 @@ Project-wide audit of `data/editorial/_full-corpus-2026-04-26.json` (4486 lines,
 | `Oude Zak` (Old Ass) | 19 hits, multi-speaker | `-Zak` deprecation extension (decided by Q7 outcome) |
 | `Luie Zak` (Lazy Ass) | 6 hits, multi-speaker | same `-Zak` pattern; includes Lazy referring to himself ("Ik ben Luie Zak") |
 | `Trap` for Kick Ass | 2 hits (Big R21, Hard R42) | small but real |
-| `Stoere`/`Stoere Ezel` for Bad Ass | widespread | codex says Bad Ass = `Stoute Ezel`; corpus consistently uses `Stoere Ezel`. **Codex likely needs updating, not corpus.** |
+| `Stoere` (bare) — character disambiguation needed | 9 bare hits (corpus-wide minus 10 `Stoere Ezel` Bad-canonical) | **CORRECTED 2026-04-28:** earlier note here claimed codex says `Stoute Ezel` for Bad — that was wrong. Codex actually says `Stoere Ezel` for Bad, which matches corpus. The real issue: 9 bare `Stoere` uses corpus-wide need per-line disambiguation (some are Sturdy collisions like Q10 R21, some are Bad short forms). Resolved during Sturdy/Bad editorial passes. |
 | `Bikkelharde` vs codex `Bikkeharde` | spelling drift in corpus | extra `L` in corpus — codex/corpus discrepancy |
 | `(Sad Ass)`, `(Lazy Ass)` literal placeholders | several | untranslated bug |
 | `Dorstklap` typo | E3_Mine1FOpening R67 | should be `Dorstlap` |
@@ -288,6 +349,9 @@ Project-wide audit of `data/editorial/_full-corpus-2026-04-26.json` (4486 lines,
 | `data/editorial/slow-ass-corrections.json` | Slow Ass base corrections (locked, applied) |
 | `data/editorial/slow-ass-stutter-repair.json` | Slow Ass stutter upgrade (locked, applied) |
 | `data/editorial/trouwe-zak-sweep.json` | Cross-character `Trouwe Zak` deprecation sweep (locked, applied) |
+| `data/editorial/oude-zak-sweep.json` | **Q7 — locked 2026-04-27.** 1 Big Ass correction + 18 cross-character `pending_disposition` |
+| `data/editorial/triestigaard-sweep.json` | **Q8 — locked 2026-04-27.** 7 cross-character corrections + 13 documented keeps. Big Ass: 0 flips |
+| `data/editorial/thirsty-sweep.json` | **Q9 — locked 2026-04-27.** 12 cross-character corrections (incl. 2 Big Ass). Retires `Dorstlap`, introduces `Zatlap` |
 | `data/json/codex_verified.json` | v3.3 verified codex (legacy schema, no `voiceRules` blocks yet) |
 | `data/json/codex_translations.json` | Live app SSoT codex (reads/writes from `/api/codex` route) |
 | `data/json/0-10_asses.masses_E*Proxy.json` | Per-episode source dump (12 files, used by app) |
@@ -336,24 +400,79 @@ for f in sorted(glob.glob("excels/*.xlsx")):
 
 ## Part 9 — Resume protocol
 
-1. **Read this file end-to-end.**
-2. Check git log for any commits since 2026-04-27 that touched `data/json/codex_verified.json`, `data/editorial/`, or `excels/` — if so, re-baseline.
-3. **Re-run live xlsx scan to confirm the 143-line count is stable** (drift detection — see Part 8 template). If line count differs or any cell content changed, regenerate `_big-ass-live-2026-04-26.json` with today's date and diff.
-4. **Continue Q7** (`Oude Zak` disposition — Part 5).
-5. After all canonical-name questions answered (Q7–Q10), generate corrections JSON: `data/editorial/big-ass-corrections.json`. Format documented at top of `scripts/editorial/apply-corrections.py`.
-6. Dry-run: `python3 scripts/editorial/apply-corrections.py data/editorial/big-ass-corrections.json`
-7. Apply: `python3 scripts/editorial/apply-corrections.py data/editorial/big-ass-corrections.json --apply`
-8. Verify: re-scan xlsx, confirm 0 residual violations on the locked rules. Specifically:
-   - 0 occurrences of `'k` in Big's lines (ik only)
-   - 0 occurrences of `nie` in Big's lines (niet only)
+### CURRENT STATE (as of 2026-04-28)
+
+**Q1–Q10 all LOCKED.** Corrections + sweep files all persisted. Nothing applied to xlsx yet.
+
+| Step | State |
+|---|---|
+| Q1–Q6 voice rules | LOCKED (Part 4) |
+| Q7 Oude Zak | LOCKED — 1 Big Ass correction + 18 deferred (`oude-zak-sweep.json`) |
+| Q8 Triestigaard | LOCKED — 7 cross-character flips, Big has 0 (`triestigaard-sweep.json`) |
+| Q9 Thirsty/Zatlap | LOCKED — 12 corrections incl. 2 Big Ass (`thirsty-sweep.json`) |
+| Q10 four-name hot spot | LOCKED — Stoere→Stevige, Trap→Stamper, Zieke→Snotje, Harde kept |
+| `big-ass-corrections.json` | **GENERATED** — 23 corrections (Q1: 9, Q2: 6 cells, Q3: 10 cells, Q10: 1) |
+| **PENDING REVIEW** | **Q1 transformations** — see "Part 11 review checklist" before --apply |
+| Dry-run | NOT RUN (openpyxl not installed in active python) |
+| --apply | NOT RUN |
+| Codex updates | NOT DONE |
+
+### Steps remaining (resume here on remote)
+
+1. **Install openpyxl** in the active python: `pip install openpyxl` (or `py -m pip install openpyxl` on Windows).
+2. **Review Q1 transformations** (Part 11 below). Spot-check the 4 trickier cells; flag any to Tom for revision before --apply.
+3. Dry-run: `py scripts/editorial/apply-corrections.py data/editorial/big-ass-corrections.json` (Linux/macOS: `python3` instead of `py`).
+4. Apply: `py scripts/editorial/apply-corrections.py data/editorial/big-ass-corrections.json --apply`
+5. Verify: re-scan xlsx, confirm 0 residual violations on the locked rules. Specifically:
+   - 0 occurrences of `'k` (or `'K`, or `da'k`) in Big's lines (ik only)
+   - 0 occurrences of bare `nie` in Big's lines (niet only)
    - 0 occurrences of `je` / `jij` / `jou` / `jouw` in Big's lines (ge/gij dominant; `jullie` excepted)
-9. **Update codex** at `data/json/codex_verified.json`:
+6. **Update codex** at `data/json/codex_verified.json`:
    - Update Big Ass entry: `pronounForm: "ge/gij"`, `note` rewritten to reflect post-pass reality
-   - Add `voiceRules` block per Phase-C schema (Part 2.1)
-   - Bump `lastEditorialPass: "big-ass · 2026-04-27"` (or whatever date applies)
-   - Bump file `version` if applicable
-10. Mirror the `codex_verified.json` Big Ass entry into `codex_translations.json` (the live app SSoT) — keep nicknames, bio, dutch, english, category in sync.
-11. Move to next character (Tom's call on order — suggested by narrative weight, not alphabetical).
+   - Add Phase-C flattened fields per Trusty/Slow precedent (`pronounsAllowed`, `pronounsForbidden`, `contractionsAllowed`, `contractionsForbidden`, `dialectalMarkersAllowed`, `dialectalMarkersForbidden`, `articleRule`, `negationRule`, `registerExceptions`, `inboundAddressRules`, `editorialPass`). **Note: these are flattened at entry top-level — no nested `voiceRules` wrapper.** The resume Part 2.1 schema with `voiceRules` parent object is *not* how it landed in practice.
+   - Bump `lastEditorialPass: "big-ass · 2026-04-28"`
+7. Mirror the `codex_verified.json` Big Ass entry into `codex_translations.json` (the live app SSoT). **KNOWN GAP:** Phase-C fields are NOT currently mirrored for Trusty/Slow either — the AI-suggest route (`src/app/api/ai-suggest/route.ts`) only reads legacy fields. Mirroring Big Ass into translations codex without first wiring the route to read Phase-C fields means Big Ass changes won't reach the runtime. **Decide:** mirror anyway (consistent state), or backfill Trusty/Slow first + wire the route.
+8. **After Big Ass closes — apply cross-character sweeps:**
+   - `py scripts/editorial/apply-corrections.py data/editorial/triestigaard-sweep.json --apply` (7 corrections)
+   - `py scripts/editorial/apply-corrections.py data/editorial/thirsty-sweep.json --apply` (12 corrections)
+   - Disposition the 18 deferred Oude Zak lines (`oude-zak-sweep.json` `pending_disposition` array — needs Tom's per-line calls before becoming corrections)
+9. **Codex follow-ups for other characters:**
+   - Sad Ass: add `Triestigaard` to `nicknames`
+   - Thirsty Ass: replace `Dorstlap` references with `Zatlap`, retire `Dorstlap`
+   - Sick Ass: add `Snotje` to `nicknames` (corpus has 22 hits — codex catch-up)
+10. Move to next character (Tom's call on order — suggested by narrative weight, not alphabetical).
+
+---
+
+## Part 11 — Q1 transformation review checklist (pre-apply)
+
+These four Q1 cells in `big-ass-corrections.json` involved judgment calls on the je-family transformation. **Worth a Flemish-ear spot-check before --apply.** If any feel off, edit `proposed_nl` directly in the JSON before running `--apply`.
+
+| ID | Cell | Was | Now | Call made |
+|---|---|---|---|---|
+| `BA-Q1-3` | E5_CircusMain J43 | *"hoe je klein te doen voelen"* | *"hoe u klein te doen voelen"* | `je` as object → `u`. Sentence is awkward in current NL too — kept structure, just swapped pronoun. |
+| `BA-Q1-5` | E5_CircusMain J145 | *"Maak je niet te druk... en je hebt..."* | *"Maak u niet te druk... en ge hebt..."* | First `je` reflexive → `u` (matches u/uw paradigm Q5). Second `je hebt` subject → `ge hebt`. Two transformations in one cell. |
+| `BA-Q1-7` | E5_ZooMain J75 | *"zouden we je Snelle Ezel moeten noemen"* | *"zouden we u Snelle Ezel moeten noemen"* | `je` as direct object ("call you Speedy") → `u`. |
+| `BA-Q1-8` | E5_ZooMain J213 | *"Je staat ons doen kijken met hoe snel je punten..."* | *"Ge staat ons doen kijken met hoe snel uw punten..."* | First `Je` subject → `Ge`. Second `je punten` possessive → `uw punten`. |
+
+The mechanical Q2/Q3 swaps (nie → niet, 'k → ik, da'k → dat ik) are low-risk find-replace. Q10's three-name swap is locked from session.
+
+---
+
+## Part 12 — Remote pickup quick-start
+
+**Branch:** `am-analysis` · **Last commit before this push:** `d0269c6` (force-add xlsx + orphan CSV).
+
+Files added/changed in this push:
+- NEW: `data/editorial/big-ass-corrections.json` — 23 Big Ass corrections (Q1–Q3 + Q10)
+- NEW: `data/editorial/oude-zak-sweep.json` — Q7 sweep (1 + 18 deferred)
+- NEW: `data/editorial/triestigaard-sweep.json` — Q8 sweep (7 corrections + 13 keeps)
+- NEW: `data/editorial/thirsty-sweep.json` — Q9 sweep (12 corrections + 1 deferred flag)
+- MODIFIED: `data/editorial/_big-ass-resume-2026-04-27.md` — Q7–Q10 lock blocks, Part 6 fix, current-state header, Part 11 review checklist, Part 12 (this section)
+
+**Open at remote:** read this file end-to-end → install openpyxl → review Part 11 → dry-run → apply → verify → update codex → next character.
+
+**Outstanding ask from Tom (last conversation point before push):** *"Want to spot-check the Q1 cells, or trust the calls and proceed to dry-run?"* — Tom hasn't responded yet. Default if no answer on resume: dry-run first, then ask before --apply.
 
 **Tooling reminder for verification (step 8):**
 ```python

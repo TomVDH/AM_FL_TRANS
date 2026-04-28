@@ -1,0 +1,269 @@
+{
+  "character": "Big Ass",
+  "rules_applied": [
+    "Q1: ge/gij dominant — je-family forms (je/jij/jou/jouw) flipped to ge/gij paradigm. Subject je → ge (or Ge sentence-start). Object/dative je → u. Possessive je → uw. jou → u. jouw → uw. jullie kept (Q6).",
+    "Q2: niet only — bare 'nie' (without -t) flipped to 'niet'.",
+    "Q3: ik only — bare 'k contraction (lowercase + uppercase) flipped to ik/IK; da'k contraction expanded to 'dat ik'.",
+    "Q4: 't/het both free — no normalization.",
+    "Q5: u/uw paradigm kept (5 instances) — no flips.",
+    "Q6: jullie kept — accepted in tussentaal.",
+    "Q10: E3_Mine1FOpening J21 four-name hot spot — Stoere → Stevige (Sturdy collision fix), Trap → Stamper (new casual short for Kick), Zieke → Snotje (codex-aligned casual for Sick); Harde kept."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "Q1-Q10 all locked. 23 cells, 28 token-level changes. Big Ass scope only — cross-character changes (Q7/Q8/Q9) live in their respective sweep files for post-Big-Ass apply.",
+  "corrections": [
+    {
+      "id": "BA-Q1-1",
+      "rationale": "Q1: jou (object after preposition 'zonder') → u",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J29",
+      "speaker": "Big Ass",
+      "english": "Don't say that, Trusty. What would we do without you?",
+      "current_nl": "Laat dat, Trouwe. Wat zouden we zonder jou doen?",
+      "proposed_nl": "Laat dat, Trouwe. Wat zouden we zonder u doen?"
+    },
+    {
+      "id": "BA-Q2-1",
+      "rationale": "Q2: nie ×2 → niet ×2",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J74",
+      "speaker": "Big Ass",
+      "english": "If the rain doesn't stop or the Humans don't come back—*oof!*—we're going to starve.",
+      "current_nl": "Als de regen nie stopt of de Mensen nie terugkomen—*oef!*—gaan we verhongeren.",
+      "proposed_nl": "Als de regen niet stopt of de Mensen niet terugkomen—*oef!*—gaan we verhongeren."
+    },
+    {
+      "id": "BA-Q10-1",
+      "rationale": "Q10: Stoere → Stevige (Sturdy collision: Stoere is Bad's canon), Trap → Stamper (new casual short for Kick), Zieke → Snotje (codex-aligned casual for Sick). Harde kept.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J21",
+      "speaker": "Big Ass",
+      "english": "I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!",
+      "current_nl": "Ik heb een mega aankondiging, Kameraad Stoere! Harde, Trap, en Zieke zijn terug!",
+      "proposed_nl": "Ik heb een mega aankondiging, Kameraad Stevige! Harde, Stamper, en Snotje zijn terug!"
+    },
+    {
+      "id": "BA-Q1-2",
+      "rationale": "Q1: je (dative) → u",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J25",
+      "speaker": "Big Ass",
+      "english": "If I had any of my rations left I'd share them with you.",
+      "current_nl": "Moest ik nog wat rantsoenen over hebben had ik je er wat gegeven.",
+      "proposed_nl": "Moest ik nog wat rantsoenen over hebben had ik u er wat gegeven."
+    },
+    {
+      "id": "BA-Q1-3",
+      "rationale": "Q1: je (object) → u",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J43",
+      "speaker": "Big Ass",
+      "english": "Even after all that rehearsing, the audience sure knows how to make you feel small.",
+      "current_nl": "Zelfs na al dat repeteren, weet het publiek wel hoe je klein te doen voelen.",
+      "proposed_nl": "Zelfs na al dat repeteren, weet het publiek wel hoe u klein te doen voelen."
+    },
+    {
+      "id": "BA-Q1-4",
+      "rationale": "Q1: je (possessive 'your moves') → uw. NOTE: Triestigaard kept per Q8 (E5_CircusMain J136 documented_keep).",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J136",
+      "speaker": "Big Ass",
+      "english": "Go show the crowd your cool moves Sad!",
+      "current_nl": "Ga je zieke moves aan het publiek tonen, Triestigaard!",
+      "proposed_nl": "Ga uw zieke moves aan het publiek tonen, Triestigaard!"
+    },
+    {
+      "id": "BA-Q1-5",
+      "rationale": "Q1: je (reflexive 'yourself') → u; je hebt → ge hebt. NOTE: Triestigaard kept per Q8 (E5_CircusMain J145 documented_keep).",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J145",
+      "speaker": "Big Ass",
+      "english": "Don't beat yourself up Sad, the bike was a late addition, you haven't had a lot of time to practice.",
+      "current_nl": "Maak je niet te druk, Triestigaard. Die fiets is er pas laat bijgekomen, en je hebt niet veel tijd gehad om te oefenen.",
+      "proposed_nl": "Maak u niet te druk, Triestigaard. Die fiets is er pas laat bijgekomen, en ge hebt niet veel tijd gehad om te oefenen."
+    },
+    {
+      "id": "BA-Q1-6",
+      "rationale": "Q1: je score (possessive) → uw score",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J45",
+      "speaker": "Big Ass",
+      "english": "It's not my fault your score is so low.",
+      "current_nl": "Niet mijn schuld dat je score zo laag is.",
+      "proposed_nl": "Niet mijn schuld dat uw score zo laag is."
+    },
+    {
+      "id": "BA-Q1-7",
+      "rationale": "Q1: je (object 'call you') → u",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J75",
+      "speaker": "Big Ass",
+      "english": "At this rate, we'll have to call you Speedy...",
+      "current_nl": "Op dit tempo, zouden we je Snelle Ezel moeten noemen...",
+      "proposed_nl": "Op dit tempo, zouden we u Snelle Ezel moeten noemen..."
+    },
+    {
+      "id": "BA-Q1-8",
+      "rationale": "Q1: Je (subject sentence-start) → Ge; je punten (possessive) → uw punten",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J213",
+      "speaker": "Big Ass",
+      "english": "You've surprised us all with how quickly you've grown your score.",
+      "current_nl": "Je staat ons doen kijken met hoe snel je punten aan het scoren bent.",
+      "proposed_nl": "Ge staat ons doen kijken met hoe snel uw punten aan het scoren bent."
+    },
+    {
+      "id": "BA-Q2-2",
+      "rationale": "Q2: nie → niet",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Boiling_localization",
+      "cell": "J9",
+      "speaker": "Big Ass",
+      "english": "Don't fall behind, Kick Ass!",
+      "current_nl": "Blijf nie achter, Stamp Ezel!",
+      "proposed_nl": "Blijf niet achter, Stamp Ezel!"
+    },
+    {
+      "id": "BA-Q2-3",
+      "rationale": "Q2: nie → niet",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigJob_localization",
+      "cell": "J6",
+      "speaker": "Big Ass",
+      "english": "Aren't they part of your Plan?",
+      "current_nl": "Maken die dan nie deel uit van uw Plan?",
+      "proposed_nl": "Maken die dan niet deel uit van uw Plan?"
+    },
+    {
+      "id": "BA-Q23-1",
+      "rationale": "Q3: 'k (sentence-start) → Ik. Q2: nie → niet. Combined fix in single cell.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigJob_localization",
+      "cell": "J27",
+      "speaker": "Big Ass",
+      "english": "I'm not leaving the other Asses here to die, just so we can try to live in comfort.",
+      "current_nl": "'k laat de andere Ezels hier nie achter om te sterven, alleen maar zodat wij in comfort kunnen proberen te leven.",
+      "proposed_nl": "Ik laat de andere Ezels hier niet achter om te sterven, alleen maar zodat wij in comfort kunnen proberen te leven."
+    },
+    {
+      "id": "BA-Q3-1",
+      "rationale": "Q3: 'k → ik",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigJob_localization",
+      "cell": "J30",
+      "speaker": "Big Ass",
+      "english": "Then I'll go back, alone.",
+      "current_nl": "Dan ga 'k alleen terug.",
+      "proposed_nl": "Dan ga ik alleen terug."
+    },
+    {
+      "id": "BA-Q2-4",
+      "rationale": "Q2: nie → niet",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigJob_localization",
+      "cell": "J37",
+      "speaker": "Big Ass",
+      "english": "You don't have to join me.",
+      "current_nl": "Ge moet nie met mij meekomen.",
+      "proposed_nl": "Ge moet niet met mij meekomen."
+    },
+    {
+      "id": "BA-Q23-2",
+      "rationale": "Q3: 'k → ik. Q2: nie → niet. Combined fix in single cell.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigBattle_localization",
+      "cell": "J4",
+      "speaker": "Big Ass",
+      "english": "Shouldn't I try to stop the one in charge?",
+      "current_nl": "Zou 'k nie moeten proberen om degene die de leiding heeft tegen te houden?",
+      "proposed_nl": "Zou ik niet moeten proberen om degene die de leiding heeft tegen te houden?"
+    },
+    {
+      "id": "BA-Q3-2",
+      "rationale": "Q3: 'k ×2 → ik ×2",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigBattle_localization",
+      "cell": "J5",
+      "speaker": "Big Ass",
+      "english": "No, I've already done what I came to do.",
+      "current_nl": "Nee, 'k heb al gedaan waarvoor 'k gekomen ben.",
+      "proposed_nl": "Nee, ik heb al gedaan waarvoor ik gekomen ben."
+    },
+    {
+      "id": "BA-Q3-3",
+      "rationale": "Q3: 'k (sentence-start) → Ik",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigBattle_localization",
+      "cell": "J7",
+      "speaker": "Big Ass",
+      "english": "I shouldn't bite off more than I can chew...",
+      "current_nl": "'k Zou best niet te veel hooi op mijn vork nemen.",
+      "proposed_nl": "Ik zou best niet te veel hooi op mijn vork nemen."
+    },
+    {
+      "id": "BA-Q3-4",
+      "rationale": "Q3: 'k → ik",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigBattle_localization",
+      "cell": "J8",
+      "speaker": "Big Ass",
+      "english": "What am I saying... I can do this!",
+      "current_nl": "Wat zeg ik nu... 'k kan dit!",
+      "proposed_nl": "Wat zeg ik nu... ik kan dit!"
+    },
+    {
+      "id": "BA-Q3-5",
+      "rationale": "Q3: 'k ×2 → ik ×2 (first sentence-start → Ik, second mid-sentence → ik)",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_CityStreet_localization",
+      "cell": "J7",
+      "speaker": "Big Ass",
+      "english": "I made it out... I'm FREE!",
+      "current_nl": "'k Ben eruit geraakt... 'k ben VRIJ!",
+      "proposed_nl": "Ik ben eruit geraakt... ik ben VRIJ!"
+    },
+    {
+      "id": "BA-Q3-6",
+      "rationale": "Q3: 'k → ik",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_CityStreet_localization",
+      "cell": "J9",
+      "speaker": "Big Ass",
+      "english": "But I guess I'm on my own now...",
+      "current_nl": "Maar 'k denk dat ik er nu alleen voor sta...",
+      "proposed_nl": "Maar ik denk dat ik er nu alleen voor sta..."
+    },
+    {
+      "id": "BA-Q3-7",
+      "rationale": "Q3: 'K (uppercase, sentence-start in shouted line) → IK. 't kept (Q4 — both forms free).",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_CityStreet_localization",
+      "cell": "J11",
+      "speaker": "Big Ass",
+      "english": "HEE HAW! I DID IT!",
+      "current_nl": "HIE HAA! 'K HEB 'T GEDAAN!",
+      "proposed_nl": "HIE HAA! IK HEB 'T GEDAAN!"
+    },
+    {
+      "id": "BA-Q3-8",
+      "rationale": "Q3: da'k → dat ik (contraction expansion)",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_CityStreet_localization",
+      "cell": "J12",
+      "speaker": "Big Ass",
+      "english": "Who'd have thought I could save all those Asses and blow up a Factory all on my own?",
+      "current_nl": "Wie had dat gedacht, da'k in mijn eentje al die Ezels kon redden én een hele Fabriek de lucht in kon blazen?",
+      "proposed_nl": "Wie had dat gedacht, dat ik in mijn eentje al die Ezels kon redden én een hele Fabriek de lucht in kon blazen?"
+    }
+  ]
+}

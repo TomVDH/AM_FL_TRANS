@@ -1,0 +1,154 @@
+{
+  "character": "(cross-character sweep)",
+  "rules_applied": [
+    "thirstyAssRegisterSplit: Retire 'Dorstlap' entirely (off-theme: thirsty ≠ drunk). Establish formal 'Beschonken Ezel' (canon, unchanged) vs casual 'Zatlap' (Flemish -lap epithet, drunk-rag/sot register). Codex update required post-pass: replace Dorstlap with Zatlap as casual form, keep Beschonken Ezel as formal canon. Per-line disposition: formal contexts (stage directions, third-person mention, profile/credits) → Beschonken Ezel; peer-to-peer direct address → Zatlap. Bare 'Beschonken' is unstable: → Beschonken Ezel for narrated third-person, → Zatlap for direct casual address.",
+    "dorstklapTypoFix: 'Dorstklap' (E3_Mine1FOpening J67) is a typo. Resolved to 'Beschonken Ezel' per stage-direction context."
+  ],
+  "generated": "2026-04-27",
+  "decision_status": "Q9 fully locked. 12 corrections (6 → Beschonken Ezel, 6 → Zatlap). Big Ass scope: 2 flips (Dorstlap → Zatlap, both casual direct address). Cross-character: 10 flips. Note: E6_World J229 also flagged for 'da' → 'dat' contraction repair (deferred to Sturdy pass).",
+  "corrections": [
+    {
+      "id": "TH-1",
+      "rationale": "NPC stage direction. Formal canon.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J32",
+      "speaker": "34",
+      "english": "Inform Thirsty Ass that Old Ass wants the Herd to continue the Protest.",
+      "current_nl": "Vertel aan Dorstlap dat Oude Zak wilt dat de Kudde het Protest verderzet.",
+      "proposed_nl": "Vertel aan Beschonken Ezel dat Oude Zak wilt dat de Kudde het Protest verderzet."
+    },
+    {
+      "id": "TH-2",
+      "rationale": "NPC stage direction. Formal canon.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J33",
+      "speaker": "35",
+      "english": "Promise Thirsty Ass that Nice Ass will be there.",
+      "current_nl": "Beloof aan Dorstlap dat Schoon Beest aan het Protest meedoet.",
+      "proposed_nl": "Beloof aan Beschonken Ezel dat Schoon Beest aan het Protest meedoet."
+    },
+    {
+      "id": "TH-3",
+      "rationale": "Trusty Ass — third-person mention. Formal canon.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J134",
+      "speaker": "Trusty Ass",
+      "english": "Thirsty thinks it'd be easier to get water from the Well.",
+      "current_nl": "Dorstlap denkt dat het beter is om water uit de put te halen.",
+      "proposed_nl": "Beschonken Ezel denkt dat het beter is om water uit de put te halen."
+    },
+    {
+      "id": "TH-4",
+      "rationale": "Trusty Ass — third-person mention. Formal canon.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J135",
+      "speaker": "Trusty Ass",
+      "english": "Thirsty thinks it'd be easier to get water from the Well!",
+      "current_nl": "Dorstlap denkt dat het beter is om water uit de put te halen!",
+      "proposed_nl": "Beschonken Ezel denkt dat het beter is om water uit de put te halen!"
+    },
+    {
+      "id": "TH-5",
+      "rationale": "Big Ass — casual direct address ('How about Thirsty?'). Casual epithet.",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J22",
+      "speaker": "Big Ass",
+      "english": "How about Thirsty?",
+      "current_nl": "En Dorstlap?",
+      "proposed_nl": "En Zatlap?"
+    },
+    {
+      "id": "TH-6",
+      "rationale": "Big Ass — casual direct address ('you got it, Thirsty!'). Casual epithet.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J71",
+      "speaker": "Big Ass",
+      "english": "*oof!*—You wanted water and you got it, Thirsty!",
+      "current_nl": "*oef!*—Ge wilde water en ge hebt het, Dorstlap!",
+      "proposed_nl": "*oef!*—Ge wilde water en ge hebt het, Zatlap!"
+    },
+    {
+      "id": "TH-7",
+      "rationale": "Typo fix. Stage-direction context. Formal canon.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J67",
+      "speaker": "5",
+      "english": "Thirsty Ass",
+      "current_nl": "Dorstklap",
+      "proposed_nl": "Beschonken Ezel"
+    },
+    {
+      "id": "TH-8",
+      "rationale": "Sturdy Ass — third-person narration ('I think Thirsty will jump for joy'). Bare 'Beschonken' → full formal canon. NOTE: 'da' contraction (→ 'dat') deferred to Sturdy editorial pass; not touched here.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J229",
+      "speaker": "Sturdy Ass",
+      "english": "I think Thirsty will jump for joy when he sees this!",
+      "current_nl": "Ik denk da Beschonken een gat in de lucht springt als hij dit ziet!",
+      "proposed_nl": "Ik denk da Beschonken Ezel een gat in de lucht springt als hij dit ziet!"
+    },
+    {
+      "id": "TH-9",
+      "rationale": "Nice Ass — casual direct address ('Oh Thirsty, you finally opened your bar!'). Casual epithet.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J241",
+      "speaker": "Nice Ass",
+      "english": "Oh Thirsty, you finally opened your bar!",
+      "current_nl": "Oesje, Dorstlap, ge hebt eindelijk uw kroeg geopend!",
+      "proposed_nl": "Oesje, Zatlap, ge hebt eindelijk uw kroeg geopend!"
+    },
+    {
+      "id": "TH-10",
+      "rationale": "Kick Ass — casual surprise call. Casual epithet.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Thirsty_localization",
+      "cell": "J6",
+      "speaker": "Kick Ass",
+      "english": "Thirsty?!",
+      "current_nl": "Dorstlap?!",
+      "proposed_nl": "Zatlap?!"
+    },
+    {
+      "id": "TH-11",
+      "rationale": "Kick Ass — casual hype call. Casual epithet.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Thirsty_localization",
+      "cell": "J8",
+      "speaker": "Kick Ass",
+      "english": "Thirsty!!",
+      "current_nl": "Dorstlap!!",
+      "proposed_nl": "Zatlap!!"
+    },
+    {
+      "id": "TH-12",
+      "rationale": "Kick Ass — casual direct address ('Thirsty? What are you doing HERE?'). Bare 'Beschonken' → casual epithet.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Thirsty_localization",
+      "cell": "J16",
+      "speaker": "Kick Ass",
+      "english": "Thirsty? What are you doing HERE?",
+      "current_nl": "Beschonken? Wat doe jij HIER?",
+      "proposed_nl": "Zatlap? Wat doe jij HIER?"
+    }
+  ],
+  "deferred_flags": [
+    {
+      "type": "contraction_repair",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J229",
+      "speaker": "Sturdy Ass",
+      "issue": "'da' (short for 'dat')",
+      "owner": "Sturdy editorial pass — depends on dat/da voice rule lockdown"
+    }
+  ]
+}

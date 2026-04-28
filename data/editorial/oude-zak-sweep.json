@@ -1,0 +1,167 @@
+{
+  "character": "(cross-character sweep)",
+  "rules_applied": [
+    "oudeZakDeprecation: 'Oude Zak' suffix retired (parallel to 'Trouwe Zak' deprecation). Replace with 'Oude Ezel' (formal / full-name / memorial register) or 'Oude' (casual / intimate) per line context."
+  ],
+  "generated": "2026-04-27",
+  "decision_status": "Q7 locked for Big Ass only (E1_TheProtest J25 → Oude Ezel). 18 cross-character lines pending line-by-line disposition. Default lean: Oude Ezel for formal/third-person/stage-direction; Oude for intimate/mournful direct address. Per-line calls deferred until post-Big-Ass sweep session.",
+  "corrections": [
+    {
+      "id": "OZ-1",
+      "rationale": "Big Ass — sympathetic third-person mention of Old Ass post-death. Formal canon.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J25",
+      "speaker": "Big Ass",
+      "english": "Poor Old Ass.",
+      "current_nl": "Arme Oude Zak.",
+      "proposed_nl": "Arme Oude Ezel."
+    }
+  ],
+  "pending_disposition": [
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J25",
+      "speaker": "Old Ass",
+      "english": "But they underestimated this old Ass.",
+      "current_nl": "Maar ze hebben deze Oude Zak onderschat..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J46",
+      "speaker": "Sturdy Ass",
+      "english": "I can't leave Old Ass's body alone.",
+      "current_nl": "Ik kan Oude Zak niet alleen achterlaten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J51",
+      "speaker": "Sturdy Ass",
+      "english": "Oh Old Ass...",
+      "current_nl": "Oh Oude Zak..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J19",
+      "speaker": "Nice Ass",
+      "english": "Wait, really? But Old Ass has been here forever!",
+      "current_nl": "Wacht, echt? Maar Oude Zak is hier al sinds jaar en dag!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J32",
+      "speaker": "34",
+      "english": "Inform Thirsty Ass that Old Ass wants the Herd to continue the Protest.",
+      "current_nl": "Vertel aan Dorstlap dat Oude Zak wilt dat de Kudde het Protest verderzet."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J43",
+      "speaker": "Sad Ass",
+      "english": "Not Old Ass... I'm sorry Trusty. Things have gone from bad to worse...",
+      "current_nl": "Oh nee, niet Oude Zak.. Het spijt me Trouwe. De zaken zijn van kwaad naar erger gegaan..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J64",
+      "speaker": "Nice Ass",
+      "english": "What were Old Ass's last words? Perhaps they will inspire us!",
+      "current_nl": "Wat waren de laatste woorden van Oude Zak? Misschien kunnen ze ons inspireren!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J83",
+      "speaker": "Smart Ass",
+      "english": "No offence Slow Ass, but I knew this would happen when Old Ass put you on bridge duty.",
+      "current_nl": "Sorry hoor Slome, maar ik wist dat dit ging gebeuren wanneer Oude Zak je op brugdienst gezet heeft."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J103",
+      "speaker": "Hard Ass",
+      "english": "Old Ass got the Needle?",
+      "current_nl": "Oude Zak heeft de Spuit gekregen?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J108",
+      "speaker": "Nice Ass",
+      "english": "Old Ass wouldn't want us to leave anyone behind.",
+      "current_nl": "Oude Zak zou niet willen dat we iemand achterlaten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J109",
+      "speaker": "Nice Ass",
+      "english": "Old Ass wouldn't want us to leave anyone behind.",
+      "current_nl": "Oude Zak zou niet willen dat we iemand achterlaten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J110",
+      "speaker": "Nice Ass",
+      "english": "Old Ass wouldn't want us to leave anyone behind.",
+      "current_nl": "Oude Zak zou niet willen dat we iemand achterlaten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J111",
+      "speaker": "Nice Ass",
+      "english": "Old Ass wouldn't want us to leave anyone behind.",
+      "current_nl": "Oude Zak zou niet willen dat we iemand achterlaten."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J20",
+      "speaker": "Hard Ass",
+      "english": "Old Ass and Trusty Ass were not cut out for the role of leader. They were too soft.",
+      "current_nl": "Oude Zak en Trouwe Ezel waren niet geschikt voor het leiderschap. Ze zijn te soft."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J36",
+      "speaker": "Sturdy Ass",
+      "english": "I know Old Ass dreamed of a world where Asses and Humans worked together again...",
+      "current_nl": "Ik weet dat Oude Zak van een wereld droomde waar Mensen en Ezels weer samen konden werken..."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J38",
+      "speaker": "Sturdy Ass",
+      "english": "Old Ass's dream is dead.",
+      "current_nl": "Oude Zak zijn droom ligt in het vergiet."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J23",
+      "speaker": "Sturdy Ass",
+      "english": "Remember what Old Ass said: Ass Power!",
+      "current_nl": "Vergeet niet wat Oude Zak zei: EZEL MACHT!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J24",
+      "speaker": "Sturdy Ass",
+      "english": "Remember what Old Ass said: Don't be scared!",
+      "current_nl": "Vergeet niet wat Oude Zak zei: Niet bang zijn!"
+    }
+  ]
+}
