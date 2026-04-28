@@ -58,14 +58,14 @@
     },
     {
       "id": "BA-Q1-3",
-      "rationale": "Q1: je (object) → u",
+      "rationale": "Q1: je (object) → u, plus subject-spell-out repair: original 'hoe je klein te doen voelen' was a calque on EN with implicit subject; rewritten as 'hoe ze u klein doen voelen' (audience as explicit ze-subject) for natural NL.",
       "file": "5_asses.masses_E5Proxy.xlsx",
       "sheet": "E5_CircusMain_localization",
       "cell": "J43",
       "speaker": "Big Ass",
       "english": "Even after all that rehearsing, the audience sure knows how to make you feel small.",
       "current_nl": "Zelfs na al dat repeteren, weet het publiek wel hoe je klein te doen voelen.",
-      "proposed_nl": "Zelfs na al dat repeteren, weet het publiek wel hoe u klein te doen voelen."
+      "proposed_nl": "Zelfs na al dat repeteren, weet het publiek wel hoe ze u klein doen voelen."
     },
     {
       "id": "BA-Q1-4",
@@ -102,25 +102,25 @@
     },
     {
       "id": "BA-Q1-7",
-      "rationale": "Q1: je (object 'call you') → u",
+      "rationale": "Q1: je (object 'call you') → u. Plus Tom 2026-04-28 prep edit: 'Op dit tempo,' → 'Aan dit tempo' (Flemish 'aan'-form, comma dropped).",
       "file": "5_asses.masses_E5Proxy.xlsx",
       "sheet": "E5_ZooMain_localization",
       "cell": "J75",
       "speaker": "Big Ass",
       "english": "At this rate, we'll have to call you Speedy...",
       "current_nl": "Op dit tempo, zouden we je Snelle Ezel moeten noemen...",
-      "proposed_nl": "Op dit tempo, zouden we u Snelle Ezel moeten noemen..."
+      "proposed_nl": "Aan dit tempo zouden we u Snelle Ezel moeten noemen..."
     },
     {
       "id": "BA-Q1-8",
-      "rationale": "Q1: Je (subject sentence-start) → Ge; je punten (possessive) → uw punten",
+      "rationale": "Q1 + construction repair: Je (subject) → Ge; je punten (possessive) → uw punten. Also: original 'staat ons doen kijken' was broken Dutch (calque on 'make us look at') and 'aan het scoren bent' had subject/object mismatch. Sentence rewritten using natural NL verb 'verbaast' (amaze) with 'omhoog gaan' for score rise, preserving both Q1 transformations.",
       "file": "5_asses.masses_E5Proxy.xlsx",
       "sheet": "E5_ZooMain_localization",
       "cell": "J213",
       "speaker": "Big Ass",
       "english": "You've surprised us all with how quickly you've grown your score.",
       "current_nl": "Je staat ons doen kijken met hoe snel je punten aan het scoren bent.",
-      "proposed_nl": "Ge staat ons doen kijken met hoe snel uw punten aan het scoren bent."
+      "proposed_nl": "Ge verbaast ons allemaal, met hoe snel uw punten omhoog gaan."
     },
     {
       "id": "BA-Q2-2",

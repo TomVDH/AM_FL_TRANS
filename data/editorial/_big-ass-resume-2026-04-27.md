@@ -448,14 +448,16 @@ for f in sorted(glob.glob("excels/*.xlsx")):
 
 These four Q1 cells in `big-ass-corrections.json` involved judgment calls on the je-family transformation. **Worth a Flemish-ear spot-check before --apply.** If any feel off, edit `proposed_nl` directly in the JSON before running `--apply`.
 
-| ID | Cell | Was | Now | Call made |
+| ID | Cell | Was | Now | Call made (locked 2026-04-28) |
 |---|---|---|---|---|
-| `BA-Q1-3` | E5_CircusMain J43 | *"hoe je klein te doen voelen"* | *"hoe u klein te doen voelen"* | `je` as object → `u`. Sentence is awkward in current NL too — kept structure, just swapped pronoun. |
-| `BA-Q1-5` | E5_CircusMain J145 | *"Maak je niet te druk... en je hebt..."* | *"Maak u niet te druk... en ge hebt..."* | First `je` reflexive → `u` (matches u/uw paradigm Q5). Second `je hebt` subject → `ge hebt`. Two transformations in one cell. |
-| `BA-Q1-7` | E5_ZooMain J75 | *"zouden we je Snelle Ezel moeten noemen"* | *"zouden we u Snelle Ezel moeten noemen"* | `je` as direct object ("call you Speedy") → `u`. |
-| `BA-Q1-8` | E5_ZooMain J213 | *"Je staat ons doen kijken met hoe snel je punten..."* | *"Ge staat ons doen kijken met hoe snel uw punten..."* | First `Je` subject → `Ge`. Second `je punten` possessive → `uw punten`. |
+| `BA-Q1-3` | E5_CircusMain J43 | *"hoe je klein te doen voelen"* | *"hoe **ze u** klein doen voelen"* | **Construction repair.** Original was a calque on EN with implicit subject — added explicit `ze` (referring to `het publiek`), dropped `te`. Q1 pronoun flip preserved (`je` → `u`). |
+| `BA-Q1-5` | E5_CircusMain J145 | *"Maak je niet te druk... en je hebt..."* | *"Maak u niet te druk... en ge hebt..."* | **Mechanical kept.** Flemish-tussentaal `Maak u niet druk` (no `zich`) is the natural casual imperative for ge/u register — `Maakt u zich` would be Standard-Dutch (Holland), out of voice. Two transformations: reflexive `je`→`u`, subject `je hebt`→`ge hebt`. |
+| `BA-Q1-7` | E5_ZooMain J75 | *"Op dit tempo, zouden we je Snelle Ezel moeten noemen..."* | *"**Aan dit tempo** zouden we **u** Snelle Ezel moeten noemen..."* | **Mechanical pronoun + Tom prep edit.** Q1: `je`→`u` (object 'call you'). Plus `Op dit tempo,` → `Aan dit tempo` (Flemish prep, comma dropped). |
+| `BA-Q1-8` | E5_ZooMain J213 | *"Je staat ons doen kijken met hoe snel je punten aan het scoren bent."* | *"**Ge verbaast ons allemaal**, met hoe snel **uw punten omhoog gaan**."* | **Construction repair.** Original NL was broken — `staat ons doen kijken` was a calque on "make us look at"; second clause had subject/object mismatch. Rewritten with natural NL `verbaast`/`omhoog gaan`. Both Q1 transformations preserved (subject `Je`→`Ge`, possessive `je punten`→`uw punten`). |
 
 The mechanical Q2/Q3 swaps (nie → niet, 'k → ik, da'k → dat ik) are low-risk find-replace. Q10's three-name swap is locked from session.
+
+**Verified 2026-04-28: no cell is targeted by multiple corrections** — apply-order is safe.
 
 ---
 
@@ -494,8 +496,89 @@ If you're a fresh Claude session reading this for the first time:
 2. `excels/` are the source of truth. Every other dump (CSV, JSONL, JSON-per-episode) is derived and may be stale.
 3. The user (Tom) prefers data over interpretation. Don't editorialize. Don't summarize without being asked. Present counts, lines, options. Let him call dispositions.
 4. The user (Tom) likes simple, guided questions — one decision at a time, with the relevant evidence inline. Don't dump lots of choices at once.
-5. The "voiceRules" schema described in Part 2.1 is aspirational — no character has one yet. When you lock Big Ass, follow that schema.
+5. **Codex schema in practice: flat fields at entry top-level — NOT nested under `voiceRules`.** Trusty Ass + Slow Ass entries in `codex_verified.json` already use the flat shape (`pronounsAllowed`, `pronounsForbidden`, `negationRule`, `articleRule`, `registerExceptions`, `inboundAddressRules`, `editorialPass`, etc.). Big Ass post-pass should mirror that shape. The "voiceRules" wrapper in Part 2.1 is an unimplemented aspirational schema; ignore it. **See Part 13 for the runtime architecture — codex headers ARE prompt input for AI-suggest, not just editorial reference.**
 6. Before changing any xlsx cell, dry-run the corrections JSON through `apply-corrections.py`. The safety gates will save you from overwriting fresh edits.
 7. If you find new cross-character implications, flag them but don't sweep — the workflow is one-character-at-a-time.
+
+---
+
+## Part 13 — Codex runtime architecture (AI-suggest consumption)
+
+**🔑 READ THIS BEFORE DOING ANY CODEX WORK. Verified 2026-04-28 from `src/app/api/ai-suggest/route.ts`. Permanent reference for any session on `am-analysis`, on any machine.**
+
+The codex is **NOT just an editorial style reference**. It is **active prompt input** for the bulk AI-assisted translator. Every `/api/ai-suggest` call reads codex fields and renders them into the system+user prompt. This means: when a codex field changes, AI-translation behavior changes; when a codex field is missing, the AI is missing that instruction.
+
+### 13.1 — The two codex files
+
+| File | Role | Schema | Read at runtime? |
+|---|---|---|---|
+| `data/json/codex_verified.json` | **Editorial canonical SSoT.** Source of truth for verified character data + Phase-C voice locks. | Legacy fields + flat Phase-C fields (when locked). | ❌ **NO.** Editorial only. |
+| `data/json/codex_translations.json` | **Live runtime SSoT.** Read by AI-suggest on every translation request, by `/api/codex` route, by codex viewer. | Legacy fields ONLY (as of 2026-04-28). | ✅ **YES.** Cached 60s, then re-read. |
+
+**The two files are not auto-synced.** Edits to `codex_verified.json` do NOT propagate. Mirroring is manual.
+
+### 13.2 — Exact fields AI-suggest reads from `codex_translations.json`
+
+Source of truth: `src/app/api/ai-suggest/route.ts` lines 40–56 (`CodexEntry` interface), lines 132–145 (`getCodex`), lines 224–256 (`contextParts` builder).
+
+**Per-character voice fields rendered into the prompt:**
+- Identity: `english`, `dutch`, `category`, `nicknames`, `gender`, `bio`
+- Voice profile: `flemishDensity`, `register`, `pronounForm`
+- `contractions` — **skipped if value is "none"** (see route.ts line 249)
+- `verbalTics`, `dynamics`, `note`
+
+**Declared in interface but never used:** `relationships` (route.ts line 54)
+
+**ALL Phase-C flat fields are INVISIBLE to AI-suggest** — even if mirrored into `codex_translations.json`, the route doesn't read them:
+- ❌ `pronounsAllowed` / `pronounsForbidden`
+- ❌ `contractionsAllowed` / `contractionsForbidden`
+- ❌ `dialectalMarkersAllowed` / `dialectalMarkersForbidden`
+- ❌ `articleRule` / `negationRule` / `stutterRule`
+- ❌ `registerExceptions` / `inboundAddressRules`
+- ❌ `editorialPass`
+
+### 13.3 — The runtime gap (verified 2026-04-28)
+
+**Trusty Ass + Slow Ass entries in `codex_translations.json`** carry only stale legacy values from before their Phase-C locks. The Phase-C voice rules they inherited (`pronounsAllowed`, `negationRule: "niet only"`, `dialectalMarkersForbidden`, etc.) **never propagated to runtime**. AI-suggest is currently translating those characters with pre-Phase-C guidance.
+
+**Big Ass entry in `codex_translations.json` (verified 2026-04-28):**
+- `pronounForm: "mixed"` — STALE (Tom locked `ge/gij` per Q1)
+- `contractions: "none"` — STALE (corpus has `'k`×12 + `'t`×9; Q3 will set this to nothing post-apply since `'k` is being eliminated)
+- `note: "kameraad:7, oef:4 — full Ik not 'k; niet dominant over nie"` — half-correct
+- No Phase-C fields present
+
+### 13.4 — Backfill requires BOTH data + code
+
+To make Phase-C voice rules reach the AI translator, you need both:
+
+**Data (per locked character):**
+1. Mirror legacy fields from `codex_verified.json` → `codex_translations.json` (already-rendered fields: `pronounForm`, `contractions`, `flemishDensity`, `register`, `verbalTics`, `dynamics`, `note`).
+2. Add the Phase-C flat fields too (so the runtime route can be wired to read them).
+
+**Code (one-time route extension at `src/app/api/ai-suggest/route.ts`):**
+1. Extend `CodexEntry` interface (line ~40) with the Phase-C field types.
+2. Extend the voice-profile context builder (lines ~244–254) to render the structured allow/forbid lists into prompt instructions. Examples:
+   - `pronounsForbidden: ["jij","je","jou","jouw"]` → render as: *"NEVER use these pronouns: jij, je, jou, jouw."*
+   - `negationRule: "niet only — never nie"` → render as: *"Negation: 'niet' only, never 'nie'."*
+   - `registerExceptions: [...]` → render each scope/allows pair as a contextual permission line.
+3. Optionally adjust the system prompt (lines ~308–329) to consume structured fields instead of legacy prose `note`.
+
+**Until both land, the editorial pass is half-done:** existing AI translations get hardened (via `apply-corrections.py`), but future AI translations keep drifting from voice.
+
+### 13.5 — Other inputs into AI-suggest (for completeness)
+
+- `data/analysis/speaker-corpus.jsonl` — last 15 entries per speaker, gated by `useCorpus: true` flag (route.ts lines 20–38, 261–270). Cached 60s.
+- `linesBefore` / `linesAfter` — surrounding dialogue, passed in by caller (lines 273–285).
+- Referenced-codex auto-pull — finds other characters/terms mentioned in the EN, includes their `english → dutch` mapping (lines 167–196, 287–297).
+- System prompt — hardcoded scaffolding (route.ts lines 308–329). Includes default rules: *"If NO voice profile is provided but the speaker is known, default to light tussentaal with je/jij,"* and *"Only use heavy Flemish (ge/gij, nie, 'k, plat Vlaams) when the voice profile explicitly calls for it."*
+
+### 13.6 — Cheat sheet: what to update when a character locks
+
+After `apply-corrections.py --apply` lands a character's editorial pass:
+
+1. **`codex_verified.json`** — write the full Phase-C entry (flat fields, including `editorialPass` block).
+2. **`codex_translations.json`** — at minimum update the legacy fields (`pronounForm`, `contractions`, `note`, `verbalTics`, `dynamics`) so AI-suggest renders the latest values. Also mirror the Phase-C flat fields if the route has been extended.
+3. **`src/app/api/ai-suggest/route.ts`** — if the Phase-C reader hasn't shipped yet, add it (one-time, not per-character).
+4. Bump `lastEditorialPass` in `codex_verified.json`. Bump `version` if structure changed.
 
 End of resume file.
