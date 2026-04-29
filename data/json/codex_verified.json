@@ -1266,13 +1266,52 @@
       "dutch": "Gouden Ezel",
       "dutchShort": "Gouden",
       "category": "CHARACTER",
+      "scope": "main-non-donkey",
       "nicknames": [
         "Gouden"
       ],
-      "bio": "Mythological/religious figure. 90 lines. Reference to Lucius from Apuleius's 'The Golden Ass'.",
-      "gender": "?",
+      "bio": "Mythological/divine donkey deity. Reference to Lucius from Apuleius's 'The Golden Ass'. Speaks in archaic formal register to mortals/Vassals. Adopted Sick Ass as her vessel. 90 lines.",
+      "gender": "female",
+      "flemishDensity": "none",
+      "register": "archaic divine formal",
+      "pronounForm": "ge/gij",
+      "verbalTics": "Gij (archaic 2nd person ×20+ post-fix), uw (formal possessive ×9), zijt (archaic be-verb), formal divine oratory",
+      "dynamics": "deific, formal, prophetic, archaic",
       "verified": true,
-      "scope": "main-non-donkey"
+      "pronounsAllowed": [
+        "gij",
+        "ge",
+        "u",
+        "uw",
+        "zijt"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [
+        "'k",
+        "'t"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only — clean (0 nie)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "golden-ass-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 1,
+        "correctionsFile": "data/editorial/non-donkey-batch-2026-04-29.json",
+        "rulesLocked": "Q1: gij dominant locked (1 ge → Gij flip at J83 for archaic register consistency). Q2: niet only (0 nie). Q3: 0 contractions. Pure archaic divine register."
+      }
     },
     {
       "name": "Hee",
@@ -1280,13 +1319,53 @@
       "dutch": "HIE",
       "dutchShort": "HIE",
       "category": "CHARACTER",
+      "scope": "main-non-donkey",
       "nicknames": [
-        "HIE"
+        "HIE",
+        "Zita"
       ],
-      "bio": "Donkey deity. Paired with Haw. Tom 2026-04-28: 'two donkey deities, zita and zeno' (corpus uses HIE/HAA). 29 lines.",
+      "bio": "Donkey deity (paired with Haw). Dual role: divine + henchman pair (called Zita & Zeno in some dialogue). NL canonical: HIE (uppercase). 28 lines.",
       "gender": "?",
+      "flemishDensity": "none",
+      "register": "archaic divine formal",
+      "pronounForm": "gij",
+      "verbalTics": "gij (×4 archaic 2nd person), uw (×3 formal possessive), zijt (×1), collective 'wij' (we deities), divine oratory",
+      "dynamics": "deific, oratorical, authoritative",
       "verified": true,
-      "scope": "main-non-donkey"
+      "pronounsAllowed": [
+        "gij",
+        "uw",
+        "u",
+        "zijt"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "ge"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [
+        "'k",
+        "'t"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "hee-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "Pure archaic Flemish divine — corpus clean. 8 ge-family, 0 je-family, 2 niet, 0 contractions, exclusively wij first-person plural. No flips needed."
+      }
     },
     {
       "name": "Haw",
@@ -1294,13 +1373,52 @@
       "dutch": "HAA",
       "dutchShort": "HAA",
       "category": "CHARACTER",
+      "scope": "main-non-donkey",
       "nicknames": [
-        "HAA"
+        "HAA",
+        "Zeno"
       ],
-      "bio": "Donkey deity. Paired with Hee. 17 lines.",
+      "bio": "Donkey deity (paired with Hee). Dual role: divine + henchman. Distinct paradigm signature from Hee — uses u/uw (more bureaucratic-formal) instead of gij/uw. 16 lines.",
       "gender": "?",
+      "flemishDensity": "none",
+      "register": "formal divine bureaucratic",
+      "pronounForm": "u/uw",
+      "verbalTics": "u (×2), uw (×2), collective 'wij', formal address pattern distinct from Hee's gij",
+      "dynamics": "formal, bureaucratic, paired-deity",
       "verified": true,
-      "scope": "main-non-donkey"
+      "pronounsAllowed": [
+        "u",
+        "uw",
+        "gij"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "ge"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [
+        "'k",
+        "'t"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "haw-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "Formal divine bureaucratic — corpus clean. 4 ge-family (u/uw only), 0 je-family, 1 niet, 0 contractions. Distinct from Hee's gij signature — paired-deity differentiation kept."
+      }
     },
     {
       "name": "Mme. Derriere",
@@ -1308,15 +1426,58 @@
       "dutch": "Mevr. Derrière",
       "dutchShort": "Derrière",
       "category": "CHARACTER",
+      "scope": "main-non-donkey",
       "nicknames": [
         "Derriere",
-        "Mme Derriere",
         "Derrière"
       ],
-      "bio": "Factory matriarch — owns 'Mme. Derriere's Assorted Meats and Beauty Goods Factory' (Fabriek voor Gemengd Vlees en Schoonheidsproducten van Mevr. Derrière). 47 lines.",
+      "bio": "Aristocratic factory owner — runs 'Mme. Derriere's Assorted Meats and Beauty Goods Factory'. Corrupt, formal business register, sarcastic politeness. 46 lines.",
       "gender": "female",
+      "flemishDensity": "none",
+      "register": "ABN aristocratic-formal",
+      "pronounForm": "jij/je",
+      "verbalTics": "formal titles (Lieve Agenten), pompous syntax, sarcastic politeness ('het spijt mij ten zeerste')",
+      "dynamics": "aristocratic, corrupt, sarcastic, formal",
       "verified": true,
-      "scope": "main-non-donkey"
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "derriere-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "Pure ABN aristocratic — corpus clean. 12 je-family, 5 jullie, 6 niet, 0 nie, 0 contractions. No flips needed."
+      }
     },
     {
       "name": "Zookeeper Rose",
@@ -1324,15 +1485,60 @@
       "dutch": "Dierendokter Dina",
       "dutchShort": "Dina",
       "category": "CHARACTER",
+      "scope": "main-non-donkey",
       "nicknames": [
         "Rose",
         "Dina",
         "Dierendokter"
       ],
-      "bio": "Animal caretaker. EN 'Zookeeper Rose' is rendered in NL as 'Dierendokter Dina' (Animal Doctor Dina) — different role-translation. 140 lines.",
+      "bio": "Animal caretaker / vet at the City Zoo. EN 'Zookeeper Rose' rendered NL 'Dierendokter Dina' (different role-translation: Animal Doctor Dina). 140 lines. Heavy 'jullie' usage addressing herd patients.",
       "gender": "female",
+      "flemishDensity": "light",
+      "register": "ABN (warm professional)",
+      "pronounForm": "jij/je",
+      "verbalTics": "warm professional addressing donkeys as patients; jullie ×16 (group address); supportive coaching tone in E5 zoo competition scenes",
+      "dynamics": "warm, professional, caring, motivational",
       "verified": true,
-      "scope": "main-non-donkey"
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "zijt"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only — clean (0 nie)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "zookeeper-rose-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 1,
+        "correctionsFile": "data/editorial/non-donkey-batch-2026-04-29.json",
+        "rulesLocked": "Q1: je/jij + jou/jouw ABN (1 ge-family flip at J182: 'Wat zegt u?' → 'Wat zeg je?'). Q2: niet only (0 nie). Q3: clean (0 'k, 0 da). Q4: jullie KEPT ×16 (audience-addressing herd patients)."
+      }
     },
     {
       "name": "Ringmaster Rico",
@@ -1412,14 +1618,57 @@
       "dutch": "Luukske Vermeulen",
       "dutchShort": "Luukske",
       "category": "CHARACTER",
+      "scope": "main-non-donkey",
       "nicknames": [
         "Joey",
         "Luukske"
       ],
-      "bio": "The boy. NL renders as 'Luukske Vermeulen' (Flemish diminutive Luukske + family name Vermeulen, shared with Grandma Kulan). 20 lines.",
+      "bio": "Young human boy (8-12), grandson of Grandma Kulan. Earnest, innocent, exclamatory. ABN child voice. 19 lines.",
       "gender": "male",
+      "flemishDensity": "none",
+      "register": "ABN casual child",
+      "pronounForm": "jij/je",
+      "verbalTics": "exclamatory ('HELP MIJ!'), earnest demands, addresses Grandma as 'Grootmoe'",
+      "dynamics": "innocent, demanding, child",
       "verified": true,
-      "scope": "main-non-donkey"
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "child-joey-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "ABN casual child — corpus clean. 4 je-family, 3 niet, 0 contractions, 0 Flemish markers."
+      }
     },
     {
       "name": "Grandma Kulan",
@@ -1427,14 +1676,68 @@
       "dutch": "Grootmoe Vermeulen",
       "dutchShort": "Grootmoe",
       "category": "CHARACTER",
+      "scope": "main-non-donkey",
       "nicknames": [
         "Kulan",
         "Grootmoe"
       ],
-      "bio": "The grandma. Shares family name Vermeulen with Child Joey (related). 15 lines.",
+      "bio": "Grandmother human, grandmother of Child Joey (Luukske Vermeulen). Warm to family, formal to outsiders. Register-switching elder. 14 lines.",
       "gender": "female",
+      "flemishDensity": "none",
+      "register": "ABN formal elder w/ register-switching",
+      "pronounForm": "jij/je (family) + u (formal outside)",
+      "verbalTics": "warm 'schat' (darling) to grandchild; formal u to adults outside family (Derriere)",
+      "dynamics": "warm, protective, traditional, register-switching",
       "verified": true,
-      "scope": "main-non-donkey"
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw",
+        "u",
+        "uw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only",
+      "registerExceptions": [
+        {
+          "scope": "formal address to non-family adults",
+          "allows": [
+            "u",
+            "uw"
+          ],
+          "contexts": [
+            "E5_CircusMain J241 — 'Met al je vermogen...' formally addressing Mme. Derriere"
+          ]
+        }
+      ],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "grandma-kulan-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "ABN formal elder with register-switching — corpus clean. 3 je-family (family), 1 u (formal to Derriere — register exception kept). 3 niet, 0 contractions."
+      }
     },
     {
       "name": "Foal",
@@ -1601,12 +1904,244 @@
         "correctionsFile": null,
         "rulesLocked": "Q1: MIXED pronoun paradigm locked (Tom directive 2026-04-29) — child code-switches naturally between formal (uw/u/ge with elders) and casual (je/jij with peers). No mechanical flips — corpus reflects intentional register variation. Q2: niet only (corpus clean). Q3: 'k light/free, 't free. Q4-7: signatures kept (Nonkel, Tante, Moeder, child sfx). 14 cells in bulkTranslateExclusions (5 engine vars + 9 sfx)."
       }
+    },
+    {
+      "name": "Butte",
+      "english": "Butte",
+      "dutch": "Vanscheetvelde",
+      "dutchShort": "Butte",
+      "category": "CHARACTER",
+      "scope": "main-non-donkey",
+      "nicknames": [
+        "Mr Butte",
+        "Hugh G. Butte",
+        "Vanscheetvelde"
+      ],
+      "bio": "Capitalist boss / factory owner — Cole Butte's father (presumed). Likely speaks in E2/E6. ABN formal, philosophical. 21 lines.",
+      "gender": "male",
+      "flemishDensity": "none",
+      "register": "ABN formal capitalist",
+      "pronounForm": "jij/je",
+      "verbalTics": "philosophical asides ('business is business'), monologue-leaning",
+      "dynamics": "capitalist, philosophical, sober",
+      "verified": true,
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "butte-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "ABN formal capitalist — corpus clean. 3 je-family, 1 jullie, 2 niet, 0 contractions. No flips needed."
+      }
+    },
+    {
+      "name": "Miner Jenny",
+      "english": "Miner Jenny",
+      "dutch": "Mijnwerker Jenny",
+      "dutchShort": "Jenny",
+      "category": "CHARACTER",
+      "scope": "main-non-donkey",
+      "nicknames": [
+        "Jenny"
+      ],
+      "bio": "Night-shift miner. Tough, demanding, emotionally vulnerable when discussing breakup. Working-class ABN. 19 lines.",
+      "gender": "female",
+      "flemishDensity": "none",
+      "register": "ABN working-class colloquial",
+      "pronounForm": "jij/je",
+      "verbalTics": "emotional curses ('Stuk Stront Dat Je Bent'), tough register",
+      "dynamics": "tough, vulnerable, working-class",
+      "verified": true,
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "miner-jenny-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "ABN working-class colloquial — corpus clean. 8 je-family, 4 niet, 0 contractions, 0 Flemish markers."
+      }
+    },
+    {
+      "name": "Radio Host Marcos",
+      "english": "Radio Host Marcos",
+      "dutch": "Radio Presentator Marcos",
+      "dutchShort": "Marcos",
+      "category": "CHARACTER",
+      "scope": "main-non-donkey",
+      "nicknames": [
+        "Marcos",
+        "DJ Marcos"
+      ],
+      "bio": "Radio host / DJ. Polished, descriptive, professional broadcast register. 18 lines.",
+      "gender": "male",
+      "flemishDensity": "none",
+      "register": "ABN broadcast journalism",
+      "pronounForm": "jij/je",
+      "verbalTics": "broadcast journalism style, third-person reporting, formal descriptive",
+      "dynamics": "polished, professional, impersonal",
+      "verified": true,
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "marcos-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 1,
+        "correctionsFile": "data/editorial/non-donkey-batch-2026-04-29.json",
+        "rulesLocked": "ABN broadcast — 1 typo fix at E10_Government J9 ('nietl' → 'niet'). Otherwise corpus clean. 5 je-family, 1 niet, 0 contractions."
+      }
+    },
+    {
+      "name": "Melvin",
+      "english": "Melvin",
+      "dutch": "Melvin",
+      "dutchShort": "Melvin",
+      "category": "CHARACTER",
+      "scope": "main-non-donkey",
+      "nicknames": [
+        "Ass Handler Melvin"
+      ],
+      "bio": "Truck driver / ass handler. Anxious, paranoid, job-obsessed. Casual working-class ABN. 18 lines.",
+      "gender": "male",
+      "flemishDensity": "none",
+      "register": "ABN working-class anxious",
+      "pronounForm": "jij/je",
+      "verbalTics": "anxious self-talk, signature 'Kan me geen kloten schelen', street-level vocabulary",
+      "dynamics": "anxious, paranoid, working-class",
+      "verified": true,
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only",
+      "negationRule": "niet only",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "melvin-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "ABN working-class anxious — corpus clean. 2 je-family, 2 niet, 0 contractions."
+      }
     }
   ],
   "lastEditorialPass": {
-    "character": "Ringmaster Rico",
-    "passName": "ringmaster-rico-baseline",
+    "character": "non-donkey batch (11 chars)",
+    "passName": "non-donkey-baseline",
     "lockedOn": "2026-04-29",
-    "correctionsApplied": 0
+    "correctionsApplied": 3
   }
 }

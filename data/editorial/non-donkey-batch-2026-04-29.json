@@ -1,0 +1,45 @@
+{
+  "character": "(non-donkey batch — 3 cells across 3 characters)",
+  "rules_applied": [
+    "Zookeeper Rose Q1: u → je (ABN paradigm; flips lone ge-family hit at J182). 'Wat zegt u?' → 'Wat zeg je?' (V2 -t drop).",
+    "Golden Ass Q1: Ge → Gij at J83 (archaic divine register consistency).",
+    "Radio Host Marcos: typo nietl → niet at E10_Government J9."
+  ],
+  "generated": "2026-04-29",
+  "decision_status": "Tom-locked 2026-04-29. 3 cells.",
+  "corrections": [
+    {
+      "id": "ROSE-1",
+      "rationale": "Q1: u → je (force ABN je/jij paradigm; Tom directive 2026-04-29 — flip the only ge-family hit in corpus). Verb form: zegt → zeg (V2 inversion -t drop for je).",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J182",
+      "speaker": "Zookeeper Rose",
+      "english": "What's that?",
+      "current_nl": "Wat zegt u?",
+      "proposed_nl": "Wat zeg je?"
+    },
+    {
+      "id": "GOLDENASS-1",
+      "rationale": "Q1: Ge → Gij (force gij-dominance; archaic divine register, parallel to 20 gij hits in same scene)",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J83",
+      "speaker": "Golden Ass",
+      "english": "You know in your Soul that a philosophical transformation is necessary now more than ever.",
+      "current_nl": "Ge weet in uw Ziel dat een filosofische transformatie nu meer dan ooit noodzakelijk is.",
+      "proposed_nl": "Gij weet in uw Ziel dat een filosofische transformatie nu meer dan ooit noodzakelijk is."
+    },
+    {
+      "id": "MARCOS-1",
+      "rationale": "Typo fix: nietl → niet",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J9",
+      "speaker": "Radio Host Marcos",
+      "english": "Police are struggling to fathom how security forces and intelligence agencies have failed to stop the threat.",
+      "current_nl": "De politie weet nietl hoe de veiligheidsdiensten en inlichtingendiensten er niet in geslaagd zijn de dreiging te stoppen.",
+      "proposed_nl": "De politie weet niet hoe de veiligheidsdiensten en inlichtingendiensten er niet in geslaagd zijn de dreiging te stoppen."
+    }
+  ]
+}
