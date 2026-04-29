@@ -1,0 +1,271 @@
+{
+  "character": "Lazy Ass",
+  "rules_applied": [
+    "Q1: je/jij ABN paradigm (Tom retcon 2026-04-28 — flips opposite of corpus and codex). 17 ge-family tokens (ge:11, u:3, uw:3) → je-family.",
+    "Q2: niet only (default ABN consistency for je/jij character). 7 nie → niet.",
+    "Q3a: 'k → ik (×9; Tom directive: no contractions).",
+    "Q3b: 't → het (×3 standalone; Tom directive: no contractions).",
+    "Q3c: da → dat (×3 conjunction).",
+    "Q4: R5 'Luie Zak' self-reference → 'Luie' (intimate, matches R44 'Hoi, ik ben Luie!'; Big Ass Q7 deprecation pattern).",
+    "Q5: R34 'wa hangt er?' → 'alles kits achter de rits?' (Tom directive 2026-04-28 — playful Dutch idiom replacement).",
+    "nen → een (R37; Tom directive — drop heavy-Flemish article).",
+    "Kept (Tom did not address): Merci, klapt, goesting, kleintje, Later, kits — character-color vocabulary."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "Tom retcon 2026-04-28: je/jij ABN + no contractions. 23 cells.",
+  "corrections": [
+    {
+      "id": "LAZY-1",
+      "rationale": "Q4: Luie Zak self-ref → Luie (deprecation; matches R44 'Hoi, ik ben Luie!')",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J5",
+      "speaker": "Lazy Ass",
+      "english": "I'm Lazy.",
+      "current_nl": "Ik ben Luie Zak.",
+      "proposed_nl": "Ik ben Luie."
+    },
+    {
+      "id": "LAZY-2",
+      "rationale": "Q3b: 't → het",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J9",
+      "speaker": "Lazy Ass",
+      "english": "Just hanging out.",
+      "current_nl": "Gewoon aan 't chillen.",
+      "proposed_nl": "Gewoon aan het chillen."
+    },
+    {
+      "id": "LAZY-3",
+      "rationale": "Q1: ge → je, uw → je",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J10",
+      "speaker": "Lazy Ass",
+      "english": "Look around if you want. Knock yourself out.",
+      "current_nl": "Kijk gerust rond als ge wilt. Doe uw goesting.",
+      "proposed_nl": "Kijk gerust rond als je wilt. Doe je goesting."
+    },
+    {
+      "id": "LAZY-4",
+      "rationale": "Q1: ge → je",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J14",
+      "speaker": "Lazy Ass",
+      "english": "Oh you've found the rock that crushed my head.",
+      "current_nl": "Ah ja, ge hebt de steen gevonden die mijn kop heeft geplet.",
+      "proposed_nl": "Ah ja, je hebt de steen gevonden die mijn kop heeft geplet."
+    },
+    {
+      "id": "LAZY-5",
+      "rationale": "Q3a: 'k → Ik ×2; Q2: nie → niet",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J16",
+      "speaker": "Lazy Ass",
+      "english": "I guess so. Don't really remember much from before that.",
+      "current_nl": "'k Denk het wel. 'k Herinner mij nie veel van daarvoor.",
+      "proposed_nl": "Ik denk het wel. Ik herinner mij niet veel van daarvoor."
+    },
+    {
+      "id": "LAZY-6",
+      "rationale": "Q3a: 'k → Ik",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J20",
+      "speaker": "Lazy Ass",
+      "english": "I think I tried to ascend myself... but I guess that failed.",
+      "current_nl": "'k Denk dat ik mezelf heb proberen op te laten stijgen... maar dat is precies mislukt.",
+      "proposed_nl": "Ik denk dat ik mezelf heb proberen op te laten stijgen... maar dat is precies mislukt."
+    },
+    {
+      "id": "LAZY-7",
+      "rationale": "Q3b: 't → het",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J22",
+      "speaker": "Lazy Ass",
+      "english": "Nah, it's too late.",
+      "current_nl": "Nee, 't is te laat.",
+      "proposed_nl": "Nee, het is te laat."
+    },
+    {
+      "id": "LAZY-8",
+      "rationale": "Q1: u → je, ge → je",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J26",
+      "speaker": "Lazy Ass",
+      "english": "Just get comfortable. \"Boredom is Freedom\", ya know?",
+      "current_nl": "Maak het u gemakkelijk. \"Verveling is Vrijheid\", weet ge wel?",
+      "proposed_nl": "Maak het je gemakkelijk. \"Verveling is Vrijheid\", weet je wel?"
+    },
+    {
+      "id": "LAZY-9",
+      "rationale": "Q1: ge → je",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J29",
+      "speaker": "Lazy Ass",
+      "english": "Ya know, if I had worn that helmet, maybe the rock would've exploded instead of my skull.",
+      "current_nl": "Weet ge, als ik die helm had gedragen, was misschien de steen ontploft in plaats van mijn schedel.",
+      "proposed_nl": "Weet je, als ik die helm had gedragen, was misschien de steen ontploft in plaats van mijn schedel."
+    },
+    {
+      "id": "LAZY-10",
+      "rationale": "Q1: Ge → Je",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J30",
+      "speaker": "Lazy Ass",
+      "english": "Hey! You found a way out. Cool.",
+      "current_nl": "Hey! Ge hebt een uitweg gevonden. Cool.",
+      "proposed_nl": "Hey! Je hebt een uitweg gevonden. Cool."
+    },
+    {
+      "id": "LAZY-11",
+      "rationale": "Q1: u → je, ge → je; Q2: nie → niet; Q3a: 'k → ik",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J31",
+      "speaker": "Lazy Ass",
+      "english": "Heads up, I won't remember you, if you come back.",
+      "current_nl": "Let op, 'k zal u nie herinneren als ge terugkomt.",
+      "proposed_nl": "Let op, ik zal je niet herinneren als je terugkomt."
+    },
+    {
+      "id": "LAZY-12",
+      "rationale": "Q1: uw → je; Q2: nie → niet; Q3a: 'k → Ik",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J33",
+      "speaker": "Lazy Ass",
+      "english": "I don't even remember your name.",
+      "current_nl": "'k Herinner mij zelfs uw naam nie.",
+      "proposed_nl": "Ik herinner mij zelfs je naam niet."
+    },
+    {
+      "id": "LAZY-13",
+      "rationale": "Q3a: 'k → Ik ×2; Q2: nie → niet",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J40",
+      "speaker": "Lazy Ass",
+      "english": "I dunno. I saw it on a sign once.",
+      "current_nl": "'k Weet nie. 'k Heb het ooit op een bord gezien.",
+      "proposed_nl": "Ik weet niet. Ik heb het ooit op een bord gezien."
+    },
+    {
+      "id": "LAZY-14",
+      "rationale": "Q1: u → je",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J45",
+      "speaker": "Lazy Ass",
+      "english": "Thank you little one.",
+      "current_nl": "Dank u, kleintje.",
+      "proposed_nl": "Dank je, kleintje."
+    },
+    {
+      "id": "LAZY-15",
+      "rationale": "Q1: Ge → Je; Q2: nie → niet",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J49",
+      "speaker": "Lazy Ass",
+      "english": "You see, my memory hasn't been working very well.",
+      "current_nl": "Ge ziet, mijn geheugen werkt nie meer zo goed.",
+      "proposed_nl": "Je ziet, mijn geheugen werkt niet meer zo goed."
+    },
+    {
+      "id": "LAZY-16",
+      "rationale": "Q3a: 'k → Ik (source had typo 'k Denk without apostrophe); Q3b: 't → het",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J50",
+      "speaker": "Lazy Ass",
+      "english": "I think I've been looking for that for a long time.",
+      "current_nl": "k Denk dat ik daar al lang naar aan 't zoeken was.",
+      "proposed_nl": "Ik denk dat ik daar al lang naar aan het zoeken was."
+    },
+    {
+      "id": "LAZY-17",
+      "rationale": "Q1: uw → je; Q2: nie → niet; Q3a: 'k → ik",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J51",
+      "speaker": "Lazy Ass",
+      "english": "To be honest, I don't even remember  your name.",
+      "current_nl": "Eerlijk gezegd, 'k herinner mij zelfs uw naam nie.",
+      "proposed_nl": "Eerlijk gezegd, ik herinner mij zelfs je naam niet."
+    },
+    {
+      "id": "LAZY-18",
+      "rationale": "Q1: ge → je; Q3c: da → dat",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J20",
+      "speaker": "Lazy Ass",
+      "english": "Heyyyy Hard! Thanks for switching shifts with me.",
+      "current_nl": "Heyyy Bikkelharde! Merci da ge van shift wilt wisselen met mij.",
+      "proposed_nl": "Heyyy Bikkelharde! Merci dat je van shift wilt wisselen met mij."
+    },
+    {
+      "id": "LAZY-19",
+      "rationale": "Q3a: 'k → Ik",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J21",
+      "speaker": "Lazy Ass",
+      "english": "I love 'working' with Cole Butte.",
+      "current_nl": "'k werk zo graag samen met Piet Vanscheetvelde.",
+      "proposed_nl": "Ik werk zo graag samen met Piet Vanscheetvelde."
+    },
+    {
+      "id": "LAZY-20",
+      "rationale": "Q1: ge → je",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J23",
+      "speaker": "Lazy Ass",
+      "english": "Boredom is freedom, ya know?",
+      "current_nl": "Verveling is Vrijheid, weet ge wel?",
+      "proposed_nl": "Verveling is Vrijheid, weet je wel?"
+    },
+    {
+      "id": "LAZY-21",
+      "rationale": "Q5: wa hangt er → alles kits achter de rits (Tom directive)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J34",
+      "speaker": "Lazy Ass",
+      "english": "Heyyyy Hard Ass, what's shakin'? Haha.",
+      "current_nl": "Heyyy Bikkelharde Ezel, wa hangt er? Haha.",
+      "proposed_nl": "Heyyy Bikkelharde Ezel, alles kits achter de rits? Haha."
+    },
+    {
+      "id": "LAZY-22",
+      "rationale": "Q1: Ge → Je, ge → je; Q3c: da → dat",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J36",
+      "speaker": "Lazy Ass",
+      "english": "You better get outta here.",
+      "current_nl": "Ge kunt beter maken da ge hier wegkomt.",
+      "proposed_nl": "Je kunt beter maken dat je hier wegkomt."
+    },
+    {
+      "id": "LAZY-23",
+      "rationale": "Q3c: da → dat; Q2: nie → niet; nen → een (Tom directive)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J37",
+      "speaker": "Lazy Ass",
+      "english": "Tell Sad Ass not to worry—Cole's going to find us a way out.",
+      "current_nl": "Zeg tegen Triestige Ezel da hij nie moet piekeren—Piet Vanscheetvelde gaat nen uitweg voor ons vinden.",
+      "proposed_nl": "Zeg tegen Triestige Ezel dat hij niet moet piekeren—Piet Vanscheetvelde gaat een uitweg voor ons vinden."
+    }
+  ]
+}

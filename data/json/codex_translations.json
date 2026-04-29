@@ -1306,28 +1306,67 @@
     },
     {
       "name": "Lazy Ass",
-      "description": "Character",
       "english": "Lazy Ass",
       "dutch": "Luie Ezel",
+      "dutchShort": "Luie",
       "category": "CHARACTER",
       "nicknames": [
         "Lazy",
-        "Comrade Lazy"
+        "Comrade Lazy",
+        "Luie"
       ],
-      "bio": "A lazy donkey. Very easy going, almost surfer-esque in tone, just here for a good time. Died in the Mine collapse accident 1 year before events of the story started. Mate of Sad Ass.\n\nShe is CARE FREE.",
+      "bio": "A lazy donkey. Very easy going, almost surfer-esque in tone, just here for a good time. Died in the Mine collapse accident 1 year before events of the story started. Mate of Sad Ass. She is CARE FREE.",
       "gender": "female",
-      "dialogueStyle": "",
-      "dutchDialogueStyle": "",
-      "flemishDensity": "heavy",
+      "flemishDensity": "light",
       "register": "tussentaal",
-      "pronounForm": "ge/gij",
-      "contractions": "none",
-      "verbalTics": "\"Verveling is Vrijheid\" (motto ×2), \"weet ge wel?\" (ya know? tag ×2), 'k Denk (tentative memory ×3), kleintje (affectionate to Foal), \"Later\" (Peace out)",
+      "pronounForm": "jij/je",
+      "verbalTics": "'Verveling is Vrijheid' (motto ×2), 'weet je wel?' (ya know? tag ×2 — was 'weet ge wel?' pre-retcon), 'kleintje' (affectionate to Foal), 'Later' (peace out), 'Merci', 'goesting', 'klapt' (vocab kept as character-color)",
       "dynamics": "easy-going, surfer tone, carefree",
-      "relationships": "lover of Sad Ass, daughter of Sturdy Ass",
-      "note": "'k:9; nie dominant, no \"niet\"; da conjunction; merci, klapt, nen, \"Doe uw goesting\" — heavy Flemish. Note: godver:4 not confirmed in available lines",
+      "relationships": "Mate of Sad Ass; died in mine collapse 1 year before story; appears in afterlife/grave scenes (E3_LazysGrave) and Sad's nightmare (E6)",
       "verified": true,
-      "dutchShort": "Luie"
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "zijt"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [
+        "'k",
+        "'t"
+      ],
+      "dialectalMarkersAllowed": [
+        "Merci",
+        "goesting",
+        "klapt",
+        "kleintje",
+        "Later",
+        "alles kits achter de rits"
+      ],
+      "dialectalMarkersForbidden": [
+        "nie",
+        "nen",
+        "wa hangt er"
+      ],
+      "articleRule": "een only — never nen",
+      "negationRule": "niet only — never nie",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "lazy-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 23,
+        "correctionsFile": "data/editorial/lazy-ass-corrections.json",
+        "rulesLocked": "Q1: je/jij ABN paradigm (Tom retcon — flips opposite of corpus's ge/gij). 17 ge-family → je-family. Q2: niet only (×7 nie → niet). Q3: NO CONTRACTIONS — 'k → ik (×9), 't → het (×3 standalone), da → dat (×3). Q4: R5 'Luie Zak' self-ref → 'Luie' (intimate, matches R44). Q5: R34 'wa hangt er?' → 'alles kits achter de rits?' (Tom directive). nen → een (R37; Tom directive). Vocab kept: Merci, goesting, klapt, kleintje, Later (character-color)."
+      }
     },
     {
       "name": "Left Ass",
@@ -3587,9 +3626,9 @@
     }
   ],
   "lastEditorialPass": {
-    "character": "Sick Ass",
-    "passName": "sick-ass-baseline",
+    "character": "Lazy Ass",
+    "passName": "lazy-ass-baseline",
     "lockedOn": "2026-04-28",
-    "correctionsApplied": 31
+    "correctionsApplied": 23
   }
 }
