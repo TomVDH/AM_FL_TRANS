@@ -1,0 +1,362 @@
+{
+  "character": "Kick Ass",
+  "rules_applied": [
+    "Q1: ge/gij dominant (je-family flipped). Q2: niet only. Q3: 'k kept. Q4: da→dat. Q5/Q6/Q7: curses + Snotje + kameraad kept."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "All Q1-Q7 + 10 uppercase residual fixes. 32 cells total.",
+  "corrections": [
+    {
+      "id": "KI-01",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Thirsty_localization",
+      "cell": "J16",
+      "speaker": "Kick Ass",
+      "english": "Thirsty? What are you doing HERE?",
+      "current_nl": "Zatlap? Wat doe jij HIER?",
+      "proposed_nl": "Zatlap? Wat doet gij HIER?"
+    },
+    {
+      "id": "KI-02",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J268",
+      "speaker": "Kick Ass",
+      "english": "I guess... you've finally gone to a place where I can't find you...",
+      "current_nl": "Ik denk... dat ge uiteindelijk naar een plek zijt gegaan waar ik u nie kan vinden...",
+      "proposed_nl": "Ik denk... dat ge uiteindelijk naar een plek zijt gegaan waar ik u niet kan vinden..."
+    },
+    {
+      "id": "KI-03",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J93",
+      "speaker": "Kick Ass",
+      "english": "You must be TRUSTY!",
+      "current_nl": "Jij moet Trouwe zijn!",
+      "proposed_nl": "Gij moet Trouwe zijn!"
+    },
+    {
+      "id": "KI-04",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept. | manual patch 2026-04-28: fixed semantic issue (uppercase NIE/JE, Gij bent→zijt, ge kan→ge kunt, ge<noun>→uw<noun> possessive, Hoor→Hoort V2).",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J113",
+      "speaker": "Kick Ass",
+      "english": "Don't even THINK about going where I CAN'T FIND YOU!",
+      "current_nl": "Ge gaat er zelfs nie aan dénken om te gaan waar ik u NIE KAN VINDEN!",
+      "proposed_nl": "Ge gaat er zelfs niet aan dénken om te gaan waar ik u NIET KAN VINDEN!"
+    },
+    {
+      "id": "KI-05",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HideAndSeek_localization",
+      "cell": "J3",
+      "speaker": "Kick Ass",
+      "english": "Sick Ass? Are you with me?",
+      "current_nl": "Snotezel? Ben je daar?",
+      "proposed_nl": "Snotezel? Zijt ge daar?"
+    },
+    {
+      "id": "KI-06",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HideAndSeek_localization",
+      "cell": "J7",
+      "speaker": "Kick Ass",
+      "english": "Wanna play HIDE AND SEEK?",
+      "current_nl": "Wil je VERSTOPPERTJE spelen?",
+      "proposed_nl": "Wilt ge VERSTOPPERTJE spelen?"
+    },
+    {
+      "id": "KI-07",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept. | manual patch 2026-04-28: fixed semantic issue (uppercase NIE/JE, Gij bent→zijt, ge kan→ge kunt, ge<noun>→uw<noun> possessive, Hoor→Hoort V2).",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HideAndSeek_localization",
+      "cell": "J19",
+      "speaker": "Kick Ass",
+      "english": "You're my sister and I'll always FIND YOU.",
+      "current_nl": "Jij bent mijn zusje en ik zal jou ALTIJD VINDEN.",
+      "proposed_nl": "Gij zijt mijn zusje en ik zal u ALTIJD VINDEN."
+    },
+    {
+      "id": "KI-08",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HideAndSeek_localization",
+      "cell": "J20",
+      "speaker": "Kick Ass",
+      "english": "Even if you're down in the deepest corner of the Mine!",
+      "current_nl": "Zelfs als zit je in het donkerste hoekje van de Mijn!",
+      "proposed_nl": "Zelfs als zit ge in het donkerste hoekje van de Mijn!"
+    },
+    {
+      "id": "KI-09",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J6",
+      "speaker": "Kick Ass",
+      "english": "Hey Sick, you're supposed to be MELLOWING out!",
+      "current_nl": "Hé Snotezel, jij hoort het RUSTIG aan te doen!",
+      "proposed_nl": "Hé Snotezel, gij hoort het RUSTIG aan te doen!"
+    },
+    {
+      "id": "KI-10",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J46",
+      "speaker": "Kick Ass",
+      "english": "Sick—where are you?!",
+      "current_nl": "Snotje—waar ben jij?!",
+      "proposed_nl": "Snotje—waar zijt gij?!"
+    },
+    {
+      "id": "KI-11",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_KicksGoodbye_localization",
+      "cell": "J4",
+      "speaker": "Kick Ass",
+      "english": "I hope you make it to the Astral Plane.",
+      "current_nl": "Ik hoop dat je 't Astrale Hiernamaals bereikt.",
+      "proposed_nl": "Ik hoop dat ge 't Astrale Hiernamaals bereikt."
+    },
+    {
+      "id": "KI-12",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept. | manual patch 2026-04-28: fixed semantic issue (uppercase NIE/JE, Gij bent→zijt, ge kan→ge kunt, ge<noun>→uw<noun> possessive, Hoor→Hoort V2).",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_KicksGoodbye_localization",
+      "cell": "J5",
+      "speaker": "Kick Ass",
+      "english": "And when your Soul gets reassigned—I'LL FIND YOU.",
+      "current_nl": "En wanneer je ZIEL herverkoren wordt — ZAL IK JE VINDEN.",
+      "proposed_nl": "En wanneer uw ZIEL herverkoren wordt — ZAL IK U VINDEN."
+    },
+    {
+      "id": "KI-13",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept. | manual patch 2026-04-28: fixed semantic issue (uppercase NIE/JE, Gij bent→zijt, ge kan→ge kunt, ge<noun>→uw<noun> possessive, Hoor→Hoort V2).",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J86",
+      "speaker": "Kick Ass",
+      "english": "You hear that?! They LOVED YOU!",
+      "current_nl": "Hoor je dat?! ZE HOUDEN VAN U!",
+      "proposed_nl": "Hoort ge dat?! ZE HOUDEN VAN U!"
+    },
+    {
+      "id": "KI-14",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J88",
+      "speaker": "Kick Ass",
+      "english": "Do you think there were any presenters in the audience?",
+      "current_nl": "Denk je dat er presentatoren in het publiek zetten?",
+      "proposed_nl": "Denkt ge dat er presentatoren in het publiek zetten?"
+    },
+    {
+      "id": "KI-15",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J132",
+      "speaker": "Kick Ass",
+      "english": "You're right—this is the BEST job—we've EVER had!",
+      "current_nl": "Je hebt gelijk — dit is de BESTE job — die we ooit hebben gehad!",
+      "proposed_nl": "Ge hebt gelijk — dit is de BESTE job — die we ooit hebben gehad!"
+    },
+    {
+      "id": "KI-16",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept. | manual patch 2026-04-28: fixed semantic issue (uppercase NIE/JE, Gij bent→zijt, ge kan→ge kunt, ge<noun>→uw<noun> possessive, Hoor→Hoort V2).",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J149",
+      "speaker": "Kick Ass",
+      "english": "You know Sad, you can't keep trying to be a different animal EVERY night.",
+      "current_nl": "Weet je, Triestigaard, je kan niet blijven proberen van ELKE avond een ander beest te proberen.",
+      "proposed_nl": "Weet ge, Triestigaard, ge kunt niet blijven proberen van ELKE avond een ander beest te proberen."
+    },
+    {
+      "id": "KI-17",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J44",
+      "speaker": "Kick Ass",
+      "english": "You're holding me BACK!",
+      "current_nl": "Je staat me IN DE WEG!",
+      "proposed_nl": "Ge staat me IN DE WEG!"
+    },
+    {
+      "id": "KI-19",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding1_localization",
+      "cell": "J13",
+      "speaker": "Kick Ass",
+      "english": "Slow Ass wasn't in the Truck-Machine when we got here—",
+      "current_nl": "Slome Ezel zat nie in de Camion Machine toen we hier aankwamen—",
+      "proposed_nl": "Slome Ezel zat niet in de Camion Machine toen we hier aankwamen—"
+    },
+    {
+      "id": "KI-20",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding3_localization",
+      "cell": "J13",
+      "speaker": "Kick Ass",
+      "english": "WHAT?!—I don't DO that anymore!",
+      "current_nl": "WAT?!—Ik doe da nie meer!",
+      "proposed_nl": "WAT?!—Ik doe dat niet meer!"
+    },
+    {
+      "id": "KI-21",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Skinning_localization",
+      "cell": "J15",
+      "speaker": "Kick Ass",
+      "english": "I'm happy you're SAFE!",
+      "current_nl": "'k Ben blij da ge VEILIG zijt!",
+      "proposed_nl": "'k Ben blij dat ge VEILIG zijt!"
+    },
+    {
+      "id": "KI-22",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J6",
+      "speaker": "Kick Ass",
+      "english": "Big—from the look of these carcasses... We're too late.",
+      "current_nl": "Mega—als je naar die karkassen kijkt... zijn we te laat.",
+      "proposed_nl": "Mega—als ge naar die karkassen kijkt... zijn we te laat."
+    },
+    {
+      "id": "KI-23",
+      "rationale": "Q1: je→ge, jij→gij, jou→u, jouw→uw + V2 -t add (kan→kunt, ben→zijt, mag→moogt, etc.). Q2: nie→niet. Q4: da→dat. 'k kept (Tom directive). Curses kept. Snotje kept. | manual patch 2026-04-28: fixed semantic issue (uppercase NIE/JE, Gij bent→zijt, ge kan→ge kunt, ge<noun>→uw<noun> possessive, Hoor→Hoort V2).",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigJob_localization",
+      "cell": "J32",
+      "speaker": "Kick Ass",
+      "english": "And your Soul will be STUCK here!",
+      "current_nl": "En je Ziel zal hier VAST blijven zitten!",
+      "proposed_nl": "En uw Ziel zal hier VAST blijven zitten!"
+    },
+    {
+      "id": "KI-RESIDUAL-23",
+      "rationale": "Q1: JOUW (uppercase possessive emphatic) → UW | residual fix from filter miss (uppercase variants)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J32",
+      "speaker": "Kick Ass",
+      "english": "@#$%&! You're to blame for all of our SUFFERING, Hard Ass!",
+      "current_nl": "@#$%&! Al dit leed hangt aan JOUW hoeven, Felle Gast!",
+      "proposed_nl": "@#$%&! Al dit leed hangt aan UW hoeven, Felle Gast!"
+    },
+    {
+      "id": "KI-RESIDUAL-24",
+      "rationale": "Q1: JE (uppercase object) → U | residual fix from filter miss (uppercase variants)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J65",
+      "speaker": "Kick Ass",
+      "english": "I FOUND YOU!",
+      "current_nl": "IK HEB JE GEVONDEN!",
+      "proposed_nl": "IK HEB U GEVONDEN!"
+    },
+    {
+      "id": "KI-RESIDUAL-25",
+      "rationale": "Q1: JOUW (uppercase possessive emphatic) → UW | residual fix from filter miss (uppercase variants)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J4",
+      "speaker": "Kick Ass",
+      "english": "THIS IS YOUR FAULT HARD ASS!",
+      "current_nl": "DIT IS JOUW FOUT FELLE GAST!",
+      "proposed_nl": "DIT IS UW FOUT FELLE GAST!"
+    },
+    {
+      "id": "KI-RESIDUAL-26",
+      "rationale": "Q1: JOU (uppercase object after IN) → U | residual fix from filter miss (uppercase variants)",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J135",
+      "speaker": "Kick Ass",
+      "english": "We believe IN YOU!",
+      "current_nl": "We GELOVEN IN JOU!",
+      "proposed_nl": "We GELOVEN IN U!"
+    },
+    {
+      "id": "KI-RESIDUAL-27",
+      "rationale": "Q1: JE (uppercase subject emphatic) → GIJ + V2: KAN → KUNT | residual fix from filter miss (uppercase variants)",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J137",
+      "speaker": "Kick Ass",
+      "english": "You can DO IT!",
+      "current_nl": "JE KAN HET!",
+      "proposed_nl": "GIJ KUNT HET!"
+    },
+    {
+      "id": "KI-RESIDUAL-28",
+      "rationale": "Q1: JE (uppercase reflexive in ge/u paradigm) → U | residual fix from filter miss (uppercase variants)",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooCapture_localization",
+      "cell": "J41",
+      "speaker": "Kick Ass",
+      "english": "HIDE!",
+      "current_nl": "VERSTOP JE!",
+      "proposed_nl": "VERSTOP U!"
+    },
+    {
+      "id": "KI-RESIDUAL-29",
+      "rationale": "Q2: NIE (uppercase) → NIET | residual fix from filter miss (uppercase variants)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J10",
+      "speaker": "Kick Ass",
+      "english": "Lazy could NOT handle another shift with HER.",
+      "current_nl": "Luie kon NIE nog een shift aan met HAAR.",
+      "proposed_nl": "Luie kon NIET nog een shift aan met HAAR."
+    },
+    {
+      "id": "KI-RESIDUAL-30",
+      "rationale": "Q1: JOUW (uppercase possessive emphatic) → UW | residual fix from filter miss (uppercase variants)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J44",
+      "speaker": "Kick Ass",
+      "english": "—this is all YOUR FAULT!",
+      "current_nl": "—dit is allemaal JOUW SCHULD!",
+      "proposed_nl": "—dit is allemaal UW SCHULD!"
+    },
+    {
+      "id": "KI-RESIDUAL-31",
+      "rationale": "Q2: NIE (uppercase) → NIET | residual fix from filter miss (uppercase variants)",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding1_localization",
+      "cell": "J10",
+      "speaker": "Kick Ass",
+      "english": "@#$%&! We're NOT AT THE ZOO ANYMORE!",
+      "current_nl": "@#$%&! We zitten NIE MEER IN DE ZOO, hè!",
+      "proposed_nl": "@#$%&! We zitten NIET MEER IN DE ZOO, hè!"
+    },
+    {
+      "id": "KI-RESIDUAL-32",
+      "rationale": "Q4: Da (sentence-start) → Dat | residual fix from filter miss (uppercase variants)",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_MeatProcessing_localization",
+      "cell": "J3",
+      "speaker": "Kick Ass",
+      "english": "There are so many Humans!",
+      "current_nl": "Da zijn zo veel Mensen!",
+      "proposed_nl": "Dat zijn zo veel Mensen!"
+    }
+  ]
+}

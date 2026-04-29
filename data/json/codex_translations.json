@@ -1117,14 +1117,54 @@
       "dutchDialogueStyle": "",
       "flemishDensity": "medium",
       "register": "tussentaal",
-      "pronounForm": "mixed",
-      "contractions": "none",
+      "pronounForm": "ge/gij",
+      "contractions": "'k kept (Tom directive — Kick is heavy Flemish); 't free",
       "verbalTics": "@#$%&! (5+ times, kept as is), godver(domme) (×3 explicit), Snotje (constant nickname for Sick Ass), VOOR WAT?! (×2), hè (sentence-final emphasis)",
       "dynamics": "angry, impulsive, guilt-ridden",
       "relationships": "brother of Sick Ass; lost her in E4; carries blood guilt for violence against Humans on Hard Ass's orders",
       "note": "kameraad:5; \"De Kudde kan mij een WORST WEZEN\" (I don't care); \"op hoeven en hoeven zitten\" (begging); mixed nie/niet; je/jij dominant, ge/gij/uw at emotional peaks",
       "verified": true,
-      "dutchShort": "Stamp"
+      "dutchShort": "Stamp",
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'k",
+          "scope": "kept (Tom directive — Kick is heavy Flemish; cap rule: sentence-start 'k → next word capitalized)",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'t",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — never nie",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "kick-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 32,
+        "correctionsFile": "data/editorial/kick-ass-corrections.json",
+        "rulesLocked": "Q1: ge/gij dominant strict (flipped 27 je-family with V2 -t adds: kan→kunt, ben→zijt, mag→moogt, hoor→hoort, etc.). Q2: niet only (eliminated 7 nie). Q3: 'k KEPT (Tom directive — Kick is heavy Flemish; cap rule applies). Q4: da-conj→dat (3 flips). Q5/Q6/Q7: curses kept (godverdomme/godver/verdomme — Kick's anger voice), Snotje×15 kept (sister address), kameraad×6 kept. 6 manual semantic patches: uppercase JE/JOU/JOUW/NIE flips, Gij bent→Gij zijt, ge kan→ge kunt, possessive ge<noun>→uw<noun>, Hoor ge→Hoort ge."
+      }
     },
     {
       "name": "Lazy Ass",
