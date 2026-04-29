@@ -290,23 +290,96 @@
       "name": "Nice Ass",
       "english": "Nice Ass",
       "dutch": "Lieve Ezel",
+      "dutchShort": "Lieve",
       "category": "CHARACTER",
       "nicknames": [
         "Nice",
-        "Aunty Nice"
+        "Aunty Nice",
+        "Lieve"
       ],
       "bio": "Strong and fast. She loves to plow fields all day. She's energetic, modest, helpful, pure of heart. She would never break a promise.",
       "gender": "female",
-      "flemishDensity": "light",
+      "flemishDensity": "medium",
       "register": "tussentaal",
       "pronounForm": "jij/je",
-      "contractions": "none",
-      "verbalTics": "Oesje! (Golly/Gosh ×5+), Jakkes! (Yikes ×3), Jemig! (Jeepers ×2), Kameraad (address ×7+), \"Oude Zak zou niet willen dat we iemand achterlaten\" (repeater ×4)",
+      "verbalTics": "Oesje! (signature ×20), Amai! (Flemish surprise ×7, Tom-locked replacement for Jemig 2026-04-28), Jakkes! (Yikes ×6), potvolkoffie & verdikke (mild oaths), Kameraad (constant address ×7, capitalized)",
       "dynamics": "warm, earnest, energetic, modest",
-      "relationships": "keeper of Sad Ass's secret (fire); encouraging/maternal to all herd; Thirsty Ass is obsessed with her (not reciprocal)",
-      "note": "kameraad:7; niet not nie throughout; je/jij consistent (no ge/gij); Oesje/Jakkes/Jemig signature exclamations; potvolkoffie, verdikke as mild oaths",
+      "relationships": "aunty figure to the herd, particularly to the Foal/young donkeys",
       "verified": true,
-      "dutchShort": "Lieve"
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "zijt"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free, paired with het",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'n",
+          "scope": "free (zo'n etc) — Tom rule update 2026-04-28: 'n no longer flagged project-wide",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [
+        "nie"
+      ],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "nie + niet both allowed — Nice keeps nie as character signature for emotional/colloquial moments (Q2 lock, parallel to Sad Ass)",
+      "registerExceptions": [
+        {
+          "scope": "gentle aunt-style address to Foal/child",
+          "allows": [
+            "uw",
+            "u",
+            "ge"
+          ],
+          "contexts": [
+            "E3_Mine1F R25/R30/R33/R34 — 4 cells where Nice addresses the Foal in mine scene; uses gentle/formal register parallel to Sad Ass's R19 'uw Nonkel' exception"
+          ]
+        }
+      ],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E3_Mine1F_localization J25",
+          "note": "bulk translate will not alter — register exception: 'u goeie raad' gentle aunt to Foal"
+        },
+        {
+          "cell": "E3_Mine1F_localization J30",
+          "note": "bulk translate will not alter — register exception: 'uw Nonkel' gentle aunt to Foal"
+        },
+        {
+          "cell": "E3_Mine1F_localization J33",
+          "note": "bulk translate will not alter — register exception: 'uw schuld... maak u geen zorgen' to Foal"
+        },
+        {
+          "cell": "E3_Mine1F_localization J34",
+          "note": "bulk translate will not alter — register exception: 'Ge doet hem... aan uw zus' to Foal"
+        }
+      ],
+      "editorialPass": {
+        "passName": "nice-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 16,
+        "correctionsFile": "data/editorial/nice-ass-corrections.json",
+        "rulesLocked": "Q1A: Foal-address register exception kept (4 E3_Mine1F cells with uw/u/ge). Q1B: 3 other ge-family cells flipped to je (R7 battle, R241 to Thirsty, R258 compliment). Q2: nie KEPT as character signature (7 instances). Q3a: 't free; Q3b: 'n now allowed project-wide (Tom rule update); Q3c: da's R243 → dat is. Q4: 6 Oude Zak (deferred from Big sweep) → Oude Ezel formal canonical. Q5: Jemig → Amai ×7. Side fixes: bastende → barstende (typo R243), (Lazy Ass) → Luie Ezel (R11). bast project-wide audit DEFERRED.",
+        "deferredCrossCharacterAudits": [
+          "bast/bastende variant audit (project-wide)"
+        ]
+      }
     },
     {
       "name": "Old Ass",
@@ -938,9 +1011,9 @@
     }
   ],
   "lastEditorialPass": {
-    "character": "Hard Ass",
-    "passName": "hard-ass-baseline",
+    "character": "Nice Ass",
+    "passName": "nice-ass-baseline",
     "lockedOn": "2026-04-28",
-    "correctionsApplied": 18
+    "correctionsApplied": 16
   }
 }

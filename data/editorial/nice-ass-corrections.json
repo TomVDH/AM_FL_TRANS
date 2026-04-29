@@ -1,0 +1,197 @@
+{
+  "character": "Nice Ass",
+  "rules_applied": [
+    "Q1A: Foal-address register exception KEPT — 4 E3_Mine1F cells (R25/R30/R33/R34) where Nice addresses the Foal/child with gentle aunt-style uw/u/ge. Parallel to Sad's R19 'uw Nonkel' exception.",
+    "Q1B: 3 other ge-family cells flipped to je-family (R7 battle, R241 to Thirsty, R258 compliment).",
+    "Q2: nie KEPT — character signature for emotional/colloquial moments. 7 instances preserved. Parallel to Sad Ass.",
+    "Q3a: 't free (3 hits, no normalization).",
+    "Q3b: 'n no longer flagged project-wide (Tom rule update 2026-04-28). zo'n at R49 kept.",
+    "Q3c: da's at R243 → dat is (full expansion).",
+    "Q4: Oude Zak deprecation (6 cells, deferred from Big Ass sweep) → Oude Ezel formal canonical.",
+    "Q5: Jemig → Amai ×7 (more authentically Flemish for Nice, Tom directive 2026-04-28).",
+    "Side fix at R243: bastende → barstende (typo; should be standard idiom 'barstende dorst').",
+    "Side fix at R11: (Lazy Ass) placeholder → Luie Ezel.",
+    "bast audit project-wide DEFERRED to later sweep — Nice's bast in R7 and R27 left as-is for now.",
+    "Verbal tics & signatures kept: Oesje ×20, Jakkes ×6, potvolkoffie ×1, verdikke ×1, Kameraad ×7 (all already capitalized)."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "All Q-rules locked by Tom 2026-04-28. 16 cells.",
+  "corrections": [
+    {
+      "id": "NICE-Q1B-1",
+      "rationale": "Q1B: ge → je (subject)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BattleHard_localization",
+      "cell": "J7",
+      "speaker": "Nice Ass",
+      "english": "Golly, you're about to get pounded, in less than two minutes!",
+      "current_nl": "Oesje, ge gaat bast in de pan geslagen worden, in minder dan twee minuten!",
+      "proposed_nl": "Oesje, je gaat bast in de pan geslagen worden, in minder dan twee minuten!"
+    },
+    {
+      "id": "NICE-Q1B-2",
+      "rationale": "Q1B: ge → je (subject); uw → je (possessive)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J241",
+      "speaker": "Nice Ass",
+      "english": "Oh Thirsty, you finally opened your bar!",
+      "current_nl": "Oesje, Zatlap, ge hebt eindelijk uw kroeg geopend!",
+      "proposed_nl": "Oesje, Zatlap, je hebt eindelijk je kroeg geopend!"
+    },
+    {
+      "id": "NICE-Q1B-3",
+      "rationale": "Q1B: ge → je (subordinate clause subject)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J258",
+      "speaker": "Nice Ass",
+      "english": "Golly! I think you look great!",
+      "current_nl": "Oesje! Ik vind dat ge er best goed uitziet!",
+      "proposed_nl": "Oesje! Ik vind dat je er best goed uitziet!"
+    },
+    {
+      "id": "NICE-Q4-1",
+      "rationale": "Q4: Oude Zak → Oude Ezel (formal canonical, deferred from Big Ass sweep)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J19",
+      "speaker": "Nice Ass",
+      "english": "Wait, really? But Old Ass has been here forever!",
+      "current_nl": "Wacht, echt? Maar Oude Zak is hier al sinds jaar en dag!",
+      "proposed_nl": "Wacht, echt? Maar Oude Ezel is hier al sinds jaar en dag!"
+    },
+    {
+      "id": "NICE-Q4-2",
+      "rationale": "Q4: Oude Zak → Oude Ezel",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J64",
+      "speaker": "Nice Ass",
+      "english": "What were Old Ass's last words? Perhaps they will inspire us!",
+      "current_nl": "Wat waren de laatste woorden van Oude Zak? Misschien kunnen ze ons inspireren!",
+      "proposed_nl": "Wat waren de laatste woorden van Oude Ezel? Misschien kunnen ze ons inspireren!"
+    },
+    {
+      "id": "NICE-Q4-3",
+      "rationale": "Q4: Oude Zak → Oude Ezel",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J108",
+      "speaker": "Nice Ass",
+      "english": "Old Ass wouldn’t want us to leave anyone behind.",
+      "current_nl": "Oude Zak zou niet willen dat we iemand achterlaten.",
+      "proposed_nl": "Oude Ezel zou niet willen dat we iemand achterlaten."
+    },
+    {
+      "id": "NICE-Q4-4",
+      "rationale": "Q4: Oude Zak → Oude Ezel (duplicate of R108)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J109",
+      "speaker": "Nice Ass",
+      "english": "Old Ass wouldn’t want us to leave anyone behind.",
+      "current_nl": "Oude Zak zou niet willen dat we iemand achterlaten.",
+      "proposed_nl": "Oude Ezel zou niet willen dat we iemand achterlaten."
+    },
+    {
+      "id": "NICE-Q4-5",
+      "rationale": "Q4: Oude Zak → Oude Ezel (duplicate of R108)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J110",
+      "speaker": "Nice Ass",
+      "english": "Old Ass wouldn’t want us to leave anyone behind.",
+      "current_nl": "Oude Zak zou niet willen dat we iemand achterlaten.",
+      "proposed_nl": "Oude Ezel zou niet willen dat we iemand achterlaten."
+    },
+    {
+      "id": "NICE-Q4-6",
+      "rationale": "Q4: Oude Zak → Oude Ezel (duplicate of R108)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J111",
+      "speaker": "Nice Ass",
+      "english": "Old Ass wouldn’t want us to leave anyone behind.",
+      "current_nl": "Oude Zak zou niet willen dat we iemand achterlaten.",
+      "proposed_nl": "Oude Ezel zou niet willen dat we iemand achterlaten."
+    },
+    {
+      "id": "NICE-Q5-1",
+      "rationale": "Q5: Jemig → Amai (sentence-start)",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J21",
+      "speaker": "Nice Ass",
+      "english": "Jeepers! It's spreading across the Forest!",
+      "current_nl": "Jemig! Het spreidt zich richting het Bos!",
+      "proposed_nl": "Amai! Het spreidt zich richting het Bos!"
+    },
+    {
+      "id": "NICE-Q5-2",
+      "rationale": "Q5: Jemig → Amai",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J53",
+      "speaker": "Nice Ass",
+      "english": "Golly, what do you mean?",
+      "current_nl": "Jemig, waarover ben je bezig?",
+      "proposed_nl": "Amai, waarover ben je bezig?"
+    },
+    {
+      "id": "NICE-Q5-3",
+      "rationale": "Q5: Jemig → Amai",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J82",
+      "speaker": "Nice Ass",
+      "english": "Gosh, of course I do!",
+      "current_nl": "Jemig, natuurlijk herinner ik me dat!",
+      "proposed_nl": "Amai, natuurlijk herinner ik me dat!"
+    },
+    {
+      "id": "NICE-Q5-4",
+      "rationale": "Q5: Jemig → Amai + (Lazy Ass) placeholder → Luie Ezel",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A3_localization",
+      "cell": "J11",
+      "speaker": "Nice Ass",
+      "english": "Gosh, even one for Lazy Ass!",
+      "current_nl": "Jemig, zelfs eentje voor (Lazy Ass)!",
+      "proposed_nl": "Amai, zelfs eentje voor Luie Ezel!"
+    },
+    {
+      "id": "NICE-Q5-5",
+      "rationale": "Q5: Jemig → Amai (bast left for project-wide sweep)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J27",
+      "speaker": "Nice Ass",
+      "english": "Golly! You must be feeling better already!",
+      "current_nl": "Jemig! Jij moet je bast al beter voelen!",
+      "proposed_nl": "Amai! Jij moet je bast al beter voelen!"
+    },
+    {
+      "id": "NICE-Q5-6",
+      "rationale": "Q5: Jemig → Amai + Q3c: da's → dat is + side-fix: bastende → barstende (typo)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J243",
+      "speaker": "Nice Ass",
+      "english": "Aw shucks! Hey, can I have a drink? Gosh, I'm in need of some water.",
+      "current_nl": "Oesje, da's lief! Zeg, mag ik efkes iets drinken? Jemig, ik heb bastende dorst naar een beetje water.",
+      "proposed_nl": "Oesje, dat is lief! Zeg, mag ik efkes iets drinken? Amai, ik heb barstende dorst naar een beetje water."
+    },
+    {
+      "id": "NICE-Q5-7",
+      "rationale": "Q5: Jemig → Amai",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J316",
+      "speaker": "Nice Ass",
+      "english": "Gosh, I...",
+      "current_nl": "Jemig, ik...",
+      "proposed_nl": "Amai, ik..."
+    }
+  ]
+}
