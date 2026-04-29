@@ -1,0 +1,181 @@
+{
+  "character": "Cole-Machine",
+  "rules_applied": [
+    "Cole-Machine is the AI/robot version of Cole Butte (Bad Ass's pre-donkey identity). Inherits Bad Ass's voice rules: ge/gij + u/uw paradigm, jullie kept, godverdomme kept (NOT godverdoemme), 'k as heavy-Flemish exception.",
+    "Q1: je → u ×2 (1 addressing Foal as object, 1 reflexive idiom 'Verman je' → 'Verman u').",
+    "Q2: nie → niet ×8 (Tom directive — flip all 8 nie hits to niet for ABN consistency).",
+    "Q3: da → dat ×6 (5 cells, 1 cell with double).",
+    "Q4: jullie KEPT ×3 (per Bad rule).",
+    "Q5: godverdomme KEPT ×16 (per Bad rule — Thirsty-only gets godverdoemme).",
+    "Q6: 'k KEPT ×19 (heavy-Flemish exception)."
+  ],
+  "generated": "2026-04-29",
+  "decision_status": "All Q-rules locked by Tom 2026-04-29. 15 cells.",
+  "corrections": [
+    {
+      "id": "COLE-1",
+      "rationale": "Q1: je → u (object, ge-paradigm; addressing Foal)",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J20",
+      "speaker": "Cole-Machine",
+      "english": "Don't worry, I'll come back to visit.",
+      "current_nl": "Geen zorgen, 'k kom terug om je te bezoeken.",
+      "proposed_nl": "Geen zorgen, 'k kom terug om u te bezoeken."
+    },
+    {
+      "id": "COLE-2",
+      "rationale": "Q1: Verman je → Verman u (ge-paradigm reflexive)",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J149",
+      "speaker": "Cole-Machine",
+      "english": "Pull yourself together.",
+      "current_nl": "Verman je.",
+      "proposed_nl": "Verman u."
+    },
+    {
+      "id": "COLE-3",
+      "rationale": "Q2: nie → niet",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J255",
+      "speaker": "Cole-Machine",
+      "english": "Umm...No. There's got to be one decent idea here somewhere. Not yet.",
+      "current_nl": "Eumm...Nee. D'r moet toch ergens één deftig idee te vinden zijn hier. Nog nie.",
+      "proposed_nl": "Eumm...Nee. D'r moet toch ergens één deftig idee te vinden zijn hier. Nog niet."
+    },
+    {
+      "id": "COLE-4",
+      "rationale": "Q2: nie → niet",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Epilogue_localization",
+      "cell": "J9",
+      "speaker": "Cole-Machine",
+      "english": "You can't just ignore the injustices that other Animals are facing.",
+      "current_nl": "Ge kunt toch nie zomaar de onrechtvaardigheden negeren waar andere Dieren mee te maken hebben.",
+      "proposed_nl": "Ge kunt toch niet zomaar de onrechtvaardigheden negeren waar andere Dieren mee te maken hebben."
+    },
+    {
+      "id": "COLE-5",
+      "rationale": "Q2: Nie → Niet (sentence-start)",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J15",
+      "speaker": "Cole-Machine",
+      "english": "Not fun.",
+      "current_nl": "Nie plezant.",
+      "proposed_nl": "Niet plezant."
+    },
+    {
+      "id": "COLE-6",
+      "rationale": "Q2: nie → niet + Q3: Da → Dat",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J24",
+      "speaker": "Cole-Machine",
+      "english": "Kid, the world out there isn't safe for donkeys. You know that.",
+      "current_nl": "Kleine, de wereld daarbuiten is nie veilig voor ezels. Da weet ge toch.",
+      "proposed_nl": "Kleine, de wereld daarbuiten is niet veilig voor ezels. Dat weet ge toch."
+    },
+    {
+      "id": "COLE-7",
+      "rationale": "Q2: nie → niet",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J68",
+      "speaker": "Cole-Machine",
+      "english": "I don't believe in leaders.",
+      "current_nl": "'k Geloof nie in leiders.",
+      "proposed_nl": "'k Geloof niet in leiders."
+    },
+    {
+      "id": "COLE-8",
+      "rationale": "Q2: nie → niet",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J72",
+      "speaker": "Cole-Machine",
+      "english": "Don't care.",
+      "current_nl": "Kan mij nie schelen.",
+      "proposed_nl": "Kan mij niet schelen."
+    },
+    {
+      "id": "COLE-9",
+      "rationale": "Q2: nie → niet",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J101",
+      "speaker": "Cole-Machine",
+      "english": "Don't abandon your Mother.",
+      "current_nl": "Laat uw Moeder nie in de steek.",
+      "proposed_nl": "Laat uw Moeder niet in de steek."
+    },
+    {
+      "id": "COLE-10",
+      "rationale": "Q2: nie → niet",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J102",
+      "speaker": "Cole-Machine",
+      "english": "She won't say it, but she needs you.",
+      "current_nl": "Ze zal 't nie zeggen, maar ze heeft u nodig.",
+      "proposed_nl": "Ze zal 't niet zeggen, maar ze heeft u nodig."
+    },
+    {
+      "id": "COLE-11",
+      "rationale": "Q3: da → dat",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Epilogue_localization",
+      "cell": "J22",
+      "speaker": "Cole-Machine",
+      "english": "Do you think they'll join us?",
+      "current_nl": "Denkt ge da ze bij ons gaan aansluiten?",
+      "proposed_nl": "Denkt ge dat ze bij ons gaan aansluiten?"
+    },
+    {
+      "id": "COLE-12",
+      "rationale": "Q3: da → dat ×2",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J11",
+      "speaker": "Cole-Machine",
+      "english": "It's all about what's on the inside and what you aspire to do in this world.",
+      "current_nl": "'t Gaat allemaal om wa da ge vanbinnen hebt en wa da ge wilt bereiken in deze wereld.",
+      "proposed_nl": "'t Gaat allemaal om wa dat ge vanbinnen hebt en wa dat ge wilt bereiken in deze wereld."
+    },
+    {
+      "id": "COLE-13",
+      "rationale": "Q3: da → dat",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J32",
+      "speaker": "Cole-Machine",
+      "english": "I suppose you could use the prototype...",
+      "current_nl": "'k Veronderstel da ge 't prototype misschien zou kunnen gebruiken...",
+      "proposed_nl": "'k Veronderstel dat ge 't prototype misschien zou kunnen gebruiken..."
+    },
+    {
+      "id": "COLE-14",
+      "rationale": "Q3: da → dat",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J88",
+      "speaker": "Cole-Machine",
+      "english": "And at no point is this process going to turn me into a donkey again, is it?",
+      "current_nl": "En op geen enkel moment gaat da proces mij weer in nen Ezel veranderen, hé?",
+      "proposed_nl": "En op geen enkel moment gaat dat proces mij weer in nen Ezel veranderen, hé?"
+    },
+    {
+      "id": "COLE-15",
+      "rationale": "Q3: da → dat",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J133",
+      "speaker": "Cole-Machine",
+      "english": "Kid, you really want to be a Prophet for these fuckers?",
+      "current_nl": "Kleine, wilt ge echt een Profeet zijn voor da stelleke klootzakken?",
+      "proposed_nl": "Kleine, wilt ge echt een Profeet zijn voor dat stelleke klootzakken?"
+    }
+  ]
+}

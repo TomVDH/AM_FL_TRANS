@@ -1163,15 +1163,102 @@
       "dutch": "Piet-Machine",
       "dutchShort": "Piet",
       "category": "CHARACTER",
+      "scope": "main-non-donkey",
       "nicknames": [
         "Cole",
         "Cole-M",
-        "Piet"
+        "Piet",
+        "Piet-Machine"
       ],
-      "bio": "The AI/robot version of Cole Butte (Bad Ass's pre-donkey human identity, real name Piet Vanscheetvelde). 154 lines.",
+      "bio": "The AI/robot version of Cole Butte (Bad Ass's pre-donkey human identity, real name Piet Vanscheetvelde). Appears in E9-E10 after Bad's transformation. Inherits Bad Ass's voice rules — heavy Flemish, ge/gij dominant, profane political/parliamentary register.",
       "gender": "male",
+      "flemishDensity": "heavy",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "verbalTics": "godverdomme (×16, profanity peak), 'k (×19, heavy contraction user — inherits Bad's heaviest-in-cast trait), 'k Veronderstel (grudging concession), Mechalen (Mecha City — political/parliament setting)",
+      "dynamics": "philosophical, profane, political; passes Bad's edgy intellectualism into AI form",
+      "relationships": "former human (Cole Butte → Piet Vanscheetvelde); Bad Ass's pre-donkey identity, transformed into machine in E9; mentor to Foal in E9_BadCave / E10_Government",
       "verified": true,
-      "scope": "main-non-donkey"
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'k",
+          "scope": "free — heavy 'k user (×19); cap rule when sentence-start",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'t",
+          "scope": "free, paired with het",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'n",
+          "scope": "free (project-wide rule)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [
+        "godverdomme",
+        "godverdomse",
+        "verdomme",
+        "allez",
+        "kameraad"
+      ],
+      "dialectalMarkersForbidden": [
+        "nie",
+        "godverdoemme",
+        "gulle"
+      ],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — Tom directive 2026-04-29 (8 nie flipped to niet for ABN consistency, departure from Bad's heavy-Flemish corpus profile)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E10_ProphetSpeech_localization J50",
+          "note": "engine var {$ManifestoVar0}"
+        },
+        {
+          "cell": "E10_ProphetSpeech_localization J51",
+          "note": "engine var {$ManifestoVar1}"
+        },
+        {
+          "cell": "E10_ProphetSpeech_localization J52",
+          "note": "engine var {$ManifestoVar2}"
+        },
+        {
+          "cell": "E10_ProphetSpeech_localization J53",
+          "note": "engine var {$ManifestoVar3}"
+        },
+        {
+          "cell": "E10_ProphetSpeech_localization J54",
+          "note": "engine var {$ManifestoVar4}"
+        },
+        {
+          "cell": "E9_BadCave_localization J90",
+          "note": "engine-tagged dramatic line: '{s}{s=20}Ge. Meent. Dit. Godverdomme. Niet.{/s}'"
+        }
+      ],
+      "editorialPass": {
+        "passName": "cole-machine-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 15,
+        "correctionsFile": "data/editorial/cole-machine-corrections.json",
+        "rulesLocked": "Inherits Bad Ass voice (Cole IS Bad pre-transformation). Q1: ge/gij + u/uw paradigm; 2 je-family flips to u (Foal-address + Verman-reflexive). Q2: niet only ×8 (Tom directive — departure from heavy-Flemish nie pattern). Q3: da → dat ×6. Q4: jullie KEPT ×3 (per Bad). Q5: godverdomme KEPT ×16 (per Bad — NOT godverdoemme). Q6: 'k KEPT ×19 (heavy-Flemish exception)."
+      }
     },
     {
       "name": "Golden Ass",
@@ -1461,9 +1548,9 @@
     }
   ],
   "lastEditorialPass": {
-    "character": "Foal",
-    "passName": "foal-baseline",
+    "character": "Cole-Machine",
+    "passName": "cole-machine-baseline",
     "lockedOn": "2026-04-29",
-    "correctionsApplied": 0
+    "correctionsApplied": 15
   }
 }
