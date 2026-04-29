@@ -1,0 +1,219 @@
+{
+  "character": "Thirsty Ass",
+  "rules_applied": [
+    "Q1: ge/gij + u/uw paradigm (heavy Flemish / plat Vlaams). je → ge, jij → gij. V2 inversion adds -t for ge (ga jij → gaat gij; Sta je → Staat ge); je bent → ge zijt (Flemish form).",
+    "Q1: jullie → gulle (Flemish plural form, Tom directive).",
+    "Q2: nie KEPT — corpus 50/50 split with niet preserved as plat Vlaams character signature (parallel to Sad/Nice).",
+    "Q3a: 'k KEPT (heavy Flemish exception, parallel to Kick).",
+    "Q3b: 't free; 'n free (project-wide rule).",
+    "Q3c: da → dat (4 standalone cells); da't → dat het (R208 contraction expansion).",
+    "Q3d: da's KEPT as casual idiom (Tom directive — different from Nice's pattern).",
+    "Q3e: dadde KEPT as character signature (option A locked — heavy Flemish form of dat).",
+    "Q3f: nen at R302 KEPT (heavy Flemish article, character voice).",
+    "Q4: godverdomme → godverdoemme ×5 (Flemish slangier form, Tom directive).",
+    "Q4: All other Flemish signatures kept (héé sentence-final, JIE-HAAA!, godver alone, allez, *oef!*, amai, sie, Diej'n, Schoon Beest, Poepegaatje).",
+    "Q5: *gulp* → *slok*; Oh! → O!"
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "All Q-rules locked by Tom 2026-04-28. 18 cells.",
+  "corrections": [
+    {
+      "id": "THIRSTY-Q1-1",
+      "rationale": "Q1: jij → gij (emphatic subject)",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J24",
+      "speaker": "Thirsty Ass",
+      "english": "How about you, Smart?",
+      "current_nl": "En jij, Betweter?",
+      "proposed_nl": "En gij, Betweter?"
+    },
+    {
+      "id": "THIRSTY-Q1-2",
+      "rationale": "Q1: Jij → Gij ×2 (both emphatic; ziet keeps form)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J52",
+      "speaker": "Thirsty Ass",
+      "english": "You look like you could use some water too!",
+      "current_nl": "Jij ziet er uit alsof jij ook wel een druppeltje zou lusten, héé!",
+      "proposed_nl": "Gij ziet er uit alsof gij ook wel een druppeltje zou lusten, héé!"
+    },
+    {
+      "id": "THIRSTY-Q1-3",
+      "rationale": "Q1: V2 inversion 'ga jij' → 'gaat gij' (-t added for ge-paradigm)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J62",
+      "speaker": "Thirsty Ass",
+      "english": "Nice Ass what are you going to do?",
+      "current_nl": "Schoon Beest, wat ga jij doen, héé?",
+      "proposed_nl": "Schoon Beest, wat gaat gij doen, héé?"
+    },
+    {
+      "id": "THIRSTY-Q1-4",
+      "rationale": "Q1: V2 inversion 'Sta je' → 'Staat ge' (-t added); 'je weg bent' → 'ge weg zijt' (Flemish bent→zijt for ge-paradigm)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_Exit_localization",
+      "cell": "J15",
+      "speaker": "Thirsty Ass",
+      "english": "You just standin' there to make me cry more are ya? Git goin'!",
+      "current_nl": "Sta je daar nu gewoon te staan om mij meer te doen bleiten? Maakt dat je weg bent, héé!",
+      "proposed_nl": "Staat ge daar nu gewoon te staan om mij meer te doen bleiten? Maakt dat ge weg zijt, héé!"
+    },
+    {
+      "id": "THIRSTY-Q1-5",
+      "rationale": "Q1: V2 inversion 'Moet je' → 'Moet ge' (modal — moet keeps form); da's KEPT per Q3d",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J242",
+      "speaker": "Thirsty Ass",
+      "english": "Look at those fine legs that just walked into my bar and all over my heart—it's NICE ASS!",
+      "current_nl": "Moet je die schone benen zien die hier mijn bar komen binnenwandelen en dwars over mijn harte lopen—da's LIEVE EZEL, héé!",
+      "proposed_nl": "Moet ge die schone benen zien die hier mijn bar komen binnenwandelen en dwars over mijn harte lopen—da's LIEVE EZEL, héé!"
+    },
+    {
+      "id": "THIRSTY-Q1-6",
+      "rationale": "Q1: jullie → gulle (Flemish plural form)",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Thirsty_localization",
+      "cell": "J9",
+      "speaker": "Thirsty Ass",
+      "english": "We came here to rescue y'all, but it looks like y'all are doin' fine on yer own!",
+      "current_nl": "We waren hier gekomen om jullie te redden, maar 't ziet ernaar uit dat ge dat goed alleen afkunt, héé!",
+      "proposed_nl": "We waren hier gekomen om gulle te redden, maar 't ziet ernaar uit dat ge dat goed alleen afkunt, héé!"
+    },
+    {
+      "id": "THIRSTY-Q1-7",
+      "rationale": "Q1: jullie → gulle (Flemish plural form)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_Exit_localization",
+      "cell": "J14",
+      "speaker": "Thirsty Ass",
+      "english": "Heck, I know we ain't seein' eye to eye, but I'm gonna miss y'all...",
+      "current_nl": "Gedoemme, ik weet dat het niet altijd koek en ei is, maar ik ga jullie missen, héé...",
+      "proposed_nl": "Gedoemme, ik weet dat het niet altijd koek en ei is, maar ik ga gulle missen, héé..."
+    },
+    {
+      "id": "THIRSTY-Q3-1",
+      "rationale": "Q3: da → dat (conjunction)",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J110",
+      "speaker": "Thirsty Ass",
+      "english": "Tell the Humans that we want to run our own businesses, like the Bottoms Up Bar!",
+      "current_nl": "Zeg tegen de Mensen da wij onze eigen zaakjes willen runnen, zoals het Poepegaatje, héé!",
+      "proposed_nl": "Zeg tegen de Mensen dat wij onze eigen zaakjes willen runnen, zoals het Poepegaatje, héé!"
+    },
+    {
+      "id": "THIRSTY-Q3-2",
+      "rationale": "Q3: da → dat (conjunction)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J78",
+      "speaker": "Thirsty Ass",
+      "english": "Just because yer wantin' more in life don't mean you got to abandon yer home!",
+      "current_nl": "Omdat ge meer wilt in ’t leven, wilt da nog nie zeggen dat ge uw thuis moet achterlaten!",
+      "proposed_nl": "Omdat ge meer wilt in ’t leven, wilt dat nog nie zeggen dat ge uw thuis moet achterlaten!"
+    },
+    {
+      "id": "THIRSTY-Q3-3",
+      "rationale": "Q3: da → dat (×1) + da't → dat het (full expansion ×1); dadde KEPT per Q3e",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J208",
+      "speaker": "Thirsty Ass",
+      "english": "I think this here bar is missin' the somethin' special that makes it worth comin' to.",
+      "current_nl": "'k Denk dadde deze kroeg hier nog da speciaal iets mist da't de moeite waard maakt om langs te komen, héé.",
+      "proposed_nl": "'k Denk dadde deze kroeg hier nog dat speciaal iets mist dat het de moeite waard maakt om langs te komen, héé."
+    },
+    {
+      "id": "THIRSTY-Q3-4",
+      "rationale": "Q3: da → dat (conjunction); nen KEPT per Q3f",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J302",
+      "speaker": "Thirsty Ass",
+      "english": "But it'll take forever to git there... we don't all have well-toned legs.",
+      "current_nl": "Maar da gaat nen eeuwigheid duren om daar te geraken héé... we hemme nie allemaal bron-sterke benen, sie.",
+      "proposed_nl": "Maar dat gaat nen eeuwigheid duren om daar te geraken héé... we hemme nie allemaal bron-sterke benen, sie."
+    },
+    {
+      "id": "THIRSTY-Q4-1",
+      "rationale": "Q4: Godverdomme → Godverdoemme (sentence-start cap)",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Hard_localization",
+      "cell": "J44",
+      "speaker": "Thirsty Ass",
+      "english": "How the hell are we gonna make it back to our Farm without the ding dang Tractor-Machine?",
+      "current_nl": "Godverdomme, hoe gaan we in 't hemelsnaam terug geraken naar onze Boerderij zonder die verdomde Traktor Machine, héé?",
+      "proposed_nl": "Godverdoemme, hoe gaan we in 't hemelsnaam terug geraken naar onze Boerderij zonder die verdomde Traktor Machine, héé?"
+    },
+    {
+      "id": "THIRSTY-Q4-2",
+      "rationale": "Q4: godverdomme → godverdoemme",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J23",
+      "speaker": "Thirsty Ass",
+      "english": "Hell, everything from work to water's just gone and dried up!",
+      "current_nl": "Van 't werk tot 't water — alles is godverdomme opgedroogd!",
+      "proposed_nl": "Van 't werk tot 't water — alles is godverdoemme opgedroogd!"
+    },
+    {
+      "id": "THIRSTY-Q4-3",
+      "rationale": "Q4: Godverdomme → Godverdoemme (sentence-start cap)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J81",
+      "speaker": "Thirsty Ass",
+      "english": "DAMN! The Protest is ruined!",
+      "current_nl": "Godverdomme! Het Protest is naar de kloten!",
+      "proposed_nl": "Godverdoemme! Het Protest is naar de kloten!"
+    },
+    {
+      "id": "THIRSTY-Q4-4",
+      "rationale": "Q4: godverdomme → godverdoemme; dadde KEPT per Q3e",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J249",
+      "speaker": "Thirsty Ass",
+      "english": "It's a damn shame the others aren't here.",
+      "current_nl": "'t Is godverdomme zonde dadde de rest er nie bij is, héé.",
+      "proposed_nl": "'t Is godverdoemme zonde dadde de rest er nie bij is, héé."
+    },
+    {
+      "id": "THIRSTY-Q4-5",
+      "rationale": "Q4: godverdomme → godverdoemme",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J336",
+      "speaker": "Thirsty Ass",
+      "english": "And there's no point runnin' a bar if we ain't all here to drink from it! I'm a-comin'!",
+      "current_nl": "En wa hedde nu aan nen tap als we nie allemaal hier zijn om ervan te zuipen, héé! Ik kom mee, godverdomme! JIE-HAAA!",
+      "proposed_nl": "En wa hedde nu aan nen tap als we nie allemaal hier zijn om ervan te zuipen, héé! Ik kom mee, godverdoemme! JIE-HAAA!"
+    },
+    {
+      "id": "THIRSTY-Q5-1",
+      "rationale": "Q5: *gulp* → *slok* (Dutch SFX)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J34",
+      "speaker": "Thirsty Ass",
+      "english": "*gulp*",
+      "current_nl": "*gulp*",
+      "proposed_nl": "*slok*"
+    },
+    {
+      "id": "THIRSTY-Q5-2",
+      "rationale": "Q5: Oh! → O! (Dutch interjection)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J237",
+      "speaker": "Thirsty Ass",
+      "english": "Oh!",
+      "current_nl": "Oh!",
+      "proposed_nl": "O!"
+    }
+  ]
+}

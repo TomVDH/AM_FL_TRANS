@@ -785,23 +785,111 @@
       "name": "Thirsty Ass",
       "english": "Thirsty Ass",
       "dutch": "Beschonken Ezel",
+      "dutchShort": "Beschonken",
       "category": "CHARACTER",
       "nicknames": [
         "Thirsty",
-        "Zatlap"
+        "Beschonken",
+        "Zatlap",
+        "Dorstlap"
       ],
-      "bio": "Older, a bit lecherous. Generally positive. Mostly interested in doing whatever Nice Ass is doing. Castrated. Dreams of starting a small business in the form of a Bar, called Bottom's Up",
+      "bio": "Older, a bit lecherous. Generally positive. Mostly interested in doing whatever Nice Ass is doing. Castrated. Dreams of starting a small business in the form of a Bar, called Bottom's Up (Poepegaatje).",
       "gender": "male",
       "flemishDensity": "heavy",
       "register": "plat Vlaams",
       "pronounForm": "ge/gij",
-      "contractions": "none",
-      "verbalTics": "héé (sentence-final, almost every line), JIE-HAAA! (YEEHAW), godver(domme), doeme/gedoemme, amai, *oef*, allez, sie",
+      "verbalTics": "héé sentence-final (signature, ~50% of lines), JIE-HAAA! (yeehaw), godverdoemme/godver (×13 incl 5 godverdoemme post-flip), allez ×5, *oef!*, amai, sie, doeme/gedoemme. Drink puns: Bronnini, Emmer Ale, Spuugspritz. Bar name: Poepegaatje (Bottom's Up). Calls Nice 'Schoon Beest'.",
       "dynamics": "lecherous, positive, older, easy-going",
-      "relationships": "obsessed with Nice Ass (her legs, castration regret), close to Big Ass (E3 tunnel convo), loyal herd member, dreams of Bottoms Up bar (→ Poepegaatje)",
-      "note": "héé in 50+ of 92 Dutch lines — single most dominant feature. da/dadde heavy. Bottoms Up → Poepegaatje. Drink puns: Bronnini, Emmer Ale, Spuugspritz. Zero corpus entries.",
+      "relationships": "infatuated with Nice Ass; aspires to open Poepegaatje (Bottom's Up bar)",
       "verified": true,
-      "dutchShort": "Beschonken"
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "gulle"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'k",
+          "scope": "free — heavy Flemish exception (parallel to Kick Ass). Cap rule: next word capitalized when 'k starts sentence",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'t",
+          "scope": "free, paired with het",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'n",
+          "scope": "free (project-wide rule)",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "da's",
+          "scope": "free as casual idiom (Tom directive — kept for Thirsty's voice; differs from Nice's 'dat is' rule)",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "dadde",
+          "scope": "free — heavy Flemish form of 'dat' (sometimes 'dat de'). Character signature for plat Vlaams register",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "Diej'n / Die'n",
+          "scope": "free — heavy Flemish demonstrative (parallel to dien/dienen/diej rule)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [
+        "nie",
+        "nen",
+        "héé",
+        "Diej'n",
+        "Die'n",
+        "JIE-HAAA",
+        "godverdoemme",
+        "godver",
+        "doeme",
+        "gedoemme",
+        "amai",
+        "sie",
+        "allez",
+        "Schoon Beest",
+        "Poepegaatje"
+      ],
+      "dialectalMarkersForbidden": [
+        "godverdomme"
+      ],
+      "articleRule": "een or nen — both allowed (nen is heavy Flemish article, character signature)",
+      "negationRule": "nie + niet both allowed — Thirsty keeps mixed distribution as plat Vlaams character signature (parallel to Sad/Nice)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E1_TheProtest_localization J34",
+          "note": "bulk translate will not alter — *slok* sound effect (Q5: was *gulp*, Tom directive 2026-04-28)"
+        },
+        {
+          "cell": "E6_World_localization J237",
+          "note": "bulk translate will not alter — 'O!' interjection (Q5: was 'Oh!', Tom directive 2026-04-28)"
+        }
+      ],
+      "editorialPass": {
+        "passName": "thirsty-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 18,
+        "correctionsFile": "data/editorial/thirsty-ass-corrections.json",
+        "rulesLocked": "Q1: ge/gij + u/uw paradigm (heavy Flemish/plat Vlaams). je → ge, jij → gij. V2 inversion adds -t (Sta je → Staat ge, ga jij → gaat gij). je bent → ge zijt. jullie → gulle (Flemish plural). Q2: nie KEPT — 50/50 mixed distribution preserved as character signature. Q3a: 'k KEPT (heavy Flemish exception). Q3b: 't free, 'n free. Q3c: da → dat (4 cells); da't → dat het (R208 expansion). Q3d: da's KEPT as casual idiom. Q3e: dadde KEPT (option A). Q3f: nen at R302 KEPT. Q4: godverdomme → godverdoemme ×5 (Flemish slangier form, Tom directive). Q5: *gulp* → *slok*; Oh! → O!"
+      }
     },
     {
       "name": "Trusty Ass",
@@ -1011,9 +1099,9 @@
     }
   ],
   "lastEditorialPass": {
-    "character": "Nice Ass",
-    "passName": "nice-ass-baseline",
+    "character": "Thirsty Ass",
+    "passName": "thirsty-ass-baseline",
     "lockedOn": "2026-04-28",
-    "correctionsApplied": 16
+    "correctionsApplied": 18
   }
 }
