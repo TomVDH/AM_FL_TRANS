@@ -1,0 +1,117 @@
+{
+  "character": "Sad Ass",
+  "rules_applied": [
+    "Q1: je/jij ABN — flip ge-family (ge/u/uw/zijt) to je-family. Rewrites for paradigm-mixed lines.",
+    "Q2: nie KEPT — character signature for emotional peaks (per legacy codex note 'nie in emotional peaks'). No flip.",
+    "Q3: 'k clean (0 hits); 't free (4 hits, no normalization).",
+    "Q4: da → dat for da-conj. da's → dat is (full expansion).",
+    "Q5: R19 'uw Nonkel Triestigaard' KEPT (gentle 3rd-person uncle-style address to child).",
+    "Q6: R11 E6_BattleHard 'u uit UW lijden' KEPT (formal/cold battle register).",
+    "Q7: R8 E10_Nice paradigm-mixed line REWRITTEN.",
+    "Q8: All verbal tics & Flemish signatures kept (boe-hoe-hoe, snik, zucht, Ik wou, HET IS ALLEMAAL MIJN FOUT, Hallo'kes, Nonkel, kameraad — all 5 kameraad already capitalized).",
+    "Q9: 4 untranslated sfx lines (..., HAHAHA...) left as-is — legitimate cross-language sound effects."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "All Q-rules locked by Tom 2026-04-28. 9 cells.",
+  "corrections": [
+    {
+      "id": "SAD-Q1-1",
+      "rationale": "Q7 rewrite: paradigm was machine-translated (jij + zijt + u mixed). Rewrite to clean je-family.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Nice_localization",
+      "cell": "J8",
+      "speaker": "Sad Ass",
+      "english": "Oh Nice, you've always come to my rescue... I'm glad I can come to yours for once...",
+      "current_nl": "Oh Lieve, jij zijt altijd mij komen redden... Ik ben blij dat ik voor één keer u kan komen redden...",
+      "proposed_nl": "Oh Lieve, jij bent me altijd komen redden... Ik ben blij dat ik voor één keer jou kan komen redden..."
+    },
+    {
+      "id": "SAD-Q1-2",
+      "rationale": "Q1: u → je (object)",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Nice_localization",
+      "cell": "J14",
+      "speaker": "Sad Ass",
+      "english": "I guess I can always count on you no matter what trouble I end up in...",
+      "current_nl": "Ik denk dat ik altijd op u kan rekenen, in welke problemen ik ook verzeild raak...",
+      "proposed_nl": "Ik denk dat ik altijd op je kan rekenen, in welke problemen ik ook verzeild raak..."
+    },
+    {
+      "id": "SAD-Q1-3",
+      "rationale": "Q1: Ge → Je (sentence-start)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J38",
+      "speaker": "Sad Ass",
+      "english": "You're going to tell the others I set the Fire, aren't you...",
+      "current_nl": "Ge gaat de anderen zeggen dat ik het Vuur heb gesticht, hè…",
+      "proposed_nl": "Je gaat de anderen zeggen dat ik het Vuur heb gesticht, hè…"
+    },
+    {
+      "id": "SAD-Q1-4",
+      "rationale": "Q1: Ge → Je (×2 — sentence-start + relative clause)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J40",
+      "speaker": "Sad Ass",
+      "english": "You say that... but not everything you say is true.",
+      "current_nl": "Ge zegt dat wel… maar niet alles wat ge zegt is waar.",
+      "proposed_nl": "Je zegt dat wel… maar niet alles wat je zegt is waar."
+    },
+    {
+      "id": "SAD-Q4-1",
+      "rationale": "Q4: da → dat (conjunction)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J41",
+      "speaker": "Sad Ass",
+      "english": "That day in the Outhouse... I really thought that things would get better.",
+      "current_nl": "Die dag in de Hudo... Ik dacht echt da ’t beter ging worden.",
+      "proposed_nl": "Die dag in de Hudo... Ik dacht echt dat ’t beter ging worden."
+    },
+    {
+      "id": "SAD-Q1-5",
+      "rationale": "Q1+Q4 combined: da ge → dat je (subordinate clause)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J25",
+      "speaker": "Sad Ass",
+      "english": "Thanks again for taking Lazy's shift today.",
+      "current_nl": "Bedankt nogmaals da ge de shift van Luie overneemt vandaag.",
+      "proposed_nl": "Bedankt nogmaals dat je de shift van Luie overneemt vandaag."
+    },
+    {
+      "id": "SAD-Q4-2",
+      "rationale": "Q4: da → dat (×1) + da's → dat is (full expansion ×1)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J184",
+      "speaker": "Sad Ass",
+      "english": "Turns out that tending to the memories of our lost loved ones is something I'm really good at...",
+      "current_nl": "Blijkt da ik goed ben in het zorgen voor de herinneringen aan onze verloren geliefden... da's iets waar ik echt goed in ben...",
+      "proposed_nl": "Blijkt dat ik goed ben in het zorgen voor de herinneringen aan onze verloren geliefden... dat is iets waar ik echt goed in ben..."
+    },
+    {
+      "id": "SAD-Q1-6",
+      "rationale": "Q1: Weet ge → Weet je (V2 inversion; weet is stem-final-t verb, no form change)",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J23",
+      "speaker": "Sad Ass",
+      "english": "You know... it wouldn't hurt to try...",
+      "current_nl": "Weet ge... 't zou geen kwaad kunnen om te proberen...",
+      "proposed_nl": "Weet je... 't zou geen kwaad kunnen om te proberen..."
+    },
+    {
+      "id": "SAD-Q1-7",
+      "rationale": "Q1: ge → je (subordinate); u → je (object)",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigJob_localization",
+      "cell": "J34",
+      "speaker": "Sad Ass",
+      "english": "But... if you go back—the Humans'll kill you.",
+      "current_nl": "Maar... als ge teruggaat—de Mensen gaan u doodmaken.",
+      "proposed_nl": "Maar... als je teruggaat—de Mensen gaan je doodmaken."
+    }
+  ]
+}

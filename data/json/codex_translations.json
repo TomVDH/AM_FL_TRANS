@@ -1619,9 +1619,9 @@
     },
     {
       "name": "Sad Ass",
-      "description": "Character",
       "english": "Sad Ass",
       "dutch": "Triestige Ezel",
+      "dutchShort": "Triestige",
       "category": "CHARACTER",
       "nicknames": [
         "Sad",
@@ -1630,18 +1630,95 @@
       ],
       "bio": "Sad. Mourning his lover Lazy who died in the mines. Doesn't have direction in life anymore. He was a Mine donkey until he was sold to the Farm after Lazy died, unable to work anymore. He can be erratic and impulsive, taking out his anger on a car and accidentally starting the major fire of Ep2, or leaving the group behind in Ep5 from the Zoo.",
       "gender": "male",
-      "dialogueStyle": "",
-      "dutchDialogueStyle": "",
       "flemishDensity": "medium",
       "register": "tussentaal",
       "pronounForm": "jij/je",
-      "contractions": "none",
-      "verbalTics": "*boe-hoe-hoe-hoe* (whimper ×5+), *snik* (lighter cry E3+), *zucht* (sigh ×2), \"Ik wou\" (regret pattern ×3), \"HET IS ALLEMAAL MIJN FOUT\" (guilt explosion ×2), trailing ... throughout",
+      "verbalTics": "*boe-hoe-hoe-hoe* (whimper ×5+), *snik* (lighter cry E3+), *zucht* (sigh ×2), \"Ik wou\" (regret pattern ×3), \"HET IS ALLEMAAL MIJN FOUT\" (guilt explosion ×2), trailing ... throughout, Hallo'kes (Flemish greeting), Nonkel (Flemish: uncle)",
       "dynamics": "melancholic, lost, mourning",
       "relationships": "mourning lover Lazy Ass",
-      "note": "nie in emotional peaks; ge/gij in E3 private; hallo'kes + Nonkel (Flemish); stuttered speech w-wou/z-zaken; \"Ik wou\" as regret marker",
       "verified": true,
-      "dutchShort": "Triestige"
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "zijt"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free, paired with het — Q3 lock (both forms accepted)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [
+        "nie"
+      ],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "nie + niet both allowed — Sad keeps nie as character signature for emotional peaks (Q2 lock)",
+      "registerExceptions": [
+        {
+          "scope": "uncle-style 3rd-person address to children",
+          "allows": [
+            "uw"
+          ],
+          "contexts": [
+            "E3_Mine1F R19 self-reference: 'uw Nonkel Triestigaard' — gentle 3rd-person addressing a child"
+          ]
+        },
+        {
+          "scope": "formal/cold battle register",
+          "allows": [
+            "u",
+            "uw"
+          ],
+          "contexts": [
+            "E6_BattleHard R11: 'u uit UW lijden te verlossen' — 'put you out of YOUR misery', emphatic threat"
+          ]
+        }
+      ],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E2_Confession_localization J62",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E5_ZooMain_localization J138",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E5_ZooMain_localization J159",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E6_Nightmare_localization J41",
+          "note": "bulk translate will not alter — laugh sfx 'HAHAHAHAHAHAHAHAHAHA...' (cross-language)"
+        },
+        {
+          "cell": "E3_Mine1F_localization J19",
+          "note": "bulk translate will not alter — register exception: 'uw Nonkel Triestigaard' uncle-style 3rd-person address to child"
+        },
+        {
+          "cell": "E6_BattleHard_localization J11",
+          "note": "bulk translate will not alter — register exception: 'u uit UW lijden' formal/cold battle register"
+        }
+      ],
+      "editorialPass": {
+        "passName": "sad-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 9,
+        "correctionsFile": "data/editorial/sad-ass-corrections.json",
+        "rulesLocked": "Q1: je/jij ABN dominant (flip ge-family except register exceptions). Q2: nie KEPT as signature for emotional peaks. Q3: 'k forbidden (0 hits, clean); 't free. Q4: da → dat; da's → dat is (full expansion). Q5: R19 'uw Nonkel Triestigaard' kept (uncle-style address). Q6: R11 E6_BattleHard 'u/UW lijden' kept (battle register). Q7: R8 paradigm-mixed line rewritten. Q8: verbal tics & Flemish signatures kept (boe-hoe-hoe, snik, zucht, Ik wou, HET IS ALLEMAAL MIJN FOUT, Hallo'kes, Nonkel, kameraad capitalized). Q9: 4 sfx untranslated lines kept as cross-language."
+      }
     },
     {
       "name": "Sandy Butte",
