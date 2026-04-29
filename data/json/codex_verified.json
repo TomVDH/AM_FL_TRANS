@@ -1292,12 +1292,178 @@
       "gender": "female",
       "verified": true,
       "scope": "main-non-donkey"
+    },
+    {
+      "name": "Foal",
+      "english": "Foal",
+      "dutch": "Veulentje",
+      "dutchShort": "Veulen",
+      "category": "CHARACTER",
+      "scope": "main",
+      "nicknames": [],
+      "bio": "Child donkey character. Runtime-named via {$NewName} placeholder. Code-switches naturally between formal (uw/u/ge with elders, mirroring how adults like Sad/Nice use 'uw Nonkel' to her) and casual (je/jij with peers like Cole-Machine).",
+      "gender": "varies (player-named)",
+      "flemishDensity": "light",
+      "register": "tussentaal",
+      "pronounForm": "mixed (contextual code-switching)",
+      "verbalTics": "Nonkel ×24 (uncle), Tante ×11 (aunt), Moeder (mother — addresses Golden Ass), child sfx (Huh?, Cool!, Coooool!, ...woah., AH!) kept as cross-language",
+      "dynamics": "child, curious, code-switching, formal-with-adults / casual-with-peers",
+      "relationships": "child of Sturdy Ass; nieces/nephews of Sad, Hard, Nice, Bad/Cole; chosen Vassal/Prophet adopted by Golden Ass",
+      "verified": true,
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "zijt",
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [],
+      "contractionsAllowed": [
+        {
+          "form": "'k",
+          "scope": "light use (×8 corpus); cap rule when sentence-start",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'t",
+          "scope": "free, paired with het",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'n",
+          "scope": "free (project-wide rule)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [
+        "Nonkel",
+        "Tante",
+        "Moeder",
+        "Cool!",
+        "Coooool!",
+        "COOOOOOOOL!",
+        "...woah."
+      ],
+      "dialectalMarkersForbidden": [
+        "nie"
+      ],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — never nie (corpus 28/0)",
+      "registerExceptions": [
+        {
+          "scope": "child code-switching: formal register with adults",
+          "allows": [
+            "uw",
+            "u",
+            "ge",
+            "gij",
+            "zijt"
+          ],
+          "contexts": [
+            "When addressing Nonkel/Tante or other elder donkeys (mirrors Sad/Nice's 'uw Nonkel' aunt-style register)",
+            "When addressing Golden Ass / Moeder (reverent register)"
+          ]
+        },
+        {
+          "scope": "child code-switching: casual register with peers",
+          "allows": [
+            "je",
+            "jij",
+            "jou",
+            "jouw"
+          ],
+          "contexts": [
+            "When addressing Cole-Machine (post-transformation playmate)",
+            "When excited / casual moments"
+          ]
+        }
+      ],
+      "inboundAddressRules": [
+        {
+          "rule": "Adults addressing the Foal use formal aunt/uncle register (uw/u/ge)",
+          "examples": [
+            "Sad: 'uw Nonkel Triestigaard'",
+            "Nice: 'uw schuld... maak u geen zorgen'"
+          ]
+        }
+      ],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E10_ProphetSpeech_localization J11",
+          "note": "engine var — {$ManifestoVar0}"
+        },
+        {
+          "cell": "E10_ProphetSpeech_localization J12",
+          "note": "engine var — {$ManifestoVar1}"
+        },
+        {
+          "cell": "E10_ProphetSpeech_localization J13",
+          "note": "engine var — {$ManifestoVar2}"
+        },
+        {
+          "cell": "E10_ProphetSpeech_localization J14",
+          "note": "engine var — {$ManifestoVar3}"
+        },
+        {
+          "cell": "E10_ProphetSpeech_localization J15",
+          "note": "engine var — {$ManifestoVar4}"
+        },
+        {
+          "cell": "E3_Mine1F_localization J148",
+          "note": "child sfx 'Huh?' kept as cross-language"
+        },
+        {
+          "cell": "E3_100_localization J25",
+          "note": "child sfx 'AH!' kept"
+        },
+        {
+          "cell": "E3_200_localization J6",
+          "note": "child sfx 'Cool!' kept (loanword acceptable)"
+        },
+        {
+          "cell": "E6_World_localization J25",
+          "note": "silence sfx '...' kept"
+        },
+        {
+          "cell": "E6_BadCave_localization J29",
+          "note": "child sfx '...woah.' kept"
+        },
+        {
+          "cell": "E9_BadCave_localization J87",
+          "note": "child sfx 'COOOOOOOOL!' kept"
+        },
+        {
+          "cell": "E9_GoldenAss_localization J12",
+          "note": "child sfx 'Coooool!' kept"
+        },
+        {
+          "cell": "E9_GoldenAss_localization J107",
+          "note": "silence sfx '...' kept"
+        },
+        {
+          "cell": "E9_GoldenAss_localization J124",
+          "note": "child sfx 'Oh.' kept"
+        }
+      ],
+      "editorialPass": {
+        "passName": "foal-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "Q1: MIXED pronoun paradigm locked (Tom directive 2026-04-29) — child code-switches naturally between formal (uw/u/ge with elders) and casual (je/jij with peers). No mechanical flips — corpus reflects intentional register variation. Q2: niet only (corpus clean). Q3: 'k light/free, 't free. Q4-7: signatures kept (Nonkel, Tante, Moeder, child sfx). 14 cells in bulkTranslateExclusions (5 engine vars + 9 sfx)."
+      }
     }
   ],
   "lastEditorialPass": {
-    "character": "Lazy Ass",
-    "passName": "lazy-ass-baseline",
-    "lockedOn": "2026-04-28",
-    "correctionsApplied": 23
+    "character": "Foal",
+    "passName": "foal-baseline",
+    "lockedOn": "2026-04-29",
+    "correctionsApplied": 0
   }
 }

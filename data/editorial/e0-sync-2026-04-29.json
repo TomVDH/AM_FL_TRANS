@@ -1,0 +1,941 @@
+{
+  "character": "(E0 Google Sheets sync 2026-04-29)",
+  "rules_applied": [
+    "Sync from Google Sheets master for E0_Questions_localization (survey content). Pulls 84 newly-translated cells (was empty) + 9 refined translations.",
+    "Other E0 sheets (Manager, Instructions, GameTitle, Intermissions) unchanged in fresh — no sync needed."
+  ],
+  "generated": "2026-04-29",
+  "decision_status": "Tom directive 2026-04-29 — sync E0 from Google Sheets. 93 cells.",
+  "corrections": [
+    {
+      "id": "E0SYNC-1",
+      "rationale": "E0 Google Sheets sync: refined translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J6",
+      "english": "Those who stay with the herd",
+      "current_nl": "Diegene die de Kudde volgen",
+      "proposed_nl": "Diegene die bij de Kudde blijven"
+    },
+    {
+      "id": "E0SYNC-2",
+      "rationale": "E0 Google Sheets sync: refined translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J7",
+      "english": "Those who step away from the herd",
+      "current_nl": "Diegene die zich van de Kudde onderscheiden",
+      "proposed_nl": "Diegene die zich van de Kudde afscheiden"
+    },
+    {
+      "id": "E0SYNC-3",
+      "rationale": "E0 Google Sheets sync: refined translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J11",
+      "english": "Do you think of yourself as a political animal?",
+      "current_nl": "Vind je jezelf een politiek gëengageerd beest?",
+      "proposed_nl": "Vind je jezelf een politiek geëngageerd beest?"
+    },
+    {
+      "id": "E0SYNC-4",
+      "rationale": "E0 Google Sheets sync: refined translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J14",
+      "english": "Do you have urges to copulate and reproduce?",
+      "current_nl": "Heb je de drang te paren en je voort te planten?",
+      "proposed_nl": "Heb je de drang om te paren en je voort te planten?"
+    },
+    {
+      "id": "E0SYNC-5",
+      "rationale": "E0 Google Sheets sync: refined translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J20",
+      "english": "Concrete jungle",
+      "current_nl": "Betonnen oerwoud",
+      "proposed_nl": "Betonnen jungle"
+    },
+    {
+      "id": "E0SYNC-6",
+      "rationale": "E0 Google Sheets sync: refined translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J21",
+      "english": "Do you have experience doing manual labour every day for an extended period of time?",
+      "current_nl": "Heb je ervaring met daglijkse harde arbeid voor langdurige periodes?",
+      "proposed_nl": "Heb je ervaring met dagelijkse harde arbeid voor langdurige periodes?"
+    },
+    {
+      "id": "E0SYNC-7",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J27",
+      "english": "Have you ever lost your job because your role became redundant at your place of work?",
+      "current_nl": "",
+      "proposed_nl": "Bent u ooit uw baan kwijtgeraakt omdat uw functie overbodig werd op uw werkplek?"
+    },
+    {
+      "id": "E0SYNC-8",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J28",
+      "english": "Yes",
+      "current_nl": "",
+      "proposed_nl": "Ja"
+    },
+    {
+      "id": "E0SYNC-9",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J29",
+      "english": "No",
+      "current_nl": "",
+      "proposed_nl": "Nee"
+    },
+    {
+      "id": "E0SYNC-10",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J30",
+      "english": "What kind of job was it?",
+      "current_nl": "",
+      "proposed_nl": "Wat voor soort baan was het?"
+    },
+    {
+      "id": "E0SYNC-11",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J31",
+      "english": "Agriculture, fishery",
+      "current_nl": "",
+      "proposed_nl": "Landbouw, visserij"
+    },
+    {
+      "id": "E0SYNC-12",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J32",
+      "english": "Mining, oil, forestry",
+      "current_nl": "",
+      "proposed_nl": "Mijnbouw, olie, bosbouw"
+    },
+    {
+      "id": "E0SYNC-13",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J33",
+      "english": "Administration or clerical support",
+      "current_nl": "",
+      "proposed_nl": "Administratie of kantoorwerk"
+    },
+    {
+      "id": "E0SYNC-14",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J34",
+      "english": "Hospitality or service",
+      "current_nl": "",
+      "proposed_nl": "Horeca of dienstverlening"
+    },
+    {
+      "id": "E0SYNC-15",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J35",
+      "english": "Arts and culture",
+      "current_nl": "",
+      "proposed_nl": "Kunst en cultuur"
+    },
+    {
+      "id": "E0SYNC-16",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J36",
+      "english": "Other",
+      "current_nl": "",
+      "proposed_nl": "Andere"
+    },
+    {
+      "id": "E0SYNC-17",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J37",
+      "english": "How were the job conditions?",
+      "current_nl": "",
+      "proposed_nl": "Hoe waren de arbeidsomstandigheden?"
+    },
+    {
+      "id": "E0SYNC-18",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J38",
+      "english": "Amazing",
+      "current_nl": "",
+      "proposed_nl": "Uitstekend"
+    },
+    {
+      "id": "E0SYNC-19",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J39",
+      "english": "Good",
+      "current_nl": "",
+      "proposed_nl": "Goed"
+    },
+    {
+      "id": "E0SYNC-20",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J40",
+      "english": "Fair",
+      "current_nl": "",
+      "proposed_nl": "Redelijk"
+    },
+    {
+      "id": "E0SYNC-21",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J41",
+      "english": "Bad",
+      "current_nl": "",
+      "proposed_nl": "Slecht"
+    },
+    {
+      "id": "E0SYNC-22",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J42",
+      "english": "Terrible",
+      "current_nl": "",
+      "proposed_nl": "Verschrikkelijk"
+    },
+    {
+      "id": "E0SYNC-23",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J43",
+      "english": "Do you miss the job?",
+      "current_nl": "",
+      "proposed_nl": "Mis je de job?"
+    },
+    {
+      "id": "E0SYNC-24",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J44",
+      "english": "Yes",
+      "current_nl": "",
+      "proposed_nl": "Ja"
+    },
+    {
+      "id": "E0SYNC-25",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J45",
+      "english": "No",
+      "current_nl": "",
+      "proposed_nl": "Nee"
+    },
+    {
+      "id": "E0SYNC-26",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J46",
+      "english": "I miss aspects of it",
+      "current_nl": "",
+      "proposed_nl": "Ik mis er bepaalde aspecten van"
+    },
+    {
+      "id": "E0SYNC-27",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J47",
+      "english": "Do you think you would still have the job if you did things differently?",
+      "current_nl": "",
+      "proposed_nl": "Denk je dat je die baan nog zou hebben als je de dingen anders had aangepakt?"
+    },
+    {
+      "id": "E0SYNC-28",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J48",
+      "english": "Yes",
+      "current_nl": "",
+      "proposed_nl": "Ja"
+    },
+    {
+      "id": "E0SYNC-29",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J49",
+      "english": "No",
+      "current_nl": "",
+      "proposed_nl": "Nee"
+    },
+    {
+      "id": "E0SYNC-30",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J50",
+      "english": "I don't know",
+      "current_nl": "",
+      "proposed_nl": "Ik weet het niet"
+    },
+    {
+      "id": "E0SYNC-31",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J51",
+      "english": "Would you consider yourself to be the best representative of your species to lead a Revolution?",
+      "current_nl": "",
+      "proposed_nl": "Zou je jezelf beschouwen als de beste vertegenwoordiger van jouw soort om een Revolutie te leiden?"
+    },
+    {
+      "id": "E0SYNC-32",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J52",
+      "english": "Yes",
+      "current_nl": "",
+      "proposed_nl": "Ja"
+    },
+    {
+      "id": "E0SYNC-33",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J53",
+      "english": "No",
+      "current_nl": "",
+      "proposed_nl": "Nee"
+    },
+    {
+      "id": "E0SYNC-34",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J54",
+      "english": "Which of these mythic and literary heroes do you identify with the most?",
+      "current_nl": "",
+      "proposed_nl": "Met welke van deze mythische en literaire helden identificeer je je het meest?"
+    },
+    {
+      "id": "E0SYNC-35",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J55",
+      "english": "Bottom from A Midsummer Night's Dream",
+      "current_nl": "",
+      "proposed_nl": "Bottom uit Een Midzomernachtdroom"
+    },
+    {
+      "id": "E0SYNC-36",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J56",
+      "english": "Lucius from The Golden Ass by Apuleius",
+      "current_nl": "",
+      "proposed_nl": "Lucius uit De Gouden Ezel van Apuleius"
+    },
+    {
+      "id": "E0SYNC-37",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J57",
+      "english": "Midas from Greek Mythology",
+      "current_nl": "",
+      "proposed_nl": "Midas uit de Griekse mythologie"
+    },
+    {
+      "id": "E0SYNC-38",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J58",
+      "english": "Pinocchio from Pinocchio",
+      "current_nl": "",
+      "proposed_nl": "Pinocchio uit Pinocchio"
+    },
+    {
+      "id": "E0SYNC-39",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J59",
+      "english": "PHASE ONE\\nCOMPLETE",
+      "current_nl": "",
+      "proposed_nl": "FASE ÉÉN\n VOLTOOID"
+    },
+    {
+      "id": "E0SYNC-40",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J60",
+      "english": "CALIBRATING INTELLIGENCE",
+      "current_nl": "",
+      "proposed_nl": "INTELLIGENTIE KALIBREREN"
+    },
+    {
+      "id": "E0SYNC-41",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J61",
+      "english": "In English, when one human says to another human, \"You ass,\" they are comparing a human to:",
+      "current_nl": "",
+      "proposed_nl": "In het Engels, wanneer een mens tegen een ander mens zegt: \"you ass,\" vergelijken ze een mens met:"
+    },
+    {
+      "id": "E0SYNC-42",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J62",
+      "english": "Equus asinus",
+      "current_nl": "",
+      "proposed_nl": "Equus asinus"
+    },
+    {
+      "id": "E0SYNC-43",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J63",
+      "english": "A buttocks",
+      "current_nl": "",
+      "proposed_nl": "Een achterwerk"
+    },
+    {
+      "id": "E0SYNC-44",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J64",
+      "english": "In English, when one human says to another human, \"I'd hit that ass\" they mean:",
+      "current_nl": "",
+      "proposed_nl": "In het Engels, wanneer een mens tegen een ander mens zegt, \"I'd hit that ass\", bedoelen ze:"
+    },
+    {
+      "id": "E0SYNC-45",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J65",
+      "english": "They would forcibly beat an Equus asinus if they could",
+      "current_nl": "",
+      "proposed_nl": "Ze zouden een Equus asinus met geweld slaan als ze konden"
+    },
+    {
+      "id": "E0SYNC-46",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J66",
+      "english": "They would have sexual intercourse with another human if they could",
+      "current_nl": "",
+      "proposed_nl": "Ze zouden geslachtsgemeenschap hebben met een andere mens als ze konden"
+    },
+    {
+      "id": "E0SYNC-47",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J67",
+      "english": "In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:",
+      "current_nl": "",
+      "proposed_nl": "\"In het Oude Testament slaat een mens genaamd Balaam op zijn ezel wanneer plots:\""
+    },
+    {
+      "id": "E0SYNC-48",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J68",
+      "english": "Balaam beats the ass to death and has to find another one to do his work for him",
+      "current_nl": "",
+      "proposed_nl": "Balaam slaat de ezel dood en moet een andere zoeken om het werk voor hem te doen"
+    },
+    {
+      "id": "E0SYNC-49",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J69",
+      "english": "God gives the ass the ability to speak and the ass begs Balaam to spare them",
+      "current_nl": "",
+      "proposed_nl": "God geeft de ezel het vermogen om te spreken en de ezel smeekt Balaam om hem te sparen"
+    },
+    {
+      "id": "E0SYNC-50",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J70",
+      "english": "In Aesop's Fables, one reads: \"An ass put on the skin of a lion and went around frightening all the animals. The ass saw a fox and tried to frighten her too, but she had heard his voice first, so she said to the ass, 'You can be sure that I too would have been afraid, if I had not already heard the sound of your bray'.\" The moral is:",
+      "current_nl": "",
+      "proposed_nl": "In de Fabels van Aesopus leest men: 'Een ezel trok de huid van een leeuw aan en ging rond om alle dieren schrik aan te jagen. De ezel zag een vos en probeerde ook haar bang te maken, maar zij had eerst zijn stem gehoord, dus zei ze tegen de ezel: \"Wees gerust, ook ik zou bang zijn geweest, als ik niet al het geluid van je gebalk had gehoord\".' De moraal is:"
+    },
+    {
+      "id": "E0SYNC-51",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J71",
+      "english": "The disenfranchised are forced to imitate those in power without ever attaining more power",
+      "current_nl": "",
+      "proposed_nl": "De rechtelozen worden gedwongen om de machtigen na te bootsen zonder ooit meer macht te verwerven"
+    },
+    {
+      "id": "E0SYNC-52",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J72",
+      "english": "A fool is still a fool regardless of how they are dressed",
+      "current_nl": "",
+      "proposed_nl": "Een dwaas blijft een dwaas, ongeacht hoe hij zich kleedt"
+    },
+    {
+      "id": "E0SYNC-53",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J73",
+      "english": "In Ancient Greece, asses symbolized fertility because:",
+      "current_nl": "",
+      "proposed_nl": "In het Oude Griekenland symboliseerden ezels vruchtbaarheid omdat:"
+    },
+    {
+      "id": "E0SYNC-54",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J74",
+      "english": "Male donkeys have very large penises",
+      "current_nl": "",
+      "proposed_nl": "Mannelijke ezels een zeer grote penis hebbem"
+    },
+    {
+      "id": "E0SYNC-55",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J75",
+      "english": "Female donkeys frequently give birth to twins",
+      "current_nl": "",
+      "proposed_nl": "Vrouwelijke ezels vaak tweelingen baren"
+    },
+    {
+      "id": "E0SYNC-56",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J76",
+      "english": "A 'mare' is the general term for a female equine. What is the specific term for a female donkey?",
+      "current_nl": "",
+      "proposed_nl": "Een 'merrie' is de algemene term voor een vrouwelijk paard. Wat is de specifieke term voor een vrouwelijke ezel?"
+    },
+    {
+      "id": "E0SYNC-57",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J77",
+      "english": "Jack",
+      "current_nl": "",
+      "proposed_nl": "Burro"
+    },
+    {
+      "id": "E0SYNC-58",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J78",
+      "english": "Gelding",
+      "current_nl": "",
+      "proposed_nl": "Ruin"
+    },
+    {
+      "id": "E0SYNC-59",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J79",
+      "english": "Jennet",
+      "current_nl": "",
+      "proposed_nl": "Molly"
+    },
+    {
+      "id": "E0SYNC-60",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J80",
+      "english": "Molly",
+      "current_nl": "",
+      "proposed_nl": "Jennet"
+    },
+    {
+      "id": "E0SYNC-61",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J81",
+      "english": "A famous piece of anti-Christian graffiti from ancient Rome depicts:",
+      "current_nl": "",
+      "proposed_nl": "Een beroemd stuk anti-christelijke graffiti uit het oude Rome toont:"
+    },
+    {
+      "id": "E0SYNC-62",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J82",
+      "english": "Jesus with an ass's head",
+      "current_nl": "",
+      "proposed_nl": "Jezus met een ezelskop"
+    },
+    {
+      "id": "E0SYNC-63",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J83",
+      "english": "Jesus riding an ass backwards",
+      "current_nl": "",
+      "proposed_nl": "Jezus die achterstevoren op een ezel rijdt"
+    },
+    {
+      "id": "E0SYNC-64",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J84",
+      "english": "What does tradition say Mohammed's ass, Ya'fur, did after the Prophet died?",
+      "current_nl": "",
+      "proposed_nl": "Wat zegt de traditie dat Mohammeds ezel, Ya'fur, deed na de dood van de Profeet?"
+    },
+    {
+      "id": "E0SYNC-65",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J85",
+      "english": "Committed suicide by throwing itself down a well",
+      "current_nl": "",
+      "proposed_nl": "Pleegde zelfmoord door zich in een put te werpen"
+    },
+    {
+      "id": "E0SYNC-66",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J86",
+      "english": "Rode away from Mecca weeping never to return",
+      "current_nl": "",
+      "proposed_nl": "Reed wenend weg uit Mekka om nooit meer terug te keren"
+    },
+    {
+      "id": "E0SYNC-67",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J87",
+      "english": "In the philosophical paradox called Buridan's Ass, an ass placed between a bucket of water and a bale of hay will:",
+      "current_nl": "",
+      "proposed_nl": "In de filosofische paradox die bekend staat als Buridans ezel zal een ezel die precies tussen een emmer water en een baal hooi wordt geplaatst:"
+    },
+    {
+      "id": "E0SYNC-68",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J88",
+      "english": "Always choose the hay first",
+      "current_nl": "",
+      "proposed_nl": "Altijd eerst het hooi kiezen"
+    },
+    {
+      "id": "E0SYNC-69",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J89",
+      "english": "Always choose the water first",
+      "current_nl": "",
+      "proposed_nl": "Altijd eerst het water kiezen"
+    },
+    {
+      "id": "E0SYNC-70",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J90",
+      "english": "Die from indecision",
+      "current_nl": "",
+      "proposed_nl": "Sterven van besluiteloosheid"
+    },
+    {
+      "id": "E0SYNC-71",
+      "rationale": "E0 Google Sheets sync: refined translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J91",
+      "english": "Was ist die Bedeutung des Ausdrucks „sich eine Eselsbrücke bauen“?",
+      "current_nl": "Was ist die Bedeutung des Ausdrucks „sich eine Eselsbrücke bauen“?",
+      "proposed_nl": "Wat is de betekenis van de uitdrukking \"een ezelsbruggetje bouwen\"?"
+    },
+    {
+      "id": "E0SYNC-72",
+      "rationale": "E0 Google Sheets sync: refined translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J92",
+      "english": "Eine Abkürzung oder gedankliche Assoziation zu finden, um sich etwas besser merken zu können",
+      "current_nl": "Eine Abkürzung oder gedankliche Assoziation zu finden, um sich etwas besser merken zu können",
+      "proposed_nl": "Een omweg of geheugensteuntje vinden om iets beter te kunnen onthouden"
+    },
+    {
+      "id": "E0SYNC-73",
+      "rationale": "E0 Google Sheets sync: refined translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J93",
+      "english": "Vertrauen Sie niemals einem langsamen Esel beim Brückenbauen",
+      "current_nl": "Vertrauen Sie niemals einem langsamen Esel beim Brückenbauen",
+      "proposed_nl": "Vertrouw nooit een trage ezel bij het bruggen bouwen"
+    },
+    {
+      "id": "E0SYNC-74",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J94",
+      "english": "In 1981, the video game DONKEY.BAS was distributed on all original IBM computers. In that game, players must:",
+      "current_nl": "",
+      "proposed_nl": "In 1981 werd het videospel DONKEY.BAS meegeleverd op alle originele IBM Computers. In dat spel moeten spelers:"
+    },
+    {
+      "id": "E0SYNC-75",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J95",
+      "english": "Play as a donkey pulling wagons of hay from one town to another",
+      "current_nl": "",
+      "proposed_nl": "Als een ezel wagons hooi van de ene stad naar de andere trekken"
+    },
+    {
+      "id": "E0SYNC-76",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J96",
+      "english": "Drive a car down a road while avoiding donkeys",
+      "current_nl": "",
+      "proposed_nl": "Met een auto over een weg rijden terwijl je ezels ontwijkt"
+    },
+    {
+      "id": "E0SYNC-77",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J97",
+      "english": "Play a rhythm game that simulates donkeys mating",
+      "current_nl": "",
+      "proposed_nl": "Een ritmespel spelen dat de paring van ezels simuleert"
+    },
+    {
+      "id": "E0SYNC-78",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J101",
+      "english": "In China, the rise in demand for a luxury Traditional Chinese Medicine product called 'ejiao' has resulted in how many asses being slaughtered every year?",
+      "current_nl": "",
+      "proposed_nl": "In China heeft de stijgende vraag naar een luxeproduct uit de traditionele Chinese geneeskunde, 'ejiao' genaamd, ertoe geleid dat er jaarlijks hoeveel ezels worden geslacht?"
+    },
+    {
+      "id": "E0SYNC-79",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J102",
+      "english": "5 million",
+      "current_nl": "",
+      "proposed_nl": "5 miljoen"
+    },
+    {
+      "id": "E0SYNC-80",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J103",
+      "english": "3 million",
+      "current_nl": "",
+      "proposed_nl": "3 miljoen"
+    },
+    {
+      "id": "E0SYNC-81",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J104",
+      "english": "2 million",
+      "current_nl": "",
+      "proposed_nl": "2 miljoen"
+    },
+    {
+      "id": "E0SYNC-82",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J105",
+      "english": "As of 2018, how heavy must a tourist be to be too heavy to ride an ass on the island of Santorini, Greece?",
+      "current_nl": "",
+      "proposed_nl": "Hoe zwaar moet een toerist vanaf 2018 zijn om te zwaar te zijn om op een ezel te rijden op het eiland Santorini in Griekenland?"
+    },
+    {
+      "id": "E0SYNC-83",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J106",
+      "english": "75kg (165lbs)",
+      "current_nl": "",
+      "proposed_nl": "75kg (165lbs)"
+    },
+    {
+      "id": "E0SYNC-84",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J107",
+      "english": "100kg (220lbs)",
+      "current_nl": "",
+      "proposed_nl": "100kg (220lbs)"
+    },
+    {
+      "id": "E0SYNC-85",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J108",
+      "english": "In northwestern Australia, wild asses are shot from government helicopters because:",
+      "current_nl": "",
+      "proposed_nl": "In het noordwesten van Australië worden wilde ezels neergeschoten vanuit overheidshelikopters omdat:"
+    },
+    {
+      "id": "E0SYNC-86",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J109",
+      "english": "They are considered an invasive species left behind from British colonization",
+      "current_nl": "",
+      "proposed_nl": "Ze worden beschouwd als een invasieve soort die achtergelaten is door de Britse kolonisatie"
+    },
+    {
+      "id": "E0SYNC-87",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J110",
+      "english": "They are destroying the natural landscape of the Kimberley",
+      "current_nl": "",
+      "proposed_nl": "Ze vernielen het natuurlijke landschap van de Kimberley"
+    },
+    {
+      "id": "E0SYNC-88",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J111",
+      "english": "All of the above",
+      "current_nl": "",
+      "proposed_nl": "Alle bovenstaande"
+    },
+    {
+      "id": "E0SYNC-89",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J112",
+      "english": "Equus asinus has been in the service of human beings as a manual labourer for how many years?",
+      "current_nl": "",
+      "proposed_nl": "Equus asinus staat al hoeveel jaar in dienst van de mens als handarbeider?"
+    },
+    {
+      "id": "E0SYNC-90",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J113",
+      "english": "5000 years",
+      "current_nl": "",
+      "proposed_nl": "5000 jaar"
+    },
+    {
+      "id": "E0SYNC-91",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J114",
+      "english": "7000 years",
+      "current_nl": "",
+      "proposed_nl": "7000 jaar"
+    },
+    {
+      "id": "E0SYNC-92",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J115",
+      "english": "AVATAR READY",
+      "current_nl": "",
+      "proposed_nl": "AVATAR GEREED"
+    },
+    {
+      "id": "E0SYNC-93",
+      "rationale": "E0 Google Sheets sync: filled translation",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J116",
+      "english": "MATERIALIZING...",
+      "current_nl": "",
+      "proposed_nl": "MATERIALISEREN..."
+    }
+  ]
+}
