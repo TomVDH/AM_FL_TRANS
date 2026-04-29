@@ -57,3 +57,10 @@ storybook-static
 
 # Cabinet session state
 crew-notes/
+
+# Google Sheets API auth
+credentials.json
+token.json
+
+# Push walker state
+.push-state.json
