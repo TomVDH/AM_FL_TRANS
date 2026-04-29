@@ -1,0 +1,413 @@
+{
+  "character": "(project-wide consistency sweep)",
+  "rules_applied": [
+    "Canonical naming — Machines: all '*-Machine' compounds hyphenated. 'Tractor-Machine' (c, hyphenated) standardized across 7 cells (was 'Traktor Machine' / 'Traktor-Machine').",
+    "Canonical naming — Bumpkin Village → Klotegem (was wrongly 'Muilegem' at E5_CircusMain R240; Muilegem = Fannyside).",
+    "Punctuation — curly apostrophe U+2019 → straight ' (Tom directive 2026-04-28; project standardizes on straight). Includes 1 mixed-apostrophe cell at E1_Farm R24.",
+    "Punctuation — Unicode ellipsis … (U+2026) → three dots '...' (Tom directive 2026-04-28)."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "Tom-locked 2026-04-28.",
+  "corrections": [
+    {
+      "id": "PROJ-1",
+      "rationale": "Project-wide canonicalization: all 'Machine' compounds hyphenated; spelling Tractor (with c)",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Slow_localization",
+      "cell": "J9",
+      "english": "Aw dang! The Tractor-Machine's choking. Maybe it needs a break.",
+      "current_nl": "Amai héé! De Traktor Machine verslikte zich. Misschien moet dat ding efkes rusten.",
+      "proposed_nl": "Amai héé! De Tractor-Machine verslikte zich. Misschien moet dat ding efkes rusten."
+    },
+    {
+      "id": "PROJ-2",
+      "rationale": "Project-wide canonicalization: all 'Machine' compounds hyphenated; spelling Tractor (with c)",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Hard_localization",
+      "cell": "J44",
+      "english": "How the hell are we gonna make it back to our Farm without the ding dang Tractor-Machine?",
+      "current_nl": "Godverdoemme, hoe gaan we in 't hemelsnaam terug geraken naar onze Boerderij zonder die verdomde Traktor Machine, héé?",
+      "proposed_nl": "Godverdoemme, hoe gaan we in 't hemelsnaam terug geraken naar onze Boerderij zonder die verdomde Tractor-Machine, héé?"
+    },
+    {
+      "id": "PROJ-3",
+      "rationale": "Project-wide canonicalization: all 'Machine' compounds hyphenated; spelling Tractor (with c)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J30",
+      "english": "Ever since she got laid off, and replaced by that dang Tractor-Machine, it's like she's forgotten all about me.",
+      "current_nl": "Sinds da' z'ontslagen is, en door die Traktor-Machine vervangen is, herkent ze me precies niet meer.",
+      "proposed_nl": "Sinds da' z'ontslagen is, en door die Tractor-Machine vervangen is, herkent ze me precies niet meer."
+    },
+    {
+      "id": "PROJ-4",
+      "rationale": "Project-wide canonicalization: all 'Machine' compounds hyphenated; spelling Tractor (with c)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J16",
+      "english": "It's the Tractor-Machine...",
+      "current_nl": "Dat is de Traktor-Machine...",
+      "proposed_nl": "Dat is de Tractor-Machine..."
+    },
+    {
+      "id": "PROJ-5",
+      "rationale": "Project-wide canonicalization: all 'Machine' compounds hyphenated; spelling Tractor (with c)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J193",
+      "english": "Stupid Tractor-Machine.",
+      "current_nl": "Stomme Traktor Machine.",
+      "proposed_nl": "Stomme Tractor-Machine."
+    },
+    {
+      "id": "PROJ-6",
+      "rationale": "Project-wide canonicalization: all 'Machine' compounds hyphenated; spelling Tractor (with c)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J306",
+      "english": "We can ride the Tractor-Machine to the City!",
+      "current_nl": "We kunnen met de Traktor Machine naar de Stad rijden!",
+      "proposed_nl": "We kunnen met de Tractor-Machine naar de Stad rijden!"
+    },
+    {
+      "id": "PROJ-7",
+      "rationale": "Project-wide canonicalization: all 'Machine' compounds hyphenated; spelling Tractor (with c)",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J106",
+      "english": "So your Aunties and Uncles left on the Tractor-Machine to find them.",
+      "current_nl": "Dus je tantes en nonkels zijn met de Traktor Machine vertrokken om hen te gaan zoeken.",
+      "proposed_nl": "Dus je tantes en nonkels zijn met de Tractor-Machine vertrokken om hen te gaan zoeken."
+    },
+    {
+      "id": "PROJ-8",
+      "rationale": "Bumpkin Village → Klotegem (was wrongly 'Muilegem' which = Fannyside)",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J240",
+      "english": "But his life was cut short during the tragic fires of Bumpkin Village exactly 6 months and 3 weeks ago.",
+      "current_nl": "Maar zijn leven is vroegtijdig ten einde gekomen in de brand van Muilegem — exact 6 maand en 3 weken geleden.",
+      "proposed_nl": "Maar zijn leven is vroegtijdig ten einde gekomen in de brand van Klotegem — exact 6 maand en 3 weken geleden."
+    },
+    {
+      "id": "PROJ-9",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J24",
+      "english": "Can you fetch me some water with that ol' bucket, from that ol' river up there?",
+      "current_nl": "Zou’j mij wat water kunnen scheppen met dienen ouden emmer, van da' stukske rivier da' ginder ligt?",
+      "proposed_nl": "Zou'j mij wat water kunnen scheppen met dienen ouden emmer, van da' stukske rivier da' ginder ligt?"
+    },
+    {
+      "id": "PROJ-10",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J9",
+      "english": "Wow, what a hard rock! I'm gonna keep it.",
+      "current_nl": "Amai! Da’s een harde kei! Die steek ik bij!",
+      "proposed_nl": "Amai! Da's een harde kei! Die steek ik bij!"
+    },
+    {
+      "id": "PROJ-11",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J10",
+      "english": "Wow, what a classic rock! This one might be my favourite!",
+      "current_nl": "Wauw! Wat een klassieker! Da’s misschien mijn favoriet!",
+      "proposed_nl": "Wauw! Wat een klassieker! Da's misschien mijn favoriet!"
+    },
+    {
+      "id": "PROJ-12",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J11",
+      "english": "This is a weird looking rock...",
+      "current_nl": "Da’s een raar uitziende kei…",
+      "proposed_nl": "Da's een raar uitziende kei…"
+    },
+    {
+      "id": "PROJ-13",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J13",
+      "english": "It's missing one of those round things...",
+      "current_nl": "Er ontbreekt zo’n rond ding…",
+      "proposed_nl": "Er ontbreekt zo'n rond ding…"
+    },
+    {
+      "id": "PROJ-14",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J14",
+      "english": "Cool! It fits perfectly!",
+      "current_nl": "Joepie! ’t Past perfect!",
+      "proposed_nl": "Joepie! 't Past perfect!"
+    },
+    {
+      "id": "PROJ-15",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J25",
+      "english": "Is {$NewName} giving you some good advice, Uncle Sad?",
+      "current_nl": "Is {$NewName} u goeie raad aan ’t geven, Nonkel Sad?",
+      "proposed_nl": "Is {$NewName} u goeie raad aan 't geven, Nonkel Sad?"
+    },
+    {
+      "id": "PROJ-16",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J31",
+      "english": "It's not easy for him being back inside the Mine.",
+      "current_nl": "’t Is nie makkelijk voor hem om terug in de Mijn te zijn.",
+      "proposed_nl": "'t Is nie makkelijk voor hem om terug in de Mijn te zijn."
+    },
+    {
+      "id": "PROJ-17",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J33",
+      "english": "Don't worry, it's not your fault.",
+      "current_nl": "’t Is uw schuld nie, maak u geen zorgen.",
+      "proposed_nl": "'t Is uw schuld nie, maak u geen zorgen."
+    },
+    {
+      "id": "PROJ-18",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J36",
+      "english": "Someone's whispering...",
+      "current_nl": "Iemand is aan ’t fluisteren...",
+      "proposed_nl": "Iemand is aan 't fluisteren..."
+    },
+    {
+      "id": "PROJ-19",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J41",
+      "english": "That day in the Outhouse... I really thought that things would get better.",
+      "current_nl": "Die dag in de Hudo... Ik dacht echt dat ’t beter ging worden.",
+      "proposed_nl": "Die dag in de Hudo... Ik dacht echt dat 't beter ging worden."
+    },
+    {
+      "id": "PROJ-20",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J51",
+      "english": "*oof*—Just sayin' it's a crazy idea!",
+      "current_nl": "*oef*—’k zeg ’t gewoon: da’s een zotte gedacht!",
+      "proposed_nl": "*oef*—'k zeg 't gewoon: da's een zotte gedacht!"
+    },
+    {
+      "id": "PROJ-21",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J53",
+      "english": "We're just moving this boulder in case the flood starts to come any closer.",
+      "current_nl": "We zijn dit rotsbloki aan ’t verleggen, voor als de vloed nog dichter komt.",
+      "proposed_nl": "We zijn dit rotsbloki aan 't verleggen, voor als de vloed nog dichter komt."
+    },
+    {
+      "id": "PROJ-22",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J62",
+      "english": "Isn't there a better way to move a boulder?",
+      "current_nl": "Is er geen betere manier om zo’n kei te verleggen?",
+      "proposed_nl": "Is er geen betere manier om zo'n kei te verleggen?"
+    },
+    {
+      "id": "PROJ-23",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J63",
+      "english": "Isn't there a better way to move a boulder?",
+      "current_nl": "Is er geen betere manier om zo’n kei te verleggen?",
+      "proposed_nl": "Is er geen betere manier om zo'n kei te verleggen?"
+    },
+    {
+      "id": "PROJ-24",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J77",
+      "english": "Comrade, I want more in life.",
+      "current_nl": "Kameraad, ik wil méér in ’t leven.",
+      "proposed_nl": "Kameraad, ik wil méér in 't leven."
+    },
+    {
+      "id": "PROJ-25",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J78",
+      "english": "Just because yer wantin' more in life don't mean you got to abandon yer home!",
+      "current_nl": "Omdat ge meer wilt in ’t leven, wilt dat nog nie zeggen dat ge uw thuis moet achterlaten!",
+      "proposed_nl": "Omdat ge meer wilt in 't leven, wilt dat nog nie zeggen dat ge uw thuis moet achterlaten!"
+    },
+    {
+      "id": "PROJ-26",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J82",
+      "english": "I’d call it... Bottoms Up!",
+      "current_nl": "Ik zou ’t noemen… Poepegaatje!",
+      "proposed_nl": "Ik zou 't noemen… Poepegaatje!"
+    },
+    {
+      "id": "PROJ-27",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J107",
+      "english": "That's enough. Run along.",
+      "current_nl": "’t Is genoeg. Ga nu weg.",
+      "proposed_nl": "'t Is genoeg. Ga nu weg."
+    },
+    {
+      "id": "PROJ-28",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J110",
+      "english": "It sounds like someone's in pain...",
+      "current_nl": "’t Klinkt alsof iemand pijn heeft...",
+      "proposed_nl": "'t Klinkt alsof iemand pijn heeft..."
+    },
+    {
+      "id": "PROJ-29",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J125",
+      "english": "Trusty was the kind of leader who made you b-believe in yourself.",
+      "current_nl": "Trouwe Ezel was zo’n leider die u deed g-g-geloven in uzelf.",
+      "proposed_nl": "Trouwe Ezel was zo'n leider die u deed g-g-geloven in uzelf."
+    },
+    {
+      "id": "PROJ-30",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J130",
+      "english": "No you won't. It's Bad Ass's.",
+      "current_nl": "Nee jij. ’t Is van Waaghalske.",
+      "proposed_nl": "Nee jij. 't Is van Waaghalske."
+    },
+    {
+      "id": "PROJ-31",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J135",
+      "english": "Are Comrade Mother and Aunty Smart arguing?",
+      "current_nl": "Zijn Kameraad-Moeder en Tante Betje aan ’t bekvechten?",
+      "proposed_nl": "Zijn Kameraad-Moeder en Tante Betje aan 't bekvechten?"
+    },
+    {
+      "id": "PROJ-32",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J140",
+      "english": "Comrade, it's not safe outside.",
+      "current_nl": "Kameraad, ’t is niet veilig buiten.",
+      "proposed_nl": "Kameraad, 't is niet veilig buiten."
+    },
+    {
+      "id": "PROJ-33",
+      "rationale": "Project-wide punctuation: curly apostrophe U+2019 → straight (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J149",
+      "english": "Hey a light? That's never happened before...",
+      "current_nl": "Hé, een licht? Da’s nog nooit gebeurd…",
+      "proposed_nl": "Hé, een licht? Da's nog nooit gebeurd…"
+    },
+    {
+      "id": "PROJ-34",
+      "rationale": "Project-wide punctuation: U+2026 ellipsis → three dots (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J11",
+      "english": "This is a weird looking rock...",
+      "current_nl": "Da’s een raar uitziende kei…",
+      "proposed_nl": "Da’s een raar uitziende kei..."
+    },
+    {
+      "id": "PROJ-35",
+      "rationale": "Project-wide punctuation: U+2026 ellipsis → three dots (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J13",
+      "english": "It's missing one of those round things...",
+      "current_nl": "Er ontbreekt zo’n rond ding…",
+      "proposed_nl": "Er ontbreekt zo’n rond ding..."
+    },
+    {
+      "id": "PROJ-36",
+      "rationale": "Project-wide punctuation: U+2026 ellipsis → three dots (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J38",
+      "english": "You're going to tell the others I set the Fire, aren't you...",
+      "current_nl": "Je gaat de anderen zeggen dat ik het Vuur heb gesticht, hè…",
+      "proposed_nl": "Je gaat de anderen zeggen dat ik het Vuur heb gesticht, hè..."
+    },
+    {
+      "id": "PROJ-37",
+      "rationale": "Project-wide punctuation: U+2026 ellipsis → three dots (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J40",
+      "english": "You say that... but not everything you say is true.",
+      "current_nl": "Je zegt dat wel… maar niet alles wat je zegt is waar.",
+      "proposed_nl": "Je zegt dat wel... maar niet alles wat je zegt is waar."
+    },
+    {
+      "id": "PROJ-38",
+      "rationale": "Project-wide punctuation: U+2026 ellipsis → three dots (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J82",
+      "english": "I’d call it... Bottoms Up!",
+      "current_nl": "Ik zou ’t noemen… Poepegaatje!",
+      "proposed_nl": "Ik zou ’t noemen... Poepegaatje!"
+    },
+    {
+      "id": "PROJ-39",
+      "rationale": "Project-wide punctuation: U+2026 ellipsis → three dots (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J87",
+      "english": "Sorry—@#$%&!—Aunty Sick is... pretty messed up right now.",
+      "current_nl": "Sorry—Godver!—Tante Snotje is… serieus slecht nu.",
+      "proposed_nl": "Sorry—Godver!—Tante Snotje is... serieus slecht nu."
+    },
+    {
+      "id": "PROJ-40",
+      "rationale": "Project-wide punctuation: U+2026 ellipsis → three dots (Tom standardization)",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J149",
+      "english": "Hey a light? That's never happened before...",
+      "current_nl": "Hé, een licht? Da’s nog nooit gebeurd…",
+      "proposed_nl": "Hé, een licht? Da’s nog nooit gebeurd..."
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "character": "(sanity-fix sweep 2026-04-28)",
+  "rules_applied": [
+    "Per-sheet integrity audit surfaced 7 real issues — duplicate NL across different EN, empty NL, censor placeholder mismatch, character name typo. All fixed per Tom's line-by-line directives 2026-04-28.",
+    "Skipped (Tom decision): R210 (Ya you do — current NL fine for affirmation), R18 (Ha. cross-language), R49/R55 (them/the others — contextually equivalent in NL)."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "Tom-locked 2026-04-28. 7 cells.",
+  "corrections": [
+    {
+      "id": "SANITY-1",
+      "rationale": "Branch differentiation: NO path (R210 YES path kept). EN: 'No? Oh my friend, it's best drug...'",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J212",
+      "speaker": "DJ Dope Ass",
+      "english": "No? Oh my friend, it's best drug we got in the Astral Plane...",
+      "current_nl": "Ge weet over wat ik het heb, jong! Het beste spul dat we in het Astrale Hiernamaals kunnen vinden!",
+      "proposed_nl": "Ah nee? Maatje, het is het beste spul dat we in het astrale hiernamaals kunnen vinden"
+    },
+    {
+      "id": "SANITY-2",
+      "rationale": "Plural 'They' (Golden Ass speech) — was wrongly rendered as singular 'Een Profeet'; also overal waar wij gaan → waar we ook gaan",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J33",
+      "speaker": "Golden Ass",
+      "english": "They ride upon our back and convert enemies into allies everywhere we go.",
+      "current_nl": "Een Profeet rijdt op onze rug en bekeert vijanden tot bondgenoten, overal waar wij gaan.",
+      "proposed_nl": "Zij rijden op onze rug en bekeren vijanden tot bondgenoten, waar we ook gaan."
+    },
+    {
+      "id": "SANITY-3",
+      "rationale": "Phrasing refinement: overal waar wij gaan → waar we ook gaan (consistency with R33)",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J32",
+      "speaker": "475",
+      "english": "A Prophet rides upon our back and converts enemies to allies everywhere we go.",
+      "current_nl": "Een Profeet rijdt op onze rug en bekeert vijanden tot bondgenoten, overal waar wij gaan.",
+      "proposed_nl": "Een Profeet rijdt op onze rug en bekeert vijanden tot bondgenoten, waar we ook gaan."
+    },
+    {
+      "id": "SANITY-4",
+      "rationale": "Concept differentiation: 'transcend their station' was flattened to 'veranderen' (just 'change') — restoring elevated meaning",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J85",
+      "speaker": "Golden Ass",
+      "english": "You are living proof that Humans have the ability to transcend their station.",
+      "current_nl": "Gij bent het levende bewijs dat Mensen het vermogen hebben om te veranderen.",
+      "proposed_nl": "Gij bent het levende bewijs dat Mensen boven zichzelf kunnen stijgen."
+    },
+    {
+      "id": "SANITY-5",
+      "rationale": "Empty NL — Big Ass repeats NPC R71 verbatim; mirror NL",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Hard_localization",
+      "cell": "J72",
+      "speaker": "Big Ass",
+      "english": "You didn't have faith in me.",
+      "current_nl": "",
+      "proposed_nl": "Ge had geen vertrouwen in mij."
+    },
+    {
+      "id": "SANITY-6",
+      "rationale": "Censor placeholder: pattern says translate 'Ass' → 'Ezel', keep stars (matches Hairy/Ugly Ass pattern in this sheet)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_RedFields_localization",
+      "cell": "J11",
+      "speaker": "15",
+      "english": "**** Ass",
+      "current_nl": "**** Ass",
+      "proposed_nl": "**** Ezel"
+    },
+    {
+      "id": "SANITY-7",
+      "rationale": "Improved Dutch slang: Nieweling → Groentje (more natural for 'newbie/rookie')",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_RedFields_localization",
+      "cell": "J12",
+      "speaker": "Happy Ass",
+      "english": "Great choice, Newbie.",
+      "current_nl": "Mooie keuze, Nieweling.",
+      "proposed_nl": "Mooie keuze, Groentje."
+    },
+    {
+      "id": "SANITY-8",
+      "rationale": "Project-wide rule (Tom directive 2026-04-28): standalone 'bast' as intensifier → 'best'",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J27",
+      "speaker": "Nice Ass",
+      "english": "Golly! You must be feeling better already!",
+      "current_nl": "Amai! Jij moet je bast al beter voelen!",
+      "proposed_nl": "Amai! Jij moet je best al beter voelen!"
+    },
+    {
+      "id": "SANITY-9",
+      "rationale": "Project-wide rule: standalone 'bast' as intensifier → 'best'",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BattleHard_localization",
+      "cell": "J7",
+      "speaker": "Nice Ass",
+      "english": "Golly, you're about to get pounded, in less than two minutes!",
+      "current_nl": "Oesje, je gaat bast in de pan geslagen worden, in minder dan twee minuten!",
+      "proposed_nl": "Oesje, je gaat best in de pan geslagen worden, in minder dan twee minuten!"
+    }
+  ]
+}
