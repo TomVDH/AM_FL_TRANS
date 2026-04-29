@@ -1,0 +1,132 @@
+{
+  "character": "(quote-bug sweep)",
+  "rules_applied": [
+    "A: Strip stray wrapping double-quotes — entire NL string opened-and-closed with \" when EN had no quotes (translation pipeline artifact).",
+    "B: Repair unbalanced quotes — orphan opening or closing \" with no matching pair."
+  ],
+  "generated": "2026-04-29",
+  "decision_status": "11 cells. 9 wrap-strips + 2 unbalanced repairs. Stylistic inline emphasis-quotes (e.g. \"Revolutie\" sarcasm, \"Poepegaatje\" bar name) explicitly LEFT INTACT.",
+  "corrections": [
+    {
+      "id": "QUOTE-1",
+      "rationale": "Strip stray wrapping double-quotes (entire string was wrapped, EN had no quotes).",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J67",
+      "speaker": "98",
+      "english": "In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:",
+      "current_nl": "\"In het Oude Testament slaat een mens genaamd Balaam op zijn ezel wanneer plots:\"",
+      "proposed_nl": "In het Oude Testament slaat een mens genaamd Balaam op zijn ezel wanneer plots:"
+    },
+    {
+      "id": "QUOTE-2",
+      "rationale": "Strip stray wrapping double-quotes (entire string was wrapped, EN had no quotes).",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J57",
+      "speaker": "Bad Ass",
+      "english": "...Cole Butte.",
+      "current_nl": "\"...Piet Vanscheetvelde.\"",
+      "proposed_nl": "...Piet Vanscheetvelde."
+    },
+    {
+      "id": "QUOTE-3",
+      "rationale": "Stray opening double-quote at sentence start; corrupted from \"Is\" → '\"s'. Smart's ABN voice → Is.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding1_localization",
+      "cell": "J9",
+      "speaker": "Smart Ass",
+      "english": "Is it Monday? Are we starting Ass of the Week?!",
+      "current_nl": "\"s 't maandag? Beginnen we aan Ezel van de Ezel?!",
+      "proposed_nl": "Is 't maandag? Beginnen we aan Ezel van de Ezel?!"
+    },
+    {
+      "id": "QUOTE-4",
+      "rationale": "Strip stray wrapping double-quotes (entire string was wrapped, EN had no quotes).",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding1_localization",
+      "cell": "J30",
+      "speaker": "Kick Ass",
+      "english": "@#$%&!—Smart Ass, what's the PLAN?!",
+      "current_nl": "\"@#$%&!—Slimme Ezel, wa is het PLAN?!\"",
+      "proposed_nl": "@#$%&!—Slimme Ezel, wa is het PLAN?!"
+    },
+    {
+      "id": "QUOTE-5",
+      "rationale": "Strip stray wrapping double-quotes (entire string was wrapped, EN had no quotes).",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding2_localization",
+      "cell": "J10",
+      "speaker": "Kick Ass",
+      "english": "@#$%&! What do I DO?",
+      "current_nl": "\"@#$%&! Wat moet ik DOEN?!\"",
+      "proposed_nl": "@#$%&! Wat moet ik DOEN?!"
+    },
+    {
+      "id": "QUOTE-6",
+      "rationale": "Strip stray wrapping double-quotes (entire string was wrapped, EN had no quotes).",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Slaughtering_localization",
+      "cell": "J6",
+      "speaker": "Smart Ass",
+      "english": "First, Kick Ass will run...",
+      "current_nl": "\"Eerst gaat Stamp Ezel crossen...\"",
+      "proposed_nl": "Eerst gaat Stamp Ezel crossen..."
+    },
+    {
+      "id": "QUOTE-7",
+      "rationale": "Strip stray wrapping double-quotes (entire string was wrapped, EN had no quotes).",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J4",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "\"*boehoehoe*\"",
+      "proposed_nl": "*boehoehoe*"
+    },
+    {
+      "id": "QUOTE-8",
+      "rationale": "Strip orphan closing double-quote at end of cell (no opening counterpart).",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J40",
+      "speaker": "Sturdy Ass",
+      "english": "I thought you were playing ROCKS with your UNCLE!",
+      "current_nl": "Ik dacht dat je STENEN-SPEL aan 't spelen was met je NONKEL!\"",
+      "proposed_nl": "Ik dacht dat je STENEN-SPEL aan 't spelen was met je NONKEL!"
+    },
+    {
+      "id": "QUOTE-9",
+      "rationale": "Strip stray wrapping double-quotes (entire string was wrapped, EN had no quotes).",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J41",
+      "speaker": "{$NewName}",
+      "english": "Don't worry Comrade Mother, this IS Uncle Bad—Cole.",
+      "current_nl": "\"Geen zorgen Kameraad Moeder, dit IS Nonkel Stoere—Piet.\"",
+      "proposed_nl": "Geen zorgen Kameraad Moeder, dit IS Nonkel Stoere—Piet."
+    },
+    {
+      "id": "QUOTE-10",
+      "rationale": "Strip stray wrapping double-quotes (entire string was wrapped, EN had no quotes).",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J48",
+      "speaker": "Sturdy Ass",
+      "english": "And why do you keep calling that thing Cole?!",
+      "current_nl": "\"En waarom blijf je dat ding Piet noemen?!\"",
+      "proposed_nl": "En waarom blijf je dat ding Piet noemen?!"
+    },
+    {
+      "id": "QUOTE-11",
+      "rationale": "Strip stray wrapping double-quotes (entire string was wrapped, EN had no quotes).",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J5",
+      "speaker": "???",
+      "english": "*COUGH*",
+      "current_nl": "\"*KUCH*\"",
+      "proposed_nl": "*KUCH*"
+    }
+  ]
+}
