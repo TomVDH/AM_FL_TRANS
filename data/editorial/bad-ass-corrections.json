@@ -1,0 +1,106 @@
+{
+  "character": "Bad Ass",
+  "rules_applied": [
+    "Q1: ge/gij + u/uw paradigm (heavy Flemish / tussentaal). je → ge, je kan → ge kunt (Flemish form), je bent → ge zijt (Flemish form). 2 je-family cells flipped.",
+    "Q2: jullie RETAINED — Bad Ass keeps jullie (does NOT switch to gulle; Tom directive — gulle is Thirsty-specific Flemish marker).",
+    "Q3: 'k KEPT as heavy-Flemish exception (×17, heaviest 'k user in cast per codex). 3 sentence-start cap typos fixed: R30 'k had → 'k Had; R32 'k geef → 'k Geef; R32 'k ben → 'k Ben.",
+    "Q4: godverdomme RETAINED — Bad Ass uses standard godverdomme (does NOT switch to godverdoemme; Tom directive — godverdoemme is Thirsty-specific).",
+    "Q5: Stoere → Stevige Ezel ×2 (cross-character canonical fix; Stoere Ezel is Bad's own name, Sturdy's canonical is Stevige Ezel).",
+    "Q6: da → dat ×2.",
+    "Q7: Verbal signatures kept (Laat mij gerust ×3, 'k Veronderstel ×2, Eindelijk ×2).",
+    "Q8: ... at E3_BadCave R14 left as cross-language sfx.",
+    "Note: 1 nie discovered at R55 ('k wil nie herinnerd) — KEPT as heavy-Flemish character signature (parallel to Sad/Nice/Thirsty)."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "All Q-rules locked by Tom 2026-04-28. 8 cells.",
+  "corrections": [
+    {
+      "id": "BAD-Q1-1",
+      "rationale": "Q1: je kan → ge kunt (Flemish kunt form for ge-paradigm); jullie kept (Q2)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J94",
+      "speaker": "Bad Ass",
+      "english": "But you can't just demand your fucking jobs back.",
+      "current_nl": "Maar je kan toch verdomme toch niet zomaar jullie jobs terug eisen.",
+      "proposed_nl": "Maar ge kunt toch verdomme toch niet zomaar jullie jobs terug eisen."
+    },
+    {
+      "id": "BAD-Q1-2",
+      "rationale": "Q1: dat je weg bent → dat ge weg zijt (subordinate clause; je bent → ge zijt Flemish form)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J51",
+      "speaker": "Bad Ass",
+      "english": "Get out of my face.",
+      "current_nl": "Maak dat je weg bent.",
+      "proposed_nl": "Maak dat ge weg zijt."
+    },
+    {
+      "id": "BAD-Q3-1",
+      "rationale": "Q3: 'k cap typo fix — sentence-start 'k requires next word capitalized. 'k had → 'k Had",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J30",
+      "speaker": "Bad Ass",
+      "english": "I detested my father. I wish he had abandoned me instead of mum.",
+      "current_nl": "'k had een afschuw van mijn vader. 'k Wou dat hij mij in de steek had gelaten in plaats van Moeder.",
+      "proposed_nl": "'k Had een afschuw van mijn vader. 'k Wou dat hij mij in de steek had gelaten in plaats van Moeder."
+    },
+    {
+      "id": "BAD-Q3-2",
+      "rationale": "Q3: 'k cap typo fixes ×2 — 'k geef → 'k Geef; 'k ben → 'k Ben (sentence-start cap rule)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J32",
+      "speaker": "Bad Ass",
+      "english": "I don't blame her. I'm happy she got out of this backward village.",
+      "current_nl": "'k geef haar geen ongelijk. 'k ben blij dat ze uit dit achterlijk gat van een dorp is geraakt.",
+      "proposed_nl": "'k Geef haar geen ongelijk. 'k Ben blij dat ze uit dit achterlijk gat van een dorp is geraakt."
+    },
+    {
+      "id": "BAD-Q5-1",
+      "rationale": "Q5: Stoere → Stevige Ezel (cross-character name fix — Stoere Ezel is Bad's own name; Sturdy canonical is Stevige Ezel)",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J59",
+      "speaker": "Bad Ass",
+      "english": "I'll find Sad Ass and Sturdy Ass and take them to the river.",
+      "current_nl": "Ik zal Triestige Ezel en Stoere naar de rivier brengen.",
+      "proposed_nl": "Ik zal Triestige Ezel en Stevige Ezel naar de rivier brengen."
+    },
+    {
+      "id": "BAD-Q5-2",
+      "rationale": "Q5: Stoere Ezel → Stevige Ezel (cross-character name fix)",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BadAssRescue_localization",
+      "cell": "J8",
+      "speaker": "Bad Ass",
+      "english": "I'll find Sad Ass and Sturdy Ass and take them to the river.",
+      "current_nl": "Ik zoek Triestige Ezel en Stoere Ezel en breng ze naar de rivier.",
+      "proposed_nl": "Ik zoek Triestige Ezel en Stevige Ezel en breng ze naar de rivier."
+    },
+    {
+      "id": "BAD-Q6-1",
+      "rationale": "Q6: da → dat (relative clause)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J37",
+      "speaker": "Bad Ass",
+      "english": "A place where there are no bosses or leaders.",
+      "current_nl": "Een plek waar da er geen bazen of leiders zijn.",
+      "proposed_nl": "Een plek waar dat er geen bazen of leiders zijn."
+    },
+    {
+      "id": "BAD-Q6-2",
+      "rationale": "Q6: da → dat (relative clause)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J45",
+      "speaker": "Bad Ass",
+      "english": "Rampant religious dogmas.",
+      "current_nl": "Religieus dogma da hier welig tiert.",
+      "proposed_nl": "Religieus dogma dat hier welig tiert."
+    }
+  ]
+}

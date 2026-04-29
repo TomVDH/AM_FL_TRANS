@@ -7,22 +7,81 @@
       "name": "Bad Ass",
       "english": "Bad Ass",
       "dutch": "Stoere Ezel",
+      "dutchShort": "Stoere",
       "category": "CHARACTER",
       "nicknames": [
-        "Bad"
+        "Bad",
+        "Stoere"
       ],
-      "bio": "A radical that wants to be left alone\n\nPessimistic Edgy Philosophical and Political\n\nIs actually a Human who was turned into a donkey by the Gods by accident. (see Cole Butte below)",
+      "bio": "A radical that wants to be left alone. Pessimistic, edgy, philosophical and political. Is actually a Human (Cole Butte) who was turned into a donkey by the Gods by accident.",
       "gender": "male",
       "flemishDensity": "heavy",
       "register": "tussentaal",
       "pronounForm": "ge/gij",
-      "contractions": "none",
-      "verbalTics": "Laat mij gerust (recurring dismissal), 'k Veronderstel (grudging concession ×2), godverdomme (profanity peak), Eindelijk! (payoff/release ×2 in E6)",
+      "verbalTics": "Laat mij gerust (recurring dismissal ×3), 'k Veronderstel (grudging concession ×2), godverdomme (profanity peak ×3 + godverdomse adj ×1), Eindelijk! (payoff/release ×2 in E6)",
       "dynamics": "cynical, philosophical, intellectual, isolated",
-      "relationships": "mother left young; despised capitalist father; dreams of escaping to Mechalen; real name Piet Vanscheetvelde; reluctant mentor to the Foal (E6)",
-      "note": "''k:17 — heaviest 'k user in cast. godver:4. liggen doen, zever, nen, da conjunction — densest Flemish in cast.",
+      "relationships": "former human (Cole Butte); estranged from human family; reluctant mentor to the Foal in E3/E6 BadCave",
       "verified": true,
-      "dutchShort": "Stoere"
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'k",
+          "scope": "free — heaviest 'k user in cast (×17). Cap rule: next word capitalized when 'k starts sentence",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'t",
+          "scope": "free, paired with het",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'n",
+          "scope": "free (project-wide rule)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [
+        "nie",
+        "godverdomme",
+        "godverdomse",
+        "verdomme",
+        "Laat mij gerust",
+        "Eindelijk"
+      ],
+      "dialectalMarkersForbidden": [
+        "godverdoemme",
+        "gulle"
+      ],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "nie + niet both allowed — Bad Ass corpus has minimal negation overall (1 nie at R55, no niet); nie kept as heavy-Flemish character signature when it appears (parallel to Sad/Nice/Thirsty)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E3_BadCave_localization J14",
+          "note": "bulk translate will not alter — '...' ellipsis sfx (cross-language)"
+        }
+      ],
+      "editorialPass": {
+        "passName": "bad-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 8,
+        "correctionsFile": "data/editorial/bad-ass-corrections.json",
+        "rulesLocked": "Q1: ge/gij + u/uw paradigm; je → ge, je kan → ge kunt, je bent → ge zijt (2 cells flipped). Q2: jullie RETAINED (NOT gulle — gulle is Thirsty-specific). Q3: 'k KEPT as heavy-Flemish exception (heaviest in cast); 3 sentence-start cap typos fixed (R30, R32×2). Q4: godverdomme RETAINED (NOT godverdoemme — godverdoemme is Thirsty-specific). Q5: Stoere → Stevige Ezel ×2 (cross-character canonical fix; Sturdy's name disambiguation from Bad's own 'Stoere Ezel'). Q6: da → dat ×2. Q7: signatures kept (Laat mij gerust, 'k Veronderstel, Eindelijk). Q8: '...' sfx kept."
+      }
     },
     {
       "name": "Big Ass",
@@ -1099,9 +1158,9 @@
     }
   ],
   "lastEditorialPass": {
-    "character": "Thirsty Ass",
-    "passName": "thirsty-ass-baseline",
+    "character": "Bad Ass",
+    "passName": "bad-ass-baseline",
     "lockedOn": "2026-04-28",
-    "correctionsApplied": 18
+    "correctionsApplied": 8
   }
 }
