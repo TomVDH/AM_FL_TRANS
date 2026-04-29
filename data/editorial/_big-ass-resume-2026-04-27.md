@@ -1,8 +1,11 @@
 # Big Ass editorial pass — resume state (self-contained)
 
-**Date:** 2026-04-27
+**Date:** 2026-04-27 (last update: 2026-04-28)
 **Branch:** `am-analysis`
-**Read this file end-to-end before doing anything else.** This is the single source of truth for resuming the editorial pass.
+
+**🚨 BEFORE THIS FILE: read [`_PROJECT_MISSION.md`](_PROJECT_MISSION.md)** — project-level mission, operational rules, and editorial scope across all 14 characters. **Critical context.** This per-character file assumes you've internalized that one.
+
+**Then read this file end-to-end** for the Big Ass pass live state.
 
 ---
 
@@ -492,7 +495,8 @@ print("nie (not niet):", sum(len(re.findall(r"\bnie\b(?!t)", e['nl'] or '')) for
 
 If you're a fresh Claude session reading this for the first time:
 
-1. You're in a Next.js translation-helper project. Don't touch `src/` for editorial work. The editorial pass operates on `excels/` directly via Python scripts.
+0. **READ [`data/editorial/_PROJECT_MISSION.md`](_PROJECT_MISSION.md) FIRST.** That's project-level (mission, operational rules, scope across all 14 characters). This file is Big-Ass-specific.
+1. You're in a Next.js translation-helper project. Don't touch `src/` for editorial work *unless* doing the AI-suggest route extension (Part 13.4). Otherwise the editorial pass operates on `excels/` directly via Python scripts.
 2. `excels/` are the source of truth. Every other dump (CSV, JSONL, JSON-per-episode) is derived and may be stale.
 3. The user (Tom) prefers data over interpretation. Don't editorialize. Don't summarize without being asked. Present counts, lines, options. Let him call dispositions.
 4. The user (Tom) likes simple, guided questions — one decision at a time, with the relevant evidence inline. Don't dump lots of choices at once.
