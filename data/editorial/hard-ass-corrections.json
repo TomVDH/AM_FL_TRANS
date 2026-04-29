@@ -1,0 +1,214 @@
+{
+  "character": "Hard Ass",
+  "rules_applied": [
+    "Q1: ge/gij + u/uw paradigm (Antwerps burly stoic). je/jij/jou/jouw → ge/gij/u/uw. Verb conjugations: V2 inversion adds -t for ge; je bent → gij zijt (Flemish form). Reflexive 'Bereid je voor' → 'Bereid u voor'. Idiom 'in je eentje' → 'in uw eentje'.",
+    "Q2: niet only (corpus clean — 0 nie, 23 niet).",
+    "Q3: 'k forbidden (0 hits, clean); 't free (3 hits, no normalization).",
+    "Q4: 'Let's go' R107 — STILL OPEN, not in this batch.",
+    "Q5: Signature phrases kept (beerput motto ×2, 'Geen mietje zijn' ×3, 'Dat meurt hier nog al, man').",
+    "Q6: Kameraad ×8 all already capitalized — no action.",
+    "Q7: 9 sfx untranslated lines (..., Hmm.) + 1 codex-protected 'Let's go' R21 — kept as-is."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "Q1 locked ge/gij+u/uw, Q2-Q3 default. Q4 R107 deferred. 18 cells.",
+  "corrections": [
+    {
+      "id": "HARD-Q1-1",
+      "rationale": "Q1: jou → u (object after preposition 'voor')",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Hard_localization",
+      "cell": "J15",
+      "speaker": "Hard Ass",
+      "english": "It doesn't look like you're doing so well out here, Smart.",
+      "current_nl": "Het ziet er thans ook niet goed uit voor jou , Slimme.",
+      "proposed_nl": "Het ziet er thans ook niet goed uit voor u , Slimme."
+    },
+    {
+      "id": "HARD-Q1-2",
+      "rationale": "Q1: je → ge (subject in subordinate clause; opgeeft keeps -t)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J106",
+      "speaker": "Hard Ass",
+      "english": "\"You only hit rock bottom when you quit.\"",
+      "current_nl": "Pas als je 't opgeeft, is 't gedaan.",
+      "proposed_nl": "Pas als ge 't opgeeft, is 't gedaan."
+    },
+    {
+      "id": "HARD-Q1-3",
+      "rationale": "Q1: ben JIJ → zijt GIJ (V2 inversion + Flemish ben→zijt; preserve emphatic uppercase)",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J25",
+      "speaker": "Hard Ass",
+      "english": "Stop. Who made YOU the leader?",
+      "current_nl": "Stop. Sinds wanneer ben JIJ de baas?",
+      "proposed_nl": "Stop. Sinds wanneer zijt GIJ de baas?"
+    },
+    {
+      "id": "HARD-Q1-4",
+      "rationale": "Q1: jou → u (object after preposition 'van')",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J28",
+      "speaker": "Hard Ass",
+      "english": "I do not take orders from you.",
+      "current_nl": "Ik pak van jou geen bevelen aan.",
+      "proposed_nl": "Ik pak van u geen bevelen aan."
+    },
+    {
+      "id": "HARD-Q1-5",
+      "rationale": "Q1: Je → Ge (sentence-start subject; moet keeps form)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J8",
+      "speaker": "Hard Ass",
+      "english": "Lie down. We need your strength.",
+      "current_nl": "Ga rusten. Je moet in vorm blijven.",
+      "proposed_nl": "Ga rusten. Ge moet in vorm blijven."
+    },
+    {
+      "id": "HARD-Q1-6",
+      "rationale": "Q1: Je → Ge (subject); jou → u (object after 'met')",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_Exit_localization",
+      "cell": "J6",
+      "speaker": "Hard Ass",
+      "english": "You're being emotional. The Humans will toss you aside the first chance they get.",
+      "current_nl": "Je overdrijft. De Mensen maken korte metten met jou vanaf de eerste keer ze de kans hebben.",
+      "proposed_nl": "Ge overdrijft. De Mensen maken korte metten met u vanaf de eerste keer ze de kans hebben."
+    },
+    {
+      "id": "HARD-Q1-7",
+      "rationale": "Q1: Je → Ge (subject; kunt keeps form)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J50",
+      "speaker": "Hard Ass",
+      "english": "You can't keep running from the truth.",
+      "current_nl": "Je kunt niet blijven wegrennen voor de waarheid.",
+      "proposed_nl": "Ge kunt niet blijven wegrennen voor de waarheid."
+    },
+    {
+      "id": "HARD-Q1-8",
+      "rationale": "Q1: Je bent → Gij zijt (Flemish form)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J53",
+      "speaker": "Hard Ass",
+      "english": "You're miserable.",
+      "current_nl": "Je bent ellendig.",
+      "proposed_nl": "Gij zijt ellendig."
+    },
+    {
+      "id": "HARD-Q1-9",
+      "rationale": "Q1: V2 inversion 'win je' → 'wint ge' (-t added); idiom 'in je eentje' → 'in uw eentje'",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J55",
+      "speaker": "Hard Ass",
+      "english": "Revolutions can't be won alone.",
+      "current_nl": "Revoluties win je niet in je eentje.",
+      "proposed_nl": "Revoluties wint ge niet in uw eentje."
+    },
+    {
+      "id": "HARD-Q1-10",
+      "rationale": "Q1: Je hebt → Ge hebt (subject; hebt keeps -t)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J56",
+      "speaker": "Hard Ass",
+      "english": "You underestimated our friends and let the Herd split apart.",
+      "current_nl": "Je hebt onze vrienden onderschat en de Kudde laten splijten.",
+      "proposed_nl": "Ge hebt onze vrienden onderschat en de Kudde laten splijten."
+    },
+    {
+      "id": "HARD-Q1-11",
+      "rationale": "Q1: Je hebt → Ge hebt",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J58",
+      "speaker": "Hard Ass",
+      "english": "You never gave them a chance.",
+      "current_nl": "Je hebt ze nooit een kans gegeven.",
+      "proposed_nl": "Ge hebt ze nooit een kans gegeven."
+    },
+    {
+      "id": "HARD-Q1-12",
+      "rationale": "Q1: jij → gij (emphatic subject in subordinate clause; kapotmaakt keeps -t)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J59",
+      "speaker": "Hard Ass",
+      "english": "I'm not going to sit back and watch you destroy us.",
+      "current_nl": "Ik ga niet staan gapen terwijl jij ons kapotmaakt.",
+      "proposed_nl": "Ik ga niet staan gapen terwijl gij ons kapotmaakt."
+    },
+    {
+      "id": "HARD-Q1-13",
+      "rationale": "Q1: je → ge (subject in subordinate clause; vindt keeps -t)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J60",
+      "speaker": "Hard Ass",
+      "english": "I'm taking back control now whether you like it or not.",
+      "current_nl": "Ik neem het nu over, of dat je 't nu leuk vindt of niet.",
+      "proposed_nl": "Ik neem het nu over, of dat ge 't nu leuk vindt of niet."
+    },
+    {
+      "id": "HARD-Q1-14",
+      "rationale": "Q1: Je bent → Gij zijt (Flemish form)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BattleHard_localization",
+      "cell": "J3",
+      "speaker": "Hard Ass",
+      "english": "You are weak.",
+      "current_nl": "Je bent zwak.",
+      "proposed_nl": "Gij zijt zwak."
+    },
+    {
+      "id": "HARD-Q1-15",
+      "rationale": "Q1: Je → Ge (subject; verslaat keeps -t)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BattleHard_localization",
+      "cell": "J4",
+      "speaker": "Hard Ass",
+      "english": "You cannot beat me one-on-one.",
+      "current_nl": "Je verslaat me niet, man tegen man.",
+      "proposed_nl": "Ge verslaat me niet, man tegen man."
+    },
+    {
+      "id": "HARD-Q1-16",
+      "rationale": "Q1: Bereid je voor → Bereid u voor (reflexive imperative)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BattleHard_localization",
+      "cell": "J6",
+      "speaker": "Hard Ass",
+      "english": "Prepare to become obsolete.",
+      "current_nl": "Bereid je voor om overbodig te worden.",
+      "proposed_nl": "Bereid u voor om overbodig te worden."
+    },
+    {
+      "id": "HARD-Q1-17",
+      "rationale": "Q1: V2 inversion 'win je' → 'wint ge' (-t added); idiom 'in je eentje' → 'in uw eentje' (duplicate of R55)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J17",
+      "speaker": "Hard Ass",
+      "english": "Revolutions can't be won alone.",
+      "current_nl": "Revoluties win je niet in je eentje.",
+      "proposed_nl": "Revoluties wint ge niet in uw eentje."
+    },
+    {
+      "id": "HARD-Q1-18",
+      "rationale": "Q1: Je → Ge (subject; moet keeps form)",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J264",
+      "speaker": "Hard Ass",
+      "english": "You need to hear what Slow Ass has to say.",
+      "current_nl": "Je moet horen wat Slome Ezel te zeggen heeft.",
+      "proposed_nl": "Ge moet horen wat Slome Ezel te zeggen heeft."
+    }
+  ]
+}

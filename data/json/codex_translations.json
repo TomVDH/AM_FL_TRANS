@@ -903,28 +903,109 @@
     },
     {
       "name": "Hard Ass",
-      "description": "Character",
       "english": "Hard Ass",
       "dutch": "Bikkeharde Ezel",
+      "dutchShort": "Bikkeharde",
       "category": "CHARACTER",
       "nicknames": [
         "Hard",
-        "Uncle Hard"
+        "Bikkeharde"
       ],
-      "bio": "Strong, stoic, and blunt. Willing to make sacrifices to protect the herd.",
+      "bio": "Strong, stoic, and blunt. Willing to make sacrifices to protect the herd. Coded as Antwerps burly — physically intimidating, well-intended.",
       "gender": "male",
-      "dialogueStyle": "",
-      "dutchDialogueStyle": "",
-      "flemishDensity": "light",
-      "register": "tussentaal",
+      "flemishDensity": "medium",
+      "register": "tussentaal-Antwerps",
       "pronounForm": "ge/gij",
-      "contractions": "none",
-      "verbalTics": "Kameraad (constant address ×7+), \"Om uit de beerput te klimmen, moet er stront aan de hoeven hangen\" (motto ×2), \"Geen mietje zijn\" (×2), ... (contemplative pauses throughout)",
-      "dynamics": "stoic, blunt, protective, sacrificial",
-      "relationships": "protector of the herd",
-      "note": "kameraad:7, motto ×2 (beerput/stront), \"Geen mietje zijn\" ×2, \"Let's go\" kept verbatim in Dutch; \"Dat meurt hier nog al, man\" — strongest Flemish moment",
+      "verbalTics": "Kameraad (constant address ×8, capitalized), \"Om uit de beerput te klimmen, moet er stront aan de hoeven hangen\" (motto ×2), \"Geen mietje zijn\" / \"GEEN MIETJE ZIJN!\" (signature ×3), \"Dat meurt hier nog al, man\" (strongest Flemish moment), contemplative ... pauses throughout",
+      "dynamics": "stoic, blunt, protective, sacrificial; Antwerps-coded burly intimidation",
+      "relationships": "herd protector; willing to make sacrifices",
       "verified": true,
-      "dutchShort": "Bikkeharde"
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free, paired with het — Q3 lock (both forms accepted)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — never nie",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E1_TheProtest_localization J107",
+          "note": "bulk translate will not alter — 'Let's go' translated as 'Kom' (scene-specific deviation; Tom-locked 2026-04-28)"
+        },
+        {
+          "cell": "E2_World_B2_localization J21",
+          "note": "bulk translate will not alter — 'Let's go' kept verbatim per codex catchphrase rule"
+        },
+        {
+          "cell": "E2_TheatreInt_localization J2",
+          "note": "bulk translate will not alter — 'Dat meurt hier nog al, man' signature Flemish moment"
+        },
+        {
+          "cell": "E10_Hard_localization J6",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E1_TheProtest_localization J102",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E1_TheProtest_localization J140",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E2_World_B1_localization J33",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E2_ChildsHouse_localization J17",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E2_World_B2_localization J19",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E2_ChurchInt_localization J2",
+          "note": "bulk translate will not alter — 'Hmm.' (cross-language)"
+        },
+        {
+          "cell": "E2_ButtesHouse_localization J19",
+          "note": "bulk translate will not alter — sound effect '...' (cross-language)"
+        },
+        {
+          "cell": "E2_ButtesHouse_localization J20",
+          "note": "bulk translate will not alter — beerput motto in EN context"
+        }
+      ],
+      "editorialPass": {
+        "passName": "hard-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 18,
+        "correctionsFile": "data/editorial/hard-ass-corrections.json",
+        "rulesLocked": "Q1: ge/gij + u/uw paradigm (Antwerps burly stoic). je → ge, jij → gij (emphatic), jou → u (object), jouw → uw (possessive). V2 inversion adds -t for ge (win je → wint ge); je bent → gij zijt (Flemish form); reflexive 'Bereid je voor' → 'Bereid u voor'; idiom 'in je eentje' → 'in uw eentje'. Q2: niet only (corpus clean). Q3: 'k forbidden / 't free. Q4: 'Let's go' R107 → 'Kom' kept (scene-specific); R21 → 'Let's go' kept verbatim. Q5: signature phrases (beerput motto, Geen mietje zijn, Dat meurt hier nog al man) kept. Q6: Kameraad ×8 already capitalized. Q7: 9 sfx + 'Let's go' R21 kept as-is."
+      }
     },
     {
       "name": "Hasty Ass",
@@ -3202,5 +3283,11 @@
       "dialogueStyle": "",
       "contractions": "none"
     }
-  ]
+  ],
+  "lastEditorialPass": {
+    "character": "Hard Ass",
+    "passName": "hard-ass-baseline",
+    "lockedOn": "2026-04-28",
+    "correctionsApplied": 18
+  }
 }
