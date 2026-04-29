@@ -1,0 +1,82 @@
+{
+  "character": "Old Ass",
+  "rules_applied": [
+    "Q1: ge/gij + u/uw paradigm (sage formal oratory). Flip 5 je-family cells to ge-family. je → ge, je bent → ge zijt (Flemish form for ge-paradigm).",
+    "Q2: No negation hits — no action.",
+    "Q3: 'k clean (0); 't free (3, no action); no contractions to normalize.",
+    "Q4: Oude Zak → Oude Ezel (1 cell, self-reference at E1_Stable2F R25; per Big Ass Q7 lock).",
+    "Q5: jullie RETAINED (×2, afterlife scenes; Tom directive — same as Bad Ass rule).",
+    "Q6: Verbal signatures kept — Kameraad ×7 (all capitalized), EZEL MACHT ×3 (catchphrase), 'Ik wou dat' ×2 (wistful regret), 'Jonge Kameraad' (specific address), polsen + klapke (Flemish in formal mode).",
+    "Q7: 2 '...' sfx in dying scene (R28, R35) kept as cross-language punctuation per codex 'dramatic ellipses throughout dying scene'."
+  ],
+  "generated": "2026-04-28",
+  "decision_status": "All Q-rules locked by Tom 2026-04-28. 6 cells.",
+  "corrections": [
+    {
+      "id": "OLD-Q1-1",
+      "rationale": "Q1: V2 inversion 'hoor je' → 'hoort ge' (-t added for ge-paradigm)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable1F_localization",
+      "cell": "J3",
+      "speaker": "Old Ass",
+      "english": "...  ...  Trusty Ass? Comrade, are you listening?",
+      "current_nl": "Hè Trouwe? Kameraad, hoor je me?",
+      "proposed_nl": "Hè Trouwe? Kameraad, hoort ge me?"
+    },
+    {
+      "id": "OLD-Q1-2",
+      "rationale": "Q1: 'wanneer je klaar bent' → 'wanneer ge klaar zijt' (subordinate clause; je bent → ge zijt)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable1F_localization",
+      "cell": "J13",
+      "speaker": "Old Ass",
+      "english": "Come find me when you're done.",
+      "current_nl": "Kom terug wanneer je klaar bent.",
+      "proposed_nl": "Kom terug wanneer ge klaar zijt."
+    },
+    {
+      "id": "OLD-Q1-3",
+      "rationale": "Q1: 'Ben je daar' → 'Zijt gij daar' (V2 inversion + ben→zijt for ge/gij paradigm)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J37",
+      "speaker": "Old Ass",
+      "english": "Trusty? Are you there?",
+      "current_nl": "Trouwe? Ben je daar?",
+      "proposed_nl": "Trouwe? Zijt gij daar?"
+    },
+    {
+      "id": "OLD-Q1-4",
+      "rationale": "Q1: 'kan je' → 'kunt ge' (V2 inversion + Flemish kunt form for ge-paradigm)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J99",
+      "speaker": "Old Ass",
+      "english": "Sick Ass, maybe you can help raise his Morale?",
+      "current_nl": "Snotezel, misschien kan je hem wat moed inspreken?",
+      "proposed_nl": "Snotezel, misschien kunt ge hem wat moed inspreken?"
+    },
+    {
+      "id": "OLD-Q1-5",
+      "rationale": "Q1: 'Je kan' → 'Ge kunt' (subject + Flemish kunt form for ge-paradigm)",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J100",
+      "speaker": "Old Ass",
+      "english": "DJ Dope Ass is probably preparing his instruments down by the Pond. You can't miss him!",
+      "current_nl": "DJ Lijpe Ezel is waarschijnlijk bezig met zijn gerief klaar te zetten bij de Vijver. Je kan hem niet missen!",
+      "proposed_nl": "DJ Lijpe Ezel is waarschijnlijk bezig met zijn gerief klaar te zetten bij de Vijver. Ge kunt hem niet missen!"
+    },
+    {
+      "id": "OLD-Q4-1",
+      "rationale": "Q4: Oude Zak → Oude Ezel (self-reference; per Big Ass Q7 cross-character lock — Oude Ezel is canonical)",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J25",
+      "speaker": "Old Ass",
+      "english": "But they underestimated this old Ass.",
+      "current_nl": "Maar ze hebben deze Oude Zak onderschat...",
+      "proposed_nl": "Maar ze hebben deze Oude Ezel onderschat..."
+    }
+  ]
+}

@@ -444,22 +444,78 @@
       "name": "Old Ass",
       "english": "Old Ass",
       "dutch": "Oude Ezel",
+      "dutchShort": "Oude",
       "category": "CHARACTER",
       "nicknames": [
-        "Old"
+        "Old",
+        "Oude"
       ],
-      "bio": "Classic Marxist/Leninist leader. Inspires the heard in his lofty speeches.",
+      "bio": "Classic Marxist/Leninist leader. Inspires the Herd in his lofty speeches. Dies early in the story; reappears in afterlife/flashback (E4_AstralPlaneMain).",
       "gender": "male",
       "flemishDensity": "light",
       "register": "tussentaal",
-      "pronounForm": "mixed",
-      "contractions": "none",
-      "verbalTics": "Kameraad (×7+), EZEL MACHT (ASS POWER, ×2), \"Ik wou dat\" (wistful regret ×2), ... (dramatic ellipses throughout dying scene), \"Jonge Kameraad\" (specific address to Trusty/Foal)",
+      "pronounForm": "ge/gij",
+      "verbalTics": "Kameraad ×7 (all capitalized), 'Jonge Kameraad' (specific address to Trusty/Foal), EZEL MACHT (catchphrase ×3), 'Ik wou dat' (wistful regret ×2), polsen + klapke (Flemish in formal mode), '...' dramatic ellipses throughout dying scene",
       "dynamics": "sage leader, formal oratory, ideological speeches",
-      "relationships": "leader of the herd, pair-bonded with Sturdy Ass",
-      "note": "kameraad:7; polsen + klapke (Flemish markers); \"Ik wou dat\" as emotional signature; EZEL MACHT as catchphrase; niet throughout (no nie)",
+      "relationships": "founder/elder of the Herd; mentor to Trusty Ass; passes leadership baton at death; reappears as guide in afterlife",
       "verified": true,
-      "dutchShort": "Oude"
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free, paired with het",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'n",
+          "scope": "free (project-wide rule)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [
+        "polsen",
+        "klapke",
+        "EZEL MACHT",
+        "Jonge Kameraad",
+        "Ik wou dat"
+      ],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — never nie (corpus had 0/0; no negation in his lines)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E1_Stable2F_localization J28",
+          "note": "bulk translate will not alter — '...' dramatic ellipsis in dying scene"
+        },
+        {
+          "cell": "E1_Stable2F_localization J35",
+          "note": "bulk translate will not alter — '...' dramatic ellipsis in dying scene"
+        }
+      ],
+      "editorialPass": {
+        "passName": "old-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 6,
+        "correctionsFile": "data/editorial/old-ass-corrections.json",
+        "rulesLocked": "Q1: ge/gij + u/uw paradigm (sage formal oratory, Tom directive). 5 je-family cells flipped — je → ge, je bent → ge zijt, kan je → kunt ge, hoor je → hoort ge, ben je → zijt gij. Q2: no negation in corpus. Q3: 'k clean, 't free. Q4: Oude Zak self-ref → Oude Ezel (per Big Ass Q7 cross-character lock). Q5: jullie RETAINED (×2, afterlife scenes). Q6: signatures kept (Kameraad ×7 caps, EZEL MACHT ×3, Ik wou dat, Jonge Kameraad, polsen+klapke). Q7: 2 dramatic ellipsis sfx kept."
+      }
     },
     {
       "name": "Sad Ass",
@@ -1158,9 +1214,9 @@
     }
   ],
   "lastEditorialPass": {
-    "character": "Bad Ass",
-    "passName": "bad-ass-baseline",
+    "character": "Old Ass",
+    "passName": "old-ass-baseline",
     "lockedOn": "2026-04-28",
-    "correctionsApplied": 8
+    "correctionsApplied": 6
   }
 }
