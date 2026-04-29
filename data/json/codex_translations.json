@@ -1960,23 +1960,75 @@
     },
     {
       "name": "Ringmaster Rico",
-      "description": "Character",
       "english": "Ringmaster Rico",
       "dutch": "Circusdirecteur Baptiste",
-      "category": "CHARACTER",
-      "nicknames": [
-        "Rico",
-        "Baptiste",
-        "Circusdirecteur"
-      ],
-      "bio": "Circus director. EN 'Ringmaster Rico' → NL 'Circusdirecteur Baptiste'. 113 lines.",
-      "gender": "male",
-      "dialogueStyle": "",
-      "dutchDialogueStyle": "",
-      "contractions": "none",
       "dutchShort": "Baptiste",
+      "category": "CHARACTER",
       "scope": "main-non-donkey",
-      "verified": true
+      "nicknames": [
+        "Baptiste"
+      ],
+      "bio": "Circus director — operates the Big City Circus where the donkey herd ends up performing in E5. Theatrical showman, addresses the audience constantly. EN 'Ringmaster Rico' → NL 'Circusdirecteur Baptiste'.",
+      "gender": "male",
+      "flemishDensity": "light",
+      "register": "ABN (theatrical / formal showman)",
+      "pronounForm": "jij/je",
+      "verbalTics": "'Dames en heren' (formal audience address), 'Jongens, jongens, jongens' (audience opener), 'Amai' (×2, theatrical flourish), heavy 'jullie' (×9, audience plural)",
+      "dynamics": "theatrical, showman, audience-addressing, slick",
+      "relationships": "antagonist/exploiter — runs circus where animals perform; Eli the Elephant under his employ",
+      "verified": true,
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "zijt"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free, paired with het",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'n",
+          "scope": "free (project-wide rule)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [
+        "Amai"
+      ],
+      "dialectalMarkersForbidden": [
+        "nie",
+        "godverdomme",
+        "godverdoemme",
+        "gulle",
+        "nen",
+        "dien"
+      ],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — corpus is perfectly clean (0 nie)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "ringmaster-rico-baseline",
+        "lockedOn": "2026-04-29",
+        "correctionsApplied": 0,
+        "correctionsFile": null,
+        "rulesLocked": "Pure ABN theatrical register — no mechanical flips needed. Q1: je/jij confirmed (corpus already clean). Q2: niet only (0 nie). Q3: 0 'k, 0 'n contractions used. Q4: jullie HEAVILY USED (×9) addressing audience — feature, not bug. Amai ×2 kept for theatrical color. 'Dames en heren' formal opener confirmed."
+      }
     },
     {
       "name": "Risky Ass",
@@ -3870,9 +3922,9 @@
     }
   ],
   "lastEditorialPass": {
-    "character": "Cole-Machine",
-    "passName": "cole-machine-baseline",
+    "character": "Ringmaster Rico",
+    "passName": "ringmaster-rico-baseline",
     "lockedOn": "2026-04-29",
-    "correctionsApplied": 15
+    "correctionsApplied": 0
   }
 }
