@@ -1902,13 +1902,54 @@
       "flemishDensity": "medium",
       "register": "tussentaal",
       "pronounForm": "ge/gij",
-      "contractions": "none",
-      "verbalTics": "Kameraad (×30 — most in cast), \"slechte, zielloze, werk-afpakkende, kind-dodende Machines\" (anti-machine mantra ×2+), \"Bij de Goden!\" (exclamation), Veulentje (foal address), ezelenhemelvaartszangderzielen",
+      "contractions": "'t free (heaviest in cast); 'n free; 'k forbidden",
+      "verbalTics": "Kameraad (×30 — heaviest address user in cast); 't:35 (heaviest contraction user, 'tussentaal' opener pattern)",
       "dynamics": "overprotective mother, fierce, emotional",
       "relationships": "pair-bonded with Old Ass, lost daughter Lazy, racist against Machines",
-      "note": "'t:29 — heaviest contraction user. kameraad:30 — heaviest address user. da:14. Uses \"niet\" not \"nie\" despite consistent ge/gij",
       "verified": true,
-      "dutchShort": "Stevige"
+      "dutchShort": "Stevige",
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free, signature heaviest contraction in cast",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'n",
+          "scope": "free",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — never nie",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "sturdy-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 46,
+        "correctionsFile": "data/editorial/sturdy-ass-corrections.json",
+        "rulesLocked": "Q1: ge/gij dominant strict (eliminated 8 je-family slips with verb conjugation: bent→zijt, mag→moogt). Q2: niet only (eliminated 16 nie). Q3: ik only (eliminated 5 'k incl. 1 da'k→dat ik combined Q3+Q4). Q4: da-conj→dat (eliminated 19, consistency doctrine). Kameraad×30 + 't×35 + ge/u/uw paradigm KEPT as voice signature. Density correction: codex previously claimed 'light' but corpus is medium (heavy 't, heavy kameraad, ge/u/uw paradigm full)."
+      }
     },
     {
       "name": "Sulky Ass",
