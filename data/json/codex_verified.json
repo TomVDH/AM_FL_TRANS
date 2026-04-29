@@ -624,6 +624,7 @@
       "name": "Sick Ass",
       "english": "Sick Ass",
       "dutch": "Snot Ezel",
+      "dutchShort": "Snotje",
       "category": "CHARACTER",
       "nicknames": [
         "Sick",
@@ -632,16 +633,54 @@
       ],
       "bio": "Generally unwell from working in the mine, and later in the rain. Ends up being the chosen Vassal for the Gods to become the sacred Golden Ass.",
       "gender": "female",
-      "flemishDensity": "light",
-      "register": "tussentaal",
-      "pronounForm": "N/A",
-      "contractions": "none",
-      "verbalTics": "*HOEST* (dramatic/E1-E2/E4-E6), *KUCH* (everyday/E3), \"Omdraaien.\" (only spoken word — E6 nightmare)",
+      "flemishDensity": "N/A",
+      "register": "N/A",
+      "pronounForm": "N/A (mute except for one spoken word)",
+      "verbalTics": "*KUCH* (de facto standard cough sfx, Tom directive 2026-04-28 — replaces former HOEST/KUCH register split). Single spoken word: 'Omdraaien.' at E6_Nightmare R48 (engine-tagged with {s}{s=10}…{/s}).",
       "dynamics": "unwell, quiet, chosen vessel",
-      "relationships": "sister of Kick Ass, vessel of the Gods",
-      "note": "Mostly *HOEST*/*KUCH*; one spoken word: \"Omdraaien.\" (E6); *HOEST* in dramatic contexts, *KUCH* in everyday E3 interactions",
+      "relationships": "sister of Kick Ass; chosen Vassal for the Gods (becomes Golden Ass)",
       "verified": true,
-      "dutchShort": "Snot"
+      "pronounsAllowed": [],
+      "pronounsForbidden": [],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [
+        "*KUCH*",
+        "*KUCH KUCH*",
+        "Omdraaien"
+      ],
+      "dialectalMarkersForbidden": [
+        "*HOEST*"
+      ],
+      "articleRule": "N/A",
+      "negationRule": "N/A (no negation in corpus)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E6_Nightmare_localization J48",
+          "note": "bulk translate will not alter — only spoken word, engine-tagged: '{s}{s=10}Omdraaien.{/s}'"
+        },
+        {
+          "cell": "E3_Mine1FOpening_localization J49",
+          "note": "bulk translate will not alter — '...' ellipsis sfx"
+        },
+        {
+          "cell": "E4_Mine1F_localization J4",
+          "note": "bulk translate will not alter — '...' ellipsis sfx"
+        },
+        {
+          "cell": "E4_Mine1F_localization J5",
+          "note": "bulk translate will not alter — '...' ellipsis sfx"
+        }
+      ],
+      "editorialPass": {
+        "passName": "sick-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 31,
+        "correctionsFile": "data/editorial/sick-ass-corrections.json",
+        "rulesLocked": "Q1: All *HOEST* (×31 cells) → *KUCH* — Tom directive: KUCH is de facto standard. Dedupe doubled-asterisk anomaly at E2_World_A1 R29. No pronouns/contractions/negation in corpus (mute character; one spoken word kept). 3 '...' sfx kept."
+      }
     },
     {
       "name": "Slow Ass",
@@ -1214,9 +1253,9 @@
     }
   ],
   "lastEditorialPass": {
-    "character": "Old Ass",
-    "passName": "old-ass-baseline",
+    "character": "Sick Ass",
+    "passName": "sick-ass-baseline",
     "lockedOn": "2026-04-28",
-    "correctionsApplied": 6
+    "correctionsApplied": 31
   }
 }
