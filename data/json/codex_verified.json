@@ -371,6 +371,7 @@
       "name": "Smart Ass",
       "english": "Smart Ass",
       "dutch": "Slimme Ezel",
+      "dutchShort": "Slimme",
       "category": "CHARACTER",
       "nicknames": [
         "Smart",
@@ -381,13 +382,63 @@
       "flemishDensity": "zero",
       "register": "ABN",
       "pronounForm": "jij/je",
-      "contractions": "none",
-      "verbalTics": "\"Poepsimpel.\" (Easy. — signature ×3+), ÉÉN/TWEE/DRIE numbered plan sequences (×3 full plans), \"EN ONZE JOBS TERUG TE GEVEN!\" (rallying cry, ends every plan)",
-      "dynamics": "strategic, calculating, self-serving, intellectual",
+      "contractions": "'t and 'n free; 'k forbidden",
+      "verbalTics": "Poepsimpel (signature ×18; her one deliberate Flemish word, untouchable). ÉÉN/TWEE/DRIE numbered plan sequences (×3 full plans). \"EN ONZE JOBS TERUG TE GEVEN!\" (rallying cry ending every plan). Acceptable expletives: Verdorie, Godsamme, Potverdikkie, Godver. Canonical expletive = Godsamme. NEVER full godverdomme; verdomme alone is also forbidden (use verdorie).",
+      "dynamics": "strategic, calculating, self-serving, intellectual; pedantic and snooty Dutch woman who has picked up some Flemish from the herd",
       "relationships": "manipulates herd, looks out for own group",
-      "note": "Only ABN speaker; \"Poepsimpel\" is her one deliberate Flemish word; \"Da's catchy\" — one Flemish contraction slip; \"ezelinnekes\" — one -ke diminutive",
       "verified": true,
-      "dutchShort": "Slimme"
+      "pronounsAllowed": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free, idiomatic standard NL contractions",
+          "strictness": "relaxed"
+        },
+        {
+          "form": "'n",
+          "scope": "free, idiomatic standard NL contractions",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — never nie",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "vocabularyOverrides": [
+        {
+          "replace": "godverdomme",
+          "with": "Godsamme",
+          "scope": "all instances; NEVER full godverdomme for Smart Ass"
+        },
+        {
+          "replace": "verdomme",
+          "with": "verdorie",
+          "scope": "standalone use; verdorie is the Smart-acceptable softening"
+        }
+      ],
+      "bulkTranslateExclusions": [],
+      "editorialPass": {
+        "passName": "smart-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 28,
+        "correctionsFile": "data/editorial/smart-ass-corrections.json",
+        "rulesLocked": "Q1: ABN je/jij dominant strict (eliminated 17 ge-family hits incl. ge/gij/u/uw with full verb conjugation adjustment). Q2: niet only (eliminated 7 nie). Q3: ik only (eliminated 4 'k); 't and 'n kept (Tom-confirmed exceptions). Q4: Smart-acceptable expletive set Verdorie/Godsamme/Potverdikkie/Godver, canonical Godsamme. Q5: da-conj→dat. Q6: Allez kom!→Kom nou! at E5_ZooMain J126. Plus mismatch fix at E10_Hard J5 (Tractor Machine NL was wrong-pasted into Smart's row; Tom-approved Dutch authored 2026-04-28). Codex correction: previously claimed flemishDensity=zero/ABN was inaccurate — corpus had 17 Flemish slips that have now been eliminated; she is now genuinely zero/ABN."
+      }
     },
     {
       "name": "Sturdy Ass",
@@ -504,5 +555,5 @@
       "dutchShort": "Trouwe"
     }
   ],
-  "lastEditorialPass": "big-ass-baseline · 2026-04-28"
+  "lastEditorialPass": "smart-ass-baseline · 2026-04-28"
 }
