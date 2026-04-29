@@ -5,10 +5,13 @@
     "C2: Oude Zak deprecation residue - leftover from 2026-04-27 oude-zak-sweep.json where 18 lines were marked pending_disposition; 9 of those still bypass Phase-C apply. Resolved per Q7 pattern: Oude Ezel for formal/reverent-third-person/quotation; Oude for intimate/mournful/casual-peer.",
     "C3: Luie Zak deprecation - same -Zak pattern as Trouwe Zak / Oude Zak; never had its own sweep file. Luie Ezel formal-elegiac (esp. with wijlen prefix); Luie intimate/mournful.",
     "D: Bare EN first-name leaks (Lazy, Sad, Trusty, Hard) - replace with appropriate NL form. Family register Nonkel Sad -> Nonkel Triestigaard (Q8 Uncle pattern). Casual recollection Lazy -> Luie. Intimate-fond Trusty -> Trouwe. Casual peer Hard -> Bikkeharde.",
-    "F: Curly U+201C/U+201D double-quotes -> straight (project consistency rule, missed by Phase-C consistency sweep)."
+    "F: Curly U+201C/U+201D double-quotes -> straight (project consistency rule, missed by Phase-C consistency sweep).",
+    "C2-extended: Ouwe Zak — Flemish dialectal variant of Oude Zak; same -Zak deprecation. 4 cells in E1.",
+    "C-Slimme: Slimme Zak deprecated form for Smart Ass — same -Zak pattern. 1 cell in E3.",
+    "C2/C3-extended (all-caps): the Oude Zak / Luie Zak deprecation also affects shouted/all-caps lines (OUDE ZAK, LUIE ZAK). Earlier regex was case-sensitive; case-insensitive rescan caught these."
   ],
   "generated": "2026-04-29",
-  "decision_status": "Caught in 2026-04-29 post-Phase-C audit (full-corpus scan against Originals + placeholder + deprecation patterns). 34 cells. Dispositions follow established Q7-Q9 register logic. Re-extended 2026-04-29 with 3 additional residues caught by post-apply verification.",
+  "decision_status": "Caught in 2026-04-29 post-Phase-C audit (full-corpus scan against Originals + placeholder + deprecation patterns). 34 cells. Dispositions follow established Q7-Q9 register logic. Re-extended 2026-04-29 with 3 additional residues caught by post-apply verification. Re-extended pt2 2026-04-29 with 5 more cells: 4 Ouwe Zak (Flemish variant my regex missed) + 1 Slimme Zak (new deprecation). Re-extended pt3 2026-04-29 with 3 more cells: 2 OUDE ZAK all-caps (E1_TheProtest) + 1 LUIE ZAK all-caps (E3_LazysGrave). Now 45 corrections total.",
   "corrections": [
     {
       "id": "RES-A-1",
@@ -416,6 +419,94 @@
       "english": "You couldn't save Lazy Ass and you couldn't save a single Human—",
       "current_nl": "Je kon Luie Zak niet redden en je kon geen enkele Mens redden—",
       "proposed_nl": "Je kon Luie niet redden en je kon geen enkele Mens redden—"
+    },
+    {
+      "id": "RES-C2-12",
+      "rationale": "C2 (Ouwe variant): Sturdy formal third-person framing \"if we follow Old Ass\" → Oude Ezel. Note: Ouwe is Flemish dialect for Oude; same deprecation.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable1F_localization",
+      "cell": "J19",
+      "speaker": "Sturdy Ass",
+      "english": "If we follow Old Ass, we can restore balance to the Farm.",
+      "current_nl": "Als we Ouwe Zak volgen kunnen we ervoor zorgen dat vrede naar onze Hoeve wederkeert.",
+      "proposed_nl": "Als we Oude Ezel volgen kunnen we ervoor zorgen dat vrede naar onze Hoeve wederkeert."
+    },
+    {
+      "id": "RES-C2-13",
+      "rationale": "C2 (Ouwe variant): Slow casual gratitude with stutter — intimate peer reference → Oude.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J35",
+      "speaker": "Slow Ass",
+      "english": "Thanks for convincing Old Ass to p-p-put me on b-bridge duty.",
+      "current_nl": "B-B-bedankt om Ouwe Zak te overtuigen van het b-b-bruggetje aan mij over te laten.",
+      "proposed_nl": "B-B-bedankt om Oude te overtuigen van het b-b-bruggetje aan mij over te laten."
+    },
+    {
+      "id": "RES-C2-14",
+      "rationale": "C2 (Ouwe variant): Hard formal third-person announcement \"Old Ass's Protest\" → Oude Ezel.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J59",
+      "speaker": "Hard Ass",
+      "english": "We Miners have decided to join Old Ass's Protest.",
+      "current_nl": "De Mijn-Ezels hebben beslist om het protest van Ouwe Zak te vervoegen.",
+      "proposed_nl": "De Mijn-Ezels hebben beslist om het protest van Oude Ezel te vervoegen."
+    },
+    {
+      "id": "RES-C2-15",
+      "rationale": "C2 (Ouwe variant): Sturdy emotional grief vocative \"OLD ASS! NOOO!!\" — intimate mournful → Oude.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J39",
+      "speaker": "Sturdy Ass",
+      "english": "OLD ASS! NOOO!!",
+      "current_nl": "Ouwe Zak! NEEEEEEEEEEEE!!",
+      "proposed_nl": "Oude! NEEEEEEEEEEEE!!"
+    },
+    {
+      "id": "RES-C-Slimme-1",
+      "rationale": "New deprecation: Slimme Zak retired — same -Zak pattern. Codex Smart = Slimme Ezel formal / Slimme casual. Sturdy direct-address peer call → Slimme.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J62",
+      "speaker": "Sturdy Ass",
+      "english": "Smart Ass, let's divide the rations and get everyone fed.",
+      "current_nl": "Slimme Zak, laat ons de porties verdelen en iedereen eten geven.",
+      "proposed_nl": "Slimme, laat ons de porties verdelen en iedereen eten geven."
+    },
+    {
+      "id": "RES-C2-16",
+      "rationale": "C2 (all-caps): Kick emotional shouted question searching for Old → all-caps casual vocative OUDE.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J97",
+      "speaker": "Kick Ass",
+      "english": "Wait—where's OLD ASS?!",
+      "current_nl": "Wacht — WAAR IS OUDE ZAK?!",
+      "proposed_nl": "Wacht — WAAR IS OUDE?!"
+    },
+    {
+      "id": "RES-C2-17",
+      "rationale": "C2 (all-caps): Trusty solemn formal declaration of memorial words → all-caps formal canon OUDE EZEL ZIJN LAATSTE WOORDEN.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J113",
+      "speaker": "Trusty Ass",
+      "english": "REMEMBER OLD ASS'S PARTING WORDS:",
+      "current_nl": "ONTHOUD OUDE ZAK ZIJN LAATSTE WOORDEN:",
+      "proposed_nl": "ONTHOUD OUDE EZEL ZIJN LAATSTE WOORDEN:"
+    },
+    {
+      "id": "RES-C3-6",
+      "rationale": "C3 (all-caps): Foal {$NewName} surprised exclamation meeting Lazy in afterlife → all-caps casual LUIE.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J6",
+      "speaker": "{$NewName}",
+      "english": "LAZY?! I've heard so much about you!",
+      "current_nl": "LUIE ZAK?! 'k Heb zoveel over u gehoord!",
+      "proposed_nl": "LUIE?! 'k Heb zoveel over u gehoord!"
     }
   ]
 }
