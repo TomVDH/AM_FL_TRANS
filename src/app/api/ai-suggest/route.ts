@@ -40,11 +40,12 @@ async function getCorpusForSpeaker(speaker: string, limit = 15): Promise<CorpusE
 interface CodexEntry {
   english: string;
   dutch: string;
+  dutchShort?: string;        // canonical short form (used when EN uses short name — source-mirror rule)
   category: string;
   nicknames?: string[];
   bio?: string;
   gender?: string;
-  // Voice profile fields
+  // Voice profile fields (legacy schema — kept for fallback)
   flemishDensity?: string;
   register?: string;
   pronounForm?: string;
@@ -52,7 +53,21 @@ interface CodexEntry {
   verbalTics?: string;
   dynamics?: string;
   relationships?: string;
-  note?: string;
+  note?: string;              // DEPRECATED — not rendered into prompt; use editorNote for human annotations
+  editorNote?: string;        // human annotation, NOT rendered into prompt
+  // Phase-C flat-field schema (structured voice rules — preferred)
+  pronounsAllowed?: string[];
+  pronounsForbidden?: string[];
+  contractionsAllowed?: Array<{ form: string; scope?: string; strictness?: string }>;
+  contractionsForbidden?: string[];
+  dialectalMarkersAllowed?: string[];
+  dialectalMarkersForbidden?: string[];
+  articleRule?: string;
+  negationRule?: string;
+  registerExceptions?: Array<{ scope: string; allows?: string[]; contexts?: string[] }>;
+  inboundAddressRules?: Array<{ from_speaker?: string; en_match?: string; nl_required?: string; scope?: string; rationale?: string }>;
+  bulkTranslateExclusions?: Array<{ cell: string; note: string }>;
+  editorialPass?: Record<string, unknown>;
 }
 
 interface SurroundingLine {
@@ -236,20 +251,74 @@ export async function POST(request: NextRequest) {
   const contextParts: string[] = [];
 
   if (charEntry) {
-    contextParts.push(`Speaker character: ${charEntry.english} (Dutch name: ${charEntry.dutch || 'same'})`);
+    const dutchFull = charEntry.dutch || 'same';
+    const dutchShort = charEntry.dutchShort;
+    const speakerHeader = dutchShort
+      ? `Speaker character: ${charEntry.english} (Dutch full: ${dutchFull}, Dutch short: ${dutchShort})`
+      : `Speaker character: ${charEntry.english} (Dutch name: ${dutchFull})`;
+    contextParts.push(speakerHeader);
     if (charEntry.gender) contextParts.push(`Gender: ${charEntry.gender}`);
 
     // Structured voice profile header (verified main cast)
-    if (charEntry.flemishDensity || charEntry.register || charEntry.pronounForm) {
+    if (charEntry.flemishDensity || charEntry.register || charEntry.pronounForm || charEntry.pronounsAllowed) {
       const headerLines: string[] = [];
       headerLines.push('CHARACTER VOICE PROFILE:');
       if (charEntry.flemishDensity) headerLines.push(`  Flemish density: ${charEntry.flemishDensity}`);
       if (charEntry.register) headerLines.push(`  Register: ${charEntry.register}`);
-      if (charEntry.pronounForm) headerLines.push(`  Pronoun form: ${charEntry.pronounForm}`);
-      if (charEntry.contractions && charEntry.contractions !== 'none') headerLines.push(`  Contractions: ${charEntry.contractions}`);
+
+      // Phase-C structured pronoun rules (preferred over legacy pronounForm)
+      if (charEntry.pronounsAllowed?.length) {
+        headerLines.push(`  Pronouns allowed (use these): ${charEntry.pronounsAllowed.join(', ')}`);
+      } else if (charEntry.pronounForm) {
+        headerLines.push(`  Pronoun form: ${charEntry.pronounForm}`);
+      }
+      if (charEntry.pronounsForbidden?.length) {
+        headerLines.push(`  Pronouns forbidden (NEVER use): ${charEntry.pronounsForbidden.join(', ')}`);
+      }
+
+      // Negation rule (Phase-C)
+      if (charEntry.negationRule) {
+        headerLines.push(`  Negation: ${charEntry.negationRule}`);
+      }
+
+      // Article rule (Phase-C)
+      if (charEntry.articleRule) {
+        headerLines.push(`  Articles: ${charEntry.articleRule}`);
+      }
+
+      // Phase-C structured contraction rules (preferred over legacy contractions)
+      if (charEntry.contractionsAllowed?.length) {
+        const allowed = charEntry.contractionsAllowed.map(c => c.scope ? `${c.form} (${c.scope})` : c.form).join(', ');
+        headerLines.push(`  Contractions allowed: ${allowed}`);
+      }
+      if (charEntry.contractionsForbidden?.length) {
+        headerLines.push(`  Contractions forbidden (NEVER use): ${charEntry.contractionsForbidden.join(', ')}`);
+      }
+      if (!charEntry.contractionsAllowed && !charEntry.contractionsForbidden && charEntry.contractions && charEntry.contractions !== 'none') {
+        headerLines.push(`  Contractions: ${charEntry.contractions}`);
+      }
+
+      // Dialectal markers (Phase-C)
+      if (charEntry.dialectalMarkersAllowed?.length) {
+        headerLines.push(`  Dialectal markers allowed: ${charEntry.dialectalMarkersAllowed.join(', ')}`);
+      }
+      if (charEntry.dialectalMarkersForbidden?.length) {
+        headerLines.push(`  Dialectal markers forbidden: ${charEntry.dialectalMarkersForbidden.join(', ')}`);
+      }
+
+      // Register exceptions (Phase-C)
+      if (charEntry.registerExceptions?.length) {
+        const exceptions = charEntry.registerExceptions.map(re => {
+          const allows = re.allows?.length ? ` allows: ${re.allows.join('/')}` : '';
+          const ctx = re.contexts?.length ? ` (${re.contexts.join('; ')})` : '';
+          return `    - ${re.scope}:${allows}${ctx}`;
+        }).join('\n');
+        headerLines.push(`  Register exceptions:\n${exceptions}`);
+      }
+
       if (charEntry.verbalTics) headerLines.push(`  Verbal tics: ${charEntry.verbalTics}`);
       if (charEntry.dynamics) headerLines.push(`  Dynamics: ${charEntry.dynamics}`);
-      if (charEntry.note) headerLines.push(`  Note: ${charEntry.note}`);
+      // Note: legacy `note` field is INTENTIONALLY NOT rendered (deprecated). Use editorNote for human annotations only.
       contextParts.push(headerLines.join('\n'));
     }
 
@@ -285,15 +354,19 @@ export async function POST(request: NextRequest) {
   }
 
   // Add referenced codex entries (excluding the speaker, already covered above)
+  // Source-mirror rule: render BOTH dutch full AND dutchShort so AI matches EN form to NL form.
   const otherEntries = referencedEntries.filter(e => e !== charEntry);
   if (otherEntries.length > 0) {
     const codexRef = otherEntries.map(e => {
-      const parts = [`${e.english} → ${e.dutch}`];
+      const dutchPart = e.dutchShort
+        ? `${e.dutch} (full) / ${e.dutchShort} (short — use when EN uses '${e.english.replace(/\s+Ass\b/, '')}' without 'Ass')`
+        : e.dutch;
+      const parts = [`${e.english} → ${dutchPart}`];
       if (e.category) parts.push(`(${e.category.toLowerCase()})`);
       if (e.gender) parts.push(`[${e.gender}]`);
       return parts.join(' ');
     }).join('\n');
-    contextParts.push(`Referenced terms/characters:\n${codexRef}`);
+    contextParts.push(`Referenced terms/characters (source-mirror rule: when EN uses full name, use Dutch full; when EN uses short, use Dutch short):\n${codexRef}`);
   }
 
   if (context) {

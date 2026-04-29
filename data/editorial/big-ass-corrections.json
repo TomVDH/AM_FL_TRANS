@@ -41,9 +41,9 @@
       "sheet": "E3_Mine1FOpening_localization",
       "cell": "J21",
       "speaker": "Big Ass",
-      "english": "I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!",
-      "current_nl": "Ik heb een mega aankondiging, Kameraad Stoere! Harde, Trap, en Zieke zijn terug!",
-      "proposed_nl": "Ik heb een mega aankondiging, Kameraad Stevige! Harde, Stamper, en Snotje zijn terug!"
+      "english": "{vpunch=100,0.75}I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!",
+      "current_nl": "{vpunch=100,0.75}Ik heb een mega aankondiging, Kameraad Stoere! Harde, Trap, en Zieke zijn terug!",
+      "proposed_nl": "{vpunch=100,0.75}Ik heb een mega aankondiging, Kameraad Stevige! Harde, Stamper, en Snotje zijn terug!"
     },
     {
       "id": "BA-Q1-2",
@@ -121,6 +121,17 @@
       "english": "You've surprised us all with how quickly you've grown your score.",
       "current_nl": "Je staat ons doen kijken met hoe snel je punten aan het scoren bent.",
       "proposed_nl": "Ge verbaast ons allemaal, met hoe snel uw punten omhoog gaan."
+    },
+    {
+      "id": "BA-Q1-9",
+      "rationale": "Q1: Jouw (possessive sentence-start) → Uw. Missed by the original authoring pass — caught by post-apply verification 2026-04-28.",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J121",
+      "speaker": "Big Ass",
+      "english": "Your duet with the Ringmaster brought tears to my eyes!",
+      "current_nl": "Jouw duet met de Circusdirecteur ontroerde me!",
+      "proposed_nl": "Uw duet met de Circusdirecteur ontroerde me!"
     },
     {
       "id": "BA-Q2-2",

@@ -141,7 +141,8 @@
       "verbalTics": "Laat mij gerust (recurring dismissal), 'k Veronderstel (grudging concession ×2), godverdomme (profanity peak), Eindelijk! (payoff/release ×2 in E6)",
       "dynamics": "cynical, philosophical, intellectual, isolated",
       "relationships": "mother left young; despised capitalist father; dreams of escaping to Mechalen; real name Piet Vanscheetvelde; reluctant mentor to the Foal (E6)",
-      "note": "''k:17 — heaviest 'k user in cast. godver:4."
+      "note": "''k:17 — heaviest 'k user in cast. godver:4.",
+      "dutchShort": "Stoere"
     },
     {
       "name": "Big Ass",
@@ -159,12 +160,63 @@
       "dutchDialogueStyle": "",
       "flemishDensity": "medium",
       "register": "tussentaal",
-      "pronounForm": "mixed",
-      "contractions": "none",
-      "verbalTics": "*oef!* (physical effort ×4), Kameraad (constant address ×7+), size descriptors: mega/gigantische/geweldige",
-      "dynamics": "earnest, passionate, big-picture thinker",
-      "relationships": "solidarity with herd, wants recognition",
-      "note": "kameraad:7, oef:4 — full Ik not 'k; niet dominant over nie"
+      "pronounForm": "ge/gij",
+      "contractions": "'t free (paired with het); 'k forbidden",
+      "verbalTics": "*oef!* (physical effort ×3), Kameraad (constant address ×8, capitalized), size descriptors: mega/gigantisch/geweldig",
+      "dynamics": "earnest, passionate, big-picture thinker; morale officer / speech-maker; herd's anxious-but-committed hero in E7 factory arc",
+      "relationships": "solidarity with herd, wants recognition; volunteers for danger, leaves no one behind",
+      "dutchShort": "Mega",
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "free, paired with het — Q4 lock (both forms accepted)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — never nie",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "bulkTranslateExclusions": [
+        {
+          "cell": "E2_World_A1_localization J43",
+          "note": "bulk translate will not alter — memorial register, 'Trouwe Ezel' kept for EN 'Trusty'"
+        },
+        {
+          "cell": "E4_HerdSplits_localization J51",
+          "note": "bulk translate will not alter — 'Betweter' kept for EN 'Smart Ass'"
+        }
+      ],
+      "editorialPass": {
+        "passName": "big-ass-baseline",
+        "lockedOn": "2026-04-28",
+        "correctionsApplied": 24,
+        "correctionsFile": "data/editorial/big-ass-corrections.json",
+        "crossCharacterSweepsApplied": [
+          "data/editorial/oude-zak-sweep.json",
+          "data/editorial/triestigaard-sweep.json",
+          "data/editorial/thirsty-sweep.json"
+        ],
+        "rulesLocked": "Q1: ge/gij dominant (paradigm: ge/gij subject, u/uw object/possessive, jullie kept). Q2: niet only. Q3: ik only (no 'k, no da'k). Q4: 't and het both free. Q5: u/uw paradigm partners. Q6: jullie kept. Q7-Q9: cross-character sweeps. Q10: E3_Mine1FOpening four-name hot spot resolved."
+      }
     },
     {
       "name": "Bitter Ass",
@@ -853,7 +905,8 @@
       "dynamics": "stoic, blunt, protective, sacrificial",
       "relationships": "protector of the herd",
       "note": "kameraad:7, motto ×2 (beerput/stront), \"Geen mietje zijn\" ×2, \"Let's go\" kept verbatim in Dutch; \"Dat meurt hier nog al, man\" — strongest Flemish moment",
-      "verified": true
+      "verified": true,
+      "dutchShort": "Bikkeharde"
     },
     {
       "name": "Hasty Ass",
@@ -1042,7 +1095,8 @@
       "dynamics": "angry, impulsive, guilt-ridden",
       "relationships": "brother of Sick Ass; lost her in E4; carries blood guilt for violence against Humans on Hard Ass's orders",
       "note": "kameraad:5; \"De Kudde kan mij een WORST WEZEN\" (I don't care); \"op hoeven en hoeven zitten\" (begging); mixed nie/niet; je/jij dominant, ge/gij/uw at emotional peaks",
-      "verified": true
+      "verified": true,
+      "dutchShort": "Stamp"
     },
     {
       "name": "Lazy Ass",
@@ -1066,7 +1120,8 @@
       "dynamics": "easy-going, surfer tone, carefree",
       "relationships": "lover of Sad Ass, daughter of Sturdy Ass",
       "note": "'k:9; nie dominant, no \"niet\"; da conjunction; merci, klapt, nen, \"Doe uw goesting\" — heavy Flemish. Note: godver:4 not confirmed in available lines",
-      "verified": true
+      "verified": true,
+      "dutchShort": "Luie"
     },
     {
       "name": "Left Ass",
@@ -1252,7 +1307,8 @@
       "dynamics": "warm, earnest, energetic, modest",
       "relationships": "keeper of Sad Ass's secret (fire); encouraging/maternal to all herd; Thirsty Ass is obsessed with her (not reciprocal)",
       "note": "kameraad:7; niet not nie throughout; je/jij consistent (no ge/gij); Oesje/Jakkes/Jemig signature exclamations; potvolkoffie, verdikke as mild oaths",
-      "verified": true
+      "verified": true,
+      "dutchShort": "Lieve"
     },
     {
       "name": "Official Sign",
@@ -1294,7 +1350,8 @@
       "dynamics": "sage leader, formal oratory, ideological speeches",
       "relationships": "leader of the herd, pair-bonded with Sturdy Ass",
       "note": "kameraad:7; polsen + klapke (Flemish markers); \"Ik wou dat\" as emotional signature; EZEL MACHT as catchphrase; niet throughout (no nie)",
-      "verified": true
+      "verified": true,
+      "dutchShort": "Oude"
     },
     {
       "name": "Old Sign",
@@ -1488,7 +1545,8 @@
       "category": "CHARACTER",
       "nicknames": [
         "Sad",
-        "Uncle Sad"
+        "Uncle Sad",
+        "Triestigaard"
       ],
       "bio": "Sad. Mourning his lover Lazy who died in the mines. Doesn't have direction in life anymore. He was a Mine donkey until he was sold to the Farm after Lazy died, unable to work anymore. He can be erratic and impulsive, taking out his anger on a car and accidentally starting the major fire of Ep2, or leaving the group behind in Ep5 from the Zoo.",
       "gender": "male",
@@ -1502,7 +1560,8 @@
       "dynamics": "melancholic, lost, mourning",
       "relationships": "mourning lover Lazy Ass",
       "note": "nie in emotional peaks; ge/gij in E3 private; hallo'kes + Nonkel (Flemish); stuttered speech w-wou/z-zaken; \"Ik wou\" as regret marker",
-      "verified": true
+      "verified": true,
+      "dutchShort": "Triestige"
     },
     {
       "name": "Sandy Butte",
@@ -1592,7 +1651,8 @@
       "category": "CHARACTER",
       "nicknames": [
         "Sick",
-        "Comrade Sick"
+        "Comrade Sick",
+        "Snotje"
       ],
       "bio": "Generally unwell from working in the mine, and later in the rain. Ends up being the chosen Vassal for the Gods to become the sacred Golden Ass.",
       "gender": "female",
@@ -1606,7 +1666,8 @@
       "dynamics": "unwell, quiet, chosen vessel",
       "relationships": "sister of Kick Ass, vessel of the Gods",
       "note": "Mostly *HOEST*/*KUCH*; one spoken word: \"Omdraaien.\" (E6); *HOEST* in dramatic contexts, *KUCH* in everyday E3 interactions",
-      "verified": true
+      "verified": true,
+      "dutchShort": "Snot"
     },
     {
       "name": "Sign",
@@ -1677,11 +1738,57 @@
       "register": "tussentaal",
       "pronounForm": "jij/je",
       "contractions": "none",
-      "verbalTics": "stutter on Dutch consonants (z-, w-, g-, h-, n- — NOT fixed to B/P like English, adapts to Dutch leading consonant), *oe-oef* (p-phew), *puf puf* (grunt), *snuf snuf* (sniff), trailing b-b-b... stutter gag (E4)",
+      "verbalTics": "stutter on Dutch consonants (adaptive; dominant on b-/z-/p-/d-/h-/m-), *oe-oef* for *p-phew*, *snuf snuf* for *sniff*, *puf puf* for *puf puf*, trailing b-b-b… stutter gag (E4)",
       "dynamics": "timid, hesitant, well-intentioned, unconfident",
       "relationships": "deep reverence for Trusty; stayed behind to sing Song of Ascension for her (E2); departs with Kick Ass (E4)",
-      "note": "stutter doesn't map B/P→Dutch; adapts to leading consonant of each Dutch word; one \"nie\" (E3); \"uw/u\" as reverent address for Trusty",
-      "verified": true
+      "verified": true,
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [
+        "'k",
+        "'t"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — never nie",
+      "registerExceptions": [
+        {
+          "scope": "reverent/formal address",
+          "allows": [
+            "u",
+            "uw",
+            "uzelf"
+          ],
+          "contexts": [
+            "when addressing elders",
+            "when referring to Trusty Ass in memorial/reverent contexts",
+            "when addressing authority figures or out-of-herd characters (e.g., the Moth in E3)"
+          ]
+        }
+      ],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "slow-ass-baseline + stutter-repair",
+        "lockedOn": "2026-04-20",
+        "correctionsApplied": 62,
+        "correctionsFiles": [
+          "data/editorial/slow-ass-corrections.json",
+          "data/editorial/slow-ass-stutter-repair.json"
+        ],
+        "stutterGagExemptions": 4,
+        "stutterExcessTrimmed": 14
+      },
+      "dutchShort": "Slome"
     },
     {
       "name": "Smart Ass",
@@ -1705,7 +1812,8 @@
       "dynamics": "strategic, calculating, self-serving, intellectual",
       "relationships": "manipulates herd, looks out for own group",
       "note": "Only ABN speaker; \"Poepsimpel\" is her one deliberate Flemish word; \"Da's catchy\" — one Flemish contraction slip; \"ezelinnekes\" — one -ke diminutive",
-      "verified": true
+      "verified": true,
+      "dutchShort": "Slimme"
     },
     {
       "name": "Smelly Ass",
@@ -1748,7 +1856,8 @@
       "dynamics": "overprotective mother, fierce, emotional",
       "relationships": "pair-bonded with Old Ass, lost daughter Lazy, racist against Machines",
       "note": "'t:29 — heaviest contraction user. kameraad:30 — heaviest address user. da:14. Uses \"niet\" not \"nie\" despite consistent ge/gij",
-      "verified": true
+      "verified": true,
+      "dutchShort": "Stevige"
     },
     {
       "name": "Sulky Ass",
@@ -1841,7 +1950,8 @@
       "dutch": "Beschonken Ezel",
       "category": "CHARACTER",
       "nicknames": [
-        "Thirsty"
+        "Thirsty",
+        "Zatlap"
       ],
       "bio": "Older, a bit lecherous. Generally positive. Mostly interested in doing whatever Nice Ass is doing. Castrated. Dreams of starting a small business in the form of a Bar, called Bottom's Up",
       "gender": "male",
@@ -1854,7 +1964,8 @@
       "verbalTics": "héé (sentence-final, almost every line), JIE-HAAA! (YEEHAW), godver(domme), doeme/gedoemme, amai, *oef*, allez, sie",
       "dynamics": "lecherous, positive, older, easy-going",
       "relationships": "obsessed with Nice Ass (her legs, castration regret), close to Big Ass (E3 tunnel convo), loyal herd member, dreams of Bottoms Up bar (→ Poepegaatje)",
-      "note": "héé in 50+ of 92 Dutch lines — single most dominant feature. da/dadde heavy. Bottoms Up → Poepegaatje. Drink puns: Bronnini, Emmer Ale, Spuugspritz. Zero corpus entries."
+      "note": "héé in 50+ of 92 Dutch lines — single most dominant feature. da/dadde heavy. Bottoms Up → Poepegaatje. Drink puns: Bronnini, Emmer Ale, Spuugspritz. Zero corpus entries.",
+      "dutchShort": "Beschonken"
     },
     {
       "name": "Tight Ass",
@@ -1975,8 +2086,54 @@
       "verbalTics": "\"Ahh!\" (startled ×2), \"Het is maar.../Dat is...\" (observation pattern throughout), \"Ooeeeeps!\" (Whoops — death line), \"Ahum\" (Ahem)",
       "dynamics": "quiet authority, listener first, steady presence",
       "relationships": "second in command to Old Ass; dies in E1 (falls in well); guide/reassigned in Astral Plane (E4)",
-      "note": "player character — mostly environmental observations; \"niet best\" (Flemish understatement); \"misschien de moment\" (E1); \"In den beginne\" (archaic opener)",
-      "verified": true
+      "verified": true,
+      "pronounsAllowed": [
+        "jij",
+        "je",
+        "jou",
+        "jouw"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij",
+        "u",
+        "uw"
+      ],
+      "contractionsAllowed": [
+        {
+          "form": "'t",
+          "scope": "contextual — idiomatic standard Dutch only ('t is, 't was, op 't einde, etc.)",
+          "strictness": "relaxed"
+        }
+      ],
+      "contractionsForbidden": [
+        "'k"
+      ],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "een only — never ne/nen",
+      "negationRule": "niet only — never nie",
+      "registerExceptions": [],
+      "inboundAddressRules": [
+        {
+          "from_speaker": "Nice Ass",
+          "en_match": "\\bTrusty\\b(?!\\s+Ass)",
+          "nl_required": "Trouwtje",
+          "scope": "bare 'Trusty' only — 'Trusty Ass' uses canonical Dutch name",
+          "rationale": "Nice Ass's affection diminutive for the player character"
+        }
+      ],
+      "editorialPass": {
+        "passName": "trusty-baseline",
+        "lockedOn": "2026-04-20",
+        "correctionsApplied": 6,
+        "correctionsFile": "data/editorial/trusty-corrections.json",
+        "deprecatedAddresses": [
+          "Trouwe Zak"
+        ],
+        "deprecationNote": "Trouwe Zak removed from legitimate aliases 2026-04-20; only Trouwe Ezel (formal) and Trouwe (casual) used for direct reference"
+      },
+      "dutchShort": "Trouwe"
     },
     {
       "name": "Ugly Ass",
