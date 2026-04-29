@@ -1899,27 +1899,25 @@
       "gender": "female",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "flemishDensity": "medium",
+      "flemishDensity": "light",
       "register": "tussentaal",
-      "pronounForm": "ge/gij",
-      "contractions": "'t free (heaviest in cast); 'n free; 'k forbidden",
+      "pronounForm": "jij/je",
+      "contractions": "'t free (signature heaviest contraction in cast); 'n free; 'k forbidden",
       "verbalTics": "Kameraad (×30 — heaviest address user in cast); 't:35 (heaviest contraction user, 'tussentaal' opener pattern)",
       "dynamics": "overprotective mother, fierce, emotional",
       "relationships": "pair-bonded with Old Ass, lost daughter Lazy, racist against Machines",
       "verified": true,
       "dutchShort": "Stevige",
       "pronounsAllowed": [
-        "ge",
-        "gij",
-        "u",
-        "uw",
+        "je",
+        "jij",
+        "jou",
+        "jouw",
         "jullie"
       ],
       "pronounsForbidden": [
-        "jij",
-        "je",
-        "jou",
-        "jouw"
+        "ge",
+        "gij"
       ],
       "contractionsAllowed": [
         {
@@ -1948,7 +1946,10 @@
         "lockedOn": "2026-04-28",
         "correctionsApplied": 46,
         "correctionsFile": "data/editorial/sturdy-ass-corrections.json",
-        "rulesLocked": "Q1: ge/gij dominant strict (eliminated 8 je-family slips with verb conjugation: bent→zijt, mag→moogt). Q2: niet only (eliminated 16 nie). Q3: ik only (eliminated 5 'k incl. 1 da'k→dat ik combined Q3+Q4). Q4: da-conj→dat (eliminated 19, consistency doctrine). Kameraad×30 + 't×35 + ge/u/uw paradigm KEPT as voice signature. Density correction: codex previously claimed 'light' but corpus is medium (heavy 't, heavy kameraad, ge/u/uw paradigm full)."
+        "rulesLocked": "RETCON 2026-04-28: Pronoun direction flipped from ge/gij to je/jij ABN per Tom directive. 55 cells reverse-flipped (ge→je, gij→jij, u→je or jou, uw→je, zijt→bent, moogt→mag, V2 -t drops, etc.) plus 1 over-correction fix (Omda→Omdat, ZIJT→BENT at E9_BadCave J55). Q2 niet-only, Q3 ik-only, Q4 da→dat retained from original pass. kameraad×30 + 't×35 still kept as voice signature. Density correction: light + ABN with tussentaal register. Files: data/editorial/sturdy-ass-corrections.json + data/editorial/sturdy-ass-retcon.json.",
+        "retconAppliedOn": "2026-04-28",
+        "retconFile": "data/editorial/sturdy-ass-retcon.json",
+        "correctionsAppliedTotal": 102
       }
     },
     {
