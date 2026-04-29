@@ -63,14 +63,40 @@ Methodology baseline in per-character resume file Part 1. **Full-spectrum corpus
 
 ## 📊 Editorial scope (state as of 2026-04-28)
 
-**14 main cast characters** + Foal (canonical `{$NewName}`).
+**Expanded scope: 14 main donkey cast + 9 non-donkey main cast + Foal placeholder = 24 chars total.**
+
+### Main donkey cast (14)
 
 | State | Count | Characters |
 |---|---|---|
-| ✅ Locked (Phase-C `editorialPass` flag set in `codex_verified.json`) | 2 | Trusty Ass · Slow Ass |
-| 🟡 In progress (decisions locked, corrections JSON ready, not yet applied) | 1 | **Big Ass** |
-| 🔲 Not started | 11 | Bad · Hard · Kick · Lazy · Nice · Old · Sad · Sick · Smart · Sturdy · Thirsty |
-| ❓ Special | 1 | Foal — canonical `{$NewName}` placeholder. **Verify voice profile location before pass** (not in `codex_verified.json` 14-entry list). |
+| ✅ Locked (Phase-C `editorialPass` flag set) | 5 | Trusty Ass · Slow Ass · Big Ass · Smart Ass · Sturdy Ass (retconned to je/jij 2026-04-28) |
+| 🟡 In progress | 1 | **Kick Ass** (Q1=ge/gij locked) |
+| 🔲 Not started | 8 | Bad · Hard · Lazy · Nice · Old · Sad · Sick · Thirsty |
+
+### Main non-donkey cast (9, added to codex 2026-04-28)
+
+| EN speaker | NL canonical | NL short | Lines | Role |
+|---|---|---|---|---|
+| `Cole-Machine` | `Piet-Machine` | `Piet` | 154 | The AI/robot (Bad's pre-donkey identity) |
+| `Zookeeper Rose` | `Dierendokter Dina` | `Dina` | 140 | Animal caretaker |
+| `Ringmaster Rico` | `Circusdirecteur Baptiste` | `Baptiste` | 113 | Circus director |
+| `Golden Ass` | `Gouden Ezel` | `Gouden` | 90 | Mythological/religious figure |
+| `Mme. Derriere` | `Mevr. Derrière` | `Derrière` | 47 | Factory matriarch |
+| `Hee` | `HIE` | `HIE` | 29 | Donkey deity (paired with Haw) |
+| `Child Joey` | `Luukske Vermeulen` | `Luukske` | 20 | The boy (related to Grandma Kulan) |
+| `Haw` | `HAA` | `HAA` | 17 | Donkey deity (paired with Hee) |
+| `Grandma Kulan` | `Grootmoe Vermeulen` | `Grootmoe` | 15 | The grandma (related to Joey) |
+
+### Special
+
+| Character | Notes |
+|---|---|
+| Foal | Canonical `{$NewName}` runtime placeholder. Player-named. Voice rules will need a special handling path. |
+
+**Cross-character work outstanding (post-each-pass):**
+- Oude Zak: 18 deferred per-line dispositions (`oude-zak-sweep.json`)
+- Triestigaard / Zatlap / Snotje: codex catch-up done for Sad / Thirsty / Sick
+- Trouwe Zak deprecation: already swept; periodic re-verify
 
 **Cross-character work outstanding (post-each-pass):**
 - Oude Zak: 18 deferred per-line dispositions (`oude-zak-sweep.json`)

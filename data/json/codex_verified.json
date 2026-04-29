@@ -595,6 +595,142 @@
         "deprecationNote": "Trouwe Zak removed from legitimate aliases 2026-04-20; only Trouwe Ezel (formal) and Trouwe (casual) used for direct reference"
       },
       "dutchShort": "Trouwe"
+    },
+    {
+      "name": "Cole-Machine",
+      "english": "Cole-Machine",
+      "dutch": "Piet-Machine",
+      "dutchShort": "Piet",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Cole",
+        "Cole-M",
+        "Piet"
+      ],
+      "bio": "The AI/robot version of Cole Butte (Bad Ass's pre-donkey human identity, real name Piet Vanscheetvelde). 154 lines.",
+      "gender": "male",
+      "verified": false,
+      "scope": "main-non-donkey"
+    },
+    {
+      "name": "Golden Ass",
+      "english": "Golden Ass",
+      "dutch": "Gouden Ezel",
+      "dutchShort": "Gouden",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Gouden"
+      ],
+      "bio": "Mythological/religious figure. 90 lines. Reference to Lucius from Apuleius's 'The Golden Ass'.",
+      "gender": "?",
+      "verified": false,
+      "scope": "main-non-donkey"
+    },
+    {
+      "name": "Hee",
+      "english": "Hee",
+      "dutch": "HIE",
+      "dutchShort": "HIE",
+      "category": "CHARACTER",
+      "nicknames": [
+        "HIE"
+      ],
+      "bio": "Donkey deity. Paired with Haw. Tom 2026-04-28: 'two donkey deities, zita and zeno' (corpus uses HIE/HAA). 29 lines.",
+      "gender": "?",
+      "verified": false,
+      "scope": "main-non-donkey"
+    },
+    {
+      "name": "Haw",
+      "english": "Haw",
+      "dutch": "HAA",
+      "dutchShort": "HAA",
+      "category": "CHARACTER",
+      "nicknames": [
+        "HAA"
+      ],
+      "bio": "Donkey deity. Paired with Hee. 17 lines.",
+      "gender": "?",
+      "verified": false,
+      "scope": "main-non-donkey"
+    },
+    {
+      "name": "Mme. Derriere",
+      "english": "Mme. Derriere",
+      "dutch": "Mevr. Derrière",
+      "dutchShort": "Derrière",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Derriere",
+        "Mme Derriere",
+        "Derrière"
+      ],
+      "bio": "Factory matriarch — owns 'Mme. Derriere's Assorted Meats and Beauty Goods Factory' (Fabriek voor Gemengd Vlees en Schoonheidsproducten van Mevr. Derrière). 47 lines.",
+      "gender": "female",
+      "verified": false,
+      "scope": "main-non-donkey"
+    },
+    {
+      "name": "Zookeeper Rose",
+      "english": "Zookeeper Rose",
+      "dutch": "Dierendokter Dina",
+      "dutchShort": "Dina",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Rose",
+        "Dina",
+        "Dierendokter"
+      ],
+      "bio": "Animal caretaker. EN 'Zookeeper Rose' is rendered in NL as 'Dierendokter Dina' (Animal Doctor Dina) — different role-translation. 140 lines.",
+      "gender": "female",
+      "verified": false,
+      "scope": "main-non-donkey"
+    },
+    {
+      "name": "Ringmaster Rico",
+      "english": "Ringmaster Rico",
+      "dutch": "Circusdirecteur Baptiste",
+      "dutchShort": "Baptiste",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Rico",
+        "Baptiste",
+        "Circusdirecteur"
+      ],
+      "bio": "Circus director. EN 'Ringmaster Rico' → NL 'Circusdirecteur Baptiste'. 113 lines.",
+      "gender": "male",
+      "verified": false,
+      "scope": "main-non-donkey"
+    },
+    {
+      "name": "Child Joey",
+      "english": "Child Joey",
+      "dutch": "Luukske Vermeulen",
+      "dutchShort": "Luukske",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Joey",
+        "Luukske"
+      ],
+      "bio": "The boy. NL renders as 'Luukske Vermeulen' (Flemish diminutive Luukske + family name Vermeulen, shared with Grandma Kulan). 20 lines.",
+      "gender": "male",
+      "verified": false,
+      "scope": "main-non-donkey"
+    },
+    {
+      "name": "Grandma Kulan",
+      "english": "Grandma Kulan",
+      "dutch": "Grootmoe Vermeulen",
+      "dutchShort": "Grootmoe",
+      "category": "CHARACTER",
+      "nicknames": [
+        "Kulan",
+        "Grootmoe"
+      ],
+      "bio": "The grandma. Shares family name Vermeulen with Child Joey (related). 15 lines.",
+      "gender": "female",
+      "verified": false,
+      "scope": "main-non-donkey"
     }
   ],
   "lastEditorialPass": "sturdy-ass-retcon · 2026-04-28"

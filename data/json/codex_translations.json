@@ -340,17 +340,20 @@
       "dutch": "Luukske Vermeulen",
       "category": "CHARACTER",
       "nicknames": [
-        "Joey"
+        "Joey",
+        "Luukske"
       ],
-      "bio": "",
-      "gender": "",
+      "bio": "The boy. NL renders as 'Luukske Vermeulen' (Flemish diminutive Luukske + family name Vermeulen, shared with Grandma Kulan). 20 lines.",
+      "gender": "male",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
       "contractions": "none",
       "flemishDensity": "trace",
       "register": "ABN",
       "pronounForm": "je/jij",
-      "note": "markers: -ke diminutive:1; niet only"
+      "note": "markers: -ke diminutive:1; niet only",
+      "dutchShort": "Luukske",
+      "scope": "main-non-donkey"
     },
     {
       "name": "Child Joey Kulan",
@@ -395,9 +398,13 @@
       "english": "Cole-Machine",
       "dutch": "Piet-Machine",
       "category": "CHARACTER",
-      "nicknames": [],
-      "bio": "",
-      "gender": "",
+      "nicknames": [
+        "Cole",
+        "Cole-M",
+        "Piet"
+      ],
+      "bio": "The AI/robot version of Cole Butte (Bad Ass's pre-donkey human identity, real name Piet Vanscheetvelde). 154 lines.",
+      "gender": "male",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
       "contractions": "'k (19x), 's (1x)",
@@ -405,7 +412,9 @@
       "register": "tussentaal",
       "pronounForm": "ge/gij",
       "verbalTics": "\"de burgers van\" x4, \"burgers van mechalen\" x4, \"de burgers van mechalen\" x4, godverdomme (13x)",
-      "note": "'k:19, 's:1; markers: godver:16, nie:8, da:7, nen/ne:6; negation: nie:8 niet:21"
+      "note": "'k:19, 's:1; markers: godver:16, nie:8, da:7, nen/ne:6; negation: nie:8 niet:21",
+      "dutchShort": "Piet",
+      "scope": "main-non-donkey"
     },
     {
       "name": "Cool Ass",
@@ -776,10 +785,10 @@
       "dutch": "Gouden Ezel",
       "category": "CHARACTER",
       "nicknames": [
-        "Golden"
+        "Gouden"
       ],
-      "bio": "",
-      "gender": "",
+      "bio": "Mythological/religious figure. 90 lines. Reference to Lucius from Apuleius's 'The Golden Ass'.",
+      "gender": "?",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
       "contractions": "'s (1x)",
@@ -787,7 +796,9 @@
       "register": "tussentaal",
       "pronounForm": "ge/gij",
       "verbalTics": "\"wij zullen een\" x3, \"dat is niet\" x3, \"het astrale hiernamaals\" x2",
-      "note": "'s:1; markers: -ke diminutive:11; niet only"
+      "note": "'s:1; markers: -ke diminutive:11; niet only",
+      "dutchShort": "Gouden",
+      "scope": "main-non-donkey"
     },
     {
       "name": "Grandma Kulan",
@@ -796,9 +807,10 @@
       "dutch": "Grootmoe Vermeulen",
       "category": "CHARACTER",
       "nicknames": [
-        "Grandma"
+        "Kulan",
+        "Grootmoe"
       ],
-      "bio": "An old woman who looks after her grandson. She thinks donkeys have no souls and are stupid. After Joey dies in Ep2, she becomes sad and cherishes her memories of their last afternoon visiting donkeys by going to the Zoo, or going to the Circus. Easter Egg: If the Circus, she ultimately gets a job as a janitor at Derriere's Factory as a way to keep herself busy.",
+      "bio": "The grandma. Shares family name Vermeulen with Child Joey (related). 15 lines.",
       "gender": "female",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
@@ -807,7 +819,9 @@
       "register": "tussentaal",
       "pronounForm": "none",
       "verbalTics": "\"kom we gaan\" x2",
-      "note": "markers: -ke diminutive:2; niet only"
+      "note": "markers: -ke diminutive:2; niet only",
+      "dutchShort": "Grootmoe",
+      "scope": "main-non-donkey"
     },
     {
       "name": "Greedy Ass",
@@ -948,9 +962,11 @@
       "english": "Haw",
       "dutch": "HAA",
       "category": "CHARACTER",
-      "nicknames": [],
-      "bio": "",
-      "gender": "",
+      "nicknames": [
+        "HAA"
+      ],
+      "bio": "Donkey deity. Paired with Hee. 17 lines.",
+      "gender": "?",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
       "contractions": "none",
@@ -958,7 +974,9 @@
       "register": "formeel ABN",
       "pronounForm": "u",
       "verbalTics": "\"de materiële wereld\" x2",
-      "note": "niet only"
+      "note": "niet only",
+      "dutchShort": "HAA",
+      "scope": "main-non-donkey"
     },
     {
       "name": "Healthy Ass",
@@ -980,9 +998,11 @@
       "english": "Hee",
       "dutch": "HIE",
       "category": "CHARACTER",
-      "nicknames": [],
-      "bio": "",
-      "gender": "",
+      "nicknames": [
+        "HIE"
+      ],
+      "bio": "Donkey deity. Paired with Haw. Tom 2026-04-28: 'two donkey deities, zita and zeno' (corpus uses HIE/HAA). 29 lines.",
+      "gender": "?",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
       "contractions": "none",
@@ -990,7 +1010,9 @@
       "register": "ABN",
       "pronounForm": "ge/gij",
       "verbalTics": "\"ezel stap naar\" x2, \"stap naar voren\" x2, \"ezel stap naar voren\" x2",
-      "note": "markers: -ke diminutive:1; niet only"
+      "note": "markers: -ke diminutive:1; niet only",
+      "dutchShort": "HIE",
+      "scope": "main-non-donkey"
     },
     {
       "name": "Helpful Ass",
@@ -1254,8 +1276,12 @@
       "english": "Mme. Derriere",
       "dutch": "Mevr. Derrière",
       "category": "CHARACTER",
-      "nicknames": [],
-      "bio": "Business mogul and entrepreneur. Biggest philanthropist. She has business ventures in science, arts, and goods. Based on her investments, she basically owns Mecha as its de facto dictator. Can shoot animals in public without repercussions. Hypercapitalist.",
+      "nicknames": [
+        "Derriere",
+        "Mme Derriere",
+        "Derrière"
+      ],
+      "bio": "Factory matriarch — owns 'Mme. Derriere's Assorted Meats and Beauty Goods Factory' (Fabriek voor Gemengd Vlees en Schoonheidsproducten van Mevr. Derrière). 47 lines.",
       "gender": "female",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
@@ -1264,7 +1290,9 @@
       "register": "ABN",
       "pronounForm": "je/jij",
       "verbalTics": "\"mijn fabriek zijn\" x2, \"het lijkt me\" x2, \"lijkt me dat\" x2",
-      "note": "markers: -ke diminutive:2; niet only"
+      "note": "markers: -ke diminutive:2; niet only",
+      "dutchShort": "Derrière",
+      "scope": "main-non-donkey"
     },
     {
       "name": "Mr. Butte",
@@ -1512,13 +1540,17 @@
       "dutch": "Circusdirecteur Baptiste",
       "category": "CHARACTER",
       "nicknames": [
-        "Rico"
+        "Rico",
+        "Baptiste",
+        "Circusdirecteur"
       ],
-      "bio": "The Ringmaster of the Big City Circus. He's all about bums in seats. He speaks like Job from Arrested Development.",
+      "bio": "Circus director. EN 'Ringmaster Rico' → NL 'Circusdirecteur Baptiste'. 113 lines.",
       "gender": "male",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
-      "contractions": "none"
+      "contractions": "none",
+      "dutchShort": "Baptiste",
+      "scope": "main-non-donkey"
     },
     {
       "name": "Risky Ass",
@@ -2325,9 +2357,11 @@
       "dutch": "Dierendokter Dina",
       "category": "CHARACTER",
       "nicknames": [
-        "Rose"
+        "Rose",
+        "Dina",
+        "Dierendokter"
       ],
-      "bio": "A Zookkeeper at the Mecha City Zoo. She is very chipper and enthusiastic about everything. But she also has no morals and makes a deal with Derriere to give the donkeys over in exchange for money to buy a new phone.",
+      "bio": "Animal caretaker. EN 'Zookeeper Rose' is rendered in NL as 'Dierendokter Dina' (Animal Doctor Dina) — different role-translation. 140 lines.",
       "gender": "female",
       "dialogueStyle": "",
       "dutchDialogueStyle": "",
@@ -2336,7 +2370,9 @@
       "register": "ABN",
       "pronounForm": "je/jij",
       "verbalTics": "\"van de week\" x8, \"ezel van de\" x7, \"ezel van de week\" x7",
-      "note": "markers: -ke diminutive:12, amai:1; niet only"
+      "note": "markers: -ke diminutive:12, amai:1; niet only",
+      "dutchShort": "Dina",
+      "scope": "main-non-donkey"
     },
     {
       "name": "Astral Plane",
