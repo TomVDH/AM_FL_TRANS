@@ -609,7 +609,7 @@
       ],
       "bio": "The AI/robot version of Cole Butte (Bad Ass's pre-donkey human identity, real name Piet Vanscheetvelde). 154 lines.",
       "gender": "male",
-      "verified": false,
+      "verified": true,
       "scope": "main-non-donkey"
     },
     {
@@ -623,7 +623,7 @@
       ],
       "bio": "Mythological/religious figure. 90 lines. Reference to Lucius from Apuleius's 'The Golden Ass'.",
       "gender": "?",
-      "verified": false,
+      "verified": true,
       "scope": "main-non-donkey"
     },
     {
@@ -637,7 +637,7 @@
       ],
       "bio": "Donkey deity. Paired with Haw. Tom 2026-04-28: 'two donkey deities, zita and zeno' (corpus uses HIE/HAA). 29 lines.",
       "gender": "?",
-      "verified": false,
+      "verified": true,
       "scope": "main-non-donkey"
     },
     {
@@ -651,7 +651,7 @@
       ],
       "bio": "Donkey deity. Paired with Hee. 17 lines.",
       "gender": "?",
-      "verified": false,
+      "verified": true,
       "scope": "main-non-donkey"
     },
     {
@@ -667,7 +667,7 @@
       ],
       "bio": "Factory matriarch — owns 'Mme. Derriere's Assorted Meats and Beauty Goods Factory' (Fabriek voor Gemengd Vlees en Schoonheidsproducten van Mevr. Derrière). 47 lines.",
       "gender": "female",
-      "verified": false,
+      "verified": true,
       "scope": "main-non-donkey"
     },
     {
@@ -683,7 +683,7 @@
       ],
       "bio": "Animal caretaker. EN 'Zookeeper Rose' is rendered in NL as 'Dierendokter Dina' (Animal Doctor Dina) — different role-translation. 140 lines.",
       "gender": "female",
-      "verified": false,
+      "verified": true,
       "scope": "main-non-donkey"
     },
     {
@@ -699,7 +699,7 @@
       ],
       "bio": "Circus director. EN 'Ringmaster Rico' → NL 'Circusdirecteur Baptiste'. 113 lines.",
       "gender": "male",
-      "verified": false,
+      "verified": true,
       "scope": "main-non-donkey"
     },
     {
@@ -714,7 +714,7 @@
       ],
       "bio": "The boy. NL renders as 'Luukske Vermeulen' (Flemish diminutive Luukske + family name Vermeulen, shared with Grandma Kulan). 20 lines.",
       "gender": "male",
-      "verified": false,
+      "verified": true,
       "scope": "main-non-donkey"
     },
     {
@@ -729,7 +729,7 @@
       ],
       "bio": "The grandma. Shares family name Vermeulen with Child Joey (related). 15 lines.",
       "gender": "female",
-      "verified": false,
+      "verified": true,
       "scope": "main-non-donkey"
     }
   ],

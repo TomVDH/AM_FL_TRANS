@@ -353,7 +353,8 @@
       "pronounForm": "je/jij",
       "note": "markers: -ke diminutive:1; niet only",
       "dutchShort": "Luukske",
-      "scope": "main-non-donkey"
+      "scope": "main-non-donkey",
+      "verified": true
     },
     {
       "name": "Child Joey Kulan",
@@ -414,7 +415,8 @@
       "verbalTics": "\"de burgers van\" x4, \"burgers van mechalen\" x4, \"de burgers van mechalen\" x4, godverdomme (13x)",
       "note": "'k:19, 's:1; markers: godver:16, nie:8, da:7, nen/ne:6; negation: nie:8 niet:21",
       "dutchShort": "Piet",
-      "scope": "main-non-donkey"
+      "scope": "main-non-donkey",
+      "verified": true
     },
     {
       "name": "Cool Ass",
@@ -798,7 +800,8 @@
       "verbalTics": "\"wij zullen een\" x3, \"dat is niet\" x3, \"het astrale hiernamaals\" x2",
       "note": "'s:1; markers: -ke diminutive:11; niet only",
       "dutchShort": "Gouden",
-      "scope": "main-non-donkey"
+      "scope": "main-non-donkey",
+      "verified": true
     },
     {
       "name": "Grandma Kulan",
@@ -821,7 +824,8 @@
       "verbalTics": "\"kom we gaan\" x2",
       "note": "markers: -ke diminutive:2; niet only",
       "dutchShort": "Grootmoe",
-      "scope": "main-non-donkey"
+      "scope": "main-non-donkey",
+      "verified": true
     },
     {
       "name": "Greedy Ass",
@@ -976,7 +980,8 @@
       "verbalTics": "\"de materiële wereld\" x2",
       "note": "niet only",
       "dutchShort": "HAA",
-      "scope": "main-non-donkey"
+      "scope": "main-non-donkey",
+      "verified": true
     },
     {
       "name": "Healthy Ass",
@@ -1012,7 +1017,8 @@
       "verbalTics": "\"ezel stap naar\" x2, \"stap naar voren\" x2, \"ezel stap naar voren\" x2",
       "note": "markers: -ke diminutive:1; niet only",
       "dutchShort": "HIE",
-      "scope": "main-non-donkey"
+      "scope": "main-non-donkey",
+      "verified": true
     },
     {
       "name": "Helpful Ass",
@@ -1292,7 +1298,8 @@
       "verbalTics": "\"mijn fabriek zijn\" x2, \"het lijkt me\" x2, \"lijkt me dat\" x2",
       "note": "markers: -ke diminutive:2; niet only",
       "dutchShort": "Derrière",
-      "scope": "main-non-donkey"
+      "scope": "main-non-donkey",
+      "verified": true
     },
     {
       "name": "Mr. Butte",
@@ -1550,7 +1557,8 @@
       "dutchDialogueStyle": "",
       "contractions": "none",
       "dutchShort": "Baptiste",
-      "scope": "main-non-donkey"
+      "scope": "main-non-donkey",
+      "verified": true
     },
     {
       "name": "Risky Ass",
@@ -2372,7 +2380,8 @@
       "verbalTics": "\"van de week\" x8, \"ezel van de\" x7, \"ezel van de week\" x7",
       "note": "markers: -ke diminutive:12, amai:1; niet only",
       "dutchShort": "Dina",
-      "scope": "main-non-donkey"
+      "scope": "main-non-donkey",
+      "verified": true
     },
     {
       "name": "Astral Plane",
