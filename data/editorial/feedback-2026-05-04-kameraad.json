@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-04",
+    "scope": "NL Kameraad tag removal — lines where EN has no Comrade",
+    "scoping_source": "_corpus-scoping-2026-05-03.md §A10 + _batch-mn-scoping-2026-05-04.md",
+    "actual_count": 14
+  },
+  "corrections": [
+    {
+      "id": "KAMERAAD-001",
+      "rationale": "NL adds ', Kameraad' address tag; EN 'No Ass gets left behind.' has no Comrade. Strip tag.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J145",
+      "speaker": "Big Ass",
+      "english": "No Ass gets left behind.",
+      "current_nl": "Geen Ezel wordt achtergelaten, Kameraad.",
+      "proposed_nl": "Geen Ezel wordt achtergelaten."
+    },
+    {
+      "id": "KAMERAAD-002",
+      "rationale": "NL appends ', kameraaden'; EN 'rational beings.' has no Comrade. Strip tag.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J56",
+      "speaker": "Cole-Machine",
+      "english": "Yet, all of us here, both Humans and donkeys, are rational beings.",
+      "current_nl": "Toch zijn wij hier allemaal, zowel Mensen als Ezels, rationele wezens, kameraaden.",
+      "proposed_nl": "Toch zijn wij hier allemaal, zowel Mensen als Ezels, rationele wezens."
+    },
+    {
+      "id": "KAMERAAD-003",
+      "rationale": "NL embeds 'kameraad,' mid-sentence; EN 'Like you, these Asses...' has no Comrade. Strip tag and clean comma.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J66",
+      "speaker": "Cole-Machine",
+      "english": "Like you, these Asses think of themselves as intelligent animals.",
+      "current_nl": "Net als gij, kameraad, denken deze Ezels van zichzelf dat ze intelligente dieren zijn.",
+      "proposed_nl": "Net als gij denken deze Ezels van zichzelf dat ze intelligente dieren zijn."
+    },
+    {
+      "id": "KAMERAAD-004",
+      "rationale": "NL appends ', Kameraad'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J6",
+      "speaker": "Sturdy Ass",
+      "english": "It's not like you to nod off at your post.",
+      "current_nl": "'t Is niks voor jou om in te dommelen op je post, Kameraad.",
+      "proposed_nl": "'t Is niks voor jou om in te dommelen op je post."
+    },
+    {
+      "id": "KAMERAAD-005",
+      "rationale": "NL appends ', Kameraad'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J14",
+      "speaker": "Sturdy Ass",
+      "english": "Uncle Hard can't abandon his post.",
+      "current_nl": "Oom Bikkelharde kan zijn post niet verlaten, Kameraad.",
+      "proposed_nl": "Oom Bikkelharde kan zijn post niet verlaten."
+    },
+    {
+      "id": "KAMERAAD-006",
+      "rationale": "NL appends ', Kameraad'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J15",
+      "speaker": "Sturdy Ass",
+      "english": "The Humans are still trying to breach the Barricades and our Territory must be protected.",
+      "current_nl": "De Mensen proberen nog steeds de Barricades te doorbreken en ons Territorium moet beschermd worden, Kameraad.",
+      "proposed_nl": "De Mensen proberen nog steeds de Barricades te doorbreken en ons Territorium moet beschermd worden."
+    },
+    {
+      "id": "KAMERAAD-007",
+      "rationale": "NL appends ', Kameraad?'; EN 'Which way should we go?' has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J33",
+      "speaker": "Sturdy Ass",
+      "english": "Which way should we go?",
+      "current_nl": "Welke weg moeten we nemen, Kameraad?",
+      "proposed_nl": "Welke weg moeten we nemen?"
+    },
+    {
+      "id": "KAMERAAD-008",
+      "rationale": "NL appends ', Kameraad'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J63",
+      "speaker": "Sturdy Ass",
+      "english": "The structure lacks integrity and we can't fit through the door.",
+      "current_nl": "De structuur mist elke integriteit en we passen niet door die deur, Kameraad.",
+      "proposed_nl": "De structuur mist elke integriteit en we passen niet door die deur."
+    },
+    {
+      "id": "KAMERAAD-009",
+      "rationale": "NL appends ', kameraad?'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J74",
+      "speaker": "Sturdy Ass",
+      "english": "Is everything all right in there? Do you need any help?",
+      "current_nl": "Is alles in orde daarbinnen? Heb je hulp nodig, kameraad?",
+      "proposed_nl": "Is alles in orde daarbinnen? Heb je hulp nodig?"
+    },
+    {
+      "id": "KAMERAAD-010",
+      "rationale": "NL appends ', Kameraad?'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J78",
+      "speaker": "Sturdy Ass",
+      "english": "Would you like me to show you the Old Church next?",
+      "current_nl": "Zal ik je de Oude Kerk laten zien, Kameraad?",
+      "proposed_nl": "Zal ik je de Oude Kerk laten zien?"
+    },
+    {
+      "id": "KAMERAAD-011",
+      "rationale": "NL appends ', kameraad?'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J135",
+      "speaker": "Sturdy Ass",
+      "english": "What should I call this?",
+      "current_nl": "Hoe zou ik dit noemen, kameraad?",
+      "proposed_nl": "Hoe zou ik dit noemen?"
+    },
+    {
+      "id": "KAMERAAD-012",
+      "rationale": "NL appends ', Kameraad'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J183",
+      "speaker": "Sturdy Ass",
+      "english": "Sad, this Memorial Garden is coming along beautifully.",
+      "current_nl": "Triestige, dit Herdenkingstuintje wordt echt prachtig, Kameraad.",
+      "proposed_nl": "Triestige, dit Herdenkingstuintje wordt echt prachtig."
+    },
+    {
+      "id": "KAMERAAD-013",
+      "rationale": "NL appends ', Kameraad?'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J219",
+      "speaker": "Sturdy Ass",
+      "english": "What's the perfect title to commemorate the opening of Bottoms Up?",
+      "current_nl": "Wat is nu de perfecte titel om de opening van Bottoms Up te vieren, Kameraad?",
+      "proposed_nl": "Wat is nu de perfecte titel om de opening van Bottoms Up te vieren?"
+    },
+    {
+      "id": "KAMERAAD-014",
+      "rationale": "NL appends ', Kameraad'; EN has no Comrade. Strip tag.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J262",
+      "speaker": "Sturdy Ass",
+      "english": "Help? We don't help traitors.",
+      "current_nl": "Helpen? Wij helpen geen verraders, Kameraad.",
+      "proposed_nl": "Helpen? Wij helpen geen verraders."
+    }
+  ]
+}

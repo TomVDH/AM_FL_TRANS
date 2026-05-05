@@ -1,0 +1,23 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-04",
+    "scope": "English fragment in Slow Ass NL — 1 real hit from 12 flagged",
+    "scoping_source": "_corpus-scoping-2026-05-03.md §A11 + _batch-mn-scoping-2026-05-04.md",
+    "actual_count": 1,
+    "false_positives": 11,
+    "false_positive_note": "no/is/had are Dutch substrings; Sorry kept as naturalized Flemish loanword"
+  },
+  "corrections": [
+    {
+      "id": "SLOW-EN-001",
+      "rationale": "Translator left both English 'P-p-please' and Dutch 'alsjebbblieft' in NL cell — translation artifact. Drop English word; stutter Dutch only.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J339",
+      "speaker": "Slow Ass",
+      "english": "Sturdy, will you come with us? P-p-please?",
+      "current_nl": "Stevige, kom je met ons mee? P-p-please... alsjebbblieft?",
+      "proposed_nl": "Stevige, kom je met ons mee? P-p-p-alsjeblieft?"
+    }
+  ]
+}
