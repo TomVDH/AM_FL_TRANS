@@ -1,0 +1,42 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-04",
+    "scope": "Song article lock: de → het (Hemelvaarts-zang-der-Ezel-zielen is het-woord)",
+    "actual_count": 3
+  },
+  "corrections": [
+    {
+      "id": "SONG-ART-001",
+      "rationale": "Article lock 2026-05-04: het Hemelvaarts-zang-der-Ezel-zielen always. de → het.",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J42",
+      "speaker": "Slow Ass",
+      "english": "And I'll sing the Song of Ascension for Trusty.",
+      "current_nl": "En ik zal de Hemelvaarts-zang-der-Ezel-zielen voor Trouwe zingen.",
+      "proposed_nl": "En ik zal het Hemelvaarts-zang-der-Ezel-zielen voor Trouwe zingen."
+    },
+    {
+      "id": "SONG-ART-002",
+      "rationale": "Article lock 2026-05-04: het Hemelvaarts-zang-der-Ezel-zielen always. de → het.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J5",
+      "speaker": "Big Ass",
+      "english": "Wait. We should sing the Song of Ascension for our Comrades before we leave.",
+      "current_nl": "Wacht. Voor we vertrekken moeten we de Hemelvaarts-zang-der-Ezel-zielen zingen voor onze Kameraden.",
+      "proposed_nl": "Wacht. Voor we vertrekken moeten we het Hemelvaarts-zang-der-Ezel-zielen zingen voor onze Kameraden."
+    },
+    {
+      "id": "SONG-ART-003",
+      "rationale": "Article lock 2026-05-04: het Hemelvaarts-zang-der-Ezel-zielen always. de → het.",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J76",
+      "speaker": "Cole-Machine",
+      "english": "As Lazy died, she tried to sing the Song of Ascension for herself.",
+      "current_nl": "Toen Luie stierf, probeerde ze de Hemelvaarts-zang-der-Ezel-zielen voor zichzelf te zingen.",
+      "proposed_nl": "Toen Luie stierf, probeerde ze het Hemelvaarts-zang-der-Ezel-zielen voor zichzelf te zingen."
+    }
+  ]
+}
