@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-03",
+    "scope": "Bar rename: Poepegaatje → De Zatten Ezel",
+    "scoping_source": "_corpus-scoping-2026-05-03.md §A1",
+    "actual_count": 5
+  },
+  "corrections": [
+    {
+      "id": "POEPEGAATJE-001",
+      "rationale": "Decisions lock 2026-05-03 §A1: Bar Poepegaatje → De Zatten Ezel. Audience couldn't read Poepegaatje.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Thirsty_localization",
+      "cell": "J21",
+      "speaker": "Thirsty Ass",
+      "english": "Plus, I need more customers! I finally opened The Bottom's Up Ba—",
+      "current_nl": "Plus, 'k heb meer klanten nodig héé! 'k Heb eindelijk het Poepegaatje geopend, dat ca—",
+      "proposed_nl": "Plus, 'k heb meer klanten nodig héé! 'k Heb eindelijk De Zatten Ezel geopend, dat ca—"
+    },
+    {
+      "id": "POEPEGAATJE-002",
+      "rationale": "Decisions lock 2026-05-03 §A1: Bar Poepegaatje → De Zatten Ezel. Audience couldn't read Poepegaatje.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J110",
+      "speaker": "Thirsty Ass",
+      "english": "Tell the Humans that we want to run our own businesses, like the Bottoms Up Bar!",
+      "current_nl": "Zeg tegen de Mensen dat wij onze eigen zaakjes willen runnen, zoals het Poepegaatje, héé!",
+      "proposed_nl": "Zeg tegen de Mensen dat wij onze eigen zaakjes willen runnen, zoals De Zatten Ezel, héé!"
+    },
+    {
+      "id": "POEPEGAATJE-003",
+      "rationale": "Decisions lock 2026-05-03 §A1: Bar Poepegaatje → De Zatten Ezel. Audience couldn't read Poepegaatje.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J82",
+      "speaker": "Thirsty Ass",
+      "english": "I’d call it... Bottoms Up!",
+      "current_nl": "Ik zou 't noemen... Poepegaatje!",
+      "proposed_nl": "Ik zou 't noemen... De Zatten Ezel!"
+    },
+    {
+      "id": "POEPEGAATJE-004",
+      "rationale": "Decisions lock 2026-05-03 §A1: Bar Poepegaatje → De Zatten Ezel. Audience couldn't read Poepegaatje.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J195",
+      "speaker": "Thirsty Ass",
+      "english": "Mosey on over and take a sip of my new drink special: The Pail Ale!",
+      "current_nl": "Kom maar efkes afgezakt en proef mijn nieuwe drankske: een Poepegaatje, héé!",
+      "proposed_nl": "Kom maar efkes afgezakt en proef mijn nieuwe drankske: De Zatten Ezel, héé!"
+    },
+    {
+      "id": "POEPEGAATJE-005",
+      "rationale": "Decisions lock 2026-05-03 §A1: Bar Poepegaatje → De Zatten Ezel. Audience couldn't read Poepegaatje.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J196",
+      "speaker": "Thirsty Ass",
+      "english": "Tonight, The Bottoms Up Bar is finally openin'!",
+      "current_nl": "Vanavond gaat 't \"Poepegaatje\"  eindelijk open, héé!",
+      "proposed_nl": "Vanavond gaat 't \"De Zatten Ezel\"  eindelijk open, héé!"
+    }
+  ]
+}

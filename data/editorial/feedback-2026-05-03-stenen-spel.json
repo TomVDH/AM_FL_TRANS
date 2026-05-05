@@ -1,0 +1,142 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-03",
+    "scope": "Stenen-Spel → Keien-Spel",
+    "scoping_source": "_corpus-scoping-2026-05-03.md §A3",
+    "actual_count": 12
+  },
+  "corrections": [
+    {
+      "id": "STENEN-001",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J47",
+      "speaker": "{$NewName}",
+      "english": "\"Anyone want to play ROCKS?\"",
+      "current_nl": "\"Heeft iemand zin om STENEN-SPEL te spelen?\"",
+      "proposed_nl": "\"Heeft iemand zin om KEIEN-SPEL te spelen?\""
+    },
+    {
+      "id": "STENEN-002",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J16",
+      "speaker": "{$NewName}",
+      "english": "Do you want to watch me play Rocks, Uncle Sad?",
+      "current_nl": "Wil je kijken naar mijn Stenen-spel, Nonkel Triestigaard?",
+      "proposed_nl": "Wil je kijken naar mijn Keien-spel, Nonkel Triestigaard?"
+    },
+    {
+      "id": "STENEN-003",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J54",
+      "speaker": "92",
+      "english": "Do you want to watch me play Rocks?",
+      "current_nl": "Wil je kijken naar mijn Stenen-spel?",
+      "proposed_nl": "Wil je kijken naar mijn Keien-spel?"
+    },
+    {
+      "id": "STENEN-004",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J55",
+      "speaker": "{$NewName}",
+      "english": "Do you want to watch me play Rocks?",
+      "current_nl": "Wil je kijken naar mijn Stenen-spel?",
+      "proposed_nl": "Wil je kijken naar mijn Keien-spel?"
+    },
+    {
+      "id": "STENEN-005",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J85",
+      "speaker": "{$NewName}",
+      "english": "Uncle Kick, Uncle Hard, do you want to watch me play Rocks?",
+      "current_nl": "Nonkel Hoef, Nonkel Stoer, willen jullie kijken naar mijn Stenen-spel?",
+      "proposed_nl": "Nonkel Hoef, Nonkel Stoer, willen jullie kijken naar mijn Keien-spel?"
+    },
+    {
+      "id": "STENEN-006",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J120",
+      "speaker": "{$NewName}",
+      "english": "Will you watch me play Rocks, Uncle Slow?",
+      "current_nl": "Wil je kijken naar mijn Stenen-spel, Oom Sloom?",
+      "proposed_nl": "Wil je kijken naar mijn Keien-spel, Oom Sloom?"
+    },
+    {
+      "id": "STENEN-007",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J68",
+      "speaker": "",
+      "english": "Lemme guess—{$NewName} still spending all her time inside playin' Rocks with Bad Ass?",
+      "current_nl": "Laat me raden—{$NewName} zit nog steeds de hele dag binnen Stenen-spel te spelen met Stoere Ezel?",
+      "proposed_nl": "Laat me raden—{$NewName} zit nog steeds de hele dag binnen Keien-spel te spelen met Stoere Ezel?"
+    },
+    {
+      "id": "STENEN-008",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BattleHard_localization",
+      "cell": "J42",
+      "speaker": "19",
+      "english": "Rocks",
+      "current_nl": "Stenen-spel",
+      "proposed_nl": "Keien-spel"
+    },
+    {
+      "id": "STENEN-009",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J79",
+      "speaker": "{$NewName}",
+      "english": "Ohh... I just remembered I promised Uncle Bad Ass we'd play Rocks!",
+      "current_nl": "Ohh... ik herinner me net dat ik Oom Stoere Ezel beloofd heb dat we Stenen-spel zouden spelen!",
+      "proposed_nl": "Ohh... ik herinner me net dat ik Oom Stoere Ezel beloofd heb dat we Keien-spel zouden spelen!"
+    },
+    {
+      "id": "STENEN-010",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J202",
+      "speaker": "Sturdy Ass",
+      "english": "{$NewName} spends all her time inside playin' Rocks with Bad Ass, and isn't interested in learning about our Traditions.",
+      "current_nl": "{$NewName} zit de hele tijd binnen Stenen-spel te spelen met Stoere Ezel, en heeft geen enkele interesse in onze Tradities.",
+      "proposed_nl": "{$NewName} zit de hele tijd binnen Keien-spel te spelen met Stoere Ezel, en heeft geen enkele interesse in onze Tradities."
+    },
+    {
+      "id": "STENEN-011",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J24",
+      "speaker": "{$NewName}",
+      "english": "She still thinks we are playing 'Rocks' down here everyday...",
+      "current_nl": "Ze denkt nog steeds dat we hier elke dag 'Stenen-spel' aan het spelen zijn...",
+      "proposed_nl": "Ze denkt nog steeds dat we hier elke dag 'Keien-spel' aan het spelen zijn..."
+    },
+    {
+      "id": "STENEN-012",
+      "rationale": "Decisions lock 2026-05-03 §A3: Stenen-Spel → Keien-Spel (strong enforcement).",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J40",
+      "speaker": "Sturdy Ass",
+      "english": "I thought you were playing ROCKS with your UNCLE!",
+      "current_nl": "Ik dacht dat je STENEN-SPEL aan 't spelen was met je NONKEL!",
+      "proposed_nl": "Ik dacht dat je KEIEN-SPEL aan 't spelen was met je NONKEL!"
+    }
+  ]
+}

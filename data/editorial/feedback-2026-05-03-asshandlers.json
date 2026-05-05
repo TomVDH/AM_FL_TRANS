@@ -1,0 +1,9 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-03",
+    "scope": "Asshandler typo Ezenzeuler → Ezelzeuler (Zita already done on remote per pre-pull diff)",
+    "scoping_source": "_corpus-scoping-2026-05-03.md §A2",
+    "actual_count": 0
+  },
+  "corrections": []
+}

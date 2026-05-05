@@ -1,0 +1,208 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-03",
+    "scope": "Sad Ass whimper standardization to *Boe-hoe-hoe*",
+    "scoping_source": "_corpus-scoping-2026-05-03.md §A8",
+    "actual_count": 18
+  },
+  "corrections": [
+    {
+      "id": "WHIMPER-001",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Sad_localization",
+      "cell": "J4",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-002",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J82",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-003",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J88",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-004",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J91",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-005",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J48",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boe-hoe-hoe-hoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-006",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J49",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boe-hoe-hoe-hoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-007",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J25",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-008",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J29",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-009",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J3",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-010",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J16",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-011",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_Exit_localization",
+      "cell": "J12",
+      "speaker": "Sad Ass",
+      "english": "*whimper* Take care, Comrade.",
+      "current_nl": "*boehoehoe* Het ga je goed, Kameraad.",
+      "proposed_nl": "*Boe-hoe-hoe* Het ga je goed, Kameraad."
+    },
+    {
+      "id": "WHIMPER-012",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_Exit_localization",
+      "cell": "J13",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-013",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J214",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boe-hoe-hoe-hoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-014",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J118",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boe-hoe-hoe-hoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-015",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J123",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boe-hoe-hoe-hoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-016",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J4",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-017",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigJob_localization",
+      "cell": "J35",
+      "speaker": "Sad Ass",
+      "english": "And your Soul will be stuck here... *whimper*",
+      "current_nl": "En je Ziel zal hier vastzitten... *boehoehoe*",
+      "proposed_nl": "En je Ziel zal hier vastzitten... *Boe-hoe-hoe*"
+    },
+    {
+      "id": "WHIMPER-018",
+      "rationale": "Decisions lock 2026-05-03 §A8: Sad Ass whimper canonicalized as '*Boe-hoe-hoe*' (capital B, hyphens, 3 hoe-segments). All 18 cells across 3 prior variants standardize to this form.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_CityStreet_localization",
+      "cell": "J5",
+      "speaker": "Sad Ass",
+      "english": "*whimper*",
+      "current_nl": "*boehoehoe*",
+      "proposed_nl": "*Boe-hoe-hoe*"
+    }
+  ]
+}

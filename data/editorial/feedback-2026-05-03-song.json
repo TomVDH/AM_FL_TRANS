@@ -1,0 +1,88 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-03",
+    "scope": "Song of Ascension Dutch title",
+    "scoping_source": "_corpus-scoping-2026-05-03.md §A3",
+    "actual_count": 7,
+    "note": "Cells with 'hemelvaartszang' in any form — only those with the no-spaces form get auto-replaced. Cells with 'hemelvaartszang' but different surrounding text need manual review."
+  },
+  "corrections": [
+    {
+      "id": "SONG-001",
+      "rationale": "Decisions lock 2026-05-03 §A3: Song of Ascension Dutch title locked as 'Hemelvaarts-zang-der-Ezel-zielen' (capital Ezel, singular form).",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J47",
+      "speaker": "Sturdy Ass",
+      "english": "Someone has to sing the Song of Ascension to make sure his Ass Soul can reach the Astral Plane and be reassigned.",
+      "current_nl": "Iemand moet het ezelenhemelvaartszangderzielen zingen zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen.",
+      "proposed_nl": "Iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen."
+    },
+    {
+      "id": "SONG-002",
+      "rationale": "Decisions lock 2026-05-03 §A3: Song of Ascension Dutch title locked as 'Hemelvaarts-zang-der-Ezel-zielen' (capital Ezel, singular form).",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J43",
+      "speaker": "Big Ass",
+      "english": "Slow Ass should stay behind and sing the Song of Ascension for Trusty.",
+      "current_nl": "Slome Ezel moet achterblijven en het ezelenhemelvaartszangderzielen aan Trouwe Ezel voordragen.",
+      "proposed_nl": "Slome Ezel moet achterblijven en het Hemelvaarts-zang-der-Ezel-zielen aan Trouwe Ezel voordragen."
+    },
+    {
+      "id": "SONG-003",
+      "rationale": "Decisions lock 2026-05-03 §A3: Song of Ascension Dutch title locked as 'Hemelvaarts-zang-der-Ezel-zielen' (capital Ezel, singular form).",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J42",
+      "speaker": "Slow Ass",
+      "english": "And I'll sing the Song of Ascension for Trusty.",
+      "current_nl": "En ik zal de Ezelenhemelvaartszangderzielen voor Trouwe zingen.",
+      "proposed_nl": "En ik zal de Hemelvaarts-zang-der-Ezel-zielen voor Trouwe zingen."
+    },
+    {
+      "id": "SONG-004",
+      "rationale": "Decisions lock 2026-05-03 §A3: Song of Ascension Dutch title locked as 'Hemelvaarts-zang-der-Ezel-zielen' (capital Ezel, singular form).",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J21",
+      "speaker": "{$NewName}",
+      "english": "I could try to sing the Song of Ascension for you now!",
+      "current_nl": "Ik kan het ezelenhemelvaartszangderzielen voor u proberen zingen!",
+      "proposed_nl": "Ik kan het Hemelvaarts-zang-der-Ezel-zielen voor u proberen zingen!"
+    },
+    {
+      "id": "SONG-005",
+      "rationale": "Decisions lock 2026-05-03 §A3: Song of Ascension Dutch title locked as 'Hemelvaarts-zang-der-Ezel-zielen' (capital Ezel, singular form).",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding3_localization",
+      "cell": "J6",
+      "speaker": "Proper Ass",
+      "english": "Never fear, we have a provision of shared responsibility for singing the Song of Ascension for the Asses who go before us.",
+      "current_nl": "Vrees niet, wij zingen trots het ezelenhemelvaartszangderzielen voor de Ezels die ons zijn voorgegaan, dat is onze belofte.",
+      "proposed_nl": "Vrees niet, wij zingen trots het Hemelvaarts-zang-der-Ezel-zielen voor de Ezels die ons zijn voorgegaan, dat is onze belofte."
+    },
+    {
+      "id": "SONG-006",
+      "rationale": "Decisions lock 2026-05-03 §A3: Song of Ascension Dutch title locked as 'Hemelvaarts-zang-der-Ezel-zielen' (capital Ezel, singular form).",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J5",
+      "speaker": "Big Ass",
+      "english": "Wait. We should sing the Song of Ascension for our Comrades before we leave.",
+      "current_nl": "Wacht. Voor we vertrekken moeten we de ezelenhemelvaartszangderzielen zingen voor onze Kameraden.",
+      "proposed_nl": "Wacht. Voor we vertrekken moeten we de Hemelvaarts-zang-der-Ezel-zielen zingen voor onze Kameraden."
+    },
+    {
+      "id": "SONG-007",
+      "rationale": "Decisions lock 2026-05-03 §A3: Song of Ascension Dutch title locked as 'Hemelvaarts-zang-der-Ezel-zielen' (capital Ezel, singular form).",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J76",
+      "speaker": "Cole-Machine",
+      "english": "As Lazy died, she tried to sing the Song of Ascension for herself.",
+      "current_nl": "Toen Luie stierf, probeerde ze de Ezelenhemelvaartszangderzielen voor zichzelf te zingen.",
+      "proposed_nl": "Toen Luie stierf, probeerde ze de Hemelvaarts-zang-der-Ezel-zielen voor zichzelf te zingen."
+    }
+  ]
+}

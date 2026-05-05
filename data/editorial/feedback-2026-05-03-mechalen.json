@@ -1,0 +1,341 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-03",
+    "scope": "Mechalen → Technopolis sweep",
+    "scoping_source": "_corpus-scoping-2026-05-03.md §A1",
+    "expected_count": 31,
+    "actual_count": 30
+  },
+  "corrections": [
+    {
+      "id": "MECHALEN-001",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J6",
+      "speaker": "Radio Host Marcos",
+      "english": "Mecha's Government building has been overrun by donkeys.",
+      "current_nl": "Het regeringsgebouw van Mechalen is overrompeld door ezels.",
+      "proposed_nl": "Het regeringsgebouw van Technopolis is overrompeld door ezels."
+    },
+    {
+      "id": "MECHALEN-002",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J12",
+      "speaker": "Radio Host Marcos",
+      "english": "Up next, the #2 song on Mecha's Top 40! asi9 by David Mesiha.",
+      "current_nl": "En dan nu, de nummer 2 op Mechalens Top 40! van David Mesiha.",
+      "proposed_nl": "En dan nu, de nummer 2 op Technopolis' Top 40! van David Mesiha."
+    },
+    {
+      "id": "MECHALEN-003",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J69",
+      "speaker": "Cole-Machine",
+      "english": "Mecha's Parliament is a place of democracy!",
+      "current_nl": "Het parlement van Mechalen is een plek van democratie!",
+      "proposed_nl": "Het parlement van Technopolis is een plek van democratie!"
+    },
+    {
+      "id": "MECHALEN-004",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J74",
+      "speaker": "Cole-Machine",
+      "english": "Mecha's citizens are rational beings!",
+      "current_nl": "De burgers van Mechalen zijn rationele wezens!",
+      "proposed_nl": "De burgers van Technopolis zijn rationele wezens!"
+    },
+    {
+      "id": "MECHALEN-005",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J81",
+      "speaker": "Cole-Machine",
+      "english": "But Mecha's citizens are not like the others. They value science, progress, and reason.",
+      "current_nl": "Maar de burgers van Mechalen zijn niet zoals de rest. Die hechten waarde aan wetenschap, vooruitgang, en rede.",
+      "proposed_nl": "Maar de burgers van Technopolis zijn niet zoals de rest. Die hechten waarde aan wetenschap, vooruitgang, en rede."
+    },
+    {
+      "id": "MECHALEN-006",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J83",
+      "speaker": "Cole-Machine",
+      "english": "If you tell me your demands, I will relay them to the citizens of Mecha in their own language.",
+      "current_nl": "Als ge mij uw eisen vertelt, kameraden, dan geef 'k die door aan de burgers van Mechalen — in hun eigen taal.",
+      "proposed_nl": "Als ge mij uw eisen vertelt, kameraden, dan geef 'k die door aan de burgers van Technopolis — in hun eigen taal."
+    },
+    {
+      "id": "MECHALEN-007",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J28",
+      "speaker": "Cole-Machine",
+      "english": "People of Mecha.",
+      "current_nl": "Kameraden van Mechalen.",
+      "proposed_nl": "Kameraden van Technopolis."
+    },
+    {
+      "id": "MECHALEN-008",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J30",
+      "speaker": "Cole-Machine",
+      "english": "When you think of Mecha—what do you think of?",
+      "current_nl": "Als ge aan Mechalen denkt—waar denkt ge dan aan?",
+      "proposed_nl": "Als ge aan Technopolis denkt—waar denkt ge dan aan?"
+    },
+    {
+      "id": "MECHALEN-009",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J33",
+      "speaker": "Cole-Machine",
+      "english": "But what do you think these donkeys think of when they think of Mecha?",
+      "current_nl": "Maar wa denkt ge dat die Ezels denken als ze aan Mechalen denken?",
+      "proposed_nl": "Maar wa denkt ge dat die Ezels denken als ze aan Technopolis denken?"
+    },
+    {
+      "id": "MECHALEN-010",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J44",
+      "speaker": "Cole-Machine",
+      "english": "And you are not happy about their occupation because you do not see them as equals to the citizens of Mecha.",
+      "current_nl": "En ge zijt niet content over hun bezetting omdat ge die Ezels niet als gelijken ziet van de burgers van Mechalen.",
+      "proposed_nl": "En ge zijt niet content over hun bezetting omdat ge die Ezels niet als gelijken ziet van de burgers van Technopolis."
+    },
+    {
+      "id": "MECHALEN-011",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J93",
+      "speaker": " Derriere",
+      "english": "And I'm Mme. Derriere—Mecha's most philanthropic and generous employer.",
+      "current_nl": "En ik ben Mevr. Derrière—de meest filantropische en genereuze werkgever van Mechalen.",
+      "proposed_nl": "En ik ben Mevr. Derrière—de meest filantropische en genereuze werkgever van Technopolis."
+    },
+    {
+      "id": "MECHALEN-012",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J3",
+      "speaker": "Radio Host Marcos",
+      "english": "*ksh* Welcome back listeners to Mecha in the Morning!",
+      "current_nl": "*tsj* Beste luisteraars, welkom terug bij Mechalen Morgen!",
+      "proposed_nl": "*tsj* Beste luisteraars, welkom terug bij Technopolis Morgen!"
+    },
+    {
+      "id": "MECHALEN-013",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J4",
+      "speaker": "Radio Host Marcos",
+      "english": "We're here with Mecha City's most philanthropic and generous employer Mme. Derriere.",
+      "current_nl": "We zijn hier met de grootste en meest filantropische werkgever in Mechalen: Mevrouw Derrière.",
+      "proposed_nl": "We zijn hier met de grootste en meest filantropische werkgever in Technopolis: Mevrouw Derrière."
+    },
+    {
+      "id": "MECHALEN-014",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J20",
+      "speaker": "Radio Host Marcos",
+      "english": "If you need a place to take the kids, get your butts to the Mecha City Zoo, or see the new show at the Big City Circus!",
+      "current_nl": "Mocht je een plek zoeken om met je familie heen te gaan, rep je achterwerk naar de zoo van Mechalen! Of ga naar de nieuwe show in het stadscircus!",
+      "proposed_nl": "Mocht je een plek zoeken om met je familie heen te gaan, rep je achterwerk naar de zoo van Technopolis! Of ga naar de nieuwe show in het stadscircus!"
+    },
+    {
+      "id": "MECHALEN-015",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J7",
+      "speaker": "2",
+      "english": "June 27th\\nThese are dire times for the mining business. I had to lay off more workers today and we're running out of money. Mme. Derriere made another offer to buy my donkeys, but I just can't bring myself to sell them. The only thing I can depend on are my donkeys!\\n\\nEverybody is crazy for Green Energy these days. Nobody cares for coal anymore.\\n\\nJune 28th\\nEven if I had more money, there's no one to hire. All the youth are leaving for Mecha City to find better paid work at Mme. Derriere's Factory. It's going to be another difficult winter.",
+      "current_nl": "27 juni\\nDit zijn barre tijden voor de mijnbouw. 'k Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn ezels, maar 'k kan ze gewoon niet verkopen. Het enige waar ik op kan rekenen zijn mijn ezels!\\n\\nIedereen is tegenwoordig zot van Groene Energie. Niemand geeft nog om kolen.\\n\\n28 juni\\nZelfs al had ik meer geld, er is niemand om aan te werven. Al de jongeren trekken naar Mechalen om beter betaald werk te vinden in de Fabriek van Mevr. Derrière. Het wordt weer een moeilijke winter.",
+      "proposed_nl": "27 juni\\nDit zijn barre tijden voor de mijnbouw. 'k Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn ezels, maar 'k kan ze gewoon niet verkopen. Het enige waar ik op kan rekenen zijn mijn ezels!\\n\\nIedereen is tegenwoordig zot van Groene Energie. Niemand geeft nog om kolen.\\n\\n28 juni\\nZelfs al had ik meer geld, er is niemand om aan te werven. Al de jongeren trekken naar Technopolis om beter betaald werk te vinden in de Fabriek van Mevr. Derrière. Het wordt weer een moeilijke winter."
+    },
+    {
+      "id": "MECHALEN-016",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J17",
+      "speaker": "6",
+      "english": "Child artist Joey Kulan charms the pants off the judges and wins the Bumpkin regional drawing competition for youth 12 and under. His work will be on display at the Mecha City Gallery until the end of the month. His Grandmother is so proud.",
+      "current_nl": "Kinderkunstenaar Luukse Vermeulen charmeert de jury en wint de regionale tekenwedstrijd van Klotegem voor kinderen 12 jaar en jonger. Zijn werk zal te zien zijn in het Stadsmuseum van Mechalen tot het einde van de maand. Zijn Grootmoeder is erg trots.",
+      "proposed_nl": "Kinderkunstenaar Luukse Vermeulen charmeert de jury en wint de regionale tekenwedstrijd van Klotegem voor kinderen 12 jaar en jonger. Zijn werk zal te zien zijn in het Stadsmuseum van Technopolis tot het einde van de maand. Zijn Grootmoeder is erg trots."
+    },
+    {
+      "id": "MECHALEN-017",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_200_localization",
+      "cell": "J4",
+      "speaker": "2",
+      "english": "July 24th\\nButte Mine is officially for sale. I'm praying that someone from Mecha City will step up and buy it. I always imagined that Cole would take my place, but...\\n\\nThis place has to survive, somehow, but it's hard to let go of what you love.",
+      "current_nl": "24 juli\\nVanscheetvelde Kolen & Industrie staat officieel te koop. 'k hoop dat iemand van Mechalen het zal kopen. 'k Had altijd gedacht dat Piet mijn plaats zou innemen, maar...\\n\\nDeze plek moet overleven, op één of andere manier, maar 't is moeilijk om los te laten wat ge graag ziet.",
+      "proposed_nl": "24 juli\\nVanscheetvelde Kolen & Industrie staat officieel te koop. 'k hoop dat iemand van Technopolis het zal kopen. 'k Had altijd gedacht dat Piet mijn plaats zou innemen, maar...\\n\\nDeze plek moet overleven, op één of andere manier, maar 't is moeilijk om los te laten wat ge graag ziet."
+    },
+    {
+      "id": "MECHALEN-018",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J27",
+      "speaker": "Ringmaster Rico",
+      "english": "Mecha City's most benevolent benefactor, Mme. Derriere!",
+      "current_nl": "De meest welvarende weldoener van Mechalen, Mevr. Derrière!",
+      "proposed_nl": "De meest welvarende weldoener van Technopolis, Mevr. Derrière!"
+    },
+    {
+      "id": "MECHALEN-019",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J33",
+      "speaker": "Miner Jenny",
+      "english": "Maybe I should leave and get a job in Mecha City...",
+      "current_nl": "Misschien moet ik gewoon vertrekken en een baan zoeken in Mechalen...",
+      "proposed_nl": "Misschien moet ik gewoon vertrekken en een baan zoeken in Technopolis..."
+    },
+    {
+      "id": "MECHALEN-020",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J39",
+      "speaker": "Miner Jenny",
+      "english": "I never made it to Mecha City...",
+      "current_nl": "Ik heb Mechalen nooit gehaald...",
+      "proposed_nl": "Ik heb Technopolis nooit gehaald..."
+    },
+    {
+      "id": "MECHALEN-021",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J35",
+      "speaker": "Bad Ass",
+      "english": "Mecha City.",
+      "current_nl": "Mechalen.",
+      "proposed_nl": "Technopolis."
+    },
+    {
+      "id": "MECHALEN-022",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigBattle_localization",
+      "cell": "J13",
+      "speaker": " Derriere",
+      "english": "I have a Masters in Business Administration from Mecha University.",
+      "current_nl": "Ik heb een Master in Business Administration van de Universiteit van Mechalen.",
+      "proposed_nl": "Ik heb een Master in Business Administration van de Universiteit van Technopolis."
+    },
+    {
+      "id": "MECHALEN-023",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J5",
+      "speaker": "Cole-Machine",
+      "english": "I can finally go to Mecha City!",
+      "current_nl": "'k Kan eindelijk naar Mechalen!",
+      "proposed_nl": "'k Kan eindelijk naar Technopolis!"
+    },
+    {
+      "id": "MECHALEN-024",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J18",
+      "speaker": "{$NewName}",
+      "english": "Are you going to Mecha City now...?",
+      "current_nl": "Ga je nu naar Mechalen...?",
+      "proposed_nl": "Ga je nu naar Technopolis...?"
+    },
+    {
+      "id": "MECHALEN-025",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J23",
+      "speaker": "{$NewName}",
+      "english": "But I want to see Mecha City too! We can go together!",
+      "current_nl": "Maar ik wil Mechalen ook zien! We kunnen samen gaan!",
+      "proposed_nl": "Maar ik wil Technopolis ook zien! We kunnen samen gaan!"
+    },
+    {
+      "id": "MECHALEN-026",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J86",
+      "speaker": "Cole-Machine",
+      "english": "Can the first stop be Mecha City?",
+      "current_nl": "Kan de eerste stop Mechalen zijn?",
+      "proposed_nl": "Kan de eerste stop Technopolis zijn?"
+    },
+    {
+      "id": "MECHALEN-027",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J99",
+      "speaker": "Cole-Machine",
+      "english": "I'll see you in Mecha City.",
+      "current_nl": "'k Zie u in Mechalen.",
+      "proposed_nl": "'k Zie u in Technopolis."
+    },
+    {
+      "id": "MECHALEN-028",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J109",
+      "speaker": "{$NewName}",
+      "english": "Will you come with me to Mecha City?",
+      "current_nl": "Wil je met mij mee naar Mechalen?",
+      "proposed_nl": "Wil je met mij mee naar Technopolis?"
+    },
+    {
+      "id": "MECHALEN-029",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J137",
+      "speaker": "Cole-Machine",
+      "english": "I'll come find you in Mecha.",
+      "current_nl": "'k Kom u zoeken in Mechalen.",
+      "proposed_nl": "'k Kom u zoeken in Technopolis."
+    },
+    {
+      "id": "MECHALEN-030",
+      "rationale": "Decisions lock 2026-05-03 §A1: Mechalen → Technopolis everywhere. Audience-test failure on Mechalen — Technopolis carries the science/mecha/machines connotation Tom wanted.",
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J150",
+      "speaker": "Cole-Machine",
+      "english": "I'm going to Mecha City.",
+      "current_nl": "'k Ga naar Mechalen.",
+      "proposed_nl": "'k Ga naar Technopolis."
+    }
+  ]
+}

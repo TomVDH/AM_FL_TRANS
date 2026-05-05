@@ -1,0 +1,44 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-03",
+    "scope": "Bikkeharde → Bikkelharde (Hard Ass codex canonical)",
+    "scoping_source": "_corpus-scoping-2026-05-03.md §A2",
+    "actual_count": 3,
+    "note": "Overlaps with feedback-2026-04-29.json (already had FB-BIK-1, FB-BIK-2, FB-BIK-3). FB-BIK-2 already applied on remote. This regenerated batch supersedes those."
+  },
+  "corrections": [
+    {
+      "id": "BIKKELHARDE-001",
+      "rationale": "Decisions lock + Phase-C canonical: Bikkeharde (no L) → Bikkelharde (with L). Hard Ass codex name.",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J3",
+      "speaker": "73",
+      "english": "Hard Ass",
+      "current_nl": "Bikkeharde Ezel",
+      "proposed_nl": "Bikkelharde Ezel"
+    },
+    {
+      "id": "BIKKELHARDE-002",
+      "rationale": "Decisions lock + Phase-C canonical: Bikkeharde (no L) → Bikkelharde (with L). Hard Ass codex name.",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleButte_localization",
+      "cell": "J3",
+      "speaker": "75",
+      "english": "Hard Ass",
+      "current_nl": "Bikkeharde Ezel",
+      "proposed_nl": "Bikkelharde Ezel"
+    },
+    {
+      "id": "BIKKELHARDE-003",
+      "rationale": "Decisions lock + Phase-C canonical: Bikkeharde (no L) → Bikkelharde (with L). Hard Ass codex name.",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J138",
+      "speaker": "Sturdy Ass",
+      "english": "But Hard Ass says he hasn't seen any Humans for weeks.",
+      "current_nl": "Maar Bikkeharde zegt dat hij al weken geen Mensen heeft gezien.",
+      "proposed_nl": "Maar Bikkelharde zegt dat hij al weken geen Mensen heeft gezien."
+    }
+  ]
+}
