@@ -4,31 +4,52 @@
 **Branch:** `am-analysis` (commit `b73af90`, fully pushed to `origin/am-analysis`)
 **Purpose:** seamless continuation of the editorial sweep on a different machine — covers env bootstrap, OAuth re-auth, decisions ledger, per-chapter audits, full script reference, and pending work.
 
-> **Read order:** §1 quickstart → §3 OAuth (re-auth on this machine) → §4 venv → §5 toolchain → §10 pending → reference the rest as needed.
+> **Read order:** §1 quickstart (all bootstrap inline) → §10 pending → reference §3 (OAuth detail), §5 (toolchain), §7 (decisions), §11 (gotchas) as needed.
 
 ---
 
 ## §1. Quickstart on the new machine
 
+Single uninterrupted sequence. If anything fails, jump to §3 for OAuth detail or §11 for gotchas.
+
 ```bash
-# 1. Clone + checkout
+# ── 1. Clone + checkout ──────────────────────────────────────────────
 git clone git@github.com:TomVDH/AM_FL_TRANS.git am-fl-trans
 cd am-fl-trans
 git checkout am-analysis
 git pull origin am-analysis
 
-# 2. Python venv (Sheets toolchain)
+# ── 2. Python venv (Sheets toolchain) ────────────────────────────────
 python3 -m venv .venv-sheets
 source .venv-sheets/bin/activate
 pip install -r requirements-sheets.txt
 
-# 3. Google Sheets auth — see §3 (you'll regenerate credentials.json + token.json here)
+# ── 3. Get credentials.json from Google Cloud Console ────────────────
+# Open: https://console.cloud.google.com/apis/credentials
+# Either:
+#   (a) Reuse existing OAuth project:
+#       Find "OAuth 2.0 Client IDs" entry of type "Desktop" → download icon
+#   (b) Fresh project (if no existing client):
+#       Create project → enable "Google Sheets API" in Library
+#       OAuth consent screen → External → add yourself as Test User
+#       Credentials → Create OAuth client ID → Desktop app → download JSON
+# Save the downloaded file as `credentials.json` at the project root
+# (path: am-fl-trans/credentials.json — gitignored, do not commit)
 
-# 4. Verify auth (dry-run push — no writes)
+# ── 4. Run OAuth bootstrap to generate token.json ────────────────────
+python3 scripts/convert/oauth-bootstrap.py
+# A browser opens. Sign in with the Google account that has EDIT access
+# to the 11 project sheets. Approve scope (spreadsheets). token.json is
+# written at project root.
+
+# ── 5. Verify auth (dry-run push — no writes) ────────────────────────
 python3 scripts/convert/push-file.py 1_asses.masses_E1Proxy.xlsx
-# expect: per-cell diff readout, NO "would push N changes"
+# Expect: per-tab diff table, no errors.
+# If RefreshError / invalid_grant: delete token.json, re-run step 4.
 
-# 5. Resume work — see §10 pending decisions
+# ── 6. Resume work — see §10 pending decisions ───────────────────────
+# 4 questions block E3: P1 (E3_100 row-mismatch), P2 (Ik Heb artifact),
+# P3 (Foal-register flip), P4 (E1 FU#2 push timing).
 ```
 
 ---
