@@ -1,0 +1,28 @@
+{
+  "corrections": [
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J161",
+      "english": "This sculpture will remind everyone of Fannyside's golden days.",
+      "current_nl": "Dit beeld zal iedereen herinneren aan de gouden dagen van Muilegem.",
+      "proposed_nl": "Dit beeld zal iedereen herinneren aan de gouden dagen van Muilenbeek."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J162",
+      "english": "\"The Pleasures of Entering Fannyside\"",
+      "current_nl": "\"De Geneugten van het Betreden van Muilegem\"",
+      "proposed_nl": "\"De Geneugten van het Betreden van Muilenbeek\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J163",
+      "english": "\"The Pleasures of Entering Fannyside\"",
+      "current_nl": "\"De Geneugten van het Betreden van Muilegem\"",
+      "proposed_nl": "\"De Geneugten van het Betreden van Muilenbeek\""
+    }
+  ]
+}

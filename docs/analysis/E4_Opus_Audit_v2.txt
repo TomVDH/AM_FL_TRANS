@@ -1,0 +1,54 @@
+4_asses.masses_E4Proxy.xlsx: 8 cells flagged
+
+
+--- E4_AstralPlaneMain_localization (1) ---
+
+J221 | spk=DJ Dope Ass | New feedback: DJ welcome (DECISION)
+  EN:  Thanks for coming out tonight to my SET!!
+  NL:  BEDANKT VOOR BUITEN TE KOMEN VOOR MIJN SET!!
+  FIX: (DECISION)
+
+
+--- E4_HerdSplits_localization (3) ---
+
+J10 | spk=Kick Ass | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  They've been—TRYING TO RETURN—to Fannyside ever since the Fire.
+  NL:  De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilebeek, sinds de Brand.
+  FIX: De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilenbeek, sinds de Brand.
+
+J32 | spk=Smart Ass | Machines → Machienen
+  EN:  THREE. We convince the Humans to give up their Machines, we don't die in this Hellhole, and we get our JOBS BACK.
+  NL:  DRIE. We overtuigen de Mensen om hun Machines op te geven, we sterven niet in dit hol, en we pakken onze jobs TERUG.
+  FIX: DRIE. We overtuigen de Mensen om hun Machienen op te geven, we sterven niet in dit hol, en we pakken onze jobs TERUG.
+
+J63 | spk=Nice Ass | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  Golly. Leave Fannyside? But this is our home. I can't just leave!
+  NL:  Oesje. Weg van Muilebeek verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!
+  FIX: Oesje. Weg van Muilenbeek verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!
+
+
+--- E4_KicksConfession_localization (1) ---
+
+J3 | spk=Kick Ass | Machine → Machien
+  EN:  We would hide along the Highway and wait for a Car-Machine...
+  NL:  We verstopten ons langs de Snelweg om op een Auto-Machine te wachten...
+  FIX: We verstopten ons langs de Snelweg om op een Auto-Machien te wachten...
+
+
+--- E4_Mine1F_localization (3) ---
+
+J22 | spk=Sturdy Ass | Sturdy ,Kameraad (EN justifies, m2)
+  EN:  Fear not Comrade, I'm confident that the Gods are watching over you.
+  NL:  Heb geen vrees, Kameraad, Ik vertrouw dat de Goden over jou zullen waken.
+  FIX: (REVIEW m2)
+
+J23 | spk=Sturdy Ass | Slogan: EZEL MACHT → EZELS EERST
+  EN:  Remember what Old Ass said: Ass Power!
+  NL:  Vergeet niet wat Oude Ezel zei: EZEL MACHT!
+  FIX: (REPHRASE — EZELS EERST)
+
+J60 | spk=Sturdy Ass | Sturdy ,Kameraad (EN justifies, m2)
+  EN:  Hold tight, Comrade. I trust the Gods will see how special Sick Ass is when they meet her.
+  NL:  Niet opgeven, Kameraad. De Goden zullen zien hoe speciaal Snot Ezel is wanneer ze haar ontmoeten.
+  FIX: (REVIEW m2)
+

@@ -1,6 +1,7 @@
 {
-  "version": "2.0",
+  "version": "2.1",
   "generated": "2026-04-13T07:45:05.283Z",
+  "lastSync": "2026-05-10 — Tom decisions lock: Bikkelharde, *boe-hoe-hoe* lowercase, EZELS EERST, Constaterende Ezel, Groffe Ezel cap. Machine→Machien REVERTED.",
   "description": "Codex translations for Asses & Masses",
   "_bostrol": "Ezels spreken zacht / honderdvierenveertig stem / het werk is gedaan",
   "totalEntries": 178,
@@ -352,7 +353,7 @@
       "name": "Blunt Ass",
       "description": "Character",
       "english": "Blunt Ass",
-      "dutch": "Groffe ezel",
+      "dutch": "Groffe Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Blunt"
@@ -1233,12 +1234,12 @@
     {
       "name": "Hard Ass",
       "english": "Hard Ass",
-      "dutch": "Bikkeharde Ezel",
-      "dutchShort": "Bikkeharde",
+      "dutch": "Bikkelharde Ezel",
+      "dutchShort": "Bikkelharde",
       "category": "CHARACTER",
       "nicknames": [
         "Hard",
-        "Bikkeharde"
+        "Bikkelharde"
       ],
       "bio": "Strong, stoic, and blunt. Willing to make sacrifices to protect the herd. Coded as Antwerps burly — physically intimidating, well-intended.",
       "gender": "male",
@@ -2071,7 +2072,7 @@
       "flemishDensity": "light",
       "register": "tussentaal",
       "pronounForm": "ge/gij",
-      "verbalTics": "Kameraad ×7 (all capitalized), 'Jonge Kameraad' (specific address to Trusty/Foal), EZEL MACHT (catchphrase ×3), 'Ik wou dat' (wistful regret ×2), polsen + klapke (Flemish in formal mode), '...' dramatic ellipses throughout dying scene",
+      "verbalTics": "Kameraad ×7 (all capitalized), 'Jonge Kameraad' (specific address to Trusty/Foal), EZELS EERST (catchphrase ×3 — Tom lock 2026-05-10 supersedes earlier EZEL MACHT), 'Ik wou dat' (wistful regret ×2), polsen + klapke (Flemish in formal mode), '...' dramatic ellipses throughout dying scene",
       "dynamics": "sage leader, formal oratory, ideological speeches",
       "relationships": "founder/elder of the Herd; mentor to Trusty Ass; passes leadership baton at death; reappears as guide in afterlife",
       "verified": true,
@@ -2154,7 +2155,7 @@
       "name": "Peek Ass",
       "description": "Character",
       "english": "Peek Ass",
-      "dutch": "Constat-ezel",
+      "dutch": "Constaterende Ezel",
       "category": "CHARACTER",
       "nicknames": [
         "Peek"
@@ -2390,7 +2391,7 @@
       "flemishDensity": "medium",
       "register": "tussentaal",
       "pronounForm": "jij/je",
-      "verbalTics": "*boe-hoe-hoe-hoe* (whimper ×5+), *snik* (lighter cry E3+), *zucht* (sigh ×2), \"Ik wou\" (regret pattern ×3), \"HET IS ALLEMAAL MIJN FOUT\" (guilt explosion ×2), trailing ... throughout, Hallo'kes (Flemish greeting), Nonkel (Flemish: uncle)",
+      "verbalTics": "*boe-hoe-hoe* (whimper ×5+ — Tom lock 2026-05-10: lowercase b, 3 hoe, hyphens), *snik* (lighter cry E3+), *zucht* (sigh ×2), \"Ik wou\" (regret pattern ×3), \"HET IS ALLEMAAL MIJN FOUT\" (guilt explosion ×2), trailing ... throughout, Hallo'kes (Flemish greeting), Nonkel (Flemish: uncle)",
       "dynamics": "melancholic, lost, mourning",
       "relationships": "mourning lover Lazy Ass",
       "verified": true,
@@ -3445,7 +3446,7 @@
       "name": "Fannyside",
       "description": "WORLD",
       "english": "Fannyside",
-      "dutch": "Muilegem",
+      "dutch": "Muilenbeek",
       "category": "LOCATION",
       "nicknames": [],
       "bio": "",
@@ -3456,7 +3457,7 @@
       "name": "Fannyside Farm",
       "description": "WORLD",
       "english": "Fannyside Farm",
-      "dutch": "De Boerderij van Muilegem",
+      "dutch": "De Boerderij van Muilenbeek",
       "category": "LOCATION",
       "nicknames": [
         "Fannyside"

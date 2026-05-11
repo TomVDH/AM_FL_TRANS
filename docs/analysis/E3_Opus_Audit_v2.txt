@@ -1,0 +1,218 @@
+3_asses.masses_E3Proxy.xlsx: 39 cells flagged
+
+
+--- E3_100_localization (7) ---
+
+J4 | spk={$NewName} | Machines → Machienen
+  EN:  Comrade Mother told me not to touch the Machines...
+  NL:  Kameraad Moeder heeft gezegd dat ik de Machines niet mag aanraken...
+  FIX: Kameraad Moeder heeft gezegd dat ik de Machienen niet mag aanraken...
+
+J5 | spk={$NewName} | Apostrophe: k → 'k
+  EN:  I shouldn't touch the Machines... but what does it do?
+  NL:  k Mag de Machines niet aanraken... maar wat doet dat ding?
+  FIX: 'k Mag de Machines niet aanraken... maar wat doet dat ding?
+
+J5 | spk={$NewName} | Machines → Machienen
+  EN:  I shouldn't touch the Machines... but what does it do?
+  NL:  k Mag de Machines niet aanraken... maar wat doet dat ding?
+  FIX: k Mag de Machienen niet aanraken... maar wat doet dat ding?
+
+J7 | spk= | Ezel capitalization
+  EN:  June 27th\nThese are dire times for the mining business. I had to lay off more workers today and we're running out of money. Mme. Derriere m
+  NL:  27 juni\nDit zijn barre tijden voor de mijnbouw. Ik Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn ezels, maar ik kan ze gew
+  FIX: 27 juni\nDit zijn barre tijden voor de mijnbouw. Ik Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn Ezels, maar ik kan ze gew
+
+J10 | spk= | Ezel capitalization
+  EN:  August 17th\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\n\nI'm 
+  NL:  17 augustus\nDe Stadsbank heeft mijn lening goedgekeurd en ik heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\n\nIk Ga de tunnels verbreden en sporen aanleggen. Da
+  FIX: 17 augustus\nDe Stadsbank heeft mijn lening goedgekeurd en ik heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\n\nIk Ga de tunnels verbreden en sporen aanleggen. Da
+
+J11 | spk= | Ezel capitalization
+  EN:  August 17th\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\n\nI'm 
+  NL:  17 augustus\nDe Stadsbank heeft mijn lening goedgekeurd en ik heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\n\nIk Ga de tunnels verbreden en sporen aanleggen. Da
+  FIX: 17 augustus\nDe Stadsbank heeft mijn lening goedgekeurd en ik heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\n\nIk Ga de tunnels verbreden en sporen aanleggen. Da
+
+J16 | spk= | Ezel capitalization
+  EN:  The town is still reeling from the tragedy at Butte Mines on Thursday. After several failed rescue operations, a catastrophic cave-in caused
+  NL:  Het dorp is nog steeds van slag door de tragedie bij Vanscheetvelde Kolen & Industrie op donderdag. Na verschillende mislukte reddingsoperaties heeft een catastrofale instorting veroorzaakt door een B
+  FIX: Het dorp is nog steeds van slag door de tragedie bij Vanscheetvelde Kolen & Industrie op donderdag. Na verschillende mislukte reddingsoperaties heeft een catastrofale instorting veroorzaakt door een B
+
+
+--- E3_200_localization (3) ---
+
+J3 | spk= | Ezel capitalization
+  EN:  May 15th\nI've started attending an AA group. They're helping me. It's really nice to have a lot of people behind you, giving you advice, yo
+  NL:  15 mei\nIk Ben begonnen met een AA groep. Ze helpen mij. Het is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? Ik Denk dat ik dit nodig had.\n\n27 mei\nEen hele week nuchter. 
+  FIX: 15 mei\nIk Ben begonnen met een AA groep. Ze helpen mij. Het is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? Ik Denk dat ik dit nodig had.\n\n27 mei\nEen hele week nuchter. 
+
+J3 | spk= | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  May 15th\nI've started attending an AA group. They're helping me. It's really nice to have a lot of people behind you, giving you advice, yo
+  NL:  15 mei\nIk Ben begonnen met een AA groep. Ze helpen mij. Het is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? Ik Denk dat ik dit nodig had.\n\n27 mei\nEen hele week nuchter. 
+  FIX: 15 mei\nIk Ben begonnen met een AA groep. Ze helpen mij. Het is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? Ik Denk dat ik dit nodig had.\n\n27 mei\nEen hele week nuchter. 
+
+J3 | spk= | Boerderij → de Hoeve
+  EN:  May 15th\nI've started attending an AA group. They're helping me. It's really nice to have a lot of people behind you, giving you advice, yo
+  NL:  15 mei\nIk Ben begonnen met een AA groep. Ze helpen mij. Het is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? Ik Denk dat ik dit nodig had.\n\n27 mei\nEen hele week nuchter. 
+  FIX: 15 mei\nIk Ben begonnen met een AA groep. Ze helpen mij. Het is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? Ik Denk dat ik dit nodig had.\n\n27 mei\nEen hele week nuchter. 
+
+
+--- E3_300_localization (2) ---
+
+J3 | spk= | Ezel capitalization
+  EN:  August 9th\nThe whole mining operation is stalled.\n\nAnd the drought is starting to take a toll on all of us.\n\nThe last of my workers are
+  NL:  9 augustus\nDe hele mijnoperatie ligt stil.\n\nEn de droogte begint zijn tol te eisen van ons allemaal.\n\nMijn laatste werkers komen in opstand tegen mij. Ze weten dat ik ze niet kan betalen. Er zijn
+  FIX: 9 augustus\nDe hele mijnoperatie ligt stil.\n\nEn de droogte begint zijn tol te eisen van ons allemaal.\n\nMijn laatste werkers komen in opstand tegen mij. Ze weten dat ik ze niet kan betalen. Er zijn
+
+J5 | spk={$NewName} | Machines → Machienen
+  EN:  Well the other two Machines weren't that bad...
+  NL:  Awel, die andere twee Machines waren niet zo erg...
+  FIX: Awel, die andere twee Machienen waren niet zo erg...
+
+
+--- E3_BadCave_localization (8) ---
+
+J11 | spk={$NewName} | Machines → Machienen
+  EN:  Wait, what are all these Machines?
+  NL:  Wacht, wat zijn al die Machines?
+  FIX: Wacht, wat zijn al die Machienen?
+
+J15 | spk=Bad Ass | Machines → Machienen
+  EN:  ...these Machines are called Computers.
+  NL:  ...deze Machines heten Computers.
+  FIX: ...deze Machienen heten Computers.
+
+J19 | spk={$NewName} | Machines → Machienen
+  EN:  Comrade Mother always says Machines are evil...
+  NL:  Kameraad Moeder zegt altijd dat Machines slecht zijn...
+  FIX: Kameraad Moeder zegt altijd dat Machienen slecht zijn...
+
+J21 | spk=Bad Ass | Machine → Machien
+  EN:  Don't give me that anti-Machine Comrade Mother-bullshit.
+  NL:  Kom mij nie af met die anti-Machine Kameraad Moeder-zever.
+  FIX: Kom mij nie af met die anti-Machien Kameraad Moeder-zever.
+
+J22 | spk=Bad Ass | Machines → Machienen
+  EN:  Machines aren't evil if you know how to use them.
+  NL:  Machines zijn nie slecht als ge weet hoe ze te gebruiken.
+  FIX: Machienen zijn nie slecht als ge weet hoe ze te gebruiken.
+
+J35 | spk=Bad Ass | Ezel capitalization
+  EN:  Just don't hit the donkeys.
+  NL:  Sla gewoon nie op de ezels.
+  FIX: Sla gewoon nie op de Ezels.
+
+J38 | spk={$NewName} | Machines → Machienen
+  EN:  Machines are FUN!
+  NL:  Machines zijn PLEZANT!
+  FIX: Machienen zijn PLEZANT!
+
+J43 | spk={$NewName} | Machines → Machienen
+  EN:  Why is the Herd afraid of Machines?
+  NL:  Waarom is de Kudde bang van Machines?
+  FIX: Waarom is de Kudde bang van Machienen?
+
+
+--- E3_DonkeyBas_localization (1) ---
+
+J17 | spk=Bad Ass | Ezel capitalization
+  EN:  You have to avoid 5 Herds of donkeys to win.
+  NL:  Ge moet 5 Kuddes ezels ontwijken om te winnen.
+  FIX: Ge moet 5 Kuddes Ezels ontwijken om te winnen.
+
+
+--- E3_Mine1FOpening_localization (2) ---
+
+J10 | spk=Sturdy Ass | Machines → Machienen
+  EN:  But soon the Gods will destroy the evil Machines and the Humans will return to us.
+  NL:  Maar binnenkort gaan de Goden die slechte Machines kapotmaken en komen de Mensen terug naar ons.
+  FIX: Maar binnenkort gaan de Goden die slechte Machienen kapotmaken en komen de Mensen terug naar ons.
+
+J65 | spk=Sturdy Ass | Machines → Machienen
+  EN:  Yes, just stay away from the evil, soulless, job-taking, child-killing Machines.
+  NL:  Ja, maar blijf weg van die slechte, zielloze, werk-afpakkende, kind-dodende Machines.
+  FIX: Ja, maar blijf weg van die slechte, zielloze, werk-afpakkende, kind-dodende Machienen.
+
+
+--- E3_Mine1F_localization (16) ---
+
+J16 | spk={$NewName} | Game: Stenen-Spel → Keien-Spel
+  EN:  Do you want to watch me play Rocks, Uncle Sad?
+  NL:  Wil je kijken naar mijn Stenen-spel, Nonkel Triestige?
+  FIX: Wil je kijken naar mijn Keien-spel, Nonkel Triestige?
+
+J19 | spk=Sad Ass | Sad Ass (je/jij): forbidden ['uw']
+  EN:  *sigh* Because some days your Uncle Sad Ass just doesn't know why he's alive...
+  NL:  *zucht* Omdat uw Nonkel Triestige sommige dagen zelf nie weet waarom hij nog leeft...
+  FIX: (REVIEW register)
+
+J30 | spk=Nice Ass | Nice Ass (je/jij): forbidden ['uw']
+  EN:  Sorry little Comrade, let's give your Uncle some space.
+  NL:  Sorry, kleine Kameraad, we laten uw Nonkel best efkes gerust.
+  FIX: (REVIEW register)
+
+J33 | spk=Nice Ass | Nice Ass (je/jij): forbidden ['uw']
+  EN:  Don't worry, it's not your fault.
+  NL:  't Is uw schuld nie, maak u geen zorgen.
+  FIX: (REVIEW register)
+
+J34 | spk=Nice Ass | Nice Ass (je/jij): forbidden ['uw']
+  EN:  You just remind him so much of your sister.
+  NL:  Ge doet hem gewoon te hard denken aan uw zus.
+  FIX: (REVIEW register)
+
+J41 | spk=Sad Ass | HUDO unclear (DECISION PENDING)
+  EN:  That day in the Outhouse... I really thought that things would get better.
+  NL:  Die dag in de Hudo... Ik dacht echt dat 't beter ging worden.
+  FIX: (DECISION)
+
+J45 | spk=Nice Ass | ✓ Stal correct (literal stable)
+  EN:  I wasn't fast enough to save the Stable.
+  NL:  Ik was nie snel genoeg om de Stal te redden.
+  FIX: Ik was nie snel genoeg om de Stal te redden.
+
+J46 | spk=Nice Ass | ✓ Stal correct (literal stable)
+  EN:  I only barely saved the Stable.
+  NL:  Ik heb de Stal maar net gered.
+  FIX: Ik heb de Stal maar net gered.
+
+J54 | spk= | Game: Stenen-Spel → Keien-Spel
+  EN:  Do you want to watch me play Rocks?
+  NL:  Wil je kijken naar mijn Stenen-spel?
+  FIX: Wil je kijken naar mijn Keien-spel?
+
+J55 | spk={$NewName} | Game: Stenen-Spel → Keien-Spel
+  EN:  Do you want to watch me play Rocks?
+  NL:  Wil je kijken naar mijn Stenen-spel?
+  FIX: Wil je kijken naar mijn Keien-spel?
+
+J79 | spk=Thirsty Ass | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  I'm dreaming of setting up a darn special place right here in Fannyside where Asses can get a drink and let loose.
+  NL:  Ik droom ervan om hier in Muilebeek een caféke te maken waar Ezels kunnen drinken en ontspannen.
+  FIX: Ik droom ervan om hier in Muilenbeek een caféke te maken waar Ezels kunnen drinken en ontspannen.
+
+J85 | spk={$NewName} | Game: Stenen-Spel → Keien-Spel
+  EN:  Uncle Kick, Uncle Hard, do you want to watch me play Rocks?
+  NL:  Nonkel Stamp, Nonkel Bikkelharde, willen jullie kijken naar mijn Stenen-spel?
+  FIX: Nonkel Stamp, Nonkel Bikkelharde, willen jullie kijken naar mijn Keien-spel?
+
+J120 | spk={$NewName} | Game: Stenen-Spel → Keien-Spel
+  EN:  Will you watch me play Rocks, Uncle Slow?
+  NL:  Wil je kijken naar mijn Stenen-spel, Nonkel Slome?
+  FIX: Wil je kijken naar mijn Keien-spel, Nonkel Slome?
+
+J121 | spk=Slow Ass | Slow Ass (je/jij): forbidden ['uw']
+  EN:  I'd love to b-but... I don’t think I can p-play that game of yours.
+  NL:  Graag, m-m-maar... ik denk niet dat ik uw s-s-spel kan spelen.
+  FIX: (REVIEW register)
+
+J136 | spk=Smart Ass | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  If the Humans don't return to Fannyside, we'll never get our Jobs back...
+  NL:  Als de Mensen niet terugkomen naar Muilebeek, krijgen we onze Beroepen nooit terug...
+  FIX: Als de Mensen niet terugkomen naar Muilenbeek, krijgen we onze Beroepen nooit terug...
+
+J137 | spk=Sturdy Ass | Sturdy ,Kameraad (EN justifies, m2)
+  EN:  I understand, Comrade.
+  NL:  Ik versta het, Kameraad.
+  FIX: (REVIEW m2)
+

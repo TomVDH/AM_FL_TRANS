@@ -1,0 +1,36 @@
+{
+  "corrections": [
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B2_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    }
+  ]
+}

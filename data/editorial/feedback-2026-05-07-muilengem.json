@@ -1,0 +1,196 @@
+{
+  "corrections": [
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J79",
+      "english": "I'm dreaming of setting up a darn special place right here in Fannyside where Asses can get a drink and let loose.",
+      "current_nl": "Ik droom ervan om hier in Muilegem een caféke te maken waar Ezels kunnen drinken en ontspannen.",
+      "proposed_nl": "Ik droom ervan om hier in Muilengem een caféke te maken waar Ezels kunnen drinken en ontspannen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J136",
+      "english": "If the Humans don't return to Fannyside, we'll never get our Jobs back...",
+      "current_nl": "Als de Mensen niet terugkomen naar Muilegem, krijgen we onze Beroepen nooit terug...",
+      "proposed_nl": "Als de Mensen niet terugkomen naar Muilengem, krijgen we onze Beroepen nooit terug..."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_200_localization",
+      "cell": "J3",
+      "english": "May 15th\\nI've started attending an AA group. They're helping me. It's really nice to have a lot of people behind you, giving you advice, you know? I think I've needed this.\\n\\nMay 27th\\nA whole week sober. I think I can give up beer, but a little bit of wine once a week shouldn't hurt, right?\\n\\nToday I sold my depressed donkey to Fannyside Farm. It's been useless ever since its mate died in the cave in.",
+      "current_nl": "15 mei\\n'k Ben begonnen met een AA groep. Ze helpen mij. 't Is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? 'k Denk dat ik dit nodig had.\\n\\n27 mei\\nEen hele week nuchter. 'k Denk dat ik bier kan opgeven, maar een beetje wijn één keer per week kan toch geen kwaad, zeker?\\n\\nVandaag heb ik mijn depressieve ezel verkocht aan de Boerderij van Muilegem. 't Is nutteloos sinds zijn maat gestorven is in de instorting.",
+      "proposed_nl": "15 mei\\n'k Ben begonnen met een AA groep. Ze helpen mij. 't Is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? 'k Denk dat ik dit nodig had.\\n\\n27 mei\\nEen hele week nuchter. 'k Denk dat ik bier kan opgeven, maar een beetje wijn één keer per week kan toch geen kwaad, zeker?\\n\\nVandaag heb ik mijn depressieve ezel verkocht aan de Boerderij van Muilengem. 't Is nutteloos sinds zijn maat gestorven is in de instorting."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J10",
+      "english": "They've been—TRYING TO RETURN—to Fannyside ever since the Fire.",
+      "current_nl": "De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilegem, sinds de Brand.",
+      "proposed_nl": "De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilengem, sinds de Brand."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J63",
+      "english": "Golly. Leave Fannyside? But this is our home. I can't just leave!",
+      "current_nl": "Oesje. Weg van Muilegem verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!",
+      "proposed_nl": "Oesje. Weg van Muilengem verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilengem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilengem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilengem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B2_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilengem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J161",
+      "english": "This sculpture will remind everyone of Fannyside's golden days.",
+      "current_nl": "Dit beeld zal iedereen herinneren aan de gouden dagen van Muilegem.",
+      "proposed_nl": "Dit beeld zal iedereen herinneren aan de gouden dagen van Muilengem."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J162",
+      "english": "\"The Pleasures of Entering Fannyside\"",
+      "current_nl": "\"De Geneugten van het Betreden van Muilegem\"",
+      "proposed_nl": "\"De Geneugten van het Betreden van Muilengem\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J163",
+      "english": "\"The Pleasures of Entering Fannyside\"",
+      "current_nl": "\"De Geneugten van het Betreden van Muilegem\"",
+      "proposed_nl": "\"De Geneugten van het Betreden van Muilengem\""
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Nice_localization",
+      "cell": "J13",
+      "english": "Even after I chose to leave Fannyside?",
+      "current_nl": "Zelfs nadat ik ervoor gekozen heb om Muilegem te verlaten?",
+      "proposed_nl": "Zelfs nadat ik ervoor gekozen heb om Muilengem te verlaten?"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J68",
+      "english": "Nice Ass? Of course the Fannyside idiots would be here...",
+      "current_nl": "Lieve Ezel? Natuurlijk dat die idioten van Muilegem hier zouden zijn...",
+      "proposed_nl": "Lieve Ezel? Natuurlijk dat die idioten van Muilengem hier zouden zijn..."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J100",
+      "english": "Tell the Humans to respect the borders of our territory in Fannyside.",
+      "current_nl": "Zeg de Mensen dat ze de grenzen van ons territorium in Muilegem moeten respecteren.",
+      "proposed_nl": "Zeg de Mensen dat ze de grenzen van ons territorium in Muilengem moeten respecteren."
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J241",
+      "english": "With all your power and resources, will you prevent fires like Bumpkin's from ever happening again?",
+      "current_nl": "Met al je vermogen en invloed, ga je ervoor zorgen dat zulke dramas, zoals die van Muilegem, zich toch niet meer herhalen?",
+      "proposed_nl": "Met al je vermogen en invloed, ga je ervoor zorgen dat zulke dramas, zoals die van Muilengem, zich toch niet meer herhalen?"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J244",
+      "english": "Bumpkinites deserved more than dangerously out-of-date and accident-prone equipment.",
+      "current_nl": "Muilegemmers verdienen beter dan oud en gevaarlijk gerief.",
+      "proposed_nl": "Muilengemmers verdienen beter dan oud en gevaarlijk gerief."
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J249",
+      "english": "But I don't even have the strength to go back and visit Bumpkin...",
+      "current_nl": "Maar ik heb zelfs de kracht niet om terug te gaan voor een bezoek aan Muilegem...",
+      "proposed_nl": "Maar ik heb zelfs de kracht niet om terug te gaan voor een bezoek aan Muilengem..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilengem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J72",
+      "english": "THREE, we march through the Village of Bumpkin, convince the Humans to give up their Machines.",
+      "current_nl": "DRIE: we marcheren door het dorp van Muilegem, en overtuigen de Mensen de Machines achter te laten.",
+      "proposed_nl": "DRIE: we marcheren door het dorp van Muilengem, en overtuigen de Mensen de Machines achter te laten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J19",
+      "english": "It's a scorcher! It's looking dry as a bone out there in the Greater Fannyside Region as the drought continues.",
+      "current_nl": "Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilegem en de droogte blijft aanhouden.",
+      "proposed_nl": "Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilengem en de droogte blijft aanhouden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilengem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J60",
+      "english": "THREE, we march through the Village, convince the Humans to give up their Machines...",
+      "current_nl": "DRIE: we marcheren door het dorp van Muilegem en overtuigen de Mensen de Machines achter te laten...",
+      "proposed_nl": "DRIE: we marcheren door het dorp van Muilengem en overtuigen de Mensen de Machines achter te laten..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J88",
+      "english": "THREE, we march through the Village, convince the Humans to give up their Machines...",
+      "current_nl": "DRIE: we marcheren door het dorp van Muilegem, en overtuigen de Mensen de Machines achter te laten.",
+      "proposed_nl": "DRIE: we marcheren door het dorp van Muilengem, en overtuigen de Mensen de Machines achter te laten."
+    }
+  ]
+}

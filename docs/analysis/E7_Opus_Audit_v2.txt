@@ -1,0 +1,75 @@
+7_asses.masses_E7Proxy.xlsx: 11 cells flagged
+
+
+--- E7_BigBattle_localization (1) ---
+
+J10 | spk= Derriere | Ezel capitalization
+  EN:  Hello donkey...
+  NL:  Hallo ezeltje...
+  FIX: Hallo Ezeltje...
+
+
+--- E7_BigJob_localization (1) ---
+
+J25 | spk=Smart Ass | Machines → Machienen
+  EN:  A life with no Machines and no violence.
+  NL:  Een leven zonder Machines en zonder geweld.
+  FIX: Een leven zonder Machienen en zonder geweld.
+
+
+--- E7_Holding1_localization (2) ---
+
+J13 | spk=Kick Ass | Machine → Machien
+  EN:  Slow Ass wasn't in the Truck-Machine when we got here—
+  NL:  Slome Ezel zat niet in de Camion-Machine toen we hier aankwamen—
+  FIX: Slome Ezel zat niet in de Camion-Machien toen we hier aankwamen—
+
+J16 | spk= | Machine → Machien
+  EN:  Maybe he's still stuck in the Truck-Machine.
+  NL:  Misschien zit hij nog vast in de Camion-Machine.
+  FIX: Misschien zit hij nog vast in de Camion-Machien.
+
+
+--- E7_Opening_localization (2) ---
+
+J12 | spk=Melvin | Ezel capitalization
+  EN:  You say that, but I bet Mme. Derriere's already building Robots to go pick up donkeys instead of us.
+  NL:  Dat zeg je wel, maar ik wed dat Mevr. Derrière nu al Robots aan het bouwen is om ezels op te halen in onze plaats.
+  FIX: Dat zeg je wel, maar ik wed dat Mevr. Derrière nu al Robots aan het bouwen is om Ezels op te halen in onze plaats.
+
+J16 | spk=Wedgie | Machine → Machien
+  EN:  There's a difference between a Machine and a Robot, idiot.
+  NL:  Er is een verschil tussen een Machine en een Robot, domkop.
+  FIX: Er is een verschil tussen een Machien en een Robot, domkop.
+
+
+--- E7_ShippingTwo_localization (4) ---
+
+J5 | spk=Factory PA | Ezel capitalization
+  EN:  All personnel should be on the lookout for runaway donkeys within the Factory.
+  NL:  Alle medewerkers dienen uit te kijken naar ontsnapte ezels binnen de Fabriek.
+  FIX: Alle medewerkers dienen uit te kijken naar ontsnapte Ezels binnen de Fabriek.
+
+J7 | spk=Security Guard Andy | Ezel capitalization
+  EN:  There's one of those runaway donkeys!
+  NL:  Daar is één van die ontsnapte ezels!
+  FIX: Daar is één van die ontsnapte Ezels!
+
+J9 | spk=Factory PA | Ezel capitalization
+  EN:  *ksh*—Help! The donkeys are free! THEY ARE ESCAPING!
+  NL:  *tsj*—Help! De ezels zijn los! ZE ONTSNAPPEN!
+  FIX: *tsj*—Help! De Ezels zijn los! ZE ONTSNAPPEN!
+
+J12 | spk= Derriere | Ezel capitalization
+  EN:  Whichever group of Activists has broken into my beloved Factory and let my donkeys out, hear me:
+  NL:  Welke groep Activisten ook heeft ingebroken in mijn geliefde Fabriek en mijn ezels heeft losgelaten, luister goed:
+  FIX: Welke groep Activisten ook heeft ingebroken in mijn geliefde Fabriek en mijn Ezels heeft losgelaten, luister goed:
+
+
+--- E7_Skinning_localization (1) ---
+
+J6 | spk=Smart Ass | Machine → Machien
+  EN:  We've got to turn off this Death-Machine.
+  NL:  We moeten die Dood-Machine uitschakelen.
+  FIX: We moeten die Dood-Machien uitschakelen.
+

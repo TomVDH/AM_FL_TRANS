@@ -1,0 +1,201 @@
+10_asses.masses_E10Proxy.xlsx: 35 cells flagged
+
+
+--- E10_Credits_localization (6) ---
+
+J27 | spk= | Place: MUILEBEEK → MUILENBEEK
+  EN:  THE FANNYSIDE ASSES
+  NL:  DE EZELS VAN MUILEBEEK
+  FIX: DE EZELS VAN MUILENBEEK
+
+J39 | spk= | Machine → Machien
+  EN:  Bad Ass / Cole Butte / Cole-Machine
+  NL:  Stoere Ezel / Piet Vanscheetvelde / Piet-Machine
+  FIX: Stoere Ezel / Piet Vanscheetvelde / Piet-Machien
+
+J73 | spk= | Ezel capitalization
+  EN:  Peek Ass
+  NL:  Constat-ezel
+  FIX: Constat-Ezel
+
+J73 | spk= | Name: Constat-ezel → Constaterende Ezel (Tom + Patrick canon)
+  EN:  Peek Ass
+  NL:  Constat-ezel
+  FIX: Constaterende Ezel
+
+J74 | spk= | Ezel capitalization
+  EN:  Blunt Ass
+  NL:  Groffe ezel
+  FIX: Groffe Ezel
+
+J116 | spk= | Slogan: EZELSKRACHT → EZELS EERST
+  EN:  ASS POWER
+  NL:  EZELSKRACHT
+  FIX: (REPHRASE — EZELS EERST)
+
+
+--- E10_Epilogue_localization (2) ---
+
+J20 | spk=Cole-Machine | Boerderij → de Hoeve
+  EN:  The next Farm is a day's walk away.
+  NL:  De volgende Boerderij is een dagreis ver.
+  FIX: De volgende Hoeve is een dagreis ver.
+
+J33 | spk={$NewName} | Boerderij → de Hoeve
+  EN:  The next Farm is a whole day's walk away!
+  NL:  De volgende Boerderij is een hele dag stappen!
+  FIX: De volgende Hoeve is een hele dag stappen!
+
+
+--- E10_Government_localization (19) ---
+
+J6 | spk=Radio Host Marcos | Ezel capitalization
+  EN:  Mecha's Government building has been overrun by donkeys.
+  NL:  Het regeringsgebouw van Technopolis is overrompeld door ezels.
+  FIX: Het regeringsgebouw van Technopolis is overrompeld door Ezels.
+
+J23 | spk=Golden Ass | Gods register cap
+  EN:  If only the apathetic Masses in the Astral Plane could meet Ass Souls of your caliber!
+  NL:  Konden de apathische Massa's in het Astrale Hiernamaals maar Ezel Zielen van uw kaliber ontmoeten!
+  FIX: Konden de apathische Massa's in het Astrale Hiernamaals maar Ezel Zielen van Uw kaliber ontmoeten!
+
+J34 | spk=Golden Ass | Machine → Machien
+  EN:  Behold, here with me, a special Prophet-Machine for the Humans to worship!
+  NL:  Aanschouwt, hier bij Ons, een bijzondere Profeet-Machine voor de Mensen om te aanbidden!
+  FIX: Aanschouwt, hier bij Ons, een bijzondere Profeet-Machien voor de Mensen om te aanbidden!
+
+J35 | spk=Golden Ass | Machine → Machien
+  EN:  Behold, here with me, a special Prophet-Machine for the Humans to worship!
+  NL:  Aanschouwt, hier bij Ons, een bijzondere Profeet-Machine voor de Mensen om te aanbidden!
+  FIX: Aanschouwt, hier bij Ons, een bijzondere Profeet-Machien voor de Mensen om te aanbidden!
+
+J39 | spk={$NewName} | Machine → Machien
+  EN:  Yeah! Check it out! I'm a Prophet now! And a Machine!
+  NL:  Ja! Kijk kijk! Ik ben nu een Profeet! En een Machine!
+  FIX: Ja! Kijk kijk! Ik ben nu een Profeet! En een Machien!
+
+J40 | spk={$NewName} | Machine → Machien
+  EN:  Uncle Bad—Cole, built a cool Transformation-Machine and now I can walk on two legs!
+  NL:  Nonkel Stoere—Piet heeft een coole Transformatie-Machine gebouwd en nu kan ik op twee benen lopen!
+  FIX: Nonkel Stoere—Piet heeft een coole Transformatie-Machien gebouwd en nu kan ik op twee benen lopen!
+
+J42 | spk=Edgy Ass | Machine → Machien
+  EN:  A Machine for a Prophet? That's crazy!
+  NL:  Een Machine voor een Profeet? Da's zot!
+  FIX: Een Machien voor een Profeet? Da's zot!
+
+J44 | spk=Helpful Ass | Machine → Machien
+  EN:  How do we know the Humans will listen to that Machine?
+  NL:  Maar hoe weten we nu da de Mensen naar da Machine gaan luisteren, weet ge?
+  FIX: Maar hoe weten we nu da de Mensen naar da Machien gaan luisteren, weet ge?
+
+J61 | spk=Golden Ass | Gods register cap
+  EN:  Spread out, Vassals.
+  NL:  Verspreid u, Vazallen.
+  FIX: Verspreid U, Vazallen.
+
+J65 | spk=Golden Ass | Gods register cap
+  EN:  After you fill your Manifesto, you can always replace a previous idea by choosing a new one.
+  NL:  Nadat gij uw Manifest hebt gevuld, kunt gij te allen tijde een vorig idee vervangen door een nieuw te kiezen.
+  FIX: Nadat gij Uw Manifest hebt gevuld, kunt gij te allen tijde een vorig idee vervangen door een nieuw te kiezen.
+
+J68 | spk=Cole-Machine | Place: Muilegem → Muilenbeek
+  EN:  Nice Ass? Of course the Fannyside idiots would be here...
+  NL:  Lieve Ezel? Natuurlijk dat die idioten van Muilegem hier zouden zijn...
+  FIX: Lieve Ezel? Natuurlijk dat die idioten van Muilenbeek hier zouden zijn...
+
+J93 | spk=Golden Ass | Gods register cap
+  EN:  Spread out, Vassals.
+  NL:  Spreid u uit, Vazallen.
+  FIX: Spreid U uit, Vazallen.
+
+J97 | spk=Golden Ass | Gods register cap
+  EN:  After you fill your Manifesto, you can always replace a previous idea by choosing a new one.
+  NL:  Nadat gij uw Manifest hebt gevuld, kunt gij steeds een vorig idee vervangen door een nieuw te kiezen.
+  FIX: Nadat gij Uw Manifest hebt gevuld, kunt gij steeds een vorig idee vervangen door een nieuw te kiezen.
+
+J100 | spk=Hard Ass | Place: Muilegem → Muilenbeek
+  EN:  Tell the Humans to respect the borders of our territory in Fannyside.
+  NL:  Zeg de Mensen dat ze de grenzen van ons territorium in Muilegem moeten respecteren.
+  FIX: Zeg de Mensen dat ze de grenzen van ons territorium in Muilenbeek moeten respecteren.
+
+J110 | spk=Thirsty Ass | Bar: Poepegaatje → De Zatten Ezel
+  EN:  Tell the Humans that we want to run our own businesses, like the Bottoms Up Bar!
+  NL:  Zeg tegen de Mensen dat wij onze eigen zaakjes willen runnen, zoals het Poepegaatje, héé!
+  FIX: (REVIEW)
+
+J148 | spk=Bleak Ass | Machines → Machienen
+  EN:  Tank-Machines... Flying-Machines...
+  NL:  Tank Machines... Vlieg Machines...
+  FIX: Tank Machienen... Vlieg Machienen...
+
+J252 | spk=Golden Ass | Gods register cap
+  EN:  Are you ready to speak to the Humans?
+  NL:  Bent gij bereid om u tot de mensen te wenden?
+  FIX: Bent gij bereid om U tot de mensen te wenden?
+
+J269 | spk=Golden Ass | Gods register cap
+  EN:  That is not true. You may join us on the steps as we push on into the future.
+  NL:  Dat is niet waar. Gij moogt u bij ons voegen op de treden, terwijl wij voortschrijden naar de toekomst.
+  FIX: Dat is niet waar. Gij moogt U bij ons voegen op de treden, terwijl wij voortschrijden naar de toekomst.
+
+J270 | spk=Golden Ass | Gods register cap
+  EN:  That is not true. You may join us on the steps as we push on into the future.
+  NL:  Dat is niet waar. Gij moogt u bij ons voegen op de treden, terwijl wij voortschrijden naar de toekomst.
+  FIX: Dat is niet waar. Gij moogt U bij ons voegen op de treden, terwijl wij voortschrijden naar de toekomst.
+
+
+--- E10_Hard_localization (2) ---
+
+J44 | spk=Thirsty Ass | Machine → Machien
+  EN:  How the hell are we gonna make it back to our Farm without the ding dang Tractor-Machine?
+  NL:  Hoe gaan we in 't hemelsnaam terug geraken naar onze Boerderij zonder die verdomde Tractor-Machine, héé?
+  FIX: Hoe gaan we in 't hemelsnaam terug geraken naar onze Boerderij zonder die verdomde Tractor-Machien, héé?
+
+J44 | spk=Thirsty Ass | Boerderij → de Hoeve
+  EN:  How the hell are we gonna make it back to our Farm without the ding dang Tractor-Machine?
+  NL:  Hoe gaan we in 't hemelsnaam terug geraken naar onze Boerderij zonder die verdomde Tractor-Machine, héé?
+  FIX: Hoe gaan we in 't hemelsnaam terug geraken naar onze Hoeve zonder die verdomde Tractor-Machine, héé?
+
+
+--- E10_Nice_localization (1) ---
+
+J13 | spk=Sad Ass | Place: Muilegem → Muilenbeek
+  EN:  Even after I chose to leave Fannyside?
+  NL:  Zelfs nadat ik ervoor gekozen heb om Muilegem te verlaten?
+  FIX: Zelfs nadat ik ervoor gekozen heb om Muilenbeek te verlaten?
+
+
+--- E10_ProphetSpeech_localization (3) ---
+
+J6 | spk=Golden Ass | Gods register cap
+  EN:  May your followers remember this day as your first holy Mass.
+  NL:  Mogen uw volgelingen deze dag herinneren als uw eerste heilige Mis.
+  FIX: Mogen Uw volgelingen deze dag herinneren als Uw eerste heilige Mis.
+
+J109 | spk=Big Ass | Slogan: EZELKRACHT → EZELS EERST
+  EN:  ASS POWER!
+  NL:  EZELKRACHT!
+  FIX: (REPHRASE — EZELS EERST)
+
+J111 | spk=Hard Ass | Slogan: EZELKRACHT → EZELS EERST
+  EN:  ASS POWER!
+  NL:  EZELKRACHT!
+  FIX: (REPHRASE — EZELS EERST)
+
+
+--- E10_Slow_localization (1) ---
+
+J9 | spk=Thirsty Ass | Machine → Machien
+  EN:  Aw dang! The Tractor-Machine's choking. Maybe it needs a break.
+  NL:  Amai héé! De Tractor-Machine verslikte zich. Misschien moet dat ding efkes rusten.
+  FIX: Amai héé! De Tractor-Machien verslikte zich. Misschien moet dat ding efkes rusten.
+
+
+--- E10_Thirsty_localization (1) ---
+
+J21 | spk=Thirsty Ass | Bar: Poepegaatje → De Zatten Ezel
+  EN:  Plus, I need more customers! I finally opened The Bottom's Up Ba—
+  NL:  Plus, 'k heb meer klanten nodig héé! 'k Heb eindelijk het Poepegaatje geopend, dat ca—
+  FIX: (REVIEW)
+

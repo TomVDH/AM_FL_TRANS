@@ -1,0 +1,314 @@
+6_asses.masses_E6Proxy.xlsx: 60 cells flagged
+
+
+--- E6_BadCave_localization (10) ---
+
+J11 | spk=Bad Ass | Machine → Machien
+  EN:  Good. Screw it into the Machine.
+  NL:  Goed. Schroef het in de Machine.
+  FIX: Goed. Schroef het in de Machien.
+
+J14 | spk=Bad Ass | Machine → Machien
+  EN:  Whatever. Screw it into the Machine.
+  NL:  Maakt nie uit. Schroef het in de Machine.
+  FIX: Maakt nie uit. Schroef het in de Machien.
+
+J18 | spk={$NewName} | Machine → Machien
+  EN:  Why does the Mystery-Machine need this super important light from the Theatre??
+  NL:  Waarom heeft de Mysterie-Machine dit superbelangrijke licht van het Theater nodig??
+  FIX: Waarom heeft de Mysterie-Machien dit superbelangrijke licht van het Theater nodig??
+
+J19 | spk=Bad Ass | Machine → Machien
+  EN:  It makes the Machine look cool.
+  NL:  Da maakt de Machine cool.
+  FIX: Da maakt de Machien cool.
+
+J21 | spk={$NewName} | Machine → Machien
+  EN:  Are you going to tell me what the Mystery-Machine is for?
+  NL:  Ga je me vertellen waar de Mysterie-Machine voor is?
+  FIX: Ga je me vertellen waar de Mysterie-Machien voor is?
+
+J24 | spk={$NewName} | Game: Stenen-Spel → Keien-Spel
+  EN:  She still thinks we are playing 'Rocks' down here everyday...
+  NL:  Ze denkt nog steeds dat we hier elke dag 'Stenen-spel' aan het spelen zijn...
+  FIX: Ze denkt nog steeds dat we hier elke dag 'Keien-spel' aan het spelen zijn...
+
+J41 | spk=Bad Ass | Machine → Machien
+  EN:  ... And this Machine is going to get me there. At last.
+  NL:  ... En deze Machine gaat mij daar brengen. Eindelijk.
+  FIX: ... En deze Machien gaat mij daar brengen. Eindelijk.
+
+J51 | spk=Bad Ass | machine → machien (lowercase)
+  EN:  Charge the machine. I'll be back.
+  NL:  Laad de machine op. 'k Kom terug.
+  FIX: Laad de machien op. 'k Kom terug.
+
+J55 | spk=Bad Ass | New feedback: Jansen (DECISION)
+  EN:  Kid, if anything goes wrong, I don't want to be remembered as a fucking donkey.
+  NL:  Jansen, als er iets misgaat, 'k wil nie herinnerd worden als een godverdomse ezel.
+  FIX: (DECISION)
+
+J55 | spk=Bad Ass | Ezel capitalization
+  EN:  Kid, if anything goes wrong, I don't want to be remembered as a fucking donkey.
+  NL:  Jansen, als er iets misgaat, 'k wil nie herinnerd worden als een godverdomse ezel.
+  FIX: Jansen, als er iets misgaat, 'k wil nie herinnerd worden als een godverdomse Ezel.
+
+
+--- E6_BattleHard_localization (2) ---
+
+J8 | spk=Thirsty Ass | New feedback: Jansen (DECISION)
+  EN:  Heck, I don't have a drop of respect left for you.
+  NL:  Godver, ik heb geen druppel respect meer over voor jansen, héé.
+  FIX: (DECISION)
+
+J42 | spk= | Game: Stenen-Spel → Keien-Spel
+  EN:  Rocks
+  NL:  Stenen-spel
+  FIX: Keien-spel
+
+
+--- E6_Nightmare_localization (11) ---
+
+J3 | spk=Miner Jenny | Ezel capitalization
+  EN:  No sleeping on the job you useless donkey!
+  NL:  Er word niet op het werk geslapen, nutteloze ezel!
+  FIX: Er word niet op het werk geslapen, nutteloze Ezel!
+
+J6 | spk=Miner Jenny | Ezel capitalization
+  EN:  At least I don't have to be with that lazy donkey.
+  NL:  Tenminste hoef ik niet met die luie ezel samen te werken.
+  FIX: Tenminste hoef ik niet met die luie Ezel samen te werken.
+
+J11 | spk=Kick Ass | Machine → Machien
+  EN:  Sick and I just finished moving the last piece of that new Boring-Machine—and @#$%&! it's HEAVY.
+  NL:  Snotje en ik hebben NET het laatste stuk van die nieuwe Boor-Machine versleept—en @#$%&! da's ZWAAR, hè.
+  FIX: Snotje en ik hebben NET het laatste stuk van die nieuwe Boor-Machien versleept—en @#$%&! da's ZWAAR, hè.
+
+J12 | spk=Kick Ass | Machine → Machien
+  EN:  No way that Boring-Machine can BLAST through a day of work LIKE WE CAN.
+  NL:  Geen SCHIJN van kans dat die Boor-Machine een hele dag kan KNALLEN zoals WIJ dat kunnen, hè.
+  FIX: Geen SCHIJN van kans dat die Boor-Machien een hele dag kan KNALLEN zoals WIJ dat kunnen, hè.
+
+J16 | spk= Butte | Machine → Machien
+  EN:  We're going to get the Boring Machine up and running, and it'll save our Mine from going under.
+  NL:  We gaan de Boor-Machine opstarten en laten draaien, en die gaat onze Mijn redden van de ondergang.
+  FIX: We gaan de Boor-Machien opstarten en laten draaien, en die gaat onze Mijn redden van de ondergang.
+
+J17 | spk= Butte | Machine → Machien
+  EN:  Once I recoup the money I spent on the Machine, I'll send my son, Cole, to that fancy university he got into...
+  NL:  Zodra ik het geld van de Machine heb terugverdiend, stuur ik mijn zoon Piet naar die chique universiteit waar hij is aangenomen...
+  FIX: Zodra ik het geld van de Machien heb terugverdiend, stuur ik mijn zoon Piet naar die chique universiteit waar hij is aangenomen...
+
+J19 | spk= Butte | Machine → Machien
+  EN:  This Machine will fix everything... I know it!
+  NL:  Deze Machine gaat alles oplossen... Ik weet het zeker!
+  FIX: Deze Machien gaat alles oplossen... Ik weet het zeker!
+
+J29 | spk=Miner Jenny | Ezel capitalization
+  EN:  I apologize donkey... I'm emotional.
+  NL:  Ik... sorry ezel... ik ben emotioneel.
+  FIX: Ik... sorry Ezel... ik ben emotioneel.
+
+J68 | spk= | Game: Stenen-Spel → Keien-Spel
+  EN:  Lemme guess—{$NewName} still spending all her time inside playin' Rocks with Bad Ass?
+  NL:  Laat me raden—{$NewName} zit nog steeds de hele dag binnen Stenen-spel te spelen met Stoere Ezel?
+  FIX: Laat me raden—{$NewName} zit nog steeds de hele dag binnen Keien-spel te spelen met Stoere Ezel?
+
+J70 | spk= | Apostrophe: t → 't
+  EN:  Always been my darn DREAM to have a place for us Asses to take a break and share some good 'ol water.
+  NL:  t Is altijd al m'n verdomde DROOM geweest om een plek te hebben waar wij Ezels even op adem kunnen komen en samen lekker een slokkie water kunnen delen.
+  FIX: 't Is altijd al m'n verdomde DROOM geweest om een plek te hebben waar wij Ezels even op adem kunnen komen en samen lekker een slokkie water kunnen delen.
+
+J71 | spk= | Ezel capitalization
+  EN:  I could definitely use a drink and an ear to bend.
+  NL:  Ik kan zeker wel een slokkie gebruiken en een ezel om z'n oor te kauwen.
+  FIX: Ik kan zeker wel een slokkie gebruiken en een Ezel om z'n oor te kauwen.
+
+
+--- E6_World_localization (37) ---
+
+J6 | spk=Sturdy Ass | Sturdy ,Kameraad (EN drift — strip, m2)
+  EN:  It's not like you to nod off at your post.
+  NL:  't Is niks voor jou om in te dommelen op je post, Kameraad.
+  FIX: (REVIEW m2)
+
+J14 | spk=Sturdy Ass | Sturdy ,Kameraad (EN drift — strip, m2)
+  EN:  Uncle Hard can't abandon his post.
+  NL:  Nonkel Bikkelharde kan zijn post niet verlaten, Kameraad.
+  FIX: (REVIEW m2)
+
+J15 | spk=Sturdy Ass | Sturdy ,Kameraad (EN drift — strip, m2)
+  EN:  The Humans are still trying to breach the Barricades and our Territory must be protected.
+  NL:  De Mensen proberen nog steeds de Barricades te doorbreken en ons Territorium moet beschermd worden, Kameraad.
+  FIX: (REVIEW m2)
+
+J40 | spk=Sturdy Ass | Machines → Machienen
+  EN:  It's a shame you never saw this place as it was, before the Fire, before the Machines.
+  NL:  't Is jammer dat je deze plek nooit gezien hebt zoals ze was, vóór het Vuur, vóór de Machines.
+  FIX: 't Is jammer dat je deze plek nooit gezien hebt zoals ze was, vóór het Vuur, vóór de Machienen.
+
+J41 | spk=Sturdy Ass | Boerderij → de Hoeve
+  EN:  I used to bring deliveries here from the Farm every day—
+  NL:  Ik bracht hier vroeger elke dag leveringen van de Boerderij naartoe—
+  FIX: Ik bracht hier vroeger elke dag leveringen van de Hoeve naartoe—
+
+J46 | spk=Sturdy Ass | Machines → Machienen
+  EN:  It's a shame you never saw this place as it was, before the Fire, before the Machines.
+  NL:  't Is zonde dat je deze plek nooit gezien hebt zoals ze was, vóór het Vuur, vóór de Machines.
+  FIX: 't Is zonde dat je deze plek nooit gezien hebt zoals ze was, vóór het Vuur, vóór de Machienen.
+
+J47 | spk=Sturdy Ass | Boerderij → de Hoeve
+  EN:  I used to bring deliveries here from the Farm every day—
+  NL:  Ik bracht hier vroeger elke dag leveringen van de Boerderij naartoe—
+  FIX: Ik bracht hier vroeger elke dag leveringen van de Hoeve naartoe—
+
+J78 | spk=Sturdy Ass | Sturdy ,Kameraad (EN drift — strip, m2)
+  EN:  Would you like me to show you the Old Church next?
+  NL:  Zal ik je de Oude Kerk laten zien, Kameraad?
+  FIX: (REVIEW m2)
+
+J79 | spk={$NewName} | Game: Stenen-Spel → Keien-Spel
+  EN:  Ohh... I just remembered I promised Uncle Bad Ass we'd play Rocks!
+  NL:  Ohh... ik herinner me net dat ik Nonkel Stoere Ezel beloofd heb dat we Stenen-spel zouden spelen!
+  FIX: Ohh... ik herinner me net dat ik Nonkel Stoere Ezel beloofd heb dat we Keien-spel zouden spelen!
+
+J134 | spk=Sturdy Ass | Machines → Machienen
+  EN:  Machines could never make a sculpture like this one!
+  NL:  Machines zouden nooit zo'n beeldhouwwerk als dit kunnen maken!
+  FIX: Machienen zouden nooit zo'n beeldhouwwerk als dit kunnen maken!
+
+J136 | spk= | Machines → Machienen
+  EN:  "If The Machines Never Were"
+  NL:  "Als De Machines Er Nooit Waren Geweest"
+  FIX: "Als De Machienen Er Nooit Waren Geweest"
+
+J137 | spk=Sturdy Ass | Machines → Machienen
+  EN:  "If The Machines Never Were"
+  NL:  "Als De Machines Er Nooit Waren Geweest"
+  FIX: "Als De Machienen Er Nooit Waren Geweest"
+
+J142 | spk=Sturdy Ass | Machines → Machienen
+  EN:  Damn those evil, soulless, job-taking, child-killing Machines.
+  NL:  Verdomd die slechte, zielloze, werk-afpakkende, kind-dodende Machines.
+  FIX: Verdomd die slechte, zielloze, werk-afpakkende, kind-dodende Machienen.
+
+J160 | spk=Sturdy Ass | Translation fidelity: liefste Gods
+  EN:  Praise be to the Gods.
+  NL:  Oh liefste Goden.
+  FIX: (REVIEW)
+
+J161 | spk=Sturdy Ass | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  This sculpture will remind everyone of Fannyside's golden days.
+  NL:  Dit beeld zal iedereen herinneren aan de gouden dagen van Muilebeek.
+  FIX: Dit beeld zal iedereen herinneren aan de gouden dagen van Muilenbeek.
+
+J162 | spk= | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  "The Pleasures of Entering Fannyside"
+  NL:  "De Geneugten van het Betreden van Muilebeek"
+  FIX: "De Geneugten van het Betreden van Muilenbeek"
+
+J163 | spk=Sturdy Ass | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  "The Pleasures of Entering Fannyside"
+  NL:  "De Geneugten van het Betreden van Muilebeek"
+  FIX: "De Geneugten van het Betreden van Muilenbeek"
+
+J164 | spk= | Boerderij → de Hoeve
+  EN:  "Farm and Content"
+  NL:  "Boerderij en Tevredenheid"
+  FIX: "Hoeve en Tevredenheid"
+
+J165 | spk=Sturdy Ass | Boerderij → de Hoeve
+  EN:  "Farm and Content"
+  NL:  "Boerderij en Tevredenheid"
+  FIX: "Hoeve en Tevredenheid"
+
+J187 | spk=Sturdy Ass | Sturdy ,Kameraad (EN justifies, m2)
+  EN:  I'm glad you found what you're good at Comrade.
+  NL:  Ik ben blij dat je gevonden hebt waar je goed in bent, Kameraad.
+  FIX: (REVIEW m2)
+
+J193 | spk=Sturdy Ass | Machine → Machien
+  EN:  Stupid Tractor-Machine.
+  NL:  Stomme Tractor-Machine.
+  FIX: Stomme Tractor-Machien.
+
+J195 | spk=Thirsty Ass | Bar: Poepegaatje → De Zatten Ezel
+  EN:  Mosey on over and take a sip of my new drink special: The Pail Ale!
+  NL:  Kom maar efkes afgezakt en proef mijn nieuwe drankske: een Poepegaatje, héé!
+  FIX: (REVIEW)
+
+J198 | spk=Sturdy Ass | Sturdy ,Kameraad (EN justifies, m2)
+  EN:  It's looking good, Comrade.
+  NL:  't Ziet er goed uit, Kameraad.
+  FIX: (REVIEW m2)
+
+J202 | spk=Sturdy Ass | Game: Stenen-Spel → Keien-Spel
+  EN:  {$NewName} spends all her time inside playin' Rocks with Bad Ass, and isn't interested in learning about our Traditions.
+  NL:  {$NewName} zit de hele tijd binnen Stenen-spel te spelen met Stoere Ezel, en heeft geen enkele interesse in onze Tradities.
+  FIX: {$NewName} zit de hele tijd binnen Keien-spel te spelen met Stoere Ezel, en heeft geen enkele interesse in onze Tradities.
+
+J214 | spk=Thirsty Ass | boerderij → hoeve
+  EN:  That there drink is the farm famous Pail Ale!
+  NL:  Da drinkske daar is de beroemde Emmer Ale van den boerderij, héé!
+  FIX: Da drinkske daar is de beroemde Emmer Ale van den hoeve, héé!
+
+J219 | spk=Sturdy Ass | Sturdy ,Kameraad (EN drift — strip, m2)
+  EN:  What's the perfect title to commemorate the opening of Bottoms Up?
+  NL:  Wat is nu de perfecte titel om de opening van De Zatten Ezel te vieren, Kameraad?
+  FIX: (REVIEW m2)
+
+J234 | spk=Sturdy Ass | Sturdy ,Kameraad (EN justifies, m2)
+  EN:  Your success is everyone's success, Comrade.
+  NL:  Je succes is 't succes van iedereen, Kameraad.
+  FIX: (REVIEW m2)
+
+J293 | spk=Slow Ass | Machine → Machien
+  EN:  Two Humans in b-black p-put our Comrades in a Truck-Machine.
+  NL:  Twee Mensen in het zwart hebben onze Kameraden in een Camion-Machine ges-s-stopt.
+  FIX: Twee Mensen in het zwart hebben onze Kameraden in een Camion-Machien ges-s-stopt.
+
+J296 | spk=Slow Ass | Machine → Machien
+  EN:  That's where the Truck-Machine stop-ped.
+  NL:  Daar is de Camion-Machine gestop-pt.
+  FIX: Daar is de Camion-Machien gestop-pt.
+
+J306 | spk=Nice Ass | Machine → Machien
+  EN:  We can ride the Tractor-Machine to the City!
+  NL:  We kunnen met de Tractor-Machine naar de Stad rijden!
+  FIX: We kunnen met de Tractor-Machien naar de Stad rijden!
+
+J309 | spk=Nice Ass | Machine → Machien
+  EN:  But the truth is... even in my peak condition, this Machine will always be faster than me.
+  NL:  Maar de waarheid is... zelfs op mijn allerbest, die Machine zal altijd sneller zijn dan ik.
+  FIX: Maar de waarheid is... zelfs op mijn allerbest, die Machien zal altijd sneller zijn dan ik.
+
+J311 | spk=Sturdy Ass | Machines → Machienen
+  EN:  But Machines are EVIL!
+  NL:  Maar Machines zijn KWAADAARDIG!
+  FIX: Maar Machienen zijn KWAADAARDIG!
+
+J314 | spk=Nice Ass | Machines → Machienen
+  EN:  Golly, I don't know how to say this, but the Machines aren't responsible for the Fire.
+  NL:  Oesje, ik weet nie goed hoe ik dit moet zeggen, maar de Machines zijn nie verantwoordelijk voor het Vuur.
+  FIX: Oesje, ik weet nie goed hoe ik dit moet zeggen, maar de Machienen zijn nie verantwoordelijk voor het Vuur.
+
+J320 | spk=Sturdy Ass | Machines → Machienen
+  EN:  Who else has chosen to side with Machines over Asses?!
+  NL:  Wie heeft er nog gekozen om de kant van de Machines te kiezen boven die van de Ezels?!
+  FIX: Wie heeft er nog gekozen om de kant van de Machienen te kiezen boven die van de Ezels?!
+
+J326 | spk=Sturdy Ass | Sturdy ,Kameraad (EN justifies, m2)
+  EN:  Isn't that right, Comrade Hard?
+  NL:  Ist dat niet waar, Kameraad Bikkelharde?
+  FIX: (REVIEW m2)
+
+J342 | spk= | Machines → Machienen
+  EN:  I will NEVER trust Machines.
+  NL:  Ik zal Machines NOOIT vertrouwen.
+  FIX: Ik zal Machienen NOOIT vertrouwen.
+
+J343 | spk=Sturdy Ass | Machines → Machienen
+  EN:  I will NEVER trust Machines.
+  NL:  Ik zal Machines NOOIT vertrouwen.
+  FIX: Ik zal Machienen NOOIT vertrouwen.
+

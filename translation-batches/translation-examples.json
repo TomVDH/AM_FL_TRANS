@@ -1464,7 +1464,7 @@
   },
   {
     "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
-    "dutch": "Welkom op de Boerderij van Muilegem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
+    "dutch": "Welkom op de Boerderij van Muilenbeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
     "context": "Interactable Object. Sign.",
     "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
     "key": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign"
@@ -1926,7 +1926,7 @@
   },
   {
     "english": "THREE, we march through the Village of Bumpkin, convince the Humans to give up their Machines.",
-    "dutch": "DRIE: we marcheren door het dorp van Muilegem, en we proberen de mensen te overtuigen de Machines achter te laten.",
+    "dutch": "DRIE: we marcheren door het dorp van Klotegem, en we proberen de mensen te overtuigen de Machines achter te laten.",
     "context": "",
     "utterer": "SAY.Dialog:SMART_BoostMorale.16.Smart Ass",
     "key": "SAY.Dialog:SMART_BoostMorale.16.Smart Ass"
@@ -2136,7 +2136,7 @@
   },
   {
     "english": "Your concept of value and self-worth cannot and should not be defined by backward Humans from Bumpkin Village.",
-    "dutch": "Jullie idee van richting en eigenwaarde zou niet, en moet niet, worden bepaald door de averechtse Mensen van Muilegem.",
+    "dutch": "Jullie idee van richting en eigenwaarde zou niet, en moet niet, worden bepaald door de averechtse Mensen van Klotegem.",
     "context": "",
     "utterer": "SAY.Dialog:Bad_Aft.18.Bad Ass",
     "key": "SAY.Dialog:Bad_Aft.18.Bad Ass"
@@ -2962,7 +2962,7 @@
   },
   {
     "english": "It's a scorcher! It's looking dry as a bone out there in the Greater Fannyside Region as the drought continues.",
-    "dutch": "Bakken en braden vandaag! Het is kurkdroog in de regio van Muilegem en deze droogte blijft duren.",
+    "dutch": "Bakken en braden vandaag! Het is kurkdroog in de regio van Muilenbeek en deze droogte blijft duren.",
     "context": "",
     "utterer": "SAY.Dialog:Radio.41.Radio Host Marcos",
     "key": "SAY.Dialog:Radio.41.Radio Host Marcos"
@@ -3025,7 +3025,7 @@
   },
   {
     "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
-    "dutch": "Welkom op de hoeve van Muilegem. Ten westen, onze prachtige originele stallen en korenvelden.",
+    "dutch": "Welkom op de hoeve van Muilenbeek. Ten westen, onze prachtige originele stallen en korenvelden.",
     "context": "",
     "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
     "key": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign"
@@ -3403,7 +3403,7 @@
   },
   {
     "english": "THREE, we march through the Village, convince the Humans to give up their Machines...",
-    "dutch": "DRIE: we marcheren door het dorp van Muilegem en overtuigen de Mensen de Machines achter te laten.",
+    "dutch": "DRIE: we marcheren door het dorp van Klotegem en overtuigen de Mensen de Machines achter te laten.",
     "context": "",
     "utterer": "SAY.Dialog:3_Dialog: HesitationAtGate.19.Smart Ass",
     "key": "SAY.Dialog:3_Dialog: HesitationAtGate.19.Smart Ass"
@@ -3599,7 +3599,7 @@
   },
   {
     "english": "THREE, we march through the Village, convince the Humans to give up their Machines...",
-    "dutch": "DRIE: we marcheren door het dorp van Muilegem, en overtuigen de Mensen de Machines achter te laten.",
+    "dutch": "DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machines achter te laten.",
     "context": "",
     "utterer": "SAY.Dialog:PickUpSlow.17.Smart Ass",
     "key": "SAY.Dialog:PickUpSlow.17.Smart Ass"
@@ -4173,7 +4173,7 @@
   },
   {
     "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
-    "dutch": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+    "dutch": "Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
     "context": "Interactable Object, Sign.",
     "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
     "key": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign"
@@ -4621,7 +4621,7 @@
   },
   {
     "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
-    "dutch": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+    "dutch": "Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
     "context": "Interactable Object, Sign.",
     "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
     "key": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign"
@@ -5055,7 +5055,7 @@
   },
   {
     "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
-    "dutch": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+    "dutch": "Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
     "context": "Interactable Object, Sign.",
     "utterer": "SAY.Sign_WelcomeToFarm.1.",
     "key": "SAY.Sign_WelcomeToFarm.1."
@@ -5237,7 +5237,7 @@
   },
   {
     "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
-    "dutch": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+    "dutch": "Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
     "context": "Interactable Object, Sign.",
     "utterer": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign",
     "key": "SAY.Sign_WelcomeToFarm_Welcome.1.Welcome Sign"
@@ -7848,7 +7848,7 @@
   },
   {
     "english": "I'm dreaming of setting up a darn special place right here in Fannyside where Asses can get a drink and let loose.",
-    "dutch": "Ik droom ervan om hier in Muilegem een caféke te maken waar Ezels kunnen drinken en ontspannen.",
+    "dutch": "Ik droom ervan om hier in Muilenbeek een caféke te maken waar Ezels kunnen drinken en ontspannen.",
     "context": "",
     "utterer": "SAY.Dialog:TunnelBigThirstyPrivate.29.Thirsty Ass",
     "key": "SAY.Dialog:TunnelBigThirstyPrivate.29.Thirsty Ass"
@@ -8247,7 +8247,7 @@
   },
   {
     "english": "If the Humans don't return to Fannyside, we'll never get our Jobs back...",
-    "dutch": "Als de Mensen nie terugkomen naar Muilegem, krijgen we onze Beroepen nooit terug...",
+    "dutch": "Als de Mensen nie terugkomen naar Muilenbeek, krijgen we onze Beroepen nooit terug...",
     "context": "The camera moves over to Smart Ass.",
     "utterer": "SAY.Dialog:TunnelSturdySmartPrivate.110.Smart Ass",
     "key": "SAY.Dialog:TunnelSturdySmartPrivate.110.Smart Ass"
@@ -8884,7 +8884,7 @@
   },
   {
     "english": "May 15th\\nI've started attending an AA group. They're helping me. It's really nice to have a lot of people behind you, giving you advice, you know? I think I've needed this.\\n\\nMay 27th\\nA whole week sober. I think I can give up beer, but a little bit of wine once a week shouldn't hurt, right?\\n\\nToday I sold my depressed donkey to Fannyside Farm. It's been useless ever since its mate died in the cave in.",
-    "dutch": "15 mei\\n'k Ben begonnen met een AA groep. Ze helpen mij. 't Is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? 'k Denk dat ik dit nodig had.\\n\\n27 mei\\nEen hele week nuchter. 'k Denk dat ik bier kan opgeven, maar een beetje wijn één keer per week kan toch geen kwaad, zeker?\\n\\nVandaag heb ik mijn depressieve ezel verkocht aan de Boerderij van Muilegem. 't Is nutteloos sinds zijn maat gestorven is in de instorting.",
+    "dutch": "15 mei\\n'k Ben begonnen met een AA groep. Ze helpen mij. 't Is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? 'k Denk dat ik dit nodig had.\\n\\n27 mei\\nEen hele week nuchter. 'k Denk dat ik bier kan opgeven, maar een beetje wijn één keer per week kan toch geen kwaad, zeker?\\n\\nVandaag heb ik mijn depressieve ezel verkocht aan de Boerderij van Muilenbeek. 't Is nutteloos sinds zijn maat gestorven is in de instorting.",
     "context": "Butte's Log (Journal Entry)",
     "utterer": "WRITE.Dialog:LogLocalizer.1",
     "key": "WRITE.Dialog:LogLocalizer.1"

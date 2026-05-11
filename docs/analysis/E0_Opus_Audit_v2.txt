@@ -1,0 +1,111 @@
+0_asses.masses_Manager+Intermissions+E0Proxy.xlsx: 20 cells flagged
+
+
+--- CharacterProfiles_localization (1) ---
+
+J18 | spk= | Machine → Machien
+  EN:  Cole-Machine
+  NL:  Piet-Machine
+  FIX: Piet-Machien
+
+
+--- E0_Questions_localization (18) ---
+
+J67 | spk= | Ezel capitalization
+  EN:  In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:
+  NL:  In het Oude Testament slaat een mens genaamd Balaam op zijn ezel wanneer plots:
+  FIX: In het Oude Testament slaat een mens genaamd Balaam op zijn Ezel wanneer plots:
+
+J68 | spk= | Ezel capitalization
+  EN:  Balaam beats the ass to death and has to find another one to do his work for him
+  NL:  Balaam slaat de ezel dood en moet een andere zoeken om het werk voor hem te doen
+  FIX: Balaam slaat de Ezel dood en moet een andere zoeken om het werk voor hem te doen
+
+J69 | spk= | Ezel capitalization
+  EN:  God gives the ass the ability to speak and the ass begs Balaam to spare them
+  NL:  God geeft de ezel het vermogen om te spreken en de ezel smeekt Balaam om hem te sparen
+  FIX: God geeft de Ezel het vermogen om te spreken en de ezel smeekt Balaam om hem te sparen
+
+J70 | spk= | Ezel capitalization
+  EN:  In Aesop's Fables, one reads: "An ass put on the skin of a lion and went around frightening all the animals. The ass saw a fox and tried to 
+  NL:  In de Fabels van Aesopus leest men: 'Een ezel trok de huid van een leeuw aan en ging rond om alle dieren schrik aan te jagen. De ezel zag een vos en probeerde ook haar bang te maken, maar zij had eers
+  FIX: In de Fabels van Aesopus leest men: 'Een Ezel trok de huid van een leeuw aan en ging rond om alle dieren schrik aan te jagen. De ezel zag een vos en probeerde ook haar bang te maken, maar zij had eers
+
+J73 | spk= | Ezel capitalization
+  EN:  In Ancient Greece, asses symbolized fertility because:
+  NL:  In het Oude Griekenland symboliseerden ezels vruchtbaarheid omdat:
+  FIX: In het Oude Griekenland symboliseerden Ezels vruchtbaarheid omdat:
+
+J74 | spk= | Ezel capitalization
+  EN:  Male donkeys have very large penises
+  NL:  Mannelijke ezels een zeer grote penis hebbem
+  FIX: Mannelijke Ezels een zeer grote penis hebbem
+
+J75 | spk= | Ezel capitalization
+  EN:  Female donkeys frequently give birth to twins
+  NL:  Vrouwelijke ezels vaak tweelingen baren
+  FIX: Vrouwelijke Ezels vaak tweelingen baren
+
+J76 | spk= | Ezel capitalization
+  EN:  A 'mare' is the general term for a female equine. What is the specific term for a female donkey?
+  NL:  In het Engels is 'mare' de algemene term voor een vrouwelijk paard. Welke van de volgende termen is een specifieke term voor een vrouwelijke ezel?
+  FIX: In het Engels is 'mare' de algemene term voor een vrouwelijk paard. Welke van de volgende termen is een specifieke term voor een vrouwelijke Ezel?
+
+J83 | spk= | Ezel capitalization
+  EN:  Jesus riding an ass backwards
+  NL:  Jezus die achterstevoren op een ezel rijdt
+  FIX: Jezus die achterstevoren op een Ezel rijdt
+
+J84 | spk= | Ezel capitalization
+  EN:  What does tradition say Mohammed's ass, Ya'fur, did after the Prophet died?
+  NL:  Wat zegt de traditie dat Mohammeds ezel, Ya'fur, deed na de dood van de Profeet?
+  FIX: Wat zegt de traditie dat Mohammeds Ezel, Ya'fur, deed na de dood van de Profeet?
+
+J87 | spk= | Ezel capitalization
+  EN:  In the philosophical paradox called Buridan's Ass, an ass placed between a bucket of water and a bale of hay will:
+  NL:  In de filosofische paradox die bekend staat als Buridans ezel zal een ezel die precies tussen een emmer water en een baal hooi wordt geplaatst:
+  FIX: In de filosofische paradox die bekend staat als Buridans Ezel zal een ezel die precies tussen een emmer water en een baal hooi wordt geplaatst:
+
+J93 | spk= | Ezel capitalization
+  EN:  Vertrauen Sie niemals einem langsamen Esel beim Brückenbauen
+  NL:  Vertrouw nooit een trage ezel bij het bruggen bouwen
+  FIX: Vertrouw nooit een trage Ezel bij het bruggen bouwen
+
+J95 | spk= | Ezel capitalization
+  EN:  Play as a donkey pulling wagons of hay from one town to another
+  NL:  Als een ezel wagons hooi van de ene stad naar de andere trekken
+  FIX: Als een Ezel wagons hooi van de ene stad naar de andere trekken
+
+J96 | spk= | Ezel capitalization
+  EN:  Drive a car down a road while avoiding donkeys
+  NL:  Met een auto over een weg rijden terwijl je ezels ontwijkt
+  FIX: Met een auto over een weg rijden terwijl je Ezels ontwijkt
+
+J97 | spk= | Ezel capitalization
+  EN:  Play a rhythm game that simulates donkeys mating
+  NL:  Een ritmespel spelen dat de paring van ezels simuleert
+  FIX: Een ritmespel spelen dat de paring van Ezels simuleert
+
+J101 | spk= | Ezel capitalization
+  EN:  In China, the rise in demand for a luxury Traditional Chinese Medicine product called 'ejiao' has resulted in how many asses being slaughter
+  NL:  In China heeft de stijgende vraag naar een luxeproduct uit de traditionele Chinese geneeskunde, 'ejiao' genaamd, ertoe geleid dat er jaarlijks hoeveel ezels worden geslacht?
+  FIX: In China heeft de stijgende vraag naar een luxeproduct uit de traditionele Chinese geneeskunde, 'ejiao' genaamd, ertoe geleid dat er jaarlijks hoeveel Ezels worden geslacht?
+
+J105 | spk= | Ezel capitalization
+  EN:  As of 2018, how heavy must a tourist be to be too heavy to ride an ass on the island of Santorini, Greece?
+  NL:  Hoe zwaar moet een toerist vanaf 2018 zijn om te zwaar te zijn om op een ezel te rijden op het eiland Santorini in Griekenland?
+  FIX: Hoe zwaar moet een toerist vanaf 2018 zijn om te zwaar te zijn om op een Ezel te rijden op het eiland Santorini in Griekenland?
+
+J108 | spk= | Ezel capitalization
+  EN:  In northwestern Australia, wild asses are shot from government helicopters because:
+  NL:  In het noordwesten van Australië worden wilde ezels neergeschoten vanuit overheidshelikopters omdat:
+  FIX: In het noordwesten van Australië worden wilde Ezels neergeschoten vanuit overheidshelikopters omdat:
+
+
+--- ManagerScene_localization (1) ---
+
+J15 | spk= | Machine → Machien
+  EN:  Cole-Machine
+  NL:  Piet-Machine
+  FIX: Piet-Machien
+

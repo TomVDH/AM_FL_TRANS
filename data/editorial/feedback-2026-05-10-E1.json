@@ -1,0 +1,193 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-10",
+    "scope": "E1 full sweep — post-Patrick resync",
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "rules_applied": [
+      "Old monikers (Schoon Beest/Felle Gast/Betweter)",
+      "Bikkeharde typo → Bikkelharde",
+      "Muilebeek/Muilegem → Muilenbeek (Q3 extra n)",
+      "Boerderij → de Hoeve",
+      "Ezel cap everywhere (Decision 8)",
+      "Apostrophe drift",
+      "Name canon (Snotezel/Stampgast/Sloom/Constat-ezel)",
+      "HUDO → De Plee (Decision 1)",
+      "Afspraak → het Plan (when EN=Plan)",
+      "Slogan EZELS EERST",
+      "Uncle Oom→Nonkel (Foal speakers)"
+    ],
+    "rules_NOT_applied": [
+      "Machine → Machien (REVERTED 2026-05-10 — keep Machine)",
+      "Sad whimper case (Patrick already aligned to *boe-hoe-hoe*)",
+      "Sturdy , Kameraad (m2 review — all EN-justified)"
+    ],
+    "actual_count": 15
+  },
+  "corrections": [
+    {
+      "id": "E1-001",
+      "sheet": "E1_Farm_localization",
+      "cell": "J5",
+      "speaker": "Welcome Sign",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Hoeve van Muilenbeek. Ten westen: onze prachtige Erfgoedstal en korenvelden.",
+      "rationale": "Place: Muilebeek → Muilenbeek (Q3 lock, extra n); Boerderij → de Hoeve; Heritage Stable mistranslation: Erfgoedshoeve → Erfgoedstal",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-002",
+      "sheet": "E1_Farm_localization",
+      "cell": "J11",
+      "speaker": "Shitty Sign",
+      "english": "The Outhouse",
+      "current_nl": "De Hudo",
+      "proposed_nl": "De Plee",
+      "rationale": "HUDO → De Plee/de Plee (Decision 1)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-003",
+      "sheet": "E1_Farm_localization",
+      "cell": "J50",
+      "speaker": "Big Ass",
+      "english": "It must be pretty bad down in the Mines if it can stop an Ass from eating.",
+      "current_nl": "Het moet er slecht uitzien in de Mijnen als een ezel daarna geen honger meer heeft.",
+      "proposed_nl": "Het moet er slecht uitzien in de Mijnen als een Ezel daarna geen honger meer heeft.",
+      "rationale": "Ezel capitalization (cap everywhere)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-004",
+      "sheet": "E1_Farm_localization",
+      "cell": "J68",
+      "speaker": "Smart Ass",
+      "english": "Oh shut it, can't two Jennets joke around?",
+      "current_nl": "Och, mogen twee ezelinnekes al niet meer eens lachen?",
+      "proposed_nl": "Och, mogen twee Ezelinnekes al niet meer eens lachen?",
+      "rationale": "Ezel capitalization (cap everywhere)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-005",
+      "sheet": "E1_Farm_localization",
+      "cell": "J106",
+      "speaker": "Child Joey",
+      "english": "Grandmother! Can I feed the cute donkey?",
+      "current_nl": "Groetmoe! Mag ik het ezeltje eten geven?",
+      "proposed_nl": "Groetmoe! Mag ik het Ezeltje eten geven?",
+      "rationale": "Ezel capitalization (cap everywhere)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-006",
+      "sheet": "E1_Farm_localization",
+      "cell": "J108",
+      "speaker": "Child Joey",
+      "english": "Here donkey!",
+      "current_nl": "Hier, ezeltje!",
+      "proposed_nl": "Hier, Ezeltje!",
+      "rationale": "Ezel capitalization (cap everywhere)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-007",
+      "sheet": "E1_Farm_localization",
+      "cell": "J114",
+      "speaker": "Child Joey",
+      "english": "Want more, donkey?",
+      "current_nl": "Wil je meer, ezeltje?",
+      "proposed_nl": "Wil je meer, Ezeltje?",
+      "rationale": "Ezel capitalization (cap everywhere)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-008",
+      "sheet": "E1_Farm_localization",
+      "cell": "J117",
+      "speaker": "Child Joey",
+      "english": "Want more, donkey?",
+      "current_nl": "Wil je nog meer, ezeltje?",
+      "proposed_nl": "Wil je nog meer, Ezeltje?",
+      "rationale": "Ezel capitalization (cap everywhere)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-009",
+      "sheet": "E1_Farm_localization",
+      "cell": "J120",
+      "speaker": "Grandma Kulan",
+      "english": "Come along, darling. This donkey seems greedy.",
+      "current_nl": "Kom, we gaan, schat. Dit ezeltje is wat gierig.",
+      "proposed_nl": "Kom, we gaan, schat. Dit Ezeltje is wat gierig.",
+      "rationale": "Ezel capitalization (cap everywhere)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-010",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J19",
+      "speaker": "Radio Host Marcos",
+      "english": "It's a scorcher! It's looking dry as a bone out there in the Greater Fannyside Region as the drought continues.",
+      "current_nl": "Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilebeek en de droogte blijft aanhouden.",
+      "proposed_nl": "Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilenbeek en de droogte blijft aanhouden.",
+      "rationale": "Place: Muilebeek → Muilenbeek (Q3 lock, extra n)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-011",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J5",
+      "speaker": "Welcome Sign",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Hoeve van Muilenbeek. Ten westen: onze prachtige Erfgoedstal en korenvelden.",
+      "rationale": "Place: Muilebeek → Muilenbeek (Q3 lock, extra n); Boerderij → de Hoeve; Heritage Stable mistranslation: Erfgoedshoeve → Erfgoedstal",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-012",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J11",
+      "speaker": "Shitty Sign",
+      "english": "The Outhouse",
+      "current_nl": "De Hudo",
+      "proposed_nl": "De Plee",
+      "rationale": "HUDO → De Plee/de Plee (Decision 1)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-013",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J72",
+      "speaker": "Thirsty Ass",
+      "english": "Spoken like a true Ass. YEEHAW!",
+      "current_nl": "Gelijk 'nen echte ezel gesproken, héé!",
+      "proposed_nl": "Gelijk 'nen echte Ezel gesproken, héé!",
+      "rationale": "Ezel capitalization (cap everywhere)",
+      "file": "1_asses.masses_E1Proxy.xlsx"
+    },
+    {
+      "id": "E1-014",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J12",
+      "speaker": "",
+      "english": "The Heritage Stable",
+      "current_nl": "De Erfgoedshoeve",
+      "proposed_nl": "De Erfgoedstal",
+      "rationale": "Heritage Stable mistranslation: Erfgoedshoeve → Erfgoedstal (Stable → Stal rule)"
+    },
+    {
+      "id": "E1-015",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J12",
+      "speaker": "",
+      "english": "The Heritage Stable",
+      "current_nl": "De Erfgoedshoeve",
+      "proposed_nl": "De Erfgoedstal",
+      "rationale": "Heritage Stable mistranslation: Erfgoedshoeve → Erfgoedstal (Stable → Stal rule)"
+    }
+  ]
+}

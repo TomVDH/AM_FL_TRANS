@@ -159,7 +159,7 @@ scripts/
 | Cole-Machine | Cole-Machien (batch p pending) |
 | The Gods | De Goden |
 | Hee / Haw | HIE / HAA |
-| Fannyside | Muilegem |
+| Fannyside | Muilenbeek |
 | Mechalen | Technopolis |
 | Stone Game / Pebble Game | Keien-Spel |
 | The Drunk Ass (bar) | De Zatten Ezel |

@@ -1,0 +1,28 @@
+{
+  "corrections": [
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J68",
+      "english": "Nice Ass? Of course the Fannyside idiots would be here...",
+      "current_nl": "Lieve Ezel? Natuurlijk dat die idioten van Muilegem hier zouden zijn...",
+      "proposed_nl": "Lieve Ezel? Natuurlijk dat die idioten van Muilenbeek hier zouden zijn..."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J100",
+      "english": "Tell the Humans to respect the borders of our territory in Fannyside.",
+      "current_nl": "Zeg de Mensen dat ze de grenzen van ons territorium in Muilegem moeten respecteren.",
+      "proposed_nl": "Zeg de Mensen dat ze de grenzen van ons territorium in Muilenbeek moeten respecteren."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Nice_localization",
+      "cell": "J13",
+      "english": "Even after I chose to leave Fannyside?",
+      "current_nl": "Zelfs nadat ik ervoor gekozen heb om Muilegem te verlaten?",
+      "proposed_nl": "Zelfs nadat ik ervoor gekozen heb om Muilenbeek te verlaten?"
+    }
+  ]
+}

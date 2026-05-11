@@ -1,0 +1,2255 @@
+PATRICK PLAY-BY-PLAY
+================================================================================
+All cells where REMOTE (live) differs from ORIGINALS,
+filtered to skip pure mechanical consistency swaps.
+================================================================================
+
+
+################################################################################
+#  0_asses.masses_Manager+Intermissions+E0Proxy.xlsx
+################################################################################
+
+--- CharacterProfiles_localization (1 non-mechanical edits) ---
+
+  J81 | spk=
+    EN:    Blunt Ass
+    O:     Groffe ezel
+    PATR:  Groffe Ezel
+
+
+--- E0_Questions_localization (3 non-mechanical edits) ---
+
+  J76 | spk=
+    EN:    A 'mare' is the general term for a female equine. What is the specific term for a female donkey?
+    O:     Een 'merrie' is de algemene term voor een vrouwelijk paard. Wat is de specifieke term voor een vrouwelijke ezel?
+    PATR:  In het Engels is 'mare' de algemene term voor een vrouwelijk paard. Welke van de volgende termen is een specifieke term voor een vrouwelijke ezel?
+
+  J79 | spk=
+    EN:    Jennet
+    O:     Molly
+    PATR:  Jennet
+
+  J80 | spk=
+    EN:    Molly
+    O:     Jennet
+    PATR:  Molly
+
+
+
+################################################################################
+#  1_asses.masses_E1Proxy.xlsx
+################################################################################
+
+--- E1_FarmHouseInt_localization (2 non-mechanical edits) ---
+
+  J20 | spk=Radio Host Marcos
+    EN:    If you need a place to take the kids, get your butts to the Mecha City Zoo, or see the new show at the Big City Circus!
+    O:     Mocht je een plek zoeken om met je familie heen te gaan, rep je achterwerk naar de zoo van Mechalen! Of ga naar de nieuwe show in het stadscircus!
+    PATR:  Als je een leuke plek zoekt voor je familie, ga naar de Dierentuin van Technopolis! Of bezoek de nieuwe show in het Stadscircus!
+
+  J23 | spk=Smart Ass
+    EN:    Hey Trusty!
+    O:     Hey Trouwe!
+    PATR:  Hey Trouwe Ezel!
+
+
+--- E1_Farm_localization (2 non-mechanical edits) ---
+
+  J84 | spk=Sad Ass
+    EN:    Bad Ass gave me this candle...
+    O:     Waaghals gaf me deze kaars...
+    PATR:  Stoere Ezel gaf me deze kaars...
+
+  J90 | spk=Sad Ass
+    EN:    Sometimes I wish he hadn't switched shifts with Lazy Ass that day...
+    O:     Soms wou ik dat hij op die dag nooit zijn shift met Luie had verwisseld...
+    PATR:  Soms wou ik dat hij op die dag nooit zijn shift met Luie Ezel had verwisseld...
+
+
+--- E1_Stable2F_localization (7 non-mechanical edits) ---
+
+  J25 | spk=Old Ass
+    EN:    But they underestimated this old Ass.
+    O:     Maar ze hebben deze Oude Ezel onderschat...
+    PATR:  Maar ze hebben deze oude Ezel onderschat...
+
+  J30 | spk=Old Ass
+    EN:    I wish I could see the faces of the Humans when they wake up to us chanting ASS POWER!
+    O:     ...Ik wou dat ik de gezichten van de Mensen kon zien wanneer onze EZEL MACHT hun wakker schrikt!
+    PATR:  …Ik wou dat ik de gezichten van de mensen kon zien als ze wakker worden en ons horen zingen: "EZELS EERST!"
+
+  J34 | spk=Old Ass
+    EN:    SHOW THE WORLD THE POWER OF THE ASS!
+    O:     LAAT DE WERELD HET LICHT VAN DE EZEL MACHT ZIEN!
+    PATR:  HERINNEER DE WERELD AAN DE BELANGEN VAN DE EZELS!
+
+  J40 | spk=Sturdy Ass
+    EN:    HEEEHAAAAAAAAAAAAW!!!
+    O:     HIEEEEEE-HAAAAAAAAAA!!!
+    PATR:  HIIIEEEE HAAAAAAA!!!!
+
+  J47 | spk=Sturdy Ass
+    EN:    Someone has to sing the Song of Ascension to make sure his Ass Soul can reach the Astral Plane and be reassigned.
+    O:     Iemand moet het ezelenhemelvaartszangderzielen zingen zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen.
+    PATR:  Zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen, iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen.
+
+  J58 | spk=Sturdy Ass
+    EN:    "{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}"
+    O:     {color=yellow}{s=5}♪  hie haa ii aa 'ee ah he a'h ♪{/s}{/color}
+    PATR:  {color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/s}{/color}
+
+  J59 | spk=Sturdy Ass
+    EN:    "{color=yellow}♪  HEE HAW HI HON 'EE AH HE A'W! ♪{/color}"
+    O:     {color=yellow}♪  HIE HAA II AA 'EE AH HE A'H! ♪{/color}
+    PATR:  {color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/s}{/color}
+
+
+--- E1_TheProtest_localization (108 non-mechanical edits) ---
+
+  J17 | spk=The Masses
+    EN:    Trusty Ass! Where are you going?
+    O:     (empty)
+    PATR:  Trouwe Ezel! Waar ga jij heen?
+
+  J18 | spk=
+    EN:    Hiya Comrade! I'm ready to go!
+    O:     Hela Kameraad! Ik ben klaar om te vertrekken!
+    PATR:  (empty)
+
+  J19 | spk=Nice Ass
+    EN:    Hiya Comrade! I'm ready to go!
+    O:     Wacht, echt? Maar Oude Ezel is hier al sinds jaar en dag!
+    PATR:  Hela Kameraad! Ik ben klaar om te vertrekken!
+
+  J20 | spk=Nice Ass
+    EN:    Wait, really? But Old Ass has been here forever!
+    O:     Goh, zouden de mensen dat echt doen?
+    PATR:  Wacht, echt? Maar Oude Ezel is hier al sinds jaar en dag!
+
+  J21 | spk=Nice Ass
+    EN:    Gosh, the Humans wouldn't do that, would they?
+    O:     Verzeker Schoon Beest dat de mensen mogelijk een foutje gemaakt hebben.
+    PATR:  Goh, zouden de mensen dat echt doen?
+
+  J22 | spk=
+    EN:    Assure Nice Ass that the Humans must have made a mistake.
+    O:     Zeg aan Schoon Beest dat de mensen zijn verdorven door de Machines.
+    PATR:  Verzeker Lieve Ezel dat de mensen mogelijk een foutje gemaakt hebben.
+
+  J23 | spk=
+    EN:    Tell Nice Ass that the Humans have been corrupted by the Machines.
+    O:     Je hebt gelijk, Trouwtje! Ongelukken gebeuren nu eenmaal!
+    PATR:  Zeg aan Lieve Ezel dat de mensen zijn verdorven door de Machines.
+
+  J24 | spk=Nice Ass
+    EN:    You're right Trusty! Accidents happen all the time!
+    O:     Jakkes!
+    PATR:  Je hebt gelijk, Trouwtje! Ongelukken gebeuren nu eenmaal!
+
+  J25 | spk=Nice Ass
+    EN:    Yikes!
+    O:     Arme Oude Ezel.
+    PATR:  Jakkes!
+
+  J26 | spk=Big Ass
+    EN:    Poor Old Ass.
+    O:     Wat een drama. Gaat het Protest nog door?
+    PATR:  Arme Oude Ezel.
+
+  J27 | spk=Big Ass
+    EN:    What a massive loss. Will the Protest continue?
+    O:     Benadruk aan Mega Ezel dat hij een bijzonder grote rol in het Protest heeft.
+    PATR:  Wat een drama. Gaat het Protest nog door?
+
+  J28 | spk=
+    EN:    Emphasize to Big Ass that he has a huge part to play in the movement.
+    O:     Wijs aan Mega Ezel uit dat een goede leider vervangbaar is.
+    PATR:  Benadruk aan Mega Ezel dat hij een bijzonder grote rol in het Protest heeft.
+
+  J29 | spk=
+    EN:    Point out to Big Ass that a good leader is dispensable.
+    O:     Laat dat, Trouwe. Wat zouden we zonder u doen?
+    PATR:  Wijs aan Mega Ezel uit dat een goede leider vervangbaar is.
+
+  J30 | spk=Big Ass
+    EN:    Don't say that, Trusty. What would we do without you?
+    O:     Ik ben klaar om te beginnen. Ik krijg er zelfs honger van.
+    PATR:  Laat dat, Trouwe. Wat zouden we zonder u doen?
+
+  J31 | spk=Big Ass
+    EN:    Well then I'm hungry to get started!
+    O:     T'é nen zure dobber maar g'ebt gelijk. We kunnen Ouwe niet voor niks laten sterven, héé!
+    PATR:  Ik ben klaar om te beginnen. Ik krijg er zelfs honger van.
+
+  J32 | spk=Thirsty Ass
+    EN:    *gulp*
+    O:     Vertel aan Beschonken Ezel dat Oude Ezel wilt dat de Kudde het Protest verderzet.
+    PATR:  *slok*
+
+  J33 | spk=
+    EN:    Inform Thirsty Ass that Old Ass wants the Herd to continue the Protest.
+    O:     Beloof aan Beschonken Ezel dat Schoon Beest aan het Protest meedoet.
+    PATR:  Vertel aan Beschonken Ezel dat Oude Ezel wilt dat de Kudde het Protest verderzet.
+
+  J34 | spk=
+    EN:    Promise Thirsty Ass that Nice Ass will be there.
+    O:     *slok*
+    PATR:  Beloof aan Beschonken Ezel dat Lieve Ezel aan het Protest meedoet.
+
+  J35 | spk=Thirsty Ass
+    EN:    It's a damn sour swallow, but yer right. We can't let Old Ass's death be in vain.
+    O:     ...maar ik kan Schoon Beest nergens zien...?
+    PATR:  T'é nen zure dobber maar g'ebt gelijk. We kunnen Ouwe niet voor niks laten sterven, héé!
+
+  J36 | spk=Thirsty Ass
+    EN:    ...but I don't see Nice Ass nowhere...?
+    O:     JIE-HAAA! IK ZEN ER!
+    PATR:  ...maar ik kan Lieve Ezel nergens zien...?
+
+  J37 | spk=Thirsty Ass
+    EN:    YEEEHAAWWW I'M IN!
+    O:     Waaa? Oude is dood?! En JIJ bent de baas nu?
+    PATR:  JIE-HAAA! IK ZEN ER!
+
+  J38 | spk=Smart Ass
+    EN:    Whaa? Old Ass is dead!? And YOU'RE in charge?
+    O:     Begrijp me niet verkeerd Trouwe, maar jij bent een luisteraar, niet een leider.
+    PATR:  Waaa? Oude is dood?! En JIJ bent de baas nu?
+
+  J39 | spk=Smart Ass
+    EN:    No offence Trusty, but you're a listener not a leader!
+    O:     Geef toe aan Betweter dat de kudde gezegend is met zo'n top-strategist.
+    PATR:  Begrijp me niet verkeerd Trouwe, maar jij bent een luisteraar, niet een leider.
+
+  J40 | spk=
+    EN:    Admit to Smart Ass the Herd is lucky to have such an Ace Strategist.
+    O:     Neem Betweter in vertrouwen en zeg dat haar steun momenteel onmisbaar is.
+    PATR:  Geef toe aan Slimme Ezel dat de Kudde gezegend is met zo'n Topstrateeg.
+
+  J41 | spk=
+    EN:    Confide in Smart Ass that you really need her support right now.
+    O:     Je kon tenminste toegeven hoe veel geluk je hebt met zo'n top-strategist.
+    PATR:  Neem Slimme Ezel in vertrouwen en zeg dat haar steun momenteel onmisbaar is.
+
+  J42 | spk=Smart Ass
+    EN:    You could have at least admitted how lucky you are to have such an Ace Strategist.
+    O:     Ha! Je hebt godsamme gelijk.
+    PATR:  Je kon tenminste toegeven hoe veel geluk je hebt met zo'n Topstrateeg.
+
+  J43 | spk=Smart Ass
+    EN:    Ha! You're damn right.
+    O:     Oh nee, niet Oude.. Het spijt me Trouwe. De zaken zijn van kwaad naar erger gegaan...
+    PATR:  Ha! Je hebt godsamme gelijk.
+
+  J44 | spk=Sad Ass
+    EN:    Not Old Ass... I’m sorry Trusty. Things have gone from bad to worse...
+    O:     Ik denk dat je het Protest moet uitstellen.
+    PATR:  Oh nee, niet Oude.. Het spijt me Trouwe. De zaken zijn van kwaad naar erger gegaan...
+
+  J45 | spk=Sad Ass
+    EN:    I think you should postpone the Protest...
+    O:     Ik zou niet gaan als ik jou was...
+    PATR:  Ik denk dat je het Protest moet uitstellen.
+
+  J46 | spk=Sad Ass
+    EN:    I wouldn't go if I were you...
+    O:     Stel tactvol voor dat Triestige Ezel op haar tanden bijt.
+    PATR:  Ik zou niet gaan als ik jou was...
+
+  J47 | spk=
+    EN:    Politely suggest that Sad Ass should suck it up.
+    O:     Herdenk met Triestige Ezel over al wat er verloren is gegaan.
+    PATR:  Stel tactvol voor dat Triestige Ezel op haar tanden bijt.
+
+  J48 | spk=
+    EN:    Commiserate with Sad Ass over all that has been lost.
+    O:     *boe-hoe-hoe-hoe*
+    PATR:  Herdenk met Triestige Ezel over al wat er verloren is gegaan.
+
+  J50 | spk=Sad Ass
+    EN:    *whimper*
+    O:     Kust mijn kloten, neen.
+    PATR:  *boe-hoe-hoe*
+
+  J51 | spk=Bad Ass
+    EN:    Fuck no.
+    O:     Maak dat ge weg zijt.
+    PATR:  Kust mijn kloten, neen.
+
+  J52 | spk=Bad Ass
+    EN:    Get out of my face.
+    O:     Iedereen is hier. Naar de poorten!
+    PATR:  Maak dat ge weg zijt.
+
+  J53 | spk=Big Ass
+    EN:    That's everyone. Now to the gate!
+    O:     Laat ze nog maar eens beseffen hoe veel gebruik ze van ons labeur maken!
+    PATR:  Iedereen is hier. Naar de poorten!
+
+  J54 | spk=Smart Ass
+    EN:    Here's the Plan!
+    O:     Ze nemen ons brood af, en in de plaats, krijgen we Spuiten!
+    PATR:  Dit is het plan!
+
+  J55 | spk=Smart Ass
+    EN:    ONE, we run through this gate.
+    O:     Ezels zijn altijd al de ruggegraat van deze Hoeve geweest, sinds de dieren konden spreken.
+    PATR:  ÉÉN: we lopen door de poort.
+
+  J56 | spk=Smart Ass
+    EN:    TWO, we cross the bridge with the Miners.
+    O:     Het gewicht van onze geschiedenis drukt ons op de schouders.
+    PATR:  TWEE: we komen samen met de Mijn-Ezels en steken de brug over.
+
+  J57 | spk=Smart Ass
+    EN:    THREE, we march through the Village, convince the Humans to give up their Machines...
+    O:     Dit is het plan!
+    PATR:  DRIE: we marcheren door het dorp van Klotegem en overtuigen de Mensen de Machines achter te laten...
+
+  J58 | spk=Smart Ass
+    EN:    AND GET OUR JOBS BACK!
+    O:     ÉÉN: we lopen door de poort.
+    PATR:  EN ONZE JOBS TERUG TE GEVEN!
+
+  J59 | spk=Smart Ass
+    EN:    Easy.
+    O:     TWEE: we komen samen met de Mijn-Ezels en steken de brug over.
+    PATR:  Poepsimpel.
+
+  J60 | spk=Big Ass
+    EN:    The weight of history is on our shoulders...
+    O:     DRIE: we marcheren door het dorp van Muilegem en overtuigen de Mensen de Machines achter te laten...
+    PATR:  Het gewicht van onze geschiedenis drukt ons op de schouders.
+
+  J61 | spk=Big Ass
+    EN:    Asses have always been the backbone of this Farm since time immemorial.
+    O:     EN ONZE JOBS TERUG TE GEVEN!
+    PATR:  Ezels zijn altijd al de ruggegraat van deze Hoeve geweest, sinds de dieren konden spreken.
+
+  J62 | spk=Big Ass
+    EN:    But the Humans have belittled us.
+    O:     Poepsimpel.
+    PATR:  Maar de Mensen hebben ons gekleineerd.
+
+  J63 | spk=Thirsty Ass
+    EN:    They've been takin' away our livelihood, and giving us the ding dang Needle!
+    O:     Trouwtje?
+    PATR:  Ze nemen ons brood af, en in de plaats, krijgen we Spuiten!
+
+  J64 | spk=Thirsty Ass
+    EN:    They need to be reminded of how darn useful our labour truly is!
+    O:     Wat waren de laatste woorden van Oude Ezel? Misschien kunnen ze ons inspireren!
+    PATR:  Laat ze nog maar eens beseffen hoe veel gebruik ze van ons labeur maken!
+
+  J65 | spk=Nice Ass
+    EN:    Trusty?
+    O:     Ik ben bang waren Oude's laatste woorden.
+    PATR:  Trouwtje?
+
+  J66 | spk=Nice Ass
+    EN:    What were Old Ass's last words? Perhaps they will inspire us!
+    O:     Laat de wereld het licht van EZEL MACHT zien! waren Oude's laatste woorden.
+    PATR:  Wat waren de laatste woorden van Oude Ezel? Misschien kunnen ze ons inspireren!
+
+  J67 | spk=
+    EN:    Old Ass died saying: "Show the world the power of the Ass!"
+    O:     Merci, Trouwtje. Dat was net hetgene we moesten horen.
+    PATR:  "Herinneer de wereld aan de belangan van de Ezels" waren Oude Ezels laatste woorden.
+
+  J68 | spk=
+    EN:    Old Ass died saying: "I'm scared."
+    O:     Gelijk 'nen echte ezel gesproken, héé!
+    PATR:  "Ik ben bang" waren Oude Ezels laatste woorden.
+
+  J69 | spk=Trusty Ass
+    EN:    Old Ass died saying: "Show the world the power of the Ass!"
+    O:     Een groots idee.
+    PATR:  "Herinneer de wereld aan de belangan van de Ezels" waren Oude Ezels laatste woorden.
+
+  J71 | spk=Big Ass
+    EN:    A grand idea.
+    O:     Amai.
+    PATR:  Een groots idee.
+
+  J72 | spk=Thirsty Ass
+    EN:    Spoken like a true Ass. YEEHAW!
+    O:     Wat een leeg gevoel...
+    PATR:  Gelijk 'nen echte ezel gesproken, héé!
+
+  J73 | spk=Nice Ass
+    EN:    Thanks Trusty, that's exactly what we needed to hear!
+    O:     Jakkes!
+    PATR:  Merci, Trouwtje. Dat was net hetgene we moesten horen.
+
+  J74 | spk=Trusty Ass
+    EN:    Old Ass died saying: "I'm scared."
+    O:     Ik ben bang waren Oude's laatste woorden.
+    PATR:  "Ik ben bang" waren Oude Ezels laatste woorden.
+
+  J75 | spk=Thirsty Ass
+    EN:    Dang.
+    O:     Jemig..
+    PATR:  Amai.
+
+  J76 | spk=Big Ass
+    EN:    What an empty feeling...
+    O:     Laat de wereld het licht van EZEL MACHT zien! waren Oude's laatste woorden.
+    PATR:  Wat een leeg gevoel...
+
+  J77 | spk=Nice Ass
+    EN:    Yikes!
+    O:     Maar de Mensen hebben ons gekleineerd.
+    PATR:  Jakkes!
+
+  J78 | spk=Smart Ass
+    EN:    Sheesh...
+    O:     Laat ons door de poort breken en de brug oversteken!
+    PATR:  Jemig..
+
+  J79 | spk=Nice Ass
+    EN:    Let's break through this gate and cross the bridge!
+    O:     Sorry, k-k-kameraden. Ik p-p-probeer mijn best te d-d-doen.
+    PATR:  Laat ons door de poort breken en de brug oversteken!
+
+  J80 | spk=Slow Ass
+    EN:    Sorry Comrades. I've been doing my b-best.
+    O:     Ik b-b-ben de h-h-hele nacht opgebleven m-m-maar de b-b-brug is nog niet klaar.
+    PATR:  Sorry, K-k-kameraden. Ik p-p-probeer mijn best te d-d-doen.
+
+  J81 | spk=Slow Ass
+    EN:    I stayed up all night b-but haven't finished fixing the b-bridge yet.
+    O:     Godverdoemme! Het Protest is naar de kloten!
+    PATR:  Ik b-b-ben de h-h-hele nacht opgebleven m-m-maar de b-b-brug is nog niet klaar.
+
+  J82 | spk=Thirsty Ass
+    EN:    DAMN! The Protest is ruined!
+    O:     Hou je bek en kalmeer.
+    PATR:  Godverdoemme! Het Protest is naar de kloten!
+
+  J83 | spk=Smart Ass
+    EN:    Shut up and calm down.
+    O:     Sorry hoor Slome, maar ik wist dat dit ging gebeuren wanneer Oude Ezel je op brugdienst gezet heeft.
+    PATR:  Hou je bek en kalmeer.
+
+  J84 | spk=Smart Ass
+    EN:    No offence Slow Ass, but I knew this would happen when Old Ass put you on bridge duty.
+    O:     Daarom heb ik een Plan B:
+    PATR:  Sorry hoor Slome Ezel, maar ik wist dat dit ging gebeuren wanneer Oude Ezel je op brugdienst gezet heeft.
+
+  J85 | spk=Smart Ass
+    EN:    So I made a Plan B:
+    O:     *oe-oef*
+    PATR:  Daarom heb ik een Plan B:
+
+  J86 | spk=Slow Ass
+    EN:    *p-phew*
+    O:     ÉÉN: we nemen de LANGE weg rond, langs het Noorden.
+    PATR:  *oe-oef*
+
+  J87 | spk=Smart Ass
+    EN:    ONE, we take the LONG way around to the NORTH.
+    O:     TWEE: we vervoegen de Mijn-Ezels en gaan het dorp binnen via het Oosten.
+    PATR:  ÉÉN: we nemen de LANGE weg rond, langs het Noorden.
+
+  J88 | spk=Smart Ass
+    EN:    TWO, we meet up with the Miners and enter the Village from the EAST.
+    O:     DRIE: we marcheren door het dorp van Muilegem, en overtuigen de Mensen de Machines achter te laten.
+    PATR:  TWEE: we vervoegen de Mijn-Ezels en gaan het dorp binnen via het Oosten.
+
+  J89 | spk=Smart Ass
+    EN:    THREE, we march through the Village, convince the Humans to give up their Machines...
+    O:     EN ONZE JOBS TERUG TE GEVEN!
+    PATR:  DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machines achter te laten.
+
+  J90 | spk=Smart Ass
+    EN:    AND GET OUR JOBS BACK!
+    O:     Poepsimpel.
+    PATR:  EN ONZE JOBS TERUG TE GEVEN!
+
+  J91 | spk=Smart Ass
+    EN:    Easy.
+    O:     De l-l-lange weg? Oké maar vergeet niet dat ik z-z-zo snel niet kan met m-m-mijn pijnlijke artrose.
+    PATR:  Poepsimpel.
+
+  J92 | spk=Slow Ass
+    EN:    The long way? Okay... b-but I won't b-be able to move as fast as everyone else due to my p-painful arthritis...
+    O:     M-M-maar ik beloof d-d-dat ik mijn b-b-best zal d-d-doen!
+    PATR:  De l-l-lange weg? Oké maar vergeet niet dat ik z-z-zo snel niet kan met m-m-mijn pijnlijke artrose.
+
+  J93 | spk=Slow Ass
+    EN:    B-but I p-promise I'll do my b-b-best!
+    O:     Gij moet Trouwe zijn!
+    PATR:  M-M-maar ik beloof d-d-dat ik mijn b-b-best zal d-d-doen!
+
+  J94 | spk=Kick Ass
+    EN:    You must be TRUSTY!
+    O:     Mijn naam is STAMP GAST en dit is mijn zus, SNOT GRIET!
+    PATR:  Gij moet Trouwe zijn!
+
+  J95 | spk=Kick Ass
+    EN:    I'm KICK ASS and this is my Sister SICK ASS!
+    O:     *KUCH*
+    PATR:  Mijn naam is STAMP EZEL en dit is mijn zus, SNOT EZEL!
+
+  J96 | spk=Sick Ass
+    EN:    *COUGH*
+    O:     WAAR is de bijeenkomst op DE BRUG?!
+    PATR:  *KUCH*
+
+  J97 | spk=Kick Ass
+    EN:    What happened to meeting AT THE BRIDGE?!
+    O:     Wacht — WAAR IS OUDE?!
+    PATR:  WAAR is de bijeenkomst OP DE BRUG?!
+
+  J98 | spk=Kick Ass
+    EN:    Wait—where's OLD ASS?!
+    O:     Ze hebbe'n hem 't Spuitje geven, héé!
+    PATR:  Wacht — waar is OUDE EZEL?!
+
+  J99 | spk=Thirsty Ass
+    EN:    They gave him the ding dang Needle!
+    O:     @#$%&! Daar word ik nu eens KWAAD VAN!
+    PATR:  Ze hebbe'n hem 't Spuitje geven, héé!
+
+  J100 | spk=Kick Ass
+    EN:    @#$%&! That makes me SO ANGRY!
+    O:     *KUCH*
+    PATR:  @#$%&! Daar word ik nu eens KWAAD VAN!
+
+  J101 | spk=Sick Ass
+    EN:    *COUGH*
+    O:     KOM, WE PROTESTEREN!
+    PATR:  *KUCH*
+
+  J102 | spk=Kick Ass
+    EN:    LET'S PROTEST!
+    O:     ...
+    PATR:  KOM, WE PROTESTEREN!
+
+  J103 | spk=Hard Ass
+    EN:    ...
+    O:     Oude heeft de Spuit gekregen?
+    PATR:  ...
+
+  J104 | spk=Hard Ass
+    EN:    Old Ass got the Needle?
+    O:     Ik weet hoe moeilijk het is om een Kameraad tenonder te zien gaan, zelfs al komen ze op een dag terug.
+    PATR:  Oude heeft de Spuit gekregen?
+
+  J105 | spk=Hard Ass
+    EN:    I know how difficult it is to watch a Comrade die, even if they will one day be reborn.
+    O:     Wij, Mijn-Ezels hebben een gezegde:
+    PATR:  Ik weet hoe moeilijk het is om een Kameraad tenonder te zien gaan, zelfs al komen ze op een dag terug.
+
+  J106 | spk=Hard Ass
+    EN:    We Miners have a saying:
+    O:     Pas als ge 't opgeeft, is 't gedaan.
+    PATR:  Wij, Mijn-Ezels hebben een gezegde:
+
+  J107 | spk=Hard Ass
+    EN:    "You only hit rock bottom when you quit."
+    O:     Kom.
+    PATR:  Pas als ge 't opgeeft, is 't gedaan.
+
+  J108 | spk=Hard Ass
+    EN:    Let's go.
+    O:     Oude Ezel zou niet willen dat we iemand achterlaten.
+    PATR:  Kom.
+
+  J112 | spk=Nice Ass
+    EN:    Old Ass wouldn’t want us to leave anyone behind.
+    O:     Het moraal van de Kudde is niet best, misschien de moment om IETS te zeggen?
+    PATR:  Oude Ezel zou niet willen dat we iemand achterlaten.
+
+  J113 | spk=Trusty Ass
+    EN:    The Herd's Morale is low, now is the time to SAY something...
+    O:     ONTHOUD OUDE EZEL ZIJN LAATSTE WOORDEN:
+    PATR:  Het Moraal van de Kudde is niet best, misschien de moment om IETS te zeggen?
+
+  J114 | spk=Trusty Ass
+    EN:    REMEMBER OLD ASS'S PARTING WORDS:
+    O:     LAAT DE WERELD HET LICHT VAN DE EZEL MACHT ZIEN!
+    PATR:  ONTHOUD DE LAATSTE WOORDEN VAN OUDE EZEL:
+
+  J115 | spk=Trusty Ass
+    EN:    SHOW THE WORLD THE POWER OF THE ASS!
+    O:     IK ZEG EZEL, JIJ ZEGT MACHT!
+    PATR:  HERINNEER DE WERELD AAN DE BELANGEN VAN DE EZELS
+
+  J116 | spk=Trusty Ass
+    EN:    WHEN I SAY ASS, YOU SAY POWER!
+    O:     EZEL!
+    PATR:  IK ZEG EZELS, JIJ ZEGT EERST!
+
+  J117 | spk=Trusty Ass
+    EN:    ASS!
+    O:     MACHT!
+    PATR:  EZELS!
+
+  J118 | spk=The Masses
+    EN:    POWER!
+    O:     EZEL!
+    PATR:  EERST!
+
+  J119 | spk=Trusty Ass
+    EN:    ASS!
+    O:     MACHT!
+    PATR:  EZELS!
+
+  J120 | spk=The Masses
+    EN:    POWER!
+    O:     Laat me jullie het horen zeggen... WEES NIET BANG!
+    PATR:  EERST!
+
+  J121 | spk=Trusty Ass
+    EN:    Let me hear you say... DON'T BE SCARED!
+    O:     WEEST NIET BANG!
+    PATR:  Laat me jullie het horen zeggen... WEES NIET BANG!
+
+  J122 | spk=The Masses
+    EN:    DON'T BE SCARED!
+    O:     Trouwe Ezel? Waar loop jij naartoe? Het dorp is niet die kant uit.
+    PATR:  WEEST NIET BANG!
+
+  J123 | spk=The Masses
+    EN:    Trusty Ass? Where are you going? The Village isn't that way.
+    O:     DIT IS EEN PROTEST!
+    PATR:  Trouwe Ezel? Waar loop jij naartoe? Het dorp is niet die kant uit.
+
+  J124 | spk=The Masses
+    EN:    THIS IS A PROTEST!
+    O:     RESPECTEER ONZE GESCHIEDENIS!
+    PATR:  DIT IS EEN PROTEST!
+
+  J125 | spk=The Masses
+    EN:    RESPECT OUR HISTORY!
+    O:     RESPECTEER DE EZELSCULTUUR
+    PATR:  RESPECTEER ONZE GESCHIEDENIS!
+
+  J126 | spk=The Masses
+    EN:    RESPECT ASS CULTURE!
+    O:     GEEF ONZE JOBS TERUG!
+    PATR:  RESPECTEER DE EZELSCULTUUR
+
+  J127 | spk=The Masses
+    EN:    GIVE US OUR JOBS BACK!
+    O:     Trouwe Ezel! Waar ga jij heen?
+    PATR:  GEEF ONZE JOBS TERUG!
+
+  J130 | spk=Smart Ass
+    EN:    This wasn't the Plan! We're here to get work, not burn the employers!
+    O:     Dit was niet de afspraak! We zijn hier om werk te verzekeren, niet de werkgevers af te branden!
+    PATR:  Dit was niet het Plan! We zijn hier om werk te verzekeren, niet de werkgevers af te branden!
+
+  J147 | spk=
+    EN:    Solemnly assume the Traditional Ass Posture that has inspired Herds for generations.
+    O:     Neem plechtig de traditionele ezelshouding aan, die generaties aan Kuddes heeft gëinspireerd.
+    PATR:  Neem plechtig de Traditionele Ezelshouding aan, die generaties aan Kuddes heeft gëinspireerd.
+
+
+
+################################################################################
+#  2_asses.masses_E2Proxy.xlsx
+################################################################################
+
+--- E2_BattleButte_localization (6 non-mechanical edits) ---
+
+  J23 | spk=
+    EN:    You Grunt.
+    O:     Je Gromt.
+    PATR:  Je GROMT.
+
+  J24 | spk=
+    EN:    You Bray.
+    O:     Je balkt.
+    PATR:  Je BALKT.
+
+  J26 | spk=
+    EN:    You Stomp. It's very effective!
+    O:     Je schopt. Het is bijzonder effectief.
+    PATR:  Je SCHOPT. Het is bijzonder effectief.
+
+  J28 | spk=
+    EN:    You Tackle!
+    O:     Je valt aan!
+    PATR:  Je VALT ANN!
+
+  J30 | spk=
+    EN:    You Double Kick!
+    O:     Je stampt dubbel!
+    PATR:  Je STAMPT DUBBEL!
+
+  J32 | spk=
+    EN:    You Headbutt! It's very effective!
+    O:     Je doet een kopstoot. Het is bijzonder effectief.
+    PATR:  Je doet een KOPSTOOT. Het is bijzonder effectief.
+
+
+--- E2_BattleMiner_localization (9 non-mechanical edits) ---
+
+  J6 | spk=
+    EN:    Ugh. I always knew you were a dumb beast.
+    O:     Ugh. Ik wist altijd wel dat je maar een dom beest bent.
+    PATR:  Ugh. Ik wist altijd wel dat je maar\neen dom beest bent.
+
+  J14 | spk=
+    EN:    EAT SHOVEL ASSHOLE!!
+    O:     EET DEZE SCHUP, KLOOTZAKSKE!!
+    PATR:  EET MIJN SCHEP OP, KLOOTZAKSKE!!
+
+  J18 | spk=
+    EN:    Grunt
+    O:     Aggressief Grommen
+    PATR:  Grommen
+
+  J19 | spk=
+    EN:    You Grunt. Miner Jenny becomes angry.
+    O:     Je gromt aggressief. Mijnwerker Jenny wordt boos.
+    PATR:  Je GROMT. Mijnwerker Jenny wordt boos.
+
+  J21 | spk=
+    EN:    You Bray. Miner Jenny is confused.
+    O:     Je balkt. Mijnwerker Jenny is de kluts kwijt.
+    PATR:  Je BALKT. Mijnwerker Jenny is de kluts kwijt.
+
+  J23 | spk=
+    EN:    You Tackle!
+    O:     Je valt aan!
+    PATR:  Je VALT AAN!
+
+  J25 | spk=
+    EN:    You Double Kick!
+    O:     Je doet een Dubbele Stamp!
+    PATR:  Je STAMPT DUBBEL!
+
+  J27 | spk=
+    EN:    You Stomp! It's very effective!
+    O:     Je schopt! Heel effectief.
+    PATR:  Je SCHOPT. Het is bijzonder effectief.
+
+  J29 | spk=
+    EN:    You Headbutt! It's very effective!
+    O:     Je doet een koppertje! Heel effectief!
+    PATR:  Je doet een KOPSTOOT. Het is bijzonder effectief.
+
+
+--- E2_ButtesHouse_localization (1 non-mechanical edits) ---
+
+  J11 | spk= Butte
+    EN:    But business is business, you know?
+    O:     Maar wat kan je doen. Business is business.
+    PATR:  Maar wat kan je doen. "Business is business."
+
+
+--- E2_Confession_localization (8 non-mechanical edits) ---
+
+  J4 | spk=Nice Ass
+    EN:    Sad Ass! Quit hiding in the outhouse!
+    O:     Triestigaard! Stopt met je in de Hudo te verstoppen!
+    PATR:  Triestige Ezel! Stopt met je in de Hudo te verstoppen!
+
+  J13 | spk=Nice Ass
+    EN:    Sad Ass, now is not the time for this, please!
+    O:     Triestigaard, nu is het echt niet de moment. Toe.
+    PATR:  Triestige Ezel, nu is het echt niet de moment. Toe.
+
+  J26 | spk=
+    EN:    You're beautiful, Sad Ass.
+    O:     Je bent prachtig, Triestigaard.
+    PATR:  Je bent prachtig, Triestige.
+
+  J27 | spk=Nice Ass
+    EN:    You're beautiful, Sad Ass.
+    O:     Je bent prachtig, Triestigaard.
+    PATR:  Je bent prachtig, Triestige.
+
+  J46 | spk=Sad Ass
+    EN:    HEEEEHAWWWWW
+    O:     HEEEEEEEEEE!
+    PATR:  HIIIEEEE HAAAAAAA
+
+  J47 | spk=Sad Ass
+    EN:    HEEEEHAWWWWW
+    O:     HAAAAAAAAAAAAA!!
+    PATR:  HIIIEEEE HAAAAAAA
+
+  J48 | spk=Sad Ass
+    EN:    HEEEEHAWWWWW
+    O:     HEEEEEEEEEE!!
+    PATR:  HIIIEEEE HAAAAAAA
+
+  J63 | spk=Nice Ass
+    EN:    The Farm—our home! Sad Ass, how could you?!
+    O:     De Boerderij—onze thuis! Triestigaard, hoe kon je dit laten gebeuren?!
+    PATR:  De Boerderij—onze thuis! Triestige, hoe kon je dit laten gebeuren?!
+
+
+--- E2_MinersHouse_localization (4 non-mechanical edits) ---
+
+  J11 | spk=Hard Ass
+    EN:    Because I wouldn't save her Computer-Machine.
+    O:     De Mensen verdienen onze arbeid niet.
+    PATR:  Omdat ik haar Computer-Machine niet wou redden.
+
+  J12 | spk=Hard Ass
+    EN:    After all those years working side by side in the Mine...
+    O:     Dus, is het tot dit gekomen.
+    PATR:  Na al die jaren zij-aan-zij te werken in de Mijnen...
+
+  J14 | spk=Hard Ass
+    EN:    So, it has come to this.
+    O:     Na al die jaren zij-aan-zij te werken in de Mijnen...
+    PATR:  Dus, is het tot dit gekomen.
+
+  J15 | spk=Hard Ass
+    EN:    The Humans don't deserve our labour.
+    O:     Omdat ik haar Computer-Machine niet wou redden.
+    PATR:  De Mensen verdienen onze arbeid niet.
+
+
+--- E2_World_A1_localization (4 non-mechanical edits) ---
+
+  J27 | spk=Smart Ass
+    EN:    It's time for action, not debate, Hard Ass.
+    O:     Het is tijd voor daden, niet voor woorden, Felle.
+    PATR:  Het is tijd voor daden, niet voor woorden, Bikkelharde Ezel.
+
+  J30 | spk=Kick Ass
+    EN:    Let'er RIP, Hard Ass!
+    O:     Laat u gaan, hè, Felle!
+    PATR:  Laat u gaan, hè, Bikkelharde!
+
+  J50 | spk=Smart Ass
+    EN:    Good. Run like the wind Nice Ass! And don't ruin my Plan.
+    O:     Mooi. Je moest er al zijn, Schoontje! En verbrod mijn Plan niet.
+    PATR:  Mooi. Je moest er al zijn, Lieve Ezel! En verbrod mijn Plan niet.
+
+  J56 | spk=Nice Ass
+    EN:    Sad Ass! Sturdy Ass! Bad Ass! I'm coming for you!
+    O:     Triestigaard! Stoere! Waaghalske! Ik kom eraan!
+    PATR:  Triestige! Stevige! Stoere! Ik kom eraan!
+
+
+--- E2_World_A2_localization (2 non-mechanical edits) ---
+
+  J24 | spk=Nice Ass
+    EN:    Not the Stable too!—
+    O:     Niet de Stal!-
+    PATR:  Niet de Stal!—
+
+  J26 | spk=Nice Ass
+    EN:    Sad Ass?
+    O:     Triestigaard?
+    PATR:  Triestige Ezel?
+
+
+--- E2_World_A3_localization (1 non-mechanical edits) ---
+
+  J3 | spk=Nice Ass
+    EN:    Sad Ass, this rain is a sign that we can start again!
+    O:     Triestigaard, deze regen is teken dat we terug opnieuw kunnen starten!
+    PATR:  Triestige, deze regen is teken dat we terug opnieuw kunnen starten!
+
+
+--- E2_World_B1_localization (23 non-mechanical edits) ---
+
+  J17 | spk=Sick Ass
+    EN:    *COUGH COUGH*
+    O:     ...maakt niet uit wie, buiten Slome Ezel.
+    PATR:  *KUCH KUCH*
+
+  J18 | spk=Kick Ass
+    EN:    Send Big Ass!
+    O:     *oe-oef*
+    PATR:  Stuur Mega Ezel!
+
+  J19 | spk=Big Ass
+    EN:    I won't fit.
+    O:     *KUCH KUCH*
+    PATR:  Ik pas daar niet tussen.
+
+  J20 | spk=Big Ass
+    EN:    How about Thirsty?
+    O:     Stuur Mega Ezel!
+    PATR:  En Beschonken?
+
+  J21 | spk=Thirsty Ass
+    EN:    It's too DAMN DRY, I'd never make it.
+    O:     Ik pas daar niet tussen.
+    PATR:  Da's daar véél TE DROOG. 'K geraak daar nooit!
+
+  J22 | spk=Thirsty Ass
+    EN:    How about you, Smart?
+    O:     En Zatlap?
+    PATR:  En gij, Slimme Ezel?
+
+  J23 | spk=Smart Ass
+    EN:    You want to send your ACE STRATEGIST into a FIRE?! You gotta be joking!
+    O:     Da's daar véél TE DROOG. 'K geraak daar nooit!
+    PATR:  Jij wilt je TOPSTRATEEG die BRAND insturen? Is dat voor te lachen, ofzo!
+
+  J24 | spk=Smart Ass
+    EN:    Listen. If we don't save the Humans, who will bring us our Hay?
+    O:     En gij, Betweter?
+    PATR:  Luister. Als wij de Mensen niet redden, wie gaat er ons dan Hooi komen geven?
+
+  J25 | spk=Smart Ass
+    EN:    Who will trim our Hooves?
+    O:     Jij wilt je BESTE STRATEEG die BRAND insturen? Is dat voor te lachen, ofzo!
+    PATR:  We gaat er onze Hoeven kuisen?
+
+  J26 | spk=Smart Ass
+    EN:    Who will scratch the inside of our ears?
+    O:     Snotezel? Stampgast? Iemand?
+    PATR:  Wie gaat er achter onze oren krabben?
+
+  J27 | spk=Smart Ass
+    EN:    Who will give us medicine when we're ill?
+    O:     Luister. Als wij de Mensen niet redden, wie gaat er ons dan Hooi komen geven?
+    PATR:  Wie gaat er ons medicijnen geven wanneer we ziek zijn?
+
+  J28 | spk=Smart Ass
+    EN:    Who will clean the shit out of our beds?
+    O:     We gaat er onze Hoeven kuisen?
+    PATR:  Wie gaat er de stront uit onze bedden vegen?
+
+  J29 | spk=Smart Ass
+    EN:    Who will GIVE US OUR JOBS BACK?
+    O:     Wie gaat er achter onze oren krabben?
+    PATR:  Wie gaat er ONZE JOBS TERUGGEVEN?
+
+  J30 | spk=Hard Ass
+    EN:    ...
+    O:     Wie gaat er ons medicijnen geven wanneer we ziek zijn?
+    PATR:  ...
+
+  J31 | spk=Hard Ass
+    EN:    I'll do it.
+    O:     Wie gaat er de stront uit onze bedden vegen?
+    PATR:  Ik doe het wel.
+
+  J32 | spk=Smart Ass
+    EN:    Sick Ass? Kick Ass? Anyone?
+    O:     Wie gaat er ONZE JOBS TERUGGEVEN?
+    PATR:  Snot Ezel? Stamp Ezel? Iemand?
+
+  J33 | spk=Smart Ass
+    EN:    ...anyone but Slow Ass.
+    O:     ...
+    PATR:  ...maakt niet uit wie, buiten Slome Ezel.
+
+  J34 | spk=Slow Ass
+    EN:    *p-phew*
+    O:     Ik doe het wel.
+    PATR:  *oe-oef*
+
+  J38 | spk=Smart Ass
+    EN:    TWO, Hard Ass saves the Humans.
+    O:     TWEE, Felle Gast redt de Mensen.
+    PATR:  TWEE, Bikkelharde Ezel redt de Mensen.
+
+  J42 | spk=Slow Ass
+    EN:    And I'll sing the Song of Ascension for Trusty.
+    O:     En ik zal de Ezelenhemelvaartszangderzielen voor Trouwe zingen.
+    PATR:  En de Hemelvaarts-zang-der-Ezel-zielen zal ik voor Trouwe zingen.
+
+  J43 | spk=Slow Ass
+    EN:    Ass P-Power?
+    O:     Ezel M-M-macht?
+    PATR:  Ezels E-erst?
+
+  J44 | spk=The Masses
+    EN:    ASS P-POWER!
+    O:     EZEL M-MACHT!
+    PATR:  EZELS E-ERST!
+
+  J49 | spk=Slow Ass
+    EN:    {color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}
+    O:     {color=yellow}{s=5}♪ hee haw hi hon 'ee ah he a'w ♪{/s}{/color}
+    PATR:  {color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/s}{/color}
+
+
+--- E2_World_B2_localization (2 non-mechanical edits) ---
+
+  J21 | spk=Hard Ass
+    EN:    Let's go.
+    O:     Let's go.
+    PATR:  Kom op.
+
+  J24 | spk=Slow Ass
+    EN:    {color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}
+    O:     {color=yellow}{s=5}♪ hee haw hi hon 'ee ah he a'w ♪{/s}{/color}
+    PATR:  {color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/s}{/color}
+
+
+
+################################################################################
+#  3_asses.masses_E3Proxy.xlsx
+################################################################################
+
+--- E3_100_localization (18 non-mechanical edits) ---
+
+  J3 | spk={$NewName}
+    EN:    Nah, I don't want to go back yet.
+    O:     Kameraad Moeder heeft gezegd dat ik de Machines niet mag aanraken...
+    PATR:  Nee, 'k wil nog niet teruggaan.
+
+  J4 | spk={$NewName}
+    EN:    Comrade Mother told me not to touch the Machines...
+    O:     k Mag de Machines niet aanraken... maar wat doet dat ding?
+    PATR:  Kameraad Moeder heeft gezegd dat ik de Machines niet mag aanraken...
+
+  J5 | spk={$NewName}
+    EN:    I shouldn't touch the Machines... but what does it do?
+    O:     Nee, 'k wil nog niet teruggaan.
+    PATR:  k Mag de Machines niet aanraken... maar wat doet dat ding?
+
+  J7 | spk=
+    EN:    June 27th\nThese are dire times for the mining business. I had to lay off more workers today and we're running out of money. Mme. Derriere made another offer to
+    O:     27 juni\nDit zijn barre tijden voor de mijnbouw. 'k Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod 
+    PATR:  27 juni\nDit zijn barre tijden voor de mijnbouw. Ik Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod 
+
+  J9 | spk=
+    EN:    July 15th\n\nINVOICE\nEBZ75 Tunnel Boring Machine — $56,000 USD\n\nHe Bei Zhong Xuan Construction Machinery Co., Ltd.\nRoom.2809, Building2, East international 
+    O:     15 juli\n\nFACTUUR\nEBZ75 Tunnelboormachine — €56.000\n\nHe Bei Zhong Xuan Bouwmachines NV\nKamer 2809, Gebouw 2, East International Plaza,\nYangtzestraat 98, H
+    PATR:  15 juli\n\nFACTUUR\nEBZ75 Tunnelboormachine — €50.000\n\nHe Bei Zhong Xuan Bouwmachines NV\nKamer 2809, Gebouw 2, East International Plaza,\nYangtzestraat 98, H
+
+  J10 | spk=
+    EN:    August 17th\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\n\nI'm going to widen the t
+    O:     17 augustus\nDe Stadsbank heeft mijn lening goedgekeurd en 'k heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\n\n'k Ga de t
+    PATR:  17 augustus\nDe Stadsbank heeft mijn lening goedgekeurd en ik heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\n\nIk Ga de t
+
+  J11 | spk=
+    EN:    August 17th\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\n\nI'm going to widen the t
+    O:     17 augustus\nDe Stadsbank heeft mijn lening goedgekeurd en 'k heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\n\n'k Ga de t
+    PATR:  17 augustus\nDe Stadsbank heeft mijn lening goedgekeurd en ik heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\n\nIk Ga de t
+
+  J12 | spk=
+    EN:    ASPIRE TO MORE
+    O:     De Volksmuil
+    PATR:  STREEF NAAR MEER\nin Technopolis
+
+  J13 | spk=
+    EN:    Jobs for everyone at Derriere's!
+    O:     Boormachine Blunder Brengt Baas Vanscheetvelde Brokken
+    PATR:  Jobs voor iedereen bij Derrière!
+
+  J14 | spk=
+    EN:    FANNYSIDE TIMES
+    O:     Het dorp is nog steeds van slag door de tragedie bij Vanscheetvelde Kolen & Industrie op donderdag. Na verschillende mislukte reddingsoperaties heeft een catast
+    PATR:  De Volksmuil
+
+  J15 | spk=
+    EN:    Boring Machine Blunder Begets Backlash for Big Boss Butte
+    O:     Een interview met een voormalige werknemer onthult dat het bedrijf wist van het toenemende gevaar van graven in dat deel van de mijn, maar de jacht op winst dre
+    PATR:  Boormachine Blunder Brengt Baas Vanscheetvelde Brokken
+
+  J16 | spk=
+    EN:    The town is still reeling from the tragedy at Butte Mines on Thursday. After several failed rescue operations, a catastrophic cave-in caused by a Boring Machine
+    O:     K HOOP DAT MIJN KUNST MENSEN GELUKKIG MAAKT
+    PATR:  Het dorp is nog steeds van slag door de tragedie bij Vanscheetvelde Kolen & Industrie op donderdag. Na verschillende mislukte reddingsoperaties heeft een catast
+
+  J17 | spk=
+    EN:    An interview with a former worker reveals the company knew about the compounding danger of digging in that section of the mine, but the pursuits of profits push
+    O:     Kinderkunstenaar Luukse Vermeulen charmeert de jury en wint de regionale tekenwedstrijd van Klotegem voor kinderen 12 jaar en jonger. Zijn werk zal te zien zijn
+    PATR:  Een interview met een voormalige werknemer onthult dat het bedrijf wist van het toenemende gevaar van graven in dat deel van de mijn, maar de jacht op winst dre
+
+  J18 | spk=
+    EN:    "I HOPE MY ART MAKES PEOPLE HAPPY"
+    O:     UW SCHOONHEID\nIS ONZE PLICHT
+    PATR:  IK HOOP DAT MIJN KUNST MENSEN GELUKKIG MAAKT
+
+  J19 | spk=
+    EN:    Child artist Joey Kulan charms the pants off the judges and wins the Bumpkin regional drawing competition for youth 12 and under. His work will be on display at
+    O:     STREEF NAAR MEER
+    PATR:  Kinderkunstenaar Luukske Vermeulen charmeert de jury en wint de regionale tekenwedstrijd van Klotegem voor kinderen 12 jaar en jonger. Zijn werk zal te zien zij
+
+  J20 | spk=
+    EN:    YOUR BEAUTY\nIS OUR DUTY
+    O:     Gezinskorting nu beschikbaar!
+    PATR:  UW SCHOONHEID\nIS ONZE PLICHT
+
+  J21 | spk=
+    EN:    Family discounts available NOW!
+    O:     VACATURES
+    PATR:  Gezinskorting nu beschikbaar!
+
+  J22 | spk=
+    EN:    JOB POSTINGS
+    O:     Jobs voor iedereen bij Derrière!
+    PATR:  VACATURES
+
+
+--- E3_200_localization (2 non-mechanical edits) ---
+
+  J3 | spk=
+    EN:    May 15th\nI've started attending an AA group. They're helping me. It's really nice to have a lot of people behind you, giving you advice, you know? I think I've
+    O:     15 mei\n'k Ben begonnen met een AA groep. Ze helpen mij. 't Is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? 'k Denk dat ik dit nodig 
+    PATR:  15 mei\nIk Ben begonnen met een AA groep. Ze helpen mij. Het is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? Ik Denk dat ik dit nodig
+
+  J4 | spk=
+    EN:    July 24th\nButte Mine is officially for sale. I'm praying that someone from Mecha City will step up and buy it. I always imagined that Cole would take my place,
+    O:     24 juli\nVanscheetvelde Kolen & Industrie staat officieel te koop. 'k hoop dat iemand van Mechalen het zal kopen. 'k Had altijd gedacht dat Piet mijn plaats zou
+    PATR:  24 juli\nVanscheetvelde Kolen & Industrie staat officieel te koop. Ik hoop dat iemand van Technopolis het zal kopen. Ik Had altijd gedacht dat Piet mijn plaats 
+
+
+--- E3_300_localization (1 non-mechanical edits) ---
+
+  J3 | spk=
+    EN:    August 9th\nThe whole mining operation is stalled.\n\nAnd the drought is starting to take a toll on all of us.\n\nThe last of my workers are revolting against m
+    O:     9 augustus\nDe hele mijnoperatie ligt stil.\n\nEn de droogte begint zijn tol te eisen van ons allemaal.\n\nMijn laatste werkers komen in opstand tegen mij. Ze w
+    PATR:  9 augustus\nDe hele mijnoperatie ligt stil.\n\nEn de droogte begint zijn tol te eisen van ons allemaal.\n\nMijn laatste werkers komen in opstand tegen mij. Ze w
+
+
+--- E3_BadCave_localization (2 non-mechanical edits) ---
+
+  J9 | spk={$NewName}
+    EN:    Uncle Bad Ass?!
+    O:     Nonkel Waaghalske?!
+    PATR:  Nonkel Stoere?!
+
+  J45 | spk={$NewName}
+    EN:    So... Is that why you don't spend more time with the Herd, Uncle Bad Ass?
+    O:     Dus... Is dat waarom ge niet meer met de Kudde hangt, Nonkel Waaghalske?
+    PATR:  Nonkel Stoere?!
+
+
+--- E3_EpisodeTitle_localization (4 non-mechanical edits) ---
+
+  J7 | spk=Hard Ass
+    EN:    Hurry up, Sick Ass!
+    O:     Opschieten, Snotezel!
+    PATR:  Opschieten, Snot Ezel!
+
+  J8 | spk=Sick Ass
+    EN:    *COUGH*
+    O:     Ze doet HAAR BEST!
+    PATR:  *KUCH*
+
+  J9 | spk=Kick Ass
+    EN:    @#$%&!
+    O:     *KUCH*
+    PATR:  @#$%&!
+
+  J10 | spk=Kick Ass
+    EN:    She's doing HER BEST!
+    O:     @#$%&!
+    PATR:  Ze doet HAAR BEST!
+
+
+--- E3_LazysGrave_localization (1 non-mechanical edits) ---
+
+  J46 | spk=Lazy Ass
+    EN:    My dear Sad Ass...
+    O:     Mijn lieve Triestigaard...
+    PATR:  Mijn lieve Triestige...
+
+
+--- E3_Mine1FOpening_localization (11 non-mechanical edits) ---
+
+  J21 | spk=Big Ass
+    EN:    {vpunch=100,0.75}I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!
+    O:     {vpunch=100,0.75}Ik heb een mega aankondiging, Kameraad Stevige! Harde, Stamper, en Snotje zijn terug!
+    PATR:  {vpunch=100,0.75}Ik heb een mega aankondiging, Kameraad Stevige! Bikkelharde, Stamp, en Snotje zijn terug!
+
+  J27 | spk={$NewName}
+    EN:    Tell me about your adventures, Uncle Kick!
+    O:     Vertel mij over uw avonturen, Nonkel Hoef!
+    PATR:  Vertel mij over uw avonturen, Nonkel Stamp!
+
+  J33 | spk=Sturdy Ass
+    EN:    Smart Ass, divide the rations.
+    O:     Betweter, verdeel de ratioenen.
+    PATR:  Slimme Ezel, verdeel de ratioenen.
+
+  J42 | spk=Hard Ass
+    EN:    Kick, Sick, and I are risking our health and making sacrifices for the Herd.
+    O:     Trap, Zieke, en ik riskeren onze gezondheid en maken offers voor de Kudde.
+    PATR:  Stamp Ezel, Snot Ezel, en ik riskeren onze gezondheid en maken offers voor de Kudde.
+
+  J43 | spk=Sick Ass
+    EN:    *COUGH*
+    O:     Wat doet gij om de Kudde te redden?
+    PATR:  *KUCH*
+
+  J44 | spk=Hard Ass
+    EN:    What are you doing to help to save the Herd?
+    O:     *KUCH*
+    PATR:  Wat doet gij om de Kudde te redden?
+
+  J47 | spk=Smart Ass
+    EN:    You couldn't save Lazy Ass and you couldn't save a single Human—
+    O:     Je kon Luie niet redden en je kon geen enkele Mens redden—
+    PATR:  Je kon Luie Ezel niet redden en je kon geen enkele Mens redden—
+
+  J51 | spk=Smart Ass
+    EN:    If we don't leave and find the Humans now, we'll all end up like Sick Ass.
+    O:     Als we nu niet vertrekken en de Mensen zoeken, eindigen we allemaal zoals Snotezel.
+    PATR:  Als we nu niet vertrekken en de Mensen zoeken, eindigen we allemaal zoals Snot Ezel.
+
+  J59 | spk=
+    EN:    Aren't I the Ace Strategist?!
+    O:     Ben ik niet de Top Strateeg?!
+    PATR:  Ben ik niet de Topstrateeg?!
+
+  J70 | spk=
+    EN:    Kick Ass
+    O:     Stampgast
+    PATR:  Stamp Ezel
+
+  J71 | spk=
+    EN:    Smart Ass
+    O:     Betweter
+    PATR:  Slimme Ezel
+
+
+--- E3_Mine1F_localization (22 non-mechanical edits) ---
+
+  J5 | spk={$NewName}
+    EN:    Maybe Aunty Nice wants to watch me play!
+    O:     Misschien wil Tante Schoontje wel komen kijken!
+    PATR:  Misschien wil Tante Lieve wel komen kijken!
+
+  J6 | spk={$NewName}
+    EN:    Maybe Uncle Thirsty wants to watch me play!
+    O:     Misschien wil Nonkel Dorst wel meekijken!
+    PATR:  Misschien wil Nonkel Beschonken wel meekijken!
+
+  J16 | spk={$NewName}
+    EN:    Do you want to watch me play Rocks, Uncle Sad?
+    O:     Wil je kijken naar mijn Stenen-spel, Nonkel Triestigaard?
+    PATR:  Wil je kijken naar mijn Stenen-spel, Nonkel Triestige?
+
+  J19 | spk=Sad Ass
+    EN:    *sigh* Because some days your Uncle Sad Ass just doesn't know why he's alive...
+    O:     *zucht* Omdat uw Nonkel Triestigaard sommige dagen zelf nie weet waarom hij nog leeft...
+    PATR:  *zucht* Omdat uw Nonkel Triestige sommige dagen zelf nie weet waarom hij nog leeft...
+
+  J20 | spk=
+    EN:    Tell Uncle Sad Ass why you think you're alive.
+    O:     Zeg tegen Nonkel Triestigaard waarom jij denkt dat je leeft.
+    PATR:  Zeg tegen Nonkel Triestige waarom jij denkt dat je leeft.
+
+  J23 | spk=
+    EN:    Tell Uncle Sad Ass why Comrade Mother says you're alive.
+    O:     Zeg wat Kameraad-Moeder zegt over waarom je leeft.
+    PATR:  Zeg tegen Nonkel Triestige wat Kameraad-Moeder zegt over waarom je leeft.
+
+  J24 | spk={$NewName}
+    EN:    Comrade Mother says we're alive to honour the legacy of our Ancestors through hard Work.
+    O:     Kameraad-Moeder zegt dat we leven om de erfenis van onze Voorouders te eren met hard Werk.
+    PATR:  Kameraad Moeder zegt dat we leven om de erfenis van onze Voorouders te eren met hard Werk.
+
+  J25 | spk=Nice Ass
+    EN:    Is {$NewName} giving you some good advice, Uncle Sad?
+    O:     Is {$NewName} u goeie raad aan 't geven, Nonkel Triestigaard?
+    PATR:  Is {$NewName} u goeie raad aan 't geven, Nonkel Triestige?
+
+  J31 | spk=Nice Ass
+    EN:    It's not easy for him being back inside the Mine.
+    O:     t Is nie makkelijk voor hem om terug in de Mijn te zijn.
+    PATR:  't Is nie makkelijk voor hem om terug in de Mijn te zijn.
+
+  J33 | spk=Nice Ass
+    EN:    Don't worry, it's not your fault.
+    O:     t Is uw schuld nie, maak u geen zorgen.
+    PATR:  't Is uw schuld nie, maak u geen zorgen.
+
+  J44 | spk=Nice Ass
+    EN:    Hard Ass couldn't save the Humans.
+    O:     Stoere kon de Mensen niet redden.
+    PATR:  Bikkelharde kon de Mensen niet redden.
+
+  J71 | spk=Big Ass
+    EN:    *oof!*—You wanted water and you got it, Thirsty!
+    O:     *oef!*—Ge wilde water en ge hebt het, Zatlap!
+    PATR:  *oef!*—Ge wilde water en ge hebt het, Beschonken!
+
+  J82 | spk=Thirsty Ass
+    EN:    I’d call it... Bottoms Up!
+    O:     Ik zou 't noemen... Poepegaatje!
+    PATR:  Ik zou 't noemen... De Zatten Ezel Cafe!
+
+  J85 | spk={$NewName}
+    EN:    Uncle Kick, Uncle Hard, do you want to watch me play Rocks?
+    O:     Nonkel Hoef, Nonkel Stoer, willen jullie kijken naar mijn Stenen-spel?
+    PATR:  Nonkel Stamp, Nonkel Bikkelharde, willen jullie kijken naar mijn Stenen-spel?
+
+  J107 | spk=Hard Ass
+    EN:    That's enough. Run along.
+    O:     t Is genoeg. Ga nu weg.
+    PATR:  't Is genoeg. Ga nu weg.
+
+  J110 | spk={$NewName}
+    EN:    It sounds like someone's in pain...
+    O:     t Klinkt alsof iemand pijn heeft...
+    PATR:  't Klinkt alsof iemand pijn heeft...
+
+  J120 | spk={$NewName}
+    EN:    Will you watch me play Rocks, Uncle Slow?
+    O:     Wil je kijken naar mijn Stenen-spel, Oom Sloom?
+    PATR:  Wil je kijken naar mijn Stenen-spel, Nonkel Slome?
+
+  J126 | spk=Smart Ass
+    EN:    Hey little Comrade, Bad Ass is letting his ration go to waste again. You should take it.
+    O:     Hé, kleine Kameraad, Waaghalske laat zijn rantsoen weer verpieteren. Jij pakt dat beter.
+    PATR:  Hé, kleine Kameraad, Stoere Ezel laat zijn rantsoen weer verpieteren. Jij pakt dat beter.
+
+  J130 | spk=Sturdy Ass
+    EN:    No you won't. It's Bad Ass's.
+    O:     Nee jij. 't Is van Waaghalske.
+    PATR:  Nee jij. 't Is van Stoere Ezel.
+
+  J133 | spk=Sturdy Ass
+    EN:    Run along child. I need to speak with Aunty Smart about something important.
+    O:     Loop maar, kind. Ik moet iets belangrijks bespreken met Tante Betje.
+    PATR:  Loop maar, kind. Ik moet iets belangrijks bespreken met Tante Slimme.
+
+  J135 | spk={$NewName}
+    EN:    Are Comrade Mother and Aunty Smart arguing?
+    O:     Zijn Kameraad-Moeder en Tante Betje aan 't bekvechten?
+    PATR:  Zijn Kameraad Moeder en Tante Slimme aan 't bekvechten?
+
+  J138 | spk=Sturdy Ass
+    EN:    But Hard Ass says he hasn't seen any Humans for weeks.
+    O:     Maar Bikkeharde zegt dat hij al weken geen Mensen heeft gezien.
+    PATR:  Maar Bikkelharde Ezel zegt dat hij al weken geen Mensen heeft gezien.
+
+
+
+################################################################################
+#  4_asses.masses_E4Proxy.xlsx
+################################################################################
+
+--- E4_AstralPlaneMain_localization (45 non-mechanical edits) ---
+
+  J3 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J4 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J5 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J6 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J7 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J8 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J9 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J10 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J11 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J12 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J13 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J14 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J15 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J16 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J17 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J18 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J19 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J20 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J21 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J22 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J23 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J24 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J25 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J26 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH KUCH*
+
+  J27 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH*
+
+  J28 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH KUCH*
+
+  J29 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH*
+
+  J30 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J31 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J32 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J33 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J34 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J35 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J36 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+  J41 | spk=Happy Ass
+    EN:    Make sure to check out the Concert tonight in the Pond of Hehehehe!
+    O:     Ga zeker langs het Concert in de Vijver van Vermaak!
+    PATR:  Ga zeker langs het Concert in de Vijver van Hiehiehie!
+
+  J71 | spk=Old Ass
+    EN:    ...And my last words, after being given the Needle, were "Show the World the Power of the Ass!"
+    O:     ...En mijn laatste woorden, nadat ik de Spuit was gegeven, waren "Laat de Wereld de Kracht van de EZEL MACHT Zien!"
+    PATR:  ...En mijn laatste woorden, nadat ik de Spuit was gegeven, waren "Herinneer de wereld aan de belangan van de Ezels!"
+
+  J74 | spk=Old Ass
+    EN:    Hold on—Sick Ass? I would recognize that heavy breathing anywhere!
+    O:     Wacht eens — SNOTEZEL? Ik zou die luide adem overal herkennen!
+    PATR:  Wacht eens — SNOT EZEL? Ik zou die luide adem overal herkennen!
+
+  J77 | spk=Gullible Ass
+    EN:    Nice to meet you, Comrade Sick!
+    O:     Prettige kennismaking, Kameraad Snotje!
+    PATR:  Prettige kennismaking, Kameraad Snot!
+
+  J82 | spk=Old Ass
+    EN:    To the East—the sensual orgiastic Flats of Hawweeeheaww.
+    O:     Naar het Oosten — de sensuele en orgiastische Vlaktes van Hawweeeheaww.
+    PATR:  Naar het Oosten — de sensuele en orgiastische Vlaktes van Haahaa Honhii.
+
+  J84 | spk=Old Ass
+    EN:    Surrounding these lands are the Steppes of Hawawaw—the stomping grounds for the many Asses who love to race.
+    O:     En rondom dit gebied liggen de Steppes van Hawawaw — dé plek voor de snelle racers onder de Ezels.
+    PATR:  En rondom dit gebied liggen de Steppes van Haahaahon — dé plek voor de snelle racers onder de Ezels.
+
+  J86 | spk=Old Ass
+    EN:    And this is the Pond of Hehehehe, where tonight we will make history with our very first TRAP MUSIC CONCERT. Be sure to attend!
+    O:     En dit is de Vijver van Vertier, waar vanavond ons eerste TRAP MUSIC CONCERT van start gaat. Niet missen!
+    PATR:  En dit is de Vijver van Hiehiehie!, waar vanavond ons eerste TRAP MUSIC CONCERT van start gaat. Niet missen!
+
+  J99 | spk=Old Ass
+    EN:    Sick Ass, maybe you can help raise his Morale?
+    O:     Snotezel, misschien kunt ge hem wat moed inspreken?
+    PATR:  Snot Ezel, misschien kunt ge hem wat moed inspreken?
+
+  J131 | spk=Broken Ass
+    EN:    Geia sou, Newbie. I used to give tours to Humans around my beautiful home islands.
+    O:     Vrede ga met jou, Nieuweling. Ik gaf vroeger rondleidingen aan de Mensen op mijn thuiseilanden.
+    PATR:  Geia sou, Nieuweling. Ik gaf vroeger rondleidingen aan de Mensen op mijn thuiseilanden.
+
+  J151 | spk=Total Ass
+    EN:    Hey, Newbie! You're from Trusty's old Herd aren't you.
+    O:     Hé Nieuwkomer! Jij komt van Trouwe haar oude Kudde, niet.
+    PATR:  Hé Nieuwkomer! Jij komt van Trouwe Ezel haar oude Kudde, niet.
+
+  J212 | spk=DJ Dope Ass
+    EN:    No? Oh my friend, it's best drug we got in the Astral Plane...
+    O:     Ah nee? Maatje, het is het beste spul dat we in het astrale hiernamaals kunnen vinden
+    PATR:  Ah nee? Maatje, het is het beste spul dat we in het Astrale Hiernamaals kunnen vinden...
+
+
+--- E4_HerdSplits_localization (14 non-mechanical edits) ---
+
+  J3 | spk=Kick Ass
+    EN:    HEEEE—@#$%&!—HAWWW!!
+    O:     HEEEE—@#$%&!—HAWWW!!
+    PATR:  HIIEEEE—@#$%&!—HAAAA!!
+
+  J4 | spk=Kick Ass
+    EN:    THIS IS YOUR FAULT HARD ASS!
+    O:     DIT IS UW FOUT FELLE GAST!
+    PATR:  DIT IS UW FOUT BIKKELHARDE EZEL!
+
+  J7 | spk=Kick Ass
+    EN:    What Hard Ass FORCED us to do...
+    O:     Wat Felle Gast ons GEDWONGEN heeft om te doen...
+    PATR:  Wat Bikkelharde Ezel ons GEDWONGEN heeft om te doen...
+
+  J11 | spk=Kick Ass
+    EN:    Hard Ass forced us to keep it a SECRET.
+    O:     We mochten niets zeggen van Felle Gast.
+    PATR:  We mochten niets zeggen van Bikkelharde Ezel.
+
+  J14 | spk=Smart Ass
+    EN:    Is this some kind of twisted joke, Hard Ass?!
+    O:     Is dit één of andere zieke grap, Felle Gast?!
+    PATR:  Is dit één of andere zieke grap, Bikkelharde Ezel?!
+
+  J22 | spk=Smart Ass
+    EN:    We're all gonna die because of you, Hard Ass!
+    O:     We gaan d'r allemaal aan! Dankzij jou, Felle Gast!
+    PATR:  We gaan d'r allemaal aan! Dankzij jou, Bikkelharde Ezel!
+
+  J37 | spk=Sturdy Ass
+    EN:    But if what Hard Ass says is true, then it's too late.
+    O:     Maar als wat Felle Gast zegt de waarheid is, dan is het daarvoor immers al te laat.
+    PATR:  Maar als wat Bikkelharde Ezel zegt de waarheid is, dan is het daarvoor immers al te laat.
+
+  J51 | spk=Big Ass
+    EN:    {vpunch=100,0.75}I'm leaving with Smart Ass too.
+    O:     {vpunch=100,0.75}Ik vertrek samen met Betweter.
+    PATR:  {vpunch=100,0.75}Ik vertrek samen met Slimme Ezel.
+
+  J55 | spk=Kick Ass
+    EN:    You're right, Smart Ass—this place will be THE DEATH of us.
+    O:     Dat klopt, Betweter — deze plek is de NAGEL AAN ONZE DOODSKISTEN.
+    PATR:  Dat klopt, Slimme Ezel — deze plek is de NAGEL AAN ONZE DOODSKISTEN.
+
+  J72 | spk=Smart Ass
+    EN:    Shut it, Hard Ass!
+    O:     Bek dicht, Felle Gast!
+    PATR:  Bek dicht, Bikkelharde Ezel!
+
+  J76 | spk=Sad Ass
+    EN:    I'll come with you Smart Ass.
+    O:     Ik kom met jullie mee Betweter.
+    PATR:  Ik kom met jullie mee Slimme Ezel.
+
+  J79 | spk=Smart Ass
+    EN:    Shut it, Hard Ass!
+    O:     Bek dicht, Felle Gast!
+    PATR:  Bek dicht, Bikkelharde Ezel!
+
+  J80 | spk=Smart Ass
+    EN:    Come on Kick, Big, Sad... and Slow—we're outta this Hellhole! EASY.
+    O:     Kom Stamp, Mega, Triestigaard en Slome — we zijn weg van dit verdorven hol. POEPSIMPEL.
+    PATR:  Kom Stamp, Mega, Triestige en Slome — we zijn weg van dit verdorven hol. POEPSIMPEL.
+
+  J83 | spk=Hard Ass
+    EN:    Sick has been ill a long time, Comrade.
+    O:     Snotje is al lang ziek, Kameraad.
+    PATR:  Snot Ezel is al lang ziek, Kameraad.
+
+
+--- E4_HideAndSeek_localization (3 non-mechanical edits) ---
+
+  J3 | spk=Kick Ass
+    EN:    Sick Ass? Are you with me?
+    O:     Snotezel? Zijt ge daar?
+    PATR:  Snot Ezel? Zijt ge daar?
+
+  J8 | spk=
+    EN:    *COUGH*
+    O:     *HOEST*
+    PATR:  *KUCH*
+
+  J11 | spk=
+    EN:    *COUGH COUGH*
+    O:     *HOEST HOEST*
+    PATR:  *KUCH KUCH*
+
+
+--- E4_KicksConfession_localization (1 non-mechanical edits) ---
+
+  J6 | spk=Kick Ass
+    EN:    He made me HELP while Sick Ass kept watch.
+    O:     MOEST ik MEEHELPEN terwijl Snotezel op uitkijk stond.
+    PATR:  MOEST ik MEEHELPEN terwijl Snotje op uitkijk stond.
+
+
+--- E4_Mine1F_localization (10 non-mechanical edits) ---
+
+  J6 | spk=Kick Ass
+    EN:    Hey Sick, you're supposed to be MELLOWING out!
+    O:     Hé Snotezel, gij hoort het RUSTIG aan te doen!
+    PATR:  Hé Snot Ezel, gij hoort het RUSTIG aan te doen!
+
+  J9 | spk=Hard Ass
+    EN:    Rest, Comrade.
+    O:     Ga rusten, Kameraad
+    PATR:  Ga rusten, Kameraad.
+
+  J17 | spk=Smart Ass
+    EN:    Why did Hard Ass cross the road?
+    O:     Waarom stak Felle Gast de straat over?
+    PATR:  Waarom stak Bikkelharde Ezel de straat over?
+
+  J31 | spk=
+    EN:    @#$%&! You're to blame for all of our SUFFERING, Hard Ass!
+    O:     @#$%&! Al dit leed hangt aan JOUW hoeven, Felle Gast!
+    PATR:  @#$%&! Al dit leed hangt aan JOUW hoeven, Bikkelharde Ezel!
+
+  J32 | spk=Kick Ass
+    EN:    @#$%&! You're to blame for all of our SUFFERING, Hard Ass!
+    O:     @#$%&! Al dit leed hangt aan UW hoeven, Felle Gast!
+    PATR:  @#$%&! Al dit leed hangt aan UW hoeven, Bikkelharde Ezel!
+
+  J56 | spk=Slow Ass
+    EN:    I hope Sick is feeling b-b-b...
+    O:     Ik hoop dat Snotje zich b-b-b...
+    PATR:  Ik hoop dat Snotje zich b-b-b... 
+
+  J57 | spk=Slow Ass
+    EN:    b-b-b-b...
+    O:     b-b-b-b...
+    PATR:  b-b-b-b... 
+
+  J58 | spk=Slow Ass
+    EN:    b-b-b-b-b...
+    O:     b-b-b-b-b...
+    PATR:  b-b-b-b-b... 
+
+  J60 | spk=Sturdy Ass
+    EN:    Hold tight, Comrade. I trust the Gods will see how special Sick Ass is when they meet her.
+    O:     Niet opgeven, Kameraad. De Goden zullen zien hoe speciaal Snotezel is wanneer ze haar ontmoeten.
+    PATR:  Niet opgeven, Kameraad. De Goden zullen zien hoe speciaal Snot Ezel is wanneer ze haar ontmoeten.
+
+  J67 | spk=Kick Ass
+    EN:    HEEEEEHAWWWW!
+    O:     HEEEEEHAWWWW!
+    PATR:  HIIIEEEEE HAAAAAA!
+
+
+
+################################################################################
+#  5_asses.masses_E5Proxy.xlsx
+################################################################################
+
+--- E5_CircusMain_localization (3 non-mechanical edits) ---
+
+  J30 | spk=Ringmaster Rico
+    EN:    So stay tuned!
+    O:     Dus blijf blij ons!
+    PATR:  Dus blijf bij ons!
+
+  J45 | spk=Smart Ass
+    EN:    Once the crowd sees my routine, the Ringmaster is sure to announce a World Tour!
+    O:     Wanneer de circusdirecteur mijn routine ziet kondigt ie meteen een wereldtournee aan!
+    PATR:  Wanneer de Circusdirecteur mijn routine ziet kondigt ie meteen een Wereldtournee aan!
+
+  J69 | spk=Ringmaster Rico
+    EN:    Not everyone has the ape-titude to be a star!
+    O:     Niet iedereen heeft de aap-itude om de ster van de show te worden!
+    PATR:  Niet iedereen heeft de aap-titude om de ster van de show te worden!
+
+
+--- E5_ZooMain_localization (1 non-mechanical edits) ---
+
+  J71 | spk=Kick Ass
+    EN:    @#$%&! Smart Ass—SCREW YOU!
+    O:     @#$%&! BETWETER — KUS MIJN KLOTEN!
+    PATR:  @#$%&! SLIMME EZEL — KUS MIJN KLOTEN!
+
+
+
+################################################################################
+#  6_asses.masses_E6Proxy.xlsx
+################################################################################
+
+--- E6_BadCave_localization (2 non-mechanical edits) ---
+
+  J20 | spk={$NewName}
+    EN:    Hey Uncle Bad Ass...
+    O:     Hé Oom Stoere...
+    PATR:  Hé Nonkel Stoere...
+
+  J26 | spk={$NewName}
+    EN:    Hey Uncle Bad Ass...
+    O:     Hé Oom Stoere...
+    PATR:  Hé Nonkel Stoere...
+
+
+--- E6_BattleHard_localization (1 non-mechanical edits) ---
+
+  J10 | spk={$NewName}
+    EN:    Uncle Hard, everyone says you're a two-faced liar!
+    O:     Oom Bikkel, iedereen zegt dat je een achterbakse leugenaar bent!
+    PATR:  Nonkel Bikkel, iedereen zegt dat je een achterbakse leugenaar bent!
+
+
+--- E6_MineLift_localization (1 non-mechanical edits) ---
+
+  J4 | spk={$NewName}
+    EN:    Uncle Bad Ass is going to be so disappointed in me that I didn't get the super important light he wanted.
+    O:     Oom Stoere Ezel gaat zo teleurgesteld in me zijn dat ik het superbelangrijke licht niet heb gevonden.
+    PATR:  Nonkel Stoere Ezel gaat zo teleurgesteld in me zijn dat ik het superbelangrijke licht niet heb gevonden.
+
+
+--- E6_Nightmare_localization (3 non-mechanical edits) ---
+
+  J10 | spk=Kick Ass
+    EN:    Lazy could NOT handle another shift with HER.
+    O:     Luie kon NIET nog een shift aan met HAAR.
+    PATR:  Luie Ezel kon NIET nog een shift aan met HAAR.
+
+  J16 | spk= Butte
+    EN:    We're going to get the Boring Machine up and running, and it'll save our Mine from going under.
+    O:     We gaan de Boormachine opstarten en laten draaien, en die gaat onze Mijn redden van de ondergang.
+    PATR:  We gaan de Boor-Machine opstarten en laten draaien, en die gaat onze Mijn redden van de ondergang.
+
+  J45 | spk=Kick Ass
+    EN:    You tore Sick AWAY FROM ME!
+    O:     Ge hebt Snot van me WEGGERUKT!
+    PATR:  Ge hebt Snotje van me WEGGERUKT!
+
+
+--- E6_World_localization (56 non-mechanical edits) ---
+
+  J9 | spk={$NewName}
+    EN:    Hi Uncle Hard! How many Humans have you killed today?
+    O:     Hoi Oom Bikkelhard! Hoeveel Mensen heb je vandaag gedood?
+    PATR:  Hoi Nonkel Bikkelharde! Hoeveel Mensen heb je vandaag gedood?
+
+  J13 | spk={$NewName}
+    EN:    Uncle Hard, Comrade Mother and I are spending 'quality time' together, wanna come?
+    O:     Oom Bikkel, Kameraad Moeder en ik brengen 'quality time' samen door, wil je meedoen?
+    PATR:  Nonkel Bikkelharde, Kameraad Moeder en ik brengen 'quality time' samen door, wil je meedoen?
+
+  J14 | spk=Sturdy Ass
+    EN:    Uncle Hard can't abandon his post.
+    O:     Oom Bikkehard kan zijn post niet verlaten, Kameraad.
+    PATR:  Nonkel Bikkelharde kan zijn post niet verlaten, Kameraad.
+
+  J33 | spk=Sturdy Ass
+    EN:    Which way should we go?
+    O:     Welke weg moeten we nemen, Kameraad?
+    PATR:  Welke weg moeten we nemen?
+
+  J63 | spk=Sturdy Ass
+    EN:    The structure lacks integrity and we can't fit through the door.
+    O:     De structuur mist elke integriteit en we passen niet door die deur, Kameraad.
+    PATR:  De structuur mist elke integriteit en we passen niet door die deur.
+
+  J74 | spk=Sturdy Ass
+    EN:    Is everything all right in there? Do you need any help?
+    O:     Is alles in orde daarbinnen? Heb je hulp nodig, kameraad?
+    PATR:  Is alles in orde daarbinnen? Heb je hulp nodig?
+
+  J79 | spk={$NewName}
+    EN:    Ohh... I just remembered I promised Uncle Bad Ass we'd play Rocks!
+    O:     Ohh... ik herinner me net dat ik Oom Stoere Ezel beloofd heb dat we Stenen-spel zouden spelen!
+    PATR:  Ohh... ik herinner me net dat ik Nonkel Stoere Ezel beloofd heb dat we Stenen-spel zouden spelen!
+
+  J121 | spk=Sturdy Ass
+    EN:    "Kin Aesthetic Response"
+    O:     Kin Aesthetic Response
+    PATR:  "Kin Aesthetic Response"
+
+  J122 | spk=
+    EN:    "Growing Pains"
+    O:     Groeipijnen
+    PATR:  "Groeipijnen"
+
+  J123 | spk=Sturdy Ass
+    EN:    "Growing Pains"
+    O:     Groeipijnen
+    PATR:  "Groeipijnen"
+
+  J128 | spk=Sturdy Ass
+    EN:    "My Womb, My Self"
+    O:     "Mijn Schoot, Mijn Zelf"
+    PATR:  "Mijn Baarmoeder, Mijn Zelf"
+
+  J130 | spk=Sturdy Ass
+    EN:    "Mother Courage"
+    O:     Moeder Courage
+    PATR:  "Moeder Courage"
+
+  J131 | spk=
+    EN:    "Ecstasy of a Mother"
+    O:     Extase van een Moeder
+    PATR:  "Extase van een Moeder"
+
+  J132 | spk=Sturdy Ass
+    EN:    "Ecstasy of a Mother"
+    O:     Extase van een Moeder
+    PATR:  "Extase van een Moeder"
+
+  J135 | spk=Sturdy Ass
+    EN:    What should I call this?
+    O:     Hoe zou ik dit noemen, kameraad?
+    PATR:  Hoe zou ik dit noemen?
+
+  J137 | spk=Sturdy Ass
+    EN:    "If The Machines Never Were"
+    O:     Als de Machines Nooit Hadden Bestaan
+    PATR:  "Als De Machines Er Nooit Waren Geweest"
+
+  J140 | spk=
+    EN:    "The Tyranny of Machinery"
+    O:     "De Tirannie der Machines"
+    PATR:  "De Tirannie der Machinerie"
+
+  J141 | spk=Sturdy Ass
+    EN:    "The Tyranny of Machinery"
+    O:     De Tirannie der Machinerie
+    PATR:  "De Tirannie der Machinerie"
+
+  J142 | spk=Sturdy Ass
+    EN:    Damn those evil, soulless, job-taking, child-killing Machines.
+    O:     Verdomd die kwaadaardige, zielloze, baanafpakkende, kindermoorddadige Machines.
+    PATR:  Verdomd die slechte, zielloze, werk-afpakkende, kind-dodende Machines.
+
+  J146 | spk=
+    EN:    "hee haw hi hon 'ee ah he a'w"
+    O:     hie haa hie hon 'ie aah he ahn
+    PATR:  "hie haa hi hon 'ie aah he ahn"
+
+  J147 | spk=Sturdy Ass
+    EN:    "hee haw hi hon 'ee ah he a'w"
+    O:     hie haa hie hon 'ie aah he ahn
+    PATR:  "hie haa hi hon 'ie aah he ahn"
+
+  J148 | spk=
+    EN:    "Ass Power!"
+    O:     "Ezel Macht!"
+    PATR:  "Ezels Eerst!"
+
+  J149 | spk=Sturdy Ass
+    EN:    "Ass Power!"
+    O:     "Ezel Macht!"
+    PATR:  "Ezels Eerst!"
+
+  J150 | spk=
+    EN:    "I'm Scared"
+    O:     "Ik ben Bang"
+    PATR:  "Ik ben bang"
+
+  J151 | spk=Sturdy Ass
+    EN:    "I'm Scared"
+    O:     Ik ben bang
+    PATR:  "Ik ben bang"
+
+  J154 | spk=
+    EN:    "The Gods Leadeth Me"
+    O:     De Goden Leiden Mij
+    PATR:  "De Goden Leiden Mij"
+
+  J157 | spk=Sturdy Ass
+    EN:    "Golden Showers for All"
+    O:     Gouden Regen voor Allen
+    PATR:  "Gouden Regen voor Allen"
+
+  J159 | spk=Sturdy Ass
+    EN:    "Our Souls Will Meet in the Next Life"
+    O:     Onze Zielen Zullen Elkaar Ontmoeten in het Astrale Hiernamaals
+    PATR:  "Onze Zielen Zullen Elkaar Ontmoeten in het Hiernamaals"
+
+  J160 | spk=Sturdy Ass
+    EN:    Praise be to the Gods.
+    O:     Oh liefste Gods
+    PATR:  Oh liefste Goden.
+
+  J164 | spk=
+    EN:    "Farm and Content"
+    O:     Boerderij en Tevredenheid
+    PATR:  "Boerderij en Tevredenheid"
+
+  J165 | spk=Sturdy Ass
+    EN:    "Farm and Content"
+    O:     Boerderij en Tevredenheid
+    PATR:  "Boerderij en Tevredenheid"
+
+  J167 | spk=Sturdy Ass
+    EN:    "The Fields Weep with the Blood of our Ancestors"
+    O:     De Velden Wenen met het Bloed van onze Voorouders
+    PATR:  "De Velden Wenen met het Bloed van onze Voorouders"
+
+  J171 | spk=
+    EN:    "First Born, First Lost"
+    O:     Eerstgeboren, Eerstgevallen
+    PATR:  "Eerstgeboren, Eerst Verloren"
+
+  J172 | spk=Sturdy Ass
+    EN:    "First Born, First Lost"
+    O:     Eerstgeboren, Eerst Verloren
+    PATR:  "Eerstgeboren, Eerst Verloren"
+
+  J174 | spk=Sturdy Ass
+    EN:    "A Study in Laziness"
+    O:     Een Studie in Luiheid
+    PATR:  "Een Studie in Luiheid"
+
+  J176 | spk=Sturdy Ass
+    EN:    "Boredom is Freedom, is Eternity"
+    O:     Verveling is Vrijheid, is Eeuwigheid
+    PATR:  "Verveling is Vrijheid, is Eeuwigheid"
+
+  J183 | spk=Sturdy Ass
+    EN:    Sad, this Memorial Garden is coming along beautifully.
+    O:     Triestige, dit Herdenkingstuintje wordt echt prachtig, Kameraad.
+    PATR:  Triestige, dit Herdenkingstuintje wordt echt prachtig.
+
+  J196 | spk=Thirsty Ass
+    EN:    Tonight, The Bottoms Up Bar is finally openin'!
+    O:     Vanavond gaat 't "Poepegaatje"  eindelijk open, héé!
+    PATR:  Vanavond gaat De Zatten Ezel Cafe eindelijk open, héé!
+
+  J208 | spk=Thirsty Ass
+    EN:    I think this here bar is missin' the somethin' special that makes it worth comin' to.
+    O:     k Denk dadde deze kroeg hier nog dat speciaal iets mist dat het de moeite waard maakt om langs te komen, héé.
+    PATR:  'k Denk dadde deze kroeg hier nog dat speciaal iets mist dat het de moeite waard maakt om langs te komen, héé.
+
+  J219 | spk=Sturdy Ass
+    EN:    What's the perfect title to commemorate the opening of Bottoms Up?
+    O:     Wat is nu de perfecte titel om de opening van Bottoms Up te vieren, Kameraad?
+    PATR:  Wat is nu de perfecte titel om de opening van De Zatten Ezel te vieren, Kameraad?
+
+  J221 | spk=Sturdy Ass
+    EN:    "Home is where the Herd is"
+    O:     Thuis is waar de Kudde is
+    PATR:  "Thuis is waar de Kudde is"
+
+  J224 | spk=Sturdy Ass
+    EN:    "Happy Watering Hole Opening"
+    O:     Prettige Opening van de Drinkplaats
+    PATR:  "Fijne Opening van de Drinkplaats"
+
+  J227 | spk=Sturdy Ass
+    EN:    "Untitled No. 8"
+    O:     Naamloos Nr. 8
+    PATR:  "Naamloos Nr. 8"
+
+  J241 | spk=Nice Ass
+    EN:    Oh Thirsty, you finally opened your bar!
+    O:     Oesje, Zatlap, je hebt eindelijk je kroeg geopend!
+    PATR:  Oesje, Beschonken, je hebt eindelijk je kroeg geopend!
+
+  J249 | spk=Thirsty Ass
+    EN:    It's a damn shame the others aren't here.
+    O:     t Is godverdoemme zonde dadde de rest er nie bij is, héé.
+    PATR:  't Is godverdoemme zonde dadde de rest er nie bij is, héé.
+
+  J255 | spk=Slow Ass
+    EN:    Hello everyb-b-body...
+    O:     Hallo allemaal-b-b-b...
+    PATR:  Hallo allem-m-maal...
+
+  J262 | spk=Sturdy Ass
+    EN:    Help? We don't help traitors.
+    O:     Helpen? Wij helpen geen verraders, Kameraad.
+    PATR:  Helpen? Wij helpen geen verraders.
+
+  J263 | spk=Sturdy Ass
+    EN:    Hard, why have you let him into the Territory?
+    O:     Bikkelharde, waarom heb je hem het Territorium binnengelaten?
+    PATR:  Bikkelharde Ezel, waarom heb je hem het Territorium binnengelaten?
+
+  J265 | spk=Slow Ass
+    EN:    Oh b-b-boy... do you want the short version or the long version?
+    O:     Oh b-b-boy... willen jullie de korte versie of de lange versie?
+    PATR:  Oh jee... willen jullie de korte versie of de lange versie?
+
+  J289 | spk=Slow Ass
+    EN:    If you can b-believe it—I, surp-prisingly, won Ass of the Week!
+    O:     Als je het kunt b-b-geloven—ík, tot mijn eigen verb-b-bazing, heb-b Ezel v/d Week gewonnen!
+    PATR:  Als je het kunt b-b-geloven—ík, tot mijn eigen verb-b-bazing, heb-b Ezel van de Week gewonnen!
+
+  J293 | spk=Slow Ass
+    EN:    Two Humans in b-black p-put our Comrades in a Truck-Machine.
+    O:     Twee Mensen in het zwart hebben onze Kameraden in een Camion Machine ges-s-stopt.
+    PATR:  Twee Mensen in het zwart hebben onze Kameraden in een Camion-Machine ges-s-stopt.
+
+  J296 | spk=Slow Ass
+    EN:    That's where the Truck-Machine stop-ped.
+    O:     Daar is de Camion Machine gestop-pt.
+    PATR:  Daar is de Camion-Machine gestop-pt.
+
+  J298 | spk=Slow Ass
+    EN:    The others are in deep-p troub-b-b-b-b-ble!
+    O:     De anderen zitten in diepe p-p-prob-b-blemen!
+    PATR:  De anderen zitten in diepe p-prob-b-blemen!
+
+  J339 | spk=Slow Ass
+    EN:    Sturdy, will you come with us? P-p-please?
+    O:     Stevige, kom je met ons mee? P-p-please... alsjebbblieft?
+    PATR:  Stevige, kom je met ons mee? Alsjeb-b-blieft?
+
+  J340 | spk=
+    EN:    I refuse to leave my Foal and our Territory unprotected.
+    O:     Ik weiger mijn Veulentje en ons Territorium onbeschermd achter te laten.
+    PATR:  Ik weiger om mijn Veulentje en ons Territorium onbeschermd achter te laten.
+
+  J343 | spk=Sturdy Ass
+    EN:    I will NEVER trust Machines.
+    O:     Ik zal NOOIT Machines vertrouwen.
+    PATR:  Ik zal Machines NOOIT vertrouwen.
+
+
+
+################################################################################
+#  7_asses.masses_E7Proxy.xlsx
+################################################################################
+
+--- E7_Chilling_localization (1 non-mechanical edits) ---
+
+  J18 | spk=The Masses
+    EN:    {color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/color}
+    O:     {color=yellow}{s=5}♪ hie haa hie hon 'ie aah he ahn ♪{/color}
+    PATR:  {color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/color}
+
+
+--- E7_Holding1_localization (3 non-mechanical edits) ---
+
+  J10 | spk=Kick Ass
+    EN:    @#$%&! We're NOT AT THE ZOO ANYMORE!
+    O:     @#$%&! We zitten NIET MEER IN DE ZOO, hè!
+    PATR:  @#$%&! We zitten NIET MEER IN DE DIERENTUIN, hè!
+
+  J13 | spk=Kick Ass
+    EN:    Slow Ass wasn't in the Truck-Machine when we got here—
+    O:     Slome Ezel zat niet in de Camion Machine toen we hier aankwamen—
+    PATR:  Slome Ezel zat niet in de Camion-Machine toen we hier aankwamen—
+
+  J16 | spk=
+    EN:    Maybe he's still stuck in the Truck-Machine.
+    O:     Misschien zit hij nog vast in de Camion Machine.
+    PATR:  Misschien zit hij nog vast in de Camion-Machine.
+
+
+--- E7_Holding3_localization (1 non-mechanical edits) ---
+
+  J6 | spk=Proper Ass
+    EN:    Never fear, we have a provision of shared responsibility for singing the Song of Ascension for the Asses who go before us.
+    O:     Vrees niet, wij zingen trots het ezelenhemelvaartszangderzielen voor de Ezels die ons zijn voorgegaan, dat is onze belofte.
+    PATR:  Vrees niet, wij zingen trots het Hemelvaarts-zang-der-Ezel-zielen voor de Ezels die ons zijn voorgegaan.
+
+
+--- E7_ShippingTwo_localization (4 non-mechanical edits) ---
+
+  J4 | spk=Factory PA
+    EN:    *ksch*—Attention all workers. We have a Code 455.
+    O:     *ksch*—Aandacht alle medewerkers. We hebben een Code 455.
+    PATR:  *tsj*—Aandacht alle medewerkers. We hebben een Code 455.
+
+  J6 | spk=Factory PA
+    EN:    If found, use of force is permitted—*ksh*
+    O:     Indien aangetroffen, is het gebruik van geweld toegestaan—*ksh*
+    PATR:  Indien aangetroffen, is het gebruik van geweld toegestaan—*tsj*
+
+  J9 | spk=Factory PA
+    EN:    *ksh*—Help! The donkeys are free! THEY ARE ESCAPING!
+    O:     *ksch*—Help! De ezels zijn los! ZE ONTSNAPPEN!
+    PATR:  *tsj*—Help! De ezels zijn los! ZE ONTSNAPPEN!
+
+  J11 | spk=Factory PA
+    EN:    Ayyyyyyyy—*ksh*
+    O:     Ayyyyyyyy—*ksh*
+    PATR:  Ayyyyyyyy—*tsj*
+
+
+--- E7_Skinning_localization (3 non-mechanical edits) ---
+
+  J6 | spk=Smart Ass
+    EN:    We've got to turn off this Death-Machine.
+    O:     We moeten die Machine des Doods uitschakelen.
+    PATR:  We moeten die Dood-Machine uitschakelen.
+
+  J23 | spk=Factory PA
+    EN:    *ksh*—Greetings employees.
+    O:     *ksh*—Goedendag werknemers.
+    PATR:  *tsj*—Goedendag werknemers.
+
+  J26 | spk=Factory PA
+    EN:    There will be cake.*ksh*
+    O:     Er zal taart zijn.*ksh*
+    PATR:  Er zal taart zijn.*tsj*
+
+
+
+################################################################################
+#  8_asses.masses_E8Proxy.xlsx
+################################################################################
+
+--- E8_TheGods_localization (1 non-mechanical edits) ---
+
+  J18 | spk=Trusty Ass
+    EN:    Ass Power!
+    O:     Ezelkracht!
+    PATR:  Ezels Eerst!
+
+
+
+################################################################################
+#  9_asses.masses_E9Proxy.xlsx
+################################################################################
+
+--- E9_BadCave_localization (3 non-mechanical edits) ---
+
+  J9 | spk={$NewName}
+    EN:    Uncle Bad—Cole... is being a donkey such a terrible thing?
+    O:     Oom Stoere—Piet... is het zo erg om een ezel te zijn?
+    PATR:  Nonkel Stoere—Piet... is het zo erg om een ezel te zijn?
+
+  J43 | spk=Sturdy Ass
+    EN:    Your Uncle Bad is an Ass, not an evil, soul-less, child-killing Machine.
+    O:     Je Oom Stoere is een Ezel, niet een slechte, zielloze, kind-dodende Machine.
+    PATR:  Je Nonkel Stoere is een Ezel, niet een slechte, zielloze, kind-dodende Machine.
+
+  J75 | spk=Cole-Machine
+    EN:    When in reality, the Gods transformed me into a donkey.
+    O:     Terwijl in werkelijkheid DE GODEN mij in nen Ezel hadden veranderd.
+    PATR:  Terwijl in werkelijkheid de Goden mij in nen Ezel hadden veranderd.
+
+
+--- E9_GoldenAss_localization (5 non-mechanical edits) ---
+
+  J14 | spk={$NewName}
+    EN:    This is my Uncle. He's a Machine too!
+    O:     Dit is mijn nonkel. Hij is ook een Machine!
+    PATR:  Dit is mijn Nonkel. Hij is ook een Machine!
+
+  J70 | spk=
+    EN:    As the Prophet you shall go down in History as the first Prophet-Machine.
+    O:     Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profetische Machine.
+    PATR:  Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profeet-Machine.
+
+  J71 | spk=Golden Ass
+    EN:    As the Prophet you shall go down in History as the first Prophet-Machine.
+    O:     Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profetische Machine.
+    PATR:  Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profeet-Machine.
+
+  J94 | spk={$NewName}
+    EN:    Aunty Sick—Golden—Gods, can I fly on the Winds of Revolution, too?
+    O:     Tante Snot—Gouden—Goden, mag ik ook op de Winden van de Revolutie vliegen?
+    PATR:  Tante Snot—Gouden—Goden, mag ik ook op de Winden der Revolutie vliegen?
+
+  J116 | spk=
+    EN:    Climb upon us and let us fly on the Winds of Revolution!
+    O:     Klim op onze rug en laat ons vliegen op de Wind der Revolutie!
+    PATR:  Klim op onze rug en laat ons vliegen op de Winden der Revolutie!
+
+
+
+################################################################################
+#  10_asses.masses_E10Proxy.xlsx
+################################################################################
+
+--- E10_Government_localization (7 non-mechanical edits) ---
+
+  J12 | spk=Radio Host Marcos
+    EN:    Up next, the #2 song on Mecha's Top 40! asi9 by David Mesiha.
+    O:     En dan nu, de nummer 2 op Mechalens Top 40! van David Mesiha.
+    PATR:  En dan nu, de nummer 2 op Technopolis' Top 40! "ezel8ig" van David Mesiha.
+
+  J27 | spk=Helpful Ass
+    EN:    Are you the Golden Ass? The Gods incarnate?!
+    O:     Zijde gij de Gouden Ezel?! DE GODEN in levenden lijve?!
+    PATR:  Zijde gij de Gouden Ezel?! De Goden in levenden lijve?!
+
+  J29 | spk=Golden Ass
+    EN:    I am one with many names: The Gods, HEE and HAW, Janus.
+    O:     Wij zijn één met vele namen: DE GODEN, HIE en HAA, Janus.
+    PATR:  Wij zijn één met vele namen: De Goden, HIE en HAA, Janus.
+
+  J34 | spk=Golden Ass
+    EN:    Behold, here with me, a special Prophet-Machine for the Humans to worship!
+    O:     Aanschouwt, hier bij Ons, een bijzondere Profetische Machine voor de Mensen om te aanbidden!
+    PATR:  Aanschouwt, hier bij Ons, een bijzondere Profeet-Machine voor de Mensen om te aanbidden!
+
+  J35 | spk=Golden Ass
+    EN:    Behold, here with me, a special Prophet-Machine for the Humans to worship!
+    O:     Aanschouwt, hier bij Ons, een bijzondere Profetische Machine voor de Mensen om te aanbidden!
+    PATR:  Aanschouwt, hier bij Ons, een bijzondere Profeet-Machine voor de Mensen om te aanbidden!
+
+  J69 | spk=Cole-Machine
+    EN:    Mecha's Parliament is a place of democracy!
+    O:     Het parlement van Mechalen is een plek van democratie!
+    PATR:  Het Parlement van Technopolis is een plek van democratie!
+
+  J74 | spk=Cole-Machine
+    EN:    Mecha's citizens are rational beings!
+    O:     De burgers van Mechalen zijn rationele wezens!
+    PATR:  Het Parlement van Technopolis is een plek van democratie!
+

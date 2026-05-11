@@ -1,0 +1,53 @@
+8_asses.masses_E8Proxy.xlsx: 9 cells flagged
+
+
+--- E8_SanctumMain_localization (1) ---
+
+J17 | spk=Trusty Ass | Boerderij → de Hoeve
+  EN:  Oh, too bad. It was a great change of pace from the days on the Farm!
+  NL:  Oh, jammer. Het was een leuke afwisseling van de dagen op de Boerderij!
+  FIX: Oh, jammer. Het was een leuke afwisseling van de dagen op de Hoeve!
+
+
+--- E8_TheGods_localization (8) ---
+
+J6 | spk=THE GODS | Gods register cap
+  EN:  Vassals, your presence has been long overdue.
+  NL:  Vazallen, uw aanwezigheid is bijzonder achterstallig.
+  FIX: Vazallen, Uw aanwezigheid is bijzonder achterstallig.
+
+J14 | spk=Haw | Gods register cap
+  EN:  We shall wipe your memories, so that your Soul can enter into a new Ass without impediment.
+  NL:  Wij zullen uw herinneringen wissen, opdat uw Ziel ongehinderd een nieuw Ezellichaam kan binnentreden.
+  FIX: Wij zullen Uw herinneringen wissen, opdat Uw Ziel ongehinderd een nieuw Ezellichaam kan binnentreden.
+
+J15 | spk=Haw | Gods register cap
+  EN:  Prepare yourself for Reassignment.
+  NL:  Bereid u voor op Heraanstelling.
+  FIX: Bereid U voor op Heraanstelling.
+
+J22 | spk=Hee | Gods register cap
+  EN:  We have decided your Soul will not undergo Reassignment.
+  NL:  Wij hebben besloten dat uw Ziel geen Heraanstelling zal ondergaan.
+  FIX: Wij hebben besloten dat Uw Ziel geen Heraanstelling zal ondergaan.
+
+J33 | spk=Haw | Gods register cap
+  EN:  We look forward to working with you and rectifying this sorrowful situation.
+  NL:  Wij zien ernaar uit met u samen te werken en deze droevige toestand te herstellen.
+  FIX: Wij zien ernaar uit met U samen te werken en deze droevige toestand te herstellen.
+
+J40 | spk=Hee | Gods register cap
+  EN:  No, your Soul will never undergo Reassignment again.
+  NL:  Neen, uw Ziel zal nooit meer Heraanstelling ondergaan.
+  FIX: Neen, Uw Ziel zal nooit meer Heraanstelling ondergaan.
+
+J42 | spk=THE GODS | Gods register cap
+  EN:  We thank you for your service.
+  NL:  Wij danken u voor uw dienst.
+  FIX: Wij danken U voor Uw dienst.
+
+J43 | spk=THE GODS | Gods register cap
+  EN:  Prepare to become one with your Gods.
+  NL:  Bereid u voor om één te worden met uw Goden.
+  FIX: Bereid U voor om één te worden met Uw Goden.
+

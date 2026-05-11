@@ -1,6 +1,7 @@
 {
-  "version": "3.3",
+  "version": "3.4",
   "generated": "2026-03-31T20:45:29.182Z",
+  "lastSync": "2026-05-10 — Tom decisions lock: Bikkelharde (typo), *boe-hoe-hoe* (lowercase), EZELS EERST (slogan); Machine→Machien REVERTED (keep Machine).",
   "description": "Verified codex — main cast, user-confirmed data only",
   "entries": [
     {
@@ -159,8 +160,8 @@
     {
       "name": "Hard Ass",
       "english": "Hard Ass",
-      "dutch": "Bikkeharde Ezel",
-      "dutchShort": "Bikkeharde",
+      "dutch": "Bikkelharde Ezel",
+      "dutchShort": "Bikkelharde",
       "category": "CHARACTER",
       "nicknames": [
         "Hard",
@@ -497,7 +498,7 @@
       "flemishDensity": "light",
       "register": "tussentaal",
       "pronounForm": "ge/gij",
-      "verbalTics": "Kameraad ×7 (all capitalized), 'Jonge Kameraad' (specific address to Trusty/Foal), EZEL MACHT (catchphrase ×3), 'Ik wou dat' (wistful regret ×2), polsen + klapke (Flemish in formal mode), '...' dramatic ellipses throughout dying scene",
+      "verbalTics": "Kameraad ×7 (all capitalized), 'Jonge Kameraad' (specific address to Trusty/Foal), EZELS EERST (catchphrase ×3 — Tom lock 2026-05-10 supersedes earlier EZEL MACHT), 'Ik wou dat' (wistful regret ×2), polsen + klapke (Flemish in formal mode), '...' dramatic ellipses throughout dying scene",
       "dynamics": "sage leader, formal oratory, ideological speeches",
       "relationships": "founder/elder of the Herd; mentor to Trusty Ass; passes leadership baton at death; reappears as guide in afterlife",
       "verified": true,
@@ -575,7 +576,7 @@
       "flemishDensity": "medium",
       "register": "tussentaal",
       "pronounForm": "jij/je",
-      "verbalTics": "*boe-hoe-hoe-hoe* (whimper ×5+), *snik* (lighter cry E3+), *zucht* (sigh ×2), \"Ik wou\" (regret pattern ×3), \"HET IS ALLEMAAL MIJN FOUT\" (guilt explosion ×2), trailing ... throughout, Hallo'kes (Flemish greeting), Nonkel (Flemish: uncle)",
+      "verbalTics": "*boe-hoe-hoe* (whimper ×5+ — Tom lock 2026-05-10: lowercase b, 3 hoe, hyphens), *snik* (lighter cry E3+), *zucht* (sigh ×2), \"Ik wou\" (regret pattern ×3), \"HET IS ALLEMAAL MIJN FOUT\" (guilt explosion ×2), trailing ... throughout, Hallo'kes (Flemish greeting), Nonkel (Flemish: uncle)",
       "dynamics": "melancholic, lost, mourning",
       "relationships": "mourning lover Lazy Ass",
       "verified": true,

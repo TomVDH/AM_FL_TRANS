@@ -64,3 +64,7 @@ token.json
 
 # Push walker state
 .push-state.json
+
+# Large codex archives
+codex/*.zip
+codex/*.tar.gz

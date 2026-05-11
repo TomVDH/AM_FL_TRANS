@@ -1,0 +1,341 @@
+{
+  "auto_decided_ours": [
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J74",
+      "english": "Mecha's citizens are rational beings!",
+      "baseline": "De burgers van Mechalen zijn rationele wezens!",
+      "ours": "De burgers van Technopolis zijn rationele wezens!",
+      "theirs": "Het Parlement van Technopolis is een plek van democratie!"
+    }
+  ],
+  "auto_decided_theirs": [
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J69",
+      "english": "Mecha's Parliament is a place of democracy!",
+      "baseline": "Het parlement van Mechalen is een plek van democratie!",
+      "ours": "Het parlement van Technopolis is een plek van democratie!",
+      "theirs": "Het Parlement van Technopolis is een plek van democratie!"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Sad_localization",
+      "cell": "J4",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J82",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J88",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J91",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J49",
+      "english": "*whimper*",
+      "baseline": "*boe-hoe-hoe-hoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J3",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J25",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J29",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_Exit_localization",
+      "cell": "J12",
+      "english": "*whimper* Take care, Comrade.",
+      "baseline": "*boehoehoe* Het ga je goed, Kameraad.",
+      "ours": "*Boe-hoe-hoe* Het ga je goed, Kameraad.",
+      "theirs": "*boe-hoe-hoe* Het ga je goed, Kameraad."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_Exit_localization",
+      "cell": "J13",
+      "english": "*whimper*",
+      "baseline": "*boehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J16",
+      "english": "*whimper*",
+      "baseline": "*boehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J214",
+      "english": "*whimper*",
+      "baseline": "*boe-hoe-hoe-hoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigJob_localization",
+      "cell": "J35",
+      "english": "And your Soul will be stuck here... *whimper*",
+      "baseline": "En je Ziel zal hier vastzitten... *boehoehoe*",
+      "ours": "En je Ziel zal hier vastzitten... *Boe-hoe-hoe*",
+      "theirs": "En je Ziel zal hier vastzitten... *boe-hoe-hoe*"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J4",
+      "english": "*whimper*",
+      "baseline": "*boehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_CityStreet_localization",
+      "cell": "J5",
+      "english": "*whimper*",
+      "baseline": "*boehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    }
+  ],
+  "residual": [
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J12",
+      "english": "Up next, the #2 song on Mecha's Top 40! asi9 by David Mesiha.",
+      "baseline": "En dan nu, de nummer 2 op Mechalens Top 40! van David Mesiha.",
+      "ours": "En dan nu, de nummer 2 op Technopolis' Top 40! van David Mesiha.",
+      "theirs": "En dan nu, de nummer 2 op Technopolis' Top 40! \"ezel8ig\" van David Mesiha."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J20",
+      "english": "If you need a place to take the kids, get your butts to the Mecha City Zoo, or see the new show at the Big City Circus!",
+      "baseline": "Mocht je een plek zoeken om met je familie heen te gaan, rep je achterwerk naar de zoo van Mechalen! Of ga naar de nieuwe show in het stadscircus!",
+      "ours": "Mocht je een plek zoeken om met je familie heen te gaan, rep je achterwerk naar de zoo van Technopolis! Of ga naar de nieuwe show in het stadscircus!",
+      "theirs": "Als je een leuke plek zoekt voor je familie, ga naar de Dierentuin van Technopolis! Of bezoek de nieuwe show in het Stadscircus!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J47",
+      "english": "Someone has to sing the Song of Ascension to make sure his Ass Soul can reach the Astral Plane and be reassigned.",
+      "baseline": "Iemand moet het ezelenhemelvaartszangderzielen zingen zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen.",
+      "ours": "Iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen.",
+      "theirs": "Zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen, iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J48",
+      "english": "*whimper*",
+      "baseline": "*boe-hoe-hoe-hoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "Herdenk met Triestige Ezel over al wat er verloren is gegaan."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J24",
+      "english": "Not the Stable too!—",
+      "baseline": "Niet de Stal!-",
+      "ours": "Niet de Stal ook!—",
+      "theirs": "Niet de Stal!—"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J42",
+      "english": "And I'll sing the Song of Ascension for Trusty.",
+      "baseline": "En ik zal de Ezelenhemelvaartszangderzielen voor Trouwe zingen.",
+      "ours": "En ik zal het Hemelvaarts-zang-der-Ezel-zielen voor Trouwe zingen.",
+      "theirs": "En de Hemelvaarts-zang-der-Ezel-zielen zal ik voor Trouwe zingen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J7",
+      "english": "June 27th\\nThese are dire times for the mining business. I had to lay off more workers today and we're running out of money. Mme. Derriere made another offer to buy my donkeys, but I just can't bring myself to sell them. The only thing I can depend on are my donkeys!\\n\\nEverybody is crazy for Green Energy these days. Nobody cares for coal anymore.\\n\\nJune 28th\\nEven if I had more money, there's no one to hire. All the youth are leaving for Mecha City to find better paid work at Mme. Derriere's Factory. It's going to be another difficult winter.",
+      "baseline": "27 juni\\nDit zijn barre tijden voor de mijnbouw. 'k Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn ezels, maar 'k kan ze gewoon niet verkopen. Het enige waar ik op kan rekenen zijn mijn ezels!\\n\\nIedereen is tegenwoordig zot van Groene Energie. Niemand geeft nog om kolen.\\n\\n28 juni\\nZelfs al had ik meer geld, er is niemand om aan te werven. Al de jongeren trekken naar Mechalen om beter betaald werk te vinden in de Fabriek van Mevr. Derrière. Het wordt weer een moeilijke winter.",
+      "ours": "27 juni\\nDit zijn barre tijden voor de mijnbouw. 'k Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn ezels, maar 'k kan ze gewoon niet verkopen. Het enige waar ik op kan rekenen zijn mijn ezels!\\n\\nIedereen is tegenwoordig zot van Groene Energie. Niemand geeft nog om kolen.\\n\\n28 juni\\nZelfs al had ik meer geld, er is niemand om aan te werven. Al de jongeren trekken naar Technopolis om beter betaald werk te vinden in de Fabriek van Mevr. Derrière. Het wordt weer een moeilijke winter.",
+      "theirs": "27 juni\\nDit zijn barre tijden voor de mijnbouw. Ik Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn ezels, maar ik kan ze gewoon niet verkopen. Het enige waar ik op kan rekenen zijn mijn ezels!\\n\\nIedereen is tegenwoordig zot van Groene Energie. Niemand geeft nog om kolen.\\n\\n28 juni\\nZelfs al had ik meer geld, er is niemand om aan te werven. Al de jongeren trekken naar Technopolis om beter betaald werk te vinden in de Fabriek van Mevr. Derrière. Het wordt weer een moeilijke winter."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J17",
+      "english": "Child artist Joey Kulan charms the pants off the judges and wins the Bumpkin regional drawing competition for youth 12 and under. His work will be on display at the Mecha City Gallery until the end of the month. His Grandmother is so proud.",
+      "baseline": "Kinderkunstenaar Luukse Vermeulen charmeert de jury en wint de regionale tekenwedstrijd van Klotegem voor kinderen 12 jaar en jonger. Zijn werk zal te zien zijn in het Stadsmuseum van Mechalen tot het einde van de maand. Zijn Grootmoeder is erg trots.",
+      "ours": "Kinderkunstenaar Luukse Vermeulen charmeert de jury en wint de regionale tekenwedstrijd van Klotegem voor kinderen 12 jaar en jonger. Zijn werk zal te zien zijn in het Stadsmuseum van Technopolis tot het einde van de maand. Zijn Grootmoeder is erg trots.",
+      "theirs": "IK HOOP DAT MIJN KUNST MENSEN GELUKKIG MAAKT"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_200_localization",
+      "cell": "J4",
+      "english": "July 24th\\nButte Mine is officially for sale. I'm praying that someone from Mecha City will step up and buy it. I always imagined that Cole would take my place, but...\\n\\nThis place has to survive, somehow, but it's hard to let go of what you love.",
+      "baseline": "24 juli\\nVanscheetvelde Kolen & Industrie staat officieel te koop. 'k hoop dat iemand van Mechalen het zal kopen. 'k Had altijd gedacht dat Piet mijn plaats zou innemen, maar...\\n\\nDeze plek moet overleven, op één of andere manier, maar 't is moeilijk om los te laten wat ge graag ziet.",
+      "ours": "24 juli\\nVanscheetvelde Kolen & Industrie staat officieel te koop. 'k hoop dat iemand van Technopolis het zal kopen. 'k Had altijd gedacht dat Piet mijn plaats zou innemen, maar...\\n\\nDeze plek moet overleven, op één of andere manier, maar 't is moeilijk om los te laten wat ge graag ziet.",
+      "theirs": "24 juli\\nVanscheetvelde Kolen & Industrie staat officieel te koop. Ik hoop dat iemand van Technopolis het zal kopen. Ik Had altijd gedacht dat Piet mijn plaats zou innemen, maar...\\n\\nDeze plek moet overleven, op één of andere manier, maar het is moeilijk om los te laten wat ge graag ziet."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J16",
+      "english": "Do you want to watch me play Rocks, Uncle Sad?",
+      "baseline": "Wil je kijken naar mijn Stenen-spel, Nonkel Triestigaard?",
+      "ours": "Wil je kijken naar mijn Keien-spel, Nonkel Triestigaard?",
+      "theirs": "Wil je kijken naar mijn Stenen-spel, Nonkel Triestige?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J82",
+      "english": "I’d call it... Bottoms Up!",
+      "baseline": "Ik zou 't noemen... Poepegaatje!",
+      "ours": "Ik zou 't noemen... De Zatten Ezel!",
+      "theirs": "Ik zou 't noemen... De Zatten Ezel Cafe!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J85",
+      "english": "Uncle Kick, Uncle Hard, do you want to watch me play Rocks?",
+      "baseline": "Nonkel Hoef, Nonkel Stoer, willen jullie kijken naar mijn Stenen-spel?",
+      "ours": "Nonkel Hoef, Nonkel Stoer, willen jullie kijken naar mijn Keien-spel?",
+      "theirs": "Nonkel Stamp, Nonkel Bikkelharde, willen jullie kijken naar mijn Stenen-spel?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J120",
+      "english": "Will you watch me play Rocks, Uncle Slow?",
+      "baseline": "Wil je kijken naar mijn Stenen-spel, Oom Sloom?",
+      "ours": "Wil je kijken naar mijn Keien-spel, Oom Sloom?",
+      "theirs": "Wil je kijken naar mijn Stenen-spel, Nonkel Slome?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J138",
+      "english": "But Hard Ass says he hasn't seen any Humans for weeks.",
+      "baseline": "Maar Bikkeharde zegt dat hij al weken geen Mensen heeft gezien.",
+      "ours": "Maar Bikkelharde zegt dat hij al weken geen Mensen heeft gezien.",
+      "theirs": "Maar Bikkelharde Ezel zegt dat hij al weken geen Mensen heeft gezien."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J14",
+      "english": "Uncle Hard can't abandon his post.",
+      "baseline": "Oom Bikkehard kan zijn post niet verlaten, Kameraad.",
+      "ours": "Oom Bikkelharde kan zijn post niet verlaten.",
+      "theirs": "Nonkel Bikkelharde kan zijn post niet verlaten, Kameraad."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J79",
+      "english": "Ohh... I just remembered I promised Uncle Bad Ass we'd play Rocks!",
+      "baseline": "Ohh... ik herinner me net dat ik Oom Stoere Ezel beloofd heb dat we Stenen-spel zouden spelen!",
+      "ours": "Ohh... ik herinner me net dat ik Oom Stoere Ezel beloofd heb dat we Keien-spel zouden spelen!",
+      "theirs": "Ohh... ik herinner me net dat ik Nonkel Stoere Ezel beloofd heb dat we Stenen-spel zouden spelen!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J196",
+      "english": "Tonight, The Bottoms Up Bar is finally openin'!",
+      "baseline": "Vanavond gaat 't \"Poepegaatje\"  eindelijk open, héé!",
+      "ours": "Vanavond gaat 't \"De Zatten Ezel\"  eindelijk open, héé!",
+      "theirs": "Vanavond gaat De Zatten Ezel Cafe eindelijk open, héé!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J219",
+      "english": "What's the perfect title to commemorate the opening of Bottoms Up?",
+      "baseline": "Wat is nu de perfecte titel om de opening van Bottoms Up te vieren, Kameraad?",
+      "ours": "Wat is nu de perfecte titel om de opening van Bottoms Up te vieren?",
+      "theirs": "Wat is nu de perfecte titel om de opening van De Zatten Ezel te vieren, Kameraad?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J339",
+      "english": "Sturdy, will you come with us? P-p-please?",
+      "baseline": "Stevige, kom je met ons mee? P-p-please... alsjebbblieft?",
+      "ours": "Stevige, kom je met ons mee? P-p-p-alsjeblieft?",
+      "theirs": "Stevige, kom je met ons mee? Alsjeb-b-blieft?"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding3_localization",
+      "cell": "J6",
+      "english": "Never fear, we have a provision of shared responsibility for singing the Song of Ascension for the Asses who go before us.",
+      "baseline": "Vrees niet, wij zingen trots het ezelenhemelvaartszangderzielen voor de Ezels die ons zijn voorgegaan, dat is onze belofte.",
+      "ours": "Vrees niet, wij zingen trots het Hemelvaarts-zang-der-Ezel-zielen voor de Ezels die ons zijn voorgegaan, dat is onze belofte.",
+      "theirs": "Vrees niet, wij zingen trots het Hemelvaarts-zang-der-Ezel-zielen voor de Ezels die ons zijn voorgegaan."
+    }
+  ]
+}

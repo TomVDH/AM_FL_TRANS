@@ -1,0 +1,52 @@
+{
+  "corrections": [
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilenbeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J72",
+      "english": "THREE, we march through the Village of Bumpkin, convince the Humans to give up their Machines.",
+      "current_nl": "DRIE: we marcheren door het dorp van Muilegem, en overtuigen de Mensen de Machines achter te laten.",
+      "proposed_nl": "DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machines achter te laten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J19",
+      "english": "It's a scorcher! It's looking dry as a bone out there in the Greater Fannyside Region as the drought continues.",
+      "current_nl": "Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilegem en de droogte blijft aanhouden.",
+      "proposed_nl": "Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilenbeek en de droogte blijft aanhouden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "current_nl": "Welkom op de Boerderij van Muilegem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
+      "proposed_nl": "Welkom op de Boerderij van Muilenbeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J60",
+      "english": "THREE, we march through the Village, convince the Humans to give up their Machines...",
+      "current_nl": "DRIE: we marcheren door het dorp van Muilegem en overtuigen de Mensen de Machines achter te laten...",
+      "proposed_nl": "DRIE: we marcheren door het dorp van Klotegem en overtuigen de Mensen de Machines achter te laten..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J88",
+      "english": "THREE, we march through the Village, convince the Humans to give up their Machines...",
+      "current_nl": "DRIE: we marcheren door het dorp van Muilegem, en overtuigen de Mensen de Machines achter te laten.",
+      "proposed_nl": "DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machines achter te laten."
+    }
+  ]
+}

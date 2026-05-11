@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-10",
+    "scope": "Codex sync v3.3 → v3.4 — bring codex into alignment with locked decisions",
+    "files_affected": ["data/json/codex_verified.json", "data/json/codex_translations.json"],
+    "version_bump": "3.3 → 3.4",
+    "rationale": "5 fields drifted from locked decisions across the audit cycle. Sync triggered by Hard Ass (batch g), Cole-Machine (batch p Machien lock), Sad Ass (batch f *boe-hoe-hoe* lowercase), Old Ass (today's EZELS EERST slogan lock), Peek/Blunt Ass (today's narrative-cap + Constaterende Ezel locks)."
+  },
+  "corrections": [
+    {
+      "id": "CODEX-001",
+      "rationale": "Hard Ass long-form Dutch — typo fix. Bikkeharde missing terminal L per batch g lock 2026-05-04.",
+      "file": "data/json/codex_verified.json",
+      "entry": "Hard Ass",
+      "field": "dutch",
+      "current": "Bikkeharde Ezel",
+      "proposed": "Bikkelharde Ezel"
+    },
+    {
+      "id": "CODEX-002",
+      "rationale": "Hard Ass short-form Dutch — typo fix.",
+      "file": "data/json/codex_verified.json",
+      "entry": "Hard Ass",
+      "field": "dutchShort",
+      "current": "Bikkeharde",
+      "proposed": "Bikkelharde"
+    },
+    {
+      "id": "CODEX-003",
+      "rationale": "Cole-Machine Dutch field — Machine → Machien per Tom's Flemish-coding lock (Q1 2026-05-04). Triggered by 5 corpus cells: E0 ManagerScene J15, E0 CharacterProfiles J18, E9 GoldenAss J48 + J64, E10 Credits J39.",
+      "file": "data/json/codex_verified.json",
+      "entry": "Cole-Machine",
+      "field": "dutch",
+      "current": "Piet-Machine",
+      "proposed": "Piet-Machien"
+    },
+    {
+      "id": "CODEX-004",
+      "rationale": "Sad Ass verbalTics — whimper form. Tom 2026-05-10 lock: *boe-hoe-hoe* (LOWERCASE b, 3 hoe, hyphens). Inverts batch f cap-B form.",
+      "file": "data/json/codex_verified.json",
+      "entry": "Sad Ass",
+      "field": "verbalTics",
+      "current_starts_with": "*boe-hoe-hoe-hoe* (whimper ×5+)",
+      "proposed_starts_with": "*boe-hoe-hoe* (whimper ×5+ — Tom 2026-05-10 lock: lowercase b, 3 hoe)"
+    },
+    {
+      "id": "CODEX-005",
+      "rationale": "Old Ass verbalTics — slogan. Tom 2026-05-10 lock: EZELS EERST (replaces EZEL MACHT corpus-wide).",
+      "file": "data/json/codex_verified.json",
+      "entry": "Old Ass",
+      "field": "verbalTics",
+      "current_contains": "EZEL MACHT (catchphrase ×3)",
+      "proposed_contains": "EZELS EERST (catchphrase ×3 — Tom 2026-05-10 supersedes EZEL MACHT)"
+    },
+    {
+      "id": "CODEX-006",
+      "rationale": "Peek Ass Dutch field — Tom 2026-05-10 adopts Patrick's Constaterende Ezel (long form) over Constat-ezel (profile shorthand).",
+      "file": "data/json/codex_translations.json",
+      "entry": "Peek Ass",
+      "field": "dutch",
+      "current": "Constat-ezel",
+      "proposed": "Constaterende Ezel"
+    },
+    {
+      "id": "CODEX-007",
+      "rationale": "Blunt Ass Dutch field — Ezel cap rule (now applies everywhere per Tom 2026-05-10 'cap everywhere' decision).",
+      "file": "data/json/codex_translations.json",
+      "entry": "Blunt Ass",
+      "field": "dutch",
+      "current": "Groffe ezel",
+      "proposed": "Groffe Ezel"
+    },
+    {
+      "id": "CODEX-008",
+      "rationale": "Mirror codex_verified updates into codex_translations.json (Hard Ass, Cole-Machine, Sad Ass, Old Ass — same field updates as CODEX-001 through CODEX-005).",
+      "file": "data/json/codex_translations.json",
+      "entries": ["Hard Ass", "Cole-Machine", "Sad Ass", "Old Ass"],
+      "field_updates": "same as CODEX-001 to CODEX-005"
+    },
+    {
+      "id": "CODEX-META-001",
+      "rationale": "Bump version 3.3 → 3.4; update generated timestamp; add lastEditorialPass entry for 2026-05-10 sync.",
+      "file": "data/json/codex_verified.json + data/json/codex_translations.json",
+      "field": "version",
+      "current": "3.3",
+      "proposed": "3.4"
+    }
+  ]
+}

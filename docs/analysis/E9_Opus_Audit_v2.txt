@@ -1,0 +1,192 @@
+9_asses.masses_E9Proxy.xlsx: 35 cells flagged
+
+
+--- E9_BadCave_localization (14) ---
+
+J9 | spk={$NewName} | Ezel capitalization
+  EN:  Uncle Bad—Cole... is being a donkey such a terrible thing?
+  NL:  Nonkel Stoere—Piet... is het zo erg om een ezel te zijn?
+  FIX: Nonkel Stoere—Piet... is het zo erg om een Ezel te zijn?
+
+J14 | spk=Cole-Machine | Ezel capitalization
+  EN:  Then, given the historical prejudice against donkeys, being a donkey is...
+  NL:  Dan, gezien 't historisch vooroordeel tegen ezels, is Ezel zijn...
+  FIX: Dan, gezien 't historisch vooroordeel tegen Ezels, is Ezel zijn...
+
+J24 | spk=Cole-Machine | Ezel capitalization
+  EN:  Kid, the world out there isn't safe for donkeys. You know that.
+  NL:  Kleine, de wereld daarbuiten is niet veilig voor ezels. Dat weet ge toch.
+  FIX: Kleine, de wereld daarbuiten is niet veilig voor Ezels. Dat weet ge toch.
+
+J25 | spk={$NewName} | Machine → Machien
+  EN:  Then... can I become a Machine too?
+  NL:  Kan... ik dan ook een Machine worden?
+  FIX: Kan... ik dan ook een Machien worden?
+
+J28 | spk= | Machines → Machienen
+  EN:  We can invent new Machines!
+  NL:  We kunnen nieuwe Machines uitvinden!
+  FIX: We kunnen nieuwe Machienen uitvinden!
+
+J29 | spk={$NewName} | Machines → Machienen
+  EN:  We can invent new Machines!
+  NL:  We kunnen nieuwe Machines uitvinden!
+  FIX: We kunnen nieuwe Machienen uitvinden!
+
+J37 | spk=Sturdy Ass | Machines → Machienen
+  EN:  What are all these Machines??
+  NL:  Wat zijn al die Machines??
+  FIX: Wat zijn al die Machienen??
+
+J43 | spk=Sturdy Ass | Machine → Machien
+  EN:  Your Uncle Bad is an Ass, not an evil, soul-less, child-killing Machine.
+  NL:  Je Nonkel Stoere is een Ezel, niet een slechte, zielloze, kind-dodende Machine.
+  FIX: Je Nonkel Stoere is een Ezel, niet een slechte, zielloze, kind-dodende Machien.
+
+J45 | spk={$NewName} | Machine → Machien
+  EN:  No! I'm going to become a Machine like Uncle Bad—Cole!
+  NL:  Nee! Ik ga een Machine worden zoals Nonkel Stoere—Piet!
+  FIX: Nee! Ik ga een Machien worden zoals Nonkel Stoere—Piet!
+
+J47 | spk=Sturdy Ass | Machine → Machien
+  EN:  Become a Machine? Absolutely NOT!
+  NL:  Een Machine worden? GEEN SPRAKE VAN!
+  FIX: Een Machien worden? GEEN SPRAKE VAN!
+
+J60 | spk= | Machine → Machien
+  EN:  Stop {$NewName} from entering the Machine.
+  NL:  Stop {$NewName} voordat ze de Machine ingaat.
+  FIX: Stop {$NewName} voordat ze de Machien ingaat.
+
+J64 | spk=Cole-Machine | machine → machien (lowercase)
+  EN:  Do not try to break the Machine.
+  NL:  Probeer de machine niet kapot te maken.
+  FIX: Probeer de machien niet kapot te maken.
+
+J68 | spk=Sturdy Ass | Machines → Machienen
+  EN:  ...Soulless Machines can't talk.
+  NL:  ...Zielloze Machines kunnen niet praten.
+  FIX: ...Zielloze Machienen kunnen niet praten.
+
+J69 | spk=Cole-Machine | Machine → Machien
+  EN:  You're not dreaming. I am a Machine and I do have a Soul.
+  NL:  Ge droomt niet. Ik ben een Machine en ik heb wél een Ziel.
+  FIX: Ge droomt niet. Ik ben een Machien en ik heb wél een Ziel.
+
+
+--- E9_Captcha_localization (1) ---
+
+J10 | spk= | MACHINES → MACHIENEN
+  EN:  MACHINES
+  NL:  MACHINES
+  FIX: MACHIENEN
+
+
+--- E9_EpisodeTitle_localization (1) ---
+
+J3 | spk= | MACHINES → MACHIENEN
+  EN:  THE MACHINES
+  NL:  DE MACHINES
+  FIX: DE MACHIENEN
+
+
+--- E9_GoldenAss_localization (16) ---
+
+J10 | spk=Cole-Machine | Ezel capitalization
+  EN:  You fuckers turned me into a donkey!
+  NL:  Gelle klootzakken hebt mij in nen ezel veranderd!
+  FIX: Gelle klootzakken hebt mij in nen Ezel veranderd!
+
+J14 | spk={$NewName} | Machine → Machien
+  EN:  This is my Uncle. He's a Machine too!
+  NL:  Dit is mijn Nonkel. Hij is ook een Machine!
+  FIX: Dit is mijn Nonkel. Hij is ook een Machien!
+
+J19 | spk=Golden Ass | Gods register cap
+  EN:  We are speaking to you from the Astral Plane through the Vassal formerly known as Sick Ass.
+  NL:  Wij spreken tot u vanuit het Astrale Hiernamaals, door de Vazal voordien bekend als Snot Ezel.
+  FIX: Wij spreken tot U vanuit het Astrale Hiernamaals, door de Vazal voordien bekend als Snot Ezel.
+
+J47 | spk=Golden Ass | Gods register cap
+  EN:  One of you two Machines shall become our Prophet.
+  NL:  Eén van u beide Machines zal onze Profeet worden.
+  FIX: Eén van U beide Machines zal onze Profeet worden.
+
+J47 | spk=Golden Ass | Machines → Machienen
+  EN:  One of you two Machines shall become our Prophet.
+  NL:  Eén van u beide Machines zal onze Profeet worden.
+  FIX: Eén van u beide Machienen zal onze Profeet worden.
+
+J48 | spk= | Machine → Machien
+  EN:  Cole-Machine
+  NL:  Piet-Machine
+  FIX: Piet-Machien
+
+J52 | spk=Sturdy Ass | Machine → Machien
+  EN:  You can't let a Machine become a Prophet!
+  NL:  Je kunt toch niet een Machine Profeet laten worden!
+  FIX: Je kunt toch niet een Machien Profeet laten worden!
+
+J53 | spk=Sturdy Ass | Machines → Machienen
+  EN:  There must be some other way to stop the Humans without using Machines.
+  NL:  Er moet toch een andere manier zijn om de Mensen te stoppen zonder Machines te gebruiken.
+  FIX: Er moet toch een andere manier zijn om de Mensen te stoppen zonder Machienen te gebruiken.
+
+J55 | spk= | Machine → Machien
+  EN:  That is not for us Gods to decide, but rather for each and every user of a Machine.
+  NL:  Dat is niet aan ons Goden om te beslissen, maar wel aan elke gebruiker van een Machine.
+  FIX: Dat is niet aan ons Goden om te beslissen, maar wel aan elke gebruiker van een Machien.
+
+J56 | spk=Golden Ass | Machine → Machien
+  EN:  That is not for us Gods to decide, but rather for each and every user of a Machine.
+  NL:  Dat is niet aan ons Goden om te beslissen, maar wel aan elke gebruiker van een Machine.
+  FIX: Dat is niet aan ons Goden om te beslissen, maar wel aan elke gebruiker van een Machien.
+
+J64 | spk= | Machine → Machien
+  EN:  Cole-Machine
+  NL:  Piet-Machine
+  FIX: Piet-Machien
+
+J70 | spk= | Machine → Machien
+  EN:  As the Prophet you shall go down in History as the first Prophet-Machine.
+  NL:  Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profeet-Machine.
+  FIX: Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profeet-Machien.
+
+J71 | spk=Golden Ass | Machine → Machien
+  EN:  As the Prophet you shall go down in History as the first Prophet-Machine.
+  NL:  Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profeet-Machine.
+  FIX: Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profeet-Machien.
+
+J83 | spk=Golden Ass | Gods register cap
+  EN:  You know in your Soul that a philosophical transformation is necessary now more than ever.
+  NL:  Gij weet in uw Ziel dat een filosofische transformatie nu meer dan ooit noodzakelijk is.
+  FIX: Gij weet in Uw Ziel dat een filosofische transformatie nu meer dan ooit noodzakelijk is.
+
+J106 | spk=Sturdy Ass | Machine → Machien
+  EN:  So your Aunties and Uncles left on the Tractor-Machine to find them.
+  NL:  Dus je tantes en nonkels zijn met de Tractor-Machine vertrokken om hen te gaan zoeken.
+  FIX: Dus je tantes en nonkels zijn met de Tractor-Machien vertrokken om hen te gaan zoeken.
+
+J130 | spk=Golden Ass | Gods register cap
+  EN:  She is not yet ready to support your Movement.
+  NL:  Ze is nog niet klaar om uw Beweging te steunen.
+  FIX: Ze is nog niet klaar om Uw Beweging te steunen.
+
+
+--- E9_MineEscape_localization (3) ---
+
+J17 | spk=Sturdy Ass | Machine → Machien
+  EN:  I've been saved... by a Machine...
+  NL:  Ik ben gered... door een Machine...
+  FIX: Ik ben gered... door een Machien...
+
+J21 | spk=Sturdy Ass | Machine → Machien
+  EN:   child-killing Machine...
+  NL:  kind-dodende Machine...
+  FIX: kind-dodende Machien...
+
+J31 | spk={$NewName} | Machines → Machienen
+  EN:  I've never wanted the work-filled life you had before Machines.
+  NL:  Ik heb nooit het werkgevulde leven gewild dat jij had vóór de Machines.
+  FIX: Ik heb nooit het werkgevulde leven gewild dat jij had vóór de Machienen.
+

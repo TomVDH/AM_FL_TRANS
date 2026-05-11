@@ -99,7 +99,15 @@
       "Bash(git -C /Users/tomlinson/AM_FL_TRANS status)",
       "Bash(git -C /Users/tomlinson/AM_FL_TRANS diff --stat)",
       "Bash(git -C /Users/tomlinson/AM_FL_TRANS log --oneline -10)",
-      "Bash(git -C /Users/tomlinson/AM_FL_TRANS diff src/components/TranslationHelper.tsx src/hooks/useLiveEdit.ts src/hooks/useTranslationState.ts)"
+      "Bash(git -C /Users/tomlinson/AM_FL_TRANS diff src/components/TranslationHelper.tsx src/hooks/useLiveEdit.ts src/hooks/useTranslationState.ts)",
+      "Skill(cabinet-of-imd:cabinet)",
+      "Bash(obsidian vault=\"Claude Cabinet\" read path=\"projects/am-fl-trans/brief.md\")",
+      "Bash(obsidian vault=\"Claude Cabinet\" files folder=\"projects/am-fl-trans/chatter\")",
+      "Bash(obsidian vault=\"Claude Cabinet\" read path=\"projects/am-fl-trans/chatter/2026-04-23.md\")",
+      "Bash(obsidian vault=\"Claude Cabinet\":*)",
+      "Bash(git check-ignore *)",
+      "Bash(unzip -q codex/E5-E10-20260503T063705Z-3-001.zip -d codex/)",
+      "Bash(git -C \"/Users/tomlinson/Projects/VIBE CODING/am-fl-trans\" status --short)"
     ],
     "deny": [],
     "ask": []

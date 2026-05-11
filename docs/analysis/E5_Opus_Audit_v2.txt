@@ -1,0 +1,146 @@
+5_asses.masses_E5Proxy.xlsx: 27 cells flagged
+
+
+--- E5_CircusMain_localization (17) ---
+
+J4 | spk= | Acte vs Nummer board (DECISION)
+  EN:  ACT ONE
+  NL:  EERSTE NUMMER
+  FIX: (DECISION)
+
+J5 | spk= | Acte vs Nummer board (DECISION)
+  EN:  ACT TWO
+  NL:  TWEEDE NUMMER
+  FIX: (DECISION)
+
+J6 | spk= | Acte vs Nummer board (DECISION)
+  EN:  ACT THREE
+  NL:  DERDE NUMMER
+  FIX: (DECISION)
+
+J7 | spk= | Acte vs Nummer board (DECISION)
+  EN:  ACT FOUR
+  NL:  VIERDE NUMMER
+  FIX: (DECISION)
+
+J8 | spk= | Acte vs Nummer board (DECISION)
+  EN:  ACT FIVE
+  NL:  VIJFDE NUMMER
+  FIX: (DECISION)
+
+J21 | spk=Ringmaster Rico | Acte vs Nummer speech (DECISION)
+  EN:  The acts you'll see tonight will each be more visually spectacular, more death-defying, more baffling than the last!
+  NL:  Alle actes van vanavond zullen het visuele spektakel, het gevaar, het lef van de acte tevoren overtreffen!
+  FIX: (DECISION)
+
+J73 | spk=Ringmaster Rico | Acte vs Nummer speech (DECISION)
+  EN:  Don't leave! I guarantee our next few acts will be more bearable!
+  NL:  Nee, wacht! Ik beloof dat onze volgende actes de moeite waard zijn!
+  FIX: (DECISION)
+
+J81 | spk=Ringmaster Rico | Pun preservation aap-itude (DECISION)
+  EN:  What APE-TITUDE under such HAIRY circumstances!
+  NL:  AAP-ITUDE MET HAAR OP!
+  FIX: (DECISION)
+
+J106 | spk=Smart Ass | Machines → Machienen
+  EN:  Finding another job with no Machines isn't going to be easy.
+  NL:  Een andere job zonder Machines vinden gaat niet evident zijn...
+  FIX: Een andere job zonder Machienen vinden gaat niet evident zijn...
+
+J131 | spk=Smart Ass | Machines → Machienen
+  EN:  Finding another job with no Machines isn't going to be easy.
+  NL:  Een andere job zonder Machines vinden gaat niet evident zijn...
+  FIX: Een andere job zonder Machienen vinden gaat niet evident zijn...
+
+J167 | spk=Slow Ass | New feedback: Nijg (DECISION)
+  EN:  *huff p-p-puff* I'm p-p-pouring sweat from the adrenaline already...
+  NL:  *puf puf* Ik z-z-zweet al zo nijg, gewoon van d-d-de adrenaline...
+  FIX: (DECISION)
+
+J176 | spk=Slow Ass | New feedback: Nijg (DECISION)
+  EN:  *huff p-p-puff* I'm p-p-pouring sweat from the adrenaline already...
+  NL:  *puf puf* Ik z-z-zweet al zo nijg, gewoon van d-d-de adrenaline...
+  FIX: (DECISION)
+
+J195 | spk=Ringmaster Rico | Idiom: doekjes rond → om
+  EN:  I'm not lyin' folks... that could have been better.
+  NL:  Ik ga er geen doekjes rond winden, mensen. Dat kon beter.
+  FIX: Ik ga er geen doekjes om winden, mensen. Dat kon beter.
+
+J215 | spk=Wedgie | Ezel capitalization
+  EN:  Where's the last donkey?
+  NL:  Waar zit de laatste ezel?
+  FIX: Waar zit de laatste Ezel?
+
+J217 | spk=Ringmaster Rico | Ezel capitalization
+  EN:  My show needs Robots more than donkeys in cheap costumes if I'm gonna get bums in seats.
+  NL:  Mijn show heeft meer robots dan ezels in goedkope kostuums nodig als ik de zaal met wat anders dan marginalen wil opvullen.
+  FIX: Mijn show heeft meer robots dan Ezels in goedkope kostuums nodig als ik de zaal met wat anders dan marginalen wil opvullen.
+
+J218 | spk=Ringmaster Rico | Ezel capitalization
+  EN:  No hard feelings, donkey.
+  NL:  Het is niet persoonlijk, ezeltje.
+  FIX: Het is niet persoonlijk, Ezeltje.
+
+J220 | spk=Wedgie | Ezel capitalization
+  EN:  All right donkey. Get in the truck.
+  NL:  Kom, ezel. De camion in.
+  FIX: Kom, Ezel. De camion in.
+
+
+--- E5_ZooCapture_localization (2) ---
+
+J30 | spk=Wedgie | Ezel capitalization
+  EN:  These the donkeys?
+  NL:  Dit de ezels?
+  FIX: Dit de Ezels?
+
+J33 | spk=Zookeeper Rose | Ezel capitalization
+  EN:  I'm sorry donkeys.
+  NL:  Het spijt me ezeltjes.
+  FIX: Het spijt me Ezeltjes.
+
+
+--- E5_ZooMain_localization (8) ---
+
+J118 | spk=Sad Ass | Sad whimper → *boe-hoe-hoe* (lowercase, Tom lock)
+  EN:  *whimper*
+  NL:  *boe-hoe-hoe-hoe*
+  FIX: (REVIEW — should be *boe-hoe-hoe*)
+
+J123 | spk=Sad Ass | Sad whimper → *boe-hoe-hoe* (lowercase, Tom lock)
+  EN:  *whimper*
+  NL:  *boe-hoe-hoe-hoe*
+  FIX: (REVIEW — should be *boe-hoe-hoe*)
+
+J125 | spk=Smart Ass | Machines → Machienen
+  EN:  This Zoo has fresh hay, nice Humans, no ugly Machines, and rigorous daily labour!
+  NL:  Deze Dierentuin heeft verse hooi, lieve Mensen, geen lelijke Machines en rigoreus dagdagelijks labeur!
+  FIX: Deze Dierentuin heeft verse hooi, lieve Mensen, geen lelijke Machienen en rigoreus dagdagelijks labeur!
+
+J199 | spk=Smart Ass | Machines → Machienen
+  EN:  And good luck to him finding another job without Machines!
+  NL:  En 't beste voor hem om een job zonder Machines te vinden!
+  FIX: En 't beste voor hem om een job zonder Machienen te vinden!
+
+J208 | spk=Smart Ass | Apostrophe: t → 't
+  EN:  Good luck to him finding another job without Machines!
+  NL:  t Beste voor hem om een job zonder Machines te vinden!
+  FIX: 't Beste voor hem om een job zonder Machines te vinden!
+
+J208 | spk=Smart Ass | Machines → Machienen
+  EN:  Good luck to him finding another job without Machines!
+  NL:  t Beste voor hem om een job zonder Machines te vinden!
+  FIX: t Beste voor hem om een job zonder Machienen te vinden!
+
+J216 | spk=Kick Ass | Machine → Machien
+  EN:  WHAT?! You're as clunky as a MACHINE.
+  NL:  WAT?! Ge bent zo lomp als een Machine.
+  FIX: WAT?! Ge bent zo lomp als een Machien.
+
+J224 | spk=Grandma Kulan | Ezel capitalization
+  EN:  Thank you donkey!
+  NL:  Danku ezeltje!
+  FIX: Danku Ezeltje!
+

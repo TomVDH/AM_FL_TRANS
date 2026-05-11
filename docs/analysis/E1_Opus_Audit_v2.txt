@@ -1,0 +1,203 @@
+1_asses.masses_E1Proxy.xlsx: 36 cells flagged
+
+
+--- E1_FarmHouseInt_localization (1) ---
+
+J19 | spk=Radio Host Marcos | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  It's a scorcher! It's looking dry as a bone out there in the Greater Fannyside Region as the drought continues.
+  NL:  Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilebeek en de droogte blijft aanhouden.
+  FIX: Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilenbeek en de droogte blijft aanhouden.
+
+
+--- E1_Farm_localization (18) ---
+
+J5 | spk=Welcome Sign | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Boerderij van Muilenbeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.
+
+J5 | spk=Welcome Sign | Boerderij → de Hoeve
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Hoeve van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.
+
+J11 | spk=Shitty Sign | HUDO unclear (DECISION PENDING)
+  EN:  The Outhouse
+  NL:  De Hudo
+  FIX: (DECISION)
+
+J17 | spk=Trusty Ass | Machine → Machien
+  EN:  The Truck-Machine is gone. The Humans must be in the Village.
+  NL:  De Camion-Machine is weg. De mensen moeten ergens in naar het dorp zijn.
+  FIX: De Camion-Machien is weg. De mensen moeten ergens in naar het dorp zijn.
+
+J18 | spk=Trusty Ass | Machine → Machien
+  EN:  It's the Tractor-Machine...
+  NL:  Dat is de Tractor-Machine...
+  FIX: Dat is de Tractor-Machien...
+
+J30 | spk=Thirsty Ass | Machine → Machien
+  EN:  Ever since she got laid off, and replaced by that dang Tractor-Machine, it's like she's forgotten all about me.
+  NL:  Sinds da' z'ontslagen is, en door die Tractor-Machine vervangen is, herkent ze me precies niet meer.
+  FIX: Sinds da' z'ontslagen is, en door die Tractor-Machien vervangen is, herkent ze me precies niet meer.
+
+J50 | spk=Big Ass | Ezel capitalization
+  EN:  It must be pretty bad down in the Mines if it can stop an Ass from eating.
+  NL:  Het moet er slecht uitzien in de Mijnen als een ezel daarna geen honger meer heeft.
+  FIX: Het moet er slecht uitzien in de Mijnen als een Ezel daarna geen honger meer heeft.
+
+J61 | spk=Hard Ass | Machines → Machienen
+  EN:  But, we owe it to her to abolish the Machines that killed her and to get our jobs back.
+  NL:  Maar, we zijn het haar verschuldigd om de verdomde Machines die haar hebben vermoord te verbannen, en ons werk terug te pakken.
+  FIX: Maar, we zijn het haar verschuldigd om de verdomde Machienen die haar hebben vermoord te verbannen, en ons werk terug te pakken.
+
+J68 | spk=Smart Ass | Ezel capitalization
+  EN:  Oh shut it, can't two Jennets joke around?
+  NL:  Och, mogen twee ezelinnekes al niet meer eens lachen?
+  FIX: Och, mogen twee Ezelinnekes al niet meer eens lachen?
+
+J72 | spk=Smart Ass | Machines → Machienen
+  EN:  THREE, we march through the Village of Bumpkin, convince the Humans to give up their Machines.
+  NL:  DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machines achter te laten.
+  FIX: DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machienen achter te laten.
+
+J86 | spk=Sad Ass | ✓ Stal correct (literal stable)
+  EN:  Did you find the matches? They might be in the Stable...
+  NL:  Heb je lucifers gevonden? Ze liggen misschien in de Stal...
+  FIX: Heb je lucifers gevonden? Ze liggen misschien in de Stal...
+
+J100 | spk=Bad Ass | Machines → Machienen
+  EN:  Technologies and Machines are transforming the social order.
+  NL:  Technologie en Machines hebben onherroepelijk de sociale orde herschikt.
+  FIX: Technologie en Machienen hebben onherroepelijk de sociale orde herschikt.
+
+J106 | spk=Child Joey | Ezel capitalization
+  EN:  Grandmother! Can I feed the cute donkey?
+  NL:  Groetmoe! Mag ik het ezeltje eten geven?
+  FIX: Groetmoe! Mag ik het Ezeltje eten geven?
+
+J108 | spk=Child Joey | Ezel capitalization
+  EN:  Here donkey!
+  NL:  Hier, ezeltje!
+  FIX: Hier, Ezeltje!
+
+J114 | spk=Child Joey | Ezel capitalization
+  EN:  Want more, donkey?
+  NL:  Wil je meer, ezeltje?
+  FIX: Wil je meer, Ezeltje?
+
+J117 | spk=Child Joey | Ezel capitalization
+  EN:  Want more, donkey?
+  NL:  Wil je nog meer, ezeltje?
+  FIX: Wil je nog meer, Ezeltje?
+
+J120 | spk=Grandma Kulan | Ezel capitalization
+  EN:  Come along, darling. This donkey seems greedy.
+  NL:  Kom, we gaan, schat. Dit ezeltje is wat gierig.
+  FIX: Kom, we gaan, schat. Dit Ezeltje is wat gierig.
+
+J126 | spk=Trusty Ass | Machine → Machien
+  EN:  The Truck-Machine is back...
+  NL:  De Camion-Machine is terug...
+  FIX: De Camion-Machien is terug...
+
+
+--- E1_Mill_localization (1) ---
+
+J4 | spk=Trusty Ass | Machine → Machien
+  EN:  The noisy Mill-Machine...
+  NL:  De luide Molen-Machine...
+  FIX: De luide Molen-Machien...
+
+
+--- E1_Plowing_localization (2) ---
+
+J6 | spk=Nice Ass | Machine → Machien
+  EN:  Heck, we could totally team up and show that nasty Tractor-Machine a thing or two!
+  NL:  Vormen we een team? Die lelijke Tractor-Machine zal zien wie hier de baas is.
+  FIX: Vormen we een team? Die lelijke Tractor-Machien zal zien wie hier de baas is.
+
+J10 | spk=Nice Ass | Machine → Machien
+  EN:  That Tractor-Machine has nothing on you!
+  NL:  Je maakt die Tractor-Machine kapot!
+  FIX: Je maakt die Tractor-Machien kapot!
+
+
+--- E1_Stable1F_localization (2) ---
+
+J6 | spk=Old Ass | Machines → Machienen
+  EN:  We have been reduced to spectators, while wretched Machines do OUR jobs in OUR beloved fields.
+  NL:  We staan erbij en kijken ernaar, terwijl vervloekte Machines ONS werk in ONZE velden van ons afpakken.
+  FIX: We staan erbij en kijken ernaar, terwijl vervloekte Machienen ONS werk in ONZE velden van ons afpakken.
+
+J20 | spk=Sturdy Ass | Machine → Machien
+  EN:  Asses and Humans will work together again, without a Machine in sight!
+  NL:  Ezels en Mensen kunnen weer samenwerken, zonder dat daar een Machine bij aan de pas komt.
+  FIX: Ezels en Mensen kunnen weer samenwerken, zonder dat daar een Machien bij aan de pas komt.
+
+
+--- E1_Stable2F_localization (4) ---
+
+J23 | spk=Old Ass | Machine → Machien
+  EN:  Put me in their wretched Truck-Machine...
+  NL:  Ze hebben me in hun vervloekte Camion-Machine gestoken...
+  FIX: Ze hebben me in hun vervloekte Camion-Machien gestoken...
+
+J48 | spk=Sturdy Ass | Sturdy ,Kameraad (EN justifies, m2)
+  EN:  I'll stay with him. You lead the Herd, Comrade.
+  NL:  Ik blijf bij hem. Jij moet de Kudde leiden, Kameraad.
+  FIX: (REVIEW m2)
+
+J56 | spk=Sturdy Ass | Machines → Machienen
+  EN:  A life free of evil, soulless, job-taking, child-killing Machines.
+  NL:  Een leven zonder kwaad, zonder zielloze, werk-stelende en moordende Machines.
+  FIX: Een leven zonder kwaad, zonder zielloze, werk-stelende en moordende Machienen.
+
+J57 | spk=Sturdy Ass | Sturdy ,Kameraad (EN justifies, m2)
+  EN:  May you pass on in power to the Astral Plane, my dear Comrade.
+  NL:  Dat je met kracht en liefde mag oversteken naar het Astrale Hiernamaals, Kameraad.
+  FIX: (REVIEW m2)
+
+
+--- E1_TheProtest_localization (8) ---
+
+J5 | spk=Welcome Sign | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Boerderij van Muilenbeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.
+
+J5 | spk=Welcome Sign | Boerderij → de Hoeve
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Hoeve van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.
+
+J11 | spk=Shitty Sign | HUDO unclear (DECISION PENDING)
+  EN:  The Outhouse
+  NL:  De Hudo
+  FIX: (DECISION)
+
+J16 | spk=Trusty Ass | Machine → Machien
+  EN:  It's the Tractor-Machine...
+  NL:  Dat is de Tractor-Machine...
+  FIX: Dat is de Tractor-Machien...
+
+J23 | spk= | Machines → Machienen
+  EN:  Tell Nice Ass that the Humans have been corrupted by the Machines.
+  NL:  Zeg aan Lieve Ezel dat de mensen zijn verdorven door de Machines.
+  FIX: Zeg aan Lieve Ezel dat de mensen zijn verdorven door de Machienen.
+
+J57 | spk=Smart Ass | Machines → Machienen
+  EN:  THREE, we march through the Village, convince the Humans to give up their Machines...
+  NL:  DRIE: we marcheren door het dorp van Klotegem en overtuigen de Mensen de Machines achter te laten...
+  FIX: DRIE: we marcheren door het dorp van Klotegem en overtuigen de Mensen de Machienen achter te laten...
+
+J72 | spk=Thirsty Ass | Ezel capitalization
+  EN:  Spoken like a true Ass. YEEHAW!
+  NL:  Gelijk 'nen echte ezel gesproken, héé!
+  FIX: Gelijk 'nen echte Ezel gesproken, héé!
+
+J89 | spk=Smart Ass | Machines → Machienen
+  EN:  THREE, we march through the Village, convince the Humans to give up their Machines...
+  NL:  DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machines achter te laten.
+  FIX: DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machienen achter te laten.
+

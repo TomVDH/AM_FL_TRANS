@@ -1,0 +1,270 @@
+2_asses.masses_E2Proxy.xlsx: 47 cells flagged
+
+
+--- E2_BadAssRescue_localization (1) ---
+
+J9 | spk=Bad Ass | Boerderij → de Hoeve
+  EN:  You find a way to stop the fire and save the Farm.
+  NL:  Zoek een manier om dat vuur te blussen en de Boerderij te redden.
+  FIX: Zoek een manier om dat vuur te blussen en de Hoeve te redden.
+
+
+--- E2_BattleMiner_localization (2) ---
+
+J3 | spk= | Typo: Bikkeharde → Bikkelharde
+  EN:  Hard Ass
+  NL:  Bikkeharde Ezel
+  FIX: Bikkelharde Ezel
+
+J13 | spk= | Schup → Schep
+  EN:  Miner Jenny uses SHOVEL.
+  NL:  Mijnwerker Jenny gebruikt SCHUP.
+  FIX: Mijnwerker Jenny gebruikt SCHEP.
+
+
+--- E2_ButtesHouse_localization (5) ---
+
+J5 | spk=??? | Ezel capitalization
+  EN:  Is that a donkey?
+  NL:  Is dat een ezel?
+  FIX: Is dat een Ezel?
+
+J10 | spk= Butte | Ezel capitalization
+  EN:  *sigh* I guess replacing you donkeys made no difference.
+  NL:  *zucht* Blijkt dat jullie ezels vervangen geen verschil heeft gemaakt.
+  FIX: *zucht* Blijkt dat jullie Ezels vervangen geen verschil heeft gemaakt.
+
+J12 | spk= Butte | Machines → Machienen
+  EN:  New Machines for a new era.
+  NL:  Nieuwe Machines voor een nieuwe era.
+  FIX: Nieuwe Machienen voor een nieuwe era.
+
+J13 | spk= Butte | Ezel capitalization
+  EN:  You can't run a Coal Mine with just donkeys—it's the 21st century!
+  NL:  Je kan geen Koolmijn met enkel ezels runnen — het is de 21ste eeuw!
+  FIX: Je kan geen Koolmijn met enkel Ezels runnen — het is de 21ste eeuw!
+
+J17 | spk= Butte | Ezel capitalization
+  EN:  Ah, what the hell. Look at me. Talking to a donkey again...
+  NL:  Ach, wat maakt het. Kijk naar mij — tegen een ezel bezig...
+  FIX: Ach, wat maakt het. Kijk naar mij — tegen een Ezel bezig...
+
+
+--- E2_ChildsHouse_localization (2) ---
+
+J6 | spk=Child Joey | Ezel capitalization
+  EN:  Please donkey!
+  NL:  Kom, ezeltje!
+  FIX: Kom, Ezeltje!
+
+J12 | spk=Child Joey | Ezel capitalization
+  EN:  Grandma always said donkeys were WORTHLESS!
+  NL:  Grootmoe zei altijd al dat ezels WAARDELOOS zijn!
+  FIX: Grootmoe zei altijd al dat Ezels WAARDELOOS zijn!
+
+
+--- E2_Confession_localization (6) ---
+
+J4 | spk=Nice Ass | HUDO unclear (DECISION PENDING)
+  EN:  Sad Ass! Quit hiding in the outhouse!
+  NL:  Triestige Ezel! Stopt met je in de Hudo te verstoppen!
+  FIX: (DECISION)
+
+J54 | spk=Sad Ass | Machines → Machienen
+  EN:  I only meant to destroy one of the Humans' ugly Car-Machines, not set everything ablaze!!
+  NL:  Ik wou slechts één van de lelijke Auto-Machines van de Mensen vernielen, niet alles in de fik steken!
+  FIX: Ik wou slechts één van de lelijke Auto-Machienen van de Mensen vernielen, niet alles in de fik steken!
+
+J63 | spk=Nice Ass | Boerderij → de Hoeve
+  EN:  The Farm—our home! Sad Ass, how could you?!
+  NL:  De Boerderij—onze thuis! Triestige, hoe kon je dit laten gebeuren?!
+  FIX: De Hoeve—onze thuis! Triestige, hoe kon je dit laten gebeuren?!
+
+J64 | spk=Sad Ass | Boerderij → de Hoeve
+  EN:  I don't belong on this Farm...
+  NL:  Ik hoor niet op deze Boerderij thuis...
+  FIX: Ik hoor niet op deze Hoeve thuis...
+
+J69 | spk= | Boerderij → de Hoeve
+  EN:  Look back at the Farm as it burns.
+  NL:  Kijk naar de Boerderij die in lichterlaaie staat.
+  FIX: Kijk naar de Hoeve die in lichterlaaie staat.
+
+J85 | spk=Nice Ass | Boerderij → de Hoeve
+  EN:  The Farm is lost...
+  NL:  De Boerderij is verloren...
+  FIX: De Hoeve is verloren...
+
+
+--- E2_MinersHouse_localization (3) ---
+
+J3 | spk=??? | Ezel capitalization
+  EN:  A donkey? How'd you get here from the Mines?
+  NL:  Een ezel? Hoe ben jij hier van de Mijnen geraakt?
+  FIX: Een Ezel? Hoe ben jij hier van de Mijnen geraakt?
+
+J11 | spk=Hard Ass | Machine → Machien
+  EN:  Because I wouldn't save her Computer-Machine.
+  NL:  Omdat ik haar Computer-Machine niet wou redden.
+  FIX: Omdat ik haar Computer-Machien niet wou redden.
+
+J13 | spk=Hard Ass | Machine → Machien
+  EN:  That Machine is more valuable to her than my life?
+  NL:  Die Machine is haar meer waard dan mijn leven?
+  FIX: Die Machien is haar meer waard dan mijn leven?
+
+
+--- E2_World_A1_localization (12) ---
+
+J5 | spk=Welcome Sign | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+
+J5 | spk=Welcome Sign | Boerderij → de Hoeve
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Hoeve van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+
+J11 | spk=Shitty Sign | HUDO unclear (DECISION PENDING)
+  EN:  The Outhouse
+  NL:  De Hudo
+  FIX: (DECISION)
+
+J33 | spk=Big Ass | Boerderij → de Hoeve
+  EN:  The enormous flames are spreading west! They'll reach the Farm in no time—
+  NL:  De gigantische vlammen bewegen zich naar het westen! Niet lang meer tot ze bij de Boerderij—
+  FIX: De gigantische vlammen bewegen zich naar het westen! Niet lang meer tot ze bij de Hoeve—
+
+J34 | spk=Nice Ass | Boerderij → de Hoeve
+  EN:  JEEPERS! Not the Farm!
+  NL:  OESJE! Toch niet de Boerderij!
+  FIX: OESJE! Toch niet de Hoeve!
+
+J37 | spk=Smart Ass | Boerderij → de Hoeve
+  EN:  ONE, someone races back to the Farm to warn the others.
+  NL:  ÉÉN, iemand moet naar de Boerderij crossen om de rest te waarschuwen.
+  FIX: ÉÉN, iemand moet naar de Hoeve crossen om de rest te waarschuwen.
+
+J39 | spk=Smart Ass | Machines → Machienen
+  EN:  THREE, the rest of us get water from the river, put out the fire, convince the Humans to give up their Machines...
+  NL:  DRIE, de rest moet water uit de rivier scheppen, het vuur blussen en de Mensen overtuigen om de Machines te laten...
+  FIX: DRIE, de rest moet water uit de rivier scheppen, het vuur blussen en de Mensen overtuigen om de Machienen te laten...
+
+J45 | spk=Smart Ass | Boerderij → de Hoeve
+  EN:  Who's going to run back to the Farm?
+  NL:  Wie loopt er terug naar de Boerderij?
+  FIX: Wie loopt er terug naar de Hoeve?
+
+J47 | spk=Nice Ass | Boerderij → de Hoeve
+  EN:  Heck, I'd do anything to save our Farm!
+  NL:  Potvolkoffie! Ik zou alles doen om onze Boerderij te redden!
+  FIX: Potvolkoffie! Ik zou alles doen om onze Hoeve te redden!
+
+J53 | spk=Nice Ass | Boerderij → de Hoeve
+  EN:  Golly, the smoke must be getting to me. This isn't the way to the Farm at all.
+  NL:  Oesje, de rook is te dik. Er is geen enkele weg naar de Boerderij.
+  FIX: Oesje, de rook is te dik. Er is geen enkele weg naar de Hoeve.
+
+J54 | spk=Nice Ass | Boerderij → de Hoeve
+  EN:  Golly, the smoke must be getting to me. This isn't the way to the Farm at all.
+  NL:  Oesje, de rook is te dik. Er is geen enkele weg naar de Boerderij.
+  FIX: Oesje, de rook is te dik. Er is geen enkele weg naar de Hoeve.
+
+J60 | spk=Bad Ass | Boerderij → de Hoeve
+  EN:  You find a way to stop the fire and save the Farm.
+  NL:  Zoek een manier om het vuur te blussen en de Boerderij te redden.
+  FIX: Zoek een manier om het vuur te blussen en de Hoeve te redden.
+
+
+--- E2_World_A2_localization (7) ---
+
+J5 | spk= | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+
+J5 | spk= | Boerderij → de Hoeve
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Hoeve van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+
+J10 | spk= | HUDO unclear (DECISION PENDING)
+  EN:  The Outhouse
+  NL:  De Hudo
+  FIX: (DECISION)
+
+J16 | spk=Nice Ass | Boerderij → de Hoeve
+  EN:  If I plow like I've never plowed before, I can cut the fire off and save our beautiful Farm!
+  NL:  Als ik ploeg zoals nooit tevoren, kan ik het vuur afsnijden en onze prachtige Boerderij redden!
+  FIX: Als ik ploeg zoals nooit tevoren, kan ik het vuur afsnijden en onze prachtige Hoeve redden!
+
+J23 | spk=Nice Ass | Boerderij → de Hoeve
+  EN:  If I cut the fire off at the centre, I can still save the North Half of the Farm.
+  NL:  Als ik het vuur bij het midden afsnijd, kan ik nog het noordelijke deel van de Boerderij redden.
+  FIX: Als ik het vuur bij het midden afsnijd, kan ik nog het noordelijke deel van de Hoeve redden.
+
+J24 | spk=Nice Ass | ✓ Stal correct (literal stable)
+  EN:  Not the Stable too!—
+  NL:  Niet de Stal!—
+  FIX: Niet de Stal!—
+
+J27 | spk=Nice Ass | HUDO unclear (DECISION PENDING)
+  EN:  I've got to make it to the Outhouse before it's too late!
+  NL:  Ik moet de Hudo bereiken voor het te laat is!
+  FIX: (DECISION)
+
+
+--- E2_World_A3_localization (1) ---
+
+J12 | spk=Nice Ass | Machines → Machienen
+  EN:  They will break down their Machines and throw them away.
+  NL:  Ze zullen hun Machines afbreken en weg smijten.
+  FIX: Ze zullen hun Machienen afbreken en weg smijten.
+
+
+--- E2_World_B1_localization (5) ---
+
+J5 | spk=Welcome Sign | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+
+J5 | spk=Welcome Sign | Boerderij → de Hoeve
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Hoeve van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+
+J11 | spk=Shitty Sign | HUDO unclear (DECISION PENDING)
+  EN:  The Outhouse
+  NL:  De Hudo
+  FIX: (DECISION)
+
+J37 | spk=Smart Ass | Boerderij → de Hoeve
+  EN:  ONE, Nice Ass saves the Farm.
+  NL:  ÉÉN, Lieve Ezel redt de Boerderij.
+  FIX: ÉÉN, Lieve Ezel redt de Hoeve.
+
+J39 | spk=Smart Ass | Machines → Machienen
+  EN:  THREE, the rest of us get water from the river, put out the fire, convince the Humans to give up their Machines...
+  NL:  DRIE, de rest gaat water van de rivier halen, blust het vuur en overtuigt de mensen hun Machines zo te laten...
+  FIX: DRIE, de rest gaat water van de rivier halen, blust het vuur en overtuigt de mensen hun Machienen zo te laten...
+
+
+--- E2_World_B2_localization (3) ---
+
+J5 | spk=Welcome Sign | Place: Muilebeek → Muilenbeek (Tom lock, extra n)
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Boerderij van Muilenbeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+
+J5 | spk=Welcome Sign | Boerderij → de Hoeve
+  EN:  Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.
+  NL:  Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+  FIX: Welkom op de Hoeve van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.
+
+J11 | spk=Shitty Sign | HUDO unclear (DECISION PENDING)
+  EN:  The Outhouse
+  NL:  De Hudo
+  FIX: (DECISION)
+

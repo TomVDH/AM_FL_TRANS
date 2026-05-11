@@ -1,0 +1,28 @@
+{
+  "corrections": [
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J241",
+      "english": "With all your power and resources, will you prevent fires like Bumpkin's from ever happening again?",
+      "current_nl": "Met al je vermogen en invloed, ga je ervoor zorgen dat zulke dramas, zoals die van Muilegem, zich toch niet meer herhalen?",
+      "proposed_nl": "Met al je vermogen en invloed, ga je ervoor zorgen dat zulke dramas, zoals die van Klotegem, zich toch niet meer herhalen?"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J244",
+      "english": "Bumpkinites deserved more than dangerously out-of-date and accident-prone equipment.",
+      "current_nl": "Muilegemmers verdienen beter dan oud en gevaarlijk gerief.",
+      "proposed_nl": "Klotegemmers verdienen beter dan oud en gevaarlijk gerief."
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J249",
+      "english": "But I don't even have the strength to go back and visit Bumpkin...",
+      "current_nl": "Maar ik heb zelfs de kracht niet om terug te gaan voor een bezoek aan Muilegem...",
+      "proposed_nl": "Maar ik heb zelfs de kracht niet om terug te gaan voor een bezoek aan Klotegem..."
+    }
+  ]
+}

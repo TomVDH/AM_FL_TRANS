@@ -27,7 +27,7 @@ First 3 cells:
     EN: Up next, the #2 song on Mecha's Top 40! asi9 by David Mesiha.
     NL: En dan nu, de nummer 2 op Mechalens Top 40! van David Mesiha.
 
-### Muilegem (region) → Muilenbeek
+### Muilegem (region) → Muilengem
 
 NL hits per variant:
   - `Muilegem`: **24** cell(s)
@@ -446,7 +446,7 @@ First 5 lowercase cells:
 | Sweep target | Approx cells | Source |
 |---|---|---|
 | Mechalen → Technopolis | 31 | A1 |
-| Muilegem → Muilenbeek | 24 | A1 (1 already MUILEBEEK on remote) |
+| Muilegem → Muilengem | 24 | A1 (1 already MUILEBEEK on remote) |
 | Poepegaatje → De Zatten Ezel | 5 | A1 |
 | Bikkeharde → Bikkelharde | 3 | A2 |
 | Stenen-Spel → Keien-Spel | ~12 | A3 |

@@ -1,0 +1,20 @@
+{
+  "corrections": [
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J79",
+      "english": "I'm dreaming of setting up a darn special place right here in Fannyside where Asses can get a drink and let loose.",
+      "current_nl": "Ik droom ervan om hier in Muilegem een caféke te maken waar Ezels kunnen drinken en ontspannen.",
+      "proposed_nl": "Ik droom ervan om hier in Muilenbeek een caféke te maken waar Ezels kunnen drinken en ontspannen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J136",
+      "english": "If the Humans don't return to Fannyside, we'll never get our Jobs back...",
+      "current_nl": "Als de Mensen niet terugkomen naar Muilegem, krijgen we onze Beroepen nooit terug...",
+      "proposed_nl": "Als de Mensen niet terugkomen naar Muilenbeek, krijgen we onze Beroepen nooit terug..."
+    }
+  ]
+}

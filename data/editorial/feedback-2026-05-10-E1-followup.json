@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-11",
+    "scope": "E1 follow-up — restore Thirsty Ass nickname Schoon Beest for Nice Ass",
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "actual_count": 1,
+    "context": "E1 main batch pushed; this is a single-cell follow-up to preserve Thirsty Ass character-specific nickname that Patrick had flattened to Lieve Ezel"
+  },
+  "corrections": [
+    {
+      "id": "E1FU-001",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J29",
+      "speaker": "Thirsty Ass",
+      "english": "To be honest, I'd have gon' done it myself, but I wanna be right here when Nice Ass takes a break from her plowin'.",
+      "current_nl": "Eerlijk gezegd had'k het zelf willen doen, maar 'k zou graag hier zijn wanneer Lieve Ezel haar pauzeke pakt.",
+      "proposed_nl": "Eerlijk gezegd had'k het zelf willen doen, maar 'k zou graag hier zijn wanneer Schoon Beest haar pauzeke pakt.",
+      "rationale": "Character-specific nickname: Thirsty Ass uses 'Schoon Beest' for Nice Ass (restore from Patrick's flatten to Lieve Ezel)"
+    }
+  ]
+}

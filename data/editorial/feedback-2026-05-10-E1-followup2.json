@@ -1,0 +1,21 @@
+{
+  "_meta": {
+    "decisions_lock": "2026-05-11",
+    "scope": "E1 follow-up #2 — universal nie → niet (1 cell)",
+    "file": "1_asses.masses_E1Proxy.xlsx",
+    "actual_count": 1
+  },
+  "corrections": [
+    {
+      "id": "E1FU2-001",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J25",
+      "speaker": "Thirsty Ass",
+      "english": "This ol' bucket ain't gonna fill itself!",
+      "current_nl": "Diej'n emmer gaat z'n eigen nie' volscheppen, héé.",
+      "proposed_nl": "Diej'n emmer gaat z'n eigen niet volscheppen, héé.",
+      "rationale": "Universal: nie → niet (Tom decision 2026-05-11). Note: floating apostrophes (Diej'n, z'n) preserved as Thirsty Ass voice marker."
+    }
+  ]
+}

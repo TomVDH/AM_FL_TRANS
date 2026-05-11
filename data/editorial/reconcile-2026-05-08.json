@@ -1,0 +1,3919 @@
+{
+  "_meta": {
+    "baseline_dir": "excels/Originals",
+    "ours_dir": "excels",
+    "theirs_dir": "excels/Patrick-2026-05-08",
+    "totals": {
+      "ours_only": 25,
+      "theirs_only": 379,
+      "agreed": 33,
+      "conflicts": 37
+    },
+    "per_file": {
+      "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx": {
+        "ours_only": 0,
+        "theirs_only": 5,
+        "agreed": 0,
+        "conflicts": 0
+      },
+      "1_asses.masses_E1Proxy.xlsx": {
+        "ours_only": 1,
+        "theirs_only": 120,
+        "agreed": 3,
+        "conflicts": 7
+      },
+      "2_asses.masses_E2Proxy.xlsx": {
+        "ours_only": 2,
+        "theirs_only": 46,
+        "agreed": 2,
+        "conflicts": 5
+      },
+      "3_asses.masses_E3Proxy.xlsx": {
+        "ours_only": 3,
+        "theirs_only": 46,
+        "agreed": 1,
+        "conflicts": 8
+      },
+      "4_asses.masses_E4Proxy.xlsx": {
+        "ours_only": 0,
+        "theirs_only": 76,
+        "agreed": 0,
+        "conflicts": 3
+      },
+      "5_asses.masses_E5Proxy.xlsx": {
+        "ours_only": 2,
+        "theirs_only": 7,
+        "agreed": 1,
+        "conflicts": 1
+      },
+      "6_asses.masses_E6Proxy.xlsx": {
+        "ours_only": 8,
+        "theirs_only": 55,
+        "agreed": 9,
+        "conflicts": 5
+      },
+      "7_asses.masses_E7Proxy.xlsx": {
+        "ours_only": 1,
+        "theirs_only": 11,
+        "agreed": 1,
+        "conflicts": 4
+      },
+      "8_asses.masses_E8Proxy.xlsx": {
+        "ours_only": 0,
+        "theirs_only": 1,
+        "agreed": 0,
+        "conflicts": 0
+      },
+      "9_asses.masses_E9Proxy.xlsx": {
+        "ours_only": 2,
+        "theirs_only": 8,
+        "agreed": 8,
+        "conflicts": 0
+      },
+      "10_asses.masses_E10Proxy.xlsx": {
+        "ours_only": 6,
+        "theirs_only": 4,
+        "agreed": 8,
+        "conflicts": 4
+      }
+    },
+    "sheets_missing_in_theirs": []
+  },
+  "ours_only": [
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J47",
+      "english": "\"Anyone want to play ROCKS?\"",
+      "baseline": "\"Heeft iemand zin om STENEN-SPEL te spelen?\"",
+      "ours": "\"Heeft iemand zin om KEIEN-SPEL te spelen?\""
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J110",
+      "english": "Tell the Humans that we want to run our own businesses, like the Bottoms Up Bar!",
+      "baseline": "Zeg tegen de Mensen dat wij onze eigen zaakjes willen runnen, zoals het Poepegaatje, héé!",
+      "ours": "Zeg tegen de Mensen dat wij onze eigen zaakjes willen runnen, zoals De Zatten Ezel, héé!"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J145",
+      "english": "No Ass gets left behind.",
+      "baseline": "Geen Ezel wordt achtergelaten, Kameraad.",
+      "ours": "Geen Ezel wordt achtergelaten."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J56",
+      "english": "Yet, all of us here, both Humans and donkeys, are rational beings.",
+      "baseline": "Toch zijn wij hier allemaal, zowel Mensen als Ezels, rationele wezens, kameraaden.",
+      "ours": "Toch zijn wij hier allemaal, zowel Mensen als Ezels, rationele wezens."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J66",
+      "english": "Like you, these Asses think of themselves as intelligent animals.",
+      "baseline": "Net als gij, kameraad, denken deze Ezels van zichzelf dat ze intelligente dieren zijn.",
+      "ours": "Net als gij denken deze Ezels van zichzelf dat ze intelligente dieren zijn."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Thirsty_localization",
+      "cell": "J21",
+      "english": "Plus, I need more customers! I finally opened The Bottom's Up Ba—",
+      "baseline": "Plus, 'k heb meer klanten nodig héé! 'k Heb eindelijk het Poepegaatje geopend, dat ca—",
+      "ours": "Plus, 'k heb meer klanten nodig héé! 'k Heb eindelijk De Zatten Ezel geopend, dat ca—"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J32",
+      "english": "Please young Comrade, you have to play my role now!",
+      "baseline": "Jonge Kameraad, nu is het aan u. Gij moet van me overnemen.",
+      "ours": "Jonge Kameraad, nu is het aan u. Gij moet HET van me overnemen."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J3",
+      "english": "Hard Ass",
+      "baseline": "Bikkeharde Ezel",
+      "ours": "Bikkelharde Ezel"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J53",
+      "english": "Golly, what do you mean?",
+      "baseline": "Amai, waarover ben je bezig?",
+      "ours": "Amai, waar heb je het over?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_BadCave_localization",
+      "cell": "J18",
+      "english": "Most are broken, but I rebuilt this one. I'm using the rest for spare parts.",
+      "baseline": "De meeste zijn kapot, maar deze heb ik herbouwd. De rest gebruik ik voor reserveonderdelen.",
+      "ours": "De meeste zijn kapot, maar deze heb ik gerepareerd. De rest gebruik ik voor reserveonderdelen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J54",
+      "english": "Do you want to watch me play Rocks?",
+      "baseline": "Wil je kijken naar mijn Stenen-spel?",
+      "ours": "Wil je kijken naar mijn Keien-spel?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J55",
+      "english": "Do you want to watch me play Rocks?",
+      "baseline": "Wil je kijken naar mijn Stenen-spel?",
+      "ours": "Wil je kijken naar mijn Keien-spel?"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J118",
+      "english": "*whimper*",
+      "baseline": "*boe-hoe-hoe-hoe*",
+      "ours": "*Boe-hoe-hoe*"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J123",
+      "english": "*whimper*",
+      "baseline": "*boe-hoe-hoe-hoe*",
+      "ours": "*Boe-hoe-hoe*"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J24",
+      "english": "She still thinks we are playing 'Rocks' down here everyday...",
+      "baseline": "Ze denkt nog steeds dat we hier elke dag 'Stenen-spel' aan het spelen zijn...",
+      "ours": "Ze denkt nog steeds dat we hier elke dag 'Keien-spel' aan het spelen zijn..."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BattleHard_localization",
+      "cell": "J42",
+      "english": "Rocks",
+      "baseline": "Stenen-spel",
+      "ours": "Keien-spel"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J68",
+      "english": "Lemme guess—{$NewName} still spending all her time inside playin' Rocks with Bad Ass?",
+      "baseline": "Laat me raden—{$NewName} zit nog steeds de hele dag binnen Stenen-spel te spelen met Stoere Ezel?",
+      "ours": "Laat me raden—{$NewName} zit nog steeds de hele dag binnen Keien-spel te spelen met Stoere Ezel?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J6",
+      "english": "It's not like you to nod off at your post.",
+      "baseline": "'t Is niks voor jou om in te dommelen op je post, Kameraad.",
+      "ours": "'t Is niks voor jou om in te dommelen op je post."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J15",
+      "english": "The Humans are still trying to breach the Barricades and our Territory must be protected.",
+      "baseline": "De Mensen proberen nog steeds de Barricades te doorbreken en ons Territorium moet beschermd worden, Kameraad.",
+      "ours": "De Mensen proberen nog steeds de Barricades te doorbreken en ons Territorium moet beschermd worden."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J78",
+      "english": "Would you like me to show you the Old Church next?",
+      "baseline": "Zal ik je de Oude Kerk laten zien, Kameraad?",
+      "ours": "Zal ik je de Oude Kerk laten zien?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J195",
+      "english": "Mosey on over and take a sip of my new drink special: The Pail Ale!",
+      "baseline": "Kom maar efkes afgezakt en proef mijn nieuwe drankske: een Poepegaatje, héé!",
+      "ours": "Kom maar efkes afgezakt en proef mijn nieuwe drankske: De Zatten Ezel, héé!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J202",
+      "english": "{$NewName} spends all her time inside playin' Rocks with Bad Ass, and isn't interested in learning about our Traditions.",
+      "baseline": "{$NewName} zit de hele tijd binnen Stenen-spel te spelen met Stoere Ezel, en heeft geen enkele interesse in onze Tradities.",
+      "ours": "{$NewName} zit de hele tijd binnen Keien-spel te spelen met Stoere Ezel, en heeft geen enkele interesse in onze Tradities."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J5",
+      "english": "Wait. We should sing the Song of Ascension for our Comrades before we leave.",
+      "baseline": "Wacht. Voor we vertrekken moeten we de ezelenhemelvaartszangderzielen zingen voor onze Kameraden.",
+      "ours": "Wacht. Voor we vertrekken moeten we het Hemelvaarts-zang-der-Ezel-zielen zingen voor onze Kameraden."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J40",
+      "english": "I thought you were playing ROCKS with your UNCLE!",
+      "baseline": "Ik dacht dat je STENEN-SPEL aan 't spelen was met je NONKEL!",
+      "ours": "Ik dacht dat je KEIEN-SPEL aan 't spelen was met je NONKEL!"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J76",
+      "english": "As Lazy died, she tried to sing the Song of Ascension for herself.",
+      "baseline": "Toen Luie stierf, probeerde ze de Ezelenhemelvaartszangderzielen voor zichzelf te zingen.",
+      "ours": "Toen Luie stierf, probeerde ze het Hemelvaarts-zang-der-Ezel-zielen voor zichzelf te zingen."
+    }
+  ],
+  "theirs_only": [
+    {
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "CharacterProfiles_localization",
+      "cell": "J81",
+      "english": "Blunt Ass",
+      "baseline": "Groffe ezel",
+      "theirs": "Groffe Ezel"
+    },
+    {
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "CharacterProfiles_localization",
+      "cell": "J82",
+      "english": "Peek Ass",
+      "baseline": "Constat-ezel",
+      "theirs": "Constaterende Ezel"
+    },
+    {
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J76",
+      "english": "A 'mare' is the general term for a female equine. What is the specific term for a female donkey?",
+      "baseline": "Een 'merrie' is de algemene term voor een vrouwelijk paard. Wat is de specifieke term voor een vrouwelijke ezel?",
+      "theirs": "In het Engels is 'mare' de algemene term voor een vrouwelijk paard. Welke van de volgende termen is een specifieke term voor een vrouwelijke ezel?"
+    },
+    {
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J79",
+      "english": "Jennet",
+      "baseline": "Molly",
+      "theirs": "Jennet"
+    },
+    {
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J80",
+      "english": "Molly",
+      "baseline": "Jennet",
+      "theirs": "Molly"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J27",
+      "english": "Are you the Golden Ass? The Gods incarnate?!",
+      "baseline": "Zijde gij de Gouden Ezel?! DE GODEN in levenden lijve?!",
+      "theirs": "Zijde gij de Gouden Ezel?! De Goden in levenden lijve?!"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J29",
+      "english": "I am one with many names: The Gods, HEE and HAW, Janus.",
+      "baseline": "Wij zijn één met vele namen: DE GODEN, HIE en HAA, Janus.",
+      "theirs": "Wij zijn één met vele namen: De Goden, HIE en HAA, Janus."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J34",
+      "english": "Behold, here with me, a special Prophet-Machine for the Humans to worship!",
+      "baseline": "Aanschouwt, hier bij Ons, een bijzondere Profetische Machine voor de Mensen om te aanbidden!",
+      "theirs": "Aanschouwt, hier bij Ons, een bijzondere Profeet-Machine voor de Mensen om te aanbidden!"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J35",
+      "english": "Behold, here with me, a special Prophet-Machine for the Humans to worship!",
+      "baseline": "Aanschouwt, hier bij Ons, een bijzondere Profetische Machine voor de Mensen om te aanbidden!",
+      "theirs": "Aanschouwt, hier bij Ons, een bijzondere Profeet-Machine voor de Mensen om te aanbidden!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J19",
+      "english": "It's a scorcher! It's looking dry as a bone out there in the Greater Fannyside Region as the drought continues.",
+      "baseline": "Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilegem en de droogte blijft aanhouden.",
+      "theirs": "Bakken en braden vandaag! Het is kurkdroog in de regio van Groot-Muilebeek en de droogte blijft aanhouden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J23",
+      "english": "Hey Trusty!",
+      "baseline": "Hey Trouwe!",
+      "theirs": "Hey Trouwe Ezel!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "baseline": "Welkom op de Boerderij van Muilegem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
+      "theirs": "Welkom op de Boerderij van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J72",
+      "english": "THREE, we march through the Village of Bumpkin, convince the Humans to give up their Machines.",
+      "baseline": "DRIE: we marcheren door het dorp van Muilegem, en overtuigen de Mensen de Machines achter te laten.",
+      "theirs": "DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machines achter te laten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J84",
+      "english": "Bad Ass gave me this candle...",
+      "baseline": "Waaghals gaf me deze kaars...",
+      "theirs": "Stoere Ezel gaf me deze kaars..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J90",
+      "english": "Sometimes I wish he hadn't switched shifts with Lazy Ass that day...",
+      "baseline": "Soms wou ik dat hij op die dag nooit zijn shift met Luie had verwisseld...",
+      "theirs": "Soms wou ik dat hij op die dag nooit zijn shift met Luie Ezel had verwisseld..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J25",
+      "english": "But they underestimated this old Ass.",
+      "baseline": "Maar ze hebben deze Oude Ezel onderschat...",
+      "theirs": "Maar ze hebben deze oude Ezel onderschat..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J30",
+      "english": "I wish I could see the faces of the Humans when they wake up to us chanting ASS POWER!",
+      "baseline": "...Ik wou dat ik de gezichten van de Mensen kon zien wanneer onze EZEL MACHT hun wakker schrikt!",
+      "theirs": "…Ik wou dat ik de gezichten van de mensen kon zien als ze wakker worden en ons horen zingen: \"EZELS EERST!\""
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J34",
+      "english": "SHOW THE WORLD THE POWER OF THE ASS!",
+      "baseline": "LAAT DE WERELD HET LICHT VAN DE EZEL MACHT ZIEN!",
+      "theirs": "HERINNEER DE WERELD AAN DE BELANGEN VAN DE EZELS!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J40",
+      "english": "HEEEHAAAAAAAAAAAAW!!!",
+      "baseline": "HIEEEEEE-HAAAAAAAAAA!!!",
+      "theirs": "HIIIEEEE HAAAAAAA!!!!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J58",
+      "english": "\"{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}\"",
+      "baseline": "{color=yellow}{s=5}♪  hie haa ii aa 'ee ah he a'h ♪{/s}{/color}",
+      "theirs": "{color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/s}{/color}"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J59",
+      "english": "\"{color=yellow}♪  HEE HAW HI HON 'EE AH HE A'W! ♪{/color}\"",
+      "baseline": "{color=yellow}♪  HIE HAA II AA 'EE AH HE A'H! ♪{/color}",
+      "theirs": "{color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/s}{/color}"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "baseline": "Welkom op de Boerderij van Muilegem. Ten westen: onze prachtige Erfgoedshoeve en korenvelden.",
+      "theirs": "Welkom op de Boerderij van Muilebeek. Ten westen: onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J17",
+      "english": "",
+      "baseline": "",
+      "theirs": "Trouwe Ezel! Waar ga jij heen?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J18",
+      "english": "Hiya Comrade! I'm ready to go!",
+      "baseline": "Hela Kameraad! Ik ben klaar om te vertrekken!",
+      "theirs": ""
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J19",
+      "english": "Wait, really? But Old Ass has been here forever!",
+      "baseline": "Wacht, echt? Maar Oude Ezel is hier al sinds jaar en dag!",
+      "theirs": "Hela Kameraad! Ik ben klaar om te vertrekken!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J20",
+      "english": "Gosh, the Humans wouldn't do that, would they?",
+      "baseline": "Goh, zouden de mensen dat echt doen?",
+      "theirs": "Wacht, echt? Maar Oude Ezel is hier al sinds jaar en dag!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J21",
+      "english": "Assure Nice Ass that the Humans must have made a mistake.",
+      "baseline": "Verzeker Schoon Beest dat de mensen mogelijk een foutje gemaakt hebben.",
+      "theirs": "Goh, zouden de mensen dat echt doen?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J22",
+      "english": "Tell Nice Ass that the Humans have been corrupted by the Machines.",
+      "baseline": "Zeg aan Schoon Beest dat de mensen zijn verdorven door de Machines.",
+      "theirs": "Verzeker Lieve Ezel dat de mensen mogelijk een foutje gemaakt hebben."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J23",
+      "english": "You're right Trusty! Accidents happen all the time!",
+      "baseline": "Je hebt gelijk, Trouwtje! Ongelukken gebeuren nu eenmaal!",
+      "theirs": "Zeg aan Lieve Ezel dat de mensen zijn verdorven door de Machines."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J24",
+      "english": "Yikes!",
+      "baseline": "Jakkes!",
+      "theirs": "Je hebt gelijk, Trouwtje! Ongelukken gebeuren nu eenmaal!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J25",
+      "english": "Poor Old Ass.",
+      "baseline": "Arme Oude Ezel.",
+      "theirs": "Jakkes!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J26",
+      "english": "What a massive loss. Will the Protest continue?",
+      "baseline": "Wat een drama. Gaat het Protest nog door?",
+      "theirs": "Arme Oude Ezel."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J27",
+      "english": "Emphasize to Big Ass that he has a huge part to play in the movement.",
+      "baseline": "Benadruk aan Mega Ezel dat hij een bijzonder grote rol in het Protest heeft.",
+      "theirs": "Wat een drama. Gaat het Protest nog door?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J28",
+      "english": "Point out to Big Ass that a good leader is dispensable.",
+      "baseline": "Wijs aan Mega Ezel uit dat een goede leider vervangbaar is.",
+      "theirs": "Benadruk aan Mega Ezel dat hij een bijzonder grote rol in het Protest heeft."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J29",
+      "english": "Don't say that, Trusty. What would we do without you?",
+      "baseline": "Laat dat, Trouwe. Wat zouden we zonder u doen?",
+      "theirs": "Wijs aan Mega Ezel uit dat een goede leider vervangbaar is."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J30",
+      "english": "Well then I'm hungry to get started!",
+      "baseline": "Ik ben klaar om te beginnen. Ik krijg er zelfs honger van.",
+      "theirs": "Laat dat, Trouwe. Wat zouden we zonder u doen?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J31",
+      "english": "It's a damn sour swallow, but yer right. We can't let Old Ass's death be in vain.",
+      "baseline": "T'é nen zure dobber maar g'ebt gelijk. We kunnen Ouwe niet voor niks laten sterven, héé!",
+      "theirs": "Ik ben klaar om te beginnen. Ik krijg er zelfs honger van."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J32",
+      "english": "Inform Thirsty Ass that Old Ass wants the Herd to continue the Protest.",
+      "baseline": "Vertel aan Beschonken Ezel dat Oude Ezel wilt dat de Kudde het Protest verderzet.",
+      "theirs": "*slok*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J33",
+      "english": "Promise Thirsty Ass that Nice Ass will be there.",
+      "baseline": "Beloof aan Beschonken Ezel dat Schoon Beest aan het Protest meedoet.",
+      "theirs": "Vertel aan Beschonken Ezel dat Oude Ezel wilt dat de Kudde het Protest verderzet."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J34",
+      "english": "*gulp*",
+      "baseline": "*slok*",
+      "theirs": "Beloof aan Beschonken Ezel dat Lieve Ezel aan het Protest meedoet."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J35",
+      "english": "...but I don't see Nice Ass nowhere...?",
+      "baseline": "...maar ik kan Schoon Beest nergens zien...?",
+      "theirs": "T'é nen zure dobber maar g'ebt gelijk. We kunnen Ouwe niet voor niks laten sterven, héé!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J36",
+      "english": "YEEEHAAWWW I'M IN!",
+      "baseline": "JIE-HAAA! IK ZEN ER!",
+      "theirs": "...maar ik kan Lieve Ezel nergens zien...?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J37",
+      "english": "Whaa? Old Ass is dead!? And YOU'RE in charge?",
+      "baseline": "Waaa? Oude is dood?! En JIJ bent de baas nu?",
+      "theirs": "JIE-HAAA! IK ZEN ER!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J38",
+      "english": "No offence Trusty, but you're a listener not a leader!",
+      "baseline": "Begrijp me niet verkeerd Trouwe, maar jij bent een luisteraar, niet een leider.",
+      "theirs": "Waaa? Oude is dood?! En JIJ bent de baas nu?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J39",
+      "english": "Admit to Smart Ass the Herd is lucky to have such an Ace Strategist.",
+      "baseline": "Geef toe aan Betweter dat de kudde gezegend is met zo'n top-strategist.",
+      "theirs": "Begrijp me niet verkeerd Trouwe, maar jij bent een luisteraar, niet een leider."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J40",
+      "english": "Confide in Smart Ass that you really need her support right now.",
+      "baseline": "Neem Betweter in vertrouwen en zeg dat haar steun momenteel onmisbaar is.",
+      "theirs": "Geef toe aan Slimme Ezel dat de Kudde gezegend is met zo'n Topstrateeg."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J41",
+      "english": "You could have at least admitted how lucky you are to have such an Ace Strategist.",
+      "baseline": "Je kon tenminste toegeven hoe veel geluk je hebt met zo'n top-strategist.",
+      "theirs": "Neem Slimme Ezel in vertrouwen en zeg dat haar steun momenteel onmisbaar is."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J42",
+      "english": "Ha! You're damn right.",
+      "baseline": "Ha! Je hebt godsamme gelijk.",
+      "theirs": "Je kon tenminste toegeven hoe veel geluk je hebt met zo'n Topstrateeg."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J43",
+      "english": "Not Old Ass... I’m sorry Trusty. Things have gone from bad to worse...",
+      "baseline": "Oh nee, niet Oude.. Het spijt me Trouwe. De zaken zijn van kwaad naar erger gegaan...",
+      "theirs": "Ha! Je hebt godsamme gelijk."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J44",
+      "english": "I think you should postpone the Protest...",
+      "baseline": "Ik denk dat je het Protest moet uitstellen.",
+      "theirs": "Oh nee, niet Oude.. Het spijt me Trouwe. De zaken zijn van kwaad naar erger gegaan..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J45",
+      "english": "I wouldn't go if I were you...",
+      "baseline": "Ik zou niet gaan als ik jou was...",
+      "theirs": "Ik denk dat je het Protest moet uitstellen."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J46",
+      "english": "Politely suggest that Sad Ass should suck it up.",
+      "baseline": "Stel tactvol voor dat Triestige Ezel op haar tanden bijt.",
+      "theirs": "Ik zou niet gaan als ik jou was..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J47",
+      "english": "Commiserate with Sad Ass over all that has been lost.",
+      "baseline": "Herdenk met Triestige Ezel over al wat er verloren is gegaan.",
+      "theirs": "Stel tactvol voor dat Triestige Ezel op haar tanden bijt."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J50",
+      "english": "Fuck no.",
+      "baseline": "Kust mijn kloten, neen.",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J51",
+      "english": "Get out of my face.",
+      "baseline": "Maak dat ge weg zijt.",
+      "theirs": "Kust mijn kloten, neen."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J52",
+      "english": "That's everyone. Now to the gate!",
+      "baseline": "Iedereen is hier. Naar de poorten!",
+      "theirs": "Maak dat ge weg zijt."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J53",
+      "english": "They need to be reminded of how darn useful our labour truly is!",
+      "baseline": "Laat ze nog maar eens beseffen hoe veel gebruik ze van ons labeur maken!",
+      "theirs": "Iedereen is hier. Naar de poorten!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J54",
+      "english": "They've been takin' away our livelihood, and giving us the ding dang Needle!",
+      "baseline": "Ze nemen ons brood af, en in de plaats, krijgen we Spuiten!",
+      "theirs": "Dit is het plan!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J55",
+      "english": "Asses have always been the backbone of this Farm since time immemorial.",
+      "baseline": "Ezels zijn altijd al de ruggegraat van deze Hoeve geweest, sinds de dieren konden spreken.",
+      "theirs": "ÉÉN: we lopen door de poort."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J56",
+      "english": "The weight of history is on our shoulders...",
+      "baseline": "Het gewicht van onze geschiedenis drukt ons op de schouders.",
+      "theirs": "TWEE: we komen samen met de Mijn-Ezels en steken de brug over."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J57",
+      "english": "Here's the Plan!",
+      "baseline": "Dit is het plan!",
+      "theirs": "DRIE: we marcheren door het dorp van Klotegem en overtuigen de Mensen de Machines achter te laten..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J58",
+      "english": "ONE, we run through this gate.",
+      "baseline": "ÉÉN: we lopen door de poort.",
+      "theirs": "EN ONZE JOBS TERUG TE GEVEN!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J59",
+      "english": "TWO, we cross the bridge with the Miners.",
+      "baseline": "TWEE: we komen samen met de Mijn-Ezels en steken de brug over.",
+      "theirs": "Poepsimpel."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J60",
+      "english": "THREE, we march through the Village, convince the Humans to give up their Machines...",
+      "baseline": "DRIE: we marcheren door het dorp van Muilegem en overtuigen de Mensen de Machines achter te laten...",
+      "theirs": "Het gewicht van onze geschiedenis drukt ons op de schouders."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J61",
+      "english": "AND GET OUR JOBS BACK!",
+      "baseline": "EN ONZE JOBS TERUG TE GEVEN!",
+      "theirs": "Ezels zijn altijd al de ruggegraat van deze Hoeve geweest, sinds de dieren konden spreken."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J62",
+      "english": "Easy.",
+      "baseline": "Poepsimpel.",
+      "theirs": "Maar de Mensen hebben ons gekleineerd."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J63",
+      "english": "Trusty?",
+      "baseline": "Trouwtje?",
+      "theirs": "Ze nemen ons brood af, en in de plaats, krijgen we Spuiten!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J64",
+      "english": "What were Old Ass's last words? Perhaps they will inspire us!",
+      "baseline": "Wat waren de laatste woorden van Oude Ezel? Misschien kunnen ze ons inspireren!",
+      "theirs": "Laat ze nog maar eens beseffen hoe veel gebruik ze van ons labeur maken!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J65",
+      "english": "Old Ass died saying: \"I'm scared.\"",
+      "baseline": "Ik ben bang waren Oude's laatste woorden.",
+      "theirs": "Trouwtje?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J66",
+      "english": "Old Ass died saying: \"Show the world the power of the Ass!\"",
+      "baseline": "Laat de wereld het licht van EZEL MACHT zien! waren Oude's laatste woorden.",
+      "theirs": "Wat waren de laatste woorden van Oude Ezel? Misschien kunnen ze ons inspireren!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J67",
+      "english": "Thanks Trusty, that's exactly what we needed to hear!",
+      "baseline": "Merci, Trouwtje. Dat was net hetgene we moesten horen.",
+      "theirs": "\"Herinneer de wereld aan de belangan van de Ezels\" waren Oude Ezels laatste woorden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J68",
+      "english": "Spoken like a true Ass. YEEHAW!",
+      "baseline": "Gelijk 'nen echte ezel gesproken, héé!",
+      "theirs": "\"Ik ben bang\" waren Oude Ezels laatste woorden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J69",
+      "english": "A grand idea.",
+      "baseline": "Een groots idee.",
+      "theirs": "\"Herinneer de wereld aan de belangan van de Ezels\" waren Oude Ezels laatste woorden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J71",
+      "english": "Dang.",
+      "baseline": "Amai.",
+      "theirs": "Een groots idee."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J72",
+      "english": "What an empty feeling...",
+      "baseline": "Wat een leeg gevoel...",
+      "theirs": "Gelijk 'nen echte ezel gesproken, héé!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J73",
+      "english": "Yikes!",
+      "baseline": "Jakkes!",
+      "theirs": "Merci, Trouwtje. Dat was net hetgene we moesten horen."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J74",
+      "english": "Old Ass died saying: \"I'm scared.\"",
+      "baseline": "Ik ben bang waren Oude's laatste woorden.",
+      "theirs": "\"Ik ben bang\" waren Oude Ezels laatste woorden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J75",
+      "english": "Sheesh...",
+      "baseline": "Jemig..",
+      "theirs": "Amai."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J76",
+      "english": "Old Ass died saying: \"Show the world the power of the Ass!\"",
+      "baseline": "Laat de wereld het licht van EZEL MACHT zien! waren Oude's laatste woorden.",
+      "theirs": "Wat een leeg gevoel..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J77",
+      "english": "But the Humans have belittled us.",
+      "baseline": "Maar de Mensen hebben ons gekleineerd.",
+      "theirs": "Jakkes!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J78",
+      "english": "Let's break through this gate and cross the bridge!",
+      "baseline": "Laat ons door de poort breken en de brug oversteken!",
+      "theirs": "Jemig.."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J79",
+      "english": "Sorry Comrades. I've been doing my b-best.",
+      "baseline": "Sorry, k-k-kameraden. Ik p-p-probeer mijn best te d-d-doen.",
+      "theirs": "Laat ons door de poort breken en de brug oversteken!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J80",
+      "english": "I stayed up all night b-but haven't finished fixing the b-bridge yet.",
+      "baseline": "Ik b-b-ben de h-h-hele nacht opgebleven m-m-maar de b-b-brug is nog niet klaar.",
+      "theirs": "Sorry, K-k-kameraden. Ik p-p-probeer mijn best te d-d-doen."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J81",
+      "english": "DAMN! The Protest is ruined!",
+      "baseline": "Godverdoemme! Het Protest is naar de kloten!",
+      "theirs": "Ik b-b-ben de h-h-hele nacht opgebleven m-m-maar de b-b-brug is nog niet klaar."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J82",
+      "english": "Shut up and calm down.",
+      "baseline": "Hou je bek en kalmeer.",
+      "theirs": "Godverdoemme! Het Protest is naar de kloten!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J83",
+      "english": "No offence Slow Ass, but I knew this would happen when Old Ass put you on bridge duty.",
+      "baseline": "Sorry hoor Slome, maar ik wist dat dit ging gebeuren wanneer Oude Ezel je op brugdienst gezet heeft.",
+      "theirs": "Hou je bek en kalmeer."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J84",
+      "english": "So I made a Plan B:",
+      "baseline": "Daarom heb ik een Plan B:",
+      "theirs": "Sorry hoor Slome Ezel, maar ik wist dat dit ging gebeuren wanneer Oude Ezel je op brugdienst gezet heeft."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J85",
+      "english": "*p-phew*",
+      "baseline": "*oe-oef*",
+      "theirs": "Daarom heb ik een Plan B:"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J86",
+      "english": "ONE, we take the LONG way around to the NORTH.",
+      "baseline": "ÉÉN: we nemen de LANGE weg rond, langs het Noorden.",
+      "theirs": "*oe-oef*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J87",
+      "english": "TWO, we meet up with the Miners and enter the Village from the EAST.",
+      "baseline": "TWEE: we vervoegen de Mijn-Ezels en gaan het dorp binnen via het Oosten.",
+      "theirs": "ÉÉN: we nemen de LANGE weg rond, langs het Noorden."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J88",
+      "english": "THREE, we march through the Village, convince the Humans to give up their Machines...",
+      "baseline": "DRIE: we marcheren door het dorp van Muilegem, en overtuigen de Mensen de Machines achter te laten.",
+      "theirs": "TWEE: we vervoegen de Mijn-Ezels en gaan het dorp binnen via het Oosten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J89",
+      "english": "AND GET OUR JOBS BACK!",
+      "baseline": "EN ONZE JOBS TERUG TE GEVEN!",
+      "theirs": "DRIE: we marcheren door het dorp van Klotegem, en overtuigen de Mensen de Machines achter te laten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J90",
+      "english": "Easy.",
+      "baseline": "Poepsimpel.",
+      "theirs": "EN ONZE JOBS TERUG TE GEVEN!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J91",
+      "english": "The long way? Okay... b-but I won't b-be able to move as fast as everyone else due to my p-painful arthritis...",
+      "baseline": "De l-l-lange weg? Oké maar vergeet niet dat ik z-z-zo snel niet kan met m-m-mijn pijnlijke artrose.",
+      "theirs": "Poepsimpel."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J92",
+      "english": "B-but I p-promise I'll do my b-b-best!",
+      "baseline": "M-M-maar ik beloof d-d-dat ik mijn b-b-best zal d-d-doen!",
+      "theirs": "De l-l-lange weg? Oké maar vergeet niet dat ik z-z-zo snel niet kan met m-m-mijn pijnlijke artrose."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J93",
+      "english": "You must be TRUSTY!",
+      "baseline": "Gij moet Trouwe zijn!",
+      "theirs": "M-M-maar ik beloof d-d-dat ik mijn b-b-best zal d-d-doen!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J94",
+      "english": "I'm KICK ASS and this is my Sister SICK ASS!",
+      "baseline": "Mijn naam is STAMP GAST en dit is mijn zus, SNOT GRIET!",
+      "theirs": "Gij moet Trouwe zijn!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J95",
+      "english": "*COUGH*",
+      "baseline": "*KUCH*",
+      "theirs": "Mijn naam is STAMP EZEL en dit is mijn zus, SNOT EZEL!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J96",
+      "english": "What happened to meeting AT THE BRIDGE?!",
+      "baseline": "WAAR is de bijeenkomst op DE BRUG?!",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J97",
+      "english": "Wait—where's OLD ASS?!",
+      "baseline": "Wacht — WAAR IS OUDE?!",
+      "theirs": "WAAR is de bijeenkomst OP DE BRUG?!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J98",
+      "english": "They gave him the ding dang Needle!",
+      "baseline": "Ze hebbe'n hem 't Spuitje geven, héé!",
+      "theirs": "Wacht — waar is OUDE EZEL?!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J99",
+      "english": "@#$%&! That makes me SO ANGRY!",
+      "baseline": "@#$%&! Daar word ik nu eens KWAAD VAN!",
+      "theirs": "Ze hebbe'n hem 't Spuitje geven, héé!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J100",
+      "english": "*COUGH*",
+      "baseline": "*KUCH*",
+      "theirs": "@#$%&! Daar word ik nu eens KWAAD VAN!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J101",
+      "english": "LET'S PROTEST!",
+      "baseline": "KOM, WE PROTESTEREN!",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J102",
+      "english": "...",
+      "baseline": "...",
+      "theirs": "KOM, WE PROTESTEREN!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J103",
+      "english": "Old Ass got the Needle?",
+      "baseline": "Oude heeft de Spuit gekregen?",
+      "theirs": "..."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J104",
+      "english": "I know how difficult it is to watch a Comrade die, even if they will one day be reborn.",
+      "baseline": "Ik weet hoe moeilijk het is om een Kameraad tenonder te zien gaan, zelfs al komen ze op een dag terug.",
+      "theirs": "Oude heeft de Spuit gekregen?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J105",
+      "english": "We Miners have a saying:",
+      "baseline": "Wij, Mijn-Ezels hebben een gezegde:",
+      "theirs": "Ik weet hoe moeilijk het is om een Kameraad tenonder te zien gaan, zelfs al komen ze op een dag terug."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J106",
+      "english": "\"You only hit rock bottom when you quit.\"",
+      "baseline": "Pas als ge 't opgeeft, is 't gedaan.",
+      "theirs": "Wij, Mijn-Ezels hebben een gezegde:"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J107",
+      "english": "Let's go.",
+      "baseline": "Kom.",
+      "theirs": "Pas als ge 't opgeeft, is 't gedaan."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J108",
+      "english": "Old Ass wouldn’t want us to leave anyone behind.",
+      "baseline": "Oude Ezel zou niet willen dat we iemand achterlaten.",
+      "theirs": "Kom."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J112",
+      "english": "The Herd's Morale is low, now is the time to SAY something...",
+      "baseline": "Het moraal van de Kudde is niet best, misschien de moment om IETS te zeggen?",
+      "theirs": "Oude Ezel zou niet willen dat we iemand achterlaten."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J113",
+      "english": "REMEMBER OLD ASS'S PARTING WORDS:",
+      "baseline": "ONTHOUD OUDE EZEL ZIJN LAATSTE WOORDEN:",
+      "theirs": "Het Moraal van de Kudde is niet best, misschien de moment om IETS te zeggen?"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J114",
+      "english": "SHOW THE WORLD THE POWER OF THE ASS!",
+      "baseline": "LAAT DE WERELD HET LICHT VAN DE EZEL MACHT ZIEN!",
+      "theirs": "ONTHOUD DE LAATSTE WOORDEN VAN OUDE EZEL:"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J115",
+      "english": "WHEN I SAY ASS, YOU SAY POWER!",
+      "baseline": "IK ZEG EZEL, JIJ ZEGT MACHT!",
+      "theirs": "HERINNEER DE WERELD AAN DE BELANGEN VAN DE EZELS"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J116",
+      "english": "ASS!",
+      "baseline": "EZEL!",
+      "theirs": "IK ZEG EZELS, JIJ ZEGT EERST!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J117",
+      "english": "POWER!",
+      "baseline": "MACHT!",
+      "theirs": "EZELS!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J118",
+      "english": "ASS!",
+      "baseline": "EZEL!",
+      "theirs": "EERST!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J119",
+      "english": "POWER!",
+      "baseline": "MACHT!",
+      "theirs": "EZELS!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J120",
+      "english": "Let me hear you say... DON'T BE SCARED!",
+      "baseline": "Laat me jullie het horen zeggen... WEES NIET BANG!",
+      "theirs": "EERST!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J121",
+      "english": "DON'T BE SCARED!",
+      "baseline": "WEEST NIET BANG!",
+      "theirs": "Laat me jullie het horen zeggen... WEES NIET BANG!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J122",
+      "english": "Trusty Ass? Where are you going? The Village isn't that way.",
+      "baseline": "Trouwe Ezel? Waar loop jij naartoe? Het dorp is niet die kant uit.",
+      "theirs": "WEEST NIET BANG!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J123",
+      "english": "THIS IS A PROTEST!",
+      "baseline": "DIT IS EEN PROTEST!",
+      "theirs": "Trouwe Ezel? Waar loop jij naartoe? Het dorp is niet die kant uit."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J124",
+      "english": "RESPECT OUR HISTORY!",
+      "baseline": "RESPECTEER ONZE GESCHIEDENIS!",
+      "theirs": "DIT IS EEN PROTEST!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J125",
+      "english": "RESPECT ASS CULTURE!",
+      "baseline": "RESPECTEER DE EZELSCULTUUR",
+      "theirs": "RESPECTEER ONZE GESCHIEDENIS!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J126",
+      "english": "GIVE US OUR JOBS BACK!",
+      "baseline": "GEEF ONZE JOBS TERUG!",
+      "theirs": "RESPECTEER DE EZELSCULTUUR"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J127",
+      "english": "Trusty Ass! Where are you going?",
+      "baseline": "Trouwe Ezel! Waar ga jij heen?",
+      "theirs": "GEEF ONZE JOBS TERUG!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J130",
+      "english": "This wasn't the Plan! We're here to get work, not burn the employers!",
+      "baseline": "Dit was niet de afspraak! We zijn hier om werk te verzekeren, niet de werkgevers af te branden!",
+      "theirs": "Dit was niet het Plan! We zijn hier om werk te verzekeren, niet de werkgevers af te branden!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J147",
+      "english": "Solemnly assume the Traditional Ass Posture that has inspired Herds for generations.",
+      "baseline": "Neem plechtig de traditionele ezelshouding aan, die generaties aan Kuddes heeft gëinspireerd.",
+      "theirs": "Neem plechtig de Traditionele Ezelshouding aan, die generaties aan Kuddes heeft gëinspireerd."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleButte_localization",
+      "cell": "J23",
+      "english": "You Grunt.",
+      "baseline": "Je Gromt.",
+      "theirs": "Je GROMT."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleButte_localization",
+      "cell": "J24",
+      "english": "You Bray.",
+      "baseline": "Je balkt.",
+      "theirs": "Je BALKT."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleButte_localization",
+      "cell": "J26",
+      "english": "You Stomp. It's very effective!",
+      "baseline": "Je schopt. Het is bijzonder effectief.",
+      "theirs": "Je SCHOPT. Het is bijzonder effectief."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleButte_localization",
+      "cell": "J28",
+      "english": "You Tackle!",
+      "baseline": "Je valt aan!",
+      "theirs": "Je VALT ANN!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleButte_localization",
+      "cell": "J30",
+      "english": "You Double Kick!",
+      "baseline": "Je stampt dubbel!",
+      "theirs": "Je STAMPT DUBBEL!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleButte_localization",
+      "cell": "J32",
+      "english": "You Headbutt! It's very effective!",
+      "baseline": "Je doet een kopstoot. Het is bijzonder effectief.",
+      "theirs": "Je doet een KOPSTOOT. Het is bijzonder effectief."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J6",
+      "english": "Ugh. I always knew you were a dumb beast.",
+      "baseline": "Ugh. Ik wist altijd wel dat je maar een dom beest bent.",
+      "theirs": "Ugh. Ik wist altijd wel dat je maar\\neen dom beest bent."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J14",
+      "english": "EAT SHOVEL ASSHOLE!!",
+      "baseline": "EET DEZE SCHUP, KLOOTZAKSKE!!",
+      "theirs": "EET MIJN SCHEP OP, KLOOTZAKSKE!!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J18",
+      "english": "Grunt",
+      "baseline": "Aggressief Grommen",
+      "theirs": "Grommen"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J19",
+      "english": "You Grunt. Miner Jenny becomes angry.",
+      "baseline": "Je gromt aggressief. Mijnwerker Jenny wordt boos.",
+      "theirs": "Je GROMT. Mijnwerker Jenny wordt boos."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J21",
+      "english": "You Bray. Miner Jenny is confused.",
+      "baseline": "Je balkt. Mijnwerker Jenny is de kluts kwijt.",
+      "theirs": "Je BALKT. Mijnwerker Jenny is de kluts kwijt."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J23",
+      "english": "You Tackle!",
+      "baseline": "Je valt aan!",
+      "theirs": "Je VALT AAN!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J25",
+      "english": "You Double Kick!",
+      "baseline": "Je doet een Dubbele Stamp!",
+      "theirs": "Je STAMPT DUBBEL!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J27",
+      "english": "You Stomp. It's very effective!",
+      "baseline": "Je schopt! Heel effectief.",
+      "theirs": "Je SCHOPT. Het is bijzonder effectief."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J29",
+      "english": "You Headbutt! It's very effective!",
+      "baseline": "Je doet een koppertje! Heel effectief!",
+      "theirs": "Je doet een KOPSTOOT. Het is bijzonder effectief."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_ButtesHouse_localization",
+      "cell": "J11",
+      "english": "But business is business, you know?",
+      "baseline": "Maar wat kan je doen. Business is business.",
+      "theirs": "Maar wat kan je doen. \"Business is business.\""
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J4",
+      "english": "Sad Ass! Quit hiding in the outhouse!",
+      "baseline": "Triestigaard! Stopt met je in de Hudo te verstoppen!",
+      "theirs": "Triestige Ezel! Stopt met je in de Hudo te verstoppen!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J13",
+      "english": "Sad Ass, now is not the time for this, please!",
+      "baseline": "Triestigaard, nu is het echt niet de moment. Toe.",
+      "theirs": "Triestige Ezel, nu is het echt niet de moment. Toe."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J26",
+      "english": "You're beautiful, Sad Ass.",
+      "baseline": "Je bent prachtig, Triestigaard.",
+      "theirs": "Je bent prachtig, Triestige."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J27",
+      "english": "You're beautiful, Sad Ass.",
+      "baseline": "Je bent prachtig, Triestigaard.",
+      "theirs": "Je bent prachtig, Triestige."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J46",
+      "english": "HEEEEHAWWWWW",
+      "baseline": "HEEEEEEEEEE!",
+      "theirs": "HIIIEEEE HAAAAAAA"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J47",
+      "english": "HEEEEHAWWWWW",
+      "baseline": "HAAAAAAAAAAAAA!!",
+      "theirs": "HIIIEEEE HAAAAAAA"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J48",
+      "english": "HEEEEHAWWWWW",
+      "baseline": "HEEEEEEEEEE!!",
+      "theirs": "HIIIEEEE HAAAAAAA"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J63",
+      "english": "The Farm—our home! Sad Ass, how could you?!",
+      "baseline": "De Boerderij—onze thuis! Triestigaard, hoe kon je dit laten gebeuren?!",
+      "theirs": "De Boerderij—onze thuis! Triestige, hoe kon je dit laten gebeuren?!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "baseline": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "theirs": "Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J27",
+      "english": "It's time for action, not debate, Hard Ass.",
+      "baseline": "Het is tijd voor daden, niet voor woorden, Felle.",
+      "theirs": "Het is tijd voor daden, niet voor woorden, Bikkelharde Ezel."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J30",
+      "english": "Let'er RIP, Hard Ass!",
+      "baseline": "Laat u gaan, hè, Felle!",
+      "theirs": "Laat u gaan, hè, Bikkelharde!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J46",
+      "english": "Nice Ass's fine legs can do that run in less than two minutes! Yeehaw!",
+      "baseline": "Schoon Beest haar lange benen kunnen dadde in minder dan twee minuten! Da'k ik het ge'zeid heb, héé!",
+      "theirs": "Lieve Ezel haar lange benen kunnen dadde in minder dan twee minuten! Da'k ik het ge'zeid heb, héé!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J50",
+      "english": "Good. Run like the wind Nice Ass! And don't ruin my Plan.",
+      "baseline": "Mooi. Je moest er al zijn, Schoontje! En verbrod mijn Plan niet.",
+      "theirs": "Mooi. Je moest er al zijn, Lieve Ezel! En verbrod mijn Plan niet."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J56",
+      "english": "Sad Ass! Sturdy Ass! Bad Ass! I'm coming for you!",
+      "baseline": "Triestigaard! Stoere! Waaghalske! Ik kom eraan!",
+      "theirs": "Triestige! Stevige! Stoere! Ik kom eraan!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "baseline": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "theirs": "Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J26",
+      "english": "Sad Ass?",
+      "baseline": "Triestigaard?",
+      "theirs": "Triestige Ezel?"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A3_localization",
+      "cell": "J3",
+      "english": "Sad Ass, this rain is a sign that we can start again!",
+      "baseline": "Triestigaard, deze regen is teken dat we terug opnieuw kunnen starten!",
+      "theirs": "Triestige, deze regen is teken dat we terug opnieuw kunnen starten!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "baseline": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "theirs": "Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J22",
+      "english": "How about Thirsty?",
+      "baseline": "En Zatlap?",
+      "theirs": "En Beschonken?"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J24",
+      "english": "How about you, Smart?",
+      "baseline": "En gij, Betweter?",
+      "theirs": "En gij, Slimme Ezel?"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J25",
+      "english": "You want to send your ACE STRATEGIST into a FIRE?! You gotta be joking!",
+      "baseline": "Jij wilt je BESTE STRATEEG die BRAND insturen? Is dat voor te lachen, ofzo!",
+      "theirs": "Jij wilt je TOPSTRATEEG die BRAND insturen? Is dat voor te lachen, ofzo!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J26",
+      "english": "Sick Ass? Kick Ass? Anyone?",
+      "baseline": "Snotezel? Stampgast? Iemand?",
+      "theirs": "Snot Ezel? Stamp Ezel? Iemand?"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J37",
+      "english": "ONE, Nice Ass saves the Farm.",
+      "baseline": "ÉÉN, Schoon Beest redt de Boerderij.",
+      "theirs": "ÉÉN, Lieve Ezel redt de Boerderij."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J38",
+      "english": "TWO, Hard Ass saves the Humans.",
+      "baseline": "TWEE, Felle Gast redt de Mensen.",
+      "theirs": "TWEE, Bikkelharde Ezel redt de Mensen."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J43",
+      "english": "Ass P-Power?",
+      "baseline": "Ezel M-M-macht?",
+      "theirs": "Ezels E-erst?"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J44",
+      "english": "ASS P-POWER!",
+      "baseline": "EZEL M-MACHT!",
+      "theirs": "EZELS E-ERST!"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J49",
+      "english": "{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}",
+      "baseline": "{color=yellow}{s=5}♪ hee haw hi hon 'ee ah he a'w ♪{/s}{/color}",
+      "theirs": "{color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/s}{/color}"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B2_localization",
+      "cell": "J5",
+      "english": "Welcome to Fannyside Farm. To the west, our beautiful Heritage Stable and wheat fields.",
+      "baseline": "Welkom op de Boerderij van Muilegem. Ten westen, onze prachtige Erfgoedshoeve en korenvelden.",
+      "theirs": "Welkom op de Boerderij van Muilebeek. Ten westen, onze prachtige Erfgoedshoeve en korenvelden."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B2_localization",
+      "cell": "J21",
+      "english": "Let's go.",
+      "baseline": "Let's go.",
+      "theirs": "Kom op."
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B2_localization",
+      "cell": "J24",
+      "english": "{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/s}{/color}",
+      "baseline": "{color=yellow}{s=5}♪ hee haw hi hon 'ee ah he a'w ♪{/s}{/color}",
+      "theirs": "{color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/s}{/color}"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J9",
+      "english": "July 15th\\n\\nINVOICE\\nEBZ75 Tunnel Boring Machine — $56,000 USD\\n\\nHe Bei Zhong Xuan Construction Machinery Co., Ltd.\\nRoom.2809, Building2, East international Plaza, No.98\\nThe Yellow river Rd, Hi-Tech Zone\\nShijiazhuang, Hebei, China",
+      "baseline": "15 juli\\n\\nFACTUUR\\nEBZ75 Tunnelboormachine — €56.000\\n\\nHe Bei Zhong Xuan Bouwmachines NV\\nKamer 2809, Gebouw 2, East International Plaza,\\nYangtzestraat 98, Hi-Tech Zone\\nShijiazhuang, Hebei, China",
+      "theirs": "15 juli\\n\\nFACTUUR\\nEBZ75 Tunnelboormachine — €50.000\\n\\nHe Bei Zhong Xuan Bouwmachines NV\\nKamer 2809, Gebouw 2, East International Plaza,\\nYangtzestraat 98, Hi-Tech Zone\\nShijiazhuang, Hebei, China"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J10",
+      "english": "August 17th\\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\\n\\nI'm going to widen the tunnels and put tracks down. Then I'll sell my donkeys and buy mine carts.\\n\\nTonight, I'm going to celebrate with that bottle of wine I've been saving for an occasion just like this!\\n\\nI'm finally ready to win Sandy back. Maybe now she will respect me, and come home again.",
+      "baseline": "17 augustus\\nDe Stadsbank heeft mijn lening goedgekeurd en 'k heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\\n\\n'k Ga de tunnels verbreden en sporen aanleggen. Dan verkoop ik mijn ezels en koop mijnkarren.\\n\\nVanavond ga ik vieren met die fles wijn die ik bewaard heb voor een gelegenheid zoals deze!\\n\\n'k Ben eindelijk klaar om Smaragdje terug te winnen. Misschien zal ze me nu respecteren, en terug naar huis komen.",
+      "theirs": "17 augustus\\nDe Stadsbank heeft mijn lening goedgekeurd en ik heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\\n\\nIk Ga de tunnels verbreden en sporen aanleggen. Dan verkoop ik mijn ezels en koop mijnkarren.\\n\\nVanavond ga ik vieren met die fles wijn die ik bewaard heb voor een gelegenheid zoals deze!\\n\\nIk Ben eindelijk klaar om Smaragdje terug te winnen. Misschien zal ze me nu respecteren, en terug naar huis komen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J11",
+      "english": "August 17th\\nThe City Bank has approved my loan and I immediately put some money down on brand new equipment. Things are looking up!\\n\\nI'm going to widen the tunnels and put tracks down. Then I'll sell my donkeys and buy mine carts.\\n\\nTonight, I'm going to celebrate with that bottle of wine I've been saving for an occasion just like this!\\n\\nI'm finally ready to win Sandy back. Maybe now she will respect me, and come home again.",
+      "baseline": "17 augustus\\nDe Stadsbank heeft mijn lening goedgekeurd en 'k heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\\n\\n'k Ga de tunnels verbreden en sporen aanleggen. Dan verkoop ik mijn ezels en koop mijnkarren.\\n\\nVanavond ga ik vieren met die fles wijn die ik bewaard heb voor een gelegenheid zoals deze!\\n\\n'k Ben eindelijk klaar om Smaragdje terug te winnen. Misschien zal ze me nu respecteren, en terug naar huis komen.",
+      "theirs": "17 augustus\\nDe Stadsbank heeft mijn lening goedgekeurd en ik heb direct een voorschot betaald op gloednieuw materiaal. Het gaat de goede kant op!\\n\\nIk Ga de tunnels verbreden en sporen aanleggen. Dan verkoop ik mijn ezels en koop mijnkarren.\\n\\nVanavond ga ik vieren met die fles wijn die ik bewaard heb voor een gelegenheid zoals deze!\\n\\nIk Ben eindelijk klaar om Smaragdje terug te winnen. Misschien zal ze me nu respecteren, en terug naar huis komen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J12",
+      "english": "FANNYSIDE TIMES",
+      "baseline": "De Volksmuil",
+      "theirs": "STREEF NAAR MEER\\nin Technopolis"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J13",
+      "english": "Boring Machine Blunder Begets Backlash for Big Boss Butte",
+      "baseline": "Boormachine Blunder Brengt Baas Vanscheetvelde Brokken",
+      "theirs": "De Volksmuil"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J14",
+      "english": "The town is still reeling from the tragedy at Butte Mines on Thursday. After several failed rescue operations, a catastrophic cave-in caused by a Boring Machine claimed the life of Cole Butte (21), a local mine worker, robotics wunderkind, and the darling son of the Mine Boss, Hugh G. Butte. Three miners were air-lifted to the nearby Mecha General Hospital with life threatening injuries. One donkey died and remains stuck in the cave. Cole's body was never found.",
+      "baseline": "Het dorp is nog steeds van slag door de tragedie bij Vanscheetvelde Kolen & Industrie op donderdag. Na verschillende mislukte reddingsoperaties heeft een catastrofale instorting veroorzaakt door een Boormachine het leven geëist van Piet Vanscheetvelde (21), een lokale mijnwerker, robotica-wonderkind, en de geliefde zoon van de Mijnbaas, Mr. Vanscheetvelde. Drie mijnwerkers werden per helikopter naar het nabijgelegen Mecha Algemeen Ziekenhuis gebracht met levensbedreigende verwondingen. Eén ezel stierf en zit nog vast in de grot. Piet's lichaam werd nooit gevonden.",
+      "theirs": "Boormachine Blunder Brengt Baas Vanscheetvelde Brokken"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J15",
+      "english": "An interview with a former worker reveals the company knew about the compounding danger of digging in that section of the mine, but the pursuits of profits pushed the company to ignore early warnings and take shortcuts with their new machinery. But one has to ask, has Boss Butte finally hit rock bottom?\\n\\nThis story is continued on Page 14.",
+      "baseline": "Een interview met een voormalige werknemer onthult dat het bedrijf wist van het toenemende gevaar van graven in dat deel van de mijn, maar de jacht op winst dreef het bedrijf om vroege waarschuwingen te negeren en shortcuts te nemen met hun nieuwe machines. Maar men moet zich afvragen, heeft Baas Vanscheetvelde eindelijk de bodem bereikt?\\n\\nDit verhaal gaat verder op pagina 14.",
+      "theirs": "Het dorp is nog steeds van slag door de tragedie bij Vanscheetvelde Kolen & Industrie op donderdag. Na verschillende mislukte reddingsoperaties heeft een catastrofale instorting veroorzaakt door een Boormachine het leven geëist van Piet Vanscheetvelde (21), een lokale mijnwerker, robotica-wonderkind, en de geliefde zoon van de Mijnbaas, Mr. Vanscheetvelde. Drie mijnwerkers werden per helikopter naar het nabijgelegen Mecha Algemeen Ziekenhuis gebracht met levensbedreigende verwondingen. Eén ezel stierf en zit nog vast in de grot. Piet's lichaam werd nooit gevonden."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J16",
+      "english": "\"I HOPE MY ART MAKES PEOPLE HAPPY\"",
+      "baseline": "K HOOP DAT MIJN KUNST MENSEN GELUKKIG MAAKT",
+      "theirs": "Een interview met een voormalige werknemer onthult dat het bedrijf wist van het toenemende gevaar van graven in dat deel van de mijn, maar de jacht op winst dreef het bedrijf om vroege waarschuwingen te negeren en shortcuts te nemen met hun nieuwe machines. Maar men moet zich afvragen, heeft Baas Vanscheetvelde eindelijk de bodem bereikt?\\n\\nDit verhaal gaat verder op pagina 14."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J18",
+      "english": "YOUR BEAUTY\\nIS OUR DUTY",
+      "baseline": "UW SCHOONHEID\\nIS ONZE PLICHT",
+      "theirs": "Kinderkunstenaar Luukske Vermeulen charmeert de jury en wint de regionale tekenwedstrijd van Klotegem voor kinderen 12 jaar en jonger. Zijn werk zal te zien zijn in het Stadsmuseum van Technopolis tot het einde van de maand. Zijn Grootmoeder is erg trots."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J19",
+      "english": "ASPIRE TO MORE",
+      "baseline": "STREEF NAAR MEER",
+      "theirs": "UW SCHOONHEID\\nIS ONZE PLICHT"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_200_localization",
+      "cell": "J3",
+      "english": "May 15th\\nI've started attending an AA group. They're helping me. It's really nice to have a lot of people behind you, giving you advice, you know? I think I've needed this.\\n\\nMay 27th\\nA whole week sober. I think I can give up beer, but a little bit of wine once a week shouldn't hurt, right?\\n\\nToday I sold my depressed donkey to Fannyside Farm. It's been useless ever since its mate died in the cave in.",
+      "baseline": "15 mei\\n'k Ben begonnen met een AA groep. Ze helpen mij. 't Is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? 'k Denk dat ik dit nodig had.\\n\\n27 mei\\nEen hele week nuchter. 'k Denk dat ik bier kan opgeven, maar een beetje wijn één keer per week kan toch geen kwaad, zeker?\\n\\nVandaag heb ik mijn depressieve ezel verkocht aan de Boerderij van Muilegem. 't Is nutteloos sinds zijn maat gestorven is in de instorting.",
+      "theirs": "15 mei\\nIk Ben begonnen met een AA groep. Ze helpen mij. Het is echt fijn om veel mensen achter u te hebben, die u raad geven, weet ge? Ik Denk dat ik dit nodig had.\\n\\n27 mei\\nEen hele week nuchter. Ik denk dat ik bier kan opgeven, maar een beetje wijn één keer per week kan toch geen kwaad, zeker?\\n\\nVandaag heb ik mijn depressieve ezel verkocht aan de Boerderij van Muilebeek. Hij is nutteloos sinds zijn maat gestorven is in de instorting."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_300_localization",
+      "cell": "J3",
+      "english": "August 9th\\nThe whole mining operation is stalled.\\n\\nAnd the drought is starting to take a toll on all of us.\\n\\nThe last of my workers are revolting against me. They know I can't pay them.\\n\\nThere are no buyers for the Mine.\\n\\nHelp is not coming. I'm all alone.\\n\\nNo one has any use for coal anymore... Maybe someone out there will buy my donkeys?",
+      "baseline": "9 augustus\\nDe hele mijnoperatie ligt stil.\\n\\nEn de droogte begint zijn tol te eisen van ons allemaal.\\n\\nMijn laatste werkers komen in opstand tegen mij. Ze weten dat ik ze niet kan betalen.\\n\\nEr zijn geen kopers voor de Mijn.\\n\\nEr komt geen hulp. Ik sta er helemaal alleen voor.\\n\\nNiemand heeft nog gebruik voor kolen... Misschien wil iemand daar buiten mijn ezels kopen?",
+      "theirs": "9 augustus\\nDe hele mijnoperatie ligt stil.\\n\\nEn de droogte begint zijn tol te eisen van ons allemaal.\\n\\nMijn laatste werkers komen in opstand tegen mij. Ze weten dat ik ze niet kan betalen. Er zijn geen kopers voor de Mijn.\\n\\nEr komt geen hulp. Ik sta er helemaal alleen voor. Niemand heeft nog gebruik voor kolen... Misschien wil iemand daar buiten mijn ezels kopen?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_BadCave_localization",
+      "cell": "J9",
+      "english": "Uncle Bad Ass?!",
+      "baseline": "Nonkel Waaghalske?!",
+      "theirs": "Nonkel Stoere?!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_BadCave_localization",
+      "cell": "J45",
+      "english": "So... Is that why you don't spend more time with the Herd, Uncle Bad Ass?",
+      "baseline": "Dus... Is dat waarom ge niet meer met de Kudde hangt, Nonkel Waaghalske?",
+      "theirs": "Nonkel Stoere?!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_EpisodeTitle_localization",
+      "cell": "J7",
+      "english": "Hurry up, Sick Ass!",
+      "baseline": "Opschieten, Snotezel!",
+      "theirs": "Opschieten, Snot Ezel!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J46",
+      "english": "My dear Sad Ass...",
+      "baseline": "Mijn lieve Triestigaard...",
+      "theirs": "Mijn lieve Triestige..."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J21",
+      "english": "{vpunch=100,0.75}I have a massive announcement, Comrade Sturdy! Hard, Kick, and Sick are back!",
+      "baseline": "{vpunch=100,0.75}Ik heb een mega aankondiging, Kameraad Stevige! Harde, Stamper, en Snotje zijn terug!",
+      "theirs": "{vpunch=100,0.75}Ik heb een mega aankondiging, Kameraad Stevige! Bikkelharde, Stamp, en Snotje zijn terug!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J27",
+      "english": "Tell me about your adventures, Uncle Kick!",
+      "baseline": "Vertel mij over uw avonturen, Nonkel Hoef!",
+      "theirs": "Vertel mij over uw avonturen, Nonkel Stamp!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J33",
+      "english": "Smart Ass, divide the rations.",
+      "baseline": "Betweter, verdeel de ratioenen.",
+      "theirs": "Slimme Ezel, verdeel de ratioenen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J42",
+      "english": "Kick, Sick, and I are risking our health and making sacrifices for the Herd.",
+      "baseline": "Trap, Zieke, en ik riskeren onze gezondheid en maken offers voor de Kudde.",
+      "theirs": "Stamp Ezel, Snot Ezel, en ik riskeren onze gezondheid en maken offers voor de Kudde."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J47",
+      "english": "You couldn't save Lazy Ass and you couldn't save a single Human—",
+      "baseline": "Je kon Luie niet redden en je kon geen enkele Mens redden—",
+      "theirs": "Je kon Luie Ezel niet redden en je kon geen enkele Mens redden—"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J51",
+      "english": "If we don't leave and find the Humans now, we'll all end up like Sick Ass.",
+      "baseline": "Als we nu niet vertrekken en de Mensen zoeken, eindigen we allemaal zoals Snotezel.",
+      "theirs": "Als we nu niet vertrekken en de Mensen zoeken, eindigen we allemaal zoals Snot Ezel."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J59",
+      "english": "Aren't I the Ace Strategist?!",
+      "baseline": "Ben ik niet de Top Strateeg?!",
+      "theirs": "Ben ik niet de Topstrateeg?!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J69",
+      "english": "Nice Ass",
+      "baseline": "Schoon Beest",
+      "theirs": "Lieve Ezel"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J70",
+      "english": "Kick Ass",
+      "baseline": "Stampgast",
+      "theirs": "Stamp Ezel"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1FOpening_localization",
+      "cell": "J71",
+      "english": "Smart Ass",
+      "baseline": "Betweter",
+      "theirs": "Slimme Ezel"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J5",
+      "english": "Maybe Aunty Nice wants to watch me play!",
+      "baseline": "Misschien wil Tante Schoontje wel komen kijken!",
+      "theirs": "Misschien wil Tante Lieve wel komen kijken!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J6",
+      "english": "Maybe Uncle Thirsty wants to watch me play!",
+      "baseline": "Misschien wil Nonkel Dorst wel meekijken!",
+      "theirs": "Misschien wil Nonkel Beschonken wel meekijken!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J19",
+      "english": "*sigh* Because some days your Uncle Sad Ass just doesn't know why he's alive...",
+      "baseline": "*zucht* Omdat uw Nonkel Triestigaard sommige dagen zelf nie weet waarom hij nog leeft...",
+      "theirs": "*zucht* Omdat uw Nonkel Triestige sommige dagen zelf nie weet waarom hij nog leeft..."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J20",
+      "english": "Tell Uncle Sad Ass why you think you're alive.",
+      "baseline": "Zeg tegen Nonkel Triestigaard waarom jij denkt dat je leeft.",
+      "theirs": "Zeg tegen Nonkel Triestige waarom jij denkt dat je leeft."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J23",
+      "english": "Tell Uncle Sad Ass why Comrade Mother says you're alive.",
+      "baseline": "Zeg wat Kameraad-Moeder zegt over waarom je leeft.",
+      "theirs": "Zeg tegen Nonkel Triestige wat Kameraad-Moeder zegt over waarom je leeft."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J24",
+      "english": "Comrade Mother says we're alive to honour the legacy of our Ancestors through hard Work.",
+      "baseline": "Kameraad-Moeder zegt dat we leven om de erfenis van onze Voorouders te eren met hard Werk.",
+      "theirs": "Kameraad Moeder zegt dat we leven om de erfenis van onze Voorouders te eren met hard Werk."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J25",
+      "english": "Is {$NewName} giving you some good advice, Uncle Sad?",
+      "baseline": "Is {$NewName} u goeie raad aan 't geven, Nonkel Triestigaard?",
+      "theirs": "Is {$NewName} u goeie raad aan 't geven, Nonkel Triestige?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J31",
+      "english": "It's not easy for him being back inside the Mine.",
+      "baseline": "t Is nie makkelijk voor hem om terug in de Mijn te zijn.",
+      "theirs": "'t Is nie makkelijk voor hem om terug in de Mijn te zijn."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J33",
+      "english": "Don't worry, it's not your fault.",
+      "baseline": "t Is uw schuld nie, maak u geen zorgen.",
+      "theirs": "'t Is uw schuld nie, maak u geen zorgen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J44",
+      "english": "Hard Ass couldn't save the Humans.",
+      "baseline": "Stoere kon de Mensen niet redden.",
+      "theirs": "Bikkelharde kon de Mensen niet redden."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J71",
+      "english": "*oof!*—You wanted water and you got it, Thirsty!",
+      "baseline": "*oef!*—Ge wilde water en ge hebt het, Zatlap!",
+      "theirs": "*oef!*—Ge wilde water en ge hebt het, Beschonken!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J79",
+      "english": "I'm dreaming of setting up a darn special place right here in Fannyside where Asses can get a drink and let loose.",
+      "baseline": "Ik droom ervan om hier in Muilegem een caféke te maken waar Ezels kunnen drinken en ontspannen.",
+      "theirs": "Ik droom ervan om hier in Muilebeek een caféke te maken waar Ezels kunnen drinken en ontspannen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J107",
+      "english": "That's enough. Run along.",
+      "baseline": "t Is genoeg. Ga nu weg.",
+      "theirs": "'t Is genoeg. Ga nu weg."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J110",
+      "english": "It sounds like someone's in pain...",
+      "baseline": "t Klinkt alsof iemand pijn heeft...",
+      "theirs": "'t Klinkt alsof iemand pijn heeft..."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J126",
+      "english": "Hey little Comrade, Bad Ass is letting his ration go to waste again. You should take it.",
+      "baseline": "Hé, kleine Kameraad, Waaghalske laat zijn rantsoen weer verpieteren. Jij pakt dat beter.",
+      "theirs": "Hé, kleine Kameraad, Stoere Ezel laat zijn rantsoen weer verpieteren. Jij pakt dat beter."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J128",
+      "english": "By the Gods! Smart Ass, you know {$NewName} can't digest that kind of food yet.",
+      "baseline": "Bij de Goden! Betweterke, je wéét dat {$NewName} dat soort eten nog niet verteert.",
+      "theirs": "Bij de Goden! Slimmeke, je wéét dat {$NewName} dat soort eten nog niet verteert."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J130",
+      "english": "No you won't. It's Bad Ass's.",
+      "baseline": "Nee jij. 't Is van Waaghalske.",
+      "theirs": "Nee jij. 't Is van Stoere Ezel."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J133",
+      "english": "Run along child. I need to speak with Aunty Smart about something important.",
+      "baseline": "Loop maar, kind. Ik moet iets belangrijks bespreken met Tante Betje.",
+      "theirs": "Loop maar, kind. Ik moet iets belangrijks bespreken met Tante Slimme."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J135",
+      "english": "Are Comrade Mother and Aunty Smart arguing?",
+      "baseline": "Zijn Kameraad-Moeder en Tante Betje aan 't bekvechten?",
+      "theirs": "Zijn Kameraad Moeder en Tante Slimme aan 't bekvechten?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J136",
+      "english": "If the Humans don't return to Fannyside, we'll never get our Jobs back...",
+      "baseline": "Als de Mensen niet terugkomen naar Muilegem, krijgen we onze Beroepen nooit terug...",
+      "theirs": "Als de Mensen niet terugkomen naar Muilebeek, krijgen we onze Beroepen nooit terug..."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J3",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J4",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J5",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J6",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J7",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J8",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J9",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J10",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J11",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J12",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J13",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J14",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J15",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J16",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J17",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J18",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J19",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J20",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J21",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J22",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J23",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J24",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J25",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J26",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J27",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J28",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J29",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J30",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J31",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J32",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J33",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J34",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J35",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J36",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J41",
+      "english": "Make sure to check out the Concert tonight in the Pond of Hehehehe!",
+      "baseline": "Ga zeker langs het Concert in de Vijver van Vermaak!",
+      "theirs": "Ga zeker langs het Concert in de Vijver van Hiehiehie!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J71",
+      "english": "...And my last words, after being given the Needle, were \"Show the World the Power of the Ass!\"",
+      "baseline": "...En mijn laatste woorden, nadat ik de Spuit was gegeven, waren \"Laat de Wereld de Kracht van de EZEL MACHT Zien!\"",
+      "theirs": "...En mijn laatste woorden, nadat ik de Spuit was gegeven, waren \"Herinneer de wereld aan de belangan van de Ezels!\""
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J74",
+      "english": "Hold on—Sick Ass? I would recognize that heavy breathing anywhere!",
+      "baseline": "Wacht eens — SNOTEZEL? Ik zou die luide adem overal herkennen!",
+      "theirs": "Wacht eens — SNOT EZEL? Ik zou die luide adem overal herkennen!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J77",
+      "english": "Nice to meet you, Comrade Sick!",
+      "baseline": "Prettige kennismaking, Kameraad Snotje!",
+      "theirs": "Prettige kennismaking, Kameraad Snot!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J82",
+      "english": "To the East—the sensual orgiastic Flats of Hawweeeheaww.",
+      "baseline": "Naar het Oosten — de sensuele en orgiastische Vlaktes van Hawweeeheaww.",
+      "theirs": "Naar het Oosten — de sensuele en orgiastische Vlaktes van Haahaa Honhii."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J84",
+      "english": "Surrounding these lands are the Steppes of Hawawaw—the stomping grounds for the many Asses who love to race.",
+      "baseline": "En rondom dit gebied liggen de Steppes van Hawawaw — dé plek voor de snelle racers onder de Ezels.",
+      "theirs": "En rondom dit gebied liggen de Steppes van Haahaahon — dé plek voor de snelle racers onder de Ezels."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J86",
+      "english": "And this is the Pond of Hehehehe, where tonight we will make history with our very first TRAP MUSIC CONCERT. Be sure to attend!",
+      "baseline": "En dit is de Vijver van Vertier, waar vanavond ons eerste TRAP MUSIC CONCERT van start gaat. Niet missen!",
+      "theirs": "En dit is de Vijver van Hiehiehie!, waar vanavond ons eerste TRAP MUSIC CONCERT van start gaat. Niet missen!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J99",
+      "english": "Sick Ass, maybe you can help raise his Morale?",
+      "baseline": "Snotezel, misschien kunt ge hem wat moed inspreken?",
+      "theirs": "Snot Ezel, misschien kunt ge hem wat moed inspreken?"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J131",
+      "english": "Geia sou, Newbie. I used to give tours to Humans around my beautiful home islands.",
+      "baseline": "Vrede ga met jou, Nieuweling. Ik gaf vroeger rondleidingen aan de Mensen op mijn thuiseilanden.",
+      "theirs": "Geia sou, Nieuweling. Ik gaf vroeger rondleidingen aan de Mensen op mijn thuiseilanden."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J151",
+      "english": "Hey, Newbie! You're from Trusty's old Herd aren't you.",
+      "baseline": "Hé Nieuwkomer! Jij komt van Trouwe haar oude Kudde, niet.",
+      "theirs": "Hé Nieuwkomer! Jij komt van Trouwe Ezel haar oude Kudde, niet."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J212",
+      "english": "No? Oh my friend, it's best drug we got in the Astral Plane...",
+      "baseline": "Ah nee? Maatje, het is het beste spul dat we in het astrale hiernamaals kunnen vinden",
+      "theirs": "Ah nee? Maatje, het is het beste spul dat we in het Astrale Hiernamaals kunnen vinden..."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J3",
+      "english": "HEEEE—@#$%&!—HAWWW!!",
+      "baseline": "HEEEE—@#$%&!—HAWWW!!",
+      "theirs": "HIIEEEE—@#$%&!—HAAAA!!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J4",
+      "english": "THIS IS YOUR FAULT HARD ASS!",
+      "baseline": "DIT IS UW FOUT FELLE GAST!",
+      "theirs": "DIT IS UW FOUT BIKKELHARDE EZEL!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J7",
+      "english": "What Hard Ass FORCED us to do...",
+      "baseline": "Wat Felle Gast ons GEDWONGEN heeft om te doen...",
+      "theirs": "Wat Bikkelharde Ezel ons GEDWONGEN heeft om te doen..."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J10",
+      "english": "They've been—TRYING TO RETURN—to Fannyside ever since the Fire.",
+      "baseline": "De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilegem, sinds de Brand.",
+      "theirs": "De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilebeek, sinds de Brand."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J11",
+      "english": "Hard Ass forced us to keep it a SECRET.",
+      "baseline": "We mochten niets zeggen van Felle Gast.",
+      "theirs": "We mochten niets zeggen van Bikkelharde Ezel."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J14",
+      "english": "Is this some kind of twisted joke, Hard Ass?!",
+      "baseline": "Is dit één of andere zieke grap, Felle Gast?!",
+      "theirs": "Is dit één of andere zieke grap, Bikkelharde Ezel?!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J22",
+      "english": "We're all gonna die because of you, Hard Ass!",
+      "baseline": "We gaan d'r allemaal aan! Dankzij jou, Felle Gast!",
+      "theirs": "We gaan d'r allemaal aan! Dankzij jou, Bikkelharde Ezel!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J37",
+      "english": "But if what Hard Ass says is true, then it's too late.",
+      "baseline": "Maar als wat Felle Gast zegt de waarheid is, dan is het daarvoor immers al te laat.",
+      "theirs": "Maar als wat Bikkelharde Ezel zegt de waarheid is, dan is het daarvoor immers al te laat."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J51",
+      "english": "{vpunch=100,0.75}I'm leaving with Smart Ass too.",
+      "baseline": "{vpunch=100,0.75}Ik vertrek samen met Betweter.",
+      "theirs": "{vpunch=100,0.75}Ik vertrek samen met Slimme Ezel."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J55",
+      "english": "You're right, Smart Ass—this place will be THE DEATH of us.",
+      "baseline": "Dat klopt, Betweter — deze plek is de NAGEL AAN ONZE DOODSKISTEN.",
+      "theirs": "Dat klopt, Slimme Ezel — deze plek is de NAGEL AAN ONZE DOODSKISTEN."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J62",
+      "english": "Nice Ass what are you going to do?",
+      "baseline": "Schoon Beest, wat gaat gij doen, héé?",
+      "theirs": "Lieve Ezel, wat gaat gij doen, héé?"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J63",
+      "english": "Golly. Leave Fannyside? But this is our home. I can't just leave!",
+      "baseline": "Oesje. Weg van Muilegem verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!",
+      "theirs": "Oesje. Weg van Muilebeek verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J72",
+      "english": "Shut it, Hard Ass!",
+      "baseline": "Bek dicht, Felle Gast!",
+      "theirs": "Bek dicht, Bikkelharde Ezel!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J76",
+      "english": "I'll come with you Smart Ass.",
+      "baseline": "Ik kom met jullie mee Betweter.",
+      "theirs": "Ik kom met jullie mee Slimme Ezel."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J79",
+      "english": "Shut it, Hard Ass!",
+      "baseline": "Bek dicht, Felle Gast!",
+      "theirs": "Bek dicht, Bikkelharde Ezel!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J80",
+      "english": "Come on Kick, Big, Sad... and Slow—we're outta this Hellhole! EASY.",
+      "baseline": "Kom Stamp, Mega, Triestigaard en Slome — we zijn weg van dit verdorven hol. POEPSIMPEL.",
+      "theirs": "Kom Stamp, Mega, Triestige en Slome — we zijn weg van dit verdorven hol. POEPSIMPEL."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J83",
+      "english": "Sick has been ill a long time, Comrade.",
+      "baseline": "Snotje is al lang ziek, Kameraad.",
+      "theirs": "Snot Ezel is al lang ziek, Kameraad."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HideAndSeek_localization",
+      "cell": "J3",
+      "english": "Sick Ass? Are you with me?",
+      "baseline": "Snotezel? Zijt ge daar?",
+      "theirs": "Snot Ezel? Zijt ge daar?"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HideAndSeek_localization",
+      "cell": "J8",
+      "english": "*COUGH*",
+      "baseline": "*HOEST*",
+      "theirs": "*KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HideAndSeek_localization",
+      "cell": "J11",
+      "english": "*COUGH COUGH*",
+      "baseline": "*HOEST HOEST*",
+      "theirs": "*KUCH KUCH*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_KicksConfession_localization",
+      "cell": "J6",
+      "english": "He made me HELP while Sick Ass kept watch.",
+      "baseline": "MOEST ik MEEHELPEN terwijl Snotezel op uitkijk stond.",
+      "theirs": "MOEST ik MEEHELPEN terwijl Snotje op uitkijk stond."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J6",
+      "english": "Hey Sick, you're supposed to be MELLOWING out!",
+      "baseline": "Hé Snotezel, gij hoort het RUSTIG aan te doen!",
+      "theirs": "Hé Snot Ezel, gij hoort het RUSTIG aan te doen!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J9",
+      "english": "Rest, Comrade.",
+      "baseline": "Ga rusten, Kameraad",
+      "theirs": "Ga rusten, Kameraad."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J17",
+      "english": "Why did Hard Ass cross the road?",
+      "baseline": "Waarom stak Felle Gast de straat over?",
+      "theirs": "Waarom stak Bikkelharde Ezel de straat over?"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J31",
+      "english": "@#$%&! You're to blame for all of our SUFFERING, Hard Ass!",
+      "baseline": "@#$%&! Al dit leed hangt aan JOUW hoeven, Felle Gast!",
+      "theirs": "@#$%&! Al dit leed hangt aan JOUW hoeven, Bikkelharde Ezel!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J32",
+      "english": "@#$%&! You're to blame for all of our SUFFERING, Hard Ass!",
+      "baseline": "@#$%&! Al dit leed hangt aan UW hoeven, Felle Gast!",
+      "theirs": "@#$%&! Al dit leed hangt aan UW hoeven, Bikkelharde Ezel!"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J56",
+      "english": "I hope Sick is feeling b-b-b...",
+      "baseline": "Ik hoop dat Snotje zich b-b-b...",
+      "theirs": "Ik hoop dat Snotje zich b-b-b... "
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J57",
+      "english": "b-b-b-b...",
+      "baseline": "b-b-b-b...",
+      "theirs": "b-b-b-b... "
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J58",
+      "english": "b-b-b-b-b...",
+      "baseline": "b-b-b-b-b...",
+      "theirs": "b-b-b-b-b... "
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J60",
+      "english": "Hold tight, Comrade. I trust the Gods will see how special Sick Ass is when they meet her.",
+      "baseline": "Niet opgeven, Kameraad. De Goden zullen zien hoe speciaal Snotezel is wanneer ze haar ontmoeten.",
+      "theirs": "Niet opgeven, Kameraad. De Goden zullen zien hoe speciaal Snot Ezel is wanneer ze haar ontmoeten."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J67",
+      "english": "HEEEEEHAWWWW!",
+      "baseline": "HEEEEEHAWWWW!",
+      "theirs": "HIIIEEEEE HAAAAAA!"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J30",
+      "english": "So stay tuned!",
+      "baseline": "Dus blijf blij ons!",
+      "theirs": "Dus blijf bij ons!"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J45",
+      "english": "Once the crowd sees my routine, the Ringmaster is sure to announce a World Tour!",
+      "baseline": "Wanneer de circusdirecteur mijn routine ziet kondigt ie meteen een wereldtournee aan!",
+      "theirs": "Wanneer de Circusdirecteur mijn routine ziet kondigt ie meteen een Wereldtournee aan!"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J69",
+      "english": "Not everyone has the ape-titude to be a star!",
+      "baseline": "Niet iedereen heeft de aap-itude om de ster van de show te worden!",
+      "theirs": "Niet iedereen heeft de aap-titude om de ster van de show te worden!"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J241",
+      "english": "With all your power and resources, will you prevent fires like Bumpkin's from ever happening again?",
+      "baseline": "Met al je vermogen en invloed, ga je ervoor zorgen dat zulke dramas, zoals die van Muilegem, zich toch niet meer herhalen?",
+      "theirs": "Met al je vermogen en invloed, ga je ervoor zorgen dat zulke dramas, zoals die van Klotegem, zich toch niet meer herhalen?"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J244",
+      "english": "Bumpkinites deserved more than dangerously out-of-date and accident-prone equipment.",
+      "baseline": "Muilegemmers verdienen beter dan oud en gevaarlijk gerief.",
+      "theirs": "Klotegemmers verdienen beter dan oud en gevaarlijk gerief."
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J249",
+      "english": "But I don't even have the strength to go back and visit Bumpkin...",
+      "baseline": "Maar ik heb zelfs de kracht niet om terug te gaan voor een bezoek aan Muilegem...",
+      "theirs": "Maar ik heb zelfs de kracht niet om terug te gaan voor een bezoek aan Klotegem..."
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_ZooMain_localization",
+      "cell": "J71",
+      "english": "@#$%&! Smart Ass—SCREW YOU!",
+      "baseline": "@#$%&! BETWETER — KUS MIJN KLOTEN!",
+      "theirs": "@#$%&! SLIMME EZEL — KUS MIJN KLOTEN!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J20",
+      "english": "Hey Uncle Bad Ass...",
+      "baseline": "Hé Oom Stoere...",
+      "theirs": "Hé Nonkel Stoere..."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J26",
+      "english": "Hey Uncle Bad Ass...",
+      "baseline": "Hé Oom Stoere...",
+      "theirs": "Hé Nonkel Stoere..."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BattleHard_localization",
+      "cell": "J10",
+      "english": "Uncle Hard, everyone says you're a two-faced liar!",
+      "baseline": "Oom Bikkel, iedereen zegt dat je een achterbakse leugenaar bent!",
+      "theirs": "Nonkel Bikkel, iedereen zegt dat je een achterbakse leugenaar bent!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_MineLift_localization",
+      "cell": "J4",
+      "english": "Uncle Bad Ass is going to be so disappointed in me that I didn't get the super important light he wanted.",
+      "baseline": "Oom Stoere Ezel gaat zo teleurgesteld in me zijn dat ik het superbelangrijke licht niet heb gevonden.",
+      "theirs": "Nonkel Stoere Ezel gaat zo teleurgesteld in me zijn dat ik het superbelangrijke licht niet heb gevonden."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J10",
+      "english": "Lazy could NOT handle another shift with HER.",
+      "baseline": "Luie kon NIET nog een shift aan met HAAR.",
+      "theirs": "Luie Ezel kon NIET nog een shift aan met HAAR."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J16",
+      "english": "We're going to get the Boring Machine up and running, and it'll save our Mine from going under.",
+      "baseline": "We gaan de Boormachine opstarten en laten draaien, en die gaat onze Mijn redden van de ondergang.",
+      "theirs": "We gaan de Boor-Machine opstarten en laten draaien, en die gaat onze Mijn redden van de ondergang."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J45",
+      "english": "You tore Sick AWAY FROM ME!",
+      "baseline": "Ge hebt Snot van me WEGGERUKT!",
+      "theirs": "Ge hebt Snotje van me WEGGERUKT!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J9",
+      "english": "Hi Uncle Hard! How many Humans have you killed today?",
+      "baseline": "Hoi Oom Bikkelhard! Hoeveel Mensen heb je vandaag gedood?",
+      "theirs": "Hoi Nonkel Bikkelharde! Hoeveel Mensen heb je vandaag gedood?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J13",
+      "english": "Uncle Hard, Comrade Mother and I are spending 'quality time' together, wanna come?",
+      "baseline": "Oom Bikkel, Kameraad Moeder en ik brengen 'quality time' samen door, wil je meedoen?",
+      "theirs": "Nonkel Bikkelharde, Kameraad Moeder en ik brengen 'quality time' samen door, wil je meedoen?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J121",
+      "english": "\"Kin Aesthetic Response\"",
+      "baseline": "Kin Aesthetic Response",
+      "theirs": "\"Kin Aesthetic Response\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J122",
+      "english": "\"Growing Pains\"",
+      "baseline": "Groeipijnen",
+      "theirs": "\"Groeipijnen\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J123",
+      "english": "\"Growing Pains\"",
+      "baseline": "Groeipijnen",
+      "theirs": "\"Groeipijnen\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J128",
+      "english": "\"My Womb, My Self\"",
+      "baseline": "\"Mijn Schoot, Mijn Zelf\"",
+      "theirs": "\"Mijn Baarmoeder, Mijn Zelf\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J130",
+      "english": "\"Mother Courage\"",
+      "baseline": "Moeder Courage",
+      "theirs": "\"Moeder Courage\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J131",
+      "english": "\"Ecstasy of a Mother\"",
+      "baseline": "Extase van een Moeder",
+      "theirs": "\"Extase van een Moeder\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J132",
+      "english": "\"Ecstasy of a Mother\"",
+      "baseline": "Extase van een Moeder",
+      "theirs": "\"Extase van een Moeder\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J137",
+      "english": "\"If The Machines Never Were\"",
+      "baseline": "Als de Machines Nooit Hadden Bestaan",
+      "theirs": "\"Als De Machines Er Nooit Waren Geweest\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J140",
+      "english": "\"The Tyranny of Machinery\"",
+      "baseline": "\"De Tirannie der Machines\"",
+      "theirs": "\"De Tirannie der Machinerie\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J141",
+      "english": "\"The Tyranny of Machinery\"",
+      "baseline": "De Tirannie der Machinerie",
+      "theirs": "\"De Tirannie der Machinerie\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J142",
+      "english": "Damn those evil, soulless, job-taking, child-killing Machines.",
+      "baseline": "Verdomd die kwaadaardige, zielloze, baanafpakkende, kindermoorddadige Machines.",
+      "theirs": "Verdomd die slechte, zielloze, werk-afpakkende, kind-dodende Machines."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J146",
+      "english": "\"hee haw hi hon 'ee ah he a'w\"",
+      "baseline": "hie haa hie hon 'ie aah he ahn",
+      "theirs": "\"hie haa hi hon 'ie aah he ahn\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J147",
+      "english": "\"hee haw hi hon 'ee ah he a'w\"",
+      "baseline": "hie haa hie hon 'ie aah he ahn",
+      "theirs": "\"hie haa hi hon 'ie aah he ahn\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J148",
+      "english": "\"Ass Power!\"",
+      "baseline": "\"Ezel Macht!\"",
+      "theirs": "\"Ezels Eerst!\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J149",
+      "english": "\"Ass Power!\"",
+      "baseline": "\"Ezel Macht!\"",
+      "theirs": "\"Ezels Eerst!\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J150",
+      "english": "\"I'm Scared\"",
+      "baseline": "\"Ik ben Bang\"",
+      "theirs": "\"Ik ben bang\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J151",
+      "english": "\"I'm Scared\"",
+      "baseline": "Ik ben bang",
+      "theirs": "\"Ik ben bang\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J154",
+      "english": "\"The Gods Leadeth Me\"",
+      "baseline": "De Goden Leiden Mij",
+      "theirs": "\"De Goden Leiden Mij\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J157",
+      "english": "\"Golden Showers for All\"",
+      "baseline": "Gouden Regen voor Allen",
+      "theirs": "\"Gouden Regen voor Allen\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J159",
+      "english": "\"Our Souls Will Meet in the Next Life\"",
+      "baseline": "Onze Zielen Zullen Elkaar Ontmoeten in het Astrale Hiernamaals",
+      "theirs": "\"Onze Zielen Zullen Elkaar Ontmoeten in het Hiernamaals\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J160",
+      "english": "Praise be to the Gods.",
+      "baseline": "Oh liefste Gods",
+      "theirs": "Oh liefste Goden."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J161",
+      "english": "This sculpture will remind everyone of Fannyside's golden days.",
+      "baseline": "Dit beeld zal iedereen herinneren aan de gouden dagen van Muilegem.",
+      "theirs": "Dit beeld zal iedereen herinneren aan de gouden dagen van Muilebeek."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J162",
+      "english": "\"The Pleasures of Entering Fannyside\"",
+      "baseline": "\"De Geneugten van het Betreden van Muilegem\"",
+      "theirs": "\"De Geneugten van het Betreden van Muilebeek\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J163",
+      "english": "\"The Pleasures of Entering Fannyside\"",
+      "baseline": "\"De Geneugten van het Betreden van Muilegem\"",
+      "theirs": "\"De Geneugten van het Betreden van Muilebeek\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J164",
+      "english": "\"Farm and Content\"",
+      "baseline": "Boerderij en Tevredenheid",
+      "theirs": "\"Boerderij en Tevredenheid\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J165",
+      "english": "\"Farm and Content\"",
+      "baseline": "Boerderij en Tevredenheid",
+      "theirs": "\"Boerderij en Tevredenheid\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J167",
+      "english": "\"The Fields Weep with the Blood of our Ancestors\"",
+      "baseline": "De Velden Wenen met het Bloed van onze Voorouders",
+      "theirs": "\"De Velden Wenen met het Bloed van onze Voorouders\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J171",
+      "english": "\"First Born, First Lost\"",
+      "baseline": "Eerstgeboren, Eerstgevallen",
+      "theirs": "\"Eerstgeboren, Eerst Verloren\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J172",
+      "english": "\"First Born, First Lost\"",
+      "baseline": "Eerstgeboren, Eerst Verloren",
+      "theirs": "\"Eerstgeboren, Eerst Verloren\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J174",
+      "english": "\"A Study in Laziness\"",
+      "baseline": "Een Studie in Luiheid",
+      "theirs": "\"Een Studie in Luiheid\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J176",
+      "english": "\"Boredom is Freedom, is Eternity\"",
+      "baseline": "Verveling is Vrijheid, is Eeuwigheid",
+      "theirs": "\"Verveling is Vrijheid, is Eeuwigheid\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J208",
+      "english": "I think this here bar is missin' the somethin' special that makes it worth comin' to.",
+      "baseline": "k Denk dadde deze kroeg hier nog dat speciaal iets mist dat het de moeite waard maakt om langs te komen, héé.",
+      "theirs": "'k Denk dadde deze kroeg hier nog dat speciaal iets mist dat het de moeite waard maakt om langs te komen, héé."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J221",
+      "english": "\"Home is where the Herd is\"",
+      "baseline": "Thuis is waar de Kudde is",
+      "theirs": "\"Thuis is waar de Kudde is\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J224",
+      "english": "\"Happy Watering Hole Opening\"",
+      "baseline": "Prettige Opening van de Drinkplaats",
+      "theirs": "\"Fijne Opening van de Drinkplaats\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J227",
+      "english": "\"Untitled No. 8\"",
+      "baseline": "Naamloos Nr. 8",
+      "theirs": "\"Naamloos Nr. 8\""
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J241",
+      "english": "Oh Thirsty, you finally opened your bar!",
+      "baseline": "Oesje, Zatlap, je hebt eindelijk je kroeg geopend!",
+      "theirs": "Oesje, Beschonken, je hebt eindelijk je kroeg geopend!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J249",
+      "english": "It's a damn shame the others aren't here.",
+      "baseline": "t Is godverdoemme zonde dadde de rest er nie bij is, héé.",
+      "theirs": "'t Is godverdoemme zonde dadde de rest er nie bij is, héé."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J255",
+      "english": "Hello everyb-b-body...",
+      "baseline": "Hallo allemaal-b-b-b...",
+      "theirs": "Hallo allem-m-maal..."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J263",
+      "english": "Hard, why have you let him into the Territory?",
+      "baseline": "Bikkelharde, waarom heb je hem het Territorium binnengelaten?",
+      "theirs": "Bikkelharde Ezel, waarom heb je hem het Territorium binnengelaten?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J265",
+      "english": "Oh b-b-boy... do you want the short version or the long version?",
+      "baseline": "Oh b-b-boy... willen jullie de korte versie of de lange versie?",
+      "theirs": "Oh jee... willen jullie de korte versie of de lange versie?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J289",
+      "english": "If you can b-believe it—I, surp-prisingly, won Ass of the Week!",
+      "baseline": "Als je het kunt b-b-geloven—ík, tot mijn eigen verb-b-bazing, heb-b Ezel v/d Week gewonnen!",
+      "theirs": "Als je het kunt b-b-geloven—ík, tot mijn eigen verb-b-bazing, heb-b Ezel van de Week gewonnen!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J293",
+      "english": "Two Humans in b-black p-put our Comrades in a Truck-Machine.",
+      "baseline": "Twee Mensen in het zwart hebben onze Kameraden in een Camion Machine ges-s-stopt.",
+      "theirs": "Twee Mensen in het zwart hebben onze Kameraden in een Camion-Machine ges-s-stopt."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J296",
+      "english": "That's where the Truck-Machine stop-ped.",
+      "baseline": "Daar is de Camion Machine gestop-pt.",
+      "theirs": "Daar is de Camion-Machine gestop-pt."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J298",
+      "english": "The others are in deep-p troub-b-b-b-b-ble!",
+      "baseline": "De anderen zitten in diepe p-p-prob-b-blemen!",
+      "theirs": "De anderen zitten in diepe p-prob-b-blemen!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J340",
+      "english": "I refuse to leave my Foal and our Territory unprotected.",
+      "baseline": "Ik weiger mijn Veulentje en ons Territorium onbeschermd achter te laten.",
+      "theirs": "Ik weiger om mijn Veulentje en ons Territorium onbeschermd achter te laten."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J343",
+      "english": "I will NEVER trust Machines.",
+      "baseline": "Ik zal NOOIT Machines vertrouwen.",
+      "theirs": "Ik zal Machines NOOIT vertrouwen."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J18",
+      "english": "{color=yellow}{s=5}♪  hee haw hi hon 'ee ah he a'w ♪{/color}",
+      "baseline": "{color=yellow}{s=5}♪ hie haa hie hon 'ie aah he ahn ♪{/color}",
+      "theirs": "{color=yellow}{s=5}♪ hie haa hi hon 'ie aah he ahn ♪{/color}"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding1_localization",
+      "cell": "J10",
+      "english": "@#$%&! We're NOT AT THE ZOO ANYMORE!",
+      "baseline": "@#$%&! We zitten NIET MEER IN DE ZOO, hè!",
+      "theirs": "@#$%&! We zitten NIET MEER IN DE DIERENTUIN, hè!"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding1_localization",
+      "cell": "J13",
+      "english": "Slow Ass wasn't in the Truck-Machine when we got here—",
+      "baseline": "Slome Ezel zat niet in de Camion Machine toen we hier aankwamen—",
+      "theirs": "Slome Ezel zat niet in de Camion-Machine toen we hier aankwamen—"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding1_localization",
+      "cell": "J16",
+      "english": "Maybe he's still stuck in the Truck-Machine.",
+      "baseline": "Misschien zit hij nog vast in de Camion Machine.",
+      "theirs": "Misschien zit hij nog vast in de Camion-Machine."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_ShippingTwo_localization",
+      "cell": "J4",
+      "english": "*ksch*—Attention all workers. We have a Code 455.",
+      "baseline": "*ksch*—Aandacht alle medewerkers. We hebben een Code 455.",
+      "theirs": "*tsj*—Aandacht alle medewerkers. We hebben een Code 455."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_ShippingTwo_localization",
+      "cell": "J6",
+      "english": "If found, use of force is permitted—*ksh*",
+      "baseline": "Indien aangetroffen, is het gebruik van geweld toegestaan—*ksh*",
+      "theirs": "Indien aangetroffen, is het gebruik van geweld toegestaan—*tsj*"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_ShippingTwo_localization",
+      "cell": "J9",
+      "english": "*ksch*—Help! The donkeys are free! THEY ARE ESCAPING!",
+      "baseline": "*ksch*—Help! De ezels zijn los! ZE ONTSNAPPEN!",
+      "theirs": "*tsj*—Help! De ezels zijn los! ZE ONTSNAPPEN!"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_ShippingTwo_localization",
+      "cell": "J11",
+      "english": "Ayyyyyyyy—*ksh*",
+      "baseline": "Ayyyyyyyy—*ksh*",
+      "theirs": "Ayyyyyyyy—*tsj*"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Skinning_localization",
+      "cell": "J6",
+      "english": "We've got to turn off this Death-Machine.",
+      "baseline": "We moeten die Machine des Doods uitschakelen.",
+      "theirs": "We moeten die Dood-Machine uitschakelen."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Skinning_localization",
+      "cell": "J23",
+      "english": "*ksh*—Greetings employees.",
+      "baseline": "*ksh*—Goedendag werknemers.",
+      "theirs": "*tsj*—Goedendag werknemers."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Skinning_localization",
+      "cell": "J26",
+      "english": "There will be cake.*ksh*",
+      "baseline": "Er zal taart zijn.*ksh*",
+      "theirs": "Er zal taart zijn.*tsj*"
+    },
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_TheGods_localization",
+      "cell": "J18",
+      "english": "Ass Power!",
+      "baseline": "Ezelkracht!",
+      "theirs": "Ezels Eerst!"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J9",
+      "english": "Uncle Bad—Cole... is being a donkey such a terrible thing?",
+      "baseline": "Oom Stoere—Piet... is het zo erg om een ezel te zijn?",
+      "theirs": "Nonkel Stoere—Piet... is het zo erg om een ezel te zijn?"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J43",
+      "english": "Your Uncle Bad is an Ass, not an evil, soul-less, child-killing Machine.",
+      "baseline": "Je Oom Stoere is een Ezel, niet een slechte, zielloze, kind-dodende Machine.",
+      "theirs": "Je Nonkel Stoere is een Ezel, niet een slechte, zielloze, kind-dodende Machine."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J75",
+      "english": "When in reality, the Gods transformed me into a donkey.",
+      "baseline": "Terwijl in werkelijkheid DE GODEN mij in nen Ezel hadden veranderd.",
+      "theirs": "Terwijl in werkelijkheid de Goden mij in nen Ezel hadden veranderd."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J14",
+      "english": "This is my Uncle. He's a Machine too!",
+      "baseline": "Dit is mijn nonkel. Hij is ook een Machine!",
+      "theirs": "Dit is mijn Nonkel. Hij is ook een Machine!"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J70",
+      "english": "As the Prophet you shall go down in History as the first Prophet-Machine.",
+      "baseline": "Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profetische Machine.",
+      "theirs": "Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profeet-Machine."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J71",
+      "english": "As the Prophet you shall go down in History as the first Prophet-Machine.",
+      "baseline": "Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profetische Machine.",
+      "theirs": "Als de Profeet zult gij de Geschiedenis ingaan als de eerste Profeet-Machine."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J94",
+      "english": "Aunty Sick—Golden—Gods, can I fly on the Winds of Revolution, too?",
+      "baseline": "Tante Snot—Gouden—Goden, mag ik ook op de Winden van de Revolutie vliegen?",
+      "theirs": "Tante Snot—Gouden—Goden, mag ik ook op de Winden der Revolutie vliegen?"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J116",
+      "english": "Climb upon us and let us fly on the Winds of Revolution!",
+      "baseline": "Klim op onze rug en laat ons vliegen op de Wind der Revolutie!",
+      "theirs": "Klim op onze rug en laat ons vliegen op de Winden der Revolutie!"
+    }
+  ],
+  "agreed": [
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J6",
+      "english": "Mecha's Government building has been overrun by donkeys.",
+      "baseline": "Het regeringsgebouw van Mechalen is overrompeld door ezels.",
+      "value": "Het regeringsgebouw van Technopolis is overrompeld door ezels."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J81",
+      "english": "But Mecha's citizens are not like the others. They value science, progress, and reason.",
+      "baseline": "Maar de burgers van Mechalen zijn niet zoals de rest. Die hechten waarde aan wetenschap, vooruitgang, en rede.",
+      "value": "Maar de burgers van Technopolis zijn niet zoals de rest. Die hechten waarde aan wetenschap, vooruitgang, en rede."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J83",
+      "english": "If you tell me your demands, I will relay them to the citizens of Mecha in their own language.",
+      "baseline": "Als ge mij uw eisen vertelt, kameraden, dan geef 'k die door aan de burgers van Mechalen — in hun eigen taal.",
+      "value": "Als ge mij uw eisen vertelt, kameraden, dan geef 'k die door aan de burgers van Technopolis — in hun eigen taal."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J28",
+      "english": "People of Mecha.",
+      "baseline": "Kameraden van Mechalen.",
+      "value": "Kameraden van Technopolis."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J30",
+      "english": "When you think of Mecha—what do you think of?",
+      "baseline": "Als ge aan Mechalen denkt—waar denkt ge dan aan?",
+      "value": "Als ge aan Technopolis denkt—waar denkt ge dan aan?"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J33",
+      "english": "But what do you think these donkeys think of when they think of Mecha?",
+      "baseline": "Maar wa denkt ge dat die Ezels denken als ze aan Mechalen denken?",
+      "value": "Maar wa denkt ge dat die Ezels denken als ze aan Technopolis denken?"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J44",
+      "english": "And you are not happy about their occupation because you do not see them as equals to the citizens of Mecha.",
+      "baseline": "En ge zijt niet content over hun bezetting omdat ge die Ezels niet als gelijken ziet van de burgers van Mechalen.",
+      "value": "En ge zijt niet content over hun bezetting omdat ge die Ezels niet als gelijken ziet van de burgers van Technopolis."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J93",
+      "english": "And I'm Mme. Derriere—Mecha's most philanthropic and generous employer.",
+      "baseline": "En ik ben Mevr. Derrière—de meest filantropische en genereuze werkgever van Mechalen.",
+      "value": "En ik ben Mevr. Derrière—de meest filantropische en genereuze werkgever van Technopolis."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J3",
+      "english": "*ksh* Welcome back listeners to Mecha in the Morning!",
+      "baseline": "*tsj* Beste luisteraars, welkom terug bij Mechalen Morgen!",
+      "value": "*tsj* Beste luisteraars, welkom terug bij Technopolis Morgen!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J4",
+      "english": "We're here with Mecha City's most philanthropic and generous employer Mme. Derriere.",
+      "baseline": "We zijn hier met de grootste en meest filantropische werkgever in Mechalen: Mevrouw Derrière.",
+      "value": "We zijn hier met de grootste en meest filantropische werkgever in Technopolis: Mevrouw Derrière."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_RedFields_localization",
+      "cell": "J7",
+      "english": "Happy Ass",
+      "baseline": "Happy Ezel",
+      "value": "Blije Ezel"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleButte_localization",
+      "cell": "J3",
+      "english": "Hard Ass",
+      "baseline": "Bikkeharde Ezel",
+      "value": "Bikkelharde Ezel"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J43",
+      "english": "Slow Ass should stay behind and sing the Song of Ascension for Trusty.",
+      "baseline": "Slome Ezel moet achterblijven en het ezelenhemelvaartszangderzielen aan Trouwe Ezel voordragen.",
+      "value": "Slome Ezel moet achterblijven en het Hemelvaarts-zang-der-Ezel-zielen aan Trouwe Ezel voordragen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_LazysGrave_localization",
+      "cell": "J21",
+      "english": "I could try to sing the Song of Ascension for you now!",
+      "baseline": "Ik kan het ezelenhemelvaartszangderzielen voor u proberen zingen!",
+      "value": "Ik kan het Hemelvaarts-zang-der-Ezel-zielen voor u proberen zingen!"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J27",
+      "english": "Mecha City's most benevolent benefactor, Mme. Derriere!",
+      "baseline": "De meest welvarende weldoener van Mechalen, Mevr. Derrière!",
+      "value": "De meest welvarende weldoener van Technopolis, Mevr. Derrière!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_BadCave_localization",
+      "cell": "J35",
+      "english": "Mecha City.",
+      "baseline": "Mechalen.",
+      "value": "Technopolis."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J33",
+      "english": "Maybe I should leave and get a job in Mecha City...",
+      "baseline": "Misschien moet ik gewoon vertrekken en een baan zoeken in Mechalen...",
+      "value": "Misschien moet ik gewoon vertrekken en een baan zoeken in Technopolis..."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J39",
+      "english": "I never made it to Mecha City...",
+      "baseline": "Ik heb Mechalen nooit gehaald...",
+      "value": "Ik heb Technopolis nooit gehaald..."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J33",
+      "english": "Which way should we go?",
+      "baseline": "Welke weg moeten we nemen, Kameraad?",
+      "value": "Welke weg moeten we nemen?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J63",
+      "english": "The structure lacks integrity and we can't fit through the door.",
+      "baseline": "De structuur mist elke integriteit en we passen niet door die deur, Kameraad.",
+      "value": "De structuur mist elke integriteit en we passen niet door die deur."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J74",
+      "english": "Is everything all right in there? Do you need any help?",
+      "baseline": "Is alles in orde daarbinnen? Heb je hulp nodig, kameraad?",
+      "value": "Is alles in orde daarbinnen? Heb je hulp nodig?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J135",
+      "english": "What should I call this?",
+      "baseline": "Hoe zou ik dit noemen, kameraad?",
+      "value": "Hoe zou ik dit noemen?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J183",
+      "english": "Sad, this Memorial Garden is coming along beautifully.",
+      "baseline": "Triestige, dit Herdenkingstuintje wordt echt prachtig, Kameraad.",
+      "value": "Triestige, dit Herdenkingstuintje wordt echt prachtig."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J262",
+      "english": "Help? We don't help traitors.",
+      "baseline": "Helpen? Wij helpen geen verraders, Kameraad.",
+      "value": "Helpen? Wij helpen geen verraders."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigBattle_localization",
+      "cell": "J13",
+      "english": "I have a Masters in Business Administration from Mecha University.",
+      "baseline": "Ik heb een Master in Business Administration van de Universiteit van Mechalen.",
+      "value": "Ik heb een Master in Business Administration van de Universiteit van Technopolis."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J5",
+      "english": "I can finally go to Mecha City!",
+      "baseline": "'k Kan eindelijk naar Mechalen!",
+      "value": "'k Kan eindelijk naar Technopolis!"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J18",
+      "english": "Are you going to Mecha City now...?",
+      "baseline": "Ga je nu naar Mechalen...?",
+      "value": "Ga je nu naar Technopolis...?"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J23",
+      "english": "But I want to see Mecha City too! We can go together!",
+      "baseline": "Maar ik wil Mechalen ook zien! We kunnen samen gaan!",
+      "value": "Maar ik wil Technopolis ook zien! We kunnen samen gaan!"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J86",
+      "english": "Can the first stop be Mecha City?",
+      "baseline": "Kan de eerste stop Mechalen zijn?",
+      "value": "Kan de eerste stop Technopolis zijn?"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J99",
+      "english": "I'll see you in Mecha City.",
+      "baseline": "'k Zie u in Mechalen.",
+      "value": "'k Zie u in Technopolis."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J109",
+      "english": "Will you come with me to Mecha City?",
+      "baseline": "Wil je met mij mee naar Mechalen?",
+      "value": "Wil je met mij mee naar Technopolis?"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J137",
+      "english": "I'll come find you in Mecha.",
+      "baseline": "'k Kom u zoeken in Mechalen.",
+      "value": "'k Kom u zoeken in Technopolis."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J150",
+      "english": "I'm going to Mecha City.",
+      "baseline": "'k Ga naar Mechalen.",
+      "value": "'k Ga naar Technopolis."
+    }
+  ],
+  "conflicts": [
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J12",
+      "english": "Up next, the #2 song on Mecha's Top 40! asi9 by David Mesiha.",
+      "baseline": "En dan nu, de nummer 2 op Mechalens Top 40! van David Mesiha.",
+      "ours": "En dan nu, de nummer 2 op Technopolis' Top 40! van David Mesiha.",
+      "theirs": "En dan nu, de nummer 2 op Technopolis' Top 40! \"ezel8ig\" van David Mesiha."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J69",
+      "english": "Mecha's Parliament is a place of democracy!",
+      "baseline": "Het parlement van Mechalen is een plek van democratie!",
+      "ours": "Het parlement van Technopolis is een plek van democratie!",
+      "theirs": "Het Parlement van Technopolis is een plek van democratie!"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J74",
+      "english": "Mecha's citizens are rational beings!",
+      "baseline": "De burgers van Mechalen zijn rationele wezens!",
+      "ours": "De burgers van Technopolis zijn rationele wezens!",
+      "theirs": "Het Parlement van Technopolis is een plek van democratie!"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Sad_localization",
+      "cell": "J4",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_FarmHouseInt_localization",
+      "cell": "J20",
+      "english": "If you need a place to take the kids, get your butts to the Mecha City Zoo, or see the new show at the Big City Circus!",
+      "baseline": "Mocht je een plek zoeken om met je familie heen te gaan, rep je achterwerk naar de zoo van Mechalen! Of ga naar de nieuwe show in het stadscircus!",
+      "ours": "Mocht je een plek zoeken om met je familie heen te gaan, rep je achterwerk naar de zoo van Technopolis! Of ga naar de nieuwe show in het stadscircus!",
+      "theirs": "Als je een leuke plek zoekt voor je familie, ga naar de Dierentuin van Technopolis! Of bezoek de nieuwe show in het Stadscircus!"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J82",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J88",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J91",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J47",
+      "english": "Someone has to sing the Song of Ascension to make sure his Ass Soul can reach the Astral Plane and be reassigned.",
+      "baseline": "Iemand moet het ezelenhemelvaartszangderzielen zingen zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen.",
+      "ours": "Iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen.",
+      "theirs": "Zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen, iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J48",
+      "english": "*whimper*",
+      "baseline": "*boe-hoe-hoe-hoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "Herdenk met Triestige Ezel over al wat er verloren is gegaan."
+    },
+    {
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J49",
+      "english": "*whimper*",
+      "baseline": "*boe-hoe-hoe-hoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_Confession_localization",
+      "cell": "J3",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J24",
+      "english": "Not the Stable too!—",
+      "baseline": "Niet de Stal!-",
+      "ours": "Niet de Stal ook!—",
+      "theirs": "Niet de Stal!—"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J25",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J29",
+      "english": "*whimper*",
+      "baseline": "*boehoehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J42",
+      "english": "And I'll sing the Song of Ascension for Trusty.",
+      "baseline": "En ik zal de Ezelenhemelvaartszangderzielen voor Trouwe zingen.",
+      "ours": "En ik zal het Hemelvaarts-zang-der-Ezel-zielen voor Trouwe zingen.",
+      "theirs": "En de Hemelvaarts-zang-der-Ezel-zielen zal ik voor Trouwe zingen."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J7",
+      "english": "June 27th\\nThese are dire times for the mining business. I had to lay off more workers today and we're running out of money. Mme. Derriere made another offer to buy my donkeys, but I just can't bring myself to sell them. The only thing I can depend on are my donkeys!\\n\\nEverybody is crazy for Green Energy these days. Nobody cares for coal anymore.\\n\\nJune 28th\\nEven if I had more money, there's no one to hire. All the youth are leaving for Mecha City to find better paid work at Mme. Derriere's Factory. It's going to be another difficult winter.",
+      "baseline": "27 juni\\nDit zijn barre tijden voor de mijnbouw. 'k Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn ezels, maar 'k kan ze gewoon niet verkopen. Het enige waar ik op kan rekenen zijn mijn ezels!\\n\\nIedereen is tegenwoordig zot van Groene Energie. Niemand geeft nog om kolen.\\n\\n28 juni\\nZelfs al had ik meer geld, er is niemand om aan te werven. Al de jongeren trekken naar Mechalen om beter betaald werk te vinden in de Fabriek van Mevr. Derrière. Het wordt weer een moeilijke winter.",
+      "ours": "27 juni\\nDit zijn barre tijden voor de mijnbouw. 'k Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn ezels, maar 'k kan ze gewoon niet verkopen. Het enige waar ik op kan rekenen zijn mijn ezels!\\n\\nIedereen is tegenwoordig zot van Groene Energie. Niemand geeft nog om kolen.\\n\\n28 juni\\nZelfs al had ik meer geld, er is niemand om aan te werven. Al de jongeren trekken naar Technopolis om beter betaald werk te vinden in de Fabriek van Mevr. Derrière. Het wordt weer een moeilijke winter.",
+      "theirs": "27 juni\\nDit zijn barre tijden voor de mijnbouw. Ik Heb vandaag weer meer werkvolk moeten ontslaan en we raken door ons geld. Mevr. Derrière heeft weer een bod gedaan op mijn ezels, maar ik kan ze gewoon niet verkopen. Het enige waar ik op kan rekenen zijn mijn ezels!\\n\\nIedereen is tegenwoordig zot van Groene Energie. Niemand geeft nog om kolen.\\n\\n28 juni\\nZelfs al had ik meer geld, er is niemand om aan te werven. Al de jongeren trekken naar Technopolis om beter betaald werk te vinden in de Fabriek van Mevr. Derrière. Het wordt weer een moeilijke winter."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J17",
+      "english": "Child artist Joey Kulan charms the pants off the judges and wins the Bumpkin regional drawing competition for youth 12 and under. His work will be on display at the Mecha City Gallery until the end of the month. His Grandmother is so proud.",
+      "baseline": "Kinderkunstenaar Luukse Vermeulen charmeert de jury en wint de regionale tekenwedstrijd van Klotegem voor kinderen 12 jaar en jonger. Zijn werk zal te zien zijn in het Stadsmuseum van Mechalen tot het einde van de maand. Zijn Grootmoeder is erg trots.",
+      "ours": "Kinderkunstenaar Luukse Vermeulen charmeert de jury en wint de regionale tekenwedstrijd van Klotegem voor kinderen 12 jaar en jonger. Zijn werk zal te zien zijn in het Stadsmuseum van Technopolis tot het einde van de maand. Zijn Grootmoeder is erg trots.",
+      "theirs": "IK HOOP DAT MIJN KUNST MENSEN GELUKKIG MAAKT"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_200_localization",
+      "cell": "J4",
+      "english": "July 24th\\nButte Mine is officially for sale. I'm praying that someone from Mecha City will step up and buy it. I always imagined that Cole would take my place, but...\\n\\nThis place has to survive, somehow, but it's hard to let go of what you love.",
+      "baseline": "24 juli\\nVanscheetvelde Kolen & Industrie staat officieel te koop. 'k hoop dat iemand van Mechalen het zal kopen. 'k Had altijd gedacht dat Piet mijn plaats zou innemen, maar...\\n\\nDeze plek moet overleven, op één of andere manier, maar 't is moeilijk om los te laten wat ge graag ziet.",
+      "ours": "24 juli\\nVanscheetvelde Kolen & Industrie staat officieel te koop. 'k hoop dat iemand van Technopolis het zal kopen. 'k Had altijd gedacht dat Piet mijn plaats zou innemen, maar...\\n\\nDeze plek moet overleven, op één of andere manier, maar 't is moeilijk om los te laten wat ge graag ziet.",
+      "theirs": "24 juli\\nVanscheetvelde Kolen & Industrie staat officieel te koop. Ik hoop dat iemand van Technopolis het zal kopen. Ik Had altijd gedacht dat Piet mijn plaats zou innemen, maar...\\n\\nDeze plek moet overleven, op één of andere manier, maar het is moeilijk om los te laten wat ge graag ziet."
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J16",
+      "english": "Do you want to watch me play Rocks, Uncle Sad?",
+      "baseline": "Wil je kijken naar mijn Stenen-spel, Nonkel Triestigaard?",
+      "ours": "Wil je kijken naar mijn Keien-spel, Nonkel Triestigaard?",
+      "theirs": "Wil je kijken naar mijn Stenen-spel, Nonkel Triestige?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J82",
+      "english": "I’d call it... Bottoms Up!",
+      "baseline": "Ik zou 't noemen... Poepegaatje!",
+      "ours": "Ik zou 't noemen... De Zatten Ezel!",
+      "theirs": "Ik zou 't noemen... De Zatten Ezel Cafe!"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J85",
+      "english": "Uncle Kick, Uncle Hard, do you want to watch me play Rocks?",
+      "baseline": "Nonkel Hoef, Nonkel Stoer, willen jullie kijken naar mijn Stenen-spel?",
+      "ours": "Nonkel Hoef, Nonkel Stoer, willen jullie kijken naar mijn Keien-spel?",
+      "theirs": "Nonkel Stamp, Nonkel Bikkelharde, willen jullie kijken naar mijn Stenen-spel?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J120",
+      "english": "Will you watch me play Rocks, Uncle Slow?",
+      "baseline": "Wil je kijken naar mijn Stenen-spel, Oom Sloom?",
+      "ours": "Wil je kijken naar mijn Keien-spel, Oom Sloom?",
+      "theirs": "Wil je kijken naar mijn Stenen-spel, Nonkel Slome?"
+    },
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J138",
+      "english": "But Hard Ass says he hasn't seen any Humans for weeks.",
+      "baseline": "Maar Bikkeharde zegt dat hij al weken geen Mensen heeft gezien.",
+      "ours": "Maar Bikkelharde zegt dat hij al weken geen Mensen heeft gezien.",
+      "theirs": "Maar Bikkelharde Ezel zegt dat hij al weken geen Mensen heeft gezien."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_Exit_localization",
+      "cell": "J12",
+      "english": "*whimper* Take care, Comrade.",
+      "baseline": "*boehoehoe* Het ga je goed, Kameraad.",
+      "ours": "*Boe-hoe-hoe* Het ga je goed, Kameraad.",
+      "theirs": "*boe-hoe-hoe* Het ga je goed, Kameraad."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_Exit_localization",
+      "cell": "J13",
+      "english": "*whimper*",
+      "baseline": "*boehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J16",
+      "english": "*whimper*",
+      "baseline": "*boehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J214",
+      "english": "*whimper*",
+      "baseline": "*boe-hoe-hoe-hoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J14",
+      "english": "Uncle Hard can't abandon his post.",
+      "baseline": "Oom Bikkehard kan zijn post niet verlaten, Kameraad.",
+      "ours": "Oom Bikkelharde kan zijn post niet verlaten.",
+      "theirs": "Nonkel Bikkelharde kan zijn post niet verlaten, Kameraad."
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J79",
+      "english": "Ohh... I just remembered I promised Uncle Bad Ass we'd play Rocks!",
+      "baseline": "Ohh... ik herinner me net dat ik Oom Stoere Ezel beloofd heb dat we Stenen-spel zouden spelen!",
+      "ours": "Ohh... ik herinner me net dat ik Oom Stoere Ezel beloofd heb dat we Keien-spel zouden spelen!",
+      "theirs": "Ohh... ik herinner me net dat ik Nonkel Stoere Ezel beloofd heb dat we Stenen-spel zouden spelen!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J196",
+      "english": "Tonight, The Bottoms Up Bar is finally openin'!",
+      "baseline": "Vanavond gaat 't \"Poepegaatje\"  eindelijk open, héé!",
+      "ours": "Vanavond gaat 't \"De Zatten Ezel\"  eindelijk open, héé!",
+      "theirs": "Vanavond gaat De Zatten Ezel Cafe eindelijk open, héé!"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J219",
+      "english": "What's the perfect title to commemorate the opening of Bottoms Up?",
+      "baseline": "Wat is nu de perfecte titel om de opening van Bottoms Up te vieren, Kameraad?",
+      "ours": "Wat is nu de perfecte titel om de opening van Bottoms Up te vieren?",
+      "theirs": "Wat is nu de perfecte titel om de opening van De Zatten Ezel te vieren, Kameraad?"
+    },
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J339",
+      "english": "Sturdy, will you come with us? P-p-please?",
+      "baseline": "Stevige, kom je met ons mee? P-p-please... alsjebbblieft?",
+      "ours": "Stevige, kom je met ons mee? P-p-p-alsjeblieft?",
+      "theirs": "Stevige, kom je met ons mee? Alsjeb-b-blieft?"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigJob_localization",
+      "cell": "J35",
+      "english": "And your Soul will be stuck here... *whimper*",
+      "baseline": "En je Ziel zal hier vastzitten... *boehoehoe*",
+      "ours": "En je Ziel zal hier vastzitten... *Boe-hoe-hoe*",
+      "theirs": "En je Ziel zal hier vastzitten... *boe-hoe-hoe*"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Chilling_localization",
+      "cell": "J4",
+      "english": "*whimper*",
+      "baseline": "*boehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_CityStreet_localization",
+      "cell": "J5",
+      "english": "*whimper*",
+      "baseline": "*boehoehoe*",
+      "ours": "*Boe-hoe-hoe*",
+      "theirs": "*boe-hoe-hoe*"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding3_localization",
+      "cell": "J6",
+      "english": "Never fear, we have a provision of shared responsibility for singing the Song of Ascension for the Asses who go before us.",
+      "baseline": "Vrees niet, wij zingen trots het ezelenhemelvaartszangderzielen voor de Ezels die ons zijn voorgegaan, dat is onze belofte.",
+      "ours": "Vrees niet, wij zingen trots het Hemelvaarts-zang-der-Ezel-zielen voor de Ezels die ons zijn voorgegaan, dat is onze belofte.",
+      "theirs": "Vrees niet, wij zingen trots het Hemelvaarts-zang-der-Ezel-zielen voor de Ezels die ons zijn voorgegaan."
+    }
+  ]
+}

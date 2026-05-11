@@ -1,0 +1,20 @@
+{
+  "corrections": [
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J10",
+      "english": "They've been—TRYING TO RETURN—to Fannyside ever since the Fire.",
+      "current_nl": "De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilegem, sinds de Brand.",
+      "proposed_nl": "De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilenbeek, sinds de Brand."
+    },
+    {
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J63",
+      "english": "Golly. Leave Fannyside? But this is our home. I can't just leave!",
+      "current_nl": "Oesje. Weg van Muilegem verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!",
+      "proposed_nl": "Oesje. Weg van Muilenbeek verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!"
+    }
+  ]
+}
