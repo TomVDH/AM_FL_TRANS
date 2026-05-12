@@ -1236,3 +1236,49 @@ Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereld
 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 1 cell**.
+
+## 🎯 E10 Push — universal sweep (26 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E10_Hard_localization | J44 | Thirsty Ass | `…naar onze Boerderij…` | `…naar onze Hoeve…` | §3.6 |
+| E10_Government_localization | J6 | Radio Host Marcos | `…overrompeld door ezels.` | `…overrompeld door Ezels.` | §7.1 |
+| E10_Government_localization | J23 | Golden Ass | `…van uw kaliber ontmoeten!` | `…van Uw kaliber ontmoeten!` | §7.4 |
+| E10_Government_localization | J25 | Edgy Ass | `Da kan nie...` | `Da kan niet...` | §2 |
+| E10_Government_localization | J61 | Golden Ass | `Verspreid u, Vazallen.` | `Verspreid U, Vazallen.` | §7.4 |
+| E10_Government_localization | J65 | Golden Ass | `Nadat gij uw Manifest…` | `Nadat gij Uw Manifest…` | §7.4 |
+| E10_Government_localization | J93 | Golden Ass | `Spreid u uit, Vazallen.` | `Spreid U uit, Vazallen.` | §7.4 |
+| E10_Government_localization | J97 | Golden Ass | `Nadat gij uw Manifest…` | `Nadat gij Uw Manifest…` | §7.4 |
+| E10_Government_localization | J145 | Big Ass | `…achtergelaten, Kameraad.` | `…achtergelaten.` | §12.1 |
+| E10_Government_localization | J148 | Bleak Ass | `Tank Machines... Vlieg Machines...` | `Tank-Machines... Vlieg-Machines...` | §8.2 |
+| E10_Government_localization | J163 | Helpful Ass | `Ge gaat nie geloven…` | `Ge gaat niet geloven…` | §2 |
+| E10_Government_localization | J169 | Helpful Ass | `Dus 'k heb nen job gevonden…` | `Dus 'k heb een job gevonden…` | pre-staged (article normalization) |
+| E10_Government_localization | J172 | Helpful Ass | `…ge gaat 't nie geloven…` | `…ge gaat 't niet geloven…` | §2 |
+| E10_Government_localization | J179 | Helpful Ass | `'k Wou ook nie omgekapt…` | `'k Wou ook niet omgekapt…` | §2 |
+| E10_Government_localization | J182 | Helpful Ass | `…en ge gaat 't nie geloven…` | `…en ge gaat 't niet geloven…` | §2 |
+| E10_Government_localization | J252 | Golden Ass | `…om u tot de mensen te wenden?` | `…om U tot de mensen te wenden?` | §7.4 |
+| E10_Government_localization | J269 | Golden Ass | `Gij moogt u bij ons voegen…` | `Gij moogt U bij ons voegen…` | §7.4 |
+| E10_Government_localization | J270 | Golden Ass | `Gij moogt u bij ons voegen…` | `Gij moogt U bij ons voegen…` | §7.4 |
+| E10_ProphetSpeech_localization | J6 | Golden Ass | `Mogen uw volgelingen…als uw eerste heilige Mis.` | `Mogen Uw volgelingen…als Uw eerste heilige Mis.` | §7.4 |
+| E10_ProphetSpeech_localization | J109 | Big Ass | `EZELKRACHT!` | `EZELS EERST!` | §14.1 (pre-staged) |
+| E10_ProphetSpeech_localization | J111 | Hard Ass | `EZELKRACHT!` | `EZELS EERST!` | §14.1 (pre-staged) |
+| E10_Epilogue_localization | J20 | Cole-Machine | `De volgende Boerderij…` | `De volgende Hoeve…` | §3.6 |
+| E10_Epilogue_localization | J33 | {$NewName} | `De volgende Boerderij…` | `De volgende Hoeve…` | §3.6 |
+| E10_Credits_localization | J73 | (107) Peek Ass | `Constat-ezel` | `Constat-Ezel` | §7.1 |
+| E10_Credits_localization | J74 | (108) Blunt Ass | `Groffe ezel` | `Groffe Ezel` | §7.1 |
+| E10_Credits_localization | J116 | (41) ASS POWER | `EZELSKRACHT` | `EZELS EERST` | §14.1 (pre-staged) |
+
+### Verify-only (no edit)
+- `E10_Hard_localization` J21 The Masses: `Stop niet met drukken!` — negated imperative, EN ↔ NL register match.
+- `E10_Government_localization` J167 / J169-headword / J176 Helpful Ass: lowercase `job` (in-character anecdote, not game-system); kept lowercase per EN-co-authoritative rule (EN has lowercase "job"). J169 also pre-staged article fix `nen → een` (article normalization, pushed in this batch).
+- `E10_Government_localization` J232 Speaker 23: `Stop met Ezels af te schilderen…` — EN starts with "Stop" imperative; NL mirrors directly.
+
+### Tooling
+- `scripts/editorial/e10_sweep_scan.py` (E9 ruleset unchanged; ProphetSpeech §7.4 GoldenAss + §14.1 slogan retirement + §3.6 Boerderij→Hoeve primary focus)
+
+### Push breakdown
+- 22 sweep cells applied via corrections JSON.
+- 4 pre-staged cells (already in local from prior session, pushed in this batch): J109/J111 ProphetSpeech, J116 Credits (all §14.1 slogan retcon), J169 Government (article normalization).
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 26 cells**.
