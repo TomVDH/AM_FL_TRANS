@@ -966,3 +966,138 @@ Each section below records a single push event with per-cell context:
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 8 cells.**
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 2026-05-12 — E5 push (23 cells across 3 sub-tabs, 3 pushes)
+**Batch files:** `data/editorial/corrections/2026-05-11-master.json` (3 cells Circusdirecteur lc — Push 1, later reverted) + ad-hoc Push 2 sweep (19 cells) + ad-hoc Push 3 revert (6 cells)
+**File:** `5_asses.masses_E5Proxy.xlsx`
+
+### Push 1 — Circusdirecteur lc retcon (3 cells) — LATER REVERSED
+
+**[E5-001] E5_CircusMain J45 · Smart Ass · §7.2 + §18 (REVERSED)**
+- Wanneer de Circusdirecteur mijn routine ziet kondigt ie meteen een Wereldtournee aan! → Wanneer de circusdirecteur mijn routine ziet kondigt ie meteen een wereldtournee aan!
+- *Rule:* §7.2 + §18 lc retcon (2026-05-11). **REVERSED in Push 3** — Tom 2026-05-12 locks `Circusdirecteur` + `Wereldtournee` cap-always.
+
+**[E5-002] E5_CircusMain J121 · Big Ass · §7.2 (REVERSED)**
+- Uw duet met de Circusdirecteur ontroerde me! → Uw duet met de circusdirecteur ontroerde me!
+- *Rule:* §7.2 lc retcon. **REVERSED in Push 3.**
+
+**[E5-003] E5_CircusMain J221 · Melvin · §7.2 (REVERSED)**
+- Wacht, wat als die vieze Circusdirecteur met onze voeten speelt? → Wacht, wat als die vieze circusdirecteur met onze voeten speelt?
+- *Rule:* §7.2 lc retcon. **REVERSED in Push 3.**
+
+### Push 2 — universal sweep (19 cells)
+
+**[E5-004] E5_CircusMain J21 · Ringmaster Rico · §6.10**
+- Alle actes van vanavond zullen het visuele spektakel, het gevaar, het lef van de acte tevoren overtreffen! → Alle Nummers van vanavond zullen het visuele spektakel, het gevaar, het lef van het Nummer tevoren overtreffen!
+- *Rule:* §6.10 acte/actes → Nummer/Nummers (cap, full form) + article shift `de acte` → `het Nummer` (neuter).
+
+**[E5-005] E5_CircusMain J25 · Ringmaster Rico · §6.16**
+- Het is verdorie hun job! → Het is verdorie hun Job!
+- *Rule:* §6.16 job→Job (game-system context, Ringmaster on circus performers' assigned Jobs).
+
+**[E5-006] E5_CircusMain J26 · Ringmaster Rico · §6.16**
+- En over jobs gesproken, we zouden hier vanavond niet staan zonder de steun van onze sponsor... → En over Jobs gesproken, we zouden hier vanavond niet staan zonder de steun van onze sponsor...
+- *Rule:* §6.16 jobs→Jobs (continues J25 game-system context).
+
+**[E5-007] E5_CircusMain J73 · Ringmaster Rico · §6.10**
+- Nee, wacht! Ik beloof dat onze volgende actes de moeite waard zijn! → Nee, wacht! Ik beloof dat onze volgende Nummers de moeite waard zijn!
+- *Rule:* §6.10 actes→Nummers.
+
+**[E5-008] E5_CircusMain J132 · Kick Ass · §6.16**
+- Ge hebt gelijk — dit is de BESTE job — die we ooit hebben gehad! → Ge hebt gelijk — dit is de BESTE Job — die we ooit hebben gehad!
+- *Rule:* §6.16 job→Job (game-system — Kick Ass on circus Job).
+
+**[E5-009] E5_CircusMain J167 · Slow Ass · §6.12**
+- *puf puf* Ik z-z-zweet al zo nijg, gewoon van d-d-de adrenaline... → *puf puf* Ik z-z-zweet al zo fel, gewoon van d-d-de adrenaline...
+- *Rule:* §6.12 nijg→fel.
+
+**[E5-010] E5_CircusMain J168 · Smart Ass · §7.2 + §18 (Tournee component REVERSED)**
+- De Circusdirecteur kan het niet veroorloven van je telkens nieuwe kostuums te kopen voordat we op Tournee gaan. → De circusdirecteur kan het niet veroorloven van je telkens nieuwe kostuums te kopen voordat we op tournee gaan.
+- *Rule:* §7.2 + §18 lc retcon. **REVERSED in Push 3** — both `Circusdirecteur` and `Tournee` re-capped per cap-always lock.
+
+**[E5-011] E5_CircusMain J176 · Slow Ass · §6.12**
+- *puf puf* Ik z-z-zweet al zo nijg, gewoon van d-d-de adrenaline... → *puf puf* Ik z-z-zweet al zo fel, gewoon van d-d-de adrenaline...
+- *Rule:* §6.12 nijg→fel (duplicate of J167).
+
+**[E5-012] E5_CircusMain J177 · Smart Ass · §7.2 + §18 (REVERSED)**
+- De Circusdirecteur kan het niet veroorloven van je telkens nieuwe kostuums te kopen voordat we op Tournee gaan. → De circusdirecteur kan het niet veroorloven van je telkens nieuwe kostuums te kopen voordat we op tournee gaan.
+- *Rule:* Duplicate of J168. **REVERSED in Push 3.**
+
+**[E5-013] E5_CircusMain J195 · Ringmaster Rico · §10.1**
+- Ik ga er geen doekjes rond winden, mensen. Dat kon beter. → Ik ga er geen doekjes om winden, mensen. Dat kon beter.
+- *Rule:* §10.1 `doekjes rond winden` → `doekjes om winden` (idiom — Patrick flagged).
+
+**[E5-014] E5_CircusMain J215 · Wedgie · §7.1**
+- Waar zit de laatste ezel? → Waar zit de laatste Ezel?
+- *Rule:* §7.1 Ezel cap.
+
+**[E5-015] E5_CircusMain J217 · Ringmaster Rico · §7.1**
+- Mijn show heeft meer robots dan ezels in goedkope kostuums nodig als ik de zaal met wat anders dan marginalen wil opvullen. → Mijn show heeft meer robots dan Ezels in goedkope kostuums nodig als ik de zaal met wat anders dan marginalen wil opvullen.
+- *Rule:* §7.1 ezels→Ezels. (`robots` left lowercase — no §7 Robot cap rule.)
+
+**[E5-016] E5_CircusMain J218 · Ringmaster Rico · §7.1**
+- Het is niet persoonlijk, ezeltje. → Het is niet persoonlijk, Ezeltje.
+- *Rule:* §7.1 ezeltje→Ezeltje.
+
+**[E5-017] E5_CircusMain J220 · Wedgie · §7.1**
+- Kom, ezel. De camion in. → Kom, Ezel. De camion in.
+- *Rule:* §7.1 ezel→Ezel.
+
+**[E5-018] E5_CircusMain J245 · Derriere · §6.16**
+- Ze verdienden betekenisvolle jobs! → Ze verdienden betekenisvolle Jobs!
+- *Rule:* §6.16 jobs→Jobs (game-system — donkeys' assigned Jobs).
+
+**[E5-019] E5_ZooMain J120 · Sad Ass · §6.16**
+- Dat ik met een nieuwe job in een nieuwe plek... aan een nieuwe start kon beginnen. → Dat ik met een nieuwe Job in een nieuwe plek... aan een nieuwe start kon beginnen.
+- *Rule:* §6.16 job→Job (game-system — Sad Ass dreams of a new assigned Job).
+
+**[E5-020] E5_ZooMain J224 · Grandma Kulan · §7.1**
+- Danku ezeltje! → Danku Ezeltje!
+- *Rule:* §7.1 ezeltje→Ezeltje.
+
+**[E5-021] E5_ZooCapture J30 · Wedgie · §7.1**
+- Dit de ezels? → Dit de Ezels?
+- *Rule:* §7.1 ezels→Ezels.
+
+**[E5-022] E5_ZooCapture J33 · Zookeeper Rose · §7.1**
+- Het spijt me ezeltjes. → Het spijt me Ezeltjes.
+- *Rule:* §7.1 ezeltjes→Ezeltjes.
+
+### Push 3 — §7.2 cap-everywhere revert (6 cells)
+
+Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereldtournee` / bare `Tournee`. All three are cap-always proper nouns (game-system circus terms, parallel to Ezel/Job).
+
+**[E5-023] E5_CircusMain J45 · Smart Ass · §7.2 revert**
+- Wanneer de circusdirecteur mijn routine ziet kondigt ie meteen een wereldtournee aan! → Wanneer de Circusdirecteur mijn routine ziet kondigt ie meteen een Wereldtournee aan!
+
+**[E5-024] E5_CircusMain J58 · Smart Ass · §7.2 revert (also new cap fix)**
+- Wanneer de circusdirecteur mijn routine ziet kondigt ie meteen een wereldtournee aan! → Wanneer de Circusdirecteur mijn routine ziet kondigt ie meteen een Wereldtournee aan!
+- *Note:* J58 was on remote as lc (model for the now-reversed §18 retcon). New cap-always fix.
+
+**[E5-025] E5_CircusMain J121 · Big Ass · §7.2 revert**
+- Uw duet met de circusdirecteur ontroerde me! → Uw duet met de Circusdirecteur ontroerde me!
+
+**[E5-026] E5_CircusMain J168 · Smart Ass · §7.2 revert**
+- De circusdirecteur kan het niet veroorloven ... voordat we op tournee gaan. → De Circusdirecteur kan het niet veroorloven ... voordat we op Tournee gaan.
+
+**[E5-027] E5_CircusMain J177 · Smart Ass · §7.2 revert**
+- De circusdirecteur kan het niet veroorloven ... voordat we op tournee gaan. → De Circusdirecteur kan het niet veroorloven ... voordat we op Tournee gaan.
+
+**[E5-028] E5_CircusMain J221 · Melvin · §7.2 revert**
+- Wacht, wat als die vieze circusdirecteur met onze voeten speelt? → Wacht, wat als die vieze Circusdirecteur met onze voeten speelt?
+
+### Sweep notes
+- **§6.16 J106 + J131 (E5_CircusMain Smart Ass):** EN `Finding another job with no Machines isn't going to be easy.` left lowercase `job` — identical wording to E5_ZooMain J199/J208 stay-lc exception; same speaker (Smart Ass), same generic-reclaim theme. Canon §6.16 exception list extended to include J106 + J131.
+- **§7.2 reversal:** 2026-05-11 retcon (lc mid-sentence for Circusdirecteur, lc Wereldtournee) **REVERSED 2026-05-12** by Tom. Both terms are cap-always proper nouns. Bare `Tournee` (without Wereld- prefix) also caps by extension. Canon §7.2 + §18 updated to reflect reversal.
+- **J78 `TOURNEE` (all-caps):** Kept as-is — mirrors EN `THE TOUR?` all-caps emphasis convention. Not a cap-vs-lc question.
+- **§5.4 Stop imperative (J128, J76):** Both left as-is — `Stop` reads natural as informal imperative loanword in Smart Ass / Slow Ass register.
+- **E5_Highway J15:** Already capped on remote — `Wat zei ik je! Jobs!` (no action needed; canon §6.16 sweep list entry was stale).
+- **E5_CircusMain J38 `acteur`:** False-positive substring match — `acteur` (actor) is a different word from `acte`/`actes`, correctly bounded by regex `\b` in scanner.
+
+### Tooling
+- New scanner `scripts/editorial/e5_sweep_scan.py` (copy of e4 + 5 patterns: §6.10 Acte, §6.12 Nijg, §10.1 doekjes rond, §18 Wereldtournee, §7.2 Circusdirecteur drift). Speaker extraction switched from col B (Description) to col A (Key suffix) for accuracy.
+- New helper `scripts/editorial/e5_apply_sweep.py` for Push 2 batch write.
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 23 cells** (all 3 pushes combined).
+

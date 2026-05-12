@@ -369,9 +369,9 @@ Codex bump v3.4 → v3.5 needed.
 - **Status:** ⏳ 1 cell ready (E1_TheProtest J130 Smart Ass, EN=Plan).
 
 ### 6.10 Nummer vs acte (E5 Circus)
-- **Canonical:** `Nummer` (full form). Standardize one term across boards + Ringmaster speech.
-- **Decided:** 2026-05-10.
-- **Status:** ⏳ 7 cells.
+- **Canonical:** `Nummer` / `Nummers` (full form, **capitalized** mid-sentence — proper noun for game-system circus-act unit).
+- **Decided:** 2026-05-10. Cap rendering confirmed 2026-05-12 (Tom — parallel to §7.2 Circusdirecteur cap-always lock).
+- **Status:** ✅ 2 cells (E5_CircusMain J21 + J73) — 3 word instances applied 2026-05-12.
 
 ### 6.11 Jansen (E6) per-speaker — ✅ TOM LOCKED 2026-05-10 + 2026-05-11
 - **E6_BattleHard J8** (Thirsty Ass): `gulle`.
@@ -382,7 +382,7 @@ Codex bump v3.4 → v3.5 needed.
 ### 6.12 Nijg (E5) — replacement
 - **Canonical:** `fel`.
 - **Decided:** 2026-05-10 (Decision 3).
-- **Status:** ⏳ 2 cells (E5_CircusMain J167, J176).
+- **Status:** ✅ 2 cells (E5_CircusMain J167, J176) — applied 2026-05-12.
 
 ### 6.13 DJ welcome rephrase — ✅ TOM LOCKED 2026-05-11
 - **E4_AstralPlaneMain J221 (DJ Dope Ass):**
@@ -411,7 +411,7 @@ Codex bump v3.4 → v3.5 needed.
 - **Sweep scope (~22 cells):**
   - 2 `Beroepen` → `Jobs` (E3_Mine1F J49 + J136, both game-system context)
   - ~18 lowercase `job/jobs` → `Job/Jobs` when game-system context (E1 J94, E2_World_A1 J58, E2_BadAssRescue J5, E4_HerdSplits J32, E5_Highway J15, E5_CircusMain J25/J26/J106/J131/J132/J245, E5_ZooMain J120, E7_Opening J5, E10_Government J167 + J176, E0_Questions J43)
-  - **Stay lowercase (post-uprising new-context):** E10_Government J169 (Old Ass new forestry job), E5_ZooMain J199 + J208 ("finding another job without Machines"), **E2_World_A1 J58 + E2_BadAssRescue J5** (Bad Ass "get your jobs back" — generic reclaim-work reading, not game-system; Tom 2026-05-11), **E4_HerdSplits J32** (Smart Ass `we get our JOBS BACK` — same generic reclaim-work pattern as Bad Ass cells above; Tom 2026-05-12)
+  - **Stay lowercase (post-uprising new-context):** E10_Government J169 (Old Ass new forestry job), E5_ZooMain J199 + J208 ("finding another job without Machines"), **E2_World_A1 J58 + E2_BadAssRescue J5** (Bad Ass "get your jobs back" — generic reclaim-work reading, not game-system; Tom 2026-05-11), **E4_HerdSplits J32** (Smart Ass `we get our JOBS BACK` — same generic reclaim-work pattern as Bad Ass cells above; Tom 2026-05-12), **E5_CircusMain J106 + J131** (Smart Ass `Finding another job with no Machines isn't going to be easy.` — identical wording to E5_ZooMain J199/J208 stay-lc exception; same speaker + same generic-reclaim theme; Tom 2026-05-12)
   - **Idiomatic `beroep doen op` (untouched):** E10_ProphetSpeech J29 + J39
 - **Bundled fix at E10_Government J169 (Old Ass):**
   - **EN:** `So I got a job working in the forestry business.`
@@ -433,9 +433,10 @@ Codex bump v3.4 → v3.5 needed.
 - **Decided:** 2026-05-10 (cap everywhere lock).
 - **Status:** ⏳ ~70 drift cells corpus-wide. E1 batches partially done.
 
-### 7.2 Circusdirecteur as title
-- **Cap when title before name** (`Circusdirecteur Baptiste`).
-- **Lowercase mid-sentence** as common noun.
+### 7.2 Circusdirecteur — cap everywhere — ✅ TOM LOCKED 2026-05-12 (reversal)
+- **Rule:** Capitalize `Circusdirecteur` mid-sentence — proper noun (game-system circus title, parallel to Ezel/Job).
+- **Also applies:** `Wereldtournee` (game-system tour name) and bare `Tournee` (extends from the compound).
+- **Earlier 2026-05-11 retcon** (lc mid-sentence; matches J58 model) **REVERSED 2026-05-12** by Tom — all 6 affected E5_CircusMain cells re-capped (J45/J58/J121/J168/J177/J221, plus Wereldtournee J45/J58 and Tournee J168/J177).
 
 ### 7.3 Game-systemic terms — ALL CAP — ✅ TOM LOCKED 2026-05-11 (option i)
 - **Rule:** Game-systemic terms (races, factions, groups, mechanics, world-concepts) are **always capped** as proper nouns. Applies to dialogue + narrative + diary + UI text.
@@ -910,8 +911,8 @@ Keep these so the next session knows what's been reversed.
 | `Wat is je respons?` (E2 J17 UI) | `Wat is je reactie?` | 2026-05-11 (Tom) |
 | `Beroep/Beroepen` (game-system) | `Job/Jobs` (capped per §6.16) | 2026-05-11 (Tom) |
 | `nen job` (Old Ass J169) | `een job` (codex `articleRule: een only`) | 2026-05-11 (Tom) |
-| `Wereldtournee` (E5 J45 cap) | `wereldtournee` (matches J58, not a proper noun) | 2026-05-11 (Tom — §7.2 implication) |
-| `Circusdirecteur` mid-sentence (J45/J121/J221) | `circusdirecteur` (cap only as title before name) | 2026-05-11 (Tom) |
+| ~~`Wereldtournee` (E5 J45 cap) → `wereldtournee`~~ | **REVERSED 2026-05-12** — `Wereldtournee` cap-always per §7.2 lock (proper noun, game-system tour name) | 2026-05-11 → 2026-05-12 (Tom) |
+| ~~`Circusdirecteur` mid-sentence (J45/J121/J221) → `circusdirecteur`~~ | **REVERSED 2026-05-12** — `Circusdirecteur` cap-always per §7.2 lock; bare `Tournee` also caps (J168/J177) | 2026-05-11 → 2026-05-12 (Tom) |
 | `EZEL MACHT` / `EZELKRACHT` / `EZELSKRACHT` | `EZELS EERST` (4 cells) | 2026-05-11 (sweep ready) |
 | `herverkoren` / `opnieuw toegewezen` (4 cells) | `Heraanstelling kan ondergaan` / `heraangesteld worden` | 2026-05-11 (Tom) |
 | E1_Stable2F J47 (drops "Reassignment") | `Iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen zodat zijn Ziel in het Astrale Hiernamaals heraangesteld kan worden.` | 2026-05-11 (Tom locked) |
@@ -932,7 +933,7 @@ Keep these so the next session knows what's been reversed.
 | **E2** | ✅ **COMPLETE 2026-05-11** — Push: 20 cells (BattleMiner J6/J11/J13/J14/J17; MinersHouse J3/J5/J8/J9; World_A1/A2/B1/B2 J7 sign typos; World_A2 J4/J6/J8 narrative-arc; World_B2 J4 MIJN-ONGEVAL; hoogmoderne→piekfijne ×3). Sweep: 0 actionable — §2/§7.1/§3.6/§6.17(UI false pos)/§12.1(EN-justified)/§4.4(exception) all clean; §6.16 J58+J5 confirmed lowercase (generic context). Round-trip: 0 diffs. | ✅ Done |
 | **E3** | ✅ **COMPLETE 2026-05-12** — Push 1: 4 staged (BadCave J5/J6 Foal je→jij flip + `jij` cap; 100 J5 `Ik mag` per §9.6; Mine1F J41 Plee). Push 2 sweep: 14 cells Mine1F (§2 ×10: J17/19/31/33/42/45/67/72/75/78/84 + J75 §5.4 Zegt + §3.1 ×2 J79/J136 Muilenbeek + §6.16 ×2 J49 reword Jobs/J136). Push 3: BadCave §2 ×5 (J20/21/22/26/35 + J35 §7.1). Push 4: LazysGrave §2 ×3 (J8/17/25). Push 5: E3_100 J7/J10/J11/J16 (§9.2 Ik [Cap] artifact, §7.1 Ezels, §8.2 Boor-Machine, §3.4.1 Imechelda Algemeen Ziekenhuis). Push 6: E3_200 J3 (§9.2+§7.1+§3.6+§3.1 combined). Push 7: E3_300 J3 (§7.1) + E3_DonkeyBas J17 (§7.1). Total: 33 cells. Round-trip: 0 diffs. | ✅ Done |
 | **E4** | ✅ **COMPLETE 2026-05-12** — Push 1: 5 cells (HerdSplits J62 Schoon Beest §4.4; KicksGoodbye J5 + AstralPlaneMain J89 heraangesteld §13.5; AstralPlaneMain J221 DJ welcome §6.13; Mine1F J23 EZELS EERST §14.1). Push 2: 3 sweep cells (HerdSplits J10/J63 Muilenbeek §3.1; AstralPlaneMain J127 HAW donkey nie→niet §2 + accent polish). Sweep: §6.16 J32 confirmed lowercase (Smart Ass parallel to E2 Bad Ass precedent — generic reclaim-work). Round-trip: 0 diffs. | ✅ Done |
-| **E5** | 3 cells: CircusMain J45/J121/J221 (Circusdirecteur cap fixes) | Push safety + push; universal sweep (Acte→Nummer ×7, Nijg→fel ×2, doekjes om winden ×1, Job cap ×9, Wereldtournee×1) |
+| **E5** | ✅ **COMPLETE 2026-05-12** — Push 1: 3 cells (CircusMain J45/J121/J221 Circusdirecteur lc retcon — LATER REVERSED in Push 3). Push 2: 19 cells universal sweep — CircusMain J21/J73 acte→Nummer §6.10; J25/J26 Ringmaster Rico Job cap §6.16; J132 Kick Ass Job §6.16; J167/J176 Slow Ass nijg→fel §6.12; J168/J177 Smart Ass Circusdirecteur+Tournee lc — LATER REVERSED in Push 3; J195 Ringmaster doekjes om winden §10.1; J215/J217/J218/J220 Ezel cap §7.1; J245 Derriere Jobs §6.16; ZooMain J120 Sad Ass Job §6.16; J224 Grandma Kulan Ezeltje §7.1; ZooCapture J30/J33 Wedgie+Zookeeper Rose Ezel §7.1. Push 3: 6 cells revert per §7.2 cap-everywhere lock — re-cap `Circusdirecteur` (J45/J58/J121/J168/J177/J221) + `Wereldtournee` (J45/J58) + bare `Tournee` (J168/J177). §6.16 exceptions added (Tom 2026-05-12): J106 + J131 (Smart Ass generic-reclaim, parallel to J199/J208). §18 reversed: Wereldtournee + Circusdirecteur retcons. Round-trip: 0 diffs / 23 cells. | ✅ Done |
 | **E6** | 11 cells: Nightmare J4/J5/J28/J40 (Jenny ge/gij); World J162/J163 (Muilenbeek), J164/J165 (Hoeve), J144/J145 (Trusty title revert); Stable2F J3 (heraangesteld) | Push safety + push; universal sweep (Jansen vars E6J8 gulle / E6J55 Kleine, Sturdy motto J142, Camion-Machine, Goden J160) |
 | **E7** | 0 | E7 universal sweep (Camion-Machine hyphen, Job cap) |
 | **E8** | 0 | E8 universal sweep (8 Gods cap U/Uw) |
