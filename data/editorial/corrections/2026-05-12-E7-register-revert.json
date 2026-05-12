@@ -1,0 +1,12 @@
+{
+  "corrections": [
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding2_localization",
+      "cell": "J18",
+      "english": "You're lucky, you still have some of your Herd. For now.",
+      "current_nl": "Je hebt geluk, je hebt nog een deel van je Kudde. Voorlopig dan toch.",
+      "proposed_nl": "Gij hebt geluk, gij hebt nog een deel van uw Kudde. Voorlopig dan toch."
+    }
+  ]
+}

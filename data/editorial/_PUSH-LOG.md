@@ -1184,18 +1184,21 @@ Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereld
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 8 cells**.
 
-## 🎯 E7 Push 2 — register fix (retro, 1 cell)
+## 🎯 E7 Push 2 — register retro tested + REVERTED (Q19 addendum)
 
-| Sheet | Cell | Speaker | Before | After | Rule |
+| Sheet | Cell | Speaker | Test push | Final state (after revert) | Rule |
 |---|---|---|---|---|---|
-| E7_Holding2_localization | J18 | Resentful Ass | `Gij hebt geluk, gij hebt nog een deel van uw Kudde. Voorlopig dan toch.` | `Je hebt geluk, je hebt nog een deel van je Kudde. Voorlopig dan toch.` | §1 / §5.0 / Q19 |
+| E7_Holding2_localization | J18 | Resentful Ass | tried `Je hebt geluk, je hebt nog een deel van je Kudde.` | **kept `Gij hebt geluk, gij hebt nog een deel van uw Kudde. Voorlopig dan toch.`** | Q19 addendum |
 
 ### Notes
-- Gap discovered post-E7-commit: scanner had no je/jij ↔ ge/gij register check (only §7.4 God-cap). Resentful Ass is je/jij + formal-address exception (Q19) — `gij` is forbidden for je/jij speakers in any context; formal exception allows `u/uw` only. EN ("You're lucky… For now.") is peer-to-peer sneer, not formal-context — fix lands on default je/jij, not formal u/uw exception.
-- TODO: extend e*_sweep_scan.py with register check (ge/gij speakers using je/jij/jou/jouw; je/jij speakers using gij/zijt/hebde) and retro-scan E0–E9.
+- Gap discovered post-E7-commit: scanner had no je/jij ↔ ge/gij register check (only §7.4 God-cap). Initial diagnosis: Resentful Ass je/jij default + formal-address exception → `gij` forbidden. Pushed `gij→je` fix.
+- Tom 2026-05-12 reversed: Resentful Ass cold/distant peer address keeps `gij`+`uw`. Canon Q19 amended — Resentful Ass now has three permitted modes: je/jij default, formal u/uw exception, cold-peer `gij`+`uw` exception.
+- Register scanner (when built) must NOT flag Resentful Ass `gij` use.
+- TODO retained: extend scanner with register check (ge/gij speakers using je/jij/jou/jouw; je/jij speakers using gij/zijt/hebde excluding Resentful Ass), then retro-scan E0–E9.
 
 ### Round-trip
-- Fresh xlsx-export pull vs local: **0 diffs / 1 cell** (`excels.fresh-pull-2026-05-12-e7-verify2/`).
+- Fwd push (gij→je) round-trip: **0 diffs** (`excels.fresh-pull-2026-05-12-e7-verify2/`).
+- Revert push (back to gij) round-trip: **0 diffs** (`excels.fresh-pull-2026-05-12-e7-verify3/`).
 
 ## 🎯 E8 Push — universal sweep (9 cells)
 
