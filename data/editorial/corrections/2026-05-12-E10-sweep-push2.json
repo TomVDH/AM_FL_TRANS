@@ -1,0 +1,28 @@
+{
+  "corrections": [
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J76",
+      "english": "They don't value us... You don't know what it's like.",
+      "current_nl": "Ze waarderen ons niet... Ge weet niet hoe dat is.",
+      "proposed_nl": "Ze waarderen ons niet... Je weet niet hoe dat is."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J158",
+      "english": "You heard what I said.",
+      "current_nl": "Ge hebt gehoord wat ik gezegd heb.",
+      "proposed_nl": "Je hebt gehoord wat ik gezegd heb."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J203",
+      "english": "Of course, Golden Ass, I don't mean to insult you if you enjoy it.",
+      "current_nl": "Natuurlijk, Gouden Ezel, ik wil u niet beledigen als ge dat graag hebt.",
+      "proposed_nl": "Natuurlijk, Gouden Ezel, ik wil u niet beledigen als je dat graag hebt."
+    }
+  ]
+}

@@ -1315,3 +1315,22 @@ Triggered by §23 audit of original E9 sweep: scanner §5.4 regex only matched `
 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 26 cells**.
+
+## 🎯 E10 Push 2 — register drift fixes (3 cells)
+
+Follow-up sweep after §16 ge/gij audit. All in `E10_Government_localization`.
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E10_Government_localization | J76 | Skinny Ass | `…Ge weet niet hoe dat is.` | `…Je weet niet hoe dat is.` | §5.0 (Skinny canon je/jij; `ge` = forbidden drift) |
+| E10_Government_localization | J158 | Gaunt Ass | `Ge hebt gehoord…` | `Je hebt gehoord…` | §5.0 (Gaunt canon je/jij; `ge` = forbidden drift) |
+| E10_Government_localization | J203 | Resentful Ass | `…ik wil u niet beledigen als ge dat graag hebt.` | `…ik wil u niet beledigen als je dat graag hebt.` | §5.0 + §5.1 (`u` kept = valid formal-Gods exception addressing Golden Ass; `ge` = drift, flipped) |
+
+### Canon update (no cell impact)
+- **Helpful Ass moved from je/jij stub → ge/gij locked 2026-05-12** (corpus-driven, Q8 partial revision). 30 cells in E10_Government are pure Flemish tussentaal (`Zijde gij`, `Zegt ze`, `Vertelt`, `Wil de 't`, `'k Ben/heb/Wou`, `weet ge`, `Merci da ge`, `da`/`wa da`, `nen`/`ne keer`, `dorpke`, `plezant`) with zero ABN markers. Canon §1 #9, §5.0 ge/gij table (count 11→12), and Q8 resolution updated.
+
+### Tooling
+- Supplementary scan: extended `e10_sweep_scan.py` ad-hoc with je/jij token scan + per-speaker register check against canon §5.0 membership tables.
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 3 cells**.
