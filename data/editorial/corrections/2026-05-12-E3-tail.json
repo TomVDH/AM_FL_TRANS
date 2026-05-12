@@ -1,0 +1,12 @@
+{
+  "corrections": [
+    {
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J15",
+      "english": "Boring Machine Blunder Begets Backlash for Big Boss Butte",
+      "current_nl": "Boormachine Blunder Brengt Baas Vanscheetvelde Brokken",
+      "proposed_nl": "Boor-Machine Blunder Brengt Baas Vanscheetvelde Brokken"
+    }
+  ]
+}

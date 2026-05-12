@@ -1337,3 +1337,14 @@ Follow-up sweep after §16 ge/gij audit. All in `E10_Government_localization`.
 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 3 cells**.
+
+## 🎯 E3 Push 8 (tail) — §8.2 headline hyphen (1 cell)
+
+Surfaced during E0–E9 methodical cleanliness scan. J16 article body had `Boor-Machine` correctly; J15 headline missed.
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E3_100_localization | J15 | (headline) | `Boormachine Blunder Brengt…` | `Boor-Machine Blunder Brengt…` | §8.2 |
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 1 cell**.
