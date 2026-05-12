@@ -1228,6 +1228,26 @@ Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereld
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 8 cells**.
 
+## 🎯 E9 Push 2 (tail) — §5.4 ge/gij imperative sweep (5 cells)
+
+Triggered by §23 audit of original E9 sweep: scanner §5.4 regex only matched `Stop`; manual re-scan across all ge/gij speakers caught 5 Cole-Machine bare-stem imperatives previously missed.
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E9_BadCave_localization | J34 | Cole-Machine | `Geef mij een minuutje.` | `Geeft mij een minuutje.` | §5.4 |
+| E9_BadCave_localization | J63 | Cole-Machine | `Stevige. Stop.` | `Stevige. Stopt.` | §5.4 |
+| E9_BadCave_localization | J64 | Cole-Machine | `Probeer de machine niet kapot…` | `Probeert de Machine niet kapot…` | §5.4 + §7.3 |
+| E9_BadCave_localization | J81 | Cole-Machine | `Luister Stevige.` | `Luistert Stevige.` | §5.4 |
+| E9_GoldenAss_localization | J135 | Cole-Machine | `Ga dan.` | `Gaat dan.` | §5.4 (`gaan` irregular) |
+
+### Verified clean (stem ends in -t, no doubling needed)
+- E9_GoldenAss J42 Hee `Wacht…`
+- E9_GoldenAss J92 / J142 Golden Ass `Laat ons vertrekken, Profeet.`
+- E9_GoldenAss J101 Cole-Machine `Laat uw Moeder niet in de steek.`
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 5 cells**.
+
 ## 🎯 E6 Push 4 (tail) — missed §13.3 cell (1 cell)
 
 | Sheet | Cell | Speaker | Before | After | Rule |

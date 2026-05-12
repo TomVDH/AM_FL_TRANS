@@ -1,0 +1,44 @@
+{
+  "corrections": [
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J34",
+      "english": "I'll run the initializer. Give me a minute.",
+      "current_nl": "'k Start de initializer op. Geef mij een minuutje.",
+      "proposed_nl": "'k Start de initializer op. Geeft mij een minuutje."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J63",
+      "english": "Sturdy. Stop.",
+      "current_nl": "Stevige. Stop.",
+      "proposed_nl": "Stevige. Stopt."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J64",
+      "english": "Do not try to break the Machine.",
+      "current_nl": "Probeer de machine niet kapot te maken.",
+      "proposed_nl": "Probeert de Machine niet kapot te maken."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J81",
+      "english": "Look Sturdy.",
+      "current_nl": "Luister Stevige.",
+      "proposed_nl": "Luistert Stevige."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J135",
+      "english": "Then go.",
+      "current_nl": "Ga dan.",
+      "proposed_nl": "Gaat dan."
+    }
+  ]
+}
