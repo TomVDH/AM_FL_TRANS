@@ -918,3 +918,51 @@ Each section below records a single push event with per-cell context:
 ### Round-trip
 - Final pull-snapshot vs local: **0 diffs** across all E3 sheets.
 
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 2026-05-12 — E4 push (8 cells across 4 sub-tabs)
+**Batch files:** `data/editorial/corrections/2026-05-11-master.json` (5 cells, E4 subset) + `data/editorial/corrections/2026-05-12-E4-sweep.json` (3 cells)
+**File:** `4_asses.masses_E4Proxy.xlsx`
+
+### Push 1 — master batch (5 cells)
+
+**[E4-001] E4_HerdSplits J62 · Thirsty Ass · §4.4**
+- Lieve Ezel → Schoon Beest
+- *Rule:* §4.4 exception — Thirsty's signature nickname for Nice Ass preserved.
+
+**[E4-002] E4_KicksGoodbye J5 · Kick Ass · §13.5**
+- ZIEL herverkoren wordt → ZIEL heraangesteld wordt
+- *Rule:* §13.5 Reassignment translation lock.
+
+**[E4-003] E4_AstralPlaneMain J89 · Tight Ass · §13.5**
+- herverkoren te worden → heraangesteld te worden
+- *Rule:* §13.5 Reassignment translation lock.
+
+**[E4-004] E4_AstralPlaneMain J221 · DJ Dope Ass · §6.13**
+- BEDANKT VOOR BUITEN TE KOMEN VOOR MIJN SET!! → MERCI VOOR NAAR MIJN SET TE KOMEN!!!
+- *Rule:* §6.13 DJ welcome rephrase (drops Anglicism `voor buiten te komen`; adopts Flemish `Merci` + `voor [te-infinitive]`; triple `!` matches DJ energy).
+
+**[E4-005] E4_Mine1F J23 · Sturdy Ass (Old Ass repeater) · §14.1**
+- EZEL MACHT! → EZELS EERST!
+- *Rule:* §14.1 slogan canonical form.
+
+### Push 2 — universal sweep (3 cells)
+
+**[E4-006] E4_HerdSplits J10 · Kick Ass · §3.1**
+- terug te komen naar Muilebeek, sinds de Brand → terug te komen naar Muilenbeek, sinds de Brand
+- *Rule:* §3.1 Muilebeek → Muilenbeek (corpus-wide lock).
+
+**[E4-007] E4_HerdSplits J63 · Nice Ass · §3.1**
+- Weg van Muilebeek verhuizen? → Weg van Muilenbeek verhuizen?
+- *Rule:* §3.1 Muilebeek → Muilenbeek (corpus-wide lock).
+
+**[E4-008] E4_AstralPlaneMain J127 · HAW donkey · §2 + accent polish**
+- ik moet van Mensen nie hebben omdat mijn famille neergekogelt hebben van hun helikokters → ik moet van Mensen niet hebben omdat ze myn famille neergekogelt hebben van hun helikolopters
+- *Rule:* §2 universal `niet`; added `ze` subject pronoun + accent distortions (`mijn → myn`, `helikokters → helikolopters`) per Tom 2026-05-12. EN distortions (`hayte`, `thehr`, `helicoptahs`) preserved in NL equivalents.
+
+### Sweep notes
+- **E4_HerdSplits J32 (Smart Ass):** EN `we get our JOBS BACK` left lowercase `jobs` — parallel to E2 Bad Ass precedent (canon §6.16 generic reclaim-work reading, not game-system). Canon updated to add J32 to stay-lowercase exception list.
+- **E4_HerdSplits J62:** false-positive flag (Schoon Beest is the locked §4.4 exception, just pushed in Push 1).
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 8 cells.**
+

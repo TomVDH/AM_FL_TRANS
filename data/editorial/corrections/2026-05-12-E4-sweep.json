@@ -1,0 +1,42 @@
+{
+    "_meta": {
+        "compiled": "2026-05-12",
+        "scope": "E4 universal sweep findings (post-master batch). 3 cells.",
+        "actual_count": 3
+    },
+    "corrections": [
+        {
+            "id": "E4-HerdSplits-J10",
+            "file": "4_asses.masses_E4Proxy.xlsx",
+            "sheet": "E4_HerdSplits_localization",
+            "cell": "J10",
+            "speaker": "Kick Ass",
+            "english": "They've been—TRYING TO RETURN—to Fannyside ever since the Fire.",
+            "current_nl": "De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilebeek, sinds de Brand.",
+            "proposed_nl": "De Mensen komen terug — OF PROBEREN TOCH — terug te komen naar Muilenbeek, sinds de Brand.",
+            "rule_id": "canon-3.1 — Muilebeek → Muilenbeek (corpus-wide lock)"
+        },
+        {
+            "id": "E4-HerdSplits-J63",
+            "file": "4_asses.masses_E4Proxy.xlsx",
+            "sheet": "E4_HerdSplits_localization",
+            "cell": "J63",
+            "speaker": "Nice Ass",
+            "english": "Golly. Leave Fannyside? But this is our home. I can't just leave!",
+            "current_nl": "Oesje. Weg van Muilebeek verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!",
+            "proposed_nl": "Oesje. Weg van Muilenbeek verhuizen? Maar 't is onze thuis. Ik kan niet zomaar weg gaan!",
+            "rule_id": "canon-3.1 — Muilebeek → Muilenbeek (corpus-wide lock)"
+        },
+        {
+            "id": "E4-AstralPlaneMain-J127",
+            "file": "4_asses.masses_E4Proxy.xlsx",
+            "sheet": "E4_AstralPlaneMain_localization",
+            "cell": "J127",
+            "speaker": "HAW donkey (anti-Human group, talking with Sick)",
+            "english": "G'day mate! Crikey, I hayte Humans cuz they shot me and family from thehr helicoptahs.",
+            "current_nl": "Goeiendag maatje! Gadver, ik moet van Mensen nie hebben omdat mijn famille neergekogelt hebben van hun helikokters!",
+            "proposed_nl": "Goeiendag maatje! Gadver, ik moet van Mensen niet hebben omdat ze myn famille neergekogelt hebben van hun helikolopters!",
+            "rule_id": "canon-2 — nie → niet (universal); plus accent-distortion polish (added ze subject; mijn → myn; helikokters → helikolopters) per Tom 2026-05-12"
+        }
+    ]
+}
