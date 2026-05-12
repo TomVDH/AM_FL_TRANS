@@ -815,7 +815,7 @@ Examples from 2026-05-11:
 |---|---|---|
 | ~~Q1~~ | ~~E3 Foal register flip~~ — **RESOLVED 2026-05-11 (option C per-scene)**:<br>• **E3_LazysGrave J8, J17** — keep `gij`/`uw` (Foal addressing dead uncle's bones — formal/grief register, parallel to Sad's "uw Nonkel" exception)<br>• **E3_BadCave J5, J6** — flip to je/jij (`Ben je dat?` — intimate, scared moment with Lazy)<br>• J25, J20: nie→niet only (no register issue, handled by §2)<br>• J18: Bad Ass speaking (NOT Foal) — ge/gij stays. | E3 batch ✅ |
 | ~~Q2~~ | ~~`Oom Bikkelhard` (E6_World J9)~~ — **RESOLVED 2026-05-11**: live cell already canonical (`Nonkel Bikkelharde` — Nonkel per §6.2 + terminal -e per §4). No action. | 1 cell ✅ |
-| ~~Q3~~ | ~~E0_Questions player register~~ — **RESOLVED 2026-05-11**: normalize to je/jij (matches 17/18 existing cells + Foal's je/jij side). Fixes:<br>• Row 27 `Bent u…uw baan…uw functie…uw werkplek` → `Heb je…je job…je functie…je werkplek` (register + `baan→job` per §6.16 generic context)<br>• Rows 6, 7 `Diegene` → `Degenen` (plural form)<br>~3 cells total. | E0 batch ✅ |
+| ~~Q3~~ | ~~E0_Questions player register~~ — **RESOLVED 2026-05-11**: normalize to je/jij (matches 17/18 existing cells + Foal's je/jij side). Fixes:<br>• Row 27 `Bent u…uw baan…uw functie…uw werkplek` → `Heb je…je job…je functie…je werkplek` (register + `baan→job` per §6.16 generic context)<br>• Rows 6, 7 `Diegene` → `Diegenen` (plural form — direct pluralisation of demonstrative)<br>~3 cells total. | E0 batch ✅ |
 | ~~Q4~~ | ~~DJ Dope Ass codex entry~~ — **RESOLVED 2026-05-11: je/jij + jullie per corpus (J222, J223).** Add to codex v3.5. | §1 codex sync ✅ |
 | Q5 | E11 NonCSV signs (52 cells) — **DEFERRED 2026-05-11**: handle in separate later session. Critical backlog flagged. | E11 scope ⏸️ |
 | ~~Q6~~ | ~~E4_HerdSplits J62: Thirsty `Schoon Beest` restoration~~ — **RESOLVED 2026-05-11:** `Schoon Beest, wat gaat gij doen, héé?` (replaces `Lieve Ezel`). | §4.4 ✅ |
@@ -923,7 +923,7 @@ Keep these so the next session knows what's been reversed.
 
 | Episode | Locally-applied today | To do in next per-episode chat |
 |---|---|---|
-| **E0** | 5 cells: CharacterProfiles J50 (Officieel), J52 (Vervallen); E0_Questions J6/J7 (Degenen), J27 (register+baan→job) | Push safety + push; then universal sweep (Ezel cap if any, etc.) |
+| **E0** | ✅ **COMPLETE 2026-05-12** — Push 1: 5 cells (CharacterProfiles J50/J52; E0_Questions J6/J7/J27). Push 2: 19 cells universal sweep (E0_Questions J43 job→Job §6.16; J67/68/69/70/73/74/75/76/83/84/87/93/95/96/97/101/105/108 Ezel cap §7.1; J74 hebbem→hebben typo). Round-trip: 0 diffs. | ✅ Done |
 | **E1** | 4 cells: E1_Farm J7 (sign typos), E1_TheProtest J6 (zuiden norm), E1_Stable2F J47 (rewrite), E1_Farm J25 (Thirsty niet) — plus 16 pushed previously | Push safety + push; universal sweep (nie→niet, Ezel cap) |
 | **E2** | 20 cells: BattleMiner J6/J11/J13/J14/J17 (Jenny+SCHUP+reactie+!); MinersHouse J3/J5/J8/J9 (Jenny ge/gij); World_A1/A2/B1/B2 J7 (sign typos); World_A2 J4/J6/J8 (narrative-arc); World_B2 J4 (incident→MIJN-ONGEVAL); hoogmoderne→piekfijne ×3 — plus 41 pushed previously | Push safety + push; universal sweep |
 | **E3** | 4 cells: E3_BadCave J5/J6 (Foal je/jij), E3_100 J5 (Ik mag), E3_Mine1F J41 (Plee) | Push safety + push; universal sweep (nie→niet ~19, Ezel cap ~8, Muilenbeek ×3, Boerderij ×1, Beroep→Jobs ×2, Ik [Cap] artifact ×3, etc.) |

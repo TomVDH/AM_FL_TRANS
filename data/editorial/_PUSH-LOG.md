@@ -455,3 +455,169 @@ Each section below records a single push event with per-cell context:
 - **Was (pre-push):** De Erfgoedshoeve
 - **Pushed:** De Erfgoedstal
 - *Rule:* Mistranslation: Erfgoedshoeve → Erfgoedstal (Heritage Stable)
+
+---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🎯 E0 push 1 — locally-applied batch (5 cells)
+**Pushed:** 2026-05-12
+**File:** `0_asses.masses_Manager+Intermissions+E0Proxy.xlsx`
+**Cells:** 5
+
+### CharacterProfiles_localization (2 cells)
+
+**[E0-001] J50 · Official Sign**
+- **EN:** Official Sign
+- **Was:** Officiëel Bord
+- **Pushed:** Officieel Bord
+- *Rule:* §15.6F — modern Dutch spelling (no umlaut on Officieel)
+
+**[E0-002] J52 · Decrepit Sign**
+- **EN:** Decrepit Sign
+- **Was:** Verlept Bord
+- **Pushed:** Vervallen Bord
+- *Rule:* §15.6F — Decrepit ≠ withered (Verlept); Vervallen = correct
+
+### E0_Questions_localization (3 cells)
+
+**[E0-003] J6 · (player choice)**
+- **EN:** Those who stay with the herd
+- **Was:** Diegene die bij de Kudde blijven
+- **Pushed:** Diegenen die bij de Kudde blijven
+- *Rule:* Q3 — Diegene → Diegenen (direct plural of demonstrative); Kudde capped §7.3
+
+**[E0-004] J7 · (player choice)**
+- **EN:** Those who step away from the herd
+- **Was:** Diegene die zich van de Kudde afscheiden
+- **Pushed:** Diegenen die zich van de Kudde afscheiden
+- *Rule:* Q3 — Diegene → Diegenen; Kudde capped §7.3
+
+**[E0-005] J27 · (player question)**
+- **EN:** Have you ever lost your job because your role became redundant in the workplace?
+- **Was:** Bent u ooit uw baan verloren omdat uw functie overbodig werd op uw werkplek?
+- **Pushed:** Heb je ooit je job verloren omdat je functie overbodig werd op je werkplek?
+- *Rule:* Q3 — register normalised to je/jij; baan → job (generic context §6.16 lowercase)
+
+---
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🎯 E0 push 2 — universal sweep (19 cells)
+**Pushed:** 2026-05-12
+**File:** `0_asses.masses_Manager+Intermissions+E0Proxy.xlsx`
+**Cells:** 19
+
+### E0_Questions_localization (19 cells)
+
+**[E0-006] J43 · (player question)**
+- **EN:** Do you miss the job?
+- **Was:** Mis je de job?
+- **Pushed:** Mis je de Job?
+- *Rule:* §6.16 — game-system Job context (onboarding quiz re player's old donkey-Job)
+
+**[E0-007] J67 · (quiz — Balaam)**
+- **EN:** In the Old Testament, a human named Balaam is hitting his ass when all of a sudden:
+- **Was:** In het Oude Testament slaat een mens genaamd Balaam op zijn ezel wanneer plots:
+- **Pushed:** In het Oude Testament slaat een mens genaamd Balaam op zijn Ezel wanneer plots:
+- *Rule:* §7.1 — Ezel always capped (species proper noun, quiz text included)
+
+**[E0-008] J68 · (quiz answer — Balaam)**
+- **EN:** Balaam beats the ass to death and has to find another one to do his work for him
+- **Was:** Balaam slaat de ezel dood en moet een andere zoeken om het werk voor hem te doen
+- **Pushed:** Balaam slaat de Ezel dood en moet een andere zoeken om het werk voor hem te doen
+- *Rule:* §7.1
+
+**[E0-009] J69 · (quiz answer — Balaam)**
+- **EN:** God gives the ass the ability to speak and the ass begs Balaam to spare them
+- **Was:** God geeft de ezel het vermogen om te spreken en de ezel smeekt Balaam om hem te sparen
+- **Pushed:** God geeft de Ezel het vermogen om te spreken en de Ezel smeekt Balaam om hem te sparen
+- *Rule:* §7.1
+
+**[E0-010] J70 · (quiz — Aesop)**
+- **EN:** In Aesop's Fables, one reads: "An ass put on the skin of a lion…" The moral is:
+- **Was:** …'Een ezel trok de huid van een leeuw aan…De ezel zag een vos…ze tegen de ezel:…
+- **Pushed:** …'Een Ezel trok de huid van een leeuw aan…De Ezel zag een vos…ze tegen de Ezel:…
+- *Rule:* §7.1
+
+**[E0-011] J73 · (quiz — Ancient Greece)**
+- **EN:** In Ancient Greece, asses symbolized fertility because:
+- **Was:** In het Oude Griekenland symboliseerden ezels vruchtbaarheid omdat:
+- **Pushed:** In het Oude Griekenland symboliseerden Ezels vruchtbaarheid omdat:
+- *Rule:* §7.1
+
+**[E0-012] J74 · (quiz answer)**
+- **EN:** Male donkeys have very large penises
+- **Was:** Mannelijke ezels een zeer grote penis hebbem
+- **Pushed:** Mannelijke Ezels een zeer grote penis hebben
+- *Rule:* §7.1 + typo hebbem → hebben
+
+**[E0-013] J75 · (quiz answer)**
+- **EN:** Female donkeys frequently give birth to twins
+- **Was:** Vrouwelijke ezels vaak tweelingen baren
+- **Pushed:** Vrouwelijke Ezels vaak tweelingen baren
+- *Rule:* §7.1
+
+**[E0-014] J76 · (quiz — female donkey term)**
+- **EN:** A 'mare' is the general term for a female equine. What is the specific term for a female donkey?
+- **Was:** …specifieke term voor een vrouwelijke ezel?
+- **Pushed:** …specifieke term voor een vrouwelijke Ezel?
+- *Rule:* §7.1
+
+**[E0-015] J83 · (quiz answer — graffiti)**
+- **EN:** Jesus riding an ass backwards
+- **Was:** Jezus die achterstevoren op een ezel rijdt
+- **Pushed:** Jezus die achterstevoren op een Ezel rijdt
+- *Rule:* §7.1
+
+**[E0-016] J84 · (quiz — Mohammed's ass)**
+- **EN:** What does tradition say Mohammed's ass, Ya'fur, did after the Prophet died?
+- **Was:** Wat zegt de traditie dat Mohammeds ezel, Ya'fur, deed na de dood van de Profeet?
+- **Pushed:** Wat zegt de traditie dat Mohammeds Ezel, Ya'fur, deed na de dood van de Profeet?
+- *Rule:* §7.1
+
+**[E0-017] J87 · (quiz — Buridan's Ass)**
+- **EN:** In the philosophical paradox called Buridan's Ass, an ass placed between a bucket of water and a bale of hay will:
+- **Was:** …Buridans ezel zal een ezel die precies tussen een emmer water en een baal hooi wordt geplaatst:
+- **Pushed:** …Buridans Ezel zal een Ezel die precies tussen een emmer water en een baal hooi wordt geplaatst:
+- *Rule:* §7.1
+
+**[E0-018] J93 · (quiz answer — German proverb)**
+- **EN:** Vertrauen Sie niemals einem langsamen Esel beim Brückenbauen
+- **Was:** Vertrouw nooit een trage ezel bij het bruggen bouwen
+- **Pushed:** Vertrouw nooit een trage Ezel bij het bruggen bouwen
+- *Rule:* §7.1
+
+**[E0-019] J95 · (quiz answer — DONKEY.BAS)**
+- **EN:** Play as a donkey pulling wagons of hay from one town to another
+- **Was:** Als een ezel wagons hooi van de ene stad naar de andere trekken
+- **Pushed:** Als een Ezel wagons hooi van de ene stad naar de andere trekken
+- *Rule:* §7.1
+
+**[E0-020] J96 · (quiz answer — DONKEY.BAS)**
+- **EN:** Drive a car down a road while avoiding donkeys
+- **Was:** Met een auto over een weg rijden terwijl je ezels ontwijkt
+- **Pushed:** Met een auto over een weg rijden terwijl je Ezels ontwijkt
+- *Rule:* §7.1
+
+**[E0-021] J97 · (quiz answer — DONKEY.BAS)**
+- **EN:** Play a rhythm game that simulates donkeys mating
+- **Was:** Een ritmespel spelen dat de paring van ezels simuleert
+- **Pushed:** Een ritmespel spelen dat de paring van Ezels simuleert
+- *Rule:* §7.1
+
+**[E0-022] J101 · (quiz — ejiao)**
+- **EN:** In China, the rise in demand for a luxury Traditional Chinese Medicine product called 'ejiao' has resulted in how many asses being slaughtered every year?
+- **Was:** …ertoe geleid dat er jaarlijks hoeveel ezels worden geslacht?
+- **Pushed:** …ertoe geleid dat er jaarlijks hoeveel Ezels worden geslacht?
+- *Rule:* §7.1
+
+**[E0-023] J105 · (quiz — Santorini)**
+- **EN:** As of 2018, how heavy must a tourist be to be too heavy to ride an ass on the island of Santorini, Greece?
+- **Was:** …om op een ezel te rijden op het eiland Santorini in Griekenland?
+- **Pushed:** …om op een Ezel te rijden op het eiland Santorini in Griekenland?
+- *Rule:* §7.1
+
+**[E0-024] J108 · (quiz — Australia)**
+- **EN:** In northwestern Australia, wild asses are shot from government helicopters because:
+- **Was:** In het noordwesten van Australië worden wilde ezels neergeschoten vanuit overheidshelikopters omdat:
+- **Pushed:** In het noordwesten van Australië worden wilde Ezels neergeschoten vanuit overheidshelikopters omdat:
+- *Rule:* §7.1
