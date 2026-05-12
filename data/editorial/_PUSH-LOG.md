@@ -1101,3 +1101,66 @@ Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereld
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 23 cells** (all 3 pushes combined).
 
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🎯 E6 Push 1 — staged cells (9 cells)
+**Pushed:** 2026-05-12
+**File:** `6_asses.masses_E6Proxy.xlsx`
+**Cells:** 9
+
+| Sheet | Cell | Was | Pushed | Rule |
+|---|---|---|---|---|
+| E6_Nightmare_localization | J4 | `…—je ziet MIJ toch niet indutten.` | `…—ge ziet MIJ toch niet indutten.` | §6.17 Jenny ge/gij |
+| E6_Nightmare_localization | J5 | `Jij gaat vandaag met mij mee…` | `Gij gaat vandaag met mij mee…` | §6.17 |
+| E6_Nightmare_localization | J28 | `…STUK STRONT DAT JE BENT?!` | `…STUK STRONT DAT GE ZIJT?!` | §6.17 |
+| E6_Nightmare_localization | J40 | `OMDAT JE ME VERMOORD HEBT!` | `OMDAT GE ME VERMOORD HEBT!` | §6.17 |
+| E6_World_localization | J144 | `"Trouwe Ezel, Vreedzaam in de Put"` | kept (Tom 2026-05-12) | Q18 re-resolved |
+| E6_World_localization | J145 | `"Trouwe Ezel, Vreedzaam in de Put"` | kept | Q18 |
+| E6_World_localization | J162 | `"…van Muilebeek"` | `"…van Muilenbeek"` | §3.1 |
+| E6_World_localization | J163 | `"…van Muilebeek"` | `"…van Muilenbeek"` | §3.1 |
+| E6_World_localization | J164 | `"Boerderij en Tevredenheid"` | `"Hoeve en Tevredenheid"` | §3.6 |
+| E6_World_localization | J165 | `"Boerderij en Tevredenheid"` | `"Hoeve en Tevredenheid"` | §3.6 |
+| E6_Stable2F_localization | J3 | `…opnieuw is toegewezen…` | `…is heraangesteld…` | §13.5 |
+| E6_BattleHard_localization | J8 | `…voor jansen, héé.` | accepted Patrick's `…voor u, héé.` (no push) | §6.11 |
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 9 cells**.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🎯 E6 Push 2 — universal sweep (23 cells)
+**Pushed:** 2026-05-12
+**File:** `6_asses.masses_E6Proxy.xlsx`
+**Cells:** 23
+
+| Sheet | Cell | Was | Pushed | Rule |
+|---|---|---|---|---|
+| E6_Nightmare_localization | J3 | `…nutteloze ezel!` | `…nutteloze Ezel!` | §7.1 |
+| E6_Nightmare_localization | J6 | `…luie ezel samen…` | `…luie Ezel samen…` | §7.1 |
+| E6_Nightmare_localization | J29 | `…sorry ezel…` | `…sorry Ezel…` | §7.1 |
+| E6_BadCave_localization | J14 | `Maakt nie uit.` | `Maakt niet uit.` | §2 |
+| E6_BadCave_localization | J25 | `…toch nie begrijpen.` | `…toch niet begrijpen.` | §2 |
+| E6_BadCave_localization | J55 | `Jansen, …'k wil nie herinnerd…ezel.` | `Kleine, …wil ik niet herinnerd…Ezel.` | §6.11+§2+§7.1 |
+| E6_World_localization | J6 | `…op je post, Kameraad.` | `…op je post.` | §12.1 |
+| E6_World_localization | J14 | `…verlaten, Kameraad.` | `…verlaten.` | §12.1 |
+| E6_World_localization | J15 | `…beschermd worden, Kameraad.` | `…beschermd worden.` | §12.1 |
+| E6_World_localization | J41 | `…van de Boerderij naartoe—` | `…van de Hoeve naartoe—` | §3.6 |
+| E6_World_localization | J47 | `…van de Boerderij naartoe—` | `…van de Hoeve naartoe—` | §3.6 |
+| E6_World_localization | J78 | `…laten zien, Kameraad?` | `…laten zien?` | §12.1 |
+| E6_World_localization | J161 | `…van Muilebeek.` | `…van Muilenbeek.` | §3.1 |
+| E6_World_localization | J179 | `Is het nie een prachtige dag?` | `Is het niet een prachtige dag?` | §2 |
+| E6_World_localization | J190 | `…zijn nie zo eenzaam…` | `…zijn niet zo eenzaam…` | §2 |
+| E6_World_localization | J203 | `…zit ze nie in de problemen…` | `…zit ze niet in de problemen…` | §2 |
+| E6_World_localization | J214 | `…van den boerderij, héé!` | `…van de Hoeve, héé!` | §3.6 |
+| E6_World_localization | J219 | `…te vieren, Kameraad?` | `…te vieren?` | §12.1 |
+| E6_World_localization | J249 | `…er nie bij is, héé.` | `…er niet bij is, héé.` | §2 |
+| E6_World_localization | J302 | `…hemme nie allemaal…` | `…hemme niet allemaal…` | §2 |
+| E6_World_localization | J314 | `…weet nie goed…zijn nie verantwoordelijk…` | `…weet niet goed…zijn niet verantwoordelijk…` | §2 ×2 |
+| E6_World_localization | J317 | `…het nie zou zeggen.` | `…het niet zou zeggen.` | §2 |
+| E6_World_localization | J336 | `…als we nie allemaal…` | `…als we niet allemaal…` | §2 |
+
+### Notes
+- §10.7 `slokske` locked (found in CUT lines J70/J71 — no push needed)
+- §12.2 J142 Sturdy motto verified clean (canonical adjective list present)
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 23 cells**.

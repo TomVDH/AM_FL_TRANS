@@ -374,8 +374,8 @@ Codex bump v3.4 → v3.5 needed.
 - **Status:** ✅ 2 cells (E5_CircusMain J21 + J73) — 3 word instances applied 2026-05-12.
 
 ### 6.11 Jansen (E6) per-speaker — ✅ TOM LOCKED 2026-05-10 + 2026-05-11
-- **E6_BattleHard J8** (Thirsty Ass): `gulle`.
-- **E6_BadCave J55** (Bad Ass): `Kleine`.
+- **E6_BattleHard J8** (Thirsty Ass): Patrick replaced `jansen` → `u` on remote 2026-05-12 (`voor u, héé`). Tom accepted; `gulle` canon proposal superseded by Patrick's live edit. ✅ Synced.
+- **E6_BadCave J55** (Bad Ass): `Kleine`. ⏳ Sweep pending.
 - **CRITICAL:** After these 2 fixes, the word `jansen` is **EXTINCT corpus-wide.** Do not re-introduce. If `jansen` ever reappears in NL output, flag immediately.
 - **Decided:** 2026-05-10 (per-cell); 2026-05-11 (term extinction).
 
@@ -572,6 +572,12 @@ Per-episode scans will produce drift counts for each term. To populate during E0
 - Identical EN → identical NL across sheets.
 - See §6.7 for E2 battle examples.
 
+### 10.7 slokske (Flemish diminutive) — ✅ TOM LOCKED 2026-05-12
+- **Canonical:** `slokske` (Flemish -ske diminutive).
+- **Wrong:** `slokkie` / `slokje` (ABN/non-Flemish forms).
+- **Scope:** ge/gij register speakers (Thirsty, Bad, Hard, etc.) — Flemish diminutive applies.
+- **Status:** ⏳ First found in E6_Nightmare J70/J71 (CUT lines — no push needed). Scan forward episodes.
+
 ### Notes
 - *(empty — accrue here)*
 
@@ -758,10 +764,8 @@ Following corpus locks above, Patrick has additional sprite/sign work pending:
 - **J162 + J163:** `Muilebeek` → `Muilenbeek` (`"De Geneugten van het Betreden van Muilenbeek"`) per §3.1
 - **J164 + J165:** `Boerderij` → `Hoeve` (`"Hoeve en Tevredenheid"`) per §3.6
 
-#### Sculpture3 (Trusty tribute) — J144/J145 PENDING Tom call
-- Current: `"Trouwe Ezel, Vreedzaam in de Put"` (narrative-pointed)
-- Literal: `"Trouwe Ezel, Alles is Goed"` (EN-faithful)
-- See §17 Q18.
+#### Sculpture3 (Trusty tribute) — J144/J145 ✅ TOM 2026-05-12
+- **Canonical:** `"Trouwe Ezel, Vreedzaam in de Put"` — Tom keeps Patrick's narrative-pointed form. EN-faithful `"Alles is Goed"` rejected 2026-05-12 (overrides earlier Q18 decision of 2026-05-11).
 
 ### 15.8 Sculptures verified clean (no action)
 - J148/J149 `"Ass Power!"` → `"Ezels Eerst!"` ✅ canonical per §14.1
@@ -839,7 +843,7 @@ Examples from 2026-05-11:
 | ~~Q15~~ | ~~DJ welcome~~ — **RESOLVED 2026-05-11: `MERCI VOOR NAAR MIJN SET TE KOMEN!!!`** | §6.13 ✅ |
 | ~~Q16~~ | ~~E1_Stable2F J47 phrasing~~ — **RESOLVED 2026-05-11:** `Iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen zodat zijn Ziel in het Astrale Hiernamaals heraangesteld kan worden.` | §14.2.1 ✅ |
 | ~~Q17~~ | ~~ezel8ig leetspeak title~~ — **RESOLVED 2026-05-11: `"ezel8ig" van David Mesiha` LOCKED** (already in NL). `ezel8ig` = ezelachtig with ach→8; mirrors EN `asi9`. | §10.5 ✅ |
-| ~~Q18~~ | ~~Sculpture3 J144/J145 Trusty title~~ — **RESOLVED 2026-05-11 (option B per EN co-authority)**: `"Trouwe Ezel, Alles is Goed"` supersedes `"Trouwe Ezel, Vreedzaam in de Put"`. The narrative-grief work is carried by the other 2 title options (donkey-bray nonsense + Old Ass last words); this option is Sturdy's gentle reassurance to herself. 2 cells to fix. | §15.7 ✅ |
+| ~~Q18~~ | ~~Sculpture3 J144/J145 Trusty title~~ — **RE-RESOLVED 2026-05-12**: `"Trouwe Ezel, Vreedzaam in de Put"` **KEPT** (narrative-pointed form wins). Tom overrides 2026-05-11 EN-faithful decision. Local xlsx reverted, no push needed. | §15.7 ✅ |
 | ~~Q19~~ | ~~Proper / Resentful / Bleak Ass register~~ — **RESOLVED 2026-05-11**: je/jij with formal-address `registerExceptions` (parallel to Sad/Nice/Slow). Names denote personality/social-positioning, not dialect. The observed `u/uw` cells = formal-context exception for these je/jij chars. | §1 codex stubs ✅ |
 
 ### Communication to Patrick (Tom-locked 2026-05-11; pending one-shot sync note)
@@ -934,7 +938,7 @@ Keep these so the next session knows what's been reversed.
 | **E3** | ✅ **COMPLETE 2026-05-12** — Push 1: 4 staged (BadCave J5/J6 Foal je→jij flip + `jij` cap; 100 J5 `Ik mag` per §9.6; Mine1F J41 Plee). Push 2 sweep: 14 cells Mine1F (§2 ×10: J17/19/31/33/42/45/67/72/75/78/84 + J75 §5.4 Zegt + §3.1 ×2 J79/J136 Muilenbeek + §6.16 ×2 J49 reword Jobs/J136). Push 3: BadCave §2 ×5 (J20/21/22/26/35 + J35 §7.1). Push 4: LazysGrave §2 ×3 (J8/17/25). Push 5: E3_100 J7/J10/J11/J16 (§9.2 Ik [Cap] artifact, §7.1 Ezels, §8.2 Boor-Machine, §3.4.1 Imechelda Algemeen Ziekenhuis). Push 6: E3_200 J3 (§9.2+§7.1+§3.6+§3.1 combined). Push 7: E3_300 J3 (§7.1) + E3_DonkeyBas J17 (§7.1). Total: 33 cells. Round-trip: 0 diffs. | ✅ Done |
 | **E4** | ✅ **COMPLETE 2026-05-12** — Push 1: 5 cells (HerdSplits J62 Schoon Beest §4.4; KicksGoodbye J5 + AstralPlaneMain J89 heraangesteld §13.5; AstralPlaneMain J221 DJ welcome §6.13; Mine1F J23 EZELS EERST §14.1). Push 2: 3 sweep cells (HerdSplits J10/J63 Muilenbeek §3.1; AstralPlaneMain J127 HAW donkey nie→niet §2 + accent polish). Sweep: §6.16 J32 confirmed lowercase (Smart Ass parallel to E2 Bad Ass precedent — generic reclaim-work). Round-trip: 0 diffs. | ✅ Done |
 | **E5** | ✅ **COMPLETE 2026-05-12** — Push 1: 3 cells (CircusMain J45/J121/J221 Circusdirecteur lc retcon — LATER REVERSED in Push 3). Push 2: 19 cells universal sweep — CircusMain J21/J73 acte→Nummer §6.10; J25/J26 Ringmaster Rico Job cap §6.16; J132 Kick Ass Job §6.16; J167/J176 Slow Ass nijg→fel §6.12; J168/J177 Smart Ass Circusdirecteur+Tournee lc — LATER REVERSED in Push 3; J195 Ringmaster doekjes om winden §10.1; J215/J217/J218/J220 Ezel cap §7.1; J245 Derriere Jobs §6.16; ZooMain J120 Sad Ass Job §6.16; J224 Grandma Kulan Ezeltje §7.1; ZooCapture J30/J33 Wedgie+Zookeeper Rose Ezel §7.1. Push 3: 6 cells revert per §7.2 cap-everywhere lock — re-cap `Circusdirecteur` (J45/J58/J121/J168/J177/J221) + `Wereldtournee` (J45/J58) + bare `Tournee` (J168/J177). §6.16 exceptions added (Tom 2026-05-12): J106 + J131 (Smart Ass generic-reclaim, parallel to J199/J208). §18 reversed: Wereldtournee + Circusdirecteur retcons. Round-trip: 0 diffs / 23 cells. | ✅ Done |
-| **E6** | 11 cells: Nightmare J4/J5/J28/J40 (Jenny ge/gij); World J162/J163 (Muilenbeek), J164/J165 (Hoeve), J144/J145 (Trusty title revert); Stable2F J3 (heraangesteld) | Push safety + push; universal sweep (Jansen vars E6J8 gulle / E6J55 Kleine, Sturdy motto J142, Camion-Machine, Goden J160) |
+| **E6** | ✅ **COMPLETE 2026-05-12** — Push 1: 9 cells (Nightmare J4/J5/J28/J40 Jenny ge/gij §6.17; World J162/J163/J164/J165 Muilenbeek+Hoeve §3.1/§3.6; Stable2F J3 heraangesteld §13.5). J144/J145 kept (Vreedzaam in de Put). BattleHard J8 accepted Patrick's `u`. Push 2: 23 sweep cells (Nightmare J3/J6/J29 §7.1; BadCave J14/J25 §2 + J55 §6.11+§2+§7.1; World J6/J14/J15/J78/J219 §12.1 Kameraad + J179/J190/J203/J249/J302/J314/J317/J336 §2 + J41/J47/J214 §3.6 + J161 §3.1). §12.2 J142 Sturdy motto verified clean. §10.7 `slokske` locked (CUT lines J70/J71). Round-trip: 0 diffs. | ✅ Done |
 | **E7** | 0 | E7 universal sweep (Camion-Machine hyphen, Job cap) |
 | **E8** | 0 | E8 universal sweep (8 Gods cap U/Uw) |
 | **E9** | 0 | E9 universal sweep (4 Gods cap U/Uw) |
