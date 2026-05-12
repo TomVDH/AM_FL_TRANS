@@ -407,7 +407,7 @@ Codex bump v3.4 → v3.5 needed.
 - **Sweep scope (~22 cells):**
   - 2 `Beroepen` → `Jobs` (E3_Mine1F J49 + J136, both game-system context)
   - ~18 lowercase `job/jobs` → `Job/Jobs` when game-system context (E1 J94, E2_World_A1 J58, E2_BadAssRescue J5, E4_HerdSplits J32, E5_Highway J15, E5_CircusMain J25/J26/J106/J131/J132/J245, E5_ZooMain J120, E7_Opening J5, E10_Government J167 + J176, E0_Questions J43)
-  - **Stay lowercase (post-uprising new-context):** E10_Government J169 (Old Ass new forestry job), E5_ZooMain J199 + J208 ("finding another job without Machines")
+  - **Stay lowercase (post-uprising new-context):** E10_Government J169 (Old Ass new forestry job), E5_ZooMain J199 + J208 ("finding another job without Machines"), **E2_World_A1 J58 + E2_BadAssRescue J5** (Bad Ass "get your jobs back" — generic reclaim-work reading, not game-system; Tom 2026-05-11)
   - **Idiomatic `beroep doen op` (untouched):** E10_ProphetSpeech J29 + J39
 - **Bundled fix at E10_Government J169 (Old Ass):**
   - **EN:** `So I got a job working in the forestry business.`
@@ -925,7 +925,7 @@ Keep these so the next session knows what's been reversed.
 |---|---|---|
 | **E0** | ✅ **COMPLETE 2026-05-12** — Push 1: 5 cells (CharacterProfiles J50/J52; E0_Questions J6/J7/J27). Push 2: 19 cells universal sweep (E0_Questions J43 job→Job §6.16; J67/68/69/70/73/74/75/76/83/84/87/93/95/96/97/101/105/108 Ezel cap §7.1; J74 hebbem→hebben typo). Round-trip: 0 diffs. | ✅ Done |
 | **E1** | ✅ **COMPLETE 2026-05-12** — Push 1: 4 cells (E1_Farm J7 sign typos §15.6A; E1_Farm J25 Thirsty nie→niet §2; E1_Stable2F J47 Hemelvaarts-zang rewrite §14.2.1+§13.5; E1_TheProtest J6 zuiden norm §15.6D+§15.6C). Push 2: 2 cells universal sweep (E1_TheProtest J54 plan→Plan §6.9; E1_Stable2F J56 Sturdy motto reword §12.2). Round-trip: 0 diffs. | ✅ Done |
-| **E2** | 20 cells: BattleMiner J6/J11/J13/J14/J17 (Jenny+SCHUP+reactie+!); MinersHouse J3/J5/J8/J9 (Jenny ge/gij); World_A1/A2/B1/B2 J7 (sign typos); World_A2 J4/J6/J8 (narrative-arc); World_B2 J4 (incident→MIJN-ONGEVAL); hoogmoderne→piekfijne ×3 — plus 41 pushed previously | Push safety + push; universal sweep |
+| **E2** | ✅ **COMPLETE 2026-05-11** — Push: 20 cells (BattleMiner J6/J11/J13/J14/J17; MinersHouse J3/J5/J8/J9; World_A1/A2/B1/B2 J7 sign typos; World_A2 J4/J6/J8 narrative-arc; World_B2 J4 MIJN-ONGEVAL; hoogmoderne→piekfijne ×3). Sweep: 0 actionable — §2/§7.1/§3.6/§6.17(UI false pos)/§12.1(EN-justified)/§4.4(exception) all clean; §6.16 J58+J5 confirmed lowercase (generic context). Round-trip: 0 diffs. | ✅ Done |
 | **E3** | 4 cells: E3_BadCave J5/J6 (Foal je/jij), E3_100 J5 (Ik mag), E3_Mine1F J41 (Plee) | Push safety + push; universal sweep (nie→niet ~19, Ezel cap ~8, Muilenbeek ×3, Boerderij ×1, Beroep→Jobs ×2, Ik [Cap] artifact ×3, etc.) |
 | **E4** | 5 cells: HerdSplits J62 (Schoon Beest), KicksGoodbye J5 (heraangesteld), AstralPlaneMain J89 (heraangesteld), J221 (DJ welcome), Mine1F J23 (EZELS EERST) | Push safety + push; universal sweep |
 | **E5** | 3 cells: CircusMain J45/J121/J221 (Circusdirecteur cap fixes) | Push safety + push; universal sweep (Acte→Nummer ×7, Nijg→fel ×2, doekjes om winden ×1, Job cap ×9, Wereldtournee×1) |

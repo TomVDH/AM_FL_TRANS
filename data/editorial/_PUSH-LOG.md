@@ -680,3 +680,141 @@ Each section below records a single push event with per-cell context:
 - **Pushed:** Een leven vrij van slechte, zielloze, werk-afpakkende, kind-dodende Machines.
 - *Rule:* §12.2 — Sturdy motto canonical adjective list (werk-afpakkende, kind-dodende)
 
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🎯 E2 master batch (20 cells)
+**Pushed:** 2026-05-11
+**Round-trip:** 0 diffs ✅
+
+### E2_BattleMiner_localization (5 cells)
+
+**[E2-001] J6 · Miner Jenny**
+- **EN:** (I always knew you were just a dumb beast.)
+- **Was:** Ugh. Ik wist altijd wel dat je maar\neen dom beest bent.
+- **Pushed:** Ugh. Ik wist altijd wel dat ge maar\neen dom beest zijt.
+- *Rule:* §6.17 — Miner Jenny ge/gij register flip (je→ge, bent→zijt)
+
+**[E2-002] J11 · Miner Jenny**
+- **EN:** Miner Jenny uses HEADBUTT!
+- **Was:** Mijnwerker Jenny gebruikt DJOEF OP U BAKKES
+- **Pushed:** Mijnwerker Jenny gebruikt DJOEF OP U BAKKES!
+- *Rule:* §9.3 — terminal ! per EN
+
+**[E2-003] J13 · Miner Jenny**
+- **EN:** Miner Jenny uses SHOVEL!
+- **Was:** Mijnwerker Jenny gebruikt SCHEP.
+- **Pushed:** Mijnwerker Jenny gebruikt SCHUP.
+- *Rule:* §6.8 — SCHEP→SCHUP (Flemish shovel-noun lock)
+
+**[E2-004] J14 · Miner Jenny**
+- **EN:** EAT SHOVEL, ASS!
+- **Was:** EET DEZE SCHEP, KLOOTZAKSKE!!
+- **Pushed:** HIER SÉ, KLOOTZAKSKE!!
+- *Rule:* §6.8 — taunt rewrite; HIER SÉ = Flemish presenter phrase; drops weapon-naming
+
+**[E2-005] J17 · Foal (UI)**
+- **EN:** How will you respond?
+- **Was:** Wat is je respons?
+- **Pushed:** Wat is je reactie?
+- *Rule:* §6.7 — Anglicism respons→reactie
+
+### E2_MinersHouse_localization (4 cells)
+
+**[E2-006] J3 · Miner Jenny**
+- **EN:** An Ass? How did you get here from the Mines?
+- **Was:** Een Ezel? Hoe ben jij hier van de Mijnen geraakt?
+- **Pushed:** Een Ezel? Hoe zijt gij hier van de Mijnen geraakt?
+- *Rule:* §6.17 — jij→gij, ben→zijt
+
+**[E2-007] J5 · Miner Jenny**
+- **EN:** Quick, I need your help!
+- **Was:** Snel, ik heb je hulp nodig!
+- **Pushed:** Snel, ik heb uw hulp nodig!
+- *Rule:* §6.17 — je→uw (ge/gij register)
+
+**[E2-008] J8 · Miner Jenny**
+- **EN:** What, can't you understand me with those dumb Ass ears of yours?
+- **Was:** Wat, kan je me niet verstaan met je domme ezelsoren, ofzo?
+- **Pushed:** Wat, kunt ge me niet verstaan met uw domme Ezelsoren, ofzo?
+- *Rule:* §6.17 — kan je→kunt ge, je→uw; §7.1 Ezel cap
+
+**[E2-009] J9 · Miner Jenny**
+- **EN:** Fine. I'LL MAKE SURE YOU DO IT FOR ME.
+- **Was:** Oké. IK MAAK ER ZEKER VAN DAT JE 'T VOOR MIJ DOET.
+- **Pushed:** Oké. IK MAAK ER ZEKER VAN DAT GE 'T VOOR MIJ DOET.
+- *Rule:* §6.17 — JE 'T→GE 'T
+
+### E2_World_A1_localization (2 cells)
+
+**[E2-010] J7 · Sign**
+- **EN:** NEW Government-Subsidised Highway: Connecting Urban and Rural Communities
+- **Was:** NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.
+- **Pushed:** NIEUW Overheids-gesubsidieerde snelweg: brengt stedelijke en landelijke regio's in verbinding.
+- *Rule:* §15.6A — NIEW→NIEUW, umlaut removed, regio's apostrophe
+
+**[E2-011] J10 · Sign**
+- **EN:** Ultramodern Mill and Grain Store
+- **Was:** De hoogmoderne Molen en Graanschuur.
+- **Pushed:** De piekfijne Molen en Graanschuur.
+- *Rule:* §15.6C — hoogmoderne→piekfijne
+
+### E2_World_A2_localization (4 cells)
+
+**[E2-012] J4 · Sign**
+- **EN:** 0 DAYS SINCE LAST MINE ACCIDENT
+- **Was:** 364 DAGEN SINDS LAATSTE MIJN-ONGEVAL
+- **Pushed:** 0 DAGEN SINDS LAATSTE MIJN-ONGEVAL
+- *Rule:* §15.6B — narrative-arc reset to 0 post-accident
+
+**[E2-013] J6 · Sign**
+- **EN:** Southwest: Ultramodern Mill and Grain Store
+- **Was:** Naar 't zuiden, onze piekfijne Molen en Graanschuur.
+- **Pushed:** Naar 't zuidwesten, onze piekfijne Molen en Graanschuur.
+- *Rule:* §15.6B — zuiden→zuidwesten (EN says southwest)
+
+**[E2-014] J7 · Sign**
+- **EN:** NEW Government-Subsidised Highway: Connecting Urban and Rural Communities
+- **Was:** NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.
+- **Pushed:** NIEUW Overheids-gesubsidieerde snelweg: brengt stedelijke en landelijke regio's in verbinding.
+- *Rule:* §15.6A — sign typos; colon (not em-dash) for consistency with A1/B1/B2
+
+**[E2-015] J8 · Sign**
+- **EN:** Old Mountain Trail to the City
+- **Was:** De Lange Weg Naar 't Schrijn in 't Bos.
+- **Pushed:** Oud Bergpad Naar de Stad
+- *Rule:* §15.6B — re-translate per EN (different sign on A2 vs other sheets); no terminal period per §9.3 (EN has none)
+
+### E2_World_B1_localization (1 cell)
+
+**[E2-016] J7 · Sign**
+- **EN:** NEW Government-Subsidised Highway: Connecting Urban and Rural Communities
+- **Was:** NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.
+- **Pushed:** NIEUW Overheids-gesubsidieerde snelweg: brengt stedelijke en landelijke regio's in verbinding.
+- *Rule:* §15.6A — sign typos
+
+### E2_World_B2_localization (4 cells)
+
+**[E2-017] J4 · Sign**
+- **EN:** 364 DAYS SINCE LAST MINE ACCIDENT
+- **Was:** 364 DAGEN SINDS LAATSTE INCIDENT
+- **Pushed:** 364 DAGEN SINDS LAATSTE MIJN-ONGEVAL
+- *Rule:* §15.6E — INCIDENT→MIJN-ONGEVAL (consistent with other sheets)
+
+**[E2-018] J6 · Sign**
+- **EN:** South: Ultramodern Mill and Grain Store
+- **Was:** Naar 't zuiden, onze hoogmoderne Molen en Graanschuur.
+- **Pushed:** Naar 't zuiden, onze piekfijne Molen en Graanschuur.
+- *Rule:* §15.6C — hoogmoderne→piekfijne
+
+**[E2-019] J7 · Sign**
+- **EN:** NEW Government-Subsidised Highway: Connecting Urban and Rural Communities
+- **Was:** NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.
+- **Pushed:** NIEUW Overheids-gesubsidieerde snelweg: brengt stedelijke en landelijke regio's in verbinding.
+- *Rule:* §15.6A — sign typos
+
+**[E2-020] J10 · Sign**
+- **EN:** Ultramodern Mill and Grain Store
+- **Was:** De hoogmoderne Molen en Graanschuur.
+- **Pushed:** De piekfijne Molen en Graanschuur.
+- *Rule:* §15.6C — hoogmoderne→piekfijne
+
