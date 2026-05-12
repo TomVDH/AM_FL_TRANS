@@ -1,7 +1,7 @@
 # am-fl-trans — Gemini Context
 
 > **Branch:** `am-analysis` | **Last commit:** `5039afa` (2026-05-07)
-> **Session continuity:** read `data/editorial/_RESUME-2026-05-03.md` for the full batch checklist.
+> **Session continuity:** read `data/editorial/_CANON.md` for the full batch checklist.
 
 ---
 
@@ -124,7 +124,7 @@ excels/
   10_asses.masses_E10Proxy.xlsx                       — E10 Government/Credits/Epilogue
 
 data/editorial/
-  _RESUME-2026-05-03.md          — master batch checklist (a–q) + Q1–Q5 status
+  _CANON.md                   — SUPREME source of truth (start here, every chat)
   _corpus-scoping-2026-05-03.md  — 4,475 cells scanned; batch sources §A1–A13
   _batch-mn-scoping-2026-05-04.md — full batch m/n decision tables
   _feedback-2026-04-29-reverification.md — April-29 corrections status

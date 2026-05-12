@@ -14,7 +14,7 @@ Each section below records a single push event with per-cell context:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ## 🎯 E1 main sweep (15 cells)
 **Pushed:** 2026-05-11
-**Batch file:** `data/editorial/feedback-2026-05-10-E1.json`
+**Batch file:** `data/editorial/corrections/2026-05-10-E1.json`
 **Cells:** 15
 
 ### E1_FarmHouseInt_localization (1 cell)
@@ -131,7 +131,7 @@ Each section below records a single push event with per-cell context:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ## 🎯 E1 follow-up (1 cell) — Thirsty Ass nickname restore
 **Pushed:** 2026-05-11
-**Batch file:** `data/editorial/feedback-2026-05-10-E1-followup.json`
+**Batch file:** `data/editorial/corrections/2026-05-10-E1-followup.json`
 **Cells:** 1
 
 ### E1_Farm_localization (1 cell)
@@ -146,7 +146,7 @@ Each section below records a single push event with per-cell context:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ## 🎯 E2 main sweep (41 cells)
 **Pushed:** 2026-05-11
-**Batch file:** `data/editorial/feedback-2026-05-10-E2.json`
+**Batch file:** `data/editorial/corrections/2026-05-10-E2.json`
 **Cells:** 41
 
 ### E2_BadAssRescue_localization (1 cell)

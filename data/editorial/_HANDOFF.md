@@ -196,7 +196,7 @@ All paths relative to project root.
 | `scripts/audit_muilegem.py` | Place-name cross-cut |
 | `scripts/check_u_subject.py` | u/uw pronoun usage cross-cut |
 
-Each `audit_eN.py` opens the corresponding xlsx, walks all tabs, applies rules from the criteria list (§A–§N — see `_CRITERIA-FULL-LIST-2026-05-10.md`), and flags rows.
+Each `audit_eN.py` opens the corresponding xlsx, walks all tabs, applies rules from the criteria list (§A–§N — see `archive/audits/2026-05-10-CRITERIA-FULL-LIST.md` (superseded by `_CANON.md`)), and flags rows.
 
 ### One-off utilities
 
@@ -233,7 +233,7 @@ The cycle is the same every time:
 └────────────────────────┘
 
 ┌─ 3. STAGE JSON ────────┐
-│  Build/edit feedback-2026-MM-DD-EN.json with corrections.
+│  Build/edit corrections/YYYY-MM-DD-EN.json with corrections.
 │  Each correction has: id, file, sheet, cell, speaker, english, current_nl, proposed_nl, rationale
 └────────────────────────┘
 
@@ -281,8 +281,8 @@ The cycle is the same every time:
 
 ## §7. Decisions ledger
 
-Full master list: `data/editorial/_CRITERIA-FULL-LIST-2026-05-10.md` (70 criteria, sections A–P).
-Latest refined decisions: `data/editorial/_RESUME-2026-05-07.md` (under "Inverted / refined decisions").
+Full master list: `data/editorial/archive/audits/2026-05-10-CRITERIA-FULL-LIST.md` (superseded by `_CANON.md`) (70 criteria, sections A–P).
+Latest refined decisions: `data/editorial/archive/resumes/2026-05-07-RESUME.md` (superseded by `_CANON.md`) (under "Inverted / refined decisions").
 
 ### Locked corpus-wide decisions
 
@@ -356,16 +356,16 @@ All under `docs/analysis/`. For each episode, there are two files:
 
 | File | Purpose |
 |---|---|
-| `_CRITERIA-FULL-LIST-2026-05-10.md` | 70-criterion master list (A–P). Use as reference when scanning. |
-| `_RESUME-2026-05-07.md` | 46-cat list + decisions lock + batch queue. Older but still authoritative for §A–N. |
+| `archive/audits/2026-05-10-CRITERIA-FULL-LIST.md` (superseded by `_CANON.md`) | 70-criterion master list (A–P). Use as reference when scanning. |
+| `archive/resumes/2026-05-07-RESUME.md` (superseded by `_CANON.md`) | 46-cat list + decisions lock + batch queue. Older but still authoritative for §A–N. |
 | `_FULL-SCAN-2026-05-10.md` | Single-pass full-corpus scan dump from 2026-05-10. |
-| `_OPUS-AUDIT-COMPLETE-2026-05-10.md` | Consolidated Opus audit summary. |
-| `_OPUS-AUDIT-v2-POST-PATRICK-2026-05-10.md` | Re-audit after Patrick's edits landed. |
+| `archive/audits/2026-05-10-OPUS-COMPLETE.md` | Consolidated Opus audit summary. |
+| `archive/audits/2026-05-10-OPUS-v2-POST-PATRICK.md` | Re-audit after Patrick's edits landed. |
 | `_THREE-WAY-DIFF-2026-05-10.md` | Local / Patrick / Originals diff (118 local vs 449 Patrick, 53 conflicts). |
 | `_FOUR-WAY-DIFF-2026-05-10.md` | Local / Patrick-snapshot / Live-Remote / Originals — 469/53/388. |
 | `_PATRICK-PLAY-BY-PLAY-2026-05-10.txt` | Patrick's edits annotated per cell. |
 | `_PUSH-LOG.md` | Permanent record of pushes — cell, EN, Original, Was, Pushed, Rule. |
-| `_PROJECT_MISSION.md` | Project doctrine. |
+| `_MISSION.md` | Project doctrine. |
 
 ---
 
@@ -377,38 +377,38 @@ Naming: `feedback-YYYY-MM-DD-<scope>.json` under `data/editorial/`.
 
 | File | Cells | Status | Scope |
 |---|---|---|---|
-| `feedback-2026-05-10-E1.json` | 16 | ✅ pushed | E1 Farm/FarmHouseInt/TheProtest main sweep |
-| `feedback-2026-05-10-E1-followup.json` | 1 | ✅ pushed | E1_Farm J29 Thirsty Schoon Beest restore |
-| `feedback-2026-05-10-E1-followup2.json` | 1 | ⏳ staged | E1_Farm J25 Thirsty nie→niet |
-| `feedback-2026-05-10-E2.json` | 41 | ✅ pushed | E2 main + J14 SCHEP revert + J46 Schoon Beest |
+| `corrections/2026-05-10-E1.json` | 16 | ✅ pushed | E1 Farm/FarmHouseInt/TheProtest main sweep |
+| `corrections/2026-05-10-E1-followup.json` | 1 | ✅ pushed | E1_Farm J29 Thirsty Schoon Beest restore |
+| `corrections/2026-05-10-E1-followup2.json` | 1 | ⏳ staged | E1_Farm J25 Thirsty nie→niet |
+| `corrections/2026-05-10-E2.json` | 41 | ✅ pushed | E2 main + J14 SCHEP revert + J46 Schoon Beest |
 
 ### 2026-05-07 cycle
 
 | File | Cells | Status |
 |---|---|---|
-| `feedback-2026-05-07-e1-farm.json` | — | Drafted, superseded by 2026-05-10 |
-| `feedback-2026-05-07-e1-sweep.json` | — | Drafted |
-| `feedback-2026-05-07-e2-sweep.json` | — | Drafted, superseded |
-| `feedback-2026-05-07-e3-sweep.json` | — | Drafted (now blocked on P1–P3) |
-| `feedback-2026-05-07-e4-sweep.json` | — | Drafted |
-| `feedback-2026-05-07-e5-sweep.json` | — | Drafted |
-| `feedback-2026-05-07-e6-sweep.json` | — | Drafted |
-| `feedback-2026-05-07-e10-sweep.json` | — | Drafted |
-| `feedback-2026-05-07-muilengem.json` | — | Drafted (place-name cross-cut, now rolled into D2) |
+| `corrections/2026-05-07-e1-farm.json` | — | Drafted, superseded by 2026-05-10 |
+| `corrections/2026-05-07-e1-sweep.json` | — | Drafted |
+| `corrections/2026-05-07-e2-sweep.json` | — | Drafted, superseded |
+| `corrections/2026-05-07-e3-sweep.json` | — | Drafted (now blocked on P1–P3) |
+| `corrections/2026-05-07-e4-sweep.json` | — | Drafted |
+| `corrections/2026-05-07-e5-sweep.json` | — | Drafted |
+| `corrections/2026-05-07-e6-sweep.json` | — | Drafted |
+| `corrections/2026-05-07-e10-sweep.json` | — | Drafted |
+| `corrections/2026-05-07-muilengem.json` | — | Drafted (place-name cross-cut, now rolled into D2) |
 
 ### 2026-05-03/04 cycle (Phase wave 1)
 
 | File | Cells | Status |
 |---|---|---|
-| `feedback-2026-05-03-mechalen.json` | 30 | Applied |
-| `feedback-2026-05-03-stenen-spel.json` | 12 | Applied |
-| `feedback-2026-05-03-poepegaatje.json` | 5 | Applied |
-| `feedback-2026-05-03-sad-whimper.json` | 18 | Applied (lowercase b per D7) |
-| `feedback-2026-05-03-song.json` / `-song-article.json` | 7 / 3 | Applied (het lock per D11) |
-| `feedback-2026-05-03-bikkelharde.json` | 3 | Applied (per D10) |
-| `feedback-2026-05-03-asshandlers.json` | 0 | Skipped — already applied remote |
-| `feedback-2026-05-04-kameraad.json` | 14 | Applied (D12) |
-| `feedback-2026-05-04-slow-en.json` | 1 | Applied (English bleed fix) |
+| `corrections/2026-05-03-mechalen.json` | 30 | Applied |
+| `corrections/2026-05-03-stenen-spel.json` | 12 | Applied |
+| `corrections/2026-05-03-poepegaatje.json` | 5 | Applied |
+| `corrections/2026-05-03-sad-whimper.json` | 18 | Applied (lowercase b per D7) |
+| `corrections/2026-05-03-song.json` / `2026-05-03-song-article.json` | 7 / 3 | Applied (het lock per D11) |
+| `corrections/2026-05-03-bikkelharde.json` | 3 | Applied (per D10) |
+| `corrections/2026-05-03-asshandlers.json` | 0 | Skipped — already applied remote |
+| `corrections/2026-05-04-kameraad.json` | 14 | Applied (D12) |
+| `corrections/2026-05-04-slow-en.json` | 1 | Applied (English bleed fix) |
 
 ### Phase-C closeouts (2026-04-29 cycle)
 
@@ -513,9 +513,9 @@ excels.fresh-pull-2026-05-11/           (last pull from remote)
 excels.local-pre-resync-2026-05-10/     (pre-resync baseline)
 
 # Docs
-data/editorial/_REMOTE-HANDOFF-2026-05-11.md      ← this file
-data/editorial/_CRITERIA-FULL-LIST-2026-05-10.md  (70 criteria)
-data/editorial/_RESUME-2026-05-07.md              (46-cat master + decisions)
+data/editorial/_HANDOFF.md      ← this file
+data/editorial/archive/audits/2026-05-10-CRITERIA-FULL-LIST.md  (70 criteria)
+data/editorial/archive/resumes/2026-05-07-RESUME.md              (46-cat master + decisions)
 data/editorial/_PUSH-LOG.md                       (push record)
 docs/analysis/EN_{Consistency,Opus}_Audit{,v2}.md (per episode)
 
@@ -529,4 +529,4 @@ token.json
 
 ## §13. Suggested opener for next chat
 
-> Continuing am-fl-trans editorial sweep on a new machine. Branch `am-analysis` at `b73af90`. OAuth re-established locally. Per `_REMOTE-HANDOFF-2026-05-11.md` §10, 4 pending decisions block E3: P1 (E3_100 row-mismatch), P2 (Patrick `Ik Heb` artifact direction), P3 (Foal-register flip 5 cells), P4 (E1 FU#2 push timing). Walk me through them one at a time.
+> Continuing am-fl-trans editorial sweep on a new machine. Branch `am-analysis` at `b73af90`. OAuth re-established locally. Per `_HANDOFF.md` and `_CANON.md`, 4 pending decisions block E3: P1 (E3_100 row-mismatch), P2 (Patrick `Ik Heb` artifact direction), P3 (Foal-register flip 5 cells), P4 (E1 FU#2 push timing). Walk me through them one at a time.

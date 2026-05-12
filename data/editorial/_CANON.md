@@ -668,7 +668,7 @@ Per-episode scans will produce drift counts for each term. To populate during E0
 
 ### 14.1 EZELS EERST (Ass Power slogan)
 - **Canonical:** `EZELS EERST` (all caps, imperative chant).
-- Supersedes: `EZELSKRACHT`, `EZELSKRACHT AAN DE MACHT`, `Ezel Belang`, `EZEL MACHT`.
+- Supersedes (corpus-observed forms): `EZELSKRACHT`, `EZELSKRACHT AAN DE MACHT`, `EZEL MACHT`, `EZELKRACHT`. Note: `Ezel Belang` was proposed but never landed in corpus.
 - **Status:** ⏳ 13 drift cells; 5 need full sentence rephrase (slogan changed from noun phrase to imperative — doesn't drop into existing sentences cleanly).
 - **Codex:** Old Ass `verbalTics` references this.
 
@@ -862,15 +862,14 @@ Keep these so the next session knows what's been reversed.
 | `Muilebeek` (no extra n) | **`Muilenbeek`** | 2026-05-10 |
 | `Boerderij` (in place-name context) | **`Hoeve`** | 2026-05-10 |
 | `Erfgoedshoeve` (Heritage Stable) | **`Erfgoedstal`** | 2026-05-10 |
-| `EZELS FØRST` | **`EZELS EERST`** | 2026-05-10 |
 | `Machien` (plural `Machienen`) | **`Machine` (kept; Machien plan REVERSED)** | 2026-05-10 |
 | `Bikkeharde` (missing L) | **`Bikkelharde`** | 2026-05-04 |
 | `*Boe-hoe-hoe*` (cap B) | **`*boe-hoe-hoe*` (lowercase b)** | 2026-05-10 |
-| `De Hudo` / `Het Privaat` | **`De Plee`** | 2026-05-10 |
+| `De Hudo` (corpus-observed) | **`De Plee`** | 2026-05-10 |
 | `Oom everywhere` directive | **`Nonkel everywhere; Oom only for Smart Ass`** | 2026-05-04 |
 | `Stenen-Spel` | **`Keien-Spel`** | 2026-05-04 |
-| `EZELSKRACHT (AAN DE MACHT)` / `Ezel Belang` | **`EZELS EERST`** | 2026-05-10 |
-| `EAT MIJN SCHEP OP` (Patrick's J14) | **`EET DEZE SCHEP, KLOOTZAKSKE!!`** | 2026-05-10 |
+| `EZELSKRACHT` / `EZELSKRACHT AAN DE MACHT` / `EZEL MACHT` / `EZELKRACHT` (corpus forms) | **`EZELS EERST`** | 2026-05-10 |
+| `EET MIJN SCHEP OP, KLOOTZAKSKE!!` (Patrick proposal) | **`EET DEZE SCHEP, KLOOTZAKSKE!!`** (then later replaced 2026-05-11 — see below) | 2026-05-10 |
 | `Stopt` (Nice Ass imperative) | **`Stop`** (je/jij imperative no -t) | 2026-05-10 |
 | `Schoon Beest` (general) | **`Lieve Ezel`** (except Thirsty→Nice) | Phase-C |
 | `Snotezel` | **`Snot Ezel`/`Snotje`** | Phase-C |
@@ -883,7 +882,7 @@ Keep these so the next session knows what's been reversed.
 | `afspraak` (when EN = "Plan") | **`het Plan`** | 2026-05-10 |
 | `acte` (Circus) | **`Nummer`** | 2026-05-10 |
 | `Oh liefste Gods` | **`Geprezen zijn de Goden`** | 2026-05-10 |
-| `Astraal Hiernamaals` | **`Astrale Hiernamaals`** | per inflection rule |
+| `Astraal Hiernamaals` (forbidden form — rule, not corpus drift) | **`Astrale Hiernamaals`** (`-e` ending; neuter agreement) | per §10.2 |
 | `doekjes rond winden` | **`doekjes om winden`** | per idiom |
 | `D9 universal nie→niet RESCINDED` | **RE-LOCKED — canon overrides codex; everyone `niet` no exceptions** | 2026-05-11 |
 | `Hard Ass.dutch = "Bikkeharde Ezel"` (codex) | **`Bikkelharde Ezel`** | codex v3.4 |
@@ -893,7 +892,6 @@ Keep these so the next session knows what's been reversed.
 | `Kameraad-Moeder` (hyphenated) | **`Kameraad Moeder`** (no hyphen) | 2026-05-11 (Patrick) |
 | `EZELZEULER` typos | **`EZELZEULER ZENO` / `EZELZEULER ZITA`** | 2026-05-11 (Patrick) |
 | `Topstrateeg` variants | **`Topstrateeg`** (single form) | 2026-05-11 (Patrick) |
-| `Vijver van Hiehiehie` form | **Locked** | 2026-05-11 (Patrick) |
 | `oh boy` (English bleed) | **`Oh jee`** | 2026-05-11 (Patrick) |
 | Slow Ass `Please` (English bleed) | **Cut** | 2026-05-11 (Patrick) |
 | Butte `business is business` (bare) | **Wrapped in quotes** as foreignness marker | 2026-05-11 (Patrick) |
@@ -981,9 +979,13 @@ Keep these so the next session knows what's been reversed.
 | `data/json/codex_verified.json` | **Codex v3.4** — per-character rules (AUTHORITATIVE) |
 | `data/json/codex_translations.json` | v2.1 mirror — translation-side fields |
 | `data/editorial/_PUSH-LOG.md` | Permanent push record |
-| `data/editorial/_CRITERIA-FULL-LIST-2026-05-10.md` | Prior 70-criterion list (superseded by this canon) |
-| `data/editorial/_RESUME-2026-05-07.md` | Prior 46-cat list (superseded by this canon) |
-| `data/editorial/_REMOTE-HANDOFF-2026-05-11.md` | OAuth + venv bootstrap for new machines |
+| `data/editorial/_HANDOFF.md` | OAuth + venv bootstrap for new machines |
+| `data/editorial/_MISSION.md` | Project mission/doctrine |
+| `data/editorial/corrections/` | All feedback JSONs (active + historical), date-prefixed |
+| `data/editorial/archive/audits/` | Historical scan dumps + criteria lists (superseded by this canon) |
+| `data/editorial/archive/resumes/` | Old handoff docs (superseded by this canon) |
+| `data/editorial/archive/character-baselines/` | Phase-C per-character JSONs (already applied) |
+| `data/editorial/archive/misc/` | One-offs |
 | `docs/analysis/E*_Opus_Audit*.md` | Per-episode audit dumps (raw findings) |
 
 ---

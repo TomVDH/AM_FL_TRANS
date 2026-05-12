@@ -1,0 +1,570 @@
+{
+  "_meta": {
+    "compiled": "2026-05-11",
+    "scope": "Today's specific cell locks from canon walk (Q1-Q19 + §15.6 + §15.7 + §6.8 + §6.13 + §6.17 + others)",
+    "exclusions": "Universal sweeps deferred to per-episode chats: nie→niet (~38), Ezel cap (~70), Gods cap U/Uw (21), Job cap (~22), Camion-Machine hyphen (5)",
+    "actual_count": 56
+  },
+  "corrections": [
+    {
+      "id": "0-Characte-J50",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "CharacterProfiles_localization",
+      "cell": "J50",
+      "english": "Official Sign",
+      "current_nl": "Officiëel Bord",
+      "proposed_nl": "Officieel Bord",
+      "rule_id": "canon-7.2 / 15.6.F — Officiëel→Officieel modernize"
+    },
+    {
+      "id": "0-Characte-J52",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "CharacterProfiles_localization",
+      "cell": "J52",
+      "english": "Decrepit Sign",
+      "current_nl": "Verlept Bord",
+      "proposed_nl": "Vervallen Bord",
+      "rule_id": "canon-15.6.F — Verlept→Vervallen (Decrepit ≠ withered)"
+    },
+    {
+      "id": "0-E0_Quest-J6",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J6",
+      "english": "Those who stay with the herd",
+      "current_nl": "Diegene die bij de Kudde blijven",
+      "proposed_nl": "Degenen die bij de Kudde blijven",
+      "rule_id": "canon-Q3 — Diegene→Degenen plural"
+    },
+    {
+      "id": "0-E0_Quest-J7",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J7",
+      "english": "Those who step away from the herd",
+      "current_nl": "Diegene die zich van de Kudde afscheiden",
+      "proposed_nl": "Degenen die zich van de Kudde afscheiden",
+      "rule_id": "canon-Q3 — Diegene→Degenen plural"
+    },
+    {
+      "id": "0-E0_Quest-J27",
+      "file": "0_asses.masses_Manager+Intermissions+E0Proxy.xlsx",
+      "sheet": "E0_Questions_localization",
+      "cell": "J27",
+      "english": "Have you ever lost your job because your role became redundant at your place of work?",
+      "current_nl": "Bent u ooit uw baan kwijtgeraakt omdat uw functie overbodig werd op uw werkplek?",
+      "proposed_nl": "Heb je ooit je job verloren omdat je functie overbodig werd op je werkplek?",
+      "rule_id": "canon-Q3 — register je/jij + baan→job per §6.16 + grammar"
+    },
+    {
+      "id": "1-E1_Farm_-J7",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J7",
+      "english": "NEW Government Sponsored Highway: Connecting Urban and Rural Communities",
+      "current_nl": "NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.",
+      "proposed_nl": "NIEUW Overheids-gesubsidieerde snelweg: brengt stedelijke en landelijke regio's in verbinding.",
+      "rule_id": "canon-15.6.A — NIEW/gesubsidiëerde/regios triple-typo fix"
+    },
+    {
+      "id": "1-E1_ThePr-J6",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_TheProtest_localization",
+      "cell": "J6",
+      "english": "To the south, our state of the art Mill and Granary.",
+      "current_nl": "Ten zuiden, onze piekfijne Molen en Graanschuur.",
+      "proposed_nl": "Naar 't zuiden, onze piekfijne Molen en Graanschuur.",
+      "rule_id": "canon-15.6.D — Ten zuiden → Naar t zuiden normalize"
+    },
+    {
+      "id": "1-E1_Stabl-J47",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Stable2F_localization",
+      "cell": "J47",
+      "english": "Someone has to sing the Song of Ascension to make sure his Ass Soul can reach the Astral Plane and be reassigned.",
+      "current_nl": "Zodat zijn ziel het Astrale Hiernamaals bereikt en hij weer kan herrijzen, iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen.",
+      "proposed_nl": "Iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen zodat zijn Ziel in het Astrale Hiernamaals heraangesteld kan worden.",
+      "rule_id": "canon-14.2.1 / 13.5 — Reassignment + fit-box rewrite"
+    },
+    {
+      "id": "1-E1_Farm_-J25",
+      "file": "1_asses.masses_E1Proxy.xlsx",
+      "sheet": "E1_Farm_localization",
+      "cell": "J25",
+      "english": "This ol' bucket ain't gonna fill itself!",
+      "current_nl": "Diej'n emmer gaat z'n eigen nie' volscheppen, héé.",
+      "proposed_nl": "Diej'n emmer gaat z'n eigen niet volscheppen, héé.",
+      "rule_id": "canon-§2 universal niet (E1 FU#2 — Thirsty nie volscheppen)"
+    },
+    {
+      "id": "2-E2_Battl-J11",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J11",
+      "english": "Miner Jenny uses HELMET SMASH.",
+      "current_nl": "Mijnwerker Jenny gebruikt DJOEF OP U BAKKES",
+      "proposed_nl": "Mijnwerker Jenny gebruikt DJOEF OP U BAKKES!",
+      "rule_id": "canon-6.7 — terminal ! fix"
+    },
+    {
+      "id": "2-E2_Battl-J13",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J13",
+      "english": "Miner Jenny uses SHOVEL.",
+      "current_nl": "Mijnwerker Jenny gebruikt SCHEP.",
+      "proposed_nl": "Mijnwerker Jenny gebruikt SCHUP.",
+      "rule_id": "canon-6.8 — SCHEP→SCHUP reversal"
+    },
+    {
+      "id": "2-E2_Battl-J14",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J14",
+      "english": "EAT SHOVEL ASSHOLE!!",
+      "current_nl": "EET DEZE SCHEP, KLOOTZAKSKE!!",
+      "proposed_nl": "HIER SÉ, KLOOTZAKSKE!!",
+      "rule_id": "canon-6.8 — Tom 3rd option taunt"
+    },
+    {
+      "id": "2-E2_Battl-J17",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J17",
+      "english": "How will you respond?",
+      "current_nl": "Wat is je respons?",
+      "proposed_nl": "Wat is je reactie?",
+      "rule_id": "canon-6.7 — respons→reactie Anglicism fix"
+    },
+    {
+      "id": "2-E2_Battl-J6",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_BattleMiner_localization",
+      "cell": "J6",
+      "english": "Ugh. I always knew you were a dumb beast.",
+      "current_nl": "Ugh. Ik wist altijd wel dat je maar\\neen dom beest bent.",
+      "proposed_nl": "Ugh. Ik wist altijd wel dat ge maar\neen dom beest zijt.",
+      "rule_id": "canon-6.17 — Miner Jenny ge/gij flip (je/bent → ge/zijt)"
+    },
+    {
+      "id": "2-E2_Miner-J3",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_MinersHouse_localization",
+      "cell": "J3",
+      "english": "A donkey? How'd you get here from the Mines?",
+      "current_nl": "Een Ezel? Hoe ben jij hier van de Mijnen geraakt?",
+      "proposed_nl": "Een Ezel? Hoe zijt gij hier van de Mijnen geraakt?",
+      "rule_id": "canon-6.17 — Jenny ge/gij flip + Ezel cap §7.1"
+    },
+    {
+      "id": "2-E2_Miner-J5",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_MinersHouse_localization",
+      "cell": "J5",
+      "english": "Quick, I need your help!",
+      "current_nl": "Snel, ik heb je hulp nodig!",
+      "proposed_nl": "Snel, ik heb uw hulp nodig!",
+      "rule_id": "canon-6.17 — Jenny ge/gij"
+    },
+    {
+      "id": "2-E2_Miner-J8",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_MinersHouse_localization",
+      "cell": "J8",
+      "english": "What, you can't hear me with those big dumb donkey ears?",
+      "current_nl": "Wat, kan je me niet verstaan met je domme ezelsoren, ofzo?",
+      "proposed_nl": "Wat, kunt ge me niet verstaan met uw domme Ezelsoren, ofzo?",
+      "rule_id": "canon-6.17 + 7.1 — Jenny ge/gij + Ezel cap"
+    },
+    {
+      "id": "2-E2_Miner-J9",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_MinersHouse_localization",
+      "cell": "J9",
+      "english": "Fine, I'll MAKE YOU DO IT!",
+      "current_nl": "Oké. IK MAAK ER ZEKER VAN DAT JE 'T VOOR MIJ DOET.",
+      "proposed_nl": "Oké. IK MAAK ER ZEKER VAN DAT GE 'T VOOR MIJ DOET.",
+      "rule_id": "canon-6.17 — Jenny ge/gij"
+    },
+    {
+      "id": "2-E2_World-J7",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J7",
+      "english": "NEW Derriere Sponsored Highway: Connecting Urban and Rural Communities",
+      "current_nl": "NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.",
+      "proposed_nl": "NIEUW Overheids-gesubsidieerde snelweg: brengt stedelijke en landelijke regio's in verbinding.",
+      "rule_id": "canon-15.6.A — sign typo fix"
+    },
+    {
+      "id": "2-E2_World-J7",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B1_localization",
+      "cell": "J7",
+      "english": "NEW Government Sponsored Highway: Connecting Urban and Rural Communities",
+      "current_nl": "NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.",
+      "proposed_nl": "NIEUW Overheids-gesubsidieerde snelweg: brengt stedelijke en landelijke regio's in verbinding.",
+      "rule_id": "canon-15.6.A — sign typo fix"
+    },
+    {
+      "id": "2-E2_World-J7",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B2_localization",
+      "cell": "J7",
+      "english": "NEW Government Sponsored Highway: Connecting Urban and Rural Communities",
+      "current_nl": "NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.",
+      "proposed_nl": "NIEUW Overheids-gesubsidieerde snelweg: brengt stedelijke en landelijke regio's in verbinding.",
+      "rule_id": "canon-15.6.A — sign typo fix"
+    },
+    {
+      "id": "2-E2_World-J7",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J7",
+      "english": "NEW Government Sponsored Highway—Connecting Urban and Rural Communities",
+      "current_nl": "NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.",
+      "proposed_nl": "NIEUW Overheids-gesubsidieerde snelweg—brengt stedelijke en landelijke regio's in verbinding.",
+      "rule_id": "canon-15.6.A — sign typo (EN uses em-dash here)"
+    },
+    {
+      "id": "2-E2_World-J4",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J4",
+      "english": "0 DAYS SINCE LAST ACCIDENT",
+      "current_nl": "364 DAGEN SINDS LAATSTE MIJN-ONGEVAL",
+      "proposed_nl": "0 DAGEN SINDS LAATSTE MIJN-ONGEVAL",
+      "rule_id": "canon-15.6.B — narrative-arc fix (EN reset to 0)"
+    },
+    {
+      "id": "2-E2_World-J6",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J6",
+      "english": "To the southwest, our state of the art Mill and Granary.",
+      "current_nl": "Naar 't zuiden, onze piekfijne Molen en Graanschuur.",
+      "proposed_nl": "Naar 't zuidwesten, onze piekfijne Molen en Graanschuur.",
+      "rule_id": "canon-15.6.B — south→zuidwesten per EN; piekfijne lock"
+    },
+    {
+      "id": "2-E2_World-J8",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A2_localization",
+      "cell": "J8",
+      "english": "Old Mountain Trail to the City",
+      "current_nl": "De Lange Weg Naar 't Schrijn in 't Bos.",
+      "proposed_nl": "Oud Bergpad Naar de Stad",
+      "rule_id": "canon-15.6.B — narrative-arc retranslate (EN: Old Mountain Trail to the City)"
+    },
+    {
+      "id": "2-E2_World-J4",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B2_localization",
+      "cell": "J4",
+      "english": "364 DAYS SINCE LAST MINING ACCIDENT",
+      "current_nl": "364 DAGEN SINDS LAATSTE INCIDENT",
+      "proposed_nl": "364 DAGEN SINDS LAATSTE MIJN-ONGEVAL",
+      "rule_id": "canon-15.6.E — INCIDENT→MIJN-ONGEVAL"
+    },
+    {
+      "id": "2-E2_World-J6",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B2_localization",
+      "cell": "J6",
+      "english": "To the south, our state of the art Mill and Granary.",
+      "current_nl": "Naar 't zuiden, onze hoogmoderne Molen en Graanschuur.",
+      "proposed_nl": "Naar 't zuiden, onze piekfijne Molen en Graanschuur.",
+      "rule_id": "canon-15.6.C — hoogmoderne→piekfijne"
+    },
+    {
+      "id": "2-E2_World-J10",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_B2_localization",
+      "cell": "J10",
+      "english": "The State of the Art Mill and Granary",
+      "current_nl": "De hoogmoderne Molen en Graanschuur.",
+      "proposed_nl": "De piekfijne Molen en Graanschuur.",
+      "rule_id": "canon-15.6.C — hoogmoderne→piekfijne"
+    },
+    {
+      "id": "2-E2_World-J10",
+      "file": "2_asses.masses_E2Proxy.xlsx",
+      "sheet": "E2_World_A1_localization",
+      "cell": "J10",
+      "english": "The State of the Art Mill and Granary",
+      "current_nl": "De hoogmoderne Molen en Graanschuur.",
+      "proposed_nl": "De piekfijne Molen met Graanopslag.",
+      "rule_id": "canon-15.6.C — hoogmoderne if present → piekfijne"
+    },
+    {
+      "id": "3-E3_BadCa-J5",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_BadCave_localization",
+      "cell": "J5",
+      "english": "Lazy? Is that you?",
+      "current_nl": "Luie? Zijt gij dat?",
+      "proposed_nl": "Luie? Ben je dat?",
+      "rule_id": "canon-Q1 / 5.3 — Foal je/jij in BadCave intimate scene"
+    },
+    {
+      "id": "3-E3_BadCa-J6",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_BadCave_localization",
+      "cell": "J6",
+      "english": "Lazy? Is that you?",
+      "current_nl": "Luie? Zijt gij dat?",
+      "proposed_nl": "Luie? Ben je dat?",
+      "rule_id": "canon-Q1 / 5.3 — Foal je/jij"
+    },
+    {
+      "id": "3-E3_100_l-J5",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_100_localization",
+      "cell": "J5",
+      "english": "I shouldn't touch the Machines... but what does it do?",
+      "current_nl": "k Mag de Machines niet aanraken... maar wat doet dat ding?",
+      "proposed_nl": "Ik mag de Machines niet aanraken... maar wat doet dat ding?",
+      "rule_id": "canon-9.1 / 9.2 — Foal 'k Mag→Ik mag (je/jij register, sentence start)"
+    },
+    {
+      "id": "3-E3_Mine1-J41",
+      "file": "3_asses.masses_E3Proxy.xlsx",
+      "sheet": "E3_Mine1F_localization",
+      "cell": "J41",
+      "english": "That day in the Outhouse... I really thought that things would get better.",
+      "current_nl": "Die dag in de Hudo... Ik dacht echt dat 't beter ging worden.",
+      "proposed_nl": "Die dag in de Plee... Ik dacht echt dat 't beter ging worden.",
+      "rule_id": "canon-6.1 — De Hudo → De Plee"
+    },
+    {
+      "id": "4-E4_HerdS-J62",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_HerdSplits_localization",
+      "cell": "J62",
+      "english": "Nice Ass what are you going to do?",
+      "current_nl": "Lieve Ezel, wat gaat gij doen, héé?",
+      "proposed_nl": "Schoon Beest, wat gaat gij doen, héé?",
+      "rule_id": "canon-Q6 / 4.4 — Thirsty Schoon Beest restore (was Lieve Ezel)"
+    },
+    {
+      "id": "4-E4_Kicks-J5",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_KicksGoodbye_localization",
+      "cell": "J5",
+      "english": "And when your Soul gets reassigned—I'LL FIND YOU.",
+      "current_nl": "En wanneer uw ZIEL herverkoren wordt — ZAL IK U VINDEN.",
+      "proposed_nl": "En wanneer uw ZIEL heraangesteld wordt — ZAL IK U VINDEN.",
+      "rule_id": "canon-13.5 — herverkoren→heraangesteld"
+    },
+    {
+      "id": "4-E4_Astra-J89",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J89",
+      "english": "If you try to leave to get reassigned, what are you???",
+      "current_nl": "Als je probeert weg te gaan om herverkoren te worden, wat ben je dan???",
+      "proposed_nl": "Als je probeert weg te gaan om heraangesteld te worden, wat ben je dan???",
+      "rule_id": "canon-13.5 — herverkoren→heraangesteld"
+    },
+    {
+      "id": "4-E4_Astra-J221",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_AstralPlaneMain_localization",
+      "cell": "J221",
+      "english": "Thanks for coming out tonight to my SET!!",
+      "current_nl": "BEDANKT VOOR BUITEN TE KOMEN VOOR MIJN SET!!",
+      "proposed_nl": "MERCI VOOR NAAR MIJN SET TE KOMEN!!!",
+      "rule_id": "canon-6.13 / Q15 — DJ welcome rephrase"
+    },
+    {
+      "id": "4-E4_Mine1-J23",
+      "file": "4_asses.masses_E4Proxy.xlsx",
+      "sheet": "E4_Mine1F_localization",
+      "cell": "J23",
+      "english": "Remember what Old Ass said: Ass Power!",
+      "current_nl": "Vergeet niet wat Oude Ezel zei: EZEL MACHT!",
+      "proposed_nl": "Vergeet niet wat Oude Ezel zei: EZELS EERST!",
+      "rule_id": "canon-14.1 — EZEL MACHT→EZELS EERST"
+    },
+    {
+      "id": "5-E5_Circu-J45",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J45",
+      "english": "Once the crowd sees my routine, the Ringmaster is sure to announce a World Tour!",
+      "current_nl": "Wanneer de Circusdirecteur mijn routine ziet kondigt ie meteen een Wereldtournee aan!",
+      "proposed_nl": "Wanneer de circusdirecteur mijn routine ziet kondigt ie meteen een wereldtournee aan!",
+      "rule_id": "canon-7.2 — Circusdirecteur cap fix + Wereldtournee→wereldtournee"
+    },
+    {
+      "id": "5-E5_Circu-J121",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J121",
+      "english": "Your duet with the Ringmaster brought tears to my eyes!",
+      "current_nl": "Uw duet met de Circusdirecteur ontroerde me!",
+      "proposed_nl": "Uw duet met de circusdirecteur ontroerde me!",
+      "rule_id": "canon-7.2 — Circusdirecteur mid-sentence"
+    },
+    {
+      "id": "5-E5_Circu-J221",
+      "file": "5_asses.masses_E5Proxy.xlsx",
+      "sheet": "E5_CircusMain_localization",
+      "cell": "J221",
+      "english": "Wait... what if that sleazy Ringmaster is playing a trick on us?",
+      "current_nl": "Wacht, wat als die vieze Circusdirecteur met onze voeten speelt?",
+      "proposed_nl": "Wacht, wat als die vieze circusdirecteur met onze voeten speelt?",
+      "rule_id": "canon-7.2 — Circusdirecteur mid-sentence"
+    },
+    {
+      "id": "6-E6_Night-J4",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J4",
+      "english": "I'm working overtime too—you don't see ME nodding off.",
+      "current_nl": "Ik werk ook na de uren—je ziet MIJ toch niet indutten.",
+      "proposed_nl": "Ik werk ook na de uren—ge ziet MIJ toch niet indutten.",
+      "rule_id": "canon-6.17 — Jenny ge/gij"
+    },
+    {
+      "id": "6-E6_Night-J5",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J5",
+      "english": "You're with me on Level 300 today!",
+      "current_nl": "Jij gaat vandaag met mij mee naar Niveau 300!",
+      "proposed_nl": "Gij gaat vandaag met mij mee naar Niveau 300!",
+      "rule_id": "canon-6.17 — Jenny ge/gij"
+    },
+    {
+      "id": "6-E6_Night-J28",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J28",
+      "english": "WHAT TOOK YOU SO LONG YOU PIECE OF SHIT?!",
+      "current_nl": "WAAROM DUURDE DAT ZO LANG, STUK STRONT DAT JE BENT?!",
+      "proposed_nl": "WAAROM DUURDE DAT ZO LANG, STUK STRONT DAT GE ZIJT?!",
+      "rule_id": "canon-6.17 — Jenny ge/gij"
+    },
+    {
+      "id": "6-E6_Night-J40",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Nightmare_localization",
+      "cell": "J40",
+      "english": "BECAUSE YOU KILLED ME!",
+      "current_nl": "OMDAT JE ME VERMOORD HEBT!",
+      "proposed_nl": "OMDAT GE ME VERMOORD HEBT!",
+      "rule_id": "canon-6.17 — Jenny ge/gij"
+    },
+    {
+      "id": "6-E6_World-J162",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J162",
+      "english": "\"The Pleasures of Entering Fannyside\"",
+      "current_nl": "\"De Geneugten van het Betreden van Muilebeek\"",
+      "proposed_nl": "\"De Geneugten van het Betreden van Muilenbeek\"",
+      "rule_id": "canon-15.7 / 3.1 — Muilebeek→Muilenbeek (Sculpture5 MENU)"
+    },
+    {
+      "id": "6-E6_World-J163",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J163",
+      "english": "\"The Pleasures of Entering Fannyside\"",
+      "current_nl": "\"De Geneugten van het Betreden van Muilebeek\"",
+      "proposed_nl": "\"De Geneugten van het Betreden van Muilenbeek\"",
+      "rule_id": "canon-15.7 / 3.1 — Muilebeek→Muilenbeek (Sculpture5 SAY)"
+    },
+    {
+      "id": "6-E6_World-J164",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J164",
+      "english": "\"Farm and Content\"",
+      "current_nl": "\"Boerderij en Tevredenheid\"",
+      "proposed_nl": "\"Hoeve en Tevredenheid\"",
+      "rule_id": "canon-15.7 / 3.6 — Boerderij→Hoeve"
+    },
+    {
+      "id": "6-E6_World-J165",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J165",
+      "english": "\"Farm and Content\"",
+      "current_nl": "\"Boerderij en Tevredenheid\"",
+      "proposed_nl": "\"Hoeve en Tevredenheid\"",
+      "rule_id": "canon-15.7 / 3.6 — Boerderij→Hoeve"
+    },
+    {
+      "id": "6-E6_World-J144",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J144",
+      "english": "\"Trusty, All is Well\"",
+      "current_nl": "\"Trouwe Ezel, Vreedzaam in de Put\"",
+      "proposed_nl": "\"Trouwe Ezel, Alles is Goed\"",
+      "rule_id": "canon-15.7 / Q18 — Trusty title revert to literal per EN co-authority"
+    },
+    {
+      "id": "6-E6_World-J145",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J145",
+      "english": "\"Trusty, All is Well\"",
+      "current_nl": "\"Trouwe Ezel, Vreedzaam in de Put\"",
+      "proposed_nl": "\"Trouwe Ezel, Alles is Goed\"",
+      "rule_id": "canon-15.7 / Q18 — Trusty title revert"
+    },
+    {
+      "id": "6-E6_Stabl-J3",
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_Stable2F_localization",
+      "cell": "J3",
+      "english": "I hope your Soul has already been reassigned and you're leading a new Herd somewhere in the world towards a life free of suffering.",
+      "current_nl": "Ik hoop dat je Ziel al opnieuw is toegewezen en dat je ergens in de wereld een nieuwe Kudde leidt naar een leven vrij van lijden.",
+      "proposed_nl": "Ik hoop dat je Ziel al is heraangesteld en dat je ergens in de wereld een nieuwe Kudde leidt naar een leven vrij van lijden.",
+      "rule_id": "canon-13.5 — opnieuw is toegewezen→is heraangesteld + Ziel/Kudde cap"
+    },
+    {
+      "id": "10-E10_Prop-J109",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J109",
+      "english": "ASS POWER!",
+      "current_nl": "EZELKRACHT!",
+      "proposed_nl": "EZELS EERST!",
+      "rule_id": "canon-14.1 — EZELKRACHT→EZELS EERST"
+    },
+    {
+      "id": "10-E10_Prop-J111",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_ProphetSpeech_localization",
+      "cell": "J111",
+      "english": "ASS POWER!",
+      "current_nl": "EZELKRACHT!",
+      "proposed_nl": "EZELS EERST!",
+      "rule_id": "canon-14.1 — EZELKRACHT→EZELS EERST"
+    },
+    {
+      "id": "10-E10_Cred-J116",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Credits_localization",
+      "cell": "J116",
+      "english": "ASS POWER",
+      "current_nl": "EZELSKRACHT",
+      "proposed_nl": "EZELS EERST",
+      "rule_id": "canon-14.1 — EZELSKRACHT→EZELS EERST"
+    },
+    {
+      "id": "10-E10_Gove-J169",
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J169",
+      "english": "So I got a job working in the forestry business.",
+      "current_nl": "Dus 'k heb nen job gevonden in de bosbouw, weet ge.",
+      "proposed_nl": "Dus 'k heb een job gevonden in de bosbouw, weet ge.",
+      "rule_id": "canon-6.16 — nen→een (Old Ass articleRule een only)"
+    }
+  ]
+}
