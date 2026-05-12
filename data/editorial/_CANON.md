@@ -916,20 +916,25 @@ Keep these so the next session knows what's been reversed.
 
 ## §19 — Per-episode status
 
-| Episode | Status | Last action |
+**Live state — end of canon-codification chat 2026-05-11:**
+- Canon walk complete (§0–§23). Codex v3.5 patched.
+- `corrections/2026-05-11-master.json` (56 cells) **applied to local xlsx but NOT pushed to remote.**
+- Next chats run per-episode E0 → E1 → ... → E10 per §20 protocol.
+
+| Episode | Locally-applied today | To do in next per-episode chat |
 |---|---|---|
-| E0 | ⏳ Audit done, not yet pushed | Awaiting E1 restart, sequential after |
-| E1 | ✅ Pushed (16 cells) + 1 FU staged (J25 Thirsty `nie' → niet` — CLEARED per §2 universal lock; ready to push) | **RESTART RECOMMENDED** — full audit against canon |
-| E2 | ⚠️ Pushed (41 cells) — but **J13/J14 re-push needed** (SCHUP reversal + new taunt) | Audit + SCHUP repush + SCHEP→SCHUP corpus-wide check |
-| E3 | ⏳ Audit done, blocked on Q1 | Decisions needed before batch |
-| E4 | ⏳ Audit done | J62 Schoon Beest restoration (Q7) |
-| E5 | ⏳ Audit done | Nijg→fel, doekjes om winden, Nummer pending |
-| E6 | ⏳ Audit done | Jansen vars (gulle/Kleine), Sturdy lament, Camion-Machine |
-| E7 | ⏳ Audit done | Camion-Machine, smaller fixes |
-| E8 | ⏳ Audit done | 8 Gods-cap cells |
-| E9 | ⏳ Audit done | 4 Gods-cap cells |
-| E10 | ⏳ Audit done | 9 Gods-cap cells, Tank/Vlieg hyphen, ezel8ig title |
-| E11 | ⛔ Italian fallback (52 cells), missing E10_Words_Dutch | Separate scope |
+| **E0** | 5 cells: CharacterProfiles J50 (Officieel), J52 (Vervallen); E0_Questions J6/J7 (Degenen), J27 (register+baan→job) | Push safety + push; then universal sweep (Ezel cap if any, etc.) |
+| **E1** | 4 cells: E1_Farm J7 (sign typos), E1_TheProtest J6 (zuiden norm), E1_Stable2F J47 (rewrite), E1_Farm J25 (Thirsty niet) — plus 16 pushed previously | Push safety + push; universal sweep (nie→niet, Ezel cap) |
+| **E2** | 20 cells: BattleMiner J6/J11/J13/J14/J17 (Jenny+SCHUP+reactie+!); MinersHouse J3/J5/J8/J9 (Jenny ge/gij); World_A1/A2/B1/B2 J7 (sign typos); World_A2 J4/J6/J8 (narrative-arc); World_B2 J4 (incident→MIJN-ONGEVAL); hoogmoderne→piekfijne ×3 — plus 41 pushed previously | Push safety + push; universal sweep |
+| **E3** | 4 cells: E3_BadCave J5/J6 (Foal je/jij), E3_100 J5 (Ik mag), E3_Mine1F J41 (Plee) | Push safety + push; universal sweep (nie→niet ~19, Ezel cap ~8, Muilenbeek ×3, Boerderij ×1, Beroep→Jobs ×2, Ik [Cap] artifact ×3, etc.) |
+| **E4** | 5 cells: HerdSplits J62 (Schoon Beest), KicksGoodbye J5 (heraangesteld), AstralPlaneMain J89 (heraangesteld), J221 (DJ welcome), Mine1F J23 (EZELS EERST) | Push safety + push; universal sweep |
+| **E5** | 3 cells: CircusMain J45/J121/J221 (Circusdirecteur cap fixes) | Push safety + push; universal sweep (Acte→Nummer ×7, Nijg→fel ×2, doekjes om winden ×1, Job cap ×9, Wereldtournee×1) |
+| **E6** | 11 cells: Nightmare J4/J5/J28/J40 (Jenny ge/gij); World J162/J163 (Muilenbeek), J164/J165 (Hoeve), J144/J145 (Trusty title revert); Stable2F J3 (heraangesteld) | Push safety + push; universal sweep (Jansen vars E6J8 gulle / E6J55 Kleine, Sturdy motto J142, Camion-Machine, Goden J160) |
+| **E7** | 0 | E7 universal sweep (Camion-Machine hyphen, Job cap) |
+| **E8** | 0 | E8 universal sweep (8 Gods cap U/Uw) |
+| **E9** | 0 | E9 universal sweep (4 Gods cap U/Uw) |
+| **E10** | 4 cells: ProphetSpeech J109/J111 (EZELS EERST), Credits J116 (EZELS EERST), Government J169 (nen→een) | Push safety + push; universal sweep (9 Gods cap U/Uw, Tank-/Vlieg- hyphens J148, Job cap, 8 split-donkey deep codex profile per Q8) |
+| **E11** | 0 | ⏸️ DEFERRED — Q5 separate session (52 Italian-fallback NonCSV cells + missing E10_Words_Dutch sheet) |
 
 ---
 
