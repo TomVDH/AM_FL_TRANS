@@ -1,7 +1,7 @@
 {
-  "version": "3.4",
+  "version": 3.5,
   "generated": "2026-03-31T20:45:29.182Z",
-  "lastSync": "2026-05-10 — Tom decisions lock: Bikkelharde (typo), *boe-hoe-hoe* (lowercase), EZELS EERST (slogan); Machine→Machien REVERTED (keep Machine).",
+  "lastSync": "2026-05-11 — canon §2 niet lock; Bad/Nice/Sad/Thirsty negationRule sync; Sick dutchShort=Snot + Kick inbound; Miner Jenny ge/gij flip; Cole-Machine/Thirsty/Jenny verbalTics drift fixes; +8 new entries (DJ Dope + 7 E10 splits) + Edgy Ass",
   "description": "Verified codex — main cast, user-confirmed data only",
   "entries": [
     {
@@ -55,7 +55,6 @@
       ],
       "contractionsForbidden": [],
       "dialectalMarkersAllowed": [
-        "nie",
         "godverdomme",
         "godverdomse",
         "verdomme",
@@ -67,7 +66,7 @@
         "gulle"
       ],
       "articleRule": "een only — never ne/nen",
-      "negationRule": "nie + niet both allowed — Bad Ass corpus has minimal negation overall (1 nie at R55, no niet); nie kept as heavy-Flemish character signature when it appears (parallel to Sad/Nice/Thirsty)",
+      "negationRule": "niet only — never nie (canon §2 universal lock 2026-05-11; supersedes Phase-C voice-signature exception)",
       "registerExceptions": [],
       "inboundAddressRules": [],
       "bulkTranslateExclusions": [
@@ -434,12 +433,10 @@
       "contractionsForbidden": [
         "'k"
       ],
-      "dialectalMarkersAllowed": [
-        "nie"
-      ],
+      "dialectalMarkersAllowed": [],
       "dialectalMarkersForbidden": [],
       "articleRule": "een only — never ne/nen",
-      "negationRule": "nie + niet both allowed — Nice keeps nie as character signature for emotional/colloquial moments (Q2 lock, parallel to Sad Ass)",
+      "negationRule": "niet only — never nie (canon §2 universal lock 2026-05-11; supersedes Phase-C voice-signature exception)",
       "registerExceptions": [
         {
           "scope": "gentle aunt-style address to Foal/child",
@@ -601,12 +598,10 @@
       "contractionsForbidden": [
         "'k"
       ],
-      "dialectalMarkersAllowed": [
-        "nie"
-      ],
+      "dialectalMarkersAllowed": [],
       "dialectalMarkersForbidden": [],
       "articleRule": "een only — never ne/nen",
-      "negationRule": "nie + niet both allowed — Sad keeps nie as character signature for emotional peaks (Q2 lock)",
+      "negationRule": "niet only — never nie (canon §2 universal lock 2026-05-11; supersedes Phase-C voice-signature exception)",
       "registerExceptions": [
         {
           "scope": "uncle-style 3rd-person address to children",
@@ -667,7 +662,7 @@
       "name": "Sick Ass",
       "english": "Sick Ass",
       "dutch": "Snot Ezel",
-      "dutchShort": "Snotje",
+      "dutchShort": "Snot",
       "category": "CHARACTER",
       "nicknames": [
         "Sick",
@@ -698,7 +693,13 @@
       "articleRule": "N/A",
       "negationRule": "N/A (no negation in corpus)",
       "registerExceptions": [],
-      "inboundAddressRules": [],
+      "inboundAddressRules": [
+        {
+          "scope": "nickname from Kick Ass only",
+          "form": "Snotje",
+          "context": "Kick Ass's signature diminutive for Sick Ass; nobody else uses Snotje"
+        }
+      ],
       "bulkTranslateExclusions": [
         {
           "cell": "E6_Nightmare_localization J48",
@@ -995,7 +996,7 @@
       "flemishDensity": "heavy",
       "register": "plat Vlaams",
       "pronounForm": "ge/gij",
-      "verbalTics": "héé sentence-final (signature, ~50% of lines), JIE-HAAA! (yeehaw), godverdoemme/godver (×13 incl 5 godverdoemme post-flip), allez ×5, *oef!*, amai, sie, doeme/gedoemme. Drink puns: Bronnini, Emmer Ale, Spuugspritz. Bar name: Poepegaatje (Bottom's Up). Calls Nice 'Schoon Beest'.",
+      "verbalTics": "héé sentence-final (signature, ~50% of lines), JIE-HAAA! (yeehaw), godverdoemme/godver (×13 incl 5 godverdoemme post-flip), allez ×5, *oef!*, amai, sie, doeme/gedoemme. Drink puns: Bronnini, Emmer Ale, Spuugspritz. Bar name: De Zatten Ezel. Calls Nice 'Schoon Beest'.",
       "dynamics": "lecherous, positive, older, easy-going",
       "relationships": "infatuated with Nice Ass; aspires to open Poepegaatje (Bottom's Up bar)",
       "verified": true,
@@ -1047,7 +1048,6 @@
       ],
       "contractionsForbidden": [],
       "dialectalMarkersAllowed": [
-        "nie",
         "nen",
         "héé",
         "Diej'n",
@@ -1067,7 +1067,7 @@
         "godverdomme"
       ],
       "articleRule": "een or nen — both allowed (nen is heavy Flemish article, character signature)",
-      "negationRule": "nie + niet both allowed — Thirsty keeps mixed distribution as plat Vlaams character signature (parallel to Sad/Nice)",
+      "negationRule": "niet only — never nie (canon §2 universal lock 2026-05-11; supersedes Phase-C voice-signature exception)",
       "registerExceptions": [],
       "inboundAddressRules": [],
       "bulkTranslateExclusions": [
@@ -1176,7 +1176,7 @@
       "flemishDensity": "heavy",
       "register": "tussentaal",
       "pronounForm": "ge/gij",
-      "verbalTics": "godverdomme (×16, profanity peak), 'k (×19, heavy contraction user — inherits Bad's heaviest-in-cast trait), 'k Veronderstel (grudging concession), Mechalen (Mecha City — political/parliament setting)",
+      "verbalTics": "godverdomme (×16, profanity peak), 'k (×19, heavy contraction user — inherits Bad's heaviest-in-cast trait), 'k Veronderstel (grudging concession), Technopolis (Mecha City — political/parliament setting)",
       "dynamics": "philosophical, profane, political; passes Bad's edgy intellectualism into AI form",
       "relationships": "former human (Cole Butte → Piet Vanscheetvelde); Bad Ass's pre-donkey identity, transformed into machine in E9; mentor to Foal in E9_BadCave / E10_Government",
       "verified": true,
@@ -1979,22 +1979,23 @@
       "bio": "Night-shift miner. Tough, demanding, emotionally vulnerable when discussing breakup. Working-class ABN. 19 lines.",
       "gender": "female",
       "flemishDensity": "none",
-      "register": "ABN working-class colloquial",
-      "pronounForm": "jij/je",
-      "verbalTics": "emotional curses ('Stuk Stront Dat Je Bent'), tough register",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "verbalTics": "emotional curses ('Stuk Stront Dat Ge Zijt'), tough register",
       "dynamics": "tough, vulnerable, working-class",
       "verified": true,
       "pronounsAllowed": [
-        "jij",
-        "je",
-        "jou",
-        "jouw"
-      ],
-      "pronounsForbidden": [
         "ge",
         "gij",
         "u",
-        "uw"
+        "uw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw"
       ],
       "contractionsAllowed": [
         {
@@ -2136,6 +2137,419 @@
         "correctionsApplied": 0,
         "correctionsFile": null,
         "rulesLocked": "ABN working-class anxious — corpus clean. 2 je-family, 2 niet, 0 contractions."
+      }
+    },
+    {
+      "name": "DJ Dope Ass",
+      "english": "DJ Dope Ass",
+      "dutch": "DJ Dope Ezel",
+      "dutchShort": "DJ Dope",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "(TBD)",
+      "gender": "TBD",
+      "flemishDensity": "TBD",
+      "register": "casual-DJ",
+      "pronounForm": "je/jij",
+      "verbalTics": "(TBD)",
+      "dynamics": "TBD",
+      "relationships": "TBD",
+      "verified": false,
+      "pronounsAllowed": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "TBD",
+      "negationRule": "niet only (per canon §2 universal lock)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "stub-2026-05-11",
+        "lockedOn": "2026-05-11",
+        "correctionsApplied": 0,
+        "rulesLocked": "Stub entry — register lock only. Deep profile deferred."
+      }
+    },
+    {
+      "name": "Helpful Ass",
+      "english": "Helpful Ass",
+      "dutch": "Helpful Ezel",
+      "dutchShort": "Helpful",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "(E10 split-donkey personality variant — full bio TBD in E10 episode chat)",
+      "gender": "TBD",
+      "flemishDensity": "TBD",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "verbalTics": "(TBD — deep profile deferred to E10 episode chat)",
+      "dynamics": "TBD",
+      "relationships": "TBD",
+      "verified": false,
+      "pronounsAllowed": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "TBD",
+      "negationRule": "niet only (per canon §2 universal lock)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "stub-2026-05-11",
+        "lockedOn": "2026-05-11",
+        "correctionsApplied": 0,
+        "rulesLocked": "Stub entry — register lock only. Deep profile deferred."
+      }
+    },
+    {
+      "name": "Skinny Ass",
+      "english": "Skinny Ass",
+      "dutch": "Skinny Ezel",
+      "dutchShort": "Skinny",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "(E10 split-donkey personality variant — full bio TBD in E10 episode chat)",
+      "gender": "TBD",
+      "flemishDensity": "TBD",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "verbalTics": "(TBD — deep profile deferred to E10 episode chat)",
+      "dynamics": "TBD",
+      "relationships": "TBD",
+      "verified": false,
+      "pronounsAllowed": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "TBD",
+      "negationRule": "niet only (per canon §2 universal lock)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "stub-2026-05-11",
+        "lockedOn": "2026-05-11",
+        "correctionsApplied": 0,
+        "rulesLocked": "Stub entry — register lock only. Deep profile deferred."
+      }
+    },
+    {
+      "name": "Tragic Ass",
+      "english": "Tragic Ass",
+      "dutch": "Tragic Ezel",
+      "dutchShort": "Tragic",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "(E10 split-donkey personality variant — full bio TBD in E10 episode chat)",
+      "gender": "TBD",
+      "flemishDensity": "TBD",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "verbalTics": "(TBD — deep profile deferred to E10 episode chat)",
+      "dynamics": "TBD",
+      "relationships": "TBD",
+      "verified": false,
+      "pronounsAllowed": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "TBD",
+      "negationRule": "niet only (per canon §2 universal lock)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "stub-2026-05-11",
+        "lockedOn": "2026-05-11",
+        "correctionsApplied": 0,
+        "rulesLocked": "Stub entry — register lock only. Deep profile deferred."
+      }
+    },
+    {
+      "name": "Gaunt Ass",
+      "english": "Gaunt Ass",
+      "dutch": "Gaunt Ezel",
+      "dutchShort": "Gaunt",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "(E10 split-donkey personality variant — full bio TBD in E10 episode chat)",
+      "gender": "TBD",
+      "flemishDensity": "TBD",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "verbalTics": "(TBD — deep profile deferred to E10 episode chat)",
+      "dynamics": "TBD",
+      "relationships": "TBD",
+      "verified": false,
+      "pronounsAllowed": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "TBD",
+      "negationRule": "niet only (per canon §2 universal lock)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "stub-2026-05-11",
+        "lockedOn": "2026-05-11",
+        "correctionsApplied": 0,
+        "rulesLocked": "Stub entry — register lock only. Deep profile deferred."
+      }
+    },
+    {
+      "name": "Proper Ass",
+      "english": "Proper Ass",
+      "dutch": "Proper Ezel",
+      "dutchShort": "Proper",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "(E10 split-donkey personality variant — full bio TBD in E10 episode chat)",
+      "gender": "TBD",
+      "flemishDensity": "TBD",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "verbalTics": "(TBD — deep profile deferred to E10 episode chat)",
+      "dynamics": "TBD",
+      "relationships": "TBD",
+      "verified": false,
+      "pronounsAllowed": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "TBD",
+      "negationRule": "niet only (per canon §2 universal lock)",
+      "registerExceptions": [
+        {
+          "scope": "formal address (matches personality archetype)",
+          "allows": [
+            "u",
+            "uw"
+          ],
+          "contexts": [
+            "Personality-driven formal register: e.g., Proper=propriety, Resentful=cold formality, Bleak=detached formality. Confirmed in E10 corpus."
+          ]
+        }
+      ],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "stub-2026-05-11",
+        "lockedOn": "2026-05-11",
+        "correctionsApplied": 0,
+        "rulesLocked": "Stub entry — register lock only. Deep profile deferred."
+      }
+    },
+    {
+      "name": "Resentful Ass",
+      "english": "Resentful Ass",
+      "dutch": "Resentful Ezel",
+      "dutchShort": "Resentful",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "(E10 split-donkey personality variant — full bio TBD in E10 episode chat)",
+      "gender": "TBD",
+      "flemishDensity": "TBD",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "verbalTics": "(TBD — deep profile deferred to E10 episode chat)",
+      "dynamics": "TBD",
+      "relationships": "TBD",
+      "verified": false,
+      "pronounsAllowed": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "TBD",
+      "negationRule": "niet only (per canon §2 universal lock)",
+      "registerExceptions": [
+        {
+          "scope": "formal address (matches personality archetype)",
+          "allows": [
+            "u",
+            "uw"
+          ],
+          "contexts": [
+            "Personality-driven formal register: e.g., Proper=propriety, Resentful=cold formality, Bleak=detached formality. Confirmed in E10 corpus."
+          ]
+        }
+      ],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "stub-2026-05-11",
+        "lockedOn": "2026-05-11",
+        "correctionsApplied": 0,
+        "rulesLocked": "Stub entry — register lock only. Deep profile deferred."
+      }
+    },
+    {
+      "name": "Bleak Ass",
+      "english": "Bleak Ass",
+      "dutch": "Bleak Ezel",
+      "dutchShort": "Bleak",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "(E10 split-donkey personality variant — full bio TBD in E10 episode chat)",
+      "gender": "TBD",
+      "flemishDensity": "TBD",
+      "register": "tussentaal",
+      "pronounForm": "je/jij",
+      "verbalTics": "(TBD — deep profile deferred to E10 episode chat)",
+      "dynamics": "TBD",
+      "relationships": "TBD",
+      "verified": false,
+      "pronounsAllowed": [
+        "je",
+        "jij",
+        "jou",
+        "jouw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "ge",
+        "gij"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "TBD",
+      "negationRule": "niet only (per canon §2 universal lock)",
+      "registerExceptions": [
+        {
+          "scope": "formal address (matches personality archetype)",
+          "allows": [
+            "u",
+            "uw"
+          ],
+          "contexts": [
+            "Personality-driven formal register: e.g., Proper=propriety, Resentful=cold formality, Bleak=detached formality. Confirmed in E10 corpus."
+          ]
+        }
+      ],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "stub-2026-05-11",
+        "lockedOn": "2026-05-11",
+        "correctionsApplied": 0,
+        "rulesLocked": "Stub entry — register lock only. Deep profile deferred."
+      }
+    },
+    {
+      "name": "Edgy Ass",
+      "english": "Edgy Ass",
+      "dutch": "Edgy Ezel",
+      "dutchShort": "Edgy",
+      "category": "CHARACTER",
+      "nicknames": [],
+      "bio": "(E10 split-donkey personality variant — full bio TBD in E10 episode chat)",
+      "gender": "TBD",
+      "flemishDensity": "TBD",
+      "register": "tussentaal",
+      "pronounForm": "ge/gij",
+      "verbalTics": "(TBD — deep profile deferred to E10 episode chat)",
+      "dynamics": "TBD",
+      "relationships": "TBD",
+      "verified": false,
+      "pronounsAllowed": [
+        "ge",
+        "gij",
+        "u",
+        "uw",
+        "jullie"
+      ],
+      "pronounsForbidden": [
+        "je",
+        "jij",
+        "jou",
+        "jouw"
+      ],
+      "contractionsAllowed": [],
+      "contractionsForbidden": [],
+      "dialectalMarkersAllowed": [],
+      "dialectalMarkersForbidden": [],
+      "articleRule": "TBD",
+      "negationRule": "niet only (per canon §2 universal lock)",
+      "registerExceptions": [],
+      "inboundAddressRules": [],
+      "editorialPass": {
+        "passName": "stub-2026-05-11",
+        "lockedOn": "2026-05-11",
+        "correctionsApplied": 0,
+        "rulesLocked": "Stub entry — register lock only. Deep profile deferred."
       }
     }
   ],
