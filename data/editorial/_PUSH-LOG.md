@@ -1184,6 +1184,19 @@ Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereld
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 8 cells**.
 
+## 🎯 E7 Push 2 — register fix (retro, 1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E7_Holding2_localization | J18 | Resentful Ass | `Gij hebt geluk, gij hebt nog een deel van uw Kudde. Voorlopig dan toch.` | `Je hebt geluk, je hebt nog een deel van je Kudde. Voorlopig dan toch.` | §1 / §5.0 / Q19 |
+
+### Notes
+- Gap discovered post-E7-commit: scanner had no je/jij ↔ ge/gij register check (only §7.4 God-cap). Resentful Ass is je/jij + formal-address exception (Q19) — `gij` is forbidden for je/jij speakers in any context; formal exception allows `u/uw` only. EN ("You're lucky… For now.") is peer-to-peer sneer, not formal-context — fix lands on default je/jij, not formal u/uw exception.
+- TODO: extend e*_sweep_scan.py with register check (ge/gij speakers using je/jij/jou/jouw; je/jij speakers using gij/zijt/hebde) and retro-scan E0–E9.
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 1 cell** (`excels.fresh-pull-2026-05-12-e7-verify2/`).
+
 ## 🎯 E8 Push — universal sweep (9 cells)
 
 | Sheet | Cell | Speaker | Before | After | Rule |

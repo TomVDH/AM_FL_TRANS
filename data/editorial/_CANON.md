@@ -51,7 +51,7 @@ Locked by canon, not yet reflected in codex JSON:
 
 #### New codex entries (NOT YET in codex)
 8. **DJ Dope Ass** — `pronounsAllowed: ['je','jij','jou','jouw','jullie']`; `register: tussentaal`; DJ flavor
-9. **Helpful Ass** (E10 split) — je/jij — stub
+9. **Helpful Ass** (E10 split) — **ge/gij** — locked 2026-05-12 (Q8 partial revision; corpus-driven, see §5.0 + Q8 note). Strong Flemish/tussentaal folk-storyteller voice: `Zijde gij`, `Zegt ze`, `Vertelt`, `Ge gaat`, `Wil de 't`, `weet ge`, `Merci da ge`, `'k Ben/Droeg/heb/Wou/Was`, `da`/`wa da`, `nen`/`ne keer`, `dorpke`, `plezant`, `hé`. 30 cells in E10_Government — all ge/gij; zero ABN markers.
 10. **Skinny Ass** (E10 split) — je/jij — stub
 11. **Tragic Ass** (E10 split) — je/jij — stub
 12. **Gaunt Ass** (E10 split) — je/jij — stub
@@ -216,7 +216,7 @@ Codex bump v3.4 → v3.5 needed.
 
 ### 5.0 Register membership (from codex_verified.json v3.4)
 
-**ge/gij register (Flemish) — 11 characters (was 10; Miner Jenny added 2026-05-11):**
+**ge/gij register (Flemish) — 12 characters (was 11; Helpful Ass added 2026-05-12, was 10; Miner Jenny added 2026-05-11):**
 | Character | Notes |
 |---|---|
 | Bad Ass | |
@@ -230,6 +230,7 @@ Codex bump v3.4 → v3.5 needed.
 | Old Ass | |
 | Thirsty Ass | + `gulle` |
 | **Miner Jenny** | **moved from je/jij 2026-05-11; codex v3.5 pending** |
+| **Helpful Ass** | **E10 split; moved from je/jij stub 2026-05-12 (Q8 partial revision; corpus-driven). Folk-storyteller; 30 cells in E10_Government** |
 
 **je/jij register (ABN Standard Dutch) — 15 characters (was 16; Miner Jenny moved):**
 | Character | Notes |
@@ -830,7 +831,7 @@ Examples from 2026-05-11:
 | Q5 | E11 NonCSV signs (52 cells) — **DEFERRED 2026-05-11**: handle in separate later session. Critical backlog flagged. | E11 scope ⏸️ |
 | ~~Q6~~ | ~~E4_HerdSplits J62: Thirsty `Schoon Beest` restoration~~ — **RESOLVED 2026-05-11:** `Schoon Beest, wat gaat gij doen, héé?` (replaces `Lieve Ezel`). | §4.4 ✅ |
 | ~~Q7~~ | ~~Klotegemmers vs Klotegemnaars~~ — **RESOLVED 2026-05-11: Klotegemmers wins.** | §3.3 ✅ |
-| ~~Q8~~ | ~~`registerExceptions` scrutiny~~ — **RESOLVED 2026-05-11**: ge/gij chars use u/uw natively (not exception). §5.1 reframed. **Real Q8 finding = 8 E10 split-donkey codex gaps** (Helpful/Skinny/Tragic/Gaunt = je/jij; Edgy = ge/gij locked; Proper/Resentful/Bleak → Q19). | §1 sync ✅ |
+| ~~Q8~~ | ~~`registerExceptions` scrutiny~~ — **RESOLVED 2026-05-11**: ge/gij chars use u/uw natively (not exception). §5.1 reframed. **Real Q8 finding = 8 E10 split-donkey codex gaps** (Helpful/Skinny/Tragic/Gaunt = je/jij; Edgy = ge/gij locked; Proper/Resentful/Bleak → Q19). **PARTIAL REVISION 2026-05-12 (Tom):** corpus review during E10 sweep moved **Helpful Ass → ge/gij** (folk-storyteller voice: `Zijde gij`, `Zegt ze`, `Vertelt`, `Wil de 't`, `'k Ben/heb/Wou`, `weet ge`, `Merci da ge`, `da`/`wa da`, `nen`/`ne keer`, `dorpke`, `plezant`; 30 cells in E10_Government — zero ABN markers). Skinny/Tragic/Gaunt remain je/jij. | §1 sync ✅ + §5.0 update |
 | ~~Q9~~ | ~~`verbalTics` scrutiny~~ — **RESOLVED 2026-05-11**: 3 drift items found (Cole-Machine Mechalen→Technopolis, Thirsty Poepegaatje→De Zatten Ezel, Miner Jenny `Je Bent`→`Ge Zijt`). Codex v3.5 patch staged. | Codex sync ✅ |
 
 ### Patrick conflicts / re-opened (2026-05-11)
@@ -940,7 +941,7 @@ Keep these so the next session knows what's been reversed.
 | **E4** | ✅ **COMPLETE 2026-05-12** — Push 1: 5 cells (HerdSplits J62 Schoon Beest §4.4; KicksGoodbye J5 + AstralPlaneMain J89 heraangesteld §13.5; AstralPlaneMain J221 DJ welcome §6.13; Mine1F J23 EZELS EERST §14.1). Push 2: 3 sweep cells (HerdSplits J10/J63 Muilenbeek §3.1; AstralPlaneMain J127 HAW donkey nie→niet §2 + accent polish). Sweep: §6.16 J32 confirmed lowercase (Smart Ass parallel to E2 Bad Ass precedent — generic reclaim-work). Round-trip: 0 diffs. | ✅ Done |
 | **E5** | ✅ **COMPLETE 2026-05-12** — Push 1: 3 cells (CircusMain J45/J121/J221 Circusdirecteur lc retcon — LATER REVERSED in Push 3). Push 2: 19 cells universal sweep — CircusMain J21/J73 acte→Nummer §6.10; J25/J26 Ringmaster Rico Job cap §6.16; J132 Kick Ass Job §6.16; J167/J176 Slow Ass nijg→fel §6.12; J168/J177 Smart Ass Circusdirecteur+Tournee lc — LATER REVERSED in Push 3; J195 Ringmaster doekjes om winden §10.1; J215/J217/J218/J220 Ezel cap §7.1; J245 Derriere Jobs §6.16; ZooMain J120 Sad Ass Job §6.16; J224 Grandma Kulan Ezeltje §7.1; ZooCapture J30/J33 Wedgie+Zookeeper Rose Ezel §7.1. Push 3: 6 cells revert per §7.2 cap-everywhere lock — re-cap `Circusdirecteur` (J45/J58/J121/J168/J177/J221) + `Wereldtournee` (J45/J58) + bare `Tournee` (J168/J177). §6.16 exceptions added (Tom 2026-05-12): J106 + J131 (Smart Ass generic-reclaim, parallel to J199/J208). §18 reversed: Wereldtournee + Circusdirecteur retcons. Round-trip: 0 diffs / 23 cells. | ✅ Done |
 | **E6** | ✅ **COMPLETE 2026-05-12** — Push 1: 9 cells (Nightmare J4/J5/J28/J40 Jenny ge/gij §6.17; World J162/J163/J164/J165 Muilenbeek+Hoeve §3.1/§3.6; Stable2F J3 heraangesteld §13.5). J144/J145 kept (Vreedzaam in de Put). BattleHard J8 accepted Patrick's `u`. Push 2: 23 sweep cells (Nightmare J3/J6/J29 §7.1; BadCave J14/J25 §2 + J55 §6.11+§2+§7.1; World J6/J14/J15/J78/J219 §12.1 Kameraad + J179/J190/J203/J249/J302/J314/J317/J336 §2 + J41/J47/J214 §3.6 + J161 §3.1). §10.7 `slokske` locked. Push 3: 1 cell (World J142 §12.2 Sturdy motto `Naar de hel met die…`). Push 4 (tail): 1 cell (World J160 §13.3 Sturdy `Geprezen zijn de Goden`). Round-trip: 0 diffs all pushes. | ✅ Done |
-| **E7** | ✅ **COMPLETE 2026-05-12** — Push 1: 8 sweep cells (Opening J5 job→Job §6.16; Opening J12 ezels→Ezels §7.1; Holding1 J8 nie→niet §2; ShippingTwo J5/J7/J9/J12 ezels→Ezels §7.1 — Factory PA, Andy, Derriere; BigBattle J10 ezeltje→Ezeltje §7.1 — Derriere diminutive). No staged cells pre-sweep. §8.2 Camion-Machine clean (0 hits). §6.11 jansen extinct confirmed (0 hits). Round-trip: 0 diffs. | ✅ Done |
+| **E7** | ✅ **COMPLETE 2026-05-12** — Push 1: 8 sweep cells (Opening J5 job→Job §6.16; Opening J12 ezels→Ezels §7.1; Holding1 J8 nie→niet §2; ShippingTwo J5/J7/J9/J12 ezels→Ezels §7.1 — Factory PA, Andy, Derriere; BigBattle J10 ezeltje→Ezeltje §7.1 — Derriere diminutive). Push 2 (register retro): 1 cell (Holding2 J18 Resentful Ass `gij→je` per §1/Q19 — je/jij char forbidden from `gij`). §8.2 Camion-Machine clean. §6.11 jansen extinct confirmed. Round-trip: 0 diffs both pushes. ⚠️ GAP: scanners lacked register check (ge/gij↔je/jij contamination); extension + E0–E9 retro-scan pending. | ✅ Done |
 | **E8** | ✅ **COMPLETE 2026-05-12** — Push 1: 9 cells (SanctumMain J17 Boerderij→Hoeve §3.6; TheGods J6/J14/J15/J22/J33/J40/J42/J43 u/uw→U/Uw §7.4). Round-trip: 0 diffs. | ✅ Done |
 | **E9** | ✅ **COMPLETE 2026-05-12** — Push 1: 8 cells (GoldenAss J10 Ezel §7.1; GoldenAss J19/J47/J83/J130 God-register U/Uw §7.4; BadCave J9/J14/J24 Ezel(s) §7.1). Push 2 (tail): 5 cells Cole-Machine §5.4 ge/gij imperatives — BadCave J34 Geef→Geeft, J63 Stop→Stopt, J64 Probeer→Probeert + §7.3 machine→Machine, J81 Luister→Luistert; GoldenAss J135 Ga→Gaat. Verify-only: BadCave J43 Sturdy motto retained EN-co-authoritative 3-adj form; J68 + MineEscape J18–21 already canonical. Round-trip: 0 diffs all pushes. | ✅ Done |
 | **E10** | 4 cells: ProphetSpeech J109/J111 (EZELS EERST), Credits J116 (EZELS EERST), Government J169 (nen→een) | Push safety + push; universal sweep (9 Gods cap U/Uw, Tank-/Vlieg- hyphens J148, Job cap, 8 split-donkey deep codex profile per Q8) |
