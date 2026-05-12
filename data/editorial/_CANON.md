@@ -128,6 +128,10 @@ Codex bump v3.4 → v3.5 needed.
 - **Canonical:** `Technopolis`. EN "Mecha" / "Mechalen" → `Technopolis`. ALL CAPS variant: `MECHA → TECHNOPOLIS`.
 - **Status:** ✅ Patrick: "Mechalen replaced by Technopolis in all episodes strings" + "Standardized Technopolis in sprites/backgrounds".
 
+#### 3.4.1 Imechelda Algemeen Ziekenhuis — ✅ TOM LOCKED 2026-05-12
+- **Exception to §3.4:** the hospital named "Mecha General Hospital" in EN → **`Imechelda Algemeen Ziekenhuis`** (not `Technopolis Algemeen Ziekenhuis`). The hospital retains a separate proper-noun naming style (Mecha + Mechelen wordplay).
+- **Status:** ✅ E3_100 J16 implemented 2026-05-12. Watch for any other "Mecha X Hospital" references corpus-wide.
+
 ### 3.5 De Zatten Ezel (the bar) — ✅ TOM LOCKED 2026-05-11
 - **Canonical:** **`De Zatten Ezel`**. EN "The Drunk Ass" / "Poepegaatje".
 - **No `Café` prefix, no `Cafe` suffix, no preceding article** (`het`/`een` dropped).
@@ -926,7 +930,7 @@ Keep these so the next session knows what's been reversed.
 | **E0** | ✅ **COMPLETE 2026-05-12** — Push 1: 5 cells (CharacterProfiles J50/J52; E0_Questions J6/J7/J27). Push 2: 19 cells universal sweep (E0_Questions J43 job→Job §6.16; J67/68/69/70/73/74/75/76/83/84/87/93/95/96/97/101/105/108 Ezel cap §7.1; J74 hebbem→hebben typo). Round-trip: 0 diffs. | ✅ Done |
 | **E1** | ✅ **COMPLETE 2026-05-12** — Push 1: 4 cells (E1_Farm J7 sign typos §15.6A; E1_Farm J25 Thirsty nie→niet §2; E1_Stable2F J47 Hemelvaarts-zang rewrite §14.2.1+§13.5; E1_TheProtest J6 zuiden norm §15.6D+§15.6C). Push 2: 2 cells universal sweep (E1_TheProtest J54 plan→Plan §6.9; E1_Stable2F J56 Sturdy motto reword §12.2). Round-trip: 0 diffs. | ✅ Done |
 | **E2** | ✅ **COMPLETE 2026-05-11** — Push: 20 cells (BattleMiner J6/J11/J13/J14/J17; MinersHouse J3/J5/J8/J9; World_A1/A2/B1/B2 J7 sign typos; World_A2 J4/J6/J8 narrative-arc; World_B2 J4 MIJN-ONGEVAL; hoogmoderne→piekfijne ×3). Sweep: 0 actionable — §2/§7.1/§3.6/§6.17(UI false pos)/§12.1(EN-justified)/§4.4(exception) all clean; §6.16 J58+J5 confirmed lowercase (generic context). Round-trip: 0 diffs. | ✅ Done |
-| **E3** | 4 cells: E3_BadCave J5/J6 (Foal je/jij), E3_100 J5 (Ik mag), E3_Mine1F J41 (Plee) | Push safety + push; universal sweep (nie→niet ~19, Ezel cap ~8, Muilenbeek ×3, Boerderij ×1, Beroep→Jobs ×2, Ik [Cap] artifact ×3, etc.) |
+| **E3** | ✅ **COMPLETE 2026-05-12** — Push 1: 4 staged (BadCave J5/J6 Foal je→jij flip + `jij` cap; 100 J5 `Ik mag` per §9.6; Mine1F J41 Plee). Push 2 sweep: 14 cells Mine1F (§2 ×10: J17/19/31/33/42/45/67/72/75/78/84 + J75 §5.4 Zegt + §3.1 ×2 J79/J136 Muilenbeek + §6.16 ×2 J49 reword Jobs/J136). Push 3: BadCave §2 ×5 (J20/21/22/26/35 + J35 §7.1). Push 4: LazysGrave §2 ×3 (J8/17/25). Push 5: E3_100 J7/J10/J11/J16 (§9.2 Ik [Cap] artifact, §7.1 Ezels, §8.2 Boor-Machine, §3.4.1 Imechelda Algemeen Ziekenhuis). Push 6: E3_200 J3 (§9.2+§7.1+§3.6+§3.1 combined). Push 7: E3_300 J3 (§7.1) + E3_DonkeyBas J17 (§7.1). Total: 33 cells. Round-trip: 0 diffs. | ✅ Done |
 | **E4** | 5 cells: HerdSplits J62 (Schoon Beest), KicksGoodbye J5 (heraangesteld), AstralPlaneMain J89 (heraangesteld), J221 (DJ welcome), Mine1F J23 (EZELS EERST) | Push safety + push; universal sweep |
 | **E5** | 3 cells: CircusMain J45/J121/J221 (Circusdirecteur cap fixes) | Push safety + push; universal sweep (Acte→Nummer ×7, Nijg→fel ×2, doekjes om winden ×1, Job cap ×9, Wereldtournee×1) |
 | **E6** | 11 cells: Nightmare J4/J5/J28/J40 (Jenny ge/gij); World J162/J163 (Muilenbeek), J164/J165 (Hoeve), J144/J145 (Trusty title revert); Stable2F J3 (heraangesteld) | Push safety + push; universal sweep (Jansen vars E6J8 gulle / E6J55 Kleine, Sturdy motto J142, Camion-Machine, Goden J160) |
@@ -974,6 +978,17 @@ Keep these so the next session knows what's been reversed.
 | 🔴 | Critical conflict |
 | ⛔ | Blocked / out of scope this cycle |
 | ⚠️ | Active warning — read before acting |
+
+---
+
+## §21.5 — Tooling notes (push-file.py quirks)
+
+### Leading-apostrophe handling — ✅ FIXED 2026-05-12
+- **Issue:** Google Sheets API with `value_input_option=USER_ENTERED` treats a leading `'` as a "force text" format marker and strips it from the stored value (cell displays without the apostrophe).
+- **Affected pattern:** Flemish contractions at sentence start (`'t Is`, `'k Heb`, `'n`) when pushed via `scripts/convert/push-file.py`.
+- **Fix:** `push-file.py` patched to route any cell whose value starts with `'` through `value_input_option=RAW`, which bypasses the marker parsing. All other cells continue via `USER_ENTERED`.
+- **Retcon scan (2026-05-12):** swept all 11 episode files against fresh xlsx-export pull → **0 cells** stripped of leading `'` across E0–E10. The 67 corpus cells starting with `'` predate API push (Patrick xlsx-import preserved them).
+- **Round-trip verification:** the in-script `col_values()` comparison still shows false-positive diffs for `'`-leading cells written via RAW (because `col_values` returns the displayed value, not the literal). Use `scripts/convert/pull-snapshot.py` (xlsx export) + cell-by-cell compare for true round-trip verification.
 
 ---
 

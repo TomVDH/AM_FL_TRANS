@@ -818,3 +818,103 @@ Each section below records a single push event with per-cell context:
 - **Pushed:** De piekfijne Molen en Graanschuur.
 - *Rule:* §15.6C — hoogmoderne→piekfijne
 
+
+## 2026-05-12 — E3 push (33 cells across 7 sub-tabs)
+
+### Push 1 (4 staged cells)
+
+**[E3-001] E3_BadCave J5 · Foal**
+- **EN:** Lazy? Is that you?
+- **Was:** Luie? Zijt gij dat?
+- **Pushed:** Luie? Ben jij dat?
+- *Rule:* §5.3 + §17 Q1 (option C) — Foal flips to je/jij intimate scene with Lazy; `jij` stressed (emphatic per EN "that")
+
+**[E3-002] E3_BadCave J6 · Foal**
+- **EN:** Lazy? Is that you?
+- **Was:** Luie? Zijt gij dat?
+- **Pushed:** Luie? Ben jij dat?
+- *Rule:* §5.3 + §17 Q1
+
+**[E3-003] E3_100 J5 · Foal (action context)**
+- **EN:** I shouldn't touch the Machines... but what does it do?
+- **Was:** 'k Mag de Machines niet aanraken... maar wat doet dat ding?
+- **Pushed:** Ik mag de Machines niet aanraken... maar wat doet dat ding?
+- *Rule:* §9.6 (diary-sheet uncontracted Ik/Het — overrides §9.1)
+
+**[E3-004] E3_Mine1F J41 · (narrative)**
+- **EN:** That day in the Outhouse... I really thought that things would get better.
+- **Was:** Die dag in de Hudo... Ik dacht echt dat 't beter ging worden.
+- **Pushed:** Die dag in de Plee... Ik dacht echt dat 't beter ging worden.
+- *Rule:* §6.1 — HUDO→Plee
+
+### Push 2 (Mine1F sweep — 14 cells)
+
+**[E3-005] J17 · §2** Sorry... Ik ben eigenlijk nie → niet in de stemming om te spelen.
+**[E3-006] J19 · §2** *zucht* Omdat uw Nonkel Triestige sommige dagen zelf nie → niet weet waarom hij nog leeft...
+**[E3-007] J31 · §2** 't Is nie → niet makkelijk voor hem om terug in de Mijn te zijn. (pushed via RAW — leading apostrophe)
+**[E3-008] J33 · §2** 't Is uw schuld nie → niet, maak u geen zorgen. (pushed via RAW)
+**[E3-009] J42 · §2** Maar dat is nie → niet gebeurd.
+**[E3-010] J45 · §2** Ik was nie → niet snel genoeg om de Stal te redden.
+**[E3-011] J49 · §6.16** Misschien komen er geen gouden beelden of dansen of onze oude Beroepen terug → ...beelden of gedans. Of onze oude Jobs. (Tom reword + Beroepen→Jobs)
+**[E3-012] J67 · §2** Allez, wilt ge ons wijsmaken dat wij nie → niet weten waar we mee bezig zijn, kleine Kameraad?
+**[E3-013] J72 · §2** Dit is—*oef!*—nie → niet wat ik wilde!
+**[E3-014] J75 · §2 + §5.4** Zeg me nie → Zegt me niet dat ge—*oef!*—van plan zijt om weg te gaan? (ge/gij imperative -t)
+**[E3-015] J78 · §2** Omdat ge meer wilt in 't leven, wilt dat nog nie → niet zeggen dat ge uw thuis moet achterlaten!
+**[E3-016] J79 · §3.1** Ik droom ervan om hier in Muilebeek → Muilenbeek een caféke te maken...
+**[E3-017] J84 · §2** Nee... *oef!*—Waarschijnlijk nie → niet.
+**[E3-018] J136 · §3.1 + §6.16** Als de Mensen niet terugkomen naar Muilebeek → Muilenbeek, krijgen we onze Beroepen → Jobs nooit terug...
+
+### Push 3 (BadCave sweep — 5 cells)
+
+**[E3-019] J20 · §2** Maar 'k ben daar nie → niet zo zeker van.
+**[E3-020] J21 · §2 · Bad Ass** Kom mij nie → niet af met die anti-Machine Kameraad Moeder-zever.
+**[E3-021] J22 · §2 · Bad Ass** Machines zijn nie → niet slecht als ge weet hoe ze te gebruiken.
+**[E3-022] J26 · §2 · Bad Ass** Ze zijn logisch en worden nie → niet emotioneel. Ze kunnen alles oplossen.
+**[E3-023] J35 · §2 + §7.1** Sla gewoon nie → niet op de ezels → Ezels.
+
+### Push 4 (LazysGrave sweep — 3 cells)
+
+**[E3-024] J8 · §2 · Foal grief-register** Zijt gij nie → niet... (gij/uw kept per §17 Q1)
+**[E3-025] J17 · §2 · Foal** Waarom is uw Ezelenziel nie → niet naar het Astrale Hiernamaals gegaan?
+**[E3-026] J25 · §2** Geen uitweg?! Ik wil hier nie → niet doodgaan!
+
+### Push 5 (E3_100 diary + newspaper — 4 cells)
+
+**[E3-027] J7 · Butte's Log · §9.2 + §7.1**
+- Ik Heb vandaag → Ik heb vandaag
+- mijn ezels (×2) → mijn Ezels
+
+**[E3-028] J10 · Butte's Log · §9.2 + §7.1**
+- Ik Ga → Ik ga
+- Ik Ben → Ik ben
+- mijn ezels → mijn Ezels
+
+**[E3-029] J11 · Butte's Log (duplicate of J10)** — same fix as J10
+
+**[E3-030] J16 · Fannyside Times · §3.4.1 + §7.1 + §8.2**
+- Boormachine → Boor-Machine (§8.2)
+- Mecha Algemeen Ziekenhuis → Imechelda Algemeen Ziekenhuis (§3.4.1 — NEW canon entry)
+- Eén ezel → Eén Ezel (§7.1)
+
+### Push 6 (E3_200 — 1 cell)
+
+**[E3-031] J3 · Butte's Log · §9.2 + §7.1 + §3.6 + §3.1**
+- Ik Ben → Ik ben
+- Ik Denk → Ik denk
+- mijn depressieve ezel → mijn depressieve Ezel
+- Boerderij van Muilebeek → Hoeve van Muilenbeek
+
+### Push 7 (E3_300 + DonkeyBas — 2 cells)
+
+**[E3-032] E3_300 J3 · Butte's Log · §7.1**
+- mijn ezels kopen? → mijn Ezels kopen?
+
+**[E3-033] E3_DonkeyBas J17 · §7.1**
+- Ge moet 5 Kuddes ezels ontwijken → Ge moet 5 Kuddes Ezels ontwijken om te winnen.
+
+### Tooling note
+- 2 cells (Mine1F J31, J33) initially lost their leading apostrophe via USER_ENTERED input. Re-pushed via RAW. `scripts/convert/push-file.py` patched to auto-route any `'`-leading value through RAW. Retcon scan E0–E10: 0 corpus regressions.
+
+### Round-trip
+- Final pull-snapshot vs local: **0 diffs** across all E3 sheets.
+

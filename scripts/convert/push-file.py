@@ -131,10 +131,20 @@ def main():
         if not apply:
             continue
 
-        # Batch write: 1 API call
-        batch_data = [{'range': f'J{r}', 'values': [[val]]} for r, val in diffs]
-        time.sleep(CALL_GAP)
-        ws_remote.batch_update(batch_data, value_input_option='USER_ENTERED')
+        # Split diffs: cells starting with apostrophe must go via RAW (Sheets strips
+        # leading ' as a text-format marker under USER_ENTERED). Everything else
+        # stays USER_ENTERED so numbers/formulas keep their parsing.
+        raw_diffs = [(r, val) for r, val in diffs if val.startswith("'")]
+        ue_diffs = [(r, val) for r, val in diffs if not val.startswith("'")]
+
+        if ue_diffs:
+            batch_data = [{'range': f'J{r}', 'values': [[val]]} for r, val in ue_diffs]
+            time.sleep(CALL_GAP)
+            ws_remote.batch_update(batch_data, value_input_option='USER_ENTERED')
+        if raw_diffs:
+            batch_data = [{'range': f'J{r}', 'values': [[val]]} for r, val in raw_diffs]
+            time.sleep(CALL_GAP)
+            ws_remote.batch_update(batch_data, value_input_option='RAW')
 
         # Batch tint: 1 API call
         requests = [{
