@@ -1203,3 +1203,27 @@ Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereld
 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 9 cells**.
+
+## 🎯 E9 Push — universal sweep (8 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E9_GoldenAss_localization | J10 | Cole-Machine | `…in nen ezel veranderd!` | `…in nen Ezel veranderd!` | §7.1 |
+| E9_GoldenAss_localization | J19 | Golden Ass | `Wij spreken tot u…` | `Wij spreken tot U…` | §7.4 |
+| E9_GoldenAss_localization | J47 | Golden Ass | `Eén van u beide Machines…` | `Eén van U beide Machines…` | §7.4 |
+| E9_GoldenAss_localization | J83 | Golden Ass | `Gij weet in uw Ziel…` | `Gij weet in Uw Ziel…` | §7.4 |
+| E9_GoldenAss_localization | J130 | Golden Ass | `…om uw Beweging te steunen.` | `…om Uw Beweging te steunen.` | §7.4 |
+| E9_BadCave_localization | J9 | {$NewName} | `…om een ezel te zijn?` | `…om een Ezel te zijn?` | §7.1 |
+| E9_BadCave_localization | J14 | Cole-Machine | `…vooroordeel tegen ezels…` | `…vooroordeel tegen Ezels…` | §7.1 |
+| E9_BadCave_localization | J24 | Cole-Machine | `…niet veilig voor ezels.` | `…niet veilig voor Ezels.` | §7.1 |
+
+### Verify-only (no edit)
+- `E9_BadCave_localization` J43: Sturdy motto — EN has 3 adjectives, NL matches; defer per EN-co-authoritative rule.
+- `E9_BadCave_localization` J68: Sturdy motto fragment `Zielloze Machines kunnen niet praten.` already canonical.
+- `E9_MineEscape_localization` J18–J21: Sturdy motto cascade — already canonical 4-adjective form.
+
+### Tooling
+- `scripts/editorial/e9_sweep_scan.py` (E8 ruleset unchanged; §7.4 GoldenAss + §7.1 Ezel caps primary focus)
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 8 cells**.

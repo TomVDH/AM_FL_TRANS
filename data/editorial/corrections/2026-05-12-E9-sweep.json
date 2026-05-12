@@ -1,0 +1,68 @@
+{
+  "corrections": [
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J10",
+      "english": "You fuckers turned me into a donkey!",
+      "current_nl": "Gelle klootzakken hebt mij in nen ezel veranderd!",
+      "proposed_nl": "Gelle klootzakken hebt mij in nen Ezel veranderd!"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J19",
+      "english": "We are speaking to you from the Astral Plane through the Vassal formerly known as Sick Ass.",
+      "current_nl": "Wij spreken tot u vanuit het Astrale Hiernamaals, door de Vazal voordien bekend als Snot Ezel.",
+      "proposed_nl": "Wij spreken tot U vanuit het Astrale Hiernamaals, door de Vazal voordien bekend als Snot Ezel."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J47",
+      "english": "One of you two Machines shall become our Prophet.",
+      "current_nl": "Eén van u beide Machines zal onze Profeet worden.",
+      "proposed_nl": "Eén van U beide Machines zal onze Profeet worden."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J83",
+      "english": "You know in your Soul that a philosophical transformation is necessary now more than ever.",
+      "current_nl": "Gij weet in uw Ziel dat een filosofische transformatie nu meer dan ooit noodzakelijk is.",
+      "proposed_nl": "Gij weet in Uw Ziel dat een filosofische transformatie nu meer dan ooit noodzakelijk is."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_GoldenAss_localization",
+      "cell": "J130",
+      "english": "She is not yet ready to support your Movement.",
+      "current_nl": "Ze is nog niet klaar om uw Beweging te steunen.",
+      "proposed_nl": "Ze is nog niet klaar om Uw Beweging te steunen."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J9",
+      "english": "Uncle Bad—Cole... is being a donkey such a terrible thing?",
+      "current_nl": "Nonkel Stoere—Piet... is het zo erg om een ezel te zijn?",
+      "proposed_nl": "Nonkel Stoere—Piet... is het zo erg om een Ezel te zijn?"
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J14",
+      "english": "Then, given the historical prejudice against donkeys, being a donkey is...",
+      "current_nl": "Dan, gezien 't historisch vooroordeel tegen ezels, is Ezel zijn...",
+      "proposed_nl": "Dan, gezien 't historisch vooroordeel tegen Ezels, is Ezel zijn..."
+    },
+    {
+      "file": "9_asses.masses_E9Proxy.xlsx",
+      "sheet": "E9_BadCave_localization",
+      "cell": "J24",
+      "english": "Kid, the world out there isn't safe for donkeys. You know that.",
+      "current_nl": "Kleine, de wereld daarbuiten is niet veilig voor ezels. Dat weet ge toch.",
+      "proposed_nl": "Kleine, de wereld daarbuiten is niet veilig voor Ezels. Dat weet ge toch."
+    }
+  ]
+}
