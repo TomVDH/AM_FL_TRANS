@@ -1,0 +1,28 @@
+{
+  "corrections": [
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J74",
+      "english": "Mecha's citizens are rational beings!",
+      "current_nl": "Het Parlement van Technopolis is een plek van democratie!",
+      "proposed_nl": "De burgers van Technopolis zijn redelijke wezens!"
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J75",
+      "english": "They didn't seem rational when they attacked us in the streets.",
+      "current_nl": "Eens ze de wereld zien vanuit uw perspectief, gaan ze met ons samenwerken om de manieren van de Mensen overal te veranderen.",
+      "proposed_nl": "Rationeel waren ze niet toen ze ons op straat bijeen sloegen."
+    },
+    {
+      "file": "10_asses.masses_E10Proxy.xlsx",
+      "sheet": "E10_Government_localization",
+      "cell": "J170",
+      "english": "I was carrying trees day and night.",
+      "current_nl": "En dan heb 'k ne hele tijd rondgezworven tot da ze mij opgepikt hebben en naar die kwalijke Fabriek gebracht hebben.",
+      "proposed_nl": "'k Was dag en nacht bomen aan 't slepen."
+    }
+  ]
+}

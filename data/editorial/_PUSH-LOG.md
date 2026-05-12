@@ -1348,3 +1348,23 @@ Surfaced during E0–E9 methodical cleanliness scan. J16 article body had `Boor-
 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 1 cell**.
+
+## 🎯 E10 Push 3 — row-alignment translation-bug fixes (3 cells)
+
+Surfaced by `e10_alignment_scan.py` heuristic (cross-row NL paraphrase + EN length-ratio mismatch). All in `E10_Government_localization`.
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E10_Government_localization | J74 | Cole-Machine | `Het Parlement van Technopolis is een plek van democratie!` (exact paste of J69) | `De burgers van Technopolis zijn redelijke wezens!` | EN-co-authoritative (translation bug; NL on row was paste of J69 Cole-Machine line, ignoring own EN `Mecha's citizens are rational beings!`) |
+| E10_Government_localization | J75 | Resentful Ass | `Eens ze de wereld zien vanuit uw perspectief, gaan ze met ons samenwerken om de manieren van de Mensen overal te veranderen.` (paraphrase of J82 Cole-Machine) | `Rationeel waren ze niet toen ze ons op straat bijeen sloegen.` | EN-co-authoritative (translation bug; NL on row was paraphrased from J82 Cole-Machine, ignoring own EN `They didn't seem rational when they attacked us in the streets.`) — wording by Tom |
+| E10_Government_localization | J170 | Helpful Ass | `En dan heb 'k ne hele tijd rondgezworven tot da ze mij opgepikt hebben en naar die kwalijke Fabriek gebracht hebben.` (near-paste of J180) | `'k Was dag en nacht bomen aan 't slepen.` | EN-co-authoritative (translation bug; NL on row was duplicate of J180, ignoring own EN `I was carrying trees day and night.`) |
+
+### Verify-only (no edit)
+- `E10_Credits_localization` J110: EN `Radio Host Marcos` → NL `DJ Tom`. Length-ratio 0.35 (heuristic false-positive). Confirmed as intentional Belgian-localized cast-name following established pattern (Melvin→Zeno, Wedgie→Zita, Rico→Baptiste, Rose→Dina). KEEP.
+
+### Tooling
+- `scripts/editorial/e10_alignment_scan.py` — new scanner: (1) per-cell NL/EN char-length ratio outside [0.4, 2.5]; (2) cross-row NL-similarity ≥ 0.75 with EN-similarity ≤ 0.55 (paste-error pattern). Accepts XLSX path as first arg (for fresh-pull baseline scans).
+- Heuristic only — caught the two loudest paste-errors plus J74 (NL-sim 1.00 exact duplicate). Will NOT catch translation bugs where the wrong NL happens to be length-balanced and lexically distinct from its source line.
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 3 cells**.
