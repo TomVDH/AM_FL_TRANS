@@ -621,3 +621,62 @@ Each section below records a single push event with per-cell context:
 - **Was:** In het noordwesten van Australië worden wilde ezels neergeschoten vanuit overheidshelikopters omdat:
 - **Pushed:** In het noordwesten van Australië worden wilde Ezels neergeschoten vanuit overheidshelikopters omdat:
 - *Rule:* §7.1
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🎯 E1 push 1 — master batch (4 cells)
+**Pushed:** 2026-05-12
+**Batch file:** `data/editorial/corrections/2026-05-11-master.json` (E1 subset)
+**Cells:** 4
+
+### E1_Farm_localization (2 cells)
+
+**[E1-016] J7 · Official Sign**
+- **EN:** NEW Government Sponsored Highway: Connecting Urban and Rural Communities
+- **Was:** NIEW Overheids-gesubsidiëerde snelweg: brengt stedelijke en landelijke regios in verbinding.
+- **Pushed:** NIEUW Overheids-gesubsidieerde snelweg: brengt stedelijke en landelijke regio's in verbinding.
+- *Rule:* §15.6A — NIEW→NIEUW + gesubsidiëerde→gesubsidieerde + regios→regio's
+
+**[E1-017] J25 · Thirsty Ass**
+- **EN:** This ol' bucket ain't gonna fill itself!
+- **Was:** Diej'n emmer gaat z'n eigen nie volscheppen, héé.
+- **Pushed:** Diej'n emmer gaat z'n eigen niet volscheppen, héé.
+- *Rule:* §2 — nie→niet (universal lock)
+
+### E1_Stable2F_localization (1 cell)
+
+**[E1-018] J47 · Sturdy Ass**
+- **EN:** Someone has to sing the Song of Ascension to make sure his Ass Soul can reach the Astral Plane and be reassigned.
+- **Was:** Zodat zijn Ezel-Ziel het Astrale Hiernamaals kan bereiken en weer kan herrijzen, iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen.
+- **Pushed:** Iemand moet het Hemelvaarts-zang-der-Ezel-zielen zingen zodat zijn Ziel in het Astrale Hiernamaals heraangesteld kan worden.
+- *Rule:* §14.2.1 + §13.5 — Hemelvaarts-zang phrasing lock + Reassignment translation (passive)
+
+### E1_TheProtest_localization (1 cell)
+
+**[E1-019] J6 · Official Sign**
+- **EN:** To the south, our state of the art Mill and Granary.
+- **Was:** Ten zuiden, onze hoogmoderne Molen en Graanschuur.
+- **Pushed:** Naar 't zuiden, onze piekfijne Molen en Graanschuur.
+- *Rule:* §15.6D + §15.6C — Ten zuiden→Naar 't zuiden; hoogmoderne→piekfijne
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+## 🎯 E1 push 2 — universal sweep (2 cells)
+**Pushed:** 2026-05-12
+**Batch file:** `data/editorial/corrections/2026-05-12-E1-sweep.json`
+**Cells:** 2
+
+### E1_TheProtest_localization (1 cell)
+
+**[E1-020] J54 · Smart Ass**
+- **EN:** Here's the Plan!
+- **Was:** Dit is het plan!
+- **Pushed:** Dit is het Plan!
+- *Rule:* §6.9 — EN caps Plan → het Plan (game-system proper noun)
+
+### E1_Stable2F_localization (1 cell)
+
+**[E1-021] J56 · Sturdy Ass**
+- **EN:** A life free of evil, soulless, job-taking, child-killing Machines.
+- **Was:** Een leven zonder kwaad, zonder zielloze, werk-stelende en moordende Machines.
+- **Pushed:** Een leven vrij van slechte, zielloze, werk-afpakkende, kind-dodende Machines.
+- *Rule:* §12.2 — Sturdy motto canonical adjective list (werk-afpakkende, kind-dodende)
+

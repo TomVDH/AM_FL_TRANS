@@ -1,0 +1,31 @@
+{
+    "_meta": {
+        "compiled": "2026-05-12",
+        "scope": "E1 universal sweep findings (post-master batch). 2 cells.",
+        "actual_count": 2
+    },
+    "corrections": [
+        {
+            "id": "E1-TheProtest-J54",
+            "file": "1_asses.masses_E1Proxy.xlsx",
+            "sheet": "E1_TheProtest_localization",
+            "cell": "J54",
+            "speaker": "Smart Ass",
+            "english": "Here's the Plan!",
+            "current_nl": "Dit is het plan!",
+            "proposed_nl": "Dit is het Plan!",
+            "rule_id": "canon-6.9 — EN caps Plan → het Plan (game-system proper noun)"
+        },
+        {
+            "id": "E1-Stable2F-J56",
+            "file": "1_asses.masses_E1Proxy.xlsx",
+            "sheet": "E1_Stable2F_localization",
+            "cell": "J56",
+            "speaker": "Sturdy Ass",
+            "english": "A life free of evil, soulless, job-taking, child-killing Machines.",
+            "current_nl": "Een leven zonder kwaad, zonder zielloze, werk-stelende en moordende Machines.",
+            "proposed_nl": "Een leven vrij van slechte, zielloze, werk-afpakkende, kind-dodende Machines.",
+            "rule_id": "canon-12.2 — Sturdy motto canonical adjective list (werk-afpakkende, kind-dodende)"
+        }
+    ]
+}

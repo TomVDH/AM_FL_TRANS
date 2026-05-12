@@ -600,7 +600,7 @@ Per-episode scans will produce drift counts for each term. To populate during E0
 ### 12.2 Sturdy Ass — motto canonical form
 - **Canonical:** `slechte, zielloze, werk-afpakkende, kind-dodende Machines` (Machines plural since 8.1 reversion).
 - **Exception:** `KWAADAARDIG!` (emphatic) stays.
-- **Status:** ⏳ 1 cell needs full reword (E6_World J142); ~3 fragment cells.
+- **Status:** ⏳ 1 cell needs full reword (E6_World J142); ~2 fragment cells (E1_Stable2F J56 ✅ pushed 2026-05-12).
 
 ### 12.3 Slow Ass — stutter pattern
 - **Rule:** Stutter prefix on Dutch consonants only (b-/z-/p-/d-/h-/m-). No English fragments mid-stutter.
@@ -924,7 +924,7 @@ Keep these so the next session knows what's been reversed.
 | Episode | Locally-applied today | To do in next per-episode chat |
 |---|---|---|
 | **E0** | ✅ **COMPLETE 2026-05-12** — Push 1: 5 cells (CharacterProfiles J50/J52; E0_Questions J6/J7/J27). Push 2: 19 cells universal sweep (E0_Questions J43 job→Job §6.16; J67/68/69/70/73/74/75/76/83/84/87/93/95/96/97/101/105/108 Ezel cap §7.1; J74 hebbem→hebben typo). Round-trip: 0 diffs. | ✅ Done |
-| **E1** | 4 cells: E1_Farm J7 (sign typos), E1_TheProtest J6 (zuiden norm), E1_Stable2F J47 (rewrite), E1_Farm J25 (Thirsty niet) — plus 16 pushed previously | Push safety + push; universal sweep (nie→niet, Ezel cap) |
+| **E1** | ✅ **COMPLETE 2026-05-12** — Push 1: 4 cells (E1_Farm J7 sign typos §15.6A; E1_Farm J25 Thirsty nie→niet §2; E1_Stable2F J47 Hemelvaarts-zang rewrite §14.2.1+§13.5; E1_TheProtest J6 zuiden norm §15.6D+§15.6C). Push 2: 2 cells universal sweep (E1_TheProtest J54 plan→Plan §6.9; E1_Stable2F J56 Sturdy motto reword §12.2). Round-trip: 0 diffs. | ✅ Done |
 | **E2** | 20 cells: BattleMiner J6/J11/J13/J14/J17 (Jenny+SCHUP+reactie+!); MinersHouse J3/J5/J8/J9 (Jenny ge/gij); World_A1/A2/B1/B2 J7 (sign typos); World_A2 J4/J6/J8 (narrative-arc); World_B2 J4 (incident→MIJN-ONGEVAL); hoogmoderne→piekfijne ×3 — plus 41 pushed previously | Push safety + push; universal sweep |
 | **E3** | 4 cells: E3_BadCave J5/J6 (Foal je/jij), E3_100 J5 (Ik mag), E3_Mine1F J41 (Plee) | Push safety + push; universal sweep (nie→niet ~19, Ezel cap ~8, Muilenbeek ×3, Boerderij ×1, Beroep→Jobs ×2, Ik [Cap] artifact ×3, etc.) |
 | **E4** | 5 cells: HerdSplits J62 (Schoon Beest), KicksGoodbye J5 (heraangesteld), AstralPlaneMain J89 (heraangesteld), J221 (DJ welcome), Mine1F J23 (EZELS EERST) | Push safety + push; universal sweep |
