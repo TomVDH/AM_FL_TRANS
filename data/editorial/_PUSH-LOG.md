@@ -1227,3 +1227,12 @@ Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereld
 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 8 cells**.
+
+## 🎯 E6 Push 4 (tail) — missed §13.3 cell (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E6_World_localization | J160 | Sturdy Ass | `Oh liefste Goden.` | `Geprezen zijn de Goden.` | §13.3 |
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 1 cell**.

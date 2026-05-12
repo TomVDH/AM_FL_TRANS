@@ -1,0 +1,12 @@
+{
+  "corrections": [
+    {
+      "file": "6_asses.masses_E6Proxy.xlsx",
+      "sheet": "E6_World_localization",
+      "cell": "J160",
+      "english": "Praise be to the Gods.",
+      "current_nl": "Oh liefste Goden.",
+      "proposed_nl": "Geprezen zijn de Goden."
+    }
+  ]
+}
