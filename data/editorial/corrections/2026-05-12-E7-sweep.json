@@ -1,0 +1,68 @@
+{
+  "corrections": [
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Opening_localization",
+      "cell": "J5",
+      "english": "I can't afford to lose this job...",
+      "current_nl": "Ik kan het me niet veroorloven om deze job te verliezen...",
+      "proposed_nl": "Ik kan het me niet veroorloven om deze Job te verliezen..."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Opening_localization",
+      "cell": "J12",
+      "english": "You say that, but I bet Mme. Derriere's already building Robots to go pick up donkeys instead of us.",
+      "current_nl": "Dat zeg je wel, maar ik wed dat Mevr. Derrière nu al Robots aan het bouwen is om ezels op te halen in onze plaats.",
+      "proposed_nl": "Dat zeg je wel, maar ik wed dat Mevr. Derrière nu al Robots aan het bouwen is om Ezels op te halen in onze plaats."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_Holding1_localization",
+      "cell": "J8",
+      "english": "We're not at the Circus anymore...",
+      "current_nl": "We zijn nie meer in het Circus...",
+      "proposed_nl": "We zijn niet meer in het Circus..."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_ShippingTwo_localization",
+      "cell": "J5",
+      "english": "All personnel should be on the lookout for runaway donkeys within the Factory.",
+      "current_nl": "Alle medewerkers dienen uit te kijken naar ontsnapte ezels binnen de Fabriek.",
+      "proposed_nl": "Alle medewerkers dienen uit te kijken naar ontsnapte Ezels binnen de Fabriek."
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_ShippingTwo_localization",
+      "cell": "J7",
+      "english": "There's one of those runaway donkeys!",
+      "current_nl": "Daar is één van die ontsnapte ezels!",
+      "proposed_nl": "Daar is één van die ontsnapte Ezels!"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_ShippingTwo_localization",
+      "cell": "J9",
+      "english": "*ksh*—Help! The donkeys are free! THEY ARE ESCAPING!",
+      "current_nl": "*tsj*—Help! De ezels zijn los! ZE ONTSNAPPEN!",
+      "proposed_nl": "*tsj*—Help! De Ezels zijn los! ZE ONTSNAPPEN!"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_ShippingTwo_localization",
+      "cell": "J12",
+      "english": "Whichever group of Activists has broken into my beloved Factory and let my donkeys out, hear me:",
+      "current_nl": "Welke groep Activisten ook heeft ingebroken in mijn geliefde Fabriek en mijn ezels heeft losgelaten, luister goed:",
+      "proposed_nl": "Welke groep Activisten ook heeft ingebroken in mijn geliefde Fabriek en mijn Ezels heeft losgelaten, luister goed:"
+    },
+    {
+      "file": "7_asses.masses_E7Proxy.xlsx",
+      "sheet": "E7_BigBattle_localization",
+      "cell": "J10",
+      "english": "Hello donkey...",
+      "current_nl": "Hallo ezeltje...",
+      "proposed_nl": "Hallo Ezeltje..."
+    }
+  ]
+}

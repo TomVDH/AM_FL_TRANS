@@ -1164,3 +1164,22 @@ Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereld
 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 23 cells**.
+
+## 🎯 E7 Push — universal sweep (8 cells)
+
+| Sheet | Cell | Before | After | Rule |
+|---|---|---|---|---|
+| E7_Opening_localization | J5 | `…om deze job te verliezen…` | `…om deze Job te verliezen…` | §6.16 |
+| E7_Opening_localization | J12 | `…om ezels op te halen…` | `…om Ezels op te halen…` | §7.1 |
+| E7_Holding1_localization | J8 | `We zijn nie meer in het Circus…` | `We zijn niet meer in het Circus…` | §2 |
+| E7_ShippingTwo_localization | J5 | `…ontsnapte ezels binnen de Fabriek.` | `…ontsnapte Ezels binnen de Fabriek.` | §7.1 |
+| E7_ShippingTwo_localization | J7 | `…ontsnapte ezels!` | `…ontsnapte Ezels!` | §7.1 |
+| E7_ShippingTwo_localization | J9 | `De ezels zijn los!` | `De Ezels zijn los!` | §7.1 |
+| E7_ShippingTwo_localization | J12 | `…mijn ezels heeft losgelaten…` | `…mijn Ezels heeft losgelaten…` | §7.1 |
+| E7_BigBattle_localization | J10 | `Hallo ezeltje…` | `Hallo Ezeltje…` | §7.1 |
+
+### Tooling
+- `scripts/editorial/e7_sweep_scan.py` (E6 ruleset unchanged; §6.11 jansen flag-only)
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 8 cells**.
