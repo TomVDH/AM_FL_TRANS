@@ -25,6 +25,17 @@ DIARY_SHEETS = set()  # no diary sheets in E5
 
 RETIRED_MONIKERS = ['Felle Gast', 'Betweter', 'Bikkeharde', 'Snotezel', 'Stampgast', 'Sloom']
 
+GE_GIJ_SPEAKERS = {
+    'Bad Ass', 'Big Ass', 'Cole-Machine', 'Golden Ass', 'Hard Ass',
+    'Haw', 'Hee', 'Kick Ass', 'Old Ass', 'Thirsty Ass', 'Miner Jenny',
+}
+JE_JIJ_SPEAKERS = {
+    'Nice Ass', 'Sad Ass', 'Slow Ass', 'Smart Ass', 'Sturdy Ass',
+    'Trusty Ass', 'Lazy Ass', 'Mme. Derriere', 'Ringmaster Rico',
+    'Zookeeper Rose', 'Radio Host Marcos', 'Butte', 'Child Joey',
+    'Grandma Kulan', 'Melvin',
+}
+
 # §8.2: Machine compounds that should be hyphenated.
 MACHINE_COMPOUNDS_UNHYPHENATED = [
     r'\bBoormachine[ns]?\b',           # solid; should be Boor-Machine
@@ -197,6 +208,16 @@ def scan_sheet(ws, sheet_name):
         # §9.2 mid-sentence Ik [Cap]
         if re.search(r",\s+Ik\s+[A-Z]", nl):
             add('§9.2', "mid-sentence ', Ik [Cap]' — lowercase verb")
+
+        # §5 register drift
+        if speaker in GE_GIJ_SPEAKERS:
+            hits = re.findall(r'\b(je|jij|jou|jouw|bent)\b', nl, re.IGNORECASE)
+            if hits:
+                add('§5-drift', f'ge/gij speaker {speaker!r} has je/jij form(s): {hits}')
+        if speaker in JE_JIJ_SPEAKERS:
+            hits = re.findall(r'\b(ge|gij|zijt|zijde)\b', nl, re.IGNORECASE)
+            if hits:
+                add('§5-drift', f'je/jij speaker {speaker!r} has ge/gij form(s): {hits}')
 
     return findings
 
