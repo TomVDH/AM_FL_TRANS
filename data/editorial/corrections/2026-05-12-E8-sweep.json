@@ -1,0 +1,76 @@
+{
+  "corrections": [
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_SanctumMain_localization",
+      "cell": "J17",
+      "english": "Oh, too bad. It was a great change of pace from the days on the Farm!",
+      "current_nl": "Oh, jammer. Het was een leuke afwisseling van de dagen op de Boerderij!",
+      "proposed_nl": "Oh, jammer. Het was een leuke afwisseling van de dagen op de Hoeve!"
+    },
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_TheGods_localization",
+      "cell": "J6",
+      "english": "Vassals, your presence has been long overdue.",
+      "current_nl": "Vazallen, uw aanwezigheid is bijzonder achterstallig.",
+      "proposed_nl": "Vazallen, Uw aanwezigheid is bijzonder achterstallig."
+    },
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_TheGods_localization",
+      "cell": "J14",
+      "english": "We shall wipe your memories, so that your Soul can enter into a new Ass without impediment.",
+      "current_nl": "Wij zullen uw herinneringen wissen, opdat uw Ziel ongehinderd een nieuw Ezellichaam kan binnentreden.",
+      "proposed_nl": "Wij zullen Uw herinneringen wissen, opdat Uw Ziel ongehinderd een nieuw Ezellichaam kan binnentreden."
+    },
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_TheGods_localization",
+      "cell": "J15",
+      "english": "Prepare yourself for Reassignment.",
+      "current_nl": "Bereid u voor op Heraanstelling.",
+      "proposed_nl": "Bereid U voor op Heraanstelling."
+    },
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_TheGods_localization",
+      "cell": "J22",
+      "english": "We have decided your Soul will not undergo Reassignment.",
+      "current_nl": "Wij hebben besloten dat uw Ziel geen Heraanstelling zal ondergaan.",
+      "proposed_nl": "Wij hebben besloten dat Uw Ziel geen Heraanstelling zal ondergaan."
+    },
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_TheGods_localization",
+      "cell": "J33",
+      "english": "We look forward to working with you and rectifying this sorrowful situation.",
+      "current_nl": "Wij zien ernaar uit met u samen te werken en deze droevige toestand te herstellen.",
+      "proposed_nl": "Wij zien ernaar uit met U samen te werken en deze droevige toestand te herstellen."
+    },
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_TheGods_localization",
+      "cell": "J40",
+      "english": "No, your Soul will never undergo Reassignment again.",
+      "current_nl": "Neen, uw Ziel zal nooit meer Heraanstelling ondergaan.",
+      "proposed_nl": "Neen, Uw Ziel zal nooit meer Heraanstelling ondergaan."
+    },
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_TheGods_localization",
+      "cell": "J42",
+      "english": "We thank you for your service.",
+      "current_nl": "Wij danken u voor uw dienst.",
+      "proposed_nl": "Wij danken U voor Uw dienst."
+    },
+    {
+      "file": "8_asses.masses_E8Proxy.xlsx",
+      "sheet": "E8_TheGods_localization",
+      "cell": "J43",
+      "english": "Prepare to become one with your Gods.",
+      "current_nl": "Bereid u voor om één te worden met uw Goden.",
+      "proposed_nl": "Bereid U voor om één te worden met Uw Goden."
+    }
+  ]
+}

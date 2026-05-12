@@ -1183,3 +1183,23 @@ Tom 2026-05-12: reversed the 2026-05-11 lc retcon on `Circusdirecteur` / `Wereld
 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 8 cells**.
+
+## 🎯 E8 Push — universal sweep (9 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E8_SanctumMain_localization | J17 | Trusty Ass | `…op de Boerderij!` | `…op de Hoeve!` | §3.6 |
+| E8_TheGods_localization | J6 | THE GODS | `uw aanwezigheid…` | `Uw aanwezigheid…` | §7.4 |
+| E8_TheGods_localization | J14 | Haw | `uw herinneringen…opdat uw Ziel…` | `Uw herinneringen…opdat Uw Ziel…` | §7.4 |
+| E8_TheGods_localization | J15 | Haw | `Bereid u voor…` | `Bereid U voor…` | §7.4 |
+| E8_TheGods_localization | J22 | Hee | `dat uw Ziel…` | `dat Uw Ziel…` | §7.4 |
+| E8_TheGods_localization | J33 | Haw | `met u samen…` | `met U samen…` | §7.4 |
+| E8_TheGods_localization | J40 | Hee | `Neen, uw Ziel…` | `Neen, Uw Ziel…` | §7.4 |
+| E8_TheGods_localization | J42 | THE GODS | `danken u voor uw dienst` | `danken U voor Uw dienst` | §7.4 |
+| E8_TheGods_localization | J43 | THE GODS | `Bereid u voor…met uw Goden.` | `Bereid U voor…met Uw Goden.` | §7.4 |
+
+### Tooling
+- `scripts/editorial/e8_sweep_scan.py` (E7 ruleset + §7.4 Gods U/Uw primary focus)
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 9 cells**.
