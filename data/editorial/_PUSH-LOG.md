@@ -1585,3 +1585,67 @@ Override: J7 FarmHouseInt — Tom full rewrite preserving "hustle and bustle" pa
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 17 cells** (`excels.fresh-pull-2026-05-13-post-E1-push/`).
 - Regex audit post-push: E1 dropped from 22 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit: 1 canon (J29 Schoon Beest §4.4 — push-confirmed preserve) + 1 LEN-RATIO BUG false-positive + 10/12 clean sheets.
+
+## 🎯 E2 Push 3 — deep-eyeball DRIFT batch (14 cells across 6 sub-tabs)
+
+Sourced from `data/editorial/audit-2026-05-12-deep-eyeball.md` (15 E2 cells flagged DRIFT) → live API read via _api_throttle → Tom sign-off 2026-05-13. 14 apply + 1 keep (J17 BattleButte Flemish preserved).
+
+Overrides: J16 ChildsHouse (`HELP MIJ ALSTUBLIEFT`, no exclamation), J3 World_A3 (drops `terug`, keeps no-article `is teken`), J39 World_A1+B1 (option-b cross-sheet unification — same string both cells).
+
+### E2_BattleButte_localization (2 cells; J17 KEPT)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E2_BattleButte_localization | J22 | Battle text | `Hoe reageer je?` | `Wat is je reactie?` | §6.7 cross-sheet (unify with BattleMiner J17) |
+| E2_BattleButte_localization | J28 | Player move | `Je VALT ANN!` | `Je VALT AAN!` | typo |
+
+### E2_ChildsHouse_localization (2 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E2_ChildsHouse_localization | J8 | Hard Ass | `Hé! Stop met te lanterfanten!` | `Hé! Stopt met lanterfanten!` | §5.4 ge/gij imperative + Dutch idiom |
+| E2_ChildsHouse_localization | J16 | Child Joey | `Please! HELP MIJ!` | `HELP MIJ ALSTUBLIEFT` | §12.4 + Tom override (drop !s) |
+
+### E2_World_A1_localization (6 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E2_World_A1_localization | J20 | (narrator) | `…Ze zijn te soft.` | `…Ze waren te zacht.` | Tense + §12.4 (soft → zacht) |
+| E2_World_A1_localization | J23 | (Sad) | `…een p-p-plan C?` | `…een P-P-Plan C?` | §6.9/§7.3 Plan cap |
+| E2_World_A1_localization | J35 | (Thirsty) | `Ze zullen ze schoon gesjareld…` | `Ze zullen schoon gesjareld…` | duplicate `ze` |
+| E2_World_A1_localization | J39 | Smart Ass | `DRIE, de rest moet water uit de rivier scheppen, het vuur blussen en de Mensen overtuigen om de Machines te laten…` | `DRIE, de rest haalt water uit de rivier, blust het vuur en overtuigt de Mensen om hun Machines achter te laten…` | option-b cross-sheet unification |
+| E2_World_A1_localization | J53 | Nice Ass | `Er is geen enkele weg naar de Hoeve.` | `Dit is helemaal niet de weg naar de Hoeve.` | §13 absolutization |
+| E2_World_A1_localization | J54 | Nice Ass | `Er is geen enkele weg naar de Hoeve.` | `Dit is helemaal niet de weg naar de Hoeve.` | mirror of J53 |
+
+### E2_World_A2_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E2_World_A2_localization | J15 | Nice Ass | `The Kudde rekent op mij!…` | `De Kudde rekent op mij!…` | §12.4 English article |
+
+### E2_World_A3_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E2_World_A3_localization | J3 | Nice Ass | `Triestige, deze regen is teken dat we terug opnieuw kunnen starten!` | `Triestige, deze regen is teken dat we opnieuw kunnen starten!` | Tom override — drop redundant `terug` |
+
+### E2_World_B1_localization (2 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E2_World_B1_localization | J25 | Smart Ass | `We gaat er onze Hoeven kuisen?` | `Wie gaat er onze Hoeven kuisen?` | typo We → Wie |
+| E2_World_B1_localization | J39 | Smart Ass | `DRIE, de rest gaat water van de rivier halen, blust het vuur en overtuigt de mensen hun Machines zo te laten…` | `DRIE, de rest haalt water uit de rivier, blust het vuur en overtuigt de Mensen om hun Machines achter te laten…` | option-b cross-sheet unification with A1 J39 |
+
+### Verify-only (no edit per Tom 2026-05-13)
+- `E2_BattleButte_localization` J17 — `Ben ik al niet genoeg verloren?` kept (Tom: Flemish, leave).
+
+### Cross-sheet unification (option b)
+Tom 2026-05-13 picked option (b) for J39 A1+B1: pick one phrasing and propagate. Unified form combines finite-verb chain (B1's structure), `haalt` (natural for "get"), `uit de rivier` (A1's preposition), `Mensen` cap (canon §7.3), `om hun Machines achter te laten` (EN-faithful possessive + proper idiom).
+
+### Tooling
+- `scripts/editorial/propose-fixes-e2.py` — live-API read + transform preview.
+- `scripts/editorial/apply-fixes-e2.py` — safe local writer.
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 14 cells** (`excels.fresh-pull-2026-05-13-post-E2-push/`).
+- Regex audit post-push: E2 dropped from 15 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit: 1 canon (J46 Schoon Beest §4.4 — push-confirmed preserve) + 1 new finding J25 (§5.4 `Stop. Sinds wanneer zijt GIJ` — Stop→Stopt ge/gij register, NOT in this batch, deferred) + 2 expected push-divergences (J53/J54 — by-design, new fix supersedes older push) + 13/15 clean sheets.
