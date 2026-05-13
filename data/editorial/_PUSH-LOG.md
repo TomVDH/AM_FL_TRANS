@@ -1431,3 +1431,69 @@ User override: E5_CircusMain J91 — full rewrite to `Ha ha! Veel success met he
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 24 cells** (`excels.fresh-pull-2026-05-13-post-E5-push/`).
 - Regex audit post-push: E5 dropped from 25 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit now shows E5: 1 canon (J208 `t Beste`→`'t Beste` §9.1, NOT in this batch — discovered post-push, deferred) + 4 LEN-RATIO BUG false-positives (J68, J206, J207, J216 short-string heuristics, all clean per content review).
+
+## 🎯 E4 Push 2 — deep-eyeball DRIFT batch (23 cells across 5 sub-tabs)
+
+Sourced from `data/editorial/audit-2026-05-12-deep-eyeball.md` (23 E4 cells flagged DRIFT) → live-remote API read for verbatim source → Tom sign-off 2026-05-13.
+
+Overrides on J46/J71/J106/J235 (Astral), J6 (KicksConfession picked option c), J6 (Mine1F_Exit).
+
+### E4_AstralPlaneMain_localization (14 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E4_AstralPlaneMain_localization | J46 | Shifty Ass | `Hé Niewelingetjes…er vandaag de lucht uit gaan vallen…` | `Hé Nieuwelingetjes…er vandaag uit de lucht gaan vallen…` | Spelling + word order (Tom override) |
+| E4_AstralPlaneMain_localization | J49 | Greedy Ass | `Wilde gokken?` | `Wil je gokken?` | Dutch tense |
+| E4_AstralPlaneMain_localization | J71 | Old Ass | `…nadat ik de Spuit was gegeven…"Herinneer de wereld aan de belangan…"` | `…nadat ik die Spuit kreeg…"Herinner de Wereld aan de Belangen…"` | Tom override: active voice + caps + spelling |
+| E4_AstralPlaneMain_localization | J94 | Old Ass | `…geduld had wanneer ze aankwam.` | `…geduld had toen ze aankwam.` | Past temporal conjunction |
+| E4_AstralPlaneMain_localization | J106 | Hasty Ass | `Let's go let's go let's go!` | `Komaan komaan komaan!` | §12.4 (Tom picked Komaan alternate) |
+| E4_AstralPlaneMain_localization | J117 | Hasty Ass | `Let's go!` | `Vooruit!` | §12.4 |
+| E4_AstralPlaneMain_localization | J167 | Lofty Ass | `…dorpsezels wanneer de Mensen onze Kudde gebruikte…` | `…dorpsezels toen de Mensen onze Kudde gebruikten…` | Temporal + agreement |
+| E4_AstralPlaneMain_localization | J178 | Shaky Ass | `WHAT DE FUCK, IK KAN MIJN EIGEN LICHAAM ZIEN.` | `WAT DE FUCK, IK KAN MIJN EIGEN LICHAAM ZIEN.` | §12.4 hybrid (WHAT→WAT) |
+| E4_AstralPlaneMain_localization | J183 | Blunt Ass | `wilde poepen?` | `wilt ge poepen?` | Tense + ge/gij register |
+| E4_AstralPlaneMain_localization | J201 | Tight Ass | `Waar denk jij wel niet waar je heen gaat?` | `Waar denk jij wel niet dat je heen gaat?` | Dutch grammar |
+| E4_AstralPlaneMain_localization | J220 | DJ Dope Ass | `GOEDEAVOND MEDE-EZELS!!!!` | `GOEIENAVOND MEDE-EZELS!!!!` | Dutch spelling (tussentaal) |
+| E4_AstralPlaneMain_localization | J228 | Smelly Ass | `allebeide` | `allebei` | Dutch spelling |
+| E4_AstralPlaneMain_localization | J234 | Firm Ass | `Wise Ass` | `Wijze Ezel` | §4 character moniker |
+| E4_AstralPlaneMain_localization | J235 | Firm Ass | `Wees respectvol. Wise Ass heeft een antwoord op alles.` | `Toon respect. Wijze Ezel heeft op alles een antwoord.` | §4 + Tom override (restructure) |
+
+### E4_HerdSplits_localization (6 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E4_HerdSplits_localization | J29 | Smart Ass | `…een nieuw plan.` | `…een nieuw Plan.` | §6.9/§7.3 game-system cap |
+| E4_HerdSplits_localization | J32 | Smart Ass | `…we pakken onze jobs TERUG.` | `…we pakken onze JOBS TERUG.` | Corpus case parity (ALL-CAPS match) |
+| E4_HerdSplits_localization | J35 | Sturdy Ass | `…met mijn veulentje.` | `…met mijn Veulentje.` | §7.1 The Foal as character |
+| E4_HerdSplits_localization | J59 | Kick Ass | `…een mens aan.` | `…een Mens aan.` | §7.3 |
+| E4_HerdSplits_localization | J77 | Smart Ass | `VIER! Let's GO!` | `VIER! VOORUIT!` | §12.4 |
+| E4_HerdSplits_localization | J81 | Hard Ass | `Een revolutie vergt offers.` | `Een Revolutie vergt offers.` | §7.3 |
+
+### E4_KicksConfession_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E4_KicksConfession_localization | J6 | Kick Ass | `MOEST ik MEEHELPEN terwijl Snotje op uitkijk stond.` | `IK MOEST VAN HEM MEEHELPEN terwijl Snotje op uitkijk stond.` | §13 — restore Hard-as-actor (Tom picked option c) |
+
+### E4_Mine1F_Exit_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E4_Mine1F_Exit_localization | J6 | Hard Ass | `Ge overdrijft. De Mensen maken korte metten met u vanaf de eerste keer ze de kans hebben.` | `Ge overdrijft. De mensen maken korten metten met u op de eerste kans dat ze krijgen.` | Tom override: full rewrite (mensen lowercase + korten + restructure) |
+
+### E4_Mine1F_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E4_Mine1F_localization | J22 | Sturdy Ass | `…Kameraad, Ik vertrouw…` | `…Kameraad, ik vertrouw…` | §9.2 (lowercase ik after comma) |
+
+### Canon question flagged for later (J71)
+Tom asked whether `"Show the world the power of the Ass!"` quote should collapse to `"EZELS EERST!"` per canon §14.1. Read: this is the long-form **dying-words** quote (consistent with E1_TheProtest J67/J69), distinct from the **chant** form (`ASS!`/`POWER!` → `EZELS!`/`EERST!`). Long-form kept. Queued: **project-wide slogan/chant analysis** to document both forms and verify all occurrences are intentional.
+
+### Tooling
+- `scripts/editorial/propose-fixes-e4.py` — live-API read + transform preview.
+- `scripts/editorial/apply-fixes-e4.py` — local writer with pre-image safety check.
+- Push via `scripts/convert/push-file.py 4_asses.masses_E4Proxy.xlsx --apply`.
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 23 cells** (`excels.fresh-pull-2026-05-13-post-E4-push/`).
+- Regex audit post-push: E4 dropped from 23 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit: 1 canon (J62 Schoon Beest §4.4 — push-confirmed preserve, NOT actionable) + 0 align + 0 cross-row + 8/9 clean sheets.
