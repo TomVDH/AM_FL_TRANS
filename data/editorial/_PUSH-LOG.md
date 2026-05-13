@@ -1368,3 +1368,66 @@ Surfaced by `e10_alignment_scan.py` heuristic (cross-row NL paraphrase + EN leng
 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 3 cells**.
+
+## 🎯 E5 Push 4 — deep-eyeball DRIFT batch (24 cells across 4 sub-tabs)
+
+Sourced from `data/editorial/audit-2026-05-12-deep-eyeball.md` (25 E5 cells flagged DRIFT) → live-remote API read for verbatim source → Tom sign-off 2026-05-13 (24 apply, 1 skip + 1 user override).
+
+Skipped: E5_CircusMain J22 — Tom keeps `kabinet van exotische dieren` for flavor (acceptable §13 wording).
+User override: E5_CircusMain J91 — full rewrite to `Ha ha! Veel success met het overtreffen van mijn nummer!` (applies §6.10 act→nummer; `success` retained as stylistic English loanword for Smart Ass).
+
+### E5_CircusMain_localization (8 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E5_CircusMain_localization | J9 | Ringmaster Rico | `…in het GROTE stadscircus!` | `…in het GROTE STADSCIRCUS!` | §7.2/§7.3 game-system cap |
+| E5_CircusMain_localization | J36 | Ringmaster Rico | `…wie zijn best gedaan heeft…` | `…die zijn best gedaan heeft…` | Dutch relative pronoun (wie→die) |
+| E5_CircusMain_localization | J64 | Ringmaster Rico | `…95% mens en 5% MAGIE…` | `…95% MENS en 5% MAGIE…` | §7.3 game-system cap (matches EN ALL-CAPS) |
+| E5_CircusMain_localization | J88 | Kick Ass | `…presentatoren in het publiek zetten?` | `…presentatoren in het publiek zaten?` | Dutch verb (zetten→zaten past pl.) |
+| E5_CircusMain_localization | J91 | Smart Ass | `Veel success met mijn act te overtreffen!` | `Veel success met het overtreffen van mijn nummer!` | §6.10 act→nummer + restructure (Tom override, success kept) |
+| E5_CircusMain_localization | J123 | Big Ass | `…om op toernee te gaan!…` | `…om op Tournee te gaan!…` | §7.2 Tournee cap-always + canonical spelling |
+| E5_CircusMain_localization | J153 | Ringmaster Rico | `Ik hoor nauwelijk iets…` | `Ik hoor nauwelijks iets…` | Dutch spelling (-s) |
+| E5_CircusMain_localization | J161 | Kick Ass | `…gewoon kameraden zijn!` | `…gewoon Kameraden zijn!` | Corpus consistency (Kameraad cap) |
+
+### E5_Highway_localization (2 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E5_Highway_localization | J4 | Slow Ass | `Oef… mijn knieëen.` | `Oef… mijn knieën.` | Dutch plural spelling (knieën) |
+| E5_Highway_localization | J11 | Slow Ass | `*zwaar gëadem*` | `*zwaar geademd*` | Dutch participle (non-word→geademd) |
+
+### E5_ZooMain_localization (11 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E5_ZooMain_localization | J4 | (sign) | `…Word sinds 7,000 jaar…` + `Vindt de regen niet zo fijn` | `…Worden sinds 7,000 jaar…` + `Vinden de regen niet zo fijn` | Dutch subj-verb agreement (plural species) |
+| E5_ZooMain_localization | J18 | Zookeeper Rose | `…het word net zo druk…` | `…het wordt net zo druk…` | Dutch d/t |
+| E5_ZooMain_localization | J47 | Smart Ass | `Jouw gelukt komt zo op zijn eind!` | `Jouw geluk komt zo op zijn eind!` | Dutch spelling (noun geluk, not p.p. gelukt) |
+| E5_ZooMain_localization | J119 | Sad Ass | `…dat de Boederij en Mijn achterwege laten…` | `…dat de Hoeve en Mijn achterwege laten…` | §3.6 + typo (Boederij→Hoeve, two-for-one) |
+| E5_ZooMain_localization | J125 | Smart Ass | `verse hooi…rigoreus dagdagelijks labeur!` | `vers hooi…rigoureus dagdagelijks labeur!` | Dutch neuter adj + spelling (rigoureus) |
+| E5_ZooMain_localization | J154 | Sad Ass | `…vreugde bengt…` | `…vreugde brengt…` | Dutch spelling (bengt→brengt) |
+| E5_ZooMain_localization | J165 | Zookeeper Rose | `…Iejoor van deze Dierentuin ONTSNAPT is…` | `…Iejoor uit deze Dierentuin ONTSNAPT is…` | Dutch preposition (ontsnappen uit) |
+| E5_ZooMain_localization | J169 | Zookeeper Rose | `…om de Ezel van de Week ontmoeten?` | `…om de Ezel van de Week te ontmoeten?` | Dutch infinitive (om…te) |
+| E5_ZooMain_localization | J176 | Zookeeper Rose | `De RAAD VAN BESTUUR wilt dat jullie gezellig hun komt Knuffelen!` | `De RAAD VAN BESTUUR wil dat jullie ze gezellig komen Knuffelen!` | Dutch grammar (wil/ze/komen) |
+| E5_ZooMain_localization | J190 | Zookeeper Rose | `De RAAD VAN BESTUUR wilt dat jullie knus hun komt Knuffelen!` | `De RAAD VAN BESTUUR wil dat jullie ze knus komen Knuffelen!` | Dutch grammar (wil/ze/komen) |
+| E5_ZooMain_localization | J216 | Kick Ass | `WAT?! Ge bent zo lomp als een Machine.` | `WAT?! Gij zijt zo lomp als een Machine.` | §5.4 ge/gij register (bent→zijt) |
+
+### E5_Zoo_Introduction_localization (3 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E5_Zoo_Introduction_localization | J12 | Zookeeper Rose | `Ik noem het Ezel van de Week.` | `Ik noem het EZEL VAN DE WEEK.` | Corpus case parity (EN ALL-CAPS) |
+| E5_Zoo_Introduction_localization | J22 | Smart Ass | `Ik heb een plan!` | `Ik heb een Plan!` | §6.9/§7.3 game-system cap (Plan) |
+| E5_Zoo_Introduction_localization | J33 | Zookeeper Rose | `…dametje die het gewoon leuk vind als…` | `…dametje die het gewoon leuk vindt als…` | Dutch d/t (3rd sg) |
+
+### Verify-only (no edit per Tom 2026-05-13)
+- `E5_CircusMain_localization` J22 — `kabinet` kept for flavor (Tom decision; §13 acceptable alternate to `cast`).
+
+### Tooling
+- `scripts/editorial/propose-fixes-e5.py` — live-remote API read + transform preview generator. Produces `data/editorial/proposed-fixes-2026-05-13-E5.md`.
+- `scripts/editorial/apply-fixes-e5.py` — local xlsx writer with safety: each cell's pre-image must match (or be already-applied) before write. 24/25 cells applied (J22 skipped).
+- Push via existing `scripts/convert/push-file.py 5_asses.masses_E5Proxy.xlsx --apply` (batch write + green tint per tab).
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 24 cells** (`excels.fresh-pull-2026-05-13-post-E5-push/`).
+- Regex audit post-push: E5 dropped from 25 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit now shows E5: 1 canon (J208 `t Beste`→`'t Beste` §9.1, NOT in this batch — discovered post-push, deferred) + 4 LEN-RATIO BUG false-positives (J68, J206, J207, J216 short-string heuristics, all clean per content review).
