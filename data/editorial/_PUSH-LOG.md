@@ -1713,3 +1713,93 @@ Scanned all 11 workbooks for `FINE MOTHER` / `GESTELD MOEDER` — **only occurre
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 13 cells** (`excels.fresh-pull-2026-05-13-post-E6-push/`).
 - Regex audit post-push: E6 dropped from 15 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit: 6 canon findings (all NEW, NOT in deep-eyeball scope) — J63/J70/J71 E6_Nightmare §10.7 (slokkie→slokske Flemish diminutive) + J70 §9.1 (`t Is` missing apostrophe) + J71 §7.1 (ezel lc mid-sentence) + J142 World §12.2 Sturdy motto verify (push-confirmed). 6/8 clean sheets. **Note: E6_Nightmare J70 is a different version of the same EN line as World J197 — different scene (Hard's nightmare) with more drift — queue for follow-up batch.**
+
+
+---
+
+## 🎯 E10 Push 4 — deep-eyeball DRIFT batch (8 cells across 2 sub-tabs)
+
+**Date:** 2026-05-13
+**Sheet:** `10_asses.masses_E10Proxy` (`1Q1WSEJSGm9ZPEO6bfDNpX8wqXolFhyGad-17rJzc0nw`)
+**Scope:** 9 cells flagged in `data/editorial/audit-2026-05-12-deep-eyeball.md`; 8 applied + 1 kept (J112 speaker-differentiated register).
+**Method:** Combined live-API read with E3 (`propose-fixes-e10-e3.py`) → Tom per-cell sign-off → local-xlsx write (`apply-fixes-e10.py`) → `push-file.py 10_asses…` → fresh pull (`excels.fresh-pull-2026-05-13-post-E10-E3-push/`) → 8/8 round-trip ok.
+
+### E10_Government_localization (5 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E10_Government_localization | J47 | Foal | `"Heeft iemand zin om STENEN-SPEL te spelen?"` | `"Heeft iemand zin om KEIEN-SPEL te spelen?"` | §8 game-system: Keien-Spel (cross-corpus pattern continued) |
+| E10_Government_localization | J68 | Cole-Machine | `Lieve Ezel? Natuurlijk dat die idioten van Muilegem hier zouden zijn…` | `Lieve Ezel? Natuurlijk dat die idioten van Muilenbeek hier zouden zijn…` | §3.1 place name: Fannyside → Muilenbeek |
+| E10_Government_localization | J100 | Hard Ass | `Zeg de Mensen dat ze de grenzen van ons territorium in Muilegem moeten respecteren.` | `Zeg de Mensen dat ze de grenzen van ons territorium in Muilenbeek moeten respecteren.` | §3.1 place name |
+| E10_Government_localization | J110 | Thirsty Ass | `Zeg tegen de Mensen dat wij onze eigen zaakjes willen runnen, zoals het Poepegaatje, héé!` | `Zeg tegen de Mensen dat wij onze eigen zaakjes willen runnen, zoals De Zatten Ezel, héé!` | canon §1 v3.5 sync: Poepegaatje → De Zatten Ezel |
+| E10_Government_localization | J154 | Gaunt Ass | `Als de mensen ons geen grondgebied afstaan, zullen we hun kinderen doden.` | `Als de Mensen ons geen grondgebied afstaan, zullen we hun kinderen doden.` | §7.3 Mensen cap |
+
+### E10_ProphetSpeech_localization (3 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E10_ProphetSpeech_localization | J56 | Cole-Machine | `Toch zijn wij hier allemaal, zowel Mensen als Ezels, rationele wezens, kameraaden.` | `Toch zijn wij hier allemaal, zowel Mensen als Ezels, rationele wezens.` | Tom flagged §13 addition — NL adds `kameraaden` vocative with no EN equivalent; drop entire tail (NOT typo-fix to `kameraden`) |
+| E10_ProphetSpeech_localization | J81 | Cole-Machine | `BUITENGEGOOID MET ONZE LEIDERS—` | `BUITEN MET ONZE LEIDERS!` | Tom override — chant-rhythm variant; was past-participle ("Thrown out") not imperative |
+| E10_ProphetSpeech_localization | J110 | Big Ass | `WEES NIET BANG!` | `WEES NIET BANG` | Tom's exact form (no terminal `!`) |
+
+### Verify-only (no edit per Tom 2026-05-13)
+- `E10_ProphetSpeech_localization` J112 — `GEEN MIETJE ZIJN!` kept (Hard Ass tough-guy register, speaker-differentiated from Big Ass J110's neutral `WEES NIET BANG` — §6.7 uniformity yields to speaker voicing).
+
+### Canon-violation finding (Tom-driven, J56)
+Proposed fix was a mechanical typo correction `kameraaden` → `kameraden`. Tom flagged this as a §13 violation: the NL adds a `kameraad` vocative ("comrades") at the end of the sentence that has NO EN equivalent. EN: `Yet, all of us here, both Humans and donkeys, are rational beings.` — neutral statement, no vocative. The correct fix is to **remove the addition entirely**, not preserve it with corrected spelling.
+
+### Tooling
+- `scripts/editorial/propose-fixes-e10-e3.py` — combined live-API read (two spreadsheets) + transform preview.
+- `scripts/editorial/apply-fixes-e10.py` — safe local writer.
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 8 cells** (`excels.fresh-pull-2026-05-13-post-E10-E3-push/`).
+- Regex audit post-push: E10 dropped from 9 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit: 0 canon findings + 1 cell-align (E10_Credits long-line, false-positive). 10/11 clean sheets.
+
+
+---
+
+## 🎯 E3 Push 1 — deep-eyeball DRIFT batch (6 cells across 4 sub-tabs)
+
+**Date:** 2026-05-13
+**Sheet:** `3_asses.masses_E3Proxy` (`1dPFzn_FCcmgLx8HuuMcxBa4X29ixYnlbNqNkcVN95yY`)
+**Scope:** 8 cells flagged in `data/editorial/audit-2026-05-12-deep-eyeball.md`; 6 applied + 2 kept/skipped (J6 100 skip per Tom — parser-flagged but Tom called clean; J28 LazysGrave kept).
+**Method:** Combined live-API read with E10 (`propose-fixes-e10-e3.py`) → Tom per-cell sign-off → local-xlsx write (`apply-fixes-e3.py`) → `push-file.py 3_asses…` → fresh pull (`excels.fresh-pull-2026-05-13-post-E10-E3-push/`) → 6/6 round-trip ok.
+
+### E3_EpisodeTitle_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E3_EpisodeTitle_localization | J3 | UI | `AFLVERING DRIE` | `AFLEVERING DRIE` | spelling typo — missing E |
+
+### E3_Mine1FOpening_localization (2 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E3_Mine1FOpening_localization | J3 | Foal | `Kameraad Moeder, gaat dit kloteweeer ooit nog stoppen?` | `Kameraad Moeder, gaat dit kloteweer ooit nog stoppen?` | spelling typo — triple-e |
+| E3_Mine1FOpening_localization | J33 | Sturdy Ass | `Slimme Ezel, verdeel de ratioenen.` | `Slimme Ezel, verdeel de rantsoenen.` | non-existent word → rantsoenen (rations) |
+
+### E3_Mine1F_localization (2 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E3_Mine1F_localization | J53 | Big Ass | `We zijn dit rotsbloki aan 't verleggen, voor als de vloed nog dichter komt.` | `We zijn deze rotsblok aan 't verleggen, voor als de vloed nog dichter komt.` | Tom override — drop diminutive (`rotsblok` not `rotsblokje`) + switch `dit` → `deze` (Flemish de-word agreement) |
+| E3_Mine1F_localization | J82 | Thirsty Ass | `Ik zou 't noemen... De Zatten Ezel Cafe!` | `Ik zou 't... Café De Zatten Ezel noemen!` | Tom override — Café-prefix venue convention (matches E6 J196) + verb-final word order |
+
+### E3_200_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E3_200_localization | J4 | UI (journal) | `…Ik hoop dat iemand van Technopolis het zal kopen. Ik Had altijd gedacht…` | `…Ik hoop dat iemand van Technopolis het zal kopen. Ik had altijd gedacht…` | capitalization mid-sentence |
+
+### Verify-only / Skip (no edit per Tom 2026-05-13)
+- `E3_LazysGrave_localization` J28 — `Hey, schoon petje.` kept (Tom: loose colloquial OK; `petje` can mean head-covering; J29 helm-consistency not enforced).
+- `E3_100_localization` J6 — Tom called parser false-positive after clean raw re-read. Cell literally contains `455 ,` (number + space + comma — empty street-name slot, EN has `455 Esmasses,`) but Tom assessed no issue. Skipped per call. Could be revisited if street-name play-on-words `Esmasses` is later canonicalized for the address.
+
+### Tooling
+- `scripts/editorial/propose-fixes-e10-e3.py` — combined live-API read (two spreadsheets) + transform preview.
+- `scripts/editorial/apply-fixes-e3.py` — safe local writer.
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 6 cells** (`excels.fresh-pull-2026-05-13-post-E10-E3-push/`).
+- Regex audit post-push: E3 dropped from 8 deep-eyeball DRIFT → 0 deep-eyeball DRIFT (1 skip per Tom). Comprehensive audit: 2 canon findings (NEW, not in deep-eyeball scope — E3_100 + E3_300 outside batch) + 1 cell-align (E3_BadCave LEN-RATIO). 7/10 clean sheets.
