@@ -1497,3 +1497,29 @@ Tom asked whether `"Show the world the power of the Ass!"` quote should collapse
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 23 cells** (`excels.fresh-pull-2026-05-13-post-E4-push/`).
 - Regex audit post-push: E4 dropped from 23 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit: 1 canon (J62 Schoon Beest §4.4 — push-confirmed preserve, NOT actionable) + 0 align + 0 cross-row + 8/9 clean sheets.
+
+## 🎯 Slogan retcon — long-form §14.1 dying-words quote standardization (4 cells across E1)
+
+Triggered by project-wide slogan/chant corpus scan (2026-05-13). The long-form quote (Old Ass dying words: "Show the world the power of the Ass!" → NL "Herinner de Wereld aan de Belangen van de Ezels!") had 4 inconsistent occurrences across the corpus. Tom 2026-05-13: `Herinneer` is not standard Dutch; should be `Herinner` (single -e, 2sg imperative). Cases mirror EN intent. Belangen+Wereld capped.
+
+### Cells
+
+| Sheet | Cell | Before | After | Fix |
+|---|---|---|---|---|
+| E1_Stable2F_localization | J34 | `HERINNEER DE WERELD AAN DE BELANGEN VAN DE EZELS!` | `HERINNER DE WERELD AAN DE BELANGEN VAN DE EZELS!` | typo `Herinneer→Herinner` |
+| E1_TheProtest_localization | J67 | `"Herinneer de wereld aan de belangan van de Ezels" …` | `"Herinner de Wereld aan de Belangen van de Ezels" …` | typo + caps on Wereld/Belangen + spelling fix `belangan→Belangen` |
+| E1_TheProtest_localization | J69 | `"Herinneer de wereld aan de belangan van de Ezels" …` | `"Herinner de Wereld aan de Belangen van de Ezels" …` | same as J67 |
+| E1_TheProtest_localization | J115 | `HERINNEER DE WERELD AAN DE BELANGEN VAN DE EZELS` | `HERINNER DE WERELD AAN DE BELANGEN VAN DE EZELS!` | typo + add terminal `!` to mirror EN |
+
+E4_AstralPlaneMain J71 already at canonical form from E4 Push 2 (Tom override) — not in this batch.
+
+### Canon
+- New §14.1.1 entry added: explicitly disambiguates **chant form** (`EZELS EERST!`) vs **long-form dying-words quote** (`Herinner de Wereld aan de Belangen van de Ezels!`). Lock on `Herinner` spelling. Case mirrors EN.
+
+### Tooling
+- `scripts/editorial/slogan-chant-corpus-scan.py` — snapshot-based scan (xlsx, fast)
+- `scripts/editorial/slogan-chant-corpus-scan-live.py` — live-API scan (throttled via `_api_throttle`)
+- `scripts/editorial/apply-fixes-slogan-retcon.py` — local writer for the 4-cell batch
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 4 cells** (`excels.fresh-pull-2026-05-13-post-slogan-retcon/`).

@@ -685,6 +685,28 @@ Per-episode scans will produce drift counts for each term. To populate during E0
 - **Status:** ⏳ 13 drift cells; 5 need full sentence rephrase (slogan changed from noun phrase to imperative — doesn't drop into existing sentences cleanly).
 - **Codex:** Old Ass `verbalTics` references this.
 
+### 14.1.1 Two-form §14.1 disambiguation — ✅ TOM LOCKED 2026-05-13
+The §14.1 slogan exists in **two co-existing canonical renderings** in the corpus. Both are intentional and must be kept distinct.
+
+**(a) Chant form — short crowd-call:**
+- NL: `EZELS EERST!` (with `EZELS!` / `EERST!` call-and-response fragments)
+- Used when EN is `Ass Power!` / `ASS!` / `POWER!` / `WHEN I SAY ASS, YOU SAY POWER!`
+- Case mirrors EN — ALL-CAPS chant stays ALL-CAPS, mixed-case mention stays mixed-case
+- Quote marks preserved when EN has them (e.g. art-piece titles `"Ass Power!"` → `"Ezels Eerst!"`)
+- Corpus occurrences: E1_Stable2F J30, E1_TheProtest J116/J117/J119, E4_Mine1F J23, E6_World J148/J149, E8_TheGods J18, E10_Credits J116, E10_ProphetSpeech J109/J111
+
+**(b) Long-form dying-words quote — Old Ass's full utterance:**
+- NL: `Herinner de Wereld aan de Belangen van de Ezels!`
+- Used when EN is the full sentence `Show the world the power of the Ass!` and the line is Old Ass speaking (or someone directly quoting Old Ass's dying words)
+- **Spelling lock:** `Herinner` (single -e — modern Dutch 2sg imperative of `herinneren`). `Herinneer` is **not** standard Dutch and is now retconned across the corpus.
+- **Case lock:** mirrors EN intent. EN `SHOW THE WORLD…` (ALL-CAPS) → NL `HERINNER DE WERELD…` (ALL-CAPS, with terminal `!`). EN mixed-case → NL Title Case (`Wereld`, `Belangen` capped — these are game-system proper nouns per §7.3 magnitude treatment within the slogan).
+- **Terminal `!`** mirrors EN.
+- Corpus occurrences after 2026-05-13 retcon: E1_Stable2F J34 (`HERINNER…EZELS!`), E1_TheProtest J67/J69 (`"Herinner…Ezels"` framed quote, no `!` because narrator continues with `waren Oude Ezels laatste woorden.`), E1_TheProtest J115 (`HERINNER…EZELS!`), E4_AstralPlaneMain J71 (`"Herinner…Ezels!"`).
+
+**Retcon batch 2026-05-13:** 4 cells in E1 (J34 + J67 + J69 + J115) fixed `Herinneer→Herinner` + casing/typo + terminal-`!` per above. E4 J71 was already at canonical form from E4 Push 2 (Tom override).
+
+**Status:** ✅ Locked + retcon complete.
+
 ### 14.2 het Hemelvaarts-zang-der-Ezel-zielen (Song of Ascension)
 - **Canonical:** `het Hemelvaarts-zang-der-Ezel-zielen` (article `het` — neuter; exact form, hyphens, capital E in Ezel).
 - **Status:** ✅ Batches c + c2 applied (10 cells).
