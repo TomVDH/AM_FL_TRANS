@@ -1649,3 +1649,67 @@ Tom 2026-05-13 picked option (b) for J39 A1+B1: pick one phrasing and propagate.
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 14 cells** (`excels.fresh-pull-2026-05-13-post-E2-push/`).
 - Regex audit post-push: E2 dropped from 15 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit: 1 canon (J46 Schoon Beest §4.4 — push-confirmed preserve) + 1 new finding J25 (§5.4 `Stop. Sinds wanneer zijt GIJ` — Stop→Stopt ge/gij register, NOT in this batch, deferred) + 2 expected push-divergences (J53/J54 — by-design, new fix supersedes older push) + 13/15 clean sheets.
+
+
+---
+
+## 🎯 E6 Push 3 — deep-eyeball DRIFT batch (13 cells across 4 sub-tabs)
+
+**Date:** 2026-05-13
+**Sheet:** `6_asses.masses_E6Proxy` (`1_56yhltRDywIj1WpCP4nJAMjaBmFVC42fSwXMj2W0uU`)
+**Scope:** 15 cells flagged in `data/editorial/audit-2026-05-12-deep-eyeball.md`; 13 applied + 2 kept after Tom sign-off.
+**Method:** Live-API throttled read (`propose-fixes-e6.py`) → user per-cell sign-off → local-xlsx write (`apply-fixes-e6.py`) → `push-file.py 6_asses…` → fresh pull (`excels.fresh-pull-2026-05-13-post-E6-push/`) → 13/13 round-trip ok.
+
+### E6_BadCave_localization (3 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E6_BadCave_localization | J24 | Foal | `Ze denkt nog steeds dat we hier elke dag 'Stenen-spel' aan het spelen zijn…` | `Ze denkt nog steeds dat we hier elke dag 'Keien-Spel' aan het spelen zijn…` | §8 game-system: Keien-Spel (cross-corpus pattern) |
+| E6_BadCave_localization | J38 | Bad Ass | `Een plek voor de mensen.` | `Een plek voor de Mensen.` | §7.3 Mensen cap |
+| E6_BadCave_localization | J39 | Bad Ass | `Intelligente mensen.` | `Intelligente Mensen.` | §7.3 Mensen cap |
+
+### E6_BattleHard_localization (2 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E6_BattleHard_localization | J18 | UI | `Verduren` | `Volharden` | Tom override — unify Endure pair (J18+J33) on `Volharden` |
+| E6_BattleHard_localization | J20 | UI | `Wonden likken` | `Wonden Likken` | §6.7 cross-cell consistency: unify Lick Wounds pair (J20+J38) on title-case |
+
+### E6_Nightmare_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E6_Nightmare_localization | J3 | Miner Jenny | `Er word niet op het werk geslapen, nutteloze Ezel!` | `Er wordt niet op het werk geslapen, nutteloze Ezel!` | d/t spelling 3rd-sg passive |
+
+### E6_World_localization (7 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E6_World_localization | J75 | Foal | `Ik ben GESTELD MOEDER!` | `'t IS AL GOED MOEDER` | Tom override — Flemish teen-shout; `gesteld` = stipulated, not "fine" (§13 mistranslation) |
+| E6_World_localization | J188 | Sturdy Ass | `Ik probeer nog wat mooi tijd door te brengen met {$NewName}, maar ze groeit veel te snel op.` | `Ik probeer nog wat mooie tijd door te brengen met {$NewName}, maar ze groeit veel te snel op.` | adj-agreement (de-word `tijd`) |
+| E6_World_localization | J196 | Thirsty Ass | `Vanavond gaat De Zatten Ezel Cafe eindelijk open, héé!` | `Vanavond gaat Café De Zatten Ezel eindelijk open, héé!` | Tom override — venue compound name `Café De Zatten Ezel` + accent |
+| E6_World_localization | J197 | Thirsty Ass | `'t Is altijd al mijn verdomse DROOM geweest om een plekske waar Ezels efkes kunnen pauzeren open te doen, gedoeme.` | `'t Is altijd al mijn droom geweest om een plekske waar Ezels efkes kunnen pauzeren open te doen, gedoeme.` | Tom override — drop `verdomse` + DROOM-caps; keep `gedoeme` + original word order |
+| E6_World_localization | J206 | Thirsty Ass | `Awel godver Kameraad, da's precies daarom dadde ik mijn CAFE open, héé!` | `Awel ja Kameraad, da's precies daarom dadde ik mijn CAFÉ open doe, héé!` | Tom override — soften `godver`→`ja`; add `doe`; CAFÉ accent |
+| E6_World_localization | J260 | Sturdy Ass | `Slome Ezel? Waarom kom je hier terug aangesjokd?` | `Slome Ezel? Waarom kom je hier terug aangesjokt?` | d/t past-participle (kofschip: sjokken → -t) |
+| E6_World_localization | J292 | Slow Ass | `Onze B-B-Baas, Dierendokter D-D-Dina, heeft ons B-B-VERRADEN!` | `Onze B-B-Baas, Dierendokter D-D-Dina, heeft ons V-V-VERRADEN!` | §12.3 Slow stutter — leading-consonant rule (V-word → V-V) |
+
+### Verify-only (no edit per Tom 2026-05-13)
+- `E6_BadCave_localization` J40 — already capped `Mensen` ✓ (flagged for context only; J38/J39 fixes resolve the cross-cell inconsistency by raising lc to match J40).
+- `E6_BattleHard_localization` J33 — kept `Volharden` (already at Tom's unified target).
+- `E6_BattleHard_localization` J38 — kept `Wonden Likken` (already at Tom's unified target).
+- `E6_World_localization` J209 — `dezen ouwen emmer` ✓ (correct Flemish masc-article + adj-agreement per deep-eyeball confirmation).
+
+### Cross-cell unification decisions (Tom)
+1. **Endure pair J18/J33 → `Volharden`** (Tom flipped J18 from `Verduren` to `Volharden`; J33 already `Volharden`).
+2. **Lick Wounds pair J20/J38 → `Wonden Likken`** (title case match per J38).
+
+### J75 corpus check (Tom-requested)
+Scanned all 11 workbooks for `FINE MOTHER` / `GESTELD MOEDER` — **only occurrence is E6_World J75**. No repeats; other `gesteld`/`opgesteld`/`teleurgesteld`/`heraangesteld` hits are unrelated meanings (drawn-up, disappointed, reassigned). J75 is a one-off teen-shout response to Sturdy's `Is alles in orde daarbinnen?` (J74) — `'t IS AL GOED MOEDER` is idiomatic Flemish that doesn't echo J74's `in orde`.
+
+### Tooling
+- `scripts/editorial/propose-fixes-e6.py` — live-API read + transform preview.
+- `scripts/editorial/apply-fixes-e6.py` — safe local writer.
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 13 cells** (`excels.fresh-pull-2026-05-13-post-E6-push/`).
+- Regex audit post-push: E6 dropped from 15 deep-eyeball DRIFT → 0 deep-eyeball DRIFT. Comprehensive audit: 6 canon findings (all NEW, NOT in deep-eyeball scope) — J63/J70/J71 E6_Nightmare §10.7 (slokkie→slokske Flemish diminutive) + J70 §9.1 (`t Is` missing apostrophe) + J71 §7.1 (ezel lc mid-sentence) + J142 World §12.2 Sturdy motto verify (push-confirmed). 6/8 clean sheets. **Note: E6_Nightmare J70 is a different version of the same EN line as World J197 — different scene (Hard's nightmare) with more drift — queue for follow-up batch.**
