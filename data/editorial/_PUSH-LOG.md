@@ -1803,3 +1803,102 @@ Proposed fix was a mechanical typo correction `kameraaden` → `kameraden`. Tom 
 ### Round-trip
 - Fresh xlsx-export pull vs local: **0 diffs / 6 cells** (`excels.fresh-pull-2026-05-13-post-E10-E3-push/`).
 - Regex audit post-push: E3 dropped from 8 deep-eyeball DRIFT → 0 deep-eyeball DRIFT (1 skip per Tom). Comprehensive audit: 2 canon findings (NEW, not in deep-eyeball scope — E3_100 + E3_300 outside batch) + 1 cell-align (E3_BadCave LEN-RATIO). 7/10 clean sheets.
+
+
+---
+
+## 🎯 FINAL batch — combined deep-eyeball DRIFT closure + audit residuals (13 cells across 6 workbooks)
+
+**Date:** 2026-05-13
+**Sheets:** E0 / E5 / E6 / E7 / E8 / E9 (six separate spreadsheets)
+**Scope:** Closes the deep-eyeball DRIFT queue (E7×5, E0×2, E8×2, E9×1 = 10 cells) + actionable audit residuals from earlier pushes (E5 J208 §9.1 + E6_Nightmare J63/J70/J71 §10.7+§9.1+§7.1 = 4 cells). E2 J25 §5.4 Stop→Stopt residual KEPT per Tom (canon §5.4 ge/gij imperative deferred).
+**Method:** Combined live-API throttled read across 7 spreadsheets (`propose-fixes-final.py`) → Tom per-cell sign-off → unified local writer (`apply-fixes-final.py`) → sequential `push-file.py` for each of 6 workbooks → fresh pull (`excels.fresh-pull-2026-05-13-post-FINAL-push/`) → 13/13 round-trip ok.
+
+### E0 — CharacterProfiles_localization (2 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| CharacterProfiles_localization | J81 | UI (Blunt Ass profile) | `Groffe Ezel` | `Grove Ezel` | adj-form: Grof masc → Grove fem-adj-e |
+| CharacterProfiles_localization | J95 | UI (Chafed Ass profile) | `Excema Ezel` | `Exceem Ezel` | Tom override — preserves X from original (non-standard but Tom-chosen; standard Dutch would be `Eczeem`) |
+
+### E2 — KEPT (no edit per Tom 2026-05-13)
+- `E2_World_A1_localization` J25 — `Stop. Sinds wanneer zijt GIJ de baas?` kept (Tom "keep current?" — §5.4 ge/gij imperative `Stopt` deferred for stylistic call).
+
+### E5 — E5_ZooMain_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E5_ZooMain_localization | J208 | Smart Ass | `t Beste voor hem om een job zonder Machines te vinden!` | `'t Beste aan hem om een job zonder Machines te zoeken!` | Tom override — §9.1 apostrophe + voor→aan + vinden→zoeken (idiomatic restructure) |
+
+### E6 — E6_Nightmare_localization (3 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E6_Nightmare_localization | J63 | Thirsty Ass (nightmare) | `Kom d'r maar naartoe gesjokt en neem een slokje van m'n nieuwe drankspecialiteit: de Emmer Ale!` | `Komt maar gauw naar hier en pakt een slokske van m'n nieuwe drankspecial: de Emmer Ale!` | Tom override — ge/gij imperative stem+t (Komt/pakt) + §10.7 Flemish diminutive + drankspecial Anglicism |
+| E6_Nightmare_localization | J70 | Thirsty Ass (nightmare) | `t Is altijd al m'n verdomde DROOM geweest om een plek te hebben waar wij Ezels even op adem kunnen komen en samen lekker een slokkie water kunnen delen.` | `'t Is altijd al mijn droom geweest om een plekske waar Ezels efkes kunnen pauzeren open te doen, gedoeme.` | Tom: "my edit there rules" — match E6_World J197 exactly (cross-cell unification across dream/reality scenes) |
+| E6_Nightmare_localization | J71 | Thirsty Ass (nightmare) | `Ik kan zeker wel een slokkie gebruiken en een ezel om z'n oor te kauwen.` | `Ik kan zeker wel een slokske gebruiken en een ezel om z'n oor te kauwen.` | §10.7 Flemish diminutive only; `ezel` lc kept (colloquial-generic "a guy to gripe at", not species term) |
+
+### E7 (4 cells across 4 sub-tabs)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E7_Chilling_localization | J5 | Big Ass | `Wacht. Voor we vertrekken moeten we de ezelenhemelvaartszangderzielen zingen voor onze Kameraden.` | `Wacht. Voor we vertrekken moeten we de Hemelvaarts-zang-der-Ezel-zielen zingen voor onze Kameraden.` | canon §14.2.1 compound: article + caps + hyphens |
+| E7_Holding1_localization | J22 | Kick Ass | `@#$%&! Wie zij GIJ?!` | `@#$%&! Wie zijt GIJ?!` | §5.0 ge/gij 2nd-person present: zijt |
+| E7_MeatProcessing_localization | J9 | Smart Ass | `Tijd dat de Meesterstrateeg iedereen toont hoe 't moet!` | `Tijd dat de Meesterstrateeg iedereen laat zien hoe 't moet!` | §6.7 cross-cell unify on J11's `laat zien` (identical EN line) |
+| E7_Skinning_localization | J8 | Smart Ass | `Stamp en Triestige—electriciteit UIT!` | `Stamp en Triestige—elektriciteit UIT!` | Dutch spelling: k not c |
+
+### E7 — KEPT (no edit per Tom)
+- `E7_MeatProcessing_localization` J11 — already at unify target `laat zien` (no write needed; J9 brought up to match).
+
+### E8 — E8_TheGods_localization (2 cells)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E8_TheGods_localization | J7 | THE GODS | `Dit is het Heiligdom van H'ii waar alle Ezel Zielen Heraanstelling ondergaan.` | `Dit is het Heiligdom van H'ii waar alle Ezel-Zielen Heraanstelling ondergaan.` | canon §14.2.1 hyphenation (Gods' names Hee/Haw/H'ii verified canonical) |
+| E8_TheGods_localization | J24 | Haw | `Gezien onze goddelijk last der dragen van het Universum op onze rug, kunnen wij niet ingrijpen in de Materiële Wereld zonder al het leven in gevaar te brengen.` | `Gezien onze heilige last der dragen van het Universum, kunnen wij niet in de Materiële Wereld ingrijpen zonder alle leven in gevaar te brengen.` | Tom override — `goddelijk`→`heilige` (holy register) + drops `op onze rug` + verb-position shift + `al het`→`alle` + preserves archaic `der dragen` for divine register |
+
+### E9 — E9_BadCave_localization (1 cell)
+
+| Sheet | Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|---|
+| E9_BadCave_localization | J40 | Sturdy Ass | `Ik dacht dat je STENEN-SPEL aan 't spelen was met je NONKEL!` | `Ik dacht dat je KEIEN-SPEL aan 't spelen was met je NONKEL!` | §8 game-system — **closes Stenen-spel/KEIEN-SPEL pattern across all 11 workbooks** |
+
+### Decisions (Tom)
+1. **E0 J95 Chafed Ass** → `Exceem Ezel` (Tom's exact form, preserves X from original; not std-Dutch but Tom-chosen).
+2. **E5 J208** restructure: `voor hem te vinden` → `aan hem te zoeken` (more idiomatic Dutch).
+3. **E6 Nightmare J63** ge/gij imperatives + Anglicism `drankspecial` (Thirsty register).
+4. **E6 Nightmare J70** cross-cell unification with World J197 (dream/reality same line, same truncated form).
+5. **E7 MeatProcessing pair** unified on J11's `laat zien` form.
+6. **E8 J24** preserves archaic `der dragen` for divine register; restructures rest.
+
+### J7 TheGods context-check (Tom-requested)
+Verified all Gods' names canonical against canon §5.2 + §7.4: `Hee` ✓, `Haw` ✓, `THE GODS` ✓, `H'ii` (Holy Sanctum location, preserved correctly in NL) ✓, `Astrale Hiernamaals` ✓, `Heraanstelling` ✓. Only the hyphenation `Ezel-Zielen` (per §14.2.1) needed fixing.
+
+### Excluded from batch (verify-only / known-skip — documented for awareness)
+- **Schoon Beest §4.4 PUSHED-BEFORE × 3** (E1 J29, E2 J46, E4 J62) — canonical Thirsty→Nice nickname, no action needed.
+- **Sturdy motto §12.2 fragments × 7** (E6 J142 + E9 J18/J19/J20/J21/J43/J68) — speaker-fragmented intentional motto reveals; the 4-adj `evil, soulless, job-taking, child-killing Machines` motto is split across cells for dramatic effect.
+- **E3 §9.6 diary contracted × 2** (E3_100 J3 + E3_300 J7) — false-positive (rule applies to WRITE.Dialog journals, those are SAY.Dialog).
+
+### Tooling
+- `scripts/editorial/propose-fixes-final.py` — combined live-API read across 7 spreadsheets (throttled).
+- `scripts/editorial/apply-fixes-final.py` — unified multi-workbook writer (per-workbook pre-image safety check, single execution).
+
+### Round-trip
+- Fresh xlsx-export pull vs local: **0 diffs / 13 cells** (`excels.fresh-pull-2026-05-13-post-FINAL-push/`).
+- Regex audits post-push:
+  - **E0**: 0 canon, 1 cell-align (false-positive LEN-RATIO), 8/9 clean ✓
+  - **E5**: 0 canon, 4 cell-align (known LEN-RATIO), 1 push-divergence (J91 Tom-kept English `success`), 5/7 clean ✓
+  - **E6**: 2 canon (J142 World §12.2 verify + 1 other) — DRIFT 5 → 0, 6/8 clean ✓
+  - **E7**: **0 canon, 0 cell-align, 0 push-diverge — 17/17 clean ✓** (closes E7)
+  - **E8**: **0 canon, 0 cell-align, 0 push-diverge — 3/3 clean ✓** (closes E8)
+  - **E9**: 6 canon (Sturdy motto §12.2 cluster + 1 other), 1 cell-align, 2/5 clean — DRIFT 1 → 0 ✓
+
+### 🏁 Queue closure
+**Deep-eyeball DRIFT (124 total) → 0 remaining ✓**
+
+All 11 episodes pushed across this multi-batch arc:
+- E5 Push 4 (24) `3aa1000` • slogan retcon (4) `a9887e2` • E1 Push 3 (17) `bd686ca`
+- E4 Push 2 (23) `85a34e4` • E2 Push 3 (14) `b32232c` • E6 Push 3 (13) `661aebb`
+- E10 Push 4 + E3 Push 1 (14) `2b985b1` • **FINAL (13)** — this entry
+
+**Total cells fixed in arc: ~122 cells across 11 workbooks. All round-trips ok, all audits dropping DRIFT to 0 per episode.**
