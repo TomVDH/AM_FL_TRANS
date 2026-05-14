@@ -1950,3 +1950,62 @@ All 11 episodes pushed across this multi-batch arc:
 ### Round-trip
 - 17/17 ok (`excels.fresh-pull-2026-05-13-post-E4-blind/`)
 - Regex audit post-push: E4_AstralPlaneMain **0 canon findings** ✓ (the 22 blind-spot findings were invisible to regex by definition — this push closes that gap). E4 overall: 8/9 clean (1 PUSHED-BEFORE residual J62 Schoon Beest).
+
+
+---
+
+## 🎯 E5 Blind-Spot Push — ZooMain post-walk fixes (21 cells, 1 sheet)
+
+**Date:** 2026-05-13
+**Sheet:** `5_asses.masses_E5Proxy` :: `E5_ZooMain_localization`
+**Scope:** 30 blind-spot findings from `blind-spot-walk-E5_ZooMain.md`; 21 applied + 9 kept per Tom 2026-05-13.
+**Method:** Agent-walked end-to-end → context-check on J97 (Slow begging after `LOSERS! Ha!`) and J51/J217 (Day-3 banter vs Day-7 anger register) → Tom per-cell sign-off → `apply-fixes-e5-blind.py` → `push-file.py 5_asses…` → `excels.fresh-pull-2026-05-13-post-E5-blind/` → 21/21 round-trip ok.
+
+### Writes (21 cells)
+
+| Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|
+| J118 | Sad Ass | `*boe-hoe-hoe-hoe*` | `*boe-hoe-hoe*` | §11.1 codex-lock (3 hoes per Tom 2026-05-10) |
+| J123 | Sad Ass | `*boe-hoe-hoe-hoe*` | `*boe-hoe-hoe*` | §11.1 codex-lock |
+| J109 | Zookeeper Rose | `Platvoet! Kleine stap verwijderd van eerste plaats! Pakt ze!` | `Platvoet! Kleine stap verwijderd van de eerste plaats! Pak ze!` | §5.1 register Pakt→Pak + Tom tweak add `de` |
+| J48 | Slow Ass | `Och j-j-jongens.` | `O j-j-jee.` | §12.4 canon `Oh jee` |
+| J81 | Slow Ass | `Ach j-j-jongens. Vandaag was b-b-bijzonder h-h-hard…` | `O j-j-jee. Vandaag was b-b-bijzonder h-h-hard…` | §12.4 canon `Oh jee` |
+| J183 | Zookeeper Rose | `…gaat vandaag op site om…` | `…komt vandaag on-site om…` | Tom override — softer Anglicism path with hyphen |
+| J97 | Slow Ass | `H-h-haat mij alsjeblief n-n-niet maar...` | `H-h-haat mij n-n-niet...` | §12.4 cut `Please/alsjeblief` (Slow's stutter carries the begging weight; context confirmed via J96 LOSERS preceding) |
+| J184 | Zookeeper Rose | `…ons deel van de dierentuin te sturen?` | `…ons deel van de Dierentuin te sturen?` | §7.3.1 cap parity (7 other cells in sheet cap Dierentuin) |
+| J155 | Sad Ass | `Maar ik weet dat dit niet met ieder van jullie hier te vinden valt.` | `Maar ik weet dat ik het hier bij jullie niet ga vinden.` | §13 awkward inversion |
+| J100 | Big Ass | `Nu moeten we niet meer met haar opgeblazen ego te maken hebben!` | `Nu zijn we van haar dikke nek af!` | Tom idiom override (`opgeblazen ego`→`dikke nek` — Flemish-idiom collective relief) |
+| J122 | Sad Ass | `En jullie allemaal zonder mij zijn verdergegaan.` | `En jullie zijn allemaal zonder mij verdergegaan.` | §13 word-order V2 fix |
+| J199 | Smart Ass | `En 't beste voor hem om een job zonder Machines te vinden!` | `Moge hij het beste geluk hebben om een Job zonder Machines te vinden!` | Tom new unified form for J199+J208 pair (more elevated `Moge` + Job cap §6.16) |
+| J208 | Smart Ass | `'t Beste aan hem om een job zonder Machines te zoeken!` (Tom FINAL push override) | `Moge hij het beste geluk hebben om een Job zonder Machines te vinden!` | Tom re-override — pair-unification at J199/J208 |
+| J190 | Zookeeper Rose | `…ze knus komen Knuffelen!` | `…ze gezellig komen Knuffelen!` | §6.7 unify on J176's `gezellig` |
+| J13 | Zookeeper Rose | `…hoe pienter ze wel niet is.` | `…hoe pienter ze wel niet is!` | §9.3 punct match EN |
+| J67 | Zookeeper Rose | `…wanneer je BALKT.` | `…wanneer je BALKT!` | §9.3 punct match EN |
+| J204 | Slow Ass | `...niet eens s-s-salut gezegd.` | `...niet eens s-s-salut gezegd!` | §9.3 punct match EN |
+| J207 | Smart Ass | `Niets, jong. Absoluut niet.` | `Geen sprake van, joh! Absoluut niet.` | §13 wording + Tom tweak jong→joh |
+| J29 | Slow Ass | `Je kan niet in a-a-alles goed z-z-zijn, Slim—` | `Je kan niet in alles goed z-z-zijn, Slim—` | §12.3 drop vowel-initial stutter |
+| J31 | Slow Ass | `O-o-oef! Ik ben uitged-d-droogd!` | `Oe-oe-oef! Ik ben uitged-d-droogd!` | Tom override — preserves vowel cluster + stutter pattern |
+| J108 | Zookeeper Rose | `…tot de eerste plek gaat schoppen!` | `…tot de eerste plaats gaat schoppen!` | Tom tweak plek→plaats |
+
+### Kept (9 cells)
+- **J96** Smart Ass `LOSERS! Ha!` — stylistic loanword punch (Tom)
+- **J38** tense mismatch — Tom keep
+- **J197** `broekschijter` — Tom keep
+- **J172** `gaan te weten komen` — Tom keep
+- **J51** Smart Ass `Hou je bakkes!` (Day 3 light banter) — distinct from J217 by context register
+- **J217** Smart Ass `Bek dicht!` (Day 7 angry-defensive) — distinct from J51
+- **J85, J189, J95, J193** — minor NOTEs, Tom OK / leave
+
+### J51 vs J217 register-distinction rationale
+J51 fires in Day 3 banter cluster (Big `Massive gains!` / Kick `IEDEREEN'S GAME!`) — Smart's `Hou je bakkes!` is light-bantery. J217 fires in Day 7 anger cluster (Big complains, Kick mocks `clunky as a MACHINE`) — Smart's `Bek dicht! Het is zijn zalf...` is sharp-defensive. J30 already uses `Bek dicht, Slome!` for distinct EN `Keep your mouth shut`. The two phrasings are register-appropriate for the Sad-arc escalation. Kept distinct.
+
+### J199/J208 supersedes FINAL push
+J208 was set to `'t Beste aan hem om een job zonder Machines te zoeken!` in FINAL batch (commit b1ad052). Tom's new form `Moge hij het beste geluk hebben om een Job zonder Machines te vinden!` is a re-edit applied to BOTH J199 and J208 for §6.7 corpus unification. Job capped per §6.16 (game-system Job).
+
+### Tooling
+- `data/editorial/blind-spot-walk-E5_ZooMain.md` — source findings
+- `scripts/editorial/apply-fixes-e5-blind.py` — local writer
+
+### Round-trip
+- 21/21 ok (`excels.fresh-pull-2026-05-13-post-E5-blind/`)
+- Regex audit post-push: E5_ZooMain **0 canon findings** ✓ (same as before — blind-spot findings invisible to regex). 2 cell-align LEN-RATIO + 2 push-divergence (J91 Tom-kept `success` + J208 Tom re-edit just pushed). 5/7 clean.
