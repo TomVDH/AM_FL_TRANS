@@ -2009,3 +2009,44 @@ J208 was set to `'t Beste aan hem om een job zonder Machines te zoeken!` in FINA
 ### Round-trip
 - 21/21 ok (`excels.fresh-pull-2026-05-13-post-E5-blind/`)
 - Regex audit post-push: E5_ZooMain **0 canon findings** ✓ (same as before — blind-spot findings invisible to regex). 2 cell-align LEN-RATIO + 2 push-divergence (J91 Tom-kept `success` + J208 Tom re-edit just pushed). 5/7 clean.
+
+
+---
+
+## 🎯 E6 Blind-Spot Push — World post-walk fixes (13 cells, 1 sheet)
+
+**Date:** 2026-05-13
+**Sheet:** `6_asses.masses_E6Proxy` :: `E6_World_localization`
+**Scope:** 13 blind-spot findings (5 HIGH/3 MEDIUM/5 LOW) from `blind-spot-walk-E6_World.md`; 13 applied + 1 kept (J334) per Tom 2026-05-13.
+
+### Writes (13 cells)
+
+| Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|
+| J304 | Sturdy Ass | `Kameraden, ik denk dat je moet onthouden dat—` | `Kameraden, ik denk dat wij moeten onthouden dat—` | §13 pronoun bug — `je` singular breaks `Kameraden` plural-vocative agreement. Tom chose alternate `wij` (more formal) |
+| J326 | Sturdy Ass | `Ist dat niet waar, Kameraad Bikkelharde?` | `Is 't niet, Kameraad Bikkelharde?` | Tom override — `Ist` was non-standard contraction unique-in-corpus; Tom tightens to `Is 't niet` |
+| J251 | Thirsty Ass | `EEN GODVERDOMS FEESTJE, HÉÉ!` | `EEN GODVERDOEMS FEESTJE, HÉÉ!` | §1 codex Thirsty forbidden-marker — `-oe-` family required (`godverdomme` forbidden, `godverdoemme`/etc allowed). Cross-cell parity with J336. |
+| J246 | Thirsty Ass | `…me jouwe naam erop, héé!` | `…met u naam erop, héé!` | §1 codex Thirsty `pronounsForbidden: [jouw]`. Tom tweak from proposed `oewe` → `met u` (Flemish colloquial possessive) |
+| J289 | Slow Ass | `Als je het kunt b-b-geloven—…` | `Als je het kunt g-g-geloven—…` | §12.3 Slow stutter leading-consonant rule (`geloven` has no b). Direct parallel to J292 fix (B-B-VERRADEN→V-V-VERRADEN) |
+| J184 | Sad Ass | `Blijkt dat ik goed ben in het zorgen voor de herinneringen… dat is iets waar ik echt goed in ben…` | `Blijkt dat het zorgen voor de herinneringen aan onze verloren geliefden iets is waar ik echt goed in ben…` | §13 duplicate-paste artifact — single-assertion form matches EN |
+| J257 | Slow Ass | ` Ik b-b-ben eigenlijk een Leeuw!` (leading space) | `Ik b-b-ben eigenlijk een Leeuw!` | formatting — strip leading whitespace |
+| J275 | Slow Ass | ` Je zou je ogen niet geloofd heb-b-ben!` (leading space) | `Je zou je ogen niet geloofd heb-b-ben!` | formatting — strip leading whitespace |
+| J191 | Sad Ass | `Pas goed op uzelf, Kameraad.` | `Pas goed op jezelf, Kameraad.` | §5.1 — Option B: keep Sad's je/jij register (rejects the conventional-courtesy-formula carve-out) |
+| J84 | Foal | `GOED DAN...` | `OKÉ DAN...` | §6.7 cross-cell unify on J67's form |
+| J88 | Foal | `PRIMA...` | `OKÉ DAN...` | §6.7 cross-cell unify on J67's form |
+| J319 | Sturdy Ass | `Wie heeft er hier nog vuile geheimen zitten verzwijgen?!` | `Wie heeft er hier nog vuile geheimen zitten verzwijgen?` | §9.3 Option A: revert to match EN `?` (drop the added `!`) |
+| J124 | Sturdy Ass | `Veulentje kan soms echt een hoefvol zijn.` | `'t Veulentje kan soms echt een hoefvol zijn.` | §13 article — alternate `'t Veulentje` matches Sturdy contraction style at J116 |
+
+### Kept (1 cell)
+- **J334** Hard Ass — `Ik was vergeten waarvoor ik eigenlijk vocht.` (`vergeten` register kept over `uit het oog verloren` paraphrase)
+
+### J67 already at target
+J67 `OKÉ DAN...` was already at the cross-cell unify target — no write needed; J84/J88 brought up to match.
+
+### Tooling
+- `data/editorial/blind-spot-walk-E6_World.md` — source findings (5 HIGH/3 MEDIUM/5 LOW)
+- `scripts/editorial/apply-fixes-e6-blind.py` — local writer
+
+### Round-trip
+- 13/13 ok (`excels.fresh-pull-2026-05-13-post-E6-blind/`)
+- Regex audit post-push: E6 overall 6/8 clean. 2 canon residuals: J71 §7.1 `ezel` lc-mid-sentence (Tom-kept previously, colloquial-generic) + J142 §12.2 Sturdy motto verify (push-confirmed). Both intentional. E6_World **0 NEW canon findings** ✓.
