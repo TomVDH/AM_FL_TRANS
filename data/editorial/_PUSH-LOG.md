@@ -1902,3 +1902,51 @@ All 11 episodes pushed across this multi-batch arc:
 - E10 Push 4 + E3 Push 1 (14) `2b985b1` • **FINAL (13)** — this entry
 
 **Total cells fixed in arc: ~122 cells across 11 workbooks. All round-trips ok, all audits dropping DRIFT to 0 per episode.**
+
+
+---
+
+## 🎯 E4 Blind-Spot Push — AstralPlaneMain post-walk fixes (17 cells, 1 sheet)
+
+**Date:** 2026-05-13
+**Sheet:** `4_asses.masses_E4Proxy` :: `E4_AstralPlaneMain_localization`
+**Scope:** 22 blind-spot findings from `blind-spot-walk-E4_AstralPlaneMain.md` (regex-invisible canon §s); 17 applied + 5 kept per Tom 2026-05-13.
+**Method:** Agent-walked end-to-end (5 parallel agents on high-traffic sheets), full per-cell readouts → Tom per-cell sign-off → `apply-fixes-e4-blind.py` → `push-file.py 4_asses…` → `excels.fresh-pull-2026-05-13-post-E4-blind/` → 17/17 round-trip ok.
+
+### Writes (17 cells)
+
+| Cell | Speaker | Before | After | Rule |
+|---|---|---|---|---|
+| J207 | DJ Dope Ass | `Hebde gij misschien wat van dat Paarse Spul...?` | `Hebt gij misschien wat van dat Paarse Spul...?` | Tom override — keeps ge/gij but cleans `Hebde` form |
+| J214 | DJ Dope Ass | `Doet mij een plezier en fix mij wat, oké?` | `Doe me een plezier en ga fixen voor mij, oké?` | Tom override — flips to je/jij + restructures |
+| J138 | Chafed Ass | `…voor heb heb gewerkt, voordat ze me afmaakten en van mij een delicatesse hebben bereid.` | `…voor ze heb gewerkt, voordat ze me afmaken, villen en van mij een 'delicatesse' maken.` | Tom override — present tense + restores content (sledgehammer omitted by Tom) |
+| J125 | Bitter Ass | `…ze met een stalen pijp bijeen sloegen!` | `…ze mij met een stalen pijp in elkaar geslagen hebben!` | §13 missing direct object + idiom fix |
+| J204 | Tight Ass | `Buiten, natuurlijk, DJ Lijpe Ezel's Astrale Trap Concert.` | `Behalve, natuurlijk, voor het Astrale Trap Concert van DJ Lijpe Ezel.` | §13 — `Buiten`→`Behalve`, restored preposition (context J203/J204 self-correcting except-clause) |
+| J51 | Greedy Ass | `Ik wist dat ze een gat in haar hand had!` | `Ik wist dat zij een gokker was!` | §13 idiom — `gat in hand` = spendthrift (wrong); Tom chose alternate over default |
+| J140 | Angry Ass | `…ze ons nooit de representatie in de media geven…` | `…ze ons nooit de vertegenwoordiging in de media geven…` | Tom override — fixes §12.4 Anglicism `representatie`→`vertegenwoordiging`; KEEPS present `geven` |
+| J142 | Angry Ass | `De meeste van ons zijn hele mensen met rijke innerlijke belevenissen.` | `De meesten onder ons zijn complexe individuen met rijke innerlijke levens.` | Tom override — `onder ons` + plural `levens` |
+| J156 | Ugly Ass | `Sommige wouden betere levensomstandigheden.` | `Sommigen wilden betere levensomstandigheden.` | §13 dialect `wouden`→`wilden` + `Sommige`→`Sommigen` |
+| J159 | Janky Ass | `…spontane opwellingen meegemaakt…` | `…spontane opstanden geleid…` | §13 — `opwellingen`(impulses)→`opstanden`(uprisings) + agency `meegemaakt`→`geleid` |
+| J160 | Janky Ass | `…om die Boeren te laten betogen.` | `…om die Boeren in opstand te laten komen.` | §13 — `betogen`(demonstrate)→`in opstand komen`(revolt) |
+| J163 | Ugly Ass | `…heeft gëinspireerd.` | `Anderen hier zeggen dat mijn Hongerstaking generaties geïnspireerd heeft.` | diaeresis fix + restored `hier` |
+| J179 | Shaky Ass | `NU KAN IK MIJN BEENDEREN VOELEN!` | `NU VOEL IK HET TOT IN MIJN BOTTEN` | Tom override — restored EN idiom `feel it in my bones` + dropped trailing `!` |
+| J231 | Smelly Ass | `Dan wat sta je hier te doen? Wat met DJ Lijpe Ezel's Concert?!` | `Wat sta je hier dan te doen? En DJ Lijpe Ezel's Concert dan?!` | §13 word-order fix |
+| J164 | Total Ass | `…een Boycott tegen…` | `…een Boycot gepleegd tegen…` | §12.4 Dutch spelling + word-order restored |
+| J153 | Janky Ass | `ACH! Protesten… lijken meestal op een goed idee maar ze werken MEESTAL NIET.` | `ACHH! Protesten… lijken op een goed idee maar ze WERKEN NIET.` | §9.3 ACHH consonant + drops softening `meestal` ×2 (restores EN absolute) |
+| J169 | Lofty Ass | `Onze liefde voor vrede werd ons niet in dank afgenomen.` | `Onze liefde voor vrede werd ons niet in dank afgenomen...` | §9.3 ellipsis restored |
+
+### Kept (5 cells, no edit per Tom)
+- **J208** DJ Dope Ass — `Ge weet toch over wat ik het heb, hé?` (ge/gij KEPT despite canon je/jij lock — Tom keeps register mix per-cell)
+- **J210** DJ Dope Ass — `Ge weet over wat ik het heb, jong!…` KEPT
+- **J215** DJ Dope Ass — `…dat gij mij wat van dat Paarse Spul ging fixen?` KEPT
+- **J181** Peek Ass — `…gewoon rusting chillen en toekijken.` KEPT (`rusting` typo OK per Tom — possibly intentional broken-Dutch for character)
+- **J84** Old Ass — `…de Steppes van Haahaahon…` KEPT (Anglicism acceptable as exotic place-name)
+- **J123** Bitter Ass — `Wij zijn MZK. Dat staat voor "Mensen Zijn Kak".` KEPT (Tom-locked acronym swap; loses HAW bray-pun but accepted)
+
+### Tooling
+- `data/editorial/blind-spot-walk-E4_AstralPlaneMain.md` — source findings (agent-walked)
+- `scripts/editorial/apply-fixes-e4-blind.py` — local writer
+
+### Round-trip
+- 17/17 ok (`excels.fresh-pull-2026-05-13-post-E4-blind/`)
+- Regex audit post-push: E4_AstralPlaneMain **0 canon findings** ✓ (the 22 blind-spot findings were invisible to regex by definition — this push closes that gap). E4 overall: 8/9 clean (1 PUSHED-BEFORE residual J62 Schoon Beest).
