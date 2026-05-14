@@ -2050,3 +2050,96 @@ J67 `OKÉ DAN...` was already at the cross-cell unify target — no write needed
 ### Round-trip
 - 13/13 ok (`excels.fresh-pull-2026-05-13-post-E6-blind/`)
 - Regex audit post-push: E6 overall 6/8 clean. 2 canon residuals: J71 §7.1 `ezel` lc-mid-sentence (Tom-kept previously, colloquial-generic) + J142 §12.2 Sturdy motto verify (push-confirmed). Both intentional. E6_World **0 NEW canon findings** ✓.
+
+
+---
+
+## 🎯 E10 Blind-Spot Push — Government + ProphetSpeech post-walk (34 cells, 2 sheets)
+
+**Date:** 2026-05-13
+**Sheet:** `10_asses.masses_E10Proxy` — Gov 29 cells + ProphetSpeech 5 cells = 34 total
+**Scope:** 27 + 7 = 34 blind-spot findings from `blind-spot-walk-E10_Government.md` + `blind-spot-walk-E10_ProphetSpeech.md`; 34 applied + 3 kept (Golden Ass §5.1 archaic-divine exception) per Tom 2026-05-13.
+**Method:** Agent-walked → Tom group-level sign-off (A/B/C/D/E for Gov) + per-cell for Prophet → `apply-fixes-e10-gov-blind.py` + `apply-fixes-e10-prophet-blind.py` → two `push-file.py 10_asses…` calls (29 + 5 cells) → `excels.fresh-pull-2026-05-13-post-E10-full-blind/` → 34/34 round-trip ok.
+
+### E10_Government — 29 writes
+
+**Group A — §5.4 ge/gij imperative sweep (8 cells)**
+
+| Cell | Speaker | Before | After |
+|---|---|---|---|
+| J45 | Helpful Ass | `Zeg ne keer iets in 't Mens!` | `Zegt ne keer iets in 't Mens!` |
+| J57 | Edgy Ass | `Zeg de Mensen dat ze ons steunen—` | `Zegt de Mensen dat ze ons steunen—` |
+| J88 | Helpful Ass | `Zeg tegen de Mensen da we zóveel geleden hebben—` | `Zegt tegen de Mensen da we zóveel geleden hebben—` |
+| J89 | Edgy Ass | `Zeg de Mensen dat ze moeten steunen—` | `Zegt de Mensen dat ze moeten steunen—` |
+| J129 | Kick Ass | `Zeg tegen de Mensen dat we NIET MEER WILLEN VECHTEN!` | `Zegt tegen de Mensen dat we NIET MEER WILLEN VECHTEN!` |
+| J134 | Kick Ass | `@#$%&! Ga met de ANDEREN praten!` | `@#$%&! Gaat met de ANDEREN praten!` |
+| J142 | Big Ass | `Zeg tegen de Mensen dat ze overal hun Fabrieken sluiten...` | `Zegt tegen de Mensen dat ze overal hun Fabrieken sluiten...` |
+| J240 | Edgy Ass | `Zeg tegen de Mensen dat ze onze creatieve inspanningen…` | `Zegt tegen de Mensen dat ze onze creatieve inspanningen…` |
+
+**Group B — §12.4 English bleed (3 cells)**
+
+| Cell | Speaker | Before | After |
+|---|---|---|---|
+| J11 | Radio Host | `…aan de top van het uur.` | `…op het hele uur.` |
+| J51 | Foal | `Wowee... oké...` | `Wauw... oké...` |
+| J213 | Left Ass | `Consent is wat elke Ezel wil.` | `Toestemming is wat elke Ezel wil.` |
+
+**Group C — §13 mistranslation (5 cells)**
+
+| Cell | Speaker | Before | After |
+|---|---|---|---|
+| J18 | Gaunt Ass | `Halt, blijf staan!` | `Halt! Staan blijven!` (Tom override) |
+| J19 | Proper Ass | `Geen Mensen toegelaten.` | `Geen Mensen binnen toegelaten.` |
+| J50 | Proper Ass | `Jonge Profetes, staat u ons toe te vragen — wilt u onze eisen vertolken aan de Mensen?` | `Jonge Profeet, wilt u onze eisen vertolken aan de Mensen?` |
+| J82 | Cole-Machine | `…de mensen wereldwijd tot nadenken brengen.` | `…de manier van leven van de Mensen wereldwijd veranderen.` (alternate) |
+| J83 | Cole-Machine | `…, kameraden, dan geef 'k die door aan de burgers…` | `…, dan geef 'k die door aan de burgers…` (drop added vocative — J56 precedent) |
+
+**Group D — §7.1 / §9.3 (3 cells)**
+
+| Cell | Speaker | Before | After |
+|---|---|---|---|
+| J235 | Right Ass | `Zeg tegen de mensen dat ze alle schulden moeten kwijtschelden waarvan ze denken dat wij die bij hen hebben.` | `Zeg tegen de Mensen dat ze al de schulden, die ze denken dat we bij ze hebben, kwijt te schelden.` (Tom full restructure) |
+| J252 | Golden Ass | `…tot de mensen te wenden?` | `…tot de Mensen te wenden?` |
+| J3 | Proper Ass | `…hebben bepaald!` | `…hebben bepaald.` (§9.3 EN match) |
+
+**Group E — §6.7 cross-cell pairs (10 cells)**
+
+| Cell | Speaker | Before | After | Pair note |
+|---|---|---|---|---|
+| J52 | Golden Ass | `Geheel zoals in de dagen van weleer.` | `Geheel zoals de dagen van weleer.` (Tom dropped `in`) | new shared form |
+| J84 | Golden Ass | `Net als in de goede oude tijd.` | `Geheel zoals de dagen van weleer.` | new shared form |
+| J59 | Resentful Ass | `Geen ritten meer!!` | `Gedaan met de ritjes!!` | Tom flipped — unify on J91's form |
+| J60 | Golden Ass | `Gij allen hebt veel te zeggen…` | `Gij hebt allen veel te zeggen…` | unify on J92 form |
+| J95 | Golden Ass | `…eisen bondig te houden.` | `…eisen beknopt te houden.` | unify on J63's `beknopt` |
+| J97 | Golden Ass | `…steeds een vorig idee vervangen…` | `…te allen tijde een vorig idee vervangen…` | unify on J65's formal register |
+| J164 | Helpful Ass | `Wil de 't weten?` | `Wilde 't weten?` | quad unify on `Wilde` |
+| J192 | Helpful Ass | `Wil de 't nog ne keer horen, mijn verhaal?` | `Wilde 't nog ne keer horen, mijn verhaal?` | quad unify on `Wilde` |
+| J266 | Golden Ass | `…opdat wij tot deze Wereld mochten wederkeren en haar te redden.` | `…opdat wij tot deze Wereld mochten wederkeren en haar redden.` | Tom: keep archaic, only drop stray `te` |
+| J136 | Smart Ass | `Dat is wat Mega Ezel gewild zou hebben.` | `Dat is wat Mega Ezel zou gewild hebben.` | unify on J130's aux-order |
+
+### E10_ProphetSpeech — 5 writes (3 kept)
+
+| Cell | Speaker | Before | After | Note |
+|---|---|---|---|---|
+| J28 | Cole-Machine | `Kameraden van Technopolis.` | `Volk van Technopolis.` | §13 added-vocative — Tom pick (avoids Mensen overload with next line) |
+| J66 | Cole-Machine | `Net als gij, kameraad, denken deze Ezels…` | `Net als gij denken deze Ezels…` | §13 — drop kameraad insertion (J56/J28 precedent) |
+| J41 | Cole-Machine | `Die Ezels bezetten uw parlementsgebouw.` | `Die Ezels bezetten uw Parlementsgebouw.` | §6.7 cap-parity with J46 |
+| J85 | Mme. Derriere | `Het lijkt me dat ongure radicalen in mijn Fabriek zijn ingebroken…` | `Het is duidelijk dat ongure radicalen in mijn Fabriek zijn ingebroken…` | §13 restore Derriere's emphatic-certainty rhetoric |
+| J86 | Mme. Derriere | `Het lijkt me dat ongure radicalen mijn Fabriek hebben OPGEBLAZEN…` | `Het is duidelijk dat ongure radicalen mijn Fabriek hebben OPGEBLAZEN…` | §13 mirror J85 |
+
+### Kept (3 cells — Golden Ass §5.1 archaic-divine register exception)
+- **J4** `Spreek tot hen, Profeet! Deel de eisen…` — bare-stem imperative kept (biblical/solemn cadence)
+- **J5** `Win hun harten met eerlijkheid en waarheid.` — bare-stem kept
+- **J25** `Nodig nu iedereen uit om met ons te zingen.` — bare-stem kept
+
+Tom carves out Golden Ass as §5.1 register exception: §5.4 sweep applies to Cole-Machine / Helpful / Edgy / Kick / Big / Hard Ass but NOT to Golden Ass's `archaic divine formal` voice (biblical-cadence stem imperatives preserved).
+
+### Tooling
+- `data/editorial/blind-spot-walk-E10_Government.md` — 27 source findings
+- `data/editorial/blind-spot-walk-E10_ProphetSpeech.md` — 7 source findings
+- `scripts/editorial/apply-fixes-e10-gov-blind.py`
+- `scripts/editorial/apply-fixes-e10-prophet-blind.py`
+
+### Round-trip
+- 34/34 ok (`excels.fresh-pull-2026-05-13-post-E10-full-blind/`)
+- Regex audit post-push: E10 overall **9/11 clean** ✓. Residuals: 1 LEN-RATIO Credits false-positive + 1 push-divergence (J91 Foal `success` Tom-kept). Both intentional.
