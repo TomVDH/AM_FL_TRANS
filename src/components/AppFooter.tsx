@@ -93,7 +93,7 @@ export default function AppFooter({
   }, []);
 
   return (
-    <div className={variant === 'setup' ? 'py-2.5' : 'shrink-0 py-3 px-3 md:px-5 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900'}>
+    <div className={variant === 'setup' ? 'py-2.5' : 'shrink-0 py-3 px-3 md:px-5 border-t border-[#374151] bg-[#111827]'}>
       {/* Inline notifications */}
       {items.length > 0 && (
         <div className="flex flex-col gap-1 mb-2">
@@ -104,11 +104,11 @@ export default function AppFooter({
               role="alert"
             >
               <span className={ICON_COLOR[item.type]}>{ICON[item.type]}</span>
-              <span className="text-[11px] text-gray-600 dark:text-gray-300 truncate">{item.message}</span>
+              <span className="text-[11px] text-[#9ca3af] truncate">{item.message}</span>
               {item.duration === 0 && (
                 <button
                   onClick={() => dismiss(item.id)}
-                  className="shrink-0 ml-auto text-gray-300 hover:text-gray-500 dark:text-gray-600 dark:hover:text-gray-400 transition-colors"
+                  className="shrink-0 ml-auto text-[#6b7280] hover:text-[#f9fafb] transition-colors"
                   aria-label="Dismiss"
                 >
                   <svg className="w-2.5 h-2.5" fill="currentColor" viewBox="0 0 20 20">
@@ -127,15 +127,14 @@ export default function AppFooter({
           <img
             src="/images/ass-favico-trans.png"
             alt=""
-            className="h-5 w-5 dark:invert transition-transform duration-500 hover:rotate-[360deg]"
+            className="h-5 w-5 invert transition-transform duration-500 hover:rotate-[360deg]"
           />
-          <div>
-            <p className="text-[11px] font-semibold text-gray-500 dark:text-gray-400 tracking-tight">AM FL V</p>
+          <div className="leading-tight min-w-0 hidden sm:block">
+            <p className="text-[11px] font-bold uppercase tracking-[0.05em] text-[#9ca3af] whitespace-nowrap">AM FL V</p>
             <p
-              className="text-[10px] text-gray-400 dark:text-gray-500 select-none"
+              className="text-[10px] text-[#6b7280] select-none whitespace-nowrap"
               title=""
               onDoubleClick={(e) => {
-                // Cabinet egg: Henske — triple-click (doubleClick + extra) shows build credits
                 if (e.detail >= 3) {
                   (e.target as HTMLElement).title = '184 commits / 8 months / 126 donkeys / 1 tool / Aug 2025 — Mar 2026';
                 }
@@ -159,33 +158,29 @@ export default function AppFooter({
             <>
               <button
                 onClick={() => window.open('https://vimeo.com/880909581/c40dfa73d0', '_blank')}
-                className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden press-effect"
-                style={{ borderRadius: '3px' }}
+                className="h-7 px-2.5 flex items-center gap-1.5 bg-[#1f2937] text-[#9ca3af] border border-[#4b5563] hover:bg-[#374151] hover:text-[#f9fafb] hover:border-[#6b7280] transition-colors duration-200 rounded-[3px]"
                 title="Watch Video"
                 aria-label="Watch Video"
               >
-                <svg className="w-3 h-3 relative z-10" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                <span className="text-[10px] font-medium relative z-10">Video</span>
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <span className="text-[10px] font-bold uppercase tracking-[0.05em]">Video</span>
               </button>
               <button
                 onClick={() => window.open('https://github.com/TomVDH/AM_FL_TRANS', '_blank')}
-                className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden press-effect"
-                style={{ borderRadius: '3px' }}
+                className="h-7 px-2.5 flex items-center gap-1.5 bg-[#1f2937] text-[#9ca3af] border border-[#4b5563] hover:bg-[#374151] hover:text-[#f9fafb] hover:border-[#6b7280] transition-colors duration-200 rounded-[3px]"
                 title="View GitHub Repository"
                 aria-label="View GitHub Repository"
               >
-                <svg className="w-3 h-3 relative z-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                <span className="text-[10px] font-medium relative z-10">GitHub</span>
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                <span className="text-[10px] font-bold uppercase tracking-[0.05em]">GitHub</span>
               </button>
-              <div className="w-px h-4 bg-gray-200 dark:bg-gray-700 mx-0.5" />
+              <div className="w-px h-4 bg-[#4b5563] mx-0.5" />
             </>
           )}
 
           <button
             onClick={toggleDarkMode}
-            className="h-7 px-2 flex items-center text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            className="h-7 px-2 flex items-center text-[#9ca3af] hover:text-[#f9fafb] transition-colors"
             aria-label="Toggle dark mode"
           >
             {darkMode ? (
@@ -199,50 +194,31 @@ export default function AppFooter({
             )}
           </button>
 
+          {/* Version chip — flat Scene Gray pill (was a decorative gradient pill — Provenance violation).
+           * Click still cycles the easter egg label. */}
           <div
-            className="relative cursor-pointer overflow-hidden flex items-center justify-center group/badge"
+            className="relative cursor-pointer flex items-center justify-center bg-[#1f2937] hover:bg-[#374151] border border-[#4b5563] hover:border-[#6b7280]"
             onMouseEnter={handleBadgeEnter}
             onMouseLeave={handleBadgeLeave}
             onClick={() => onVersionBadgeClick?.()}
-            title="Click to change gradient"
+            title="Version"
             style={{
               width: showVersionHash ? '72px' : '48px',
               height: '20px',
-              borderRadius: '10px',
-              backgroundImage: gradientColors.length > 0
-                ? `linear-gradient(270deg, ${gradientColors.join(', ')}, ${gradientColors[0]})`
-                : 'linear-gradient(270deg, #6b7280, #9ca3af, #6b7280)',
-              backgroundSize: '300% 300%',
-              animation: 'gradientShift 6s ease-in-out infinite',
-              transition: 'width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease',
-              boxShadow: showVersionHash
-                ? '0 0 12px rgba(139, 92, 246, 0.25), 0 0 4px rgba(59, 130, 246, 0.2)'
-                : '0 0 0 rgba(0,0,0,0)',
+              borderRadius: '3px',
+              transition: 'width 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.2s ease, border-color 0.2s ease',
             }}
           >
-            {/* Shimmer overlay on hover */}
-            <div
-              style={{
-                position: 'absolute',
-                inset: 0,
-                background: 'linear-gradient(110deg, transparent 25%, rgba(255,255,255,0.2) 50%, transparent 75%)',
-                backgroundSize: '200% 100%',
-                animation: showVersionHash ? 'gradientShiftFast 2s ease-in-out infinite' : 'none',
-                opacity: showVersionHash ? 1 : 0,
-                transition: 'opacity 0.3s ease',
-              }}
-            />
             <span
-              className="relative z-10 text-white uppercase drop-shadow-sm"
+              className="text-[#9ca3af] uppercase"
               style={{
                 fontFamily: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace',
                 fontSize: '9px',
                 fontWeight: 700,
                 letterSpacing: '0.12em',
                 opacity: showVersionHash ? 1 : 0,
-                transform: showVersionHash ? 'translateY(0) scale(1)' : 'translateY(4px) scale(0.9)',
-                transition: 'all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1)',
-                textShadow: '0 1px 3px rgba(0,0,0,0.3)',
+                transform: showVersionHash ? 'translateY(0)' : 'translateY(2px)',
+                transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)',
               }}
             >
               {proost ? 'PROOST' : VERSION_HASH}

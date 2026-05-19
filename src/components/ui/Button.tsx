@@ -64,30 +64,32 @@ const LoadingSpinner: React.FC<{ size: ButtonSize }> = ({ size }) => {
 // STYLE CONSTANTS
 // ============================================================================
 
+// DESIGN.md spec: 900 weight, uppercase, 0.05em tracking, sharp 3px, lift on hover.
+// Achromatic chrome — danger uses Cue Red because destructive actions ARE a Provenance signal.
 const baseClasses =
-  'inline-flex items-center justify-center font-black tracking-tight uppercase transition-all duration-200 shadow-sm hover:shadow-md transform hover:-translate-y-0.5 disabled:transform-none disabled:hover:shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 dark:focus:ring-offset-gray-900';
+  'inline-flex items-center justify-center font-black uppercase transition-all duration-200 ease-out shadow-sm hover:shadow-md transform hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.985] disabled:transform-none disabled:hover:shadow-sm disabled:cursor-not-allowed focus:outline-none';
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    'bg-black dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-100',
+    'bg-[#f9fafb] text-[#111827] hover:bg-[#e5e7eb]',
   secondary:
-    'bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 border border-black dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-700',
+    'bg-[#1f2937] text-[#f9fafb] border border-[#4b5563] hover:bg-[#374151] hover:border-[#6b7280]',
   outline:
-    'bg-transparent border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-gray-100 hover:bg-gray-50 dark:hover:bg-gray-800',
+    'bg-transparent border border-[#4b5563] text-[#f9fafb] hover:bg-[#1f2937] hover:border-[#6b7280]',
   ghost:
-    'bg-transparent text-gray-900 dark:text-gray-100 hover:bg-gray-100 dark:hover:bg-gray-800 shadow-none hover:shadow-none',
+    'bg-transparent text-[#f9fafb] hover:bg-[#1f2937] shadow-none hover:shadow-none',
   danger:
-    'bg-red-600 dark:bg-red-500 text-white hover:bg-red-700 dark:hover:bg-red-600',
+    'bg-[#dc2626] text-[#f9fafb] hover:bg-[#b91c1c]',
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
-  sm: 'px-3 py-1.5 text-xs gap-1.5',
-  md: 'px-4 py-2 text-sm gap-2',
-  lg: 'px-6 py-3 text-base gap-2.5',
+  sm: 'px-3 py-1.5 text-[11px] gap-1.5 tracking-[0.05em]',
+  md: 'px-4 py-2 text-xs gap-2 tracking-[0.05em]',
+  lg: 'px-6 py-3 text-sm gap-2.5 tracking-[0.05em]',
 };
 
 const disabledClasses =
-  'disabled:bg-gray-200 dark:disabled:bg-gray-700 disabled:text-gray-400 dark:disabled:text-gray-500 disabled:border-gray-200 dark:disabled:border-gray-700 disabled:cursor-not-allowed';
+  'disabled:bg-[#374151] disabled:text-[#6b7280] disabled:border-[#374151] disabled:hover:bg-[#374151]';
 
 // ============================================================================
 // COMPONENT

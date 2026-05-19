@@ -51,12 +51,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${pixelifySans.variable} ${playfairDisplay.variable}`}>
-      <head>
-      </head>
-      <body className="antialiased" style={{ position: 'relative', zIndex: 0 }}>
+    <html lang="en" className={`dark ${pixelifySans.variable} ${playfairDisplay.variable}`}>
+      <body className="antialiased bg-[#111827] text-[#f9fafb]">
         {children}
       </body>
     </html>
   )
-} 
+}

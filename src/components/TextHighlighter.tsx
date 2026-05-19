@@ -648,14 +648,13 @@ const TextHighlighter: React.FC<TextHighlighterProps> = ({
       {/* Suggestion buttons - deduplicated and sorted */}
       {shouldShowSuggestions && (
         <div className="mt-2 flex flex-wrap gap-2">
-          {/* Character placeholder buttons (orange) */}
+          {/* Character placeholder buttons — Character Purple (Provenance System) */}
           {characterPlaceholders.slice(0, 5).map((characterName, index) => (
             <button
               key={`placeholder-${characterName}`}
               onClick={() => onSuggestionClick!(`(${characterName})`)}
-              className="px-3 py-1 text-sm bg-orange-100 dark:bg-orange-800 text-orange-700 dark:text-orange-300 border border-orange-300 dark:border-orange-600 hover:bg-orange-200 dark:hover:bg-orange-700 transition-colors duration-200 font-medium"
+              className="px-3 py-1 text-sm bg-[#9333ea]/15 text-[#c4a8f0] border border-[#9333ea]/40 hover:bg-[#9333ea]/25 hover:border-[#9333ea] transition-colors duration-200 font-bold rounded-[3px]"
               title={`Insert placeholder: (${characterName})`}
-              style={{ borderRadius: '3px' }}
             >
               ({characterName})
             </button>

@@ -22,17 +22,18 @@ export interface ConversationRow {
   contextNote: string;
 }
 
-// Muted tint palette — left-border accent + subtle bg + avatar colors
-// Index matches SPEAKER_COLORS order in ConversationThread
+// Achromatic palette — speakers are distinguished by name, avatar initial, and alignment.
+// Color is reserved for the Provenance System; speaker variation does not earn color.
+// SPEAKER_PALETTE is exported as a no-op for back-compat with any importers.
 export const SPEAKER_PALETTE = [
-  { bg: 'bg-blue-50 dark:bg-blue-950/30',      border: 'border-l-[3px] border-blue-400',     name: 'text-blue-700 dark:text-blue-300',     avatar: 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400' },
-  { bg: 'bg-amber-50 dark:bg-amber-950/30',    border: 'border-l-[3px] border-amber-500',    name: 'text-amber-700 dark:text-amber-300',   avatar: 'bg-amber-100 dark:bg-amber-900/50 text-amber-600 dark:text-amber-400' },
-  { bg: 'bg-violet-50 dark:bg-violet-950/30',  border: 'border-l-[3px] border-violet-400',   name: 'text-violet-700 dark:text-violet-300', avatar: 'bg-violet-100 dark:bg-violet-900/50 text-violet-600 dark:text-violet-400' },
-  { bg: 'bg-emerald-50 dark:bg-emerald-950/30', border: 'border-l-[3px] border-emerald-400', name: 'text-emerald-700 dark:text-emerald-300', avatar: 'bg-emerald-100 dark:bg-emerald-900/50 text-emerald-600 dark:text-emerald-400' },
-  { bg: 'bg-rose-50 dark:bg-rose-950/30',      border: 'border-l-[3px] border-rose-400',     name: 'text-rose-700 dark:text-rose-300',     avatar: 'bg-rose-100 dark:bg-rose-900/50 text-rose-600 dark:text-rose-400' },
-  { bg: 'bg-cyan-50 dark:bg-cyan-950/30',      border: 'border-l-[3px] border-cyan-500',     name: 'text-cyan-700 dark:text-cyan-300',     avatar: 'bg-cyan-100 dark:bg-cyan-900/50 text-cyan-600 dark:text-cyan-400' },
-  { bg: 'bg-orange-50 dark:bg-orange-950/30',  border: 'border-l-[3px] border-orange-400',   name: 'text-orange-700 dark:text-orange-300', avatar: 'bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400' },
-  { bg: 'bg-teal-50 dark:bg-teal-950/30',      border: 'border-l-[3px] border-teal-400',     name: 'text-teal-700 dark:text-teal-300',     avatar: 'bg-teal-100 dark:bg-teal-900/50 text-teal-600 dark:text-teal-400' },
+  { bg: 'bg-[#1f2937]', border: '', name: 'text-[#9ca3af]', avatar: 'bg-[#374151] text-[#f9fafb]' },
+  { bg: 'bg-[#1f2937]', border: '', name: 'text-[#9ca3af]', avatar: 'bg-[#374151] text-[#f9fafb]' },
+  { bg: 'bg-[#1f2937]', border: '', name: 'text-[#9ca3af]', avatar: 'bg-[#374151] text-[#f9fafb]' },
+  { bg: 'bg-[#1f2937]', border: '', name: 'text-[#9ca3af]', avatar: 'bg-[#374151] text-[#f9fafb]' },
+  { bg: 'bg-[#1f2937]', border: '', name: 'text-[#9ca3af]', avatar: 'bg-[#374151] text-[#f9fafb]' },
+  { bg: 'bg-[#1f2937]', border: '', name: 'text-[#9ca3af]', avatar: 'bg-[#374151] text-[#f9fafb]' },
+  { bg: 'bg-[#1f2937]', border: '', name: 'text-[#9ca3af]', avatar: 'bg-[#374151] text-[#f9fafb]' },
+  { bg: 'bg-[#1f2937]', border: '', name: 'text-[#9ca3af]', avatar: 'bg-[#374151] text-[#f9fafb]' },
 ] as const;
 
 interface ChatBubbleProps {
@@ -46,28 +47,26 @@ interface ChatBubbleProps {
 }
 
 const GENDER_SYMBOLS: Record<string, string> = {
-  male: '\u2642',
-  female: '\u2640',
+  male: '♂',
+  female: '♀',
 };
 
 export const ChatBubble = React.memo(function ChatBubble({
   row,
-  colorIndex,
   isSelected,
   languageMode,
   animationDelay,
   onClick,
   onSpeakerClick,
 }: ChatBubbleProps) {
-  const palette = row.isProtagonist ? null : SPEAKER_PALETTE[colorIndex % SPEAKER_PALETTE.length];
   const gender = row.codexEntry?.gender;
   const genderSymbol = gender ? GENDER_SYMBOLS[gender] || '' : '';
 
-  // Status icon
+  // Status icon — achromatic. Pulsing dot for unsaved; check for translated.
   const statusIcon = row.isModified
-    ? <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse ml-1.5" title="Unsaved changes" />
+    ? <span className="inline-block w-1.5 h-1.5 rounded-full bg-[#f9fafb] animate-pulse ml-1.5" title="Unsaved changes" />
     : row.isTranslated
-      ? <span className="ml-1.5 text-emerald-500" title="Translated">&#10003;</span>
+      ? <span className="ml-1.5 text-[#9ca3af]" title="Translated">&#10003;</span>
       : null;
 
   // Bubble content based on language mode
@@ -75,26 +74,23 @@ export const ChatBubble = React.memo(function ChatBubble({
     const enText = row.sourceText;
     const nlText = row.isTranslated ? row.translation : null;
 
-    const textColor = 'text-gray-900 dark:text-gray-100';
-    const subTextColor = 'text-gray-600 dark:text-gray-400';
-
     switch (languageMode) {
       case 'EN':
-        return <div className={`text-[15px] leading-[1.55] ${textColor}`}>{enText}</div>;
+        return <div className="text-[15px] leading-[1.55] text-[#f9fafb]">{enText}</div>;
       case 'NL':
         return nlText
-          ? <div className={`text-[15px] leading-[1.55] ${textColor}`}>{nlText}</div>
-          : <div className="text-[13px] italic text-gray-400 dark:text-gray-500">— awaiting translation —</div>;
+          ? <div className="text-[15px] leading-[1.55] text-[#f9fafb]">{nlText}</div>
+          : <div className="text-[13px] italic text-[#6b7280]">— awaiting translation —</div>;
       case 'EN+NL':
         return (
           <>
-            <div className={`text-[15px] leading-[1.55] ${textColor}`}>{enText}</div>
+            <div className="text-[15px] leading-[1.55] text-[#f9fafb]">{enText}</div>
             {nlText ? (
-              <div className={`mt-1.5 pt-1.5 border-t border-gray-200 dark:border-gray-700 text-[13px] ${subTextColor} italic`}>
+              <div className="mt-1.5 pt-1.5 border-t border-[#4b5563] text-[13px] text-[#9ca3af] italic">
                 {nlText}
               </div>
             ) : (
-              <div className="mt-1.5 pt-1.5 border-t border-gray-200 dark:border-gray-700 text-[13px] italic text-gray-400 dark:text-gray-500">
+              <div className="mt-1.5 pt-1.5 border-t border-[#4b5563] text-[13px] italic text-[#6b7280]">
                 — awaiting translation —
               </div>
             )}
@@ -103,29 +99,29 @@ export const ChatBubble = React.memo(function ChatBubble({
     }
   };
 
-  // Protagonist vs other speaker styling
+  // Bubble surface — protagonist gets a slightly lifted surface; others sit at Scene Gray.
+  // Untranslated state shown via dashed border, not color.
   const bubbleClasses = row.isProtagonist
-    ? `bg-blue-50 dark:bg-blue-950/40 ${
-        row.isTranslated
-          ? 'ring-1 ring-blue-200 dark:ring-blue-800'
-          : 'ring-1 ring-dashed ring-blue-300/50 dark:ring-blue-700/50'
+    ? `bg-[#374151] border ${
+        row.isTranslated ? 'border-[#4b5563]' : 'border-dashed border-[#4b5563]'
       }`
-    : `${palette!.bg} ${palette!.border} pl-3.5 ${
-        !row.isTranslated ? 'border-dashed' : ''
+    : `bg-[#1f2937] border ${
+        row.isTranslated ? 'border-[#374151]' : 'border-dashed border-[#374151]'
       }`;
 
-  // Extract a clean initial — strip leading punctuation/symbols like {$
   const avatarInitial = (row.speakerName.match(/[A-Za-z]/)?.[0] || row.speakerName.charAt(0)).toUpperCase();
+  const avatarClasses = row.isProtagonist
+    ? 'bg-[#f9fafb] text-[#111827]'
+    : 'bg-[#374151] text-[#f9fafb]';
 
   return (
     <div
       className={`flex ${row.isProtagonist ? 'justify-end' : 'justify-start'} mb-3.5 animate-bubble-in`}
       style={{ animationDelay: `${Math.min(animationDelay, 400)}ms` }}
     >
-      {/* Speaker avatar — non-protagonist only, left side */}
       {!row.isProtagonist && (
         <div
-          className={`w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold shrink-0 mr-2 mt-1 shadow-sm transition-transform duration-200 hover:scale-110 ${palette!.avatar}`}
+          className={`w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-black shrink-0 mr-2 mt-1 transition-transform duration-200 hover:scale-110 ${avatarClasses}`}
           title={row.speakerName}
         >
           {avatarInitial}
@@ -140,22 +136,20 @@ export const ChatBubble = React.memo(function ChatBubble({
         aria-selected={isSelected}
         tabIndex={0}
         className={`${row.isProtagonist ? 'max-w-[65%]' : 'max-w-[72%]'} px-4 py-3 cursor-pointer
-          transition-all duration-200 scroll-mt-20 shadow-sm
+          transition-shadow duration-200 scroll-mt-20
           ${bubbleClasses}
           ${isSelected
-            ? 'ring-2 ring-offset-2 ring-gray-900 dark:ring-white scale-[1.01] shadow-lg'
-            : 'hover:scale-[1.005] hover:shadow hover:-translate-y-px'
+            ? 'ring-2 ring-offset-2 ring-offset-[#111827] ring-[#f9fafb] shadow-[0_4px_6px_-1px_rgba(0,0,0,0.3)]'
+            : 'hover:shadow-[0_2px_4px_-1px_rgba(0,0,0,0.2)] hover:-translate-y-px'
           }`}
-        style={{ borderRadius: row.isProtagonist ? '16px 16px 4px 16px' : '16px 16px 16px 4px' }}
+        style={{ borderRadius: row.isProtagonist ? '10px 10px 2px 10px' : '10px 10px 10px 2px' }}
         onClick={() => onClick(row.index)}
         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(row.index); } }}
       >
-        {/* Speaker name tag */}
+        {/* Speaker name tag — uppercase, achromatic */}
         <div className="flex items-center mb-1.5">
           <button
-            className={`text-[10px] font-semibold tracking-widest uppercase ${
-              row.isProtagonist ? 'text-blue-600 dark:text-blue-400' : palette!.name
-            } hover:underline transition-colors duration-150`}
+            className="text-[10px] font-black tracking-[0.05em] uppercase text-[#9ca3af] hover:text-[#f9fafb] transition-colors duration-150"
             onClick={(e) => { e.stopPropagation(); onSpeakerClick?.(row.speakerName, e); }}
             title={row.codexEntry ? `${row.codexEntry.english} → ${row.codexEntry.dutch}` : row.speakerName}
           >
@@ -167,7 +161,7 @@ export const ChatBubble = React.memo(function ChatBubble({
 
         {/* Context note */}
         {row.contextNote && (
-          <div className="text-[11px] italic text-gray-400 dark:text-gray-500 mb-1.5 leading-snug">
+          <div className="text-[11px] italic text-[#6b7280] mb-1.5 leading-snug">
             [{row.contextNote}]
           </div>
         )}
@@ -176,10 +170,9 @@ export const ChatBubble = React.memo(function ChatBubble({
         {renderContent()}
       </div>
 
-      {/* Speaker avatar — protagonist only, right side */}
       {row.isProtagonist && (
         <div
-          className="w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-bold shrink-0 ml-2 mt-1 shadow-sm transition-transform duration-200 hover:scale-110 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400"
+          className={`w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-black shrink-0 ml-2 mt-1 transition-transform duration-200 hover:scale-110 ${avatarClasses}`}
           title={row.speakerName}
         >
           {avatarInitial}

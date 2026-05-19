@@ -511,33 +511,32 @@ const SetupWizard: React.FC<SetupWizardProps> = ({
           <>
             <button
               onClick={() => handleResumeSession(lastSession)}
-              className="w-full text-left px-5 py-4 mb-4 bg-amber-50 dark:bg-amber-900/20 border border-amber-200 dark:border-amber-700/50 border-l-4 border-l-amber-400 dark:border-l-amber-500 hover:border-amber-300 dark:hover:border-amber-600 hover-lift group relative z-10"
-              style={{ borderRadius: '3px' }}
+              className="w-full text-left px-5 py-4 mb-4 bg-[#1f2937] border border-[#4b5563] hover:bg-[#374151] hover:border-[#6b7280] transition-colors duration-200 group relative z-10 rounded-[3px]"
             >
-              <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between gap-3">
                 <div className="min-w-0">
-                  <div className="flex items-center gap-2 mb-0.5">
-                    <span className="text-[11px] font-bold uppercase tracking-wide text-amber-600 dark:text-amber-400">Resume</span>
-                    <span className="text-[10px] text-amber-500/60 dark:text-amber-500/40">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-[10px] font-black uppercase tracking-[0.05em] text-[#f9fafb]">Resume</span>
+                    <span className="text-[10px] text-[#9ca3af] tabular-nums">
                       {lastSession.translatedCount}/{lastSession.totalLines}
                       {timeAgoText && ` · ${timeAgoText}`}
                     </span>
                   </div>
-                  <span className="text-sm font-medium text-gray-900 dark:text-gray-100">
+                  <span className="text-sm font-bold text-[#f9fafb] truncate block">
                     {lastSession.fileName}
-                    {lastSession.selectedSheet && <span className="text-gray-500 dark:text-gray-400"> — {lastSession.selectedSheet}</span>}
+                    {lastSession.selectedSheet && <span className="text-[#9ca3af] font-normal"> · {lastSession.selectedSheet}</span>}
                   </span>
                 </div>
-                <svg className="w-5 h-5 text-amber-400 group-hover:text-amber-500 dark:text-amber-500 dark:group-hover:text-amber-400 shrink-0 ml-3 transition-all duration-200 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5 text-[#9ca3af] group-hover:text-[#f9fafb] shrink-0 transition-transform duration-200 group-hover:translate-x-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </div>
             </button>
 
-            <div className="flex items-center gap-3 mb-4 animate-divider-fade">
-              <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
-              <span className="text-[10px] text-gray-400 dark:text-gray-500 uppercase tracking-widest">or start new</span>
-              <div className="flex-1 h-px bg-gray-200 dark:bg-gray-700" />
+            <div className="flex items-center gap-3 mb-4">
+              <div className="flex-1 h-px bg-[#374151]" />
+              <span className="text-[10px] text-[#6b7280] uppercase tracking-[0.2em] font-bold">or start new</span>
+              <div className="flex-1 h-px bg-[#374151]" />
             </div>
           </>
         )}

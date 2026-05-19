@@ -107,7 +107,10 @@
       "Bash(obsidian vault=\"Claude Cabinet\":*)",
       "Bash(git check-ignore *)",
       "Bash(unzip -q codex/E5-E10-20260503T063705Z-3-001.zip -d codex/)",
-      "Bash(git -C \"/Users/tomlinson/Projects/VIBE CODING/am-fl-trans\" status --short)"
+      "Bash(git -C \"/Users/tomlinson/Projects/VIBE CODING/am-fl-trans\" status --short)",
+      "Bash(.venv-sheets/bin/python scripts/convert/pull-snapshot.py /tmp/fresh-pull-e3-verify)",
+      "Bash(.venv-sheets/bin/python)",
+      "Bash(.venv-sheets/bin/python scripts/convert/push-file.py 3_asses.masses_E3Proxy.xlsx --apply)"
     ],
     "deny": [],
     "ask": []

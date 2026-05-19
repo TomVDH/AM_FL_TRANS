@@ -23,17 +23,18 @@
  * consistent typography and spacing throughout the application.
  */
 @layer base {
-  /* CSS Variables for toast styling — minimal pill aesthetic */
+  /* Toast styling — neutral pill, dark by default */
   :root {
-    --toast-bg: #f9fafb;
-    --toast-color: #374151;
-    --toast-border: #e5e7eb;
+    --toast-bg: #1f2937;
+    --toast-color: #f9fafb;
+    --toast-border: #4b5563;
   }
 
-  .dark {
-    --toast-bg: #111827;
-    --toast-color: #d1d5db;
-    --toast-border: #374151;
+  /* Light mode override (if explicitly toggled) */
+  html:not(.dark) {
+    --toast-bg: #ffffff;
+    --toast-color: #111827;
+    --toast-border: #d1d5db;
   }
 
   /* System font stack for optimal performance and native feel */
@@ -42,37 +43,20 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
-  /* Base body typography settings with random background color */
+
+  /* Canvas: Stage Dark in dark mode, near-white in light mode. One room, always the same room. */
   body {
     font-size: 16px;
     line-height: 1.6;
-    letter-spacing: -0.011em;  /* Subtle tightening for better readability */
+    letter-spacing: -0.011em;
+    background-color: #111827;
+    color: #f9fafb;
   }
 
-  /* Random background colors - set via JavaScript on page load */
-  body.bg-random-1 { background-color: #fef3c7; } /* Amber 100 */
-  body.bg-random-2 { background-color: #dbeafe; } /* Blue 100 */
-  body.bg-random-3 { background-color: #fce7f3; } /* Pink 100 */
-  body.bg-random-4 { background-color: #ddd6fe; } /* Violet 100 */
-  body.bg-random-5 { background-color: #dcfce7; } /* Green 100 */
-  body.bg-random-6 { background-color: #ffedd5; } /* Orange 100 */
-  body.bg-random-7 { background-color: #f0f9ff; } /* Sky 100 */
-  body.bg-random-8 { background-color: #fae8ff; } /* Fuchsia 100 */
-  body.bg-random-9 { background-color: #ecfccb; } /* Lime 100 */
-  body.bg-random-10 { background-color: #cffafe; } /* Cyan 100 */
-
-  /* Dark mode: darker, muted versions */
-  .dark body.bg-random-1 { background-color: #1a1510; } /* Dark amber */
-  .dark body.bg-random-2 { background-color: #0f1419; } /* Dark blue */
-  .dark body.bg-random-3 { background-color: #1a0f14; } /* Dark pink */
-  .dark body.bg-random-4 { background-color: #151019; } /* Dark violet */
-  .dark body.bg-random-5 { background-color: #0f1a10; } /* Dark green */
-  .dark body.bg-random-6 { background-color: #1a1410; } /* Dark orange */
-  .dark body.bg-random-7 { background-color: #0f1519; } /* Dark sky */
-  .dark body.bg-random-8 { background-color: #19101a; } /* Dark fuchsia */
-  .dark body.bg-random-9 { background-color: #131a0f; } /* Dark lime */
-  .dark body.bg-random-10 { background-color: #0f1a19; } /* Dark cyan */
+  html:not(.dark) body {
+    background-color: #f9fafb;
+    color: #111827;
+  }
   
   /* Heading styles with tighter letter spacing */
   h1, h2, h3, h4, h5, h6 {
@@ -105,7 +89,7 @@
 
   /* ========== WCAG AA Accessibility Enhancements ========== */
 
-  /* Universal keyboard focus styles for all interactive elements */
+  /* Universal keyboard focus — achromatic; the Provenance System is reserved for data origins */
   button:focus-visible,
   a:focus-visible,
   input:focus-visible,
@@ -113,20 +97,19 @@
   textarea:focus-visible,
   [role="button"]:focus-visible,
   [tabindex]:not([tabindex="-1"]):focus-visible {
-    outline: 3px solid #3b82f6;
+    outline: 2px solid #9ca3af;
     outline-offset: 2px;
     border-radius: 3px;
   }
 
-  /* Dark mode focus styles */
-  .dark button:focus-visible,
-  .dark a:focus-visible,
-  .dark input:focus-visible,
-  .dark select:focus-visible,
-  .dark textarea:focus-visible,
-  .dark [role="button"]:focus-visible,
-  .dark [tabindex]:not([tabindex="-1"]):focus-visible {
-    outline-color: #60a5fa;
+  html:not(.dark) button:focus-visible,
+  html:not(.dark) a:focus-visible,
+  html:not(.dark) input:focus-visible,
+  html:not(.dark) select:focus-visible,
+  html:not(.dark) textarea:focus-visible,
+  html:not(.dark) [role="button"]:focus-visible,
+  html:not(.dark) [tabindex]:not([tabindex="-1"]):focus-visible {
+    outline-color: #4b5563;
   }
 
   /* Remove default outline to use our custom one */

@@ -43,20 +43,22 @@ export function CharacterInfoPopover({ character, anchorRect, onClose, onInsert 
   return (
     <div
       ref={ref}
-      className="fixed z-50 w-64 bg-purple-50 dark:bg-purple-900/30 border border-purple-200 dark:border-purple-700 shadow-lg popover-bloom"
-      style={{ borderRadius: '4px', top, left }}
+      className="fixed z-50 w-64 bg-[#1f2937] border border-[#9333ea]/40 shadow-[0_10px_15px_-3px_rgba(0,0,0,0.3)] popover-bloom rounded-[3px]"
+      style={{ top, left }}
     >
+      {/* Character Purple provenance bar */}
+      <div className="h-px bg-[#9333ea]/60" />
       <div className="p-3">
         {/* Header */}
         <div className="flex items-center justify-between mb-2">
-          <div className="text-sm font-semibold text-purple-900 dark:text-purple-200">
-            {character.english} {gender && <span className="text-xs opacity-60">{gender}</span>}
-            <span className="mx-1.5 text-purple-300 dark:text-purple-600">&rarr;</span>
-            <span className="text-purple-700 dark:text-purple-300">{character.dutch}</span>
+          <div className="text-sm font-bold text-[#f9fafb]">
+            {character.english} {gender && <span className="text-xs text-[#9ca3af]">{gender}</span>}
+            <span className="mx-1.5 text-[#6b7280]">→</span>
+            <span className="text-[#c4a8f0]">{character.dutch}</span>
           </div>
           <button
             onClick={() => onInsert(character.dutch)}
-            className="p-1 text-purple-500 hover:text-purple-700 dark:hover:text-purple-300"
+            className="p-1 text-[#9ca3af] hover:text-[#f9fafb] transition-colors"
             title="Insert Dutch name"
           >
             <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -67,14 +69,14 @@ export function CharacterInfoPopover({ character, anchorRect, onClose, onInsert 
 
         {/* Voice profile */}
         {character.flemishDensity && (
-          <div className="text-[11px] text-purple-800 dark:text-purple-300 mb-1.5 leading-relaxed">
+          <div className="text-[11px] text-[#9ca3af] mb-1.5 leading-relaxed">
             {character.flemishDensity}{character.register ? ` ${character.register}` : ''}{character.pronounForm ? ` · ${character.pronounForm}` : ''}
           </div>
         )}
 
         {/* Bio */}
         {character.bio && (
-          <div className="text-[11px] text-purple-600 dark:text-purple-400 italic leading-relaxed">
+          <div className="text-[11px] text-[#6b7280] italic leading-relaxed">
             {character.bio.length > 120 ? character.bio.slice(0, 120) + '...' : character.bio}
           </div>
         )}

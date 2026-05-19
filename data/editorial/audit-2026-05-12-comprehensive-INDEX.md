@@ -1,6 +1,6 @@
 # Comprehensive Canon-Adherence Audit — 2026-05-12
 
-_Canon SHA: `24c0df0` — Codex: `data/json/codex_verified.json` v3.4 (v3.5 sync pending) — Push log: `data/editorial/_PUSH-LOG.md` (241 unique pushed cells)_
+_Canon SHA: `24c0df0` — Codex: `data/json/codex_verified.json` v3.4 (v3.5 sync pending) — Push log: `data/editorial/_PUSH-LOG.md` (347 unique pushed cells)_
 
 ## Scope
 
@@ -15,11 +15,11 @@ _Canon SHA: `24c0df0` — Codex: `data/json/codex_verified.json` v3.4 (v3.5 sync
 - Episodes scanned: **11**
 - Sheets scanned: **106**
 - NL cells scanned: **4399**
-- Canon findings: **20**
+- Canon findings: **14**
 - Alignment per-cell flags: **10**
 - Cross-row paste candidates: **0**
-- Push-divergence cells (current ≠ pushed): **0**
-- Pushed cells in log: **241**
+- Push-divergence cells (current ≠ pushed): **3**
+- Pushed cells in log: **347**
 - Clean sheets: **88/106**
 
 ## Per-episode summary
@@ -28,15 +28,15 @@ _Canon SHA: `24c0df0` — Codex: `data/json/codex_verified.json` v3.4 (v3.5 sync
 |---|---|---|---|---|---|---|---|---|
 | E0 (Manager+Intermissions+E0Proxy) | 9 | 248 | 0 | 1 | 0 | 0 | 8/9 | [audit-2026-05-12-E0.md](audit-2026-05-12-E0.md) |
 | E1 (E1Proxy) | 12 | 416 | 1 | 1 | 0 | 0 | 10/12 | [audit-2026-05-12-E1.md](audit-2026-05-12-E1.md) |
-| E2 (E2Proxy) | 15 | 377 | 3 | 1 | 0 | 0 | 12/15 | [audit-2026-05-12-E2.md](audit-2026-05-12-E2.md) |
+| E2 (E2Proxy) | 15 | 377 | 2 | 1 | 0 | 0 | 13/15 | [audit-2026-05-12-E2.md](audit-2026-05-12-E2.md) |
 | E3 (E3Proxy) | 10 | 380 | 2 | 1 | 0 | 0 | 7/10 | [audit-2026-05-12-E3.md](audit-2026-05-12-E3.md) |
 | E4 (E4Proxy) | 9 | 435 | 1 | 0 | 0 | 0 | 8/9 | [audit-2026-05-12-E4.md](audit-2026-05-12-E4.md) |
-| E5 (E5Proxy) | 7 | 592 | 1 | 4 | 0 | 0 | 5/7 | [audit-2026-05-12-E5.md](audit-2026-05-12-E5.md) |
-| E6 (E6Proxy) | 8 | 535 | 6 | 0 | 0 | 0 | 6/8 | [audit-2026-05-12-E6.md](audit-2026-05-12-E6.md) |
+| E5 (E5Proxy) | 7 | 592 | 0 | 4 | 0 | 2 | 5/7 | [audit-2026-05-12-E5.md](audit-2026-05-12-E5.md) |
+| E6 (E6Proxy) | 8 | 535 | 2 | 0 | 0 | 0 | 6/8 | [audit-2026-05-12-E6.md](audit-2026-05-12-E6.md) |
 | E7 (E7Proxy) | 17 | 363 | 0 | 0 | 0 | 0 | 17/17 | [audit-2026-05-12-E7.md](audit-2026-05-12-E7.md) |
 | E8 (E8Proxy) | 3 | 96 | 0 | 0 | 0 | 0 | 3/3 | [audit-2026-05-12-E8.md](audit-2026-05-12-E8.md) |
 | E9 (E9Proxy) | 5 | 292 | 6 | 1 | 0 | 0 | 2/5 | [audit-2026-05-12-E9.md](audit-2026-05-12-E9.md) |
-| E10 (E10Proxy) | 11 | 665 | 0 | 1 | 0 | 0 | 10/11 | [audit-2026-05-12-E10.md](audit-2026-05-12-E10.md) |
+| E10 (E10Proxy) | 11 | 665 | 0 | 1 | 0 | 1 | 9/11 | [audit-2026-05-12-E10.md](audit-2026-05-12-E10.md) |
 
 ## Findings by rule (counts)
 
@@ -44,12 +44,10 @@ _Canon SHA: `24c0df0` — Codex: `data/json/codex_verified.json` v3.4 (v3.5 sync
 |---|---|---|
 | `LEN-RATIO` | 9 | BUG |
 | `§12.2` | 7 | CAP/STYLE |
-| `§10.7` | 3 | CAP/STYLE |
 | `§4.4` | 3 | HARD-LOCK |
-| `§5.4` | 2 | CAP/STYLE |
-| `§9.1` | 2 | CAP/STYLE |
 | `§9.6` | 2 | CAP/STYLE |
 | `EMPTY-NL` | 1 | BUG |
+| `§5.4` | 1 | CAP/STYLE |
 | `§7.1` | 1 | CAP/STYLE |
 
 ## Triage — HARD-LOCK and BUG findings (ordered)
@@ -80,8 +78,8 @@ _Canon SHA: `24c0df0` — Codex: `data/json/codex_verified.json` v3.4 (v3.5 sync
   - Speaker: `Ringmaster Rico` | EN: `Right over there.` | NL: `Daar!`
 - **E5 / E5_ZooMain_localization / J68** `[LEN-RATIO]` `[BUG]` — NL/EN char-ratio 2.55 outside [0.4,2.5]
   - Speaker: `Zookeeper Rose` | EN: `So be loud!` | NL: `Dus zet het huis op stelten!`
-- **E5 / E5_ZooMain_localization / J207** `[LEN-RATIO]` `[BUG]` — NL/EN char-ratio 3.38 outside [0.4,2.5]
-  - Speaker: `Smart Ass` | EN: `Hell no!` | NL: `Niets, jong. Absoluut niet.`
+- **E5 / E5_ZooMain_localization / J207** `[LEN-RATIO]` `[BUG]` — NL/EN char-ratio 4.50 outside [0.4,2.5]
+  - Speaker: `Smart Ass` | EN: `Hell no!` | NL: `Geen sprake van, joh! Absoluut niet.`
 - **E9 / E9_GoldenAss_localization / J149** `[LEN-RATIO]` `[BUG]` — NL/EN char-ratio 0.39 outside [0.4,2.5]
   - Speaker: `Cole-Machine` | EN: `Pull yourself together.` | NL: `Verman u.`
 - **E10 / E10_Credits_localization / J110** `[LEN-RATIO]` `[BUG]` — NL/EN char-ratio 0.35 outside [0.4,2.5]
@@ -108,7 +106,21 @@ _These cells were pushed in a prior editorial sweep (per `_PUSH-LOG.md`) and the
 
 _Cells where the live xlsx no longer matches what we pushed. Could be Patrick re-edits or later-push supersession. Verify before re-pushing._
 
-_No divergences. All pushed cells in the log still match the local xlsx values._
+- **E5 / E5_ZooMain_localization / J4** — push event: 🎯 E5 Push 4 — deep-eyeball DRIFT batch (24 cells across 4 sub-tabs)
+  - Speaker: `(sign)` | EN: `∅`
+  - Pushed: `…Worden sinds 7,000 jaar…\` + \`Vinden de regen niet zo fijn`
+  - Current: `Leuke weetjes over de Equus Asinus: \n\n- Oorspronkelijk van Afrika\n- Worden tot 50 jaar oud\n- Zeer wendbaar op rotsachtig terrein\n- Worden sinds 7,000 jaar als werkdier gebruikt\n- Vinden de regen niet zo fijn`
+  - Push rule: `Dutch subj-verb agreement (plural species)`
+- **E5 / E5_ZooMain_localization / J190** — push event: 🎯 E5 Push 4 — deep-eyeball DRIFT batch (24 cells across 4 sub-tabs)
+  - Speaker: `Zookeeper Rose` | EN: `∅`
+  - Pushed: `De RAAD VAN BESTUUR wil dat jullie ze knus komen Knuffelen!`
+  - Current: `De RAAD VAN BESTUUR wil dat jullie ze gezellig komen Knuffelen!`
+  - Push rule: `Dutch grammar (wil/ze/komen)`
+- **E10 / E10_Government_localization / J252** — push event: 🎯 E10 Push — universal sweep (26 cells)
+  - Speaker: `Golden Ass` | EN: `∅`
+  - Pushed: `…om U tot de mensen te wenden?`
+  - Current: `Bent gij bereid om U tot de Mensen te wenden?`
+  - Push rule: `§7.4`
 
 ## Scanner blind spots
 

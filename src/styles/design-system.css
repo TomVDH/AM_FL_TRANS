@@ -1,24 +1,53 @@
-/* AM Translations Helper Design System */
+/* AM Translations Helper Design System
+ *
+ * Source of truth: DESIGN.md at the project root.
+ * The Rehearsal Room — dark canvas, ink-on-surface hierarchy, achromatic chrome,
+ * Provenance System (blue/green/purple/red) reserved for data-origin tagging only.
+ */
 
-/* ===== COLOR PALETTE ===== */
+/* ===== COLOR PALETTE — DARK PRIMARY ===== */
 :root {
-  /* Light Mode Colors */
-  --color-primary: #000000;
-  --color-primary-hover: #1f2937;
-  --color-secondary: #ffffff;
-  --color-secondary-hover: #f9fafb;
-  --color-text-primary: #111827;
-  --color-text-secondary: #6b7280;
-  --color-border: #000000;
-  --color-border-light: #d1d5db;
-  --color-background: #f9fafb;
-  --color-surface: #ffffff;
-  --color-error: #dc2626;
-  --color-success: #059669;
-  --color-warning: #d97706;
-  --color-info: #2563eb;
-  
-  /* Accent Colors */
+  /* Canvas / surface hierarchy (Stage Dark, Scene Gray, Lift Gray) */
+  --color-canvas: #111827;
+  --color-surface: #1f2937;
+  --color-surface-raised: #374151;
+
+  /* Ink (Rehearsal White, Director's Dust) */
+  --color-ink: #f9fafb;
+  --color-ink-secondary: #9ca3af;
+  --color-ink-disabled: #6b7280;
+
+  /* Borders (Mark Gray, Trace Gray) */
+  --color-border: #4b5563;
+  --color-border-subtle: #374151;
+
+  /* Aliases for legacy class consumers */
+  --color-primary: #f9fafb;
+  --color-primary-hover: #e5e7eb;
+  --color-secondary: #1f2937;
+  --color-secondary-hover: #374151;
+  --color-text-primary: #f9fafb;
+  --color-text-secondary: #9ca3af;
+  --color-border-light: #374151;
+  --color-background: #111827;
+
+  /* Provenance System — semantic, never decorative */
+  --color-provenance-json: #2563eb;
+  --color-provenance-json-muted: #dbeafe;
+  --color-provenance-xlsx: #059669;
+  --color-provenance-xlsx-muted: #dcfce7;
+  --color-provenance-character: #9333ea;
+  --color-provenance-character-muted: #f3e8ff;
+  --color-provenance-action: #dc2626;
+  --color-provenance-action-muted: #fee2e2;
+
+  /* Semantic feedback (dark-tuned) */
+  --color-error: #f87171;
+  --color-success: #34d399;
+  --color-warning: #fbbf24;
+  --color-info: #60a5fa;
+
+  /* Legacy accent slots */
   --color-blue-100: #dbeafe;
   --color-blue-600: #2563eb;
   --color-blue-700: #1d4ed8;
@@ -37,22 +66,30 @@
   --color-red-800: #991b1b;
 }
 
-/* Dark Mode Colors */
-.dark {
-  --color-primary: #ffffff;
-  --color-primary-hover: #e5e7eb;
-  --color-secondary: #1f2937;
-  --color-secondary-hover: #374151;
-  --color-text-primary: #f9fafb;
-  --color-text-secondary: #9ca3af;
-  --color-border: #4b5563;
-  --color-border-light: #374151;
-  --color-background: #111827;
-  --color-surface: #1f2937;
-  --color-error: #f87171;
-  --color-success: #34d399;
-  --color-warning: #fbbf24;
-  --color-info: #60a5fa;
+/* Light Mode override — alternate, not primary */
+html:not(.dark) {
+  --color-canvas: #f9fafb;
+  --color-surface: #ffffff;
+  --color-surface-raised: #f3f4f6;
+  --color-ink: #111827;
+  --color-ink-secondary: #6b7280;
+  --color-ink-disabled: #9ca3af;
+  --color-border: #d1d5db;
+  --color-border-subtle: #e5e7eb;
+
+  --color-primary: #111827;
+  --color-primary-hover: #1f2937;
+  --color-secondary: #ffffff;
+  --color-secondary-hover: #f9fafb;
+  --color-text-primary: #111827;
+  --color-text-secondary: #6b7280;
+  --color-border-light: #d1d5db;
+  --color-background: #f9fafb;
+
+  --color-error: #dc2626;
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-info: #2563eb;
 }
 
 /* ===== TYPOGRAPHY ===== */
@@ -86,7 +123,18 @@
   text-transform: uppercase;
 }
 
-/* ===== SPACING ===== */
+/* ===== SPACING — 4pt base scale ===== */
+:root {
+  --space-2xs: 4px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+}
+
 .space-xs { gap: 0.25rem; }
 .space-sm { gap: 0.5rem; }
 .space-md { gap: 1rem; }
@@ -168,13 +216,11 @@
   }
 }
 
+/* textGlow kept as a no-op for legacy class consumers — Flat-at-Rest Rule
+ * forbids ambient glow on idle text, and the previous blue value violated
+ * the Provenance Rule (Call Sheet Blue is reserved for JSON data). */
 @keyframes textGlow {
-  0%, 100% {
-    text-shadow: 0 0 8px rgba(59, 130, 246, 0.4);
-  }
-  50% {
-    text-shadow: 0 0 12px rgba(59, 130, 246, 0.6);
-  }
+  0%, 100% { text-shadow: none; }
 }
 
 .animate-fade-in {
@@ -206,35 +252,23 @@
   text-wrap: pretty;
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar — achromatic, dark-primary */
 .custom-scrollbar::-webkit-scrollbar {
   width: 8px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: var(--color-surface, #1f2937);
   border-radius: 4px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: var(--color-border, #4b5563);
   border-radius: 4px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-
-.dark .custom-scrollbar::-webkit-scrollbar-track {
-  background: #374151;
-}
-
-.dark .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #6b7280;
-}
-
-.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #9ca3af;
+  background: var(--color-ink-secondary, #9ca3af);
 }
 
 /* ===== RESPONSIVE BREAKPOINTS ===== */

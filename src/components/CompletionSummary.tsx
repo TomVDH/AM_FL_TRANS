@@ -48,115 +48,62 @@ const CompletionSummary: React.FC<CompletionSummaryProps> = ({
   const hasRemainingSheets = remainingSheets.length > 0;
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 p-4 md:p-6 flex items-center justify-center transition-colors duration-300">
-      <div className="w-full max-w-lg space-y-4">
+    <div className="min-h-screen bg-[#111827] text-[#f9fafb] p-4 md:p-6 flex items-center justify-center">
+      <div className="w-full max-w-lg space-y-6">
 
-        {/* Header — tight, editorial */}
-        <div className="relative text-center">
-          {/* Wide green ambient glow — sits behind content, visible only at edges */}
-          <style>{`
-            @keyframes headerGlow {
-              0% { opacity: 0; }
-              40% { opacity: 1; }
-              100% { opacity: 0.7; }
-            }
-            @keyframes headerBreathe {
-              0%, 100% { opacity: 0.5; transform: scale(1); }
-              50% { opacity: 0.8; transform: scale(1.05); }
-            }
-          `}</style>
+        {/* Header — flat, no decorative glow (Flat-at-Rest Rule) */}
+        <div className="text-center space-y-3">
           <div
-            className="absolute opacity-0 pointer-events-none"
-            style={{
-              zIndex: 0,
-              top: '50%',
-              left: '50%',
-              width: '360px',
-              height: '180px',
-              marginTop: '-30px',
-              marginLeft: '-180px',
-              background: 'radial-gradient(ellipse 100% 80% at center, rgba(16,185,129,0.35) 0%, rgba(5,150,105,0.15) 40%, transparent 70%)',
-              animation: 'headerGlow 3s ease-in-out 0.4s forwards',
-              filter: 'blur(24px)',
-            }}
-          />
-          <div
-            className="absolute pointer-events-none"
-            style={{
-              zIndex: 0,
-              top: '50%',
-              left: '50%',
-              width: '360px',
-              height: '180px',
-              marginTop: '-30px',
-              marginLeft: '-180px',
-              background: 'radial-gradient(ellipse 100% 80% at center, rgba(16,185,129,0.30) 0%, rgba(5,150,105,0.10) 40%, transparent 70%)',
-              animation: 'headerBreathe 5s ease-in-out 3.4s infinite',
-              filter: 'blur(24px)',
-              opacity: 0,
-              animationFillMode: 'forwards',
-            }}
-          />
-          {/* Content layer — opaque bg blocks glow from showing through elements */}
-          <div className="relative space-y-1" style={{ zIndex: 1 }}>
-            <div
-              className="inline-flex items-center justify-center w-10 h-10 bg-black dark:bg-white mb-2"
-              style={{ borderRadius: '3px' }}
-            >
-              <svg className="w-6 h-6 text-white dark:text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-              </svg>
-            </div>
-            <h1 className="text-xl md:text-2xl font-black tracking-tight text-gray-900 dark:text-gray-100 uppercase">
-              Sheet Complete
-            </h1>
-            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium">
-              {sheetName}{episodeNumber ? ` — Episode ${episodeNumber}` : ''}
-            </p>
+            className="inline-flex items-center justify-center w-10 h-10 bg-[#f9fafb] rounded-[3px]"
+            aria-hidden="true"
+          >
+            <svg className="w-6 h-6 text-[#111827]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+            </svg>
           </div>
+          <h1 className="text-xl md:text-2xl font-black tracking-[-0.025em] text-[#f9fafb] uppercase">
+            Sheet Complete
+          </h1>
+          <p className="text-xs uppercase tracking-[0.05em] font-bold text-[#9ca3af]">
+            {sheetName}{episodeNumber ? ` · Episode ${episodeNumber}` : ''}
+          </p>
         </div>
 
-        {/* Stats — single dense card */}
-        <Card variant="elevated" className="p-0 overflow-hidden">
+        {/* Stats — single dense surface, no card-in-card */}
+        <Card variant="default" className="p-0 overflow-hidden">
           {/* Progress strip */}
-          <div className="px-4 pt-4 pb-3">
-            <div className="flex justify-between items-baseline mb-2">
-              <Label className="text-xs">Progress</Label>
-              <span className="text-2xl font-black tracking-tight text-gray-900 dark:text-gray-100">
+          <div className="px-5 pt-5 pb-4">
+            <div className="flex justify-between items-baseline mb-3">
+              <span className="text-[11px] font-black uppercase tracking-[0.05em] text-[#9ca3af]">Progress</span>
+              <span className="text-3xl font-black tracking-[-0.025em] text-[#f9fafb] tabular-nums">
                 {completionPercent}%
               </span>
             </div>
-            <div className="w-full h-1.5 bg-gray-200 dark:bg-gray-700 overflow-hidden" style={{ borderRadius: '3px' }}>
+            <div className="w-full h-1 bg-[#374151] overflow-hidden rounded-[2px]">
               <div
-                className="h-full transition-all duration-500 ease-out"
-                style={{
-                  width: `${completionPercent}%`,
-                  borderRadius: '3px',
-                  background: completionPercent === 100
-                    ? '#000'
-                    : '#000',
-                }}
+                className="h-full bg-[#f9fafb] transition-[width] duration-500 ease-out rounded-[2px]"
+                style={{ width: `${completionPercent}%` }}
               />
             </div>
           </div>
 
-          {/* Stat row */}
-          <div className="grid grid-cols-4 border-t border-black dark:border-gray-600">
-            <div className="px-3 py-3 text-center border-r border-gray-200 dark:border-gray-700">
-              <div className="text-lg font-black text-gray-900 dark:text-gray-100">{stats.total.toLocaleString()}</div>
-              <div className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mt-0.5">Total</div>
+          {/* Stat row — weight + tabular-nums create the hierarchy, not color */}
+          <div className="grid grid-cols-4 border-t border-[#374151]">
+            <div className="px-3 py-4 text-center border-r border-[#374151]">
+              <div className="text-lg font-black text-[#f9fafb] tabular-nums">{stats.total.toLocaleString()}</div>
+              <div className="text-[10px] uppercase tracking-[0.05em] text-[#9ca3af] font-bold mt-1">Total</div>
             </div>
-            <div className="px-3 py-3 text-center border-r border-gray-200 dark:border-gray-700">
-              <div className="text-lg font-black text-green-700 dark:text-green-400">{stats.completed.toLocaleString()}</div>
-              <div className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mt-0.5">Done</div>
+            <div className="px-3 py-4 text-center border-r border-[#374151]">
+              <div className="text-lg font-black text-[#f9fafb] tabular-nums">{stats.completed.toLocaleString()}</div>
+              <div className="text-[10px] uppercase tracking-[0.05em] text-[#9ca3af] font-bold mt-1">Done</div>
             </div>
-            <div className="px-3 py-3 text-center border-r border-gray-200 dark:border-gray-700">
-              <div className="text-lg font-black text-gray-400 dark:text-gray-500">{stats.blank.toLocaleString()}</div>
-              <div className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mt-0.5">Blank</div>
+            <div className="px-3 py-4 text-center border-r border-[#374151]">
+              <div className="text-lg font-black text-[#6b7280] tabular-nums">{stats.blank.toLocaleString()}</div>
+              <div className="text-[10px] uppercase tracking-[0.05em] text-[#9ca3af] font-bold mt-1">Blank</div>
             </div>
-            <div className="px-3 py-3 text-center">
-              <div className="text-lg font-black text-blue-700 dark:text-blue-400">{stats.modified.toLocaleString()}</div>
-              <div className="text-[10px] uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mt-0.5">Edited</div>
+            <div className="px-3 py-4 text-center">
+              <div className="text-lg font-black text-[#f9fafb] tabular-nums">{stats.modified.toLocaleString()}</div>
+              <div className="text-[10px] uppercase tracking-[0.05em] text-[#9ca3af] font-bold mt-1">Edited</div>
             </div>
           </div>
         </Card>
@@ -211,18 +158,17 @@ const CompletionSummary: React.FC<CompletionSummaryProps> = ({
           )}
         </div>
 
-        {/* Remaining sheets — compact */}
+        {/* Remaining sheets */}
         {hasRemainingSheets && (
-          <div className="flex items-start gap-2 px-1">
-            <Caption className="whitespace-nowrap mt-0.5 text-xs">
-              Up next ({remainingSheets.length}):
-            </Caption>
+          <div className="flex items-start gap-3 px-1">
+            <span className="whitespace-nowrap mt-0.5 text-[10px] uppercase tracking-[0.05em] font-bold text-[#9ca3af]">
+              Up next ({remainingSheets.length})
+            </span>
             <div className="flex flex-wrap gap-1.5">
               {remainingSheets.map((sheet, index) => (
                 <span
                   key={index}
-                  className="inline-flex items-center px-2 py-0.5 text-[11px] font-semibold bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 border border-gray-300 dark:border-gray-600"
-                  style={{ borderRadius: '3px' }}
+                  className="inline-flex items-center px-2 py-0.5 text-[11px] font-bold tracking-[0.02em] bg-[#1f2937] text-[#f9fafb] border border-[#4b5563] rounded-[3px]"
                 >
                   {sheet}
                 </span>
@@ -232,18 +178,18 @@ const CompletionSummary: React.FC<CompletionSummaryProps> = ({
         )}
 
         {!hasRemainingSheets && (
-          <div className="text-center py-1">
-            <span className="text-xs font-bold uppercase tracking-wider text-green-700 dark:text-green-400">
+          <div className="text-center pt-1">
+            <span className="text-[10px] font-black uppercase tracking-[0.05em] text-[#9ca3af]">
               All sheets complete
             </span>
           </div>
         )}
 
         {/* Back link */}
-        <div className="text-center pt-1">
+        <div className="text-center pt-2">
           <button
             onClick={onBackToSetup}
-            className="text-xs text-gray-400 dark:text-gray-500 hover:text-gray-900 dark:hover:text-gray-100 transition-colors duration-200 uppercase tracking-wider font-semibold"
+            className="text-[10px] text-[#6b7280] hover:text-[#f9fafb] transition-colors duration-200 uppercase tracking-[0.05em] font-bold"
           >
             ← Back to Setup
           </button>

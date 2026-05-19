@@ -267,12 +267,11 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
           return (
             <div
               key={`codex-${item.match.english}-${index}`}
-              className={`group flex items-center gap-0.5 bg-white dark:bg-gray-800 border px-2 py-1 shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer ${
+              className={`group flex items-center gap-0.5 bg-[#1f2937] border px-2 py-1 transition-colors duration-200 cursor-pointer rounded-[3px] ${
                 isExpanded
-                  ? 'border-purple-400 dark:border-purple-500 ring-1 ring-purple-300 dark:ring-purple-600'
-                  : 'border-purple-200 dark:border-purple-700 hover:border-purple-400 dark:hover:border-purple-500'
+                  ? 'border-[#9333ea] ring-1 ring-[#9333ea]/40'
+                  : 'border-[#9333ea]/40 hover:border-[#9333ea]'
               }`}
-              style={{ borderRadius: '3px' }}
               onClick={() => {
                 if (hasInfo) {
                   setExpandedCharacter(isExpanded ? null : item.match.english);
@@ -285,46 +284,46 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
                 : `Found ${item.count}x - Click to open Reference Tools`
               }
             >
-              {/* Category indicator */}
-              <span className="w-1.5 h-1.5 rounded-full mr-0.5 bg-purple-500" />
+              {/* Character provenance dot \u2014 Character Purple (correct Provenance use) */}
+              <span className="w-1.5 h-1.5 rounded-full mr-0.5 bg-[#9333ea]" />
 
-              {/* Info icon for characters with rich data */}
+              {/* Info icon */}
               {hasInfo && (
-                <svg className={`w-3 h-3 mr-0.5 shrink-0 transition-colors ${isExpanded ? 'text-purple-600 dark:text-purple-300' : 'text-purple-400 dark:text-purple-500'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className={`w-3 h-3 mr-0.5 shrink-0 transition-colors ${isExpanded ? 'text-[#9333ea]' : 'text-[#9333ea]/70'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               )}
 
-              {/* English name - smaller */}
-              <span className="text-[11px] text-gray-600 dark:text-gray-400 max-w-[100px] truncate">
+              {/* English name */}
+              <span className="text-[11px] text-[#9ca3af] max-w-[100px] truncate">
                 {item.match.english}
               </span>
 
-              {/* Arrow - smaller */}
-              <svg className="w-2.5 h-2.5 text-purple-400 dark:text-purple-500 mx-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {/* Arrow */}
+              <svg className="w-2.5 h-2.5 text-[#6b7280] mx-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
               </svg>
 
-              {/* Translation - smaller */}
-              <span className="text-[11px] font-semibold text-purple-700 dark:text-purple-300 max-w-[100px] truncate">
+              {/* Translation */}
+              <span className="text-[11px] font-bold text-[#f9fafb] max-w-[100px] truncate">
                 {item.match.dutch}
               </span>
 
-              {/* Gender badge inline on pill */}
+              {/* Gender badge */}
               {item.match.gender && (
-                <span className="ml-0.5 text-[9px] text-purple-500 dark:text-purple-400">
+                <span className="ml-0.5 text-[9px] text-[#9ca3af]">
                   {item.match.gender === 'male' ? '\u2642' : '\u2640'}
                 </span>
               )}
 
-              {/* Insert button - smaller, stops propagation */}
+              {/* Insert button */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   onInsert(item.match.dutch);
                 }}
-                className="ml-1 p-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 hover:bg-purple-200 dark:hover:bg-purple-800 transition-all duration-200 opacity-60 group-hover:opacity-100"
-                style={{ borderRadius: '2px', minWidth: '20px', minHeight: '20px' }}
+                className="ml-1 p-1 bg-[#374151] text-[#9ca3af] hover:bg-[#4b5563] hover:text-[#f9fafb] transition-colors duration-200 opacity-60 group-hover:opacity-100 rounded-[2px]"
+                style={{ minWidth: '20px', minHeight: '20px' }}
                 title={`Insert "${item.match.dutch}"`}
               >
                 <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -339,37 +338,36 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
         {visibleXlsxMatches.map((item, index) => (
           <div
             key={`xlsx-${item.match.translatedDutch}-${index}`}
-            className="group flex items-center gap-0.5 bg-white dark:bg-gray-800 border border-green-200 dark:border-green-700 px-2 py-1 shadow-sm hover:shadow-md hover:border-green-400 dark:hover:border-green-500 transition-all duration-200 cursor-pointer"
-            style={{ borderRadius: '3px' }}
+            className="group flex items-center gap-0.5 bg-[#1f2937] border border-[#059669]/40 hover:border-[#059669] px-2 py-1 transition-colors duration-200 cursor-pointer rounded-[3px]"
             onClick={() => onOpenReferenceTools?.()}
             title={`Previous translation${item.match.sheetName ? ` from ${item.match.sheetName}` : ''} - Click to open Reference Tools`}
           >
-            {/* XLSX indicator */}
-            <span className="w-1.5 h-1.5 rounded-full mr-0.5 bg-green-500" />
+            {/* XLSX provenance dot — Stage Manager Green (correct Provenance use) */}
+            <span className="w-1.5 h-1.5 rounded-full mr-0.5 bg-[#059669]" />
 
-            {/* English source - smaller */}
-            <span className="text-[11px] text-gray-600 dark:text-gray-400 max-w-[100px] truncate">
+            {/* English source */}
+            <span className="text-[11px] text-[#9ca3af] max-w-[100px] truncate">
               {item.match.sourceEnglish}
             </span>
 
-            {/* Arrow - smaller */}
-            <svg className="w-2.5 h-2.5 text-green-400 dark:text-green-500 mx-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {/* Arrow */}
+            <svg className="w-2.5 h-2.5 text-[#6b7280] mx-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
 
-            {/* Translation - smaller */}
-            <span className="text-[11px] font-semibold text-green-700 dark:text-green-300 max-w-[100px] truncate">
+            {/* Translation */}
+            <span className="text-[11px] font-bold text-[#f9fafb] max-w-[100px] truncate">
               {item.match.translatedDutch}
             </span>
 
-            {/* Insert button - smaller, stops propagation */}
+            {/* Insert button */}
             <button
               onClick={(e) => {
                 e.stopPropagation();
                 onInsert(item.match.translatedDutch);
               }}
-              className="ml-1 p-1 bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 hover:bg-green-200 dark:hover:bg-green-800 transition-all duration-200 opacity-60 group-hover:opacity-100"
-              style={{ borderRadius: '2px', minWidth: '20px', minHeight: '20px' }}
+              className="ml-1 p-1 bg-[#374151] text-[#9ca3af] hover:bg-[#4b5563] hover:text-[#f9fafb] transition-colors duration-200 opacity-60 group-hover:opacity-100 rounded-[2px]"
+              style={{ minWidth: '20px', minHeight: '20px' }}
               title={`Insert "${item.match.translatedDutch}"`}
             >
               <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -383,26 +381,25 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
         {visibleEditedMatches.map((item, index) => (
           <div
             key={`edited-${item.match.index}-${index}`}
-            className="group flex items-center gap-0.5 bg-white dark:bg-gray-800 border border-orange-200 dark:border-orange-700 px-2 py-1 shadow-sm hover:shadow-md hover:border-orange-400 dark:hover:border-orange-500 transition-all duration-200 cursor-pointer"
-            style={{ borderRadius: '3px' }}
+            className="group flex items-center gap-0.5 bg-[#1f2937] border border-[#4b5563] hover:border-[#6b7280] px-2 py-1 transition-colors duration-200 cursor-pointer rounded-[3px]"
             onClick={() => onJumpToEntry?.(item.match.index)}
             title={`Row ${item.match.rowNumber} - Your translation. Click to jump.`}
           >
-            {/* Edited indicator */}
-            <span className="w-1.5 h-1.5 rounded-full mr-0.5 bg-orange-500" />
+            {/* Edited indicator — achromatic; not a Provenance lane */}
+            <span className="w-1.5 h-1.5 rounded-full mr-0.5 bg-[#9ca3af]" />
 
             {/* Row number badge */}
-            <span className="text-[9px] font-mono px-1 py-0.5 bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 mr-0.5" style={{ borderRadius: '2px' }}>
+            <span className="text-[9px] font-mono px-1 py-0.5 bg-[#374151] text-[#9ca3af] mr-0.5 rounded-[2px]">
               {item.match.rowNumber}
             </span>
 
             {/* Arrow */}
-            <svg className="w-2.5 h-2.5 text-orange-400 dark:text-orange-500 mx-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-2.5 h-2.5 text-[#6b7280] mx-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
 
             {/* Translation */}
-            <span className="text-[11px] font-semibold text-orange-700 dark:text-orange-300 max-w-[120px] truncate">
+            <span className="text-[11px] font-bold text-[#f9fafb] max-w-[120px] truncate">
               {item.match.translatedText}
             </span>
 
@@ -412,8 +409,8 @@ const QuickReferenceBar: React.FC<QuickReferenceBarProps> = ({
                 e.stopPropagation();
                 onInsert(item.match.translatedText);
               }}
-              className="ml-1 p-1 bg-orange-100 dark:bg-orange-900/50 text-orange-600 dark:text-orange-400 hover:bg-orange-200 dark:hover:bg-orange-800 transition-all duration-200 opacity-60 group-hover:opacity-100"
-              style={{ borderRadius: '2px', minWidth: '20px', minHeight: '20px' }}
+              className="ml-1 p-1 bg-[#374151] text-[#9ca3af] hover:bg-[#4b5563] hover:text-[#f9fafb] transition-colors duration-200 opacity-60 group-hover:opacity-100 rounded-[2px]"
+              style={{ minWidth: '20px', minHeight: '20px' }}
               title={`Insert "${item.match.translatedText}"`}
             >
               <svg className="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

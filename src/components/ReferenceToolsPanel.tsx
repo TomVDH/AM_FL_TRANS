@@ -520,16 +520,16 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
                         </span>
                       )}
 
-                      {/* File name badge (if searching all files) */}
+                      {/* File name badge — Stage Manager Green (XLSX provenance) */}
                       {searchAllFiles && entry.fileName && (
-                        <span className="text-[10px] px-1.5 py-0.5 bg-orange-50 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400" style={{ borderRadius: '2px' }}>
+                        <span className="text-[10px] px-1.5 py-0.5 bg-[#059669]/15 text-[#6ee7b7] border border-[#059669]/40 rounded-[2px]">
                           {entry.fileName.replace(/\.xlsx$/i, '')}
                         </span>
                       )}
 
-                      {/* Utterer if available */}
+                      {/* Utterer — Character Purple (correct Provenance use) */}
                       {entry.utterer && (
-                        <span className="text-[10px] px-1.5 py-0.5 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400" style={{ borderRadius: '2px' }}>
+                        <span className="text-[10px] px-1.5 py-0.5 bg-[#9333ea]/15 text-[#c4a8f0] border border-[#9333ea]/40 rounded-[2px]">
                           {entry.utterer}
                         </span>
                       )}
@@ -821,32 +821,32 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
               editedEntries.map((entry, idx) => (
                 <div
                   key={`edited-${entry.index}-${idx}`}
-                  className={`group px-3 py-2.5 transition-colors hover:bg-orange-50 dark:hover:bg-orange-900/20 cursor-pointer ${
-                    idx !== 0 ? 'border-t border-gray-100 dark:border-gray-700' : ''
-                  } ${entry.isCurrentEntry ? 'bg-orange-50 dark:bg-orange-900/30' : ''}`}
+                  className={`group px-3 py-2.5 transition-colors hover:bg-[#374151] cursor-pointer ${
+                    idx !== 0 ? 'border-t border-[#374151]' : ''
+                  } ${entry.isCurrentEntry ? 'bg-[#374151]' : ''}`}
                   onClick={() => onJumpToEntry?.(entry.index)}
                 >
                   {/* Header row with metadata and actions */}
                   <div className="flex items-center justify-between mb-1.5">
                     <div className="flex items-center gap-2">
-                      {/* Row number badge - orange */}
-                      <span className="text-[10px] font-mono font-medium px-1.5 py-0.5 bg-orange-100 dark:bg-orange-900/50 text-orange-700 dark:text-orange-300" style={{ borderRadius: '2px' }}>
+                      {/* Row number badge — achromatic (user-edits not a Provenance lane) */}
+                      <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 bg-[#1f2937] text-[#9ca3af] border border-[#4b5563] rounded-[2px]">
                         Row {entry.rowNumber}
                       </span>
 
-                      {/* Orange dot */}
-                      <span className="w-1.5 h-1.5 rounded-full bg-orange-500" />
+                      {/* Edit dot — achromatic */}
+                      <span className="w-1.5 h-1.5 rounded-full bg-[#9ca3af]" />
 
                       {/* Current entry indicator */}
                       {entry.isCurrentEntry && (
-                        <span className="text-[9px] px-1.5 py-0.5 bg-orange-200 dark:bg-orange-800 text-orange-800 dark:text-orange-200 font-medium" style={{ borderRadius: '2px' }}>
+                        <span className="text-[9px] px-1.5 py-0.5 bg-[#f9fafb] text-[#111827] font-black uppercase tracking-[0.05em] rounded-[2px]">
                           Current
                         </span>
                       )}
 
-                      {/* Utterer if available */}
+                      {/* Utterer — Character Purple (correct Provenance use) */}
                       {entry.utterer && (
-                        <span className="text-[10px] px-1.5 py-0.5 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400" style={{ borderRadius: '2px' }}>
+                        <span className="text-[10px] px-1.5 py-0.5 bg-[#9333ea]/15 text-[#c4a8f0] border border-[#9333ea]/40 rounded-[2px]">
                           {entry.utterer}
                         </span>
                       )}
@@ -859,8 +859,7 @@ const ReferenceToolsPanel: React.FC<ReferenceToolsPanelProps> = ({
                           e.stopPropagation();
                           insertTranslatedSuggestion(entry.translatedText);
                         }}
-                        className="p-1 bg-orange-100 dark:bg-orange-900/50 hover:bg-orange-200 dark:hover:bg-orange-800 text-orange-600 dark:text-orange-400 transition-colors"
-                        style={{ borderRadius: '2px' }}
+                        className="p-1 bg-[#374151] hover:bg-[#4b5563] text-[#9ca3af] hover:text-[#f9fafb] transition-colors rounded-[2px]"
                         title={`Insert translation`}
                       >
                         <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">

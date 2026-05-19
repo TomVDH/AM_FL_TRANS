@@ -1,7 +1,7 @@
 # Local-vs-remote DRIFT diff — 2026-05-13
 
 _Local: `excels/`_
-_Remote: `excels.fresh-pull-2026-05-13-pre-E5-fixes/` (fresh Google-Sheets pull)_
+_Remote: `excels.fresh-pull-2026-05-13-post-E5-push/` (fresh Google-Sheets pull)_
 
 ## Totals
 

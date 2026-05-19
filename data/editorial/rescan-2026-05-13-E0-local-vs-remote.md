@@ -2,7 +2,7 @@
 
 _Generated: 2026-05-13_
 _Local:  `excels/0_asses.masses_Manager+Intermissions+E0Proxy.xlsx`_
-_Remote: `excels.fresh-pull-2026-05-13-pre-E5-fixes/0_asses.masses_Manager+Intermissions+E0Proxy.xlsx` (fresh Google-Sheets pull)_
+_Remote: `excels.fresh-pull-2026-05-13-post-E5-push/0_asses.masses_Manager+Intermissions+E0Proxy.xlsx` (fresh Google-Sheets pull)_
 
 ## Summary
 

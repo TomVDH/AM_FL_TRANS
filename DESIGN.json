@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-14T00:00:00Z",
+  "title": "Design System: AM Translations Helper",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Stage Dark",
+        "canonical": "oklch(15% 0.022 258)",
+        "tonalRamp": [
+          "oklch(8% 0.012 258)",
+          "oklch(12% 0.017 258)",
+          "oklch(15% 0.022 258)",
+          "oklch(22% 0.022 258)",
+          "oklch(30% 0.020 258)",
+          "oklch(45% 0.018 258)",
+          "oklch(65% 0.012 258)",
+          "oklch(88% 0.006 258)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Scene Gray",
+        "canonical": "oklch(22% 0.022 258)",
+        "tonalRamp": [
+          "oklch(8% 0.012 258)",
+          "oklch(15% 0.018 258)",
+          "oklch(22% 0.022 258)",
+          "oklch(30% 0.022 258)",
+          "oklch(40% 0.020 258)",
+          "oklch(55% 0.016 258)",
+          "oklch(72% 0.010 258)",
+          "oklch(88% 0.005 258)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Lift Gray",
+        "canonical": "oklch(30% 0.020 258)",
+        "tonalRamp": [
+          "oklch(10% 0.012 258)",
+          "oklch(18% 0.018 258)",
+          "oklch(25% 0.020 258)",
+          "oklch(30% 0.020 258)",
+          "oklch(42% 0.018 258)",
+          "oklch(58% 0.014 258)",
+          "oklch(74% 0.009 258)",
+          "oklch(90% 0.004 258)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Rehearsal White",
+        "canonical": "oklch(98.5% 0.003 258)",
+        "tonalRamp": [
+          "oklch(15% 0.003 258)",
+          "oklch(30% 0.003 258)",
+          "oklch(45% 0.003 258)",
+          "oklch(60% 0.003 258)",
+          "oklch(72% 0.003 258)",
+          "oklch(83% 0.003 258)",
+          "oklch(92% 0.003 258)",
+          "oklch(98.5% 0.003 258)"
+        ]
+      },
+      "ink-secondary": {
+        "role": "neutral",
+        "displayName": "Director's Dust",
+        "canonical": "oklch(65% 0.008 258)",
+        "tonalRamp": [
+          "oklch(20% 0.008 258)",
+          "oklch(32% 0.008 258)",
+          "oklch(45% 0.008 258)",
+          "oklch(55% 0.008 258)",
+          "oklch(65% 0.008 258)",
+          "oklch(75% 0.006 258)",
+          "oklch(85% 0.004 258)",
+          "oklch(94% 0.002 258)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Mark Gray",
+        "canonical": "oklch(42% 0.015 258)",
+        "tonalRamp": [
+          "oklch(12% 0.012 258)",
+          "oklch(22% 0.014 258)",
+          "oklch(32% 0.015 258)",
+          "oklch(42% 0.015 258)",
+          "oklch(55% 0.013 258)",
+          "oklch(68% 0.010 258)",
+          "oklch(80% 0.007 258)",
+          "oklch(92% 0.003 258)"
+        ]
+      },
+      "provenance-json": {
+        "role": "primary",
+        "displayName": "Call Sheet Blue",
+        "canonical": "oklch(50% 0.22 265)",
+        "tonalRamp": [
+          "oklch(18% 0.12 265)",
+          "oklch(26% 0.17 265)",
+          "oklch(35% 0.20 265)",
+          "oklch(44% 0.22 265)",
+          "oklch(50% 0.22 265)",
+          "oklch(62% 0.18 265)",
+          "oklch(76% 0.11 265)",
+          "oklch(88% 0.06 265)"
+        ]
+      },
+      "provenance-xlsx": {
+        "role": "secondary",
+        "displayName": "Stage Manager Green",
+        "canonical": "oklch(48% 0.17 166)",
+        "tonalRamp": [
+          "oklch(18% 0.10 166)",
+          "oklch(26% 0.14 166)",
+          "oklch(35% 0.17 166)",
+          "oklch(42% 0.17 166)",
+          "oklch(48% 0.17 166)",
+          "oklch(60% 0.14 166)",
+          "oklch(74% 0.09 166)",
+          "oklch(88% 0.05 166)"
+        ]
+      },
+      "provenance-character": {
+        "role": "tertiary",
+        "displayName": "Character Purple",
+        "canonical": "oklch(54% 0.26 308)",
+        "tonalRamp": [
+          "oklch(18% 0.14 308)",
+          "oklch(26% 0.19 308)",
+          "oklch(36% 0.23 308)",
+          "oklch(44% 0.26 308)",
+          "oklch(54% 0.26 308)",
+          "oklch(64% 0.20 308)",
+          "oklch(76% 0.13 308)",
+          "oklch(88% 0.07 308)"
+        ]
+      },
+      "provenance-action": {
+        "role": "primary",
+        "displayName": "Cue Red",
+        "canonical": "oklch(50% 0.21 27)",
+        "tonalRamp": [
+          "oklch(18% 0.12 27)",
+          "oklch(26% 0.16 27)",
+          "oklch(36% 0.19 27)",
+          "oklch(44% 0.21 27)",
+          "oklch(50% 0.21 27)",
+          "oklch(62% 0.17 27)",
+          "oklch(76% 0.11 27)",
+          "oklch(88% 0.06 27)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Screen titles and wizard step headers. Rare — one per view maximum."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, panel titles. The primary organizational signal within a view."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Card titles, named items, collapsed labels. A step below headline."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Translation content, dialogue source text, descriptions. Max 75ch line length."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Button text, column headers, status badges. All uppercase. The tool's authoritative voice."
+      },
+      "dialogue": {
+        "displayName": "Dialogue",
+        "purpose": "Game dialogue bubbles in ConversationView only. Never bleeds into the tool shell."
+      }
+    },
+    "shadows": [
+      {
+        "name": "ambient-low",
+        "value": "0 1px 2px 0 rgba(0,0,0,0.05)",
+        "purpose": "Cards at rest — barely-there lift. Maximum resting shadow for any surface."
+      },
+      {
+        "name": "interactive-mid",
+        "value": "0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06)",
+        "purpose": "Hover state on elevated cards, open dropdowns, focused panels."
+      },
+      {
+        "name": "lifted-high",
+        "value": "0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05)",
+        "purpose": "Overlay surfaces, modal-adjacent panels. Reserved for the highest z-layer."
+      },
+      {
+        "name": "gamepad-solid",
+        "value": "0 6px 0 0 #111827",
+        "purpose": "Exclusive to ConversationView dialogue bubbles. Hard 3D offset — architectural, not decorative. Forbidden outside that surface."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-state",
+        "value": "ease-out",
+        "duration": "200ms",
+        "purpose": "Default for state transitions — hover, focus, active. Short and honest."
+      },
+      {
+        "name": "ease-enter",
+        "value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "duration": "250–350ms",
+        "purpose": "Spring entrances for panels, dialogue bubbles, pill notifications. Slightly overshoots then settles."
+      },
+      {
+        "name": "ease-exit",
+        "value": "ease-in",
+        "duration": "180ms",
+        "purpose": "Exits are faster than entrances. Things leaving don't need ceremony."
+      },
+      {
+        "name": "ease-tooltip",
+        "value": "ease-out",
+        "duration": "120ms",
+        "purpose": "Tooltip and popover appearance. Immediate-feeling."
+      },
+      {
+        "name": "stagger-step",
+        "value": "40ms",
+        "purpose": "Per-item delay increment for staggered list entrances (.stagger-enter > *:nth-child(n))."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Default action button. White-on-dark in dark mode, dark-on-white in light mode. Uppercase, black weight, sharp corners.",
+      "html": "<button class=\"ds-btn-primary\">SAVE TRANSLATION</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; background: #f9fafb; color: #111827; padding: 8px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; font-size: 0.75rem; font-weight: 900; letter-spacing: 0.05em; text-transform: uppercase; border: none; border-radius: 3px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); cursor: pointer; transition: all 0.2s ease-out; user-select: none; } .ds-btn-primary:hover { background: #e5e7eb; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); transform: translateY(-2px); } .ds-btn-primary:active { transform: scale(0.985) translateY(0); box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); } .ds-btn-primary:focus-visible { outline: none; box-shadow: 0 0 0 2px #111827, 0 0 0 4px #9ca3af; } .ds-btn-primary:disabled { background: #374151; color: #6b7280; cursor: not-allowed; transform: none; box-shadow: none; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary action. Surface-colored with border. Use when primary and secondary actions share a screen.",
+      "html": "<button class=\"ds-btn-secondary\">CANCEL</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; background: #1f2937; color: #f9fafb; padding: 8px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; font-size: 0.75rem; font-weight: 900; letter-spacing: 0.05em; text-transform: uppercase; border: 1px solid #4b5563; border-radius: 3px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); cursor: pointer; transition: all 0.2s ease-out; } .ds-btn-secondary:hover { background: #374151; border-color: #6b7280; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); transform: translateY(-2px); } .ds-btn-secondary:active { transform: scale(0.985) translateY(0); } .ds-btn-secondary:focus-visible { outline: none; box-shadow: 0 0 0 2px #111827, 0 0 0 4px #9ca3af; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Lowest-emphasis action. No background or border at rest. Used for toolbar actions and secondary controls.",
+      "html": "<button class=\"ds-btn-ghost\">SKIP</button>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; justify-content: center; background: transparent; color: #f9fafb; padding: 8px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; font-size: 0.75rem; font-weight: 900; letter-spacing: 0.05em; text-transform: uppercase; border: none; border-radius: 3px; box-shadow: none; cursor: pointer; transition: all 0.2s ease-out; } .ds-btn-ghost:hover { background: #1f2937; } .ds-btn-ghost:active { background: #374151; transform: scale(0.985); } .ds-btn-ghost:focus-visible { outline: none; box-shadow: 0 0 0 2px #4b5563; }"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destructive actions only. Uses Cue Red (provenance-action) — the only permitted non-neutral button color.",
+      "html": "<button class=\"ds-btn-danger\">DELETE SESSION</button>",
+      "css": ".ds-btn-danger { display: inline-flex; align-items: center; justify-content: center; background: #dc2626; color: #f9fafb; padding: 8px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; font-size: 0.75rem; font-weight: 900; letter-spacing: 0.05em; text-transform: uppercase; border: none; border-radius: 3px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); cursor: pointer; transition: all 0.2s ease-out; } .ds-btn-danger:hover { background: #b91c1c; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.15); transform: translateY(-2px); } .ds-btn-danger:active { transform: scale(0.985) translateY(0); } .ds-btn-danger:focus-visible { outline: none; box-shadow: 0 0 0 2px #111827, 0 0 0 4px #f87171; }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card-default",
+      "description": "Default bounded surface. Border distinguishes from canvas; shadow is ambient only. No radius softening.",
+      "html": "<div class=\"ds-card\"><p style=\"color:#f9fafb;font-family:system-ui;font-size:0.875rem\">Card content</p></div>",
+      "css": ".ds-card { background: #1f2937; border: 1px solid #4b5563; border-radius: 3px; padding: 16px; box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05); transition: box-shadow 0.2s ease-out; } .ds-card:hover { box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); }"
+    },
+    {
+      "name": "Input Field",
+      "kind": "input",
+      "refersTo": "input-default",
+      "description": "Text input. Recessive at rest, honest focus ring. No decorative treatment.",
+      "html": "<div class=\"ds-input-wrap\"><label class=\"ds-input-label\" for=\"ds-field-1\">SOURCE TEXT</label><input class=\"ds-input\" id=\"ds-field-1\" type=\"text\" placeholder=\"Enter translation…\"></div>",
+      "css": ".ds-input-wrap { display: flex; flex-direction: column; gap: 6px; width: 280px; } .ds-input-label { font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; font-size: 0.75rem; font-weight: 900; letter-spacing: 0.05em; text-transform: uppercase; color: #9ca3af; } .ds-input { background: #1f2937; color: #f9fafb; border: 1px solid #4b5563; border-radius: 3px; padding: 10px 16px; font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; font-size: 0.875rem; font-weight: 400; line-height: 1.7; outline: none; transition: border-color 0.2s, box-shadow 0.2s; } .ds-input::placeholder { color: #6b7280; } .ds-input:focus { border-color: #6b7280; box-shadow: 0 0 0 2px rgba(107,114,128,0.4); } .ds-input:disabled { background: #374151; color: #6b7280; cursor: not-allowed; }"
+    },
+    {
+      "name": "Provenance Highlight Tag",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Inline tag marking a translation cell's data origin. The visual anchor of The Provenance System. Four variants — JSON (blue), XLSX (green), character canon (purple), action/clickable (red).",
+      "html": "<div style=\"display:flex;gap:8px;align-items:center;flex-wrap:wrap;\"><span class=\"ds-tag-json\">JSON</span><span class=\"ds-tag-xlsx\">XLSX</span><span class=\"ds-tag-char\">CHAR</span><span class=\"ds-tag-action\">ACTION</span></div>",
+      "css": ".ds-tag-json, .ds-tag-xlsx, .ds-tag-char, .ds-tag-action { display: inline-block; font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.02em; border-radius: 4px; padding: 2px 6px; line-height: 1.4; transition: all 0.12s ease-out; cursor: default; } .ds-tag-json { background: #dbeafe; color: #1e40af; border: 1px solid #bfdbfe; } .ds-tag-json:hover { background: #2563eb; color: #ffffff; border-color: #2563eb; } .ds-tag-xlsx { background: #dcfce7; color: #065f46; border: 1px solid #bbf7d0; } .ds-tag-xlsx:hover { background: #059669; color: #ffffff; border-color: #059669; } .ds-tag-char { background: #f3e8ff; color: #6b21a8; border: 1px solid #e9d5ff; } .ds-tag-char:hover { background: #9333ea; color: #ffffff; border-color: #9333ea; } .ds-tag-action { background: #fee2e2; color: #991b1b; border: 1px solid #fecaca; } .ds-tag-action:hover { background: #dc2626; color: #ffffff; border-color: #dc2626; }"
+    },
+    {
+      "name": "Dialogue Bubble",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Game-mode dialogue line in ConversationView. Pixelify Sans, 3D offset shadow, character label above. The tool's register-shift surface.",
+      "html": "<div class=\"ds-dialogue-wrap\"><div class=\"ds-dialogue-speaker\">DIRECTEUR</div><div class=\"ds-dialogue-bubble\">Stilte! We beginnen zo dadelijk met de repetitie.</div></div>",
+      "css": "@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap'); .ds-dialogue-wrap { display: flex; flex-direction: column; gap: 4px; max-width: 400px; } .ds-dialogue-speaker { font-family: -apple-system, BlinkMacSystemFont, 'Inter', sans-serif; font-size: 0.6875rem; font-weight: 900; letter-spacing: 0.05em; text-transform: uppercase; color: #9ca3af; padding-left: 2px; } .ds-dialogue-bubble { font-family: 'Pixelify Sans', sans-serif; font-size: 0.875rem; font-weight: 400; line-height: 1.6; color: #f9fafb; background: #1f2937; border: 2px solid #374151; border-radius: 10px 10px 10px 2px; padding: 12px 16px; box-shadow: 0 6px 0 0 #111827; animation: ds-gamepad-enter 0.35s cubic-bezier(0.34, 1.56, 0.64, 1) both; } @keyframes ds-gamepad-enter { 0% { opacity: 0; transform: translateY(12px) scale(0.97); } 100% { opacity: 1; transform: translateY(0) scale(1); } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Rehearsal Room",
+    "overview": "The Rehearsal Room is where the work actually happens. Not the stage, not the programme, not the lobby — the room with the marked-up scripts, the chalk marks on the floor, the director's coffee cup. It is stripped of decoration but deeply inhabited. Every mark on every surface is there because someone needed it. Nothing is there for show.\n\nThat is the governing logic of this tool. The translation content — the dialogue, the character voices, the editorial decisions — is the performance. The interface is the room it happens in. The tool exists to make the work possible, not to be noticed. Design earns its place by accelerating decisions, not by impressing anyone.\n\nAt the same time, this room belongs to AM. The theatrical sensibility of Asses & Masses inflects the tool's character: the confidence of the layout, the authority of the type, the precise functional color of a stage manager's notation system. AM-flavored without being AM-costumed.",
+    "keyCharacteristics": [
+      "Dark canvas primary — long sessions, focused work, editorial atmosphere",
+      "Ink-on-surface hierarchy: very high contrast, no mid-tone muddiness",
+      "A single Provenance System for color: four semantic colors that tag data origins, used nowhere else",
+      "Sharp geometry: 3px radius everywhere, flat borders, no softening",
+      "Type-first: all hierarchy is expressed through weight and scale, never color alone",
+      "Uppercase labels as the voice of the tool; sentence-case for content"
+    ],
+    "rules": [
+      {
+        "name": "The Provenance Rule",
+        "body": "The four provenance colors — blue, green, purple, red — are reserved exclusively for tagging data sources. Using call-sheet blue as a generic link color or cue red as a general warning violates the notation system's semantic integrity.",
+        "section": "colors"
+      },
+      {
+        "name": "The One-Temperature Rule",
+        "body": "All UI chrome is achromatic. Warmth and saturation are provenance signals, not interface decoration. If a new element wants color, the question is: which data type does it represent?",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "The tool speaks in two typefaces and they never mix on the same surface. System sans is the tool's voice — headings, labels, body copy, UI. Pixelify Sans is the game's voice — dialogue bubbles in ConversationView only.",
+        "section": "typography"
+      },
+      {
+        "name": "The Weight-Before-Size Rule",
+        "body": "Hierarchy is established first through weight contrast (900 vs 400), then through size. A 0.75rem label at 900 weight outranks a 1rem body text at 400. Never add a font size step to fix hierarchy that weight can handle.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-at-Rest Rule",
+        "body": "No surface has a shadow unless it has responded to user state (hover, focus, open). Resting elevation is communicated by background tint only.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Gamepad Exception",
+        "body": "The 0 6px 0 0 hard shadow is architectural, not decorative. It exists only inside ConversationView to signal the dialogue surface's distinctiveness from the tool shell. Importing it elsewhere breaks the system's register hierarchy.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Use the Provenance System colors — call-sheet blue, stage-manager green, character purple, cue red — exclusively for their designated data-origin roles.",
+      "Use sharp corners (3px) on every interactive element.",
+      "Set font-weight: 900 and text-transform: uppercase for all button labels, column headers, and tool-voice labels.",
+      "Lead with weight contrast before size contrast when establishing typographic hierarchy.",
+      "Treat dark mode as the primary experience.",
+      "Animate with ease-out curves (cubic-bezier(0.34, 1.56, 0.64, 1) for spring entrances; ease-out-quart for state transitions).",
+      "Keep Pixelify Sans confined to ConversationView dialogue bubbles."
+    ],
+    "donts": [
+      "Don't use generic SaaS cream — white cards, #f3f4f6 backgrounds, blue primary CTAs.",
+      "Don't use Excel or enterprise admin aesthetics — flat gray row tables, dense uniform grids, 2010-era utility styling.",
+      "Don't use dark for posture. The dark canvas exists because the user works in long focused sessions.",
+      "Don't add border-radius beyond 6px to interactive elements (buttons, inputs, chips).",
+      "Don't use call-sheet blue (#2563eb) as a generic link or brand accent — it is a provenance signal for JSON data.",
+      "Don't use gradient text (background-clip: text). Prohibited absolutely.",
+      "Don't add side-stripe borders (border-left > 1px as a colored card accent).",
+      "Don't add shadows to resting surfaces. Flat-at-rest.",
+      "Don't mix Pixelify Sans into the tool-shell UI."
+    ]
+  }
+}

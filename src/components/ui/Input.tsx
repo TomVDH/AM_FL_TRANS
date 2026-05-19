@@ -100,11 +100,11 @@ export const Input: React.FC<InputProps> = ({
   const helpId = `${id}-help`;
 
   const baseClasses =
-    'bg-white dark:bg-gray-800 border text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 transition-all duration-200';
+    'bg-[#1f2937] border text-[#f9fafb] placeholder-[#6b7280] focus:outline-none focus:ring-2 transition-colors duration-200 ease-out rounded-[3px]';
 
   const borderClasses = error
-    ? 'border-red-500 focus:ring-red-500 focus:border-red-500'
-    : 'border-gray-300 dark:border-gray-600 focus:ring-gray-500 focus:border-gray-500';
+    ? 'border-[#ef4444] focus:ring-[#ef4444]/40 focus:border-[#ef4444]'
+    : 'border-[#4b5563] focus:ring-[#9ca3af]/40 focus:border-[#9ca3af]';
 
   const widthClass = fullWidth ? 'w-full' : '';
 
@@ -199,11 +199,11 @@ export const TextArea: React.FC<TextAreaProps> = ({
   const helpId = `${id}-help`;
 
   const baseClasses =
-    'bg-white dark:bg-gray-800 border text-gray-900 dark:text-gray-100 placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 resize-none';
+    'bg-[#1f2937] border text-[#f9fafb] placeholder-[#6b7280] focus:outline-none focus:ring-2 transition-colors duration-200 ease-out resize-none rounded-[3px]';
 
   const borderClasses = error
-    ? 'border-red-500 focus:ring-red-500 focus:border-red-500'
-    : 'border-gray-300 dark:border-gray-600 focus:ring-gray-500 focus:border-gray-500';
+    ? 'border-[#ef4444] focus:ring-[#ef4444]/40 focus:border-[#ef4444]'
+    : 'border-[#4b5563] focus:ring-[#9ca3af]/40 focus:border-[#9ca3af]';
 
   const widthClass = fullWidth ? 'w-full' : '';
 

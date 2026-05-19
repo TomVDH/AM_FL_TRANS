@@ -31,15 +31,15 @@ export const SystemMessage = React.memo(function SystemMessage({
       onClick={() => onClick(row.index)}
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(row.index); } }}
     >
-      <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent" />
-      <span className={`text-[11px] font-medium italic whitespace-nowrap px-3 py-1 rounded-full
+      <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#374151] to-transparent" />
+      <span className={`text-[11px] font-bold italic whitespace-nowrap px-3 py-1 rounded-[2px]
         ${isSelected
-          ? 'text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-800'
-          : 'text-gray-400 dark:text-gray-500 group-hover:text-gray-500 dark:group-hover:text-gray-400 group-hover:bg-gray-50 dark:group-hover:bg-gray-800/50'
+          ? 'text-[#f9fafb] bg-[#374151]'
+          : 'text-[#9ca3af] group-hover:text-[#f9fafb] group-hover:bg-[#1f2937]'
         }`}>
         {displayText}
       </span>
-      <div className="flex-1 h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent" />
+      <div className="flex-1 h-px bg-gradient-to-r from-transparent via-[#374151] to-transparent" />
     </div>
   );
 });

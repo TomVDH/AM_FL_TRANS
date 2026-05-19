@@ -937,13 +937,13 @@ const TranslationHelper: React.FC = () => {
   if (!mounted) return null;
 
   return (
-    <div className="h-screen bg-gray-50 dark:bg-gray-900 flex flex-col overflow-hidden transition-colors duration-500" style={{ animation: 'fadeIn 0.4s ease-out' }}>
+    <div className="h-screen bg-[#111827] text-[#f9fafb] flex flex-col overflow-hidden" style={{ animation: 'fadeIn 0.3s ease-out' }}>
       {/* Main Content Area - scrolls internally, footer stays pinned */}
       <main className="flex-1 min-h-0 overflow-y-auto max-w-7xl mx-auto w-full px-3 md:px-5 pt-3 md:pt-5 flex flex-col">
-        {/* Header — Two-Row Bar */}
-        <div className="mb-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-sm transition-shadow duration-300 hover:shadow-md" style={{ borderRadius: '3px' }}>
+        {/* Header — Two-Row Bar (Scene Gray surface, Mark Gray border, flat at rest) */}
+        <div className="mb-4 bg-[#1f2937] border border-[#4b5563] rounded-[3px]">
           {/* Row 0: Logo banner + file info + timer */}
-          <div className="flex items-center gap-3 px-4 py-2.5 border-b border-gray-100 dark:border-gray-700/50 bg-gray-50/50 dark:bg-gray-900/30">
+          <div className="flex items-center gap-3 px-4 py-2.5 border-b border-[#374151] bg-[#111827]/40">
             <button
               onClick={handleBackToSetup}
               className="shrink-0 cursor-pointer hover:opacity-80 hover:scale-105 transition-all duration-200"
@@ -953,14 +953,14 @@ const TranslationHelper: React.FC = () => {
               <img src="/images/asses-masses-logo.png" alt="Asses Masses" className="h-10 w-auto" />
             </button>
             <div className="flex flex-col min-w-0">
-              <span className="text-[10px] text-gray-400 dark:text-gray-500 uppercase tracking-[0.2em] leading-tight">asses.masses — AM FL V</span>
+              <span className="hidden sm:block text-[10px] text-[#6b7280] uppercase tracking-[0.2em] leading-tight font-bold whitespace-nowrap">asses.masses · AM FL V</span>
               <div className="flex items-baseline gap-1.5 min-w-0">
-                <span className="text-sm font-bold text-gray-800 dark:text-gray-200 truncate">
+                <span className="text-sm font-bold text-[#f9fafb] truncate">
                   {loadedFileName || 'Untitled'}
                 </span>
                 {selectedSheet && (
-                  <span className="text-xs text-gray-400 dark:text-gray-500 truncate shrink-0">
-                    — {selectedSheet}
+                  <span className="text-xs text-[#9ca3af] truncate shrink-0">
+                    · {selectedSheet}
                   </span>
                 )}
               </div>
@@ -968,14 +968,13 @@ const TranslationHelper: React.FC = () => {
             <div className="flex-1" />
             <button
               onClick={toggleTimerPause}
-              className="flex items-center gap-1.5 text-xs tabular-nums shrink-0 hover:bg-gray-100 dark:hover:bg-gray-800 px-2 py-1 -mx-2 transition-all duration-200 press-effect"
-              style={{ borderRadius: '3px' }}
+              className="flex items-center gap-1.5 text-xs tabular-nums shrink-0 hover:bg-[#374151] px-2 py-1 -mx-2 transition-colors duration-200 rounded-[3px]"
               title={timerRunning ? 'Pause timer' : 'Timer starts on first translation'}
             >
-              <svg className="w-3 h-3 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3 h-3 text-[#9ca3af]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <span className={`font-mono font-bold ${timerRunning ? 'text-gray-900 dark:text-gray-100' : 'text-gray-400 dark:text-gray-500'}`}>
+              <span className={`font-mono font-bold ${timerRunning ? 'text-[#f9fafb]' : 'text-[#6b7280]'}`}>
                 {elapsedFormatted}
               </span>
             </button>
@@ -984,19 +983,17 @@ const TranslationHelper: React.FC = () => {
           <div className="flex items-center justify-between py-2 px-4">
             {/* Left: Nav controls */}
             <div className="flex items-center gap-2">
-            {/* Prev — styled button */}
+            {/* Prev — flat ghost-style */}
             <button
               onClick={handlePreviousWithSync}
               disabled={currentIndex === 0 || syncStatus === 'syncing'}
-              className="group relative h-7 w-7 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden disabled:opacity-40 disabled:cursor-not-allowed shrink-0 press-effect"
-              style={{ borderRadius: '3px' }}
+              className="group h-7 w-7 flex items-center justify-center bg-[#1f2937] text-[#9ca3af] border border-[#4b5563] hover:bg-[#374151] hover:text-[#f9fafb] hover:border-[#6b7280] transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed shrink-0 rounded-[3px]"
               aria-label="Previous entry"
               title="Previous (←)"
             >
-              <svg className="w-3.5 h-3.5 relative z-10 transition-transform duration-200 group-hover:-translate-x-px" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5 transition-transform duration-200 group-hover:-translate-x-px" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
             {/* Progress Bar — refined */}
             <div
@@ -1005,8 +1002,7 @@ const TranslationHelper: React.FC = () => {
               aria-valuemin={1}
               aria-valuemax={sourceTexts.length}
               aria-label={`Translation progress: ${currentIndex + 1} of ${sourceTexts.length}`}
-              className="relative h-1.5 bg-gray-200/60 dark:bg-gray-700/40 overflow-hidden flex-1 min-w-[80px] max-w-[320px] transition-all duration-300"
-              style={{ borderRadius: '4px' }}
+              className="relative h-1.5 bg-[#374151] overflow-hidden flex-1 min-w-[80px] max-w-[320px] rounded-[2px]"
             >
               {sourceTexts.length <= 50 ? (
                 <div className="absolute inset-0 flex gap-px">
@@ -1014,9 +1010,10 @@ const TranslationHelper: React.FC = () => {
                     const isCompleted = index < currentIndex;
                     const isBlank = translations[index] === '' || translations[index] === '[BLANK, REMOVE LATER]';
                     const isCurrent = index === currentIndex;
+                    // Achromatic progress: filled = ink, blank-but-passed = dust gray, current = pulsing ink
                     return (
                       <div key={index} role="presentation" className="relative h-full" style={{ width: `${100 / sourceTexts.length}%` }}>
-                        <div className={`absolute inset-0 transition-colors duration-200 ${isCompleted ? isBlank ? 'bg-amber-400/70 dark:bg-amber-500/60' : 'bg-emerald-400 dark:bg-emerald-500' : isCurrent ? 'bg-gray-400 dark:bg-gray-500 animate-pulse' : ''}`} style={{ borderRadius: '1px' }} />
+                        <div className={`absolute inset-0 transition-colors duration-200 ${isCompleted ? isBlank ? 'bg-[#6b7280]' : 'bg-[#f9fafb]' : isCurrent ? 'bg-[#9ca3af] animate-pulse' : ''}`} />
                       </div>
                     );
                   })}
@@ -1028,16 +1025,16 @@ const TranslationHelper: React.FC = () => {
                   const total = sourceTexts.length;
                   return (
                     <>
-                      <div className="absolute inset-y-0 left-0 bg-emerald-400 dark:bg-emerald-500 transition-all duration-500 ease-out" style={{ width: `${(completed / total) * 100}%`, borderRadius: '4px' }} />
-                      <div className="absolute inset-y-0 bg-amber-400/70 dark:bg-amber-500/60 transition-all duration-500 ease-out" style={{ left: `${(completed / total) * 100}%`, width: `${(blank / total) * 100}%` }} />
-                      <div className="absolute inset-y-0 bg-gray-400 dark:bg-gray-500 animate-pulse transition-all duration-500" style={{ left: `${(currentIndex / total) * 100}%`, width: `${Math.max(1 / total, 0.5) * 100}%`, borderRadius: '4px' }} />
+                      <div className="absolute inset-y-0 left-0 bg-[#f9fafb] transition-[width] duration-500 ease-out" style={{ width: `${(completed / total) * 100}%` }} />
+                      <div className="absolute inset-y-0 bg-[#6b7280] transition-[left,width] duration-500 ease-out" style={{ left: `${(completed / total) * 100}%`, width: `${(blank / total) * 100}%` }} />
+                      <div className="absolute inset-y-0 bg-[#9ca3af] animate-pulse" style={{ left: `${(currentIndex / total) * 100}%`, width: `${Math.max(1 / total, 0.5) * 100}%` }} />
                     </>
                   );
                 })()
               )}
             </div>
             {/* Counter */}
-            <span className="text-[10px] text-gray-400 dark:text-gray-500 tabular-nums shrink-0 font-medium">
+            <span className="text-[10px] text-[#9ca3af] tabular-nums shrink-0 font-bold">
               {currentIndex + 1}/{sourceTexts.length} · {sourceTexts.length > 0 ? Math.round((translations.filter(t => t && t !== '' && t !== '[BLANK, REMOVE LATER]').length / sourceTexts.length) * 100) : 0}%
             </span>
             {/* Next — styled button */}
@@ -1049,23 +1046,20 @@ const TranslationHelper: React.FC = () => {
                 }
               }}
               disabled={currentIndex >= sourceTexts.length - 1}
-              className="group relative h-7 w-7 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 overflow-hidden disabled:opacity-40 disabled:cursor-not-allowed shrink-0 press-effect"
-              style={{ borderRadius: '3px' }}
+              className="group h-7 w-7 flex items-center justify-center bg-[#1f2937] text-[#9ca3af] border border-[#4b5563] hover:bg-[#374151] hover:text-[#f9fafb] hover:border-[#6b7280] transition-colors duration-200 disabled:opacity-40 disabled:cursor-not-allowed shrink-0 rounded-[3px]"
               aria-label="Next entry"
               title="Next (→)"
             >
-              <svg className="w-3.5 h-3.5 relative z-10 transition-transform duration-200 group-hover:translate-x-px" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-px" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-              <div className="absolute inset-0 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
             </div>
-            {/* Center: View Switcher — icon-only */}
-            <div className="inline-flex bg-gray-100 dark:bg-gray-800 p-0.5 shrink-0" style={{ borderRadius: '3px' }}>
+            {/* Center: View Switcher — segmented control */}
+            <div className="inline-flex bg-[#111827] border border-[#374151] p-0.5 shrink-0 rounded-[3px]">
               <button
                 onClick={() => { if (gamepadMode) toggleGamepadMode(); if (conversationMode) toggleConversationMode(); }}
-                className={`flex items-center justify-center w-7 h-6 transition-all duration-200 ${!gamepadMode && !conversationMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'}`}
-                style={{ borderRadius: '2px' }}
+                className={`flex items-center justify-center w-7 h-6 transition-colors duration-200 rounded-[2px] ${!gamepadMode && !conversationMode ? 'bg-[#374151] text-[#f9fafb]' : 'text-[#9ca3af] hover:text-[#f9fafb]'}`}
                 title="Standard"
                 aria-label="Standard mode"
               >
@@ -1073,8 +1067,7 @@ const TranslationHelper: React.FC = () => {
               </button>
               <button
                 onClick={() => { if (!gamepadMode) toggleGamepadMode(); if (conversationMode) toggleConversationMode(); }}
-                className={`flex items-center justify-center w-7 h-6 transition-all duration-200 ${gamepadMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300'}`}
-                style={{ borderRadius: '2px' }}
+                className={`flex items-center justify-center w-7 h-6 transition-colors duration-200 rounded-[2px] ${gamepadMode ? 'bg-[#374151] text-[#f9fafb]' : 'text-[#9ca3af] hover:text-[#f9fafb]'}`}
                 title="Gamepad"
                 aria-label="Gamepad mode"
               >
@@ -1083,13 +1076,12 @@ const TranslationHelper: React.FC = () => {
               <button
                 onClick={() => { if (gamepadMode) toggleGamepadMode(); if (!conversationMode) toggleConversationMode(); }}
                 disabled={!isStarted || sourceTexts.length === 0}
-                className={`relative flex items-center justify-center w-7 h-6 transition-all duration-200 ${conversationMode ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 shadow-sm' : 'text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-300 disabled:text-gray-300 dark:disabled:text-gray-600'}`}
-                style={{ borderRadius: '2px' }}
+                className={`relative flex items-center justify-center w-7 h-6 transition-colors duration-200 rounded-[2px] ${conversationMode ? 'bg-[#374151] text-[#f9fafb]' : 'text-[#9ca3af] hover:text-[#f9fafb] disabled:text-[#4b5563]'}`}
                 title="Conversation (beta)"
                 aria-label="Conversation mode"
               >
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
-                <span className="absolute -top-1 -right-1 w-2 h-2 bg-amber-400 rounded-full border border-white dark:border-gray-800" title="beta" />
+                <span className="absolute -top-1 -right-1 w-2 h-2 bg-[#9ca3af] rounded-full border border-[#1f2937]" title="beta" />
               </button>
             </div>
             {/* Right: Utility buttons */}
@@ -1111,8 +1103,7 @@ const TranslationHelper: React.FC = () => {
               <div className="relative shrink-0">
                 <button
                   onClick={() => setAccordionStates(prev => ({ ...prev, navigation: !prev.navigation }))}
-                  className="group relative h-7 px-2.5 flex items-center gap-1.5 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-900 text-gray-500 dark:text-gray-400 border border-gray-200 dark:border-gray-700 hover:border-gray-400 dark:hover:border-gray-500 hover:text-gray-700 dark:hover:text-gray-300 transition-all duration-200 press-effect overflow-hidden"
-                  style={{ borderRadius: '3px' }}
+                  className="h-7 px-2.5 flex items-center gap-1.5 bg-[#1f2937] text-[#9ca3af] border border-[#4b5563] hover:bg-[#374151] hover:text-[#f9fafb] hover:border-[#6b7280] transition-colors duration-200 rounded-[3px]"
                   aria-label="Filter and jump"
                   title="Filter & Jump"
                 >
@@ -1473,14 +1464,15 @@ const TranslationHelper: React.FC = () => {
                       </div>
                     )}
 
-                    {/* Context Notes - Scene direction/description from column B */}
+                    {/* Context Notes — scene direction/description. Italic + icon carry the
+                     * meaning; achromatic surface keeps the Provenance System pure. */}
                     {contextNotes[currentIndex] && (
-                      <div className="px-4 py-2 bg-amber-50 dark:bg-amber-900/20 border-b border-amber-200 dark:border-amber-800/50" style={{ animation: 'slideUpFadeIn 0.25s ease-out both' }}>
+                      <div className="px-4 py-2 bg-[#374151]/40 border-b border-[#4b5563]" style={{ animation: 'slideUpFadeIn 0.25s ease-out both' }}>
                         <div className="flex items-start gap-2">
-                          <svg className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-3.5 h-3.5 text-[#9ca3af] mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                           </svg>
-                          <span className="text-sm text-amber-800 dark:text-amber-300 italic leading-snug">
+                          <span className="text-sm text-[#9ca3af] italic leading-snug">
                             {contextNotes[currentIndex]}
                           </span>
                         </div>
@@ -1679,11 +1671,10 @@ const TranslationHelper: React.FC = () => {
                       const corpusLine = corpusKey ? corpusKeys.get(corpusKey) : undefined;
                       return corpusLine ? (
                         <span
-                          className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-400 border border-amber-300 dark:border-amber-700"
-                          style={{ borderRadius: '3px' }}
+                          className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.05em] bg-[#1f2937] text-[#9ca3af] border border-[#4b5563] rounded-[3px]"
                           title={`speaker-corpus.jsonl — line ${corpusLine}`}
                         >
-                          <span className="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                          <span className="w-1.5 h-1.5 bg-[#9ca3af] rounded-full"></span>
                           Corpus #{corpusLine}
                         </span>
                       ) : null;
@@ -1852,13 +1843,13 @@ const TranslationHelper: React.FC = () => {
 
                   if (isContiguous) {
                     return (
-                      <span className="text-[10px] text-green-700 dark:text-green-400 bg-green-50 dark:bg-green-900/20 px-1.5 py-0.5 font-semibold border border-green-200 dark:border-green-800" style={{ borderRadius: '2px' }}>
+                      <span className="text-[10px] text-[#6ee7b7] bg-[#059669]/15 px-1.5 py-0.5 font-bold border border-[#059669]/40 rounded-[2px]">
                         ✓ {modifiedEntries[0].cellRef} ({modifiedEntries.length})
                       </span>
                     );
                   } else {
                     return (
-                      <span className="text-[10px] text-amber-700 dark:text-amber-400 bg-amber-50 dark:bg-amber-900/20 px-1.5 py-0.5 font-semibold border border-amber-200 dark:border-amber-800" style={{ borderRadius: '2px' }}>
+                      <span className="text-[10px] text-[#f9fafb] bg-[#374151] px-1.5 py-0.5 font-bold border border-[#4b5563] rounded-[2px]">
                         ⚠ Non-contiguous
                       </span>
                     );
@@ -2089,11 +2080,10 @@ const TranslationHelper: React.FC = () => {
                               if (!line) return null;
                               return (
                                 <span
-                                  className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wide bg-amber-100 dark:bg-amber-900/40 text-amber-700 dark:text-amber-400 border border-amber-300 dark:border-amber-700"
-                                  style={{ borderRadius: '3px' }}
+                                  className="inline-flex items-center gap-1 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-[0.05em] bg-[#1f2937] text-[#9ca3af] border border-[#4b5563] rounded-[3px]"
                                   title={`speaker-corpus.jsonl — line ${line}`}
                                 >
-                                  <span className="w-1.5 h-1.5 bg-amber-500 rounded-full"></span>
+                                  <span className="w-1.5 h-1.5 bg-[#9ca3af] rounded-full"></span>
                                   Corpus #{line}
                                 </span>
                               );
